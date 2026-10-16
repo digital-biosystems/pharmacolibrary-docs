@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;Piperaquine&quot;,&quot;href&quot;:&quot;drugs/drug_piperaquine/&quot;},{&quot;label&quot;:&quot;Hoglund_2017 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Piperaquine_Chairat2018_reference&quot;,&quot;label&quot;:&quot;Chairat_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_piperaquine/Piperaquine_Chairat2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Piperaquine_Chotsiri2021_population_estimatec&quot;,&quot;label&quot;:&quot;Chotsiri_2021_population_estimatec&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_piperaquine/Piperaquine_Chotsiri2021_population_estimatec.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Piperaquine_Chotsiri2021_prior_estimateb&quot;,&quot;label&quot;:&quot;Chotsiri_2021_prior_estimateb&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_piperaquine/Piperaquine_Chotsiri2021_prior_estimateb.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Piperaquine_Zaloumis2012_reference&quot;,&quot;label&quot;:&quot;Zaloumis_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_piperaquine/Piperaquine_Zaloumis2012_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Piperaquine_Ding2024_nonmem_population_estimates_rse_a&quot;,&quot;label&quot;:&quot;Ding_2024_nonmem_population_estimates_rse_a&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_piperaquine/Piperaquine_Ding2024_nonmem_population_estimates_rse_a.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Piperaquine_Zaloumis2012_ars_dha&quot;,&quot;label&quot;:&quot;Zaloumis_2012_ars_dha&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_piperaquine/Piperaquine_Zaloumis2012_ars_dha.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Piperaquine_Zaloumis2012_art&quot;,&quot;label&quot;:&quot;Zaloumis_2012_art&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_piperaquine/Piperaquine_Zaloumis2012_art.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Piperaquine_Chairat2018_reference&quot;,&quot;label&quot;:&quot;Chairat_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_piperaquine/Piperaquine_Chairat2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Piperaquine_Chotsiri2021_reference&quot;,&quot;label&quot;:&quot;Chotsiri_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_piperaquine/Piperaquine_Chotsiri2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Piperaquine_Ding2024_reference&quot;,&quot;label&quot;:&quot;Ding_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_piperaquine/Piperaquine_Ding2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Piperaquine_Zaloumis2012_po&quot;,&quot;label&quot;:&quot;Zaloumis_2012_po&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_piperaquine/Piperaquine_Zaloumis2012_po.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Felices_2025_QTcF&quot;,&quot;label&quot;:&quot;Felices_2025 \u00b7 \u0394QTcF&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_piperaquine/pd_Felices_2025_QTcF.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wattanakul_2021_PCIR&quot;,&quot;label&quot;:&quot;Wattanakul_2021 \u00b7 PCIR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_piperaquine/pd_Wattanakul_2021_PCIR.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Piperaquine — `Piperaquine_Hoglund2017_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.857). Primary extraction retained.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.857). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -17,9 +17,9 @@
 
 ### Reviewer guidance
 
-**Only clearance was extracted — no volume.**
+**No volume or clearance — not a compartmental population PK model.**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Extracted — piperaquine: CL 0.001 L/h.
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. A reported unit could not be converted (n_transit, Fab, Cmax and Ct), so that value has no SI equivalent.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of elimination clearance ... (p: this record has 0.001, the second reading none. That field does not shape the model.
 
@@ -31,76 +31,46 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Hoglund RM et al., Population Pharmacokinetic Properties o…, PLoS medicine (2017)
   ·  DOI: [10.1371/journal.pmed.1002212](https://doi.org/10.1371/journal.pmed.1002212)
 
-<div class="pk-model-meta" hidden drug="Piperaquine" model-id="Piperaquine_Hoglund2017_reference" status="needs_review" stale="false" population="adults and children with uncomplicated falciparum malaria and healthy volunteers" measured-compound="piperaquine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Piperaquine" model-id="Piperaquine_Hoglund2017_reference" status="rejected" stale="false" population="adults and children with uncomplicated malaria and healthy volunteers" measured-compound="piperaquine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 1 extracted.
+**Parameters:** 6 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| elimination clearance ... (p | `Q22` · CL | 0.001 | L/h | 2.7777777777777777e-10 | L/h | not captured | boundary (0.8) | Hoglund_2017:other_prose | — | not captured |
+| Number of transit compartments | `Q311` · n_transit | 2 | in years | not captured | [inyears] | not captured | exact (1.0) | pmed.1002212.t003:row8:col1 | — | not captured |
+| F (percent) | `Q40` · Fab | 100 | percent | not captured | not captured | not captured | exact (1.0) | pmed.1002212.t003:row9:col1 | — | not captured |
+| CMAX (ng/ml) | `Q32` · Cmax | 248 | ng/ml | not captured | [ng] / [ml] | not captured | exact (1.0) | pmed.1002212.t003:row17:col1 | — | not captured |
+| TMAX (h) | `Q56` · tmax | 3.49 | h | 12564.0 | [h] | not captured | exact (1.0) | pmed.1002212.t003:row18:col1 | — | not captured |
+| T1/2 (d) | `Q57` · t1/2z | 22.5 | d | 1944000.0 | [d] | not captured | exact (1.0) | pmed.1002212.t003:row19:col1 | — | not captured |
+| Day 7 concentration (ng/ml) | `Q75` · Ct | 28.1 | ng/ml | not captured | [ng] / [ml] | not captured | llm (0.6) | pmed.1002212.t003:row21:col1 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
-### Unresolved rows _(no Q-code or no value — not parameters)_
-| label (paper) | Q-code | value | link |
-|---|---|---|---|
-| F (percent) | Q40 | not captured | exact |
-
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped value-less row: 'CL/F (l/h)' (captured trailing unit 'l/h' for child rows)
-- dropped value-less row: 'VC/F (l)' (captured trailing unit 'l' for child rows)
-- dropped value-less row: 'Q1/F (l/h)' (captured trailing unit 'l/h' for child rows)
-- dropped value-less row: 'VP1/F (l)' (captured trailing unit 'l' for child rows)
-- dropped value-less row: 'Q2/F (l/h)' (captured trailing unit 'l/h' for child rows)
-- dropped value-less row: 'VP2/F (l)' (captured trailing unit 'l' for child rows)
-- dropped value-less row: 'MTT (h)' (captured trailing unit 'h' for child rows)
-- dropped value-less row: 'Number of transit compartments'
-- dropped value-less row: 'Scale (percent)' (captured trailing unit 'percent' for child rows)
-- dropped value-less row: 'MF50 (years)' (captured trailing unit 'years' for child rows)
-- dropped value-less row: 'HillMF'
-- dropped value-less row: 'DoseF (percent)' (captured trailing unit 'percent' for child rows)
-- salvaged Q22 ('elimination clearance ... (p'=0.001) from results prose — parameter table was unreadable
-- implicit units: 'elimination clearance ... (p' → L/h (from the popPK convention: 'The paper does not state a unit for elimination clearance; it discusses clearance allometrically scaled with body weight')
+- unit_dimension_unknown: 'in years' (n_transit)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=piperaquine
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- status held at route_to_review — not promoted
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- unparsed cell pmed.1002212.t003:row1:col1 = '55.4 [4.22]'
-- unparsed cell pmed.1002212.t003:row1:col3 = '27.9 [7.43]'
-- unparsed cell pmed.1002212.t003:row2:col1 = '2,910 [6.98]'
-- unparsed cell pmed.1002212.t003:row2:col3 = '67.0 [15.5]'
-- unparsed cell pmed.1002212.t003:row3:col1 = '310 [8.03]'
-- unparsed cell pmed.1002212.t003:row4:col1 = '4,910 [5.85]'
-- unparsed cell pmed.1002212.t003:row4:col3 = '24.0 [44.2]'
-- unparsed cell pmed.1002212.t003:row5:col1 = '105 [4.98]'
-- unparsed cell pmed.1002212.t003:row5:col3 = '23.6 [15.6]'
-- unparsed cell pmed.1002212.t003:row6:col1 = '30,900 [4.79]'
-- unparsed cell pmed.1002212.t003:row6:col3 = '34.7 [7.21]'
-- unparsed cell pmed.1002212.t003:row7:col1 = '2.11 [4.54]'
-- unparsed cell pmed.1002212.t003:row7:col3 = '38.0 [15.8]/46.4 [9.36]'
-- unparsed cell pmed.1002212.t003:row7:col4 = '26.7–50.3/38.6–55.1'
-- unparsed cell pmed.1002212.t003:row7:col5 = '59.1/71.3'
-- unparsed cell pmed.1002212.t003:row9:col3 = '41.4 [8.65]/53.5 [6.69]'
-- unparsed cell pmed.1002212.t003:row9:col4 = '34.0–48.2/46.1–60.2'
-- unparsed cell pmed.1002212.t003:row9:col5 = '31.1/59.7'
-- unparsed cell pmed.1002212.t003:row10:col1 = '0.115 [3.43]'
-- unparsed cell pmed.1002212.t003:row12:col1 = '106 [7.24]'
-- unparsed cell pmed.1002212.t003:row13:col1 = '0.575 [13.6]'
-- unparsed cell pmed.1002212.t003:row14:col1 = '5.51 [29.6]'
-- unparsed cell pmed.1002212.t003:row15:col1 = '23.7 [17.8]'
-- LLM selected parameter table(s) 3
+- table pmed.1002212.t003: unbound_uncertainty
+- table pmed.1002212.t003: ambiguous_numeric_format
+- table pmed.1002212.t003: unparsed_numeric_cell
+- LLM selected parameter table(s) 4
 
 ## Validation
 
@@ -129,13 +99,13 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Hoglund_2017:other_prose'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.001 | not captured | not captured | ['Hoglund_2017:other_prose'] |
+| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
+| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['pmed.1002212.t003:row17:col1'] |
+| C5_dimension_Q56 | pass | [time] | not captured | not captured | not captured | ['pmed.1002212.t003:row18:col1'] |
+| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['pmed.1002212.t003:row19:col1'] |
+| C5_dimension_Q75 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['pmed.1002212.t003:row21:col1'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.001 L/h | not captured | not captured | ['Hoglund_2017:other_prose'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -144,24 +114,14 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_piperaquine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Hoglund_2017` / `Hoglund_2017::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_piperaquine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Hoglund_2017` / `Hoglund_2017::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-</tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -170,4 +130,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 07:37 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 01:03 UTC</sub>

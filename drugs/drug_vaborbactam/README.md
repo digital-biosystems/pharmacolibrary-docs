@@ -21,21 +21,29 @@ Vaborbactam is a beta-lactamase inhibitor used in combination with a carbapenem 
 
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
-| vaborbactam | parent | 297.13 | C12H16BNO5S | DrugBank | [56649692](https://pubchem.ncbi.nlm.nih.gov/compound/56649692) | Fornari_2024, Reed_2025 |
+| vaborbactam | parent | 297.13 | C12H16BNO5S | DrugBank | [56649692](https://pubchem.ncbi.nlm.nih.gov/compound/56649692) | Reed_2025 |
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 11:55 | 6:43 | 1/1/1 | 0/0/0 | 0/0/0 | 466,833/23,293 | einfracz / qwen3.8-27b | 12 | 1/11 | 12/0 | 0 |
+| 2026-10-15 00:43 | 5:21 | 1/1/1 | 0/0/0 | 0/0/0 | 423,236/23,624 | einfracz / qwen3.8-27b | 12 | 1/11 | 12/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.889). Primary extraction retained.">cross-check: partial</span> | [Principe_2022_reference](drugs/drug_vaborbactam/Vaborbactam_Principe2022_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Principe L et al., Microbiological, Clinical, and PK/PD Fe…, Pharmaceuticals (Basel, Swi… (2022) | [10.3390/ph15040463](https://doi.org/10.3390/ph15040463) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub><br><sub>route_to: `human_review`</sub> | [Reed_2025_reference](drugs/drug_vaborbactam/Vaborbactam_Reed2025_reference.md) | — | 1-compartment (no model) | 5 | Reed G et al., Population pharmacokinetics of meropene…, Antimicrobial agents and ch… (2025) | [10.1128/aac.00108-25](https://doi.org/10.1128/aac.00108-25) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.545). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Fornari_2024_reference](drugs/drug_vaborbactam/Vaborbactam_Fornari2024_reference.md) | — | general linear (no model) | 6 | Fornari C et al., Dose rationale for the use of meropenem…, British journal of clinical… (2024) | [10.1111/bcp.16145](https://doi.org/10.1111/bcp.16145) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub><br><sub>route_to: `human_review`</sub> | [Reed_2025_reference](drugs/drug_vaborbactam/Vaborbactam_Reed2025_reference.md) | — | 1-compartment (no model) | 6 | Reed G et al., Population pharmacokinetics of meropene…, Antimicrobial agents and ch… (2025) | [10.1128/aac.00108-25](https://doi.org/10.1128/aac.00108-25) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.545). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Fornari_2024_reference](drugs/drug_vaborbactam/Vaborbactam_Fornari2024_reference.md) | — | 1-compartment (no model) | 0 | Fornari C et al., Dose rationale for the use of meropenem…, British journal of clinical… (2024) | [10.1111/bcp.16145](https://doi.org/10.1111/bcp.16145) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=vaborbactam).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,30 +64,30 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Zhuang_2020.pdf` | Zhuang L et al., Evaluation of Hemodialysis Effect on Ph…, Journal of clinical pharmac… (2020) | popPK | 5 | [10.1002/jcph.1595](https://doi.org/10.1002/jcph.1595) | [32149406](https://pubmed.ncbi.nlm.nih.gov/32149406) | The paper describes a population PK study for vaborbactam in ESRD patients, but no quantitative parameter values (CL, V, etc.) are present in the provided evidence. |
+| `Zhuang_2020.pdf` | Zhuang L et al., Evaluation of Hemodialysis Effect on Ph…, Journal of clinical pharmac… (2020) | popPK | 5 | [10.1002/jcph.1595](https://doi.org/10.1002/jcph.1595) | [32149406](https://pubmed.ncbi.nlm.nih.gov/32149406) | The study is a modeling/simulation paper using pre-existing population PK models; while relevant to vaborbactam, no specific quantitative parameter values (CL, V, etc.) are provided in the abstract or evidence. |
 
-<sub>queue written 2026-10-07T11:49:47.799432+00:00</sub>
+<sub>queue written 2026-10-15T00:38:30.790745+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Assefa_2024 | irrelevant | 1 | 1 | The paper is a systematic review of PK/PD targets (fAUC/MIC) for beta-lactamase inhibitors, reporting exposure indices rather than quantitative disposition parameters (CL, V, Q, ka) for vaborbactam. |
-| popPK | Bhavnani_2022 | irrelevant | 4 | 1 | The paper is a PK-PD target attainment analysis that uses existing population PK models (referenced in citations) and provides simulated exposure metrics (AUC distributions) rather than reporting the quantitative disposition parameters (CL, V, etc.) for vaborbactam itself. |
-| popPK | Crass_2019 | irrelevant | 0 | 0 | The paper is a review of renal function estimation methodologies and does not report original quantitative pharmacokinetic parameters for vaborbactam. |
-| popPK | Gatti_2021 | irrelevant | 0 | 0 | This is a narrative review of novel beta-lactams and does not report specific quantitative PK parameters for vaborbactam. |
-| popPK | Gatti_2023 | irrelevant | 1 | 0 | This is a review article discussing PK/PD optimization concepts for beta-lactams without providing original quantitative PK parameter values for vaborbactam. |
-| popPK | Gatti_2023_2 | irrelevant | 1 | 0 | The study reports PK/PD target attainment (ratios) and uses a dose/clearance formula but does not report quantitative PK parameters (CL, V, half-life) for vaborbactam. |
-| popPK | Gatti_2024 | irrelevant | 3 | 2 | The paper is a biliary PK/PD case series reporting concentration ratios and MIC targets, not a population-PK study reporting standard quantitative disposition parameters like clearance, volume, or intercompartmental clearance. |
-| popPK | Han_2021 | irrelevant | 2 | 0 | The paper is a Monte Carlo simulation study that does not report original population pharmacokinetic parameter values (clearance, volume, etc.) for vaborbactam, instead utilizing data from other sources. |
-| popPK | Lombardi_2024 | irrelevant | 0 | 0 | The paper is a narrative review of antibiotics in liver transplantation and does not report specific quantitative population pharmacokinetic parameters (CL, V, etc.) for vaborbactam. |
-| popPK | Lombardi_2026 | irrelevant | 1 | 0 | This is a narrative review discussing multiple new antibiotics including meropenem/vaborbactam, but it does not report original quantitative pharmacokinetic parameters (CL, V, ka, etc.) for vaborbactam. |
-| popPK | OJeanson_2025 | irrelevant | 2 | 0 | The paper is a simulation study using previously published PopPK models to calculate probability of target attainment (PTA), and it does not report original numeric disposition parameters (CL, V, etc.) for vaborbactam in the provided evidence. |
-| popPK | Principe_2022 | irrelevant | 1 | 0 | This is a review paper covering many beta-lactam/beta-lactamase inhibitor combinations, and while it mentions meropenem/vaborbactam, it does not provide specific quantitative PK parameters (CL, Vd, etc.) for vaborbactam itself in the provided text. |
-| popPK | Rando_2024 | irrelevant | 2 | 0 | This is a systematic review of other studies and does not provide original quantitative PK parameter values for vaborbactam in the text. |
-| popPK | Trang_2021 | relevant | 10 | 4 | This is a population PK study for vaborbactam, but the specific numeric parameter estimates (CL, V, etc.) are located in Tables 2/3 and Supplementary Tables S1/S2, which are not included in the provided evidence text. |
-| popPK | Zhanel_2018 | relevant | 4 | 3 | The paper is a review that reports approximate population PK parameters (Vd, t1/2) for vaborbactam but lacks detailed clearance (CL) values or compartmental parameters required for robust extraction. |
-| popPK | Zhuang_2020 | irrelevant | 5 | 0 | The paper describes a population PK study for vaborbactam in ESRD patients, but no quantitative parameter values (CL, V, etc.) are present in the provided evidence. |
+| popPK | Assefa_2024 | irrelevant | 1 | 1 | This is a systematic review of PK/PD exposure targets (efficacy indices like fAUC/MIC) for beta-lactamase inhibitors, not a study reporting quantitative pharmacokinetic disposition parameters (CL, V, ka) for vaborbactam. |
+| popPK | Bhavnani_2022 | irrelevant | 2 | 0 | The paper is a PK-PD target attainment simulation study that relies on pre-existing population PK models (cited as reference 10) and does not report original numeric PK parameter values (CL, V, etc.) for vaborbactam in the provided text. |
+| popPK | Crass_2019 | irrelevant | 0 | 0 | The paper is a review of renal function estimation in drug development and only mentions meropenem/vaborbactam as a recent example without providing specific PK parameter values for vaborbactam. |
+| popPK | Gatti_2021 | irrelevant | 1 | 0 | This is a narrative review article focusing on PK/PD target attainment in renal patients, not a primary PK study reporting quantitative parameter values for vaborbactam. |
+| popPK | Gatti_2023 | irrelevant | 2 | 0 | This is a narrative review on PK/PD optimization strategies for beta-lactams and does not report original quantitative pharmacokinetic parameters or population models for vaborbactam. |
+| popPK | Gatti_2023_2 | irrelevant | 2 | 1 | The study reports PK/PD target attainment rates and a calculated AUC/CT ratio for vaborbactam as part of a TDM program, but does not provide quantitative population pharmacokinetic parameter estimates (CL, V, ka) or a compartmental model for vaborbactam. |
+| popPK | Gatti_2024 | relevant | 3 | 6 | The paper reports individual biliary and plasma concentrations and PK/PD ratios (AUC, Css) for vaborbactam in humans, but lacks population-level parameter estimates (CL, V, Q, ka) or a compartmental model. |
+| popPK | Han_2021 | irrelevant | 2 | 0 | The study is a Monte Carlo simulation using published PK parameters to evaluate regimens; it does not report original quantitative PK parameters (CL, V, Q) for vaborbactam in the evidence. |
+| popPK | Lombardi_2024 | irrelevant | 0 | 0 | The paper is a clinical review discussing antibiotic usage in liver transplantation and does not provide specific population pharmacokinetic parameter values (CL, V, Q) for vaborbactam. |
+| popPK | Lombardi_2026 | irrelevant | 2 | 0 | The paper is a review of clinical evidence for new antibiotics in lung transplantation, mentioning meropenem/vaborbactam but providing no quantitative pharmacokinetic parameter values (CL, V, etc.) for vaborbactam. |
+| popPK | OJeanson_2025 | irrelevant | 2 | 0 | The paper is a pharmacometric simulation study that uses previously published PopPK models to calculate probability of target attainment, but it does not report original quantitative disposition parameters (CL, V, Q, ka) for vaborbactam in the provided evidence. |
+| popPK | Principe_2022 | irrelevant | 3 | 2 | The paper is a comprehensive review of multiple beta-lactam/beta-lactamase inhibitor combinations, but the extracted evidence does not contain any quantitative PK parameter values specifically for vaborbactam (only for other drugs like aztreonam, avibactam, enmetazobactam, taniborbactam, zidebactam, and cefiderocol). |
+| popPK | Rando_2024 | irrelevant | 1 | 0 | This is a systematic review summarizing PK/PD data for several beta-lactams including vaborbactam, but it does not report specific quantitative pharmacokinetic parameter values (e.g., CL, V) for vaborbactam in the provided text. |
+| popPK | Trang_2021 | relevant | 10 | 4 | The paper is a population PK study for vaborbactam, but the specific numeric parameter values (CL, V) are in Tables 3 and 5 or Supplementary Material which are not included in the provided evidence (only AUC summary statistics are visible). |
+| popPK | Zhanel_2018 | irrelevant | 4 | 2 | The paper is a review summarizing PK parameters (Vd ~18 L, t1/2 1.3-2.0 h) for vaborbactam but lacks the quantitative compartmental parameters (CL, Q, ka) and specific population model details required for extraction. |
+| popPK | Zhuang_2020 | irrelevant | 5 | 0 | The study is a modeling/simulation paper using pre-existing population PK models; while relevant to vaborbactam, no specific quantitative parameter values (CL, V, etc.) are provided in the abstract or evidence. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 11:49 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-15 00:38 UTC</sub>

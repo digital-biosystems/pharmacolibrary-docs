@@ -19,15 +19,15 @@
 
 **Model:** No model was generated from this record.
 
-> Romiplostim serum concentrations (ng/mL) linearly stimulate the zero-order production of hematopoietic stem and progenitor cells (HSPCs) and their differentiation into megakaryocytes (MK), with slope parameters SmaxRM1 (0.07491) and SmaxRM2 (0.08929). The resulting platelet count (×10^12 cells/L) is governed by precursor mean lifespan TMP (106 h) and platelet mean lifespan TPLT (139.8 h), with baseline PLT0 of 1.009 ×10^12 cells/L.
+> Romiplostim serum concentration linearly stimulates the zero-order production rate of hematopoietic stem cells and their differentiation into megakaryocytes, thereby increasing platelet counts via an indirect response mechanism with linear stimulatory parameters SmaxROM1 (0.07491) and SmaxROM2 (0.08929). The baseline platelet count (PLT0) was estimated at 1.009 ×10^12 cells/L, with no other specific potency or elimination rate values provided in the record or excerpts.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Fan_2023`
 - **model family:** `indirect_response_iii`
 - **driver:** `pk_record`
 - **tier:** descriptive
-- **effect:** stimulation/proportional
+- **effect:** stimulation/additive
 
 ## Citation
 Fan X et al., Novel Combination of Erythropoietin and…, ACS pharmacology & translat… (2023)
@@ -38,11 +38,7 @@ Fan X et al., Novel Combination of Erythropoietin and…, ACS pharmacology & tra
 |---|---|---|---|---|---|---|---|
 | PD (effect) | SmaxRM1 | `Q335` · not captured | 0.07491 | not captured | not captured | llm (not captured) | Fan_2023:pdv3 |
 | PD (effect) | SmaxRM2 | `Q335` · not captured | 0.08929 | not captured | not captured | llm (not captured) | Fan_2023:pdv3 |
-| PD (effect) | SmaxPLT1 | `Q335` · not captured | 1.963 | not captured | not captured | llm (not captured) | Fan_2023:pdv3 |
-| PD (effect) | SmaxPLT2 | `Q335` · not captured | 2.768 | not captured | not captured | llm (not captured) | Fan_2023:pdv3 |
 | PD (effect) | PLT0 | `Q324` · not captured | 1.009 | ×1012 cells/L | not captured | llm (not captured) | Fan_2023:pdv3 |
-| — | TMP | `Q100` · not captured | 106 | h | not captured | nil (not captured) | Fan_2023:pdv3 |
-| — | TPLT | `Q100` · not captured | 139.8 | h | not captured | nil (not captured) | Fan_2023:pdv3 |
 | variability | σPLT1 | `Q315` · not captured | 0.1657 | not captured | not captured | llm (not captured) | Fan_2023:pdv3 |
 | variability | σPLT2 | `Q315` · not captured | 0.1103 | not captured | not captured | llm (not captured) | Fan_2023:pdv3 |
 

@@ -1,8 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01C&quot;,&quot;href&quot;:&quot;atc/P01C.md&quot;},{&quot;label&quot;:&quot;fexinidazole&quot;,&quot;href&quot;:&quot;drugs/drug_fexinidazole/&quot;},{&quot;label&quot;:&quot;Watson_2019 \u00b7 PD alanine aminotransferase (peak)&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fexinidazole_Watson2019_reference&quot;,&quot;label&quot;:&quot;Watson_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fexinidazole/Fexinidazole_Watson2019_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01C&quot;,&quot;href&quot;:&quot;atc/P01C.md&quot;},{&quot;label&quot;:&quot;fexinidazole&quot;,&quot;href&quot;:&quot;drugs/drug_fexinidazole/&quot;},{&quot;label&quot;:&quot;Watson_2019 \u00b7 PD peak observed serum alanine aminotransferase (ALT)&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# alanine aminotransferase (peak) — PD  <span class="pk-badge pk-badge--red">rejected</span>
+# peak observed serum alanine aminotransferase (ALT) — PD  <span class="pk-badge pk-badge--red">rejected</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -14,13 +13,13 @@
 
 ## Record summary
 
-**As extracted:** Fexinidazole sulfone metabolite (M2) drives alanine aminotransferase (peak) (in units/liter): direct sigmoid Emax (Hill) effect.
+**As extracted:** Fexinidazole sulfone metabolite (M2) drives peak observed serum alanine aminotransferase (ALT) (in units/liter): direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
 
-> In chronic Chagas disease patients, fexinidazole sulfone (M2) exposure (AUlogC) was fitted to peak ALT (units/liter) with a sigmoid Emax stimulation model, with EC50 of 164–362 AUlogC; the paper does not state the mechanism beyond dose-dependent (M2 exposure-driven) ALT elevation.
+> A sigmoid Emax model described the dose-dependent stimulation of peak observed serum ALT (units/liter) by fexinidazole sulfone metabolite (M2) exposure (AUlogC) in chronic Chagas disease patients. The model reported two EC50 values of 164–362 AUlogC and 119–371 AUlogC, but the paper does not specify the mechanistic basis for the relationship (e.g., production or elimination).
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Watson_2019`
 - **model family:** `sigmoid_emax`
@@ -36,6 +35,7 @@ Watson JA et al., Pharmacokinetic-Pharmacodynamic Assessm…, Antimicrobial agen
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
 | PD (effect) | EC50 | `Q321` · not captured | 164–362 | AUlogC | not captured | llm (not captured) | Watson_2019:pdv3 |
+| PD (effect) | EC50 | `Q321` · not captured | 119–371 | AUlogC | not captured | llm (not captured) | Watson_2019:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>

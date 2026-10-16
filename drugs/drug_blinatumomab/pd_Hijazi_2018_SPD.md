@@ -1,7 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;blinatumomab&quot;,&quot;href&quot;:&quot;drugs/drug_blinatumomab/&quot;},{&quot;label&quot;:&quot;Hijazi_2018 \u00b7 PD fold-change in SPD from screening to treatment end&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;blinatumomab&quot;,&quot;href&quot;:&quot;drugs/drug_blinatumomab/&quot;},{&quot;label&quot;:&quot;Hijazi_2018 \u00b7 PD Sum of Longest Perpendicular Dimensions (SPD)&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Blinatumomab_Hijazi2018_reference&quot;,&quot;label&quot;:&quot;Hijazi_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_blinatumomab/Blinatumomab_Hijazi2018_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Blinatumomab_Kuchimanchi2019_reference&quot;,&quot;label&quot;:&quot;Kuchimanchi_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_blinatumomab/Blinatumomab_Kuchimanchi2019_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hijazi_2018_SPD&quot;,&quot;label&quot;:&quot;Hijazi_2018 \u00b7 SPD&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_blinatumomab/pd_Hijazi_2018_SPD.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Hijazi_2018_kdep&quot;,&quot;label&quot;:&quot;Hijazi_2018 \u00b7 kdep&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_blinatumomab/pd_Hijazi_2018_kdep.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# fold-change in SPD from screening to treatment end — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.875). Primary extraction retained.">cross-check: disputed</span>
+# Sum of Longest Perpendicular Dimensions (SPD) — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.875). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -13,19 +14,19 @@
 
 ## Record summary
 
-**As extracted:** Blinatumomab (concentrations from this paper's PK model) drives fold-change in SPD from screening to treatment end (in fold): direct sigmoid Emax (Hill) effect.
+**As extracted:** Blinatumomab (concentrations from this paper's PK model) drives Sum of Longest Perpendicular Dimensions (SPD) (in fold): direct sigmoid Emax (Hill) effect.
 
-**Model:** No model was generated from this record.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
-> Cumulative blinatumomab exposure (AUCcum) was related to the fold-change in SPD from screening to treatment end using an inhibitory sigmoidal Emax model, describing exposure-dependent reduction in tumor size; Css was also explored, but its relationship with SPD did not fit a PD model. The model parameters were Eo 1.20 fold, Emax 1.15, EC50 1,000 h×µg/L, and γ 1.50.
+> Blinatumomab exposure, described by AUCcum or Css, inhibits the fold-change in sum of longest perpendicular dimensions (SPD) via a direct sigmoidal Emax effect, with a baseline Eo of 1.20-fold, maximum effect Emax of 1.15, and EC50 of 1,000 h×µg/L. The model includes a sigmoidicity factor (γ) of 1.50 to describe the exposure–response relationship.
 >
-> <sub>Source-based summary by gpt-6-luna from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Hijazi_2018`
 - **model family:** `sigmoid_emax`
 - **driver:** `pk_record`
 - **tier:** descriptive
-- **effect:** inhibition/additive
+- **effect:** inhibition/unknown
 
 ## Citation
 Hijazi Y et al., Pharmacokinetic and Pharmacodynamic Rel…, Current clinical pharmacolo… (2018)
@@ -34,7 +35,7 @@ Hijazi Y et al., Pharmacokinetic and Pharmacodynamic Rel…, Current clinical ph
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | Eo | `Q324` · not captured | 1.20 | fold | not captured | llm (not captured) | Hijazi_2018:pdv3 |
+| PD (effect) | Eo | `Q324` · not captured | 1.20-fold | fold | not captured | llm (not captured) | Hijazi_2018:pdv3 |
 | PD (effect) | Emax | `Q323` · not captured | 1.15 | not captured | not captured | llm (not captured) | Hijazi_2018:pdv3 |
 | PD (effect) | EC50 | `Q321` · not captured | 1,000 | h×µg/L | not captured | llm (not captured) | Hijazi_2018:pdv3 |
 | PD (effect) | ɣ | `Q325` · not captured | 1.50 | not captured | not captured | llm (not captured) | Hijazi_2018:pdv3 |
@@ -43,6 +44,44 @@ Hijazi Y et al., Pharmacokinetic and Pharmacodynamic Rel…, Current clinical ph
 <summary>Parameter definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
+
+
+## Exposure-response model
+
+`Blinatumomab_Hijazi2018_PD_spd` — sigmoid_emax, `response = E0 + Emax*frac`
+
+| parameter | value (paper units) | SI |
+|---|---|---|
+| E0 | 0 | — |
+| Emax | -1.15 fold | — |
+| EC50 | 1000 h×µg/L | — |
+| gamma | 1.5 | — |
+
+Closed-form check points (response, SI): `at_0` = 0, `at_EC50` = -0.575, `at_inf` = -1.15
+
+Deviations:
+
+- `defaulted_parameters` — E0
+- `pd_binding_imax_as_negative_emax` — Imax (Q323) enters SigmoidEmaxSweep as −Emax
+- `pd_binding_exposure_unit_unresolved` — 'h×µg/L' — the x axis is in the paper's unit, not SI
+
+## Review
+
+Verdict <span class="pk-badge pk-badge--orange">needs review</span> · route to `scholar`
+
+| check | status | note |
+|---|---|---|
+| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
+| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
+| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
+| `T2_direction` | pass | the response falls, as direct effect predicts |
+| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
+| `T4_defaults` | fail | a core parameter took a library default: E0 |
+
+Advisory:
+
+- defaulted: E0 — a row the paper has and the record lacks
+- exposure unit not resolved to SI — the x axis is in the paper's unit
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
@@ -72,19 +111,22 @@ Primary extraction: `openai:gpt-6-luna`; retained regardless of cross-check verd
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_blinatumomab/Blinatumomab_Hijazi2018_PD_spd/Blinatumomab_Hijazi2018_PD_spd_modelica.zip" download>Blinatumomab_Hijazi2018_PD_spd_modelica.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_blinatumomab/Blinatumomab_Hijazi2018_PD_spd/Blinatumomab_Hijazi2018_PD_spd_matlab.zip" download>Blinatumomab_Hijazi2018_PD_spd_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_blinatumomab/Blinatumomab_Hijazi2018_PD_spd/Blinatumomab_Hijazi2018_PD_spd_sbml.zip" download>Blinatumomab_Hijazi2018_PD_spd_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_blinatumomab/Blinatumomab_Hijazi2018_PD_spd/Blinatumomab_Hijazi2018_PD_spd_cellml.zip" download>Blinatumomab_Hijazi2018_PD_spd_cellml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PD_SigmoidEmaxSweep.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+<dbs-fmusim paramsurl="drugs/drug_blinatumomab/Blinatumomab_Hijazi2018_PD_spd/Blinatumomab_Hijazi2018_PD_spd_params.json" metaurl="assets/fmu/PD_SigmoidEmaxSweep.vr.json" wasmurl="assets/fmu/PD_SigmoidEmaxSweep.js" controlsurl="drugs/drug_blinatumomab/Blinatumomab_Hijazi2018_PD_spd/Blinatumomab_Hijazi2018_PD_spd_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PD_SigmoidEmaxSweep` · parameters `Blinatumomab_Hijazi2018_PD_spd_params.json` · controls `Blinatumomab_Hijazi2018_PD_spd_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 

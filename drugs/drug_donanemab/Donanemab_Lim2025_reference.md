@@ -4,7 +4,7 @@
 
 # donanemab — `Donanemab_Lim2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.833). Primary extraction retained.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.857). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -20,7 +20,7 @@
 
 The record describes donanemab with a two-compartment structure and total clearance of 0.0159 L/h, central volume 3.59 L, and peripheral volume 6.04 L. The structural check found an unreachable or orphan compartment or an unlinked metabolite, meaning part of the model structure cannot be reached from the administered dose. Because of this structural defect the record was rejected despite the parameter values being present. Extracted — donanemab: CL 0.0159 L/h, V1 3.59 L, V2 6.04 L.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has 21.6, the second reading none. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q31: this record has none, the second reading 0.792. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -58,17 +58,17 @@ Lim S et al., Sex differences in efficacy/safety of a…, Translational and clin
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.833 (5/6 fields) | 1 |
+| `gpt-oss-120b` | partly confirmed | 0.857 (6/7 fields) | 1 |
 
 <details><summary>1 field discrepancy</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `values[Q312]` | 21.6 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q31]` | not captured | 0.792 | only_one_extracted |
 
 </details>
 
@@ -101,7 +101,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_donanemab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Lim_2025` / `Lim_2025::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_donanemab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Lim_2025` / `Lim_2025::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

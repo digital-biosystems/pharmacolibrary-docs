@@ -17,14 +17,23 @@ Tralokinumab is a monoclonal antibody used to treat dermatitis (atopic skin infl
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 08:03 | 0:42 | 0/1/1 | 0/0/0 | 0/0/0 | 35,778/1,707 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
+| 2026-10-14 23:31 | 0:40 | 0/2/0 | 0/0/0 | 0/0/0 | 37,140/2,883 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.895). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: model_quarantined: Vd, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Soehoel_2022_reference](drugs/drug_tralokinumab/Tralokinumab_Soehoel2022_reference.md) | held back | 1-compartment, oral | 6 | Soehoel A et al., Population Pharmacokinetics of Tralokin…, Clinical pharmacology in dr… (2022) | [10.1002/cpdd.1113](https://doi.org/10.1002/cpdd.1113) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.25). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Baverel_2015_reference](drugs/drug_tralokinumab/Tralokinumab_Baverel2015_reference.md) | — | 1-compartment (no model) | 0 | Baverel PG et al., Pharmacokinetics of tralokinumab in ado…, British journal of clinical… (2015) | [10.1111/bcp.12725](https://doi.org/10.1111/bcp.12725) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.895). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Soehoel_2022_reference](drugs/drug_tralokinumab/Tralokinumab_Soehoel2022_reference.md) | — | 1-compartment (no model) | 7 | Soehoel A et al., Population Pharmacokinetics of Tralokin…, Clinical pharmacology in dr… (2022) | [10.1002/cpdd.1113](https://doi.org/10.1002/cpdd.1113) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=tralokinumab).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: IL13 (antibody), IL13 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -36,7 +45,7 @@ Tralokinumab is a monoclonal antibody used to treat dermatitis (atopic skin infl
 
 - **PubMed hits:** 5 matched, 5 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 0  ·  needs_review 1  ·  rejected 1  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -45,18 +54,18 @@ _3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Baverel_2015.pdf` | Baverel PG et al., Pharmacokinetics of tralokinumab in ado…, British journal of clinical… (2015) | popPK | 10 | [10.1111/bcp.12725](https://doi.org/10.1111/bcp.12725) | [26182954](https://pubmed.ncbi.nlm.nih.gov/26182954) | The study reports a population PK model for tralokinumab and provides specific numeric clearance values for adolescents in the abstract. |
-| `Baverel_2018.pdf` | Baverel PG et al., Dose-Exposure-Response Relationship of…, Clinical pharmacology and t… (2018) | popPK | 10 | [10.1002/cpt.803](https://doi.org/10.1002/cpt.803) | [28758192](https://pubmed.ncbi.nlm.nih.gov/28758192) | The study describes a population PK/PD model for tralokinumab but provides no numeric PK parameter values in the provided text. |
-| `Baverel_2018_2.pdf` | Baverel P et al., A randomized, placebo-controlled, singl…, Drug metabolism and pharmac… (2018) | popPK | 8 | [10.1016/j.dmpk.2017.12.001](https://doi.org/10.1016/j.dmpk.2017.12.001) | [29622380](https://pubmed.ncbi.nlm.nih.gov/29622380) | The paper reports PK parameters for tralokinumab in humans, but only provides summary statistics (t1/2 range) in the text, with detailed numeric model parameters likely in figures or supplementary material not provided. |
+| `Baverel_2015.pdf` | Baverel PG et al., Pharmacokinetics of tralokinumab in ado…, British journal of clinical… (2015) | popPK | 10 | [10.1111/bcp.12725](https://doi.org/10.1111/bcp.12725) | [26182954](https://pubmed.ncbi.nlm.nih.gov/26182954) | The study reports quantitative population PK parameters, specifically clearance values for adolescents and adults, directly in the results text. |
+| `Baverel_2018.pdf` | Baverel PG et al., Dose-Exposure-Response Relationship of…, Clinical pharmacology and t… (2018) | popPK | 7 | [10.1002/cpt.803](https://doi.org/10.1002/cpt.803) | [28758192](https://pubmed.ncbi.nlm.nih.gov/28758192) | The paper describes a population PK/PD model for tralokinumab, but specific quantitative PK parameter values (CL, V, etc.) are not present in the provided evidence. |
+| `Baverel_2018_2.pdf` | Baverel P et al., A randomized, placebo-controlled, singl…, Drug metabolism and pharmac… (2018) | popPK | 5 | [10.1016/j.dmpk.2017.12.001](https://doi.org/10.1016/j.dmpk.2017.12.001) | [29622380](https://pubmed.ncbi.nlm.nih.gov/29622380) | The study reports pharmacokinetics for tralokinumab but the extracted evidence contains only summary descriptive statistics (Cmax, AUC trends, t1/2 range) and qualitative statements about a population model, lacking specific quantitative parameter values (CL, V, Q) readable in the text provided. |
 
-<sub>queue written 2026-10-07T08:03:24.162206+00:00</sub>
+<sub>queue written 2026-10-14T23:30:51.885465+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Baverel_2018 | relevant | 10 | 0 | The study describes a population PK/PD model for tralokinumab but provides no numeric PK parameter values in the provided text. |
-| popPK | Baverel_2018_2 | relevant | 8 | 3 | The paper reports PK parameters for tralokinumab in humans, but only provides summary statistics (t1/2 range) in the text, with detailed numeric model parameters likely in figures or supplementary material not provided. |
+| popPK | Baverel_2018 | relevant | 7 | 2 | The paper describes a population PK/PD model for tralokinumab, but specific quantitative PK parameter values (CL, V, etc.) are not present in the provided evidence. |
+| popPK | Baverel_2018_2 | irrelevant | 5 | 1 | The study reports pharmacokinetics for tralokinumab but the extracted evidence contains only summary descriptive statistics (Cmax, AUC trends, t1/2 range) and qualitative statements about a population model, lacking specific quantitative parameter values (CL, V, Q) readable in the text provided. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 08:03 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-14 23:30 UTC</sub>

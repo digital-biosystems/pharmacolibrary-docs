@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01C&quot;,&quot;href&quot;:&quot;atc/C01C.md&quot;},{&quot;label&quot;:&quot;octopamine&quot;,&quot;href&quot;:&quot;drugs/drug_octopamine/&quot;},{&quot;label&quot;:&quot;Blenau_2000 \u00b7 PD cyclic AMP production&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# cyclic AMP production — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span>
+# cyclic AMP production — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -15,19 +15,19 @@
 
 ## Record summary
 
-**As extracted:** Octopamine drives cyclic AMP production: direct Emax (saturable) effect.
+**As extracted:** Octopamine drives cyclic AMP production: direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
 
-> The paper describes an Emax model where octopamine inhibits cyclic AMP production, with an EC50 of 3 microM. The specific mechanism of inhibition (e.g., production vs. elimination) is not stated in the available excerpts.
+> The model describes octopamine inhibiting cyclic AMP production via a sigmoid Emax mechanism. The stated EC50 is 3 microM, and the paper does not specify the mechanism further or provide other parameters.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Blenau_2000`
-- **model family:** `emax`
+- **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`
 - **tier:** descriptive
-- **effect:** inhibition/unknown
+- **effect:** inhibition/proportional
 
 ## Citation
 Blenau W et al., Amtyr1: characterization of a gene from…, Journal of neurochemistry (2000)
@@ -45,18 +45,16 @@ Blenau W et al., Amtyr1: characterization of a gene from…, Journal of neuroche
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `einfracz:gpt-oss-120b` | not confirmed | 0.4 (2/5 fields) | 3 |
+| `einfracz:gpt-oss-120b` | not confirmed | 0.8 (4/5 fields) | 1 |
 
-<details><summary>3 field discrepancies</summary>
+<details><summary>1 field discrepancy</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `einfracz:gpt-oss-120b` | `effect_form` | unknown | proportional | mismatch |
-| `einfracz:gpt-oss-120b` | `model_family` | emax | sigmoid_emax | mismatch |
 | `einfracz:gpt-oss-120b` | `parameters[Q321].value` | 3 | 3 µM | mismatch |
 
 </details>

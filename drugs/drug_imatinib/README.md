@@ -53,6 +53,34 @@ Imatinib is a tyrosine-kinase inhibitor used to treat several cancers, including
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Said_2025_mortality](drugs/drug_imatinib/pd_Said_2025_mortality.md) | mortality ← imatinib (total and unbound) and N-desmethyl-imatinib (total; included in PM) · model not identified | — | Said MM et al., Exposure-response analysis of oral and…, European journal of pharmac… (2025) | [10.1016/j.ejps.2025.107332](https://doi.org/10.1016/j.ejps.2025.107332) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Said_2025_ventilator_free_days](drugs/drug_imatinib/pd_Said_2025_ventilator_free_days.md) | ventilator-free days ← imatinib (total and unbound) and N-desmethyl-imatinib (total; included in PM) · model not identified | — | Said MM et al., Exposure-response analysis of oral and…, European journal of pharmac… (2025) | [10.1016/j.ejps.2025.107332](https://doi.org/10.1016/j.ejps.2025.107332) |
 
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=imatinib).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor/substrate, `SLCO1A2` substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` inhibitor/substrate, `SLC22A5` substrate | DrugBank actor |
+| absorption | liver | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
+| absorption | mammary gland | `ABCG2` inhibitor/substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | skeletal muscle | `SLC22A5` substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor/substrate, `SLC22A5` substrate, `SLCO1A2` substrate | DrugBank actor |
+| absorption | testis | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
+| distribution | blood | `ALB` binder, `ORM1` binder | DrugBank actor |
+| distribution | blood-brain barrier | `ABCC1` inhibitor/substrate | DrugBank actor |
+| distribution | lung | `ABCC1` inhibitor/substrate | DrugBank actor |
+| metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
+| metabolism | kidney | `CYP3A5` inhibitor/substrate | DrugBank actor |
+| metabolism | liver | `CYP1A2` substrate, `CYP2C19` substrate, `CYP2C8` substrate, `CYP2C9` inhibitor/substrate, `CYP2D6` inhibitor/substrate, `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor/substrate, `CYP3A7` inhibitor/substrate, `SLC22A1` substrate, `SLCO1B3` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor/substrate | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | `ABCC2` substrate, `ABCC4` substrate, `SLC22A2` inhibitor | DrugBank actor |
+| excretion | liver | `ABCB11` substrate, `ABCC2` substrate, `ABCC4` substrate | DrugBank actor |
+| excretion | small intestine | `ABCC2` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ABCA3 (substrate), ABL1 (inhibitor), BCR (inhibitor), CSF1R (target), DDR1 (target), DDR2 (target), KIT (target), MCL1 (other/unknown), PDGFRA (target), PDGFRB (target), RET (inhibitor).</sub>
+
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
 <table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>

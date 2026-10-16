@@ -20,9 +20,9 @@
 
 **Model:** No model was generated from this record.
 
-> Terbutaline inhibits IgE-mediated histamine release from mast cells, described by a sigmoid Emax model with an Emax (relative intrinsic activity) of 0.84; the paper excerpts provide no further mechanism, potency (IC50/EC50), or rate values.
+> The paper does not provide the full text or mechanism details, so the specific mechanism of terbutaline's inhibition of IgE-mediated histamine release is not described. The record cites a sigmoid Emax model with a relative intrinsic activity (Emax) of 0.84, but no potency (IC50/EC50) or rate parameters are stated.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
 
 - **paper:** `Scola_2004`
 - **model family:** `sigmoid_emax`

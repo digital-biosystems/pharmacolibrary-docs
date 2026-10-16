@@ -15,19 +15,19 @@
 
 ## Record summary
 
-**As extracted:** Carbenoxolone (measured concentrations) drives bell-shaped outward Cs+ current: direct sigmoid Emax (Hill) effect.
+**As extracted:** Carbenoxolone (measured concentrations) drives bell-shaped outward Cs+ current (in pA/pF): direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
 
-> Carbenoxolone directly inhibits the bell-shaped outward Cs+ current in a dose-dependent manner, with an IC50 of 27 μM and a Hill coefficient of 2. The paper does not specify the underlying mechanism of this inhibition, noting only that the IC50 is higher than that for pannexin 1 (5 μM), suggesting the current does not arise from pannexin-mediated channels.
+> Carbenoxolone acts directly as a concentration-dependent inhibitor of the bell-shaped outward Cs+ current (measured in pA/pF), which the paper suggests is likely not mediated by pannexin channels due to the high IC50. The model describes this inhibition with an IC50 of 27 μM and a Hill coefficient of 2.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Okada_2015`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
 - **tier:** descriptive
-- **effect:** inhibition/unknown
+- **effect:** inhibition/proportional
 
 ## Citation
 Okada Y et al., Carbenoxolone-sensitive and cesium-perm…, Biochemistry and biophysics… (2015)

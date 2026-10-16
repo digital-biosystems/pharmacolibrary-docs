@@ -4,7 +4,7 @@
 
 # repaglinide — `Repaglinide_Gertz2014_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (primary re-run, agreement 0.4). Primary extraction retained.">cross-check: partial 1/2</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.6), gpt-oss:120b (primary re-run, agreement 0.4). Primary extraction retained.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -20,7 +20,7 @@
 
 No clearance, volume or rate constant of the model is reported in it. Only the abstract was available, so reported summary statistics stand in for a fitted model. No parameter values were extracted.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has repaglinide, the second reading unknown; it also differs on 2 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has repaglinide, the second reading unknown; it also differs on 1 more field. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -54,18 +54,20 @@ _No resolved parameters._
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  1 of 2 readers agree  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
 Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | confirmed | 1.0 (4/4 fields) | none |
+| `gpt-oss-120b` | primary re-run | 0.6 (3/5 fields) | 2 |
 | `gpt-oss:120b` | primary re-run | 0.4 (2/5 fields) | 3 |
 
-<details><summary>3 field discrepancies</summary>
+<details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cluptake]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | repaglinide | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[cluptake]` | not captured | 48 | only_one_extracted |
 | `gpt-oss:120b` | `screen.dose_compound` | repaglinide | unknown | mismatch |
 | `gpt-oss:120b` | `screen.primary_analyte` | repaglinide | unknown | mismatch |
@@ -93,7 +95,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_repaglinide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Gertz_2014` / `Gertz_2014::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_repaglinide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Gertz_2014` / `Gertz_2014::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

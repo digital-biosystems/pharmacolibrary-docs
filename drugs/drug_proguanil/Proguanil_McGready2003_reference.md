@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;proguanil&quot;,&quot;href&quot;:&quot;drugs/drug_proguanil/&quot;},{&quot;label&quot;:&quot;McGready_2003 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Proguanil_CherkaouiRbati2023_reference&quot;,&quot;label&quot;:&quot;Cherkaoui-Rbati_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_proguanil/Proguanil_CherkaouiRbati2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Proguanil_Hussein1996_reference&quot;,&quot;label&quot;:&quot;Hussein_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_proguanil/Proguanil_Hussein1996_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Proguanil_CherkaouiRbati2023_reference&quot;,&quot;label&quot;:&quot;Cherkaoui-Rbati_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_proguanil/Proguanil_CherkaouiRbati2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Proguanil_McGready2003_reference&quot;,&quot;label&quot;:&quot;McGready_2003_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_proguanil/Proguanil_McGready2003_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # proguanil — `Proguanil_McGready2003_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.273). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.273). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -13,37 +13,37 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 ### Reviewer guidance
 
-**Only clearance was extracted — no volume.**
+**Ka use library defaults, not estimates from this paper; t3_output_variable (+2 more).**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — proguanil: CL/F 313 ml/h/kg, Vnorm/F 13 l/kg, t1/2z 29.1 h, tlag 0.147 h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — proguanil: CL/F 313 ml/h/kg, V/F 13 l/kg, t1/2z 29.1 h, tlag 0.147 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has proguanil → cycloguanil (metabolism), the second reading none; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 McGready R et al., The pharmacokinetics of atovaquone and…, European journal of clinica… (2003)
   ·  DOI: [10.1007/s00228-003-0652-9](https://doi.org/10.1007/s00228-003-0652-9)
 
-<div class="pk-model-meta" hidden drug="proguanil" model-id="Proguanil_McGready2003_reference" status="needs_review" stale="false" population="pregnant women with falciparum malaria" measured-compound="proguanil" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="proguanil" model-id="Proguanil_McGready2003_reference" status="rejected" stale="false" population="pregnant women" measured-compound="proguanil" parameterization="apparent" topology="parent_metabolite"></div>
 
-**Model structure:** parent + metabolite; no model was built for this record.  
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.
 
-**Parameterization:** CL/F, Vnorm/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| oral clearance (Cl/F) atovaquone | `Q27` · CL/F | 313 | ml/h/kg | 6.08611111111111e-06 | [ml] / [[h] · [kg]] | not captured | llm_confirmed (0.6) | McGready_2003:abstract | — | not captured |
-| total apparent volume of distribution (Vd/F) atovaquone | `Q353` · Vnorm/F | 13.0 | l/kg | 0.91 | [l] / [kg] | not captured | llm_corrected (0.6) | McGready_2003:abstract | — | not captured |
-| terminal elimination half-life atovaquone | `Q57` · t1/2z | 29.1 | h | 104760.0 | [h] | not captured | llm (0.6) | McGready_2003:abstract | — | not captured |
+| oral clearance (Cl/F) | `Q27` · CL/F | 313 | ml/h/kg | 6.08611111111111e-06 | [ml] / [[h] · [kg]] | not captured | exact (1.0) | McGready_2003:abstract, McGready_2003:abstract | — | not captured |
+| total apparent volume of distribution (Vd/F) | `Q76` · V/F | 13.0 | l/kg | 0.91 | [l] / [kg] | not captured | llm_confirmed (0.6) | McGready_2003:abstract, McGready_2003:abstract | — | not captured |
+| terminal elimination half-life | `Q57` · t1/2z | 29.1 | h | 104760.0 | [h] | not captured | llm (0.6) | McGready_2003:abstract, McGready_2003:abstract | — | not captured |
 | Tlag,1 | `Q83` · tlag | 0.147 | h | 529.1999999999999 | h | not captured | review_gapfill (0.7) | Cherkaoui-Rbati_2023:review | — | not captured |
 
 <details class="legend">
@@ -53,17 +53,19 @@ McGready R et al., The pharmacokinetics of atovaquone and…, European journal o
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['ka']
+- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+- `invented_absorption`: ka defaulted — not reported in source
+- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
+
 **Interpretation flags:**
-- dropped duplicate Q27 ('oral clearance (Cl/F) proguanil', value 1109) — already have one for this compound
-- dropped duplicate Q353 ('total apparent volume of distribution (Vd/F) proguanil', value 22.9) — already have one for this compound
-- dropped duplicate Q57 ('terminal elimination half-life proguanil', value 14.3) — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=proguanil
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
-- status held at route_to_review — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - gap-filled Q83 (tlag) from Cherkaoui-Rbati_2023's review values (primary lacked it)
+- engineer: parent → metabolite not buildable on PK_3M_9C (None) — the measured compound's 1-compartment model instead
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in McGready_2003_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
@@ -104,14 +106,28 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['McGready_2003:abstract'] |
-| C5_dimension_Q353 | pass | [length] ** 3 | not captured | not captured | not captured | ['McGready_2003:abstract'] |
-| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['McGready_2003:abstract'] |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['McGready_2003:abstract', 'McGready_2003:abstract'] |
+| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['McGready_2003:abstract', 'McGready_2003:abstract'] |
+| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['McGready_2003:abstract', 'McGready_2003:abstract'] |
 | C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Cherkaoui-Rbati_2023:review'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 21.9 L/h | not captured | not captured | ['McGready_2003:abstract'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 21.9 L/h | not captured | not captured | ['McGready_2003:abstract', 'McGready_2003:abstract'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 910 L | not captured | not captured | ['McGready_2003:abstract', 'McGready_2003:abstract'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_output_variable | not captured | fail | Metabolite_C (measured=proguanil) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
+| T3_rate_constant_conversion | not captured | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model | not captured | rate constant must not be used raw as a clearance |
+| T3_topology_template | not captured | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable; invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -120,30 +136,27 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_proguanil/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `McGready_2003` / `McGready_2003::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_proguanil/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `McGready_2003` / `McGready_2003::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_proguanil/models/modelica/Proguanil_McGready2003_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_proguanil/models/modelica/Proguanil_McGready2003_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_proguanil/models/modelica/Proguanil_McGready2003_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-</tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+**Administration: oral** — 200 mg, single dose, first-order absorption (ka 0.5 /h, lag 8.82 min, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 200 mg oral (P01BB01) (defined daily dose)._
+
+<dbs-fmusim paramsurl="drugs/drug_proguanil/Proguanil_McGready2003_reference/Proguanil_McGready2003_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_proguanil/Proguanil_McGready2003_reference/Proguanil_McGready2003_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C_enteral` · parameters `Proguanil_McGready2003_reference_params.json` · controls `Proguanil_McGready2003_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 07:59 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 03:08 UTC</sub>

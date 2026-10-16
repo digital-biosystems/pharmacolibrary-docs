@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01X&quot;,&quot;href&quot;:&quot;atc/L01X.md&quot;},{&quot;label&quot;:&quot;abiraterone&quot;,&quot;href&quot;:&quot;drugs/drug_abiraterone/&quot;},{&quot;label&quot;:&quot;Stuyckens_2014 \u00b7 final_chemotherapy_pretreated_patients_final_model_1&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Abiraterone_Stuyckens2014_final&quot;,&quot;label&quot;:&quot;Stuyckens_2014_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abiraterone/Abiraterone_Stuyckens2014_final.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abiraterone_Stuyckens2014_final_chemotherapy_pretreated_pati&quot;,&quot;label&quot;:&quot;Stuyckens_2014_final_chemotherapy_pretreated_patients_final_model_1&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abiraterone/Abiraterone_Stuyckens2014_final_chemotherapy_pretreated_pati.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -13,17 +12,17 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** Model and browser simulation available in **Models** and **Simulation**.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
-**The record for abiraterone was held back because the peripheral volume of distribution parameter was missing from the extracted model parameters.**
+**Only clearance was extracted — no volume.**
 
-The model structure defines a two-compartment system, yet only three of the four required parameters were successfully extracted. Specifically, the peripheral volume of distribution (V2/F) was neither emitted nor included in the list of defaulted parameters. Consequently, the parameter coverage check failed, leaving the model incomplete for review. Extracted — abiraterone: CLm/F 2.24e+03 L/h, V1/F 5.63e+03 L, V2/F 1.74e+04 L, Q/F 1.35e+03 L/h, kabs 1.91 h -1.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Extracted — abiraterone: kel 57.1 h -1, CL/F 1.55e+03 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has abiraterone acetate, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `abiraterone acetate`, measured `abiraterone`.
 
@@ -31,23 +30,20 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Stuyckens K et al., Population pharmacokinetic analysis of…, Clinical pharmacokinetics (2014)
   ·  DOI: [10.1007/s40262-014-0178-6](https://doi.org/10.1007/s40262-014-0178-6)
 
-<div class="pk-model-meta" hidden drug="abiraterone" model-id="Abiraterone_Stuyckens2014_final_chemotherapy_pretreated_pati" status="needs_review" stale="false" population="patients with metastatic castration-resistant prostate cancer and healthy volunteers" measured-compound="abiraterone" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="abiraterone" model-id="Abiraterone_Stuyckens2014_final_chemotherapy_pretreated_pati" status="needs_review" stale="false" population="patients with mCRPC and healthy volunteers" measured-compound="abiraterone" parameterization="apparent" topology="1C"></div>
 
-**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 5 extracted.
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 2 extracted.
 
-**Parameterization:** CLm/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Healthy subjects | `Q351` · CLm/F | 2240 | L/h | 0.0006222222222222223 | L/h | not captured | exact (1.0) | tab_2:row4:col1, tab_2:row4:col3, tab_2:row4:col4 | — | not captured |
-| V 2 /F (L) | `Q290` · V1/F | 5630 | L | 5.63 | [l] | not captured | exact (1.0) | tab_2:row6:col1, tab_2:row6:col3 | — | not captured |
-| V 3 /F (L) | `Q82` · V2/F | 17400 | L | 17.400000000000002 | [l] | not captured | exact (1.0) | tab_2:row7:col1, tab_2:row7:col3 | — | not captured |
-| Q/F (L/h) | `Q69` · Q/F | 1350 | L/h | 0.000375 | [l] / [h] | not captured | exact (1.0) | tab_2:row8:col1, tab_2:row8:col3 | — | not captured |
-| Modified fast b | `Q49` · kabs | 1.91 | h -1 | 0.0005305555555555555 | [1] / [h] | not captured | exact (1.0) | tab_2:row16:col3, tab_2:row16:col4, tab_2:row21:col3, tab_2:row21:col4 | — | not captured |
+| Modified fast b | `Q47` · kel | 57.1 | h -1 | 0.01586111111111111 | [1] / [h] | not captured | llm (0.6) | tab_2:row16:col2, tab_2:row21:col2 | — | not captured |
+| typical CL/F in patients | `Q27` · CL/F | 1550 | L/h | 0.00043055555555555555 | L/h | not captured | boundary (0.8) | Stuyckens_2014:results_prose | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -56,33 +52,37 @@ Stuyckens K et al., Population pharmacokinetic analysis of…, Clinical pharmaco
 
 ## Departures & gaps
 
-**Deviations:**
-- `defaulted_parameters`: ['Tlag']
-- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
-
 **Interpretation flags:**
-- unit_dimension_unknown: 'final model 1' (CL)
-- dropped unlinked row (NIL): 'Fasting' — extend the ontology if this is a real PK parameter (source ['tab_2:row10:col1', 'tab_2:row10:col3', 'tab_2:row10:col4', 'tab_2:row15:col1', 'tab_2:row15:col3', 'tab_2:row15:col4', 'tab_2:row20:col1', 'tab_2:row20:col3', 'tab_2:row20:col4'])
-- unit_dimension_unknown: 'final model 1' (kabs)
-- dropped duplicate Q49 ('Low-fat meal', value '1.85') — already have one for this compound
-- dropped duplicate Q49 ('High-fat meal', value '1.91') — already have one for this compound
-- implicit units: 'Healthy subjects' → L/h (from the popPK convention: 'The parameter is Total Clearance (CL). In population pharmacokinetic modeling, clearance is conventionally expressed in ')
-- metabolite abiraterone: Q22→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
+- table representations disagree for 'mCRPC patients'; source reconciliation required
+- table representations disagree for 'Fasting'; source reconciliation required
+- table representations disagree for 'Modified fast a, b'; source reconciliation required
+- table representations disagree for 'Low-fat meal a'; source reconciliation required
+- table representations disagree for 'High-fat meal a'; source reconciliation required
+- table representations disagree for 'Modified fast b'; source reconciliation required
+- table representations disagree for 'Low-fat meal'; source reconciliation required
+- table representations disagree for 'High-fat meal'; source reconciliation required
+- table representations disagree for 'Residual variability healthy'; source reconciliation required
+- table representations disagree for 'Residual variability patients'; source reconciliation required
+- dropped unlinked row (NIL): 'mCRPC patients' — extend the ontology if this is a real PK parameter (source ['tab_2:row5:col2'])
+- dropped unlinked row (NIL): 'Fasting' — extend the ontology if this is a real PK parameter (source ['tab_2:row10:col1', 'tab_2:row10:col2', 'tab_2:row15:col1', 'tab_2:row15:col2', 'tab_2:row20:col1', 'tab_2:row20:col2'])
+- dropped unlinked row (NIL): 'Modified fast a, b' — extend the ontology if this is a real PK parameter (source ['tab_2:row11:col1', 'tab_2:row11:col2'])
+- dropped unlinked row (NIL): 'Low-fat meal a' — extend the ontology if this is a real PK parameter (source ['tab_2:row12:col1', 'tab_2:row12:col2'])
+- dropped unlinked row (NIL): 'High-fat meal a' — extend the ontology if this is a real PK parameter (source ['tab_2:row13:col1', 'tab_2:row13:col2'])
+- dropped unlinked row (NIL): 'Low-fat meal' — extend the ontology if this is a real PK parameter (source ['tab_2:row17:col1', 'tab_2:row17:col2', 'tab_2:row22:col1', 'tab_2:row22:col2'])
+- dropped unlinked row (NIL): 'High-fat meal' — extend the ontology if this is a real PK parameter (source ['tab_2:row18:col2', 'tab_2:row23:col1', 'tab_2:row23:col2'])
+- table mostly unlinked (7/8 table-cell rows NIL) — likely the wrong table was located, not 1 genuinely-missing ontology parameter(s); route_to_review instead of building a model from the residual linked cell(s)
+- salvaged Q27 ('typical CL/F in patients'=1550) from results prose — parameter table was unreadable
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=abiraterone
-- template fit: none — only the metabolite is modelled — no parent compartment
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at route_to_review — not promoted
 - model-stage split: 'chemotherapy-pretreated patients (final model 1)' is the final model of Stuyckens_2014 (paper reports 2 stages: all mcrpc patients (final model 2), chemotherapy-pretreated patients (final model 1)); same population, different model-building step
-- row roles: 3 per-group rows of abiraterone absorption_rate_constant but 0 reference group(s) — kept as printed
-- row roles: per-genotype parameters — typical value from the reference group: Healthy subjects, Fasting, Residual variability healthy
-- row roles (LLM): model_class=compartmental; 14/14 row label(s) assigned, 31 linked by role
-- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- unparsed cell tab_2:row5:col1 = '1,505 (34.1) d'
-- unparsed cell tab_2:row5:col3 = '1,550 (15.9) d'
-- unparsed cell tab_2:row16:col1 = '1 c (-)'
-- unparsed cell tab_2:row18:col1 = '1 c (-)'
-- unparsed cell tab_2:row21:col1 = '1 c (-)'
+- table tab_2: ambiguous_numeric_format
+- table tab_2: unparsed_numeric_cell
+- table tab_2: representations disagree; selected evidence retained, not merged
 - LLM selected parameter table(s) 3
 
 ## Validation
@@ -116,30 +116,14 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_2:row6:col1', 'tab_2:row6:col3'] |
-| C5_dimension_Q351 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_2:row4:col1', 'tab_2:row4:col3', 'tab_2:row4:col4'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['tab_2:row16:col3', 'tab_2:row16:col4', 'tab_2:row21:col3', 'tab_2:row21:col4'] |
-| C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_2:row8:col1', 'tab_2:row8:col3'] |
-| C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_2:row7:col1', 'tab_2:row7:col3'] |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C2_base_Q27 | pass | 1550.0 | 1550.0 | 1.0 | 0.05 | footnote reference category |
+| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['tab_2:row16:col2', 'tab_2:row21:col2'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q290 | pass | volume within physiological range | 5.63e+03 L | not captured | not captured | ['tab_2:row6:col1', 'tab_2:row6:col3'] |
-| C9_phys_window_Q82 | pass | volume within physiological range | 1.74e+04 L | not captured | not captured | ['tab_2:row7:col1', 'tab_2:row7:col3'] |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
-| T3_output_variable | not captured | pass | C_central (measured=abiraterone) | central.C | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | fail | 4 scholar param(s) emitted or defaulted | 3 covered | not captured | neither emitted nor in defaulted[]: ['V2/F'] |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 1.55e+03 L/h | not captured | not captured | ['Stuyckens_2014:results_prose'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -148,10 +132,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_abiraterone/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Stuyckens_2014` / `Stuyckens_2014::final_chemotherapy_pretreated_patients_final_model_1`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_abiraterone/models/modelica/Abiraterone_Stuyckens2014_final_chemotherapy_pretreated_pati.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_abiraterone/models/modelica/Abiraterone_Stuyckens2014_final_chemotherapy_pretreated_pati.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_abiraterone/models/modelica/Abiraterone_Stuyckens2014_final_chemotherapy_pretreated_pati.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_abiraterone/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Stuyckens_2014` / `Stuyckens_2014::final_chemotherapy_pretreated_patients_final_model_1`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -161,25 +142,20 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_abiraterone/Abiraterone_Stuyckens2014_final_chemotherapy_pretreated_pati/Abiraterone_Stuyckens2014_final_chemotherapy_pretreated_pati_modelica.zip" download>Abiraterone_Stuyckens2014_final_chemotherapy_pretreated_pati_modelica.zip</a> <span class="pk-size">(5.6 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_abiraterone/Abiraterone_Stuyckens2014_final_chemotherapy_pretreated_pati/Abiraterone_Stuyckens2014_final_chemotherapy_pretreated_pati_fmi.zip" download>Abiraterone_Stuyckens2014_final_chemotherapy_pretreated_pati_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><a href="drugs/drug_abiraterone/Abiraterone_Stuyckens2014_final_chemotherapy_pretreated_pati/Abiraterone_Stuyckens2014_final_chemotherapy_pretreated_pati_fmi.zip" download>Abiraterone_Stuyckens2014_final_chemotherapy_pretreated_pati_fmi.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_abiraterone/Abiraterone_Stuyckens2014_final_chemotherapy_pretreated_pati/Abiraterone_Stuyckens2014_final_chemotherapy_pretreated_pati.svg" alt="Abiraterone_Stuyckens2014_final_chemotherapy_pretreated_pati diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 1000 mg, single dose, first-order absorption (ka 1.91 /h, F 1). Dose in the paper: 1000 mg.
-
-<dbs-fmusim paramsurl="drugs/drug_abiraterone/Abiraterone_Stuyckens2014_final_chemotherapy_pretreated_pati/Abiraterone_Stuyckens2014_final_chemotherapy_pretreated_pati_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_abiraterone/Abiraterone_Stuyckens2014_final_chemotherapy_pretreated_pati/Abiraterone_Stuyckens2014_final_chemotherapy_pretreated_pati_sim_controls.json"></dbs-fmusim>
-
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C_enteral` · parameters `Abiraterone_Stuyckens2014_final_chemotherapy_pretreated_pati_params.json` · controls `Abiraterone_Stuyckens2014_final_chemotherapy_pretreated_pati_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 21:41 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 03:54 UTC</sub>

@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;ixekizumab&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ixekizumab_RodrguezFernndez2022_reference&quot;,&quot;label&quot;:&quot;Rodr\u00edguez-Fern\u00e1ndez_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ixekizumab/Ixekizumab_RodrguezFernndez2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # ixekizumab
 
@@ -17,21 +18,33 @@ Ixekizumab is a monoclonal antibody used to treat psoriasis, psoriatic arthritis
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 23:58 | 0:49 | 0/0/0 | 0/2/1 | 0/0/0 | 60,067/2,217 | einfracz / qwen3.8-27b | 7 | 0/7 | 7/0 | 0 |
+| 2026-10-15 04:07 | 3:44 | 1/0/1 | 2/0/1 | 0/0/0 | 224,111/16,270 | einfracz / qwen3.8-27b | 7 | 0/7 | 7/0 | 0 |
 
 ## popPK records
 
-_not available_
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Rodríguez-Fernández_2022_reference](drugs/drug_ixekizumab/Ixekizumab_RodrguezFernndez2022_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Rodríguez-Fernández K et al., Impact of Pharmacokinetic and Pharmacod…, Pharmaceutics (2022) | [10.3390/pharmaceutics14030654](https://doi.org/10.3390/pharmaceutics14030654) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub><br><sub>route_to: `human_review`</sub> | [Jackson_2022_reference](drugs/drug_ixekizumab/Ixekizumab_Jackson2022_reference.md) | — | 1-compartment (no model) | 3 | Jackson K et al., Population pharmacokinetic and exposure…, British journal of clinical… (2022) | [10.1111/bcp.15034](https://doi.org/10.1111/bcp.15034) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Chigutsa_2018_PASI](drugs/drug_ixekizumab/pd_Chigutsa_2018_PASI.md) | Psoriasis Activity and Severity Index [PASI] scores ← ixekizumab · categorical (graded) response model | — | Chigutsa E et al., Exposure-Response Modeling to Character…, Journal of clinical pharmac… (2018) | [10.1002/jcph.1268](https://doi.org/10.1002/jcph.1268) |
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Chigutsa_2018_sPGA](drugs/drug_ixekizumab/pd_Chigutsa_2018_sPGA.md) | static Physician Global Assessment [sPGA] (sPGA(0,1) response) ← ixekizumab · categorical (graded) response model | — | Chigutsa E et al., Exposure-Response Modeling to Character…, Journal of clinical pharmac… (2018) | [10.1002/jcph.1268](https://doi.org/10.1002/jcph.1268) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Liu_2026_PASI75](drugs/drug_ixekizumab/pd_Liu_2026_PASI75.md) | PASI 75 ← ixekizumab · direct sigmoid Emax (Hill) effect | — | Liu Y et al., Model-Based Meta-Analysis of IL-17 A In…, Clinical reviews in allergy… (2026) | [10.1007/s12016-025-09123-5](https://doi.org/10.1007/s12016-025-09123-5) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Liu_2026_PASI90](drugs/drug_ixekizumab/pd_Liu_2026_PASI90.md) | PASI 90 ← ixekizumab · direct sigmoid Emax (Hill) effect | — | Liu Y et al., Model-Based Meta-Analysis of IL-17 A In…, Clinical reviews in allergy… (2026) | [10.1007/s12016-025-09123-5](https://doi.org/10.1007/s12016-025-09123-5) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Tham_2014_PASI](drugs/drug_ixekizumab/pd_Tham_2014_PASI.md) | absolute Psoriasis Area and Severity Index (PASI) scores ← ixekizumab · indirect response — drug inhibits the production of absolute Psoriasis Area and Severity Index (PASI) scores | — | Tham LS et al., Population exposure-response model to s…, Journal of clinical pharmac… (2014) | [10.1002/jcph.312](https://doi.org/10.1002/jcph.312) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Liu_2026_PASI_75](drugs/drug_ixekizumab/pd_Liu_2026_PASI_75.md) | PASI 75 ← ixekizumab · direct Emax (saturable) effect | — | Liu Y et al., Model-Based Meta-Analysis of IL-17 A In…, Clinical reviews in allergy… (2026) | [10.1007/s12016-025-09123-5](https://doi.org/10.1007/s12016-025-09123-5) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Liu_2026_PASI_90](drugs/drug_ixekizumab/pd_Liu_2026_PASI_90.md) | PASI 90 ← ixekizumab · direct Emax (saturable) effect | — | Liu Y et al., Model-Based Meta-Analysis of IL-17 A In…, Clinical reviews in allergy… (2026) | [10.1007/s12016-025-09123-5](https://doi.org/10.1007/s12016-025-09123-5) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Tham_2014_PASI](drugs/drug_ixekizumab/pd_Tham_2014_PASI.md) | absolute Psoriasis Area and Severity Index (PASI) scores ← ixekizumab · indirect response — drug inhibits the production of absolute Psoriasis Area and Severity Index (PASI) scores | — | Tham LS et al., Population exposure-response model to s…, Journal of clinical pharmac… (2014) | [10.1002/jcph.312](https://doi.org/10.1002/jcph.312) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Chigutsa_2018_PASI](drugs/drug_ixekizumab/pd_Chigutsa_2018_PASI.md) | Psoriasis Activity and Severity Index [PASI] ← ixekizumab · categorical (graded) response model | — | Chigutsa E et al., Exposure-Response Modeling to Character…, Journal of clinical pharmac… (2018) | [10.1002/jcph.1268](https://doi.org/10.1002/jcph.1268) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Chigutsa_2018_sPGA](drugs/drug_ixekizumab/pd_Chigutsa_2018_sPGA.md) | static Physician Global Assessment [sPGA] ← ixekizumab · categorical (graded) response model | — | Chigutsa E et al., Exposure-Response Modeling to Character…, Journal of clinical pharmac… (2018) | [10.1002/jcph.1268](https://doi.org/10.1002/jcph.1268) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=ixekizumab).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: IL17A (inhibitor), IL17A (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -43,7 +56,7 @@ _not available_
 
 - **PubMed hits:** 11 matched, 11 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 2  ·  extracted 1  ·  needs_review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -52,23 +65,23 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Tham_2014.pdf` | Tham LS et al., Population exposure-response model to s…, Journal of clinical pharmac… (2014) | popPK | 10 | [10.1002/jcph.312](https://doi.org/10.1002/jcph.312) | [24752880](https://pubmed.ncbi.nlm.nih.gov/24752880) | The paper describes a population pharmacokinetic model for ixekizumab, but the specific numeric parameter values are not provided in the extracted evidence. |
+| `Tham_2014.pdf` | Tham LS et al., Population exposure-response model to s…, Journal of clinical pharmac… (2014) | popPK | 10 | [10.1002/jcph.312](https://doi.org/10.1002/jcph.312) | [24752880](https://pubmed.ncbi.nlm.nih.gov/24752880) | The paper describes a population pharmacokinetic model for ixekizumab, but no numeric parameter values are present in the provided text. |
 
-<sub>queue written 2026-10-06T23:57:45.810738+00:00</sub>
+<sub>queue written 2026-10-15T04:04:50.031688+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Chigutsa_2018 | irrelevant | 1 | 0 | The study is an exposure-response modeling analysis that characterizes the relationship between drug concentration and efficacy, but it does not report the underlying pharmacokinetic disposition parameters (CL, V, Q, t1/2, or PK model parameters) for ixekizumab. |
-| popPK | Deodhar_2021 | irrelevant | 0 | 0 | The paper is a clinical trial analysis of patient-reported outcomes and efficacy, reporting no pharmacokinetic parameters (CL, V, ka) for ixekizumab. |
-| popPK | Deodhar_2021_2 | irrelevant | 0 | 0 | The study reports patient-reported outcomes (sleep, work productivity) for ixekizumab in nr-axSpA, not pharmacokinetic parameters. |
-| popPK | Deodhar_2021_3 | irrelevant | 0 | 0 | This is a clinical efficacy study of ixekizumab in axial spondyloarthritis that reports patient-reported outcomes and ASAS responses, containing no pharmacokinetic parameters or disposition data. |
-| popPK | Liu_2026 | irrelevant | 2 | 0 | This is an exposure-response modeling study using PK parameters extracted from external documents, and no quantitative PK parameter values (CL, V, ka, etc.) for ixekizumab are present in the provided evidence. |
-| popPK | Mease_2019 | irrelevant | 0 | 0 | The paper is a clinical efficacy analysis of patient-reported outcomes (pain, fatigue, sleep) and does not report pharmacokinetic parameters such as clearance, volume of distribution, or half-life for ixekizumab. |
-| popPK | Paci_2026 | irrelevant | 0 | 0 | The paper is a real-world clinical effectiveness study comparing disease activity scores and does not report any pharmacokinetic parameters. |
-| popPK | Rodríguez-Fernández_2022 | irrelevant | 2 | 0 | The paper is a review that summarizes PK/PD models for ixekizumab, but the specific quantitative disposition parameters (CL, V) for ixekizumab are not present in the provided text (only EC50 PD parameters are mentioned, and CL/V values are referenced as being in a table not included in the evidence). |
-| popPK | Tham_2014 | relevant | 10 | 2 | The paper describes a population pharmacokinetic model for ixekizumab, but the specific numeric parameter values are not provided in the extracted evidence. |
+| popPK | Chigutsa_2018 | irrelevant | 0 | 0 | The paper reports exposure-response (efficacy) modeling results, not pharmacokinetic disposition parameters (CL, V, ka, etc.). |
+| popPK | Deodhar_2021 | irrelevant | 0 | 0 | The paper reports efficacy and patient-reported outcomes for ixekizumab but contains no pharmacokinetic parameters. |
+| popPK | Deodhar_2021_2 | irrelevant | 0 | 0 | The paper reports efficacy endpoints (sleep, work productivity) for a clinical trial and contains no quantitative pharmacokinetic parameters such as clearance or volume. |
+| popPK | Deodhar_2021_3 | irrelevant | 0 | 0 | The paper reports efficacy and patient-reported outcomes (PROs) for ixekizumab in spondyloarthritis, containing no quantitative pharmacokinetic parameters. |
+| popPK | Liu_2026 | irrelevant | 3 | 0 | This is an exposure-response modeling study that mentions extracting PK parameters but does not report quantitative PK parameter values (CL, V, ka, etc.) for ixekizumab in the provided evidence. |
+| popPK | Mease_2019 | irrelevant | 0 | 0 | The paper is a clinical efficacy study focusing on patient-reported outcomes (pain, fatigue, sleep) and does not report pharmacokinetic parameters such as clearance, volume, or half-life. |
+| popPK | Paci_2026 | irrelevant | 0 | 0 | This is a real-world effectiveness study comparing clinical outcomes (DAPSA/PASI scores) and not a pharmacokinetic study; it contains no PK parameters for ixekizumab. |
+| popPK | Rodríguez-Fernández_2022 | irrelevant | 2 | 0 | The paper is a review that summarizes PK models for multiple drugs, but for ixekizumab it only reports pharmacodynamic parameters (EC50) and references a PK model without providing the specific quantitative PK parameter values (CL, V, etc.) for ixekizumab. |
+| popPK | Tham_2014 | relevant | 10 | 0 | The paper describes a population pharmacokinetic model for ixekizumab, but no numeric parameter values are present in the provided text. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2)</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-15 04:04 UTC</sub>

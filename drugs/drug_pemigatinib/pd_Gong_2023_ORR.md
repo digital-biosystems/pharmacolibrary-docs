@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;pemigatinib&quot;,&quot;href&quot;:&quot;drugs/drug_pemigatinib/&quot;},{&quot;label&quot;:&quot;Gong_2023 \u00b7 PD objective response rate&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pemigatinib_Gong2023_reference&quot;,&quot;label&quot;:&quot;Gong_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pemigatinib/Pemigatinib_Gong2023_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pemigatinib_Gong2023_reference&quot;,&quot;label&quot;:&quot;Gong_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pemigatinib/Pemigatinib_Gong2023_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pemigatinib_Ji2022_final&quot;,&quot;label&quot;:&quot;Ji_2022_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pemigatinib/Pemigatinib_Ji2022_final.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pemigatinib_Ji2022_final_magnitude_of_interindividual_variab&quot;,&quot;label&quot;:&quot;Ji_2022_final_magnitude_of_interindividual_variability_cv_final_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pemigatinib/Pemigatinib_Ji2022_final_magnitude_of_interindividual_variab.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # objective response rate — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
@@ -18,15 +18,15 @@
 
 **Model:** No model was generated from this record.
 
-> Pemigatinib steady-state exposure (AUCss, Cmax,ss, and Cmin,ss) was associated with objective response rate (ORR) in a bell-shaped relationship; the paper does not specify a mechanism or a PD potency or rate parameter for this model. At a mean AUCss of 2850 h∙nM for 13.5 mg once daily, predicted ORR was 45.2%; dose-based predictions were 29.7%, 41.4%, 47.1%, and 46.8% at 6, 9, 13.5, and 20 mg, respectively.
+> The paper describes a bell-shaped relationship between pemigatinib steady-state exposure (AUCss) and the binary objective response rate (ORR), suggesting that ORR increases with exposure up to a threshold but declines at higher levels likely due to dose interruptions from toxicity. The model predicts an ORR of 45.2% at a 13.5 mg dose with a mean AUCss of 2850 h∙nM, but does not specify a mechanistic model family or key potency parameters such as EC50 or Imax for this efficacy relationship.
 >
-> <sub>Source-based summary by gpt-6-luna from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Gong_2023`
 - **model family:** `categorical`
 - **driver:** `pk_record`
 - **tier:** descriptive
-- **effect:** unknown/unknown
+- **effect:** stimulation/unknown
 
 ## Citation
 Gong X et al., Population pharmacokinetic and exposure…, CPT: pharmacometrics & syst… (2023)

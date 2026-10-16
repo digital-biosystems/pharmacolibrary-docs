@@ -6,23 +6,22 @@
   "central.C"
  ],
  "parameters": {
-  "Cl": 2.8819444444444443e-09,
+  "Cl": 2.9745370370370374e-09,
   "F": 1.0,
-  "VdPerKg": 4.971428571428571e-05,
+  "VdPerKg": 9.714285714285714e-05,
   "adminCount": 1.0,
   "adminDuration": 600.0,
   "adminMass": 1e-05,
-  "k12": 2.3380959982971474e-06,
-  "k21": 2.9268252065014654e-06,
+  "k12": 4.238153594771242e-07,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 660.0000000662147
+  "central.C": 660.0000000662028
  },
  "reference_peaks": {
-  "central.C": 0.0023687818019600786
+  "central.C": 0.0014703894957720912
  },
- "stop_time": 4233600.0,
+ "stop_time": 8467200.0,
  "template": "PK_2C",
  "template_fmu": "PK_2C.fmu"
 }

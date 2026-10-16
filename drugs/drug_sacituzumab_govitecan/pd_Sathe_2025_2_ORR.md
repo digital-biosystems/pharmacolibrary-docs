@@ -13,18 +13,18 @@
 
 ## Record summary
 
-**As extracted:** Sacituzumab govitecan (measured concentrations) drives objective response rate: categorical (graded) response model.
+**As extracted:** Sacituzumab govitecan (concentrations from the PK model of Sathe_2024::final_model_estimate_rse) drives objective response rate: categorical (graded) response model.
 
 **Model:** No model was generated from this record.
 
-> The paper does not specify a mechanistic model (e.g., Emax or effect compartment) for the relationship between sacituzumab govitecan exposure and objective response rate, but identifies average serum concentration (CAVGSG) as the sole significant predictor in a logistic regression model. Higher CAVGSG values were associated with an increased probability of response, with a model-predicted ORR of 32.6% (95% CI 27.5–37.2) at the 10 mg/kg dose.
+> The model predicts the binary objective response rate (ORR) as a direct function of the average serum sacituzumab govitecan concentration (CAVGSG), with higher CAVGSG associated with an increased probability of response. The paper does not provide specific potency or rate parameters (e.g., IC50, EC50, Emax) for this exposure-response relationship, only reporting a model-predicted ORR of 32.6% at the 10 mg/kg dose.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Sathe_2025_2`
 - **model family:** `categorical`
-- **driver:** `conc_no_pk`
-- **tier:** descriptive
+- **driver:** `cited_pk`
+- **tier:** population
 - **effect:** stimulation/unknown
 
 ## Citation

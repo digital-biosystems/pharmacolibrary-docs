@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06D&quot;,&quot;href&quot;:&quot;atc/N06D.md&quot;},{&quot;label&quot;:&quot;lecanemab&quot;,&quot;href&quot;:&quot;drugs/drug_lecanemab/&quot;},{&quot;label&quot;:&quot;Bhagunde_2026_2 \u00b7 PD plasma GFAP&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# plasma GFAP — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
+# plasma GFAP — PD  <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -13,17 +13,17 @@
 
 ## Record summary
 
-**As extracted:** Relative decrease in amyloid plaque (driven by lecanemab concentration) drives plasma GFAP (in pg/mL): indirect response — drug inhibits the production of plasma GFAP.
+**As extracted:** Lecanemab (concentrations from the PK model of Hayato_2022) drives plasma GFAP (in pg/mL): disease-progression model.
 
 **Model:** No model was generated from this record.
 
-> Lecanemab acts on plasma GFAP (pg/mL) indirectly: the drug effect is driven by the relative change from baseline in amyloid plaque (itself driven by lecanemab concentration), which proportionally inhibits GFAP production in an indirect response model with a constant disease progression term. Key parameters: baseline GFAP 315 pg/mL, KinG 5.6 pg/mL/h, drug-effect slope SLP 0.237, disease progression DP 0.0307 1/year; the typical half-life for plasma GFAP to return to baseline after treatment discontinuation was 1.7 years.
+> Le canemab inhibits plasma GFAP production via a linear effect proportional to the relative decrease in amyloid plaque from baseline, within an indirect response model featuring a constant disease progression term (DP = 0.0307 1/year). Key parameters include a baseline GFAP of 315 pg/mL, a synthesis rate (Kin G) of 5.6 pg/mL/h, and an effect slope (SLP) of 0.237 logit.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Bhagunde_2026_2`
-- **model family:** `indirect_response_i`
-- **driver:** `not_resolved`
+- **model family:** `disease_progression`
+- **driver:** `cited_pk`
 - **tier:** population
 - **effect:** inhibition/proportional
 
@@ -34,11 +34,11 @@ Bhagunde P et al., Pharmacokinetic/pharmacodynamic analyse…, Alzheimer's & dem
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | Baseline GFAP | `Q324` · not captured | 315 | pg/mL | not captured | llm (not captured) | Bhagunde_2026_2:pdv3 |
-| PD (effect) | K inG | `Q327` · not captured | 5.6 | pg/mL/h | not captured | llm (not captured) | Bhagunde_2026_2:pdv3 |
-| PD (effect) | SLP | `Q335` · not captured | 0.237 | logit | not captured | llm (not captured) | Bhagunde_2026_2:pdv3 |
-| PD (effect) | DP | `Q340` · not captured | 0.0307 | 1/year | not captured | llm (not captured) | Bhagunde_2026_2:pdv3 |
-| variability | Baseline GFAP IIV | `Q312` · not captured | 38.2 | %CV | not captured | llm (not captured) | Bhagunde_2026_2:pdv3 |
+| PD (effect) | Baseline GFAP (pg/mL) | `Q324` · not captured | 315 | pg/mL | not captured | llm (not captured) | Bhagunde_2026_2:pdv3 |
+| PD (effect) | K inG (pg/mL/h) | `Q327` · not captured | 5.6 | pg/mL/h | not captured | llm (not captured) | Bhagunde_2026_2:pdv3 |
+| PD (effect) | SLP (logit) | `Q335` · not captured | 0.237 | logit | not captured | llm (not captured) | Bhagunde_2026_2:pdv3 |
+| PD (effect) | DP (1/year) | `Q340` · not captured | 0.0307 | 1/year | not captured | llm (not captured) | Bhagunde_2026_2:pdv3 |
+| variability | Baseline GFAP (%CV) | `Q312` · not captured | 38.2 | %CV | not captured | llm (not captured) | Bhagunde_2026_2:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -47,7 +47,7 @@ Bhagunde P et al., Pharmacokinetic/pharmacodynamic analyse…, Alzheimer's & dem
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
@@ -57,7 +57,7 @@ Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check v
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `einfracz:gpt-oss-120b` | `driver_compound` | relative decrease in amyloid plaque (driven by lecanemab concentration) | lecanemab | mismatch |
+| `einfracz:gpt-oss-120b` | `model_family` | disease_progression | indirect_response_i | mismatch |
 | `einfracz:gpt-oss-120b` | `parameters[Q100]` | not captured | 0.0307 | only_one_extracted |
 | `einfracz:gpt-oss-120b` | `parameters[Q340]` | 0.0307 | not captured | only_one_extracted |
 
@@ -71,9 +71,19 @@ Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

@@ -146,7 +146,7 @@ Tatami S et al., Population pharmacokinetics of an angio…, Drug metabolism and
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_telmisartan/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Tatami_2003` / `Tatami_2003::hypothesized_value`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_telmisartan/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Tatami_2003` / `Tatami_2003::hypothesized_value`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

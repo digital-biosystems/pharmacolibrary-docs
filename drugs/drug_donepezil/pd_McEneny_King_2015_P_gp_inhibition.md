@@ -20,9 +20,9 @@
 
 **Model:** No model was generated from this record.
 
-> Donepezil concentrations (μM) inhibit P-gp activity (%) via a sigmoid Emax (proportional inhibition) model; the paper reports an EC50 of 34.85±4.63 μM, but no full text is available to confirm the mechanism or other parameters (Imax, gamma).
+> Donepezil concentrations (μM) inhibit P-gp function following a sigmoid Emax model with an EC50 of 34.85±4.63 μM. The paper excerpts do not specify whether this inhibition acts on production, elimination, or via a direct effect.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `McEneny-King_2015`
 - **model family:** `sigmoid_emax`

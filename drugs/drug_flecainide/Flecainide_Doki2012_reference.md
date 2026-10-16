@@ -5,7 +5,7 @@
 
 # flecainide — `Flecainide_Doki2012_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.3), gpt-oss:120b (not confirmed, agreement 0.3). Primary extraction retained.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667), gpt-oss-120b (not confirmed, agreement 0.3). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -17,36 +17,34 @@
 
 ### Reviewer guidance
 
-**The paper reports none of the model's key parameters.**
+**This paper's disposition core is incomplete; c2_base_Q61 failed (ratio 0.9464).**
 
-No clearance, volume or rate constant of the model is reported in it. Only the abstract was available, so reported summary statistics stand in for a fitted model. No parameter values were extracted.
+A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Deneer_2004, Sällström_2014) cannot stand in for this paper's evidence. Extracted — flecainide: Q2 0.706 L/h, CL 1.72 L/h, V 6.34 L/kg, kabs 0.62 h À1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
-
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:38:00.947017+00:00) predates the upstream re-run (2026-10-08 17:58:41.083310+00:00). Current validate status: `needs_review`.
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Doki K et al., CYP2D6 genotype affects age-related dec…, Pharmacogenetics and genomi… (2012)
   ·  DOI: [10.1097/FPC.0b013e3283588fe5](https://doi.org/10.1097/FPC.0b013e3283588fe5)
 
-<div class="pk-model-meta" hidden drug="flecainide" model-id="Flecainide_Doki2012_reference" status="needs_review" stale="true" population="adults with supraventricular tachyarrhythmias" measured-compound="flecainide" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="flecainide" model-id="Flecainide_Doki2012_reference" status="needs_review" stale="false" population="adults with supraventricular tachyarrhythmias" measured-compound="flecainide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 3 extracted.
+**Parameters:** 4 extracted.
 
-**Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** mechanistic.
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| y 1 | `Q900` · equation variable | 8.83 | not captured | not captured | not captured | not captured | llm (0.6) | tab_2:row2:col1, tab_2:row2:col3 | — | not captured |
-| K a | `Q49` · kabs | 0.62 | /h | 0.0001722222222222222 | 1/h | not captured | space_fold (0.95) | Doki_2012:results_prose | — | not captured |
-| V/F | `Q76` · V/F | 6.0 | l/kg | 0.42 | L | not captured | exact (1.0) | Doki_2012:results_prose | — | not captured |
-| interpatient variability in CL/F with the base model (no covariates) | `Q27` · CL/F | 31.4 | % | not captured | % | not captured | boundary (0.8) | Doki_2012:other_prose | — | not captured |
+| θ₂ | `Q99` · Q2 | 0.706 | L/h | 1.961111111111111e-07 | L/h | not captured | llm (0.6) | Doki_2012_table_p5_1:row1:col1, Doki_2012_table_p5_1:row1:col3 | — | not captured |
+| Cl (L/h) | `Q22` · CL | 1.72 | L/h | 4.777777777777778e-07 | L/h | not captured | review_gapfill (0.7) | Sällström_2014:review | — | not captured |
+| V (L/kg) | `Q61` · V | 6.34 | L/kg | 0.44380000000000003 | L | not captured | review_gapfill (0.7) | Sällström_2014:review | — | not captured |
+| ka | `Q49` · kabs | 0.62 | h À1 | 0.0001722222222222222 | 1/h | not captured | review_gapfill (0.7) | Deneer_2004:review | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -56,36 +54,25 @@ Doki K et al., CYP2D6 genotype affects age-related dec…, Pharmacogenetics and 
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'y 2' — extend the ontology if this is a real PK parameter (source ['tab_2:row3:col1', 'tab_2:row3:col3'])
-- dropped unlinked row (NIL): 'y 3' — extend the ontology if this is a real PK parameter (source ['tab_2:row5:col1', 'tab_2:row5:col3'])
-- dropped unlinked row (NIL): 'y 4' — extend the ontology if this is a real PK parameter (source ['tab_2:row6:col1', 'tab_2:row6:col3'])
-- dropped unlinked row (NIL): 'y 5' — extend the ontology if this is a real PK parameter (source ['tab_2:row7:col1', 'tab_2:row7:col3'])
-- routed 'Interpatient variability' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
-- salvaged Q49 ('K a'=0.62) from results prose — parameter table was unreadable
-- salvaged Q76 ('V/F'=6.0) from results prose — parameter table was unreadable
-- salvaged Q27 ('interpatient variability in CL/F with the base model (no covariates)'=31.4) from results prose — parameter table was unreadable
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=flecainide
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- dropped unlinked row (NIL): 'θ₁' — extend the ontology if this is a real PK parameter (source ['Doki_2012_table_p5_1:row0:col1', 'Doki_2012_table_p5_1:row0:col3'])
+- dropped unlinked row (NIL): 'θ₃' — extend the ontology if this is a real PK parameter (source ['Doki_2012_table_p5_1:row2:col1', 'Doki_2012_table_p5_1:row2:col3'])
+- dropped unlinked row (NIL): 'θ₄' — extend the ontology if this is a real PK parameter (source ['Doki_2012_table_p5_1:row3:col1', 'Doki_2012_table_p5_1:row3:col3'])
+- dropped unlinked row (NIL): 'θ₅' — extend the ontology if this is a real PK parameter (source ['Doki_2012_table_p5_1:row4:col1', 'Doki_2012_table_p5_1:row4:col3'])
+- dropped unlinked row (NIL): 'Interpatient variability (%CV)' — extend the ontology if this is a real PK parameter (source ['Doki_2012_table_p5_1:row5:col1', 'Doki_2012_table_p5_1:row5:col3'])
+- table mostly unlinked (5/6 table-cell rows NIL) — likely the wrong table was located, not 1 genuinely-missing ontology parameter(s); route_to_review instead of building a model from the residual linked cell(s)
+- implicit units: 'θ₂' → L/h (from the popPK convention: 'The parameter is an intercompartmental clearance. In population pharmacokinetics, clearances (including intercompartment')
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=flecainide
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - status held at route_to_review — not promoted
+- gap-filled Q22 (CL) from Sällström_2014's review values (primary lacked it)
+- gap-filled Q61 (V) from Sällström_2014's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
+- gap-filled Q49 (kabs) from Deneer_2004's review values (primary lacked it)
 
 **Extraction notes:**
-- unparsed cell tab_2:row2:col2 = '5.62, 12.04'
-- unparsed cell tab_2:row2:col4 = '5.20, 12.77'
-- unparsed cell tab_2:row3:col2 = '0.534,'
-- unparsed cell tab_2:row3:col4 = '0.523,'
-- unparsed cell tab_2:row5:col2 = '0.30, 2.93'
-- unparsed cell tab_2:row5:col4 = '0.32, 3.28'
-- unparsed cell tab_2:row6:col2 = '0.56, 5.11'
-- unparsed cell tab_2:row6:col4 = '1.09, 11.42'
-- unparsed cell tab_2:row7:col2 = '6.79, 12.79'
-- unparsed cell tab_2:row7:col4 = '6.30, 13.19'
-- unparsed cell tab_2:row8:col2 = '19.1, 26.0'
-- unparsed cell tab_2:row8:col4 = '18.7, 25.7'
-- unparsed cell tab_2:row10:col2 = '14.3, 20.2'
-- unparsed cell tab_2:row10:col4 = '14.3, 19.7'
+- table Doki_2012_table_p5_1: units_need_context
+- table Doki_2012_table_p5_1: unparsed_numeric_cell
 - LLM selected parameter table(s) 3
 
 ## Validation
@@ -95,10 +82,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss:120b` | partly confirmed | 0.667 (4/6 fields) | 2 |
 | `gpt-oss-120b` | not confirmed | 0.3 (3/10 fields) | 7 |
-| `gpt-oss:120b` | not confirmed | 0.3 (3/10 fields) | 7 |
 
-<details><summary>14 field discrepancies</summary>
+<details><summary>9 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -109,13 +96,8 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | `gpt-oss-120b` | `parameters[y 1]` | 8.83 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[y 2]` | not captured | 0.713 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[y 3]` | not captured | 1.62 | only_one_extracted |
-| `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
-| `gpt-oss:120b` | `parameters[interpatient variability in cl/f with the base model]` | 31.4 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[k a]` | 0.62 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v/f]` | 6.0 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[y 1]` | 8.83 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[y 2]` | not captured | 0.713 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[y 3]` | not captured | 1.62 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[θ2]` | 0.706 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[θ3]` | not captured | 1.64 | only_one_extracted |
 
 </details>
 
@@ -129,13 +111,17 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_unit_missing_Q27 | fail | [length] ** 3 / [time] | % | not captured | not captured | ['Doki_2012:other_prose'] |
-| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C2_base_Q61 | fail | 6.34 | 6.0 | 0.9464 | 0.05 | footnote reference category |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Sällström_2014:review'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Deneer_2004:review'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Sällström_2014:review'] |
+| C5_dimension_Q99 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Doki_2012_table_p5_1:row1:col1', 'Doki_2012_table_p5_1:row1:col3'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 1.72 | not captured | not captured | ['Sällström_2014:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q76 | pass | volume within physiological range | 420 L | not captured | not captured | ['Doki_2012:results_prose'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 1.72 L/h | not captured | not captured | ['Sällström_2014:review'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 444 L | not captured | not captured | ['Sällström_2014:review'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -144,7 +130,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_flecainide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Doki_2012` / `Doki_2012::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_flecainide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Doki_2012` / `Doki_2012::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -170,4 +156,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-08 17:58 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 23:05 UTC</sub>

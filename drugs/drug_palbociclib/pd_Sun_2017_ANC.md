@@ -1,7 +1,8 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;palbociclib&quot;,&quot;href&quot;:&quot;drugs/drug_palbociclib/&quot;},{&quot;label&quot;:&quot;Sun_2017 \u00b7 PD absolute neutrophil count&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Palbociclib_Courlet2022_reference&quot;,&quot;label&quot;:&quot;Courlet_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_palbociclib/Palbociclib_Courlet2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# absolute neutrophil count — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span>
+# absolute neutrophil count — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -13,16 +14,16 @@
 
 ## Record summary
 
-**As extracted:** Palbociclib (concentrations from the PK model of Buijs_2025) drives absolute neutrophil count: indirect response — drug inhibits the production of absolute neutrophil count.
+**As extracted:** Palbociclib (concentrations from the PK model of Buijs_2025) drives absolute neutrophil count (inhibition; the model form was not identified).
 
 **Model:** No model was generated from this record.
 
-> Palbociclib exposure is linked to absolute neutrophil count (ANC); the record classifies the model as indirect-response I with inhibition, but the available paper excerpt does not specify the mechanism. No potency or rate values are provided.
+> The paper does not specify the pharmacodynamic mechanism or key potency values linking palbociclib exposure to absolute neutrophil count, describing only the direction of effect as inhibition based on cited PK.
 >
-> <sub>Source-based summary by gpt-6-luna from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Sun_2017`
-- **model family:** `indirect_response_i`
+- **model family:** `unknown`
 - **driver:** `cited_pk`
 - **tier:** population
 - **effect:** inhibition/unknown

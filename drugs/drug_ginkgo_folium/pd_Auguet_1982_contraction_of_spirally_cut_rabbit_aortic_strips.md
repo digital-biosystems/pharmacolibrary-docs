@@ -20,9 +20,9 @@
 
 **Model:** No model was generated from this record.
 
-> Ginkgo biloba extract (ginkgo folium) concentration stimulates contraction of spirally-cut rabbit aortic strips, with an EC50 of 1.0 mg/ml; the paper excerpts provide no further mechanism or model details.
+> The concentration of Ginkgo biloba extract stimulates the contraction of spirally-cut rabbit aortic strips, exhibiting an EC50 of 1.0 mg/ml. The specific pharmacodynamic mechanism (e.g., Emax, effect compartment) is not described because the paper excerpts are unavailable.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Auguet_1982`
 - **model family:** `unknown`

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;epcoritamab&quot;,&quot;href&quot;:&quot;drugs/drug_epcoritamab/&quot;},{&quot;label&quot;:&quot;Li_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Epcoritamab_Li2025_reference&quot;,&quot;label&quot;:&quot;Li_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_epcoritamab/Epcoritamab_Li2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Epcoritamab_Li2025_reference&quot;,&quot;label&quot;:&quot;Li_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_epcoritamab/Epcoritamab_Li2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Li_2022_ORR&quot;,&quot;label&quot;:&quot;Li_2022 \u00b7 ORR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_epcoritamab/pd_Li_2022_ORR.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # epcoritamab — `Epcoritamab_Li2025_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -17,32 +17,30 @@
 
 ### Reviewer guidance
 
-**Epcoritamab’s ka has no reported value and was defaulted, leaving its absorption rate unsupported and the record held for review.**
+**Every check that could be run on this record passed.**
 
-Ka used library defaults, not estimates from this paper; these values affect the simulated profile but are not supported by the paper. The abstract alone was read, so summary statistics stood in for a fitted model; ka and Tlag were defaulted, and the model assumed F=1, Fm=1, no molar correction, and first-order depot input (extravascular dosing). Extracted — epcoritamab: tmax 4 days, V/F 25.6 L, CL 0.53 L/day, t1/2z 22 days.
+Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Li T et al., Population Pharmacokinetics of Epcorita…, Clinical pharmacokinetics (2025)
   ·  DOI: [10.1007/s40262-024-01464-2](https://doi.org/10.1007/s40262-024-01464-2)
 
-<div class="pk-model-meta" hidden drug="epcoritamab" model-id="Epcoritamab_Li2025_reference" status="needs_review" stale="false" population="adults with relapsed or refractory B-cell non-Hodgkin lymphoma" measured-compound="epcoritamab" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="epcoritamab" model-id="Epcoritamab_Li2025_reference" status="curated_candidate" stale="false" population="adults with R/R B-NHL" measured-compound="epcoritamab" parameterization="mechanistic" topology="1C"></div>
 
-**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 4 extracted.
 
-**Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| time to maximum concentration (tmax) | `Q56` · tmax | 4 | days | 345600.0 | [d] | not captured | exact (1.0) | Li_2025:abstract, Li_2025:abstract | — | not captured |
-| apparent total volume of distribution | `Q76` · V/F | 25.6 | L | 0.0256 | [l] | not captured | llm_corrected (0.6) | Li_2025:abstract | — | not captured |
+| estimated median time to maximum concentration (tmax) | `Q56` · tmax | 4 | days | 345600.0 | [d] | not captured | llm_confirmed (0.6) | Li_2025:abstract, Li_2025:abstract | — | not captured |
+| apparent total volume of distribution | `Q61` · V | 25.6 | L | 0.0256 | [l] | not captured | llm_confirmed (0.6) | Li_2025:abstract | — | not captured |
 | apparent total clearance | `Q22` · CL | 0.53 | L/day | 6.13425925925926e-09 | [l] / [d] | not captured | llm_confirmed (0.6) | Li_2025:abstract | — | not captured |
 | terminal half-life | `Q57` · t1/2z | 22 | days | 1900800.0 | [d] | not captured | llm (0.6) | Li_2025:abstract | — | not captured |
 
@@ -53,14 +51,8 @@ Li T et al., Population Pharmacokinetics of Epcorita…, Clinical pharmacokineti
 
 ## Departures & gaps
 
-**Deviations:**
-- `defaulted_parameters`: ['ka', 'Tlag']
-- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
-- `invented_absorption`: ka defaulted — not reported in source
-- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
-
 **Interpretation flags:**
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=epcoritamab
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=epcoritamab
 - molar mass: none found for 'epcoritamab' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
@@ -105,11 +97,11 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Li_2025:abstract'] |
 | C5_dimension_Q56 | pass | [time] | not captured | not captured | not captured | ['Li_2025:abstract', 'Li_2025:abstract'] |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Li_2025:abstract'] |
-| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Li_2025:abstract'] |
-| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Li_2025:abstract'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.53 | not captured | not captured | ['Li_2025:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.0221 L/h | not captured | not captured | ['Li_2025:abstract'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 25.6 L | not captured | not captured | ['Li_2025:abstract'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 25.6 L | not captured | not captured | ['Li_2025:abstract'] |
 
 **Reviewer per-scenario checks:**
 
@@ -117,11 +109,10 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 |---|---|---|---|---|---|---|
 | T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_output_variable | not captured | pass | C_central (measured=epcoritamab) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable; invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
+| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -130,10 +121,10 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_epcoritamab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Li_2025` / `Li_2025::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_epcoritamab/models/modelica/Epcoritamab_Li2025_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_epcoritamab/models/modelica/Epcoritamab_Li2025_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_epcoritamab/models/modelica/Epcoritamab_Li2025_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_epcoritamab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Li_2025` / `Li_2025::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_epcoritamab/models/modelica/Epcoritamab_Li2025_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_epcoritamab/models/modelica/Epcoritamab_Li2025_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_epcoritamab/models/modelica/Epcoritamab_Li2025_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -142,26 +133,26 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_epcoritamab/Epcoritamab_Li2025_reference/Epcoritamab_Li2025_reference_modelica.zip" download>Epcoritamab_Li2025_reference_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_epcoritamab/Epcoritamab_Li2025_reference/Epcoritamab_Li2025_reference_fmi.zip" download>Epcoritamab_Li2025_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_epcoritamab/Epcoritamab_Li2025_reference/Epcoritamab_Li2025_reference_matlab.zip" download>Epcoritamab_Li2025_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_epcoritamab/Epcoritamab_Li2025_reference/Epcoritamab_Li2025_reference_matlab_simbio.zip" download>Epcoritamab_Li2025_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_epcoritamab/Epcoritamab_Li2025_reference/Epcoritamab_Li2025_reference_sbml.zip" download>Epcoritamab_Li2025_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_epcoritamab/Epcoritamab_Li2025_reference/Epcoritamab_Li2025_reference_cellml.zip" download>Epcoritamab_Li2025_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_epcoritamab/Epcoritamab_Li2025_reference/Epcoritamab_Li2025_reference_modelica.zip" download>Epcoritamab_Li2025_reference_modelica.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_epcoritamab/Epcoritamab_Li2025_reference/Epcoritamab_Li2025_reference_fmi.zip" download>Epcoritamab_Li2025_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_epcoritamab/Epcoritamab_Li2025_reference/Epcoritamab_Li2025_reference_matlab.zip" download>Epcoritamab_Li2025_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_epcoritamab/Epcoritamab_Li2025_reference/Epcoritamab_Li2025_reference_matlab_simbio.zip" download>Epcoritamab_Li2025_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_epcoritamab/Epcoritamab_Li2025_reference/Epcoritamab_Li2025_reference_sbml.zip" download>Epcoritamab_Li2025_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_epcoritamab/Epcoritamab_Li2025_reference/Epcoritamab_Li2025_reference_cellml.zip" download>Epcoritamab_Li2025_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_epcoritamab/Epcoritamab_Li2025_reference/Epcoritamab_Li2025_reference.svg" alt="Epcoritamab_Li2025_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_epcoritamab/Epcoritamab_Li2025_reference/Epcoritamab_Li2025_reference.svg" alt="Epcoritamab_Li2025_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: intravenous** — 10 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
-<dbs-fmusim paramsurl="drugs/drug_epcoritamab/Epcoritamab_Li2025_reference/Epcoritamab_Li2025_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_epcoritamab/Epcoritamab_Li2025_reference/Epcoritamab_Li2025_reference_sim_controls.json"></dbs-fmusim>
+<dbs-fmusim paramsurl="drugs/drug_epcoritamab/Epcoritamab_Li2025_reference/Epcoritamab_Li2025_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_epcoritamab/Epcoritamab_Li2025_reference/Epcoritamab_Li2025_reference_sim_controls.json"></dbs-fmusim>
 
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C_enteral` · parameters `Epcoritamab_Li2025_reference_params.json` · controls `Epcoritamab_Li2025_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C` · parameters `Epcoritamab_Li2025_reference_params.json` · controls `Epcoritamab_Li2025_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 12:39 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 19:29 UTC</sub>

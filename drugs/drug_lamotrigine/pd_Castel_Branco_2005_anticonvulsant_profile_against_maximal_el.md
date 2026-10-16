@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;lamotrigine&quot;,&quot;href&quot;:&quot;drugs/drug_lamotrigine/&quot;},{&quot;label&quot;:&quot;Castel-Branco_2005 \u00b7 PD anticonvulsant profile against maximal electroshock seizure stimulation&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lamotrigine_Huo2025_base&quot;,&quot;label&quot;:&quot;Huo_2025_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lamotrigine/Lamotrigine_Huo2025_base.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lamotrigine_Huo2025_final&quot;,&quot;label&quot;:&quot;Huo_2025_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lamotrigine/Lamotrigine_Huo2025_final.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lamotrigine_Chan2001_reference&quot;,&quot;label&quot;:&quot;Chan_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lamotrigine/Lamotrigine_Chan2001_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lamotrigine_Huo2025_base&quot;,&quot;label&quot;:&quot;Huo_2025_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lamotrigine/Lamotrigine_Huo2025_base.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lamotrigine_Huo2025_final&quot;,&quot;label&quot;:&quot;Huo_2025_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lamotrigine/Lamotrigine_Huo2025_final.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Castel_Branco_2005_anticonvulsant_profile_against_maximal_el&quot;,&quot;label&quot;:&quot;Castel-Branco_2005 \u00b7 anticonvulsant profile against maximal electroshock seizure stimulation&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_lamotrigine/pd_Castel_Branco_2005_anticonvulsant_profile_against_maximal_el.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # anticonvulsant profile against maximal electroshock seizure stimulation — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
@@ -18,9 +18,9 @@
 
 **As extracted:** Lamotrigine (concentrations from the PK model of Chan_2001) drives anticonvulsant profile against maximal electroshock seizure stimulation: direct sigmoid Emax (Hill) effect.
 
-**Model:** Model available in **Models**; browser simulation unavailable.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
-> Lamotrigine is modeled with a direct sigmoid Emax effect (gamma = 8.64) on the anticonvulsant profile against maximal electroshock seizure stimulation, assuming a 3.75 h⁻¹ effect compartment, with an EC50 of 3.44 mg/L and 100% Emax; the paper does not state whether this represents inhibition or stimulation of the underlying physiological process.
+> Lamotrigine plasma concentrations inhibit the anticonvulsant profile against maximal electroshock seizure stimulation via a sigmoidal Emax mechanism linked by an effect compartment with ke0 of 3.75 h(-1). The model fits with an Emax of 100.0%, an EC50 of 3.44 mg/L, and a gamma of 8.64.
 >
 > <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
@@ -28,7 +28,7 @@
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`
 - **tier:** descriptive
-- **effect:** stimulation/unknown
+- **effect:** inhibition/unknown
 
 ## Citation
 Castel-Branco MM et al., Lamotrigine pharmacokinetic/pharmacodyn…, Fundamental & clinical phar… (2005)
@@ -37,10 +37,10 @@ Castel-Branco MM et al., Lamotrigine pharmacokinetic/pharmacodyn…, Fundamental
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | Emax | `Q320` · not captured | 100.0 | % | not captured | llm (not captured) | Castel-Branco_2005:pdv3 |
+| PD (effect) | ke0 | `Q326` · not captured | 3.75 | h(-1) | not captured | llm (not captured) | Castel-Branco_2005:pdv3 |
+| PD (effect) | Emax | `Q323` · not captured | 100.0 | % | not captured | direction (not captured) | Castel-Branco_2005:pdv3 |
 | PD (effect) | EC50 | `Q321` · not captured | 3.44 | mg/L | not captured | llm (not captured) | Castel-Branco_2005:pdv3 |
 | PD (effect) | gamma | `Q325` · not captured | 8.64 | not captured | not captured | llm (not captured) | Castel-Branco_2005:pdv3 |
-| PD (effect) | k(e0) | `Q326` · not captured | 3.75 | h(-1) | not captured | llm (not captured) | Castel-Branco_2005:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -55,15 +55,16 @@ Castel-Branco MM et al., Lamotrigine pharmacokinetic/pharmacodyn…, Fundamental
 | parameter | value (paper units) | SI |
 |---|---|---|
 | E0 | 0 | — |
-| Emax | 100 % | 1 1 |
+| Emax | -100 % | -1 1 |
 | EC50 | 3.44 mg/L | 0.00344 kg/m3 |
 | gamma | 8.64 | — |
 
-Closed-form check points (response, SI): `at_0` = 0, `at_EC50` = 0.5, `at_inf` = 1
+Closed-form check points (response, SI): `at_0` = 0, `at_EC50` = -0.5, `at_inf` = -1
 
 Deviations:
 
 - `defaulted_parameters` — E0
+- `pd_binding_imax_as_negative_emax` — Imax (Q323) enters SigmoidEmaxSweep as −Emax
 
 ## Review
 
@@ -74,7 +75,7 @@ Verdict <span class="pk-badge pk-badge--orange">needs review</span> · route to 
 | `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
 | `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
 | `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
-| `T2_direction` | pass | the response rises, as direct effect predicts |
+| `T2_direction` | pass | the response falls, as direct effect predicts |
 | `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
 | `T4_defaults` | fail | a core parameter took a library default: E0 |
 
@@ -89,19 +90,22 @@ Advisory:
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_lamotrigine/Lamotrigine_CastelBranco2005_PD_anticonvulsant_profile_again/Lamotrigine_CastelBranco2005_PD_anticonvulsant_profile_again_modelica.zip" download>Lamotrigine_CastelBranco2005_PD_anticonvulsant_profile_again_modelica.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_lamotrigine/Lamotrigine_CastelBranco2005_PD_anticonvulsant_profile_again/Lamotrigine_CastelBranco2005_PD_anticonvulsant_profile_again_modelica.zip" download>Lamotrigine_CastelBranco2005_PD_anticonvulsant_profile_again_modelica.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_lamotrigine/Lamotrigine_CastelBranco2005_PD_anticonvulsant_profile_again/Lamotrigine_CastelBranco2005_PD_anticonvulsant_profile_again_matlab.zip" download>Lamotrigine_CastelBranco2005_PD_anticonvulsant_profile_again_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_lamotrigine/Lamotrigine_CastelBranco2005_PD_anticonvulsant_profile_again/Lamotrigine_CastelBranco2005_PD_anticonvulsant_profile_again_sbml.zip" download>Lamotrigine_CastelBranco2005_PD_anticonvulsant_profile_again_sbml.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_lamotrigine/Lamotrigine_CastelBranco2005_PD_anticonvulsant_profile_again/Lamotrigine_CastelBranco2005_PD_anticonvulsant_profile_again_cellml.zip" download>Lamotrigine_CastelBranco2005_PD_anticonvulsant_profile_again_cellml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PD_SigmoidEmaxSweep.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+<dbs-fmusim paramsurl="drugs/drug_lamotrigine/Lamotrigine_CastelBranco2005_PD_anticonvulsant_profile_again/Lamotrigine_CastelBranco2005_PD_anticonvulsant_profile_again_params.json" metaurl="assets/fmu/PD_SigmoidEmaxSweep.vr.json" wasmurl="assets/fmu/PD_SigmoidEmaxSweep.js" controlsurl="drugs/drug_lamotrigine/Lamotrigine_CastelBranco2005_PD_anticonvulsant_profile_again/Lamotrigine_CastelBranco2005_PD_anticonvulsant_profile_again_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PD_SigmoidEmaxSweep` · parameters `Lamotrigine_CastelBranco2005_PD_anticonvulsant_profile_again_params.json` · controls `Lamotrigine_CastelBranco2005_PD_anticonvulsant_profile_again_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 

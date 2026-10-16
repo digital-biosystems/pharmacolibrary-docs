@@ -18,11 +18,30 @@ Midodrine is a peripheral alpha-1 agonist used to treat orthostatic hypotension 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 08:37 | 2:35 | 0/0/0 | 0/0/0 | 0/0/0 | 83,672/2,841 | ollama / qwen3.8:27b-mtp-q8_0 | 9 | 3/8 | 9/0 | 0 |
+| 2026-10-13 12:39 | 0:55 | 0/0/0 | 1/0/0 | 0/0/0 | 26,159/1,415 | einfracz / qwen3.8-27b | 10 | 3/9 | 10/0 | 0 |
 
 ## popPK records
 
 _not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Wecht_2010_MAP](drugs/drug_midodrine/pd_Wecht_2010_MAP.md) | mean arterial pressure (MAP) ← midodrine · stimulation effect | — | Wecht JM et al., Effects of midodrine hydrochloride on b…, Archives of physical medici… (2010) | [10.1016/j.apmr.2010.06.017](https://doi.org/10.1016/j.apmr.2010.06.017) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Wecht_2010_MFV](drugs/drug_midodrine/pd_Wecht_2010_MFV.md) | middle cerebral artery mean blood flow velocity (MFV) ← midodrine · stimulation effect | — | Wecht JM et al., Effects of midodrine hydrochloride on b…, Archives of physical medici… (2010) | [10.1016/j.apmr.2010.06.017](https://doi.org/10.1016/j.apmr.2010.06.017) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=midodrine).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | `SLC15A1` unknown | DrugBank actor |
+| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
+| metabolism | liver | `CYP2D6` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ADRA1A (target), ADRA1B (target), ADRA1D (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -32,7 +51,7 @@ _not available_
 
 ## Coverage
 
-- **PubMed hits:** 46 matched, 55 returned
+- **PubMed hits:** 40 matched, 59 returned
 - **screened:** 2  ·  **relevant:** 2
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
@@ -49,7 +68,7 @@ _5 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | `Wright_1998.pdf` | Wright RA et al., A double-blind, dose-response study of…, Neurology (1998) | popPK | 8 | [10.1212/wnl.51.1.120](https://doi.org/10.1212/wnl.51.1.120) | [9674789](https://pubmed.ncbi.nlm.nih.gov/9674789) | The study reports the half-life of the active metabolite desglymidodrine (approx 4 hours) but lacks other quantitative PK parameters like clearance or volume of distribution in the provided text. |
 | `Demir_2019.pdf` | Demir Y, The behaviour of some antihypertension…, The Journal of pharmacy and… (2019) | pd | 4 | [10.1111/jphp.13144](https://doi.org/10.1111/jphp.13144) | [31347707](https://www.ncbi.nlm.nih.gov/pubmed/31347707) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-10-06T08:37:34.771209+00:00</sub>
+<sub>queue written 2026-10-13T12:39:26.568854+00:00</sub>
 
 ## Screened and excluded
 
@@ -57,9 +76,11 @@ _5 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 |---|---|---|---|---|---|
 | popPK | Akimoto_2004 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of CYP450 isoforms involved in the metabolism of midodrine's metabolite, not a pharmacokinetic study reporting quantitative disposition parameters (CL, V, t1/2) for midodrine. |
 | PGx | Akimoto_2004 | not_relevant | 2 | 0 | The paper describes in vitro CYP enzyme activities for midodrine's metabolite but does not report in vivo pharmacokinetic or pharmacodynamic parameters linked to specific genotypes. |
+| popPK | Al-Shaer_2010 | irrelevant | 0 | 0 | The paper is a structure-activity relationship (SAR) study identifying Hsp90α inhibitors and reports IC50 values (potency), not pharmacokinetic disposition parameters (CL, V, Ka, t1/2) for midodrine. |
 | PD | Al-Shaer_2010 | not_relevant | 0 | 0 | The paper reports an in vitro IC50 value for midodrine as part of a QSAR study, but does not report a pharmacodynamic (exposure-response) relationship, dose-response curve, or PK/PD model. |
 | popPK | Alessandria_2009 | irrelevant | 0 | 0 | The study is a clinical trial evaluating the efficacy of midodrine in preventing hepatorenal syndrome recurrence and does not report any pharmacokinetic parameters. |
 | popPK | Ali_2014 | irrelevant | 0 | 0 | The study is a clinical trial assessing therapeutic efficacy (body weight, abdominal girth) and does not report pharmacokinetic parameters. |
+| popPK | Ali_2015 | irrelevant | 2 | 0 | The paper focuses on assay development and mentions PK differences but does not provide specific quantitative parameter values (CL, V, t1/2, etc.) for midodrine in the evidence. |
 | popPK | Ali_2016 | relevant | 10 | 0 | The study reports quantitative pharmacokinetic parameters for midodrine, but the specific numeric values are not present in the provided evidence text. |
 | popPK | Altenbach_2002 | irrelevant | 0 | 0 | The study focuses on the pharmacodynamics and receptor binding of a novel compound (ABT-866), using midodrine only as a comparator agent without reporting its pharmacokinetic parameters. |
 | PD | Altenbach_2002 | not_relevant | 3 | 2 | The paper reports in vitro pharmacological parameters (EC50, pA2) for a novel compound (ABT-866) and compares its in vivo selectivity to midodrine, but it does not report a pharmacokinetic-pharmacodynamic (PK/PD) model or exposure-response relationship for midodrine itself. |
@@ -70,6 +91,7 @@ _5 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | PGx | Cheshire_2019 | not_relevant | 0 | 0 | The paper is a general review of pharmacotherapy for orthostatic hypotension and does not report specific pharmacogenomic effects on midodrine PK/PD parameters. |
 | popPK | Cruz_2000 | irrelevant | 2 | 0 | The paper is a review of clinical use and mechanism, lacking original quantitative pharmacokinetic parameter values (CL, V, etc.) for midodrine. |
 | popPK | Davoudi-Monfared_2021 | irrelevant | 0 | 0 | The study assesses the clinical effect of midodrine on lactate clearance in septic shock patients and does not report any pharmacokinetic parameters (CL, V, ka, etc.) for midodrine. |
+| popPK | Demir_2019 | irrelevant | 0 | 0 | The study reports in vitro enzyme inhibition kinetics (IC50, Ki) of midodrine on paraoxonase-1, not pharmacokinetic disposition parameters. |
 | PD | Demir_2019 | not_relevant | 0 | 0 | The paper focuses on the effect of antihypertensive drugs on paraoxonase-1 activity and does not report any pharmacodynamic or exposure-response analysis for midodrine. |
 | popPK | Doole_2026 | irrelevant | 0 | 0 | The study is an in-vitro investigation of tablet disintegration and dissolution, not a pharmacokinetic study reporting quantitative disposition parameters. |
 | popPK | Emms_2018 | irrelevant | 0 | 0 | The paper describes analytical interference of midodrine's metabolite with metanephrine assays, not the pharmacokinetic disposition parameters of midodrine. |
@@ -77,20 +99,27 @@ _5 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | popPK | Hanafy_2016 | irrelevant | 0 | 0 | The study is a clinical trial evaluating the therapeutic efficacy of midodrine in refractory ascites and does not report any pharmacokinetic parameters. |
 | popPK | Harada_1998 | irrelevant | 0 | 0 | The study investigates the pharmacodynamic effects (vasoconstriction) of amezinium and midodrine, not their pharmacokinetic parameters. |
 | PD | Harada_1998 | not_relevant | 0 | 0 | The paper studies the effect of Amezinium Metilsulfate on noradrenaline-induced vasoconstriction, not the pharmacodynamics of midodrine. |
+| popPK | Jourdan_2007 | irrelevant | 0 | 0 | The study focuses on pharmacodynamic (pressor) interactions and receptor potency, not pharmacokinetic disposition parameters like clearance or volume of distribution. |
+| popPK | Karwa_2009 | irrelevant | 0 | 0 | The paper is a review of hemodynamic and clinical outcomes, explicitly excluding pharmacokinetic/pharmacodynamic studies, and contains no quantitative PK parameters for midodrine. |
 | PD | Karwa_2009 | not_relevant | 1 | 0 | The paper is a narrative review that explicitly excludes pharmacokinetic/pharmacodynamic studies and does not report any numeric PD parameters or concentration-effect relationships. |
+| popPK | Kulkarni_2023 | irrelevant | 0 | 0 | The paper is a review focused on terlipressin for HRS-AKI, and midodrine is only mentioned as a comparator drug without any original pharmacokinetic data. |
 | PD | Kulkarni_2023 | not_relevant | 0 | 0 | The paper is a review of terlipressin in HRS-AKI and does not report any pharmacodynamic or exposure-response data for midodrine. |
 | popPK | Lamarre-Cliche_2008 | irrelevant | 2 | 0 | The study measures plasma concentrations of the metabolite desglymidodrine (DGM) but does not report quantitative pharmacokinetic parameters (CL, V, t1/2) or a compartmental model in the provided text. |
 | popPK | Leduc_2015 | irrelevant | 1 | 1 | The study is a clinical efficacy trial for anejaculation that reports only a single plasma concentration of the metabolite desglymidodrine, without deriving any pharmacokinetic parameters (CL, V, ka, t1/2) or compartmental models. |
 | popPK | Lee_2020 | irrelevant | 0 | 0 | The study investigates the metabolic and functional effects of midodrine as an alpha-1 adrenergic agonist in cells and rats, but does not report any pharmacokinetic parameters (CL, V, ka, etc.). |
 | popPK | Lee_2022 | irrelevant | 0 | 0 | The study investigates the therapeutic mechanism of midodrine on cataracts in rats (pharmacodynamics) and does not report any pharmacokinetic parameters such as clearance, volume, or half-life. |
 | popPK | Li_2026 | irrelevant | 0 | 0 | The paper is a metabolomic study in rats where midodrine is identified as a differentially abundant metabolite (likely a false positive or environmental contaminant) rather than being dosed for pharmacokinetic analysis. |
+| popPK | Macielak_2021 | irrelevant | 1 | 1 | The study is a retrospective clinical trial analyzing hemodynamic effects (vasopressor requirements) and does not report original quantitative pharmacokinetic parameters like clearance or volume, mentioning only a general half-life. |
 | popPK | Malmborg_2013 | irrelevant | 2 | 0 | The paper is a methodological study on PBPK modeling for prodrugs where midodrine is used as a validation case, but no specific quantitative PK parameter values (CL, V, etc.) for midodrine are provided in the text. |
 | popPK | McClellan_1998 | irrelevant | 0 | 0 | The paper is a therapeutic review of midodrine's clinical efficacy and safety, containing no quantitative pharmacokinetic parameters (CL, V, ka, etc.). |
+| popPK | Mukhtar_2015 | irrelevant | 0 | 0 | This is a clinical review discussing the prescribing of midodrine for orthostatic hypotension, but it does not report original quantitative pharmacokinetic parameters. |
 | PD | Mukhtar_2015 | not_relevant | 1 | 0 | The text is a qualitative review advocating for midodrine use in older adults and does not report any numeric pharmacodynamic parameters, exposure-response data, or dose-effect curves. |
 | popPK | Nagi_2023 | irrelevant | 0 | 0 | The study reports chemical degradation kinetics (stability) of midodrine, not pharmacokinetic disposition parameters (CL, V, ka) in a biological system. |
 | popPK | Pack_2026 | irrelevant | 0 | 0 | The paper is a case report on octreotide for intradialytic hypotension where midodrine is only a co-administered comparator, and the PK parameters provided (half-life, clearance) are for octreotide, not midodrine. |
+| popPK | Patel_2016 | irrelevant | 1 | 0 | The paper describes a bioanalytical method validation for midodrine and its metabolite, and while it mentions application to a PK study, no quantitative pharmacokinetic parameters (CL, V, t1/2, etc.) are provided in the evidence. |
 | popPK | Patel_2017 | irrelevant | 0 | 0 | The study evaluates the therapeutic efficacy of midodrine on serum sodium and electrolyte-free water clearance in cirrhosis, reporting no pharmacokinetic parameters (CL, V, ka, etc.). |
 | popPK | Perazella_2003 | irrelevant | 0 | 0 | The paper is a clinical efficacy and safety review of midodrine for dialysis hypotension and does not report quantitative pharmacokinetic parameters. |
+| popPK | Pittner_1976 | irrelevant | 1 | 0 | The study is a pharmacodynamic investigation of blood pressure effects and receptor interactions, reporting no quantitative pharmacokinetic parameters such as clearance or volume of distribution. |
 | PD | Pittner_1976 | not_relevant | 2 | 1 | The paper describes qualitative pharmacodynamic actions and receptor mechanisms but does not provide numeric concentration-effect data, dose-response curves, or specific PD parameters like Emax or EC50. |
 | popPK | Ruiz_2022 | irrelevant | 0 | 0 | The paper is a clinical case report regarding a complication of enteral nutrition where midodrine is only mentioned as a co-administered vasopressor, with no pharmacokinetic data provided. |
 | popPK | Salerno_2015 | irrelevant | 0 | 0 | The paper is a meta-analysis of albumin dosing in hepatorenal syndrome where midodrine is only a comparator vasoconstrictor, with no PK parameters reported. |

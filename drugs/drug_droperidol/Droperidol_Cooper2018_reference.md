@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05A&quot;,&quot;href&quot;:&quot;atc/N05A.md&quot;},{&quot;label&quot;:&quot;droperidol&quot;,&quot;href&quot;:&quot;drugs/drug_droperidol/&quot;},{&quot;label&quot;:&quot;Cooper_2018 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Droperidol_Foo2016_reference&quot;,&quot;label&quot;:&quot;Foo_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_droperidol/Droperidol_Foo2016_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Droperidol_Foo2016_reference&quot;,&quot;label&quot;:&quot;Foo_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_droperidol/Droperidol_Foo2016_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Radke_1998_time_averaged_single_channel_conductance&quot;,&quot;label&quot;:&quot;Radke_1998 \u00b7 time averaged single channel conductance&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_droperidol/pd_Radke_1998_time_averaged_single_channel_conductance.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,13 +17,13 @@
 
 ### Reviewer guidance
 
-**The droperidol absorption rate constant kabs is reported with the unit 'ka', which is not a valid unit and could not be converted to SI, so the record was rejected for a dimension mismatch on a structural parameter.**
+**C5 dimension mismatch on a structural parameter.**
 
-In the Cooper_2018 two-compartment droperidol model for healthy volunteers, the absorption rate constant kabs (value 0.517) carries the verbatim unit 'ka' — the parameter's own name repeated instead of a reciprocal time unit — so no SI value could be assigned. The other parameters (V1 3.16 L, V2 16.9 L, Q 9.66 L/h, t1/2β 2.0 h) carry convertible units, but the invalid unit on kabs alone triggered the dimension-mismatch refusal. Extracted — droperidol: V1 3.16 L, V2 16.9 L, Q 9.66 L/h, kabs 0.517 ka, t1/2β 2 h.
+A reported unit could not be converted (kabs), so that value has no SI equivalent. Extracted — droperidol: V1 3.16 L, V2 16.9 L, Q 9.66 L/h, kabs 0.517 ka, t1/2β 2 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cvcp: this record has none, the second reading 13.2; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by glm-5.3-flash</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Cooper I et al., The pharmacokinetics of intranasal drop…, SAGE open medicine (2018)
@@ -41,11 +41,11 @@ Cooper I et al., The pharmacokinetics of intranasal drop…, SAGE open medicine 
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Central volume of distribution (V1) | `Q63` · V1 | 3.16 | L | 0.00316 | L | 34.3 | boundary_compartment (0.9) | table3-2050312118813283:row2:col2 | — | not captured |
-| Peripheral volume of distribution (V2) | `Q64` · V2 | 16.9 | L | 0.0169 | L | 23.1 | boundary_compartment (0.9) | table3-2050312118813283:row3:col2 | — | not captured |
-| Distribution clearance (CLd) | `Q30` · Q | 9.66 | L/h | 2.683333333333333e-06 | L/h | 30.0 | exact (1.0) | table3-2050312118813283:row4:col2 | — | not captured |
-| Absorption rate constant (ka) | `Q49` · kabs | 0.517 | ka | not captured | [ka] | 11.5 | exact (1.0) | table3-2050312118813283:row5:col2 | — | not captured |
-| Terminal half-life (T1/2,β) | `Q60` · t1/2β | 2.0 | h | 7200.0 | h | not captured | llm (0.6) | table3-2050312118813283:row8:col2 | — | not captured |
+| Central volume of distribution (V1) | `Q63` · V1 | 3.16 | L | 0.00316 | [l] | 34.3 | boundary_compartment (0.9) | table3-2050312118813283:row2:col2 | — | 85.5 (None% RSE) |
+| Peripheral volume of distribution (V2) | `Q64` · V2 | 16.9 | L | 0.0169 | [l] | 23.1 | boundary_compartment (0.9) | table3-2050312118813283:row3:col2 | — | 43.6 (None% RSE) |
+| Distribution clearance (CLd) | `Q30` · Q | 9.66 | L/h | 2.683333333333333e-06 | [l] / [h] | 30.0 | exact (1.0) | table3-2050312118813283:row4:col2 | — | 57 (None% RSE) |
+| Absorption rate constant (ka) | `Q49` · kabs | 0.517 | ka | not captured | [ka] | 11.5 | exact (1.0) | table3-2050312118813283:row5:col2 | — | 13.1 (None% RSE) |
+| Terminal half-life (T1/2,β) | `Q60` · t1/2β | 2.0 | h | 7200.0 | [h] | not captured | llm (0.6) | table3-2050312118813283:row8:col2 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -55,33 +55,26 @@ Cooper I et al., The pharmacokinetics of intranasal drop…, SAGE open medicine 
 ## Departures & gaps
 
 **Interpretation flags:**
-- table section iiv: 'Bioavailability (F)' routed out of structural estimates ('IIV (%CV) or 5th to 95th percentile (P5–P95)')
-- unit_dimension_unknown: 'V1' (V1)
-- unit_dimension_unknown: 'V2' (V2)
-- unit_dimension_unknown: 'CLd' (Q)
+- table section iiv: 'Total body clearance (CL)' routed out of structural estimates ('IIV (%CV) or 5th to 95th percentile (P5–P95)')
+- table section iiv: 'Central volume of distribution (V1)' routed out of structural estimates ('IIV (%CV) or 5th to 95th percentile (P5–P95)')
+- table section iiv: 'Peripheral volume of distribution (V2)' routed out of structural estimates ('IIV (%CV) or 5th to 95th percentile (P5–P95)')
+- table section iiv: 'Distribution clearance (CLd)' routed out of structural estimates ('IIV (%CV) or 5th to 95th percentile (P5–P95)')
+- table section iiv: 'Absorption rate constant (ka)' routed out of structural estimates ('IIV (%CV) or 5th to 95th percentile (P5–P95)')
+- table section iiv: 'Rate constant for lag time (klag)' routed out of structural estimates ('IIV (%CV) or 5th to 95th percentile (P5–P95)')
+- conflicting source units for 'Absorption rate constant (ka)': [{'unit': 'h–1', 'source': 'table3-2050312118813283:row5:col1', 'scope': 'unit_column'}, {'unit': 'ka', 'source': 'table3-2050312118813283:row5:col0', 'scope': 'label'}]
 - unit_dimension_mismatch: 'Absorption rate constant (ka)' → Q49 (unit '[time]' vs ontology '1 / [time]') — route to review
 - dropped unlinked row (NIL): 'Rate constant for lag time (klag)' — extend the ontology if this is a real PK parameter (source ['table3-2050312118813283:row6:col2'])
-- unit_dimension_unknown: 'T1/2,β' (t1/2β)
-- dropped duplicate Q30 ('CVcp', value '13.2') — already have one for this compound
-- routed 'SDcp' → Q315 (sigma) to residual_error — variability estimate, not a structural parameter
-- implicit units: 'Central volume of distribution (V1)' → L (from the paper text: "Abstract: 'apparent central volume of distri...' reported in L; text reports volumes of distribution for droperidol in L")
-- implicit units: 'Peripheral volume of distribution (V2)' → L (from the paper text: 'Text reports peripheral volume of distribution (V2) among volume parameters in L consistent with reported CL values in L')
-- implicit units: 'Distribution clearance (CLd)' → L/h (from the paper text: "Text reports clearances in L/h (e.g. 'apparent elimination clearance for intranasal dosing was 87.9 L/h'); CLd is an int")
-- implicit units: 'Terminal half-life (T1/2,β)' → h (from the paper text: "Text: 'The terminal elimination half-life of around 2 h that we observed, for both IN and IV dosing'.")
+- routed 'CVcp' → Q316 (prop_error) to residual_error — variability estimate, not a structural parameter
+- routed 'SDcp' → Q317 (add_error) to residual_error — variability estimate, not a structural parameter
 - apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q63 (Central volume of distribution (V1)); Q64 (Peripheral volume of distribution (V2)); Q30 (Distribution clearance (CLd))
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=droperidol
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
 
 **Extraction notes:**
-- unparsed cell table3-2050312118813283:row2:col3 = '85.5%'
-- unparsed cell table3-2050312118813283:row3:col3 = '43.6%'
-- unparsed cell table3-2050312118813283:row4:col3 = '57%'
-- unparsed cell table3-2050312118813283:row5:col1 = 'h–1'
-- unparsed cell table3-2050312118813283:row5:col3 = '13.1%'
-- unparsed cell table3-2050312118813283:row6:col1 = 'h–1'
-- unparsed cell table3-2050312118813283:row6:col3 = '47.7%'
-- unparsed cell table3-2050312118813283:row7:col2 = '17.4a(15.0)'
+- table table3-2050312118813283: conflicting_units
+- table table3-2050312118813283: unbound_uncertainty
+- table table3-2050312118813283: unparsed_numeric_cell
 - LLM selected parameter table(s) 3
 
 ## Validation
@@ -131,7 +124,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_droperidol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Cooper_2018` / `Cooper_2018::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_droperidol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Cooper_2018` / `Cooper_2018::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -147,4 +140,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 15:27 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 20:33 UTC</sub>

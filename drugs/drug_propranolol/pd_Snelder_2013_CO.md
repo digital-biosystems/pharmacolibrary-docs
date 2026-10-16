@@ -1,8 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;propranolol&quot;,&quot;href&quot;:&quot;drugs/drug_propranolol/&quot;},{&quot;label&quot;:&quot;Snelder_2013 \u00b7 PD cardiac output&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Propranolol_Takechi2018_reference&quot;,&quot;label&quot;:&quot;Takechi_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_propranolol/Propranolol_Takechi2018_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;propranolol&quot;,&quot;href&quot;:&quot;drugs/drug_propranolol/&quot;},{&quot;label&quot;:&quot;Snelder_2013 \u00b7 PD Cardiac output&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Propranolol_Salehifar2017_mean_of_differences&quot;,&quot;label&quot;:&quot;Salehifar_2017_mean_of_differences&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_propranolol/Propranolol_Salehifar2017_mean_of_differences.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Propranolol_Salehifar2017_other_sources&quot;,&quot;label&quot;:&quot;Salehifar_2017_other_sources&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_propranolol/Propranolol_Salehifar2017_other_sources.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Propranolol_Salehifar2017_this_study&quot;,&quot;label&quot;:&quot;Salehifar_2017_this_study&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_propranolol/Propranolol_Salehifar2017_this_study.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Propranolol_Takechi2018_estimate_rse&quot;,&quot;label&quot;:&quot;Takechi_2018_estimate_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_propranolol/Propranolol_Takechi2018_estimate_rse.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Propranolol_Takechi2018_original_data_estimate_rse&quot;,&quot;label&quot;:&quot;Takechi_2018_original_data_estimate_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_propranolol/Propranolol_Takechi2018_original_data_estimate_rse.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# cardiac output — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+# Cardiac output — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -16,11 +16,11 @@
 
 ## Record summary
 
-**As extracted:** Propranolol (concentrations from the PK model of Marques_2026) drives cardiac output (in mL•min -1): indirect response — drug inhibits the production of cardiac output.
+**As extracted:** Propranolol (concentrations from the PK model of Marques_2026) drives Cardiac output (in mL•min-1): indirect response — drug inhibits the production of Cardiac output.
 
 **Model:** Model available in **Models**; browser simulation unavailable.
 
-> Propranolol plasma concentrations inhibit the production of cardiac output via an indirect response model with proportional effect, characterized by an Emax of 0.335 and an IC50 of 9.82 ng/mL. The paper describes this as a turnover model where the drug affects the zero-order production rate constant, although the specific numerical values for kin and kout are not provided in the excerpts.
+> Propranolol plasma concentrations inhibit the production (input) of cardiac output using an indirect response model with proportional effect. The maximum effect (Imax) was 0.335 and the half-maximal inhibitory concentration (IC50) was 9.82 ng•mL⁻¹.
 >
 > <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
@@ -38,7 +38,7 @@ Snelder N et al., PKPD modelling of the interrelationship…, British journal of
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
 | PD (effect) | Emax | `Q323` · not captured | 0.335 | not captured | not captured | llm (not captured) | Snelder_2013:pdv3 |
-| PD (effect) | IC50 | `Q322` · not captured | 9.82 | ng•mL -1 | not captured | llm (not captured) | Snelder_2013:pdv3 |
+| PD (effect) | IC50 | `Q322` · not captured | 9.82 | ng•mL-1 | not captured | llm (not captured) | Snelder_2013:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -54,7 +54,7 @@ Snelder N et al., PKPD modelling of the interrelationship…, British journal of
 |---|---|---|
 | E0 | 0 | — |
 | Emax | 0.335 | — |
-| EC50 | 9.82 ng•mL -1 | — |
+| EC50 | 9.82 ng•mL-1 | — |
 | gamma | 1 | — |
 
 Closed-form check points (response, SI): `at_0` = 0, `at_EC50` = 0, `at_inf` = 0
@@ -62,7 +62,7 @@ Closed-form check points (response, SI): `at_0` = 0, `at_EC50` = 0, `at_inf` = 0
 Deviations:
 
 - `defaulted_parameters` — E0, gamma
-- `pd_binding_exposure_unit_unresolved` — 'ng•mL -1' — the x axis is in the paper's unit, not SI
+- `pd_binding_exposure_unit_unresolved` — 'ng•mL-1' — the x axis is in the paper's unit, not SI
 
 ## Review
 

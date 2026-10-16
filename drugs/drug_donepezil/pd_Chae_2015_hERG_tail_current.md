@@ -20,9 +20,9 @@
 
 **Model:** No model was generated from this record.
 
-> Donepezil inhibits the hERG tail current with a sigmoid Emax (inhibitory) model; the paper reports an IC50 of 1.3 μM, but no excerpts are available to confirm the mechanism or additional parameters.
+> Donepezil inhibits the hERG tail current concentration-dependently according to a sigmoidal Emax model. The reported IC50 is 1.3 μM.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Chae_2015`
 - **model family:** `sigmoid_emax`

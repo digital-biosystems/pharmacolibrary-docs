@@ -18,17 +18,11 @@ Lascufloxacin is a fluoroquinolone antibacterial that has been investigated for 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 12:26 | 0:05 | 0/0/0 | 1/0/0 | 0/0/0 | 14,800/329 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
+| 2026-10-14 23:11 | 0:33 | 0/0/0 | 0/0/0 | 0/0/0 | 44,376/607 | einfracz / qwen3.8-27b | 6 | 0/6 | 6/0 | 0 |
 
 ## popPK records
 
 _not available_
-
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Hosoi_2026_Change_in_viable_bacterial_counts](drugs/drug_lascufloxacin/pd_Hosoi_2026_Change_in_viable_bacterial_counts.md) | Change in viable bacterial counts ← Lascufloxacin · direct sigmoid Emax (Hill) effect | — | Hosoi A et al., Three fluoroquinolones with different e…, Antimicrobial agents and ch… (2026) | [10.1128/aac.00375-26](https://doi.org/10.1128/aac.00375-26) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -38,16 +32,35 @@ _not available_
 
 ## Coverage
 
-- **PubMed hits:** 1 matched, 1 returned
-- **screened:** 0  ·  **relevant:** 0
+- **PubMed hits:** 12 matched, 12 returned
+- **screened:** 1  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
-- **scholar-agent fallback query used:** not captured
+- **scholar-agent fallback query used:** True
+
+## Full-text requests
+
+_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Totsuka_2020.pdf` | Totsuka K et al., Pharmacokinetic study of lascufloxacin…, Journal of infection and ch… (2020) | popPK | 8 | [10.1016/j.jiac.2019.09.010](https://doi.org/10.1016/j.jiac.2019.09.010) | [31882385](https://pubmed.ncbi.nlm.nih.gov/31882385) | The study is a PK trial for lascufloxacin but the provided abstract only lists cumulative factors and relative changes (e.g., Cmax ratio) without specific numeric values for CL, V, t1/2, or ka. |
+| `Furuie_2018.pdf` | Furuie H et al., Intrapulmonary Pharmacokinetics of Lasc…, Antimicrobial agents and ch… (2018) | popPK | 5 | [10.1128/AAC.02169-17](https://doi.org/10.1128/AAC.02169-17) | [29339391](https://pubmed.ncbi.nlm.nih.gov/29339391) | The study reports PK descriptors (Cmax, AUC, Tmax) for lascufloxacin in humans, but lacks quantitative disposition parameters like clearance (CL) or volume (V). |
+
+<sub>queue written 2026-10-14T23:11:04.482050+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Hosoi_2026 | relevant | 7 | 2 | The study models the PK of lascufloxacin in mice (one-compartment model), but the specific numeric PK parameter values (CL, Vd, ka) are located in Supplementary Tables S1-S3, which are not provided in the evidence. |
+| popPK | Fu_2024 | irrelevant | 0 | 0 | The paper is a review of antimicrobial PK in the elderly and does not contain any data or parameters for lascufloxacin. |
+| popPK | Furuie_2018 | relevant | 5 | 2 | The study reports PK descriptors (Cmax, AUC, Tmax) for lascufloxacin in humans, but lacks quantitative disposition parameters like clearance (CL) or volume (V). |
+| popPK | Hagihara_2021 | irrelevant | 0 | 0 | The study is an in vivo pharmacodynamic efficacy assessment in mice, reporting bacterial counts rather than pharmacokinetic parameters like clearance or volume. |
+| popPK | Herbert_2022 | irrelevant | 2 | 1 | This is a review of fluoroquinolones for keratitis that discusses lascufloxacin primarily in terms of antimicrobial spectrum and medicinal properties, without providing specific quantitative population PK parameter values (CL, V, Q) in the evidence. |
+| popPK | Hirai_2025 | irrelevant | 0 | 0 | The paper is a clinical case report on the efficacy of lascufloxacin for treating Legionella pneumonia and does not report quantitative pharmacokinetic disposition parameters (CL, V, ka) for the drug. |
+| popPK | Hosoi_2026 | relevant | 8 | 4 | The study reports PK parameters (ka, Vd, CL) for lascufloxacin in mice, but the specific numeric values are in supplementary Tables S1-S3 which are not included in the evidence. |
+| popPK | Rusu_2026 | irrelevant | 0 | 0 | The paper is a review on pyrrolidine in antibacterial drug discovery and does not contain pharmacokinetic data for lascufloxacin. |
+| popPK | Totsuka_2020 | relevant | 8 | 2 | The study is a PK trial for lascufloxacin but the provided abstract only lists cumulative factors and relative changes (e.g., Cmax ratio) without specific numeric values for CL, V, t1/2, or ka. |
+| popPK | Zasheva_2024 | irrelevant | 0 | 0 | The paper is a review of patient access and marketing authorization timelines for new antibiotics in the EU/EEA and does not contain any pharmacokinetic data or parameters for lascufloxacin. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

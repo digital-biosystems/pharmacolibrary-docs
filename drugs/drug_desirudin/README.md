@@ -25,14 +25,25 @@ Desirudin is a recombinant peptide anticoagulant, a direct thrombin inhibitor, t
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-05 14:47 | 8:56 | 0/2/0 | 0/0/0 | 0/0/0 | 158,124/24,601 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 6/0 | 3/2 | 0 |
+| 2026-10-14 23:12 | 2:41 | 0/2/0 | 0/0/0 | 0/0/0 | 130,951/11,144 | einfracz / qwen3.8-27b | 5 | 6/1 | 3/2 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.909), gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-check: partial 1/2</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Nafziger_2010_moderate_renal_impairment](drugs/drug_desirudin/Desirudin_Nafziger2010_moderate_renal_impairment.md) | — | 1-compartment (no model) | 6 | Nafziger AN et al., Desirudin dosing and monitoring in mode…, Journal of clinical pharmac… (2010) | [10.1177/0091270009350626](https://doi.org/10.1177/0091270009350626) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓ 2/2</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Nafziger_2010_normal_renal_function](drugs/drug_desirudin/Desirudin_Nafziger2010_normal_renal_function.md) | — | 1-compartment (no model) | 6 | Nafziger AN et al., Desirudin dosing and monitoring in mode…, Journal of clinical pharmac… (2010) | [10.1177/0091270009350626](https://doi.org/10.1177/0091270009350626) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.4), gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-check: partial 1/2</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Nafziger_2010_moderate_renal_impairment](drugs/drug_desirudin/Desirudin_Nafziger2010_moderate_renal_impairment.md) | — | 1-compartment (no model) | 6 | Nafziger AN et al., Desirudin dosing and monitoring in mode…, Journal of clinical pharmac… (2010) | [10.1177/0091270009350626](https://doi.org/10.1177/0091270009350626) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.4), gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-check: partial 1/2</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Nafziger_2010_normal_renal_function](drugs/drug_desirudin/Desirudin_Nafziger2010_normal_renal_function.md) | — | 1-compartment (no model) | 6 | Nafziger AN et al., Desirudin dosing and monitoring in mode…, Journal of clinical pharmac… (2010) | [10.1177/0091270009350626](https://doi.org/10.1177/0091270009350626) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=desirudin).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: CPA1 (substrate).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -43,7 +54,7 @@ Desirudin is a recombinant peptide anticoagulant, a direct thrombin inhibitor, t
 ## Coverage
 
 - **PubMed hits:** 12 matched, 11 returned
-- **screened:** 2  ·  **relevant:** 2
+- **screened:** 3  ·  **relevant:** 2
 - **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** True
 
@@ -53,7 +64,7 @@ Desirudin is a recombinant peptide anticoagulant, a direct thrombin inhibitor, t
 |---|---|---|---|---|---|
 | popPK | Amin_1997 | relevant | 10 | 0 | The study investigates the pharmacokinetics of desirudin (REVASC) in humans, but the provided evidence contains only qualitative descriptions and no numeric parameter values. |
 | PD | Amin_1997 | not_relevant | 2 | 1 | The study describes qualitative changes in APTT (plateau, partial reversal) but does not report numeric PD parameters (Emax, EC50) or a quantitative concentration-effect model for desirudin. |
-| popPK | Bergese_2013 | irrelevant | 0 | 0 | The paper is a clinical safety trial reporting bleeding and thrombosis endpoints, not a pharmacokinetic study with quantitative disposition parameters. |
+| popPK | Bergese_2013 | irrelevant | 0 | 0 | The study is a clinical safety trial focused on bleeding and thrombosis endpoints, with no reporting of quantitative pharmacokinetic parameters like clearance or volume. |
 | popPK | Kaye_2019 | irrelevant | 0 | 0 | This is a clinical practice guideline review regarding bleeding risk in interventional pain procedures, not a pharmacokinetic study, and it does not report quantitative PK parameters for desirudin. |
 | PD | Kaye_2019 | not_relevant | 1 | 0 | The paper is a clinical guideline review that mentions desirudin only in the context of perioperative management and general pharmacokinetic/pharmacodynamic considerations, without providing any specific numeric PD parameters or exposure-response data. |
 | popPK | Kong_2014 | irrelevant | 2 | 1 | The paper is a review of direct thrombin inhibitors that mentions desirudin's half-life and clearance mechanism but does not report original quantitative PK parameters (CL, V, Q, ka) or a compartmental model. |
@@ -73,4 +84,4 @@ Desirudin is a recombinant peptide anticoagulant, a direct thrombin inhibitor, t
 | PD | unknown_2024 | not_relevant | 0 | 0 | The provided text is a copyright/takedown policy notice and does not contain any scientific data, pharmacodynamic models, or numeric parameters for desirudin. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-05 14:39 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-14 23:09 UTC</sub>

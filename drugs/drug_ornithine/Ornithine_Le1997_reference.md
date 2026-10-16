@@ -5,7 +5,7 @@
 
 # Ornithine — `Ornithine_Le1997_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.214), gpt-oss:120b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.538), gpt-oss:120b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -21,7 +21,7 @@
 
 A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Kwack_2026) cannot stand in for this paper's evidence. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — ornithine: kabs 0.028 min-1, t1/2z 89 min, CL 0.133 L/h, V 7.22 L.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ornithine alpha-ketoglutarate, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ornithine alpha-ketoglutarate, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -87,21 +87,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.214 (3/14 fields) | 11 |
+| `gpt-oss-120b` | not confirmed | 0.538 (7/13 fields) | 6 |
 | `gpt-oss:120b` | not confirmed | 0.444 (4/9 fields) | 5 |
 
-<details><summary>16 field discrepancies</summary>
+<details><summary>11 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.links` | [['ornithine alpha-ketoglutarate', 'ornithine', 'metabolism'], ['ornithine alpha-ketoglutarate', 'proline', 'metabolism'], ['ornithine alpha-ketoglutarate', 'glutamine', 'metabolism'], ['ornithine alpha-ketoglutarate', 'arginine', 'metabolism']] | [['okg', 'ornithine', 'metabolism'], ['okg', 'proline', 'metabolism'], ['okg', 'glutamine', 'metabolism'], ['okg', 'arginine', 'metabolism']] | mismatch |
-| `gpt-oss-120b` | `parameters[area under the curve (auc)0-7h: arginine]` | 7.3 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[area under the curve (auc)0-7h: glutamine]` | 20.4 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[area under the curve (auc)0-7h: proline]` | 41.4 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[arginine]` | not captured | 7.3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[area under the curve (auc)0-7h: glutamine].parameter_id` | Q19 | Q88 | mismatch |
 | `gpt-oss-120b` | `parameters[cl]` | 0.133 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[glutamine]` | not captured | 20.4 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[proline]` | not captured | 41.4 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[elimination half-life].parameter_id` | Q57 | Q60 | mismatch |
 | `gpt-oss-120b` | `parameters[v]` | 7.22 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `screen.dose_compound` | ornithine alpha-ketoglutarate | unknown | mismatch |
 | `gpt-oss-120b` | `screen.primary_analyte` | ornithine | unknown | mismatch |
@@ -144,7 +139,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ornithine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Le_1997` / `Le_1997::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ornithine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Le_1997` / `Le_1997::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

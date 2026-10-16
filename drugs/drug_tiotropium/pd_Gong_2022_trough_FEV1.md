@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03A&quot;,&quot;href&quot;:&quot;atc/R03A.md&quot;},{&quot;label&quot;:&quot;Tiotropium&quot;,&quot;href&quot;:&quot;drugs/drug_tiotropium/&quot;},{&quot;label&quot;:&quot;Gong_2022 \u00b7 PD change from baseline in predose (trough) FEV1&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03A&quot;,&quot;href&quot;:&quot;atc/R03A.md&quot;},{&quot;label&quot;:&quot;Tiotropium&quot;,&quot;href&quot;:&quot;drugs/drug_tiotropium/&quot;},{&quot;label&quot;:&quot;Gong_2022 \u00b7 PD change from baseline in trough FEV1&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# change from baseline in predose (trough) FEV1 — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
+# change from baseline in trough FEV1 — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by ollama:gpt-oss:120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -13,16 +13,16 @@
 
 ## Record summary
 
-**As extracted:** Olodaterol/tiotropium fixed-dose combination (the dose) drives change from baseline in predose (trough) FEV1 (in L): direct Emax (saturable) effect.
+**As extracted:** Olodaterol/tiotropium (the dose) drives change from baseline in trough FEV1 (in L) (stimulation; the model form was not identified).
 
 **Model:** No model was generated from this record.
 
-> The olodaterol/tiotropium fixed-dose combination acts on change from baseline in trough FEV1 (L) via a dose-only Emax model with an additive time-dependent loss of efficacy: Emax = 0.170 L and a loss-of-efficacy rate τ = 0.0113 week⁻¹, with trough FEV1 relative to baseline decreasing by 0.041 L from 2 days to 24 weeks. The paper does not state a concentration-based mechanism (no IC50/EC50/ke0), and placebo response was not evident.
+> The paper describes a direct Emax model where the dose of olodaterol/tiotropium stimulates the change from baseline in trough FEV1, with an estimated Emax of 0.170 L. The model includes a time-dependent loss of efficacy characterized by a rate constant τ of 0.0113 week⁻¹, indicating that the drug's effect on lung function gradually decreases over time.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
 
 - **paper:** `Gong_2022`
-- **model family:** `emax`
+- **model family:** `unknown`
 - **driver:** `dose_only`
 - **tier:** population
 - **effect:** stimulation/additive
@@ -35,8 +35,7 @@ Gong Y et al., Quantitative analysis of efficacy and s…, Therapeutic advances 
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
 | PD (effect) | Emax(Olodaterol/tiotropium) | `Q320` · not captured | 0.170 | L | not captured | llm (not captured) | Gong_2022:pdv3 |
-| PD (effect) | τ(Olodaterol/tiotropium) | `Q337` · not captured | 0.0113 | week-1 | not captured | llm (not captured) | Gong_2022:pdv3 |
-| variability | η(Emax) | `Q312` · not captured | 0.0243 | L | not captured | llm (not captured) | Gong_2022:pdv3 |
+| — | τ(Olodaterol/tiotropium) | `Q100` · not captured | 0.0113 | week-1 | not captured | nil (not captured) | Gong_2022:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -45,18 +44,18 @@ Gong Y et al., Quantitative analysis of efficacy and s…, Therapeutic advances 
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `einfracz:gpt-oss-120b` | not confirmed | 0.667 (4/6 fields) | 2 |
+| `ollama:gpt-oss:120b` | not confirmed | 0.667 (4/6 fields) | 2 |
 
 <details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `einfracz:gpt-oss-120b` | `driver_compound` | olodaterol/tiotropium fixed-dose combination | olodaterol/tiotropium | mismatch |
-| `einfracz:gpt-oss-120b` | `model_family` | emax | tolerance | mismatch |
+| `ollama:gpt-oss:120b` | `driver_compound` | olodaterol/tiotropium | tiotropium (as part of olodaterol/tiotropium FDC) | mismatch |
+| `ollama:gpt-oss:120b` | `model_family` | unknown | tolerance | mismatch |
 
 </details>
 

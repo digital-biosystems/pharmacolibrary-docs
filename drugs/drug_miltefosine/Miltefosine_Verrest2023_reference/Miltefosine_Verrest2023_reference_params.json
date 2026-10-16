@@ -1,5 +1,5 @@
 {
- "dose_source": "WHO ATC DDD 150 mg oral (P01CX04)",
+ "dose_source": "paper",
  "model_id": "Miltefosine_Verrest2023_reference",
  "molar_masses": {
   "central.C": 0.40757600000000005
@@ -7,6 +7,10 @@
  "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  1400.0
  ],
  "parameters": {
   "Cl": 2.1412037037037037e-08,
@@ -16,7 +20,7 @@
   "VdPerKg": 0.00013099999999999999,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.00015,
+  "adminMass": 0.0014,
   "k12": 2.145684397592795e-07,
   "k21": 3.0039581566299125e-07,
   "ka": 4.282407407407407e-07,
@@ -26,7 +30,7 @@
   "central.C": 2308905.8116232464
  },
  "reference_peaks": {
-  "central.C": 0.0009244832628680012
+  "central.C": 0.008628510565663647
  },
  "stop_time": 9072000.0,
  "template": "PK_2C_enteral",

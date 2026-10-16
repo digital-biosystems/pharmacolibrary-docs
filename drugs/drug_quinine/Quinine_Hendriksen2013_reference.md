@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;quinine&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/&quot;},{&quot;label&quot;:&quot;Hendriksen_2013 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Quinine_Hendriksen2013_reference&quot;,&quot;label&quot;:&quot;Hendriksen_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Hendriksen2013_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Quinine_Kloprogge2014_reference&quot;,&quot;label&quot;:&quot;Kloprogge_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Kloprogge2014_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quinine_Phillips1986_reference&quot;,&quot;label&quot;:&quot;Phillips_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Phillips1986_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Quinine_Hendriksen2013_reference&quot;,&quot;label&quot;:&quot;Hendriksen_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Hendriksen2013_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Quinine_Phillips1986_mean_s_d&quot;,&quot;label&quot;:&quot;Phillips_1986_mean_s_d&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Phillips1986_mean_s_d.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quinine_Kloprogge2014_reference&quot;,&quot;label&quot;:&quot;Kloprogge_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Kloprogge2014_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quinine_Michels2019_estimate&quot;,&quot;label&quot;:&quot;Michels_2019_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Michels2019_estimate.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Maciel_2024_P_berghei_infected_erythrocytes&quot;,&quot;label&quot;:&quot;Maciel_2024 \u00b7 P. berghei-infected erythrocytes&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/pd_Maciel_2024_P_berghei_infected_erythrocytes.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Pukrittayakamee_2003_PMR&quot;,&quot;label&quot;:&quot;Pukrittayakamee_2003 \u00b7 PMR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/pd_Pukrittayakamee_2003_PMR.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -25,24 +25,25 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> **Dose compound ≠ measured compound:** dosed `quinine dihydrochloride`, measured `quinine`.
+
 ## Citation
 Hendriksen IC et al., Population pharmacokinetic and pharmaco…, Antimicrobial agents and ch… (2013)
   ·  DOI: [10.1128/AAC.01349-12](https://doi.org/10.1128/AAC.01349-12)
 
-<div class="pk-model-meta" hidden drug="quinine" model-id="Quinine_Hendriksen2013_reference" status="curated_candidate" stale="false" population="Tanzanian children with severe falciparum malaria" measured-compound="quinine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="quinine" model-id="Quinine_Hendriksen2013_reference" status="curated_candidate" stale="false" population="Tanzanian children with severe Falciparum malaria" measured-compound="quinine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
-**Parameters:** 4 extracted.
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| elimination clearance | `Q22` · CL | 0.977 | liters/h | 2.713888888888889e-07 | [l] / [h] | not captured | llm_confirmed (0.6) | Hendriksen_2013:abstract | — | not captured |
-| central volume of distribution | `Q61` · V | 16.7 | liters | 0.0167 | [l] | not captured | boundary_compartment (0.9) | Hendriksen_2013:abstract | — | not captured |
-| duration of zero-order absorption | `Q310` · D1 | 1.42 | h | 5112.0 | [h] | not captured | exact (1.0) | Hendriksen_2013:abstract | — | not captured |
-| less exposure over 24 h | `Q84` · AUC%ext | 18 | % | not captured | [%] | not captured | llm_corrected (0.6) | Hendriksen_2013:abstract | — | not captured |
+| elimination clearance | `Q22` · CL | 0.977 | liters/h | 2.713888888888889e-07 | [l] / [h] | not captured | llm_confirmed (0.6) | Hendriksen_2013:abstract, Hendriksen_2013:abstract | — | not captured |
+| central volume of distribution | `Q61` · V | 16.7 | liters | 0.0167 | [l] | not captured | boundary_compartment (0.9) | Hendriksen_2013:abstract, Hendriksen_2013:abstract | — | not captured |
+| duration of zero-order absorption | `Q310` · D1 | 1.42 | h | 5112.0 | [h] | not captured | exact (1.0) | Hendriksen_2013:abstract, Hendriksen_2013:abstract | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -52,9 +53,6 @@ Hendriksen IC et al., Population pharmacokinetic and pharmaco…, Antimicrobial 
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'typical patient weighing' — extend the ontology if this is a real PK parameter (source ['Hendriksen_2013:abstract'])
-- dropped unlinked row (NIL): 'patients weighing' — extend the ontology if this is a real PK parameter (source ['Hendriksen_2013:abstract'])
-- dropped unlinked row (NIL): 'those weighing' — extend the ontology if this is a real PK parameter (source ['Hendriksen_2013:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=quinine
 - 1C volume normalization: Q63→Q61 (single-compartment model has no central/peripheral split; 'central volume of distribution' is the general volume)
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
@@ -62,7 +60,7 @@ Hendriksen IC et al., Population pharmacokinetic and pharmaco…, Antimicrobial 
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Hendriksen_2013_metadata.yaml (7 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Hendriksen_2013_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -91,17 +89,16 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Hendriksen_2013:abstract'] |
-| C5_dimension_Q310 | pass | [time] | not captured | not captured | not captured | ['Hendriksen_2013:abstract'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Hendriksen_2013:abstract'] |
-| C5_dimension_Q84 | pass | dimensionless | not captured | not captured | not captured | ['Hendriksen_2013:abstract'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.977 | not captured | not captured | ['Hendriksen_2013:abstract'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Hendriksen_2013:abstract', 'Hendriksen_2013:abstract'] |
+| C5_dimension_Q310 | pass | [time] | not captured | not captured | not captured | ['Hendriksen_2013:abstract', 'Hendriksen_2013:abstract'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Hendriksen_2013:abstract', 'Hendriksen_2013:abstract'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.977 | not captured | not captured | ['Hendriksen_2013:abstract', 'Hendriksen_2013:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.977 L/h | not captured | not captured | ['Hendriksen_2013:abstract'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 16.7 L | not captured | not captured | ['Hendriksen_2013:abstract'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.977 L/h | not captured | not captured | ['Hendriksen_2013:abstract', 'Hendriksen_2013:abstract'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 16.7 L | not captured | not captured | ['Hendriksen_2013:abstract', 'Hendriksen_2013:abstract'] |
 
 **Reviewer per-scenario checks:**
 
@@ -121,10 +118,10 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_quinine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Hendriksen_2013` / `Hendriksen_2013::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_quinine/models/modelica/Quinine_Hendriksen2013_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_quinine/models/modelica/Quinine_Hendriksen2013_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_quinine/models/modelica/Quinine_Hendriksen2013_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_quinine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Hendriksen_2013` / `Hendriksen_2013::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_quinine/models/modelica/Quinine_Hendriksen2013_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_quinine/models/modelica/Quinine_Hendriksen2013_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_quinine/models/modelica/Quinine_Hendriksen2013_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -133,7 +130,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_quinine/Quinine_Hendriksen2013_reference/Quinine_Hendriksen2013_reference_modelica.zip" download>Quinine_Hendriksen2013_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_quinine/Quinine_Hendriksen2013_reference/Quinine_Hendriksen2013_reference_modelica.zip" download>Quinine_Hendriksen2013_reference_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_quinine/Quinine_Hendriksen2013_reference/Quinine_Hendriksen2013_reference_fmi.zip" download>Quinine_Hendriksen2013_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_quinine/Quinine_Hendriksen2013_reference/Quinine_Hendriksen2013_reference_matlab.zip" download>Quinine_Hendriksen2013_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_quinine/Quinine_Hendriksen2013_reference/Quinine_Hendriksen2013_reference_matlab_simbio.zip" download>Quinine_Hendriksen2013_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
@@ -142,7 +139,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_quinine/Quinine_Hendriksen2013_reference/Quinine_Hendriksen2013_reference.svg" alt="Quinine_Hendriksen2013_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_quinine/Quinine_Hendriksen2013_reference/Quinine_Hendriksen2013_reference.svg" alt="Quinine_Hendriksen2013_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -155,4 +152,4 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 08:37 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 03:33 UTC</sub>

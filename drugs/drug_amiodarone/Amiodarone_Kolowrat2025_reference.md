@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;amiodarone&quot;,&quot;href&quot;:&quot;drugs/drug_amiodarone/&quot;},{&quot;label&quot;:&quot;Kolowrat_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amiodarone_Gaete1995_reference&quot;,&quot;label&quot;:&quot;Gaete_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amiodarone/Amiodarone_Gaete1995_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amiodarone_Hirai2022_reference&quot;,&quot;label&quot;:&quot;Hirai_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amiodarone/Amiodarone_Hirai2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amiodarone_Kolowrat2025_reference&quot;,&quot;label&quot;:&quot;Kolowrat_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amiodarone/Amiodarone_Kolowrat2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Amiodarone_Lesko1989_reference&quot;,&quot;label&quot;:&quot;Lesko_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amiodarone/Amiodarone_Lesko1989_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amiodarone_Morath2025_reference&quot;,&quot;label&quot;:&quot;Morath_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amiodarone/Amiodarone_Morath2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amiodarone_Pollak2000_amiodarone_typical_value&quot;,&quot;label&quot;:&quot;Pollak_2000_amiodarone_typical_value&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amiodarone/Amiodarone_Pollak2000_amiodarone_typical_value.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amiodarone_Pollak2000_desethylamiodarone_typical_value&quot;,&quot;label&quot;:&quot;Pollak_2000_desethylamiodarone_typical_value&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amiodarone/Amiodarone_Pollak2000_desethylamiodarone_typical_value.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Sermsappasuk_2006_LVDP&quot;,&quot;label&quot;:&quot;Sermsappasuk_2006 \u00b7 LVDP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_amiodarone/pd_Sermsappasuk_2006_LVDP.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amiodarone_Gaete1995_reference&quot;,&quot;label&quot;:&quot;Gaete_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amiodarone/Amiodarone_Gaete1995_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amiodarone_Kolowrat2025_reference&quot;,&quot;label&quot;:&quot;Kolowrat_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amiodarone/Amiodarone_Kolowrat2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Amiodarone_Lesko1989_reference&quot;,&quot;label&quot;:&quot;Lesko_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amiodarone/Amiodarone_Lesko1989_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amiodarone_Morath2025_reference&quot;,&quot;label&quot;:&quot;Morath_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amiodarone/Amiodarone_Morath2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amiodarone_Hirai2022_reference&quot;,&quot;label&quot;:&quot;Hirai_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amiodarone/Amiodarone_Hirai2022_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amiodarone_Pollak2000_amiodarone_typical_value&quot;,&quot;label&quot;:&quot;Pollak_2000_amiodarone_typical_value&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amiodarone/Amiodarone_Pollak2000_amiodarone_typical_value.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amiodarone_Pollak2000_desethylamiodarone_typical_value&quot;,&quot;label&quot;:&quot;Pollak_2000_desethylamiodarone_typical_value&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amiodarone/Amiodarone_Pollak2000_desethylamiodarone_typical_value.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Sermsappasuk_2006_LVDP&quot;,&quot;label&quot;:&quot;Sermsappasuk_2006 \u00b7 LVDP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_amiodarone/pd_Sermsappasuk_2006_LVDP.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # amiodarone — `Amiodarone_Kolowrat2025_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.0), gpt-oss:120b (partly confirmed, agreement 0.167). Primary extraction retained.">cross-check: partial 0/2</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.0), gpt-oss-120b (partly confirmed, agreement 0.0). Primary extraction retained.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -17,21 +17,17 @@
 
 ### Reviewer guidance
 
-**The amiodarone record was held back because the model builder assumed F=1, Fm=1 and no molar correction, so the reported CL/F (1.32 L/h), V/F (43.45 L) and Ka (0.82 h−1) are apparent values, and Tlag was left at a default instead of an explicit estimate.**
+**Every check that could be run on this record passed.**
 
-The apparent-parameter assumption (F=1, Fm=1, no molar correction) was judged not acceptable, so the bioavailability-adjusted clearance and volume for amiodarone cannot be taken as absolute values. In addition, the absorption lag time Tlag was defaulted rather than estimated. A second reader also disagreed on several extracted values, reading 1.58, 1.5, 1.48 and 1.68 where this record has none, and leaving 1.32, 23, 0.82 and 43.45 unmatched; these disagreements are recorded but unresolved. Extracted — amiodarone: CL/F 1.32 L/h, V/F 43.5 L, kabs 0.82 h−1.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q21: this record has none, the second reading 1.58; it also differs on 7 more fields. That field does not shape the model.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q19: this record has none, the second reading 1.58; it also differs on 6 more fields. That field does not shape the model.
-
-<sub>reviewed by glm-5.3-flash</sub>
-
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:23:35.339092+00:00) predates the upstream re-run (2026-10-06 02:02:43.389116+00:00). Current validate status: `extracted`.
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Kolowrat S et al., Real-World Impact of Amiodarone on Apix…, Clinical and translational… (2025)
   ·  DOI: [10.1111/cts.70392](https://doi.org/10.1111/cts.70392)
 
-<div class="pk-model-meta" hidden drug="amiodarone" model-id="Amiodarone_Kolowrat2025_reference" status="extracted" stale="true" population="" measured-compound="amiodarone" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="amiodarone" model-id="Amiodarone_Kolowrat2025_reference" status="curated_candidate" stale="false" population="" measured-compound="amiodarone" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.
@@ -67,10 +63,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss:120b` | partly confirmed | 0.0 (0/8 fields) | 8 |
 | `gpt-oss-120b` | partly confirmed | 0.0 (0/7 fields) | 7 |
-| `gpt-oss:120b` | partly confirmed | 0.167 (1/6 fields) | 5 |
 
-<details><summary>12 field discrepancies</summary>
+<details><summary>15 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -84,8 +80,11 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | `gpt-oss:120b` | `values[Q21]` | not captured | 1.58 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q27]` | 1.32 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q317]` | 23 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `values[Q31]` | not captured | 33 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q33]` | not captured | 1.48 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q36]` | not captured | 1.68 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q49]` | 0.82 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q76]` | 43.45 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q88]` | not captured | 104 | only_one_extracted |
 
 </details>
 
@@ -120,7 +119,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_output_variable | not captured | pass | C_central (measured=amiodarone) | C_central | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | apparent_assumption: not acceptable | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -129,10 +128,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_amiodarone/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kolowrat_2025` / `Kolowrat_2025::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_amiodarone/models/modelica/Amiodarone_Kolowrat2025_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_amiodarone/models/modelica/Amiodarone_Kolowrat2025_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_amiodarone/models/modelica/Amiodarone_Kolowrat2025_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_amiodarone/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kolowrat_2025` / `Kolowrat_2025::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_amiodarone/models/modelica/Amiodarone_Kolowrat2025_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_amiodarone/models/modelica/Amiodarone_Kolowrat2025_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_amiodarone/models/modelica/Amiodarone_Kolowrat2025_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -150,7 +149,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_amiodarone/Amiodarone_Kolowrat2025_reference/Amiodarone_Kolowrat2025_reference.svg" alt="Amiodarone_Kolowrat2025_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_amiodarone/Amiodarone_Kolowrat2025_reference/Amiodarone_Kolowrat2025_reference.svg" alt="Amiodarone_Kolowrat2025_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -163,4 +162,4 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 02:02 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 18:11 UTC</sub>

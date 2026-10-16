@@ -125,7 +125,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_levothyroxine_sodium/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Inada_1975` / `Inada_1975::t4_kinetic_data_three_compartment_analysis_v_liter`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_levothyroxine_sodium/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Inada_1975` / `Inada_1975::t4_kinetic_data_three_compartment_analysis_v_liter`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

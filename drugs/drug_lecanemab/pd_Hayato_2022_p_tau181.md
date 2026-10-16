@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06D&quot;,&quot;href&quot;:&quot;atc/N06D.md&quot;},{&quot;label&quot;:&quot;lecanemab&quot;,&quot;href&quot;:&quot;drugs/drug_lecanemab/&quot;},{&quot;label&quot;:&quot;Hayato_2022 \u00b7 PD plasma p\u2010tau181&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06D&quot;,&quot;href&quot;:&quot;atc/N06D.md&quot;},{&quot;label&quot;:&quot;lecanemab&quot;,&quot;href&quot;:&quot;drugs/drug_lecanemab/&quot;},{&quot;label&quot;:&quot;Hayato_2022 \u00b7 PD Plasma p-tau181&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# plasma p‐tau181 — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.875). Primary extraction retained.">cross-check: disputed</span>
+# Plasma p-tau181 — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.857). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -13,16 +13,16 @@
 
 ## Record summary
 
-**As extracted:** Lecanemab (concentrations from this paper's PK model) drives plasma p‐tau181: indirect response — drug inhibits the production of plasma p‐tau181.
+**As extracted:** Lecanemab (concentrations from this paper's PK model) drives Plasma p-tau181: indirect response — drug stimulates the production of Plasma p-tau181.
 
 **Model:** No model was generated from this record.
 
-> Lecanemab plasma concentration (µg/ml) drives plasma p-tau181 via an indirect response model in which exposure linearly inhibits p-tau181 formation (proportional inhibition), with baseline p-tau181 of 4.06, Kout 0.468 1/year, and slope 0.00313 1/(µg/ml); the paper gives no Imax, IC50, or ke0 for this endpoint.
+> Plasma lecanemab concentrations inhibit the elimination of plasma p-tau181 through a proportional indirect response model (Type III). The model estimates a removal rate constant (Kout) of 0.468 1/year and an exposure effect slope of 0.00313 1/μg/ml, with a baseline value of 4.06.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Hayato_2022`
-- **model family:** `indirect_response_i`
+- **model family:** `indirect_response_iii`
 - **driver:** `pk_record`
 - **tier:** population
 - **effect:** inhibition/proportional
@@ -37,9 +37,6 @@ Hayato S et al., Population pharmacokinetic-pharmacodyna…, CPT: pharmacometric
 | PD (effect) | Baseline plasma p‐tau181 | `Q324` · not captured | 4.06 | not captured | not captured | llm (not captured) | Hayato_2022:pdv3 |
 | PD (effect) | K out | `Q328` · not captured | 0.468 | 1/year | not captured | llm (not captured) | Hayato_2022:pdv3 |
 | PD (effect) | Slope | `Q335` · not captured | 0.00313 | 1/μg/ml | not captured | llm (not captured) | Hayato_2022:pdv3 |
-| model term | Weight ~ baseline (exponent) | `Q900` · not captured | −0.300 | not captured | not captured | llm (not captured) | Hayato_2022:pdv3 |
-| variability | Baseline IIV | `Q312` · not captured | 35.1 | CV% | not captured | llm (not captured) | Hayato_2022:pdv3 |
-| variability | Slope IIV (SD) | `Q312` · not captured | 0.00151 | SD | not captured | llm (not captured) | Hayato_2022:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -48,17 +45,17 @@ Hayato S et al., Population pharmacokinetic-pharmacodyna…, CPT: pharmacometric
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `einfracz:gpt-oss-120b` | not confirmed | 0.875 (7/8 fields) | 1 |
+| `einfracz:gpt-oss-120b` | not confirmed | 0.857 (6/7 fields) | 1 |
 
 <details><summary>1 field discrepancy</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `einfracz:gpt-oss-120b` | `parameters[Q900]` | −0.300 | not captured | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `model_family` | indirect_response_iii | indirect_response_i | mismatch |
 
 </details>
 

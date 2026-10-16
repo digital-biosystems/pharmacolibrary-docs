@@ -5,7 +5,7 @@
 
 # tetracycline — `Tetracycline_Singh2026_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.833), gpt-oss:120b (not confirmed, agreement 0.562). Primary extraction retained.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.533), gpt-oss:120b (not confirmed, agreement 0.562). Primary extraction retained.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -21,7 +21,7 @@
 
 **Every check that could be run on this record passed.**
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q21: this record has none, the second reading 145.47; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q21: this record has none, the second reading 145.47; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -66,15 +66,20 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.833 (10/12 fields) | 2 |
+| `gpt-oss-120b` | not confirmed | 0.533 (8/15 fields) | 7 |
 | `gpt-oss:120b` | not confirmed | 0.562 (9/16 fields) | 7 |
 
-<details><summary>9 field discrepancies</summary>
+<details><summary>14 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.topology_template` | 2C | 1C | mismatch |
 | `gpt-oss-120b` | `values[Q21]` | not captured | 145.47 | only_one_extracted |
-| `gpt-oss-120b` | `values[Q325]` | 0.87 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q30]` | 0.12 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q310]` | not captured | 60 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q325]` | 0.87 | 0.87 | mismatch |
+| `gpt-oss-120b` | `values[Q362]` | not captured | 12 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q38]` | not captured | 5.31 | only_one_extracted |
 | `gpt-oss:120b` | `model.topology_template` | 2C | 1C | mismatch |
 | `gpt-oss:120b` | `values[Q21]` | not captured | 145.47 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q30]` | 0.12 | not captured | only_one_extracted |
@@ -124,10 +129,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_tetracycline/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Singh_2026` / `Singh_2026::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_tetracycline/models/modelica/Tetracycline_Singh2026_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_tetracycline/models/modelica/Tetracycline_Singh2026_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_tetracycline/models/modelica/Tetracycline_Singh2026_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_tetracycline/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Singh_2026` / `Singh_2026::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_tetracycline/models/modelica/Tetracycline_Singh2026_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_tetracycline/models/modelica/Tetracycline_Singh2026_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_tetracycline/models/modelica/Tetracycline_Singh2026_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -145,7 +150,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_tetracycline/Tetracycline_Singh2026_reference/Tetracycline_Singh2026_reference.svg" alt="Tetracycline_Singh2026_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_tetracycline/Tetracycline_Singh2026_reference/Tetracycline_Singh2026_reference.svg" alt="Tetracycline_Singh2026_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

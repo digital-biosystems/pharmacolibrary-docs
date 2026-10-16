@@ -131,7 +131,7 @@ Bressolle F et al., Population pharmacokinetics of nalbuphi…, British journal 
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_nalbuphine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Bressolle_2011` / `Bressolle_2011::mean`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_nalbuphine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Bressolle_2011` / `Bressolle_2011::mean`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

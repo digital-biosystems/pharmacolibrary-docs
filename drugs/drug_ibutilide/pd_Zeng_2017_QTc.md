@@ -1,7 +1,8 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;ibutilide&quot;,&quot;href&quot;:&quot;drugs/drug_ibutilide/&quot;},{&quot;label&quot;:&quot;Zeng_2017 \u00b7 PD QT interval&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ibutilide_Li2007_reference&quot;,&quot;label&quot;:&quot;Li_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibutilide/Ibutilide_Li2007_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Zeng_2017_QTc&quot;,&quot;label&quot;:&quot;Zeng_2017 \u00b7 QTc&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ibutilide/pd_Zeng_2017_QTc.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Tisdale_2012_QTF&quot;,&quot;label&quot;:&quot;Tisdale_2012 \u00b7 QTF&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ibutilide/pd_Tisdale_2012_QTF.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# QT interval — PD  <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed</span>
+# QT interval — PD  <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by ollama:gpt-oss:120b (not confirmed, agreement 0.444), einfracz:gpt-oss-120b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -15,7 +16,7 @@
 
 **As extracted:** Ibutilide (concentrations from this paper's PK model) drives QT interval (in s): direct sigmoid Emax (Hill) effect.
 
-**Model:** No model was generated from this record.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 > Ibutilide plasma concentrations (pg/mL) prolong the QT interval (s) via a sigmoid Emax model with an effect compartment, where the drug stimulates the response additively. The model parameters are Emax = 0.492 s, EC50 = 644 pg/mL, ke0 = 3.94 h⁻¹, and gamma = 6.87.
 >
@@ -39,6 +40,8 @@ Zeng Z et al., Population Pharmacokinetic/Pharmacodyna…, Clinical therapeutics
 | PD (effect) | Ke0 | `Q326` · not captured | 3.94 | h À1 | not captured | llm (not captured) | Zeng_2017:pdv3 |
 | PD (effect) | γ | `Q325` · not captured | 6.87 | not captured | not captured | llm (not captured) | Zeng_2017:pdv3 |
 | PD (effect) | QT cb | `Q324` · not captured | 0.408 | s | not captured | llm (not captured) | Zeng_2017:pdv3 |
+| variability | ωE max | `Q312` · not captured | 39.1 | %CV | not captured | llm (not captured) | Zeng_2017:pdv3 |
+| variability | ωKe0 | `Q312` · not captured | 37.5 | %CV | not captured | llm (not captured) | Zeng_2017:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -46,14 +49,42 @@ Zeng Z et al., Population Pharmacokinetic/Pharmacodyna…, Clinical therapeutics
 </details>
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+## Exposure-response model
+
+`Ibutilide_Zeng2017_PD_qtc` — sigmoid_emax, `response = E0 + Emax*frac`
+
+| parameter | value (paper units) | SI |
+|---|---|---|
+| E0 | 0.408 s | 0.408 s |
+| Emax | 0.492 s | 0.492 s |
+| EC50 | 644 pg/mL | 6.44e-07 kg/m3 |
+| gamma | 6.87 | — |
+
+Closed-form check points (response, SI): `at_0` = 0.408, `at_EC50` = 0.654, `at_inf` = 0.9
+
+## Review
+
+Verdict <span class="pk-badge pk-badge--green">reviewed — candidate</span>
+
+| check | status | note |
+|---|---|---|
+| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
+| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
+| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
+| `T2_direction` | pass | the response rises, as direct effect predicts |
+| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
+| `T4_defaults` | pass | nothing defaulted |
+
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `ollama:gpt-oss:120b` | not confirmed | 0.444 (4/9 fields) | 5 |
 | `einfracz:gpt-oss-120b` | not confirmed | 0.444 (4/9 fields) | 5 |
 
-<details><summary>5 field discrepancies</summary>
+<details><summary>10 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -62,6 +93,11 @@ Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-
 | `einfracz:gpt-oss-120b` | `parameters[Q324].value` | 0.408 | unit": "s", | mismatch |
 | `einfracz:gpt-oss-120b` | `parameters[Q325].value` | 6.87 | unit": "" , | mismatch |
 | `einfracz:gpt-oss-120b` | `parameters[Q326].value` | 3.94 | unit": "h⁻¹", | mismatch |
+| `ollama:gpt-oss:120b` | `parameters[Q320].value` | 0.492 | .241 | mismatch |
+| `ollama:gpt-oss:120b` | `parameters[Q321].value` | 644 | 919 | mismatch |
+| `ollama:gpt-oss:120b` | `parameters[Q324].value` | 0.408 | 0.397 | mismatch |
+| `ollama:gpt-oss:120b` | `parameters[Q325].value` | 6.87 | 1.01 | mismatch |
+| `ollama:gpt-oss:120b` | `parameters[Q326].value` | 3.94 | 1.81 | mismatch |
 
 </details>
 
@@ -77,19 +113,22 @@ Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ibutilide/Ibutilide_Zeng2017_PD_qtc/Ibutilide_Zeng2017_PD_qtc_modelica.zip" download>Ibutilide_Zeng2017_PD_qtc_modelica.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_ibutilide/Ibutilide_Zeng2017_PD_qtc/Ibutilide_Zeng2017_PD_qtc_matlab.zip" download>Ibutilide_Zeng2017_PD_qtc_matlab.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_ibutilide/Ibutilide_Zeng2017_PD_qtc/Ibutilide_Zeng2017_PD_qtc_sbml.zip" download>Ibutilide_Zeng2017_PD_qtc_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_ibutilide/Ibutilide_Zeng2017_PD_qtc/Ibutilide_Zeng2017_PD_qtc_cellml.zip" download>Ibutilide_Zeng2017_PD_qtc_cellml.zip</a> <span class="pk-size">(2.3 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PD_SigmoidEmaxSweep.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+<dbs-fmusim paramsurl="drugs/drug_ibutilide/Ibutilide_Zeng2017_PD_qtc/Ibutilide_Zeng2017_PD_qtc_params.json" metaurl="assets/fmu/PD_SigmoidEmaxSweep.vr.json" wasmurl="assets/fmu/PD_SigmoidEmaxSweep.js" controlsurl="drugs/drug_ibutilide/Ibutilide_Zeng2017_PD_qtc/Ibutilide_Zeng2017_PD_qtc_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PD_SigmoidEmaxSweep` · parameters `Ibutilide_Zeng2017_PD_qtc_params.json` · controls `Ibutilide_Zeng2017_PD_qtc_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 

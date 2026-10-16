@@ -1,28 +1,26 @@
 {
- "dose_source": "library default",
+ "dose_source": "WHO ATC DDD 0.54 mg parenteral (L04AC05)",
  "model_id": "Ustekinumab_Adedokun2022_reference",
- "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
  ],
  "parameters": {
   "Cl": 2.222222222222222e-09,
-  "F": 78.3,
-  "Tlag": 0.0,
+  "F": 1.0,
   "VdPerKg": 6.6e-05,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
-  "ka": 1.0509259259259259e-05,
+  "adminMass": 5.4e-07,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 307914.183656384
+  "central.C": 660.0000000662116
  },
  "reference_peaks": {
-  "central.C": 1.4617591397403684
+  "central.C": 0.0001168662511090951
  },
- "stop_time": 9072000.0,
- "template": "PK_1C_enteral",
- "template_fmu": "PK_1C_enteral.fmu"
+ "stop_time": 8467200.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
 }

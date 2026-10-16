@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;sotalol&quot;,&quot;href&quot;:&quot;drugs/drug_sotalol/&quot;},{&quot;label&quot;:&quot;Dubois_2016 \u00b7 PD hERG channel inhibition&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sotalol_Yellepeddi2025_reference&quot;,&quot;label&quot;:&quot;Yellepeddi_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sotalol/Sotalol_Yellepeddi2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sotalol_Yellepeddi2025_reference&quot;,&quot;label&quot;:&quot;Yellepeddi_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sotalol/Sotalol_Yellepeddi2025_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Dubois_2016_Displacement&quot;,&quot;label&quot;:&quot;Dubois_2016 \u00b7 Displacement&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_sotalol/pd_Dubois_2016_Displacement.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # hERG channel inhibition — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
@@ -16,19 +16,19 @@
 
 ## Record summary
 
-**As extracted:** Sotalol (concentrations from the PK model of Gotta_2015) drives hERG channel inhibition (in %): direct sigmoid Emax (Hill) effect.
+**As extracted:** Sotalol (concentrations from the PK model of Gotta_2015::dofetilide_estimate_rse) drives hERG channel inhibition (in %): direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
 
-> Sotalol concentration (nM) directly inhibits hERG channel function via a sigmoid Emax model, with a baseline inhibition (I0) of 6.43%, a maximum inhibition (Imax) of 95.7%, an IC50 of 103,000 nM, and a Hill coefficient (γ) of 0.887. The paper describes this as a direct concentration-dependent inhibitory effect on the channel current measured by whole-cell patch-clamp, without specifying an effect compartment or indirect mechanism.
+> The sigmoid Emax model describes the direct inhibitory effect of sotalol concentrations on hERG channel inhibition, utilizing shared baseline (I0) and maximum effect (Imax) estimates across compounds. For sotalol specifically, the paper reports an IC50 of 103 μM, while the record lists a value of 103 000 nM.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Dubois_2016`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`
 - **tier:** population
-- **effect:** inhibition/proportional
+- **effect:** inhibition/unknown
 
 ## Citation
 Dubois VF et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of pharmaco… (2016)
@@ -37,10 +37,10 @@ Dubois VF et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | I 0 | `Q324` · not captured | 6.43 | % | not captured | llm (not captured) | Dubois_2016:pdv3 |
-| PD (effect) | I max | `Q323` · not captured | 95.7 | % | not captured | llm (not captured) | Dubois_2016:pdv3 |
-| PD (effect) | IC 50 | `Q322` · not captured | 103 000 | nM | not captured | llm (not captured) | Dubois_2016:pdv3 |
-| PD (effect) | γ | `Q325` · not captured | 0.887 | not captured | not captured | llm (not captured) | Dubois_2016:pdv3 |
+| PD (effect) | I0 | `Q324` · not captured | 6.43 | % | not captured | llm (not captured) | Dubois_2016:pdv3 |
+| PD (effect) | Imax | `Q323` · not captured | 95.7 | % | not captured | llm (not captured) | Dubois_2016:pdv3 |
+| PD (effect) | IC50 | `Q322` · not captured | 103 000 | nM | not captured | llm (not captured) | Dubois_2016:pdv3 |
+| PD (effect) | gamma | `Q325` · not captured | 0.887 | not captured | not captured | llm (not captured) | Dubois_2016:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>

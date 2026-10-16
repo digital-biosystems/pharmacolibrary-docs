@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;epcoritamab&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Epcoritamab_Li2025_reference&quot;,&quot;label&quot;:&quot;Li_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_epcoritamab/Epcoritamab_Li2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Epcoritamab_Li2025_reference&quot;,&quot;label&quot;:&quot;Li_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_epcoritamab/Epcoritamab_Li2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Li_2022_ORR&quot;,&quot;label&quot;:&quot;Li_2022 \u00b7 ORR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_epcoritamab/pd_Li_2022_ORR.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # epcoritamab
 
@@ -18,25 +18,28 @@ Epcoritamab, a monoclonal antibody anticancer drug, is used to treat diffuse lar
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 12:40 | 1:41 | 0/0/1 | 1/0/0 | 0/0/0 | 29,553/6,480 | openai / gpt-6-luna | 1 | 0/1 | 1/0 | 0 |
+| 2026-10-14 19:30 | 0:49 | 1/0/0 | 0/0/1 | 0/0/0 | 28,726/1,773 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Li_2025_reference](drugs/drug_epcoritamab/Epcoritamab_Li2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Li T et al., Population Pharmacokinetics of Epcorita…, Clinical pharmacokinetics (2025) | [10.1007/s40262-024-01464-2](https://doi.org/10.1007/s40262-024-01464-2) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> | [Li_2025_reference](drugs/drug_epcoritamab/Epcoritamab_Li2025_reference.md) | ▶ model + simulator | 1-compartment, IV | 4 | Li T et al., Population Pharmacokinetics of Epcorita…, Clinical pharmacokinetics (2025) | [10.1007/s40262-024-01464-2](https://doi.org/10.1007/s40262-024-01464-2) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span> | [Li_2022_B_cell](drugs/drug_epcoritamab/pd_Li_2022_B_cell.md) | blood B-cell count ← epcoritamab · model not identified | — | Li T et al., Semimechanistic Physiologically-Based P…, Clinical pharmacology and t… (2022) | [10.1002/cpt.2729](https://doi.org/10.1002/cpt.2729) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span> | [Li_2022_ORR](drugs/drug_epcoritamab/pd_Li_2022_ORR.md) | response rate ← epcoritamab · direct Emax (saturable) effect | — | Li T et al., Semimechanistic Physiologically-Based P…, Clinical pharmacology and t… (2022) | [10.1002/cpt.2729](https://doi.org/10.1002/cpt.2729) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span> | [Li_2022_T_cell](drugs/drug_epcoritamab/pd_Li_2022_T_cell.md) | blood T-cell count ← epcoritamab · model not identified | — | Li T et al., Semimechanistic Physiologically-Based P…, Clinical pharmacology and t… (2022) | [10.1002/cpt.2729](https://doi.org/10.1002/cpt.2729) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span> | [Li_2022_trimer_formation](drugs/drug_epcoritamab/pd_Li_2022_trimer_formation.md) | trimer formation ← epcoritamab · model not identified | — | Li T et al., Semimechanistic Physiologically-Based P…, Clinical pharmacology and t… (2022) | [10.1002/cpt.2729](https://doi.org/10.1002/cpt.2729) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span> | [Li_2022_tumor_size](drugs/drug_epcoritamab/pd_Li_2022_tumor_size.md) | tumor size ← epcoritamab · disease-progression model | — | Li T et al., Semimechanistic Physiologically-Based P…, Clinical pharmacology and t… (2022) | [10.1002/cpt.2729](https://doi.org/10.1002/cpt.2729) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span> | [Li_2022_CRS](drugs/drug_epcoritamab/pd_Li_2022_CRS.md) | CRS (any grade) ← epcoritamab · categorical (graded) response model | — | Li T et al., Semimechanistic Physiologically-Based P…, Clinical pharmacology and t… (2022) | [10.1002/cpt.2729](https://doi.org/10.1002/cpt.2729) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span> | [Li_2022_CRS_2](drugs/drug_epcoritamab/pd_Li_2022_CRS_2.md) | grade 2 CRS ← epcoritamab · categorical (graded) response model | — | Li T et al., Semimechanistic Physiologically-Based P…, Clinical pharmacology and t… (2022) | [10.1002/cpt.2729](https://doi.org/10.1002/cpt.2729) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span> | [Li_2022_ORR](drugs/drug_epcoritamab/pd_Li_2022_ORR.md) | response rate ← epcoritamab · direct Emax (saturable) effect | ▶ model + simulator | Li T et al., Semimechanistic Physiologically-Based P…, Clinical pharmacology and t… (2022) | [10.1002/cpt.2729](https://doi.org/10.1002/cpt.2729) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=epcoritamab).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: CD3E (antibody), CD3E (binder), MS4A1 (antibody), MS4A1 (binder).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,7 +51,7 @@ Epcoritamab, a monoclonal antibody anticancer drug, is used to treat diffuse lar
 
 - **PubMed hits:** 2 matched, 2 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -57,15 +60,15 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Li_2025.pdf` | Li T et al., Population Pharmacokinetics of Epcorita…, Clinical pharmacokinetics (2025) | popPK | 10 | [10.1007/s40262-024-01464-2](https://doi.org/10.1007/s40262-024-01464-2) | [39708278](https://pubmed.ncbi.nlm.nih.gov/39708278) | Human population-PK model reports numeric epcoritamab disposition parameters in the evidence. |
+| `Li_2025.pdf` | Li T et al., Population Pharmacokinetics of Epcorita…, Clinical pharmacokinetics (2025) | popPK | 10 | [10.1007/s40262-024-01464-2](https://doi.org/10.1007/s40262-024-01464-2) | [39708278](https://pubmed.ncbi.nlm.nih.gov/39708278) | The paper reports a population PK model for epcoritamab with quantitative estimates for clearance, volume of distribution, and half-life provided directly in the abstract. |
 
-<sub>queue written 2026-10-07T12:39:22.795097+00:00</sub>
+<sub>queue written 2026-10-14T19:29:53.763482+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Li_2022 | relevant | 9 | 1 | A human and monkey population PK/PD model was fitted, but its numeric PK parameter values are only referenced in supplementary tables not provided. |
+| popPK | Li_2022 | relevant | 8 | 1 | The paper describes a physiologically-based PK/PD model for epcoritamab but explicitly states that model parameter values are listed in Tables S1 and S2 (Supplementary Material), which are not provided in the evidence. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 12:39 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-14 19:29 UTC</sub>

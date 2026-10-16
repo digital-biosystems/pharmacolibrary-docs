@@ -1,8 +1,8 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;risankizumab&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/&quot;},{&quot;label&quot;:&quot;Khatri_2020 \u00b7 PD PASI100&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Risankizumab_RodrguezFernndez2022_reference&quot;,&quot;label&quot;:&quot;Rodr\u00edguez-Fern\u00e1ndez_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/Risankizumab_RodrguezFernndez2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Risankizumab_Khatri2019_chinese&quot;,&quot;label&quot;:&quot;Khatri_2019_chinese&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/Risankizumab_Khatri2019_chinese.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Risankizumab_Khatri2019_japanese&quot;,&quot;label&quot;:&quot;Khatri_2019_japanese&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/Risankizumab_Khatri2019_japanese.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Risankizumab_Khatri2019_risankizumab_1200_mg_iv&quot;,&quot;label&quot;:&quot;Khatri_2019_risankizumab_1200_mg_iv&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/Risankizumab_Khatri2019_risankizumab_1200_mg_iv.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Risankizumab_Khatri2019_white&quot;,&quot;label&quot;:&quot;Khatri_2019_white&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/Risankizumab_Khatri2019_white.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Risankizumab_Suleiman2019_reference&quot;,&quot;label&quot;:&quot;Suleiman_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/Risankizumab_Suleiman2019_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Risankizumab_Thomas2026_reference&quot;,&quot;label&quot;:&quot;Thomas_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/Risankizumab_Thomas2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Risankizumab_RodrguezFernndez2022_reference&quot;,&quot;label&quot;:&quot;Rodr\u00edguez-Fern\u00e1ndez_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/Risankizumab_RodrguezFernndez2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Risankizumab_Thomas2026_reference&quot;,&quot;label&quot;:&quot;Thomas_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/Risankizumab_Thomas2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Risankizumab_Suleiman2019_reference&quot;,&quot;label&quot;:&quot;Suleiman_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/Risankizumab_Suleiman2019_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Khatri_2020_PASI100&quot;,&quot;label&quot;:&quot;Khatri_2020 \u00b7 PASI100&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/pd_Khatri_2020_PASI100.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Khatri_2020_PASI100_2&quot;,&quot;label&quot;:&quot;Khatri_2020 \u00b7 PASI100&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/pd_Khatri_2020_PASI100_2.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Khatri_2020_PASI75&quot;,&quot;label&quot;:&quot;Khatri_2020 \u00b7 PASI75&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/pd_Khatri_2020_PASI75.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Khatri_2020_PASI90&quot;,&quot;label&quot;:&quot;Khatri_2020 \u00b7 PASI90&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/pd_Khatri_2020_PASI90.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Khatri_2020_sPGA0_1&quot;,&quot;label&quot;:&quot;Khatri_2020 \u00b7 sPGA0/1&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/pd_Khatri_2020_sPGA0_1.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# PASI100 — PD  <span class="pk-badge pk-badge--green">accepted (caveats)</span>
+# PASI100 — PD  <span class="pk-badge pk-badge--orange">needs review</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -14,11 +14,11 @@
 
 ## Record summary
 
-**As extracted:** Risankizumab (concentrations from the PK model of Khatri_2019::chinese) drives PASI100: direct Emax (saturable) effect.
+**As extracted:** Risankizumab (concentrations from the PK model of Khatri_2019) drives PASI100: direct Emax (saturable) effect.
 
-**Model:** Model available in **Models**; browser simulation unavailable.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
-> The binary PASI100 response at week 16 is modeled as a direct Emax effect of the average plasma concentration (Cavg) of risankizumab, with an Emax of 0.642 and an EC50 of 9.65 μg/mL for Asian subjects and 2.36 μg/mL for non-Asian subjects. The model also incorporates a placebo response of 0.011 and adjusts the EC50 for baseline high-sensitivity C-reactive protein using an exponent of 0.296.
+> Risankizumab plasma C_avg values were modelled using an additive Emax function to directly predict the probability of the binary PASI100 response, where the drug concentration acts as a driver with a placebo response of 0.011 and a maximum effect (Emax) of 0.642. The EC50 was estimated at 9.65 μg/mL for Asian race and 2.36 μg/mL for Non-Asian races, with baseline high-sensitivity C-reactive protein acting as a covariate with an exponent of 0.296 on the EC50.
 >
 > <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
@@ -38,8 +38,8 @@ Khatri A et al., Exposure-Response Relationships for Eff…, Clinical pharmacolo
 | PD (effect) | Placebo response | `Q341` · not captured | 0.011 | not captured | not captured | llm (not captured) | Khatri_2020:pdv3 |
 | PD (effect) | Emax | `Q320` · not captured | 0.642 | not captured | not captured | llm (not captured) | Khatri_2020:pdv3 |
 | PD (effect) | EC50 for Asian race | `Q321` · not captured | 9.65 | μg/mL | not captured | llm (not captured) | Khatri_2020:pdv3 |
-| PD (effect) | EC50 for Non-Asian races (whites or other) | `Q321` · not captured | 2.36 | μg/mL | not captured | llm (not captured) | Khatri_2020:pdv3 |
-| PD (effect) | Exponent for effect of baseline hs-CRP on EC50 | `Q324` · not captured | 0.296 | not captured | not captured | boundary (not captured) | Khatri_2020:pdv3 |
+| PD (effect) | EC50 for Non‐Asian races | `Q321` · not captured | 2.36 | μg/mL | not captured | llm (not captured) | Khatri_2020:pdv3 |
+| model term | Exponent for effect of baseline hs‐CRP on EC50 | `Q900` · not captured | 0.296 | not captured | not captured | llm (not captured) | Khatri_2020:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -53,20 +53,20 @@ Khatri A et al., Exposure-Response Relationships for Eff…, Clinical pharmacolo
 
 | parameter | value (paper units) | SI |
 |---|---|---|
-| E0 | 0.296 | — |
+| E0 | 0 | — |
 | Emax | 0.642 | — |
 | EC50 | 9.65 μg/mL | 0.00965 kg/m3 |
 | gamma | 1 | — |
 
-Closed-form check points (response, SI): `at_0` = 0.296, `at_EC50` = 0.617, `at_inf` = 0.938
+Closed-form check points (response, SI): `at_0` = 0, `at_EC50` = 0.321, `at_inf` = 0.642
 
 Deviations:
 
-- `defaulted_parameters` — gamma
+- `defaulted_parameters` — E0, gamma
 
 ## Review
 
-Verdict <span class="pk-badge pk-badge--green">accepted (caveats)</span>
+Verdict <span class="pk-badge pk-badge--orange">needs review</span> · route to `scholar`
 
 | check | status | note |
 |---|---|---|
@@ -75,11 +75,11 @@ Verdict <span class="pk-badge pk-badge--green">accepted (caveats)</span>
 | `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
 | `T2_direction` | pass | the response rises, as direct effect predicts |
 | `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
-| `T4_defaults` | advisory | only convention defaults (gamma = 1) |
+| `T4_defaults` | fail | a core parameter took a library default: E0 |
 
 Advisory:
 
-- defaulted: gamma (convention)
+- defaulted: E0 — a row the paper has and the record lacks
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -89,18 +89,21 @@ Advisory:
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_risankizumab/Risankizumab_Khatri2020_PD_pasi100/Risankizumab_Khatri2020_PD_pasi100_modelica.zip" download>Risankizumab_Khatri2020_PD_pasi100_modelica.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_risankizumab/Risankizumab_Khatri2020_PD_pasi100/Risankizumab_Khatri2020_PD_pasi100_matlab.zip" download>Risankizumab_Khatri2020_PD_pasi100_matlab.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_risankizumab/Risankizumab_Khatri2020_PD_pasi100/Risankizumab_Khatri2020_PD_pasi100_sbml.zip" download>Risankizumab_Khatri2020_PD_pasi100_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_risankizumab/Risankizumab_Khatri2020_PD_pasi100/Risankizumab_Khatri2020_PD_pasi100_cellml.zip" download>Risankizumab_Khatri2020_PD_pasi100_cellml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PD_SigmoidEmaxSweep.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+<dbs-fmusim paramsurl="drugs/drug_risankizumab/Risankizumab_Khatri2020_PD_pasi100/Risankizumab_Khatri2020_PD_pasi100_params.json" metaurl="assets/fmu/PD_SigmoidEmaxSweep.vr.json" wasmurl="assets/fmu/PD_SigmoidEmaxSweep.js" controlsurl="drugs/drug_risankizumab/Risankizumab_Khatri2020_PD_pasi100/Risankizumab_Khatri2020_PD_pasi100_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PD_SigmoidEmaxSweep` · parameters `Risankizumab_Khatri2020_PD_pasi100_params.json` · controls `Risankizumab_Khatri2020_PD_pasi100_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 

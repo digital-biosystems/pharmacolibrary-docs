@@ -18,13 +18,14 @@ Hizentra is a pharmaceutical product containing normal human immunoglobulin, a c
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 14:37 | 3:10 | 1/0/0 | 0/0/0 | 0/0/0 | 37,624/1,708 | einfracz / qwen3.8-27b | 2 | 0/2 | 2/0 | 0 |
+| 2026-10-14 22:41 | 0:56 | 1/1/0 | 0/0/0 | 0/0/0 | 56,913/1,986 | einfracz / qwen3.8-27b | 2 | 0/2 | 2/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span> | [Zhang_2020_reference](drugs/drug_immunoglobulins_normal_human_for_extravascular_adm/ImmunoglobulinsNormalHumanForExtravascularAdm_Zhang2020_refe.md) | ▶ model + simulator | 2-compartment, IV | 4 | Zhang Y et al., Population pharmacokinetic analysis of…, International immunopharmac… (2020) | [10.1016/j.intimp.2019.106005](https://doi.org/10.1016/j.intimp.2019.106005) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Tortorici_2021_reference](drugs/drug_immunoglobulins_normal_human_for_extravascular_adm/ImmunoglobulinsNormalHumanForExtravascularAdm_Tortorici2021.md) | — | 1-compartment (no model) | 0 (+6 cov.) | Tortorici MA et al., Pharmacometric analysis linking immunog…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12647](https://doi.org/10.1002/psp4.12647) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -36,7 +37,7 @@ Hizentra is a pharmaceutical product containing normal human immunoglobulin, a c
 
 - **PubMed hits:** 5 matched, 5 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 2  ·  extracted 1  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -45,17 +46,17 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Landersdorfer_2013.pdf` | Landersdorfer CB et al., Pharmacokinetic modeling and simulation…, Postgraduate medicine (2013) | popPK | 10 | [10.3810/pgm.2013.11.2712](https://doi.org/10.3810/pgm.2013.11.2712) | [24200761](https://pubmed.ncbi.nlm.nih.gov/24200761) | The paper describes a population PK model for IgG (Hizentra) suitable for extraction, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence text, only the study design and simulation conclusions. |
-| `Zhang_2020.pdf` | Zhang Y et al., Population pharmacokinetic analysis of…, International immunopharmac… (2020) | popPK | 10 | [10.1016/j.intimp.2019.106005](https://doi.org/10.1016/j.intimp.2019.106005) | [31806567](https://pubmed.ncbi.nlm.nih.gov/31806567) | The paper provides specific numeric population pharmacokinetic parameters (CL, Vc, Q, Vp) for IgPro20 (subcutaneous human immunoglobulin) in the main text. |
+| `Landersdorfer_2013.pdf` | Landersdorfer CB et al., Pharmacokinetic modeling and simulation…, Postgraduate medicine (2013) | popPK | 10 | [10.3810/pgm.2013.11.2712](https://doi.org/10.3810/pgm.2013.11.2712) | [24200761](https://pubmed.ncbi.nlm.nih.gov/24200761) | The paper describes a population pharmacokinetic model for subcutaneous immunoglobulin (Hizentra) in humans, but the specific numeric parameter values (CL, V, etc.) are not explicitly listed in the provided text excerpt, likely residing in tables or results sections not fully included. |
+| `Zhang_2020.pdf` | Zhang Y et al., Population pharmacokinetic analysis of…, International immunopharmac… (2020) | popPK | 10 | [10.1016/j.intimp.2019.106005](https://doi.org/10.1016/j.intimp.2019.106005) | [31806567](https://pubmed.ncbi.nlm.nih.gov/31806567) | The paper reports a population pharmacokinetic model with explicit numeric values for clearance, volume, and intercompartmental clearance for subcutaneous immunoglobulin (IgPro20/Hizentra). |
 
-<sub>queue written 2026-10-07T14:34:42.471414+00:00</sub>
+<sub>queue written 2026-10-14T22:41:07.459349+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Landersdorfer_2013 | relevant | 10 | 2 | The paper describes a population PK model for IgG (Hizentra) suitable for extraction, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence text, only the study design and simulation conclusions. |
-| popPK | Sidhu_2014 | relevant | 8 | 4 | The paper uses a population PK model for subcutaneous immunoglobulin (IgG) and reports simulation results (AUC, Cmax, Cmin ratios), but the specific numeric estimates for the model parameters (CL, V, Q, ka) are derived from a previously published model [36] and are not explicitly listed as values in the current text, appearing instead in figures or external references. |
+| popPK | Landersdorfer_2013 | relevant | 10 | 3 | The paper describes a population pharmacokinetic model for subcutaneous immunoglobulin (Hizentra) in humans, but the specific numeric parameter values (CL, V, etc.) are not explicitly listed in the provided text excerpt, likely residing in tables or results sections not fully included. |
+| popPK | Sidhu_2014 | irrelevant | 4 | 0 | The paper reports PK parameters for subcutaneous immunoglobulin (SCIG), which is a different route of administration than the subject drug (extravascular/admin), and the specific numeric parameter values (CL, V, etc.) are not present in the text, only referenced in a previous publication or figures. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 14:37 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-14 22:41 UTC</sub>

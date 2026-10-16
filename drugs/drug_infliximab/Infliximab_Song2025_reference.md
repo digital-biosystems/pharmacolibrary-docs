@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;infliximab&quot;,&quot;href&quot;:&quot;drugs/drug_infliximab/&quot;},{&quot;label&quot;:&quot;Song_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Infliximab_Eser2021_reference&quot;,&quot;label&quot;:&quot;Eser_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_infliximab/Infliximab_Eser2021_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Infliximab_Little2022_reference&quot;,&quot;label&quot;:&quot;Little_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_infliximab/Infliximab_Little2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Infliximab_Eser2021_reference&quot;,&quot;label&quot;:&quot;Eser_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_infliximab/Infliximab_Eser2021_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Infliximab_Little2022_reference&quot;,&quot;label&quot;:&quot;Little_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_infliximab/Infliximab_Little2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Infliximab_Song2025_reference&quot;,&quot;label&quot;:&quot;Song_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_infliximab/Infliximab_Song2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Infliximab_Hemperly2025_parameter_estimates&quot;,&quot;label&quot;:&quot;Hemperly_2025_parameter_estimates&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_infliximab/Infliximab_Hemperly2025_parameter_estimates.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Infliximab_Hemperly2025_population&quot;,&quot;label&quot;:&quot;Hemperly_2025_population&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_infliximab/Infliximab_Hemperly2025_population.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # infliximab — `Infliximab_Song2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.941). Primary extraction retained.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.941). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -13,32 +13,28 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 ### Reviewer guidance
 
-**The model rejects because it doubly corrects for bioavailability by defining both absolute bioavailability and apparent clearance.**
-
-The record lists absolute bioavailability as 0.667 for infliximab. It also includes a parameter defined as total clearance adjusted for bioavailability with a value of 0.017. Using both parameters simultaneously results in an inconsistent double correction of the pharmacokinetic profile. Extracted — infliximab: CL 0.248 L/day, V1 1.87 L, V2 1.96 L, Q 0.599 L/day, Fab 0.667, kabs 0.083 day-1, CL/F 0.017.
+**Every check that could be run on this record passed.**
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of θada-f: this record has none, the second reading -0.213. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Song JH et al., Population Pharmacokinetic Model for th…, Gut and liver (2025)
   ·  DOI: [10.5009/gnl240503](https://doi.org/10.5009/gnl240503)
 
-<div class="pk-model-meta" hidden drug="infliximab" model-id="Infliximab_Song2025_reference" status="rejected" stale="false" population="patients with inflammatory bowel disease" measured-compound="infliximab" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="infliximab" model-id="Infliximab_Song2025_reference" status="curated_candidate" stale="false" population="patients with inflammatory bowel disease" measured-compound="infliximab" parameterization="mechanistic" topology="2C"></div>
 
-**Model structure:** 2-compartment; no model was built for this record.  
-**Parameters:** 7 extracted.
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameters:** 6 extracted.
 
-**Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | CL (L/day) | `Q22` · CL | 0.248 | L/day | 2.8703703703703706e-09 | [l] / [d] | 20 | exact (1.0) | T2:row1:col1 | — | not captured |
@@ -47,7 +43,6 @@ Song JH et al., Population Pharmacokinetic Model for th…, Gut and liver (2025)
 | Q (L/day) | `Q30` · Q | 0.599 | L/day | 6.932870370370371e-09 | [l] / [d] | not captured | exact (1.0) | T2:row4:col1 | — | not captured |
 | F | `Q40` · Fab | 0.667 | not captured | not captured | not captured | 19 | exact (1.0) | T2:row5:col1 | — | not captured |
 | ka (day-1) | `Q49` · kabs | 0.083 | day-1 | 9.60648148148148e-07 | [1] / [d] | 26 | exact (1.0) | T2:row6:col1 | — | not captured |
-| CovCL-F | `Q27` · CL/F | 0.017 | not captured | not captured | not captured | not captured | llm (0.6) | T2:row15:col1 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -56,34 +51,24 @@ Song JH et al., Population Pharmacokinetic Model for th…, Gut and liver (2025)
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['Tlag']
+
 **Interpretation flags:**
-- column 'estimates (rse %)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'estimates (rse %)' classified 'rse' by the LLM but kept as the estimate: the header names the point value
 - dropped duplicate Q22 ('θALB-CL', value '-0.372') — already have one for this compound
 - dropped duplicate Q22 ('θCRP-CL', value '0.022') — already have one for this compound
 - dropped duplicate Q22 ('θADA-CL', value '0.022') — already have one for this compound
 - dropped duplicate Q22 ('θBMI-CL', value '0.360') — already have one for this compound
 - dropped unlinked row (NIL): 'θADA-F' — extend the ontology if this is a real PK parameter (source ['T2:row11:col1'])
 - dropped unlinked row (NIL): 'θBMI-F' — extend the ontology if this is a real PK parameter (source ['T2:row12:col1'])
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=infliximab
+- dropped unlinked row (NIL): 'CovCL-F' — extend the ontology if this is a real PK parameter (source ['T2:row15:col1'])
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=infliximab
 - molar mass: none found for 'infliximab' — its concentrations stay mass-only
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- unparsed cell T2:row1:col2 = '0.249 (0.173 to 0.344)'
-- unparsed cell T2:row2:col2 = '1.88 (0.23 to 4.36)'
-- unparsed cell T2:row5:col2 = '0.677 (0.477 to 0.921)'
-- unparsed cell T2:row6:col2 = '0.083 (0.051 to 0.151)'
-- unparsed cell T2:row7:col2 = '–0.383 (–0.592 to –0.154)'
-- unparsed cell T2:row8:col2 = '0.023 (0.010 to 0.036)'
-- unparsed cell T2:row9:col2 = '0.021 (0.001 to 0.042)'
-- unparsed cell T2:row10:col2 = '0.354 (0.150 to 0.627)'
-- unparsed cell T2:row11:col2 = '–0.209 (–0.298 to –0.057)'
-- unparsed cell T2:row12:col2 = '–0.838 (–1.450 to –0.300)'
-- unparsed cell T2:row13:col2 = '20.0 (17.2 to 23.4)'
-- unparsed cell T2:row14:col2 = '21.0 (10.8 to 29.3)'
-- unparsed cell T2:row15:col2 = '0.017 (–0.002 to 0.039)'
-- unparsed cell T2:row16:col2 = '0.328 (0.290 to 0.368)'
-- unparsed cell T2:row17:col2 = '0.571 (0.438 to 0.732)'
+- table T2: unparsed_numeric_cell
 - LLM selected parameter table(s) 2
 
 ## Validation
@@ -113,7 +98,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 7 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T2:row1:col1'] |
@@ -121,12 +106,22 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['T2:row6:col1'] |
 | C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['T2:row2:col1'] |
 | C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['T2:row3:col1'] |
-| C5_unit_missing_Q27 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['T2:row15:col1'] |
-| C7_apparent_coherence | fail | F==1, Fm==1, no molar corr. | absolute F=0.667 with apparent parameterization | not captured | not captured | not captured |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.248 | not captured | not captured | ['T2:row1:col1'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.0103 L/h | not captured | not captured | ['T2:row1:col1'] |
 | C9_phys_window_Q63 | pass | volume within physiological range | 1.87 L | not captured | not captured | ['T2:row2:col1'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 1.96 L | not captured | not captured | ['T2:row3:col1'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_output_variable | not captured | pass | C_central (measured=infliximab) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 5 scholar param(s) emitted or defaulted | 5 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -135,20 +130,38 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_infliximab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Song_2025` / `Song_2025::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_infliximab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Song_2025` / `Song_2025::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_infliximab/models/modelica/Infliximab_Song2025_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_infliximab/models/modelica/Infliximab_Song2025_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_infliximab/models/modelica/Infliximab_Song2025_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_infliximab/Infliximab_Song2025_reference/Infliximab_Song2025_reference_modelica.zip" download>Infliximab_Song2025_reference_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_infliximab/Infliximab_Song2025_reference/Infliximab_Song2025_reference_fmi.zip" download>Infliximab_Song2025_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_infliximab/Infliximab_Song2025_reference/Infliximab_Song2025_reference_matlab.zip" download>Infliximab_Song2025_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_infliximab/Infliximab_Song2025_reference/Infliximab_Song2025_reference_matlab_simbio.zip" download>Infliximab_Song2025_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_infliximab/Infliximab_Song2025_reference/Infliximab_Song2025_reference_sbml.zip" download>Infliximab_Song2025_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_infliximab/Infliximab_Song2025_reference/Infliximab_Song2025_reference_cellml.zip" download>Infliximab_Song2025_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+</tbody></table>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_infliximab/Infliximab_Song2025_reference/Infliximab_Song2025_reference.svg" alt="Infliximab_Song2025_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.00346 /h, F 0.667). _The paper's dose was not captured; the simulator's default is used._
+
+<dbs-fmusim paramsurl="drugs/drug_infliximab/Infliximab_Song2025_reference/Infliximab_Song2025_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_infliximab/Infliximab_Song2025_reference/Infliximab_Song2025_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_2C_enteral` · parameters `Infliximab_Song2025_reference_params.json` · controls `Infliximab_Song2025_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 23:53 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 04:01 UTC</sub>

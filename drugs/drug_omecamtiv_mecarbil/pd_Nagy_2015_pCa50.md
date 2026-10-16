@@ -20,9 +20,9 @@
 
 **Model:** No model was generated from this record.
 
-> The record describes a sigmoidal Emax model where omecamtiv mecarbil stimulates the Ca2+ sensitivity of force production (pCa50) with an EC50 of 0.08 μM. The paper does not provide full text to specify the underlying mechanism or rate constants.
+> The record indicates that omecamtiv mecarbil stimulates the Ca2+ sensitivity of force production (pCa50) via a sigmoid Emax mechanism with an EC50 of 0.08 μM. The paper does not provide a full text or additional mechanistic details (e.g., effect compartment or rate constants) beyond this concentration-response relationship.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Nagy_2015`
 - **model family:** `sigmoid_emax`

@@ -4,7 +4,7 @@
 
 # camrelizumab — `Camrelizumab_Shang2022_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">not modelled</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.417). Primary extraction retained.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.417). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -12,29 +12,31 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** Model withheld: a core parameter is unspecified.
 
 ### Reviewer guidance
 
-**No model has been built from this record yet.**
+**No value for camrelizumab's clearance, volume of distribution, central→peripheral rate constant, central→second-peripheral rate constant and second-peripheral→central rate constant; t6_deviations.**
+
+The model was built, but camrelizumab's clearance, volume of distribution, central→peripheral rate constant, central→second-peripheral rate constant and second-peripheral→central rate constant had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — camrelizumab: Q 0.703 L/day, V2 2.78 L, V 6.8 L.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of cl: this record has none, the second reading none; it also differs on 6 more fields. That field does not shape the model.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Shang J et al., Population pharmacokinetic models of an…, Frontiers in immunology (2022)
   ·  DOI: [10.3389/fimmu.2022.871372](https://doi.org/10.3389/fimmu.2022.871372)
 
-<div class="pk-model-meta" hidden drug="camrelizumab" model-id="Camrelizumab_Shang2022_reference" status="not_modelled" stale="false" population="patients with multiple tumor types" measured-compound="camrelizumab" parameterization="mechanistic" topology="3C"></div>
+<div class="pk-model-meta" hidden drug="camrelizumab" model-id="Camrelizumab_Shang2022_reference" status="model_quarantined" stale="false" population="patients with multiple tumor types" measured-compound="camrelizumab" parameterization="mechanistic" topology="3C"></div>
 
-**Model structure:** 3-compartment; no model was built for this record.  
+**Model structure:** 3-compartment, IV mammillary model — template `PK_3C`.  
 **Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `not_modelled`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -124,8 +126,9 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 |---|---|---|---|---|---|---|
 | T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_param_coverage | not captured | skipped | not captured | not captured | not captured | no emitted model to inspect (engineer build absent) |
-| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
+| T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 3C → PK_3C* | PK_3C | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -134,7 +137,9 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_camrelizumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Shang_2022` / `Shang_2022::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_camrelizumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Shang_2022` / `Shang_2022::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_camrelizumab/models/modelica/_needs_review/Camrelizumab_Shang2022_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_camrelizumab/models/modelica/_needs_review/Camrelizumab_Shang2022_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -160,4 +165,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 10:48 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 18:32 UTC</sub>

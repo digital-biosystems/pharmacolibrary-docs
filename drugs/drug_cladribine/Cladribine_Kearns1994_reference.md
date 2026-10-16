@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;cladribine&quot;,&quot;href&quot;:&quot;drugs/drug_cladribine/&quot;},{&quot;label&quot;:&quot;Kearns_1994 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cladribine_Lu2024_reference&quot;,&quot;label&quot;:&quot;Lu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cladribine/Cladribine_Lu2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cladribine_Lindemalm2005_reference&quot;,&quot;label&quot;:&quot;Lindemalm_2005_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cladribine/Cladribine_Lindemalm2005_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cladribine_Lu2024_reference&quot;,&quot;label&quot;:&quot;Lu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cladribine/Cladribine_Lu2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cladribine_Lindemalm2005_population_average_estimate&quot;,&quot;label&quot;:&quot;Lindemalm_2005_population_average_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cladribine/Cladribine_Lindemalm2005_population_average_estimate.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # cladribine — `Cladribine_Kearns1994_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.818), gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -17,13 +17,13 @@
 
 ### Reviewer guidance
 
-**The record was rejected because the reported renal clearance in ml/min/m2 could not be dimensionally reconciled with total clearance in L/h/m2.**
+**C5 dimension mismatch on a structural parameter.**
 
-Total clearance is 39.4 L/h/m2, while renal clearance is 317.9 ml/min/m2. The abstract-only source provides summary statistics rather than fitted parameters, preventing structural validation of the 1-compartment model. Extracted — cladribine: CL 39.4 liters/h/m2, Css 37.7 nM, t1/2z 19.7 h, Vss 357 liters/m2, CLR 318 ml/min/m2, V 1.25e+03 L.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — cladribine: CL 39.4 L/h, Css 37.7 nM, t1/2z 19.7 h, Vss 357 L, CLR 318 mL/min, V 1.25e+03 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cladribine, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Kearns CM et al., Pharmacokinetics of cladribine (2-chlor…, Cancer research (1994)
@@ -40,11 +40,11 @@ Kearns CM et al., Pharmacokinetics of cladribine (2-chlor…, Cancer research (1
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| mean (SD) clearance | `Q22` · CL | 39.4 | liters/h/m2 | not captured | [l] / [[h] · [m2]] | not captured | llm_confirmed (0.6) | Kearns_1994:abstract | — | not captured |
-| mean (SD) steady-state plasma concentration (predicted 120-h concentration) | `Q34` · Css | 37.7 | nM | not captured | [nM] | not captured | llm (0.6) | Kearns_1994:abstract | — | not captured |
-| terminal phase half-life | `Q57` · t1/2z | 19.7 | h | 70920.0 | [h] | not captured | llm (0.6) | Kearns_1994:abstract | — | not captured |
-| volume of distribution at steady state | `Q65` · Vss | 356.6 | liters/m2 | not captured | [l] / [m2] | not captured | llm_corrected (0.6) | Kearns_1994:abstract | — | not captured |
-| Renal clearance | `Q26` · CLR | 317.9 | ml/min/m2 | not captured | [ml] / [[min] · [m2]] | not captured | exact (1.0) | Kearns_1994:abstract | — | not captured |
+| clearance | `Q22` · CL | 39.4 | L/h | 1.0944444444444444e-05 | L/h | not captured | exact (1.0) | Kearns_1994:abstract, Kearns_1994:abstract | — | not captured |
+| steady-state plasma concentration (predicted 120-h concentration) | `Q34` · Css | 37.7 | nM | not captured | [nM] | not captured | llm (0.6) | Kearns_1994:abstract, Kearns_1994:abstract | — | not captured |
+| terminal phase half-life | `Q57` · t1/2z | 19.7 | h | 70920.0 | [h] | not captured | llm (0.6) | Kearns_1994:abstract, Kearns_1994:abstract | — | not captured |
+| volume of distribution at steady state | `Q65` · Vss | 356.6 | L | 0.35660000000000003 | L | not captured | llm_corrected (0.6) | Kearns_1994:abstract | — | not captured |
+| Renal clearance | `Q26` · CLR | 317.9 | mL/min | 5.298333333333333e-06 | L/h | not captured | exact (1.0) | Kearns_1994:abstract, Kearns_1994:abstract | — | not captured |
 | volume of distribution (V d) | `Q61` · V | 1250.0 | L | 1.25 | L | not captured | review_gapfill (0.7) | Lu_2024:review | — | not captured |
 
 <details class="legend">
@@ -55,12 +55,16 @@ Kearns CM et al., Pharmacokinetics of cladribine (2-chlor…, Cancer research (1
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'cladribine dose' — extend the ontology if this is a real PK parameter (source ['Kearns_1994:abstract'])
+- dropped unlinked row (NIL): 'cladribine as a single agent' — extend the ontology if this is a real PK parameter (source ['Kearns_1994:abstract'])
 - unit_dimension_unknown: 'liters/h/m2' (CL)
-- unit_dimension_mismatch: 'mean (SD) steady-state plasma concentration (predicted 120-h concentration)' → Q34 (unit '[length]' vs ontology '[mass] / [length] ** 3') — route to review
+- unit_dimension_mismatch: 'steady-state plasma concentration (predicted 120-h concentration)' → Q34 (unit '[length]' vs ontology '[mass] / [length] ** 3') — route to review
 - unit_dimension_unknown: 'liters/m2' (Vss)
 - unit_dimension_unknown: 'ml/min/m2' (CLR)
-- dropped unlinked row (NIL): 'Renal clearance as a percentage of total systemic clearance' — extend the ontology if this is a real PK parameter (source ['Kearns_1994:abstract'])
+- unit_dimension_mismatch: 'Renal clearance as a percentage of total systemic clearance' → Q26 (unit 'dimensionless' vs ontology '[length] ** 3 / [time]') — route to review
+- dropped duplicate Q26 ('Renal clearance as a percentage of total systemic clearance', value 51.0) — already have one for this compound
+- implicit units: 'clearance' → L/h (from the popPK convention: 'Clearance is conventionally expressed in L/h in population PK; the value 39.4 is consistent with this magnitude.')
+- implicit units: 'volume of distribution at steady state' → L (from the popPK convention: 'Volume of distribution is conventionally expressed in L; the value 356.6 is consistent with this magnitude.')
+- implicit units: 'Renal clearance' → mL/min (from the popPK convention: 'Renal clearance is conventionally expressed in mL/min (or L/h); the value 317.9 is consistent with mL/min (approx 5.3 L/')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=cladribine
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
@@ -70,18 +74,19 @@ Kearns CM et al., Pharmacokinetics of cladribine (2-chlor…, Cancer research (1
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Kearns_1994_metadata.yaml (7 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Kearns_1994_metadata.yaml (12 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss:120b` | partly confirmed | 0.818 (9/11 fields) | 2 |
 | `gpt-oss-120b` | not confirmed | 0.333 (5/15 fields) | 10 |
 
-<details><summary>10 field discrepancies</summary>
+<details><summary>12 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -95,6 +100,8 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | `gpt-oss-120b` | `parameters[terminal phase half-life].parameter_id` | Q57 | Q60 | mismatch |
 | `gpt-oss-120b` | `parameters[volume of distribution]` | 1250.0 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `screen.dose_compound` | cladribine | unknown | mismatch |
+| `gpt-oss:120b` | `parameters[cladribine as a single agent]` | not captured | 8.9 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[renal clearance as a percentage of total systemic clearance]` | not captured | 51.0 | only_one_extracted |
 
 </details>
 
@@ -111,15 +118,17 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q34 | fail | [length] | nM | not captured | not captured | ['Kearns_1994:abstract'] |
-| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Kearns_1994:abstract'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Kearns_1994:abstract', 'Kearns_1994:abstract'] |
+| C5_dimension_Q26 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Kearns_1994:abstract', 'Kearns_1994:abstract'] |
+| C5_dimension_Q34 | fail | [length] | nM | not captured | not captured | ['Kearns_1994:abstract', 'Kearns_1994:abstract'] |
+| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Kearns_1994:abstract', 'Kearns_1994:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Lu_2024:review'] |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | liters/h/m2 | not captured | not captured | ['Kearns_1994:abstract'] |
-| C5_unit_missing_Q26 | fail | [length] ** 3 / [time] | ml/min/m2 | not captured | not captured | ['Kearns_1994:abstract'] |
-| C5_unit_missing_Q65 | fail | [length] ** 3 | liters/m2 | not captured | not captured | ['Kearns_1994:abstract'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 39.4 | not captured | not captured | ['Kearns_1994:abstract'] |
+| C5_dimension_Q65 | pass | [length] ** 3 | not captured | not captured | not captured | ['Kearns_1994:abstract'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 39.4 | not captured | not captured | ['Kearns_1994:abstract', 'Kearns_1994:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 39.4 L/h | not captured | not captured | ['Kearns_1994:abstract', 'Kearns_1994:abstract'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 1.25e+03 L | not captured | not captured | ['Lu_2024:review'] |
+| C9_phys_window_Q65 | pass | volume within physiological range | 357 L | not captured | not captured | ['Kearns_1994:abstract'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -128,7 +137,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_cladribine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kearns_1994` / `Kearns_1994::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_cladribine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kearns_1994` / `Kearns_1994::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -144,4 +153,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 16:37 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 01:05 UTC</sub>

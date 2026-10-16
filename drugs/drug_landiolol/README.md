@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;landiolol&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Landiolol_Kunisawa2015_reference&quot;,&quot;label&quot;:&quot;Kunisawa_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_landiolol/Landiolol_Kunisawa2015_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Landiolol_Kunisawa2015v2_reference&quot;,&quot;label&quot;:&quot;Kunisawa_2015_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_landiolol/Landiolol_Kunisawa2015v2_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Landiolol_Kunisawa2015_reference&quot;,&quot;label&quot;:&quot;Kunisawa_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_landiolol/Landiolol_Kunisawa2015_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Landiolol_Kunisawa2015v2_healthy_male_volunteers_mean_se&quot;,&quot;label&quot;:&quot;Kunisawa_2015_2_healthy_male_volunteers_mean_se&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_landiolol/Landiolol_Kunisawa2015v2_healthy_male_volunteers_mean_se.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Landiolol_Kunisawa2015v2_patients_with_peripheral_arterial_d&quot;,&quot;label&quot;:&quot;Kunisawa_2015_2_patients_with_peripheral_arterial_disease_mean_se&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_landiolol/Landiolol_Kunisawa2015v2_patients_with_peripheral_arterial_d.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # landiolol
 
@@ -27,15 +27,30 @@ Landiolol is a selective beta blocker with antiarrhythmic activity, used to cont
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 00:05 | 11:15 | 2/1/0 | 0/0/0 | 0/0/0 | 230,237/27,814 | ollama / qwen3.8:27b-mtp-q8_0 | 9 | 5/2 | 9/0 | 0 |
+| 2026-10-15 03:28 | 1:21 | 0/1/3 | 0/0/0 | 0/0/0 | 74,018/5,745 | einfracz / qwen3.8-27b | 9 | 5/2 | 9/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143), gpt-oss:120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Kunisawa_2015_reference](drugs/drug_landiolol/Landiolol_Kunisawa2015_reference.md) | ▶ model + simulator | 2-compartment, IV | 5 | Kunisawa T et al., Target-controlled infusion and populati…, Journal of anesthesia (2015) | [10.1007/s00540-014-1908-5](https://doi.org/10.1007/s00540-014-1908-5) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.889), gpt-oss:120b (not confirmed, agreement 0.778). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Kunisawa_2015_2_reference](drugs/drug_landiolol/Landiolol_Kunisawa2015v2_reference.md) | ▶ model + simulator | 2-compartment, IV | 5 | Kunisawa T et al., Target-controlled infusion and populati…, Therapeutics and clinical r… (2015) | [10.2147/TCRM.S74867](https://doi.org/10.2147/TCRM.S74867) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5), gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-check: disputed 1/2</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Honda_2008_reference](drugs/drug_landiolol/Landiolol_Honda2008_reference.md) | — | 1-compartment (no model) | 0 | Honda N et al., Population pharmacokinetics of landiolo…, Drug metabolism and pharmac… (2008) | [10.2133/dmpk.23.447](https://doi.org/10.2133/dmpk.23.447) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143), gpt-oss:120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>blocking: T3_param_coverage</sub><br><sub>route_to: `engineer`</sub> | [Kunisawa_2015_reference](drugs/drug_landiolol/Landiolol_Kunisawa2015_reference.md) | ▶ model + simulator | 2-compartment, IV | 5 | Kunisawa T et al., Target-controlled infusion and populati…, Journal of anesthesia (2015) | [10.1007/s00540-014-1908-5](https://doi.org/10.1007/s00540-014-1908-5) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.889), gpt-oss:120b (not confirmed, agreement 0.778). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>blocking: T3_param_coverage</sub><br><sub>route_to: `engineer`</sub> | [Kunisawa_2015_2_healthy_male_volunteers_mean_se](drugs/drug_landiolol/Landiolol_Kunisawa2015v2_healthy_male_volunteers_mean_se.md) | ▶ model + simulator | 2-compartment, IV | 5 | Kunisawa T et al., Target-controlled infusion and populati…, Therapeutics and clinical r… (2015) | [10.2147/TCRM.S74867](https://doi.org/10.2147/TCRM.S74867) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.889), gpt-oss:120b (not confirmed, agreement 0.778). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>blocking: T3_param_coverage</sub><br><sub>route_to: `engineer`</sub> | [Kunisawa_2015_2_patients_with_peripheral_arterial_disease_mean_se](drugs/drug_landiolol/Landiolol_Kunisawa2015v2_patients_with_peripheral_arterial_d.md) | ▶ model + simulator | 2-compartment, IV | 5 | Kunisawa T et al., Target-controlled infusion and populati…, Therapeutics and clinical r… (2015) | [10.2147/TCRM.S74867](https://doi.org/10.2147/TCRM.S74867) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5), gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-check: disputed 1/2</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Honda_2008_reference](drugs/drug_landiolol/Landiolol_Honda2008_reference.md) | — | 1-compartment (no model) | 0 | Honda N et al., Population pharmacokinetics of landiolo…, Drug metabolism and pharmac… (2008) | [10.2133/dmpk.23.447](https://doi.org/10.2133/dmpk.23.447) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=landiolol).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | blood | `BCHE` substrate | DrugBank actor |
+| metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
+| metabolism | liver | `BCHE` substrate, `CES2` substrate, `CYP2D6` inhibitor/substrate | DrugBank actor |
+| metabolism | small intestine | `CES2` substrate | DrugBank actor |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: ADRB1 (target), ADRB2 (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,7 +62,7 @@ Landiolol is a selective beta blocker with antiarrhythmic activity, used to cont
 
 - **PubMed hits:** 23 matched, 16 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 3  ·  extracted 2  ·  needs_review 0  ·  rejected 1  ·  stale 3
+- **records:** 4  ·  extracted 0  ·  needs_review 3  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -56,28 +71,28 @@ _3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Honda_2008.pdf` | Honda N et al., Population pharmacokinetics of landiolo…, Drug metabolism and pharmac… (2008) | popPK | 10 | [10.2133/dmpk.23.447](https://doi.org/10.2133/dmpk.23.447) | [19122339](https://pubmed.ncbi.nlm.nih.gov/19122339) | The paper reports a population pharmacokinetic model for landiolol in humans with all key numeric parameters (CL, V1, Q, V2, lag time) explicitly listed in the abstract. |
-| `Kunisawa_2015.pdf` | Kunisawa T et al., Target-controlled infusion and populati…, Journal of anesthesia (2015) | popPK | 10 | [10.1007/s00540-014-1908-5](https://doi.org/10.1007/s00540-014-1908-5) | [25186494](https://pubmed.ncbi.nlm.nih.gov/25186494) | The paper reports a population pharmacokinetic model for landiolol in humans with explicit numeric values for clearance, volume, and intercompartmental clearance. |
-| `Atarashi_2000.pdf` | Atarashi H et al., Pharmacokinetics of landiolol hydrochlo…, Clinical pharmacology and t… (2000) | popPK | 9 | [10.1067/mcp.2000.108733](https://doi.org/10.1067/mcp.2000.108733) | [10976545](https://pubmed.ncbi.nlm.nih.gov/10976545) | The study reports quantitative PK parameters (half-life range 2.3-4.0 min) for landiolol in humans, but specific values for clearance and volume are not explicitly listed in the provided text. |
+| `Honda_2008.pdf` | Honda N et al., Population pharmacokinetics of landiolo…, Drug metabolism and pharmac… (2008) | popPK | 10 | [10.2133/dmpk.23.447](https://doi.org/10.2133/dmpk.23.447) | [19122339](https://pubmed.ncbi.nlm.nih.gov/19122339) | The study reports quantitative population PK parameters (CL, V1, Q, V2, Tlag) for landiolol in healthy humans directly in the abstract. |
+| `Kunisawa_2015.pdf` | Kunisawa T et al., Target-controlled infusion and populati…, Journal of anesthesia (2015) | popPK | 10 | [10.1007/s00540-014-1908-5](https://doi.org/10.1007/s00540-014-1908-5) | [25186494](https://pubmed.ncbi.nlm.nih.gov/25186494) | The paper reports specific numeric population pharmacokinetic parameters (CL, V1, Q, V2, ALAG) for landiolol in gynecologic patients within the abstract. |
+| `Atarashi_2000.pdf` | Atarashi H et al., Pharmacokinetics of landiolol hydrochlo…, Clinical pharmacology and t… (2000) | popPK | 9 | [10.1067/mcp.2000.108733](https://doi.org/10.1067/mcp.2000.108733) | [10976545](https://pubmed.ncbi.nlm.nih.gov/10976545) | The study reports pharmacokinetic parameters (half-life range, AUC trend) for landiolol in humans, but specific numeric values for clearance (CL) and volume (V) are not explicitly listed in the provided text, only described qualitatively or via range. |
 
-<sub>queue written 2026-10-06T23:54:53.435670+00:00</sub>
+<sub>queue written 2026-10-15T03:27:44.612295+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | PD | Arun_2025 | not_relevant | 1 | 0 | The text is a narrative review discussing clinical outcomes (heart rate, mortality) without providing any specific pharmacokinetic data, concentration-effect curves, or numeric PD parameters for landiolol. |
-| popPK | Atarashi_2000 | relevant | 9 | 4 | The study reports quantitative PK parameters (half-life range 2.3-4.0 min) for landiolol in humans, but specific values for clearance and volume are not explicitly listed in the provided text. |
+| popPK | Atarashi_2000 | relevant | 9 | 4 | The study reports pharmacokinetic parameters (half-life range, AUC trend) for landiolol in humans, but specific numeric values for clearance (CL) and volume (V) are not explicitly listed in the provided text, only described qualitatively or via range. |
 | PD | Ayabe_2024 | not_relevant | 2 | 1 | The paper reports qualitative clinical efficacy differences between atrial fibrillation and atrial tachycardia but does not provide numeric concentration-effect or dose-response parameters (e.g., EC50, Emax) or a formal PK/PD model. |
 | PD | Balik_2018 | not_relevant | 2 | 1 | The text is a qualitative review summarizing clinical outcomes and dosage ranges without providing specific numeric PD parameters (e.g., EC50, Emax) or concentration-effect data. |
 | PD | Eibensteiner_2025 | not_relevant | 2 | 1 | The paper is a retrospective observational study reporting clinical outcomes (heart rate reduction, safety) without any pharmacokinetic data, concentration measurements, or formal dose-response modeling to derive PD parameters. |
-| popPK | Fujimoto_2025 | irrelevant | 0 | 0 | The study is a retrospective observational analysis of hemodynamic outcomes (heart rate, blood pressure) and does not report quantitative pharmacokinetic parameters (CL, V, ka) for landiolol. |
+| popPK | Fujimoto_2025 | irrelevant | 1 | 0 | This is a hemodynamic and clinical outcomes study, not a pharmacokinetic study, and it lacks quantitative disposition parameters such as clearance or volume of distribution. |
 | PD | Oka_2019 | not_relevant | 2 | 1 | The study reports clinical efficacy (heart rate reduction) and dose titration data but does not provide plasma concentration data or fit a pharmacodynamic model (e.g., Emax, EC50) to derive numeric PD parameters. |
 | PD | Onoda_2022 | not_relevant | 0 | 0 | The paper evaluates the chemical stability of landiolol in drug mixtures using HPLC, not pharmacodynamic or exposure-response relationships. |
-| popPK | Shimohara_2026 | irrelevant | 0 | 0 | The study investigates the effects of orexin receptor antagonists on electroconvulsive therapy seizure quality, and landiolol is only mentioned as a covariate excluded in sensitivity analyses, with no PK parameters reported. |
+| popPK | Shimohara_2026 | irrelevant | 0 | 0 | The study investigates the effects of orexin receptor antagonists on seizure quality during electroconvulsive therapy and only mentions landiolol as a covariate to be excluded in sensitivity analyses, reporting no PK parameters for it. |
 | PD | Syed_2018 | not_relevant | 1 | 0 | The text is a qualitative review of clinical efficacy and pharmacological properties, containing no numeric PD parameters, concentration-effect curves, or PK/PD modeling data. |
 | PD | Thomas_2025 | not_relevant | 0 | 0 | The study compares treatment arms (landiolol vs. standard care) using statistical tests (t-tests, mixed models) but does not model the relationship between drug exposure (concentration/dose) and effect, nor does it report PD parameters like Emax or EC50. |
 | PD | unknown_2025 | not_relevant | 0 | 0 | The provided text is only a title and does not contain the full text, data, or numeric PD parameters required to assess a pharmacodynamic relationship. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-06 23:55 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-15 03:27 UTC</sub>

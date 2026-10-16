@@ -1,8 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;ciclosporin&quot;,&quot;href&quot;:&quot;drugs/drug_ciclosporin/&quot;},{&quot;label&quot;:&quot;Wan_2025 \u00b7 PD o-SCORAD scores&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ciclosporin_Kauv2025_reference&quot;,&quot;label&quot;:&quot;Kauv_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciclosporin/Ciclosporin_Kauv2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciclosporin_Han2013_reference&quot;,&quot;label&quot;:&quot;Han_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciclosporin/Ciclosporin_Han2013_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;ciclosporin&quot;,&quot;href&quot;:&quot;drugs/drug_ciclosporin/&quot;},{&quot;label&quot;:&quot;Wan_2025 \u00b7 PD objective SCORing for Atopic Dermatitis&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ciclosporin_Gao2022_reference&quot;,&quot;label&quot;:&quot;Gao_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciclosporin/Ciclosporin_Gao2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciclosporin_Kauv2025_reference&quot;,&quot;label&quot;:&quot;Kauv_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciclosporin/Ciclosporin_Kauv2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciclosporin_Han2013_reference&quot;,&quot;label&quot;:&quot;Han_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciclosporin/Ciclosporin_Han2013_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Albitar_2022_eGFR&quot;,&quot;label&quot;:&quot;Albitar_2022 \u00b7 eGFR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ciclosporin/pd_Albitar_2022_eGFR.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# o-SCORAD scores — PD  <span class="pk-badge pk-badge--orange">needs review</span>
+# objective SCORing for Atopic Dermatitis — PD  <span class="pk-badge pk-badge--orange">needs review</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -14,11 +14,11 @@
 
 ## Record summary
 
-**As extracted:** Ciclosporin (concentrations from the PK model of Kauv_2025) drives o-SCORAD scores: direct linear effect.
+**As extracted:** Ciclosporin (concentrations from the PK model of Han_2013) drives objective SCORing for Atopic Dermatitis: direct linear effect.
 
 **Model:** Model available in **Models**; browser simulation unavailable.
 
-> The paper describes a linear association where trough ciclosporin concentrations are associated with o-SCORAD scores, indicated by a coefficient (β) of -4.495, but it does not specify the pharmacodynamic mechanism (e.g., inhibition of production, elimination, or Emax) or key potency and rate values (e.g., IC50, EC50, ke0) in the provided excerpts.
+> The paper states that the effect of trough ciclosporin concentrations on objective SCORing for Atopic Dermatitis (o-SCORAD) was modeled using a linear additive interaction with visit week, but does not specify the underlying pharmacodynamic mechanism (e.g., production inhibition or direct effect). The only parameter value provided for this interaction is 0.174.
 >
 > <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
@@ -35,7 +35,7 @@ Wan M et al., Exposure-response of ciclosporin and me…, Clinical and experimen
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | β | `Q335` · not captured | -4.495 | not captured | not captured | llm (not captured) | Wan_2025:pdv3 |
+| PD (effect) | interaction between trough ciclosporin concentrations and visit week | `Q335` · not captured | 0.174 | not captured | not captured | llm (not captured) | Wan_2025:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -50,9 +50,9 @@ Wan M et al., Exposure-response of ciclosporin and me…, Clinical and experimen
 | parameter | value (paper units) | SI |
 |---|---|---|
 | E0 | 0 | — |
-| slope | -4.495 | — |
+| slope | 0.174 | — |
 
-Closed-form check points (response, SI): `at_0` = 0, `per_exposure_unit` = -4.495
+Closed-form check points (response, SI): `at_0` = 0, `per_exposure_unit` = 0.174
 
 Deviations:
 
@@ -82,11 +82,11 @@ Advisory:
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ciclosporin/Ciclosporin_Wan2025_PD_o_scorad/Ciclosporin_Wan2025_PD_o_scorad_modelica.zip" download>Ciclosporin_Wan2025_PD_o_scorad_modelica.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ciclosporin/Ciclosporin_Wan2025_PD_o_scorad/Ciclosporin_Wan2025_PD_o_scorad_modelica.zip" download>Ciclosporin_Wan2025_PD_o_scorad_modelica.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_ciclosporin/Ciclosporin_Wan2025_PD_o_scorad/Ciclosporin_Wan2025_PD_o_scorad_matlab.zip" download>Ciclosporin_Wan2025_PD_o_scorad_matlab.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_ciclosporin/Ciclosporin_Wan2025_PD_o_scorad/Ciclosporin_Wan2025_PD_o_scorad_sbml.zip" download>Ciclosporin_Wan2025_PD_o_scorad_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_ciclosporin/Ciclosporin_Wan2025_PD_o_scorad/Ciclosporin_Wan2025_PD_o_scorad_sbml.zip" download>Ciclosporin_Wan2025_PD_o_scorad_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_ciclosporin/Ciclosporin_Wan2025_PD_o_scorad/Ciclosporin_Wan2025_PD_o_scorad_cellml.zip" download>Ciclosporin_Wan2025_PD_o_scorad_cellml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>

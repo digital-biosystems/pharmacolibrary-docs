@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;nadroparin&quot;,&quot;href&quot;:&quot;drugs/drug_nadroparin/&quot;},{&quot;label&quot;:&quot;Laporte_1999 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nadroparin_Piwowarczyk2023_reference&quot;,&quot;label&quot;:&quot;Piwowarczyk_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nadroparin/Nadroparin_Piwowarczyk2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nadroparin_Piwowarczyk2023_reference&quot;,&quot;label&quot;:&quot;Piwowarczyk_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nadroparin/Nadroparin_Piwowarczyk2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # nadroparin — `Nadroparin_Laporte1999_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.4), gpt-oss:120b (primary re-run, agreement 0.2). Primary extraction retained.">cross-check: partial 0/2</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.2), gpt-oss:120b (primary re-run, agreement 0.2). Primary extraction retained.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -21,17 +21,17 @@
 
 No clearance, volume or rate constant of the model is reported in it. Only the abstract was available, so reported summary statistics stand in for a fitted model. No parameter values were extracted.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has nadroparin calcium, the second reading anti-Xa activity; it also differs on 2 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has nadroparin calcium, the second reading unknown; it also differs on 3 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 16:14:39.840696+00:00) predates the upstream re-run (2026-10-07 18:12:41.278488+00:00). Current validate status: `rejected`.
+> **Dose compound ≠ measured compound:** dosed `nadroparin calcium`, measured `anti-Xa activity`.
 
 ## Citation
 Laporte S et al., Population pharmacokinetic of nadropari…, European journal of pharmac… (1999)
   ·  DOI: [10.1016/s0928-0987(98)00064-5](https://doi.org/10.1016/s0928-0987(98)00064-5)
 
-<div class="pk-model-meta" hidden drug="nadroparin" model-id="Nadroparin_Laporte1999_reference" status="rejected" stale="true" population="children hospitalised for open heart surgery" measured-compound="nadroparin calcium" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="nadroparin" model-id="Nadroparin_Laporte1999_reference" status="rejected" stale="false" population="children hospitalised for open heart surgery" measured-compound="anti-Xa activity" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.
@@ -46,9 +46,9 @@ _No resolved parameters._
 ## Departures & gaps
 
 **Interpretation flags:**
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=nadroparin calcium
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=anti-Xa activity
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
+- review gap-fill skipped: this record measures 'anti-Xa activity', not nadroparin — the review values are the parent's
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Laporte_1999_metadata.yaml (0 record(s)); values are summary statistics, not a fitted model
@@ -60,16 +60,17 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | primary re-run | 0.4 (2/5 fields) | 3 |
+| `gpt-oss-120b` | primary re-run | 0.2 (1/5 fields) | 4 |
 | `gpt-oss:120b` | primary re-run | 0.2 (1/5 fields) | 4 |
 
-<details><summary>7 field discrepancies</summary>
+<details><summary>8 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `model.parameterization` | mechanistic | apparent | mismatch |
 | `gpt-oss-120b` | `parameters[apparent clearance]` | not captured | 0 | only_one_extracted |
-| `gpt-oss-120b` | `screen.primary_analyte` | nadroparin calcium | anti-Xa activity | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | nadroparin calcium | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | nadroparin calcium | unknown | mismatch |
 | `gpt-oss:120b` | `model.parameterization` | mechanistic | apparent | mismatch |
 | `gpt-oss:120b` | `parameters[apparent clearance]` | not captured | 0 | only_one_extracted |
 | `gpt-oss:120b` | `screen.dose_compound` | nadroparin calcium | unknown | mismatch |
@@ -98,7 +99,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_nadroparin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Laporte_1999` / `Laporte_1999::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_nadroparin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Laporte_1999` / `Laporte_1999::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -114,4 +115,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 18:12 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 21:15 UTC</sub>

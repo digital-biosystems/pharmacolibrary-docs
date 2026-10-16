@@ -18,7 +18,7 @@
 
 **The clearance plausibility check could not be computed.**
 
-The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. None of the extracted parameters is leflunomide's own; they describe teriflunomide. Extracted — teriflunomide: kfm 0.65 1/day, fm -6.15, CL 176 L/day, V 7.95 L.
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. None of the extracted parameters is leflunomide's own; they describe teriflunomide. Extracted — teriflunomide: fm 0.65, CL 176 L/day, V 7.95 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has leflunomide, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -33,7 +33,7 @@ Hopkins AM et al., Semiphysiologically Based Pharmacokinet…, CPT: pharmacometr
 <div class="pk-model-meta" hidden drug="leflunomide" model-id="Leflunomide_Hopkins2015_full" status="needs_review" stale="false" population="rheumatoid arthritis patients" measured-compound="teriflunomide" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
-**Parameters:** 4 extracted.
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -42,8 +42,8 @@ Hopkins AM et al., Semiphysiologically Based Pharmacokinet…, CPT: pharmacometr
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| MFCLL (θ1) | `Q305` · kfm | 0.65 | 1/day | 7.523148148148148e-06 | 1/h | not captured | exact (1.0) | tbl1:row22:col6 | — | not captured |
-| LGTFU (θ2) | `Q45` · fm | -6.15 | not captured | not captured | not captured | not captured | exact (1.0) | tbl1:row25:col6 | — | not captured |
+| MFCLL (θ1) | `Q45` · fm | 0.65 | not captured | not captured | not captured | not captured | exact (1.0) | tbl1:row22:col6 | — | not captured |
+| LGTFU (θ2) | `Q900` · equation variable | -6.15 | not captured | not captured | not captured | not captured | llm (0.6) | tbl1:row25:col6 | — | not captured |
 | CLINT (θ3) (L/day/70 kg FFM) | `Q22` · CL | 176 | L/day | 2.037037037037037e-06 | L/h | not captured | exact (1.0) | tbl1:row27:col6 | — | not captured |
 | VBODY (θ5) (L/70 kg FFM) | `Q61` · V | 7.95 | L | 0.00795 | L | not captured | exact (1.0) | tbl1:row29:col6 | — | not captured |
 
@@ -61,45 +61,22 @@ Hopkins AM et al., Semiphysiologically Based Pharmacokinet…, CPT: pharmacometr
 - unit_dimension_unknown: 'L/70 kg FFM' (V1)
 - dropped unlinked row (NIL): 'COVALT(θ6)' — extend the ontology if this is a real PK parameter (source ['tbl1:row30:col6'])
 - dropped unlinked row (NIL): 'FU η (η1) (ω1; SD)' — extend the ontology if this is a real PK parameter (source ['tbl1:row32:col6'])
-- dropped diagnostic row 'η1 shrinkage (%)' → Q318 (shrinkage) — reported statistic, not a parameter
-- dropped diagnostic row 'η2 shrinkage (%)' → Q318 (shrinkage) — reported statistic, not a parameter
 - dropped unlinked row (NIL): 'VBODY (η3) (ω3; %CV)' — extend the ontology if this is a real PK parameter (source ['tbl1:row36:col6'])
-- dropped diagnostic row 'η3 shrinkage (%)' → Q318 (shrinkage) — reported statistic, not a parameter
 - dropped unlinked row (NIL): '(σ1; %CV)' — extend the ontology if this is a real PK parameter (source ['tbl1:row40:col6'])
-- dropped diagnostic row 'EPS1 shrinkage (%)' → Q318 (shrinkage) — reported statistic, not a parameter
 - dropped unlinked row (NIL): '(σ2; %CV)' — extend the ontology if this is a real PK parameter (source ['tbl1:row43:col6'])
-- dropped diagnostic row 'EPS2 shrinkage (%)' → Q318 (shrinkage) — reported statistic, not a parameter
 - dropped unlinked row (NIL): '(σ3; %CV)' — extend the ontology if this is a real PK parameter (source ['tbl1:row46:col6'])
-- dropped diagnostic row 'EPS3 shrinkage (%)' → Q318 (shrinkage) — reported statistic, not a parameter
-- implicit units: 'MFCLL (θ1)' → 1/day (from the popPK convention: "The parameter is described as a 'First-order rate constant' (kfm). In population PK models, first-order rate constants a")
-- implicit units: 'CLINT (θ3) (L/day/70 kg FFM)' → L/day (from the paper text: "The text states: 'The typical value of CLINT for an individual with an FFM of 70 kg... is 176 L/day'. The table caption/")
-- implicit units: 'VBODY (θ5) (L/70 kg FFM)' → L (from the popPK convention: "The parameter is a volume of distribution (VBODY). The text states 'Teriflunomide's volume of distribution is approximat")
+- implicit units: 'CLINT (θ3) (L/day/70 kg FFM)' → L/day (from the popPK convention: "The table caption and text do not explicitly state the unit for the column value. However, the text states 'The typical ")
+- implicit units: 'VBODY (θ5) (L/70 kg FFM)' → L (from the popPK convention: "The table caption and text do not explicitly state the unit for the column value. The text mentions teriflunomide's volu")
 - metabolite volume: 'VBODY (θ5) (L/70 kg FFM)' Q63→Q61 for teriflunomide — it is 1-compartment, so its central volume is its only volume
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=teriflunomide
-- template fit: none — only the metabolite is modelled — no parent compartment (site presystemic: 'Grabar et al.11 used a one-compartment population model and data from 71 patients, showing the loss-of-function CYP2C19*')
-- model-stage split: 'covariate model' is the full model of Hopkins_2015 (paper reports 3 stages: base model, covariate model, initial literature estimate); same population, different model-building step
-- row roles (LLM): model_class=compartmental; 43/43 row label(s) assigned, 45 linked by role; re-tagged leflunomide→parent ×3, leflunomide→teriflunomide ×64
+- template fit: none — pbpk model — not a compartmental parent–metabolite model (site presystemic: 'Grabar et al.11 used a one-compartment population model and data from 71 patients, showing the loss-of-function CYP2C19*')
+- model-stage split: 'covariate model' is the full model of Hopkins_2015 (paper reports 4 stages: base model, covariate model, initial literature estimate, mfcll); same population, different model-building step
+- row roles (LLM): model_class=pbpk; 37/37 row label(s) assigned, 25 linked by role; re-tagged leflunomide→parent ×9, leflunomide→teriflunomide ×44
 - review gap-fill skipped: this record measures 'teriflunomide', not leflunomide — the review values are the parent's
 
 **Extraction notes:**
-- unparsed cell tbl1:row3:col3 = '26, 27'
-- unparsed cell tbl1:row4:col3 = '26, 27'
-- unparsed cell tbl1:row5:col3 = '26, 28'
-- unparsed cell tbl1:row6:col3 = '26, 28'
-- unparsed cell tbl1:row7:col3 = '26, 27'
-- unparsed cell tbl1:row8:col3 = '26, 27'
-- unparsed cell tbl1:row9:col3 = '26, 27'
-- unparsed cell tbl1:row10:col3 = '22, 24'
-- unparsed cell tbl1:row12:col3 = '9, 18'
-- unparsed cell tbl1:row17:col3 = '30, 31, 32'
-- unparsed cell tbl1:row18:col1 = 'Bile flow for turnover of bile volume over 24 hours'
-- unparsed cell tbl1:row18:col3 = '30, 31, 32'
-- unparsed cell tbl1:row19:col3 = '30, 31, 32'
-- unparsed cell tbl1:row20:col3 = '30, 31, 32'
-- unparsed cell tbl1:row21:col3 = '9, 10'
-- unparsed cell tbl1:row23:col3 = '9, 10'
-- unparsed cell tbl1:row24:col3 = '9, 10'
-- unparsed cell tbl1:row29:col3 = '9, 17'
+- table tbl1: unbound_uncertainty
+- table tbl1: unparsed_numeric_cell
 - companion parameter table 3 transcribed (10 record(s), model stage 'base')
 - LLM selected parameter table(s) 1, 3
 
@@ -135,11 +112,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tbl1:row27:col6'] |
-| C5_dimension_Q305 | pass | 1 / [time] | not captured | not captured | not captured | ['tbl1:row22:col6'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['tbl1:row29:col6'] |
 | C6_cl_magnitude | fail | &lt;= 90.0 L/h | 176.0 | not captured | not captured | ['tbl1:row27:col6'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
@@ -153,7 +129,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_leflunomide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Hopkins_2015` / `Hopkins_2015::full`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_leflunomide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Hopkins_2015` / `Hopkins_2015::full`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -179,4 +155,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 23:58 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 04:08 UTC</sub>

@@ -18,9 +18,9 @@
 
 **Model:** Model available in **Models**; browser simulation unavailable.
 
-> The record describes a linear, additive stimulation model where omecamtiv mecarbil concentrations (ng/mL) increase Doppler-derived left ventricular outflow tract stroke volume (mL) with a slope of 1.6 mL per 100 ng/mL. The paper does not provide full text to specify the underlying mechanism or additional potency parameters.
+> Omecamtiv mecarbil concentration (ng/mL) is linked linearly to a stimulation of LVOTSV (mL) with an additive effect form, specified by a slope of 1.6 mL per 100 ng/mL. The specific mechanism, including rate or potency parameters, is not described in the provided excerpts.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Vu_2015`
 - **model family:** `linear`

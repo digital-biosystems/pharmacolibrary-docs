@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;baricitinib&quot;,&quot;href&quot;:&quot;drugs/drug_baricitinib/&quot;},{&quot;label&quot;:&quot;Zhang_2017 \u00b7 PD Hemoglobin&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;baricitinib&quot;,&quot;href&quot;:&quot;drugs/drug_baricitinib/&quot;},{&quot;label&quot;:&quot;Zhang_2017 \u00b7 PD hemoglobin&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Hemoglobin — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.364). Primary extraction retained.">cross-check: disputed</span>
+# hemoglobin — PD  <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.364). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -13,11 +13,11 @@
 
 ## Record summary
 
-**As extracted:** Baricitinib (concentrations from the PK model of Decker_2024::jia_a) drives Hemoglobin (in g/dL): delayed effect through transit (transduction) compartments.
+**As extracted:** Baricitinib (concentrations from the PK model of Decker_2024) drives hemoglobin (in g/dL): delayed effect through transit (transduction) compartments.
 
 **Model:** No model was generated from this record.
 
-> Baricitinib plasma concentrations inhibit the proliferation of the progenitor cell pool in the erythropoietic system using a proportional inhibitory model with a sigmoidal function (gamma) of 0.586, which downstream reduces reticulocyte production and consequently lowers hemoglobin levels. Key model parameters include a transit rate constant from the proliferation pool to reticulocytes (ktr1) of 0.0418 h⁻¹, a transit rate constant from reticulocytes to red blood cells (ktr2) of 0.0975 h⁻¹, and a hemoglobin scaling factor (SHb) of 30.2 pg/cell.
+> Baricitinib plasma concentrations inhibit the proliferation pool of erythroid progenitor cells via a sigmoidal indirect response mechanism within a transit compartment model, which reduces the production of reticulocytes and red blood cells, thereby lowering hemoglobin. The model characterizes this inhibition using a drug effect parameter of 0.00534 and a sigmoidal exponent of 0.586, while Hgb is derived from cell counts using a proportionality scaling factor (SHb) of 30.2 pg/cell.
 >
 > <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
@@ -36,13 +36,11 @@ Zhang X et al., Dose/Exposure-Response Modeling to Supp…, CPT: pharmacometrics
 |---|---|---|---|---|---|---|---|
 | PD (effect) | Baseline RET | `Q324` · not captured | 16.3 | 109 cells/L | not captured | llm (not captured) | Zhang_2017:pdv3 |
 | PD (effect) | Transit rate constant from proliferation pool to RET (ktr1) | `Q338` · not captured | 0.0418 | Hour | not captured | llm (not captured) | Zhang_2017:pdv3 |
-| model term | Feedback factor for RET | `Q900` · not captured | 0.352 | not captured | not captured | llm (not captured) | Zhang_2017:pdv3 |
 | PD (effect) | Transit rate constant from RET to RBC (ktr2) | `Q338` · not captured | 0.0975 | Hour | not captured | llm (not captured) | Zhang_2017:pdv3 |
-| PD (effect) | Drug effect on proliferation pool | `Q323` · not captured | 0.00534 | not captured | not captured | llm (not captured) | Zhang_2017:pdv3 |
-| PD (effect) | Sigmoidal function for drug effect on proliferation pool | `Q325` · not captured | 0.586 | not captured | not captured | llm (not captured) | Zhang_2017:pdv3 |
 | PD (effect) | Transit rate constant for RBC (kcir) | `Q338` · not captured | 0.00139 | Hour | not captured | llm (not captured) | Zhang_2017:pdv3 |
+| PD (effect) | Drug effect on proliferation pool | `Q335` · not captured | 0.00534 | not captured | not captured | llm (not captured) | Zhang_2017:pdv3 |
+| PD (effect) | Sigmoidal function for drug effect on proliferation pool | `Q325` · not captured | 0.586 | not captured | not captured | llm (not captured) | Zhang_2017:pdv3 |
 | model term | Proportionality scaling factor (SHb) | `Q900` · not captured | 30.2 | pg/cell | not captured | llm (not captured) | Zhang_2017:pdv3 |
-| model term | Feedback factor for RBC | `Q900` · not captured | 0.925 | not captured | not captured | llm (not captured) | Zhang_2017:pdv3 |
 | variability | Additive residual error for Hgb | `Q315` · not captured | 7.82 | not captured | not captured | llm (not captured) | Zhang_2017:pdv3 |
 
 <details class="legend">

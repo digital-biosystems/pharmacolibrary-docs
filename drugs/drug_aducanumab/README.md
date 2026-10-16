@@ -17,23 +17,32 @@ Aducanumab is a monoclonal antibody against beta-amyloid that was developed to t
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 01:03 | 2:06 | 0/2/0 | 1/0/2 | 0/0/0 | 107,958/7,067 | ollama / glm-5.3-flash | 3 | 0/3 | 3/0 | 0 |
+| 2026-10-13 13:17 | 1:52 | 0/2/0 | 1/0/2 | 0/0/0 | 47,221/9,817 | einfracz / qwen3.8-27b | 3 | 0/3 | 3/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.3). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Kandadi_2022_reference](drugs/drug_aducanumab/Aducanumab_Kandadi2022_reference.md) | — | parent + metabolite (no model) | 0 (+4 cov.) | Kandadi Muralidharan K et al., Population pharmacokinetics and standar…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12728](https://doi.org/10.1002/psp4.12728) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Lim_2025_reference](drugs/drug_aducanumab/Aducanumab_Lim2025_reference.md) | — | 2-compartment (no model) | 3 | Lim S et al., Sex differences in efficacy/safety of a…, Translational and clinical… (2025) | [10.12793/tcp.2025.33.e19](https://doi.org/10.12793/tcp.2025.33.e19) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Kandadi_2022_reference](drugs/drug_aducanumab/Aducanumab_Kandadi2022_reference.md) | — | parent + metabolite (no model) | 0 (+4 cov.) | Kandadi Muralidharan K et al., Population pharmacokinetics and standar…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12728](https://doi.org/10.1002/psp4.12728) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.833). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Lim_2025_reference](drugs/drug_aducanumab/Aducanumab_Lim2025_reference.md) | — | 2-compartment (no model) | 3 | Lim S et al., Sex differences in efficacy/safety of a…, Translational and clinical… (2025) | [10.12793/tcp.2025.33.e19](https://doi.org/10.12793/tcp.2025.33.e19) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.778). Primary extraction retained.">cross-check: disputed</span> | [Kandadi_2022_SUVR](drugs/drug_aducanumab/pd_Kandadi_2022_SUVR.md) | composite standard uptake value ratio (SUVR) ← aducanumab · indirect response — drug stimulates the loss of composite standard uptake value ratio (SUVR) | — | Kandadi Muralidharan K et al., Population pharmacokinetics and standar…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12728](https://doi.org/10.1002/psp4.12728) |
+| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.875). Primary extraction retained.">cross-check: disputed</span> | [Kandadi_2022_SUVR](drugs/drug_aducanumab/pd_Kandadi_2022_SUVR.md) | composite SUVR ← aducanumab · indirect response — drug stimulates the loss of composite SUVR | — | Kandadi Muralidharan K et al., Population pharmacokinetics and standar…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12728](https://doi.org/10.1002/psp4.12728) |
 | <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Muralidharan_2022_ARIA_E](drugs/drug_aducanumab/pd_Muralidharan_2022_ARIA_E.md) | first incidence of ARIA-E ← aducanumab · time-to-event model | — | Muralidharan KK et al., A Time-to-Event Exposure-Response Model…, Journal of clinical pharmac… (2022) | [10.1002/jcph.2047](https://doi.org/10.1002/jcph.2047) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span> | [Muralidharan_2022_ARIA_E_resolution](drugs/drug_aducanumab/pd_Muralidharan_2022_ARIA_E_resolution.md) | time to ARIA-E resolution ← aducanumab · time-to-event model | — | Muralidharan KK et al., A Time-to-Event Exposure-Response Model…, Journal of clinical pharmac… (2022) | [10.1002/jcph.2047](https://doi.org/10.1002/jcph.2047) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span> | [van_2025_CL](drugs/drug_aducanumab/pd_van_2025_CL.md) | Amyloid plaque burden (amyloid PET, Centiloid) ← aducanumab · indirect response — drug stimulates the loss of Amyloid plaque burden (amyloid PET, Centiloid) | — | van Maanen E et al., Modeling amyloid plaque turnover dynami…, Alzheimer's & dementia (New… (2025) | [10.1002/trc2.70169](https://doi.org/10.1002/trc2.70169) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Muralidharan_2022_ARIA_E_2](drugs/drug_aducanumab/pd_Muralidharan_2022_ARIA_E_2.md) | time to ARIA-E resolution ← aducanumab · time-to-event model | — | Muralidharan KK et al., A Time-to-Event Exposure-Response Model…, Journal of clinical pharmac… (2022) | [10.1002/jcph.2047](https://doi.org/10.1002/jcph.2047) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed</span> | [van_2025_CL](drugs/drug_aducanumab/pd_van_2025_CL.md) | amyloid plaque burden ← aducanumab · indirect response — drug stimulates the production of amyloid plaque burden | — | van Maanen E et al., Modeling amyloid plaque turnover dynami…, Alzheimer's & dementia (New… (2025) | [10.1002/trc2.70169](https://doi.org/10.1002/trc2.70169) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=aducanumab).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: APP (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

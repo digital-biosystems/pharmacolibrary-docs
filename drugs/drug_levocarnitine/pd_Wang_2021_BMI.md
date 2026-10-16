@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A16A&quot;,&quot;href&quot;:&quot;atc/A16A.md&quot;},{&quot;label&quot;:&quot;levocarnitine&quot;,&quot;href&quot;:&quot;drugs/drug_levocarnitine/&quot;},{&quot;label&quot;:&quot;Wang_2021 \u00b7 PD Body Mass index&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A16A&quot;,&quot;href&quot;:&quot;atc/A16A.md&quot;},{&quot;label&quot;:&quot;levocarnitine&quot;,&quot;href&quot;:&quot;drugs/drug_levocarnitine/&quot;},{&quot;label&quot;:&quot;Wang_2021 \u00b7 PD Body Mass&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Body Mass index — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.857). Primary extraction retained.">cross-check: disputed</span>
+# Body Mass — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.857). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -13,19 +13,19 @@
 
 ## Record summary
 
-**As extracted:** L-carnitine (the dose) drives Body Mass index (in %): direct Emax (saturable) effect.
+**As extracted:** L-carnitine (concentrations from the PK model of Fornasini_2007) drives Body Mass (in %): direct Emax (saturable) effect.
 
 **Model:** No model was generated from this record.
 
-> L-carnitine was modeled using an additive Emax model where treatment duration drives the inhibition of Body Mass Index (BMI), reaching 50% of the maximal effect (Emax) at an ET50 of 0.5 weeks. The maximal inhibitory effect on BMI was estimated at -1.51%, with the paper noting no significant dose-dependence within the tested range of 2–3 g/day.
+> L-carnitine treatment duration (weeks) was modeled to reduce Body Mass Index (BMI) via a time-dependent Emax function, rather than plasma concentration, with the paper noting no significant dose-dependence within the 2–3 g/day range. The maximal effect (Emax) on BMI was −1.51% and the treatment duration to reach half of the maximal effect (ET50) was 0.5 weeks.
 >
 > <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Wang_2021`
 - **model family:** `emax`
-- **driver:** `dose_only`
+- **driver:** `cited_pk`
 - **tier:** population
-- **effect:** inhibition/additive
+- **effect:** inhibition/unknown
 
 ## Citation
 Wang DD et al., The Effects of L-Carnitine, Acetyl-L-Ca…, Frontiers in nutrition (2021)
@@ -34,8 +34,8 @@ Wang DD et al., The Effects of L-Carnitine, Acetyl-L-Ca…, Frontiers in nutriti
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | Emax | `Q323` · not captured | -1.51 | % | not captured | llm (not captured) | Wang_2021:pdv3 |
-| — | ET50 | `Q100` · not captured | 0.5 | week | not captured | nil (not captured) | Wang_2021:pdv3 |
+| PD (effect) | Emax, % | `Q323` · not captured | -1.51 | % | not captured | direction (not captured) | Wang_2021:pdv3 |
+| — | ET50, week | `Q100` · not captured | 0.5 | week | not captured | nil (not captured) | Wang_2021:pdv3 |
 | PD (effect) | ET50, week | `Q321` · not captured | 0.5 | week | not captured | review_gapfill (not captured) | Wang_2021:review |
 | variability | ωEmax | `Q312` · not captured | 1.345 | not captured | not captured | llm (not captured) | Wang_2021:pdv3 |
 

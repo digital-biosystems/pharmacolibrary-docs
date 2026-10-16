@@ -17,13 +17,22 @@ Imiglucerase is an enzyme replacement medicine used to treat Gaucher's disease, 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 17:43 | 0:30 | 0/1/0 | 0/0/0 | 0/0/0 | 30,566/1,489 | einfracz / qwen3.8-27b | 6 | 0/6 | 6/0 | 0 |
+| 2026-10-15 03:13 | 0:24 | 0/1/0 | 0/0/0 | 0/0/0 | 17,157/1,152 | einfracz / qwen3.8-27b | 6 | 0/6 | 6/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.857), gpt-oss:120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Berger_2019_reference](drugs/drug_imiglucerase/Imiglucerase_Berger2019_reference.md) | — | 1-compartment (no model) | 2 | Berger J et al., Intra-monocyte Pharmacokinetics of Imig…, Clinical pharmacokinetics (2019) | [10.1007/s40262-018-0708-8](https://doi.org/10.1007/s40262-018-0708-8) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222), gpt-oss:120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Berger_2019_reference](drugs/drug_imiglucerase/Imiglucerase_Berger2019_reference.md) | — | 1-compartment (no model) | 2 | Berger J et al., Intra-monocyte Pharmacokinetics of Imig…, Clinical pharmacokinetics (2019) | [10.1007/s40262-018-0708-8](https://doi.org/10.1007/s40262-018-0708-8) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=imiglucerase).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: Glucocerebroside (other/unknown).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -34,8 +43,8 @@ Imiglucerase is an enzyme replacement medicine used to treat Gaucher's disease, 
 ## Coverage
 
 - **PubMed hits:** 18 matched, 17 returned
-- **screened:** 4  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 1
+- **screened:** 4  ·  **relevant:** 0
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -44,30 +53,30 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Berger_2019.pdf` | Berger J et al., Intra-monocyte Pharmacokinetics of Imig…, Clinical pharmacokinetics (2019) | popPK | 10 | [10.1007/s40262-018-0708-8](https://doi.org/10.1007/s40262-018-0708-8) | [30128966](https://pubmed.ncbi.nlm.nih.gov/30128966) | The study reports a population-pharmacokinetic model for imiglucerase with specific half-lives and clearance correlations, although explicit CL and V values are not listed in the abstract. |
+| `Berger_2019.pdf` | Berger J et al., Intra-monocyte Pharmacokinetics of Imig…, Clinical pharmacokinetics (2019) | popPK | 9 | [10.1007/s40262-018-0708-8](https://doi.org/10.1007/s40262-018-0708-8) | [30128966](https://pubmed.ncbi.nlm.nih.gov/30128966) | The study reports a population PK model for imiglucerase in humans with quantitative half-lives (0.36 and 9.7 days), but specific clearance (CL) and volume (V) parameters are likely in figures or supplementary material not provided in the text. |
 | `Grabowski_2009.pdf` | Grabowski GA et al., Dose-response relationships for enzyme…, Genetics in medicine : offi… (2009) | pd | 4 | [10.1097/GIM.0b013e31818e2c19](https://doi.org/10.1097/GIM.0b013e31818e2c19) | [19265748](https://www.ncbi.nlm.nih.gov/pubmed/19265748) | metadata signals extractable PD data (Emax) |
 
-<sub>queue written 2026-10-07T17:43:18.385046+00:00</sub>
+<sub>queue written 2026-10-15T03:13:00.160864+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| PGx | Abian_2011 | not_relevant | 0 | 0 | The paper investigates the stability and interaction of imiglucerase with miglustat, but does not report any gene variant effects on the pharmacokinetic or pharmacodynamic parameters of imiglucerase. |
-| PGx | Basiri_2023 | not_relevant | 0 | 0 | The paper reports a pharmacogenomic association (GBA1 genotype) with a clinical outcome (osteonecrosis risk), not with a pharmacokinetic (e.g., clearance, half-life) or pharmacodynamic (e.g., enzyme activity, biomarker clearance rate) parameter of imiglucerase. |
-| PGx | Darling_2021 | not_relevant | 0 | 0 | The paper reports the efficacy of levodopa on parkinsonian features and the genetic basis of Gaucher disease, but it does not report a pharmacogenomic effect on the PK or PD parameters of imiglucerase. |
-| PGx | Dasgupta_2013 | not_relevant | 0 | 0 | The paper reports transcriptomic gene expression changes in a mouse model treated with imiglucerase, not a pharmacogenomic effect of a human genetic variant on the drug's PK or PD. |
-| PGx | Germain_2004 | not_relevant | 0 | 0 | The paper provides a general overview of Gaucher's disease and imiglucerase therapy but does not report specific pharmacogenomic effects on PK or PD parameters. |
+| PGx | Abian_2011 | not_relevant | 0 | 0 | The paper studies the physicochemical stability of imiglucerase and the effect of miglustat on it in vitro, rather than reporting pharmacogenomic effects on PK or PD parameters in patients. |
+| PGx | Basiri_2023 | not_relevant | 0 | 0 | The study examines GBA1 genotype as a risk factor for the clinical event avascular osteonecrosis (AVN) and compares biomarker levels between drugs, but does not report how a gene variant alters the pharmacokinetic or pharmacodynamic parameters (e.g., clearance, volume of distribution) of imiglucerase itself. |
+| popPK | Berger_2019 | relevant | 9 | 2 | The study reports a population PK model for imiglucerase in humans with quantitative half-lives (0.36 and 9.7 days), but specific clearance (CL) and volume (V) parameters are likely in figures or supplementary material not provided in the text. |
+| PGx | Darling_2021 | not_relevant | 2 | 5 | The paper describes a pharmacodynamic response of levodopa in a patient with a GBA gene mutation, rather than how a gene variant affects the pharmacokinetics or pharmacodynamics of imiglucerase. |
+| PGx | Dasgupta_2013 | not_relevant | 0 | 0 | The study compares transcriptomic effects of different drugs in a fixed genotype mouse model and does not investigate how human gene variants or patient genotypes influence the pharmacokinetics or pharmacodynamics of imiglucerase. |
+| PGx | Germain_2004 | not_relevant | 0 | 0 | The text is a general overview of Gaucher disease and its treatments, lacking specific pharmacogenomic or quantitative PK/PD effect data. |
 | popPK | Grabowski_2009 | irrelevant | 0 | 0 | no_text gate: only 128 chars of text extracted (&lt; 400) |
-| PGx | Higashi_2024 | not_relevant | 1 | 0 | The paper reports clinical efficacy of ambroxol in Gaucher patients but does not report pharmacokinetic or pharmacodynamic parameters of imiglucerase being altered by genotype. |
-| PGx | Ibrahim_2016 | not_relevant | 0 | 0 | The paper compares clinical outcomes (PD) of eliglustat and imiglucerase but does not report pharmacokinetic parameters or gene-variant specific effect sizes for imiglucerase. |
-| PGx | Pleat_2016 | not_relevant | 0 | 0 | The paper reports clinical stability in a subpopulation of patients switching treatments; it does not report pharmacokinetic or pharmacodynamic parameters modified by specific gene variants or genotypes for imiglucerase. |
-| PGx | Scott_2015 | not_relevant | 0 | 0 | The paper reviews eliglustat and mentions imiglucerase only for comparative noninferiority, without reporting pharmacogenomic effects on its PK/PD. |
-| PGx | Starosta_2025 | not_relevant | 0 | 0 | The study focuses on developing a liver fibrosis score (GLFS) for Gaucher disease patients, not on how genetic variants affect the pharmacokinetics or pharmacodynamics of imiglucerase. |
-| PGx | Van_2016 | not_relevant | 0 | 0 | The paper is a general review of treatment options for Gaucher disease and does not report specific pharmacogenomic effects on PK/PD parameters for imiglucerase. |
-| popPK | Vigan_2014 | irrelevant | 0 | 0 | The paper is a simulation/methodological study on statistical estimation for time-to-event data, not a pharmacokinetic study, and it reports no PK parameters (CL, V, etc.) for imiglucerase. |
-| PGx | Vigan_2014_2 | not_relevant | 1 | 3 | The paper reports that a specific genotype (N370S/N370S) was tested as a covariate, but the results indicate that only age, sex, and splenectomy status were significant predictors, meaning no pharmacogenomic effect on the biomarkers (PD) was reported or quantified. |
-| PGx | Yassin_2008 | not_relevant | 2 | 5 | The paper reports the efficacy of imiglucerase in a patient with a novel genotype but does not report pharmacokinetic (PK) parameters or specific pharmacodynamic (PD) effects mediated by the genotype itself. |
+| PGx | Higashi_2024 | not_relevant | 0 | 0 | The paper reports on the therapeutic efficacy of ambroxol as a chaperone therapy for Gaucher disease and mentions the use of imiglucerase in the context of a case study, but it does not measure or report any pharmacokinetic (e.g., clearance, half-life) or pharmacodynamic (e.g., enzyme activity, substrate reduction) parameters of imiglucerase being modified by a genetic variant. |
+| PGx | Ibrahim_2016 | not_relevant | 0 | 0 | The paper compares clinical outcomes of two different drugs (eliglustat vs imiglucerase) but does not report pharmacokinetic or pharmacodynamic parameters modified by specific gene variants. |
+| PGx | Pleat_2016 | not_relevant | 0 | 0 | The paper reports on clinical stability (hemoglobin, platelets, organ volumes) when switching enzyme therapies, not on how a specific pharmacogenomic variant (CYP2D6) affects the pharmacokinetic or pharmacodynamic parameters of imiglucerase. |
+| PGx | Scott_2015 | not_relevant | 2 | 0 | The paper reviews eliglustat and mentions imiglucerase only as a comparator in non-inferiority trials, without reporting any pharmacogenomic effects on imiglucerase's PK or PD parameters. |
+| PGx | Starosta_2025 | not_relevant | 1 | 0 | The study focuses on developing a liver fibrosis score for Gaucher disease and does not analyze the impact of gene variants on the pharmacokinetics or pharmacodynamics of imiglucerase. |
+| PGx | Van_2016 | not_relevant | 1 | 2 | The paper is a review of Gaucher disease treatments and does not report pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of imiglucerase. |
+| popPK | Vigan_2014 | irrelevant | 0 | 0 | The study is a simulation/methodological paper on discrete time-to-event models for bone events, not a pharmacokinetic study reporting disposition parameters (CL, V, etc.) for imiglucerase. |
+| PGx | Yassin_2008 | not_relevant | 2 | 0 | The paper describes a specific genotype in a single patient and notes the need for a high dose for imiglucerase, but it does not report a pharmacogenomic effect on a PK or PD parameter in a comparative or quantitative manner. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 17:43 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-15 03:12 UTC</sub>

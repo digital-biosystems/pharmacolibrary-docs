@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;golimumab&quot;,&quot;href&quot;:&quot;drugs/drug_golimumab/&quot;},{&quot;label&quot;:&quot;Xu_2019 \u00b7 PD Mayo score-based efficacy outcomes&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Golimumab_Dreesen2020_reference&quot;,&quot;label&quot;:&quot;Dreesen_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_golimumab/Golimumab_Dreesen2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Golimumab_Lee2023_reference&quot;,&quot;label&quot;:&quot;Lee_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_golimumab/Golimumab_Lee2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Golimumab_RodrguezFernndez2022_reference&quot;,&quot;label&quot;:&quot;Rodr\u00edguez-Fern\u00e1ndez_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_golimumab/Golimumab_RodrguezFernndez2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Golimumab_Dreesen2020_base_model_estimate_rse&quot;,&quot;label&quot;:&quot;Dreesen_2020_base_model_estimate_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_golimumab/Golimumab_Dreesen2020_base_model_estimate_rse.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Golimumab_Lee2023_reference&quot;,&quot;label&quot;:&quot;Lee_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_golimumab/Golimumab_Lee2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Mayo score-based efficacy outcomes — PD  <span class="pk-badge pk-badge--orange">needs review</span>
@@ -14,17 +14,17 @@
 
 ## Record summary
 
-**As extracted:** Golimumab (concentrations from the PK model of Dreesen_2020) drives Mayo score-based efficacy outcomes: categorical (graded) response model.
+**As extracted:** Golimumab (concentrations from this paper's PK model) drives Mayo score-based efficacy outcomes: categorical (graded) response model.
 
 **Model:** No model was generated from this record.
 
-> The record indicates that golimumab concentrations affect Mayo score-based efficacy outcomes via a cited PK model, but the paper does not provide the full text to specify the mechanism or potency values.
+> The record identifies golimumab as the driver for Mayo score-based efficacy outcomes but does not specify the mechanism of action or provide any potency or rate values. No paper excerpts are available to confirm the PD model structure.
 >
 > <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Xu_2019`
 - **model family:** `categorical`
-- **driver:** `cited_pk`
+- **driver:** `pk_record`
 - **tier:** population
 - **effect:** unknown/unknown
 

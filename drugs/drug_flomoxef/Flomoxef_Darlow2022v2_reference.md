@@ -41,10 +41,10 @@ Darlow CA et al., Flomoxef for neonates: extending option…, The Journal of ant
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| ClStd (L/h/70 kg) | `Q354` · CLnorm | 23.759 | L/h/70 kg | 6.5997222222222225e-06 | [l] / [[h] · [70kg]] | not captured | exact (1.0) | dkab468-T2:row1:col2, dkab468-T2:row1:col3 | — | not captured |
-| VStd (L/70 kg) | `Q352` · Vnorm | 22.499 | L/70 kg | 0.022498999999999998 | [l] / [70kg] | not captured | exact (1.0) | dkab468-T2:row2:col2, dkab468-T2:row2:col3 | — | not captured |
-| KCP (h−1) | `Q301` · k12 | 5.890 | h−1 | 0.001636111111111111 | [1] / [h] | not captured | exact (1.0) | dkab468-T2:row3:col2, dkab468-T2:row3:col3 | — | not captured |
-| KPC (h−1) | `Q302` · k21 | 11.443 | h−1 | 0.003178611111111111 | [1] / [h] | not captured | exact (1.0) | dkab468-T2:row4:col2, dkab468-T2:row4:col3 | — | not captured |
+| ClStd (L/h/70 kg) | `Q354` · CLnorm | 23.759 | L/h/70 kg | 6.5997222222222225e-06 | [l] / [[h] · [70kg]] | not captured | exact (1.0) | dkab468-T2:row1:col1, dkab468-T2:row1:col2 | — | not captured |
+| VStd (L/70 kg) | `Q352` · Vnorm | 22.499 | L/70 kg | 0.022498999999999998 | [l] / [70kg] | not captured | exact (1.0) | dkab468-T2:row2:col1, dkab468-T2:row2:col2 | — | not captured |
+| KCP (h−1) | `Q301` · k12 | 5.890 | h−1 | 0.001636111111111111 | [1] / [h] | not captured | exact (1.0) | dkab468-T2:row3:col1, dkab468-T2:row3:col2 | — | not captured |
+| KPC (h−1) | `Q302` · k21 | 11.443 | h−1 | 0.003178611111111111 | [1] / [h] | not captured | exact (1.0) | dkab468-T2:row4:col1, dkab468-T2:row4:col2 | — | not captured |
 | Vd (L) | `Q61` · V | 3.27 | L | 0.00327 | L | not captured | review_gapfill (0.7) | Kusumoto_2024:review | — | not captured |
 
 <details class="legend">
@@ -55,22 +55,25 @@ Darlow CA et al., Flomoxef for neonates: extending option…, The Journal of ant
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'A' — extend the ontology if this is a real PK parameter (source ['dkab468-T2:row5:col2', 'dkab468-T2:row5:col3'])
-- dropped unlinked row (NIL): 'B' — extend the ontology if this is a real PK parameter (source ['dkab468-T2:row6:col2', 'dkab468-T2:row6:col3'])
+- competing summary columns for 'ClStd (L/h/70 kg)'; not population strata
+- competing summary columns for 'VStd (L/70 kg)'; not population strata
+- competing summary columns for 'KCP (h−1)'; not population strata
+- competing summary columns for 'KPC (h−1)'; not population strata
+- competing summary columns for 'A'; not population strata
+- competing summary columns for 'B'; not population strata
+- dropped unlinked row (NIL): 'A' — extend the ontology if this is a real PK parameter (source ['dkab468-T2:row5:col1', 'dkab468-T2:row5:col2'])
+- dropped unlinked row (NIL): 'B' — extend the ontology if this is a real PK parameter (source ['dkab468-T2:row6:col1', 'dkab468-T2:row6:col2'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=flomoxef
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- status held at route_to_review — not promoted
 - skipped review gap-fill of CL: primary's parameterization (rate-constant / ka-only) does not use it
 - gap-filled Q61 (V) from Kusumoto_2024's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- unparsed cell dkab468-T2:row1:col1 = '24.059 (21.667–30.842)'
-- unparsed cell dkab468-T2:row2:col1 = '19.595 (18.23–21.585)'
-- unparsed cell dkab468-T2:row3:col1 = '2.770 (1.709–4.696)'
-- unparsed cell dkab468-T2:row4:col1 = '7.007 (2.438–13.201)'
-- unparsed cell dkab468-T2:row5:col1 = '0.350 (0.299–0.458)'
-- unparsed cell dkab468-T2:row6:col1 = '0.744 (0.695–0.790)'
+- table dkab468-T2: competing_summary_estimates
+- table dkab468-T2: ambiguous_uncertainty_binding
 - LLM selected parameter table(s) 2
 
 ## Validation
@@ -102,10 +105,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q301 | pass | 1 / [time] | not captured | not captured | not captured | ['dkab468-T2:row3:col2', 'dkab468-T2:row3:col3'] |
-| C5_dimension_Q302 | pass | 1 / [time] | not captured | not captured | not captured | ['dkab468-T2:row4:col2', 'dkab468-T2:row4:col3'] |
-| C5_dimension_Q352 | pass | [length] ** 3 | not captured | not captured | not captured | ['dkab468-T2:row2:col2', 'dkab468-T2:row2:col3'] |
-| C5_dimension_Q354 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['dkab468-T2:row1:col2', 'dkab468-T2:row1:col3'] |
+| C5_dimension_Q301 | pass | 1 / [time] | not captured | not captured | not captured | ['dkab468-T2:row3:col1', 'dkab468-T2:row3:col2'] |
+| C5_dimension_Q302 | pass | 1 / [time] | not captured | not captured | not captured | ['dkab468-T2:row4:col1', 'dkab468-T2:row4:col2'] |
+| C5_dimension_Q352 | pass | [length] ** 3 | not captured | not captured | not captured | ['dkab468-T2:row2:col1', 'dkab468-T2:row2:col2'] |
+| C5_dimension_Q354 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['dkab468-T2:row1:col1', 'dkab468-T2:row1:col2'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Kusumoto_2024:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q61 | pass | volume within physiological range | 3.27 L | not captured | not captured | ['Kusumoto_2024:review'] |
@@ -117,7 +120,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_flomoxef/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Darlow_2022_2` / `Darlow_2022_2::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_flomoxef/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Darlow_2022_2` / `Darlow_2022_2::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -143,4 +146,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 11:06 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 00:07 UTC</sub>

@@ -18,11 +18,22 @@ Selinexor is an anticancer medicine used to treat multiple myeloma. It is an app
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 21:40 | 0:12 | 0/0/0 | 0/0/0 | 0/0/0 | 20,366/416 | einfracz / qwen3.8-27b | 2 | 1/1 | 2/0 | 0 |
+| 2026-10-14 20:58 | 0:11 | 0/0/0 | 0/0/0 | 0/0/0 | 20,366/450 | einfracz / qwen3.8-27b | 2 | 1/1 | 2/0 | 0 |
 
 ## popPK records
 
 _not available_
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=selinexor).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | `CYP3A4` substrate, `SLCO1B3` inhibitor | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: XPO1 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -43,20 +54,20 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Xu_2021.pdf` | Xu H et al., Selinexor population pharmacokinetic an…, Cancer chemotherapy and pha… (2021) | popPK | 10 | [10.1007/s00280-021-04258-6](https://doi.org/10.1007/s00280-021-04258-6) | [33770229](https://pubmed.ncbi.nlm.nih.gov/33770229) | The paper describes a population PK model for selinexor but the specific numeric parameter estimates (CL, V, Q) are not present in the provided abstract or evidence text. |
-| `Bader_2021.pdf` | Bader JC et al., Pharmacokinetics of Selinexor: The Firs…, Clinical pharmacokinetics (2021) | popPK | 9 | [10.1007/s40262-021-01016-y](https://doi.org/10.1007/s40262-021-01016-y) | [33928519](https://pubmed.ncbi.nlm.nih.gov/33928519) | The text describes a population PK model and qualitative parameter drivers (weight, sex) but contains no numeric values for clearance, volume, or half-life. |
+| `Xu_2021.pdf` | Xu H et al., Selinexor population pharmacokinetic an…, Cancer chemotherapy and pha… (2021) | popPK | 10 | [10.1007/s00280-021-04258-6](https://doi.org/10.1007/s00280-021-04258-6) | [33770229](https://pubmed.ncbi.nlm.nih.gov/33770229) | The paper describes a population PK model with covariates but does not provide the specific numeric parameter values (CL, V, Q) in the extracted evidence, likely because they reside in the full text or figures not included here. |
+| `Bader_2021.pdf` | Bader JC et al., Pharmacokinetics of Selinexor: The Firs…, Clinical pharmacokinetics (2021) | popPK | 9 | [10.1007/s40262-021-01016-y](https://doi.org/10.1007/s40262-021-01016-y) | [33928519](https://pubmed.ncbi.nlm.nih.gov/33928519) | The paper describes a population PK model for selinexor but only provides qualitative ranges (Tmax, t1/2) and parameter covariates, without listing the specific numeric values for clearance, volume, or intercompartmental clearance. |
 
-<sub>queue written 2026-10-06T21:40:56.662391+00:00</sub>
+<sub>queue written 2026-10-14T20:58:06.956099+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Altman_2026 | irrelevant | 0 | 0 | The paper is a cancer biology study on carboplatin resistance in TNBC models where selinexor is used only as a drug in a combination therapy arm, with no pharmacokinetic data reported. |
-| popPK | Bader_2021 | relevant | 9 | 0 | The text describes a population PK model and qualitative parameter drivers (weight, sex) but contains no numeric values for clearance, volume, or half-life. |
-| popPK | Shah_2021 | irrelevant | 0 | 0 | The paper reports health-related quality of life and utility outcomes, not pharmacokinetic parameters. |
-| popPK | Shen_2025 | irrelevant | 0 | 0 | The study focuses on structure-activity relationships and efficacy of novel XPO1 modulators (SITAs) in a mouse model of GVHD, with selinexor serving only as a comparator agent for tolerability, and no PK parameters for selinexor are reported. |
-| popPK | Xu_2021 | relevant | 10 | 1 | The paper describes a population PK model for selinexor but the specific numeric parameter estimates (CL, V, Q) are not present in the provided abstract or evidence text. |
+| popPK | Altman_2026 | irrelevant | 0 | 0 | This is a preclinical mechanistic study of TNBC resistance and drug efficacy; it does not report quantitative pharmacokinetic parameters (CL, V, Q, ka) for selinexor. |
+| popPK | Bader_2021 | relevant | 9 | 2 | The paper describes a population PK model for selinexor but only provides qualitative ranges (Tmax, t1/2) and parameter covariates, without listing the specific numeric values for clearance, volume, or intercompartmental clearance. |
+| popPK | Shah_2021 | irrelevant | 0 | 0 | The paper reports health-related quality of life and health utility outcomes for selinexor, but contains no pharmacokinetic disposition parameters or models. |
+| popPK | Shen_2025 | irrelevant | 0 | 0 | The study focuses on the discovery and evaluation of new XPO1-targeting compounds (SITAs) for GVHD, with selinexor used only as a comparator for tolerability, and no selinexor pharmacokinetic parameters are reported. |
+| popPK | Xu_2021 | relevant | 10 | 0 | The paper describes a population PK model with covariates but does not provide the specific numeric parameter values (CL, V, Q) in the extracted evidence, likely because they reside in the full text or figures not included here. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;ciclosporin&quot;,&quot;href&quot;:&quot;drugs/drug_ciclosporin/&quot;},{&quot;label&quot;:&quot;Han_2013 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ciclosporin_Kauv2025_reference&quot;,&quot;label&quot;:&quot;Kauv_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciclosporin/Ciclosporin_Kauv2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciclosporin_Han2013_reference&quot;,&quot;label&quot;:&quot;Han_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciclosporin/Ciclosporin_Han2013_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ciclosporin_Gao2022_reference&quot;,&quot;label&quot;:&quot;Gao_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciclosporin/Ciclosporin_Gao2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciclosporin_Kauv2025_reference&quot;,&quot;label&quot;:&quot;Kauv_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciclosporin/Ciclosporin_Kauv2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciclosporin_Han2013_reference&quot;,&quot;label&quot;:&quot;Han_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciclosporin/Ciclosporin_Han2013_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Albitar_2022_eGFR&quot;,&quot;label&quot;:&quot;Albitar_2022 \u00b7 eGFR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ciclosporin/pd_Albitar_2022_eGFR.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,22 +17,22 @@
 
 ### Reviewer guidance
 
-**Ciclosporin model intercompartmental rate constants were left at library defaults rather than using the paper's estimates.**
+**K12, k21 use library defaults, not estimates from this paper; t6_deviations.**
 
-The record lists clearance, volume, and absorption parameters, but lacks values for the two intercompartmental rates. These missing parameters were filled with placeholder values, making the simulated profile unsupported by the publication. The apparent assumption of bioavailability equal to one and no molar correction further diverges from explicit experimental reporting. Extracted — ciclosporin: CL 23.5 L/h, CL/F 53 L/h, V 94.4 L, V/F 227 L, kabs 1.21 h -1, tlag 0.25 h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. A reported unit could not be converted (Fab), so that value has no SI equivalent. Extracted — ciclosporin: CL 23.5 L/h, V 94.4 L, CL/F 53 L/h, V/F 227 L, Fab 27 %, kabs 1.21 h -1, tlag 0.25 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cyclosporine, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Han K et al., Population pharmacokinetics of cyclospo…, The AAPS journal (2013)
   ·  DOI: [10.1208/s12248-013-9500-8](https://doi.org/10.1208/s12248-013-9500-8)
 
-<div class="pk-model-meta" hidden drug="ciclosporin" model-id="Ciclosporin_Han2013_reference" status="needs_review" stale="false" population="transplant recipients" measured-compound="cyclosporine" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="ciclosporin" model-id="Ciclosporin_Han2013_reference" status="needs_review" stale="false" population="transplant recipients" measured-compound="ciclosporin" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
-**Parameters:** 6 extracted.
+**Parameters:** 7 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -41,10 +41,11 @@ Han K et al., Population pharmacokinetics of cyclospo…, The AAPS journal (2013
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL (L/h) | `Q22` · CL | 23.5 | L/h | 6.527777777777778e-06 | [l] / [h] | not captured | exact (1.0) | Han_2013_table_2:row2:col1, Han_2013_table_2:row2:col2, Han_2013_table_2:row2:col3, Han_2013_table_2:row2:col6, Han_2013_table_2:row2:col16, Han_2013_table_2:row2:col28, Han_2013_table_2:row2:col29, Han_2013_table_2:row2:col30, Han_2013_table_2:row2:col35, Han_2013_table_2:row2:col36, Han_2013_table_2:row2:col37 | — | not captured |
-| CL/F (L/h) | `Q27` · CL/F | 53 | L/h | 1.4722222222222222e-05 | [l] / [h] | not captured | exact (1.0) | Han_2013_table_2:row3:col4, Han_2013_table_2:row3:col5, Han_2013_table_2:row3:col7, Han_2013_table_2:row3:col8, Han_2013_table_2:row3:col11, Han_2013_table_2:row3:col12, Han_2013_table_2:row3:col13, Han_2013_table_2:row3:col14, Han_2013_table_2:row3:col15, Han_2013_table_2:row3:col17, Han_2013_table_2:row3:col19, Han_2013_table_2:row3:col20, Han_2013_table_2:row3:col21, Han_2013_table_2:row3:col22, Han_2013_table_2:row3:col23, Han_2013_table_2:row3:col24, Han_2013_table_2:row3:col25, Han_2013_table_2:row3:col26, Han_2013_table_2:row3:col27, Han_2013_table_2:row3:col31, Han_2013_table_2:row3:col32, Han_2013_table_2:row3:col33, Han_2013_table_2:row3:col34, Han_2013_table_2:row3:col38 | — | not captured |
-| V (L) | `Q61` · V | 94.4 | L | 0.09440000000000001 | [l] | not captured | exact (1.0) | Han_2013_table_2:row4:col2, Han_2013_table_2:row4:col3, Han_2013_table_2:row4:col6, Han_2013_table_2:row4:col28, Han_2013_table_2:row4:col29, Han_2013_table_2:row4:col30, Han_2013_table_2:row4:col35, Han_2013_table_2:row4:col36, Han_2013_table_2:row4:col37 | — | not captured |
-| V/F (L) | `Q76` · V/F | 227 | L | 0.227 | [l] | not captured | exact (1.0) | Han_2013_table_2:row5:col5, Han_2013_table_2:row5:col7, Han_2013_table_2:row5:col11, Han_2013_table_2:row5:col12, Han_2013_table_2:row5:col13, Han_2013_table_2:row5:col15, Han_2013_table_2:row5:col17, Han_2013_table_2:row5:col19, Han_2013_table_2:row5:col20, Han_2013_table_2:row5:col21, Han_2013_table_2:row5:col22, Han_2013_table_2:row5:col23, Han_2013_table_2:row5:col24, Han_2013_table_2:row5:col25, Han_2013_table_2:row5:col26, Han_2013_table_2:row5:col27, Han_2013_table_2:row5:col31, Han_2013_table_2:row5:col32, Han_2013_table_2:row5:col33, Han_2013_table_2:row5:col34, Han_2013_table_2:row5:col38 | — | not captured |
+| CL (L/h) | `Q22` · CL | 23.5 | L/h | 6.527777777777778e-06 | [l] / [h] | not captured | exact (1.0) | Han_2013_table_2:row0:col3, Han_2013_table_2:row1:col3, Han_2013_table_2:row2:col3, Han_2013_table_2:row5:col3, Han_2013_table_2:row15:col3, Han_2013_table_2:row27:col3, Han_2013_table_2:row28:col3, Han_2013_table_2:row29:col3, Han_2013_table_2:row34:col3, Han_2013_table_2:row35:col3, Han_2013_table_2:row36:col3 | — | not captured |
+| V (L) | `Q61` · V | 94.4 | L | 0.09440000000000001 | [l] | not captured | exact (1.0) | Han_2013_table_2:row1:col5, Han_2013_table_2:row2:col5, Han_2013_table_2:row5:col5, Han_2013_table_2:row27:col5, Han_2013_table_2:row28:col5, Han_2013_table_2:row29:col5, Han_2013_table_2:row34:col5, Han_2013_table_2:row36:col5 | — | not captured |
+| CL/F (L/h) | `Q27` · CL/F | 53 | L/h | 1.4722222222222222e-05 | [l] / [h] | not captured | exact (1.0) | Han_2013_table_2:row3:col4, Han_2013_table_2:row4:col4, Han_2013_table_2:row6:col4, Han_2013_table_2:row7:col4, Han_2013_table_2:row10:col4, Han_2013_table_2:row11:col4, Han_2013_table_2:row12:col4, Han_2013_table_2:row13:col4, Han_2013_table_2:row14:col4, Han_2013_table_2:row16:col4, Han_2013_table_2:row18:col4, Han_2013_table_2:row19:col4, Han_2013_table_2:row20:col4, Han_2013_table_2:row21:col4, Han_2013_table_2:row22:col4, Han_2013_table_2:row23:col4, Han_2013_table_2:row24:col4, Han_2013_table_2:row25:col4, Han_2013_table_2:row26:col4, Han_2013_table_2:row30:col4, Han_2013_table_2:row31:col4, Han_2013_table_2:row32:col4, Han_2013_table_2:row33:col4, Han_2013_table_2:row37:col4 | — | not captured |
+| V/F (L) | `Q76` · V/F | 227 | L | 0.227 | [l] | not captured | exact (1.0) | Han_2013_table_2:row4:col6, Han_2013_table_2:row6:col6, Han_2013_table_2:row10:col6, Han_2013_table_2:row11:col6, Han_2013_table_2:row12:col6, Han_2013_table_2:row14:col6, Han_2013_table_2:row16:col6, Han_2013_table_2:row18:col6, Han_2013_table_2:row19:col6, Han_2013_table_2:row20:col6, Han_2013_table_2:row21:col6, Han_2013_table_2:row22:col6, Han_2013_table_2:row23:col6, Han_2013_table_2:row24:col6, Han_2013_table_2:row25:col6, Han_2013_table_2:row26:col6, Han_2013_table_2:row30:col6, Han_2013_table_2:row31:col6, Han_2013_table_2:row32:col6 | — | not captured |
+| F | `Q40` · Fab | 27 | % | not captured | not captured | not captured | exact (1.0) | Han_2013_table_2:row15:col7, Han_2013_table_2:row27:col7, Han_2013_table_2:row28:col7, Han_2013_table_2:row29:col7, Han_2013_table_2:row34:col7, Han_2013_table_2:row35:col7 | — | not captured |
 | ka (h -1 ) | `Q49` · kabs | 1.21 | h -1 | 0.0003361111111111111 | 1/h | not captured | review_gapfill (0.7) | Kauv_2025:review | — | not captured |
 | t lag (h) | `Q83` · tlag | 0.25 | h | 900.0 | h | not captured | review_gapfill (0.7) | Kauv_2025:review | — | not captured |
 
@@ -63,14 +64,18 @@ Han K et al., Population pharmacokinetics of cyclospo…, The AAPS journal (2013
 - column '(17)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - column '(18)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - column '(19)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column '(20)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - column '(21)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column '(22)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - column '(23)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column '(24)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - column '(25)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - column '(27)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - column '(28)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - column '(29)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - column '(30)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - column '(31)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column '(32)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - column '(33)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - column '(34)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - column '(35)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
@@ -90,25 +95,23 @@ Han K et al., Population pharmacokinetics of cyclospo…, The AAPS journal (2013
 - column '(49)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - column '(50)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - column '(51)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column '(52)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - column '(53)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - column '(54)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- column '(22)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- column '(32)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- column '(52)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- column '(20)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- column '(24)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- dropped unlinked row (NIL): 'CMPT' — extend the ontology if this is a real PK parameter (source ['Han_2013_table_2:row1:col1', 'Han_2013_table_2:row1:col2', 'Han_2013_table_2:row1:col3', 'Han_2013_table_2:row1:col5', 'Han_2013_table_2:row1:col7', 'Han_2013_table_2:row1:col9', 'Han_2013_table_2:row1:col11', 'Han_2013_table_2:row1:col12', 'Han_2013_table_2:row1:col13', 'Han_2013_table_2:row1:col14', 'Han_2013_table_2:row1:col15', 'Han_2013_table_2:row1:col17', 'Han_2013_table_2:row1:col18', 'Han_2013_table_2:row1:col19', 'Han_2013_table_2:row1:col20', 'Han_2013_table_2:row1:col21', 'Han_2013_table_2:row1:col22', 'Han_2013_table_2:row1:col23', 'Han_2013_table_2:row1:col24', 'Han_2013_table_2:row1:col25', 'Han_2013_table_2:row1:col26', 'Han_2013_table_2:row1:col27', 'Han_2013_table_2:row1:col28', 'Han_2013_table_2:row1:col29', 'Han_2013_table_2:row1:col30', 'Han_2013_table_2:row1:col31', 'Han_2013_table_2:row1:col32', 'Han_2013_table_2:row1:col33', 'Han_2013_table_2:row1:col34', 'Han_2013_table_2:row1:col35', 'Han_2013_table_2:row1:col37', 'Han_2013_table_2:row1:col38'])
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=cyclosporine
+- dropped unlinked row (NIL): 'CMPT' — extend the ontology if this is a real PK parameter (source ['Han_2013_table_2:row0:col2', 'Han_2013_table_2:row1:col2', 'Han_2013_table_2:row2:col2', 'Han_2013_table_2:row4:col2', 'Han_2013_table_2:row6:col2', 'Han_2013_table_2:row8:col2', 'Han_2013_table_2:row10:col2', 'Han_2013_table_2:row11:col2', 'Han_2013_table_2:row12:col2', 'Han_2013_table_2:row13:col2', 'Han_2013_table_2:row14:col2', 'Han_2013_table_2:row16:col2', 'Han_2013_table_2:row17:col2', 'Han_2013_table_2:row18:col2', 'Han_2013_table_2:row19:col2', 'Han_2013_table_2:row20:col2', 'Han_2013_table_2:row21:col2', 'Han_2013_table_2:row22:col2', 'Han_2013_table_2:row23:col2', 'Han_2013_table_2:row24:col2', 'Han_2013_table_2:row25:col2', 'Han_2013_table_2:row26:col2', 'Han_2013_table_2:row27:col2', 'Han_2013_table_2:row28:col2', 'Han_2013_table_2:row29:col2', 'Han_2013_table_2:row30:col2', 'Han_2013_table_2:row31:col2', 'Han_2013_table_2:row32:col2', 'Han_2013_table_2:row33:col2', 'Han_2013_table_2:row34:col2', 'Han_2013_table_2:row36:col2', 'Han_2013_table_2:row37:col2'])
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=ciclosporin
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - structure disagreement: deterministic 2C vs LLM 1C — review compartment count
+- status held at route_to_review — not promoted
 - gap-filled Q49 (kabs) from Kauv_2025's review values (primary lacked it)
 - gap-filled Q83 (tlag) from Kauv_2025's review values (primary lacked it)
 
 **Extraction notes:**
 - no TEI final-model table id; trying text-pointer table recovery
 - LLM selected parameter table(s) 2
-- transposed table Han_2013_table_2: parameters were across the columns, populations/subgroups down the first column — transposed for parsing
-- unparsed cell Han_2013_table_2:row4:col1 = '18a'
-- unparsed cell Han_2013_table_2:row5:col14 = '76.6a'
+- table Han_2013_table_2: ambiguous_numeric_format
+- table Han_2013_table_2: unparsed_numeric_cell
+- transposed table Han_2013_table_2: logical view retains original source coordinates
 
 ## Validation
 
@@ -140,21 +143,21 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Han_2013_table_2:row2:col1', 'Han_2013_table_2:row2:col2', 'Han_2013_table_2:row2:col3', 'Han_2013_table_2:row2:col6', 'Han_2013_table_2:row2:col16', 'Han_2013_table_2:row2:col28', 'Han_2013_table_2:row2:col29', 'Han_2013_table_2:row2:col30', 'Han_2013_table_2:row2:col35', 'Han_2013_table_2:row2:col36', 'Han_2013_table_2:row2:col37'] |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Han_2013_table_2:row3:col4', 'Han_2013_table_2:row3:col5', 'Han_2013_table_2:row3:col7', 'Han_2013_table_2:row3:col8', 'Han_2013_table_2:row3:col11', 'Han_2013_table_2:row3:col12', 'Han_2013_table_2:row3:col13', 'Han_2013_table_2:row3:col14', 'Han_2013_table_2:row3:col15', 'Han_2013_table_2:row3:col17', 'Han_2013_table_2:row3:col19', 'Han_2013_table_2:row3:col20', 'Han_2013_table_2:row3:col21', 'Han_2013_table_2:row3:col22', 'Han_2013_table_2:row3:col23', 'Han_2013_table_2:row3:col24', 'Han_2013_table_2:row3:col25', 'Han_2013_table_2:row3:col26', 'Han_2013_table_2:row3:col27', 'Han_2013_table_2:row3:col31', 'Han_2013_table_2:row3:col32', 'Han_2013_table_2:row3:col33', 'Han_2013_table_2:row3:col34', 'Han_2013_table_2:row3:col38'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Han_2013_table_2:row0:col3', 'Han_2013_table_2:row1:col3', 'Han_2013_table_2:row2:col3', 'Han_2013_table_2:row5:col3', 'Han_2013_table_2:row15:col3', 'Han_2013_table_2:row27:col3', 'Han_2013_table_2:row28:col3', 'Han_2013_table_2:row29:col3', 'Han_2013_table_2:row34:col3', 'Han_2013_table_2:row35:col3', 'Han_2013_table_2:row36:col3'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Han_2013_table_2:row3:col4', 'Han_2013_table_2:row4:col4', 'Han_2013_table_2:row6:col4', 'Han_2013_table_2:row7:col4', 'Han_2013_table_2:row10:col4', 'Han_2013_table_2:row11:col4', 'Han_2013_table_2:row12:col4', 'Han_2013_table_2:row13:col4', 'Han_2013_table_2:row14:col4', 'Han_2013_table_2:row16:col4', 'Han_2013_table_2:row18:col4', 'Han_2013_table_2:row19:col4', 'Han_2013_table_2:row20:col4', 'Han_2013_table_2:row21:col4', 'Han_2013_table_2:row22:col4', 'Han_2013_table_2:row23:col4', 'Han_2013_table_2:row24:col4', 'Han_2013_table_2:row25:col4', 'Han_2013_table_2:row26:col4', 'Han_2013_table_2:row30:col4', 'Han_2013_table_2:row31:col4', 'Han_2013_table_2:row32:col4', 'Han_2013_table_2:row33:col4', 'Han_2013_table_2:row37:col4'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Kauv_2025:review'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Han_2013_table_2:row4:col2', 'Han_2013_table_2:row4:col3', 'Han_2013_table_2:row4:col6', 'Han_2013_table_2:row4:col28', 'Han_2013_table_2:row4:col29', 'Han_2013_table_2:row4:col30', 'Han_2013_table_2:row4:col35', 'Han_2013_table_2:row4:col36', 'Han_2013_table_2:row4:col37'] |
-| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Han_2013_table_2:row5:col5', 'Han_2013_table_2:row5:col7', 'Han_2013_table_2:row5:col11', 'Han_2013_table_2:row5:col12', 'Han_2013_table_2:row5:col13', 'Han_2013_table_2:row5:col15', 'Han_2013_table_2:row5:col17', 'Han_2013_table_2:row5:col19', 'Han_2013_table_2:row5:col20', 'Han_2013_table_2:row5:col21', 'Han_2013_table_2:row5:col22', 'Han_2013_table_2:row5:col23', 'Han_2013_table_2:row5:col24', 'Han_2013_table_2:row5:col25', 'Han_2013_table_2:row5:col26', 'Han_2013_table_2:row5:col27', 'Han_2013_table_2:row5:col31', 'Han_2013_table_2:row5:col32', 'Han_2013_table_2:row5:col33', 'Han_2013_table_2:row5:col34', 'Han_2013_table_2:row5:col38'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Han_2013_table_2:row1:col5', 'Han_2013_table_2:row2:col5', 'Han_2013_table_2:row5:col5', 'Han_2013_table_2:row27:col5', 'Han_2013_table_2:row28:col5', 'Han_2013_table_2:row29:col5', 'Han_2013_table_2:row34:col5', 'Han_2013_table_2:row36:col5'] |
+| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Han_2013_table_2:row4:col6', 'Han_2013_table_2:row6:col6', 'Han_2013_table_2:row10:col6', 'Han_2013_table_2:row11:col6', 'Han_2013_table_2:row12:col6', 'Han_2013_table_2:row14:col6', 'Han_2013_table_2:row16:col6', 'Han_2013_table_2:row18:col6', 'Han_2013_table_2:row19:col6', 'Han_2013_table_2:row20:col6', 'Han_2013_table_2:row21:col6', 'Han_2013_table_2:row22:col6', 'Han_2013_table_2:row23:col6', 'Han_2013_table_2:row24:col6', 'Han_2013_table_2:row25:col6', 'Han_2013_table_2:row26:col6', 'Han_2013_table_2:row30:col6', 'Han_2013_table_2:row31:col6', 'Han_2013_table_2:row32:col6'] |
 | C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Kauv_2025:review'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 23.5 L/h | not captured | not captured | ['Han_2013_table_2:row2:col1', 'Han_2013_table_2:row2:col2', 'Han_2013_table_2:row2:col3', 'Han_2013_table_2:row2:col6', 'Han_2013_table_2:row2:col16', 'Han_2013_table_2:row2:col28', 'Han_2013_table_2:row2:col29', 'Han_2013_table_2:row2:col30', 'Han_2013_table_2:row2:col35', 'Han_2013_table_2:row2:col36', 'Han_2013_table_2:row2:col37'] |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 53 L/h | not captured | not captured | ['Han_2013_table_2:row3:col4', 'Han_2013_table_2:row3:col5', 'Han_2013_table_2:row3:col7', 'Han_2013_table_2:row3:col8', 'Han_2013_table_2:row3:col11', 'Han_2013_table_2:row3:col12', 'Han_2013_table_2:row3:col13', 'Han_2013_table_2:row3:col14', 'Han_2013_table_2:row3:col15', 'Han_2013_table_2:row3:col17', 'Han_2013_table_2:row3:col19', 'Han_2013_table_2:row3:col20', 'Han_2013_table_2:row3:col21', 'Han_2013_table_2:row3:col22', 'Han_2013_table_2:row3:col23', 'Han_2013_table_2:row3:col24', 'Han_2013_table_2:row3:col25', 'Han_2013_table_2:row3:col26', 'Han_2013_table_2:row3:col27', 'Han_2013_table_2:row3:col31', 'Han_2013_table_2:row3:col32', 'Han_2013_table_2:row3:col33', 'Han_2013_table_2:row3:col34', 'Han_2013_table_2:row3:col38'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 94.4 L | not captured | not captured | ['Han_2013_table_2:row4:col2', 'Han_2013_table_2:row4:col3', 'Han_2013_table_2:row4:col6', 'Han_2013_table_2:row4:col28', 'Han_2013_table_2:row4:col29', 'Han_2013_table_2:row4:col30', 'Han_2013_table_2:row4:col35', 'Han_2013_table_2:row4:col36', 'Han_2013_table_2:row4:col37'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 227 L | not captured | not captured | ['Han_2013_table_2:row5:col5', 'Han_2013_table_2:row5:col7', 'Han_2013_table_2:row5:col11', 'Han_2013_table_2:row5:col12', 'Han_2013_table_2:row5:col13', 'Han_2013_table_2:row5:col15', 'Han_2013_table_2:row5:col17', 'Han_2013_table_2:row5:col19', 'Han_2013_table_2:row5:col20', 'Han_2013_table_2:row5:col21', 'Han_2013_table_2:row5:col22', 'Han_2013_table_2:row5:col23', 'Han_2013_table_2:row5:col24', 'Han_2013_table_2:row5:col25', 'Han_2013_table_2:row5:col26', 'Han_2013_table_2:row5:col27', 'Han_2013_table_2:row5:col31', 'Han_2013_table_2:row5:col32', 'Han_2013_table_2:row5:col33', 'Han_2013_table_2:row5:col34', 'Han_2013_table_2:row5:col38'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 23.5 L/h | not captured | not captured | ['Han_2013_table_2:row0:col3', 'Han_2013_table_2:row1:col3', 'Han_2013_table_2:row2:col3', 'Han_2013_table_2:row5:col3', 'Han_2013_table_2:row15:col3', 'Han_2013_table_2:row27:col3', 'Han_2013_table_2:row28:col3', 'Han_2013_table_2:row29:col3', 'Han_2013_table_2:row34:col3', 'Han_2013_table_2:row35:col3', 'Han_2013_table_2:row36:col3'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 53 L/h | not captured | not captured | ['Han_2013_table_2:row3:col4', 'Han_2013_table_2:row4:col4', 'Han_2013_table_2:row6:col4', 'Han_2013_table_2:row7:col4', 'Han_2013_table_2:row10:col4', 'Han_2013_table_2:row11:col4', 'Han_2013_table_2:row12:col4', 'Han_2013_table_2:row13:col4', 'Han_2013_table_2:row14:col4', 'Han_2013_table_2:row16:col4', 'Han_2013_table_2:row18:col4', 'Han_2013_table_2:row19:col4', 'Han_2013_table_2:row20:col4', 'Han_2013_table_2:row21:col4', 'Han_2013_table_2:row22:col4', 'Han_2013_table_2:row23:col4', 'Han_2013_table_2:row24:col4', 'Han_2013_table_2:row25:col4', 'Han_2013_table_2:row26:col4', 'Han_2013_table_2:row30:col4', 'Han_2013_table_2:row31:col4', 'Han_2013_table_2:row32:col4', 'Han_2013_table_2:row33:col4', 'Han_2013_table_2:row37:col4'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 94.4 L | not captured | not captured | ['Han_2013_table_2:row1:col5', 'Han_2013_table_2:row2:col5', 'Han_2013_table_2:row5:col5', 'Han_2013_table_2:row27:col5', 'Han_2013_table_2:row28:col5', 'Han_2013_table_2:row29:col5', 'Han_2013_table_2:row34:col5', 'Han_2013_table_2:row36:col5'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 227 L | not captured | not captured | ['Han_2013_table_2:row4:col6', 'Han_2013_table_2:row6:col6', 'Han_2013_table_2:row10:col6', 'Han_2013_table_2:row11:col6', 'Han_2013_table_2:row12:col6', 'Han_2013_table_2:row14:col6', 'Han_2013_table_2:row16:col6', 'Han_2013_table_2:row18:col6', 'Han_2013_table_2:row19:col6', 'Han_2013_table_2:row20:col6', 'Han_2013_table_2:row21:col6', 'Han_2013_table_2:row22:col6', 'Han_2013_table_2:row23:col6', 'Han_2013_table_2:row24:col6', 'Han_2013_table_2:row25:col6', 'Han_2013_table_2:row26:col6', 'Han_2013_table_2:row30:col6', 'Han_2013_table_2:row31:col6', 'Han_2013_table_2:row32:col6'] |
 
 **Reviewer per-scenario checks:**
 
@@ -163,7 +166,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
-| T3_output_variable | not captured | pass | C_central (measured=cyclosporine) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_output_variable | not captured | pass | C_central (measured=ciclosporin) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 6 scholar param(s) emitted or defaulted | 6 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable | not captured | LLM adjudication → deterministic rule |
@@ -176,10 +179,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ciclosporin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Han_2013` / `Han_2013::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ciclosporin/models/modelica/Ciclosporin_Han2013_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ciclosporin/models/modelica/Ciclosporin_Han2013_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ciclosporin/models/modelica/Ciclosporin_Han2013_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ciclosporin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Han_2013` / `Han_2013::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ciclosporin/models/modelica/Ciclosporin_Han2013_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ciclosporin/models/modelica/Ciclosporin_Han2013_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ciclosporin/models/modelica/Ciclosporin_Han2013_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -188,7 +191,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ciclosporin/Ciclosporin_Han2013_reference/Ciclosporin_Han2013_reference_modelica.zip" download>Ciclosporin_Han2013_reference_modelica.zip</a> <span class="pk-size">(4.7 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ciclosporin/Ciclosporin_Han2013_reference/Ciclosporin_Han2013_reference_modelica.zip" download>Ciclosporin_Han2013_reference_modelica.zip</a> <span class="pk-size">(4.8 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_ciclosporin/Ciclosporin_Han2013_reference/Ciclosporin_Han2013_reference_fmi.zip" download>Ciclosporin_Han2013_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_ciclosporin/Ciclosporin_Han2013_reference/Ciclosporin_Han2013_reference_matlab.zip" download>Ciclosporin_Han2013_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_ciclosporin/Ciclosporin_Han2013_reference/Ciclosporin_Han2013_reference_matlab_simbio.zip" download>Ciclosporin_Han2013_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
@@ -197,7 +200,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_ciclosporin/Ciclosporin_Han2013_reference/Ciclosporin_Han2013_reference.svg" alt="Ciclosporin_Han2013_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_ciclosporin/Ciclosporin_Han2013_reference/Ciclosporin_Han2013_reference.svg" alt="Ciclosporin_Han2013_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -210,4 +213,4 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 00:01 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 21:18 UTC</sub>

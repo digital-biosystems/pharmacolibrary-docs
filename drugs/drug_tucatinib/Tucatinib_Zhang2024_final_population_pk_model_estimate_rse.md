@@ -168,10 +168,10 @@ _All readers agree on the compared fields of this record._
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_tucatinib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Zhang_2024` / `Zhang_2024::final_population_pk_model_estimate_rse`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_tucatinib/models/modelica/Tucatinib_Zhang2024_final_population_pk_model_estimate_rse.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_tucatinib/models/modelica/Tucatinib_Zhang2024_final_population_pk_model_estimate_rse.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_tucatinib/models/modelica/Tucatinib_Zhang2024_final_population_pk_model_estimate_rse.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_tucatinib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Zhang_2024` / `Zhang_2024::final_population_pk_model_estimate_rse`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_tucatinib/models/modelica/Tucatinib_Zhang2024_final_population_pk_model_estimate_rse.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_tucatinib/models/modelica/Tucatinib_Zhang2024_final_population_pk_model_estimate_rse.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_tucatinib/models/modelica/Tucatinib_Zhang2024_final_population_pk_model_estimate_rse.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -189,7 +189,7 @@ _All readers agree on the compared fields of this record._
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_tucatinib/Tucatinib_Zhang2024_final_population_pk_model_estimate_rse/Tucatinib_Zhang2024_final_population_pk_model_estimate_rse.svg" alt="Tucatinib_Zhang2024_final_population_pk_model_estimate_rse diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_tucatinib/Tucatinib_Zhang2024_final_population_pk_model_estimate_rse/Tucatinib_Zhang2024_final_population_pk_model_estimate_rse.svg" alt="Tucatinib_Zhang2024_final_population_pk_model_estimate_rse diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

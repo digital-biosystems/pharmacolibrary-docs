@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;nebivolol&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nebivolol_Marques2022_reference&quot;,&quot;label&quot;:&quot;Marques_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nebivolol/Nebivolol_Marques2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # nebivolol
 
@@ -27,13 +26,34 @@ Nebivolol is a selective beta blocker used to treat high blood pressure (arteria
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 00:31 | 6:08 | 1/0/0 | 0/0/0 | 0/0/0 | 156,762/12,807 | ollama / qwen3.8:27b-mtp-q8_0 | 16 | 2/4 | 6/0 | 0 |
+| 2026-10-15 03:34 | 1:37 | 0/1/0 | 1/0/0 | 0/0/0 | 142,069/7,029 | einfracz / qwen3.8-27b | 16 | 2/4 | 6/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.875), gpt-oss:120b (partly confirmed, agreement 0.941). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Marques_2022_reference](drugs/drug_nebivolol/Nebivolol_Marques2022_reference.md) | ▶ model + simulator | 2-compartment, oral | 6 | Marques L et al., New Data for Nebivolol after In Silico…, Pharmaceutics (2022) | [10.3390/pharmaceutics14091911](https://doi.org/10.3390/pharmaceutics14091911) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.875), gpt-oss:120b (partly confirmed, agreement 0.941). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Marques_2022_reference](drugs/drug_nebivolol/Nebivolol_Marques2022_reference.md) | — | 2-compartment (no model) | 11 | Marques L et al., New Data for Nebivolol after In Silico…, Pharmaceutics (2022) | [10.3390/pharmaceutics14091911](https://doi.org/10.3390/pharmaceutics14091911) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Bocci_2020_CPE](drugs/drug_nebivolol/pd_Bocci_2020_CPE.md) | SARS-CoV-2 mediated cytopathic effect (CPE) ← nebivolol · direct Emax (saturable) effect | — | Bocci G et al., Virtual and, ACS pharmacology & translat… (2020) | [10.1021/acsptsci.0c00131](https://doi.org/10.1021/acsptsci.0c00131) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=nebivolol).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| distribution | blood | `ALB` binder | DrugBank actor |
+| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
+| metabolism | liver | `CYP2C19` substrate, `CYP2D6` substrate, `CYP3A4` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: ADRB1 (target), ADRB2 (target), ADRB3 (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,7 +65,7 @@ Nebivolol is a selective beta blocker used to treat high blood pressure (arteria
 
 - **PubMed hits:** 11 matched, 11 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 1
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -54,25 +74,25 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Briciu_2014.pdf` | Briciu C et al., A pharmacokinetic drug interaction stud…, Journal of clinical pharmac… (2014) | popPK | 8 | [10.1111/jcpt.12180](https://doi.org/10.1111/jcpt.12180) | [24845234](https://pubmed.ncbi.nlm.nih.gov/24845234) | The study reports quantitative non-compartmental pharmacokinetic parameters (Cmax, Tmax, AUC) for nebivolol in humans, though it lacks specific clearance or volume values. |
+| `Briciu_2014.pdf` | Briciu C et al., A pharmacokinetic drug interaction stud…, Journal of clinical pharmac… (2014) | popPK | 5 | [10.1111/jcpt.12180](https://doi.org/10.1111/jcpt.12180) | [24845234](https://pubmed.ncbi.nlm.nih.gov/24845234) | The study reports non-compartmental PK parameters (AUC, Cmax, tmax) for nebivolol in a drug interaction context, but does not explicitly report compartmental parameters like Clearance (CL), Volume (V), or Half-life (t1/2) as primary numeric outputs in the provided text. |
 
-<sub>queue written 2026-10-07T00:26:38.941604+00:00</sub>
+<sub>queue written 2026-10-15T03:32:48.700884+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Bocci_2020 | irrelevant | 0 | 0 | The paper is an in-vitro antiviral screening study that reports EC50 values for nebivolol against SARS-CoV-2, but it does not report any pharmacokinetic disposition parameters (CL, V, ka, etc.). |
-| popPK | Bundkirchen_2001 | irrelevant | 0 | 0 | The study investigates the mechanistic effects of nebivolol on cardiac calcium sensitivity in skinned fibers and isolated trabeculae, not its pharmacokinetic disposition parameters. |
+| popPK | Bocci_2020 | irrelevant | 0 | 0 | The study is an in vitro antiviral screening assay that reports EC50 values for nebivolol against SARS-CoV-2, but does not provide any pharmacokinetic disposition parameters such as clearance, volume of distribution, or half-life. |
+| popPK | Bundkirchen_2001 | irrelevant | 0 | 0 | The study investigates the in vitro mechanistic effects of nebivolol on calcium sensitivity in cardiac muscle fibers and does not report any pharmacokinetic parameters. |
 | PD | Bundkirchen_2001 | not_relevant | 0 | 0 | The study reports a negative result (no effect) on cardiac calcium sensitivity and does not provide a pharmacodynamic exposure-response or dose-response model for nebivolol. |
-| popPK | Garbán_2004 | irrelevant | 0 | 0 | The study investigates the mechanism of action (estrogen receptor binding and vascular response) in isolated rat aortic rings and cell lines, not pharmacokinetic disposition parameters. |
-| popPK | Gschwend_2009 | irrelevant | 0 | 0 | The study is a mechanistic investigation of vascular function in rats and does not report pharmacokinetic parameters for nebivolol. |
+| popPK | Garbán_2004 | irrelevant | 0 | 0 | The study investigates the mechanism of action (estrogen receptor binding) of nebivolol in isolated tissues and cells, providing no pharmacokinetic disposition parameters. |
+| popPK | Gschwend_2009 | irrelevant | 0 | 0 | The study is a hemodynamic and vascular function experiment in rats using nebivolol as a therapeutic agent, and it does not report any pharmacokinetic parameters (e.g., CL, V, t1/2) for the drug. |
 | PD | Gschwend_2009 | not_relevant | 2 | 1 | The study reports pharmacodynamic effects (endothelial relaxation) at fixed doses but does not provide concentration-effect data, PK parameters, or a fitted PD model with numeric parameters like EC50 or slope. |
-| popPK | Kannan_2012 | irrelevant | 0 | 0 | Nebivolol is used only as a positive control in a zebrafish cardiovascular toxicity assay, and no pharmacokinetic parameters (CL, V, ka, etc.) are reported. |
+| popPK | Kannan_2012 | irrelevant | 0 | 0 | Nebivolol is used only as a positive control to compare cardiac functional effects (heart rate and blood flow) in zebrafish, not as the subject of a pharmacokinetic study. |
 | PD | Kannan_2012 | not_relevant | 1 | 0 | Nebivolol is used only as a single-dose positive control for comparison; no dose-response curve or numeric PD parameters (EC50, Emax) are reported for nebivolol. |
-| popPK | Okamoto_2014 | irrelevant | 0 | 0 | The study is a pharmacodynamic trial assessing blood pressure effects and mechanisms of action, reporting no pharmacokinetic parameters (CL, V, ka, etc.) for nebivolol. |
-| popPK | Rawat_2023 | relevant | 4 | 8 | The study reports ocular PK parameters (Cmax, AUC, Tmax) for nebivolol in rabbits, but lacks standard systemic disposition parameters like clearance (CL) or volume of distribution (V). |
-| popPK | Rosenkranz_2006 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of vasodilatory properties in rat aorta, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Okamoto_2014 | irrelevant | 0 | 0 | The study reports hemodynamic effects (blood pressure) but contains no quantitative pharmacokinetic parameters (e.g., clearance, volume, half-life) for nebivolol. |
+| popPK | Rawat_2023 | relevant | 4 | 8 | The study reports quantitative PK parameters (Cmax, AUC, Tmax) for nebivolol in rabbit aqueous humor and plasma, but lacks compartmental model parameters like CL and Vd. |
+| popPK | Rosenkranz_2006 | irrelevant | 0 | 0 | This is an in-vitro pharmacodynamic study measuring vasodilation in rat aorta rings, reporting EC50 values for vasorelaxation rather than pharmacokinetic disposition parameters. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 00:26 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-15 03:32 UTC</sub>

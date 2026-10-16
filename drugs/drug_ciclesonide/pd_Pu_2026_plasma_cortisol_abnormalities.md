@@ -18,9 +18,9 @@
 
 **Model:** No model was generated from this record.
 
-> The paper relates ciclesonide dose (not plasma concentrations) to plasma cortisol abnormalities as a binary response within an Emax-type model, but the available excerpts do not state the mechanism, effect direction, or any potency or rate parameter values (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma).
+> The record identifies a dose-only Emax model where ciclesonide dose acts on binary plasma cortisol abnormalities, but no specific potency, rate, or mechanism values are provided as the full text is unavailable.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Pu_2026`
 - **model family:** `emax`

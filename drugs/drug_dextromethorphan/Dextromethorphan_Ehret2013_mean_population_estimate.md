@@ -145,9 +145,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_dextromethorphan/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Ehret_2013` / `Ehret_2013::mean_population_estimate`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_dextromethorphan/models/modelica/_needs_review/Dextromethorphan_Ehret2013_mean_population_estimate.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_dextromethorphan/models/modelica/_needs_review/Dextromethorphan_Ehret2013_mean_population_estimate.deviation.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_dextromethorphan/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Ehret_2013` / `Ehret_2013::mean_population_estimate`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_dextromethorphan/models/modelica/_needs_review/Dextromethorphan_Ehret2013_mean_population_estimate.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_dextromethorphan/models/modelica/_needs_review/Dextromethorphan_Ehret2013_mean_population_estimate.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

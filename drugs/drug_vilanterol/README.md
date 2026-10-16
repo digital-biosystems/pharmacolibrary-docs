@@ -26,26 +26,45 @@ Vilanterol is a long-acting inhaled beta-2 agonist used to treat obstructive air
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 15:41 | 16:00 | 0/2/2 | 2/1/1 | 0/0/0 | 666,461/41,671 | ollama / glm-5.3-flash | 19 | 0/18 | 19/0 | 1 |
+| 2026-10-13 12:52 | 9:21 | 0/2/2 | 3/0/0 | 0/0/0 | 147,504/36,989 | ollama / qwen3.8:27b-mtp-q8_0 | 19 | 0/19 | 19/0 | 1 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Mehta_2018_reference](drugs/drug_vilanterol/Vilanterol_Mehta2018_reference.md) | — | 1-compartment (no model) | 1 | Mehta R et al., Population Pharmacokinetic Analysis of…, Journal of clinical pharmac… (2018) | [10.1002/jcph.1253](https://doi.org/10.1002/jcph.1253) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Mehta_2020_reference](drugs/drug_vilanterol/Vilanterol_Mehta2020_reference.md) | — | 1-compartment (no model) | 2 | Mehta R et al., Population Pharmacokinetic Analysis of…, Clinical pharmacokinetics (2020) | [10.1007/s40262-019-00794-w](https://doi.org/10.1007/s40262-019-00794-w) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Goyal_2014_reference](drugs/drug_vilanterol/Vilanterol_Goyal2014_reference.md) | — | 1-compartment (no model) | 2 | Goyal N et al., Population pharmacokinetics of inhaled…, Clinical pharmacokinetics (2014) | [10.1007/s40262-014-0143-4](https://doi.org/10.1007/s40262-014-0143-4) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Siederer_2016_reference](drugs/drug_vilanterol/Vilanterol_Siederer2016_reference.md) | — | 1-compartment (no model) | 4 | Siederer S et al., Population Pharmacokinetics of Inhaled…, European journal of drug me… (2016) | [10.1007/s13318-015-0303-4](https://doi.org/10.1007/s13318-015-0303-4) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.4), gpt-oss-120b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Mehta_2018_reference](drugs/drug_vilanterol/Vilanterol_Mehta2018_reference.md) | — | 1-compartment (no model) | 1 | Mehta R et al., Population Pharmacokinetic Analysis of…, Journal of clinical pharmac… (2018) | [10.1002/jcph.1253](https://doi.org/10.1002/jcph.1253) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25), gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Mehta_2020_reference](drugs/drug_vilanterol/Vilanterol_Mehta2020_reference.md) | — | 1-compartment (no model) | 2 | Mehta R et al., Population Pharmacokinetic Analysis of…, Clinical pharmacokinetics (2020) | [10.1007/s40262-019-00794-w](https://doi.org/10.1007/s40262-019-00794-w) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0), gpt-oss-120b (not confirmed, agreement 0.222). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Goyal_2014_reference](drugs/drug_vilanterol/Vilanterol_Goyal2014_reference.md) | — | 1-compartment (no model) | 2 | Goyal N et al., Population pharmacokinetics of inhaled…, Clinical pharmacokinetics (2014) | [10.1007/s40262-014-0143-4](https://doi.org/10.1007/s40262-014-0143-4) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333), gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Siederer_2016_reference](drugs/drug_vilanterol/Vilanterol_Siederer2016_reference.md) | — | 1-compartment (no model) | 4 | Siederer S et al., Population Pharmacokinetics of Inhaled…, European journal of drug me… (2016) | [10.1007/s13318-015-0303-4](https://doi.org/10.1007/s13318-015-0303-4) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span> | [Calzetta_2017_relaxation](drugs/drug_vilanterol/pd_Calzetta_2017_relaxation.md) | relaxation of cholinergic contractile tone (10 Hz electrical field stimulation) ← vilanterol · direct sigmoid Emax (Hill) effect | — | Calzetta L et al., Pharmacological characterization of the…, European journal of pharmac… (2017) | [10.1016/j.ejphar.2017.07.026](https://doi.org/10.1016/j.ejphar.2017.07.026) |
-| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> | [Llanos-Paez_2023_FEV1](drugs/drug_vilanterol/pd_Llanos_Paez_2023_FEV1.md) | morning trough FEV1 ← vilanterol · direct sigmoid Emax (Hill) effect | — | Llanos-Paez C et al., Joint longitudinal model-based meta-ana…, Journal of pharmacokinetics… (2023) | [10.1007/s10928-023-09853-z](https://doi.org/10.1007/s10928-023-09853-z) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.625). Primary extraction retained.">cross-check: disputed</span> | [Kempsford_2014_HR](drugs/drug_vilanterol/pd_Kempsford_2014_HR.md) | maximal heart rate ← vilanterol · direct linear effect | — | Kempsford R et al., A repeat-dose thorough QT study of inha…, British journal of clinical… (2014) | [10.1111/bcp.12243](https://doi.org/10.1111/bcp.12243) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.625). Primary extraction retained.">cross-check: disputed</span> | [Kempsford_2014_QTcF](drugs/drug_vilanterol/pd_Kempsford_2014_QTcF.md) | maximal QTcF ← vilanterol · direct linear effect | — | Kempsford R et al., A repeat-dose thorough QT study of inha…, British journal of clinical… (2014) | [10.1111/bcp.12243](https://doi.org/10.1111/bcp.12243) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span> | [Gong_2022_trough_FEV1](drugs/drug_vilanterol/pd_Gong_2022_trough_FEV1.md) | change from baseline in trough FEV1 ← vilanterol/umeclidinium · direct Emax (saturable) effect | — | Gong Y et al., Quantitative analysis of efficacy and s…, Therapeutic advances in res… (2022) | [10.1177/17534666211066068](https://doi.org/10.1177/17534666211066068) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by ollama:gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> | [Gong_2022_trough_FEV1](drugs/drug_vilanterol/pd_Gong_2022_trough_FEV1.md) | change from baseline in trough FEV1 ← vilanterol/umeclidinium · stimulation effect | — | Gong Y et al., Quantitative analysis of efficacy and s…, Therapeutic advances in res… (2022) | [10.1177/17534666211066068](https://doi.org/10.1177/17534666211066068) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by ollama:gpt-oss:120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Kempsford_2014_HR](drugs/drug_vilanterol/pd_Kempsford_2014_HR.md) | maximal heart rate ← VI · direct linear effect | — | Kempsford R et al., A repeat-dose thorough QT study of inha…, British journal of clinical… (2014) | [10.1111/bcp.12243](https://doi.org/10.1111/bcp.12243) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by ollama:gpt-oss:120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Kempsford_2014_QTcF](drugs/drug_vilanterol/pd_Kempsford_2014_QTcF.md) | maximal QTcF ← VI · direct linear effect | — | Kempsford R et al., A repeat-dose thorough QT study of inha…, British journal of clinical… (2014) | [10.1111/bcp.12243](https://doi.org/10.1111/bcp.12243) |
+| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--green" title="re-read by ollama:gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> | [Llanos-Paez_2023_FEV1](drugs/drug_vilanterol/pd_Llanos_Paez_2023_FEV1.md) | forced expiratory volume in one second ← vilanterol · direct Emax (saturable) effect | — | Llanos-Paez C et al., Joint longitudinal model-based meta-ana…, Journal of pharmacokinetics… (2023) | [10.1007/s10928-023-09853-z](https://doi.org/10.1007/s10928-023-09853-z) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=vilanterol).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` substrate | DrugBank actor |
+| absorption | liver | `ABCB1` substrate | DrugBank actor |
+| absorption | lung | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| absorption | placenta | `ABCB1` substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
+| absorption | testis | `ABCB1` substrate | DrugBank actor |
+| metabolism | liver | `CYP3A4` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: ADRB2 (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,7 +75,7 @@ Vilanterol is a long-acting inhaled beta-2 agonist used to treat obstructive air
 ## Coverage
 
 - **PubMed hits:** 85 matched, 48 returned
-- **screened:** 4  ·  **relevant:** 4
+- **screened:** 6  ·  **relevant:** 4
 - **records:** 4  ·  extracted 0  ·  needs_review 2  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
@@ -72,7 +91,7 @@ _5 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | `Calzetta_2017.pdf` | Calzetta L et al., Pharmacological characterization of the…, European journal of pharmac… (2017) | pd | 4 | [10.1016/j.ejphar.2017.07.026](https://doi.org/10.1016/j.ejphar.2017.07.026) | [28716723](https://www.ncbi.nlm.nih.gov/pubmed/28716723) | metadata signals extractable PD data (Emax) |
 | `Kempsford_2013.pdf` | Kempsford R et al., The effect of ketoconazole on the pharm…, British journal of clinical… (2013) | pgx | 7 | [10.1111/bcp.12019](https://doi.org/10.1111/bcp.12019) | [23116485](https://www.ncbi.nlm.nih.gov/pubmed/23116485) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 
-<sub>queue written 2026-10-07T15:32:27.851102+00:00</sub>
+<sub>queue written 2026-10-13T12:43:08.740931+00:00</sub>
 
 ## Screened and excluded
 

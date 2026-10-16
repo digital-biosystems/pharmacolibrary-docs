@@ -1,0 +1,49 @@
+{
+ "dose_source": "paper",
+ "model_id": "Dofetilide_Jonker2005_basic_pharmacokinetic_model",
+ "molar_masses": {
+  "central.C": 0.441565
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  1000.0,
+  2000.0,
+  4000.0,
+  6000.0,
+  8000.0,
+  10000.0,
+  330000.0,
+  500000.0,
+  750000.0,
+  830000.0,
+  1000000.0,
+  1250000.0
+ ],
+ "parameters": {
+  "Cl": 2.3e-07,
+  "F": 0.43,
+  "MM": 0.441565,
+  "Tlag": 3218.4,
+  "VdPerKg": 0.0002442857142857143,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.001,
+  "k12": 0.00023229369720597793,
+  "k21": 7.865786578657866e-06,
+  "ka": 1.388888888888889e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 338674.14829659316
+ },
+ "reference_peaks": {
+  "central.C": 0.00021938045766289204
+ },
+ "stop_time": 518400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

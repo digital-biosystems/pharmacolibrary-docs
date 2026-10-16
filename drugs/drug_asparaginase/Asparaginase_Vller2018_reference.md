@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01X&quot;,&quot;href&quot;:&quot;atc/L01X.md&quot;},{&quot;label&quot;:&quot;asparaginase&quot;,&quot;href&quot;:&quot;drugs/drug_asparaginase/&quot;},{&quot;label&quot;:&quot;V\u00f6ller_2018 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Asparaginase_Borghorst2012_reference&quot;,&quot;label&quot;:&quot;Borghorst_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_asparaginase/Asparaginase_Borghorst2012_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Asparaginase_Sassen2017_estimate&quot;,&quot;label&quot;:&quot;Sassen_2017_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_asparaginase/Asparaginase_Sassen2017_estimate.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Asparaginase_Sassen2017_median&quot;,&quot;label&quot;:&quot;Sassen_2017_median&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_asparaginase/Asparaginase_Sassen2017_median.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Asparaginase_Sassen2017_reference&quot;,&quot;label&quot;:&quot;Sassen_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_asparaginase/Asparaginase_Sassen2017_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,13 +17,13 @@
 
 ### Reviewer guidance
 
-**The record was rejected because the total clearance of 0.0592 L/h for recombinant asparaginase is physiologically implausible.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The extracted total clearance value of 0.0592 L/h falls outside the expected physiological range for the drug. This magnitude suggests a unit or scale extraction error rather than a valid pharmacokinetic estimate. The record was built from the abstract alone, so these summary statistics stand in for a fitted model. Extracted — recombinant asparaginase: CL 0.0592 L/h, V1 1.18 L, Q 0.307 L/h, V2 0.316 L.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is asparaginase's own; they describe recombinant asparaginase. Extracted — recombinant asparaginase: CL 0.0592 L/h, V1 1.18 L, Q 0.307 L/h, V2 0.316 L, kabs 0.0348 h–1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has recombinant asparaginase, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Völler S et al., Pharmacokinetics of recombinant asparag…, Cancer chemotherapy and pha… (2018)
@@ -32,7 +32,7 @@ Völler S et al., Pharmacokinetics of recombinant asparag…, Cancer chemotherap
 <div class="pk-model-meta" hidden drug="asparaginase" model-id="Asparaginase_Vller2018_reference" status="rejected" stale="false" population="children with acute lymphoblastic leukemia" measured-compound="recombinant asparaginase" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
-**Parameters:** 4 extracted.
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -45,6 +45,7 @@ Völler S et al., Pharmacokinetics of recombinant asparag…, Cancer chemotherap
 | V 1 | `Q63` · V1 | 1.18 | L | 0.00118 | [l] | not captured | space_fold (0.95) | Völler_2018:abstract | — | not captured |
 | Q | `Q30` · Q | 0.307 | L/h | 8.527777777777778e-08 | [l] / [h] | not captured | exact (1.0) | Völler_2018:abstract | — | not captured |
 | V 2 | `Q64` · V2 | 0.316 | L | 0.000316 | [l] | not captured | space_fold (0.95) | Völler_2018:abstract | — | not captured |
+| ka (h–1) | `Q49` · kabs | 0.0348 | h–1 | 9.666666666666667e-06 | 1/h | not captured | review_gapfill (0.7) | Lin_2021:review | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -59,6 +60,7 @@ Völler S et al., Pharmacokinetics of recombinant asparag…, Cancer chemotherap
 - molar mass: none found for 'asparaginase' — its concentrations stay mass-only
 - molar mass: none found for 'recombinant asparaginase' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
+- gap-filled Q49 (kabs) from Lin_2021's review values (primary lacked it)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Völler_2018_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
@@ -104,6 +106,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Völler_2018:abstract'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Völler_2018:abstract'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Lin_2021:review'] |
 | C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Völler_2018:abstract'] |
 | C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Völler_2018:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.0592 | not captured | not captured | ['Völler_2018:abstract'] |
@@ -119,7 +122,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_asparaginase/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Völler_2018` / `Völler_2018::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_asparaginase/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Völler_2018` / `Völler_2018::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -135,4 +138,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 23:16 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 04:21 UTC</sub>

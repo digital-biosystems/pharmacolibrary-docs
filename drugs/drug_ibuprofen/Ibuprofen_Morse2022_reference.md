@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01E&quot;,&quot;href&quot;:&quot;atc/C01E.md&quot;},{&quot;label&quot;:&quot;ibuprofen&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/&quot;},{&quot;label&quot;:&quot;Morse_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ibuprofen_DeGraves1993v2_reference&quot;,&quot;label&quot;:&quot;DeGraves_1993_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_DeGraves1993v2_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Knihinicki1990_reference&quot;,&quot;label&quot;:&quot;Knihinicki_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Knihinicki1990_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Todd1986_reference&quot;,&quot;label&quot;:&quot;Todd_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Todd1986_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Trocniz2000_reference&quot;,&quot;label&quot;:&quot;Troc\u00f3niz_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Trocniz2000_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2018_PPPM&quot;,&quot;label&quot;:&quot;Hannam_2018 \u00b7 PPPM&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/pd_Hannam_2018_PPPM.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ibuprofen_Clissold1987_reference&quot;,&quot;label&quot;:&quot;Clissold_1987_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Clissold1987_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_DeGraves1993v2_reference&quot;,&quot;label&quot;:&quot;DeGraves_1993_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_DeGraves1993v2_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Knihinicki1990_reference&quot;,&quot;label&quot;:&quot;Knihinicki_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Knihinicki1990_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Todd1986_reference&quot;,&quot;label&quot;:&quot;Todd_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Todd1986_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Brown1998_ibu05&quot;,&quot;label&quot;:&quot;Brown_1998_ibu05&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Brown1998_ibu05.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2018_PPPM&quot;,&quot;label&quot;:&quot;Hannam_2018 \u00b7 PPPM&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/pd_Hannam_2018_PPPM.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,13 +17,13 @@
 
 ### Reviewer guidance
 
-**The ibuprofen/acetaminophen record was rejected because the reported clearance and volume of distribution values fall outside physiological plausibility, indicating a unit or scale extraction error.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The volume of distribution was recorded as 22.37 ml, a magnitude far below any plausible volume of distribution for ibuprofen or acetaminophen in healthy adults, and the clearance-related factor (0.816, a fat factor on clearance) was carried without a usable SI-converted value because the reported unit could not be converted. The lag time of 4.6 fold was also recorded with a fold unit rather than a time unit. A second reader returned null for all four parameter values, leaving the extracted numbers unconfirmed. Extracted — acetaminophen, ibuprofen: CL 0.816, tlag 4.6 fold, V 22.4 ml, kabs 1.1 h -1.
+A reported unit could not be converted (tlag), so that value has no SI equivalent. None of the extracted parameters is ibuprofen's own; they describe acetaminophen, ibuprofen. Extracted — acetaminophen, ibuprofen: CL 0.816, tlag 4.6 fold, V 22.4 ml.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has acetaminophen, ibuprofen, the second reading acetaminophen and ibuprofen; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by glm-5.3-flash</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 JamesDMorse 0000-0001-7500-0062 Department of Pharmacology and Clinical Pharmacology University of Auckland Park Road 1023 Auckland New Zealand Department of Pharmacology and Clinical Pharmacology University of Auckland Park Road 1023 Auckland New Zealand et al., Population Pharmacokinetic Modelling of… (2022)
@@ -32,7 +32,7 @@ JamesDMorse 0000-0001-7500-0062 Department of Pharmacology and Clinical Pharmaco
 <div class="pk-model-meta" hidden drug="ibuprofen" model-id="Ibuprofen_Morse2022_reference" status="rejected" stale="false" population="healthy adults" measured-compound="acetaminophen, ibuprofen" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 4 extracted.
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -43,8 +43,7 @@ JamesDMorse 0000-0001-7500-0062 Department of Pharmacology and Clinical Pharmaco
 |---|---|---|---|---|---|---|---|---|---|---|
 | factor for fat (FFAT) on CL | `Q22` · CL | 0.816 | not captured | not captured | L/h | not captured | boundary (0.8) | Morse_2022:results_prose | — | not captured |
 | lag time on the tablet formulation increased ... under fed conditions | `Q83` · tlag | 4.6 | fold | not captured | fold | not captured | boundary (0.8) | Morse_2022:results_prose | — | not captured |
-| VD (l/kg) | `Q61` · V | 0.13 | l/kg | 0.0091 | L | not captured | review_gapfill (0.7) | Brune_2007:review | — | not captured |
-| first-order absorption rate constant (k a) | `Q49` · kabs | 1.1 | h -1 | 0.0003055555555555556 | 1/h | not captured | review_gapfill (0.7) | Hong_2008:review | — | not captured |
+| V,, | `Q61` · V | 22.37 | ml | 2.237e-05 | L | not captured | review_gapfill (0.7) | Askholt_1985:review | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -59,10 +58,9 @@ JamesDMorse 0000-0001-7500-0062 Department of Pharmacology and Clinical Pharmaco
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=acetaminophen, ibuprofen
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
-- gap-filled Q61 (V) from Brune_2007's review values (primary lacked it)
+- gap-filled Q61 (V) from Askholt_1985's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Hong_2008's review values (primary lacked it)
 
 ## Validation
 
@@ -107,10 +105,12 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Askholt_1985:review'] |
 | C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['Morse_2022:results_prose'] |
 | C5_unit_missing_Q83 | fail | [time] | fold | not captured | not captured | ['Morse_2022:results_prose'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.816 | not captured | not captured | ['Morse_2022:results_prose'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q61 | fail | volume within physiological range | 0.0224 L | not captured | not captured | ['Askholt_1985:review'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -119,7 +119,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ibuprofen/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Morse_2022` / `Morse_2022::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ibuprofen/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Morse_2022` / `Morse_2022::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

@@ -18,11 +18,21 @@ Bismuth subnitrate is a bismuth compound that was used as an antacid and anti-ul
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-04 10:10 | 0:25 | 0/0/0 | 0/0/0 | 0/0/0 | 11,101/616 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 0/1 | 0 |
+| 2026-10-15 03:29 | 0:07 | 0/0/0 | 0/0/0 | 0/0/0 | 11,101/650 | einfracz / qwen3.8-27b | 1 | 1/0 | 0/1 | 0 |
 
 ## popPK records
 
 _not available_
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=bismuth_subnitrate).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -37,31 +47,21 @@ _not available_
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
-## Full-text requests
-
-_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Morikawa_1990.pdf` | Morikawa T et al., [Alleviation of cisplatin toxicity by h…, Nihon Gan Chiryo Gakkai shi (1990) | popPK | 8 | not captured | [2398299](https://pubmed.ncbi.nlm.nih.gov/2398299) | The study reports pharmacokinetics of bismuth subnitrate in humans, but the specific numeric parameter values are not present in the provided abstract text. |
-
-<sub>queue written 2026-10-04T10:10:07.974517+00:00</sub>
-
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Chen_1987 | irrelevant | 0 | 0 | The study investigates the effect of bismuth subnitrate on cisplatin toxicity and reports clinical toxicity markers (creatinine clearance, NAG), not the pharmacokinetic disposition parameters (CL, V, ka) of bismuth subnitrate itself. |
+| popPK | Chen_1987 | irrelevant | 0 | 0 | The study is a clinical trial investigating the reduction of cisplatin nephrotoxicity by bismuth subnitrate, with no pharmacokinetic parameters (CL, V, etc.) reported for bismuth subnitrate. |
 | popPK | Hadžiabdić_2015 | irrelevant | 0 | 0 | The paper focuses on the physical stability and formulation of bismuth subnitrate suspensions, not pharmacokinetic parameters. |
 | PD | Hadžiabdić_2015 | not_relevant | 0 | 0 | The paper discusses the physical stability and formulation of bismuth subnitrate suspensions (sedimentation, flocculation) and contains no pharmacodynamic, exposure-response, or dose-response data. |
 | popPK | Heckers_1994 | irrelevant | 2 | 0 | The study reports only peak concentrations and AUC values for bismuth subnitrate, lacking the specific quantitative disposition parameters (CL, V, ka, half-life) required for population pharmacokinetic modeling. |
 | PD | Heckers_1994 | not_relevant | 0 | 0 | The paper reports PK parameters (serum concentrations, urinary excretion) and correlations between exposure metrics, but does not report any pharmacodynamic effect or dose-response relationship. |
-| popPK | Jaggi_2005 | irrelevant | 0 | 0 | The study focuses on the biodistribution of radioactive isotope bismuth-213 (a daughter of actinium-225) in the context of cancer therapy, not the pharmacokinetics of the drug bismuth subnitrate, which is only mentioned as a competitive antagonist. |
-| popPK | Morikawa_1989 | irrelevant | 2 | 0 | The study describes qualitative concentration trends (plateau/peak) for bismuth but does not report quantitative PK parameters (CL, V, ka, t1/2) or a compartmental model for bismuth subnitrate. |
-| popPK | Morikawa_1990 | relevant | 8 | 2 | The study reports pharmacokinetics of bismuth subnitrate in humans, but the specific numeric parameter values are not present in the provided abstract text. |
-| PGx | Nakajima_2012 | not_relevant | 0 | 0 | The paper reports a clinical case of H. pylori eradication using bismuth subnitrate and mentions CYP2C19 genotype, but it does not report any pharmacokinetic or pharmacodynamic parameters of bismuth subnitrate or how the genotype affects them. |
-| popPK | Slikkerveer_1989 | irrelevant | 2 | 0 | The paper is a review discussing general bismuth pharmacokinetics and toxicity without reporting specific quantitative compartmental parameters (CL, V, Q) for bismuth subnitrate. |
-| popPK | Takahashi_1989 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of cisplatin, with bismuth subnitrate used only as a co-administered agent to assess renal protection, and no PK parameters for bismuth are reported. |
+| popPK | Jaggi_2005 | irrelevant | 1 | 0 | The study focuses on the biodistribution of radionuclides (Bi-213) from an actinium generator, using bismuth subnitrate only as a competitive antagonist to modify renal uptake, not as the subject drug for PK parameter estimation. |
+| popPK | Morikawa_1989 | irrelevant | 2 | 0 | The study describes qualitative pharmacokinetic trends for bismuth (plateau/peak timing) without reporting quantitative compartmental parameters (CL, V, ka, t1/2) in the provided text. |
+| popPK | Morikawa_1990 | irrelevant | 2 | 0 | The study reports the pharmacokinetics of bismuth subnitrate, but no specific quantitative parameter values (CL, V, Ka, etc.) are present in the provided evidence. |
+| PGx | Nakajima_2012 | not_relevant | 0 | 0 | The paper reports a clinical case of H. pylori eradication using bismuth subnitrate and mentions CYP2C19 genotype only in the context of previous PPI therapy, without reporting any pharmacogenomic effect on the PK or PD of bismuth subnitrate. |
+| popPK | Slikkerveer_1989 | irrelevant | 1 | 0 | The paper is a review discussing general bismuth pharmacokinetics and toxicity, mentioning multicompartment kinetics and extreme half-lives (3.5 min to 22 years) for bismuth in humans, but it does not report specific quantitative population-PK parameter values (CL, V, ka) for bismuth subnitrate, nor does it provide a model with extractable numeric coefficients. |
+| popPK | Takahashi_1989 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of cisplatin, with bismuth subnitrate used only as a co-administered agent to alleviate renal impairment, and no PK parameters for bismuth subnitrate are reported. |
 | popPK | unknown_1991 | irrelevant | 0 | 0 | no_text gate: only 109 chars of text extracted (&lt; 400) |
 | PD | unknown_1991 | not_relevant | 0 | 0 | The provided text is only a citation header for a conference abstract collection and contains no scientific content, data, or PD parameters. |
 

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;hydroxychloroquine&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/&quot;},{&quot;label&quot;:&quot;Th\u00e9mans_2020 \u00b7 corresponding_estimated_value_in_model_by_carmichael_et_al_2&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Hydroxychloroquine_Balevic2019_estimate&quot;,&quot;label&quot;:&quot;Balevic_2019_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/Hydroxychloroquine_Balevic2019_estimate.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxychloroquine_Balevic2019_postnatal&quot;,&quot;label&quot;:&quot;Balevic_2019_postnatal&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/Hydroxychloroquine_Balevic2019_postnatal.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxychloroquine_Balevic2019_prenatal&quot;,&quot;label&quot;:&quot;Balevic_2019_prenatal&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/Hydroxychloroquine_Balevic2019_prenatal.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxychloroquine_Thmans2020_corresponding_estimated_value&quot;,&quot;label&quot;:&quot;Th\u00e9mans_2020_corresponding_estimated_value_in_model_by_carmichael_et_al_2&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/Hydroxychloroquine_Thmans2020_corresponding_estimated_value.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Hydroxychloroquine_Thmans2020_estimate&quot;,&quot;label&quot;:&quot;Th\u00e9mans_2020_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/Hydroxychloroquine_Thmans2020_estimate.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxychloroquine_Yang2025_reference&quot;,&quot;label&quot;:&quot;Yang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/Hydroxychloroquine_Yang2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxychloroquine_Zahr2021_reference&quot;,&quot;label&quot;:&quot;Zahr_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/Hydroxychloroquine_Zahr2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Hydroxychloroquine_Balevic2019_postnatal&quot;,&quot;label&quot;:&quot;Balevic_2019_postnatal&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/Hydroxychloroquine_Balevic2019_postnatal.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxychloroquine_Balevic2019_prenatal&quot;,&quot;label&quot;:&quot;Balevic_2019_prenatal&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/Hydroxychloroquine_Balevic2019_prenatal.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxychloroquine_Thmans2020_estimate&quot;,&quot;label&quot;:&quot;Th\u00e9mans_2020_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/Hydroxychloroquine_Thmans2020_estimate.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxychloroquine_Yang2025_reference&quot;,&quot;label&quot;:&quot;Yang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/Hydroxychloroquine_Yang2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxychloroquine_Zahr2021_covid_19f&quot;,&quot;label&quot;:&quot;Zahr_2021_covid_19f&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/Hydroxychloroquine_Zahr2021_covid_19f.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxychloroquine_Zahr2021_healthy&quot;,&quot;label&quot;:&quot;Zahr_2021_healthy&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/Hydroxychloroquine_Zahr2021_healthy.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxychloroquine_Zahr2021_lupusa&quot;,&quot;label&quot;:&quot;Zahr_2021_lupusa&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/Hydroxychloroquine_Zahr2021_lupusa.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxychloroquine_Zahr2021_malariad&quot;,&quot;label&quot;:&quot;Zahr_2021_malariad&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/Hydroxychloroquine_Zahr2021_malariad.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxychloroquine_Balevic2019_estimate&quot;,&quot;label&quot;:&quot;Balevic_2019_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/Hydroxychloroquine_Balevic2019_estimate.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # hydroxychloroquine — `Hydroxychloroquine_Thmans2020_corresponding_estimated_value`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -13,34 +13,38 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** Model and browser simulation available in **Models** and **Simulation**.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**C5 dimension mismatch on a structural parameter.**
+
+A reported unit could not be converted (kabs and Fab), so that value has no SI equivalent. Extracted — hydroxychloroquine: kabs 0.765 2, V 605 L, CL 9.89 L/h, Fab 0.746 2, tlag 0.445 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has hydroxychloroquine, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Thémans P et al., Population Pharmacokinetics of Hydroxyc…, European journal of drug me… (2020)
   ·  DOI: [10.1007/s13318-020-00648-y](https://doi.org/10.1007/s13318-020-00648-y)
 
-<div class="pk-model-meta" hidden drug="hydroxychloroquine" model-id="Hydroxychloroquine_Thmans2020_corresponding_estimated_value" status="curated_candidate" stale="false" population="COVID-19 patients" measured-compound="hydroxychloroquine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="hydroxychloroquine" model-id="Hydroxychloroquine_Thmans2020_corresponding_estimated_value" status="rejected" stale="false" population="adults with COVID-19" measured-compound="hydroxychloroquine" parameterization="mechanistic" topology="1C"></div>
 
-**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Ka (/h) | `Q49` · kabs | 0.765 | /h | 0.00021250000000000002 | [1] / [h] | not captured | exact (1.0) | Tab2:row1:col4 | — | 0.94 (None% RSE) |
+| Ka (/h) | `Q49` · kabs | 0.765 | 2 | not captured | [2] | not captured | exact (1.0) | Tab2:row1:col4 | — | 0.94 (None% RSE) |
 | V (L) | `Q61` · V | 605 | L | 0.605 | [l] | not captured | exact (1.0) | Tab2:row2:col4 | — | not captured |
 | CL (L/h) | `Q22` · CL | 9.89 | L/h | 2.7472222222222226e-06 | [l] / [h] | not captured | exact (1.0) | Tab2:row3:col4 | — | 0.127 (None% RSE) |
-| F | `Q40` · Fab | 0.746 | not captured | not captured | not captured | not captured | exact (1.0) | Tab2:row4:col4 | — | not captured |
+| F | `Q40` · Fab | 0.746 | 2 | not captured | not captured | not captured | exact (1.0) | Tab2:row4:col4 | — | not captured |
 | Tlag (h) | `Q83` · tlag | 0.445 | h | 1602.0 | [h] | not captured | exact (1.0) | Tab2:row5:col4 | — | not captured |
 
 <details class="legend">
@@ -51,21 +55,17 @@ Thémans P et al., Population Pharmacokinetics of Hydroxyc…, European journal 
 ## Departures & gaps
 
 **Interpretation flags:**
-- table section iiv: 'Εprop (σ2)' routed out of structural estimates ('IIV on Tlag (ω2)')
-- table section iiv: 'Εadd (σ2)' routed out of structural estimates ('IIV on Tlag (ω2)')
+- table section iiv: 'Εprop (σ2)' routed out of structural estimates ('IIV on Tlag (ω2) ne')
+- table section iiv: 'Εadd (σ2)' routed out of structural estimates ('IIV on Tlag (ω2) ne')
+- unit_dimension_mismatch: 'Ka (/h)' → Q49 (unit 'dimensionless' vs ontology '1 / [time]') — route to review
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=hydroxychloroquine
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at route_to_review — not promoted
 - population split: 'corresponding estimated value in model by carmichael et al. [2]' subgroup of Thémans_2020 (paper reports 2 populations: corresponding estimated value in model by carmichael et al. [2], estimate)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- unparsed cell Tab2:row1:col2 = '7.31 (1.81–9.44)'
-- unparsed cell Tab2:row2:col2 = '869.3 (679–1130)'
-- unparsed cell Tab2:row3:col2 = '15.4 (12.1–17.6)'
-- unparsed cell Tab2:row6:col2 = '1.39 (0.56–2.52)'
-- unparsed cell Tab2:row8:col2 = '0.13 (0.04, 0.21)'
-- unparsed cell Tab2:row9:col2 = '0.26 (0.13, 0.38)'
-- unparsed cell Tab2:row12:col2 = '0.028 (0.01, 0.045)'
 - LLM selected parameter table(s) 2
 
 ## Validation
@@ -100,24 +100,13 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row3:col4'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Tab2:row1:col4'] |
+| C5_dimension_Q49 | fail | dimensionless | 2 | not captured | not captured | ['Tab2:row1:col4'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row2:col4'] |
 | C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Tab2:row5:col4'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 9.89 | not captured | not captured | ['Tab2:row3:col4'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 9.89 L/h | not captured | not captured | ['Tab2:row3:col4'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 605 L | not captured | not captured | ['Tab2:row2:col4'] |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_output_variable | not captured | pass | C_central (measured=hydroxychloroquine) | central.C | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -126,38 +115,20 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_hydroxychloroquine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Thémans_2020` / `Thémans_2020::corresponding_estimated_value_in_model_by_carmichael_et_al_2`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_hydroxychloroquine/models/modelica/Hydroxychloroquine_Thmans2020_corresponding_estimated_value.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_hydroxychloroquine/models/modelica/Hydroxychloroquine_Thmans2020_corresponding_estimated_value.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_hydroxychloroquine/models/modelica/Hydroxychloroquine_Thmans2020_corresponding_estimated_value.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_hydroxychloroquine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Thémans_2020` / `Thémans_2020::corresponding_estimated_value_in_model_by_carmichael_et_al_2`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_hydroxychloroquine/Hydroxychloroquine_Thmans2020_corresponding_estimated_value/Hydroxychloroquine_Thmans2020_corresponding_estimated_value_modelica.zip" download>Hydroxychloroquine_Thmans2020_corresponding_estimated_value_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_hydroxychloroquine/Hydroxychloroquine_Thmans2020_corresponding_estimated_value/Hydroxychloroquine_Thmans2020_corresponding_estimated_value_fmi.zip" download>Hydroxychloroquine_Thmans2020_corresponding_estimated_value_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_hydroxychloroquine/Hydroxychloroquine_Thmans2020_corresponding_estimated_value/Hydroxychloroquine_Thmans2020_corresponding_estimated_value_matlab.zip" download>Hydroxychloroquine_Thmans2020_corresponding_estimated_value_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_hydroxychloroquine/Hydroxychloroquine_Thmans2020_corresponding_estimated_value/Hydroxychloroquine_Thmans2020_corresponding_estimated_value_matlab_simbio.zip" download>Hydroxychloroquine_Thmans2020_corresponding_estimated_value_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_hydroxychloroquine/Hydroxychloroquine_Thmans2020_corresponding_estimated_value/Hydroxychloroquine_Thmans2020_corresponding_estimated_value_sbml.zip" download>Hydroxychloroquine_Thmans2020_corresponding_estimated_value_sbml.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_hydroxychloroquine/Hydroxychloroquine_Thmans2020_corresponding_estimated_value/Hydroxychloroquine_Thmans2020_corresponding_estimated_value_cellml.zip" download>Hydroxychloroquine_Thmans2020_corresponding_estimated_value_cellml.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_hydroxychloroquine/Hydroxychloroquine_Thmans2020_corresponding_estimated_value/Hydroxychloroquine_Thmans2020_corresponding_estimated_value.svg" alt="Hydroxychloroquine_Thmans2020_corresponding_estimated_value diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 200 mg, single dose, first-order absorption (ka 0.765 /h, lag 26.7 min, F 0.746). Doses in the paper: 200, 400 mg.
-
-<dbs-fmusim paramsurl="drugs/drug_hydroxychloroquine/Hydroxychloroquine_Thmans2020_corresponding_estimated_value/Hydroxychloroquine_Thmans2020_corresponding_estimated_value_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_hydroxychloroquine/Hydroxychloroquine_Thmans2020_corresponding_estimated_value/Hydroxychloroquine_Thmans2020_corresponding_estimated_value_sim_controls.json"></dbs-fmusim>
-
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C_enteral` · parameters `Hydroxychloroquine_Thmans2020_corresponding_estimated_value_params.json` · controls `Hydroxychloroquine_Thmans2020_corresponding_estimated_value_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 07:02 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 23:45 UTC</sub>

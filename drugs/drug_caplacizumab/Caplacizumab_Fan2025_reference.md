@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;caplacizumab&quot;,&quot;href&quot;:&quot;drugs/drug_caplacizumab/&quot;},{&quot;label&quot;:&quot;Fan_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Caplacizumab_Fan2025_reference&quot;,&quot;label&quot;:&quot;Fan_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_caplacizumab/Caplacizumab_Fan2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Caplacizumab_Fan2025_reference&quot;,&quot;label&quot;:&quot;Fan_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_caplacizumab/Caplacizumab_Fan2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # caplacizumab — `Caplacizumab_Fan2025_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.438), gpt-oss:120b (not confirmed, agreement 0.357). Primary extraction retained.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.438), gpt-oss:120b (not confirmed, agreement 0.357). Primary extraction retained.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -19,19 +19,19 @@
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**F, k21 use library defaults, not estimates from this paper; t6_deviations.**
+
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — caplacizumab: CL 0.35 mL/h/kg, V1 26.9 mL/kg, Q 1.86 mL/h, kabs 0.46 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 0.35, the second reading 0.69; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
-
-> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:36:45.848776+00:00) predates the upstream re-run (2026-10-05 12:37:53.737239+00:00). Current validate status: `extracted`.
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Fan X et al., Pharmacokinetic-pharmacodynamic modelin…, Microbiology spectrum (2025)
   ·  DOI: [10.1128/spectrum.00805-25](https://doi.org/10.1128/spectrum.00805-25)
 
-<div class="pk-model-meta" hidden drug="caplacizumab" model-id="Caplacizumab_Fan2025_reference" status="extracted" stale="true" population="" measured-compound="caplacizumab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="caplacizumab" model-id="Caplacizumab_Fan2025_reference" status="needs_review" stale="false" population="" measured-compound="caplacizumab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 4 extracted.
@@ -39,6 +39,8 @@ Fan X et al., Pharmacokinetic-pharmacodynamic modelin…, Microbiology spectrum 
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | human linear clearance | `Q22` · CL | 0.35 | mL/h/kg | 6.8055555555555556e-09 | L/h | not captured | review (0.7) | Fan_2025:review | — | not captured |
@@ -126,7 +128,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_output_variable | not captured | pass | C_central (measured=caplacizumab) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -135,10 +137,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_caplacizumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Fan_2025` / `Fan_2025::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_caplacizumab/models/modelica/Caplacizumab_Fan2025_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_caplacizumab/models/modelica/Caplacizumab_Fan2025_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_caplacizumab/models/modelica/Caplacizumab_Fan2025_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_caplacizumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Fan_2025` / `Fan_2025::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_caplacizumab/models/modelica/Caplacizumab_Fan2025_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_caplacizumab/models/modelica/Caplacizumab_Fan2025_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_caplacizumab/models/modelica/Caplacizumab_Fan2025_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -156,7 +158,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_caplacizumab/Caplacizumab_Fan2025_reference/Caplacizumab_Fan2025_reference.svg" alt="Caplacizumab_Fan2025_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_caplacizumab/Caplacizumab_Fan2025_reference/Caplacizumab_Fan2025_reference.svg" alt="Caplacizumab_Fan2025_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -169,4 +171,4 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 12:37 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 22:07 UTC</sub>

@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;atenolol&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/&quot;},{&quot;label&quot;:&quot;Celardo_1987 \u00b7 during_renal_failure&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atenolol_Frampton1992_reference&quot;,&quot;label&quot;:&quot;Frampton_1992_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_Frampton1992_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Baek_2008_DBP&quot;,&quot;label&quot;:&quot;Baek_2008 \u00b7 DBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/pd_Baek_2008_DBP.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_McCoy_1994_HR&quot;,&quot;label&quot;:&quot;McCoy_1994 \u00b7 HR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/pd_McCoy_1994_HR.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_McCoy_1994_HR_2&quot;,&quot;label&quot;:&quot;McCoy_1994 \u00b7 HR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/pd_McCoy_1994_HR_2.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_McCoy_1994_HR_3&quot;,&quot;label&quot;:&quot;McCoy_1994 \u00b7 HR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/pd_McCoy_1994_HR_3.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Baek_2008_SBP&quot;,&quot;label&quot;:&quot;Baek_2008 \u00b7 SBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/pd_Baek_2008_SBP.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # atenolol — `Atenolol_Celardo1987_during_renal_failure`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2), gpt-oss:120b (not confirmed, agreement 0.65). Primary extraction retained.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2), gpt-oss:120b (not confirmed, agreement 0.65). Primary extraction retained.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -18,21 +19,19 @@
 
 ### Reviewer guidance
 
-**Atenolol clearance and volume values are implausibly low, indicating a unit or scale extraction error.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The total clearance of 0.086 L/h and central volume of 0.36 L fall outside physiological windows for this drug. A reported unit could not be converted to standard units, so the parameter lacked a valid value for review. The second reader disagreed on several extracted values, including blood clearance and mean residence time. Extracted — atenolol: λ1 3.98, λ2 0.039, t1/2α 0.21 h, t1/2β 18.1 h, V 0.36 L, Vss 2.03 L, CL 0.086 L/h, AUC 39.4 mg·h/L, … (+7).
+A reported unit could not be converted (AUC), so that value has no SI equivalent. Extracted — atenolol: λ1 3.98, λ2 0.039, t1/2α 0.21 h, t1/2β 18.1 h, V 0.36 L, Vss 2.03 L, CL 0.086 L/h, AUC 39.4 mg·h/L, … (+8).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of auc d: this record has 39.41, the second reading none; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
-
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-29 04:00:29.426422+00:00) predates the upstream re-run (2026-10-06 23:08:42.359022+00:00). Current validate status: `rejected`.
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Celardo A et al., Pharmacokinetic and pharmacodynamic mod…, European journal of drug me… (1987)
   ·  DOI: [10.1007/BF03189860](https://doi.org/10.1007/BF03189860)
 
-<div class="pk-model-meta" hidden drug="atenolol" model-id="Atenolol_Celardo1987_during_renal_failure" status="rejected" stale="true" population="rabbits on continuous peritoneal dialysis" measured-compound="atenolol" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="atenolol" model-id="Atenolol_Celardo1987_during_renal_failure" status="rejected" stale="false" population="rabbits on continuous peritoneal dialysis" measured-compound="atenolol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 16 extracted.
@@ -176,7 +175,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_dimension_Q88 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Celardo_1987_table_2:row7:col3'] |
 | C5_unit_missing_Q67 | fail | [mass] / [time] | not captured | not captured | not captured | ['Celardo_1987_table_2:row0:col3'] |
 | C5_unit_missing_Q68 | fail | [mass] / [time] | not captured | not captured | not captured | ['Celardo_1987_table_2:row1:col3', 'Celardo_1987_table_3:row6:col3'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.086 | not captured | not captured | ['Celardo_1987_table_2:row6:col3'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.095 | not captured | not captured | ['Celardo_1987_table_3:row1:col3'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.086 L/h | not captured | not captured | ['Celardo_1987_table_2:row6:col3'] |
 | C9_phys_window_Q23 | pass | clearance within physiological range | 0.095 L/h | not captured | not captured | ['Celardo_1987_table_3:row1:col3'] |
@@ -190,7 +189,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_atenolol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Celardo_1987` / `Celardo_1987::during_renal_failure`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_atenolol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Celardo_1987` / `Celardo_1987::during_renal_failure`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -206,4 +205,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 23:08 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 19:53 UTC</sub>

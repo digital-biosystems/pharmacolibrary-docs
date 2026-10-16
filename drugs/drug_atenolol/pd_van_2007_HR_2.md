@@ -1,7 +1,8 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;atenolol&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/&quot;},{&quot;label&quot;:&quot;van_2007 \u00b7 PD heart rate&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atenolol_Frampton1992_reference&quot;,&quot;label&quot;:&quot;Frampton_1992_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_Frampton1992_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Baek_2008_DBP&quot;,&quot;label&quot;:&quot;Baek_2008 \u00b7 DBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/pd_Baek_2008_DBP.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_McCoy_1994_HR&quot;,&quot;label&quot;:&quot;McCoy_1994 \u00b7 HR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/pd_McCoy_1994_HR.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_McCoy_1994_HR_2&quot;,&quot;label&quot;:&quot;McCoy_1994 \u00b7 HR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/pd_McCoy_1994_HR_2.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_McCoy_1994_HR_3&quot;,&quot;label&quot;:&quot;McCoy_1994 \u00b7 HR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/pd_McCoy_1994_HR_3.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Baek_2008_SBP&quot;,&quot;label&quot;:&quot;Baek_2008 \u00b7 SBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/pd_Baek_2008_SBP.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# heart rate — PD  <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.714). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+# heart rate — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.714). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -15,17 +16,17 @@
 
 ## Record summary
 
-**As extracted:** S(−)-atenolol (concentrations from this paper's PK model) drives heart rate (in b.p.m.): direct sigmoid Emax (Hill) effect.
+**As extracted:** S(À)-atenolol drives heart rate (in b.p.m.): direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
 
-> S(−)-atenolol concentrations inhibit heart rate via a sigmoid Emax model with an effect compartment to resolve hysteresis, characterized by a baseline (E0) of 362 b.p.m., a maximal effect (Emax) of -43.0 b.p.m., and an EC50 of 27.9 ng ml−1.
+> Plasma concentrations of S(-)-atenolol inhibit heart rate in rats receiving isoprenaline via a sigmoid Emax model that incorporates an effect compartment to resolve hysteresis, with a baseline heart rate (E0) of 362 b.p.m., a maximal effect (Emax) of -43.0 b.p.m., and a potency (EC50) of 27.9 ng ml-1. The paper notes that this potency estimate was obtained with isoprenaline, as the variability in heart rate without the agonist rendered the EC50 unreliable.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `van_2007`
 - **model family:** `sigmoid_emax`
-- **driver:** `pk_record`
+- **driver:** `not_resolved`
 - **tier:** population
 - **effect:** inhibition/additive
 
@@ -36,9 +37,12 @@ van Steeg TJ et al., Pharmacokinetic-pharmacodynamic modelli…, British journal
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | E0 | `Q324` · not captured | 362 | b.p.m. | not captured | llm (not captured) | van_2007:pdv3 |
-| PD (effect) | Emax | `Q323` · not captured | -43.0 | b.p.m. | not captured | llm (not captured) | van_2007:pdv3 |
-| PD (effect) | EC50 | `Q321` · not captured | 27.9 | ng ml−1 | not captured | llm (not captured) | van_2007:pdv3 |
+| PD (effect) | E 0 | `Q324` · not captured | 362 | b.p.m. | not captured | llm (not captured) | van_2007:pdv3 |
+| PD (effect) | E max | `Q323` · not captured | -43.0 | b.p.m. | not captured | llm (not captured) | van_2007:pdv3 |
+| PD (effect) | EC 50 | `Q322` · not captured | 27.9 | ng ml À1 | not captured | llm (not captured) | van_2007:pdv3 |
+| variability | o 2 E 0 | `Q312` · not captured | 1380 | not captured | not captured | llm (not captured) | van_2007:pdv3 |
+| variability | o 2 E max | `Q312` · not captured | 913 | not captured | not captured | llm (not captured) | van_2007:pdv3 |
+| variability | s PD 2 | `Q315` · not captured | 250 | not captured | not captured | llm (not captured) | van_2007:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>

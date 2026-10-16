@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;guselkumab&quot;,&quot;href&quot;:&quot;drugs/drug_guselkumab/&quot;},{&quot;label&quot;:&quot;Yao_2018 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Guselkumab_RodrguezFernndez2022_reference&quot;,&quot;label&quot;:&quot;Rodr\u00edguez-Fern\u00e1ndez_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_guselkumab/Guselkumab_RodrguezFernndez2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Guselkumab_Yao2018_reference&quot;,&quot;label&quot;:&quot;Yao_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_guselkumab/Guselkumab_Yao2018_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Guselkumab_Chen2022_reference&quot;,&quot;label&quot;:&quot;Chen_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_guselkumab/Guselkumab_Chen2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Guselkumab_Chen2022_reference&quot;,&quot;label&quot;:&quot;Chen_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_guselkumab/Guselkumab_Chen2022_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Guselkumab_RodrguezFernndez2022_reference&quot;,&quot;label&quot;:&quot;Rodr\u00edguez-Fern\u00e1ndez_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_guselkumab/Guselkumab_RodrguezFernndez2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Guselkumab_Yao2018_reference&quot;,&quot;label&quot;:&quot;Yao_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_guselkumab/Guselkumab_Yao2018_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Chen_2022_ACR&quot;,&quot;label&quot;:&quot;Chen_2022 \u00b7 ACR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_guselkumab/pd_Chen_2022_ACR.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Chen_2022_ACR_2&quot;,&quot;label&quot;:&quot;Chen_2022 \u00b7 ACR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_guselkumab/pd_Chen_2022_ACR_2.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Chen_2022_IGA&quot;,&quot;label&quot;:&quot;Chen_2022 \u00b7 IGA&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_guselkumab/pd_Chen_2022_IGA.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Vaskeikina_2026_mRSS&quot;,&quot;label&quot;:&quot;Vaskeikina_2026 \u00b7 mRSS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_guselkumab/pd_Vaskeikina_2026_mRSS.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -39,10 +39,10 @@ Yao Z et al., Population Pharmacokinetic Modeling of…, Journal of clinical pha
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| apparent clearance | `Q27` · CL/F | 0.516 | L/day | 5.972222222222223e-09 | [l] / [d] | not captured | exact (1.0) | Yao_2018:abstract | — | not captured |
-| apparent volume of distribution | `Q76` · V/F | 13.5 | L | 0.0135 | [l] | not captured | exact (1.0) | Yao_2018:abstract | — | not captured |
-| absorption rate constant | `Q49` · kabs | 1.11 | day-1 | 1.2847222222222222e-05 | [1] / [d] | not captured | exact (1.0) | Yao_2018:abstract | — | not captured |
-| elimination half-life | `Q57` · t1/2z | 18.1 | days | 1563840.0000000002 | [d] | not captured | llm (0.6) | Yao_2018:abstract | — | not captured |
+| apparent clearance (CL/F) | `Q27` · CL/F | 0.516 | L/day | 5.972222222222223e-09 | [l] / [d] | not captured | exact (1.0) | Yao_2018:abstract | — | not captured |
+| apparent volume of distribution (V/F) | `Q76` · V/F | 13.5 | L | 0.0135 | [l] | not captured | exact (1.0) | Yao_2018:abstract | — | not captured |
+| model-derived elimination half-life | `Q60` · t1/2β | 18.1 | days | 1563840.0000000002 | [d] | not captured | llm (0.6) | Yao_2018:abstract | — | not captured |
+| ka | `Q49` · kabs | 0.908 | day−1 | 1.0509259259259259e-05 | 1/h | not captured | review_gapfill (0.7) | Rodríguez-Fernández_2022:review | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -56,15 +56,19 @@ Yao Z et al., Population Pharmacokinetic Modeling of…, Journal of clinical pha
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
 
 **Interpretation flags:**
+- dropped unlinked row (NIL): 'body weight' — extend the ontology if this is a real PK parameter (source ['Yao_2018:abstract'])
+- dropped unlinked row (NIL): 'Diabetes' — extend the ontology if this is a real PK parameter (source ['Yao_2018:abstract'])
+- dropped value-less row: 'age, sex, ethnicity, immune response to guselkumab, or concomitant medications'
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=guselkumab
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - molar mass: none found for 'guselkumab' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
+- gap-filled Q49 (kabs) from Rodríguez-Fernández_2022's review values (primary lacked it)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Yao_2018_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Yao_2018_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -102,12 +106,12 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Yao_2018:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Yao_2018:abstract'] |
-| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Yao_2018:abstract'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Rodríguez-Fernández_2022:review'] |
+| C5_dimension_Q60 | pass | [time] | not captured | not captured | not captured | ['Yao_2018:abstract'] |
 | C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Yao_2018:abstract'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
@@ -133,10 +137,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_guselkumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Yao_2018` / `Yao_2018::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_guselkumab/models/modelica/Guselkumab_Yao2018_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_guselkumab/models/modelica/Guselkumab_Yao2018_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_guselkumab/models/modelica/Guselkumab_Yao2018_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_guselkumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Yao_2018` / `Yao_2018::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_guselkumab/models/modelica/Guselkumab_Yao2018_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_guselkumab/models/modelica/Guselkumab_Yao2018_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_guselkumab/models/modelica/Guselkumab_Yao2018_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -145,7 +149,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_guselkumab/Guselkumab_Yao2018_reference/Guselkumab_Yao2018_reference_modelica.zip" download>Guselkumab_Yao2018_reference_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_guselkumab/Guselkumab_Yao2018_reference/Guselkumab_Yao2018_reference_modelica.zip" download>Guselkumab_Yao2018_reference_modelica.zip</a> <span class="pk-size">(4.6 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_guselkumab/Guselkumab_Yao2018_reference/Guselkumab_Yao2018_reference_fmi.zip" download>Guselkumab_Yao2018_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_guselkumab/Guselkumab_Yao2018_reference/Guselkumab_Yao2018_reference_matlab.zip" download>Guselkumab_Yao2018_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_guselkumab/Guselkumab_Yao2018_reference/Guselkumab_Yao2018_reference_matlab_simbio.zip" download>Guselkumab_Yao2018_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
@@ -154,11 +158,11 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_guselkumab/Guselkumab_Yao2018_reference/Guselkumab_Yao2018_reference.svg" alt="Guselkumab_Yao2018_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_guselkumab/Guselkumab_Yao2018_reference/Guselkumab_Yao2018_reference.svg" alt="Guselkumab_Yao2018_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.0462 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.0378 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_guselkumab/Guselkumab_Yao2018_reference/Guselkumab_Yao2018_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_guselkumab/Guselkumab_Yao2018_reference/Guselkumab_Yao2018_reference_sim_controls.json"></dbs-fmusim>
 
@@ -167,4 +171,4 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 23:47 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 03:55 UTC</sub>

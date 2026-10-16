@@ -4,7 +4,7 @@
 
 # phytomenadione — `Phytomenadione_Novotny2010_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -16,15 +16,13 @@
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**This paper's disposition core is incomplete.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper.
+A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (OREILLY_1963) cannot stand in for this paper's evidence. Extracted — phytomenadione: t1/2z 215 h, V 8.6 L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has phylloquinone, the second reading 13C-phylloquinone; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
-
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:39:24.811687+00:00) predates the upstream re-run (2026-10-05 19:21:11.087224+00:00). Current validate status: `rejected`.
 
 > **Dose compound ≠ measured compound:** dosed `phytomenadione`, measured `phylloquinone`.
 
@@ -32,19 +30,20 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which m
 Novotny JA et al., Vitamin K absorption and kinetics in hu…, The British journal of nutr… (2010)
   ·  DOI: [10.1017/S0007114510001182](https://doi.org/10.1017/S0007114510001182)
 
-<div class="pk-model-meta" hidden drug="phytomenadione" model-id="Phytomenadione_Novotny2010_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="phylloquinone" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="phytomenadione" model-id="Phytomenadione_Novotny2010_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="phylloquinone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 1 extracted.
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Tissue half-time (h) | `Q57` · t1/2z | 215 | h | 774000.0 | [h] | not captured | llm (0.6) | tab_0:row6:col1, tab_0:row6:col2 | — | not captured |
+| Vd | `Q61` · V | 8.6 | L | 0.0086 | L | not captured | review_gapfill (0.7) | OREILLY_1963:review | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -55,6 +54,7 @@ Novotny JA et al., Vitamin K absorption and kinetics in hu…, The British journ
 
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=phylloquinone
+- gap-filled Q61 (V) from OREILLY_1963's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
@@ -90,9 +90,11 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
-| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['tab_0:row6:col1', 'tab_0:row6:col2'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['OREILLY_1963:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q61 | pass | volume within physiological range | 8.6 L | not captured | not captured | ['OREILLY_1963:review'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -101,14 +103,24 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_phytomenadione/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Novotny_2010` / `Novotny_2010::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_phytomenadione/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Novotny_2010` / `Novotny_2010::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -117,4 +129,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 19:21 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 18:12 UTC</sub>

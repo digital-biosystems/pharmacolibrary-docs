@@ -185,10 +185,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_loperamide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Valenzuela_2025` / `Valenzuela_2025::loperamide`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_loperamide/models/modelica/Loperamide_Valenzuela2025_loperamide.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_loperamide/models/modelica/Loperamide_Valenzuela2025_loperamide.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_loperamide/models/modelica/Loperamide_Valenzuela2025_loperamide.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_loperamide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Valenzuela_2025` / `Valenzuela_2025::loperamide`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_loperamide/models/modelica/Loperamide_Valenzuela2025_loperamide.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_loperamide/models/modelica/Loperamide_Valenzuela2025_loperamide.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_loperamide/models/modelica/Loperamide_Valenzuela2025_loperamide.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

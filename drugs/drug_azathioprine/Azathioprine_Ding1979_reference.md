@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;azathioprine&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/&quot;},{&quot;label&quot;:&quot;Ding_1979 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Azathioprine_Lin2021_reference&quot;,&quot;label&quot;:&quot;Lin_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_Lin2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Azathioprine_Lin2021_reference&quot;,&quot;label&quot;:&quot;Lin_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_Lin2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # azathioprine — `Azathioprine_Ding1979_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.0), gpt-oss:120b (not confirmed, agreement 0.0). Primary extraction retained.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">monkey</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.0), gpt-oss:120b (not confirmed, agreement 0.0). Primary extraction retained.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">monkey</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -19,22 +19,20 @@
 
 ### Reviewer guidance
 
-**The azathioprine record was rejected because the 8-hydroxymercaptopurine metabolite has no path from the dose (an unlinked metabolite), and the model was built from the paper's abstract only, so summary statistics stood in for a fitted model.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The azathioprine model forms two metabolites, 6-mercaptopurine and 8-hydroxymercaptopurine, but 8-hydroxymercaptopurine was formed with no compartment (n_cmt: 0) and no link parameter, leaving it unreachable from the dose. Because only the abstract was read, the reported values for 6-mercaptopurine — terminal half-life 41.6 min, apparent clearance 48.4 ml/min/kg, apparent volume of distribution 1.76 liters/kg — are summary statistics rather than a fitted model. A second reader also disagreed on the dose compound (azathioprine), the primary analyte, the relation of azathioprine to 6-mercaptopurine (hydrolysis versus metabolism), the parameterization (mechanistic versus apparent), and could not confirm the three parameter values. Extracted — 6-mercaptopurine: t1/2z 41.6 min, CLm,norm/F 48.4 ml/min/kg, Vm,norm/F 1.76 liters/kg.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is azathioprine's own; they describe 6-mercaptopurine. Extracted — 6-mercaptopurine: t1/2z 41.6 min, CLm,norm/F 48.4 ml/min/kg, Vm,norm/F 1.76 liters/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has azathioprine, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by glm-5.3-flash</sub>
-
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:24:06.160485+00:00) predates the upstream re-run (2026-10-06 23:43:07.897381+00:00). Current validate status: `rejected`.
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 > **Dose compound ≠ measured compound:** dosed `azathioprine`, measured `6-mercaptopurine`.
 
 ## Citation
 Ding TL et al., Comparative bioavailability and pharmac…, Drug metabolism and disposi… (1979)
 
-<div class="pk-model-meta" hidden drug="azathioprine" model-id="Azathioprine_Ding1979_reference" status="rejected" stale="true" population="rhesus monkeys" measured-compound="6-mercaptopurine" parameterization="apparent" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="azathioprine" model-id="Azathioprine_Ding1979_reference" status="rejected" stale="false" population="rhesus monkeys" measured-compound="6-mercaptopurine" parameterization="apparent" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 3 extracted.
@@ -134,7 +132,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_azathioprine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Ding_1979` / `Ding_1979::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_azathioprine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Ding_1979` / `Ding_1979::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -150,4 +148,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 23:43 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 00:36 UTC</sub>

@@ -18,7 +18,7 @@ Pheneturide is an anticonvulsant drug that was used to treat epilepsy. It is now
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 07:18 | 0:17 | 0/0/0 | 0/0/0 | 0/0/0 | 5,128/113 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-14 19:40 | 0:19 | 0/0/0 | 0/0/0 | 0/0/0 | 5,128/114 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
@@ -43,9 +43,9 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Galeazzi_1979.pdf` | Galeazzi RL et al., Pharmacokinetics of phenylethylacetylur…, Journal of pharmacokinetics… (1979) | popPK | 10 | [10.1007/BF01062387](https://doi.org/10.1007/BF01062387) | [529017](https://pubmed.ncbi.nlm.nih.gov/529017) | The abstract provides explicit quantitative values for half-life and total body clearance for pheneturide in humans. |
+| `Galeazzi_1979.pdf` | Galeazzi RL et al., Pharmacokinetics of phenylethylacetylur…, Journal of pharmacokinetics… (1979) | popPK | 10 | [10.1007/BF01062387](https://doi.org/10.1007/BF01062387) | [529017](https://pubmed.ncbi.nlm.nih.gov/529017) | The abstract reports quantitative PK parameters (half-life and total body clearance) for pheneturide in humans. |
 
-<sub>queue written 2026-10-07T07:18:15.677996+00:00</sub>
+<sub>queue written 2026-10-14T19:40:33.874933+00:00</sub>
 
 ## Screened and excluded
 

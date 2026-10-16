@@ -29,7 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Kovarik JM et al., Screening for basiliximab exposure-resp…, Clinical transplantation (1999)
   ·  DOI: [10.1034/j.1399-0012.1999.t01-2-130105.x](https://doi.org/10.1034/j.1399-0012.1999.t01-2-130105.x)
 
-<div class="pk-model-meta" hidden drug="basiliximab" model-id="Basiliximab_Kovarik1999v2_reference" status="curated_candidate" stale="false" population="renal transplant patients" measured-compound="basiliximab" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="basiliximab" model-id="Basiliximab_Kovarik1999v2_reference" status="curated_candidate" stale="false" population="renal transplant recipients" measured-compound="basiliximab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.
@@ -39,9 +39,9 @@ Kovarik JM et al., Screening for basiliximab exposure-resp…, Clinical transpla
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| The basiliximab distribution volume was | `Q61` · V | 7.5 | L | 0.0075 | [l] | not captured | llm_confirmed (0.6) | Kovarik_1999_2:abstract | — | not captured |
-| the half-life | `Q57` · t1/2z | 7.5 | d | 648000.0 | [d] | not captured | llm (0.6) | Kovarik_1999_2:abstract | — | not captured |
-| and the clearance | `Q22` · CL | 33 | mL/h | 9.166666666666666e-09 | [ml] / [h] | not captured | llm_confirmed (0.6) | Kovarik_1999_2:abstract | — | not captured |
+| basiliximab distribution volume | `Q61` · V | 7.5 | L | 0.0075 | [l] | not captured | llm_confirmed (0.6) | Kovarik_1999_2:abstract | — | not captured |
+| half-life | `Q57` · t1/2z | 7.5 | d | 648000.0 | [d] | not captured | llm (0.6) | Kovarik_1999_2:abstract | — | not captured |
+| clearance | `Q22` · CL | 33 | mL/h | 9.166666666666666e-09 | [ml] / [h] | not captured | exact (1.0) | Kovarik_1999_2:abstract | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -51,7 +51,7 @@ Kovarik JM et al., Screening for basiliximab exposure-resp…, Clinical transpla
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): '32 +/- 11 versus 45 +/- 26 d, respectively' — extend the ontology if this is a real PK parameter (source ['Kovarik_1999_2:abstract'])
+- dropped unlinked row (NIL): 'durations of receptor suppression preceding these events' — extend the ontology if this is a real PK parameter (source ['Kovarik_1999_2:abstract', 'Kovarik_1999_2:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=basiliximab
 - molar mass: none found for 'basiliximab' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
@@ -59,7 +59,7 @@ Kovarik JM et al., Screening for basiliximab exposure-resp…, Clinical transpla
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Kovarik_1999_2_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Kovarik_1999_2_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -123,10 +123,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_basiliximab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kovarik_1999_2` / `Kovarik_1999_2::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_basiliximab/models/modelica/Basiliximab_Kovarik1999v2_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_basiliximab/models/modelica/Basiliximab_Kovarik1999v2_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_basiliximab/models/modelica/Basiliximab_Kovarik1999v2_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_basiliximab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kovarik_1999_2` / `Kovarik_1999_2::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_basiliximab/models/modelica/Basiliximab_Kovarik1999v2_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_basiliximab/models/modelica/Basiliximab_Kovarik1999v2_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_basiliximab/models/modelica/Basiliximab_Kovarik1999v2_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -144,7 +144,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_basiliximab/Basiliximab_Kovarik1999v2_reference/Basiliximab_Kovarik1999v2_reference.svg" alt="Basiliximab_Kovarik1999v2_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_basiliximab/Basiliximab_Kovarik1999v2_reference/Basiliximab_Kovarik1999v2_reference.svg" alt="Basiliximab_Kovarik1999v2_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -157,4 +157,4 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 23:49 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 00:46 UTC</sub>

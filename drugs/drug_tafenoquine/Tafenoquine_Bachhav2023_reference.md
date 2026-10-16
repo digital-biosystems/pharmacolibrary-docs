@@ -17,19 +17,19 @@
 
 ### Reviewer guidance
 
-**The tafenoquine record was rejected because the abstract-only source reports AUC0-inf as a percentage point estimate (100.7 %) rather than an area under the curve with proper dimensions, a dimension mismatch on a structural parameter.**
+**C5 dimension mismatch on a structural parameter.**
 
-The paper (Bachhav_2023, paediatric P. vivax patients) was read at abstract level only, so summary statistics stood in for a fitted model. The AUC∞ entry for tafenoquine carries the value 100.7 with unit '%', which is a dimensionless ratio and cannot serve as an area under the concentration-time curve; the Cmax point estimate (79.7 %) and its 90 % CI lower bound (76.9 %) are likewise ratios. The dimension check on this structural parameter therefore failed, and the record was rejected. Extracted — tafenoquine: CL 3.4 L/h, AUC∞ 101 %, Cmax_ratio 79.7 %, tlag 0.147 h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — tafenoquine: CL 3.4 L/h, AUC∞ 101 %, Cmax 79.7 %, tlag 0.147 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has tafenoquine, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by glm-5.3-flash</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Bachhav SS et al., A pharmacometrics approach to assess th…, British journal of clinical… (2023)
   ·  DOI: [10.1111/bcp.15554](https://doi.org/10.1111/bcp.15554)
 
-<div class="pk-model-meta" hidden drug="tafenoquine" model-id="Tafenoquine_Bachhav2023_reference" status="rejected" stale="false" population="paediatric patients with P. vivax malaria" measured-compound="tafenoquine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="tafenoquine" model-id="Tafenoquine_Bachhav2023_reference" status="rejected" stale="false" population="paediatric" measured-compound="tafenoquine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.
@@ -41,10 +41,9 @@ Bachhav SS et al., A pharmacometrics approach to assess th…, British journal o
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| clearance | `Q22` · CL | 3.4 | L/h | 9.444444444444444e-07 | [l] / [h] | not captured | exact (1.0) | Bachhav_2023:abstract, Bachhav_2023:abstract | — | not captured |
-| AUC0-inf point estimate | `Q17` · AUC∞ | 100.7 | % | not captured | [%] | not captured | llm_confirmed (0.6) | Bachhav_2023:abstract | — | not captured |
-| Cmax point estimate | `Q33` · Cmax_ratio | 79.7 | % | not captured | [%] | not captured | llm_corrected (0.6) | Bachhav_2023:abstract | — | not captured |
-| Cmax 90% CI lower | `Q900` · equation variable | 76.9 | % | not captured | [%] | not captured | llm_corrected (0.6) | Bachhav_2023:abstract | — | not captured |
+| clearance | `Q22` · CL | 3.4 | L/h | 9.444444444444444e-07 | [l] / [h] | not captured | exact (1.0) | Bachhav_2023:abstract | — | not captured |
+| AUC0-inf | `Q17` · AUC∞ | 100.7 | % | not captured | [%] | not captured | exact (1.0) | Bachhav_2023:abstract | — | not captured |
+| Cmax | `Q32` · Cmax | 79.7 | % | not captured | [%] | not captured | exact (1.0) | Bachhav_2023:abstract | — | not captured |
 | Tlag,1 | `Q83` · tlag | 0.147 | h | 529.1999999999999 | h | not captured | review_gapfill (0.7) | Cherkaoui-Rbati_2023:review | — | not captured |
 
 <details class="legend">
@@ -56,11 +55,8 @@ Bachhav SS et al., A pharmacometrics approach to assess th…, British journal o
 
 **Interpretation flags:**
 - routed 'interindividual variability' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
-- unit_dimension_mismatch: 'AUC0-inf point estimate' → Q17 (unit 'dimensionless' vs ontology '[mass] * [time] / [length] ** 3') — route to review
-- unit_dimension_mismatch: 'AUC0-inf 90% CI lower' → Q17 (unit 'dimensionless' vs ontology '[mass] * [time] / [length] ** 3') — route to review
-- dropped duplicate Q17 ('AUC0-inf 90% CI lower', value 98.0) — already have one for this compound
-- dropped unlinked row (NIL): 'AUC0-inf 90% CI upper' — extend the ontology if this is a real PK parameter (source ['Bachhav_2023:abstract'])
-- dropped unlinked row (NIL): 'Cmax 90% CI upper' — extend the ontology if this is a real PK parameter (source ['Bachhav_2023:abstract'])
+- unit_dimension_mismatch: 'AUC0-inf' → Q17 (unit 'dimensionless' vs ontology '[mass] * [time] / [length] ** 3') — route to review
+- unit_dimension_mismatch: 'Cmax' → Q32 (unit 'dimensionless' vs ontology '[mass] / [length] ** 3') — route to review
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=tafenoquine
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
@@ -70,7 +66,7 @@ Bachhav SS et al., A pharmacometrics approach to assess th…, British journal o
 - gap-filled Q83 (tlag) from Cherkaoui-Rbati_2023's review values (primary lacked it)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Bachhav_2023_metadata.yaml (10 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Bachhav_2023_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -112,11 +108,12 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q17 | fail | dimensionless | % | not captured | not captured | ['Bachhav_2023:abstract'] |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Bachhav_2023:abstract', 'Bachhav_2023:abstract'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Bachhav_2023:abstract'] |
+| C5_dimension_Q32 | fail | dimensionless | % | not captured | not captured | ['Bachhav_2023:abstract'] |
 | C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Cherkaoui-Rbati_2023:review'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 3.4 | not captured | not captured | ['Bachhav_2023:abstract', 'Bachhav_2023:abstract'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 3.4 | not captured | not captured | ['Bachhav_2023:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 3.4 L/h | not captured | not captured | ['Bachhav_2023:abstract', 'Bachhav_2023:abstract'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 3.4 L/h | not captured | not captured | ['Bachhav_2023:abstract'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -125,7 +122,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_tafenoquine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Bachhav_2023` / `Bachhav_2023::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_tafenoquine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Bachhav_2023` / `Bachhav_2023::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -141,4 +138,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 08:53 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 03:44 UTC</sub>

@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;atezolizumab&quot;,&quot;href&quot;:&quot;drugs/drug_atezolizumab/&quot;},{&quot;label&quot;:&quot;Shemesh_2020 \u00b7 ttmb_16_mut_mb&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atezolizumab_Chan2025_reference&quot;,&quot;label&quot;:&quot;Chan_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atezolizumab/Atezolizumab_Chan2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atezolizumab_Shemesh2019_adult_model_estimate&quot;,&quot;label&quot;:&quot;Shemesh_2019_adult_model_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atezolizumab/Atezolizumab_Shemesh2019_adult_model_estimate.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atezolizumab_Shemesh2019_pediatric_young_adult_model_estimat&quot;,&quot;label&quot;:&quot;Shemesh_2019_pediatric_young_adult_model_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atezolizumab/Atezolizumab_Shemesh2019_pediatric_young_adult_model_estimat.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -16,22 +17,22 @@
 
 ### Reviewer guidance
 
-**Atezolizumab’s clearance of 0.223 mL/day/kg and volume of 6.91 L were rejected for implausible clearance/volume magnitude amid a unit/scale extraction error.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The reported unit could not be converted to SI, leaving the affected parameter without an SI value. The finding does not specify whether clearance or volume was outside the physiological window. Extracted — atezolizumab: Cmax 376 µg/mL, Cmin 66.7 µg/mL, AUC 2.83e+03 µg∙day/mL, CL 0.223 mL/day/kg, V 6.91 L.
+A reported unit could not be converted (Cmax, Cmin and AUC), so that value has no SI equivalent. Extracted — atezolizumab: Cmax 376 µg/mL, Css 532, Cmin 66.7 µg/mL, AUC 2.83e+03 µg∙day/mL, CL 0.223 mL/day/kg, V 6.91 L.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of steady state: this record has none, the second reading 532; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Shemesh CS et al., Pan-cancer population pharmacokinetics…, Pharmacology research & per… (2020)
   ·  DOI: [10.1002/prp2.685](https://doi.org/10.1002/prp2.685)
 
-<div class="pk-model-meta" hidden drug="atezolizumab" model-id="Atezolizumab_Shemesh2020_ttmb_16_mut_mb" status="rejected" stale="false" population="pan-tumor patients treated with atezolizumab across seven clinical trials" measured-compound="atezolizumab" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="atezolizumab" model-id="Atezolizumab_Shemesh2020_ttmb_16_mut_mb" status="rejected" stale="false" population="patients with high tumor mutational burden" measured-compound="atezolizumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 5 extracted.
+**Parameters:** 6 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -41,6 +42,7 @@ Shemesh CS et al., Pan-cancer population pharmacokinetics…, Pharmacology resea
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | C max, µg/mL | `Q32` · Cmax | 376 | µg/mL | not captured | [µg] / [ml] | not captured | space_fold (0.95) | prp2685-tbl-0002:row1:col2 | — | not captured |
+| Steady state | `Q34` · Css | 532 | not captured | not captured | not captured | not captured | llm (0.6) | prp2685-tbl-0002:row2:col2, prp2685-tbl-0002:row4:col2, prp2685-tbl-0002:row6:col2 | — | not captured |
 | C min, µg/mL | `Q36` · Cmin | 66.7 | µg/mL | not captured | [µg] / [ml] | not captured | space_fold (0.95) | prp2685-tbl-0002:row3:col2 | — | not captured |
 | AUC, µg∙day/mL | `Q88` · AUC | 2830 | µg∙day/mL | not captured | [[d] · [µg]] / [ml] | not captured | exact (1.0) | prp2685-tbl-0002:row5:col2 | — | not captured |
 | CL, mL/day/kg | `Q22` · CL | 0.223 | mL/day/kg | 1.806712962962963e-10 | [ml] / [[d] · [kg]] | not captured | exact (1.0) | prp2685-tbl-0002:row7:col2 | — | not captured |
@@ -54,9 +56,13 @@ Shemesh CS et al., Pan-cancer population pharmacokinetics…, Pharmacology resea
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'Metric' — extend the ontology if this is a real PK parameter (source ['prp2685-tbl-0002:row0:col2'])
-- dropped unlinked row (NIL): 'Steady state' — extend the ontology if this is a real PK parameter (source ['prp2685-tbl-0002:row2:col2', 'prp2685-tbl-0002:row4:col2', 'prp2685-tbl-0002:row6:col2'])
+- table representations disagree for 'C max, µg/mL'; source reconciliation required
+- table representations disagree for 'Steady state'; source reconciliation required
+- table representations disagree for 'C min, µg/mL'; source reconciliation required
+- table representations disagree for 'AUC, µg∙day/mL'; source reconciliation required
+- table representations disagree for 'CL, mL/day/kg'; source reconciliation required
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=atezolizumab
+- status held at route_to_review — not promoted
 - population split: 'ttmb &lt;16 mut/mb (n = 709)' subgroup of Shemesh_2020 (paper reports 2 populations: ttmb &lt;16 mut/mb (n = 709), ttmb ≥16 mut/mb (n = 171))
 - molar mass: none found for 'atezolizumab' — its concentrations stay mass-only
 - gap-filled Q61 (V) from Chan_2025's review values (primary lacked it)
@@ -64,9 +70,8 @@ Shemesh CS et al., Pan-cancer population pharmacokinetics…, Pharmacology resea
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- unparsed cell prp2685-tbl-0002:row1:col1 = 'Cycle 1'
-- unparsed cell prp2685-tbl-0002:row3:col1 = 'Cycle 1'
-- unparsed cell prp2685-tbl-0002:row5:col1 = 'Cycle 1'
+- table prp2685-tbl-0002: ragged_grid
+- table prp2685-tbl-0002: representations disagree; selected evidence retained, not merged
 - LLM selected parameter table(s) 2
 
 ## Validation
@@ -97,7 +102,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['prp2685-tbl-0002:row7:col2'] |
@@ -105,6 +110,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C5_dimension_Q36 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['prp2685-tbl-0002:row3:col2'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Chan_2025:review'] |
 | C5_dimension_Q88 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['prp2685-tbl-0002:row5:col2'] |
+| C5_unit_missing_Q34 | fail | [mass] / [length] ** 3 | not captured | not captured | not captured | ['prp2685-tbl-0002:row2:col2', 'prp2685-tbl-0002:row4:col2', 'prp2685-tbl-0002:row6:col2'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.223 | not captured | not captured | ['prp2685-tbl-0002:row7:col2'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | fail | clearance within physiological range | 0.00065 L/h | not captured | not captured | ['prp2685-tbl-0002:row7:col2'] |
@@ -117,7 +123,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_atezolizumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Shemesh_2020` / `Shemesh_2020::ttmb_16_mut_mb`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_atezolizumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Shemesh_2020` / `Shemesh_2020::ttmb_16_mut_mb`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -133,4 +139,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 09:22 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 17:58 UTC</sub>

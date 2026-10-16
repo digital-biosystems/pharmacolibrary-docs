@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01D&quot;,&quot;href&quot;:&quot;atc/J01D.md&quot;},{&quot;label&quot;:&quot;Relebactam&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Relebactam_Fratoni2022_reference&quot;,&quot;label&quot;:&quot;Fratoni_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_relebactam/Relebactam_Fratoni2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Relebactam_Principe2022_reference&quot;,&quot;label&quot;:&quot;Principe_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_relebactam/Relebactam_Principe2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # Relebactam
 
@@ -21,22 +21,41 @@ Relebactam is a beta-lactamase inhibitor used to treat serious bacterial infecti
 
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
-| relebactam | parent | 348.37 | C12H20N4O6S | DrugBank | [44129647](https://pubchem.ncbi.nlm.nih.gov/compound/44129647) | Bhagunde_2019, Fratoni_2022, Patel_2022 |
+| relebactam | parent | 348.37 | C12H20N4O6S | DrugBank | [44129647](https://pubchem.ncbi.nlm.nih.gov/compound/44129647) | Bhagunde_2019 |
 | relebactam and imipenem | metabolite | 299.345 | C12H17N3O4S | PubChem | [104838](https://pubchem.ncbi.nlm.nih.gov/compound/104838) | Bhagunde_2019 |
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 11:46 | 3:08 | 0/1/2 | 0/0/0 | 0/0/0 | 199,496/6,840 | einfracz / qwen3.8-27b | 8 | 0/8 | 8/0 | 0 |
+| 2026-10-15 00:34 | 4:45 | 1/3/1 | 1/0/0 | 0/0/0 | 346,795/26,260 | einfracz / qwen3.8-27b | 8 | 0/8 | 8/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.545). Primary extraction retained.">cross-check: disputed</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: model_quarantined: Cl, Vd, k12 left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Bhagunde_2019_reference](drugs/drug_relebactam/Relebactam_Bhagunde2019_reference.md) | held back | 2-compartment, IV | 4 (+2 cov.) | Bhagunde P et al., Population Pharmacokinetic Analysis for…, CPT: pharmacometrics & syst… (2019) | [10.1002/psp4.12462](https://doi.org/10.1002/psp4.12462) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.778). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: T3_param_coverage</sub><br><sub>route_to: `engineer`</sub> | [Fratoni_2022_reference](drugs/drug_relebactam/Relebactam_Fratoni2022_reference.md) | ▶ model + simulator | 1-compartment, IV | 4 | Fratoni AJ et al., Imipenem/cilastatin/relebactam pharmaco…, The Journal of antimicrobia… (2022) | [10.1093/jac/dkac261](https://doi.org/10.1093/jac/dkac261) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.556). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Patel_2022_reference](drugs/drug_relebactam/Relebactam_Patel2022_reference.md) | — | general linear (no model) | 4 | Patel M et al., Population pharmacokinetic/pharmacodyna…, Clinical and translational… (2022) | [10.1111/cts.13158](https://doi.org/10.1111/cts.13158) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Principe_2022_reference](drugs/drug_relebactam/Relebactam_Principe2022_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Principe L et al., Microbiological, Clinical, and PK/PD Fe…, Pharmaceuticals (Basel, Swi… (2022) | [10.3390/ph15040463](https://doi.org/10.3390/ph15040463) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.545). Primary extraction retained.">cross-check: disputed</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: model_quarantined: Cl, Vd, k12 left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Bhagunde_2019_reference](drugs/drug_relebactam/Relebactam_Bhagunde2019_reference.md) | held back | 2-compartment, IV | 4 (+1 cov.) | Bhagunde P et al., Population Pharmacokinetic Analysis for…, CPT: pharmacometrics & syst… (2019) | [10.1002/psp4.12462](https://doi.org/10.1002/psp4.12462) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.778). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Fratoni_2022_reference](drugs/drug_relebactam/Relebactam_Fratoni2022_reference.md) | — | 1-compartment (no model) | 0 | Fratoni AJ et al., Imipenem/cilastatin/relebactam pharmaco…, The Journal of antimicrobia… (2022) | [10.1093/jac/dkac261](https://doi.org/10.1093/jac/dkac261) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Fratoni_2024_reference](drugs/drug_relebactam/Relebactam_Fratoni2024_reference.md) | — | 1-compartment (no model) | 0 | Fratoni AJ et al., Imipenem/relebactam pharmacokinetics in…, The Journal of antimicrobia… (2024) | [10.1093/jac/dkae079](https://doi.org/10.1093/jac/dkae079) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.556). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Patel_2022_reference](drugs/drug_relebactam/Relebactam_Patel2022_reference.md) | — | 1-compartment (no model) | 0 | Patel M et al., Population pharmacokinetic/pharmacodyna…, Clinical and translational… (2022) | [10.1111/cts.13158](https://doi.org/10.1111/cts.13158) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Bhagunde_2019_2_bacterial_load](drugs/drug_relebactam/pd_Bhagunde_2019_2_bacterial_load.md) | bacterial kill ← relebactam · inhibition effect | — | Bhagunde P et al., A translational pharmacokinetic/pharmac…, International journal of in… (2019) | [10.1016/j.ijid.2019.08.026](https://doi.org/10.1016/j.ijid.2019.08.026) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=relebactam).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| excretion | kidney | `SLC22A8` substrate, `SLC47A1` substrate, `SLC47A2` substrate | DrugBank actor |
+| excretion | liver | `SLC47A1` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: SLC22A11 (substrate).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,37 +66,39 @@ Relebactam is a beta-lactamase inhibitor used to treat serious bacterial infecti
 ## Coverage
 
 - **PubMed hits:** 25 matched, 20 returned
-- **screened:** 3  ·  **relevant:** 3
-- **records:** 3  ·  extracted 0  ·  needs_review 2  ·  rejected 1  ·  stale 0
+- **screened:** 4  ·  **relevant:** 4
+- **records:** 5  ·  extracted 1  ·  needs_review 1  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
 
-_3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Fratoni_2022.pdf` | Fratoni AJ et al., Imipenem/cilastatin/relebactam pharmaco…, The Journal of antimicrobia… (2022) | popPK | 10 | [10.1093/jac/dkac261](https://doi.org/10.1093/jac/dkac261) | [35906810](https://pubmed.ncbi.nlm.nih.gov/35906810) | The paper reports quantitative population pharmacokinetic parameters (CL, Vc, k12, k21) specifically for relebactam in human subjects, and the numeric values are explicitly provided in the results section. |
-| `Shi_2026.pdf` | Shi X et al., Cost-minimizing alternative dosage regi…, European journal of clinica… (2026) | popPK | 6 | [10.1007/s00228-025-03944-1](https://doi.org/10.1007/s00228-025-03944-1) | [41483214](https://pubmed.ncbi.nlm.nih.gov/41483214) | The study involves PK/PD simulations for relebactam, but no specific numeric parameter values (CL, V, etc.) are present in the provided evidence, likely residing in supplementary material or the full text not included here. |
-| `Zhanel_2018.pdf` | Zhanel GG et al., Imipenem-Relebactam and Meropenem-Vabor…, Drugs (2018) | popPK | 5 | [10.1007/s40265-017-0851-9](https://doi.org/10.1007/s40265-017-0851-9) | [29230684](https://pubmed.ncbi.nlm.nih.gov/29230684) | The text reports approximate volume of distribution and half-life for relebactam, but lacks specific clearance values and detailed compartmental parameters, appearing to be a review summarizing data. |
+| `Fratoni_2022.pdf` | Fratoni AJ et al., Imipenem/cilastatin/relebactam pharmaco…, The Journal of antimicrobia… (2022) | popPK | 10 | [10.1093/jac/dkac261](https://doi.org/10.1093/jac/dkac261) | [35906810](https://pubmed.ncbi.nlm.nih.gov/35906810) | The abstract reports specific population PK parameters (CL, Vc, k12, k21) for relebactam in human patients. |
+| `Fratoni_2024.pdf` | Fratoni AJ et al., Imipenem/relebactam pharmacokinetics in…, The Journal of antimicrobia… (2024) | popPK | 10 | [10.1093/jac/dkae079](https://doi.org/10.1093/jac/dkae079) | [38517465](https://pubmed.ncbi.nlm.nih.gov/38517465) | The study reports quantitative population pharmacokinetic parameters (CL, Vc, K12, K21) for relebactam in critically ill patients on ECMO. |
 
-<sub>queue written 2026-10-07T11:44:09.991965+00:00</sub>
+<sub>queue written 2026-10-15T00:30:34.880360+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Assefa_2024 | irrelevant | 2 | 0 | The paper is a systematic review of PK/PD targets (efficacy metrics like fAUC/MIC) rather than a study reporting quantitative pharmacokinetic disposition parameters (CL, V, t1/2) for relebactam. |
-| popPK | Gatti_2023 | irrelevant | 0 | 0 | This is a narrative review discussing PK/PD optimization strategies for novel beta-lactams in general, with no quantitative PK parameters reported for relebactam specifically. |
-| popPK | Lombardi_2024 | irrelevant | 0 | 0 | The paper is a review focusing on the clinical use and efficacy of new antibiotics in liver transplantation, and does not report original quantitative pharmacokinetic parameters (CL, V, ka) for relebactam. |
-| popPK | Lombardi_2026 | irrelevant | 0 | 0 | The paper is a clinical review of antibiotics in lung transplantation that discusses relebactam's efficacy and safety but contains no quantitative pharmacokinetic parameters (CL, V, Q, ka) for relebactam. |
-| popPK | Patel_2026 | irrelevant | 3 | 0 | This is an exposure-efficacy analysis that reports PK/PD indices (fAUC/MIC) but does not report underlying quantitative disposition parameters (CL, V, Q, ka) for relebactam, as it relies on a previously developed population PK model cited in reference 21. |
-| popPK | Principe_2022 | irrelevant | 0 | 0 | The paper is a review that discusses relebactam only as part of the imipenem/relebactam combination but provides no quantitative pharmacokinetic parameter values (CL, Vd, etc.) specifically for relebactam. |
-| popPK | Rando_2024 | irrelevant | 2 | 0 | This is a systematic review that does not report original quantitative parameter values for relebactam in the provided text. |
-| popPK | Shen_2023 | irrelevant | 2 | 0 | This is a review article discussing PK/PD modeling strategies and citing data for relebactam but does not report original quantitative parameter values for relebactam in the provided evidence. |
-| popPK | Shi_2026 | relevant | 6 | 1 | The study involves PK/PD simulations for relebactam, but no specific numeric parameter values (CL, V, etc.) are present in the provided evidence, likely residing in supplementary material or the full text not included here. |
-| popPK | Takahashi_2026 | irrelevant | 0 | 0 | The paper is a methodological simulation/study on sampling windows for NCA and does not report specific PK parameters for the subject drug relebactam. |
-| popPK | Zhanel_2018 | relevant | 5 | 3 | The text reports approximate volume of distribution and half-life for relebactam, but lacks specific clearance values and detailed compartmental parameters, appearing to be a review summarizing data. |
+| popPK | Assefa_2024 | irrelevant | 1 | 0 | The paper is a systematic review of PK/PD targets (exposure ratios) for beta-lactamase inhibitors, not a study reporting quantitative disposition parameters (CL, V, Q) for relebactam. |
+| popPK | Bhagunde_2019_2 | irrelevant | 2 | 0 | The paper describes an in vitro PK/PD model using checkerboard and hollow fiber data, without reporting quantitative in vivo disposition parameters (CL, V, ka) for relebactam. |
+| popPK | Gatti_2021 | irrelevant | 0 | 0 | The paper is a review focusing on other beta-lactams and beta-lactamase inhibitors (e.g., ceftazidime-avibactam, cefiderocol) and does not report any data for relebactam. |
+| popPK | Gatti_2023 | irrelevant | 0 | 0 | The paper is a review discussing PK/PD optimization of beta-lactams for Gram-negative infections, but relebactam is not the subject and no quantitative PK parameters are provided. |
+| popPK | Lombardi_2024 | irrelevant | 0 | 0 | The paper is a clinical review of antibiotics in liver transplantation and does not report quantitative pharmacokinetic parameters (CL, V, etc.) for relebactam. |
+| popPK | Lombardi_2026 | irrelevant | 0 | 0 | The paper is a clinical review of new antibiotics in lung transplantation and discusses relebactam only as part of a drug combination for efficacy and safety, without reporting original quantitative pharmacokinetic parameters (CL, V, etc.) for relebactam. |
+| popPK | Patel_2026 | irrelevant | 2 | 2 | This is an exposure-efficacy analysis using empirical Bayesian estimates from a previously developed population PK model, reporting only PK/PD indices (fAUC/MIC) and efficacy outcomes rather than the specific quantitative pharmacokinetic parameters (CL, V, Q) for relebactam itself. |
+| popPK | Principe_2022 | irrelevant | 0 | 0 | The paper is a review of new anti-Gram-negative antibiotics; relebactam is only listed in the abstract as part of a combination (imipenem/relebactam) but no specific pharmacokinetic parameters or values for relebactam are provided in the evidence. |
+| popPK | Rando_2024 | irrelevant | 2 | 0 | This is a systematic review summarizing multiple studies including imipenem/cilastatin/relebactam, but the provided evidence does not contain specific quantitative PK parameter values (CL, V, etc.) for relebactam. |
+| popPK | Roberts_2023 | irrelevant | 1 | 0 | This is a clinical efficacy/safety analysis that uses pre-existing PK models for simulations, but it does not report new quantitative PK parameter estimates (e.g., clearance, volume) for relebactam itself in the text provided. |
+| popPK | Shen_2023 | irrelevant | 1 | 0 | This is a narrative review discussing PK/PD modeling strategies for antibiotics including relebactam, but it does not present original quantitative population-PK parameter values (CL, V, Q, etc.) in the provided text. |
+| popPK | Shi_2026 | irrelevant | 0 | 0 | The paper is a simulation study evaluating dosing regimens and cost, and it does not report original quantitative PK parameters (such as CL, V, or ka) for relebactam. |
+| popPK | Takahashi_2026 | irrelevant | 0 | 0 | The paper is a methodological case study on NCA sampling windows and does not report specific PK parameters for relebactam. |
+| popPK | Zhanel_2018 | irrelevant | 3 | 4 | This is a review article describing relebactam as a beta-lactamase inhibitor, not the subject drug for PK parameter extraction, though it cites approximate Vd and half-life. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 11:44 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-15 00:30 UTC</sub>

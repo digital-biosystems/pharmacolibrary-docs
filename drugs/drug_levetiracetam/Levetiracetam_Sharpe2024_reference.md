@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;levetiracetam&quot;,&quot;href&quot;:&quot;drugs/drug_levetiracetam/&quot;},{&quot;label&quot;:&quot;Sharpe_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levetiracetam_Li2023_base&quot;,&quot;label&quot;:&quot;Li_2023_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levetiracetam/Levetiracetam_Li2023_base.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Levetiracetam_Schoemaker2018_reference&quot;,&quot;label&quot;:&quot;Schoemaker_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levetiracetam/Levetiracetam_Schoemaker2018_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Levetiracetam_Sharpe2024_reference&quot;,&quot;label&quot;:&quot;Sharpe_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levetiracetam/Levetiracetam_Sharpe2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levetiracetam_Karatza2020_reference&quot;,&quot;label&quot;:&quot;Karatza_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levetiracetam/Levetiracetam_Karatza2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Levetiracetam_Li2023_base&quot;,&quot;label&quot;:&quot;Li_2023_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levetiracetam/Levetiracetam_Li2023_base.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Levetiracetam_Li2023_final&quot;,&quot;label&quot;:&quot;Li_2023_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levetiracetam/Levetiracetam_Li2023_final.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Levetiracetam_Onos2022_reference&quot;,&quot;label&quot;:&quot;Onos_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levetiracetam/Levetiracetam_Onos2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Levetiracetam_Sharpe2024_reference&quot;,&quot;label&quot;:&quot;Sharpe_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levetiracetam/Levetiracetam_Sharpe2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Schoemaker_2018_daily_seizure_counts&quot;,&quot;label&quot;:&quot;Schoemaker_2018 \u00b7 daily seizure counts&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_levetiracetam/pd_Schoemaker_2018_daily_seizure_counts.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,19 +17,19 @@
 
 ### Reviewer guidance
 
-**Levetiracetam bioavailability and lag time are missing, forcing the use of unreported defaults instead of paper-derived values.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. Bioavailability and lag time were not extracted, so library placeholders were used instead of explicit estimates. These defaults affect the simulated profile but are not supported by the specific data in this paper. Extracted — levetiracetam: CL 0.0538 L/hour, V 0.832 L, kabs 2.98 1/h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — levetiracetam: CL 0.0538 L/hour, V 0.832 L, kabs 2.98 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl: this record has 0.0538, the second reading none; it also differs on 4 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Sharpe C et al., Pharmacokinetic and pharmacodynamic dat…, Archives of disease in chil… (2024)
   ·  DOI: [10.1136/archdischild-2022-324952](https://doi.org/10.1136/archdischild-2022-324952)
 
-<div class="pk-model-meta" hidden drug="levetiracetam" model-id="Levetiracetam_Sharpe2024_reference" status="needs_review" stale="false" population="term neonates with electrographically confirmed seizures" measured-compound="levetiracetam" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="levetiracetam" model-id="Levetiracetam_Sharpe2024_reference" status="needs_review" stale="false" population="term neonates with seizures" measured-compound="levetiracetam" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.
@@ -56,8 +56,8 @@ Sharpe C et al., Pharmacokinetic and pharmacodynamic dat…, Archives of disease
 - `defaulted_parameters`: ['F', 'Tlag']
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'weight in kg' — extend the ontology if this is a real PK parameter (source ['Sharpe_2024:abstract', 'Sharpe_2024:abstract'])
-- dropped unlinked row (NIL): 'postnatal age in days' — extend the ontology if this is a real PK parameter (source ['Sharpe_2024:abstract'])
+- dropped duplicate Q22 ('CL (L/hour)', value None) — already have one for this compound
+- dropped duplicate Q61 ('Vd (L)', value None) — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=levetiracetam
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
@@ -65,7 +65,7 @@ Sharpe C et al., Pharmacokinetic and pharmacodynamic dat…, Archives of disease
 - gap-filled Q49 (kabs) from Schoemaker_2018's review values (primary lacked it)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Sharpe_2024_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Sharpe_2024_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -127,10 +127,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_levetiracetam/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Sharpe_2024` / `Sharpe_2024::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_levetiracetam/models/modelica/Levetiracetam_Sharpe2024_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_levetiracetam/models/modelica/Levetiracetam_Sharpe2024_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_levetiracetam/models/modelica/Levetiracetam_Sharpe2024_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_levetiracetam/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Sharpe_2024` / `Sharpe_2024::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_levetiracetam/models/modelica/Levetiracetam_Sharpe2024_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_levetiracetam/models/modelica/Levetiracetam_Sharpe2024_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_levetiracetam/models/modelica/Levetiracetam_Sharpe2024_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -148,7 +148,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_levetiracetam/Levetiracetam_Sharpe2024_reference/Levetiracetam_Sharpe2024_reference.svg" alt="Levetiracetam_Sharpe2024_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_levetiracetam/Levetiracetam_Sharpe2024_reference/Levetiracetam_Sharpe2024_reference.svg" alt="Levetiracetam_Sharpe2024_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -161,4 +161,4 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 07:04 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 19:23 UTC</sub>

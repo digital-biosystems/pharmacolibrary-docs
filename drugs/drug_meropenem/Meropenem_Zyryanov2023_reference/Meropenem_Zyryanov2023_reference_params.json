@@ -1,5 +1,5 @@
 {
- "dose_source": "paper",
+ "dose_source": "WHO ATC DDD 3000 mg parenteral (J01DH02)",
  "model_id": "Meropenem_Zyryanov2023_reference",
  "molar_masses": {
   "central.C": 0.383463
@@ -8,11 +8,6 @@
  "observables": [
   "central.C"
  ],
- "paper_doses_kind": "range",
- "paper_doses_mg": [
-  2800.0,
-  8400.0
- ],
  "parameters": {
   "Cl": 9.805555555555554e-08,
   "F": 1.0,
@@ -20,14 +15,14 @@
   "VdPerKg": 0.00075,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0028,
+  "adminMass": 0.003,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 660.0000000662019
+  "central.C": 660.0000000662108
  },
  "reference_peaks": {
-  "central.C": 0.05330346090053096
+  "central.C": 0.057110850964412145
  },
  "stop_time": 86400.0,
  "template": "PK_1C",

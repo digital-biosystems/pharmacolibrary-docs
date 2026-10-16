@@ -137,9 +137,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_nelfinavir/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Hirt_2006_2` / `Hirt_2006_2::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_nelfinavir/models/modelica/_needs_review/Nelfinavir_Hirt2006v2_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_nelfinavir/models/modelica/_needs_review/Nelfinavir_Hirt2006v2_reference.deviation.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_nelfinavir/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Hirt_2006_2` / `Hirt_2006_2::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_nelfinavir/models/modelica/_needs_review/Nelfinavir_Hirt2006v2_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_nelfinavir/models/modelica/_needs_review/Nelfinavir_Hirt2006v2_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

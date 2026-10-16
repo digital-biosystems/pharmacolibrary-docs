@@ -4,7 +4,7 @@
 
 # azelastine — `Azelastine_Dings2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.417). Primary extraction retained.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -20,7 +20,7 @@
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (CL), so that value has no SI equivalent. Extracted — azelastine: kel 49.9 1/day, Fab 100, CL 32.2 %.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of m: this record has none, the second reading 3; it also differs on 6 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of i0: this record has none, the second reading 1; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -96,24 +96,23 @@ Dings C et al., Pharmacometric Modeling of the Impact o…, Pharmaceutics (2022)
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.417 (5/12 fields) | 7 |
+| `gpt-oss-120b` | not confirmed | 0.5 (6/12 fields) | 6 |
 
-<details><summary>7 field discrepancies</summary>
+<details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[m0]` | not captured | 1 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[m]` | not captured | 3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[i0]` | not captured | 1 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[parameter]` | not captured | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[virus clearance]` | 32.2 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[δ]` | not captured | 3.1 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[δe]` | not captured | 1 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[φ]` | 100 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[φ].parameter_id` | Q40 | Q87 | mismatch |
 
 </details>
 
@@ -142,7 +141,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_azelastine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Dings_2022` / `Dings_2022::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_azelastine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Dings_2022` / `Dings_2022::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

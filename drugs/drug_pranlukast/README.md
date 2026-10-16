@@ -31,7 +31,21 @@ Pranlukast is a leukotriene receptor antagonist developed as an antiasthmatic me
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Yang_2021_preS1_binding](drugs/drug_pranlukast/pd_Yang_2021_preS1_binding.md) | HBV preS1 binding biomarker turnover ← pranlukast | — | Yang J et al., A new high-content screening assay of t…, JHEP reports : innovation i… (2021) | [10.1016/j.jhepr.2021.100296](https://doi.org/10.1016/j.jhepr.2021.100296) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Yang_2021_preS1_binding](drugs/drug_pranlukast/pd_Yang_2021_preS1_binding.md) | HBV preS1 binding biomarker turnover ← pranlukast | — | Yang J et al., A new high-content screening assay of t…, JHEP reports : innovation i… (2021) | [10.1016/j.jhepr.2021.100296](https://doi.org/10.1016/j.jhepr.2021.100296) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=pranlukast).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | `CYP2C9` inhibitor, `CYP3A4` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+| excretion | kidney | `ABCC2` inhibitor | DrugBank actor |
+| excretion | liver | `ABCC2` inhibitor | DrugBank actor |
+| excretion | small intestine | `ABCC2` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: CYSLTR1 (target), IL5 (target), MUC2 (other/unknown), NFKB1 (other/unknown), NFKB2 (inhibitor), RNASE3 (other/unknown), TNF (other/unknown).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

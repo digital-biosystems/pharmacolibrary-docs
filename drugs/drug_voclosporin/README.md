@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;voclosporin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Voclosporin_AbdelKahaar2023_reference&quot;,&quot;label&quot;:&quot;Abdel-Kahaar_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_voclosporin/Voclosporin_AbdelKahaar2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Voclosporin_AbdelKahaar2023_reference&quot;,&quot;label&quot;:&quot;Abdel-Kahaar_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_voclosporin/Voclosporin_AbdelKahaar2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Mayo_2014_CNa&quot;,&quot;label&quot;:&quot;Mayo_2014 \u00b7 CNa&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_voclosporin/pd_Mayo_2014_CNa.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # voclosporin
 
@@ -27,7 +27,7 @@ Voclosporin is an immunosuppressive calcineurin inhibitor used to treat lupus ne
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 01:07 | 0:56 | 0/1/1 | 2/0/0 | 0/0/0 | 119,346/8,900 | einfracz / qwen3.8-27b | 2 | 0/2 | 2/0 | 0 |
+| 2026-10-14 23:36 | 0:32 | 0/1/1 | 2/0/0 | 0/0/0 | 40,345/2,733 | einfracz / qwen3.8-27b | 2 | 0/2 | 2/0 | 0 |
 
 ## popPK records
 
@@ -40,10 +40,27 @@ Voclosporin is an immunosuppressive calcineurin inhibitor used to treat lupus ne
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Abdel-Kahaar_2023_CN](drugs/drug_voclosporin/pd_Abdel_Kahaar_2023_CN.md) | Calcineurin activity ← Voclosporin · direct sigmoid Emax (Hill) effect | — | Abdel-Kahaar E et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokinetics (2023) | [10.1007/s40262-023-01246-2](https://doi.org/10.1007/s40262-023-01246-2) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Abdel-Kahaar_2023_NODAT](drugs/drug_voclosporin/pd_Abdel_Kahaar_2023_NODAT.md) | New-onset diabetes ← Voclosporin · direct sigmoid Emax (Hill) effect | — | Abdel-Kahaar E et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokinetics (2023) | [10.1007/s40262-023-01246-2](https://doi.org/10.1007/s40262-023-01246-2) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Abdel-Kahaar_2023_Nephro](drugs/drug_voclosporin/pd_Abdel_Kahaar_2023_Nephro.md) | Nephrotoxicity ← Voclosporin · direct sigmoid Emax (Hill) effect | — | Abdel-Kahaar E et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokinetics (2023) | [10.1007/s40262-023-01246-2](https://doi.org/10.1007/s40262-023-01246-2) |
-| <span class="pk-badge pk-badge--green">accepted (caveats)</span> | [Mayo_2014_CNa](drugs/drug_voclosporin/pd_Mayo_2014_CNa.md) | calcineurin activity ← voclosporin · direct sigmoid Emax (Hill) effect | model (no simulator) | Mayo PR et al., Population PKPD of voclosporin in renal…, Journal of clinical pharmac… (2014) | [10.1002/jcph.237](https://doi.org/10.1002/jcph.237) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Abdel-Kahaar_2023_CN](drugs/drug_voclosporin/pd_Abdel_Kahaar_2023_CN.md) | calcineurin activity ← voclosporin · direct sigmoid Emax (Hill) effect | — | Abdel-Kahaar E et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokinetics (2023) | [10.1007/s40262-023-01246-2](https://doi.org/10.1007/s40262-023-01246-2) |
+| <span class="pk-badge pk-badge--green">accepted (caveats)</span> | [Mayo_2014_CNa](drugs/drug_voclosporin/pd_Mayo_2014_CNa.md) | calcineurin activity ← voclosporin · direct sigmoid Emax (Hill) effect | ▶ model + simulator | Mayo PR et al., Population PKPD of voclosporin in renal…, Journal of clinical pharmac… (2014) | [10.1002/jcph.237](https://doi.org/10.1002/jcph.237) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=voclosporin).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | liver | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | testis | `ABCB1` inhibitor/substrate | DrugBank actor |
+| metabolism | liver | `CYP3A4` inhibitor/substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inhibitor/substrate | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: CAMLG (binder), PPP3CA (inhibitor), PPP3R1 (inhibitor), PPP3R2 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -64,17 +81,17 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Mayo_2014.pdf` | Mayo PR et al., Population PKPD of voclosporin in renal…, Journal of clinical pharmac… (2014) | popPK | 10 | [10.1002/jcph.237](https://doi.org/10.1002/jcph.237) | [24243422](https://pubmed.ncbi.nlm.nih.gov/24243422) | The paper explicitly reports population PK parameters (CL/F, V1) for voclosporin in human renal allograft patients. |
-| `Mayo_2013.pdf` | Mayo PR et al., Voclosporin food effect and single oral…, Journal of clinical pharmac… (2013) | popPK | 5 | [10.1002/jcph.114](https://doi.org/10.1002/jcph.114) | [23736966](https://pubmed.ncbi.nlm.nih.gov/23736966) | Study reports non-compartmental PK parameters (Cmax, AUC) and PKPD metrics, but does not provide compartmental parameters (CL, V, t1/2) or population PK model values. |
+| `Mayo_2014.pdf` | Mayo PR et al., Population PKPD of voclosporin in renal…, Journal of clinical pharmac… (2014) | popPK | 10 | [10.1002/jcph.237](https://doi.org/10.1002/jcph.237) | [24243422](https://pubmed.ncbi.nlm.nih.gov/24243422) | The paper reports specific population PK parameter estimates (CL/F and V1) and covariate relationships for voclosporin in renal allograft patients. |
+| `Mayo_2013.pdf` | Mayo PR et al., Voclosporin food effect and single oral…, Journal of clinical pharmac… (2013) | popPK | 5 | [10.1002/jcph.114](https://doi.org/10.1002/jcph.114) | [23736966](https://pubmed.ncbi.nlm.nih.gov/23736966) | The paper is a primary PK study in humans but reports only non-compartmental summary metrics (AUC, Cmax) and food effects, lacking the specific compartmental or population parameters (CL, V, ka) requested. |
 
-<sub>queue written 2026-10-07T01:06:47.632044+00:00</sub>
+<sub>queue written 2026-10-14T23:35:39.308475+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Mayo_2013 | irrelevant | 5 | 3 | Study reports non-compartmental PK parameters (Cmax, AUC) and PKPD metrics, but does not provide compartmental parameters (CL, V, t1/2) or population PK model values. |
-| popPK | Ogando_2022 | irrelevant | 0 | 0 | The paper reports in-vitro antiviral activity (EC50 values against SARS-CoV-2) rather than pharmacokinetic disposition parameters (CL, V, etc.) for voclosporin. |
+| popPK | Mayo_2013 | relevant | 5 | 1 | The paper is a primary PK study in humans but reports only non-compartmental summary metrics (AUC, Cmax) and food effects, lacking the specific compartmental or population parameters (CL, V, ka) requested. |
+| popPK | Ogando_2022 | irrelevant | 0 | 0 | The study evaluates the antiviral activity of voclosporin against SARS-CoV-2 in cell culture and does not report any pharmacokinetic parameters such as clearance, volume, or half-life. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 01:06 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-14 23:35 UTC</sub>

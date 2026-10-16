@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;romiplostim&quot;,&quot;href&quot;:&quot;drugs/drug_romiplostim/&quot;},{&quot;label&quot;:&quot;Fan_2023_2 \u00b7 PD platelets&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;romiplostim&quot;,&quot;href&quot;:&quot;drugs/drug_romiplostim/&quot;},{&quot;label&quot;:&quot;Fan_2023_2 \u00b7 PD Platelets&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# platelets — PD  <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.778). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
+# Platelets — PD  <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.778). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -15,13 +15,13 @@
 
 ## Record summary
 
-**As extracted:** Romiplostim (concentrations from the PK model of Fan_2023) drives platelets (in ×1012 cells/L): indirect response — drug stimulates the production of platelets.
+**As extracted:** Romiplostim (concentrations from the PK model of Fan_2023) drives Platelets (in ×10^12 cells/L): indirect response — drug stimulates the production of Platelets.
 
 **Model:** No model was generated from this record.
 
-> Romiplostim concentrations (ng/mL) stimulate platelet production (×10^12 cells/L) via a catenary indirect response model where the drug acts on the production rate of megakaryocytes (TMP = 137.1 h) which subsequently produce platelets (TPLT = 254.4 h). The stimulation is characterized by a maximum effect parameter SmaxRM1 of 1.67 and SmaxRM2 of 27.8, with a half-maximal effective concentration (SC50RM) of 11.9 ng/mL.
+> The model describes the stimulation of platelet count by romiplostim using a catenary indirect response structure where drug concentrations (ng/mL) modulate the production rate from megakaryocytes to peripheral blood platelets, utilizing a maximum stimulation parameter (SmaxRM1=1.67, SmaxRM2=27.8) and an SC50 of 11.9 ng/mL. The response kinetics are governed by the platelet lifespan (TPLT = 6.17 days) and a rate constant (KINTE = 0.171 1/h), with a baseline platelet count (PLT0) of 0.869 ×10^12 cells/L.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Fan_2023_2`
 - **model family:** `indirect_response_iii`
@@ -36,12 +36,12 @@ Fan X et al., Scaling Pharmacodynamics from Rats to H…, Pharmaceutics (2023)
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | SmaxRM1 | `Q320` · not captured | 1.67 | Dimensionless | not captured | llm (not captured) | Fan_2023_2:pdv3 |
-| PD (effect) | SmaxRM2 | `Q320` · not captured | 27.8 | Dimensionless | not captured | llm (not captured) | Fan_2023_2:pdv3 |
+| PD (effect) | SmaxRM1 | `Q320` · not captured | 1.67 | not captured | not captured | llm (not captured) | Fan_2023_2:pdv3 |
+| PD (effect) | SmaxRM2 | `Q320` · not captured | 27.8 | not captured | not captured | llm (not captured) | Fan_2023_2:pdv3 |
 | PD (effect) | SC50RM | `Q321` · not captured | 11.9 | ng/mL | not captured | llm (not captured) | Fan_2023_2:pdv3 |
-| — | TMP | `Q100` · not captured | 137.1 | h | not captured | nil (not captured) | Fan_2023_2:pdv3 |
-| — | TPLT | `Q100` · not captured | 254.4 | h | not captured | nil (not captured) | Fan_2023_2:pdv3 |
-| PD (effect) | PLT0 | `Q324` · not captured | 0.23 | ×1012 cells/L | not captured | llm (not captured) | Fan_2023_2:pdv3 |
+| — | TMP | `Q100` · not captured | 47.8 | h | not captured | nil (not captured) | Fan_2023_2:pdv3 |
+| — | TPLT | `Q100` · not captured | 6.17 | day | not captured | nil (not captured) | Fan_2023_2:pdv3 |
+| PD (effect) | PLT0 | `Q324` · not captured | 0.869 | ×10^12 cells/L | not captured | llm (not captured) | Fan_2023_2:pdv3 |
 | PD (effect) | KINTE (1/h) | `Q327` · not captured | 0.171 | 1/h | not captured | review_gapfill (not captured) | Fan_2023_2:review |
 
 <details class="legend">

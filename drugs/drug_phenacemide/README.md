@@ -18,11 +18,21 @@ Phenacemide is an antiepileptic drug used to treat complex partial seizures. It 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 07:18 | 0:07 | 0/0/0 | 0/0/0 | 0/0/0 | 5,242/261 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-14 19:40 | 0:17 | 0/0/0 | 0/0/0 | 0/0/0 | 5,242/220 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
 _not available_
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=phenacemide).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: SCN1A (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,16 +55,16 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 |---|---|---|---|---|---|---|
 | `Pranzatelli_1988.pdf` | Pranzatelli MR, Effect of antiepileptic and antimyoclon…, Epilepsia (1988) | pd | 4 | [10.1111/j.1528-1157.1988.tb03740.x](https://doi.org/10.1111/j.1528-1157.1988.tb03740.x) | [2839332](https://www.ncbi.nlm.nih.gov/pubmed/2839332) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-10-07T07:18:01.919260+00:00</sub>
+<sub>queue written 2026-10-14T19:40:21.646154+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Cahen_1994 | irrelevant | 1 | 0 | The study focuses on a pharmacodynamic interference (creatinine metabolism) rather than characterizing the population-pharmacokinetic parameters (CL, V, t1/2) of phenacemide itself. |
+| popPK | Cahen_1994 | irrelevant | 1 | 0 | The paper is a case report on creatinine metabolism interference by phenacemide, not a pharmacokinetic study of phenacemide's disposition parameters. |
 | PD | Cahen_1994 | not_relevant | 2 | 1 | The paper reports a qualitative dose-dependent inhibition in an in vitro assay and case observations, but provides no numeric PD parameters (e.g., IC50, Emax) or quantitative concentration-effect curve data. |
-| popPK | Duggan_1986 | irrelevant | 0 | 0 | The paper reports clinical observations of elevated serum creatinine (renal function markers) rather than pharmacokinetic parameters (CL, V, t1/2) for phenacemide itself. |
-| popPK | Fabro_1982 | irrelevant | 0 | 0 | The study is a teratogenicity risk assessment in mice proposing a "Relative Teratogenic Index" based on lethal and teratogenic doses, not a pharmacokinetic study, and reports no disposition parameters like clearance or volume for phenacemide. |
+| popPK | Duggan_1986 | irrelevant | 0 | 0 | The paper reports renal physiology findings (creatinine elevation) rather than pharmacokinetic parameters like clearance or volume of distribution for phenacemide. |
+| popPK | Fabro_1982 | irrelevant | 0 | 0 | The paper is a study on teratogenic potency and hazard in mice, not a pharmacokinetic study for phenacemide. |
 | popPK | Pranzatelli_1988 | irrelevant | 0 | 0 | The paper is an in-vitro study on serotonin receptors, not a pharmacokinetic study reporting quantitative disposition parameters for phenacemide. |
 | PD | Pranzatelli_1988 | not_relevant | 0 | 0 | The paper focuses on in vitro receptor binding and does not report pharmacokinetic or pharmacodynamic exposure-response relationships for phenacemide. |
 

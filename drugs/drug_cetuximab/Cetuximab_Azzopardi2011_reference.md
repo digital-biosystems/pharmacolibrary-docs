@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;cetuximab&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/&quot;},{&quot;label&quot;:&quot;Azzopardi_2011 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cetuximab_Cognetti2026_reference&quot;,&quot;label&quot;:&quot;Cognetti_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/Cetuximab_Cognetti2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cetuximab_Pointreau2016_reference&quot;,&quot;label&quot;:&quot;Pointreau_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/Cetuximab_Pointreau2016_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cetuximab_Yang2026_reference&quot;,&quot;label&quot;:&quot;Yang_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/Cetuximab_Yang2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Lin_2011_Ct_2&quot;,&quot;label&quot;:&quot;Lin_2011 \u00b7 Ct&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/pd_Lin_2011_Ct_2.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # cetuximab — `Cetuximab_Azzopardi2011_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">not modelled</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -16,27 +17,27 @@
 
 ### Reviewer guidance
 
-**No model has been built from this record yet.**
+**C5 dimension mismatch on a structural parameter.**
 
-Only the abstract was available, so reported summary statistics stand in for a fitted model.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — cetuximab: V1 2.96 L, V2 4.65 L, CL 0.497 L/d, Q 0.836 L/d, kel 8.71 mg/d.
 
 Independently confirmed by `qwen3.8-27b`.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Azzopardi N et al., Cetuximab pharmacokinetics influences p…, Clinical cancer research :… (2011)
   ·  DOI: [10.1158/1078-0432.CCR-11-1081](https://doi.org/10.1158/1078-0432.CCR-11-1081)
 
-<div class="pk-model-meta" hidden drug="cetuximab" model-id="Cetuximab_Azzopardi2011_reference" status="not_modelled" stale="false" population="metastatic colorectal cancer patients cotreated with irinotecan and 5-fluorouracil" measured-compound="cetuximab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="cetuximab" model-id="Cetuximab_Azzopardi2011_reference" status="rejected" stale="false" population="metastatic colorectal cancer patients" measured-compound="cetuximab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
-**Parameters:** 4 extracted.
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `not_modelled`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -44,6 +45,7 @@ Azzopardi N et al., Cetuximab pharmacokinetics influences p…, Clinical cancer 
 | peripheral volume of distribution V(2) | `Q64` · V2 | 4.65 | L | 0.0046500000000000005 | [l] | not captured | boundary_compartment (0.9) | Azzopardi_2011:abstract | — | not captured |
 | elimination clearance CL | `Q22` · CL | 0.497 | L/d | 5.752314814814815e-09 | [l] / [d] | not captured | llm_confirmed (0.6) | Azzopardi_2011:abstract | — | not captured |
 | distribution clearance Q | `Q30` · Q | 0.836 | L/d | 9.675925925925925e-09 | [l] / [d] | not captured | llm_confirmed (0.6) | Azzopardi_2011:abstract | — | not captured |
+| zero-order elimination rate k(0) | `Q47` · kel | 8.71 | mg/d | not captured | [mg] / [d] | not captured | llm_confirmed (0.6) | Azzopardi_2011:abstract | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -53,15 +55,16 @@ Azzopardi N et al., Cetuximab pharmacokinetics influences p…, Clinical cancer 
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'zero-order elimination rate k(0)' — extend the ontology if this is a real PK parameter (source ['Azzopardi_2011:abstract'])
-- dropped value-less row: 'Body surface area'
-- dropped value-less row: 'Pretreatment serum albumin'
+- unit_dimension_mismatch: 'zero-order elimination rate k(0)' → Q47 (unit '[mass] / [time]' vs ontology '1 / [time]') — route to review
+- dropped unlinked row (NIL): 'P' — extend the ontology if this is a real PK parameter (source ['Azzopardi_2011:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=cetuximab
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at route_to_review — not promoted
 - molar mass: none found for 'cetuximab' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Azzopardi_2011_metadata.yaml (9 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Azzopardi_2011_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -84,11 +87,12 @@ _All readers agree on the compared fields of this record._
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Azzopardi_2011:abstract'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Azzopardi_2011:abstract'] |
+| C5_dimension_Q47 | fail | [mass] / [time] | mg/d | not captured | not captured | ['Azzopardi_2011:abstract'] |
 | C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Azzopardi_2011:abstract'] |
 | C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Azzopardi_2011:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.497 | not captured | not captured | ['Azzopardi_2011:abstract'] |
@@ -97,15 +101,6 @@ _All readers agree on the compared fields of this record._
 | C9_phys_window_Q63 | pass | volume within physiological range | 2.96 L | not captured | not captured | ['Azzopardi_2011:abstract'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 4.65 L | not captured | not captured | ['Azzopardi_2011:abstract'] |
 
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_param_coverage | not captured | skipped | not captured | not captured | not captured | no emitted model to inspect (engineer build absent) |
-| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
-
 <details class="legend">
 <summary>Validation definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
@@ -113,24 +108,14 @@ _All readers agree on the compared fields of this record._
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_cetuximab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Azzopardi_2011` / `Azzopardi_2011::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_cetuximab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Azzopardi_2011` / `Azzopardi_2011::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-</tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -139,4 +124,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 11:26 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 18:47 UTC</sub>

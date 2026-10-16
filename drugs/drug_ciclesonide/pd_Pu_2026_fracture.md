@@ -18,9 +18,9 @@
 
 **Model:** No model was generated from this record.
 
-> The paper relates ciclesonide dose to fracture risk (binary response) using an Emax-type model, but no full text is available, so the mechanism, effect direction, and potency or rate parameters (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) are not stated.
+> The record indicates ciclesonide dose is linked to fracture risk via an Emax model, but the paper does not provide the full text or specific mechanism, effect direction, or potency/rate parameters.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Pu_2026`
 - **model family:** `emax`

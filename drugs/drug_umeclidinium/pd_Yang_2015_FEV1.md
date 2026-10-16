@@ -18,9 +18,9 @@
 
 **Model:** No model was generated from this record.
 
-> Umeclidinium dose was related to change from baseline trough FEV1 (L) at day 15 via a linear model (stimulation); the paper excerpts provide no mechanism and no potency or rate parameters.
+> The record indicates that umeclidinium dose acts on the change from baseline trough FEV1 (day 15) via a linear stimulation model, but the paper excerpts are unavailable to confirm the specific mechanism or provide key potency and rate values.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
 
 - **paper:** `Yang_2015`
 - **model family:** `linear`

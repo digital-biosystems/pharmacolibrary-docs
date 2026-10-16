@@ -18,13 +18,13 @@
 
 ### Reviewer guidance
 
-**The iloperidone parent–metabolite model was held back because the parent's elimination clearance had no extracted value and a library placeholder was used instead, so the record was not published with an invented number.**
+**No value for iloperidone's elimination clearance; the covariate scenarios were not simulated (+3 more).**
 
-The record does give an elimination rate constant for iloperidone (K20 = 0.067 h⁻¹), but the elimination clearance itself was left with no value, so a placeholder stood in. Parameter coverage reached 6 of 7 expected parameters, with kabs (2.26 h⁻¹) neither emitted nor defaulted. The model structure also mismatched the required parent–metabolite central structure, and although covariate effects on the metabolite formation constants K23 and K24 (e.g., 1.34 and 0.693) were defined, only the reference individual was simulated, so the covariate scenarios were not exercised. Extracted — iloperidone: kabs 2.26 h -1, kel 0.067 h -1, V1 679 L; M1 (P-88): kel 0.16 h -1, V 10 L, kfm 0.00451 h -1; M2 (P-95): kel 0.106 h -1, V 10 L, kfm 0.00649 h -1.
+The model was built, but iloperidone's elimination clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. The base model was simulated, not the covariate effects the record defines. Extracted — iloperidone: kabs 2.26 h -1, kel 0.067 h -1, V1 679 L; M 1: kel 0.16 h -1, V 10 L, kfm 0.00451 h -1; M 2: kel 0.106 h -1, V 10 L, kfm 0.00649 h -1.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by glm-5.3-flash</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Pei Q et al., Influences of CYP2D6, Acta pharmacologica Sinica (2016)
@@ -42,18 +42,18 @@ Pei Q et al., Influences of CYP2D6, Acta pharmacologica Sinica (2016)
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| K a (h -1 ) | `Q49` · kabs | 2.26 | h -1 | 0.0006277777777777777 | [1] / [h] | not captured | exact (1.0) | tab_2:row1:col1 | — | not captured |
-| K 20 (h -1 ) | `Q47` · kel | 0.067 | h -1 | 1.861111111111111e-05 | [1] / [h] | not captured | exact (1.0) | tab_2:row2:col1 | — | not captured |
-| K 30 (h -1 ) | `Q47` · kel | 0.160 | h -1 | 4.4444444444444447e-05 | [1] / [h] | not captured | exact (1.0) | tab_2:row3:col1 | — | not captured |
-| K 40 (h -1 ) | `Q47` · kel | 0.106 | h -1 | 2.9444444444444445e-05 | [1] / [h] | not captured | exact (1.0) | tab_2:row4:col1 | — | not captured |
-| V 2 (L) | `Q63` · V1 | 679 | L | 0.679 | [l] | not captured | exact (1.0) | tab_2:row5:col1 | — | not captured |
-| V 3 (L) | `Q61` · V | 10 | L | 0.01 | [l] | not captured | exact (1.0) | tab_2:row6:col1 | — | not captured |
-| V 4 (L) | `Q61` · V | 10 | L | 0.01 | [l] | not captured | exact (1.0) | tab_2:row7:col1 | — | not captured |
-| K 23 (h -1 ) | `Q305` · kfm | 0.00451 | h -1 | 1.252777777777778e-06 | [1] / [h] | not captured | exact (1.0) | tab_2:row8:col1 | — | not captured |
-| K 24 (h -1 ) | `Q305` · kfm | 0.00649 | h -1 | 1.8027777777777777e-06 | [1] / [h] | not captured | exact (1.0) | tab_2:row9:col1 | — | not captured |
-| cyp2d6_10_c_t_on_k_24 | `Q900` · cyp2d6_10_c_t_on_k_24 | 0.693 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_2:row10:col1 | — | not captured |
-| cyp2d6_10_t_t_on_k_24 | `Q900` · cyp2d6_10_t_t_on_k_24 | 0.492 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_2:row11:col1 | — | not captured |
-| cyp2d6_10_t_t_on_k_23 | `Q900` · cyp2d6_10_t_t_on_k_23 | 1.34 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_2:row12:col1 | — | not captured |
+| K a (h -1 ) | `Q49` · kabs | 2.26 | h -1 | 0.0006277777777777777 | [1] / [h] | not captured | exact (1.0) | Pei_2016_table_3:row0:col1 | — | not captured |
+| K 20 (h -1 ) | `Q47` · kel | 0.067 | h -1 | 1.861111111111111e-05 | [1] / [h] | not captured | exact (1.0) | Pei_2016_table_3:row1:col1 | — | not captured |
+| K 30 (h -1 ) | `Q47` · kel | 0.160 | h -1 | 4.4444444444444447e-05 | [1] / [h] | not captured | exact (1.0) | Pei_2016_table_3:row2:col1 | — | not captured |
+| K 40 (h -1 ) | `Q47` · kel | 0.106 | h -1 | 2.9444444444444445e-05 | [1] / [h] | not captured | exact (1.0) | Pei_2016_table_3:row3:col1 | — | not captured |
+| V 2 (L) | `Q63` · V1 | 679 | L | 0.679 | [l] | not captured | exact (1.0) | Pei_2016_table_3:row4:col1 | — | not captured |
+| V 3 (L) | `Q61` · V | 10 | L | 0.01 | [l] | not captured | exact (1.0) | Pei_2016_table_3:row5:col1 | — | not captured |
+| V 4 (L) | `Q61` · V | 10 | L | 0.01 | [l] | not captured | exact (1.0) | Pei_2016_table_3:row6:col1 | — | not captured |
+| K 23 (h -1 ) | `Q305` · kfm | 0.00451 | h -1 | 1.252777777777778e-06 | [1] / [h] | not captured | exact (1.0) | Pei_2016_table_3:row7:col1 | — | not captured |
+| K 24 (h -1 ) | `Q305` · kfm | 0.00649 | h -1 | 1.8027777777777777e-06 | [1] / [h] | not captured | exact (1.0) | Pei_2016_table_3:row8:col1 | — | not captured |
+| cyp2d6_10_c_t_on_k_24 | `Q900` · cyp2d6_10_c_t_on_k_24 | 0.693 | not captured | not captured | not captured | not captured | not captured (not captured) | Pei_2016_table_3:row9:col1 | — | not captured |
+| cyp2d6_10_t_t_on_k_24 | `Q900` · cyp2d6_10_t_t_on_k_24 | 0.492 | not captured | not captured | not captured | not captured | not captured (not captured) | Pei_2016_table_3:row10:col1 | — | not captured |
+| cyp2d6_10_t_t_on_k_23 | `Q900` · cyp2d6_10_t_t_on_k_23 | 1.34 | not captured | not captured | not captured | not captured | not captured (not captured) | Pei_2016_table_3:row11:col1 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -74,17 +74,20 @@ Pei Q et al., Influences of CYP2D6, Acta pharmacologica Sinica (2016)
 - covariate level 'CYP2D6*10 C/T on K 24' → Q900:cyp2d6_10_c_t_on_k_24 = 0.693 (linear_fractional on the model)
 - covariate level 'CYP2D6*10 T/T on K 24' → Q900:cyp2d6_10_t_t_on_k_24 = 0.492 (linear_fractional on the model)
 - covariate level 'CYP2D6*10 T/T on K 23' → Q900:cyp2d6_10_t_t_on_k_23 = 1.34 (linear_fractional on the model)
-- metabolite volume: 'V 3 (L)' Q63→Q61 for M1 (P-88) — it is 1-compartment, so its central volume is its only volume
-- metabolite volume: 'V 4 (L)' Q63→Q61 for M2 (P-95) — it is 1-compartment, so its central volume is its only volume
+- metabolite volume: 'V 3 (L)' Q63→Q61 for M 1 — it is 1-compartment, so its central volume is its only volume
+- metabolite volume: 'V 4 (L)' Q63→Q61 for M 2 — it is 1-compartment, so its central volume is its only volume
 - apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q63 (V 2 (L)); Q61 (V 3 (L)); Q61 (V 4 (L))
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=iloperidone
 - topology: 2 first-order transfer(s) across 3 compounds → general_linear
 - template fit: PK_3M_9C — formed from central; parent 1, metabolites [1, 1]
-- population split: 'estimate' subgroup of Pei_2016 (paper reports 2 populations: estimate, median)
-- row roles: 2 per-group rows of M2 (P-95) covariate_effect but 0 reference group(s) — kept as printed
-- row roles (LLM): model_class=compartmental; 20/20 row label(s) assigned, 27 linked by role; re-tagged parent→M1 (P-88) ×21, parent→M2 (P-95) ×25
-- molar mass: no plausible PubChem entry for 'M2 (P-95)' ('P-95') — left in mass units
-- molar mass: none found for 'M2 (P-95)' — its concentrations stay mass-only
+- pharmacogenetic covariate 'cyp2d6_10_c_t_on_k_24' (cyp2d6) — PGx domain
+- pharmacogenetic covariate 'cyp2d6_10_t_t_on_k_24' (cyp2d6) — PGx domain
+- pharmacogenetic covariate 'cyp2d6_10_t_t_on_k_23' (cyp2d6) — PGx domain
+- population split: 'estimate' subgroup of Pei_2016 (paper reports 2 populations: estimate, final model / median)
+- row roles: 2 per-group rows of M 2 covariate_effect but 0 reference group(s) — kept as printed
+- row roles (LLM): model_class=compartmental; 20/20 row label(s) assigned, 15 linked by role; re-tagged parent→M 1 ×11, parent→M 2 ×13
+- molar mass: none of 1 PubChem candidate(s) is 'M 2' (LLM) — left in mass units
+- molar mass: none found for 'M 2' — its concentrations stay mass-only
 
 **Extraction notes:**
 - LLM selected parameter table(s) 3
@@ -113,19 +116,19 @@ _All readers agree on the compared fields of this record._
 | C0_has_structural_params | pass | not captured | 9 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q305 | pass | 1 / [time] | not captured | not captured | not captured | ['tab_2:row8:col1'] |
-| C5_dimension_Q305 | pass | 1 / [time] | not captured | not captured | not captured | ['tab_2:row9:col1'] |
-| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['tab_2:row2:col1'] |
-| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['tab_2:row3:col1'] |
-| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['tab_2:row4:col1'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['tab_2:row1:col1'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_2:row6:col1'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_2:row7:col1'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_2:row5:col1'] |
+| C5_dimension_Q305 | pass | 1 / [time] | not captured | not captured | not captured | ['Pei_2016_table_3:row7:col1'] |
+| C5_dimension_Q305 | pass | 1 / [time] | not captured | not captured | not captured | ['Pei_2016_table_3:row8:col1'] |
+| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['Pei_2016_table_3:row1:col1'] |
+| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['Pei_2016_table_3:row2:col1'] |
+| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['Pei_2016_table_3:row3:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Pei_2016_table_3:row0:col1'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Pei_2016_table_3:row5:col1'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Pei_2016_table_3:row6:col1'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Pei_2016_table_3:row4:col1'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q61 | pass | volume within physiological range | 10 L | not captured | not captured | ['tab_2:row6:col1'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 10 L | not captured | not captured | ['tab_2:row7:col1'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 679 L | not captured | not captured | ['tab_2:row5:col1'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 10 L | not captured | not captured | ['Pei_2016_table_3:row5:col1'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 10 L | not captured | not captured | ['Pei_2016_table_3:row6:col1'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 679 L | not captured | not captured | ['Pei_2016_table_3:row4:col1'] |
 
 **Reviewer per-scenario checks:**
 
@@ -145,9 +148,9 @@ _All readers agree on the compared fields of this record._
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_iloperidone/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Pei_2016` / `Pei_2016::estimate`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_iloperidone/models/modelica/_needs_review/Iloperidone_Pei2016_estimate.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_iloperidone/models/modelica/_needs_review/Iloperidone_Pei2016_estimate.deviation.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_iloperidone/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Pei_2016` / `Pei_2016::estimate`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_iloperidone/models/modelica/_needs_review/Iloperidone_Pei2016_estimate.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_iloperidone/models/modelica/_needs_review/Iloperidone_Pei2016_estimate.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -173,4 +176,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 15:48 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 20:43 UTC</sub>

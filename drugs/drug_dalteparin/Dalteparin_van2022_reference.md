@@ -1,11 +1,10 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;dalteparin&quot;,&quot;href&quot;:&quot;drugs/drug_dalteparin/&quot;},{&quot;label&quot;:&quot;van_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dalteparin_Schoemaker1996_reference&quot;,&quot;label&quot;:&quot;Schoemaker_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dalteparin/Dalteparin_Schoemaker1996_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # dalteparin — `Dalteparin_van2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75), gpt-oss:120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75), gpt-oss:120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -17,15 +16,13 @@
 
 ### Reviewer guidance
 
-**No model parameters were extracted from this paper.**
+**The paper reports none of the model's key parameters.**
 
-Nothing in the extracted data describes the drug's disposition, so there is no model to build.
+No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has anti-Xa activity, the second reading anti‑Xa activity. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
-
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:37:27.645254+00:00) predates the upstream re-run (2026-10-05 14:09:52.352087+00:00). Current validate status: `rejected`.
 
 > **Dose compound ≠ measured compound:** dosed `dalteparin`, measured `anti-Xa activity`.
 
@@ -33,7 +30,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which m
 van der Heijden CDCC et al., Effects of dalteparin on anti-Xa activi…, British journal of clinical… (2022)
   ·  DOI: [10.1111/bcp.15208](https://doi.org/10.1111/bcp.15208)
 
-<div class="pk-model-meta" hidden drug="dalteparin" model-id="Dalteparin_van2022_reference" status="rejected" stale="true" population="critically ill COVID-19 patients" measured-compound="anti-Xa activity" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="dalteparin" model-id="Dalteparin_van2022_reference" status="rejected" stale="false" population="critically ill COVID-19 patients" measured-compound="anti-Xa activity" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 0 extracted.
@@ -58,10 +55,14 @@ _No resolved parameters._
 **Interpretation flags:**
 - control_stream ADVAN5: topology=general_linear, parameterization=mechanistic (clearance)
 - theta_crosscheck: table present but its labels did not align to bound THETAs (skipped)
-- molar mass: no plausible PubChem entry for 'anti-Xa activity' ('anti-Xa activity') — left in mass units
+- molar mass: no plausible PubChem entry for 'anti-Xa activity' ('anti-factor Xa activity') — left in mass units
 - molar mass: none found for 'dalteparin' — its concentrations stay mass-only
 - molar mass: none found for 'anti-Xa activity' — its concentrations stay mass-only
 - review gap-fill skipped: this record measures 'anti-Xa activity', not dalteparin — the review values are the parent's
+
+**Extraction notes:**
+- table bcp15208-tbl-0002: unbound_uncertainty
+- table bcp15208-tbl-0002: unparsed_numeric_cell
 
 ## Validation
 
@@ -104,7 +105,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_dalteparin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `van_2022` / `van_2022::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_dalteparin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `van_2022` / `van_2022::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -120,4 +121,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 14:09 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 22:47 UTC</sub>

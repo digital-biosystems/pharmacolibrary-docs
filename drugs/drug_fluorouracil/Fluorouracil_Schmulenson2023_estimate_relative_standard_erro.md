@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;fluorouracil&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/&quot;},{&quot;label&quot;:&quot;Schmulenson_2023 \u00b7 estimate_relative_standard_error&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fluorouracil_Bae2026_reference&quot;,&quot;label&quot;:&quot;Bae_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Bae2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Lubomirov2025_reference&quot;,&quot;label&quot;:&quot;Lubomirov_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Lubomirov2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Lvi2000_reference&quot;,&quot;label&quot;:&quot;L\u00e9vi_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Lvi2000_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Yang2025_reference&quot;,&quot;label&quot;:&quot;Yang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Yang2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Daryani_2016_bioluminescence&quot;,&quot;label&quot;:&quot;Daryani_2016 \u00b7 bioluminescence&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/pd_Daryani_2016_bioluminescence.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fluorouracil_Kang2025_reference&quot;,&quot;label&quot;:&quot;Kang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Kang2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Lubomirov2025_reference&quot;,&quot;label&quot;:&quot;Lubomirov_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Lubomirov2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Lvi2000_reference&quot;,&quot;label&quot;:&quot;L\u00e9vi_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Lvi2000_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Yang2025_reference&quot;,&quot;label&quot;:&quot;Yang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Yang2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Bae2026_reference&quot;,&quot;label&quot;:&quot;Bae_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Bae2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Pierik_2024_V&quot;,&quot;label&quot;:&quot;Pierik_2024 \u00b7 V&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/pd_Pierik_2024_V.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Daryani_2016_bioluminescence&quot;,&quot;label&quot;:&quot;Daryani_2016 \u00b7 bioluminescence&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/pd_Daryani_2016_bioluminescence.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Ma_2022_T&quot;,&quot;label&quot;:&quot;Ma_2022 \u00b7 T&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/pd_Ma_2022_T.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # fluorouracil — `Fluorouracil_Schmulenson2023_estimate_relative_standard_erro`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.75), gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-check: partial 1/2</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (confirmed, agreement 1.0), gpt-oss-120b (partly confirmed, agreement 0.75). Primary extraction retained.">cross-check: partial 1/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -19,19 +19,17 @@
 
 **This paper's disposition core is incomplete; the clearance plausibility check could not be computed.**
 
-A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Bae_2026, Blesch_2003, Deyme_2019) cannot stand in for this paper's evidence. The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — fluorouracil: CL 223 L/h, V 161 L, kabs 0.757 h−1, tlag 0.000552 h.
+A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Bae_2026, Deyme_2019) cannot stand in for this paper's evidence. The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — fluorouracil: CL 223 L/h, V 161 L, kabs 0.757 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of ka, absorption rate constant: this record has 0.757, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:28:39.801126+00:00) predates the upstream re-run (2026-10-07 16:59:47.100308+00:00). Current validate status: `rejected`.
-
 ## Citation
 Schmulenson E et al., Influence of the skeletal muscle index…, Cancer medicine (2023)
   ·  DOI: [10.1002/cam4.5118](https://doi.org/10.1002/cam4.5118)
 
-<div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Schmulenson2023_estimate_relative_standard_erro" status="rejected" stale="true" population="oncology patients receiving fluorouracil-based chemotherapy" measured-compound="fluorouracil" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Schmulenson2023_estimate_relative_standard_erro" status="needs_review" stale="false" population="patients with cancer" measured-compound="fluorouracil" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.
@@ -39,13 +37,13 @@ Schmulenson E et al., Influence of the skeletal muscle index…, Cancer medicine
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL5FU [L/h] | `Q22` · CL | 223 | L/h | 6.194444444444445e-05 | [l] / [h] | 2.4 | llm (0.6) | cam45118-tbl-0005:row1:col1 | — | not captured |
-| volume | `Q61` · V | 0.2 | mL | 2e-07 | L | not captured | review_gapfill (0.7) | Hara_2026:review | — | not captured |
-| Ka, Absorption rate constant | `Q49` · kabs | 0.757 | h-1 | 0.0002102777777777778 | 1/h | not captured | review_gapfill (0.7) | Bae_2026:review | — | not captured |
+| CL5FU [L/h] | `Q22` · CL | 223 | L/h | 6.194444444444445e-05 | [l] / [h] | not captured | llm (0.6) | cam45118-tbl-0005:row1:col1 | — | not captured |
+| total volume of distribution | `Q61` · V | 160.9 | L | 0.16090000000000002 | L | not captured | review_gapfill (0.7) | Deyme_2019:review | — | not captured |
+| Ka, Absorption rate constant (h−1) | `Q49` · kabs | 0.757 | h−1 | 0.0002102777777777778 | 1/h | not captured | review_gapfill (0.7) | Bae_2026:review | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -57,43 +55,32 @@ Schmulenson E et al., Influence of the skeletal muscle index…, Cancer medicine
 **Interpretation flags:**
 - table section iiv: 'CL5FU [%CV]' routed out of structural estimates ('Interindividual variability')
 - table section residual_error: 'Proportional error [%]' routed out of structural estimates ('Residual variability')
-- column 'estimate (relative standard error, %)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- unit_dimension_mismatch: 'BSA effect on CL5FU' → Q22 (unit '[length] ** 3' vs ontology '[length] ** 3 / [time]') — route to review
 - dropped duplicate Q22 ('BSA effect on CL5FU', value '0.794') — already have one for this compound
+- unit_dimension_mismatch: 'SMIBack effect on CL5FU' → Q22 (unit '[length] ** 3' vs ontology '[length] ** 3 / [time]') — route to review
 - dropped duplicate Q22 ('SMIBack effect on CL5FU', value '0.0570') — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=fluorouracil
 - population split: 'estimate (relative standard error, %)' subgroup of Schmulenson_2023 (paper reports 2 populations: estimate, estimate (relative standard error, %))
-- gap-filled Q61 (V) from Hara_2026's review values (primary lacked it)
+- gap-filled Q61 (V) from Deyme_2019's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - gap-filled Q49 (kabs) from Bae_2026's review values (primary lacked it)
 
 **Extraction notes:**
-- unparsed cell cam45118-tbl-0005:row1:col3 = '223 (212–234)'
-- unparsed cell cam45118-tbl-0005:row3:col3 = '0.796 (0.543–1.02)'
-- unparsed cell cam45118-tbl-0005:row4:col3 = '0.0575 (0.0283–0.0885)'
-- unparsed cell cam45118-tbl-0005:row6:col3 = '20.4 (15.8–24.5)'
-- unparsed cell cam45118-tbl-0005:row7:col1 = '51.1 (fixed estimate)'
-- unparsed cell cam45118-tbl-0005:row7:col3 = '51.1 (fixed estimate)'
-- unparsed cell cam45118-tbl-0005:row9:col3 = '21.4 (19.0–23.8)'
-- unparsed cell Schmulenson_2023_table_3:row0:col2 = '209 (198–220)'
-- unparsed cell Schmulenson_2023_table_3:row2:col2 = '0.688 (0.455–0.933)'
-- unparsed cell Schmulenson_2023_table_3:row4:col2 = '15.5 (10.3–19.2)'
-- unparsed cell Schmulenson_2023_table_3:row6:col2 = '36.1 (18.7–52.2)'
-- unparsed cell Schmulenson_2023_table_3:row8:col2 = '87.2 (54.7–139)'
-- unparsed cell Schmulenson_2023_table_3:row9:col2 = '18.8 (14.7–23.6)'
-- companion parameter table 3 transcribed (10 record(s))
+- table cam45118-tbl-0005: unparsed_numeric_cell
+- companion parameter table 3 transcribed (16 record(s))
 - LLM selected parameter table(s) 3
 - dropped sensitivity-analysis table(s) 5 from the LLM selection — perturbations of a model, not a model
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  1 of 2 readers agree  
-Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss:120b` | confirmed | 1.0 (5/5 fields) | none |
 | `gpt-oss-120b` | partly confirmed | 0.75 (6/8 fields) | 2 |
-| `gpt-oss:120b` | confirmed | 1.0 (6/6 fields) | none |
 
 <details><summary>2 field discrepancies</summary>
 
@@ -119,11 +106,11 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['cam45118-tbl-0005:row1:col1'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Bae_2026:review'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Hara_2026:review'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Deyme_2019:review'] |
 | C6_cl_magnitude | fail | &lt;= 90.0 L/h | 223.0 | not captured | not captured | ['cam45118-tbl-0005:row1:col1'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 223 L/h | not captured | not captured | ['cam45118-tbl-0005:row1:col1'] |
-| C9_phys_window_Q61 | fail | volume within physiological range | 0.0002 L | not captured | not captured | ['Hara_2026:review'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 161 L | not captured | not captured | ['Deyme_2019:review'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -132,14 +119,24 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_fluorouracil/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Schmulenson_2023` / `Schmulenson_2023::estimate_relative_standard_error`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_fluorouracil/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Schmulenson_2023` / `Schmulenson_2023::estimate_relative_standard_error`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -148,4 +145,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 16:59 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 18:23 UTC</sub>

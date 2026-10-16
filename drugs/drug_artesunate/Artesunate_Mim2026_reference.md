@@ -19,21 +19,21 @@
 
 ### Reviewer guidance
 
-**The artesunate record was rejected because total clearance CL = 286.01 was reported with the unit 'CL', which is not a valid unit, giving a dimension mismatch on a structural parameter.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-In the Mim_2026 model of artesunate in P. berghei-infected Swiss mice, the clearance parameter CL carries the verbatim unit 'CL' instead of a flow unit such as mL/h/kg, so its dimensions cannot be reconciled with the model structure. The inter-compartmental clearance Q = 20636.48 mL/h/kg and volume V = 4039.63 mL/kg were reported with proper units, but the clearance unit could not be converted to SI, so the parameter reached the model without an SI value. The one-compartment structure with absorption rate constant kabs = 0.28 1/h is otherwise stated. Extracted — artesunate: kabs 0.28 1/h, CL 286 CL, V 4.04e+03 mL/kg, Q 2.06e+04 mL/h/kg.
+Extracted — artesunate: kabs 0.28 1/h, CL 286 ml/h/kg, V1 4.04e+03 ml/kg, Q 2.06e+04 ml/h/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has artesunate, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by glm-5.3-flash</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Mim SR et al., Pharmacokinetic and pharmacodynamic mod…, Antimicrobial agents and ch… (2026)
   ·  DOI: [10.1128/aac.01717-25](https://doi.org/10.1128/aac.01717-25)
 
-<div class="pk-model-meta" hidden drug="artesunate" model-id="Artesunate_Mim2026_reference" status="rejected" stale="false" population="P. berghei-infected Swiss mice" measured-compound="artesunate" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="artesunate" model-id="Artesunate_Mim2026_reference" status="rejected" stale="false" population="P. berghei-infected mice" measured-compound="artesunate" parameterization="mechanistic" topology="general_linear"></div>
 
-**Model structure:** 1-compartment; no model was built for this record.  
+**Model structure:** general linear; no model was built for this record.  
 **Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
@@ -43,10 +43,10 @@ Mim SR et al., Pharmacokinetic and pharmacodynamic mod…, Antimicrobial agents 
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Absorption rate constant, Ka | `Q49` · kabs | 0.28 | 1/h | 7.777777777777778e-05 | 1/h | 24.4 | llm_confirmed (0.6) | T2:row1:col1, T2:row1:col2, Mim_2026_table_1:row0:col1, Mim_2026_table_1:row0:col2, Mim_2026_table_1:row0:col3, Mim_2026_table_1:row0:col4 | — | not captured |
-| Total clearance, CL | `Q22` · CL | 286.01 | CL | not captured | [cl] | 5.22 | exact (1.0) | T2:row2:col2, T2:row2:col3, T2:row2:col4, Mim_2026_table_1:row1:col2, Mim_2026_table_1:row1:col3, Mim_2026_table_1:row1:col4 | — | not captured |
-| Volume of central compartment, V1 | `Q61` · V | 4039.63 | mL/kg | 0.2827741 | L | 11.2 | boundary_compartment (0.9) | T2:row3:col2, T2:row3:col3, T2:row3:col4, Mim_2026_table_1:row2:col2, Mim_2026_table_1:row2:col3, Mim_2026_table_1:row2:col4 | — | not captured |
-| Inter-compartmental clearance, Q | `Q30` · Q | 20636.48 | mL/h/kg | 0.0004012648888888889 | L/h | 36.0 | llm_confirmed (0.6) | T2:row5:col2, T2:row5:col3, T2:row5:col4, Mim_2026_table_1:row4:col2, Mim_2026_table_1:row4:col3, Mim_2026_table_1:row4:col4 | — | not captured |
+| Absorption rate constant, Ka | `Q49` · kabs | 0.28 | 1/h | 7.777777777777778e-05 | [1] / [h] | not captured | llm_confirmed (0.6) | T2:row1:col2, Mim_2026_table_1:row0:col2 | — | not captured |
+| Total clearance, CL | `Q22` · CL | 286.01 | ml/h/kg | 5.561305555555555e-06 | [ml] / [[h] · [kg]] | not captured | exact (1.0) | T2:row2:col2, Mim_2026_table_1:row1:col2 | — | not captured |
+| Volume of central compartment, V1 | `Q63` · V1 | 4039.63 | ml/kg | 0.2827741 | [ml] / [kg] | not captured | boundary_compartment (0.9) | T2:row3:col2, Mim_2026_table_1:row2:col2 | — | not captured |
+| Inter-compartmental clearance, Q | `Q30` · Q | 20636.48 | ml/h/kg | 0.0004012648888888889 | [ml] / [[h] · [kg]] | not captured | llm_confirmed (0.6) | T2:row5:col2, Mim_2026_table_1:row4:col2 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -56,23 +56,18 @@ Mim SR et al., Pharmacokinetic and pharmacodynamic mod…, Antimicrobial agents 
 ## Departures & gaps
 
 **Interpretation flags:**
-- column 'unit' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- unit_dimension_mismatch: 'Total clearance, CL' → Q22 (unit '[length] ** 3' vs ontology '[length] ** 3 / [time]') — route to review
 - dropped duplicate Q63 ('Volume of central compartment, V2', value '41817.36') — already have one for this compound
-- implicit units: 'Absorption rate constant, Ka' → 1/h (from the paper text: "Text states 'The estimated absorption rate constant (0.28 h⁻¹)' and 'The absorption rate constants (Ka) were fixed at 0.")
-- implicit units: 'Volume of central compartment, V1' → mL/kg (from the paper text: "Text states 'a moderate volume of distribution (4,039.63 mL/kg)' matching V1 = 4039.63.")
-- implicit units: 'Inter-compartmental clearance, Q' → mL/h/kg (from the paper text: "Text reports MQ clearance as '286 mL/h/kg'; Q is an intercompartmental clearance of the same model, so it shares the bod")
 - apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q22 (Total clearance, CL); Q63 (Volume of central compartment, V1); Q30 (Inter-compartmental clearance, Q)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=artesunate
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
-- 1C volume normalization: Q63→Q61 (single-compartment model has no central/peripheral split; 'Volume of central compartment, V1' is the general volume)
+- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
 - status held at route_to_review — not promoted
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- companion parameter table 1 transcribed (19 record(s))
+- table T2: unbound_uncertainty
+- table Mim_2026_table_1: unbound_uncertainty
+- companion parameter table 1 transcribed (18 record(s))
 - LLM selected parameter table(s) 1, 2
 
 ## Validation
@@ -108,13 +103,14 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | fail | [length] ** 3 | CL | not captured | not captured | ['T2:row2:col2', 'T2:row2:col3', 'T2:row2:col4', 'Mim_2026_table_1:row1:col2', 'Mim_2026_table_1:row1:col3', 'Mim_2026_table_1:row1:col4'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T2:row5:col2', 'T2:row5:col3', 'T2:row5:col4', 'Mim_2026_table_1:row4:col2', 'Mim_2026_table_1:row4:col3', 'Mim_2026_table_1:row4:col4'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['T2:row1:col1', 'T2:row1:col2', 'Mim_2026_table_1:row0:col1', 'Mim_2026_table_1:row0:col2', 'Mim_2026_table_1:row0:col3', 'Mim_2026_table_1:row0:col4'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['T2:row3:col2', 'T2:row3:col3', 'T2:row3:col4', 'Mim_2026_table_1:row2:col2', 'Mim_2026_table_1:row2:col3', 'Mim_2026_table_1:row2:col4'] |
-| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 286.01 | not captured | not captured | ['T2:row2:col2', 'T2:row2:col3', 'T2:row2:col4', 'Mim_2026_table_1:row1:col2', 'Mim_2026_table_1:row1:col3', 'Mim_2026_table_1:row1:col4'] |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q61 | pass | volume within physiological range | 283 L | not captured | not captured | ['T2:row3:col2', 'T2:row3:col3', 'T2:row3:col4', 'Mim_2026_table_1:row2:col2', 'Mim_2026_table_1:row2:col3', 'Mim_2026_table_1:row2:col4'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T2:row2:col2', 'Mim_2026_table_1:row1:col2'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T2:row5:col2', 'Mim_2026_table_1:row4:col2'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['T2:row1:col2', 'Mim_2026_table_1:row0:col2'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['T2:row3:col2', 'Mim_2026_table_1:row2:col2'] |
+| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 286.01 | not captured | not captured | ['T2:row2:col2', 'Mim_2026_table_1:row1:col2'] |
+| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none'] | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 20 L/h | not captured | not captured | ['T2:row2:col2', 'Mim_2026_table_1:row1:col2'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 283 L | not captured | not captured | ['T2:row3:col2', 'Mim_2026_table_1:row2:col2'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -123,7 +119,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_artesunate/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Mim_2026` / `Mim_2026::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_artesunate/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Mim_2026` / `Mim_2026::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -139,4 +135,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 06:46 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 20:14 UTC</sub>

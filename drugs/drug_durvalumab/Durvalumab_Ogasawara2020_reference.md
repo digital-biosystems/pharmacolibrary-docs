@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;durvalumab&quot;,&quot;href&quot;:&quot;drugs/drug_durvalumab/&quot;},{&quot;label&quot;:&quot;Ogasawara_2020 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Durvalumab_Zhao2026_reference&quot;,&quot;label&quot;:&quot;Zhao_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_durvalumab/Durvalumab_Zhao2026_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Durvalumab_Abegesah2025_reference&quot;,&quot;label&quot;:&quot;Abegesah_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_durvalumab/Durvalumab_Abegesah2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Durvalumab_Zhao2026_reference&quot;,&quot;label&quot;:&quot;Zhao_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_durvalumab/Durvalumab_Zhao2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Durvalumab_Abegesah2025_reference&quot;,&quot;label&quot;:&quot;Abegesah_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_durvalumab/Durvalumab_Abegesah2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # durvalumab — `Durvalumab_Ogasawara2020_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.522). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.522). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -17,19 +17,19 @@
 
 ### Reviewer guidance
 
-**Durvalumab’s blood clearance CLb is reported as −1.58, an implausible negative clearance that led to rejection.**
+**CLb has no unit.**
 
-The record identifies CLb as blood clearance, the proportionality factor relating drug concentration to elimination rate, and gives it the value −1.58. By contrast, total clearance is listed as 0.0107 L/h. Extracted — durvalumab: CL 0.0107 L/h, V1 4.63 L, Q 0.0376 L/h, V2 2.68 L, CLb -1.58.
+Without a unit the value cannot be converted, so the model cannot use it. Extracted — durvalumab: CL 0.0107 L/h, V1 4.63 L, Q 0.0376 L/h, V2 2.68 L, CLb 1.26.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of alb on clb: this record has -1.58, the second reading none; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Ogasawara K et al., Population Pharmacokinetics of an Anti-…, Clinical pharmacokinetics (2020)
   ·  DOI: [10.1007/s40262-019-00804-x](https://doi.org/10.1007/s40262-019-00804-x)
 
-<div class="pk-model-meta" hidden drug="durvalumab" model-id="Durvalumab_Ogasawara2020_reference" status="rejected" stale="false" population="patients with hematologic malignancies" measured-compound="durvalumab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="durvalumab" model-id="Durvalumab_Ogasawara2020_reference" status="needs_review" stale="false" population="patients with hematologic malignancies" measured-compound="durvalumab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 5 extracted, plus 4 covariate effects.
@@ -37,7 +37,7 @@ Ogasawara K et al., Population Pharmacokinetics of an Anti-…, Clinical pharmac
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -45,11 +45,11 @@ Ogasawara K et al., Population Pharmacokinetics of an Anti-…, Clinical pharmac
 | TVVc, L | `Q63` · V1 | 4.63 | L | 0.00463 | [l] | 2.1 | tv_prefix (0.95) | Tab3:row3:col1 | — | not captured |
 | TVQ, L/h | `Q30` · Q | 0.0376 | L/h | 1.0444444444444444e-08 | [l] / [h] | 11.6 | tv_prefix (0.95) | Tab3:row4:col1 | — | not captured |
 | TVVp, L | `Q64` · V2 | 2.68 | L | 0.00268 | [l] | 6.3 | tv_prefix (0.95) | Tab3:row5:col1 | — | not captured |
-| ALB on CLb | `Q23` · CLb | -1.58 | not captured | not captured | not captured | 7.1 | llm_confirmed (0.6) | Tab3:row6:col1 | — | not captured |
-| theta_q319_wt | `Q900` · theta_q319_wt | 0.581 | not captured | not captured | not captured | 15.5 | not captured (not captured) | Tab3:row10:col1 | — | not captured |
-| theta_clb_sex | `Q900` · theta_clb_sex | 0.791 | not captured | not captured | not captured | 4.2 | not captured (not captured) | Tab3:row11:col1 | — | not captured |
-| theta_q319_wt | `Q900` · theta_q319_wt | 0.451 | not captured | not captured | not captured | 18.9 | not captured (not captured) | Tab3:row14:col1 | — | not captured |
-| theta_v1_sex | `Q900` · theta_v1_sex | 0.790 | not captured | not captured | not captured | 4.2 | not captured (not captured) | Tab3:row15:col1 | — | not captured |
+| wt_on_clb | `Q900` · wt_on_clb | 0.581 | not captured | not captured | not captured | 15.5 | not captured (not captured) | Tab3:row10:col1 | — | not captured |
+| sex_on_clb | `Q900` · sex_on_clb | 0.791 | not captured | not captured | not captured | 4.2 | not captured (not captured) | Tab3:row11:col1 | — | not captured |
+| MDS/AML on CLb | `Q23` · CLb | 1.26 | not captured | not captured | not captured | 4.0 | llm_confirmed (0.6) | Tab3:row12:col1 | — | not captured |
+| wt_on_vcc | `Q900` · wt_on_vcc | 0.451 | not captured | not captured | not captured | 18.9 | not captured (not captured) | Tab3:row14:col1 | — | not captured |
+| sex_on_vcc | `Q900` · sex_on_vcc | 0.790 | not captured | not captured | not captured | 4.2 | not captured (not captured) | Tab3:row15:col1 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -62,44 +62,24 @@ Ogasawara K et al., Population Pharmacokinetics of an Anti-…, Clinical pharmac
 - table section iiv: 'CL, CV%' routed out of structural estimates ('Inter-individual variability')
 - table section iiv: 'Vc, CV%' routed out of structural estimates ('Inter-individual variability')
 - table section residual_error: 'Log additive error' routed out of structural estimates ('Residual variability')
-- dropped duplicate Q23 ('IgG on CLb', value '0.258') — already have one for this compound
-- dropped duplicate Q23 ('sPD-L1 on CLb', value '0.0617') — already have one for this compound
-- dropped duplicate Q23 ('LDH on CLb', value '0.115') — already have one for this compound
-- dropped duplicate Q23 ('MDS/AML on CLb', value '1.26') — already have one for this compound
-- dropped duplicate Q63 ('ALB on Vcc', value '-0.566') — already have one for this compound
+- dropped unlinked row (NIL): 'ALB on CLb' — extend the ontology if this is a real PK parameter (source ['Tab3:row6:col1'])
+- dropped unlinked row (NIL): 'IgG on CLb' — extend the ontology if this is a real PK parameter (source ['Tab3:row7:col1'])
+- dropped unlinked row (NIL): 'sPD-L1 on CLb' — extend the ontology if this is a real PK parameter (source ['Tab3:row8:col1'])
+- dropped unlinked row (NIL): 'LDH on CLb' — extend the ontology if this is a real PK parameter (source ['Tab3:row9:col1'])
+- covariate level 'WT on CLb' → Q900:wt_on_clb = 0.581 (linear_fractional on Q22)
+- covariate level 'Sex on CLb' → Q900:sex_on_clb = 0.791 (linear_fractional on Q22)
+- dropped unlinked row (NIL): 'ALB on Vcc' — extend the ontology if this is a real PK parameter (source ['Tab3:row13:col1'])
+- covariate level 'WT on Vcc' → Q900:wt_on_vcc = 0.451 (linear_fractional on Q22)
+- covariate level 'Sex on Vcc' → Q900:sex_on_vcc = 0.790 (linear_fractional on Q22)
 - dropped duplicate Q63 ('MM on Vcc', value '0.820') — already have one for this compound
-- NIL: refused to back-fill base 'equation variable' from footnote/prose loose number -1.58 (source ['Tab3:footnote', 'Tab3:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'NIL' from footnote/prose loose number 0.258 (source ['Tab3:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'equation variable' from footnote/prose loose number 0.0617 (source ['Tab3:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'NIL' from footnote/prose loose number 0.115 (source ['Tab3:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'equation variable' from footnote/prose loose number 0.581 (source ['Tab3:footnote', 'Tab3:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'NIL' from footnote/prose loose number 0.791 (source ['Tab3:footnote', 'Tab3:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'NIL' from footnote/prose loose number 1.26 (source ['Tab3:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'NIL' from footnote/prose loose number 0.82 (source ['Tab3:footnote']); the table cell was unparseable — needs review
-- covariate effect for Q319 has no base parameter row (kept as unattached equation-variable)
-- implicit units: 'ALB on CLb' — the LLM proposed 'unitless', whose dimension does not fit Q23; left unset
+- dropped value-less row: 'aCalculated from 914 bootstraps with successful minimization (out of 1000 bootstraps)'
+- NIL: refused to back-fill base 'CLb' from footnote/prose loose number None (source ['Tab3:footnote']); the table cell was unparseable — needs review
+- NIL: refused to back-fill base 'V1' from footnote/prose loose number None (source ['Tab3:footnote']); the table cell was unparseable — needs review
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=durvalumab
 - molar mass: none found for 'durvalumab' — its concentrations stay mass-only
 
 **Extraction notes:**
-- unparsed cell Tab3:row2:col2 = '0.0107 (0.0100–0.0113)'
-- unparsed cell Tab3:row3:col2 = '4.62 (4.43–4.84)'
-- unparsed cell Tab3:row4:col2 = '0.0375 (0.0298–0.0468)'
-- unparsed cell Tab3:row5:col2 = '2.69 (2.43–2.98)'
-- unparsed cell Tab3:row6:col2 = '−1.58 (−1.81 to −1.36)'
-- unparsed cell Tab3:row7:col2 = '0.258 (0.193–0.317)'
-- unparsed cell Tab3:row8:col2 = '0.0597 (0.0198–0.116)'
-- unparsed cell Tab3:row9:col2 = '0.117 (0.0423–0.199)'
-- unparsed cell Tab3:row10:col2 = '0.581 (0.385–0.766)'
-- unparsed cell Tab3:row11:col2 = '0.789 (0.724–0.857)'
-- unparsed cell Tab3:row12:col2 = '1.26 (1.15–1.37)'
-- unparsed cell Tab3:row13:col2 = '−0.561 (−0.800 to −0.363)'
-- unparsed cell Tab3:row14:col2 = '0.448 (0.284–0.591)'
-- unparsed cell Tab3:row15:col2 = '0.790 (0.726–0.859)'
-- unparsed cell Tab3:row16:col2 = '0.822 (0.756–0.893)'
-- unparsed cell Tab3:row19:col2 = '25.3 (21.6–29.5)'
-- unparsed cell Tab3:row20:col2 = '24.5 (22.1–26.8)'
-- unparsed cell Tab3:row22:col2 = '0.197 (0.179–0.215)'
+- table Tab3: unparsed_numeric_cell
 - LLM selected parameter table(s) 3
 
 ## Validation
@@ -142,13 +122,13 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C2_base_sign_Q23 | fail | not captured | -1.58 | not captured | not captured | not captured |
+| C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab3:row2:col1'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab3:row4:col1'] |
 | C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab3:row3:col1'] |
 | C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab3:row5:col1'] |
-| C5_unit_missing_Q23 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab3:row6:col1'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.0107 | not captured | not captured | ['Tab3:row2:col1'] |
+| C5_unit_missing_Q23 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab3:row12:col1'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 1.26 | not captured | not captured | ['Tab3:row12:col1'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.0107 L/h | not captured | not captured | ['Tab3:row2:col1'] |
 | C9_phys_window_Q63 | pass | volume within physiological range | 4.63 L | not captured | not captured | ['Tab3:row3:col1'] |
@@ -161,14 +141,24 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_durvalumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Ogasawara_2020` / `Ogasawara_2020::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_durvalumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Ogasawara_2020` / `Ogasawara_2020::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -177,4 +167,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 12:18 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 19:20 UTC</sub>

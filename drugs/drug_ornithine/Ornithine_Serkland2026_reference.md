@@ -5,7 +5,7 @@
 
 # Ornithine — `Ornithine_Serkland2026_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.571), gpt-oss:120b (not confirmed, agreement 0.636). Primary extraction retained.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.583), gpt-oss:120b (not confirmed, agreement 0.636). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -19,7 +19,7 @@
 
 **Every check that could be run on this record passed.**
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q1: this record has 0.234, the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q1: this record has 0.234, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -62,19 +62,18 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.571 (8/14 fields) | 6 |
+| `gpt-oss-120b` | not confirmed | 0.583 (7/12 fields) | 5 |
 | `gpt-oss:120b` | not confirmed | 0.636 (7/11 fields) | 4 |
 
-<details><summary>10 field discrepancies</summary>
+<details><summary>9 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `values[Q1]` | 0.234 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `values[Q312]` | not captured | 0.138 | only_one_extracted |
-| `gpt-oss-120b` | `values[Q314]` | not captured | 0.234 | only_one_extracted |
-| `gpt-oss-120b` | `values[Q315]` | 0.0662 | 2.28 | mismatch |
-| `gpt-oss-120b` | `values[Q316]` | not captured | 0.0662 | only_one_extracted |
-| `gpt-oss-120b` | `values[Q47]` | 1.7 | 1.7 | mismatch |
+| `gpt-oss-120b` | `values[Q314]` | not captured | 0.138 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q315]` | 0.0662 | 0.545 | mismatch |
+| `gpt-oss-120b` | `values[Q317]` | 0.545 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q47]` | 1.7 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q312]` | not captured | 0.109 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q315]` | not captured | 0.0662 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q316]` | 0.0662 | not captured | only_one_extracted |
@@ -123,10 +122,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ornithine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Serkland_2026` / `Serkland_2026::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ornithine/models/modelica/Ornithine_Serkland2026_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ornithine/models/modelica/Ornithine_Serkland2026_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ornithine/models/modelica/Ornithine_Serkland2026_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ornithine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Serkland_2026` / `Serkland_2026::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ornithine/models/modelica/Ornithine_Serkland2026_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ornithine/models/modelica/Ornithine_Serkland2026_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ornithine/models/modelica/Ornithine_Serkland2026_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -144,7 +143,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_ornithine/Ornithine_Serkland2026_reference/Ornithine_Serkland2026_reference.svg" alt="Ornithine_Serkland2026_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_ornithine/Ornithine_Serkland2026_reference/Ornithine_Serkland2026_reference.svg" alt="Ornithine_Serkland2026_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

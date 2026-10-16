@@ -86,7 +86,7 @@ Bluck LJ et al., Measurement of ascorbic acid kinetics i…, Journal of mass spe
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ascorbic_acid/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Bluck_1996` / `Bluck_1996::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ascorbic_acid/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Bluck_1996` / `Bluck_1996::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

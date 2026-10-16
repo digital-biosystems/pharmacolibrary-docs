@@ -17,13 +17,13 @@
 
 ### Reviewer guidance
 
-**The vaborbactam model was rejected because the parameter tmax, reported as 43.4 weeks, could not be converted to standard units.**
+**The paper reports none of the model's key parameters.**
 
-The record lists the value 43.4 for tmax with the unit weeks, which prevented the parameter from being standardized. Additionally, the model structure was flagged as having an unreachable compartment, meaning a compartment has no path from the dose. Extracted — vaborbactam: CL 9.84 L/h, tmax 43.4 weeks, V1 14.4 L, V1/F 1, Q 1.96 L/h, V2 2.56 L.
+No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none → none (none), the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `meropenem/vaborbactam`, measured `vaborbactam`.
 
@@ -31,45 +31,52 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 Fornari C et al., Dose rationale for the use of meropenem…, British journal of clinical… (2024)
   ·  DOI: [10.1111/bcp.16145](https://doi.org/10.1111/bcp.16145)
 
-<div class="pk-model-meta" hidden drug="Vaborbactam" model-id="Vaborbactam_Fornari2024_reference" status="rejected" stale="false" population="paediatric patients with Gram-negative bacterial infections" measured-compound="vaborbactam" parameterization="apparent" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="Vaborbactam" model-id="Vaborbactam_Fornari2024_reference" status="rejected" stale="false" population="paediatric patients with Gram-negative bacterial infections" measured-compound="vaborbactam" parameterization="mechanistic" topology="1C"></div>
 
-**Model structure:** general linear; no model was built for this record.  
-**Parameters:** 6 extracted.
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 0 extracted.
 
-**Parameterization:** V1/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** mechanistic.
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| CL (L/h) | `Q22` · CL | 9.84 | L/h | 2.733333333333333e-06 | [l] / [h] | not captured | exact (1.0) | tab_2:row4:col1, tab_2:row4:col2, tab_2:row4:col4, tab_2:row4:col5, tab_2:row28:col1, tab_2:row28:col2, tab_2:row28:col4, tab_2:row28:col5 | — | 0.561 (None% RSE) |
-| PMA50 (weeks) | `Q56` · tmax | 43.4 | weeks | not captured | [weeks] | not captured | llm (0.6) | tab_2:row8:col4, tab_2:row32:col4 | — | not captured |
-| V1 (L) | `Q63` · V1 | 14.4 | L | 0.014400000000000001 | [l] | not captured | exact (1.0) | tab_2:row9:col1, tab_2:row9:col2, tab_2:row9:col4, tab_2:row9:col5, tab_2:row33:col1, tab_2:row33:col2, tab_2:row33:col4, tab_2:row33:col5 | — | 0.565 (None% RSE) |
-| βBW_V1 | `Q290` · V1/F | 1 | not captured | not captured | not captured | not captured | llm (0.6) | tab_2:row10:col1, tab_2:row10:col4, tab_2:row34:col1, tab_2:row34:col4 | — | not captured |
-| Q (L/h) | `Q30` · Q | 1.96 | L/h | 5.444444444444444e-07 | [l] / [h] | not captured | exact (1.0) | tab_2:row11:col1, tab_2:row11:col2, tab_2:row11:col4, tab_2:row11:col5, tab_2:row35:col1, tab_2:row35:col2, tab_2:row35:col4, tab_2:row35:col5 | — | 0.195 (None% RSE) |
-| V2 (L) | `Q64` · V2 | 2.56 | L | 0.00256 | [l] | not captured | exact (1.0) | tab_2:row13:col1, tab_2:row13:col2, tab_2:row13:col4, tab_2:row13:col5, tab_2:row37:col1, tab_2:row37:col2, tab_2:row37:col4, tab_2:row37:col5 | — | 0.29 (None% RSE) |
-| b | `Q900` · equation variable | 0.282 | not captured | not captured | not captured | not captured | llm (0.6) | tab_2:row23:col1, tab_2:row23:col2, tab_2:row23:col4, tab_2:row23:col5 | — | not captured |
-
-<details class="legend">
-<summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
-</details>
+_No resolved parameters._
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'βCLcr_CL' — extend the ontology if this is a real PK parameter (source ['tab_2:row5:col1', 'tab_2:row5:col2', 'tab_2:row5:col4', 'tab_2:row5:col5', 'tab_2:row29:col1', 'tab_2:row29:col2', 'tab_2:row29:col4', 'tab_2:row29:col5'])
-- dropped duplicate Q22 ('βBW_CL', value '0.75') — already have one for this compound
-- dropped PD-category row 'Hill' → Q325 (Hill, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tab_2:row7:col4', 'tab_2:row31:col4'])
-- dropped duplicate Q30 ('βBW_Q', value '0.75') — already have one for this compound
-- dropped duplicate Q64 ('βBW_V2', value '1') — already have one for this compound
-- dropped duplicate Q22 ('corr V1 CL', value '0.787') — already have one for this compound
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=vaborbactam
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
+- table section covariance: 'Adult Value' routed out of structural estimates ('corr V1 CL')
+- table section covariance: 'Adult RSE (%)' routed out of structural estimates ('corr V1 CL')
+- table section covariance: 'Children Value' routed out of structural estimates ('corr V1 CL')
+- table section covariance: 'Children RSE (%)' routed out of structural estimates ('corr V1 CL')
+- column 'cl (l/h)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'βcler_cl' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'βbw_cl' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'hill' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'pma50 (weeks)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'v1 (l)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'βbw_v1' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'q (l/h)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'βbw_q' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'v2 (l)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'βbw_v2' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'ωcl' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'ωv1' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'ωq' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'ωv2' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'b' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- dropped unlinked row (NIL): 'Adult Value' — extend the ontology if this is a real PK parameter (source ['Fornari_2024_table_p26_1:row0:col3', 'Fornari_2024_table_p26_1:row1:col3', 'Fornari_2024_table_p26_1:row2:col3', 'Fornari_2024_table_p26_1:row5:col3', 'Fornari_2024_table_p26_1:row6:col3', 'Fornari_2024_table_p26_1:row7:col3', 'Fornari_2024_table_p26_1:row8:col3', 'Fornari_2024_table_p26_1:row9:col3', 'Fornari_2024_table_p26_1:row10:col3', 'Fornari_2024_table_p26_1:row11:col3', 'Fornari_2024_table_p26_1:row12:col3', 'Fornari_2024_table_p26_1:row13:col3', 'Fornari_2024_table_p26_1:row14:col3', 'Fornari_2024_table_p26_1:row16:col3', 'Fornari_2024_table_p26_1:row17:col3', 'Fornari_2024_table_p26_1:row18:col3', 'Fornari_2024_table_p26_1:row19:col3', 'Fornari_2024_table_p26_1:row22:col3', 'Fornari_2024_table_p26_1:row23:col3', 'Fornari_2024_table_p26_1:row24:col3', 'Fornari_2024_table_p26_1:row25:col3', 'Fornari_2024_table_p26_1:row26:col3', 'Fornari_2024_table_p26_1:row27:col3', 'Fornari_2024_table_p26_1:row28:col3', 'Fornari_2024_table_p26_1:row29:col3', 'Fornari_2024_table_p26_1:row30:col3', 'Fornari_2024_table_p26_1:row31:col3'])
+- dropped unlinked row (NIL): 'Adult RSE (%)' — extend the ontology if this is a real PK parameter (source ['Fornari_2024_table_p26_1:row0:col4', 'Fornari_2024_table_p26_1:row1:col4', 'Fornari_2024_table_p26_1:row5:col4', 'Fornari_2024_table_p26_1:row7:col4', 'Fornari_2024_table_p26_1:row9:col4', 'Fornari_2024_table_p26_1:row11:col4', 'Fornari_2024_table_p26_1:row12:col4', 'Fornari_2024_table_p26_1:row13:col4', 'Fornari_2024_table_p26_1:row14:col4', 'Fornari_2024_table_p26_1:row16:col4', 'Fornari_2024_table_p26_1:row17:col4', 'Fornari_2024_table_p26_1:row18:col4', 'Fornari_2024_table_p26_1:row22:col4', 'Fornari_2024_table_p26_1:row24:col4', 'Fornari_2024_table_p26_1:row26:col4', 'Fornari_2024_table_p26_1:row28:col4', 'Fornari_2024_table_p26_1:row29:col4', 'Fornari_2024_table_p26_1:row30:col4', 'Fornari_2024_table_p26_1:row31:col4'])
+- dropped unlinked row (NIL): 'Children Value' — extend the ontology if this is a real PK parameter (source ['Fornari_2024_table_p26_1:row0:col6', 'Fornari_2024_table_p26_1:row1:col6', 'Fornari_2024_table_p26_1:row2:col6', 'Fornari_2024_table_p26_1:row3:col6', 'Fornari_2024_table_p26_1:row4:col6', 'Fornari_2024_table_p26_1:row5:col6', 'Fornari_2024_table_p26_1:row6:col6', 'Fornari_2024_table_p26_1:row7:col6', 'Fornari_2024_table_p26_1:row8:col6', 'Fornari_2024_table_p26_1:row9:col6', 'Fornari_2024_table_p26_1:row10:col6', 'Fornari_2024_table_p26_1:row11:col6', 'Fornari_2024_table_p26_1:row12:col6', 'Fornari_2024_table_p26_1:row13:col6', 'Fornari_2024_table_p26_1:row14:col6', 'Fornari_2024_table_p26_1:row16:col6', 'Fornari_2024_table_p26_1:row17:col6', 'Fornari_2024_table_p26_1:row18:col6', 'Fornari_2024_table_p26_1:row19:col6', 'Fornari_2024_table_p26_1:row20:col6', 'Fornari_2024_table_p26_1:row21:col6', 'Fornari_2024_table_p26_1:row22:col6', 'Fornari_2024_table_p26_1:row23:col6', 'Fornari_2024_table_p26_1:row24:col6', 'Fornari_2024_table_p26_1:row25:col6', 'Fornari_2024_table_p26_1:row26:col6', 'Fornari_2024_table_p26_1:row27:col6', 'Fornari_2024_table_p26_1:row28:col6', 'Fornari_2024_table_p26_1:row29:col6', 'Fornari_2024_table_p26_1:row30:col6', 'Fornari_2024_table_p26_1:row31:col6'])
+- dropped unlinked row (NIL): 'Children RSE (%)' — extend the ontology if this is a real PK parameter (source ['Fornari_2024_table_p26_1:row0:col7', 'Fornari_2024_table_p26_1:row1:col7', 'Fornari_2024_table_p26_1:row5:col7', 'Fornari_2024_table_p26_1:row7:col7', 'Fornari_2024_table_p26_1:row9:col7', 'Fornari_2024_table_p26_1:row11:col7', 'Fornari_2024_table_p26_1:row12:col7', 'Fornari_2024_table_p26_1:row13:col7', 'Fornari_2024_table_p26_1:row14:col7', 'Fornari_2024_table_p26_1:row16:col7', 'Fornari_2024_table_p26_1:row17:col7', 'Fornari_2024_table_p26_1:row18:col7', 'Fornari_2024_table_p26_1:row22:col7', 'Fornari_2024_table_p26_1:row24:col7', 'Fornari_2024_table_p26_1:row26:col7', 'Fornari_2024_table_p26_1:row28:col7', 'Fornari_2024_table_p26_1:row29:col7', 'Fornari_2024_table_p26_1:row30:col7', 'Fornari_2024_table_p26_1:row31:col7'])
+- table mostly unlinked (4/4 table-cell rows NIL) — likely the wrong table was located, not 0 genuinely-missing ontology parameter(s); route_to_review instead of building a model from the residual linked cell(s)
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=vaborbactam
 - status held at route_to_review — not promoted
+- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
+- transposed table Fornari_2024_table_p26_1: logical view retains original source coordinates
 - LLM selected parameter table(s) 3
 
 ## Validation
@@ -103,20 +110,9 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_2:row4:col1', 'tab_2:row4:col2', 'tab_2:row4:col4', 'tab_2:row4:col5', 'tab_2:row28:col1', 'tab_2:row28:col2', 'tab_2:row28:col4', 'tab_2:row28:col5'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_2:row11:col1', 'tab_2:row11:col2', 'tab_2:row11:col4', 'tab_2:row11:col5', 'tab_2:row35:col1', 'tab_2:row35:col2', 'tab_2:row35:col4', 'tab_2:row35:col5'] |
-| C5_dimension_Q56 | pass | [time] | not captured | not captured | not captured | ['tab_2:row8:col4', 'tab_2:row32:col4'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_2:row9:col1', 'tab_2:row9:col2', 'tab_2:row9:col4', 'tab_2:row9:col5', 'tab_2:row33:col1', 'tab_2:row33:col2', 'tab_2:row33:col4', 'tab_2:row33:col5'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_2:row13:col1', 'tab_2:row13:col2', 'tab_2:row13:col4', 'tab_2:row13:col5', 'tab_2:row37:col1', 'tab_2:row37:col2', 'tab_2:row37:col4', 'tab_2:row37:col5'] |
-| C5_unit_missing_Q290 | fail | [length] ** 3 | not captured | not captured | not captured | ['tab_2:row10:col1', 'tab_2:row10:col4', 'tab_2:row34:col1', 'tab_2:row34:col4'] |
-| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
-| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none'] | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 9.84 L/h | not captured | not captured | ['tab_2:row4:col1', 'tab_2:row4:col2', 'tab_2:row4:col4', 'tab_2:row4:col5', 'tab_2:row28:col1', 'tab_2:row28:col2', 'tab_2:row28:col4', 'tab_2:row28:col5'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 14.4 L | not captured | not captured | ['tab_2:row9:col1', 'tab_2:row9:col2', 'tab_2:row9:col4', 'tab_2:row9:col5', 'tab_2:row33:col1', 'tab_2:row33:col2', 'tab_2:row33:col4', 'tab_2:row33:col5'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 2.56 L | not captured | not captured | ['tab_2:row13:col1', 'tab_2:row13:col2', 'tab_2:row13:col4', 'tab_2:row13:col5', 'tab_2:row37:col1', 'tab_2:row37:col2', 'tab_2:row37:col4', 'tab_2:row37:col5'] |
+| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
+| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
+| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -125,7 +121,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_vaborbactam/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Fornari_2024` / `Fornari_2024::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_vaborbactam/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Fornari_2024` / `Fornari_2024::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -141,4 +137,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 11:49 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 00:38 UTC</sub>

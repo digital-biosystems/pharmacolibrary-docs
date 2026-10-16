@@ -153,10 +153,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_semaglutide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Overgaard_2019` / `Overgaard_2019::two_compartment_final_model`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_semaglutide/models/modelica/Semaglutide_Overgaard2019_two_compartment_final_model.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_semaglutide/models/modelica/Semaglutide_Overgaard2019_two_compartment_final_model.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_semaglutide/models/modelica/Semaglutide_Overgaard2019_two_compartment_final_model.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_semaglutide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Overgaard_2019` / `Overgaard_2019::two_compartment_final_model`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_semaglutide/models/modelica/Semaglutide_Overgaard2019_two_compartment_final_model.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_semaglutide/models/modelica/Semaglutide_Overgaard2019_two_compartment_final_model.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_semaglutide/models/modelica/Semaglutide_Overgaard2019_two_compartment_final_model.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

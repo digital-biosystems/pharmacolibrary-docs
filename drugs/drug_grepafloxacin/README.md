@@ -26,19 +26,34 @@ Grepafloxacin is a fluoroquinolone antibiotic that was used to treat bacterial i
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 12:26 | 0:47 | 0/1/0 | 1/0/0 | 0/0/0 | 32,370/1,925 | einfracz / qwen3.8-27b | 1 | 1/0 | 1/0 | 0 |
+| 2026-10-14 23:10 | 0:54 | 0/1/0 | 0/0/0 | 0/0/0 | 33,118/3,188 | einfracz / qwen3.8-27b | 1 | 1/0 | 1/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.667). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Pfister_2003_reference](drugs/drug_grepafloxacin/Grepafloxacin_Pfister2003_reference.md) | — | 1-compartment (no model) | 1 | Pfister M et al., Modeling of transfer kinetics at the se…, Antimicrobial agents and ch… (2003) | [10.1128/AAC.47.1.138-143.2003](https://doi.org/10.1128/AAC.47.1.138-143.2003) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667), gpt-oss-120b (partly confirmed, agreement 0.667). Primary extraction retained.">cross-check: partial 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Pfister_2003_reference](drugs/drug_grepafloxacin/Grepafloxacin_Pfister2003_reference.md) | — | 2-compartment (no model) | 5 | Pfister M et al., Modeling of transfer kinetics at the se…, Antimicrobial agents and ch… (2003) | [10.1128/AAC.47.1.138-143.2003](https://doi.org/10.1128/AAC.47.1.138-143.2003) |
 
-## Pharmacodynamics (PD)
+## ADME sites
 
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Ernst_2002_survival_rate_at_72_hours](drugs/drug_grepafloxacin/pd_Ernst_2002_survival_rate_at_72_hours.md) | survival rate at 72 hours ← grepafloxacin · direct sigmoid Emax (Hill) effect | — | Ernst EJ et al., Evaluation of survival and pharmacodyna…, Pharmacotherapy (2002) | [10.1592/phco.22.7.463.33670](https://doi.org/10.1592/phco.22.7.463.33670) |
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=grepafloxacin).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` inhibitor/substrate, `SLC22A5` inhibitor | DrugBank actor |
+| absorption | liver | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | skeletal muscle | `SLC22A5` inhibitor | DrugBank actor |
+| absorption | small intestine | `ABCB1` inhibitor/substrate, `SLC22A5` inhibitor | DrugBank actor |
+| absorption | testis | `ABCB1` inhibitor/substrate | DrugBank actor |
+| distribution | blood-brain barrier | `ABCC1` substrate | DrugBank actor |
+| distribution | lung | `ABCC1` substrate | DrugBank actor |
+| metabolism | liver | `CYP1A2` inhibitor/substrate, `CYP3A4` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+| excretion | kidney | `ABCC2` inhibitor, `SLC22A2` inhibitor, `SLC22A6` substrate | DrugBank actor |
+| excretion | liver | `ABCC2` inhibitor | DrugBank actor |
+| excretion | small intestine | `ABCC2` inhibitor | DrugBank actor |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -59,20 +74,20 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Forrest_1997.pdf` | Forrest A et al., Pharmacokinetics and pharmacodynamics o…, The Journal of antimicrobia… (1997) | popPK | 8 | [10.1093/jac/40.suppl_1.45](https://doi.org/10.1093/jac/40.suppl_1.45) | [9484873](https://pubmed.ncbi.nlm.nih.gov/9484873) | The paper describes a population PK study for grepafloxacin in humans, but the evidence provided contains only qualitative model descriptions and AUIC ranges without explicit numeric parameter values like clearance or volume of distribution. |
+| `Forrest_1997.pdf` | Forrest A et al., Pharmacokinetics and pharmacodynamics o…, The Journal of antimicrobia… (1997) | popPK | 10 | [10.1093/jac/40.suppl_1.45](https://doi.org/10.1093/jac/40.suppl_1.45) | [9484873](https://pubmed.ncbi.nlm.nih.gov/9484873) | The paper is a population PK/PD study of grepafloxacin in humans, but specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text, likely residing in the full text or tables. |
 
-<sub>queue written 2026-10-07T12:25:43.276833+00:00</sub>
+<sub>queue written 2026-10-14T23:09:56.225754+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Bischoff_2000 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology experiment measuring HERG channel inhibition, not a pharmacokinetic study. |
-| popPK | Ernst_2002 | irrelevant | 1 | 0 | This is a pharmacodynamic efficacy study in mice that measures survival and AUC:MIC ratios rather than reporting quantitative disposition parameters (CL, V, ka) for grepafloxacin. |
-| popPK | Esposito_2000 | irrelevant | 0 | 0 | The paper is an in vitro pharmacodynamic study comparing bactericidal activity, not a pharmacokinetic study reporting quantitative disposition parameters. |
-| popPK | Forrest_1997 | relevant | 8 | 3 | The paper describes a population PK study for grepafloxacin in humans, but the evidence provided contains only qualitative model descriptions and AUIC ranges without explicit numeric parameter values like clearance or volume of distribution. |
-| popPK | Hirano_2006 | irrelevant | 0 | 0 | The study focuses on in-vitro transport mechanisms and inhibition of carnitine uptake by grepafloxacin, not pharmacokinetic disposition parameters. |
-| popPK | Meinl_2000 | irrelevant | 0 | 0 | This is a clinical outcome study analyzing Pharmacokinetic/Pharmacodynamic (PK/PD) predictors (specifically AUIC) rather than a study reporting population pharmacokinetic parameter estimates (CL, V, ka, etc.) for grepafloxacin. |
+| popPK | Bischoff_2000 | irrelevant | 0 | 0 | The study investigates the effects of fluoroquinolones on HERG currents in CHO cells and reports electrophysiological parameters (EC50), not pharmacokinetic disposition parameters like clearance or volume. |
+| popPK | Ernst_2002 | irrelevant | 1 | 1 | The study is a pharmacodynamic evaluation of efficacy (surival rates and AUC:MIC ratios) rather than a report of quantitative pharmacokinetic disposition parameters (CL, V, etc.), and no specific PK numeric values for grepafloxacin are provided. |
+| popPK | Esposito_2000 | irrelevant | 0 | 0 | The study is an in vitro pharmacodynamic model comparing bactericidal activity, not a pharmacokinetic study reporting quantitative disposition parameters. |
+| popPK | Forrest_1997 | relevant | 10 | 2 | The paper is a population PK/PD study of grepafloxacin in humans, but specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text, likely residing in the full text or tables. |
+| popPK | Hirano_2006 | irrelevant | 0 | 0 | This is an in-vitro mechanistic study investigating drug-transporter interactions (OCTN2) in Caco-2 cells, not a pharmacokinetic study reporting disposition parameters for grepafloxacin. |
+| popPK | Meinl_2000 | irrelevant | 3 | 0 | The study focuses on PK/PD predictors of clinical outcome (AUIC/MIC ratios) rather than reporting quantitative population pharmacokinetic parameters (CL, V, ka) for grepafloxacin. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 12:25 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-14 23:09 UTC</sub>

@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06D&quot;,&quot;href&quot;:&quot;atc/N06D.md&quot;},{&quot;label&quot;:&quot;aducanumab&quot;,&quot;href&quot;:&quot;drugs/drug_aducanumab/&quot;},{&quot;label&quot;:&quot;Kandadi_2022 \u00b7 PD composite standard uptake value ratio (SUVR)&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06D&quot;,&quot;href&quot;:&quot;atc/N06D.md&quot;},{&quot;label&quot;:&quot;aducanumab&quot;,&quot;href&quot;:&quot;drugs/drug_aducanumab/&quot;},{&quot;label&quot;:&quot;Kandadi_2022 \u00b7 PD composite SUVR&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# composite standard uptake value ratio (SUVR) — PD  <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.778). Primary extraction retained.">cross-check: disputed</span>
+# composite SUVR — PD  <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.875). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -13,13 +13,13 @@
 
 ## Record summary
 
-**As extracted:** Aducanumab (concentrations from this paper's PK model) drives composite standard uptake value ratio (SUVR): indirect response — drug stimulates the loss of composite standard uptake value ratio (SUVR).
+**As extracted:** Aducanumab (concentrations from this paper's PK model) drives composite SUVR: indirect response — drug stimulates the loss of composite SUVR.
 
 **Model:** No model was generated from this record.
 
-> Aducanumab serum concentrations (mg/L) reduce composite SUVR via an indirect response model in which the drug stimulates the elimination rate of SUVR (Emax = 0.702, i.e. 70.2% maximum induction of SUVR elimination; EC50 = 46.4 mg/L; no Hill coefficient, as it failed to converge). Baseline SUVR was 1.40 and Kout was 8.51E−05 1/h, with body weight on Kout (0.414) and age on baseline (0.101) as covariates.
+> Aducanumab serum concentrations stimulate the elimination rate of composite SUVR via an indirect response model with an Emax of 0.702 and an EC50 of 46.4 mg/L. The baseline SUVR was 1.40, and the first-order elimination rate constant (Kout) was 8.51 × 10^-5 1/h.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Kandadi_2022`
 - **model family:** `indirect_response_iv`
@@ -34,18 +34,10 @@ Kandadi Muralidharan K et al., Population pharmacokinetics and standar…, CPT: 
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | Baseline SUVR | `Q324` · not captured | 1.40 | not captured | not captured | llm (not captured) | Kandadi_2022:pdv3 |
+| PD (effect) | BL | `Q324` · not captured | 1.40 | not captured | not captured | llm (not captured) | Kandadi_2022:pdv3 |
 | PD (effect) | K out | `Q328` · not captured | 8.51 E−05 | 1/h | not captured | llm (not captured) | Kandadi_2022:pdv3 |
 | PD (effect) | Emax | `Q320` · not captured | 0.702 | not captured | not captured | llm (not captured) | Kandadi_2022:pdv3 |
 | PD (effect) | EC50 | `Q321` · not captured | 46.4 | mg/L | not captured | llm (not captured) | Kandadi_2022:pdv3 |
-| model term | WT on K out | `Q900` · not captured | 0.414 | not captured | not captured | llm (not captured) | Kandadi_2022:pdv3 |
-| model term | Age on BL | `Q900` · not captured | 0.101 | not captured | not captured | llm (not captured) | Kandadi_2022:pdv3 |
-| model term | Noncarrier on BL | `Q900` · not captured | −0.0404 | not captured | not captured | llm (not captured) | Kandadi_2022:pdv3 |
-| model term | Carrier (2 copies) on BL | `Q900` · not captured | 0.00896 | not captured | not captured | llm (not captured) | Kandadi_2022:pdv3 |
-| model term | MMSEBL on BL | `Q900` · not captured | −0.186 | not captured | not captured | llm (not captured) | Kandadi_2022:pdv3 |
-| variability | K out IIV | `Q312` · not captured | 44.2 | % CV | not captured | llm (not captured) | Kandadi_2022:pdv3 |
-| variability | Emax IIV | `Q312` · not captured | 25.3 | % CV | not captured | llm (not captured) | Kandadi_2022:pdv3 |
-| variability | EC50 IIV | `Q312` · not captured | 84.1 | % CV | not captured | llm (not captured) | Kandadi_2022:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -54,18 +46,17 @@ Kandadi Muralidharan K et al., Population pharmacokinetics and standar…, CPT: 
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `einfracz:gpt-oss-120b` | not confirmed | 0.778 (7/9 fields) | 2 |
+| `einfracz:gpt-oss-120b` | not confirmed | 0.875 (7/8 fields) | 1 |
 
-<details><summary>2 field discrepancies</summary>
+<details><summary>1 field discrepancy</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `einfracz:gpt-oss-120b` | `parameters[Q328].value` | 8.51 E−05 | 8.51E-05 | mismatch |
-| `einfracz:gpt-oss-120b` | `parameters[Q900]` | −0.186 | not captured | only_one_extracted |
 
 </details>
 

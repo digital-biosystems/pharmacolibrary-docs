@@ -17,9 +17,9 @@
 
 **Model:** No model was generated from this record.
 
-> Flunisolide concentrations are linked to cumulative suppression of endogenous cortisol release (CCS) via an Emax-type inhibitory model, but the paper excerpts provide no details on the mechanism, effect form, or potency/rate parameters (no Imax, IC50, EC50, Emax, kin, kout, or ke0 values are stated).
+> The paper excerpts are unavailable, so it is impossible to confirm the mechanism or provide key potency and rate values for the flunisolide-mediated inhibition of cumulative suppression of endogenous cortisol release.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Derendorf_2000`
 - **model family:** `emax`

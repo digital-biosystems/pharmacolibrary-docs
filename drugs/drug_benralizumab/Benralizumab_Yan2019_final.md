@@ -5,7 +5,7 @@
 
 # benralizumab — `Benralizumab_Yan2019_final`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.722). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.571). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -23,7 +23,7 @@
 
 Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. The base model was simulated, not the covariate effects the record defines. A reported unit could not be converted (Fab and Frel), so that value has no SI equivalent. Extracted — benralizumab: CL 0.291 L/day, V1 3.13 L, Q 0.738 L/day, V2 2.52 L, t1/2ka 3.54 days, Fab 0.589 Model 9, Frel 0.49 Model 9.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of adas on cl, fraction: this record has none, the second reading 2.24; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has benralizumab, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -94,17 +94,21 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.722 (13/18 fields) | 5 |
+| `gpt-oss-120b` | not confirmed | 0.571 (12/21 fields) | 9 |
 
-<details><summary>5 field discrepancies</summary>
+<details><summary>9 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[adas on cl, fraction]` | not captured | 2.24 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[cl].covariate_forms` | [] | ['power'] | mismatch |
+| `gpt-oss-120b` | `parameters[q].covariate_forms` | [] | ['power'] | mismatch |
 | `gpt-oss-120b` | `parameters[theta_cl_body_weight_power]` | not captured | 0.807 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta_v2_body_weight_power]` | 0.528 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[vp].covariate_forms` | ['power'] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[theta_q319_body_weight_power]` | 0.807 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q_body_weight_power]` | not captured | 0 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_v1_body_weight_power]` | not captured | 0.803 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc].covariate_forms` | [] | ['power'] | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | benralizumab | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | benralizumab | unknown | mismatch |
 
 </details>
 
@@ -153,10 +157,10 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_benralizumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Yan_2019` / `Yan_2019::final`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_benralizumab/models/modelica/Benralizumab_Yan2019_final.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_benralizumab/models/modelica/Benralizumab_Yan2019_final.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_benralizumab/models/modelica/Benralizumab_Yan2019_final.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_benralizumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Yan_2019` / `Yan_2019::final`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_benralizumab/models/modelica/Benralizumab_Yan2019_final.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_benralizumab/models/modelica/Benralizumab_Yan2019_final.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_benralizumab/models/modelica/Benralizumab_Yan2019_final.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -174,7 +178,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_benralizumab/Benralizumab_Yan2019_final/Benralizumab_Yan2019_final.svg" alt="Benralizumab_Yan2019_final diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_benralizumab/Benralizumab_Yan2019_final/Benralizumab_Yan2019_final.svg" alt="Benralizumab_Yan2019_final diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

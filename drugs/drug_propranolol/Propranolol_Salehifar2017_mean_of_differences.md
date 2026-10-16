@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;propranolol&quot;,&quot;href&quot;:&quot;drugs/drug_propranolol/&quot;},{&quot;label&quot;:&quot;Salehifar_2017 \u00b7 mean_of_differences&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Propranolol_Takechi2018_reference&quot;,&quot;label&quot;:&quot;Takechi_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_propranolol/Propranolol_Takechi2018_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Propranolol_Salehifar2017_mean_of_differences&quot;,&quot;label&quot;:&quot;Salehifar_2017_mean_of_differences&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_propranolol/Propranolol_Salehifar2017_mean_of_differences.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Propranolol_Salehifar2017_other_sources&quot;,&quot;label&quot;:&quot;Salehifar_2017_other_sources&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_propranolol/Propranolol_Salehifar2017_other_sources.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Propranolol_Salehifar2017_this_study&quot;,&quot;label&quot;:&quot;Salehifar_2017_this_study&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_propranolol/Propranolol_Salehifar2017_this_study.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Propranolol_Takechi2018_estimate_rse&quot;,&quot;label&quot;:&quot;Takechi_2018_estimate_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_propranolol/Propranolol_Takechi2018_estimate_rse.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Propranolol_Takechi2018_original_data_estimate_rse&quot;,&quot;label&quot;:&quot;Takechi_2018_original_data_estimate_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_propranolol/Propranolol_Takechi2018_original_data_estimate_rse.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # propranolol — `Propranolol_Salehifar2017_mean_of_differences`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓ 2/2</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓ 2/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -13,7 +13,7 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 ### Reviewer guidance
 
@@ -23,25 +23,21 @@ Independently confirmed by `gpt-oss-120b`, `gpt-oss:120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-29 08:52:10.563388+00:00) predates the upstream re-run (2026-10-07 15:15:02.487440+00:00). Current validate status: `needs_review`.
-
 ## Citation
 Salehifar E et al., Pharmacokinetic Parameters and Over-Res…, Advanced pharmaceutical bul… (2017)
   ·  DOI: [10.15171/apb.2017.024](https://doi.org/10.15171/apb.2017.024)
 
-<div class="pk-model-meta" hidden drug="propranolol" model-id="Propranolol_Salehifar2017_mean_of_differences" status="needs_review" stale="true" population="healthy Iranian adults" measured-compound="propranolol" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="propranolol" model-id="Propranolol_Salehifar2017_mean_of_differences" status="curated_candidate" stale="false" population="healthy adults" measured-compound="propranolol" parameterization="mechanistic" topology="1C"></div>
 
-**Model structure:** 1-compartment; no model was built for this record.  
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Cl (Lit/kg/hr) | `Q22` · CL | +1.01 | L/h/kg | 1.963888888888889e-05 | L/h | not captured | exact (1.0) | Salehifar_2017_table_4:row0:col3 | — | not captured |
+| Cl (Lit/kg/hr) | `Q22` · CL | +1.01 | L/kg/h | 1.963888888888889e-05 | L/h | not captured | exact (1.0) | Salehifar_2017_table_4:row0:col3 | — | not captured |
 | Vd (Lit/kg) | `Q61` · V | +0.82 | L/kg | 0.0574 | L | not captured | exact (1.0) | Salehifar_2017_table_4:row1:col3 | — | not captured |
 | t 1/2 (hr) | `Q57` · t1/2z | -1.41 | hr | -5076.0 | [h] | not captured | space_fold (0.95) | Salehifar_2017_table_4:row2:col3 | — | not captured |
 
@@ -55,21 +51,19 @@ Salehifar E et al., Pharmacokinetic Parameters and Over-Res…, Advanced pharmac
 **Interpretation flags:**
 - unit_dimension_unknown: 'Lit/kg/hr' (CL)
 - unit_dimension_unknown: 'Lit/kg' (V)
-- implicit units: 'Cl (Lit/kg/hr)' → L/h/kg (from the paper text: "Table 4 column header states 'Cl (Lit/kg/hr)'")
-- implicit units: 'Vd (Lit/kg)' → L/kg (from the paper text: "Table 4 column header states 'Vd (Lit/kg)'")
+- implicit units: 'Cl (Lit/kg/hr)' → L/kg/h (from the paper text: "Table 4 lists the parameter as 'Cl (Lit/kg/hr)' and the footnote states 'CL: clearance'.")
+- implicit units: 'Vd (Lit/kg)' → L/kg (from the paper text: "Table 4 lists the parameter as 'Vd (Lit/kg)' and the footnote states 'Vd: volume of distribution'.")
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=propranolol
-- population split: 'mean of differences' subgroup of Salehifar_2017 (paper reports 4 populations: female (n=10), male (n=10), mean of differences, this study)
+- population split: 'mean of differences' subgroup of Salehifar_2017 (paper reports 5 populations: female (n=10), male (n=10), mean of differences, other sources, this study)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- unparsed cell Salehifar_2017_table_4:row0:col4 = '0.59 to 1.44'
-- unparsed cell Salehifar_2017_table_4:row0:col5 = '&lt;0.001'
-- unparsed cell Salehifar_2017_table_4:row1:col4 = '0.24 to 1.87\u200f-'
-- unparsed cell Salehifar_2017_table_4:row2:col4 = '-1.79 to -1.05'
-- unparsed cell Salehifar_2017_table_4:row2:col5 = '&lt;0.001'
+- table T2: ragged_grid
+- table T2: representations disagree; selected evidence retained, not merged
+- table Salehifar_2017_table_4: unparsed_numeric_cell
 - companion parameter table 4 transcribed (10 record(s))
-- LLM selected parameter table(s) 4
+- LLM selected parameter table(s) 2, 4
 
 ## Validation
 
@@ -96,7 +90,6 @@ _All readers agree on the compared fields of this record._
 | C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C1_half_life_beta | fail | 32.5 | 0.563 | 0.0173 | 0.25 | reported t½β |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Salehifar_2017_table_4:row0:col3'] |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Salehifar_2017_table_4:row2:col3'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Salehifar_2017_table_4:row1:col3'] |
@@ -116,8 +109,12 @@ _All readers agree on the compared fields of this record._
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
 | T1_t_half_alpha | reference | skipped | not captured | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_alpha | reference | skipped | not captured | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_beta | reference | skipped | not captured | 0.3875090408138708 | not captured | non-numeric value |
 | T1_t_half_beta | reference | skipped | not captured | 0.3875090408138708 | not captured | non-numeric value |
 | T1_t_half_terminal | reference | skipped | not captured | 0.3875090408138708 | not captured | non-numeric value |
+| T1_t_half_terminal | reference | skipped | not captured | 0.3875090408138708 | not captured | non-numeric value |
+| T1_tmax | reference | skipped | not captured | 0.18333333335172575 | not captured | non-numeric value |
 | T1_tmax | reference | skipped | not captured | 0.18333333335172575 | not captured | non-numeric value |
 
 <details class="legend">
@@ -127,10 +124,10 @@ _All readers agree on the compared fields of this record._
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_propranolol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Salehifar_2017` / `Salehifar_2017::mean_of_differences`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_propranolol/models/modelica/Propranolol_Salehifar2017_mean_of_differences.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_propranolol/models/modelica/Propranolol_Salehifar2017_mean_of_differences.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_propranolol/models/modelica/Propranolol_Salehifar2017_mean_of_differences.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_propranolol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Salehifar_2017` / `Salehifar_2017::mean_of_differences`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_propranolol/models/modelica/Propranolol_Salehifar2017_mean_of_differences.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_propranolol/models/modelica/Propranolol_Salehifar2017_mean_of_differences.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_propranolol/models/modelica/Propranolol_Salehifar2017_mean_of_differences.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -140,20 +137,25 @@ _All readers agree on the compared fields of this record._
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_propranolol/Propranolol_Salehifar2017_mean_of_differences/Propranolol_Salehifar2017_mean_of_differences_modelica.zip" download>Propranolol_Salehifar2017_mean_of_differences_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><a href="drugs/drug_propranolol/Propranolol_Salehifar2017_mean_of_differences/Propranolol_Salehifar2017_mean_of_differences_fmi.zip" download>Propranolol_Salehifar2017_mean_of_differences_fmi.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_propranolol/Propranolol_Salehifar2017_mean_of_differences/Propranolol_Salehifar2017_mean_of_differences_fmi.zip" download>Propranolol_Salehifar2017_mean_of_differences_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_propranolol/Propranolol_Salehifar2017_mean_of_differences/Propranolol_Salehifar2017_mean_of_differences_matlab.zip" download>Propranolol_Salehifar2017_mean_of_differences_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_propranolol/Propranolol_Salehifar2017_mean_of_differences/Propranolol_Salehifar2017_mean_of_differences_matlab_simbio.zip" download>Propranolol_Salehifar2017_mean_of_differences_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_propranolol/Propranolol_Salehifar2017_mean_of_differences/Propranolol_Salehifar2017_mean_of_differences_matlab_simbio.zip" download>Propranolol_Salehifar2017_mean_of_differences_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_propranolol/Propranolol_Salehifar2017_mean_of_differences/Propranolol_Salehifar2017_mean_of_differences_sbml.zip" download>Propranolol_Salehifar2017_mean_of_differences_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_propranolol/Propranolol_Salehifar2017_mean_of_differences/Propranolol_Salehifar2017_mean_of_differences_cellml.zip" download>Propranolol_Salehifar2017_mean_of_differences_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
-</div></div>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_propranolol/Propranolol_Salehifar2017_mean_of_differences/Propranolol_Salehifar2017_mean_of_differences.svg" alt="Propranolol_Salehifar2017_mean_of_differences diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+**Administration: intravenous** — 40 mg infusion over 10 min, single dose. Dose in the paper: 40 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_propranolol/Propranolol_Salehifar2017_mean_of_differences/Propranolol_Salehifar2017_mean_of_differences_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_propranolol/Propranolol_Salehifar2017_mean_of_differences/Propranolol_Salehifar2017_mean_of_differences_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C` · parameters `Propranolol_Salehifar2017_mean_of_differences_params.json` · controls `Propranolol_Salehifar2017_mean_of_differences_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 15:15 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 03:37 UTC</sub>

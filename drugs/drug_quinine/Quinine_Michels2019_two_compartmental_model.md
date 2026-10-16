@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;quinine&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/&quot;},{&quot;label&quot;:&quot;Michels_2019 \u00b7 two_compartmental_model&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Quinine_Hendriksen2013_reference&quot;,&quot;label&quot;:&quot;Hendriksen_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Hendriksen2013_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quinine_Kloprogge2014_reference&quot;,&quot;label&quot;:&quot;Kloprogge_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Kloprogge2014_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quinine_Phillips1986_reference&quot;,&quot;label&quot;:&quot;Phillips_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Phillips1986_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Quinine_Hendriksen2013_reference&quot;,&quot;label&quot;:&quot;Hendriksen_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Hendriksen2013_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quinine_Phillips1986_mean_s_d&quot;,&quot;label&quot;:&quot;Phillips_1986_mean_s_d&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Phillips1986_mean_s_d.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quinine_Kloprogge2014_reference&quot;,&quot;label&quot;:&quot;Kloprogge_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Kloprogge2014_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quinine_Michels2019_estimate&quot;,&quot;label&quot;:&quot;Michels_2019_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Michels2019_estimate.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Maciel_2024_P_berghei_infected_erythrocytes&quot;,&quot;label&quot;:&quot;Maciel_2024 \u00b7 P. berghei-infected erythrocytes&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/pd_Maciel_2024_P_berghei_infected_erythrocytes.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Pukrittayakamee_2003_PMR&quot;,&quot;label&quot;:&quot;Pukrittayakamee_2003 \u00b7 PMR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/pd_Pukrittayakamee_2003_PMR.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -19,19 +19,19 @@
 
 ### Reviewer guidance
 
-**The quinine steady-state volume of distribution, 0.183 mL/kg, is physiologically implausible, indicating a unit/scale extraction error, so the record was rejected.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-For quinine in P. berghei-infected Wistar rats, the reported Vdss of 0.183 mL/kg falls far outside any plausible physiological range for a volume of distribution, while the other parameters (AUC∞ 32.13 µg·h/mL, CL 0.09 L/h, t½ 1.76 h, kel 0.39 h−1) were extracted. The reported unit mL/kg could not be converted to SI, so the volume parameter reached the model build without an SI value, and the implausible magnitude points to a unit or scale extraction error. Extracted — quinine: AUC∞ 32.1 µg.h/mL, CL 0.09 L/h, t1/2z 1.76 h, kel 0.39 h−1, Vss 0.183 mL/kg.
+A reported unit could not be converted (AUC∞), so that value has no SI equivalent. Extracted — quinine: AUC∞ 32.1 µg.h/mL, CL 0.09 L/h, t1/2z 1.76 h, kel 0.39 h−1, Vss 0.183 mL/kg.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by glm-5.3-flash</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Michels LR et al., Effects of Surface Characteristics of P…, International journal of na… (2019)
   ·  DOI: [10.2147/IJN.S227914](https://doi.org/10.2147/IJN.S227914)
 
-<div class="pk-model-meta" hidden drug="quinine" model-id="Quinine_Michels2019_two_compartmental_model" status="rejected" stale="false" population="P. berghei-infected Wistar rats" measured-compound="quinine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="quinine" model-id="Quinine_Michels2019_two_compartmental_model" status="rejected" stale="false" population="rats" measured-compound="quinine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.
@@ -57,23 +57,14 @@ Michels LR et al., Effects of Surface Characteristics of P…, International jou
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped value-less row: 'Table 4. Parameter Estimates of the Final Quinine Population Pharmacokinetic Model'
-- dropped value-less row: 'Abbreviations: NA, not applicable; RSE, relative standard error (standard error of estimate/estimate × 100); V1, central volume compartment; V2, peripheral compartment volume; Q, intercompartmental clearance.'
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=quinine
 - population split: 'two-compartmental model' subgroup of Michels_2019 (paper reports 3 populations: estimate, non-compartmental, two-compartmental model)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- unparsed cell Michels_2019_table_3:row3:col2 = '156.4 ± 65.7a'
-- unparsed cell Michels_2019_table_3:row5:col2 = '16.14 ± 13.21a'
-- unparsed cell Michels_2019_table_3:row5:col3 = '7.11 ± 3.90a'
-- unparsed cell Michels_2019_table_3:row6:col2 = '0.07 ± 0.04a,b'
-- unparsed cell Michels_2019_table_3:row6:col3 = '0.14 ± 0.10a,b'
-- unparsed cell Michels_2019_table_3:row7:col2 = '6.20 ± 2.46a,b'
-- unparsed cell Michels_2019_table_3:row7:col3 = '1.48 ± 0.62b'
-- unparsed cell Michels_2019_table_3:row8:col2 = '0.570 ± 0.418a,b'
-- unparsed cell Michels_2019_table_3:row8:col3 = '0.077 ± 0.011a,b'
+- table Michels_2019_table_3: missing_label
+- table Michels_2019_table_3: unparsed_numeric_cell
 - companion parameter table 3 transcribed (30 record(s))
 - LLM selected parameter table(s) 3, 4
 
@@ -101,7 +92,7 @@ _All readers agree on the compared fields of this record._
 | C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q17 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Michels_2019_table_3:row2:col4', 'Michels_2019_table_3:row2:col5', 'Michels_2019_table_3:row2:col6'] |
+| C5_dimension_Q17 | pass | [time] * [mass] / [length] ** 3 | not captured | not captured | not captured | ['Michels_2019_table_3:row2:col4', 'Michels_2019_table_3:row2:col5', 'Michels_2019_table_3:row2:col6'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Michels_2019_table_3:row4:col4', 'Michels_2019_table_3:row4:col5', 'Michels_2019_table_3:row4:col6'] |
 | C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['Michels_2019_table_3:row6:col4', 'Michels_2019_table_3:row6:col5', 'Michels_2019_table_3:row6:col6'] |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Michels_2019_table_3:row5:col4', 'Michels_2019_table_3:row5:col5', 'Michels_2019_table_3:row5:col6'] |
@@ -118,7 +109,7 @@ _All readers agree on the compared fields of this record._
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_quinine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Michels_2019` / `Michels_2019::two_compartmental_model`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_quinine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Michels_2019` / `Michels_2019::two_compartmental_model`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -134,4 +125,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 08:37 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 03:33 UTC</sub>

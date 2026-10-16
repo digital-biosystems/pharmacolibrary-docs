@@ -13,19 +13,19 @@
 
 ## Record summary
 
-**As extracted:** Serum erythropoietin drives reticulocyte haematocrit: direct sigmoid Emax (Hill) effect.
+**As extracted:** Serum erythropoietin drives reticulocyte haematocrit: delayed effect through an effect compartment.
 
 **Model:** No model was generated from this record.
 
-> The paper describes a sigmoid Emax model where serum erythropoietin stimulates reticulocyte haematocrit, but the full text is unavailable to confirm the specific mechanism or potency values. The only parameter provided is a half-life of 2 days for the effect.
+> The model describes serum erythropoietin stimulating reticulocyte haematocrit (RetHct) via an effect compartment mechanism, although no full text is available to verify this derivation. The only parameter explicitly provided in the record is a value of 2 days, though the full text required to confirm the specific mechanism and other potency parameters (e.g., IC50, Emax) is absent.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Gaudard_2003`
-- **model family:** `sigmoid_emax`
+- **model family:** `effect_compartment`
 - **driver:** `not_resolved`
 - **tier:** population
-- **effect:** stimulation/unknown
+- **effect:** stimulation/proportional
 
 ## Citation
 Gaudard A et al., Pharmacokinetic-pharmacodynamic modelli…, Clinical drug investigation (2003)
@@ -34,7 +34,7 @@ Gaudard A et al., Pharmacokinetic-pharmacodynamic modelli…, Clinical drug inve
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | t1/2 k(0) | `Q326` · not captured | 2 | days | not captured | llm (not captured) | Gaudard_2003:pdv3 |
+| PD (effect) | k(0) | `Q326` · not captured | 2 | days | not captured | llm (not captured) | Gaudard_2003:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>

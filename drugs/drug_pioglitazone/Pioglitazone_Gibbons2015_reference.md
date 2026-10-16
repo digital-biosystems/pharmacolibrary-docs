@@ -4,7 +4,7 @@
 
 # pioglitazone — `Pioglitazone_Gibbons2015_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143), gpt-oss:120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -19,8 +19,6 @@
 **The record was rejected because the carboxylic acid metabolite of enzalutamide is unreachable from the dose — it shares a single formation clearance with N-desmethyl enzalutamide, leaving no computable metabolic path — and the reported units (μg/mL, μg·h/mL) could not be converted to SI.**
 
 The model claims pioglitazone as the drug while the measured compound and all parameters (AUC∞ 30.0 ng·h/mL, Cmax 9.45 ng/mL, Ctrough 12.0 μg/mL, AUCτ 322 μg·h/mL, CL/F 0.52 L/h) belong to enzalutamide, and the second reader instead read the parent as 'enalutamide' with pioglitazone metabolite links. Both enzalutamide metabolites are formed in the central compartment with zero compartments and share the same formation clearance, so the carboxylic acid metabolite is unreachable from the dose. The units μg/mL and μg·h/mL for Ctrough and AUCτ could not be converted to SI, so those parameters reached the record without SI values. Extracted — pioglitazone: AUC∞ 30 ng·h/mL, Cmax 9.45 ng/mL, Ctrough 12 μg/mL, AUCt 322 μg·h/mL, CL/F 0.52 L/h.
-
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has enzalutamide, the second reading pioglitazone; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -93,43 +91,6 @@ Gibbons JA et al., Pharmacokinetic Drug Interaction Studie…, Clinical pharmaco
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
-Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
-
-| second reader | verdict | agreement | disagreements |
-|---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.143 (2/14 fields) | 12 |
-| `gpt-oss:120b` | not confirmed | 0.6 (6/10 fields) | 4 |
-
-<details><summary>16 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `model.links` | [['enzalutamide', 'n-desmethyl enzalutamide', 'metabolism'], ['enzalutamide', 'carboxylic acid metabolite', 'metabolism'], ['n-desmethyl enzalutamide', 'carboxylic acid metabolite', 'metabolism']] | [['enzalutamide', 'n-desmethyl enzalutamide', 'metabolism'], ['enzalutamide', 'carboxylic acid metabolite', 'metabolism'], ['n-desmethyl enzalutamide', 'carboxylic acid metabolite', 'metabolism'], ['pioglitazone', 'hydroxy-pioglitazone', 'metabolism'], ['omeprazole', '5-hydroxy-omeprazole', 'metabolism'], ['midazolam', '1-hydroxy-midazolam', 'metabolism']] | mismatch |
-| `gpt-oss-120b` | `parameters[aucinf]` | 30.0 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[aucinf]` | not captured | 9.19 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[aucτ (ug h/ml)a]` | 322 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[aucτ (ug h/ml)a]` | not captured | 322 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[c max]` | 9.45 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[c max]` | not captured | 3.22 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[c trough (ug/ml)a]` | 12.0 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[c trough (ug/ml)a]` | not captured | 12.0 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cl/f (l/h)a]` | 0.52 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cl/f (l/h)a]` | not captured | 0.52 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | enzalutamide | pioglitazone | mismatch |
-| `gpt-oss:120b` | `model.links` | [['enzalutamide', 'n-desmethyl enzalutamide', 'metabolism'], ['enzalutamide', 'carboxylic acid metabolite', 'metabolism'], ['n-desmethyl enzalutamide', 'carboxylic acid metabolite', 'metabolism']] | [['enalutamide', 'n-desmethyl enzalutamide', 'metabolism'], ['enalutamide', 'carboxylic acid metabolite', 'metabolism'], ['pioglitazone', 'hydroxy-pioglitazone', 'metabolism']] | mismatch |
-| `gpt-oss:120b` | `parameters[aucτ (ug h/ml)a].parameter_id` | Q19 | Q88 | mismatch |
-| `gpt-oss:120b` | `screen.dose_compound` | enzalutamide | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | enzalutamide | unknown | mismatch |
-
-</details>
-
-<details class="legend">
-<summary>Cross-check definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
-</details>
-
-
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
@@ -153,7 +114,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_pioglitazone/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Gibbons_2015` / `Gibbons_2015::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_pioglitazone/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Gibbons_2015` / `Gibbons_2015::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

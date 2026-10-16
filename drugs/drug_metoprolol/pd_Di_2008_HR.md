@@ -19,9 +19,9 @@
 
 **Model:** No model was generated from this record.
 
-> The model describes the inhibitory effect of metoprolol plasma concentrations (ng/mL) on heart rate using an effect compartment framework, with reported IC50 values of 123 ng/mL and 216 ng/mL. The specific mechanism of action and other kinetic parameters are not detailed in the available excerpts.
+> The paper does not describe the mechanism or effect form for the relationship between metoprolol concentrations and heart rate. The record identifies an effect-compartment model with inhibition, citing two IC50 values of 123 +/- 15 ng/mL and 216 +/- 36 ng/mL, but no kinetic parameters (ke0, kin, kout) are provided.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Di_2008`
 - **model family:** `effect_compartment`
@@ -36,8 +36,8 @@ Di Verniero CA et al., In vitro and in vivo pharmacodynamic pr…, Journal of ca
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | IC50 | `Q322` · not captured | 123 | ng/mL | not captured | llm (not captured) | Di_2008:pdv3 |
-| PD (effect) | IC50 | `Q322` · not captured | 216 | ng/mL | not captured | llm (not captured) | Di_2008:pdv3 |
+| PD (effect) | IC50 | `Q322` · not captured | 123 +/- 15 | ng/mL | not captured | llm (not captured) | Di_2008:pdv3 |
+| PD (effect) | IC50 | `Q322` · not captured | 216 +/- 36 | ng/mL | not captured | llm (not captured) | Di_2008:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>

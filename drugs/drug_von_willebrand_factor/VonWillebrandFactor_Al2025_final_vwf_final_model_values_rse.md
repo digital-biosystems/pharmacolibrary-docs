@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;von Willebrand factor&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/&quot;},{&quot;label&quot;:&quot;Al_2025 \u00b7 final_vwf_final_model_values_rse_shrinkage&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;VonWillebrandFactor_Schning2026_reference&quot;,&quot;label&quot;:&quot;Sch\u00f6ning_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/VonWillebrandFactor_Schning2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;VonWillebrandFactor_Valke2024_reference&quot;,&quot;label&quot;:&quot;Valke_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/VonWillebrandFactor_Valke2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;VonWillebrandFactor_Wong2025_reference&quot;,&quot;label&quot;:&quot;Wong_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/VonWillebrandFactor_Wong2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;VonWillebrandFactor_Zhu2020_reference&quot;,&quot;label&quot;:&quot;Zhu_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/VonWillebrandFactor_Zhu2020_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;VonWillebrandFactor_Al2025_final&quot;,&quot;label&quot;:&quot;Al_2025_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/VonWillebrandFactor_Al2025_final.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;VonWillebrandFactor_Valke2024_reference&quot;,&quot;label&quot;:&quot;Valke_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/VonWillebrandFactor_Valke2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;VonWillebrandFactor_Wong2025_reference&quot;,&quot;label&quot;:&quot;Wong_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/VonWillebrandFactor_Wong2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;VonWillebrandFactor_Al2025_final&quot;,&quot;label&quot;:&quot;Al_2025_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/VonWillebrandFactor_Al2025_final.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;VonWillebrandFactor_Schning2026_reference&quot;,&quot;label&quot;:&quot;Sch\u00f6ning_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/VonWillebrandFactor_Schning2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;VonWillebrandFactor_Zhu2020_reference&quot;,&quot;label&quot;:&quot;Zhu_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/VonWillebrandFactor_Zhu2020_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Valke_2024_Normalized_plasmin_peak_height&quot;,&quot;label&quot;:&quot;Valke_2024 \u00b7 Normalized plasmin peak height&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/pd_Valke_2024_Normalized_plasmin_peak_height.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Valke_2024_Normalized_thrombin_peak_height&quot;,&quot;label&quot;:&quot;Valke_2024 \u00b7 Normalized thrombin peak height&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/pd_Valke_2024_Normalized_thrombin_peak_height.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Valke_2024_Normalized_thrombin_potential&quot;,&quot;label&quot;:&quot;Valke_2024 \u00b7 Normalized thrombin potential&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/pd_Valke_2024_Normalized_thrombin_potential.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -45,7 +45,7 @@ Al Arashi W et al., Replacement therapy in pregnant women w…, HemaSphere (2025
 |---|---|---|---|---|---|---|---|---|---|---|
 | CL (mL/h/70 kg) | `Q22` · CL | 250 | mL/h/70 kg | 6.944444444444444e-08 | [ml] / [[h] · [70kg]] | 9 | exact (1.0) | hem370061-tbl-0003:row2:col1 | — | not captured |
 | V (mL/70 kg) | `Q61` · V | 6490 | mL/70 kg | 0.00649 | [ml] / [70kg] | 8 | exact (1.0) | hem370061-tbl-0003:row3:col1 | — | not captured |
-| Absorption rate constant (kapop) [h−1] | `Q49` · kabs | 0.5 | h−1 | 0.0001388888888888889 | 1/h | not captured | review_gapfill (0.7) | Schöning_2026:review | — | not captured |
+| Absorption rate constant (kapop) [h−1] Ground truth | `Q49` · kabs | 0.5 | h−1 | 0.0001388888888888889 | 1/h | not captured | review_gapfill (0.7) | Schöning_2026:review | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -58,6 +58,9 @@ Al Arashi W et al., Replacement therapy in pregnant women w…, HemaSphere (2025
 - table section residual_error: 'Proportional error (%)' routed out of structural estimates ('Residual variability')
 - column 'vwf final model values (rse%) [shrinkage %]' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - dropped PD-category row 'Baseline (IU/mL)' → Q324 (E0, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['hem370061-tbl-0003:row1:col1'])
+- dropped PD-category row 'Baseline' → Q324 (E0, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['hem370061-tbl-0003:row5:col1'])
+- dropped duplicate Q22 ('CL', value '29.6') — already have one for this compound
+- dropped duplicate Q61 ('Vd', value '21.5') — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=von Willebrand factor
 - model-stage split: 'vwf final model values (rse%) [shrinkage %]' is the final model of Al_2025 (paper reports 2 stages: fviii final model values (rse%) [shrinkage %], vwf final model values (rse%) [shrinkage %]); same population, different model-building step
 - molar mass: none found for 'von_willebrand_factor' — its concentrations stay mass-only
@@ -67,15 +70,6 @@ Al Arashi W et al., Replacement therapy in pregnant women w…, HemaSphere (2025
 - gap-filled Q49 (kabs) from Schöning_2026's review values (primary lacked it)
 
 **Extraction notes:**
-- unparsed cell hem370061-tbl-0003:row1:col2 = '0.363 [0.268–0.484]'
-- unparsed cell hem370061-tbl-0003:row1:col4 = '1.11 [0.66–1.46]'
-- unparsed cell hem370061-tbl-0003:row2:col2 = '249 [215–295]'
-- unparsed cell hem370061-tbl-0003:row2:col4 = '70.8 [42.9–110]'
-- unparsed cell hem370061-tbl-0003:row3:col2 = '6514 [5533–7388]'
-- unparsed cell hem370061-tbl-0003:row3:col4 = '3863 [3431–4421]'
-- unparsed cell hem370061-tbl-0003:row9:col2 = '13.9 [10.2–17.0]'
-- unparsed cell hem370061-tbl-0003:row9:col4 = '15.5 [9.75–20.0]'
-- unparsed cell hem370061-tbl-0003:row10:col4 = '0.12 [0.03−0.19]'
 - LLM selected parameter table(s) 3
 
 ## Validation
@@ -125,7 +119,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_von_willebrand_factor/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Al_2025` / `Al_2025::final_vwf_final_model_values_rse_shrinkage`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_von_willebrand_factor/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Al_2025` / `Al_2025::final_vwf_final_model_values_rse_shrinkage`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -151,4 +145,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 20:06 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 19:03 UTC</sub>

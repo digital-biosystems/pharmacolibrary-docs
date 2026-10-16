@@ -4,7 +4,7 @@
 
 # aducanumab — `Aducanumab_Kandadi2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.3). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -20,7 +20,7 @@
 
 No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has aducanumab, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has aducanumab, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -88,18 +88,20 @@ Kandadi Muralidharan K et al., Population pharmacokinetics and standar…, CPT: 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.3 (3/10 fields) | 7 |
+| `gpt-oss-120b` | not confirmed | 0.182 (2/11 fields) | 9 |
 
-<details><summary>7 field discrepancies</summary>
+<details><summary>9 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `model.links` | [['aducanumab', 'suvr (amyloid beta pet biomarker)', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[effect_of_race_asian]` | not captured | 0.125 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[effect_of_sex_male]` | not captured | 0.135 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q314_race]` | 0.125 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[theta_q314_sex]` | 0.134 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[theta_q314_weight]` | 0.561 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[theta_q319_weight]` | not captured | 0.561 | only_one_extracted |
@@ -129,7 +131,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_aducanumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kandadi_2022` / `Kandadi_2022::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_aducanumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kandadi_2022` / `Kandadi_2022::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

@@ -26,14 +26,30 @@ Mavacamten is a heart medicine used to treat hypertrophic cardiomyopathy. It is 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 11:36 | 6:51 | 0/2/0 | 0/0/0 | 0/0/0 | 134,279/17,040 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 4/1 | 4/0 | 0 |
+| 2026-10-14 23:41 | 2:36 | 0/2/0 | 0/0/0 | 0/0/0 | 134,814/12,434 | einfracz / qwen3.8-27b | 5 | 4/1 | 4/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.909), gpt-oss:120b (partly confirmed, agreement 0.909). Primary extraction retained.">cross-check: partial 0/2</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Chang_2024_reference](drugs/drug_mavacamten/Mavacamten_Chang2024_reference.md) | — | 1-compartment (no model) | 1 | Chang P et al., Characterization of mavacamten pharmaco…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13197](https://doi.org/10.1002/psp4.13197) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5), gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-check: disputed 1/2</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Merali_2025_reference](drugs/drug_mavacamten/Mavacamten_Merali2025_reference.md) | — | 1-compartment (no model) | 0 | Merali S et al., Exposure-Response Modeling and Simulati…, Journal of clinical pharmac… (2025) | [10.1002/jcph.70072](https://doi.org/10.1002/jcph.70072) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.909), gpt-oss:120b (partly confirmed, agreement 0.909). Primary extraction retained.">cross-check: partial 0/2</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Chang_2024_reference](drugs/drug_mavacamten/Mavacamten_Chang2024_reference.md) | — | 1-compartment (no model) | 1 | Chang P et al., Characterization of mavacamten pharmaco…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13197](https://doi.org/10.1002/psp4.13197) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5), gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-check: disputed 1/2</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Merali_2025_reference](drugs/drug_mavacamten/Mavacamten_Merali2025_reference.md) | — | 1-compartment (no model) | 0 | Merali S et al., Exposure-Response Modeling and Simulati…, Journal of clinical pharmac… (2025) | [10.1002/jcph.70072](https://doi.org/10.1002/jcph.70072) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=mavacamten).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| metabolism | brain | `CYP2D6` unknown | DrugBank actor |
+| metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
+| metabolism | liver | `CYP2B6` inducer, `CYP2C19` inducer/substrate, `CYP2C8` substrate, `CYP2C9` inducer/substrate, `CYP2D6` unknown, `CYP3A4` inducer/substrate, `CYP3A5` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inducer/substrate, `CYP3A5` substrate | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: MYH7 (inhibitory allosteric modulator).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,16 +61,16 @@ Mavacamten is a heart medicine used to treat hypertrophic cardiomyopathy. It is 
 
 - **PubMed hits:** 5 matched, 5 returned
 - **screened:** 3  ·  **relevant:** 1
-- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 2  ·  stale 2
+- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Merali_2024 | irrelevant | 2 | 0 | The paper focuses on exposure-response modeling and dose-titration simulations, referencing a previously developed population PK model but not reporting the quantitative PK parameter values (CL, V, etc.) for mavacamten in the provided text. |
-| popPK | Merali_2025 | irrelevant | 2 | 0 | The paper is a simulation study using a previously published PopPK model to assess dosing regimens, and it does not report the specific numeric PK parameter values (CL, V, Q, ka) for mavacamten in the provided evidence. |
-| popPK | Wu_2025 | irrelevant | 2 | 0 | The paper focuses on exposure-response modeling and dose titration simulations, and while it references a PPK model, the specific quantitative PK parameter values (CL, V, etc.) are not provided in the text, being deferred to a previous publication or supplementary materials. |
+| popPK | Merali_2024 | irrelevant | 2 | 0 | The paper focuses on exposure-response (PD) modeling and simulation of dosing regimens; while it links to a PK model, the specific quantitative PK parameter values (CL, V, etc.) are not reported in the text provided. |
+| popPK | Merali_2025 | irrelevant | 3 | 0 | The study is a simulation using a previously published PopPK model; it reports no new quantitative PK parameter estimates (CL, V, etc.) in the provided text, only safety/efficacy outcomes and dose distribution percentages. |
+| popPK | Wu_2025 | relevant | 7 | 1 | The study presents a population PK model for mavacamten, but the specific numeric parameter values (clearance, volume) are located in the supplementary material and a previously published paper, not in the provided evidence. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-06 11:29 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-14 23:39 UTC</sub>

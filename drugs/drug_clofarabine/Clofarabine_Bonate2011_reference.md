@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;clofarabine&quot;,&quot;href&quot;:&quot;drugs/drug_clofarabine/&quot;},{&quot;label&quot;:&quot;Bonate_2011 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clofarabine_Bonate2011_reference&quot;,&quot;label&quot;:&quot;Bonate_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clofarabine/Clofarabine_Bonate2011_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clofarabine_Bonate2011_reference&quot;,&quot;label&quot;:&quot;Bonate_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clofarabine/Clofarabine_Bonate2011_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # clofarabine — `Clofarabine_Bonate2011_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.714). Primary extraction retained.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.714), gpt-oss-120b (partly confirmed, agreement 0.714). Primary extraction retained.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -17,33 +17,34 @@
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**T3_output_variable; t3_topology_template.**
 
-Only the abstract was available, so reported summary statistics stand in for a fitted model.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — clofarabine: Fab 57.5 %, CL 18.3 L/h, Vss 92.9 L, t1/2α 0.9 h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of average apparent half-life: this record has none, the second reading 4.9; it also differs on 3 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of α- and β-half-life: this record has 0.9, the second reading none; it also differs on 3 more fields. That field does not shape the model.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Bonate PL et al., Population pharmacokinetics of clofarab…, Cancer chemotherapy and pha… (2011)
   ·  DOI: [10.1007/s00280-010-1376-z](https://doi.org/10.1007/s00280-010-1376-z)
 
-<div class="pk-model-meta" hidden drug="clofarabine" model-id="Clofarabine_Bonate2011_reference" status="curated_candidate" stale="false" population="adult and pediatric patients with cancer" measured-compound="clofarabine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="clofarabine" model-id="Clofarabine_Bonate2011_reference" status="rejected" stale="false" population="adult and pediatric patients with cancer" measured-compound="clofarabine" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
-**Parameters:** 5 extracted.
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | bioavailability | `Q40` · Fab | 57.5 | % | not captured | not captured | not captured | exact (1.0) | Bonate_2011:abstract | — | not captured |
 | total systemic clearance | `Q22` · CL | 18.3 | L/h | 5.0833333333333335e-06 | [l] / [h] | not captured | llm_confirmed (0.6) | Bonate_2011:abstract, Bonate_2011:abstract | — | not captured |
 | volume of distribution at steady-state | `Q65` · Vss | 92.9 | L | 0.09290000000000001 | [l] | not captured | llm_corrected (0.6) | Bonate_2011:abstract, Bonate_2011:abstract | — | not captured |
-| α-half-life | `Q59` · t1/2α | 0.9 | h | 3240.0 | [h] | not captured | llm (0.6) | Bonate_2011:abstract, Bonate_2011:abstract | — | not captured |
-| β-half-life | `Q60` · t1/2β | 4.4 | h | 15840.000000000002 | [h] | not captured | llm (0.6) | Bonate_2011:abstract, Bonate_2011:abstract | — | not captured |
+| α- and β-half-life | `Q59` · t1/2α | 0.9 | h | 3240.0 | [h] | not captured | llm (0.6) | Bonate_2011:abstract, Bonate_2011:abstract, Bonate_2011:abstract, Bonate_2011:abstract | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -67,23 +68,29 @@ Bonate PL et al., Population pharmacokinetics of clofarab…, Cancer chemotherap
 - dropped duplicate Q57 ('average apparent half-life', value 4.9) — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=clofarabine
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
+- template fit: none — noncompartmental model — not a compartmental parent–metabolite model
 - status held at route_to_review — not promoted
+- row roles (LLM): model_class=noncompartmental; 9/9 row label(s) assigned, 4 linked by role; re-tagged clofarabine→parent ×17
+- molar mass: no plausible PubChem entry for '6-ketoclofarabine' ('6-ketoclofarabine') — left in mass units
+- molar mass: none found for '6-ketoclofarabine' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
+- engineer: parent → metabolite not buildable on PK_3M_9C (None) — the measured compound's 1-compartment model instead
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Bonate_2011_metadata.yaml (16 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Bonate_2011_metadata.yaml (17 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss:120b` | partly confirmed | 0.714 (10/14 fields) | 4 |
 | `gpt-oss-120b` | partly confirmed | 0.714 (10/14 fields) | 4 |
 
-<details><summary>4 field discrepancies</summary>
+<details><summary>8 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -91,6 +98,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | `gpt-oss-120b` | `parameters[ecrcl]` | not captured | 138 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[elimination half-life]` | not captured | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[total systemic clearance]` | 18.3 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[apparent half-life of 6‐ketoclofarabine]` | not captured | 4.9 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[α- and β-half-life]` | 0.9 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[α-half-life]` | not captured | 0.9 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[β-half-life]` | not captured | 4.4 | only_one_extracted |
 
 </details>
 
@@ -104,13 +115,12 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Bonate_2011:abstract', 'Bonate_2011:abstract'] |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Bonate_2011:abstract'] |
-| C5_dimension_Q59 | pass | [time] | not captured | not captured | not captured | ['Bonate_2011:abstract', 'Bonate_2011:abstract'] |
-| C5_dimension_Q60 | pass | [time] | not captured | not captured | not captured | ['Bonate_2011:abstract', 'Bonate_2011:abstract'] |
+| C5_dimension_Q59 | pass | [time] | not captured | not captured | not captured | ['Bonate_2011:abstract', 'Bonate_2011:abstract', 'Bonate_2011:abstract', 'Bonate_2011:abstract'] |
 | C5_dimension_Q65 | pass | [length] ** 3 | not captured | not captured | not captured | ['Bonate_2011:abstract', 'Bonate_2011:abstract'] |
 | C5_dimension_Q73 | pass | [time] | not captured | not captured | not captured | ['Bonate_2011:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 18.3 | not captured | not captured | ['Bonate_2011:abstract', 'Bonate_2011:abstract'] |
@@ -124,9 +134,9 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 |---|---|---|---|---|---|---|
 | T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_output_variable | not captured | pass | C_central (measured=clofarabine) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_output_variable | not captured | fail | Metabolite_C (measured=clofarabine) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 1 scholar param(s) emitted or defaulted | 1 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
+| T3_topology_template | not captured | fail | parent_metabolite → PK_3M_9C* | PK_1C | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
@@ -136,28 +146,17 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_clofarabine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Bonate_2011` / `Bonate_2011::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_clofarabine/models/modelica/Clofarabine_Bonate2011_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_clofarabine/models/modelica/Clofarabine_Bonate2011_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_clofarabine/models/modelica/Clofarabine_Bonate2011_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_clofarabine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Bonate_2011` / `Bonate_2011::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_clofarabine/models/modelica/Clofarabine_Bonate2011_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_clofarabine/models/modelica/Clofarabine_Bonate2011_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_clofarabine/models/modelica/Clofarabine_Bonate2011_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_clofarabine/Clofarabine_Bonate2011_reference/Clofarabine_Bonate2011_reference_modelica.zip" download>Clofarabine_Bonate2011_reference_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_clofarabine/Clofarabine_Bonate2011_reference/Clofarabine_Bonate2011_reference_fmi.zip" download>Clofarabine_Bonate2011_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_clofarabine/Clofarabine_Bonate2011_reference/Clofarabine_Bonate2011_reference_matlab.zip" download>Clofarabine_Bonate2011_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_clofarabine/Clofarabine_Bonate2011_reference/Clofarabine_Bonate2011_reference_matlab_simbio.zip" download>Clofarabine_Bonate2011_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_clofarabine/Clofarabine_Bonate2011_reference/Clofarabine_Bonate2011_reference_sbml.zip" download>Clofarabine_Bonate2011_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_clofarabine/Clofarabine_Bonate2011_reference/Clofarabine_Bonate2011_reference_cellml.zip" download>Clofarabine_Bonate2011_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_clofarabine/Clofarabine_Bonate2011_reference/Clofarabine_Bonate2011_reference.svg" alt="Clofarabine_Bonate2011_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -170,4 +169,4 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 16:39 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 03:10 UTC</sub>

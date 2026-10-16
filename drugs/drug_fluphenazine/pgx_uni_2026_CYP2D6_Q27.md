@@ -17,10 +17,11 @@
 - **parameter it changes:** CL/F (`Q27`)
 - **effect:** not quantified
 - **phenotype groups:** the paper's genotype groups were not mapped to standard phenotypes
+- **study type:** risk association (case–control or cohort study)
 
 ### Notes from the extraction
 
-- association-only evidence (no extracted θ) — not a covariate
+- SNP→adverse reaction association (adverse outcome, not a PK/PD parameter effect) — risk_association, not a covariate θ
 - genotype→phenotype map unresolved (no paper/CPIC/genotype mapping)
 - reference category (θ=0) not captured — must not be inferred
 

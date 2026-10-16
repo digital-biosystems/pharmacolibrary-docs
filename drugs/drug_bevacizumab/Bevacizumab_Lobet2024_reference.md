@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;bevacizumab&quot;,&quot;href&quot;:&quot;drugs/drug_bevacizumab/&quot;},{&quot;label&quot;:&quot;Lobet_2024 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bevacizumab_Caulet2016_reference&quot;,&quot;label&quot;:&quot;Caulet_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bevacizumab/Bevacizumab_Caulet2016_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Park_2023_OS&quot;,&quot;label&quot;:&quot;Park_2023 \u00b7 OS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_bevacizumab/pd_Park_2023_OS.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Park_2023_PFS&quot;,&quot;label&quot;:&quot;Park_2023 \u00b7 PFS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_bevacizumab/pd_Park_2023_PFS.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -16,21 +17,21 @@
 
 ### Reviewer guidance
 
-**Bevacizumab’s reported KD of 10 nM accompanies no distribution volume or clearance, so this exposure/outcome record is not a compartmental population PK model.**
+**No volume or clearance — not a compartmental population PK model; c5 dimension mismatch on a structural parameter (+1 more).**
 
-No volume or clearance — not a compartmental population PK model. The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. A structural-parameter dimension mismatch was also reported, but the record does not specify which parameter. Only the abstract was read, so its summary statistics stood in for a fitted model. Extracted — bevacizumab: KD 10 nM, kint 0.52 day-1.
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — bevacizumab: Km 10 nM, kint 0.52 day-1.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of antibody-target complexes elimination constant: this record has 0.52, the second reading none; it also differs on 3 more fields. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Lobet S et al., Confounding mitigation for the exposure…, British journal of clinical… (2024)
   ·  DOI: [10.1111/bcp.15983](https://doi.org/10.1111/bcp.15983)
 
-<div class="pk-model-meta" hidden drug="bevacizumab" model-id="Bevacizumab_Lobet2024_reference" status="rejected" stale="false" population="metastatic colorectal cancer patients" measured-compound="bevacizumab" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="bevacizumab" model-id="Bevacizumab_Lobet2024_reference" status="rejected" stale="false" population="metastatic colorectal cancer patients" measured-compound="bevacizumab" parameterization="mechanistic" topology="general_linear"></div>
 
-**Model structure:** 1-compartment; no model was built for this record.  
+**Model structure:** general linear; no model was built for this record.  
 **Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
@@ -40,8 +41,8 @@ Lobet S et al., Confounding mitigation for the exposure…, British journal of c
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| steady-state dissociation constant (KSS) | `Q331` · KD | 10 | nM | not captured | [nM] | not captured | llm_confirmed (0.6) | Lobet_2024:abstract | — | not captured |
-| antibody-target complexes elimination constant (kint) | `Q334` · kint | 0.52 | day-1 | 6.0185185185185185e-06 | [1] / [d] | not captured | llm (0.6) | Lobet_2024:abstract | — | not captured |
+| KSS | `Q1` · Km | 10 | nM | not captured | [nM] | not captured | llm (0.6) | Lobet_2024:abstract | — | not captured |
+| kint | `Q334` · kint | 0.52 | day-1 | 6.0185185185185185e-06 | [1] / [d] | not captured | exact (1.0) | Lobet_2024:abstract | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -51,15 +52,16 @@ Lobet S et al., Confounding mitigation for the exposure…, British journal of c
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped PD-category row 'baseline target levels (R0)' → Q336 (R0, category G13) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Lobet_2024:abstract'])
-- unit_dimension_mismatch: 'steady-state dissociation constant (KSS)' → Q331 (unit '[length]' vs ontology '[mass] / [length] ** 3') — route to review
+- dropped PD-category row 'R0' → Q336 (R0, category G13) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Lobet_2024:abstract'])
+- unit_dimension_mismatch: 'KSS' → Q1 (unit '[length]' vs ontology '[mass] / [length] ** 3') — route to review
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=bevacizumab
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
 - status held at route_to_review — not promoted
 - molar mass: none found for 'bevacizumab' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Lobet_2024_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model
@@ -96,9 +98,9 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q331 | fail | [length] | nM | not captured | not captured | ['Lobet_2024:abstract'] |
+| C5_dimension_Q1 | fail | [length] | nM | not captured | not captured | ['Lobet_2024:abstract'] |
 | C5_dimension_Q334 | pass | 1 / [time] | not captured | not captured | not captured | ['Lobet_2024:abstract'] |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none'] | not captured | not captured | not captured |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -107,7 +109,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_bevacizumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Lobet_2024` / `Lobet_2024::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_bevacizumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Lobet_2024` / `Lobet_2024::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -123,4 +125,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 10:14 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 18:21 UTC</sub>

@@ -1,8 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05B&quot;,&quot;href&quot;:&quot;atc/N05B.md&quot;},{&quot;label&quot;:&quot;alprazolam&quot;,&quot;href&quot;:&quot;drugs/drug_alprazolam/&quot;},{&quot;label&quot;:&quot;Kroboth_1988 \u00b7 PD Spectral edge of the EEG&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Alprazolam_Klein2026_body_weight_50_kg&quot;,&quot;label&quot;:&quot;Klein_2026_body_weight_50_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alprazolam/Alprazolam_Klein2026_body_weight_50_kg.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05B&quot;,&quot;href&quot;:&quot;atc/N05B.md&quot;},{&quot;label&quot;:&quot;alprazolam&quot;,&quot;href&quot;:&quot;drugs/drug_alprazolam/&quot;},{&quot;label&quot;:&quot;Kroboth_1988 \u00b7 PD spectral edge (SE)&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Alprazolam_Mertes2022_reference&quot;,&quot;label&quot;:&quot;Mertes_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alprazolam/Alprazolam_Mertes2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Witt_2026_RGR&quot;,&quot;label&quot;:&quot;Witt_2026 \u00b7 RGR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_alprazolam/pd_Witt_2026_RGR.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Spectral edge of the EEG — PD  <span class="pk-badge pk-badge--green">extracted</span>
+# spectral edge (SE) — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -14,16 +14,16 @@
 
 ## Record summary
 
-**As extracted:** Alprazolam (concentrations from the PK model of DeVane_1993) drives Spectral edge of the EEG (inhibition; the model form was not identified).
+**As extracted:** Alprazolam (concentrations from the PK model of DeVane_1993) drives spectral edge (SE): direct Emax (saturable) effect.
 
 **Model:** No model was generated from this record.
 
-> Alprazolam concentrations act on the spectral edge of the EEG (SE), a continuous response, in a tolerance-type PD model with an inhibitory effect direction; the paper excerpts provide no mechanism details and no potency or rate values (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma).
+> The paper excerpts are not available, so the specific mechanism and key potency or rate values cannot be determined from the provided text. The record indicates a continuous spectral edge response driven by alprazolam via an Emax model, but the paper does not explicitly state the mechanism in the available data.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Kroboth_1988`
-- **model family:** `tolerance`
+- **model family:** `emax`
 - **driver:** `cited_pk`
 - **tier:** descriptive
 - **effect:** inhibition/unknown

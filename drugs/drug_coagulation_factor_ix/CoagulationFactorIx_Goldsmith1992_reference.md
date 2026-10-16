@@ -4,7 +4,7 @@
 
 # coagulation factor IX — `CoagulationFactorIx_Goldsmith1992_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25), gpt-oss:120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -20,17 +20,15 @@
 
 The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has coagulation_factor_ix, the second reading AlphaNine (coagulation factor IX); it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has coagulation_factor_ix, the second reading Coagulation Factor IX; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
-
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:37:13.740988+00:00) predates the upstream re-run (2026-10-05 17:40:24.807876+00:00). Current validate status: `rejected`.
 
 ## Citation
 Goldsmith JC et al., Coagulation factor IX: successful surgi…, American journal of hematol… (1992)
   ·  DOI: [10.1002/ajh.2830400310](https://doi.org/10.1002/ajh.2830400310)
 
-<div class="pk-model-meta" hidden drug="coagulation factor IX" model-id="CoagulationFactorIx_Goldsmith1992_reference" status="rejected" stale="true" population="patients with hemophilia B" measured-compound="coagulation_factor_ix" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="coagulation factor IX" model-id="CoagulationFactorIx_Goldsmith1992_reference" status="rejected" stale="false" population="hemophilia B patients" measured-compound="coagulation_factor_ix" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.
@@ -65,17 +63,24 @@ Goldsmith JC et al., Coagulation factor IX: successful surgi…, American journa
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.25 (2/8 fields) | 6 |
 | `gpt-oss:120b` | not confirmed | 0.25 (2/8 fields) | 6 |
 
-<details><summary>6 field discrepancies</summary>
+<details><summary>12 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[beta phase half-life]` | not captured | 20.0 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[beta phase half-life]` | 20.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[initial phase half-life]` | not captured | 4.06 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[initial phase half-life]` | 4.06 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | coagulation_factor_ix | Coagulation Factor IX | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | coagulation_factor_ix | Coagulation Factor IX | mismatch |
 | `gpt-oss:120b` | `parameters[beta phase half-life]` | not captured | 20.0 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[beta phase half-life]` | 20.0 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[initial phase half-life]` | not captured | 4.06 | only_one_extracted |
@@ -108,7 +113,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_coagulation_factor_ix/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Goldsmith_1992` / `Goldsmith_1992::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_coagulation_factor_ix/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Goldsmith_1992` / `Goldsmith_1992::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -124,4 +129,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 17:40 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 21:21 UTC</sub>

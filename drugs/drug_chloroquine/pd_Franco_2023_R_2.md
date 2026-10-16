@@ -1,8 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;chloroquine&quot;,&quot;href&quot;:&quot;drugs/drug_chloroquine/&quot;},{&quot;label&quot;:&quot;Franco_2023 \u00b7 PD JIMT-1 cellular viability time course&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Chloroquine_Yao2021_reference&quot;,&quot;label&quot;:&quot;Yao_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_chloroquine/Chloroquine_Yao2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Chloroquine_AbdRahman2020_reference&quot;,&quot;label&quot;:&quot;Abd-Rahman_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_chloroquine/Chloroquine_AbdRahman2020_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Chloroquine_Chairat2018_reference&quot;,&quot;label&quot;:&quot;Chairat_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_chloroquine/Chloroquine_Chairat2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;chloroquine&quot;,&quot;href&quot;:&quot;drugs/drug_chloroquine/&quot;},{&quot;label&quot;:&quot;Franco_2023 \u00b7 PD cellular viability&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Chloroquine_Chairat2018_reference&quot;,&quot;label&quot;:&quot;Chairat_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_chloroquine/Chloroquine_Chairat2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Chloroquine_Yao2021_reference&quot;,&quot;label&quot;:&quot;Yao_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_chloroquine/Chloroquine_Yao2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Chloroquine_Karunajeewa2010_cq&quot;,&quot;label&quot;:&quot;Karunajeewa_2010_cq&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_chloroquine/Chloroquine_Karunajeewa2010_cq.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Chloroquine_Karunajeewa2010_decq&quot;,&quot;label&quot;:&quot;Karunajeewa_2010_decq&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_chloroquine/Chloroquine_Karunajeewa2010_decq.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Franco_2023_R&quot;,&quot;label&quot;:&quot;Franco_2023 \u00b7 R&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_chloroquine/pd_Franco_2023_R.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# JIMT-1 cellular viability time course — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span>
+# cellular viability — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -16,19 +16,19 @@
 
 ## Record summary
 
-**As extracted:** Chloroquine (concentrations from the PK model of Abd-Rahman_2020) drives JIMT-1 cellular viability time course: delayed effect through transit (transduction) compartments.
+**As extracted:** Chloroquine (concentrations from the PK model of Abd-Rahman_2020::plasma_samples_estimate) drives cellular viability: delayed effect through transit (transduction) compartments.
 
 **Model:** No model was generated from this record.
 
-> Chloroquine (5–50 μM) stimulates JIMT-1 cell death in a transduction model of cellular viability over 72 h, with a stimulatory death rate constant Smax of 0.0405 h⁻¹, SC50 of 26.3 μM, Hill coefficient γ1 of 1.97, and a transduction delay (τCQ) of 17.5 h; control growth rate kg was 0.0217 h⁻¹, and in combination with trastuzumab the interaction parameter Ψ was 0.529, indicating synergy.
+> Chloroquine concentration acts on cellular viability by stimulating cell death through a mechanism requiring two transit compartments, with a first-order growth rate constant of 0.0217 h-1 and a maximal death constant (Smax) of 0.0405 h-1 achieved at a concentration (SC50) of 26.3 μM. The effect is modeled with a Hill coefficient of 1.97 and a transit time of 17.5 h.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Franco_2023`
 - **model family:** `transduction`
 - **driver:** `cited_pk`
 - **tier:** descriptive
-- **effect:** stimulation/proportional
+- **effect:** inhibition/proportional
 
 ## Citation
 Franco YL et al., Pharmacodynamic Modeling Identifies Syn…, Cancer diagnosis & prognosis (2023)
@@ -37,13 +37,12 @@ Franco YL et al., Pharmacodynamic Modeling Identifies Syn…, Cancer diagnosis &
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | R0 | `Q324` · not captured | 1 | not captured | not captured | llm (not captured) | Franco_2023:pdv3 |
-| model term | kg | `Q900` · not captured | 0.0217 | h-1 | not captured | llm (not captured) | Franco_2023:pdv3 |
-| PD (effect) | SmaxCQ | `Q320` · not captured | 0.0405 | h-1 | not captured | llm (not captured) | Franco_2023:pdv3 |
-| PD (effect) | SC50CQ | `Q321` · not captured | 26.3 | μΜ | not captured | llm (not captured) | Franco_2023:pdv3 |
-| PD (effect) | γ1 | `Q325` · not captured | 1.97 | not captured | not captured | llm (not captured) | Franco_2023:pdv3 |
-| PD (effect) | τCQ | `Q338` · not captured | 17.5 | h | not captured | llm (not captured) | Franco_2023:pdv3 |
-| model term | Ψ | `Q900` · not captured | 0.529 | not captured | not captured | llm (not captured) | Franco_2023:pdv3 |
+| — | First-order JIMT-1 growth rate constant | `Q100` · not captured | 0.0217 | h -1 | not captured | nil (not captured) | Franco_2023:pdv3 |
+| PD (effect) | Maximal value of the stimulatory death constant for CQ | `Q323` · not captured | 0.0405 | h -1 | not captured | direction (not captured) | Franco_2023:pdv3 |
+| PD (effect) | Concentration of CQ where half of S max is achieved | `Q321` · not captured | 26.3 | μM | not captured | llm (not captured) | Franco_2023:pdv3 |
+| PD (effect) | Hill coefficient for CQ | `Q325` · not captured | 1.97 | not captured | not captured | llm (not captured) | Franco_2023:pdv3 |
+| PD (effect) | Transit time for CQ | `Q338` · not captured | 17.5 | h | not captured | llm (not captured) | Franco_2023:pdv3 |
+| — | Interaction parameter psi | `Q100` · not captured | 0.529 | not captured | not captured | nil (not captured) | Franco_2023:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -53,9 +52,19 @@ Franco YL et al., Pharmacodynamic Modeling Identifies Syn…, Cancer diagnosis &
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

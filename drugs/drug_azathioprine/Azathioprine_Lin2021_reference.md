@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;azathioprine&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/&quot;},{&quot;label&quot;:&quot;Lin_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Azathioprine_Lin2021_reference&quot;,&quot;label&quot;:&quot;Lin_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_Lin2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Azathioprine_Lin2021_reference&quot;,&quot;label&quot;:&quot;Lin_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_Lin2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # azathioprine — `Azathioprine_Lin2021_reference`
 
-> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.071), gpt-oss:120b (not confirmed, agreement 0.214). Primary extraction retained.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.071), gpt-oss:120b (not confirmed, agreement 0.214). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -19,15 +19,13 @@
 
 ### Reviewer guidance
 
-**The azathioprine/6-thioguanine nucleotide model was held back because the absorption rate constant ka was not reported in the paper and library defaults were used instead, alongside unquantified apparent assumptions (F=1, Fm=1, no molar correction).**
+**Ka use library defaults, not estimates from this paper; the covariate scenarios were not simulated (+1 more).**
 
-The record for 6-thioguanine nucleotides (metabolite of azathioprine, CLm/F 11.6 L/h, V 809 L) lacks an explicit ka; the model builder defaulted ka and Tlag, so the simulated absorption profile is not supported by the source. The apparent parameterization assumes F=1 and Fm=1 with no molar correction, which are unreported deviations. In addition, the covariate effects (tpmt 0.515, θ BW 0.625, θ MESA 0.802) were defined but only the reference individual was simulated, so the covariate scenarios were not exercised. A second reader's disagreements concern only naming of the analyte and parameter fields, not the values themselves. Extracted — 6-thioguanine nucleotides: CLm/F 11.6 L/h, V 809 L.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. The base model was simulated, not the covariate effects the record defines. None of the extracted parameters is azathioprine's own; they describe 6-thioguanine nucleotides. Extracted — 6-thioguanine nucleotides: CLm/F 11.6 L/h, V 809 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has azathioprine, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by glm-5.3-flash</sub>
-
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:24:11.301036+00:00) predates the upstream re-run (2026-10-06 23:43:06.055954+00:00). Current validate status: `extracted`.
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 > **Dose compound ≠ measured compound:** dosed `azathioprine`, measured `6-thioguanine nucleotides`.
 
@@ -35,21 +33,23 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Lin R et al., Population pharmacokinetics of azathiop…, Basic & clinical pharmacolo… (2021)
   ·  DOI: [10.1111/bcpt.13530](https://doi.org/10.1111/bcpt.13530)
 
-<div class="pk-model-meta" hidden drug="azathioprine" model-id="Azathioprine_Lin2021_reference" status="extracted" stale="true" population="adult patients with inflammatory bowel disease" measured-compound="6-thioguanine nucleotides" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="azathioprine" model-id="Azathioprine_Lin2021_reference" status="needs_review" stale="false" population="adults with inflammatory bowel disease" measured-compound="6-thioguanine nucleotides" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 2 extracted, plus 1 covariate effect.
+**Parameters:** 2 extracted.
 
 **Parameterization:** CLm/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL p (L/h) | `Q351` · CLm/F | 11.6 | L/h | 3.222222222222222e-06 | [l] / [h] | not captured | exact (1.0) | tab_2:row5:col1, tab_2:row5:col2, tab_2:row5:col3, tab_2:row5:col4, tab_2:row5:col5 | — | 0.342 (None% RSE) |
-| tpmt | `Q900` · tpmt | 0.515 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_2:row8:col1, tab_2:row8:col2, tab_2:row8:col3, tab_2:row8:col4, tab_2:row8:col5 | — | not captured |
-| V p (L) | `Q61` · V | 809 | L | 0.809 | [l] | not captured | exact (1.0) | tab_2:row9:col1, tab_2:row9:col2, tab_2:row9:col3, tab_2:row9:col4, tab_2:row9:col5 | — | not captured |
-| θ BW | `Q900` · θ BW | 0.625 | not captured | not captured | not captured | not captured | not captured (not captured) | not captured | — | not captured |
-| θ MESA | `Q900` · θ MESA | 0.802 | not captured | not captured | not captured | not captured | not captured (not captured) | not captured | — | not captured |
+| CLp(L/h) | `Q351` · CLm/F | 11.6 | L/h | 3.222222222222222e-06 | [l] / [h] | not captured | exact (1.0) | Lin_2021_table_p23_1:row1:col1, Lin_2021_table_p23_1:row1:col2, Lin_2021_table_p23_1:row1:col5 | — | 0.342 (None% RSE) |
+| Vp(L) | `Q61` · V | 809 | L | 0.809 | [l] | not captured | exact (1.0) | Lin_2021_table_p23_1:row5:col1, Lin_2021_table_p23_1:row5:col2, Lin_2021_table_p23_1:row5:col5 | — | not captured |
+| θBW | `Q900` · θBW | 0.625 | not captured | not captured | not captured | not captured | not captured (not captured) | not captured | — | not captured |
+| θMESA | `Q900` · θMESA | 0.802 | not captured | not captured | not captured | not captured | not captured (not captured) | not captured | — | not captured |
+| θTPTMT | `Q900` · θTPTMT | 0.515 | not captured | not captured | not captured | not captured | not captured (not captured) | not captured | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -65,18 +65,16 @@ Lin R et al., Population pharmacokinetics of azathiop…, Basic & clinical pharm
 - `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
 
 **Interpretation flags:**
-- table section iiv: 'η CL' routed out of structural estimates ('Between-subject variability')
-- table section iiv: 'η CL -shrinkage (%)' routed out of structural estimates ('Between-subject variability')
+- table section iiv: 'ηCL' routed out of structural estimates ('Between-subject variability')
 - table section residual_error: 'ε' routed out of structural estimates ('Residual variability')
-- table section residual_error: 'ε-shrinkage (%)' routed out of structural estimates ('Residual variability')
-- kept covariate coefficient θ BW=0.625 (covariate BW) — not an ontology parameter
-- kept covariate coefficient θ MESA=0.802 (covariate MESA) — not an ontology parameter
-- covariate level 'θ TPMT' → Q900:tpmt = 0.515 (linear_fractional on Q22)
+- kept covariate coefficient θBW=0.625 (covariate BW) — not an ontology parameter
+- kept covariate coefficient θMESA=0.802 (covariate MESA) — not an ontology parameter
+- kept covariate coefficient θTPTMT=0.515 (covariate TPTMT) — not an ontology parameter
 - metabolite 6-thioguanine nucleotides: Q22→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
-- metabolite volume: 'V p (L)' Q63→Q61 for 6-thioguanine nucleotides — it is 1-compartment, so its central volume is its only volume
+- metabolite volume: 'Vp(L)' Q63→Q61 for 6-thioguanine nucleotides — it is 1-compartment, so its central volume is its only volume
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=6-thioguanine nucleotides
 - template fit: none — only the metabolite is modelled — no parent compartment
-- row roles (LLM): model_class=compartmental; 9/9 row label(s) assigned, 10 linked by role
+- row roles (LLM): model_class=compartmental; 7/7 row label(s) assigned, 6 linked by role
 - molar mass: no plausible PubChem entry for '6-thioguanine nucleotides' ('6-thioguanine nucleotides') — left in mass units
 - molar mass: none found for '6-thioguanine nucleotides' — its concentrations stay mass-only
 - review gap-fill skipped: this record measures '6-thioguanine nucleotides', not azathioprine — the review values are the parent's
@@ -138,11 +136,11 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q351 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_2:row5:col1', 'tab_2:row5:col2', 'tab_2:row5:col3', 'tab_2:row5:col4', 'tab_2:row5:col5'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_2:row9:col1', 'tab_2:row9:col2', 'tab_2:row9:col3', 'tab_2:row9:col4', 'tab_2:row9:col5'] |
+| C5_dimension_Q351 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Lin_2021_table_p23_1:row1:col1', 'Lin_2021_table_p23_1:row1:col2', 'Lin_2021_table_p23_1:row1:col5'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Lin_2021_table_p23_1:row5:col1', 'Lin_2021_table_p23_1:row5:col2', 'Lin_2021_table_p23_1:row5:col5'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q61 | pass | volume within physiological range | 809 L | not captured | not captured | ['tab_2:row9:col1', 'tab_2:row9:col2', 'tab_2:row9:col3', 'tab_2:row9:col4', 'tab_2:row9:col5'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 809 L | not captured | not captured | ['Lin_2021_table_p23_1:row5:col1', 'Lin_2021_table_p23_1:row5:col2', 'Lin_2021_table_p23_1:row5:col5'] |
 
 **Reviewer per-scenario checks:**
 
@@ -154,7 +152,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_output_variable | not captured | pass | C_central (measured=6-thioguanine nucleotides) | C_central | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 1 scholar param(s) emitted or defaulted | 1 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | deviation_id: not acceptable; defaulted_parameters: not acceptable; apparent_assumption: not acceptable; invented_absorption: not acceptable; input_model: not acceptable | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable; invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -163,10 +161,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_azathioprine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Lin_2021` / `Lin_2021::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_azathioprine/models/modelica/Azathioprine_Lin2021_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_azathioprine/models/modelica/Azathioprine_Lin2021_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_azathioprine/models/modelica/Azathioprine_Lin2021_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_azathioprine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Lin_2021` / `Lin_2021::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_azathioprine/models/modelica/Azathioprine_Lin2021_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_azathioprine/models/modelica/Azathioprine_Lin2021_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_azathioprine/models/modelica/Azathioprine_Lin2021_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -184,7 +182,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_azathioprine/Azathioprine_Lin2021_reference/Azathioprine_Lin2021_reference.svg" alt="Azathioprine_Lin2021_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_azathioprine/Azathioprine_Lin2021_reference/Azathioprine_Lin2021_reference.svg" alt="Azathioprine_Lin2021_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -197,4 +195,4 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 23:43 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 00:36 UTC</sub>

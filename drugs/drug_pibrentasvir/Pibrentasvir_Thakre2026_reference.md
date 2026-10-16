@@ -156,9 +156,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_pibrentasvir/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Thakre_2026` / `Thakre_2026::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_pibrentasvir/models/modelica/_needs_review/Pibrentasvir_Thakre2026_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_pibrentasvir/models/modelica/_needs_review/Pibrentasvir_Thakre2026_reference.deviation.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_pibrentasvir/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Thakre_2026` / `Thakre_2026::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_pibrentasvir/models/modelica/_needs_review/Pibrentasvir_Thakre2026_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_pibrentasvir/models/modelica/_needs_review/Pibrentasvir_Thakre2026_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

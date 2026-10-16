@@ -17,13 +17,13 @@
 
 ### Reviewer guidance
 
-**The record was rejected because the clearance parameter label references creatinine clearance, a biomarker, rather than melagatran.**
+**biomarker_kinetics_as_drug_pk; t0_analyte_identity (+1 more).**
 
-The clearance parameter is labeled 'median population clearance (creatinine clearance 70 mL/min) ... subcutaneous', which names a biomarker instead of the drug. The record was built from the abstract alone, so summary statistics stood in for a fitted model. Additionally, absorption parameters like ka were defaulted because they were not reported in the source. Extracted — melagatran: CL 5.3 L/h, Fab 23 %, V 15.5 L, V/F 159 L.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — melagatran: CL 5.3 L/h, CL/F 22.9 L/h, Fab 23 %, V 15.5 L, V/F 159 L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has melagatran and ximelagatran, the second reading melagatran, ximelagatran; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 > **Dose compound ≠ measured compound:** dosed `melagatran and ximelagatran`, measured `melagatran`.
 
@@ -34,19 +34,20 @@ Eriksson UG et al., Pharmacokinetics of melagatran and the…, Clinical pharmaco
 <div class="pk-model-meta" hidden drug="melagatran" model-id="Melagatran_Eriksson2003_reference" status="rejected" stale="false" population="orthopaedic surgery patients" measured-compound="melagatran" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
-**Parameters:** 4 extracted.
+**Parameters:** 5 extracted.
 
-**Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| median population clearance (creatinine clearance 70 mL/min) ... subcutaneous | `Q22` · CL | 5.3 | L/h | 1.4722222222222223e-06 | [l] / [h] | not captured | llm_confirmed (0.6) | Eriksson_2003:abstract | — | not captured |
-| bioavailability of melagatran after oral ximelagatran relative to subcutaneous melagatran | `Q40` · Fab | 23 | % | not captured | not captured | not captured | llm_confirmed (0.6) | Eriksson_2003:abstract | — | not captured |
-| median population estimates ... subcutaneous | `Q61` · V | 15.5 | L | 0.0155 | [l] | not captured | llm (0.6) | Eriksson_2003:abstract | — | not captured |
-| median population estimates ... oral | `Q76` · V/F | 159 | L | 0.159 | [l] | not captured | llm (0.6) | Eriksson_2003:abstract | — | not captured |
+| The median population clearance (creatinine clearance 70 mL/min) ... subcutaneous | `Q22` · CL | 5.3 | L/h | 1.4722222222222223e-06 | [l] / [h] | not captured | llm_confirmed (0.6) | Eriksson_2003:abstract | — | not captured |
+| The median population clearance (creatinine clearance 70 mL/min) ... oral | `Q27` · CL/F | 22.9 | L/h | 6.361111111111111e-06 | [l] / [h] | not captured | llm_corrected (0.6) | Eriksson_2003:abstract | — | not captured |
+| The bioavailability of melagatran after oral ximelagatran relative to subcutaneous melagatran | `Q40` · Fab | 23 | % | not captured | not captured | not captured | llm_confirmed (0.6) | Eriksson_2003:abstract | — | not captured |
+| the median population estimates ... subcutaneous | `Q61` · V | 15.5 | L | 0.0155 | [l] | not captured | llm (0.6) | Eriksson_2003:abstract | — | not captured |
+| the median population estimates ... oral | `Q76` · V/F | 159 | L | 0.159 | [l] | not captured | llm (0.6) | Eriksson_2003:abstract | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -62,7 +63,6 @@ Eriksson UG et al., Pharmacokinetics of melagatran and the…, Clinical pharmaco
 - `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
 
 **Interpretation flags:**
-- dropped duplicate Q22 ('median population clearance (creatinine clearance 70 mL/min) ... oral', value 22.9) — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=melagatran
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - structure disagreement: deterministic 2C vs LLM 1C — review compartment count
@@ -105,15 +105,17 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Eriksson_2003:abstract'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Eriksson_2003:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Eriksson_2003:abstract'] |
 | C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Eriksson_2003:abstract'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 5.3 L/h | not captured | not captured | ['Eriksson_2003:abstract'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 22.9 L/h | not captured | not captured | ['Eriksson_2003:abstract'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 15.5 L | not captured | not captured | ['Eriksson_2003:abstract'] |
 | C9_phys_window_Q76 | pass | volume within physiological range | 159 L | not captured | not captured | ['Eriksson_2003:abstract'] |
 
@@ -121,11 +123,11 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
-| T0_analyte_identity | not captured | fail | melagatran (or metabolite) | median population clearance (creatinine clearance 70 mL/min) ... subcutaneous | not captured | disposition label(s) name a biomarker, not melagatran: 'median population clearance (creatinine clearance 70 mL/min) ... subcutaneous' |
+| T0_analyte_identity | not captured | fail | melagatran (or metabolite) | The median population clearance (creatinine clearance 70 mL/min) ... subcutaneous | not captured | disposition label(s) name a biomarker, not melagatran: 'The median population clearance (creatinine clearance 70 mL/min) ... subcutaneous'; 'The median population clearance (creatinine clearance 70 mL/min) ... oral' |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_output_variable | not captured | pass | C_central (measured=melagatran) | central.C | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
+| T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable; invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
 
@@ -136,10 +138,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_melagatran/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Eriksson_2003` / `Eriksson_2003::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_melagatran/models/modelica/Melagatran_Eriksson2003_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_melagatran/models/modelica/Melagatran_Eriksson2003_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_melagatran/models/modelica/Melagatran_Eriksson2003_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_melagatran/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Eriksson_2003` / `Eriksson_2003::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_melagatran/models/modelica/Melagatran_Eriksson2003_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_melagatran/models/modelica/Melagatran_Eriksson2003_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_melagatran/models/modelica/Melagatran_Eriksson2003_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -159,4 +161,4 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 14:56 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 21:14 UTC</sub>

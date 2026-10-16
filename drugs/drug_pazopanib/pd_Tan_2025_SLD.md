@@ -1,8 +1,8 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;pazopanib&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/&quot;},{&quot;label&quot;:&quot;Tan_2025 \u00b7 PD sum of longest diameter of target lesions&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pazopanib_Attia2023_reference&quot;,&quot;label&quot;:&quot;Attia_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Attia2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pazopanib_Balakirouchenane2020_reference&quot;,&quot;label&quot;:&quot;Balakirouchenane_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Balakirouchenane2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pazopanib_Bins2019_base&quot;,&quot;label&quot;:&quot;Bins_2019_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Bins2019_base.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pazopanib_Bins2019_final&quot;,&quot;label&quot;:&quot;Bins_2019_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Bins2019_final.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pazopanib_Ozbey2021_reference&quot;,&quot;label&quot;:&quot;Ozbey_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Ozbey2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pazopanib_Attia2023_reference&quot;,&quot;label&quot;:&quot;Attia_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Attia2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pazopanib_Balakirouchenane2020_reference&quot;,&quot;label&quot;:&quot;Balakirouchenane_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Balakirouchenane2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pazopanib_Ozbey2021_reference&quot;,&quot;label&quot;:&quot;Ozbey_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Ozbey2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# sum of longest diameter of target lesions — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span>
+# sum of longest diameter of target lesions — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -14,19 +14,19 @@
 
 ## Record summary
 
-**As extracted:** Pazopanib drives sum of longest diameter of target lesions (in mm): disease-progression model.
+**As extracted:** Pazopanib (concentrations from this paper's PK model) drives sum of longest diameter of target lesions (in mm): disease-progression model.
 
 **Model:** No model was generated from this record.
 
-> Pazopanib exposure was tested as an influence on decay of target-lesion SLD (mm), but no significant exposure- or dose-dependence was identified; SLD was described using apparent growth, linear decay, and time-dependent acquired resistance, with primary-resistant subpopulations of 27% (mRCC) and 13.4% (STS). Rates (day−1) were KG 0.0005 (mRCC) and 0.0086 (STS), KD 0.004 (mRCC) and 0.008 (STS), and acquired-resistance λ 0.008 (mRCC) and 0.0003 (STS).
+> Pazopanib exposure does not significantly drive the sum of longest diameter (SLD) response, as neither exposure nor dose was identified as a significant covariate for the apparent decay rate (KD) or growth rate (KG). The model parameters consist of a first-order apparent growth rate (KG) of 0.0005 day−1, an apparent decay rate (KD) of 0.004 day−1, and an acquired resistance rate (λ) of 0.008 day−1.
 >
-> <sub>Source-based summary by gpt-6-luna from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Tan_2025`
 - **model family:** `disease_progression`
-- **driver:** `not_resolved`
+- **driver:** `pk_record`
 - **tier:** population
-- **effect:** unknown/unknown
+- **effect:** inhibition/unknown
 
 ## Citation
 Tan Z et al., Model-Informed Dose Optimization of Paz…, Clinical pharmacokinetics (2025)
@@ -35,14 +35,10 @@ Tan Z et al., Model-Informed Dose Optimization of Paz…, Clinical pharmacokinet
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| model term | Growth rate KG (mRCC) | `Q900` · not captured | 0.0005 | day−1 | not captured | llm (not captured) | Tan_2025:pdv3 |
-| model term | Growth rate KG (STS) | `Q900` · not captured | 0.0086 | day−1 | not captured | llm (not captured) | Tan_2025:pdv3 |
-| model term | Decay rate KD (mRCC) | `Q900` · not captured | 0.004 | day−1 | not captured | llm (not captured) | Tan_2025:pdv3 |
-| model term | Decay rate KD (STS) | `Q900` · not captured | 0.008 | day−1 | not captured | llm (not captured) | Tan_2025:pdv3 |
-| model term | Acquired resistant rate λ (mRCC) | `Q900` · not captured | 0.008 | day−1 | not captured | llm (not captured) | Tan_2025:pdv3 |
-| model term | Acquired resistant rate λ (STS) | `Q900` · not captured | 0.0003 | day−1 | not captured | llm (not captured) | Tan_2025:pdv3 |
-| model term | Subpopulation of primary resistance (mRCC) | `Q900` · not captured | 27% | % | not captured | llm (not captured) | Tan_2025:pdv3 |
-| model term | Subpopulation of primary resistance (STS) | `Q900` · not captured | 13.4% | % | not captured | llm (not captured) | Tan_2025:pdv3 |
+| PD (effect) | Growth rate KG | `Q340` · not captured | 0.0005 | day−1 | not captured | llm (not captured) | Tan_2025:pdv3 |
+| PD (effect) | Decay rate KD | `Q330` · not captured | 0.004 | day−1 | not captured | llm (not captured) | Tan_2025:pdv3 |
+| PD (effect) | Acquired resistant rate λ | `Q337` · not captured | 0.008 | day−1 | not captured | llm (not captured) | Tan_2025:pdv3 |
+| model term | Subpopulation of primary resistance | `Q900` · not captured | 27% | not captured | not captured | llm (not captured) | Tan_2025:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -77,9 +73,19 @@ Primary extraction: `openai:gpt-6-luna`; retained regardless of cross-check verd
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

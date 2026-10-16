@@ -1,7 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;belantamab mafodotin&quot;,&quot;href&quot;:&quot;drugs/drug_belantamab_mafodotin/&quot;},{&quot;label&quot;:&quot;Collins_2023 \u00b7 PD ocular event grade&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;belantamab mafodotin&quot;,&quot;href&quot;:&quot;drugs/drug_belantamab_mafodotin/&quot;},{&quot;label&quot;:&quot;Collins_2023 \u00b7 PD ocular events&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;BelantamabMafodotin_FerronBrady2021_reference&quot;,&quot;label&quot;:&quot;Ferron-Brady_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_belantamab_mafodotin/BelantamabMafodotin_FerronBrady2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# ocular event grade — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
+# ocular events — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -13,19 +14,19 @@
 
 ## Record summary
 
-**As extracted:** Belantamab mafodotin (measured concentrations) drives ocular event grade (in grade): categorical (graded) response model.
+**As extracted:** Belantamab mafodotin drives ocular events: categorical (graded) response model.
 
 **Model:** No model was generated from this record.
 
-> Belantamab mafodotin concentration acts through an effect compartment on transitions among KVA ocular-event grades, with an Emax effect that shifts transitions toward higher grades as exposure increases. The model reports Emax 4.42, EC50 3.64 μg/ml, ke0 0.0244 day−1, and γ 2.38.
+> Belantamab mafodotin concentration acts on the categorical KVA ocular event grade via a direct effect model that includes an effect compartment (KEO = 0.0244 day⁻¹) to account for delayed onset and offset, resulting in a higher probability of transitioning to higher grades with increased exposure. The model is characterized by an EC50 of 3.64 μg/mL, an Emax of 4.42, and a Gamma of 2.38.
 >
-> <sub>Source-based summary by gpt-6-luna from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Collins_2023`
 - **model family:** `categorical`
-- **driver:** `conc_no_pk`
+- **driver:** `not_resolved`
 - **tier:** population
-- **effect:** stimulation/additive
+- **effect:** stimulation/proportional
 
 ## Citation
 Collins J et al., Longitudinal efficacy and safety modeli…, CPT: pharmacometrics & syst… (2023)
@@ -34,25 +35,10 @@ Collins J et al., Longitudinal efficacy and safety modeli…, CPT: pharmacometri
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| model term | B01 | `Q900` · not captured | −2.71 (−2.95, −2.46) | not captured | not captured | llm (not captured) | Collins_2023:pdv3 |
-| model term | B03 | `Q900` · not captured | −2.18 (−2.59, −1.78) | not captured | not captured | llm (not captured) | Collins_2023:pdv3 |
-| model term | B11 | `Q900` · not captured | −0.927 (−1.52, −0.34) | not captured | not captured | llm (not captured) | Collins_2023:pdv3 |
-| model term | B12 | `Q900` · not captured | −1.76 (−2.49, −1.03) | not captured | not captured | llm (not captured) | Collins_2023:pdv3 |
-| model term | B13 | `Q900` · not captured | −1.94 (−2.34, −1.53) | not captured | not captured | llm (not captured) | Collins_2023:pdv3 |
-| model term | B21 | `Q900` · not captured | −0.132 (−0.877, 0.612) | not captured | not captured | llm (not captured) | Collins_2023:pdv3 |
-| model term | B22 | `Q900` · not captured | −0.717 (−0.926, −0.509) | not captured | not captured | llm (not captured) | Collins_2023:pdv3 |
-| model term | B23 | `Q900` · not captured | −3.29 (−3.68, −2.90) | not captured | not captured | llm (not captured) | Collins_2023:pdv3 |
-| model term | B31 | `Q900` · not captured | 1.78 (0.891, 2.66) | not captured | not captured | llm (not captured) | Collins_2023:pdv3 |
-| model term | B32 | `Q900` · not captured | −0.708 (−1.03, −0.387) | not captured | not captured | llm (not captured) | Collins_2023:pdv3 |
-| model term | B33 | `Q900` · not captured | −1.88 (−2.17, −1.59) | not captured | not captured | llm (not captured) | Collins_2023:pdv3 |
-| PD (effect) | Emax | `Q320` · not captured | 4.42 (3.76, 5.08) | not captured | not captured | llm (not captured) | Collins_2023:pdv3 |
-| PD (effect) | EC50 | `Q321` · not captured | 3.64 (2.88, 4.40) | μg/ml | not captured | llm (not captured) | Collins_2023:pdv3 |
-| PD (effect) | KEO | `Q326` · not captured | 0.0244 (0.0164, 0.0324) | day−1 | not captured | llm (not captured) | Collins_2023:pdv3 |
-| PD (effect) | Gamma | `Q325` · not captured | 2.38 (1.53, 3.23) | − | not captured | llm (not captured) | Collins_2023:pdv3 |
-| model term | Baseline sBCMA on Emax | `Q900` · not captured | −0.0973 (−0.151, −0.0436) | not captured | not captured | llm (not captured) | Collins_2023:pdv3 |
-| model term | F1 = Emax factor previous Grade ≥ 1 | `Q900` · not captured | −0.239 (−0.427, −0.0515) | − | not captured | llm (not captured) | Collins_2023:pdv3 |
-| model term | F3 = Emax factor previous Grade ≥ 3 | `Q900` · not captured | −0.484 (−0.683, −0.285) | − | not captured | llm (not captured) | Collins_2023:pdv3 |
-| variability | ω2 Emax | `Q312` · not captured | 0.105 (0.0452, 0.164) | not captured | not captured | llm (not captured) | Collins_2023:pdv3 |
+| PD (effect) | Emax | `Q320` · not captured | 4.42 | not captured | not captured | llm (not captured) | Collins_2023:pdv3 |
+| PD (effect) | EC50 | `Q321` · not captured | 3.64 | μg/ml | not captured | llm (not captured) | Collins_2023:pdv3 |
+| PD (effect) | KEO | `Q326` · not captured | 0.0244 | day−1 | not captured | llm (not captured) | Collins_2023:pdv3 |
+| PD (effect) | Gamma | `Q325` · not captured | 2.38 | not captured | not captured | llm (not captured) | Collins_2023:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>

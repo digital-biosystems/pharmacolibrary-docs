@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B03X&quot;,&quot;href&quot;:&quot;atc/B03X.md&quot;},{&quot;label&quot;:&quot;roxadustat&quot;,&quot;href&quot;:&quot;drugs/drug_roxadustat/&quot;},{&quot;label&quot;:&quot;Takada_2022_2 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Roxadustat_Takada2022v2_reference&quot;,&quot;label&quot;:&quot;Takada_2022_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_roxadustat/Roxadustat_Takada2022v2_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Roxadustat_Takada2022v2_reference&quot;,&quot;label&quot;:&quot;Takada_2022_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_roxadustat/Roxadustat_Takada2022v2_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Roxadustat_Czock2022_healthy_sca&quot;,&quot;label&quot;:&quot;Czock_2022_healthy_sca&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_roxadustat/Roxadustat_Czock2022_healthy_sca.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Roxadustat_Czock2022_kidney_function_normal&quot;,&quot;label&quot;:&quot;Czock_2022_kidney_function_normal&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_roxadustat/Roxadustat_Czock2022_kidney_function_normal.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # roxadustat — `Roxadustat_Takada2022v2_reference`
 
-> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.625). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.15). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -23,7 +23,7 @@
 
 The base model was simulated, not the covariate effects the record defines.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of age_ge_65_y_for_cl: this record has 0.791, the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has roxadustat, the second reading unknown; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -41,13 +41,13 @@ Takada A et al., Population pharmacokinetics of roxadust…, British journal of 
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F (L/h) | `Q27` · CL/F | 0.914 | L/h | 2.538888888888889e-07 | [l] / [h] | not captured | exact (1.0) | bcp15023-tbl-0004:row1:col1, bcp15023-tbl-0004:row1:col2, bcp15023-tbl-0004:row1:col5, bcp15023-tbl-0004:row1:col6 | — | not captured |
-| Vc/F (L) | `Q290` · V1/F | 14.4 | L | 0.014400000000000001 | [l] | not captured | exact (1.0) | bcp15023-tbl-0004:row2:col1, bcp15023-tbl-0004:row2:col2, bcp15023-tbl-0004:row2:col5, bcp15023-tbl-0004:row2:col6 | — | not captured |
-| Ka (h−1) | `Q49` · kabs | 0.639 | h−1 | 0.0001775 | [1] / [h] | not captured | exact (1.0) | bcp15023-tbl-0004:row3:col1, bcp15023-tbl-0004:row3:col2, bcp15023-tbl-0004:row3:col5, bcp15023-tbl-0004:row3:col6 | — | not captured |
-| Q/F (L/h) | `Q69` · Q/F | 0.131 | L/h | 3.6388888888888895e-08 | [l] / [h] | not captured | exact (1.0) | bcp15023-tbl-0004:row4:col1, bcp15023-tbl-0004:row4:col2, bcp15023-tbl-0004:row4:col5, bcp15023-tbl-0004:row4:col6 | — | not captured |
-| Vp/F (L) | `Q82` · V2/F | 2.89 | L | 0.00289 | [l] | not captured | exact (1.0) | bcp15023-tbl-0004:row5:col1, bcp15023-tbl-0004:row5:col2, bcp15023-tbl-0004:row5:col5, bcp15023-tbl-0004:row5:col6 | — | not captured |
-| ALAG1 (h) | `Q89` · t1/2γ | 0.287 | h | 1033.1999999999998 | [h] | not captured | llm (0.6) | bcp15023-tbl-0004:row6:col1, bcp15023-tbl-0004:row6:col2, bcp15023-tbl-0004:row6:col5, bcp15023-tbl-0004:row6:col6 | — | not captured |
-| age_ge_65_y_for_cl | `Q900` · age_ge_65_y_for_cl | 0.791 | not captured | not captured | not captured | not captured | not captured (not captured) | bcp15023-tbl-0004:row13:col1, bcp15023-tbl-0004:row13:col2, bcp15023-tbl-0004:row13:col5, bcp15023-tbl-0004:row13:col6 | — | not captured |
+| CL/F (L/h) | `Q27` · CL/F | 0.923 | L/h | 2.563888888888889e-07 | [l] / [h] | 7.0 | exact (1.0) | bcp15023-tbl-0004:row1:col1 | — | not captured |
+| Vc/F (L) | `Q290` · V1/F | 14.6 | L | 0.0146 | [l] | 9.5 | exact (1.0) | bcp15023-tbl-0004:row2:col1 | — | not captured |
+| Ka (h−1) | `Q49` · kabs | 0.63 | h−1 | 0.000175 | [1] / [h] | 18.3 | exact (1.0) | bcp15023-tbl-0004:row3:col1 | — | not captured |
+| Q/F (L/h) | `Q69` · Q/F | 0.134 | L/h | 3.722222222222222e-08 | [l] / [h] | 48.7 | exact (1.0) | bcp15023-tbl-0004:row4:col1 | — | not captured |
+| Vp/F (L) | `Q82` · V2/F | 2.89 | L | 0.00289 | [l] | 23.0 | exact (1.0) | bcp15023-tbl-0004:row5:col1 | — | not captured |
+| ALAG1 (h) | `Q95` · t1/2ka | 0.287 | h | 1033.1999999999998 | [h] | 2.6 | llm (0.6) | bcp15023-tbl-0004:row6:col1 | — | not captured |
+| theta_q22_age | `Q900` · theta_q22_age | 0.792 | not captured | not captured | not captured | 4.9 | not captured (not captured) | bcp15023-tbl-0004:row13:col1 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -61,32 +61,19 @@ Takada A et al., Population pharmacokinetics of roxadust…, British journal of 
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'SBUSE on F1' — extend the ontology if this is a real PK parameter (source ['bcp15023-tbl-0004:row7:col1', 'bcp15023-tbl-0004:row7:col2', 'bcp15023-tbl-0004:row7:col5', 'bcp15023-tbl-0004:row7:col6'])
-- dropped unlinked row (NIL): 'CUSE on F1' — extend the ontology if this is a real PK parameter (source ['bcp15023-tbl-0004:row8:col1', 'bcp15023-tbl-0004:row8:col2', 'bcp15023-tbl-0004:row8:col5', 'bcp15023-tbl-0004:row8:col6'])
-- dropped unlinked row (NIL): 'LUSE on F1' — extend the ontology if this is a real PK parameter (source ['bcp15023-tbl-0004:row9:col1', 'bcp15023-tbl-0004:row9:col2', 'bcp15023-tbl-0004:row9:col5', 'bcp15023-tbl-0004:row9:col6'])
-- dropped unlinked row (NIL): 'FUSE on F1' — extend the ontology if this is a real PK parameter (source ['bcp15023-tbl-0004:row10:col1', 'bcp15023-tbl-0004:row10:col2', 'bcp15023-tbl-0004:row10:col5', 'bcp15023-tbl-0004:row10:col6'])
-- dropped unlinked row (NIL): 'SCUSE on F1' — extend the ontology if this is a real PK parameter (source ['bcp15023-tbl-0004:row11:col1', 'bcp15023-tbl-0004:row11:col2', 'bcp15023-tbl-0004:row11:col5', 'bcp15023-tbl-0004:row11:col6'])
-- dropped unlinked row (NIL): 'No time separation of PBs in phase 2 on F1' — extend the ontology if this is a real PK parameter (source ['bcp15023-tbl-0004:row12:col1', 'bcp15023-tbl-0004:row12:col2', 'bcp15023-tbl-0004:row12:col5', 'bcp15023-tbl-0004:row12:col6'])
-- covariate level 'Age ≥65 y for CL' → Q900:age_ge_65_y_for_cl = 0.791 (additive_shift on Q27)
+- dropped unlinked row (NIL): 'SBUSE on F1' — extend the ontology if this is a real PK parameter (source ['bcp15023-tbl-0004:row7:col1'])
+- dropped unlinked row (NIL): 'CUSE on F1' — extend the ontology if this is a real PK parameter (source ['bcp15023-tbl-0004:row8:col1'])
+- dropped unlinked row (NIL): 'LUSE on F1' — extend the ontology if this is a real PK parameter (source ['bcp15023-tbl-0004:row9:col1'])
+- dropped unlinked row (NIL): 'FUSE on F1' — extend the ontology if this is a real PK parameter (source ['bcp15023-tbl-0004:row10:col1'])
+- dropped unlinked row (NIL): 'SCUSE on F1' — extend the ontology if this is a real PK parameter (source ['bcp15023-tbl-0004:row11:col1'])
+- dropped unlinked row (NIL): 'No time separation of PBs in phase 2 on F1' — extend the ontology if this is a real PK parameter (source ['bcp15023-tbl-0004:row12:col1'])
+- covariate effect for Q22 has no base parameter row (kept as unattached equation-variable)
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=roxadustat
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- unparsed cell bcp15023-tbl-0004:row1:col3 = '7.0%'
-- unparsed cell bcp15023-tbl-0004:row2:col3 = '9.5%'
-- unparsed cell bcp15023-tbl-0004:row3:col3 = '18.3%'
-- unparsed cell bcp15023-tbl-0004:row4:col3 = '48.7%'
-- unparsed cell bcp15023-tbl-0004:row5:col3 = '23.0%'
-- unparsed cell bcp15023-tbl-0004:row6:col3 = '2.6%'
-- unparsed cell bcp15023-tbl-0004:row7:col3 = '9.5%'
-- unparsed cell bcp15023-tbl-0004:row8:col3 = '7.2%'
-- unparsed cell bcp15023-tbl-0004:row9:col3 = '7.0%'
-- unparsed cell bcp15023-tbl-0004:row10:col3 = '9.7%'
-- unparsed cell bcp15023-tbl-0004:row11:col3 = '21.1%'
-- unparsed cell bcp15023-tbl-0004:row12:col3 = '2.6%'
-- unparsed cell bcp15023-tbl-0004:row13:col3 = '4.9%'
-- unparsed cell bcp15023-tbl-0004:row18:col3 = '26.8%'
-- unparsed cell bcp15023-tbl-0004:row18:col4 = '12.4%'
+- table bcp15023-tbl-0004: conflicting_units
+- table bcp15023-tbl-0004: unparsed_numeric_cell
 - LLM selected parameter table(s) 4
 
 ## Validation
@@ -96,18 +83,29 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.625 (10/16 fields) | 6 |
+| `gpt-oss-120b` | not confirmed | 0.15 (3/20 fields) | 17 |
 
-<details><summary>6 field discrepancies</summary>
+<details><summary>17 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `parameters[age_ge_65_y_for_cl]` | 0.791 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[alag1].parameter_id` | Q89 | Q83 | mismatch |
-| `gpt-oss-120b` | `parameters[cl/f].covariate_forms` | ['additive_shift'] | [] | mismatch |
-| `gpt-oss-120b` | `parameters[cuse on f1]` | not captured | 0.922 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[alag1]` | 0.287 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[alag1]` | not captured | 0.287 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f]` | 0.914 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f]` | not captured | 0.914 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fuse on f1]` | not captured | 0.737 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 0.639 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | not captured | 0.639 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q/f]` | 0.131 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q/f]` | not captured | 0.131 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[sbuse on f1]` | not captured | 0.739 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[theta_q22_age]` | not captured | 0.791 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc/f]` | 14.4 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc/f]` | not captured | 14.4 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vp/f]` | 2.89 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vp/f]` | not captured | 2.89 | only_one_extracted |
+| `gpt-oss-120b` | `screen.primary_analyte` | roxadustat | unknown | mismatch |
 
 </details>
 
@@ -124,18 +122,17 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['bcp15023-tbl-0004:row1:col1', 'bcp15023-tbl-0004:row1:col2', 'bcp15023-tbl-0004:row1:col5', 'bcp15023-tbl-0004:row1:col6'] |
-| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['bcp15023-tbl-0004:row2:col1', 'bcp15023-tbl-0004:row2:col2', 'bcp15023-tbl-0004:row2:col5', 'bcp15023-tbl-0004:row2:col6'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['bcp15023-tbl-0004:row3:col1', 'bcp15023-tbl-0004:row3:col2', 'bcp15023-tbl-0004:row3:col5', 'bcp15023-tbl-0004:row3:col6'] |
-| C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['bcp15023-tbl-0004:row4:col1', 'bcp15023-tbl-0004:row4:col2', 'bcp15023-tbl-0004:row4:col5', 'bcp15023-tbl-0004:row4:col6'] |
-| C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['bcp15023-tbl-0004:row5:col1', 'bcp15023-tbl-0004:row5:col2', 'bcp15023-tbl-0004:row5:col5', 'bcp15023-tbl-0004:row5:col6'] |
-| C5_dimension_Q89 | pass | [time] | not captured | not captured | not captured | ['bcp15023-tbl-0004:row6:col1', 'bcp15023-tbl-0004:row6:col2', 'bcp15023-tbl-0004:row6:col5', 'bcp15023-tbl-0004:row6:col6'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['bcp15023-tbl-0004:row1:col1'] |
+| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['bcp15023-tbl-0004:row2:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['bcp15023-tbl-0004:row3:col1'] |
+| C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['bcp15023-tbl-0004:row4:col1'] |
+| C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['bcp15023-tbl-0004:row5:col1'] |
+| C5_dimension_Q95 | pass | [time] | not captured | not captured | not captured | ['bcp15023-tbl-0004:row6:col1'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 0.914 L/h | not captured | not captured | ['bcp15023-tbl-0004:row1:col1', 'bcp15023-tbl-0004:row1:col2', 'bcp15023-tbl-0004:row1:col5', 'bcp15023-tbl-0004:row1:col6'] |
-| C9_phys_window_Q290 | pass | volume within physiological range | 14.4 L | not captured | not captured | ['bcp15023-tbl-0004:row2:col1', 'bcp15023-tbl-0004:row2:col2', 'bcp15023-tbl-0004:row2:col5', 'bcp15023-tbl-0004:row2:col6'] |
-| C9_phys_window_Q82 | pass | volume within physiological range | 2.89 L | not captured | not captured | ['bcp15023-tbl-0004:row5:col1', 'bcp15023-tbl-0004:row5:col2', 'bcp15023-tbl-0004:row5:col5', 'bcp15023-tbl-0004:row5:col6'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 0.923 L/h | not captured | not captured | ['bcp15023-tbl-0004:row1:col1'] |
+| C9_phys_window_Q290 | pass | volume within physiological range | 14.6 L | not captured | not captured | ['bcp15023-tbl-0004:row2:col1'] |
+| C9_phys_window_Q82 | pass | volume within physiological range | 2.89 L | not captured | not captured | ['bcp15023-tbl-0004:row5:col1'] |
 
 **Reviewer per-scenario checks:**
 
@@ -156,10 +153,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_roxadustat/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Takada_2022_2` / `Takada_2022_2::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_roxadustat/models/modelica/Roxadustat_Takada2022v2_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_roxadustat/models/modelica/Roxadustat_Takada2022v2_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_roxadustat/models/modelica/Roxadustat_Takada2022v2_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_roxadustat/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Takada_2022_2` / `Takada_2022_2::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_roxadustat/models/modelica/Roxadustat_Takada2022v2_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_roxadustat/models/modelica/Roxadustat_Takada2022v2_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_roxadustat/models/modelica/Roxadustat_Takada2022v2_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -168,7 +165,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_roxadustat/Roxadustat_Takada2022v2_reference/Roxadustat_Takada2022v2_reference_modelica.zip" download>Roxadustat_Takada2022v2_reference_modelica.zip</a> <span class="pk-size">(4.6 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_roxadustat/Roxadustat_Takada2022v2_reference/Roxadustat_Takada2022v2_reference_modelica.zip" download>Roxadustat_Takada2022v2_reference_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_roxadustat/Roxadustat_Takada2022v2_reference/Roxadustat_Takada2022v2_reference_fmi.zip" download>Roxadustat_Takada2022v2_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_roxadustat/Roxadustat_Takada2022v2_reference/Roxadustat_Takada2022v2_reference_matlab.zip" download>Roxadustat_Takada2022v2_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_roxadustat/Roxadustat_Takada2022v2_reference/Roxadustat_Takada2022v2_reference_matlab_simbio.zip" download>Roxadustat_Takada2022v2_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
@@ -177,11 +174,11 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_roxadustat/Roxadustat_Takada2022v2_reference/Roxadustat_Takada2022v2_reference.svg" alt="Roxadustat_Takada2022v2_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_roxadustat/Roxadustat_Takada2022v2_reference/Roxadustat_Takada2022v2_reference.svg" alt="Roxadustat_Takada2022v2_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 20 mg, single dose, first-order absorption (ka 0.639 /h, F 1). Doses in the paper: 20–250 mg.
+**Administration: oral** — 20 mg, single dose, first-order absorption (ka 0.63 /h, F 1). Doses in the paper: 20–250 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_roxadustat/Roxadustat_Takada2022v2_reference/Roxadustat_Takada2022v2_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_roxadustat/Roxadustat_Takada2022v2_reference/Roxadustat_Takada2022v2_reference_sim_controls.json"></dbs-fmusim>
 
@@ -190,4 +187,4 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 18:36 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 20:39 UTC</sub>

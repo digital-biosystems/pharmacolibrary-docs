@@ -14,21 +14,42 @@ Telithromycin is a ketolide antibiotic used to treat bacterial respiratory infec
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q2736135](https://www.wikidata.org/wiki/Q2736135) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| telithromycin | parent | 812.018 | C43H65N5O10 | DrugBank | [3002190](https://pubchem.ncbi.nlm.nih.gov/compound/3002190) | Ikawa_2014 |
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 11:35 | 9:35 | 0/0/0 | 0/1/0 | 0/0/0 | 343,152/4,797 | einfracz / qwen3.8-27b | 18 | 3/14 | 18/0 | 0 |
+| 2026-10-13 12:01 | 18:28 | 5/0/0 | 0/0/0 | 0/0/0 | 415,826/65,174 | ollama / qwen3.8:27b-mtp-q8_0 | 18 | 3/15 | 18/0 | 0 |
 
 ## popPK records
 
-_not available_
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> | [Barsam_2017_reference](drugs/drug_telithromycin/Telithromycin_Barsam2017_reference.md) | — | 1-compartment (no model) | 3 | Barsam SJ et al., The impact of body weight on rivaroxaba…, Research and practice in th… (2017) | [10.1002/rth2.12039](https://doi.org/10.1002/rth2.12039) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span> | [Fu_2024_reference](drugs/drug_telithromycin/Telithromycin_Fu2024_reference.md) | — | 1-compartment (no model) | 2 | Fu G et al., An insight into pharmacokinetics and do…, Frontiers in pharmacology (2024) | [10.3389/fphar.2024.1396994](https://doi.org/10.3389/fphar.2024.1396994) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.273). Primary extraction retained.">cross-check: disputed</span> | [Ikawa_2014_reference](drugs/drug_telithromycin/Telithromycin_Ikawa2014_reference.md) | — | 2-compartment (no model) | 7 | Ikawa K et al., Pharmacokinetic modelling of serum and…, Journal of clinical pharmac… (2014) | [10.1111/jcpt.12157](https://doi.org/10.1111/jcpt.12157) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Lee_2025_reference](drugs/drug_telithromycin/Telithromycin_Lee2025_reference.md) | — | 1-compartment (no model) | 2 | Lee J et al., Development and Clinical Validation of…, ACS pharmacology & translat… (2025) | [10.1021/acsptsci.4c00581](https://doi.org/10.1021/acsptsci.4c00581) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span> | [Yaeger_2021_reference](drugs/drug_telithromycin/Telithromycin_Yaeger2021_reference.md) | — | 1-compartment (no model) | 2 | Yaeger M et al., Pharmacokinetics of tulathromycin in pr…, PloS one (2021) | [10.1371/journal.pone.0256862](https://doi.org/10.1371/journal.pone.0256862) |
 
-## Pharmacodynamics (PD)
+## ADME sites
 
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.25). Primary extraction retained.">cross-check: partial</span> | [Nicolau_2004_Bactericidal_activity](drugs/drug_telithromycin/pd_Nicolau_2004_Bactericidal_activity.md) | Bactericidal activity · inhibition effect | — | Nicolau DP, Clinical use of antimicrobial pharmacod…, Expert opinion on pharmacot… (2004) | [10.1517/14656566.5.2.229](https://doi.org/10.1517/14656566.5.2.229) |
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=telithromycin).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| metabolism | liver | `CYP3A4` inhibitor/substrate, `SLCO1B1` inhibitor, `SLCO1B3` inhibitor | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inhibitor/substrate | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -39,8 +60,8 @@ _not available_
 ## Coverage
 
 - **PubMed hits:** 168 matched, 114 returned
-- **screened:** 0  ·  **relevant:** 1
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **screened:** 6  ·  **relevant:** 1
+- **records:** 5  ·  extracted 5  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -70,12 +91,13 @@ _20 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Vieira_2012.pdf` | Vieira ML et al., Predicting drug interaction potential w…, Clinical pharmacology and t… (2012) | pgx | 7 | [10.1038/clpt.2011.305](https://doi.org/10.1038/clpt.2011.305) | [22398966](https://www.ncbi.nlm.nih.gov/pubmed/22398966) | metadata signals extractable PGX data (CYP3A, PK/PD-context) |
 | `Zhanel_2016.pdf` | Zhanel GG et al., Solithromycin: A Novel Fluoroketolide f…, Drugs (2016) | pgx | 7 | [10.1007/s40265-016-0667-z](https://doi.org/10.1007/s40265-016-0667-z) | [27909995](https://www.ncbi.nlm.nih.gov/pubmed/27909995) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 
-<sub>queue written 2026-10-07T11:32:07.071950+00:00</sub>
+<sub>queue written 2026-10-13T11:43:30.703530+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
+| PGx | Abu_2019 | not_relevant | 0 | 0 | The paper reviews drug-drug interactions between statins and macrolides (including telithromycin) but does not report pharmacogenomic effects (gene variants) on PK/PD parameters. |
 | popPK | Alotaiq_2024 | irrelevant | 0 | 0 | The paper is a systematic review of virtual bioequivalence methods and does not contain pharmacokinetic data or parameters for telithromycin. |
 | popPK | Barbour_2010 | irrelevant | 1 | 0 | The paper is a review discussing PK/PD concepts and mentions telithromycin as an example of a drug with high tissue distribution, but it does not report specific quantitative PK parameters or values. |
 | popPK | Barsam_2017 | irrelevant | 0 | 0 | The study is a population pharmacokinetic analysis of rivaroxaban, not telithromycin. |
@@ -109,6 +131,8 @@ _20 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | PGx | Liang_2015 | not_relevant | 0 | 0 | The paper describes structural modifications to a drug molecule to reduce CYP3A4 inhibition (chemical property) and does not report human pharmacogenomic studies linking genetic variants to PK/PD parameters. |
 | popPK | Medina-Aymerich_2025 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for alfentanil, not telithromycin. |
 | PGx | Mendes_2003 | not_relevant | 0 | 0 | The paper reports bacterial resistance to telithromycin (antimicrobial susceptibility) and does not study human pharmacogenomics. |
+| popPK | Mikolajewska_2021 | irrelevant | 0 | 0 | The paper is a systematic review of colchicine for COVID-19 and does not contain any pharmacokinetic data for telithromycin. |
+| popPK | Munckhof_2000 | irrelevant | 0 | 0 | The study reports in vitro postantibiotic effects (PAE) and does not provide pharmacokinetic disposition parameters for telithromycin. |
 | PGx | Munić_2010 | not_relevant | 0 | 0 | The study compares macrolide interaction with MDR1 in cell lines using standard functional assays, but does not report a specific gene variant or genotype changing the PK or PD of telithromycin in humans or a disease model. |
 | popPK | Noori_2024 | irrelevant | 0 | 0 | The study is an in-silico drug discovery paper targeting Helicobacter pylori and does not report pharmacokinetic parameters for telithromycin. |
 | PGx | Nosaka_2006 | not_relevant | 0 | 0 | The paper reports a pharmacokinetic interaction involving drug-drug metabolism (telithromycin inhibiting CYP enzymes affecting theophylline), but does not report a pharmacogenomic effect (gene variant) on the pharmacokinetics or pharmacodynamics of telithromycin itself. |
@@ -117,6 +141,7 @@ _20 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | popPK | Rey_2015 | irrelevant | 0 | 0 | The paper is a review of regorafenib, a different drug, and does not report pharmacokinetic parameters for telithromycin. |
 | PGx | Shain_2002 | not_relevant | 0 | 0 | The paper is a general review of telithromycin's chemistry, pharmacology, and safety, and does not report specific pharmacogenomic effects of gene variants on PK or PD parameters. |
 | PGx | Shakeri-Nejad_2006 | not_relevant | 0 | 0 | The paper is a review of drug-drug interactions (CYP inhibition) and does not discuss pharmacogenomic effects of gene variants on telithromycin. |
+| popPK | Shi_2005 | irrelevant | 2 | 0 | The study is a pharmacodynamic analysis of microbiological efficacy using PK/PD indices (AUC/MIC, Cmax/MIC) rather than reporting quantitative disposition parameters (CL, V, ka) or a population PK model for telithromycin. |
 | PGx | Shi_2005_2 | not_relevant | 0 | 0 | The paper describes general clinical pharmacokinetics of telithromycin but does not report any effects of gene variants, genotypes, or pharmacogenomic phenotypes on PK or PD parameters. |
 | PGx | Shi_2005_3 | not_relevant | 0 | 0 | The study investigates drug-drug interactions (CYP3A4 inhibition by itraconazole/grapefruit juice), not pharmacogenomic effects of specific genetic variants on telithromycin PK/PD. |
 | PGx | Shi_2005_4 | not_relevant | 0 | 0 | The study investigates the effects of renal impairment, age, and drug-drug interaction (ketoconazole), but does not analyze gene variants or genotypes. |
@@ -126,8 +151,9 @@ _20 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | PGx | Vieira_2012 | not_relevant | 0 | 0 | The paper reports on a PBPK model for telithromycin's drug-drug interaction potential via time-dependent CYP3A4 inhibition, but does not mention any gene variants or pharmacogenomic factors. |
 | popPK | Yaeger_2021 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for tulathromycin, not telithromycin. |
 | popPK | Yamashita_2013 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of rifampicin and CYP3A4 substrates to model drug-drug interactions; telithromycin is not the subject drug nor are its parameters reported. |
+| popPK | Zhanel_2016 | irrelevant | 0 | 0 | The paper is a review of solithromycin, and telithromycin is only mentioned as a structural and mechanistic comparator without providing its own quantitative PK parameters. |
 | PGx | Zhanel_2016 | not_relevant | 0 | 0 | The paper describes the pharmacology and clinical trials of solithromycin, not the pharmacogenomics of telithromycin. |
 | PGx | Zhang_2020 | not_relevant | 0 | 0 | The paper is a review on the effects of macrolides on CYP450 enzymes and drug-drug interactions, and does not report pharmacogenomic effects (gene variant/genotype) on telithromycin PK or PD. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2)</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-13 11:43 UTC</sub>

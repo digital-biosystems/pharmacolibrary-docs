@@ -28,9 +28,21 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Shin_2006_I_Ca](drugs/drug_brompheniramine/pd_Shin_2006_I_Ca.md) | I(Ca) ← brompheniramine · direct sigmoid Emax (Hill) effect | — | Shin WH et al., Electrophysiological effects of bromphe…, Pharmacological research (2006) | [10.1016/j.phrs.2006.08.004](https://doi.org/10.1016/j.phrs.2006.08.004) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Shin_2006_I_Na](drugs/drug_brompheniramine/pd_Shin_2006_I_Na.md) | I(Na) ← brompheniramine · direct sigmoid Emax (Hill) effect | — | Shin WH et al., Electrophysiological effects of bromphe…, Pharmacological research (2006) | [10.1016/j.phrs.2006.08.004](https://doi.org/10.1016/j.phrs.2006.08.004) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Shin_2006_I_hERG](drugs/drug_brompheniramine/pd_Shin_2006_I_hERG.md) | I(hERG) ← brompheniramine · direct sigmoid Emax (Hill) effect | — | Shin WH et al., Electrophysiological effects of bromphe…, Pharmacological research (2006) | [10.1016/j.phrs.2006.08.004](https://doi.org/10.1016/j.phrs.2006.08.004) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Shin_2006_I_Ca](drugs/drug_brompheniramine/pd_Shin_2006_I_Ca.md) | I(Ca) ← brompheniramine · direct sigmoid Emax (Hill) effect | — | Shin WH et al., Electrophysiological effects of bromphe…, Pharmacological research (2006) | [10.1016/j.phrs.2006.08.004](https://doi.org/10.1016/j.phrs.2006.08.004) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Shin_2006_I_Na](drugs/drug_brompheniramine/pd_Shin_2006_I_Na.md) | I(Na) ← brompheniramine · direct sigmoid Emax (Hill) effect | — | Shin WH et al., Electrophysiological effects of bromphe…, Pharmacological research (2006) | [10.1016/j.phrs.2006.08.004](https://doi.org/10.1016/j.phrs.2006.08.004) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Shin_2006_I_hERG](drugs/drug_brompheniramine/pd_Shin_2006_I_hERG.md) | I(hERG) ← brompheniramine · direct sigmoid Emax (Hill) effect | — | Shin WH et al., Electrophysiological effects of bromphe…, Pharmacological research (2006) | [10.1016/j.phrs.2006.08.004](https://doi.org/10.1016/j.phrs.2006.08.004) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=brompheniramine).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: CHRM1 (target), CHRM2 (target), CHRM3 (target), CHRM4 (target), CHRM5 (target), HRH1 (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

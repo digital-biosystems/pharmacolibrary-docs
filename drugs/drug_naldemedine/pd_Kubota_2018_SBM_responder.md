@@ -25,7 +25,7 @@
 - **model family:** `categorical`
 - **driver:** `pk_record`
 - **tier:** descriptive
-- **effect:** stimulation/unknown
+- **effect:** stimulation/proportional
 
 ## Citation
 Kubota R et al., Population Pharmacokinetics and Exposur…, Pharmaceutical research (2018)
@@ -36,8 +36,6 @@ Kubota R et al., Population Pharmacokinetics and Exposur…, Pharmaceutical rese
 |---|---|---|---|---|---|---|---|
 | PD (effect) | a | `Q344` · not captured | -0.314 | not captured | not captured | llm (not captured) | Kubota_2018:pdv3 |
 | PD (effect) | b | `Q335` · not captured | 0.0191 | not captured | not captured | llm (not captured) | Kubota_2018:pdv3 |
-| PD (effect) | a | `Q344` · not captured | -0.537 | not captured | not captured | llm (not captured) | Kubota_2018:pdv3 |
-| PD (effect) | b | `Q335` · not captured | 0.0194 | not captured | not captured | llm (not captured) | Kubota_2018:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>

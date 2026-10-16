@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;tioguanine&quot;,&quot;href&quot;:&quot;drugs/drug_tioguanine/&quot;},{&quot;label&quot;:&quot;Bayoumy_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tioguanine_Jiang2025_reference&quot;,&quot;label&quot;:&quot;Jiang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tioguanine/Tioguanine_Jiang2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tioguanine_Leblond2023_reference&quot;,&quot;label&quot;:&quot;Leblond_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tioguanine/Tioguanine_Leblond2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tioguanine_Jiang2025_reference&quot;,&quot;label&quot;:&quot;Jiang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tioguanine/Tioguanine_Jiang2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # tioguanine — `Tioguanine_Bayoumy2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -17,15 +17,13 @@
 
 ### Reviewer guidance
 
-**The tioguanine (6-thioguanine nucleotides) record was rejected because the reported V/F of 270.5 carries the unit L/h instead of L, an implausible magnitude indicating a unit/scale extraction error.**
+**The paper reports none of the model's key parameters.**
 
-The record lists V/F for 6-thioguanine nucleotides as 270.5 with unit L/h, but V/F is a volume of distribution adjusted for bioavailability and should be in litres; the L/h unit belongs to clearance, whose value 21.6 L/h is given separately. This unit/scale mismatch makes the volume parameter fall outside a physiological window, so the model was refused. The remaining parameters, CL/F 21.6 L/h and absorption rate constant 0.33 /h, are consistent with their meanings. Extracted — 6-thioguanine nucleotides: CL/F 21.6 L/h, V/F 270 L/h, kabs 0.33 /h.
+No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading thioguanine → 6-thioguanine nucleotides (metabolism). That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by glm-5.3-flash</sub>
-
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:41:49.596114+00:00) predates the upstream re-run (2026-10-07 17:33:33.324931+00:00). Current validate status: `rejected`.
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `thioguanine`, measured `6-thioguanine nucleotides`.
 
@@ -33,7 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 Bayoumy AB et al., Population Pharmacokinetics Model of Th…, Clinical pharmacokinetics (2025)
   ·  DOI: [10.1007/s40262-025-01532-1](https://doi.org/10.1007/s40262-025-01532-1)
 
-<div class="pk-model-meta" hidden drug="tioguanine" model-id="Tioguanine_Bayoumy2025_reference" status="rejected" stale="true" population="adults with inflammatory bowel disease" measured-compound="6-thioguanine nucleotides" parameterization="apparent_wrt_Fm" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="tioguanine" model-id="Tioguanine_Bayoumy2025_reference" status="rejected" stale="false" population="adults with inflammatory bowel disease" measured-compound="6-thioguanine nucleotides" parameterization="apparent_wrt_Fm" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.
@@ -56,13 +54,17 @@ _No resolved parameters._
 - control_stream: no THETA→param binding found in $PK — route_to_review
 - $THETA(1) has no $PK binding — index may be misassigned
 - apparent-ness: parameterization=apparent_wrt_Fm (metabolite model)
-- theta_crosscheck: skipped (no in-paper final table to compare)
-- template fit: none — other model — not a compartmental parent–metabolite model
+- theta_crosscheck: table present but its labels did not align to bound THETAs (skipped)
+- template fit: none — noncompartmental model — not a compartmental parent–metabolite model
 - status held at route_to_review — not promoted
-- row roles (LLM): model_class=other; 0/3 row label(s) assigned, 0 linked by role
+- row roles (LLM): model_class=noncompartmental; 3/3 row label(s) assigned, 0 linked by role
 - molar mass: no plausible PubChem entry for '6-thioguanine nucleotides' ('6-thioguanine nucleotides') — left in mass units
 - molar mass: none found for '6-thioguanine nucleotides' — its concentrations stay mass-only
 - review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
+
+**Extraction notes:**
+- table Tab2: conflicting_units
+- table Tab2: unparsed_numeric_cell
 
 ## Validation
 
@@ -103,7 +105,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_tioguanine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Bayoumy_2025` / `Bayoumy_2025::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_tioguanine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Bayoumy_2025` / `Bayoumy_2025::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -119,4 +121,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 17:33 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 22:02 UTC</sub>

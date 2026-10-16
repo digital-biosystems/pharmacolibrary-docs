@@ -4,7 +4,7 @@
 
 # cytarabine — `Cytarabine_Wang2019_overall_p_value`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.333). Primary extraction retained.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5), gpt-oss-120b (primary re-run, agreement 0.333). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -20,7 +20,7 @@
 
 No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has cytarabine → unknown (none), the second reading none → none (none); it also differs on 5 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has CPX-351, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -30,9 +30,9 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 Wang Q et al., Population Pharmacokinetics and Exposur…, Journal of clinical pharmac… (2019)
   ·  DOI: [10.1002/jcph.1366](https://doi.org/10.1002/jcph.1366)
 
-<div class="pk-model-meta" hidden drug="cytarabine" model-id="Cytarabine_Wang2019_overall_p_value" status="rejected" stale="false" population="patients with hematologic malignancies (AML, ALL, MDS)" measured-compound="cytarabine" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="cytarabine" model-id="Cytarabine_Wang2019_overall_p_value" status="rejected" stale="false" population="patients with hematologic malignancies" measured-compound="cytarabine" parameterization="mechanistic" topology="1C"></div>
 
-**Model structure:** general linear; no model was built for this record.  
+**Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.
 
 **Parameterization:** mechanistic.
@@ -46,43 +46,41 @@ _No resolved parameters._
 
 **Interpretation flags:**
 - column 'overall p‐value' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- table representations disagree for 'ECOG PS'; source reconciliation required
+- table representations disagree for 'Platelet category'; source reconciliation required
+- table representations disagree for 'WBC category'; source reconciliation required
 - dropped unlinked row (NIL): 'ECOG PS' — extend the ontology if this is a real PK parameter (source ['jcph1366-tbl-0004:row2:col4'])
 - dropped unlinked row (NIL): 'Platelet category' — extend the ontology if this is a real PK parameter (source ['jcph1366-tbl-0004:row7:col4'])
 - dropped unlinked row (NIL): 'WBC category' — extend the ontology if this is a real PK parameter (source ['jcph1366-tbl-0004:row17:col4'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=cytarabine
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - model equation 'θi = θ× exp (ηi)where θ' not bound — neither LHS nor base term 'θ' linked to an ontology parameter
 - status held at route_to_review — not promoted
-- population split: 'overall p‐value' subgroup of Wang_2019 (paper reports 2 populations: overall p‐value, total cytarabine)
+- population split: 'overall p‐value' subgroup of Wang_2019 (paper reports 3 populations: overall p‐value, population estimateᵃ, population estimateᵇ)
 - review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
-- unparsed cell jcph1366-tbl-0004:row2:col2 = '64/262 (24.4)'
-- unparsed cell jcph1366-tbl-0004:row2:col3 = '0.429 (0.249–0.738)'
-- unparsed cell jcph1366-tbl-0004:row7:col2 = '162/262 (61.8)'
-- unparsed cell jcph1366-tbl-0004:row7:col3 = '1.460 (1.039–2.052)'
-- unparsed cell jcph1366-tbl-0004:row17:col2 = '227/263 (86.3)'
-- unparsed cell jcph1366-tbl-0004:row17:col3 = '0.459 (0.298–0.706)'
-- unparsed cell Wang_2019_table_2:row1:col2 = '61.0%'
-- unparsed cell Wang_2019_table_2:row1:col4 = '49.3%'
-- unparsed cell Wang_2019_table_2:row2:col2 = '24.7%'
-- unparsed cell Wang_2019_table_2:row2:col4 = '23.7%'
-- unparsed cell Wang_2019_table_2:row3:col4 = '69.3%'
-- unparsed cell Wang_2019_table_2:row4:col4 = '86.9%'
-- companion parameter table 2 transcribed (8 record(s))
+- table jcph1366-tbl-0004: unbound_uncertainty
+- table jcph1366-tbl-0004: missing_label
+- table jcph1366-tbl-0004: units_need_context
+- table jcph1366-tbl-0004: unparsed_numeric_cell
+- table jcph1366-tbl-0004: representations disagree; selected evidence retained, not merged
+- table Wang_2019_table_2: conflicting_units
+- companion parameter table 2 transcribed (18 record(s))
 - LLM selected parameter table(s) 2
 - captured model equation θi = θ× exp (ηi)where θ
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss:120b` | not confirmed | 0.5 (2/4 fields) | 2 |
 | `gpt-oss-120b` | primary re-run | 0.333 (3/9 fields) | 6 |
 
-<details><summary>6 field discrepancies</summary>
+<details><summary>8 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -92,6 +90,8 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | `gpt-oss-120b` | `parameters[q]` | not captured | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[vc]` | not captured | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[vp]` | not captured | not captured | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | CPX-351 | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | cytarabine | unknown | mismatch |
 
 </details>
 
@@ -107,7 +107,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
 | C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
-| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none'] | not captured | not captured | not captured |
+| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -116,7 +116,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_cytarabine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Wang_2019` / `Wang_2019::overall_p_value`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_cytarabine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Wang_2019` / `Wang_2019::overall_p_value`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -132,4 +132,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 16:40 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 03:22 UTC</sub>

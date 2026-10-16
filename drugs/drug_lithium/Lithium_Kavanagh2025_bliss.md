@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05A&quot;,&quot;href&quot;:&quot;atc/N05A.md&quot;},{&quot;label&quot;:&quot;lithium&quot;,&quot;href&quot;:&quot;drugs/drug_lithium/&quot;},{&quot;label&quot;:&quot;Kavanagh_2025 \u00b7 bliss&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lithium_Chen2025_reference&quot;,&quot;label&quot;:&quot;Chen_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lithium/Lithium_Chen2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lithium_Dickinson2026_reference&quot;,&quot;label&quot;:&quot;Dickinson_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lithium/Lithium_Dickinson2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lithium_Gijsen2021_reference&quot;,&quot;label&quot;:&quot;Gijsen_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lithium/Lithium_Gijsen2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lithium_Morse2025_reference&quot;,&quot;label&quot;:&quot;Morse_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lithium/Lithium_Morse2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lithium_Silva2023_reference&quot;,&quot;label&quot;:&quot;Silva_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lithium/Lithium_Silva2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lithium_Christie2025_reference&quot;,&quot;label&quot;:&quot;Christie_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lithium/Lithium_Christie2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lithium_Jermain1991_reference&quot;,&quot;label&quot;:&quot;Jermain_1991_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lithium/Lithium_Jermain1991_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lithium_Min2025_reference&quot;,&quot;label&quot;:&quot;Min_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lithium/Lithium_Min2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lithium_Yu2016_reference&quot;,&quot;label&quot;:&quot;Yu_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lithium/Lithium_Yu2016_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lithium_Adamiszak2025_reference&quot;,&quot;label&quot;:&quot;Adamiszak_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lithium/Lithium_Adamiszak2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lithium_Chen2025_reference&quot;,&quot;label&quot;:&quot;Chen_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lithium/Lithium_Chen2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lithium_Dickinson2026_reference&quot;,&quot;label&quot;:&quot;Dickinson_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lithium/Lithium_Dickinson2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lithium_Gijsen2021_reference&quot;,&quot;label&quot;:&quot;Gijsen_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lithium/Lithium_Gijsen2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lithium_Silva2023_reference&quot;,&quot;label&quot;:&quot;Silva_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lithium/Lithium_Silva2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lithium_Christie2025_reference&quot;,&quot;label&quot;:&quot;Christie_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lithium/Lithium_Christie2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lithium_Jermain1991_reference&quot;,&quot;label&quot;:&quot;Jermain_1991_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lithium/Lithium_Jermain1991_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lithium_Min2025_reference&quot;,&quot;label&quot;:&quot;Min_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lithium/Lithium_Min2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lithium_Yu2016_reference&quot;,&quot;label&quot;:&quot;Yu_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lithium/Lithium_Yu2016_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # lithium — `Lithium_Kavanagh2025_bliss`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.462). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.462). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -17,13 +17,13 @@
 
 ### Reviewer guidance
 
-**The lithium record was rejected because the daily dose of 794 mg/day was placed in the zero-order input duration parameter D1, a dimension mismatch on a structural parameter.**
+**This paper's disposition core is incomplete; the clearance plausibility check could not be computed.**
 
-In the Kavanagh_2025 lithium model, the parameter D1 is defined as the duration of a zero-order input into the dosing compartment, but the extracted value 794 mg/day is the lithium dose, so the units and meaning do not match. Because the reported unit (mg/day) could not be converted to a standard unit, the parameter reached the model builder without an SI value. The remaining parameters (V 0.7 L/kg, kabs 1.03 h−1, tlag 0.186 h, CLR 113 mL/min, Css 0.75 mmol/L) show no such conflict. Extracted — lithium: D1 794 mg/day, CLR 113 mL/min, Css 0.75 mmol/L, V 0.7 L/kg, kabs 1.03 h−1, tlag 0.186 h.
+A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Adamiszak_2025, Chen_2025, Dickinson_2026) cannot stand in for this paper's evidence. The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — lithium: CLu 113 mL/min, V 0.7 L/kg, kabs 1.46 h−1, tlag 0.836 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[creatinine clearance (ml/min)*].parameter_id`: this record has Q26, the second reading Q22; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by glm-5.3-flash</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `lithium carbonate`, measured `lithium`.
 
@@ -31,25 +31,22 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parame
 Kavanagh ON et al., A one-compartment model provides benchm…, Journal of psychopharmacolo… (2025)
   ·  DOI: [10.1177/02698811251378508](https://doi.org/10.1177/02698811251378508)
 
-<div class="pk-model-meta" hidden drug="lithium" model-id="Lithium_Kavanagh2025_bliss" status="rejected" stale="false" population="adults with bipolar disorder on stable lithium doses" measured-compound="lithium" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="lithium" model-id="Lithium_Kavanagh2025_bliss" status="needs_review" stale="false" population="adults with bipolar disorder" measured-compound="lithium" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 6 extracted.
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Height (cm) | `Q900` · equation variable | 170 | cm | not captured | [cm] | not captured | llm (0.6) | table1-02698811251378508:row4:col1 | — | not captured |
-| Lithium dose (mg/day) | `Q310` · D1 | 794 | mg/day | not captured | [mg] / [d] | not captured | llm (0.6) | table1-02698811251378508:row7:col1 | — | not captured |
-| Creatinine clearance (mL/min)* | `Q26` · CLR | 113 | mL/min | 1.8833333333333332e-06 | L/h | not captured | llm_corrected (0.6) | table1-02698811251378508:row8:col1 | — | not captured |
-| Serum lithium (mmol/L) | `Q34` · Css | 0.75 | mmol/L | not captured | [mM] / [l] | not captured | llm (0.6) | table1-02698811251378508:row9:col1 | — | not captured |
-| lithium volume of distribution | `Q61` · V | 0.7 | L/kg | 0.049 | L | not captured | boundary (0.8) | Kavanagh_2025:discussion_prose | — | not captured |
-| Ka * (h−1) | `Q49` · kabs | 1.03 | h−1 | 0.0002861111111111111 | 1/h | not captured | review_gapfill (0.7) | Aurélie_2023:review | — | not captured |
-| Tlag (h) | `Q83` · tlag | 0.186 | h | 669.6 | h | not captured | review_gapfill (0.7) | Aurélie_2023:review | — | not captured |
+| Creatinine clearance (mL/min)* | `Q24` · CLu | 113 | mL/min | 1.8833333333333332e-06 | [ml] / [min] | not captured | llm_corrected (0.6) | table1-02698811251378508:row8:col1 | — | not captured |
+| volume of distribution (V) | `Q61` · V | 0.7 | L/kg | 0.049 | L | not captured | review_gapfill (0.7) | Adamiszak_2025:review | — | not captured |
+| Ka | `Q49` · kabs | 1.46 | h−1 | 0.00040555555555555554 | 1/h | not captured | review_gapfill (0.7) | Chen_2025:review | — | not captured |
+| Lag time (h) | `Q83` · tlag | 0.836 | h | 3009.6 | h | not captured | review_gapfill (0.7) | Dickinson_2026:review | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -60,21 +57,23 @@ Kavanagh ON et al., A one-compartment model provides benchm…, Journal of psych
 
 **Interpretation flags:**
 - dropped unlinked row (NIL): 'Age (years)' — extend the ontology if this is a real PK parameter (source ['table1-02698811251378508:row3:col1'])
+- dropped unlinked row (NIL): 'Height (cm)' — extend the ontology if this is a real PK parameter (source ['table1-02698811251378508:row4:col1'])
 - dropped unlinked row (NIL): 'Weight (kg)' — extend the ontology if this is a real PK parameter (source ['table1-02698811251378508:row5:col1'])
 - dropped unlinked row (NIL): 'BMI' — extend the ontology if this is a real PK parameter (source ['table1-02698811251378508:row6:col1'])
-- unit_dimension_mismatch: 'Lithium dose (mg/day)' → Q310 (unit '[mass] / [time]' vs ontology '[time]') — route to review
-- unit_dimension_unknown: 'female:male' (CLR)
-- unit_dimension_mismatch: 'Serum lithium (mmol/L)' → Q34 (unit '[substance] / [length] ** 3' vs ontology '[mass] / [length] ** 3') — route to review
-- salvaged Q61 ('lithium volume of distribution'=0.7) from results prose — parameter table was unreadable
-- implicit units: 'Creatinine clearance (mL/min)*' → mL/min (from the paper text: "Table 1 lists the parameter as 'Creatinine clearance (mL/min)*', explicitly stating the unit mL/min in the table text.")
+- dropped unlinked row (NIL): 'Lithium dose (mg/day)' — extend the ontology if this is a real PK parameter (source ['table1-02698811251378508:row7:col1'])
+- dropped unlinked row (NIL): 'Serum lithium (mmol/L)' — extend the ontology if this is a real PK parameter (source ['table1-02698811251378508:row9:col1'])
+- table mostly unlinked (6/7 table-cell rows NIL) — likely the wrong table was located, not 1 genuinely-missing ontology parameter(s); route_to_review instead of building a model from the residual linked cell(s)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=lithium
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
 - population split: 'bliss' subgroup of Kavanagh_2025 (paper reports 2 populations: bipolith, bliss)
+- gap-filled Q61 (V) from Adamiszak_2025's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Aurélie_2023's review values (primary lacked it)
-- gap-filled Q83 (tlag) from Aurélie_2023's review values (primary lacked it)
+- gap-filled Q49 (kabs) from Chen_2025's review values (primary lacked it)
+- gap-filled Q83 (tlag) from Dickinson_2026's review values (primary lacked it)
+
+**Extraction notes:**
+- table table1-02698811251378508: unparsed_numeric_cell
 
 ## Validation
 
@@ -109,16 +108,17 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q26 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['table1-02698811251378508:row8:col1'] |
-| C5_dimension_Q310 | fail | [mass] / [time] | mg/day | not captured | not captured | ['table1-02698811251378508:row7:col1'] |
-| C5_dimension_Q34 | fail | [substance] / [length] ** 3 | mmol/L | not captured | not captured | ['table1-02698811251378508:row9:col1'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Aurélie_2023:review'] |
-| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Aurélie_2023:review'] |
+| C5_dimension_Q24 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['table1-02698811251378508:row8:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Chen_2025:review'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Adamiszak_2025:review'] |
+| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Dickinson_2026:review'] |
+| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 113.0 | not captured | not captured | ['table1-02698811251378508:row8:col1'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q61 | pass | volume within physiological range | 49 L | not captured | not captured | ['Kavanagh_2025:discussion_prose'] |
+| C9_phys_window_Q24 | pass | clearance within physiological range | 6.78 L/h | not captured | not captured | ['table1-02698811251378508:row8:col1'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 49 L | not captured | not captured | ['Adamiszak_2025:review'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -127,14 +127,24 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_lithium/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kavanagh_2025` / `Kavanagh_2025::bliss`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_lithium/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kavanagh_2025` / `Kavanagh_2025::bliss`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -143,4 +153,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 16:25 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 20:49 UTC</sub>

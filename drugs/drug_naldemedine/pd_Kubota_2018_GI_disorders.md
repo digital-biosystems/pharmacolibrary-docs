@@ -25,7 +25,7 @@
 - **model family:** `categorical`
 - **driver:** `pk_record`
 - **tier:** descriptive
-- **effect:** stimulation/unknown
+- **effect:** stimulation/proportional
 
 ## Citation
 Kubota R et al., Population Pharmacokinetics and Exposur…, Pharmaceutical research (2018)

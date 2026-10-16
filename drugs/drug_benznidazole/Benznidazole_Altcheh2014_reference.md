@@ -5,7 +5,7 @@
 
 # benznidazole — `Benznidazole_Altcheh2014_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -17,9 +17,9 @@
 
 ### Reviewer guidance
 
-**Only clearance was extracted — no volume.**
+**The paper reports none of the model's key parameters.**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Extracted — benznidazole: CL/F 0.0806 L/Kg/hr.
+No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
 
 Independently confirmed by `gpt-oss-120b`.
 
@@ -29,42 +29,38 @@ Independently confirmed by `gpt-oss-120b`.
 Altcheh J et al., Population pharmacokinetic study of ben…, PLoS neglected tropical dis… (2014)
   ·  DOI: [10.1371/journal.pntd.0002907](https://doi.org/10.1371/journal.pntd.0002907)
 
-<div class="pk-model-meta" hidden drug="benznidazole" model-id="Benznidazole_Altcheh2014_reference" status="needs_review" stale="false" population="children 2-12 years with Chagas disease (with adult literature data)" measured-compound="benznidazole" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="benznidazole" model-id="Benznidazole_Altcheh2014_reference" status="rejected" stale="false" population="children with Chagas disease and adults" measured-compound="benznidazole" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 1 extracted.
+**Parameters:** 0 extracted, plus 2 covariate effects.
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| CL/F (L/Kg/hr) | `Q27` · CL/F | 0.0806 | L/Kg/hr | 1.5672222222222224e-06 | [l] / [[h] · [kg]] | not captured | exact (1.0) | Altcheh_2014_table_3:row0:col1, Altcheh_2014_table_3:row0:col2, Altcheh_2014_table_3:row0:col3 | — | not captured |
+_No resolved parameters._
 
-<details class="legend">
-<summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
-</details>
+### Unresolved rows _(no Q-code or no value — not parameters)_
+| label (paper) | Q-code | value | link |
+|---|---|---|---|
+| CL/F (L/h) | Q27 | not captured | exact |
+| theta_q76_wt_v_f_l_b0_b1 | Q900 | not captured | not captured |
+| theta_cl_f_age_power | Q900 | not captured | not captured |
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped value-less row: 'V/F (L) b0+b1×WT'
-- dropped value-less row: 'CL/F (L/h) b0+b1×AGE+ (WT/70)∧b2'
-- dropped value-less row: 'CL/F (L/h)' (captured trailing unit 'L/h' for child rows)
+- covariate effect for Q76 has no base parameter row (kept as unattached equation-variable)
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=benznidazole
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
-- unparsed cell pntd-0002907-t002:row3:col2 = '27.05% [5;17%]'
-- unparsed cell pntd-0002907-t002:row4:col2 = '43.35% [34;100%]'
-- unparsed cell Altcheh_2014_table_1:row3:col2 = '61.6% [33.5;90.3%]'
+- table pntd-0002907-t002: unparsed_numeric_cell
+- final table pntd-0002907-t002: no supported point estimates; targeted recovery unresolved
+- table Altcheh_2014_table_1: unparsed_numeric_cell
 - companion parameter table 1 transcribed (1 record(s))
-- companion parameter table 3 transcribed (3 record(s))
-- LLM selected parameter table(s) 1, 2, 3
+- LLM selected parameter table(s) 1, 2
 
 ## Validation
 
@@ -87,13 +83,12 @@ _All readers agree on the compared fields of this record._
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Altcheh_2014_table_3:row0:col1', 'Altcheh_2014_table_3:row0:col2', 'Altcheh_2014_table_3:row0:col3'] |
+| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
+| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
+| C2_reference | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Altcheh_2014_table_1:row3:col1'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 5.64 L/h | not captured | not captured | ['Altcheh_2014_table_3:row0:col1', 'Altcheh_2014_table_3:row0:col2', 'Altcheh_2014_table_3:row0:col3'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -102,24 +97,14 @@ _All readers agree on the compared fields of this record._
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_benznidazole/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Altcheh_2014` / `Altcheh_2014::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_benznidazole/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Altcheh_2014` / `Altcheh_2014::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-</tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -128,4 +113,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 07:36 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 19:12 UTC</sub>

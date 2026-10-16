@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01M&quot;,&quot;href&quot;:&quot;atc/J01M.md&quot;},{&quot;label&quot;:&quot;nemonoxacin&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nemonoxacin_Wu2024_reference&quot;,&quot;label&quot;:&quot;Wu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nemonoxacin/Nemonoxacin_Wu2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Nemonoxacin_Chen2023_reference&quot;,&quot;label&quot;:&quot;Chen_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nemonoxacin/Nemonoxacin_Chen2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # nemonoxacin
 
@@ -20,26 +21,30 @@ Nemonoxacin is a quinolone antibacterial developed as an antibiotic for bacteria
 
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
-| nemonoxacin | parent | 371.437 | C20H25N3O4 | DrugBank | — | Chen_2023 |
+| nemonoxacin | parent | 371.437 | C20H25N3O4 | DrugBank | — | Chen_2023, Kang_2019, Li_2021_2 |
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 12:39 | 2:56 | 0/0/2 | 1/0/0 | 0/0/0 | 103,184/6,500 | einfracz / qwen3.8-27b | 5 | 0/5 | 5/0 | 0 |
+| 2026-10-14 23:22 | 3:34 | 1/1/2 | 0/0/0 | 0/0/0 | 204,952/15,575 | einfracz / qwen3.8-27b | 5 | 0/5 | 5/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.235). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: model_quarantined: F, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Chen_2023_bias](drugs/drug_nemonoxacin/Nemonoxacin_Chen2023_bias.md) | held back | 1-compartment, oral | 6 | Chen Y et al., Integrative population pharmacokinetic/…, Frontiers in pharmacology (2023) | [10.3389/fphar.2023.912962](https://doi.org/10.3389/fphar.2023.912962) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.294). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22, Q64, Q30, Q77, Q49, Q83 — no S…</sub><br><sub>route_to: `human_review`</sub> | [Chen_2023_estimate_based_on_original_dataset](drugs/drug_nemonoxacin/Nemonoxacin_Chen2023_estimate_based_on_original_dataset.md) | — | 1-compartment (no model) | 6 | Chen Y et al., Integrative population pharmacokinetic/…, Frontiers in pharmacology (2023) | [10.3389/fphar.2023.912962](https://doi.org/10.3389/fphar.2023.912962) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Wu_2024_reference](drugs/drug_nemonoxacin/Nemonoxacin_Wu2024_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Wu RL et al., Determination of Nemonoxacin in Small V…, Drug design, development an… (2024) | [10.2147/DDDT.S476173](https://doi.org/10.2147/DDDT.S476173) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T1_cmax</sub><br><sub>blocking: unreported model parameter default(s): F</sub><br><sub>route_to: `scholar`</sub> | [Chen_2023_reference](drugs/drug_nemonoxacin/Nemonoxacin_Chen2023_reference.md) | ▶ model + simulator | 1-compartment, oral | 8 | Chen Y et al., Integrative population pharmacokinetic/…, Frontiers in pharmacology (2023) | [10.3389/fphar.2023.912962](https://doi.org/10.3389/fphar.2023.912962) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub><br><sub>route_to: `human_review`</sub> | [Kang_2019_reference](drugs/drug_nemonoxacin/Nemonoxacin_Kang2019_reference.md) | — | 1-compartment (no model) | 4 | Kang Y et al., Population Pharmacokinetics Study of Ne…, Clinical therapeutics (2019) | [10.1016/j.clinthera.2019.01.015](https://doi.org/10.1016/j.clinthera.2019.01.015) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">mouse</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Li_2021_2_reference](drugs/drug_nemonoxacin/Nemonoxacin_Li2021v2_reference.md) | — | 2-compartment (no model) | 3 | Li Y et al., Nemonoxacin dosage adjustment in patien…, British journal of clinical… (2021) | [10.1111/bcp.14881](https://doi.org/10.1111/bcp.14881) |
 
-## Pharmacodynamics (PD)
+## ADME sites
 
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">mouse</span> | [Li_2021_Log10CFU](drugs/drug_nemonoxacin/pd_Li_2021_Log10CFU.md) | log10 change in CFU per gram lung ← nemonoxacin · direct sigmoid Emax (Hill) effect | — | Li X et al., Pharmacokinetics and Pharmacodynamics o…, Frontiers in pharmacology (2021) | [10.3389/fphar.2021.658558](https://doi.org/10.3389/fphar.2021.658558) |
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=nemonoxacin).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | `CYP1A2` inhibitor | DrugBank actor |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,27 +55,29 @@ Nemonoxacin is a quinolone antibacterial developed as an antibiotic for bacteria
 ## Coverage
 
 - **PubMed hits:** 10 matched, 10 returned
-- **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 0  ·  needs_review 2  ·  rejected 0  ·  stale 0
+- **screened:** 6  ·  **relevant:** 5
+- **records:** 4  ·  extracted 1  ·  needs_review 2  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
 
-_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Kang_2019.pdf` | Kang Y et al., Population Pharmacokinetics Study of Ne…, Clinical therapeutics (2019) | popPK | 10 | [10.1016/j.clinthera.2019.01.015](https://doi.org/10.1016/j.clinthera.2019.01.015) | [30819510](https://pubmed.ncbi.nlm.nih.gov/30819510) | The study reports a population PK model for nemonoxacin in humans, but the specific numeric values for CL, V, and Q are not explicitly listed in the provided text (only AUC is given), implying detailed parameters are in the full text or tables not included here. |
+| `Kang_2019.pdf` | Kang Y et al., Population Pharmacokinetics Study of Ne…, Clinical therapeutics (2019) | popPK | 10 | [10.1016/j.clinthera.2019.01.015](https://doi.org/10.1016/j.clinthera.2019.01.015) | [30819510](https://pubmed.ncbi.nlm.nih.gov/30819510) | The study reports a population PK model for nemonoxacin in humans, providing specific AUC values and model structure, though specific CL, V, and Q parameter estimates are not listed in the provided abstract text. |
+| `Li_2021_2.pdf` | Li Y et al., Nemonoxacin dosage adjustment in patien…, British journal of clinical… (2021) | popPK | 10 | [10.1111/bcp.14881](https://doi.org/10.1111/bcp.14881) | [33928669](https://pubmed.ncbi.nlm.nih.gov/33928669) | The paper reports specific population pharmacokinetic parameters (CL, Vc, Vp) for nemonoxacin in humans, with values clearly listed in the abstract. |
 
-<sub>queue written 2026-10-07T12:37:17.470218+00:00</sub>
+<sub>queue written 2026-10-14T23:19:16.190191+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Huang_2022 | irrelevant | 0 | 0 | This is an in-vitro pharmacodynamic study focusing on antibacterial efficacy and resistance, not a pharmacokinetic study reporting disposition parameters for nemonoxacin. |
-| popPK | Kang_2019 | relevant | 10 | 4 | The study reports a population PK model for nemonoxacin in humans, but the specific numeric values for CL, V, and Q are not explicitly listed in the provided text (only AUC is given), implying detailed parameters are in the full text or tables not included here. |
-| popPK | Yuan_2022 | irrelevant | 0 | 0 | The paper is a safety systematic review that discusses pharmacokinetics only to support dose adjustment decisions, without reporting specific quantitative PK parameter values (CL, V, etc.). |
+| popPK | Huang_2022 | irrelevant | 0 | 0 | The study is an in vitro dynamic PK/PD model of vancomycin-nemonoxacin combinations in MRSA, and it reports no population PK parameters (CL, V, ka, etc.) for nemonoxacin in a biological system. |
+| popPK | Liang_2013 | irrelevant | 2 | 0 | This is an in vitro pharmacodynamic study simulating PK, and no original quantitative disposition parameters (CL, V, ka) for nemonoxacin are reported in the provided evidence. |
+| popPK | Qi_2026 | irrelevant | 2 | 2 | The study is an in-vitro dynamic PK/PD simulation using synthetic human urine and bacterial isolates, reporting PK/PD targets (AUC/MIC) and simulated concentrations rather than in-vivo quantitative disposition parameters (CL, V, ka, t1/2) for the drug itself. |
+| popPK | Yuan_2022 | irrelevant | 2 | 0 | This is a systematic review focused on safety and adverse events, not a primary PK study reporting quantitative disposition parameters (CL, V, t1/2). |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 12:37 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-14 23:19 UTC</sub>

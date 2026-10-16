@@ -20,9 +20,9 @@
 
 **Model:** No model was generated from this record.
 
-> Terbutaline concentration (nM) produces relaxation of equine tracheal muscle strips precontracted with 40 nM carbachol, described by an Emax (direct stimulation) model with EC50 = 13.8 nM; the paper excerpts do not state further mechanism or additional parameters.
+> The paper does not provide full text to describe the specific mechanism of action or rate constants. The record indicates an Emax model where terbutaline stimulates the relaxation of equine tracheal muscle strips precontracted with 40 nM carbachol, with an EC50 of 13.8 nM.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
 
 - **paper:** `Törneke_1998`
 - **model family:** `emax`

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;rivaroxaban&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/&quot;},{&quot;label&quot;:&quot;Ren_2026 \u00b7 chinese_pe&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rivaroxaban_Esmaeili2022_reference&quot;,&quot;label&quot;:&quot;Esmaeili_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Esmaeili2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Jia2026_reference&quot;,&quot;label&quot;:&quot;Jia_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Jia2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Liu2022_sequential_modeling&quot;,&quot;label&quot;:&quot;Liu_2022_sequential_modeling&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Liu2022_sequential_modeling.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Liu2022_simultaneous_modeling&quot;,&quot;label&quot;:&quot;Liu_2022_simultaneous_modeling&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Liu2022_simultaneous_modeling.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Ren2026_caucasian_dvt&quot;,&quot;label&quot;:&quot;Ren_2026_caucasian_dvt&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_caucasian_dvt.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Ren2026_caucasian_nvaf&quot;,&quot;label&quot;:&quot;Ren_2026_caucasian_nvaf&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_caucasian_nvaf.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Ren2026_caucasian_vte&quot;,&quot;label&quot;:&quot;Ren_2026_caucasian_vte&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_caucasian_vte.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Ren2026_chinese_dvt&quot;,&quot;label&quot;:&quot;Ren_2026_chinese_dvt&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_chinese_dvt.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Ren2026_chinese_nvaf&quot;,&quot;label&quot;:&quot;Ren_2026_chinese_nvaf&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_chinese_nvaf.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Ren2026_chinese_pe&quot;,&quot;label&quot;:&quot;Ren_2026_chinese_pe&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_chinese_pe.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Rivaroxaban_Ren2026_japanese_nvaf&quot;,&quot;label&quot;:&quot;Ren_2026_japanese_nvaf&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_japanese_nvaf.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rivaroxaban_Jia2026_reference&quot;,&quot;label&quot;:&quot;Jia_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Jia2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Li2025_base&quot;,&quot;label&quot;:&quot;Li_2025_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Li2025_base.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Li2025_final&quot;,&quot;label&quot;:&quot;Li_2025_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Li2025_final.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Liu2022_sequential_modeling_estimates_rse&quot;,&quot;label&quot;:&quot;Liu_2022_sequential_modeling_estimates_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Liu2022_sequential_modeling_estimates_rse.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Liu2022_simultaneous_modeling_estimates_rse&quot;,&quot;label&quot;:&quot;Liu_2022_simultaneous_modeling_estimates_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Liu2022_simultaneous_modeling_estimates_rse.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Ren2026_caucasian_dvt&quot;,&quot;label&quot;:&quot;Ren_2026_caucasian_dvt&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_caucasian_dvt.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Ren2026_caucasian_nvaf&quot;,&quot;label&quot;:&quot;Ren_2026_caucasian_nvaf&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_caucasian_nvaf.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Ren2026_caucasian_vte&quot;,&quot;label&quot;:&quot;Ren_2026_caucasian_vte&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_caucasian_vte.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Ren2026_chinese_dvt&quot;,&quot;label&quot;:&quot;Ren_2026_chinese_dvt&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_chinese_dvt.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Ren2026_chinese_nvaf&quot;,&quot;label&quot;:&quot;Ren_2026_chinese_nvaf&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_chinese_nvaf.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Ren2026_chinese_pe&quot;,&quot;label&quot;:&quot;Ren_2026_chinese_pe&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_chinese_pe.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Rivaroxaban_Ren2026_estimate&quot;,&quot;label&quot;:&quot;Ren_2026_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_estimate.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Ren2026_japanese_nvaf&quot;,&quot;label&quot;:&quot;Ren_2026_japanese_nvaf&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_japanese_nvaf.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Esmaeili2022_reference&quot;,&quot;label&quot;:&quot;Esmaeili_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Esmaeili2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Esmaeili_2022_anti_factor_Xa_activity&quot;,&quot;label&quot;:&quot;Esmaeili_2022 \u00b7 anti-factor Xa activity&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/pd_Esmaeili_2022_anti_factor_Xa_activity.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # rivaroxaban — `Rivaroxaban_Ren2026_chinese_pe`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -19,7 +19,7 @@
 
 **Every check that could be run on this record passed.**
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has rivaroxaban, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has rivaroxaban, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -37,7 +37,7 @@ Ren J et al., Population pharmacokinetic and pharmaco…, Research and practice 
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Ka (/h) | `Q49` · kabs | 1.25 | /h | 0.00034722222222222224 | [1] / [h] | not captured | exact (1.0) | Ren_2026_table_5:row1:col1 | — | not captured |
+| Ka (1/h) | `Q49` · kabs | 1.25 | 1/h | 0.00034722222222222224 | [1] / [h] | not captured | exact (1.0) | Ren_2026_table_5:row1:col1 | — | not captured |
 | CL/F (L/h) | `Q27` · CL/F | 6.13 | L/h | 1.7027777777777778e-06 | [l] / [h] | not captured | exact (1.0) | Ren_2026_table_5:row2:col1 | — | not captured |
 | Central V/F (L) | `Q76` · V/F | 53.0 | L | 0.053 | [l] | not captured | boundary_compartment (0.9) | Ren_2026_table_5:row3:col1 | — | not captured |
 
@@ -55,24 +55,17 @@ Ren J et al., Population pharmacokinetic and pharmaco…, Research and practice 
 **Interpretation flags:**
 - column 'chinese pe' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - dropped unlinked row (NIL): 'Baselines(s)' — extend the ontology if this is a real PK parameter (source ['Ren_2026_table_5:row5:col1'])
-- dropped PD-category row 'Slope (s/[μg/L])' → Q335 (slope, category G13) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Ren_2026_table_5:row6:col1'])
-- dropped value-less row: 'CI'
-- dropped value-less row: 'CL/F'
-- dropped value-less row: 'CV'
-- dropped value-less row: 'Ka'
-- dropped value-less row: 'V/F'
+- dropped PD-category row 'Slope (s/(μg/L))' → Q335 (slope, category G13) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Ren_2026_table_5:row6:col1'])
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=rivaroxaban
 - 1C volume normalization: Q290→Q76 (single-compartment model has no central/peripheral split; 'Central V/F (L)' is the general volume)
-- population split: 'chinese pe' subgroup of Ren_2026 (paper reports 7 populations: caucasian dvt, caucasian nvaf, caucasian vte, chinese dvt, chinese nvaf, chinese pe, japanese nvaf)
+- population split: 'chinese pe' subgroup of Ren_2026 (paper reports 8 populations: caucasian dvt, caucasian nvaf, caucasian vte, chinese dvt, chinese nvaf, chinese pe, estimate, japanese nvaf)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- unparsed cell tbl2:row6:col4 = '(−0.391 to −0.070)'
-- unparsed cell tbl2:row10:col2 = '16.8/15.9'
-- unparsed cell tbl2:row11:col2 = '13.0/6.6'
-- unparsed cell tbl2:row13:col2 = '8.50/28.1'
+- table Ren_2026_table_2: unbound_uncertainty
+- table Ren_2026_table_2: unparsed_numeric_cell
 - companion parameter table 5 transcribed (29 record(s))
 - LLM selected parameter table(s) 2, 5
 
@@ -83,13 +76,12 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.182 (2/11 fields) | 9 |
+| `gpt-oss-120b` | not confirmed | 0.2 (2/10 fields) | 8 |
 
-<details><summary>9 field discrepancies</summary>
+<details><summary>8 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[baselines]` | not captured | 11.3 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[central v/f]` | 53.0 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[central v/f]` | not captured | 53.0 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[cl/f]` | 6.13 | not captured | only_one_extracted |
@@ -141,10 +133,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_rivaroxaban/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Ren_2026` / `Ren_2026::chinese_pe`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_rivaroxaban/models/modelica/Rivaroxaban_Ren2026_chinese_pe.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_rivaroxaban/models/modelica/Rivaroxaban_Ren2026_chinese_pe.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_rivaroxaban/models/modelica/Rivaroxaban_Ren2026_chinese_pe.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_rivaroxaban/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Ren_2026` / `Ren_2026::chinese_pe`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_rivaroxaban/models/modelica/Rivaroxaban_Ren2026_chinese_pe.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_rivaroxaban/models/modelica/Rivaroxaban_Ren2026_chinese_pe.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_rivaroxaban/models/modelica/Rivaroxaban_Ren2026_chinese_pe.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -162,7 +154,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_chinese_pe/Rivaroxaban_Ren2026_chinese_pe.svg" alt="Rivaroxaban_Ren2026_chinese_pe diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_chinese_pe/Rivaroxaban_Ren2026_chinese_pe.svg" alt="Rivaroxaban_Ren2026_chinese_pe diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -175,4 +167,4 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 18:15 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 21:31 UTC</sub>

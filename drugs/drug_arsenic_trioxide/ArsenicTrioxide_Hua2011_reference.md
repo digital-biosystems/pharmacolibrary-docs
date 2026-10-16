@@ -16,21 +16,21 @@
 
 ### Reviewer guidance
 
-**The record was rejected because the abstract-only source provided summary statistics that caused a dimension mismatch on a structural parameter.**
+**C5 dimension mismatch on a structural parameter.**
 
-The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. This resulted in a dimension mismatch on a structural parameter. The specific parameter causing the mismatch is not identified in the facts. Extracted — arsenic trioxide: Cmax 136 μg/L, t1/2α 0.071 hours, t1/2β 23.9 hours, V 335 L, CL 8.65 L/h, AUCt 1.13e+03 μg/h/L, Cmin 31.7 μg/L.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — arsenic trioxide: Cmax 136 μg/L, t1/2α 0.071 hours, t1/2β 23.9 hours, V 335 L, V1 20.3 L, AUCt 1.13e+03 μg/h/L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of apparent distribution volume: this record has 335.1, the second reading none; it also differs on 14 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Hua H et al., Pharmacokinetics of arsenic trioxide (A…, Asian Pacific journal of ca… (2011)
 
-<div class="pk-model-meta" hidden drug="arsenic trioxide" model-id="ArsenicTrioxide_Hua2011_reference" status="rejected" stale="false" population="Chinese primary hepatocarcinoma patients" measured-compound="arsenic trioxide" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="arsenic trioxide" model-id="ArsenicTrioxide_Hua2011_reference" status="rejected" stale="false" population="adults with primary hepatocarcinoma" measured-compound="arsenic_trioxide" parameterization="mechanistic" topology="2C"></div>
 
-**Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 7 extracted.
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 6 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -39,13 +39,12 @@ Hua H et al., Pharmacokinetics of arsenic trioxide (A…, Asian Pacific journal 
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| The mean plasma maximal peak concentration (Cpmax) | `Q32` · Cmax | 136.4 | μg/L | not captured | [µg] / [l] | not captured | llm_confirmed (0.6) | Hua_2011:abstract | — | not captured |
-| plasma distribution half-life time (T½α) | `Q59` · t1/2α | 0.071 | hours | 255.59999999999997 | [h] | not captured | llm (0.6) | Hua_2011:abstract | — | not captured |
-| plasma elimination half-life time (T½β) | `Q60` · t1/2β | 23.9 | hours | 86040.0 | [h] | not captured | llm (0.6) | Hua_2011:abstract | — | not captured |
-| apparent distribution volume (Vd) | `Q61` · V | 335.1 | L | 0.3351 | [l] | not captured | llm_confirmed (0.6) | Hua_2011:abstract | — | not captured |
-| system clearance (CLs) | `Q22` · CL | 8.65 | L/h | 2.4027777777777777e-06 | [l] / [h] | not captured | llm_confirmed (0.6) | Hua_2011:abstract | — | not captured |
-| area under curve (AUC0-t) of concentration-time | `Q19` · AUCt | 1128.5 | μg/h/L | not captured | [µg] / [[h] · [l]] | not captured | llm_confirmed (0.6) | Hua_2011:abstract | — | not captured |
-| minimal steady state plasma drug concentration (Cssmin) | `Q36` · Cmin | 31.7 | μg/L | not captured | [µg] / [l] | not captured | llm (0.6) | Hua_2011:abstract, Hua_2011:abstract | — | not captured |
+| Cpmax | `Q32` · Cmax | 136.4 | μg/L | not captured | [µg] / [l] | not captured | llm (0.6) | Hua_2011:abstract | — | not captured |
+| T½α | `Q59` · t1/2α | 0.071 | hours | 255.59999999999997 | [h] | not captured | llm (0.6) | Hua_2011:abstract | — | not captured |
+| T½β | `Q60` · t1/2β | 23.9 | hours | 86040.0 | [h] | not captured | llm (0.6) | Hua_2011:abstract | — | not captured |
+| Vd | `Q61` · V | 335.1 | L | 0.3351 | [l] | not captured | exact (1.0) | Hua_2011:abstract | — | not captured |
+| Vc | `Q63` · V1 | 20.3 | L | 0.020300000000000002 | [l] | not captured | exact (1.0) | Hua_2011:abstract | — | not captured |
+| AUC0-t | `Q19` · AUCt | 1128.5 | μg/h/L | not captured | [µg] / [[h] · [l]] | not captured | exact (1.0) | Hua_2011:abstract | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -55,11 +54,11 @@ Hua H et al., Pharmacokinetics of arsenic trioxide (A…, Asian Pacific journal 
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped duplicate Q61 ('entry distribution volume (Vc)', value 20.3) — already have one for this compound
-- unit_dimension_mismatch: 'area under curve (AUC0-t) of concentration-time' → Q19 (unit '[mass] / [time] / [length] ** 3' vs ontology '[mass] * [time] / [length] ** 3') — route to review
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=arsenic trioxide
+- dropped unlinked row (NIL): 'CLs' — extend the ontology if this is a real PK parameter (source ['Hua_2011:abstract'])
+- unit_dimension_mismatch: 'AUC0-t' → Q19 (unit '[mass] / [time] / [length] ** 3' vs ontology '[mass] * [time] / [length] ** 3') — route to review
+- dropped unlinked row (NIL): 'Cssmin' — extend the ontology if this is a real PK parameter (source ['Hua_2011:abstract', 'Hua_2011:abstract'])
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=arsenic_trioxide
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - status held at route_to_review — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 
@@ -107,20 +106,18 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 7 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q19 | fail | [mass] / [time] / [length] ** 3 | μg/h/L | not captured | not captured | ['Hua_2011:abstract'] |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Hua_2011:abstract'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Hua_2011:abstract'] |
-| C5_dimension_Q36 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Hua_2011:abstract', 'Hua_2011:abstract'] |
 | C5_dimension_Q59 | pass | [time] | not captured | not captured | not captured | ['Hua_2011:abstract'] |
 | C5_dimension_Q60 | pass | [time] | not captured | not captured | not captured | ['Hua_2011:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Hua_2011:abstract'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 8.65 | not captured | not captured | ['Hua_2011:abstract'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Hua_2011:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 8.65 L/h | not captured | not captured | ['Hua_2011:abstract'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 335 L | not captured | not captured | ['Hua_2011:abstract'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 20.3 L | not captured | not captured | ['Hua_2011:abstract'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -129,7 +126,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_arsenic_trioxide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Hua_2011` / `Hua_2011::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_arsenic_trioxide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Hua_2011` / `Hua_2011::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -145,4 +142,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 23:11 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 04:17 UTC</sub>

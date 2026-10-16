@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;artemisinin&quot;,&quot;href&quot;:&quot;drugs/drug_artemisinin/&quot;},{&quot;label&quot;:&quot;Birgersson_2016 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Artemisinin_Ding2024_reference&quot;,&quot;label&quot;:&quot;Ding_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_artemisinin/Artemisinin_Ding2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Artemisinin_Birgersson2016_reference&quot;,&quot;label&quot;:&quot;Birgersson_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_artemisinin/Artemisinin_Birgersson2016_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Artemisinin_Chotsiri2024_reference&quot;,&quot;label&quot;:&quot;Chotsiri_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_artemisinin/Artemisinin_Chotsiri2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Artemisinin_Ding2024_reference&quot;,&quot;label&quot;:&quot;Ding_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_artemisinin/Artemisinin_Ding2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Artemisinin_Ali2022_reference&quot;,&quot;label&quot;:&quot;Ali_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_artemisinin/Artemisinin_Ali2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Artemisinin_Birgersson2016_reference&quot;,&quot;label&quot;:&quot;Birgersson_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_artemisinin/Artemisinin_Birgersson2016_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Artemisinin_Chotsiri2024_reference&quot;,&quot;label&quot;:&quot;Chotsiri_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_artemisinin/Artemisinin_Chotsiri2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Lohy_2017_PARA&quot;,&quot;label&quot;:&quot;Lohy_2017 \u00b7 PARA&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_artemisinin/pd_Lohy_2017_PARA.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,13 +17,13 @@
 
 ### Reviewer guidance
 
-**The artemisinin model's terminal half-life (2.06 h) does not reproduce the paper's reported values (127 h and 600 h), and the absorption rate constant ka was left at library defaults instead of being reported, so the record was held back.**
+**The model does not reproduce the paper's terminal half-life (paper 127, model 2.06); ka use library defaults, not estimates from this paper (+1 more).**
 
-Simulated as the paper dosed it, the model's terminal half-life is 2.06 h versus 127 h reported in the paper (ratio 0.0162) and versus 600 h in a second comparison (ratio 0.0034), both outside tolerance. The absorption rate constant ka (and Tlag) were not reported in the source and were substituted with library defaults, which affect the simulated profile but are not supported by this paper. The model also assumes apparent parameterization (F=1, Fm=1, no molar correction) with first-order depot input, and one reported unit could not be converted to SI, so a parameter reached the record without an SI value. Extracted — artemisinin: CL/F 417 L/h, V/F 1.21e+03 L, n_transit 7, MTT 0.787 h, Fab 100.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. A reported unit could not be converted (MTT and Fab), so that value has no SI equivalent. Extracted — artemisinin: CL/F 417 L/h, V/F 1.21e+03 L, n_transit 7, MTT 0.787 h, Fab 100 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has artemisinin, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by glm-5.3-flash</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Birgersson S et al., Population pharmacokinetic properties o…, Malaria journal (2016)
@@ -41,11 +41,11 @@ Birgersson S et al., Population pharmacokinetic properties o…, Malaria journal
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F (L/h) | `Q27` · CL/F | 417 | L/h | 0.00011583333333333333 | [l] / [h] | 9.32 | exact (1.0) | Tab2:row1:col1, Tab2:row1:col2, Tab2:row1:col4 | — | not captured |
-| V/F (L) | `Q76` · V/F | 1210 | L | 1.21 | [l] | 9.02 | exact (1.0) | Tab2:row2:col1, Tab2:row2:col2 | — | not captured |
-| Nr. trans comp | `Q311` · n_transit | 7 | not captured | not captured | not captured | not captured | llm (0.6) | Tab2:row3:col1, Tab2:footnote | — | not captured |
-| MTT (h) | `Q81` · MTT | 0.787 | h | not captured | [h] | 5.97 | exact (1.0) | Tab2:row4:col1, Tab2:row4:col2, Tab2:row4:col4 | — | not captured |
-| F (%) | `Q40` · Fab | 100 | not captured | not captured | not captured | not captured | exact (1.0) | Tab2:row5:col1, Tab2:row5:col4 | — | 34.3 (52.3% RSE) |
+| CL/F (L/h) | `Q27` · CL/F | 417 | L/h | 0.00011583333333333333 | [l] / [h] | 9.32 | exact (1.0) | Tab2:row1:col1 | — | not captured |
+| V/F (L) | `Q76` · V/F | 1210 | L | 1.21 | [l] | 9.02 | exact (1.0) | Tab2:row2:col1 | — | not captured |
+| Nr. trans comp | `Q311` · n_transit | 7 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | Tab2:row3:col1 | — | not captured |
+| MTT (h) | `Q81` · MTT | 0.787 | h | not captured | [h] | 5.97 | exact (1.0) | Tab2:row4:col1 | — | not captured |
+| F (%) | `Q40` · Fab | 100 | % | not captured | not captured | not captured | exact (1.0) | Tab2:row5:col1 | — | 34.3 (52.3% RSE) |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -62,19 +62,16 @@ Birgersson S et al., Population pharmacokinetic properties o…, Malaria journal
 
 **Interpretation flags:**
 - table section iiv: 'F (%)' routed out of structural estimates ('IIV/IOV* CV % (RSE %)')
-- dropped value-less row: 'CL/F'
-- dropped value-less row: 'V/F'
-- dropped value-less row: 'MTT'
-- dropped value-less row: 'RSE'
-- dropped value-less row: 'CV %'
-- dropped value-less row: '95 % CI'
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=artemisinin
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at route_to_review — not promoted
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- unparsed cell Tab2:row1:col3 = '17.1* (34.3)'
-- unparsed cell Tab2:row4:col3 = '53.9* (20.3)'
+- table Tab2: multiple_interval_summaries
+- table Tab2: unbound_uncertainty
+- table Tab2: unparsed_numeric_cell
 - LLM selected parameter table(s) 2
 
 ## Validation
@@ -108,12 +105,12 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row1:col1', 'Tab2:row1:col2', 'Tab2:row1:col4'] |
-| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row2:col1', 'Tab2:row2:col2'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row1:col1'] |
+| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row2:col1'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 417 L/h | not captured | not captured | ['Tab2:row1:col1', 'Tab2:row1:col2', 'Tab2:row1:col4'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 1.21e+03 L | not captured | not captured | ['Tab2:row2:col1', 'Tab2:row2:col2'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 417 L/h | not captured | not captured | ['Tab2:row1:col1'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 1.21e+03 L | not captured | not captured | ['Tab2:row2:col1'] |
 
 **Reviewer per-scenario checks:**
 
@@ -137,10 +134,10 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_artemisinin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Birgersson_2016` / `Birgersson_2016::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_artemisinin/models/modelica/Artemisinin_Birgersson2016_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_artemisinin/models/modelica/Artemisinin_Birgersson2016_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_artemisinin/models/modelica/Artemisinin_Birgersson2016_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_artemisinin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Birgersson_2016` / `Birgersson_2016::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_artemisinin/models/modelica/Artemisinin_Birgersson2016_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_artemisinin/models/modelica/Artemisinin_Birgersson2016_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_artemisinin/models/modelica/Artemisinin_Birgersson2016_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -158,7 +155,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_artemisinin/Artemisinin_Birgersson2016_reference/Artemisinin_Birgersson2016_reference.svg" alt="Artemisinin_Birgersson2016_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_artemisinin/Artemisinin_Birgersson2016_reference/Artemisinin_Birgersson2016_reference.svg" alt="Artemisinin_Birgersson2016_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -171,4 +168,4 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 06:10 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 18:18 UTC</sub>

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01C&quot;,&quot;href&quot;:&quot;atc/P01C.md&quot;},{&quot;label&quot;:&quot;miltefosine&quot;,&quot;href&quot;:&quot;drugs/drug_miltefosine/&quot;},{&quot;label&quot;:&quot;Pali\u0107_2020 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Miltefosine_Dorlo2017_reference&quot;,&quot;label&quot;:&quot;Dorlo_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_miltefosine/Miltefosine_Dorlo2017_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Miltefosine_Pali2020_reference&quot;,&quot;label&quot;:&quot;Pali\u0107_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_miltefosine/Miltefosine_Pali2020_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Miltefosine_Verrest2023_reference&quot;,&quot;label&quot;:&quot;Verrest_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_miltefosine/Miltefosine_Verrest2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Miltefosine_Dorlo2017_reference&quot;,&quot;label&quot;:&quot;Dorlo_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_miltefosine/Miltefosine_Dorlo2017_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Miltefosine_Pali2020_reference&quot;,&quot;label&quot;:&quot;Pali\u0107_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_miltefosine/Miltefosine_Pali2020_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Miltefosine_Dorlo2008_reference&quot;,&quot;label&quot;:&quot;Dorlo_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_miltefosine/Miltefosine_Dorlo2008_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Miltefosine_Verrest2023_reference&quot;,&quot;label&quot;:&quot;Verrest_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_miltefosine/Miltefosine_Verrest2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -29,10 +29,10 @@ The base model was simulated, not the covariate effects the record defines.
 Palić S et al., Characterizing the non-linear pharmacok…, The Journal of antimicrobia… (2020)
   ·  DOI: [10.1093/jac/dkaa314](https://doi.org/10.1093/jac/dkaa314)
 
-<div class="pk-model-meta" hidden drug="miltefosine" model-id="Miltefosine_Pali2020_reference" status="accepted_with_caveats" stale="false" population="paediatric visceral leishmaniasis patients from Eastern Africa" measured-compound="miltefosine" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="miltefosine" model-id="Miltefosine_Pali2020_reference" status="accepted_with_caveats" stale="false" population="paediatric visceral leishmaniasis patients" measured-compound="miltefosine" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
-**Parameters:** 7 extracted, plus 1 covariate effect.
+**Parameters:** 6 extracted, plus 1 covariate effect.
 
 **Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -45,8 +45,7 @@ Palić S et al., Characterizing the non-linear pharmacok…, The Journal of anti
 | Q/F (L/day) | `Q69` · Q/F | 0.0233 | L/day | 2.6967592592592596e-10 | [l] / [d] | not captured | exact (1.0) | dkaa314-T2:row5:col1 | — | not captured |
 | Vp/F (L) | `Q82` · V2/F | 2.27 | L | 0.00227 | [l] | not captured | exact (1.0) | dkaa314-T2:row6:col1 | — | not captured |
 | F | `Q40` · Fab | 1 | not captured | not captured | not captured | not captured | exact (1.0) | dkaa314-T2:row7:col1 | — | not captured |
-| relative decrease F first week | `Q87` · Frel | -0.69 | not captured | not captured | not captured | not captured | llm (0.6) | dkaa314-T2:row8:col1 | — | not captured |
-| theta_q319_weight_power | `Q900` · theta_q319_weight_power | -1.72 | not captured | not captured | not captured | not captured | not captured (not captured) | dkaa314-T2:row9:col1 | — | not captured |
+| theta_q335_weight_power | `Q900` · theta_q335_weight_power | -1.72 | not captured | not captured | not captured | not captured | not captured (not captured) | dkaa314-T2:row9:col1 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -60,23 +59,14 @@ Palić S et al., Characterizing the non-linear pharmacok…, The Journal of anti
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
 
 **Interpretation flags:**
-- dropped value-less row: 'Vp'
-- dropped value-less row: 'Q'
-- dropped unlinked row (NIL): 'ΔOFV' — extend the ontology if this is a real PK parameter (source ['dkaa314-F3:caption', 'dkaa314-F3:caption'])
-- covariate effect for Q319 has no base parameter row (kept as unattached equation-variable)
+- dropped unlinked row (NIL): 'relative decrease F first week' — extend the ontology if this is a real PK parameter (source ['dkaa314-T2:row8:col1'])
+- covariate effect for Q335 has no base parameter row (kept as unattached equation-variable)
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=miltefosine
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- unparsed cell dkaa314-T2:row2:col2 = '2.42 (2.25–2.61)'
-- unparsed cell dkaa314-T2:row3:col2 = '22.8 (21.4–24.39)'
-- unparsed cell dkaa314-T2:row4:col2 = '1.63 (1.07–2.15)'
-- unparsed cell dkaa314-T2:row5:col2 = '0.023 (0.019–0.027)'
-- unparsed cell dkaa314-T2:row6:col2 = '2.26 (2.04–2.49)'
-- unparsed cell dkaa314-T2:row8:col2 = '−0.69 (−0.77 to −0.61)'
-- unparsed cell dkaa314-T2:row9:col2 = '−1.69 (−2.34 to −1.11)'
-- companion parameter table 3 transcribed (20 record(s))
-- LLM selected parameter table(s) 2, 3
+- table dkaa314-T2: unparsed_numeric_cell
+- LLM selected parameter table(s) 2
 
 ## Validation
 
@@ -84,7 +74,7 @@ Palić S et al., Characterizing the non-linear pharmacok…, The Journal of anti
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 7 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['dkaa314-T2:row2:col1'] |
@@ -109,7 +99,6 @@ Palić S et al., Characterizing the non-linear pharmacok…, The Journal of anti
 | T3_param_coverage | not captured | pass | 5 scholar param(s) emitted or defaulted | 5 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
-| T1_tmax | reference | skipped | −20 | 39.95988441896929 | not captured | unresolved time unit '°C' |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -118,10 +107,10 @@ Palić S et al., Characterizing the non-linear pharmacok…, The Journal of anti
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_miltefosine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Palić_2020` / `Palić_2020::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_miltefosine/models/modelica/Miltefosine_Pali2020_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_miltefosine/models/modelica/Miltefosine_Pali2020_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_miltefosine/models/modelica/Miltefosine_Pali2020_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_miltefosine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Palić_2020` / `Palić_2020::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_miltefosine/models/modelica/Miltefosine_Pali2020_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_miltefosine/models/modelica/Miltefosine_Pali2020_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_miltefosine/models/modelica/Miltefosine_Pali2020_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -139,11 +128,11 @@ Palić S et al., Characterizing the non-linear pharmacok…, The Journal of anti
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_miltefosine/Miltefosine_Pali2020_reference/Miltefosine_Pali2020_reference.svg" alt="Miltefosine_Pali2020_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_miltefosine/Miltefosine_Pali2020_reference/Miltefosine_Pali2020_reference.svg" alt="Miltefosine_Pali2020_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 150 mg, single dose, first-order absorption (ka 0.0671 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 150 mg oral (P01CX04) (defined daily dose)._
+**Administration: oral** — 175 mg, single dose, first-order absorption (ka 0.0671 /h, F 1). Doses in the paper: 175–189 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_miltefosine/Miltefosine_Pali2020_reference/Miltefosine_Pali2020_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_miltefosine/Miltefosine_Pali2020_reference/Miltefosine_Pali2020_reference_sim_controls.json"></dbs-fmusim>
 
@@ -152,4 +141,4 @@ Palić S et al., Characterizing the non-linear pharmacok…, The Journal of anti
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 07:52 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 19:22 UTC</sub>

@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;cemiplimab&quot;,&quot;href&quot;:&quot;drugs/drug_cemiplimab/&quot;},{&quot;label&quot;:&quot;Nguyen_2022 \u00b7 tumor_type_study_a&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cemiplimab_Nguyen2022_tumor_type_study_a&quot;,&quot;label&quot;:&quot;Nguyen_2022_tumor_type_study_a&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cemiplimab/Cemiplimab_Nguyen2022_tumor_type_study_a.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # cemiplimab — `Cemiplimab_Nguyen2022_tumor_type_study_a`
 
-> ## <span class="pk-badge pk-badge--neutral">not modelled</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.571). Primary extraction retained.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.571). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -12,11 +13,13 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 ### Reviewer guidance
 
-**No model has been built from this record yet.**
+**The model does not reproduce the paper's terminal half-life (paper 473, model 398).**
+
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — cemiplimab: V 5.89 L, CL 0.246 L/day.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of baseline cl at first dose: this record has 0.246, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
@@ -26,19 +29,19 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 Nguyen JH et al., Population pharmacokinetics modeling an…, CPT: pharmacometrics & syst… (2022)
   ·  DOI: [10.1002/psp4.12855](https://doi.org/10.1002/psp4.12855)
 
-<div class="pk-model-meta" hidden drug="cemiplimab" model-id="Cemiplimab_Nguyen2022_tumor_type_study_a" status="not_modelled" stale="false" population="patients with solid tumors, including recurrent or metastatic cervical cancer" measured-compound="cemiplimab" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="cemiplimab" model-id="Cemiplimab_Nguyen2022_tumor_type_study_a" status="needs_review" stale="false" population="adults with solid tumors (CSCC, BCC, NSCLC, R/M CC)" measured-compound="cemiplimab" parameterization="mechanistic" topology="1C"></div>
 
-**Model structure:** 1-compartment; no model was built for this record.  
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `not_modelled`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| volume of distribution (Vss) | `Q61` · V | 5.89 | L | 0.005889999999999999 | L | not captured | exact (1.0) | Nguyen_2022:other_prose | — | not captured |
+| Mean (CV%) volume of distribution (Vss) of cemiplimab | `Q61` · V | 5.89 | L | 0.005889999999999999 | L | not captured | boundary (0.8) | Nguyen_2022:other_prose | — | not captured |
 | baseline CL at first dose | `Q22` · CL | 0.246 | L/day | 2.8472222222222224e-09 | L/h | not captured | review_gapfill (0.7) | Nguyen_2022:review | — | not captured |
 
 <details class="legend">
@@ -53,70 +56,23 @@ Nguyen JH et al., Population pharmacokinetics modeling an…, CPT: pharmacometri
 - dropped unlinked row (NIL): 'BCC (study 1620)' — extend the ontology if this is a real PK parameter (source ['Nguyen_2022_table_2:row2:col1', 'Nguyen_2022_table_2:row7:col1', 'Nguyen_2022_table_2:row12:col1', 'Nguyen_2022_table_2:row17:col1', 'Nguyen_2022_table_2:row22:col1', 'Nguyen_2022_table_2:row27:col1', 'Nguyen_2022_table_2:row32:col1', 'Nguyen_2022_table_2:row37:col1'])
 - dropped unlinked row (NIL): 'NSCLC (study 1624)' — extend the ontology if this is a real PK parameter (source ['Nguyen_2022_table_2:row3:col1', 'Nguyen_2022_table_2:row8:col1', 'Nguyen_2022_table_2:row13:col1', 'Nguyen_2022_table_2:row18:col1', 'Nguyen_2022_table_2:row23:col1', 'Nguyen_2022_table_2:row28:col1', 'Nguyen_2022_table_2:row33:col1', 'Nguyen_2022_table_2:row38:col1'])
 - dropped unlinked row (NIL): 'All solid tumors (study 1423)' — extend the ontology if this is a real PK parameter (source ['Nguyen_2022_table_2:row4:col1', 'Nguyen_2022_table_2:row9:col1', 'Nguyen_2022_table_2:row14:col1', 'Nguyen_2022_table_2:row19:col1', 'Nguyen_2022_table_2:row24:col1', 'Nguyen_2022_table_2:row29:col1', 'Nguyen_2022_table_2:row34:col1', 'Nguyen_2022_table_2:row39:col1'])
-- dropped value-less row: 'CLALB'
-- dropped value-less row: 'CLALTBL'
-- dropped value-less row: 'CLBCC'
-- dropped value-less row: 'CLCSCC'
-- dropped value-less row: 'CLSEX'
-- dropped value-less row: 'CLWGTBL'
-- dropped value-less row: 'EmaxBCC'
-- dropped value-less row: 'T50OTHER'
-- dropped value-less row: 'V1ALBBL'
-- dropped value-less row: 'V1SEX'
-- dropped value-less row: 'VssWGTBL'
 - table mostly unlinked (4/4 table-cell rows NIL) — likely the wrong table was located, not 0 genuinely-missing ontology parameter(s); route_to_review instead of building a model from the residual linked cell(s)
-- salvaged Q61 ('volume of distribution (Vss)'=5.89) from results prose — parameter table was unreadable
+- salvaged Q61 ('Mean (CV%) volume of distribution (Vss) of cemiplimab'=5.89) from results prose — parameter table was unreadable
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=cemiplimab
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - status held at route_to_review — not promoted
-- population split: 'tumor type (study) a' subgroup of Nguyen_2022 (paper reports 3 populations: final poppk model, mean (cv%), tumor type (study) a)
+- population split: 'tumor type (study) a' subgroup of Nguyen_2022 (paper reports 2 populations: final poppk model, tumor type (study) a)
 - molar mass: none found for 'cemiplimab' — its concentrations stay mass-only
 - gap-filled Q22 (CL) from Nguyen_2022's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- unparsed cell psp412855-tbl-0001:row3:col4 = '0.246, 0.262'
-- unparsed cell psp412855-tbl-0001:row3:col7 = '0.241, 0.269'
-- unparsed cell psp412855-tbl-0001:row4:col4 = '0.606, 0.699'
-- unparsed cell psp412855-tbl-0001:row4:col7 = '0.581, 0.728'
-- unparsed cell psp412855-tbl-0001:row5:col4 = '3.27, 3.44'
-- unparsed cell psp412855-tbl-0001:row5:col7 = '3.27, 3.44'
-- unparsed cell psp412855-tbl-0001:row6:col4 = '2.44, 2.60'
-- unparsed cell psp412855-tbl-0001:row6:col7 = '2.29, 2.81'
-- unparsed cell psp412855-tbl-0001:row7:col4 = '−0.190, −0.157'
-- unparsed cell psp412855-tbl-0001:row7:col7 = '−0.232, −0.136'
-- unparsed cell psp412855-tbl-0001:row8:col4 = '62.8, 84.7'
-- unparsed cell psp412855-tbl-0001:row8:col7 = '46.2, 245'
-- unparsed cell psp412855-tbl-0001:row10:col4 = '0.442, 0.637'
-- unparsed cell psp412855-tbl-0001:row10:col7 = '0.443, 0.639'
-- unparsed cell psp412855-tbl-0001:row11:col4 = '0.401, 0.597'
-- unparsed cell psp412855-tbl-0001:row11:col7 = '0.412, 0.569'
-- unparsed cell psp412855-tbl-0001:row12:col4 = '−0.172, −0.101'
-- unparsed cell psp412855-tbl-0001:row12:col7 = '−0.167, −0.0925'
-- unparsed cell psp412855-tbl-0001:row13:col4 = '−0.117, −0.0435'
-- unparsed cell psp412855-tbl-0001:row13:col7 = '−0.115, −0.0471'
-- unparsed cell psp412855-tbl-0001:row14:col4 = '−0.338, −0.0961'
-- unparsed cell psp412855-tbl-0001:row14:col7 = '−0.361, −0.0870'
-- unparsed cell psp412855-tbl-0001:row15:col4 = '−1.16, −1.06'
-- unparsed cell psp412855-tbl-0001:row15:col7 = '−1.24, −0.984'
-- unparsed cell psp412855-tbl-0001:row16:col4 = '−0.105, −0.0411'
-- unparsed cell psp412855-tbl-0001:row16:col7 = '−0.108, −0.0370'
-- unparsed cell psp412855-tbl-0001:row17:col4 = '−0.256, −0.176'
-- unparsed cell psp412855-tbl-0001:row17:col7 = '−0.257, −0.181'
-- unparsed cell psp412855-tbl-0001:row18:col4 = '−0.261, −0.160'
-- unparsed cell psp412855-tbl-0001:row18:col7 = '−0.261, −0.158'
-- unparsed cell psp412855-tbl-0001:row19:col4 = '−1.09, −0.657'
-- unparsed cell psp412855-tbl-0001:row19:col7 = '−1.00, −0.517'
-- unparsed cell psp412855-tbl-0001:row20:col4 = '−0.608, −0.374'
-- unparsed cell psp412855-tbl-0001:row20:col7 = '−0.987, −0.169'
-- unparsed cell psp412855-tbl-0001:row22:col4 = '0.240, 0.242 d'
-- unparsed cell psp412855-tbl-0001:row22:col7 = '0.227, 0.258 d'
-- unparsed cell psp412855-tbl-0001:row24:col4 = '0.0822, 0.0963'
-- unparsed cell psp412855-tbl-0001:row24:col7 = '0.0759, 0.101'
-- unparsed cell psp412855-tbl-0001:row25:col4 = '0.0681, 0.0737'
-- unparsed cell psp412855-tbl-0001:row25:col7 = '0.0459, 0.105'
+- table psp412855-tbl-0001: ragged_grid
+- table psp412855-tbl-0001: unparsed_numeric_cell
+- table psp412855-tbl-0001: representations disagree; selected evidence retained, not merged
+- table Nguyen_2022_table_2: ragged_grid
 - companion parameter table 2 transcribed (120 record(s), model stage 'final')
 - LLM selected parameter table(s) 2
 - dropped sensitivity-analysis table(s) 1 from the LLM selection — perturbations of a model, not a model
@@ -166,10 +122,12 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 |---|---|---|---|---|---|---|
 | T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_param_coverage | not captured | skipped | not captured | not captured | not captured | no emitted model to inspect (engineer build absent) |
+| T3_output_variable | not captured | pass | C_central (measured=cemiplimab) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
-| T1_t_half_beta | reference | skipped | 19.7 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_beta | reference | skipped | 22.3 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_beta | reference | pass | 472.79999999999995 | 398.3029766037254 | 0.8424 | days→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 535.2 | 398.3029766037254 | 0.7442 | days→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -178,7 +136,10 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_cemiplimab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Nguyen_2022` / `Nguyen_2022::tumor_type_study_a`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_cemiplimab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Nguyen_2022` / `Nguyen_2022::tumor_type_study_a`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_cemiplimab/models/modelica/Cemiplimab_Nguyen2022_tumor_type_study_a.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_cemiplimab/models/modelica/Cemiplimab_Nguyen2022_tumor_type_study_a.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_cemiplimab/models/modelica/Cemiplimab_Nguyen2022_tumor_type_study_a.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -187,21 +148,26 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_cemiplimab/Cemiplimab_Nguyen2022_tumor_type_study_a/Cemiplimab_Nguyen2022_tumor_type_study_a_modelica.zip" download>Cemiplimab_Nguyen2022_tumor_type_study_a_modelica.zip</a> <span class="pk-size">(4.6 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_cemiplimab/Cemiplimab_Nguyen2022_tumor_type_study_a/Cemiplimab_Nguyen2022_tumor_type_study_a_fmi.zip" download>Cemiplimab_Nguyen2022_tumor_type_study_a_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_cemiplimab/Cemiplimab_Nguyen2022_tumor_type_study_a/Cemiplimab_Nguyen2022_tumor_type_study_a_matlab.zip" download>Cemiplimab_Nguyen2022_tumor_type_study_a_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_cemiplimab/Cemiplimab_Nguyen2022_tumor_type_study_a/Cemiplimab_Nguyen2022_tumor_type_study_a_matlab_simbio.zip" download>Cemiplimab_Nguyen2022_tumor_type_study_a_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_cemiplimab/Cemiplimab_Nguyen2022_tumor_type_study_a/Cemiplimab_Nguyen2022_tumor_type_study_a_sbml.zip" download>Cemiplimab_Nguyen2022_tumor_type_study_a_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_cemiplimab/Cemiplimab_Nguyen2022_tumor_type_study_a/Cemiplimab_Nguyen2022_tumor_type_study_a_cellml.zip" download>Cemiplimab_Nguyen2022_tumor_type_study_a_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_cemiplimab/Cemiplimab_Nguyen2022_tumor_type_study_a/Cemiplimab_Nguyen2022_tumor_type_study_a.svg" alt="Cemiplimab_Nguyen2022_tumor_type_study_a diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+**Administration: intravenous** — 350 mg infusion over 10 min, single dose. Dose in the paper: 350 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_cemiplimab/Cemiplimab_Nguyen2022_tumor_type_study_a/Cemiplimab_Nguyen2022_tumor_type_study_a_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_cemiplimab/Cemiplimab_Nguyen2022_tumor_type_study_a/Cemiplimab_Nguyen2022_tumor_type_study_a_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C` · parameters `Cemiplimab_Nguyen2022_tumor_type_study_a_params.json` · controls `Cemiplimab_Nguyen2022_tumor_type_study_a_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 10:52 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 18:35 UTC</sub>

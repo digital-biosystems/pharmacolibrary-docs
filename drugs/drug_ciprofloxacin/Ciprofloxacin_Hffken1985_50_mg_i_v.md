@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01M&quot;,&quot;href&quot;:&quot;atc/J01M.md&quot;},{&quot;label&quot;:&quot;ciprofloxacin&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/&quot;},{&quot;label&quot;:&quot;H\u00f6ffken_1985 \u00b7 50_mg_i_v&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ciprofloxacin_Dowling1995_reference&quot;,&quot;label&quot;:&quot;Dowling_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Dowling1995_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Garg2024_reference&quot;,&quot;label&quot;:&quot;Garg_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Garg2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Guo2022_reference&quot;,&quot;label&quot;:&quot;Guo_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Guo2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Haefliger2025_reference&quot;,&quot;label&quot;:&quot;Haefliger_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Haefliger2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Papich2017_reference&quot;,&quot;label&quot;:&quot;Papich_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Papich2017_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Sang2015_reference&quot;,&quot;label&quot;:&quot;Sang_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Sang2015_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Santavy2023_reference&quot;,&quot;label&quot;:&quot;Santavy_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Santavy2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Zhu2026_reference&quot;,&quot;label&quot;:&quot;Zhu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Zhu2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Alihodzic2022_reference&quot;,&quot;label&quot;:&quot;Alihodzic_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Alihodzic2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ciprofloxacin_Haefliger2025_reference&quot;,&quot;label&quot;:&quot;Haefliger_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Haefliger2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Zhu2026_reference&quot;,&quot;label&quot;:&quot;Zhu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Zhu2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Alihodzic2022_reference&quot;,&quot;label&quot;:&quot;Alihodzic_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Alihodzic2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Garg2024_reference&quot;,&quot;label&quot;:&quot;Garg_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Garg2024_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Papich2017_reference&quot;,&quot;label&quot;:&quot;Papich_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Papich2017_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Sadouki_2025_CFU&quot;,&quot;label&quot;:&quot;Sadouki_2025 \u00b7 CFU&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/pd_Sadouki_2025_CFU.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Zhao_2024_kDrug&quot;,&quot;label&quot;:&quot;Zhao_2024 \u00b7 kDrug&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/pd_Zhao_2024_kDrug.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ciprofloxacin — `Ciprofloxacin_Hffken1985_50_mg_i_v`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -19,17 +19,15 @@
 
 **CL and CLR have no unit; the clearance plausibility check could not be computed.**
 
-Without a unit the value cannot be converted, so the model cannot use it. The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — ciprofloxacin: V 266 liters/100 kg, t1/2α 2.7 min, t1/2β 28.6 min, t1/2γ 180 min, AUC∞ 1.2 mg · h/liter, CL 687 ml/min per 1.73 m², CLR 425 ml/min per 1.73 m², kabs 1 h−1.
+Without a unit the value cannot be converted, so the model cannot use it. The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — ciprofloxacin: V 266 liters/100 kg, t1/2α 2.7 min, t1/2β 28.6 min, t1/2γ 180 min, AUC∞ 1.2 mg · h/liter, CL 687 ml/min per 1.73 m², CLR 425 ml/min per 1.73 m², kabs 0.42 /h, … (+1).
 
 <sub>reviewed by rule template (no LLM)</sub>
-
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:25:34.016115+00:00) predates the upstream re-run (2026-10-07 11:35:11.357032+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Höffken G et al., Pharmacokinetics of ciprofloxacin after…, Antimicrobial agents and ch… (1985)
   ·  DOI: [10.1128/AAC.27.3.375](https://doi.org/10.1128/AAC.27.3.375)
 
-<div class="pk-model-meta" hidden drug="ciprofloxacin" model-id="Ciprofloxacin_Hffken1985_50_mg_i_v" status="needs_review" stale="true" population="healthy fasting volunteers" measured-compound="ciprofloxacin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="ciprofloxacin" model-id="Ciprofloxacin_Hffken1985_50_mg_i_v" status="needs_review" stale="false" population="healthy fasting volunteers" measured-compound="ciprofloxacin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 9 extracted.
@@ -48,7 +46,7 @@ Höffken G et al., Pharmacokinetics of ciprofloxacin after…, Antimicrobial age
 | AUCtot (mg · h/liter) | `Q17` · AUC∞ | 1.2 | mg · h/liter | not captured | [[h] · [mg]] / [l] | not captured | exact (1.0) | Höffken_1985_table_1:row6:col1 | — | not captured |
 | CLtot (ml/min per 1.73 m²) | `Q22` · CL | 687 | ml/min per 1.73 m² | not captured | [ml] / [[min] · [.73] · [m2] · [per1]] | not captured | exact (1.0) | Höffken_1985_table_1:row8:col1 | — | not captured |
 | CLR (ml/min per 1.73 m²) | `Q26` · CLR | 425 | ml/min per 1.73 m² | not captured | [ml] / [[min] · [.73] · [m2] · [per1]] | not captured | exact (1.0) | Höffken_1985_table_1:row9:col1 | — | not captured |
-| Ka = 1.90 (0.68) h−1 [21] a | `Q49` · kabs | 1.9 | h−1 | 0.0005277777777777777 | 1/h | not captured | review_gapfill (0.7) | Cattrall_2019:review | — | not captured |
+| Ka (/h) | `Q49` · kabs | 0.42 | /h | 0.00011666666666666667 | 1/h | not captured | review_gapfill (0.7) | Felix_2025:review | — | not captured |
 | 750 mg Group 1 4/2. (h) l/xh)h) | `Q83` · tlag | 0.79 | h | 2844.0 | h | not captured | review_gapfill (0.7) | Gasser_1987:review | — | not captured |
 
 <details class="legend">
@@ -70,7 +68,7 @@ Höffken G et al., Pharmacokinetics of ciprofloxacin after…, Antimicrobial age
 - population split: '50 mg i.v.' subgroup of Höffken_1985 (paper reports 7 populations: 100 mg, 100 mg i.v., 100 mg orally, 50 mg, 50 mg i.v., 50 mg orally, 750 mg orally)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Cattrall_2019's review values (primary lacked it)
+- gap-filled Q49 (kabs) from Felix_2025's review values (primary lacked it)
 - gap-filled Q83 (tlag) from Gasser_1987's review values (primary lacked it)
 
 **Extraction notes:**
@@ -92,7 +90,7 @@ Höffken G et al., Pharmacokinetics of ciprofloxacin after…, Antimicrobial age
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q17 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Höffken_1985_table_1:row6:col1'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Cattrall_2019:review'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Felix_2025:review'] |
 | C5_dimension_Q59 | pass | [time] | not captured | not captured | not captured | ['Höffken_1985_table_1:row3:col1'] |
 | C5_dimension_Q60 | pass | [time] | not captured | not captured | not captured | ['Höffken_1985_table_1:row4:col1'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Höffken_1985_table_1:row2:col1'] |
@@ -111,7 +109,7 @@ Höffken G et al., Pharmacokinetics of ciprofloxacin after…, Antimicrobial age
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ciprofloxacin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Höffken_1985` / `Höffken_1985::50_mg_i_v`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ciprofloxacin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Höffken_1985` / `Höffken_1985::50_mg_i_v`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -137,4 +135,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 11:35 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 22:24 UTC</sub>

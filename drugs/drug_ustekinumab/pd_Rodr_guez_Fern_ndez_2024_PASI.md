@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;ustekinumab&quot;,&quot;href&quot;:&quot;drugs/drug_ustekinumab/&quot;},{&quot;label&quot;:&quot;Rodr\u00edguez-Fern\u00e1ndez_2024 \u00b7 PD Psoriasis Area and Severity Index&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ustekinumab_Adedokun2022_reference&quot;,&quot;label&quot;:&quot;Adedokun_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ustekinumab/Ustekinumab_Adedokun2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ustekinumab_RodrguezFernndez2022_reference&quot;,&quot;label&quot;:&quot;Rodr\u00edguez-Fern\u00e1ndez_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ustekinumab/Ustekinumab_RodrguezFernndez2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ustekinumab_Lam2026_reference&quot;,&quot;label&quot;:&quot;Lam_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ustekinumab/Ustekinumab_Lam2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ustekinumab_Adedokun2022_reference&quot;,&quot;label&quot;:&quot;Adedokun_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ustekinumab/Ustekinumab_Adedokun2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ustekinumab_Lam2026_reference&quot;,&quot;label&quot;:&quot;Lam_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ustekinumab/Ustekinumab_Lam2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Psoriasis Area and Severity Index — PD  <span class="pk-badge pk-badge--orange">needs review</span>
@@ -14,11 +14,11 @@
 
 ## Record summary
 
-**As extracted:** Ustekinumab (concentrations from the PK model of Adedokun_2022) drives Psoriasis Area and Severity Index: indirect response — drug inhibits the production of Psoriasis Area and Severity Index.
+**As extracted:** Ustekinumab (concentrations from the PK model of Adedokun_2022) drives Psoriasis Area and Severity Index (in no units): indirect response — drug inhibits the production of Psoriasis Area and Severity Index.
 
 **Model:** Model available in **Models**; browser simulation unavailable.
 
-> Ustekinumab serum concentrations inhibit the zero-order production (kin) of the Psoriasis Area and Severity Index (PASI) via an indirect response model with a maximum effect (Imax) of 0.97. The model estimates a first-order elimination rate constant (kout) of 0.016 d−1 and uses a fixed IC50 of 0.07 mg/L.
+> Ustekinumab serum concentrations (mg/L) inhibit the zero-order production rate (kin) of the Psoriasis Area and Severity Index (PASI) via an Imax indirect response model. The estimated first-order elimination rate (kout) is 0.016 d−1, the maximum inhibition (Imax) is 0.97, and the fixed IC50 is 0.07 mg/L.
 >
 > <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
@@ -86,7 +86,7 @@ Advisory:
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ustekinumab/Ustekinumab_RodrguezFernndez2024_PD_pasi/Ustekinumab_RodrguezFernndez2024_PD_pasi_modelica.zip" download>Ustekinumab_RodrguezFernndez2024_PD_pasi_modelica.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ustekinumab/Ustekinumab_RodrguezFernndez2024_PD_pasi/Ustekinumab_RodrguezFernndez2024_PD_pasi_modelica.zip" download>Ustekinumab_RodrguezFernndez2024_PD_pasi_modelica.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_ustekinumab/Ustekinumab_RodrguezFernndez2024_PD_pasi/Ustekinumab_RodrguezFernndez2024_PD_pasi_matlab.zip" download>Ustekinumab_RodrguezFernndez2024_PD_pasi_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>

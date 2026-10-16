@@ -20,34 +20,49 @@ Ritlecitinib is a JAK inhibitor medicine used to treat alopecia areata, a condit
 
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
-| ritlecitinib | parent | 285.351 | C15H19N5O | DrugBank | — | Purohit_2023 |
+| ritlecitinib | parent | 285.351 | C15H19N5O | DrugBank | — | Purohit_2023, Wojciechowski_2023 |
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 00:25 | 1:43 | 0/1/2 | 2/0/1 | 0/0/0 | 187,960/14,409 | einfracz / qwen3.8-27b | 6 | 0/6 | 6/0 | 0 |
+| 2026-10-15 00:15 | 2:59 | 0/2/2 | 3/0/0 | 0/0/0 | 201,358/17,007 | einfracz / qwen3.8-27b | 6 | 0/6 | 6/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.556). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Purohit_2023_study_1_30_mg_qd](drugs/drug_ritlecitinib/Ritlecitinib_Purohit2023_study_1_30_mg_qd.md) | — | 1-compartment (no model) | 4 | Purohit V et al., Leveraging Prior Healthy Participant Ph…, The AAPS journal (2023) | [10.1208/s12248-023-00792-8](https://doi.org/10.1208/s12248-023-00792-8) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Purohit_2023_study_2_50_mg_qd](drugs/drug_ritlecitinib/Ritlecitinib_Purohit2023_study_2_50_mg_qd.md) | — | 1-compartment (no model) | 4 | Purohit V et al., Leveraging Prior Healthy Participant Ph…, The AAPS journal (2023) | [10.1208/s12248-023-00792-8](https://doi.org/10.1208/s12248-023-00792-8) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Wojciechowski_2023_reference](drugs/drug_ritlecitinib/Ritlecitinib_Wojciechowski2023_reference.md) | — | 1-compartment (no model) | 0 | Wojciechowski J et al., Evolution of Ritlecitinib Population Ph…, Clinical pharmacokinetics (2023) | [10.1007/s40262-023-01318-3](https://doi.org/10.1007/s40262-023-01318-3) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.556). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Purohit_2023_study_1_30_mg_qd](drugs/drug_ritlecitinib/Ritlecitinib_Purohit2023_study_1_30_mg_qd.md) | — | 1-compartment (no model) | 3 | Purohit V et al., Leveraging Prior Healthy Participant Ph…, The AAPS journal (2023) | [10.1208/s12248-023-00792-8](https://doi.org/10.1208/s12248-023-00792-8) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Purohit_2023_study_2_50_mg_qd](drugs/drug_ritlecitinib/Ritlecitinib_Purohit2023_study_2_50_mg_qd.md) | — | 1-compartment (no model) | 3 | Purohit V et al., Leveraging Prior Healthy Participant Ph…, The AAPS journal (2023) | [10.1208/s12248-023-00792-8](https://doi.org/10.1208/s12248-023-00792-8) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Purohit_2023_reference](drugs/drug_ritlecitinib/Ritlecitinib_Purohit2023_reference.md) | — | 1-compartment (no model) | 2 | Purohit V et al., Leveraging Prior Healthy Participant Ph…, The AAPS journal (2023) | [10.1208/s12248-023-00792-8](https://doi.org/10.1208/s12248-023-00792-8) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Wojciechowski_2023_reference](drugs/drug_ritlecitinib/Ritlecitinib_Wojciechowski2023_reference.md) | — | 2-compartment (no model) | 5 (+2 cov.) | Wojciechowski J et al., Evolution of Ritlecitinib Population Ph…, Clinical pharmacokinetics (2023) | [10.1007/s40262-023-01318-3](https://doi.org/10.1007/s40262-023-01318-3) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Huh_2025_Herpes_Zoster](drugs/drug_ritlecitinib/pd_Huh_2025_Herpes_Zoster.md) | incidence of herpes zoster ← ritlecitinib · stimulation effect | — | Huh Y et al., Comprehensive Safety Exposure-Response…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70030](https://doi.org/10.1002/psp4.70030) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Huh_2025_Infections](drugs/drug_ritlecitinib/pd_Huh_2025_Infections.md) | incidence of infections ← ritlecitinib · stimulation effect | — | Huh Y et al., Comprehensive Safety Exposure-Response…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70030](https://doi.org/10.1002/psp4.70030) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Huh_2025_Lymphocyte](drugs/drug_ritlecitinib/pd_Huh_2025_Lymphocyte.md) | lymphocyte count ← ritlecitinib · direct Emax (saturable) effect | — | Huh Y et al., Comprehensive Safety Exposure-Response…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70030](https://doi.org/10.1002/psp4.70030) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Huh_2025_Rash](drugs/drug_ritlecitinib/pd_Huh_2025_Rash.md) | incidence of rash ← ritlecitinib · stimulation effect | — | Huh Y et al., Comprehensive Safety Exposure-Response…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70030](https://doi.org/10.1002/psp4.70030) |
+| <span class="pk-badge pk-badge--green">accepted (caveats)</span> | [Huh_2024_SALT](drugs/drug_ritlecitinib/pd_Huh_2024_SALT.md) | Severity of Alopecia Tool score ← ritlecitinib · indirect response — drug stimulates the production of Severity of Alopecia Tool score | — | Huh Y et al., Moving Beyond Boundaries: Utilization o…, Clinical pharmacokinetics (2024) | [10.1007/s40262-024-01347-6](https://doi.org/10.1007/s40262-024-01347-6) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Huh_2025_lymphocyte_count](drugs/drug_ritlecitinib/pd_Huh_2025_lymphocyte_count.md) | lymphocyte count ← ritlecitinib · delayed effect through transit (transduction) compartments | — | Huh Y et al., Comprehensive Safety Exposure-Response…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70030](https://doi.org/10.1002/psp4.70030) |
 | <span class="pk-badge pk-badge--green">accepted (caveats)</span> | [Wang_2025_EBA](drugs/drug_ritlecitinib/pd_Wang_2025_EBA.md) | eyebrow assessment ← ritlecitinib · indirect response — drug stimulates the production of eyebrow assessment | — | Wang Y et al., Population exposure-response analysis o…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13283](https://doi.org/10.1002/psp4.13283) |
 | <span class="pk-badge pk-badge--green">accepted (caveats)</span> | [Wang_2025_ELA](drugs/drug_ritlecitinib/pd_Wang_2025_ELA.md) | eyelash assessment ← ritlecitinib · indirect response — drug stimulates the production of eyelash assessment | — | Wang Y et al., Population exposure-response analysis o…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13283](https://doi.org/10.1002/psp4.13283) |
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Huh_2024_SALT](drugs/drug_ritlecitinib/pd_Huh_2024_SALT.md) | SALT score ← ritlecitinib · indirect response — drug stimulates the production of SALT score | — | Huh Y et al., Moving Beyond Boundaries: Utilization o…, Clinical pharmacokinetics (2024) | [10.1007/s40262-024-01347-6](https://doi.org/10.1007/s40262-024-01347-6) |
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Huh_2025_QTcF](drugs/drug_ritlecitinib/pd_Huh_2025_QTcF.md) | change from baseline heart rate– corrected QTcF (∆QTcF) ← ritlecitinib · direct linear effect | — | Huh Y et al., Comprehensive Safety Exposure-Response…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70030](https://doi.org/10.1002/psp4.70030) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Huh_2025_herpes_zoster_infection](drugs/drug_ritlecitinib/pd_Huh_2025_herpes_zoster_infection.md) | herpes zoster infection ← ritlecitinib · categorical (graded) response model | — | Huh Y et al., Comprehensive Safety Exposure-Response…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70030](https://doi.org/10.1002/psp4.70030) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Huh_2025_infections](drugs/drug_ritlecitinib/pd_Huh_2025_infections.md) | infections ← ritlecitinib · categorical (graded) response model | — | Huh Y et al., Comprehensive Safety Exposure-Response…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70030](https://doi.org/10.1002/psp4.70030) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Huh_2025_rash](drugs/drug_ritlecitinib/pd_Huh_2025_rash.md) | rash ← ritlecitinib · categorical (graded) response model | — | Huh Y et al., Comprehensive Safety Exposure-Response…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70030](https://doi.org/10.1002/psp4.70030) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=ritlecitinib).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| metabolism | liver | `CYP1A2` inhibitor/substrate, `CYP2C8` substrate, `CYP2C9` substrate, `CYP3A4` inhibitor/substrate, `GSTM1` unknown, `GSTP1` substrate | DrugBank actor |
+| metabolism | lung | `GSTP1` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inhibitor/substrate | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: BMX (inhibitor), BTK (inhibitor), GSTA1 (substrate), GSTA3 (substrate), GSTM3 (substrate), GSTM5 (substrate), GSTT2 (substrate), GSTZ1 (substrate), ITK (inhibitor), JAK3 (inhibitor), MGST1 (substrate), MGST2 (substrate), MGST3 (substrate), TEC (inhibitor), TXK (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -59,17 +74,17 @@ Ritlecitinib is a JAK inhibitor medicine used to treat alopecia areata, a condit
 
 - **PubMed hits:** 6 matched, 6 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 3  ·  extracted 0  ·  needs_review 2  ·  rejected 1  ·  stale 0
+- **records:** 4  ·  extracted 0  ·  needs_review 2  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Huh_2024 | irrelevant | 1 | 1 | The paper describes a longitudinal exposure-response (efficacy) model for ritlecitinib and does not report the population pharmacokinetic parameters (CL, V, ka) for the drug itself. |
-| popPK | Huh_2025 | irrelevant | 0 | 0 | This is a safety exposure-response (ER) modeling study for ritlecitinib that does not report a new population PK model or quantitative PK parameters (CL, V, etc.) for the drug itself, but rather references a previous PK publication. |
-| popPK | Wang_2025 | irrelevant | 1 | 0 | The paper is an exposure-response (efficacy) analysis using pre-existing PK data and does not report new quantitative pharmacokinetic disposition parameters (CL, V, Q) for ritlecitinib. |
-| popPK | Winnette_2022 | irrelevant | 0 | 0 | The paper reports on patient-reported outcomes and efficacy scores (SALT, AASIS) for alopecia areata, containing no pharmacokinetic or pharmacodynamic parameter data for ritlecitinib. |
+| popPK | Huh_2024 | irrelevant | 2 | 0 | This is an exposure-response (efficacy) modeling study using population PK data from a separate source [7], and it reports only efficacy parameters (e.g., response half-life), not ritlecitinib's PK disposition parameters. |
+| popPK | Huh_2025 | irrelevant | 2 | 0 | This is a safety exposure-response (ER) and PK/PD modeling study focused on adverse events and cardiac effects; it does not report the core population pharmacokinetic disposition parameters (CL, V, Q, ka, t1/2) for ritlecitinib itself, which are referenced as existing in a separate publication [11]. |
+| popPK | Wang_2025 | irrelevant | 1 | 0 | This is a population exposure-response (PD) analysis, not a PK study, and it does not report quantitative PK parameters like CL, V, or ka for ritlecitinib. |
+| popPK | Winnette_2022 | irrelevant | 0 | 0 | The study focuses on patient-reported outcomes and clinician assessments of hair loss, containing no pharmacokinetic parameters or disposition data. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 00:23 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-15 00:12 UTC</sub>

@@ -17,15 +17,15 @@
 
 **Model:** No model was generated from this record.
 
-> The model describes a sigmoidal stimulation of the erythropoietin effect by darbepoetin concentrations, with a CE50 of 0.41 ng/ml and a Hill coefficient (H) of 3.0. The paper does not provide a full text to specify the underlying mechanism or rate constants.
+> The record describes a sigmoidal Emax model in which darbepoetin concentration (ng/ml) stimulates the erythropoietin effect, with a CE50 of 0.41 ng/ml and a Hill coefficient (H) of 3.0. The paper does not provide full text to clarify the specific mechanistic pathway (e.g., production vs. elimination), but the record indicates a direct concentration-driven stimulation.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Keller_2015`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
 - **tier:** descriptive
-- **effect:** stimulation/unknown
+- **effect:** stimulation/proportional
 
 ## Citation
 Keller F et al., Pharmacokinetic and pharmacodynamic con…, Expert opinion on drug meta… (2015)

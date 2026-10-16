@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;olaratumab&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Olaratumab_Mo2018_base&quot;,&quot;label&quot;:&quot;Mo_2018_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_olaratumab/Olaratumab_Mo2018_base.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Olaratumab_Mo2018_final&quot;,&quot;label&quot;:&quot;Mo_2018_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_olaratumab/Olaratumab_Mo2018_final.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Olaratumab_Mo2018_base&quot;,&quot;label&quot;:&quot;Mo_2018_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_olaratumab/Olaratumab_Mo2018_base.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Olaratumab_Mo2018_final&quot;,&quot;label&quot;:&quot;Mo_2018_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_olaratumab/Olaratumab_Mo2018_final.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # olaratumab
 
@@ -18,21 +18,23 @@ Olaratumab is a monoclonal antibody anticancer drug that was used to treat soft-
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 19:06 | 10:18 | 2/0/0 | 0/0/1 | 0/0/0 | 76,580/38,283 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/2 | 2/0 | 0 |
+| 2026-10-15 04:08 | 1:14 | 0/0/2 | 0/0/0 | 0/0/0 | 65,761/7,205 | einfracz / qwen3.8-27b | 2 | 0/2 | 2/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed 1/2</span> | [Mo_2018_base](drugs/drug_olaratumab/Olaratumab_Mo2018_base.md) | ▶ model + simulator | 2-compartment, IV | 4 | Mo G et al., Population Pharmacokinetic Modeling of…, Clinical pharmacokinetics (2018) | [10.1007/s40262-017-0562-0](https://doi.org/10.1007/s40262-017-0562-0) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed 1/2</span> | [Mo_2018_final](drugs/drug_olaratumab/Olaratumab_Mo2018_final.md) | ▶ model + simulator | 2-compartment, IV | 4 | Mo G et al., Population Pharmacokinetic Modeling of…, Clinical pharmacokinetics (2018) | [10.1007/s40262-017-0562-0](https://doi.org/10.1007/s40262-017-0562-0) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed 1/2</span><br><sub>blocking: T1_t_half_beta</sub><br><sub>route_to: `scholar`</sub> | [Mo_2018_base](drugs/drug_olaratumab/Olaratumab_Mo2018_base.md) | ▶ model + simulator | 2-compartment, IV | 4 | Mo G et al., Population Pharmacokinetic Modeling of…, Clinical pharmacokinetics (2018) | [10.1007/s40262-017-0562-0](https://doi.org/10.1007/s40262-017-0562-0) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed 1/2</span><br><sub>blocking: T1_t_half_beta</sub><br><sub>route_to: `scholar`</sub> | [Mo_2018_final](drugs/drug_olaratumab/Olaratumab_Mo2018_final.md) | ▶ model + simulator | 2-compartment, IV | 4 | Mo G et al., Population Pharmacokinetic Modeling of…, Clinical pharmacokinetics (2018) | [10.1007/s40262-017-0562-0](https://doi.org/10.1007/s40262-017-0562-0) |
 
-## Pharmacodynamics (PD)
+## ADME sites
 
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed</span> | [Jones_2019_OS](drugs/drug_olaratumab/pd_Jones_2019_OS.md) | overall survival ← olaratumab · time-to-event model | — | Jones RL et al., Exposure-response relationship of olara…, Cancer chemotherapy and pha… (2019) | [10.1007/s00280-018-3723-4](https://doi.org/10.1007/s00280-018-3723-4) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed</span> | [Jones_2019_PFS](drugs/drug_olaratumab/pd_Jones_2019_PFS.md) | progression-free survival ← olaratumab · time-to-event model | — | Jones RL et al., Exposure-response relationship of olara…, Cancer chemotherapy and pha… (2019) | [10.1007/s00280-018-3723-4](https://doi.org/10.1007/s00280-018-3723-4) |
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=olaratumab).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: PDGFRA (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -44,14 +46,14 @@ Olaratumab is a monoclonal antibody anticancer drug that was used to treat soft-
 
 - **PubMed hits:** 2 matched, 2 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 2  ·  extracted 2  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 2  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Jones_2019 | irrelevant | 2 | 0 | The paper reports exposure-response (efficacy/safety) parameters (EC50, Emax) rather than quantitative pharmacokinetic disposition parameters (CL, V, Q, ka) for olaratumab. |
+| popPK | Jones_2019 | irrelevant | 2 | 1 | The study focuses on exposure-response for survival outcomes (EC50, EMAX) and safety, not on quantitative PK disposition parameters (CL, V, Q), which are referenced as being in a separate PopPK publication. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 18:57 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-15 04:07 UTC</sub>

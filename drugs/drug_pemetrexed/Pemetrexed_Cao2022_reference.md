@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;pemetrexed&quot;,&quot;href&quot;:&quot;drugs/drug_pemetrexed/&quot;},{&quot;label&quot;:&quot;Cao_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pemetrexed_Boosman2023_reference&quot;,&quot;label&quot;:&quot;Boosman_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pemetrexed/Pemetrexed_Boosman2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pemetrexed_Cao2022_reference&quot;,&quot;label&quot;:&quot;Cao_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pemetrexed/Pemetrexed_Cao2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Pemetrexed_Srinivasan2019_reference&quot;,&quot;label&quot;:&quot;Srinivasan_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pemetrexed/Pemetrexed_Srinivasan2019_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pemetrexed_Boosman2023_test_dose_base_model&quot;,&quot;label&quot;:&quot;Boosman_2023_test_dose_base_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pemetrexed/Pemetrexed_Boosman2023_test_dose_base_model.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pemetrexed_Boosman2023_therapeutic_dose_model&quot;,&quot;label&quot;:&quot;Boosman_2023_therapeutic_dose_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pemetrexed/Pemetrexed_Boosman2023_therapeutic_dose_model.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pemetrexed_Cao2022_reference&quot;,&quot;label&quot;:&quot;Cao_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pemetrexed/Pemetrexed_Cao2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Pemetrexed_Srinivasan2019_reference&quot;,&quot;label&quot;:&quot;Srinivasan_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pemetrexed/Pemetrexed_Srinivasan2019_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # pemetrexed — `Pemetrexed_Cao2022_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.462). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.462). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -23,13 +23,11 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:39:24.312269+00:00) predates the upstream re-run (2026-10-07 17:11:52.193203+00:00). Current validate status: `extracted`.
-
 ## Citation
 Cao P et al., Population pharmacokinetic study of pem…, Frontiers in pharmacology (2022)
   ·  DOI: [10.3389/fphar.2022.954242](https://doi.org/10.3389/fphar.2022.954242)
 
-<div class="pk-model-meta" hidden drug="pemetrexed" model-id="Pemetrexed_Cao2022_reference" status="extracted" stale="true" population="Chinese patients with primary advanced non-small cell lung carcinoma" measured-compound="pemetrexed" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="pemetrexed" model-id="Pemetrexed_Cao2022_reference" status="curated_candidate" stale="false" population="Chinese patients with primary advanced non-small cell lung carcinoma" measured-compound="pemetrexed" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.
@@ -39,29 +37,78 @@ Cao P et al., Population pharmacokinetic study of pem…, Frontiers in pharmacol
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| V1 (L) | `Q63` · V1 | 17.53 | L | 0.01753 | [l] | not captured | exact (1.0) | T2:row2:col1, T2:row2:col2, T2:row2:col4, T2:row2:col5, T2:row2:col6 | — | not captured |
-| V2 (L) | `Q64` · V2 | 3.86 | L | 0.00386 | [l] | not captured | exact (1.0) | T2:row3:col1, T2:row3:col2, T2:row3:col4, T2:row3:col5, T2:row3:col6 | — | not captured |
-| CL (L·h−1) | `Q22` · CL | 7.63 | L·h−1 | 2.1194444444444444e-06 | [l] / [h] | not captured | exact (1.0) | T2:row4:col1, T2:row4:col2, T2:row4:col3, T2:row4:col4, T2:row4:col5, T2:row4:col6 | — | not captured |
-| Q (L·h−1) | `Q30` · Q | 0.08 | L·h−1 | 2.2222222222222224e-08 | [l] / [h] | not captured | exact (1.0) | T2:row5:col1, T2:row5:col2, T2:row5:col3, T2:row5:col4, T2:row5:col5, T2:row5:col6 | — | not captured |
-| θ3 | `Q900` · equation variable | 0.11 | not captured | not captured | not captured | not captured | llm (0.6) | T2:row8:col1, T2:row8:col2, T2:row8:col4, T2:row8:col5, T2:row8:col6 | — | not captured |
+| V1 | `Q63` · V1 | 18.94 | L | 0.018940000000000002 | L | not captured | exact (1.0) | Cao_2022:results_prose | — | not captured |
+| V2 | `Q64` · V2 | 5.12 | L | 0.00512 | L | not captured | exact (1.0) | Cao_2022:results_prose | — | not captured |
+| CL | `Q22` · CL | 8.29 | L/h | 2.3027777777777774e-06 | L/h | not captured | exact (1.0) | Cao_2022:results_prose | — | not captured |
+| Q | `Q30` · Q | 0.1 | L/h | 2.777777777777778e-08 | L/h | not captured | exact (1.0) | Cao_2022:results_prose | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
+### Unresolved rows _(no Q-code or no value — not parameters)_
+| label (paper) | Q-code | value | link |
+|---|---|---|---|
+| rs11545078 (GGH) | Q900 | not captured | llm |
+
 ## Departures & gaps
 
 **Interpretation flags:**
-- table section residual_error: 'σ (%)' routed out of structural estimates ('Residual variability')
-- table section residual_error: 'ε-shrinkage (%)' routed out of structural estimates ('Residual variability')
-- column 'bias (%)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- dropped unlinked row (NIL): 'θ1' — extend the ontology if this is a real PK parameter (source ['T2:row6:col1', 'T2:row6:col2', 'T2:row6:col4', 'T2:row6:col5', 'T2:row6:col6'])
-- dropped unlinked row (NIL): 'θ2' — extend the ontology if this is a real PK parameter (source ['T2:row7:col1', 'T2:row7:col2', 'T2:row7:col4', 'T2:row7:col5', 'T2:row7:col6'])
-- dropped diagnostic row 'ηCL -shrinkage (%)' → Q318 (shrinkage) — reported statistic, not a parameter
-- dropped diagnostic row 'ηQ -shrinkage (%)' → Q318 (shrinkage) — reported statistic, not a parameter
+- column 'distribution of different genotypes' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- dropped unlinked row (NIL): 'rs10897315 (SLC22A8)' — extend the ontology if this is a real PK parameter (source ['Cao_2022_table_S5:row0:col1'])
+- dropped unlinked row (NIL): 'rs11231300 (SLC22A8)' — extend the ontology if this is a real PK parameter (source ['Cao_2022_table_S5:row1:col1'])
+- dropped unlinked row (NIL): 'rs11231305 (SLC22A8)' — extend the ontology if this is a real PK parameter (source ['Cao_2022_table_S5:row2:col1'])
+- dropped unlinked row (NIL): 'rs4149183 (SLC22A8)' — extend the ontology if this is a real PK parameter (source ['Cao_2022_table_S5:row3:col1'])
+- dropped unlinked row (NIL): 'rs948982 (SLC22A8)' — extend the ontology if this is a real PK parameter (source ['Cao_2022_table_S5:row4:col1'])
+- dropped unlinked row (NIL): 'rs11231299 (SLC22A8)' — extend the ontology if this is a real PK parameter (source ['Cao_2022_table_S5:row5:col1'])
+- dropped unlinked row (NIL): 'rs10750978 (SLC22A8)' — extend the ontology if this is a real PK parameter (source ['Cao_2022_table_S5:row6:col1'])
+- dropped unlinked row (NIL): 'rs7926184 (SLC22A8)' — extend the ontology if this is a real PK parameter (source ['Cao_2022_table_S5:row7:col1'])
+- dropped unlinked row (NIL): 'rs58077467 (SLC22A8)' — extend the ontology if this is a real PK parameter (source ['Cao_2022_table_S5:row8:col1'])
+- dropped unlinked row (NIL): 'rs74189618 (SLC22A8)' — extend the ontology if this is a real PK parameter (source ['Cao_2022_table_S5:row9:col1'])
+- dropped unlinked row (NIL): 'rs10792367 (SLC22A8)' — extend the ontology if this is a real PK parameter (source ['Cao_2022_table_S5:row10:col1'])
+- dropped unlinked row (NIL): 'rs11568482 (SLC22A8)' — extend the ontology if this is a real PK parameter (source ['Cao_2022_table_S5:row11:col1'])
+- dropped unlinked row (NIL): 'rs45438191 (SLC22A8)' — extend the ontology if this is a real PK parameter (source ['Cao_2022_table_S5:row12:col1'])
+- dropped unlinked row (NIL): 'rs7113486 (SLC22A8)' — extend the ontology if this is a real PK parameter (source ['Cao_2022_table_S5:row13:col1'])
+- dropped unlinked row (NIL): 'rs4149181 (SLC22A8)' — extend the ontology if this is a real PK parameter (source ['Cao_2022_table_S5:row14:col1'])
+- dropped unlinked row (NIL): 'rs4578390 (SLC22A8)' — extend the ontology if this is a real PK parameter (source ['Cao_2022_table_S5:row15:col1'])
+- dropped unlinked row (NIL): 'rs1801133 (MTHFR)' — extend the ontology if this is a real PK parameter (source ['Cao_2022_table_S5:row16:col1'])
+- dropped unlinked row (NIL): 'rs1650697 (DHFR)' — extend the ontology if this is a real PK parameter (source ['Cao_2022_table_S5:row17:col1'])
+- dropped unlinked row (NIL): 'rs699517 (TYMS)' — extend the ontology if this is a real PK parameter (source ['Cao_2022_table_S5:row18:col1'])
+- unit_dimension_unknown: 'GGH' (equation variable)
+- dropped unlinked row (NIL): 'rs10464903 (GGH)' — extend the ontology if this is a real PK parameter (source ['Cao_2022_table_S5:row20:col1'])
+- dropped unlinked row (NIL): 'rs2228001 (XPC)' — extend the ontology if this is a real PK parameter (source ['Cao_2022_table_S5:row21:col1'])
+- dropped unlinked row (NIL): 'rs12995526 (ATIC)' — extend the ontology if this is a real PK parameter (source ['Cao_2022_table_S5:row22:col1'])
+- dropped unlinked row (NIL): 'rs1799782 (XRCC1)' — extend the ontology if this is a real PK parameter (source ['Cao_2022_table_S5:row23:col1'])
+- dropped unlinked row (NIL): 'rs2306283 (SLCO1B1)' — extend the ontology if this is a real PK parameter (source ['Cao_2022_table_S5:row24:col1'])
+- dropped unlinked row (NIL): 'rs4149056 (SLCO1B1)' — extend the ontology if this is a real PK parameter (source ['Cao_2022_table_S5:row25:col1'])
+- dropped unlinked row (NIL): 'rs4149015 (SLCO1B1)' — extend the ontology if this is a real PK parameter (source ['Cao_2022_table_S5:row26:col1'])
+- dropped unlinked row (NIL): 'rs4149117 (SLCO1B3)' — extend the ontology if this is a real PK parameter (source ['Cao_2022_table_S5:row27:col1'])
+- dropped unlinked row (NIL): 'rs11045585 (SLCO1B3)' — extend the ontology if this is a real PK parameter (source ['Cao_2022_table_S5:row28:col1'])
+- dropped unlinked row (NIL): 'rs7311358 (SLCO1B3)' — extend the ontology if this is a real PK parameter (source ['Cao_2022_table_S5:row29:col1'])
+- dropped unlinked row (NIL): 'rs232043 (RRM1)' — extend the ontology if this is a real PK parameter (source ['Cao_2022_table_S5:row30:col1'])
+- dropped unlinked row (NIL): 'rs1128503 (ABCB1)' — extend the ontology if this is a real PK parameter (source ['Cao_2022_table_S5:row31:col1'])
+- dropped unlinked row (NIL): 'rs3740066 (ABCC2)' — extend the ontology if this is a real PK parameter (source ['Cao_2022_table_S5:row32:col1'])
+- dropped unlinked row (NIL): 'rs2273697 (ABCC2)' — extend the ontology if this is a real PK parameter (source ['Cao_2022_table_S5:row33:col1'])
+- dropped unlinked row (NIL): 'rs12762549 (ABCC2)' — extend the ontology if this is a real PK parameter (source ['Cao_2022_table_S5:row34:col1'])
+- dropped unlinked row (NIL): 'rs717620 (ABCC2)' — extend the ontology if this is a real PK parameter (source ['Cao_2022_table_S5:row35:col1'])
+- dropped unlinked row (NIL): 'rs11615 (ERCC1)' — extend the ontology if this is a real PK parameter (source ['Cao_2022_table_S5:row36:col1'])
+- dropped unlinked row (NIL): 'rs3212986 (ERCC1)' — extend the ontology if this is a real PK parameter (source ['Cao_2022_table_S5:row37:col1'])
+- dropped unlinked row (NIL): 'rs1799793 (ERCC2)' — extend the ontology if this is a real PK parameter (source ['Cao_2022_table_S5:row38:col1'])
+- dropped unlinked row (NIL): 'rs1047768 (ERCC5)' — extend the ontology if this is a real PK parameter (source ['Cao_2022_table_S5:row39:col1'])
+- dropped unlinked row (NIL): 'rs28371759 (CYP3A5)' — extend the ontology if this is a real PK parameter (source ['Cao_2022_table_S5:row40:col1'])
+- dropped unlinked row (NIL): 'rs776746 (CYP3A5)' — extend the ontology if this is a real PK parameter (source ['Cao_2022_table_S5:row41:col1'])
+- dropped unlinked row (NIL): 'rs4646 (CYP19A1)' — extend the ontology if this is a real PK parameter (source ['Cao_2022_table_S5:row42:col1'])
+- dropped unlinked row (NIL): 'rs1695 (GSTP1)' — extend the ontology if this is a real PK parameter (source ['Cao_2022_table_S5:row43:col1'])
+- table mostly unlinked (43/44 table-cell rows NIL) — likely the wrong table was located, not 1 genuinely-missing ontology parameter(s); route_to_review instead of building a model from the residual linked cell(s)
+- salvaged Q63 ('V1'=18.94) from results prose — parameter table was unreadable
+- salvaged Q64 ('V2'=5.12) from results prose — parameter table was unreadable
+- salvaged Q22 ('CL'=8.29) from results prose — parameter table was unreadable
+- salvaged Q30 ('Q'=0.1) from results prose — parameter table was unreadable
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=pemetrexed
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - model equation 'θi = θ×exp(θCov)' not bound — neither LHS nor base term 'θ' linked to an ontology parameter
+- status held at route_to_review — not promoted
 
 **Extraction notes:**
 - LLM selected parameter table(s) 2
@@ -103,15 +150,11 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T2:row4:col1', 'T2:row4:col2', 'T2:row4:col3', 'T2:row4:col4', 'T2:row4:col5', 'T2:row4:col6'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T2:row5:col1', 'T2:row5:col2', 'T2:row5:col3', 'T2:row5:col4', 'T2:row5:col5', 'T2:row5:col6'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['T2:row2:col1', 'T2:row2:col2', 'T2:row2:col4', 'T2:row2:col5', 'T2:row2:col6'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['T2:row3:col1', 'T2:row3:col2', 'T2:row3:col4', 'T2:row3:col5', 'T2:row3:col6'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 7.63 | not captured | not captured | ['T2:row4:col1', 'T2:row4:col2', 'T2:row4:col3', 'T2:row4:col4', 'T2:row4:col5', 'T2:row4:col6'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 8.29 | not captured | not captured | ['Cao_2022:results_prose'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 7.63 L/h | not captured | not captured | ['T2:row4:col1', 'T2:row4:col2', 'T2:row4:col3', 'T2:row4:col4', 'T2:row4:col5', 'T2:row4:col6'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 17.5 L | not captured | not captured | ['T2:row2:col1', 'T2:row2:col2', 'T2:row2:col4', 'T2:row2:col5', 'T2:row2:col6'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 3.86 L | not captured | not captured | ['T2:row3:col1', 'T2:row3:col2', 'T2:row3:col4', 'T2:row3:col5', 'T2:row3:col6'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 8.29 L/h | not captured | not captured | ['Cao_2022:results_prose'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 18.9 L | not captured | not captured | ['Cao_2022:results_prose'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 5.12 L | not captured | not captured | ['Cao_2022:results_prose'] |
 
 **Reviewer per-scenario checks:**
 
@@ -131,10 +174,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_pemetrexed/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Cao_2022` / `Cao_2022::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_pemetrexed/models/modelica/Pemetrexed_Cao2022_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_pemetrexed/models/modelica/Pemetrexed_Cao2022_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_pemetrexed/models/modelica/Pemetrexed_Cao2022_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_pemetrexed/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Cao_2022` / `Cao_2022::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_pemetrexed/models/modelica/Pemetrexed_Cao2022_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_pemetrexed/models/modelica/Pemetrexed_Cao2022_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_pemetrexed/models/modelica/Pemetrexed_Cao2022_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -143,7 +186,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_pemetrexed/Pemetrexed_Cao2022_reference/Pemetrexed_Cao2022_reference_modelica.zip" download>Pemetrexed_Cao2022_reference_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_pemetrexed/Pemetrexed_Cao2022_reference/Pemetrexed_Cao2022_reference_modelica.zip" download>Pemetrexed_Cao2022_reference_modelica.zip</a> <span class="pk-size">(4.7 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_pemetrexed/Pemetrexed_Cao2022_reference/Pemetrexed_Cao2022_reference_fmi.zip" download>Pemetrexed_Cao2022_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_2C.fmu" download>PK_2C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_pemetrexed/Pemetrexed_Cao2022_reference/Pemetrexed_Cao2022_reference_matlab.zip" download>Pemetrexed_Cao2022_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_pemetrexed/Pemetrexed_Cao2022_reference/Pemetrexed_Cao2022_reference_matlab_simbio.zip" download>Pemetrexed_Cao2022_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
@@ -152,7 +195,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_pemetrexed/Pemetrexed_Cao2022_reference/Pemetrexed_Cao2022_reference.svg" alt="Pemetrexed_Cao2022_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_pemetrexed/Pemetrexed_Cao2022_reference/Pemetrexed_Cao2022_reference.svg" alt="Pemetrexed_Cao2022_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -165,4 +208,4 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 17:11 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 21:43 UTC</sub>

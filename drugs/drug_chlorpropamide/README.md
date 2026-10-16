@@ -18,7 +18,7 @@ Chlorpropamide is a sulfonylurea blood-glucose-lowering drug that was used to tr
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-04 22:34 | 1:02 | 0/0/0 | 1/0/0 | 0/0/0 | 37,795/1,581 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-13 13:22 | 0:58 | 0/0/0 | 1/0/0 | 0/0/0 | 4,713/1,501 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
@@ -28,7 +28,20 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 1.00).">in vitro</span> | [Lang_2012_KATP_channel_inhibition](drugs/drug_chlorpropamide/pd_Lang_2012_KATP_channel_inhibition.md) | KATP channel inhibition ← chlorpropamide · direct sigmoid Emax (Hill) effect | — | Lang VY et al., Pharmacogenomic analysis of ATP-sensiti…, Pharmacogenetics and genomi… (2012) | [10.1097/FPC.0b013e32835001e7](https://doi.org/10.1097/FPC.0b013e32835001e7) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by ollama:gpt-oss:120b (not confirmed, agreement 0.8), einfracz:gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 1.00).">in vitro</span> | [Lang_2012_KATP_channel_inhibition](drugs/drug_chlorpropamide/pd_Lang_2012_KATP_channel_inhibition.md) | KATP channel inhibition ← chlorpropamide · direct sigmoid Emax (Hill) effect | — | Lang VY et al., Pharmacogenomic analysis of ATP-sensiti…, Pharmacogenetics and genomi… (2012) | [10.1097/FPC.0b013e32835001e7](https://doi.org/10.1097/FPC.0b013e32835001e7) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=chlorpropamide).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | `SLC15A1` inhibitor | DrugBank actor |
+| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| metabolism | liver | `CYP2C19` substrate, `CYP2C9` substrate | DrugBank actor |
+| excretion | kidney | `SLC15A2` inhibitor, `SLC22A6` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ABCC8 (inhibitor), KCNJ10 (blocker), PTGS1 (substrate).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,10 +58,12 @@ _not available_
 
 ## Full-text requests
 
-_9 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_11 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
+| `Vila_1979.pdf` | Vila Jato JL et al., [Relation between the pharmacokinetic a…, Bollettino chimico farmaceu… (1979) | popPK | 10 | not captured | [553527](https://pubmed.ncbi.nlm.nih.gov/553527) | The paper is a pharmacokinetic study of chlorpropamide in rabbits, but the provided evidence contains only the title and metadata, with no numeric parameter values present. |
+| `Vila_1980.pdf` | Vila JL et al., [Relationship between pharmacokinetic a…, Bollettino chimico farmaceu… (1980) | popPK | 10 | not captured | [7459053](https://pubmed.ncbi.nlm.nih.gov/7459053) | The title confirms a pharmacokinetic study of chlorpropamide in rabbits, but no numeric parameter values are present in the provided evidence. |
 | `Batenhorst_1982.pdf` | Batenhorst RL et al., Comparative bioavailability of chlorpro…, Clinical pharmacy (1982) | popPK | 9 | not captured | [7184670](https://pubmed.ncbi.nlm.nih.gov/7184670) | The study reports a two-compartment PK model for chlorpropamide in humans, but the specific numeric parameter values (ka, CL, V, etc.) are not present in the provided text, only qualitative comparisons and statistical outcomes. |
 | `Rosenkranz_1996.pdf` | Rosenkranz B, Pharmacokinetic basis for the safety of…, Hormone and metabolic resea… (1996) | pd | 5 | [10.1055/s-2007-979833](https://doi.org/10.1055/s-2007-979833) | [8911979](https://www.ncbi.nlm.nih.gov/pubmed/8911979) | metadata signals extractable PD data (concentration-effect) |
 | `Angel_1991.pdf` | Angel I et al., The binding site for [3H]glibenclamide…, Fundamental & clinical phar… (1991) | pd | 4 | [10.1111/j.1472-8206.1991.tb00704.x](https://doi.org/10.1111/j.1472-8206.1991.tb00704.x) | [1649112](https://www.ncbi.nlm.nih.gov/pubmed/1649112) | metadata signals extractable PD data (IC50) |
@@ -59,7 +74,7 @@ _9 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | `Shon_2005.pdf` | Shon JH et al., Chlorpropamide 2-hydroxylation is catal…, British journal of clinical… (2005) | pgx | 8 | [10.1111/j.1365-2125.2005.02364.x](https://doi.org/10.1111/j.1365-2125.2005.02364.x) | [15842554](https://www.ncbi.nlm.nih.gov/pubmed/15842554) | metadata signals extractable PGX data (CYP2C9, PK/PD-context) |
 | `Si_2012.pdf` | Si D et al., Distribution of CYP2C9*13 allele in the…, Biopharmaceutics & drug dis… (2012) | pgx | 8 | [10.1002/bdd.1804](https://doi.org/10.1002/bdd.1804) | [22886551](https://www.ncbi.nlm.nih.gov/pubmed/22886551) | metadata signals extractable PGX data (CYP2C9*13, PK/PD-context) |
 
-<sub>queue written 2026-10-04T22:33:45.672918+00:00</sub>
+<sub>queue written 2026-10-13T13:22:09.704661+00:00</sub>
 
 ## Screened and excluded
 

@@ -1,8 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;pazopanib&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/&quot;},{&quot;label&quot;:&quot;Ouerdani_2015 \u00b7 PD tumor size, expressed as the sum of longest diameters&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pazopanib_Attia2023_reference&quot;,&quot;label&quot;:&quot;Attia_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Attia2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pazopanib_Balakirouchenane2020_reference&quot;,&quot;label&quot;:&quot;Balakirouchenane_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Balakirouchenane2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pazopanib_Bins2019_base&quot;,&quot;label&quot;:&quot;Bins_2019_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Bins2019_base.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pazopanib_Bins2019_final&quot;,&quot;label&quot;:&quot;Bins_2019_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Bins2019_final.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pazopanib_Ozbey2021_reference&quot;,&quot;label&quot;:&quot;Ozbey_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Ozbey2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;pazopanib&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/&quot;},{&quot;label&quot;:&quot;Ouerdani_2015 \u00b7 PD sum of longest tumor diameter (SLD)&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pazopanib_Attia2023_reference&quot;,&quot;label&quot;:&quot;Attia_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Attia2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pazopanib_Balakirouchenane2020_reference&quot;,&quot;label&quot;:&quot;Balakirouchenane_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Balakirouchenane2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pazopanib_Ozbey2021_reference&quot;,&quot;label&quot;:&quot;Ozbey_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Ozbey2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# tumor size, expressed as the sum of longest diameters — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.222). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 1.00).">human + animal</span>
+# sum of longest tumor diameter (SLD) — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.222). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.00).">human + animal</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -12,23 +12,23 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-> **Species: human + animal.** The paper reports both human and animal data; check which group this record describes before reading it as human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
+> **Species: human + animal.** The paper reports both human and animal data; check which group this record describes before reading it as human pharmacology (read from the LLM relevance screen, p(non-human) 0.00).
 
 ## Record summary
 
-**As extracted:** Pazopanib (concentrations from the PK model of Attia_2023) drives tumor size, expressed as the sum of longest diameters (in mm): disease-progression model.
+**As extracted:** Pazopanib (the dose) drives sum of longest tumor diameter (SLD) (in mm): disease-progression model.
 
 **Model:** No model was generated from this record.
 
-> Pazopanib exposure (driver in μg·h/mL) was modeled to affect tumor size (SLD, mm) through dual actions: indirect inhibition of tumor growth by inhibiting the vasculature/angiogenesis, and a cytotoxic effect; the supplied excerpts do not specify a concentration–response potency for the fitted model. The record reports λ = 0.0021 day−1, b = 0.0392 day−1, γ = 0.0023 day−1, α = 0.0032 day−1, and δ = 0.0153 day−1 (with β_γ = 0.142 and β_α = 0.125); the excerpt gives molecular-target IC50 values of 0.074 μmol/L for c-KIT, 0.010, 0.030, and 0.047 μmol/L for VEGFR1, VEGFR2, and VEGFR3, and 0.071 and 0.084 μmol/L for PDGFR-α and PDGFR-β, respectively.
+> Pazopanib dose inhibits the sum of longest tumor diameter (SLD) by a dual mechanism, inducing both an indirect effect through inhibition of tumor vasculature (angiogenesis) and a direct cytotoxic effect on tumor growth. The model parameters provided in the record (λ=0.0021 day⁻¹, K0=329 mm, b=0.0392 day⁻¹, γ=0.0023 day⁻¹, βγ=0.142, βα=0.125, δ=0.0153 day⁻¹) are listed in the record, but the paper excerpts do not explicitly define which parameter corresponds to specific IC50, Emax, or rate values for the SLD response model.
 >
-> <sub>Source-based summary by gpt-6-luna from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Ouerdani_2015`
 - **model family:** `disease_progression`
-- **driver:** `cited_pk`
+- **driver:** `dose_only`
 - **tier:** population
-- **effect:** stimulation/proportional
+- **effect:** inhibition/proportional
 
 ## Citation
 Ouerdani A et al., Preclinical Modeling of Tumor Growth an…, CPT: pharmacometrics & syst… (2015)
@@ -38,11 +38,10 @@ Ouerdani A et al., Preclinical Modeling of Tumor Growth an…, CPT: pharmacometr
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
 | PD (effect) | λ | `Q340` · not captured | 0.0021 | day−1 | not captured | llm (not captured) | Ouerdani_2015:pdv3 |
-| model term | K 0 | `Q900` · not captured | 329 | mm | not captured | llm (not captured) | Ouerdani_2015:pdv3 |
-| model term | b | `Q900` · not captured | 0.0392 | day−1 | not captured | llm (not captured) | Ouerdani_2015:pdv3 |
+| PD (effect) | K 0 | `Q333` · not captured | 329 | mm | not captured | llm (not captured) | Ouerdani_2015:pdv3 |
+| — | b | `Q100` · not captured | 0.0392 | day−1 | not captured | nil (not captured) | Ouerdani_2015:pdv3 |
 | PD (effect) | γ | `Q328` · not captured | 0.0023 | day−1 | not captured | llm (not captured) | Ouerdani_2015:pdv3 |
 | model term | β_γ | `Q900` · not captured | 0.142 | not captured | not captured | llm (not captured) | Ouerdani_2015:pdv3 |
-| model term | α | `Q900` · not captured | 0.0032 | day−1 | not captured | llm (not captured) | Ouerdani_2015:pdv3 |
 | model term | β_α | `Q900` · not captured | 0.125 | not captured | not captured | llm (not captured) | Ouerdani_2015:pdv3 |
 | PD (effect) | δ | `Q337` · not captured | 0.0153 | day−1 | not captured | llm (not captured) | Ouerdani_2015:pdv3 |
 

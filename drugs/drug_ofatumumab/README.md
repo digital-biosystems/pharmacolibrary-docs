@@ -18,7 +18,7 @@ Ofatumumab is a monoclonal antibody used to treat B-cell blood cancers such as c
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 18:56 | 20:57 | 1/2/0 | 0/0/0 | 0/0/0 | 302,915/58,158 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 1/2 | 3/0 | 0 |
+| 2026-10-15 04:07 | 5:17 | 1/2/0 | 0/0/1 | 0/0/0 | 246,164/22,849 | einfracz / qwen3.8-27b | 3 | 1/2 | 3/0 | 0 |
 
 ## popPK records
 
@@ -26,7 +26,25 @@ Ofatumumab is a monoclonal antibody used to treat B-cell blood cancers such as c
 |---|---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25), gpt-oss:120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed 0/2</span> | [Struemper_2014_reference](drugs/drug_ofatumumab/Ofatumumab_Struemper2014_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Struemper H et al., Population pharmacokinetics of ofatumum…, Journal of clinical pharmac… (2014) | [10.1002/jcph.268](https://doi.org/10.1002/jcph.268) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Coiffier_2010_reference](drugs/drug_ofatumumab/Ofatumumab_Coiffier2010_reference.md) | — | 1-compartment (no model) | 2 | Coiffier B et al., Pharmacokinetics and pharmacokinetic/ph…, British journal of haematol… (2010) | [10.1111/j.1365-2141.2010.08193.x](https://doi.org/10.1111/j.1365-2141.2010.08193.x) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.913), gpt-oss:120b (not confirmed, agreement 0.783). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Yu_2022_reference](drugs/drug_ofatumumab/Ofatumumab_Yu2022_reference.md) | — | 2-compartment (no model) | 10 | Yu H et al., Population Pharmacokinetic-B Cell Model…, CNS drugs (2022) | [10.1007/s40263-021-00895-w](https://doi.org/10.1007/s40263-021-00895-w) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.913), gpt-oss:120b (not confirmed, agreement 0.783). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Yu_2022_reference](drugs/drug_ofatumumab/Ofatumumab_Yu2022_reference.md) | — | general linear (no model) | 11 | Yu H et al., Population Pharmacokinetic-B Cell Model…, CNS drugs (2022) | [10.1007/s40263-021-00895-w](https://doi.org/10.1007/s40263-021-00895-w) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Coiffier_2010_DOR](drugs/drug_ofatumumab/pd_Coiffier_2010_DOR.md) | duration of response ← ofatumumab · time-to-event model | — | Coiffier B et al., Pharmacokinetics and pharmacokinetic/ph…, British journal of haematol… (2010) | [10.1111/j.1365-2141.2010.08193.x](https://doi.org/10.1111/j.1365-2141.2010.08193.x) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Coiffier_2010_OR](drugs/drug_ofatumumab/pd_Coiffier_2010_OR.md) | objective response ← ofatumumab · categorical (graded) response model | — | Coiffier B et al., Pharmacokinetics and pharmacokinetic/ph…, British journal of haematol… (2010) | [10.1111/j.1365-2141.2010.08193.x](https://doi.org/10.1111/j.1365-2141.2010.08193.x) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Coiffier_2010_PFS](drugs/drug_ofatumumab/pd_Coiffier_2010_PFS.md) | progression-free survival ← ofatumumab · time-to-event model | — | Coiffier B et al., Pharmacokinetics and pharmacokinetic/ph…, British journal of haematol… (2010) | [10.1111/j.1365-2141.2010.08193.x](https://doi.org/10.1111/j.1365-2141.2010.08193.x) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Coiffier_2010_time_to_next_anti_CLL_therapy](drugs/drug_ofatumumab/pd_Coiffier_2010_time_to_next_anti_CLL_therapy.md) | time to next anti-CLL therapy ← ofatumumab · time-to-event model | — | Coiffier B et al., Pharmacokinetics and pharmacokinetic/ph…, British journal of haematol… (2010) | [10.1111/j.1365-2141.2010.08193.x](https://doi.org/10.1111/j.1365-2141.2010.08193.x) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=ofatumumab).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: MS4A1 (antibody), MS4A1 (regulator).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,19 +65,19 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Struemper_2014.pdf` | Struemper H et al., Population pharmacokinetics of ofatumum…, Journal of clinical pharmac… (2014) | popPK | 10 | [10.1002/jcph.268](https://doi.org/10.1002/jcph.268) | [24443277](https://pubmed.ncbi.nlm.nih.gov/24443277) | The paper reports a population PK model for ofatumumab with specific numeric values for linear clearance (7.5 mL/h) and volume of distribution (5.3 L) provided in the text. |
+| `Struemper_2014.pdf` | Struemper H et al., Population pharmacokinetics of ofatumum…, Journal of clinical pharmac… (2014) | popPK | 10 | [10.1002/jcph.268](https://doi.org/10.1002/jcph.268) | [24443277](https://pubmed.ncbi.nlm.nih.gov/24443277) | The study reports a population PK model with specific numeric values for clearance (7.5 mL/h) and volume of distribution (5.3 L) in the abstract, though full parameter estimates may be in the text or figures. |
 
-<sub>queue written 2026-10-07T18:36:39.727562+00:00</sub>
+<sub>queue written 2026-10-15T04:02:04.498344+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Colucci_2023 | irrelevant | 0 | 0 | The study is a clinical observational analysis of relapse risk and B-cell recovery markers, not a pharmacokinetic study reporting quantitative disposition parameters for ofatumumab. |
-| popPK | Greco_2026 | irrelevant | 0 | 0 | The study reports optical coherence tomography (OCT) retinal thickness data, not pharmacokinetic parameters. |
-| popPK | Huck_2019 | irrelevant | 0 | 0 | The study investigates a mouse anti-CD20 antibody in mice, not the human drug ofatumumab, and reports immunological effects rather than pharmacokinetic parameters. |
-| popPK | Yuan_2026 | irrelevant | 0 | 0 | The paper is a narrative review discussing the development roadmap and biological rationale for B-cell targeting therapies, including ofatumumab, but it does not report original quantitative pharmacokinetic parameter values. |
-| popPK | Zanghì_2026 | irrelevant | 0 | 0 | The study is a longitudinal observational analysis of cognitive and structural brain changes in multiple sclerosis patients, reporting no pharmacokinetic parameters for ofatumumab. |
+| popPK | Colucci_2023 | irrelevant | 0 | 0 | The study focuses on clinical outcomes and B-cell subset recovery, reporting no pharmacokinetic parameters for ofatumumab. |
+| popPK | Greco_2026 | irrelevant | 0 | 0 | The study reports optical coherence tomography (OCT) findings regarding retinal neurodegeneration in multiple sclerosis patients, not pharmacokinetic parameters (CL, V, etc.) for ofatumumab. |
+| popPK | Huck_2019 | irrelevant | 0 | 0 | The study is a preclinical immunology investigation in mice using a mouse anti-CD20 antibody, not a pharmacokinetic study of the human drug ofatumumab. |
+| popPK | Yuan_2026 | irrelevant | 0 | 0 | The paper is a narrative review of B-cell targeting mechanisms and clinical applications, providing no original quantitative pharmacokinetic parameter values (CL, V, ka) for ofatumumab. |
+| popPK | Zanghì_2026 | irrelevant | 0 | 0 | This is a longitudinal observational study focusing on cognitive and structural brain changes (MRI volumes, BICAMS scores) in multiple sclerosis patients, not a pharmacokinetic study. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 18:37 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-15 04:02 UTC</sub>

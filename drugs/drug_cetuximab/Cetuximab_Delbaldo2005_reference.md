@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;cetuximab&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/&quot;},{&quot;label&quot;:&quot;Delbaldo_2005 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cetuximab_Cognetti2026_reference&quot;,&quot;label&quot;:&quot;Cognetti_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/Cetuximab_Cognetti2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cetuximab_Pointreau2016_reference&quot;,&quot;label&quot;:&quot;Pointreau_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/Cetuximab_Pointreau2016_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cetuximab_Yang2026_reference&quot;,&quot;label&quot;:&quot;Yang_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/Cetuximab_Yang2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Lin_2011_Ct_2&quot;,&quot;label&quot;:&quot;Lin_2011 \u00b7 Ct&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/pd_Lin_2011_Ct_2.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -24,11 +25,13 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which co
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> **Dose compound ≠ measured compound:** dosed `cetuximab, irinotecan`, measured `cetuximab`.
+
 ## Citation
 Delbaldo C et al., Pharmacokinetic profile of cetuximab (E…, European journal of cancer… (2005)
   ·  DOI: [10.1016/j.ejca.2005.04.029](https://doi.org/10.1016/j.ejca.2005.04.029)
 
-<div class="pk-model-meta" hidden drug="cetuximab" model-id="Cetuximab_Delbaldo2005_reference" status="rejected" stale="false" population="patients with advanced EGFR-positive adenocarcinoma" measured-compound="cetuximab and irinotecan" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="cetuximab" model-id="Cetuximab_Delbaldo2005_reference" status="rejected" stale="false" population="patients with advanced EGFR-positive adenocarcinoma" measured-compound="cetuximab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.
@@ -43,17 +46,12 @@ _No resolved parameters._
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped value-less row: 'mean plasma AUC at week 1 for irinotecan'
-- dropped value-less row: 'mean plasma AUC at week 4 for irinotecan'
-- dropped value-less row: 'mean plasma AUC at week 1 for cetuximab'
-- dropped value-less row: 'mean plasma AUC at week 4 for cetuximab'
-- covariate category for t1/2z from footnote/prose kept as documentation only (['Delbaldo_2005:abstract'])
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=cetuximab and irinotecan
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=cetuximab
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Delbaldo_2005_metadata.yaml (8 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Delbaldo_2005_metadata.yaml (0 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -94,7 +92,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_cetuximab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Delbaldo_2005` / `Delbaldo_2005::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_cetuximab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Delbaldo_2005` / `Delbaldo_2005::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -110,4 +108,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 11:26 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 18:47 UTC</sub>

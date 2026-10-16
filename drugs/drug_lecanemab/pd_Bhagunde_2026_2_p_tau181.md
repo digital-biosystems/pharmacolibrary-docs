@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06D&quot;,&quot;href&quot;:&quot;atc/N06D.md&quot;},{&quot;label&quot;:&quot;lecanemab&quot;,&quot;href&quot;:&quot;drugs/drug_lecanemab/&quot;},{&quot;label&quot;:&quot;Bhagunde_2026_2 \u00b7 PD plasma p-tau181&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06D&quot;,&quot;href&quot;:&quot;atc/N06D.md&quot;},{&quot;label&quot;:&quot;lecanemab&quot;,&quot;href&quot;:&quot;drugs/drug_lecanemab/&quot;},{&quot;label&quot;:&quot;Bhagunde_2026_2 \u00b7 PD plasma p\u2010tau181&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# plasma p-tau181 — PD  <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+# plasma p‐tau181 — PD  <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -13,13 +13,13 @@
 
 ## Record summary
 
-**As extracted:** Lecanemab (concentrations from the PK model of Hayato_2022) drives plasma p-tau181 (in pg/mL): indirect response — drug inhibits the production of plasma p-tau181.
+**As extracted:** Lecanemab (concentrations from the PK model of Hayato_2022) drives plasma p‐tau181 (in pg/mL): indirect response — drug inhibits the production of plasma p‐tau181.
 
 **Model:** No model was generated from this record.
 
-> Lecanemab serum concentrations (from a population PK model) inhibit the production of plasma p-tau181 (pg/mL) via an indirect response model with an Emax function: dR/dt = Kin·(1 − Emax·Conc/(EC50+Conc)) − R·Kout. Key parameters: baseline p-tau181 3.40 pg/mL, Emax 0.480, EC50 31.4 mg/mL, Kout 0.428 1/year.
+> Plasma p‐tau181 (pg/mL) was modeled using an indirect response model where lecanemab serum concentration (mg/mL) inhibits the production of p‐tau181 via an Emax function. The estimated parameters were an Emax of 0.480, an EC50 of 31.4 mg/mL, and a Kout of 0.428 1/year, with a baseline p‐tau181 of 3.40 pg/mL.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Bhagunde_2026_2`
 - **model family:** `indirect_response_i`
@@ -34,14 +34,14 @@ Bhagunde P et al., Pharmacokinetic/pharmacodynamic analyse…, Alzheimer's & dem
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | Baseline p‐tau181 | `Q324` · not captured | 3.40 | pg/mL | not captured | llm (not captured) | Bhagunde_2026_2:pdv3 |
-| PD (effect) | E max | `Q323` · not captured | 0.480 | not captured | not captured | direction (not captured) | Bhagunde_2026_2:pdv3 |
-| PD (effect) | EC50 | `Q321` · not captured | 31.4 | mg/mL | not captured | llm (not captured) | Bhagunde_2026_2:pdv3 |
-| PD (effect) | K out | `Q328` · not captured | 0.428 | 1/year | not captured | llm (not captured) | Bhagunde_2026_2:pdv3 |
-| variability | Baseline IIV | `Q312` · not captured | 39.7 | %CV | not captured | llm (not captured) | Bhagunde_2026_2:pdv3 |
-| variability | E max IIV | `Q312` · not captured | 28.0 | %CV | not captured | llm (not captured) | Bhagunde_2026_2:pdv3 |
-| variability | EC50 IIV | `Q312` · not captured | 252 | %CV | not captured | llm (not captured) | Bhagunde_2026_2:pdv3 |
-| variability | K out IIV | `Q312` · not captured | 63.2 | %CV | not captured | llm (not captured) | Bhagunde_2026_2:pdv3 |
+| PD (effect) | Baseline p‐tau181 (pg/mL) | `Q324` · not captured | 3.40 | pg/mL | not captured | llm (not captured) | Bhagunde_2026_2:pdv3 |
+| PD (effect) | E max | `Q323` · not captured | 0.480 | not captured | not captured | llm (not captured) | Bhagunde_2026_2:pdv3 |
+| PD (effect) | EC50 (mg/mL) | `Q321` · not captured | 31.4 | mg/mL | not captured | llm (not captured) | Bhagunde_2026_2:pdv3 |
+| PD (effect) | K out (1/year) | `Q328` · not captured | 0.428 | 1/year | not captured | llm (not captured) | Bhagunde_2026_2:pdv3 |
+| variability | Baseline | `Q312` · not captured | 39.7 | %CV | not captured | llm (not captured) | Bhagunde_2026_2:pdv3 |
+| variability | E max | `Q312` · not captured | 28.0 | %CV | not captured | llm (not captured) | Bhagunde_2026_2:pdv3 |
+| variability | EC50 | `Q312` · not captured | 252 | %CV | not captured | llm (not captured) | Bhagunde_2026_2:pdv3 |
+| variability | K out | `Q312` · not captured | 63.2 | %CV | not captured | llm (not captured) | Bhagunde_2026_2:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -50,7 +50,7 @@ Bhagunde P et al., Pharmacokinetic/pharmacodynamic analyse…, Alzheimer's & dem
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|

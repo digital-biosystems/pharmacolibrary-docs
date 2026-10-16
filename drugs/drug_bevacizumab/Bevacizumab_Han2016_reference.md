@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;bevacizumab&quot;,&quot;href&quot;:&quot;drugs/drug_bevacizumab/&quot;},{&quot;label&quot;:&quot;Han_2016 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bevacizumab_Caulet2016_reference&quot;,&quot;label&quot;:&quot;Caulet_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bevacizumab/Bevacizumab_Caulet2016_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Park_2023_OS&quot;,&quot;label&quot;:&quot;Park_2023 \u00b7 OS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_bevacizumab/pd_Park_2023_OS.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Park_2023_PFS&quot;,&quot;label&quot;:&quot;Park_2023 \u00b7 PFS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_bevacizumab/pd_Park_2023_PFS.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -18,7 +19,7 @@
 
 **CLb has no unit.**
 
-Without a unit the value cannot be converted, so the model cannot use it. Extracted — bevacizumab: CL 8.6 mL/h, V1 2.68e+03 mL, Q 18.7 mL/h, V2 2.42e+03 mL, CLb 1.15.
+Without a unit the value cannot be converted, so the model cannot use it. Extracted — bevacizumab: CL 8.6 mL/h, V1 2.68e+03 mL, Q 18.6 mL/h, V2 2.42e+03 mL, CLb 1.14.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of ifna on cla: this record has none, the second reading 0.843. That field does not shape the model.
 
@@ -40,50 +41,38 @@ Han K et al., Population pharmacokinetics of bevacizu…, Cancer chemotherapy an
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL (mL/h) | `Q22` · CL | 8.6 | mL/h | 2.3888888888888886e-09 | [ml] / [h] | not captured | exact (1.0) | Tab3:row2:col1, Tab3:row2:col3 | — | 29 (None% RSE) |
-| V1 (mL) | `Q63` · V1 | 2678 | mL | 0.002678 | [ml] | not captured | exact (1.0) | Tab3:row3:col1, Tab3:row3:col3 | — | 18.2 (None% RSE) |
-| Q (mL/h) | `Q30` · Q | 18.7 | mL/h | 5.1944444444444435e-09 | [ml] / [h] | not captured | exact (1.0) | Tab3:row4:col1, Tab3:row4:col3 | — | not captured |
-| V2 (mL) | `Q64` · V2 | 2417 | mL | 0.002417 | [ml] | not captured | exact (1.0) | Tab3:row5:col1, Tab3:row5:col3 | — | 41.8 (None% RSE) |
-| Male on CLb | `Q23` · CLb | 1.15 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | Tab3:row7:col1, Tab3:row7:col3 | — | not captured |
+| CL (mL/h) | `Q22` · CL | 8.6 | mL/h | 2.3888888888888886e-09 | [ml] / [h] | not captured | exact (1.0) | Han_2016_table_p5_1:row0:col1 | — | 29.2 (None% RSE) |
+| V1 (mL) | `Q63` · V1 | 2678 | mL | 0.002678 | [ml] | not captured | exact (1.0) | Han_2016_table_p5_1:row1:col1 | — | 18.3 (None% RSE) |
+| Q (mL/h) | `Q30` · Q | 18.6 | mL/h | 5.1666666666666674e-09 | [ml] / [h] | not captured | exact (1.0) | Han_2016_table_p5_1:row2:col1 | — | not captured |
+| V2 (mL) | `Q64` · V2 | 2423 | mL | 0.002423 | [ml] | not captured | exact (1.0) | Han_2016_table_p5_1:row3:col1 | — | 41.4 (None% RSE) |
+| Male on CL b | `Q23` · CLb | 1.14 | not captured | not captured | not captured | not captured | llm_corrected (0.6) | Han_2016_table_p5_1:row5:col1 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
+### Unresolved rows _(no Q-code or no value — not parameters)_
+| label (paper) | Q-code | value | link |
+|---|---|---|---|
+| Missing ALBU on CL | Q40 | not captured | llm_corrected |
+
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'BWT on CL and Qa' — extend the ontology if this is a real PK parameter (source ['Tab3:row6:col1', 'Tab3:row6:col3'])
-- dropped unlinked row (NIL): 'ALBU on CLa' — extend the ontology if this is a real PK parameter (source ['Tab3:row8:col1', 'Tab3:row8:col3'])
-- dropped unlinked row (NIL): 'Missing ALBU on CL' — extend the ontology if this is a real PK parameter (source ['Tab3:row9:col1'])
-- dropped duplicate Q22 ('BALP on CLa', value '0.321') — already have one for this compound
-- dropped duplicate Q22 ('Missing BALP on CL', value None) — already have one for this compound
-- dropped duplicate Q22 ('IFNa on CLa', value '0.843') — already have one for this compound
-- dropped duplicate Q63 ('BWT on V1 and V2a', value '0.469') — already have one for this compound
-- dropped duplicate Q63 ('Male on V1b', value '1.18') — already have one for this compound
+- dropped unlinked row (NIL): 'BWT on CL and Q a' — extend the ontology if this is a real PK parameter (source ['Han_2016_table_p5_1:row4:col1'])
+- dropped unlinked row (NIL): 'ALBU on CL a' — extend the ontology if this is a real PK parameter (source ['Han_2016_table_p5_1:row6:col1'])
+- dropped duplicate Q22 ('BALP on CL a', value '0.312') — already have one for this compound
+- dropped unlinked row (NIL): 'Missing BALP on CL' — extend the ontology if this is a real PK parameter (source ['Han_2016_table_p5_1:row9:col1'])
+- dropped unlinked row (NIL): 'IFNa on CL a' — extend the ontology if this is a real PK parameter (source ['Han_2016_table_p5_1:row10:col1'])
+- dropped unlinked row (NIL): 'BWT on V1 and V2 a' — extend the ontology if this is a real PK parameter (source ['Han_2016_table_p5_1:row11:col1'])
+- dropped unlinked row (NIL): 'Male on V1 b' — extend the ontology if this is a real PK parameter (source ['Han_2016_table_p5_1:row12:col1'])
 - routed 'Prop. error (%)' → Q316 (prop_error) to residual_error — variability estimate, not a structural parameter
-- routed 'Add. error (μg/mL)' → Q317 (add_error) to residual_error — variability estimate, not a structural parameter
+- routed 'Add. error (µg/mL)' → Q317 (add_error) to residual_error — variability estimate, not a structural parameter
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=bevacizumab
 - molar mass: none found for 'bevacizumab' — its concentrations stay mass-only
 
 **Extraction notes:**
-- unparsed cell Tab3:row2:col4 = '[8.37, 8.82]'
-- unparsed cell Tab3:row3:col4 = '[2616, 2736]'
-- unparsed cell Tab3:row4:col4 = '[16.6, 21.3]'
-- unparsed cell Tab3:row5:col4 = '[2291, 2568]'
-- unparsed cell Tab3:row6:col4 = '[0.501, 0.666]'
-- unparsed cell Tab3:row7:col4 = '[1.11, 1.19]'
-- unparsed cell Tab3:row8:col4 = '[− 0.619, −0.323]'
-- unparsed cell Tab3:row10:col4 = '[0.132, 0.526]'
-- unparsed cell Tab3:row12:col4 = '[0.780, 0.905]'
-- unparsed cell Tab3:row13:col4 = '[0.396, 0.541]'
-- unparsed cell Tab3:row14:col4 = '[1.13, 1.22]'
-- unparsed cell Tab3:row15:col4 = '[20.7, 22.9]'
-- unparsed cell Tab3:row16:col4 = '[0.0438, 0.0678]'
-- unparsed cell Tab3:row17:col4 = '[27.2, 31.0]'
-- unparsed cell Tab3:row18:col4 = '[15.6, 20.9]'
-- unparsed cell Tab3:row19:col4 = '[33.2, 49.3]'
 - LLM selected parameter table(s) 3
 
 ## Validation
@@ -116,16 +105,16 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab3:row2:col1', 'Tab3:row2:col3'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab3:row4:col1', 'Tab3:row4:col3'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab3:row3:col1', 'Tab3:row3:col3'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab3:row5:col1', 'Tab3:row5:col3'] |
-| C5_unit_missing_Q23 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab3:row7:col1', 'Tab3:row7:col3'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 8.6 | not captured | not captured | ['Tab3:row2:col1', 'Tab3:row2:col3'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Han_2016_table_p5_1:row0:col1'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Han_2016_table_p5_1:row2:col1'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Han_2016_table_p5_1:row1:col1'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Han_2016_table_p5_1:row3:col1'] |
+| C5_unit_missing_Q23 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['Han_2016_table_p5_1:row5:col1'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 8.6 | not captured | not captured | ['Han_2016_table_p5_1:row0:col1'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.0086 L/h | not captured | not captured | ['Tab3:row2:col1', 'Tab3:row2:col3'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 2.68 L | not captured | not captured | ['Tab3:row3:col1', 'Tab3:row3:col3'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 2.42 L | not captured | not captured | ['Tab3:row5:col1', 'Tab3:row5:col3'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.0086 L/h | not captured | not captured | ['Han_2016_table_p5_1:row0:col1'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 2.68 L | not captured | not captured | ['Han_2016_table_p5_1:row1:col1'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 2.42 L | not captured | not captured | ['Han_2016_table_p5_1:row3:col1'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -134,7 +123,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_bevacizumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Han_2016` / `Han_2016::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_bevacizumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Han_2016` / `Han_2016::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -160,4 +149,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 10:14 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 18:21 UTC</sub>

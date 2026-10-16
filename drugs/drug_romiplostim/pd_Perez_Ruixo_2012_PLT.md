@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;romiplostim&quot;,&quot;href&quot;:&quot;drugs/drug_romiplostim/&quot;},{&quot;label&quot;:&quot;Perez-Ruixo_2012 \u00b7 PD platelet counts&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# platelet counts — PD  <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
+# platelet counts — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -17,9 +17,9 @@
 
 **Model:** No model was generated from this record.
 
-> The paper does not provide a full text to specify the mechanism, but the record describes a transduction model where romiplostim dose (µg/kg) stimulates platelet counts (10^9/L) with a kinetics of drug effect constant of 0.6 day^-1. The model includes a baseline platelet count of 11.1 10^9/L and two values for the romiplostim stimulatory effect: 351 %/100 µg/wk and 12 %/100 µg/wk.
+> The record describes a dose-driven transduction model where romiplostim administration stimulates platelet counts (10^9/L) from a baseline of 11.1 × 10^9/L, characterized by an effect kinetics constant of 0.6 day^-1. The paper provides a stimulatory effect of 351% and 12% at a dose of 100 µg/wk, but does not specify the underlying mechanism or potency parameters.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Perez-Ruixo_2012`
 - **model family:** `transduction`
@@ -34,10 +34,10 @@ Perez-Ruixo JJ et al., Romiplostim dose response in patients w…, Journal of cl
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | baseline platelet count | `Q324` · not captured | 11.1 | 10(9)/L | not captured | llm (not captured) | Perez-Ruixo_2012:pdv3 |
-| PD (effect) | kinetics of drug effect constant | `Q326` · not captured | 0.6 | day(-1) | not captured | llm (not captured) | Perez-Ruixo_2012:pdv3 |
-| PD (effect) | romiplostim stimulatory effect | `Q335` · not captured | 351 | %/100 µg/wk | not captured | llm (not captured) | Perez-Ruixo_2012:pdv3 |
-| PD (effect) | romiplostim stimulatory effect | `Q335` · not captured | 12 | %/100 µg/wk | not captured | llm (not captured) | Perez-Ruixo_2012:pdv3 |
+| PD (effect) | baseline platelet count | `Q324` · not captured | 11.1 | × 10(9)/L | not captured | llm (not captured) | Perez-Ruixo_2012:pdv3 |
+| — | kinetics of drug effect constant | `Q100` · not captured | 0.6 | day(-1) | not captured | nil (not captured) | Perez-Ruixo_2012:pdv3 |
+| — | romiplostim stimulatory effect | `Q100` · not captured | 351% | 100 µg/wk | not captured | nil (not captured) | Perez-Ruixo_2012:pdv3 |
+| — | romiplostim stimulatory effect | `Q100` · not captured | 12% | 100 µg/wk | not captured | nil (not captured) | Perez-Ruixo_2012:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>

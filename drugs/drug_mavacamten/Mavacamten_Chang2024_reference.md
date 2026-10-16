@@ -4,7 +4,7 @@
 
 # mavacamten — `Mavacamten_Chang2024_reference`
 
-> ## <span class="pk-badge pk-badge--red" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.909), gpt-oss:120b (partly confirmed, agreement 0.909). Primary extraction retained.">cross-check: partial 0/2</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.909), gpt-oss:120b (partly confirmed, agreement 0.909). Primary extraction retained.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -14,25 +14,21 @@
 
 **Model:** No model was generated from this record.
 
-> **Caveat** (`covariates_not_exercised`): Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.
-
 ### Reviewer guidance
 
-**The record was rejected because a biomarker parameter, creatinine clearance of 115 mL/min, was recorded as a mavacamten disposition parameter instead of the drug's clearance.**
+**No volume or clearance — not a compartmental population PK model.**
 
-The parameter labelled 'Creatinine clearance, mL/min' with value 115 mL/min is a participant biomarker covariate, not mavacamten clearance, so the analyte identity check failed. The true drug parameters are apparent oral values: CL/F 0.914 L/h, V2/F 6.63 L, Q/F 16.3 L/h and absorption rate constant 0.301 h-1, with F=1 and Fm=1 assumed and no molar correction. Vd and Tlag had no source values, so library defaults were substituted. A second reader places the 115 mL/min value as the participants' mean creatinine clearance rather than a disposition parameter, and reads a CYP2C19 rapid-metabolizer effect on CL/F of 0.2 that this record lacks; the covariate effects were defined but only the reference individual was simulated. Extracted — mavacamten: CL 115 mL/min, CL/F 0.914 L/h, V2/F 6.63 L, Q/F 16.3 L/h, kabs 0.301 h -1.
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of alag1: this record has none, the second reading 0.192. That field does not shape the model.
 
-<sub>reviewed by glm-5.3-flash</sub>
-
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:38:40.673659+00:00) predates the upstream re-run (2026-10-06 11:29:55.836534+00:00). Current validate status: `rejected`.
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Chang P et al., Characterization of mavacamten pharmaco…, CPT: pharmacometrics & syst… (2024)
   ·  DOI: [10.1002/psp4.13197](https://doi.org/10.1002/psp4.13197)
 
-<div class="pk-model-meta" hidden drug="mavacamten" model-id="Mavacamten_Chang2024_reference" status="rejected" stale="true" population="adults with hypertrophic cardiomyopathy and healthy adults" measured-compound="mavacamten" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="mavacamten" model-id="Mavacamten_Chang2024_reference" status="rejected" stale="false" population="healthy adults and patients with hypertrophic cardiomyopathy" measured-compound="mavacamten" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.
@@ -44,6 +40,7 @@ Chang P et al., Characterization of mavacamten pharmaco…, CPT: pharmacometrics
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
+| ALAG1 | `Q900` · equation variable | 0.192 | not captured | not captured | not captured | 5 | llm (0.6) | psp413197-tbl-0003:row6:col1 | — | not captured |
 | F | `Q40` · Fab | 1 | not captured | not captured | not captured | not captured | exact (1.0) | psp413197-tbl-0003:row7:col1 | — | not captured |
 
 <details class="legend">
@@ -60,19 +57,15 @@ Chang P et al., Characterization of mavacamten pharmaco…, CPT: pharmacometrics
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped value-less row: 'V2/F'
-- dropped value-less row: 'V3/F'
-- dropped value-less row: 'KA'
-- dropped unlinked row (NIL): 'ALAG1' — extend the ontology if this is a real PK parameter (source ['psp413197-tbl-0003:row6:col1', 'psp413197-tbl-0003:row6:col2'])
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=mavacamten
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- unparsed cell psp413197-tbl-0003:row2:col1 = '6.63 L'
-- unparsed cell psp413197-tbl-0003:row3:col1 = '252 L'
-- unparsed cell psp413197-tbl-0003:row5:col1 = '0.301 h−1'
-- LLM selected parameter table(s) 3
+- table psp413197-tbl-0003: unbound_uncertainty
+- table psp413197-tbl-0003: units_need_context
+- table psp413197-tbl-0003: unparsed_numeric_cell
+- LLM selected parameter table(s) 4
 
 ## Validation
 
@@ -108,17 +101,6 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity | not captured | fail | mavacamten (or metabolite) | Creatinine clearance, mL/min | not captured | disposition label(s) name a biomarker, not mavacamten: 'Creatinine clearance, mL/min' |
-| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
-| T3_param_coverage | not captured | pass | 5 scholar param(s) emitted or defaulted | 5 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
-
 <details class="legend">
 <summary>Validation definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
@@ -126,9 +108,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_mavacamten/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Chang_2024` / `Chang_2024::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_mavacamten/models/modelica/_needs_review/Mavacamten_Chang2024_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_mavacamten/models/modelica/_needs_review/Mavacamten_Chang2024_reference.deviation.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_mavacamten/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Chang_2024` / `Chang_2024::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -144,4 +124,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 11:29 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 23:39 UTC</sub>

@@ -17,18 +17,18 @@
 
 ### Reviewer guidance
 
-**The suramin two-compartment record was rejected because one compartment is unreachable from the dose, and the parameter values (V1 4.5 L, V2 10.6 L, t1/2α 25 h, t1/2z 29.7 h, CL 1.95 mL/h/kg) come only from the paper's abstract, not a fitted model.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The structure check found an unreachable or orphan compartment in the two-compartment suramin model, meaning a compartment has no path from the dose. The record was built from the abstract alone, so the reported summary statistics (V1 4.5 L, V2 10.6 L, t1/2α 25 h, t1/2z 29.7 h, CL 1.95 mL/h/kg) stood in for a fitted model. No other parameter checks are reported as failing, and no inconclusive comparisons are noted. Extracted — suramin: V1 4.5 L, V2 10.6 L, t1/2α 25 h, t1/2z 29.7 h, CL 1.95 mL/h/kg.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — suramin: V1 4.5 L, V2 10.6 L, t1/2α 25 h, t1/2β 29.7 h, CL 1.95 mL/h/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of clearance: this record has 1.95, the second reading none. That field does not shape the model.
 
-<sub>reviewed by glm-5.3-flash</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Scher HI et al., Use of adaptive control with feedback t…, Cancer research (1992)
 
-<div class="pk-model-meta" hidden drug="Suramin" model-id="Suramin_Scher1992_reference" status="rejected" stale="false" population="adult cancer patients" measured-compound="suramin" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="Suramin" model-id="Suramin_Scher1992_reference" status="rejected" stale="false" population="cancer patients" measured-compound="suramin" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.
@@ -43,7 +43,7 @@ Scher HI et al., Use of adaptive control with feedback t…, Cancer research (19
 | mean volume of the central compartment | `Q63` · V1 | 4.5 | L | 0.0045000000000000005 | L | not captured | llm_confirmed (0.6) | Scher_1992:abstract | — | not captured |
 | volume of the peripheral compartment | `Q64` · V2 | 10.6 | L | 0.0106 | L | not captured | exact (1.0) | Scher_1992:abstract | — | not captured |
 | distributional half-life | `Q59` · t1/2α | 25 | h | 90000.0 | [h] | not captured | llm (0.6) | Scher_1992:abstract, Scher_1992:abstract | — | not captured |
-| elimination half-life | `Q57` · t1/2z | 29.7 | h | 106920.0 | [h] | not captured | llm (0.6) | Scher_1992:abstract, Scher_1992:abstract | — | not captured |
+| elimination half-life | `Q60` · t1/2β | 29.7 | h | 106920.0 | [h] | not captured | llm (0.6) | Scher_1992:abstract, Scher_1992:abstract | — | not captured |
 | clearance | `Q22` · CL | 1.95 | mL/h/kg | 3.7916666666666665e-08 | L/h | not captured | review_gapfill (0.7) | Naviaux_2017:review | — | not captured |
 
 <details class="legend">
@@ -56,8 +56,8 @@ Scher HI et al., Use of adaptive control with feedback t…, Cancer research (19
 **Interpretation flags:**
 - unit_dimension_unknown: 'liters/m2' (V1)
 - unit_dimension_unknown: 'liters/m2' (V2)
-- implicit units: 'mean volume of the central compartment' → L (from the popPK convention: 'No unit stated in text or captions; volumes of distribution in population PK are conventionally reported in L, and 4.5 L')
-- implicit units: 'volume of the peripheral compartment' → L (from the popPK convention: 'No unit stated in text or captions; peripheral volumes of distribution are conventionally reported in L, consistent with')
+- implicit units: 'mean volume of the central compartment' → L (from the popPK convention: 'No unit stated in text or table. Population PK parameter V1 (volume of the central compartment) is conventionally report')
+- implicit units: 'volume of the peripheral compartment' → L (from the popPK convention: 'No unit stated in text or table. Population PK parameter V2 (volume of the peripheral compartment) is conventionally rep')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=suramin
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - gap-filled Q22 (CL) from Naviaux_2017's review values (primary lacked it)
@@ -96,8 +96,8 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Naviaux_2017:review'] |
-| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Scher_1992:abstract', 'Scher_1992:abstract'] |
 | C5_dimension_Q59 | pass | [time] | not captured | not captured | not captured | ['Scher_1992:abstract', 'Scher_1992:abstract'] |
+| C5_dimension_Q60 | pass | [time] | not captured | not captured | not captured | ['Scher_1992:abstract', 'Scher_1992:abstract'] |
 | C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Scher_1992:abstract'] |
 | C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Scher_1992:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 1.95 | not captured | not captured | ['Naviaux_2017:review'] |
@@ -113,7 +113,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_suramin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Scher_1992` / `Scher_1992::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_suramin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Scher_1992` / `Scher_1992::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -129,4 +129,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 09:06 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 19:52 UTC</sub>

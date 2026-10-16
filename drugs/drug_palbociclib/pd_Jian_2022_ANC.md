@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;palbociclib&quot;,&quot;href&quot;:&quot;drugs/drug_palbociclib/&quot;},{&quot;label&quot;:&quot;Jian_2022 \u00b7 PD absolute neutrophil counts&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Palbociclib_Courlet2022_reference&quot;,&quot;label&quot;:&quot;Courlet_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_palbociclib/Palbociclib_Courlet2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # absolute neutrophil counts — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span>
@@ -13,19 +14,19 @@
 
 ## Record summary
 
-**As extracted:** Palbociclib (the dose) drives absolute neutrophil counts (in ×109 L-1): delayed effect through transit (transduction) compartments.
+**As extracted:** Palbociclib (concentrations from the PK model of Buijs_2025) drives absolute neutrophil counts (in 10^9 L-1): disease-progression model.
 
 **Model:** No model was generated from this record.
 
-> Palbociclib dose is associated with absolute neutrophil counts (ANC; ×10⁹ L⁻¹), but the paper excerpt does not specify the mechanism or any potency or rate values.
+> The paper does not provide full text to describe the specific mechanism by which palbociclib inhibits absolute neutrophil counts (ANC). The record cites a model with parameters including a mean transit time of 198 h, a feedback parameter of 0.317, and a baseline ANC of 3.36 × 10⁹ L⁻¹, but no standard potency values such as IC50 or Emax are listed.
 >
-> <sub>Source-based summary by gpt-6-luna from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Jian_2022`
-- **model family:** `transduction`
-- **driver:** `dose_only`
+- **model family:** `disease_progression`
+- **driver:** `cited_pk`
 - **tier:** population
-- **effect:** inhibition/unknown
+- **effect:** inhibition/proportional
 
 ## Citation
 Jian W et al., Starting dose selection of palbociclib…, Cancer chemotherapy and pha… (2022)
@@ -34,9 +35,11 @@ Jian W et al., Starting dose selection of palbociclib…, Cancer chemotherapy an
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| — | feedback parameter | `Q100` · not captured | 0.317 | not captured | not captured | nil (not captured) | Jian_2022:pdv3 |
-| PD (effect) | baseline ANC level | `Q324` · not captured | 3.36 × 109 | L-1 | not captured | llm (not captured) | Jian_2022:pdv3 |
-| PD (effect) | drug effect coefficient | `Q331` · not captured | 0.0349 | mg | not captured | exact (not captured) | Jian_2022:pdv3 |
+| model term | mean transit time (MTT) | `Q900` · not captured | 198 | h | not captured | llm (not captured) | Jian_2022:pdv3 |
+| model term | feedback parameter | `Q900` · not captured | 0.317 | not captured | not captured | llm (not captured) | Jian_2022:pdv3 |
+| PD (effect) | baseline ANC level | `Q324` · not captured | 3.36 | × 109 L-1 | not captured | llm (not captured) | Jian_2022:pdv3 |
+| model term | drug effect coefficient | `Q900` · not captured | 0.0349 | not captured | not captured | llm (not captured) | Jian_2022:pdv3 |
+| model term | drug effect power | `Q900` · not captured | 0.383 | not captured | not captured | llm (not captured) | Jian_2022:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>

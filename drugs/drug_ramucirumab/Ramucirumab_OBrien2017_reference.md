@@ -41,12 +41,12 @@ O'Brien L et al., Population pharmacokinetic meta-analysi…, British journal of
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Clearance (CL), l h −1 | `Q22` · CL | 0.0148 | l h −1 | 4.111111111111111e-09 | [l] / [h] | not captured | space_fold (0.95) | bcp13403-tbl-0004:row2:col1, bcp13403-tbl-0004:row2:col2, bcp13403-tbl-0004:row2:col3 | — | not captured |
-| Central volume of distribution (V 1 ), l | `Q63` · V1 | 3.26 | l | 0.00326 | [l] | not captured | boundary_compartment (0.9) | bcp13403-tbl-0004:row4:col1, bcp13403-tbl-0004:row4:col2, bcp13403-tbl-0004:row4:col3 | — | not captured |
-| Intercompartmental clearance (Q), l h −1 | `Q30` · Q | 0.0102 | l h −1 | 2.8333333333333335e-09 | [l] / [h] | not captured | llm_confirmed (0.6) | bcp13403-tbl-0004:row6:col1, bcp13403-tbl-0004:row6:col2, bcp13403-tbl-0004:row6:col3 | — | not captured |
-| Peripheral volume of distribution (V 2 ), l | `Q64` · V2 | 2.04 | l | 0.00204 | [l] | not captured | boundary_compartment (0.9) | bcp13403-tbl-0004:row7:col1, bcp13403-tbl-0004:row7:col2, bcp13403-tbl-0004:row7:col3 | — | not captured |
-| theta_q23_body_weight | `Q900` · theta_q23_body_weight | 0.499 | not captured | not captured | not captured | not captured | not captured (not captured) | bcp13403-tbl-0004:row3:col1, bcp13403-tbl-0004:row3:col2, bcp13403-tbl-0004:row3:col3 | — | not captured |
-| theta_v1_body_weight | `Q900` · theta_v1_body_weight | 0.556 | not captured | not captured | not captured | not captured | not captured (not captured) | bcp13403-tbl-0004:row5:col1, bcp13403-tbl-0004:row5:col2, bcp13403-tbl-0004:row5:col3 | — | not captured |
+| Clearance (CL), l h −1 | `Q22` · CL | 0.0148 | l h −1 | 4.111111111111111e-09 | [l] / [h] | not captured | space_fold (0.95) | bcp13403-tbl-0004:row2:col1 | — | not captured |
+| Central volume of distribution (V 1 ), l | `Q63` · V1 | 3.26 | L | 0.00326 | L | not captured | boundary_compartment (0.9) | bcp13403-tbl-0004:row4:col1 | — | not captured |
+| Intercompartmental clearance (Q), l h −1 | `Q30` · Q | 0.0102 | l h −1 | 2.8333333333333335e-09 | [l] / [h] | not captured | llm_confirmed (0.6) | bcp13403-tbl-0004:row6:col1 | — | not captured |
+| Peripheral volume of distribution (V 2 ), l | `Q64` · V2 | 2.04 | L | 0.00204 | L | not captured | boundary_compartment (0.9) | bcp13403-tbl-0004:row7:col1 | — | not captured |
+| theta_q23_body_weight | `Q900` · theta_q23_body_weight | 0.499 | not captured | not captured | not captured | not captured | not captured (not captured) | bcp13403-tbl-0004:row3:col1 | — | not captured |
+| theta_v1_body_weight | `Q900` · theta_v1_body_weight | 0.556 | not captured | not captured | not captured | not captured | not captured (not captured) | bcp13403-tbl-0004:row5:col1 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -57,15 +57,31 @@ O'Brien L et al., Population pharmacokinetic meta-analysi…, British journal of
 
 **Interpretation flags:**
 - table section residual_error: 'Additive (μg ml −1 )' routed out of structural estimates ('Residual error')
-- column 'bootstrap results' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- NIL: refused to back-fill base 'CL' from footnote/prose loose number None (source ['bcp13403-tbl-0004:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'V1' from footnote/prose loose number None (source ['bcp13403-tbl-0004:footnote']); the table cell was unparseable — needs review
+- table section residual_error: 'Proportional' routed out of structural estimates ('Residual error')
+- conflicting source units for 'Central volume of distribution (V 1 )': [{'unit': 'V 1 ', 'source': 'bcp13403-tbl-0004:row10:col0', 'scope': 'label'}, {'unit': 'V 1 ', 'source': 'bcp13403-tbl-0004:row10:col0', 'scope': 'description'}, {'unit': '%', 'source': 'bcp13403-tbl-0004:row10:col1', 'scope': 'inline'}]
+- conflicting source units for 'Peripheral volume of distribution (V 2 )': [{'unit': 'V 2 ', 'source': 'bcp13403-tbl-0004:row13:col0', 'scope': 'label'}, {'unit': 'V 2 ', 'source': 'bcp13403-tbl-0004:row13:col0', 'scope': 'description'}, {'unit': '%', 'source': 'bcp13403-tbl-0004:row13:col1', 'scope': 'inline'}]
+- unit_dimension_unknown: 'V 1 ' (V1)
+- unit_dimension_unknown: 'V 2 ' (V2)
+- unit_dimension_mismatch: 'Clearance (CL)' → Q22 (unit 'dimensionless' vs ontology '[length] ** 3 / [time]') — route to review
+- dropped duplicate Q22 ('Clearance (CL)', value '32.3') — already have one for this compound
+- unit_dimension_unknown: 'V 1' (V1)
+- dropped duplicate Q63 ('Central volume of distribution (V 1 )', value '22.9') — already have one for this compound
+- unit_dimension_mismatch: 'Intercompartmental clearance (Q)' → Q30 (unit 'dimensionless' vs ontology '[length] ** 3 / [time]') — route to review
+- dropped duplicate Q30 ('Intercompartmental clearance (Q)', value '82.0') — already have one for this compound
+- unit_dimension_unknown: 'V 2' (V2)
+- dropped duplicate Q64 ('Peripheral volume of distribution (V 2 )', value '54.0') — already have one for this compound
 - covariate effect for Q23 has no base parameter row (kept as unattached equation-variable)
+- implicit units: 'Central volume of distribution (V 1 ), l' → L (from the paper text: 'The paper states in the Results section: "Mean population estimates of clearance, volume of distribution and half‐life f')
+- implicit units: 'Peripheral volume of distribution (V 2 ), l' → L (from the paper text: 'Consistent with the central volume of distribution, the paper reports the volume of distribution at steady-state (which ')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=ramucirumab
+- status held at route_to_review — not promoted
 - molar mass: none found for 'ramucirumab' — its concentrations stay mass-only
 
 **Extraction notes:**
-- LLM selected parameter table(s) 4
+- table bcp13403-tbl-0004: conflicting_units
+- table bcp13403-tbl-0004: ragged_grid
+- table bcp13403-tbl-0004: unparsed_numeric_cell
+- LLM region bcp13403-tbl-0004:footnote: Connection error.
 
 ## Validation
 
@@ -99,15 +115,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['bcp13403-tbl-0004:row2:col1', 'bcp13403-tbl-0004:row2:col2', 'bcp13403-tbl-0004:row2:col3'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['bcp13403-tbl-0004:row6:col1', 'bcp13403-tbl-0004:row6:col2', 'bcp13403-tbl-0004:row6:col3'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['bcp13403-tbl-0004:row4:col1', 'bcp13403-tbl-0004:row4:col2', 'bcp13403-tbl-0004:row4:col3'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['bcp13403-tbl-0004:row7:col1', 'bcp13403-tbl-0004:row7:col2', 'bcp13403-tbl-0004:row7:col3'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.0148 | not captured | not captured | ['bcp13403-tbl-0004:row2:col1', 'bcp13403-tbl-0004:row2:col2', 'bcp13403-tbl-0004:row2:col3'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['bcp13403-tbl-0004:row2:col1'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['bcp13403-tbl-0004:row6:col1'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['bcp13403-tbl-0004:row4:col1'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['bcp13403-tbl-0004:row7:col1'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.0148 | not captured | not captured | ['bcp13403-tbl-0004:row2:col1'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.0148 L/h | not captured | not captured | ['bcp13403-tbl-0004:row2:col1', 'bcp13403-tbl-0004:row2:col2', 'bcp13403-tbl-0004:row2:col3'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 3.26 L | not captured | not captured | ['bcp13403-tbl-0004:row4:col1', 'bcp13403-tbl-0004:row4:col2', 'bcp13403-tbl-0004:row4:col3'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 2.04 L | not captured | not captured | ['bcp13403-tbl-0004:row7:col1', 'bcp13403-tbl-0004:row7:col2', 'bcp13403-tbl-0004:row7:col3'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.0148 L/h | not captured | not captured | ['bcp13403-tbl-0004:row2:col1'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 3.26 L | not captured | not captured | ['bcp13403-tbl-0004:row4:col1'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 2.04 L | not captured | not captured | ['bcp13403-tbl-0004:row7:col1'] |
 
 **Reviewer per-scenario checks:**
 
@@ -127,10 +143,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ramucirumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `OBrien_2017` / `OBrien_2017::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ramucirumab/models/modelica/Ramucirumab_OBrien2017_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ramucirumab/models/modelica/Ramucirumab_OBrien2017_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ramucirumab/models/modelica/Ramucirumab_OBrien2017_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ramucirumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `OBrien_2017` / `OBrien_2017::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ramucirumab/models/modelica/Ramucirumab_OBrien2017_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ramucirumab/models/modelica/Ramucirumab_OBrien2017_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ramucirumab/models/modelica/Ramucirumab_OBrien2017_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -139,7 +155,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ramucirumab/Ramucirumab_OBrien2017_reference/Ramucirumab_OBrien2017_reference_modelica.zip" download>Ramucirumab_OBrien2017_reference_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ramucirumab/Ramucirumab_OBrien2017_reference/Ramucirumab_OBrien2017_reference_modelica.zip" download>Ramucirumab_OBrien2017_reference_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_ramucirumab/Ramucirumab_OBrien2017_reference/Ramucirumab_OBrien2017_reference_fmi.zip" download>Ramucirumab_OBrien2017_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_2C.fmu" download>PK_2C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_ramucirumab/Ramucirumab_OBrien2017_reference/Ramucirumab_OBrien2017_reference_matlab.zip" download>Ramucirumab_OBrien2017_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_ramucirumab/Ramucirumab_OBrien2017_reference/Ramucirumab_OBrien2017_reference_matlab_simbio.zip" download>Ramucirumab_OBrien2017_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
@@ -148,7 +164,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_ramucirumab/Ramucirumab_OBrien2017_reference/Ramucirumab_OBrien2017_reference.svg" alt="Ramucirumab_OBrien2017_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_ramucirumab/Ramucirumab_OBrien2017_reference/Ramucirumab_OBrien2017_reference.svg" alt="Ramucirumab_OBrien2017_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

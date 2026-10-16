@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01D&quot;,&quot;href&quot;:&quot;atc/J01D.md&quot;},{&quot;label&quot;:&quot;Imipenem&quot;,&quot;href&quot;:&quot;drugs/drug_imipenem/&quot;},{&quot;label&quot;:&quot;Gomez_2015 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Imipenem_Chu2010_reference&quot;,&quot;label&quot;:&quot;Chu_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_imipenem/Imipenem_Chu2010_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Imipenem_Gomez2015_reference&quot;,&quot;label&quot;:&quot;Gomez_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_imipenem/Imipenem_Gomez2015_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Imipenem_Bilal2021_reference&quot;,&quot;label&quot;:&quot;Bilal_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_imipenem/Imipenem_Bilal2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Imipenem_Chu2010_reference&quot;,&quot;label&quot;:&quot;Chu_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_imipenem/Imipenem_Chu2010_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Imipenem_Gomez2015_reference&quot;,&quot;label&quot;:&quot;Gomez_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_imipenem/Imipenem_Gomez2015_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Imipenem — `Imipenem_Gomez2015_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -17,27 +17,31 @@
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Ka use library defaults, not estimates from this paper; t6_deviations.**
+
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — imipenem: CL/F 50 ml min -1, V/F 1.01 l kg -1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q26: this record has none, the second reading 50; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Gomez DS et al., Imipenem in burn patients: pharmacokine…, The Journal of antibiotics (2015)
   ·  DOI: [10.1038/ja.2014.121](https://doi.org/10.1038/ja.2014.121)
 
-<div class="pk-model-meta" hidden drug="Imipenem" model-id="Imipenem_Gomez2015_reference" status="curated_candidate" stale="false" population="" measured-compound="imipenem" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Imipenem" model-id="Imipenem_Gomez2015_reference" status="needs_review" stale="false" population="burn patients" measured-compound="imipenem" parameterization="apparent" topology="1C"></div>
 
-**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.
 
-**Parameterization:** V/F — mechanistic, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| plasma clearance | `Q22` · CL | 17.8 | l h -1 | 4.9444444444444444e-06 | L/h | not captured | review (0.7) | Gomez_2015:review | — | not captured |
+| CLcro | `Q27` · CL/F | 50.0 | ml min -1 | 8.333333333333332e-07 | L/h | not captured | review (0.7) | Gomez_2015:review | — | not captured |
 | apparent volume of distribution | `Q76` · V/F | 1.01 | l kg -1 | 0.0707 | L | not captured | review (0.7) | Gomez_2015:review | — | not captured |
 
 <details class="legend">
@@ -46,6 +50,12 @@ Gomez DS et al., Imipenem in burn patients: pharmacokine…, The Journal of anti
 </details>
 
 ## Departures & gaps
+
+**Deviations:**
+- `defaulted_parameters`: ['ka', 'Tlag']
+- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+- `invented_absorption`: ka defaulted — not reported in source
+- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
 
 **Interpretation flags:**
 - built from REVIEW reference values (Gomez_2015) — secondary source
@@ -87,11 +97,11 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Gomez_2015:review'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Gomez_2015:review'] |
 | C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Gomez_2015:review'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 17.8 | not captured | not captured | ['Gomez_2015:review'] |
+| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 17.8 L/h | not captured | not captured | ['Gomez_2015:review'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 3 L/h | not captured | not captured | ['Gomez_2015:review'] |
 | C9_phys_window_Q76 | pass | volume within physiological range | 70.7 L | not captured | not captured | ['Gomez_2015:review'] |
 
 **Reviewer per-scenario checks:**
@@ -100,10 +110,11 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 |---|---|---|---|---|---|---|
 | T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_output_variable | not captured | pass | C_central (measured=imipenem) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
+| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable; invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -112,10 +123,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_imipenem/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Gomez_2015` / `Gomez_2015::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_imipenem/models/modelica/Imipenem_Gomez2015_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_imipenem/models/modelica/Imipenem_Gomez2015_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_imipenem/models/modelica/Imipenem_Gomez2015_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_imipenem/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Gomez_2015` / `Gomez_2015::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_imipenem/models/modelica/Imipenem_Gomez2015_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_imipenem/models/modelica/Imipenem_Gomez2015_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_imipenem/models/modelica/Imipenem_Gomez2015_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -124,26 +135,26 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_imipenem/Imipenem_Gomez2015_reference/Imipenem_Gomez2015_reference_modelica.zip" download>Imipenem_Gomez2015_reference_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_imipenem/Imipenem_Gomez2015_reference/Imipenem_Gomez2015_reference_fmi.zip" download>Imipenem_Gomez2015_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_imipenem/Imipenem_Gomez2015_reference/Imipenem_Gomez2015_reference_matlab.zip" download>Imipenem_Gomez2015_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_imipenem/Imipenem_Gomez2015_reference/Imipenem_Gomez2015_reference_matlab_simbio.zip" download>Imipenem_Gomez2015_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_imipenem/Imipenem_Gomez2015_reference/Imipenem_Gomez2015_reference_sbml.zip" download>Imipenem_Gomez2015_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_imipenem/Imipenem_Gomez2015_reference/Imipenem_Gomez2015_reference_cellml.zip" download>Imipenem_Gomez2015_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_imipenem/Imipenem_Gomez2015_reference/Imipenem_Gomez2015_reference_modelica.zip" download>Imipenem_Gomez2015_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_imipenem/Imipenem_Gomez2015_reference/Imipenem_Gomez2015_reference_fmi.zip" download>Imipenem_Gomez2015_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_imipenem/Imipenem_Gomez2015_reference/Imipenem_Gomez2015_reference_matlab.zip" download>Imipenem_Gomez2015_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_imipenem/Imipenem_Gomez2015_reference/Imipenem_Gomez2015_reference_matlab_simbio.zip" download>Imipenem_Gomez2015_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_imipenem/Imipenem_Gomez2015_reference/Imipenem_Gomez2015_reference_sbml.zip" download>Imipenem_Gomez2015_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_imipenem/Imipenem_Gomez2015_reference/Imipenem_Gomez2015_reference_cellml.zip" download>Imipenem_Gomez2015_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_imipenem/Imipenem_Gomez2015_reference/Imipenem_Gomez2015_reference.svg" alt="Imipenem_Gomez2015_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_imipenem/Imipenem_Gomez2015_reference/Imipenem_Gomez2015_reference.svg" alt="Imipenem_Gomez2015_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 10 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
-<dbs-fmusim paramsurl="drugs/drug_imipenem/Imipenem_Gomez2015_reference/Imipenem_Gomez2015_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_imipenem/Imipenem_Gomez2015_reference/Imipenem_Gomez2015_reference_sim_controls.json"></dbs-fmusim>
+<dbs-fmusim paramsurl="drugs/drug_imipenem/Imipenem_Gomez2015_reference/Imipenem_Gomez2015_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_imipenem/Imipenem_Gomez2015_reference/Imipenem_Gomez2015_reference_sim_controls.json"></dbs-fmusim>
 
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C` · parameters `Imipenem_Gomez2015_reference_params.json` · controls `Imipenem_Gomez2015_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C_enteral` · parameters `Imipenem_Gomez2015_reference_params.json` · controls `Imipenem_Gomez2015_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2)</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 00:11 UTC</sub>

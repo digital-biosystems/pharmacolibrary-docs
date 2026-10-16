@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;bisoprolol&quot;,&quot;href&quot;:&quot;drugs/drug_bisoprolol/&quot;},{&quot;label&quot;:&quot;Nikolic_2016 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bisoprolol_Cvan2016_reference&quot;,&quot;label&quot;:&quot;Cvan_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bisoprolol/Bisoprolol_Cvan2016_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bisoprolol_Momilovi2019_reference&quot;,&quot;label&quot;:&quot;Mom\u010dilovi\u0107_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bisoprolol/Bisoprolol_Momilovi2019_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bisoprolol_Nikolic2016_reference&quot;,&quot;label&quot;:&quot;Nikolic_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bisoprolol/Bisoprolol_Nikolic2016_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Bisoprolol_Nikolic2018_reference&quot;,&quot;label&quot;:&quot;Nikolic_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bisoprolol/Bisoprolol_Nikolic2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bisoprolol_Cvan2016_reference&quot;,&quot;label&quot;:&quot;Cvan_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bisoprolol/Bisoprolol_Cvan2016_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bisoprolol_Nikolic2016_reference&quot;,&quot;label&quot;:&quot;Nikolic_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bisoprolol/Bisoprolol_Nikolic2016_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Bisoprolol_Nikolic2018_reference&quot;,&quot;label&quot;:&quot;Nikolic_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bisoprolol/Bisoprolol_Nikolic2018_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # bisoprolol — `Bisoprolol_Nikolic2016_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.625), gpt-oss:120b (not confirmed, agreement 0.875). Primary extraction retained.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.625), gpt-oss:120b (not confirmed, agreement 0.875). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -17,21 +17,19 @@
 
 ### Reviewer guidance
 
-**The bisoprolol model was quarantined because clearance, volume of distribution, absorption rate constant and absorption lag time had no values in the source and generic placeholder values were substituted.**
+**Ka use library defaults, not estimates from this paper; t6_deviations.**
 
-The paper (Nikolic_2016, hypertensive patients on hemodialysis) reports only CL/F 0.123 l/h, V 38.07 l and renal clearance 4.44 l/h for bisoprolol, but no absorption rate constant or lag time. Since bisoprolol's clearance, volume of distribution, absorption rate constant and absorption lag time had no value, library placeholder numbers stood in for them, and the invented absorption (defaulted ka) was judged not acceptable. The model also assumed F=1 and Fm=1 with no molar correction, giving an apparent (/F) parameterization with first-order depot input. Extracted — bisoprolol: CL/F 0.123, V 38.1, CLR 4.44.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — bisoprolol: CL/F 0.12 l/h, V 44.8 l, CLu 6.33 l/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has bisoprolol, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by glm-5.3-flash</sub>
-
-> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-28 14:36:19.033924+00:00) predates the upstream re-run (2026-10-06 23:58:17.195079+00:00). Current validate status: `extracted`.
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Nikolic VN et al., Population Pharmacokinetics of Bisoprol…, Pharmacology (2016)
   ·  DOI: [10.1159/000443179](https://doi.org/10.1159/000443179)
 
-<div class="pk-model-meta" hidden drug="bisoprolol" model-id="Bisoprolol_Nikolic2016_reference" status="extracted" stale="true" population="hemodialysis patients with hypertension" measured-compound="bisoprolol" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="bisoprolol" model-id="Bisoprolol_Nikolic2016_reference" status="needs_review" stale="false" population="hypertensive patients on hemodialysis" measured-compound="bisoprolol" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.
@@ -39,11 +37,13 @@ Nikolic VN et al., Population Pharmacokinetics of Bisoprol…, Pharmacology (201
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F, l/h | `Q27` · CL/F | 0.12 | l/h | 3.3333333333333334e-08 | [l] / [h] | not captured | exact (1.0) | tab_1:row2:col1, tab_1:row2:col2, tab_1:row2:col3, tab_1:row2:col4 | — | not captured |
-| Volume of distribution, l | `Q61` · V | 44.8 | l | 0.0448 | [l] | not captured | exact (1.0) | tab_1:row3:col1, tab_1:row3:col2, tab_1:row3:col3, tab_1:row3:col4 | — | not captured |
-| CLcr, l/h | `Q22` · CL | 6.33 | l/h | 1.7583333333333336e-06 | [l] / [h] | not captured | llm (0.6) | tab_1:row4:col1, tab_1:row4:col2, tab_1:row4:col3, tab_1:row4:col4 | — | not captured |
+| CL/F, l/h | `Q27` · CL/F | 0.12 | l/h | 3.3333333333333334e-08 | [l] / [h] | not captured | exact (1.0) | Nikolic_2016_table_p3_1:row0:col1 | — | not captured |
+| Volume of distribution, l | `Q61` · V | 44.8 | l | 0.0448 | [l] | not captured | exact (1.0) | Nikolic_2016_table_p3_1:row1:col1 | — | not captured |
+| CLcr, l/h | `Q24` · CLu | 6.33 | l/h | 1.7583333333333336e-06 | [l] / [h] | not captured | llm (0.6) | Nikolic_2016_table_p3_1:row2:col1 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -62,6 +62,9 @@ Nikolic VN et al., Population Pharmacokinetics of Bisoprol…, Pharmacology (201
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=bisoprolol
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+
+**Extraction notes:**
+- LLM selected parameter table(s) 1
 
 ## Validation
 
@@ -97,14 +100,14 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row4:col1', 'tab_1:row4:col2', 'tab_1:row4:col3', 'tab_1:row4:col4'] |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row2:col1', 'tab_1:row2:col2', 'tab_1:row2:col3', 'tab_1:row2:col4'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_1:row3:col1', 'tab_1:row3:col2', 'tab_1:row3:col3', 'tab_1:row3:col4'] |
+| C5_dimension_Q24 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Nikolic_2016_table_p3_1:row2:col1'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Nikolic_2016_table_p3_1:row0:col1'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Nikolic_2016_table_p3_1:row1:col1'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 6.33 L/h | not captured | not captured | ['tab_1:row4:col1', 'tab_1:row4:col2', 'tab_1:row4:col3', 'tab_1:row4:col4'] |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 0.12 L/h | not captured | not captured | ['tab_1:row2:col1', 'tab_1:row2:col2', 'tab_1:row2:col3', 'tab_1:row2:col4'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 44.8 L | not captured | not captured | ['tab_1:row3:col1', 'tab_1:row3:col2', 'tab_1:row3:col3', 'tab_1:row3:col4'] |
+| C9_phys_window_Q24 | pass | clearance within physiological range | 6.33 L/h | not captured | not captured | ['Nikolic_2016_table_p3_1:row2:col1'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 0.12 L/h | not captured | not captured | ['Nikolic_2016_table_p3_1:row0:col1'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 44.8 L | not captured | not captured | ['Nikolic_2016_table_p3_1:row1:col1'] |
 
 **Reviewer per-scenario checks:**
 
@@ -113,11 +116,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
-| T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
+| T3_output_variable | not captured | pass | C_central (measured=bisoprolol) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
-| T1_t_half_terminal | reference | skipped | 1.96 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 2 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable; invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -126,9 +128,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_bisoprolol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Nikolic_2016` / `Nikolic_2016::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_bisoprolol/models/modelica/_needs_review/Bisoprolol_Nikolic2016_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_bisoprolol/models/modelica/_needs_review/Bisoprolol_Nikolic2016_reference.deviation.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_bisoprolol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Nikolic_2016` / `Nikolic_2016::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_bisoprolol/models/modelica/Bisoprolol_Nikolic2016_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_bisoprolol/models/modelica/Bisoprolol_Nikolic2016_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_bisoprolol/models/modelica/Bisoprolol_Nikolic2016_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -146,7 +149,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_bisoprolol/Bisoprolol_Nikolic2016_reference/Bisoprolol_Nikolic2016_reference.svg" alt="Bisoprolol_Nikolic2016_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_bisoprolol/Bisoprolol_Nikolic2016_reference/Bisoprolol_Nikolic2016_reference.svg" alt="Bisoprolol_Nikolic2016_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -159,4 +162,4 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 23:58 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 20:11 UTC</sub>

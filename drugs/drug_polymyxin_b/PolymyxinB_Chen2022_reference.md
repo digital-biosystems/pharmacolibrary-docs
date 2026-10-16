@@ -21,7 +21,7 @@
 
 The record lists total clearance for polymyxin b only as a typical value of 2.43 L/h, while the CL parameter itself carries no value; a placeholder default was substituted for the missing clearance. The distribution clearance Q (8.78 L/h) was also neither emitted nor recorded as defaulted, so the parameter-coverage check found only 1 of 2 expected parameters covered. The second reader returned no values for the central volume (13.4 L), Q, CL, or total clearance, leaving those entries unconfirmed. Extracted — polymyxin b: V 13.4 L, Q 8.78 L/h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has polymyxin_b, the second reading polymyxin B; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has polymyxin_b, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -119,16 +119,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[central compartment distribution volume]` | not captured | 13.4 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[central compartment distribution volume]` | 13.4 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[distribution clearance]` | not captured | 8.78 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[central compartment distribution volume]` | not captured | 13.4 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[distribution clearance]` | 8.78 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[peripheral compartment distribution volume]` | not captured | 51.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[distribution clearance]` | not captured | 8.78 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[peripheral compartment distribution volume]` | 51.6 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[peripheral compartment distribution volume]` | not captured | 51.6 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[total clearance]` | not captured | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[total clearance]` | not captured | not captured | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | polymyxin_b | polymyxin B | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | polymyxin_b | polymyxin B | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | polymyxin_b | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | polymyxin_b | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[central compartment distribution volume]` | 13.4 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[central compartment distribution volume]` | not captured | 13.4 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[distribution clearance]` | 8.78 | not captured | only_one_extracted |
@@ -176,9 +176,9 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_polymyxin_b/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Chen_2022` / `Chen_2022::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_polymyxin_b/models/modelica/_needs_review/PolymyxinB_Chen2022_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_polymyxin_b/models/modelica/_needs_review/PolymyxinB_Chen2022_reference.deviation.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_polymyxin_b/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Chen_2022` / `Chen_2022::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_polymyxin_b/models/modelica/_needs_review/PolymyxinB_Chen2022_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_polymyxin_b/models/modelica/_needs_review/PolymyxinB_Chen2022_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

@@ -13,11 +13,11 @@
 
 ## Record summary
 
-**As extracted:** Nedosiran (concentrations from the PK model of Zhang_2025) drives 24-hour urinary oxalate excretion (in mmol): indirect response — drug inhibits the production of 24-hour urinary oxalate excretion.
+**As extracted:** Nedosiran (concentrations from the PK model of Zhang_2024) drives 24-hour urinary oxalate excretion (in mmol per 24 hours): indirect response — drug inhibits the production of 24-hour urinary oxalate excretion.
 
 **Model:** No model was generated from this record.
 
-> Nedosiran plasma concentrations act on 24-hour urinary oxalate excretion by inhibiting its production, as described by an indirect response model in the paper. The excerpt specifies the mechanism and model structure but does not provide key potency or rate parameter values such as IC50, Imax, or kout.
+> Plasma concentrations of nedosiran inhibit the production of 24-hour urinary oxalate excretion (Uox) via an indirect response model. The paper does not provide specific numerical values for potency or rate parameters such as IC50, EC50, Imax, kin, kout, or ke0.
 >
 > <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 

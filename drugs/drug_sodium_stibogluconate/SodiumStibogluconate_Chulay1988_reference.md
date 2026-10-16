@@ -17,23 +17,23 @@
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**No volume or clearance — not a compartmental population PK model; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is sodium stibogluconate's own; they describe antimony.
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is sodium stibogluconate's own; they describe antimony. Extracted — antimony: t1/2z 0.85 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[slow elimination phase mean half-life].parameter_id`: this record has Q89, the second reading Q60. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 > **Dose compound ≠ measured compound:** dosed `sodium stibogluconate`, measured `antimony`.
 
 ## Citation
 Chulay JD et al., Pharmacokinetics of antimony during tre…, Transactions of the Royal S… (1988)
 
-<div class="pk-model-meta" hidden drug="sodium stibogluconate" model-id="SodiumStibogluconate_Chulay1988_reference" status="rejected" stale="false" population="patients with visceral leishmaniasis" measured-compound="antimony" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="sodium stibogluconate" model-id="SodiumStibogluconate_Chulay1988_reference" status="rejected" stale="false" population="patients with visceral leishmaniasis" measured-compound="antimony" parameterization="mechanistic" topology="general_linear"></div>
 
-**Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 3 extracted.
+**Model structure:** general linear; no model was built for this record.  
+**Parameters:** 1 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -42,9 +42,7 @@ Chulay JD et al., Pharmacokinetics of antimony during tre…, Transactions of th
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| initial absorption phase mean half-life | `Q95` · t1/2ka | 0.85 | h | 3060.0 | [h] | not captured | llm_corrected (0.6) | Chulay_1988:abstract | — | not captured |
-| rapid elimination phase mean half-life | `Q59` · t1/2α | 2.02 | h | 7272.0 | [h] | not captured | llm (0.6) | Chulay_1988:abstract | — | not captured |
-| slow elimination phase mean half-life | `Q89` · t1/2γ | 76 | h | 273600.0 | [h] | not captured | llm (0.6) | Chulay_1988:abstract | — | not captured |
+| mean half-life | `Q57` · t1/2z | 0.85 | h | 3060.0 | [h] | not captured | llm (0.6) | Chulay_1988:abstract, Chulay_1988:abstract, Chulay_1988:abstract | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -55,7 +53,8 @@ Chulay JD et al., Pharmacokinetics of antimony during tre…, Transactions of th
 
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=antimony
-- structure disagreement: deterministic 1C vs LLM 3C — review compartment count
+- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
+- status held at route_to_review — not promoted
 - molar mass: no plausible PubChem entry for 'antimony' ('antimony') — left in mass units
 - molar mass: none found for 'antimony' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
@@ -91,12 +90,10 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
 | C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q59 | pass | [time] | not captured | not captured | not captured | ['Chulay_1988:abstract'] |
-| C5_dimension_Q89 | pass | [time] | not captured | not captured | not captured | ['Chulay_1988:abstract'] |
-| C5_dimension_Q95 | pass | [time] | not captured | not captured | not captured | ['Chulay_1988:abstract'] |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Chulay_1988:abstract', 'Chulay_1988:abstract', 'Chulay_1988:abstract'] |
+| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none'] | not captured | not captured | not captured |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -105,7 +102,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_sodium_stibogluconate/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Chulay_1988` / `Chulay_1988::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_sodium_stibogluconate/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Chulay_1988` / `Chulay_1988::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -121,4 +118,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 08:52 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 19:49 UTC</sub>

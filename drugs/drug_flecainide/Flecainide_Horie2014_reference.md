@@ -5,7 +5,7 @@
 
 # flecainide — `Flecainide_Horie2014_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143), gpt-oss:120b (partly confirmed, agreement 0.571). Primary extraction retained.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.571), gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -27,7 +27,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Horie A et al., Pharmacokinetic variability of flecaini…, Biopharmaceutics & drug dis… (2014)
   ·  DOI: [10.1002/bdd.1877](https://doi.org/10.1002/bdd.1877)
 
-<div class="pk-model-meta" hidden drug="flecainide" model-id="Flecainide_Horie2014_reference" status="curated_candidate" stale="false" population="Japanese patients" measured-compound="flecainide" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="flecainide" model-id="Flecainide_Horie2014_reference" status="curated_candidate" stale="false" population="Japanese patients aged 0.07 to 18.30 years" measured-compound="flecainide" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.
@@ -53,7 +53,7 @@ Horie A et al., Pharmacokinetic variability of flecaini…, Biopharmaceutics & d
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'Bisoprolol (100 μM)' — extend the ontology if this is a real PK parameter (source ['Horie_2014_table_1:row2:col2', 'Horie_2014_table_1:row2:col3'])
+- dropped unlinked row (NIL): 'Bisoprolol (100 μM)' — extend the ontology if this is a real PK parameter (source ['Horie_2014_table_1:row2:col2'])
 - salvaged Q27 ('(CL/F)/WT in group 1'=0.396) from results prose — parameter table was unreadable
 - salvaged Q76 ('(V/F)/WT in 16 patients'=10.5) from results prose — parameter table was unreadable
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=flecainide
@@ -63,6 +63,12 @@ Horie A et al., Pharmacokinetic variability of flecaini…, Biopharmaceutics & d
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - gap-filled Q49 (kabs) from Deneer_2004's review values (primary lacked it)
 
+**Extraction notes:**
+- table Horie_2014_table_1: unknown_column_role
+- table Horie_2014_table_1: missing_label
+- table Horie_2014_table_1: ragged_grid
+- table Horie_2014_table_1: unparsed_numeric_cell
+
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
@@ -70,8 +76,8 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.143 (1/7 fields) | 6 |
 | `gpt-oss:120b` | partly confirmed | 0.571 (4/7 fields) | 3 |
+| `gpt-oss-120b` | not confirmed | 0.143 (1/7 fields) | 6 |
 
 <details><summary>9 field discrepancies</summary>
 
@@ -83,8 +89,8 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | `gpt-oss-120b` | `parameters[ka]` | 0.62 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `screen.dose_compound` | flecainide | unknown | mismatch |
 | `gpt-oss-120b` | `screen.primary_analyte` | flecainide | unknown | mismatch |
+| `gpt-oss:120b` | `parameters[(cl/f)/ wt]` | not captured | 0.25 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[(cl/f)/wt in group 1]` | 0.396 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[(cl/f)/wt]` | not captured | 0.25 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[(v/f)/wt in 16 patients]` | 10.5 | not captured | only_one_extracted |
 
 </details>
@@ -127,10 +133,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_flecainide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Horie_2014` / `Horie_2014::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_flecainide/models/modelica/Flecainide_Horie2014_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_flecainide/models/modelica/Flecainide_Horie2014_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_flecainide/models/modelica/Flecainide_Horie2014_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_flecainide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Horie_2014` / `Horie_2014::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_flecainide/models/modelica/Flecainide_Horie2014_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_flecainide/models/modelica/Flecainide_Horie2014_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_flecainide/models/modelica/Flecainide_Horie2014_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -148,7 +154,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_flecainide/Flecainide_Horie2014_reference/Flecainide_Horie2014_reference.svg" alt="Flecainide_Horie2014_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_flecainide/Flecainide_Horie2014_reference/Flecainide_Horie2014_reference.svg" alt="Flecainide_Horie2014_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -161,4 +167,4 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-08 17:59 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 23:05 UTC</sub>

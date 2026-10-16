@@ -50,7 +50,7 @@ _No comparable checks._
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_drotrecogin_alfa_activated/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Macias_2002` / `Macias_2002::patients with severe sepsis`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_drotrecogin_alfa_activated/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Macias_2002` / `Macias_2002::patients with severe sepsis`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

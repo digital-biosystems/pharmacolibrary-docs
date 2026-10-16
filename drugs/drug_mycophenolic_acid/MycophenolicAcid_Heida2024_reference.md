@@ -5,7 +5,7 @@
 
 # mycophenolic acid — `MycophenolicAcid_Heida2024_reference`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -15,17 +15,15 @@
 
 **Model:** Model withheld: a core parameter is unspecified.
 
-> **Caveat** (`covariates_not_exercised`): Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.
-
 ### Reviewer guidance
 
-**Mycophenolic acid clearance, absorption rate constant, and lag time were missing, leaving them at library defaults and quarantining the model.**
+**No value for mycophenolic acid's clearance, absorption rate constant and absorption lag time; t6_deviations.**
 
-The record lacks explicit values for mycophenolic acid clearance, absorption rate constant, and lag time, requiring library placeholders. Consequently, covariate scenarios for body weight and albumin were not exercised during simulation. Extracted — mycophenolic acid: V1/F 24.9 L, V2/F 1.59e+03 L, Q/F 36.2 L h−1.
+The model was built, but mycophenolic acid's clearance, absorption rate constant and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — mycophenolic acid: V1/F 24.9 L, V2/F 1.59e+03 L, Q/F 36.2 L h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has mycophenolate mofetil, the second reading mycophenolate mofetil (MMF) / Cellcept; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 > **Dose compound ≠ measured compound:** dosed `mycophenolate mofetil`, measured `mycophenolic acid`.
 
@@ -36,7 +34,7 @@ Heida A et al., Model-informed dose optimization of myc…, European journal of 
 <div class="pk-model-meta" hidden drug="mycophenolic acid" model-id="MycophenolicAcid_Heida2024_reference" status="model_quarantined" stale="false" population="pediatric kidney transplant patients" measured-compound="mycophenolic acid" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
-**Parameters:** 3 extracted, plus 1 covariate effect.
+**Parameters:** 3 extracted.
 
 **Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -58,18 +56,12 @@ Heida A et al., Model-informed dose optimization of myc…, European journal of 
 ### Unresolved rows _(no Q-code or no value — not parameters)_
 | label (paper) | Q-code | value | link |
 |---|---|---|---|
-| theta_q27_body_weight_power | Q900 | not captured | not captured |
 | Cl/F = θ1 * (body weight/70)0.75 *(Albumin/34) θ2 θ1 | Q27 | not captured | boundary |
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped value-less row: 'θ1'
-- dropped value-less row: 'Vc/F'
-- dropped value-less row: 'Vp/F'
-- dropped value-less row: 'Q/F'
-- dropped value-less row: 'ktr'
-- covariate effect for Q27 has no base parameter row (kept as unattached equation-variable)
+- dropped unlinked row (NIL): '02' — extend the ontology if this is a real PK parameter (source ['Heida_2024_table_p5_1:row2:col1'])
 - salvaged Q27 ('Cl/F = θ1 * (body weight/70)0.75 *(Albumin/34) θ2 θ1'=16.0) from results prose — parameter table was unreadable
 - salvaged Q290 ('Vc/F'=24.9) from results prose — parameter table was unreadable
 - salvaged Q82 ('Vp/F'=1590) from results prose — parameter table was unreadable
@@ -77,17 +69,17 @@ Heida A et al., Model-informed dose optimization of myc…, European journal of 
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=mycophenolic acid
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - bound model equation to Q27 (CL/F): Cl/F = θ1 * (body weight/70)^0.75 *(Albumin/34)^θ2
+- bound model equation to Q27 (CL/F): CL/F = 01 *(body weight/70)^0.75 *(Albumin/34)^02
 - Q27 (CL/F) is equation-defined: value moved to equation-variable 'Cl/F = θ1 * (body weight/70)0.75 *(Albumin/34) θ2 θ1'; equation kept verbatim
 - status held at route_to_review — not promoted
 
 **Extraction notes:**
-- unparsed cell Tab2:row2:col1 = '16.0 L h−1'
-- unparsed cell Tab2:row4:col1 = '24.9 L'
-- unparsed cell Tab2:row5:col1 = '1590 L'
-- unparsed cell Tab2:row6:col1 = '36.2 L h−1'
-- unparsed cell Tab2:row7:col1 = '1.48 h−1'
+- table Heida_2024_table_p5_1: unbound_uncertainty
+- table Heida_2024_table_p5_1: units_need_context
+- table Heida_2024_table_p5_1: unparsed_numeric_cell
 - LLM selected parameter table(s) 2
 - captured model equation Cl/F = θ1 * (body weight/70)^0.75 *(Albumin/34)^θ2
+- captured model equation CL/F = 01 *(body weight/70)^0.75 *(Albumin/34)^02
 
 ## Validation
 
@@ -139,8 +131,8 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
 | T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |
@@ -153,9 +145,9 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_mycophenolic_acid/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Heida_2024` / `Heida_2024::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_mycophenolic_acid/models/modelica/_needs_review/MycophenolicAcid_Heida2024_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_mycophenolic_acid/models/modelica/_needs_review/MycophenolicAcid_Heida2024_reference.deviation.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_mycophenolic_acid/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Heida_2024` / `Heida_2024::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_mycophenolic_acid/models/modelica/_needs_review/MycophenolicAcid_Heida2024_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_mycophenolic_acid/models/modelica/_needs_review/MycophenolicAcid_Heida2024_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -181,4 +173,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 00:36 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 18:20 UTC</sub>

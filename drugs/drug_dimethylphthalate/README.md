@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Wang_2016_bioluminescence_inhibition_of_Photobacterium_phosphoreum_T3](drugs/drug_dimethylphthalate/pd_Wang_2016_bioluminescence_inhibition_of_Photobacterium_phosp.md) | bioluminescence inhibition of Photobacterium phosphoreum T3 ← dimethyl phthalate (DMP) · inhibition effect | — | Wang W et al., Eco-toxicological bioassay of atmospher…, Ecotoxicology and environme… (2016) | [10.1016/j.ecoenv.2016.07.024](https://doi.org/10.1016/j.ecoenv.2016.07.024) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Wang_2016_bioluminescence_inhibition_of_Photobacterium_phosphoreum_T3](drugs/drug_dimethylphthalate/pd_Wang_2016_bioluminescence_inhibition_of_Photobacterium_phosp.md) | bioluminescence inhibition of Photobacterium phosphoreum T3 ← dimethyl phthalate (DMP) · inhibition effect | — | Wang W et al., Eco-toxicological bioassay of atmospher…, Ecotoxicology and environme… (2016) | [10.1016/j.ecoenv.2016.07.024](https://doi.org/10.1016/j.ecoenv.2016.07.024) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

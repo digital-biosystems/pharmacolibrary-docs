@@ -17,7 +17,7 @@ Siltuximab, a monoclonal antibody, is used to treat Castleman's disease (giant l
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 00:33 | 0:28 | 0/0/0 | 0/1/0 | 0/0/0 | 6,374/481 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-15 00:24 | 0:11 | 0/0/0 | 0/1/0 | 0/0/0 | 6,374/490 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
@@ -28,6 +28,17 @@ _not available_
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span> | [Puchalski_2010_CRP](drugs/drug_siltuximab/pd_Puchalski_2010_CRP.md) | C-reactive protein ← siltuximab · indirect response — drug inhibits the production of C-reactive protein | — | Puchalski T et al., Pharmacokinetic and pharmacodynamic mod…, Clinical cancer research :… (2010) | [10.1158/1078-0432.CCR-09-2581](https://doi.org/10.1158/1078-0432.CCR-09-2581) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=siltuximab).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | `CYP3A4` inducer | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inducer | DrugBank actor |
+
+<sub>Actors without a tissue in the table: IL6 (antibody), IL6 (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,20 +59,20 @@ _3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Nikanjam_2019.pdf` | Nikanjam M et al., Population pharmacokinetics of siltuxim…, Cancer chemotherapy and pha… (2019) | popPK | 10 | [10.1007/s00280-019-03939-7](https://doi.org/10.1007/s00280-019-03939-7) | [31482226](https://pubmed.ncbi.nlm.nih.gov/31482226) | The paper reports a population PK model for siltuximab with specific quantitative values for half-life and qualitative ranges for clearance covariates, but specific numeric values for CL, V, and Q are not explicitly listed in the provided abstract text. |
-| `Mayer_2015.pdf` | Mayer CL et al., Dose selection of siltuximab for multic…, Cancer chemotherapy and pha… (2015) | popPK | 9 | [10.1007/s00280-015-2720-0](https://doi.org/10.1007/s00280-015-2720-0) | [25784388](https://pubmed.ncbi.nlm.nih.gov/25784388) | The study reports a two-compartment PK model for siltuximab, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
-| `Puchalski_2010.pdf` | Puchalski T et al., Pharmacokinetic and pharmacodynamic mod…, Clinical cancer research :… (2010) | popPK | 9 | [10.1158/1078-0432.CCR-09-2581](https://doi.org/10.1158/1078-0432.CCR-09-2581) | [20179212](https://pubmed.ncbi.nlm.nih.gov/20179212) | The study reports a two-compartment PK model for siltuximab, but specific numeric parameter values are not provided in the extracted text. |
+| `Nikanjam_2019.pdf` | Nikanjam M et al., Population pharmacokinetics of siltuxim…, Cancer chemotherapy and pha… (2019) | popPK | 10 | [10.1007/s00280-019-03939-7](https://doi.org/10.1007/s00280-019-03939-7) | [31482226](https://pubmed.ncbi.nlm.nih.gov/31482226) | The study is a population PK analysis of siltuximab with some numeric values (half-life, albumin range) in the abstract, but core clearance and volume parameters are likely in the full text/tables not provided. |
+| `Mayer_2015.pdf` | Mayer CL et al., Dose selection of siltuximab for multic…, Cancer chemotherapy and pha… (2015) | popPK | 9 | [10.1007/s00280-015-2720-0](https://doi.org/10.1007/s00280-015-2720-0) | [25784388](https://pubmed.ncbi.nlm.nih.gov/25784388) | The paper describes a population PK/PD modeling study for siltuximab, but the specific numeric parameter estimates (CL, V, etc.) are not present in the provided text, likely residing in a table or supplementary material not included here. |
+| `Puchalski_2010.pdf` | Puchalski T et al., Pharmacokinetic and pharmacodynamic mod…, Clinical cancer research :… (2010) | popPK | 9 | [10.1158/1078-0432.CCR-09-2581](https://doi.org/10.1158/1078-0432.CCR-09-2581) | [20179212](https://pubmed.ncbi.nlm.nih.gov/20179212) | The paper describes a relevant two-compartment PK model for siltuximab, but the specific numeric parameter values are not present in the provided abstract evidence. |
 
-<sub>queue written 2026-10-07T00:33:28.810385+00:00</sub>
+<sub>queue written 2026-10-15T00:24:57.077043+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Mayer_2015 | relevant | 9 | 0 | The study reports a two-compartment PK model for siltuximab, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
-| popPK | Nikanjam_2019 | relevant | 10 | 4 | The paper reports a population PK model for siltuximab with specific quantitative values for half-life and qualitative ranges for clearance covariates, but specific numeric values for CL, V, and Q are not explicitly listed in the provided abstract text. |
-| popPK | Puchalski_2010 | relevant | 9 | 1 | The study reports a two-compartment PK model for siltuximab, but specific numeric parameter values are not provided in the extracted text. |
-| popPK | Vernon_2016 | irrelevant | 0 | 0 | The paper focuses on health utility values and QALYs (health economics) rather than pharmacokinetic parameters such as clearance or volume of distribution. |
+| popPK | Mayer_2015 | relevant | 9 | 0 | The paper describes a population PK/PD modeling study for siltuximab, but the specific numeric parameter estimates (CL, V, etc.) are not present in the provided text, likely residing in a table or supplementary material not included here. |
+| popPK | Nikanjam_2019 | relevant | 10 | 4 | The study is a population PK analysis of siltuximab with some numeric values (half-life, albumin range) in the abstract, but core clearance and volume parameters are likely in the full text/tables not provided. |
+| popPK | Puchalski_2010 | relevant | 9 | 2 | The paper describes a relevant two-compartment PK model for siltuximab, but the specific numeric parameter values are not present in the provided abstract evidence. |
+| popPK | Vernon_2016 | irrelevant | 0 | 0 | The study reports health utility values and quality-adjusted life years (QALYs), not pharmacokinetic parameters. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

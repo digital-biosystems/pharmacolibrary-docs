@@ -4,7 +4,7 @@
 
 # bismuth subcitrate — `BismuthSubcitrate_Benet1991_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.6), gpt-oss:120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.6), gpt-oss:120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -16,25 +16,23 @@
 
 ### Reviewer guidance
 
-**No model parameters were extracted from this paper.**
+**No volume or clearance — not a compartmental population PK model; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-Nothing in the extracted data describes the drug's disposition, so there is no model to build. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model. No parameter values were extracted.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has colloidal bismuth subcitrate, the second reading bismuth_subcitrate; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:36:15.703012+00:00) predates the upstream re-run (2026-10-04 10:06:31.302825+00:00). Current validate status: `rejected`.
-
-> **Dose compound ≠ measured compound:** dosed `colloidal bismuth subcitrate`, measured `bismuth`.
+> **Dose compound ≠ measured compound:** dosed `bismuth subcitrate`, measured `bismuth`.
 
 ## Citation
 Benet LZ, Safety and pharmacokinetics: colloidal…, Scandinavian journal of gas… (1991)
   ·  DOI: [10.3109/00365529109093217](https://doi.org/10.3109/00365529109093217)
 
-<div class="pk-model-meta" hidden drug="bismuth subcitrate" model-id="BismuthSubcitrate_Benet1991_reference" status="rejected" stale="true" population="adults" measured-compound="bismuth" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="bismuth subcitrate" model-id="BismuthSubcitrate_Benet1991_reference" status="rejected" stale="false" population="unknown" measured-compound="bismuth" parameterization="mechanistic" topology="general_linear"></div>
 
-**Model structure:** 1-compartment; no model was built for this record.  
+**Model structure:** general linear; no model was built for this record.  
 **Parameters:** 0 extracted.
 
 **Parameterization:** mechanistic.
@@ -49,12 +47,15 @@ _No resolved parameters._
 |---|---|---|---|
 | blood clearance of bismuth | Q23 | not captured | llm_confirmed |
 | bioavailability of bismuth | Q40 | not captured | llm_confirmed |
-| intermediate half-life | Q57 | not captured | llm |
+| intermediate half-life | Q58 | not captured | llm |
 
 ## Departures & gaps
 
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=bismuth
+- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
+- status held at route_to_review — not promoted
+- molar mass: none found for 'bismuth' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - review gap-fill skipped: this record measures 'bismuth', not bismuth_subcitrate — the review values are the parent's
 
@@ -100,8 +101,8 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
 | C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q23 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Benet_1991:abstract'] |
-| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Benet_1991:abstract'] |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q58 | pass | [time] | not captured | not captured | not captured | ['Benet_1991:abstract'] |
+| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none'] | not captured | not captured | not captured |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -110,7 +111,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_bismuth_subcitrate/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Benet_1991` / `Benet_1991::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_bismuth_subcitrate/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Benet_1991` / `Benet_1991::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -126,4 +127,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 10:06 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 03:29 UTC</sub>

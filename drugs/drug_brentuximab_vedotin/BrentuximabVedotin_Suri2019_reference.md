@@ -4,7 +4,7 @@
 
 # brentuximab vedotin — `BrentuximabVedotin_Suri2019_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.154). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.062), qwen3.8-27b (not confirmed, agreement 0.154). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -16,24 +16,22 @@
 
 ### Reviewer guidance
 
-**CL, V1, V, V2 and Q have no unit.**
+**CL and V1 have no unit.**
 
-Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (fm, CL, V1 and V), so that value has no SI equivalent. None of the extracted parameters is brentuximab vedotin's own; they describe monomethyl auristatin E (MMAE) and brentuximab vedotin (ADC) and MMAE. Extracted — monomethyl auristatin E (MMAE): fm 1 KD 1/hour; brentuximab vedotin (ADC) and MMAE: CL 7.7 %, V1 8.7 %, V 14.5 %, V2 41.2 %, Q 25 %.
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (fm, CL and V1), so that value has no SI equivalent. Extracted — monomethyl auristatin E: fm 1 8.8%; brentuximab vedotin: CL 2 %, V1 17.9 %.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which molecule was measured: this record has brentuximab vedotin (ADC) and MMAE, the second reading brentuximab vedotin; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has brentuximab vedotin, the second reading unknown; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
-
-> **Dose compound ≠ measured compound:** dosed `brentuximab vedotin`, measured `brentuximab vedotin (ADC) and MMAE`.
 
 ## Citation
 Suri A et al., Population Pharmacokinetic Modeling and…, Clinical pharmacology and t… (2019)
   ·  DOI: [10.1002/cpt.1530](https://doi.org/10.1002/cpt.1530)
 
-<div class="pk-model-meta" hidden drug="brentuximab vedotin" model-id="BrentuximabVedotin_Suri2019_reference" status="needs_review" stale="false" population="patients with advanced classical Hodgkin&#39;s lymphoma in the ECHELON-1 study" measured-compound="brentuximab vedotin (ADC) and MMAE" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="brentuximab vedotin" model-id="BrentuximabVedotin_Suri2019_reference" status="needs_review" stale="false" population="adults with advanced classical Hodgkin&#39;s lymphoma" measured-compound="brentuximab_vedotin" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
-**Parameters:** 6 extracted.
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -42,12 +40,9 @@ Suri A et al., Population Pharmacokinetic Modeling and…, Clinical pharmacology
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Fraction metabolized | `Q45` · fm | 1 | KD 1/hour | not captured | [kd1] / [h] | not captured | exact (1.0) | cpt1530-tbl-0002:row14:col3 | — | not captured |
-| clearance | `Q22` · CL | 7.7 | % | not captured | % | not captured | exact (1.0) | Suri_2019:other_prose | — | not captured |
-| Vc | `Q63` · V1 | 8.7 | % | not captured | % | not captured | exact (1.0) | Suri_2019:other_prose | — | not captured |
-| second compartmental volume | `Q61` · V | 14.5 | % | not captured | % | not captured | boundary (0.8) | Suri_2019:other_prose | — | not captured |
-| V2 | `Q64` · V2 | 41.2 | % | not captured | % | not captured | exact (1.0) | Suri_2019:other_prose | — | not captured |
-| intercompartmental clearance 2 (Q3) | `Q30` · Q | 25.0 | % | not captured | % | not captured | boundary (0.8) | Suri_2019:other_prose | — | not captured |
+| Fraction metabolized | `Q45` · fm | 1 | 8.8% | not captured | [8.8%] | not captured | exact (1.0) | Suri_2019_table_p5_1:row13:col3 | — | not captured |
+| clearance | `Q22` · CL | 2.0 | % | not captured | % | not captured | exact (1.0) | Suri_2019:other_prose | — | not captured |
+| Vc | `Q63` · V1 | 17.9 | % | not captured | % | not captured | exact (1.0) | Suri_2019:other_prose | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -57,38 +52,51 @@ Suri A et al., Population Pharmacokinetic Modeling and…, Clinical pharmacology
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_unknown: 'KD 1/hour' (fm)
-- salvaged Q22 ('clearance'=7.7) from results prose — parameter table was unreadable
-- salvaged Q63 ('Vc'=8.7) from results prose — parameter table was unreadable
-- salvaged Q61 ('second compartmental volume'=14.5) from results prose — parameter table was unreadable
-- salvaged Q64 ('V2'=41.2) from results prose — parameter table was unreadable
-- salvaged Q30 ('intercompartmental clearance 2 (Q3)'=25.0) from results prose — parameter table was unreadable
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=brentuximab vedotin (ADC) and MMAE
+- unit_dimension_unknown: '8.8%' (fm)
+- salvaged Q22 ('clearance'=2.0) from results prose — parameter table was unreadable
+- salvaged Q63 ('Vc'=17.9) from results prose — parameter table was unreadable
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=brentuximab_vedotin
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- template fit: PK_3M_9C — formed from central; parent 2, metabolites [0]
+- template fit: PK_3M_9C — formed from central; parent 1, metabolites [0]
 - status held at route_to_review — not promoted
-- row roles (LLM): model_class=compartmental; 1/1 row label(s) assigned, 1 linked by role; re-tagged parent→monomethyl auristatin E (MMAE) ×1
-- molar mass: no plausible PubChem entry for 'brentuximab vedotin (ADC)' ('brentuximab vedotin') — left in mass units
-- molar mass: no plausible PubChem entry for 'brentuximab vedotin (ADC) and MMAE' ('brentuximab vedotin and monomethyl auristatin E') — left in mass units
-- molar mass: none found for 'brentuximab vedotin (ADC)' — its concentrations stay mass-only
-- molar mass: none found for 'brentuximab vedotin (ADC) and MMAE' — its concentrations stay mass-only
+- row roles (LLM): model_class=compartmental; 1/1 row label(s) assigned, 1 linked by role; re-tagged parent→monomethyl auristatin E ×1
+- molar mass: none found for 'brentuximab_vedotin' — its concentrations stay mass-only
+- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 
 **Extraction notes:**
+- table Suri_2019_table_p5_1: unparsed_numeric_cell
 - LLM selected parameter table(s) 2
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.062 (1/16 fields) | 15 |
 | `qwen3.8-27b` | not confirmed | 0.154 (2/13 fields) | 11 |
 
-<details><summary>11 field discrepancies</summary>
+<details><summary>26 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['brentuximab vedotin (adc)', 'monomethyl auristatin e (mmae)', 'metabolism']] | [['brentuximab vedotin', 'mmae', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[clearance]` | 7.7 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[creatinine clearance]` | not captured | 134.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fraction metabolized]` | not captured | 1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fraction metabolized]` | 1 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[intercompartmental clearance 2]` | 25.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[intercompartmental clearance 2]` | not captured | 25.0 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[second compartmental volume]` | 14.5 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[second compartmental volume]` | not captured | 14.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v2]` | 41.2 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v2]` | not captured | 41.2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc]` | 8.7 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc]` | not captured | 8.7 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | brentuximab vedotin | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | brentuximab vedotin (ADC) and MMAE | unknown | mismatch |
 | `qwen3.8-27b` | `model.links` | [['brentuximab vedotin (adc)', 'monomethyl auristatin e (mmae)', 'metabolism']] | [['brentuximab vedotin', 'monomethyl auristatin e', 'metabolism']] | mismatch |
 | `qwen3.8-27b` | `parameters[clearance]` | not captured | 2.0 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[clearance]` | 7.7 | not captured | only_one_extracted |
@@ -113,15 +121,12 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | % | not captured | not captured | ['Suri_2019:other_prose'] |
-| C5_unit_missing_Q30 | fail | [length] ** 3 / [time] | % | not captured | not captured | ['Suri_2019:other_prose'] |
-| C5_unit_missing_Q61 | fail | [length] ** 3 | % | not captured | not captured | ['Suri_2019:other_prose'] |
 | C5_unit_missing_Q63 | fail | [length] ** 3 | % | not captured | not captured | ['Suri_2019:other_prose'] |
-| C5_unit_missing_Q64 | fail | [length] ** 3 | % | not captured | not captured | ['Suri_2019:other_prose'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 7.7 | not captured | not captured | ['Suri_2019:other_prose'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 2.0 | not captured | not captured | ['Suri_2019:other_prose'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
 <details class="legend">
@@ -131,7 +136,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_brentuximab_vedotin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Suri_2019` / `Suri_2019::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_brentuximab_vedotin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Suri_2019` / `Suri_2019::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -157,4 +162,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 10:34 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 18:28 UTC</sub>

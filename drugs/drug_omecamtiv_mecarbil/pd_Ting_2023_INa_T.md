@@ -20,9 +20,9 @@
 
 **Model:** No model was generated from this record.
 
-> Omecamtiv mecarbil stimulates the transient component of voltage-gated Na+ current (INa(T)) in GH3 cells via a direct concentration-dependent mechanism, with an EC50 of 15.8 µM. The paper does not specify the underlying molecular mechanism (e.g., production vs. elimination) or provide values for Imax, Emax, or rate constants.
+> A sigmoid Emax model describes how omecamtiv mecarbil concentrations stimulate the transient component of voltage-gated Na+ current (INa(T)) in GH3 cells, with an EC50 of 15.8 µM. The paper does not specify the underlying molecular mechanism (e.g., production vs. elimination) or other kinetic parameters like Emax or the Hill coefficient.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Ting_2023`
 - **model family:** `sigmoid_emax`

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;osimertinib&quot;,&quot;href&quot;:&quot;drugs/drug_osimertinib/&quot;},{&quot;label&quot;:&quot;Westra_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Osimertinib_Rodier2022_reference&quot;,&quot;label&quot;:&quot;Rodier_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_osimertinib/Osimertinib_Rodier2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Osimertinib_Westra2025_reference&quot;,&quot;label&quot;:&quot;Westra_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_osimertinib/Osimertinib_Westra2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Osimertinib_Jones2023_reference&quot;,&quot;label&quot;:&quot;Jones_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_osimertinib/Osimertinib_Jones2023_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Osimertinib_Rodier2022_reference&quot;,&quot;label&quot;:&quot;Rodier_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_osimertinib/Osimertinib_Rodier2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Osimertinib_Jones2023_reference&quot;,&quot;label&quot;:&quot;Jones_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_osimertinib/Osimertinib_Jones2023_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Jones_2023_pEGFR&quot;,&quot;label&quot;:&quot;Jones_2023 \u00b7 pEGFR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_osimertinib/pd_Jones_2023_pEGFR.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -29,7 +29,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the link
 Westra N et al., Systematic Evaluation of Osimertinib Po…, European journal of drug me… (2024)
   ·  DOI: [10.1007/s13318-024-00904-5](https://doi.org/10.1007/s13318-024-00904-5)
 
-<div class="pk-model-meta" hidden drug="osimertinib" model-id="Osimertinib_Westra2024_reference" status="rejected" stale="false" population="Dutch adults with non-small cell lung cancer and low osimertinib exposure" measured-compound="osimertinib" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="osimertinib" model-id="Osimertinib_Westra2024_reference" status="rejected" stale="false" population="Dutch adults with non-small cell lung cancer" measured-compound="osimertinib" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 0 extracted.
@@ -41,17 +41,21 @@ Westra N et al., Systematic Evaluation of Osimertinib Po…, European journal of
 
 _No resolved parameters._
 
+### Unresolved rows _(no Q-code or no value — not parameters)_
+| label (paper) | Q-code | value | link |
+|---|---|---|---|
+| 1 | Q900 | not captured | llm |
+
 ## Departures & gaps
 
 **Interpretation flags:**
 - column 'model structure and parameters' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- dropped unlinked row (NIL): '1' — extend the ontology if this is a real PK parameter (source ['Tab1:row1:col2'])
 - dropped unlinked row (NIL): '2' — extend the ontology if this is a real PK parameter (source ['Tab1:row9:col2'])
 - dropped unlinked row (NIL): '3' — extend the ontology if this is a real PK parameter (source ['Tab1:row19:col2'])
 - dropped unlinked row (NIL): '4' — extend the ontology if this is a real PK parameter (source ['Tab1:row23:col2'])
-- table mostly unlinked (4/4 table-cell rows NIL) — likely the wrong table was located, not 0 genuinely-missing ontology parameter(s); route_to_review instead of building a model from the residual linked cell(s)
+- table mostly unlinked (3/4 table-cell rows NIL) — likely the wrong table was located, not 1 genuinely-missing ontology parameter(s); route_to_review instead of building a model from the residual linked cell(s)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=osimertinib
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
+- topology: 2 first-order transfer(s) across 2 compounds → general_linear
 - template fit: none — only the metabolite is modelled — no parent compartment
 - model equation 'CLparent = 14.2 * (BW/62)^0.56 * (1 + 0.44)healthy 1 or 0 * exp(ηCLp)' not bound — neither LHS nor base term 'BW' linked to an ontology parameter
 - model equation 'Vparent = 986 * (BW/62)^0.65 * (ALB/39)^1.33 * exp(ηVp)' not bound — neither LHS nor base term 'BW' linked to an ontology parameter
@@ -60,10 +64,7 @@ _No resolved parameters._
 - review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
-- unparsed cell Tab1:row1:col1 = 'Brown et al. [6]'
-- unparsed cell Tab1:row9:col1 = 'Ishikawa et al. [8]'
-- unparsed cell Tab1:row19:col1 = 'Rodier et al. [9]'
-- unparsed cell Tab1:row23:col1 = 'Agema et al. [7]'
+- table Tab1: ragged_grid
 - LLM selected parameter table(s) 1
 - captured model equation CLparent = 14.2 * (BW/62)^0.56 * (1 + 0.44)healthy 1 or 0 * exp(ηCLp)
 - captured model equation Vparent = 986 * (BW/62)^0.65 * (ALB/39)^1.33 * exp(ηVp)
@@ -99,7 +100,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
 | C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
-| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none', 'none'] | not captured | not captured | not captured |
+| C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -108,7 +109,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_osimertinib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Westra_2024` / `Westra_2024::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_osimertinib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Westra_2024` / `Westra_2024::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -124,4 +125,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 03:49 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 20:08 UTC</sub>

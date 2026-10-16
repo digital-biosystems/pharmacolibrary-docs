@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;anakinra&quot;,&quot;href&quot;:&quot;drugs/drug_anakinra/&quot;},{&quot;label&quot;:&quot;Ngo_2020 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Anakinra_Ngo2020_reference&quot;,&quot;label&quot;:&quot;Ngo_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_anakinra/Anakinra_Ngo2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Anakinra_Urien2013_reference&quot;,&quot;label&quot;:&quot;Urien_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_anakinra/Anakinra_Urien2013_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # anakinra — `Anakinra_Ngo2020_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.6). Primary extraction retained.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.6). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -13,36 +13,43 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** Model and browser simulation available in **Models** and **Simulation**.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**C5 dimension mismatch on a structural parameter.**
+
+A reported unit could not be converted (λ2, kon and Kp), so that value has no SI equivalent. Extracted — anakinra: kabs 1.21 1/h, λ2 0.0171 1/h, kon 0.0338 1/h, CL/F 0.208 L/h, V1/F 11.3 L, Q/F 0.0288 L/h, V2/F 5.06 L, Kp 0.00952 1/h, … (+1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q1: this record has 0.00952, the second reading none; it also differs on 5 more fields. That field does not shape the model.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Ngo L et al., Development of a Pharmacokinetic Model…, CPT: pharmacometrics & syst… (2020)
   ·  DOI: [10.1002/psp4.12555](https://doi.org/10.1002/psp4.12555)
 
-<div class="pk-model-meta" hidden drug="anakinra" model-id="Anakinra_Ngo2020_reference" status="curated_candidate" stale="false" population="" measured-compound="anakinra" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="anakinra" model-id="Anakinra_Ngo2020_reference" status="rejected" stale="false" population="healthy adults" measured-compound="HL2351, anakinra" parameterization="apparent" topology="2C"></div>
 
-**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
-**Parameters:** 6 extracted.
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 9 extracted.
 
 **Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F (L/h) | `Q27` · CL/F | 0.208 | L/h | 5.7777777777777775e-08 | L/h | not captured | review (0.7) | Ngo_2020:review | — | not captured |
-| Vc/F (L) | `Q290` · V1/F | 11.3 | L | 0.011300000000000001 | L | not captured | review (0.7) | Ngo_2020:review | — | not captured |
-| Vp/F (L) | `Q82` · V2/F | 5.06 | L | 0.005059999999999999 | L | not captured | review (0.7) | Ngo_2020:review | — | not captured |
-| Q/F (L/h) | `Q69` · Q/F | 0.0288 | L/h | 7.999999999999999e-09 | L/h | not captured | review (0.7) | Ngo_2020:review | — | not captured |
-| Alag (h) | `Q83` · tlag | 0.312 | h | 1123.2 | h | not captured | review (0.7) | Ngo_2020:review | — | not captured |
-| Ka1 (1/h) | `Q49` · kabs | 1.21 | 1/h | 0.0003361111111111111 | 1/h | not captured | review (0.7) | Ngo_2020:review | — | not captured |
+| Ka1 (1/h) | `Q49` · kabs | 1.21 | 1/h | 0.0003361111111111111 | [1] / [h] | 28.9 | llm (0.6) | Ngo_2020_table_p5_1:row0:col2 | — | not captured |
+| Ka2 (1/h) | `Q68` · λ2 | 0.0171 | 1/h | not captured | [1] / [h] | 38.3 | llm (0.6) | Ngo_2020_table_p5_1:row3:col2 | — | not captured |
+| Krec (1/h) | `Q329` · kon | 0.0338 | 1/h | not captured | [1] / [h] | 50.6 | llm (0.6) | Ngo_2020_table_p5_1:row4:col2 | — | not captured |
+| CL/F (L/h) | `Q27` · CL/F | 0.208 | L/h | 5.7777777777777775e-08 | [l] / [h] | 36.9 | exact (1.0) | Ngo_2020_table_p5_1:row6:col2 | — | 22.9 (65.4% RSE) |
+| Vc/F (L) | `Q290` · V1/F | 11.3 | L | 0.011300000000000001 | [l] | 24.2 | exact (1.0) | Ngo_2020_table_p5_1:row7:col2 | — | not captured |
+| Q/F (L/h) | `Q69` · Q/F | 0.0288 | L/h | 7.999999999999999e-09 | [l] / [h] | 33.6 | exact (1.0) | Ngo_2020_table_p5_1:row8:col2 | — | not captured |
+| Vp/F (L) | `Q82` · V2/F | 5.06 | L | 0.005059999999999999 | [l] | not captured | exact (1.0) | Ngo_2020_table_p5_1:row9:col2 | — | not captured |
+| Kup (1/h) | `Q410` · Kp | 0.00952 | 1/h | not captured | [1] / [h] | not captured | llm (0.6) | Ngo_2020_table_p5_1:row13:col2 | — | not captured |
+| A lag (h) | `Q83` · tlag | 0.312 | h | 1123.2 | [h] | 27.9 | space_fold (0.95) | Ngo_2020_table_p5_1:row14:col2 | — | 55.5 (69.5% RSE) |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -51,12 +58,34 @@ Ngo L et al., Development of a Pharmacokinetic Model…, CPT: pharmacometrics & 
 
 ## Departures & gaps
 
-**Deviations:**
-- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
-
 **Interpretation flags:**
-- built from REVIEW reference values (Ngo_2020) — secondary source
-- volume reported by review
+- table section iiv: 'Ka1' routed out of structural estimates ('Interindividual variability (%)')
+- table section iiv: 'Ka2' routed out of structural estimates ('Interindividual variability (%)')
+- table section iiv: 'Krec' routed out of structural estimates ('Interindividual variability (%)')
+- table section iiv: 'Kdeg1' routed out of structural estimates ('Interindividual variability (%)')
+- table section iiv: 'Kup' routed out of structural estimates ('Interindividual variability (%)')
+- table section iiv: 'CL/F' routed out of structural estimates ('Interindividual variability (%)')
+- table section iiv: 'A lag' routed out of structural estimates ('Interindividual variability (%)')
+- table section residual_error: 'Additive (nmol/L)' routed out of structural estimates ('Residual variability')
+- table section residual_error: 'Proportional (%)' routed out of structural estimates ('Residual variability')
+- dropped unlinked row (NIL): 'AKSS1 (nmol)' — extend the ontology if this is a real PK parameter (source ['Ngo_2020_table_p5_1:row1:col2'])
+- dropped unlinked row (NIL): 'AFCRN1 (nmol)' — extend the ontology if this is a real PK parameter (source ['Ngo_2020_table_p5_1:row2:col2'])
+- unit_dimension_mismatch: 'Ka2 (1/h)' → Q68 (unit '1 / [time]' vs ontology '[mass] / [time]') — route to review
+- unit_dimension_mismatch: 'Krec (1/h)' → Q329 (unit '1 / [time]' vs ontology '[length] ** 3 / [mass] / [time]') — route to review
+- dropped unlinked row (NIL): 'Kdeg1 (1/h)' — extend the ontology if this is a real PK parameter (source ['Ngo_2020_table_p5_1:row5:col2'])
+- dropped unlinked row (NIL): 'Kdeg2 (1/h)' — extend the ontology if this is a real PK parameter (source ['Ngo_2020_table_p5_1:row10:col2'])
+- dropped unlinked row (NIL): 'CIL1R1 (nmol/L)' — extend the ontology if this is a real PK parameter (source ['Ngo_2020_table_p5_1:row11:col2'])
+- dropped unlinked row (NIL): 'KSS2 (nmol/L)' — extend the ontology if this is a real PK parameter (source ['Ngo_2020_table_p5_1:row12:col2'])
+- unit_dimension_mismatch: 'Kup (1/h)' → Q410 (unit '1 / [time]' vs ontology 'dimensionless') — route to review
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=HL2351, anakinra
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at route_to_review — not promoted
+- molar mass: no plausible PubChem entry for 'HL2351, anakinra' ('HL2351, anakinra') — left in mass units
+- molar mass: none found for 'anakinra' — its concentrations stay mass-only
+- molar mass: none found for 'HL2351, anakinra' — its concentrations stay mass-only
+
+**Extraction notes:**
+- LLM selected parameter table(s) 1
 
 ## Validation
 
@@ -90,32 +119,23 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 9 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Ngo_2020:review'] |
-| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['Ngo_2020:review'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Ngo_2020:review'] |
-| C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Ngo_2020:review'] |
-| C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['Ngo_2020:review'] |
-| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Ngo_2020:review'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Ngo_2020_table_p5_1:row6:col2'] |
+| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['Ngo_2020_table_p5_1:row7:col2'] |
+| C5_dimension_Q329 | fail | 1 / [time] | 1/h | not captured | not captured | ['Ngo_2020_table_p5_1:row4:col2'] |
+| C5_dimension_Q410 | fail | 1 / [time] | 1/h | not captured | not captured | ['Ngo_2020_table_p5_1:row13:col2'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Ngo_2020_table_p5_1:row0:col2'] |
+| C5_dimension_Q68 | fail | 1 / [time] | 1/h | not captured | not captured | ['Ngo_2020_table_p5_1:row3:col2'] |
+| C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Ngo_2020_table_p5_1:row8:col2'] |
+| C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['Ngo_2020_table_p5_1:row9:col2'] |
+| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Ngo_2020_table_p5_1:row14:col2'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 0.208 L/h | not captured | not captured | ['Ngo_2020:review'] |
-| C9_phys_window_Q290 | pass | volume within physiological range | 11.3 L | not captured | not captured | ['Ngo_2020:review'] |
-| C9_phys_window_Q82 | pass | volume within physiological range | 5.06 L | not captured | not captured | ['Ngo_2020:review'] |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
-| T3_output_variable | not captured | pass | C_central (measured=anakinra) | central.C | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | pass | 6 scholar param(s) emitted or defaulted | 6 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 0.208 L/h | not captured | not captured | ['Ngo_2020_table_p5_1:row6:col2'] |
+| C9_phys_window_Q290 | pass | volume within physiological range | 11.3 L | not captured | not captured | ['Ngo_2020_table_p5_1:row7:col2'] |
+| C9_phys_window_Q82 | pass | volume within physiological range | 5.06 L | not captured | not captured | ['Ngo_2020_table_p5_1:row9:col2'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -124,38 +144,20 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_anakinra/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Ngo_2020` / `Ngo_2020::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_anakinra/models/modelica/Anakinra_Ngo2020_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_anakinra/models/modelica/Anakinra_Ngo2020_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_anakinra/models/modelica/Anakinra_Ngo2020_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_anakinra/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Ngo_2020` / `Ngo_2020::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_anakinra/Anakinra_Ngo2020_reference/Anakinra_Ngo2020_reference_modelica.zip" download>Anakinra_Ngo2020_reference_modelica.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_anakinra/Anakinra_Ngo2020_reference/Anakinra_Ngo2020_reference_fmi.zip" download>Anakinra_Ngo2020_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_anakinra/Anakinra_Ngo2020_reference/Anakinra_Ngo2020_reference_matlab.zip" download>Anakinra_Ngo2020_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_anakinra/Anakinra_Ngo2020_reference/Anakinra_Ngo2020_reference_matlab_simbio.zip" download>Anakinra_Ngo2020_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_anakinra/Anakinra_Ngo2020_reference/Anakinra_Ngo2020_reference_sbml.zip" download>Anakinra_Ngo2020_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_anakinra/Anakinra_Ngo2020_reference/Anakinra_Ngo2020_reference_cellml.zip" download>Anakinra_Ngo2020_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_anakinra/Anakinra_Ngo2020_reference/Anakinra_Ngo2020_reference.svg" alt="Anakinra_Ngo2020_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 1.21 /h, lag 18.7 min, F 1). _The paper's dose was not captured; the simulator's default is used._
-
-<dbs-fmusim paramsurl="drugs/drug_anakinra/Anakinra_Ngo2020_reference/Anakinra_Ngo2020_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_anakinra/Anakinra_Ngo2020_reference/Anakinra_Ngo2020_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_2C_enteral` · parameters `Anakinra_Ngo2020_reference_params.json` · controls `Anakinra_Ngo2020_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 23:37 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 00:26 UTC</sub>

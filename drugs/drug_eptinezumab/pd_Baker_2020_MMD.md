@@ -1,8 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02C&quot;,&quot;href&quot;:&quot;atc/N02C.md&quot;},{&quot;label&quot;:&quot;eptinezumab&quot;,&quot;href&quot;:&quot;drugs/drug_eptinezumab/&quot;},{&quot;label&quot;:&quot;Baker_2020 \u00b7 PD change in the frequency of monthly migraine days (MMD) over weeks 1\u201312&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Eptinezumab_Baker2020_reference&quot;,&quot;label&quot;:&quot;Baker_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eptinezumab/Eptinezumab_Baker2020_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02C&quot;,&quot;href&quot;:&quot;atc/N02C.md&quot;},{&quot;label&quot;:&quot;eptinezumab&quot;,&quot;href&quot;:&quot;drugs/drug_eptinezumab/&quot;},{&quot;label&quot;:&quot;Baker_2020 \u00b7 PD change in the frequency of MMD&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Eptinezumab_Baker2020_1&quot;,&quot;label&quot;:&quot;Baker_2020_1&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eptinezumab/Eptinezumab_Baker2020_1.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Eptinezumab_Baker2020_10&quot;,&quot;label&quot;:&quot;Baker_2020_10&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eptinezumab/Eptinezumab_Baker2020_10.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Eptinezumab_Baker2020_100&quot;,&quot;label&quot;:&quot;Baker_2020_100&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eptinezumab/Eptinezumab_Baker2020_100.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Eptinezumab_Baker2020_1000&quot;,&quot;label&quot;:&quot;Baker_2020_1000&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eptinezumab/Eptinezumab_Baker2020_1000.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Eptinezumab_Baker2020_3&quot;,&quot;label&quot;:&quot;Baker_2020_3&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eptinezumab/Eptinezumab_Baker2020_3.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Eptinezumab_Baker2020_30&quot;,&quot;label&quot;:&quot;Baker_2020_30&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eptinezumab/Eptinezumab_Baker2020_30.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Eptinezumab_Baker2020_300&quot;,&quot;label&quot;:&quot;Baker_2020_300&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eptinezumab/Eptinezumab_Baker2020_300.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# change in the frequency of monthly migraine days (MMD) over weeks 1–12 — PD  <span class="pk-badge pk-badge--green">extracted</span>
+# change in the frequency of MMD — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -14,16 +14,16 @@
 
 ## Record summary
 
-**As extracted:** Eptinezumab (concentrations from this paper's PK model) drives change in the frequency of monthly migraine days (MMD) over weeks 1–12 (in days): direct Emax (saturable) effect.
+**As extracted:** Eptinezumab (concentrations from this paper's PK model) drives change in the frequency of MMD: direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
 
-> A saturable inhibitory Emax model describes how plasma eptinezumab exposure reduces the change in monthly migraine days (MMD) over weeks 1–12, with the relationship characterized by EC50 values ranging from 745 ng/mL to 2.54 μg/mL for concentration-based metrics and 3.78 to 1480 h·μg/mL for AUC-based metrics. The paper does not specify a kinetic mechanism (such as kin/kout or ke0) or an effect compartment for this direct exposure-response relationship.
+> A saturable inhibitory Emax model linked plasma eptinezumab exposure metrics (such as AUC0–12wk) to the change in monthly migraine days over weeks 1–12, yielding an EC50 of 15,000 h·µg mL-1 for AUC0–12wk. Additional estimated EC50 values ranged from 0.109 µg mL-1 to 3.78 µg mL-1 for concentration-based metrics, with the paper noting that doses below 30 mg failed to meet the EC90 estimates.
 >
 > <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Baker_2020`
-- **model family:** `emax`
+- **model family:** `sigmoid_emax`
 - **driver:** `pk_record`
 - **tier:** descriptive
 - **effect:** inhibition/proportional
@@ -35,14 +35,14 @@ Baker B et al., Population pharmacokinetic and exposure…, Pharmacology researc
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | EC50 | `Q321` · not captured | 1480 | h·μg mL−1 | not captured | llm (not captured) | Baker_2020:pdv3 |
-| PD (effect) | EC50 | `Q321` · not captured | 1190 | h·μg mL−1 | not captured | llm (not captured) | Baker_2020:pdv3 |
-| PD (effect) | EC50 | `Q321` · not captured | 3.78 | μg mL−1 | not captured | llm (not captured) | Baker_2020:pdv3 |
-| PD (effect) | EC50 | `Q321` · not captured | 2.54 | μg mL−1 | not captured | llm (not captured) | Baker_2020:pdv3 |
-| PD (effect) | EC50 | `Q321` · not captured | 0.109 | μg mL−1 | not captured | llm (not captured) | Baker_2020:pdv3 |
-| PD (effect) | EC50 | `Q321` · not captured | 0.183 | μg mL−1 | not captured | llm (not captured) | Baker_2020:pdv3 |
-| PD (effect) | EC50 | `Q321` · not captured | 745 | ng mL−1 | not captured | llm (not captured) | Baker_2020:pdv3 |
-| PD (effect) | EC50 | `Q321` · not captured | 585 | ng mL−1 | not captured | llm (not captured) | Baker_2020:pdv3 |
+| PD (effect) | EC50 | `Q321` · not captured | 1480 | h·µg mL-1 | not captured | llm (not captured) | Baker_2020:pdv3 |
+| PD (effect) | EC50 | `Q321` · not captured | 1190 | h·µg mL-1 | not captured | llm (not captured) | Baker_2020:pdv3 |
+| PD (effect) | EC50 | `Q321` · not captured | 3.78 | µg mL-1 | not captured | llm (not captured) | Baker_2020:pdv3 |
+| PD (effect) | EC50 | `Q321` · not captured | 2.54 | µg mL-1 | not captured | llm (not captured) | Baker_2020:pdv3 |
+| PD (effect) | EC50 | `Q321` · not captured | 0.109 | µg mL-1 | not captured | llm (not captured) | Baker_2020:pdv3 |
+| PD (effect) | EC50 | `Q321` · not captured | 0.183 | µg mL-1 | not captured | llm (not captured) | Baker_2020:pdv3 |
+| PD (effect) | EC50 | `Q321` · not captured | 745 | ng mL-1 | not captured | llm (not captured) | Baker_2020:pdv3 |
+| PD (effect) | EC50 | `Q321` · not captured | 585 | ng mL-1 | not captured | llm (not captured) | Baker_2020:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>

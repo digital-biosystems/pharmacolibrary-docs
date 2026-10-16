@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C10A&quot;,&quot;href&quot;:&quot;atc/C10A.md&quot;},{&quot;label&quot;:&quot;bempedoic acid&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;BempedoicAcid_Amore2023_reference&quot;,&quot;label&quot;:&quot;Amore_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bempedoic_acid/BempedoicAcid_Amore2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BempedoicAcid_Jadhav2023_reference&quot;,&quot;label&quot;:&quot;Jadhav_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bempedoic_acid/BempedoicAcid_Jadhav2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # bempedoic acid
 
@@ -20,20 +21,37 @@ Bempedoic acid is a lipid-lowering medicine used to treat high cholesterol and o
 
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
-| bempedoic acid (bempedoic_acid) | parent | 344.492 | C19H36O5 | DrugBank | [10472693](https://pubchem.ncbi.nlm.nih.gov/compound/10472693) | Jadhav_2023 |
+| bempedoic_acid | metabolite | 344.492 | C19H36O5 | DrugBank | [10472693](https://pubchem.ncbi.nlm.nih.gov/compound/10472693) | Jadhav_2023 |
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 11:00 | 10:32 | 2/0/0 | 0/0/0 | 0/0/0 | 150,895/30,296 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 0/3 | 5/0 | 0 |
+| 2026-10-15 01:08 | 1:05 | 0/0/2 | 0/0/0 | 0/0/0 | 70,798/4,899 | einfracz / qwen3.8-27b | 5 | 0/3 | 5/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.105), gpt-oss:120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed 0/2</span> | [Amore_2023_reference](drugs/drug_bempedoic_acid/BempedoicAcid_Amore2023_reference.md) | — | 2-compartment (no model) | 3 | Amore BM et al., Physiologically Based Pharmacokinetic M…, Pharmaceutics (2023) | [10.3390/pharmaceutics15051476](https://doi.org/10.3390/pharmaceutics15051476) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.944), gpt-oss:120b (not confirmed, agreement 0.789). Primary extraction retained.">cross-check: disputed 0/2</span> | [Jadhav_2023_reference](drugs/drug_bempedoic_acid/BempedoicAcid_Jadhav2023_reference.md) | — | parent + metabolite (no model) | 4 (+2 cov.) | Jadhav SB et al., Population pharmacokinetic and pharmaco…, Journal of pharmacokinetics… (2023) | [10.1007/s10928-023-09864-w](https://doi.org/10.1007/s10928-023-09864-w) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.105), gpt-oss:120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>blocking: unreported model parameter default(s): k21</sub><br><sub>route_to: `scholar`</sub> | [Amore_2023_reference](drugs/drug_bempedoic_acid/BempedoicAcid_Amore2023_reference.md) | ▶ model + simulator | 2-compartment, IV | 3 | Amore BM et al., Physiologically Based Pharmacokinetic M…, Pharmaceutics (2023) | [10.3390/pharmaceutics15051476](https://doi.org/10.3390/pharmaceutics15051476) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.944), gpt-oss:120b (not confirmed, agreement 0.789). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: T3_param_coverage</sub><br><sub>route_to: `engineer`</sub> | [Jadhav_2023_reference](drugs/drug_bempedoic_acid/BempedoicAcid_Jadhav2023_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 (+4 cov.) | Jadhav SB et al., Population pharmacokinetic and pharmaco…, Journal of pharmacokinetics… (2023) | [10.1007/s10928-023-09864-w](https://doi.org/10.1007/s10928-023-09864-w) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=bempedoic_acid).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| metabolism | kidney | `UGT2B7` substrate | DrugBank actor |
+| metabolism | liver | `SLCO1B1` inhibitor, `SLCO1B3` inhibitor/substrate, `UGT2B7` substrate | DrugBank actor |
+| metabolism | small intestine | `UGT2B7` substrate | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | liver | `ABCC3` inhibitor | DrugBank actor |
+| excretion | small intestine | `ABCC3` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ACLY (inhibitor), NUAK2 (activator), SLC27A2 (substrate).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,14 +63,14 @@ Bempedoic acid is a lipid-lowering medicine used to treat high cholesterol and o
 
 - **PubMed hits:** 12 matched, 9 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 2  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 2  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Nguyen_2026 | irrelevant | 0 | 0 | The paper is a clinical practice study analyzing lipid management variability and does not report any pharmacokinetic parameters for bempedoic acid. |
+| popPK | Nguyen_2026 | irrelevant | 0 | 0 | The study is a clinical practice analysis of lipid-lowering therapy utilization and LDL-C goal achievement, reporting no pharmacokinetic parameters for bempedoic acid. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 10:51 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-15 01:07 UTC</sub>

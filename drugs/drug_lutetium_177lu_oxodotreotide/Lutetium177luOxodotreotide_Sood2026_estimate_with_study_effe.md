@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V10X&quot;,&quot;href&quot;:&quot;atc/V10X.md&quot;},{&quot;label&quot;:&quot;lutetium (177Lu) oxodotreotide&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_oxodotreotide/&quot;},{&quot;label&quot;:&quot;Sood_2026 \u00b7 estimate_with_study_effect&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lutetium177luOxodotreotide_Barakat2023_base&quot;,&quot;label&quot;:&quot;Barakat_2023_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_oxodotreotide/Lutetium177luOxodotreotide_Barakat2023_base.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lutetium177luOxodotreotide_Barakat2023_base_structural_model&quot;,&quot;label&quot;:&quot;Barakat_2023_base_structural_model_estimate_value_cv&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_oxodotreotide/Lutetium177luOxodotreotide_Barakat2023_base_structural_model.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lutetium177luOxodotreotide_Barakat2023_final&quot;,&quot;label&quot;:&quot;Barakat_2023_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_oxodotreotide/Lutetium177luOxodotreotide_Barakat2023_final.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lutetium177luOxodotreotide_Sood2026_netter_1_estimate&quot;,&quot;label&quot;:&quot;Sood_2026_netter_1_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_oxodotreotide/Lutetium177luOxodotreotide_Sood2026_netter_1_estimate.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lutetium177luOxodotreotide_Sood2026_netter_p_estimate&quot;,&quot;label&quot;:&quot;Sood_2026_netter_p_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_oxodotreotide/Lutetium177luOxodotreotide_Sood2026_netter_p_estimate.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lutetium177luOxodotreotide_Barakat2023_base&quot;,&quot;label&quot;:&quot;Barakat_2023_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_oxodotreotide/Lutetium177luOxodotreotide_Barakat2023_base.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lutetium177luOxodotreotide_Barakat2023_final&quot;,&quot;label&quot;:&quot;Barakat_2023_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_oxodotreotide/Lutetium177luOxodotreotide_Barakat2023_final.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lutetium177luOxodotreotide_Sood2026_netter_1_estimate&quot;,&quot;label&quot;:&quot;Sood_2026_netter_1_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_oxodotreotide/Lutetium177luOxodotreotide_Sood2026_netter_1_estimate.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lutetium177luOxodotreotide_Sood2026_netter_p_estimate&quot;,&quot;label&quot;:&quot;Sood_2026_netter_p_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_oxodotreotide/Lutetium177luOxodotreotide_Sood2026_netter_p_estimate.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # lutetium (177Lu) oxodotreotide — `Lutetium177luOxodotreotide_Sood2026_estimate_with_study_effe`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.4), gpt-oss:120b (not confirmed, agreement 0.3). Primary extraction retained.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.4), gpt-oss:120b (not confirmed, agreement 0.3). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -17,35 +17,35 @@
 
 ### Reviewer guidance
 
-**The paper reports none of the model's key parameters.**
+**This paper's disposition core is incomplete; q2 has no unit.**
 
-No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
+A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Gaze_2025) cannot stand in for this paper's evidence. Without a unit the value cannot be converted, so the model cannot use it. Extracted — lutetium 177lu oxodotreotide: Q2 0.63, CL 5.98 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has lutetium_177lu_oxodotreotide, the second reading lutetium-177lu-oxodotreotide; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-01 20:28:09.459018+00:00) predates the upstream re-run (2026-10-07 17:09:38.807083+00:00). Current validate status: `rejected`.
-
 ## Citation
 Sood M et al., [, Journal of nuclear medicine… (2026)
   ·  DOI: [10.2967/jnumed.125.270202](https://doi.org/10.2967/jnumed.125.270202)
 
-<div class="pk-model-meta" hidden drug="lutetium (177Lu) oxodotreotide" model-id="Lutetium177luOxodotreotide_Sood2026_estimate_with_study_effe" status="rejected" stale="true" population="adolescent and adult patients with somatostatin receptor–positive gastroenteropancreatic neuroendocrine tumors" measured-compound="lutetium_177lu_oxodotreotide" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="lutetium (177Lu) oxodotreotide" model-id="Lutetium177luOxodotreotide_Sood2026_estimate_with_study_effe" status="needs_review" stale="false" population="adolescent and adult patients with SSTR-positive GEP-NETs and PPGLs" measured-compound="lutetium_177lu_oxodotreotide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 0 extracted, plus 3 covariate effects.
+**Parameters:** 2 extracted, plus 3 covariate effects.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| cpop_crcl_effect_on_kidney | `Q900` · cpop_crcl_effect_on_kidney | -0.55 | not captured | not captured | not captured | not captured | not captured (not captured) | tbl5:row3:col1 | — | not captured |
-| beta_c_study_netter_p_crcl_effect_on_kidney_dosimetry_based_on_adult_or_adolescent_populations | `Q900` · beta_c_study_netter_p_crcl_effect_on_kidney_dosimetry_based_on_adult_or_adolescent_populations | 1.58 | not captured | not captured | not captured | not captured | not captured (not captured) | tbl5:row4:col1 | — | not captured |
-| fpop_crcl_effect_on_bone_marrow | `Q900` · fpop_crcl_effect_on_bone_marrow | -1.18 | not captured | not captured | not captured | not captured | not captured (not captured) | tbl5:row7:col1 | — | not captured |
+| cpop_crcl_effect_on_kidney | `Q900` · cpop_crcl_effect_on_kidney | -0.55 | not captured | not captured | not captured | 35.1 | not captured (not captured) | tbl5:row3:col1 | — | not captured |
+| beta_c_study_netter_p_crcl_effect_on_kidney_dosimetry_based_on_adult_or_adolescent_populations | `Q900` · beta_c_study_netter_p_crcl_effect_on_kidney_dosimetry_based_on_adult_or_adolescent_populations | 1.58 | not captured | not captured | not captured | 37.5 | not captured (not captured) | tbl5:row4:col1 | — | not captured |
+| fpop_crcl_effect_on_bone_marrow | `Q900` · fpop_crcl_effect_on_bone_marrow | -1.18 | not captured | not captured | not captured | 19.7 | not captured (not captured) | tbl5:row7:col1 | — | not captured |
+| b 2 | `Q99` · Q2 | 0.63 | not captured | not captured | not captured | 12.5 | llm (0.6) | tbl5:row9:col1 | — | not captured |
+| clearance | `Q22` · CL | 5.98 | L/h | 1.6611111111111113e-06 | L/h | not captured | review_gapfill (0.7) | Gaze_2025:review | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -55,22 +55,24 @@ Sood M et al., [, Journal of nuclear medicine… (2026)
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'Apop, kidney baseline' — extend the ontology if this is a real PK parameter (source ['tbl5:row1:col1'])
+- dropped PD-category row 'Apop, kidney baseline' → Q324 (E0, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tbl5:row1:col1'])
 - dropped unlinked row (NIL): 'Bpop, activity effect on kidney' — extend the ontology if this is a real PK parameter (source ['tbl5:row2:col1'])
 - covariate level 'Cpop, CrCL effect on kidney' → Q900:cpop_crcl_effect_on_kidney = -0.55 (linear_fractional on the model)
 - covariate level 'beta_C_STUDY_NETTER_P, CrCL effect on kidney dosimetry based on adult or adolescent populations' → Q900:beta_c_study_netter_p_crcl_effect_on_kidney_dosimetry_based_on_adult_or_adolescent_populations = 1.58 (linear_fractional on the model)
-- dropped PD-category row 'Dpop, bone marrow baseline' → Q324 (E0, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tbl5:row5:col1'])
+- dropped unlinked row (NIL): 'Dpop, bone marrow baseline' — extend the ontology if this is a real PK parameter (source ['tbl5:row5:col1'])
 - dropped unlinked row (NIL): 'Epop, activity effect on bone marrow' — extend the ontology if this is a real PK parameter (source ['tbl5:row6:col1'])
 - covariate level 'Fpop, CrCL effect on bone marrow' → Q900:fpop_crcl_effect_on_bone_marrow = -1.18 (linear_fractional on the model)
 - dropped unlinked row (NIL): 'b 1' — extend the ontology if this is a real PK parameter (source ['tbl5:row8:col1'])
-- dropped unlinked row (NIL): 'b 2' — extend the ontology if this is a real PK parameter (source ['tbl5:row9:col1'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=lutetium_177lu_oxodotreotide
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - population split: 'estimate with study effect' subgroup of Sood_2026 (paper reports 3 populations: estimate with study effect, netter-1 estimate, netter-p estimate)
 - molar mass: none found for 'lutetium_177lu_oxodotreotide' — its concentrations stay mass-only
-- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
+- gap-filled Q22 (CL) from Gaze_2025's review values (primary lacked it)
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
+- table tbl5: units_need_context
 - companion parameter table 2 transcribed (8 record(s))
 - companion parameter table 4 transcribed (6 record(s))
 - LLM selected parameter table(s) 2, 4
@@ -115,9 +117,13 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
-| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Gaze_2025:review'] |
+| C5_unit_missing_Q99 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['tbl5:row9:col1'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 5.98 | not captured | not captured | ['Gaze_2025:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 5.98 L/h | not captured | not captured | ['Gaze_2025:review'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -126,14 +132,24 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_lutetium_177lu_oxodotreotide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Sood_2026` / `Sood_2026::estimate_with_study_effect`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_lutetium_177lu_oxodotreotide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Sood_2026` / `Sood_2026::estimate_with_study_effect`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -142,4 +158,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 17:09 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 19:52 UTC</sub>

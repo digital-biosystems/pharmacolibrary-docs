@@ -128,9 +128,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ciclesonide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Rohatagi_2003` / `Rohatagi_2003::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ciclesonide/models/modelica/_needs_review/Ciclesonide_Rohatagi2003_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ciclesonide/models/modelica/_needs_review/Ciclesonide_Rohatagi2003_reference.deviation.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ciclesonide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Rohatagi_2003` / `Rohatagi_2003::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ciclesonide/models/modelica/_needs_review/Ciclesonide_Rohatagi2003_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ciclesonide/models/modelica/_needs_review/Ciclesonide_Rohatagi2003_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

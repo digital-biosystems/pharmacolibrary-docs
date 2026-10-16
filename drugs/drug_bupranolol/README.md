@@ -18,11 +18,23 @@ Bupranolol is a non-selective beta blocker that has been used as an antihyperten
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 00:26 | 2:11 | 0/0/0 | 0/0/0 | 0/0/0 | 73,871/1,695 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 2/0 | 2/0 | 0 |
+| 2026-10-14 20:16 | 0:56 | 0/0/0 | 0/0/0 | 0/0/0 | 73,871/1,606 | einfracz / qwen3.8-27b | 2 | 2/0 | 2/0 | 0 |
 
 ## popPK records
 
 _not available_
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=bupranolol).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
+| metabolism | liver | `CYP2D6` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ADRB1 (target), ADRB2 (target), ADRB3 (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,34 +66,34 @@ _10 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Lemoine_1982.pdf` | Lemoine H et al., A novel analysis of concentration-depen…, Naunyn-Schmiedeberg's archi… (1982) | pd | 4 | [10.1007/BF00506313](https://doi.org/10.1007/BF00506313) | [6289139](https://www.ncbi.nlm.nih.gov/pubmed/6289139) | metadata signals extractable PD data (concentration-effect) |
 | `Walter_1984.pdf` | Walter M et al., Stimulant and blocking effects of optic…, Naunyn-Schmiedeberg's archi… (1984) | pd | 4 | [10.1007/BF00500912](https://doi.org/10.1007/BF00500912) | [6092972](https://www.ncbi.nlm.nih.gov/pubmed/6092972) | metadata signals extractable PD data (concentration-effect) |
 
-<sub>queue written 2026-10-07T00:26:07.949945+00:00</sub>
+<sub>queue written 2026-10-14T20:16:03.069891+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| PGx | Appanna_1996 | not_relevant | 0 | 0 | The paper describes an in vitro assay method for CYP2D6 activity using bupranolol as a substrate but does not report pharmacogenomic effects of specific gene variants on PK or PD parameters in humans. |
+| PGx | Appanna_1996 | not_relevant | 0 | 0 | The paper describes an in vitro method for measuring CYP2D6 activity using bupranolol but does not report changes in PK/PD parameters based on specific gene variants or genotypes. |
 | popPK | Babu_2008 | irrelevant | 2 | 0 | The study focuses on pharmacodynamic effects (beta-blocking activity) and relative delivery/mass balance rather than reporting quantitative compartmental pharmacokinetic parameters (CL, V, ka) for bupranolol. |
 | PD | Babu_2008 | not_relevant | 3 | 2 | The paper reports qualitative comparisons of beta-blocking effects (percent inhibition) and PK parameters (AUC) for different formulations, but does not provide a concentration-effect curve, Emax/EC50, or any numeric PD parameters linking exposure to effect. |
 | popPK | Bosch_2002 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology investigation of ion channels where bupranolol is used only as a pharmacological antagonist, not as a subject for pharmacokinetic analysis. |
-| popPK | Brawley_2000 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of beta-adrenoceptor-mediated relaxation in rat aorta, not a pharmacokinetic study, and bupranolol is used only as a receptor antagonist. |
-| popPK | Carpéné_1993 | irrelevant | 0 | 0 | The study investigates beta-adrenoceptor desensitization and lipolysis in hamsters and guinea pigs, using bupranolol only as a pharmacological antagonist for receptor characterization, not for pharmacokinetic analysis. |
+| popPK | Brawley_2000 | irrelevant | 0 | 0 | The study is an in vitro receptor pharmacology investigation in rat aorta, not a pharmacokinetic study, and bupranolol is used only as a comparator antagonist. |
+| popPK | Carpéné_1993 | irrelevant | 0 | 0 | The study investigates adrenergic desensitization and lipolysis in hamsters and guinea pigs, using bupranolol only as a pharmacological antagonist for receptor characterization, not for pharmacokinetic analysis. |
 | PD | Carpéné_1993 | not_relevant | 0 | 0 | The paper investigates beta-adrenoceptor desensitization in adipocytes using norepinephrine infusion; bupranolol is only mentioned as a reference antagonist in a rank order of potency, with no exposure-response or dose-response analysis for bupranolol itself. |
-| popPK | Carpéné_1994 | irrelevant | 0 | 0 | The study is a pharmacological investigation of beta-adrenergic receptors in garden dormouse adipocytes where bupranolol is used only as a non-selective antagonist to block lipolysis, not as a subject for pharmacokinetic analysis. |
+| popPK | Carpéné_1994 | irrelevant | 0 | 0 | The study is an in vitro pharmacological investigation of beta-adrenergic receptors in garden dormouse adipocytes, using bupranolol only as a non-specific antagonist for blockade, and reports no pharmacokinetic parameters. |
 | PD | Carpéné_1994 | not_relevant | 1 | 1 | The paper reports a qualitative observation that 100 microM bupranolol causes total blockade of lipolysis, but does not provide a dose-response curve, EC50, or other numeric PD parameters for bupranolol. |
 | popPK | Carpéné_1999 | irrelevant | 0 | 0 | no_text gate: only 101 chars of text extracted (&lt; 400) |
 | PD | Carpéné_1999 | not_relevant | 0 | 0 | The paper focuses on octopamine and beta3-adrenoceptors in fat cells and does not report any pharmacodynamic or exposure-response data for bupranolol. |
 | popPK | Clouse_2007 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological characterization of beta-adrenoceptors in rat tissue where bupranolol is used only as a non-selective antagonist, with no pharmacokinetic parameters reported. |
 | PD | Clouse_2007 | not_relevant | 0 | 0 | The paper reports pD2 values for beta-adrenoceptor agonists (BRL 37344, ritodrine, CL 316243) and describes bupranolol only as a non-selective antagonist used to attenuate responses, without providing specific numeric PD parameters (e.g., pA2, Ki, or concentration-effect curve parameters) for bupranolol itself. |
-| popPK | DAllaire_1995 | irrelevant | 0 | 0 | The study is an in vitro receptor binding assay where bupranolol is used as a non-specific binding reference, not a pharmacokinetic study. |
+| popPK | DAllaire_1995 | irrelevant | 0 | 0 | Bupranolol is used only as a reference antagonist to define non-specific binding in an in-vitro receptor characterization study, with no pharmacokinetic parameters reported. |
 | PD | DAllaire_1995 | not_relevant | 0 | 0 | The paper reports receptor binding affinity (Ki) and saturation parameters (KD, Bmax) for bupranolol in isolated cells, which are pharmacological binding data, not a pharmacodynamic exposure-response or dose-response relationship for a physiological effect. |
-| popPK | Endoh_1990 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of a new compound (ZSY-39) in canine muscle, where bupranolol is used only as a non-affecting control agent, with no PK parameters reported. |
+| popPK | Endoh_1990 | irrelevant | 0 | 0 | The study focuses on the mechanism of action of a new derivative (ZSY-39) in canine muscle, using bupranolol only as a control agent with no pharmacokinetic data reported. |
 | PD | Endoh_1990 | not_relevant | 0 | 0 | The paper reports PD parameters for ZSY-39, not bupranolol; bupranolol is only used as a non-effective antagonist control. |
-| popPK | Endoh_1991 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of pimobendan's inotropic effects where bupranolol is used only as a beta-blocker tool compound, with no pharmacokinetic parameters reported for bupranolol. |
+| popPK | Endoh_1991 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic study on pimobendan, where bupranolol is used only as a beta-blocker tool compound, and no PK parameters are reported. |
 | PD | Endoh_1991 | not_relevant | 0 | 0 | The paper reports PD parameters for pimobendan and its metabolite, not for bupranolol, which is used only as a beta-blocker antagonist in the study. |
 | popPK | Endoh_1993 | irrelevant | 0 | 0 | no_text gate: only 147 chars of text extracted (&lt; 400) |
 | PD | Endoh_1993 | not_relevant | 0 | 0 | The paper investigates the mechanism of action of adenosine on ferret ventricular contraction and does not mention bupranolol or report any exposure-response or dose-response data for it. |
-| popPK | Gauthier_1996 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of beta-3 adrenoceptors in human heart tissue, using bupranolol only as a non-selective antagonist to characterize receptor subtype, and does not report any pharmacokinetic parameters for bupranolol. |
+| popPK | Gauthier_1996 | irrelevant | 0 | 0 | This is a pharmacodynamics study on human cardiac tissue using bupranolol as a non-selective antagonist to block receptors, not a pharmacokinetic study reporting disposition parameters for bupranolol. |
 | popPK | Geyer_1998 | irrelevant | 0 | 0 | no_text gate: only 52 chars of text extracted (&lt; 400) |
 | PD | Geyer_1998 | not_relevant | 0 | 0 | The paper focuses on the pharmacology of bovine iris sphincter and does not mention bupranolol or report any exposure-response or dose-response data for it. |
 | popPK | Gille_1985 | irrelevant | 0 | 0 | no_text gate: only 216 chars of text extracted (&lt; 400) |
@@ -90,35 +102,35 @@ _10 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | PD | Gosgnach_2001 | not_relevant | 2 | 1 | The paper describes qualitative signaling pathways and mentions dose-dependent effects for nebivolol, but provides no numeric PD parameters, concentration-effect curves, or quantitative exposure-response data for bupranolol. |
 | popPK | Hicks_2007 | irrelevant | 0 | 0 | no_text gate: only 156 chars of text extracted (&lt; 400) |
 | PD | Hicks_2007 | not_relevant | 0 | 0 | The paper studies GW427353 (solabegron), not bupranolol. |
-| popPK | Ishihata_1993 | irrelevant | 0 | 0 | The study is a pharmacological investigation of angiotensin II in rabbit myocardium where bupranolol is used only as a beta-blocker to isolate the effect, with no pharmacokinetic parameters reported. |
+| popPK | Ishihata_1993 | irrelevant | 0 | 0 | The study investigates the pharmacological mechanism of angiotensin II in rabbit myocardium using bupranolol only as a non-selective beta-blocker to isolate specific effects, not as the subject of a pharmacokinetic analysis. |
 | PD | Ishihata_1993 | not_relevant | 0 | 0 | The paper investigates the pharmacodynamics of angiotensin II, using bupranolol only as a background blocker; it does not report a PD or exposure-response relationship for bupranolol itself. |
 | popPK | Kaumann_1976 | irrelevant | 0 | 0 | no_text gate: only 118 chars of text extracted (&lt; 400) |
 | PD | Kaumann_1976 | not_relevant | 0 | 0 | The paper focuses on the desensitization of kitten atria to isoprenaline and does not report any pharmacodynamic or exposure-response data for bupranolol. |
 | popPK | Kaumann_1986 | irrelevant | 0 | 0 | no_text gate: only 61 chars of text extracted (&lt; 400) |
-| popPK | Kaumann_1996 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of adrenoceptor antagonism, not a pharmacokinetic study, and bupranolol is used only as a tool compound. |
+| popPK | Kaumann_1996 | irrelevant | 0 | 0 | The study is a mechanistic pharmacological investigation of beta-adrenoceptor subtypes in tissue, not a pharmacokinetic study, and reports no disposition parameters for bupranolol. |
 | popPK | Kemken_1991 | irrelevant | 2 | 0 | The study reports pharmacodynamic effects (heart rate) rather than quantitative pharmacokinetic parameters (CL, V, ka) for bupranolol. |
 | popPK | Kemken_1992 | irrelevant | 2 | 0 | Pharmacodynamic (not PK) study in rabbits with no quantitative disposition parameters and no numeric values in the evidence. |
-| popPK | Kitamura_2000 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of beta-adrenoceptor effects in guinea pig hearts, using bupranolol only as a non-selective antagonist to characterize receptor subtypes, with no pharmacokinetic parameters reported. |
+| popPK | Kitamura_2000 | irrelevant | 0 | 0 | The study is a functional pharmacology experiment in guinea pigs using bupranolol solely as a beta-AR antagonist, and it reports no pharmacokinetic parameters (CL, V, t1/2, etc.) for bupranolol. |
 | popPK | Kohi_1993 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of alpha-adrenoceptor subtypes in rabbit muscle where bupranolol is used only as a non-selective blocker, not as the subject of a pharmacokinetic analysis. |
 | PD | Kohi_1993 | not_relevant | 0 | 0 | The paper studies the pharmacology of a new antagonist (HV723) on alpha-adrenoceptors; bupranolol is used only as a fixed concentration (0.3 microM) to block beta-receptors, and no exposure-response or dose-response relationship for bupranolol is reported. |
 | popPK | Lemoine_1982 | irrelevant | 0 | 0 | no_text gate: only 194 chars of text extracted (&lt; 400) |
-| popPK | Malinowska_1996 | irrelevant | 0 | 0 | The study is a pharmacodynamic investigation of beta-adrenoceptor mediation in pithed rats, using bupranolol only as a non-selective antagonist, and reports no pharmacokinetic parameters for bupranolol. |
+| popPK | Malinowska_1996 | irrelevant | 0 | 0 | This is a pharmacodynamic study of adrenergic receptor mediation in pithed rats where bupranolol is used as a non-selective antagonist/comparator, not a subject of PK analysis. |
 | PD | Malinowska_1996 | not_relevant | 2 | 1 | The paper reports qualitative antagonism and pED60 values for agonists, but does not provide a quantitative concentration-effect curve or specific numeric PD parameters (like Emax or EC50) for bupranolol itself. |
-| popPK | Malinowska_1997 | irrelevant | 0 | 0 | The study is a pharmacological investigation of beta-adrenoceptor subtypes in rats, using bupranolol only as a non-selective antagonist to characterize receptor properties, not as a subject for pharmacokinetic analysis. |
-| popPK | Malinowska_2003 | irrelevant | 0 | 0 | The study is a pharmacodynamic and receptor binding investigation in rats, not a pharmacokinetic study, and reports no disposition parameters (CL, V, t1/2) for bupranolol. |
-| popPK | Mallem_2003 | irrelevant | 0 | 0 | The study is a pharmacodynamic investigation of beta-adrenergic receptors in rat aorta where bupranolol is used as a tool compound/antagonist, not as the subject of a pharmacokinetic analysis. |
+| popPK | Malinowska_1997 | irrelevant | 0 | 0 | The paper is a pharmacological study of beta-adrenoceptor subtypes using bupranolol only as an antagonist probe, not a pharmacokinetic study. |
+| popPK | Malinowska_2003 | irrelevant | 0 | 0 | The study focuses on the pharmacodynamic interaction of bupranolol analogues with atypical beta-adrenoceptors (heart rate effects and binding affinities), not on pharmacokinetic disposition parameters like clearance or volume of distribution. |
+| popPK | Mallem_2003 | irrelevant | 0 | 0 | Bupranolol is used as an atypical beta-AR antagonist in in vitro functional studies on rat aortic rings, not as the subject of a pharmacokinetic analysis. |
 | PD | Mallem_2003 | not_relevant | 0 | 0 | The paper reports concentration-response data for beta-agonists (CGP 12,177, cyanopindolol), not bupranolol; bupranolol is used only as a qualitative antagonist to inhibit relaxation, with no numeric PD parameters or dose-response curve provided for it. |
 | popPK | Mishra_2011 | irrelevant | 2 | 0 | The study focuses on formulation development and in vitro release, with no quantitative pharmacokinetic parameters (CL, V, ka) reported in the provided evidence. |
 | PD | Mishra_2011 | not_relevant | 1 | 0 | The paper focuses on formulation development and in vitro release, mentioning in vivo pharmacodynamic studies only qualitatively without providing numeric concentration-effect data or PD parameters. |
-| PGx | Pressacco_1993 | not_relevant | 4 | 5 | The paper reports in vitro enzyme kinetics (Ki values) and qualitative metabolic differences in liver microsomes, but does not report in vivo pharmacokinetic or pharmacodynamic parameters (e.g., AUC, Cmax, BP response) in humans stratified by genotype. |
-| popPK | Simard_1994 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of lipolysis in rat adipocytes where bupranolol is used only as a beta-blocker antagonist, not as the subject of pharmacokinetic analysis. |
+| PGx | Pressacco_1993 | not_relevant | 3 | 5 | The paper reports that CYP2D6 polymorphisms affect bupranolol metabolism (no metabolism in deficient livers), but it provides no quantitative pharmacokinetic parameters (e.g., AUC, Cl) or fitted effect sizes. |
+| popPK | Simard_1994 | irrelevant | 0 | 0 | The paper is an in-vitro pharmacodynamic study on rat adipocytes using bupranolol as a comparator antagonist, reporting no pharmacokinetic parameters. |
 | PD | Simard_1994 | not_relevant | 3 | 2 | The paper reports EC50 values for agonists (norepinephrine and BRL 37344) and qualitative antagonist potency ratios for bupranolol, but does not provide a quantitative concentration-effect curve or specific numeric PD parameters (like Ki or IC50) for bupranolol itself. |
 | popPK | Tawfik_1986 | irrelevant | 0 | 0 | Bupranolol is only used as a blocking agent in an in vitro pharmacodynamic study; no PK parameters reported. |
 | popPK | Totsuka_1979 | irrelevant | 0 | 0 | no_text gate: only 133 chars of text extracted (&lt; 400) |
 | popPK | Walter_1984 | irrelevant | 0 | 0 | no_text gate: only 199 chars of text extracted (&lt; 400) |
 | PD | Walter_1984 | not_relevant | 0 | 0 | The paper studies pindolol, not bupranolol. |
 | popPK | Weisser_1989 | irrelevant | 1 | 0 | Pharmacodynamic beta-blocking study in humans with no PK disposition parameters or numeric values reported. |
-| popPK | Wellstein_1986 | irrelevant | 4 | 2 | The study reports only a single half-life value (2.0 h) and qualitative plasma concentration comparisons, lacking the full set of quantitative disposition parameters (CL, V, ka) required for a PK model. |
+| popPK | Wellstein_1986 | irrelevant | 3 | 1 | The paper reports only a single half-life value (2.0 h) and Cmax, but lacks volume of distribution or clearance, which are required for a relevant PK model score. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

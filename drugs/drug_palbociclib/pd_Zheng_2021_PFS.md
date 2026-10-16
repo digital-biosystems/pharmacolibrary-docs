@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;palbociclib&quot;,&quot;href&quot;:&quot;drugs/drug_palbociclib/&quot;},{&quot;label&quot;:&quot;Zheng_2021 \u00b7 PD progression-free survival&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Palbociclib_Courlet2022_reference&quot;,&quot;label&quot;:&quot;Courlet_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_palbociclib/Palbociclib_Courlet2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # progression-free survival — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
@@ -17,29 +18,22 @@
 
 **Model:** No model was generated from this record.
 
-> Time-varying palbociclib Cavg,t (ng/mL) was evaluated in relation to investigator-assessed progression-free survival (PFS) using a Cox proportional model; the paper reports that exposure was not significantly associated with PFS. The paper does not specify a pharmacologic mechanism for this relationship.
+> A Cox proportional hazard model evaluated whether the time-varying average palbociclib exposure (Cavg,t) influences progression-free survival (PFS), but the analysis found that PFS was not significantly associated with palbociclib exposure after accounting for other prognostic factors. The paper does not specify a mechanistic effect (e.g., Emax or inhibition) or provide potency parameters like IC50, as the exposure-response relationship was deemed non-significant.
 >
-> <sub>Source-based summary by gpt-6-luna from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Zheng_2021`
 - **model family:** `tte`
 - **driver:** `cited_pk`
 - **tier:** descriptive
-- **effect:** inhibition/additive
+- **effect:** unknown/unknown
 
 ## Citation
 Zheng J et al., Impact of Dose Reduction on Efficacy: I…, Targeted oncology (2021)
   ·  DOI: [10.1007/s11523-020-00771-5](https://doi.org/10.1007/s11523-020-00771-5)
 
 ## Parameters
-| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|---|
-| PD (effect) | Coefficient | `Q335` · not captured | − 0.00224 | not captured | not captured | llm (not captured) | Zheng_2021:pdv3 |
-
-<details class="legend">
-<summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
-</details>
+_No resolved parameters._
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  

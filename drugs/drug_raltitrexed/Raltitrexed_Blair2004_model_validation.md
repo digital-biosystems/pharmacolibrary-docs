@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;raltitrexed&quot;,&quot;href&quot;:&quot;drugs/drug_raltitrexed/&quot;},{&quot;label&quot;:&quot;Blair_2004 \u00b7 model_validation&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Raltitrexed_Blair2004_model_validation&quot;,&quot;label&quot;:&quot;Blair_2004_model_validation&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_raltitrexed/Raltitrexed_Blair2004_model_validation.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Raltitrexed_Blair2004_total_cohort&quot;,&quot;label&quot;:&quot;Blair_2004_total_cohort&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_raltitrexed/Raltitrexed_Blair2004_total_cohort.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Raltitrexed_Blair2004_basic_model&quot;,&quot;label&quot;:&quot;Blair_2004_basic_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_raltitrexed/Raltitrexed_Blair2004_basic_model.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Raltitrexed_Blair2004_full&quot;,&quot;label&quot;:&quot;Blair_2004_full&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_raltitrexed/Raltitrexed_Blair2004_full.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # raltitrexed — `Raltitrexed_Blair2004_model_validation`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.857). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.857). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -13,37 +13,36 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** Model and browser simulation available in **Models** and **Simulation**.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
-**No value for raltitrexed's clearance.**
+**CL has no unit.**
 
-The model was built, but raltitrexed's clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. A reported unit could not be converted (CL), so that value has no SI equivalent. Extracted — raltitrexed: CL 33 %, V 6.65 l, Q 0.54 l h -1.
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (CL), so that value has no SI equivalent. Extracted — raltitrexed: CL 33 %, V 6.65 l.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl].value`: this record has 2.06, the second reading 0.92. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-28 14:39:31.048042+00:00) predates the upstream re-run (2026-10-07 17:17:54.984920+00:00). Current validate status: `extracted`.
-
 ## Citation
 Blair EY et al., Population pharmacokinetics of raltitre…, British journal of clinical… (2004)
   ·  DOI: [10.1111/j.1365-2125.2003.02050.x](https://doi.org/10.1111/j.1365-2125.2003.02050.x)
 
-<div class="pk-model-meta" hidden drug="raltitrexed" model-id="Raltitrexed_Blair2004_model_validation" status="extracted" stale="true" population="patients with advanced solid tumours" measured-compound="raltitrexed" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="raltitrexed" model-id="Raltitrexed_Blair2004_model_validation" status="needs_review" stale="false" population="adults with advanced solid tumours" measured-compound="raltitrexed" parameterization="mechanistic" topology="1C"></div>
 
-**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
-**Parameters:** 3 extracted.
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL (l h -1 ) | `Q22` · CL | 2.06 | l h -1 | 5.722222222222223e-07 | L/h | not captured | exact (1.0) | Blair_2004:other_prose | — | not captured |
+| interpatient variability in raltitrexed clearance | `Q22` · CL | 33 | % | not captured | % | not captured | boundary (0.8) | Blair_2004:other_prose | — | not captured |
 | V (l) | `Q61` · V | 6.65 | l | 0.0066500000000000005 | L | not captured | exact (1.0) | Blair_2004:other_prose | — | not captured |
-| q 1 | `Q30` · Q | 0.54 | l h -1 | 1.5e-07 | L/h | not captured | space_fold (0.95) | Blair_2004:discussion_prose | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -56,27 +55,24 @@ Blair EY et al., Population pharmacokinetics of raltitre…, British journal of 
 - dropped unlinked row (NIL): 'Number of patients' — extend the ontology if this is a real PK parameter (source ['tab_0:row1:col2'])
 - dropped unlinked row (NIL): 'Number of courses' — extend the ontology if this is a real PK parameter (source ['tab_0:row2:col2'])
 - dropped unlinked row (NIL): 'Number of observations' — extend the ontology if this is a real PK parameter (source ['tab_0:row3:col2'])
-- salvaged Q22 ('CL (l h -1 )'=2.06) from results prose — parameter table was unreadable
+- dropped unlinked row (NIL): 'Number of observations per patient 15 ± 3 (3-22)' — extend the ontology if this is a real PK parameter (source ['tab_0:row4:col2'])
+- dropped unlinked row (NIL): 'Dose administered (mg)' — extend the ontology if this is a real PK parameter (source ['tab_0:row5:col2'])
+- dropped unlinked row (NIL): 'Age (years)' — extend the ontology if this is a real PK parameter (source ['tab_0:row7:col2'])
+- dropped unlinked row (NIL): 'Weight (kg)' — extend the ontology if this is a real PK parameter (source ['tab_0:row8:col1'])
+- dropped unlinked row (NIL): 'Body surface area (m 2 )' — extend the ontology if this is a real PK parameter (source ['tab_0:row9:col2'])
+- dropped unlinked row (NIL): 'Estimated creatinine clearance' — extend the ontology if this is a real PK parameter (source ['tab_0:row10:col1'])
+- table mostly unlinked (9/9 table-cell rows NIL) — likely the wrong table was located, not 0 genuinely-missing ontology parameter(s); route_to_review instead of building a model from the residual linked cell(s)
+- salvaged Q22 ('interpatient variability in raltitrexed clearance'=33) from results prose — parameter table was unreadable
 - salvaged Q61 ('V (l)'=6.65) from results prose — parameter table was unreadable
-- salvaged Q30 ('q 1'=0.54) from results prose — parameter table was unreadable
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=raltitrexed
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - status held at route_to_review — not promoted
-- population split: 'model validation' subgroup of Blair_2004 (paper reports 3 populations: model development, model validation, total cohort)
+- population split: 'model validation' subgroup of Blair_2004 (paper reports 5 populations: basic model, covariate model, model development, model validation, total cohort)
 
 **Extraction notes:**
-- unparsed cell tab_0:row4:col1 = '16 ± 3 (7-23)'
-- unparsed cell tab_0:row4:col2 = '16 ± 3 (3-23)'
-- unparsed cell tab_0:row5:col1 = '3.9 ± 2.3 (0.2-8.6)'
-- unparsed cell tab_0:row5:col2 = '4.9 ± 1.9 (0.2-9.2)'
-- unparsed cell tab_0:row5:col3 = '4.3 ± 2.2 (0.2-9.2)'
-- unparsed cell tab_0:row7:col1 = '56.1 ± 11.0 (21-73)'
-- unparsed cell tab_0:row7:col2 = '54.1 ± 11.9 (24-74)'
-- unparsed cell tab_0:row7:col3 = '55.5 ± 11.3 (21-74)'
-- unparsed cell tab_0:row9:col1 = '1.8 ± 0.2 (1.3-2.4)'
-- unparsed cell tab_0:row9:col2 = '1.8 ± 0.2 (1.3-2.3)'
-- unparsed cell tab_0:row9:col3 = '1.8 ± 0.2 (1.3-2.4)'
+- table tab_0: unparsed_numeric_cell
+- table Blair_2004_table_p7_1: unparsed_numeric_cell
+- companion parameter table p7_1 transcribed (28 record(s))
 
 ## Validation
 
@@ -105,23 +101,13 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 2.06 | not captured | not captured | ['Blair_2004:other_prose'] |
+| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | % | not captured | not captured | ['Blair_2004:other_prose'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 33.0 | not captured | not captured | ['Blair_2004:other_prose'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 2.06 L/h | not captured | not captured | ['Blair_2004:other_prose'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 6.65 L | not captured | not captured | ['Blair_2004:other_prose'] |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -130,9 +116,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_raltitrexed/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Blair_2004` / `Blair_2004::model_validation`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_raltitrexed/models/modelica/_needs_review/Raltitrexed_Blair2004_model_validation.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_raltitrexed/models/modelica/_needs_review/Raltitrexed_Blair2004_model_validation.deviation.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_raltitrexed/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Blair_2004` / `Blair_2004::model_validation`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -142,25 +126,20 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_raltitrexed/Raltitrexed_Blair2004_model_validation/Raltitrexed_Blair2004_model_validation_modelica.zip" download>Raltitrexed_Blair2004_model_validation_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_raltitrexed/Raltitrexed_Blair2004_model_validation/Raltitrexed_Blair2004_model_validation_fmi.zip" download>Raltitrexed_Blair2004_model_validation_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><a href="drugs/drug_raltitrexed/Raltitrexed_Blair2004_model_validation/Raltitrexed_Blair2004_model_validation_fmi.zip" download>Raltitrexed_Blair2004_model_validation_fmi.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_raltitrexed/Raltitrexed_Blair2004_model_validation/Raltitrexed_Blair2004_model_validation_matlab.zip" download>Raltitrexed_Blair2004_model_validation_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_raltitrexed/Raltitrexed_Blair2004_model_validation/Raltitrexed_Blair2004_model_validation_matlab_simbio.zip" download>Raltitrexed_Blair2004_model_validation_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_raltitrexed/Raltitrexed_Blair2004_model_validation/Raltitrexed_Blair2004_model_validation_sbml.zip" download>Raltitrexed_Blair2004_model_validation_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_raltitrexed/Raltitrexed_Blair2004_model_validation/Raltitrexed_Blair2004_model_validation_cellml.zip" download>Raltitrexed_Blair2004_model_validation_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_raltitrexed/Raltitrexed_Blair2004_model_validation/Raltitrexed_Blair2004_model_validation.svg" alt="Raltitrexed_Blair2004_model_validation diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 10 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
-
-<dbs-fmusim paramsurl="drugs/drug_raltitrexed/Raltitrexed_Blair2004_model_validation/Raltitrexed_Blair2004_model_validation_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_raltitrexed/Raltitrexed_Blair2004_model_validation/Raltitrexed_Blair2004_model_validation_sim_controls.json"></dbs-fmusim>
-
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C` · parameters `Raltitrexed_Blair2004_model_validation_params.json` · controls `Raltitrexed_Blair2004_model_validation_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 17:17 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 21:49 UTC</sub>

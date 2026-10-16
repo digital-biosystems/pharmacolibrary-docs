@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01M&quot;,&quot;href&quot;:&quot;atc/J01M.md&quot;},{&quot;label&quot;:&quot;ciprofloxacin&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/&quot;},{&quot;label&quot;:&quot;Alihodzic_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ciprofloxacin_Dowling1995_reference&quot;,&quot;label&quot;:&quot;Dowling_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Dowling1995_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Garg2024_reference&quot;,&quot;label&quot;:&quot;Garg_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Garg2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Guo2022_reference&quot;,&quot;label&quot;:&quot;Guo_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Guo2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Haefliger2025_reference&quot;,&quot;label&quot;:&quot;Haefliger_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Haefliger2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Papich2017_reference&quot;,&quot;label&quot;:&quot;Papich_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Papich2017_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Sang2015_reference&quot;,&quot;label&quot;:&quot;Sang_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Sang2015_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Santavy2023_reference&quot;,&quot;label&quot;:&quot;Santavy_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Santavy2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Zhu2026_reference&quot;,&quot;label&quot;:&quot;Zhu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Zhu2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Alihodzic2022_reference&quot;,&quot;label&quot;:&quot;Alihodzic_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Alihodzic2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ciprofloxacin_Haefliger2025_reference&quot;,&quot;label&quot;:&quot;Haefliger_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Haefliger2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Zhu2026_reference&quot;,&quot;label&quot;:&quot;Zhu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Zhu2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Alihodzic2022_reference&quot;,&quot;label&quot;:&quot;Alihodzic_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Alihodzic2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Ciprofloxacin_Garg2024_reference&quot;,&quot;label&quot;:&quot;Garg_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Garg2024_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Papich2017_reference&quot;,&quot;label&quot;:&quot;Papich_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Papich2017_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Sadouki_2025_CFU&quot;,&quot;label&quot;:&quot;Sadouki_2025 \u00b7 CFU&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/pd_Sadouki_2025_CFU.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Zhao_2024_kDrug&quot;,&quot;label&quot;:&quot;Zhao_2024 \u00b7 kDrug&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/pd_Zhao_2024_kDrug.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,11 +17,11 @@
 
 ### Reviewer guidance
 
-**The ciprofloxacin two-compartment ECMO model was held back because bioavailability (F) and lag time (Tlag) were left at library defaults instead of values estimated or justified from Alihodzic_2022.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The record reports fitted ciprofloxacin parameters for critically ill adults on ECMO (CL 11.2 L/h, V1 53.3 L, Q 25.7 L/h, V2 66.1 L, kabs 1.0 h−1), but the deviations check failed because F and Tlag were defaulted rather than extracted. These defaults affect the simulated concentration profile yet are not supported by the paper, so the model needs review before publication. Extracted — ciprofloxacin: CL 11.2 L/h, V1 53.3 L, Q 25.7 L/h, V2 66.1 L, kabs 1 h−1.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — ciprofloxacin: CL 11.2 L/h, V1 53.3 L, Q 25.7 L/h, V2 66.1 L, kabs 0.42 /h, tlag 0.79 h.
 
-<sub>reviewed by glm-5.3-flash</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 DzenefaAlihodzi d.alihodzic@uke.de 0000-0003-0480-2089 Hospital Pharmacy University Medical Center Hamburg-Eppendorf Martinistraße 52 20246 Hamburg Germany; Department of Clinical Pharmacy Institute of Pharmacy University of Hamburg Bundesstraße 45 20146 Hamburg Germany et al., Ciprofloxacin in Patients Undergoing Ex… (2022)
@@ -43,7 +43,7 @@ DzenefaAlihodzi d.alihodzic@uke.de 0000-0003-0480-2089 Hospital Pharmacy Univers
 | V 1 (L) | `Q63` · V1 | 53.3 | L | 0.0533 | [l] | not captured | llm (0.5) | tab_2:row4:col1, tab_2:row4:col3, tab_2:row4:col5 | — | not captured |
 | Q (L/h) | `Q30` · Q | 25.7 | L/h | 7.138888888888889e-06 | [l] / [h] | not captured | exact (1.0) | tab_2:row5:col1, tab_2:row5:col3, tab_2:row5:col5 | — | 4.2 (None% RSE) |
 | V 2 (L) | `Q64` · V2 | 66.1 | L | 0.06609999999999999 | [l] | not captured | llm (0.5) | tab_2:row6:col1, tab_2:row6:col3, tab_2:row6:col5 | — | not captured |
-| Ka = 1.90 (0.68) h−1 [21] a | `Q49` · kabs | 1.9 | h−1 | 0.0005277777777777777 | 1/h | not captured | review_gapfill (0.7) | Cattrall_2019:review | — | not captured |
+| Ka (/h) | `Q49` · kabs | 0.42 | /h | 0.00011666666666666667 | 1/h | not captured | review_gapfill (0.7) | Felix_2025:review | — | not captured |
 | 750 mg Group 1 4/2. (h) l/xh)h) | `Q83` · tlag | 0.79 | h | 2844.0 | h | not captured | review_gapfill (0.7) | Gasser_1987:review | — | not captured |
 
 <details class="legend">
@@ -73,7 +73,7 @@ DzenefaAlihodzi d.alihodzic@uke.de 0000-0003-0480-2089 Hospital Pharmacy Univers
 - dropped value-less row: 'LLP-SIR'
 - dropped value-less row: 'CI'
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=ciprofloxacin
-- gap-filled Q49 (kabs) from Cattrall_2019's review values (primary lacked it)
+- gap-filled Q49 (kabs) from Felix_2025's review values (primary lacked it)
 - gap-filled Q83 (tlag) from Gasser_1987's review values (primary lacked it)
 
 **Extraction notes:**
@@ -92,7 +92,7 @@ DzenefaAlihodzi d.alihodzic@uke.de 0000-0003-0480-2089 Hospital Pharmacy Univers
 | C2_base_Q22 | fail | 11.2 | 12.9 | 1.1518 | 0.05 | footnote reference category |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_2:row3:col1', 'tab_2:row3:col3', 'tab_2:row3:col5'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_2:row5:col1', 'tab_2:row5:col3', 'tab_2:row5:col5'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Cattrall_2019:review'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Felix_2025:review'] |
 | C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_2:row4:col1', 'tab_2:row4:col3', 'tab_2:row4:col5'] |
 | C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_2:row6:col1', 'tab_2:row6:col3', 'tab_2:row6:col5'] |
 | C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Gasser_1987:review'] |
@@ -109,7 +109,7 @@ DzenefaAlihodzi d.alihodzic@uke.de 0000-0003-0480-2089 Hospital Pharmacy Univers
 | T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_output_variable | not captured | pass | C_central (measured=ciprofloxacin) | central.C | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | pass | 5 scholar param(s) emitted or defaulted | 5 covered | not captured | all structural parameters accounted for |
+| T3_param_coverage | not captured | pass | 6 scholar param(s) emitted or defaulted | 6 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable | not captured | LLM adjudication → deterministic rule |
 
@@ -120,10 +120,10 @@ DzenefaAlihodzi d.alihodzic@uke.de 0000-0003-0480-2089 Hospital Pharmacy Univers
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ciprofloxacin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Alihodzic_2022` / `Alihodzic_2022::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ciprofloxacin/models/modelica/Ciprofloxacin_Alihodzic2022_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ciprofloxacin/models/modelica/Ciprofloxacin_Alihodzic2022_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ciprofloxacin/models/modelica/Ciprofloxacin_Alihodzic2022_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ciprofloxacin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Alihodzic_2022` / `Alihodzic_2022::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ciprofloxacin/models/modelica/Ciprofloxacin_Alihodzic2022_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ciprofloxacin/models/modelica/Ciprofloxacin_Alihodzic2022_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ciprofloxacin/models/modelica/Ciprofloxacin_Alihodzic2022_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -141,11 +141,11 @@ DzenefaAlihodzi d.alihodzic@uke.de 0000-0003-0480-2089 Hospital Pharmacy Univers
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_ciprofloxacin/Ciprofloxacin_Alihodzic2022_reference/Ciprofloxacin_Alihodzic2022_reference.svg" alt="Ciprofloxacin_Alihodzic2022_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_ciprofloxacin/Ciprofloxacin_Alihodzic2022_reference/Ciprofloxacin_Alihodzic2022_reference.svg" alt="Ciprofloxacin_Alihodzic2022_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 400 mg, single dose, first-order absorption (ka 1.9 /h, lag 47.4 min, F 0.9). Dose in the paper: 400 mg.
+**Administration: oral** — 400 mg, single dose, first-order absorption (ka 0.42 /h, lag 47.4 min, F 0.9). Dose in the paper: 400 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_ciprofloxacin/Ciprofloxacin_Alihodzic2022_reference/Ciprofloxacin_Alihodzic2022_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_ciprofloxacin/Ciprofloxacin_Alihodzic2022_reference/Ciprofloxacin_Alihodzic2022_reference_sim_controls.json"></dbs-fmusim>
 

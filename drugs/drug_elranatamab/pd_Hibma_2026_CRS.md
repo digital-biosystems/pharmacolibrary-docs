@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;elranatamab&quot;,&quot;href&quot;:&quot;drugs/drug_elranatamab/&quot;},{&quot;label&quot;:&quot;Hibma_2026 \u00b7 PD incidence of any-grade CRS after the first step-up priming dose&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;elranatamab&quot;,&quot;href&quot;:&quot;drugs/drug_elranatamab/&quot;},{&quot;label&quot;:&quot;Hibma_2026 \u00b7 PD Cytokine Release Syndrome (any-grade)&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# incidence of any-grade CRS after the first step-up priming dose — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span>
+# Cytokine Release Syndrome (any-grade) — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -13,26 +13,34 @@
 
 ## Record summary
 
-**As extracted:** Free elranatamab (measured concentrations) drives incidence of any-grade CRS after the first step-up priming dose: categorical (graded) response model.
+**As extracted:** Free elranatamab (measured concentrations) drives Cytokine Release Syndrome (any-grade): categorical (graded) response model.
 
 **Model:** No model was generated from this record.
 
-> Higher free elranatamab exposure (log trough concentration on Day 4 after the first step-up dose, also the interval Cmax) was associated with a higher probability of any-grade CRS after that dose (OR 3.86). The paper does not specify a pharmacodynamic mechanism or report potency or rate parameters for this relationship.
+> The paper describes a categorical exposure-response analysis where log-transformed trough concentrations of free elranatamab (Log Ctrough, ng/mL) and baseline tumor burden were identified as covariates for the binary probability of any-grade Cytokine Release Syndrome (CRS) following the first step-up priming dose. The mechanism is described statistically as higher exposure and tumor burden being associated with a higher probability of CRS, with odds ratios of 3.86 for elranatamab exposure and 3.11 for tumor burden, but no pharmacodynamic mechanism (such as Emax or inhibitory rates) is specified.
 >
-> <sub>Source-based summary by gpt-6-luna from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Hibma_2026`
 - **model family:** `categorical`
 - **driver:** `conc_no_pk`
 - **tier:** descriptive
-- **effect:** stimulation/additive
+- **effect:** unknown/unknown
 
 ## Citation
 Hibma JE et al., Elranatamab Population Pharmacokinetics…, Clinical pharmacokinetics (2026)
   ·  DOI: [10.1007/s40262-026-01663-z](https://doi.org/10.1007/s40262-026-01663-z)
 
 ## Parameters
-_No resolved parameters._
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| — | Log(Ctrough) | `Q100` · not captured | 3.86 | not captured | not captured | nil (not captured) | Hibma_2026:pdv3 |
+| — | Tumor burden | `Q100` · not captured | 3.11 | not captured | not captured | nil (not captured) | Hibma_2026:pdv3 |
+
+<details class="legend">
+<summary>Parameter definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  

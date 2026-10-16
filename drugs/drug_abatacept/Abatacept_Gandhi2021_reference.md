@@ -16,22 +16,22 @@
 
 ### Reviewer guidance
 
-**Bioavailability was mislabelled as an excretion fraction with unitless value 6.09, while allometric and covariate exponents were recorded with implausible magnitude and missing SI units.**
+**C5 dimension mismatch on a structural parameter; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-The parameter meaning defines fe as the fraction of dose excreted unchanged, yet its value of 6.09 exceeds 1 and its verbatim label describes subcutaneous bioavailability. Several covariate exponents, such as the weight allometric power of 12.8 and sex clearance power of 21.4, were extracted with unitless labels that lacked SI conversion, indicating structural and dimensional mismatches in the model record. Extracted — abatacept: kabs 11 L/h, V1 1.57 Units, CL 1.36 Units, V2 3.71 Units, Q 7.25 L/h, fe 6.09 Units, allometric_exponent 27.3 Units, slope 27.1 Units.
+A reported unit could not be converted (kabs), so that value has no SI equivalent. Extracted — abatacept: kabs 11 L/h, V1 1.57 L, CL 1.36 L/h, V2 3.71 L, Fab 6.09, allometric_exponent 27.3.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[bioavailability of sc formulation a].parameter_id`: this record has Q44, the second reading Q40; it also differs on 20 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Gandhi Y et al., Model-Based Selection and Recommendatio…, Journal of clinical pharmac… (2021)
   ·  DOI: [10.1002/jcph.1797](https://doi.org/10.1002/jcph.1797)
 
-<div class="pk-model-meta" hidden drug="abatacept" model-id="Abatacept_Gandhi2021_reference" status="rejected" stale="false" population="adults with rheumatoid arthritis and children with polyarticular juvenile idiopathic arthritis" measured-compound="abatacept" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="abatacept" model-id="Abatacept_Gandhi2021_reference" status="rejected" stale="false" population="adults with rheumatoid arthritis and patients with polyarticular juvenile idiopathic arthritis" measured-compound="abatacept" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
-**Parameters:** 8 extracted, plus 8 covariate effects.
+**Parameters:** 6 extracted, plus 9 covariate effects.
 
 **Parameterization:** mechanistic.
 
@@ -40,22 +40,21 @@ Gandhi Y et al., Model-Based Selection and Recommendatio…, Journal of clinical
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| KA (L/h) | `Q49` · kabs | 11.0 | L/h | not captured | [l] / [h] | not captured | exact (1.0) | jcph1797-tbl-0002:row2:col1, jcph1797-tbl-0002:row2:col2 | — | 1.11 (None% RSE) |
-| VC (L) a | `Q63` · V1 | 1.57 | Units | not captured | [units] | not captured | llm_confirmed (0.6) | jcph1797-tbl-0002:row4:col1, jcph1797-tbl-0002:row4:col2 | — | 0.0464 (None% RSE) |
-| CL (L/h) a | `Q22` · CL | 1.36 | Units | not captured | [units] | not captured | llm_confirmed (0.6) | jcph1797-tbl-0002:row8:col1, jcph1797-tbl-0002:row8:col2 | — | 0.0637 (None% RSE) |
-| VP (L) a | `Q64` · V2 | 3.71 | Units | not captured | [units] | not captured | llm_confirmed (0.6) | jcph1797-tbl-0002:row16:col1, jcph1797-tbl-0002:row16:col2 | — | 0.154 (None% RSE) |
-| Intercompartmental CL (L/h) | `Q30` · Q | 7.25 | L/h | 2.013888888888889e-06 | [l] / [h] | not captured | llm_corrected (0.6) | jcph1797-tbl-0002:row19:col1, jcph1797-tbl-0002:row19:col2 | — | not captured |
-| Bioavailability of SC formulation a | `Q44` · fe | 6.09 | Units | not captured | not captured | not captured | llm_corrected (0.6) | jcph1797-tbl-0002:row20:col1, jcph1797-tbl-0002:row20:col2 | — | not captured |
-| Power of body weight on bioavailability | `Q319` · allometric_exponent | 27.3 | Units | not captured | not captured | not captured | llm_corrected (0.6) | jcph1797-tbl-0002:row22:col1, jcph1797-tbl-0002:row22:col2 | — | not captured |
-| Power of age on bioavailability | `Q335` · slope | 27.1 | Units | not captured | not captured | not captured | llm_corrected (0.6) | jcph1797-tbl-0002:row23:col1, jcph1797-tbl-0002:row23:col2 | — | not captured |
-| theta_allometric_exponent_body_weight_power | `Q900` · theta_allometric_exponent_body_weight_power | 6.99 | not captured | not captured | not captured | not captured | not captured (not captured) | jcph1797-tbl-0002:row5:col1, jcph1797-tbl-0002:row5:col2 | — | not captured |
-| theta_allometric_exponent_body_weight_power | `Q900` · theta_allometric_exponent_body_weight_power | 2.93 | not captured | not captured | not captured | not captured | not captured (not captured) | jcph1797-tbl-0002:row9:col1, jcph1797-tbl-0002:row9:col2 | — | not captured |
-| theta_q900_gfr_power | `Q900` · theta_q900_gfr_power | 7.19 | not captured | not captured | not captured | not captured | not captured (not captured) | jcph1797-tbl-0002:row10:col1, jcph1797-tbl-0002:row10:col2 | — | not captured |
-| theta_q314_albumin_power | `Q900` · theta_q314_albumin_power | 9.69 | not captured | not captured | not captured | not captured | not captured (not captured) | jcph1797-tbl-0002:row11:col1, jcph1797-tbl-0002:row11:col2 | — | not captured |
-| theta_q900_weight_power | `Q900` · theta_q900_weight_power | 12.8 | not captured | not captured | not captured | not captured | not captured (not captured) | jcph1797-tbl-0002:row12:col1, jcph1797-tbl-0002:row12:col2 | — | not captured |
-| theta_allometric_exponent_weight_power | `Q900` · theta_allometric_exponent_weight_power | 12.5 | not captured | not captured | not captured | not captured | not captured (not captured) | jcph1797-tbl-0002:row13:col1, jcph1797-tbl-0002:row13:col2 | — | not captured |
-| theta_cl_sex_power | `Q900` · theta_cl_sex_power | 21.4 | not captured | not captured | not captured | not captured | not captured (not captured) | jcph1797-tbl-0002:row14:col1, jcph1797-tbl-0002:row14:col2 | — | not captured |
-| theta_allometric_exponent_body_weight_power | `Q900` · theta_allometric_exponent_body_weight_power | 7.20 | not captured | not captured | not captured | not captured | not captured (not captured) | jcph1797-tbl-0002:row17:col1, jcph1797-tbl-0002:row17:col2 | — | not captured |
+| KA (L/h) | `Q49` · kabs | 11.0 | L/h | not captured | [l] / [h] | not captured | exact (1.0) | Gandhi_2021_table_p5_1:row0:col1, Gandhi_2021_table_p5_1:row0:col2 | — | not captured |
+| VC (L)ª | `Q63` · V1 | 1.57 | L | 0.00157 | [l] | not captured | llm_confirmed (0.6) | Gandhi_2021_table_p5_1:row1:col1, Gandhi_2021_table_p5_1:row1:col2 | — | not captured |
+| power_of_age_on_vc | `Q900` · power_of_age_on_vc | 23.4 | not captured | not captured | not captured | not captured | not captured (not captured) | Gandhi_2021_table_p5_1:row3:col1, Gandhi_2021_table_p5_1:row3:col2 | — | not captured |
+| CL (L/h)ª | `Q22` · CL | 1.36 | L/h | 3.777777777777778e-07 | [l] / [h] | not captured | llm_confirmed (0.6) | Gandhi_2021_table_p5_1:row4:col1, Gandhi_2021_table_p5_1:row4:col2 | — | not captured |
+| exponent_of_nsaid_on_cl | `Q900` · exponent_of_nsaid_on_cl | 12.5 | not captured | not captured | not captured | not captured | not captured (not captured) | Gandhi_2021_table_p5_1:row9:col1, Gandhi_2021_table_p5_1:row9:col2 | — | not captured |
+| VP (L)ª | `Q64` · V2 | 3.71 | L | 0.00371 | [l] | not captured | llm_confirmed (0.6) | Gandhi_2021_table_p5_1:row11:col1, Gandhi_2021_table_p5_1:row11:col2 | — | not captured |
+| Bioavailability of SC formulationª | `Q40` · Fab | 6.09 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | Gandhi_2021_table_p5_1:row14:col1, Gandhi_2021_table_p5_1:row14:col2 | — | not captured |
+| Power of body weight on bioavailability | `Q319` · allometric_exponent | 27.3 | not captured | not captured | not captured | not captured | llm_corrected (0.6) | Gandhi_2021_table_p5_1:row16:col1, Gandhi_2021_table_p5_1:row16:col2 | — | not captured |
+| theta_allometric_exponent_body_weight_power | `Q900` · theta_allometric_exponent_body_weight_power | 6.99 | not captured | not captured | not captured | not captured | not captured (not captured) | Gandhi_2021_table_p5_1:row2:col1, Gandhi_2021_table_p5_1:row2:col2 | — | not captured |
+| theta_allometric_exponent_body_weight_power | `Q900` · theta_allometric_exponent_body_weight_power | 2.93 | not captured | not captured | not captured | not captured | not captured (not captured) | Gandhi_2021_table_p5_1:row5:col1, Gandhi_2021_table_p5_1:row5:col2 | — | not captured |
+| theta_q23_gfr_power | `Q900` · theta_q23_gfr_power | 7.19 | not captured | not captured | not captured | not captured | not captured (not captured) | Gandhi_2021_table_p5_1:row6:col1, Gandhi_2021_table_p5_1:row6:col2 | — | not captured |
+| theta_q23_albumin_power | `Q900` · theta_q23_albumin_power | 9.69 | not captured | not captured | not captured | not captured | not captured (not captured) | Gandhi_2021_table_p5_1:row7:col1, Gandhi_2021_table_p5_1:row7:col2 | — | not captured |
+| theta_q23_weight_power | `Q900` · theta_q23_weight_power | 12.8 | not captured | not captured | not captured | not captured | not captured (not captured) | Gandhi_2021_table_p5_1:row8:col1, Gandhi_2021_table_p5_1:row8:col2 | — | not captured |
+| theta_q23_sex_power | `Q900` · theta_q23_sex_power | 21.4 | not captured | not captured | not captured | not captured | not captured (not captured) | Gandhi_2021_table_p5_1:row10:col1, Gandhi_2021_table_p5_1:row10:col2 | — | not captured |
+| theta_allometric_exponent_body_weight_power | `Q900` · theta_allometric_exponent_body_weight_power | 7.20 | not captured | not captured | not captured | not captured | not captured (not captured) | Gandhi_2021_table_p5_1:row12:col1, Gandhi_2021_table_p5_1:row12:col2 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -65,36 +64,47 @@ Gandhi Y et al., Model-Based Selection and Recommendatio…, Journal of clinical
 ## Departures & gaps
 
 **Interpretation flags:**
-- table section iiv: 'KA (L/h)' routed out of structural estimates ('Interindividual Variability/Residual Variability')
-- table section iiv: 'Power of body weight on VC' routed out of structural estimates ('Interindividual Variability/Residual Variability')
-- table section iiv: 'Power of albumin on CL b' routed out of structural estimates ('Interindividual Variability/Residual Variability')
-- table section iiv: 'VP (L) a' routed out of structural estimates ('Interindividual Variability/Residual Variability')
-- table section iiv: 'Bioavailability of SC formulation a' routed out of structural estimates ('Interindividual Variability/Residual Variability')
-- table section iiv: 'Proportional residual error' routed out of structural estimates ('Interindividual Variability/Residual Variability')
-- table section iiv: 'Additive residual error' routed out of structural estimates ('Interindividual Variability/Residual Variability')
-- table section iiv: 'Minimum value of the objective function = 65 061.705' routed out of structural estimates ('Interindividual Variability/Residual Variability')
+- table section residual_error: 'KA (L/h)' routed out of structural estimates ('IntraIndividual Variability/Residual Variability')
+- table section residual_error: 'Power of body weight on VC' routed out of structural estimates ('IntraIndividual Variability/Residual Variability')
+- table section residual_error: 'Power of albumin on CLᵇ' routed out of structural estimates ('IntraIndividual Variability/Residual Variability')
+- table section residual_error: 'Power of body weight on VP' routed out of structural estimates ('IntraIndividual Variability/Residual Variability')
+- table section residual_error: 'Power of body weight on bioavailability' routed out of structural estimates ('IntraIndividual Variability/Residual Variability')
+- table section residual_error: 'Proportional residual error' routed out of structural estimates ('IntraIndividual Variability/Residual Variability')
+- table section residual_error: 'Additive residual error' routed out of structural estimates ('IntraIndividual Variability/Residual Variability')
+- table representations disagree for 'KA (L/h)'; source reconciliation required
+- table representations disagree for 'VC (L)ª'; source reconciliation required
+- table representations disagree for 'Power of body weight on VC'; source reconciliation required
+- table representations disagree for 'Power of age on VC'; source reconciliation required
+- table representations disagree for 'CL (L/h)ª'; source reconciliation required
+- table representations disagree for 'Power of body weight on CLᵇ'; source reconciliation required
+- table representations disagree for 'Power of GFR on CLᵇ'; source reconciliation required
+- table representations disagree for 'Power of albumin on CLᵇ'; source reconciliation required
+- table representations disagree for 'Power of SJC on CLᵇ'; source reconciliation required
+- table representations disagree for 'Exponent of NSAID on CLᵇ'; source reconciliation required
+- table representations disagree for 'Exponent of male sex on CLᵇ'; source reconciliation required
+- table representations disagree for 'VP (L)ª'; source reconciliation required
+- table representations disagree for 'Power of body weight on VP'; source reconciliation required
+- table representations disagree for 'Intercompartmental CL (L/h)'; source reconciliation required
+- table representations disagree for 'Bioavailability of SC formulationª'; source reconciliation required
+- table representations disagree for 'Exponent of JIA on bioavailability'; source reconciliation required
+- table representations disagree for 'Power of body weight on bioavailability'; source reconciliation required
+- table representations disagree for 'Power of age on bioavailability'; source reconciliation required
 - unit_dimension_mismatch: 'KA (L/h)' → Q49 (unit '[length] ** 3 / [time]' vs ontology '1 / [time]') — route to review
-- unit_dimension_mismatch: 'VC (L) a' → Q63 (unit '[luminosity] / [length] ** 2' vs ontology '[length] ** 3') — route to review
-- dropped unlinked row (NIL): 'Power of age on VC' — extend the ontology if this is a real PK parameter (source ['jcph1797-tbl-0002:row6:col1', 'jcph1797-tbl-0002:row6:col2'])
-- unit_dimension_mismatch: 'CL (L/h) a' → Q22 (unit '[luminosity] / [length] ** 2' vs ontology '[length] ** 3 / [time]') — route to review
-- unit_dimension_mismatch: 'VP (L) a' → Q64 (unit '[luminosity] / [length] ** 2' vs ontology '[length] ** 3') — route to review
-- dropped unlinked row (NIL): 'Minimum value of the objective function = 65 061.705' — extend the ontology if this is a real PK parameter (source ['jcph1797-tbl-0002:row27:col1', 'jcph1797-tbl-0002:row27:col2'])
-- covariate effect for Q900 has no base parameter row (kept as unattached equation-variable)
-- covariate effect for Q314 has no base parameter row (kept as unattached equation-variable)
+- covariate level 'Power of age on VC' → Q900:power_of_age_on_vc = 23.4 (power on the model)
+- covariate level 'Exponent of NSAID on CLᵇ' → Q900:exponent_of_nsaid_on_cl = 12.5 (power on Q22)
+- dropped duplicate Q22 ('Intercompartmental CL (L/h)', value '7.25') — already have one for this compound
+- NIL: refused to back-fill base 'equation variable' from footnote/prose loose number None (source ['jcph1797-tbl-0002:footnote']); the table cell was unparseable — needs review
+- covariate effect for Q23 has no base parameter row (kept as unattached equation-variable)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=abatacept
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- structure disagreement: deterministic 2C vs LLM 3C — review compartment count
 - status held at route_to_review — not promoted
 - molar mass: none found for 'abatacept' — its concentrations stay mass-only
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- unparsed cell jcph1797-tbl-0002:row2:col5 = '74.9%'
-- unparsed cell jcph1797-tbl-0002:row5:col5 = '61.5%'
-- unparsed cell jcph1797-tbl-0002:row11:col5 = '14.3%'
-- unparsed cell jcph1797-tbl-0002:row16:col5 = '54.7%'
-- unparsed cell jcph1797-tbl-0002:row20:col5 = '49.2%'
-- unparsed cell jcph1797-tbl-0002:row25:col5 = '12.3%'
-- unparsed cell jcph1797-tbl-0002:row26:col5 = '12.3%'
+- table Gandhi_2021_table_p5_1: conflicting_units
+- table jcph1797-tbl-0002: representations disagree; selected evidence retained, not merged
 - LLM selected parameter table(s) 2
 
 ## Validation
@@ -144,17 +154,19 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 8 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | fail | [luminosity] / [length] ** 2 | Units | not captured | not captured | ['jcph1797-tbl-0002:row8:col1', 'jcph1797-tbl-0002:row8:col2'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['jcph1797-tbl-0002:row19:col1', 'jcph1797-tbl-0002:row19:col2'] |
-| C5_dimension_Q49 | fail | [length] ** 3 / [time] | L/h | not captured | not captured | ['jcph1797-tbl-0002:row2:col1', 'jcph1797-tbl-0002:row2:col2'] |
-| C5_dimension_Q63 | fail | [luminosity] / [length] ** 2 | Units | not captured | not captured | ['jcph1797-tbl-0002:row4:col1', 'jcph1797-tbl-0002:row4:col2'] |
-| C5_dimension_Q64 | fail | [luminosity] / [length] ** 2 | Units | not captured | not captured | ['jcph1797-tbl-0002:row16:col1', 'jcph1797-tbl-0002:row16:col2'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 1.36 | not captured | not captured | ['jcph1797-tbl-0002:row8:col1', 'jcph1797-tbl-0002:row8:col2'] |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Gandhi_2021_table_p5_1:row4:col1', 'Gandhi_2021_table_p5_1:row4:col2'] |
+| C5_dimension_Q49 | fail | [length] ** 3 / [time] | L/h | not captured | not captured | ['Gandhi_2021_table_p5_1:row0:col1', 'Gandhi_2021_table_p5_1:row0:col2'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Gandhi_2021_table_p5_1:row1:col1', 'Gandhi_2021_table_p5_1:row1:col2'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Gandhi_2021_table_p5_1:row11:col1', 'Gandhi_2021_table_p5_1:row11:col2'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 1.36 | not captured | not captured | ['Gandhi_2021_table_p5_1:row4:col1', 'Gandhi_2021_table_p5_1:row4:col2'] |
+| C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 1.36 L/h | not captured | not captured | ['Gandhi_2021_table_p5_1:row4:col1', 'Gandhi_2021_table_p5_1:row4:col2'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 1.57 L | not captured | not captured | ['Gandhi_2021_table_p5_1:row1:col1', 'Gandhi_2021_table_p5_1:row1:col2'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 3.71 L | not captured | not captured | ['Gandhi_2021_table_p5_1:row11:col1', 'Gandhi_2021_table_p5_1:row11:col2'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -163,7 +175,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_abatacept/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Gandhi_2021` / `Gandhi_2021::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_abatacept/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Gandhi_2021` / `Gandhi_2021::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -179,4 +191,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 23:32 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 00:18 UTC</sub>

@@ -34,7 +34,7 @@ Folic acid, a form of vitamin B9, is used to treat anaemias such as macrocytic a
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Crider_2019_reference](drugs/drug_folic_acid/FolicAcid_Crider2019_reference.md) | — | general linear (no model) | 0 | Crider KS et al., Systematic Review and Bayesian Meta-ana…, Nutrients (2019) | [10.3390/nu11010071](https://doi.org/10.3390/nu11010071) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Crider_2019_reference](drugs/drug_folic_acid/FolicAcid_Crider2019_reference.md) | — | general linear (no model) | 0 | Crider KS et al., Systematic Review and Bayesian Meta-ana…, Nutrients (2019) | [10.3390/nu11010071](https://doi.org/10.3390/nu11010071) |
 
 ## Pharmacogenomics (PGx)
 
@@ -51,6 +51,28 @@ Folic acid, a form of vitamin B9, is used to treat anaemias such as macrocytic a
 <summary>PGx field definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=folic_acid).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` transport, `ABCG2` substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` transport | PGx paper |
+| absorption | liver | `ABCB1` transport, `ABCG2` substrate | DrugBank actor |
+| absorption | mammary gland | `ABCG2` substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` transport | PGx paper |
+| absorption | small intestine | `ABCB1` transport, `ABCG2` substrate | DrugBank actor |
+| absorption | testis | `ABCB1` transport, `ABCG2` substrate | DrugBank actor |
+| metabolism | liver | `SLCO1B1` transport | PGx paper |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | `ABCC4` inhibitor, `SLC22A6` inhibitor | DrugBank actor |
+| excretion | liver | `ABCC3` substrate, `ABCC4` inhibitor | DrugBank actor |
+| excretion | mammary gland | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | small intestine | `ABCC3` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ABCC11 (substrate), DHFR (substrate), FOLR1 (binder), FOLR2 (binder), FOLR3 (binder), GGH (substrate), MTHFR (safety_allele), MTHFR (substrate), SLC19A1 (modulator), SLC25A32 (substrate), SLC46A1 (modulator), SLC46A1 (substrate).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

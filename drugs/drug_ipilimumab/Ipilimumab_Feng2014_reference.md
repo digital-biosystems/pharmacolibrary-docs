@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;ipilimumab&quot;,&quot;href&quot;:&quot;drugs/drug_ipilimumab/&quot;},{&quot;label&quot;:&quot;Feng_2014 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ipilimumab_Hu2024_reference&quot;,&quot;label&quot;:&quot;Hu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ipilimumab/Ipilimumab_Hu2024_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ipilimumab_Leven2019_reference&quot;,&quot;label&quot;:&quot;Leven_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ipilimumab/Ipilimumab_Leven2019_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ipilimumab_Shang2022_reference&quot;,&quot;label&quot;:&quot;Shang_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ipilimumab/Ipilimumab_Shang2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ipilimumab_van2019_reference&quot;,&quot;label&quot;:&quot;van_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ipilimumab/Ipilimumab_van2019_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ipilimumab_Sanghavi2020_reference&quot;,&quot;label&quot;:&quot;Sanghavi_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ipilimumab/Ipilimumab_Sanghavi2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ipilimumab_van2019_reference&quot;,&quot;label&quot;:&quot;van_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ipilimumab/Ipilimumab_van2019_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ipilimumab_Shang2022_reference&quot;,&quot;label&quot;:&quot;Shang_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ipilimumab/Ipilimumab_Shang2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,9 +17,9 @@
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's terminal half-life (model/paper ratio 24.5).**
+**This paper's disposition core is incomplete; qb has no unit.**
 
-Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — ipilimumab: CL 0.015 l h−1, V1 4.15 l, Q 0.0411 l h−1, V2 3.11 l, Vnorm 0.708 L/kg.
+A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Leven_2019) cannot stand in for this paper's evidence. Without a unit the value cannot be converted, so the model cannot use it. Extracted — ipilimumab: CLR 0.015 l h−1, Vnorm 4.15 l, Q 0.0411 l h−1, Qb 0.642, V 6 L.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of clbw: this record has none, the second reading 0.642; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -29,9 +29,9 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 Feng Y et al., Model-based clinical pharmacology profi…, British journal of clinical… (2014)
   ·  DOI: [10.1111/bcp.12323](https://doi.org/10.1111/bcp.12323)
 
-<div class="pk-model-meta" hidden drug="ipilimumab" model-id="Ipilimumab_Feng2014_reference" status="needs_review" stale="false" population="patients with unresectable stage III or IV melanoma" measured-compound="ipilimumab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="ipilimumab" model-id="Ipilimumab_Feng2014_reference" status="needs_review" stale="false" population="patients with advanced melanoma" measured-compound="ipilimumab" parameterization="mechanistic" topology="1C"></div>
 
-**Model structure:** 2-compartment; no model was built for this record.  
+**Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
@@ -41,11 +41,11 @@ Feng Y et al., Model-based clinical pharmacology profi…, British journal of cl
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CLREF (l h−1) | `Q22` · CL | 0.0150 | l h−1 | 4.166666666666667e-09 | [l] / [h] | not captured | llm (0.6) | tbl2:row2:col1 | — | not captured |
-| VcREF (l) | `Q63` · V1 | 4.15 | l | 0.00415 | [l] | not captured | llm (0.6) | tbl2:row3:col1 | — | not captured |
+| CLREF (l h−1) | `Q26` · CLR | 0.0150 | l h−1 | 4.166666666666667e-09 | [l] / [h] | not captured | llm (0.6) | tbl2:row2:col1 | — | not captured |
+| VcREF (l) | `Q352` · Vnorm | 4.15 | l | 0.00415 | [l] | not captured | llm (0.6) | tbl2:row3:col1 | — | not captured |
 | QREF (l h−1) | `Q30` · Q | 0.0411 | l h−1 | 1.1416666666666666e-08 | [l] / [h] | not captured | llm (0.6) | tbl2:row4:col1 | — | not captured |
-| VpREF (l) | `Q64` · V2 | 3.11 | l | 0.00311 | [l] | not captured | llm (0.6) | tbl2:row5:col1 | — | not captured |
-| VcBW | `Q352` · Vnorm | 0.708 | L/kg | 0.04956 | L | not captured | llm (0.6) | tbl2:row7:col1 | — | not captured |
+| CLBW | `Q54` · Qb | 0.642 | not captured | not captured | not captured | not captured | llm (0.6) | tbl2:row6:col1 | — | not captured |
+| volume of distribution | `Q61` · V | 6.0 | L | 0.006 | L | not captured | review_gapfill (0.7) | Leven_2019:review | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -58,23 +58,27 @@ Feng Y et al., Model-based clinical pharmacology profi…, British journal of cl
 - table section iiv: 'ω2CL' routed out of structural estimates ('Inter-individual variability model parameters')
 - table section residual_error: 'Proportional error (%)' routed out of structural estimates ('Residual error model parameters')
 - table section residual_error: 'Additive error (μg ml−1)' routed out of structural estimates ('Residual error model parameters')
-- dropped duplicate Q22 ('CLBW', value '0.642') — already have one for this compound
+- table representations disagree for 'CLREF (l h−1)'; source reconciliation required
+- table representations disagree for 'VcREF (l)'; source reconciliation required
+- table representations disagree for 'QREF (l h−1)'; source reconciliation required
+- table representations disagree for 'VpREF (l)'; source reconciliation required
+- table representations disagree for 'CLBW'; source reconciliation required
+- table representations disagree for 'VcBW'; source reconciliation required
+- table representations disagree for 'CLLDH'; source reconciliation required
+- dropped unlinked row (NIL): 'VpREF (l)' — extend the ontology if this is a real PK parameter (source ['tbl2:row5:col1'])
+- dropped unlinked row (NIL): 'VcBW' — extend the ontology if this is a real PK parameter (source ['tbl2:row7:col1'])
 - dropped unlinked row (NIL): 'CLLDH' — extend the ontology if this is a real PK parameter (source ['tbl2:row8:col1'])
-- implicit units: 'VcBW' → L/kg (from the popPK convention: 'The paper excerpt gives no unit. VcBW denotes central volume normalized by body weight, so a volume-per-body-weight unit')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=ipilimumab
+- structure disagreement: deterministic 1C vs LLM 3C — review compartment count
+- status held at route_to_review — not promoted
 - molar mass: none found for 'ipilimumab' — its concentrations stay mass-only
+- gap-filled Q61 (V) from Leven_2019's review values (primary lacked it)
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- unparsed cell tbl2:row2:col2 = '0.0143, 0.0156'
-- unparsed cell tbl2:row3:col2 = '4.08, 4.26'
-- unparsed cell tbl2:row4:col2 = '0.0378, 0.0517'
-- unparsed cell tbl2:row5:col2 = '2.95, 3.46'
-- unparsed cell tbl2:row6:col2 = '0.423, 0.819'
-- unparsed cell tbl2:row7:col2 = '0.616, 0.832'
-- unparsed cell tbl2:row8:col2 = '0.653, 1.49'
-- unparsed cell tbl2:row10:col2 = '0.0965, 0.161'
-- unparsed cell tbl2:row14:col2 = '13.7, 16.6'
-- unparsed cell tbl2:row15:col2 = '0.005, 0.510'
+- table tbl2: missing_label
+- table tbl2: unparsed_numeric_cell
+- table tbl2: representations disagree; selected evidence retained, not merged
 - LLM selected parameter table(s) 2
 
 ## Validation
@@ -108,21 +112,15 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C1_half_life_alpha | pass | 27.4 | 27.94 | 1.0197 | 0.25 | reported t½α |
-| C1_half_life_beta | fail | 14.7 | 359.993 | 24.4893 | 0.25 | reported t½β |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tbl2:row2:col1'] |
+| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q26 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tbl2:row2:col1'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tbl2:row4:col1'] |
-| C5_dimension_Q352 | pass | [length] ** 3 | not captured | not captured | not captured | ['tbl2:row7:col1'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['tbl2:row3:col1'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['tbl2:row5:col1'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.015 | not captured | not captured | ['tbl2:row2:col1'] |
+| C5_dimension_Q352 | pass | [length] ** 3 | not captured | not captured | not captured | ['tbl2:row3:col1'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Leven_2019:review'] |
+| C5_unit_missing_Q54 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['tbl2:row6:col1'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.015 L/h | not captured | not captured | ['tbl2:row2:col1'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 4.15 L | not captured | not captured | ['tbl2:row3:col1'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 3.11 L | not captured | not captured | ['tbl2:row5:col1'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 6 L | not captured | not captured | ['Leven_2019:review'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -131,7 +129,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ipilimumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Feng_2014` / `Feng_2014::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ipilimumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Feng_2014` / `Feng_2014::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -157,4 +155,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 12:50 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 19:35 UTC</sub>

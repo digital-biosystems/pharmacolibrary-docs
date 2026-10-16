@@ -2,8 +2,8 @@
  {
   "key": "Emax",
   "label": "Effect term Emax",
-  "unit": "% change from pretreatment",
-  "scale": 1.0,
+  "unit": "%",
+  "scale": 100.0,
   "min": 0.2,
   "max": 3,
   "step": 0.05,

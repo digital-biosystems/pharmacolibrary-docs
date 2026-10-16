@@ -26,25 +26,40 @@ Mibefradil is a calcium channel blocker that was used to treat high blood pressu
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 04:13 | 41:24 | 0/0/2 | 4/1/0 | 0/0/0 | 421,485/115,151 | ollama / qwen3.8:27b-mtp-q8_0 | 10 | 1/5 | 9/1 | 0 |
+| 2026-10-13 13:13 | 6:48 | 0/0/2 | 0/1/0 | 0/0/0 | 58,923/49,260 | einfracz / qwen3.8-27b | 10 | 2/8 | 9/1 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Welker_1998_reference](drugs/drug_mibefradil/Mibefradil_Welker1998_reference.md) | — | 1-compartment (no model) | 4 | Welker HA et al., Mibefradil pharmacokinetic and pharmaco…, International journal of cl… (1998) | — |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.214), gpt-oss:120b (not confirmed, agreement 0.231). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub><br><sub>route_to: `human_review`</sub> | [Welker_1998_2_reference](drugs/drug_mibefradil/Mibefradil_Welker1998v2_reference.md) | — | 1-compartment (no model) | 3 | Welker HA et al., Clinical pharmacokinetics of mibefradil, Clinical pharmacokinetics (1998) | [10.2165/00003088-199835060-00001](https://doi.org/10.2165/00003088-199835060-00001) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.364). Primary extraction retained.">cross-check: disputed</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Welker_1998_reference](drugs/drug_mibefradil/Mibefradil_Welker1998_reference.md) | — | 1-compartment (no model) | 4 | Welker HA et al., Mibefradil pharmacokinetic and pharmaco…, International journal of cl… (1998) | — |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2), gpt-oss:120b (not confirmed, agreement 0.231). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub><br><sub>route_to: `human_review`</sub> | [Welker_1998_2_reference](drugs/drug_mibefradil/Mibefradil_Welker1998v2_reference.md) | — | 1-compartment (no model) | 3 | Welker HA et al., Clinical pharmacokinetics of mibefradil, Clinical pharmacokinetics (1998) | [10.2165/00003088-199835060-00001](https://doi.org/10.2165/00003088-199835060-00001) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Chouabe_2000_HERG](drugs/drug_mibefradil/pd_Chouabe_2000_HERG.md) | HERG K+ channel current ← mibefradil · direct Emax (saturable) effect | — | Chouabe C et al., Effects of calcium channel blockers on…, Therapie (2000) | — |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Chouabe_2000_KvLQT1_IsK](drugs/drug_mibefradil/pd_Chouabe_2000_KvLQT1_IsK.md) | KvLQT1-IsK K+ channel current ← mibefradil · direct Emax (saturable) effect | — | Chouabe C et al., Effects of calcium channel blockers on…, Therapie (2000) | — |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Hoischen_1998_contraction_amplitude](drugs/drug_mibefradil/pd_Hoischen_1998_contraction_amplitude.md) | contraction amplitude ← mibefradil · direct Emax (saturable) effect | — | Hoischen S et al., T- and L-type Ca2+-channel antagonists…, Journal of cardiovascular p… (1998) | [10.1097/00005344-199808000-00022](https://doi.org/10.1097/00005344-199808000-00022) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Perchenet_2000_hKv1_5](drugs/drug_mibefradil/pd_Perchenet_2000_hKv1_5.md) | hKv1.5 current ← mibefradil · inhibition effect | — | Perchenet L et al., Characterization of mibefradil block of…, The Journal of pharmacology… (2000) | — |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Todorovic_1998_T_current](drugs/drug_mibefradil/pd_Todorovic_1998_T_current.md) | T-type Ca2+ current ← mibefradil · direct sigmoid Emax (Hill) effect | — | Todorovic SM et al., Pharmacological properties of T-type Ca…, Journal of neurophysiology (1998) | [10.1152/jn.1998.79.1.240](https://doi.org/10.1152/jn.1998.79.1.240) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Mullan_2017_Relative_Dilation](drugs/drug_mibefradil/pd_Mullan_2017_Relative_Dilation.md) | Relative Dilation ← mibefradil · direct sigmoid Emax (Hill) effect | — | Mullan B et al., T-type voltage-gated Ca2+ channels do n…, Pharmacology research & per… (2017) | [10.1002/prp2.320](https://doi.org/10.1002/prp2.320) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Mullan_2017_Relative_Dilation](drugs/drug_mibefradil/pd_Mullan_2017_Relative_Dilation.md) | Relative Dilation ← mibefradil · direct sigmoid Emax (Hill) effect | — | Mullan B et al., T-type voltage-gated Ca2+ channels do n…, Pharmacology research & per… (2017) | [10.1002/prp2.320](https://doi.org/10.1002/prp2.320) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=mibefradil).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | liver | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | testis | `ABCB1` inhibitor/substrate | DrugBank actor |
+| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
+| metabolism | kidney | `CYP3A5` inhibitor | DrugBank actor |
+| metabolism | liver | `CYP1A2` inhibitor, `CYP2D6` inhibitor, `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor, `CYP3A7` inhibitor | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor | DrugBank actor |
+| — | adrenal gland | `CYP11B1` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: CACNA1C (inhibitor), CACNA1D (inhibitor), CACNA1F (inhibitor), CACNA1G (inhibitor), CACNA1H (inhibitor), CACNA1I (inhibitor), CACNA1S (inhibitor), CACNB1 (inhibitor), CACNB2 (inhibitor), CACNB3 (inhibitor), CACNB4 (inhibitor), CYP11B2 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,7 +70,7 @@ Mibefradil is a calcium channel blocker that was used to treat high blood pressu
 ## Coverage
 
 - **PubMed hits:** 201 matched, 92 returned
-- **screened:** 2  ·  **relevant:** 2
+- **screened:** 7  ·  **relevant:** 2
 - **records:** 2  ·  extracted 0  ·  needs_review 2  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
@@ -68,7 +83,7 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | `Welker_1998_2.pdf` | Welker HA et al., Clinical pharmacokinetics of mibefradil, Clinical pharmacokinetics (1998) | popPK | 10 | [10.2165/00003088-199835060-00001](https://doi.org/10.2165/00003088-199835060-00001) | [9884814](https://pubmed.ncbi.nlm.nih.gov/9884814) | The text explicitly reports quantitative pharmacokinetic parameters for mibefradil, including clearance (5.7-7.5 L/h), volume of distribution (180 L), and half-life (22 hours). |
 | `Marsh_2006.pdf` | Marsh RE et al., Fractal michaelis-menten kinetics under…, Pharmaceutical research (2006) | popPK | 8 | [10.1007/s11095-006-9090-6](https://doi.org/10.1007/s11095-006-9090-6) | [17063399](https://pubmed.ncbi.nlm.nih.gov/17063399) | The paper describes a pharmacokinetic model for mibefradil in dogs, but the specific numeric parameter values are not present in the provided evidence text. |
 
-<sub>queue written 2026-10-07T03:40:58.350685+00:00</sub>
+<sub>queue written 2026-10-13T13:07:26.502461+00:00</sub>
 
 ## Screened and excluded
 

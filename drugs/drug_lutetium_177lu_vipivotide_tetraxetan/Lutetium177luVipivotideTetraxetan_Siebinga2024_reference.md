@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V10X&quot;,&quot;href&quot;:&quot;atc/V10X.md&quot;},{&quot;label&quot;:&quot;lutetium (177Lu) vipivotide tetraxetan&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_vipivotide_tetraxetan/&quot;},{&quot;label&quot;:&quot;Siebinga_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lutetium177luVipivotideTetraxetan_Shi2026_reference&quot;,&quot;label&quot;:&quot;Shi_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_vipivotide_tetraxetan/Lutetium177luVipivotideTetraxetan_Shi2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lutetium177luVipivotideTetraxetan_Siebinga2023_reference&quot;,&quot;label&quot;:&quot;Siebinga_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_vipivotide_tetraxetan/Lutetium177luVipivotideTetraxetan_Siebinga2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lutetium177luVipivotideTetraxetan_Shi2026_reference&quot;,&quot;label&quot;:&quot;Shi_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_vipivotide_tetraxetan/Lutetium177luVipivotideTetraxetan_Shi2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lutetium177luVipivotideTetraxetan_Siebinga2023_reference&quot;,&quot;label&quot;:&quot;Siebinga_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_vipivotide_tetraxetan/Lutetium177luVipivotideTetraxetan_Siebinga2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # lutetium (177Lu) vipivotide tetraxetan — `Lutetium177luVipivotideTetraxetan_Siebinga2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.333), gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-check: partial 1/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -17,97 +17,72 @@
 
 ### Reviewer guidance
 
-**The paper reports none of the model's key parameters.**
+**This paper's disposition core is incomplete.**
 
-No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
+A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Shi_2026) cannot stand in for this paper's evidence. Extracted — lutetium 177lu vipivotide tetraxetan: V 10.3 L, CL 1.62 L/h.
 
-Independently confirmed by `gpt-oss:120b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has lutetium_177lu_vipivotide_tetraxetan, the second reading unknown; it also differs on 3 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
-
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:38:35.840671+00:00) predates the upstream re-run (2026-10-07 17:24:31.469590+00:00). Current validate status: `rejected`.
 
 ## Citation
 Siebinga H et al., Quantification of biochemical PSA dynam…, EJNMMI physics (2024)
   ·  DOI: [10.1186/s40658-024-00642-2](https://doi.org/10.1186/s40658-024-00642-2)
 
-<div class="pk-model-meta" hidden drug="lutetium (177Lu) vipivotide tetraxetan" model-id="Lutetium177luVipivotideTetraxetan_Siebinga2024_reference" status="rejected" stale="true" population="patients with metastatic castration-resistant prostate cancer" measured-compound="lutetium_177lu_vipivotide_tetraxetan" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="lutetium (177Lu) vipivotide tetraxetan" model-id="Lutetium177luVipivotideTetraxetan_Siebinga2024_reference" status="needs_review" stale="false" population="adults with metastatic castration-resistant prostate cancer (mCRPC)" measured-compound="lutetium_177lu_vipivotide_tetraxetan" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 0 extracted.
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
-_No resolved parameters._
+| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
+|---|---|---|---|---|---|---|---|---|---|---|
+| V1 (L) | `Q61` · V | 10.3 | L | 0.0103 | [l] | not captured | exact (1.0) | Siebinga_2024_table_p12_1:row16:col1 | — | not captured |
+| CL, L/h (%) | `Q22` · CL | 1.62 | L/h | 4.5000000000000003e-07 | L/h | not captured | review_gapfill (0.7) | Shi_2026:review | — | not captured |
+
+<details class="legend">
+<summary>Parameter definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped value-less row: 'k10 (h−1)' (captured trailing unit 'h−1' for child rows)
-- dropped value-less row: 'k12 (h−1)' (captured trailing unit 'h−1' for child rows)
-- dropped value-less row: 'Tumor volume on k12a'
-- dropped value-less row: 'k21 (h−1)' (captured trailing unit 'h−1' for child rows)
-- dropped value-less row: 'k13 (h−1)' (captured trailing unit 'h−1' for child rows)
-- dropped value-less row: 'k31 (h−1)' (captured trailing unit 'h−1' for child rows)
-- dropped value-less row: 'k14 (h−1)' (captured trailing unit 'h−1' for child rows)
-- dropped value-less row: 'Tumor volume on k14a'
-- dropped value-less row: 'Cycle 2 on k14b'
-- dropped value-less row: 'Cycle 3 on k14b'
-- dropped value-less row: 'Cycle 4–7 on k14b'
-- dropped value-less row: 'k41 (h−1)' (captured trailing unit 'h−1' for child rows)
-- dropped value-less row: 'k15 (h−1)' (captured trailing unit 'h−1' for child rows)
-- dropped value-less row: 'k51 (h−1)' (captured trailing unit 'h−1' for child rows)
-- dropped value-less row: 'BMAX compartment 2 (MBq)' (captured trailing unit 'MBq' for child rows)
-- dropped value-less row: 'k10 (CV%)' (captured trailing unit 'CV%' for child rows)
-- dropped value-less row: 'k13 (CV%)' (captured trailing unit 'CV%' for child rows)
-- dropped value-less row: 'k14 (CV%)' (captured trailing unit 'CV%' for child rows)
-- dropped value-less row: 'k15 (CV%)' (captured trailing unit 'CV%' for child rows)
-- dropped value-less row: 'BMAX compartment 2 (CV%)' (captured trailing unit 'CV%' for child rows)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=lutetium_177lu_vipivotide_tetraxetan
-- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
+- 1C volume normalization: Q63→Q61 (single-compartment model has no central/peripheral split; 'V1 (L)' is the general volume)
+- gap-filled Q22 (CL) from Shi_2026's review values (primary lacked it)
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- unparsed cell Tab2:row2:col1 = '0.253 (5.2%)'
-- unparsed cell Tab2:row3:col1 = '0.0105 (9.2%)'
-- unparsed cell Tab2:row4:col1 = '0.0910 (30.0%)'
-- unparsed cell Tab2:row5:col1 = '0.0629 (6.3%)'
-- unparsed cell Tab2:row6:col1 = '0.0321 (6.9%)'
-- unparsed cell Tab2:row7:col1 = '0.0625 (5.4%)'
-- unparsed cell Tab2:row8:col1 = '0.00967 (9.9%)'
-- unparsed cell Tab2:row9:col1 = '1.08 (7.5%)'
-- unparsed cell Tab2:row10:col1 = '0.731 (8.1%)'
-- unparsed cell Tab2:row11:col1 = '0.498 (11.3%)'
-- unparsed cell Tab2:row12:col1 = '0.436 (11.6%)'
-- unparsed cell Tab2:row13:col1 = '0.0150 (3.4%)'
-- unparsed cell Tab2:row14:col1 = '0.275 (6.8%)'
-- unparsed cell Tab2:row15:col1 = '0.0247 (6.5%)'
-- unparsed cell Tab2:row16:col1 = '134 (15.5%)'
-- unparsed cell Tab2:row19:col1 = '33.1 (18.5%)'
-- unparsed cell Tab2:row20:col1 = '33.4 (22.2%)'
-- unparsed cell Tab2:row21:col1 = '63.4 (18.9%)'
-- unparsed cell Tab2:row22:col1 = '29.1 (35.5%)'
-- unparsed cell Tab2:row23:col1 = '67.0 (36.1%)'
-- unparsed cell Tab2:row25:col1 = '37.8 (16.5%)'
-- unparsed cell Tab2:row27:col1 = '55.5 (29.0%)'
-- unparsed cell Tab2:row28:col1 = '9.57 (16.8%)'
-- unparsed cell Tab2:row29:col1 = '39.7 (8.6%)'
-- unparsed cell Tab2:row30:col1 = '31.9 (8.5%)'
-- unparsed cell Tab2:row31:col1 = '32.7 (9.7%)'
+- table Siebinga_2024_table_p12_1: unbound_uncertainty
+- table Siebinga_2024_table_p12_1: unparsed_numeric_cell
 - LLM selected parameter table(s) 2
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  1 of 2 readers agree  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | primary re-run | 0.333 (2/6 fields) | 4 |
 | `gpt-oss:120b` | confirmed | 1.0 (4/4 fields) | none |
 
-_All readers agree on the compared fields of this record._
+<details><summary>4 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[v1]` | not captured | 10.3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` | not captured | 10.3 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | lutetium_177lu_vipivotide_tetraxetan | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | lutetium_177lu_vipivotide_tetraxetan | unknown | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -119,9 +94,15 @@ _All readers agree on the compared fields of this record._
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
-| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
+| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Shi_2026:review'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Siebinga_2024_table_p12_1:row16:col1'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 1.62 | not captured | not captured | ['Shi_2026:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 1.62 L/h | not captured | not captured | ['Shi_2026:review'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 10.3 L | not captured | not captured | ['Siebinga_2024_table_p12_1:row16:col1'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -130,14 +111,24 @@ _All readers agree on the compared fields of this record._
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_lutetium_177lu_vipivotide_tetraxetan/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Siebinga_2024` / `Siebinga_2024::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_lutetium_177lu_vipivotide_tetraxetan/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Siebinga_2024` / `Siebinga_2024::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -146,4 +137,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 17:24 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 19:57 UTC</sub>

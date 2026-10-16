@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;levetiracetam&quot;,&quot;href&quot;:&quot;drugs/drug_levetiracetam/&quot;},{&quot;label&quot;:&quot;Schoemaker_2018 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levetiracetam_Li2023_base&quot;,&quot;label&quot;:&quot;Li_2023_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levetiracetam/Levetiracetam_Li2023_base.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Levetiracetam_Schoemaker2018_reference&quot;,&quot;label&quot;:&quot;Schoemaker_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levetiracetam/Levetiracetam_Schoemaker2018_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Levetiracetam_Sharpe2024_reference&quot;,&quot;label&quot;:&quot;Sharpe_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levetiracetam/Levetiracetam_Sharpe2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levetiracetam_Karatza2020_reference&quot;,&quot;label&quot;:&quot;Karatza_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levetiracetam/Levetiracetam_Karatza2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Levetiracetam_Li2023_base&quot;,&quot;label&quot;:&quot;Li_2023_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levetiracetam/Levetiracetam_Li2023_base.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Levetiracetam_Li2023_final&quot;,&quot;label&quot;:&quot;Li_2023_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levetiracetam/Levetiracetam_Li2023_final.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Levetiracetam_Onos2022_reference&quot;,&quot;label&quot;:&quot;Onos_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levetiracetam/Levetiracetam_Onos2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Levetiracetam_Sharpe2024_reference&quot;,&quot;label&quot;:&quot;Sharpe_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levetiracetam/Levetiracetam_Sharpe2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Schoemaker_2018_daily_seizure_counts&quot;,&quot;label&quot;:&quot;Schoemaker_2018 \u00b7 daily seizure counts&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_levetiracetam/pd_Schoemaker_2018_daily_seizure_counts.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # levetiracetam — `Levetiracetam_Schoemaker2018_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.571). Primary extraction retained.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.571). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -13,34 +13,36 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** Model and browser simulation available in **Models** and **Simulation**.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**This paper's disposition core is incomplete.**
+
+A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Onos_2022) cannot stand in for this paper's evidence. Extracted — levetiracetam: ? 1.1, ? 0.16, ? 3.1, ? 3.5, ? 2.2, ? 0.44, ? 0.4, ? -1.09, … (+12).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl/f: this record has 3.38, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:38:27.629100+00:00) predates the upstream re-run (2026-10-07 07:04:44.222909+00:00). Current validate status: `extracted`.
-
 ## Citation
 Schoemaker R et al., Extrapolation of a Brivaracetam Exposur…, Clinical pharmacokinetics (2018)
   ·  DOI: [10.1007/s40262-017-0597-2](https://doi.org/10.1007/s40262-017-0597-2)
 
-<div class="pk-model-meta" hidden drug="levetiracetam" model-id="Levetiracetam_Schoemaker2018_reference" status="extracted" stale="true" population="adults and children with focal seizures" measured-compound="levetiracetam" parameterization="apparent_wrt_Fm" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="levetiracetam" model-id="Levetiracetam_Schoemaker2018_reference" status="needs_review" stale="false" population="adults and children with focal seizures" measured-compound="levetiracetam" parameterization="apparent_wrt_Fm" topology="1C"></div>
 
-**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.
 
 **Parameterization:** CL/F, V/F — apparent_wrt_Fm, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F, L/h | `Q27` · CL/F | 3.38 | L/h | 9.388888888888888e-07 | L/h | not captured | review_gapfill (0.7) | Schoemaker_2018:review | — | not captured |
-| V/F, L | `Q76` · V/F | 48.7 | L | 0.04870000000000001 | L | not captured | review_gapfill (0.7) | Schoemaker_2018:review | — | not captured |
+| CL/F (L/h/kg) a | `Q27` · CL/F | 0.36 | L/h/kg | 7e-06 | L/h | not captured | review_gapfill (0.7) | Onos_2022:review | — | not captured |
+| Vd/F (L/kg) a | `Q76` · V/F | 1.33 | L/kg | 0.0931 | L | not captured | review_gapfill (0.7) | Onos_2022:review | — | not captured |
 | K a, 1/h | `Q49` · kabs | 2.98 | 1/h | 0.0008277777777777778 | 1/h | not captured | review_gapfill (0.7) | Schoemaker_2018:review | — | not captured |
 
 <details class="legend">
@@ -82,10 +84,6 @@ Schoemaker R et al., Extrapolation of a Brivaracetam Exposur…, Clinical pharma
 
 ## Departures & gaps
 
-**Deviations:**
-- `defaulted_parameters`: ['Tlag']
-- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
-
 **Interpretation flags:**
 - control_stream: no THETA→param binding found in $PK — route_to_review
 - $THETA(1) has no $PK binding — index may be misassigned
@@ -105,8 +103,8 @@ Schoemaker R et al., Extrapolation of a Brivaracetam Exposur…, Clinical pharma
 - apparent-ness: parameterization=apparent_wrt_Fm (metabolite model)
 - theta_crosscheck: table present but its labels did not align to bound THETAs (skipped)
 - status held at route_to_review — not promoted
-- gap-filled Q27 (CL/F) from Schoemaker_2018's review values (primary lacked it)
-- gap-filled Q76 (V/F) from Schoemaker_2018's review values (primary lacked it)
+- gap-filled Q27 (CL/F) from Onos_2022's review values (primary lacked it)
+- gap-filled Q76 (V/F) from Onos_2022's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - gap-filled Q49 (kabs) from Schoemaker_2018's review values (primary lacked it)
@@ -140,28 +138,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Schoemaker_2018:review'] |
+| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Onos_2022:review'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Schoemaker_2018:review'] |
-| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Schoemaker_2018:review'] |
+| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Onos_2022:review'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 3.38 L/h | not captured | not captured | ['Schoemaker_2018:review'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 48.7 L | not captured | not captured | ['Schoemaker_2018:review'] |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
-| T3_output_variable | not captured | pass | C_central (measured=levetiracetam) | central.C | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 25.2 L/h | not captured | not captured | ['Onos_2022:review'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 93.1 L | not captured | not captured | ['Onos_2022:review'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -170,10 +155,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_levetiracetam/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Schoemaker_2018` / `Schoemaker_2018::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_levetiracetam/models/modelica/Levetiracetam_Schoemaker2018_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_levetiracetam/models/modelica/Levetiracetam_Schoemaker2018_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_levetiracetam/models/modelica/Levetiracetam_Schoemaker2018_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_levetiracetam/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Schoemaker_2018` / `Schoemaker_2018::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -183,25 +165,20 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_levetiracetam/Levetiracetam_Schoemaker2018_reference/Levetiracetam_Schoemaker2018_reference_modelica.zip" download>Levetiracetam_Schoemaker2018_reference_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_levetiracetam/Levetiracetam_Schoemaker2018_reference/Levetiracetam_Schoemaker2018_reference_fmi.zip" download>Levetiracetam_Schoemaker2018_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><a href="drugs/drug_levetiracetam/Levetiracetam_Schoemaker2018_reference/Levetiracetam_Schoemaker2018_reference_fmi.zip" download>Levetiracetam_Schoemaker2018_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_levetiracetam/Levetiracetam_Schoemaker2018_reference/Levetiracetam_Schoemaker2018_reference_matlab.zip" download>Levetiracetam_Schoemaker2018_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_levetiracetam/Levetiracetam_Schoemaker2018_reference/Levetiracetam_Schoemaker2018_reference_matlab_simbio.zip" download>Levetiracetam_Schoemaker2018_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_levetiracetam/Levetiracetam_Schoemaker2018_reference/Levetiracetam_Schoemaker2018_reference_sbml.zip" download>Levetiracetam_Schoemaker2018_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_levetiracetam/Levetiracetam_Schoemaker2018_reference/Levetiracetam_Schoemaker2018_reference_cellml.zip" download>Levetiracetam_Schoemaker2018_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_levetiracetam/Levetiracetam_Schoemaker2018_reference/Levetiracetam_Schoemaker2018_reference.svg" alt="Levetiracetam_Schoemaker2018_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 1500 mg, single dose, first-order absorption (ka 2.98 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 1500 mg oral (N03AX14) (defined daily dose)._
-
-<dbs-fmusim paramsurl="drugs/drug_levetiracetam/Levetiracetam_Schoemaker2018_reference/Levetiracetam_Schoemaker2018_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_levetiracetam/Levetiracetam_Schoemaker2018_reference/Levetiracetam_Schoemaker2018_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C_enteral` · parameters `Levetiracetam_Schoemaker2018_reference_params.json` · controls `Levetiracetam_Schoemaker2018_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 07:04 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 19:22 UTC</sub>

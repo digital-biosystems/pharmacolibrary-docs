@@ -16,13 +16,13 @@
 
 ### Reviewer guidance
 
-**The pyrimethamine AUC∞ is dimensionally inconsistent: 2844 μg/day/liter is not an area under the concentration-time curve, so the record was rejected.**
+**C5 dimension mismatch on a structural parameter.**
 
-The record reports AUC∞ for pyrimethamine as 2844 μg/day/liter and for sulfadoxine as 1460 mg/day/liter; a unit of concentration per day is a dimension mismatch for an AUC extrapolated to infinity, which failed the dimensional check on a structural parameter. The record was also built from the abstract alone, so reported summary statistics stood in for a fitted model. The metabolite N(4)-acetylsulfadoxine is formed from sulfadoxine with no compartment count given, and the link between sulfadoxine and its metabolite is of unknown kind. Extracted — pyrimethamine: AUC∞ 2.84e+03 μg/day/liter, V 1.33e+03 liters; sulfadoxine: AUC∞ 1.46e+03 mg/day/liter, Frel 32 %.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — pyrimethamine: AUC 4.92e+03 μg/day/liter, V 1.33e+03 liters.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of auc(0-inf) double dose pyr: this record has none, the second reading 4915; it also differs on 6 more fields. That field does not shape the model.
 
-<sub>reviewed by glm-5.3-flash</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 > **Dose compound ≠ measured compound:** dosed `sulfadoxine-pyrimethamine`, measured `pyrimethamine`.
 
@@ -30,10 +30,10 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Salman S et al., Pharmacokinetic properties of conventio…, Antimicrobial agents and ch… (2011)
   ·  DOI: [10.1128/AAC.01075-10](https://doi.org/10.1128/AAC.01075-10)
 
-<div class="pk-model-meta" hidden drug="pyrimethamine" model-id="Pyrimethamine_Salman2011_reference" status="rejected" stale="false" population="Papua New Guinean infants aged 2 to 13 months" measured-compound="pyrimethamine" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="pyrimethamine" model-id="Pyrimethamine_Salman2011_reference" status="rejected" stale="false" population="Papua New Guinean infants" measured-compound="pyrimethamine" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
-**Parameters:** 4 extracted.
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -42,9 +42,7 @@ Salman S et al., Pharmacokinetic properties of conventio…, Antimicrobial agent
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| AUC(0-∞) PYR conventional dose | `Q17` · AUC∞ | 2844 | μg/day/liter | not captured | [µg] / [[d] · [l]] | not captured | llm_corrected (0.6) | Salman_2011:abstract | — | not captured |
-| AUC(0-∞) SDX conventional dose | `Q17` · AUC∞ | 1460 | mg/day/liter | not captured | [mg] / [[d] · [l]] | not captured | llm_corrected (0.6) | Salman_2011:abstract | — | not captured |
-| reduction in SDX relative bioavailability with the double dose | `Q87` · Frel | 32 | % | not captured | not captured | not captured | llm_confirmed (0.6) | Salman_2011:abstract | — | not captured |
+| AUC(0-∞) | `Q88` · AUC | 4915 | μg/day/liter | not captured | [µg] / [[d] · [l]] | not captured | exact (1.0) | Salman_2011:abstract, Salman_2011:abstract, Salman_2011:abstract, Salman_2011:abstract | — | not captured |
 | total volume of distribution | `Q61` · V | 1330.0 | liters | 1.33 | L | not captured | review_gapfill (0.7) | Ramharter_2019:review | — | not captured |
 
 <details class="legend">
@@ -55,22 +53,19 @@ Salman S et al., Pharmacokinetic properties of conventio…, Antimicrobial agent
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_mismatch: 'AUC(0-∞) PYR conventional dose' → Q17 (unit '[mass] / [time] / [length] ** 3' vs ontology '[mass] * [time] / [length] ** 3') — route to review
-- unit_dimension_mismatch: 'AUC(0-∞) SDX conventional dose' → Q17 (unit '[mass] / [time] / [length] ** 3' vs ontology '[mass] * [time] / [length] ** 3') — route to review
+- unit_dimension_mismatch: 'AUC(0-∞)' → Q88 (unit '[mass] / [time] / [length] ** 3' vs ontology '[mass] * [time] / [length] ** 3') — route to review
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=pyrimethamine
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
 - template fit: none — noncompartmental model — not a compartmental parent–metabolite model
 - status held at route_to_review — not promoted
-- row roles: per-genotype parameters — typical value from the reference group: AUC(0-∞) PYR conventional dose, AUC(0-∞) SDX conventional dose
-- row roles (LLM): model_class=noncompartmental; 5/5 row label(s) assigned, 0 linked by role; re-tagged pyrimethamine→sulfadoxine ×2
+- row roles (LLM): model_class=noncompartmental; 1/1 row label(s) assigned, 0 linked by role
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - gap-filled Q61 (V) from Ramharter_2019's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Salman_2011_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Salman_2011_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -105,11 +100,10 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q17 | fail | [mass] / [time] / [length] ** 3 | μg/day/liter | not captured | not captured | ['Salman_2011:abstract'] |
-| C5_dimension_Q17 | fail | [mass] / [time] / [length] ** 3 | mg/day/liter | not captured | not captured | ['Salman_2011:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Ramharter_2019:review'] |
+| C5_dimension_Q88 | fail | [mass] / [time] / [length] ** 3 | μg/day/liter | not captured | not captured | ['Salman_2011:abstract', 'Salman_2011:abstract', 'Salman_2011:abstract', 'Salman_2011:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q61 | pass | volume within physiological range | 1.33e+03 L | not captured | not captured | ['Ramharter_2019:review'] |
 
@@ -120,7 +114,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_pyrimethamine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Salman_2011` / `Salman_2011::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_pyrimethamine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Salman_2011` / `Salman_2011::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -136,4 +130,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 08:08 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 03:16 UTC</sub>

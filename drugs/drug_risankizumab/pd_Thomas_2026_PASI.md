@@ -1,8 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;risankizumab&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/&quot;},{&quot;label&quot;:&quot;Thomas_2026 \u00b7 PD Psoriasis Area and Severity Index (PASI)&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Risankizumab_RodrguezFernndez2022_reference&quot;,&quot;label&quot;:&quot;Rodr\u00edguez-Fern\u00e1ndez_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/Risankizumab_RodrguezFernndez2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Risankizumab_Khatri2019_chinese&quot;,&quot;label&quot;:&quot;Khatri_2019_chinese&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/Risankizumab_Khatri2019_chinese.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Risankizumab_Khatri2019_japanese&quot;,&quot;label&quot;:&quot;Khatri_2019_japanese&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/Risankizumab_Khatri2019_japanese.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Risankizumab_Khatri2019_risankizumab_1200_mg_iv&quot;,&quot;label&quot;:&quot;Khatri_2019_risankizumab_1200_mg_iv&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/Risankizumab_Khatri2019_risankizumab_1200_mg_iv.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Risankizumab_Khatri2019_white&quot;,&quot;label&quot;:&quot;Khatri_2019_white&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/Risankizumab_Khatri2019_white.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Risankizumab_Suleiman2019_reference&quot;,&quot;label&quot;:&quot;Suleiman_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/Risankizumab_Suleiman2019_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Risankizumab_Thomas2026_reference&quot;,&quot;label&quot;:&quot;Thomas_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/Risankizumab_Thomas2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;risankizumab&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/&quot;},{&quot;label&quot;:&quot;Thomas_2026 \u00b7 PD Psoriasis Area and Severity Index&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Risankizumab_RodrguezFernndez2022_reference&quot;,&quot;label&quot;:&quot;Rodr\u00edguez-Fern\u00e1ndez_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/Risankizumab_RodrguezFernndez2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Risankizumab_Thomas2026_reference&quot;,&quot;label&quot;:&quot;Thomas_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/Risankizumab_Thomas2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Risankizumab_Suleiman2019_reference&quot;,&quot;label&quot;:&quot;Suleiman_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/Risankizumab_Suleiman2019_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Khatri_2020_PASI100&quot;,&quot;label&quot;:&quot;Khatri_2020 \u00b7 PASI100&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/pd_Khatri_2020_PASI100.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Khatri_2020_PASI100_2&quot;,&quot;label&quot;:&quot;Khatri_2020 \u00b7 PASI100&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/pd_Khatri_2020_PASI100_2.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Khatri_2020_PASI75&quot;,&quot;label&quot;:&quot;Khatri_2020 \u00b7 PASI75&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/pd_Khatri_2020_PASI75.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Khatri_2020_PASI90&quot;,&quot;label&quot;:&quot;Khatri_2020 \u00b7 PASI90&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/pd_Khatri_2020_PASI90.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Khatri_2020_sPGA0_1&quot;,&quot;label&quot;:&quot;Khatri_2020 \u00b7 sPGA0/1&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/pd_Khatri_2020_sPGA0_1.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Psoriasis Area and Severity Index (PASI) — PD  <span class="pk-badge pk-badge--green">accepted (caveats)</span>
+# Psoriasis Area and Severity Index — PD  <span class="pk-badge pk-badge--orange">needs review</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -14,11 +14,11 @@
 
 ## Record summary
 
-**As extracted:** Risankizumab (concentrations from this paper's PK model) drives Psoriasis Area and Severity Index (PASI): indirect response — drug inhibits the production of Psoriasis Area and Severity Index (PASI).
+**As extracted:** Risankizumab (concentrations from this paper's PK model) drives Psoriasis Area and Severity Index: indirect response — drug inhibits the production of Psoriasis Area and Severity Index.
 
-**Model:** Model available in **Models**; browser simulation unavailable.
+**Model:** No model was generated from this record.
 
-> The model describes risankizumab concentrations (mg/L) acting on the Psoriasis Area and Severity Index (PASI) via an indirect response mechanism where the drug inhibits the production of psoriasis skin lesions (Ki parameter) using an additive Emmax effect. The key parameters are a baseline (BSL) of 23.4 PASI, an EC50 of 0.106 mg/L, a maximal effect (Emax) of 1.00, and a turnover rate (Kout) of 0.0499 day⁻¹.
+> The paper describes risankizumab inhibiting the formation of psoriasis skin lesions (K_in) via an E_max model to drive PASI, rather than inhibiting elimination as suggested by the record. Key parameters stated or derived in the excerpts include an EC50 of 0.106 mg/L (from record), while the paper highlights a steady-state concentration of 4.23 mg/L for 90% probability of PASI90, but does not explicitly state K_out or E_max in the provided text.
 >
 > <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
@@ -26,7 +26,7 @@
 - **model family:** `indirect_response_i`
 - **driver:** `pk_record`
 - **tier:** population
-- **effect:** inhibition/additive
+- **effect:** inhibition/proportional
 
 ## Citation
 Thomas CM et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of clinical… (2026)
@@ -35,50 +35,16 @@ Thomas CM et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
+| PD (effect) | E_max | `Q323` · not captured | 1.00 | not captured | not captured | direction (not captured) | Thomas_2026:pdv3 |
 | PD (effect) | BSL | `Q324` · not captured | 23.4 | PASI | not captured | llm (not captured) | Thomas_2026:pdv3 |
-| PD (effect) | E max | `Q323` · not captured | 1.00 | not captured | not captured | llm (not captured) | Thomas_2026:pdv3 |
-| PD (effect) | EC 50 | `Q322` · not captured | 0.106 | mg/L | not captured | llm (not captured) | Thomas_2026:pdv3 |
-| PD (effect) | K out | `Q328` · not captured | 0.0499 | day À1 | not captured | llm (not captured) | Thomas_2026:pdv3 |
+| PD (effect) | EC_50 | `Q321` · not captured | 0.106 | mg/L | not captured | llm (not captured) | Thomas_2026:pdv3 |
+| PD (effect) | K_out | `Q328` · not captured | 0.0499 | day -1 | not captured | llm (not captured) | Thomas_2026:pdv3 |
+| variability | add.err_pd | `Q315` · not captured | 1.71 | not captured | not captured | llm (not captured) | Thomas_2026:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
-
-
-## Exposure-response model
-
-`Risankizumab_Thomas2026_PD_pasi` — turnover (indirect response type I), `response = E0*(1 - Emax*frac)`
-
-| parameter | value (paper units) | SI |
-|---|---|---|
-| E0 | 23.4 PASI | — |
-| Emax | 1 | — |
-| EC50 | 0.106 mg/L | 0.000106 kg/m3 |
-| gamma | 1 | — |
-
-Closed-form check points (response, SI): `at_0` = 23.4, `at_EC50` = 11.7, `at_inf` = 0
-
-Deviations:
-
-- `defaulted_parameters` — gamma
-
-## Review
-
-Verdict <span class="pk-badge pk-badge--green">accepted (caveats)</span>
-
-| check | status | note |
-|---|---|---|
-| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
-| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
-| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
-| `T2_direction` | pass | the response falls, as IDR-I predicts |
-| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
-| `T4_defaults` | advisory | only convention defaults (gamma = 1) |
-
-Advisory:
-
-- defaulted: gamma (convention)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -87,14 +53,14 @@ Advisory:
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_risankizumab/Risankizumab_Thomas2026_PD_pasi/Risankizumab_Thomas2026_PD_pasi_modelica.zip" download>Risankizumab_Thomas2026_PD_pasi_modelica.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_risankizumab/Risankizumab_Thomas2026_PD_pasi/Risankizumab_Thomas2026_PD_pasi_matlab.zip" download>Risankizumab_Thomas2026_PD_pasi_matlab.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_risankizumab/Risankizumab_Thomas2026_PD_pasi/Risankizumab_Thomas2026_PD_pasi_sbml.zip" download>Risankizumab_Thomas2026_PD_pasi_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_risankizumab/Risankizumab_Thomas2026_PD_pasi/Risankizumab_Thomas2026_PD_pasi_cellml.zip" download>Risankizumab_Thomas2026_PD_pasi_cellml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>

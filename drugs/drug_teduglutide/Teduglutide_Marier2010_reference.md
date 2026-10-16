@@ -4,7 +4,7 @@
 
 # teduglutide — `Teduglutide_Marier2010_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed 1/2</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333), gpt-oss:120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -20,7 +20,7 @@
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — teduglutide: CL/F 12.4 L/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has teduglutide, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has teduglutide, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -64,18 +64,22 @@ Marier JF et al., Population pharmacokinetics of teduglut…, Journal of clinica
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  1 of 2 readers agree  
-Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | confirmed | 1.0 (5/5 fields) | none |
+| `gpt-oss-120b` | not confirmed | 0.333 (2/6 fields) | 4 |
 | `gpt-oss:120b` | not confirmed | 0.333 (2/6 fields) | 4 |
 
-<details><summary>4 field discrepancies</summary>
+<details><summary>8 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[apparent clearance (cl/f) of teduglutide in male participants]` | 12.4 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[apparent clearance]` | not captured | 12.4 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | teduglutide | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | teduglutide | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[apparent clearance (cl/f) of teduglutide in male participants]` | 12.4 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[apparent clearance]` | not captured | 12.4 | only_one_extracted |
 | `gpt-oss:120b` | `screen.dose_compound` | teduglutide | unknown | mismatch |
@@ -108,7 +112,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_teduglutide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Marier_2010` / `Marier_2010::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_teduglutide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Marier_2010` / `Marier_2010::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

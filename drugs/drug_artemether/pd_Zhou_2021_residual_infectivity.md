@@ -1,8 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;artemether&quot;,&quot;href&quot;:&quot;drugs/drug_artemether/&quot;},{&quot;label&quot;:&quot;Zhou_2021 \u00b7 PD % residual infectivity (SARS-CoV-2 infection of VeroE6 cells, pretreatment assay)&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Artemether_Lohy2018_reference&quot;,&quot;label&quot;:&quot;Lohy_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_artemether/Artemether_Lohy2018_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;artemether&quot;,&quot;href&quot;:&quot;drugs/drug_artemether/&quot;},{&quot;label&quot;:&quot;Zhou_2021 \u00b7 PD % residual infectivity&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Artemether_Lohy2018_reference&quot;,&quot;label&quot;:&quot;Lohy_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_artemether/Artemether_Lohy2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# % residual infectivity (SARS-CoV-2 infection of VeroE6 cells, pretreatment assay) — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span>
+# % residual infectivity — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -16,19 +16,19 @@
 
 ## Record summary
 
-**As extracted:** Artemether (concentrations from the PK model of Ding_2026) drives % residual infectivity (SARS-CoV-2 infection of VeroE6 cells, pretreatment assay) (in %): direct sigmoid Emax (Hill) effect.
+**As extracted:** Artemether (concentrations from the PK model of Ding_2026) drives % residual infectivity (in %): direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
 
-> Artemether concentrations (µg/mL) inhibit SARS-CoV-2 infection of VeroE6 cells in a pretreatment assay, measured as % residual infectivity and described by a sigmoid Emax inhibition model with an EC50 of 147 µg/mL; the paper does not state a specific molecular mechanism. In treatment assays, artemether was less potent in VeroE6 (EC50 64 µg/mL, 56% inhibition at 65 µg/mL, CC50 127 µg/mL) and in A549-hACE2 cells (EC50 53 µg/mL, near-complete inhibition at 92 µg/mL, CC50 380 µg/mL).
+> The paper does not specify the mechanism by which artemether inhibits residual infectivity. The record cites two EC50 values of 147 µg/mL and 98 µg/mL, while the paper reports EC50 values of 53 µg/mL in A549-hACE2 cells and 64 µg/mL in Huh7.5 cells for artemether's inhibition of SARS-CoV-2 infectivity.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Zhou_2021`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`
 - **tier:** descriptive
-- **effect:** inhibition/proportional
+- **effect:** inhibition/unknown
 
 ## Citation
 Zhou Y et al., In vitro efficacy of artemisinin-based…, Scientific reports (2021)
@@ -37,7 +37,8 @@ Zhou Y et al., In vitro efficacy of artemisinin-based…, Scientific reports (20
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | EC50 | `Q321` · not captured | 147 | µg/mL | not captured | llm (not captured) | Zhou_2021:pdv3 |
+| PD (effect) | EC50 | `Q321` · not captured | 147 | µg/ml | not captured | llm (not captured) | Zhou_2021:pdv3 |
+| PD (effect) | EC50 | `Q321` · not captured | 98 | µg/ml | not captured | llm (not captured) | Zhou_2021:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05A&quot;,&quot;href&quot;:&quot;atc/N05A.md&quot;},{&quot;label&quot;:&quot;haloperidol&quot;,&quot;href&quot;:&quot;drugs/drug_haloperidol/&quot;},{&quot;label&quot;:&quot;Pilla_2013 \u00b7 PD PANSS negative subscale&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Haloperidol_Franken2017_reference&quot;,&quot;label&quot;:&quot;Franken_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_haloperidol/Haloperidol_Franken2017_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Haloperidol_Li2022_base&quot;,&quot;label&quot;:&quot;Li_2022_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_haloperidol/Haloperidol_Li2022_base.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Haloperidol_Li2022_final&quot;,&quot;label&quot;:&quot;Li_2022_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_haloperidol/Haloperidol_Li2022_final.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Haloperidol_Franken2017_reference&quot;,&quot;label&quot;:&quot;Franken_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_haloperidol/Haloperidol_Franken2017_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Haloperidol_Li2022_reference&quot;,&quot;label&quot;:&quot;Li_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_haloperidol/Haloperidol_Li2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Pilla_2013_PANSS&quot;,&quot;label&quot;:&quot;Pilla_2013 \u00b7 PANSS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_haloperidol/pd_Pilla_2013_PANSS.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Pilla_2013_PANSS_negative&quot;,&quot;label&quot;:&quot;Pilla_2013 \u00b7 PANSS negative&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_haloperidol/pd_Pilla_2013_PANSS_negative.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Pilla_2013_PANSS_positive&quot;,&quot;label&quot;:&quot;Pilla_2013 \u00b7 PANSS positive&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_haloperidol/pd_Pilla_2013_PANSS_positive.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # PANSS negative subscale — PD  <span class="pk-badge pk-badge--green">accepted (caveats)</span>
@@ -14,16 +14,16 @@
 
 ## Record summary
 
-**As extracted:** Haloperidol (concentrations from this paper's PK model) drives PANSS negative subscale: direct sigmoid Emax (Hill) effect.
+**As extracted:** Haloperidol (concentrations from this paper's PK model) drives PANSS negative subscale: direct Emax (saturable) effect.
 
-**Model:** Model available in **Models**; browser simulation unavailable.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
-> Haloperidol average steady-state plasma concentration (Css, ng/mL) acts on the PANSS negative subscale via a sigmoid/Emax model with a proportional inhibitory drug effect on top of a Weibull placebo model, with an effect delay term (1 − e^(−KT·time)); the record gives baseline 24.1, Pmax 0.047, Emax 0.21, and EC50 6.4 ng/mL, while the paper text reports Emax 0.31 and EC50 3.58 ng/mL for PANSS total (no separate negative-subscale EC50 stated in the excerpts).
+> Haloperidol plasma concentrations (ng/mL) inhibit the PANSS score via a proportional effect on the baseline score, mediated by a link compartment with a delay (KT). For the PANSS negative subscale specifically, the model used an Emax of 0.21 and an EC50 of 6.4 ng/mL.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Pilla_2013`
-- **model family:** `sigmoid_emax`
+- **model family:** `emax`
 - **driver:** `pk_record`
 - **tier:** population
 - **effect:** inhibition/proportional
@@ -35,10 +35,9 @@ Pilla Reddy V et al., Population pharmacokinetic-pharmacodyna…, Journal of cli
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
+| PD (effect) | Emax | `Q323` · not captured | 0.21 | not captured | not captured | direction (not captured) | Pilla_2013:pdv3 |
+| PD (effect) | EC50 | `Q321` · not captured | 6.4 | ng/mL | not captured | llm (not captured) | Pilla_2013:pdv3 |
 | PD (effect) | Baseline Score | `Q324` · not captured | 24.1 | not captured | not captured | llm (not captured) | Pilla_2013:pdv3 |
-| PD (effect) | P max | `Q341` · not captured | 0.047 | not captured | not captured | llm (not captured) | Pilla_2013:pdv3 |
-| PD (effect) | E max | `Q323` · not captured | 0.21 | not captured | not captured | direction (not captured) | Pilla_2013:pdv3 |
-| PD (effect) | EC 50 | `Q321` · not captured | 6.4 | ng/mL | not captured | llm (not captured) | Pilla_2013:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -89,18 +88,21 @@ Advisory:
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_haloperidol/Haloperidol_Pilla2013_PD_panss_negative/Haloperidol_Pilla2013_PD_panss_negative_modelica.zip" download>Haloperidol_Pilla2013_PD_panss_negative_modelica.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_haloperidol/Haloperidol_Pilla2013_PD_panss_negative/Haloperidol_Pilla2013_PD_panss_negative_matlab.zip" download>Haloperidol_Pilla2013_PD_panss_negative_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_haloperidol/Haloperidol_Pilla2013_PD_panss_negative/Haloperidol_Pilla2013_PD_panss_negative_sbml.zip" download>Haloperidol_Pilla2013_PD_panss_negative_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_haloperidol/Haloperidol_Pilla2013_PD_panss_negative/Haloperidol_Pilla2013_PD_panss_negative_cellml.zip" download>Haloperidol_Pilla2013_PD_panss_negative_cellml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PD_SigmoidEmaxSweep.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+<dbs-fmusim paramsurl="drugs/drug_haloperidol/Haloperidol_Pilla2013_PD_panss_negative/Haloperidol_Pilla2013_PD_panss_negative_params.json" metaurl="assets/fmu/PD_SigmoidEmaxSweep.vr.json" wasmurl="assets/fmu/PD_SigmoidEmaxSweep.js" controlsurl="drugs/drug_haloperidol/Haloperidol_Pilla2013_PD_panss_negative/Haloperidol_Pilla2013_PD_panss_negative_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PD_SigmoidEmaxSweep` · parameters `Haloperidol_Pilla2013_PD_panss_negative_params.json` · controls `Haloperidol_Pilla2013_PD_panss_negative_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 

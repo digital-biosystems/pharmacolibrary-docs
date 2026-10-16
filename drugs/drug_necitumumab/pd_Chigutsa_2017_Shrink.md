@@ -13,13 +13,13 @@
 
 ## Record summary
 
-**As extracted:** Necitumumab (concentrations from the PK model of Long_2017) drives Shrink rate of tumor (in day−1): direct sigmoid Emax (Hill) effect.
+**As extracted:** Necitumumab (concentrations from the PK model of Long_2017::base) drives Shrink rate of tumor (in day−1): direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
 
-> Necitumumab concentrations (µg/mL) stimulate the first-order tumor shrink rate (day−1) via a sigmoid Emax model, with an estimated Emax of 0.35 and an EC50 of 150 µg/mL. The Hill coefficient was fixed at 10 due to estimation difficulties, and the paper notes that resistance was modeled as a time-dependent decline in this shrink rate.
+> Necitumumab concentrations (µg/mL) stimulate the first-order tumor shrink rate via a sigmoidal Emax mechanism with an Emax of 0.35, an EC50 of 150 µg/mL, and a fixed Hill coefficient of 10. The tumor shrinkage is modeled as a first-order exponential decrease that declines over time due to resistance development.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Chigutsa_2017`
 - **model family:** `sigmoid_emax`

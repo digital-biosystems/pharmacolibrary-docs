@@ -1,11 +1,10 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;clarithromycin&quot;,&quot;href&quot;:&quot;drugs/drug_clarithromycin/&quot;},{&quot;label&quot;:&quot;Shah_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clarithromycin_Shah2025_reference&quot;,&quot;label&quot;:&quot;Shah_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clarithromycin/Clarithromycin_Shah2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # clarithromycin — `Clarithromycin_Shah2025_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.727), gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-check: disputed 1/2</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.727), gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-check: disputed 1/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -13,35 +12,38 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** Model and browser simulation available in **Models** and **Simulation**.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**C5 dimension mismatch on a structural parameter; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
+
+Extracted — clarithromycin: CL 8.17 L/h/70 kg, V1 25.7 L/70 kg, Q 62 L/h/70 kg, V2 60.6 L/h/70 kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of θq: this record has 62.0, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
-
-> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:37:00.680154+00:00) predates the upstream re-run (2026-10-04 10:36:32.300035+00:00). Current validate status: `extracted`.
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Shah RV et al., Intravenous Clarithromycin in Criticall…, Antibiotics (Basel, Switzer… (2025)
   ·  DOI: [10.3390/antibiotics14060559](https://doi.org/10.3390/antibiotics14060559)
 
-<div class="pk-model-meta" hidden drug="clarithromycin" model-id="Clarithromycin_Shah2025_reference" status="extracted" stale="true" population="critically ill adults" measured-compound="clarithromycin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="clarithromycin" model-id="Clarithromycin_Shah2025_reference" status="rejected" stale="false" population="critically ill adults" measured-compound="clarithromycin" parameterization="mechanistic" topology="2C"></div>
 
-**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
-**Parameters:** 3 extracted.
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| θCL (L/h/70 kg) | `Q22` · CL | 8.17 | L/h/70 kg | 2.2694444444444446e-06 | [l] / [[h] · [70kg]] | 17 | llm_confirmed (0.6) | antibiotics-14-00559-t002:row2:col1, antibiotics-14-00559-t002:row2:col2, antibiotics-14-00559-t002:row2:col3 | — | not captured |
-| θV1 (L/70 kg) | `Q61` · V | 25.7 | L/70 kg | 0.0257 | [l] / [70kg] | 29 | llm_confirmed (0.6) | antibiotics-14-00559-t002:row3:col1, antibiotics-14-00559-t002:row3:col2, antibiotics-14-00559-t002:row3:col3 | — | not captured |
-| θQ (L/h/70 kg) | `Q30` · Q | 62.0 | L/h/70 kg | 1.7222222222222224e-05 | [l] / [[h] · [70kg]] | 18 | llm (0.6) | antibiotics-14-00559-t002:row4:col1, antibiotics-14-00559-t002:row4:col2 | — | not captured |
+| θCL (L/h/70 kg) | `Q22` · CL | 8.17 | L/h/70 kg | 2.2694444444444446e-06 | [l] / [[h] · [70kg]] | not captured | llm_confirmed (0.6) | antibiotics-14-00559-t002:row2:col1 | — | not captured |
+| θV1 (L/70 kg) | `Q63` · V1 | 25.7 | L/70 kg | 0.0257 | [l] / [70kg] | not captured | llm_confirmed (0.6) | antibiotics-14-00559-t002:row3:col1 | — | not captured |
+| θQ (L/h/70 kg) | `Q30` · Q | 62.0 | L/h/70 kg | 1.7222222222222224e-05 | [l] / [[h] · [70kg]] | not captured | llm (0.6) | antibiotics-14-00559-t002:row4:col1 | — | not captured |
+| θV2 (L/h/70 kg) | `Q64` · V2 | 60.6 | L/h/70 kg | 1.6833333333333334e-05 | [l] / [[h] · [70kg]] | not captured | llm_confirmed (0.6) | antibiotics-14-00559-t002:row5:col1 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -52,22 +54,15 @@ Shah RV et al., Intravenous Clarithromycin in Criticall…, Antibiotics (Basel, 
 
 **Interpretation flags:**
 - table section residual_error: 'σ2Proportional' routed out of structural estimates ('SIGMA')
-- dropped unlinked row (NIL): 'θV2 (L/h/70 kg)' — extend the ontology if this is a real PK parameter (source ['antibiotics-14-00559-t002:row5:col1', 'antibiotics-14-00559-t002:row5:col2', 'antibiotics-14-00559-t002:row5:col3'])
+- unit_dimension_mismatch: 'θV2 (L/h/70 kg)' → Q64 (unit '[length] ** 3 / [time]' vs ontology '[length] ** 3') — route to review
 - dropped duplicate Q22 ('η2 CL', value '0.53') — already have one for this compound
-- dropped duplicate Q63 ('η2 V1', value '1.55') — already have one for this compound
+- dropped unlinked row (NIL): 'η2 V1' — extend the ontology if this is a real PK parameter (source ['antibiotics-14-00559-t002:row8:col1'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=clarithromycin
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
-- 1C volume normalization: Q63→Q61 (single-compartment model has no central/peripheral split; 'θV1 (L/70 kg)' is the general volume)
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at route_to_review — not promoted
 
 **Extraction notes:**
-- unparsed cell antibiotics-14-00559-t002:row2:col4 = '7.8 (5.6–10.7)'
-- unparsed cell antibiotics-14-00559-t002:row3:col4 = '25.3 (5.4–45.0)'
-- unparsed cell antibiotics-14-00559-t002:row4:col4 = '62.4 (43.4–112.5)'
-- unparsed cell antibiotics-14-00559-t002:row5:col4 = '62.0 (44.7–108.0)'
-- unparsed cell antibiotics-14-00559-t002:row7:col4 = '0.51 (0.21–0.87)'
-- unparsed cell antibiotics-14-00559-t002:row8:col4 = '1.58 (0.15–7.95)'
-- unparsed cell antibiotics-14-00559-t002:row10:col4 = '0.0317 (0.0161–0.0553)'
+- table antibiotics-14-00559-t002: unbound_uncertainty
 - LLM selected parameter table(s) 2
 
 ## Validation
@@ -100,27 +95,18 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['antibiotics-14-00559-t002:row2:col1', 'antibiotics-14-00559-t002:row2:col2', 'antibiotics-14-00559-t002:row2:col3'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['antibiotics-14-00559-t002:row4:col1', 'antibiotics-14-00559-t002:row4:col2'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['antibiotics-14-00559-t002:row3:col1', 'antibiotics-14-00559-t002:row3:col2', 'antibiotics-14-00559-t002:row3:col3'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 8.17 | not captured | not captured | ['antibiotics-14-00559-t002:row2:col1', 'antibiotics-14-00559-t002:row2:col2', 'antibiotics-14-00559-t002:row2:col3'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['antibiotics-14-00559-t002:row2:col1'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['antibiotics-14-00559-t002:row4:col1'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['antibiotics-14-00559-t002:row3:col1'] |
+| C5_dimension_Q64 | fail | [length] ** 3 / [time] | L/h/70 kg | not captured | not captured | ['antibiotics-14-00559-t002:row5:col1'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 8.17 | not captured | not captured | ['antibiotics-14-00559-t002:row2:col1'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 8.17 L/h | not captured | not captured | ['antibiotics-14-00559-t002:row2:col1', 'antibiotics-14-00559-t002:row2:col2', 'antibiotics-14-00559-t002:row2:col3'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 25.7 L | not captured | not captured | ['antibiotics-14-00559-t002:row3:col1', 'antibiotics-14-00559-t002:row3:col2', 'antibiotics-14-00559-t002:row3:col3'] |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_output_variable | not captured | pass | C_central (measured=clarithromycin) | central.C | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 8.17 L/h | not captured | not captured | ['antibiotics-14-00559-t002:row2:col1'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 25.7 L | not captured | not captured | ['antibiotics-14-00559-t002:row3:col1'] |
+| C9_phys_window_Q64 | fail | volume within physiological range | 0.0168 L | not captured | not captured | ['antibiotics-14-00559-t002:row5:col1'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -129,38 +115,20 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_clarithromycin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Shah_2025` / `Shah_2025::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_clarithromycin/models/modelica/Clarithromycin_Shah2025_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_clarithromycin/models/modelica/Clarithromycin_Shah2025_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_clarithromycin/models/modelica/Clarithromycin_Shah2025_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_clarithromycin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Shah_2025` / `Shah_2025::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_clarithromycin/Clarithromycin_Shah2025_reference/Clarithromycin_Shah2025_reference_modelica.zip" download>Clarithromycin_Shah2025_reference_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_clarithromycin/Clarithromycin_Shah2025_reference/Clarithromycin_Shah2025_reference_fmi.zip" download>Clarithromycin_Shah2025_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_clarithromycin/Clarithromycin_Shah2025_reference/Clarithromycin_Shah2025_reference_matlab.zip" download>Clarithromycin_Shah2025_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_clarithromycin/Clarithromycin_Shah2025_reference/Clarithromycin_Shah2025_reference_matlab_simbio.zip" download>Clarithromycin_Shah2025_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_clarithromycin/Clarithromycin_Shah2025_reference/Clarithromycin_Shah2025_reference_sbml.zip" download>Clarithromycin_Shah2025_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_clarithromycin/Clarithromycin_Shah2025_reference/Clarithromycin_Shah2025_reference_cellml.zip" download>Clarithromycin_Shah2025_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_clarithromycin/Clarithromycin_Shah2025_reference/Clarithromycin_Shah2025_reference.svg" alt="Clarithromycin_Shah2025_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 500 mg infusion over 10 min, single dose. Dose in the paper: 500 mg.
-
-<dbs-fmusim paramsurl="drugs/drug_clarithromycin/Clarithromycin_Shah2025_reference/Clarithromycin_Shah2025_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_clarithromycin/Clarithromycin_Shah2025_reference/Clarithromycin_Shah2025_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C` · parameters `Clarithromycin_Shah2025_reference_params.json` · controls `Clarithromycin_Shah2025_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 10:36 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 03:41 UTC</sub>

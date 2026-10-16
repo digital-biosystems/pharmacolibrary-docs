@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;chloroquine&quot;,&quot;href&quot;:&quot;drugs/drug_chloroquine/&quot;},{&quot;label&quot;:&quot;Chotsiri_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Chloroquine_Yao2021_reference&quot;,&quot;label&quot;:&quot;Yao_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_chloroquine/Chloroquine_Yao2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Chloroquine_AbdRahman2020_reference&quot;,&quot;label&quot;:&quot;Abd-Rahman_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_chloroquine/Chloroquine_AbdRahman2020_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Chloroquine_Chairat2018_reference&quot;,&quot;label&quot;:&quot;Chairat_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_chloroquine/Chloroquine_Chairat2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Chloroquine_Chairat2018_reference&quot;,&quot;label&quot;:&quot;Chairat_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_chloroquine/Chloroquine_Chairat2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Chloroquine_Yao2021_reference&quot;,&quot;label&quot;:&quot;Yao_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_chloroquine/Chloroquine_Yao2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Chloroquine_Karunajeewa2010_cq&quot;,&quot;label&quot;:&quot;Karunajeewa_2010_cq&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_chloroquine/Chloroquine_Karunajeewa2010_cq.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Chloroquine_Karunajeewa2010_decq&quot;,&quot;label&quot;:&quot;Karunajeewa_2010_decq&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_chloroquine/Chloroquine_Karunajeewa2010_decq.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Franco_2023_R&quot;,&quot;label&quot;:&quot;Franco_2023 \u00b7 R&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_chloroquine/pd_Franco_2023_R.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # chloroquine — `Chloroquine_Chotsiri2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed 1/2</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed 1/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -19,22 +19,20 @@
 
 **No volume or clearance — not a compartmental population PK model.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper.
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. A reported unit could not be converted (Fab), so that value has no SI equivalent.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has chloroquine, the second reading chloroquine and azithromycin; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:24:50.197831+00:00) predates the upstream re-run (2026-10-07 06:19:50.254739+00:00). Current validate status: `rejected`.
-
 ## Citation
 Chotsiri P et al., Pharmacometric and Electrocardiographic…, Clinical pharmacology and t… (2022)
   ·  DOI: [10.1002/cpt.2665](https://doi.org/10.1002/cpt.2665)
 
-<div class="pk-model-meta" hidden drug="chloroquine" model-id="Chloroquine_Chotsiri2022_reference" status="rejected" stale="true" population="healthy adults" measured-compound="chloroquine" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="chloroquine" model-id="Chloroquine_Chotsiri2022_reference" status="rejected" stale="false" population="healthy adults" measured-compound="chloroquine" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
-**Parameters:** 1 extracted.
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -43,7 +41,8 @@ Chotsiri P et al., Pharmacometric and Electrocardiographic…, Clinical pharmaco
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Ka1 (hr−1) | `Q49` · kabs | 0.350 | hr−1 | 9.722222222222222e-05 | [1] / [h] | not captured | llm (0.6) | cpt2665-tbl-0001:row4:col1 | — | not captured |
+| F (%) | `Q40` · Fab | 100 | % | not captured | not captured | not captured | exact (1.0) | Chotsiri_2022_table_p4_1:row1:col1, Chotsiri_2022_table_p4_1:row1:col3 | — | not captured |
+| Ka1 (hr−1) | `Q49` · kabs | 0.350 | hr−1 | 9.722222222222222e-05 | [1] / [h] | not captured | llm_confirmed (0.6) | Chotsiri_2022_table_p4_1:row2:col1 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -53,8 +52,8 @@ Chotsiri P et al., Pharmacometric and Electrocardiographic…, Clinical pharmaco
 ## Departures & gaps
 
 **Interpretation flags:**
-- NIL: refused to back-fill base 'NIL' from footnote/prose loose number 80.8 (source ['cpt2665-tbl-0001:footnote']); the table cell was unparseable — needs review
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=chloroquine
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
 - status held at route_to_review — not promoted
 - skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
@@ -62,9 +61,7 @@ Chotsiri P et al., Pharmacometric and Electrocardiographic…, Clinical pharmaco
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- unparsed cell cpt2665-tbl-0001:row4:col2 = '0.273, 0.449'
-- unparsed cell cpt2665-tbl-0001:row4:col3 = '1.59 (12.4%)'
-- unparsed cell cpt2665-tbl-0001:row4:col4 = '1.42, 2.30'
+- table Chotsiri_2022_table_p4_1: unparsed_numeric_cell
 - LLM selected parameter table(s) 1
 
 ## Validation
@@ -96,9 +93,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['cpt2665-tbl-0001:row4:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Chotsiri_2022_table_p4_1:row2:col1'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
 <details class="legend">
@@ -108,7 +105,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_chloroquine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Chotsiri_2022` / `Chotsiri_2022::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_chloroquine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Chotsiri_2022` / `Chotsiri_2022::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -124,4 +121,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 06:19 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 23:29 UTC</sub>

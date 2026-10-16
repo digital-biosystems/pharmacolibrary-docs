@@ -88,7 +88,7 @@ Bulitta JB et al., Population pharmacokinetic rationale fo…, Antimicrobial age
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs_non_atc/drug_contezolid/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Bulitta_2024` / `Bulitta_2024::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs_non_atc/drug_contezolid/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Bulitta_2024` / `Bulitta_2024::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

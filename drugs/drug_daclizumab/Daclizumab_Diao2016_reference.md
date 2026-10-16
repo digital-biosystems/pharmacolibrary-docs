@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;daclizumab&quot;,&quot;href&quot;:&quot;drugs/drug_daclizumab/&quot;},{&quot;label&quot;:&quot;Diao_2016 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Daclizumab_Othman2014_reference&quot;,&quot;label&quot;:&quot;Othman_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_daclizumab/Daclizumab_Othman2014_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -16,22 +17,22 @@
 
 ### Reviewer guidance
 
-**The two-compartment daclizumab model was rejected because the peripheral compartment is unreachable from the dose.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record includes a peripheral volume of distribution (2.42 L) but lacks the inter-compartmental clearance parameter, creating an isolated compartment. Consequently, the model structure fails to represent a viable pharmacokinetic pathway for daclizumab. Extracted — daclizumab: CL 0.212 L/day, V1 3.92 L, V2 2.42 L, tlag 1.61 h, MAT 7.2 days, Fab 88 %, t1/2z 21 days.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — daclizumab: CL 0.212 L/day, V1 3.92 L, V2 2.42 L, tlag 1.61 h, MAT 7.2 days, Fab 88 %, t1/2z 21 days, fu 19 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has daclizumab, the second reading unknown; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Diao L et al., Population Pharmacokinetics of Daclizum…, Clinical pharmacokinetics (2016)
   ·  DOI: [10.1007/s40262-016-0366-7](https://doi.org/10.1007/s40262-016-0366-7)
 
-<div class="pk-model-meta" hidden drug="daclizumab" model-id="Daclizumab_Diao2016_reference" status="rejected" stale="false" population="healthy volunteers and subjects with multiple sclerosis" measured-compound="daclizumab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="daclizumab" model-id="Daclizumab_Diao2016_reference" status="rejected" stale="false" population="healthy volunteers and subjects with relapsing-remitting multiple sclerosis" measured-compound="daclizumab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
-**Parameters:** 7 extracted.
+**Parameters:** 8 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -40,27 +41,34 @@ Diao L et al., Population Pharmacokinetics of Daclizum…, Clinical pharmacokine
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL | `Q22` · CL | 0.212 | L/day | 2.453703703703704e-09 | [l] / [d] | not captured | exact (1.0) | Diao_2016:abstract | — | not captured |
-| the central volume of distribution | `Q63` · V1 | 3.92 | L | 0.00392 | [l] | not captured | boundary_compartment (0.9) | Diao_2016:abstract | — | not captured |
-| The peripheral volume of distribution | `Q64` · V2 | 2.42 | L | 0.00242 | [l] | not captured | boundary_compartment (0.9) | Diao_2016:abstract | — | not captured |
+| Clearance (CL) | `Q22` · CL | 0.212 | L/day | 2.453703703703704e-09 | [l] / [d] | not captured | exact (1.0) | Diao_2016:abstract | — | not captured |
+| central volume of distribution | `Q63` · V1 | 3.92 | L | 0.00392 | [l] | not captured | boundary_compartment (0.9) | Diao_2016:abstract | — | not captured |
+| peripheral volume of distribution | `Q64` · V2 | 2.42 | L | 0.00242 | [l] | not captured | boundary_compartment (0.9) | Diao_2016:abstract | — | not captured |
 | Absorption lag time | `Q83` · tlag | 1.61 | h | 5796.0 | [h] | not captured | exact (1.0) | Diao_2016:abstract | — | not captured |
 | mean absorption time | `Q73` · MAT | 7.2 | days | 622080.0 | [d] | not captured | exact (1.0) | Diao_2016:abstract | — | not captured |
 | absolute bioavailability (100-300 mg SC) | `Q40` · Fab | 88 | % | not captured | not captured | not captured | exact (1.0) | Diao_2016:abstract | — | not captured |
 | daclizumab HYP terminal half-life | `Q57` · t1/2z | 21 | days | 1814400.0 | [d] | not captured | llm (0.6) | Diao_2016:abstract | — | not captured |
+| daclizumab HYP CL | `Q46` · fu | 19 | % | not captured | [%] | not captured | llm_corrected (0.6) | Diao_2016:abstract | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
+### Unresolved rows _(no Q-code or no value — not parameters)_
+| label (paper) | Q-code | value | link |
+|---|---|---|---|
+| body weight (kg)/68 | Q319 | not captured | llm |
+
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'n' — extend the ontology if this is a real PK parameter (source ['Diao_2016:abstract'])
+- dropped unlinked row (NIL): 'Measurable serum concentrations' — extend the ontology if this is a real PK parameter (source ['Diao_2016:abstract'])
+- dropped unlinked row (NIL): 'subjects' — extend the ontology if this is a real PK parameter (source ['Diao_2016:abstract'])
+- dropped unlinked row (NIL): 'clinical studies' — extend the ontology if this is a real PK parameter (source ['Diao_2016:abstract'])
 - covariate weight for allometric_exponent from footnote/prose kept as documentation only (['Diao_2016:abstract'])
 - covariate category for IIV from footnote/prose kept as documentation only (['Diao_2016:abstract'])
-- unit_dimension_mismatch: 'daclizumab HYP CL' → Q22 (unit 'dimensionless' vs ontology '[length] ** 3 / [time]') — route to review
-- dropped duplicate Q22 ('daclizumab HYP CL', value 19) — already have one for this compound
+- dropped unlinked row (NIL): 'doses' — extend the ontology if this is a real PK parameter (source ['Diao_2016:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=daclizumab
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
@@ -68,7 +76,7 @@ Diao L et al., Population Pharmacokinetics of Daclizum…, Clinical pharmacokine
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Diao_2016_metadata.yaml (12 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Diao_2016_metadata.yaml (17 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -113,7 +121,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 7 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 8 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Diao_2016:abstract'] |
@@ -135,7 +143,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_daclizumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Diao_2016` / `Diao_2016::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_daclizumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Diao_2016` / `Diao_2016::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -151,4 +159,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 00:07 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 21:26 UTC</sub>

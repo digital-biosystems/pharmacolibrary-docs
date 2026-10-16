@@ -24,34 +24,47 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> **Dose compound ≠ measured compound:** dosed `leflunomide`, measured `tereflunomide`.
+> **Dose compound ≠ measured compound:** dosed `leflunomide`, measured `M1`.
 
 ## Citation
 Shi J et al., Population pharmacokinetics of the acti…, Journal of pharmacokinetics… (2005)
   ·  DOI: [10.1007/s10928-005-0049-8](https://doi.org/10.1007/s10928-005-0049-8)
 
-<div class="pk-model-meta" hidden drug="leflunomide" model-id="Leflunomide_Shi2005_reference" status="rejected" stale="false" population="pediatric subjects with polyarticular course juvenile rheumatoid arthritis" measured-compound="tereflunomide" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="leflunomide" model-id="Leflunomide_Shi2005_reference" status="rejected" stale="false" population="pediatric subjects with polyarticular course juvenile rheumatoid arthritis" measured-compound="M1" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.
 
-**Parameterization:** mechanistic.
+**Parameterization:** CLm/F, Vm/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 _No resolved parameters._
 
+### Unresolved rows _(no Q-code or no value — not parameters)_
+| label (paper) | Q-code | value | link |
+|---|---|---|---|
+| oral clearance (CL/F) | Q351 | not captured | exact |
+| volume of distribution (V/F) | Q367 | not captured | exact |
+
 ## Departures & gaps
 
 **Interpretation flags:**
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=tereflunomide
-- template fit: none — only the metabolite is modelled — no parent compartment
+- unit_dimension_unknown: 'CL/F' (CL/F)
+- unit_dimension_unknown: 'V/F' (V)
+- metabolite m1: Q27→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
+- metabolite m1: Q61→Q367 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=M1
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- template fit: none — noncompartmental model — not a compartmental parent–metabolite model
+- status held at route_to_review — not promoted
+- row roles (LLM): model_class=noncompartmental; 2/2 row label(s) assigned, 0 linked by role
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- review gap-fill skipped: this record measures 'tereflunomide', not leflunomide — the review values are the parent's
+- review gap-fill skipped: this record measures 'M1', not leflunomide — the review values are the parent's
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Shi_2005_metadata.yaml (0 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Shi_2005_metadata.yaml (2 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -86,6 +99,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
 | C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
+| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
 <details class="legend">
@@ -95,7 +109,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_leflunomide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Shi_2005` / `Shi_2005::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_leflunomide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Shi_2005` / `Shi_2005::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -111,4 +125,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 23:58 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 04:09 UTC</sub>

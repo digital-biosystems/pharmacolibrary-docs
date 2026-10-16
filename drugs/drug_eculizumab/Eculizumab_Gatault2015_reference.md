@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;eculizumab&quot;,&quot;href&quot;:&quot;drugs/drug_eculizumab/&quot;},{&quot;label&quot;:&quot;Gatault_2015 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Eculizumab_Cosson2025_reference&quot;,&quot;label&quot;:&quot;Cosson_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eculizumab/Eculizumab_Cosson2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Eculizumab_Badri2021_reference&quot;,&quot;label&quot;:&quot;Badri_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eculizumab/Eculizumab_Badri2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Eculizumab_Gatault2015_reference&quot;,&quot;label&quot;:&quot;Gatault_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eculizumab/Eculizumab_Gatault2015_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Eculizumab_Monteleone2021_mean&quot;,&quot;label&quot;:&quot;Monteleone_2021_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eculizumab/Eculizumab_Monteleone2021_mean.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Eculizumab_Monteleone2021_median&quot;,&quot;label&quot;:&quot;Monteleone_2021_median&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eculizumab/Eculizumab_Monteleone2021_median.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Eculizumab_Singh2021_mean&quot;,&quot;label&quot;:&quot;Singh_2021_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eculizumab/Eculizumab_Singh2021_mean.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Eculizumab_Singh2021_median&quot;,&quot;label&quot;:&quot;Singh_2021_median&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eculizumab/Eculizumab_Singh2021_median.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Eculizumab_Chen2026_reference&quot;,&quot;label&quot;:&quot;Chen_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eculizumab/Eculizumab_Chen2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Eculizumab_Cosson2025_reference&quot;,&quot;label&quot;:&quot;Cosson_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eculizumab/Eculizumab_Cosson2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Eculizumab_Badri2021_reference&quot;,&quot;label&quot;:&quot;Badri_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eculizumab/Eculizumab_Badri2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Eculizumab_Gatault2015_reference&quot;,&quot;label&quot;:&quot;Gatault_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eculizumab/Eculizumab_Gatault2015_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Eculizumab_Monteleone2021_reference&quot;,&quot;label&quot;:&quot;Monteleone_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eculizumab/Eculizumab_Monteleone2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Eculizumab_Singh2021_reference&quot;,&quot;label&quot;:&quot;Singh_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eculizumab/Eculizumab_Singh2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Lee_2024_TCA&quot;,&quot;label&quot;:&quot;Lee_2024 \u00b7 TCA&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_eculizumab/pd_Lee_2024_TCA.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Ter_2023_CP_activity&quot;,&quot;label&quot;:&quot;Ter_2023 \u00b7 CP activity&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_eculizumab/pd_Ter_2023_CP_activity.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Ter_2025_CP&quot;,&quot;label&quot;:&quot;Ter_2025 \u00b7 CP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_eculizumab/pd_Ter_2025_CP.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Lee_2024_LDH&quot;,&quot;label&quot;:&quot;Lee_2024 \u00b7 LDH&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_eculizumab/pd_Lee_2024_LDH.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,22 +17,22 @@
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's terminal half-life (paper 298, model 296).**
+**The model does not reproduce the paper's terminal half-life (paper 298, model 296); f use library defaults, not estimates from this paper (+1 more).**
 
-Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — eculizumab: V 3.2 L, CL 0.18 L/day.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — eculizumab: V 3.2 L, CL 0.18 L/day, kabs 1.58 h−1, tlag 0.278 h.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Gatault P et al., Therapeutic drug monitoring of eculizum…, mAbs (2015)
   ·  DOI: [10.1080/19420862.2015.1086049](https://doi.org/10.1080/19420862.2015.1086049)
 
-<div class="pk-model-meta" hidden drug="eculizumab" model-id="Eculizumab_Gatault2015_reference" status="needs_review" stale="false" population="adults with aHUS or PNH" measured-compound="eculizumab" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="eculizumab" model-id="Eculizumab_Gatault2015_reference" status="needs_review" stale="false" population="patients with PNH and aHUS" measured-compound="eculizumab" parameterization="mechanistic" topology="1C"></div>
 
-**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
-**Parameters:** 2 extracted.
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -41,8 +41,10 @@ Gatault P et al., Therapeutic drug monitoring of eculizum…, mAbs (2015)
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| volume of distribution | `Q61` · V | 3.2 | L | 0.0032 | L | not captured | exact (1.0) | Gatault_2015:other_prose | — | not captured |
+| The volume of distribution | `Q61` · V | 3.2 | L | 0.0032 | L | not captured | boundary (0.8) | Gatault_2015:other_prose | — | not captured |
 | clearance | `Q22` · CL | 0.18 | L/day | 2.083333333333333e-09 | L/h | not captured | exact (1.0) | Gatault_2015:other_prose | — | not captured |
+| Ka | `Q49` · kabs | 1.58 | h−1 | 0.0004388888888888889 | 1/h | not captured | review_gapfill (0.7) | Chen_2026:review | — | not captured |
+| Tlag | `Q83` · tlag | 0.278 | h | 1000.8000000000001 | h | not captured | review_gapfill (0.7) | Chen_2026:review | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -51,8 +53,15 @@ Gatault P et al., Therapeutic drug monitoring of eculizum…, mAbs (2015)
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['F']
+
 **Interpretation flags:**
+- column 'id' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- table representations disagree for 'At the time of first measurement of eculizumab concentration'; source reconciliation required
+- table representations disagree for 'At the last follow-up'; source reconciliation required
 - column '1' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- table representations disagree for 'Baseline'; source reconciliation required
 - column '2' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - column '3' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - column '4' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
@@ -61,11 +70,10 @@ Gatault P et al., Therapeutic drug monitoring of eculizum…, mAbs (2015)
 - column '7' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - column '8' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - column '9' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- column 'id' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- dropped PD-category row 'Baseline' → Q324 (E0, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['t0001:row2:col3', 't0001:row2:col4', 't0001:row2:col5', 't0001:row2:col6', 't0001:row2:col7', 't0001:row2:col8', 't0001:row2:col9', 't0001:row2:col10', 't0001:row2:col11'])
-- dropped unlinked row (NIL): 'At the time of first measurement of eculizumab concentration' — extend the ontology if this is a real PK parameter (source ['t0001:row4:col3', 't0001:row4:col4', 't0001:row4:col5', 't0001:row4:col6', 't0001:row4:col7', 't0001:row4:col8', 't0001:row4:col9', 't0001:row4:col10', 't0001:row4:col11', 't0001:row6:col3', 't0001:row6:col4', 't0001:row6:col5', 't0001:row6:col7', 't0001:row6:col8', 't0001:row6:col9', 't0001:row6:col10', 't0001:row6:col11', 't0001:row7:col3', 't0001:row7:col4', 't0001:row7:col5', 't0001:row7:col7', 't0001:row7:col8', 't0001:row7:col9', 't0001:row7:col10', 't0001:row7:col11', 't0001:row8:col3', 't0001:row8:col4', 't0001:row8:col5', 't0001:row8:col6', 't0001:row8:col7', 't0001:row8:col8', 't0001:row8:col9', 't0001:row8:col10', 't0001:row8:col11', 't0001:row9:col3', 't0001:row9:col4', 't0001:row9:col5', 't0001:row9:col6', 't0001:row9:col7', 't0001:row9:col8', 't0001:row9:col9', 't0001:row9:col10', 't0001:row9:col11', 't0001:row10:col2', 't0001:row10:col3', 't0001:row10:col4', 't0001:row10:col5', 't0001:row10:col6', 't0001:row10:col7', 't0001:row10:col8', 't0001:row10:col9', 't0001:row10:col10', 't0001:row10:col11', 't0001:row11:col4', 't0001:row11:col5', 't0001:row11:col6', 't0001:row11:col7', 't0001:row11:col8', 't0001:row11:col9'])
-- dropped unlinked row (NIL): 'At the last follow-up' — extend the ontology if this is a real PK parameter (source ['t0001:row13:col3', 't0001:row13:col4', 't0001:row13:col5', 't0001:row13:col6', 't0001:row13:col7', 't0001:row13:col8', 't0001:row13:col9', 't0001:row13:col10', 't0001:row14:col3', 't0001:row14:col4', 't0001:row14:col5', 't0001:row14:col6', 't0001:row14:col7', 't0001:row14:col8', 't0001:row14:col9', 't0001:row14:col10', 't0001:row15:col3', 't0001:row15:col4', 't0001:row15:col5', 't0001:row15:col6', 't0001:row15:col7', 't0001:row15:col8', 't0001:row15:col9', 't0001:row15:col10', 't0001:row16:col3', 't0001:row16:col4', 't0001:row16:col5', 't0001:row16:col6', 't0001:row16:col7', 't0001:row16:col8', 't0001:row16:col9', 't0001:row16:col10', 't0001:row16:col11', 't0001:row17:col2', 't0001:row17:col3', 't0001:row17:col4', 't0001:row17:col5', 't0001:row17:col6', 't0001:row17:col7', 't0001:row17:col8', 't0001:row17:col9', 't0001:row17:col10', 't0001:row17:col11', 't0001:row18:col3', 't0001:row18:col4', 't0001:row18:col5', 't0001:row18:col6', 't0001:row18:col7', 't0001:row18:col8', 't0001:row18:col9'])
-- salvaged Q61 ('volume of distribution'=3.2) from results prose — parameter table was unreadable
+- dropped unlinked row (NIL): 'At the time of first measurement of eculizumab concentration' — extend the ontology if this is a real PK parameter (source ['t0001:row1:col11', 't0001:row2:col5', 't0001:row2:col7', 't0001:row2:col8', 't0001:row2:col9', 't0001:row2:col10', 't0001:row2:col11', 't0001:row3:col5', 't0001:row3:col7', 't0001:row3:col8', 't0001:row3:col9', 't0001:row3:col10', 't0001:row3:col11', 't0001:row3:col12', 't0001:row4:col5', 't0001:row4:col7', 't0001:row4:col8', 't0001:row4:col9', 't0001:row4:col10', 't0001:row4:col11', 't0001:row4:col12', 't0001:row5:col5', 't0001:row5:col9', 't0001:row5:col10', 't0001:row5:col11', 't0001:row5:col12', 't0001:row6:col5', 't0001:row6:col7', 't0001:row6:col8', 't0001:row6:col9', 't0001:row6:col10', 't0001:row6:col11', 't0001:row6:col12', 't0001:row7:col5', 't0001:row7:col7', 't0001:row7:col8', 't0001:row7:col9', 't0001:row7:col10', 't0001:row7:col11', 't0001:row7:col12', 't0001:row8:col5', 't0001:row8:col7', 't0001:row8:col8', 't0001:row8:col9', 't0001:row8:col10', 't0001:row8:col11', 't0001:row8:col12', 't0001:row9:col5', 't0001:row9:col7', 't0001:row9:col8', 't0001:row9:col9', 't0001:row9:col10', 't0001:row9:col11', 't0001:row10:col5', 't0001:row10:col7', 't0001:row10:col8', 't0001:row10:col9', 't0001:row10:col10', 't0001:row10:col11'])
+- dropped unlinked row (NIL): 'At the last follow-up' — extend the ontology if this is a real PK parameter (source ['t0001:row1:col18', 't0001:row2:col14', 't0001:row2:col15', 't0001:row2:col16', 't0001:row2:col17', 't0001:row2:col18', 't0001:row2:col19', 't0001:row3:col14', 't0001:row3:col15', 't0001:row3:col16', 't0001:row3:col17', 't0001:row3:col18', 't0001:row3:col19', 't0001:row4:col14', 't0001:row4:col15', 't0001:row4:col16', 't0001:row4:col17', 't0001:row4:col18', 't0001:row4:col19', 't0001:row5:col14', 't0001:row5:col15', 't0001:row5:col16', 't0001:row5:col17', 't0001:row5:col18', 't0001:row5:col19', 't0001:row6:col14', 't0001:row6:col15', 't0001:row6:col16', 't0001:row6:col17', 't0001:row6:col18', 't0001:row6:col19', 't0001:row7:col14', 't0001:row7:col15', 't0001:row7:col16', 't0001:row7:col17', 't0001:row7:col18', 't0001:row7:col19', 't0001:row8:col14', 't0001:row8:col15', 't0001:row8:col16', 't0001:row8:col17', 't0001:row8:col18', 't0001:row8:col19', 't0001:row9:col14', 't0001:row9:col15', 't0001:row9:col16', 't0001:row9:col17', 't0001:row9:col18', 't0001:row10:col17', 't0001:row10:col18'])
+- dropped PD-category row 'Baseline' → Q324 (E0, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['t0001:row2:col3', 't0001:row3:col3', 't0001:row4:col3', 't0001:row5:col3', 't0001:row6:col3', 't0001:row7:col3', 't0001:row8:col3', 't0001:row9:col3', 't0001:row10:col3'])
+- salvaged Q61 ('The volume of distribution'=3.2) from results prose — parameter table was unreadable
 - salvaged Q22 ('clearance'=0.18) from results prose — parameter table was unreadable
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=eculizumab
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
@@ -73,12 +81,14 @@ Gatault P et al., Therapeutic drug monitoring of eculizum…, mAbs (2015)
 - molar mass: none found for 'eculizumab' — its concentrations stay mass-only
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- gap-filled Q49 (kabs) from Chen_2026's review values (primary lacked it)
+- gap-filled Q83 (tlag) from Chen_2026's review values (primary lacked it)
 
 **Extraction notes:**
-- transposed table t0001: parameters were across the columns, populations/subgroups down the first column — transposed for parsing
-- unparsed cell t0001:row11:col3 = '&lt;0.3'
-- unparsed cell t0001:row11:col10 = '&lt;0.3'
-- unparsed cell t0001:row18:col10 = '&lt;0.3'
+- table t0001: units_need_context
+- table t0001: unparsed_numeric_cell
+- transposed table t0001: logical view retains original source coordinates
+- table t0001: representations disagree; selected evidence retained, not merged
 
 ## Validation
 
@@ -105,6 +115,8 @@ _All readers agree on the compared fields of this record._
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C1_half_life_beta | pass | 12.4 | 12.323 | 0.9938 | 0.25 | reported t½β |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Chen_2026:review'] |
+| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Chen_2026:review'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.18 | not captured | not captured | ['Gatault_2015:other_prose'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.0075 L/h | not captured | not captured | ['Gatault_2015:other_prose'] |
@@ -117,12 +129,12 @@ _All readers agree on the compared fields of this record._
 | T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_output_variable | not captured | pass | C_central (measured=eculizumab) | central.C | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
-| T1_t_half_beta | reference | pass | 297.6 | 295.7385769348167 | 0.9937 | days→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 468.0 | 295.7385769348167 | 0.6319 | d→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 187.2 | 295.7385769348167 | 1.5798 | d→SI vs simulated h |
+| T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable | not captured | LLM adjudication → deterministic rule |
+| T1_t_half_beta | reference | pass | 297.6 | 295.73858387113285 | 0.9937 | days→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 468.0 | 295.73858387113285 | 0.6319 | d→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 187.2 | 295.73858387113285 | 1.5798 | d→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -131,10 +143,10 @@ _All readers agree on the compared fields of this record._
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_eculizumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Gatault_2015` / `Gatault_2015::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_eculizumab/models/modelica/Eculizumab_Gatault2015_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_eculizumab/models/modelica/Eculizumab_Gatault2015_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_eculizumab/models/modelica/Eculizumab_Gatault2015_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_eculizumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Gatault_2015` / `Gatault_2015::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_eculizumab/models/modelica/Eculizumab_Gatault2015_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_eculizumab/models/modelica/Eculizumab_Gatault2015_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_eculizumab/models/modelica/Eculizumab_Gatault2015_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -143,26 +155,26 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_eculizumab/Eculizumab_Gatault2015_reference/Eculizumab_Gatault2015_reference_modelica.zip" download>Eculizumab_Gatault2015_reference_modelica.zip</a> <span class="pk-size">(4.7 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_eculizumab/Eculizumab_Gatault2015_reference/Eculizumab_Gatault2015_reference_fmi.zip" download>Eculizumab_Gatault2015_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_eculizumab/Eculizumab_Gatault2015_reference/Eculizumab_Gatault2015_reference_matlab.zip" download>Eculizumab_Gatault2015_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_eculizumab/Eculizumab_Gatault2015_reference/Eculizumab_Gatault2015_reference_matlab_simbio.zip" download>Eculizumab_Gatault2015_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_eculizumab/Eculizumab_Gatault2015_reference/Eculizumab_Gatault2015_reference_sbml.zip" download>Eculizumab_Gatault2015_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_eculizumab/Eculizumab_Gatault2015_reference/Eculizumab_Gatault2015_reference_cellml.zip" download>Eculizumab_Gatault2015_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_eculizumab/Eculizumab_Gatault2015_reference/Eculizumab_Gatault2015_reference_modelica.zip" download>Eculizumab_Gatault2015_reference_modelica.zip</a> <span class="pk-size">(5.1 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_eculizumab/Eculizumab_Gatault2015_reference/Eculizumab_Gatault2015_reference_fmi.zip" download>Eculizumab_Gatault2015_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_eculizumab/Eculizumab_Gatault2015_reference/Eculizumab_Gatault2015_reference_matlab.zip" download>Eculizumab_Gatault2015_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_eculizumab/Eculizumab_Gatault2015_reference/Eculizumab_Gatault2015_reference_matlab_simbio.zip" download>Eculizumab_Gatault2015_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_eculizumab/Eculizumab_Gatault2015_reference/Eculizumab_Gatault2015_reference_sbml.zip" download>Eculizumab_Gatault2015_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_eculizumab/Eculizumab_Gatault2015_reference/Eculizumab_Gatault2015_reference_cellml.zip" download>Eculizumab_Gatault2015_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_eculizumab/Eculizumab_Gatault2015_reference/Eculizumab_Gatault2015_reference.svg" alt="Eculizumab_Gatault2015_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_eculizumab/Eculizumab_Gatault2015_reference/Eculizumab_Gatault2015_reference.svg" alt="Eculizumab_Gatault2015_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 600 mg infusion over 10 min, single dose. Doses in the paper: 600, 900, 1200 mg.
+**Administration: oral** — 600 mg, single dose, first-order absorption (ka 1.58 /h, lag 16.7 min, F 0.9). Doses in the paper: 600, 900, 1200 mg.
 
-<dbs-fmusim paramsurl="drugs/drug_eculizumab/Eculizumab_Gatault2015_reference/Eculizumab_Gatault2015_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_eculizumab/Eculizumab_Gatault2015_reference/Eculizumab_Gatault2015_reference_sim_controls.json"></dbs-fmusim>
+<dbs-fmusim paramsurl="drugs/drug_eculizumab/Eculizumab_Gatault2015_reference/Eculizumab_Gatault2015_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_eculizumab/Eculizumab_Gatault2015_reference/Eculizumab_Gatault2015_reference_sim_controls.json"></dbs-fmusim>
 
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C` · parameters `Eculizumab_Gatault2015_reference_params.json` · controls `Eculizumab_Gatault2015_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C_enteral` · parameters `Eculizumab_Gatault2015_reference_params.json` · controls `Eculizumab_Gatault2015_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 23:51 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 21:53 UTC</sub>

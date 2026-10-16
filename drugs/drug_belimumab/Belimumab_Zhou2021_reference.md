@@ -40,10 +40,11 @@ Zhou X et al., Prediction of Belimumab Pharmacokinetic…, Drugs in R&D (2021)
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL (ml/day) | `Q22` · CL | 238 | ml/day | 2.7546296296296293e-09 | [ml] / [d] | 26.1 | exact (1.0) | Tab2:row1:col2, Tab2:row1:col3, Tab2:row1:col6, Tab2:row1:col8 | — | not captured |
-| V1 (ml) | `Q63` · V1 | 2597 | ml | 0.002597 | [ml] | 8.9 | exact (1.0) | Tab2:row6:col2, Tab2:row6:col3, Tab2:row6:col6, Tab2:row6:col8 | — | not captured |
-| Q (ml/day) | `Q30` · Q | 591 | ml/day | 6.8402777777777775e-09 | [ml] / [d] | 6.5 | exact (1.0) | Tab2:row11:col2, Tab2:row11:col3, Tab2:row11:col5 | — | not captured |
-| V2 (ml) | `Q64` · V2 | 2318 | ml | 0.0023179999999999997 | [ml] | 28.5 | exact (1.0) | Tab2:row12:col2, Tab2:row12:col3, Tab2:row12:col5, Tab2:row12:col6, Tab2:row12:col8 | — | not captured |
+| CL (ml/day) | `Q22` · CL | 238 | ml/day | 2.7546296296296293e-09 | [ml] / [d] | 5.2 | exact (1.0) | Tab2:row1:col2, Tab2:row1:col3, Tab2:row1:col8 | — | not captured |
+| BALB | `Q900` · equation variable | -1.12 | not captured | not captured | not captured | not captured | llm (0.6) | Tab2:row3:col1, Tab2:row3:col2, Tab2:row3:col3 | — | not captured |
+| V1 (ml) | `Q63` · V1 | 2597 | ml | 0.002597 | [ml] | 36.6 | exact (1.0) | Tab2:row6:col2, Tab2:row6:col3, Tab2:row6:col8 | — | not captured |
+| Q (ml/day) | `Q30` · Q | 591 | ml/day | 6.8402777777777775e-09 | [ml] / [d] | not captured | exact (1.0) | Tab2:row11:col2, Tab2:row11:col3, Tab2:row11:col5 | — | not captured |
+| V2 (ml) | `Q64` · V2 | 2318 | ml | 0.0023179999999999997 | [ml] | 23.9 | exact (1.0) | Tab2:row12:col2, Tab2:row12:col3, Tab2:row12:col5, Tab2:row12:col8 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -53,35 +54,33 @@ Zhou X et al., Prediction of Belimumab Pharmacokinetic…, Drugs in R&D (2021)
 ## Departures & gaps
 
 **Interpretation flags:**
-- column 'variance (η)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- table representations disagree for 'CL (ml/day)'; source reconciliation required
+- table representations disagree for 'FFM'; source reconciliation required
+- table representations disagree for 'BALB'; source reconciliation required
+- table representations disagree for 'BIGG'; source reconciliation required
+- table representations disagree for 'STDY = LBSL01 or 02'; source reconciliation required
+- table representations disagree for 'V1 (ml)'; source reconciliation required
+- table representations disagree for 'Race (RAC4d)'; source reconciliation required
+- table representations disagree for 'AGE'; source reconciliation required
+- table representations disagree for 'Q (ml/day)'; source reconciliation required
+- table representations disagree for 'V2 (ml)'; source reconciliation required
+- table representations disagree for 'ε1 (%)e'; source reconciliation required
+- table representations disagree for 'ε2 (mg/l)e'; source reconciliation required
 - dropped unlinked row (NIL): 'FFM' — extend the ontology if this is a real PK parameter (source ['Tab2:row2:col1', 'Tab2:row2:col2', 'Tab2:row2:col3', 'Tab2:row7:col1', 'Tab2:row7:col2', 'Tab2:row7:col3'])
-- dropped unlinked row (NIL): 'BALB' — extend the ontology if this is a real PK parameter (source ['Tab2:row3:col1', 'Tab2:row3:col2', 'Tab2:row3:col3'])
 - dropped unlinked row (NIL): 'BIGG' — extend the ontology if this is a real PK parameter (source ['Tab2:row4:col1', 'Tab2:row4:col2', 'Tab2:row4:col3'])
 - dropped unlinked row (NIL): 'STDY = LBSL01 or 02' — extend the ontology if this is a real PK parameter (source ['Tab2:row5:col2', 'Tab2:row5:col3', 'Tab2:row8:col2', 'Tab2:row8:col3'])
 - dropped unlinked row (NIL): 'Race (RAC4d)' — extend the ontology if this is a real PK parameter (source ['Tab2:row9:col2', 'Tab2:row9:col3'])
 - dropped unlinked row (NIL): 'AGE' — extend the ontology if this is a real PK parameter (source ['Tab2:row10:col1', 'Tab2:row10:col2', 'Tab2:row10:col3'])
 - routed 'ε1 (%)e' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
-- dropped unlinked row (NIL): 'ε2 (mg/l)e' — extend the ontology if this is a real PK parameter (source ['Tab2:row14:col2', 'Tab2:row14:col3'])
+- dropped duplicate Q900 ('ε2 (mg/l)e', value '0.221') — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=belimumab
+- status held at route_to_review — not promoted
 - molar mass: none found for 'belimumab' — its concentrations stay mass-only
 
 **Extraction notes:**
-- unparsed cell Tab2:row1:col1 = 'θ1'
-- unparsed cell Tab2:row1:col4 = 'η1'
-- unparsed cell Tab2:row1:col5 = '0.0682c'
-- unparsed cell Tab2:row5:col1 = '× θ11INDR'
-- unparsed cell Tab2:row6:col1 = 'θ2'
-- unparsed cell Tab2:row6:col4 = 'η2'
-- unparsed cell Tab2:row6:col5 = '0.0079c'
-- unparsed cell Tab2:row8:col1 = '× θ12INDR'
-- unparsed cell Tab2:row9:col1 = '× θ12RAC4'
-- unparsed cell Tab2:row11:col1 = 'θ3'
-- unparsed cell Tab2:row11:col4 = 'η3'
-- unparsed cell Tab2:row12:col1 = 'θ4'
-- unparsed cell Tab2:row12:col4 = 'η4'
-- unparsed cell Tab2:row13:col1 = 'θ5'
-- unparsed cell Tab2:row13:col4 = 'η5'
-- unparsed cell Tab2:row14:col1 = 'θ6'
+- table Tab2: ragged_grid
+- table Tab2: unparsed_numeric_cell
+- table Tab2: representations disagree; selected evidence retained, not merged
 - LLM selected parameter table(s) 2
 
 ## Validation
@@ -119,15 +118,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row1:col2', 'Tab2:row1:col3', 'Tab2:row1:col6', 'Tab2:row1:col8'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row1:col2', 'Tab2:row1:col3', 'Tab2:row1:col8'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row11:col2', 'Tab2:row11:col3', 'Tab2:row11:col5'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row6:col2', 'Tab2:row6:col3', 'Tab2:row6:col6', 'Tab2:row6:col8'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row12:col2', 'Tab2:row12:col3', 'Tab2:row12:col5', 'Tab2:row12:col6', 'Tab2:row12:col8'] |
-| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 238.0 | not captured | not captured | ['Tab2:row1:col2', 'Tab2:row1:col3', 'Tab2:row1:col6', 'Tab2:row1:col8'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row6:col2', 'Tab2:row6:col3', 'Tab2:row6:col8'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row12:col2', 'Tab2:row12:col3', 'Tab2:row12:col5', 'Tab2:row12:col8'] |
+| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 238.0 | not captured | not captured | ['Tab2:row1:col2', 'Tab2:row1:col3', 'Tab2:row1:col8'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.00992 L/h | not captured | not captured | ['Tab2:row1:col2', 'Tab2:row1:col3', 'Tab2:row1:col6', 'Tab2:row1:col8'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 2.6 L | not captured | not captured | ['Tab2:row6:col2', 'Tab2:row6:col3', 'Tab2:row6:col6', 'Tab2:row6:col8'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 2.32 L | not captured | not captured | ['Tab2:row12:col2', 'Tab2:row12:col3', 'Tab2:row12:col5', 'Tab2:row12:col6', 'Tab2:row12:col8'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.00992 L/h | not captured | not captured | ['Tab2:row1:col2', 'Tab2:row1:col3', 'Tab2:row1:col8'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 2.6 L | not captured | not captured | ['Tab2:row6:col2', 'Tab2:row6:col3', 'Tab2:row6:col8'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 2.32 L | not captured | not captured | ['Tab2:row12:col2', 'Tab2:row12:col3', 'Tab2:row12:col5', 'Tab2:row12:col8'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -136,7 +135,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_belimumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Zhou_2021` / `Zhou_2021::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_belimumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Zhou_2021` / `Zhou_2021::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -162,4 +161,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 23:30 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 20:56 UTC</sub>

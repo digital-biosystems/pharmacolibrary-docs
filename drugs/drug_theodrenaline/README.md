@@ -18,7 +18,7 @@ Theodrenaline is a chemical compound classified as a cardiac stimulant among adr
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 10:16 | 1:26 | 0/0/0 | 0/0/1 | 0/0/0 | 52,431/1,626 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 0/4 | 3/0 | 0 |
+| 2026-10-13 12:53 | 0:48 | 0/0/0 | 0/1/1 | 0/0/0 | 40,742/4,374 | einfracz / qwen3.8-27b | 3 | 0/4 | 3/0 | 0 |
 
 ## popPK records
 
@@ -28,9 +28,13 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.833). Primary extraction retained.">cross-check: disputed</span> | [Dings_2026_HR](drugs/drug_theodrenaline/pd_Dings_2026_HR.md) | Heart rate ← cafedrine/theodrenaline · direct Emax (saturable) effect | — | Dings C et al., Pharmacometric Analysis of Cafedrine/Th…, Pharmaceutics (2026) | [10.3390/pharmaceutics18030296](https://doi.org/10.3390/pharmaceutics18030296) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.833). Primary extraction retained.">cross-check: disputed</span> | [Dings_2026_MAP](drugs/drug_theodrenaline/pd_Dings_2026_MAP.md) | Mean arterial pressure ← cafedrine/theodrenaline · direct Emax (saturable) effect | — | Dings C et al., Pharmacometric Analysis of Cafedrine/Th…, Pharmaceutics (2026) | [10.3390/pharmaceutics18030296](https://doi.org/10.3390/pharmaceutics18030296) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.833). Primary extraction retained.">cross-check: disputed</span> | [Dings_2026_SBP](drugs/drug_theodrenaline/pd_Dings_2026_SBP.md) | Systolic blood pressure ← cafedrine/theodrenaline · direct Emax (saturable) effect | — | Dings C et al., Pharmacometric Analysis of Cafedrine/Th…, Pharmaceutics (2026) | [10.3390/pharmaceutics18030296](https://doi.org/10.3390/pharmaceutics18030296) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span> | [Dings_2026_HR](drugs/drug_theodrenaline/pd_Dings_2026_HR.md) | Heart rate ← cafedrine/theodrenaline · delayed effect through transit (transduction) compartments | — | Dings C et al., Pharmacometric Analysis of Cafedrine/Th…, Pharmaceutics (2026) | [10.3390/pharmaceutics18030296](https://doi.org/10.3390/pharmaceutics18030296) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span> | [Dings_2026_MAP](drugs/drug_theodrenaline/pd_Dings_2026_MAP.md) | Mean arterial pressure ← cafedrine/theodrenaline · delayed effect through transit (transduction) compartments | — | Dings C et al., Pharmacometric Analysis of Cafedrine/Th…, Pharmaceutics (2026) | [10.3390/pharmaceutics18030296](https://doi.org/10.3390/pharmaceutics18030296) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span> | [Dings_2026_SBP](drugs/drug_theodrenaline/pd_Dings_2026_SBP.md) | Systolic blood pressure ← cafedrine/theodrenaline · delayed effect through transit (transduction) compartments | — | Dings C et al., Pharmacometric Analysis of Cafedrine/Th…, Pharmaceutics (2026) | [10.3390/pharmaceutics18030296](https://doi.org/10.3390/pharmaceutics18030296) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> | [Dings_2024_DBP](drugs/drug_theodrenaline/pd_Dings_2024_DBP.md) | diastolic blood pressure ← cafedrine/theodrenaline · direct Emax (saturable) effect | — | Dings C et al., Population kinetic/pharmacodynamic mode…, British journal of clinical… (2024) | [10.1111/bcp.16083](https://doi.org/10.1111/bcp.16083) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> | [Dings_2024_HR](drugs/drug_theodrenaline/pd_Dings_2024_HR.md) | heart rate ← cafedrine/theodrenaline · direct Emax (saturable) effect | — | Dings C et al., Population kinetic/pharmacodynamic mode…, British journal of clinical… (2024) | [10.1111/bcp.16083](https://doi.org/10.1111/bcp.16083) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> | [Dings_2024_MAP](drugs/drug_theodrenaline/pd_Dings_2024_MAP.md) | mean arterial pressure ← cafedrine/theodrenaline · direct Emax (saturable) effect | — | Dings C et al., Population kinetic/pharmacodynamic mode…, British journal of clinical… (2024) | [10.1111/bcp.16083](https://doi.org/10.1111/bcp.16083) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> | [Dings_2024_SBP](drugs/drug_theodrenaline/pd_Dings_2024_SBP.md) | systolic blood pressure ← cafedrine/theodrenaline · direct Emax (saturable) effect | — | Dings C et al., Population kinetic/pharmacodynamic mode…, British journal of clinical… (2024) | [10.1111/bcp.16083](https://doi.org/10.1111/bcp.16083) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,7 +57,7 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 |---|---|---|---|---|---|---|
 | `Dings_2024.pdf` | Dings C et al., Population kinetic/pharmacodynamic mode…, British journal of clinical… (2024) | popPK | 8 | [10.1111/bcp.16083](https://doi.org/10.1111/bcp.16083) | [38720661](https://pubmed.ncbi.nlm.nih.gov/38720661) | The paper describes a population PK/PD model for theodrenaline (as part of a combination) in humans, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence. |
 
-<sub>queue written 2026-10-06T10:15:04.864812+00:00</sub>
+<sub>queue written 2026-10-13T12:53:23.346090+00:00</sub>
 
 ## Screened and excluded
 

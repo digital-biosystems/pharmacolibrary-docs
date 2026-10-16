@@ -13,18 +13,18 @@
 
 ## Record summary
 
-**As extracted:** Sacituzumab govitecan (measured concentrations) drives time to first dose delay: time-to-event model.
+**As extracted:** Sacituzumab govitecan (concentrations from the PK model of Sathe_2024::final_model_estimate_rse) drives time to first dose delay: time-to-event model.
 
 **Model:** No model was generated from this record.
 
-> The paper describes a Cox proportional-hazards model where the average serum concentration of sacituzumab govitecan (CAVGSG) acts as a driver for the time to first dose delay, such that higher concentrations are associated with an increased risk of delay. The paper does not provide specific potency or rate parameter values (e.g., IC50, EC50, kout) for this relationship.
+> The paper describes the use of a Cox proportional-hazards model linking the average concentration of sacituzumab govitecan (CAVGSG) to an increased risk of time to first dose delay, with body weight identified as an additional significant covariate. The provided excerpts do not state specific potency parameters (such as IC50 or EC50) or rate constants (such as ke0 or kout) for this exposure-response relationship.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Sathe_2025_2`
 - **model family:** `tte`
-- **driver:** `conc_no_pk`
-- **tier:** descriptive
+- **driver:** `cited_pk`
+- **tier:** population
 - **effect:** stimulation/unknown
 
 ## Citation

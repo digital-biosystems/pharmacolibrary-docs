@@ -4,7 +4,7 @@
 
 # metoprolol — `Metoprolol_Taguchi2004_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.875), gpt-oss:120b (partly confirmed, agreement 0.875). Primary extraction retained.">cross-check: partial 0/2</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.875), gpt-oss:120b (partly confirmed, agreement 0.875). Primary extraction retained.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -16,36 +16,35 @@
 
 ### Reviewer guidance
 
-**The metoprolol model was quarantined because clearance, volume of distribution, absorption rate constant and absorption lag time had no extracted values and library placeholders were substituted.**
+**C5 dimension mismatch on a structural parameter.**
 
-The record for metoprolol in middle-aged and elderly Japanese patients lists only Q (3.86), CL/F (29.7), V/F (17.1) and a slope (1.79); the absorption rate constant was not reported in the source and was defaulted, which the adjudication judged an invented absorption input. The parameterization is apparent (F=1, Fm=1, no molar correction) with first-order depot input. A second reader also disagreed on the intercompartmental clearance labels, reading q 1 as 0.835 where this record has null and q 2 as null where this record has 3.86. Extracted — metoprolol: Q 3.86, CL/F 29.7, V/F 17.1, slope 1.79.
+A reported unit could not be converted (CL/F and V/F), so that value has no SI equivalent. Extracted — metoprolol: Q 0.938, Q2 4.52, CL/F 29.7 %, V/F 17.1 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of q 5: this record has 0.328, the second reading none. That field does not shape the model.
 
-<sub>reviewed by glm-5.3-flash</sub>
-
-> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-28 14:39:00.188184+00:00) predates the upstream re-run (2026-10-07 00:08:03.915423+00:00). Current validate status: `needs_review`.
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Taguchi M et al., Nonlinear mixed effects model analysis…, Biological & pharmaceutical… (2004)
   ·  DOI: [10.1248/bpb.27.1642](https://doi.org/10.1248/bpb.27.1642)
 
-<div class="pk-model-meta" hidden drug="metoprolol" model-id="Metoprolol_Taguchi2004_reference" status="needs_review" stale="true" population="routinely treated Japanese patients" measured-compound="metoprolol" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="metoprolol" model-id="Metoprolol_Taguchi2004_reference" status="rejected" stale="false" population="middle-aged and elderly Japanese patients" measured-compound="metoprolol" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 3 extracted.
+**Parameters:** 4 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| q 1 | `Q30` · Q | 0.835 | L/h/kg | 1.623611111111111e-05 | L/h | not captured | space_fold (0.95) | tab_1:row1:col2, tab_1:row1:col3 | — | not captured |
-| q 5 | `Q900` · equation variable | 0.328 | not captured | not captured | not captured | not captured | llm (0.6) | tab_1:row3:col2, tab_1:row3:col3 | — | not captured |
-| w CL/F (%) | `Q27` · CL/F | 29.7 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | tab_1:row6:col1, tab_1:row6:col2 | — | not captured |
-| w V/F (%) | `Q76` · V/F | 17.1 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | tab_1:row7:col1, tab_1:row7:col2 | — | not captured |
+| q 1 | `Q30` · Q | 0.938 | not captured | not captured | not captured | not captured | space_fold (0.95) | tab_1:row1:col2 | — | not captured |
+| q 2 | `Q99` · Q2 | 4.52 | not captured | not captured | not captured | not captured | second_intercompartmental (0.9) | tab_1:row2:col2 | — | not captured |
+| q 5 | `Q900` · equation variable | 0.439 | not captured | not captured | not captured | not captured | llm (0.6) | tab_1:row3:col2 | — | not captured |
+| w CL/F (%) | `Q27` · CL/F | 29.7 | % | not captured | [%] | not captured | llm_confirmed (0.6) | tab_1:row6:col2 | — | not captured |
+| w V/F (%) | `Q76` · V/F | 17.1 | % | not captured | [%] | not captured | llm_confirmed (0.6) | tab_1:row7:col2 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -55,15 +54,15 @@ Taguchi M et al., Nonlinear mixed effects model analysis…, Biological & pharma
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped duplicate Q30 ('q 2', value '3.86') — already have one for this compound
-- dropped duplicate Q900 ('q 7', value '0.153') — already have one for this compound
-- dropped duplicate Q900 ('q 10', value '0.600') — already have one for this compound
-- dropped PD-category row 's' → Q335 (slope, category G13) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tab_1:row8:col2', 'tab_1:row8:col3'])
-- implicit units: 'q 1' → L/h/kg (from the popPK convention: 'The parameter q1 is the population mean of oral clearance (CL/F) normalized by body weight (WT), as shown in the model e')
-- implicit units: 'w CL/F (%)' — the LLM proposed '%', whose dimension does not fit Q27; left unset
-- implicit units: 'w V/F (%)' — the LLM proposed '%', whose dimension does not fit Q76; left unset
+- 'q 2' linked to Q99: a second intercompartmental clearance beside the Q30 already present
+- dropped duplicate Q900 ('q 7', value '0.637') — already have one for this compound
+- dropped duplicate Q900 ('q 10', value '0.739') — already have one for this compound
+- unit_dimension_mismatch: 'w CL/F (%)' → Q27 (unit 'dimensionless' vs ontology '[length] ** 3 / [time]') — route to review
+- unit_dimension_mismatch: 'w V/F (%)' → Q76 (unit 'dimensionless' vs ontology '[length] ** 3') — route to review
+- dropped PD-category row 's' → Q335 (slope, category G13) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tab_1:row8:col2'])
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=metoprolol
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at route_to_review — not promoted
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
@@ -98,25 +97,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row1:col2', 'tab_1:row1:col3'] |
-| C5_unit_missing_Q27 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row6:col1', 'tab_1:row6:col2'] |
-| C5_unit_missing_Q76 | fail | [length] ** 3 | not captured | not captured | not captured | ['tab_1:row7:col1', 'tab_1:row7:col2'] |
+| C5_dimension_Q27 | fail | dimensionless | % | not captured | not captured | ['tab_1:row6:col2'] |
+| C5_dimension_Q76 | fail | dimensionless | % | not captured | not captured | ['tab_1:row7:col2'] |
+| C5_unit_missing_Q30 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row1:col2'] |
+| C5_unit_missing_Q99 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row2:col2'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
-| T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -125,26 +114,14 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_metoprolol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Taguchi_2004` / `Taguchi_2004::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_metoprolol/models/modelica/_needs_review/Metoprolol_Taguchi2004_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_metoprolol/models/modelica/_needs_review/Metoprolol_Taguchi2004_reference.deviation.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_metoprolol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Taguchi_2004` / `Taguchi_2004::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-</tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -153,4 +130,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 00:08 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 03:29 UTC</sub>

@@ -18,9 +18,9 @@
 
 **Model:** No model was generated from this record.
 
-> Terbutaline stimulates insulin secretion, described by an indirect response model (model III, proportional stimulation) driven by terbutaline concentrations from the cited PK; the excerpts provide no numeric potency or rate parameters and no further mechanistic detail.
+> The record indicates that terbutaline concentrations stimulate insulin via an indirect response model (IR3) with a proportional effect form, but the paper excerpts are unavailable to confirm the specific mechanism or provide key potency and rate values.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
 
 - **paper:** `Lima_2004`
 - **model family:** `indirect_response_iii`

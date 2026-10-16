@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;atenolol&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/&quot;},{&quot;label&quot;:&quot;Baek_2008 \u00b7 atenolol_50_mg&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atenolol_Frampton1992_reference&quot;,&quot;label&quot;:&quot;Frampton_1992_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_Frampton1992_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Baek_2008_DBP&quot;,&quot;label&quot;:&quot;Baek_2008 \u00b7 DBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/pd_Baek_2008_DBP.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_McCoy_1994_HR&quot;,&quot;label&quot;:&quot;McCoy_1994 \u00b7 HR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/pd_McCoy_1994_HR.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_McCoy_1994_HR_2&quot;,&quot;label&quot;:&quot;McCoy_1994 \u00b7 HR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/pd_McCoy_1994_HR_2.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_McCoy_1994_HR_3&quot;,&quot;label&quot;:&quot;McCoy_1994 \u00b7 HR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/pd_McCoy_1994_HR_3.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Baek_2008_SBP&quot;,&quot;label&quot;:&quot;Baek_2008 \u00b7 SBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/pd_Baek_2008_SBP.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # atenolol — `Atenolol_Baek2008_atenolol_50_mg`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.867), gpt-oss:120b (not confirmed, agreement 0.857). Primary extraction retained.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.867), gpt-oss:120b (not confirmed, agreement 0.857). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -16,41 +17,41 @@
 
 ### Reviewer guidance
 
-**AUCt has no unit.**
+**C5 dimension mismatch on a structural parameter.**
 
-Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (AUCt and Cmax), so that value has no SI equivalent. Extracted — atenolol: AUCt 3.05 μg h/mL, Cmax 396 ng/mL, tmax 2.87 h, V/F 158 L, CL 18.1 L/h, kel 0.58 h⁻¹, kabs 1.84 h⁻¹, k21 0.91 h⁻¹, … (+2).
+A reported unit could not be converted (AUCt, Cmax and t1/2ka ), so that value has no SI equivalent. Extracted — atenolol: AUCt 3.05 µg·h/mL, Cmax 396 ng/mL, tmax 2.87 h, V/F 158 L, CL 18.1 L/h, kel 0.58 h⁻¹, t1/2ka 1.84 h⁻¹, k21 0.91 h⁻¹, … (+3).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[k&lt;pc&gt;].parameter_id`: this record has Q49, the second reading Q48; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
-
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-29 03:59:58.361749+00:00) predates the upstream re-run (2026-10-06 23:08:26.720089+00:00). Current validate status: `needs_review`.
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Baek IH et al., Pharmacokinetic/pharmacodynamic modelin…, Archives of pharmacal resea… (2008)
   ·  DOI: [10.1007/s12272-001-1231-4](https://doi.org/10.1007/s12272-001-1231-4)
 
-<div class="pk-model-meta" hidden drug="atenolol" model-id="Atenolol_Baek2008_atenolol_50_mg" status="needs_review" stale="true" population="healthy adults" measured-compound="atenolol" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="atenolol" model-id="Atenolol_Baek2008_atenolol_50_mg" status="rejected" stale="false" population="healthy adults" measured-compound="atenolol" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 9 extracted.
+**Parameters:** 11 extracted.
 
 **Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| AUC&lt;0-24hr&gt; (μg h/mL) | `Q19` · AUCt | 3.05 | μg h/mL | not captured | [[h] · [µg]] / [ml] | not captured | llm_corrected (0.6) | Baek_2008_table_2:row0:col1 | — | not captured |
-| C&lt;max&gt; (ng/mL) | `Q32` · Cmax | 396.14 | ng/mL | not captured | [ng] / [ml] | not captured | llm (0.6) | Baek_2008_table_2:row2:col1 | — | not captured |
-| T&lt;max&gt; (h) | `Q56` · tmax | 2.87 | h | 10332.0 | [h] | not captured | llm (0.6) | Baek_2008_table_2:row3:col1 | — | not captured |
+| AUC₀₋₂₄h (µg·h/mL) | `Q19` · AUCt | 3.05 | µg·h/mL | not captured | [[h] · [µg]] / [ml] | not captured | llm (0.6) | Baek_2008_table_2:row0:col1 | — | not captured |
+| Cmax (ng/mL) | `Q32` · Cmax | 396.14 | ng/mL | not captured | [ng] / [ml] | not captured | exact (1.0) | Baek_2008_table_2:row2:col1 | — | not captured |
+| Tmax (h) | `Q56` · tmax | 2.87 | h | 10332.0 | [h] | not captured | exact (1.0) | Baek_2008_table_2:row3:col1 | — | not captured |
 | Volume/F (L) | `Q76` · V/F | 157.71 | L | 0.15771000000000002 | [l] | not captured | llm (0.6) | Baek_2008_table_2:row4:col1 | — | not captured |
 | Clearance (L/h) | `Q22` · CL | 18.15 | L/h | 5.041666666666666e-06 | [l] / [h] | not captured | exact (1.0) | Baek_2008_table_2:row5:col1 | — | not captured |
-| K&lt;el&gt; (h⁻¹) | `Q47` · kel | 0.58 | h⁻¹ | 0.0001611111111111111 | [1] / [h] | not captured | llm (0.6) | Baek_2008_table_3:row0:col1 | — | not captured |
-| K&lt;pc&gt; (h⁻¹) | `Q49` · kabs | 0.91 | h⁻¹ | 0.00025277777777777777 | [1] / [h] | not captured | llm (0.6) | Baek_2008_table_3:row3:col1 | — | not captured |
-| T&lt;1/α&gt; (h) | `Q59` · t1/2α | 0.88 | h | 3168.0 | [h] | not captured | llm (0.6) | Baek_2008_table_3:row4:col1 | — | not captured |
-| T&lt;1/β&gt; (h) | `Q60` · t1/2β | 4.83 | h | 17388.0 | [h] | not captured | llm (0.6) | Baek_2008_table_3:row5:col1 | — | not captured |
+| Kel (h⁻¹) | `Q47` · kel | 0.58 | h⁻¹ | 0.0001611111111111111 | [1] / [h] | not captured | exact (1.0) | Baek_2008_table_3:row0:col1 | — | not captured |
+| Ksp (h⁻¹) | `Q95` · t1/2ka | 1.84 | h⁻¹ | not captured | [1] / [h] | not captured | llm (0.6) | Baek_2008_table_3:row2:col1 | — | not captured |
+| Kpc (h⁻¹) | `Q302` · k21 | 0.91 | h⁻¹ | 0.00025277777777777777 | [1] / [h] | not captured | exact (1.0) | Baek_2008_table_3:row3:col1 | — | not captured |
+| T1/α (h) | `Q59` · t1/2α | 0.88 | h | 3168.0 | [h] | not captured | llm (0.6) | Baek_2008_table_3:row4:col1 | — | not captured |
+| T1/β (h) | `Q60` · t1/2β | 4.83 | h | 17388.0 | [h] | not captured | llm (0.6) | Baek_2008_table_3:row5:col1 | — | not captured |
+| ka (h -1 ) | `Q49` · kabs | 0.704 | h -1 | 0.00019555555555555553 | 1/h | not captured | review_gapfill (0.7) | Jia_2011:review | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -60,10 +61,8 @@ Baek IH et al., Pharmacokinetic/pharmacodynamic modelin…, Archives of pharmaca
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_unknown: 'μg h/mL' (AUCt)
-- dropped duplicate Q47 ('K&lt;e&gt; (h⁻¹)', value '0.53') — already have one for this compound
-- dropped duplicate Q47 ('K&lt;sp&gt; (h⁻¹)', value '1.84') — already have one for this compound
-- implicit units: 'AUC&lt;0-24hr&gt; (μg h/mL)' — the LLM proposed 'μg h/mL', whose dimension does not fit Q19; left unset
+- dropped PD-category row 'Ke0 (h⁻¹)' → Q326 (ke0, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Baek_2008_table_3:row1:col1'])
+- unit_dimension_mismatch: 'Ksp (h⁻¹)' → Q95 (unit '1 / [time]' vs ontology '[time]') — route to review
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=atenolol
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
@@ -71,7 +70,7 @@ Baek IH et al., Pharmacokinetic/pharmacodynamic modelin…, Archives of pharmaca
 - population split: 'atenolol (50 mg)' subgroup of Baek_2008 (paper reports 2 populations: atenolol (50 mg), carvedilol (25 mg))
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
-- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
+- gap-filled Q49 (kabs) from Jia_2011's review values (primary lacked it)
 
 **Extraction notes:**
 - no TEI final-model table id; trying text-pointer table recovery
@@ -108,18 +107,20 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 9 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 10 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q19 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Baek_2008_table_2:row0:col1'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Baek_2008_table_2:row5:col1'] |
+| C5_dimension_Q302 | pass | 1 / [time] | not captured | not captured | not captured | ['Baek_2008_table_3:row3:col1'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Baek_2008_table_2:row2:col1'] |
 | C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['Baek_2008_table_3:row0:col1'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Baek_2008_table_3:row3:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Jia_2011:review'] |
 | C5_dimension_Q56 | pass | [time] | not captured | not captured | not captured | ['Baek_2008_table_2:row3:col1'] |
 | C5_dimension_Q59 | pass | [time] | not captured | not captured | not captured | ['Baek_2008_table_3:row4:col1'] |
 | C5_dimension_Q60 | pass | [time] | not captured | not captured | not captured | ['Baek_2008_table_3:row5:col1'] |
 | C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Baek_2008_table_2:row4:col1'] |
-| C5_unit_missing_Q19 | fail | [mass] * [time] / [length] ** 3 | μg h/mL | not captured | not captured | ['Baek_2008_table_2:row0:col1'] |
+| C5_dimension_Q95 | fail | 1 / [time] | h⁻¹ | not captured | not captured | ['Baek_2008_table_3:row2:col1'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 18.1 L/h | not captured | not captured | ['Baek_2008_table_2:row5:col1'] |
@@ -132,24 +133,14 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_atenolol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Baek_2008` / `Baek_2008::atenolol_50_mg`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_atenolol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Baek_2008` / `Baek_2008::atenolol_50_mg`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-</tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -158,4 +149,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 23:08 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 19:54 UTC</sub>

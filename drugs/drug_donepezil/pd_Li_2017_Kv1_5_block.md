@@ -20,9 +20,9 @@
 
 **Model:** No model was generated from this record.
 
-> Donepezil concentrations (μM) inhibit Kv1.5 current (%), described by a sigmoid Emax model with an IC50 of 72.5 μM; the paper excerpts do not state the mechanism beyond this concentration–response inhibition.
+> Donepezil produces a rapid and reversible direct block of Kv1.5 currents with an IC50 of 72.5 μM, as described by a Hill equation with a Hill coefficient of 3.4. The paper does not specify a pharmacokinetic rate parameter for this effect.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Li_2017`
 - **model family:** `sigmoid_emax`

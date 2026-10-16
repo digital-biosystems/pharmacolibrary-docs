@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05A&quot;,&quot;href&quot;:&quot;atc/N05A.md&quot;},{&quot;label&quot;:&quot;clozapine&quot;,&quot;href&quot;:&quot;drugs/drug_clozapine/&quot;},{&quot;label&quot;:&quot;Reeves_2024 \u00b7 base&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clozapine_Geers2022_reference&quot;,&quot;label&quot;:&quot;Geers_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clozapine/Clozapine_Geers2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clozapine_Geers2022_reference&quot;,&quot;label&quot;:&quot;Geers_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clozapine/Clozapine_Geers2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Parker_2001_beta_EEG&quot;,&quot;label&quot;:&quot;Parker_2001 \u00b7 beta EEG&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_clozapine/pd_Parker_2001_beta_EEG.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Parker_2001_theta_EEG&quot;,&quot;label&quot;:&quot;Parker_2001 \u00b7 theta EEG&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_clozapine/pd_Parker_2001_theta_EEG.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Shang_2014_PANSS&quot;,&quot;label&quot;:&quot;Shang_2014 \u00b7 PANSS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_clozapine/pd_Shang_2014_PANSS.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # clozapine — `Clozapine_Reeves2024_base`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -17,70 +17,63 @@
 
 ### Reviewer guidance
 
-**The clozapine parameter labelled V/F actually holds kf, the fraction (0.66) of clozapine V/F converted to norclozapine V/F, so a dimensionless fraction was recorded as a volume of distribution, causing a dimension mismatch on a structural parameter.**
+**V/F has no unit.**
 
-In the Reeves_2024 record for clozapine and its metabolite norclozapine, the parameter named V/F carries the verbatim label 'k f, the fraction of V/F clozapine converted to V/F norclozapine' with value 0.66, while its meaning is 'V/F: Volume of distribution adjusted for bioavailability (F)'. A fraction of 0.66 is dimensionless and cannot be a volume in L, so the structural parameter fails the dimension check and the model was rejected. Additionally, the absorption rate constant kabs = 0.69 was reported in a unit (h À1) that could not be converted to SI, so that parameter reached the model without an SI value. The two readers also disagreed on the clozapine CL/F covariate entries: this record has no value for the inter-individual variability on CL/F where the second reader read 93, and this record has 0.37 for the smoker effect on CL/F where the second reader read none. Extracted — norclozapine: C0 0.02 mg L−1; clozapine: V/F 0.66, kabs 0.69 h À1, CL/F 23.2 L h À1.
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (V/F), so that value has no SI equivalent. Extracted — clozapine: V/F 0.66 23, CL/F 30.3 L h À1.
 
-<sub>reviewed by glm-5.3-flash</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Reeves S et al., A population pharmacokinetic model to g…, British journal of clinical… (2024)
   ·  DOI: [10.1111/bcp.15691](https://doi.org/10.1111/bcp.15691)
 
-<div class="pk-model-meta" hidden drug="clozapine" model-id="Clozapine_Reeves2024_base" status="rejected" stale="false" population="patients with treatment-resistant schizophrenia on clozapine TDM" measured-compound="clozapine" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="clozapine" model-id="Clozapine_Reeves2024_base" status="needs_review" stale="false" population="patients with schizophrenia" measured-compound="clozapine" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
-**Parameters:** 4 extracted.
+**Parameters:** 2 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| α-intercept Norclozapine (mg L−1) | `Q86` · C0 | 0.02 | mg L−1 | not captured | [mg] / [l] | not captured | llm (0.6) | Reeves_2024_table_3:row1:col2 | — | not captured |
-| k f , the fraction of V/F clozapine converted to V/F norclozapine | `Q76` · V/F | 0.66 | not captured | not captured | L | not captured | boundary (0.8) | Reeves_2024:results_prose | — | not captured |
-| K a (h À1 ; fixed) | `Q49` · kabs | 0.69 | h À1 | 0.00019166666666666665 | 1/h | not captured | space_fold (0.95) | Reeves_2024:other_prose | — | not captured |
-| CL/F clozapine (L h À1 ) | `Q27` · CL/F | 23.2 | L h À1 | 6.444444444444444e-06 | L/h | not captured | boundary (0.8) | Reeves_2024:other_prose | — | not captured |
+| k f , the fraction of V/F clozapine converted to V/F norclozapine | `Q76` · V/F | 0.66 | 23 | not captured | 23 | not captured | boundary (0.8) | Reeves_2024:results_prose | — | not captured |
+| CL/F clozapine | `Q27` · CL/F | 30.3 | L h À1 | 8.416666666666667e-06 | L/h | not captured | boundary (0.8) | Reeves_2024:results_prose | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
+### Unresolved rows _(no Q-code or no value — not parameters)_
+| label (paper) | Q-code | value | link |
+|---|---|---|---|
+| clozapinei | Q22 | not captured | exact |
+
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_mismatch: 'α-intercept Norclozapine (mg L−1)' → Q86 (unit '[mass] / [length] ** 3' vs ontology '[mass] * [time] / [length] ** 3') — route to review
-- dropped PD-category row 'α-slope Norclozapine' → Q335 (slope, category G13) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Reeves_2024_table_3:row2:col2'])
 - salvaged Q76 ('k f , the fraction of V/F clozapine converted to V/F norclozapine'=0.66) from results prose — parameter table was unreadable
-- salvaged Q49 ('K a (h À1 ; fixed)'=0.69) from results prose — parameter table was unreadable
-- salvaged Q27 ('CL/F clozapine (L h À1 )'=23.2) from results prose — parameter table was unreadable
+- salvaged Q27 ('CL/F clozapine'=30.3) from results prose — parameter table was unreadable
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=clozapine
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - template fit: PK_3M_9C — formed from central; parent 1, metabolites [0]
+- bound model equation to Q22 (CL): clozapinei = μCL/F clozapine *(weight/70)^0.75 * (age i -40)^
+- Q22 (CL) is equation-defined: value moved to equation-variable 'clozapinei'; equation kept verbatim
 - status held at route_to_review — not promoted
-- model-stage split: 'base model parameter estimates' is the base model of Reeves_2024 (paper reports 15 stages: age exp cl/fclozapine parameter estimates, base model parameter estimates, base model relative standard error (%), ethnic cl/fclozapine parameter estimates, sex cl/fclozapine parameter estimates, smoke cl/fclozapine parameter estimates, β afro-caribbean_cl/ 
-f_clozapine, β asian_cl/ 
-f_clozapine, β female_cl/ 
-f_clozapine, β smoking_cl/ 
-f_clozapine, β weight_cl/ 
-f_clozapine, β weight_cl/ 
-f_norclozapine, β weight_v/ 
-f_clozapine, β weight_v/ 
-f_norclozapine, σ₀_ᵢₙₜₑᵣcₑₚₖ clozapine (mg l⁻¹)); same population, different model-building step
-- row roles: 4 per-group rows of clozapine covariate_effect but 0 reference group(s) — kept as printed
-- row roles: 4 per-group rows of clozapine variability but 0 reference group(s) — kept as printed
-- row roles (LLM): model_class=compartmental; 12/12 row label(s) assigned, 15 linked by role; re-tagged clozapine→parent ×122, parent→norclozapine ×4, clozapine→norclozapine ×16
+- model-stage split: 'base model' is the base model of Reeves_2024 (paper reports 6 stages: age exp cl/f_clazapine parameter estimates, base model, base model parameter estimates, ethnic cl/f_clazapine parameter estimates, sex cl/f_clazapine parameter estimates, smoke cl/f_clazapine parameter estimates); same population, different model-building step
+- row roles: 3 per-group rows of clozapine covariate_effect but 0 reference group(s) — kept as printed
+- row roles (LLM): model_class=compartmental; 22/22 row label(s) assigned, 25 linked by role; re-tagged parent→norclozapine ×34, clozapine→norclozapine ×16
 - skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
-- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
 - no TEI final-model table id; trying text-pointer table recovery
 - LLM selected parameter table(s) 2, 3
-- transposed table Reeves_2024_table_2: parameters were across the columns, populations/subgroups down the first column — transposed for parsing
+- table Reeves_2024_table_2: unbound_uncertainty
+- captured model equation clozapinei = μCL/F clozapine *(weight/70)^0.75 * (age i -40)^
 
 ## Validation
 
@@ -88,14 +81,13 @@ f_norclozapine, σ₀_ᵢₙₜₑᵣcₑₚₖ clozapine (mg l⁻¹)); same pop
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q86 | fail | [mass] / [length] ** 3 | mg L−1 | not captured | not captured | ['Reeves_2024_table_3:row1:col2'] |
-| C5_unit_missing_Q76 | fail | [length] ** 3 | not captured | not captured | not captured | ['Reeves_2024:results_prose'] |
+| C5_unit_missing_Q76 | fail | [length] ** 3 | 23 | not captured | not captured | ['Reeves_2024:results_prose'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 23.2 L/h | not captured | not captured | ['Reeves_2024:other_prose'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 30.3 L/h | not captured | not captured | ['Reeves_2024:results_prose'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -104,14 +96,24 @@ f_norclozapine, σ₀_ᵢₙₜₑᵣcₑₚₖ clozapine (mg l⁻¹)); same pop
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_clozapine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Reeves_2024` / `Reeves_2024::base`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_clozapine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Reeves_2024` / `Reeves_2024::base`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -120,4 +122,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 15:14 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 20:23 UTC</sub>

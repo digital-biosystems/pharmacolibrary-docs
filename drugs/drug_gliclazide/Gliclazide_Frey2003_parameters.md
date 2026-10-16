@@ -5,7 +5,7 @@
 
 # gliclazide — `Gliclazide_Frey2003_parameters`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.583). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -21,7 +21,7 @@
 
 The reported parameters (AUCt 20 mg.h ml-1, t1/2z 21 day, CL/F 15 ml min-1, V/F 19 l) were extracted, but ka and Tlag had no source values and library placeholders were substituted, which the adjudication judged not acceptable for the invented absorption. The model also assumes F=1 and Fm=1 with no molar correction, giving an apparent (/F) parameterization with first-order depot input for extravascular dosing. Additionally, the AUCt unit mg.h ml-1 could not be converted to SI units, so that parameter was carried without an SI value. Extracted — gliclazide: AUCt 20 mg.h ml -1, t1/2z 21 day, CL/F 15 ml min -1, V/F 19 l.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of absorption rate constant: this record has 1.4, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has gliclazide, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -82,21 +82,25 @@ Frey N et al., Population PKPD modelling of the long-t…, British journal of cl
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.583 (7/12 fields) | 5 |
+| `gpt-oss-120b` | not confirmed | 0.25 (3/12 fields) | 9 |
 
-<details><summary>5 field discrepancies</summary>
+<details><summary>9 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `parameters[absorption rate constant]` | 1.4 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[equilibration half-life].parameter_id` | Q57 | Q59 | mismatch |
+| `gpt-oss-120b` | `parameters[apparent clearance]` | 15 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[apparent clearance]` | not captured | 15 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[apparent volume of distribution]` | 19 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[apparent volume of distribution]` | not captured | 19 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[gliclazide auc 50].parameter_id` | Q19 | Q88 | mismatch |
 | `gpt-oss-120b` | `parameters[gliclazide auc 50].value` | 20 | 60 | mismatch |
-| `gpt-oss-120b` | `parameters[rate constant of equilibration k eq]` | not captured | 84 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | gliclazide | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | gliclazide | unknown | mismatch |
 
 </details>
 
@@ -141,10 +145,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_gliclazide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Frey_2003` / `Frey_2003::parameters`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_gliclazide/models/modelica/Gliclazide_Frey2003_parameters.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_gliclazide/models/modelica/Gliclazide_Frey2003_parameters.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_gliclazide/models/modelica/Gliclazide_Frey2003_parameters.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_gliclazide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Frey_2003` / `Frey_2003::parameters`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_gliclazide/models/modelica/Gliclazide_Frey2003_parameters.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_gliclazide/models/modelica/Gliclazide_Frey2003_parameters.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_gliclazide/models/modelica/Gliclazide_Frey2003_parameters.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

@@ -195,9 +195,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_emicizumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Retout_2020` / `Retout_2020::1_5_mg_kg_qw`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_emicizumab/models/modelica/_needs_review/Emicizumab_Retout2020_1_5_mg_kg_qw.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_emicizumab/models/modelica/_needs_review/Emicizumab_Retout2020_1_5_mg_kg_qw.deviation.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_emicizumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Retout_2020` / `Retout_2020::1_5_mg_kg_qw`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_emicizumab/models/modelica/_needs_review/Emicizumab_Retout2020_1_5_mg_kg_qw.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_emicizumab/models/modelica/_needs_review/Emicizumab_Retout2020_1_5_mg_kg_qw.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

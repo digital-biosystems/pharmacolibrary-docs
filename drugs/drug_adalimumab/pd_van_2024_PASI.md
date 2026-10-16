@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;adalimumab&quot;,&quot;href&quot;:&quot;drugs/drug_adalimumab/&quot;},{&quot;label&quot;:&quot;van_2024 \u00b7 PD PASI&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Adalimumab_RodrguezFernndez2022_reference&quot;,&quot;label&quot;:&quot;Rodr\u00edguez-Fern\u00e1ndez_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_adalimumab/Adalimumab_RodrguezFernndez2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Adalimumab_Chan2020_reference&quot;,&quot;label&quot;:&quot;Chan_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_adalimumab/Adalimumab_Chan2020_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Adalimumab_van2024_reference&quot;,&quot;label&quot;:&quot;van_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_adalimumab/Adalimumab_van2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Adalimumab_RodrguezFernndez2022_reference&quot;,&quot;label&quot;:&quot;Rodr\u00edguez-Fern\u00e1ndez_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_adalimumab/Adalimumab_RodrguezFernndez2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Adalimumab_Ternant2015_reference&quot;,&quot;label&quot;:&quot;Ternant_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_adalimumab/Adalimumab_Ternant2015_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # PASI — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
@@ -18,7 +18,7 @@
 
 **Model:** Model available in **Models**; browser simulation unavailable.
 
-> Adalimumab serum concentrations inhibit the formation rate (Kin) of the PASI response via an indirect response turnover model, with elimination governed by Kout. The model was characterized by an IC50 of 1.19 mg/L, a Kout of 0.0314 1/day, and a fixed Emax of 100%.
+> Adalimumab plasma concentrations inhibit the formation rate of psoriatic skin lesions (K_in) to affect PASI scores through an indirect response model where K_out represents the remission rate. The model was characterized by an IC50 of 1.19 mg/L, a K_out of 0.0314 1/day, and an Emax fixed to 1 (100% inhibition).
 >
 > <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
@@ -35,9 +35,10 @@ van Huizen A et al., Quantifying the Effect of Methotrexate…, The Journal of i
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | K out | `Q328` · not captured | 0.0314 | 1/day | not captured | llm (not captured) | van_2024:pdv3 |
-| PD (effect) | IC 50 | `Q322` · not captured | 1.19 | mg/l | not captured | llm (not captured) | van_2024:pdv3 |
-| variability | Interindividual variability IC 50 | `Q312` · not captured | 152.6% | not captured | not captured | llm (not captured) | van_2024:pdv3 |
+| PD (effect) | IC50 | `Q322` · not captured | 1.19 | mg/l | not captured | llm (not captured) | van_2024:pdv3 |
+| PD (effect) | Emax | `Q323` · not captured | 1 | not captured | not captured | llm (not captured) | van_2024:pdv3 |
+| PD (effect) | Kout | `Q328` · not captured | 0.0314 | 1/day | not captured | llm (not captured) | van_2024:pdv3 |
+| variability | Interindividual variability IC50 | `Q312` · not captured | 152.6% | not captured | not captured | llm (not captured) | van_2024:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -60,7 +61,7 @@ Closed-form check points (response, SI): `at_0` = 0, `at_EC50` = 0, `at_inf` = 0
 
 Deviations:
 
-- `defaulted_parameters` — E0, Emax, gamma
+- `defaulted_parameters` — E0, gamma
 
 ## Review
 
@@ -73,11 +74,11 @@ Verdict <span class="pk-badge pk-badge--orange">needs review</span> · route to 
 | `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
 | `T2_direction` | skipped | effect_direction 'inhibition' |
 | `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
-| `T4_defaults` | fail | a core parameter took a library default: E0, Emax |
+| `T4_defaults` | fail | a core parameter took a library default: E0 |
 
 Advisory:
 
-- defaulted: E0, Emax — a row the paper has and the record lacks
+- defaulted: E0 — a row the paper has and the record lacks
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
@@ -101,7 +102,7 @@ _All readers agree on the compared fields of this PD record._
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_adalimumab/Adalimumab_van2024_PD_pasi/Adalimumab_van2024_PD_pasi_modelica.zip" download>Adalimumab_van2024_PD_pasi_modelica.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_adalimumab/Adalimumab_van2024_PD_pasi/Adalimumab_van2024_PD_pasi_modelica.zip" download>Adalimumab_van2024_PD_pasi_modelica.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_adalimumab/Adalimumab_van2024_PD_pasi/Adalimumab_van2024_PD_pasi_matlab.zip" download>Adalimumab_van2024_PD_pasi_matlab.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>

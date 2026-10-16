@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C08C&quot;,&quot;href&quot;:&quot;atc/C08C.md&quot;},{&quot;label&quot;:&quot;nisoldipine&quot;,&quot;href&quot;:&quot;drugs/drug_nisoldipine/&quot;},{&quot;label&quot;:&quot;Schaefer_1997 \u00b7 PD diastolic blood pressure (supine)&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C08C&quot;,&quot;href&quot;:&quot;atc/C08C.md&quot;},{&quot;label&quot;:&quot;nisoldipine&quot;,&quot;href&quot;:&quot;drugs/drug_nisoldipine/&quot;},{&quot;label&quot;:&quot;Schaefer_1997 \u00b7 PD diastolic blood pressure, supine&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# diastolic blood pressure (supine) — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
+# diastolic blood pressure, supine — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -13,19 +13,19 @@
 
 ## Record summary
 
-**As extracted:** Nisoldipine drives diastolic blood pressure (supine) (in %): direct Emax (saturable) effect.
+**As extracted:** Nisoldipine drives diastolic blood pressure, supine: direct Emax (saturable) effect.
 
 **Model:** No model was generated from this record.
 
-> The model describes a direct Emax inhibition of supine diastolic blood pressure by nisoldipine plasma concentrations, with a maximum effect (Emax) of 36.4% and an EC50 of 0.99 micrograms.l-1. The paper does not provide further mechanistic details or rate constants.
+> The model relates nisoldipine plasma concentrations to a reduction in supine diastolic blood pressure via an Emax inhibition mechanism. Maximum inhibition is 36.4%, with an EC50 estimated between 0.99 and 2.62 micrograms/l.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Schaefer_1997`
 - **model family:** `emax`
 - **driver:** `not_resolved`
-- **tier:** population
-- **effect:** inhibition/proportional
+- **tier:** descriptive
+- **effect:** inhibition/unknown
 
 ## Citation
 Schaefer HG et al., Pharmacokinetic-pharmacodynamic modelli…, European journal of clinica… (1997)
@@ -35,7 +35,7 @@ Schaefer HG et al., Pharmacokinetic-pharmacodynamic modelli…, European journal
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
 | PD (effect) | Emax | `Q323` · not captured | 36.4 | % | not captured | direction (not captured) | Schaefer_1997:pdv3 |
-| PD (effect) | EC50 | `Q321` · not captured | 0.99 | micrograms.l-1 | not captured | llm (not captured) | Schaefer_1997:pdv3 |
+| PD (effect) | EC50 | `Q321` · not captured | 0.99 to 2.62 | micrograms.l-1 | not captured | llm (not captured) | Schaefer_1997:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -44,7 +44,7 @@ Schaefer HG et al., Pharmacokinetic-pharmacodynamic modelli…, European journal
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
@@ -54,8 +54,8 @@ Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `einfracz:gpt-oss-120b` | `effect_form` | proportional | additive | mismatch |
-| `einfracz:gpt-oss-120b` | `parameters[Q321]` | 0.99 | not captured | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `effect_form` | unknown | additive | mismatch |
+| `einfracz:gpt-oss-120b` | `parameters[Q321]` | 0.99 to 2.62 | not captured | only_one_extracted |
 
 </details>
 
@@ -67,19 +67,9 @@ Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-</tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

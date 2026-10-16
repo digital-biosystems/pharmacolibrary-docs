@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;lenalidomide&quot;,&quot;href&quot;:&quot;drugs/drug_lenalidomide/&quot;},{&quot;label&quot;:&quot;Liang_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lenalidomide_Gupta2019_reference&quot;,&quot;label&quot;:&quot;Gupta_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lenalidomide/Lenalidomide_Gupta2019_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lenalidomide_Papathanasiou2025_reference&quot;,&quot;label&quot;:&quot;Papathanasiou_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lenalidomide/Lenalidomide_Papathanasiou2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lenalidomide_Hughes2019_reference&quot;,&quot;label&quot;:&quot;Hughes_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lenalidomide/Lenalidomide_Hughes2019_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lenalidomide_Gupta2019_reference&quot;,&quot;label&quot;:&quot;Gupta_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lenalidomide/Lenalidomide_Gupta2019_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lenalidomide_Papathanasiou2025_reference&quot;,&quot;label&quot;:&quot;Papathanasiou_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lenalidomide/Lenalidomide_Papathanasiou2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lenalidomide_Liang2024_reference&quot;,&quot;label&quot;:&quot;Liang_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lenalidomide/Lenalidomide_Liang2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # lenalidomide — `Lenalidomide_Liang2024_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -13,40 +13,39 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
+
+> **Caveat** (`covariates_not_exercised`): Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.
 
 ### Reviewer guidance
 
-**V/F has no unit.**
+**Ka use library defaults, not estimates from this paper; the covariate scenarios were not simulated (+1 more).**
 
-Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (equation variable), so that value has no SI equivalent. Extracted — lenalidomide: kabs 6.55 h−1, CL/F 7.25 L/h, V1/F 29.1 L, V/F 55.4.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. The base model was simulated, not the covariate effects the record defines. Extracted — lenalidomide: CL/F 7.1 L/h, V/F 9.9 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has lenalidomide, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Liang X et al., Population pharmacokinetics of lenalido…, Scientific reports (2024)
   ·  DOI: [10.1038/s41598-024-52460-2](https://doi.org/10.1038/s41598-024-52460-2)
 
-<div class="pk-model-meta" hidden drug="lenalidomide" model-id="Lenalidomide_Liang2024_reference" status="needs_review" stale="false" population="Chinese patients" measured-compound="lenalidomide" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="lenalidomide" model-id="Lenalidomide_Liang2024_reference" status="needs_review" stale="false" population="Chinese patients with lymphoma, myelodysplastic syndrome, or myeloma" measured-compound="lenalidomide" parameterization="apparent" topology="1C"></div>
 
-**Model structure:** 2-compartment; no model was built for this record.  
-**Parameters:** 4 extracted.
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 2 extracted.
 
-**Parameterization:** CL/F, V/F, V1/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| θKa(h−1) | `Q49` · kabs | 6.55 | h−1 | 0.0018194444444444445 | [1] / [h] | not captured | llm_confirmed (0.6) | Tab4:row2:col1, Tab4:row2:col3 | — | not captured |
-| θCL/F(L/h) | `Q27` · CL/F | 7.25 | L/h | 2.013888888888889e-06 | [l] / [h] | not captured | llm_confirmed (0.6) | Tab4:row3:col1, Tab4:row3:col2, Tab4:row3:col3, Tab4:row3:col4 | — | not captured |
-| θV/F(L) | `Q290` · V1/F | 29.1 | L | 0.0291 | [l] | not captured | llm_corrected (0.6) | Tab4:row4:col1, Tab4:row4:col2, Tab4:row4:col3, Tab4:row4:col4 | — | not captured |
-| ηV/F(%) | `Q76` · V/F | 55.4 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | Tab4:row10:col1, Tab4:row10:col2, Tab4:row10:col3, Tab4:row10:col4 | — | not captured |
-| ε(ng/mL) | `Q900` · equation variable | 38.5 | ng/mL | not captured | [ng] / [ml] | not captured | llm (0.6) | Tab4:row11:col1, Tab4:row11:col2, Tab4:row11:col3, Tab4:row11:col4 | — | not captured |
-| θCHFY | `Q900` · θCHFY | 0.558 | not captured | not captured | not captured | not captured | not captured (not captured) | not captured | — | not captured |
+| θCL/F(L/h) | `Q27` · CL/F | 7.10 | L/h | 1.972222222222222e-06 | [l] / [h] | not captured | llm_confirmed (0.6) | Tab4:row3:col2 | — | not captured |
+| θV/F(L) | `Q76` · V/F | 9.90 | L | 0.0099 | [l] | not captured | llm_confirmed (0.6) | Tab4:row4:col2 | — | not captured |
+| θCHFY | `Q900` · θCHFY | 24.4 | not captured | not captured | not captured | not captured | not captured (not captured) | not captured | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -55,16 +54,28 @@ Liang X et al., Population pharmacokinetics of lenalido…, Scientific reports (
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['ka', 'Tlag']
+- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+- `invented_absorption`: ka defaulted — not reported in source
+- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
+
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'ABCBA 3435 C &gt; T = CT' — extend the ontology if this is a real PK parameter (source ['Tab4:row6:col1', 'Tab4:row6:col2', 'Tab4:row6:col3', 'Tab4:row6:col4'])
-- dropped unlinked row (NIL): 'ABCBA 3435 C &gt; T = TT' — extend the ontology if this is a real PK parameter (source ['Tab4:row7:col1', 'Tab4:row7:col2', 'Tab4:row7:col3', 'Tab4:row7:col4'])
-- kept covariate coefficient θCHFY=0.558 (covariate CHFY) — not an ontology parameter
-- dropped unlinked row (NIL): 'ηCL/F(%)' — extend the ontology if this is a real PK parameter (source ['Tab4:row9:col1', 'Tab4:row9:col2', 'Tab4:row9:col3', 'Tab4:row9:col4'])
-- implicit units: 'ηV/F(%)' — the LLM proposed '%', whose dimension does not fit Q76; left unset
+- dropped unlinked row (NIL): 'ABCBA 3435 C &gt; T = CT' — extend the ontology if this is a real PK parameter (source ['Tab4:row6:col2'])
+- dropped unlinked row (NIL): 'ABCBA 3435 C &gt; T = TT' — extend the ontology if this is a real PK parameter (source ['Tab4:row7:col2'])
+- kept covariate coefficient θCHFY=24.4 (covariate CHFY) — not an ontology parameter
+- unit_dimension_mismatch: 'ηCL/F(%)' → Q27 (unit 'dimensionless' vs ontology '[length] ** 3 / [time]') — route to review
+- dropped duplicate Q27 ('ηCL/F(%)', value '17.1') — already have one for this compound
+- unit_dimension_mismatch: 'ηV/F(%)' → Q76 (unit 'dimensionless' vs ontology '[length] ** 3') — route to review
+- dropped duplicate Q76 ('ηV/F(%)', value '17.0') — already have one for this compound
+- dropped unlinked row (NIL): 'ε(ng/mL)' — extend the ontology if this is a real PK parameter (source ['Tab4:row11:col2'])
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=lenalidomide
-- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
+- table Tab4: unbound_uncertainty
+- table Tab4: ragged_grid
 - LLM selected parameter table(s) 4
 
 ## Validation
@@ -105,17 +116,27 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab4:row3:col1', 'Tab4:row3:col2', 'Tab4:row3:col3', 'Tab4:row3:col4'] |
-| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab4:row4:col1', 'Tab4:row4:col2', 'Tab4:row4:col3', 'Tab4:row4:col4'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Tab4:row2:col1', 'Tab4:row2:col3'] |
-| C5_unit_missing_Q76 | fail | [length] ** 3 | not captured | not captured | not captured | ['Tab4:row10:col1', 'Tab4:row10:col2', 'Tab4:row10:col3', 'Tab4:row10:col4'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab4:row3:col2'] |
+| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab4:row4:col2'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 7.25 L/h | not captured | not captured | ['Tab4:row3:col1', 'Tab4:row3:col2', 'Tab4:row3:col3', 'Tab4:row3:col4'] |
-| C9_phys_window_Q290 | pass | volume within physiological range | 29.1 L | not captured | not captured | ['Tab4:row4:col1', 'Tab4:row4:col2', 'Tab4:row4:col3', 'Tab4:row4:col4'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 7.1 L/h | not captured | not captured | ['Tab4:row3:col2'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 9.9 L | not captured | not captured | ['Tab4:row4:col2'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_output_variable | not captured | pass | C_central (measured=lenalidomide) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable; invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -124,7 +145,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_lenalidomide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Liang_2024` / `Liang_2024::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_lenalidomide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Liang_2024` / `Liang_2024::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_lenalidomide/models/modelica/Lenalidomide_Liang2024_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_lenalidomide/models/modelica/Lenalidomide_Liang2024_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_lenalidomide/models/modelica/Lenalidomide_Liang2024_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -133,21 +157,26 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_lenalidomide/Lenalidomide_Liang2024_reference/Lenalidomide_Liang2024_reference_modelica.zip" download>Lenalidomide_Liang2024_reference_modelica.zip</a> <span class="pk-size">(4.9 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_lenalidomide/Lenalidomide_Liang2024_reference/Lenalidomide_Liang2024_reference_fmi.zip" download>Lenalidomide_Liang2024_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_lenalidomide/Lenalidomide_Liang2024_reference/Lenalidomide_Liang2024_reference_matlab.zip" download>Lenalidomide_Liang2024_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_lenalidomide/Lenalidomide_Liang2024_reference/Lenalidomide_Liang2024_reference_matlab_simbio.zip" download>Lenalidomide_Liang2024_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_lenalidomide/Lenalidomide_Liang2024_reference/Lenalidomide_Liang2024_reference_sbml.zip" download>Lenalidomide_Liang2024_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_lenalidomide/Lenalidomide_Liang2024_reference/Lenalidomide_Liang2024_reference_cellml.zip" download>Lenalidomide_Liang2024_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_lenalidomide/Lenalidomide_Liang2024_reference/Lenalidomide_Liang2024_reference.svg" alt="Lenalidomide_Liang2024_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+**Administration: oral** — 10 mg, single dose, first-order absorption (ka 0.5 /h, F 1). Doses in the paper: 10, 25 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_lenalidomide/Lenalidomide_Liang2024_reference/Lenalidomide_Liang2024_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_lenalidomide/Lenalidomide_Liang2024_reference/Lenalidomide_Liang2024_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C_enteral` · parameters `Lenalidomide_Liang2024_reference_params.json` · controls `Lenalidomide_Liang2024_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 00:03 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 04:14 UTC</sub>

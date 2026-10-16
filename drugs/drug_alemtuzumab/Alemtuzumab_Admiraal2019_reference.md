@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01X&quot;,&quot;href&quot;:&quot;atc/L01X.md&quot;},{&quot;label&quot;:&quot;alemtuzumab&quot;,&quot;href&quot;:&quot;drugs/drug_alemtuzumab/&quot;},{&quot;label&quot;:&quot;Admiraal_2019 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Alemtuzumab_Dong2022_reference&quot;,&quot;label&quot;:&quot;Dong_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alemtuzumab/Alemtuzumab_Dong2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Alemtuzumab_Dong2022_reference&quot;,&quot;label&quot;:&quot;Dong_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alemtuzumab/Alemtuzumab_Dong2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Dong_2022_ALC&quot;,&quot;label&quot;:&quot;Dong_2022 \u00b7 ALC&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_alemtuzumab/pd_Dong_2022_ALC.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Mould_2007_WBC&quot;,&quot;label&quot;:&quot;Mould_2007 \u00b7 WBC&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_alemtuzumab/pd_Mould_2007_WBC.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_van_2025_Tcells&quot;,&quot;label&quot;:&quot;van_2025 \u00b7 Tcells&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_alemtuzumab/pd_van_2025_Tcells.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,22 +17,22 @@
 
 ### Reviewer guidance
 
-**The record was rejected because the maximum metabolic rate for alemtuzumab is reported in arbitrary units, preventing conversion to standard SI units.**
+**C5 dimension mismatch on a structural parameter.**
 
-The maximum rate of metabolism by an enzymatically mediated reaction is reported as 0.4 AU/day. This unit could not be converted to SI, so the parameter lacked a standard value. Consequently, a dimension mismatch check failed on this structural parameter. Extracted — alemtuzumab: CL 0.24 L/day, V2 0.74 factor of V1, Q 0.2 L/day, D1 0.75 h, Vmax 0.4 AU/day, Km 1.48 AU/L.
+A reported unit could not be converted (V2, Vmax and Km), so that value has no SI equivalent. Extracted — alemtuzumab: CL 0.24 L/day, V1 2 L, V2 0.74 factor of V1, Q 0.2 L/day, D1 0.75 h, Vmax 0.4 AU/day, Km 1.48 AU/L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has alemtuzumab, the second reading unknown; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Admiraal R et al., Population Pharmacokinetics of Alemtuzu…, Clinical pharmacokinetics (2019)
   ·  DOI: [10.1007/s40262-019-00782-0](https://doi.org/10.1007/s40262-019-00782-0)
 
-<div class="pk-model-meta" hidden drug="alemtuzumab" model-id="Alemtuzumab_Admiraal2019_reference" status="rejected" stale="false" population="pediatric hematopoietic cell transplantation patients" measured-compound="alemtuzumab" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="alemtuzumab" model-id="Alemtuzumab_Admiraal2019_reference" status="rejected" stale="false" population="pediatric hematopoietic cell transplantation patients" measured-compound="alemtuzumab" parameterization="mechanistic" topology="2C"></div>
 
-**Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 6 extracted.
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 7 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -41,44 +41,41 @@ Admiraal R et al., Population Pharmacokinetics of Alemtuzu…, Clinical pharmaco
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CLpop (L/day) | `Q22` · CL | 0.24 | L/day | 2.777777777777778e-09 | [l] / [d] | 0.25 | llm (0.6) | Tab2:row4:col1, Tab2:row4:col3, Tab2:row4:col4 | — | not captured |
-| V2,pop (factor of V1) | `Q64` · V2 | 0.74 | factor of V1 | not captured | [factorofv1] | 0.7 | llm_confirmed (0.6) | Tab2:row10:col1, Tab2:row10:col3, Tab2:row10:col4 | — | not captured |
-| Q (L/day) | `Q30` · Q | 0.2 | L/day | 2.3148148148148148e-09 | [l] / [d] | 0.18 | exact (1.0) | Tab2:row12:col1, Tab2:row12:col3, Tab2:row12:col4 | — | not captured |
-| d | `Q310` · D1 | 0.75 | h | 2700.0 | h | 0.74 | exact (1.0) | Tab2:row13:col1, Tab2:row13:col3, Tab2:row13:col4 | — | not captured |
-| Vmax,pop (AU/day) | `Q66` · Vmax | 0.4 | AU/day | not captured | [au] / [d] | 0.42 | llm_confirmed (0.6) | Tab2:row14:col1, Tab2:row14:col3, Tab2:row14:col4 | — | not captured |
-| Km,pop (AU/L) | `Q1` · Km | 1.48 | AU/L | not captured | [au] / [l] | 1.38 | llm_confirmed (0.6) | Tab2:row15:col1, Tab2:row15:col3, Tab2:row15:col4 | — | not captured |
+| CLpop (L/day) | `Q22` · CL | 0.24 | L/day | 2.777777777777778e-09 | [l] / [d] | not captured | llm (0.6) | Admiraal_2019_table_p7_1:row2:col3 | — | not captured |
+| a | `Q900` · equation variable | 0.043 | not captured | not captured | not captured | not captured | llm (0.6) | Admiraal_2019_table_p7_1:row3:col3 | — | not captured |
+| V1,pop (L) | `Q63` · V1 | 2 | L | 0.002 | [l] | not captured | llm_confirmed (0.6) | Admiraal_2019_table_p7_1:row6:col3 | — | not captured |
+| V2,pop (factor of V1) | `Q64` · V2 | 0.74 | factor of V1 | not captured | [factorofv1] | not captured | llm_confirmed (0.6) | Admiraal_2019_table_p7_1:row8:col3 | — | not captured |
+| Q (L/day) | `Q30` · Q | 0.2 | L/day | 2.3148148148148148e-09 | [l] / [d] | not captured | exact (1.0) | Admiraal_2019_table_p7_1:row10:col3 | — | not captured |
+| d | `Q310` · D1 | 0.75 | h | 2700.0 | h | not captured | exact (1.0) | Admiraal_2019_table_p7_1:row11:col3 | — | not captured |
+| Vmax,pop (AU/day) | `Q66` · Vmax | 0.4 | AU/day | not captured | [au] / [d] | not captured | llm_confirmed (0.6) | Admiraal_2019_table_p7_1:row12:col3 | — | not captured |
+| Km,pop (AU/L) | `Q1` · Km | 1.48 | AU/L | not captured | [au] / [l] | not captured | llm_confirmed (0.6) | Admiraal_2019_table_p7_1:row13:col3 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
-### Unresolved rows _(no Q-code or no value — not parameters)_
-| label (paper) | Q-code | value | link |
-|---|---|---|---|
-| V1,i=V1,pop×WTWTmedc | Q63 | not captured | llm_confirmed |
-
 ## Departures & gaps
 
 **Interpretation flags:**
-- column '1000 bootstrap replicates (96.1% successful)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- dropped unlinked row (NIL): 'a' — extend the ontology if this is a real PK parameter (source ['Tab2:row5:col1', 'Tab2:row5:col3', 'Tab2:row5:col4'])
-- dropped duplicate Q63 ('V1,pop (L)', value '2') — already have one for this compound
-- dropped unlinked row (NIL): 'c' — extend the ontology if this is a real PK parameter (source ['Tab2:row9:col1', 'Tab2:row9:col3', 'Tab2:row9:col4'])
+- column 'median' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- dropped duplicate Q900 ('b', value '-0.6') — already have one for this compound
+- dropped unlinked row (NIL): 'c' — extend the ontology if this is a real PK parameter (source ['Admiraal_2019_table_p7_1:row7:col3'])
 - unit_dimension_unknown: 'factor of V1' (V2)
 - unit_dimension_mismatch: 'Vmax,pop (AU/day)' → Q66 (unit '[length] / [time]' vs ontology '[length] ** 3') — route to review
 - unit_dimension_mismatch: 'Km,pop (AU/L)' → Q1 (unit '1 / [length] ** 2' vs ontology '[mass] / [length] ** 3') — route to review
 - routed 'Interindividual variability on CL (%)' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
 - routed 'Interindividual variability on V1 (%)' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
 - routed 'Interindividual variability on Km (%)' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
-- implicit units: 'd' → h (from the popPK convention: "The parameter 'd' represents the duration of a zero-order input (infusion). In population pharmacokinetic modeling, time")
+- implicit units: 'd' → h (from the popPK convention: "The parameter 'd' represents the 'Duration of a zero-order input (infusion)'. In pharmacokinetic modeling, time paramete")
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=alemtuzumab
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - status held at route_to_review — not promoted
 - molar mass: none found for 'alemtuzumab' — its concentrations stay mass-only
 
 **Extraction notes:**
+- table Admiraal_2019_table_p7_1: unbound_uncertainty
+- table Admiraal_2019_table_p7_1: unparsed_numeric_cell
 - LLM selected parameter table(s) 2
 
 ## Validation
@@ -123,18 +120,20 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 7 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q1 | fail | 1 / [length] ** 2 | AU/L | not captured | not captured | ['Tab2:row15:col1', 'Tab2:row15:col3', 'Tab2:row15:col4'] |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row4:col1', 'Tab2:row4:col3', 'Tab2:row4:col4'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row12:col1', 'Tab2:row12:col3', 'Tab2:row12:col4'] |
-| C5_dimension_Q310 | pass | [time] | not captured | not captured | not captured | ['Tab2:row13:col1', 'Tab2:row13:col3', 'Tab2:row13:col4'] |
-| C5_dimension_Q66 | fail | [length] / [time] | AU/day | not captured | not captured | ['Tab2:row14:col1', 'Tab2:row14:col3', 'Tab2:row14:col4'] |
-| C5_unit_missing_Q64 | fail | [length] ** 3 | factor of V1 | not captured | not captured | ['Tab2:row10:col1', 'Tab2:row10:col3', 'Tab2:row10:col4'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.24 | not captured | not captured | ['Tab2:row4:col1', 'Tab2:row4:col3', 'Tab2:row4:col4'] |
+| C5_dimension_Q1 | fail | 1 / [length] ** 2 | AU/L | not captured | not captured | ['Admiraal_2019_table_p7_1:row13:col3'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Admiraal_2019_table_p7_1:row2:col3'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Admiraal_2019_table_p7_1:row10:col3'] |
+| C5_dimension_Q310 | pass | [time] | not captured | not captured | not captured | ['Admiraal_2019_table_p7_1:row11:col3'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Admiraal_2019_table_p7_1:row6:col3'] |
+| C5_dimension_Q66 | fail | [length] / [time] | AU/day | not captured | not captured | ['Admiraal_2019_table_p7_1:row12:col3'] |
+| C5_unit_missing_Q64 | fail | [length] ** 3 | factor of V1 | not captured | not captured | ['Admiraal_2019_table_p7_1:row8:col3'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.24 | not captured | not captured | ['Admiraal_2019_table_p7_1:row2:col3'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.01 L/h | not captured | not captured | ['Tab2:row4:col1', 'Tab2:row4:col3', 'Tab2:row4:col4'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.01 L/h | not captured | not captured | ['Admiraal_2019_table_p7_1:row2:col3'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 2 L | not captured | not captured | ['Admiraal_2019_table_p7_1:row6:col3'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -143,7 +142,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_alemtuzumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Admiraal_2019` / `Admiraal_2019::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_alemtuzumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Admiraal_2019` / `Admiraal_2019::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -159,4 +158,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 22:00 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 04:01 UTC</sub>

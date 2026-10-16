@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;Lumefantrine&quot;,&quot;href&quot;:&quot;drugs/drug_lumefantrine/&quot;},{&quot;label&quot;:&quot;Francis_2020 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lumefantrine_Kloprogge2018_reference&quot;,&quot;label&quot;:&quot;Kloprogge_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lumefantrine/Lumefantrine_Kloprogge2018_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lumefantrine_Francis2020_reference&quot;,&quot;label&quot;:&quot;Francis_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lumefantrine/Lumefantrine_Francis2020_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Lumefantrine_Kloprogge2018_reference&quot;,&quot;label&quot;:&quot;Kloprogge_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lumefantrine/Lumefantrine_Kloprogge2018_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Lumefantrine — `Lumefantrine_Francis2020_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -13,47 +13,45 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
+
+> **Caveat** (`covariates_not_exercised`): Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.
 
 ### Reviewer guidance
 
-**The lumefantrine absorption rate constant kabs was reported with unit 'Ka' instead of 1/h, so no SI value could be derived and the record was rejected for a dimension mismatch on a structural parameter.**
+**Accepted with a caveat: the covariate scenarios were not simulated.**
 
-In the Francis_2020 lumefantrine model (two-compartment structure), the first-order absorption rate constant kabs has value 0.727 with unit_verbatim 'Ka', which is not a valid unit for a rate constant and could not be converted to SI. All other parameters carry consistent units (CL 3.28 L/h, V1 60 L, MTT 2.86 h, Q 0.63 L/h, V2 182 L, Q3 1.55 L/h, V3 39.1 L). The rejection is therefore limited to this single parameter's unit problem. Extracted — lumefantrine: CL 3.28 L/h, V1 60 L, Frel 1 F, MTT 2.86 h, n_transit 7.58, kabs 0.727 Ka, Q 0.63 L/h, V2 182 L, … (+3).
+The base model was simulated, not the covariate effects the record defines. A reported unit could not be converted (Frel), so that value has no SI equivalent.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of intercompartmental clearance between central and second peripheral compartment (liters/h)c: this record has 1.55, the second reading none; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by glm-5.3-flash</sub>
+<sub>reviewed by rule template (no LLM)</sub>
+
+> **Dose compound ≠ measured compound:** dosed `artemether-lumefantrine`, measured `lumefantrine`.
 
 ## Citation
 Francis J et al., An Individual Participant Data Populati…, Antimicrobial agents and ch… (2020)
   ·  DOI: [10.1128/AAC.02394-19](https://doi.org/10.1128/AAC.02394-19)
 
-<div class="pk-model-meta" hidden drug="Lumefantrine" model-id="Lumefantrine_Francis2020_reference" status="rejected" stale="false" population="nonpregnant adults with uncomplicated malaria, HIV infection, or both" measured-compound="lumefantrine" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="Lumefantrine" model-id="Lumefantrine_Francis2020_reference" status="accepted_with_caveats" stale="false" population="adults" measured-compound="lumefantrine" parameterization="mechanistic" topology="2C"></div>
 
-**Model structure:** 2-compartment; no model was built for this record.  
-**Parameters:** 11 extracted, plus 2 covariate effects.
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameters:** 8 extracted, plus 1 covariate effect.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Clearance (CL) (liters/h)c | `Q22` · CL | 3.28 | L/h | 9.11111111111111e-07 | L/h | not captured | llm_confirmed (0.6) | T3:row1:col1 | — | not captured |
-| Central vol of distribution (liters)c | `Q63` · V1 | 60 | L | 0.06 | L | not captured | llm (0.6) | T3:row2:col1 | — | not captured |
+| Clearance (CL) (liters/h)c | `Q22` · CL | 3.28 | liters/h | 9.11111111111111e-07 | [l] / [h] | not captured | llm_confirmed (0.6) | T3:row1:col1 | — | not captured |
+| Central vol of distribution (liters)c | `Q63` · V1 | 60 | liters | 0.06 | [l] | not captured | llm (0.6) | T3:row2:col1 | — | not captured |
 | Relative oral bioavailability (F) | `Q87` · Frel | 1 | F | not captured | not captured | not captured | exact (1.0) | T3:row3:col1 | — | not captured |
-| Mean absorption transit time (h) | `Q81` · MTT | 2.86 | h | not captured | [h] | not captured | llm_corrected (0.6) | T3:row4:col1 | — | not captured |
+| Mean absorption transit time (h) | `Q73` · MAT | 2.86 | h | 10296.0 | [h] | not captured | llm_corrected (0.6) | T3:row4:col1 | — | not captured |
 | No. of hypothetical transit compartments | `Q311` · n_transit | 7.58 | not captured | not captured | not captured | not captured | llm_corrected (0.6) | T3:row5:col1 | — | not captured |
-| First-order absorption rate constant (1/h) (Ka) | `Q49` · kabs | 0.727 | Ka | not captured | [ka] | not captured | llm_confirmed (0.6) | T3:row6:col1 | — | not captured |
-| Intercompartmental clearance between central and first peripheral compartment (liters/h)c | `Q30` · Q | 0.63 | L/h | 1.7500000000000002e-07 | L/h | not captured | llm_confirmed (0.6) | T3:row7:col1 | — | not captured |
-| Vol. of distribution of the first peripheral compartment (liters)c | `Q64` · V2 | 182 | L | 0.182 | L | not captured | llm (0.6) | T3:row8:col1 | — | not captured |
-| Intercompartmental clearance between central and second peripheral compartment (liters/h)c | `Q308` · Q3 | 1.55 | L/h | 4.305555555555556e-07 | L/h | not captured | llm_corrected (0.6) | T3:row9:col1 | — | not captured |
-| Vol. of distribution of the second peripheral compartment (liters)c | `Q77` · V3 | 39.1 | L | 0.0391 | L | not captured | llm (0.6) | T3:row10:col1 | — | not captured |
-| Lopinavir-ritonavir on F (%) | `Q40` · Fab | 67.2 | not captured | not captured | not captured | not captured | llm (0.6) | T3:row15:col1 | — | not captured |
-| theta_q83_category | `Q900` · theta_q83_category | 4.30 | not captured | not captured | not captured | not captured | not captured (not captured) | T3:row22:col1 | — | not captured |
-| theta_q900_category | `Q900` · theta_q900_category | 2.28 | not captured | not captured | not captured | not captured | not captured (not captured) | T3:row23:col1 | — | not captured |
+| First-order absorption rate constant (1/h) (Ka) | `Q49` · kabs | 0.727 | 1/h | 0.00020194444444444443 | [1] / [h] | not captured | llm_confirmed (0.6) | T3:row6:col1 | — | not captured |
+| Intercompartmental clearance between central and first peripheral compartment (liters/h)c | `Q30` · Q | 0.63 | liters/h | 1.7500000000000002e-07 | [l] / [h] | not captured | llm_confirmed (0.6) | T3:row7:col1 | — | not captured |
+| Vol. of distribution of the first peripheral compartment (liters)c | `Q64` · V2 | 182 | liters | 0.182 | [l] | not captured | llm (0.6) | T3:row8:col1 | — | not captured |
+| scaling_factor_for_dbs_concn_fold_e | `Q900` · scaling_factor_for_dbs_concn_fold_e | 2.28 | not captured | not captured | not captured | not captured | not captured (not captured) | T3:row23:col1 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -62,64 +60,34 @@ Francis J et al., An Individual Participant Data Populati…, Antimicrobial agen
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['Tlag']
+
 **Interpretation flags:**
-- unit_dimension_mismatch: 'First-order absorption rate constant (1/h) (Ka)' → Q49 (unit '[time]' vs ontology '1 / [time]') — route to review
-- dropped unlinked row (NIL): 'Efavirenz on CL (%)' — extend the ontology if this is a real PK parameter (source ['T3:row13:col1'])
+- dropped duplicate Q30 ('Intercompartmental clearance between central and second peripheral compartment (liters/h)c', value '1.55') — already have one for this compound
+- dropped duplicate Q64 ('Vol. of distribution of the second peripheral compartment (liters)c', value '39.1') — already have one for this compound
+- unit_dimension_mismatch: 'Efavirenz on CL (%)' → Q22 (unit 'dimensionless' vs ontology '[length] ** 3 / [time]') — route to review
+- dropped duplicate Q22 ('Efavirenz on CL (%)', value '89.9') — already have one for this compound
+- unit_dimension_mismatch: 'Lopinavir-ritonavir on CL (%)' → Q22 (unit 'dimensionless' vs ontology '[length] ** 3 / [time]') — route to review
 - dropped duplicate Q22 ('Lopinavir-ritonavir on CL (%)', value '-50.1') — already have one for this compound
-- dropped duplicate Q49 ('Lopinavir-ritonavir on Ka (%)', value '-47.6') — already have one for this compound
-- dropped unlinked row (NIL): 'Rifampin-based TB treatment on CL (%)' — extend the ontology if this is a real PK parameter (source ['T3:row17:col1'])
-- dropped duplicate Q40 ('First dose in SECAT on F (%)', value '-48.6') — already have one for this compound
-- dropped duplicate Q40 ('Consecutive morning doses in SEACAT on F (%)', value '-77.2') — already have one for this compound
-- dropped duplicate Q40 ('Uganda studies on F (%)', value '-26.9') — already have one for this compound
-- dropped duplicate Q40 ('Nigeria study 1 on F (%)', value '-60.8') — already have one for this compound
-- covariate effect for Q83 has no base parameter row (kept as unattached equation-variable)
-- covariate effect for Q900 has no base parameter row (kept as unattached equation-variable)
-- implicit units: 'Clearance (CL) (liters/h)c' → L/h (from the paper text: 'Table 3 lists "Clearance (CL) (liters/h)"; text states "the apparent clearance (CL) was 3.28 liters/h".')
-- implicit units: 'Central vol of distribution (liters)c' → L (from the paper text: 'Table 3 lists "Central vol of distribution (liters)".')
-- implicit units: 'Intercompartmental clearance between central and first peripheral compartment (liters/h)c' → L/h (from the paper text: 'Table 3 lists "Intercompartmental clearance between central and first peripheral compartment (liters/h)".')
-- implicit units: 'Vol. of distribution of the first peripheral compartment (liters)c' → L (from the paper text: 'Table 3 lists "Vol. of distribution of the first peripheral compartment (liters)".')
-- implicit units: 'Intercompartmental clearance between central and second peripheral compartment (liters/h)c' → L/h (from the paper text: 'Table 3 lists "Intercompartmental clearance between central and second peripheral compartment (liters/h)".')
-- implicit units: 'Vol. of distribution of the second peripheral compartment (liters)c' → L (from the paper text: 'Table 3 lists "Vol. of distribution of the second peripheral compartment (liters)".')
+- dropped unlinked row (NIL): 'Lopinavir-ritonavir on F (%)' — extend the ontology if this is a real PK parameter (source ['T3:row15:col1'])
+- dropped unlinked row (NIL): 'Lopinavir-ritonavir on Ka (%)' — extend the ontology if this is a real PK parameter (source ['T3:row16:col1'])
+- unit_dimension_mismatch: 'Rifampin-based TB treatment on CL (%)' → Q22 (unit 'dimensionless' vs ontology '[length] ** 3 / [time]') — route to review
+- dropped duplicate Q22 ('Rifampin-based TB treatment on CL (%)', value '142') — already have one for this compound
+- dropped unlinked row (NIL): 'First dose in SECAT on F (%)' — extend the ontology if this is a real PK parameter (source ['T3:row18:col1'])
+- dropped unlinked row (NIL): 'Consecutive morning doses in SEACAT on F (%)' — extend the ontology if this is a real PK parameter (source ['T3:row19:col1'])
+- dropped unlinked row (NIL): 'Uganda studies on F (%)' — extend the ontology if this is a real PK parameter (source ['T3:row20:col1'])
+- dropped unlinked row (NIL): 'Nigeria study 1 on F (%)' — extend the ontology if this is a real PK parameter (source ['T3:row21:col1'])
+- dropped unlinked row (NIL): 'Delay for unobserved dose (h)d' — extend the ontology if this is a real PK parameter (source ['T3:row22:col1'])
+- covariate level 'Scaling factor for DBS concn (fold)e' → Q900:scaling_factor_for_dbs_concn_fold_e = 2.28 (additive_shift on Q22)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=lumefantrine
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- structure disagreement: deterministic 2C vs LLM 3C — review compartment count
 - status held at route_to_review — not promoted
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- unparsed cell T3:row1:col2 = '3.14 to 3.46'
-- unparsed cell T3:row1:col3 = '20.8+, 15.4++'
-- unparsed cell T3:row1:col4 = '18.1 to 23.1, 13.3 to 17.5'
-- unparsed cell T3:row2:col2 = '56.3 to 63.9'
-- unparsed cell T3:row3:col3 = '30.2+, 56.5+++'
-- unparsed cell T3:row3:col4 = '25.4 to 35.6, 53.8 to 58.9'
-- unparsed cell T3:row4:col2 = '2.74 to 2.94'
-- unparsed cell T3:row4:col3 = '31.9+++'
-- unparsed cell T3:row4:col4 = '28.8 to 35.1'
-- unparsed cell T3:row5:col2 = '7.06 to 8.10'
-- unparsed cell T3:row6:col2 = '0.62 to 0.83'
-- unparsed cell T3:row6:col3 = '73.8+++'
-- unparsed cell T3:row6:col4 = '67.5 to 80.8'
-- unparsed cell T3:row7:col2 = '0.60 to 0.67'
-- unparsed cell T3:row7:col3 = '29.1+'
-- unparsed cell T3:row7:col4 = '26.1 to 32.4'
-- unparsed cell T3:row8:col2 = '171 to 195'
-- unparsed cell T3:row9:col2 = '1.43 to 1.72'
-- unparsed cell T3:row10:col2 = '37.1 to 41.2'
-- unparsed cell T3:row11:col2 = '32.2 to 33.5'
-- unparsed cell T3:row12:col2 = '13.9 to 14.4'
-- unparsed cell T3:row13:col2 = '81.1 to 99.7'
-- unparsed cell T3:row14:col2 = '−53.0 to −46.4'
-- unparsed cell T3:row15:col2 = '49.1 to 88.9'
-- unparsed cell T3:row16:col2 = '−56.5 to −37.4'
-- unparsed cell T3:row17:col2 = '111 to 180'
-- unparsed cell T3:row18:col2 = '−54.9 to −41.7'
-- unparsed cell T3:row19:col2 = '−80.7 to −73.8'
-- unparsed cell T3:row20:col2 = '−32.3 to −20.7'
-- unparsed cell T3:row21:col2 = '−73.2 to −47.3'
-- unparsed cell T3:row22:col2 = '2.84 to 5.73'
-- unparsed cell T3:row23:col2 = '2.05 to 2.55'
-- LLM selected parameter table(s) 3
+- table T3: unparsed_numeric_cell
+- LLM selected parameter table(s) 4
 
 ## Validation
 
@@ -154,21 +122,32 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 11 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 8 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T3:row1:col1'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T3:row7:col1'] |
-| C5_dimension_Q308 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T3:row9:col1'] |
-| C5_dimension_Q49 | fail | [time] | Ka | not captured | not captured | ['T3:row6:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['T3:row6:col1'] |
 | C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['T3:row2:col1'] |
 | C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['T3:row8:col1'] |
-| C5_dimension_Q77 | pass | [length] ** 3 | not captured | not captured | not captured | ['T3:row10:col1'] |
+| C5_dimension_Q73 | pass | [time] | not captured | not captured | not captured | ['T3:row4:col1'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 3.28 | not captured | not captured | ['T3:row1:col1'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 3.28 L/h | not captured | not captured | ['T3:row1:col1'] |
 | C9_phys_window_Q63 | pass | volume within physiological range | 60 L | not captured | not captured | ['T3:row2:col1'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 182 L | not captured | not captured | ['T3:row8:col1'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_output_variable | not captured | pass | C_central (measured=lumefantrine) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 5 scholar param(s) emitted or defaulted | 5 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -177,20 +156,38 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_lumefantrine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Francis_2020` / `Francis_2020::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_lumefantrine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Francis_2020` / `Francis_2020::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_lumefantrine/models/modelica/Lumefantrine_Francis2020_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_lumefantrine/models/modelica/Lumefantrine_Francis2020_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_lumefantrine/models/modelica/Lumefantrine_Francis2020_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_lumefantrine/Lumefantrine_Francis2020_reference/Lumefantrine_Francis2020_reference_modelica.zip" download>Lumefantrine_Francis2020_reference_modelica.zip</a> <span class="pk-size">(5.0 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_lumefantrine/Lumefantrine_Francis2020_reference/Lumefantrine_Francis2020_reference_fmi.zip" download>Lumefantrine_Francis2020_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_lumefantrine/Lumefantrine_Francis2020_reference/Lumefantrine_Francis2020_reference_matlab.zip" download>Lumefantrine_Francis2020_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_lumefantrine/Lumefantrine_Francis2020_reference/Lumefantrine_Francis2020_reference_matlab_simbio.zip" download>Lumefantrine_Francis2020_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_lumefantrine/Lumefantrine_Francis2020_reference/Lumefantrine_Francis2020_reference_sbml.zip" download>Lumefantrine_Francis2020_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_lumefantrine/Lumefantrine_Francis2020_reference/Lumefantrine_Francis2020_reference_cellml.zip" download>Lumefantrine_Francis2020_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+</tbody></table>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_lumefantrine/Lumefantrine_Francis2020_reference/Lumefantrine_Francis2020_reference.svg" alt="Lumefantrine_Francis2020_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.727 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
+
+<dbs-fmusim paramsurl="drugs/drug_lumefantrine/Lumefantrine_Francis2020_reference/Lumefantrine_Francis2020_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_lumefantrine/Lumefantrine_Francis2020_reference/Lumefantrine_Francis2020_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_2C_enteral` · parameters `Lumefantrine_Francis2020_reference_params.json` · controls `Lumefantrine_Francis2020_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 07:11 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 23:50 UTC</sub>

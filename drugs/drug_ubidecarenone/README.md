@@ -20,19 +20,38 @@ It is approved and also sold as a nutraceutical supplement, but it is not an aut
 
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
-| coenzyme Q10 (ubidecarenone) | parent | 863.343 | C59H90O4 | DrugBank | [5281915](https://pubchem.ncbi.nlm.nih.gov/compound/5281915) | Tomono_1986 |
+| ubidecarenone | parent | 863.343 | C59H90O4 | DrugBank | [5281915](https://pubchem.ncbi.nlm.nih.gov/compound/5281915) | Tomono_1986 |
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 11:50 | 3:05 | 0/1/0 | 0/0/0 | 0/0/0 | 49,380/6,089 | ollama / qwen3.8:27b-mtp-q8_0 | 4 | 0/3 | 3/1 | 0 |
+| 2026-10-14 23:46 | 0:54 | 0/1/0 | 0/0/0 | 0/0/0 | 49,019/2,153 | einfracz / qwen3.8-27b | 4 | 0/3 | 3/1 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25), gpt-oss:120b (not confirmed, agreement 0.111). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Tomono_1986_reference](drugs/drug_ubidecarenone/Ubidecarenone_Tomono1986_reference.md) | — | 1-compartment (no model) | 2 | Tomono Y et al., Pharmacokinetic study of deuterium-labe…, International journal of cl… (1986) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25), gpt-oss:120b (not confirmed, agreement 0.111). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Tomono_1986_reference](drugs/drug_ubidecarenone/Ubidecarenone_Tomono1986_reference.md) | — | 1-compartment (no model) | 2 | Tomono Y et al., Pharmacokinetic study of deuterium-labe…, International journal of cl… (1986) | — |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=ubidecarenone).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| absorption | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` substrate | DrugBank actor |
+| absorption | liver | `ABCB1` substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
+| absorption | testis | `ABCB1` substrate | DrugBank actor |
+| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: HMGCR (substrate), LDLR (substrate), NDUFV3 (cofactor), SDHA (cofactor), VLDLR (substrate).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -44,7 +63,7 @@ It is approved and also sold as a nutraceutical supplement, but it is not an aut
 
 - **PubMed hits:** 81 matched, 21 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 1
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -53,33 +72,33 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Tomono_1986.pdf` | Tomono Y et al., Pharmacokinetic study of deuterium-labe…, International journal of cl… (1986) | popPK | 10 | not captured | [3781673](https://pubmed.ncbi.nlm.nih.gov/3781673) | The study reports quantitative PK parameters (Cmax, Tmax, t1/2) and a compartmental model for coenzyme Q10 (ubidecarenone) in humans. |
+| `Tomono_1986.pdf` | Tomono Y et al., Pharmacokinetic study of deuterium-labe…, International journal of cl… (1986) | popPK | 9 | not captured | [3781673](https://pubmed.ncbi.nlm.nih.gov/3781673) | The study reports quantitative pharmacokinetic parameters (half-life, peak plasma concentration) for coenzyme Q10 (ubidecarenone) in humans. |
 | `Zhou_1998.pdf` | Zhou Q et al., Accuracy of repeated blood sampling in…, Journal of pharmacological… (1998) | pd | 5 | [10.1016/s1056-8719(99)00005-2](https://doi.org/10.1016/s1056-8719(99)00005-2) | [10465153](https://www.ncbi.nlm.nih.gov/pubmed/10465153) | metadata signals extractable PD data (PK/PD) |
 
-<sub>queue written 2026-10-06T11:48:54.404799+00:00</sub>
+<sub>queue written 2026-10-14T23:46:34.968083+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Adhikary_2026 | irrelevant | 0 | 0 | The paper is a narrative review of quinones (including CoQ10/ubidecarenone) in diabetes, focusing on mechanisms and general pharmaceutical perspectives, without reporting specific quantitative PK parameter values for ubidecarenone. |
-| popPK | Bhandari_2026 | irrelevant | 0 | 0 | The paper is a review of nanocarriers for Multiple Sclerosis and does not report quantitative pharmacokinetic parameters for ubidecarenone. |
-| popPK | Bliznakov_1973 | irrelevant | 0 | 0 | The study investigates the immunological and anti-tumor effects of coenzyme Q10 (ubidecarenone) in mice, not its pharmacokinetic parameters. |
-| popPK | Chou_2023 | irrelevant | 0 | 0 | The study focuses on the in vitro antioxidant and wound-healing properties of acemannan, with CoQ10 (ubidecarenone) used only as a comparator in radical scavenging assays, and no pharmacokinetic parameters are reported. |
-| popPK | Folkers_1993 | irrelevant | 0 | 0 | The paper is a clinical review/case report on survival and immune effects, containing no pharmacokinetic parameters or quantitative disposition data for ubidecarenone. |
-| popPK | Iwamoto_1991 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of polysaccharide-coated oil droplets (carriers) using Coenzyme Q10 as a radiolabeled marker, rather than reporting quantitative PK parameters for ubidecarenone itself. |
-| popPK | Khalifa_2020 | irrelevant | 0 | 0 | The study is a toxicology/efficacy trial in rats measuring renal function and antioxidant markers, not a pharmacokinetic study reporting disposition parameters for ubidecarenone. |
-| popPK | Kitajima_1991 | irrelevant | 0 | 0 | The study investigates gastric microcirculation and the role of CoQ10 (ubidecarenone) as a vascular regulating factor in rats, not the pharmacokinetic disposition parameters of the drug. |
-| popPK | Kose_2026 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of mitochondrial function in Cockayne syndrome fibroblasts using CoQ10 as a therapeutic agent, and it does not report any pharmacokinetic parameters for ubidecarenone. |
+| popPK | Adhikary_2026 | irrelevant | 0 | 0 | The paper is a narrative review on quinones in diabetes that does not report quantitative pharmacokinetic parameters for ubidecarenone (CoQ10), mentioning only qualitative issues like variable exposure. |
+| popPK | Bhandari_2026 | irrelevant | 0 | 0 | The paper is a review of nanocarriers for Multiple Sclerosis and mentions Coenzyme Q10 (ubidecarenone) only as a cargo molecule, without reporting any quantitative pharmacokinetic parameters for the drug itself. |
+| popPK | Bliznakov_1973 | irrelevant | 0 | 0 | The study investigates the immunomodulatory and anti-tumor effects of coenzyme Q10 in mice, reporting no pharmacokinetic parameters. |
+| popPK | Chou_2023 | irrelevant | 0 | 0 | The paper studies the synthesis and in-vitro antioxidant/cell proliferation properties of acemannan, not the pharmacokinetics of ubidecarenone. |
+| popPK | Folkers_1993 | irrelevant | 0 | 0 | The paper is a review of clinical outcomes and case histories regarding the therapeutic use of coenzyme Q10, containing no pharmacokinetic parameter estimates. |
+| popPK | Iwamoto_1991 | irrelevant | 0 | 0 | The study focuses on the delivery kinetics of polysaccharide-coated oil droplets using Coenzyme Q10 as a radioactive marker, rather than reporting PK parameters for ubidecarenone as a therapeutic subject. |
+| popPK | Khalifa_2020 | irrelevant | 0 | 0 | This is a preclinical toxicology study in rats investigating the protective effects of CoQ10 and ALA on cisplatin-induced nephrotoxicity, not a pharmacokinetic study of ubidecarenone. |
+| popPK | Kitajima_1991 | irrelevant | 0 | 0 | The study focuses on gastric microcirculation and mucosal blood flow in stressed rats, not on the pharmacokinetic disposition (clearance, volume, half-life) of ubidecarenone. |
+| popPK | Kose_2026 | irrelevant | 0 | 0 | The paper is a mechanistic cellular study using CoQ10 as a therapeutic compound in fibroblasts, containing no pharmacokinetic parameters. |
 | popPK | Lei_2026 | irrelevant | 0 | 0 | no_text gate: only 161 chars of text extracted (&lt; 400) |
 | PD | Luo_2022 | not_relevant | 0 | 0 | The paper studies Mogroside V, not ubidecarenone (CoQ10), and does not report a quantitative exposure-response or dose-response model with numeric PD parameters for the target drug. |
-| popPK | Nilsson_2022 | irrelevant | 0 | 0 | The study focuses on nutritional co-therapy (1,3-butanediol and antioxidants) for Pompe disease in mice and does not report pharmacokinetic parameters for ubidecarenone. |
-| popPK | Porta_2026 | irrelevant | 0 | 0 | The study investigates the physiological effects of CoQ10 on blood pressure and renal function in rats, but does not report pharmacokinetic parameters (CL, V, ka, etc.) for the drug. |
-| popPK | Sato_1988 | irrelevant | 0 | 0 | The study focuses on histological and functional recovery of hearing in guinea pigs, not on quantitative pharmacokinetic parameters (CL, V, etc.) for ubidecarenone. |
-| popPK | Uner_2024 | irrelevant | 0 | 0 | The study focuses on in vitro cellular uptake and mitochondrial targeting of CoQ10 micelles, not on quantitative population pharmacokinetic parameters (CL, V, etc.) for ubidecarenone. |
-| popPK | Yasumoto_1986 | irrelevant | 0 | 0 | The study investigates the physiological effects of coenzyme Q10 (ubidecarenone) on endotoxin shock in dogs, not its pharmacokinetic disposition parameters. |
-| popPK | Zheng_2026 | irrelevant | 0 | 0 | The paper is a mechanistic review of mitochondrial dysfunction in sepsis and does not report pharmacokinetic parameters for ubidecarenone. |
+| popPK | Nilsson_2022 | irrelevant | 0 | 0 | The study investigates nutritional co-therapies (including CoQ10/ubidecarenone) in mouse models of Pompe disease but does not report pharmacokinetic parameters for ubidecarenone. |
+| popPK | Porta_2026 | irrelevant | 0 | 0 | The study is a physiological investigation of blood pressure and renal function, not a pharmacokinetic study, and reports no PK parameters. |
+| popPK | Sato_1988 | irrelevant | 0 | 0 | The study focuses on histological recovery and efficacy in guinea pigs, with no mention of quantitative pharmacokinetic parameter estimation for Coenzyme Q10. |
+| popPK | Uner_2024 | irrelevant | 2 | 0 | The study focuses on the cellular uptake and nanotherapy of CoQ10 micelles in vitro, not on systemic or compartmental population pharmacokinetic parameters (CL, V, Q) for ubidecarenone. |
+| popPK | Yasumoto_1986 | irrelevant | 0 | 0 | The study investigates the pharmacodynamic effects of coenzyme Q10 (ubidecarenone) on pulmonary function and chemical mediators during endotoxin shock, with no report of pharmacokinetic parameters. |
+| popPK | Zheng_2026 | irrelevant | 0 | 0 | The paper is a mechanistic review of mitochondrial dysfunction in sepsis focusing on thiamine, carnitine, and CoQ10, and does not contain quantitative pharmacokinetic parameters (CL, V, etc.) for ubidecarenone. |
 | popPK | Zhou_1998 | irrelevant | 0 | 0 | no_text gate: only 165 chars of text extracted (&lt; 400) |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-06 11:49 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-14 23:46 UTC</sub>

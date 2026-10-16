@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;hydroxychloroquine&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/&quot;},{&quot;label&quot;:&quot;Alvarez_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Hydroxychloroquine_Balevic2019_estimate&quot;,&quot;label&quot;:&quot;Balevic_2019_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/Hydroxychloroquine_Balevic2019_estimate.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxychloroquine_Balevic2019_postnatal&quot;,&quot;label&quot;:&quot;Balevic_2019_postnatal&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/Hydroxychloroquine_Balevic2019_postnatal.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxychloroquine_Balevic2019_prenatal&quot;,&quot;label&quot;:&quot;Balevic_2019_prenatal&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/Hydroxychloroquine_Balevic2019_prenatal.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxychloroquine_Thmans2020_corresponding_estimated_value&quot;,&quot;label&quot;:&quot;Th\u00e9mans_2020_corresponding_estimated_value_in_model_by_carmichael_et_al_2&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/Hydroxychloroquine_Thmans2020_corresponding_estimated_value.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxychloroquine_Thmans2020_estimate&quot;,&quot;label&quot;:&quot;Th\u00e9mans_2020_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/Hydroxychloroquine_Thmans2020_estimate.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxychloroquine_Yang2025_reference&quot;,&quot;label&quot;:&quot;Yang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/Hydroxychloroquine_Yang2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxychloroquine_Zahr2021_reference&quot;,&quot;label&quot;:&quot;Zahr_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/Hydroxychloroquine_Zahr2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Hydroxychloroquine_Balevic2019_postnatal&quot;,&quot;label&quot;:&quot;Balevic_2019_postnatal&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/Hydroxychloroquine_Balevic2019_postnatal.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxychloroquine_Balevic2019_prenatal&quot;,&quot;label&quot;:&quot;Balevic_2019_prenatal&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/Hydroxychloroquine_Balevic2019_prenatal.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxychloroquine_Thmans2020_estimate&quot;,&quot;label&quot;:&quot;Th\u00e9mans_2020_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/Hydroxychloroquine_Thmans2020_estimate.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxychloroquine_Yang2025_reference&quot;,&quot;label&quot;:&quot;Yang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/Hydroxychloroquine_Yang2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxychloroquine_Zahr2021_covid_19f&quot;,&quot;label&quot;:&quot;Zahr_2021_covid_19f&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/Hydroxychloroquine_Zahr2021_covid_19f.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxychloroquine_Zahr2021_healthy&quot;,&quot;label&quot;:&quot;Zahr_2021_healthy&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/Hydroxychloroquine_Zahr2021_healthy.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxychloroquine_Zahr2021_lupusa&quot;,&quot;label&quot;:&quot;Zahr_2021_lupusa&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/Hydroxychloroquine_Zahr2021_lupusa.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxychloroquine_Zahr2021_malariad&quot;,&quot;label&quot;:&quot;Zahr_2021_malariad&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/Hydroxychloroquine_Zahr2021_malariad.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxychloroquine_Balevic2019_estimate&quot;,&quot;label&quot;:&quot;Balevic_2019_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/Hydroxychloroquine_Balevic2019_estimate.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # hydroxychloroquine — `Hydroxychloroquine_Alvarez2022_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333), gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-check: disputed 1/2</span>
+> ## <span class="pk-badge pk-badge--neutral">not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333), gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-check: disputed 1/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -17,40 +17,41 @@
 
 ### Reviewer guidance
 
-**The hydroxychloroquine model was quarantined because elimination clearance and intercompartmental clearance had no extracted values and library placeholders were substituted, and only 1 of 5 parameters (CL 7.57) was covered.**
+**The model was built but has not been simulated yet; t3_param_coverage.**
 
-The record lists tlag 0.389, kabs 1.15, CL/F 9.16 and V2/F 2190 for hydroxychloroquine, but the parameter-coverage check found only 1 of 5 expected parameters covered, with tlag, kabs, CL/F and V2/F neither emitted nor defaulted. Hydroxychloroquine's elimination clearance and intercompartmental clearance had no source value, so library placeholders stood in and the model was held back rather than published with invented numbers. The builder also assumed F=1 and Fm=1 with no molar correction, treating the parameterization as apparent. Extracted — hydroxychloroquine: tlag 0.389, kabs 1.15, CL/F 9.16, V2/F 2.19e+03, CL 7.57.
+A reported unit could not be converted (equation variable), so that value has no SI equivalent. Extracted — hydroxychloroquine: tlag 0.389 h, kabs 1.15 1/h, CL/F 5.6 L/h, V/F 1.85e+03 L; desethylchloroquine: CLfm 4.99 L/h, CL 49.8 L/h; desethylhydroxychloroquine: CLfm 9.63 L/h, CL 8.89 L/h; didesethylchloroquine: CLfm 1.84 L/h, CL 11.6 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has hydroxychloroquine, the second reading unknown; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by glm-5.3-flash</sub>
-
-> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-28 14:38:13.575087+00:00) predates the upstream re-run (2026-10-07 07:02:33.915899+00:00). Current validate status: `extracted`.
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Alvarez JC et al., Population Pharmacokinetics of Hydroxyc…, Pharmaceuticals (Basel, Swi… (2022)
   ·  DOI: [10.3390/ph15020256](https://doi.org/10.3390/ph15020256)
 
-<div class="pk-model-meta" hidden drug="hydroxychloroquine" model-id="Hydroxychloroquine_Alvarez2022_reference" status="extracted" stale="true" population="hospitalized COVID-19 patients" measured-compound="hydroxychloroquine" parameterization="apparent" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="hydroxychloroquine" model-id="Hydroxychloroquine_Alvarez2022_reference" status="not_simulated" stale="false" population="adults with COVID-19" measured-compound="hydroxychloroquine" parameterization="apparent" topology="general_linear"></div>
 
-**Model structure:** 2-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
+**Model structure:** 1-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
 **Parameters:** 10 extracted.
 
-**Parameterization:** CL/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `not_simulated`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Lag (fixed) | `Q83` · tlag | 0.389 | h | 1400.4 | h | not captured | llm (0.6) | pharmaceuticals-15-00256-t002:row2:col2 | — | not captured |
-| KA (fixed) | `Q49` · kabs | 1.15 | 1/h | 0.0003194444444444444 | 1/h | not captured | exact (1.0) | pharmaceuticals-15-00256-t002:row3:col1, pharmaceuticals-15-00256-t002:row3:col2 | — | not captured |
-| CL/F HCQ | `Q27` · CL/F | 5.60 | L/h | 1.5555555555555556e-06 | L/h | 15.5 | llm_confirmed (0.6) | pharmaceuticals-15-00256-t002:row4:col2, pharmaceuticals-15-00256-t002:row4:col3, pharmaceuticals-15-00256-t002:row4:col4, pharmaceuticals-15-00256-t002:row4:col5 | — | not captured |
-| VP/F HCQ | `Q82` · V2/F | 1850 | L | 1.85 | L | 10.7 | llm_confirmed (0.6) | pharmaceuticals-15-00256-t002:row5:col2, pharmaceuticals-15-00256-t002:row5:col3, pharmaceuticals-15-00256-t002:row5:col4, pharmaceuticals-15-00256-t002:row5:col5 | — | not captured |
-| CL HCQ_DesCQ | `Q370` · CLfm | 4.99 | L/h | 1.3861111111111112e-06 | L/h | 17.5 | exact (1.0) | pharmaceuticals-15-00256-t002:row6:col2, pharmaceuticals-15-00256-t002:row6:col3, pharmaceuticals-15-00256-t002:row6:col4, pharmaceuticals-15-00256-t002:row6:col5 | — | not captured |
-| CL DesCQ | `Q22` · CL | 49.8 | L/h | 1.3833333333333332e-05 | L/h | 23.7 | exact (1.0) | pharmaceuticals-15-00256-t002:row7:col2, pharmaceuticals-15-00256-t002:row7:col3, pharmaceuticals-15-00256-t002:row7:col4, pharmaceuticals-15-00256-t002:row7:col5 | — | 1.327 (None% RSE) |
-| CL HCQ_DesHCQ | `Q370` · CLfm | 9.63 | L/h | 2.6750000000000002e-06 | L/h | 10.3 | exact (1.0) | pharmaceuticals-15-00256-t002:row8:col2, pharmaceuticals-15-00256-t002:row8:col3, pharmaceuticals-15-00256-t002:row8:col4, pharmaceuticals-15-00256-t002:row8:col5 | — | not captured |
-| CL DesHCQ | `Q22` · CL | 8.89 | L/h | 2.4694444444444444e-06 | L/h | 27.8 | exact (1.0) | pharmaceuticals-15-00256-t002:row9:col2, pharmaceuticals-15-00256-t002:row9:col3, pharmaceuticals-15-00256-t002:row9:col4, pharmaceuticals-15-00256-t002:row9:col5 | — | not captured |
-| CL HCQ_DiDesCQ | `Q370` · CLfm | 1.84 | L/h | 5.111111111111112e-07 | L/h | 10.8 | exact (1.0) | pharmaceuticals-15-00256-t002:row10:col2, pharmaceuticals-15-00256-t002:row10:col3, pharmaceuticals-15-00256-t002:row10:col4, pharmaceuticals-15-00256-t002:row10:col5 | — | not captured |
-| CL DiDesCQ | `Q22` · CL | 11.6 | L/h | 3.222222222222222e-06 | L/h | 27.2 | exact (1.0) | pharmaceuticals-15-00256-t002:row11:col2, pharmaceuticals-15-00256-t002:row11:col3, pharmaceuticals-15-00256-t002:row11:col4, pharmaceuticals-15-00256-t002:row11:col5 | — | not captured |
+| Lag (fixed) | `Q83` · tlag | 0.389 | h | 1400.4 | [h] | not captured | llm (0.6) | Alvarez_2022_table_p6_1:row0:col2 | — | not captured |
+| KA (fixed) | `Q49` · kabs | 1.15 | 1/h | 0.0003194444444444444 | [1] / [h] | not captured | exact (1.0) | Alvarez_2022_table_p6_1:row1:col2 | — | not captured |
+| CL/F HCQ | `Q27` · CL/F | 5.60 | L/h | 1.5555555555555556e-06 | [l] / [h] | 15.5 | llm_confirmed (0.6) | Alvarez_2022_table_p6_1:row2:col2 | — | not captured |
+| VP/F HCQ | `Q76` · V/F | 1850 | L | 1.85 | [l] | 10.7 | llm_corrected (0.6) | Alvarez_2022_table_p6_1:row3:col2 | — | not captured |
+| CL HCQ_DesCQ | `Q370` · CLfm | 4.99 | L/h | 1.3861111111111112e-06 | [l] / [h] | 17.5 | exact (1.0) | Alvarez_2022_table_p6_1:row4:col2 | — | not captured |
+| CL DesCQ | `Q22` · CL | 49.8 | L/h | 1.3833333333333332e-05 | [l] / [h] | 23.7 | exact (1.0) | Alvarez_2022_table_p6_1:row5:col2 | — | 1.327 (9.2% RSE) |
+| CL HCQ_DesHCQ | `Q370` · CLfm | 9.63 | L/h | 2.6750000000000002e-06 | [l] / [h] | 10.3 | exact (1.0) | Alvarez_2022_table_p6_1:row6:col2 | — | not captured |
+| CL DesHCQ | `Q22` · CL | 8.89 | L/h | 2.4694444444444444e-06 | [l] / [h] | 27.8 | exact (1.0) | Alvarez_2022_table_p6_1:row7:col2 | — | not captured |
+| CL HCQ_DiDesCQ | `Q370` · CLfm | 1.84 | L/h | 5.111111111111112e-07 | [l] / [h] | 10.8 | exact (1.0) | Alvarez_2022_table_p6_1:row8:col2 | — | not captured |
+| CL DiDesCQ | `Q22` · CL | 11.6 | L/h | 3.222222222222222e-06 | [l] / [h] | 27.2 | exact (1.0) | Alvarez_2022_table_p6_1:row9:col2 | — | not captured |
+| Additive DiDesCQ | `Q900` · equation variable | 2.49 | μg/L | not captured | [µg] / [l] | 16.7 | llm (0.6) | Alvarez_2022_table_p6_1:row24:col2 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -60,44 +61,51 @@ Alvarez JC et al., Population Pharmacokinetics of Hydroxyc…, Pharmaceuticals (
 ## Departures & gaps
 
 **Deviations:**
-- `defaulted_parameters`: ['Q1']
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
 
 **Interpretation flags:**
+- compound tags: 18 row(s) → desethylchloroquine, 9 row(s) → didesethylchloroquine (abbreviation 18, formation 9)
 - table section iiv: 'CL HCQ' routed out of structural estimates ('Inter Individual Variability (ω)')
 - table section iiv: 'VP HCQ' routed out of structural estimates ('Inter Individual Variability (ω)')
 - table section iiv: 'CL DesCQ' routed out of structural estimates ('Inter Individual Variability (ω)')
 - table section iiv: 'CL DesHCQ' routed out of structural estimates ('Inter Individual Variability (ω)')
 - table section iiv: 'CL DiDesCQ' routed out of structural estimates ('Inter Individual Variability (ω)')
-- column 'unit' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- column 'bootstrap' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- unit_dimension_unknown: 'fixed' (tlag)
-- unit_dimension_unknown: 'fixed' (kabs)
-- routed 'Proportional HCQ' → Q316 (prop_error) to residual_error — variability estimate, not a structural parameter
+- table representations disagree for 'Lag (fixed)'; source reconciliation required
+- table representations disagree for 'KA (fixed)'; source reconciliation required
+- table representations disagree for 'CL/F HCQ'; source reconciliation required
+- table representations disagree for 'VP/F HCQ'; source reconciliation required
+- table representations disagree for 'CL HCQ_DesCQ'; source reconciliation required
+- table representations disagree for 'CL DesCQ'; source reconciliation required
+- table representations disagree for 'CL HCQ_DesHCQ'; source reconciliation required
+- table representations disagree for 'CL DesHCQ'; source reconciliation required
+- table representations disagree for 'CL HCQ_DiDesCQ'; source reconciliation required
+- table representations disagree for 'CL DiDesCQ'; source reconciliation required
+- table representations disagree for 'Proportional HCQ'; source reconciliation required
+- table representations disagree for 'Additive HCQ'; source reconciliation required
+- table representations disagree for 'Proportional DesCQ'; source reconciliation required
+- table representations disagree for 'Additive DesCQ'; source reconciliation required
+- table representations disagree for 'Proportional DesHCQ'; source reconciliation required
+- table representations disagree for 'Additive DesHCQ'; source reconciliation required
+- table representations disagree for 'Proportional DiDesCQ'; source reconciliation required
+- table representations disagree for 'Additive DiDesCQ'; source reconciliation required
+- routed 'Proportional HCQ' → Q315 (sigma) to residual_error — variability estimate, not a structural parameter
 - routed 'Additive HCQ' → Q317 (add_error) to residual_error — variability estimate, not a structural parameter
 - routed 'Proportional DesCQ' → Q316 (prop_error) to residual_error — variability estimate, not a structural parameter
-- routed 'Additive DesCQ' → Q317 (add_error) to residual_error — variability estimate, not a structural parameter
-- routed 'Proportional DesHCQ' → Q316 (prop_error) to residual_error — variability estimate, not a structural parameter
-- routed 'Additive DesHCQ' → Q317 (add_error) to residual_error — variability estimate, not a structural parameter
-- routed 'Proportional DiDescCQ' → Q316 (prop_error) to residual_error — variability estimate, not a structural parameter
-- routed 'Additive DiDescCQ' → Q317 (add_error) to residual_error — variability estimate, not a structural parameter
-- implicit units: 'Lag (fixed)' → h (from the popPK convention: 'No unit stated in text or footnotes; lag times are conventionally in h, and 0.389 h is a plausible absorption lag time.')
-- implicit units: 'KA (fixed)' → 1/h (from the popPK convention: 'No unit stated; KA is a first-order absorption rate constant, conventionally in 1/h, consistent with value 1.15.')
-- implicit units: 'CL/F HCQ' → L/h (from the popPK convention: 'No unit stated; CL/F is apparent oral clearance, conventionally L/h, consistent with value 5.60 for HCQ.')
-- implicit units: 'VP/F HCQ' → L (from the popPK convention: 'No unit stated; VP/F is a volume of distribution, conventionally L, consistent with value 1850 L for HCQ.')
-- implicit units: 'CL HCQ_DesCQ' → L/h (from the popPK convention: 'No unit stated; CLfm is a clearance, conventionally L/h, consistent with value 4.99.')
-- implicit units: 'CL DesCQ' → L/h (from the popPK convention: 'No unit stated; metabolite CL is a clearance, conventionally L/h, consistent with value 49.8.')
-- implicit units: 'CL HCQ_DesHCQ' → L/h (from the popPK convention: 'No unit stated; CLfm is a clearance, conventionally L/h, consistent with value 9.63.')
-- implicit units: 'CL DesHCQ' → L/h (from the popPK convention: 'No unit stated; metabolite CL is a clearance, conventionally L/h, consistent with value 8.89.')
-- implicit units: 'CL HCQ_DiDesCQ' → L/h (from the popPK convention: 'No unit stated; CLfm is a clearance, conventionally L/h, consistent with value 1.84.')
-- implicit units: 'CL DiDesCQ' → L/h (from the popPK convention: 'No unit stated; metabolite CL is a clearance, conventionally L/h, consistent with value 11.6.')
+- dropped unlinked row (NIL): 'Additive DesCQ' — extend the ontology if this is a real PK parameter (source ['Alvarez_2022_table_p6_1:row20:col2'])
+- dropped unlinked row (NIL): 'Proportional DesHCQ' — extend the ontology if this is a real PK parameter (source ['Alvarez_2022_table_p6_1:row21:col2'])
+- dropped unlinked row (NIL): 'Additive DesHCQ' — extend the ontology if this is a real PK parameter (source ['Alvarez_2022_table_p6_1:row22:col2'])
+- routed 'Proportional DiDesCQ' → Q316 (prop_error) to residual_error — variability estimate, not a structural parameter
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=hydroxychloroquine
 - topology: 3 first-order transfer(s) across 4 compounds → general_linear
 - template fit: none — 3 metabolites — the templates hold two
-- row roles (LLM): model_class=compartmental; 20/20 row label(s) assigned, 47 linked by role; re-tagged parent→desethylchloroquine ×20, parent→desethylhydroxychloroquine ×20, parent→didesethylchloroquine ×20
+- status held at route_to_review — not promoted
+- row roles (LLM): model_class=compartmental; 20/20 row label(s) assigned, 13 linked by role; re-tagged parent→desethylchloroquine ×5, parent→desethylhydroxychloroquine ×5, parent→didesethylchloroquine ×5
+- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
 
 **Extraction notes:**
+- table Alvarez_2022_table_p6_1: missing_unit_binding
+- table pharmaceuticals-15-00256-t002: representations disagree; selected evidence retained, not merged
 - LLM selected parameter table(s) 2
 
 ## Validation
@@ -146,23 +154,23 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass | not captured | 10 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['pharmaceuticals-15-00256-t002:row7:col2', 'pharmaceuticals-15-00256-t002:row7:col3', 'pharmaceuticals-15-00256-t002:row7:col4', 'pharmaceuticals-15-00256-t002:row7:col5'] |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['pharmaceuticals-15-00256-t002:row9:col2', 'pharmaceuticals-15-00256-t002:row9:col3', 'pharmaceuticals-15-00256-t002:row9:col4', 'pharmaceuticals-15-00256-t002:row9:col5'] |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['pharmaceuticals-15-00256-t002:row11:col2', 'pharmaceuticals-15-00256-t002:row11:col3', 'pharmaceuticals-15-00256-t002:row11:col4', 'pharmaceuticals-15-00256-t002:row11:col5'] |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['pharmaceuticals-15-00256-t002:row4:col2', 'pharmaceuticals-15-00256-t002:row4:col3', 'pharmaceuticals-15-00256-t002:row4:col4', 'pharmaceuticals-15-00256-t002:row4:col5'] |
-| C5_dimension_Q370 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['pharmaceuticals-15-00256-t002:row6:col2', 'pharmaceuticals-15-00256-t002:row6:col3', 'pharmaceuticals-15-00256-t002:row6:col4', 'pharmaceuticals-15-00256-t002:row6:col5'] |
-| C5_dimension_Q370 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['pharmaceuticals-15-00256-t002:row8:col2', 'pharmaceuticals-15-00256-t002:row8:col3', 'pharmaceuticals-15-00256-t002:row8:col4', 'pharmaceuticals-15-00256-t002:row8:col5'] |
-| C5_dimension_Q370 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['pharmaceuticals-15-00256-t002:row10:col2', 'pharmaceuticals-15-00256-t002:row10:col3', 'pharmaceuticals-15-00256-t002:row10:col4', 'pharmaceuticals-15-00256-t002:row10:col5'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['pharmaceuticals-15-00256-t002:row3:col1', 'pharmaceuticals-15-00256-t002:row3:col2'] |
-| C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['pharmaceuticals-15-00256-t002:row5:col2', 'pharmaceuticals-15-00256-t002:row5:col3', 'pharmaceuticals-15-00256-t002:row5:col4', 'pharmaceuticals-15-00256-t002:row5:col5'] |
-| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['pharmaceuticals-15-00256-t002:row2:col2'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Alvarez_2022_table_p6_1:row5:col2'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Alvarez_2022_table_p6_1:row7:col2'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Alvarez_2022_table_p6_1:row9:col2'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Alvarez_2022_table_p6_1:row2:col2'] |
+| C5_dimension_Q370 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Alvarez_2022_table_p6_1:row4:col2'] |
+| C5_dimension_Q370 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Alvarez_2022_table_p6_1:row6:col2'] |
+| C5_dimension_Q370 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Alvarez_2022_table_p6_1:row8:col2'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Alvarez_2022_table_p6_1:row1:col2'] |
+| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Alvarez_2022_table_p6_1:row3:col2'] |
+| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Alvarez_2022_table_p6_1:row0:col2'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 49.8 L/h | not captured | not captured | ['pharmaceuticals-15-00256-t002:row7:col2', 'pharmaceuticals-15-00256-t002:row7:col3', 'pharmaceuticals-15-00256-t002:row7:col4', 'pharmaceuticals-15-00256-t002:row7:col5'] |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 8.89 L/h | not captured | not captured | ['pharmaceuticals-15-00256-t002:row9:col2', 'pharmaceuticals-15-00256-t002:row9:col3', 'pharmaceuticals-15-00256-t002:row9:col4', 'pharmaceuticals-15-00256-t002:row9:col5'] |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 11.6 L/h | not captured | not captured | ['pharmaceuticals-15-00256-t002:row11:col2', 'pharmaceuticals-15-00256-t002:row11:col3', 'pharmaceuticals-15-00256-t002:row11:col4', 'pharmaceuticals-15-00256-t002:row11:col5'] |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 5.6 L/h | not captured | not captured | ['pharmaceuticals-15-00256-t002:row4:col2', 'pharmaceuticals-15-00256-t002:row4:col3', 'pharmaceuticals-15-00256-t002:row4:col4', 'pharmaceuticals-15-00256-t002:row4:col5'] |
-| C9_phys_window_Q82 | pass | volume within physiological range | 1.85e+03 L | not captured | not captured | ['pharmaceuticals-15-00256-t002:row5:col2', 'pharmaceuticals-15-00256-t002:row5:col3', 'pharmaceuticals-15-00256-t002:row5:col4', 'pharmaceuticals-15-00256-t002:row5:col5'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 49.8 L/h | not captured | not captured | ['Alvarez_2022_table_p6_1:row5:col2'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 8.89 L/h | not captured | not captured | ['Alvarez_2022_table_p6_1:row7:col2'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 11.6 L/h | not captured | not captured | ['Alvarez_2022_table_p6_1:row9:col2'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 5.6 L/h | not captured | not captured | ['Alvarez_2022_table_p6_1:row2:col2'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 1.85e+03 L | not captured | not captured | ['Alvarez_2022_table_p6_1:row3:col2'] |
 
 **Reviewer per-scenario checks:**
 
@@ -171,11 +179,10 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
-| T3_param_coverage | not captured | fail | 5 scholar param(s) emitted or defaulted | 1 covered | not captured | neither emitted nor in defaulted[]: ['tlag', 'kabs', 'CL/F', 'V2/F'] |
+| T3_param_coverage | not captured | fail | 7 scholar param(s) emitted or defaulted | 5 covered | not captured | neither emitted nor in defaulted[]: ['tlag', 'V/F'] |
+| T3_shared_parameters | not captured | pass | 5 shared param(s) bound once | bound once | not captured | shared params must bind one value to both compartments |
 | T3_topology_template | not captured | pass | general_linear → PK_General_Linear* | PK_General_Linear | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
-| T1_t_half_beta | reference | skipped | 40 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_beta | reference | skipped | 40 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -184,9 +191,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_hydroxychloroquine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Alvarez_2022` / `Alvarez_2022::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_hydroxychloroquine/models/modelica/_needs_review/Hydroxychloroquine_Alvarez2022_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_hydroxychloroquine/models/modelica/_needs_review/Hydroxychloroquine_Alvarez2022_reference.deviation.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_hydroxychloroquine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Alvarez_2022` / `Alvarez_2022::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_hydroxychloroquine/models/modelica/Hydroxychloroquine_Alvarez2022_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_hydroxychloroquine/models/modelica/Hydroxychloroquine_Alvarez2022_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -195,14 +202,14 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_hydroxychloroquine/Hydroxychloroquine_Alvarez2022_reference/Hydroxychloroquine_Alvarez2022_reference_modelica.zip" download>Hydroxychloroquine_Alvarez2022_reference_modelica.zip</a> <span class="pk-size">(4.8 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_hydroxychloroquine/Hydroxychloroquine_Alvarez2022_reference/Hydroxychloroquine_Alvarez2022_reference_matlab.zip" download>Hydroxychloroquine_Alvarez2022_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_hydroxychloroquine/Hydroxychloroquine_Alvarez2022_reference/Hydroxychloroquine_Alvarez2022_reference_matlab_simbio.zip" download>Hydroxychloroquine_Alvarez2022_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_hydroxychloroquine/Hydroxychloroquine_Alvarez2022_reference/Hydroxychloroquine_Alvarez2022_reference_sbml.zip" download>Hydroxychloroquine_Alvarez2022_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_hydroxychloroquine/Hydroxychloroquine_Alvarez2022_reference/Hydroxychloroquine_Alvarez2022_reference_cellml.zip" download>Hydroxychloroquine_Alvarez2022_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
 </div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
@@ -212,4 +219,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 07:02 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 23:45 UTC</sub>

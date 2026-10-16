@@ -19,22 +19,36 @@ Patritumab deruxtecan is an investigational antibody-drug conjugate being studie
 
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
-| deruxtecan | metabolite | 493.5 | — | the paper | — | Lu_2023 |
 | DXd | metabolite | — (mass units only) | — | — | — | — |
+| DXd-conjugated antibody | metabolite | 150000 | — | the paper | — | Lu_2023 |
+| unconjugated DXd | metabolite | 493.5 | — | the paper | — | Lu_2023 |
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 18:17 | 4:52 | 0/3/0 | 0/0/0 | 0/0/0 | 76,657/7,230 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 1/2 | 2/1 | 0 |
+| 2026-10-15 00:54 | 3:12 | 0/2/0 | 0/0/1 | 0/0/0 | 88,107/7,220 | einfracz / qwen3.8-27b | 3 | 1/2 | 2/1 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Lu_2023_iiv_of_mean](drugs/drug_patritumab_deruxtecan/PatritumabDeruxtecan_Lu2023_iiv_of_mean.md) | — | parent + metabolite (no model) | 0 | Lu Y et al., Population Pharmacokinetics of Patritum…, Journal of clinical pharmac… (2023) | [10.1002/jcph.2137](https://doi.org/10.1002/jcph.2137) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.033). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Lu_2023_mean](drugs/drug_patritumab_deruxtecan/PatritumabDeruxtecan_Lu2023_mean.md) | — | parent + metabolite (no model) | 9 (+3 cov.) | Lu Y et al., Population Pharmacokinetics of Patritum…, Journal of clinical pharmac… (2023) | [10.1002/jcph.2137](https://doi.org/10.1002/jcph.2137) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Xu_2025_reference](drugs/drug_patritumab_deruxtecan/PatritumabDeruxtecan_Xu2025_reference.md) | — | parent + metabolite (no model) | 0 | Xu Y et al., Integrated Two-Analyte Population Pharm…, Clinical pharmacokinetics (2025) | [10.1007/s40262-025-01521-4](https://doi.org/10.1007/s40262-025-01521-4) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Lu_2023_reference](drugs/drug_patritumab_deruxtecan/PatritumabDeruxtecan_Lu2023_reference.md) | — | general linear (no model) | 9 (+3 cov.) | Lu Y et al., Population Pharmacokinetics of Patritum…, Journal of clinical pharmac… (2023) | [10.1002/jcph.2137](https://doi.org/10.1002/jcph.2137) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Xu_2025_reference](drugs/drug_patritumab_deruxtecan/PatritumabDeruxtecan_Xu2025_reference.md) | — | general linear (no model) | 0 | Xu Y et al., Integrated Two-Analyte Population Pharm…, Clinical pharmacokinetics (2025) | [10.1007/s40262-025-01521-4](https://doi.org/10.1007/s40262-025-01521-4) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Li_2025_AE_leading_to_dose_reduction](drugs/drug_patritumab_deruxtecan/pd_Li_2025_AE_leading_to_dose_reduction.md) | Adverse Events Leading to Dose Reduction ← DXd · time-to-event model | — | Li L et al., Exposure-Response Relationships in Pati…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3674](https://doi.org/10.1002/cpt.3674) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Li_2025_AE_leading_to_treatment_discontinuation](drugs/drug_patritumab_deruxtecan/pd_Li_2025_AE_leading_to_treatment_discontinuation.md) | Adverse Events Leading to Treatment Discontinuation ← DXd · time-to-event model | — | Li L et al., Exposure-Response Relationships in Pati…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3674](https://doi.org/10.1002/cpt.3674) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Li_2025_Grade_2_nausea_or_vomiting](drugs/drug_patritumab_deruxtecan/pd_Li_2025_Grade_2_nausea_or_vomiting.md) | Grade ≥ 2 Nausea or Vomiting ← anti-HER3-ac-DXd · categorical (graded) response model | — | Li L et al., Exposure-Response Relationships in Pati…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3674](https://doi.org/10.1002/cpt.3674) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Li_2025_Grade_3_TEAE](drugs/drug_patritumab_deruxtecan/pd_Li_2025_Grade_3_TEAE.md) | Grade ≥ 3 Treatment-Emergent Adverse Events (TEAEs) ← DXd · categorical (graded) response model | — | Li L et al., Exposure-Response Relationships in Pati…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3674](https://doi.org/10.1002/cpt.3674) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Li_2025_Grade_3_neutrophil_count_decrease](drugs/drug_patritumab_deruxtecan/pd_Li_2025_Grade_3_neutrophil_count_decrease.md) | Grade ≥ 3 Neutrophil Count Decrease ← DXd · categorical (graded) response model | — | Li L et al., Exposure-Response Relationships in Pati…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3674](https://doi.org/10.1002/cpt.3674) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Li_2025_Grade_3_platelet_count_decrease](drugs/drug_patritumab_deruxtecan/pd_Li_2025_Grade_3_platelet_count_decrease.md) | Grade ≥ 3 Platelet Count Decrease ← DXd · categorical (graded) response model | — | Li L et al., Exposure-Response Relationships in Pati…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3674](https://doi.org/10.1002/cpt.3674) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Li_2025_ILD](drugs/drug_patritumab_deruxtecan/pd_Li_2025_ILD.md) | Any Grade Adjudicated Drug-Related Interstitial Lung Disease (ILD) ← anti-HER3-ac-DXd · time-to-event model | — | Li L et al., Exposure-Response Relationships in Pati…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3674](https://doi.org/10.1002/cpt.3674) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Li_2025_ORR](drugs/drug_patritumab_deruxtecan/pd_Li_2025_ORR.md) | Objective Response Rate (ORR) ← anti-HER3-ac-DXd · categorical (graded) response model | — | Li L et al., Exposure-Response Relationships in Pati…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3674](https://doi.org/10.1002/cpt.3674) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Li_2025_SAE](drugs/drug_patritumab_deruxtecan/pd_Li_2025_SAE.md) | Serious Adverse Events (SAEs) ← DXd · categorical (graded) response model | — | Li L et al., Exposure-Response Relationships in Pati…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3674](https://doi.org/10.1002/cpt.3674) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,14 +60,14 @@ Patritumab deruxtecan is an investigational antibody-drug conjugate being studie
 
 - **PubMed hits:** 3 matched, 3 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 3  ·  extracted 0  ·  needs_review 0  ·  rejected 3  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Li_2025 | irrelevant | 2 | 0 | The paper is an exposure-response analysis that uses PK exposure metrics (Cmax, Ctrough, Cavg) derived from a previously developed population PK model, but it does not report the underlying quantitative disposition parameters (CL, V, Q, ka) for patritumab_deruxtecan. |
+| popPK | Li_2025 | irrelevant | 1 | 0 | The paper is an exposure-response analysis that uses PK data generated from a separate population PK model, and it does not report quantitative PK parameter estimates (e.g., clearance, volume, half-life) for patritumab_deruxtecan. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 18:14 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-15 00:51 UTC</sub>

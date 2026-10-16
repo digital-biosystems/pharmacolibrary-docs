@@ -18,9 +18,9 @@
 
 **Model:** No model was generated from this record.
 
-> Umeclidinium bromide concentration-dependently relaxes cholinergic contractile tone (10 Hz EFS) in human isolated bronchi, described by an Emax model with Emax 102.6 ± 6.8 % and pEC50 8.6 ± 0.4; the paper excerpts do not state the mechanism beyond this direct inhibitory concentration–response relationship.
+> The paper does not provide a full text to describe the specific mechanism (e.g., production vs. elimination inhibition) or rate constants (kin, kout, ke0). The model is an Emax inhibition where umeclidinium concentration drives the relaxation of cholinergic contractile tone, with an Emax of 102.6 ± 6.8% and a pEC50 of 8.6 ± 0.4.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
 
 - **paper:** `Calzetta_2017`
 - **model family:** `emax`

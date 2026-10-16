@@ -17,9 +17,9 @@
 
 **Model:** No model was generated from this record.
 
-> Plasma donidalorsen concentrations inhibit the zero-order production of prekallikrein (PKK) via an indirect response model, reflecting the drug's mechanism of degrading PKK mRNA. The model parameters are a baseline PKK of 139 mg/L, a first-order loss rate constant (kout) of 0.00266 h−1, a maximal fractional inhibition (Imax) of 0.992, and an IC50 of 0.158 ng/mL.
+> Plasma donidalorsen concentrations (ng/mL) inhibit the zero-order production of prekallikrein (PKK, mg/L) via an indirect response model with proportional effect, reflecting the drug's mechanism of degrading PKK mRNA. The key parameters are Imax of 0.992, IC50 of 0.158 ng/mL, kout of 0.00266 h−1, and a baseline PKK of 139 mg/L.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Diep_2026`
 - **model family:** `indirect_response_i`
@@ -38,6 +38,8 @@ Diep JK et al., Population Pharmacokinetic/Pharmacodyna…, CPT: pharmacometrics
 | PD (effect) | k out | `Q328` · not captured | 0.00266 | h−1 | not captured | llm (not captured) | Diep_2026:pdv3 |
 | PD (effect) | I max | `Q323` · not captured | 0.992 | not captured | not captured | llm (not captured) | Diep_2026:pdv3 |
 | PD (effect) | IC50 | `Q322` · not captured | 0.158 | ng/mL | not captured | llm (not captured) | Diep_2026:pdv3 |
+| variability | BSV% k out | `Q312` · not captured | 36.6 | not captured | not captured | llm (not captured) | Diep_2026:pdv3 |
+| variability | BSV% IC50 | `Q312` · not captured | 83.1 | not captured | not captured | llm (not captured) | Diep_2026:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>

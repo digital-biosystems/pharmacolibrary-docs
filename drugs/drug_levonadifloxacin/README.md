@@ -18,11 +18,18 @@ Levonadifloxacin is an investigational fluoroquinolone antibacterial, related to
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 12:26 | 0:31 | 0/0/0 | 0/0/0 | 0/0/0 | 16,342/430 | einfracz / qwen3.8-27b | 2 | 0/0 | 2/0 | 0 |
+| 2026-10-14 23:11 | 0:06 | 0/0/0 | 0/0/1 | 0/0/0 | 10,020/807 | einfracz / qwen3.8-27b | 2 | 0/2 | 2/0 | 0 |
 
 ## popPK records
 
 _not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by ollama:gpt-oss:120b (not confirmed, agreement 0.833). Primary extraction retained.">cross-check: disputed</span> | [Mason_2019_ddHR](drugs/drug_levonadifloxacin/pd_Mason_2019_ddHR.md) | ddHR ← levonadifloxacin · direct linear effect | — | Mason JW et al., Electrocardiographic Effects of a Supra…, Clinical and translational… (2019) | [10.1111/cts.12594](https://doi.org/10.1111/cts.12594) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by ollama:gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> | [Mason_2019_ddQTcF](drugs/drug_levonadifloxacin/pd_Mason_2019_ddQTcF.md) | ddQTcF ← levonadifloxacin · direct linear effect | — | Mason JW et al., Electrocardiographic Effects of a Supra…, Clinical and translational… (2019) | [10.1111/cts.12594](https://doi.org/10.1111/cts.12594) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -33,7 +40,7 @@ _not available_
 ## Coverage
 
 - **PubMed hits:** 8 matched, 8 returned
-- **screened:** 0  ·  **relevant:** 0
+- **screened:** 2  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
@@ -43,17 +50,21 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Bhagwat_2019.pdf` | Bhagwat SS et al., In Vivo Pharmacokinetic/Pharmacodynamic…, Antimicrobial agents and ch… (2019) | popPK | 5 | [10.1128/AAC.00909-19](https://doi.org/10.1128/AAC.00909-19) | [31208999](https://pubmed.ncbi.nlm.nih.gov/31208999) | Study is a PK/PD model in mice reporting fAUC/MIC ratios, but specific compartmental PK parameters (CL, V, ka) are not explicitly listed in the text. |
+| `Bhagwat_2019.pdf` | Bhagwat SS et al., In Vivo Pharmacokinetic/Pharmacodynamic…, Antimicrobial agents and ch… (2019) | popPK | 8 | [10.1128/AAC.00909-19](https://doi.org/10.1128/AAC.00909-19) | [31208999](https://pubmed.ncbi.nlm.nih.gov/31208999) | The study reports quantitative PK/PD targets (fAUC/MIC) for levonadifloxacin in mice, but does not provide standard disposition parameters like clearance (CL) or volume of distribution (V). |
 | `Saseedharan_2024.pdf` | Saseedharan S et al., Treatment challenges in the management…, Indian journal of medical m… (2024) | pd | 5 | [10.1016/j.ijmmb.2024.100528](https://doi.org/10.1016/j.ijmmb.2024.100528) | [38228227](https://www.ncbi.nlm.nih.gov/pubmed/38228227) | metadata signals extractable PD data (PK/PD) |
 
-<sub>queue written 2026-10-07T12:26:47.406730+00:00</sub>
+<sub>queue written 2026-10-14T23:11:15.850804+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Baliga_2020 | irrelevant | 0 | 0 | The study is an in-vitro susceptibility assay (disk diffusion) and does not report any quantitative population-pharmacokinetic parameter values for levonadifloxacin. |
-| popPK | Bhagwat_2019 | relevant | 5 | 1 | Study is a PK/PD model in mice reporting fAUC/MIC ratios, but specific compartmental PK parameters (CL, V, ka) are not explicitly listed in the text. |
+| popPK | Baliga_2020 | irrelevant | 0 | 0 | The study is an in vitro antimicrobial susceptibility assessment (disk diffusion) and does not report quantitative pharmacokinetic parameters. |
+| popPK | Bhagwat_2019 | relevant | 8 | 0 | The study reports quantitative PK/PD targets (fAUC/MIC) for levonadifloxacin in mice, but does not provide standard disposition parameters like clearance (CL) or volume of distribution (V). |
+| popPK | Bhawsar_2021 | irrelevant | 1 | 0 | The paper focuses on the design and synthesis of a prodrug (alalevonadifloxacin) and qualitative in vitro/animal cleavage studies, without reporting quantitative PK parameters (CL, V, etc.) for levonadifloxacin. |
+| popPK | Herbert_2022 | irrelevant | 0 | 0 | The paper is a review of fluoroquinolones for bacterial keratitis that mentions levonadifloxacin only as a new-generation agent, without reporting any quantitative pharmacokinetic parameters (CL, V, etc.) for it. |
+| popPK | Mason_2019 | irrelevant | 2 | 2 | The study is a thorough QT (TQT) assessment focused on electrocardiographic effects, reporting only non-compartmental exposure metrics (Cmax, AUC, Tmax) without quantitative disposition parameters like clearance, volume of distribution, or compartmental model parameters. |
+| popPK | Saseedharan_2024 | irrelevant | 1 | 0 | This is a consensus statement regarding the therapeutic use of levonadifloxacin and does not report original quantitative pharmacokinetic parameter values. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

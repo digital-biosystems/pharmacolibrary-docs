@@ -18,9 +18,9 @@
 
 **Model:** No model was generated from this record.
 
-> Donepezil plasma concentrations (ng ml(-1)) inhibit erythrocyte membrane acetylcholinesterase (rbc-AChE) via an Emax model, with Emax reported as 33% to 35%; the paper excerpts do not state IC50/EC50 or the mechanism beyond this direct inhibitory Emax relationship.
+> The paper describes a direct Emax inhibition model where donepezil concentrations (ng/ml) reduce erythrocyte membrane acetylcholinesterase activity by a maximum of 33% to 35%. No potency or rate parameters are provided.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Rogers_1998`
 - **model family:** `emax`

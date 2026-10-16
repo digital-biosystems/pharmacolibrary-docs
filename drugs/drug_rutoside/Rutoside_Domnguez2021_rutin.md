@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C05C&quot;,&quot;href&quot;:&quot;atc/C05C.md&quot;},{&quot;label&quot;:&quot;rutoside&quot;,&quot;href&quot;:&quot;drugs/drug_rutoside/&quot;},{&quot;label&quot;:&quot;Dom\u00ednguez_2021 \u00b7 rutin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut&quot;,&quot;label&quot;:&quot;Dom\u00ednguez_2024_extract_equivalent_to_7_4_mg_kg_of_rutin&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rutoside/Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut&quot;,&quot;label&quot;:&quot;Dom\u00ednguez_2024_extract_equivalent_to_7_4_mg_kg_of_rutin&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rutoside/Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # rutoside — `Rutoside_Domnguez2021_rutin`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -19,19 +19,17 @@
 
 ### Reviewer guidance
 
-**The rutoside (rutin) record was rejected because the relative bioavailability parameter Frel is reported with the unit mg/kg, a dimension mismatch for a dimensionless fraction, and its unit could not be converted to SI.**
+**C5 dimension mismatch on a structural parameter.**
 
-In the Domínguez_2021 rat model, Frel is defined as relative bioavailability — a fraction reaching systemic circulation — but is recorded with the verbatim unit mg/kg, so the dimension check on this structural parameter failed and no SI value could be produced. The remaining reported parameters (AUC∞ 14853.11 ng*h/mL, Vss 0.11 L/kg, CL 0.10 L/h/kg, kel 1.08 h−1, t1/2z 0.66 h, MRT 1.08 h, V 0.096 L/kg, Cmax 462.78 ng/mL, tmax 6 h, V/F 86.08 L/kg, CL/F 18.36 L/h/kg) carry consistent units, but the record could not be published while Frel's unit remained unconvertible. Extracted — rutin (i.v. model); quercetin representing Q3OG/Q3OS (oral model): AUC∞ 1.49e+04 ng*h/mL, Vss 0.11 L/kg, CL 0.1 L/h/kg, kel 1.08 h−1, t1/2z 0.66 h, MRT 1.08 h, V 0.096 L/kg, AUC/dose 1.02e+04 h/L, … (+5).
+A reported unit could not be converted (AUC∞, AUC/dose, Cmax and Frel), so that value has no SI equivalent. Extracted — rutoside: AUC∞ 1.49e+04 ng*h/mL, Vss 0.11 L/kg, CL 0.1 L/h/kg, kel 1.08 h−1, t1/2z 0.66 h, MRT 1.08 h, Vnorm 0.096 L/kg, AUC/dose 1.02e+04 h/L, … (+5).
 
-<sub>reviewed by glm-5.3-flash</sub>
-
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:31:38.475430+00:00) predates the upstream re-run (2026-10-06 22:23:31.578034+00:00). Current validate status: `rejected`.
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Domínguez Moré GP et al., Matrix Effects of the Hydroethanolic Ex…, Pharmaceutics (2021)
   ·  DOI: [10.3390/pharmaceutics13040535](https://doi.org/10.3390/pharmaceutics13040535)
 
-<div class="pk-model-meta" hidden drug="rutoside" model-id="Rutoside_Domnguez2021_rutin" status="rejected" stale="true" population="Wistar rats" measured-compound="rutin" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="rutoside" model-id="Rutoside_Domnguez2021_rutin" status="rejected" stale="false" population="Wistar rats" measured-compound="rutin" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 13 extracted.
@@ -161,7 +159,7 @@ Domínguez Moré GP et al., Matrix Effects of the Hydroethanolic Ex…, Pharmace
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_rutoside/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Domínguez_2021` / `Domínguez_2021::rutin`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_rutoside/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Domínguez_2021` / `Domínguez_2021::rutin`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -177,4 +175,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 22:23 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 00:03 UTC</sub>

@@ -1,8 +1,8 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;tofacitinib&quot;,&quot;href&quot;:&quot;drugs/drug_tofacitinib/&quot;},{&quot;label&quot;:&quot;Mohamed_2020 \u00b7 PD IL-6\u2013induced pSTAT3&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tofacitinib_Chang2024_estimate&quot;,&quot;label&quot;:&quot;Chang_2024_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tofacitinib/Tofacitinib_Chang2024_estimate.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tofacitinib_Chang2024_tofacitinib_5_mg_oral_solutionp&quot;,&quot;label&quot;:&quot;Chang_2024_tofacitinib_5_mg_oral_solutionp&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tofacitinib/Tofacitinib_Chang2024_tofacitinib_5_mg_oral_solutionp.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tofacitinib_Chang2024_tofacitinib_5_mg_tablet&quot;,&quot;label&quot;:&quot;Chang_2024_tofacitinib_5_mg_tablet&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tofacitinib/Tofacitinib_Chang2024_tofacitinib_5_mg_tablet.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tofacitinib_Xie2019_reference&quot;,&quot;label&quot;:&quot;Xie_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tofacitinib/Tofacitinib_Xie2019_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tofacitinib_Mohamed2020_reference&quot;,&quot;label&quot;:&quot;Mohamed_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tofacitinib/Tofacitinib_Mohamed2020_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tofacitinib_Shin2020_reference&quot;,&quot;label&quot;:&quot;Shin_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tofacitinib/Tofacitinib_Shin2020_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tofacitinib_Tsuchiwata2026_reference&quot;,&quot;label&quot;:&quot;Tsuchiwata_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tofacitinib/Tofacitinib_Tsuchiwata2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tofacitinib_Vong2021_reference&quot;,&quot;label&quot;:&quot;Vong_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tofacitinib/Tofacitinib_Vong2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tofacitinib_Chang2024_estimate&quot;,&quot;label&quot;:&quot;Chang_2024_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tofacitinib/Tofacitinib_Chang2024_estimate.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tofacitinib_Chang2024_tofacitinib_5_mg_tablet&quot;,&quot;label&quot;:&quot;Chang_2024_tofacitinib_5_mg_tablet&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tofacitinib/Tofacitinib_Chang2024_tofacitinib_5_mg_tablet.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tofacitinib_Xie2019_reference&quot;,&quot;label&quot;:&quot;Xie_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tofacitinib/Tofacitinib_Xie2019_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tofacitinib_Mohamed2020_reference&quot;,&quot;label&quot;:&quot;Mohamed_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tofacitinib/Tofacitinib_Mohamed2020_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tofacitinib_Shin2020_reference&quot;,&quot;label&quot;:&quot;Shin_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tofacitinib/Tofacitinib_Shin2020_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tofacitinib_Tsuchiwata2026_final_parameter_estimates_for_the&quot;,&quot;label&quot;:&quot;Tsuchiwata_2026_final_parameter_estimates_for_the_final_full_model_iiv_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tofacitinib/Tofacitinib_Tsuchiwata2026_final_parameter_estimates_for_the.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tofacitinib_Vong2021_reference&quot;,&quot;label&quot;:&quot;Vong_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tofacitinib/Tofacitinib_Vong2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Suzuki_2020_ACR20&quot;,&quot;label&quot;:&quot;Suzuki_2020 \u00b7 ACR20&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_tofacitinib/pd_Suzuki_2020_ACR20.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Suzuki_2020_ACR50&quot;,&quot;label&quot;:&quot;Suzuki_2020 \u00b7 ACR50&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_tofacitinib/pd_Suzuki_2020_ACR50.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Suzuki_2020_ACR70&quot;,&quot;label&quot;:&quot;Suzuki_2020 \u00b7 ACR70&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_tofacitinib/pd_Suzuki_2020_ACR70.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Mukherjee_2018_Clinical_remission&quot;,&quot;label&quot;:&quot;Mukherjee_2018 \u00b7 Clinical remission&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_tofacitinib/pd_Mukherjee_2018_Clinical_remission.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# IL-6–induced pSTAT3 — PD  <span class="pk-badge pk-badge--orange">needs review</span>
+# IL-6–induced pSTAT3 — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -14,11 +14,11 @@
 
 ## Record summary
 
-**As extracted:** Tofacitinib (concentrations from this paper's PK model) drives IL-6–induced pSTAT3 (in AU): direct Emax (saturable) effect.
+**As extracted:** Tofacitinib (concentrations from this paper's PK model) drives IL-6–induced pSTAT3: direct Emax (saturable) effect.
 
-**Model:** Model available in **Models**; browser simulation unavailable.
+**Model:** No model was generated from this record.
 
-> Tofacitinib plasma concentrations directly inhibit IL-6–induced pSTAT3 (measured in AU) via a reversible, concentration-dependent mechanism described by an additive Emax model where Emax is fixed at -34 AU. The model estimated an EC50 of 119 nM for tofacitinib and a baseline intercept of 34 AU.
+> Tofacitinib plasma concentrations reversibly inhibit IL-6-induced pSTAT3 in an additive Emax model where the maximum effect is fixed to the negative baseline intercept, corresponding to 100% inhibition. The estimated EC50 for tofacitinib was 119 nM, with a nonlinear relationship between baseline pSTAT3 and EC50 governed by an exponent of 1.2.
 >
 > <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
@@ -35,52 +35,14 @@ Mohamed MF et al., Preferential Inhibition of JAK1 Relativ…, Journal of clinic
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | EC50 for tofacitinib | `Q321` · not captured | 119 | nM | not captured | llm (not captured) | Mohamed_2020:pdv3 |
-| PD (effect) | Intercept | `Q324` · not captured | 34 | AU | not captured | llm (not captured) | Mohamed_2020:pdv3 |
-| PD (effect) | Emax for drug effect | `Q323` · not captured | -34 | AU | not captured | llm (not captured) | Mohamed_2020:pdv3 |
+| PD (effect) | EC50 for tofacitinib (nM) | `Q321` · not captured | 119 | nM | not captured | llm (not captured) | Mohamed_2020:pdv3 |
+| PD (effect) | Intercept (AU) | `Q324` · not captured | 34 | AU | not captured | llm (not captured) | Mohamed_2020:pdv3 |
+| model term | Exponent of the nonlinear relationship between observed baseline IL-6–induced phosphorylation and EC50 | `Q900` · not captured | 1.2 | not captured | not captured | llm (not captured) | Mohamed_2020:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
-
-
-## Exposure-response model
-
-`Tofacitinib_Mohamed2020_PD_pstat3` — sigmoid_emax, `response = E0 + Emax*frac`
-
-| parameter | value (paper units) | SI |
-|---|---|---|
-| E0 | 34 AU | — |
-| Emax | -34 AU | — |
-| EC50 | 119 nM | — |
-| gamma | 1 | — |
-
-Closed-form check points (response, SI): `at_0` = 34, `at_EC50` = 17, `at_inf` = 0
-
-Deviations:
-
-- `defaulted_parameters` — gamma
-- `pd_binding_imax_as_negative_emax` — Imax (Q323) enters SigmoidEmaxSweep as −Emax
-- `pd_binding_exposure_unit_unresolved` — 'nM' — the x axis is in the paper's unit, not SI
-
-## Review
-
-Verdict <span class="pk-badge pk-badge--orange">needs review</span> · route to `scholar`
-
-| check | status | note |
-|---|---|---|
-| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
-| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
-| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
-| `T2_direction` | pass | the response falls, as direct effect predicts |
-| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
-| `T4_defaults` | advisory | only convention defaults (gamma = 1) |
-
-Advisory:
-
-- defaulted: gamma (convention)
-- exposure unit not resolved to SI — the x axis is in the paper's unit
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -89,14 +51,14 @@ Advisory:
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_tofacitinib/Tofacitinib_Mohamed2020_PD_pstat3/Tofacitinib_Mohamed2020_PD_pstat3_modelica.zip" download>Tofacitinib_Mohamed2020_PD_pstat3_modelica.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_tofacitinib/Tofacitinib_Mohamed2020_PD_pstat3/Tofacitinib_Mohamed2020_PD_pstat3_matlab.zip" download>Tofacitinib_Mohamed2020_PD_pstat3_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_tofacitinib/Tofacitinib_Mohamed2020_PD_pstat3/Tofacitinib_Mohamed2020_PD_pstat3_sbml.zip" download>Tofacitinib_Mohamed2020_PD_pstat3_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_tofacitinib/Tofacitinib_Mohamed2020_PD_pstat3/Tofacitinib_Mohamed2020_PD_pstat3_cellml.zip" download>Tofacitinib_Mohamed2020_PD_pstat3_cellml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>

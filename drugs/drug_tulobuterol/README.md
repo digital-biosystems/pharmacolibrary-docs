@@ -18,11 +18,20 @@ Tulobuterol is a selective beta-2 adrenergic agonist that acts as a bronchodilat
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 15:10 | 0:13 | 0/0/0 | 0/0/0 | 0/0/0 | 6,160/280 | ollama / glm-5.3-flash | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-13 12:42 | 1:22 | 0/0/0 | 0/0/0 | 0/0/0 | 20,486/1,288 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
 _not available_
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=tulobuterol).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: ADRB2 (regulator).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -32,27 +41,36 @@ _not available_
 
 ## Coverage
 
-- **PubMed hits:** 4 matched, 4 returned
-- **screened:** 0  ·  **relevant:** 0
+- **PubMed hits:** 15 matched, 15 returned
+- **screened:** 2  ·  **relevant:** 2
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
-- **scholar-agent fallback query used:** not captured
+- **scholar-agent fallback query used:** True
 
 ## Full-text requests
 
-_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_5 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
+| `Kim_2016.pdf` | Kim JH et al., The pharmacokinetics of the β2-adrenoce…, Veterinary journal (London,… (2016) | popPK | 9 | [10.1016/j.tvjl.2015.10.012](https://doi.org/10.1016/j.tvjl.2015.10.012) | [26639828](https://pubmed.ncbi.nlm.nih.gov/26639828) | The study reports PK parameters for tulobuterol in dogs, but the evidence only provides Cmax and Tmax, lacking clearance, volume, or half-life values. |
+| `Chasseaud_1986.pdf` | Chasseaud LF et al., Pharmacokinetics of the bronchodilator…, The Journal of internationa… (1986) | popPK | 8 | [10.1177/030006058601400501](https://doi.org/10.1177/030006058601400501) | [3770288](https://pubmed.ncbi.nlm.nih.gov/3770288) | The study reports quantitative PK parameters (Cmax, Tmax, t1/2) for tulobuterol in humans, but lacks explicit clearance or volume values. |
+| `Iikura_1995.pdf` | Iikura Y et al., Pharmacokinetics and pharmacodynamics o…, Annals of allergy, asthma &… (1995) | popPK | 8 | not captured | [7697473](https://pubmed.ncbi.nlm.nih.gov/7697473) | The study reports quantitative non-compartmental pharmacokinetic parameters (Cmax, Tmax, AUC) for tulobuterol in humans. |
+| `Uematsu_1993.pdf` | Uematsu T et al., The pharmacokinetics of the beta 2-adre…, European journal of clinica… (1993) | popPK | 8 | [10.1007/BF00316473](https://doi.org/10.1007/BF00316473) | [8099880](https://pubmed.ncbi.nlm.nih.gov/8099880) | The study reports qualitative PK parameters (tmax, linearity, absorption %) but lacks specific numeric values for clearance, volume, or half-life in the provided text. |
 | `Ziccone_1990.pdf` | Ziccone SP et al., The actions of tulobuterol on isolated…, Clinical and experimental p… (1990) | pd | 4 | [10.1111/j.1440-1681.1990.tb01364.x](https://doi.org/10.1111/j.1440-1681.1990.tb01364.x) | [1980643](https://www.ncbi.nlm.nih.gov/pubmed/1980643) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-10-07T15:10:34.982957+00:00</sub>
+<sub>queue written 2026-10-13T12:42:35.602700+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Brès_1985 | irrelevant | 2 | 1 | A qualitative review of beta-agonist metabolism mentioning tulobuterol's metabolite but reporting no quantitative PK parameters for it. |
+| popPK | EFSA_2020 | irrelevant | 0 | 0 | The paper discusses post-mortem inspection delays and detection sensitivity for pathogens and contaminants, containing no pharmacokinetic data for tulobuterol. |
+| popPK | Kim_2016 | relevant | 9 | 2 | The study reports PK parameters for tulobuterol in dogs, but the evidence only provides Cmax and Tmax, lacking clearance, volume, or half-life values. |
+| popPK | Matthys_1987 | irrelevant | 0 | 0 | The study investigates mucociliary clearance and lung function, not pharmacokinetic parameters like clearance or volume of distribution. |
+| popPK | Park_2018 | irrelevant | 2 | 0 | The study reports only bioequivalence ratios (GMRs) for Cmax and AUC, lacking specific quantitative disposition parameters like clearance, volume, or half-life. |
 | popPK | Pérez-Schindler_2011 | irrelevant | 0 | 0 | In vitro rat ventricular strip pharmacology study with tulobuterol as an agonist; no PK parameters reported. |
+| popPK | Uematsu_1993 | relevant | 8 | 2 | The study reports qualitative PK parameters (tmax, linearity, absorption %) but lacks specific numeric values for clearance, volume, or half-life in the provided text. |
 | popPK | Ziccone_1990 | irrelevant | 0 | 0 | In-vitro pharmacodynamic study of tulobuterol on uterine strips; no PK parameters reported. |
 
 ---

@@ -4,7 +4,7 @@
 
 # ibritumomab tiuxetan — `IbritumomabTiuxetan_Morschhauser2018_liver`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.909), gpt-oss:120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -16,21 +16,21 @@
 
 ### Reviewer guidance
 
-**The ibritumomab tiuxetan record was rejected because the reported clearance unit 'ml.min' is dimensionally incomplete, so clearance (1.03) could not be converted to SI and failed the dimension check.**
+**C5 dimension mismatch on a structural parameter.**
 
-The paper reports clearance for ibritumomab tiuxetan as 1.03 ml.min, a unit lacking the per-unit basis (e.g. per kg or per mL) needed for a clearance quantity, so no SI value could be derived and the dimension check on this structural parameter failed. The other reported parameters (Cmax 0.308 µg.mL−1, terminal half-life 83.6 h, MRT 114.1 h, AUC 1708.1 µg.min.mL−1, AUC to 4 days 261.98 µg.min.mL−1) carry complete units. The record was therefore held back on this single clearance unit problem. Extracted — ibritumomab tiuxetan: Cmax 0.308 µg.mL−1, t1/2z 83.6 h, MRT 114 h, CL 1.03 ml.min, AUC 1.71e+03 µg.min.mL−1, AUCt 262 µg.min.mL−1.
+A reported unit could not be converted (Cmax, AUC and AUCt), so that value has no SI equivalent. Extracted — ibritumomab tiuxetan: Cmax 0.308 µg.mL−1, t1/2z 83.6 h, MRT 114 h, CL 1.03 ml.min, AUC 1.71e+03 µg.min.mL−1, AUCt 262 µg.min.mL−1.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has ibritumomab tiuxetan, the second reading 90Y-ibritumomab tiuxetan; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by glm-5.3-flash</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:38:13.884745+00:00) predates the upstream re-run (2026-10-07 16:46:17.232044+00:00). Current validate status: `rejected`.
+> **Dose compound ≠ measured compound:** dosed `ibrutumomab tiuxetan`, measured `ibritumomab tiuxetan`.
 
 ## Citation
 Morschhauser F et al., A new pharmacokinetic model for 90Y-ibr…, Scientific reports (2018)
   ·  DOI: [10.1038/s41598-018-33160-0](https://doi.org/10.1038/s41598-018-33160-0)
 
-<div class="pk-model-meta" hidden drug="ibritumomab tiuxetan" model-id="IbritumomabTiuxetan_Morschhauser2018_liver" status="rejected" stale="true" population="patients with follicular lymphoma" measured-compound="ibritumomab tiuxetan" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="ibritumomab tiuxetan" model-id="IbritumomabTiuxetan_Morschhauser2018_liver" status="rejected" stale="false" population="patients with follicular lymphoma" measured-compound="ibritumomab tiuxetan" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.
@@ -70,35 +70,21 @@ Morschhauser F et al., A new pharmacokinetic model for 90Y-ibr…, Scientific re
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
-**Extraction notes:**
-- unparsed cell Morschhauser_2018_table_3:row8:col1 = '1.11 E-4 (1.31 E-4)'
-- unparsed cell Morschhauser_2018_table_3:row8:col2 = '0.60 E-4 (0.55 E-4)'
-- unparsed cell Morschhauser_2018_table_3:row9:col1 = '1.05 E-4 (0.55 E-4)'
-- unparsed cell Morschhauser_2018_table_3:row9:col2 = '0.96 E-4 (0.57 E-4)'
-- unparsed cell Morschhauser_2018_table_3:row15:col1 = '1.80 E-4 (0.60 E-4)'
-- unparsed cell Morschhauser_2018_table_3:row15:col2 = '2.05 E-4 (1.70 E-4)'
-- unparsed cell Morschhauser_2018_table_3:row16:col1 = '2.32 E-4 (1.07 E-4)'
-- unparsed cell Morschhauser_2018_table_3:row16:col2 = '1.77 E-4 (0.25 E-4)'
-- unparsed cell Morschhauser_2018_table_3:row22:col1 = '2.11 E-4 (1.39 E-4)'
-- unparsed cell Morschhauser_2018_table_3:row22:col2 = '1.17 E-4 (0.52 E-4)'
-- unparsed cell Morschhauser_2018_table_3:row23:col1 = '1.26 E-4 (0.50 E-4)'
-- unparsed cell Morschhauser_2018_table_3:row23:col2 = '1.64 E-4 (0.40 E-4)'
-- companion parameter table 3 transcribed (69 record(s))
-- LLM selected parameter table(s) 3
-
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.909 (10/11 fields) | 1 |
 | `gpt-oss:120b` | not confirmed | 0.5 (8/16 fields) | 8 |
 
-<details><summary>8 field discrepancies</summary>
+<details><summary>9 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[blood in corresponding volume*]` | not captured | 485 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[blood in corresponding volume*]` | not captured | 8.15 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[k12*]` | not captured | 0.033 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[k13*]` | not captured | 0.738 | only_one_extracted |
@@ -140,7 +126,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ibritumomab_tiuxetan/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Morschhauser_2018` / `Morschhauser_2018::liver`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ibritumomab_tiuxetan/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Morschhauser_2018` / `Morschhauser_2018::liver`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -156,4 +142,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 16:46 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 19:50 UTC</sub>

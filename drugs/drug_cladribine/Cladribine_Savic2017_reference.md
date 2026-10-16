@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;cladribine&quot;,&quot;href&quot;:&quot;drugs/drug_cladribine/&quot;},{&quot;label&quot;:&quot;Savic_2017 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cladribine_Lu2024_reference&quot;,&quot;label&quot;:&quot;Lu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cladribine/Cladribine_Lu2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cladribine_Lindemalm2005_reference&quot;,&quot;label&quot;:&quot;Lindemalm_2005_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cladribine/Cladribine_Lindemalm2005_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cladribine_Lu2024_reference&quot;,&quot;label&quot;:&quot;Lu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cladribine/Cladribine_Lu2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cladribine_Lindemalm2005_population_average_estimate&quot;,&quot;label&quot;:&quot;Lindemalm_2005_population_average_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cladribine/Cladribine_Lindemalm2005_population_average_estimate.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # cladribine — `Cladribine_Savic2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.921). Primary extraction retained.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.87), gpt-oss-120b (partly confirmed, agreement 0.921). Primary extraction retained.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -17,21 +17,19 @@
 
 ### Reviewer guidance
 
-**The cladribine record mixes absolute parameters (CLR 3.52 L/h, CLNR 23.4 L/h, V1 44.0 L) with bioavailability-adjusted ones (V1/F 365 L, apparent hepatic CL 653 L/h) despite Fab 0.456, so apparent-parameter coherence is violated by a double correction and the model was rejected.**
+**C7 apparent-parameter coherence violated (double correction); c5 dimension mismatch on a structural parameter.**
 
-The record carries both a bioavailability fraction (Fab 0.456) and F-adjusted apparent parameters — V1/F of 365 L and apparent hepatic clearance of 653 L/h — alongside unadjusted parameters for the same molecule, V1 of 44.0 L, renal clearance of 3.52 L/h and non-renal clearance of 23.4 L/h. Applying the bioavailability correction on top of parameters already expressed with it double-corrects the cladribine disposition, which is the coherence failure cited for rejection. No other failed checks or inconclusive comparisons are reported. Extracted — cladribine: CLR 3.52, CLNR 23.4, V1 44, Q3 14.3, Q 53.7, V3 347, kabs 1.08, Fab 0.456, … (+6).
+A reported unit could not be converted (CL, MTT and CL), so that value has no SI equivalent. Extracted — cladribine: CL 3.52 L/hc, CLNR 23.4 L/h, V1 44 L, Q 14.3 L/h, Q2 53.7 L/h, V2 347 L, V3 89.5 L, kabs 1.08 h-1, … (+3); 2-chloroadenine: CL 0.0028 µg/h, CL/F 653 L/h, V1/F 365 L.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of clr e (km): this record has none, the second reading 0.0114; it also differs on 2 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of intercompartmental q4: this record has 53.7, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by glm-5.3-flash</sub>
-
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:25:26.476809+00:00) predates the upstream re-run (2026-10-07 16:37:26.172814+00:00). Current validate status: `rejected`.
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Savic RM et al., Population Pharmacokinetics of Cladribi…, Clinical pharmacokinetics (2017)
   ·  DOI: [10.1007/s40262-017-0516-6](https://doi.org/10.1007/s40262-017-0516-6)
 
-<div class="pk-model-meta" hidden drug="cladribine" model-id="Cladribine_Savic2017_reference" status="rejected" stale="true" population="adults with multiple sclerosis" measured-compound="cladribine" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="cladribine" model-id="Cladribine_Savic2017_reference" status="rejected" stale="false" population="patients with multiple sclerosis" measured-compound="cladribine" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 14 extracted, plus 1 covariate effect.
@@ -43,21 +41,21 @@ Savic RM et al., Population Pharmacokinetics of Cladribi…, Clinical pharmacoki
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CLR coefficientb (typical patient with CLCR = 6.31), L/hc | `Q22` · CL | 3.52 | μg/h | not captured | [µg] / [h] | 9.26 | exact (1.0) | Tab4:row2:col1, Tab4:row2:col2 | — | not captured |
-| CLNR, L/h | `Q79` · CLNR | 23.4 | L/h | 6.5000000000000004e-06 | [l] / [h] | 9.58 | exact (1.0) | Tab4:row3:col1, Tab4:row3:col2 | — | 0.00574 (64.41% RSE) |
-| Central volume, L | `Q63` · V1 | 44.0 | L | 0.044 | [l] | 22.77 | exact (1.0) | Tab4:row4:col1, Tab4:row4:col2 | — | not captured |
-| Intercompartmental Q3, L/h | `Q30` · Q | 14.3 | L/h | 3.972222222222223e-06 | [l] / [h] | 7.73 | exact (1.0) | Tab4:row5:col1, Tab4:row5:col2 | — | not captured |
-| Intercompartmental Q4, L/h | `Q99` · Q2 | 53.7 | L/h | 1.4916666666666667e-05 | [l] / [h] | 19.06 | exact (1.0) | Tab4:row6:col1, Tab4:row6:col2 | — | not captured |
-| Peripheral volume V3, L | `Q64` · V2 | 347 | L | 0.34700000000000003 | [l] | 6.07 | exact (1.0) | Tab4:row7:col1, Tab4:row7:col2 | — | not captured |
-| Peripheral volume V4, L | `Q77` · V3 | 89.5 | L | 0.0895 | [l] | 7.97 | exact (1.0) | Tab4:row8:col1, Tab4:row8:col2 | — | 0.0365 (28.47% RSE) |
-| Absorption rate constant, h−1 | `Q49` · kabs | 1.08 | h−1 | 0.00030000000000000003 | [1] / [h] | 21.14 | exact (1.0) | Tab4:row9:col1, Tab4:row9:col2 | — | 0.102 (62.53% RSE) |
-| Bioavailability | `Q40` · Fab | 0.456 | not captured | not captured | not captured | 7.03 | exact (1.0) | Tab4:row11:col1, Tab4:row11:col2 | — | not captured |
-| Mean transit time (fed state), h | `Q81` · MTT | 0.910 | h | not captured | [h] | 11.03 | llm_confirmed (0.6) | Tab4:row14:col1, Tab4:row14:col2 | — | not captured |
-| Number of transit compartments | `Q311` · n_transit | 2.24 | not captured | not captured | not captured | 27.15 | exact (1.0) | Tab4:row15:col1, Tab4:row15:col2 | — | not captured |
-| CLR e (Vmax), μg/h | `Q22` · CL | 0.00280 | μg/h | not captured | [µg] / [h] | 25.53 | exact (1.0) | Tab4:row29:col1, Tab4:row29:col2 | — | not captured |
-| Apparent hepatic CL, L/hf | `Q27` · CL/F | 653 | L/h | 0.0001813888888888889 | L/h | 10.64 | exact (1.0) | Tab4:row31:col1, Tab4:row31:col2 | — | not captured |
-| Apparent central volume V, Lf | `Q290` · V1/F | 365 | L | 0.365 | L | 13.27 | exact (1.0) | Tab4:row32:col1, Tab4:row32:col2 | — | not captured |
-| theta_q83_category | `Q900` · theta_q83_category | 0.319 | not captured | not captured | not captured | 12.41 | not captured (not captured) | Tab4:row13:col1, Tab4:row13:col2 | — | not captured |
+| CLR coefficientb (typical patient with CLCR = 6.31), L/hc | `Q22` · CL | 3.52 | L/hc | not captured | [l] / [[h] · [c]] | 22.2 | exact (1.0) | Savic_2017_table_4:row1:col1 | — | not captured |
+| CLNR, L/h | `Q79` · CLNR | 23.4 | L/h | 6.5000000000000004e-06 | [l] / [h] | not captured | exact (1.0) | Savic_2017_table_4:row2:col1 | — | 0.00574 (None% RSE) |
+| Central volume, L | `Q63` · V1 | 44.0 | L | 0.044 | [l] | not captured | exact (1.0) | Savic_2017_table_4:row3:col1 | — | not captured |
+| Intercompartmental Q3, L/h | `Q30` · Q | 14.3 | L/h | 3.972222222222223e-06 | [l] / [h] | not captured | exact (1.0) | Savic_2017_table_4:row4:col1 | — | not captured |
+| Intercompartmental Q4, L/h | `Q99` · Q2 | 53.7 | L/h | 1.4916666666666667e-05 | [l] / [h] | not captured | exact (1.0) | Savic_2017_table_4:row5:col1 | — | not captured |
+| Peripheral volume V3, L | `Q64` · V2 | 347 | L | 0.34700000000000003 | [l] | not captured | exact (1.0) | Savic_2017_table_4:row6:col1 | — | not captured |
+| Peripheral volume V4, L | `Q77` · V3 | 89.5 | L | 0.0895 | [l] | not captured | exact (1.0) | Savic_2017_table_4:row7:col1 | — | 0.0365 (None% RSE) |
+| Absorption rate constant, h-1 | `Q49` · kabs | 1.08 | h-1 | 0.00030000000000000003 | [1] / [h] | not captured | exact (1.0) | Savic_2017_table_4:row8:col1 | — | 0.102 (None% RSE) |
+| Bioavailability | `Q40` · Fab | 0.456 | not captured | not captured | not captured | not captured | exact (1.0) | Savic_2017_table_4:row10:col1 | — | not captured |
+| Mean transit time (fed state), h | `Q81` · MTT | 0.910 | h | not captured | [h] | not captured | llm_confirmed (0.6) | Savic_2017_table_4:row13:col1 | — | not captured |
+| Number of transit compartments | `Q311` · n_transit | 2.24 | not captured | not captured | not captured | not captured | exact (1.0) | Savic_2017_table_4:row14:col1 | — | not captured |
+| CLRc (Vmax), µg/h | `Q22` · CL | 0.00280 | µg/h | not captured | [µg] / [h] | not captured | exact (1.0) | Savic_2017_table_4:row28:col1 | — | not captured |
+| Apparent hepatic CL, L/hf | `Q27` · CL/F | 653 | L/h | 0.0001813888888888889 | L/h | not captured | exact (1.0) | Savic_2017_table_4:row30:col1 | — | not captured |
+| Apparent central volume V, Lf | `Q290` · V1/F | 365 | L | 0.365 | L | not captured | exact (1.0) | Savic_2017_table_4:row31:col1 | — | not captured |
+| theta_q83_category | `Q900` · theta_q83_category | 0.319 | not captured | not captured | not captured | not captured | not captured (not captured) | Savic_2017_table_4:row12:col1 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -67,43 +65,82 @@ Savic RM et al., Population Pharmacokinetics of Cladribi…, Clinical pharmacoki
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped duplicate Q49 ('Absorption rate constant (unknown/fed state), h−1', value '1.03') — already have one for this compound
+- table representations disagree for 'CLR coefficientb (typical patient with CLCR = 6.31), L/hc'; source reconciliation required
+- table representations disagree for 'CLNR, L/h'; source reconciliation required
+- table representations disagree for 'Central volume, L'; source reconciliation required
+- table representations disagree for 'Intercompartmental Q3, L/h'; source reconciliation required
+- table representations disagree for 'Intercompartmental Q4, L/h'; source reconciliation required
+- table representations disagree for 'Peripheral volume V3, L'; source reconciliation required
+- table representations disagree for 'Peripheral volume V4, L'; source reconciliation required
+- table representations disagree for 'Absorption rate constant, h-1'; source reconciliation required
+- table representations disagree for 'Absorption rate constant (unknown/fed state), h-1'; source reconciliation required
+- table representations disagree for 'Bioavailability'; source reconciliation required
+- table representations disagree for 'Bioavailability (unknown/fed state)'; source reconciliation required
+- table representations disagree for 'Lag time for phase III, h'; source reconciliation required
+- table representations disagree for 'Mean transit time (fed state), h'; source reconciliation required
+- table representations disagree for 'Number of transit compartments'; source reconciliation required
+- table representations disagree for 'Fold increase in CLNR in the presence of IFNβ-1a'; source reconciliation required
+- table representations disagree for 'BSVCLNR'; source reconciliation required
+- table representations disagree for 'BSVV'; source reconciliation required
+- table representations disagree for 'BSVQ3,Q4,V3,V4'; source reconciliation required
+- table representations disagree for 'BSVKa'; source reconciliation required
+- table representations disagree for 'BSVFd'; source reconciliation required
+- table representations disagree for 'BSVResidual variability'; source reconciliation required
+- table representations disagree for 'RUV plasma (intravenous), %'; source reconciliation required
+- table representations disagree for 'RUV plasma (oral), %'; source reconciliation required
+- table representations disagree for 'RUV plasma (oral; studies 26127, 26486), %'; source reconciliation required
+- table representations disagree for 'RUV plasma (oral; study 25643), %'; source reconciliation required
+- table representations disagree for 'RUV urine, %'; source reconciliation required
+- table representations disagree for 'CLRc (Vmax), µg/h'; source reconciliation required
+- table representations disagree for 'CLRc (Km), ng/L'; source reconciliation required
+- table representations disagree for 'Apparent hepatic CL, L/hf'; source reconciliation required
+- table representations disagree for 'Apparent central volume V, Lf'; source reconciliation required
+- table representations disagree for 'RUV plasma, %'; source reconciliation required
+- table representations disagree for 'RUV plasma (study 25643), %'; source reconciliation required
+- unit_dimension_mismatch: 'CLR coefficientb (typical patient with CLCR = 6.31), L/hc' → Q22 (unit '[length] ** 2 * [time]' vs ontology '[length] ** 3 / [time]') — route to review
+- dropped duplicate Q49 ('Absorption rate constant (unknown/fed state), h-1', value '1.03') — already have one for this compound
 - dropped duplicate Q79 ('Fold increase in CLNR in the presence of IFNβ-1a', value '1.21') — already have one for this compound
-- unit_dimension_mismatch: 'CLR e (Vmax), μg/h' → Q22 (unit '[mass] / [time]' vs ontology '[length] ** 3 / [time]') — route to review
-- unit_dimension_mismatch: 'CLR e (Km), ng/L' → Q22 (unit '[mass] / [length] ** 3' vs ontology '[length] ** 3 / [time]') — route to review
-- dropped duplicate Q22 ('CLR e (Km), ng/L', value '0.0114') — already have one for this compound
-- unit inherited for CL (Q22): 'μg/h' from a same-Q-code sibling (this row's label had no unit)
+- unit_dimension_mismatch: 'CLRc (Vmax), µg/h' → Q22 (unit '[mass] / [time]' vs ontology '[length] ** 3 / [time]') — route to review
+- unit_dimension_mismatch: 'CLRc (Km), ng/L' → Q22 (unit '[mass] / [length] ** 3' vs ontology '[length] ** 3 / [time]') — route to review
+- dropped duplicate Q22 ('CLRc (Km), ng/L', value '0.0114') — already have one for this compound
 - covariate effect for Q83 has no base parameter row (kept as unattached equation-variable)
-- implicit units: 'Apparent hepatic CL, L/hf' → L/h (from the paper text: "The text states: 'Apparent CLNR and volume of distribution for CAde were found to be 653 L/h and 365 L, respectively.' T")
-- implicit units: 'Apparent central volume V, Lf' → L (from the paper text: "The text states: 'Apparent CLNR and volume of distribution for CAde were found to be 653 L/h and 365 L, respectively.' T")
+- implicit units: 'Apparent hepatic CL, L/hf' → L/h (from the paper text: "The text states: 'Apparent CLNR and volume of distribution for CAde were found to be 653 L/h and 365 L, respectively.'")
+- implicit units: 'Apparent central volume V, Lf' → L (from the paper text: "The text states: 'Apparent CLNR and volume of distribution for CAde were found to be 653 L/h and 365 L, respectively.'")
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=cladribine
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
 - template fit: PK_3M_9C — formed from central; parent 3, metabolites [1]
 - status held at route_to_review — not promoted
-- row roles: 2 per-group rows of cladribine absorption_rate_constant but 0 reference group(s) — kept as printed
-- row roles: 4 per-group rows of cladribine residual_error but 0 reference group(s) — kept as printed
-- row roles (LLM): model_class=compartmental; 32/32 row label(s) assigned, 30 linked by role; re-tagged cladribine→parent ×54, cladribine→2-chloroadenine ×12
+- row roles: 2 per-group rows of cladribine other but 0 reference group(s) — kept as printed
+- row roles: 7 per-group rows of none residual_error but 0 reference group(s) — kept as printed
+- row roles (LLM): model_class=compartmental; 32/32 row label(s) assigned, 14 linked by role; re-tagged cladribine→parent ×20, cladribine→2-chloroadenine ×4
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
+- table Savic_2017_table_4: unbound_uncertainty
+- table Tab4: representations disagree; selected evidence retained, not merged
 - LLM selected parameter table(s) 4
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss:120b` | partly confirmed | 0.87 (20/23 fields) | 3 |
 | `gpt-oss-120b` | partly confirmed | 0.921 (35/38 fields) | 3 |
 
-<details><summary>3 field discrepancies</summary>
+<details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `parameters[clr e (km)]` | not captured | 0.0114 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[f]` | not captured | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[fold increase in clnr in the presence of ifnβ-1a]` | not captured | 1.21 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[clrc (km)]` | not captured | 0.0114 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[f]` | not captured | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[intercompartmental q4]` | 53.7 | not captured | only_one_extracted |
 
 </details>
 
@@ -120,23 +157,23 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass | not captured | 14 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | fail | [mass] / [time] | μg/h | not captured | not captured | ['Tab4:row29:col1', 'Tab4:row29:col2'] |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab4:row31:col1', 'Tab4:row31:col2'] |
-| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab4:row32:col1', 'Tab4:row32:col2'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab4:row5:col1', 'Tab4:row5:col2'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Tab4:row9:col1', 'Tab4:row9:col2'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab4:row4:col1', 'Tab4:row4:col2'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab4:row7:col1', 'Tab4:row7:col2'] |
-| C5_dimension_Q77 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab4:row8:col1', 'Tab4:row8:col2'] |
-| C5_dimension_Q79 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab4:row3:col1', 'Tab4:row3:col2'] |
-| C5_dimension_Q99 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab4:row6:col1', 'Tab4:row6:col2'] |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | μg/h | not captured | not captured | ['Tab4:row2:col1', 'Tab4:row2:col2'] |
+| C5_dimension_Q22 | fail | [length] ** 2 * [time] | L/hc | not captured | not captured | ['Savic_2017_table_4:row1:col1'] |
+| C5_dimension_Q22 | fail | [mass] / [time] | µg/h | not captured | not captured | ['Savic_2017_table_4:row28:col1'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Savic_2017_table_4:row30:col1'] |
+| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['Savic_2017_table_4:row31:col1'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Savic_2017_table_4:row4:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Savic_2017_table_4:row8:col1'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Savic_2017_table_4:row3:col1'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Savic_2017_table_4:row6:col1'] |
+| C5_dimension_Q77 | pass | [length] ** 3 | not captured | not captured | not captured | ['Savic_2017_table_4:row7:col1'] |
+| C5_dimension_Q79 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Savic_2017_table_4:row2:col1'] |
+| C5_dimension_Q99 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Savic_2017_table_4:row5:col1'] |
 | C7_apparent_coherence | fail | F==1, Fm==1, no molar corr. | absolute F=0.456 with apparent parameterization | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 653 L/h | not captured | not captured | ['Tab4:row31:col1', 'Tab4:row31:col2'] |
-| C9_phys_window_Q290 | pass | volume within physiological range | 365 L | not captured | not captured | ['Tab4:row32:col1', 'Tab4:row32:col2'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 44 L | not captured | not captured | ['Tab4:row4:col1', 'Tab4:row4:col2'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 347 L | not captured | not captured | ['Tab4:row7:col1', 'Tab4:row7:col2'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 653 L/h | not captured | not captured | ['Savic_2017_table_4:row30:col1'] |
+| C9_phys_window_Q290 | pass | volume within physiological range | 365 L | not captured | not captured | ['Savic_2017_table_4:row31:col1'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 44 L | not captured | not captured | ['Savic_2017_table_4:row3:col1'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 347 L | not captured | not captured | ['Savic_2017_table_4:row6:col1'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -145,7 +182,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_cladribine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Savic_2017` / `Savic_2017::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_cladribine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Savic_2017` / `Savic_2017::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -161,4 +198,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 16:37 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 01:05 UTC</sub>

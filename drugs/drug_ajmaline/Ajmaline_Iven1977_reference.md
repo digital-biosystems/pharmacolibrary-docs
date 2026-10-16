@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;ajmaline&quot;,&quot;href&quot;:&quot;drugs/drug_ajmaline/&quot;},{&quot;label&quot;:&quot;Iven_1977 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ajmaline_Iven1977_reference&quot;,&quot;label&quot;:&quot;Iven_1977_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ajmaline/Ajmaline_Iven1977_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ajmaline_Iven1977_reference&quot;,&quot;label&quot;:&quot;Iven_1977_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ajmaline/Ajmaline_Iven1977_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Yasuhara_1987_PQ&quot;,&quot;label&quot;:&quot;Yasuhara_1987 \u00b7 PQ&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ajmaline/pd_Yasuhara_1987_PQ.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yasuhara_1987_QRS&quot;,&quot;label&quot;:&quot;Yasuhara_1987 \u00b7 QRS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ajmaline/pd_Yasuhara_1987_QRS.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ajmaline — `Ajmaline_Iven1977_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.714), gpt-oss:120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.625). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -19,21 +19,19 @@
 
 ### Reviewer guidance
 
-**The ajmaline record was rejected because the abstract-only volume of distribution Vdbeta of 136 ml is physiologically implausible for mice, indicating a unit or scale extraction error.**
+**The model does not reproduce the paper's terminal half-life (paper 0.223, model 4.06); ka use library defaults, not estimates from this paper (+1 more).**
 
-The record for ajmaline in mice was built from the paper's abstract alone, so summary statistics stood in for a fitted model. The extracted volume of distribution Vdbeta of 136 ml falls outside the physiological window for mice, and the rejection cites an implausible magnitude consistent with a unit or scale extraction error. A second reader also disagreed on several fields, reading a Vdbeta of 136 and a 'lasting' value of 10 where this record has null, and left the dose compound and primary analyte as unknown. Extracted — ajmaline: V 136 ml.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — ajmaline: CL 6 ml/min, V/F 2.1e+03 ml.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading none → none (none); it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of liver: this record has none, the second reading 1.39; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by glm-5.3-flash</sub>
-
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:35:51.559109+00:00) predates the upstream re-run (2026-10-08 15:32:48.693309+00:00). Current validate status: `extracted`.
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Iven H, The pharmacokinetics and organ distribu…, Naunyn-Schmiedeberg's archi… (1977)
   ·  DOI: [10.1007/BF00510985](https://doi.org/10.1007/BF00510985)
 
-<div class="pk-model-meta" hidden drug="ajmaline" model-id="Ajmaline_Iven1977_reference" status="extracted" stale="true" population="mice" measured-compound="ajmaline" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="ajmaline" model-id="Ajmaline_Iven1977_reference" status="needs_review" stale="false" population="mice" measured-compound="ajmaline" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.
@@ -41,6 +39,8 @@ Iven H, The pharmacokinetics and organ distribu…, Naunyn-Schmiedeberg's archi�
 **Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | overall body clearance Cl,ot | `Q22` · CL | 6 | ml/min | 1.0000000000000001e-07 | L/h | not captured | boundary (0.8) | Iven_1977:other_prose | — | not captured |
@@ -60,10 +60,10 @@ Iven H, The pharmacokinetics and organ distribu…, Naunyn-Schmiedeberg's archi�
 - `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'Heart' — extend the ontology if this is a real PK parameter (source ['Iven_1977_table_1:row1:col5'])
-- dropped unlinked row (NIL): 'Lung' — extend the ontology if this is a real PK parameter (source ['Iven_1977_table_1:row2:col5'])
-- dropped unlinked row (NIL): 'Brain' — extend the ontology if this is a real PK parameter (source ['Iven_1977_table_1:row3:col5'])
-- dropped unlinked row (NIL): 'Liver' — extend the ontology if this is a real PK parameter (source ['Iven_1977_table_1:row4:col5'])
+- dropped unlinked row (NIL): 'Heart' — extend the ontology if this is a real PK parameter (source ['Iven_1977_table_1:row1:col1', 'Iven_1977_table_1:row1:col3', 'Iven_1977_table_1:row1:col5'])
+- dropped unlinked row (NIL): 'Lung' — extend the ontology if this is a real PK parameter (source ['Iven_1977_table_1:row2:col1', 'Iven_1977_table_1:row2:col3', 'Iven_1977_table_1:row2:col5'])
+- dropped unlinked row (NIL): 'Brain' — extend the ontology if this is a real PK parameter (source ['Iven_1977_table_1:row3:col1', 'Iven_1977_table_1:row3:col3', 'Iven_1977_table_1:row3:col5'])
+- dropped unlinked row (NIL): 'Liver' — extend the ontology if this is a real PK parameter (source ['Iven_1977_table_1:row4:col1', 'Iven_1977_table_1:row4:col5'])
 - table mostly unlinked (4/4 table-cell rows NIL) — likely the wrong table was located, not 0 genuinely-missing ontology parameter(s); route_to_review instead of building a model from the residual linked cell(s)
 - salvaged Q22 ('overall body clearance Cl,ot'=6) from results prose — parameter table was unreadable
 - salvaged Q76 ('mean apparent volume of distribution (Vd~)'=2100) from results prose — parameter table was unreadable
@@ -74,32 +74,21 @@ Iven H, The pharmacokinetics and organ distribu…, Naunyn-Schmiedeberg's archi�
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- unparsed cell Iven_1977_table_1:row1:col1 = '0.138 (0.135-0.141)'
-- unparsed cell Iven_1977_table_1:row1:col3 = '23.2 (21.0-25.4)'
-- unparsed cell Iven_1977_table_1:row2:col1 = '0.256 (0.247-0.264)'
-- unparsed cell Iven_1977_table_1:row2:col3 = '53.7 (50.7-56.8)'
-- unparsed cell Iven_1977_table_1:row3:col1 = '0.427 (0.423-0.431)'
-- unparsed cell Iven_1977_table_1:row3:col3 = '5.75 (5.51-6.0)'
-- unparsed cell Iven_1977_table_1:row4:col1 = '1.58 (1.55 -1.6)'
-- unparsed cell Iven_1977_table_1:row4:col3 = '12.2"'
+- table Iven_1977_table_1: unparsed_numeric_cell
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.714 (5/7 fields) | 2 |
-| `gpt-oss:120b` | not confirmed | 0.5 (4/8 fields) | 4 |
+| `gpt-oss:120b` | partly confirmed | 0.625 (5/8 fields) | 3 |
 
-<details><summary>6 field discrepancies</summary>
+<details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.links` | [] | [['none', 'none', 'none']] | mismatch |
-| `gpt-oss-120b` | `parameters[liver]` | not captured | 1.39 | only_one_extracted |
-| `gpt-oss:120b` | `model.links` | [] | [['none', 'none', 'none']] | mismatch |
 | `gpt-oss:120b` | `parameters[cl,ot]` | not captured | 6 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[liver]` | not captured | 1.39 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[overall body clearance cl,ot]` | 6 | not captured | only_one_extracted |
@@ -124,6 +113,19 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.36 L/h | not captured | not captured | ['Iven_1977:other_prose'] |
 | C9_phys_window_Q76 | pass | volume within physiological range | 2.1 L | not captured | not captured | ['Iven_1977:discussion_prose'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_output_variable | not captured | pass | C_central (measured=ajmaline) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable; invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
+| T1_t_half_terminal | reference | fail | 0.22333333333333333 | 4.056863072393966 | 18.1651 | min→SI vs simulated h |
+
 <details class="legend">
 <summary>Validation definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
@@ -131,7 +133,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ajmaline/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Iven_1977` / `Iven_1977::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ajmaline/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Iven_1977` / `Iven_1977::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ajmaline/models/modelica/Ajmaline_Iven1977_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ajmaline/models/modelica/Ajmaline_Iven1977_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ajmaline/models/modelica/Ajmaline_Iven1977_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -149,7 +154,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_ajmaline/Ajmaline_Iven1977_reference/Ajmaline_Iven1977_reference.svg" alt="Ajmaline_Iven1977_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_ajmaline/Ajmaline_Iven1977_reference/Ajmaline_Iven1977_reference.svg" alt="Ajmaline_Iven1977_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -162,4 +167,4 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-08 15:32 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 17:49 UTC</sub>

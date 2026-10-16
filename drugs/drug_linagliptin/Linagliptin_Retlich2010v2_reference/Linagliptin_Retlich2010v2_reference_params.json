@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 5 mg oral (A10BH05)",
+ "model_id": "Linagliptin_Retlich2010v2_reference",
+ "molar_masses": {
+  "central.C": 0.47254219999999997
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 6.972222222222222e-07,
+  "F": 30.0,
+  "MM": 0.47254219999999997,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0054285714285714284,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 5e-06,
+  "ka": 0.00045277777777777775,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 12920.35201906446
+ },
+ "reference_peaks": {
+  "central.C": 0.00038596474798573317
+ },
+ "stop_time": 2419200.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

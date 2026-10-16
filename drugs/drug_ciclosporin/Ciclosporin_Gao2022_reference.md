@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;ciclosporin&quot;,&quot;href&quot;:&quot;drugs/drug_ciclosporin/&quot;},{&quot;label&quot;:&quot;Gao_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ciclosporin_Kauv2025_reference&quot;,&quot;label&quot;:&quot;Kauv_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciclosporin/Ciclosporin_Kauv2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciclosporin_Han2013_reference&quot;,&quot;label&quot;:&quot;Han_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciclosporin/Ciclosporin_Han2013_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ciclosporin_Gao2022_reference&quot;,&quot;label&quot;:&quot;Gao_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciclosporin/Ciclosporin_Gao2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Ciclosporin_Kauv2025_reference&quot;,&quot;label&quot;:&quot;Kauv_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciclosporin/Ciclosporin_Kauv2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciclosporin_Han2013_reference&quot;,&quot;label&quot;:&quot;Han_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciclosporin/Ciclosporin_Han2013_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Albitar_2022_eGFR&quot;,&quot;label&quot;:&quot;Albitar_2022 \u00b7 eGFR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ciclosporin/pd_Albitar_2022_eGFR.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ciclosporin — `Ciclosporin_Gao2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -13,40 +13,35 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 ### Reviewer guidance
 
-**Ciclosporin clearance was negative due to a -1.07% covariate shift from a baseline of zero.**
-
-The total clearance parameter carries a value of -1.07%, labeled as a proportionality factor for bilirubin. This negative percentage implies a base clearance value of zero, making the final clearance mathematically negative. Such a value is physically implausible for drug elimination and indicates the base or shift is incorrect. Extracted — ciclosporin: kabs 1.26 /h, CL/F 29.1 L/h, V1/F 325 L, Q/F 3.1 L/h, V2/F 262 L, CL -1.07.
+**Every check that could be run on this record passed.**
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Gao X et al., Population Pharmacokinetics of Cyclospo…, Frontiers in pharmacology (2022)
   ·  DOI: [10.3389/fphar.2022.933739](https://doi.org/10.3389/fphar.2022.933739)
 
-<div class="pk-model-meta" hidden drug="ciclosporin" model-id="Ciclosporin_Gao2022_reference" status="rejected" stale="false" population="Chinese pediatric patients with acquired aplastic anemia" measured-compound="cyclosporine" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="ciclosporin" model-id="Ciclosporin_Gao2022_reference" status="curated_candidate" stale="false" population="Chinese pediatric patients with acquired aplastic anemia" measured-compound="cyclosporine" parameterization="apparent" topology="2C"></div>
 
-**Model structure:** 2-compartment; no model was built for this record.  
-**Parameters:** 6 extracted.
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Ka (/h) | `Q49` · kabs | 1.26 | /h | 0.00035 | [1] / [h] | not captured | exact (1.0) | T2:row1:col1 | — | not captured |
-| CL/F (L/h) | `Q27` · CL/F | 29.1 | L/h | 8.083333333333333e-06 | [l] / [h] | not captured | exact (1.0) | T2:row2:col1 | — | 28.0 (24.9% RSE) |
-| VC/F (L) | `Q290` · V1/F | 325 | L | 0.325 | [l] | not captured | exact (1.0) | T2:row3:col1 | — | 62.1 (29.3% RSE) |
+| Ka (/h) | `Q49` · kabs | 1.26 | /h | 0.00035 | [1] / [h] | 20.9 | exact (1.0) | T2:row1:col1 | — | not captured |
+| CL/F (L/h) | `Q27` · CL/F | 29.1 | L/h | 8.083333333333333e-06 | [l] / [h] | 3.8 | exact (1.0) | T2:row2:col1 | — | 28.0 (None% RSE) |
+| VC/F (L) | `Q290` · V1/F | 325 | L | 0.325 | [l] | 15.7 | exact (1.0) | T2:row3:col1 | — | 62.1 (None% RSE) |
 | Q/F (L/h) | `Q69` · Q/F | 3.1 | L/h | 8.611111111111112e-07 | [l] / [h] | not captured | exact (1.0) | T2:row4:col1 | — | not captured |
 | VP/F—(L) | `Q82` · V2/F | 262 | L | 0.262 | [l] | not captured | llm_confirmed (0.6) | T2:row5:col1 | — | not captured |
-| TBIL on CL (%) | `Q22` · CL | -1.07 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | T2:row6:col1 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -55,21 +50,24 @@ Gao X et al., Population Pharmacokinetics of Cyclospo…, Frontiers in pharmacol
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['Tlag']
+- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+
 **Interpretation flags:**
 - table section iiv: 'CL/F (L/h)' routed out of structural estimates ('CV for IIV')
 - table section iiv: 'VC/F (L)' routed out of structural estimates ('CV for IIV')
-- implicit units: 'TBIL on CL (%)' — the LLM proposed '%', whose dimension does not fit Q22; left unset
+- dropped unlinked row (NIL): 'TBIL on CL (%)' — extend the ontology if this is a real PK parameter (source ['T2:row6:col1'])
+- NIL: refused to back-fill base 'NIL' from footnote/prose loose number 28 (source ['T2:footnote']); the table cell was unparseable — needs review
+- NIL: refused to back-fill base 'allometric_exponent' from footnote/prose loose number 0.75 (source ['T2:footnote']); the table cell was unparseable — needs review
+- NIL: refused to back-fill base 'NIL' from footnote/prose loose number 1.0 (source ['T2:footnote']); the table cell was unparseable — needs review
+- NIL: refused to back-fill base 'NIL' from footnote/prose loose number 10.65 (source ['T2:footnote']); the table cell was unparseable — needs review
+- NIL: refused to back-fill base 'NIL' from footnote/prose loose number -0.0107 (source ['T2:footnote']); the table cell was unparseable — needs review
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=cyclosporine
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- unparsed cell T2:row1:col2 = '1.27 (0.78–2.02)'
-- unparsed cell T2:row2:col2 = '29.0 (26.9–31.2)'
-- unparsed cell T2:row2:col4 = '28.7 (20.9–35.7)'
-- unparsed cell T2:row3:col2 = '319 (273–398)'
-- unparsed cell T2:row3:col4 = '62.1 (48.7–77.3)'
-- unparsed cell T2:row6:col2 = '−1.05 (−1.50 to −0.50)'
-- unparsed cell T2:row7:col2 = '0.348 (0.356–0.393)'
+- table T2: unparsed_numeric_cell
 - LLM selected parameter table(s) 2
 
 ## Validation
@@ -93,21 +91,31 @@ _All readers agree on the compared fields of this record._
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C2_base_sign_Q22 | fail | not captured | -1.07 | not captured | not captured | not captured |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T2:row2:col1'] |
 | C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['T2:row3:col1'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['T2:row1:col1'] |
 | C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T2:row4:col1'] |
 | C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['T2:row5:col1'] |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['T2:row6:col1'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 29.1 L/h | not captured | not captured | ['T2:row2:col1'] |
 | C9_phys_window_Q290 | pass | volume within physiological range | 325 L | not captured | not captured | ['T2:row3:col1'] |
 | C9_phys_window_Q82 | pass | volume within physiological range | 262 L | not captured | not captured | ['T2:row5:col1'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_output_variable | not captured | pass | C_central (measured=cyclosporine) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 5 scholar param(s) emitted or defaulted | 5 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -116,20 +124,38 @@ _All readers agree on the compared fields of this record._
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ciclosporin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Gao_2022` / `Gao_2022::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ciclosporin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Gao_2022` / `Gao_2022::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ciclosporin/models/modelica/Ciclosporin_Gao2022_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ciclosporin/models/modelica/Ciclosporin_Gao2022_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ciclosporin/models/modelica/Ciclosporin_Gao2022_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ciclosporin/Ciclosporin_Gao2022_reference/Ciclosporin_Gao2022_reference_modelica.zip" download>Ciclosporin_Gao2022_reference_modelica.zip</a> <span class="pk-size">(4.6 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_ciclosporin/Ciclosporin_Gao2022_reference/Ciclosporin_Gao2022_reference_fmi.zip" download>Ciclosporin_Gao2022_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_ciclosporin/Ciclosporin_Gao2022_reference/Ciclosporin_Gao2022_reference_matlab.zip" download>Ciclosporin_Gao2022_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_ciclosporin/Ciclosporin_Gao2022_reference/Ciclosporin_Gao2022_reference_matlab_simbio.zip" download>Ciclosporin_Gao2022_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_ciclosporin/Ciclosporin_Gao2022_reference/Ciclosporin_Gao2022_reference_sbml.zip" download>Ciclosporin_Gao2022_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_ciclosporin/Ciclosporin_Gao2022_reference/Ciclosporin_Gao2022_reference_cellml.zip" download>Ciclosporin_Gao2022_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+</tbody></table>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_ciclosporin/Ciclosporin_Gao2022_reference/Ciclosporin_Gao2022_reference.svg" alt="Ciclosporin_Gao2022_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+**Administration: oral** — 350 mg, single dose, first-order absorption (ka 1.26 /h, F 1). Doses in the paper: 350, 560, 700 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_ciclosporin/Ciclosporin_Gao2022_reference/Ciclosporin_Gao2022_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_ciclosporin/Ciclosporin_Gao2022_reference/Ciclosporin_Gao2022_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_2C_enteral` · parameters `Ciclosporin_Gao2022_reference_params.json` · controls `Ciclosporin_Gao2022_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 00:01 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 21:18 UTC</sub>

@@ -17,16 +17,24 @@ Camrelizumab is a PD-1 inhibitor monoclonal antibody being investigated as an an
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 10:50 | 2:14 | 0/3/1 | 0/0/0 | 0/0/0 | 52,400/8,658 | openai / gpt-6-luna | 2 | 1/1 | 2/0 | 0 |
+| 2026-10-14 18:32 | 0:42 | 0/2/1 | 0/0/0 | 0/0/0 | 41,588/1,588 | einfracz / qwen3.8-27b | 2 | 1/1 | 2/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">not modelled</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.417). Primary extraction retained.">cross-check: partial</span> | [Shang_2022_reference](drugs/drug_camrelizumab/Camrelizumab_Shang2022_reference.md) | — | 3-compartment (no model) | 3 | Shang J et al., Population pharmacokinetic models of an…, Frontiers in immunology (2022) | [10.3389/fimmu.2022.871372](https://doi.org/10.3389/fimmu.2022.871372) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.833). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Wang_2021_base](drugs/drug_camrelizumab/Camrelizumab_Wang2021_base.md) | — | 2-compartment (no model) | 8 | Wang CY et al., Population pharmacokinetics of the anti…, Acta pharmacologica Sinica (2021) | [10.1038/s41401-020-00550-y](https://doi.org/10.1038/s41401-020-00550-y) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.556). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Wang_2021_final](drugs/drug_camrelizumab/Camrelizumab_Wang2021_final.md) | — | 2-compartment (no model) | 8 (+2 cov.) | Wang CY et al., Population pharmacokinetics of the anti…, Acta pharmacologica Sinica (2021) | [10.1038/s41401-020-00550-y](https://doi.org/10.1038/s41401-020-00550-y) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Wang_2021_median_2_5_97_5](drugs/drug_camrelizumab/Camrelizumab_Wang2021_median_2_5_97_5.md) | — | 1-compartment (no model) | 3 | Wang CY et al., Population pharmacokinetics of the anti…, Acta pharmacologica Sinica (2021) | [10.1038/s41401-020-00550-y](https://doi.org/10.1038/s41401-020-00550-y) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.417). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: model_quarantined: Cl, Vd, k12, k13, k31 left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Shang_2022_reference](drugs/drug_camrelizumab/Camrelizumab_Shang2022_reference.md) | held back | 3-compartment, IV | 3 | Shang J et al., Population pharmacokinetic models of an…, Frontiers in immunology (2022) | [10.3389/fimmu.2022.871372](https://doi.org/10.3389/fimmu.2022.871372) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.833). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Wang_2021_base](drugs/drug_camrelizumab/Camrelizumab_Wang2021_base.md) | — | 2-compartment (no model) | 6 | Wang CY et al., Population pharmacokinetics of the anti…, Acta pharmacologica Sinica (2021) | [10.1038/s41401-020-00550-y](https://doi.org/10.1038/s41401-020-00550-y) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.556). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Wang_2021_final](drugs/drug_camrelizumab/Camrelizumab_Wang2021_final.md) | — | 2-compartment (no model) | 6 (+2 cov.) | Wang CY et al., Population pharmacokinetics of the anti…, Acta pharmacologica Sinica (2021) | [10.1038/s41401-020-00550-y](https://doi.org/10.1038/s41401-020-00550-y) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=camrelizumab).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: PDCD1 (antibody), PDCD1 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -37,16 +45,17 @@ Camrelizumab is a PD-1 inhibitor monoclonal antibody being investigated as an an
 ## Coverage
 
 - **PubMed hits:** 4 matched, 4 returned
-- **screened:** 2  ·  **relevant:** 2
-- **records:** 4  ·  extracted 0  ·  needs_review 0  ·  rejected 3  ·  stale 0
+- **screened:** 2  ·  **relevant:** 1
+- **records:** 3  ·  extracted 0  ·  needs_review 1  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Hou_2023 | irrelevant | 0 | 0 | This clinical efficacy study reports no quantitative pharmacokinetic disposition parameters for camrelizumab. |
-| popPK | Xu_2022 | irrelevant | 0 | 0 | This is a review and provides no quantitative camrelizumab disposition parameters. |
+| popPK | Hou_2023 | irrelevant | 0 | 0 | The paper is a clinical efficacy and safety study for NSCLC and does not report any pharmacokinetic disposition parameters. |
+| popPK | Shang_2022 | irrelevant | 4 | 3 | This is a systematic review, not an original study; while it lists summary statistics for a camrelizumab model from Wang et al. (2022), it does not provide the specific quantitative parameter values (CL, V, Q) for camrelizumab in the provided evidence, only ranges for the entire cohort. |
+| popPK | Xu_2022 | irrelevant | 1 | 0 | The paper is a narrative review discussing pharmacology and efficacy without reporting quantitative population pharmacokinetic parameter values (CL, V, etc.) for camrelizumab. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 10:48 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-14 18:32 UTC</sub>

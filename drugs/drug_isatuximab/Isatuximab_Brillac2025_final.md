@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;isatuximab&quot;,&quot;href&quot;:&quot;drugs/drug_isatuximab/&quot;},{&quot;label&quot;:&quot;Brillac_2025 \u00b7 final&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Isatuximab_Fau2020_reference&quot;,&quot;label&quot;:&quot;Fau_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_isatuximab/Isatuximab_Fau2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,22 +16,22 @@
 
 ### Reviewer guidance
 
-**The isatuximab record was rejected for an unreachable compartment; it reports a weight allometric exponent of 0.833 but no clearance value.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model has a two-compartment structure, and the finding says a compartment was unreachable, without specifying which one. The reported clearance value is absent, while the allometric exponent is 0.833. A reported unit could not be converted to SI, leaving a parameter without an SI value; the finding does not identify that parameter. Extracted — isatuximab: allometric_exponent 0.833 WT/MedWT, V1 1.98 L, V2 2.2 L.
+Extracted — isatuximab: V1 1.98 L, V2 2.2 L.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `parameters[β_cl_log].parameter_id`: this record has Q319, the second reading Q31; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Brillac C et al., Selection of isatuximab dosing regimen…, Cancer chemotherapy and pha… (2025)
   ·  DOI: [10.1007/s00280-025-04832-2](https://doi.org/10.1007/s00280-025-04832-2)
 
-<div class="pk-model-meta" hidden drug="isatuximab" model-id="Isatuximab_Brillac2025_final" status="rejected" stale="false" population="Pediatric patients with R/R acute leukemia pooled with adults from ISLAY" measured-compound="isatuximab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="isatuximab" model-id="Isatuximab_Brillac2025_final" status="rejected" stale="false" population="pediatric patients with acute leukemia and adults with multiple myeloma" measured-compound="isatuximab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
-**Parameters:** 3 extracted.
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -41,7 +40,6 @@ Brillac C et al., Selection of isatuximab dosing regimen…, Cancer chemotherapy
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| β_CL_log(WT/MedWT) | `Q319` · allometric_exponent | 0.833 | WT/MedWT | not captured | [wt] / [[m] · [edwt]] | not captured | llm (0.6) | Tab1:row5:col3, Tab1:row5:col4 | — | not captured |
 | V1 (L) | `Q63` · V1 | 1.98 | L | 0.00198 | [l] | not captured | exact (1.0) | Tab1:row6:col3, Tab1:row6:col4 | — | not captured |
 | V2 (L) | `Q64` · V2 | 2.20 | L | 0.0022 | [l] | not captured | exact (1.0) | Tab1:row10:col3, Tab1:row10:col4 | — | not captured |
 | CL | `Q900` · CL | 0.00556 | L/h | 1.5444444444444446e-09 | not captured | not captured | not captured (not captured) | Tab1:row4:col3, Tab1:row4:col4 | — | not captured |
@@ -61,20 +59,30 @@ Brillac C et al., Selection of isatuximab dosing regimen…, Cancer chemotherapy
 ## Departures & gaps
 
 **Interpretation flags:**
-- table section iiv: 'ω(CL)' routed out of structural estimates ('Interindividual variability (%)')
-- table section iiv: 'ω(V1)' routed out of structural estimates ('Interindividual variability (%)')
-- table section iiv: 'ω(Q)' routed out of structural estimates ('Interindividual variability (%)')
-- table section iiv: 'ω(V2)' routed out of structural estimates ('Interindividual variability (%)')
-- table section iiv: 'Residual error proportional (%)' routed out of structural estimates ('Interindividual variability (%)')
+- table section iiv: 'ω(CL)' routed out of structural estimates ('Interindividual variability (%) Estimate RSE (%)')
+- table section iiv: 'ω(V1)' routed out of structural estimates ('Interindividual variability (%) Estimate RSE (%)')
+- table section iiv: 'ω(Q)' routed out of structural estimates ('Interindividual variability (%) Estimate RSE (%)')
+- table section iiv: 'ω(V2)' routed out of structural estimates ('Interindividual variability (%) Estimate RSE (%)')
+- table section iiv: 'Residual error proportional (%)' routed out of structural estimates ('Interindividual variability (%) Estimate RSE (%)')
+- table representations disagree for '−2LL'; source reconciliation required
+- table representations disagree for 'CL (L/h)'; source reconciliation required
+- table representations disagree for 'β_CL_log(WT/MedWT)'; source reconciliation required
+- table representations disagree for 'V1 (L)'; source reconciliation required
+- table representations disagree for 'β_V1_log(WT/MedWT)'; source reconciliation required
+- table representations disagree for 'Q (L/h)'; source reconciliation required
+- table representations disagree for 'β_Q_log(WT/MedWT)'; source reconciliation required
+- table representations disagree for 'V2 (L)'; source reconciliation required
+- table representations disagree for 'Β_V2_log(WT/MedWT)'; source reconciliation required
 - dropped unlinked row (NIL): '−2LL' — extend the ontology if this is a real PK parameter (source ['Tab1:row1:col3', 'Tab1:row1:col4', 'Tab1:row1:col5'])
-- dropped unlinked row (NIL): 'BIC' — extend the ontology if this is a real PK parameter (source ['Tab1:row2:col3', 'Tab1:row2:col4', 'Tab1:row2:col5'])
-- unit_dimension_unknown: 'WT/MedWT' (allometric_exponent)
-- dropped duplicate Q319 ('β_V1_log(WT/MedWT)', value '0.821') — already have one for this compound
-- dropped duplicate Q319 ('β_Q_log(WT/MedWT)', value '0.85') — already have one for this compound
-- dropped duplicate Q319 ('Β_V2_log(WT/MedWT)', value '0.72') — already have one for this compound
-- NIL: refused to back-fill base 'MW' from footnote/prose loose number 54 (source ['Tab1:footnote', 'Tab1:footnote']); the table cell was unparseable — needs review
+- 'β_CL_log(WT/MedWT)' is a β covariate effect on _CL_, not Q22 (llm link set aside)
+- dropped unlinked row (NIL): 'β_CL_log(WT/MedWT)' — extend the ontology if this is a real PK parameter (source ['Tab1:row5:col3', 'Tab1:row5:col4', 'Tab1:row5:col5'])
+- 'β_V1_log(WT/MedWT)' is a β covariate effect on _V1_, not Q314 (llm link set aside)
+- dropped unlinked row (NIL): 'β_V1_log(WT/MedWT)' — extend the ontology if this is a real PK parameter (source ['Tab1:row7:col3', 'Tab1:row7:col4'])
+- 'β_Q_log(WT/MedWT)' is a β covariate effect on _Q_, not Q30 (llm link set aside)
+- dropped unlinked row (NIL): 'β_Q_log(WT/MedWT)' — extend the ontology if this is a real PK parameter (source ['Tab1:row9:col3'])
+- unit_dimension_mismatch: 'Β_V2_log(WT/MedWT)' → Q64 (unit 'dimensionless' vs ontology '[length] ** 3') — route to review
+- dropped duplicate Q64 ('Β_V2_log(WT/MedWT)', value '0.72') — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=isatuximab
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - bound model equation to Q22 (CL): CL = 0.00775 * (WT/54)^0.85(fixed)
 - bound model equation to Q30 (Q): Q = 0.0386 * (WT/54)^0.85(fixed)
 - Q22 (CL) is equation-defined: value moved to equation-variable 'CL (L/h)'; equation kept verbatim
@@ -84,9 +92,7 @@ Brillac C et al., Selection of isatuximab dosing regimen…, Cancer chemotherapy
 - molar mass: none found for 'isatuximab' — its concentrations stay mass-only
 
 **Extraction notes:**
-- unparsed cell Tab1:row5:col5 = '1.37E–08'
-- unparsed cell Tab1:row7:col5 = '&lt; 2.2E–16'
-- unparsed cell Tab1:row11:col5 = '7.08E–07'
+- table Tab1: representations disagree; selected evidence retained, not merged
 - captured model equation CL = 0.00775 * (WT/54)^0.85(fixed)
 - captured model equation Q = 0.0386 * (WT/54)^0.85(fixed)
 
@@ -118,12 +124,9 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C2_base_Q63 | pass | 1.98 | 1.98 | 1.0 | 0.05 | footnote reference category |
-| C2_base_Q64 | pass | 2.2 | 2.2 | 1.0 | 0.05 | footnote reference category |
-| C2_base_Q900 | pass | 0.00556 | 0.00556 | 1.0 | 0.05 | footnote reference category |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab1:row4:col3', 'Tab1:row4:col4'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab1:row8:col3', 'Tab1:row8:col4'] |
 | C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab1:row6:col3', 'Tab1:row6:col4'] |
@@ -139,7 +142,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_isatuximab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Brillac_2025` / `Brillac_2025::final`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_isatuximab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Brillac_2025` / `Brillac_2025::final`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -155,4 +158,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 13:03 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 19:42 UTC</sub>

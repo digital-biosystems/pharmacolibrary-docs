@@ -7,12 +7,6 @@
 - **DrugBank:** [DB31662](https://go.drugbank.com/drugs/DB31662) · **PubChem:** not captured
 - **groups:** investigational
 
-## About
-
-<p><b>Description (Wikipedia).</b> Endoxifen, also known as 4-hydroxy-N-desmethyltamoxifen, is a nonsteroidal selective estrogen receptor modulator (SERM) and a protein kinase C (PKC) inhibitor of the triphenylethylene group. It is under development for the treatment of estrogen receptor-positive breast cancer and for the treatment of mania in bipolar disorder. It is taken by mouth.</p>
-
-<p><small>Source: <a href="https://en.wikipedia.org/wiki/Endoxifen?oldid=1379451828">Wikipedia</a> · <a href="https://www.wikidata.org/wiki/Q27149598">Wikidata</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></small></p>
-
 ## Molecular properties
 
 > Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
@@ -56,6 +50,15 @@
 <summary>PGx field definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=endoxifen).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | brain | `CYP2D6` formation | PGx paper |
+| metabolism | liver | `CYP2D6` formation | PGx paper |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

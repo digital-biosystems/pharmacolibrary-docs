@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;ibutilide&quot;,&quot;href&quot;:&quot;drugs/drug_ibutilide/&quot;},{&quot;label&quot;:&quot;Zeng_2017 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ibutilide_Li2007_reference&quot;,&quot;label&quot;:&quot;Li_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibutilide/Ibutilide_Li2007_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Zeng_2017_QTc&quot;,&quot;label&quot;:&quot;Zeng_2017 \u00b7 QTc&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ibutilide/pd_Zeng_2017_QTc.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Tisdale_2012_QTF&quot;,&quot;label&quot;:&quot;Tisdale_2012 \u00b7 QTF&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ibutilide/pd_Tisdale_2012_QTF.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ibutilide — `Ibutilide_Zeng2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.769), gpt-oss:120b (not confirmed, agreement 0.833). Primary extraction retained.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (confirmed, agreement 1.0), gpt-oss-120b (not confirmed, agreement 0.769). Primary extraction retained.">cross-check: disputed 1/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -16,13 +17,13 @@
 
 ### Reviewer guidance
 
-**The model was rejected because the second peripheral compartment for ibutilide is unreachable from the dose.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record defines a three-compartment structure with volumes of 66.1 L, 548 L, and 1380 L. The findings indicate that the second peripheral compartment has no path from the dose, making it an orphan compartment. A second reader disagreed on the identity of the dose compound and primary analyte, marking both as unknown. Extracted — ibutilide: CL 246 L/h, V1 66.1 L, V2 548 L, V3 1.38e+03 L.
+Extracted — ibutilide: CL 246 L/h, V1 66.1 L, V2 548 L, V3 1.38e+03 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ibutilide, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Zeng Z et al., Population Pharmacokinetic/Pharmacodyna…, Clinical therapeutics (2017)
@@ -58,49 +59,23 @@ Zeng Z et al., Population Pharmacokinetic/Pharmacodyna…, Clinical therapeutics
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=ibutilide
 - structure disagreement: deterministic 2C vs LLM 3C — review compartment count
 
-**Extraction notes:**
-- no TEI final-model table id; trying text-pointer table recovery
-- unparsed cell Zeng_2017_table_p9_1:row0:col3 = '244.35 (223.96-264.72)'
-- unparsed cell Zeng_2017_table_p9_1:row1:col1 = 'Intercompartmental clearance 1'
-- unparsed cell Zeng_2017_table_p9_1:row1:col3 = '760.49 (608.39-987.94)'
-- unparsed cell Zeng_2017_table_p9_1:row2:col1 = 'Intercompartmental clearance 2'
-- unparsed cell Zeng_2017_table_p9_1:row2:col3 = '245.28 (152.86-375.10)'
-- unparsed cell Zeng_2017_table_p9_1:row3:col3 = '67.54 (55.60-85.65)'
-- unparsed cell Zeng_2017_table_p9_1:row4:col1 = 'Volume of tissue compartment 1'
-- unparsed cell Zeng_2017_table_p9_1:row4:col3 = '554.39 (378.01-849.92)'
-- unparsed cell Zeng_2017_table_p9_1:row5:col1 = 'Volume of tissue compartment 2'
-- unparsed cell Zeng_2017_table_p9_1:row5:col3 = '1402.7 (1230.56-1644.97)'
-- unparsed cell Zeng_2017_table_p9_1:row6:col3 = '21 (16.3-26.2)'
-- unparsed cell Zeng_2017_table_p9_1:row7:col1 = 'Interindividual variability of CLic1'
-- unparsed cell Zeng_2017_table_p9_1:row7:col3 = '23.9 (15.9-33.6)'
-- unparsed cell Zeng_2017_table_p9_1:row8:col1 = 'Interindividual variability of CLic2'
-- unparsed cell Zeng_2017_table_p9_1:row8:col3 = '39.6 (21.2-55.1)'
-- unparsed cell Zeng_2017_table_p9_1:row9:col3 = '7.6 (5.9-27.8)'
-- unparsed cell Zeng_2017_table_p9_1:row10:col1 = 'Interindividual variability of VP1'
-- unparsed cell Zeng_2017_table_p9_1:row10:col3 = '12.4 (1.0-26.5)'
-- unparsed cell Zeng_2017_table_p9_1:row11:col1 = 'Interindividual variability of VP2'
-- unparsed cell Zeng_2017_table_p9_1:row11:col3 = '28.8 (11.4-40.8)'
-- unparsed cell Zeng_2017_table_p9_1:row12:col3 = '17.7 (15.6-19.8)'
-
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  1 of 2 readers agree  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss:120b` | confirmed | 1.0 (12/12 fields) | none |
 | `gpt-oss-120b` | not confirmed | 0.769 (10/13 fields) | 3 |
-| `gpt-oss:120b` | not confirmed | 0.833 (10/12 fields) | 2 |
 
-<details><summary>5 field discrepancies</summary>
+<details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `parameters[clic1]` | not captured | 745 | only_one_extracted |
 | `gpt-oss-120b` | `screen.dose_compound` | ibutilide | unknown | mismatch |
 | `gpt-oss-120b` | `screen.primary_analyte` | ibutilide | unknown | mismatch |
-| `gpt-oss:120b` | `screen.dose_compound` | ibutilide | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | ibutilide | unknown | mismatch |
 
 </details>
 
@@ -134,7 +109,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ibutilide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Zeng_2017` / `Zeng_2017::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ibutilide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Zeng_2017` / `Zeng_2017::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -150,4 +125,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-08 18:15 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 23:37 UTC</sub>

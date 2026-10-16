@@ -98,9 +98,9 @@ Abouellil A et al., A population pharmacokinetic model of r…, Naunyn-Schmiedeb
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_remdesivir/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Abouellil_2023` / `Abouellil_2023::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_remdesivir/models/modelica/Remdesivir_Abouellil2023_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_remdesivir/models/modelica/Remdesivir_Abouellil2023_reference.deviation.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_remdesivir/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Abouellil_2023` / `Abouellil_2023::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_remdesivir/models/modelica/Remdesivir_Abouellil2023_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_remdesivir/models/modelica/Remdesivir_Abouellil2023_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

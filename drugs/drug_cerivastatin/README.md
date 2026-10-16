@@ -26,13 +26,25 @@ Cerivastatin is a statin that was used to lower blood lipids in conditions such 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 11:29 | 17:28 | 0/0/1 | 0/0/0 | 0/0/1 | 411,659/15,723 | ollama / qwen3.8:27b-mtp-q8_0 | 14 | 2/9 | 12/2 | 0 |
+| 2026-10-15 01:12 | 2:52 | 0/0/1 | 2/0/0 | 0/0/1 | 322,898/6,404 | einfracz / qwen3.8-27b | 14 | 2/9 | 12/2 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2), gpt-oss:120b (not confirmed, agreement 0.188). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Mück_1997_reference](drugs/drug_cerivastatin/Cerivastatin_Mck1997_reference.md) | — | 1-compartment (no model) | 3 | Mück W et al., Absolute and relative bioavailability o…, International journal of cl… (1997) | — |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Adams_2020_HDL_C](drugs/drug_cerivastatin/pd_Adams_2020_HDL_C.md) | HDL cholesterol ← dose · stimulation effect | — | Adams SP et al., Cerivastatin for lowering lipids, The Cochrane database of sy… (2020) | [10.1002/14651858.CD012501.pub2](https://doi.org/10.1002/14651858.CD012501.pub2) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Adams_2020_LDL_C](drugs/drug_cerivastatin/pd_Adams_2020_LDL_C.md) | LDL cholesterol ← dose · direct log-linear effect | — | Adams SP et al., Cerivastatin for lowering lipids, The Cochrane database of sy… (2020) | [10.1002/14651858.CD012501.pub2](https://doi.org/10.1002/14651858.CD012501.pub2) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Adams_2020_TC](drugs/drug_cerivastatin/pd_Adams_2020_TC.md) | total cholesterol ← dose · direct log-linear effect | — | Adams SP et al., Cerivastatin for lowering lipids, The Cochrane database of sy… (2020) | [10.1002/14651858.CD012501.pub2](https://doi.org/10.1002/14651858.CD012501.pub2) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Adams_2020_TG](drugs/drug_cerivastatin/pd_Adams_2020_TG.md) | triglycerides ← dose · direct log-linear effect | — | Adams SP et al., Cerivastatin for lowering lipids, The Cochrane database of sy… (2020) | [10.1002/14651858.CD012501.pub2](https://doi.org/10.1002/14651858.CD012501.pub2) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Meda_2010_NO](drugs/drug_cerivastatin/pd_Meda_2010_NO.md) | nitric oxide (NO) bioavailability ← cerivastatin · direct Emax (saturable) effect | — | Meda C et al., Effects of statins on nitric oxide/cGMP…, Pharmacological reports : PR (2010) | [10.1016/s1734-1140(10)70247-4](https://doi.org/10.1016/s1734-1140(10)70247-4) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Meda_2010_cGMP](drugs/drug_cerivastatin/pd_Meda_2010_cGMP.md) | cyclic GMP ← cerivastatin · direct Emax (saturable) effect | — | Meda C et al., Effects of statins on nitric oxide/cGMP…, Pharmacological reports : PR (2010) | [10.1016/s1734-1140(10)70247-4](https://doi.org/10.1016/s1734-1140(10)70247-4) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Meda_2010_eNOS](drugs/drug_cerivastatin/pd_Meda_2010_eNOS.md) | eNOS expression ← cerivastatin · direct Emax (saturable) effect | — | Meda C et al., Effects of statins on nitric oxide/cGMP…, Pharmacological reports : PR (2010) | [10.1016/s1734-1140(10)70247-4](https://doi.org/10.1016/s1734-1140(10)70247-4) |
 
 ## Pharmacogenomics (PGx)
 
@@ -47,6 +59,29 @@ Cerivastatin is a statin that was used to lower blood lipids in conditions such 
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=cerivastatin).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` substrate | DrugBank actor |
+| absorption | liver | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
+| absorption | mammary gland | `ABCG2` substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
+| absorption | testis | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
+| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
+| metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
+| metabolism | liver | `CYP2B6` inducer, `CYP2C8` inhibitor/metabolism/substrate, `CYP2C9` inhibitor, `CYP2D6` inhibitor, `CYP3A4` inducer/inhibitor/substrate, `CYP3A5` substrate, `CYP3A7` substrate, `SLCO1B1` inhibitor/substrate, `UGT1A1` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inducer/inhibitor/substrate, `CYP3A5` substrate, `UGT1A1` substrate | DrugBank actor |
+| excretion | kidney | `ABCC2` substrate | DrugBank actor |
+| excretion | liver | `ABCB11` substrate, `ABCC2` substrate | DrugBank actor |
+| excretion | small intestine | `ABCC2` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: HMGCR (inhibitor).</sub>
+
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
 <table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
@@ -56,7 +91,7 @@ Cerivastatin is a statin that was used to lower blood lipids in conditions such 
 ## Coverage
 
 - **PubMed hits:** 168 matched, 104 returned
-- **screened:** 1  ·  **relevant:** 1
+- **screened:** 1  ·  **relevant:** 0
 - **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
@@ -66,7 +101,7 @@ _21 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Mück_1997.pdf` | Mück W et al., Absolute and relative bioavailability o…, International journal of cl… (1997) | popPK | 9 | not captured | [9208342](https://pubmed.ncbi.nlm.nih.gov/9208342) | The study reports quantitative PK parameters (bioavailability, half-lives, model structure) for cerivastatin in humans, but specific values for clearance (CL) and volume (V) are not explicitly listed in the provided text. |
+| `Mück_1997.pdf` | Mück W et al., Absolute and relative bioavailability o…, International journal of cl… (1997) | popPK | 8 | not captured | [9208342](https://pubmed.ncbi.nlm.nih.gov/9208342) | The study reports pharmacokinetic parameters (bioavailability, half-lives) for cerivastatin, but specific numeric values for clearance, volume, or absorption rate constants are not explicitly listed in the provided abstract text, only half-life ranges and bioavailability percentages. |
 | `Walsky_2005.pdf` | Walsky RL et al., Examination of 209 drugs for inhibition…, Journal of clinical pharmac… (2005) | pd | 5 | [10.1177/0091270004270642](https://doi.org/10.1177/0091270004270642) | [15601807](https://www.ncbi.nlm.nih.gov/pubmed/15601807) | metadata signals extractable PD data (IC50) |
 | `Zeitlinger_2003.pdf` | Zeitlinger M et al., [Clinico-pharmacologic explanation mode…, Wiener medizinische Wochens… (2003) | pd | 5 | [10.1046/j.1563-258x.2003.03029.x](https://doi.org/10.1046/j.1563-258x.2003.03029.x) | [12879633](https://www.ncbi.nlm.nih.gov/pubmed/12879633) | metadata signals extractable PD data (IC50) |
 | `Dansette_2000.pdf` | Dansette PM et al., HMG-CoA reductase activity in human liv…, Experimental and toxicologi… (2000) | pd | 4 | [10.1016/S0940-2993(00)80107-4](https://doi.org/10.1016/S0940-2993(00)80107-4) | [10965989](https://www.ncbi.nlm.nih.gov/pubmed/10965989) | metadata signals extractable PD data (IC50) |
@@ -88,62 +123,64 @@ _21 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Marciante_2011.pdf` | Marciante KD et al., Cerivastatin, genetic variants, and the…, Pharmacogenetics and genomi… (2011) | pgx | 5 | [10.1097/FPC.0b013e328343dd7d](https://doi.org/10.1097/FPC.0b013e328343dd7d) | [21386754](https://www.ncbi.nlm.nih.gov/pubmed/21386754) | metadata signals extractable PGX data (CYP2C8) |
 | `Vermes_2004.pdf` | Vermes A et al., Genetic polymorphisms in cytochrome P45…, American journal of cardiov… (2004) | pgx | 5 | [10.2165/00129784-200404040-00005](https://doi.org/10.2165/00129784-200404040-00005) | [15285699](https://www.ncbi.nlm.nih.gov/pubmed/15285699) | metadata signals extractable PGX data (CYP2D6) |
 
-<sub>queue written 2026-10-07T11:19:04.523257+00:00</sub>
+<sub>queue written 2026-10-15T01:09:54.637492+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| PGx | Backman_2016 | not_relevant | 2 | 0 | The text is a general review of CYP2C8 and mentions cerivastatin only as a substrate without reporting specific pharmacogenomic effects on its PK/PD parameters. |
-| PGx | Benet_2018 | not_relevant | 0 | 0 | The paper is a theoretical derivation of the extended clearance concept and uses cerivastatin only as a case study for drug-drug interactions, without reporting specific pharmacogenomic effects on PK parameters. |
-| PGx | Caron_2007 | not_relevant | 0 | 0 | The paper evaluates a computational algorithm for predicting metabolic sites and does not report pharmacogenomic effects on PK/PD parameters. |
-| PGx | Chojnowska-Jezierska_2000 | not_relevant | 0 | 0 | The paper discusses drug-drug interactions involving CYP3A4 metabolism but does not report any pharmacogenomic effects (gene variants) on PK/PD parameters. |
-| PGx | Christians_1998 | not_relevant | 0 | 0 | The paper is a review of drug-drug interactions (CYP3A4 metabolism) in transplant patients and does not report pharmacogenomic effects of gene variants on cerivastatin PK/PD. |
-| PGx | Cohen_2000 | not_relevant | 0 | 0 | The paper investigates the inhibitory effects of statins on CYP enzymes in vitro, not the effect of genetic variants on the pharmacokinetics or pharmacodynamics of cerivastatin. |
-| PGx | Cziraky_2006 | not_relevant | 0 | 0 | The paper reports clinical safety outcomes (adverse events) from an administrative claims database and does not report pharmacogenomic effects on PK or PD parameters. |
-| PGx | Farmer_2000 | not_relevant | 0 | 0 | The paper is a general review of HMG-CoA reductase inhibitor tolerability and metabolism, mentioning cerivastatin's CYP3A4 metabolism but reporting no specific pharmacogenomic effects on PK or PD parameters. |
-| PGx | Frudakis_2007 | not_relevant | 2 | 5 | The study investigates the association between CYP2D6*4 and statin-induced muscle events (adverse outcomes) rather than a specific pharmacokinetic or pharmacodynamic parameter of cerivastatin. |
-| PGx | Fujino_2003 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions (gemfibrozil inhibiting cerivastatin metabolism) in vitro, not the effect of a specific gene variant or genotype on pharmacokinetics. |
-| PGx | Fujino_2004 | not_relevant | 0 | 0 | The paper compares metabolic properties of acid vs. lactone forms of statins but does not report pharmacogenomic effects (gene variants) on PK/PD parameters. |
-| PGx | García_2003 | not_relevant | 0 | 0 | The paper is a general review of statin pharmacokinetics and does not report specific pharmacogenomic effects (gene variants) on PK/PD parameters. |
-| PGx | Hoosain_2016 | not_relevant | 0 | 0 | The paper reports allele and genotype frequencies in specific populations but does not present pharmacokinetic or pharmacodynamic data for cerivastatin. |
-| popPK | Jing_2025 | irrelevant | 0 | 0 | The paper is a pharmacovigilance analysis of adverse events (myopathy) in the FAERS database and does not report any pharmacokinetic parameters for cerivastatin. |
-| PGx | Kajinami_2003 | not_relevant | 0 | 0 | The paper discusses the pharmacokinetic profile of pitavastatin and mentions the withdrawal of cerivastatin, but it does not report any pharmacogenomic effects (gene variants) on PK or PD parameters for cerivastatin. |
-| PGx | Kantola_1999 | not_relevant | 0 | 0 | The study investigates a drug-drug interaction (itraconazole) rather than a pharmacogenomic effect (gene variant/genotype). |
-| popPK | Karaźniewicz-Łada_2021 | irrelevant | 0 | 0 | The paper is a review of pharmacokinetic interactions among antiepileptic drugs and does not mention cerivastatin. |
-| popPK | Kpanou_2021 | irrelevant | 0 | 0 | The paper is a computational study on deep learning models for drug-drug interaction prediction and does not report pharmacokinetic parameters for cerivastatin. |
-| PGx | Lai_2009 | not_relevant | 2 | 0 | The paper is a general review of CYP2C8 structure and function; it mentions cerivastatin as a substrate but does not report specific pharmacogenomic data or quantitative PK/PD effects for cerivastatin. |
-| PGx | Law_2006 | not_relevant | 0 | 0 | The paper is a systematic review of statin safety and adverse events, discussing CYP3A4 interactions but not reporting specific pharmacogenomic effects of gene variants on PK/PD parameters for cerivastatin. |
-| PGx | Lee_2001 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction (simvastatin and clarithromycin) causing rhabdomyolysis, not a pharmacogenomic effect on cerivastatin. |
-| popPK | Mallillin_2026 | irrelevant | 0 | 0 | The paper is a review of allometric scaling methods using hypothetical examples and does not contain any data for cerivastatin. |
-| popPK | Meda_2010 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of endothelial signaling and cytotoxicity, not a pharmacokinetic study reporting disposition parameters. |
-| PGx | Molden_2001 | not_relevant | 0 | 0 | The paper is a review of metabolic interactions and does not report pharmacogenomic effects of gene variants on cerivastatin PK/PD parameters. |
+| PGx | Backman_2016 | not_relevant | 2 | 0 | This is a review article discussing CYP2C8 generally; it mentions cerivastatin as a substrate but does not report specific quantitative pharmacokinetic or pharmacodynamic data altered by genetic variants. |
+| PGx | Benet_2018 | not_relevant | 5 | 1 | The paper focuses on theoretical derivations of the extended clearance model and critically analyzes equations; while it mentions cerivastatin as an illustrative example, it does not report specific pharmacogenomic effect sizes or new data on how a genotype changes a PK/PD parameter. |
+| PGx | Caron_2007 | not_relevant | 0 | 0 | The paper evaluates a computational algorithm for predicting metabolic sites of statins and does not report any pharmacogenomic effects on PK or PD parameters. |
+| PGx | Chojnowska-Jezierska_2000 | not_relevant | 1 | 2 | The paper discusses drug-drug interactions via CYP3A4 inhibition but does not report pharmacogenomic effects (gene variants) on cerivastatin PK or PD parameters. |
+| PGx | Christians_1998 | not_relevant | 0 | 0 | The paper reviews general drug-drug interactions (CYP3A4) for statins in transplant patients and does not report any pharmacogenomic effects (gene variant/genotype) on PK or PD parameters. |
+| PGx | Cohen_2000 | not_relevant | 0 | 0 | The paper describes in vitro CYP enzyme inhibition potential of statins (drug-drug interactions), not the effect of a specific gene variant on cerivastatin PK or PD. |
+| PGx | Cziraky_2006 | not_relevant | 1 | 5 | The study reports clinical adverse event rates (safety) and mentions CYP3A4 inhibitors as a risk factor for interactions, but it does not report pharmacogenomic variants (genotypes) or measure PK/PD parameters. |
+| PGx | Farmer_2000 | not_relevant | 0 | 0 | The paper discusses general tolerability, side effects, and drug-drug interactions mediated by CYP enzymes, but does not report on the impact of specific genetic variants or genotypes on the pharmacokinetics or pharmacodynamics of cerivastatin. |
+| PGx | Frudakis_2007 | not_relevant | 3 | 8 | The paper reports an association between CYP2D6*4 and statin-induced muscle events (a clinical adverse outcome/pd toxicity endpoint) for atorvastatin and simvastatin, but does not measure or report changes in specific pharmacokinetic (PK) or pharmacodynamic (PD) parameters of cerivastatin. |
+| PGx | Fujino_2003 | not_relevant | 0 | 0 | The study investigates drug-drug interactions (fibrates inhibiting statin metabolism via CYP enzymes) rather than pharmacogenomic effects of genetic variants. |
+| PGx | Fujino_2004 | not_relevant | 0 | 0 | The paper describes the metabolic differences between acid and lactone forms of statins (including cerivastatin) but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
+| PGx | García_2003 | not_relevant | 0 | 0 | The text is a general review of the pharmacokinetics of statins and does not report specific pharmacogenomic data or effects of gene variants on cerivastatin. |
+| PGx | Ishikawa_2004 | not_relevant | 2 | 5 | The paper reports an association between a CYP2C8 variant and an adverse event (rhabdomyolysis) but does not measure or report specific pharmacokinetic or pharmacodynamic parameters (e.g., AUC, Cmax, EC50) for cerivastatin. |
+| popPK | Jing_2025 | irrelevant | 0 | 0 | The study is a pharmacovigilance analysis of FAERS data regarding myopathy and drug interactions; it does not report pharmacokinetic parameters for cerivastatin, which is only listed as an excluded statin in the database query. |
+| PGx | Kajinami_2003 | not_relevant | 0 | 0 | The paper reviews pitavastatin and mentions cerivastatin only in the context of its market withdrawal; it does not report pharmacogenomic effects on cerivastatin PK or PD. |
+| PGx | Kantola_1999 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction (itraconazole) rather than a pharmacogenomic effect (gene variant/genotype). |
+| popPK | Karaźniewicz-Łada_2021 | irrelevant | 0 | 0 | The paper is a review of pharmacokinetic interactions for antiepileptic drugs (AEDs) and does not mention cerivastatin or provide any data for it. |
+| popPK | Kpanou_2021 | irrelevant | 0 | 0 | The paper is a methodological study on deep learning models for drug-drug interaction prediction and does not contain any pharmacokinetic data or parameters for cerivastatin. |
+| PGx | Lai_2009 | not_relevant | 1 | 0 | The paper discusses cerivastatin metabolism and CYP2C8 polymorphisms generally but does not report specific quantitative effects of genotypes on PK or PD parameters for cerivastatin. |
+| PGx | Law_2006 | not_relevant | 2 | 10 | The paper discusses CYP3A4 interactions for statins generally but does not report specific pharmacogenomic effects (gene variants) on PK/PD parameters for cerivastatin. |
+| PGx | Lee_2001 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction (simvastatin and clarithromycin) causing rhabdomyolysis and does not report any pharmacogenomic effects (gene variants) on PK or PD parameters for cerivastatin. |
+| popPK | Mallillin_2026 | irrelevant | 0 | 0 | The paper is a review on allometric scaling methods using hypothetical drug examples and does not contain data for cerivastatin. |
+| popPK | Meda_2010 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study focusing on signaling pathways (NO/cGMP) and does not report pharmacokinetic disposition parameters. |
+| PGx | Molden_2001 | not_relevant | 0 | 0 | The paper is a review of CYP-mediated drug-drug interactions and does not report pharmacogenomic effects of genetic variants on cerivastatin pharmacokinetics or pharmacodynamics. |
 | popPK | Monchaud_2009 | irrelevant | 0 | 0 | The paper is a review of immunosuppressants (ciclosporin, tacrolimus, etc.) in thoracic transplantation and does not mention cerivastatin. |
-| PGx | Mück_2000 | not_relevant | 0 | 0 | The paper describes general pharmacokinetics and CYP metabolism but does not report any specific gene variant or genotype effects on PK/PD parameters. |
-| popPK | Nagar_2024 | irrelevant | 0 | 0 | The paper is a methodological study on PBPK modeling frameworks and does not report specific pharmacokinetic parameters for cerivastatin. |
-| PGx | Neuvonen_2006 | not_relevant | 0 | 0 | The paper discusses drug-drug interactions (CYP inhibitors) and general metabolism of cerivastatin, but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
+| popPK | Mück_1997 | relevant | 8 | 3 | The study reports pharmacokinetic parameters (bioavailability, half-lives) for cerivastatin, but specific numeric values for clearance, volume, or absorption rate constants are not explicitly listed in the provided abstract text, only half-life ranges and bioavailability percentages. |
+| PGx | Mück_2000 | not_relevant | 0 | 0 | The paper describes general pharmacokinetic properties and metabolism but does not report any specific pharmacogenomic effects (gene variants) on PK or PD parameters. |
+| popPK | Nagar_2024 | irrelevant | 0 | 0 | The paper is a mechanistic modeling study comparing PBPK frameworks for various drugs and does not report specific pharmacokinetic parameters for cerivastatin. |
+| PGx | Neuvonen_2006 | not_relevant | 1 | 2 | The paper discusses drug-drug interactions (CYP/P-gp/OATP inhibition) affecting statins, not pharmacogenomic effects of genetic variants. |
 | popPK | Ni_2010 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for flavopiridol, not cerivastatin. |
-| PGx | Notarbartolo_2001 | not_relevant | 0 | 0 | The paper describes general pharmacokinetic properties (CYP3A4/2C8 metabolism) and demographic effects (age/gender) but does not report any specific gene variant or genotype affecting PK/PD parameters. |
-| PGx | Ogilvie_2006 | not_relevant | 0 | 0 | The paper investigates the mechanism of gemfibrozil's inhibition of CYP2C8 and its implications for drug-drug interactions with cerivastatin, but it does not report any pharmacogenomic effects (gene variants) on cerivastatin's PK or PD parameters. |
-| PGx | Prieto_2001 | not_relevant | 0 | 0 | The text discusses the safety profile and withdrawal of cerivastatin due to rhabdomyolysis but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
-| PGx | Prueksaritanont_1999 | not_relevant | 0 | 0 | The paper investigates metabolic interactions with mibefradil in vitro and does not report pharmacogenomic effects on cerivastatin PK/PD. |
-| PGx | Prueksaritanont_2002 | not_relevant | 0 | 0 | The study investigates drug-drug interactions (fibrates inhibiting statin metabolism) in vitro, not pharmacogenomic effects of gene variants on PK/PD. |
-| PGx | Prueksaritanont_2002_2 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions (gemfibrozil and statins) and does not report any pharmacogenomic effects (gene variants) on PK/PD parameters. |
-| PGx | Prueksaritanont_2002_3 | not_relevant | 0 | 0 | The paper describes the metabolic mechanism of statin glucuronidation and lactonization but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
-| popPK | Qin_2026 | irrelevant | 0 | 0 | The paper is a pharmacovigilance study of ADHD medications and mentions cerivastatin only as a validation fixture for statistical code, not as a subject of PK analysis. |
-| PGx | Saw_2003 | not_relevant | 0 | 0 | The paper analyzes a clinical drug-drug interaction between clopidogrel and statins, not a pharmacogenomic effect of a gene variant on cerivastatin's PK or PD. |
-| PGx | Schirris_2015 | not_relevant | 2 | 0 | The paper discusses UGT-mediated lactonization and mentions that polymorphisms *may* contribute to myopathy, but it does not report specific pharmacogenomic effects (genotype-to-PK/PD data) for cerivastatin. |
-| PGx | Schmitz_2007 | not_relevant | 2 | 0 | The text is a review summary that mentions cerivastatin and pharmacogenetic targets but does not report specific quantitative effects of gene variants on PK or PD parameters. |
-| PGx | Shitara_2004_2 | not_relevant | 0 | 0 | The paper investigates a drug-drug interaction (gemfibrozil inhibiting cerivastatin uptake/metabolism) and does not report any pharmacogenomic effects (gene variants/genotypes) on PK or PD parameters. |
-| PGx | Shitara_2006 | not_relevant | 2 | 0 | The paper is a general review of statin pharmacokinetics and drug-drug interactions, mentioning cerivastatin's metabolic pathways but not reporting specific pharmacogenomic effects of gene variants on its PK/PD parameters. |
-| popPK | Taskar_2020 | irrelevant | 0 | 0 | The paper is a review of PBPK modeling for transporter-mediated drug-drug interactions and does not report pharmacokinetic parameters for cerivastatin. |
-| popPK | Türkmen_2022 | irrelevant | 0 | 0 | The study focuses on simvastatin and atorvastatin pharmacogenomics and outcomes; cerivastatin is only mentioned as a rare switch medication in the context of treatment discontinuation, with no PK parameters reported. |
-| PGx | Vermes_2004 | not_relevant | 0 | 0 | The paper is a general review of CYP polymorphisms in statins and mentions cerivastatin only in the context of adverse events, without reporting specific pharmacogenomic effects on its PK or PD parameters. |
-| PGx | Wang_2002 | not_relevant | 0 | 0 | The paper investigates drug-drug interaction (gemfibrozil inhibiting CYP2C8) in vitro, not the effect of a genetic variant on cerivastatin PK/PD. |
-| PGx | Wang_2015 | not_relevant | 0 | 0 | The paper discusses drug-drug interactions (clopidogrel affecting cerivastatin PK) and mentions genetic polymorphisms for clopidogrel metabolism, but does not report a pharmacogenomic effect (gene variant) on the PK or PD of cerivastatin. |
-| popPK | Williams_2002 | irrelevant | 0 | 0 | The paper is a review of drug interactions and does not report original quantitative pharmacokinetic parameters for cerivastatin. |
-| PGx | Williams_2002 | not_relevant | 0 | 0 | The paper discusses drug-drug interactions (CYP inhibitors) and general pharmacokinetics of statins, but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
-| PGx | Xiang_2018 | not_relevant | 0 | 0 | The paper reports an association between genotype and the risk of an adverse event (myopathy), not a change in a pharmacokinetic or pharmacodynamic parameter. |
+| PGx | Notarbartolo_2001 | not_relevant | 0 | 0 | The text describes general clinical efficacy and metabolism pathways (CYP3A4/CYP2C8) but does not report any specific gene variant or genotype affecting PK/PD parameters. |
+| PGx | Ogilvie_2006 | not_relevant | 0 | 0 | The paper focuses on the drug-drug interaction mechanism involving gemfibrozil glucuronide and CYP2C8, without reporting pharmacogenomic data or genetic variants affecting cerivastatin PK/PD. |
+| PGx | Prieto_2001 | not_relevant | 0 | 0 | The text discusses the general safety profile of statins and cerivastatin withdrawal but contains no data on genetic variants affecting pharmacokinetics or pharmacodynamics. |
+| PGx | Prueksaritanont_1999 | not_relevant | 0 | 0 | The paper investigates drug-drug interaction (mibefradil inhibiting cerivastatin metabolism) rather than a pharmacogenomic effect. |
+| PGx | Prueksaritanont_2002 | not_relevant | 0 | 0 | The study investigates drug-drug interactions between fibrates and statins in human hepatocytes, but does not report effects of gene variants/genotypes/phenotypes on pharmacokinetics or pharmacodynamics. |
+| PGx | Prueksaritanont_2002_2 | not_relevant | 0 | 0 | The paper reports drug-drug interactions between gemfibrozil and statins, not pharmacogenomic effects of gene variants on PK/PD parameters. |
+| PGx | Prueksaritanont_2002_3 | not_relevant | 1 | 2 | The study reports inter-subject variability and UGT expression findings but does not report specific gene variant/genotype effects on pharmacokinetic or pharmacodynamic parameters. |
+| popPK | Qin_2026 | irrelevant | 0 | 0 | The study is a pharmacovigilance disproportionality analysis of ADHD medications; cerivastatin is mentioned only as a validation fixture for the statistical code, not as the subject of a pharmacokinetic study. |
+| PGx | Saw_2003 | not_relevant | 0 | 0 | The paper analyzes a clinical drug interaction between clopidogrel and statins and does not investigate the effect of gene variants on cerivastatin pharmacokinetics or pharmacodynamics. |
+| PGx | Schirris_2015 | not_relevant | 3 | 0 | The paper describes the substrate specificity and relative lactonization rates of UGT isoforms for various statins, but it does not report data on how specific genetic variants (genotypes/polymorphisms) alter pharmacokinetic or pharmacodynamic parameters of cerivastatin. |
+| PGx | Schmitz_2007 | not_relevant | 2 | 0 | The text is a general review summary mentioning the search for genes affecting cerivastatin PK/PD but reports no specific gene variant or quantitative effect size. |
+| PGx | Shitara_2004_2 | not_relevant | 0 | 0 | The paper investigates a drug-drug interaction between cerivastatin and gemfibrozil, not a pharmacogenomic effect. |
+| PGx | Shitara_2006 | not_relevant | 2 | 0 | The text is a review summarizing general metabolic pathways and drug-drug interactions for statins, including cerivastatin, but it does not report specific pharmacogenomic studies or quantitative effect sizes of gene variants on PK/PD parameters. |
+| PGx | Tamraz_2013 | not_relevant | 4 | 8 | The paper reports in-vitro uptake reduction (a transporter function/physiological parameter) and genetic association with rhabdomyolysis, but does not report changes in clinical pharmacokinetic parameters (e.g., AUC, Cmax) or pharmacodynamic responses in humans. |
+| popPK | Taskar_2020 | irrelevant | 0 | 0 | The paper is a review on PBPK modeling for transporter-mediated drug-drug interactions and does not mention cerivastatin or report specific pharmacokinetic parameters for it. |
+| popPK | Türkmen_2022 | irrelevant | 0 | 0 | The paper is a pharmacogenomic epidemiological study on simvastatin and atorvastatin, and cerivastatin is only mentioned as a minor alternative in patient switch data without any pharmacokinetic parameters. |
+| PGx | Vermes_2004 | not_relevant | 2 | 0 | The text discusses CYP2D6 polymorphism specifically in the context of simvastatin, mentioning cerivastatin only regarding rhabdomyolysis risks and general CYP metabolism without reporting specific pharmacogenomic effects on cerivastatin PK or PD parameters. |
+| PGx | Wang_2002 | not_relevant | 0 | 0 | The paper reports on the drug-drug interaction (gemfibrozil inhibiting cerivastatin metabolism), not on a pharmacogenomic effect (gene variant/genotype). |
+| PGx | Wang_2015 | not_relevant | 2 | 2 | The paper is a review of drug-drug interactions involving clopidogrel; it mentions clopidogrel affecting cerivastatin PK but does not report a specific pharmacogenomic effect (gene variant changing PK/PD) of cerivastatin. |
+| popPK | Williams_2002 | irrelevant | 2 | 0 | The text is a review discussing drug interactions and mechanisms for HMG-CoA reductase inhibitors generally, mentioning cerivastatin's withdrawal and metabolism pathways but providing no original quantitative pharmacokinetic parameter values (CL, V, t1/2, etc.) for cerivastatin. |
+| PGx | Williams_2002 | not_relevant | 0 | 0 | The paper focuses on drug-drug interactions and does not report a pharmacogenomic effect (gene variant/genotype) on cerivastatin pharmacokinetics or pharmacodynamics. |
+| PGx | Xiang_2018 | not_relevant | 2 | 1 | The paper reports the association between genotype and risk of an adverse effect (myopathy), not a change in a PK or PD parameter. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 11:19 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-15 01:09 UTC</sub>

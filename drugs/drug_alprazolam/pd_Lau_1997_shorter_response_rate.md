@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05B&quot;,&quot;href&quot;:&quot;atc/N05B.md&quot;},{&quot;label&quot;:&quot;alprazolam&quot;,&quot;href&quot;:&quot;drugs/drug_alprazolam/&quot;},{&quot;label&quot;:&quot;Lau_1997 \u00b7 PD shorter-response rate&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Alprazolam_Klein2026_body_weight_50_kg&quot;,&quot;label&quot;:&quot;Klein_2026_body_weight_50_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alprazolam/Alprazolam_Klein2026_body_weight_50_kg.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Alprazolam_Mertes2022_reference&quot;,&quot;label&quot;:&quot;Mertes_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alprazolam/Alprazolam_Mertes2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Witt_2026_RGR&quot;,&quot;label&quot;:&quot;Witt_2026 \u00b7 RGR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_alprazolam/pd_Witt_2026_RGR.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # shorter-response rate — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
@@ -16,16 +16,16 @@
 
 ## Record summary
 
-**As extracted:** Alprazolam (concentrations from the PK model of DeVane_1993) drives shorter-response rate: direct sigmoid Emax (Hill) effect.
+**As extracted:** Alprazolam (concentrations from the PK model of DeVane_1993) drives shorter-response rate: direct Emax (saturable) effect.
 
 **Model:** No model was generated from this record.
 
-> Alprazolam plasma concentrations (microg/ml) stimulate the shorter-response rate via a sigmoid Emax model; the paper reports EC50 values of 0.09 and 0.18 microg/ml, but the excerpts do not state the mechanism further or other parameters.
+> The record describes an Emax model where alprazolam concentration (microg/ml) stimulates the shorter-response rate, with a reported EC50 of 0.09 microg/ml. The paper text is unavailable to confirm the mechanism or provide additional rate parameters.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Lau_1997`
-- **model family:** `sigmoid_emax`
+- **model family:** `emax`
 - **driver:** `cited_pk`
 - **tier:** descriptive
 - **effect:** stimulation/unknown
@@ -36,8 +36,8 @@ Lau CE et al., Pharmacokinetic-pharmacodynamic modelin…, The Journal of pharma
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | EC50 | `Q321` · not captured | 0.09 | microg/ml | not captured | llm (not captured) | Lau_1997:pdv3 |
-| PD (effect) | EC50 | `Q321` · not captured | 0.18 | microg/ml | not captured | llm (not captured) | Lau_1997:pdv3 |
+| PD (effect) | EC50 (stimulation) | `Q321` · not captured | 0.09 | microg/ml | not captured | llm (not captured) | Lau_1997:pdv3 |
+| PD (effect) | EC50 (sedation) | `Q321` · not captured | 0.18 | microg/ml | not captured | llm (not captured) | Lau_1997:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>

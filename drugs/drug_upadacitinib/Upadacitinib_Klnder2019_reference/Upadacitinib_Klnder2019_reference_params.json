@@ -1,0 +1,41 @@
+{
+ "dose_source": "paper",
+ "model_id": "Upadacitinib_Klnder2019_reference",
+ "molar_masses": {
+  "central.C": 0.380375
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  1.0,
+  7.5,
+  30.0,
+  48.0
+ ],
+ "parameters": {
+  "Cl": 1.1361111111111111e-05,
+  "F": 1.0,
+  "MM": 0.380375,
+  "Tlag": 554.4,
+  "VdPerKg": 0.0022285714285714287,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-06,
+  "k12": 5.733618233618234e-06,
+  "k21": 1.3153594771241829e-05,
+  "ka": 1.4527777777777777e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 31166.33266533066
+ },
+ "reference_peaks": {
+  "central.C": 8.111260408054586e-07
+ },
+ "stop_time": 259200.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

@@ -1,0 +1,74 @@
+{
+ "dose_source": "paper",
+ "model_id": "Carvedilol_Hwang2023_reference",
+ "molar_masses": {
+  "central.C": 0.4064742
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  12.5,
+  25.0
+ ],
+ "parameters": {
+  "Cl": 4.2499999999999996e-05,
+  "F": 1.0,
+  "MM": 0.4064742,
+  "Tlag": 774.0,
+  "VdPerKg": 0.006285714285714286,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1.25e-05,
+  "k12": 2.607323232323232e-05,
+  "k21": 1.521514883583849e-05,
+  "ka": 0.0001388888888888889,
+  "weight": 70.0
+ },
+ "pgx": {
+  "effects": {
+   "Intermediate": [
+    {
+     "compound": "carvedilol",
+     "parameter": "CL/F (L/h)",
+     "reference": 153.0,
+     "scale": "linear_fractional",
+     "theta": 0.328,
+     "value": 212.39291276028013
+    }
+   ]
+  },
+  "gene": "CYP2D6",
+  "labels": {
+   "Intermediate": "Intermediate metabolizer",
+   "Normal": "Normal metabolizer (reference)"
+  },
+  "note": "Each phenotype runs the same template with the parameters the gene acts on changed as the paper states (a fraction on the logit scale), and every parameter the template derives from them recomputed; the reference phenotype is the record's own model.",
+  "order": [
+   "Intermediate",
+   "Normal"
+  ],
+  "phenotypes": {
+   "Intermediate": {
+    "Cl": 5.8998031322300026e-05
+   },
+   "Normal": {}
+  },
+  "record": "Hwang_2023",
+  "reference": "Normal",
+  "sources": [
+   "Hwang_2023 covariate theta_cl_f_im"
+  ]
+ },
+ "reference_peak_times": {
+  "central.C": 9523.04609218437
+ },
+ "reference_peaks": {
+  "central.C": 1.0999298680438446e-05
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

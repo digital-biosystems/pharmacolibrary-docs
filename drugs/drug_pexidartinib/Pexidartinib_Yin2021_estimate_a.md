@@ -28,10 +28,10 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 Yin O et al., Population Pharmacokinetic Analysis of…, Journal of clinical pharmac… (2021)
   ·  DOI: [10.1002/jcph.1753](https://doi.org/10.1002/jcph.1753)
 
-<div class="pk-model-meta" hidden drug="pexidartinib" model-id="Pexidartinib_Yin2021_estimate_a" status="rejected" stale="false" population="healthy subjects and patients with TGCT or other solid tumors" measured-compound="pexidartinib" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="pexidartinib" model-id="Pexidartinib_Yin2021_estimate_a" status="rejected" stale="false" population="healthy subjects and patients with tenosynovial giant cell tumor or other solid tumors" measured-compound="pexidartinib" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
-**Parameters:** 3 extracted.
+**Parameters:** 2 extracted.
 
 **Parameterization:** CL/F, Q/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -40,10 +40,9 @@ Yin O et al., Population Pharmacokinetic Analysis of…, Journal of clinical pha
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| (CRCL&lt;90/90)θ8 | `Q900` · equation variable | -0.0941 | not captured | not captured | not captured | not captured | llm (0.6) | jcph1753-tbl-0003:row3:col1 | — | not captured |
+| (Asian)•exp(θ10) | `Q900` · equation variable | 1.27 | not captured | not captured | not captured | not captured | llm (0.6) | jcph1753-tbl-0003:row4:col1 | — | not captured |
 | ALAG1(exp(θ6)) | `Q83` · tlag | 0.387 | h | 1393.2 | h | not captured | exact (1.0) | jcph1753-tbl-0003:row16:col1 | — | not captured |
 | D1(exp(θ7)) | `Q310` · D1 | 1.22 | h | 4392.0 | h | not captured | llm_confirmed (0.6) | jcph1753-tbl-0003:row17:col1 | — | not captured |
-| F1Phase1(exp(θ8)) | `Q87` · Frel | 0.855 | not captured | not captured | not captured | not captured | llm (0.6) | jcph1753-tbl-0003:row18:col1 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -56,58 +55,36 @@ Yin O et al., Population Pharmacokinetic Analysis of…, Journal of clinical pha
 | CL/F (exp(θ1)) | Q27 | not captured | exact |
 | Q/F(exp(θ4)) | Q69 | not captured | exact |
 | Ω3.3 Vp/F | Q82 | not captured | llm_confirmed |
+| Ω5.5 KA | Q49 | not captured | boundary |
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped duplicate Q900 ('(Asian)•exp(θ10)', value '1.27') — already have one for this compound
-- dropped duplicate Q900 ('(AST&gt;80/80)θ 11', value '0.0709') — already have one for this compound
+- dropped unlinked row (NIL): '(CRCL&lt;90/90)θ8' — extend the ontology if this is a real PK parameter (source ['jcph1753-tbl-0003:row3:col1'])
+- dropped unlinked row (NIL): '(AST&gt;80/80)θ 11' — extend the ontology if this is a real PK parameter (source ['jcph1753-tbl-0003:row5:col1'])
 - dropped duplicate Q900 ('(TBIL&gt;20.5/20.5)θ 12', value '0.244') — already have one for this compound
 - dropped duplicate Q900 ('(StHT)•exp(θ13)', value '1.26') — already have one for this compound
-- dropped duplicate Q900 ('(Female)•exp(θ14)', value '0.869') — already have one for this compound
-- unit_dimension_unknown: 'WT/80' (Q/F)
+- routed '(Female)•exp(θ14)' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
+- routed 'F1Phase1(exp(θ8))' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
 - dropped duplicate Q27 ('Ω1.1 CL/F', value None) — already have one for this compound
-- routed 'Ω3.1 COVVp/F−CL/F' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
-- routed 'Ω3.2 COVVp/F−Vc/F' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
-- dropped duplicate Q69 ('Ω4.4 Q/F', value None) — already have one for this compound
-- routed 'Ω5.5 KA' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
-- routed 'Ω6.6Ph1Form' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
-- implicit units: 'ALAG1(exp(θ6))' → h (from the popPK convention: 'The paper describes ALAG1 as the drug absorption lag time but does not state its unit. Lag times are conventionally repo')
-- implicit units: 'D1(exp(θ7))' → h (from the popPK convention: 'The paper describes D1 as the duration of zero-order absorption but does not state its unit. Absorption durations are co')
+- dropped unlinked row (NIL): 'Ω3.1 COVVp/F−CL/F' — extend the ontology if this is a real PK parameter (source ['jcph1753-tbl-0003:row22:col1'])
+- dropped unlinked row (NIL): 'Ω3.2 COVVp/F−Vc/F' — extend the ontology if this is a real PK parameter (source ['jcph1753-tbl-0003:row23:col1'])
+- dropped unlinked row (NIL): 'Ω4.4 Q/F' — extend the ontology if this is a real PK parameter (source ['jcph1753-tbl-0003:row25:col1'])
+- dropped unlinked row (NIL): 'Ω6.6Ph1Form' — extend the ontology if this is a real PK parameter (source ['jcph1753-tbl-0003:row27:col1'])
+- implicit units: 'ALAG1(exp(θ6))' → h (from the popPK convention: 'ALAG1 represents the absorption lag time. In population pharmacokinetic modeling, lag times are standardly reported in h')
+- implicit units: 'D1(exp(θ7))' → h (from the popPK convention: 'D1 represents the duration of zero-order absorption. In population pharmacokinetic modeling, absorption durations are st')
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=pexidartinib
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - template fit: none — only the metabolite is modelled — no parent compartment
-- status held at route_to_review — not promoted
-- population split: 'estimate a' subgroup of Yin_2021 (paper reports 3 populations: estimate a, pexidartinib, zaad)
-- row roles (LLM): model_class=compartmental; 28/28 row label(s) assigned, 3 linked by role; re-tagged pexidartinib→parent ×28
-- molar mass: no plausible PubChem entry for 'ZAAD' ('pexidartinib glucuronide') — left in mass units
+- population split: 'estimate a' subgroup of Yin_2021 (paper reports 2 populations: estimate a, pexidartinib)
+- row roles: 7 per-group rows of pexidartinib covariate_effect but 0 reference group(s) — kept as printed
+- row roles (LLM): model_class=compartmental; 28/28 row label(s) assigned, 5 linked by role; re-tagged pexidartinib→parent ×28
+- molar mass: no plausible PubChem entry for 'ZAAD' ('4-[[4-[3-[[5-(2-fluoro-4-pyridyl)-3-methylisoxazol-4-yl]amino]phenyl]amino]phenyl]sulfamoyl]-2-methoxy-N-phenylbenzamide') — left in mass units
 - molar mass: none found for 'ZAAD' — its concentrations stay mass-only
 
 **Extraction notes:**
-- unparsed cell jcph1753-tbl-0003:row1:col2 = '5.43 to 6.27'
-- unparsed cell jcph1753-tbl-0003:row3:col2 = '−0.402 to 0.214'
-- unparsed cell jcph1753-tbl-0003:row4:col2 = '1.05 to 1.54'
-- unparsed cell jcph1753-tbl-0003:row5:col2 = '−0.180 to 0.322'
-- unparsed cell jcph1753-tbl-0003:row6:col2 = '0.183 to 0.306'
-- unparsed cell jcph1753-tbl-0003:row7:col2 = '1.16 to 1.36'
-- unparsed cell jcph1753-tbl-0003:row8:col2 = '0.808 to 0.934'
-- unparsed cell jcph1753-tbl-0003:row13:col2 = '17.9 to 23.8'
-- unparsed cell jcph1753-tbl-0003:row16:col2 = '0.385 to 0.390'
-- unparsed cell jcph1753-tbl-0003:row17:col2 = '1.20 to 1.25'
-- unparsed cell jcph1753-tbl-0003:row19:col2 = '0.0633 to 0.109'
-- unparsed cell jcph1753-tbl-0003:row20:col2 = '0.0425 to 0.112'
-- unparsed cell jcph1753-tbl-0003:row21:col2 = '0.207 to 0.341'
-- unparsed cell jcph1753-tbl-0003:row22:col2 = '−0.0178 to 0.0476'
-- unparsed cell jcph1753-tbl-0003:row23:col2 = '−0.105 to 0.0111'
-- unparsed cell jcph1753-tbl-0003:row24:col2 = '0.152 to 0.275'
-- unparsed cell jcph1753-tbl-0003:row25:col2 = '0.271 to 0.541'
-- unparsed cell jcph1753-tbl-0003:row26:col2 = '0.648 to 1.98'
-- unparsed cell jcph1753-tbl-0003:row27:col2 = '0.0592 to 0.143'
-- unparsed cell jcph1753-tbl-0003:row28:col2 = '1.26 to 2.40'
-- unparsed cell jcph1753-tbl-0003:row29:col2 = '0.0560 to 0.0743'
-- unparsed cell jcph1753-tbl-0003:row30:col2 = '0.0839 to 0.0927'
-- unparsed cell jcph1753-tbl-0003:row31:col2 = '0.0377 to 0.0391'
-- unparsed cell Yin_2021_table_4:row3:col2 = '13 564 (6095)'
+- table jcph1753-tbl-0003: units_need_context
+- table jcph1753-tbl-0003: unparsed_numeric_cell
+- table Yin_2021_table_4: unparsed_numeric_cell
 - companion parameter table 4 transcribed (7 record(s))
 - LLM selected parameter table(s) 3, 4
 
@@ -143,8 +120,9 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['jcph1753-tbl-0003:row1:col1'] |
 | C5_dimension_Q310 | pass | [time] | not captured | not captured | not captured | ['jcph1753-tbl-0003:row17:col1'] |
 | C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['jcph1753-tbl-0003:row16:col1'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
@@ -157,7 +135,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_pexidartinib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Yin_2021` / `Yin_2021::estimate_a`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_pexidartinib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Yin_2021` / `Yin_2021::estimate_a`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -173,4 +151,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 05:19 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 20:40 UTC</sub>

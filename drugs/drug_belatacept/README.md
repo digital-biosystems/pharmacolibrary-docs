@@ -17,7 +17,7 @@ Belatacept is an immunosuppressant used to prevent rejection of a transplanted k
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 23:29 | 0:10 | 0/0/0 | 1/0/0 | 0/0/0 | 27,602/764 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
+| 2026-10-14 20:55 | 0:12 | 0/0/0 | 1/0/0 | 0/0/0 | 25,282/750 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
 
 ## popPK records
 
@@ -27,7 +27,16 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Ashokkumar_2015_CD154_frequency](drugs/drug_belatacept/pd_Ashokkumar_2015_CD154_frequency.md) | CD154+cells frequency within T-cell subsets ← belatacept · direct sigmoid Emax (Hill) effect | — | Ashokkumar C et al., Alloreactive CD154-expressing T-cell su…, Scientific reports (2015) | [10.1038/srep15218](https://doi.org/10.1038/srep15218) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Ashokkumar_2015_CD154](drugs/drug_belatacept/pd_Ashokkumar_2015_CD154.md) | CD154+T-cell subsets ← belatacept · direct sigmoid Emax (Hill) effect | — | Ashokkumar C et al., Alloreactive CD154-expressing T-cell su…, Scientific reports (2015) | [10.1038/srep15218](https://doi.org/10.1038/srep15218) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=belatacept).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: CD28 (inhibitor), CD80 (target), CD86 (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -44,26 +53,27 @@ _not available_
 
 ## Full-text requests
 
-_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Zhou_2012.pdf` | Zhou Z et al., Time-varying belatacept exposure and it…, Clinical pharmacology and t… (2012) | popPK | 10 | [10.1038/clpt.2012.84](https://doi.org/10.1038/clpt.2012.84) | [22760001](https://pubmed.ncbi.nlm.nih.gov/22760001) | The paper explicitly describes a population pharmacokinetic model for belatacept in kidney transplant recipients, but the extracted evidence contains only qualitative descriptions of covariate effects without any specific numeric parameter values (e.g., CL, V, Q). |
-| `Pyatt_2025.pdf` | Pyatt A et al., Belatacept Pharmacokinetic Analysis of…, Clinical transplantation (2025) | popPK | 9 | [10.1111/ctr.70172](https://doi.org/10.1111/ctr.70172) | [40704545](https://pubmed.ncbi.nlm.nih.gov/40704545) | The study is a population PK analysis of belatacept in humans, but the specific numeric parameter values (CL, V, etc.) are not present in the text, likely residing in tables or supplementary materials not included. |
+| `Zhou_2012.pdf` | Zhou Z et al., Time-varying belatacept exposure and it…, Clinical pharmacology and t… (2012) | popPK | 10 | [10.1038/clpt.2012.84](https://doi.org/10.1038/clpt.2012.84) | [22760001](https://pubmed.ncbi.nlm.nih.gov/22760001) | The paper describes a population PK model for belatacept and mentions covariates affecting clearance and volume, but no specific numeric parameter values are provided in the evidence. |
+| `Klaasen_2019.pdf` | Klaasen RA et al., A Fully Automated Method for the Determ…, Therapeutic drug monitoring (2019) | popPK | 9 | [10.1097/FTD.0000000000000580](https://doi.org/10.1097/FTD.0000000000000580) | [30633722](https://pubmed.ncbi.nlm.nih.gov/30633722) | The study is a population pharmacokinetic analysis of belatacept in humans, but the specific numeric parameter estimates (CL, V, etc.) are not explicitly listed in the provided evidence text. |
+| `Pyatt_2025.pdf` | Pyatt A et al., Belatacept Pharmacokinetic Analysis of…, Clinical transplantation (2025) | popPK | 8 | [10.1111/ctr.70172](https://doi.org/10.1111/ctr.70172) | [40704545](https://pubmed.ncbi.nlm.nih.gov/40704545) | The study reports population PK parameters (specifically Clearance) for belatacept, but the abstract provides only qualitative comparisons (e.g., "significantly higher") and refers to a "published... model" without listing the specific numeric parameter values in the provided text. |
 
-<sub>queue written 2026-10-06T23:29:43.254088+00:00</sub>
+<sub>queue written 2026-10-14T20:55:14.900368+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Ashokkumar_2015 | irrelevant | 0 | 0 | This is an in-vitro immunological study assessing T-cell sensitivity (EC50) to belatacept, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
-| popPK | Ashokkumar_2026 | irrelevant | 1 | 1 | The study reports in vitro pharmacodynamic EC50 values for B-cell suppression, not pharmacokinetic disposition parameters like clearance or volume of distribution. |
-| popPK | Klaasen_2019 | irrelevant | 1 | 0 | The study describes the development of an assay and mentions a PK model visualization but does not report specific quantitative disposition parameters (CL, V, etc.) in the provided text. |
-| popPK | Pyatt_2025 | relevant | 9 | 2 | The study is a population PK analysis of belatacept in humans, but the specific numeric parameter values (CL, V, etc.) are not present in the text, likely residing in tables or supplementary materials not included. |
-| popPK | Sethi_2020 | irrelevant | 0 | 0 | The paper reports clinical outcomes (survival, rejection, GFR) of an immunosuppression switch, not pharmacokinetic parameters. |
-| popPK | Younis_2025 | irrelevant | 0 | 0 | This is a clinical outcomes study focusing on donor-specific antibodies in lung transplant patients, reporting no pharmacokinetic parameters for belatacept. |
-| popPK | Zhou_2012 | relevant | 10 | 0 | The paper explicitly describes a population pharmacokinetic model for belatacept in kidney transplant recipients, but the extracted evidence contains only qualitative descriptions of covariate effects without any specific numeric parameter values (e.g., CL, V, Q). |
+| popPK | Ashokkumar_2015 | irrelevant | 0 | 0 | This is an in-vitro immunological study measuring T-cell subset sensitivity (EC50) to belatacept, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | Ashokkumar_2026 | irrelevant | 1 | 0 | The study reports in vitro efficacy (EC50) data for B-cell suppression rather than quantitative pharmacokinetic disposition parameters (CL, V, t1/2) for belatacept. |
+| popPK | Klaasen_2019 | relevant | 9 | 1 | The study is a population pharmacokinetic analysis of belatacept in humans, but the specific numeric parameter estimates (CL, V, etc.) are not explicitly listed in the provided evidence text. |
+| popPK | Pyatt_2025 | relevant | 8 | 2 | The study reports population PK parameters (specifically Clearance) for belatacept, but the abstract provides only qualitative comparisons (e.g., "significantly higher") and refers to a "published... model" without listing the specific numeric parameter values in the provided text. |
+| popPK | Sethi_2020 | irrelevant | 0 | 0 | The paper reports clinical outcomes (rejection/survival rates) of a therapeutic conversion strategy, not pharmacokinetic parameters (CL, V, etc.) for belatacept. |
+| popPK | Younis_2025 | irrelevant | 0 | 0 | The study is a clinical outcomes analysis of belatacept's immunological effects (DSA reduction) in lung transplant patients and contains no pharmacokinetic parameters or models. |
+| popPK | Zhou_2012 | relevant | 10 | 0 | The paper describes a population PK model for belatacept and mentions covariates affecting clearance and volume, but no specific numeric parameter values are provided in the evidence. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

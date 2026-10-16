@@ -19,24 +19,25 @@ Radium-223 dichloride is a radiopharmaceutical used to treat prostate cancer. It
 
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
-| bismuth_211 | metabolite | — (mass units only) | — | — | — | — |
-| lead_211 | metabolite | — (mass units only) | — | — | — | — |
+| bismuth_211 | metabolite | 208.98 | Bi | PubChem | [6337577](https://pubchem.ncbi.nlm.nih.gov/compound/6337577) | Höllriegl_2021 |
+| lead_211 | metabolite | 207.2 | Pb | PubChem | [6337094](https://pubchem.ncbi.nlm.nih.gov/compound/6337094) | Höllriegl_2021 |
 | polonium_211 | metabolite | — (mass units only) | — | — | — | — |
 | polonium_215 | metabolite | — (mass units only) | — | — | — | — |
+| radium_223ra | metabolite | 226 | Ra | PubChem | [6335825](https://pubchem.ncbi.nlm.nih.gov/compound/6335825) | Höllriegl_2021 |
 | radon_219 | metabolite | — (mass units only) | — | — | — | — |
-| thallium_207 | metabolite | — (mass units only) | — | — | — | — |
+| thallium_207 | metabolite | 204.38 | Tl | PubChem | [25087151](https://pubchem.ncbi.nlm.nih.gov/compound/25087151) | Höllriegl_2021 |
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 17:46 | 10:14 | 0/1/0 | 0/0/0 | 0/0/0 | 217,675/24,534 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 0/3 | 3/0 | 0 |
+| 2026-10-14 20:03 | 2:25 | 0/1/0 | 0/0/0 | 0/0/0 | 114,104/5,485 | einfracz / qwen3.8-27b | 3 | 0/3 | 3/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.143), gpt-oss:120b (primary re-run, agreement 0.333). Primary extraction retained.">cross-check: partial 0/2</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Höllriegl_2021_reference](drugs/drug_radium_223ra_dichloride/Radium223raDichloride_Hllriegl2021_reference.md) | — | general linear (no model) | 0 | Höllriegl V et al., Radiopharmacokinetic modelling and radi…, EJNMMI physics (2021) | [10.1186/s40658-021-00388-1](https://doi.org/10.1186/s40658-021-00388-1) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.143), gpt-oss:120b (primary re-run, agreement 0.333). Primary extraction retained.">cross-check: partial 0/2</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Höllriegl_2021_reference](drugs/drug_radium_223ra_dichloride/Radium223raDichloride_Hllriegl2021_reference.md) | — | general linear (no model) | 3 | Höllriegl V et al., Radiopharmacokinetic modelling and radi…, EJNMMI physics (2021) | [10.1186/s40658-021-00388-1](https://doi.org/10.1186/s40658-021-00388-1) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,7 +49,7 @@ Radium-223 dichloride is a radiopharmaceutical used to treat prostate cancer. It
 
 - **PubMed hits:** 5 matched, 5 returned
 - **screened:** 3  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 1
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded
@@ -56,9 +57,9 @@ Radium-223 dichloride is a radiopharmaceutical used to treat prostate cancer. It
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | PD | Deshayes_2017 | not_relevant | 1 | 0 | The paper is a narrative review summarizing mechanism of action and clinical trial outcomes, without reporting specific pharmacokinetic or pharmacodynamic modeling or numeric exposure-response parameters. |
-| PGx | Langsteger_2016 | not_relevant | 0 | 0 | The paper is a table of contents for a symposium and does not report pharmacogenomic effects on radium-223. |
+| PGx | Langsteger_2016 | not_relevant | 0 | 0 | The paper is a table of contents for a symposium and does not contain specific data or results regarding pharmacogenomics of radium-223. |
 | PD | Nilsson_2015 | not_relevant | 1 | 0 | The paper is a qualitative review of safety and efficacy data without reporting specific numeric pharmacodynamic parameters or exposure-response models. |
 | PD | Sindhu_2022 | not_relevant | 1 | 0 | The text is a qualitative review of the mechanism of action and clinical efficacy of radium-223, containing no numeric PD parameters, exposure-response data, or dose-effect curves. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 17:37 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-14 20:01 UTC</sub>

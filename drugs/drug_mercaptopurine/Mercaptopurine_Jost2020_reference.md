@@ -4,7 +4,7 @@
 
 # mercaptopurine — `Mercaptopurine_Jost2020_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.059), gpt-oss:120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.059), gpt-oss:120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -16,56 +16,89 @@
 
 ### Reviewer guidance
 
-**Rejected: the mercaptopurine/methotrexate record lacks any distribution volume and clearance, and its metabolism links to 6-thioguanine nucleotides and methotrexate polyglutamates 2 to 7 are unconnected to the dose.**
+**Only clearance was extracted — no volume.**
 
-The record is an exposure/outcome paper for children with acute lymphoblastic leukemia, measuring absolute neutrophil count, with only ktr (7.19), slope (67.8), γ (16.5) and an additive error (0.226) reported; no volume or clearance/elimination parameters exist, so it is not a compartmental population PK model. The structure check also found an unreachable compartment or unlinked metabolite: the metabolism links from 6-mercaptopurine to 6-thioguanine nucleotides and from methotrexate to methotrexate polyglutamates 2 to 7 have no path from the dose. A second reader disagreed on the dose compound, primary analyte, the links, and the parameter identities for ktr and γ, but these disagreements do not change the missing PK parameters. Extracted — mercaptopurine: ktr 7.19, slope 67.8, t1/2γ 16.5, add_error 0.226.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Extracted — neutrophils: ktr 0.148 1/day; mercaptopurine: Fab 0.22, kabs 31.2 1/day, kel 12.7 1/day, kmet 9.92 1/day; 6-TGN: fm 0.019, kel 2.38 1/day.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has 6-mercaptopurine and methotrexate, the second reading unknown; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by glm-5.3-flash</sub>
-
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:38:40.951262+00:00) predates the upstream re-run (2026-10-07 16:51:54.282158+00:00). Current validate status: `rejected`.
-
-> **Dose compound ≠ measured compound:** dosed `6-mercaptopurine and methotrexate`, measured `absolute neutrophil count`.
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Jost F et al., Model-Based Simulation of Maintenance T…, Frontiers in physiology (2020)
   ·  DOI: [10.3389/fphys.2020.00217](https://doi.org/10.3389/fphys.2020.00217)
 
-<div class="pk-model-meta" hidden drug="mercaptopurine" model-id="Mercaptopurine_Jost2020_reference" status="rejected" stale="true" population="children with acute lymphoblastic leukemia" measured-compound="absolute neutrophil count" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="mercaptopurine" model-id="Mercaptopurine_Jost2020_reference" status="needs_review" stale="false" population="pediatric acute lymphoblastic leukemia patients" measured-compound="mercaptopurine" parameterization="mechanistic" topology="parent_metabolite"></div>
 
-**Model structure:** general linear; no model was built for this record.  
-**Parameters:** 4 extracted.
+**Model structure:** parent + metabolite; no model was built for this record.  
+**Parameters:** 7 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| k tr | `Q338` · ktr | 7.19 | not captured | not captured | not captured | not captured | llm (0.5) | tab_4:row3:col1, tab_4:row3:col2, tab_4:row8:col1, tab_4:row8:col2 | — | not captured |
-| slope | `Q335` · slope | 67.8 | not captured | not captured | not captured | not captured | exact (1.0) | tab_4:row4:col1, tab_4:row4:col2, tab_4:row9:col1, tab_4:row9:col2 | — | not captured |
-| γ | `Q89` · t1/2γ | 16.5 | not captured | not captured | not captured | not captured | llm (0.5) | tab_4:row5:col1, tab_4:row5:col2, tab_4:row10:col1, tab_4:row10:col2 | — | not captured |
-| Proportional additive error | `Q317` · add_error | 0.226 | not captured | not captured | not captured | not captured | boundary (0.8) | tab_4:row11:col1 | — | not captured |
+| Base | `Q900` · equation variable | 2.34 | not captured | not captured | not captured | not captured | llm (0.6) | T5:row2:col1, T5:row2:col2 | — | not captured |
+| ktr | `Q306` · ktr | 0.148 | 1/day | 1.7129629629629628e-06 | 1/h | not captured | exact (1.0) | T5:row3:col1, T5:row3:col2 | — | 16.5 (None% RSE) |
+| F | `Q40` · Fab | 0.22 | not captured | not captured | not captured | not captured | exact (1.0) | Jost_2020_table_2:row0:col1 | — | not captured |
+| k_a | `Q49` · kabs | 31.2 | 1/day | 0.0003611111111111111 | [1] / [d] | not captured | exact (1.0) | Jost_2020_table_2:row1:col1 | — | not captured |
+| k_20 | `Q47` · kel | 12.72 | 1/day | 0.00014722222222222223 | [1] / [d] | not captured | exact (1.0) | Jost_2020_table_2:row2:col1 | — | not captured |
+| FM_3 | `Q45` · fm | 0.019 | not captured | not captured | not captured | not captured | exact (1.0) | Jost_2020_table_2:row3:col1 | — | not captured |
+| k_me | `Q51` · kmet | 9.9216 | 1/day | 0.00011483333333333332 | [1] / [d] | not captured | llm (0.6) | Jost_2020_table_2:row4:col1 | — | not captured |
+| k_ma | `Q47` · kel | 2.3765 | 1/day | 2.7505787037037035e-05 | [1] / [d] | not captured | exact (1.0) | Jost_2020_table_2:row6:col1 | — | not captured |
+| x_6mp(0) | `Q900` · equation variable | 0 | not captured | not captured | not captured | not captured | llm (0.6) | Jost_2020_table_2:row8:col1 | — | not captured |
+| x_6tgn(0) | `Q900` · equation variable | 0 | not captured | not captured | not captured | not captured | llm (0.6) | Jost_2020_table_2:row9:col1 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
+### Unresolved rows _(no Q-code or no value — not parameters)_
+| label (paper) | Q-code | value | link |
+|---|---|---|---|
+| CL_6tgn(BSA) | Q22 | not captured | exact |
+
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'Base' — extend the ontology if this is a real PK parameter (source ['tab_4:row2:col1', 'tab_4:row2:col2', 'tab_4:row7:col1', 'tab_4:row7:col2'])
-- dropped unlinked row (NIL): 'Mean absolute error' — extend the ontology if this is a real PK parameter (source ['tab_4:row13:col1', 'tab_4:row13:col2'])
-- dropped unlinked row (NIL): 'Root mean squared error' — extend the ontology if this is a real PK parameter (source ['tab_4:row14:col1', 'tab_4:row14:col2'])
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=absolute neutrophil count
-- topology: 2 first-order transfer(s) across 4 compounds → general_linear
-- review gap-fill skipped: this record measures 'absolute neutrophil count', not mercaptopurine — the review values are the parent's
+- table section iiv: 'Base' routed out of structural estimates ('Interindividual variability as coefficients of variation')
+- table section iiv: 'ktr' routed out of structural estimates ('Interindividual variability as coefficients of variation')
+- table section iiv: 'slope' routed out of structural estimates ('Interindividual variability as coefficients of variation')
+- table section iiv: 'γ' routed out of structural estimates ('Interindividual variability as coefficients of variation')
+- table section iiv: 'Proportional additive error' routed out of structural estimates ('Interindividual variability as coefficients of variation')
+- table representations disagree for 'Base'; source reconciliation required
+- table representations disagree for 'ktr'; source reconciliation required
+- table representations disagree for 'slope'; source reconciliation required
+- table representations disagree for 'γ'; source reconciliation required
+- table representations disagree for 'Mean absolute error'; source reconciliation required
+- table representations disagree for 'Root mean squared error'; source reconciliation required
+- conflicting source units for 'x_6mp(0)': [{'unit': 'mg', 'source': 'Jost_2020_table_2:row8:col2', 'scope': 'unit_column'}, {'unit': '0', 'source': 'Jost_2020_table_2:row8:col0', 'scope': 'label'}, {'unit': '0', 'source': 'Jost_2020_table_2:row8:col3', 'scope': 'description'}]
+- conflicting source units for 'x_6tgn(0)': [{'unit': 'mg/L', 'source': 'Jost_2020_table_2:row9:col2', 'scope': 'unit_column'}, {'unit': '0', 'source': 'Jost_2020_table_2:row9:col0', 'scope': 'label'}]
+- dropped PD-category row 'slope' → Q335 (slope, category G13) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['T5:row4:col1', 'T5:row4:col2'])
+- dropped unlinked row (NIL): 'γ' — extend the ontology if this is a real PK parameter (source ['T5:row5:col1', 'T5:row5:col2'])
+- dropped unlinked row (NIL): 'Mean absolute error' — extend the ontology if this is a real PK parameter (source ['T5:row13:col1', 'T5:row13:col2'])
+- dropped unlinked row (NIL): 'Root mean squared error' — extend the ontology if this is a real PK parameter (source ['T5:row14:col1', 'T5:row14:col2'])
+- implicit units: 'ktr' → 1/day (from the paper text: "The text explicitly converts the parameter to time in days: 'For better interpretability, the transition rate parameter ")
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=mercaptopurine
+- template fit: none — turnover model — not a compartmental parent–metabolite model
+- status held at route_to_review — not promoted
+- row roles (LLM): model_class=turnover; 16/16 row label(s) assigned, 5 linked by role; re-tagged mercaptopurine→neutrophils ×20, mercaptopurine→parent ×5, mercaptopurine→6-TGN ×4
+- molar mass: no plausible PubChem entry for '6-TGN' ('6-thioguanine nucleotides') — left in mass units
+- molar mass: none found for '6-TGN' — its concentrations stay mass-only
+- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
+- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- unparsed cell tab_4:row11:col2 = '0.226 (FIXED)'
+- table T5: units_need_context
+- table T5: representations disagree; selected evidence retained, not merged
+- table Jost_2020_table_2: missing_unit_binding
+- table Jost_2020_table_2: conflicting_units
+- companion parameter table 2 transcribed (9 record(s))
+- LLM selected parameter table(s) 2
 
 ## Validation
 
@@ -115,12 +148,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
-| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_unit_missing_Q317 | fail | [mass] / [length] ** 3 | not captured | not captured | not captured | ['tab_4:row11:col1'] |
-| C5_unit_missing_Q338 | fail | 1 / [time] | not captured | not captured | not captured | ['tab_4:row3:col1', 'tab_4:row3:col2', 'tab_4:row8:col1', 'tab_4:row8:col2'] |
-| C5_unit_missing_Q89 | fail | [time] | not captured | not captured | not captured | ['tab_4:row5:col1', 'tab_4:row5:col2', 'tab_4:row10:col1', 'tab_4:row10:col2'] |
-| C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 7 | not captured | not captured | not captured |
+| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Jost_2020_table_2:row5:col1'] |
+| C5_dimension_Q306 | pass | 1 / [time] | not captured | not captured | not captured | ['T5:row3:col1', 'T5:row3:col2'] |
+| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['Jost_2020_table_2:row2:col1'] |
+| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['Jost_2020_table_2:row6:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Jost_2020_table_2:row1:col1'] |
+| C5_dimension_Q51 | pass | 1 / [time] | not captured | not captured | not captured | ['Jost_2020_table_2:row4:col1'] |
+| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -129,14 +166,24 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_mercaptopurine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Jost_2020` / `Jost_2020::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_mercaptopurine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Jost_2020` / `Jost_2020::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -145,4 +192,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 16:51 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 21:23 UTC</sub>

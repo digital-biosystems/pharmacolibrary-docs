@@ -20,9 +20,9 @@
 
 **Model:** No model was generated from this record.
 
-> Donepezil concentrations act on acetylcholine (ACh) levels in the cerebral hippocampus via an indirect response model with inhibition of ACh elimination (indirect response II); the paper excerpts provide no mechanism details and no potency or rate parameter values (Imax, IC50, kin, kout, etc.).
+> Donepezil is recorded to modulate acetylcholine levels in the cerebral hippocampus via an indirect response model with an inhibitory effect, but no specific mechanism (e.g., production or elimination inhibition) is described in the excerpts. No potency or rate parameters (such as IC50, EC50, Imax, kout, or ke0) are provided in the available text.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Kiriyama_2023`
 - **model family:** `indirect_response_ii`

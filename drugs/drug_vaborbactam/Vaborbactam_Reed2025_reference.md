@@ -19,7 +19,7 @@
 
 **Only volume was extracted — no clearance.**
 
-A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Extracted — vaborbactam: k12 1.45 h−1, ki0 0.59 h−1, kcomp 22.2 h−1, k31 4.31 h−1, V 24.3 L.
+A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Extracted — vaborbactam: CL_CRRT 6.64 L/h, k12 1.45 h−1, ki0 0.59 h−1, kcomp 22.2 h−1, k31 4.31 h−1, V 24.3 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has vaborbactam, the second reading meropenem, vaborbactam; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
@@ -34,7 +34,7 @@ Reed G et al., Population pharmacokinetics of meropene…, Antimicrobial agents 
 <div class="pk-model-meta" hidden drug="Vaborbactam" model-id="Vaborbactam_Reed2025_reference" status="needs_review" stale="false" population="acutely ill hospitalized patients with various degrees of renal dysfunction including continuous renal replacement therapy" measured-compound="vaborbactam" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 5 extracted.
+**Parameters:** 6 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -43,11 +43,12 @@ Reed G et al., Population pharmacokinetics of meropene…, Antimicrobial agents 
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| K12 (h−1) | `Q301` · k12 | 1.45 | h−1 | 0.0004027777777777778 | [1] / [h] | not captured | exact (1.0) | T2:row4:col1, T2:row4:col2, T2:row12:col1, T2:row12:col2 | — | not captured |
-| K20 (h−1) | `Q373` · ki0 | 0.59 | h−1 | 0.00016388888888888887 | [1] / [h] | not captured | exact (1.0) | T2:row5:col1, T2:row5:col2, T2:row13:col1, T2:row13:col2 | — | not captured |
-| K23 (h−1) | `Q48` · kcomp | 22.2 | h−1 | 0.006166666666666667 | [1] / [h] | not captured | exact (1.0) | T2:row6:col1, T2:row6:col2, T2:row14:col1, T2:row14:col2 | — | not captured |
-| K31 (h−1) | `Q304` · k31 | 4.31 | h−1 | 0.0011972222222222221 | [1] / [h] | not captured | exact (1.0) | T2:row7:col1, T2:row7:col2, T2:row15:col1, T2:row15:col2 | — | not captured |
-| Vd (L): | `Q61` · V | 24.3 | L | 0.024300000000000002 | L | not captured | llm_confirmed (0.6) | T2:row8:col1, T2:row8:col2, T2:row16:col1, T2:row16:col2 | — | not captured |
+| CLnon-CRRT (L/h): | `Q357` · CL_CRRT | 6.64 | L/h | 1.8444444444444445e-06 | [l] / [h] | not captured | llm (0.6) | T2:row2:col1, T2:row10:col1 | — | not captured |
+| K12 (h−1) | `Q301` · k12 | 1.45 | h−1 | 0.0004027777777777778 | [1] / [h] | not captured | exact (1.0) | T2:row4:col1, T2:row12:col1 | — | not captured |
+| K20 (h−1) | `Q373` · ki0 | 0.59 | h−1 | 0.00016388888888888887 | [1] / [h] | not captured | exact (1.0) | T2:row5:col1, T2:row13:col1 | — | not captured |
+| K23 (h−1) | `Q48` · kcomp | 22.2 | h−1 | 0.006166666666666667 | [1] / [h] | not captured | exact (1.0) | T2:row6:col1, T2:row14:col1 | — | not captured |
+| K31 (h−1) | `Q304` · k31 | 4.31 | h−1 | 0.0011972222222222221 | [1] / [h] | not captured | exact (1.0) | T2:row7:col1, T2:row15:col1 | — | not captured |
+| Vd (L): | `Q61` · V | 24.3 | L | 0.024300000000000002 | [l] | not captured | llm_confirmed (0.6) | T2:row8:col1, T2:row16:col1 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -57,34 +58,24 @@ Reed G et al., Population pharmacokinetics of meropene…, Antimicrobial agents 
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'CLnon-CRRT (L/h):' — extend the ontology if this is a real PK parameter (source ['T2:row2:col1', 'T2:row2:col2', 'T2:row10:col1', 'T2:row10:col2'])
-- unit_dimension_unknown: 'weighted' (V)
-- dropped value-less row: 'CLnon-CRRT in L/h'
-- dropped value-less row: 'V / 80 kg'
-- dropped value-less row: 'K20'
-- dropped value-less row: 'intercompartmental transfer rates'
-- implicit units: 'Vd (L):' → L (from the paper text: "TABLE 2 caption states: 'weight normalized volume of distribution in L (V / 80 kg)'")
+- table representations disagree for 'CLnon-CRRT (L/h):'; source reconciliation required
+- table representations disagree for 'CLresidual (L/h):'; source reconciliation required
+- table representations disagree for 'K12 (h−1)'; source reconciliation required
+- table representations disagree for 'K20 (h−1)'; source reconciliation required
+- table representations disagree for 'K23 (h−1)'; source reconciliation required
+- table representations disagree for 'K31 (h−1)'; source reconciliation required
+- table representations disagree for 'Vd (L):'; source reconciliation required
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=vaborbactam
 - structure disagreement: deterministic 1C vs LLM 3C — review compartment count
+- status held at route_to_review — not promoted
 - skipped review gap-fill of CL: primary's parameterization (rate-constant / ka-only) does not use it
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- unparsed cell T2:row2:col3 = '10.4%'
-- unparsed cell T2:row3:col3 = '19.2%'
-- unparsed cell T2:row4:col3 = '10.9%'
-- unparsed cell T2:row5:col3 = '11.8%'
-- unparsed cell T2:row6:col3 = '9.9%'
-- unparsed cell T2:row7:col3 = '24.6%'
-- unparsed cell T2:row8:col3 = '9.1%'
-- unparsed cell T2:row10:col3 = '10.2%'
-- unparsed cell T2:row11:col3 = '12.0%'
-- unparsed cell T2:row12:col3 = '20.0%'
-- unparsed cell T2:row13:col3 = '13.5%'
-- unparsed cell T2:row14:col3 = '22.0%'
-- unparsed cell T2:row15:col3 = '27.7%'
-- unparsed cell T2:row16:col3 = '9.1%'
+- table T2: unbound_uncertainty
+- table T2: conflicting_units
+- table T2: representations disagree; selected evidence retained, not merged
 - LLM selected parameter table(s) 2
 
 ## Validation
@@ -115,16 +106,17 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q301 | pass | 1 / [time] | not captured | not captured | not captured | ['T2:row4:col1', 'T2:row4:col2', 'T2:row12:col1', 'T2:row12:col2'] |
-| C5_dimension_Q304 | pass | 1 / [time] | not captured | not captured | not captured | ['T2:row7:col1', 'T2:row7:col2', 'T2:row15:col1', 'T2:row15:col2'] |
-| C5_dimension_Q373 | pass | 1 / [time] | not captured | not captured | not captured | ['T2:row5:col1', 'T2:row5:col2', 'T2:row13:col1', 'T2:row13:col2'] |
-| C5_dimension_Q48 | pass | 1 / [time] | not captured | not captured | not captured | ['T2:row6:col1', 'T2:row6:col2', 'T2:row14:col1', 'T2:row14:col2'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['T2:row8:col1', 'T2:row8:col2', 'T2:row16:col1', 'T2:row16:col2'] |
+| C5_dimension_Q301 | pass | 1 / [time] | not captured | not captured | not captured | ['T2:row4:col1', 'T2:row12:col1'] |
+| C5_dimension_Q304 | pass | 1 / [time] | not captured | not captured | not captured | ['T2:row7:col1', 'T2:row15:col1'] |
+| C5_dimension_Q357 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T2:row2:col1', 'T2:row10:col1'] |
+| C5_dimension_Q373 | pass | 1 / [time] | not captured | not captured | not captured | ['T2:row5:col1', 'T2:row13:col1'] |
+| C5_dimension_Q48 | pass | 1 / [time] | not captured | not captured | not captured | ['T2:row6:col1', 'T2:row14:col1'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['T2:row8:col1', 'T2:row16:col1'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q61 | pass | volume within physiological range | 24.3 L | not captured | not captured | ['T2:row8:col1', 'T2:row8:col2', 'T2:row16:col1', 'T2:row16:col2'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 24.3 L | not captured | not captured | ['T2:row8:col1', 'T2:row16:col1'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -133,7 +125,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_vaborbactam/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Reed_2025` / `Reed_2025::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_vaborbactam/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Reed_2025` / `Reed_2025::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -159,4 +151,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 11:49 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 00:38 UTC</sub>

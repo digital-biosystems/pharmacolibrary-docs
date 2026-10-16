@@ -19,15 +19,15 @@
 
 **Model:** No model was generated from this record.
 
-> Romiplostim concentrations (ng/mL) stimulate the production of red blood cells (×10^12 cells/L) via an indirect response model with a proportional effect, characterized by a maximum stimulation parameter (SmaxRM1) of 0.07491, a baseline RBC count (RBC0) of 6.343 ×10^12 cells/L, a reticulocyte lifespan (TRET) of 35.13 h, and a mature RBC lifespan (TRBC) of 297.3 h.
+> The paper describes a mechanistic hematopoiesis model where romiplostim and rHuEPO act on hematopoietic stem and progenitor cell expansion to stimulate red blood cell production, with parameters defined by mean lifespans of precursors, reticulocytes, and mature RBCs (TEP, TRET, TRBC) rather than the indirect response III mechanism or potency values listed in the record. The specific pharmacodynamic parameters for romiplostim's effect on RBCs (e.g., Imax, EC50) are not provided in the excerpts, which only report that romiplostim at 30 μg/kg had a moderate effect on RBCs.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Fan_2023`
 - **model family:** `indirect_response_iii`
 - **driver:** `pk_record`
 - **tier:** descriptive
-- **effect:** stimulation/proportional
+- **effect:** stimulation/additive
 
 ## Citation
 Fan X et al., Novel Combination of Erythropoietin and…, ACS pharmacology & translat… (2023)
@@ -38,8 +38,6 @@ Fan X et al., Novel Combination of Erythropoietin and…, ACS pharmacology & tra
 |---|---|---|---|---|---|---|---|
 | PD (effect) | SmaxRM1 | `Q335` · not captured | 0.07491 | not captured | not captured | llm (not captured) | Fan_2023:pdv3 |
 | PD (effect) | RBC0 | `Q324` · not captured | 6.343 | ×1012 cells/L | not captured | llm (not captured) | Fan_2023:pdv3 |
-| — | TRET | `Q100` · not captured | 35.13 | h | not captured | nil (not captured) | Fan_2023:pdv3 |
-| — | TRBC | `Q100` · not captured | 297.3 | h | not captured | nil (not captured) | Fan_2023:pdv3 |
 | variability | σRBC | `Q315` · not captured | 0.5616 | not captured | not captured | llm (not captured) | Fan_2023:pdv3 |
 
 <details class="legend">

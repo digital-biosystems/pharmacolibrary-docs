@@ -149,7 +149,7 @@ Nishida K et al., Influence of liver disease on phenolsul…, Biological & pharm
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_phenolsulfonphthalein/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Nishida_2003` / `Nishida_2003::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_phenolsulfonphthalein/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Nishida_2003` / `Nishida_2003::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

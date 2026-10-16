@@ -17,20 +17,30 @@ Necitumumab is an EGFR-inhibiting monoclonal antibody used as an anticancer drug
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 17:31 | 8:31 | 0/1/0 | 1/0/0 | 0/0/0 | 70,773/27,377 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/2 | 2/0 | 0 |
+| 2026-10-15 03:45 | 1:21 | 0/2/0 | 1/0/0 | 0/0/0 | 55,340/6,675 | einfracz / qwen3.8-27b | 2 | 0/2 | 2/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5), gpt-oss:120b (partly confirmed, agreement 0.4). Primary extraction retained.">cross-check: partial 0/2</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Long_2017_reference](drugs/drug_necitumumab/Necitumumab_Long2017_reference.md) | — | 2-compartment (no model) | 3 | Long A et al., Population Pharmacokinetics of Necitumu…, Clinical pharmacokinetics (2017) | [10.1007/s40262-016-0452-x](https://doi.org/10.1007/s40262-016-0452-x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5), gpt-oss:120b (partly confirmed, agreement 0.4). Primary extraction retained.">cross-check: partial 0/2</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Long_2017_base](drugs/drug_necitumumab/Necitumumab_Long2017_base.md) | — | 2-compartment (no model) | 6 | Long A et al., Population Pharmacokinetics of Necitumu…, Clinical pharmacokinetics (2017) | [10.1007/s40262-016-0452-x](https://doi.org/10.1007/s40262-016-0452-x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5), gpt-oss:120b (partly confirmed, agreement 0.4). Primary extraction retained.">cross-check: partial 0/2</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Long_2017_final](drugs/drug_necitumumab/Necitumumab_Long2017_final.md) | — | 2-compartment (no model) | 7 | Long A et al., Population Pharmacokinetics of Necitumu…, Clinical pharmacokinetics (2017) | [10.1007/s40262-016-0452-x](https://doi.org/10.1007/s40262-016-0452-x) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> | [Chigutsa_2017_Shrink](drugs/drug_necitumumab/pd_Chigutsa_2017_Shrink.md) | Shrink rate of tumor ← necitumumab · direct sigmoid Emax (Hill) effect | — | Chigutsa E et al., Exposure-Response Analysis of Necitumum…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12209](https://doi.org/10.1002/psp4.12209) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> | [Chigutsa_2017_Basehaz](drugs/drug_necitumumab/pd_Chigutsa_2017_Basehaz.md) | Baseline hazard ← necitumumab · direct sigmoid Emax (Hill) effect | — | Chigutsa E et al., Exposure-Response Analysis of Necitumum…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12209](https://doi.org/10.1002/psp4.12209) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Chigutsa_2017_OS](drugs/drug_necitumumab/pd_Chigutsa_2017_OS.md) | Overall survival hazard ← necitumumab · direct sigmoid Emax (Hill) effect | — | Chigutsa E et al., Exposure-Response Analysis of Necitumum…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12209](https://doi.org/10.1002/psp4.12209) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=necitumumab).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: EGFR (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -42,14 +52,14 @@ Necitumumab is an EGFR-inhibiting monoclonal antibody used as an anticancer drug
 
 - **PubMed hits:** 2 matched, 2 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Chigutsa_2017 | irrelevant | 2 | 0 | The paper is an exposure-response (PD) analysis that uses PK parameters from a separate study and does not report quantitative PK disposition parameters (CL, V, etc.) for necitumumab in the provided text. |
+| popPK | Chigutsa_2017 | irrelevant | 4 | 2 | The paper reports pharmacodynamic exposure-response parameters (EC50, Emax for survival/tumor size) but relies on external PK models and does not provide the quantitative PK disposition parameters (CL, V) in the text. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 17:23 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-15 03:44 UTC</sub>

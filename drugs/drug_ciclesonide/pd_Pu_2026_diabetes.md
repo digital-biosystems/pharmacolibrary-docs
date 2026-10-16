@@ -18,9 +18,9 @@
 
 **Model:** No model was generated from this record.
 
-> The paper relates ciclesonide dose to the binary diabetes response using an Emax-type model; no mechanism, effect direction, or potency/rate values (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) are available in the excerpts.
+> The record identifies a dose-based emax model relating ciclesonide to a binary diabetes response, but the effect direction and specific functional form are unknown. The paper excerpts are unavailable, so the mechanism, potency parameters, and rate constants are not stated.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Pu_2026`
 - **model family:** `emax`

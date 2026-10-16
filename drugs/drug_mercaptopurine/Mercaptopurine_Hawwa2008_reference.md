@@ -4,7 +4,7 @@
 
 # mercaptopurine — `Mercaptopurine_Hawwa2008_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.8), gpt-oss:120b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.8), gpt-oss:120b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -16,34 +16,34 @@
 
 ### Reviewer guidance
 
-**No model parameters were extracted from this paper.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-Nothing in the extracted data describes the drug's disposition, so there is no model to build.
+None of the extracted parameters is mercaptopurine's own; they describe 6-thioguanine nucleotides and 6-methylmercaptopurine nucleotides. Extracted — 6-thioguanine nucleotides: CLm/F 0.0112 l h -1; 6-methylmercaptopurine nucleotides: CL 0.0226 l h -1.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has 6-thioguanine nucleotides, the second reading 6-TGNs; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:38:40.947935+00:00) predates the upstream re-run (2026-10-07 16:52:29.119091+00:00). Current validate status: `rejected`.
-
-> **Dose compound ≠ measured compound:** dosed `6-mercaptopurine`, measured `6-thioguanine nucleotides`.
+> **Dose compound ≠ measured compound:** dosed `mercaptopurine`, measured `6-thioguanine nucleotides`.
 
 ## Citation
 Hawwa AF et al., Population pharmacokinetic and pharmaco…, British journal of clinical… (2008)
   ·  DOI: [10.1111/j.1365-2125.2008.03281.x](https://doi.org/10.1111/j.1365-2125.2008.03281.x)
 
-<div class="pk-model-meta" hidden drug="mercaptopurine" model-id="Mercaptopurine_Hawwa2008_reference" status="rejected" stale="true" population="paediatric patients with acute lymphoblastic leukaemia" measured-compound="6-thioguanine nucleotides" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="mercaptopurine" model-id="Mercaptopurine_Hawwa2008_reference" status="rejected" stale="false" population="paediatric patients with acute lymphoblastic leukaemia" measured-compound="6-thioguanine nucleotides" parameterization="apparent" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
-**Parameters:** 0 extracted, plus 1 covariate effect.
+**Parameters:** 2 extracted, plus 1 covariate effect.
 
-**Parameterization:** mechanistic.
+**Parameterization:** CLm/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
+| CL6-TGNs (l h -1 ) | `Q351` · CLm/F | 0.0112 | l h -1 | 3.111111111111111e-09 | [l] / [h] | not captured | exact (1.0) | tab_1:row3:col1 | — | not captured |
+| CL6-mMPNs (l h -1 ) | `Q22` · CL | 0.0226 | l h -1 | 6.277777777777778e-09 | [l] / [h] | not captured | exact (1.0) | tab_1:row4:col1 | — | not captured |
 | theta_q45_tpmt | `Q900` · theta_q45_tpmt | 0.0191 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_1:row1:col1 | — | not captured |
 
 <details class="legend">
@@ -54,14 +54,20 @@ Hawwa AF et al., Population pharmacokinetic and pharmaco…, British journal of 
 ## Departures & gaps
 
 **Interpretation flags:**
+- unit_dimension_unknown: 'l h -1 m -2 ' (CL)
+- dropped duplicate Q22 ('CL6-TGNs (l h -1 m -2 )*', value '0.0082') — already have one for this compound
 - covariate effect for Q45 has no base parameter row (kept as unattached equation-variable)
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=6-thioguanine nucleotides
-- topology: 2 first-order transfer(s) across 2 compounds → general_linear
+- metabolite 6-thioguanine nucleotides: Q22→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=6-thioguanine nucleotides
+- topology: 2 first-order transfer(s) across 3 compounds → general_linear
 - template fit: none — only the metabolite is modelled — no parent compartment
+- pharmacogenetic covariate 'theta_q45_tpmt' (tpmt) — PGx domain
 - row roles: per-genotype parameters — typical value from the reference group: FM3 (no TPMT mutation)
-- row roles (LLM): model_class=compartmental; 2/2 row label(s) assigned, 1 linked by role; re-tagged parent→6-thioguanine nucleotides ×1
-- molar mass: no plausible PubChem entry for '6-thioguanine nucleotides' ('6-thioguanine nucleotides') — left in mass units
+- row roles (LLM): model_class=compartmental; 5/5 row label(s) assigned, 4 linked by role; re-tagged parent→6-thioguanine nucleotides ×3, parent→6-methylmercaptopurine nucleotides ×1
+- molar mass: no plausible PubChem entry for '6-thioguanine nucleotides' ('Thioguanosine triphosphate') — left in mass units
+- molar mass: no plausible PubChem entry for '6-methylmercaptopurine nucleotides' ("Methyl-thioinosine 5'-monophospate") — left in mass units
 - molar mass: none found for '6-thioguanine nucleotides' — its concentrations stay mass-only
+- molar mass: none found for '6-methylmercaptopurine nucleotides' — its concentrations stay mass-only
 - review gap-fill skipped: this record measures '6-thioguanine nucleotides', not mercaptopurine — the review values are the parent's
 
 **Extraction notes:**
@@ -98,9 +104,14 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
-| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
+| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row4:col1'] |
+| C5_dimension_Q351 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row3:col1'] |
+| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.0226 L/h | not captured | not captured | ['tab_1:row4:col1'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -109,7 +120,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_mercaptopurine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Hawwa_2008` / `Hawwa_2008::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_mercaptopurine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Hawwa_2008` / `Hawwa_2008::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -125,4 +136,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 16:52 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 21:23 UTC</sub>

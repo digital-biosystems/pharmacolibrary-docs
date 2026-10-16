@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;avelumab&quot;,&quot;href&quot;:&quot;drugs/drug_avelumab/&quot;},{&quot;label&quot;:&quot;Grisic_2022 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Avelumab_Vugmeyster2022_adult_model&quot;,&quot;label&quot;:&quot;Vugmeyster_2022_adult_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_avelumab/Avelumab_Vugmeyster2022_adult_model.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Avelumab_van2025_reference&quot;,&quot;label&quot;:&quot;van_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_avelumab/Avelumab_van2025_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Avelumab_Wilkins2019_reference&quot;,&quot;label&quot;:&quot;Wilkins_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_avelumab/Avelumab_Wilkins2019_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -16,13 +17,13 @@
 
 ### Reviewer guidance
 
-**Avelumab’s KD of 0.105 month−1 was refused because its reported dimension conflicts with its meaning as an equilibrium dissociation constant.**
+**C5 dimension mismatch on a structural parameter; c2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).**
 
-The record defines KD as an equilibrium dissociation constant for drug-target binding but reports it in month−1, and a reported unit lacked an SI conversion. The findings also report a negative clearance or volume at baseline or in a covariate scenario, but do not identify the parameter or value, so that result cannot be tied to a listed estimate. Extracted — avelumab: KD 0.105 month−1, kel 0.199 month–1, CL 0.0236 L/h, V1 3.29 L, Q 0.022 L/h, V2 1.1 L.
+A reported unit could not be converted (KD and kel), so that value has no SI equivalent. Extracted — avelumab: KD 0.161 month−1, kel 0.193 month–1, CL 0.252 L/h, V1 3.28 L, Q 0.022 L/h, V2 1.1 L.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of box_cox_for_baseline_ts: this record has -0.391, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Grisic AM et al., Model-Based Characterization of the Bid…, Clinical cancer research :… (2022)
@@ -40,15 +41,15 @@ Grisic AM et al., Model-Based Characterization of the Bid…, Clinical cancer re
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| KD, month−1 | `Q331` · KD | 0.105 | month−1 | not captured | [1] / [month] | not captured | exact (1.0) | tbl1:row2:col1 | — | not captured |
-| λ, month–1 | `Q47` · kel | 0.199 | month–1 | not captured | [1] / [month] | not captured | exact (1.0) | tbl1:row4:col1 | — | not captured |
-| CL, L/h | `Q22` · CL | 0.0236 | L/h | 6.555555555555556e-09 | [l] / [h] | not captured | exact (1.0) | tbl1:row6:col1 | — | not captured |
-| Vc, L | `Q63` · V1 | 3.29 | L | 0.00329 | [l] | not captured | exact (1.0) | tbl1:row7:col1 | — | not captured |
-| Q, L/h | `Q30` · Q | 0.022 | L/h | 6.111111111111111e-09 | [l] / [h] | not captured | exact (1.0) | tbl1:row8:col1 | — | not captured |
-| Vp, L | `Q64` · V2 | 1.1 | L | 0.0011 | [l] | not captured | exact (1.0) | tbl1:row9:col1 | — | not captured |
-| box_cox_for_baseline_ts | `Q900` · box_cox_for_baseline_ts | -0.391 | not captured | not captured | not captured | not captured | not captured (not captured) | tbl1:row12:col1 | — | not captured |
+| KD, month−1 | `Q331` · KD | 0.161 | month−1 | not captured | [1] / [month] | not captured | exact (1.0) | tbl1:row2:col1, tbl1:row2:col3 | — | not captured |
+| λ, month–1 | `Q47` · kel | 0.193 | month–1 | not captured | [1] / [month] | not captured | exact (1.0) | tbl1:row4:col1, tbl1:row4:col3 | — | not captured |
+| CL, L/h | `Q22` · CL | 0.252 | L/h | 7e-08 | [l] / [h] | not captured | exact (1.0) | tbl1:row6:col1, tbl1:row6:col3 | — | not captured |
+| Vc, L | `Q63` · V1 | 3.28 | L | 0.00328 | [l] | not captured | exact (1.0) | tbl1:row7:col1, tbl1:row7:col3 | — | not captured |
+| Q, L/h | `Q30` · Q | 0.022 | L/h | 6.111111111111111e-09 | [l] / [h] | not captured | exact (1.0) | tbl1:row8:col1, tbl1:row8:col3 | — | not captured |
+| Vp, L | `Q64` · V2 | 1.1 | L | 0.0011 | [l] | not captured | exact (1.0) | tbl1:row9:col1, tbl1:row9:col3 | — | not captured |
+| effect_of_albumin_on_cl_albeffect_l_h_per_g_l_albumin_different_from_40_g_l | `Q900` · effect_of_albumin_on_cl_albeffect_l_h_per_g_l_albumin_different_from_40_g_l | -0.0193 | not captured | not captured | not captured | not captured | not captured (not captured) | tbl1:row10:col1 | — | not captured |
+| box_cox_for_baseline_ts | `Q900` · box_cox_for_baseline_ts | -0.551 | not captured | not captured | not captured | not captured | not captured (not captured) | tbl1:row12:col1, tbl1:row12:col3 | — | not captured |
 | box_cox_for_effect_decay | `Q900` · box_cox_for_effect_decay | -2.97 | not captured | not captured | not captured | not captured | not captured (not captured) | tbl1:row13:col1 | — | not captured |
-| theta_q314_albumin | `Q900` · theta_q314_albumin | -0.0193 | not captured | not captured | not captured | not captured | not captured (not captured) | tbl1:row10:col1 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -58,48 +59,25 @@ Grisic AM et al., Model-Based Characterization of the Bid…, Clinical cancer re
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'Baseline TS, mm' — extend the ontology if this is a real PK parameter (source ['tbl1:row1:col1'])
+- dropped PD-category row 'Baseline TS, mm' → Q324 (E0, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tbl1:row1:col1', 'tbl1:row1:col3'])
 - unit_dimension_mismatch: 'KD, month−1' → Q331 (unit '1 / [time]' vs ontology '[mass] / [length] ** 3') — route to review
-- dropped unlinked row (NIL): 'KG, month−1' — extend the ontology if this is a real PK parameter (source ['tbl1:row3:col1'])
-- dropped PD-category row 'Effect of drug concentration on effect decay (Exposureeffect), 1/(μg/mL)' → Q335 (slope, category G13) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tbl1:row5:col1'])
-- dropped duplicate Q22 ('Effect of TS on CL (TSeffect), L/h per mm TS different from median TS 51 mm', value '0.00476') — already have one for this compound
-- covariate level 'Box-Cox for baseline TS' → Q900:box_cox_for_baseline_ts = -0.391 (additive_shift on Q22)
+- dropped unlinked row (NIL): 'KG, month−1' — extend the ontology if this is a real PK parameter (source ['tbl1:row3:col1', 'tbl1:row3:col3'])
+- dropped PD-category row 'Effect of drug concentration on effect decay (Exposureeffect), 1/(μg/mL)' → Q335 (slope, category G13) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tbl1:row5:col1', 'tbl1:row5:col3'])
+- covariate level 'Effect of albumin on CL (Albeffect), L/h per g/L albumin different from 40 g/L' → Q900:effect_of_albumin_on_cl_albeffect_l_h_per_g_l_albumin_different_from_40_g_l = -0.0193 (linear_fractional on Q22)
+- dropped PD-category row 'Effect of TS on CL (TSeffect), L/h per mm TS different from median TS 51 mm' → Q335 (slope, category G13) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tbl1:row11:col1', 'tbl1:row11:col3'])
+- covariate level 'Box-Cox for baseline TS' → Q900:box_cox_for_baseline_ts = -0.551 (additive_shift on Q22)
 - covariate level 'Box-Cox for effect decay' → Q900:box_cox_for_effect_decay = -2.97 (additive_shift on Q22)
 - dropped PD-category row 'Dropout: Intercept logit' → Q344 (logit_intercept, category G14) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tbl1:row26:col1', 'tbl1:row26:col3'])
 - dropped PD-category row 'Dropout: Effect of progressive disease' → Q340 (alpha_progression, category G13) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tbl1:row27:col1', 'tbl1:row27:col3'])
-- dropped PD-category row 'Dropout: Effect of relative change from baseline TS' → Q335 (slope, category G13) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tbl1:row28:col1', 'tbl1:row28:col3'])
-- covariate effect for Q314 has no base parameter row (kept as unattached equation-variable)
+- dropped unlinked row (NIL): 'Dropout: Effect of relative change from baseline TS' — extend the ontology if this is a real PK parameter (source ['tbl1:row28:col1', 'tbl1:row28:col3'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=avelumab
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
 - molar mass: none found for 'avelumab' — its concentrations stay mass-only
 
 **Extraction notes:**
-- unparsed cell tbl1:row1:col3 = '85.9 (44.8–150)'
-- unparsed cell tbl1:row2:col3 = '0.161 (0.102–0.363)'
-- unparsed cell tbl1:row3:col3 = '0.0275 (0.00372–0.0641)'
-- unparsed cell tbl1:row4:col3 = '0.193 (0.0479–0.465)'
-- unparsed cell tbl1:row5:col3 = '0.00052 (0.0000125–0.00061)'
-- unparsed cell tbl1:row6:col3 = '0.252 (0.0194–0.0353)'
-- unparsed cell tbl1:row7:col3 = '3.28 (2.97–4.15)'
-- unparsed cell tbl1:row8:col3 = '0.022 (0.0156–0.0270)'
-- unparsed cell tbl1:row9:col3 = '1.1 (0.836–1.52)'
-- unparsed cell tbl1:row10:col3 = '−0.0184 (−0.0396 to −0.0131)'
-- unparsed cell tbl1:row11:col3 = '0.00486 (0.00243–0.00985)'
-- unparsed cell tbl1:row12:col3 = '−0.551 (−2.45–0.443)'
-- unparsed cell tbl1:row13:col3 = '−2.97 (−2.99 to −2.97)'
-- unparsed cell tbl1:row14:col3 = '0.452 (0.137–51.6)'
-- unparsed cell tbl1:row15:col3 = '235 (93.0–479)'
-- unparsed cell tbl1:row16:col3 = '109 (21.1–404)'
-- unparsed cell tbl1:row17:col3 = '31.3 (26.7–45.9)'
-- unparsed cell tbl1:row18:col3 = '26.2 (19.8–34.2)'
-- unparsed cell tbl1:row19:col3 = '0.488 (0.128–1.40)'
-- unparsed cell tbl1:row20:col3 = '111 (33.0–210)'
-- unparsed cell tbl1:row21:col3 = '50.6 (38.7–69.7)'
-- unparsed cell tbl1:row22:col3 = '13.7 (10.7–16.2)'
-- unparsed cell tbl1:row23:col3 = '2.42 (0.573–5.53)'
-- unparsed cell tbl1:row24:col3 = '30.1 (19.1–482)'
-- unparsed cell tbl1:row25:col3 = '0.00011 (0.000113–0.0107)'
+- table tbl1: unparsed_numeric_cell
+- no LLM table selection; kept 2 deterministically-scored parameter table(s)
 
 ## Validation
 
@@ -135,18 +113,18 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C2_sign_Q22_category | fail | -0.3674 | not captured | not captured | not captured | base 0.0236 + shift -0.391 (category) |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tbl1:row6:col1'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tbl1:row8:col1'] |
-| C5_dimension_Q331 | fail | 1 / [time] | month−1 | not captured | not captured | ['tbl1:row2:col1'] |
-| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['tbl1:row4:col1'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['tbl1:row7:col1'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['tbl1:row9:col1'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.0236 | not captured | not captured | ['tbl1:row6:col1'] |
+| C2_sign_Q22_category | fail | -0.299 | not captured | not captured | not captured | base 0.252 + shift -0.551 (category) |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tbl1:row6:col1', 'tbl1:row6:col3'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tbl1:row8:col1', 'tbl1:row8:col3'] |
+| C5_dimension_Q331 | fail | 1 / [time] | month−1 | not captured | not captured | ['tbl1:row2:col1', 'tbl1:row2:col3'] |
+| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['tbl1:row4:col1', 'tbl1:row4:col3'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['tbl1:row7:col1', 'tbl1:row7:col3'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['tbl1:row9:col1', 'tbl1:row9:col3'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.252 | not captured | not captured | ['tbl1:row6:col1', 'tbl1:row6:col3'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.0236 L/h | not captured | not captured | ['tbl1:row6:col1'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 3.29 L | not captured | not captured | ['tbl1:row7:col1'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 1.1 L | not captured | not captured | ['tbl1:row9:col1'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.252 L/h | not captured | not captured | ['tbl1:row6:col1', 'tbl1:row6:col3'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 3.28 L | not captured | not captured | ['tbl1:row7:col1', 'tbl1:row7:col3'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 1.1 L | not captured | not captured | ['tbl1:row9:col1', 'tbl1:row9:col3'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -155,7 +133,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_avelumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Grisic_2022` / `Grisic_2022::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_avelumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Grisic_2022` / `Grisic_2022::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -171,4 +149,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 09:39 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 18:06 UTC</sub>

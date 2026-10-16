@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01M&quot;,&quot;href&quot;:&quot;atc/J01M.md&quot;},{&quot;label&quot;:&quot;flumequine&quot;,&quot;href&quot;:&quot;drugs/drug_flumequine/&quot;},{&quot;label&quot;:&quot;Ziv_1986 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Flumequine_Mevius1990_reference&quot;,&quot;label&quot;:&quot;Mevius_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flumequine/Flumequine_Mevius1990_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -21,7 +20,7 @@
 
 **Only volume was extracted — no clearance.**
 
-A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — flumequine: t1/2α 13 min, t1/2β 2.25 h, V 1.48 l/kg, Vss 1.43 l/kg, Cmax 6.2 micrograms/ml, Fab 44 %, fu 74.5 %.
+A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — flumequine: t1/2α 13 min, t1/2β 2.25 h, V 1.48 l/kg, Cmax 6.2 micrograms/ml, tmax 30 min, Fab 44 %, fu 74.5 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of bioavailability: this record has 44, the second reading none; it also differs on 3 more fields. That field does not shape the model.
 
@@ -43,13 +42,14 @@ Ziv G et al., Clinical pharmacokinetics of flumequine…, Journal of veterinary 
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| distribution half-life (t1/2 alpha) | `Q59` · t1/2α | 13 | min | 780.0 | [min] | not captured | llm (0.6) | Ziv_1986:abstract | — | not captured |
-| elimination half-life (t1/2 beta) | `Q60` · t1/2β | 2.25 | h | 8100.0 | [h] | not captured | llm (0.6) | Ziv_1986:abstract | — | not captured |
-| apparent area volume of distribution (Vd(area)) | `Q61` · V | 1.48 | l/kg | 0.1036 | [l] / [kg] | not captured | llm_confirmed (0.6) | Ziv_1986:abstract | — | not captured |
-| volume of distribution at steady state (Vd(ss)) | `Q65` · Vss | 1.43 | l/kg | 0.10010000000000001 | [l] / [kg] | not captured | llm_corrected (0.6) | Ziv_1986:abstract | — | not captured |
-| mean peak serum drug concentration (Cmax) | `Q32` · Cmax | 6.2 | micrograms/ml | not captured | [µg] / [ml] | not captured | llm_confirmed (0.6) | Ziv_1986:abstract | — | not captured |
+| t1/2 alpha | `Q59` · t1/2α | 13 | min | 780.0 | [min] | not captured | exact (1.0) | Ziv_1986:abstract | — | not captured |
+| t1/2 beta | `Q60` · t1/2β | 2.25 | h | 8100.0 | [h] | not captured | exact (1.0) | Ziv_1986:abstract | — | not captured |
+| Vd(area) | `Q61` · V | 1.48 | l/kg | 0.1036 | [l] / [kg] | not captured | exact (1.0) | Ziv_1986:abstract | — | not captured |
+| Cmax | `Q32` · Cmax | 6.2 | micrograms/ml | not captured | [µg] / [ml] | not captured | exact (1.0) | Ziv_1986:abstract | — | not captured |
+| tmax | `Q56` · tmax | 30 | min | 1800.0 | [min] | not captured | exact (1.0) | Ziv_1986:abstract | — | not captured |
 | bioavailability | `Q40` · Fab | 44 | % | not captured | not captured | not captured | exact (1.0) | Ziv_1986:abstract | — | not captured |
-| bound in serum | `Q46` · fu | 74.5 | % | not captured | [%] | not captured | llm (0.6) | Ziv_1986:abstract | — | not captured |
+| probenecid | `Q900` · equation variable | 40 | mg/kg | not captured | [mg] / [kg] | not captured | llm (0.6) | Ziv_1986:abstract | — | not captured |
+| protein binding | `Q46` · fu | 74.5 | % | not captured | [%] | not captured | exact (1.0) | Ziv_1986:abstract | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -59,7 +59,9 @@ Ziv G et al., Clinical pharmacokinetics of flumequine…, Journal of veterinary 
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'The minimal inhibitory concentration (MIC)' — extend the ontology if this is a real PK parameter (source ['Ziv_1986:abstract'])
+- dropped unlinked row (NIL): 'MIC' — extend the ontology if this is a real PK parameter (source ['Ziv_1986:abstract'])
+- dropped duplicate Q61 ('Vd(ss)', value 1.43) — already have one for this compound
+- dropped unlinked row (NIL): 'dose' — extend the ontology if this is a real PK parameter (source ['Ziv_1986:abstract', 'Ziv_1986:abstract', 'Ziv_1986:abstract', 'Ziv_1986:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=flumequine
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
@@ -69,7 +71,7 @@ Ziv G et al., Clinical pharmacokinetics of flumequine…, Journal of veterinary 
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Ziv_1986_metadata.yaml (10 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Ziv_1986_metadata.yaml (16 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -105,13 +107,12 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Ziv_1986:abstract'] |
+| C5_dimension_Q56 | pass | [time] | not captured | not captured | not captured | ['Ziv_1986:abstract'] |
 | C5_dimension_Q59 | pass | [time] | not captured | not captured | not captured | ['Ziv_1986:abstract'] |
 | C5_dimension_Q60 | pass | [time] | not captured | not captured | not captured | ['Ziv_1986:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Ziv_1986:abstract'] |
-| C5_dimension_Q65 | pass | [length] ** 3 | not captured | not captured | not captured | ['Ziv_1986:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q61 | pass | volume within physiological range | 104 L | not captured | not captured | ['Ziv_1986:abstract'] |
-| C9_phys_window_Q65 | pass | volume within physiological range | 100 L | not captured | not captured | ['Ziv_1986:abstract'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -120,7 +121,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_flumequine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Ziv_1986` / `Ziv_1986::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_flumequine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Ziv_1986` / `Ziv_1986::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -146,4 +147,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 11:58 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 22:55 UTC</sub>

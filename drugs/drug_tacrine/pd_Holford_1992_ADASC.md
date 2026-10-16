@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06D&quot;,&quot;href&quot;:&quot;atc/N06D.md&quot;},{&quot;label&quot;:&quot;tacrine&quot;,&quot;href&quot;:&quot;drugs/drug_tacrine/&quot;},{&quot;label&quot;:&quot;Holford_1992 \u00b7 PD cognitive component of the Alzheimer disease assessment scale (ADASC)&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06D&quot;,&quot;href&quot;:&quot;atc/N06D.md&quot;},{&quot;label&quot;:&quot;tacrine&quot;,&quot;href&quot;:&quot;drugs/drug_tacrine/&quot;},{&quot;label&quot;:&quot;Holford_1992 \u00b7 PD cognitive component of the Alzheimer disease assessment scale&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# cognitive component of the Alzheimer disease assessment scale (ADASC) — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.571). Primary extraction retained.">cross-check: disputed</span>
+# cognitive component of the Alzheimer disease assessment scale — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.571). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -13,13 +13,13 @@
 
 ## Record summary
 
-**As extracted:** Tacrine (the dose) drives cognitive component of the Alzheimer disease assessment scale (ADASC) (in ADASC units): disease-progression model.
+**As extracted:** Tacrine (the dose) drives cognitive component of the Alzheimer disease assessment scale (in ADASC units): disease-progression model.
 
 **Model:** No model was generated from this record.
 
-> Tacrine dose acts on the cognitive component of the ADAS (ADASC) in a disease-progression model with an additive inhibitory effect: disease progresses at 6.17 ADASC units/year, and tacrine shifts the disease progress curve by -2.99 ADASC units with a shift time of 177.6 days. The paper excerpts do not state a mechanism beyond this dose-driven shift, and no potency (IC50/EC50/Emax) or rate (kin/kout/ke0) values are given.
+> Tacrine dose (mg/day) was used as the driver to model the inhibition of the disease progression rate (6.17 ADASC units/year) on the Alzheimer's Disease Assessment Scale-Cognitive (ADASC) score. The paper does not specify whether this dose-response relationship is mediated by direct drug effects or a shift in the underlying disease progression curve (estimated at -2.99 ADASC units) beyond a placebo effect magnitude 76% larger in France.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Holford_1992`
 - **model family:** `disease_progression`
@@ -35,8 +35,8 @@ Holford NH et al., Results and validation of a population…, Proceedings of the
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
 | PD (effect) | rate of disease progression | `Q340` · not captured | 6.17 | ADASC units/year | not captured | llm (not captured) | Holford_1992:pdv3 |
-| model term | shift in the disease progress curve | `Q900` · not captured | -2.99 | ADASC units | not captured | llm (not captured) | Holford_1992:pdv3 |
-| model term | shift in the disease progress curve | `Q900` · not captured | 177.6 | days | not captured | llm (not captured) | Holford_1992:pdv3 |
+| — | shift in the disease progress curve | `Q100` · not captured | -2.99 | ADASC units | not captured | nil (not captured) | Holford_1992:pdv3 |
+| PD (effect) | placebo effect magnitude (France) | `Q341` · not captured | 76% larger | not captured | not captured | boundary (not captured) | Holford_1992:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -45,7 +45,7 @@ Holford NH et al., Results and validation of a population…, Proceedings of the
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
@@ -55,9 +55,9 @@ Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check v
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `einfracz:gpt-oss-120b` | `parameters[Q100]` | not captured | unit | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q100].value` | -2.99 | unit | mismatch |
 | `einfracz:gpt-oss-120b` | `parameters[Q340].value` | 6.17 | unit | mismatch |
-| `einfracz:gpt-oss-120b` | `parameters[Q900]` | 177.6 | not captured | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q341]` | 76% larger | not captured | only_one_extracted |
 
 </details>
 

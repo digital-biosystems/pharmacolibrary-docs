@@ -4,7 +4,7 @@
 
 # tralokinumab — `Tralokinumab_Soehoel2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.895). Primary extraction retained.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.895). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -12,13 +12,13 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** Model withheld: a core parameter is unspecified.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
-**No value for tralokinumab's volume of distribution and absorption lag time; t6_deviations.**
+**C5 dimension mismatch on a structural parameter.**
 
-The model was built, but tralokinumab's volume of distribution and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. A reported unit could not be converted (Fab), so that value has no SI equivalent. Extracted — tralokinumab: kabs 0.184 1/day, V2 2.71 L, CL 0.149 L/day, V3 1.44 L, Q 0.159 L/day, Fab 0.761 bioavailability.
+A reported unit could not be converted (kabs, Fab, allometric_exponent and equation variable), so that value has no SI equivalent. Extracted — tralokinumab: kabs 0.184 day, V2 2.71 L, CL 0.149 L/day, V3 1.44 L, Q 0.159 L/day, Fab 0.761 Unitless, allometric_exponent 0.873 Unitless.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of f ∼ dilution f: this record has none, the second reading 0.354; it also differs on 1 more field. That field does not shape the model.
 
@@ -28,25 +28,26 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Soehoel A et al., Population Pharmacokinetics of Tralokin…, Clinical pharmacology in dr… (2022)
   ·  DOI: [10.1002/cpdd.1113](https://doi.org/10.1002/cpdd.1113)
 
-<div class="pk-model-meta" hidden drug="tralokinumab" model-id="Tralokinumab_Soehoel2022_reference" status="model_quarantined" stale="false" population="adults with atopic dermatitis, asthma, and healthy subjects" measured-compound="tralokinumab" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="tralokinumab" model-id="Tralokinumab_Soehoel2022_reference" status="rejected" stale="false" population="adults with moderate to severe atopic dermatitis, asthma, and healthy subjects" measured-compound="tralokinumab" parameterization="mechanistic" topology="1C"></div>
 
-**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 6 extracted.
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 7 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| ka (absorption rate constant) | `Q49` · kabs | 0.184 | 1/day | 2.1296296296296294e-06 | 1/h | 4 | exact (1.0) | cpdd1113-tbl-0002:row2:col2, cpdd1113-tbl-0002:row2:col3 | — | not captured |
-| V2 (central volume of distribution) | `Q64` · V2 | 2.71 | L | 0.00271 | L | 7 | exact (1.0) | cpdd1113-tbl-0002:row3:col2, cpdd1113-tbl-0002:row3:col3 | — | not captured |
-| CL (clearance) | `Q22` · CL | 0.149 | L/day | 1.724537037037037e-09 | L/h | 5 | exact (1.0) | cpdd1113-tbl-0002:row4:col2, cpdd1113-tbl-0002:row4:col3 | — | not captured |
-| V3 (peripheral volume of distribution) | `Q77` · V3 | 1.44 | L | 0.0014399999999999999 | L | 6 | exact (1.0) | cpdd1113-tbl-0002:row5:col2, cpdd1113-tbl-0002:row5:col3 | — | not captured |
-| Q (intercompartmental clearance) | `Q30` · Q | 0.159 | L/day | 1.840277777777778e-09 | L/h | 8 | exact (1.0) | cpdd1113-tbl-0002:row6:col2, cpdd1113-tbl-0002:row6:col3 | — | not captured |
-| F (bioavailability) | `Q40` · Fab | 0.761 | bioavailability | not captured | not captured | 5 | exact (1.0) | cpdd1113-tbl-0002:row7:col2, cpdd1113-tbl-0002:row7:col3 | — | not captured |
-| ka ∼ dilution f | `Q900` · equation variable | -0.519 | not captured | not captured | not captured | 9 | llm_corrected (0.6) | cpdd1113-tbl-0002:row20:col2, cpdd1113-tbl-0002:row20:col3 | — | not captured |
+| ka (absorption rate constant) | `Q49` · kabs | 0.184 | day | not captured | [d] | not captured | exact (1.0) | cpdd1113-tbl-0002:row2:col2 | — | not captured |
+| V2 (central volume of distribution) | `Q64` · V2 | 2.71 | L | 0.00271 | [l] | not captured | exact (1.0) | cpdd1113-tbl-0002:row3:col2 | — | not captured |
+| CL (clearance) | `Q22` · CL | 0.149 | L/day | 1.724537037037037e-09 | [l] / [d] | not captured | exact (1.0) | cpdd1113-tbl-0002:row4:col2 | — | not captured |
+| V3 (peripheral volume of distribution) | `Q77` · V3 | 1.44 | L | 0.0014399999999999999 | [l] | not captured | exact (1.0) | cpdd1113-tbl-0002:row5:col2 | — | not captured |
+| Q (intercompartmental clearance) | `Q30` · Q | 0.159 | L/day | 1.840277777777778e-09 | [l] / [d] | not captured | exact (1.0) | cpdd1113-tbl-0002:row6:col2 | — | not captured |
+| F (bioavailability) | `Q40` · Fab | 0.761 | Unitless | not captured | not captured | not captured | exact (1.0) | cpdd1113-tbl-0002:row7:col2 | — | not captured |
+| CL and Q ∼ weight | `Q319` · allometric_exponent | 0.873 | Unitless | not captured | [unitless] | not captured | llm_corrected (0.6) | cpdd1113-tbl-0002:row16:col2 | — | not captured |
+| F ∼ dilution f | `Q900` · equation variable | 0.354 | Unitless | not captured | [unitless] | not captured | llm (0.6) | cpdd1113-tbl-0002:row19:col2 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -59,22 +60,16 @@ Soehoel A et al., Population Pharmacokinetics of Tralokin…, Clinical pharmacol
 - table section iiv: 'IIV on V2' routed out of structural estimates ('IIV d')
 - table section iiv: 'IIV on CL' routed out of structural estimates ('IIV d')
 - table section iiv: 'IIV on V2:CL' routed out of structural estimates ('IIV d')
-- column 'estimate a' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- unit_dimension_unknown: 'absorption rate constant' (kabs)
-- unit_dimension_unknown: 'central volume of distribution' (V2)
-- unit_dimension_unknown: 'clearance' (CL)
-- unit_dimension_unknown: 'peripheral volume of distribution' (V3)
-- unit_dimension_unknown: 'intercompartmental clearance' (Q)
-- dropped unlinked row (NIL): 'V2 and V3 ∼ weight' — extend the ontology if this is a real PK parameter (source ['cpdd1113-tbl-0002:row15:col2', 'cpdd1113-tbl-0002:row15:col3'])
-- dropped unlinked row (NIL): 'CL and Q ∼ weight' — extend the ontology if this is a real PK parameter (source ['cpdd1113-tbl-0002:row16:col2', 'cpdd1113-tbl-0002:row16:col3'])
+- unit_dimension_mismatch: 'ka (absorption rate constant)' → Q49 (unit '[time]' vs ontology '1 / [time]') — route to review
+- unit_dimension_unknown: 'Unitless' (V3)
+- dropped duplicate Q77 ('V2 and V3 ∼ weight', value '0.783') — already have one for this compound
+- unit_dimension_unknown: 'Unitless' (allometric_exponent)
+- unit_dimension_unknown: 'Unitless' (CL)
 - dropped duplicate Q22 ('CL ∼ non‐ECZTRA trials', value '0.344') — already have one for this compound
+- unit_dimension_unknown: 'Unitless' (V2)
 - dropped duplicate Q64 ('V2 ∼ non‐ECZTRA trials', value '0.258') — already have one for this compound
-- dropped unlinked row (NIL): 'F ∼ dilution f' — extend the ontology if this is a real PK parameter (source ['cpdd1113-tbl-0002:row19:col2', 'cpdd1113-tbl-0002:row19:col3'])
-- implicit units: 'ka (absorption rate constant)' → 1/day (from the paper text: "The text states: 'The estimated CL (0.149 L/day), SC bioavailability (76.1%), absorption rate constant (0.184 day) and t")
-- implicit units: 'V2 (central volume of distribution)' → L (from the paper text: "The text states: 'The volume of distribution at steady state, calculated based on the final population PK model, was est")
-- implicit units: 'CL (clearance)' → L/day (from the paper text: "The text explicitly states: 'The estimated CL (0.149 L/day)...'.")
-- implicit units: 'V3 (peripheral volume of distribution)' → L (from the paper text: "The text states: 'The volume of distribution at steady state, calculated based on the final population PK model, was est")
-- implicit units: 'Q (intercompartmental clearance)' → L/day (from the popPK convention: 'Q is an intercompartmental clearance. Clearance parameters in this model are scaled by body weight with an allometric ex')
+- unit_dimension_unknown: 'Unitless' (equation variable)
+- dropped duplicate Q900 ('ka ∼ dilution f', value '-0.519') — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=tralokinumab
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - structure disagreement: deterministic 1C vs LLM 3C — review compartment count
@@ -82,22 +77,8 @@ Soehoel A et al., Population Pharmacokinetics of Tralokin…, Clinical pharmacol
 - molar mass: none found for 'tralokinumab' — its concentrations stay mass-only
 
 **Extraction notes:**
-- unparsed cell cpdd1113-tbl-0002:row2:col4 = '0.164 to 0.202'
-- unparsed cell cpdd1113-tbl-0002:row3:col4 = '2.33 to 3.00'
-- unparsed cell cpdd1113-tbl-0002:row4:col4 = '0.136 to 0.164'
-- unparsed cell cpdd1113-tbl-0002:row5:col4 = '1.21 to 1.71'
-- unparsed cell cpdd1113-tbl-0002:row6:col4 = '0.125 to 0.199'
-- unparsed cell cpdd1113-tbl-0002:row7:col4 = '0.697 to 0.831'
-- unparsed cell cpdd1113-tbl-0002:row8:col4 = '0.123 to 0.366'
-- unparsed cell cpdd1113-tbl-0002:row9:col4 = '0.207 to 0.224'
-- unparsed cell cpdd1113-tbl-0002:row11:col4 = '34.4 to 48.5'
-- unparsed cell cpdd1113-tbl-0002:row12:col4 = '29.6 to 33.0'
-- unparsed cell cpdd1113-tbl-0002:row15:col4 = '0.727 to 0.842'
-- unparsed cell cpdd1113-tbl-0002:row16:col4 = '0.816 to 0.930'
-- unparsed cell cpdd1113-tbl-0002:row17:col4 = '0.308 to 0.387'
-- unparsed cell cpdd1113-tbl-0002:row18:col4 = '0.198 to 0.327'
-- unparsed cell cpdd1113-tbl-0002:row19:col4 = '0.220 to 0.499'
-- unparsed cell cpdd1113-tbl-0002:row20:col4 = '–0.605 to 0.394'
+- table cpdd1113-tbl-0002: unbound_uncertainty
+- table cpdd1113-tbl-0002: unparsed_numeric_cell
 - LLM selected parameter table(s) 2
 
 ## Validation
@@ -128,28 +109,18 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 7 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['cpdd1113-tbl-0002:row4:col2', 'cpdd1113-tbl-0002:row4:col3'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['cpdd1113-tbl-0002:row6:col2', 'cpdd1113-tbl-0002:row6:col3'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['cpdd1113-tbl-0002:row2:col2', 'cpdd1113-tbl-0002:row2:col3'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['cpdd1113-tbl-0002:row3:col2', 'cpdd1113-tbl-0002:row3:col3'] |
-| C5_dimension_Q77 | pass | [length] ** 3 | not captured | not captured | not captured | ['cpdd1113-tbl-0002:row5:col2', 'cpdd1113-tbl-0002:row5:col3'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.149 | not captured | not captured | ['cpdd1113-tbl-0002:row4:col2', 'cpdd1113-tbl-0002:row4:col3'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['cpdd1113-tbl-0002:row4:col2'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['cpdd1113-tbl-0002:row6:col2'] |
+| C5_dimension_Q49 | fail | [time] | day | not captured | not captured | ['cpdd1113-tbl-0002:row2:col2'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['cpdd1113-tbl-0002:row3:col2'] |
+| C5_dimension_Q77 | pass | [length] ** 3 | not captured | not captured | not captured | ['cpdd1113-tbl-0002:row5:col2'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.149 | not captured | not captured | ['cpdd1113-tbl-0002:row4:col2'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.00621 L/h | not captured | not captured | ['cpdd1113-tbl-0002:row4:col2', 'cpdd1113-tbl-0002:row4:col3'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 2.71 L | not captured | not captured | ['cpdd1113-tbl-0002:row3:col2', 'cpdd1113-tbl-0002:row3:col3'] |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable | not captured | LLM adjudication → deterministic rule |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.00621 L/h | not captured | not captured | ['cpdd1113-tbl-0002:row4:col2'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 2.71 L | not captured | not captured | ['cpdd1113-tbl-0002:row3:col2'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -158,26 +129,14 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_tralokinumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Soehoel_2022` / `Soehoel_2022::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_tralokinumab/models/modelica/_needs_review/Tralokinumab_Soehoel2022_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_tralokinumab/models/modelica/_needs_review/Tralokinumab_Soehoel2022_reference.deviation.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_tralokinumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Soehoel_2022` / `Soehoel_2022::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-</tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -186,4 +145,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 08:03 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 23:30 UTC</sub>

@@ -1,8 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;Pyronaridine&quot;,&quot;href&quot;:&quot;drugs/drug_pyronaridine/&quot;},{&quot;label&quot;:&quot;Felices_2025 \u00b7 PD Change from baseline in Fridericia-corrected QT interval (\u0394QTcF)&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pyronaridine_Tan2009_reference&quot;,&quot;label&quot;:&quot;Tan_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pyronaridine/Pyronaridine_Tan2009_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pyronaridine_Ayyoub2015_reference&quot;,&quot;label&quot;:&quot;Ayyoub_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pyronaridine/Pyronaridine_Ayyoub2015_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pyronaridine_Chairat2018_reference&quot;,&quot;label&quot;:&quot;Chairat_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pyronaridine/Pyronaridine_Chairat2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;Pyronaridine&quot;,&quot;href&quot;:&quot;drugs/drug_pyronaridine/&quot;},{&quot;label&quot;:&quot;Felices_2025 \u00b7 PD Fridericia-corrected QT interval&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pyronaridine_Tan2009_reference&quot;,&quot;label&quot;:&quot;Tan_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pyronaridine/Pyronaridine_Tan2009_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pyronaridine_Chairat2018_reference&quot;,&quot;label&quot;:&quot;Chairat_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pyronaridine/Pyronaridine_Chairat2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Change from baseline in Fridericia-corrected QT interval (ΔQTcF) — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.556). Primary extraction retained.">cross-check: disputed</span>
+# Fridericia-corrected QT interval — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.556). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -14,13 +14,13 @@
 
 ## Record summary
 
-**As extracted:** Pyronaridine (concentrations from the PK model of Ayyoub_2015) drives Change from baseline in Fridericia-corrected QT interval (ΔQTcF) (in msec): direct linear effect.
+**As extracted:** Pyronaridine (concentrations from the PK model of Ayyoub_2015::median_value_for_cv) drives Fridericia-corrected QT interval (in msec): direct linear effect.
 
 **Model:** Model available in **Models**; browser simulation unavailable.
 
-> Pyronaridine concentrations (ng/mL) act directly and linearly on the change from baseline in Fridericia-corrected QT interval (ΔQTcF, msec), with a slope of 0.0094 msec per ng/mL (θ2) and a PYR-specific intercept of 1.93 msec (θ3) on a placebo/Day 3/Time 456 h intercept of −3.24 msec (θ0) and baseline covariate of −0.116 msec (θ6); the model also includes an Emax component for piperaquine (Emax 25.7 msec, EC50 300 ng/mL), with PYR's contribution to ΔΔQTcF remaining mild (&lt;10 msec upper 90% CI bound).
+> Pyronaridine plasma concentrations (ng/mL) drive a linear increase in the placebo-corrected Fridericia-corrected QT interval ($\Delta\Delta$QTcF) with a slope of 0.0094 msec per ng/mL. The paper describes this effect as a direct, concentration-dependent linear component within the final qualified and validated model, without specifying an underlying kinetic mechanism such as effect-compartment delays.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Felices_2025`
 - **model family:** `linear`
@@ -35,12 +35,9 @@ Felices M et al., Concentration-Response Analysis of the…, Clinical and transl
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | θ2 PYR slope | `Q335` · not captured | 0.0094 | msec per ng/mL | not captured | llm (not captured) | Felices_2025:pdv3 |
-| PD (effect) | θ0 Intercept: placebo, Day 3, Time 456 h | `Q344` · not captured | -3.24 | msec | not captured | llm (not captured) | Felices_2025:pdv3 |
-| PD (effect) | θ3,PYR Treatment‐specific intercept PYR | `Q344` · not captured | 1.93 | msec | not captured | llm (not captured) | Felices_2025:pdv3 |
-| model term | θ6 Baseline covariate | `Q900` · not captured | -0.116 | msec | not captured | llm (not captured) | Felices_2025:pdv3 |
-| PD (effect) | θ11 PQP E max | `Q320` · not captured | 25.7 | msec | not captured | llm (not captured) | Felices_2025:pdv3 |
-| PD (effect) | θ21 PQP EC50 | `Q321` · not captured | 300 | ng/mL | not captured | llm (not captured) | Felices_2025:pdv3 |
+| PD (effect) | PYR slope | `Q335` · not captured | 0.0094 | msec per ng/mL | not captured | llm (not captured) | Felices_2025:pdv3 |
+| PD (effect) | E max | `Q320` · not captured | 25.7 | msec | not captured | review_gapfill (not captured) | Felices_2025:review |
+| PD (effect) | EC50 | `Q321` · not captured | 300 | ng/mL | not captured | review_gapfill (not captured) | Felices_2025:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -112,7 +109,7 @@ Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check v
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_pyronaridine/Pyronaridine_Felices2025_PD_qtcf/Pyronaridine_Felices2025_PD_qtcf_modelica.zip" download>Pyronaridine_Felices2025_PD_qtcf_modelica.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_pyronaridine/Pyronaridine_Felices2025_PD_qtcf/Pyronaridine_Felices2025_PD_qtcf_modelica.zip" download>Pyronaridine_Felices2025_PD_qtcf_modelica.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_pyronaridine/Pyronaridine_Felices2025_PD_qtcf/Pyronaridine_Felices2025_PD_qtcf_matlab.zip" download>Pyronaridine_Felices2025_PD_qtcf_matlab.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>

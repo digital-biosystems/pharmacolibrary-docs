@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01X&quot;,&quot;href&quot;:&quot;atc/L01X.md&quot;},{&quot;label&quot;:&quot;belzutifan&quot;,&quot;href&quot;:&quot;drugs/drug_belzutifan/&quot;},{&quot;label&quot;:&quot;Marathe_2023 \u00b7 arithmetic_mean&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Belzutifan_Marathe2023_arithmetic_mean&quot;,&quot;label&quot;:&quot;Marathe_2023_arithmetic_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_belzutifan/Belzutifan_Marathe2023_arithmetic_mean.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Belzutifan_Marathe2023_geometric_mean&quot;,&quot;label&quot;:&quot;Marathe_2023_geometric_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_belzutifan/Belzutifan_Marathe2023_geometric_mean.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Belzutifan_Marathe2023_arithmetic_mean&quot;,&quot;label&quot;:&quot;Marathe_2023_arithmetic_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_belzutifan/Belzutifan_Marathe2023_arithmetic_mean.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Belzutifan_Marathe2023_geometric_mean&quot;,&quot;label&quot;:&quot;Marathe_2023_geometric_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_belzutifan/Belzutifan_Marathe2023_geometric_mean.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # belzutifan — `Belzutifan_Marathe2023_arithmetic_mean`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.706). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.706). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -17,9 +17,9 @@
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's peak concentration (Cmax) (paper 0.00136, model 0.000822).**
+**Every check that could be run on this record passed.**
 
-Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. A reported unit could not be converted (AUCt, Cmin and Cmax), so that value has no SI equivalent. Extracted — belzutifan: CL/F 8.15 L/h, V/F 138 L, kabs 4.4 1/h, AUCt 18.9 μg∙h/mL, Cmin 406 ng/mL, Cmax 1.46e+03 ng/mL, tmax 1.73 h, t1/2α 2.77 h, … (+2).
+A reported unit could not be converted (AUC, Cmin and Cmax), so that value has no SI equivalent.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has belzutifan, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -29,28 +29,27 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Marathe DD et al., Population pharmacokinetic analyses for…, CPT: pharmacometrics & syst… (2023)
   ·  DOI: [10.1002/psp4.13028](https://doi.org/10.1002/psp4.13028)
 
-<div class="pk-model-meta" hidden drug="belzutifan" model-id="Belzutifan_Marathe2023_arithmetic_mean" status="needs_review" stale="false" population="patients with VHL disease-associated RCC, CNS hemangioblastomas, and pancreatic neuroendocrine tumors" measured-compound="belzutifan" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="belzutifan" model-id="Belzutifan_Marathe2023_arithmetic_mean" status="curated_candidate" stale="false" population="patients with solid tumors and VHL" measured-compound="belzutifan" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 10 extracted.
+**Parameters:** 11 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | CL/F (L/h) | `Q27` · CL/F | 8.15 | L/h | 2.263888888888889e-06 | [l] / [h] | not captured | exact (1.0) | Marathe_2023_table_5:row0:col4 | — | not captured |
 | V d/F (L) | `Q76` · V/F | 137.62 | L | 0.13762000000000002 | [l] | not captured | space_fold (0.95) | Marathe_2023_table_5:row1:col4 | — | not captured |
-| KA (1/h) | `Q49` · kabs | 4.40 | 1/h | 0.0012222222222222224 | 1/h | not captured | exact (1.0) | Marathe_2023_table_5:row2:col4 | — | not captured |
-| AUC0–24h (μg∙h/mL) | `Q19` · AUCt | 18.86 | μg∙h/mL | not captured | [[h] · [µg]] / [ml] | not captured | llm (0.6) | Marathe_2023_table_5:row4:col4 | — | not captured |
+| KA (1/h) | `Q49` · kabs | 4.40 | 1/h | 0.0012222222222222224 | [1] / [h] | not captured | exact (1.0) | Marathe_2023_table_5:row2:col4 | — | not captured |
+| AUC0–24h (μg∙h/mL) | `Q88` · AUC | 18.86 | μg∙h/mL | not captured | μg∙h/mL | not captured | llm (0.6) | Marathe_2023_table_5:row4:col4 | — | not captured |
 | C min (ng/mL) | `Q36` · Cmin | 406.24 | ng/mL | not captured | [ng] / [ml] | not captured | space_fold (0.95) | Marathe_2023_table_5:row5:col4 | — | not captured |
 | C max (ng/mL) | `Q32` · Cmax | 1463.81 | ng/mL | not captured | [ng] / [ml] | not captured | space_fold (0.95) | Marathe_2023_table_5:row7:col4 | — | not captured |
 | T max (h) | `Q56` · tmax | 1.73 | h | 6228.0 | [h] | not captured | space_fold (0.95) | Marathe_2023_table_5:row9:col4 | — | not captured |
 | t 1/2 alpha (h) | `Q59` · t1/2α | 2.77 | h | 9972.0 | [h] | not captured | llm_corrected (0.6) | Marathe_2023_table_5:row11:col4 | — | not captured |
 | t 1/2 beta (h) | `Q60` · t1/2β | 15.29 | h | 55044.0 | [h] | not captured | llm_corrected (0.6) | Marathe_2023_table_5:row12:col4 | — | not captured |
 | t 1/2 eff (h) | `Q57` · t1/2z | 13.42 | h | 48312.0 | [h] | not captured | llm (0.6) | Marathe_2023_table_5:row13:col4 | — | not captured |
+| t 1/2 abs (h) | `Q95` · t1/2ka | 0.48 | h | 1728.0 | [h] | not captured | fuzzy_llm_dim_refused (0.94) | Marathe_2023_table_5:row14:col4 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -60,7 +59,10 @@ Marathe DD et al., Population pharmacokinetic analyses for…, CPT: pharmacometr
 ### Unresolved rows _(no Q-code or no value — not parameters)_
 | label (paper) | Q-code | value | link |
 |---|---|---|---|
-| F | Q40 | not captured | exact |
+| CL/Fpop | Q22 | not captured | exact |
+| V2/Fpop | Q64 | not captured | exact |
+| Q/Fpop | Q30 | not captured | exact |
+| V3/Fpop | Q77 | not captured | exact |
 
 ## Departures & gaps
 
@@ -70,54 +72,34 @@ Marathe DD et al., Population pharmacokinetic analyses for…, CPT: pharmacometr
 
 **Interpretation flags:**
 - dropped unlinked row (NIL): 'FMF' — extend the ontology if this is a real PK parameter (source ['Marathe_2023_table_5:row3:col4', 'Marathe_2023_table_5:row6:col4', 'Marathe_2023_table_5:row8:col4', 'Marathe_2023_table_5:row10:col4', 'Marathe_2023_table_5:row15:col4'])
-- dropped duplicate Q57 ('t 1/2 abs (h)', value '0.48') — already have one for this compound
-- implicit units: 'KA (1/h)' → 1/h (from the popPK convention: 'The parameter is the absorption rate constant (KA). In population pharmacokinetic modeling, first-order rate constants a')
+- unit_dimension_unknown: 'N = 61' (AUC)
+- implicit units: 'AUC0–24h (μg∙h/mL)' → μg∙h/mL (from the paper text: "The text explicitly states: 'At SS following 120‐mg belzutifan q.d., geometric means (%CV) of AUC for a 24‐h interval (A")
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=belzutifan
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
-- bound model equation to Q40 (Fab): F = CL/Fpop * (WT/73.64)^
-- Q40 (Fab) is equation-defined: value moved to equation-variable 'F'; equation kept verbatim
+- bound model equation to Q22 (CL): CL/Fpop = CL/Fpop * (WT/73.64)^
+- bound model equation to Q64 (V2): V2/Fpop = V2/Fpop * (WT/73.64)^
+- bound model equation to Q30 (Q): Q/Fpop = Q/Fpop * (WT/73.64)^
+- bound model equation to Q77 (V3): V3/Fpop = V3/Fpop * (WT/73.64)^
+- Q22 (CL) is equation-defined: value moved to equation-variable 'CL/Fpop'; equation kept verbatim
+- Q64 (V2) is equation-defined: value moved to equation-variable 'V2/Fpop'; equation kept verbatim
+- Q30 (Q) is equation-defined: value moved to equation-variable 'Q/Fpop'; equation kept verbatim
+- Q77 (V3) is equation-defined: value moved to equation-variable 'V3/Fpop'; equation kept verbatim
 - population split: 'arithmetic mean' subgroup of Marathe_2023 (paper reports 4 populations: absolute parameter value, arithmetic mean, estimate, geometric mean)
 
 **Extraction notes:**
-- unparsed cell psp413028-tbl-0002:row2:col3 = '5.25; 6.00'
-- unparsed cell psp413028-tbl-0002:row3:col3 = '80.55; 90.26'
-- unparsed cell psp413028-tbl-0002:row4:col3 = '3.89; 6.85'
-- unparsed cell psp413028-tbl-0002:row5:col3 = '26.42; 34.34'
-- unparsed cell psp413028-tbl-0002:row6:col3 = '2.04; 2.76'
-- unparsed cell psp413028-tbl-0002:row7:col3 = '0.16; 0.17'
-- unparsed cell psp413028-tbl-0002:row8:col3 = '−1.00; −0.75'
-- unparsed cell psp413028-tbl-0002:row9:col3 = '0.45; 0.84'
-- unparsed cell psp413028-tbl-0002:row10:col3 = '0.98; 1.14'
-- unparsed cell psp413028-tbl-0002:row11:col3 = '0.24; 0.54'
-- unparsed cell psp413028-tbl-0002:row12:col3 = '−0.34; −0.15'
-- unparsed cell psp413028-tbl-0002:row13:col3 = '−0.47; −0.25'
-- unparsed cell psp413028-tbl-0002:row14:col3 = '0.061;0.16'
-- unparsed cell psp413028-tbl-0002:row15:col3 = '−0.79; −0.15'
-- unparsed cell psp413028-tbl-0002:row16:col3 = '−0.30; −0.11'
-- unparsed cell psp413028-tbl-0002:row17:col3 = '−0.52; −0.20'
-- unparsed cell psp413028-tbl-0002:row19:col3 = '0.11; 0.18'
-- unparsed cell psp413028-tbl-0002:row20:col3 = '0.0064; 0.019'
-- unparsed cell psp413028-tbl-0002:row21:col3 = '0.052; 0.33'
-- unparsed cell psp413028-tbl-0002:row22:col3 = '0.78; 1.52'
-- unparsed cell psp413028-tbl-0002:row24:col3 = '0.24; 0.28'
-- unparsed cell psp413028-tbl-0002:row25:col3 = '0.27; 0.31'
-- unparsed cell Marathe_2023_table_3:row0:col3 = '0 (reference)'
-- unparsed cell Marathe_2023_table_3:row2:col3 = '0 (reference)'
-- unparsed cell Marathe_2023_table_3:row4:col1 = 'UGT2B17 (intermediate)'
-- unparsed cell Marathe_2023_table_3:row4:col3 = '0 (reference)'
-- unparsed cell Marathe_2023_table_3:row5:col1 = 'UGT2B17 (extensive)'
-- unparsed cell Marathe_2023_table_3:row6:col1 = 'UGT2B17 (poor)'
-- unparsed cell Marathe_2023_table_3:row7:col1 = 'CYP2C19 (extensive)'
-- unparsed cell Marathe_2023_table_3:row7:col3 = '0 (reference)'
-- unparsed cell Marathe_2023_table_3:row8:col1 = 'CYP2C19 (poor)'
-- unparsed cell Marathe_2023_table_3:row9:col3 = '0 (reference)'
-- unparsed cell Marathe_2023_table_3:row10:col1 = 'UGT2B17 (poor)'
+- table psp413028-tbl-0002: unbound_uncertainty
+- table psp413028-tbl-0002: unparsed_numeric_cell
+- table Marathe_2023_table_3: units_need_context
+- table Marathe_2023_table_3: unparsed_numeric_cell
 - companion parameter table 3 transcribed (18 record(s))
-- transposed table Marathe_2023_table_4: parameters were across the columns, populations/subgroups down the first column — transposed for parsing
-- companion parameter table 4 transcribed (5 record(s))
+- table Marathe_2023_table_5: unbound_uncertainty
+- table Marathe_2023_table_5: ragged_grid
 - companion parameter table 5 transcribed (64 record(s))
-- LLM selected parameter table(s) 2, 3, 4, 5
-- captured model equation F = CL/Fpop * (WT/73.64)^
+- LLM selected parameter table(s) 2, 3, 5
+- captured model equation CL/Fpop = CL/Fpop * (WT/73.64)^
+- captured model equation V2/Fpop = V2/Fpop * (WT/73.64)^
+- captured model equation Q/Fpop = Q/Fpop * (WT/73.64)^
+- captured model equation V3/Fpop = V3/Fpop * (WT/73.64)^
 
 ## Validation
 
@@ -150,10 +132,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 11 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 15 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q19 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Marathe_2023_table_5:row4:col4'] |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Marathe_2023_table_5:row0:col4'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Marathe_2023_table_5:row7:col4'] |
 | C5_dimension_Q36 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Marathe_2023_table_5:row5:col4'] |
@@ -163,6 +144,8 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_dimension_Q59 | pass | [time] | not captured | not captured | not captured | ['Marathe_2023_table_5:row11:col4'] |
 | C5_dimension_Q60 | pass | [time] | not captured | not captured | not captured | ['Marathe_2023_table_5:row12:col4'] |
 | C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Marathe_2023_table_5:row1:col4'] |
+| C5_dimension_Q88 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Marathe_2023_table_5:row4:col4'] |
+| C5_dimension_Q95 | pass | [time] | not captured | not captured | not captured | ['Marathe_2023_table_5:row14:col4'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 8.15 L/h | not captured | not captured | ['Marathe_2023_table_5:row0:col4'] |
@@ -179,8 +162,6 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
-| T1_cmax | reference | fail | 0.0013629999999999998 | 0.0008219439189005988 | 0.603 | ng/mL→SI vs simulated kg/m3 |
-| T1_tmax | reference | pass | 1.42 | 1.0993434075103394 | 0.7742 | h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -189,10 +170,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_belzutifan/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Marathe_2023` / `Marathe_2023::arithmetic_mean`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_belzutifan/models/modelica/Belzutifan_Marathe2023_arithmetic_mean.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_belzutifan/models/modelica/Belzutifan_Marathe2023_arithmetic_mean.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_belzutifan/models/modelica/Belzutifan_Marathe2023_arithmetic_mean.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_belzutifan/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Marathe_2023` / `Marathe_2023::arithmetic_mean`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_belzutifan/models/modelica/Belzutifan_Marathe2023_arithmetic_mean.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_belzutifan/models/modelica/Belzutifan_Marathe2023_arithmetic_mean.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_belzutifan/models/modelica/Belzutifan_Marathe2023_arithmetic_mean.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -210,7 +191,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_belzutifan/Belzutifan_Marathe2023_arithmetic_mean/Belzutifan_Marathe2023_arithmetic_mean.svg" alt="Belzutifan_Marathe2023_arithmetic_mean diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_belzutifan/Belzutifan_Marathe2023_arithmetic_mean/Belzutifan_Marathe2023_arithmetic_mean.svg" alt="Belzutifan_Marathe2023_arithmetic_mean diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -223,4 +204,4 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 23:24 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 04:23 UTC</sub>

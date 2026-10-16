@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;quinine&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/&quot;},{&quot;label&quot;:&quot;Dyer_1994_2 \u00b7 non_diabetics&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Quinine_Hendriksen2013_reference&quot;,&quot;label&quot;:&quot;Hendriksen_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Hendriksen2013_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quinine_Kloprogge2014_reference&quot;,&quot;label&quot;:&quot;Kloprogge_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Kloprogge2014_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quinine_Phillips1986_reference&quot;,&quot;label&quot;:&quot;Phillips_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Phillips1986_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Quinine_Hendriksen2013_reference&quot;,&quot;label&quot;:&quot;Hendriksen_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Hendriksen2013_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quinine_Phillips1986_mean_s_d&quot;,&quot;label&quot;:&quot;Phillips_1986_mean_s_d&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Phillips1986_mean_s_d.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quinine_Kloprogge2014_reference&quot;,&quot;label&quot;:&quot;Kloprogge_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Kloprogge2014_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quinine_Michels2019_estimate&quot;,&quot;label&quot;:&quot;Michels_2019_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Michels2019_estimate.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Maciel_2024_P_berghei_infected_erythrocytes&quot;,&quot;label&quot;:&quot;Maciel_2024 \u00b7 P. berghei-infected erythrocytes&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/pd_Maciel_2024_P_berghei_infected_erythrocytes.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Pukrittayakamee_2003_PMR&quot;,&quot;label&quot;:&quot;Pukrittayakamee_2003 \u00b7 PMR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/pd_Pukrittayakamee_2003_PMR.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,38 +17,37 @@
 
 ### Reviewer guidance
 
-**Only clearance was extracted — no volume; λ1 has no unit.**
+**V/F has no unit.**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (Cmax), so that value has no SI equivalent. Extracted — quinine: Vnorm/F 1.7 L/kg, tlag 1 h, t1/2ka 0.6 h, Cmax 3.4 mg/L, λ1 19.9, CL/F 1.07 mL/kg/min.
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (V/F, Cmax and fu), so that value has no SI equivalent. Extracted — quinine: V/F 1.7 V/F, tlag 1 h, t1/2ka 0.6 h, Cmax 3.4 mg/L, t1/2z 19.9 h, CL/F 1.07 ml/kg/min, fu 19 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[elimination half-time (t_1/2,l) h].parameter_id`: this record has Q67, the second reading Q57; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> **Dose compound ≠ measured compound:** dosed `quinine sulphate`, measured `quinine`.
-
 ## Citation
 Dyer JR et al., The pharmacokinetics and pharmacodynami…, British journal of clinical… (1994)
   ·  DOI: [10.1111/j.1365-2125.1994.tb04343.x](https://doi.org/10.1111/j.1365-2125.1994.tb04343.x)
 
-<div class="pk-model-meta" hidden drug="quinine" model-id="Quinine_Dyer1994v2_non_diabetics" status="needs_review" stale="false" population="elderly diabetic and non-diabetic adults" measured-compound="quinine" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="quinine" model-id="Quinine_Dyer1994v2_non_diabetics" status="needs_review" stale="false" population="diabetic and non-diabetic elderly" measured-compound="quinine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 6 extracted.
+**Parameters:** 7 extracted.
 
-**Parameterization:** CL/F, Vnorm/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Volume of distribution (V/F) 1 kg-1 | `Q353` · Vnorm/F | 1.70 | L/kg | 0.119 | L | not captured | llm_corrected (0.6) | Dyer_1994_2_table_p3_1:row0:col1 | — | not captured |
+| Volume of distribution (V/F) 1 kg-1 | `Q76` · V/F | 1.70 | V/F | not captured | [v] / [f] | not captured | llm_corrected (0.6) | Dyer_1994_2_table_p3_1:row0:col1 | — | not captured |
 | Absorption lag-time (t_lag) h | `Q83` · tlag | 1.0 | h | 3600.0 | h | not captured | llm_confirmed (0.6) | Dyer_1994_2_table_p3_1:row1:col1 | — | not captured |
 | Absorption half-time (t_1/2,abs) h | `Q95` · t1/2ka | 0.6 | h | 2160.0 | h | not captured | llm_corrected (0.6) | Dyer_1994_2_table_p3_1:row2:col1 | — | not captured |
 | Maximum concentration (C_max) mg 1-1 | `Q32` · Cmax | 3.4 | mg/L | not captured | mg/L | not captured | llm_confirmed (0.6) | Dyer_1994_2_table_p3_1:row3:col1 | — | not captured |
-| Elimination half-time (t_1/2,l) h | `Q67` · λ1 | 19.9 | not captured | not captured | not captured | not captured | llm (0.6) | Dyer_1994_2_table_p3_1:row4:col1 | — | not captured |
-| Systemic clearance (CL/F) ml kg-1 min-1 | `Q27` · CL/F | 1.07 | mL/kg/min | 1.2483333333333332e-06 | L/h | not captured | llm_corrected (0.6) | Dyer_1994_2_table_p3_1:row5:col1 | — | not captured |
+| Elimination half-time (t_1/2,l) h | `Q57` · t1/2z | 19.9 | h | 71640.0 | h | not captured | llm_confirmed (0.6) | Dyer_1994_2_table_p3_1:row4:col1 | — | not captured |
+| Systemic clearance (CL/F) ml kg-1 min-1 | `Q27` · CL/F | 1.07 | ml/kg/min | 1.2483333333333332e-06 | L/h | not captured | llm_corrected (0.6) | Dyer_1994_2_table_p3_1:row5:col1, tab_0:footnote | — | not captured |
+| Serum unbound drug (%) | `Q46` · fu | 19 | % | not captured | [%] | not captured | llm_confirmed (0.6) | Dyer_1994_2_table_p3_1:row6:col1 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -58,28 +57,23 @@ Dyer JR et al., The pharmacokinetics and pharmacodynami…, British journal of c
 ## Departures & gaps
 
 **Interpretation flags:**
-- NIL: refused to back-fill base 'CL/F' from footnote/prose loose number 1.07 (source ['tab_0:footnote', 'tab_0:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'fu' from footnote/prose loose number 19 (source ['tab_0:footnote', 'tab_0:footnote']); the table cell was unparseable — needs review
-- implicit units: 'Volume of distribution (V/F) 1 kg-1' → L/kg (from the paper text: 'Table 2 lists volume of distribution normalized per kg body weight (V/F 1 kg-1), i.e. L/kg.')
-- implicit units: 'Absorption lag-time (t_lag) h' → h (from the paper text: "Table 2 shows absorption lag-time in h (t_lag h = 1.0); abstract also reports 'mean absorption lag-time of approximately")
-- implicit units: 'Absorption half-time (t_1/2,abs) h' → h (from the paper text: 'Table 2 lists absorption half-time in h (t1/2,abs h = 0.6).')
-- implicit units: 'Maximum concentration (C_max) mg 1-1' → mg/L (from the paper text: 'Table 2 gives Cmax as mg 1-1 (mg/L); assay concentrations reported in mg l-1.')
-- implicit units: 'Elimination half-time (t_1/2,l) h' — the LLM proposed 'h', whose dimension does not fit Q67; left unset
-- implicit units: 'Systemic clearance (CL/F) ml kg-1 min-1' → mL/kg/min (from the paper text: 'Table 2 states Systemic clearance (CL/F) ml kg-1 min-1 = 1.07.')
+- unit_dimension_unknown: 'V/F' (V/F)
+- dropped value-less row: '(t,/2,z) h'
+- dropped value-less row: 'Serum unbound drug (%)19 (10-39)16 (9-24) 11, -3'
+- implicit units: 'Absorption lag-time (t_lag) h' → h (from the paper text: "Table 2 excerpt explicitly lists 'Absorption lag-time (t_lag) h' and the abstract states 'mean absorption lag-time of ap")
+- implicit units: 'Absorption half-time (t_1/2,abs) h' → h (from the paper text: "Table 2 excerpt explicitly lists 'Absorption half-time (t_1/2,abs) h'.")
+- implicit units: 'Maximum concentration (C_max) mg 1-1' → mg/L (from the popPK convention: 'The provided table excerpt does not explicitly state the unit for Cmax. However, the assay section mentions detection li')
+- implicit units: 'Elimination half-time (t_1/2,l) h' → h (from the paper text: "Table 2 excerpt explicitly lists '(t_1/2,z) h' corresponding to the elimination half-time.")
+- implicit units: 'Systemic clearance (CL/F) ml kg-1 min-1' → ml/kg/min (from the paper text: "Table 2 excerpt explicitly lists 'Systemic clearance ml kg-1 min-1'.")
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=quinine
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at route_to_review — not promoted
 - population split: 'non-diabetics' subgroup of Dyer_1994_2 (paper reports 2 populations: diabetics, non-diabetics)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- final table tab_0: grid unusable → re-running vision table extraction for Dyer_1994_2
-- unparsed cell Dyer_1994_2_table_p3_1:row0:col3 = '0.56, -0.56'
-- unparsed cell Dyer_1994_2_table_p3_1:row1:col3 = '0.3, -0.7'
-- unparsed cell Dyer_1994_2_table_p3_1:row2:col3 = '0.3, -0.5'
-- unparsed cell Dyer_1994_2_table_p3_1:row3:col3 = '0.5, -1.1'
-- unparsed cell Dyer_1994_2_table_p3_1:row4:col3 = '6.4, -6.6'
-- unparsed cell Dyer_1994_2_table_p3_1:row5:col2 = '1.14 ±-0.58'
-- unparsed cell Dyer_1994_2_table_p3_1:row5:col3 = '0.41, -0.55'
+- table Dyer_1994_2_table_p3_1: unparsed_numeric_cell
 
 ## Validation
 
@@ -109,18 +103,18 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 7 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Dyer_1994_2_table_p3_1:row5:col1'] |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Dyer_1994_2_table_p3_1:row5:col1', 'tab_0:footnote'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Dyer_1994_2_table_p3_1:row3:col1'] |
-| C5_dimension_Q353 | pass | [length] ** 3 | not captured | not captured | not captured | ['Dyer_1994_2_table_p3_1:row0:col1'] |
+| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Dyer_1994_2_table_p3_1:row4:col1'] |
 | C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Dyer_1994_2_table_p3_1:row1:col1'] |
 | C5_dimension_Q95 | pass | [time] | not captured | not captured | not captured | ['Dyer_1994_2_table_p3_1:row2:col1'] |
-| C5_unit_missing_Q67 | fail | [mass] / [time] | not captured | not captured | not captured | ['Dyer_1994_2_table_p3_1:row4:col1'] |
+| C5_unit_missing_Q76 | fail | [length] ** 3 | V/F | not captured | not captured | ['Dyer_1994_2_table_p3_1:row0:col1'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 4.49 L/h | not captured | not captured | ['Dyer_1994_2_table_p3_1:row5:col1'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 4.49 L/h | not captured | not captured | ['Dyer_1994_2_table_p3_1:row5:col1', 'tab_0:footnote'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -129,7 +123,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_quinine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Dyer_1994_2` / `Dyer_1994_2::non_diabetics`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_quinine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Dyer_1994_2` / `Dyer_1994_2::non_diabetics`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -155,4 +149,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 08:36 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 03:32 UTC</sub>

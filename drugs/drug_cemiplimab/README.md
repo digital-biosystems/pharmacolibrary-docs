@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;cemiplimab&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cemiplimab_Nguyen2022_tumor_type_study_a&quot;,&quot;label&quot;:&quot;Nguyen_2022_tumor_type_study_a&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cemiplimab/Cemiplimab_Nguyen2022_tumor_type_study_a.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # cemiplimab
 
@@ -17,28 +18,26 @@ Cemiplimab is a monoclonal antibody that blocks PD-1 and is used to treat squamo
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 11:02 | 11:42 | 0/2/5 | 0/0/1 | 0/0/0 | 245,884/52,586 | openai / gpt-6-luna | 6 | 0/6 | 6/0 | 0 |
+| 2026-10-14 18:43 | 9:19 | 0/4/1 | 0/0/0 | 0/0/0 | 324,904/52,985 | einfracz / qwen3.8-27b | 6 | 0/6 | 6/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.643). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q65 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Nguyen_2022_final_poppk_model](drugs/drug_cemiplimab/Cemiplimab_Nguyen2022_final_poppk_model.md) | — | 2-compartment (no model) | 5 | Nguyen JH et al., Population pharmacokinetics modeling an…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12855](https://doi.org/10.1002/psp4.12855) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.8). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q19 — no SI value to build from</sub><br><sub>blocking: C1_half_life_beta failed (ratio 0.5689)</sub><br><sub>route_to: `human_review`</sub> | [Paccaly_2021_after_first_dose](drugs/drug_cemiplimab/Cemiplimab_Paccaly2021_after_first_dose.md) | — | 1-compartment (no model) | 5 | Paccaly AJ et al., Fixed Dose of Cemiplimab in Patients wi…, Advances in therapy (2021) | [10.1007/s12325-021-01638-5](https://doi.org/10.1007/s12325-021-01638-5) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.8). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q19 — no SI value to build from</sub><br><sub>blocking: C1_half_life_beta failed (ratio 0.5689)</sub><br><sub>route_to: `human_review`</sub> | [Paccaly_2021_at_steady_state](drugs/drug_cemiplimab/Cemiplimab_Paccaly2021_at_steady_state.md) | — | 1-compartment (no model) | 5 | Paccaly AJ et al., Fixed Dose of Cemiplimab in Patients wi…, Advances in therapy (2021) | [10.1007/s12325-021-01638-5](https://doi.org/10.1007/s12325-021-01638-5) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.667). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub><br><sub>route_to: `human_review`</sub> | [Yang_2021_reference](drugs/drug_cemiplimab/Cemiplimab_Yang2021_reference.md) | — | 1-compartment (no model) | 2 | Yang F et al., Population pharmacokinetic characterist…, Journal of pharmacokinetics… (2021) | [10.1007/s10928-021-09739-y](https://doi.org/10.1007/s10928-021-09739-y) |
-| <span class="pk-badge pk-badge--neutral">not modelled</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.571). Primary extraction retained.">cross-check: partial</span> | [Nguyen_2022_tumor_type_study_a](drugs/drug_cemiplimab/Cemiplimab_Nguyen2022_tumor_type_study_a.md) | — | 1-compartment (no model) | 2 | Nguyen JH et al., Population pharmacokinetics modeling an…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12855](https://doi.org/10.1002/psp4.12855) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub><br><sub>route_to: `human_review`</sub> | [Nguyen_2022_mean_cv](drugs/drug_cemiplimab/Cemiplimab_Nguyen2022_mean_cv.md) | — | 1-compartment (no model) | 7 | Nguyen JH et al., Population pharmacokinetics modeling an…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12855](https://doi.org/10.1002/psp4.12855) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.571). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: T1_t_half_beta</sub><br><sub>route_to: `scholar`</sub> | [Nguyen_2022_tumor_type_study_a](drugs/drug_cemiplimab/Cemiplimab_Nguyen2022_tumor_type_study_a.md) | ▶ model + simulator | 1-compartment, IV | 2 | Nguyen JH et al., Population pharmacokinetics modeling an…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12855](https://doi.org/10.1002/psp4.12855) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.643). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub><br><sub>route_to: `human_review`</sub> | [Nguyen_2022_final_poppk_model](drugs/drug_cemiplimab/Cemiplimab_Nguyen2022_final_poppk_model.md) | — | 2-compartment (no model) | 5 | Nguyen JH et al., Population pharmacokinetics modeling an…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12855](https://doi.org/10.1002/psp4.12855) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Paccaly_2021_reference](drugs/drug_cemiplimab/Cemiplimab_Paccaly2021_reference.md) | — | 1-compartment (no model) | 0 | Paccaly AJ et al., Fixed Dose of Cemiplimab in Patients wi…, Advances in therapy (2021) | [10.1007/s12325-021-01638-5](https://doi.org/10.1007/s12325-021-01638-5) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.417). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Shang_2022_reference](drugs/drug_cemiplimab/Cemiplimab_Shang2022_reference.md) | — | 2-compartment (no model) | 2 | Shang J et al., Population pharmacokinetic models of an…, Frontiers in immunology (2022) | [10.3389/fimmu.2022.871372](https://doi.org/10.3389/fimmu.2022.871372) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.667). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Yang_2021_reference](drugs/drug_cemiplimab/Cemiplimab_Yang2021_reference.md) | — | 1-compartment (no model) | 0 | Yang F et al., Population pharmacokinetic characterist…, Journal of pharmacokinetics… (2021) | [10.1007/s10928-021-09739-y](https://doi.org/10.1007/s10928-021-09739-y) |
 
-## Pharmacodynamics (PD)
+## ADME sites
 
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> | [Nguyen_2022_ORR](drugs/drug_cemiplimab/pd_Nguyen_2022_ORR.md) | objective response rate ← cemiplimab · categorical (graded) response model | — | Nguyen JH et al., Population pharmacokinetics modeling an…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12855](https://doi.org/10.1002/psp4.12855) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> | [Nguyen_2022_OS](drugs/drug_cemiplimab/pd_Nguyen_2022_OS.md) | overall survival ← cemiplimab · time-to-event model | — | Nguyen JH et al., Population pharmacokinetics modeling an…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12855](https://doi.org/10.1002/psp4.12855) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> | [Nguyen_2022_irAEs](drugs/drug_cemiplimab/pd_Nguyen_2022_irAEs.md) | grade ≥3 irAEs ← cemiplimab · time-to-event model | — | Nguyen JH et al., Population pharmacokinetics modeling an…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12855](https://doi.org/10.1002/psp4.12855) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Nguyen_2022_irAEs_2](drugs/drug_cemiplimab/pd_Nguyen_2022_irAEs_2.md) | all irAEs ← cemiplimab · time-to-event model | — | Nguyen JH et al., Population pharmacokinetics modeling an…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12855](https://doi.org/10.1002/psp4.12855) |
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=cemiplimab).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: PDCD1 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,15 +49,15 @@ Cemiplimab is a monoclonal antibody that blocks PD-1 and is used to treat squamo
 
 - **PubMed hits:** 7 matched, 7 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 7  ·  extracted 0  ·  needs_review 4  ·  rejected 2  ·  stale 0
+- **records:** 5  ·  extracted 0  ·  needs_review 1  ·  rejected 4  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Baranda_2024 | irrelevant | 1 | 0 | The population-PK model is for SAR'459, not cemiplimab; its parameter values are only referenced in supplementary tables not provided. |
-| popPK | Yilmaz_2024 | irrelevant | 0 | 0 | Cemiplimab is only mentioned as a clinical combination therapy; no cemiplimab disposition parameters are reported. |
+| popPK | Baranda_2024 | irrelevant | 1 | 0 | The study focuses on the pharmacokinetics of SAR439459, while cemiplimab is only a co-administered agent and no quantitative PK parameters for cemiplimab are provided. |
+| popPK | Yilmaz_2024 | irrelevant | 0 | 0 | The study investigates the pharmacodynamic effects of diC6-THIO, and cemiplimab is mentioned only in the context of a different clinical trial, with no PK parameters reported for it. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 10:52 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-14 18:35 UTC</sub>

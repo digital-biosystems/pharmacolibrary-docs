@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;emapalumab&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Emapalumab_Brossard2025_reference&quot;,&quot;label&quot;:&quot;Brossard_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_emapalumab/Emapalumab_Brossard2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Emapalumab_Brossard2024_reference&quot;,&quot;label&quot;:&quot;Brossard_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_emapalumab/Emapalumab_Brossard2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # emapalumab
 
@@ -18,14 +18,30 @@ Emapalumab is a monoclonal antibody used to treat hemophagocytic lymphohistiocyt
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 23:58 | 1:07 | 1/0/1 | 0/0/0 | 0/0/0 | 63,771/4,699 | einfracz / qwen3.8-27b | 2 | 0/2 | 2/0 | 0 |
+| 2026-10-14 22:05 | 0:56 | 1/0/0 | 1/0/0 | 0/0/0 | 44,234/3,658 | einfracz / qwen3.8-27b | 2 | 0/2 | 2/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.625). Primary extraction retained.">cross-check: disputed</span> | [Brossard_2025_reference](drugs/drug_emapalumab/Emapalumab_Brossard2025_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Brossard P, Emapalumab in Patients With Macrophage…, Clinical and translational… (2025) | [10.1111/cts.70163](https://doi.org/10.1111/cts.70163) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.769). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q79 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Brossard_2024_reference](drugs/drug_emapalumab/Emapalumab_Brossard2024_reference.md) | — | 2-compartment (no model) | 5 | Brossard P et al., Population Pharmacokinetics of the Anti…, Rheumatology and therapy (2024) | [10.1007/s40744-024-00669-y](https://doi.org/10.1007/s40744-024-00669-y) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.769). Primary extraction retained.">cross-check: disputed</span> | [Brossard_2024_reference](drugs/drug_emapalumab/Emapalumab_Brossard2024_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Brossard P et al., Population Pharmacokinetics of the Anti…, Rheumatology and therapy (2024) | [10.1007/s40744-024-00669-y](https://doi.org/10.1007/s40744-024-00669-y) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Brossard_2025_CXCL9](drugs/drug_emapalumab/pd_Brossard_2025_CXCL9.md) | CXCL9 ← emapalumab · indirect response — drug inhibits the production of CXCL9 | — | Brossard P, Emapalumab in Patients With Macrophage…, Clinical and translational… (2025) | [10.1111/cts.70163](https://doi.org/10.1111/cts.70163) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Brossard_2025_Ferritin](drugs/drug_emapalumab/pd_Brossard_2025_Ferritin.md) | ferritin ← emapalumab · indirect response — drug inhibits the production of ferritin | — | Brossard P, Emapalumab in Patients With Macrophage…, Clinical and translational… (2025) | [10.1111/cts.70163](https://doi.org/10.1111/cts.70163) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Brossard_2025_sIL_2R](drugs/drug_emapalumab/pd_Brossard_2025_sIL_2R.md) | soluble interleukin-2 receptor α ← emapalumab · indirect response — drug inhibits the production of soluble interleukin-2 receptor α | — | Brossard P, Emapalumab in Patients With Macrophage…, Clinical and translational… (2025) | [10.1111/cts.70163](https://doi.org/10.1111/cts.70163) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=emapalumab).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: IFNG (neutralizer).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -37,14 +53,14 @@ Emapalumab is a monoclonal antibody used to treat hemophagocytic lymphohistiocyt
 
 - **PubMed hits:** 3 matched, 3 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 2  ·  extracted 1  ·  needs_review 1  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Brossard_2025 | relevant | 10 | 2 | The paper is a population PK/PD study of emapalumab, but the key PK parameter estimates (CL, V, Q) are referenced as being in Table S2 (supplementary material), with only fragmentary covariate effects and one Q value visible in the provided text. |
+| popPK | Brossard_2025 | relevant | 10 | 3 | The paper is a population PK/PD study of emapalumab in humans, but the primary numeric PK parameter table (Table S2) is in the supplementary material, with only a fragment of a table (CL, Q values) visible in the extracted evidence. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-06 23:57 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-14 22:05 UTC</sub>

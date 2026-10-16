@@ -18,7 +18,7 @@ Tiracizine is a chemical compound that has been described as an antiarrhythmic a
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 11:44 | 0:18 | 0/0/0 | 0/0/0 | 0/0/0 | 883/76 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-14 23:44 | 0:12 | 0/0/0 | 0/0/0 | 0/0/0 | 883/71 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
@@ -39,20 +39,21 @@ _not available_
 
 ## Full-text requests
 
-_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
+| `Berndt_1995.pdf` | Berndt A et al., Day-night variations in the renal excre…, Chronobiology international (1995) | popPK | 6 | [10.3109/07420529509064508](https://doi.org/10.3109/07420529509064508) | [8653799](https://pubmed.ncbi.nlm.nih.gov/8653799) | Reports urinary recovery (Ae) and trends in trough serum levels for tiracizine in humans, but lacks standard PK parameters like clearance (CL) or volume of distribution (V). |
 | `Berndt_1994.pdf` | Berndt A et al., Dose dependent tiracizine disposition i…, European journal of drug me… (1994) | pd | 5 | [10.1007/BF03188863](https://doi.org/10.1007/BF03188863) | [7737238](https://www.ncbi.nlm.nih.gov/pubmed/7737238) | metadata signals extractable PD data (pharmacodynamicmodel) |
 
-<sub>queue written 2026-10-06T11:44:32.580011+00:00</sub>
+<sub>queue written 2026-10-14T23:44:45.984325+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Berndt_1994 | irrelevant | 0 | 0 | no_text gate: only 114 chars of text extracted (&lt; 400) |
-| popPK | Berndt_1995 | irrelevant | 2 | 0 | The study reports urinary recovery percentages and qualitative trends in trough levels, but does not provide quantitative disposition parameters (CL, V, ka, t1/2) or a compartmental model for tiracizine. |
+| popPK | Berndt_1995 | relevant | 6 | 2 | Reports urinary recovery (Ae) and trends in trough serum levels for tiracizine in humans, but lacks standard PK parameters like clearance (CL) or volume of distribution (V). |
 | popPK | Berndt_1995_2 | irrelevant | 0 | 0 | no_text gate: only 118 chars of text extracted (&lt; 400) |
 
 ---

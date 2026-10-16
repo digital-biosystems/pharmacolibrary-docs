@@ -17,7 +17,7 @@
 
 **Model:** No model was generated from this record.
 
-> The model employs an effect compartment structure where ergotamine plasma concentrations drive the inhibition of toe-arm systolic gradients. Key parameters include a rate constant for equilibration of the drug between plasma and effector site of 0.07 hr-1 and a steady-state plasma concentration resulting in 50% of maximal effect of 0.24 ng/ml.
+> The model describes an effect compartment mechanism where ergotamine concentrations (ng/ml) inhibit toe-arm systolic gradients. Key parameters include a ke0 of 0.07 hr-1 and a Cpss50 of 0.24 ng/ml.
 >
 > <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
@@ -34,8 +34,8 @@ Tfelt-Hansen P et al., Intramuscular ergotamine: plasma levels…, Clinical phar
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | rate constant for equilibration of the drug between plasma and effector site | `Q326` · not captured | 0.07 | hr-1 | not captured | llm (not captured) | Tfelt-Hansen_1985:pdv3 |
-| PD (effect) | steady-state plasma concentration resulting in 50% of maximal effect | `Q321` · not captured | 0.24 | ng/ml | not captured | llm (not captured) | Tfelt-Hansen_1985:pdv3 |
+| PD (effect) | ke0 | `Q326` · not captured | 0.07 | hr-1 | not captured | llm (not captured) | Tfelt-Hansen_1985:pdv3 |
+| PD (effect) | Cpss50 | `Q322` · not captured | 0.24 | ng/ml | not captured | llm (not captured) | Tfelt-Hansen_1985:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>

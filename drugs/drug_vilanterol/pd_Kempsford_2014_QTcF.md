@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03A&quot;,&quot;href&quot;:&quot;atc/R03A.md&quot;},{&quot;label&quot;:&quot;Vilanterol&quot;,&quot;href&quot;:&quot;drugs/drug_vilanterol/&quot;},{&quot;label&quot;:&quot;Kempsford_2014 \u00b7 PD maximal QTcF&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# maximal QTcF — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.625). Primary extraction retained.">cross-check: disputed</span>
+# maximal QTcF — PD  <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by ollama:gpt-oss:120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -13,17 +13,17 @@
 
 ## Record summary
 
-**As extracted:** Vilanterol (concentrations from the PK model of Goyal_2014) drives maximal QTcF (in ms): direct linear effect.
+**As extracted:** VI drives maximal QTcF (in ms): direct linear effect.
 
 **Model:** No model was generated from this record.
 
-> Vilanterol plasma concentration (pg ml−1, cited PK) was linearly related to maximal QTcF (ms) in a direct linear model with a shallow positive slope of 0.00751 ms pg−1 ml and intercept 74.6 ms, with baseline as a significant covariate on the intercept (4.53 ms effect); the paper does not describe an Emax or effect-compartment mechanism.
+> The paper describes a linear additive model where the maximum plasma concentration of vilanterol (VI Cmax) directly stimulates maximal QTcF, with an estimated slope of 0.00751 ms pg−1 ml and an intercept of 74.6 ms. The paper does not specify a mechanistic pathway (e.g., production or elimination) for this effect, noting only that the PD profile mirrored the PK concentration profile.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
 
 - **paper:** `Kempsford_2014`
 - **model family:** `linear`
-- **driver:** `cited_pk`
+- **driver:** `not_resolved`
 - **tier:** population
 - **effect:** stimulation/additive
 
@@ -34,7 +34,7 @@ Kempsford R et al., A repeat-dose thorough QT study of inha…, British journal 
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | Intercept | `Q344` · not captured | 74.6 | ms | not captured | llm (not captured) | Kempsford_2014:pdv3 |
+| PD (effect) | Intercept | `Q324` · not captured | 74.6 | ms | not captured | llm (not captured) | Kempsford_2014:pdv3 |
 | PD (effect) | Slope | `Q335` · not captured | 0.00751 | ms pg−1 ml | not captured | llm (not captured) | Kempsford_2014:pdv3 |
 | model term | Baseline covariate effect | `Q900` · not captured | 4.53 | not captured | not captured | llm (not captured) | Kempsford_2014:pdv3 |
 
@@ -44,20 +44,24 @@ Kempsford R et al., A repeat-dose thorough QT study of inha…, British journal 
 </details>
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `einfracz:gpt-oss-120b` | not confirmed | 0.625 (5/8 fields) | 3 |
+| `ollama:gpt-oss:120b` | secondary_empty | 0.0 (0/7 fields) | 7 |
 
-<details><summary>3 field discrepancies</summary>
+<details><summary>7 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `einfracz:gpt-oss-120b` | `parameters[Q324]` | not captured | 4.53 | only_one_extracted |
-| `einfracz:gpt-oss-120b` | `parameters[Q344]` | 74.6 | not captured | only_one_extracted |
-| `einfracz:gpt-oss-120b` | `parameters[Q900]` | 4.53 | not captured | only_one_extracted |
+| `ollama:gpt-oss:120b` | `driver_compound` | VI | not captured | mismatch |
+| `ollama:gpt-oss:120b` | `effect_direction` | stimulation | not captured | mismatch |
+| `ollama:gpt-oss:120b` | `effect_form` | additive | not captured | mismatch |
+| `ollama:gpt-oss:120b` | `model_family` | linear | not captured | mismatch |
+| `ollama:gpt-oss:120b` | `parameters[Q324]` | 74.6 | not captured | only_one_extracted |
+| `ollama:gpt-oss:120b` | `parameters[Q335]` | 0.00751 | not captured | only_one_extracted |
+| `ollama:gpt-oss:120b` | `parameters[Q900]` | 4.53 | not captured | only_one_extracted |
 
 </details>
 

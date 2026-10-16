@@ -78,7 +78,7 @@ Grafeneder J et al., Prospective Trial on the Pharmacokineti…, Kidney internat
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_pantoprazole/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Grafeneder_2024` / `Grafeneder_2024::hv_n_16`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_pantoprazole/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Grafeneder_2024` / `Grafeneder_2024::hv_n_16`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

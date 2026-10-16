@@ -156,9 +156,9 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_lorlatinib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Chen_2021` / `Chen_2021::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_lorlatinib/models/modelica/_needs_review/Lorlatinib_Chen2021_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_lorlatinib/models/modelica/_needs_review/Lorlatinib_Chen2021_reference.deviation.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_lorlatinib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Chen_2021` / `Chen_2021::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_lorlatinib/models/modelica/_needs_review/Lorlatinib_Chen2021_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_lorlatinib/models/modelica/_needs_review/Lorlatinib_Chen2021_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

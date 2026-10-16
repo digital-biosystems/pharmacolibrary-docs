@@ -4,7 +4,7 @@
 
 # mesna — `Mesna_elYazigi1997_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -19,6 +19,8 @@
 **The metabolite dimesna is disconnected from the dose, and the abstract-only record lacks a specific metabolism rate constant.**
 
 Dimesna has no elimination pathway and zero compartments, making it an orphan metabolite with no path from the administered dose. The link from mesna to dimesna is missing a quantified rate parameter, as the specific link value is undefined. Because the record is abstract-only, these structural gaps were not resolved by fitted parameters. Extracted — mesna: t1/2α 0.12 hours, t1/2β 2.12 hours, V1 0.324 L/kg, Vss 1.09 L/kg, V2 2.09 L/kg, CL 0.755 L/hr.kg, MRT 6.77 hours, t1/2z 1.29 hours, … (+3).
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has mesna → dimesna (metabolism), the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -78,6 +80,32 @@ el-Yazigi A et al., Pharmacokinetics of mesna and dimesna a…, Journal of clini
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.667 (12/18 fields) | 6 |
+
+<details><summary>6 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['mesna', 'dimesna', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[fraction of dose excreted in urine in the form of mesna]` | not captured | 0.361 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fractions of dose excreted in urine in the form of mesna and dimesna in 20 hours]` | 0.361 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[renal clearance (clr)]` | not captured | 0.244 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[renal clearance]` | 0.244 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution during the postdistributive phase].parameter_id` | Q64 | Q61 | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
@@ -107,7 +135,7 @@ el-Yazigi A et al., Pharmacokinetics of mesna and dimesna a…, Journal of clini
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_mesna/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `el-Yazigi_1997` / `el-Yazigi_1997::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_mesna/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `el-Yazigi_1997` / `el-Yazigi_1997::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

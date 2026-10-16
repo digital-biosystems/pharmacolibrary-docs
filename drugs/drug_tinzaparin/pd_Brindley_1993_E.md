@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;tinzaparin&quot;,&quot;href&quot;:&quot;drugs/drug_tinzaparin/&quot;},{&quot;label&quot;:&quot;Brindley_1993 \u00b7 PD anticoagulant effect&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tinzaparin_Barrett2001_reference&quot;,&quot;label&quot;:&quot;Barrett_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tinzaparin/Tinzaparin_Barrett2001_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # anticoagulant effect — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
@@ -15,17 +16,17 @@
 
 ## Record summary
 
-**As extracted:** Tinzaparin (concentrations from the PK model of Johansen_1994) drives anticoagulant effect: direct sigmoid Emax (Hill) effect.
+**As extracted:** Tinzaparin (concentrations from this paper's PK model) drives anticoagulant effect: direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
 
-> The paper does not provide full text to specify the mechanism by which tinzaparin concentrations drive the anticoagulant effect, though the record indicates a sigmoid Emax model. The record lists two EC50 values of 3 and 13 micrograms/ml for the drug's effect on the response.
+> The available record describes a continuous anticoagulant effect driven by tinzaparin concentrations, with two EC50 values reported as 3 and 13 micrograms/ml. The paper does not provide text excerpts to specify the exact mechanism or other parameters.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Brindley_1993`
 - **model family:** `sigmoid_emax`
-- **driver:** `cited_pk`
+- **driver:** `pk_record`
 - **tier:** descriptive
 - **effect:** stimulation/unknown
 

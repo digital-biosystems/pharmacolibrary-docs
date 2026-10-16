@@ -13,18 +13,18 @@
 
 ## Record summary
 
-**As extracted:** Sacituzumab govitecan (measured concentrations) drives vomiting: categorical (graded) response model.
+**As extracted:** Sacituzumab govitecan (concentrations from the PK model of Sathe_2024::final_model_estimate_rse) drives vomiting: categorical (graded) response model.
 
 **Model:** No model was generated from this record.
 
-> The paper describes an exposure-response relationship where the average serum concentration of sacituzumab govitecan (CAVGSG) is associated with an increased probability of vomiting, analyzed using ordered categorical logistic regression models. The text does not specify a mechanistic model (e.g., Emax, IC50, or rate constants) or provide specific potency values for this relationship.
+> The probability of any grade of vomiting is stimulated by higher average serum concentrations of sacituzumab govitecan (CAVGSG), analyzed via nonproportional odds ordered categorical logistic regression models. The paper does not specify a mechanistic link (e.g., production/elimination) between exposure and the vomiting response, nor does it report specific potency parameters (EC50/IC50) or rate constants (ke0/kout) for this effect.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Sathe_2025_2`
 - **model family:** `categorical`
-- **driver:** `conc_no_pk`
-- **tier:** descriptive
+- **driver:** `cited_pk`
+- **tier:** population
 - **effect:** stimulation/unknown
 
 ## Citation
@@ -32,7 +32,14 @@ Sathe AG et al., Exposure-Response Analyses of Sacituzum…, Clinical pharmacolo
   ·  DOI: [10.1002/cpt.3495](https://doi.org/10.1002/cpt.3495)
 
 ## Parameters
-_No resolved parameters._
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Odds ratio | `Q345` · not captured | 1.29 | not captured | not captured | llm (not captured) | Sathe_2025_2:pdv3 |
+
+<details class="legend">
+<summary>Parameter definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  

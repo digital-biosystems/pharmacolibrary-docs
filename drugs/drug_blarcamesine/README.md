@@ -18,7 +18,7 @@ Blarcamesine is an investigational drug developed for dementia. It is not approv
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 01:06 | 1:48 | 0/0/0 | 1/0/0 | 0/0/0 | 58,246/1,857 | ollama / glm-5.3-flash | 5 | 1/3 | 5/0 | 0 |
+| 2026-10-13 13:20 | 0:37 | 0/0/0 | 1/0/0 | 0/0/0 | 25,907/1,284 | einfracz / qwen3.8-27b | 5 | 1/4 | 5/0 | 0 |
 
 ## popPK records
 
@@ -28,8 +28,16 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.571). Primary extraction retained.">cross-check: disputed</span> | [Ette_2025_RSBQ](drugs/drug_blarcamesine/pd_Ette_2025_RSBQ.md) | Rett Syndrome Behaviour Questionnaire item-level scores / latent Rett syndrome severity ← blarcamesine (parent) and ANAVEX19-144 (active metabolite) · direct linear effect | — | Ette EI et al., The new big is small: Leveraging knowle…, British journal of clinical… (2025) | [10.1111/bcp.15843](https://doi.org/10.1111/bcp.15843) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Ette_2025_RSBQ_2](drugs/drug_blarcamesine/pd_Ette_2025_RSBQ_2.md) | Rett Syndrome Behaviour Questionnaire item-level scores / latent Rett syndrome severity (6-patient single-blind study) ← blarcamesine (parent) and ANAVEX19-144 (active metabolite) · direct linear effect | — | Ette EI et al., The new big is small: Leveraging knowle…, British journal of clinical… (2025) | [10.1111/bcp.15843](https://doi.org/10.1111/bcp.15843) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed</span> | [Ette_2025_latent_RTT_severity](drugs/drug_blarcamesine/pd_Ette_2025_latent_RTT_severity.md) | latent RTT severity ← blarcamesine · disease-progression model | — | Ette EI et al., The new big is small: Leveraging knowle…, British journal of clinical… (2025) | [10.1111/bcp.15843](https://doi.org/10.1111/bcp.15843) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=blarcamesine).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: CHRM1 (target), SIGMAR1 (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -40,7 +48,7 @@ _not available_
 ## Coverage
 
 - **PubMed hits:** 6 matched, 6 returned
-- **screened:** 0  ·  **relevant:** 0
+- **screened:** 2  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 

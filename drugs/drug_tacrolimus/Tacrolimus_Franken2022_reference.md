@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D11A&quot;,&quot;href&quot;:&quot;atc/D11A.md&quot;},{&quot;label&quot;:&quot;tacrolimus&quot;,&quot;href&quot;:&quot;drugs/drug_tacrolimus/&quot;},{&quot;label&quot;:&quot;Franken_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tacrolimus_AbdelKahaar2023v2_reference&quot;,&quot;label&quot;:&quot;Abdel-Kahaar_2023_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tacrolimus/Tacrolimus_AbdelKahaar2023v2_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tacrolimus_Chen2023_base&quot;,&quot;label&quot;:&quot;Chen_2023_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tacrolimus/Tacrolimus_Chen2023_base.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tacrolimus_Chen2023_final&quot;,&quot;label&quot;:&quot;Chen_2023_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tacrolimus/Tacrolimus_Chen2023_final.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tacrolimus_Franken2022_reference&quot;,&quot;label&quot;:&quot;Franken_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tacrolimus/Tacrolimus_Franken2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Tacrolimus_Hou2025_reference&quot;,&quot;label&quot;:&quot;Hou_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tacrolimus/Tacrolimus_Hou2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tacrolimus_Paschier2023_reference&quot;,&quot;label&quot;:&quot;Paschier_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tacrolimus/Tacrolimus_Paschier2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tacrolimus_AbdelKahaar2023v2_reference&quot;,&quot;label&quot;:&quot;Abdel-Kahaar_2023_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tacrolimus/Tacrolimus_AbdelKahaar2023v2_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tacrolimus_Chen2023_base&quot;,&quot;label&quot;:&quot;Chen_2023_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tacrolimus/Tacrolimus_Chen2023_base.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tacrolimus_Chen2023_final&quot;,&quot;label&quot;:&quot;Chen_2023_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tacrolimus/Tacrolimus_Chen2023_final.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tacrolimus_Hou2025_reference&quot;,&quot;label&quot;:&quot;Hou_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tacrolimus/Tacrolimus_Hou2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tacrolimus_Paschier2023_base&quot;,&quot;label&quot;:&quot;Paschier_2023_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tacrolimus/Tacrolimus_Paschier2023_base.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tacrolimus_Paschier2023_final&quot;,&quot;label&quot;:&quot;Paschier_2023_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tacrolimus/Tacrolimus_Paschier2023_final.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tacrolimus_Paschier2023_final_final_model_in_development_set&quot;,&quot;label&quot;:&quot;Paschier_2023_final_final_model_in_development_set_model_used_for_the_be&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tacrolimus/Tacrolimus_Paschier2023_final_final_model_in_development_set.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tacrolimus_Xiang2025_base&quot;,&quot;label&quot;:&quot;Xiang_2025_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tacrolimus/Tacrolimus_Xiang2025_base.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tacrolimus_Xiang2025_final&quot;,&quot;label&quot;:&quot;Xiang_2025_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tacrolimus/Tacrolimus_Xiang2025_final.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tacrolimus_Paschier2023_be_model_in_validation_set&quot;,&quot;label&quot;:&quot;Paschier_2023_be_model_in_validation_set&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tacrolimus/Tacrolimus_Paschier2023_be_model_in_validation_set.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tacrolimus_Paschier2023_reference&quot;,&quot;label&quot;:&quot;Paschier_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tacrolimus/Tacrolimus_Paschier2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tacrolimus_Paschier2023_relative_mean_bias&quot;,&quot;label&quot;:&quot;Paschier_2023_relative_mean_bias&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tacrolimus/Tacrolimus_Paschier2023_relative_mean_bias.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Xiang_2025_eGFR&quot;,&quot;label&quot;:&quot;Xiang_2025 \u00b7 eGFR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_tacrolimus/pd_Xiang_2025_eGFR.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # tacrolimus — `Tacrolimus_Franken2022_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -13,39 +13,42 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** Model and browser simulation available in **Models** and **Simulation**.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**C5 dimension mismatch on a structural parameter.**
+
+A reported unit could not be converted (t1/2ka  and Vnorm), so that value has no SI equivalent. Extracted — tacrolimus: tlag 0.38 h, t1/2ka 3.58 h–1, CL/F 23 l h–1, V1/F 692 l, Q/F 11.6 l h–1, V2/F 5.34e+03 l, Vnorm 0.88 m2, kabs 3.9 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has tacrolimus, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
-
-> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-10-07 08:04:31.458805+00:00) predates the upstream re-run (2026-10-07 15:37:10.571038+00:00). Current validate status: `extracted`.
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Franken LG et al., A Population Pharmacokinetic Model of W…, European journal of drug me… (2022)
   ·  DOI: [10.1007/s13318-022-00767-8](https://doi.org/10.1007/s13318-022-00767-8)
 
-<div class="pk-model-meta" hidden drug="tacrolimus" model-id="Tacrolimus_Franken2022_reference" status="extracted" stale="true" population="kidney transplant recipients" measured-compound="tacrolimus" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="tacrolimus" model-id="Tacrolimus_Franken2022_reference" status="rejected" stale="false" population="kidney transplant recipients" measured-compound="tacrolimus" parameterization="apparent" topology="2C"></div>
 
-**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
-**Parameters:** 6 extracted, plus 1 covariate effect.
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 8 extracted.
 
 **Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Tlaga (h) | `Q83` · tlag | 0.38 | h | 1368.0 | [h] | not captured | llm (0.6) | Tab2:row1:col2, Tab2:row1:col3 | — | not captured |
-| kaa (h–1) | `Q49` · kabs | 3.58 | h–1 | 0.0009944444444444445 | [1] / [h] | not captured | llm (0.6) | Tab2:row2:col2, Tab2:row2:col3 | — | not captured |
-| CL/Fa (l h–1) | `Q27` · CL/F | 23.0 | l h–1 | 6.3888888888888885e-06 | [l] / [h] | not captured | llm (0.6) | Tab2:row3:col2, Tab2:row3:col3 | — | not captured |
-| V1/Fa (l) | `Q290` · V1/F | 692 | l | 0.6920000000000001 | [l] | not captured | llm (0.6) | Tab2:row4:col2, Tab2:row4:col3 | — | not captured |
-| Q1/Fa (l h–1) | `Q69` · Q/F | 11.6 | l h–1 | 3.222222222222222e-06 | [l] / [h] | not captured | llm (0.6) | Tab2:row5:col2, Tab2:row5:col3 | — | not captured |
-| V2/Fa (l) | `Q82` · V2/F | 5340 | l | 5.34 | [l] | not captured | llm (0.6) | Tab2:row6:col2, Tab2:row6:col3 | — | not captured |
-| theta_q318_cyp3a5 | `Q900` · theta_q318_cyp3a5 | 1.63 | not captured | not captured | not captured | not captured | not captured (not captured) | Tab2:row10:col2, Tab2:row10:col3 | — | not captured |
+| Tlaga (h) | `Q83` · tlag | 0.38 | h | 1368.0 | [h] | not captured | llm (0.6) | Tab2:row1:col2 | — | not captured |
+| kaa (h–1) | `Q95` · t1/2ka | 3.58 | h–1 | not captured | [1] / [h] | not captured | llm (0.6) | Tab2:row2:col2 | — | not captured |
+| CL/Fa (l h–1) | `Q27` · CL/F | 23.0 | l h–1 | 6.3888888888888885e-06 | [l] / [h] | not captured | llm (0.6) | Tab2:row3:col2 | — | not captured |
+| V1/Fa (l) | `Q290` · V1/F | 692 | l | 0.6920000000000001 | [l] | not captured | llm (0.6) | Tab2:row4:col2 | — | not captured |
+| Q1/Fa (l h–1) | `Q69` · Q/F | 11.6 | l h–1 | 3.222222222222222e-06 | [l] / [h] | not captured | llm (0.6) | Tab2:row5:col2 | — | not captured |
+| V2/Fa (l) | `Q82` · V2/F | 5340 | l | 5.34 | [l] | not captured | llm (0.6) | Tab2:row6:col2 | — | not captured |
+| BSA (m2) | `Q352` · Vnorm | 0.88 | m2 | not captured | [m2] | not captured | llm (0.6) | Tab2:row16:col2 | — | not captured |
+| the Ka | `Q49` · kabs | 3.9 | h−1 | 0.0010833333333333333 | 1/h | not captured | review_gapfill (0.7) | Xiang_2025:review | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -53,9 +56,6 @@ Franken LG et al., A Population Pharmacokinetic Model of W…, European journal 
 </details>
 
 ## Departures & gaps
-
-**Deviations:**
-- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
 
 **Interpretation flags:**
 - table section iiv: 'CLa' routed out of structural estimates ('IIV (%)')
@@ -66,21 +66,36 @@ Franken LG et al., A Population Pharmacokinetic Model of W…, European journal 
 - table section residual_error: 'Proportional WB' routed out of structural estimates ('Residual variability')
 - table section residual_error: 'Proportional IC' routed out of structural estimates ('Residual variability')
 - table section residual_error: 'Additive IC' routed out of structural estimates ('Residual variability')
-- dropped diagnostic row 'KWB-IC a' → Q318 (shrinkage) — reported statistic, not a parameter
-- dropped diagnostic row 'RWB:IC' → Q318 (shrinkage) — reported statistic, not a parameter
-- dropped unlinked row (NIL): 'CYP3A4*22' — extend the ontology if this is a real PK parameter (source ['Tab2:row11:col2', 'Tab2:row11:col3'])
-- dropped unlinked row (NIL): 'Albumin (g l–1)' — extend the ontology if this is a real PK parameter (source ['Tab2:row14:col2', 'Tab2:row14:col3'])
-- dropped unlinked row (NIL): 'BSA (m2)' — extend the ontology if this is a real PK parameter (source ['Tab2:row16:col2', 'Tab2:row16:col3'])
-- dropped unlinked row (NIL): 'Lean body weight' — extend the ontology if this is a real PK parameter (source ['Tab2:row18:col2', 'Tab2:row18:col3', 'Tab2:row20:col2'])
-- covariate effect for Q318 has no base parameter row (kept as unattached equation-variable)
+- table representations disagree for 'Tlaga (h)'; source reconciliation required
+- table representations disagree for 'kaa (h–1)'; source reconciliation required
+- table representations disagree for 'CL/Fa (l h–1)'; source reconciliation required
+- table representations disagree for 'V1/Fa (l)'; source reconciliation required
+- table representations disagree for 'Q1/Fa (l h–1)'; source reconciliation required
+- table representations disagree for 'V2/Fa (l)'; source reconciliation required
+- table representations disagree for 'KWB-IC a'; source reconciliation required
+- table representations disagree for 'RWB:IC'; source reconciliation required
+- table representations disagree for 'CYP3A5*1'; source reconciliation required
+- table representations disagree for 'CYP3A4*22'; source reconciliation required
+- table representations disagree for 'Albumin (g l–1)'; source reconciliation required
+- table representations disagree for 'BSA (m2)'; source reconciliation required
+- table representations disagree for 'Lean body weight'; source reconciliation required
+- unit_dimension_mismatch: 'kaa (h–1)' → Q95 (unit '1 / [time]' vs ontology '[time]') — route to review
+- dropped unlinked row (NIL): 'KWB-IC a' — extend the ontology if this is a real PK parameter (source ['Tab2:row7:col2'])
+- dropped unlinked row (NIL): 'RWB:IC' — extend the ontology if this is a real PK parameter (source ['Tab2:row8:col2'])
+- dropped unlinked row (NIL): 'CYP3A5*1' — extend the ontology if this is a real PK parameter (source ['Tab2:row10:col2'])
+- dropped unlinked row (NIL): 'CYP3A4*22' — extend the ontology if this is a real PK parameter (source ['Tab2:row11:col2'])
+- dropped unlinked row (NIL): 'Albumin (g l–1)' — extend the ontology if this is a real PK parameter (source ['Tab2:row14:col2'])
+- unit_dimension_unknown: 'm2' (Vnorm)
+- dropped unlinked row (NIL): 'Lean body weight' — extend the ontology if this is a real PK parameter (source ['Tab2:row18:col2', 'Tab2:row20:col2'])
+- implicit units: 'BSA (m2)' — the LLM proposed 'm2', whose dimension does not fit Q352; left unset
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=tacrolimus
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at route_to_review — not promoted
+- gap-filled Q49 (kabs) from Xiang_2025's review values (primary lacked it)
 
 **Extraction notes:**
-- unparsed cell Tab2:row8:col3 = '14023 (12595–15633)'
-- unparsed cell Tab2:row20:col3 = '1.002 (0.56–1.54)'
-- unparsed cell Tab2:row31:col3 = '0.584 (0.292–0.874)'
-- unparsed cell Tab2:row32:col3 = '0.179 (0.139–0.210)'
-- unparsed cell Tab2:row33:col3 = '36.1 (20.5–46.4)'
+- table Tab2: unparsed_numeric_cell
+- table Tab2: representations disagree; selected evidence retained, not merged
 - LLM selected parameter table(s) 2
 
 ## Validation
@@ -113,32 +128,22 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 7 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row3:col2', 'Tab2:row3:col3'] |
-| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row4:col2', 'Tab2:row4:col3'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Tab2:row2:col2', 'Tab2:row2:col3'] |
-| C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row5:col2', 'Tab2:row5:col3'] |
-| C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row6:col2', 'Tab2:row6:col3'] |
-| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Tab2:row1:col2', 'Tab2:row1:col3'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row3:col2'] |
+| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row4:col2'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Xiang_2025:review'] |
+| C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row5:col2'] |
+| C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row6:col2'] |
+| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Tab2:row1:col2'] |
+| C5_dimension_Q95 | fail | 1 / [time] | h–1 | not captured | not captured | ['Tab2:row2:col2'] |
+| C5_unit_missing_Q352 | fail | [length] ** 3 | m2 | not captured | not captured | ['Tab2:row16:col2'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 23 L/h | not captured | not captured | ['Tab2:row3:col2', 'Tab2:row3:col3'] |
-| C9_phys_window_Q290 | pass | volume within physiological range | 692 L | not captured | not captured | ['Tab2:row4:col2', 'Tab2:row4:col3'] |
-| C9_phys_window_Q82 | pass | volume within physiological range | 5.34e+03 L | not captured | not captured | ['Tab2:row6:col2', 'Tab2:row6:col3'] |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
-| T3_output_variable | not captured | pass | C_central (measured=tacrolimus) | central.C | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | pass | 6 scholar param(s) emitted or defaulted | 6 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 23 L/h | not captured | not captured | ['Tab2:row3:col2'] |
+| C9_phys_window_Q290 | pass | volume within physiological range | 692 L | not captured | not captured | ['Tab2:row4:col2'] |
+| C9_phys_window_Q82 | pass | volume within physiological range | 5.34e+03 L | not captured | not captured | ['Tab2:row6:col2'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -147,38 +152,20 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_tacrolimus/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Franken_2022` / `Franken_2022::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_tacrolimus/models/modelica/Tacrolimus_Franken2022_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_tacrolimus/models/modelica/Tacrolimus_Franken2022_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_tacrolimus/models/modelica/Tacrolimus_Franken2022_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_tacrolimus/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Franken_2022` / `Franken_2022::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_tacrolimus/Tacrolimus_Franken2022_reference/Tacrolimus_Franken2022_reference_modelica.zip" download>Tacrolimus_Franken2022_reference_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_tacrolimus/Tacrolimus_Franken2022_reference/Tacrolimus_Franken2022_reference_fmi.zip" download>Tacrolimus_Franken2022_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_tacrolimus/Tacrolimus_Franken2022_reference/Tacrolimus_Franken2022_reference_matlab.zip" download>Tacrolimus_Franken2022_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_tacrolimus/Tacrolimus_Franken2022_reference/Tacrolimus_Franken2022_reference_matlab_simbio.zip" download>Tacrolimus_Franken2022_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_tacrolimus/Tacrolimus_Franken2022_reference/Tacrolimus_Franken2022_reference_sbml.zip" download>Tacrolimus_Franken2022_reference_sbml.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_tacrolimus/Tacrolimus_Franken2022_reference/Tacrolimus_Franken2022_reference_cellml.zip" download>Tacrolimus_Franken2022_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_tacrolimus/Tacrolimus_Franken2022_reference/Tacrolimus_Franken2022_reference.svg" alt="Tacrolimus_Franken2022_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 5 mg, single dose, first-order absorption (ka 3.58 /h, lag 22.8 min, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 5 mg oral (L04AD02) (defined daily dose)._
-
-<dbs-fmusim paramsurl="drugs/drug_tacrolimus/Tacrolimus_Franken2022_reference/Tacrolimus_Franken2022_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_tacrolimus/Tacrolimus_Franken2022_reference/Tacrolimus_Franken2022_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_2C_enteral` · parameters `Tacrolimus_Franken2022_reference_params.json` · controls `Tacrolimus_Franken2022_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 15:37 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 23:26 UTC</sub>

@@ -1,0 +1,33 @@
+{
+ "dose_source": "paper",
+ "model_id": "Avelumab_Vugmeyster2022_adult_model",
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  700.0,
+  1400.0
+ ],
+ "parameters": {
+  "Cl": 7.611111111111112e-09,
+  "F": 1.0,
+  "VdPerKg": 4.5e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0007,
+  "k12": 2.6366843033509702e-06,
+  "k21": 9.126984126984129e-06,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662071
+ },
+ "reference_peaks": {
+  "central.C": 0.1758201651812423
+ },
+ "stop_time": 15552000.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

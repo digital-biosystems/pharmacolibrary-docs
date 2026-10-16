@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C05C&quot;,&quot;href&quot;:&quot;atc/C05C.md&quot;},{&quot;label&quot;:&quot;rutoside&quot;,&quot;href&quot;:&quot;drugs/drug_rutoside/&quot;},{&quot;label&quot;:&quot;Dom\u00ednguez_2024 \u00b7 oral_administration_p_o&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut&quot;,&quot;label&quot;:&quot;Dom\u00ednguez_2024_extract_equivalent_to_7_4_mg_kg_of_rutin&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rutoside/Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut&quot;,&quot;label&quot;:&quot;Dom\u00ednguez_2024_extract_equivalent_to_7_4_mg_kg_of_rutin&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rutoside/Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # rutoside — `Rutoside_Domnguez2024_oral_administration_p_o`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.154), gpt-oss:120b (not confirmed, agreement 0.13). Primary extraction retained.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.154), gpt-oss:120b (not confirmed, agreement 0.13). Primary extraction retained.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -19,21 +19,19 @@
 
 ### Reviewer guidance
 
-**The rutoside record was rejected because the bioavailability-adjusted parameters are double-corrected — Fab = 0.006 p.o. is applied alongside already-apparent values such as CL/F = 13.59 L/h/kg and V/F = 59.08 L/kg — and a structural parameter has a dimension mismatch, with the fm unit (p.o.) not convertible to SI.**
+**C7 apparent-parameter coherence violated (double correction); c5 dimension mismatch on a structural parameter.**
 
-The record reports apparent parameters for rutin in New Zealand rabbits (CL/F 13.59 L/h/kg, V/F 59.08 L/kg, AUC∞ 7792.96 ng·h/mL) that are already adjusted for bioavailability, so applying the reported Fab of 0.006 again double-corrects them, violating apparent-parameter coherence. The metabolite fraction fm for quercetin is reported as 2.38 with unit 'p.o.', a unit that could not be converted to SI, so it reached the model without an SI value; a value of 2.38 for a fraction is also incoherent. A second reader disagreed on the parameterization (mechanistic rather than apparent) and could not confirm several reported values, including Fab 0.006, AUC∞ 7792.96, CL/F 13.59, Cmax 1166.2 and C0 0.012, leaving those findings inconclusive. Extracted — rutoside: AUC∞ 7.79e+03 ng·h/mL, Cmax 1.17e+03 ng/mL, tmax 0.75 h, V/F 59.1 L/kg, CL/F 13.6 L/h/kg, kel 0.234 h−1, MRT 11.8 h, AUC/dose 0.078 h/L/kg, … (+2); quercetin: fm 2.38 p.o..
+A reported unit could not be converted (AUC∞, Cmax, AUC/dose and C0), so that value has no SI equivalent. Extracted — rutoside: AUC∞ 7.79e+03 ng·h/mL, Cmax 1.17e+03 ng/mL, tmax 0.75 h, V/F 59.1 L/kg, CL/F 13.6 L/h/kg, kel 0.234 h−1, MRT 11.8 h, AUC/dose 0.078 h/L/kg, … (+2); quercetin: fm 2.38 p.o..
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has rutin, the second reading unknown; it also differs on 21 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by glm-5.3-flash</sub>
-
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:31:40.274818+00:00) predates the upstream re-run (2026-10-06 22:20:12.420883+00:00). Current validate status: `rejected`.
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Domínguez Moré GP et al., Rutin and Physalis peruviana Extract: P…, Pharmaceutics (2024)
   ·  DOI: [10.3390/pharmaceutics16101241](https://doi.org/10.3390/pharmaceutics16101241)
 
-<div class="pk-model-meta" hidden drug="rutoside" model-id="Rutoside_Domnguez2024_oral_administration_p_o" status="rejected" stale="true" population="New Zealand rabbits" measured-compound="rutin" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="rutoside" model-id="Rutoside_Domnguez2024_oral_administration_p_o" status="rejected" stale="false" population="New Zealand rabbits" measured-compound="rutin" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 11 extracted.
@@ -205,7 +203,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_rutoside/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Domínguez_2024` / `Domínguez_2024::oral_administration_p_o`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_rutoside/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Domínguez_2024` / `Domínguez_2024::oral_administration_p_o`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -221,4 +219,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 22:20 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 00:03 UTC</sub>

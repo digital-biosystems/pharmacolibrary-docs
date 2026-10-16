@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B03X&quot;,&quot;href&quot;:&quot;atc/B03X.md&quot;},{&quot;label&quot;:&quot;luspatercept&quot;,&quot;href&quot;:&quot;drugs/drug_luspatercept/&quot;},{&quot;label&quot;:&quot;Chen_2020 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Luspatercept_Chen2020_reference&quot;,&quot;label&quot;:&quot;Chen_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_luspatercept/Luspatercept_Chen2020_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Luspatercept_Chen2021_reference&quot;,&quot;label&quot;:&quot;Chen_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_luspatercept/Luspatercept_Chen2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Luspatercept_Chen2020_reference&quot;,&quot;label&quot;:&quot;Chen_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_luspatercept/Luspatercept_Chen2020_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Luspatercept_Chen2021_reference&quot;,&quot;label&quot;:&quot;Chen_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_luspatercept/Luspatercept_Chen2021_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # luspatercept — `Luspatercept_Chen2020_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.529). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.529). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -15,21 +15,23 @@
 
 **Model:** Model and browser simulation available in **Models** and **Simulation**.
 
+> **Caveat** (`covariates_not_exercised`): Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.
+
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Accepted with a caveat: the covariate scenarios were not simulated.**
+
+The base model was simulated, not the covariate effects the record defines.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of age_years_on_cl_f: this record has -0.534, the second reading none; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:38:35.594454+00:00) predates the upstream re-run (2026-10-05 21:19:33.625847+00:00). Current validate status: `extracted`.
-
 ## Citation
 Chen N et al., Population Pharmacokinetics and Exposur…, CPT: pharmacometrics & syst… (2020)
   ·  DOI: [10.1002/psp4.12521](https://doi.org/10.1002/psp4.12521)
 
-<div class="pk-model-meta" hidden drug="luspatercept" model-id="Luspatercept_Chen2020_reference" status="extracted" stale="true" population="anemic patients with myelodysplastic syndromes" measured-compound="luspatercept" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="luspatercept" model-id="Luspatercept_Chen2020_reference" status="accepted_with_caveats" stale="false" population="anemic patients with myelodysplastic syndromes" measured-compound="luspatercept" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted, plus 5 covariate effects.
@@ -39,14 +41,14 @@ Chen N et al., Population Pharmacokinetics and Exposur…, CPT: pharmacometrics 
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F, L/day | `Q27` · CL/F | 0.469 | L/day | 5.42824074074074e-09 | [l] / [d] | not captured | exact (1.0) | psp412521-tbl-0002:row3:col1, psp412521-tbl-0002:row3:col2 | — | not captured |
-| V1/F, L | `Q76` · V/F | 9.20 | L | 0.0092 | [l] | not captured | exact (1.0) | psp412521-tbl-0002:row4:col1, psp412521-tbl-0002:row4:col2 | — | not captured |
-| K a, 1/day | `Q49` · kabs | 0.456 | 1/day | 5.277777777777778e-06 | [1] / [d] | not captured | space_fold (0.95) | psp412521-tbl-0002:row5:col1, psp412521-tbl-0002:row5:col2 | — | not captured |
-| weight_kg_on_cl_f | `Q900` · weight_kg_on_cl_f | 0.768 | not captured | not captured | not captured | not captured | not captured (not captured) | psp412521-tbl-0002:row6:col1, psp412521-tbl-0002:row6:col2 | — | not captured |
-| age_years_on_cl_f | `Q900` · age_years_on_cl_f | -0.534 | not captured | not captured | not captured | not captured | not captured (not captured) | psp412521-tbl-0002:row7:col1, psp412521-tbl-0002:row7:col2 | — | not captured |
-| albumin_g_l_on_cl_f | `Q900` · albumin_g_l_on_cl_f | -1.18 | not captured | not captured | not captured | not captured | not captured (not captured) | psp412521-tbl-0002:row8:col1, psp412521-tbl-0002:row8:col2 | — | not captured |
-| weight_kg_on_v1_f | `Q900` · weight_kg_on_v1_f | 0.878 | not captured | not captured | not captured | not captured | not captured (not captured) | psp412521-tbl-0002:row9:col1, psp412521-tbl-0002:row9:col2 | — | not captured |
-| albumin_g_l_on_v1_f | `Q900` · albumin_g_l_on_v1_f | -0.609 | not captured | not captured | not captured | not captured | not captured (not captured) | psp412521-tbl-0002:row10:col1, psp412521-tbl-0002:row10:col2 | — | not captured |
+| CL/F, L/day | `Q27` · CL/F | 0.469 | L/day | 5.42824074074074e-09 | [l] / [d] | not captured | exact (1.0) | Chen_2020_table_p4_1:row1:col1, Chen_2020_table_p4_1:row1:col2 | — | not captured |
+| V1/F, L | `Q76` · V/F | 9.20 | L | 0.0092 | [l] | not captured | exact (1.0) | Chen_2020_table_p4_1:row2:col1, Chen_2020_table_p4_1:row2:col2 | — | not captured |
+| K a, 1/day | `Q49` · kabs | 0.456 | 1/day | 5.277777777777778e-06 | [1] / [d] | not captured | space_fold (0.95) | Chen_2020_table_p4_1:row3:col1, Chen_2020_table_p4_1:row3:col2 | — | not captured |
+| weight_kg_on_cl_f | `Q900` · weight_kg_on_cl_f | 0.768 | not captured | not captured | not captured | not captured | not captured (not captured) | Chen_2020_table_p4_1:row4:col1, Chen_2020_table_p4_1:row4:col2 | — | not captured |
+| age_years_on_cl_f | `Q900` · age_years_on_cl_f | -0.534 | not captured | not captured | not captured | not captured | not captured (not captured) | Chen_2020_table_p4_1:row5:col1, Chen_2020_table_p4_1:row5:col2 | — | not captured |
+| albumin_g_l_on_cl_f | `Q900` · albumin_g_l_on_cl_f | -1.18 | not captured | not captured | not captured | not captured | not captured (not captured) | Chen_2020_table_p4_1:row6:col1, Chen_2020_table_p4_1:row6:col2 | — | not captured |
+| weight_kg_on_v1_f | `Q900` · weight_kg_on_v1_f | 0.878 | not captured | not captured | not captured | not captured | not captured (not captured) | Chen_2020_table_p4_1:row7:col1, Chen_2020_table_p4_1:row7:col2 | — | not captured |
+| albumin_g_l_on_v1_f | `Q900` · albumin_g_l_on_v1_f | -0.609 | not captured | not captured | not captured | not captured | not captured (not captured) | Chen_2020_table_p4_1:row8:col1, Chen_2020_table_p4_1:row8:col2 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -75,17 +77,7 @@ Chen N et al., Population Pharmacokinetics and Exposur…, CPT: pharmacometrics 
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- unparsed cell psp412521-tbl-0002:row3:col3 = '0.449, 0.489'
-- unparsed cell psp412521-tbl-0002:row4:col3 = '8.88, 9.52'
-- unparsed cell psp412521-tbl-0002:row5:col3 = '0.383, 0.652'
-- unparsed cell psp412521-tbl-0002:row6:col3 = '0.561, 0.986'
-- unparsed cell psp412521-tbl-0002:row7:col3 = '−0.764, −0.315'
-- unparsed cell psp412521-tbl-0002:row8:col3 = '−1.61, −0.726'
-- unparsed cell psp412521-tbl-0002:row9:col3 = '0.709, 1.05'
-- unparsed cell psp412521-tbl-0002:row10:col3 = '−1.01, −0.216'
-- unparsed cell psp412521-tbl-0002:row12:col3 = '31.1, 40.9'
-- unparsed cell psp412521-tbl-0002:row13:col3 = '17.0, 27.6'
-- unparsed cell psp412521-tbl-0002:row14:col3 = '17.8, 27.5'
+- table Chen_2020_table_p4_1: unparsed_numeric_cell
 - LLM selected parameter table(s) 2
 
 ## Validation
@@ -126,20 +118,20 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp412521-tbl-0002:row3:col1', 'psp412521-tbl-0002:row3:col2'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['psp412521-tbl-0002:row5:col1', 'psp412521-tbl-0002:row5:col2'] |
-| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp412521-tbl-0002:row4:col1', 'psp412521-tbl-0002:row4:col2'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Chen_2020_table_p4_1:row1:col1', 'Chen_2020_table_p4_1:row1:col2'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Chen_2020_table_p4_1:row3:col1', 'Chen_2020_table_p4_1:row3:col2'] |
+| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Chen_2020_table_p4_1:row2:col1', 'Chen_2020_table_p4_1:row2:col2'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 0.0195 L/h | not captured | not captured | ['psp412521-tbl-0002:row3:col1', 'psp412521-tbl-0002:row3:col2'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 9.2 L | not captured | not captured | ['psp412521-tbl-0002:row4:col1', 'psp412521-tbl-0002:row4:col2'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 0.0195 L/h | not captured | not captured | ['Chen_2020_table_p4_1:row1:col1', 'Chen_2020_table_p4_1:row1:col2'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 9.2 L | not captured | not captured | ['Chen_2020_table_p4_1:row2:col1', 'Chen_2020_table_p4_1:row2:col2'] |
 
 **Reviewer per-scenario checks:**
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
 | T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_output_variable | not captured | pass | C_central (measured=luspatercept) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
@@ -153,10 +145,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_luspatercept/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Chen_2020` / `Chen_2020::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_luspatercept/models/modelica/Luspatercept_Chen2020_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_luspatercept/models/modelica/Luspatercept_Chen2020_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_luspatercept/models/modelica/Luspatercept_Chen2020_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_luspatercept/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Chen_2020` / `Chen_2020::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_luspatercept/models/modelica/Luspatercept_Chen2020_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_luspatercept/models/modelica/Luspatercept_Chen2020_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_luspatercept/models/modelica/Luspatercept_Chen2020_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -174,7 +166,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_luspatercept/Luspatercept_Chen2020_reference/Luspatercept_Chen2020_reference.svg" alt="Luspatercept_Chen2020_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_luspatercept/Luspatercept_Chen2020_reference/Luspatercept_Chen2020_reference.svg" alt="Luspatercept_Chen2020_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -187,4 +179,4 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 21:19 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 20:33 UTC</sub>

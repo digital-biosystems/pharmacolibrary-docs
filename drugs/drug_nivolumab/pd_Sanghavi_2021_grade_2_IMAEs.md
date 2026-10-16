@@ -18,15 +18,15 @@
 
 **Model:** No model was generated from this record.
 
-> The paper describes a time-to-event model where the maximum concentration after the first dose (Cmax1) of nivolumab is a significant predictor of the risk of grade 2+ immune-mediated adverse events, with higher Cmax1 associated with increased risk (approximately 19% increase from a median of 58 μg/ml to the 95th percentile of 169 μg/ml). The specific pharmacodynamic mechanism (e.g., Emax, indirect response) and potency parameters (e.g., EC50, Imax) are not stated in the provided excerpts.
+> The paper describes a direct exposure-response relationship where a higher nivolumab maximum concentration after the first dose (Cmax1) is significantly associated with an increased risk of grade 2+ immune-mediated adverse events, noting an approximately 19% increased risk when Cmax1 rises from a median of 58 μg/ml to the 95th percentile of 169 μg/ml. The specific pharmacodynamic mechanism (e.g., Emax, indirect response) is not detailed in the provided excerpts.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Sanghavi_2021`
 - **model family:** `tte`
 - **driver:** `cited_pk`
-- **tier:** descriptive
-- **effect:** unknown/unknown
+- **tier:** population
+- **effect:** stimulation/unknown
 
 ## Citation
 Sanghavi K et al., Nivolumab exposure-response analysis fo…, CPT: pharmacometrics & syst… (2021)

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;apremilast&quot;,&quot;href&quot;:&quot;drugs/drug_apremilast/&quot;},{&quot;label&quot;:&quot;Okubo_2021 \u00b7 typical_values_rse_for_model_parameters_and_covariate_effects&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Apremilast_Okubo2021_typical_values_rse_for_model_parameters&quot;,&quot;label&quot;:&quot;Okubo_2021_typical_values_rse_for_model_parameters_and_covariate_effects&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_apremilast/Apremilast_Okubo2021_typical_values_rse_for_model_parameters.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Apremilast_Warren2025_reference&quot;,&quot;label&quot;:&quot;Warren_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_apremilast/Apremilast_Warren2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Apremilast_Okubo2021_typical_values_rse_for_model_parameters&quot;,&quot;label&quot;:&quot;Okubo_2021_typical_values_rse_for_model_parameters_and_covariate_effects&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_apremilast/Apremilast_Okubo2021_typical_values_rse_for_model_parameters.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -27,7 +27,7 @@ Independently confirmed by `gpt-oss-120b`.
 Okubo Y et al., Population pharmacokinetic and exposure…, The Journal of dermatology (2021)
   ·  DOI: [10.1111/1346-8138.16068](https://doi.org/10.1111/1346-8138.16068)
 
-<div class="pk-model-meta" hidden drug="apremilast" model-id="Apremilast_Okubo2021_typical_values_rse_for_model_parameters" status="curated_candidate" stale="false" population="subjects with moderate to severe psoriasis" measured-compound="apremilast" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="apremilast" model-id="Apremilast_Okubo2021_typical_values_rse_for_model_parameters" status="curated_candidate" stale="false" population="Japanese subjects with moderate to severe psoriasis" measured-compound="apremilast" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.
@@ -58,18 +58,17 @@ Okubo Y et al., Population pharmacokinetic and exposure…, The Journal of derma
 - dropped unlinked row (NIL): 'Race: Japanese c' — extend the ontology if this is a real PK parameter (source ['jde16068-tbl-0004:row4:col1'])
 - dropped unlinked row (NIL): 'Age d' — extend the ontology if this is a real PK parameter (source ['jde16068-tbl-0004:row5:col1'])
 - dropped unlinked row (NIL): 'Bodyweight, kg e' — extend the ontology if this is a real PK parameter (source ['jde16068-tbl-0004:row7:col1'])
-- NIL: refused to back-fill base 'CL/F' from footnote/prose loose number 0.834 (source ['jde16068-tbl-0004:footnote', 'jde16068-tbl-0004:footnote', 'jde16068-tbl-0004:footnote', 'jde16068-tbl-0004:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'V1/F' from footnote/prose loose number None (source ['jde16068-tbl-0004:footnote']); the table cell was unparseable — needs review
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=apremilast
 - 1C volume normalization: Q290→Q76 (single-compartment model has no central/peripheral split; 'Vc/F, L' is the general volume)
-- population split: 'typical values (rse %) for model parameters and covariate effects' subgroup of Okubo_2021 (paper reports 3 populations: geometric mean (cv% geometric mean), geometric mean (geometric cv%), typical values (rse %) for model parameters and covariate effects)
+- population split: 'typical values (rse %) for model parameters and covariate effects' subgroup of Okubo_2021 (paper reports 2 populations: geometric mean (cv% geometric mean), typical values (rse %) for model parameters and covariate effects)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- companion parameter table 2 transcribed (9 record(s))
-- companion parameter table 5 transcribed (21 record(s), model stage 'final')
-- LLM selected parameter table(s) 2, 4, 5
+- table Okubo_2021_table_2: ragged_grid
+- table Okubo_2021_table_2: unparsed_numeric_cell
+- companion parameter table 2 transcribed (11 record(s))
+- LLM selected parameter table(s) 2, 4
 
 ## Validation
 
@@ -124,10 +123,10 @@ _All readers agree on the compared fields of this record._
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_apremilast/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Okubo_2021` / `Okubo_2021::typical_values_rse_for_model_parameters_and_covariate_effects`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_apremilast/models/modelica/Apremilast_Okubo2021_typical_values_rse_for_model_parameters.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_apremilast/models/modelica/Apremilast_Okubo2021_typical_values_rse_for_model_parameters.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_apremilast/models/modelica/Apremilast_Okubo2021_typical_values_rse_for_model_parameters.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_apremilast/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Okubo_2021` / `Okubo_2021::typical_values_rse_for_model_parameters_and_covariate_effects`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_apremilast/models/modelica/Apremilast_Okubo2021_typical_values_rse_for_model_parameters.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_apremilast/models/modelica/Apremilast_Okubo2021_typical_values_rse_for_model_parameters.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_apremilast/models/modelica/Apremilast_Okubo2021_typical_values_rse_for_model_parameters.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -136,7 +135,7 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_apremilast/Apremilast_Okubo2021_typical_values_rse_for_model_parameters/Apremilast_Okubo2021_typical_values_rse_for_model_parameters_modelica.zip" download>Apremilast_Okubo2021_typical_values_rse_for_model_parameters_modelica.zip</a> <span class="pk-size">(4.9 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_apremilast/Apremilast_Okubo2021_typical_values_rse_for_model_parameters/Apremilast_Okubo2021_typical_values_rse_for_model_parameters_modelica.zip" download>Apremilast_Okubo2021_typical_values_rse_for_model_parameters_modelica.zip</a> <span class="pk-size">(4.8 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_apremilast/Apremilast_Okubo2021_typical_values_rse_for_model_parameters/Apremilast_Okubo2021_typical_values_rse_for_model_parameters_fmi.zip" download>Apremilast_Okubo2021_typical_values_rse_for_model_parameters_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_apremilast/Apremilast_Okubo2021_typical_values_rse_for_model_parameters/Apremilast_Okubo2021_typical_values_rse_for_model_parameters_matlab.zip" download>Apremilast_Okubo2021_typical_values_rse_for_model_parameters_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_apremilast/Apremilast_Okubo2021_typical_values_rse_for_model_parameters/Apremilast_Okubo2021_typical_values_rse_for_model_parameters_matlab_simbio.zip" download>Apremilast_Okubo2021_typical_values_rse_for_model_parameters_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
@@ -145,7 +144,7 @@ _All readers agree on the compared fields of this record._
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_apremilast/Apremilast_Okubo2021_typical_values_rse_for_model_parameters/Apremilast_Okubo2021_typical_values_rse_for_model_parameters.svg" alt="Apremilast_Okubo2021_typical_values_rse_for_model_parameters diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_apremilast/Apremilast_Okubo2021_typical_values_rse_for_model_parameters/Apremilast_Okubo2021_typical_values_rse_for_model_parameters.svg" alt="Apremilast_Okubo2021_typical_values_rse_for_model_parameters diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -158,4 +157,4 @@ _All readers agree on the compared fields of this record._
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 23:40 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 00:32 UTC</sub>

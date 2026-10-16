@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;adalimumab&quot;,&quot;href&quot;:&quot;drugs/drug_adalimumab/&quot;},{&quot;label&quot;:&quot;Ternant_2015 \u00b7 PD C-reactive protein&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Adalimumab_RodrguezFernndez2022_reference&quot;,&quot;label&quot;:&quot;Rodr\u00edguez-Fern\u00e1ndez_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_adalimumab/Adalimumab_RodrguezFernndez2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Adalimumab_Chan2020_reference&quot;,&quot;label&quot;:&quot;Chan_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_adalimumab/Adalimumab_Chan2020_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Adalimumab_van2024_reference&quot;,&quot;label&quot;:&quot;van_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_adalimumab/Adalimumab_van2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Adalimumab_RodrguezFernndez2022_reference&quot;,&quot;label&quot;:&quot;Rodr\u00edguez-Fern\u00e1ndez_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_adalimumab/Adalimumab_RodrguezFernndez2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Adalimumab_Ternant2015_reference&quot;,&quot;label&quot;:&quot;Ternant_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_adalimumab/Adalimumab_Ternant2015_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # C-reactive protein — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
@@ -14,17 +14,17 @@
 
 ## Record summary
 
-**As extracted:** Adalimumab (concentrations from the PK model of Chan_2020) drives C-reactive protein: indirect response — drug inhibits the production of C-reactive protein.
+**As extracted:** Adalimumab (concentrations from this paper's PK model) drives C-reactive protein (in mg l(-1)): indirect response — drug inhibits the production of C-reactive protein.
 
 **Model:** Model available in **Models**; browser simulation unavailable.
 
-> The paper does not provide full text to confirm the specific mechanism, but the record describes an indirect response model where adalimumab concentration (in mg l(-1)) inhibits the production of C-reactive protein (CRP) via a proportional effect. The model parameters listed in the record are a CRP input rate of 22.0 mg l(-1) day(-1) and an adalimumab concentration leading to a 50% decrease in kin (IC50) of 3.6 mg l(-1).
+> Adalimumab inhibits the production of C-reactive protein via an indirect response model, with a proportional effect on the input rate (kin). The stated parameters are a baseline CRP input of 22.0 mg L⁻¹ day⁻¹ and an IC50 of 3.6 mg L⁻¹ for the inhibition of kin.
 >
 > <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Ternant_2015`
 - **model family:** `indirect_response_i`
-- **driver:** `cited_pk`
+- **driver:** `pk_record`
 - **tier:** population
 - **effect:** inhibition/proportional
 

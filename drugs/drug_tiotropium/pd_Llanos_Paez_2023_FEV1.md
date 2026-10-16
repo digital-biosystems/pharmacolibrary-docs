@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03A&quot;,&quot;href&quot;:&quot;atc/R03A.md&quot;},{&quot;label&quot;:&quot;Tiotropium&quot;,&quot;href&quot;:&quot;drugs/drug_tiotropium/&quot;},{&quot;label&quot;:&quot;Llanos-Paez_2023 \u00b7 PD morning trough FEV1&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03A&quot;,&quot;href&quot;:&quot;atc/R03A.md&quot;},{&quot;label&quot;:&quot;Tiotropium&quot;,&quot;href&quot;:&quot;drugs/drug_tiotropium/&quot;},{&quot;label&quot;:&quot;Llanos-Paez_2023 \u00b7 PD forced expiratory volume in one second&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# morning trough FEV1 — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
+# forced expiratory volume in one second — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by ollama:gpt-oss:120b (not confirmed, agreement 0.571). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -13,13 +13,13 @@
 
 ## Record summary
 
-**As extracted:** Tiotropium (the dose) drives morning trough FEV1 (in L): direct Emax (saturable) effect.
+**As extracted:** Tiotropium (the dose) drives forced expiratory volume in one second (in L): direct Emax (saturable) effect.
 
 **Model:** No model was generated from this record.
 
-> Tiotropium dose was linked to morning trough FEV1 (L) in a model-based meta-analysis using a direct Emax-type dose-response (stimulation, additive on a reference effect Effref), with no effect-compartment or turnover mechanism described. Potency estimates were ED50 = 2.32 µg (0.84–6.44) with Effref = 121.9 mL (111.6–132.2) and Emax = 137.6 mL (126.7–160.7) in one parameterization, and ED50 = 0.74 µg (0.51–1.42) with Effref = 119.7 mL (111.6–127.8) and Emax = 137.6 mL (126.7–160.7) in another; no kin, kout, or ke0 values are given.
+> The model describes an additive Emax stimulation of FEV1 by tiotropium dose, with an ED50 of 2.32 ug and an Emax of 137.6 mL. The paper does not specify the underlying mechanism (e.g., production vs. elimination) or rate constants for this specific drug.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
 
 - **paper:** `Llanos-Paez_2023`
 - **model family:** `emax`
@@ -34,14 +34,8 @@ Llanos-Paez C et al., Joint longitudinal model-based meta-ana…, Journal of pha
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | ED50 | `Q321` · not captured | 2.32 (0.84–6.44) | ug | not captured | llm (not captured) | Llanos-Paez_2023:pdv3 |
-| PD (effect) | Effref | `Q320` · not captured | 121.9 (111.6–132.2) | mL | not captured | llm (not captured) | Llanos-Paez_2023:pdv3 |
-| PD (effect) | Emax | `Q320` · not captured | 137.6 (126.7–160.7) | mL | not captured | llm (not captured) | Llanos-Paez_2023:pdv3 |
-| PD (effect) | Effref | `Q320` · not captured | 116 (94.6–139.5) | mL | not captured | llm (not captured) | Llanos-Paez_2023:pdv3 |
-| PD (effect) | Emax | `Q320` · not captured | 131 (116.9–159.1) | mL | not captured | llm (not captured) | Llanos-Paez_2023:pdv3 |
-| PD (effect) | ED50 | `Q321` · not captured | 0.74 (0.51–1.42) | ug | not captured | llm (not captured) | Llanos-Paez_2023:pdv3 |
-| PD (effect) | Effref | `Q320` · not captured | 119.7 (111.6–127.8) | mL | not captured | llm (not captured) | Llanos-Paez_2023:pdv3 |
-| PD (effect) | Emax | `Q320` · not captured | 137.6 (126.7–160.7) | mL | not captured | llm (not captured) | Llanos-Paez_2023:pdv3 |
+| PD (effect) | ED50 | `Q321` · not captured | 2.32 | ug | not captured | llm (not captured) | Llanos-Paez_2023:pdv3 |
+| PD (effect) | Emax | `Q320` · not captured | 137.6 | mL | not captured | llm (not captured) | Llanos-Paez_2023:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -50,19 +44,19 @@ Llanos-Paez C et al., Joint longitudinal model-based meta-ana…, Journal of pha
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `einfracz:gpt-oss-120b` | not confirmed | 0.5 (3/6 fields) | 3 |
+| `ollama:gpt-oss:120b` | not confirmed | 0.571 (4/7 fields) | 3 |
 
 <details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `einfracz:gpt-oss-120b` | `driver_compound` | tiotropium | tiotropium – Handihaler (blinded) | mismatch |
-| `einfracz:gpt-oss-120b` | `parameters[Q320].value` | 137.6 (126.7–160.7) | 137.6 | mismatch |
-| `einfracz:gpt-oss-120b` | `parameters[Q321].value` | 0.74 (0.51–1.42) | 2.32 | mismatch |
+| `ollama:gpt-oss:120b` | `driver_compound` | tiotropium | Tiotropium – Handihaler | mismatch |
+| `ollama:gpt-oss:120b` | `parameters[Q100]` | not captured | 121.9 | only_one_extracted |
+| `ollama:gpt-oss:120b` | `parameters[Q321]` | 2.32 | not captured | only_one_extracted |
 
 </details>
 

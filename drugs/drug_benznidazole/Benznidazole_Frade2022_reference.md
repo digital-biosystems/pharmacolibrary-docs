@@ -17,19 +17,19 @@
 
 ### Reviewer guidance
 
-**The benznidazole model (CL 6.32 L/h, V 37.66 L, Ka 1.67 h-1) was held back because bioavailability F and lag time Tlag were left at library defaults instead of being estimated or justified from the paper.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The record reports benznidazole clearance, volume of distribution and absorption rate constant for Brazilian chronic Chagas disease patients, but the deviations list shows F and Tlag were not extracted from the paper and library placeholder values would be used instead. These defaults affect the simulated concentration profile yet are not supported by the paper, so the model was marked needs_review. The failed deviations check returned 'defaulted_parameters: not acceptable'. Extracted — benznidazole: CL 6.32 L/h, V 37.7 L, kabs 1.67 h-1.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — benznidazole: CL 6.32 L/h, V 37.7 L, kabs 1.67 h-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has benznidazole, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by glm-5.3-flash</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Frade VP et al., Population pharmacokinetic modeling of…, Revista do Instituto de Med… (2022)
   ·  DOI: [10.1590/S1678-9946202264004](https://doi.org/10.1590/S1678-9946202264004)
 
-<div class="pk-model-meta" hidden drug="benznidazole" model-id="Benznidazole_Frade2022_reference" status="needs_review" stale="false" population="Brazilian patients with chronic Chagas disease" measured-compound="benznidazole" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="benznidazole" model-id="Benznidazole_Frade2022_reference" status="needs_review" stale="false" population="adults with chronic Chagas disease" measured-compound="benznidazole" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.
@@ -41,9 +41,9 @@ Frade VP et al., Population pharmacokinetic modeling of…, Revista do Instituto
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL (L/h) | `Q22` · CL | 6.32 | L/h | 1.7555555555555556e-06 | [l] / [h] | 1.4 | exact (1.0) | t2:row1:col1, t2:row1:col2, t2:row1:col3 | — | not captured |
-| V (L) | `Q61` · V | 37.66 | L | 0.03766 | [l] | 21.4 | exact (1.0) | t2:row2:col1, t2:row2:col2, t2:row2:col3 | — | not captured |
-| Ka (h-1) | `Q49` · kabs | 1.67 | h-1 | 0.00046388888888888885 | [1] / [h] | 2.0 | exact (1.0) | t2:row3:col1, t2:row3:col2, t2:row3:col3 | — | not captured |
+| CL (L/h) | `Q22` · CL | 6.32 | L/h | 1.7555555555555556e-06 | [l] / [h] | not captured | exact (1.0) | t2:row1:col1, t2:row1:col2 | — | not captured |
+| V (L) | `Q61` · V | 37.66 | L | 0.03766 | [l] | not captured | exact (1.0) | t2:row2:col1, t2:row2:col2 | — | not captured |
+| Ka (h-1) | `Q49` · kabs | 1.67 | h-1 | 0.00046388888888888885 | [1] / [h] | not captured | exact (1.0) | t2:row3:col1, t2:row3:col2 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -56,18 +56,22 @@ Frade VP et al., Population pharmacokinetic modeling of…, Revista do Instituto
 - `defaulted_parameters`: ['F', 'Tlag']
 
 **Interpretation flags:**
+- competing summary columns for 'CL (L/h)'; not population strata
+- competing summary columns for 'V (L)'; not population strata
+- competing summary columns for 'Ka (h-1)'; not population strata
 - dropped value-less row: 'CL'
 - dropped value-less row: 'V'
 - dropped value-less row: 'Ka'
-- dropped value-less row: 'SD'
-- dropped value-less row: 'CV'
 - apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q22 (CL (L/h)); Q61 (V (L))
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=benznidazole
+- status held at route_to_review — not promoted
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
+- table t2: competing_summary_estimates
+- table t2: ambiguous_uncertainty_binding
 - LLM selected parameter table(s) 2
 
 ## Validation
@@ -101,13 +105,13 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['t2:row1:col1', 't2:row1:col2', 't2:row1:col3'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['t2:row3:col1', 't2:row3:col2', 't2:row3:col3'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['t2:row2:col1', 't2:row2:col2', 't2:row2:col3'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 6.32 | not captured | not captured | ['t2:row1:col1', 't2:row1:col2', 't2:row1:col3'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['t2:row1:col1', 't2:row1:col2'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['t2:row3:col1', 't2:row3:col2'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['t2:row2:col1', 't2:row2:col2'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 6.32 | not captured | not captured | ['t2:row1:col1', 't2:row1:col2'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 6.32 L/h | not captured | not captured | ['t2:row1:col1', 't2:row1:col2', 't2:row1:col3'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 37.7 L | not captured | not captured | ['t2:row2:col1', 't2:row2:col2', 't2:row2:col3'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 6.32 L/h | not captured | not captured | ['t2:row1:col1', 't2:row1:col2'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 37.7 L | not captured | not captured | ['t2:row2:col1', 't2:row2:col2'] |
 
 **Reviewer per-scenario checks:**
 
@@ -127,10 +131,10 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_benznidazole/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Frade_2022` / `Frade_2022::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_benznidazole/models/modelica/Benznidazole_Frade2022_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_benznidazole/models/modelica/Benznidazole_Frade2022_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_benznidazole/models/modelica/Benznidazole_Frade2022_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_benznidazole/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Frade_2022` / `Frade_2022::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_benznidazole/models/modelica/Benznidazole_Frade2022_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_benznidazole/models/modelica/Benznidazole_Frade2022_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_benznidazole/models/modelica/Benznidazole_Frade2022_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -139,7 +143,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_benznidazole/Benznidazole_Frade2022_reference/Benznidazole_Frade2022_reference_modelica.zip" download>Benznidazole_Frade2022_reference_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_benznidazole/Benznidazole_Frade2022_reference/Benznidazole_Frade2022_reference_modelica.zip" download>Benznidazole_Frade2022_reference_modelica.zip</a> <span class="pk-size">(4.5 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_benznidazole/Benznidazole_Frade2022_reference/Benznidazole_Frade2022_reference_fmi.zip" download>Benznidazole_Frade2022_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_benznidazole/Benznidazole_Frade2022_reference/Benznidazole_Frade2022_reference_matlab.zip" download>Benznidazole_Frade2022_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_benznidazole/Benznidazole_Frade2022_reference/Benznidazole_Frade2022_reference_matlab_simbio.zip" download>Benznidazole_Frade2022_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
@@ -148,11 +152,11 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_benznidazole/Benznidazole_Frade2022_reference/Benznidazole_Frade2022_reference.svg" alt="Benznidazole_Frade2022_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_benznidazole/Benznidazole_Frade2022_reference/Benznidazole_Frade2022_reference.svg" alt="Benznidazole_Frade2022_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 400 mg, single dose, first-order absorption (ka 1.67 /h, F 0.9). _The paper's dose was not captured; the default is the WHO ATC DDD 400 mg oral (P01CA02) (defined daily dose)._
+**Administration: oral** — 350 mg, single dose, first-order absorption (ka 1.67 /h, F 0.9). Dose in the paper: 350 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_benznidazole/Benznidazole_Frade2022_reference/Benznidazole_Frade2022_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_benznidazole/Benznidazole_Frade2022_reference/Benznidazole_Frade2022_reference_sim_controls.json"></dbs-fmusim>
 
@@ -161,4 +165,4 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 07:36 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 19:12 UTC</sub>

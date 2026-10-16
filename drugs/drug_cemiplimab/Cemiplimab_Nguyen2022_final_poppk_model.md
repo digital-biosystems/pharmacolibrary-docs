@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;cemiplimab&quot;,&quot;href&quot;:&quot;drugs/drug_cemiplimab/&quot;},{&quot;label&quot;:&quot;Nguyen_2022 \u00b7 final_poppk_model&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cemiplimab_Nguyen2022_tumor_type_study_a&quot;,&quot;label&quot;:&quot;Nguyen_2022_tumor_type_study_a&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cemiplimab/Cemiplimab_Nguyen2022_tumor_type_study_a.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # cemiplimab — `Cemiplimab_Nguyen2022_final_poppk_model`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.643). Primary extraction retained.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.643). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -16,19 +17,19 @@
 
 ### Reviewer guidance
 
-**Vss has no unit.**
+**C2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).**
 
-Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (equation variable), so that value has no SI equivalent. Extracted — cemiplimab: CL 0.254 L/day, Q 0.652 L/day, V1 3.35 L, V2 2.52 L, Vss 0.499.
+A reported unit could not be converted (equation variable), so that value has no SI equivalent. Extracted — cemiplimab: Q 0.652 L/day, V1 3.35 L, V2 2.52 L, CL -0.137, CL_ratio -1.11.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of clbcc: this record has none, the second reading -0.211; it also differs on 4 more fields. That field does not shape the model.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Nguyen JH et al., Population pharmacokinetics modeling an…, CPT: pharmacometrics & syst… (2022)
   ·  DOI: [10.1002/psp4.12855](https://doi.org/10.1002/psp4.12855)
 
-<div class="pk-model-meta" hidden drug="cemiplimab" model-id="Cemiplimab_Nguyen2022_final_poppk_model" status="needs_review" stale="false" population="patients with solid tumors, including recurrent or metastatic cervical cancer" measured-compound="cemiplimab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="cemiplimab" model-id="Cemiplimab_Nguyen2022_final_poppk_model" status="rejected" stale="false" population="adults with solid tumors (CSCC, BCC, NSCLC, R/M CC)" measured-compound="cemiplimab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.
@@ -36,16 +37,16 @@ Nguyen JH et al., Population pharmacokinetics modeling an…, CPT: pharmacometri
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| TVCL0, L/day | `Q22` · CL | 0.254 | L/day | 2.9398148148148146e-09 | [l] / [d] | not captured | llm (0.6) | psp412855-tbl-0001:row3:col1, psp412855-tbl-0001:row3:col2, psp412855-tbl-0001:row3:col3 | — | not captured |
+| TVCL0, L/day | `Q900` · equation variable | 0.254 | L/day | not captured | [l] / [d] | not captured | llm (0.6) | psp412855-tbl-0001:row3:col1, psp412855-tbl-0001:row3:col2, psp412855-tbl-0001:row3:col3 | — | not captured |
 | TVQ, L/day | `Q30` · Q | 0.652 | L/day | 7.546296296296296e-09 | [l] / [d] | not captured | tv_prefix (0.95) | psp412855-tbl-0001:row4:col1, psp412855-tbl-0001:row4:col2, psp412855-tbl-0001:row4:col3 | — | not captured |
 | TVV1, L | `Q63` · V1 | 3.35 | L | 0.00335 | [l] | not captured | tv_prefix (0.95) | psp412855-tbl-0001:row5:col1, psp412855-tbl-0001:row5:col2, psp412855-tbl-0001:row5:col3 | — | not captured |
 | TVV2, L | `Q64` · V2 | 2.52 | L | 0.00252 | [l] | not captured | tv_prefix (0.95) | psp412855-tbl-0001:row6:col1, psp412855-tbl-0001:row6:col2, psp412855-tbl-0001:row6:col3 | — | not captured |
-| TVT50, days | `Q900` · equation variable | 73.7 | days | not captured | [d] | not captured | llm (0.6) | psp412855-tbl-0001:row8:col1, psp412855-tbl-0001:row8:col2, psp412855-tbl-0001:row8:col3 | — | not captured |
-| VssWGTBL | `Q65` · Vss | 0.499 | not captured | not captured | not captured | not captured | llm (0.6) | psp412855-tbl-0001:row11:col1, psp412855-tbl-0001:row11:col2, psp412855-tbl-0001:row11:col3, psp412855-tbl-0001:footnote | — | not captured |
+| CLSEX | `Q22` · CL | -0.137 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | psp412855-tbl-0001:row12:col1, psp412855-tbl-0001:row12:col2, psp412855-tbl-0001:row12:col3 | — | not captured |
+| CLALB | `Q31` · CL_ratio | -1.11 | not captured | not captured | not captured | not captured | llm_corrected (0.6) | psp412855-tbl-0001:row15:col1, psp412855-tbl-0001:row15:col2, psp412855-tbl-0001:row15:col3 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -58,65 +59,46 @@ Nguyen JH et al., Population pharmacokinetics modeling an…, CPT: pharmacometri
 - table section residual_error: 'RE' routed out of structural estimates ('Residual variability')
 - table section iiv: 'ETA1 – CL_Q' routed out of structural estimates ('IIV')
 - table section iiv: 'ETA2 – V1_V2' routed out of structural estimates ('IIV')
-- table section iiv: 'OFV' routed out of structural estimates ('IIV')
+- table representations disagree for 'TVCL0, L/day'; source reconciliation required
+- table representations disagree for 'TVQ, L/day'; source reconciliation required
+- table representations disagree for 'TVV1, L'; source reconciliation required
+- table representations disagree for 'TVV2, L'; source reconciliation required
+- table representations disagree for 'TVEmax'; source reconciliation required
+- table representations disagree for 'TVT50, days'; source reconciliation required
+- table representations disagree for 'HILL'; source reconciliation required
+- table representations disagree for 'CLWGTBL'; source reconciliation required
+- table representations disagree for 'VssWGTBL'; source reconciliation required
+- table representations disagree for 'CLSEX'; source reconciliation required
+- table representations disagree for 'V1SEX'; source reconciliation required
+- table representations disagree for 'V1ALBBL'; source reconciliation required
+- table representations disagree for 'CLALB'; source reconciliation required
+- table representations disagree for 'CLALTBL'; source reconciliation required
+- table representations disagree for 'CLCSCC'; source reconciliation required
+- table representations disagree for 'CLBCC'; source reconciliation required
+- table representations disagree for 'EmaxBCC'; source reconciliation required
+- table representations disagree for 'T50OTHER'; source reconciliation required
 - dropped PD-category row 'TVEmax' → Q320 (Emax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['psp412855-tbl-0001:row7:col1', 'psp412855-tbl-0001:row7:col2', 'psp412855-tbl-0001:row7:col3'])
+- dropped PD-category row 'TVT50, days' → Q321 (EC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['psp412855-tbl-0001:row8:col1', 'psp412855-tbl-0001:row8:col2', 'psp412855-tbl-0001:row8:col3'])
 - dropped PD-category row 'HILL' → Q325 (Hill, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['psp412855-tbl-0001:row9:col1'])
-- dropped duplicate Q22 ('CLWGTBL', value '0.539') — already have one for this compound
-- dropped duplicate Q900 ('CLSEX', value '-0.137') — already have one for this compound
-- dropped duplicate Q900 ('V1SEX', value '-0.0801') — already have one for this compound
-- dropped duplicate Q63 ('V1ALBBL', value '-0.217') — already have one for this compound
-- dropped duplicate Q22 ('CLALB', value '-1.11') — already have one for this compound
-- dropped duplicate Q22 ('CLALTBL', value '-0.0729') — already have one for this compound
+- dropped unlinked row (NIL): 'CLWGTBL' — extend the ontology if this is a real PK parameter (source ['psp412855-tbl-0001:row10:col1', 'psp412855-tbl-0001:row10:col2', 'psp412855-tbl-0001:row10:col3'])
+- dropped duplicate Q900 ('VssWGTBL', value '0.499') — already have one for this compound
+- dropped unlinked row (NIL): 'V1SEX' — extend the ontology if this is a real PK parameter (source ['psp412855-tbl-0001:row13:col1', 'psp412855-tbl-0001:row13:col2', 'psp412855-tbl-0001:row13:col3'])
+- dropped unlinked row (NIL): 'V1ALBBL' — extend the ontology if this is a real PK parameter (source ['psp412855-tbl-0001:row14:col1', 'psp412855-tbl-0001:row14:col2', 'psp412855-tbl-0001:row14:col3'])
+- dropped unlinked row (NIL): 'CLALTBL' — extend the ontology if this is a real PK parameter (source ['psp412855-tbl-0001:row16:col1', 'psp412855-tbl-0001:row16:col2', 'psp412855-tbl-0001:row16:col3'])
 - dropped duplicate Q22 ('CLCSCC', value '-0.216') — already have one for this compound
 - dropped duplicate Q22 ('CLBCC', value '-0.211') — already have one for this compound
-- dropped PD-category row 'EmaxBCC' → Q320 (Emax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['psp412855-tbl-0001:row19:col1', 'psp412855-tbl-0001:row19:col2', 'psp412855-tbl-0001:row19:col3', 'psp412855-tbl-0001:footnote'])
-- dropped duplicate Q900 ('T50OTHER', value '-0.491') — already have one for this compound
-- implicit units: 'VssWGTBL' — the LLM proposed '1', whose dimension does not fit Q65; left unset
+- dropped unlinked row (NIL): 'EmaxBCC' — extend the ontology if this is a real PK parameter (source ['psp412855-tbl-0001:row19:col1', 'psp412855-tbl-0001:row19:col2', 'psp412855-tbl-0001:row19:col3'])
+- dropped PD-category row 'T50OTHER' → Q321 (EC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['psp412855-tbl-0001:row20:col1', 'psp412855-tbl-0001:row20:col2', 'psp412855-tbl-0001:row20:col3'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=cemiplimab
-- population split: 'final poppk model' subgroup of Nguyen_2022 (paper reports 3 populations: final poppk model, mean (cv%), tumor type (study) a)
+- status held at route_to_review — not promoted
+- population split: 'final poppk model' subgroup of Nguyen_2022 (paper reports 2 populations: final poppk model, tumor type (study) a)
 - molar mass: none found for 'cemiplimab' — its concentrations stay mass-only
 
 **Extraction notes:**
-- unparsed cell psp412855-tbl-0001:row3:col4 = '0.246, 0.262'
-- unparsed cell psp412855-tbl-0001:row3:col7 = '0.241, 0.269'
-- unparsed cell psp412855-tbl-0001:row4:col4 = '0.606, 0.699'
-- unparsed cell psp412855-tbl-0001:row4:col7 = '0.581, 0.728'
-- unparsed cell psp412855-tbl-0001:row5:col4 = '3.27, 3.44'
-- unparsed cell psp412855-tbl-0001:row5:col7 = '3.27, 3.44'
-- unparsed cell psp412855-tbl-0001:row6:col4 = '2.44, 2.60'
-- unparsed cell psp412855-tbl-0001:row6:col7 = '2.29, 2.81'
-- unparsed cell psp412855-tbl-0001:row7:col4 = '−0.190, −0.157'
-- unparsed cell psp412855-tbl-0001:row7:col7 = '−0.232, −0.136'
-- unparsed cell psp412855-tbl-0001:row8:col4 = '62.8, 84.7'
-- unparsed cell psp412855-tbl-0001:row8:col7 = '46.2, 245'
-- unparsed cell psp412855-tbl-0001:row10:col4 = '0.442, 0.637'
-- unparsed cell psp412855-tbl-0001:row10:col7 = '0.443, 0.639'
-- unparsed cell psp412855-tbl-0001:row11:col4 = '0.401, 0.597'
-- unparsed cell psp412855-tbl-0001:row11:col7 = '0.412, 0.569'
-- unparsed cell psp412855-tbl-0001:row12:col4 = '−0.172, −0.101'
-- unparsed cell psp412855-tbl-0001:row12:col7 = '−0.167, −0.0925'
-- unparsed cell psp412855-tbl-0001:row13:col4 = '−0.117, −0.0435'
-- unparsed cell psp412855-tbl-0001:row13:col7 = '−0.115, −0.0471'
-- unparsed cell psp412855-tbl-0001:row14:col4 = '−0.338, −0.0961'
-- unparsed cell psp412855-tbl-0001:row14:col7 = '−0.361, −0.0870'
-- unparsed cell psp412855-tbl-0001:row15:col4 = '−1.16, −1.06'
-- unparsed cell psp412855-tbl-0001:row15:col7 = '−1.24, −0.984'
-- unparsed cell psp412855-tbl-0001:row16:col4 = '−0.105, −0.0411'
-- unparsed cell psp412855-tbl-0001:row16:col7 = '−0.108, −0.0370'
-- unparsed cell psp412855-tbl-0001:row17:col4 = '−0.256, −0.176'
-- unparsed cell psp412855-tbl-0001:row17:col7 = '−0.257, −0.181'
-- unparsed cell psp412855-tbl-0001:row18:col4 = '−0.261, −0.160'
-- unparsed cell psp412855-tbl-0001:row18:col7 = '−0.261, −0.158'
-- unparsed cell psp412855-tbl-0001:row19:col4 = '−1.09, −0.657'
-- unparsed cell psp412855-tbl-0001:row19:col7 = '−1.00, −0.517'
-- unparsed cell psp412855-tbl-0001:row20:col4 = '−0.608, −0.374'
-- unparsed cell psp412855-tbl-0001:row20:col7 = '−0.987, −0.169'
-- unparsed cell psp412855-tbl-0001:row22:col4 = '0.240, 0.242 d'
-- unparsed cell psp412855-tbl-0001:row22:col7 = '0.227, 0.258 d'
-- unparsed cell psp412855-tbl-0001:row24:col4 = '0.0822, 0.0963'
-- unparsed cell psp412855-tbl-0001:row24:col7 = '0.0759, 0.101'
-- unparsed cell psp412855-tbl-0001:row25:col4 = '0.0681, 0.0737'
-- unparsed cell psp412855-tbl-0001:row25:col7 = '0.0459, 0.105'
+- table psp412855-tbl-0001: ragged_grid
+- table psp412855-tbl-0001: unparsed_numeric_cell
+- table psp412855-tbl-0001: representations disagree; selected evidence retained, not merged
+- table Nguyen_2022_table_2: ragged_grid
 - companion parameter table 2 transcribed (120 record(s), model stage 'final')
 - LLM selected parameter table(s) 2
 - dropped sensitivity-analysis table(s) 1 from the LLM selection — perturbations of a model, not a model
@@ -155,15 +137,15 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C1_half_life_beta | pass | 19.7 | 17.281 | 0.8772 | 0.25 | reported t½β |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp412855-tbl-0001:row3:col1', 'psp412855-tbl-0001:row3:col2', 'psp412855-tbl-0001:row3:col3'] |
+| C2_base_sign_Q22 | fail | not captured | -0.137 | not captured | not captured | not captured |
+| C2_base_sign_Q31 | fail | not captured | -1.11 | not captured | not captured | not captured |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp412855-tbl-0001:row4:col1', 'psp412855-tbl-0001:row4:col2', 'psp412855-tbl-0001:row4:col3'] |
 | C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp412855-tbl-0001:row5:col1', 'psp412855-tbl-0001:row5:col2', 'psp412855-tbl-0001:row5:col3'] |
 | C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp412855-tbl-0001:row6:col1', 'psp412855-tbl-0001:row6:col2', 'psp412855-tbl-0001:row6:col3'] |
-| C5_unit_missing_Q65 | fail | [length] ** 3 | not captured | not captured | not captured | ['psp412855-tbl-0001:row11:col1', 'psp412855-tbl-0001:row11:col2', 'psp412855-tbl-0001:row11:col3', 'psp412855-tbl-0001:footnote'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.254 | not captured | not captured | ['psp412855-tbl-0001:row3:col1', 'psp412855-tbl-0001:row3:col2', 'psp412855-tbl-0001:row3:col3'] |
+| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp412855-tbl-0001:row12:col1', 'psp412855-tbl-0001:row12:col2', 'psp412855-tbl-0001:row12:col3'] |
+| C5_unit_missing_Q31 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp412855-tbl-0001:row15:col1', 'psp412855-tbl-0001:row15:col2', 'psp412855-tbl-0001:row15:col3'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | -0.137 | not captured | not captured | ['psp412855-tbl-0001:row12:col1', 'psp412855-tbl-0001:row12:col2', 'psp412855-tbl-0001:row12:col3'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.0106 L/h | not captured | not captured | ['psp412855-tbl-0001:row3:col1', 'psp412855-tbl-0001:row3:col2', 'psp412855-tbl-0001:row3:col3'] |
 | C9_phys_window_Q63 | pass | volume within physiological range | 3.35 L | not captured | not captured | ['psp412855-tbl-0001:row5:col1', 'psp412855-tbl-0001:row5:col2', 'psp412855-tbl-0001:row5:col3'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 2.52 L | not captured | not captured | ['psp412855-tbl-0001:row6:col1', 'psp412855-tbl-0001:row6:col2', 'psp412855-tbl-0001:row6:col3'] |
 
@@ -174,24 +156,14 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_cemiplimab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Nguyen_2022` / `Nguyen_2022::final_poppk_model`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_cemiplimab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Nguyen_2022` / `Nguyen_2022::final_poppk_model`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-</tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -200,4 +172,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 10:52 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 18:35 UTC</sub>

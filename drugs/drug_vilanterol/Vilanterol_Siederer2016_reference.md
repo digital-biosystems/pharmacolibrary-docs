@@ -4,7 +4,7 @@
 
 # Vilanterol — `Vilanterol_Siederer2016_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333), gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -20,7 +20,7 @@
 
 The parameter labelled 'mean differences' carries a value of 144.0 mL for vilanterol, which falls outside the physiological window for a volume of distribution and suggests the reported value was extracted with the wrong unit or scale. The other rate constants (kabs, kel, k21, each 1 h−1) and the dose-normalised AUC carry no extracted values, so the implausible volume is the sole quantitative basis for rejection. Extracted — vilanterol: kabs 1 h−1, kel 1 h−1, k21 1 h−1, V 144 mL.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of 100: this record has 1, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has vilanterol, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -196,14 +196,15 @@ Siederer S et al., Population Pharmacokinetics of Inhaled…, European journal o
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss:120b` | not confirmed | 0.333 (4/12 fields) | 8 |
 | `gpt-oss-120b` | not confirmed | 0.6 (6/10 fields) | 4 |
 
-<details><summary>4 field discrepancies</summary>
+<details><summary>12 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -211,6 +212,14 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | `gpt-oss-120b` | `parameters[200]` | 1 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[ff dosea/race1b].parameter_id` | Q189 | Q88 | mismatch |
 | `gpt-oss-120b` | `parameters[mean differences]` | 144.0 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `model.links` | [] | [['', '', '']] | mismatch |
+| `gpt-oss:120b` | `parameters[100].parameter_id` | Q47 | Q49 | mismatch |
+| `gpt-oss:120b` | `parameters[200]` | 1 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[50].parameter_id` | Q49 | Q50 | mismatch |
+| `gpt-oss:120b` | `parameters[ff dosea/race1b].parameter_id` | Q189 | Q88 | mismatch |
+| `gpt-oss:120b` | `parameters[mean differences]` | 144.0 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | vilanterol | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | vilanterol | unknown | mismatch |
 
 </details>
 
@@ -242,7 +251,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_vilanterol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Siederer_2016` / `Siederer_2016::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_vilanterol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Siederer_2016` / `Siederer_2016::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

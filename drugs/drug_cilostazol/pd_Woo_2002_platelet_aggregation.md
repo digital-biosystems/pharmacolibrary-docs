@@ -17,15 +17,15 @@
 
 **Model:** No model was generated from this record.
 
-> The record indicates that cilostazol concentrations (ng/ml) inhibit platelet aggregation (%) via a sigmoid Emax model, but the paper excerpts are unavailable to confirm the specific mechanism or provide key potency and rate values.
+> Cilostazol plasma concentrations (ng/ml) were described as acting on platelet aggregation (%) via a sigmoid Emax model representing an inhibitory effect. The specific mechanism (e.g., production vs. elimination) and key potency or rate parameters (IC50, Imax, ke0) are not stated in the available paper excerpts.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Woo_2002`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`
 - **tier:** descriptive
-- **effect:** inhibition/proportional
+- **effect:** inhibition/unknown
 
 ## Citation
 Woo SK et al., Pharmacokinetic and pharmacodynamic mod…, Clinical pharmacology and t… (2002)
@@ -36,7 +36,7 @@ _No resolved parameters._
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|

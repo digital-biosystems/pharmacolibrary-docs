@@ -18,9 +18,9 @@
 
 **Model:** No model was generated from this record.
 
-> Donepezil concentrations (nM, from the cited PK source Jung_2022) stimulate EFS-evoked cholinergically mediated contractions of human colon, described by an Emax model with a maximum increase of 477%; no IC50/EC50 or mechanism beyond this stimulation is stated in the available excerpts.
+> The record indicates that donepezil concentrations act on EFS-evoked cholinergically mediated contractions of human colon via an Emax model to stimulate the response, with a maximum increase of 477%. The paper does not provide further details on the mechanism or additional parameters.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Broad_2013`
 - **model family:** `emax`

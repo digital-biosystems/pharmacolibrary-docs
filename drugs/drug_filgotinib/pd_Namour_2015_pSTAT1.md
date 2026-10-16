@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;filgotinib&quot;,&quot;href&quot;:&quot;drugs/drug_filgotinib/&quot;},{&quot;label&quot;:&quot;Namour_2015 \u00b7 PD pSTAT1-positive cells&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;filgotinib&quot;,&quot;href&quot;:&quot;drugs/drug_filgotinib/&quot;},{&quot;label&quot;:&quot;Namour_2015 \u00b7 PD IL-6-induced phosphorylation of signal-transducer and activator of transcription 1&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# pSTAT1-positive cells — PD  <span class="pk-badge pk-badge--green">extracted</span>
+# IL-6-induced phosphorylation of signal-transducer and activator of transcription 1 — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -13,11 +13,11 @@
 
 ## Record summary
 
-**As extracted:** Filgotinib and metabolite (measured concentrations) drive pSTAT1-positive cells (in %): direct sigmoid Emax (Hill) effect.
+**As extracted:** Filgotinib, its active metabolite (measured concentrations) drive IL-6-induced phosphorylation of signal-transducer and activator of transcription 1: direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
 
-> Filgotinib and its metabolite plasma concentrations (ng/mL) directly inhibit the percentage of pSTAT1-positive cells via a sequential sigmoid Emax model, without an effect compartment. The reported IC50 values are 293 ng/mL for filgotinib and 1,686 ng/mL for the metabolite, with a Hill coefficient (H) of 1.97.
+> The model describes the sequential direct inhibition of IL-6-induced pSTAT1 phosphorylation by the plasma concentrations of filgotinib and its active metabolite using a sigmoid Emax mechanism. The paper states an IC50 of 293 ng/mL for filgotinib and 1,686 ng/mL for the metabolite, with a Hill coefficient (log H) of 0.680.
 >
 > <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
@@ -35,11 +35,9 @@ Namour F et al., Pharmacokinetics and Pharmacokinetic/Ph…, Clinical pharmacoki
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
 | PD (effect) | pSTAT1BL | `Q324` · not captured | 22.3 | not captured | not captured | llm (not captured) | Namour_2015:pdv3 |
-| PD (effect) | IC50,P | `Q322` · not captured | 293 | ng/mL | not captured | llm (not captured) | Namour_2015:pdv3 |
-| PD (effect) | IC50,M | `Q322` · not captured | 1,686 | ng/mL | not captured | llm (not captured) | Namour_2015:pdv3 |
-| PD (effect) | H | `Q325` · not captured | 1.97 | not captured | not captured | llm (not captured) | Namour_2015:pdv3 |
-| variability | Variance of additive residual variability component | `Q315` · not captured | 2.11 | not captured | not captured | llm (not captured) | Namour_2015:pdv3 |
-| variability | Variance of proportional residual variability component | `Q315` · not captured | 0.198 | not captured | not captured | llm (not captured) | Namour_2015:pdv3 |
+| PD (effect) | log IC50,P | `Q322` · not captured | 5.68 | ng/mL | not captured | llm (not captured) | Namour_2015:pdv3 |
+| PD (effect) | log IC50,M | `Q322` · not captured | 7.43 | ng/mL | not captured | llm (not captured) | Namour_2015:pdv3 |
+| PD (effect) | log H | `Q325` · not captured | 0.680 | not captured | not captured | llm (not captured) | Namour_2015:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>

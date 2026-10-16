@@ -4,7 +4,7 @@
 
 # grepafloxacin — `Grepafloxacin_Pfister2003_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.667). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667), gpt-oss-120b (partly confirmed, agreement 0.667). Primary extraction retained.">cross-check: partial 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -20,9 +20,9 @@
 
 **C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-Extracted — grepafloxacin: CL 0.01 ml/min.
+A reported unit could not be converted (Kp), so that value has no SI equivalent. Extracted — grepafloxacin: V1 230 ml, V2 4.7 ml, Q 31.7 ml/min, CL 22.4 ml/min, Kp 16.9 %.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of blood‐csf diffusion clearance: this record has none, the second reading 0.0058; it also differs on 1 more field. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of average influx clearance: this record has none, the second reading 0.0088; it also differs on 1 more field. That field does not shape the model.
 
 <sub>the checker's own wording — not yet put into words by an LLM</sub>
 
@@ -30,10 +30,10 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Pfister M et al., Modeling of transfer kinetics at the se…, Antimicrobial agents and ch… (2003)
   ·  DOI: [10.1128/AAC.47.1.138-143.2003](https://doi.org/10.1128/AAC.47.1.138-143.2003)
 
-<div class="pk-model-meta" hidden drug="grepafloxacin" model-id="Grepafloxacin_Pfister2003_reference" status="rejected" stale="false" population="rabbits with experimental pneumococcal meningitis" measured-compound="grepafloxacin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="grepafloxacin" model-id="Grepafloxacin_Pfister2003_reference" status="rejected" stale="false" population="rabbits with pneumococcal meningitis" measured-compound="grepafloxacin" parameterization="mechanistic" topology="2C"></div>
 
-**Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 1 extracted.
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -42,7 +42,11 @@ Pfister M et al., Modeling of transfer kinetics at the se…, Antimicrobial agen
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL bulk | `Q22` · CL | 0.01 | ml/min | 1.6666666666666666e-10 | L/h | not captured | boundary (0.8) | Pfister_2003:other_prose | — | not captured |
+| Central volume of distribution (ml) | `Q63` · V1 | 230 | ml | 0.00022999999999999998 | [ml] | not captured | boundary_compartment (0.9) | Pfister_2003_table_p3_1:row1:col1, Pfister_2003_table_p3_1:row1:col2 | — | not captured |
+| Peripheral volume of distribution (ml) | `Q64` · V2 | 4.7 | ml | 4.7e-06 | [ml] | not captured | boundary_compartment (0.9) | Pfister_2003_table_p3_1:row2:col2 | — | not captured |
+| Intercompartmental clearance between central and peripheral compartments (ml/min) | `Q30` · Q | 31.7 | ml/min | 5.283333333333333e-07 | [ml] / [min] | not captured | exact (1.0) | Pfister_2003_table_p3_1:row3:col1 | — | not captured |
+| Total clearance (ml/min) | `Q22` · CL | 22.4 | ml/min | 3.7333333333333334e-07 | [ml] / [min] | not captured | exact (1.0) | Pfister_2003_table_p3_1:row4:col1, Pfister_2003_table_p3_1:row4:col2 | — | not captured |
+| CSF/serum partition coeﬃcient (% )c | `Q410` · Kp | 16.9 | % | not captured | [%] | not captured | llm_confirmed (0.6) | Pfister_2003_table_p3_1:row10:col1 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -52,31 +56,34 @@ Pfister M et al., Modeling of transfer kinetics at the se…, Antimicrobial agen
 ## Departures & gaps
 
 **Interpretation flags:**
-- salvaged Q22 ('CL bulk'=0.01) from results prose — parameter table was unreadable
+- dropped duplicate Q22 ('Inﬂux clearance (ml/min)', value '0.0055') — already have one for this compound
+- dropped duplicate Q22 ('Active eﬄux clearance (ml/min)', value '0.017') — already have one for this compound
+- dropped unlinked row (NIL): 'Eﬄux clearance (ml/min)' — extend the ontology if this is a real PK parameter (source ['Pfister_2003_table_p3_1:row9:col1'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=grepafloxacin
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at route_to_review — not promoted
 
 **Extraction notes:**
+- table Pfister_2003_table_p3_1: ambiguous_numeric_format
+- table Pfister_2003_table_p3_1: unparsed_numeric_cell
 - LLM selected parameter table(s) 1
-- LLM region Pfister_2003:results_prose: Error code: 429 - {'error': {'message': 'Rate limit exceeded for api_key: 8d79104cac3d0b5a8019d9c3dd60ff02e7a84591fb3552ddb3bbcabd52b31d23. Limit type: max_parallel_requests. Current limit: 4, Remaining: 0. Limit resets at: 2026-10-07 12:55:57 UTC', 'type': 'throttling_error', 'param': None, 'code': '429'}}
-- LLM region Pfister_2003:discussion_prose: Error code: 429 - {'error': {'message': 'Rate limit exceeded for api_key: 8d79104cac3d0b5a8019d9c3dd60ff02e7a84591fb3552ddb3bbcabd52b31d23. Limit type: max_parallel_requests. Current limit: 4, Remaining: 0. Limit resets at: 2026-10-07 12:56:01 UTC', 'type': 'throttling_error', 'param': None, 'code': '429'}}
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss:120b` | partly confirmed | 0.667 (4/6 fields) | 2 |
 | `gpt-oss-120b` | partly confirmed | 0.667 (4/6 fields) | 2 |
 
-<details><summary>2 field discrepancies</summary>
+<details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `parameters[blood‐csf diffusion clearance]` | not captured | 0.0058 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[cl bulk]` | 0.01 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[average influx clearance]` | not captured | 0.0088 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cl bulk]` | 0.01 | not captured | only_one_extracted |
 
 </details>
 
@@ -90,12 +97,19 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.01 | not captured | not captured | ['Pfister_2003:other_prose'] |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Pfister_2003_table_p3_1:row4:col1', 'Pfister_2003_table_p3_1:row4:col2'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Pfister_2003_table_p3_1:row3:col1'] |
+| C5_dimension_Q410 | pass | dimensionless | not captured | not captured | not captured | ['Pfister_2003_table_p3_1:row10:col1'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Pfister_2003_table_p3_1:row1:col1', 'Pfister_2003_table_p3_1:row1:col2'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Pfister_2003_table_p3_1:row2:col2'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 22.4 | not captured | not captured | ['Pfister_2003_table_p3_1:row4:col1', 'Pfister_2003_table_p3_1:row4:col2'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | fail | clearance within physiological range | 0.0006 L/h | not captured | not captured | ['Pfister_2003:other_prose'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 1.34 L/h | not captured | not captured | ['Pfister_2003_table_p3_1:row4:col1', 'Pfister_2003_table_p3_1:row4:col2'] |
+| C9_phys_window_Q63 | fail | volume within physiological range | 0.23 L | not captured | not captured | ['Pfister_2003_table_p3_1:row1:col1', 'Pfister_2003_table_p3_1:row1:col2'] |
+| C9_phys_window_Q64 | fail | volume within physiological range | 0.0047 L | not captured | not captured | ['Pfister_2003_table_p3_1:row2:col2'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -104,7 +118,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_grepafloxacin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Pfister_2003` / `Pfister_2003::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_grepafloxacin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Pfister_2003` / `Pfister_2003::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -120,4 +134,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 12:25 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 23:09 UTC</sub>

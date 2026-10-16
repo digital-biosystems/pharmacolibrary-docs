@@ -28,7 +28,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Li J et al., Ethnic Sensitivity Assessment of Mosune…, Clinical and translational… (2025)
   ·  DOI: [10.1111/cts.70211](https://doi.org/10.1111/cts.70211)
 
-<div class="pk-model-meta" hidden drug="mosunetuzumab" model-id="Mosunetuzumab_Li2025_global_study_go29781_group_b_dose_expan" status="needs_review" stale="false" population="Chinese patients with relapsed or refractory follicular lymphoma" measured-compound="mosunetuzumab" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="mosunetuzumab" model-id="Mosunetuzumab_Li2025_global_study_go29781_group_b_dose_expan" status="needs_review" stale="false" population="Chinese patients with relapsed/refractory follicular lymphoma" measured-compound="mosunetuzumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.
@@ -40,9 +40,9 @@ Li J et al., Ethnic Sensitivity Assessment of Mosune…, Clinical and translatio
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Half‐life (day) | `Q57` · t1/2z | 81 | day | 6998400.0 | [d] | not captured | llm (0.6) | Li_2025_table_2:row1:col5 | — | not captured |
-| Tmax (day) | `Q56` · tmax | 86 | day | 7430400.0 | [d] | not captured | exact (1.0) | Li_2025_table_2:row2:col5 | — | not captured |
-| Cmax (μg/mL) | `Q32` · Cmax | 86 | μg/mL | not captured | [µg] / [ml] | not captured | exact (1.0) | Li_2025_table_2:row3:col5 | — | not captured |
+| Half‐life (day) | `Q57` · t1/2z | 81 | day | 6998400.0 | [d] | not captured | llm (0.6) | Li_2025_table_2:row4:col2 | — | not captured |
+| Tmax (day) | `Q56` · tmax | 86 | day | 7430400.0 | [d] | not captured | exact (1.0) | Li_2025_table_2:row4:col3 | — | not captured |
+| Cmax (μg/mL) | `Q32` · Cmax | 86 | μg/mL | not captured | [µg] / [ml] | not captured | exact (1.0) | Li_2025_table_2:row4:col4 | — | not captured |
 | AUC0–42 (day·μg/mL) | `Q19` · AUCt | 81 | day·μg/mL | not captured | [[d] · [µg]] / [ml] | not captured | llm (0.6) | Li_2025_table_2:row4:col5 | — | not captured |
 | linear CL estimate | `Q22` · CL | 0.725 | L/day | 8.391203703703704e-09 | L/h | not captured | review_gapfill (0.7) | Jamois_2025:review | — | not captured |
 
@@ -55,31 +55,21 @@ Li J et al., Ethnic Sensitivity Assessment of Mosune…, Clinical and translatio
 
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=mosunetuzumab
-- population split: 'global study go29781 group b dose expansion cohort patients with r/r fl (n = 90)' subgroup of Li_2025 (paper reports 3 populations: china study yo43555 (n = 17), global study go29781 group b dose expansion cohort patients with r/r fl (n = 90), mean)
+- population split: 'global study go29781 group b dose expansion cohort patients with r/r fl (n = 90)' subgroup of Li_2025 (paper reports 2 populations: china study yo43555 (n = 17), global study go29781 group b dose expansion cohort patients with r/r fl (n = 90))
 - molar mass: none found for 'mosunetuzumab' — its concentrations stay mass-only
 - gap-filled Q22 (CL) from Jamois_2025's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- transposed table cts70211-tbl-0003: parameters were across the columns, populations/subgroups down the first column — transposed for parsing
-- unparsed cell cts70211-tbl-0003:row1:col4 = '0.436 (0.453) {0.209} [0.317–0.553]'
-- transposed table Li_2025_table_2: parameters were across the columns, populations/subgroups down the first column — transposed for parsing
+- table Li_2025_table_p6_1: unparsed_numeric_cell
+- transposed table Li_2025_table_p6_1: logical view retains original source coordinates
+- final table cts70211-tbl-0003: no supported point estimates; targeted recovery unresolved
+- table Li_2025_table_2: unbound_uncertainty
+- table Li_2025_table_2: ragged_grid
+- transposed table Li_2025_table_2: logical view retains original source coordinates
 - companion parameter table 2 transcribed (32 record(s))
-- unparsed cell Li_2025_table_4:row0:col3 = '127 (145) {0.582} [35.0–210]'
-- unparsed cell Li_2025_table_4:row0:col4 = '14.1 (14.9) {0.472} [5.92–23.9]'
-- unparsed cell Li_2025_table_4:row0:col5 = '48.5 (51.0) {0.265} [29.3–62.6]'
-- unparsed cell Li_2025_table_4:row1:col3 = '123 (144) {0.600} [34.1–205]'
-- unparsed cell Li_2025_table_4:row1:col4 = '13.7 (14.7) {0.480} [5.90–23.5]'
-- unparsed cell Li_2025_table_4:row1:col5 = '47.8 (50.7) {0.271} [29.2–62.2]'
-- unparsed cell Li_2025_table_4:row2:col2 = '172 (175) {0.168} [137–211]'
-- unparsed cell Li_2025_table_4:row2:col3 = '19.0 (19.3) {0.239} [13.3–24.1]'
-- unparsed cell Li_2025_table_4:row2:col4 = '56.7 (57.5) {0.106} [48.0–62.8]'
-- unparsed cell Li_2025_table_4:row3:col3 = '158 (168) {0.298} [96.9–223]'
-- unparsed cell Li_2025_table_4:row3:col4 = '17.6 (17.4) {0.295} [10.8–24.3]'
-- unparsed cell Li_2025_table_4:row3:col5 = '54.6 (54.9) {0.137} [43.1–62.9]'
-- companion parameter table 4 transcribed (4 record(s))
-- LLM selected parameter table(s) 2, 3, 4
+- LLM selected parameter table(s) 2, 3
 
 ## Validation
 
@@ -113,9 +103,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q19 | pass | [time] * [mass] / [length] ** 3 | not captured | not captured | not captured | ['Li_2025_table_2:row4:col5'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Jamois_2025:review'] |
-| C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Li_2025_table_2:row3:col5'] |
-| C5_dimension_Q56 | pass | [time] | not captured | not captured | not captured | ['Li_2025_table_2:row2:col5'] |
-| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Li_2025_table_2:row1:col5'] |
+| C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Li_2025_table_2:row4:col4'] |
+| C5_dimension_Q56 | pass | [time] | not captured | not captured | not captured | ['Li_2025_table_2:row4:col3'] |
+| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Li_2025_table_2:row4:col2'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.725 | not captured | not captured | ['Jamois_2025:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.0302 L/h | not captured | not captured | ['Jamois_2025:review'] |
@@ -127,7 +117,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_mosunetuzumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Li_2025` / `Li_2025::global_study_go29781_group_b_dose_expansion_cohort_patients_with_r_r_fl`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_mosunetuzumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Li_2025` / `Li_2025::global_study_go29781_group_b_dose_expansion_cohort_patients_with_r_r_fl`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -153,4 +143,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 17:11 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 03:42 UTC</sub>

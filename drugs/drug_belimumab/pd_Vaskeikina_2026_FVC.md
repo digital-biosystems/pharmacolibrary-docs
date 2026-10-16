@@ -13,11 +13,11 @@
 
 ## Record summary
 
-**As extracted:** Belimumab (the dose) drives forced vital capacity (in % predicted): direct Emax (saturable) effect.
+**As extracted:** Treatment arm (belimumab) (the dose) drives forced vital capacity (in % predicted): direct Emax (saturable) effect.
 
 **Model:** No model was generated from this record.
 
-> The model uses an Emax structural function to describe the longitudinal trajectory of forced vital capacity (FVC, % predicted) in response to belimumab treatment, indicating a stimulatory effect with an estimated improvement of 10.38. The paper specifies that the time to 50% maximum change is 27.49 weeks, but does not report specific drug concentrations, IC50/EC50, or mechanistic rate constants (e.g., ke0, kin/kout) for belimumab.
+> Belimumab treatment arm improves forced vital capacity (FVC, % predicted) via an additive Emax model with a maximum estimated effect of 10.38 % predicted relative to a comparator maximum change of -2.29 % predicted. The model estimates a time to 50% maximum effect (ET50) of 27.49 weeks, though the paper does not explicitly detail the underlying physiological mechanism beyond the structural Emax function.
 >
 > <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
@@ -25,7 +25,7 @@
 - **model family:** `emax`
 - **driver:** `dose_only`
 - **tier:** population
-- **effect:** stimulation/unknown
+- **effect:** stimulation/additive
 
 ## Citation
 Vaskeikina M et al., Systematic Review and Model-Based Meta-…, Pharmaceutics (2026)
@@ -34,8 +34,10 @@ Vaskeikina M et al., Systematic Review and Model-Based Meta-…, Pharmaceutics (
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | Effect of belimumab on FVC improvement | `Q320` · not captured | 10.38 | not captured | not captured | llm (not captured) | Vaskeikina_2026:pdv3 |
-| — | Time to 50% maximum change in mRSS and FVC in weeks | `Q100` · not captured | 27.49 | weeks | not captured | nil (not captured) | Vaskeikina_2026:pdv3 |
+| model term | Effect of belimumab on FVC improvement | `Q900` · not captured | 10.38 | % predicted | not captured | llm (not captured) | Vaskeikina_2026:pdv3 |
+| model term | Maximum change in FVC of the comparator in % | `Q900` · not captured | -2.29 | % predicted | not captured | llm (not captured) | Vaskeikina_2026:pdv3 |
+| model term | Time to 50% maximum change in mRSS and FVC in weeks | `Q900` · not captured | 27.49 | weeks | not captured | llm (not captured) | Vaskeikina_2026:pdv3 |
+| PD (effect) | ET50 | `Q321` · not captured | 27.49 | weeks | not captured | review_gapfill (not captured) | Vaskeikina_2026:review |
 | variability | Standard deviation of BSV for change in FVC | `Q312` · not captured | 1.97 | not captured | not captured | llm (not captured) | Vaskeikina_2026:pdv3 |
 | variability | Standard deviation of BTAV for change in FVC | `Q312` · not captured | 9.94 | not captured | not captured | llm (not captured) | Vaskeikina_2026:pdv3 |
 | variability | Standard deviation of residual error for change in FVC | `Q315` · not captured | 4.42 | not captured | not captured | llm (not captured) | Vaskeikina_2026:pdv3 |

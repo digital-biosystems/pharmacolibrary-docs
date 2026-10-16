@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;sotalol&quot;,&quot;href&quot;:&quot;drugs/drug_sotalol/&quot;},{&quot;label&quot;:&quot;Salazar_1997 \u00b7 PD Q-Tc interval&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sotalol_Yellepeddi2025_reference&quot;,&quot;label&quot;:&quot;Yellepeddi_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sotalol/Sotalol_Yellepeddi2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sotalol_Yellepeddi2025_reference&quot;,&quot;label&quot;:&quot;Yellepeddi_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sotalol/Sotalol_Yellepeddi2025_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Dubois_2016_Displacement&quot;,&quot;label&quot;:&quot;Dubois_2016 \u00b7 Displacement&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_sotalol/pd_Dubois_2016_Displacement.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Q-Tc interval — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
@@ -18,14 +18,14 @@
 
 **Model:** No model was generated from this record.
 
-> The record describes a sigmoid Emax model where d-sotalol concentrations stimulate the Q-Tc interval, but the paper excerpts are unavailable to confirm the mechanism or provide potency and rate values. The record lists baseline Q-Tc values of 0.40 seconds and 0.38 seconds, but does not specify Imax, IC50, or ke0.
+> The record specifies a sigmoidal Emax model where d-sotalol concentrations produce an additive stimulation of the Q-Tc interval, with baseline values reported as 0.40 and 0.38 seconds. Since no full text is available, the specific mechanism and key potency or rate parameters are not described.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Salazar_1997`
 - **model family:** `sigmoid_emax`
 - **driver:** `pk_record`
-- **tier:** population
+- **tier:** descriptive
 - **effect:** stimulation/additive
 
 ## Citation
@@ -35,8 +35,8 @@ Salazar DE et al., A pharmacokinetic-pharmacodynamic model…, Journal of clinic
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | baseline Q-Tc | `Q324` · not captured | 0.40 | seconds | not captured | llm (not captured) | Salazar_1997:pdv3 |
-| PD (effect) | baseline Q-Tc | `Q324` · not captured | 0.38 | seconds | not captured | llm (not captured) | Salazar_1997:pdv3 |
+| PD (effect) | Baseline Q-Tc | `Q324` · not captured | 0.40 | seconds | not captured | llm (not captured) | Salazar_1997:pdv3 |
+| PD (effect) | Baseline Q-Tc | `Q324` · not captured | 0.38 | seconds | not captured | llm (not captured) | Salazar_1997:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>

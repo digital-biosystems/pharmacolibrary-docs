@@ -1,0 +1,36 @@
+{
+ "dose_source": "paper",
+ "model_id": "BempedoicAcid_Jadhav2023_reference",
+ "molar_masses": {
+  "central.C": 0.344492
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  180.0
+ ],
+ "parameters": {
+  "Cl": 2.0972222222222223e-07,
+  "F": 1.0,
+  "MM": 0.344492,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0002728571428571429,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.00018,
+  "ka": 0.00039166666666666663,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 9757.981509924473
+ },
+ "reference_peaks": {
+  "central.C": 0.008500359230674485
+ },
+ "stop_time": 345600.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

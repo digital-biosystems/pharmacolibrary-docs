@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;tinzaparin&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tinzaparin_Barrett2001_reference&quot;,&quot;label&quot;:&quot;Barrett_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tinzaparin/Tinzaparin_Barrett2001_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # tinzaparin
 
@@ -17,13 +18,15 @@ Tinzaparin is a low molecular weight heparin used as an anticoagulant, including
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-05 16:51 | 5:33 | 0/1/1 | 1/0/0 | 0/0/0 | 59,351/17,540 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
+| 2026-10-14 18:25 | 0:51 | 0/2/2 | 1/0/0 | 0/0/0 | 44,483/3,395 | einfracz / qwen3.8-27b | 1 | 1/0 | 1/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.727), gpt-oss:120b (not confirmed, agreement 0.727). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Gouin-Thibault_2024_reference](drugs/drug_tinzaparin/Tinzaparin_GouinThibault2024_reference.md) | — | 1-compartment (no model) | 4 | Gouin-Thibault I et al., Tinzaparin, an alternative to subcutane…, Journal of thrombosis and h… (2024) | [10.1016/j.jtha.2024.07.006](https://doi.org/10.1016/j.jtha.2024.07.006) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Barrett_2001_reference](drugs/drug_tinzaparin/Tinzaparin_Barrett2001_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Barrett JS et al., Population pharmacodynamics in patients…, International journal of cl… (2001) | — |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.727), gpt-oss:120b (not confirmed, agreement 0.727). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Gouin-Thibault_2024_reference](drugs/drug_tinzaparin/Tinzaparin_GouinThibault2024_reference.md) | — | 1-compartment (no model) | 4 | Gouin-Thibault I et al., Tinzaparin, an alternative to subcutane…, Journal of thrombosis and h… (2024) | [10.1016/j.jtha.2024.07.006](https://doi.org/10.1016/j.jtha.2024.07.006) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Brindley_1993_reference](drugs/drug_tinzaparin/Tinzaparin_Brindley1993_reference.md) | — | 1-compartment (no model) | 0 | Brindley CJ et al., Relationship between pharmacokinetics a…, Xenobiotica; the fate of fo… (1993) | [10.3109/00498259309059396](https://doi.org/10.3109/00498259309059396) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (primary re-run, agreement 0.4), gpt-oss:120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Johansen_1994_reference](drugs/drug_tinzaparin/Tinzaparin_Johansen1994_reference.md) | — | 1-compartment (no model) | 0 | Johansen PB et al., Pharmacokinetics of tinzaparin (Logipar…, Thrombosis research (1994) | [10.1016/0049-3848(94)90260-7](https://doi.org/10.1016/0049-3848(94)90260-7) |
 
 ## Pharmacodynamics (PD)
@@ -31,6 +34,18 @@ Tinzaparin is a low molecular weight heparin used as an anticoagulant, including
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span> | [Brindley_1993_E](drugs/drug_tinzaparin/pd_Brindley_1993_E.md) | anticoagulant effect ← tinzaparin · direct sigmoid Emax (Hill) effect | — | Brindley CJ et al., Relationship between pharmacokinetics a…, Xenobiotica; the fate of fo… (1993) | [10.3109/00498259309059396](https://doi.org/10.3109/00498259309059396) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=tinzaparin).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | adipose tissue | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: ADAMTS4 (inhibitor), CXCL12 (binder), ITGA4 (inhibitor), SERPINC1 (potentiator).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -41,8 +56,8 @@ Tinzaparin is a low molecular weight heparin used as an anticoagulant, including
 ## Coverage
 
 - **PubMed hits:** 7 matched, 7 returned
-- **screened:** 4  ·  **relevant:** 4
-- **records:** 2  ·  extracted 0  ·  needs_review 1  ·  rejected 1  ·  stale 1
+- **screened:** 5  ·  **relevant:** 4
+- **records:** 4  ·  extracted 0  ·  needs_review 2  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -51,22 +66,22 @@ _6 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Barrett_2001.pdf` | Barrett JS et al., Population pharmacodynamics in patients…, International journal of cl… (2001) | popPK | 10 | not captured | [11680668](https://pubmed.ncbi.nlm.nih.gov/11680668) | The paper reports quantitative population pharmacokinetic parameters (CL, Vc, half-life) for tinzaparin in humans with specific numeric values and confidence intervals. |
-| `Delavenne_2025.pdf` | Delavenne X et al., Tinzaparin Pharmacokinetics in Patients…, Thrombosis and haemostasis (2025) | popPK | 10 | [10.1055/a-2740-1841](https://doi.org/10.1055/a-2740-1841) | [41290197](https://pubmed.ncbi.nlm.nih.gov/41290197) | The paper describes a population PK model for tinzaparin, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence. |
-| `Kuhle_2005.pdf` | Kuhle S et al., Dose-finding and pharmacokinetics of th…, Thrombosis and haemostasis (2005) | popPK | 10 | [10.1160/TH05-03-0215](https://doi.org/10.1160/TH05-03-0215) | [16411388](https://pubmed.ncbi.nlm.nih.gov/16411388) | The study is a population PK analysis of tinzaparin in humans, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
-| `Johansen_1994.pdf` | Johansen PB et al., Pharmacokinetics of tinzaparin (Logipar…, Thrombosis research (1994) | popPK | 9 | [10.1016/0049-3848(94)90260-7](https://doi.org/10.1016/0049-3848(94)90260-7) | [7997983](https://pubmed.ncbi.nlm.nih.gov/7997983) | The study reports quantitative PK parameters (half-lives, accumulation ratios, excretion percentages) for tinzaparin in rats, but specific clearance (CL) and volume (V) values are not explicitly listed in the provided text. |
-| `Brindley_1993.pdf` | Brindley CJ et al., Relationship between pharmacokinetics a…, Xenobiotica; the fate of fo… (1993) | popPK | 8 | [10.3109/00498259309059396](https://doi.org/10.3109/00498259309059396) | [8212732](https://pubmed.ncbi.nlm.nih.gov/8212732) | The study reports PK/PD modeling of tinzaparin in dogs, but specific quantitative PK parameters (CL, V, ka) are not explicitly listed in the provided text, only qualitative descriptions and PD parameters (EC50). |
-| `Hainer_2002.pdf` | Hainer JW et al., Intravenous and subcutaneous weight-bas…, American journal of kidney… (2002) | popPK | 8 | [10.1053/ajkd.2002.34911](https://doi.org/10.1053/ajkd.2002.34911) | [12200805](https://pubmed.ncbi.nlm.nih.gov/12200805) | The study reports quantitative pharmacokinetic parameters (half-life, clearance reduction) for tinzaparin in humans. |
+| `Delavenne_2025.pdf` | Delavenne X et al., Tinzaparin Pharmacokinetics in Patients…, Thrombosis and haemostasis (2025) | popPK | 10 | [10.1055/a-2740-1841](https://doi.org/10.1055/a-2740-1841) | [41290197](https://pubmed.ncbi.nlm.nih.gov/41290197) | The paper describes a population PK model for tinzaparin but provides only qualitative descriptions of covariate associations and structural model choice in the evidence, with no specific numeric parameter values (CL, V, etc.) listed. |
+| `Barrett_2001.pdf` | Barrett JS et al., Population pharmacodynamics in patients…, International journal of cl… (2001) | popPK | 9 | not captured | [11680668](https://pubmed.ncbi.nlm.nih.gov/11680668) | The study reports quantitative population parameters for tinzaparin including clearance, volume of distribution, and half-life. |
+| `Brindley_1993.pdf` | Brindley CJ et al., Relationship between pharmacokinetics a…, Xenobiotica; the fate of fo… (1993) | popPK | 9 | [10.3109/00498259309059396](https://doi.org/10.3109/00498259309059396) | [8212732](https://pubmed.ncbi.nlm.nih.gov/8212732) | The study reports quantitative PK/PD parameters (EC50 values, absorption duration, renal excretion) for tinzaparin in dogs, with specific numeric values for efficacy constants provided in the text, though full compartmental PK parameters may be limited or in figures. |
+| `Johansen_1994.pdf` | Johansen PB et al., Pharmacokinetics of tinzaparin (Logipar…, Thrombosis research (1994) | popPK | 9 | [10.1016/0049-3848(94)90260-7](https://doi.org/10.1016/0049-3848(94)90260-7) | [7997983](https://pubmed.ncbi.nlm.nih.gov/7997983) | The study reports pharmacokinetic modeling (3-compartment) and half-lives for tinzaparin in rats, but does not provide specific clearance (CL) or volume (V) values. |
+| `Kuhle_2005.pdf` | Kuhle S et al., Dose-finding and pharmacokinetics of th…, Thrombosis and haemostasis (2005) | popPK | 9 | [10.1160/TH05-03-0215](https://doi.org/10.1160/TH05-03-0215) | [16411388](https://pubmed.ncbi.nlm.nih.gov/16411388) | The study describes a population pharmacokinetic analysis of tinzaparin in humans and reports qualitative trends (e.g., younger children cleared tinzaparin more rapidly), but specific numeric parameter values (CL, V, etc.) are not present in the provided text. |
+| `Hainer_2002.pdf` | Hainer JW et al., Intravenous and subcutaneous weight-bas…, American journal of kidney… (2002) | popPK | 5 | [10.1053/ajkd.2002.34911](https://doi.org/10.1053/ajkd.2002.34911) | [12200805](https://pubmed.ncbi.nlm.nih.gov/12200805) | The paper reports half-lives and mentions reduced clearance for tinzaparin in humans, but lacks a full compartmental PK model or specific volume parameters. |
 
-<sub>queue written 2026-10-05T16:46:33.033847+00:00</sub>
+<sub>queue written 2026-10-14T18:24:32.489181+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Brindley_1993 | relevant | 8 | 2 | The study reports PK/PD modeling of tinzaparin in dogs, but specific quantitative PK parameters (CL, V, ka) are not explicitly listed in the provided text, only qualitative descriptions and PD parameters (EC50). |
-| popPK | Delavenne_2025 | relevant | 10 | 0 | The paper describes a population PK model for tinzaparin, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence. |
-| popPK | Kuhle_2005 | relevant | 10 | 2 | The study is a population PK analysis of tinzaparin in humans, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
+| popPK | Delavenne_2025 | relevant | 10 | 0 | The paper describes a population PK model for tinzaparin but provides only qualitative descriptions of covariate associations and structural model choice in the evidence, with no specific numeric parameter values (CL, V, etc.) listed. |
+| popPK | Johansen_1994 | relevant | 9 | 2 | The study reports pharmacokinetic modeling (3-compartment) and half-lives for tinzaparin in rats, but does not provide specific clearance (CL) or volume (V) values. |
+| popPK | Kuhle_2005 | relevant | 9 | 2 | The study describes a population pharmacokinetic analysis of tinzaparin in humans and reports qualitative trends (e.g., younger children cleared tinzaparin more rapidly), but specific numeric parameter values (CL, V, etc.) are not present in the provided text. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-05 16:46 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-14 18:24 UTC</sub>

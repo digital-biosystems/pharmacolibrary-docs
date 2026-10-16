@@ -175,9 +175,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_trastuzumab_deruxtecan/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Yin_2021` / `Yin_2021::final_final_released_drug_model`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_trastuzumab_deruxtecan/models/modelica/_needs_review/TrastuzumabDeruxtecan_Yin2021_final_final_released_drug_mode.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_trastuzumab_deruxtecan/models/modelica/_needs_review/TrastuzumabDeruxtecan_Yin2021_final_final_released_drug_mode.deviation.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_trastuzumab_deruxtecan/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Yin_2021` / `Yin_2021::final_final_released_drug_model`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_trastuzumab_deruxtecan/models/modelica/_needs_review/TrastuzumabDeruxtecan_Yin2021_final_final_released_drug_mode.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_trastuzumab_deruxtecan/models/modelica/_needs_review/TrastuzumabDeruxtecan_Yin2021_final_final_released_drug_mode.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

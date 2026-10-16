@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;oxcarbazepine&quot;,&quot;href&quot;:&quot;drugs/drug_oxcarbazepine/&quot;},{&quot;label&quot;:&quot;Wu_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Oxcarbazepine_Yu2025_reference&quot;,&quot;label&quot;:&quot;Yu_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxcarbazepine/Oxcarbazepine_Yu2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Oxcarbazepine_Wu2024_reference&quot;,&quot;label&quot;:&quot;Wu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxcarbazepine/Oxcarbazepine_Wu2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Oxcarbazepine_Yu2025_reference&quot;,&quot;label&quot;:&quot;Yu_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxcarbazepine/Oxcarbazepine_Yu2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # oxcarbazepine — `Oxcarbazepine_Wu2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333), gpt-oss:120b (not confirmed, agreement 0.3). Primary extraction retained.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333), gpt-oss:120b (not confirmed, agreement 0.3). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -13,19 +13,17 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Every check that could be run on this record passed.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. A reported unit could not be converted (t1/2ka ), so that value has no SI equivalent. None of the extracted parameters is oxcarbazepine's own; they describe MHD.
+None of the extracted parameters is oxcarbazepine's own; they describe MHD.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
-
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:29:09.095619+00:00) predates the upstream re-run (2026-10-07 07:13:03.552087+00:00). Current validate status: `rejected`.
 
 > **Dose compound ≠ measured compound:** dosed `oxcarbazepine`, measured `MHD`.
 
@@ -33,23 +31,21 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the
 Wu W et al., Population pharmacokinetics of oxcarbaz…, Basic & clinical pharmacolo… (2024)
   ·  DOI: [10.1111/bcpt.14000](https://doi.org/10.1111/bcpt.14000)
 
-<div class="pk-model-meta" hidden drug="oxcarbazepine" model-id="Oxcarbazepine_Wu2024_reference" status="rejected" stale="true" population="Chinese paediatric patients with epilepsy" measured-compound="MHD" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="oxcarbazepine" model-id="Oxcarbazepine_Wu2024_reference" status="curated_candidate" stale="false" population="Chinese paediatric patients with epilepsy" measured-compound="MHD" parameterization="apparent" topology="1C"></div>
 
-**Model structure:** 1-compartment; no model was built for this record.  
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 5 extracted.
 
 **Parameterization:** CLm/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL≤2y (L/h) | `Q351` · CLm/F | -5.6 | L/h | -1.5555555555555556e-06 | [l] / [h] | 45.6 | exact (1.0) | Wu_2024_table_4:row0:col2, Wu_2024_table_4:row0:col3, Wu_2024_table_4:row0:col4, Wu_2024_table_4:row0:col5 | — | 0.278 (None% RSE) |
-| Vp (L) | `Q61` · V | 0.7 | L | 0.0007 | [l] | 47.6 | exact (1.0) | Wu_2024_table_4:row2:col2, Wu_2024_table_4:row2:col3, Wu_2024_table_4:row2:col4, Wu_2024_table_4:row2:col5 | — | not captured |
-| Ka (h⁻¹) | `Q49` · kabs | 0.83 | h⁻¹ | 0.00023055555555555554 | [1] / [h] | not captured | exact (1.0) | Wu_2024_table_4:row3:col1 | — | not captured |
-| k1ᵇ | `Q47` · kel | -4.8 | 1/h | -0.0013333333333333333 | 1/h | 25 | exact (1.0) | Wu_2024_table_4:row4:col1, Wu_2024_table_4:row4:col2, Wu_2024_table_4:row4:col3, Wu_2024_table_4:row4:col4, Wu_2024_table_4:row4:col5 | — | not captured |
-| k2ᶜ | `Q302` · k21 | -4.1 | 1/h | -0.0011388888888888887 | 1/h | 9.2 | llm (0.6) | Wu_2024_table_4:row5:col1, Wu_2024_table_4:row5:col2, Wu_2024_table_4:row5:col3, Wu_2024_table_4:row5:col4, Wu_2024_table_4:row5:col5 | — | not captured |
+| CL≤2y (L/h) | `Q351` · CLm/F | 8.151 | L/h | 2.264166666666667e-06 | [l] / [h] | not captured | exact (1.0) | Wu_2024_table_4:row0:col1, Wu_2024_table_4:row0:col2, Wu_2024_table_4:row0:col5 | — | 0.278 (None% RSE) |
+| Vp (L) | `Q61` · V | 678.688 | L | 0.678688 | [l] | not captured | exact (1.0) | Wu_2024_table_4:row2:col1, Wu_2024_table_4:row2:col2, Wu_2024_table_4:row2:col5 | — | not captured |
+| Ka (h−1) | `Q49` · kabs | 0.83 | h−1 | 0.00023055555555555554 | [1] / [h] | not captured | exact (1.0) | Wu_2024_table_4:row3:col1 | — | not captured |
+| k1 b | `Q348` · k41 | 1.282 | 1/h | 0.00035611111111111114 | 1/h | not captured | llm (0.6) | Wu_2024_table_4:row4:col1, Wu_2024_table_4:row4:col2, Wu_2024_table_4:row4:col5 | — | not captured |
+| k2 c | `Q302` · k21 | 0.921 | 1/h | 0.00025583333333333334 | 1/h | not captured | llm (0.6) | Wu_2024_table_4:row5:col1, Wu_2024_table_4:row5:col2, Wu_2024_table_4:row5:col5 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -58,17 +54,19 @@ Wu W et al., Population pharmacokinetics of oxcarbaz…, Basic & clinical pharma
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['Tlag']
+- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+
 **Interpretation flags:**
 - table section iiv: 'ω [CL≤2y]' routed out of structural estimates ('Inter-individual variation')
 - table section iiv: 'ω [CL&gt;2y]' routed out of structural estimates ('Inter-individual variation')
-- table section iiv: 'ηCL1/F-shrinkage (%)' routed out of structural estimates ('Inter-individual variation')
-- table section iiv: 'ηCL2/F-shrinkage (%)' routed out of structural estimates ('Inter-individual variation')
-- dropped duplicate Q22 ('CL&gt;2y (L/h)', value '-1.5') — already have one for this compound
-- dropped unlinked row (NIL): 'k3' — extend the ontology if this is a real PK parameter (source ['Wu_2024_table_4:row6:col1', 'Wu_2024_table_4:row6:col2', 'Wu_2024_table_4:row6:col3', 'Wu_2024_table_4:row6:col4', 'Wu_2024_table_4:row6:col5'])
-- dropped diagnostic row 'ε-shrinkage (%)' → Q318 (shrinkage) — reported statistic, not a parameter
-- dropped unlinked row (NIL): 'Model description' — extend the ontology if this is a real PK parameter (source ['Wu_2024_table_4:row18:col3'])
-- implicit units: 'k1ᵇ' → 1/h (from the popPK convention: 'The parameter is a first-order elimination rate constant. In population pharmacokinetics, first-order rate constants are')
-- implicit units: 'k2ᶜ' → 1/h (from the popPK convention: 'The parameter is a first-order transfer rate constant (k21). First-order rate constants are conventionally expressed as ')
+- dropped duplicate Q22 ('CL&gt;2y (L/h)', value '4.828') — already have one for this compound
+- dropped unlinked row (NIL): 'k3' — extend the ontology if this is a real PK parameter (source ['Wu_2024_table_4:row6:col1', 'Wu_2024_table_4:row6:col2', 'Wu_2024_table_4:row6:col5'])
+- dropped unlinked row (NIL): '%minimization success d' — extend the ontology if this is a real PK parameter (source ['Wu_2024_table_4:row17:col1'])
+- dropped unlinked row (NIL): 'Model description' — extend the ontology if this is a real PK parameter (source ['Wu_2024_table_4:row18:col1'])
+- implicit units: 'k1 b' → 1/h (from the popPK convention: 'The parameter is identified as a first-order transfer rate constant (k41). The paper text explicitly states that the abs')
+- implicit units: 'k2 c' → 1/h (from the popPK convention: 'The parameter is identified as a first-order transfer rate constant (k21). The paper text establishes the time unit as h')
 - metabolite mhd: Q22→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
 - metabolite volume: 'Vp (L)' Q63→Q61 for MHD — it is 1-compartment, so its central volume is its only volume
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=MHD
@@ -76,16 +74,12 @@ Wu W et al., Population pharmacokinetics of oxcarbaz…, Basic & clinical pharma
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - row roles: 2 per-group rows of MHD clearance but 0 reference group(s) — kept as printed
 - row roles: 2 per-group rows of MHD variability but 0 reference group(s) — kept as printed
-- row roles: 2 per-group rows of none summary_statistic but 0 reference group(s) — kept as printed
-- row roles (LLM): model_class=compartmental; 15/15 row label(s) assigned, 18 linked by role
+- row roles (LLM): model_class=compartmental; 13/13 row label(s) assigned, 10 linked by role
 - review gap-fill skipped: this record measures 'MHD', not oxcarbazepine — the review values are the parent's
 
 **Extraction notes:**
 - no TEI final-model table id; trying text-pointer table recovery
 - LLM selected parameter table(s) 4
-- unparsed cell Wu_2024_table_4:row0:col1 = '8.151ᵉ'
-- unparsed cell Wu_2024_table_4:row1:col1 = '4.828ᶠ'
-- unparsed cell Wu_2024_table_4:row2:col1 = '678.688ᵍ'
 
 ## Validation
 
@@ -130,15 +124,26 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C2_base_sign_Q351 | fail | not captured | -5.6 | not captured | not captured | not captured |
-| C5_dimension_Q302 | pass | 1 / [time] | not captured | not captured | not captured | ['Wu_2024_table_4:row5:col1', 'Wu_2024_table_4:row5:col2', 'Wu_2024_table_4:row5:col3', 'Wu_2024_table_4:row5:col4', 'Wu_2024_table_4:row5:col5'] |
-| C5_dimension_Q351 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Wu_2024_table_4:row0:col2', 'Wu_2024_table_4:row0:col3', 'Wu_2024_table_4:row0:col4', 'Wu_2024_table_4:row0:col5'] |
-| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['Wu_2024_table_4:row4:col1', 'Wu_2024_table_4:row4:col2', 'Wu_2024_table_4:row4:col3', 'Wu_2024_table_4:row4:col4', 'Wu_2024_table_4:row4:col5'] |
+| C5_dimension_Q302 | pass | 1 / [time] | not captured | not captured | not captured | ['Wu_2024_table_4:row5:col1', 'Wu_2024_table_4:row5:col2', 'Wu_2024_table_4:row5:col5'] |
+| C5_dimension_Q348 | pass | 1 / [time] | not captured | not captured | not captured | ['Wu_2024_table_4:row4:col1', 'Wu_2024_table_4:row4:col2', 'Wu_2024_table_4:row4:col5'] |
+| C5_dimension_Q351 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Wu_2024_table_4:row0:col1', 'Wu_2024_table_4:row0:col2', 'Wu_2024_table_4:row0:col5'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Wu_2024_table_4:row3:col1'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Wu_2024_table_4:row2:col2', 'Wu_2024_table_4:row2:col3', 'Wu_2024_table_4:row2:col4', 'Wu_2024_table_4:row2:col5'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Wu_2024_table_4:row2:col1', 'Wu_2024_table_4:row2:col2', 'Wu_2024_table_4:row2:col5'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q61 | pass | volume within physiological range | 0.7 L | not captured | not captured | ['Wu_2024_table_4:row2:col2', 'Wu_2024_table_4:row2:col3', 'Wu_2024_table_4:row2:col4', 'Wu_2024_table_4:row2:col5'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 679 L | not captured | not captured | ['Wu_2024_table_4:row2:col1', 'Wu_2024_table_4:row2:col2', 'Wu_2024_table_4:row2:col5'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_output_variable | not captured | pass | C_central (measured=MHD) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -147,20 +152,38 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_oxcarbazepine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Wu_2024` / `Wu_2024::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_oxcarbazepine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Wu_2024` / `Wu_2024::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_oxcarbazepine/models/modelica/Oxcarbazepine_Wu2024_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_oxcarbazepine/models/modelica/Oxcarbazepine_Wu2024_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_oxcarbazepine/models/modelica/Oxcarbazepine_Wu2024_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_oxcarbazepine/Oxcarbazepine_Wu2024_reference/Oxcarbazepine_Wu2024_reference_modelica.zip" download>Oxcarbazepine_Wu2024_reference_modelica.zip</a> <span class="pk-size">(5.2 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_oxcarbazepine/Oxcarbazepine_Wu2024_reference/Oxcarbazepine_Wu2024_reference_fmi.zip" download>Oxcarbazepine_Wu2024_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_oxcarbazepine/Oxcarbazepine_Wu2024_reference/Oxcarbazepine_Wu2024_reference.svg" alt="Oxcarbazepine_Wu2024_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+**Administration: oral** — 1000 mg, single dose, first-order absorption (ka 0.83 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 1000 mg oral (N03AF02) (defined daily dose)._
+
+<dbs-fmusim paramsurl="drugs/drug_oxcarbazepine/Oxcarbazepine_Wu2024_reference/Oxcarbazepine_Wu2024_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_oxcarbazepine/Oxcarbazepine_Wu2024_reference/Oxcarbazepine_Wu2024_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C_enteral` · parameters `Oxcarbazepine_Wu2024_reference_params.json` · controls `Oxcarbazepine_Wu2024_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 07:13 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 19:33 UTC</sub>

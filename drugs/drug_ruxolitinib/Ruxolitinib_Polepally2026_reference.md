@@ -1,11 +1,10 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D11A&quot;,&quot;href&quot;:&quot;atc/D11A.md&quot;},{&quot;label&quot;:&quot;ruxolitinib&quot;,&quot;href&quot;:&quot;drugs/drug_ruxolitinib/&quot;},{&quot;label&quot;:&quot;Polepally_2026 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ruxolitinib_Polepally2026_reference&quot;,&quot;label&quot;:&quot;Polepally_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ruxolitinib/Ruxolitinib_Polepally2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ruxolitinib — `Ruxolitinib_Polepally2026_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.882). Primary extraction retained.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.882). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -13,38 +12,45 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** Model and browser simulation available in **Models** and **Simulation**.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**CL_ratio has no unit.**
+
+Without a unit the value cannot be converted, so the model cannot use it. None of the extracted parameters is ruxolitinib's own; they describe navitoclax. Extracted — navitoclax: CL/F 137 L/day, V1/F 38.3 L, kabs 4.7 1/day, Q/F 77.4 L/day, V2/F 78.3 L, tlag 0.0479 day, CL_ratio 0.828.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q324: this record has none, the second reading 0.813; it also differs on 1 more field. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> **Dose compound ≠ measured compound:** dosed `navitoclax`, measured `ruxolitinib`.
+> **Dose compound ≠ measured compound:** dosed `navitoclax and ruxolitinib`, measured `ruxolitinib`.
 
 ## Citation
 Polepally AR et al., Semi-Mechanistic PK/PD Modeling of Plat…, CPT: pharmacometrics & syst… (2026)
   ·  DOI: [10.1002/psp4.70260](https://doi.org/10.1002/psp4.70260)
 
-<div class="pk-model-meta" hidden drug="ruxolitinib" model-id="Ruxolitinib_Polepally2026_reference" status="curated_candidate" stale="false" population="patients with myelofibrosis" measured-compound="ruxolitinib" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="ruxolitinib" model-id="Ruxolitinib_Polepally2026_reference" status="needs_review" stale="false" population="patients with myelofibrosis" measured-compound="ruxolitinib" parameterization="apparent" topology="2C"></div>
 
-**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
-**Parameters:** 6 extracted.
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 7 extracted, plus 2 covariate effects.
 
 **Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F | `Q27` · CL/F | 137.0 | L/day | 1.5856481481481483e-06 | L/h | not captured | review (0.7) | Polepally_2026:review | — | not captured |
-| Vc/F | `Q290` · V1/F | 38.3 | L | 0.0383 | L | not captured | review (0.7) | Polepally_2026:review | — | not captured |
-| Vp/F | `Q82` · V2/F | 78.3 | L | 0.0783 | L | not captured | review (0.7) | Polepally_2026:review | — | not captured |
-| Q/F | `Q69` · Q/F | 77.4 | L/day | 8.958333333333335e-07 | L/h | not captured | review (0.7) | Polepally_2026:review | — | not captured |
-| t lag | `Q83` · tlag | 0.0479 | day | 4138.5599999999995 | h | not captured | review (0.7) | Polepally_2026:review | — | not captured |
-| ka | `Q49` · kabs | 4.7 | 1/day | 5.4398148148148144e-05 | 1/h | not captured | review (0.7) | Polepally_2026:review | — | not captured |
+| correction_factor_for_baseline_plt_count | `Q900` · correction_factor_for_baseline_plt_count | 0.813 | not captured | not captured | not captured | 2.65 | not captured (not captured) | psp470260-tbl-0003:row1:col1 | — | not captured |
+| CL/F (L/day) | `Q27` · CL/F | 137 | L/day | 1.5856481481481483e-06 | [l] / [d] | 3.82 | exact (1.0) | Polepally_2026_table_4:row1:col1 | — | not captured |
+| Vc/F (L) | `Q290` · V1/F | 38.3 | L | 0.0383 | [l] | 42.9 | exact (1.0) | Polepally_2026_table_4:row2:col1 | — | not captured |
+| ka (1/day) | `Q49` · kabs | 4.70 | 1/day | 5.4398148148148144e-05 | [1] / [d] | 44.5 | exact (1.0) | Polepally_2026_table_4:row3:col1 | — | not captured |
+| Q/F (L/day) | `Q69` · Q/F | 77.4 | L/day | 8.958333333333335e-07 | [l] / [d] | 31.2 | exact (1.0) | Polepally_2026_table_4:row4:col1 | — | not captured |
+| Vp/F (L) | `Q82` · V2/F | 78.3 | L | 0.0783 | [l] | 20.6 | exact (1.0) | Polepally_2026_table_4:row5:col1 | — | not captured |
+| t lag (day) | `Q83` · tlag | 0.0479 | day | 4138.5599999999995 | [d] | 2.84 | space_fold (0.95) | Polepally_2026_table_4:row6:col1 | — | not captured |
+| CL/F ratio of female compared to male | `Q31` · CL_ratio | 0.828 | not captured | not captured | not captured | 26.0 | llm_corrected (0.6) | Polepally_2026_table_4:row7:col1 | — | not captured |
+| theta_q321_sex | `Q900` · theta_q321_sex | 1.81 | not captured | not captured | not captured | 52.6 | not captured (not captured) | psp470260-tbl-0003:row8:col1 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -53,12 +59,21 @@ Polepally AR et al., Semi-Mechanistic PK/PD Modeling of Plat…, CPT: pharmacome
 
 ## Departures & gaps
 
-**Deviations:**
-- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
-
 **Interpretation flags:**
-- built from REVIEW reference values (Polepally_2026) — secondary source
-- volume reported by review
+- covariate level 'Correction factor for baseline PLT count' → Q900:correction_factor_for_baseline_plt_count = 0.813 (additive_shift on the model)
+- dropped PD-category row 'Navitoclax slope (L/mg)' → Q335 (slope, category G13) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['psp470260-tbl-0003:row2:col1'])
+- dropped PD-category row 'ɣ, GAMMA' → Q325 (Hill, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['psp470260-tbl-0003:row3:col1'])
+- dropped PD-category row 'Kout (1/day)' → Q328 (kout, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['psp470260-tbl-0003:row4:col1'])
+- dropped PD-category row 'EC50RUX (mg/L)' → Q321 (EC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['psp470260-tbl-0003:row5:col1'])
+- dropped PD-category row 'E max,RUX' → Q320 (Emax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['psp470260-tbl-0003:row6:col1'])
+- dropped PD-category row '𝜆, LAMBDA (1/day)' → Q342 (lambda_hazard, category G14) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['psp470260-tbl-0003:row7:col1'])
+- covariate effect for Q321 has no base parameter row (kept as unattached equation-variable)
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=ruxolitinib
+
+**Extraction notes:**
+- table psp470260-tbl-0003: unbound_uncertainty
+- companion parameter table 4 transcribed (27 record(s))
+- LLM selected parameter table(s) 4
 
 ## Validation
 
@@ -88,32 +103,21 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 7 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Polepally_2026:review'] |
-| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['Polepally_2026:review'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Polepally_2026:review'] |
-| C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Polepally_2026:review'] |
-| C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['Polepally_2026:review'] |
-| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Polepally_2026:review'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Polepally_2026_table_4:row1:col1'] |
+| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['Polepally_2026_table_4:row2:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Polepally_2026_table_4:row3:col1'] |
+| C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Polepally_2026_table_4:row4:col1'] |
+| C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['Polepally_2026_table_4:row5:col1'] |
+| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Polepally_2026_table_4:row6:col1'] |
+| C5_unit_missing_Q31 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['Polepally_2026_table_4:row7:col1'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 5.71 L/h | not captured | not captured | ['Polepally_2026:review'] |
-| C9_phys_window_Q290 | pass | volume within physiological range | 38.3 L | not captured | not captured | ['Polepally_2026:review'] |
-| C9_phys_window_Q82 | pass | volume within physiological range | 78.3 L | not captured | not captured | ['Polepally_2026:review'] |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
-| T3_output_variable | not captured | pass | C_central (measured=ruxolitinib) | central.C | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | pass | 6 scholar param(s) emitted or defaulted | 6 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 5.71 L/h | not captured | not captured | ['Polepally_2026_table_4:row1:col1'] |
+| C9_phys_window_Q290 | pass | volume within physiological range | 38.3 L | not captured | not captured | ['Polepally_2026_table_4:row2:col1'] |
+| C9_phys_window_Q82 | pass | volume within physiological range | 78.3 L | not captured | not captured | ['Polepally_2026_table_4:row5:col1'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -122,10 +126,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ruxolitinib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Polepally_2026` / `Polepally_2026::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ruxolitinib/models/modelica/Ruxolitinib_Polepally2026_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ruxolitinib/models/modelica/Ruxolitinib_Polepally2026_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ruxolitinib/models/modelica/Ruxolitinib_Polepally2026_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ruxolitinib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Polepally_2026` / `Polepally_2026::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -135,25 +136,20 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ruxolitinib/Ruxolitinib_Polepally2026_reference/Ruxolitinib_Polepally2026_reference_modelica.zip" download>Ruxolitinib_Polepally2026_reference_modelica.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_ruxolitinib/Ruxolitinib_Polepally2026_reference/Ruxolitinib_Polepally2026_reference_fmi.zip" download>Ruxolitinib_Polepally2026_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><a href="drugs/drug_ruxolitinib/Ruxolitinib_Polepally2026_reference/Ruxolitinib_Polepally2026_reference_fmi.zip" download>Ruxolitinib_Polepally2026_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_ruxolitinib/Ruxolitinib_Polepally2026_reference/Ruxolitinib_Polepally2026_reference_matlab.zip" download>Ruxolitinib_Polepally2026_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_ruxolitinib/Ruxolitinib_Polepally2026_reference/Ruxolitinib_Polepally2026_reference_matlab_simbio.zip" download>Ruxolitinib_Polepally2026_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_ruxolitinib/Ruxolitinib_Polepally2026_reference/Ruxolitinib_Polepally2026_reference_sbml.zip" download>Ruxolitinib_Polepally2026_reference_sbml.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_ruxolitinib/Ruxolitinib_Polepally2026_reference/Ruxolitinib_Polepally2026_reference_cellml.zip" download>Ruxolitinib_Polepally2026_reference_cellml.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_ruxolitinib/Ruxolitinib_Polepally2026_reference/Ruxolitinib_Polepally2026_reference.svg" alt="Ruxolitinib_Polepally2026_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 30 mg, single dose, first-order absorption (ka 0.196 /h, lag 69 min, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 30 mg oral (L01EJ01) (defined daily dose)._
-
-<dbs-fmusim paramsurl="drugs/drug_ruxolitinib/Ruxolitinib_Polepally2026_reference/Ruxolitinib_Polepally2026_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_ruxolitinib/Ruxolitinib_Polepally2026_reference/Ruxolitinib_Polepally2026_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_2C_enteral` · parameters `Ruxolitinib_Polepally2026_reference_params.json` · controls `Ruxolitinib_Polepally2026_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 07:52 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 23:22 UTC</sub>

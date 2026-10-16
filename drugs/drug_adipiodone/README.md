@@ -23,7 +23,16 @@ Adipiodone (iodipamide) is an iodinated, water-soluble X-ray contrast medium use
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Lin_1977_reference](drugs/drug_adipiodone/Adipiodone_Lin1977_reference.md) | — | 1-compartment (no model) | 0 | Lin SK et al., Iodipamide kinetics: capacity-limited b…, Journal of pharmaceutical s… (1977) | [10.1002/jps.2600661204](https://doi.org/10.1002/jps.2600661204) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.4). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Lin_1977_reference](drugs/drug_adipiodone/Adipiodone_Lin1977_reference.md) | — | 1-compartment (no model) | 0 | Lin SK et al., Iodipamide kinetics: capacity-limited b…, Journal of pharmaceutical s… (1977) | [10.1002/jps.2600661204](https://doi.org/10.1002/jps.2600661204) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=adipiodone).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| distribution | blood | `ALB` binder | DrugBank actor |
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

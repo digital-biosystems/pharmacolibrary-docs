@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03A&quot;,&quot;href&quot;:&quot;atc/R03A.md&quot;},{&quot;label&quot;:&quot;Vilanterol&quot;,&quot;href&quot;:&quot;drugs/drug_vilanterol/&quot;},{&quot;label&quot;:&quot;Kempsford_2014 \u00b7 PD maximal heart rate&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# maximal heart rate — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.625). Primary extraction retained.">cross-check: disputed</span>
+# maximal heart rate — PD  <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by ollama:gpt-oss:120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -13,17 +13,17 @@
 
 ## Record summary
 
-**As extracted:** Vilanterol (concentrations from the PK model of Goyal_2014) drives maximal heart rate (in beats min−1): direct linear effect.
+**As extracted:** VI drives maximal heart rate (in beats min−1): direct linear effect.
 
 **Model:** No model was generated from this record.
 
-> Vilanterol plasma concentrations (pg ml−1, from a cited PK model) act on maximal heart rate (beats min−1) via a linear stimulation model: HR = 23.6 + 0.01730 × concentration (slope in beats min−1 pg−1 ml), with a baseline covariate effect of 1.86; the paper does not state an Emax/IC50-type mechanism beyond this direct linear concentration–effect relationship.
+> The paper describes a linear additive model where steady-state plasma concentrations of vilanterol (pg ml−1) stimulate maximal heart rate (beats min−1) with a slope of 0.01730 beats min−1 pg−1 ml and an intercept of 23.6 beats min−1. The excerpts do not specify a mechanistic basis (e.g., Emax, effect compartment, or production/elimination inhibition) for this relationship.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
 
 - **paper:** `Kempsford_2014`
 - **model family:** `linear`
-- **driver:** `cited_pk`
+- **driver:** `not_resolved`
 - **tier:** population
 - **effect:** stimulation/additive
 
@@ -34,10 +34,10 @@ Kempsford R et al., A repeat-dose thorough QT study of inha…, British journal 
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | Intercept | `Q344` · not captured | 23.6 | beats min−1 | not captured | llm (not captured) | Kempsford_2014:pdv3 |
+| PD (effect) | Intercept | `Q324` · not captured | 23.6 | beats min−1 | not captured | llm (not captured) | Kempsford_2014:pdv3 |
 | PD (effect) | Slope | `Q335` · not captured | 0.01730 | beats min−1 pg−1 ml | not captured | llm (not captured) | Kempsford_2014:pdv3 |
 | model term | Baseline covariate effect | `Q900` · not captured | 1.86 | not captured | not captured | llm (not captured) | Kempsford_2014:pdv3 |
-| variability | Intersubject variability in baseline | `Q312` · not captured | 0.485 | % | not captured | llm (not captured) | Kempsford_2014:pdv3 |
+| variability | Intersubject variability in baseline (%) | `Q312` · not captured | 0.485 | % | not captured | llm (not captured) | Kempsford_2014:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -45,20 +45,24 @@ Kempsford R et al., A repeat-dose thorough QT study of inha…, British journal 
 </details>
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `einfracz:gpt-oss-120b` | not confirmed | 0.625 (5/8 fields) | 3 |
+| `ollama:gpt-oss:120b` | secondary_empty | 0.0 (0/7 fields) | 7 |
 
-<details><summary>3 field discrepancies</summary>
+<details><summary>7 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `einfracz:gpt-oss-120b` | `parameters[Q324]` | not captured | 1.86 | only_one_extracted |
-| `einfracz:gpt-oss-120b` | `parameters[Q344]` | 23.6 | not captured | only_one_extracted |
-| `einfracz:gpt-oss-120b` | `parameters[Q900]` | 1.86 | not captured | only_one_extracted |
+| `ollama:gpt-oss:120b` | `driver_compound` | VI | not captured | mismatch |
+| `ollama:gpt-oss:120b` | `effect_direction` | stimulation | not captured | mismatch |
+| `ollama:gpt-oss:120b` | `effect_form` | additive | not captured | mismatch |
+| `ollama:gpt-oss:120b` | `model_family` | linear | not captured | mismatch |
+| `ollama:gpt-oss:120b` | `parameters[Q324]` | 23.6 | not captured | only_one_extracted |
+| `ollama:gpt-oss:120b` | `parameters[Q335]` | 0.01730 | not captured | only_one_extracted |
+| `ollama:gpt-oss:120b` | `parameters[Q900]` | 1.86 | not captured | only_one_extracted |
 
 </details>
 

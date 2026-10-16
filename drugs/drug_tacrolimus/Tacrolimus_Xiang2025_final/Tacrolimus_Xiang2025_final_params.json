@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 5 mg oral (L04AD02)",
+ "model_id": "Tacrolimus_Xiang2025_final",
+ "molar_masses": {
+  "central.C": 0.8040182
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.916666666666667e-06,
+  "F": 1.0,
+  "MM": 0.8040182,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0001485714285714286,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 5e-06,
+  "ka": 0.0010833333333333333,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 2350.6256571335084
+ },
+ "reference_peaks": {
+  "central.C": 0.00033338957463538936
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

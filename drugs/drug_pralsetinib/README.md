@@ -18,21 +18,34 @@ Pralsetinib is a protein kinase inhibitor used to treat non-small-cell lung canc
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 05:29 | 0:29 | 0/0/0 | 0/1/0 | 0/0/0 | 22,534/2,484 | openai / gpt-6-luna | 1 | 0/1 | 1/0 | 0 |
+| 2026-10-14 20:46 | 0:05 | 0/0/0 | 0/0/0 | 0/0/0 | 10,132/169 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
 
 ## popPK records
 
 _not available_
 
-## Pharmacodynamics (PD)
+## ADME sites
 
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Kassir_2024_PFS](drugs/drug_pralsetinib/pd_Kassir_2024_PFS.md) | PFS in patients with thyroid cancer ← pralsetinib · model not identified | — | Kassir N et al., Exposure-Response Relationships for Pra…, Journal of clinical pharmac… (2024) | [10.1002/jcph.2409](https://doi.org/10.1002/jcph.2409) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Kassir_2024_PFS_2](drugs/drug_pralsetinib/pd_Kassir_2024_PFS_2.md) | PFS in patients with NSCLC ← pralsetinib · model not identified | — | Kassir N et al., Exposure-Response Relationships for Pra…, Journal of clinical pharmac… (2024) | [10.1002/jcph.2409](https://doi.org/10.1002/jcph.2409) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Kassir_2024_grade_3_anemia](drugs/drug_pralsetinib/pd_Kassir_2024_grade_3_anemia.md) | grade ≥3 anemia ← pralsetinib · model not identified | — | Kassir N et al., Exposure-Response Relationships for Pra…, Journal of clinical pharmac… (2024) | [10.1002/jcph.2409](https://doi.org/10.1002/jcph.2409) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Kassir_2024_grade_3_lymphopenia](drugs/drug_pralsetinib/pd_Kassir_2024_grade_3_lymphopenia.md) | grade ≥3 lymphopenia ← pralsetinib · model not identified | — | Kassir N et al., Exposure-Response Relationships for Pra…, Journal of clinical pharmac… (2024) | [10.1002/jcph.2409](https://doi.org/10.1002/jcph.2409) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Kassir_2024_grade_3_pneumonia](drugs/drug_pralsetinib/pd_Kassir_2024_grade_3_pneumonia.md) | grade ≥3 pneumonia ← pralsetinib · model not identified | — | Kassir N et al., Exposure-Response Relationships for Pra…, Journal of clinical pharmac… (2024) | [10.1002/jcph.2409](https://doi.org/10.1002/jcph.2409) |
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=pralsetinib).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | liver | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
+| absorption | mammary gland | `ABCG2` inhibitor/substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
+| absorption | testis | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
+| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
+| metabolism | kidney | `CYP3A5` inducer/inhibitor | DrugBank actor |
+| metabolism | liver | `CYP1A2` substrate, `CYP2C8` inducer/inhibitor, `CYP2C9` inducer/inhibitor, `CYP2D6` substrate, `CYP3A4` inducer/inhibitor/substrate, `CYP3A5` inducer/inhibitor, `SLCO1B1` inhibitor, `SLCO1B3` inhibitor | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inducer/inhibitor/substrate, `CYP3A5` inducer/inhibitor | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | `SLC22A6` inhibitor, `SLC47A1` inhibitor, `SLC47A2` inhibitor | DrugBank actor |
+| excretion | liver | `ABCB11` inhibitor, `SLC47A1` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: DDR1 (inhibitor), FGFR1 (inhibitor), FGFR2 (inhibitor), FLT3 (inhibitor), JAK1 (inhibitor), JAK2 (inhibitor), KDR (inhibitor), NTRK1 (inhibitor), NTRK3 (inhibitor), PDGFRB (inhibitor), RET (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,8 +64,8 @@ _not available_
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Jade_2023 | irrelevant | 0 | 0 | This is a computational drug-screening study and reports no pralsetinib pharmacokinetic parameters. |
-| popPK | Kassir_2024 | irrelevant | 1 | 0 | This is a human exposure-response analysis and reports no quantitative pralsetinib disposition parameters in the provided evidence. |
+| popPK | Jade_2023 | irrelevant | 0 | 0 | The paper is a computational study on virtual screening for SARS-CoV-2 RdRp inhibition and contains no pharmacokinetic parameters for pralsetinib. |
+| popPK | Kassir_2024 | irrelevant | 0 | 0 | The paper focuses on exposure-response relationships for efficacy and safety (PFS, AEs) rather than reporting quantitative pharmacokinetic disposition parameters like clearance, volume, or half-life. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

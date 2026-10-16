@@ -18,11 +18,25 @@ Procarbazine is an anticancer drug used to treat cancers such as Hodgkin's lymph
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 21:34 | 0:56 | 0/0/0 | 0/0/0 | 0/0/0 | 8,844/705 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-14 20:52 | 0:40 | 0/0/0 | 0/0/0 | 0/0/0 | 8,844/707 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
 _not available_
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=procarbazine).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| metabolism | brain | `MAOA` inhibitor | DrugBank actor |
+| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| metabolism | liver | `MAOA` inhibitor, `XDH` substrate | DrugBank actor |
+| metabolism | small intestine | `MAOA` inhibitor, `XDH` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: DNA (cross-linking/alkylation).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -43,26 +57,26 @@ _3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Wilde_2007.pdf` | Wilde S et al., Population pharmacokinetics of the BEAC…, Clinical pharmacokinetics (2007) | popPK | 8 | [10.2165/00003088-200746040-00005](https://doi.org/10.2165/00003088-200746040-00005) | [17375983](https://pubmed.ncbi.nlm.nih.gov/17375983) | The study performs population pharmacokinetic modeling for procarbazine as part of the BEACOPP regimen in humans, but the specific quantitative parameter values are not provided in the extracted evidence text. |
+| `Wilde_2007.pdf` | Wilde S et al., Population pharmacokinetics of the BEAC…, Clinical pharmacokinetics (2007) | popPK | 5 | [10.2165/00003088-200746040-00005](https://doi.org/10.2165/00003088-200746040-00005) | [17375983](https://pubmed.ncbi.nlm.nih.gov/17375983) | The study is a population pharmacokinetic analysis of the BEACOPP regimen in humans which includes procarbazine, but the specific numeric parameter values for procarbazine are not provided in the extracted evidence. |
 | `Ezzat_2012.pdf` | Ezzat HM et al., Incidence, predictors and significance…, Leukemia & lymphoma (2012) | pgx | 7 | [10.3109/10428194.2012.697560](https://doi.org/10.3109/10428194.2012.697560) | [22642935](https://www.ncbi.nlm.nih.gov/pubmed/22642935) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Villikka_1999.pdf` | Villikka K et al., Cytochrome P450-inducing antiepileptics…, Clinical pharmacology and t… (1999) | pgx | 7 | [10.1053/cp.1999.v66.103403001](https://doi.org/10.1053/cp.1999.v66.103403001) | [10613614](https://www.ncbi.nlm.nih.gov/pubmed/10613614) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 
-<sub>queue written 2026-10-06T21:34:25.838957+00:00</sub>
+<sub>queue written 2026-10-14T20:51:45.250900+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Delitheos_1995 | irrelevant | 0 | 0 | The study is an in-vitro investigation of antineoplastic agents on yeast (Saccharomyces cerevisiae) and reports no pharmacokinetic parameters for procarbazine. |
-| PGx | Ewesuedo_2000 | not_relevant | 0 | 0 | The paper studies O6-benzylguanine (BG) in rats and investigates a drug-drug interaction (ketoconazole), not the pharmacogenetics of procarbazine. |
-| PGx | Ezzat_2012 | not_relevant | 0 | 0 | The paper focuses on drug-drug interactions between vinblastine and protease inhibitors, and does not report pharmacogenomic effects on procarbazine. |
-| PGx | Nakamura_2009 | not_relevant | 2 | 0 | The text discusses genetic markers (1p/19q LOH) for predicting general chemotherapy sensitivity and survival in gliomas, but does not report specific changes in pharmacokinetic or pharmacodynamic parameters of procarbazine. |
-| PGx | Pretsch_1993 | not_relevant | 0 | 0 | Procarbazine was used only as a mutagen to create a mouse model of LDH deficiency; the paper does not study procarbazine's own pharmacokinetics or pharmacodynamics. |
-| PGx | Shiba_1982 | not_relevant | 0 | 0 | The paper describes analytical methods for procarbazine and metabolites and presents pharmacokinetic data in rats and a single patient, but it does not report any association between genetic variants/genotypes and these PK or PD parameters. |
-| PGx | Villikka_1999 | not_relevant | 0 | 0 | The paper studies the pharmacokinetics of vincristine, not procarbazine, and focuses on drug-drug interactions rather than pharmacogenomics. |
-| PGx | Wahlang_2015 | not_relevant | 2 | 0 | The text is an introduction to a review chapter discussing the role of CYPs and genetic polymorphisms in drug metabolism but does not report specific data or fitted effect sizes for procarbazine PK/PD parameters. |
-| popPK | Wilde_2007 | relevant | 8 | 0 | The study performs population pharmacokinetic modeling for procarbazine as part of the BEACOPP regimen in humans, but the specific quantitative parameter values are not provided in the extracted evidence text. |
-| PGx | Wilde_2007 | not_relevant | 0 | 0 | The study reports population pharmacokinetics and covariates like CYP3A4 phenotyping effects, but does not report specific gene variant/genotype data or fitted pharmacogenomic parameters for procarbazine. |
+| popPK | Delitheos_1995 | irrelevant | 0 | 0 | The study investigates the sensitivity of Saccharomyces cerevisiae to procarbazine using MIC and EC50 assays, which are antimicrobial/cytotoxicity tests, not pharmacokinetic studies. |
+| PGx | Ewesuedo_2000 | not_relevant | 0 | 0 | The paper studies O6-benzylguanine (BG) and a drug-drug interaction with ketoconazole in rats; it does not report pharmacogenomic effects on procarbazine. |
+| PGx | Ezzat_2012 | not_relevant | 0 | 0 | The study reports a drug-drug interaction between protease inhibitors and vinblastine, not a pharmacogenomic effect, and does not analyze procarbazine PK/PD. |
+| PGx | Nakamura_2009 | not_relevant | 2 | 0 | The paper discusses genetic markers for glioma diagnosis and general prognosis/chemotherapy response (PCV), but does not report quantitative changes in PK or PD parameters of procarbazine associated with specific genotypes. |
+| PGx | Pretsch_1993 | not_relevant | 0 | 0 | The paper describes a procarbazine-induced mutation in the Ldh-1 locus and its metabolic consequences, rather than reporting a genetic effect on the pharmacokinetics or pharmacodynamics of procarbazine itself. |
+| PGx | Shiba_1982 | not_relevant | 0 | 0 | The paper describes analytical methods for procarbazine PK but does not report any pharmacogenomic associations. |
+| PGx | Villikka_1999 | not_relevant | 0 | 0 | The paper investigates the effect of drug-drug interactions (CYP3A4 induction) on vincristine PK, not the effect of a gene variant/genotype on procarbazine PK or PD. |
+| PGx | Wahlang_2015 | not_relevant | 4 | 2 | The text is a review chapter abstract that mentions CYP polymorphisms affect procarbazine metabolism generally, but it does not report specific quantitative pharmacokinetic or pharmacodynamic parameters linked to specific genotypes. |
+| popPK | Wilde_2007 | relevant | 5 | 0 | The study is a population pharmacokinetic analysis of the BEACOPP regimen in humans which includes procarbazine, but the specific numeric parameter values for procarbazine are not provided in the extracted evidence. |
+| PGx | Wilde_2007 | not_relevant | 2 | 5 | The study reports that CYP3A4 phenotype affects cyclophosphamide PK, not procarbazine, and focuses on PK parameters rather than a specific genetic variant effect on procarbazine. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

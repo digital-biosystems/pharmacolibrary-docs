@@ -1,0 +1,30 @@
+{
+ "dose_source": "library default",
+ "model_id": "Quizartinib_Vaddady2024_final",
+ "molar_masses": {
+  "central.C": 0.56067
+ },
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.2805555555555557e-06,
+  "F": 1.0,
+  "MM": 0.56067,
+  "VdPerKg": 0.00012757142857142858,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662124
+ },
+ "reference_peaks": {
+  "central.C": 0.001072998748739483
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

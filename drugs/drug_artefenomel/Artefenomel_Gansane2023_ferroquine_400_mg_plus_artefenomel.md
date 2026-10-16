@@ -84,7 +84,7 @@ _No resolved parameters._
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs_non_atc/drug_artefenomel/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Gansane_2023` / `Gansane_2023::ferroquine_400_mg_plus_artefenomel`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs_non_atc/drug_artefenomel/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Gansane_2023` / `Gansane_2023::ferroquine_400_mg_plus_artefenomel`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

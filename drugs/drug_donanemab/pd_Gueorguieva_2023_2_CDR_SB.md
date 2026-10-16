@@ -17,9 +17,9 @@
 
 **Model:** No model was generated from this record.
 
-> Donanemab dose (dose-only driver) acts on CDR-SB in a disease-progression model, where donanemab reduces the rate of clinical decline (inhibition of disease progression, proportional effect form); the paper does not state an Imax/IC50/EC50/Emax/kin/kout/ke0 for this endpoint. Key parameters: baseline score 3.13, disease-progression rate 0.00517 week⁻¹, shape factor 3.51, with 28.6% reduction in progression rate for APOE ε4 carriers, age effect 0.0246, baseline tau effect 1.33, and time-from-diagnosis effect on baseline 0.112.
+> The paper describes the model as a disease progression model using a treatment-effect based on donanemab dosing information rather than a direct concentration-response relationship with specific potency parameters like IC50 or EC50. The final model indicates that donanemab treatment reduces the disease progression rate by 28.6% in APOE ε4 carriers, with a baseline score of 3.13, a progression rate of 0.00517 week^-1, and a shape factor of 3.51.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Gueorguieva_2023_2`
 - **model family:** `disease_progression`
@@ -34,14 +34,10 @@ Gueorguieva I et al., Donanemab exposure and efficacy relatio…, Alzheimer's & 
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | Baseline score | `Q324` · not captured | 3.13 | not captured | not captured | llm (not captured) | Gueorguieva_2023_2:pdv3 |
-| PD (effect) | Disease-progression rate | `Q340` · not captured | 0.00517 | week–1 | not captured | llm (not captured) | Gueorguieva_2023_2:pdv3 |
+| PD (effect) | Baseline score a | `Q324` · not captured | 3.13 | not captured | not captured | llm (not captured) | Gueorguieva_2023_2:pdv3 |
+| PD (effect) | Disease‐progression rate (week–1) | `Q340` · not captured | 0.00517 | week–1 | not captured | llm (not captured) | Gueorguieva_2023_2:pdv3 |
 | PD (effect) | Shape factor | `Q343` · not captured | 3.51 | not captured | not captured | llm (not captured) | Gueorguieva_2023_2:pdv3 |
-| model term | Reduction in rate of disease progression for APOE ε4 carriers | `Q900` · not captured | 28.6 | % | not captured | llm (not captured) | Gueorguieva_2023_2:pdv3 |
-| model term | Effect of age on disease progression | `Q900` · not captured | 0.0246 | not captured | not captured | llm (not captured) | Gueorguieva_2023_2:pdv3 |
-| model term | Effect of baseline tau on disease progression | `Q900` · not captured | 1.33 | not captured | not captured | llm (not captured) | Gueorguieva_2023_2:pdv3 |
-| model term | Effect of time from diagnosis of Alzheimer's disease on baseline score | `Q900` · not captured | 0.112 | not captured | not captured | llm (not captured) | Gueorguieva_2023_2:pdv3 |
-| variability | Population variability in the baseline score | `Q312` · not captured | 61.7 | %CV | not captured | llm (not captured) | Gueorguieva_2023_2:pdv3 |
+| — | Reduction in rate of disease progression for APOE ε4 carriers (%) | `Q100` · not captured | 28.6 | % | not captured | nil (not captured) | Gueorguieva_2023_2:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -50,7 +46,7 @@ Gueorguieva I et al., Donanemab exposure and efficacy relatio…, Alzheimer's & 
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
@@ -60,10 +56,10 @@ Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check v
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `einfracz:gpt-oss-120b` | `parameters[Q100]` | 28.6 | not captured | only_one_extracted |
 | `einfracz:gpt-oss-120b` | `parameters[Q324].value` | 3.13 | 3.13 (2.73) | mismatch |
 | `einfracz:gpt-oss-120b` | `parameters[Q340].value` | 0.00517 | 0.00517 (6.44) | mismatch |
 | `einfracz:gpt-oss-120b` | `parameters[Q343]` | 3.51 | not captured | only_one_extracted |
-| `einfracz:gpt-oss-120b` | `parameters[Q900]` | 0.112 | not captured | only_one_extracted |
 
 </details>
 

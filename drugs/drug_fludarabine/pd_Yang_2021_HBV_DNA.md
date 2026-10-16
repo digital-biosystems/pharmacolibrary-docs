@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;fludarabine&quot;,&quot;href&quot;:&quot;drugs/drug_fludarabine/&quot;},{&quot;label&quot;:&quot;Yang_2021 \u00b7 PD HBV progeny DNA&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;fludarabine&quot;,&quot;href&quot;:&quot;drugs/drug_fludarabine/&quot;},{&quot;label&quot;:&quot;Yang_2021 \u00b7 PD HBV progeny DNA secretion&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# HBV progeny DNA — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span>
+# HBV progeny DNA secretion — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by ollama:gpt-oss:120b (not confirmed, agreement 0.571). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -15,16 +15,16 @@
 
 ## Record summary
 
-**As extracted:** Fludarabine (concentrations from the PK model of Ivaturi_2017) drives HBV progeny DNA: direct Emax (saturable) effect.
+**As extracted:** Fludarabine (concentrations from the PK model of Ivaturi_2017::median_value) drives HBV progeny DNA secretion: direct sigmoid Emax (Hill) effect.
 
-**Model:** Model available in **Models**; browser simulation unavailable.
+**Model:** No model was generated from this record.
 
-> Fludarabine inhibits HBV progeny DNA by a direct Emax mechanism, with a reported EC50 of 0.1 μM and a maximum inhibition (Imax) of 96%. The paper describes this effect as targeting the late HBV life cycle but does not specify whether the drug acts by inhibiting production or elimination of the response.
+> Fludarabine inhibits HBV progeny DNA secretion via a sigmoid Emax model with an EC50 of 0.1 μM and a maximum inhibition (Imax) of 96%. The paper does not specify the underlying mechanism of action (e.g., production vs. elimination) or rate constants.
 >
-> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
 
 - **paper:** `Yang_2021`
-- **model family:** `emax`
+- **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`
 - **tier:** descriptive
 - **effect:** inhibition/unknown
@@ -45,58 +45,20 @@ Yang J et al., A new high-content screening assay of t…, JHEP reports : innova
 </details>
 
 
-## Exposure-response model
-
-`Fludarabine_Yang2021_PD_hbv_dna` — sigmoid_emax, `response = E0 + Emax*frac`
-
-| parameter | value (paper units) | SI |
-|---|---|---|
-| E0 | 0 | — |
-| Emax | -96 % | -0.96 1 |
-| EC50 | 0.1 μM | — |
-| gamma | 1 | — |
-
-Closed-form check points (response, SI): `at_0` = 0, `at_EC50` = -0.48, `at_inf` = -0.96
-
-Deviations:
-
-- `defaulted_parameters` — E0, gamma
-- `pd_binding_imax_as_negative_emax` — Imax (Q323) enters SigmoidEmaxSweep as −Emax
-- `pd_binding_exposure_unit_unresolved` — 'μM' — the x axis is in the paper's unit, not SI
-
-## Review
-
-Verdict <span class="pk-badge pk-badge--orange">needs review</span> · route to `scholar`
-
-| check | status | note |
-|---|---|---|
-| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
-| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
-| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
-| `T2_direction` | pass | the response falls, as direct effect predicts |
-| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
-| `T4_defaults` | fail | a core parameter took a library default: E0 |
-
-Advisory:
-
-- defaulted: E0 — a row the paper has and the record lacks
-- exposure unit not resolved to SI — the x axis is in the paper's unit
-
-
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
+Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `einfracz:gpt-oss-120b` | not confirmed | 0.5 (3/6 fields) | 3 |
+| `ollama:gpt-oss:120b` | not confirmed | 0.571 (4/7 fields) | 3 |
 
 <details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `einfracz:gpt-oss-120b` | `effect_form` | unknown | proportional | mismatch |
-| `einfracz:gpt-oss-120b` | `parameters[Q322]` | 0.1 | not captured | only_one_extracted |
-| `einfracz:gpt-oss-120b` | `parameters[Q323].value` | 96 | unit": "%", "parameter_id": "Q323", "quote": "Imax (%) = 96" },         {           "name": "EC50",           "symbol": "EC50",           "value": 0.1,           "unit": "μM",           "parameter_id": "Q321",           "quote": "EC50 = 0.1 μM"         }       ]     }   ] }   ], | mismatch |
+| `ollama:gpt-oss:120b` | `effect_form` | unknown | additive | mismatch |
+| `ollama:gpt-oss:120b` | `parameters[Q321]` | not captured | 0.1 | only_one_extracted |
+| `ollama:gpt-oss:120b` | `parameters[Q322]` | 0.1 | not captured | only_one_extracted |
 
 </details>
 
@@ -112,14 +74,14 @@ Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check v
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_fludarabine/Fludarabine_Yang2021_PD_hbv_dna/Fludarabine_Yang2021_PD_hbv_dna_modelica.zip" download>Fludarabine_Yang2021_PD_hbv_dna_modelica.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_fludarabine/Fludarabine_Yang2021_PD_hbv_dna/Fludarabine_Yang2021_PD_hbv_dna_matlab.zip" download>Fludarabine_Yang2021_PD_hbv_dna_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_fludarabine/Fludarabine_Yang2021_PD_hbv_dna/Fludarabine_Yang2021_PD_hbv_dna_sbml.zip" download>Fludarabine_Yang2021_PD_hbv_dna_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_fludarabine/Fludarabine_Yang2021_PD_hbv_dna/Fludarabine_Yang2021_PD_hbv_dna_cellml.zip" download>Fludarabine_Yang2021_PD_hbv_dna_cellml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>

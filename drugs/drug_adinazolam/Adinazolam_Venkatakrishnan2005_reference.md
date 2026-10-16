@@ -1,11 +1,10 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05B&quot;,&quot;href&quot;:&quot;atc/N05B.md&quot;},{&quot;label&quot;:&quot;adinazolam&quot;,&quot;href&quot;:&quot;drugs/drug_adinazolam/&quot;},{&quot;label&quot;:&quot;Venkatakrishnan_2005 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Adinazolam_Venkatakrishnan2005_reference&quot;,&quot;label&quot;:&quot;Venkatakrishnan_2005_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_adinazolam/Adinazolam_Venkatakrishnan2005_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # adinazolam — `Adinazolam_Venkatakrishnan2005_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.062). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.062). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -13,45 +12,35 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** Model and browser simulation available in **Models** and **Simulation**.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
-**The adinazolam parent–metabolite record was rejected because the absorption rate constant ka (and Tlag) were left at library defaults instead of values from the paper, and the model structure did not match the measured N-desmethyl adinazolam output.**
+**Only volume was extracted — no clearance.**
 
-The record, built from the abstract only, reports summary statistics for adinazolam and N-desmethyl adinazolam (e.g. Vm/F 100 L, CLm/F 321 mL/min, t1/2z 2.8 h) but no fitted model. The model output was set to the parent drug's concentration in its central compartment rather than to the measured metabolite N-desmethyl adinazolam, and the structure was a single-compartment model with extravascular dosing instead of a parent–metabolite structure. The builder defaulted ka and Tlag, assumed F=1 and Fm=1 without molar correction, and used first-order depot input; the ka default is not supported by the paper and the deviation adjudication found defaulted parameters and invented absorption unacceptable. Extracted — adinazolam: Vm/F 106 L, t1/2z 2.9 hours, CLm/F 444 mL/min; N-desmethyl adinazolam: Vm/F 100 L, t1/2z 2.8 hours, CLm/F 321 mL/min; alprazolam: V 77 L, t1/2z 14.6 hours, CL 84 mL/min.
+A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — adinazolam: V 106 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has adinazolam, the second reading unknown; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by glm-5.3-flash</sub>
-
-> **Dose compound ≠ measured compound:** dosed `adinazolam`, measured `N-desmethyl adinazolam`.
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Venkatakrishnan K et al., Kinetics and dynamics of intravenous ad…, Journal of clinical pharmac… (2005)
   ·  DOI: [10.1177/0091270004269105](https://doi.org/10.1177/0091270004269105)
 
-<div class="pk-model-meta" hidden drug="adinazolam" model-id="Adinazolam_Venkatakrishnan2005_reference" status="rejected" stale="false" population="healthy male volunteers" measured-compound="N-desmethyl adinazolam" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="adinazolam" model-id="Adinazolam_Venkatakrishnan2005_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="adinazolam" parameterization="mechanistic" topology="parent_metabolite"></div>
 
-**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 9 extracted.
+**Model structure:** parent + metabolite; no model was built for this record.  
+**Parameters:** 1 extracted.
 
-**Parameterization:** CLm/F, Vm/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| volume of distribution (L), adinazolam | `Q367` · Vm/F | 106 | L | 0.106 | [l] | not captured | llm_confirmed (0.6) | Venkatakrishnan_2005:abstract | — | not captured |
-| volume of distribution (L), NDMAD | `Q367` · Vm/F | 100 | L | 0.1 | [l] | not captured | llm_confirmed (0.6) | Venkatakrishnan_2005:abstract | — | not captured |
-| volume of distribution (L), alprazolam | `Q61` · V | 77 | L | 0.077 | [l] | not captured | llm_confirmed (0.6) | Venkatakrishnan_2005:abstract | — | not captured |
-| elimination half-life (hours), adinazolam | `Q57` · t1/2z | 2.9 | hours | 10440.0 | [h] | not captured | llm (0.6) | Venkatakrishnan_2005:abstract | — | not captured |
-| elimination half-life (hours), NDMAD | `Q57` · t1/2z | 2.8 | hours | 10080.0 | [h] | not captured | llm (0.6) | Venkatakrishnan_2005:abstract | — | not captured |
-| elimination half-life (hours), alprazolam | `Q57` · t1/2z | 14.6 | hours | 52560.0 | [h] | not captured | llm (0.6) | Venkatakrishnan_2005:abstract | — | not captured |
-| clearance (mL/min), adinazolam | `Q351` · CLm/F | 444 | mL/min | 7.4e-06 | [ml] / [min] | not captured | llm_confirmed (0.6) | Venkatakrishnan_2005:abstract | — | not captured |
-| clearance (mL/min), NDMAD | `Q351` · CLm/F | 321 | mL/min | 5.35e-06 | [ml] / [min] | not captured | llm_confirmed (0.6) | Venkatakrishnan_2005:abstract | — | not captured |
-| clearance (mL/min), alprazolam | `Q22` · CL | 84 | mL/min | 1.4e-06 | [ml] / [min] | not captured | llm_confirmed (0.6) | Venkatakrishnan_2005:abstract | — | not captured |
+| volume of distribution (L) | `Q61` · V | 106 | L | 0.106 | [l] | not captured | exact (1.0) | Venkatakrishnan_2005:abstract | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -60,26 +49,18 @@ Venkatakrishnan K et al., Kinetics and dynamics of intravenous ad…, Journal of
 
 ## Departures & gaps
 
-**Deviations:**
-- `defaulted_parameters`: ['ka', 'Tlag']
-- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
-- `invented_absorption`: ka defaulted — not reported in source
-- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
-
 **Interpretation flags:**
-- dropped PD-category row 'effect site equilibration half-life' → Q326 (ke0, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Venkatakrishnan_2005:abstract'])
-- metabolite n-desmethyl adinazolam: Q61→Q367 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
-- metabolite n-desmethyl adinazolam: Q22→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=N-desmethyl adinazolam
-- template fit: none — noncompartmental model — not a compartmental parent–metabolite model
-- row roles (LLM): model_class=noncompartmental; 10/10 row label(s) assigned, 0 linked by role; re-tagged N-desmethyl adinazolam→parent ×3, N-desmethyl adinazolam→alprazolam ×3
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=adinazolam
+- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
+- template fit: none — other model — not a compartmental parent–metabolite model
+- status held at route_to_review — not promoted
+- row roles (LLM): model_class=other; 1/1 row label(s) assigned, 0 linked by role
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
-- engineer: parent_metabolite composite downgraded to a 1C model of the measured compound — the paper reports the metabolite's own CL and V but neither the parent's disposition nor a formation rate, so the parent sub-component could not be populated; the parent's concentration-time course is NOT produced by this model
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Venkatakrishnan_2005_metadata.yaml (10 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Venkatakrishnan_2005_metadata.yaml (1 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -122,35 +103,12 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 9 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Venkatakrishnan_2005:abstract'] |
-| C5_dimension_Q351 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Venkatakrishnan_2005:abstract'] |
-| C5_dimension_Q351 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Venkatakrishnan_2005:abstract'] |
-| C5_dimension_Q367 | pass | [length] ** 3 | not captured | not captured | not captured | ['Venkatakrishnan_2005:abstract'] |
-| C5_dimension_Q367 | pass | [length] ** 3 | not captured | not captured | not captured | ['Venkatakrishnan_2005:abstract'] |
-| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Venkatakrishnan_2005:abstract'] |
-| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Venkatakrishnan_2005:abstract'] |
-| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Venkatakrishnan_2005:abstract'] |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Venkatakrishnan_2005:abstract'] |
-| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 5.04 L/h | not captured | not captured | ['Venkatakrishnan_2005:abstract'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 77 L | not captured | not captured | ['Venkatakrishnan_2005:abstract'] |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
-| T3_output_variable | not captured | fail | Metabolite_C (measured=N-desmethyl adinazolam) | central.C | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
-| T3_shared_parameters | not captured | pass | 3 shared param(s) bound once | bound once | not captured | shared params must bind one value to both compartments |
-| T3_topology_template | not captured | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable; invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
+| C9_phys_window_Q61 | pass | volume within physiological range | 106 L | not captured | not captured | ['Venkatakrishnan_2005:abstract'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -159,27 +117,30 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_adinazolam/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Venkatakrishnan_2005` / `Venkatakrishnan_2005::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_adinazolam/models/modelica/Adinazolam_Venkatakrishnan2005_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_adinazolam/models/modelica/Adinazolam_Venkatakrishnan2005_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_adinazolam/models/modelica/Adinazolam_Venkatakrishnan2005_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_adinazolam/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Venkatakrishnan_2005` / `Venkatakrishnan_2005::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
-
-<dbs-fmusim paramsurl="drugs/drug_adinazolam/Adinazolam_Venkatakrishnan2005_reference/Adinazolam_Venkatakrishnan2005_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_adinazolam/Adinazolam_Venkatakrishnan2005_reference/Adinazolam_Venkatakrishnan2005_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C_enteral` · parameters `Adinazolam_Venkatakrishnan2005_reference_params.json` · controls `Adinazolam_Venkatakrishnan2005_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 17:56 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 22:03 UTC</sub>

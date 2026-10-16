@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;Sulfadoxine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sulfadoxine_Trenque2004_reference&quot;,&quot;label&quot;:&quot;Trenque_2004_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulfadoxine/Sulfadoxine_Trenque2004_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sulfadoxine_Corvaisier2004_reference&quot;,&quot;label&quot;:&quot;Corvaisier_2004_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulfadoxine/Sulfadoxine_Corvaisier2004_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sulfadoxine_de2018_reference&quot;,&quot;label&quot;:&quot;de_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulfadoxine/Sulfadoxine_de2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sulfadoxine_de2018_reference&quot;,&quot;label&quot;:&quot;de_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulfadoxine/Sulfadoxine_de2018_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # Sulfadoxine
 
@@ -21,29 +21,33 @@ Sulfadoxine is a sulfonamide antibiotic used as an antimalarial against Plasmodi
 
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
-| sulfadoxine | parent | 310.329 | C12H14N4O4S | DrugBank | [17134](https://pubchem.ncbi.nlm.nih.gov/compound/17134) | Corvaisier_2004, Trenque_2004, de_2017, de_2018 |
+| sulfadoxine | parent | 310.329 | C12H14N4O4S | DrugBank | [17134](https://pubchem.ncbi.nlm.nih.gov/compound/17134) | Corvaisier_2004, Salman_2011, de_2017, de_2018 |
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 08:51 | 4:53 | 1/1/2 | 1/1/0 | 0/0/0 | 239,114/19,132 | ollama / glm-5.3-flash | 6 | 0/6 | 6/0 | 0 |
+| 2026-10-15 03:41 | 2:55 | 1/4/1 | 0/0/0 | 0/0/0 | 195,727/14,410 | einfracz / qwen3.8-27b | 6 | 0/6 | 6/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span> | [Trenque_2004_reference](drugs/drug_sulfadoxine/Sulfadoxine_Trenque2004_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Trenque T et al., Population pharmacokinetics of pyrimeth…, British journal of clinical… (2004) | [10.1111/j.1365-2125.2004.02077.x](https://doi.org/10.1111/j.1365-2125.2004.02077.x) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: unreported model parameter default(s): F</sub><br><sub>route_to: `scholar`</sub> | [Corvaisier_2004_reference](drugs/drug_sulfadoxine/Sulfadoxine_Corvaisier2004_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Corvaisier S et al., Population pharmacokinetics of pyrimeth…, Antimicrobial agents and ch… (2004) | [10.1128/AAC.48.10.3794-3800.2004](https://doi.org/10.1128/AAC.48.10.3794-3800.2004) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: T1_cmax</sub><br><sub>route_to: `scholar`</sub> | [de_2018_reference](drugs/drug_sulfadoxine/Sulfadoxine_de2018_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 (+1 cov.) | de Kock M et al., Population Pharmacokinetic Properties o…, Antimicrobial agents and ch… (2018) | [10.1128/AAC.01370-17](https://doi.org/10.1128/AAC.01370-17) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.706). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub><br><sub>route_to: `human_review`</sub> | [de_2017_reference](drugs/drug_sulfadoxine/Sulfadoxine_de2017_reference.md) | — | 2-compartment (no model) | 9 | de Kock M et al., Pharmacokinetics of Sulfadoxine and Pyr…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12181](https://doi.org/10.1002/psp4.12181) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> | [de_2018_reference](drugs/drug_sulfadoxine/Sulfadoxine_de2018_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | de Kock M et al., Population Pharmacokinetic Properties o…, Antimicrobial agents and ch… (2018) | [10.1128/AAC.01370-17](https://doi.org/10.1128/AAC.01370-17) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.706). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [de_2017_country](drugs/drug_sulfadoxine/Sulfadoxine_de2017_country.md) | — | 1-compartment (no model) | 1 | de Kock M et al., Pharmacokinetics of Sulfadoxine and Pyr…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12181](https://doi.org/10.1002/psp4.12181) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Corvaisier_2004_reference](drugs/drug_sulfadoxine/Sulfadoxine_Corvaisier2004_reference.md) | — | general linear (no model) | 4 | Corvaisier S et al., Population pharmacokinetics of pyrimeth…, Antimicrobial agents and ch… (2004) | [10.1128/AAC.48.10.3794-3800.2004](https://doi.org/10.1128/AAC.48.10.3794-3800.2004) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Salman_2011_reference](drugs/drug_sulfadoxine/Sulfadoxine_Salman2011_reference.md) | — | 1-compartment (no model) | 2 | Salman S et al., Pharmacokinetic properties of conventio…, Antimicrobial agents and ch… (2011) | [10.1128/AAC.01075-10](https://doi.org/10.1128/AAC.01075-10) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Trenque_2004_reference](drugs/drug_sulfadoxine/Sulfadoxine_Trenque2004_reference.md) | — | 1-compartment (no model) | 0 | Trenque T et al., Population pharmacokinetics of pyrimeth…, British journal of clinical… (2004) | [10.1111/j.1365-2125.2004.02077.x](https://doi.org/10.1111/j.1365-2125.2004.02077.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.706). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub><br><sub>route_to: `human_review`</sub> | [de_2017_sulfadoxine](drugs/drug_sulfadoxine/Sulfadoxine_de2017_sulfadoxine.md) | — | 2-compartment (no model) | 8 | de Kock M et al., Pharmacokinetics of Sulfadoxine and Pyr…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12181](https://doi.org/10.1002/psp4.12181) |
 
-## Pharmacodynamics (PD)
+## ADME sites
 
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Nour_2006_inhibition_of_schizont_maturation_Plasmodium_falciparum](drugs/drug_sulfadoxine/pd_Nour_2006_inhibition_of_schizont_maturation_Plasmodium_falci.md) | inhibition of schizont maturation (Plasmodium falciparum) ← sulfadoxine/pyrimethamine · inhibition effect | — | Nour BY et al., In vitro study assessing the response o…, Saudi medical journal (2006) | — |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Benito_1995_in_vitro_susceptibility_of_Plasmodium_falciparum_to_sulfadoxine_pyrimethamine](drugs/drug_sulfadoxine/pd_Benito_1995_in_vitro_susceptibility_of_Plasmodium_falciparum.md) | in vitro susceptibility of Plasmodium falciparum to sulfadoxine/pyrimethamine ← sulfadoxine/pyrimethamine · direct log-linear effect | — | Benito A et al., In vitro susceptibility of Plasmodium f…, The American journal of tro… (1995) | [10.4269/ajtmh.1995.53.526](https://doi.org/10.4269/ajtmh.1995.53.526) |
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=sulfadoxine).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | brain | `MAOB` inhibitor | DrugBank actor |
+| metabolism | platelet | `MAOB` inhibitor | DrugBank actor |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,8 +58,8 @@ Sulfadoxine is a sulfonamide antibiotic used as an antimalarial against Plasmodi
 ## Coverage
 
 - **PubMed hits:** 41 matched, 20 returned
-- **screened:** 4  ·  **relevant:** 4
-- **records:** 4  ·  extracted 1  ·  needs_review 2  ·  rejected 1  ·  stale 0
+- **screened:** 5  ·  **relevant:** 5
+- **records:** 6  ·  extracted 1  ·  needs_review 1  ·  rejected 4  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -64,33 +68,32 @@ _4 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Corvaisier_2004.pdf` | Corvaisier S et al., Population pharmacokinetics of pyrimeth…, Antimicrobial agents and ch… (2004) | popPK | 10 | [10.1128/AAC.48.10.3794-3800.2004](https://doi.org/10.1128/AAC.48.10.3794-3800.2004) | [15388436](https://pubmed.ncbi.nlm.nih.gov/15388436) | Population PK of sulfadoxine in children with numeric parameters (ka, V, ke, half-life) reported directly in the abstract. |
-| `Trenque_2004.pdf` | Trenque T et al., Population pharmacokinetics of pyrimeth…, British journal of clinical… (2004) | popPK | 10 | [10.1111/j.1365-2125.2004.02077.x](https://doi.org/10.1111/j.1365-2125.2004.02077.x) | [15151519](https://pubmed.ncbi.nlm.nih.gov/15151519) | Population PK model for sulfadoxine with numeric CL and V values reported directly in the abstract. |
-| `Salman_2011.pdf` | Salman S et al., Pharmacokinetic properties of conventio…, Antimicrobial agents and ch… (2011) | popPK | 9 | [10.1128/AAC.01075-10](https://doi.org/10.1128/AAC.01075-10) | [21282434](https://pubmed.ncbi.nlm.nih.gov/21282434) | Population PK two-compartment model of sulfadoxine in infants is described, but numeric CL/V parameter values are not in the evidence (only half-life and AUC appear; full parameters likely in tables/supplement not provided). |
-| `Bell_2011.pdf` | Bell DJ et al., Population pharmacokinetics of sulfadox…, Clinical pharmacology and t… (2011) | popPK | 8 | [10.1038/clpt.2010.297](https://doi.org/10.1038/clpt.2010.297) | [21191379](https://pubmed.ncbi.nlm.nih.gov/21191379) | Population PK model of sulfadoxine in children is clearly the subject, but the abstract contains no numeric parameter values, which likely reside in tables/figures not provided. |
+| `Bell_2011.pdf` | Bell DJ et al., Population pharmacokinetics of sulfadox…, Clinical pharmacology and t… (2011) | popPK | 10 | [10.1038/clpt.2010.297](https://doi.org/10.1038/clpt.2010.297) | [21191379](https://pubmed.ncbi.nlm.nih.gov/21191379) | The study is a population PK analysis of sulfadoxine, but the abstract provided does not contain specific numeric parameter values (e.g., CL, Vd), which are likely in the full text or figures not included. |
+| `Corvaisier_2004.pdf` | Corvaisier S et al., Population pharmacokinetics of pyrimeth…, Antimicrobial agents and ch… (2004) | popPK | 10 | [10.1128/AAC.48.10.3794-3800.2004](https://doi.org/10.1128/AAC.48.10.3794-3800.2004) | [15388436](https://pubmed.ncbi.nlm.nih.gov/15388436) | The abstract explicitly provides quantitative population pharmacokinetic parameters (ka, V, ke, t1/2) for sulfadoxine in children. |
+| `Salman_2011.pdf` | Salman S et al., Pharmacokinetic properties of conventio…, Antimicrobial agents and ch… (2011) | popPK | 10 | [10.1128/AAC.01075-10](https://doi.org/10.1128/AAC.01075-10) | [21282434](https://pubmed.ncbi.nlm.nih.gov/21282434) | The study reports population PK parameters including half-life and AUC for sulfadoxine, though specific clearance or volume values are not explicitly listed in the abstract text. |
+| `Trenque_2004.pdf` | Trenque T et al., Population pharmacokinetics of pyrimeth…, British journal of clinical… (2004) | popPK | 10 | [10.1111/j.1365-2125.2004.02077.x](https://doi.org/10.1111/j.1365-2125.2004.02077.x) | [15151519](https://pubmed.ncbi.nlm.nih.gov/15151519) | The study reports quantitative population PK parameters (CL, V, half-life) for sulfadoxine in humans with numeric values provided in the abstract. |
 
-<sub>queue written 2026-10-07T08:47:48.849207+00:00</sub>
+<sub>queue written 2026-10-15T03:39:06.958080+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Arshad_2020 | irrelevant | 2 | 1 | Sulfadoxine is only one of many repurposed drugs compared against EC50/EC90; no PK disposition parameters (CL, V, half-life, model) for sulfadoxine are reported, and Cmax values live in figures/tables not provided. |
-| popPK | Bell_2011 | relevant | 8 | 2 | Population PK model of sulfadoxine in children is clearly the subject, but the abstract contains no numeric parameter values, which likely reside in tables/figures not provided. |
-| popPK | Benito_1995 | irrelevant | 0 | 0 | In vitro drug-susceptibility study of parasite response, not a pharmacokinetic study of sulfadoxine disposition. |
-| popPK | Del_1994 | irrelevant | 0 | 0 | This is an in vitro drug-sensitivity study of P. falciparum; sulfadoxine appears only as a test drug with EC50 values, no PK parameters. |
-| popPK | Elati_2026 | irrelevant | 0 | 0 | This is an in vitro drug-efficacy screening study of tubercidin analogues against Toxoplasma gondii; sulfadoxine is only mentioned as a background treatment and no PK parameters are reported. |
-| popPK | Karunajeewa_2010 | irrelevant | 2 | 1 | The study models chloroquine/DECQ; sulfadoxine is only co-administered, and no sulfadoxine PK parameter values are reported in the evidence. |
-| popPK | Kremsner_1989 | irrelevant | 0 | 0 | In vitro parasite sensitivity study with EC50 values, no PK disposition parameters for sulfadoxine. |
-| popPK | Moore_2015 | irrelevant | 1 | 0 | The study models piperaquine breast-milk transfer; sulfadoxine is only a co-administered comparator with no sulfadoxine PK parameters reported. |
-| popPK | Nour_2006 | irrelevant | 0 | 0 | In vitro drug-sensitivity (EC50) study of parasite response, not a pharmacokinetic study with disposition parameters for sulfadoxine. |
-| popPK | Philipps_1998 | irrelevant | 0 | 0 | In vitro susceptibility (EC50) study of antimalarials, not a pharmacokinetic study of sulfadoxine. |
-| popPK | Ramharter_2019 | irrelevant | 0 | 0 | This is a population PK study of mefloquine (and its metabolite), not sulfadoxine; sulfadoxine is only mentioned as the comparator SP-IPTp, and no sulfadoxine parameter values are present. |
-| popPK | Salman_2010 | irrelevant | 1 | 0 | This is a population-PK study of azithromycin; sulfadoxine-pyrimethamine is only a co-administered comparator and no sulfadoxine parameter values are reported. |
-| popPK | Salman_2011 | relevant | 9 | 4 | Population PK two-compartment model of sulfadoxine in infants is described, but numeric CL/V parameter values are not in the evidence (only half-life and AUC appear; full parameters likely in tables/supplement not provided). |
-| popPK | Warsame_1991 | irrelevant | 0 | 0 | In-vitro drug susceptibility study of P. falciparum with EC50 values, not a pharmacokinetic study of sulfadoxine disposition. |
-| popPK | de_2020 | irrelevant | 0 | 0 | This is an in-vitro antiviral study of chloroquine–sulfadoxine hybrid compounds against ZIKV; no PK parameters for sulfadoxine itself are reported. |
-| popPK | van_2025 | irrelevant | 0 | 0 | This is a systematic review/meta-analysis of IPTp-SP clinical effectiveness and parasite resistance markers, with no pharmacokinetic parameters (CL, V, ka, half-life, or PK model) for sulfadoxine reported. |
+| popPK | Arshad_2020 | irrelevant | 4 | 2 | The paper is a repurposing analysis that references sulfadoxine's PK (Cmax, concentration-time profiles) to compare antiviral efficacy, but does not report quantitative compartmental PK parameters (CL, V, etc.) or novel PK model values for sulfadoxine. |
+| popPK | Bell_2011 | relevant | 10 | 0 | The study is a population PK analysis of sulfadoxine, but the abstract provided does not contain specific numeric parameter values (e.g., CL, Vd), which are likely in the full text or figures not included. |
+| popPK | Benito_1995 | irrelevant | 0 | 0 | The study is an in-vitro susceptibility assay for Plasmodium falciparum, not a pharmacokinetic study, and contains no PK parameters. |
+| popPK | Del_1994 | irrelevant | 0 | 0 | The study reports in vitro susceptibility (EC50/EC99) of Plasmodium falciparum to sulfadoxine/pyrimethamine, not pharmacokinetic disposition parameters (CL, V, t1/2) for the drug in a host species. |
+| popPK | Elati_2026 | irrelevant | 0 | 0 | The paper is an in vitro drug screening study for Toxoplasma gondii where sulfadoxine is mentioned only as a background therapy and sulfadiazine is used as a control; no pharmacokinetic parameters are reported. |
+| popPK | Karunajeewa_2010 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of chloroquine and its metabolite, with sulfadoxine administered only as a co-medication without reported PK parameters. |
+| popPK | Kremsner_1989 | irrelevant | 0 | 0 | The study is an in vitro drug sensitivity assay for Plasmodium falciparum, not a pharmacokinetic study, and reports EC50 values rather than disposition parameters. |
+| popPK | Moore_2015 | irrelevant | 0 | 0 | The study models the pharmacokinetics of piperaquine, not sulfadoxine, which is only mentioned as part of a co-administered combination. |
+| popPK | Nour_2006 | irrelevant | 0 | 0 | This is an in vitro study assessing parasitic response to drug concentrations, not a pharmacokinetic study of sulfadoxine disposition parameters. |
+| popPK | Philipps_1998 | irrelevant | 0 | 0 | The study reports in vitro susceptibility (EC50) data for antimalarials, not pharmacokinetic parameters for sulfadoxine. |
+| popPK | Ramharter_2019 | irrelevant | 0 | 0 | The study reports population PK parameters for mefloquine and its metabolite, while sulfadoxine-pyrimethamine is only mentioned as a comparator. |
+| popPK | Salman_2010 | irrelevant | 1 | 0 | The study focuses on the pharmacokinetics of azithromycin, and sulfadoxine was only co-administered as a component of a single-dose treatment without specific PK parameter reporting. |
+| popPK | Warsame_1991 | irrelevant | 0 | 0 | This is an in-vitro drug susceptibility study of Plasmodium falciparum, not a pharmacokinetic study of sulfadoxine disposition in an organism. |
+| popPK | de_2020 | irrelevant | 0 | 0 | The study is an in-vitro antiviral assay evaluating the anti-Zika activity of hybrid compounds, not a pharmacokinetic study of sulfadoxine. |
+| popPK | van_2025 | irrelevant | 0 | 0 | The paper is a systematic review and meta-analysis of the clinical effectiveness of sulfadoxine-pyrimethamine for malaria prevention in pregnancy, reporting epidemiological outcomes (parasitaemia, birthweight) rather than pharmacokinetic parameters (CL, V, etc.). |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 08:48 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-15 03:39 UTC</sub>

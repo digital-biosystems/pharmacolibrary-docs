@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;ipragliflozin&quot;,&quot;href&quot;:&quot;drugs/drug_ipragliflozin/&quot;},{&quot;label&quot;:&quot;Saito_2019 \u00b7 PD change from baseline in UGE for 24 hours&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ipragliflozin_Saito2019_reference&quot;,&quot;label&quot;:&quot;Saito_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ipragliflozin/Ipragliflozin_Saito2019_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Saito_2019_UGE24h&quot;,&quot;label&quot;:&quot;Saito_2019 \u00b7 \u0394UGE24h&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ipragliflozin/pd_Saito_2019_UGE24h.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # change from baseline in UGE for 24 hours — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
@@ -13,19 +14,19 @@
 
 ## Record summary
 
-**As extracted:** Ipragliflozin (the dose) drives change from baseline in UGE for 24 hours (in g): direct Emax (saturable) effect.
+**As extracted:** Ipragliflozin (concentrations from this paper's PK model) drives change from baseline in UGE for 24 hours (in g): direct Emax (saturable) effect.
 
-**Model:** No model was generated from this record.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
-> The AUC0-24h of ipragliflozin (ng·h/mL) drives the change from baseline in 24-hour urinary glucose excretion (ΔUGE24h, g) via a direct Emax model, where Emax is modulated by fasting plasma glucose and glomerular filtration rate up to a filtered glucose threshold. The estimated EC50 was 1590 ng·h/mL, with a reference Emax of 72.3 g/24 h (at FPG 100 mg/dL and GFR 90 mL/min) that saturates to 107 g/24 h at the threshold.
+> Ipragliflozin exposure (AUC24h) drives the change in 24-hour urinary glucose excretion (ΔUGE24h) via a direct Emax model, characterized by a maximum effect (Emax) of 72.3 g/24 h and a half-maximal effective concentration (EC50) of 1590 ng·h/mL. The paper specifies that Emax is covariate-dependent on fasting plasma glucose and renal function, but no rate parameters (e.g., kin, kout, ke0) are provided for the effect mechanism.
 >
 > <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Saito_2019`
 - **model family:** `emax`
-- **driver:** `dose_only`
-- **tier:** population
-- **effect:** stimulation/additive
+- **driver:** `pk_record`
+- **tier:** descriptive
+- **effect:** stimulation/proportional
 
 ## Citation
 Saito M et al., Pharmacokinetic and pharmacodynamic mod…, British journal of clinical… (2019)
@@ -36,16 +37,48 @@ Saito M et al., Pharmacokinetic and pharmacodynamic mod…, British journal of c
 |---|---|---|---|---|---|---|---|
 | PD (effect) | EC50 | `Q321` · not captured | 1590 | ng·h/mL | not captured | llm (not captured) | Saito_2019:pdv3 |
 | PD (effect) | Emax | `Q320` · not captured | 72.3 | g/24 h | not captured | llm (not captured) | Saito_2019:pdv3 |
-| PD (effect) | Emax | `Q320` · not captured | 107 | g/24 h | not captured | llm (not captured) | Saito_2019:pdv3 |
-| model term | FPG effect on Emax | `Q900` · not captured | 1.37 | not captured | not captured | llm (not captured) | Saito_2019:pdv3 |
-| model term | GFR effect on Emax | `Q900` · not captured | 0.623 | not captured | not captured | llm (not captured) | Saito_2019:pdv3 |
-| variability | Additive error | `Q315` · not captured | 352 | not captured | not captured | llm (not captured) | Saito_2019:pdv3 |
-| variability | Proportional error | `Q315` · not captured | 0.198 | not captured | not captured | llm (not captured) | Saito_2019:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
+
+
+## Exposure-response model
+
+`Ipragliflozin_Saito2019_PD_uge24h` — sigmoid_emax, `response = E0 + Emax*frac`
+
+| parameter | value (paper units) | SI |
+|---|---|---|
+| E0 | 0 | — |
+| Emax | 72.3 g/24 h | — |
+| EC50 | 1590 ng·h/mL | — |
+| gamma | 1 | — |
+
+Closed-form check points (response, SI): `at_0` = 0, `at_EC50` = 36.15, `at_inf` = 72.3
+
+Deviations:
+
+- `defaulted_parameters` — E0, gamma
+- `pd_binding_exposure_unit_unresolved` — 'ng·h/mL' — the x axis is in the paper's unit, not SI
+
+## Review
+
+Verdict <span class="pk-badge pk-badge--orange">needs review</span> · route to `scholar`
+
+| check | status | note |
+|---|---|---|
+| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
+| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
+| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
+| `T2_direction` | pass | the response rises, as direct effect predicts |
+| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
+| `T4_defaults` | fail | a core parameter took a library default: E0 |
+
+Advisory:
+
+- defaulted: E0 — a row the paper has and the record lacks
+- exposure unit not resolved to SI — the x axis is in the paper's unit
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
@@ -78,19 +111,22 @@ Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check v
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ipragliflozin/Ipragliflozin_Saito2019_PD_uge24h/Ipragliflozin_Saito2019_PD_uge24h_modelica.zip" download>Ipragliflozin_Saito2019_PD_uge24h_modelica.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_ipragliflozin/Ipragliflozin_Saito2019_PD_uge24h/Ipragliflozin_Saito2019_PD_uge24h_matlab.zip" download>Ipragliflozin_Saito2019_PD_uge24h_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_ipragliflozin/Ipragliflozin_Saito2019_PD_uge24h/Ipragliflozin_Saito2019_PD_uge24h_sbml.zip" download>Ipragliflozin_Saito2019_PD_uge24h_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_ipragliflozin/Ipragliflozin_Saito2019_PD_uge24h/Ipragliflozin_Saito2019_PD_uge24h_cellml.zip" download>Ipragliflozin_Saito2019_PD_uge24h_cellml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PD_SigmoidEmaxSweep.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+<dbs-fmusim paramsurl="drugs/drug_ipragliflozin/Ipragliflozin_Saito2019_PD_uge24h/Ipragliflozin_Saito2019_PD_uge24h_params.json" metaurl="assets/fmu/PD_SigmoidEmaxSweep.vr.json" wasmurl="assets/fmu/PD_SigmoidEmaxSweep.js" controlsurl="drugs/drug_ipragliflozin/Ipragliflozin_Saito2019_PD_uge24h/Ipragliflozin_Saito2019_PD_uge24h_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PD_SigmoidEmaxSweep` · parameters `Ipragliflozin_Saito2019_PD_uge24h_params.json` · controls `Ipragliflozin_Saito2019_PD_uge24h_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 

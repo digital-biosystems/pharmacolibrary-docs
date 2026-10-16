@@ -29,10 +29,10 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the
 Romano MJ et al., Single-dose pharmacokinetics and safety…, The Journal of pediatrics (1993)
   ·  DOI: [10.1016/s0022-3476(09)90031-2](https://doi.org/10.1016/s0022-3476(09)90031-2)
 
-<div class="pk-model-meta" hidden drug="nebacumab" model-id="Nebacumab_Romano1993_reference" status="curated_candidate" stale="false" population="pediatric patients with sepsis syndrome or septic shock" measured-compound="nebacumab" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="nebacumab" model-id="Nebacumab_Romano1993_reference" status="curated_candidate" stale="false" population="pediatric patients with sepsis syndrome" measured-compound="nebacumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
-**Parameters:** 4 extracted.
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -41,8 +41,7 @@ Romano MJ et al., Single-dose pharmacokinetics and safety…, The Journal of ped
 |---|---|---|---|---|---|---|---|---|---|---|
 | Clearance | `Q22` · CL | 6.1 | L/h | 1.6944444444444442e-06 | L/h | not captured | exact (1.0) | Romano_1993:abstract | — | not captured |
 | apparent volume of distribution at steady state | `Q65` · Vss | 0.11 | L/kg | 0.0077 | [l] / [kg] | not captured | llm_corrected (0.6) | Romano_1993:abstract, Romano_1993:abstract | — | not captured |
-| Elimination half-life | `Q57` · t1/2z | 14.5 | hours | 52200.0 | [h] | not captured | llm (0.6) | Romano_1993:abstract | — | not captured |
-| plasma concentration after infusion | `Q75` · Ct | 30.7 | mg/L | not captured | [mg] / [l] | not captured | llm (0.6) | Romano_1993:abstract | — | not captured |
+| Elimination half-life | `Q60` · t1/2β | 14.5 | hours | 52200.0 | [h] | not captured | llm (0.6) | Romano_1993:abstract | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -56,9 +55,10 @@ Romano MJ et al., Single-dose pharmacokinetics and safety…, The Journal of ped
 
 **Interpretation flags:**
 - unit_dimension_unknown: 'ml/kg per hour' (CL)
+- dropped unlinked row (NIL): 'plasma concentration after infusion' — extend the ontology if this is a real PK parameter (source ['Romano_1993:abstract'])
 - unit_dimension_unknown: 'ml/hr per kilogram' (CL)
 - dropped duplicate Q22 ('clearance', value 1.5) — already have one for this compound
-- implicit units: 'Clearance' → L/h (from the popPK convention: 'No unit provided in text or footnotes. L/h is the standard unit for total clearance in population PK studies.')
+- implicit units: 'Clearance' → L/h (from the popPK convention: 'No unit is provided in the text or table caption. A total clearance of 6.1 is consistent with the magnitude for systemic')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=nebacumab
 - molar mass: none found for 'nebacumab' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
@@ -94,13 +94,12 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Romano_1993:abstract'] |
-| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Romano_1993:abstract'] |
+| C5_dimension_Q60 | pass | [time] | not captured | not captured | not captured | ['Romano_1993:abstract'] |
 | C5_dimension_Q65 | pass | [length] ** 3 | not captured | not captured | not captured | ['Romano_1993:abstract', 'Romano_1993:abstract'] |
-| C5_dimension_Q75 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Romano_1993:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 6.1 | not captured | not captured | ['Romano_1993:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 6.1 L/h | not captured | not captured | ['Romano_1993:abstract'] |
@@ -124,10 +123,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_nebacumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Romano_1993` / `Romano_1993::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_nebacumab/models/modelica/Nebacumab_Romano1993_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_nebacumab/models/modelica/Nebacumab_Romano1993_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_nebacumab/models/modelica/Nebacumab_Romano1993_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_nebacumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Romano_1993` / `Romano_1993::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_nebacumab/models/modelica/Nebacumab_Romano1993_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_nebacumab/models/modelica/Nebacumab_Romano1993_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_nebacumab/models/modelica/Nebacumab_Romano1993_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -136,7 +135,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_nebacumab/Nebacumab_Romano1993_reference/Nebacumab_Romano1993_reference_modelica.zip" download>Nebacumab_Romano1993_reference_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_nebacumab/Nebacumab_Romano1993_reference/Nebacumab_Romano1993_reference_modelica.zip" download>Nebacumab_Romano1993_reference_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_nebacumab/Nebacumab_Romano1993_reference/Nebacumab_Romano1993_reference_fmi.zip" download>Nebacumab_Romano1993_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_nebacumab/Nebacumab_Romano1993_reference/Nebacumab_Romano1993_reference_matlab.zip" download>Nebacumab_Romano1993_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_nebacumab/Nebacumab_Romano1993_reference/Nebacumab_Romano1993_reference_matlab_simbio.zip" download>Nebacumab_Romano1993_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
@@ -145,7 +144,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_nebacumab/Nebacumab_Romano1993_reference/Nebacumab_Romano1993_reference.svg" alt="Nebacumab_Romano1993_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_nebacumab/Nebacumab_Romano1993_reference/Nebacumab_Romano1993_reference.svg" alt="Nebacumab_Romano1993_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -158,4 +157,4 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 14:39 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 22:42 UTC</sub>

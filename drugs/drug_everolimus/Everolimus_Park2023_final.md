@@ -145,9 +145,9 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_everolimus/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Park_2023` / `Park_2023::final`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_everolimus/models/modelica/_needs_review/Everolimus_Park2023_final.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_everolimus/models/modelica/_needs_review/Everolimus_Park2023_final.deviation.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_everolimus/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Park_2023` / `Park_2023::final`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_everolimus/models/modelica/_needs_review/Everolimus_Park2023_final.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_everolimus/models/modelica/_needs_review/Everolimus_Park2023_final.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

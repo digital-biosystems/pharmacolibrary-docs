@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;primaquine&quot;,&quot;href&quot;:&quot;drugs/drug_primaquine/&quot;},{&quot;label&quot;:&quot;Lee_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Primaquine_Chairat2018_reference&quot;,&quot;label&quot;:&quot;Chairat_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_primaquine/Primaquine_Chairat2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Primaquine_Sridharan2019_reference&quot;,&quot;label&quot;:&quot;Sridharan_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_primaquine/Primaquine_Sridharan2019_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Primaquine_Chairat2018_reference&quot;,&quot;label&quot;:&quot;Chairat_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_primaquine/Primaquine_Chairat2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -27,12 +27,12 @@ No clearance, volume or rate constant of the model is reported in it. No paramet
 Lee WY et al., Population Pharmacokinetics of Primaqui…, Pharmaceutics (2021)
   ·  DOI: [10.3390/pharmaceutics13050652](https://doi.org/10.3390/pharmaceutics13050652)
 
-<div class="pk-model-meta" hidden drug="primaquine" model-id="Primaquine_Lee2021_reference" status="rejected" stale="false" population="healthy Korean adults (normal and obese groups)" measured-compound="primaquine" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="primaquine" model-id="Primaquine_Lee2021_reference" status="rejected" stale="false" population="Korean adults" measured-compound="primaquine" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.
 
-**Parameterization:** CLm/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** mechanistic.
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
@@ -42,56 +42,34 @@ _No resolved parameters._
 ### Unresolved rows _(no Q-code or no value — not parameters)_
 | label (paper) | Q-code | value | link |
 |---|---|---|---|
-| CLMAO | Q351 | not captured | llm |
-| CLCYP | Q370 | not captured | llm |
+| CLMAO | Q22 | not captured | exact |
 | CLM | Q22 | not captured | exact |
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- table section iiv: 'ω2V3' routed out of structural estimates ('Inter-Individual Variabilities')
-- table section iiv: 'ω2CLMAO' routed out of structural estimates ('Inter-Individual Variabilities')
-- table section iiv: 'ω2CLCYP' routed out of structural estimates ('Inter-Individual Variabilities')
-- table section iiv: 'ω2KA' routed out of structural estimates ('Inter-Individual Variabilities')
-- table section iiv: 'ω2CLM' routed out of structural estimates ('Inter-Individual Variabilities')
-- table section iiv: 'ω2ALAG' routed out of structural estimates ('Inter-Individual Variabilities')
-- table section residual_error: 'σ2pro1' routed out of structural estimates ('Residual Error')
-- table section residual_error: 'σ2add' routed out of structural estimates ('Residual Error')
-- table section residual_error: 'σ2pro2' routed out of structural estimates ('Residual Error')
-- dropped value-less row: 'V3'
-- dropped value-less row: 'V4'
-- unit_dimension_mismatch: 'CLMAO' → Q351 (unit '[luminosity] / [length] ** 2' vs ontology '[length] ** 3 / [time]') — route to review
-- unit_dimension_mismatch: 'CLCYP' → Q370 (unit '[luminosity] / [length] ** 2' vs ontology '[length] ** 3 / [time]') — route to review
-- unit_dimension_mismatch: 'CLM' → Q22 (unit '[luminosity] / [length] ** 2' vs ontology '[length] ** 3 / [time]') — route to review
-- dropped value-less row: 'KA'
-- dropped value-less row: 'ALAG1'
-- dropped unlinked row (NIL): 'COVAS' — extend the ontology if this is a real PK parameter (source ['pharmaceutics-13-00652-t002:row9:col2', 'pharmaceutics-13-00652-t002:row9:col3'])
-- dropped unlinked row (NIL): 'COVBW' — extend the ontology if this is a real PK parameter (source ['pharmaceutics-13-00652-t002:row10:col2', 'pharmaceutics-13-00652-t002:row10:col3'])
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=primaquine
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
-- template fit: none — pbpk model — not a compartmental parent–metabolite model (site hepatic: 'A minimal physiology-based pharmacokinetic model connected with a liver compartment comprehensively described the data, ')
-- status held at route_to_review — not promoted
-- row roles (LLM): model_class=pbpk; 18/18 row label(s) assigned, 10 linked by role; re-tagged parent→carboxyprimaquine ×3
+- compound tags: 1 row(s) → carboxyprimaquine (m_suffix 1)
+- linked 'CLMAO' as 'CL' → Q22 (CL) for  — compound marker removed
+- linked 'CLCYP' as 'CL' → Q22 (CL) for  — compound marker removed
+- dropped duplicate Q22 ('CLCYP', value None) — already have one for this compound
+- dropped unlinked row (NIL): 'COVAS' — extend the ontology if this is a real PK parameter (source ['pharmaceutics-13-00652-t002:row9:col2'])
+- dropped unlinked row (NIL): 'COVBW' — extend the ontology if this is a real PK parameter (source ['pharmaceutics-13-00652-t002:row10:col2'])
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=primaquine
+- template fit: none — only the metabolite is modelled — no parent compartment (site hepatic: 'A minimal physiology-based pharmacokinetic model connected with a liver compartment comprehensively described the data, ')
+- row roles (LLM): model_class=compartmental; 5/5 row label(s) assigned, 3 linked by role; re-tagged parent→carboxyprimaquine ×1
 - review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
-- unparsed cell pharmaceutics-13-00652-t002:row2:col2 = '142.2 (L)'
-- unparsed cell pharmaceutics-13-00652-t002:row3:col2 = '30.1 (L)'
-- unparsed cell pharmaceutics-13-00652-t002:row5:col1 = 'CL of PQ via CYP2D6 pathway'
-- unparsed cell pharmaceutics-13-00652-t002:row7:col2 = '1.7 (h−1)'
-- unparsed cell pharmaceutics-13-00652-t002:row8:col2 = '0.45 (h)'
-- unparsed cell pharmaceutics-13-00652-t002:row12:col1 = 'BSV on V3'
-- unparsed cell pharmaceutics-13-00652-t002:row12:col2 = '16.6 (CV%)'
-- unparsed cell pharmaceutics-13-00652-t002:row13:col2 = '22.7 (CV%)'
-- unparsed cell pharmaceutics-13-00652-t002:row14:col2 = '55.2 (CV%)'
-- unparsed cell pharmaceutics-13-00652-t002:row15:col2 = '82.9 (CV%)'
-- unparsed cell pharmaceutics-13-00652-t002:row16:col2 = '20 (CV%)'
-- unparsed cell pharmaceutics-13-00652-t002:row17:col2 = '6.8 (CV%)'
-- unparsed cell pharmaceutics-13-00652-t002:row19:col2 = '17.9 (CV%)'
-- unparsed cell pharmaceutics-13-00652-t002:row20:col2 = '22.3 (SD)'
-- unparsed cell pharmaceutics-13-00652-t002:row21:col2 = '15.7 (CV%)'
-- LLM selected parameter table(s) 2
+- table pharmaceutics-13-00652-t002: unbound_uncertainty
+- table pharmaceutics-13-00652-t002: units_need_context
+- table pharmaceutics-13-00652-t002: unparsed_numeric_cell
+- LLM region Lee_2021:other_prose: Connection error.
+- LLM region Lee_2021:other_prose: Connection error.
+- LLM region Lee_2021:other_prose: Connection error.
+- LLM region Lee_2021:results_prose: Connection error.
+- LLM region Lee_2021:other_prose: Connection error.
+- LLM region Lee_2021:discussion_prose: Connection error.
+- LLM region Lee_2021:discussion_prose: Connection error.
 
 ## Validation
 
@@ -101,10 +79,6 @@ _No resolved parameters._
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
 | C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | fail | [luminosity] / [length] ** 2 | Unit | not captured | not captured | ['pharmaceutics-13-00652-t002:row6:col2', 'pharmaceutics-13-00652-t002:row6:col3'] |
-| C5_dimension_Q351 | fail | [luminosity] / [length] ** 2 | Unit | not captured | not captured | ['pharmaceutics-13-00652-t002:row4:col2', 'pharmaceutics-13-00652-t002:row4:col3'] |
-| C5_dimension_Q370 | fail | [luminosity] / [length] ** 2 | Unit | not captured | not captured | ['pharmaceutics-13-00652-t002:row5:col2', 'pharmaceutics-13-00652-t002:row5:col3'] |
-| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
 <details class="legend">
@@ -114,7 +88,7 @@ _No resolved parameters._
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_primaquine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Lee_2021` / `Lee_2021::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_primaquine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Lee_2021` / `Lee_2021::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -130,4 +104,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 07:50 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 01:12 UTC</sub>

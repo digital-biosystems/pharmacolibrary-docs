@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;thalidomide&quot;,&quot;href&quot;:&quot;drugs/drug_thalidomide/&quot;},{&quot;label&quot;:&quot;Figg_1999 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Thalidomide_Chen1989_reference&quot;,&quot;label&quot;:&quot;Chen_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_thalidomide/Thalidomide_Chen1989_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Thalidomide_Figg1999_reference&quot;,&quot;label&quot;:&quot;Figg_1999_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_thalidomide/Thalidomide_Figg1999_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Thalidomide_Kamikawa2006_reference&quot;,&quot;label&quot;:&quot;Kamikawa_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_thalidomide/Thalidomide_Kamikawa2006_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Thalidomide_Noormohamed1999_reference&quot;,&quot;label&quot;:&quot;Noormohamed_1999_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_thalidomide/Thalidomide_Noormohamed1999_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Thalidomide_Chen1989_reference&quot;,&quot;label&quot;:&quot;Chen_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_thalidomide/Thalidomide_Chen1989_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Thalidomide_Figg1999_reference&quot;,&quot;label&quot;:&quot;Figg_1999_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_thalidomide/Thalidomide_Figg1999_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Thalidomide_Kamikawa2006_reference&quot;,&quot;label&quot;:&quot;Kamikawa_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_thalidomide/Thalidomide_Kamikawa2006_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -29,7 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Figg WD et al., Pharmacokinetics of thalidomide in an e…, Journal of pharmaceutical s… (1999)
   ·  DOI: [10.1021/js980172i](https://doi.org/10.1021/js980172i)
 
-<div class="pk-model-meta" hidden drug="thalidomide" model-id="Thalidomide_Figg1999_reference" status="curated_candidate" stale="false" population="elderly with hormone-refractory prostate cancer" measured-compound="thalidomide" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="thalidomide" model-id="Thalidomide_Figg1999_reference" status="curated_candidate" stale="false" population="elderly patients with hormone-refractory prostate cancer" measured-compound="thalidomide" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 5 extracted.
@@ -41,7 +41,7 @@ Figg WD et al., Pharmacokinetics of thalidomide in an e…, Journal of pharmaceu
 |---|---|---|---|---|---|---|---|---|---|---|
 | oral clearance | `Q27` · CL/F | 7.41 | L/h | 2.0583333333333332e-06 | [l] / [h] | not captured | exact (1.0) | Figg_1999:abstract, Figg_1999:abstract, Figg_1999:abstract, Figg_1999:abstract | — | not captured |
 | apparent volume of distribution | `Q76` · V/F | 66.93 | L | 0.06693 | [l] | not captured | exact (1.0) | Figg_1999:abstract, Figg_1999:abstract, Figg_1999:abstract, Figg_1999:abstract | — | not captured |
-| elimination half-lives | `Q57` · t1/2z | 7.08 | h | 25488.0 | [h] | not captured | llm (0.6) | Figg_1999:abstract, Figg_1999:abstract | — | not captured |
+| elimination half-life | `Q57` · t1/2z | 7.08 | h | 25488.0 | [h] | not captured | llm (0.6) | Figg_1999:abstract, Figg_1999:abstract | — | not captured |
 | K a (1/h) | `Q49` · kabs | 0.4 | 1/h | 0.00011111111111111112 | 1/h | not captured | review_gapfill (0.7) | Kamikawa_2006:review | — | not captured |
 | T lag (h) | `Q83` · tlag | 0.73 | h | 2628.0 | h | not captured | review_gapfill (0.7) | Kamikawa_2006:review | — | not captured |
 
@@ -134,10 +134,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_thalidomide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Figg_1999` / `Figg_1999::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_thalidomide/models/modelica/Thalidomide_Figg1999_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_thalidomide/models/modelica/Thalidomide_Figg1999_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_thalidomide/models/modelica/Thalidomide_Figg1999_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_thalidomide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Figg_1999` / `Figg_1999::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_thalidomide/models/modelica/Thalidomide_Figg1999_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_thalidomide/models/modelica/Thalidomide_Figg1999_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_thalidomide/models/modelica/Thalidomide_Figg1999_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -155,7 +155,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_thalidomide/Thalidomide_Figg1999_reference/Thalidomide_Figg1999_reference.svg" alt="Thalidomide_Figg1999_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_thalidomide/Thalidomide_Figg1999_reference/Thalidomide_Figg1999_reference.svg" alt="Thalidomide_Figg1999_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -168,4 +168,4 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 00:49 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 23:07 UTC</sub>

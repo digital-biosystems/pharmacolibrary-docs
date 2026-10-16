@@ -13,21 +13,40 @@ Miocamycin (midecamycin acetate) is a macrolide antibiotic used to treat bacteri
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q3858659](https://www.wikidata.org/wiki/Q3858659) and the WHO ATC classification; not checked by a person.</small>
 
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| miocamycin | parent | 898.053 | C45H71NO17 | PubChem | [5282188](https://pubchem.ncbi.nlm.nih.gov/compound/5282188) | Litterio_2000 |
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 12:20 | 8:21 | 0/0/0 | 1/0/0 | 0/0/0 | 20,055/495 | einfracz / qwen3.8-27b | 1 | 0/0 | 1/0 | 0 |
+| 2026-10-13 11:22 | 2:27 | 1/0/0 | 1/0/0 | 0/0/0 | 19,638/35,454 | einfracz / qwen3.8-27b | 1 | 1/0 | 1/0 | 0 |
 
 ## popPK records
 
-_not available_
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.778). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span> | [Litterio_2000_reference](drugs/drug_miocamycin/Miocamycin_Litterio2000_reference.md) | — | 1-compartment (no model) | 4 | Litterio NJ et al., Pharmacokinetics of miocamycin followin…, Journal of veterinary medic… (2000) | [10.1046/j.1439-0442.2000.00260.x](https://doi.org/10.1046/j.1439-0442.2000.00260.x) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">rat</span> | [Yokota_1984_5_MOM_toxicity](drugs/drug_miocamycin/pd_Yokota_1984_5_MOM_toxicity.md) | Toxicity ← miocamycin · model not identified | — | Yokota M et al., Toxicological studies on a new macrolid…, The Japanese journal of ant… (1984) | — |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=miocamycin).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | `CYP3A4` inhibitor | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inhibitor | DrugBank actor |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -38,9 +57,27 @@ _not available_
 ## Coverage
 
 - **PubMed hits:** 24 matched, 23 returned
-- **screened:** 0  ·  **relevant:** 0
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **screened:** 2  ·  **relevant:** 1
+- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
+## Full-text requests
+
+_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Litterio_2000.pdf` | Litterio NJ et al., Pharmacokinetics of miocamycin followin…, Journal of veterinary medic… (2000) | popPK | 10 | [10.1046/j.1439-0442.2000.00260.x](https://doi.org/10.1046/j.1439-0442.2000.00260.x) | [10841461](https://pubmed.ncbi.nlm.nih.gov/10841461) | The study reports specific quantitative pharmacokinetic parameters (t1/2, Vss, CL) for miocamycin in cattle. |
+
+<sub>queue written 2026-10-13T11:20:42.132363+00:00</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| PGx | Kasahara_2000 | not_relevant | 0 | 0 | The study characterizes the metabolic pathways (CYP3A4 involvement) of miocamycin but does not report changes in PK/PD parameters based on specific gene variants, genotypes, or phenotypes. |
+| PGx | Upton_1991 | not_relevant | 0 | 0 | The paper discusses drug-drug interactions and mentions miocamycin only as a medication that does NOT influence theophylline's pharmacokinetics, with no pharmacogenomic data. |
+| PGx | von_1995 | not_relevant | 0 | 0 | The text discusses pharmacokinetic drug interactions of miocamycin via CYP3A4 inhibition but does not report any pharmacogenomic effects (gene variants) on its PK or PD parameters. |
+
 ---
-<sub>Generated by `docs.py` (scholarv2)</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-13 11:22 UTC</sub>

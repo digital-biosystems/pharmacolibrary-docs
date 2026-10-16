@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01M&quot;,&quot;href&quot;:&quot;atc/J01M.md&quot;},{&quot;label&quot;:&quot;moxifloxacin&quot;,&quot;href&quot;:&quot;drugs/drug_moxifloxacin/&quot;},{&quot;label&quot;:&quot;Gotta_2015 \u00b7 PD QTc prolongation&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Moxifloxacin_Greenberg2022_reference&quot;,&quot;label&quot;:&quot;Greenberg_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_moxifloxacin/Moxifloxacin_Greenberg2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Moxifloxacin_Nyangwa2026_reference&quot;,&quot;label&quot;:&quot;Nyangwa_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_moxifloxacin/Moxifloxacin_Nyangwa2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Moxifloxacin_Yun2022_reference&quot;,&quot;label&quot;:&quot;Yun_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_moxifloxacin/Moxifloxacin_Yun2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Moxifloxacin_Xu2024_reference&quot;,&quot;label&quot;:&quot;Xu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_moxifloxacin/Moxifloxacin_Xu2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Moxifloxacin_Nyangwa2026_reference&quot;,&quot;label&quot;:&quot;Nyangwa_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_moxifloxacin/Moxifloxacin_Nyangwa2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Moxifloxacin_Yun2022_value&quot;,&quot;label&quot;:&quot;Yun_2022_value&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_moxifloxacin/Moxifloxacin_Yun2022_value.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Moxifloxacin_Greenberg2022_population_estimate_or_median&quot;,&quot;label&quot;:&quot;Greenberg_2022_population_estimate_or_median&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_moxifloxacin/Moxifloxacin_Greenberg2022_population_estimate_or_median.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Moxifloxacin_Greenberg2022_standard_error_of_the_population&quot;,&quot;label&quot;:&quot;Greenberg_2022_standard_error_of_the_population_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_moxifloxacin/Moxifloxacin_Greenberg2022_standard_error_of_the_population.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Moxifloxacin_Palmer2025_reference&quot;,&quot;label&quot;:&quot;Palmer_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_moxifloxacin/Moxifloxacin_Palmer2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Moxifloxacin_Xu2024_reference&quot;,&quot;label&quot;:&quot;Xu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_moxifloxacin/Moxifloxacin_Xu2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Moxifloxacin_Yun2022_population_estimates&quot;,&quot;label&quot;:&quot;Yun_2022_population_estimates&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_moxifloxacin/Moxifloxacin_Yun2022_population_estimates.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Gotta_2015_QTc&quot;,&quot;label&quot;:&quot;Gotta_2015 \u00b7 \u0394QTc&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_moxifloxacin/pd_Gotta_2015_QTc.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # QTc prolongation — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
@@ -16,17 +16,17 @@
 
 ## Record summary
 
-**As extracted:** Moxifloxacin (concentrations from the PK model of Greenberg_2022) drives QTc prolongation (in ms): direct sigmoid Emax (Hill) effect.
+**As extracted:** Moxifloxacin (concentrations from this paper's PK model) drives QTc prolongation (in ms): direct sigmoid Emax (Hill) effect.
 
-**Model:** Model available in **Models**; browser simulation unavailable.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
-> Moxifloxacin concentration (total, in μM) directly stimulates ΔQTc (in ms) via a sigmoidal Emax model. Key parameters are Emax = 54.6 ms, EC50 = 16.3 μM, and a Hill coefficient of 1.8, with a baseline QTc of 239 ms.
+> Moxifloxacin total plasma concentrations (μM) drive an additive, direct stimulation of QTc prolongation (ΔQTc) via a sigmoid Emax model, with a baseline of 239 ms, an Emax of 54.6 ms, an EC50 of 16.3 μM, and a Hill coefficient of 1.8. The paper does not specify whether the effect is mediated by an effect compartment or other kinetic processes, describing only the concentration-effect relationship.
 >
 > <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Gotta_2015`
 - **model family:** `sigmoid_emax`
-- **driver:** `cited_pk`
+- **driver:** `pk_record`
 - **tier:** population
 - **effect:** stimulation/additive
 
@@ -41,9 +41,6 @@ Gotta V et al., Inter-study variability of preclinical…, British journal of ph
 | PD (effect) | Emax | `Q320` · not captured | 54.6 | ms | not captured | llm (not captured) | Gotta_2015:pdv3 |
 | PD (effect) | EC50 | `Q321` · not captured | 16.3 | μM | not captured | llm (not captured) | Gotta_2015:pdv3 |
 | PD (effect) | Hill coefficient | `Q325` · not captured | 1.8 | not captured | not captured | llm (not captured) | Gotta_2015:pdv3 |
-| variability | BSV Emax | `Q312` · not captured | 51 | % | not captured | llm (not captured) | Gotta_2015:pdv3 |
-| variability | BSV EC50 | `Q312` · not captured | 42 | % | not captured | llm (not captured) | Gotta_2015:pdv3 |
-| variability | BSV Hill coefficient | `Q312` · not captured | 50 | % | not captured | llm (not captured) | Gotta_2015:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -108,18 +105,21 @@ _All readers agree on the compared fields of this PD record._
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_moxifloxacin/Moxifloxacin_Gotta2015_PD_qtc/Moxifloxacin_Gotta2015_PD_qtc_modelica.zip" download>Moxifloxacin_Gotta2015_PD_qtc_modelica.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_moxifloxacin/Moxifloxacin_Gotta2015_PD_qtc/Moxifloxacin_Gotta2015_PD_qtc_matlab.zip" download>Moxifloxacin_Gotta2015_PD_qtc_matlab.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_moxifloxacin/Moxifloxacin_Gotta2015_PD_qtc/Moxifloxacin_Gotta2015_PD_qtc_sbml.zip" download>Moxifloxacin_Gotta2015_PD_qtc_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_moxifloxacin/Moxifloxacin_Gotta2015_PD_qtc/Moxifloxacin_Gotta2015_PD_qtc_cellml.zip" download>Moxifloxacin_Gotta2015_PD_qtc_cellml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PD_SigmoidEmaxSweep.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+<dbs-fmusim paramsurl="drugs/drug_moxifloxacin/Moxifloxacin_Gotta2015_PD_qtc/Moxifloxacin_Gotta2015_PD_qtc_params.json" metaurl="assets/fmu/PD_SigmoidEmaxSweep.vr.json" wasmurl="assets/fmu/PD_SigmoidEmaxSweep.js" controlsurl="drugs/drug_moxifloxacin/Moxifloxacin_Gotta2015_PD_qtc/Moxifloxacin_Gotta2015_PD_qtc_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PD_SigmoidEmaxSweep` · parameters `Moxifloxacin_Gotta2015_PD_qtc_params.json` · controls `Moxifloxacin_Gotta2015_PD_qtc_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 

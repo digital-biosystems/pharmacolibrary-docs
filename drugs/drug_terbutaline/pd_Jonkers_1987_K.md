@@ -18,9 +18,9 @@
 
 **Model:** No model was generated from this record.
 
-> Terbutaline plasma concentrations act on plasma potassium via a sigmoid Emax inhibitory model; the paper excerpts provide no mechanism detail and no parameter values (Imax, IC50, gamma) are available.
+> The record identifies a sigmoid Emax model where terbutaline inhibits plasma potassium, but the paper excerpts are unavailable. Consequently, the specific mechanism and key potency or rate values are not provided in the available text.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
 
 - **paper:** `Jonkers_1987`
 - **model family:** `sigmoid_emax`

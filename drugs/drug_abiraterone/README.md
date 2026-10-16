@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01X&quot;,&quot;href&quot;:&quot;atc/L01X.md&quot;},{&quot;label&quot;:&quot;abiraterone&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Abiraterone_Stuyckens2014_final&quot;,&quot;label&quot;:&quot;Stuyckens_2014_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abiraterone/Abiraterone_Stuyckens2014_final.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abiraterone_Stuyckens2014_final_chemotherapy_pretreated_pati&quot;,&quot;label&quot;:&quot;Stuyckens_2014_final_chemotherapy_pretreated_patients_final_model_1&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abiraterone/Abiraterone_Stuyckens2014_final_chemotherapy_pretreated_pati.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # abiraterone
 
@@ -21,28 +20,48 @@ Abiraterone is an anticancer medicine used to treat prostate cancer. It is autho
 
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
-| abiraterone (abiraterone acetate) | parent | 349.509 | C24H31NO | DrugBank | [132971](https://pubchem.ncbi.nlm.nih.gov/compound/132971) | Stuyckens_2014 |
+| abiraterone | parent | 349.509 | C24H31NO | DrugBank | [132971](https://pubchem.ncbi.nlm.nih.gov/compound/132971) | Stuyckens_2014 |
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 21:48 | 9:17 | 0/0/2 | 0/0/2 | 0/0/0 | 233,214/15,776 | ollama / qwen3.8:27b-mtp-q8_0 | 7 | 4/3 | 5/2 | 0 |
+| 2026-10-15 03:56 | 3:08 | 0/1/2 | 0/0/1 | 0/0/0 | 225,097/15,516 | einfracz / qwen3.8-27b | 7 | 4/3 | 5/2 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: T3_param_coverage</sub><br><sub>route_to: `engineer`</sub> | [Stuyckens_2014_final](drugs/drug_abiraterone/Abiraterone_Stuyckens2014_final.md) | ▶ model + simulator | 1-compartment, oral | 5 | Stuyckens K et al., Population pharmacokinetic analysis of…, Clinical pharmacokinetics (2014) | [10.1007/s40262-014-0178-6](https://doi.org/10.1007/s40262-014-0178-6) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: T3_param_coverage</sub><br><sub>route_to: `engineer`</sub> | [Stuyckens_2014_final_chemotherapy_pretreated_patients_final_model_1](drugs/drug_abiraterone/Abiraterone_Stuyckens2014_final_chemotherapy_pretreated_pati.md) | ▶ model + simulator | 1-compartment, oral | 5 | Stuyckens K et al., Population pharmacokinetic analysis of…, Clinical pharmacokinetics (2014) | [10.1007/s40262-014-0178-6](https://doi.org/10.1007/s40262-014-0178-6) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Stuyckens_2014_final](drugs/drug_abiraterone/Abiraterone_Stuyckens2014_final.md) | — | 1-compartment (no model) | 2 | Stuyckens K et al., Population pharmacokinetic analysis of…, Clinical pharmacokinetics (2014) | [10.1007/s40262-014-0178-6](https://doi.org/10.1007/s40262-014-0178-6) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Stuyckens_2014_final_chemotherapy_pretreated_patients_final_model_1](drugs/drug_abiraterone/Abiraterone_Stuyckens2014_final_chemotherapy_pretreated_pati.md) | — | 1-compartment (no model) | 2 | Stuyckens K et al., Population pharmacokinetic analysis of…, Clinical pharmacokinetics (2014) | [10.1007/s40262-014-0178-6](https://doi.org/10.1007/s40262-014-0178-6) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Russu_2025_reference](drugs/drug_abiraterone/Abiraterone_Russu2025_reference.md) | — | general linear (no model) | 0 | Russu A et al., Population Pharmacokinetics of Nirapari…, Advances in therapy (2025) | [10.1007/s12325-025-03104-y](https://doi.org/10.1007/s12325-025-03104-y) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> | [Boerrigter_2022_OS](drugs/drug_abiraterone/pd_Boerrigter_2022_OS.md) | overall survival ← abiraterone · time-to-event model | — | Boerrigter E et al., The effect of chemotherapy on the expos…, British journal of clinical… (2022) | [10.1111/bcp.15057](https://doi.org/10.1111/bcp.15057) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> | [Boerrigter_2022_PFS](drugs/drug_abiraterone/pd_Boerrigter_2022_PFS.md) | progression-free survival ← abiraterone · time-to-event model | — | Boerrigter E et al., The effect of chemotherapy on the expos…, British journal of clinical… (2022) | [10.1111/bcp.15057](https://doi.org/10.1111/bcp.15057) |
 | <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span> | [van_2020_PSA_PFS](drugs/drug_abiraterone/pd_van_2020_PSA_PFS.md) | prostate-specific antigen (PSA) independent progression-free survival ← abiraterone · time-to-event model | — | van Nuland M et al., Exposure-response analyses of abiratero…, Prostate cancer and prostat… (2020) | [10.1038/s41391-019-0179-5](https://doi.org/10.1038/s41391-019-0179-5) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=abiraterone).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| distribution | blood | `ALB` binder, `ORM1` binder | DrugBank actor |
+| distribution | blood-brain barrier | `ABCC1` inhibitor | DrugBank actor |
+| distribution | lung | `ABCC1` inhibitor | DrugBank actor |
+| metabolism | blood | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
+| metabolism | kidney | `CYP3A5` inhibitor | DrugBank actor |
+| metabolism | liver | `CYP1A2` inhibitor, `CYP2C19` inhibitor, `CYP2C8` inhibitor, `CYP2C9` inhibitor, `CYP2D6` inhibitor, `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor, `SLCO1B1` inhibitor | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| — | adrenal gland | `CYP17A1` inhibitor | DrugBank actor |
+| — | testis | `CYP17A1` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: SULT2A1 (substrate).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,8 +72,8 @@ Abiraterone is an anticancer medicine used to treat prostate cancer. It is autho
 ## Coverage
 
 - **PubMed hits:** 17 matched, 17 returned
-- **screened:** 1  ·  **relevant:** 1
-- **records:** 2  ·  extracted 0  ·  needs_review 2  ·  rejected 0  ·  stale 0
+- **screened:** 2  ·  **relevant:** 2
+- **records:** 3  ·  extracted 0  ·  needs_review 2  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -63,31 +82,30 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Merdita_2024.pdf` | Merdita S et al., Evaluation of adherence to abiraterone…, British journal of clinical… (2024) | popPK | 10 | [10.1111/bcp.16155](https://doi.org/10.1111/bcp.16155) | [38958217](https://pubmed.ncbi.nlm.nih.gov/38958217) | The paper describes a population pharmacokinetic model for abiraterone, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence. |
-| `Russu_2025.pdf` | Russu A et al., Population Pharmacokinetics of Nirapari…, Advances in therapy (2025) | popPK | 10 | [10.1007/s12325-025-03104-y](https://doi.org/10.1007/s12325-025-03104-y) | [40016438](https://pubmed.ncbi.nlm.nih.gov/40016438) | The paper describes a population PK model for abiraterone in humans, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence text. |
+| `Russu_2025.pdf` | Russu A et al., Population Pharmacokinetics of Nirapari…, Advances in therapy (2025) | popPK | 10 | [10.1007/s12325-025-03104-y](https://doi.org/10.1007/s12325-025-03104-y) | [40016438](https://pubmed.ncbi.nlm.nih.gov/40016438) | The paper reports a population pharmacokinetic model for abiraterone in humans, but the specific numeric parameter values are not listed in the provided evidence text. |
+| `Merdita_2024.pdf` | Merdita S et al., Evaluation of adherence to abiraterone…, British journal of clinical… (2024) | popPK | 9 | [10.1111/bcp.16155](https://doi.org/10.1111/bcp.16155) | [38958217](https://pubmed.ncbi.nlm.nih.gov/38958217) | The paper develops a population PK model for abiraterone, but specific numeric parameter values (CL, V, etc.) are not present in the provided evidence text. |
 
-<sub>queue written 2026-10-07T21:41:16.583852+00:00</sub>
+<sub>queue written 2026-10-15T03:53:59.144079+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Blanchet_2018 | irrelevant | 2 | 0 | The study reports only trough concentrations (Cmin) and metabolic ratios for a PK/PD association analysis, lacking quantitative disposition parameters (CL, V, ka) or a compartmental/population PK model. |
-| popPK | Boerrigter_2022 | relevant | 8 | 2 | The study performs a population PK analysis for abiraterone, but the specific numeric parameter estimates (CL, V, etc.) are located in the Supporting Information (Table S1, Figures S1-S2) which is not provided in the evidence. |
-| popPK | Cella_2016 | irrelevant | 0 | 0 | The paper reports patient-reported outcomes (quality of life) and does not contain any pharmacokinetic parameters for abiraterone. |
-| popPK | Chiong_2025 | relevant | 8 | 2 | The study reports PK parameters for abiraterone in humans, but the specific numeric values are explicitly stated to be in Supplementary Materials which are not provided. |
-| popPK | Janssen_2020 | irrelevant | 2 | 0 | This is a simulation study evaluating TDM extrapolation methods using a pre-existing population PK model, and it does not report the underlying quantitative PK parameter values (CL, V, etc.) for abiraterone. |
-| popPK | Kuzma_2024 | irrelevant | 0 | 0 | The study evaluates health-related quality of life (HRQoL) outcomes and contains no pharmacokinetic parameters for abiraterone. |
-| popPK | Li_2015 | irrelevant | 2 | 0 | This is a clinical trial simulation study using virtual data to evaluate trial design power, not an original pharmacokinetic study reporting measured quantitative disposition parameters for abiraterone. |
-| popPK | Masamrekh_2020 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of CYP3A4 binding and inhibition, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
-| popPK | Merdita_2024 | relevant | 10 | 0 | The paper describes a population pharmacokinetic model for abiraterone, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence. |
-| popPK | Myint_2020 | irrelevant | 0 | 0 | The paper is a systematic review and meta-analysis of fall and fracture risks, not a pharmacokinetic study, and abiraterone is only mentioned as a control agent. |
-| popPK | Russu_2025 | relevant | 10 | 0 | The paper describes a population PK model for abiraterone in humans, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence text. |
-| popPK | Serbian_2020 | irrelevant | 0 | 0 | The paper describes the synthesis of abiraterone conjugates for cytotoxicity screening, not the pharmacokinetics of abiraterone itself. |
-| popPK | Su_2018 | irrelevant | 0 | 0 | The paper focuses on CD46 as a therapeutic target and antibody-drug conjugate efficacy, with no pharmacokinetic modeling or disposition parameters for abiraterone. |
-| popPK | Yoshida_2021 | irrelevant | 0 | 0 | The study characterizes the population pharmacokinetics of ipatasertib and its metabolite M1, with abiraterone serving only as a co-administered covariate affecting ipatasertib clearance. |
-| popPK | Yuan_2020 | irrelevant | 0 | 0 | The paper is an in-vitro antiviral screening study reporting EC50 values for SARS-CoV-2 inhibition, not a pharmacokinetic study of abiraterone. |
-| popPK | van_2020 | irrelevant | 2 | 0 | The study is an exposure-response analysis reporting clinical outcomes (PSA-PFS) and concentration thresholds (Cmin), but it does not report quantitative pharmacokinetic disposition parameters (CL, V, ka, t1/2) or a compartmental/population-PK model. |
+| popPK | Blanchet_2018 | irrelevant | 3 | 2 | The study reports only plasma trough concentrations (Cmin) and metabolic ratios, lacking the compartmental PK parameters (CL, V, half-life) required for population-pharmacokinetic modeling. |
+| popPK | Boerrigter_2022 | relevant | 8 | 2 | The study reports population pharmacokinetic modeling of abiraterone in human patients, but the specific numeric parameter values (CL, V, Q) are referenced as being in the Supporting Information which is not provided. |
+| popPK | Cella_2016 | irrelevant | 0 | 0 | This is a patient-reported outcome (PRO) analysis of health-related quality of life and does not report any pharmacokinetic parameters. |
+| popPK | Chiong_2025 | irrelevant | 2 | 0 | The study focuses on exposure-response and safety, explicitly stating that specific PK parameters are provided in Supplementary Materials which are not included in the evidence, and relies on PBPK simulations rather than reporting original quantitative population-PK parameter estimates in the main text. |
+| popPK | Janssen_2020 | irrelevant | 2 | 0 | This is a simulation study evaluating TDM prediction methods, not an original report of quantitative PK parameter estimates (CL, V, etc.) for abiraterone. |
+| popPK | Kuzma_2024 | irrelevant | 0 | 0 | The study assesses health-related quality of life outcomes in prostate cancer patients and does not report any pharmacokinetic parameters such as clearance or volume of distribution. |
+| popPK | Li_2015 | irrelevant | 2 | 0 | This is a methodological study on clinical trial simulation design that reports on bias and precision of estimation, not original quantitative population PK parameter values for abiraterone. |
+| popPK | Masamrekh_2020 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of CYP3A4 enzyme interactions and does not report in-vivo pharmacokinetic disposition parameters (CL, V, etc.) for abiraterone. |
+| popPK | Merdita_2024 | relevant | 9 | 0 | The paper develops a population PK model for abiraterone, but specific numeric parameter values (CL, V, etc.) are not present in the provided evidence text. |
+| popPK | Myint_2020 | irrelevant | 0 | 0 | The paper is a systematic review and meta-analysis focusing on the safety outcomes (falls and fractures) of androgen receptor inhibitors, not on the pharmacokinetic parameters of abiraterone. |
+| popPK | Serbian_2020 | irrelevant | 0 | 0 | The paper describes the synthesis of abiraterone-based conjugates for in-vitro cytotoxicity screening, not the pharmacokinetics of abiraterone itself. |
+| popPK | Su_2018 | irrelevant | 0 | 0 | The paper focuses on the antibody-drug conjugate CD46 ADC and the target antigen CD46 in prostate cancer cells, not on the pharmacokinetic disposition parameters of abiraterone. |
+| popPK | Yoshida_2021 | irrelevant | 0 | 0 | The study models the pharmacokinetics of ipatasertib, with abiraterone serving only as a covariate for co-administration effects rather than the subject of the PK model. |
+| popPK | Yuan_2020 | irrelevant | 0 | 0 | The paper reports in vitro antiviral activity (EC50) of abiraterone against SARS-CoV-2, not pharmacokinetic disposition parameters. |
+| popPK | van_2020 | irrelevant | 2 | 0 | The study reports exposure-response relationships using trough concentrations (Cmin) but does not provide quantitative disposition parameters such as clearance, volume, or half-life. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 21:41 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-15 03:54 UTC</sub>

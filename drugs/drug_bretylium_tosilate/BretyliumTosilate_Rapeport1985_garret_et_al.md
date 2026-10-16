@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;bretylium tosilate&quot;,&quot;href&quot;:&quot;drugs/drug_bretylium_tosilate/&quot;},{&quot;label&quot;:&quot;Rapeport_1985 \u00b7 garret_et_al&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;BretyliumTosilate_Kamath1981_reference&quot;,&quot;label&quot;:&quot;Kamath_1981_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bretylium_tosilate/BretyliumTosilate_Kamath1981_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BretyliumTosilate_Rapeport1985_anderson_et_al_1980b&quot;,&quot;label&quot;:&quot;Rapeport_1985_anderson_et_al_1980b&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bretylium_tosilate/BretyliumTosilate_Rapeport1985_anderson_et_al_1980b.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BretyliumTosilate_Rapeport1985_garret_et_al&quot;,&quot;label&quot;:&quot;Rapeport_1985_garret_et_al&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bretylium_tosilate/BretyliumTosilate_Rapeport1985_garret_et_al.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;BretyliumTosilate_Rapeport1985_narang_et_al&quot;,&quot;label&quot;:&quot;Rapeport_1985_narang_et_al&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bretylium_tosilate/BretyliumTosilate_Rapeport1985_narang_et_al.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;BretyliumTosilate_Kamath1981_reference&quot;,&quot;label&quot;:&quot;Kamath_1981_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bretylium_tosilate/BretyliumTosilate_Kamath1981_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # bretylium tosilate — `BretyliumTosilate_Rapeport1985_garret_et_al`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143), gpt-oss:120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.778), gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -15,17 +15,17 @@
 
 > **Species: human + animal.** The paper reports both human and animal data; check which group this record describes before reading it as human pharmacology (read from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).
 
-**Model:** Model and browser simulation available in **Models** and **Simulation**.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
-**The record incorrectly assigns a creatinine clearance value of 15 ml/min as the drug's total clearance.**
+**The clearance plausibility check could not be computed.**
 
-The parameter labeled as total clearance is explicitly identified as creatinine clearance, a renal biomarker rather than a pharmacokinetic property of bretylium. This misidentification causes the simulated terminal half-life to be 329 hours, drastically exceeding the paper's reported values of 6 to 12 hours. Additionally, the model builder defaulted the absorption rate constant and lag time, which were not reported in the source. Extracted — bretylium tosilate: CL 15 ml/min, V/F 6.1 L/kg.
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — bretylium tosilate: t1/2z 8.8 h, V 0.8 L/kg, Vss 7.9 L/kg, CL 698 ml/min, CLR 540 ml/min.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has bretylium_tosilate, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has bretylium_tosilate, the second reading bretylium_tosylate; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `bretylium_tosilate`, measured `bretylium`.
 
@@ -33,20 +33,23 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Rapeport WG, Clinical pharmacokinetics of bretylium, Clinical pharmacokinetics (1985)
   ·  DOI: [10.2165/00003088-198510030-00004](https://doi.org/10.2165/00003088-198510030-00004)
 
-<div class="pk-model-meta" hidden drug="bretylium tosilate" model-id="BretyliumTosilate_Rapeport1985_garret_et_al" status="rejected" stale="false" population="adults" measured-compound="bretylium" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="bretylium tosilate" model-id="BretyliumTosilate_Rapeport1985_garret_et_al" status="needs_review" stale="false" population="adults" measured-compound="bretylium" parameterization="mechanistic" topology="1C"></div>
 
-**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 2 extracted.
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 5 extracted.
 
-**Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Creatinine clearance (ml/min) | `Q22` · CL | 15 | ml/min | 2.5e-07 | L/h | not captured | boundary (0.8) | Rapeport_1985:other_prose | — | not captured |
-| apparent volume of distribution ofbretylium | `Q76` · V/F | 6.1 | L/kg | 0.427 | L | not captured | boundary (0.8) | Rapeport_1985:other_prose | — | not captured |
+| t1/2 (h) | `Q57` · t1/2z | 8.8 | h | 31680.000000000004 | [h] | not captured | exact (1.0) | Rapeport_1985_table_p4_1:row2:col3 | — | not captured |
+| Volume of distribution (L/kg) Vc | `Q61` · V | 0.8 | L/kg | 0.056 | [l] / [kg] | not captured | llm_corrected (0.6) | Rapeport_1985_table_p4_1:row2:col4, Rapeport_1985_table_p4_1:row3:col4, Rapeport_1985_table_p4_1:row4:col4 | — | not captured |
+| Volume of distribution (L/kg) Vdss | `Q65` · Vss | 7.9 | L/kg | 0.553 | [l] / [kg] | not captured | llm_corrected (0.6) | Rapeport_1985_table_p4_1:row2:col5, Rapeport_1985_table_p4_1:row3:col5 | — | not captured |
+| Clearance (ml/min) total | `Q22` · CL | 698 | ml/min | 1.1633333333333333e-05 | [ml] / [min] | not captured | llm_confirmed (0.6) | Rapeport_1985_table_p4_1:row2:col6, Rapeport_1985_table_p4_1:row3:col6 | — | not captured |
+| Clearance (ml/min) renal | `Q26` · CLR | 540 | ml/min | 9e-06 | [ml] / [min] | not captured | llm_corrected (0.6) | Rapeport_1985_table_p4_1:row2:col7, Rapeport_1985_table_p4_1:row3:col7, Rapeport_1985_table_p4_1:row4:col7 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -55,27 +58,18 @@ Rapeport WG, Clinical pharmacokinetics of bretylium, Clinical pharmacokinetics (
 
 ## Departures & gaps
 
-**Deviations:**
-- `defaulted_parameters`: ['ka', 'Tlag']
-- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
-- `invented_absorption`: ka defaulted — not reported in source
-- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
-
 **Interpretation flags:**
 - column 'garret et al. (1982)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- dropped unlinked row (NIL): 'No. of subjects' — extend the ontology if this is a real PK parameter (source ['Rapeport_1985_table_p4_1:row0:col3', 'Rapeport_1985_table_p4_1:row0:col4', 'Rapeport_1985_table_p4_1:row0:col5'])
-- dropped unlinked row (NIL): 'Dose (mg/kg)' — extend the ontology if this is a real PK parameter (source ['Rapeport_1985_table_p4_1:row1:col3', 'Rapeport_1985_table_p4_1:row1:col4', 'Rapeport_1985_table_p4_1:row1:col5'])
-- salvaged Q22 ('Creatinine clearance (ml/min)'=15) from results prose — parameter table was unreadable
-- salvaged Q76 ('apparent volume of distribution ofbretylium'=6.1) from results prose — parameter table was unreadable
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=bretylium
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at route_to_review — not promoted
-- population split: 'garret et al. (1982)' subgroup of Rapeport_1985 (paper reports 3 populations: anderson et al. (1980b), garret et al. (1982), narang et al. (1980))
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=bretylium
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- 1C volume normalization: Q63→Q61 (single-compartment model has no central/peripheral split; 'Volume of distribution (L/kg) Vc' is the general volume)
+- population split: 'garret et al. (1982)' subgroup of Rapeport_1985 (paper reports 4 populations: anderson et al. (1980b), garret et al. (1982), josselson et al. (1983), narang et al. (1980))
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- no TEI final-model table id; trying text-pointer table recovery
-- transposed table Rapeport_1985_table_p4_1: parameters were across the columns, populations/subgroups down the first column — transposed for parsing
-- unparsed cell Rapeport_1985_table_p4_1:row0:col8 = '4b'
+- table Rapeport_1985_table_p4_1: unparsed_numeric_cell
+- transposed table Rapeport_1985_table_p4_1: logical view retains original source coordinates
 
 ## Validation
 
@@ -84,10 +78,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss:120b` | not confirmed | 0.778 (7/9 fields) | 2 |
 | `gpt-oss-120b` | not confirmed | 0.143 (1/7 fields) | 6 |
-| `gpt-oss:120b` | not confirmed | 0.25 (2/8 fields) | 6 |
 
-<details><summary>12 field discrepancies</summary>
+<details><summary>8 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -97,12 +91,8 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | `gpt-oss-120b` | `parameters[dose]` | not captured | 2.9 | only_one_extracted |
 | `gpt-oss-120b` | `screen.dose_compound` | bretylium_tosilate | unknown | mismatch |
 | `gpt-oss-120b` | `screen.primary_analyte` | bretylium | unknown | mismatch |
-| `gpt-oss:120b` | `parameters[apparent volume of distribution ofbretylium]` | 6.1 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[apparent volume of distribution ofbretylium]` | not captured | 6.1 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[creatinine clearance]` | 15 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[creatinine clearance]` | not captured | 15 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | bretylium_tosilate | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | bretylium | unknown | mismatch |
+| `gpt-oss:120b` | `screen.dose_compound` | bretylium_tosilate | bretylium_tosylate | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | bretylium | bretylium_tosylate | mismatch |
 
 </details>
 
@@ -116,33 +106,19 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Rapeport_1985_table_p4_1:row2:col6', 'Rapeport_1985_table_p4_1:row3:col6'] |
+| C5_dimension_Q26 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Rapeport_1985_table_p4_1:row2:col7', 'Rapeport_1985_table_p4_1:row3:col7', 'Rapeport_1985_table_p4_1:row4:col7'] |
+| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Rapeport_1985_table_p4_1:row2:col3'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Rapeport_1985_table_p4_1:row2:col4', 'Rapeport_1985_table_p4_1:row3:col4', 'Rapeport_1985_table_p4_1:row4:col4'] |
+| C5_dimension_Q65 | pass | [length] ** 3 | not captured | not captured | not captured | ['Rapeport_1985_table_p4_1:row2:col5', 'Rapeport_1985_table_p4_1:row3:col5'] |
+| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 698.0 | not captured | not captured | ['Rapeport_1985_table_p4_1:row2:col6', 'Rapeport_1985_table_p4_1:row3:col6'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.9 L/h | not captured | not captured | ['Rapeport_1985:other_prose'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 427 L | not captured | not captured | ['Rapeport_1985:other_prose'] |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T0_analyte_identity | not captured | fail | bretylium_tosilate (or metabolite) | Creatinine clearance (ml/min) | not captured | disposition label(s) name a biomarker, not bretylium_tosilate: 'Creatinine clearance (ml/min)' |
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
-| T3_output_variable | not captured | pass | C_central (measured=bretylium) | central.C | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable; invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
-| T1_t_half_alpha | reference | skipped | 25 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_beta | reference | fail | 6.0 | 328.85599021171333 | 54.8093 | hours→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 14.0 | 328.85599021171333 | 23.4897 | hours→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 0.8 | 328.85599021171333 | 411.07 | hours→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 16.0 | 328.85599021171333 | 20.5535 | hours→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 44.0 | 328.85599021171333 | 7.474 | hours→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 12.0 | 328.85599021171333 | 27.4047 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 11.0 | 328.85599021171333 | 29.896 | h→SI vs simulated h |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 41.9 L/h | not captured | not captured | ['Rapeport_1985_table_p4_1:row2:col6', 'Rapeport_1985_table_p4_1:row3:col6'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 56 L | not captured | not captured | ['Rapeport_1985_table_p4_1:row2:col4', 'Rapeport_1985_table_p4_1:row3:col4', 'Rapeport_1985_table_p4_1:row4:col4'] |
+| C9_phys_window_Q65 | pass | volume within physiological range | 553 L | not captured | not captured | ['Rapeport_1985_table_p4_1:row2:col5', 'Rapeport_1985_table_p4_1:row3:col5'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -151,27 +127,30 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_bretylium_tosilate/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Rapeport_1985` / `Rapeport_1985::garret_et_al`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_bretylium_tosilate/models/modelica/BretyliumTosilate_Rapeport1985_garret_et_al.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_bretylium_tosilate/models/modelica/BretyliumTosilate_Rapeport1985_garret_et_al.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_bretylium_tosilate/models/modelica/BretyliumTosilate_Rapeport1985_garret_et_al.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_bretylium_tosilate/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Rapeport_1985` / `Rapeport_1985::garret_et_al`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 140 mg, single dose, first-order absorption (ka 0.5 /h, F 1). Doses in the paper: 140, 280, 350, 8330, 12460, 14000, 16380, 21000 mg.
-
-<dbs-fmusim paramsurl="drugs/drug_bretylium_tosilate/BretyliumTosilate_Rapeport1985_garret_et_al/BretyliumTosilate_Rapeport1985_garret_et_al_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_bretylium_tosilate/BretyliumTosilate_Rapeport1985_garret_et_al/BretyliumTosilate_Rapeport1985_garret_et_al_sim_controls.json"></dbs-fmusim>
-
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C_enteral` · parameters `BretyliumTosilate_Rapeport1985_garret_et_al_params.json` · controls `BretyliumTosilate_Rapeport1985_garret_et_al_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-08 16:24 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 20:03 UTC</sub>

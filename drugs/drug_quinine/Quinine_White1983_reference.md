@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;quinine&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/&quot;},{&quot;label&quot;:&quot;White_1983 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Quinine_Hendriksen2013_reference&quot;,&quot;label&quot;:&quot;Hendriksen_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Hendriksen2013_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quinine_Kloprogge2014_reference&quot;,&quot;label&quot;:&quot;Kloprogge_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Kloprogge2014_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quinine_Phillips1986_reference&quot;,&quot;label&quot;:&quot;Phillips_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Phillips1986_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Quinine_Hendriksen2013_reference&quot;,&quot;label&quot;:&quot;Hendriksen_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Hendriksen2013_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quinine_Phillips1986_mean_s_d&quot;,&quot;label&quot;:&quot;Phillips_1986_mean_s_d&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Phillips1986_mean_s_d.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quinine_Kloprogge2014_reference&quot;,&quot;label&quot;:&quot;Kloprogge_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Kloprogge2014_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quinine_Michels2019_estimate&quot;,&quot;label&quot;:&quot;Michels_2019_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Michels2019_estimate.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Maciel_2024_P_berghei_infected_erythrocytes&quot;,&quot;label&quot;:&quot;Maciel_2024 \u00b7 P. berghei-infected erythrocytes&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/pd_Maciel_2024_P_berghei_infected_erythrocytes.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Pukrittayakamee_2003_PMR&quot;,&quot;label&quot;:&quot;Pukrittayakamee_2003 \u00b7 PMR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/pd_Pukrittayakamee_2003_PMR.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,21 +17,19 @@
 
 ### Reviewer guidance
 
-**The quinine record was rejected because the structural parameter V/F, reported as 0.57 L/kg, failed the dimensional consistency check against the other model parameters.**
+**C5 dimension mismatch on a structural parameter.**
 
-The record describes a one-compartment model for quinine in healthy male volunteers, built from the paper's abstract only, so the reported summary statistics stood in for a fitted model. The dimension check flagged a mismatch on a structural parameter: V/F is given as 0.57 L/kg (apparent volume of distribution adjusted for bioavailability), alongside a total clearance of 1.92 L/h, a distribution half-life of 1.89 min, and a terminal elimination half-life of 11.1 h. The volume-normalized value Vnorm/F is reported as 1.8 L/kg, which is inconsistent with the central V/F of 0.57 L/kg for the same compound, supporting the dimensional concern. Extracted — quinine: t1/2α 1.89 min, t1/2z 11.1 h, V/F 0.57 1 kg-1, Vnorm/F 1.8 1 kg-1, CL 1.92 L/h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — quinine: t1/2α 1.89 min, t1/2z 11.1 h, V/F 0.57 1 kg-1, Vnorm/F 1.8 1 kg-1, CL 1.92 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has quinine dihydrochloride, the second reading quinine; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by glm-5.3-flash</sub>
-
-> **Dose compound ≠ measured compound:** dosed `quinine dihydrochloride`, measured `quinine`.
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 White NJ et al., Quinine disposition kinetics, British journal of clinical… (1983)
   ·  DOI: [10.1111/j.1365-2125.1983.tb02184.x](https://doi.org/10.1111/j.1365-2125.1983.tb02184.x)
 
-<div class="pk-model-meta" hidden drug="quinine" model-id="Quinine_White1983_reference" status="rejected" stale="false" population="healthy male volunteers" measured-compound="quinine" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="quinine" model-id="Quinine_White1983_reference" status="rejected" stale="false" population="healthy adults" measured-compound="quinine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.
@@ -121,7 +119,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_quinine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `White_1983` / `White_1983::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_quinine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `White_1983` / `White_1983::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -137,4 +135,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 08:37 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 03:33 UTC</sub>

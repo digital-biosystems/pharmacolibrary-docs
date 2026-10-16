@@ -18,7 +18,7 @@
 
 **C8 unreachable/orphan compartment or unlinked metabolite.**
 
-A reported unit could not be converted (Cavg and CL), so that value has no SI equivalent. Extracted — obinutuzumab: Cavg -0.0027 mg/L, CL 0.11 day−1, V2 1.23 L.
+A reported unit could not be converted (Cavg, equation variable and age_as_a_continuous_covariate_increase_of_1_y), so that value has no SI equivalent. Extracted — obinutuzumab: Cavg -0.996 ng/mL, V2 1.23 L, CL 0.154 L day−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of clt: this record has none, the second reading 0.154; it also differs on 3 more fields. That field does not shape the model.
 
@@ -28,10 +28,10 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Gibiansky E et al., Pharmacokinetics, exposure, efficacy an…, British journal of clinical… (2019)
   ·  DOI: [10.1111/bcp.13974](https://doi.org/10.1111/bcp.13974)
 
-<div class="pk-model-meta" hidden drug="obinutuzumab" model-id="Obinutuzumab_Gibiansky2019_reference" status="rejected" stale="false" population="patients with CD20+ B-cell malignancies (CLL, NHL, FL, DLBCL, MCL)" measured-compound="obinutuzumab" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="obinutuzumab" model-id="Obinutuzumab_Gibiansky2019_reference" status="rejected" stale="false" population="patients with B-cell malignancies (CLL, NHL, FL, DLBCL, MCL)" measured-compound="obinutuzumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 3 extracted, plus 1 covariate effect.
+**Parameters:** 2 extracted, plus 3 covariate effects.
 
 **Parameterization:** mechanistic.
 
@@ -40,10 +40,11 @@ Gibiansky E et al., Pharmacokinetics, exposure, efficacy an…, British journal 
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Cmean (as a continuous covariate) | `Q71` · Cavg | -0.0027 | mg/L | not captured | mg/L | 17.42 | llm (0.6) | bcp13974-tbl-0002:row2:col2, bcp13974-tbl-0002:row2:col3, bcp13974-tbl-0002:row2:col4 | — | not captured |
-| age_as_a_continuous_covariate_increase_of_1_y | `Q900` · age_as_a_continuous_covariate_increase_of_1_y | 0.05785 | not captured | not captured | not captured | 21.73 | not captured (not captured) | bcp13974-tbl-0002:row11:col2, bcp13974-tbl-0002:row11:col3, bcp13974-tbl-0002:row11:col4 | — | not captured |
-| decay coefficient of time dependent clearance (kdes) | `Q22` · CL | 0.11 | day−1 | not captured | day−1 | not captured | boundary (0.8) | Gibiansky_2019:results_prose | — | not captured |
-| peripheral volume of distribution (V2) | `Q64` · V2 | 1.23 | L | 0.00123 | L | not captured | boundary_compartment (0.9) | Gibiansky_2019:results_prose | — | not captured |
+| sex | `Q900` · sex | 17.6 | not captured | not captured | not captured | not captured | not captured (not captured) | Gibiansky_2019_table_1:row4:col3, Gibiansky_2019_table_1:row19:col3 | — | not captured |
+| age | `Q900` · age | 13.8 | not captured | not captured | not captured | not captured | not captured (not captured) | Gibiansky_2019_table_1:row8:col3 | — | not captured |
+| theta_q42_albumin_power | `Q900` · theta_q42_albumin_power | 25.4 | not captured | not captured | not captured | not captured | not captured (not captured) | Gibiansky_2019_table_1:row2:col3 | — | not captured |
+| V2 | `Q64` · V2 | 1.23 | L | 0.00123 | L | not captured | exact (1.0) | Gibiansky_2019:results_prose | — | not captured |
+| CLT | `Q22` · CL | 0.154 | L day−1 | 1.7824074074074074e-09 | L/h | not captured | exact (1.0) | Gibiansky_2019:results_prose | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -53,40 +54,32 @@ Gibiansky E et al., Pharmacokinetics, exposure, efficacy an…, British journal 
 ## Departures & gaps
 
 **Interpretation flags:**
-- column 'covariate' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- column 'reference value for covariate *' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- dropped value-less row: 'Covariate/tertile'
-- unit_dimension_unknown: 'as a continuous covariate' (Cavg)
-- dropped unlinked row (NIL): 'Bone marrow involvement at baseline, yes vs no' — extend the ontology if this is a real PK parameter (source ['bcp13974-tbl-0002:row3:col2', 'bcp13974-tbl-0002:row3:col3', 'bcp13974-tbl-0002:row3:col4', 'bcp13974-tbl-0002:row8:col2', 'bcp13974-tbl-0002:row8:col3', 'bcp13974-tbl-0002:row8:col4', 'bcp13974-tbl-0002:row12:col2', 'bcp13974-tbl-0002:row12:col3', 'bcp13974-tbl-0002:row12:col4'])
-- unit_dimension_unknown: 'C mean tertiles' (Cavg)
-- dropped duplicate Q71 ('Low tertile of Cmean', value '-0.9956') — already have one for this compound
-- dropped unlinked row (NIL): 'Middle tertile of Cmean' — extend the ontology if this is a real PK parameter (source ['bcp13974-tbl-0002:row6:col2', 'bcp13974-tbl-0002:row6:col3', 'bcp13974-tbl-0002:row6:col4'])
-- dropped duplicate Q71 ('High tertile of Cmean', value '-1.194') — already have one for this compound
-- dropped unlinked row (NIL): 'Log Cmean (as a continuous covariate)' — extend the ontology if this is a real PK parameter (source ['bcp13974-tbl-0002:row10:col2', 'bcp13974-tbl-0002:row10:col3', 'bcp13974-tbl-0002:row10:col4'])
-- covariate level 'Age (as a continuous covariate), increase of 1 y' → Q900:age_as_a_continuous_covariate_increase_of_1_y = 0.05785 (linear_fractional on the model)
-- dropped unlinked row (NIL): 'Serum albumin' — extend the ontology if this is a real PK parameter (source ['Gibiansky_2019_table_1:row2:col1', 'Gibiansky_2019_table_1:row2:col2'])
-- salvaged Q22 ('decay coefficient of time dependent clearance (kdes)'=0.11) from results prose — parameter table was unreadable
-- salvaged Q64 ('peripheral volume of distribution (V2)'=1.23) from results prose — parameter table was unreadable
-- implicit units: 'Cmean (as a continuous covariate)' → mg/L (from the popPK convention: 'The paper does not explicitly state the unit for Cmean in the provided text or table captions. However, Cmean is defined')
+- column 'illustrative value for covariate *' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- covariate level 'Sex' → Q900:sex = 17.6 (linear_fractional on the model)
+- dropped unlinked row (NIL): 'Disease type' — extend the ontology if this is a real PK parameter (source ['Gibiansky_2019_table_1:row5:col3', 'Gibiansky_2019_table_1:row13:col3', 'Gibiansky_2019_table_1:row25:col3'])
+- covariate level 'Age' → Q900:age = 13.8 (power on the model)
+- dropped unlinked row (NIL): 'Baseline tumour size' — extend the ontology if this is a real PK parameter (source ['Gibiansky_2019_table_1:row10:col3', 'Gibiansky_2019_table_1:row15:col3'])
+- dropped unlinked row (NIL): 'Received fludarabine + cyclophosphamide' — extend the ontology if this is a real PK parameter (source ['Gibiansky_2019_table_1:row23:col3'])
+- dropped unlinked row (NIL): 'Received bendamustine' — extend the ontology if this is a real PK parameter (source ['Gibiansky_2019_table_1:row24:col3'])
+- covariate effect for Q42 has no base parameter row (kept as unattached equation-variable)
+- salvaged Q64 ('V2'=1.23) from results prose — parameter table was unreadable
+- salvaged Q22 ('CLT'=0.154) from results prose — parameter table was unreadable
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=obinutuzumab
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- structure disagreement: deterministic 1C vs LLM 3C — review compartment count
 - status held at route_to_review — not promoted
+- population split: 'illustrative value for covariate *' subgroup of Gibiansky_2019 (paper reports 2 populations: effect on parameter, % (mean, 95% cls), illustrative value for covariate *)
 - molar mass: none found for 'obinutuzumab' — its concentrations stay mass-only
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- unparsed cell bcp13974-tbl-0002:row2:col1 = '0.9974 (0.9965 to 0.9983)'
-- unparsed cell bcp13974-tbl-0002:row3:col1 = '1.689 (1.217 to 2.346)'
-- unparsed cell bcp13974-tbl-0002:row5:col1 = '0.3695 (0.2219 to 0.6154)'
-- unparsed cell bcp13974-tbl-0002:row6:col1 = '0.4466 (0.2701 to 0.7383)'
-- unparsed cell bcp13974-tbl-0002:row7:col1 = '0.3031 (0.1782 to 0.5156)'
-- unparsed cell bcp13974-tbl-0002:row8:col1 = '1.758 (1.259 to −2.454)'
-- unparsed cell bcp13974-tbl-0002:row10:col1 = '0.8484 (0.7731 to 0.9309)'
-- unparsed cell bcp13974-tbl-0002:row11:col1 = '1.06 (1.034 to 1.086)'
-- unparsed cell bcp13974-tbl-0002:row12:col1 = '2.401 (1.473 to 3.914)'
-- unparsed cell Gibiansky_2019_table_1:row2:col3 = '25.4 (35.1, 16.4)'
-- companion parameter table 1 transcribed (2 record(s), model stage 'final')
+- table bcp13974-tbl-0002: units_need_context
+- table bcp13974-tbl-0002: unparsed_numeric_cell
+- table bcp13974-tbl-0002: representations disagree; selected evidence retained, not merged
+- table Gibiansky_2019_table_1: units_need_context
+- table Gibiansky_2019_table_1: ragged_grid
+- table Gibiansky_2019_table_1: unparsed_numeric_cell
+- companion parameter table 1 transcribed (28 record(s), model stage 'final')
 - LLM selected parameter table(s) 1
 
 ## Validation
@@ -127,13 +120,12 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q71 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['bcp13974-tbl-0002:row2:col2', 'bcp13974-tbl-0002:row2:col3', 'bcp13974-tbl-0002:row2:col4'] |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | day−1 | not captured | not captured | ['Gibiansky_2019:results_prose'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.11 | not captured | not captured | ['Gibiansky_2019:results_prose'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.154 | not captured | not captured | ['Gibiansky_2019:results_prose'] |
 | C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.00642 L/h | not captured | not captured | ['Gibiansky_2019:results_prose'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 1.23 L | not captured | not captured | ['Gibiansky_2019:results_prose'] |
 
 <details class="legend">
@@ -143,7 +135,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_obinutuzumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Gibiansky_2019` / `Gibiansky_2019::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_obinutuzumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Gibiansky_2019` / `Gibiansky_2019::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -159,4 +151,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 18:08 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 03:54 UTC</sub>

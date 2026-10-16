@@ -4,7 +4,7 @@
 
 # Vilanterol — `Vilanterol_Mehta2018_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.4), gpt-oss-120b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -20,7 +20,7 @@
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Extracted — vilanterol: ? 5.44, ? 5.59, ? 4.71, ? -2.95, ? 8.72, ? -0.211, ? -0.0602, ? -0.265, … (+1).
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has fluticasone furoate/umeclidinium/vilanterol, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has fluticasone furoate/umeclidinium/vilanterol, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -97,20 +97,24 @@ Mehta R et al., Population Pharmacokinetic Analysis of…, Journal of clinical p
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss:120b` | not confirmed | 0.4 (2/5 fields) | 3 |
 | `gpt-oss-120b` | not confirmed | 0.4 (2/5 fields) | 3 |
 
-<details><summary>3 field discrepancies</summary>
+<details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `parameters[cl/f]` | 5.43 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `screen.dose_compound` | fluticasone furoate/umeclidinium/vilanterol | unknown | mismatch |
 | `gpt-oss-120b` | `screen.primary_analyte` | vilanterol | unknown | mismatch |
+| `gpt-oss:120b` | `parameters[cl/f]` | 5.43 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | fluticasone furoate/umeclidinium/vilanterol | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | vilanterol | unknown | mismatch |
 
 </details>
 
@@ -139,7 +143,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_vilanterol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Mehta_2018` / `Mehta_2018::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_vilanterol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Mehta_2018` / `Mehta_2018::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

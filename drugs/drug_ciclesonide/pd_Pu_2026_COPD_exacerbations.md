@@ -18,9 +18,9 @@
 
 **Model:** No model was generated from this record.
 
-> The paper models ciclesonide (dose as driver) against the binary COPD exacerbations response with an Emax-type model, but no full text is available, so the mechanism, effect direction, and potency or rate parameters (Emax, EC50, gamma) are not stated.
+> The paper excerpts are not available, so the specific mechanism and key potency or rate values for the effect of ciclesonide dose on COPD exacerbations are not provided.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Pu_2026`
 - **model family:** `emax`

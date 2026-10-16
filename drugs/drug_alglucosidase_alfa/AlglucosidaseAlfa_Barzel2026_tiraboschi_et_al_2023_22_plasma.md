@@ -167,9 +167,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_alglucosidase_alfa/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Barzel_2026` / `Barzel_2026::tiraboschi_et_al_2023_22_plasma`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_alglucosidase_alfa/models/modelica/_needs_review/AlglucosidaseAlfa_Barzel2026_tiraboschi_et_al_2023_22_plasma.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_alglucosidase_alfa/models/modelica/_needs_review/AlglucosidaseAlfa_Barzel2026_tiraboschi_et_al_2023_22_plasma.deviation.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_alglucosidase_alfa/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Barzel_2026` / `Barzel_2026::tiraboschi_et_al_2023_22_plasma`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_alglucosidase_alfa/models/modelica/_needs_review/AlglucosidaseAlfa_Barzel2026_tiraboschi_et_al_2023_22_plasma.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_alglucosidase_alfa/models/modelica/_needs_review/AlglucosidaseAlfa_Barzel2026_tiraboschi_et_al_2023_22_plasma.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

@@ -1,5 +1,5 @@
 {
- "dose_source": "WHO ATC DDD 150 mg oral (P01CX04)",
+ "dose_source": "paper",
  "model_id": "Miltefosine_Pali2020_reference",
  "molar_masses": {
   "central.C": 0.40757600000000005
@@ -7,6 +7,11 @@
  "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
+ ],
+ "paper_doses_kind": "range",
+ "paper_doses_mg": [
+  175.0,
+  189.0
  ],
  "parameters": {
   "Cl": 2.824074074074074e-08,
@@ -16,17 +21,17 @@
   "VdPerKg": 0.00032714285714285717,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.00015,
+  "adminMass": 0.000175,
   "k12": 1.1776241306808993e-08,
   "k21": 1.1879996736824933e-07,
   "ka": 1.863425925925926e-05,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 143855.58390828944
+  "central.C": 143762.14754497656
  },
  "reference_peaks": {
-  "central.C": 0.005153479179697358
+  "central.C": 0.00601240198420256
  },
  "stop_time": 3024000.0,
  "template": "PK_2C_enteral",

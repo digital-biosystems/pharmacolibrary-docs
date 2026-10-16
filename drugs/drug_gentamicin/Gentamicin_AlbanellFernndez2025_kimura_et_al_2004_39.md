@@ -172,9 +172,9 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_gentamicin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Albanell-Fernández_2025` / `Albanell-Fernández_2025::kimura_et_al_2004_39`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_gentamicin/models/modelica/_needs_review/Gentamicin_AlbanellFernndez2025_kimura_et_al_2004_39.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_gentamicin/models/modelica/_needs_review/Gentamicin_AlbanellFernndez2025_kimura_et_al_2004_39.deviation.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_gentamicin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Albanell-Fernández_2025` / `Albanell-Fernández_2025::kimura_et_al_2004_39`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_gentamicin/models/modelica/_needs_review/Gentamicin_AlbanellFernndez2025_kimura_et_al_2004_39.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_gentamicin/models/modelica/_needs_review/Gentamicin_AlbanellFernndez2025_kimura_et_al_2004_39.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

@@ -4,7 +4,7 @@
 
 # repaglinide — `Repaglinide_Ruzilawati2010_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5), gpt-oss:120b (partly confirmed, agreement 0.5). Primary extraction retained.">cross-check: partial 0/2</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25), gpt-oss:120b (partly confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -20,7 +20,7 @@
 
 The volume of distribution of repaglinide is reported as 23.09 L/h, a unit with a time denominator that does not fit a volume parameter, so the magnitude cannot be judged physiologically plausible and a unit or scale extraction error is suspected. The elimination rate constant is 0.58 with unit 'h', which also lacks the expected reciprocal-time dimension. The record was built from the abstract alone, so reported summary statistics stood in for a fitted model, and a second reader read the same values under different parameter labels without resolving the unit problem. Extracted — repaglinide: kel 0.58 h, V 23.1 L/h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of k: this record has none, the second reading 0.58; it also differs on 3 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has repaglinide, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -68,15 +68,15 @@ Ruzilawati AB et al., Population pharmacokinetic modelling of…, Journal of cli
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.5 (4/8 fields) | 4 |
+| `gpt-oss-120b` | not confirmed | 0.25 (2/8 fields) | 6 |
 | `gpt-oss:120b` | partly confirmed | 0.5 (4/8 fields) | 4 |
 
-<details><summary>8 field discrepancies</summary>
+<details><summary>10 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -84,6 +84,8 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | `gpt-oss-120b` | `parameters[mean elimination rate constant (k(el))]` | 0.58 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[v]` | not captured | 23.09 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[volume of distribution (v(d))]` | 23.09 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | repaglinide | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | repaglinide | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[k]` | not captured | 0.58 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[mean elimination rate constant (k(el))]` | 0.58 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[v]` | not captured | 23.09 | only_one_extracted |
@@ -116,7 +118,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_repaglinide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Ruzilawati_2010` / `Ruzilawati_2010::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_repaglinide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Ruzilawati_2010` / `Ruzilawati_2010::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

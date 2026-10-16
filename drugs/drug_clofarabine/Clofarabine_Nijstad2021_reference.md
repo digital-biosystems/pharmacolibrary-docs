@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;clofarabine&quot;,&quot;href&quot;:&quot;drugs/drug_clofarabine/&quot;},{&quot;label&quot;:&quot;Nijstad_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clofarabine_Bonate2011_reference&quot;,&quot;label&quot;:&quot;Bonate_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clofarabine/Clofarabine_Bonate2011_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clofarabine_Bonate2011_reference&quot;,&quot;label&quot;:&quot;Bonate_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clofarabine/Clofarabine_Bonate2011_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # clofarabine — `Clofarabine_Nijstad2021_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.833), gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -17,34 +17,33 @@
 
 ### Reviewer guidance
 
-**No value for clofarabine's clearance and volume of distribution.**
+**Only volume was extracted — no clearance.**
 
-The model was built, but clofarabine's clearance and volume of distribution had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — clofarabine: CLNR 24 L/h, CLR 29.8 L/h, V 186 L.
+A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Extracted — clofarabine: CLNR 24 L/h, CLR 29.8 L/h, V 186 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has clofarabine, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-28 14:37:00.713433+00:00) predates the upstream re-run (2026-10-07 16:39:03.743560+00:00). Current validate status: `rejected`.
-
 ## Citation
 Nijstad AL et al., Population pharmacokinetics of clofarab…, British journal of clinical… (2021)
   ·  DOI: [10.1111/bcp.14738](https://doi.org/10.1111/bcp.14738)
 
-<div class="pk-model-meta" hidden drug="clofarabine" model-id="Clofarabine_Nijstad2021_reference" status="rejected" stale="true" population="paediatric patients and one adult undergoing allogeneic HCT" measured-compound="clofarabine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="clofarabine" model-id="Clofarabine_Nijstad2021_reference" status="needs_review" stale="false" population="paediatric patients and one adult undergoing allogeneic hematopoietic cell transplantation" measured-compound="clofarabine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 2 extracted.
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CLnon − renal,70kg (L/h) | `Q79` · CLNR | 24.0 | L/h | 6.666666666666667e-06 | [l] / [h] | not captured | llm (0.6) | bcp14738-tbl-0002:row3:col1, bcp14738-tbl-0002:row3:col2 | — | not captured |
-| CLrenal,70kg (L/h) | `Q26` · CLR | 29.8 | L/h | 8.277777777777778e-06 | [l] / [h] | not captured | llm (0.6) | bcp14738-tbl-0002:row4:col1, bcp14738-tbl-0002:row4:col2 | — | not captured |
+| CLnon − renal,70kg (L/h) | `Q79` · CLNR | 24.0 | L/h | 6.666666666666667e-06 | [l] / [h] | not captured | llm (0.6) | bcp14738-tbl-0002:row3:col1 | — | not captured |
+| CLrenal,70kg (L/h) | `Q26` · CLR | 29.8 | L/h | 8.277777777777778e-06 | [l] / [h] | not captured | llm (0.6) | bcp14738-tbl-0002:row4:col1 | — | not captured |
+| V270kg (L) | `Q61` · V | 186 | L | 0.186 | [l] | not captured | llm (0.6) | bcp14738-tbl-0002:row8:col1 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -57,32 +56,33 @@ Nijstad AL et al., Population pharmacokinetics of clofarab…, British journal o
 | CL=CLnon−renal+CLrenal×RF×BW700.75 | Q22 | not captured | llm_confirmed |
 | V1=V170kg×BW701 | Q63 | not captured | llm_confirmed |
 | V2=V270kg×BW701 | Q64 | not captured | llm_confirmed |
+| Q=Q70kg×BW700.75 | Q30 | not captured | llm |
 
 ## Departures & gaps
 
 **Interpretation flags:**
 - table section iiv: 'Unexplained interindividual variability in exposure clearance' routed out of structural estimates ('Unexplained interindividual variability in exposure clearance was observed (17.8%, 95% CI 14.6–22.4).')
-- dropped unlinked row (NIL): 'RF=eGFRL/h×70BWeGFRSTD' — extend the ontology if this is a real PK parameter (source ['bcp14738-tbl-0002:row2:col1', 'bcp14738-tbl-0002:row2:col2'])
+- dropped unlinked row (NIL): 'RF=eGFRL/h×70BWeGFRSTD' — extend the ontology if this is a real PK parameter (source ['bcp14738-tbl-0002:row2:col1'])
 - dropped duplicate Q63 ('V170kg (L)', value '268') — already have one for this compound
-- dropped unlinked row (NIL): 'V270kg (L)' — extend the ontology if this is a real PK parameter (source ['bcp14738-tbl-0002:row8:col1', 'bcp14738-tbl-0002:row8:col2'])
-- dropped unlinked row (NIL): 'Q=Q70kg×BW700.75' — extend the ontology if this is a real PK parameter (source ['bcp14738-tbl-0002:row9:col1', 'bcp14738-tbl-0002:row9:col2'])
-- dropped unlinked row (NIL): 'Q70kg (L/h)' — extend the ontology if this is a real PK parameter (source ['bcp14738-tbl-0002:row10:col1', 'bcp14738-tbl-0002:row10:col2'])
+- dropped duplicate Q30 ('Q70kg (L/h)', value '33.2') — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=clofarabine
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 
 **Extraction notes:**
+- table bcp14738-tbl-0002: unbound_uncertainty
 - LLM selected parameter table(s) 2
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss:120b` | partly confirmed | 0.833 (10/12 fields) | 2 |
 | `gpt-oss-120b` | not confirmed | 0.125 (2/16 fields) | 14 |
 
-<details><summary>14 field discrepancies</summary>
+<details><summary>16 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -100,6 +100,8 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | `gpt-oss-120b` | `parameters[v2=v270kg×bw701]` | not captured | not captured | only_one_extracted |
 | `gpt-oss-120b` | `screen.dose_compound` | clofarabine | unknown | mismatch |
 | `gpt-oss-120b` | `screen.primary_analyte` | clofarabine | unknown | mismatch |
+| `gpt-oss:120b` | `parameters[v170kg]` | not captured | 268 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v270kg]` | 186 | not captured | only_one_extracted |
 
 </details>
 
@@ -113,21 +115,14 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
-| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q26 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['bcp14738-tbl-0002:row4:col1', 'bcp14738-tbl-0002:row4:col2'] |
-| C5_dimension_Q79 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['bcp14738-tbl-0002:row3:col1', 'bcp14738-tbl-0002:row3:col2'] |
+| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
+| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q26 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['bcp14738-tbl-0002:row4:col1'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['bcp14738-tbl-0002:row8:col1'] |
+| C5_dimension_Q79 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['bcp14738-tbl-0002:row3:col1'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| C9_phys_window_Q61 | pass | volume within physiological range | 186 L | not captured | not captured | ['bcp14738-tbl-0002:row8:col1'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -136,16 +131,24 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_clofarabine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Nijstad_2021` / `Nijstad_2021::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_clofarabine/models/modelica/_needs_review/Clofarabine_Nijstad2021_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_clofarabine/models/modelica/_needs_review/Clofarabine_Nijstad2021_reference.deviation.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_clofarabine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Nijstad_2021` / `Nijstad_2021::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -154,4 +157,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 16:39 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 03:09 UTC</sub>

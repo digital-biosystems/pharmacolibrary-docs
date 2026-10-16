@@ -6,18 +6,18 @@
  ],
  "parameters": {
   "E0": 60.4,
-  "EC50": 6.85e-10,
+  "EC50": 1.65e-05,
   "Emax": -30.7,
-  "exposure_per_s": 1e-09,
+  "exposure_per_s": 1e-06,
   "gamma": 1.0
  },
  "reference_peaks": {},
  "reference_points": {
   "0": 60.4,
-  "6.850000000000001e-10": 45.05
+  "1.6499999999999998e-05": 45.05
  },
- "stop_time": 6.9,
- "subtitle": "Heart rate (isoproterenol-induced, with carvedilol inhibition) (HR) against carvedilol concentration",
+ "stop_time": 170.0,
+ "subtitle": "heart rate (HR) against carvedilol concentration",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
  "title": "Exposure–response simulated by the PD model",
@@ -30,9 +30,9 @@
   },
   "EC50": {
    "display_only": false,
-   "display_unit": "μg",
-   "factor": 1e-09,
-   "si_unit": "kg"
+   "display_unit": "ng/mL",
+   "factor": 1e-06,
+   "si_unit": "kg/m3"
   },
   "Emax": {
    "display_only": true,
@@ -42,22 +42,22 @@
   },
   "exposure": {
    "display_only": false,
-   "display_unit": "μg",
-   "factor": 1e-09,
-   "si_unit": "kg"
+   "display_unit": "ng/mL",
+   "factor": 1e-06,
+   "si_unit": "kg/m3"
   },
   "response_unit": "bpm"
  },
  "x_axis": {
-  "display_unit": "μg",
-  "factor": 1e-09,
+  "display_unit": "ng/mL",
+  "factor": 1e-06,
   "label": "carvedilol concentration",
-  "per_s": 1e-09,
+  "per_s": 1e-06,
   "variable": "exposure"
  },
  "y_axis": {
   "display_unit": "bpm",
   "factor": 1.0,
-  "label": "Heart rate (isoproterenol-induced, with carvedilol inhibition) (HR)"
+  "label": "heart rate (HR)"
  }
 }

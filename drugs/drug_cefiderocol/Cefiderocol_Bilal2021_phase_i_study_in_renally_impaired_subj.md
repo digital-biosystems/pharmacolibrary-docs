@@ -103,7 +103,7 @@ Bilal M et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokin
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_cefiderocol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Bilal_2021` / `Bilal_2021::phase_i_study_in_renally_impaired_subjects`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_cefiderocol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Bilal_2021` / `Bilal_2021::phase_i_study_in_renally_impaired_subjects`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

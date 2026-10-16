@@ -1,8 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05B&quot;,&quot;href&quot;:&quot;atc/N05B.md&quot;},{&quot;label&quot;:&quot;alprazolam&quot;,&quot;href&quot;:&quot;drugs/drug_alprazolam/&quot;},{&quot;label&quot;:&quot;Witt_2026 \u00b7 PD relative growth rate&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Alprazolam_Klein2026_body_weight_50_kg&quot;,&quot;label&quot;:&quot;Klein_2026_body_weight_50_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alprazolam/Alprazolam_Klein2026_body_weight_50_kg.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05B&quot;,&quot;href&quot;:&quot;atc/N05B.md&quot;},{&quot;label&quot;:&quot;alprazolam&quot;,&quot;href&quot;:&quot;drugs/drug_alprazolam/&quot;},{&quot;label&quot;:&quot;Witt_2026 \u00b7 PD Relative growth rate&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Alprazolam_Mertes2022_reference&quot;,&quot;label&quot;:&quot;Mertes_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alprazolam/Alprazolam_Mertes2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Witt_2026_RGR&quot;,&quot;label&quot;:&quot;Witt_2026 \u00b7 RGR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_alprazolam/pd_Witt_2026_RGR.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# relative growth rate — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span>
+# Relative growth rate — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -16,13 +16,13 @@
 
 ## Record summary
 
-**As extracted:** Alprazolam (concentrations from the PK model of DeVane_1993) drives relative growth rate (in % of control): direct sigmoid Emax (Hill) effect.
+**As extracted:** Alprazolam (concentrations from the PK model of DeVane_1993) drives Relative growth rate (in %): direct sigmoid Emax (Hill) effect.
 
-**Model:** Model available in **Models**; browser simulation unavailable.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
-> Alprazolam concentrations (ng L−1) inhibit the relative growth rate (RGR, % of control) of L. minor over 7 days, described by a four-parameter logistic (sigmoid Emax) concentration–response model with EC50 = 465,351 ng L−1, Hill slope −0.4585, and maximum inhibition of 100%; the paper does not state a mechanistic PD pathway beyond this direct concentration–response inhibition.
+> Alprazolam concentrations (ng L−1) inhibit the relative growth rate (RGR) of L. minor, modeled with a four-parameter logistic (sigmoidal) function where the drug directly reduces growth rather than acting through a specific kinetic mechanism. The fitted parameters indicate a maximum inhibition (implied by the lower asymptote context in the text, though the record says Max Inhibition 100%, the text notes RGR can be negative, so likely the model's 'Bottom' parameter, but the record says Max Inhibition 100%) with an EC50 of 465,351 ng L−1 and a Hill slope of -0.4585.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Witt_2026`
 - **model family:** `sigmoid_emax`
@@ -37,9 +37,9 @@ Witt NGPM et al., Ecotoxicological Effects of Psychoactiv…, Toxics (2026)
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | EC50 | `Q321` · not captured | 465,351 | ng L−1 | not captured | llm (not captured) | Witt_2026:pdv3 |
-| PD (effect) | Hill Slope | `Q325` · not captured | −0.4585 | not captured | not captured | llm (not captured) | Witt_2026:pdv3 |
-| PD (effect) | Max. Inhibition (%) | `Q323` · not captured | 100 | % | not captured | llm (not captured) | Witt_2026:pdv3 |
+| PD (effect) | Max. Inhibition | `Q323` · not captured | 100 | % | not captured | llm (not captured) | Witt_2026:pdv3 |
+| PD (effect) | EC50 | `Q322` · not captured | 465,351 | ng L−1 | not captured | llm (not captured) | Witt_2026:pdv3 |
+| PD (effect) | Hill Slope | `Q325` · not captured | -0.4585 | not captured | not captured | llm (not captured) | Witt_2026:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -95,7 +95,9 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+<dbs-fmusim paramsurl="drugs/drug_alprazolam/Alprazolam_Witt2026_PD_rgr/Alprazolam_Witt2026_PD_rgr_params.json" metaurl="assets/fmu/PD_SigmoidEmaxSweep.vr.json" wasmurl="assets/fmu/PD_SigmoidEmaxSweep.js" controlsurl="drugs/drug_alprazolam/Alprazolam_Witt2026_PD_rgr/Alprazolam_Witt2026_PD_rgr_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PD_SigmoidEmaxSweep` · parameters `Alprazolam_Witt2026_PD_rgr_params.json` · controls `Alprazolam_Witt2026_PD_rgr_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 

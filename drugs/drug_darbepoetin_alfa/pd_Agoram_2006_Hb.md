@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B03X&quot;,&quot;href&quot;:&quot;atc/B03X.md&quot;},{&quot;label&quot;:&quot;darbepoetin alfa&quot;,&quot;href&quot;:&quot;drugs/drug_darbepoetin_alfa/&quot;},{&quot;label&quot;:&quot;Agoram_2006 \u00b7 PD hemoglobin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;DarbepoetinAlfa_Doshi2010_reference&quot;,&quot;label&quot;:&quot;Doshi_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Doshi2010_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;DarbepoetinAlfa_Jeon2021_reference&quot;,&quot;label&quot;:&quot;Jeon_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Jeon2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;DarbepoetinAlfa_Kawakami2009_reference&quot;,&quot;label&quot;:&quot;Kawakami_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Kawakami2009_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;DarbepoetinAlfa_Roberts2015_reference&quot;,&quot;label&quot;:&quot;Roberts_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Roberts2015_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;DarbepoetinAlfa_Doshi2010_reference&quot;,&quot;label&quot;:&quot;Doshi_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Doshi2010_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;DarbepoetinAlfa_Kawakami2009_reference&quot;,&quot;label&quot;:&quot;Kawakami_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Kawakami2009_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;DarbepoetinAlfa_Kim2019_reference&quot;,&quot;label&quot;:&quot;Kim_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Kim2019_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;DarbepoetinAlfa_Roberts2015_reference&quot;,&quot;label&quot;:&quot;Roberts_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Roberts2015_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # hemoglobin — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
@@ -14,17 +14,17 @@
 
 ## Record summary
 
-**As extracted:** Darbepoetin_alfa (concentrations from this paper's PK model) drives hemoglobin: indirect response — drug stimulates the production of hemoglobin.
+**As extracted:** Darbepoetin alfa (concentrations from the PK model of An_2017) drives hemoglobin: indirect response — drug stimulates the production of hemoglobin.
 
 **Model:** Model available in **Models**; browser simulation unavailable.
 
-> Darbepoetin alfa stimulates hemoglobin production via an indirect response model with a proportional effect form, characterized by an incremental maximum stimulation of 43.7% and a half-maximal stimulation concentration of 3.68 ng/mL.
+> The model characterizes darbepoetin alfa as a stimulator of hemoglobin production using an indirect response III model. Key parameters include an incremental maximum stimulation of 43.7% and a serum concentration at half-maximal stimulation (EC50) of 3.68 ng/mL.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Agoram_2006`
 - **model family:** `indirect_response_iii`
-- **driver:** `pk_record`
+- **driver:** `cited_pk`
 - **tier:** population
 - **effect:** stimulation/proportional
 
@@ -35,8 +35,8 @@ Agoram B et al., Development and evaluation of a populat…, The AAPS journal (2
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | incremental maximum stimulation of hemoglobin production | `Q320` · not captured | 43.7 | % | not captured | llm (not captured) | Agoram_2006:pdv3 |
-| PD (effect) | darbepoetin alfa serum concentration at half-maximal stimulation | `Q321` · not captured | 3.68 | ng/mL | not captured | llm (not captured) | Agoram_2006:pdv3 |
+| PD (effect) | incremental maximum stimulation | `Q320` · not captured | 43.7 | % | not captured | llm (not captured) | Agoram_2006:pdv3 |
+| PD (effect) | serum concentration at half-maximal stimulation | `Q321` · not captured | 3.68 | ng/mL | not captured | llm (not captured) | Agoram_2006:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>

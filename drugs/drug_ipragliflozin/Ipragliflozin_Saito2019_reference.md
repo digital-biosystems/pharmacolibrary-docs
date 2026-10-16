@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;ipragliflozin&quot;,&quot;href&quot;:&quot;drugs/drug_ipragliflozin/&quot;},{&quot;label&quot;:&quot;Saito_2019 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ipragliflozin_Saito2019_reference&quot;,&quot;label&quot;:&quot;Saito_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ipragliflozin/Ipragliflozin_Saito2019_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Saito_2019_UGE24h&quot;,&quot;label&quot;:&quot;Saito_2019 \u00b7 \u0394UGE24h&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ipragliflozin/pd_Saito_2019_UGE24h.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ipragliflozin — `Ipragliflozin_Saito2019_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.333), gpt-oss:120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167), gpt-oss:120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -12,38 +13,41 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
+
+> **Caveat** (`covariates_not_exercised`): Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.
 
 ### Reviewer guidance
 
-**Only clearance was extracted — no volume.**
+**Accepted with a caveat: the covariate scenarios were not simulated.**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — ipragliflozin: CL/F 9.47 L/h, AUCt 5.42e+03 ng·h/mL.
+The base model was simulated, not the covariate effects the record defines.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has ipragliflozin, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ipragliflozin, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
-
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:38:22.809763+00:00) predates the upstream re-run (2026-10-07 21:20:48.919137+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Saito M et al., Pharmacokinetic and pharmacodynamic mod…, British journal of clinical… (2019)
   ·  DOI: [10.1111/bcp.13972](https://doi.org/10.1111/bcp.13972)
 
-<div class="pk-model-meta" hidden drug="ipragliflozin" model-id="Ipragliflozin_Saito2019_reference" status="needs_review" stale="true" population="healthy subjects and patients with type 2 diabetes mellitus" measured-compound="ipragliflozin" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="ipragliflozin" model-id="Ipragliflozin_Saito2019_reference" status="accepted_with_caveats" stale="false" population="type 2 diabetes mellitus patients" measured-compound="ipragliflozin" parameterization="apparent" topology="2C"></div>
 
-**Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 2 extracted.
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameters:** 6 extracted, plus 1 covariate effect.
 
-**Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** Q/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| population mean oral clearance | `Q27` · CL/F | 9.47 | L/h | 2.630555555555556e-06 | [l] / [h] | not captured | llm_confirmed (0.6) | Saito_2019:abstract | — | not captured |
-| medians (95% prediction intervals) of AUC24h | `Q19` · AUCt | 5417 | ng·h/mL | not captured | [[h] · [ng]] / [ml] | not captured | llm (0.6) | Saito_2019:abstract | — | not captured |
+| CL (L/h) | `Q22` · CL | 9.47 | L/h | 2.630555555555556e-06 | [l] / [h] | not captured | exact (1.0) | bcp13972-tbl-0003:row2:col1 | — | 0.0533 (None% RSE) |
+| Vc (L) | `Q63` · V1 | 39.4 | L | 0.0394 | [l] | not captured | exact (1.0) | bcp13972-tbl-0003:row3:col1 | — | not captured |
+| Q/F (L/h) | `Q69` · Q/F | 6.63 | L/h | 1.8416666666666665e-06 | [l] / [h] | not captured | exact (1.0) | bcp13972-tbl-0003:row4:col1 | — | not captured |
+| Vp (L) | `Q64` · V2 | 68.1 | L | 0.0681 | [l] | not captured | exact (1.0) | bcp13972-tbl-0003:row5:col1 | — | not captured |
+| Ka (h−1) | `Q49` · kabs | 6.38 | h−1 | 0.0017722222222222221 | [1] / [h] | not captured | exact (1.0) | bcp13972-tbl-0003:row6:col1 | — | not captured |
+| gfr_effect_on_cl | `Q900` · gfr_effect_on_cl | 0.233 | not captured | not captured | not captured | not captured | not captured (not captured) | bcp13972-tbl-0003:row7:col1 | — | not captured |
+| BSA effect on CL | `Q319` · allometric_exponent | 0.610 | not captured | not captured | not captured | not captured | llm_corrected (0.6) | bcp13972-tbl-0003:row10:col1 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -52,29 +56,34 @@ Saito M et al., Pharmacokinetic and pharmacodynamic mod…, British journal of c
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['Tlag']
+- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'medians (95% prediction intervals) of ΔUGE24h' — extend the ontology if this is a real PK parameter (source ['Saito_2019:abstract'])
-- covariate category for AUC ratio from footnote/prose kept as documentation only (['Saito_2019:abstract'])
-- dropped unlinked row (NIL): 'in ΔUGE24h' — extend the ontology if this is a real PK parameter (source ['Saito_2019:abstract'])
+- table section iiv: 'ω2: CL' routed out of structural estimates ('Interindividual variability')
+- table section residual_error: 'σ2' routed out of structural estimates ('Residual error')
+- covariate level 'GFR effect on CL' → Q900:gfr_effect_on_cl = 0.233 (linear_fractional on Q22)
+- dropped duplicate Q22 ('TPRO effect on CL', value '-0.417') — already have one for this compound
+- dropped duplicate Q22 ('TBIL effect on CL', value '-0.0681') — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=ipragliflozin
-- abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Saito_2019_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
+- table bcp13972-tbl-0003: unbound_uncertainty
+- LLM selected parameter table(s) 3
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
-Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.333 (4/12 fields) | 8 |
+| `gpt-oss-120b` | not confirmed | 0.167 (2/12 fields) | 10 |
 | `gpt-oss:120b` | not confirmed | 0.2 (2/10 fields) | 8 |
 
-<details><summary>16 field discrepancies</summary>
+<details><summary>18 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -86,6 +95,8 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | `gpt-oss-120b` | `parameters[theta_cl_gfr]` | not captured | 0.233 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[vc]` | not captured | 39.4 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[vp]` | not captured | 68.1 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | ipragliflozin | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | ipragliflozin | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[auc24h]` | not captured | 5417 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[fold increase in auc24h]` | not captured | 1.17 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[medians (95% prediction intervals) of auc24h]` | 5417 | not captured | only_one_extracted |
@@ -107,14 +118,32 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q19 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Saito_2019:abstract'] |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Saito_2019:abstract'] |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['bcp13972-tbl-0003:row2:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['bcp13972-tbl-0003:row6:col1'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['bcp13972-tbl-0003:row3:col1'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['bcp13972-tbl-0003:row5:col1'] |
+| C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['bcp13972-tbl-0003:row4:col1'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 9.47 L/h | not captured | not captured | ['Saito_2019:abstract'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 9.47 L/h | not captured | not captured | ['bcp13972-tbl-0003:row2:col1'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 39.4 L | not captured | not captured | ['bcp13972-tbl-0003:row3:col1'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 68.1 L | not captured | not captured | ['bcp13972-tbl-0003:row5:col1'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_output_variable | not captured | pass | C_central (measured=ipragliflozin) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 5 scholar param(s) emitted or defaulted | 5 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -123,7 +152,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ipragliflozin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Saito_2019` / `Saito_2019::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ipragliflozin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Saito_2019` / `Saito_2019::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ipragliflozin/models/modelica/Ipragliflozin_Saito2019_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ipragliflozin/models/modelica/Ipragliflozin_Saito2019_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ipragliflozin/models/modelica/Ipragliflozin_Saito2019_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -132,21 +164,26 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ipragliflozin/Ipragliflozin_Saito2019_reference/Ipragliflozin_Saito2019_reference_modelica.zip" download>Ipragliflozin_Saito2019_reference_modelica.zip</a> <span class="pk-size">(4.5 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_ipragliflozin/Ipragliflozin_Saito2019_reference/Ipragliflozin_Saito2019_reference_fmi.zip" download>Ipragliflozin_Saito2019_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_ipragliflozin/Ipragliflozin_Saito2019_reference/Ipragliflozin_Saito2019_reference_matlab.zip" download>Ipragliflozin_Saito2019_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_ipragliflozin/Ipragliflozin_Saito2019_reference/Ipragliflozin_Saito2019_reference_matlab_simbio.zip" download>Ipragliflozin_Saito2019_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_ipragliflozin/Ipragliflozin_Saito2019_reference/Ipragliflozin_Saito2019_reference_sbml.zip" download>Ipragliflozin_Saito2019_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_ipragliflozin/Ipragliflozin_Saito2019_reference/Ipragliflozin_Saito2019_reference_cellml.zip" download>Ipragliflozin_Saito2019_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_ipragliflozin/Ipragliflozin_Saito2019_reference/Ipragliflozin_Saito2019_reference.svg" alt="Ipragliflozin_Saito2019_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+**Administration: oral** — 1 mg, single dose, first-order absorption (ka 6.38 /h, F 1). Doses in the paper: 1, 3, 10, 20, 30, 50, 100, 300 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_ipragliflozin/Ipragliflozin_Saito2019_reference/Ipragliflozin_Saito2019_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_ipragliflozin/Ipragliflozin_Saito2019_reference/Ipragliflozin_Saito2019_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_2C_enteral` · parameters `Ipragliflozin_Saito2019_reference_params.json` · controls `Ipragliflozin_Saito2019_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 21:20 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 23:37 UTC</sub>

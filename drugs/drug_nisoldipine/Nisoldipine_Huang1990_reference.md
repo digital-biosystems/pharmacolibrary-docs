@@ -4,7 +4,7 @@
 
 # nisoldipine — `Nisoldipine_Huang1990_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (not confirmed, agreement 0.111). Primary extraction retained.">cross-check: disputed 1/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.769), gpt-oss:120b (not confirmed, agreement 0.111). Primary extraction retained.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -22,7 +22,7 @@
 
 The record lists total clearance as 9 min.kg, which is not a valid pharmacokinetic unit. This dimensional error triggered a rejection for a structural parameter mismatch. Additionally, the record was built from the abstract alone, so summary statistics stood in for a fitted model. Extracted — m-nisoldipine: t1/2α 4.3 min, t1/2β 63.6 min, V 0.805 L/kg, CL 9 min.kg, t1/2z 84.8 min, tmax 31.2 min, Cmax 50 micrograms/L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has m-nisoldipine, the second reading unknown; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
@@ -75,18 +75,21 @@ Huang Y et al., Pharmacokinetics of m-nisoldipine in ra…, Zhongguo yao li xue 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  1 of 2 readers agree  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | confirmed | 1.0 (11/11 fields) | none |
+| `gpt-oss-120b` | not confirmed | 0.769 (10/13 fields) | 3 |
 | `gpt-oss:120b` | not confirmed | 0.111 (2/18 fields) | 16 |
 
-<details><summary>16 field discrepancies</summary>
+<details><summary>19 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.parameterization` | mechanistic | apparent | mismatch |
+| `gpt-oss-120b` | `parameters[cl].parameter_id` | Q22 | Q351 | mismatch |
+| `gpt-oss-120b` | `parameters[vd].parameter_id` | Q61 | Q376 | mismatch |
 | `gpt-oss:120b` | `parameters[cl]` | not captured | 9 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cl]` | 9 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cmax]` | not captured | 49.97 | only_one_extracted |
@@ -137,7 +140,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_nisoldipine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Huang_1990` / `Huang_1990::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_nisoldipine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Huang_1990` / `Huang_1990::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

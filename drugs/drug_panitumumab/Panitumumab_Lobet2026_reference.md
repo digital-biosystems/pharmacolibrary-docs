@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;panitumumab&quot;,&quot;href&quot;:&quot;drugs/drug_panitumumab/&quot;},{&quot;label&quot;:&quot;Lobet_2026 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Panitumumab_Liao2021_reference&quot;,&quot;label&quot;:&quot;Liao_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_panitumumab/Panitumumab_Liao2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -16,13 +17,13 @@
 
 ### Reviewer guidance
 
-**The intercompartmental clearance Q was rejected because its unit, L.day-1, is dimensionally inconsistent with a flow parameter.**
+**C5 dimension mismatch on a structural parameter.**
 
-The record lists Q as 0.389 L.day-1, but intercompartmental clearance requires units of volume per time, such as L.day-1. The review flagged a dimension mismatch on this structural parameter. Additionally, the reported unit could not be converted to standard SI units, preventing the parameter from being processed with a valid value. Extracted — panitumumab: V1 3.66 L, CL 0.269 L.day-1, Q 0.389 L.day-1, V2 2.58 L, Vmax 10.6 mg.day-1, Km 0.401 mg/L.
+A reported unit could not be converted (Vmax and Km), so that value has no SI equivalent. Extracted — panitumumab: V1 3.66 L, CL 0.269 L.day-1, Q 0.389 L.day-1, V2 2.58 L, Vmax 10.6 mg.day-1, Km 0.401 mg/L.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Lobet S et al., Analysis of the relationship between bo…, Biomedicine & pharmacothera… (2026)
@@ -40,11 +41,11 @@ Lobet S et al., Analysis of the relationship between bo…, Biomedicine & pharma
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| V1 (L) | `Q63` · V1 | 3.66 | L | 0.00366 | [l] | 6.73 | exact (1.0) | Lobet_2026_table_p5_1:row0:col1, Lobet_2026_table_p5_1:row0:col2, Lobet_2026_table_p5_1:row0:col3 | — | 0.390 (None% RSE) |
-| CL (L.day-1) | `Q22` · CL | 0.269 | L.day-1 | 3.113425925925926e-09 | [l] / [d] | 8.67 | exact (1.0) | Lobet_2026_table_p5_1:row1:col1, Lobet_2026_table_p5_1:row1:col2, Lobet_2026_table_p5_1:row1:col3 | — | 0.38 (None% RSE) |
-| Q (L.day-1) | `Q30` · Q | 0.389 | L.day-1 | 4.502314814814815e-09 | [l] / [d] | 23.4 | exact (1.0) | Lobet_2026_table_p5_1:row2:col1, Lobet_2026_table_p5_1:row2:col2, Lobet_2026_table_p5_1:row2:col3 | — | not captured |
-| V2 (L) | `Q64` · V2 | 2.58 | L | 0.0025800000000000003 | [l] | 17.8 | exact (1.0) | Lobet_2026_table_p5_1:row3:col1, Lobet_2026_table_p5_1:row3:col2, Lobet_2026_table_p5_1:row3:col3 | — | 0.434 (None% RSE) |
-| Vmax (mg.day-1) | `Q66` · Vmax | 10.6 | mg.day-1 | not captured | [mg] / [d] | 14.7 | special_case (0.95) | Lobet_2026_table_p5_1:row4:col1, Lobet_2026_table_p5_1:row4:col2, Lobet_2026_table_p5_1:row4:col3 | — | 0.341 (None% RSE) |
+| V1 (L) | `Q63` · V1 | 3.66 | L | 0.00366 | [l] | not captured | exact (1.0) | Lobet_2026_table_p5_1:row0:col1, Lobet_2026_table_p5_1:row0:col3 | — | 0.390 (None% RSE) |
+| CL (L.day-1) | `Q22` · CL | 0.269 | L.day-1 | 3.113425925925926e-09 | [l] / [d] | not captured | exact (1.0) | Lobet_2026_table_p5_1:row1:col1, Lobet_2026_table_p5_1:row1:col3 | — | 0.38 (None% RSE) |
+| Q (L.day-1) | `Q30` · Q | 0.389 | L.day-1 | 4.502314814814815e-09 | [l] / [d] | not captured | exact (1.0) | Lobet_2026_table_p5_1:row2:col1, Lobet_2026_table_p5_1:row2:col3 | — | not captured |
+| V2 (L) | `Q64` · V2 | 2.58 | L | 0.0025800000000000003 | [l] | not captured | exact (1.0) | Lobet_2026_table_p5_1:row3:col1, Lobet_2026_table_p5_1:row3:col3 | — | 0.434 (None% RSE) |
+| Vmax (mg.day-1) | `Q66` · Vmax | 10.6 | mg.day-1 | not captured | [mg] / [d] | not captured | special_case (0.95) | Lobet_2026_table_p5_1:row4:col1, Lobet_2026_table_p5_1:row4:col3 | — | 0.341 (None% RSE) |
 | KM (mg/L) | `Q1` · Km | 0.401 | mg/L | not captured | [mg] / [l] | not captured | exact (1.0) | Lobet_2026_table_p5_1:row5:col1, Lobet_2026_table_p5_1:row5:col3 | — | 0.726 (None% RSE) |
 
 <details class="legend">
@@ -67,7 +68,8 @@ Lobet S et al., Analysis of the relationship between bo…, Biomedicine & pharma
 - molar mass: none found for 'panitumumab' — its concentrations stay mass-only
 
 **Extraction notes:**
-- final table tab_1: grid unusable → re-running vision table extraction for Lobet_2026
+- table Lobet_2026_table_p5_1: ambiguous_uncertainty_binding
+- table Lobet_2026_table_p5_1: unbound_uncertainty
 
 ## Validation
 
@@ -94,16 +96,16 @@ _All readers agree on the compared fields of this record._
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q1 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Lobet_2026_table_p5_1:row5:col1', 'Lobet_2026_table_p5_1:row5:col3'] |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Lobet_2026_table_p5_1:row1:col1', 'Lobet_2026_table_p5_1:row1:col2', 'Lobet_2026_table_p5_1:row1:col3'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Lobet_2026_table_p5_1:row2:col1', 'Lobet_2026_table_p5_1:row2:col2', 'Lobet_2026_table_p5_1:row2:col3'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Lobet_2026_table_p5_1:row0:col1', 'Lobet_2026_table_p5_1:row0:col2', 'Lobet_2026_table_p5_1:row0:col3'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Lobet_2026_table_p5_1:row3:col1', 'Lobet_2026_table_p5_1:row3:col2', 'Lobet_2026_table_p5_1:row3:col3'] |
-| C5_dimension_Q66 | fail | [mass] / [time] | mg.day-1 | not captured | not captured | ['Lobet_2026_table_p5_1:row4:col1', 'Lobet_2026_table_p5_1:row4:col2', 'Lobet_2026_table_p5_1:row4:col3'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.269 | not captured | not captured | ['Lobet_2026_table_p5_1:row1:col1', 'Lobet_2026_table_p5_1:row1:col2', 'Lobet_2026_table_p5_1:row1:col3'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Lobet_2026_table_p5_1:row1:col1', 'Lobet_2026_table_p5_1:row1:col3'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Lobet_2026_table_p5_1:row2:col1', 'Lobet_2026_table_p5_1:row2:col3'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Lobet_2026_table_p5_1:row0:col1', 'Lobet_2026_table_p5_1:row0:col3'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Lobet_2026_table_p5_1:row3:col1', 'Lobet_2026_table_p5_1:row3:col3'] |
+| C5_dimension_Q66 | fail | [mass] / [time] | mg.day-1 | not captured | not captured | ['Lobet_2026_table_p5_1:row4:col1', 'Lobet_2026_table_p5_1:row4:col3'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.269 | not captured | not captured | ['Lobet_2026_table_p5_1:row1:col1', 'Lobet_2026_table_p5_1:row1:col3'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.0112 L/h | not captured | not captured | ['Lobet_2026_table_p5_1:row1:col1', 'Lobet_2026_table_p5_1:row1:col2', 'Lobet_2026_table_p5_1:row1:col3'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 3.66 L | not captured | not captured | ['Lobet_2026_table_p5_1:row0:col1', 'Lobet_2026_table_p5_1:row0:col2', 'Lobet_2026_table_p5_1:row0:col3'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 2.58 L | not captured | not captured | ['Lobet_2026_table_p5_1:row3:col1', 'Lobet_2026_table_p5_1:row3:col2', 'Lobet_2026_table_p5_1:row3:col3'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.0112 L/h | not captured | not captured | ['Lobet_2026_table_p5_1:row1:col1', 'Lobet_2026_table_p5_1:row1:col3'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 3.66 L | not captured | not captured | ['Lobet_2026_table_p5_1:row0:col1', 'Lobet_2026_table_p5_1:row0:col3'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 2.58 L | not captured | not captured | ['Lobet_2026_table_p5_1:row3:col1', 'Lobet_2026_table_p5_1:row3:col3'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -112,7 +114,7 @@ _All readers agree on the compared fields of this record._
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_panitumumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Lobet_2026` / `Lobet_2026::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_panitumumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Lobet_2026` / `Lobet_2026::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -128,4 +130,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 18:04 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 00:50 UTC</sub>

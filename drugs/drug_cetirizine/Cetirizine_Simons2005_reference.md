@@ -68,8 +68,8 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `model.parameterization` | mechanistic | apparent | mismatch |
-| `gpt-oss-120b` | `parameters[levocetirizine oral clearance]` | not captured | 0.044 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[levocetirizine volume of distribution]` | not captured | 0.639 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[levocetirizine oral clearance would increase by]` | not captured | 0.044 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[levocetirizine volume of distribution would increase by]` | not captured | 0.639 | only_one_extracted |
 
 </details>
 
@@ -94,7 +94,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_cetirizine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Simons_2005` / `Simons_2005::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_cetirizine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Simons_2005` / `Simons_2005::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

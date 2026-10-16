@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;selexipag&quot;,&quot;href&quot;:&quot;drugs/drug_selexipag/&quot;},{&quot;label&quot;:&quot;Axelsen_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Selexipag_Ruehs2021_reference&quot;,&quot;label&quot;:&quot;Ruehs_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_selexipag/Selexipag_Ruehs2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Selexipag_Ruehs2021_reference&quot;,&quot;label&quot;:&quot;Ruehs_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_selexipag/Selexipag_Ruehs2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # selexipag — `Selexipag_Axelsen2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.571). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -19,9 +19,9 @@
 
 **The paper reports none of the model's key parameters.**
 
-The values on this record come from other papers. Extracted — selexipag: ? -0.374, ? -0.12, ? 2.89, ? 2.5, ? -2.95, ? -0.107, ? 1.77, ? 0.546, … (+6); JNJ-68006861: ? -2.29, ? -0.76, ? -1.7, ? 0.148, ? 0.164, ? 0.0633, ? 0.358.
+The values on this record come from other papers. Extracted — selexipag: ? -0.374, ? -0.12, ? 2.89, ? 2.5, ? -0.76, ? -0.107, ? 1.77, ? 0.546, … (+7); JNJ-68006861: ? -2.29, ? -2.95, ? -1.7, ? 0.148, ? 0.0633.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has selexipag → jnj-68006861 (metabolism), the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl/f: this record has 1.3, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -32,7 +32,7 @@ Axelsen LN et al., Population pharmacokinetics of selexipa…, CPT: pharmacometr
 <div class="pk-model-meta" hidden drug="selexipag" model-id="Selexipag_Axelsen2024_reference" status="rejected" stale="false" population="pediatric patients with pulmonary arterial hypertension" measured-compound="selexipag" parameterization="apparent_wrt_Fm" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
-**Parameters:** 3 extracted.
+**Parameters:** 2 extracted.
 
 **Parameterization:** CL/F, V/F — apparent_wrt_Fm, F unknown (apparent — bioavailability not identifiable).
 
@@ -41,9 +41,8 @@ Axelsen LN et al., Population pharmacokinetics of selexipa…, CPT: pharmacometr
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F | `Q27` · CL/F | 1.3 | L/h | 3.611111111111112e-07 | L/h | not captured | review_gapfill (0.7) | Ruehs_2021:review | — | not captured |
-| V/F | `Q76` · V/F | 38.9 | L | 0.0389 | L | not captured | review_gapfill (0.7) | Ruehs_2021:review | — | not captured |
-| ka | `Q49` · kabs | 1.5 | 1/h | 0.00041666666666666664 | 1/h | not captured | review_gapfill (0.7) | Ruehs_2021:review | — | not captured |
+| Population mean estimates (inter-individual variability [%]) for CL/F | `Q27` · CL/F | 1.3 | L/h | 3.611111111111112e-07 | L/h | not captured | review_gapfill (0.7) | Ruehs_2021:review | — | not captured |
+| Population mean estimates (inter-individual variability [%]) for V/F | `Q76` · V/F | 38.9 | L | 0.0389 | L | not captured | review_gapfill (0.7) | Ruehs_2021:review | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -79,30 +78,34 @@ Axelsen LN et al., Population pharmacokinetics of selexipa…, CPT: pharmacometr
 - apparent-ness: parameterization=apparent_wrt_Fm (metabolite model)
 - theta_crosscheck: table present but its labels did not align to bound THETAs (skipped)
 - template fit: none — only the metabolite is modelled — no parent compartment
-- row roles (LLM): model_class=compartmental; 23/23 row label(s) assigned, 8 linked by role; re-tagged selexipag→parent ×11, selexipag→JNJ-68006861 ×7
+- population split: 'pediatric population pk model' subgroup of Axelsen_2024 (paper reports 2 populations: adult population pk model, pediatric population pk model)
+- row roles (LLM): model_class=compartmental; 28/28 row label(s) assigned, 9 linked by role; re-tagged selexipag→parent ×20, selexipag→JNJ-68006861 ×14
 - molar mass: no plausible PubChem entry for 'JNJ-68006861' ('JNJ-68006861') — left in mass units
 - molar mass: none found for 'JNJ-68006861' — its concentrations stay mass-only
 - gap-filled Q27 (CL/F) from Ruehs_2021's review values (primary lacked it)
 - gap-filled Q76 (V/F) from Ruehs_2021's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Ruehs_2021's review values (primary lacked it)
+
+**Extraction notes:**
+- table psp413231-tbl-0001: conflicting_units
+- table psp413231-tbl-0001: ragged_grid
+- table psp413231-tbl-0001: unparsed_numeric_cell
+- table psp413231-tbl-0001: representations disagree; selected evidence retained, not merged
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.286 (2/7 fields) | 5 |
+| `gpt-oss-120b` | partly confirmed | 0.571 (4/7 fields) | 3 |
 
-<details><summary>5 field discrepancies</summary>
+<details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.links` | [['selexipag', 'jnj-68006861', 'metabolism']] | [] | mismatch |
-| `gpt-oss-120b` | `model.parameterization` | apparent_wrt_Fm | mechanistic | mismatch |
 | `gpt-oss-120b` | `parameters[cl/f]` | 1.3 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[ka]` | 1.5 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[v/f]` | 38.9 | not captured | only_one_extracted |
@@ -122,7 +125,6 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Ruehs_2021:review'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Ruehs_2021:review'] |
 | C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Ruehs_2021:review'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
@@ -136,7 +138,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_selexipag/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Axelsen_2024` / `Axelsen_2024::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_selexipag/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Axelsen_2024` / `Axelsen_2024::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -152,4 +154,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 18:20 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 21:41 UTC</sub>

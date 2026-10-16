@@ -5,7 +5,7 @@
 
 # aminohippuric acid — `AminohippuricAcid_Estelberger1995_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.154). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -21,7 +21,7 @@
 
 In this 1-compartment p-aminohippuric acid model for renal patients and healthy controls, five parameters were reported with the unit 'a', an undefined unit that cannot be expressed in SI. Only the volume of distribution (V = 6.31 L) carries a usable unit. The resulting dimension mismatch on a structural parameter led to rejection. Extracted — aminohippuric acid: MRT 64 a, kel 69 a, tlag 28 a, Fab 54 a, V 6.31 L.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has p-aminohippuric acid, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has p-aminohippuric acid, the second reading aminohippuric_acid; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -86,23 +86,20 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.154 (2/13 fields) | 11 |
+| `gpt-oss-120b` | not confirmed | 0.333 (4/12 fields) | 8 |
 
-<details><summary>11 field discrepancies</summary>
+<details><summary>8 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[fa**]` | 54 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[kk*]` | 69 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[la*]` | not captured | 3.6 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[mh*].parameter_id` | Q53 | Q57 | mismatch |
-| `gpt-oss-120b` | `parameters[mh*].value` | 64 | 4.0 | mismatch |
+| `gpt-oss-120b` | `parameters[la*]` | not captured | 65 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mh*]` | 64 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[pa*]` | 35 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[rj**]` | not captured | 24.5 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[volume]` | 6.31 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[wr*]` | not captured | 54 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[ze**]` | 28 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | p-aminohippuric acid | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | p-aminohippuric acid | unknown | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | p-aminohippuric acid | aminohippuric_acid | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | p-aminohippuric acid | aminohippuric_acid | mismatch |
 
 </details>
 
@@ -133,7 +130,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_aminohippuric_acid/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Estelberger_1995` / `Estelberger_1995::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_aminohippuric_acid/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Estelberger_1995` / `Estelberger_1995::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

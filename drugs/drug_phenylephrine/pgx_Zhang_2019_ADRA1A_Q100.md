@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01C&quot;,&quot;href&quot;:&quot;atc/C01C.md&quot;},{&quot;label&quot;:&quot;phenylephrine&quot;,&quot;href&quot;:&quot;drugs/drug_phenylephrine/&quot;},{&quot;label&quot;:&quot;Zhang_2019 \u00b7 PGx ADRA1A&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# ADRA1A — PGx  <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.25). Primary extraction retained.">cross-check: partial</span>
+# ADRA1A — PGx  <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (?, agreement 0.25), gpt-oss:120b (?, agreement 0.25). Primary extraction retained.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -30,17 +30,21 @@ Zhang Y et al., Dissecting genetic factors affecting ph…, BMC medicine (2019)
   ·  DOI: [10.1186/s12916-019-1405-7](https://doi.org/10.1186/s12916-019-1405-7)
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | secondary_empty | 0.25 (1/4 fields) | 3 |
 | `gpt-oss:120b` | secondary_empty | 0.25 (1/4 fields) | 3 |
 
-<details><summary>3 field discrepancies</summary>
+<details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `applies_to` | pd | not captured | mismatch |
+| `gpt-oss-120b` | `mechanism` | target | not captured | mismatch |
+| `gpt-oss-120b` | `target_parameter_id` | Q100 | not captured | mismatch |
 | `gpt-oss:120b` | `applies_to` | pd | not captured | mismatch |
 | `gpt-oss:120b` | `mechanism` | target | not captured | mismatch |
 | `gpt-oss:120b` | `target_parameter_id` | Q100 | not captured | mismatch |

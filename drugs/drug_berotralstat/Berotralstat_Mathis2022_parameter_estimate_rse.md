@@ -1,11 +1,10 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B06A&quot;,&quot;href&quot;:&quot;atc/B06A.md&quot;},{&quot;label&quot;:&quot;berotralstat&quot;,&quot;href&quot;:&quot;drugs/drug_berotralstat/&quot;},{&quot;label&quot;:&quot;Mathis_2022 \u00b7 parameter_estimate_rse&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Berotralstat_Mathis2022_parameter_estimate_rse&quot;,&quot;label&quot;:&quot;Mathis_2022_parameter_estimate_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_berotralstat/Berotralstat_Mathis2022_parameter_estimate_rse.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # berotralstat — `Berotralstat_Mathis2022_parameter_estimate_rse`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.944). Primary extraction retained.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.944). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -13,41 +12,41 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** Model and browser simulation available in **Models** and **Simulation**.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
-**The berotralstat record was held back because the intercompartmental micro-rate kcomp (0.0812 1/h) was neither extracted nor given a value, and the absorption rate constant ka was invented as a placeholder rather than taken from the source.**
+**Km has no unit.**
 
-Of the five expected parameters, only four were covered; kcomp, the micro-rate governing distribution between the central and peripheral compartments in this two-compartment structure, had no value from the source and no substitute. The model builder also filled in ka, which the paper did not report, an invented absorption deviation judged not acceptable. Additionally, a second reader recorded no value for the weight-allometric exponent on clearance, disagreeing with the record's 0.480. Extracted — berotralstat: CL 47.3 L/h, V 1.65e+03 L, kabs 1.12, kcomp 0.0812, tlag 0.468 h, Fab 0.497, allometric_exponent 0.48.
+Without a unit the value cannot be converted, so the model cannot use it. Extracted — berotralstat: CL 47.3 L/h, V 1.65e+03 L, kabs 1.12 1/h, kcomp 0.0812 1/h, tlag 0.468 h, Fab 0.497, Km 0.48.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of clearance as a function of weight: this record has 0.480, the second reading none. That field does not shape the model.
 
-<sub>reviewed by glm-5.3-flash</sub>
-
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:36:15.554662+00:00) predates the upstream re-run (2026-10-06 00:52:22.887291+00:00). Current validate status: `extracted`.
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Mathis A et al., Population pharmacokinetic modeling and…, Clinical and translational… (2022)
   ·  DOI: [10.1111/cts.13233](https://doi.org/10.1111/cts.13233)
 
-<div class="pk-model-meta" hidden drug="berotralstat" model-id="Berotralstat_Mathis2022_parameter_estimate_rse" status="extracted" stale="true" population="healthy subjects and patients with hereditary angioedema" measured-compound="berotralstat" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="berotralstat" model-id="Berotralstat_Mathis2022_parameter_estimate_rse" status="needs_review" stale="false" population="healthy subjects and patients with hereditary angioedema" measured-compound="berotralstat" parameterization="mechanistic" topology="1C"></div>
 
-**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Clearance (L/h) | `Q22` · CL | 47.3 | L/h | 1.3138888888888888e-05 | [l] / [h] | 2.4 | exact (1.0) | cts13233-tbl-0001:row1:col1 | — | not captured |
 | Volume (L) | `Q61` · V | 1650 | L | 1.6500000000000001 | [l] | 2.49 | exact (1.0) | cts13233-tbl-0001:row2:col1 | — | not captured |
-| Ka (1/h) | `Q49` · kabs | 1.12 | 1/h | 0.0003111111111111111 | 1/h | 0.0891 | exact (1.0) | cts13233-tbl-0001:row5:col1 | — | not captured |
-| K23 (1/h) | `Q48` · kcomp | 0.0812 | 1/h | 2.2555555555555552e-05 | 1/h | 2.32 | exact (1.0) | cts13233-tbl-0001:row6:col1 | — | not captured |
+| Ka (1/h) | `Q49` · kabs | 1.12 | 1/h | 0.0003111111111111111 | [1] / [h] | 0.0891 | exact (1.0) | cts13233-tbl-0001:row5:col1 | — | not captured |
+| K23 (1/h) | `Q48` · kcomp | 0.0812 | 1/h | 2.2555555555555552e-05 | [1] / [h] | 2.32 | exact (1.0) | cts13233-tbl-0001:row6:col1 | — | not captured |
 | Absorption lag time (h) | `Q83` · tlag | 0.468 | h | 1684.8000000000002 | [h] | 2.15 | exact (1.0) | cts13233-tbl-0001:row8:col1 | — | not captured |
 | Bioavailability as a function of dose | `Q40` · Fab | 0.497 | not captured | not captured | not captured | 5.51 | llm_confirmed (0.6) | cts13233-tbl-0001:row11:col1 | — | not captured |
-| Clearance as a function of weight | `Q319` · allometric_exponent | 0.480 | not captured | not captured | not captured | 14.3 | llm_corrected (0.6) | cts13233-tbl-0001:row13:col1 | — | not captured |
+| Clearance as a function of weight | `Q1` · Km | 0.480 | not captured | not captured | not captured | 14.3 | llm_corrected (0.6) | cts13233-tbl-0001:row13:col1 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -60,9 +59,8 @@ Mathis A et al., Population pharmacokinetic modeling and…, Clinical and transl
 - dropped duplicate Q48 ('K32 (1/h)', value '0.0309') — already have one for this compound
 - dropped duplicate Q48 ('K24 (1/h)', value '0.00281') — already have one for this compound
 - dropped duplicate Q48 ('K42 (1/h)', value '0.00136') — already have one for this compound
-- dropped duplicate Q61 ('Volume as a function of weight', value '1.00') — already have one for this compound
-- implicit units: 'Ka (1/h)' → 1/h (from the popPK convention: 'The paper does not explicitly state the unit for Ka in the text or table footnotes. However, Ka is an absorption rate co')
-- implicit units: 'K23 (1/h)' → 1/h (from the popPK convention: 'The paper does not explicitly state the unit for K23 in the text or table footnotes. K23 is a micro-rate constant (first')
+- dropped unlinked row (NIL): 'Volume as a function of weight' — extend the ontology if this is a real PK parameter (source ['cts13233-tbl-0001:row12:col1'])
+- implicit units: 'Clearance as a function of weight' — the LLM proposed 'L/h', whose dimension does not fit Q1; left unset
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=berotralstat
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - population split: 'parameter estimate (rse%)' subgroup of Mathis_2022 (paper reports 6 populations: adolescents (12–18 years), low weight adults (60–80 kg), normal weight adults (80–100 kg), overweight adults (100–120 kg), parameter estimate (rse%), underweight adults (40–60 kg))
@@ -70,7 +68,7 @@ Mathis A et al., Population pharmacokinetic modeling and…, Clinical and transl
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- transposed table Mathis_2022_table_2: parameters were across the columns, populations/subgroups down the first column — transposed for parsing
+- transposed table Mathis_2022_table_2: logical view retains original source coordinates
 - companion parameter table 2 transcribed (25 record(s))
 - LLM selected parameter table(s) 1, 2
 
@@ -109,21 +107,11 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['cts13233-tbl-0001:row5:col1'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['cts13233-tbl-0001:row2:col1'] |
 | C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['cts13233-tbl-0001:row8:col1'] |
+| C5_unit_missing_Q1 | fail | [mass] / [length] ** 3 | not captured | not captured | not captured | ['cts13233-tbl-0001:row13:col1'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 47.3 | not captured | not captured | ['cts13233-tbl-0001:row1:col1'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 47.3 L/h | not captured | not captured | ['cts13233-tbl-0001:row1:col1'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 1.65e+03 L | not captured | not captured | ['cts13233-tbl-0001:row2:col1'] |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_output_variable | not captured | pass | C_central (measured=berotralstat) | central.C | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | fail | 5 scholar param(s) emitted or defaulted | 4 covered | not captured | neither emitted nor in defaulted[]: ['kcomp'] |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -132,10 +120,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_berotralstat/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Mathis_2022` / `Mathis_2022::parameter_estimate_rse`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_berotralstat/models/modelica/Berotralstat_Mathis2022_parameter_estimate_rse.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_berotralstat/models/modelica/Berotralstat_Mathis2022_parameter_estimate_rse.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_berotralstat/models/modelica/Berotralstat_Mathis2022_parameter_estimate_rse.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_berotralstat/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Mathis_2022` / `Mathis_2022::parameter_estimate_rse`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -145,25 +130,20 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_berotralstat/Berotralstat_Mathis2022_parameter_estimate_rse/Berotralstat_Mathis2022_parameter_estimate_rse_modelica.zip" download>Berotralstat_Mathis2022_parameter_estimate_rse_modelica.zip</a> <span class="pk-size">(4.5 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_berotralstat/Berotralstat_Mathis2022_parameter_estimate_rse/Berotralstat_Mathis2022_parameter_estimate_rse_fmi.zip" download>Berotralstat_Mathis2022_parameter_estimate_rse_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><a href="drugs/drug_berotralstat/Berotralstat_Mathis2022_parameter_estimate_rse/Berotralstat_Mathis2022_parameter_estimate_rse_fmi.zip" download>Berotralstat_Mathis2022_parameter_estimate_rse_fmi.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_berotralstat/Berotralstat_Mathis2022_parameter_estimate_rse/Berotralstat_Mathis2022_parameter_estimate_rse_matlab.zip" download>Berotralstat_Mathis2022_parameter_estimate_rse_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_berotralstat/Berotralstat_Mathis2022_parameter_estimate_rse/Berotralstat_Mathis2022_parameter_estimate_rse_matlab_simbio.zip" download>Berotralstat_Mathis2022_parameter_estimate_rse_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_berotralstat/Berotralstat_Mathis2022_parameter_estimate_rse/Berotralstat_Mathis2022_parameter_estimate_rse_sbml.zip" download>Berotralstat_Mathis2022_parameter_estimate_rse_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_berotralstat/Berotralstat_Mathis2022_parameter_estimate_rse/Berotralstat_Mathis2022_parameter_estimate_rse_cellml.zip" download>Berotralstat_Mathis2022_parameter_estimate_rse_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_berotralstat/Berotralstat_Mathis2022_parameter_estimate_rse/Berotralstat_Mathis2022_parameter_estimate_rse.svg" alt="Berotralstat_Mathis2022_parameter_estimate_rse diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 10 mg, single dose, first-order absorption (ka 1.12 /h, lag 28.1 min, F 0.497). Doses in the paper: 10, 110, 450, 900 mg.
-
-<dbs-fmusim paramsurl="drugs/drug_berotralstat/Berotralstat_Mathis2022_parameter_estimate_rse/Berotralstat_Mathis2022_parameter_estimate_rse_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_berotralstat/Berotralstat_Mathis2022_parameter_estimate_rse/Berotralstat_Mathis2022_parameter_estimate_rse_sim_controls.json"></dbs-fmusim>
-
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C_enteral` · parameters `Berotralstat_Mathis2022_parameter_estimate_rse_params.json` · controls `Berotralstat_Mathis2022_parameter_estimate_rse_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 00:52 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 21:33 UTC</sub>

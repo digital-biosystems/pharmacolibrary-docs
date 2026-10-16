@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;panitumumab&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Panitumumab_Liao2021_reference&quot;,&quot;label&quot;:&quot;Liao_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_panitumumab/Panitumumab_Liao2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # panitumumab
 
@@ -17,19 +18,25 @@ Panitumumab is a monoclonal antibody that blocks EGFR and is used to treat color
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 18:12 | 10:19 | 0/3/4 | 0/0/0 | 0/0/0 | 205,967/18,294 | ollama / qwen3.8:27b-mtp-q8_0 | 7 | 1/6 | 7/0 | 0 |
+| 2026-10-15 00:51 | 1:40 | 0/3/1 | 0/0/0 | 0/0/0 | 121,943/11,621 | einfracz / qwen3.8-27b | 7 | 1/6 | 7/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22 — no SI value to build from</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Liao_2021_mild_1_impairment](drugs/drug_panitumumab/Panitumumab_Liao2021_mild_1_impairment.md) | — | 2-compartment (no model) | 6 | Liao MZ et al., The impact of hepatic and renal functio…, Cancer chemotherapy and pha… (2021) | [10.1007/s00280-021-04319-w](https://doi.org/10.1007/s00280-021-04319-w) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22 — no SI value to build from</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Liao_2021_mild_2_impairment](drugs/drug_panitumumab/Panitumumab_Liao2021_mild_2_impairment.md) | — | 2-compartment (no model) | 6 | Liao MZ et al., The impact of hepatic and renal functio…, Cancer chemotherapy and pha… (2021) | [10.1007/s00280-021-04319-w](https://doi.org/10.1007/s00280-021-04319-w) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22 — no SI value to build from</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Liao_2021_moderate_impairment](drugs/drug_panitumumab/Panitumumab_Liao2021_moderate_impairment.md) | — | 2-compartment (no model) | 6 | Liao MZ et al., The impact of hepatic and renal functio…, Cancer chemotherapy and pha… (2021) | [10.1007/s00280-021-04319-w](https://doi.org/10.1007/s00280-021-04319-w) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22 — no SI value to build from</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Liao_2021_normal](drugs/drug_panitumumab/Panitumumab_Liao2021_normal.md) | — | 2-compartment (no model) | 6 | Liao MZ et al., The impact of hepatic and renal functio…, Cancer chemotherapy and pha… (2021) | [10.1007/s00280-021-04319-w](https://doi.org/10.1007/s00280-021-04319-w) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T1_cmax</sub><br><sub>route_to: `scholar`</sub> | [Liao_2021_reference](drugs/drug_panitumumab/Panitumumab_Liao2021_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Liao MZ et al., The impact of hepatic and renal functio…, Cancer chemotherapy and pha… (2021) | [10.1007/s00280-021-04319-w](https://doi.org/10.1007/s00280-021-04319-w) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Liao_2020_reference](drugs/drug_panitumumab/Panitumumab_Liao2020_reference.md) | — | 1-compartment (no model) | 0 | Liao MZ et al., Dose Regimen Rationale for Panitumumab…, Clinical pharmacology : adv… (2020) | [10.2147/CPAA.S262949](https://doi.org/10.2147/CPAA.S262949) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Lobet_2026_reference](drugs/drug_panitumumab/Panitumumab_Lobet2026_reference.md) | — | 2-compartment (no model) | 6 | Lobet S et al., Analysis of the relationship between bo…, Biomedicine & pharmacothera… (2026) | [10.1016/j.biopha.2026.119242](https://doi.org/10.1016/j.biopha.2026.119242) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.308). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Ma_2009_reference](drugs/drug_panitumumab/Panitumumab_Ma2009_reference.md) | — | 2-compartment (no model) | 4 | Ma P et al., Population pharmacokinetic analysis of…, Journal of clinical pharmac… (2009) | [10.1177/0091270009344989](https://doi.org/10.1177/0091270009344989) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=panitumumab).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: EGFR (suppressor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -41,7 +48,7 @@ Panitumumab is a monoclonal antibody that blocks EGFR and is used to treat color
 
 - **PubMed hits:** 12 matched, 12 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 7  ·  extracted 0  ·  needs_review 4  ·  rejected 3  ·  stale 0
+- **records:** 4  ·  extracted 0  ·  needs_review 1  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -50,22 +57,22 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Ma_2009.pdf` | Ma P et al., Population pharmacokinetic analysis of…, Journal of clinical pharmac… (2009) | popPK | 10 | [10.1177/0091270009344989](https://doi.org/10.1177/0091270009344989) | [19723673](https://pubmed.ncbi.nlm.nih.gov/19723673) | The paper reports a population PK model for panitumumab with explicit numeric values for clearance, volume, and Michaelis-Menten parameters in the text. |
+| `Ma_2009.pdf` | Ma P et al., Population pharmacokinetic analysis of…, Journal of clinical pharmac… (2009) | popPK | 10 | [10.1177/0091270009344989](https://doi.org/10.1177/0091270009344989) | [19723673](https://pubmed.ncbi.nlm.nih.gov/19723673) | The paper reports specific quantitative population PK parameters (CL, V1, V2, Km, Vmax/Km) for panitumumab in the provided text. |
 
-<sub>queue written 2026-10-07T18:04:01.056114+00:00</sub>
+<sub>queue written 2026-10-15T00:49:59.814267+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Baaz_2023 | irrelevant | 0 | 0 | The paper is a pharmacodynamic (PD) and survival analysis study modeling tumor growth and progression-free survival, explicitly stating that no individual pharmacokinetic (PK) data were available and no PK parameters (CL, V, etc.) were estimated for panitumumab. |
-| popPK | Koukakis_2016 | irrelevant | 0 | 0 | The paper is a quality of life and safety analysis of panitumumab clinical trials and does not report any pharmacokinetic parameters. |
-| popPK | Lee_2026 | irrelevant | 0 | 0 | The study focuses on the engineering and efficacy of NK cell engagers using panitumumab as a component, not on the pharmacokinetic parameters of panitumumab itself. |
-| popPK | Liu_2025 | irrelevant | 0 | 0 | The paper describes a statistical method for analyzing biomarker effects on treatment outcomes (tumor size) and does not report any pharmacokinetic parameters for panitumumab. |
-| popPK | Modest_2025 | irrelevant | 0 | 0 | The paper reports patient-reported outcomes (quality of life) in a clinical trial where panitumumab is a co-administered drug, with no pharmacokinetic parameters reported. |
-| popPK | Patel_2010 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic evaluation of antibody-dependent cellular cytotoxicity (ADCC) and binding affinity, not a pharmacokinetic study reporting disposition parameters for panitumumab. |
-| popPK | Weeraratne_2011 | irrelevant | 2 | 0 | The paper focuses on immunogenicity and uses a previously published population PK model for comparison, but does not report original quantitative PK parameter values (CL, V, etc.) for panitumumab in the text. |
-| popPK | Yang_2010 | irrelevant | 2 | 0 | The paper is a review summarizing PK concepts and qualitative findings (e.g., nonlinearity, covariates) but does not provide specific quantitative parameter values (CL, V, Q, ka) in the text. |
+| popPK | Baaz_2023 | irrelevant | 0 | 0 | The study focuses on pharmacodynamic modeling of tumor growth and progression-free survival, explicitly stating that no individual PK data were available and driving the model with total dose rather than estimating PK parameters. |
+| popPK | Koukakis_2016 | irrelevant | 0 | 0 | The study analyzes the impact of skin toxicity on quality of life (QoL) and does not report any pharmacokinetic parameters (such as clearance or volume of distribution) for panitumumab. |
+| popPK | Lee_2026 | irrelevant | 0 | 0 | The paper describes the engineering and efficacy of NK cell engagers using panitumumab as a component, but does not report pharmacokinetic parameters for panitumumab itself. |
+| popPK | Liu_2025 | irrelevant | 0 | 0 | The paper is a methodological statistics study focusing on biomarker effects and does not report any pharmacokinetic parameters for panitumumab. |
+| popPK | Modest_2025 | irrelevant | 0 | 0 | The paper reports patient-reported outcomes (quality of life) for a cancer trial where panitumumab is a co-administered agent, with no pharmacokinetic data reported. |
+| popPK | Patel_2010 | irrelevant | 0 | 0 | The study focuses on in vitro antibody-dependent cellular cytotoxicity (ADCC) and binding affinity, not pharmacokinetic disposition parameters. |
+| popPK | Weeraratne_2011 | irrelevant | 2 | 0 | The study focuses on immunogenicity and uses a PopPK model only to compare antibody-positive vs negative patients, but it does not report the specific numeric PK parameter values (CL, V, etc.). |
+| popPK | Yang_2010 | irrelevant | 3 | 0 | This is a qualitative review of panitumumab PK without reporting specific quantitative disposition parameters (CL, V, t1/2 values) or model estimates in the provided text. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 18:04 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-15 00:50 UTC</sub>

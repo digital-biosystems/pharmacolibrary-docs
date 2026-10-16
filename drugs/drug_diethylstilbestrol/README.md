@@ -40,6 +40,31 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.99).">bird</span> | [Ishihara_2003_125I_T3_binding_to_qTR_LBD](drugs/drug_diethylstilbestrol/pd_Ishihara_2003_125I_T3_binding_to_qTR_LBD.md) | [125I]triiodothyronine binding to the ligand-binding domain of thyroid hormone receptor beta ← diethylstilbestrol · model not identified | — | Ishihara A et al., The effect of endocrine disrupting chem…, General and comparative end… (2003) | [10.1016/s0016-6480(03)00197-7](https://doi.org/10.1016/s0016-6480(03)00197-7) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Journé_2004_cell_proliferation](drugs/drug_diethylstilbestrol/pd_Journ_2004_cell_proliferation.md) | cell growth biomarker turnover ← diethylstilbestrol | — | Journé F et al., Estrogen responsiveness of IBEP-2, a ne…, Breast cancer research and… (2004) | [10.1023/B:BREA.0000032922.87541.31](https://doi.org/10.1023/B:BREA.0000032922.87541.31) |
 
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=diethylstilbestrol).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` substrate, `ABCG2` inhibitor | DrugBank actor |
+| absorption | kidney | `ABCB1` substrate | DrugBank actor |
+| absorption | liver | `ABCB1` substrate, `ABCG2` inhibitor, `SLCO2B1` substrate | DrugBank actor |
+| absorption | mammary gland | `ABCG2` inhibitor | DrugBank actor |
+| absorption | placenta | `ABCB1` substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` substrate, `ABCG2` inhibitor, `SLCO2B1` substrate | DrugBank actor |
+| absorption | testis | `ABCB1` substrate, `ABCG2` inhibitor | DrugBank actor |
+| metabolism | brain | `COMT` substrate | DrugBank actor |
+| metabolism | kidney | `COMT` substrate | DrugBank actor |
+| metabolism | liver | `COMT` substrate, `CYP2C8` inhibitor/substrate, `CYP2C9` inhibitor, `CYP2E1` inhibitor, `CYP3A4` inhibitor/substrate, `SLCO1B1` inhibitor | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inhibitor/substrate | DrugBank actor |
+| excretion | liver | `ABCB11` substrate | DrugBank actor |
+| — | adipose tissue | `CYP19A1` inhibitor | DrugBank actor |
+| — | ovary | `CYP19A1` inhibitor | DrugBank actor |
+| — | prostate gland | `AR` target | DrugBank actor |
+| — | testis | `CYP19A1` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ESR1 (target), ESR2 (target), ESRRA (unknown), ESRRB (unknown), ESRRG (target), NCOA2 (unknown), NR1I2 (unknown), SHBG (unknown), TTR (unknown).</sub>
+
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
 <table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>

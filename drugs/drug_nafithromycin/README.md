@@ -18,11 +18,17 @@ Nafithromycin is a macrolide antibiotic being developed as an investigational tr
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| not captured | not captured | 0/0/0 | 0/0/0 | 0/0/0 | not captured | not captured | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-13 11:24 | 1:59 | 0/0/0 | 0/1/0 | 0/0/0 | 67,573/1,515 | einfracz / qwen3.8-27b | 3 | 1/2 | 3/0 | 0 |
 
 ## popPK records
 
 _not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Ahirrao_2022_strength_of_AST_discs](drugs/drug_nafithromycin/pd_Ahirrao_2022_strength_of_AST_discs.md) | strength of AST discs ← Nafithromycin · model not identified | — | Ahirrao VK et al., Ensuring robustness in the quality of a…, Biomedical chromatography :… (2022) | [10.1002/bmc.5354](https://doi.org/10.1002/bmc.5354) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -32,20 +38,37 @@ _not available_
 
 ## Coverage
 
-- **PubMed hits:** 6 matched, 6 returned
-- **screened:** 0  ·  **relevant:** 0
+- **PubMed hits:** 14 matched, 14 returned
+- **screened:** 1  ·  **relevant:** 1
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
-- **scholar-agent fallback query used:** not captured
+- **scholar-agent fallback query used:** True
 
 ## Full-text requests
 
-_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
+| `Rodvold_2017.pdf` | Rodvold KA et al., Comparison of Plasma and Intrapulmonary…, Antimicrobial agents and ch… (2017) | popPK | 10 | [10.1128/AAC.01096-17](https://doi.org/10.1128/AAC.01096-17) | [28696231](https://pubmed.ncbi.nlm.nih.gov/28696231) | The evidence provides explicit noncompartmental PK parameter values (Cmax, Tmax, Clearance, half-life, AUC) for nafithromycin in humans. |
+| `Chavan_2021.pdf` | Chavan R et al., Assessment of the in vitro cytochrome P…, Xenobiotica; the fate of fo… (2021) | pd | 4 | [10.1080/00498254.2020.1839983](https://doi.org/10.1080/00498254.2020.1839983) | [33078993](https://www.ncbi.nlm.nih.gov/pubmed/33078993) | metadata signals extractable PD data (IC50) |
 | `Nandanwar_2021.pdf` | Nandanwar M et al., Preclinical safety evaluation of nafith…, Regulatory toxicology and p… (2021) | pgx | 7 | [10.1016/j.yrtph.2021.104889](https://doi.org/10.1016/j.yrtph.2021.104889) | [33587936](https://www.ncbi.nlm.nih.gov/pubmed/33587936) | metadata signals extractable PGX data (CYP3A, PK/PD-context) |
 
-<sub>queue written 2026-10-07T12:21:08.578030+00:00</sub>
+<sub>queue written 2026-10-13T11:24:22.761686+00:00</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Ahirrao_2022 | irrelevant | 0 | 0 | The study is an in-vitro quality control analysis of antibiotic susceptibility test discs using HPLC, not a pharmacokinetic study, and contains no disposition parameters. |
+| popPK | Biju_2026 | irrelevant | 0 | 0 | The paper is a general review on bacterial endophytic secondary metabolites and mentions nafithromycin only as a recently launched natural product drug in passing, without providing any pharmacokinetic parameters or data for it. |
+| popPK | Chavan_2021 | irrelevant | 0 | 0 | The study is an in-vitro assessment of CYP inhibition and does not report pharmacokinetic parameters (CL, V, T1/2) for nafithromycin. |
+| PGx | Chavan_2021 | not_relevant | 0 | 0 | The paper assesses in vitro CYP inhibition by nafithromycin compared to other drugs, without reporting any pharmacogenomic (gene variant/genotype) effects on its pharmacokinetic or pharmacodynamic parameters. |
+| popPK | Gore_2026 | irrelevant | 2 | 0 | The paper is a narrative review that summarizes clinical trials and in vitro studies but does not report original quantitative pharmacokinetic parameter values (CL, V, etc.) for nafithromycin. |
+| popPK | Iwanowski_2019 | irrelevant | 4 | 1 | The paper reports only summary exposure metrics (Cmax, AUC) and lacks explicit quantitative compartmental parameters (CL, V, ka) required for population PK extraction. |
+| popPK | Nandanwar_2021 | irrelevant | 1 | 0 | This is a preclinical safety and toxicology study that mentions mass balance but does not report quantitative pharmacokinetic parameters (CL, V, t1/2) for nafithromycin in the provided text. |
+| PGx | Nandanwar_2021 | not_relevant | 0 | 0 | The paper describes preclinical safety and metabolic properties in animals and does not report any pharmacogenomic effects of gene variants on PK or PD parameters. |
+| PGx | Paliwal_2025 | not_relevant | 0 | 0 | The paper is a review of nafithromycin's general pharmacology and clinical efficacy, with no mention of specific gene variants affecting its PK or PD. |
+| popPK | Zhou_2022 | irrelevant | 0 | 0 | The study is an in vitro antimicrobial susceptibility (MIC) analysis and does not report any pharmacokinetic disposition parameters (CL, V, t1/2) for nafithromycin. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

@@ -4,7 +4,7 @@
 
 # phenylephrine — `Phenylephrine_Anderson2017_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.158), gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-check: disputed 1/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -20,7 +20,7 @@
 
 The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — phenylephrine: CL 160 L h-1, V1 13.3 L, Q 25.3 L h-1, V2 225 L, t1/2ka 6.2 minutes, tlag 1.5 minutes, Fab 0.183 Allometry, scaled to a 70-kg person, was used for PK size standardization..
 
-Independently confirmed by `gpt-oss:120b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has phenylephrine, the second reading unknown; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -71,14 +71,36 @@ Anderson BJ et al., The phenylephrine concentration-respons…, Paediatric anaes
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  1 of 2 readers agree  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.158 (3/19 fields) | 16 |
 | `gpt-oss:120b` | confirmed | 1.0 (12/12 fields) | none |
 
-_All readers agree on the compared fields of this record._
+<details><summary>16 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[absorption half-time]` | 6.2 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[absorption half-time]` | not captured | 6.2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[absorption lag time]` | 1.5 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[absorption lag time]` | not captured | 1.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[bioavailability]` | 0.183 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[bioavailability]` | not captured | 0.183 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[central volume of distribution]` | 13.3 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[central volume of distribution]` | not captured | 13.3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` | 160 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` | not captured | 160 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[intercompartment clearance]` | 25.3 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[intercompartment clearance]` | not captured | 25.3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[peripheral volume of distribution]` | 225 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[peripheral volume of distribution]` | not captured | 225 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | phenylephrine | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | phenylephrine | unknown | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -112,7 +134,7 @@ _All readers agree on the compared fields of this record._
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_phenylephrine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Anderson_2017` / `Anderson_2017::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_phenylephrine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Anderson_2017` / `Anderson_2017::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

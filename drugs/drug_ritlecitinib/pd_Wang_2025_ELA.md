@@ -13,11 +13,11 @@
 
 ## Record summary
 
-**As extracted:** Ritlecitinib (concentrations from the PK model of Purohit_2023::study_1_30_mg_qd) drives eyelash assessment: indirect response — drug stimulates the production of eyelash assessment.
+**As extracted:** Ritlecitinib (concentrations from the PK model of Purohit_2023) drives eyelash assessment: indirect response — drug stimulates the production of eyelash assessment.
 
 **Model:** No model was generated from this record.
 
-> Ritlecitinib plasma concentrations (ng/mL) stimulate the ordinal eyelash assessment (ELA) score via an Indirect Response III model characterized by a maximum effect (Emax) of 7.75, a half-maximum effective concentration (EC50) of 10.2 ng/mL, and a half-life of drug onset (kin,drug) of 27.3 weeks. The model incorporates baseline parameters B1 (7.31), B2 (1.12), and B3 (1.18) to describe the categorical transition between ELA score levels.
+> Ritlecitinib plasma concentrations (ng/mL) stimulate the categorical Eyelash Assessment (ELA) score through an Emax-EC50 model, with an estimated EC50 of 26.9 ng/mL and a maximum effect parameter of 7.75. The model also reports a baseline score of 7.31 and a kinetic parameter (kin,drug) of 27.3 weeks, although the paper text primarily attributes the longitudinal response differences to the drug's long PD half-life rather than an explicit indirect response turnover mechanism.
 >
 > <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
@@ -34,14 +34,12 @@ Wang Y et al., Population exposure-response analysis o…, CPT: pharmacometrics 
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | Maximum Drug effect (E max) | `Q320` · not captured | 7.75 | not captured | not captured | llm (not captured) | Wang_2025:pdv3 |
-| PD (effect) | Drug concentration producing half of the maximum stimulation (EC 50) | `Q321` · not captured | 10.2 | ng/mL | not captured | llm (not captured) | Wang_2025:pdv3 |
-| PD (effect) | Half‐Life of Drug Onset (weeks, k in,drug) | `Q327` · not captured | 27.3 | weeks | not captured | llm (not captured) | Wang_2025:pdv3 |
-| PD (effect) | Baseline (B 1) | `Q324` · not captured | 7.31 | not captured | not captured | llm (not captured) | Wang_2025:pdv3 |
-| model term | Difference in baselines for score 3 and score 2 (B2) | `Q900` · not captured | 1.12 | not captured | not captured | llm (not captured) | Wang_2025:pdv3 |
-| model term | Difference in baselines for score 2 and score 1 (B3) | `Q900` · not captured | 1.18 | not captured | not captured | llm (not captured) | Wang_2025:pdv3 |
-| model term | Effect of Asian on E max | `Q900` · not captured | 0.647 | not captured | not captured | llm (not captured) | Wang_2025:pdv3 |
-| model term | Effect of Female on B 1 | `Q900` · not captured | -1.19 | not captured | not captured | llm (not captured) | Wang_2025:pdv3 |
+| PD (effect) | Maximum Drug effect | `Q320` · not captured | 7.75 | not captured | not captured | llm (not captured) | Wang_2025:pdv3 |
+| PD (effect) | Drug concentration producing half of the maximum stimulation | `Q321` · not captured | 26.90 | ng/mL | not captured | llm (not captured) | Wang_2025:pdv3 |
+| PD (effect) | Baseline | `Q324` · not captured | 7.31 | not captured | not captured | exact (not captured) | Wang_2025:pdv3 |
+| — | Difference in baselines for score 3 and score 2 | `Q100` · not captured | 1.12 | not captured | not captured | nil (not captured) | Wang_2025:pdv3 |
+| — | Difference in baselines for score 2 and score 1 | `Q100` · not captured | 1.18 | not captured | not captured | nil (not captured) | Wang_2025:pdv3 |
+| PD (effect) | kin,drug | `Q327` · not captured | 27.3 | weeks | not captured | llm (not captured) | Wang_2025:pdv3 |
 | variability | ωEmax2 | `Q312` · not captured | 0.408 | not captured | not captured | llm (not captured) | Wang_2025:pdv3 |
 
 <details class="legend">

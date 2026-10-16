@@ -18,9 +18,9 @@
 
 **Model:** No model was generated from this record.
 
-> Umeclidinium concentration (via cited PK from Goyal) acts on relaxation of isolated bronchi (cholinergic contractile tone at 10 Hz EFS, %), described by a sigmoid Emax inhibition model with Emax = 102.6 ± 6.8 % and pEC50 = 8.6 ± 0.4; the paper excerpts do not state the mechanism beyond this direct inhibitory Emax relationship.
+> The paper does not provide a full text to describe the specific mechanism of action (e.g., production vs. elimination inhibition) or rate constants. The model fits umeclidinium concentration to the relaxation of isolated bronchi using a sigmoid Emax model with an Emax of 102.6 ± 6.8% and a pEC50 of 8.6 ± 0.4.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
 
 - **paper:** `Calzetta_2017`
 - **model family:** `sigmoid_emax`

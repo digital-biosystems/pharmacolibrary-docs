@@ -19,6 +19,8 @@
 
 **Every check that could be run on this record passed.**
 
+A reported unit could not be converted (Frel and Fab), so that value has no SI equivalent.
+
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of f: this record has none, the second reading 0.492. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
@@ -27,23 +29,24 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Tomita Y et al., Imeglimin population pharmacokinetics a…, Clinical and translational… (2022)
   ·  DOI: [10.1111/cts.13221](https://doi.org/10.1111/cts.13221)
 
-<div class="pk-model-meta" hidden drug="imeglimin" model-id="Imeglimin_Tomita2022_reference" status="curated_candidate" stale="false" population="Japanese and Western patients with type 2 diabetes" measured-compound="imeglimin" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="imeglimin" model-id="Imeglimin_Tomita2022_reference" status="curated_candidate" stale="false" population="Japanese and Western healthy volunteers and patients with type 2 diabetes" measured-compound="imeglimin" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
-**Parameters:** 7 extracted.
+**Parameters:** 8 extracted.
 
 **Parameterization:** CL/F, Q/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Absorption rate constant, ka , h−1 | `Q49` · kabs | 0.144 | h−1 | 3.9999999999999996e-05 | [1] / [h] | 4.42 | llm_confirmed (0.6) | cts13221-tbl-0003:row1:col1, cts13221-tbl-0003:row1:col2 | — | not captured |
-| Absorption lag time, ALAG, h | `Q83` · tlag | 0.229 | h | 824.4 | [h] | 11.0 | llm_confirmed (0.6) | cts13221-tbl-0003:row2:col1, cts13221-tbl-0003:row2:col2 | — | not captured |
-| Relative bioavailability, F | `Q87` · Frel | 1 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | cts13221-tbl-0003:row3:col1 | — | not captured |
-| Apparent clearance, CL/F, L/h | `Q27` · CL/F | 66.9 | L/h | 1.8583333333333332e-05 | [l] / [h] | 1.70 | llm_confirmed (0.6) | cts13221-tbl-0003:row4:col1, cts13221-tbl-0003:row4:col2 | — | not captured |
-| Apparent central distribution volume, Vc /F, L | `Q63` · V1 | 142 | L | 0.14200000000000002 | [l] | 5.65 | boundary_compartment (0.9) | cts13221-tbl-0003:row5:col1, cts13221-tbl-0003:row5:col2 | — | not captured |
-| Apparent inter‐compartmental clearance, Q/F, L/h | `Q69` · Q/F | 15.9 | L/h | 4.416666666666667e-06 | [l] / [h] | 7.27 | llm_corrected (0.6) | cts13221-tbl-0003:row6:col1, cts13221-tbl-0003:row6:col2 | — | not captured |
-| Apparent peripheral distribution volume, Vp /F, L | `Q64` · V2 | 374 | L | 0.374 | [l] | 6.56 | boundary_compartment (0.9) | cts13221-tbl-0003:row7:col1, cts13221-tbl-0003:row7:col2 | — | not captured |
+| Absorption rate constant, ka , h−1 | `Q49` · kabs | 0.144 | h−1 | 3.9999999999999996e-05 | [1] / [h] | 4.42 | llm_confirmed (0.6) | cts13221-tbl-0003:row1:col1 | — | not captured |
+| Absorption lag time, ALAG, h | `Q83` · tlag | 0.229 | h | 824.4 | [h] | 11.0 | llm_confirmed (0.6) | cts13221-tbl-0003:row2:col1 | — | not captured |
+| Relative bioavailability, F | `Q87` · Frel | 1 | F | not captured | not captured | not captured | llm_confirmed (0.6) | cts13221-tbl-0003:row3:col1 | — | not captured |
+| Apparent clearance, CL/F, L/h | `Q27` · CL/F | 66.9 | L/h | 1.8583333333333332e-05 | [l] / [h] | 1.70 | llm_confirmed (0.6) | cts13221-tbl-0003:row4:col1 | — | not captured |
+| Apparent central distribution volume, Vc /F, L | `Q63` · V1 | 142 | L | 0.14200000000000002 | [l] | 5.65 | boundary_compartment (0.9) | cts13221-tbl-0003:row5:col1 | — | not captured |
+| Apparent inter‐compartmental clearance, Q/F, L/h | `Q69` · Q/F | 15.9 | L/h | 4.416666666666667e-06 | [l] / [h] | 7.27 | llm_corrected (0.6) | cts13221-tbl-0003:row6:col1 | — | not captured |
+| Apparent peripheral distribution volume, Vp /F, L | `Q64` · V2 | 374 | L | 0.374 | [l] | 6.56 | boundary_compartment (0.9) | cts13221-tbl-0003:row7:col1 | — | not captured |
+| bioavailability (F) | `Q40` · Fab | 0.492 | unit_verbatim | not captured | not captured | not captured | exact (1.0) | cts13221-fig-0001:caption | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -56,7 +59,15 @@ Tomita Y et al., Imeglimin population pharmacokinetics a…, Clinical and transl
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
 
 **Interpretation flags:**
+- NIL: refused to back-fill base 'NIL' from footnote/prose loose number 59 (source ['cts13221-fig-0001:caption']); the table cell was unparseable — needs review
+- NIL: refused to back-fill base 'NIL' from footnote/prose loose number 77.35 (source ['cts13221-fig-0001:caption']); the table cell was unparseable — needs review
+- NIL: refused to back-fill base 'NIL' from footnote/prose loose number 81.4 (source ['cts13221-fig-0001:caption']); the table cell was unparseable — needs review
+- NIL: refused to back-fill base 'NIL' from footnote/prose loose number 1000 (source ['cts13221-fig-0001:caption']); the table cell was unparseable — needs review
+- documentation only: 'percentage of radioactivity excreted in urine after oral administration of radiolabeled imeglimin in mass balance study' → Q44 (fe) comes from ['cts13221-fig-0001:caption'], not from a located parameter table — not emitted as a model parameter
+- NIL: refused to back-fill base 'NIL' from footnote/prose loose number 1000 (source ['cts13221-fig-0001:caption', 'cts13221-fig-0001:caption']); the table cell was unparseable — needs review
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=imeglimin
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at route_to_review — not promoted
 
 **Extraction notes:**
 - LLM selected parameter table(s) 3
@@ -64,7 +75,7 @@ Tomita Y et al., Imeglimin population pharmacokinetics a…, Clinical and transl
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
@@ -88,20 +99,20 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 7 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 8 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['cts13221-tbl-0003:row4:col1', 'cts13221-tbl-0003:row4:col2'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['cts13221-tbl-0003:row1:col1', 'cts13221-tbl-0003:row1:col2'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['cts13221-tbl-0003:row5:col1', 'cts13221-tbl-0003:row5:col2'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['cts13221-tbl-0003:row7:col1', 'cts13221-tbl-0003:row7:col2'] |
-| C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['cts13221-tbl-0003:row6:col1', 'cts13221-tbl-0003:row6:col2'] |
-| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['cts13221-tbl-0003:row2:col1', 'cts13221-tbl-0003:row2:col2'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['cts13221-tbl-0003:row4:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['cts13221-tbl-0003:row1:col1'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['cts13221-tbl-0003:row5:col1'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['cts13221-tbl-0003:row7:col1'] |
+| C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['cts13221-tbl-0003:row6:col1'] |
+| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['cts13221-tbl-0003:row2:col1'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 66.9 L/h | not captured | not captured | ['cts13221-tbl-0003:row4:col1', 'cts13221-tbl-0003:row4:col2'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 142 L | not captured | not captured | ['cts13221-tbl-0003:row5:col1', 'cts13221-tbl-0003:row5:col2'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 374 L | not captured | not captured | ['cts13221-tbl-0003:row7:col1', 'cts13221-tbl-0003:row7:col2'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 66.9 L/h | not captured | not captured | ['cts13221-tbl-0003:row4:col1'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 142 L | not captured | not captured | ['cts13221-tbl-0003:row5:col1'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 374 L | not captured | not captured | ['cts13221-tbl-0003:row7:col1'] |
 
 **Reviewer per-scenario checks:**
 
@@ -122,10 +133,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_imeglimin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Tomita_2022` / `Tomita_2022::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_imeglimin/models/modelica/Imeglimin_Tomita2022_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_imeglimin/models/modelica/Imeglimin_Tomita2022_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_imeglimin/models/modelica/Imeglimin_Tomita2022_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_imeglimin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Tomita_2022` / `Tomita_2022::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_imeglimin/models/modelica/Imeglimin_Tomita2022_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_imeglimin/models/modelica/Imeglimin_Tomita2022_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_imeglimin/models/modelica/Imeglimin_Tomita2022_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -134,7 +145,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_imeglimin/Imeglimin_Tomita2022_reference/Imeglimin_Tomita2022_reference_modelica.zip" download>Imeglimin_Tomita2022_reference_modelica.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_imeglimin/Imeglimin_Tomita2022_reference/Imeglimin_Tomita2022_reference_modelica.zip" download>Imeglimin_Tomita2022_reference_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_imeglimin/Imeglimin_Tomita2022_reference/Imeglimin_Tomita2022_reference_fmi.zip" download>Imeglimin_Tomita2022_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_imeglimin/Imeglimin_Tomita2022_reference/Imeglimin_Tomita2022_reference_matlab.zip" download>Imeglimin_Tomita2022_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_imeglimin/Imeglimin_Tomita2022_reference/Imeglimin_Tomita2022_reference_matlab_simbio.zip" download>Imeglimin_Tomita2022_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
@@ -143,7 +154,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_imeglimin/Imeglimin_Tomita2022_reference/Imeglimin_Tomita2022_reference.svg" alt="Imeglimin_Tomita2022_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_imeglimin/Imeglimin_Tomita2022_reference/Imeglimin_Tomita2022_reference.svg" alt="Imeglimin_Tomita2022_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -156,4 +167,4 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 21:18 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 23:35 UTC</sub>

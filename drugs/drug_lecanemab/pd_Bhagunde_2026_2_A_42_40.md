@@ -17,9 +17,9 @@
 
 **Model:** No model was generated from this record.
 
-> Lecanemab serum concentration (µg/mL) stimulates the production of the plasma Aβ42/40 ratio in an indirect response model (dR/dt = Kin·(1 + SLOPE·Conc) − R·Kout), with baseline ratio 0.0864, Kout 1.51 1/year (t½ ≈ 0.5 years), and SLOPE 0.000704 1/µg/mL; no Imax/IC50/EC50/Emax or ke0 is reported.
+> Lecanemab plasma concentrations stimulate the production of the plasma Aβ42/40 ratio via a proportional indirect response model, where the linear slope parameter of 0.000704 1/µg/mL modifies the input against a first-order elimination rate (Kout) of 1.51 1/year. The model assumes a baseline ratio of 0.0864, and while the paper notes the drug increases the ratio, it does not explicitly state the underlying biological mechanism for this stimulation beyond the model structure.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Bhagunde_2026_2`
 - **model family:** `indirect_response_iii`
@@ -35,10 +35,10 @@ Bhagunde P et al., Pharmacokinetic/pharmacodynamic analyse…, Alzheimer's & dem
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
 | PD (effect) | Baseline plasma Aβ42/40 ratio | `Q324` · not captured | 0.0864 | not captured | not captured | llm (not captured) | Bhagunde_2026_2:pdv3 |
-| PD (effect) | K out | `Q328` · not captured | 1.51 | 1/year | not captured | llm (not captured) | Bhagunde_2026_2:pdv3 |
-| PD (effect) | Slope for lecanemab exposure effect | `Q335` · not captured | 0.000704 | 1/µg/mL | not captured | llm (not captured) | Bhagunde_2026_2:pdv3 |
-| variability | Baseline IIV | `Q312` · not captured | 7.21 | %CV | not captured | llm (not captured) | Bhagunde_2026_2:pdv3 |
-| variability | Slope IIV | `Q312` · not captured | 71.7 | %CV | not captured | llm (not captured) | Bhagunde_2026_2:pdv3 |
+| PD (effect) | K out (1/year) | `Q328` · not captured | 1.51 | 1/year | not captured | llm (not captured) | Bhagunde_2026_2:pdv3 |
+| PD (effect) | Slope for lecanemab exposure effect (1/µg/mL) | `Q335` · not captured | 0.000704 | 1/µg/mL | not captured | llm (not captured) | Bhagunde_2026_2:pdv3 |
+| variability | Baseline | `Q312` · not captured | 7.21 | %CV | not captured | llm (not captured) | Bhagunde_2026_2:pdv3 |
+| variability | Slope | `Q312` · not captured | 71.7 | %CV | not captured | llm (not captured) | Bhagunde_2026_2:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -47,7 +47,7 @@ Bhagunde P et al., Pharmacokinetic/pharmacodynamic analyse…, Alzheimer's & dem
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|

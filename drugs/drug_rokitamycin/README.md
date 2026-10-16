@@ -18,17 +18,20 @@ Rokitamycin is a macrolide antibiotic, a class of drugs used to treat bacterial 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 11:20 | 0:54 | 0/0/0 | 1/0/0 | 0/0/0 | 39,411/575 | einfracz / qwen3.8-27b | 1 | 0/0 | 1/0 | 0 |
+| 2026-10-13 11:32 | 2:38 | 0/0/0 | 0/0/0 | 0/0/0 | 54,112/1,949 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 2/0 | 2/0 | 0 |
 
 ## popPK records
 
 _not available_
 
-## Pharmacodynamics (PD)
+## ADME sites
 
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">dog</span> | [Nagata_1987_reduction_of_body_weight_gain](drugs/drug_rokitamycin/pd_Nagata_1987_reduction_of_body_weight_gain.md) | reduction of body weight gain ← rokitamycin · model not identified | — | Nagata R et al., [Chronic toxicity and recovery tests of…, The Japanese journal of ant… (1987) | — |
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=rokitamycin).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | `CYP3A4` inhibitor | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inhibitor | DrugBank actor |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -38,15 +41,50 @@ _not available_
 
 ## Coverage
 
-- **PubMed hits:** 22 matched, 20 returned
-- **screened:** 0  ·  **relevant:** 0
+- **PubMed hits:** 30 matched, 28 returned
+- **screened:** 1  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
-- **scholar-agent fallback query used:** not captured
+- **scholar-agent fallback query used:** True
+
+## Full-text requests
+
+_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Broggini_1991.pdf` | Broggini M et al., Pharmacokinetics of rokitamycin after s…, European journal of drug me… (1991) | popPK | 8 | [10.1007/BF03189950](https://doi.org/10.1007/BF03189950) | [1936073](https://pubmed.ncbi.nlm.nih.gov/1936073) | The study reports qualitative PK findings (Tmax, linearity) for rokitamycin in humans, but specific numeric values for clearance, volume, or half-life are not present in the provided evidence. |
+| `Zhao_1999.pdf` | Zhao XJ et al., An in vitro study on the metabolism and…, Drug metabolism and disposi… (1999) | pd | 4 | not captured | [10383920](https://www.ncbi.nlm.nih.gov/pubmed/10383920) | metadata signals extractable PD data (IC50) |
+
+<sub>queue written 2026-10-13T11:32:35.599572+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
+| popPK | Adam_1992 | irrelevant | 0 | 0 | The paper is a clinical review discussing the use of macrolides in pediatrics and does not report quantitative pharmacokinetic parameters for rokitamycin. |
+| popPK | Broggini_1991 | relevant | 8 | 2 | The study reports qualitative PK findings (Tmax, linearity) for rokitamycin in humans, but specific numeric values for clearance, volume, or half-life are not present in the provided evidence. |
+| popPK | Cazzola_1991 | irrelevant | 0 | 0 | The study evaluates the effect of rokitamycin on theophylline pharmacokinetics, not the pharmacokinetic parameters of rokitamycin itself. |
+| popPK | Cenci_1996 | irrelevant | 0 | 0 | The study is a clinical tolerance/safety trial in humans and does not report any pharmacokinetic parameters (CL, V, t1/2, etc.) for rokitamycin. |
+| popPK | Cogo_1996 | irrelevant | 0 | 0 | The study focuses on clinical efficacy and immunological effects (sIgA levels) rather than pharmacokinetic parameters. |
+| popPK | Farrell_2003 | irrelevant | 0 | 0 | The paper describes macrolide resistance mechanisms in bacterial isolates and reports MICs, not pharmacokinetic parameters for rokitamycin. |
+| popPK | Fornaseri_1997 | irrelevant | 0 | 0 | The study is a clinical efficacy and safety trial for odontostomatological infections and does not report any pharmacokinetic parameters. |
+| popPK | Hirosawa_1988 | irrelevant | 0 | 0 | The study reports clinical efficacy and safety in pediatric patients but contains no pharmacokinetic parameters (CL, V, t1/2, etc.) for rokitamycin. |
+| popPK | Irimajiri_1991 | irrelevant | 0 | 0 | The paper is a clinical efficacy study for Campylobacter enteritis and does not report pharmacokinetic parameters (CL, V, t1/2) for rokitamycin. |
+| popPK | Kanfer_1998 | irrelevant | 0 | 0 | The paper is a review of analytical methods (chromatography) for macrolides and does not report pharmacokinetic parameters for rokitamycin. |
+| popPK | Kuno_1988 | relevant | 4 | 2 | The study reports qualitative PK parameters (tmax, half-life range, urinary recovery) for rokitamycin in humans, but lacks specific numeric values for clearance, volume of distribution, or absorption rate constants. |
+| popPK | Mazzei_1993 | irrelevant | 0 | 0 | The paper is a review of the chemistry and mode of action of macrolides and does not report quantitative pharmacokinetic parameters for rokitamycin. |
+| popPK | Meguro_1988 | irrelevant | 2 | 0 | The abstract mentions pharmacokinetic observations but provides no quantitative disposition parameters (CL, V, t1/2, etc.) for rokitamycin. |
+| popPK | Miura_1987 | irrelevant | 0 | 0 | The paper is a toxicity study reporting clinical and pathological observations, not a pharmacokinetic study with quantitative disposition parameters. |
+| popPK | Motohiro_1989 | irrelevant | 0 | 0 | The study focuses on the clinical efficacy and MICs of clarithromycin in children, with rokitamycin serving only as a comparator for in-vitro susceptibility testing, not as the subject of pharmacokinetic analysis. |
+| popPK | Nagata_1987 | irrelevant | 0 | 0 | The paper describes a chronic toxicity study in beagle dogs and does not report any pharmacokinetic parameters (CL, V, t1/2, etc.) for rokitamycin. |
+| popPK | Nahata_1996 | irrelevant | 0 | 0 | The paper is a review of drug interactions and does not report quantitative pharmacokinetic parameters for rokitamycin. |
+| popPK | Ono_2004 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of tricyclic ketolides (TE-802, etc.), with rokitamycin serving only as an in vitro comparator for antibacterial activity. |
+| popPK | Periti_1992 | irrelevant | 0 | 0 | The paper is a review of macrolide drug interactions and does not report quantitative pharmacokinetic parameters (CL, V, etc.) for rokitamycin. |
+| popPK | Petitjean_1995 | irrelevant | 1 | 0 | The study is a methodological investigation into tissue extraction techniques using rokitamycin as a probe, and it does not report quantitative pharmacokinetic parameters (CL, V, etc.). |
+| popPK | Sakata_1988 | irrelevant | 4 | 2 | The study reports only peak concentrations and urinary excretion percentages, lacking quantitative disposition parameters like clearance, volume of distribution, or half-life. |
+| popPK | Sato_1989 | irrelevant | 0 | 0 | The study focuses on clarithromycin, with rokitamycin mentioned only as a comparator for antibacterial activity, not as the subject of pharmacokinetic analysis. |
+| popPK | Zhao_1999 | irrelevant | 1 | 2 | The study is an in-vitro mechanistic investigation of metabolism using rat liver microsomes, reporting enzyme kinetic parameters (Km, Vmax) rather than in-vivo pharmacokinetic disposition parameters (CL, V, t1/2). |
+| popPK | Zhao_1999_2 | irrelevant | 0 | 0 | The study is an in vitro mechanistic investigation of metabolism and enzyme inhibition, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
 | PGx | Zhao_1999_2 | not_relevant | 0 | 0 | The study is an in vitro investigation of metabolic pathways and drug interactions in human liver microsomes and does not report pharmacogenomic effects or human PK/PD parameters. |
 
 ---

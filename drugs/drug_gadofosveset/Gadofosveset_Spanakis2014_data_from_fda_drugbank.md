@@ -20,7 +20,7 @@
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Extracted — gadofosveset: fu 0.12, fe 0.94, AUC ratio 1.75, CL 0.5 L/h.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of auc fold increase in severe renal impairment: this record has none, the second reading 2.25; it also differs on 1 more field. That field does not shape the model.
+A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of cl: this record has none, the second reading 0; it also differs on 1 more field. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -80,7 +80,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `qwen3.8-27b` | `parameters[auc fold increase in severe renal impairment]` | not captured | 2.25 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[cl]` | not captured | 0 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[oncology cl]` | 0.50 | not captured | only_one_extracted |
 
 </details>
@@ -110,7 +110,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_gadofosveset/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Spanakis_2014` / `Spanakis_2014::data_from_fda_drugbank`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_gadofosveset/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Spanakis_2014` / `Spanakis_2014::data_from_fda_drugbank`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

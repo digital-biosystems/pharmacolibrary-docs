@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;pertuzumab&quot;,&quot;href&quot;:&quot;drugs/drug_pertuzumab/&quot;},{&quot;label&quot;:&quot;Luo_2017 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pertuzumab_Luo2017_reference&quot;,&quot;label&quot;:&quot;Luo_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pertuzumab/Pertuzumab_Luo2017_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Pertuzumab_Sakaeda2024_10_mg_kg_iv&quot;,&quot;label&quot;:&quot;Sakaeda_2024_10_mg_kg_iv&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pertuzumab/Pertuzumab_Sakaeda2024_10_mg_kg_iv.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pertuzumab_Luo2017_reference&quot;,&quot;label&quot;:&quot;Luo_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pertuzumab/Pertuzumab_Luo2017_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Pertuzumab_Sun2022_reference&quot;,&quot;label&quot;:&quot;Sun_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pertuzumab/Pertuzumab_Sun2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pertuzumab_Sakaeda2024_10_mg_kg_iv&quot;,&quot;label&quot;:&quot;Sakaeda_2024_10_mg_kg_iv&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pertuzumab/Pertuzumab_Sakaeda2024_10_mg_kg_iv.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -29,7 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 Luo C et al., Glycoengineering of pertuzumab and its…, Scientific reports (2017)
   ·  DOI: [10.1038/srep46347](https://doi.org/10.1038/srep46347)
 
-<div class="pk-model-meta" hidden drug="pertuzumab" model-id="Pertuzumab_Luo2017_reference" status="curated_candidate" stale="false" population="" measured-compound="pertuzumab" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="pertuzumab" model-id="Pertuzumab_Luo2017_reference" status="curated_candidate" stale="false" population="ICR mice" measured-compound="pertuzumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.
@@ -39,8 +39,8 @@ Luo C et al., Glycoengineering of pertuzumab and its…, Scientific reports (201
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| PertuzumabFuc+SA+ | `Q22` · CL | 18.1 | mL/day/kg | 1.4664351851851851e-08 | L/h | not captured | review (0.7) | Luo_2017:review | — | not captured |
-| PertuzumabFuc+SA+ | `Q61` · V | 57.3 | mL/kg | 0.004011 | L | not captured | review (0.7) | Luo_2017:review | — | not captured |
+| CL (mL/day/kg) | `Q22` · CL | 18.1 | mL/day/kg | 1.4664351851851851e-08 | L/h | not captured | review (0.7) | Luo_2017:review | — | not captured |
+| V1 (mL/kg) | `Q63` · V1 | 57.3 | mL/kg | 0.004011 | L | not captured | review (0.7) | Luo_2017:review | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -91,11 +91,11 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Luo_2017:review'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Luo_2017:review'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Luo_2017:review'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 18.1 | not captured | not captured | ['Luo_2017:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.0528 L/h | not captured | not captured | ['Luo_2017:review'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 4.01 L | not captured | not captured | ['Luo_2017:review'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 4.01 L | not captured | not captured | ['Luo_2017:review'] |
 
 **Reviewer per-scenario checks:**
 
@@ -115,10 +115,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_pertuzumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Luo_2017` / `Luo_2017::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_pertuzumab/models/modelica/Pertuzumab_Luo2017_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_pertuzumab/models/modelica/Pertuzumab_Luo2017_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_pertuzumab/models/modelica/Pertuzumab_Luo2017_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_pertuzumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Luo_2017` / `Luo_2017::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_pertuzumab/models/modelica/Pertuzumab_Luo2017_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_pertuzumab/models/modelica/Pertuzumab_Luo2017_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_pertuzumab/models/modelica/Pertuzumab_Luo2017_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -136,7 +136,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_pertuzumab/Pertuzumab_Luo2017_reference/Pertuzumab_Luo2017_reference.svg" alt="Pertuzumab_Luo2017_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_pertuzumab/Pertuzumab_Luo2017_reference/Pertuzumab_Luo2017_reference.svg" alt="Pertuzumab_Luo2017_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -149,4 +149,4 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 18:32 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 00:59 UTC</sub>

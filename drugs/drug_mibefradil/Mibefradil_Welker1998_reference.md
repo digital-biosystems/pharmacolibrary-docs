@@ -4,7 +4,7 @@
 
 # mibefradil — `Mibefradil_Welker1998_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.364). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -19,6 +19,8 @@
 **Only clearance was extracted — no volume.**
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. A reported unit could not be converted (Cmax), so that value has no SI equivalent. Extracted — mibefradil: Cmax 220 µg/L, tmax 0.94 h, CL/F 26.7 L/h, t1/2β 11.1 h.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of absorption rate constant: this record has none, the second reading 2.7; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -71,6 +73,33 @@ Welker HA et al., Mibefradil pharmacokinetic and pharmaco…, International jour
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.364 (4/11 fields) | 7 |
+
+<details><summary>7 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[absorption rate constant]` | not captured | 2.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f].value` | 26.7 | 7.56 | mismatch |
+| `gpt-oss-120b` | `parameters[cl]` | not captured | 16.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax]` | 220 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[oral terminal exponential volume of distribution]` | not captured | 180 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2β]` | 11.1 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tmax]` | 0.94 | not captured | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
@@ -93,7 +122,7 @@ Welker HA et al., Mibefradil pharmacokinetic and pharmaco…, International jour
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_mibefradil/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Welker_1998` / `Welker_1998::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_mibefradil/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Welker_1998` / `Welker_1998::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

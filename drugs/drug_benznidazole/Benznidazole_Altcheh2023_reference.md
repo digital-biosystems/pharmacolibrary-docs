@@ -19,7 +19,7 @@
 
 **Only clearance was extracted — no volume.**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Extracted — benznidazole: CL 2.1 L/h.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. No parameter values were extracted.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has benznidazole, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -32,47 +32,37 @@ Altcheh J et al., Population pharmacokinetics of benznida…, PLoS neglected tro
 <div class="pk-model-meta" hidden drug="benznidazole" model-id="Benznidazole_Altcheh2023_reference" status="needs_review" stale="false" population="neonates, infants and children with Chagas disease" measured-compound="benznidazole" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 1 extracted.
+**Parameters:** 0 extracted, plus 2 covariate effects.
 
 **Parameterization:** CL/F — mechanistic, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| estimated BNZ clearance for a 70 Kg adult | `Q22` · CL | 2.1 | L/h | 5.833333333333334e-07 | L/h | not captured | boundary (0.8) | Altcheh_2023:other_prose | — | not captured |
-
-<details class="legend">
-<summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
-</details>
+_No resolved parameters._
 
 ### Unresolved rows _(no Q-code or no value — not parameters)_
 | label (paper) | Q-code | value | link |
 |---|---|---|---|
+| theta_q76_wt_v_f_l_b0_b1_x | Q900 | not captured | not captured |
+| theta_q27_wt_power | Q900 | not captured | not captured |
 | CL/F | Q27 | not captured | exact |
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped value-less row: 'V/F (L) = b0 + b1 x WT'
-- dropped value-less row: 'CL/F (L/hr) = b1 * (WT/70)^ 0.75'
-- salvaged Q22 ('estimated BNZ clearance for a 70 Kg adult'=2.1) from results prose — parameter table was unreadable
+- covariate effect for Q76 has no base parameter row (kept as unattached equation-variable)
+- covariate effect for Q27 has no base parameter row (kept as unattached equation-variable)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=benznidazole
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- bound model equation to Q27 (CL/F): CL/F = b1 * (WT/70)^ 0.75
+- bound model equation to Q27 (CL/F): CL/F = b1 * (WT/70)^0.75
 - Q27 (CL/F) is equation-defined: value moved to equation-variable 'CL/F'; equation kept verbatim
-- status held at route_to_review — not promoted
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
-- unparsed cell pntd.0010850.t002:row2:col2 = '47.4% [28.7; 59.2%]'
-- unparsed cell pntd.0010850.t002:row3:col2 = '38.3% [26.7; 51.4%]'
+- table pntd.0010850.t002: unparsed_numeric_cell
+- final table pntd.0010850.t002: no supported point estimates; targeted recovery unresolved
 - LLM selected parameter table(s) 2
-- dropped sensitivity-analysis table(s) 3 from the LLM selection — perturbations of a model, not a model
-- captured model equation CL/F = b1 * (WT/70)^ 0.75
+- captured model equation CL/F = b1 * (WT/70)^0.75
 
 ## Validation
 
@@ -103,12 +93,10 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 2.1 | not captured | not captured | ['Altcheh_2023:other_prose'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 2.1 L/h | not captured | not captured | ['Altcheh_2023:other_prose'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -117,7 +105,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_benznidazole/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Altcheh_2023` / `Altcheh_2023::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_benznidazole/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Altcheh_2023` / `Altcheh_2023::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -143,4 +131,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 07:36 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 19:12 UTC</sub>

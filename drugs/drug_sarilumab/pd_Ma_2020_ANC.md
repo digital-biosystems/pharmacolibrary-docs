@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;sarilumab&quot;,&quot;href&quot;:&quot;drugs/drug_sarilumab/&quot;},{&quot;label&quot;:&quot;Ma_2020 \u00b7 PD Absolute Neutrophil Count&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;sarilumab&quot;,&quot;href&quot;:&quot;drugs/drug_sarilumab/&quot;},{&quot;label&quot;:&quot;Ma_2020 \u00b7 PD ANC&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Absolute Neutrophil Count — PD  <span class="pk-badge pk-badge--green">reviewed — candidate</span>
+# ANC — PD  <span class="pk-badge pk-badge--green">reviewed — candidate</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -13,11 +13,11 @@
 
 ## Record summary
 
-**As extracted:** Sarilumab (concentrations from the PK model of Xu_2019::estimate) drives Absolute Neutrophil Count (in × 10^9/L): indirect response — drug stimulates the loss of Absolute Neutrophil Count.
+**As extracted:** Sarilumab (concentrations from the PK model of Xu_2019::estimate) drives ANC (in 10^9/L): indirect response — drug stimulates the loss of ANC.
 
 **Model:** No model was generated from this record.
 
-> Sarialumab concentrations stimulate the elimination rate (Kout) of absolute neutrophil counts (ANC), a mechanism the paper attributes to the margination of neutrophils from circulation. The model parameters include an Emax of 1.50, an EC50 of 10.3 mg/L, and a Kout of 2.17 day−1.
+> Sarialumab concentrations stimulate the elimination rate (Kout) of the absolute neutrophil count (ANC), a mechanism attributed to neutrophil margination, with baseline ANC (BASE) of 5.38 × 10^9/L. The model estimated an Emax of 1.50, EC50 of 10.3 mg/L, Kout of 2.17 day−1, and Gamma (Γ) of 0.862.
 >
 > <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
@@ -34,14 +34,11 @@ Ma L et al., Population Pharmacokinetic-Pharmacodyna…, Clinical pharmacokineti
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | BASE | `Q324` · not captured | 5.38 | × 10^9/L | not captured | llm (not captured) | Ma_2020:pdv3 |
-| PD (effect) | Emax | `Q320` · not captured | 1.50 | not captured | not captured | direction (not captured) | Ma_2020:pdv3 |
+| PD (effect) | BASE | `Q324` · not captured | 5.38 | 10^9/L | not captured | llm (not captured) | Ma_2020:pdv3 |
+| PD (effect) | Emax | `Q320` · not captured | 1.50 | not captured | not captured | llm (not captured) | Ma_2020:pdv3 |
 | PD (effect) | EC50 | `Q321` · not captured | 10.3 | mg/L | not captured | llm (not captured) | Ma_2020:pdv3 |
 | PD (effect) | Kout | `Q328` · not captured | 2.17 | day−1 | not captured | llm (not captured) | Ma_2020:pdv3 |
 | PD (effect) | Γ | `Q325` · not captured | 0.862 | not captured | not captured | llm (not captured) | Ma_2020:pdv3 |
-| model term | Smoking on BASE | `Q900` · not captured | 1.15 | not captured | not captured | llm (not captured) | Ma_2020:pdv3 |
-| model term | Weight on Kout | `Q900` · not captured | 0.875 | not captured | not captured | llm (not captured) | Ma_2020:pdv3 |
-| model term | PRICORT on Emax | `Q900` · not captured | 0.819 | not captured | not captured | llm (not captured) | Ma_2020:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>

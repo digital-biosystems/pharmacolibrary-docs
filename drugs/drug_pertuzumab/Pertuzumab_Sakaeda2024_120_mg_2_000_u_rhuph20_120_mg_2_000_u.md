@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;pertuzumab&quot;,&quot;href&quot;:&quot;drugs/drug_pertuzumab/&quot;},{&quot;label&quot;:&quot;Sakaeda_2024 \u00b7 120_mg_2_000_u_rhuph20_120_mg_2_000_u_rhuph20_sc&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pertuzumab_Luo2017_reference&quot;,&quot;label&quot;:&quot;Luo_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pertuzumab/Pertuzumab_Luo2017_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pertuzumab_Sakaeda2024_10_mg_kg_iv&quot;,&quot;label&quot;:&quot;Sakaeda_2024_10_mg_kg_iv&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pertuzumab/Pertuzumab_Sakaeda2024_10_mg_kg_iv.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pertuzumab_Luo2017_reference&quot;,&quot;label&quot;:&quot;Luo_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pertuzumab/Pertuzumab_Luo2017_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pertuzumab_Sun2022_reference&quot;,&quot;label&quot;:&quot;Sun_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pertuzumab/Pertuzumab_Sun2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pertuzumab_Sakaeda2024_10_mg_kg_iv&quot;,&quot;label&quot;:&quot;Sakaeda_2024_10_mg_kg_iv&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pertuzumab/Pertuzumab_Sakaeda2024_10_mg_kg_iv.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -21,7 +21,7 @@
 
 **This paper's disposition core is incomplete.**
 
-A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Kirschbrown_2019, Luo_2017) cannot stand in for this paper's evidence. A reported unit could not be converted (Cmax, AUC∞ and AUCt), so that value has no SI equivalent. Extracted — pertuzumab: tmax 24 h, Cmax 296 μg/mL, t1/2z 396 h, AUC∞ 1.57e+05 μg·h/mL, AUCt 1.08e+05 μg·h/mL, MRT 570 h, CL 0.235 L/day, V 57.3 mL/kg.
+A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Kirschbrown_2019, Sun_2022) cannot stand in for this paper's evidence. A reported unit could not be converted (Cmax, AUC∞ and AUCt), so that value has no SI equivalent. Extracted — pertuzumab: tmax 24 h, Cmax 296 μg/mL, t1/2z 396 h, AUC∞ 1.57e+05 μg·h/mL, AUCt 1.08e+05 μg·h/mL, MRT 570 h, CL 0.235 L/day, V 2.44e+03 ml.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has pertuzumab, the second reading unknown; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -50,7 +50,7 @@ Sakaeda M et al., [Pharmacological properties and clinica…, Nihon yakurigaku z
 | AUC0-672h (μg・h/mL) | `Q19` · AUCt | 108000 | μg·h/mL | not captured | μg·h/mL | not captured | llm (0.6) | Sakaeda_2024_table_3:row4:col3 | — | not captured |
 | MRT (h) | `Q53` · MRT | 570 | h | 2052000.0 | [h] | not captured | exact (1.0) | Sakaeda_2024_table_3:row7:col3 | — | not captured |
 | CL | `Q22` · CL | 0.235 | L/day | 2.7199074074074073e-09 | L/h | not captured | review_gapfill (0.7) | Kirschbrown_2019:review | — | not captured |
-| PertuzumabFuc+SA+ | `Q61` · V | 57.3 | mL/kg | 0.004011 | L | not captured | review_gapfill (0.7) | Luo_2017:review | — | not captured |
+| Vd (ml) | `Q61` · V | 2440.9 | ml | 0.0024409 | L | not captured | review_gapfill (0.7) | Sun_2022:review | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -68,7 +68,7 @@ Sakaeda M et al., [Pharmacological properties and clinica…, Nihon yakurigaku z
 - population split: '投与グループ (n=5/グループ) 120 mg/動物 ベルツスマブ+ 2,000 u rhuph20 及び 120 mg/動物 トラスツズマブ+ 2,000 u rhuph20 (sc)' subgroup of Sakaeda_2024 (paper reports 7 populations: 108 mg/動物 トラスツズマブ 0 u rhuph20, 108 mg/動物 トラスツズマブ 2,000 u rhuph20, 108 mg/動物 トラスツズマブ 6,000 u rhuph20, 216 mg/動物 トラスツズマブ 4,000 u rhuph20, 投与グループ (n=5/グループ) 10 mg/kg ベルツスマブ (iv), 投与グループ (n=5/グループ) 120 mg/動物 ベルツスマブ+ 2,000 u rhuph20 (sc), 投与グループ (n=5/グループ) 120 mg/動物 ベルツスマブ+ 2,000 u rhuph20 及び 120 mg/動物 トラスツズマブ+ 2,000 u rhuph20 (sc))
 - molar mass: none found for 'pertuzumab' — its concentrations stay mass-only
 - gap-filled Q22 (CL) from Kirschbrown_2019's review values (primary lacked it)
-- gap-filled Q61 (V) from Luo_2017's review values (primary lacked it)
+- gap-filled Q61 (V) from Sun_2022's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
@@ -126,11 +126,11 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_dimension_Q53 | pass | [time] | not captured | not captured | not captured | ['Sakaeda_2024_table_3:row7:col3'] |
 | C5_dimension_Q56 | pass | [time] | not captured | not captured | not captured | ['Sakaeda_2024_table_3:row0:col3'] |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Sakaeda_2024_table_3:row2:col3'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Luo_2017:review'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Sun_2022:review'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.235 | not captured | not captured | ['Kirschbrown_2019:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.00979 L/h | not captured | not captured | ['Kirschbrown_2019:review'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 4.01 L | not captured | not captured | ['Luo_2017:review'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 2.44 L | not captured | not captured | ['Sun_2022:review'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -139,7 +139,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_pertuzumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Sakaeda_2024` / `Sakaeda_2024::120_mg_2_000_u_rhuph20_120_mg_2_000_u_rhuph20_sc`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_pertuzumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Sakaeda_2024` / `Sakaeda_2024::120_mg_2_000_u_rhuph20_120_mg_2_000_u_rhuph20_sc`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -165,4 +165,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 18:34 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 00:59 UTC</sub>

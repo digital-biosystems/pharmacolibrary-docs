@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01C&quot;,&quot;href&quot;:&quot;atc/P01C.md&quot;},{&quot;label&quot;:&quot;fexinidazole&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fexinidazole_Watson2019_reference&quot;,&quot;label&quot;:&quot;Watson_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fexinidazole/Fexinidazole_Watson2019_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # fexinidazole
 
@@ -22,31 +21,45 @@ Fexinidazole is an antiprotozoal medicine used to treat trypanosomiasis (sleepin
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
 | fexinidazole | parent | 279.31 | C12H13N3O3S | DrugBank | [68792](https://pubchem.ncbi.nlm.nih.gov/compound/68792) | Watson_2019 |
-| fexinidazole sulfone (M2) | metabolite | — (mass units only) | — | — | — | — |
+| fexinidazole sulfone | metabolite | 311.312 | C12H13N3O5S | PubChem | [21429076](https://pubchem.ncbi.nlm.nih.gov/compound/21429076) | Watson_2019 |
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 07:48 | 6:37 | 0/0/1 | 0/1/1 | 0/0/0 | 410,006/22,853 | ollama / glm-5.3-flash | 7 | 2/5 | 7/0 | 0 |
+| 2026-10-14 19:20 | 2:29 | 0/1/0 | 0/1/1 | 0/0/0 | 165,187/13,064 | einfracz / qwen3.8-27b | 7 | 2/5 | 7/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Watson_2019_reference](drugs/drug_fexinidazole/Fexinidazole_Watson2019_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Watson JA et al., Pharmacokinetic-Pharmacodynamic Assessm…, Antimicrobial agents and ch… (2019) | [10.1128/AAC.02515-18](https://doi.org/10.1128/AAC.02515-18) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Watson_2019_reference](drugs/drug_fexinidazole/Fexinidazole_Watson2019_reference.md) | — | 1-compartment (no model) | 0 | Watson JA et al., Pharmacokinetic-Pharmacodynamic Assessm…, Antimicrobial agents and ch… (2019) | [10.1128/AAC.02515-18](https://doi.org/10.1128/AAC.02515-18) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Verrest_2024_parasite_load](drugs/drug_fexinidazole/pd_Verrest_2024_parasite_load.md) | blood Leishmania parasite load (kDNA qPCR) ← fexinidazole (sum of M1 and M2 metabolites) · direct linear effect | model (no simulator) | Verrest L et al., Leishmania blood parasite dynamics duri…, PLoS neglected tropical dis… (2024) | [10.1371/journal.pntd.0012078](https://doi.org/10.1371/journal.pntd.0012078) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Watson_2019_ALT](drugs/drug_fexinidazole/pd_Watson_2019_ALT.md) | alanine aminotransferase (peak) ← fexinidazole sulfone metabolite (M2) · direct sigmoid Emax (Hill) effect | — | Watson JA et al., Pharmacokinetic-Pharmacodynamic Assessm…, Antimicrobial agents and ch… (2019) | [10.1128/AAC.02515-18](https://doi.org/10.1128/AAC.02515-18) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Watson_2019_AST](drugs/drug_fexinidazole/pd_Watson_2019_AST.md) | aspartate aminotransferase (peak) ← fexinidazole sulfone metabolite (M2) · direct sigmoid Emax (Hill) effect | — | Watson JA et al., Pharmacokinetic-Pharmacodynamic Assessm…, Antimicrobial agents and ch… (2019) | [10.1128/AAC.02515-18](https://doi.org/10.1128/AAC.02515-18) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Watson_2019_hemoglobin_concentration_nadir](drugs/drug_fexinidazole/pd_Watson_2019_hemoglobin_concentration_nadir.md) | hemoglobin concentration (nadir) ← fexinidazole sulfone metabolite (M2) · direct sigmoid Emax (Hill) effect | — | Watson JA et al., Pharmacokinetic-Pharmacodynamic Assessm…, Antimicrobial agents and ch… (2019) | [10.1128/AAC.02515-18](https://doi.org/10.1128/AAC.02515-18) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Watson_2019_lymphocyte_count_nadir](drugs/drug_fexinidazole/pd_Watson_2019_lymphocyte_count_nadir.md) | lymphocyte count (nadir) ← fexinidazole sulfone metabolite (M2) · direct sigmoid Emax (Hill) effect | — | Watson JA et al., Pharmacokinetic-Pharmacodynamic Assessm…, Antimicrobial agents and ch… (2019) | [10.1128/AAC.02515-18](https://doi.org/10.1128/AAC.02515-18) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Watson_2019_neutrophil_count_nadir](drugs/drug_fexinidazole/pd_Watson_2019_neutrophil_count_nadir.md) | neutrophil count (nadir) ← fexinidazole sulfone metabolite (M2) · direct sigmoid Emax (Hill) effect | — | Watson JA et al., Pharmacokinetic-Pharmacodynamic Assessm…, Antimicrobial agents and ch… (2019) | [10.1128/AAC.02515-18](https://doi.org/10.1128/AAC.02515-18) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Watson_2019_platelet_count_nadir](drugs/drug_fexinidazole/pd_Watson_2019_platelet_count_nadir.md) | platelet count (nadir) ← fexinidazole sulfone metabolite (M2) · direct sigmoid Emax (Hill) effect | — | Watson JA et al., Pharmacokinetic-Pharmacodynamic Assessm…, Antimicrobial agents and ch… (2019) | [10.1128/AAC.02515-18](https://doi.org/10.1128/AAC.02515-18) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Verrest_2024_Blood_Leishmania_parasite_load](drugs/drug_fexinidazole/pd_Verrest_2024_Blood_Leishmania_parasite_load.md) | Blood Leishmania parasite load ← fexinidazole and its active metabolites M1 and M2 · direct linear effect | — | Verrest L et al., Leishmania blood parasite dynamics duri…, PLoS neglected tropical dis… (2024) | [10.1371/journal.pntd.0012078](https://doi.org/10.1371/journal.pntd.0012078) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Watson_2019_ALT](drugs/drug_fexinidazole/pd_Watson_2019_ALT.md) | peak observed serum alanine aminotransferase (ALT) ← fexinidazole sulfone metabolite (M2) · direct sigmoid Emax (Hill) effect | — | Watson JA et al., Pharmacokinetic-Pharmacodynamic Assessm…, Antimicrobial agents and ch… (2019) | [10.1128/AAC.02515-18](https://doi.org/10.1128/AAC.02515-18) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Watson_2019_AST](drugs/drug_fexinidazole/pd_Watson_2019_AST.md) | peak observed serum aspartate aminotransferase (AST) ← fexinidazole sulfone metabolite (M2) · direct sigmoid Emax (Hill) effect | — | Watson JA et al., Pharmacokinetic-Pharmacodynamic Assessm…, Antimicrobial agents and ch… (2019) | [10.1128/AAC.02515-18](https://doi.org/10.1128/AAC.02515-18) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Watson_2019_hemoglobin](drugs/drug_fexinidazole/pd_Watson_2019_hemoglobin.md) | nadir observed hemoglobin ← fexinidazole sulfone metabolite (M2) · direct sigmoid Emax (Hill) effect | — | Watson JA et al., Pharmacokinetic-Pharmacodynamic Assessm…, Antimicrobial agents and ch… (2019) | [10.1128/AAC.02515-18](https://doi.org/10.1128/AAC.02515-18) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Watson_2019_lymphocytes](drugs/drug_fexinidazole/pd_Watson_2019_lymphocytes.md) | nadir observed lymphocyte counts ← fexinidazole sulfone metabolite (M2) · direct sigmoid Emax (Hill) effect | — | Watson JA et al., Pharmacokinetic-Pharmacodynamic Assessm…, Antimicrobial agents and ch… (2019) | [10.1128/AAC.02515-18](https://doi.org/10.1128/AAC.02515-18) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Watson_2019_neutrophils](drugs/drug_fexinidazole/pd_Watson_2019_neutrophils.md) | nadir observed blood neutrophil counts ← fexinidazole sulfone metabolite (M2) · direct sigmoid Emax (Hill) effect | — | Watson JA et al., Pharmacokinetic-Pharmacodynamic Assessm…, Antimicrobial agents and ch… (2019) | [10.1128/AAC.02515-18](https://doi.org/10.1128/AAC.02515-18) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Watson_2019_platelets](drugs/drug_fexinidazole/pd_Watson_2019_platelets.md) | nadir observed platelet counts ← fexinidazole sulfone metabolite (M2) · direct sigmoid Emax (Hill) effect | — | Watson JA et al., Pharmacokinetic-Pharmacodynamic Assessm…, Antimicrobial agents and ch… (2019) | [10.1128/AAC.02515-18](https://doi.org/10.1128/AAC.02515-18) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=fexinidazole).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
+| metabolism | kidney | `CYP3A5` inhibitor/substrate | DrugBank actor |
+| metabolism | liver | `CYP1A2` inducer/inhibitor/substrate, `CYP2B6` inducer/inhibitor/substrate, `CYP2C19` inhibitor/substrate, `CYP2D6` inhibitor/substrate, `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor/substrate, `FMO3` substrate, `SLCO1B1` inhibitor, `SLCO1B3` inhibitor | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor/substrate | DrugBank actor |
+| excretion | kidney | `SLC22A2` inhibitor, `SLC22A6` inhibitor, `SLC22A8` inhibitor, `SLC47A1` inhibitor, `SLC47A2` inhibitor | DrugBank actor |
+| excretion | liver | `SLC47A1` inhibitor | DrugBank actor |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -58,20 +71,20 @@ Fexinidazole is an antiprotozoal medicine used to treat trypanosomiasis (sleepin
 
 - **PubMed hits:** 10 matched, 10 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Cumming_2026 | irrelevant | 0 | 0 | This is a PK-PD study of BMH-21 analog Compound 2, not fexinidazole, which is only mentioned as background therapy; no fexinidazole disposition parameters are reported. |
-| popPK | Fersing_2020 | irrelevant | 0 | 0 | Fexinidazole is only a comparator/reference drug; PK parameters (t1/2, CL, AUC) reported are for a different compound (hit 19) in mouse. |
-| popPK | Fersing_2020_2 | irrelevant | 0 | 0 | Fexinidazole is only a reference/comparator drug; the PK parameters (t1/2 7.7 h, clearance 0.51 mL/h) are for compound 8, a different imidazopyridine derivative, in mouse. |
-| popPK | Paoli-Lombardo_2022 | irrelevant | 0 | 0 | Medicinal chemistry SAR paper on new antileishmanial imidazopyridine derivatives; fexinidazole is only a reference comparator and no population-PK disposition parameters (CL, V, ka) for it are reported. |
-| popPK | Rivas_2024 | irrelevant | 0 | 0 | This is a medicinal chemistry/in vitro study of Ru(II) ferrocenyl compounds; fexinidazole is only mentioned as background and no PK parameters are reported. |
-| popPK | Rocha-Hasler_2021 | irrelevant | 0 | 0 | In vitro/in vivo efficacy study of posaconazole-tomatidine combinations against T. cruzi; fexinidazole is only a combination partner with EC50/FICI data, no PK parameters. |
-| popPK | Verrest_2024 | irrelevant | 3 | 1 | This is a PK-PD model of Leishmania parasite dynamics; fexinidazole's own PK model parameters (CL etc.) come from a prior internal report/supplementary material and no numeric fexinidazole disposition values appear in the evidence. |
+| popPK | Cumming_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics and efficacy of RNA Polymerase 1 inhibitor Compound 2 (BMH-21/LI-623), not fexinidazole, which is only mentioned as a background therapeutic for context. |
+| popPK | Fersing_2020 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters (half-life, AUC, clearance) for a novel synthesized compound (19) in mice, using fexinidazole only as an in vitro reference drug. |
+| popPK | Fersing_2020_2 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for a novel nitroimidazole derivative (compound 8), not fexinidazole, which is only used as a comparator/reference drug. |
+| popPK | Paoli-Lombardo_2022 | irrelevant | 0 | 0 | This is an in vitro SAR study of new antileishmanial compounds, and fexinidazole is used only as a reference/comparator drug, with no population PK parameters reported for it. |
+| popPK | Rivas_2024 | irrelevant | 0 | 0 | The paper focuses on new Ru(II) compounds against trypanosomes; fexinidazole is mentioned only as background context for available drugs, and no PK parameters for fexinidazole are reported. |
+| popPK | Rocha-Hasler_2021 | irrelevant | 0 | 0 | The paper is a pharmacodynamic study of posaconazole and tomatidine against T. cruzi where fexinidazole is used only as a reference comparator drug, with no PK parameters reported. |
+| popPK | Verrest_2024 | irrelevant | 3 | 0 | The study focuses on parasite pharmacodynamics; fexinidazole PK parameters are from a previous internal report and are not numerically reported in the provided evidence. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 07:43 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-14 19:18 UTC</sub>

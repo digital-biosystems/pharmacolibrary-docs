@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;canakinumab&quot;,&quot;href&quot;:&quot;drugs/drug_canakinumab/&quot;},{&quot;label&quot;:&quot;Ait-Oudhia_2012 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Canakinumab_Urien2013_reference&quot;,&quot;label&quot;:&quot;Urien_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_canakinumab/Canakinumab_Urien2013_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Canakinumab_Chakraborty2012_10_psoriasis&quot;,&quot;label&quot;:&quot;Chakraborty_2012_10_psoriasis&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_canakinumab/Canakinumab_Chakraborty2012_10_psoriasis.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Canakinumab_Chakraborty2012_20_asthmatic&quot;,&quot;label&quot;:&quot;Chakraborty_2012_20_asthmatic&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_canakinumab/Canakinumab_Chakraborty2012_20_asthmatic.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Canakinumab_Chakraborty2012_20_ra&quot;,&quot;label&quot;:&quot;Chakraborty_2012_20_ra&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_canakinumab/Canakinumab_Chakraborty2012_20_ra.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Canakinumab_Chakraborty2012_25_adult_caps&quot;,&quot;label&quot;:&quot;Chakraborty_2012_25_adult_caps&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_canakinumab/Canakinumab_Chakraborty2012_25_adult_caps.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Canakinumab_Chakraborty2012_2_paediatric_caps&quot;,&quot;label&quot;:&quot;Chakraborty_2012_2_paediatric_caps&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_canakinumab/Canakinumab_Chakraborty2012_2_paediatric_caps.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Canakinumab_Chakraborty2012_4_adult_caps&quot;,&quot;label&quot;:&quot;Chakraborty_2012_4_adult_caps&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_canakinumab/Canakinumab_Chakraborty2012_4_adult_caps.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Canakinumab_Chakraborty2012_5_healthy&quot;,&quot;label&quot;:&quot;Chakraborty_2012_5_healthy&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_canakinumab/Canakinumab_Chakraborty2012_5_healthy.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Canakinumab_Chakraborty2012_5_ra&quot;,&quot;label&quot;:&quot;Chakraborty_2012_5_ra&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_canakinumab/Canakinumab_Chakraborty2012_5_ra.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Canakinumab_Chakraborty2012_6_healthy&quot;,&quot;label&quot;:&quot;Chakraborty_2012_6_healthy&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_canakinumab/Canakinumab_Chakraborty2012_6_healthy.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Canakinumab_Chakraborty2012_6_ra&quot;,&quot;label&quot;:&quot;Chakraborty_2012_6_ra&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_canakinumab/Canakinumab_Chakraborty2012_6_ra.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Canakinumab_Chakraborty2012_human&quot;,&quot;label&quot;:&quot;Chakraborty_2012_human&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_canakinumab/Canakinumab_Chakraborty2012_human.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Canakinumab_Chakraborty2012_population_mean_se_of_2&quot;,&quot;label&quot;:&quot;Chakraborty_2012_population_mean_se_of_2&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_canakinumab/Canakinumab_Chakraborty2012_population_mean_se_of_2.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Canakinumab_Huang2023_reference&quot;,&quot;label&quot;:&quot;Huang_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_canakinumab/Canakinumab_Huang2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Canakinumab_Urien2013_reference&quot;,&quot;label&quot;:&quot;Urien_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_canakinumab/Canakinumab_Urien2013_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Krause_2014_Pflare&quot;,&quot;label&quot;:&quot;Krause_2014 \u00b7 Pflare&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_canakinumab/pd_Krause_2014_Pflare.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,22 +17,22 @@
 
 ### Reviewer guidance
 
-**Canakinumab model rejected because the Km parameter unit nmol/l could not be converted to SI, causing a dimension mismatch.**
+**C5 dimension mismatch on a structural parameter.**
 
-The Km parameter is assigned a value of 0.38 with the unit nmol/l, described as the affinity of an enzyme for its substrate. This specific unit could not be converted to SI, preventing the calculation of a valid structural parameter. Consequently, the model was held back due to this dimension mismatch on a structural parameter. Extracted — canakinumab: t1/2ka 0.266 day⁻¹, V1 3.71 l, V 2.24 l, CL 0.104 l/day, Km 0.38 nmol/l, t1/2γ 1.92 h, V2 2.71 L, Q 0.174 L/day, … (+1).
+A reported unit could not be converted (t1/2ka , KD and equation variable), so that value has no SI equivalent. Extracted — canakinumab: t1/2ka 0.266 day⁻¹, V 3.71 l, CL 0.104 l/day, Q 0.165 l/day, KD 0.38 nmol/l, kabs 0.38 h-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has canakinumab, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Ait-Oudhia S et al., Bridging Clinical Outcomes of Canakinum…, CPT: pharmacometrics & syst… (2012)
   ·  DOI: [10.1038/psp.2012.6](https://doi.org/10.1038/psp.2012.6)
 
-<div class="pk-model-meta" hidden drug="canakinumab" model-id="Canakinumab_AitOudhia2012_reference" status="rejected" stale="false" population="patients with rheumatoid arthritis" measured-compound="canakinumab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="canakinumab" model-id="Canakinumab_AitOudhia2012_reference" status="rejected" stale="false" population="adults with rheumatoid arthritis" measured-compound="canakinumab" parameterization="mechanistic" topology="1C"></div>
 
-**Model structure:** 2-compartment; no model was built for this record.  
-**Parameters:** 9 extracted.
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 6 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -41,15 +41,12 @@ Ait-Oudhia S et al., Bridging Clinical Outcomes of Canakinum…, CPT: pharmacome
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| θ_ka (day⁻¹) | `Q95` · t1/2ka | 0.266 | day⁻¹ | not captured | [1] / [d] | 5 | llm (0.6) | Ait-Oudhia_2012_table_p4_1:row0:col2, Ait-Oudhia_2012_table_p4_1:row0:col3 | — | not captured |
-| θ_Vc (l) | `Q63` · V1 | 3.71 | l | 0.00371 | [l] | 37 | llm (0.6) | Ait-Oudhia_2012_table_p4_1:row1:col2, Ait-Oudhia_2012_table_p4_1:row1:col3 | — | not captured |
-| θ_Vp (l) | `Q61` · V | 2.24 | l | 0.0022400000000000002 | [l] | 39.9 | llm (0.6) | Ait-Oudhia_2012_table_p4_1:row2:col2, Ait-Oudhia_2012_table_p4_1:row2:col3 | — | not captured |
-| θ_CL and θ_CLDL (l/day) | `Q22` · CL | 0.104 | l/day | 1.2037037037037037e-09 | [l] / [d] | 11.8 | llm (0.6) | Ait-Oudhia_2012_table_p4_1:row3:col2, Ait-Oudhia_2012_table_p4_1:row3:col3 | — | not captured |
-| θ_Kd (nmol/l) | `Q1` · Km | 0.38 | nmol/l | not captured | [nM] / [l] | 34 | llm (0.6) | Ait-Oudhia_2012_table_p4_1:row6:col2, Ait-Oudhia_2012_table_p4_1:row6:col3 | — | not captured |
-| θ_β (–) | `Q900` · equation variable | 0.25 | not captured | not captured | not captured | 75.3 | llm (0.6) | Ait-Oudhia_2012_table_p4_2:row3:col2, Ait-Oudhia_2012_table_p4_2:row3:col3 | — | not captured |
-| θ_γ (–) | `Q89` · t1/2γ | 1.92 | h | 6912.0 | h | 63.6 | llm (0.6) | Ait-Oudhia_2012_table_p4_2:row4:col2, Ait-Oudhia_2012_table_p4_2:row4:col3 | — | not captured |
-| VP | `Q64` · V2 | 2.71 | L | 0.00271 | L | not captured | review_gapfill (0.7) | Chakraborty_2012:review | — | not captured |
-| CLD | `Q30` · Q | 0.174 | L/day | 2.013888888888889e-09 | L/h | not captured | review_gapfill (0.7) | Chakraborty_2012:review | — | not captured |
+| θ_ka (day⁻¹) | `Q95` · t1/2ka | 0.266 | day⁻¹ | not captured | [1] / [d] | 3 | llm (0.6) | Ait-Oudhia_2012_table_p4_1:row0:col2, Ait-Oudhia_2012_table_p4_1:row0:col3 | — | not captured |
+| θ_Vc (l) | `Q61` · V | 3.71 | l | 0.00371 | [l] | 4 | llm (0.6) | Ait-Oudhia_2012_table_p4_1:row1:col2, Ait-Oudhia_2012_table_p4_1:row1:col3 | — | not captured |
+| θ_CL and θ_CLDL (l/day) | `Q22` · CL | 0.104 | l/day | 1.2037037037037037e-09 | [l] / [d] | 5 | llm (0.6) | Ait-Oudhia_2012_table_p4_1:row3:col2, Ait-Oudhia_2012_table_p4_1:row3:col3 | — | not captured |
+| θ_Q (l/day) | `Q30` · Q | 0.165 | l/day | 1.9097222222222222e-09 | [l] / [d] | 5 | llm (0.6) | Ait-Oudhia_2012_table_p4_1:row5:col2, Ait-Oudhia_2012_table_p4_1:row5:col3 | — | not captured |
+| θ_Kd (nmol/l) | `Q331` · KD | 0.38 | nmol/l | not captured | [nM] / [l] | 8 | llm (0.6) | Ait-Oudhia_2012_table_p4_1:row6:col2, Ait-Oudhia_2012_table_p4_1:row6:col3 | — | not captured |
+| θ_t (day) | `Q900` · equation variable | 55.9 | day | not captured | [d] | 0.89 | llm (0.6) | Ait-Oudhia_2012_table_p4_2:row8:col2 | — | not captured |
 | Ka (h-1) | `Q49` · kabs | 0.38 | h-1 | 0.00010555555555555555 | 1/h | not captured | review_gapfill (0.7) | Urien_2013:review | — | not captured |
 
 <details class="legend">
@@ -66,33 +63,27 @@ Ait-Oudhia S et al., Bridging Clinical Outcomes of Canakinum…, CPT: pharmacome
 - table section residual_error: 'b₂ (nmol/l)' routed out of structural estimates ('Residual variability')
 - table section residual_error: 'a (%)' routed out of structural estimates ('Residual variability')
 - unit_dimension_mismatch: 'θ_ka (day⁻¹)' → Q95 (unit '1 / [time]' vs ontology '[time]') — route to review
+- dropped unlinked row (NIL): 'θ_Vp (l)' — extend the ontology if this is a real PK parameter (source ['Ait-Oudhia_2012_table_p4_1:row2:col2', 'Ait-Oudhia_2012_table_p4_1:row2:col3'])
 - dropped unlinked row (NIL): 'θ_CLL (l/day)' — extend the ontology if this is a real PK parameter (source ['Ait-Oudhia_2012_table_p4_1:row4:col2', 'Ait-Oudhia_2012_table_p4_1:row4:col3'])
-- dropped unlinked row (NIL): 'θ_Q (l/day)' — extend the ontology if this is a real PK parameter (source ['Ait-Oudhia_2012_table_p4_1:row5:col2', 'Ait-Oudhia_2012_table_p4_1:row5:col3'])
-- unit_dimension_mismatch: 'θ_Kd (nmol/l)' → Q1 (unit '[substance] / [length] ** 3' vs ontology '[mass] / [length] ** 3') — route to review
+- unit_dimension_mismatch: 'θ_Kd (nmol/l)' → Q331 (unit '[substance] / [length] ** 3' vs ontology '[mass] / [length] ** 3') — route to review
 - dropped unlinked row (NIL): 'θ_F (–)' — extend the ontology if this is a real PK parameter (source ['Ait-Oudhia_2012_table_p4_1:row7:col2', 'Ait-Oudhia_2012_table_p4_1:row7:col3'])
 - dropped unlinked row (NIL): 'θ_CRPO (mg/l)' — extend the ontology if this is a real PK parameter (source ['Ait-Oudhia_2012_table_p4_2:row1:col2', 'Ait-Oudhia_2012_table_p4_2:row1:col3'])
 - dropped PD-category row 'θ_out (day⁻¹)' → Q328 (kout, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Ait-Oudhia_2012_table_p4_2:row2:col2', 'Ait-Oudhia_2012_table_p4_2:row2:col3'])
+- dropped unlinked row (NIL): 'θ_β (–)' — extend the ontology if this is a real PK parameter (source ['Ait-Oudhia_2012_table_p4_2:row3:col2', 'Ait-Oudhia_2012_table_p4_2:row3:col3'])
+- dropped unlinked row (NIL): 'θ_γ (–)' — extend the ontology if this is a real PK parameter (source ['Ait-Oudhia_2012_table_p4_2:row4:col2', 'Ait-Oudhia_2012_table_p4_2:row4:col3'])
 - dropped PD-category row 'θ_Emax (–)' → Q320 (Emax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Ait-Oudhia_2012_table_p4_2:row6:col2'])
 - dropped PD-category row 'θ_EC50-IL-1β-free (pg/ml)' → Q321 (EC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Ait-Oudhia_2012_table_p4_2:row7:col2'])
-- dropped duplicate Q900 ('θ_t (day)', value '55.9') — already have one for this compound
-- dropped value-less row: 'θ_η (–)' (captured trailing unit '–' for child rows)
-- implicit units: 'θ_γ (–)' → h (from the popPK convention: "The parameter is described as a 'Half-life' (t1/2γ). In population pharmacokinetic modeling, half-life is a time constan")
+- dropped unlinked row (NIL): 'θ_η (–)' — extend the ontology if this is a real PK parameter (source ['Ait-Oudhia_2012_table_p4_2:row11:col3'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=canakinumab
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- structure disagreement: deterministic 2C vs LLM 1C — review compartment count
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - status held at route_to_review — not promoted
 - molar mass: none found for 'canakinumab' — its concentrations stay mass-only
-- gap-filled Q64 (V2) from Chakraborty_2012's review values (primary lacked it)
-- gap-filled Q30 (Q) from Chakraborty_2012's review values (primary lacked it)
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - gap-filled Q49 (kabs) from Urien_2013's review values (primary lacked it)
 
 **Extraction notes:**
-- final table tbl1: grid unusable → re-running vision table extraction for Ait-Oudhia_2012
-- unparsed cell Ait-Oudhia_2012_table_p4_1:row4:col1 = 'Free IL-1β clearance'
-- unparsed cell Ait-Oudhia_2012_table_p4_1:row11:col1 = 'Total IL-1β proportional error'
-- unparsed cell Ait-Oudhia_2012_table_p4_1:row12:col1 = 'Total IL-1β additive error'
-- unparsed cell Ait-Oudhia_2012_table_p4_2:row6:col1 = 'Maximum effect of free IL-1β'
-- unparsed cell Ait-Oudhia_2012_table_p4_2:row7:col1 = 'Free IL-1β concentration inducing 50% of Emax'
+- table Ait-Oudhia_2012_table_p4_2: unparsed_numeric_cell
 - companion parameter table p4_2 transcribed (13 record(s))
 - no LLM table selection; kept 2 deterministically-scored parameter table(s)
 
@@ -135,25 +126,19 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C1_half_life_beta | fail | 4.5 | 39.73 | 8.8289 | 0.25 | reported t½β |
-| C5_dimension_Q1 | fail | [substance] / [length] ** 3 | nmol/l | not captured | not captured | ['Ait-Oudhia_2012_table_p4_1:row6:col2', 'Ait-Oudhia_2012_table_p4_1:row6:col3'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Ait-Oudhia_2012_table_p4_1:row3:col2', 'Ait-Oudhia_2012_table_p4_1:row3:col3'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Chakraborty_2012:review'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Ait-Oudhia_2012_table_p4_1:row5:col2', 'Ait-Oudhia_2012_table_p4_1:row5:col3'] |
+| C5_dimension_Q331 | fail | [substance] / [length] ** 3 | nmol/l | not captured | not captured | ['Ait-Oudhia_2012_table_p4_1:row6:col2', 'Ait-Oudhia_2012_table_p4_1:row6:col3'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Urien_2013:review'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Ait-Oudhia_2012_table_p4_1:row2:col2', 'Ait-Oudhia_2012_table_p4_1:row2:col3'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Ait-Oudhia_2012_table_p4_1:row1:col2', 'Ait-Oudhia_2012_table_p4_1:row1:col3'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Chakraborty_2012:review'] |
-| C5_dimension_Q89 | pass | [time] | not captured | not captured | not captured | ['Ait-Oudhia_2012_table_p4_2:row4:col2', 'Ait-Oudhia_2012_table_p4_2:row4:col3'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Ait-Oudhia_2012_table_p4_1:row1:col2', 'Ait-Oudhia_2012_table_p4_1:row1:col3'] |
 | C5_dimension_Q95 | fail | 1 / [time] | day⁻¹ | not captured | not captured | ['Ait-Oudhia_2012_table_p4_1:row0:col2', 'Ait-Oudhia_2012_table_p4_1:row0:col3'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.104 | not captured | not captured | ['Ait-Oudhia_2012_table_p4_1:row3:col2', 'Ait-Oudhia_2012_table_p4_1:row3:col3'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.00433 L/h | not captured | not captured | ['Ait-Oudhia_2012_table_p4_1:row3:col2', 'Ait-Oudhia_2012_table_p4_1:row3:col3'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 2.24 L | not captured | not captured | ['Ait-Oudhia_2012_table_p4_1:row2:col2', 'Ait-Oudhia_2012_table_p4_1:row2:col3'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 3.71 L | not captured | not captured | ['Ait-Oudhia_2012_table_p4_1:row1:col2', 'Ait-Oudhia_2012_table_p4_1:row1:col3'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 2.71 L | not captured | not captured | ['Chakraborty_2012:review'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 3.71 L | not captured | not captured | ['Ait-Oudhia_2012_table_p4_1:row1:col2', 'Ait-Oudhia_2012_table_p4_1:row1:col3'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -162,7 +147,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_canakinumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Ait-Oudhia_2012` / `Ait-Oudhia_2012::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_canakinumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Ait-Oudhia_2012` / `Ait-Oudhia_2012::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -178,4 +163,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 23:49 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 21:03 UTC</sub>

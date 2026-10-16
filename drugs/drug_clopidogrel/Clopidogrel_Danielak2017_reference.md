@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;clopidogrel&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/&quot;},{&quot;label&quot;:&quot;Danielak_2017 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clopidogrel_Jung2024&quot;,&quot;label&quot;:&quot;Jung_2024_EM&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Jung2024.md&quot;,&quot;status&quot;:&quot;curated&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Henrich2021_reference&quot;,&quot;label&quot;:&quot;Henrich_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Henrich2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Jiang2025_reference&quot;,&quot;label&quot;:&quot;Jiang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Jiang2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Jung2024_reference&quot;,&quot;label&quot;:&quot;Jung_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Jung2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Lv2025_reference&quot;,&quot;label&quot;:&quot;Lv_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Lv2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Ma2014_reference&quot;,&quot;label&quot;:&quot;Ma_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Ma2014_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Purohit2026_reference&quot;,&quot;label&quot;:&quot;Purohit_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Purohit2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Wang2025_reference&quot;,&quot;label&quot;:&quot;Wang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Wang2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Yata2026_reference&quot;,&quot;label&quot;:&quot;Yata_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Yata2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Zhang2024_reference&quot;,&quot;label&quot;:&quot;Zhang_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Zhang2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Jung_2024_PRU&quot;,&quot;label&quot;:&quot;Jung_2024 \u00b7 PRU&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/pd_Jung_2024_PRU.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Simon_2015_IPA&quot;,&quot;label&quot;:&quot;Simon_2015 \u00b7 IPA&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/pd_Simon_2015_IPA.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pgx_Jung_2024_CYP2C19_Q45&quot;,&quot;label&quot;:&quot;Jung_2024 \u00b7 CYP2C19&quot;,&quot;group&quot;:&quot;PGx&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/pgx_Jung_2024_CYP2C19_Q45.md&quot;,&quot;status&quot;:&quot;quantitative&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clopidogrel_Jung2024&quot;,&quot;label&quot;:&quot;Jung_2024_EM&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Jung2024.md&quot;,&quot;status&quot;:&quot;curated&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Jiang2025_reference&quot;,&quot;label&quot;:&quot;Jiang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Jiang2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Lv2025_reference&quot;,&quot;label&quot;:&quot;Lv_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Lv2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Wang2025_reference&quot;,&quot;label&quot;:&quot;Wang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Wang2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Yata2026_reference&quot;,&quot;label&quot;:&quot;Yata_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Yata2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Zhang2024_reference&quot;,&quot;label&quot;:&quot;Zhang_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Zhang2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Henrich2021_reference&quot;,&quot;label&quot;:&quot;Henrich_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Henrich2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Jung2024_reference&quot;,&quot;label&quot;:&quot;Jung_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Jung2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Ma2014_reference&quot;,&quot;label&quot;:&quot;Ma_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Ma2014_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Purohit2026_reference&quot;,&quot;label&quot;:&quot;Purohit_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Purohit2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Jung_2024_PRU&quot;,&quot;label&quot;:&quot;Jung_2024 \u00b7 PRU&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/pd_Jung_2024_PRU.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Simon_2015_IPA&quot;,&quot;label&quot;:&quot;Simon_2015 \u00b7 IPA&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/pd_Simon_2015_IPA.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pgx_Jung_2024_CYP2C19_Q45&quot;,&quot;label&quot;:&quot;Jung_2024 \u00b7 CYP2C19&quot;,&quot;group&quot;:&quot;PGx&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/pgx_Jung_2024_CYP2C19_Q45.md&quot;,&quot;status&quot;:&quot;quantitative&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # clopidogrel — `Clopidogrel_Danielak2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.357), gpt-oss:120b (not confirmed, agreement 0.333), gpt-5.6-luna (not confirmed, agreement 0.833). Primary extraction retained.">cross-check: disputed 0/3</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.357), gpt-oss:120b (not confirmed, agreement 0.333), gpt-5.6-luna (not confirmed, agreement 0.833). Primary extraction retained.">cross-check: disputed 0/3</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -17,38 +17,37 @@
 
 ### Reviewer guidance
 
-**Rejected because clopidogrel's apparent clearance (14500 L/h) and central volume (7660 L) fall far outside physiological plausibility, suggesting a unit or scale extraction error.**
+**C5 dimension mismatch on a structural parameter; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record reports CL/F of 14500 L/h and V1/F of 7660 L for clopidogrel, magnitudes flagged as physiologically implausible and consistent with a unit or scale extraction error. The metabolite H4 parameters (V1/F 4.89 L, Q/F 252 L/h, fm 0.045) and absorption rate constant kabs 0.592 1/h were extracted, but a second reader returned different values for fm (0.044) and metabolite V1/F (4.65), leaving several parameter values unconfirmed. Extracted — clopidogrel: kabs 0.592 1/h, V1/F 7.66e+03 L, CL/F 1.45e+04 L/h; H4: fm 0.045, V1/F 4.89 L, Q/F 252 L/h.
+A reported unit could not be converted (fm), so that value has no SI equivalent. Extracted — clopidogrel: kabs 0.592 1/h, V1/F 7.66e+03 L, CL/F 21.6 L/h; H4: fm 0.045 N, V1/F 4.89 L, V2/F 252 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has clopidogrel, the second reading H4; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by glm-5.3-flash</sub>
-
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:25:40.485037+00:00) predates the upstream re-run (2026-10-05 12:53:31.820301+00:00). Current validate status: `rejected`.
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Danielak D et al., Influence of genetic co-factors on the…, European journal of clinica… (2017)
   ·  DOI: [10.1007/s00228-017-2334-z](https://doi.org/10.1007/s00228-017-2334-z)
 
-<div class="pk-model-meta" hidden drug="clopidogrel" model-id="Clopidogrel_Danielak2017_reference" status="rejected" stale="true" population="patients undergoing elective coronarography or percutaneous coronary intervention" measured-compound="clopidogrel" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="clopidogrel" model-id="Clopidogrel_Danielak2017_reference" status="rejected" stale="false" population="patients undergoing elective coronarography or percutaneous coronary intervention" measured-compound="clopidogrel" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
-**Parameters:** 6 extracted.
+**Parameters:** 6 extracted, plus 1 covariate effect.
 
-**Parameterization:** CL/F, Q/F, V1/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** CL/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| k12 [1/h] | `Q49` · kabs | 0.592 | 1/h | 0.00016444444444444444 | [1] / [h] | not captured | exact (1.0) | Tab2:row2:col1, Tab2:row2:col2, Tab2:row2:col3 | — | not captured |
-| V2/F [L] | `Q290` · V1/F | 7660 | L | 7.66 | [l] | not captured | exact (1.0) | Tab2:row3:col1, Tab2:row3:col2, Tab2:row3:col3 | — | not captured |
-| CL/F [L/h] | `Q27` · CL/F | 14500 | L/h | 0.004027777777777778 | [l] / [h] | not captured | llm_confirmed (0.6) | Tab2:row4:col1, Tab2:row4:col2, Tab2:row4:col3 | — | 49.8 (None% RSE) |
-| FM | `Q45` · fm | 0.045 | not captured | not captured | not captured | not captured | exact (1.0) | Tab2:row5:col1, Tab2:row5:col2, Tab2:row5:col3 | — | 71.4 (None% RSE) |
-| V3/F [L] | `Q290` · V1/F | 4.89 | L | 0.004889999999999999 | [l] | not captured | exact (1.0) | Tab2:row6:col1, Tab2:row6:col2, Tab2:row6:col3 | — | not captured |
-| Q2/F [L/h] | `Q69` · Q/F | 252 | L/h | 7e-05 | [l] / [h] | not captured | exact (1.0) | Tab2:row7:col1, Tab2:row7:col2, Tab2:row7:col3 | — | not captured |
+| k12 [1/h] | `Q49` · kabs | 0.592 | 1/h | 0.00016444444444444444 | [1] / [h] | 3.53 | exact (1.0) | Danielak_2017_table_p5_1:row1:col1, Danielak_2017_table_p5_1:row1:col2 | — | not captured |
+| V2/F [L] | `Q290` · V1/F | 7660 | L | 7.66 | [l] | 4.3 | exact (1.0) | Danielak_2017_table_p5_1:row2:col1, Danielak_2017_table_p5_1:row2:col2 | — | not captured |
+| FM | `Q45` · fm | 0.045 | N | not captured | [n] | 3.6 | exact (1.0) | Danielak_2017_table_p5_1:row4:col1, Danielak_2017_table_p5_1:row4:col2, Tab2:footnote | — | 71.4 (7.9% RSE) |
+| V3/F [L] | `Q290` · V1/F | 4.89 | L | 0.004889999999999999 | [l] | 4.5 | exact (1.0) | Danielak_2017_table_p5_1:row5:col1, Danielak_2017_table_p5_1:row5:col2 | — | not captured |
+| Q/F [L/h] | `Q82` · V2/F | 252 | L/h | 7e-05 | [l] / [h] | 4.2 | exact (1.0) | Danielak_2017_table_p5_1:row6:col1, Danielak_2017_table_p5_1:row6:col2 | — | 63.7 (19.6% RSE) |
+| theta_fm_cyp2c19 | `Q900` · theta_fm_cyp2c19 | -0.45 | not captured | not captured | not captured | 8.4 | not captured (not captured) | Danielak_2017_table_p5_1:row11:col1, Danielak_2017_table_p5_1:row11:col2 | — | not captured |
+| CL/F (L/h) | `Q27` · CL/F | 21.6 | L/h | 6e-06 | L/h | not captured | review_gapfill (0.7) | Jiang_2025:review | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -61,17 +60,22 @@ Danielak D et al., Influence of genetic co-factors on the…, European journal o
 - table section covariance: 'k12 and V2/F' routed out of structural estimates ('Covariance between')
 - table section covariance: 'Proportional residual error for CLP' routed out of structural estimates ('Covariance between')
 - table section covariance: 'Proportional residual error for H4' routed out of structural estimates ('Covariance between')
-- dropped duplicate Q45 ('on FM (COV)b', value '-0.45') — already have one for this compound
+- column 'final model / estimate (rse, %)' classified 'rse' by the LLM but kept as the estimate: the header names the point value
+- unit_dimension_unknown: 'N' (fm)
+- unit_dimension_mismatch: 'Q/F [L/h]' → Q82 (unit '[length] ** 3 / [time]' vs ontology '[length] ** 3') — route to review
+- NIL: refused to back-fill base 'IIV' from footnote/prose loose number None (source ['Tab2:footnote']); the table cell was unparseable — needs review
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=clopidogrel
-- template fit: PK_3M_9C — formed from central; parent 1, metabolites [1]
-- row roles (LLM): model_class=compartmental; 14/14 row label(s) assigned, 18 linked by role; re-tagged parent→H4 ×16
-- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- template fit: PK_3M_9C — formed from central; parent 1, metabolites [2]
+- pharmacogenetic covariate 'theta_fm_cyp2c19' (cyp2c19) — PGx domain
+- status held at route_to_review — not promoted
+- row roles (LLM): model_class=compartmental; 14/14 row label(s) assigned, 11 linked by role; re-tagged parent→H4 ×12, clopidogrel→H4 ×1
+- gap-filled Q27 (CL/F) from Jiang_2025's review values (primary lacked it)
+- skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- unparsed cell Tab2:row13:col3 = '−0.48–−0.41'
-- unparsed cell Tab2:row16:col3 = '−0.49–−0.42'
-- unparsed cell Tab2:row17:col3 = '−0.68–−0.58'
+- table Danielak_2017_table_p5_1: ambiguous_numeric_format
 - LLM selected parameter table(s) 2
 
 ## Validation
@@ -121,19 +125,21 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row4:col1', 'Tab2:row4:col2', 'Tab2:row4:col3'] |
-| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row3:col1', 'Tab2:row3:col2', 'Tab2:row3:col3'] |
-| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row6:col1', 'Tab2:row6:col2', 'Tab2:row6:col3'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Tab2:row2:col1', 'Tab2:row2:col2', 'Tab2:row2:col3'] |
-| C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row7:col1', 'Tab2:row7:col2', 'Tab2:row7:col3'] |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Jiang_2025:review'] |
+| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['Danielak_2017_table_p5_1:row2:col1', 'Danielak_2017_table_p5_1:row2:col2'] |
+| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['Danielak_2017_table_p5_1:row5:col1', 'Danielak_2017_table_p5_1:row5:col2'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Danielak_2017_table_p5_1:row1:col1', 'Danielak_2017_table_p5_1:row1:col2'] |
+| C5_dimension_Q82 | fail | [length] ** 3 / [time] | L/h | not captured | not captured | ['Danielak_2017_table_p5_1:row6:col1', 'Danielak_2017_table_p5_1:row6:col2'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | fail | clearance within physiological range | 1.45e+04 L/h | not captured | not captured | ['Tab2:row4:col1', 'Tab2:row4:col2', 'Tab2:row4:col3'] |
-| C9_phys_window_Q290 | pass | volume within physiological range | 7.66e+03 L | not captured | not captured | ['Tab2:row3:col1', 'Tab2:row3:col2', 'Tab2:row3:col3'] |
-| C9_phys_window_Q290 | pass | volume within physiological range | 4.89 L | not captured | not captured | ['Tab2:row6:col1', 'Tab2:row6:col2', 'Tab2:row6:col3'] |
+| C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 21.6 L/h | not captured | not captured | ['Jiang_2025:review'] |
+| C9_phys_window_Q290 | pass | volume within physiological range | 7.66e+03 L | not captured | not captured | ['Danielak_2017_table_p5_1:row2:col1', 'Danielak_2017_table_p5_1:row2:col2'] |
+| C9_phys_window_Q290 | pass | volume within physiological range | 4.89 L | not captured | not captured | ['Danielak_2017_table_p5_1:row5:col1', 'Danielak_2017_table_p5_1:row5:col2'] |
+| C9_phys_window_Q82 | pass | volume within physiological range | 0.07 L | not captured | not captured | ['Danielak_2017_table_p5_1:row6:col1', 'Danielak_2017_table_p5_1:row6:col2'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -142,7 +148,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_clopidogrel/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Danielak_2017` / `Danielak_2017::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_clopidogrel/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Danielak_2017` / `Danielak_2017::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -158,4 +164,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 12:53 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 22:16 UTC</sub>

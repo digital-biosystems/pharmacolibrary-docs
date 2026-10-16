@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06D&quot;,&quot;href&quot;:&quot;atc/N06D.md&quot;},{&quot;label&quot;:&quot;lecanemab&quot;,&quot;href&quot;:&quot;drugs/drug_lecanemab/&quot;},{&quot;label&quot;:&quot;Hayato_2022 \u00b7 PD amyloid PET standard uptake ratio&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06D&quot;,&quot;href&quot;:&quot;atc/N06D.md&quot;},{&quot;label&quot;:&quot;lecanemab&quot;,&quot;href&quot;:&quot;drugs/drug_lecanemab/&quot;},{&quot;label&quot;:&quot;Hayato_2022 \u00b7 PD Amyloid PET standard uptake ratio&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# amyloid PET standard uptake ratio — PD  <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.889). Primary extraction retained.">cross-check: disputed</span>
+# Amyloid PET standard uptake ratio — PD  <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -13,13 +13,13 @@
 
 ## Record summary
 
-**As extracted:** Lecanemab (concentrations from this paper's PK model) drives amyloid PET standard uptake ratio: indirect response — drug stimulates the loss of amyloid PET standard uptake ratio.
+**As extracted:** Lecanemab (concentrations from this paper's PK model) drives Amyloid PET standard uptake ratio: indirect response — drug stimulates the loss of Amyloid PET standard uptake ratio.
 
 **Model:** No model was generated from this record.
 
-> Serum lecanemab concentration (central compartment, μg/ml) acts on amyloid PET SUVr via an indirect response model in which exposure, as an Emax function, stimulates the rate of plaque removal (K in 0.232/year; baseline SUVr 1.34; Emax 1.54; EC50 75.0 μg/ml). Covariates: APOE4 carrier status increases baseline SUVr (factor 1.04) and age increases Emax (exponent 1.58); the paper also reports a population Kout of 0.173/year.
+> Lecanemab concentration acts on Amyloid PET SUVr through an indirect response model where an Emax function increases the rate of plaque removal (elimination), characterized by a baseline SUVr of 1.34, Kin of 0.232/year, Emax of 1.54, and EC50 of 75.0 μg/ml. The paper further specifies that the population estimate for Kout is 0.173/year, reflecting the rate of amyloid re-accumulation during the gap period.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Hayato_2022`
 - **model family:** `indirect_response_iv`
@@ -38,11 +38,6 @@ Hayato S et al., Population pharmacokinetic-pharmacodyna…, CPT: pharmacometric
 | PD (effect) | K in | `Q327` · not captured | 0.232 | 1/year | not captured | llm (not captured) | Hayato_2022:pdv3 |
 | PD (effect) | E max | `Q320` · not captured | 1.54 | not captured | not captured | llm (not captured) | Hayato_2022:pdv3 |
 | PD (effect) | EC50 | `Q321` · not captured | 75.0 | μg/ml | not captured | llm (not captured) | Hayato_2022:pdv3 |
-| model term | APOE4 carrier ~ baseline | `Q900` · not captured | 1.04 | not captured | not captured | llm (not captured) | Hayato_2022:pdv3 |
-| model term | Age ~ E max (exponent) | `Q900` · not captured | 1.58 | not captured | not captured | llm (not captured) | Hayato_2022:pdv3 |
-| variability | Baseline IIV | `Q312` · not captured | 10.9 | CV% | not captured | llm (not captured) | Hayato_2022:pdv3 |
-| variability | E max IIV | `Q312` · not captured | 50.3 | CV% | not captured | llm (not captured) | Hayato_2022:pdv3 |
-| variability | Correlation baseline ~ E max (R) | `Q312` · not captured | 0.669 | not captured | not captured | llm (not captured) | Hayato_2022:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -50,20 +45,14 @@ Hayato S et al., Population pharmacokinetic-pharmacodyna…, CPT: pharmacometric
 </details>
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `einfracz:gpt-oss-120b` | not confirmed | 0.889 (8/9 fields) | 1 |
+| `einfracz:gpt-oss-120b` | confirmed | 1.0 (8/8 fields) | none |
 
-<details><summary>1 field discrepancy</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `einfracz:gpt-oss-120b` | `parameters[Q900]` | 1.58 | not captured | only_one_extracted |
-
-</details>
+_All readers agree on the compared fields of this PD record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>

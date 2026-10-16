@@ -19,15 +19,15 @@
 
 **Model:** No model was generated from this record.
 
-> The paper describes a catenary-lifetime-based indirect response model where romiplostim stimulates the production of hemoglobin, with the mean corpuscular HGB (MCH) estimated directly from the data as 21.75 pg/cell. The record lists a parameter SmaxRM1 with a value of 0.07491, but the provided excerpts do not specify the mechanism of action or other potency/rate values such as IC50, Emax, or ke0.
+> The paper states that a catenary-lifetime-based indirect response model was used but does not specify whether romiplostim concentrations stimulate the production or elimination of hemoglobin or provide mechanism details beyond the model family name. The record lists a parameter SmaxRM1 of 0.07491, but the paper does not state the units, potency (e.g., IC50, Emax), or rate constants for this parameter.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Fan_2023`
 - **model family:** `indirect_response_iii`
 - **driver:** `pk_record`
 - **tier:** descriptive
-- **effect:** stimulation/proportional
+- **effect:** stimulation/additive
 
 ## Citation
 Fan X et al., Novel Combination of Erythropoietin and…, ACS pharmacology & translat… (2023)
@@ -37,7 +37,6 @@ Fan X et al., Novel Combination of Erythropoietin and…, ACS pharmacology & tra
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
 | PD (effect) | SmaxRM1 | `Q335` · not captured | 0.07491 | not captured | not captured | llm (not captured) | Fan_2023:pdv3 |
-| — | MCH | `Q100` · not captured | 21.75 | pg/cell | not captured | nil (not captured) | Fan_2023:pdv3 |
 | variability | σHGB | `Q315` · not captured | 1.177 | not captured | not captured | llm (not captured) | Fan_2023:pdv3 |
 
 <details class="legend">

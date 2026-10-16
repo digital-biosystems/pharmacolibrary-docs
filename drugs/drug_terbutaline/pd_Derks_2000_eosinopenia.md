@@ -18,9 +18,9 @@
 
 **Model:** No model was generated from this record.
 
-> Terbutaline plasma concentrations (ng/L) drive eosinopenia via an effect-compartment (link) model with an inhibitory effect, with EC50 = 1.87 ± 1.66 ng/L; the paper excerpts do not state the effect form (e.g., Emax) or the equilibration rate constant ke0.
+> The record describes an effect compartment model where terbutaline concentrations (ng/L) inhibit eosinopenia, with an EC50 of 1.87 +/- 1.66 ng/L. The paper does not provide full text to confirm the specific mechanism or other rate parameters.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
 
 - **paper:** `Derks_2000`
 - **model family:** `effect_compartment`

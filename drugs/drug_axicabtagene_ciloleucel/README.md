@@ -17,11 +17,20 @@ Axicabtagene ciloleucel is a cell and gene therapy anticancer medicine used to t
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 23:23 | 1:04 | 0/0/0 | 0/0/0 | 0/0/0 | 40,675/597 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 0/4 | 6/0 | 0 |
+| 2026-10-15 04:22 | 0:26 | 0/0/0 | 0/0/0 | 0/0/0 | 40,675/580 | einfracz / qwen3.8-27b | 6 | 0/4 | 6/0 | 0 |
 
 ## popPK records
 
 _not available_
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=axicabtagene_ciloleucel).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: CD19 (car t-cell therapy).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -42,22 +51,22 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Chartier_2024.pdf` | Chartier M et al., Investigating the Influence of Covariat…, Clinical pharmacokinetics (2024) | popPK | 10 | [10.1007/s40262-024-01413-z](https://doi.org/10.1007/s40262-024-01413-z) | [39240498](https://pubmed.ncbi.nlm.nih.gov/39240498) | The paper describes a population cellular kinetic model for axicabtagene_ciloleucel, but the specific numeric parameter values (e.g., growth rates, clearance) are not present in the provided abstract text. |
-| `Pomeroy_2026.pdf` | Pomeroy AE et al., A Pharmacologic Model Predicts that Tum…, Blood cancer discovery (2026) | popPK | 8 | [10.1158/2643-3230.BCD-25-0138](https://doi.org/10.1158/2643-3230.BCD-25-0138) | [41143460](https://pubmed.ncbi.nlm.nih.gov/41143460) | The paper describes a population PK/PD model for axicabtagene ciloleucel, but the specific numeric parameter values are not present in the provided evidence. |
+| `Chartier_2024.pdf` | Chartier M et al., Investigating the Influence of Covariat…, Clinical pharmacokinetics (2024) | popPK | 10 | [10.1007/s40262-024-01413-z](https://doi.org/10.1007/s40262-024-01413-z) | [39240498](https://pubmed.ncbi.nlm.nih.gov/39240498) | The paper describes a population cellular kinetic model for axicabtagene ciloleucel in humans, but no specific numeric parameter values (e.g., rates, volumes, covariate effects) are present in the provided abstract or evidence text. |
+| `Pomeroy_2026.pdf` | Pomeroy AE et al., A Pharmacologic Model Predicts that Tum…, Blood cancer discovery (2026) | popPK | 6 | [10.1158/2643-3230.BCD-25-0138](https://doi.org/10.1158/2643-3230.BCD-25-0138) | [41143460](https://pubmed.ncbi.nlm.nih.gov/41143460) | The paper describes a population PK/PD model for axicabtagene ciloleucel but provides no quantitative parameter values (CL, V, etc.) in the extracted evidence. |
 
-<sub>queue written 2026-10-07T23:23:12.505261+00:00</sub>
+<sub>queue written 2026-10-15T04:22:50.218580+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Altrock_2026 | irrelevant | 1 | 0 | The text is an editorial summary of a PK/PD modeling study but contains no quantitative pharmacokinetic parameter values (CL, V, etc.) for axicabtagene ciloleucel. |
-| popPK | Chartier_2024 | relevant | 10 | 2 | The paper describes a population cellular kinetic model for axicabtagene_ciloleucel, but the specific numeric parameter values (e.g., growth rates, clearance) are not present in the provided abstract text. |
+| popPK | Altrock_2026 | irrelevant | 0 | 0 | The provided text is an editorial commentary describing a study but does not contain any quantitative pharmacokinetic parameter values or models for axicabtagene ciloleucel itself. |
+| popPK | Chartier_2024 | relevant | 10 | 0 | The paper describes a population cellular kinetic model for axicabtagene ciloleucel in humans, but no specific numeric parameter values (e.g., rates, volumes, covariate effects) are present in the provided abstract or evidence text. |
 | popPK | Elsawy_2022 | irrelevant | 0 | 0 | The paper reports patient-reported outcomes (quality of life) for axicabtagene ciloleucel, not pharmacokinetic parameters. |
-| popPK | Pomeroy_2026 | relevant | 8 | 0 | The paper describes a population PK/PD model for axicabtagene ciloleucel, but the specific numeric parameter values are not present in the provided evidence. |
-| popPK | Scordo_2023 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters (AUC) for the lymphodepleting chemotherapy agent fludarabine, not for the subject drug axicabtagene_ciloleucel. |
-| popPK | Sánchez-Salinas_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for fludarabine (the lymphodepleting chemotherapy), not for axicabtagene_ciloleucel. |
-| popPK | Varela-González-Aller_2025 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for fludarabine (the lymphodepleting agent), not for axicabtagene_ciloleucel, which is only a covariate/comparator in the model. |
+| popPK | Pomeroy_2026 | irrelevant | 6 | 0 | The paper describes a population PK/PD model for axicabtagene ciloleucel but provides no quantitative parameter values (CL, V, etc.) in the extracted evidence. |
+| popPK | Scordo_2023 | irrelevant | 0 | 0 | The study analyzes pharmacokinetic parameters for the lymphodepleting agent fludarabine, not for axicabtagene_ciloleucel. |
+| popPK | Sánchez-Salinas_2026 | irrelevant | 2 | 0 | The study reports pharmacokinetic parameters (AUC, popPK model) for fludarabine (the lymphodepleting chemotherapy), not for axicabtagene_ciloleucel, which is the subject drug. |
+| popPK | Varela-González-Aller_2025 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for the lymphodepleting chemotherapy agent fludarabine, not for the CAR-T drug axicabtagene ciloleucel. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

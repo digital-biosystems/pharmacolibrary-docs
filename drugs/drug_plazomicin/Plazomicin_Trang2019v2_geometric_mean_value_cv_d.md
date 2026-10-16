@@ -182,10 +182,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_plazomicin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Trang_2019_2` / `Trang_2019_2::geometric_mean_value_cv_d`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_plazomicin/models/modelica/Plazomicin_Trang2019v2_geometric_mean_value_cv_d.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_plazomicin/models/modelica/Plazomicin_Trang2019v2_geometric_mean_value_cv_d.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_plazomicin/models/modelica/Plazomicin_Trang2019v2_geometric_mean_value_cv_d.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_plazomicin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Trang_2019_2` / `Trang_2019_2::geometric_mean_value_cv_d`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_plazomicin/models/modelica/Plazomicin_Trang2019v2_geometric_mean_value_cv_d.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_plazomicin/models/modelica/Plazomicin_Trang2019v2_geometric_mean_value_cv_d.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_plazomicin/models/modelica/Plazomicin_Trang2019v2_geometric_mean_value_cv_d.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -203,7 +203,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_plazomicin/Plazomicin_Trang2019v2_geometric_mean_value_cv_d/Plazomicin_Trang2019v2_geometric_mean_value_cv_d.svg" alt="Plazomicin_Trang2019v2_geometric_mean_value_cv_d diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_plazomicin/Plazomicin_Trang2019v2_geometric_mean_value_cv_d/Plazomicin_Trang2019v2_geometric_mean_value_cv_d.svg" alt="Plazomicin_Trang2019v2_geometric_mean_value_cv_d diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

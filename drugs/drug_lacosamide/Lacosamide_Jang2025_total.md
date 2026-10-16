@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;lacosamide&quot;,&quot;href&quot;:&quot;drugs/drug_lacosamide/&quot;},{&quot;label&quot;:&quot;Jang_2025 \u00b7 total&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lacosamide_Li2025_boostrap&quot;,&quot;label&quot;:&quot;Li_2025_boostrap&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lacosamide/Lacosamide_Li2025_boostrap.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lacosamide_Li2025_final_models&quot;,&quot;label&quot;:&quot;Li_2025_final_models&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lacosamide/Lacosamide_Li2025_final_models.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lacosamide_Wu2026_reference&quot;,&quot;label&quot;:&quot;Wu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lacosamide/Lacosamide_Wu2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lacosamide_Yu2026_reference&quot;,&quot;label&quot;:&quot;Yu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lacosamide/Lacosamide_Yu2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lacosamide_Wang2024_reference&quot;,&quot;label&quot;:&quot;Wang_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lacosamide/Lacosamide_Wang2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lacosamide_Li2025_reference&quot;,&quot;label&quot;:&quot;Li_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lacosamide/Lacosamide_Li2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lacosamide_Wang2024_reference&quot;,&quot;label&quot;:&quot;Wang_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lacosamide/Lacosamide_Wang2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -19,7 +19,7 @@
 
 **No volume or clearance — not a compartmental population PK model.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. A reported unit could not be converted (Cmax, Cmin, Ctrough and AUC), so that value has no SI equivalent.
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. A reported unit could not be converted (Cmax, Ctrough, Cmin and AUC), so that value has no SI equivalent.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has lacosamide, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -41,10 +41,10 @@ Jang Y et al., Saliva-based lacosamide monitoring pave…, Scientific reports (2
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Saliva sample in peak level of lacosamide (mg/L) | `Q32` · Cmax | 9.32 | mg/L | not captured | [mg] / [l] | not captured | llm_confirmed (0.6) | Tab1:row40:col1 | — | not captured |
-| Saliva sample in trough level of lacosamide (mg/L) | `Q36` · Cmin | 6.70 | mg/L | not captured | [mg] / [l] | not captured | llm_corrected (0.6) | Tab1:row41:col1 | — | not captured |
-| Trough in saliva (mg/L) | `Q37` · Ctrough | 7.56 | mg/L | not captured | [mg] / [l] | not captured | llm_confirmed (0.6) | Tab1:row45:col1 | — | not captured |
-| AUC in saliva (mg h/L) | `Q88` · AUC | 120 | mg h/L | not captured | [[h] · [mg]] / [l] | not captured | llm_confirmed (0.6) | Tab1:row46:col1 | — | not captured |
+| Saliva sample in peak level of lacosamide (mg/L) | `Q32` · Cmax | 9.32 | mg/L | not captured | [mg] / [l] | not captured | llm_confirmed (0.6) | Jang_2025_table_1:row39:col1 | — | not captured |
+| Saliva sample in trough level of lacosimide (mg/L) | `Q37` · Ctrough | 6.70 | mg/L | not captured | [mg] / [l] | not captured | llm_confirmed (0.6) | Jang_2025_table_1:row40:col1 | — | not captured |
+| Trough in saliva (mg/L) | `Q36` · Cmin | 7.56 | mg/L | not captured | [mg] / [l] | not captured | llm_corrected (0.6) | Jang_2025_table_1:row44:col1 | — | not captured |
+| AUC in saliva (mg h/L) | `Q88` · AUC | 120 | mg h/L | not captured | [[h] · [mg]] / [l] | not captured | llm_confirmed (0.6) | Jang_2025_table_1:row45:col1 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -54,75 +54,35 @@ Jang Y et al., Saliva-based lacosamide monitoring pave…, Scientific reports (2
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'Age (years)' — extend the ontology if this is a real PK parameter (source ['Tab1:row2:col1'])
-- dropped unlinked row (NIL): 'Height (cm)' — extend the ontology if this is a real PK parameter (source ['Tab1:row4:col1'])
-- dropped unlinked row (NIL): 'Body weights (kg)' — extend the ontology if this is a real PK parameter (source ['Tab1:row5:col1'])
-- dropped unlinked row (NIL): 'BSA (m2)' — extend the ontology if this is a real PK parameter (source ['Tab1:row6:col1'])
-- dropped unlinked row (NIL): 'BUN (mg/dL)' — extend the ontology if this is a real PK parameter (source ['Tab1:row19:col1'])
-- dropped unlinked row (NIL): 'Creatinine (mg/dL)' — extend the ontology if this is a real PK parameter (source ['Tab1:row20:col1'])
-- dropped unlinked row (NIL): 'GFR (mL/min/1.73 m2)' — extend the ontology if this is a real PK parameter (source ['Tab1:row21:col1'])
-- dropped unlinked row (NIL): 'AST (U/L)' — extend the ontology if this is a real PK parameter (source ['Tab1:row22:col1'])
-- dropped unlinked row (NIL): 'ALT (U/L)' — extend the ontology if this is a real PK parameter (source ['Tab1:row23:col1'])
-- dropped unlinked row (NIL): 'Saliva sample in outpatient clinic (mg/L)' — extend the ontology if this is a real PK parameter (source ['Tab1:row39:col1'])
-- dropped unlinked row (NIL): 'Blood sample in outpatient clinic (mg/L)' — extend the ontology if this is a real PK parameter (source ['Tab1:row42:col1'])
+- dropped unlinked row (NIL): 'Age (years)' — extend the ontology if this is a real PK parameter (source ['Jang_2025_table_1:row1:col1'])
+- dropped unlinked row (NIL): 'Height (cm)' — extend the ontology if this is a real PK parameter (source ['Jang_2025_table_1:row3:col1'])
+- dropped unlinked row (NIL): 'Body weights (kg)' — extend the ontology if this is a real PK parameter (source ['Jang_2025_table_1:row4:col1'])
+- dropped unlinked row (NIL): 'BSA (m²)' — extend the ontology if this is a real PK parameter (source ['Jang_2025_table_1:row5:col1'])
+- dropped unlinked row (NIL): 'Daily dose of lacosamide (mg)' — extend the ontology if this is a real PK parameter (source ['Jang_2025_table_1:row11:col1'])
+- dropped unlinked row (NIL): 'Number of ASMs (n)' — extend the ontology if this is a real PK parameter (source ['Jang_2025_table_1:row13:col1'])
+- dropped unlinked row (NIL): 'BUN (mg/dL)' — extend the ontology if this is a real PK parameter (source ['Jang_2025_table_1:row18:col1'])
+- dropped unlinked row (NIL): 'Creatinine (mg/dL)' — extend the ontology if this is a real PK parameter (source ['Jang_2025_table_1:row19:col1'])
+- dropped unlinked row (NIL): 'GFR (mL/min/1.73 m²)' — extend the ontology if this is a real PK parameter (source ['Jang_2025_table_1:row20:col1'])
+- dropped unlinked row (NIL): 'AST (U/L)' — extend the ontology if this is a real PK parameter (source ['Jang_2025_table_1:row21:col1'])
+- dropped unlinked row (NIL): 'ALT (U/L)' — extend the ontology if this is a real PK parameter (source ['Jang_2025_table_1:row22:col1'])
+- dropped unlinked row (NIL): 'Time duration from the last lacosamide (hours)' — extend the ontology if this is a real PK parameter (source ['Jang_2025_table_1:row31:col1', 'Jang_2025_table_1:row36:col1'])
+- dropped unlinked row (NIL): 'Saliva sample in outpatient clinic (mg/L)' — extend the ontology if this is a real PK parameter (source ['Jang_2025_table_1:row38:col1'])
+- dropped unlinked row (NIL): 'Blood sample in outpatient clinic (mg/L)' — extend the ontology if this is a real PK parameter (source ['Jang_2025_table_1:row41:col1'])
 - dropped duplicate Q32 ('Cmax in saliva (mg/L)', value '12.8') — already have one for this compound
 - unit_dimension_unknown: 'mg h/L' (AUC)
 - dropped duplicate Q32 ('Cmax in blood (mg/L)', value '8.89') — already have one for this compound
-- dropped duplicate Q37 ('Trough in blood (mg/L)', value '5.25') — already have one for this compound
+- dropped duplicate Q36 ('Trough in blood (mg/L)', value '5.25') — already have one for this compound
 - dropped duplicate Q88 ('AUC in blood (mg h/L)', value '83.7') — already have one for this compound
+- dropped value-less row: 'Table 1.'
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=lacosamide
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
-- population split: 'total (n = 123)' subgroup of Jang_2025 (paper reports 3 populations: high seizure burden group (n = 28), low seizure burden group (n = 95), total (n = 123))
+- population split: 'total (n=123)' subgroup of Jang_2025 (paper reports 3 populations: high seizure burden group (n=28), low seizure burden group (n=95), total (n=123))
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- unparsed cell Tab1:row2:col4 = '0.029*'
-- unparsed cell Tab1:row3:col1 = '67 (54.5%)'
-- unparsed cell Tab1:row3:col2 = '53 (55.8%)'
-- unparsed cell Tab1:row3:col3 = '14 (50%)'
-- unparsed cell Tab1:row9:col1 = '113 (91.9%)'
-- unparsed cell Tab1:row9:col2 = '86 (90.5%)'
-- unparsed cell Tab1:row9:col3 = '27 (96.4%)'
-- unparsed cell Tab1:row15:col1 = '37 (30.3%)'
-- unparsed cell Tab1:row15:col2 = '26 (27.4%)'
-- unparsed cell Tab1:row15:col3 = '11 (39.3%)'
-- unparsed cell Tab1:row16:col1 = '63 (51.2%)'
-- unparsed cell Tab1:row16:col2 = '63 (66.3%)'
-- unparsed cell Tab1:row24:col1 = '101 (83.5%)'
-- unparsed cell Tab1:row24:col2 = '77 (82.8%)'
-- unparsed cell Tab1:row24:col3 = '24 (85.7%)'
-- unparsed cell Tab1:row25:col1 = '18 (14.9%)'
-- unparsed cell Tab1:row25:col2 = '16 (17.4%)'
-- unparsed cell Tab1:row25:col3 = '2 (7.4%)'
-- unparsed cell Tab1:row26:col1 = '79 (65.3%)'
-- unparsed cell Tab1:row26:col2 = '58 (63.0%)'
-- unparsed cell Tab1:row26:col3 = '21 (77.8%)'
-- unparsed cell Tab1:row27:col1 = '12 (9.9%)'
-- unparsed cell Tab1:row27:col2 = '10 (10.9%)'
-- unparsed cell Tab1:row27:col3 = '2 (7.4%)'
-- unparsed cell Tab1:row28:col1 = '7 (5.8%)'
-- unparsed cell Tab1:row28:col2 = '6 (6.5%)'
-- unparsed cell Tab1:row28:col3 = '1 (3.7%)'
-- unparsed cell Tab1:row31:col1 = '109 (88.6%)'
-- unparsed cell Tab1:row31:col2 = '86 (90.5%)'
-- unparsed cell Tab1:row31:col3 = '23 (82.1%)'
-- unparsed cell Tab1:row32:col1 = '4.25 [2.57–7]'
-- unparsed cell Tab1:row32:col2 = '4.21 [2.54–6.85]'
-- unparsed cell Tab1:row32:col3 = '4.25 [ 2.92–7.46]'
-- unparsed cell Tab1:row33:col1 = '59 (48.0%)'
-- unparsed cell Tab1:row33:col2 = '43 (45.3%)'
-- unparsed cell Tab1:row33:col3 = '16 (57.1%)'
-- unparsed cell Tab1:row34:col1 = '59 (48.0%)'
-- unparsed cell Tab1:row34:col2 = '43 (45.3%)'
-- unparsed cell Tab1:row34:col3 = '16 (57.1%)'
-- unparsed cell Tab1:row37:col1 = '4.67 [3.03–6.86]'
-- unparsed cell Tab1:row37:col2 = '5.17 [2.93–6.86]'
-- unparsed cell Tab1:row37:col3 = '3.83 [3.27–6.33]'
-- unparsed cell Tab1:row39:col4 = '0.026*'
-- unparsed cell Tab1:row42:col4 = '0.011*'
-- LLM region Jang_2025:discussion_prose: no JSON records returned
+- table Jang_2025_table_1: unparsed_numeric_cell
 
 ## Validation
 
@@ -156,10 +116,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Tab1:row40:col1'] |
-| C5_dimension_Q36 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Tab1:row41:col1'] |
-| C5_dimension_Q37 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Tab1:row45:col1'] |
-| C5_unit_missing_Q88 | fail | [mass] * [time] / [length] ** 3 | mg h/L | not captured | not captured | ['Tab1:row46:col1'] |
+| C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Jang_2025_table_1:row39:col1'] |
+| C5_dimension_Q36 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Jang_2025_table_1:row44:col1'] |
+| C5_dimension_Q37 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Jang_2025_table_1:row40:col1'] |
+| C5_unit_missing_Q88 | fail | [mass] * [time] / [length] ** 3 | mg h/L | not captured | not captured | ['Jang_2025_table_1:row45:col1'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
 <details class="legend">
@@ -169,7 +129,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_lacosamide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Jang_2025` / `Jang_2025::total`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_lacosamide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Jang_2025` / `Jang_2025::total`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -185,4 +145,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 06:56 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 19:12 UTC</sub>

@@ -133,9 +133,9 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_nalbuphine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Nie_2023` / `Nie_2023::estimates`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_nalbuphine/models/modelica/_needs_review/Nalbuphine_Nie2023_estimates.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_nalbuphine/models/modelica/_needs_review/Nalbuphine_Nie2023_estimates.deviation.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_nalbuphine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Nie_2023` / `Nie_2023::estimates`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_nalbuphine/models/modelica/_needs_review/Nalbuphine_Nie2023_estimates.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_nalbuphine/models/modelica/_needs_review/Nalbuphine_Nie2023_estimates.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -153,7 +153,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_nalbuphine/Nalbuphine_Nie2023_estimates/Nalbuphine_Nie2023_estimates.svg" alt="Nalbuphine_Nie2023_estimates diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_nalbuphine/Nalbuphine_Nie2023_estimates/Nalbuphine_Nie2023_estimates.svg" alt="Nalbuphine_Nie2023_estimates diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

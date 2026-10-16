@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;apremilast&quot;,&quot;href&quot;:&quot;drugs/drug_apremilast/&quot;},{&quot;label&quot;:&quot;Okubo_2021 \u00b7 geometric_mean_cv_geometric_mean&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Apremilast_Okubo2021_typical_values_rse_for_model_parameters&quot;,&quot;label&quot;:&quot;Okubo_2021_typical_values_rse_for_model_parameters_and_covariate_effects&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_apremilast/Apremilast_Okubo2021_typical_values_rse_for_model_parameters.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Apremilast_Warren2025_reference&quot;,&quot;label&quot;:&quot;Warren_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_apremilast/Apremilast_Warren2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Apremilast_Okubo2021_typical_values_rse_for_model_parameters&quot;,&quot;label&quot;:&quot;Okubo_2021_typical_values_rse_for_model_parameters_and_covariate_effects&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_apremilast/Apremilast_Okubo2021_typical_values_rse_for_model_parameters.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -27,7 +27,7 @@ The paper reports no distribution volume and no clearance or elimination rate; i
 Okubo Y et al., Population pharmacokinetic and exposure…, The Journal of dermatology (2021)
   ·  DOI: [10.1111/1346-8138.16068](https://doi.org/10.1111/1346-8138.16068)
 
-<div class="pk-model-meta" hidden drug="apremilast" model-id="Apremilast_Okubo2021_geometric_mean_cv_geometric_mean" status="rejected" stale="false" population="subjects with moderate to severe psoriasis" measured-compound="apremilast" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="apremilast" model-id="Apremilast_Okubo2021_geometric_mean_cv_geometric_mean" status="rejected" stale="false" population="Japanese subjects with moderate to severe psoriasis" measured-compound="apremilast" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.
@@ -39,10 +39,10 @@ Okubo Y et al., Population pharmacokinetic and exposure…, The Journal of derma
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| AUC0‐8 (ng·h/mL) | `Q19` · AUCt | 1967 | ng·h/mL | not captured | [[h] · [ng]] / [ml] | 36.9 | llm (0.6) | Okubo_2021_table_2:row1:col1, Okubo_2021_table_2:row1:col2 | — | not captured |
-| Cmax (ng/mL) | `Q32` · Cmax | 374 | ng/mL | not captured | [ng] / [ml] | 30.8 | exact (1.0) | Okubo_2021_table_2:row3:col1, Okubo_2021_table_2:row3:col2 | — | not captured |
-| Cmin (ng/mL) | `Q36` · Cmin | 104 | ng/mL | not captured | [ng] / [ml] | 50.1 | exact (1.0) | Okubo_2021_table_2:row4:col1, Okubo_2021_table_2:row4:col2 | — | not captured |
-| Ka | `Q49` · kabs | 1.84 | 1/h | 0.0005111111111111112 | 1/h | not captured | review_gapfill (0.7) | Warren_2025:review | — | not captured |
+| AUC0‐8 (ng·h/mL) | `Q19` · AUCt | 1967 | ng·h/mL | not captured | [[h] · [ng]] / [ml] | not captured | llm (0.6) | Okubo_2021_table_2:row1:col1, Okubo_2021_table_2:row1:col2 | — | not captured |
+| Cmax (ng/mL) | `Q32` · Cmax | 374 | ng/mL | not captured | [ng] / [ml] | not captured | exact (1.0) | Okubo_2021_table_2:row3:col1, Okubo_2021_table_2:row3:col2 | — | not captured |
+| Cmin (ng/mL) | `Q36` · Cmin | 104 | ng/mL | not captured | [ng] / [ml] | not captured | exact (1.0) | Okubo_2021_table_2:row4:col1, Okubo_2021_table_2:row4:col2 | — | not captured |
+| Tmax a (h) | `Q56` · tmax | 2.00 | h | 7200.0 | [h] | not captured | llm_confirmed (0.6) | Okubo_2021_table_2:row5:col1, Okubo_2021_table_2:row5:col2 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -54,18 +54,16 @@ Okubo Y et al., Population pharmacokinetic and exposure…, The Journal of derma
 **Interpretation flags:**
 - dropped unlinked row (NIL): '20 mg b.i.d., n = 21' — extend the ontology if this is a real PK parameter (source ['Okubo_2021_table_2:row0:col1'])
 - dropped duplicate Q19 ('AUCτ (ng·h/mL)', value '2397') — already have one for this compound
-- NIL: refused to back-fill base 'CL/F' from footnote/prose loose number 0.834 (source ['jde16068-tbl-0004:footnote', 'jde16068-tbl-0004:footnote', 'jde16068-tbl-0004:footnote', 'jde16068-tbl-0004:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'V1/F' from footnote/prose loose number None (source ['jde16068-tbl-0004:footnote']); the table cell was unparseable — needs review
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=apremilast
-- population split: 'geometric mean (cv% geometric mean)' subgroup of Okubo_2021 (paper reports 3 populations: geometric mean (cv% geometric mean), geometric mean (geometric cv%), typical values (rse %) for model parameters and covariate effects)
+- population split: 'geometric mean (cv% geometric mean)' subgroup of Okubo_2021 (paper reports 2 populations: geometric mean (cv% geometric mean), typical values (rse %) for model parameters and covariate effects)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Warren_2025's review values (primary lacked it)
 
 **Extraction notes:**
-- companion parameter table 2 transcribed (9 record(s))
-- companion parameter table 5 transcribed (21 record(s), model stage 'final')
-- LLM selected parameter table(s) 2, 4, 5
+- table Okubo_2021_table_2: ragged_grid
+- table Okubo_2021_table_2: unparsed_numeric_cell
+- companion parameter table 2 transcribed (11 record(s))
+- LLM selected parameter table(s) 2, 4
 
 ## Validation
 
@@ -73,12 +71,12 @@ Okubo Y et al., Population pharmacokinetic and exposure…, The Journal of derma
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q19 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Okubo_2021_table_2:row1:col1', 'Okubo_2021_table_2:row1:col2'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Okubo_2021_table_2:row3:col1', 'Okubo_2021_table_2:row3:col2'] |
 | C5_dimension_Q36 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Okubo_2021_table_2:row4:col1', 'Okubo_2021_table_2:row4:col2'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Warren_2025:review'] |
+| C5_dimension_Q56 | pass | [time] | not captured | not captured | not captured | ['Okubo_2021_table_2:row5:col1', 'Okubo_2021_table_2:row5:col2'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
 <details class="legend">
@@ -88,7 +86,7 @@ Okubo Y et al., Population pharmacokinetic and exposure…, The Journal of derma
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_apremilast/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Okubo_2021` / `Okubo_2021::geometric_mean_cv_geometric_mean`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_apremilast/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Okubo_2021` / `Okubo_2021::geometric_mean_cv_geometric_mean`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -104,4 +102,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 23:40 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 00:32 UTC</sub>

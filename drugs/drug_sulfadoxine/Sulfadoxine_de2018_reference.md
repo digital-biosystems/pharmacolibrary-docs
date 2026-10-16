@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;Sulfadoxine&quot;,&quot;href&quot;:&quot;drugs/drug_sulfadoxine/&quot;},{&quot;label&quot;:&quot;de_2018 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sulfadoxine_Trenque2004_reference&quot;,&quot;label&quot;:&quot;Trenque_2004_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulfadoxine/Sulfadoxine_Trenque2004_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sulfadoxine_Corvaisier2004_reference&quot;,&quot;label&quot;:&quot;Corvaisier_2004_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulfadoxine/Sulfadoxine_Corvaisier2004_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sulfadoxine_de2018_reference&quot;,&quot;label&quot;:&quot;de_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulfadoxine/Sulfadoxine_de2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sulfadoxine_de2018_reference&quot;,&quot;label&quot;:&quot;de_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulfadoxine/Sulfadoxine_de2018_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Sulfadoxine — `Sulfadoxine_de2018_reference`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -15,39 +15,29 @@
 
 **Model:** Model and browser simulation available in **Models** and **Simulation**.
 
-> **Caveat** (`covariates_not_exercised`): Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.
-
 ### Reviewer guidance
 
-**The model does not reproduce the paper's peak concentration (Cmax) (paper 0.263, model 0.0158); the covariate scenarios were not simulated.**
-
-Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. The base model was simulated, not the covariate effects the record defines. Extracted — sulfadoxine: Fab 1, CL/F 0.0264 L/h, V/F 5.29 L, kabs 0.521 /h.
+**Every check that could be run on this record passed.**
 
 <sub>reviewed by rule template (no LLM)</sub>
-
-> **Dose compound ≠ measured compound:** dosed `sulfadoxine-pyrimethamine`, measured `sulfadoxine`.
 
 ## Citation
 de Kock M et al., Population Pharmacokinetic Properties o…, Antimicrobial agents and ch… (2018)
   ·  DOI: [10.1128/AAC.01370-17](https://doi.org/10.1128/AAC.01370-17)
 
-<div class="pk-model-meta" hidden drug="Sulfadoxine" model-id="Sulfadoxine_de2018_reference" status="needs_review" stale="false" population="African children and adults with uncomplicated falciparum malaria" measured-compound="sulfadoxine" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Sulfadoxine" model-id="Sulfadoxine_de2018_reference" status="curated_candidate" stale="false" population="African children and adults with uncomplicated malaria" measured-compound="sulfadoxine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 4 extracted, plus 1 covariate effect.
+**Parameters:** 3 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| F | `Q40` · Fab | 1 | not captured | not captured | not captured | not captured | exact (1.0) | T2:row2:col1 | — | 38.4 (None% RSE) |
-| CL/F (liters/h)b | `Q27` · CL/F | 0.0264 | L/h | 7.333333333333334e-09 | L/h | not captured | llm_confirmed (0.6) | T2:row3:col1, T2:row3:col2 | — | not captured |
-| V/F (liters)b | `Q76` · V/F | 5.29 | L | 0.00529 | L | not captured | llm_confirmed (0.6) | T2:row4:col1, T2:row4:col2 | — | not captured |
-| ka (/h) | `Q49` · kabs | 0.521 | /h | 0.00014472222222222222 | [1] / [h] | not captured | exact (1.0) | T2:row5:col1, T2:row5:col2 | — | 126 (None% RSE) |
-| theta_fab_category | `Q900` · theta_fab_category | -15.3 | not captured | not captured | not captured | not captured | not captured (not captured) | T2:row6:col1, T2:row6:col2 | — | not captured |
+| CL/F (liters/h)b | `Q27` · CL/F | 3 | liters/h | 8.333333333333333e-07 | [l] / [h] | 0.0264 | llm_confirmed (0.6) | T2:row3:col2 | — | not captured |
+| V/F (liters)b | `Q76` · V/F | 2 | liters | 0.002 | [l] | 5.29 | llm_confirmed (0.6) | T2:row4:col2 | — | not captured |
+| ka (/h) | `Q49` · kabs | 16 | /h | 0.0044444444444444444 | [1] / [h] | 0.521 | exact (1.0) | T2:row5:col2 | — | 21 (126% RSE) |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -68,16 +58,17 @@ de Kock M et al., Population Pharmacokinetic Properties o…, Antimicrobial agen
 - table section iiv: 'Correlation in CL of the two drugs (%)' routed out of structural estimates ('BSV (%)c in:')
 - table section iiv: 'Additive error (μg/ml for sulfadoxine; ng/ml for pyrimethamine)' routed out of structural estimates ('BSV (%)c in:')
 - table section iiv: 'Proportional error (%)' routed out of structural estimates ('BSV (%)c in:')
-- dropped unlinked row (NIL): 'PGA50 (mo after conception)' — extend the ontology if this is a real PK parameter (source ['T2:row7:col1', 'T2:row7:col2'])
-- dropped unlinked row (NIL): 'Mpumalanga, Boane, Namaachad' — extend the ontology if this is a real PK parameter (source ['T2:row13:col1', 'T2:row13:col2'])
-- implicit units: 'CL/F (liters/h)b' → L/h (from the paper text: "Table 2 lists 'CL/F (liters/h)'.")
-- implicit units: 'V/F (liters)b' → L (from the paper text: "Table 2 lists 'V/F (liters)'.")
+- dropped unlinked row (NIL): 'Change in F for each point in Z-score below −2 (%)' — extend the ontology if this is a real PK parameter (source ['T2:row6:col2'])
+- dropped unlinked row (NIL): 'PGA50 (mo after conception)' — extend the ontology if this is a real PK parameter (source ['T2:row7:col2'])
+- dropped unlinked row (NIL): 'Mpumalanga, Boane, Namaachad' — extend the ontology if this is a real PK parameter (source ['T2:row13:col2'])
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=sulfadoxine
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
+- table T2: unbound_uncertainty
+- table T2: ragged_grid
 - LLM selected parameter table(s) 2
 
 ## Validation
@@ -86,31 +77,28 @@ de Kock M et al., Population Pharmacokinetic Properties o…, Antimicrobial agen
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T2:row3:col1', 'T2:row3:col2'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['T2:row5:col1', 'T2:row5:col2'] |
-| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['T2:row4:col1', 'T2:row4:col2'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T2:row3:col2'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['T2:row5:col2'] |
+| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['T2:row4:col2'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 0.0264 L/h | not captured | not captured | ['T2:row3:col1', 'T2:row3:col2'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 5.29 L | not captured | not captured | ['T2:row4:col1', 'T2:row4:col2'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 3 L/h | not captured | not captured | ['T2:row3:col2'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 2 L | not captured | not captured | ['T2:row4:col2'] |
 
 **Reviewer per-scenario checks:**
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
 | T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_output_variable | not captured | pass | C_central (measured=sulfadoxine) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
-| T1_cmax | reference | fail | 0.263 | 0.015813563628774254 | 0.0601 | μg/ml→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.000785 | 0.015813563628774254 | 20.1447 | ng/ml→SI vs simulated kg/m3 |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -119,10 +107,10 @@ de Kock M et al., Population Pharmacokinetic Properties o…, Antimicrobial agen
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_sulfadoxine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `de_2018` / `de_2018::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_sulfadoxine/models/modelica/Sulfadoxine_de2018_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_sulfadoxine/models/modelica/Sulfadoxine_de2018_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_sulfadoxine/models/modelica/Sulfadoxine_de2018_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_sulfadoxine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `de_2018` / `de_2018::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_sulfadoxine/models/modelica/Sulfadoxine_de2018_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_sulfadoxine/models/modelica/Sulfadoxine_de2018_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_sulfadoxine/models/modelica/Sulfadoxine_de2018_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -131,20 +119,20 @@ de Kock M et al., Population Pharmacokinetic Properties o…, Antimicrobial agen
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_sulfadoxine/Sulfadoxine_de2018_reference/Sulfadoxine_de2018_reference_modelica.zip" download>Sulfadoxine_de2018_reference_modelica.zip</a> <span class="pk-size">(4.5 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_sulfadoxine/Sulfadoxine_de2018_reference/Sulfadoxine_de2018_reference_modelica.zip" download>Sulfadoxine_de2018_reference_modelica.zip</a> <span class="pk-size">(4.6 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_sulfadoxine/Sulfadoxine_de2018_reference/Sulfadoxine_de2018_reference_fmi.zip" download>Sulfadoxine_de2018_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_sulfadoxine/Sulfadoxine_de2018_reference/Sulfadoxine_de2018_reference_matlab.zip" download>Sulfadoxine_de2018_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_sulfadoxine/Sulfadoxine_de2018_reference/Sulfadoxine_de2018_reference_matlab.zip" download>Sulfadoxine_de2018_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_sulfadoxine/Sulfadoxine_de2018_reference/Sulfadoxine_de2018_reference_matlab_simbio.zip" download>Sulfadoxine_de2018_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_sulfadoxine/Sulfadoxine_de2018_reference/Sulfadoxine_de2018_reference_sbml.zip" download>Sulfadoxine_de2018_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_sulfadoxine/Sulfadoxine_de2018_reference/Sulfadoxine_de2018_reference_sbml.zip" download>Sulfadoxine_de2018_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_sulfadoxine/Sulfadoxine_de2018_reference/Sulfadoxine_de2018_reference_cellml.zip" download>Sulfadoxine_de2018_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_sulfadoxine/Sulfadoxine_de2018_reference/Sulfadoxine_de2018_reference.svg" alt="Sulfadoxine_de2018_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_sulfadoxine/Sulfadoxine_de2018_reference/Sulfadoxine_de2018_reference.svg" alt="Sulfadoxine_de2018_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 87.5 mg, single dose, first-order absorption (ka 0.521 /h, F 1). Doses in the paper: 87.5, 1750 mg.
+**Administration: oral** — 25 mg, single dose, first-order absorption (ka 16 /h, F 1). Doses in the paper: 25–1500 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_sulfadoxine/Sulfadoxine_de2018_reference/Sulfadoxine_de2018_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_sulfadoxine/Sulfadoxine_de2018_reference/Sulfadoxine_de2018_reference_sim_controls.json"></dbs-fmusim>
 
@@ -153,4 +141,4 @@ de Kock M et al., Population Pharmacokinetic Properties o…, Antimicrobial agen
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 08:47 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 03:39 UTC</sub>

@@ -87,7 +87,7 @@ Gibb IA et al., Paracetamol (acetaminophen) pharmacodyn…, Archives of disease 
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_paracetamol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Gibb_2008` / `Gibb_2008::t_1_2_abs`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_paracetamol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Gibb_2008` / `Gibb_2008::t_1_2_abs`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

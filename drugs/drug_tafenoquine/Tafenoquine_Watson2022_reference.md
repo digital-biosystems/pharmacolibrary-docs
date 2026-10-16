@@ -17,19 +17,19 @@
 
 ### Reviewer guidance
 
-**The tafenoquine model's terminal half-life does not match the paper: the paper reports -3.6 while the model gives 296.8677084269201, a ratio of -82.4633, and the absorption rate ka was defaulted rather than estimated from the paper.**
+**Ka use library defaults, not estimates from this paper; t6_deviations.**
 
-Simulated as the paper dosed it, the model's terminal half-life (296.8677084269201) differs from the reported value (-3.5999999999999996) by far more than the tolerance, so the model does not reproduce the paper's profile. The absorption rate ka was not reported in the source and a library default was used instead, which affects the simulated profile without support from this paper. The model also assumes F=1 and Fm=1 with no molar correction, giving an apparent (/F) parameterization with first-order depot input for extravascular dosing. One reported unit could not be converted to SI, so that parameter lacked an SI value; the deviations check returned 'not acceptable' for both the defaulted ka and the invented absorption. Extracted — tafenoquine: Fab 1, MTT 3.14 h, CL/F 3.14 L/h, V1/F 1.33e+03 L, Q/F 5.82 L/h, V2/F 311 L, tlag 0.147 h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. A reported unit could not be converted (Fab and MTT), so that value has no SI equivalent. Extracted — tafenoquine: Fab 1 %, MTT 3.14 h, CL/F 3.14 L/h, V1/F 1.33e+03 L, Q/F 5.82 L/h, V2/F 311 L, tlag 0.147 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of tlag,1: this record has 0.147, the second reading none. That field does not shape the model.
 
-<sub>reviewed by glm-5.3-flash</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Watson JA et al., The clinical pharmacology of tafenoquin…, eLife 11 (2022)
   ·  DOI: [10.7554/eLife.83433](https://doi.org/10.7554/eLife.83433)
 
-<div class="pk-model-meta" hidden drug="tafenoquine" model-id="Tafenoquine_Watson2022_reference" status="needs_review" stale="false" population="patients with P. vivax malaria and healthy volunteers" measured-compound="tafenoquine" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="tafenoquine" model-id="Tafenoquine_Watson2022_reference" status="needs_review" stale="false" population="adults with P. vivax malaria and healthy volunteers" measured-compound="tafenoquine" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 7 extracted.
@@ -41,7 +41,7 @@ Watson JA et al., The clinical pharmacology of tafenoquin…, eLife 11 (2022)
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| F (%) | `Q40` · Fab | 1 | not captured | not captured | not captured | not captured | exact (1.0) | app6table1:row2:col1 | — | 0.0850 (19.2% RSE) |
+| F (%) | `Q40` · Fab | 1 | % | not captured | not captured | not captured | exact (1.0) | app6table1:row2:col1 | — | 0.0850 (19.2% RSE) |
 | MTT (h) | `Q81` · MTT | 3.14 | h | not captured | [h] | 12.8 | exact (1.0) | app6table1:row3:col1 | — | 0.0831 (21.0% RSE) |
 | CL/F (L/h) | `Q27` · CL/F | 3.14 | L/h | 8.722222222222222e-07 | [l] / [h] | 8.43 | exact (1.0) | app6table1:row4:col1 | — | 0.0338 (18.8% RSE) |
 | Vc/F (L) | `Q290` · V1/F | 1330 | L | 1.33 | [l] | 12.9 | exact (1.0) | app6table1:row5:col1 | — | not captured |
@@ -63,32 +63,18 @@ Watson JA et al., The clinical pharmacology of tafenoquin…, eLife 11 (2022)
 - `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
 
 **Interpretation flags:**
-- dropped duplicate Q27 ('Age – CL/F', value '-0.00434') — already have one for this compound
-- dropped unlinked row (NIL): 'Vomit – F' — extend the ontology if this is a real PK parameter (source ['app6table1:row10:col1', 'app6table1:footnote'])
+- dropped unlinked row (NIL): 'Age – CL/F' — extend the ontology if this is a real PK parameter (source ['app6table1:row9:col1'])
+- dropped unlinked row (NIL): 'Vomit – F' — extend the ontology if this is a real PK parameter (source ['app6table1:row10:col1'])
 - dropped duplicate Q81 ('Patient – MTT', value '0.937') — already have one for this compound
 - dropped duplicate Q290 ('Patient – Vc/F', value '-0.276') — already have one for this compound
 - dropped duplicate Q82 ('Patient – Vp/F', value '1.40') — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=tafenoquine
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at route_to_review — not promoted
 - gap-filled Q83 (tlag) from Cherkaoui-Rbati_2023's review values (primary lacked it)
 
 **Extraction notes:**
-- unparsed cell app6table1:row3:col2 = '3.05 (2.30–3.87)'
-- unparsed cell app6table1:row4:col2 = '3.14 (2.71–3.70)'
-- unparsed cell app6table1:row5:col2 = '1360 (1040–1710)'
-- unparsed cell app6table1:row6:col2 = '5.72 (3.99–8.05)'
-- unparsed cell app6table1:row7:col2 = '318 (248–424)'
-- unparsed cell app6table1:row9:col2 = '–0.00435 (-0.00206–-0.00589)'
-- unparsed cell app6table1:row10:col2 = '0.434 (0.315–0.608)'
-- unparsed cell app6table1:row11:col2 = '0.929 (0.605–1.51)'
-- unparsed cell app6table1:row12:col2 = '–0.282 (-0.0784–-0.395)'
-- unparsed cell app6table1:row13:col2 = '1.30 (0.670–1.88)'
-- unparsed cell app6table1:row15:col2 = '0.0870 (0.0559–0.120)'
-- unparsed cell app6table1:row16:col2 = '0.0887 (0.0585–0.124)'
-- unparsed cell app6table1:row17:col2 = '0.0349 (0.0193–0.0451)'
-- unparsed cell app6table1:row18:col2 = '0.156 (0.1000–0.226)'
-- unparsed cell app6table1:row19:col2 = '0.0265 (0.0153–0.0400)'
-- unparsed cell app6table1:row20:col2 = '0.0240 (0.0170–0.0333)'
-- LLM selected parameter table(s) 1
+- LLM selected parameter table(s) 3
 
 ## Validation
 
@@ -142,11 +128,6 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | not captured | pass | 5 scholar param(s) emitted or defaulted | 5 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable; invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
-| T1_t_half_beta | reference | fail | -3.5999999999999996 | 296.8677084269201 | -82.4633 | days→SI vs simulated h |
-| T1_t_half_beta | reference | skipped | not captured | 296.8677084269201 | not captured | non-numeric value |
-| T1_t_half_beta | reference | skipped | not captured | 296.8677084269201 | not captured | non-numeric value |
-| T1_t_half_beta | reference | pass | 360.0 | 296.8677084269201 | 0.8246 | days→SI vs simulated h |
-| T1_t_half_terminal | reference | skipped | not captured | 296.8677084269201 | not captured | non-numeric value |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -155,10 +136,10 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_tafenoquine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Watson_2022` / `Watson_2022::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_tafenoquine/models/modelica/Tafenoquine_Watson2022_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_tafenoquine/models/modelica/Tafenoquine_Watson2022_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_tafenoquine/models/modelica/Tafenoquine_Watson2022_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_tafenoquine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Watson_2022` / `Watson_2022::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_tafenoquine/models/modelica/Tafenoquine_Watson2022_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_tafenoquine/models/modelica/Tafenoquine_Watson2022_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_tafenoquine/models/modelica/Tafenoquine_Watson2022_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -167,7 +148,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_tafenoquine/Tafenoquine_Watson2022_reference/Tafenoquine_Watson2022_reference_modelica.zip" download>Tafenoquine_Watson2022_reference_modelica.zip</a> <span class="pk-size">(4.5 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_tafenoquine/Tafenoquine_Watson2022_reference/Tafenoquine_Watson2022_reference_modelica.zip" download>Tafenoquine_Watson2022_reference_modelica.zip</a> <span class="pk-size">(4.6 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_tafenoquine/Tafenoquine_Watson2022_reference/Tafenoquine_Watson2022_reference_fmi.zip" download>Tafenoquine_Watson2022_reference_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_tafenoquine/Tafenoquine_Watson2022_reference/Tafenoquine_Watson2022_reference_matlab.zip" download>Tafenoquine_Watson2022_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_tafenoquine/Tafenoquine_Watson2022_reference/Tafenoquine_Watson2022_reference_matlab_simbio.zip" download>Tafenoquine_Watson2022_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
@@ -176,7 +157,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_tafenoquine/Tafenoquine_Watson2022_reference/Tafenoquine_Watson2022_reference.svg" alt="Tafenoquine_Watson2022_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_tafenoquine/Tafenoquine_Watson2022_reference/Tafenoquine_Watson2022_reference.svg" alt="Tafenoquine_Watson2022_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -189,4 +170,4 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 08:53 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 03:44 UTC</sub>

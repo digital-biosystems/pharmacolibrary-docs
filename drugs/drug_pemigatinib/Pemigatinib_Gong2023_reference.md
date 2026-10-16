@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;pemigatinib&quot;,&quot;href&quot;:&quot;drugs/drug_pemigatinib/&quot;},{&quot;label&quot;:&quot;Gong_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pemigatinib_Gong2023_reference&quot;,&quot;label&quot;:&quot;Gong_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pemigatinib/Pemigatinib_Gong2023_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pemigatinib_Gong2023_reference&quot;,&quot;label&quot;:&quot;Gong_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pemigatinib/Pemigatinib_Gong2023_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Pemigatinib_Ji2022_final&quot;,&quot;label&quot;:&quot;Ji_2022_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pemigatinib/Pemigatinib_Ji2022_final.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pemigatinib_Ji2022_final_magnitude_of_interindividual_variab&quot;,&quot;label&quot;:&quot;Ji_2022_final_magnitude_of_interindividual_variability_cv_final_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pemigatinib/Pemigatinib_Ji2022_final_magnitude_of_interindividual_variab.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -31,26 +31,23 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `paramet
 Gong X et al., Population pharmacokinetic and exposure…, CPT: pharmacometrics & syst… (2023)
   ·  DOI: [10.1002/psp4.13064](https://doi.org/10.1002/psp4.13064)
 
-<div class="pk-model-meta" hidden drug="pemigatinib" model-id="Pemigatinib_Gong2023_reference" status="accepted_with_caveats" stale="false" population="healthy participants and patients with CCA, other solid tumors, or MLN FGFR1" measured-compound="pemigatinib" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="pemigatinib" model-id="Pemigatinib_Gong2023_reference" status="accepted_with_caveats" stale="false" population="patients with advanced solid tumors including cholangiocarcinoma and healthy participants" measured-compound="pemigatinib" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
-**Parameters:** 6 extracted, plus 4 covariate effects.
+**Parameters:** 6 extracted, plus 1 covariate effect.
 
 **Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F, L/h | `Q27` · CL/F | 2.7 | L/h | 7.5e-07 | [l] / [h] | not captured | exact (1.0) | psp413064-tbl-0002:row2:col1, psp413064-tbl-0002:row2:col2 | — | 44.8 (None% RSE) |
-| V c/F, L | `Q290` · V1/F | 3.4 | L | 0.0034 | [l] | not captured | space_fold (0.95) | psp413064-tbl-0002:row3:col1, psp413064-tbl-0002:row3:col2 | — | 43.7 (None% RSE) |
-| V p/F, L | `Q82` · V2/F | 3.0 | L | 0.003 | [l] | not captured | space_fold (0.95) | psp413064-tbl-0002:row5:col1, psp413064-tbl-0002:row5:col2 | — | not captured |
-| Q/F, L/h | `Q69` · Q/F | 7.7 | L/h | 2.138888888888889e-06 | [l] / [h] | not captured | exact (1.0) | psp413064-tbl-0002:row6:col1, psp413064-tbl-0002:row6:col2 | — | not captured |
-| K a, 1/h | `Q49` · kabs | 12.2 | 1/h | 0.0033888888888888888 | [1] / [h] | not captured | space_fold (0.95) | psp413064-tbl-0002:row7:col1, psp413064-tbl-0002:row7:col2 | — | 130 (None% RSE) |
-| D1, h | `Q310` · D1 | 3.0 | h | 10800.0 | [h] | not captured | exact (1.0) | psp413064-tbl-0002:row8:col1, psp413064-tbl-0002:row8:col2 | — | 60.9 (None% RSE) |
-| male_sex_on_cl_f | `Q900` · male_sex_on_cl_f | 18.5 | not captured | not captured | not captured | not captured | not captured (not captured) | psp413064-tbl-0002:row12:col1, psp413064-tbl-0002:row12:col2 | — | not captured |
-| theta_kabs_sex | `Q900` · theta_kabs_sex | 11.1 | not captured | not captured | not captured | not captured | not captured (not captured) | psp413064-tbl-0002:row13:col1, psp413064-tbl-0002:row13:col2 | — | not captured |
-| theta_q76_body_weight | `Q900` · theta_q76_body_weight | 14.3 | not captured | not captured | not captured | not captured | not captured (not captured) | psp413064-tbl-0002:row15:col1, psp413064-tbl-0002:row15:col2 | — | not captured |
-| theta_v2_f_body_weight_power | `Q900` · theta_v2_f_body_weight_power | 13.0 | not captured | not captured | not captured | not captured | not captured (not captured) | psp413064-tbl-0002:row16:col1, psp413064-tbl-0002:row16:col2 | — | not captured |
+| CL/F, L/h | `Q27` · CL/F | 44.8 | L/h | 1.2444444444444445e-05 | [l] / [h] | not captured | exact (1.0) | Gong_2023_table_p6_1:row0:col1, Gong_2023_table_p6_1:row0:col4 | — | not captured |
+| Vc/F, L | `Q290` · V1/F | 43.7 | L | 0.0437 | [l] | not captured | exact (1.0) | Gong_2023_table_p6_1:row1:col1, Gong_2023_table_p6_1:row1:col4 | — | not captured |
+| Vp/F, L | `Q82` · V2/F | 95.0 | L | 0.095 | [l] | 3.0 | exact (1.0) | Gong_2023_table_p6_1:row3:col1 | — | not captured |
+| Q/F, L/h | `Q69` · Q/F | 25.2 | L/h | 7e-06 | [l] / [h] | 7.7 | exact (1.0) | Gong_2023_table_p6_1:row4:col1 | — | not captured |
+| Ka, 1/h | `Q49` · kabs | 130 | 1/h | 0.03611111111111111 | [1] / [h] | not captured | exact (1.0) | Gong_2023_table_p6_1:row5:col1, Gong_2023_table_p6_1:row5:col4 | — | not captured |
+| D1, h | `Q310` · D1 | 60.9 | h | 219240.0 | [h] | not captured | exact (1.0) | Gong_2023_table_p6_1:row6:col1, Gong_2023_table_p6_1:row6:col4 | — | not captured |
+| theta_q95_sex | `Q900` · theta_q95_sex | -58.3 | not captured | not captured | not captured | 11.1 | not captured (not captured) | Gong_2023_table_p6_1:row11:col1 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -64,41 +61,20 @@ Gong X et al., Population pharmacokinetic and exposure…, CPT: pharmacometrics 
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
 
 **Interpretation flags:**
-- table section iiv: 'CL/F, L/h' routed out of structural estimates ('Magnitude of interindividual variability (%CV)')
-- table section iiv: 'V c/F, L' routed out of structural estimates ('Magnitude of interindividual variability (%CV)')
-- table section iiv: 'CL/F_V c/F a correlation coefficient, CV' routed out of structural estimates ('Magnitude of interindividual variability (%CV)')
-- table section iiv: 'K a, 1/h' routed out of structural estimates ('Magnitude of interindividual variability (%CV)')
-- table section iiv: 'D1, h' routed out of structural estimates ('Magnitude of interindividual variability (%CV)')
-- table section iiv: 'RUV, %' routed out of structural estimates ('Magnitude of interindividual variability (%CV)')
-- dropped duplicate Q27 ('Phosphate binder on CL/F, %', value '14.6') — already have one for this compound
-- dropped duplicate Q49 ('PPI on K a, %', value '12.2') — already have one for this compound
-- covariate level 'Male sex on CL/F, %' → Q900:male_sex_on_cl_f = 18.5 (linear_fractional on Q27)
-- dropped duplicate Q310 ('H2B antagonist on D1, %', value '38.9') — already have one for this compound
-- covariate effect for Q76 has no base parameter row (kept as unattached equation-variable)
+- dropped unlinked row (NIL): 'CL/F-Vc/Fa correlation coefficient, CV' — extend the ontology if this is a real PK parameter (source ['Gong_2023_table_p6_1:row2:col4'])
+- dropped unlinked row (NIL): 'Phosphate binder on CL/F, %' — extend the ontology if this is a real PK parameter (source ['Gong_2023_table_p6_1:row8:col1'])
+- dropped unlinked row (NIL): 'PPI on Ka, %' — extend the ontology if this is a real PK parameter (source ['Gong_2023_table_p6_1:row9:col1'])
+- dropped unlinked row (NIL): 'Male sex on CL/F, %' — extend the ontology if this is a real PK parameter (source ['Gong_2023_table_p6_1:row10:col1'])
+- dropped unlinked row (NIL): 'H2B antagonist on D1, %' — extend the ontology if this is a real PK parameter (source ['Gong_2023_table_p6_1:row12:col1'])
+- dropped unlinked row (NIL): 'Body weight on Vc/F, %' — extend the ontology if this is a real PK parameter (source ['Gong_2023_table_p6_1:row13:col1'])
+- dropped unlinked row (NIL): 'Body weight to Vp/F, %' — extend the ontology if this is a real PK parameter (source ['Gong_2023_table_p6_1:row14:col1'])
+- covariate effect for Q95 has no base parameter row (kept as unattached equation-variable)
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=pemigatinib
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- unparsed cell psp413064-tbl-0002:row2:col3 = '10.1, 11.3'
-- unparsed cell psp413064-tbl-0002:row2:col6 = '40.6, 48.7'
-- unparsed cell psp413064-tbl-0002:row3:col3 = '110, 125'
-- unparsed cell psp413064-tbl-0002:row3:col6 = '35.9, 50.4'
-- unparsed cell psp413064-tbl-0002:row5:col3 = '89.4, 101'
-- unparsed cell psp413064-tbl-0002:row5:col4 = 'Fixed to 0'
-- unparsed cell psp413064-tbl-0002:row6:col3 = '21.4, 29.0'
-- unparsed cell psp413064-tbl-0002:row6:col4 = 'Fixed to 0'
-- unparsed cell psp413064-tbl-0002:row7:col3 = '2.79, 4.55'
-- unparsed cell psp413064-tbl-0002:row7:col6 = '113, 144'
-- unparsed cell psp413064-tbl-0002:row8:col3 = '0.763, 0.857'
-- unparsed cell psp413064-tbl-0002:row8:col6 = '54.4, 66.8'
-- unparsed cell psp413064-tbl-0002:row9:col6 = '30.4, 34.1'
-- unparsed cell psp413064-tbl-0002:row10:col3 = '−19.9, −11.1'
-- unparsed cell psp413064-tbl-0002:row11:col3 = '−76.8, −47.2'
-- unparsed cell psp413064-tbl-0002:row12:col3 = '16.7, 35.8'
-- unparsed cell psp413064-tbl-0002:row13:col3 = '−71.0, −45.6'
-- unparsed cell psp413064-tbl-0002:row14:col3 = '−58.9, −8.0'
-- unparsed cell psp413064-tbl-0002:row15:col3 = '0.605, 1.08'
-- unparsed cell psp413064-tbl-0002:row16:col3 = '0.842, 1.42'
+- table Gong_2023_table_p6_1: unbound_uncertainty
+- table Gong_2023_table_p6_1: unparsed_numeric_cell
 - LLM selected parameter table(s) 2
 
 ## Validation
@@ -142,18 +118,17 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp413064-tbl-0002:row2:col1', 'psp413064-tbl-0002:row2:col2'] |
-| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp413064-tbl-0002:row3:col1', 'psp413064-tbl-0002:row3:col2'] |
-| C5_dimension_Q310 | pass | [time] | not captured | not captured | not captured | ['psp413064-tbl-0002:row8:col1', 'psp413064-tbl-0002:row8:col2'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['psp413064-tbl-0002:row7:col1', 'psp413064-tbl-0002:row7:col2'] |
-| C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp413064-tbl-0002:row6:col1', 'psp413064-tbl-0002:row6:col2'] |
-| C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp413064-tbl-0002:row5:col1', 'psp413064-tbl-0002:row5:col2'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Gong_2023_table_p6_1:row0:col1', 'Gong_2023_table_p6_1:row0:col4'] |
+| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['Gong_2023_table_p6_1:row1:col1', 'Gong_2023_table_p6_1:row1:col4'] |
+| C5_dimension_Q310 | pass | [time] | not captured | not captured | not captured | ['Gong_2023_table_p6_1:row6:col1', 'Gong_2023_table_p6_1:row6:col4'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Gong_2023_table_p6_1:row5:col1', 'Gong_2023_table_p6_1:row5:col4'] |
+| C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Gong_2023_table_p6_1:row4:col1'] |
+| C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['Gong_2023_table_p6_1:row3:col1'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 2.7 L/h | not captured | not captured | ['psp413064-tbl-0002:row2:col1', 'psp413064-tbl-0002:row2:col2'] |
-| C9_phys_window_Q290 | pass | volume within physiological range | 3.4 L | not captured | not captured | ['psp413064-tbl-0002:row3:col1', 'psp413064-tbl-0002:row3:col2'] |
-| C9_phys_window_Q82 | pass | volume within physiological range | 3 L | not captured | not captured | ['psp413064-tbl-0002:row5:col1', 'psp413064-tbl-0002:row5:col2'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 44.8 L/h | not captured | not captured | ['Gong_2023_table_p6_1:row0:col1', 'Gong_2023_table_p6_1:row0:col4'] |
+| C9_phys_window_Q290 | pass | volume within physiological range | 43.7 L | not captured | not captured | ['Gong_2023_table_p6_1:row1:col1', 'Gong_2023_table_p6_1:row1:col4'] |
+| C9_phys_window_Q82 | pass | volume within physiological range | 95 L | not captured | not captured | ['Gong_2023_table_p6_1:row3:col1'] |
 
 **Reviewer per-scenario checks:**
 
@@ -166,13 +141,6 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_param_coverage | not captured | pass | 5 scholar param(s) emitted or defaulted | 5 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
-| T1_cmax | reference | skipped | ≈6 | 9.944630113162255e-05 | not captured | unresolved concentration unit (exp '%', sim 'kg/m3') |
-| T1_cmax | reference | skipped | ≈35 | 9.944630113162255e-05 | not captured | unresolved concentration unit (exp '%', sim 'kg/m3') |
-| T1_cmax | reference | skipped | ≈20 | 9.944630113162255e-05 | not captured | unresolved concentration unit (exp '%', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 12 | 9.944630113162255e-05 | not captured | unresolved concentration unit (exp '%', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 2 | 9.944630113162255e-05 | not captured | unresolved concentration unit (exp '%', sim 'kg/m3') |
-| T1_cmin_ss | reference | skipped | ≈16 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_cmin_ss | reference | skipped | ≈9 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -181,10 +149,10 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_pemigatinib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Gong_2023` / `Gong_2023::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_pemigatinib/models/modelica/Pemigatinib_Gong2023_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_pemigatinib/models/modelica/Pemigatinib_Gong2023_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_pemigatinib/models/modelica/Pemigatinib_Gong2023_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_pemigatinib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Gong_2023` / `Gong_2023::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_pemigatinib/models/modelica/Pemigatinib_Gong2023_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_pemigatinib/models/modelica/Pemigatinib_Gong2023_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_pemigatinib/models/modelica/Pemigatinib_Gong2023_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -193,7 +161,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_pemigatinib/Pemigatinib_Gong2023_reference/Pemigatinib_Gong2023_reference_modelica.zip" download>Pemigatinib_Gong2023_reference_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_pemigatinib/Pemigatinib_Gong2023_reference/Pemigatinib_Gong2023_reference_modelica.zip" download>Pemigatinib_Gong2023_reference_modelica.zip</a> <span class="pk-size">(4.5 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_pemigatinib/Pemigatinib_Gong2023_reference/Pemigatinib_Gong2023_reference_fmi.zip" download>Pemigatinib_Gong2023_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_pemigatinib/Pemigatinib_Gong2023_reference/Pemigatinib_Gong2023_reference_matlab.zip" download>Pemigatinib_Gong2023_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_pemigatinib/Pemigatinib_Gong2023_reference/Pemigatinib_Gong2023_reference_matlab_simbio.zip" download>Pemigatinib_Gong2023_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
@@ -202,11 +170,11 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_pemigatinib/Pemigatinib_Gong2023_reference/Pemigatinib_Gong2023_reference.svg" alt="Pemigatinib_Gong2023_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_pemigatinib/Pemigatinib_Gong2023_reference/Pemigatinib_Gong2023_reference.svg" alt="Pemigatinib_Gong2023_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 6 mg, single dose, first-order absorption (ka 12.2 /h, F 1). Doses in the paper: 6, 9, 13.5, 20 mg.
+**Administration: oral** — 6 mg, single dose, first-order absorption (ka 130 /h, F 1). Doses in the paper: 6, 8, 9, 13.5, 20 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_pemigatinib/Pemigatinib_Gong2023_reference/Pemigatinib_Gong2023_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_pemigatinib/Pemigatinib_Gong2023_reference/Pemigatinib_Gong2023_reference_sim_controls.json"></dbs-fmusim>
 
@@ -215,4 +183,4 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 05:14 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 20:37 UTC</sub>

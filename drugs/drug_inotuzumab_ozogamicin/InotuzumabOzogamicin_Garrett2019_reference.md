@@ -4,7 +4,7 @@
 
 # inotuzumab ozogamicin — `InotuzumabOzogamicin_Garrett2019_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.727). Primary extraction retained.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.727). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -16,35 +16,33 @@
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's terminal half-life (model/paper ratio 0.262).**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — inotuzumab ozogamicin: CL 0.113 L/h, Q 0.369 L/h, V1 6.7 L, V2 5.1 L.
+Extracted — inotuzumab ozogamicin: CL 0.113 L/h, V1 6.7 L, V2 5.1 L.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of kdes: this record has none, the second reading 0.0337; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Garrett M et al., Population pharmacokinetics of inotuzum…, Journal of pharmacokinetics… (2019)
   ·  DOI: [10.1007/s10928-018-9614-9](https://doi.org/10.1007/s10928-018-9614-9)
 
-<div class="pk-model-meta" hidden drug="inotuzumab ozogamicin" model-id="InotuzumabOzogamicin_Garrett2019_reference" status="needs_review" stale="false" population="patients with relapsed/refractory B-cell ALL or NHL" measured-compound="inotuzumab ozogamicin" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="inotuzumab ozogamicin" model-id="InotuzumabOzogamicin_Garrett2019_reference" status="rejected" stale="false" population="patients with relapsed or refractory B-cell acute lymphoblastic leukemia or non-Hodgkin lymphoma" measured-compound="inotuzumab ozogamicin" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
-**Parameters:** 4 extracted.
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL1, L/h | `Q22` · CL | 0.113 | L/h | 3.138888888888889e-08 | [l] / [h] | not captured | llm (0.6) | Tab2:row3:col2, Tab2:row3:col3, Tab2:row3:col4, Tab2:row3:col6, Tab2:row3:col7, Tab2:row3:col8 | — | not captured |
-| RITX + InO effect | `Q900` · equation variable | 0.155 | not captured | not captured | not captured | not captured | llm (0.6) | Tab2:row6:col2, Tab2:row6:col3, Tab2:row6:col4, Tab2:row6:col6, Tab2:row6:col7, Tab2:row6:col8 | — | not captured |
-| CL2, L/h | `Q30` · Q | 0.369 | L/h | 1.0250000000000001e-07 | [l] / [h] | not captured | special_case (0.95) | Tab2:row7:col2, Tab2:row7:col3, Tab2:row7:col4, Tab2:row7:col6, Tab2:row7:col7, Tab2:row7:col8 | — | not captured |
-| V1, L | `Q63` · V1 | 6.70 | L | 0.0067 | [l] | not captured | exact (1.0) | Tab2:row9:col2, Tab2:row9:col3, Tab2:row9:col4, Tab2:row9:col6, Tab2:row9:col7, Tab2:row9:col8 | — | 41.2 (None% RSE) |
-| V2, L | `Q64` · V2 | 5.10 | L | 0.0050999999999999995 | [l] | not captured | exact (1.0) | Tab2:row15:col2, Tab2:row15:col3, Tab2:row15:col4, Tab2:row15:col6, Tab2:row15:col7, Tab2:row15:col8 | — | not captured |
+| CL1, L/h Linear clearance | `Q22` · CL | 0.113 | L/h | 3.138888888888889e-08 | L/h | not captured | boundary (0.8) | Garrett_2019:results_prose | — | not captured |
+| V1, L Volume of distribution in central compartment | `Q63` · V1 | 6.7 | L | 0.0067 | L | not captured | boundary_compartment (0.9) | Garrett_2019:results_prose | — | not captured |
+| V2, L Volume of distribution in peripheral compartment | `Q64` · V2 | 5.1 | L | 0.0050999999999999995 | L | not captured | boundary_compartment (0.9) | Garrett_2019:results_prose | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -54,25 +52,18 @@ Garrett M et al., Population pharmacokinetics of inotuzum…, Journal of pharmac
 ## Departures & gaps
 
 **Interpretation flags:**
-- column 'nonparametric bootstrap results' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- dropped unlinked row (NIL): 'Parameter' — extend the ontology if this is a real PK parameter (source ['Tab2:row0:col2', 'Tab2:row0:col3', 'Tab2:row0:col4', 'Tab2:row0:col5'])
-- dropped unlinked row (NIL): 'BBSA effect' — extend the ontology if this is a real PK parameter (source ['Tab2:row5:col2', 'Tab2:row5:col3', 'Tab2:row5:col4', 'Tab2:row5:col6', 'Tab2:row5:col7', 'Tab2:row5:col8', 'Tab2:row8:col2', 'Tab2:row8:col3', 'Tab2:row8:col4', 'Tab2:row8:col6', 'Tab2:row8:col7', 'Tab2:row8:col8', 'Tab2:row10:col2', 'Tab2:row10:col3', 'Tab2:row10:col4', 'Tab2:row10:col6', 'Tab2:row10:col7', 'Tab2:row10:col8'])
-- dropped unlinked row (NIL): 'kdes, h−1' — extend the ontology if this is a real PK parameter (source ['Tab2:row11:col2', 'Tab2:row11:col3', 'Tab2:row11:col4', 'Tab2:row11:col6', 'Tab2:row11:col7', 'Tab2:row11:col8'])
-- dropped duplicate Q30 ('Q, L/h', value '0.0405') — already have one for this compound
-- dropped unlinked row (NIL): "\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$${\\text{O'}}^{2}_{\\text{prop}} - {\\text{NHL}}^{\\text{f}}$$\\end{document}O'prop2-NHLf" — extend the ontology if this is a real PK parameter (source ['Tab2:row23:col2', 'Tab2:row23:col3', 'Tab2:row23:col4', 'Tab2:row23:col5', 'Tab2:row23:col6', 'Tab2:row23:col7', 'Tab2:row23:col8'])
-- routed "\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$${\\text{O'}}^{2}_{\\text{prop}} - {\\text{ALL}}^{\\text{f}}$$\\end{document}O'prop2-ALLf" → Q316 (prop_error) to residual_error — variability estimate, not a structural parameter
-- dropped value-less row: 'ALL effect'
+- salvaged Q22 ('CL1, L/h Linear clearance'=0.113) from results prose — parameter table was unreadable
+- salvaged Q63 ('V1, L Volume of distribution in central compartment'=6.7) from results prose — parameter table was unreadable
+- salvaged Q64 ('V2, L Volume of distribution in peripheral compartment'=5.1) from results prose — parameter table was unreadable
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=inotuzumab ozogamicin
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at route_to_review — not promoted
 - molar mass: none found for 'inotuzumab_ozogamicin' — its concentrations stay mass-only
 - molar mass: none found for 'inotuzumab ozogamicin' — its concentrations stay mass-only
 
 **Extraction notes:**
-- unparsed cell Tab2:row16:col1 = 'Variance–covariance matrix of the interindividual effects in CL1'
-- unparsed cell Tab2:row17:col1 = 'Variance–covariance matrix of the interindividual effects in CL2'
-- unparsed cell Tab2:row18:col1 = 'Variance–covariance matrix of the interindividual effects in V1'
-- unparsed cell Tab2:row20:col2 = '0.156e'
-- unparsed cell Tab2:row21:col2 = '0.213e'
-- unparsed cell Tab2:row22:col2 = '0.222e'
+- table Garrett_2019_table_2: unparsed_numeric_cell
+- final table Tab2: no supported point estimates; targeted recovery unresolved
 - LLM selected parameter table(s) 2
 
 ## Validation
@@ -104,19 +95,14 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C1_half_life_beta | fail | 293.0 | 76.838 | 0.2622 | 0.25 | reported t½β |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row3:col2', 'Tab2:row3:col3', 'Tab2:row3:col4', 'Tab2:row3:col6', 'Tab2:row3:col7', 'Tab2:row3:col8'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row7:col2', 'Tab2:row7:col3', 'Tab2:row7:col4', 'Tab2:row7:col6', 'Tab2:row7:col7', 'Tab2:row7:col8'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row9:col2', 'Tab2:row9:col3', 'Tab2:row9:col4', 'Tab2:row9:col6', 'Tab2:row9:col7', 'Tab2:row9:col8'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row15:col2', 'Tab2:row15:col3', 'Tab2:row15:col4', 'Tab2:row15:col6', 'Tab2:row15:col7', 'Tab2:row15:col8'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.113 | not captured | not captured | ['Tab2:row3:col2', 'Tab2:row3:col3', 'Tab2:row3:col4', 'Tab2:row3:col6', 'Tab2:row3:col7', 'Tab2:row3:col8'] |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.113 L/h | not captured | not captured | ['Tab2:row3:col2', 'Tab2:row3:col3', 'Tab2:row3:col4', 'Tab2:row3:col6', 'Tab2:row3:col7', 'Tab2:row3:col8'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 6.7 L | not captured | not captured | ['Tab2:row9:col2', 'Tab2:row9:col3', 'Tab2:row9:col4', 'Tab2:row9:col6', 'Tab2:row9:col7', 'Tab2:row9:col8'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 5.1 L | not captured | not captured | ['Tab2:row15:col2', 'Tab2:row15:col3', 'Tab2:row15:col4', 'Tab2:row15:col6', 'Tab2:row15:col7', 'Tab2:row15:col8'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.113 | not captured | not captured | ['Garrett_2019:results_prose'] |
+| C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.113 L/h | not captured | not captured | ['Garrett_2019:results_prose'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 6.7 L | not captured | not captured | ['Garrett_2019:results_prose'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 5.1 L | not captured | not captured | ['Garrett_2019:results_prose'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -125,24 +111,14 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_inotuzumab_ozogamicin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Garrett_2019` / `Garrett_2019::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_inotuzumab_ozogamicin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Garrett_2019` / `Garrett_2019::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-</tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -151,4 +127,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 12:43 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 19:31 UTC</sub>

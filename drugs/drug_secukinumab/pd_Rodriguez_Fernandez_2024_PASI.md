@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;secukinumab&quot;,&quot;href&quot;:&quot;drugs/drug_secukinumab/&quot;},{&quot;label&quot;:&quot;Rodriguez-Fernandez_2024 \u00b7 PD Psoriasis Area and Severity Index&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Secukinumab_RodrguezFernndez2022_reference&quot;,&quot;label&quot;:&quot;Rodr\u00edguez-Fern\u00e1ndez_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_secukinumab/Secukinumab_RodrguezFernndez2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Rodriguez_Fernandez_2024_PASI&quot;,&quot;label&quot;:&quot;Rodriguez-Fernandez_2024 \u00b7 PASI&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_secukinumab/pd_Rodriguez_Fernandez_2024_PASI.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Psoriasis Area and Severity Index — PD  <span class="pk-badge pk-badge--orange">needs review</span>
@@ -14,17 +14,17 @@
 
 ## Record summary
 
-**As extracted:** Secukinumab (concentrations from the PK model of Bruin_2017) drives Psoriasis Area and Severity Index (in no units): indirect response — drug inhibits the production of Psoriasis Area and Severity Index.
+**As extracted:** Secukinumab (concentrations from this paper's PK model) drives Psoriasis Area and Severity Index (in no units): indirect response — drug inhibits the production of Psoriasis Area and Severity Index.
 
-**Model:** Model available in **Models**; browser simulation unavailable.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
-> Secukinumab serum concentrations inhibit the production of Psoriasis Area and Severity Index (PASI) scores via an indirect response model that limits the progression of psoriatic lesions. The model parameters are Imax = 1.19, IC50 = 9.35 mg/L, kout = 0.11 day−1, and koutTOL = 0.003 day−1.
+> Secukinumab inhibits the production of PASI scores via a proportional indirect response mechanism, with an Imax of 1.19, an IC50 of 9.35 mg/L, and a kout of 0.11 day−1. The model includes a tolerance component with a koutTOL of 0.003 day−1.
 >
 > <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Rodriguez-Fernandez_2024`
 - **model family:** `indirect_response_i`
-- **driver:** `cited_pk`
+- **driver:** `pk_record`
 - **tier:** population
 - **effect:** inhibition/proportional
 
@@ -35,13 +35,12 @@ Rodriguez-Fernandez K et al., Personalized Secukinumab Treatment in P…, Pharma
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
+| PD (effect) | kout | `Q328` · not captured | 0.11 | day−1 | not captured | llm (not captured) | Rodriguez-Fernandez_2024:pdv3 |
 | PD (effect) | Imax | `Q323` · not captured | 1.19 | not captured | not captured | llm (not captured) | Rodriguez-Fernandez_2024:pdv3 |
 | PD (effect) | IC50 | `Q322` · not captured | 9.35 | mg/L | not captured | llm (not captured) | Rodriguez-Fernandez_2024:pdv3 |
-| PD (effect) | kout | `Q328` · not captured | 0.11 | day−1 | not captured | llm (not captured) | Rodriguez-Fernandez_2024:pdv3 |
 | PD (effect) | koutTOL | `Q328` · not captured | 0.003 | day−1 | not captured | llm (not captured) | Rodriguez-Fernandez_2024:pdv3 |
-| variability | kout | `Q312` · not captured | 91.3 | % | not captured | llm (not captured) | Rodriguez-Fernandez_2024:pdv3 |
-| variability | koutTOL | `Q312` · not captured | 37.15 | % | not captured | llm (not captured) | Rodriguez-Fernandez_2024:pdv3 |
-| variability | Imax | `Q312` · not captured | 7.63 | % | not captured | llm (not captured) | Rodriguez-Fernandez_2024:pdv3 |
+| variability | IIV kout | `Q312` · not captured | 91.3 | % | not captured | llm (not captured) | Rodriguez-Fernandez_2024:pdv3 |
+| variability | IIV Imax | `Q312` · not captured | 7.63 | % | not captured | llm (not captured) | Rodriguez-Fernandez_2024:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -92,18 +91,21 @@ Advisory:
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_secukinumab/Secukinumab_RodriguezFernandez2024_PD_pasi/Secukinumab_RodriguezFernandez2024_PD_pasi_modelica.zip" download>Secukinumab_RodriguezFernandez2024_PD_pasi_modelica.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_secukinumab/Secukinumab_RodriguezFernandez2024_PD_pasi/Secukinumab_RodriguezFernandez2024_PD_pasi_matlab.zip" download>Secukinumab_RodriguezFernandez2024_PD_pasi_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_secukinumab/Secukinumab_RodriguezFernandez2024_PD_pasi/Secukinumab_RodriguezFernandez2024_PD_pasi_sbml.zip" download>Secukinumab_RodriguezFernandez2024_PD_pasi_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_secukinumab/Secukinumab_RodriguezFernandez2024_PD_pasi/Secukinumab_RodriguezFernandez2024_PD_pasi_cellml.zip" download>Secukinumab_RodriguezFernandez2024_PD_pasi_cellml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PD_IndirectTurnoverSweep.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+<dbs-fmusim paramsurl="drugs/drug_secukinumab/Secukinumab_RodriguezFernandez2024_PD_pasi/Secukinumab_RodriguezFernandez2024_PD_pasi_params.json" metaurl="assets/fmu/PD_IndirectTurnoverSweep.vr.json" wasmurl="assets/fmu/PD_IndirectTurnoverSweep.js" controlsurl="drugs/drug_secukinumab/Secukinumab_RodriguezFernandez2024_PD_pasi/Secukinumab_RodriguezFernandez2024_PD_pasi_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PD_IndirectTurnoverSweep` · parameters `Secukinumab_RodriguezFernandez2024_PD_pasi_params.json` · controls `Secukinumab_RodriguezFernandez2024_PD_pasi_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 

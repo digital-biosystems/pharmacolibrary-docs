@@ -18,9 +18,9 @@
 
 **Model:** No model was generated from this record.
 
-> The paper models terbutaline's effect on airway resistance (Raw) using an effect-compartment structure driven by terbutaline concentrations from a cited PK model, with the effect described as inhibition; no full text is available, so the specific mechanism, potency parameters (Imax/IC50/EC50/Emax/gamma), and rate constants (ke0) are not stated in the available excerpts.
+> The record indicates that terbutaline concentrations inhibit airway resistance via an effect compartment model, but the paper excerpts are unavailable to confirm the mechanism or provide specific potency and rate values.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
 
 - **paper:** `Oosterhuis_1986`
 - **model family:** `effect_compartment`

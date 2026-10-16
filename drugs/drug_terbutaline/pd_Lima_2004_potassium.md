@@ -18,9 +18,9 @@
 
 **Model:** No model was generated from this record.
 
-> Terbutaline concentrations act on plasma potassium concentration via an indirect response model (type IV) with stimulation of the response in a proportional (effect) manner; the paper excerpts provide no numeric potency or rate parameters (Imax, IC50, kin, kout) and no further mechanistic detail.
+> The paper does not provide the full text or specific mechanism details, so the exact pharmacodynamic mechanism and key potency or rate values are not stated. The record indicates an indirect response model where terbutaline stimulates plasma potassium concentration, but no numerical parameters are available.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
 
 - **paper:** `Lima_2004`
 - **model family:** `indirect_response_iv`

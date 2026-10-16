@@ -1,8 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;nivolumab&quot;,&quot;href&quot;:&quot;drugs/drug_nivolumab/&quot;},{&quot;label&quot;:&quot;Sangro_2023 \u00b7 PD objective tumor response&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;nivolumab&quot;,&quot;href&quot;:&quot;drugs/drug_nivolumab/&quot;},{&quot;label&quot;:&quot;Sangro_2023 \u00b7 PD Objective tumor response&quot;}]"></div>
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nivolumab_van2019_reference&quot;,&quot;label&quot;:&quot;van_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nivolumab/Nivolumab_van2019_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# objective tumor response — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
+# Objective tumor response — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -14,19 +14,19 @@
 
 ## Record summary
 
-**As extracted:** Nivolumab (concentrations from the PK model of Hu_2024) drives objective tumor response: categorical (graded) response model.
+**As extracted:** Nivolumab (concentrations from the PK model of Hu_2024) drives Objective tumor response: categorical (graded) response model.
 
 **Model:** No model was generated from this record.
 
-> The paper describes a categorical logistic regression model where the probability of objective tumor response (OTR) is associated with nivolumab Cavg1 (μg/mL), yielding an odds ratio of -0.00841 per log-transformed unit increase. The paper does not specify a mechanistic model (e.g., Emax or effect compartment) for this relationship, noting only that OTR improvements were associated with increased ipilimumab exposure but not nivolumab exposure.
+> The probability of objective tumor response (OTR) is modeled as a function of the first-dose average nivolumab concentration (Cavg1) using a multivariable logistic regression with a coefficient of -0.00841 per μg/mL, indicating that increased nivolumab exposure was not associated with improved OTR. The paper describes a statistical exposure-response association rather than a specific pharmacodynamic mechanism such as Emax or turnover, and no potency parameters (IC50/EC50) or rate constants are provided.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Sangro_2023`
 - **model family:** `categorical`
 - **driver:** `cited_pk`
 - **tier:** descriptive
-- **effect:** stimulation/proportional
+- **effect:** unknown/proportional
 
 ## Citation
 Sangro B et al., Exposure-response analysis for nivoluma…, Clinical and translational… (2023)
@@ -35,7 +35,7 @@ Sangro B et al., Exposure-response analysis for nivoluma…, Clinical and transl
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | Nivolumab Cavg1, μg/mL | `Q335` · not captured | -0.00841 | not captured | not captured | llm (not captured) | Sangro_2023:pdv3 |
+| model term | Nivolumab Cavg1, μg/mL | `Q900` · not captured | -0.00841 | not captured | not captured | llm (not captured) | Sangro_2023:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>

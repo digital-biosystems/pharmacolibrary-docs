@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05B&quot;,&quot;href&quot;:&quot;atc/N05B.md&quot;},{&quot;label&quot;:&quot;diazepam&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/&quot;},{&quot;label&quot;:&quot;L\u00f6scher_1981 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diazepam_Aurlie2023_reference&quot;,&quot;label&quot;:&quot;Aur\u00e9lie_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Aurlie2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Wang2022_reference&quot;,&quot;label&quot;:&quot;Wang_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Wang2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diazepam_Cavallaro2026_reference&quot;,&quot;label&quot;:&quot;Cavallaro_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Cavallaro2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Helfer2026_reference&quot;,&quot;label&quot;:&quot;Helfer_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Helfer2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Wang2022_reference&quot;,&quot;label&quot;:&quot;Wang_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Wang2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Greenblatt_1989_Percent_13_to_30_Hz_activity&quot;,&quot;label&quot;:&quot;Greenblatt_1989 \u00b7 Percent 13 to 30 Hz activity&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/pd_Greenblatt_1989_Percent_13_to_30_Hz_activity.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Visser_2003_EEG_effects&quot;,&quot;label&quot;:&quot;Visser_2003 \u00b7 EEG effects&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/pd_Visser_2003_EEG_effects.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # diazepam — `Diazepam_Lscher1981_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2), gpt-oss:120b (not confirmed, agreement 0.312). Primary extraction retained.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2), gpt-oss:120b (not confirmed, agreement 0.312). Primary extraction retained.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -19,23 +19,21 @@
 
 ### Reviewer guidance
 
-**This paper's disposition core is incomplete.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Aurélie_2023, Cavallaro_2026) cannot stand in for this paper's evidence. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — diazepam: t1/2β 3.2 hr, Cmax 100 ng/ml, t1/2z 5.7 hr, CL 1.24 L/h, V 4.7 L/kg, kabs 1.21 h−1, tlag 84.2 h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — diazepam: t1/2β 3.2 hr, fu 7 %, f_removed_HD 74 %, CL 3.8 L/h, V 4.7 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has diazepam → desmethyldiazepam (metabolism); desmethyldiazepam → oxazepam (metabolism); diazepam → 3-hydroxydiazepam (metabolism), the second reading diazepam → desmethyldiazepam (metabolism); diazepam → oxazepam (metabolism); diazepam → 3-hydroxydiazepam (metabolism); it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
-
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:26:28.916119+00:00) predates the upstream re-run (2026-10-06 19:05:43.075622+00:00). Current validate status: `rejected`.
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Löscher W et al., Pharmacokinetics of diazepam in the dog, Archives internationales de… (1981)
 
-<div class="pk-model-meta" hidden drug="diazepam" model-id="Diazepam_Lscher1981_reference" status="rejected" stale="true" population="dogs" measured-compound="diazepam" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="diazepam" model-id="Diazepam_Lscher1981_reference" status="rejected" stale="false" population="dogs" measured-compound="diazepam" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
-**Parameters:** 7 extracted.
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -44,13 +42,11 @@ Löscher W et al., Pharmacokinetics of diazepam in the dog, Archives internation
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| elimination half-life t0.5(beta) | `Q60` · t1/2β | 3.2 | hr | 11520.0 | [h] | not captured | llm (0.6) | Löscher_1981:abstract | — | not captured |
-| half-life | `Q57` · t1/2z | 5.7 | hr | 20520.0 | [h] | not captured | llm (0.6) | Löscher_1981:abstract | — | not captured |
-| Oral bioavailability | `Q40` · Fab | 74-100% | % | not captured | not captured | not captured | exact (1.0) | Löscher_1981:abstract | — | not captured |
-| CL (L/h) | `Q22` · CL | 1.236 | L/h | 3.4333333333333336e-07 | L/h | not captured | review_gapfill (0.7) | Aurélie_2023:review | — | not captured |
-| volume of distribution | `Q61` · V | 4.7 | L/kg | 0.329 | L | not captured | review_gapfill (0.7) | Cavallaro_2026:review | — | not captured |
-| Ka * (h−1) | `Q49` · kabs | 1.03 | h−1 | 0.0002861111111111111 | 1/h | not captured | review_gapfill (0.7) | Aurélie_2023:review | — | not captured |
-| Tlag (h) | `Q83` · tlag | 0.186 | h | 669.6 | h | not captured | review_gapfill (0.7) | Aurélie_2023:review | — | not captured |
+| t0.5(beta) | `Q60` · t1/2β | 3.2 | hr | 11520.0 | [h] | not captured | llm (0.6) | Löscher_1981:abstract | — | not captured |
+| 7-21% | `Q46` · fu | 7 | % | not captured | [%] | not captured | llm (0.6) | Löscher_1981:abstract | — | not captured |
+| 74-100% | `Q365` · f_removed_HD | 74 | % | not captured | [%] | not captured | llm (0.6) | Löscher_1981:abstract | — | not captured |
+| apparent total CL in a 9-year-old child weighing 29 kg | `Q22` · CL | 3.8 | L/h | 1.0555555555555555e-06 | L/h | not captured | review_gapfill (0.7) | Carrascosa-Arteaga_2025:review | — | not captured |
+| volume of distribution (fentanyl) | `Q61` · V | 4.7 | L/kg | 0.329 | L | not captured | review_gapfill (0.7) | Cavallaro_2026:review | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -60,27 +56,27 @@ Löscher W et al., Pharmacokinetics of diazepam in the dog, Archives internation
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped value-less row: 'share of unmetabolized diazepam in the total area under curve after oral administration'
-- dropped value-less row: 'share of unmetabolized diazepam in the total area under curve after i.v.'
-- dropped value-less row: 'steady state plasma concentrations of desmethyldiazepam'
-- dropped value-less row: 'maximal diazepam concentrations'
+- dropped unlinked row (NIL): '2 mg/kg diazepam' — extend the ontology if this is a real PK parameter (source ['Löscher_1981:abstract'])
+- covariate weight for equation variable from footnote/prose kept as documentation only (['Löscher_1981:abstract'])
+- dropped unlinked row (NIL): '100 ng/ml' — extend the ontology if this is a real PK parameter (source ['Löscher_1981:abstract'])
+- dropped unlinked row (NIL): '2 hr' — extend the ontology if this is a real PK parameter (source ['Löscher_1981:abstract'])
+- dropped unlinked row (NIL): '5.7 hr' — extend the ontology if this is a real PK parameter (source ['Löscher_1981:abstract'])
+- dropped unlinked row (NIL): '1-3%' — extend the ontology if this is a real PK parameter (source ['Löscher_1981:abstract'])
+- dropped unlinked row (NIL): '1000-2000 ng/ml' — extend the ontology if this is a real PK parameter (source ['Löscher_1981:abstract'])
+- dropped unlinked row (NIL): '100-800 ng/ml' — extend the ontology if this is a real PK parameter (source ['Löscher_1981:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=diazepam
-- round-trip: Fab value not numeric ('74-100%')
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
 - template fit: none — noncompartmental model — not a compartmental parent–metabolite model
 - status held at route_to_review — not promoted
-- row roles (LLM): model_class=noncompartmental; 7/7 row label(s) assigned, 0 linked by role; re-tagged diazepam→parent ×3, diazepam→desmethyldiazepam ×2
+- row roles (LLM): model_class=noncompartmental; 11/11 row label(s) assigned, 0 linked by role; re-tagged diazepam→parent ×2
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- gap-filled Q22 (CL) from Aurélie_2023's review values (primary lacked it)
+- gap-filled Q22 (CL) from Carrascosa-Arteaga_2025's review values (primary lacked it)
 - gap-filled Q61 (V) from Cavallaro_2026's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Aurélie_2023's review values (primary lacked it)
-- gap-filled Q83 (tlag) from Aurélie_2023's review values (primary lacked it)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Löscher_1981_metadata.yaml (7 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Löscher_1981_metadata.yaml (11 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -136,17 +132,14 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Aurélie_2023:review'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Aurélie_2023:review'] |
-| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Löscher_1981:abstract'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Carrascosa-Arteaga_2025:review'] |
 | C5_dimension_Q60 | pass | [time] | not captured | not captured | not captured | ['Löscher_1981:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Cavallaro_2026:review'] |
-| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Aurélie_2023:review'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 1.236 | not captured | not captured | ['Aurélie_2023:review'] |
-| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none', 'none'] | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 1.24 L/h | not captured | not captured | ['Aurélie_2023:review'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 3.8 | not captured | not captured | ['Carrascosa-Arteaga_2025:review'] |
+| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none', 'none', 'none'] | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 3.8 L/h | not captured | not captured | ['Carrascosa-Arteaga_2025:review'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 329 L | not captured | not captured | ['Cavallaro_2026:review'] |
 
 <details class="legend">
@@ -156,7 +149,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_diazepam/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Löscher_1981` / `Löscher_1981::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_diazepam/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Löscher_1981` / `Löscher_1981::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -172,4 +165,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 19:05 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 22:29 UTC</sub>

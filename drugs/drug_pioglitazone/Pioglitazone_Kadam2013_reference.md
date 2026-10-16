@@ -4,7 +4,7 @@
 
 # pioglitazone — `Pioglitazone_Kadam2013_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.375), gpt-oss:120b (not confirmed, agreement 0.778). Primary extraction retained.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.625), gpt-oss:120b (not confirmed, agreement 0.778). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -20,7 +20,7 @@
 
 A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Extracted — pioglitazone: V1/F 22.1 L, V/F 26.3 L, kabs 2.08 1/h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has pioglitazone, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of k a (h -1 )=θ 5: this record has none, the second reading 2.08; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -85,18 +85,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.375 (3/8 fields) | 5 |
+| `gpt-oss-120b` | not confirmed | 0.625 (5/8 fields) | 3 |
 | `gpt-oss:120b` | not confirmed | 0.778 (7/9 fields) | 2 |
 
-<details><summary>7 field discrepancies</summary>
+<details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `parameters[k a (h -1 )=θ 5]` | not captured | 2.08 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[v c /f (l)=θ 2].parameter_id` | Q82 | Q290 | mismatch |
 | `gpt-oss-120b` | `parameters[v p /f (l)=θ 4]` | not captured | 26.3 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | pioglitazone | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | pioglitazone | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[v c /f (l)=θ 2].parameter_id` | Q290 | Q76 | mismatch |
 | `gpt-oss:120b` | `parameters[v p /f (l)=θ 4].parameter_id` | Q76 | Q82 | mismatch |
 
@@ -127,7 +125,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_pioglitazone/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kadam_2013` / `Kadam_2013::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_pioglitazone/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kadam_2013` / `Kadam_2013::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

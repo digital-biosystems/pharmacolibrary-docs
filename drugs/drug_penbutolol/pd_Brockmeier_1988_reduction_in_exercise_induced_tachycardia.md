@@ -17,9 +17,9 @@
 
 **Model:** No model was generated from this record.
 
-> The record indicates that penbutolol concentrations (ng/ml) inhibit the reduction in exercise-induced tachycardia (beats/min) via an Emax model, but the paper excerpts are unavailable to confirm the specific mechanism or provide key potency and rate values.
+> The paper excerpt is unavailable, so the specific mechanism and key potency values (e.g., IC50, Imax) for penbutolol's effect on exercise-induced tachycardia are not stated.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Brockmeier_1988`
 - **model family:** `emax`

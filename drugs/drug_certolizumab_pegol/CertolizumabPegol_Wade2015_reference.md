@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;certolizumab pegol&quot;,&quot;href&quot;:&quot;drugs/drug_certolizumab_pegol/&quot;},{&quot;label&quot;:&quot;Wade_2015 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;CertolizumabPegol_Menshykau2024_reference&quot;,&quot;label&quot;:&quot;Menshykau_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_certolizumab_pegol/CertolizumabPegol_Menshykau2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;CertolizumabPegol_Menshykau2024_reference&quot;,&quot;label&quot;:&quot;Menshykau_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_certolizumab_pegol/CertolizumabPegol_Menshykau2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;CertolizumabPegol_Vande2017_reference&quot;,&quot;label&quot;:&quot;Vande_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_certolizumab_pegol/CertolizumabPegol_Vande2017_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;CertolizumabPegol_Wade2015_reference&quot;,&quot;label&quot;:&quot;Wade_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_certolizumab_pegol/CertolizumabPegol_Wade2015_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # certolizumab pegol — `CertolizumabPegol_Wade2015_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.48). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.48). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -13,13 +13,15 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
+
+> **Caveat** (`covariates_not_exercised`): Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.
 
 ### Reviewer guidance
 
-**CL has no unit.**
+**Accepted with a caveat: the covariate scenarios were not simulated.**
 
-Without a unit the value cannot be converted, so the model cannot use it. Extracted — certolizumab pegol: kabs 0.2 1/day, CL/F 0.685 L/day, V/F 7.61 L, CL 0.715, allometric_exponent 0.656.
+The base model was simulated, not the covariate effects the record defines.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has certolizumab_pegol, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -29,28 +31,22 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Wade JR et al., Population pharmacokinetic analysis of…, Journal of clinical pharmac… (2015)
   ·  DOI: [10.1002/jcph.491](https://doi.org/10.1002/jcph.491)
 
-<div class="pk-model-meta" hidden drug="certolizumab pegol" model-id="CertolizumabPegol_Wade2015_reference" status="needs_review" stale="false" population="adults with Crohn&#39;s disease" measured-compound="certolizumab_pegol" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="certolizumab pegol" model-id="CertolizumabPegol_Wade2015_reference" status="accepted_with_caveats" stale="false" population="patients with Crohn&#39;s disease" measured-compound="certolizumab pegol" parameterization="apparent" topology="1C"></div>
 
-**Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 5 extracted, plus 5 covariate effects.
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 4 extracted, plus 2 covariate effects.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| KA (/day), θ1 | `Q49` · kabs | 0.200 | 1/day | 2.3148148148148148e-06 | 1/h | 0.01 | llm_confirmed (0.6) | jcph491-tbl-0003:row2:col1, jcph491-tbl-0003:row2:col2 | — | 50.1 (None% RSE) |
-| CL/F, ATB –ve (L/day), θ2 | `Q27` · CL/F | 0.685 | L/day | 7.928240740740742e-09 | L/h | 1.6 | llm_confirmed (0.6) | jcph491-tbl-0003:row3:col1, jcph491-tbl-0003:row3:col2 | — | 27.5 (None% RSE) |
-| V/F (L), θ3 | `Q76` · V/F | 7.61 | L | 0.0076100000000000004 | L | 1.4 | llm_confirmed (0.6) | jcph491-tbl-0003:row5:col1, jcph491-tbl-0003:row5:col2 | — | 16.7 (None% RSE) |
-| albumin_1_on_cl_7 | `Q900` · albumin_1_on_cl_7 | -0.0598 | not captured | not captured | not captured | 7.1 | not captured (not captured) | jcph491-tbl-0003:row7:col1, jcph491-tbl-0003:row7:col2 | — | not captured |
-| albumin_2_on_cl_8 | `Q900` · albumin_2_on_cl_8 | -0.0177 | not captured | not captured | not captured | 18.1 | not captured (not captured) | jcph491-tbl-0003:row8:col1, jcph491-tbl-0003:row8:col2 | — | not captured |
-| BSA on CL, θ9 | `Q22` · CL | 0.715 | not captured | not captured | not captured | 5.1 | llm_confirmed (0.6) | jcph491-tbl-0003:row9:col1, jcph491-tbl-0003:row9:col2 | — | not captured |
-| BSA on V, θ12 | `Q319` · allometric_exponent | 0.656 | not captured | not captured | not captured | 8.1 | llm (0.6) | jcph491-tbl-0003:row12:col1, jcph491-tbl-0003:row12:col2 | — | not captured |
-| race_b_on_v_14 | `Q900` · race_b_on_v_14 | 0.265 | not captured | not captured | not captured | 52.0 | not captured (not captured) | jcph491-tbl-0003:row14:col1, jcph491-tbl-0003:row14:col2 | — | not captured |
-| theta_q61_race | `Q900` · theta_q61_race | -0.250 | not captured | not captured | not captured | 15.5 | not captured (not captured) | jcph491-tbl-0003:row13:col1, jcph491-tbl-0003:row13:col2 | — | not captured |
-| theta_q61_race | `Q900` · theta_q61_race | 0.415 | not captured | not captured | not captured | 65.0 | not captured (not captured) | jcph491-tbl-0003:row15:col1, jcph491-tbl-0003:row15:col2 | — | not captured |
+| KA (/day), θ1 | `Q49` · kabs | 0.200 | 1/day | 2.3148148148148148e-06 | 1/h | 0.01 | llm_confirmed (0.6) | jcph491-tbl-0003:row2:col1 | — | 50.1 (9.4% RSE) |
+| CL/F, ATB –ve (L/day), θ2 | `Q27` · CL/F | 0.685 | L/day | 7.928240740740742e-09 | [l] / [d] | 1.6 | llm_confirmed (0.6) | jcph491-tbl-0003:row3:col1 | — | 27.5 (4.1% RSE) |
+| V/F (L), θ3 | `Q76` · V/F | 7.61 | L | 0.0076100000000000004 | [l] | 1.4 | llm_confirmed (0.6) | jcph491-tbl-0003:row5:col1 | — | 16.7 (20.3% RSE) |
+| BSA on V, θ12 | `Q319` · allometric_exponent | 0.656 | not captured | not captured | not captured | 8.1 | llm (0.6) | jcph491-tbl-0003:row12:col1 | — | not captured |
+| theta_q30_race | `Q900` · theta_q30_race | 0.265 | not captured | not captured | not captured | 52.0 | not captured (not captured) | jcph491-tbl-0003:row14:col1 | — | not captured |
+| theta_q61_race | `Q900` · theta_q61_race | 0.415 | not captured | not captured | not captured | 65.0 | not captured (not captured) | jcph491-tbl-0003:row15:col1 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -58,6 +54,10 @@ Wade JR et al., Population pharmacokinetic analysis of…, Journal of clinical p
 </details>
 
 ## Departures & gaps
+
+**Deviations:**
+- `defaulted_parameters`: ['Tlag']
+- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
 
 **Interpretation flags:**
 - table section iiv: 'CL/F (ATB –ve)' routed out of structural estimates ('IIV (%CV)')
@@ -68,28 +68,19 @@ Wade JR et al., Population pharmacokinetic analysis of…, Journal of clinical p
 - table section iiv: 'Baseline (ATB +ve)' routed out of structural estimates ('IIV (%CV)')
 - table section residual_error: 'Proportional error (%) (additive on Ln scale), θ6' routed out of structural estimates ('Residual error')
 - dropped duplicate Q27 ('CL/F, ATB +ve (L/day), θ5', value '2.74') — already have one for this compound
-- dropped unlinked row (NIL): 'Baseline (μg/mL), θ4' — extend the ontology if this is a real PK parameter (source ['jcph491-tbl-0003:row6:col1', 'jcph491-tbl-0003:row6:col2'])
-- covariate level 'Albumin(1) on CL, θ7' → Q900:albumin_1_on_cl_7 = -0.0598 (linear_fractional on Q27)
-- covariate level 'Albumin(2) on CL, θ8' → Q900:albumin_2_on_cl_8 = -0.0177 (linear_fractional on Q27)
-- dropped unlinked row (NIL): 'CRP(1) on CL, θ10' — extend the ontology if this is a real PK parameter (source ['jcph491-tbl-0003:row10:col1', 'jcph491-tbl-0003:row10:col2'])
-- dropped unlinked row (NIL): 'CRP(2) on CL, θ11' — extend the ontology if this is a real PK parameter (source ['jcph491-tbl-0003:row11:col1', 'jcph491-tbl-0003:row11:col2'])
-- covariate level 'RACE(B) on V, θ14' → Q900:race_b_on_v_14 = 0.265 (linear_fractional on Q27)
-- dropped value-less row: 'ATB = 0 in the absence of antibodies, ATB = 1 in the presence of antibodies.'
-- NIL: refused to back-fill base 'CL' from footnote/prose loose number None (source ['jcph491-tbl-0003:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'equation variable' from footnote/prose loose number None (source ['jcph491-tbl-0003:footnote']); the table cell was unparseable — needs review
-- covariate albumin for equation variable from footnote/prose kept as documentation only (['jcph491-tbl-0003:footnote'])
-- NIL: refused to back-fill base 'CL/F' from footnote/prose loose number None (source ['jcph491-tbl-0003:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'NIL' from footnote/prose loose number 1 (source ['jcph491-tbl-0003:footnote']); the table cell was unparseable — needs review
-- covariate race for equation variable from footnote/prose kept as documentation only (['jcph491-tbl-0003:footnote'])
-- NIL: refused to back-fill base 'NIL' from footnote/prose loose number None (source ['jcph491-tbl-0003:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'V/F' from footnote/prose loose number None (source ['jcph491-tbl-0003:footnote']); the table cell was unparseable — needs review
+- dropped unlinked row (NIL): 'Baseline (μg/mL), θ4' — extend the ontology if this is a real PK parameter (source ['jcph491-tbl-0003:row6:col1'])
+- dropped unlinked row (NIL): 'Albumin(1) on CL, θ7' — extend the ontology if this is a real PK parameter (source ['jcph491-tbl-0003:row7:col1'])
+- dropped unlinked row (NIL): 'Albumin(2) on CL, θ8' — extend the ontology if this is a real PK parameter (source ['jcph491-tbl-0003:row8:col1'])
+- dropped unlinked row (NIL): 'BSA on CL, θ9' — extend the ontology if this is a real PK parameter (source ['jcph491-tbl-0003:row9:col1'])
+- dropped unlinked row (NIL): 'CRP(1) on CL, θ10' — extend the ontology if this is a real PK parameter (source ['jcph491-tbl-0003:row10:col1'])
+- dropped unlinked row (NIL): 'CRP(2) on CL, θ11' — extend the ontology if this is a real PK parameter (source ['jcph491-tbl-0003:row11:col1'])
+- dropped unlinked row (NIL): 'RACE(J) on V, θ13' — extend the ontology if this is a real PK parameter (source ['jcph491-tbl-0003:row13:col1'])
+- covariate effect for Q30 has no base parameter row (kept as unattached equation-variable)
 - covariate effect for Q61 has no base parameter row (kept as unattached equation-variable)
-- implicit units: 'KA (/day), θ1' → 1/day (from the paper text: "The parameter row explicitly lists the unit as '/day' in the notation 'KA (/day)'. Additionally, first-order absorption ")
-- implicit units: 'CL/F, ATB –ve (L/day), θ2' → L/day (from the paper text: "The parameter row explicitly lists the unit as '(L/day)' in the notation 'CL/F, ATB –ve (L/day)'. The text also confirms")
-- implicit units: 'V/F (L), θ3' → L (from the paper text: "The parameter row explicitly lists the unit as '(L)' in the notation 'V/F (L)'. The text also confirms V/F values in L, ")
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=certolizumab_pegol
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- implicit units: 'KA (/day), θ1' → 1/day (from the popPK convention: "The parameter is an absorption rate constant (KA). While the paper text uses 'L/day' for clearance, the table column hea")
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=certolizumab pegol
 - molar mass: none found for 'certolizumab_pegol' — its concentrations stay mass-only
+- molar mass: none found for 'certolizumab pegol' — its concentrations stay mass-only
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
@@ -136,18 +127,28 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['jcph491-tbl-0003:row3:col1', 'jcph491-tbl-0003:row3:col2'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['jcph491-tbl-0003:row2:col1', 'jcph491-tbl-0003:row2:col2'] |
-| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['jcph491-tbl-0003:row5:col1', 'jcph491-tbl-0003:row5:col2'] |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['jcph491-tbl-0003:row9:col1', 'jcph491-tbl-0003:row9:col2'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['jcph491-tbl-0003:row3:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['jcph491-tbl-0003:row2:col1'] |
+| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['jcph491-tbl-0003:row5:col1'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 0.0285 L/h | not captured | not captured | ['jcph491-tbl-0003:row3:col1', 'jcph491-tbl-0003:row3:col2'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 7.61 L | not captured | not captured | ['jcph491-tbl-0003:row5:col1', 'jcph491-tbl-0003:row5:col2'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 0.0285 L/h | not captured | not captured | ['jcph491-tbl-0003:row3:col1'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 7.61 L | not captured | not captured | ['jcph491-tbl-0003:row5:col1'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_output_variable | not captured | pass | C_central (measured=certolizumab pegol) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -156,7 +157,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_certolizumab_pegol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Wade_2015` / `Wade_2015::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_certolizumab_pegol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Wade_2015` / `Wade_2015::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_certolizumab_pegol/models/modelica/CertolizumabPegol_Wade2015_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_certolizumab_pegol/models/modelica/CertolizumabPegol_Wade2015_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_certolizumab_pegol/models/modelica/CertolizumabPegol_Wade2015_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -165,21 +169,26 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_certolizumab_pegol/CertolizumabPegol_Wade2015_reference/CertolizumabPegol_Wade2015_reference_modelica.zip" download>CertolizumabPegol_Wade2015_reference_modelica.zip</a> <span class="pk-size">(5.0 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_certolizumab_pegol/CertolizumabPegol_Wade2015_reference/CertolizumabPegol_Wade2015_reference_fmi.zip" download>CertolizumabPegol_Wade2015_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_certolizumab_pegol/CertolizumabPegol_Wade2015_reference/CertolizumabPegol_Wade2015_reference_matlab.zip" download>CertolizumabPegol_Wade2015_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_certolizumab_pegol/CertolizumabPegol_Wade2015_reference/CertolizumabPegol_Wade2015_reference_matlab_simbio.zip" download>CertolizumabPegol_Wade2015_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_certolizumab_pegol/CertolizumabPegol_Wade2015_reference/CertolizumabPegol_Wade2015_reference_sbml.zip" download>CertolizumabPegol_Wade2015_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_certolizumab_pegol/CertolizumabPegol_Wade2015_reference/CertolizumabPegol_Wade2015_reference_cellml.zip" download>CertolizumabPegol_Wade2015_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_certolizumab_pegol/CertolizumabPegol_Wade2015_reference/CertolizumabPegol_Wade2015_reference.svg" alt="CertolizumabPegol_Wade2015_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.00833 /h, F 1). Doses in the paper: 100, 200, 400 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_certolizumab_pegol/CertolizumabPegol_Wade2015_reference/CertolizumabPegol_Wade2015_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_certolizumab_pegol/CertolizumabPegol_Wade2015_reference/CertolizumabPegol_Wade2015_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C_enteral` · parameters `CertolizumabPegol_Wade2015_reference_params.json` · controls `CertolizumabPegol_Wade2015_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 23:59 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 21:13 UTC</sub>

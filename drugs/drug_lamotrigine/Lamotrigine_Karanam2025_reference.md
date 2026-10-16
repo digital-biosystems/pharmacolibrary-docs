@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;lamotrigine&quot;,&quot;href&quot;:&quot;drugs/drug_lamotrigine/&quot;},{&quot;label&quot;:&quot;Karanam_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lamotrigine_Huo2025_base&quot;,&quot;label&quot;:&quot;Huo_2025_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lamotrigine/Lamotrigine_Huo2025_base.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lamotrigine_Huo2025_final&quot;,&quot;label&quot;:&quot;Huo_2025_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lamotrigine/Lamotrigine_Huo2025_final.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lamotrigine_Chan2001_reference&quot;,&quot;label&quot;:&quot;Chan_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lamotrigine/Lamotrigine_Chan2001_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lamotrigine_Huo2025_base&quot;,&quot;label&quot;:&quot;Huo_2025_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lamotrigine/Lamotrigine_Huo2025_base.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lamotrigine_Huo2025_final&quot;,&quot;label&quot;:&quot;Huo_2025_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lamotrigine/Lamotrigine_Huo2025_final.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Castel_Branco_2005_anticonvulsant_profile_against_maximal_el&quot;,&quot;label&quot;:&quot;Castel-Branco_2005 \u00b7 anticonvulsant profile against maximal electroshock seizure stimulation&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_lamotrigine/pd_Castel_Branco_2005_anticonvulsant_profile_against_maximal_el.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # lamotrigine — `Lamotrigine_Karanam2025_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5), gpt-oss:120b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5), gpt-oss:120b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -17,21 +17,19 @@
 
 ### Reviewer guidance
 
-**The lamotrigine record was held back because the absorption rate constant ka was not reported in the source and a default was invented, alongside other builder deviations.**
+**Only clearance was extracted — no volume.**
 
-The model builder substituted library defaults for the missing absorption rate constant ka and lag time Tlag, and the invented absorption was judged not acceptable. The clearance parameter 'nonpregnant clearance' is reported as 0.33 fold, a unit that could not be converted to SI, so it entered the model without an SI value. The model also assumes F=1 and Fm=1 with no molar correction, giving an apparent (/F) parameterization with first-order depot input. A second reader disagreed on several parameter entries, reading 2.9 and 130 as ranges and leaving the clearance values null. Extracted — lamotrigine: V/F 130 L, CL/F 2.9 L/hour, CL 0.33 fold.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Extracted — lamotrigine: CL 2.79 L/hour.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has lamotrigine, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by glm-5.3-flash</sub>
-
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:38:27.114400+00:00) predates the upstream re-run (2026-10-07 07:02:18.049432+00:00). Current validate status: `needs_review`.
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Karanam A et al., Characterization of lamotrigine disposi…, Pharmacotherapy (2025)
   ·  DOI: [10.1002/phar.4640](https://doi.org/10.1002/phar.4640)
 
-<div class="pk-model-meta" hidden drug="lamotrigine" model-id="Lamotrigine_Karanam2025_reference" status="needs_review" stale="true" population="women with epilepsy (pregnant and nonpregnant)" measured-compound="lamotrigine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="lamotrigine" model-id="Lamotrigine_Karanam2025_reference" status="needs_review" stale="false" population="pregnant and nonpregnant women with epilepsy" measured-compound="lamotrigine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.
@@ -43,8 +41,7 @@ Karanam A et al., Characterization of lamotrigine disposi…, Pharmacotherapy (2
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CLBL (L/hour) | `Q22` · CL | 2.79 | L/hour | 7.75e-07 | [l] / [h] | 3 | llm (0.6) | phar4640-tbl-0002:row1:col1, phar4640-tbl-0002:row1:col3 | — | not captured |
-| P2 (%) | `Q900` · equation variable | 9.04 | not captured | not captured | not captured | 30 | llm (0.6) | phar4640-tbl-0002:row5:col1, phar4640-tbl-0002:row5:col3 | — | not captured |
+| CLBL (L/hour) | `Q22` · CL | 2.79 | L/hour | 7.75e-07 | [l] / [h] | 3 | llm_confirmed (0.6) | phar4640-tbl-0002:row1:col1 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -54,11 +51,12 @@ Karanam A et al., Characterization of lamotrigine disposi…, Pharmacotherapy (2
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped PD-category row 'Emax (L/hour)' → Q320 (Emax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['phar4640-tbl-0002:row2:col1', 'phar4640-tbl-0002:row2:col3'])
-- dropped PD-category row 'EC50 (weeks)' → Q321 (EC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['phar4640-tbl-0002:row3:col1', 'phar4640-tbl-0002:row3:col3'])
+- dropped PD-category row 'Emax (L/hour)' → Q320 (Emax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['phar4640-tbl-0002:row2:col1'])
+- dropped PD-category row 'EC50 (weeks)' → Q321 (EC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['phar4640-tbl-0002:row3:col1'])
 - dropped PD-category row 'Kdeg (1/weeks)' → Q328 (kout, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['phar4640-tbl-0002:row4:col1'])
-- dropped unlinked row (NIL): 'Estrogen‐based medications (%)' — extend the ontology if this is a real PK parameter (source ['phar4640-tbl-0002:row6:col1', 'phar4640-tbl-0002:row6:col3'])
-- dropped diagnostic row 'Enzyme‐inducing ASM (%)' → Q318 (shrinkage) — reported statistic, not a parameter
+- dropped unlinked row (NIL): 'P2 (%)' — extend the ontology if this is a real PK parameter (source ['phar4640-tbl-0002:row5:col1'])
+- dropped unlinked row (NIL): 'Estrogen‐based medications (%)' — extend the ontology if this is a real PK parameter (source ['phar4640-tbl-0002:row6:col1'])
+- dropped unlinked row (NIL): 'Enzyme‐inducing ASM (%)' — extend the ontology if this is a real PK parameter (source ['phar4640-tbl-0002:row7:col1'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=lamotrigine
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
@@ -105,22 +103,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['phar4640-tbl-0002:row1:col1', 'phar4640-tbl-0002:row1:col3'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 2.79 | not captured | not captured | ['phar4640-tbl-0002:row1:col1', 'phar4640-tbl-0002:row1:col3'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['phar4640-tbl-0002:row1:col1'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 2.79 | not captured | not captured | ['phar4640-tbl-0002:row1:col1'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 2.79 L/h | not captured | not captured | ['phar4640-tbl-0002:row1:col1', 'phar4640-tbl-0002:row1:col3'] |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
-| T3_output_variable | not captured | pass | C_central (measured=lamotrigine) | central.C | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 2.79 L/h | not captured | not captured | ['phar4640-tbl-0002:row1:col1'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -129,10 +115,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_lamotrigine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Karanam_2025` / `Karanam_2025::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_lamotrigine/models/modelica/Lamotrigine_Karanam2025_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_lamotrigine/models/modelica/Lamotrigine_Karanam2025_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_lamotrigine/models/modelica/Lamotrigine_Karanam2025_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_lamotrigine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Karanam_2025` / `Karanam_2025::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -158,4 +141,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 07:02 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 19:19 UTC</sub>

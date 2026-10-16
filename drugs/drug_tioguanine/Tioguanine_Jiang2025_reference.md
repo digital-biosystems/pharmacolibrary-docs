@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;tioguanine&quot;,&quot;href&quot;:&quot;drugs/drug_tioguanine/&quot;},{&quot;label&quot;:&quot;Jiang_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tioguanine_Jiang2025_reference&quot;,&quot;label&quot;:&quot;Jiang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tioguanine/Tioguanine_Jiang2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Tioguanine_Leblond2023_reference&quot;,&quot;label&quot;:&quot;Leblond_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tioguanine/Tioguanine_Leblond2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tioguanine_Jiang2025_reference&quot;,&quot;label&quot;:&quot;Jiang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tioguanine/Tioguanine_Jiang2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # tioguanine — `Tioguanine_Jiang2025_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.714), gpt-oss:120b (partly confirmed, agreement 0.714). Primary extraction retained.">cross-check: partial 0/2</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.714), gpt-oss:120b (partly confirmed, agreement 0.714). Primary extraction retained.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -23,13 +23,11 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:41:49.611484+00:00) predates the upstream re-run (2026-10-07 17:32:45.193734+00:00). Current validate status: `extracted`.
-
 ## Citation
 Jiang L et al., Drug-Drug Interactions and Individualiz…, Drug design, development an… (2025)
   ·  DOI: [10.2147/dddt.s547878](https://doi.org/10.2147/dddt.s547878)
 
-<div class="pk-model-meta" hidden drug="tioguanine" model-id="Tioguanine_Jiang2025_reference" status="extracted" stale="true" population="" measured-compound="tioguanine" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="tioguanine" model-id="Tioguanine_Jiang2025_reference" status="curated_candidate" stale="false" population="" measured-compound="tioguanine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.
@@ -39,9 +37,9 @@ Jiang L et al., Drug-Drug Interactions and Individualiz…, Drug design, develop
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F | `Q27` · CL/F | 21.6 | L/h | 6e-06 | L/h | not captured | review (0.7) | Jiang_2025:review | — | not captured |
-| V/F | `Q76` · V/F | 140.0 | L | 0.14 | L | not captured | review (0.7) | Jiang_2025:review | — | not captured |
-| Ka (fixed) | `Q49` · kabs | 1.3 | h−1 | 0.00036111111111111115 | 1/h | not captured | review (0.7) | Jiang_2025:review | — | not captured |
+| CL/F (L/h) | `Q27` · CL/F | 21.6 | L/h | 6e-06 | L/h | not captured | review (0.7) | Jiang_2025:review | — | not captured |
+| V/F (L) | `Q76` · V/F | 140.0 | L | 0.14 | L | not captured | review (0.7) | Jiang_2025:review | — | not captured |
+| Ka (fixed | `Q49` · kabs | 1.3 | /h | 0.00036111111111111115 | 1/h | not captured | review (0.7) | Jiang_2025:review | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -119,10 +117,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_tioguanine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Jiang_2025` / `Jiang_2025::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_tioguanine/models/modelica/Tioguanine_Jiang2025_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_tioguanine/models/modelica/Tioguanine_Jiang2025_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_tioguanine/models/modelica/Tioguanine_Jiang2025_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_tioguanine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Jiang_2025` / `Jiang_2025::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_tioguanine/models/modelica/Tioguanine_Jiang2025_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_tioguanine/models/modelica/Tioguanine_Jiang2025_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_tioguanine/models/modelica/Tioguanine_Jiang2025_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -140,7 +138,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_tioguanine/Tioguanine_Jiang2025_reference/Tioguanine_Jiang2025_reference.svg" alt="Tioguanine_Jiang2025_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_tioguanine/Tioguanine_Jiang2025_reference/Tioguanine_Jiang2025_reference.svg" alt="Tioguanine_Jiang2025_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -153,4 +151,4 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 17:32 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 22:01 UTC</sub>

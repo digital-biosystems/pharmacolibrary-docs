@@ -18,7 +18,7 @@ Nitrendipine is a dihydropyridine calcium channel blocker used to treat high blo
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 04:57 | 4:33 | 0/0/0 | 0/2/0 | 0/0/1 | 129,847/6,249 | ollama / qwen3.8:27b-mtp-q8_0 | 10 | 7/5 | 10/0 | 0 |
+| 2026-10-13 13:27 | 6:45 | 0/0/0 | 1/2/0 | 0/0/1 | 99,024/5,924 | einfracz / qwen3.8-27b | 11 | 7/6 | 11/0 | 0 |
 
 ## popPK records
 
@@ -28,7 +28,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Baydoun_1990_Ca2_efflux](drugs/drug_nitrendipine/pd_Baydoun_1990_Ca2_efflux.md) | Ca2+ efflux ← nitrendipine · direct Emax (saturable) effect | — | Baydoun AR et al., Bay K 8644, modifier of calcium transpo…, British journal of pharmaco… (1990) | [10.1111/j.1476-5381.1990.tb12081.x](https://doi.org/10.1111/j.1476-5381.1990.tb12081.x) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span> | [Dedos_2001_ecdysteroid_synthesis_and_release](drugs/drug_nitrendipine/pd_Dedos_2001_ecdysteroid_synthesis_and_release.md) | ecdysteroid synthesis and release biomarker turnover ← nitrendipine | — | Dedos SG et al., Involvement of calcium, inositol-1,4,5…, Zoological science (2001) | [10.2108/zsj.18.1245](https://doi.org/10.2108/zsj.18.1245) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Baydoun_1990_Ca2_efflux](drugs/drug_nitrendipine/pd_Baydoun_1990_Ca2_efflux.md) | Ca2+ efflux from mitochondria ← nitrendipine · direct Emax (saturable) effect | — | Baydoun AR et al., Bay K 8644, modifier of calcium transpo…, British journal of pharmaco… (1990) | [10.1111/j.1476-5381.1990.tb12081.x](https://doi.org/10.1111/j.1476-5381.1990.tb12081.x) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Baydoun_1990_State_4_respiration](drugs/drug_nitrendipine/pd_Baydoun_1990_State_4_respiration.md) | State 4 respiration ← nitrendipine · stimulation effect | — | Baydoun AR et al., Bay K 8644, modifier of calcium transpo…, British journal of pharmaco… (1990) | [10.1111/j.1476-5381.1990.tb12081.x](https://doi.org/10.1111/j.1476-5381.1990.tb12081.x) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> | [Soons_1993_HR](drugs/drug_nitrendipine/pd_Soons_1993_HR.md) | heart rate ← nitrendipine · direct sigmoid Emax (Hill) effect | — | Soons PA et al., Comparative effects of felodipine, nitr…, European journal of clinica… (1993) | [10.1007/BF00315467](https://doi.org/10.1007/BF00315467) |
 
@@ -36,7 +37,7 @@ _not available_
 
 | status | gene | affects | mechanism | detail | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓ 2/2</span> | **KCNH2** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | target | [He_2013](drugs/drug_nitrendipine/pgx_He_2013_KCNH2_Q100.md) | He F et al., The KCNH2 genetic polymorphism (1956, C…, PloS one (2013) | [10.1371/journal.pone.0061317](https://doi.org/10.1371/journal.pone.0061317) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (?, agreement 0.25), gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-check: partial 1/2</span> | **KCNH2** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | target | [He_2013](drugs/drug_nitrendipine/pgx_He_2013_KCNH2_Q100.md) | He F et al., The KCNH2 genetic polymorphism (1956, C…, PloS one (2013) | [10.1371/journal.pone.0061317](https://doi.org/10.1371/journal.pone.0061317) |
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -44,6 +45,25 @@ _not available_
 <summary>PGx field definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=nitrendipine).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inhibitor | DrugBank actor |
+| absorption | kidney | `ABCB1` inhibitor | DrugBank actor |
+| absorption | liver | `ABCB1` inhibitor | DrugBank actor |
+| absorption | placenta | `ABCB1` inhibitor | DrugBank actor |
+| absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
+| absorption | testis | `ABCB1` inhibitor | DrugBank actor |
+| metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
+| metabolism | liver | `CYP3A4` substrate, `CYP3A5` substrate, `CYP3A7` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate, `CYP3A5` substrate | DrugBank actor |
+| excretion | liver | `ABCB11` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: CACNA1C (inhibitor), CACNA1D (inhibitor), CACNA1H (inhibitor), CACNA1S (inhibitor), CACNA2D1 (inhibitor), CACNA2D2 (inhibitor), CACNB2 (inhibitor), KCNH2 (target), KCNMA1 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,35 +73,47 @@ _not available_
 
 ## Coverage
 
-- **PubMed hits:** 483 matched, 130 returned
-- **screened:** 0  ·  **relevant:** 0
+- **PubMed hits:** 482 matched, 171 returned
+- **screened:** 9  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
 
-_31 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_43 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
 | `Zhu_1990.pdf` | Zhu ZY et al., [Studies on the bioavailability of nitr…, Yao xue xue bao = Acta phar… (1990) | popPK | 8 | not captured | [2092581](https://pubmed.ncbi.nlm.nih.gov/2092581) | The study reports in vivo pharmacokinetic parameters for nitrendipine in humans, but the specific numeric values for CL, V, or ka are not present in the provided evidence, only bioavailability percentages. |
+| `Graefe_1988.pdf` | Graefe KH et al., Plasma concentration-response relations…, Clinical pharmacology and t… (1988) | popPK | 6 | [10.1038/clpt.1988.6](https://doi.org/10.1038/clpt.1988.6) | [3335117](https://pubmed.ncbi.nlm.nih.gov/3335117) | The study reports PK parameters (clearance, volume, half-life) for nitrendipine in humans, but specific numeric values are only described relatively (ranking) in the abstract and are likely in the full text/tables not provided in the evidence snippet. |
 | `Grover_1994.pdf` | Grover AK et al., Angiotensin II contractions in coronary…, Molecular and cellular bioc… (1994) | pd | 5 | [10.1007/BF00925957](https://doi.org/10.1007/BF00925957) | [7816052](https://www.ncbi.nlm.nih.gov/pubmed/7816052) | metadata signals extractable PD data (EC50) |
+| `Jensen_1998.pdf` | Jensen BS et al., Characterization of the cloned human in…, The American journal of phy… (1998) | pd | 5 | [10.1152/ajpcell.1998.275.3.C848](https://doi.org/10.1152/ajpcell.1998.275.3.C848) | [9730970](https://www.ncbi.nlm.nih.gov/pubmed/9730970) | metadata signals extractable PD data (IC50) |
 | `Nielsen-Kudsk_1987.pdf` | Nielsen-Kudsk F et al., A comparative study of the pharmacodyna…, Pharmacology & toxicology (1987) | pd | 5 | [10.1111/j.1600-0773.1987.tb01732.x](https://doi.org/10.1111/j.1600-0773.1987.tb01732.x) | [3588513](https://www.ncbi.nlm.nih.gov/pubmed/3588513) | metadata signals extractable PD data (Emax) |
 | `Soons_1993.pdf` | Soons PA et al., Comparative effects of felodipine, nitr…, European journal of clinica… (1993) | pd | 5 | [10.1007/BF00315467](https://doi.org/10.1007/BF00315467) | [8453956](https://www.ncbi.nlm.nih.gov/pubmed/8453956) | metadata signals extractable PD data (concentration-effect) |
 | `Zernig_1992.pdf` | Zernig G et al., Ion dependence of the partially purifie…, Molecular pharmacology (1992) | pd | 5 | not captured | [1310145](https://www.ncbi.nlm.nih.gov/pubmed/1310145) | metadata signals extractable PD data (EC50) |
 | `Andrejauskas_1986.pdf` | Andrejauskas E et al., 3,4,5-Triiodobenzoic acid affects [3H]v…, Biochemical and biophysical… (1986) | pd | 4 | [10.1016/s0006-291x(86)80420-x](https://doi.org/10.1016/s0006-291x(86)80420-x) | [3753496](https://www.ncbi.nlm.nih.gov/pubmed/3753496) | metadata signals extractable PD data (EC50) |
+| `Angelico_1999.pdf` | Angelico P et al., Vascular-selective effect of lercanidip…, The Journal of pharmacy and… (1999) | pd | 4 | [10.1211/0022357991772844](https://doi.org/10.1211/0022357991772844) | [10454048](https://www.ncbi.nlm.nih.gov/pubmed/10454048) | metadata signals extractable PD data (IC50) |
 | `Boarder_1991.pdf` | Boarder MR et al., Endothelin-1 stimulation of noradrenali…, Biochemical pharmacology (1991) | pd | 4 | [10.1016/0006-2952(91)90623-d](https://doi.org/10.1016/0006-2952(91)90623-d) | [1705122](https://www.ncbi.nlm.nih.gov/pubmed/1705122) | metadata signals extractable PD data (EC50) |
+| `Bolger_1986.pdf` | Bolger GT et al., Novel interactions of cations with dihy…, British journal of pharmaco… (1986) | pd | 4 | [10.1111/j.1476-5381.1986.tb16259.x](https://doi.org/10.1111/j.1476-5381.1986.tb16259.x) | [3017494](https://www.ncbi.nlm.nih.gov/pubmed/3017494) | metadata signals extractable PD data (EC50) |
 | `Borges_1993.pdf` | Borges R, Ionic mechanisms involved in the secret…, European journal of pharmac… (1993) | pd | 4 | [10.1016/0014-2999(93)90202-s](https://doi.org/10.1016/0014-2999(93)90202-s) | [7694862](https://www.ncbi.nlm.nih.gov/pubmed/7694862) | metadata signals extractable PD data (EC50) |
 | `Castillo_1989.pdf` | Castillo CJ et al., (+)-PN200-110 and ouabain binding sites…, Journal of neurochemistry (1989) | pd | 4 | [10.1111/j.1471-4159.1989.tb08536.x](https://doi.org/10.1111/j.1471-4159.1989.tb08536.x) | [2529351](https://www.ncbi.nlm.nih.gov/pubmed/2529351) | metadata signals extractable PD data (IC50) |
 | `Challiss_1991.pdf` | Challiss RA et al., Depolarization and agonist-stimulated c…, Journal of neurochemistry (1991) | pd | 4 | [10.1111/j.1471-4159.1991.tb08255.x](https://doi.org/10.1111/j.1471-4159.1991.tb08255.x) | [1861143](https://www.ncbi.nlm.nih.gov/pubmed/1861143) | metadata signals extractable PD data (EC50) |
 | `Chouabe_1998.pdf` | Chouabe C et al., HERG and KvLQT1/IsK, the cardiac K+ cha…, Molecular pharmacology (1998) | pd | 4 | not captured | [9765513](https://www.ncbi.nlm.nih.gov/pubmed/9765513) | metadata signals extractable PD data (EC50) |
 | `Chouabe_2000.pdf` | Chouabe C et al., Effects of calcium channel blockers on…, Therapie (2000) | pd | 4 | not captured | [10860024](https://www.ncbi.nlm.nih.gov/pubmed/10860024) | metadata signals extractable PD data (EC50) |
+| `Das_2004.pdf` | Das P et al., Inhibition of type A GABA receptors by…, Neuroscience (2004) | pd | 4 | [10.1016/j.neuroscience.2003.12.005](https://doi.org/10.1016/j.neuroscience.2003.12.005) | [14960351](https://www.ncbi.nlm.nih.gov/pubmed/14960351) | metadata signals extractable PD data (IC50) |
 | `Elmoselhi_1997.pdf` | Elmoselhi AB et al., Endothelin contraction in pig coronary…, Molecular and cellular bioc… (1997) | pd | 4 | not captured | [9406141](https://www.ncbi.nlm.nih.gov/pubmed/9406141) | metadata signals extractable PD data (EC50) |
+| `Ervasti_1989.pdf` | Ervasti JM et al., Transverse tubule calcium regulation in…, Archives of biochemistry an… (1989) | pd | 4 | [10.1016/0003-9861(89)90133-1](https://doi.org/10.1016/0003-9861(89)90133-1) | [2537601](https://www.ncbi.nlm.nih.gov/pubmed/2537601) | metadata signals extractable PD data (IC50) |
+| `Filloux_1994.pdf` | Filloux FM et al., The dihydropyridine nitrendipine inhibi…, European journal of pharmac… (1994) | pd | 4 | [10.1016/0922-4106(94)90040-x](https://doi.org/10.1016/0922-4106(94)90040-x) | [7534709](https://www.ncbi.nlm.nih.gov/pubmed/7534709) | metadata signals extractable PD data (IC50) |
 | `Flockerzi_1986.pdf` | Flockerzi V et al., Purification of a functional receptor f…, European journal of biochem… (1986) | pd | 4 | [10.1111/j.1432-1033.1986.tb10145.x](https://doi.org/10.1111/j.1432-1033.1986.tb10145.x) | [3023084](https://www.ncbi.nlm.nih.gov/pubmed/3023084) | metadata signals extractable PD data (EC50) |
+| `Gomis_1994.pdf` | Gomis A et al., Ruthenium red inhibits selectively chro…, Biochemical pharmacology (1994) | pd | 4 | [10.1016/0006-2952(94)90010-8](https://doi.org/10.1016/0006-2952(94)90010-8) | [7508229](https://www.ncbi.nlm.nih.gov/pubmed/7508229) | metadata signals extractable PD data (IC50) |
+| `Guarneri_1996.pdf` | Guarneri L et al., Pharmacological in vitro studies of the…, Arzneimittel-Forschung (1996) | pd | 4 | not captured | [8821512](https://www.ncbi.nlm.nih.gov/pubmed/8821512) | metadata signals extractable PD data (IC50) |
+| `Holland_1989.pdf` | Holland DR et al., LY249933: a cardioselective 1,4-dihydro…, Journal of cardiovascular p… (1989) | pd | 4 | not captured | [2476630](https://www.ncbi.nlm.nih.gov/pubmed/2476630) | metadata signals extractable PD data (EC50) |
+| `Kendall_1984.pdf` | Kendall DA et al., Inositol phospholipid hydrolysis in rat…, Journal of neurochemistry (1984) | pd | 4 | [10.1111/j.1471-4159.1984.tb02799.x](https://doi.org/10.1111/j.1471-4159.1984.tb02799.x) | [6423773](https://www.ncbi.nlm.nih.gov/pubmed/6423773) | metadata signals extractable PD data (EC50) |
 | `Litzinger_1986.pdf` | Litzinger MJ et al., [3H]-tetrodotoxin binding in neuronal a…, Biochemical and biophysical… (1986) | pd | 4 | [10.1016/s0006-291x(86)80417-x](https://doi.org/10.1016/s0006-291x(86)80417-x) | [2428363](https://www.ncbi.nlm.nih.gov/pubmed/2428363) | metadata signals extractable PD data (IC50) |
 | `Mazeaud_1994.pdf` | Mazeaud MM et al., Platelet aggregation and in vivo shear…, Thrombosis and haemostasis (1994) | pd | 4 | not captured | [8165643](https://www.ncbi.nlm.nih.gov/pubmed/8165643) | metadata signals extractable PD data (EC50) |
 | `Pliego_2006.pdf` | Pliego RG et al., Vasodilator effects of bis-dihydropyrid…, Medicinal chemistry (Shariq… (2006) | pd | 4 | [10.2174/157340606778250243](https://doi.org/10.2174/157340606778250243) | [17017993](https://www.ncbi.nlm.nih.gov/pubmed/17017993) | metadata signals extractable PD data (concentration-effect) |
 | `Pong_1985.pdf` | Pong SF et al., Effect of dantrolene sodium on [3H]nitr…, The Journal of pharmacy and… (1985) | pd | 4 | [10.1111/j.2042-7158.1985.tb04981.x](https://doi.org/10.1111/j.2042-7158.1985.tb04981.x) | [2867170](https://www.ncbi.nlm.nih.gov/pubmed/2867170) | metadata signals extractable PD data (IC50) |
+| `Santos_1998.pdf` | Santos PF et al., Differential acetylcholine and GABA rel…, The European journal of neu… (1998) | pd | 4 | [10.1046/j.1460-9568.1998.00281.x](https://doi.org/10.1046/j.1460-9568.1998.00281.x) | [9767402](https://www.ncbi.nlm.nih.gov/pubmed/9767402) | metadata signals extractable PD data (EC50) |
 | `Schaberg_1991.pdf` | Schaberg T et al., Evidence for a platelet-activating fact…, Biochemical and biophysical… (1991) | pd | 4 | [10.1016/0006-291x(91)91845-4](https://doi.org/10.1016/0006-291x(91)91845-4) | [1646607](https://www.ncbi.nlm.nih.gov/pubmed/1646607) | metadata signals extractable PD data (EC50) |
 | `St-Louis_1995.pdf` | St-Louis J et al., Decreased response to vasopressin in th…, Journal of the Society for… (1995) | pd | 4 | [10.1016/1071-5576(94)00059-a](https://doi.org/10.1016/1071-5576(94)00059-a) | [9420852](https://www.ncbi.nlm.nih.gov/pubmed/9420852) | metadata signals extractable PD data (EC50) |
 | `Steinsland_1985.pdf` | Steinsland OS et al., Comparative effects of nitrendipine and…, Journal of cardiovascular p… (1985) | pd | 4 | [10.1097/00005344-198509000-00028](https://doi.org/10.1097/00005344-198509000-00028) | [2413313](https://www.ncbi.nlm.nih.gov/pubmed/2413313) | metadata signals extractable PD data (EC50) |
@@ -96,13 +128,14 @@ _31 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Voruganti_2012.pdf` | Voruganti S et al., Effect of pomegranate juice on intestin…, Phytotherapy research : PTR (2012) | pgx | 7 | [10.1002/ptr.3704](https://doi.org/10.1002/ptr.3704) | [22275232](https://www.ncbi.nlm.nih.gov/pubmed/22275232) | metadata signals extractable PGX data (CYP2C9, PK/PD-context) |
 | `Wang_2007.pdf` | Wang XD et al., Rapid and simultaneous determination of…, Journal of chromatography.… (2007) | pgx | 7 | [10.1016/j.jchromb.2007.02.026](https://doi.org/10.1016/j.jchromb.2007.02.026) | [17339138](https://www.ncbi.nlm.nih.gov/pubmed/17339138) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 
-<sub>queue written 2026-10-07T04:54:45.183441+00:00</sub>
+<sub>queue written 2026-10-13T13:26:40.750596+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | PD | Alam_2022 | not_relevant | 0 | 0 | The paper investigates amlodipine, not nitrendipine, and only reports mean blood pressure changes without deriving specific concentration-effect or dose-response parameters for nitrendipine. |
+| popPK | Allgaier_1999 | irrelevant | 0 | 0 | This study characterizes NMDA receptors in rat neurons and uses nitrendipine only as an antagonist/probe, providing no pharmacokinetic parameters for nitrendipine. |
 | popPK | Andrejauskas_1986 | irrelevant | 0 | 0 | no_text gate: only 124 chars of text extracted (&lt; 400) |
 | PD | Andrejauskas_1986 | not_relevant | 0 | 0 | The paper studies the effect of 3,4,5-triiodobenzoic acid on verapamil binding and muscle contraction, and does not report any pharmacodynamic or exposure-response data for nitrendipine. |
 | PD | Aouam_2003 | not_relevant | 1 | 0 | The text is a qualitative review of dihydropyridine generations and does not report any numeric pharmacodynamic parameters or exposure-response data for nitrendipine. |
@@ -119,6 +152,7 @@ _31 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | PD | Bischoff_2000 | not_relevant | 0 | 0 | The paper reports PD parameters for sphingolipids (SPP/SPPC), not nitrendipine; nitrendipine is only used as a pharmacological tool to inhibit the sphingolipid effect. |
 | popPK | Boarder_1991 | irrelevant | 0 | 0 | no_text gate: only 94 chars of text extracted (&lt; 400) |
 | PD | Boarder_1991 | not_relevant | 0 | 0 | The paper investigates the mechanism of catecholamine release from adrenal chromaffin cells stimulated by Endothelin-1 and does not mention nitrendipine or report any pharmacodynamic parameters for it. |
+| popPK | Bolger_1986 | irrelevant | 0 | 0 | The study investigates cation effects on nitrendipine binding in brain and cardiac membranes (in vitro/pharmacodynamics) rather than pharmacokinetic parameters like clearance or volume. |
 | popPK | Borges_1993 | irrelevant | 0 | 0 | no_text gate: only 90 chars of text extracted (&lt; 400) |
 | PD | Borges_1993 | not_relevant | 0 | 0 | The paper focuses on the ionic mechanisms of histamine in rat adrenal medulla and does not mention nitrendipine or report any pharmacodynamic parameters for it. |
 | popPK | Bouthier_1985 | irrelevant | 0 | 0 | The study focuses on hemodynamic and echocardiographic parameters (cardiac hypertrophy, arterial distensibility) rather than pharmacokinetic disposition parameters for nitrendipine. |
@@ -155,6 +189,7 @@ _31 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | popPK | Gao_2025 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of mycophenolate sodium, not nitrendipine. |
 | PD | Gao_2025 | not_relevant | 0 | 0 | The paper focuses exclusively on the external validation of population pharmacokinetic (popPK) models for mycophenolate sodium and contains no pharmacodynamic (PD) or exposure-response analysis for nitrendipine. |
 | PD | Gopalakrishnan_1985 | not_relevant | 0 | 0 | The paper reports PD parameters (ED50, IC50) for Bay K-8644, not nitrendipine; nitrendipine is only mentioned as a radioligand for binding displacement. |
+| popPK | Graefe_1988 | relevant | 6 | 2 | The study reports PK parameters (clearance, volume, half-life) for nitrendipine in humans, but specific numeric values are only described relatively (ranking) in the abstract and are likely in the full text/tables not provided in the evidence snippet. |
 | popPK | Grover_1994 | irrelevant | 0 | 0 | no_text gate: only 85 chars of text extracted (&lt; 400) |
 | PD | Grover_1994 | not_relevant | 0 | 0 | The paper focuses on the pharmacology of Angiotensin II receptors and calcium pools in coronary arteries and does not report any pharmacodynamic or exposure-response data for nitrendipine. |
 | popPK | Grundeis_2023 | irrelevant | 0 | 0 | The paper is a systematic review of remdesivir for COVID-19 and contains no data for nitrendipine. |
@@ -162,8 +197,11 @@ _31 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | PD | Gubin_1993 | not_relevant | 1 | 1 | The paper reports an IC50 value for a new compound's inhibition of nitrendipine binding, which is a pharmacological potency assay, not a pharmacodynamic exposure-response or dose-response relationship for nitrendipine itself. |
 | PD | Guse_1997 | not_relevant | 1 | 0 | The paper mentions nitrendipine only as a positive control that dose-dependently antagonized Ca2+ signaling, but provides no numeric PD parameters (IC50, Emax, etc.) or concentration-effect data for nitrendipine. |
 | PGx | Ha_2026 | not_relevant | 2 | 0 | The paper reports clinical outcomes (blood pressure control) and general drug responsiveness percentages for a cohort, but does not report specific pharmacokinetic or pharmacodynamic parameter changes driven by specific gene variants for nitrendipine. |
+| popPK | Holland_1989 | irrelevant | 0 | 0 | The paper studies the pharmacodynamics of compound LY249933 using nitrendipine only as a radioligand for binding assays, with no PK parameters reported. |
+| popPK | Jensen_1998 | irrelevant | 0 | 0 | The study is a mechanistic electrophysiology paper on a potassium channel where nitrendipine is used only as a diagnostic blocker, not as the subject of a pharmacokinetic analysis. |
 | popPK | Jin_1992 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of opioid effects on calcium channels where nitrendipine is used only as a pharmacological tool to block calcium influx, not as the subject of PK analysis. |
 | PD | Jin_1992 | not_relevant | 0 | 0 | The paper studies opioid effects on calcium in cells; nitrendipine is used only as a qualitative blocker (1 µM) to identify channel type, with no dose-response or PD parameters reported for nitrendipine. |
+| popPK | Kendall_1984 | irrelevant | 0 | 0 | The study investigates inositol phospholipid hydrolysis in rat cerebral cortex and uses nitrendipine only as a calcium channel blocker for mechanistic comparison, not as the subject of a pharmacokinetic analysis. |
 | popPK | Kenny_1990 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of calcium channel antagonism in guinea-pig tissue and rat membranes, containing no pharmacokinetic parameters for nitrendipine. |
 | PD | Kenny_1990 | not_relevant | 0 | 0 | The paper focuses on the pharmacology of fluspirilene and its interaction with calcium channel activators; nitrendipine is used only as a reference antagonist, and no exposure-response or dose-response PD model/parameters for nitrendipine are reported. |
 | popPK | Kim_1997 | irrelevant | 0 | 0 | Nitrendipine is used only as a pharmacological tool to block calcium entry in an in-vitro mechanistic study of agouti regulation, with no PK parameters reported. |
@@ -186,9 +224,11 @@ _31 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | popPK | Milligan_2002 | irrelevant | 0 | 0 | The study analyzes the pharmacokinetics of sildenafil citrate, not nitrendipine. |
 | PD | Milligan_2002 | not_relevant | 0 | 0 | The paper analyzes the pharmacokinetics of sildenafil, not nitrendipine, and reports no pharmacodynamic or exposure-response data. |
 | PGx | Mitsui_2014 | not_relevant | 0 | 0 | The paper validates a transgenic mouse model for predicting human clearance and does not report pharmacogenomic effects of human gene variants on nitrendipine PK/PD. |
+| popPK | Miwa_1986 | irrelevant | 0 | 0 | The study investigates in vitro receptor binding affinity (Bmax, KD) of nitrendipine to rat myocardial sarcolemma, which is not pharmacokinetic disposition modeling. |
 | popPK | Mutafova-Yambolieva_1993 | irrelevant | 0 | 0 | The study is a pharmacological investigation of adrenoceptor-mediated contractile responses in isolated rat vas deferens, not a pharmacokinetic study of nitrendipine. |
 | PD | Mutafova-Yambolieva_1993 | not_relevant | 2 | 1 | The paper mentions nitrendipine only qualitatively (inhibitory effect increased), without providing numeric concentration-effect parameters or a PD model for nitrendipine. |
 | popPK | Nielsen-Kudsk_1987 | irrelevant | 0 | 0 | no_text gate: only 125 chars of text extracted (&lt; 400) |
+| popPK | Nishikawa_1998 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of AE0047, using nitrendipine only as a comparator drug for binding and tissue distribution assays, with no PK parameters for nitrendipine. |
 | popPK | OFarrell_1999 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of calcium channels in bovine cells where nitrendipine is used only as a pharmacological tool, not as the subject of PK analysis. |
 | PD | OFarrell_1999 | not_relevant | 1 | 0 | The paper uses nitrendipine as a qualitative pharmacological tool to block calcium channels in a cellular assay, reporting no dose-response curve or numeric PD parameters for nitrendipine itself. |
 | popPK | Odum_1987 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of nitrendipine's effect on angiotensin II-induced contractions in human chorionic plate arteries, reporting no pharmacokinetic parameters. |
@@ -206,6 +246,7 @@ _31 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | PD | Ren_2022 | not_relevant | 4 | 4 | The paper is a review/tutorial on slow reversible binding models and does not report a pharmacodynamic or exposure-response relationship for nitrendipine. |
 | popPK | Roth_1986 | irrelevant | 0 | 0 | The study is a pharmacological investigation of 5-HT2 receptors in rat aorta where nitrendipine is used only as a calcium channel blocker to facilitate contraction, not as the subject of pharmacokinetic analysis. |
 | PD | Roth_1986 | not_relevant | 0 | 0 | The paper focuses on 5-HT2 receptor pharmacology and PI turnover; nitrendipine is only mentioned as a calcium channel blocker used to facilitate contraction measurement, with no PD or exposure-response analysis for nitrendipine itself. |
+| popPK | Santos_1998 | irrelevant | 0 | 0 | This is an in vitro mechanistic study using nitrendipine as a pharmacological tool to block L-type calcium channels, not a pharmacokinetic study. |
 | PGx | Satoh_2003 | not_relevant | 0 | 0 | The paper investigates the inhibitory effects of 29 drugs on estradiol oxidation, not the pharmacokinetics or pharmacodynamics of nitrendipine. |
 | PGx | Savaryn_2022 | not_relevant | 0 | 0 | The paper investigates CYP3A4 induction by nitrendipine in hepatocytes, not the effect of a gene variant on nitrendipine's PK/PD. |
 | popPK | Schaberg_1991 | irrelevant | 0 | 0 | no_text gate: only 80 chars of text extracted (&lt; 400) |
@@ -227,6 +268,7 @@ _31 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | PGx | Takara_2012 | not_relevant | 0 | 0 | The study investigates the in vitro interaction between calcium antagonists and the ABCG2 transporter in cell lines, not the effect of a gene variant on the PK/PD of nitrendipine. |
 | PD | Viguier_2024 | not_relevant | 0 | 0 | The paper is a pharmacovigilance study clustering adverse drug reaction signatures using disproportionality analysis (ROR) and does not report any pharmacokinetic or pharmacodynamic modeling, exposure-response relationships, or numeric PD parameters for nitrendipine. |
 | PGx | Voruganti_2012 | not_relevant | 0 | 0 | The study investigates the effect of pomegranate juice (a food supplement) on nitrendipine pharmacokinetics, not the effect of a gene variant or genotype. |
+| popPK | Wang_1991 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of ethaverine's effect on calcium channels, where nitrendipine is used only as a radioligand for binding assays, not as the subject of pharmacokinetic analysis. |
 | popPK | Wang_1999 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology investigation of bepridil, using nitrendipine only as a tool compound to block calcium currents, and reports no pharmacokinetic parameters for nitrendipine. |
 | PD | Wang_1999 | not_relevant | 0 | 0 | The paper reports PD parameters (IC50, Hill coefficient) for bepridil, not nitrendipine; nitrendipine is only used as a tool compound to block calcium currents. |
 | PD | Wang_2006 | not_relevant | 0 | 0 | The paper focuses on the physicochemical preparation of drug-cyclodextrin complexes and does not report any pharmacodynamic or exposure-response data. |
@@ -236,6 +278,7 @@ _31 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | popPK | Wei_1986 | irrelevant | 0 | 0 | The study is a pharmacologic and radioligand binding analysis of calcium channel modulators, not a pharmacokinetic study, and nitrendipine is used only as a radioligand probe. |
 | popPK | Wei_1996 | irrelevant | 0 | 0 | no_text gate: only 124 chars of text extracted (&lt; 400) |
 | PD | Wei_1996 | not_relevant | 0 | 0 | The paper investigates the mechanism of action of CHEB (a barbiturate) on glutamate release and does not mention nitrendipine or report any pharmacodynamic parameters for it. |
+| popPK | Weigl_2000 | irrelevant | 0 | 0 | The study investigates the mechanism of calcium release in human skeletal muscle cells (in vitro) and does not report any pharmacokinetic parameters for nitrendipine. |
 | popPK | Wong_1993 | irrelevant | 0 | 0 | no_text gate: only 237 chars of text extracted (&lt; 400) |
 | PD | Wong_1993 | not_relevant | 0 | 0 | The paper investigates the pharmacology of XB513, not nitrendipine, and does not report any exposure-response or dose-response relationship for nitrendipine. |
 | PGx | Xia_2012 | not_relevant | 0 | 0 | The study investigates the inhibitory effects of dihydropyridines on CYP3A4 activity and QSAR relationships, but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |

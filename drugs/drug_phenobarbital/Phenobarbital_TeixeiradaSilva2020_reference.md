@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;phenobarbital&quot;,&quot;href&quot;:&quot;drugs/drug_phenobarbital/&quot;},{&quot;label&quot;:&quot;Teixeira-da-Silva_2020 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Phenobarbital_TeixeiradaSilva2022_reference&quot;,&quot;label&quot;:&quot;Teixeira-da-Silva_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_phenobarbital/Phenobarbital_TeixeiradaSilva2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Phenobarbital_TeixeiradaSilva2022_reference&quot;,&quot;label&quot;:&quot;Teixeira-da-Silva_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_phenobarbital/Phenobarbital_TeixeiradaSilva2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -29,7 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Teixeira-da-Silva P et al., Population pharmacokinetics of phenobar…, European journal of pharmac… (2020)
   ·  DOI: [10.1016/j.ejps.2020.105484](https://doi.org/10.1016/j.ejps.2020.105484)
 
-<div class="pk-model-meta" hidden drug="phenobarbital" model-id="Phenobarbital_TeixeiradaSilva2020_reference" status="rejected" stale="false" population="Caucasian patients with epilepsy over 15 years of age" measured-compound="phenobarbital" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="phenobarbital" model-id="Phenobarbital_TeixeiradaSilva2020_reference" status="rejected" stale="false" population="Caucasian patients with epilepsy" measured-compound="phenobarbital" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.
@@ -39,7 +39,14 @@ Teixeira-da-Silva P et al., Population pharmacokinetics of phenobar…, European
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
-_No resolved parameters._
+| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
+|---|---|---|---|---|---|---|---|---|---|---|
+| BSA | `Q900` · equation variable | 1.7 | BSA-1.7 | not captured | [.7] / [bsa] | not captured | llm (0.6) | Teixeira-da-Silva_2020:abstract | — | not captured |
+
+<details class="legend">
+<summary>Parameter definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
 
 ### Unresolved rows _(no Q-code or no value — not parameters)_
 | label (paper) | Q-code | value | link |
@@ -49,12 +56,19 @@ _No resolved parameters._
 ## Departures & gaps
 
 **Interpretation flags:**
+- unit_dimension_unknown: 'BSA-1.7' (equation variable)
+- dropped unlinked row (NIL): 'PHT' — extend the ontology if this is a real PK parameter (source ['Teixeira-da-Silva_2020:abstract'])
+- dropped unlinked row (NIL): 'VPA' — extend the ontology if this is a real PK parameter (source ['Teixeira-da-Silva_2020:abstract'])
+- dropped value-less row: 'fixed'
+- dropped value-less row: 'random effects'
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=phenobarbital
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at route_to_review — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Teixeira-da-Silva_2020_metadata.yaml (1 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Teixeira-da-Silva_2020_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -97,7 +111,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_phenobarbital/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Teixeira-da-Silva_2020` / `Teixeira-da-Silva_2020::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_phenobarbital/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Teixeira-da-Silva_2020` / `Teixeira-da-Silva_2020::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -113,4 +127,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 07:27 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 19:41 UTC</sub>

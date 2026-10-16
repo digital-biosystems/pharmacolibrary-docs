@@ -136,10 +136,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_mexiletine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Vozeh_1982` / `Vozeh_1982::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_mexiletine/models/modelica/Mexiletine_Vozeh1982_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_mexiletine/models/modelica/Mexiletine_Vozeh1982_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_mexiletine/models/modelica/Mexiletine_Vozeh1982_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_mexiletine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Vozeh_1982` / `Vozeh_1982::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_mexiletine/models/modelica/Mexiletine_Vozeh1982_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_mexiletine/models/modelica/Mexiletine_Vozeh1982_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_mexiletine/models/modelica/Mexiletine_Vozeh1982_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

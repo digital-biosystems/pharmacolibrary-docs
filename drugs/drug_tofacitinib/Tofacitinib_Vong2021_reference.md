@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;tofacitinib&quot;,&quot;href&quot;:&quot;drugs/drug_tofacitinib/&quot;},{&quot;label&quot;:&quot;Vong_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tofacitinib_Chang2024_estimate&quot;,&quot;label&quot;:&quot;Chang_2024_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tofacitinib/Tofacitinib_Chang2024_estimate.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tofacitinib_Chang2024_tofacitinib_5_mg_oral_solutionp&quot;,&quot;label&quot;:&quot;Chang_2024_tofacitinib_5_mg_oral_solutionp&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tofacitinib/Tofacitinib_Chang2024_tofacitinib_5_mg_oral_solutionp.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tofacitinib_Chang2024_tofacitinib_5_mg_tablet&quot;,&quot;label&quot;:&quot;Chang_2024_tofacitinib_5_mg_tablet&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tofacitinib/Tofacitinib_Chang2024_tofacitinib_5_mg_tablet.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tofacitinib_Xie2019_reference&quot;,&quot;label&quot;:&quot;Xie_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tofacitinib/Tofacitinib_Xie2019_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tofacitinib_Mohamed2020_reference&quot;,&quot;label&quot;:&quot;Mohamed_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tofacitinib/Tofacitinib_Mohamed2020_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tofacitinib_Shin2020_reference&quot;,&quot;label&quot;:&quot;Shin_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tofacitinib/Tofacitinib_Shin2020_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tofacitinib_Tsuchiwata2026_reference&quot;,&quot;label&quot;:&quot;Tsuchiwata_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tofacitinib/Tofacitinib_Tsuchiwata2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tofacitinib_Vong2021_reference&quot;,&quot;label&quot;:&quot;Vong_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tofacitinib/Tofacitinib_Vong2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tofacitinib_Chang2024_estimate&quot;,&quot;label&quot;:&quot;Chang_2024_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tofacitinib/Tofacitinib_Chang2024_estimate.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tofacitinib_Chang2024_tofacitinib_5_mg_tablet&quot;,&quot;label&quot;:&quot;Chang_2024_tofacitinib_5_mg_tablet&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tofacitinib/Tofacitinib_Chang2024_tofacitinib_5_mg_tablet.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tofacitinib_Xie2019_reference&quot;,&quot;label&quot;:&quot;Xie_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tofacitinib/Tofacitinib_Xie2019_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tofacitinib_Mohamed2020_reference&quot;,&quot;label&quot;:&quot;Mohamed_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tofacitinib/Tofacitinib_Mohamed2020_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tofacitinib_Shin2020_reference&quot;,&quot;label&quot;:&quot;Shin_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tofacitinib/Tofacitinib_Shin2020_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tofacitinib_Tsuchiwata2026_final_parameter_estimates_for_the&quot;,&quot;label&quot;:&quot;Tsuchiwata_2026_final_parameter_estimates_for_the_final_full_model_iiv_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tofacitinib/Tofacitinib_Tsuchiwata2026_final_parameter_estimates_for_the.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tofacitinib_Vong2021_reference&quot;,&quot;label&quot;:&quot;Vong_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tofacitinib/Tofacitinib_Vong2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Suzuki_2020_ACR20&quot;,&quot;label&quot;:&quot;Suzuki_2020 \u00b7 ACR20&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_tofacitinib/pd_Suzuki_2020_ACR20.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Suzuki_2020_ACR50&quot;,&quot;label&quot;:&quot;Suzuki_2020 \u00b7 ACR50&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_tofacitinib/pd_Suzuki_2020_ACR50.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Suzuki_2020_ACR70&quot;,&quot;label&quot;:&quot;Suzuki_2020 \u00b7 ACR70&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_tofacitinib/pd_Suzuki_2020_ACR70.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Mukherjee_2018_Clinical_remission&quot;,&quot;label&quot;:&quot;Mukherjee_2018 \u00b7 Clinical remission&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_tofacitinib/pd_Mukherjee_2018_Clinical_remission.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,9 +17,9 @@
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's peak concentration (Cmax) (paper 3.6e-06, model 4.23e-06).**
+**The model does not reproduce the paper's peak concentration (Cmax) (paper 3.6e-06, model 4.11e-05).**
 
-Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. Extracted — tofacitinib: CL/F 26.3 L/h, V/F 116 L, kabs 192 h−1, tlag 0.236 h, allometric_exponent 0.392.
+Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. Extracted — tofacitinib: CL/F 25 L/h, V/F 111 L, kabs 9.85 h−1, tlag 0.236 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has tofacitinib, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -29,10 +29,10 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Vong C et al., Population Pharmacokinetics of Tofaciti…, Clinical pharmacology in dr… (2021)
   ·  DOI: [10.1002/cpdd.899](https://doi.org/10.1002/cpdd.899)
 
-<div class="pk-model-meta" hidden drug="tofacitinib" model-id="Tofacitinib_Vong2021_reference" status="needs_review" stale="false" population="patients with moderate to severe ulcerative colitis" measured-compound="tofacitinib" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="tofacitinib" model-id="Tofacitinib_Vong2021_reference" status="needs_review" stale="false" population="adults with moderate to severe ulcerative colitis" measured-compound="tofacitinib" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 5 extracted.
+**Parameters:** 4 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -41,11 +41,10 @@ Vong C et al., Population Pharmacokinetics of Tofaciti…, Clinical pharmacology
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F, L/h | `Q27` · CL/F | 26.3 | L/h | 7.305555555555556e-06 | [l] / [h] | not captured | exact (1.0) | cpdd899-tbl-0003:row3:col1, cpdd899-tbl-0003:row3:col2, cpdd899-tbl-0003:row3:col4 | — | not captured |
-| V/F, L | `Q76` · V/F | 115.8 | L | 0.1158 | [l] | not captured | exact (1.0) | cpdd899-tbl-0003:row4:col1 | — | not captured |
-| Ka, h−1 | `Q49` · kabs | 191.8 | h−1 | 0.05327777777777778 | [1] / [h] | not captured | exact (1.0) | cpdd899-tbl-0003:row5:col1, cpdd899-tbl-0003:row5:col3 | — | not captured |
-| Lag time, h | `Q83` · tlag | 0.236 | h | 849.5999999999999 | [h] | not captured | exact (1.0) | cpdd899-tbl-0003:row8:col1 | — | not captured |
-| Scaling parameter c | `Q319` · allometric_exponent | 0.392 | not captured | not captured | not captured | not captured | llm (0.6) | cpdd899-tbl-0003:row9:col1 | — | not captured |
+| The typical estimates of CL/F | `Q27` · CL/F | 25.0 | L/h | 6.944444444444445e-06 | L/h | not captured | boundary (0.8) | Vong_2021:results_prose | — | not captured |
+| and V/F | `Q76` · V/F | 111 | L | 0.111 | L | not captured | boundary (0.8) | Vong_2021:results_prose | — | not captured |
+| Ka | `Q49` · kabs | 9.85 | h−1 | 0.002736111111111111 | 1/h | not captured | exact (1.0) | Vong_2021:results_prose | — | not captured |
+| lag time | `Q83` · tlag | 0.236 | h | 849.5999999999999 | h | not captured | exact (1.0) | Vong_2021:results_prose | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -58,34 +57,19 @@ Vong C et al., Population Pharmacokinetics of Tofaciti…, Clinical pharmacology
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
 
 **Interpretation flags:**
-- dropped duplicate Q27 ('CL/F', value '2.16') — already have one for this compound
-- dropped duplicate Q76 ('V/F', value '5.03') — already have one for this compound
+- salvaged Q27 ('The typical estimates of CL/F'=25.0) from results prose — parameter table was unreadable
+- salvaged Q76 ('and V/F'=111) from results prose — parameter table was unreadable
+- salvaged Q49 ('Ka'=9.85) from results prose — parameter table was unreadable
+- salvaged Q83 ('lag time'=0.236) from results prose — parameter table was unreadable
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=tofacitinib
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at route_to_review — not promoted
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- unparsed cell cpdd899-tbl-0003:row3:col5 = '25.5‐27.2'
-- unparsed cell cpdd899-tbl-0003:row3:col6 = '19.0‐24.5'
-- unparsed cell cpdd899-tbl-0003:row4:col4 = '115.5 (NA)'
-- unparsed cell cpdd899-tbl-0003:row4:col5 = '111.5‐120.6'
-- unparsed cell cpdd899-tbl-0003:row5:col4 = '9.86 (191.9) b'
-- unparsed cell cpdd899-tbl-0003:row5:col5 = '7.9‐10.8'
-- unparsed cell cpdd899-tbl-0003:row5:col6 = '179.0‐205.0 b'
-- unparsed cell cpdd899-tbl-0003:row6:col5 = '38.6‐44.4'
-- unparsed cell cpdd899-tbl-0003:row6:col6 = '54.0‐62.2'
-- unparsed cell cpdd899-tbl-0003:row7:col5 = '64.1‐73.5'
-- unparsed cell cpdd899-tbl-0003:row7:col6 = '54.0‐62.2'
-- unparsed cell cpdd899-tbl-0003:row8:col4 = '0.236 (NA)'
-- unparsed cell cpdd899-tbl-0003:row8:col5 = '0.218‐0.238'
-- unparsed cell cpdd899-tbl-0003:row9:col4 = '0.399 (NA)'
-- unparsed cell cpdd899-tbl-0003:row9:col5 = '0.305‐0.481'
-- unparsed cell cpdd899-tbl-0003:row12:col6 = '0.279‐0.426'
-- unparsed cell cpdd899-tbl-0003:row13:col6 = '0.829‐0.909'
-- unparsed cell cpdd899-tbl-0003:row14:col6 = '0.888‐0.972'
-- unparsed cell cpdd899-tbl-0003:row15:col6 = '−0.173 to −0.065'
-- unparsed cell cpdd899-tbl-0003:row16:col6 = '0.802‐0.887'
-- unparsed cell cpdd899-tbl-0003:row17:col6 = '0.501‐0.674'
+- table cpdd899-tbl-0003: unparsed_numeric_cell
+- final table cpdd899-tbl-0003: no supported point estimates; targeted recovery unresolved
 - LLM selected parameter table(s) 3
 
 ## Validation
@@ -126,18 +110,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C1_half_life_beta | pass | 3.05 | 3.052 | 1.0007 | 0.25 | reported t½β |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['cpdd899-tbl-0003:row3:col1', 'cpdd899-tbl-0003:row3:col2', 'cpdd899-tbl-0003:row3:col4'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['cpdd899-tbl-0003:row5:col1', 'cpdd899-tbl-0003:row5:col3'] |
-| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['cpdd899-tbl-0003:row4:col1'] |
-| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['cpdd899-tbl-0003:row8:col1'] |
+| C1_half_life_beta | pass | 3.05 | 3.078 | 1.0092 | 0.25 | reported t½β |
+| C2_base_Q27 | pass | 25.0 | 25.0 | 1.0 | 0.05 | footnote reference category |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 26.3 L/h | not captured | not captured | ['cpdd899-tbl-0003:row3:col1', 'cpdd899-tbl-0003:row3:col2', 'cpdd899-tbl-0003:row3:col4'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 116 L | not captured | not captured | ['cpdd899-tbl-0003:row4:col1'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 25 L/h | not captured | not captured | ['Vong_2021:results_prose'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 111 L | not captured | not captured | ['Vong_2021:results_prose'] |
 
 **Reviewer per-scenario checks:**
 
@@ -150,12 +131,12 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
-| T1_cmax | reference | pass | 3.6e-06 | 4.227427995195738e-06 | 1.1743 | ng/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 6.7e-06 | 4.227427995195738e-06 | 0.631 | ng/mL→SI vs simulated kg/m3 |
-| T1_t_half_beta | reference | pass | 3.05 | 3.055135871716891 | 1.0017 | h→SI vs simulated h |
-| T1_t_half_beta | reference | pass | 3.05 | 3.055135871716891 | 1.0017 | h→SI vs simulated h |
-| T1_t_half_beta | reference | pass | 3.05 | 3.055135871716891 | 1.0017 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 3.0 | 3.055135871716891 | 1.0184 | h→SI vs simulated h |
+| T1_cmax | reference | fail | 3.6e-06 | 4.1129914926410985e-05 | 11.425 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 6.7e-06 | 4.1129914926410985e-05 | 6.1388 | ng/mL→SI vs simulated kg/m3 |
+| T1_t_half_beta | reference | pass | 3.05 | 3.0762329679606553 | 1.0086 | h→SI vs simulated h |
+| T1_t_half_beta | reference | pass | 3.05 | 3.0762329679606553 | 1.0086 | h→SI vs simulated h |
+| T1_t_half_beta | reference | pass | 3.05 | 3.0762329679606553 | 1.0086 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 3.0 | 3.0762329679606553 | 1.0254 | h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -164,10 +145,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_tofacitinib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Vong_2021` / `Vong_2021::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_tofacitinib/models/modelica/Tofacitinib_Vong2021_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_tofacitinib/models/modelica/Tofacitinib_Vong2021_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_tofacitinib/models/modelica/Tofacitinib_Vong2021_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_tofacitinib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Vong_2021` / `Vong_2021::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_tofacitinib/models/modelica/Tofacitinib_Vong2021_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_tofacitinib/models/modelica/Tofacitinib_Vong2021_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_tofacitinib/models/modelica/Tofacitinib_Vong2021_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -176,7 +157,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_tofacitinib/Tofacitinib_Vong2021_reference/Tofacitinib_Vong2021_reference_modelica.zip" download>Tofacitinib_Vong2021_reference_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_tofacitinib/Tofacitinib_Vong2021_reference/Tofacitinib_Vong2021_reference_modelica.zip" download>Tofacitinib_Vong2021_reference_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_tofacitinib/Tofacitinib_Vong2021_reference/Tofacitinib_Vong2021_reference_fmi.zip" download>Tofacitinib_Vong2021_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_tofacitinib/Tofacitinib_Vong2021_reference/Tofacitinib_Vong2021_reference_matlab.zip" download>Tofacitinib_Vong2021_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_tofacitinib/Tofacitinib_Vong2021_reference/Tofacitinib_Vong2021_reference_matlab_simbio.zip" download>Tofacitinib_Vong2021_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
@@ -185,11 +166,11 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_tofacitinib/Tofacitinib_Vong2021_reference/Tofacitinib_Vong2021_reference.svg" alt="Tofacitinib_Vong2021_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_tofacitinib/Tofacitinib_Vong2021_reference/Tofacitinib_Vong2021_reference.svg" alt="Tofacitinib_Vong2021_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 0.5 mg, single dose, first-order absorption (ka 192 /h, lag 14.2 min, F 1). Doses in the paper: 0.5, 5, 10, 15 mg.
+**Administration: oral** — 5 mg, single dose, first-order absorption (ka 9.85 /h, lag 14.2 min, F 1). Doses in the paper: 5, 10 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_tofacitinib/Tofacitinib_Vong2021_reference/Tofacitinib_Vong2021_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_tofacitinib/Tofacitinib_Vong2021_reference/Tofacitinib_Vong2021_reference_sim_controls.json"></dbs-fmusim>
 
@@ -198,4 +179,4 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 00:55 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 23:15 UTC</sub>

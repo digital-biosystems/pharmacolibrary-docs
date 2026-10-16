@@ -7,17 +7,17 @@
  "parameters": {
   "E0": 0.0,
   "EC50": 1.75925925926e-10,
-  "Emax": -0.758,
+  "Emax": -0.00758,
   "exposure_per_s": 1.15740740741e-11,
   "gamma": 0.417
  },
  "reference_peaks": {},
  "reference_points": {
   "0": 0.0,
-  "1.7592592592592592e-10": -0.379
+  "1.7592592592592592e-10": -0.00379
  },
  "stop_time": 160.0,
- "subtitle": "low-density-lipoprotein cholesterol (LDL-C) against dose",
+ "subtitle": "low-density-lipoprotein cholesterol (LDL-C) (LDL-C) against dose",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
  "title": "Dose–response simulated by the PD model",
@@ -29,9 +29,9 @@
    "si_unit": "kg/s"
   },
   "Emax": {
-   "display_only": true,
-   "display_unit": "% change from pretreatment",
-   "factor": 1.0,
+   "display_only": false,
+   "display_unit": "%",
+   "factor": 0.01,
    "si_unit": "1"
   },
   "exposure": {
@@ -46,7 +46,7 @@
    "factor": 1.0,
    "si_unit": "1"
   },
-  "response_unit": "% change from pretreatment"
+  "response_unit": "%"
  },
  "x_axis": {
   "display_unit": "mg/day",
@@ -56,8 +56,8 @@
   "variable": "exposure"
  },
  "y_axis": {
-  "display_unit": "% change from pretreatment",
-  "factor": 1.0,
-  "label": "low-density-lipoprotein cholesterol (LDL-C)"
+  "display_unit": "%",
+  "factor": 0.01,
+  "label": "low-density-lipoprotein cholesterol (LDL-C) (LDL-C)"
  }
 }

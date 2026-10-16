@@ -90,7 +90,7 @@ Kinsale TS et al., Pharmacokinetic Modeling to Guide Precl…, Pharmaceutics (20
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs_non_atc/drug_islatravir/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kinsale_2024` / `Kinsale_2024::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs_non_atc/drug_islatravir/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kinsale_2024` / `Kinsale_2024::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

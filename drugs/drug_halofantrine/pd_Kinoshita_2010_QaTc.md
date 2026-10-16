@@ -1,8 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;halofantrine&quot;,&quot;href&quot;:&quot;drugs/drug_halofantrine/&quot;},{&quot;label&quot;:&quot;Kinoshita_2010 \u00b7 PD change in heart rate-corrected QaTc interval&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Halofantrine_Klein2012_reference&quot;,&quot;label&quot;:&quot;Klein_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_halofantrine/Halofantrine_Klein2012_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;halofantrine&quot;,&quot;href&quot;:&quot;drugs/drug_halofantrine/&quot;},{&quot;label&quot;:&quot;Kinoshita_2010 \u00b7 PD change in QaTc interval&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# change in heart rate-corrected QaTc interval — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span>
+# change in QaTc interval — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -12,20 +11,20 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-> **Species: pig.** This record comes from an animal study (pig), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
+> **Species: in vitro.** This record comes from an in-vitro study (cells, tissue or microsomes), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
 ## Record summary
 
-**As extracted:** Halofantrine (concentrations from the PK model of Klein_2012) drives change in heart rate-corrected QaTc interval: direct Emax (saturable) effect.
+**As extracted:** Halofantrine (concentrations from the PK model of Klein_2012) drives change in QaTc interval: direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
 
-> In isolated perfused guinea pig hearts, halofantrine (0.1–2.0 μM) directly prolonged the heart rate-corrected QaTc interval in a concentration-dependent manner, described by a direct Emax model (E = change in QaTc, with Emax, Emin, EC50, C); the paper does not state a mechanistic production/elimination model. The EC50 was 1.59 ± 1.26 μM, similar to quinine and higher (less potent) than quinidine (0.49 ± 0.61 μM).
+> The model describes the concentration-dependent increase in the QaTc interval in an isolated guinea pig heart as a direct sigmoid Emax effect of halofantrine. The fitted EC50 value for this effect is 1.59 μM.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Kinoshita_2010`
-- **model family:** `emax`
+- **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`
 - **tier:** descriptive
 - **effect:** stimulation/additive
@@ -37,7 +36,7 @@ Kinoshita A et al., Effects of anti-malarial drugs on the e…, Malaria journal 
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | EC50 | `Q321` · not captured | 1.59 ± 1.26 | μM | not captured | llm (not captured) | Kinoshita_2010:pdv3 |
+| PD (effect) | EC50 | `Q321` · not captured | 1.59 | μM | not captured | llm (not captured) | Kinoshita_2010:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>

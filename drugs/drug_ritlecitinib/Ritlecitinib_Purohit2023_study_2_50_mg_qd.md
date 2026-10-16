@@ -18,7 +18,7 @@
 
 **Only clearance was extracted — no volume.**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. A reported unit could not be converted (AUCt, AUClast and Cmax), so that value has no SI equivalent. Extracted — ritlecitinib: AUCt 986 ng·h/mL, AUClast 983 ng·h/mL, CL/F 50.6 L/h, Cmax 446 ng/mL.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. A reported unit could not be converted (AUClast and Cmax), so that value has no SI equivalent. Extracted — ritlecitinib: AUClast 986 ng·h/mL, CL/F 50.6 L/h, Cmax 446 ng/mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of auc0-24: this record has 986.3, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -28,10 +28,10 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Purohit V et al., Leveraging Prior Healthy Participant Ph…, The AAPS journal (2023)
   ·  DOI: [10.1208/s12248-023-00792-8](https://doi.org/10.1208/s12248-023-00792-8)
 
-<div class="pk-model-meta" hidden drug="ritlecitinib" model-id="Ritlecitinib_Purohit2023_study_2_50_mg_qd" status="needs_review" stale="false" population="healthy adults and patients with renal or hepatic impairment" measured-compound="ritlecitinib" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="ritlecitinib" model-id="Ritlecitinib_Purohit2023_study_2_50_mg_qd" status="needs_review" stale="false" population="healthy adults and patients with rheumatoid arthritis" measured-compound="ritlecitinib" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 4 extracted.
+**Parameters:** 3 extracted.
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -40,8 +40,7 @@ Purohit V et al., Leveraging Prior Healthy Participant Ph…, The AAPS journal (
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| AUC0-24, ng·h/mL | `Q19` · AUCt | 986.3 | ng·h/mL | not captured | [[h] · [ng]] / [ml] | not captured | llm (0.6) | Purohit_2023_table_2:row1:col3 | — | not captured |
-| AUClast, ng·h/mL | `Q74` · AUClast | 983.2 | ng·h/mL | not captured | [[h] · [ng]] / [ml] | not captured | exact (1.0) | Purohit_2023_table_2:row2:col3 | — | not captured |
+| AUC0-24, ng·h/mL | `Q74` · AUClast | 986.3 | ng·h/mL | not captured | [[h] · [ng]] / [ml] | not captured | llm (0.6) | Purohit_2023_table_2:row1:col3 | — | not captured |
 | CL/F, L/h | `Q27` · CL/F | 50.63 | L/h | 1.4063888888888889e-05 | [l] / [h] | not captured | exact (1.0) | Purohit_2023_table_2:row3:col3 | — | not captured |
 | Cmax, ng/mL | `Q32` · Cmax | 445.6 | ng/mL | not captured | [ng] / [ml] | not captured | exact (1.0) | Purohit_2023_table_2:row4:col3 | — | not captured |
 
@@ -54,12 +53,15 @@ Purohit V et al., Leveraging Prior Healthy Participant Ph…, The AAPS journal (
 
 **Interpretation flags:**
 - dropped unlinked row (NIL): 'Parametera' — extend the ontology if this is a real PK parameter (source ['Purohit_2023_table_2:row0:col3'])
+- dropped duplicate Q74 ('AUClast, ng·h/mL', value '983.2') — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=ritlecitinib
 - population split: 'study 2 (50 mg qd)' subgroup of Purohit_2023 (paper reports 2 populations: study 1 (30 mg qd), study 2 (50 mg qd))
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
+- table Tab4: representations disagree; selected evidence retained, not merged
+- table Purohit_2023_table_2: unparsed_numeric_cell
 - companion parameter table 2 transcribed (15 record(s))
 - LLM selected parameter table(s) 2, 4
 
@@ -94,13 +96,12 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q19 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Purohit_2023_table_2:row1:col3'] |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Purohit_2023_table_2:row3:col3'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Purohit_2023_table_2:row4:col3'] |
-| C5_dimension_Q74 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Purohit_2023_table_2:row2:col3'] |
+| C5_dimension_Q74 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Purohit_2023_table_2:row1:col3'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 50.6 L/h | not captured | not captured | ['Purohit_2023_table_2:row3:col3'] |
@@ -112,7 +113,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ritlecitinib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Purohit_2023` / `Purohit_2023::study_2_50_mg_qd`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ritlecitinib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Purohit_2023` / `Purohit_2023::study_2_50_mg_qd`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -138,4 +139,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 00:23 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 00:12 UTC</sub>

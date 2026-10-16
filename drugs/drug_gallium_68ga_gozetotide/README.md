@@ -23,7 +23,18 @@ Gallium (68Ga) gozetotide is a diagnostic radiopharmaceutical used for detecting
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Sachpekidis_2016_reference](drugs/drug_gallium_68ga_gozetotide/Gallium68gaGozetotide_Sachpekidis2016_reference.md) | — | 1-compartment (no model) | 0 | Sachpekidis C et al., 68Ga-PSMA-11 Dynamic PET/CT Imaging in…, Clinical nuclear medicine (2016) | [10.1097/RLU.0000000000001349](https://doi.org/10.1097/RLU.0000000000001349) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓ 2/2</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Sachpekidis_2016_reference](drugs/drug_gallium_68ga_gozetotide/Gallium68gaGozetotide_Sachpekidis2016_reference.md) | — | 1-compartment (no model) | 0 | Sachpekidis C et al., 68Ga-PSMA-11 Dynamic PET/CT Imaging in…, Clinical nuclear medicine (2016) | [10.1097/RLU.0000000000001349](https://doi.org/10.1097/RLU.0000000000001349) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=gallium_68ga_gozetotide).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | prostate gland | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: FOLH1 (binder).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

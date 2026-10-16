@@ -18,11 +18,22 @@ Epanolol is a selective beta blocker that was developed as an antihypertensive d
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 01:54 | 0:33 | 0/0/0 | 0/0/0 | 0/0/0 | 9,289/310 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-14 20:40 | 0:23 | 0/0/0 | 0/0/0 | 0/0/0 | 9,289/307 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
 _not available_
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=epanolol).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
+| metabolism | liver | `CYP2D6` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ADRB3 (modulator).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -43,12 +54,12 @@ _4 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Cockshott_1989.pdf` | Cockshott ID, Pharmacokinetics of epanolol (ICI 141,2…, Drugs 38 Suppl (1989) | popPK | 10 | [10.2165/00003495-198900382-00005](https://doi.org/10.2165/00003495-198900382-00005) | [2575975](https://pubmed.ncbi.nlm.nih.gov/2575975) | The abstract provides specific quantitative PK parameters including half-lives (7 min, 3 h, 20 h), clearance (2.1 L/min), and bioavailability (7-8%). |
-| `Laher_1990.pdf` | Laher MS et al., ICI 141,292 (epanolol)--pharmacokinetic…, European journal of clinica… (1990) | popPK | 9 | [10.1007/BF02657061](https://doi.org/10.1007/BF02657061) | [1980462](https://pubmed.ncbi.nlm.nih.gov/1980462) | The study reports quantitative PK parameters (Cmax, tmax, t1/2, AUC) for epanolol in humans, though specific clearance and volume values are not explicitly listed in the text. |
-| `Marlier_1990.pdf` | Marlier R et al., Pharmacokinetics of epanolol in elderly…, Arzneimittel-Forschung (1990) | popPK | 8 | not captured | [1970734](https://pubmed.ncbi.nlm.nih.gov/1970734) | The study reports quantitative PK parameters (Cmax, Tmax, t1/2) for epanolol in humans, but lacks explicit values for clearance (CL) or volume of distribution (V). |
+| `Cockshott_1989.pdf` | Cockshott ID, Pharmacokinetics of epanolol (ICI 141,2…, Drugs 38 Suppl (1989) | popPK | 10 | [10.2165/00003495-198900382-00005](https://doi.org/10.2165/00003495-198900382-00005) | [2575975](https://pubmed.ncbi.nlm.nih.gov/2575975) | Study reports quantitative PK parameters for epanolol including clearance, half-life, and bioavailability in the abstract, though volume of distribution is not explicitly stated in the text. |
+| `Marlier_1990.pdf` | Marlier R et al., Pharmacokinetics of epanolol in elderly…, Arzneimittel-Forschung (1990) | popPK | 8 | not captured | [1970734](https://pubmed.ncbi.nlm.nih.gov/1970734) | The study reports specific PK parameters for epanolol (Cmax, Tmax, t1/2) in humans, but lacks complete compartmental parameters like clearance (CL) or volume of distribution (V) in the provided text. |
+| `Laher_1990.pdf` | Laher MS et al., ICI 141,292 (epanolol)--pharmacokinetic…, European journal of clinica… (1990) | popPK | 6 | [10.1007/BF02657061](https://doi.org/10.1007/BF02657061) | [1980462](https://pubmed.ncbi.nlm.nih.gov/1980462) | The paper reports oral pharmacokinetic parameters (Cmax, tmax, t1/2, AUC) for epanolol in humans, but does not explicitly provide clearance (CL) or volume of distribution (V) values which are required for compartmental/population PK modeling. |
 | `Vigholt-Sørensen_1991.pdf` | Vigholt-Sørensen E et al., Comparative effects of beta-adrenocepto…, Pharmacology & toxicology (1991) | pd | 4 | [10.1111/j.1600-0773.1991.tb01309.x](https://doi.org/10.1111/j.1600-0773.1991.tb01309.x) | [1687080](https://www.ncbi.nlm.nih.gov/pubmed/1687080) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-10-07T01:54:05.114764+00:00</sub>
+<sub>queue written 2026-10-14T20:40:48.634854+00:00</sub>
 
 ## Screened and excluded
 
@@ -61,7 +72,7 @@ _4 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | popPK | Hosie_1990 | irrelevant | 0 | 0 | no_text gate: only 112 chars of text extracted (&lt; 400) |
 | popPK | Lefebvre_1990 | irrelevant | 2 | 0 | The study focuses on the pharmacokinetics of digoxin (the subject drug) to assess interaction with epanolol, and no quantitative PK parameters for epanolol are reported. |
 | PD | Lefebvre_1990 | not_relevant | 2 | 1 | The paper reports qualitative changes in hemodynamic indices (QS2I, PEPI) when epanolol is added to digoxin, but it does not provide a concentration-effect or dose-response analysis for epanolol, nor does it report numeric PD parameters (Emax, EC50, etc.) for epanolol. |
-| popPK | Marlier_1990 | relevant | 8 | 4 | The study reports quantitative PK parameters (Cmax, Tmax, t1/2) for epanolol in humans, but lacks explicit values for clearance (CL) or volume of distribution (V). |
+| popPK | Marlier_1990 | relevant | 8 | 4 | The study reports specific PK parameters for epanolol (Cmax, Tmax, t1/2) in humans, but lacks complete compartmental parameters like clearance (CL) or volume of distribution (V) in the provided text. |
 | popPK | Vigholt-Sørensen_1991 | irrelevant | 0 | 0 | no_text gate: only 80 chars of text extracted (&lt; 400) |
 | PD | Vigholt-Sørensen_1991 | not_relevant | 0 | 0 | The paper studies beta-adrenoceptor partial agonists on isolated rat atrium and does not mention epanolol or report any exposure-response or dose-response data for it. |
 

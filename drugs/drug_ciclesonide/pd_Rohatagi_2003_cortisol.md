@@ -18,9 +18,9 @@
 
 **Model:** Model available in **Models**; browser simulation unavailable.
 
-> Ciclesonide active principle (CIC-AP) concentrations inhibit endogenous cortisol release (ng/h) via an indirect response model (inhibition of cortisol production/release), with a maximum cortisol release rate of 3140 ng/h and an EC50 of 0.88 ng/mL; the paper excerpts do not state additional mechanism details.
+> Ciclesonide active principle (CIC-AP) concentrations (ng/mL) inhibit the production of endogenous cortisol (ng/h) via a proportional indirect response mechanism with an EC50 of 0.88 ng/mL and a maximum cortisol release rate (Imax equivalent) of 3140 ng/h. The paper excerpts do not provide the rate of onset or offset for the effect (ke0).
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Rohatagi_2003`
 - **model family:** `indirect_response_i`

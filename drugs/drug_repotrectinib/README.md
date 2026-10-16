@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;repotrectinib&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Repotrectinib_Du2025_reference&quot;,&quot;label&quot;:&quot;Du_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_repotrectinib/Repotrectinib_Du2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # repotrectinib
 
@@ -27,27 +26,46 @@ Repotrectinib is a protein kinase inhibitor used to treat non-small-cell lung ca
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 05:59 | 2:54 | 0/0/1 | 0/0/1 | 0/0/0 | 70,075/15,077 | openai / gpt-6-luna | 2 | 0/2 | 2/0 | 0 |
+| 2026-10-14 21:04 | 1:08 | 0/1/0 | 1/0/0 | 0/0/0 | 70,219/2,408 | einfracz / qwen3.8-27b | 2 | 0/2 | 2/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.765). Primary extraction retained.">cross-check: partial</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: T3_param_coverage</sub><br><sub>route_to: `engineer`</sub> | [Du_2025_reference](drugs/drug_repotrectinib/Repotrectinib_Du2025_reference.md) | ▶ model + simulator | 2-compartment, IV | 7 (+7 cov.) | Du S et al., A Novel Empirical Autoinduction Model t…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70036](https://doi.org/10.1002/psp4.70036) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.765). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Du_2025_reference](drugs/drug_repotrectinib/Repotrectinib_Du2025_reference.md) | — | 2-compartment (no model) | 6 (+7 cov.) | Du S et al., A Novel Empirical Autoinduction Model t…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70036](https://doi.org/10.1002/psp4.70036) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> | [Du_2025_2_DRDIs](drugs/drug_repotrectinib/pd_Du_2025_2_DRDIs.md) | dose reduction or interruption due to AEs (DRDIs) ← repotrectinib · time-to-event model | — | Du S et al., Exposure-Response Analysis of Repotrect…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70102](https://doi.org/10.1002/psp4.70102) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span> | [Du_2025_2_Gr2_NEAEs](drugs/drug_repotrectinib/pd_Du_2025_2_Gr2_NEAEs.md) | Grade 2 or higher (Gr2+) neurologic adverse events (NEAEs) ← repotrectinib · time-to-event model | — | Du S et al., Exposure-Response Analysis of Repotrect…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70102](https://doi.org/10.1002/psp4.70102) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span> | [Du_2025_2_Gr2_anemia](drugs/drug_repotrectinib/pd_Du_2025_2_Gr2_anemia.md) | Grade 2 or higher (Gr2+) anemia ← repotrectinib · time-to-event model | — | Du S et al., Exposure-Response Analysis of Repotrect…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70102](https://doi.org/10.1002/psp4.70102) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Du_2025_2_ORR](drugs/drug_repotrectinib/pd_Du_2025_2_ORR.md) | objective response rate ← repotrectinib · direct linear effect | — | Du S et al., Exposure-Response Analysis of Repotrect…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70102](https://doi.org/10.1002/psp4.70102) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> | [Du_2025_2_DRDIs](drugs/drug_repotrectinib/pd_Du_2025_2_DRDIs.md) | dose reduction or interruption due to AEs ← repotrectinib · time-to-event model | — | Du S et al., Exposure-Response Analysis of Repotrect…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70102](https://doi.org/10.1002/psp4.70102) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span> | [Du_2025_2_Gr2_NEAEs](drugs/drug_repotrectinib/pd_Du_2025_2_Gr2_NEAEs.md) | Gr2+ neurologic AEs ← repotrectinib · time-to-event model | — | Du S et al., Exposure-Response Analysis of Repotrect…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70102](https://doi.org/10.1002/psp4.70102) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span> | [Du_2025_2_Gr2_anemia](drugs/drug_repotrectinib/pd_Du_2025_2_Gr2_anemia.md) | Gr2+ anemia ← repotrectinib · time-to-event model | — | Du S et al., Exposure-Response Analysis of Repotrect…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70102](https://doi.org/10.1002/psp4.70102) |
 | <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> | [Du_2025_2_Gr2_dizziness](drugs/drug_repotrectinib/pd_Du_2025_2_Gr2_dizziness.md) | Grade 2 or higher (Gr2+) dizziness ← repotrectinib · time-to-event model | — | Du S et al., Exposure-Response Analysis of Repotrect…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70102](https://doi.org/10.1002/psp4.70102) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span> | [Du_2025_2_Gr3_TEAEs](drugs/drug_repotrectinib/pd_Du_2025_2_Gr3_TEAEs.md) | Grade 3 or higher (Gr3+) treatment-emergent adverse events (TEAEs) ← repotrectinib · time-to-event model | — | Du S et al., Exposure-Response Analysis of Repotrect…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70102](https://doi.org/10.1002/psp4.70102) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span> | [Du_2025_2_Gr3_TEAEs](drugs/drug_repotrectinib/pd_Du_2025_2_Gr3_TEAEs.md) | Grade 3 or higher (Gr3+) treatment‐emergent adverse events (AEs) ← repotrectinib · time-to-event model | — | Du S et al., Exposure-Response Analysis of Repotrect…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70102](https://doi.org/10.1002/psp4.70102) |
 | <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span> | [Du_2025_2_PFS](drugs/drug_repotrectinib/pd_Du_2025_2_PFS.md) | progression-free survival ← repotrectinib · time-to-event model | — | Du S et al., Exposure-Response Analysis of Repotrect…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70102](https://doi.org/10.1002/psp4.70102) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span> | [Du_2025_2_PFS_2](drugs/drug_repotrectinib/pd_Du_2025_2_PFS_2.md) | progression-free survival ← repotrectinib · time-to-event model | — | Du S et al., Exposure-Response Analysis of Repotrect…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70102](https://doi.org/10.1002/psp4.70102) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Du_2025_2_Pr_OR](drugs/drug_repotrectinib/pd_Du_2025_2_Pr_OR.md) | probability of objective response (Pr[OR]) ← repotrectinib · categorical (graded) response model | — | Du S et al., Exposure-Response Analysis of Repotrect…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70102](https://doi.org/10.1002/psp4.70102) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Du_2025_2_Pr_OR_2](drugs/drug_repotrectinib/pd_Du_2025_2_Pr_OR_2.md) | probability of objective response (Pr[OR]) ← repotrectinib · categorical (graded) response model | — | Du S et al., Exposure-Response Analysis of Repotrect…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70102](https://doi.org/10.1002/psp4.70102) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=repotrectinib).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor | DrugBank actor |
+| absorption | kidney | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | liver | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor | DrugBank actor |
+| absorption | mammary gland | `ABCG2` inhibitor | DrugBank actor |
+| absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor | DrugBank actor |
+| absorption | testis | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor | DrugBank actor |
+| metabolism | kidney | `CYP3A5` inhibitor | DrugBank actor |
+| metabolism | liver | `CYP2B6` inducer, `CYP2C19` inducer, `CYP2C8` inducer, `CYP2C9` inducer, `CYP3A4` inducer/inhibitor/substrate, `CYP3A5` inhibitor, `SLCO1B1` inhibitor, `UGT1A1` inhibitor | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inducer/inhibitor/substrate, `CYP3A5` inhibitor, `UGT1A1` inhibitor | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | `SLC47A2` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: NTRK1 (inhibitor), NTRK2 (inhibitor), NTRK3 (inhibitor), ROS1 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -59,14 +77,14 @@ Repotrectinib is a protein kinase inhibitor used to treat non-small-cell lung ca
 
 - **PubMed hits:** 2 matched, 2 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Du_2025_2 | irrelevant | 2 | 0 | This human exposure–response analysis uses a previously published popPK model but reports no numeric repotrectinib disposition parameter values. |
+| popPK | Du_2025_2 | irrelevant | 2 | 1 | This is an exposure-response (efficacy/safety) analysis that utilizes PK parameters from a previously published study, rather than reporting new quantitative disposition parameters (CL, V, etc.) in the text or tables provided. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 05:57 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-14 21:03 UTC</sub>

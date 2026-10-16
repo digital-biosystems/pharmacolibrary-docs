@@ -84,7 +84,7 @@ Weiss M, Is the One-Compartment Model with First…, Pharmaceutical research (20
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs_non_atc/drug_arketamine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Weiss_2023` / `Weiss_2023::ketamine`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs_non_atc/drug_arketamine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Weiss_2023` / `Weiss_2023::ketamine`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

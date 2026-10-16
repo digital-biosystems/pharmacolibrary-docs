@@ -5,7 +5,7 @@
 
 # tafenoquine — `Tafenoquine_Charles2007_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -17,30 +17,34 @@
 
 ### Reviewer guidance
 
-**Only clearance was extracted — no volume.**
+**C5 dimension mismatch on a structural parameter.**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Extracted — tafenoquine: CL/F 3.02 L/h, tlag 0.147 h.
+A reported unit could not be converted (D1, Ct and CL/F), so that value has no SI equivalent. Extracted — tafenoquine: D1 400 mg, V/F 24.4 liters/kg, t1/2z 12 days, Ct 283 ng/ml, tlag 0.147 h.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Charles BG et al., Population pharmacokinetics of tafenoqu…, Antimicrobial agents and ch… (2007)
   ·  DOI: [10.1128/AAC.01183-06](https://doi.org/10.1128/AAC.01183-06)
 
-<div class="pk-model-meta" hidden drug="tafenoquine" model-id="Tafenoquine_Charles2007_reference" status="needs_review" stale="false" population="healthy adults on malaria prophylaxis (Australian soldiers)" measured-compound="tafenoquine" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="tafenoquine" model-id="Tafenoquine_Charles2007_reference" status="rejected" stale="false" population="healthy Australian soldiers" measured-compound="tafenoquine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 2 extracted, plus 1 covariate effect.
+**Parameters:** 5 extracted, plus 1 covariate effect.
 
-**Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F ( 1 ; liters/h) | `Q27` · CL/F | 3.02 | L/h | 8.388888888888889e-07 | L/h | not captured | exact (1.0) | tab_1:row2:col1 | — | not captured |
-| theta_q76_weight | `Q900` · theta_q76_weight | 0.713 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_1:row4:col1 | — | not captured |
+| Cumulative dose (mg)b | `Q310` · D1 | 400 | mg | not captured | [mg] | not captured | llm (0.6) | Charles_2007_table_3:row1:col2, Charles_2007_table_3:row3:col2, Charles_2007_table_3:row4:col2, Charles_2007_table_3:row7:col2 | — | not captured |
+| V/F (liters/kg) | `Q76` · V/F | 24.4 | liters/kg | 1.708 | [l] / [kg] | not captured | exact (1.0) | Charles_2007_table_3:row1:col6, Charles_2007_table_3:row3:col6, Charles_2007_table_3:row4:col6, Charles_2007_table_3:row5:col6, Charles_2007_table_3:row6:col6, Charles_2007_table_3:row7:col6 | — | not captured |
+| t1/2 (days) | `Q57` · t1/2z | 12.0 | days | 1036800.0 | [d] | not captured | exact (1.0) | Charles_2007_table_3:row1:col7, Charles_2007_table_3:row3:col7, Charles_2007_table_3:row4:col7, Charles_2007_table_3:row5:col7, Charles_2007_table_3:row6:col7, Charles_2007_table_3:row7:col7 | — | not captured |
+| Clast (ng/ml)c | `Q75` · Ct | 283 | ng/ml | not captured | [ng] / [ml] | not captured | llm (0.6) | Charles_2007_table_3:row4:col4, Charles_2007_table_3:row5:col4, Charles_2007_table_3:row6:col4, Charles_2007_table_3:row7:col4 | — | not captured |
+| theta_v_f_weight | `Q900` · theta_v_f_weight | 0.713 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_1:row4:col1 | — | not captured |
+| CL/F | `Q900` · CL/F | 3.02 | 1 ; liters/h | not captured | not captured | not captured | not captured (not captured) | tab_1:row2:col1 | — | not captured |
 | Tlag,1 | `Q83` · tlag | 0.147 | h | 529.1999999999999 | h | not captured | review_gapfill (0.7) | Cherkaoui-Rbati_2023:review | — | not captured |
 
 <details class="legend">
@@ -48,29 +52,41 @@ Charles BG et al., Population pharmacokinetics of tafenoqu…, Antimicrobial age
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
+### Unresolved rows _(no Q-code or no value — not parameters)_
+| label (paper) | Q-code | value | link |
+|---|---|---|---|
+| CL/F ( 1 ; liters/h) | Q27 | not captured | exact |
+
 ## Departures & gaps
 
 **Interpretation flags:**
-- table section iiv: 'RUV (CV%)' routed out of structural estimates ('IIV K a (CV%) IOV CL/F (CV%)')
-- table section iiv: 'RUV (ng/ml)' routed out of structural estimates ('IIV K a (CV%) IOV CL/F (CV%)')
-- NIL: refused to back-fill base 'equation variable' from footnote/prose loose number None (source ['tab_1:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'NIL' from footnote/prose loose number None (source ['tab_1:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'D1' from footnote/prose loose number None (source ['tab_1:footnote']); the table cell was unparseable — needs review
-- covariate effect for Q76 has no base parameter row (kept as unattached equation-variable)
-- implicit units: 'CL/F ( 1 ; liters/h)' → L/h (from the paper text: "The parameter line itself states 'CL/F ( 1 ; liters/h) = 3.02', and the Discussion reports systemic CL/F as '4.37 liters")
+- table section iiv: 'RUV (CV%)' routed out of structural estimates ('IIV K a (CV%) IOV CL/F (CV%) 76 18 75 (64-85) 18 (16-20)')
+- table section iiv: 'RUV (ng/ml)' routed out of structural estimates ('IIV K a (CV%) IOV CL/F (CV%) 76 18 75 (64-85) 18 (16-20)')
+- dropped unlinked row (NIL): 'Treatment duration (days)a' — extend the ontology if this is a real PK parameter (source ['Charles_2007_table_3:row1:col1', 'Charles_2007_table_3:row3:col1', 'Charles_2007_table_3:row4:col1', 'Charles_2007_table_3:row5:col1', 'Charles_2007_table_3:row6:col1', 'Charles_2007_table_3:row7:col1'])
+- unit_dimension_mismatch: 'Cumulative dose (mg)b' → Q310 (unit '[mass]' vs ontology '[time]') — route to review
+- dropped duplicate Q27 ('CL/F (liters/h/kg)', value '0.059') — already have one for this compound
+- NIL: refused to back-fill base 'CL/F' from footnote/prose loose number 1 (source ['tab_1:footnote']); the table cell was unparseable — needs review
+- NIL: refused to back-fill base 'V/F' from footnote/prose loose number 2 (source ['tab_1:footnote']); the table cell was unparseable — needs review
+- NIL: refused to back-fill base 'kabs' from footnote/prose loose number 3 (source ['tab_1:footnote']); the table cell was unparseable — needs review
+- dropped value-less row: 'Linear coefficient ( 4 ) for weight centered on CL/F'
+- dropped value-less row: 'Linear coefficient ( 5 ) for weight centered on V/F'
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=tafenoquine
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- bound model equation to Q27 (CL/F): CL/F = θ₁ * (WT/70)^0.75; V/F = θ₂ * (WT/70)^1.0; Ka = θ₃
+- Q27 (CL/F) is equation-defined: value moved to equation-variable 'CL/F ( 1 ; liters/h)'; equation kept verbatim
+- status held at route_to_review — not promoted
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - gap-filled Q83 (tlag) from Cherkaoui-Rbati_2023's review values (primary lacked it)
 
 **Extraction notes:**
-- unparsed cell tab_1:row2:col2 = '3.01 (2.42-3.52)'
-- unparsed cell tab_1:row4:col2 = '0.713 (0.371-1.20)'
-- unparsed cell tab_1:row6:col2 = '18 (16-20)'
-- unparsed cell tab_1:row7:col2 = '22 (20-25)'
-- unparsed cell tab_1:row9:col2 = '5.9 (4.7-7.4)'
-- unparsed cell tab_1:row10:col2 = '23.1 (18.7-26.3)'
-- LLM selected parameter table(s) 2
+- table tab_1: unparsed_numeric_cell
+- table Charles_2007_table_3: ambiguous_numeric_format
+- transposed table Charles_2007_table_3: logical view retains original source coordinates
+- companion parameter table 3 transcribed (34 record(s))
+- LLM selected parameter table(s) 2, 3
+- captured model equation CL/F = θ₁ * (WT/70)^0.75; V/F = θ₂ * (WT/70)^1.0; Ka = θ₃
 
 ## Validation
 
@@ -78,14 +94,19 @@ Charles BG et al., Population pharmacokinetics of tafenoqu…, Antimicrobial age
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row2:col1'] |
+| C5_dimension_Q310 | fail | [mass] | mg | not captured | not captured | ['Charles_2007_table_3:row1:col2', 'Charles_2007_table_3:row3:col2', 'Charles_2007_table_3:row4:col2', 'Charles_2007_table_3:row7:col2'] |
+| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Charles_2007_table_3:row1:col7', 'Charles_2007_table_3:row3:col7', 'Charles_2007_table_3:row4:col7', 'Charles_2007_table_3:row5:col7', 'Charles_2007_table_3:row6:col7', 'Charles_2007_table_3:row7:col7'] |
+| C5_dimension_Q75 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Charles_2007_table_3:row4:col4', 'Charles_2007_table_3:row5:col4', 'Charles_2007_table_3:row6:col4', 'Charles_2007_table_3:row7:col4'] |
+| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Charles_2007_table_3:row1:col6', 'Charles_2007_table_3:row3:col6', 'Charles_2007_table_3:row4:col6', 'Charles_2007_table_3:row5:col6', 'Charles_2007_table_3:row6:col6', 'Charles_2007_table_3:row7:col6'] |
 | C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Cherkaoui-Rbati_2023:review'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 3.02 L/h | not captured | not captured | ['tab_1:row2:col1'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 1.71e+03 L | not captured | not captured | ['Charles_2007_table_3:row1:col6', 'Charles_2007_table_3:row3:col6', 'Charles_2007_table_3:row4:col6', 'Charles_2007_table_3:row5:col6', 'Charles_2007_table_3:row6:col6', 'Charles_2007_table_3:row7:col6'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -94,24 +115,14 @@ Charles BG et al., Population pharmacokinetics of tafenoqu…, Antimicrobial age
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_tafenoquine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Charles_2007` / `Charles_2007::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_tafenoquine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Charles_2007` / `Charles_2007::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-</tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -120,4 +131,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 08:52 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 03:42 UTC</sub>

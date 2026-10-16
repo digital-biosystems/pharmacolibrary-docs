@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;belantamab mafodotin&quot;,&quot;href&quot;:&quot;drugs/drug_belantamab_mafodotin/&quot;},{&quot;label&quot;:&quot;Rathi_2021 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;BelantamabMafodotin_FerronBrady2021_reference&quot;,&quot;label&quot;:&quot;Ferron-Brady_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_belantamab_mafodotin/BelantamabMafodotin_FerronBrady2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # belantamab mafodotin — `BelantamabMafodotin_Rathi2021_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--neutral" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -12,44 +13,43 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** Model available in **Models**; browser simulation unavailable.
+
+> **Caveat** (`covariates_not_exercised`): Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's terminal half-life (model/paper ratio 0.235).**
+**The model was built but has not been simulated yet; the covariate scenarios were not simulated.**
 
-Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. A reported unit could not be converted (allometric_exponent and equation variable), so that value has no SI equivalent. Extracted — belantamab mafodotin: CL 0.94 L/day, V1 4.47 L, Q 0.78 L/day, V2 5.96 L, t1/2z 53.9 day, allometric_exponent 0.5 θV1_BWT.
+The base model was simulated, not the covariate effects the record defines. A reported unit could not be converted (allometric_exponent and equation variable), so that value has no SI equivalent.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has belantamab mafodotin (belamaf; ADC), the second reading belantamab_mafodotin; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> **Dose compound ≠ measured compound:** dosed `belantamab mafodotin (belamaf; ADC)`, measured `belantamab mafodotin (ADC)`.
-
 ## Citation
 Rathi C et al., Population pharmacokinetics of belantam…, CPT: pharmacometrics & syst… (2021)
   ·  DOI: [10.1002/psp4.12660](https://doi.org/10.1002/psp4.12660)
 
-<div class="pk-model-meta" hidden drug="belantamab mafodotin" model-id="BelantamabMafodotin_Rathi2021_reference" status="needs_review" stale="false" population="patients with relapsed/refractory multiple myeloma" measured-compound="belantamab mafodotin (ADC)" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="belantamab mafodotin" model-id="BelantamabMafodotin_Rathi2021_reference" status="not_simulated" stale="false" population="patients with relapsed/refractory multiple myeloma" measured-compound="belantamab_mafodotin" parameterization="mechanistic" topology="general_linear"></div>
 
-**Model structure:** parent + metabolite; no model was built for this record.  
-**Parameters:** 6 extracted, plus 1 covariate effect.
+**Model structure:** 2-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
+**Parameters:** 5 extracted, plus 1 covariate effect.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `not_simulated`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| TVCL (L/day) | `Q22` · CL | 0.94 | L/day | 1.087962962962963e-08 | [l] / [d] | not captured | tv_prefix (0.95) | psp412660-tbl-0001:row2:col1 | — | not captured |
-| TVV1 (L) | `Q63` · V1 | 4.47 | L | 0.00447 | [l] | not captured | exact (1.0) | psp412660-tbl-0001:row3:col1 | — | not captured |
-| TVQ (L/day) | `Q30` · Q | 0.78 | L/day | 9.027777777777778e-09 | [l] / [d] | not captured | tv_prefix (0.95) | psp412660-tbl-0001:row4:col1 | — | not captured |
-| TVV2 (L) | `Q64` · V2 | 5.96 | L | 0.00596 | [l] | not captured | exact (1.0) | psp412660-tbl-0001:row5:col1 | — | not captured |
-| TI50 (day) | `Q57` · t1/2z | 53.90 | day | 4656960.0 | [d] | not captured | llm (0.6) | psp412660-tbl-0001:row7:col1 | — | not captured |
-| Effect of BWT on V1 (θV1_BWT) | `Q319` · allometric_exponent | 0.50 | θV1_BWT | not captured | [bwt] · [θv1_] | not captured | llm_corrected (0.6) | psp412660-tbl-0001:row9:col1 | — | not captured |
-| Effect of BIGG on CL (θCL_BIGG) | `Q900` · equation variable | 0.13 | θCL_BIGG | not captured | [bigg] · [θcl_] | not captured | llm_corrected (0.6) | psp412660-tbl-0001:row15:col1 | — | not captured |
-| theta_v1_sex | `Q900` · theta_v1_sex | 1.14 | not captured | not captured | not captured | not captured | not captured (not captured) | psp412660-tbl-0001:row13:col1 | — | not captured |
+| TVCL (L/day) | `Q22` · CL | 0.94 | L/day | 1.087962962962963e-08 | [l] / [d] | not captured | tv_prefix (0.95) | Rathi_2021_table_p6_1:row0:col1 | — | not captured |
+| TVV1 (L) | `Q63` · V1 | 4.47 | L | 0.00447 | [l] | not captured | exact (1.0) | Rathi_2021_table_p6_1:row1:col1 | — | not captured |
+| TVQ (L/day) | `Q30` · Q | 0.78 | L/day | 9.027777777777778e-09 | [l] / [d] | not captured | tv_prefix (0.95) | Rathi_2021_table_p6_1:row2:col1 | — | not captured |
+| TVV2 (L) | `Q64` · V2 | 5.96 | L | 0.00596 | [l] | not captured | exact (1.0) | Rathi_2021_table_p6_1:row3:col1 | — | not captured |
+| Effect of ALB on CL (θCL-ALB) | `Q319` · allometric_exponent | -0.97 | θCL-ALB | not captured | [alb] · [θcl] | not captured | llm_corrected (0.6) | Rathi_2021_table_p6_1:row9:col1 | — | not captured |
+| ETAV1 (%) | `Q900` · equation variable | 14.60 | % | not captured | [%] | not captured | llm (0.6) | Rathi_2021_table_p6_1:row19:col1 | — | not captured |
+| theta_v1_sex | `Q900` · theta_v1_sex | 1.14 | not captured | not captured | not captured | not captured | not captured (not captured) | Rathi_2021_table_p6_1:row11:col1 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -59,74 +59,46 @@ Rathi C et al., Population pharmacokinetics of belantam…, CPT: pharmacometrics
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped PD-category row 'IMAX' → Q323 (Imax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['psp412660-tbl-0001:row6:col1'])
-- dropped PD-category row 'GAMMA' → Q325 (Hill, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['psp412660-tbl-0001:row8:col1'])
-- unit_dimension_unknown: 'θV1_BWT' (allometric_exponent)
-- unit_dimension_unknown: 'θCL_BWT' (allometric_exponent)
-- dropped duplicate Q319 ('Effect of BWT on CL (θCL_BWT)', value '0.51') — already have one for this compound
-- unit_dimension_unknown: 'θCL_BALB' (CL)
-- dropped duplicate Q22 ('Effect of BALB on CL (θCL_BALB)', value '-0.97') — already have one for this compound
-- unit_dimension_unknown: 'θV1_BALB' (V1)
-- dropped duplicate Q63 ('Effect of BALB on V1 (θV1_BALB)', value '-0.47') — already have one for this compound
-- unit_dimension_unknown: 'θCL_BSBCMA' (CL)
-- dropped duplicate Q22 ('Effect of BSBCMA on CL (θCL_BSBCMA)', value '0.13') — already have one for this compound
-- unit_dimension_unknown: 'θCL_BIGG' (equation variable)
-- unit_dimension_unknown: 'θV2_ADOSE&lt;1' (V2)
-- dropped duplicate Q64 ('Effect of dose &lt;1 mg/kg on V2 (θV2_ADOSE&lt;1)', value '0.13') — already have one for this compound
-- unit_dimension_unknown: 'θCL_ADOSE&lt;1' (CL)
-- dropped duplicate Q22 ('Effect of dose &lt;1 mg/kg on CL (θCL_ADOSE&lt;1)', value '0.62') — already have one for this compound
-- unit_dimension_unknown: 'θV1_DREAMM1' (V1)
-- dropped duplicate Q63 ('Effect of DREAMM1/BMA117159 on V1 (θV1_DREAMM1)', value '0.66') — already have one for this compound
-- unit_dimension_unknown: 'θCL_DREAMM1' (CL)
-- dropped duplicate Q22 ('Effect of DREAMM1/BMA117159 on CL (θCL_DREAMM1)', value '0.61') — already have one for this compound
-- routed 'ETACL (%)' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
-- routed 'ETAV1 (%)' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
+- dropped PD-category row 'IMAX' → Q323 (Imax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Rathi_2021_table_p6_1:row4:col1'])
+- dropped unlinked row (NIL): 'TI50 (day)' — extend the ontology if this is a real PK parameter (source ['Rathi_2021_table_p6_1:row5:col1'])
+- dropped PD-category row 'GAMMA' → Q325 (Hill, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Rathi_2021_table_p6_1:row6:col1'])
+- routed 'Effect of BWT on V1 (θV1-BWT)' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
+- unit_dimension_unknown: 'θCL-BWT' (CL)
+- dropped duplicate Q22 ('Effect of BWT on CL (θCL-BWT)', value '0.51') — already have one for this compound
+- unit_dimension_unknown: 'θCL-ALB' (allometric_exponent)
+- unit_dimension_unknown: 'θV1-ALB' (V1)
+- dropped duplicate Q63 ('Effect of ALB on V1 (θV1-ALB)', value '-0.47') — already have one for this compound
+- unit_dimension_unknown: 'θCL-BSBcMA' (allometric_exponent)
+- dropped duplicate Q319 ('Effect of BSBcMA on CL (θCL-BSBcMA)', value '0.13') — already have one for this compound
+- unit_dimension_unknown: 'θCL-BIGG' (CL)
+- dropped duplicate Q22 ('Effect of BIGG on CL (θCL-BIGG)', value '0.13') — already have one for this compound
+- unit_dimension_unknown: 'θV2-DOSE&lt;1' (V2)
+- dropped duplicate Q64 ('Effect of dose &lt;1 mg/kg on V2 (θV2-DOSE&lt;1)', value '0.13') — already have one for this compound
+- unit_dimension_unknown: 'θCL-DOSE&lt;1' (CL)
+- dropped duplicate Q22 ('Effect of dose &lt;1 mg/kg on CL (θCL-DOSE&lt;1)', value '0.62') — already have one for this compound
+- unit_dimension_unknown: 'θV1-DREAMM1' (V1)
+- dropped duplicate Q63 ('Effect of DREAMM1/BMA117159 on V1 (θV1-DREAMM1)', value '0.66') — already have one for this compound
+- unit_dimension_unknown: 'θCL-DREAMM1' (CL)
+- dropped duplicate Q22 ('Effect of DREAMM1/BMA117159 on CL (θCL-DREAMM1)', value '0.61') — already have one for this compound
+- dropped diagnostic row 'ETACL (%)' → Q318 (shrinkage) — reported statistic, not a parameter
 - routed 'ETAQ (%)' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
-- routed 'ETAV2 (%)' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
+- routed 'ETAV2 (%)' → Q315 (sigma) to residual_error — variability estimate, not a structural parameter
 - routed 'ETAIMAX (%)' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
-- routed 'ETATI50 (%)' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
-- routed 'RES ERR, additive SIGMA on log scale' → Q315 (sigma) to residual_error — variability estimate, not a structural parameter
-- dropped value-less row: 'BALB'
-- dropped value-less row: 'BIGG'
-- dropped value-less row: 'BSBCMA'
-- dropped value-less row: 'BWT'
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=belantamab mafodotin (ADC)
+- dropped diagnostic row 'ETATI50 (%)' → Q318 (shrinkage) — reported statistic, not a parameter
+- routed 'RES ERR, additive SIGMA on log scale' → Q317 (add_error) to residual_error — variability estimate, not a structural parameter
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=belantamab_mafodotin
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
-- template fit: PK_3M_9C — formed from central; parent 2, metabolites [0]
+- topology: 2 first-order transfer(s) across 3 compounds → general_linear
+- template fit: PK_3M_9C — formed from central; parent 2, metabolites [0, 0]
 - status held at route_to_review — not promoted
-- row roles (LLM): model_class=compartmental; 29/29 row label(s) assigned, 4 linked by role
-- molar mass: no plausible PubChem entry for 'belantamab mafodotin (ADC)' ('belantamab mafodotin') — left in mass units
-- molar mass: none found for 'belantamab mafodotin (ADC)' — its concentrations stay mass-only
+- row roles (LLM): model_class=compartmental; 25/25 row label(s) assigned, 4 linked by role
+- molar mass: no plausible PubChem entry for 'total_mAb' ('no full name in the paper') — left in mass units
+- molar mass: none found for 'belantamab_mafodotin' — its concentrations stay mass-only
+- molar mass: none found for 'total_mAb' — its concentrations stay mass-only
 
 **Extraction notes:**
-- unparsed cell psp412660-tbl-0001:row2:col2 = '0.87, 1.00'
-- unparsed cell psp412660-tbl-0001:row3:col2 = '4.34, 4.61'
-- unparsed cell psp412660-tbl-0001:row4:col2 = '0.70, 0.88'
-- unparsed cell psp412660-tbl-0001:row5:col2 = '5.52, 6.47'
-- unparsed cell psp412660-tbl-0001:row6:col2 = '–0.44, –0.24'
-- unparsed cell psp412660-tbl-0001:row7:col2 = '46.90, 64.40'
-- unparsed cell psp412660-tbl-0001:row8:col2 = '3.01, 8.02'
-- unparsed cell psp412660-tbl-0001:row9:col2 = '0.41, 0.58'
-- unparsed cell psp412660-tbl-0001:row10:col2 = '0.27, 0.71'
-- unparsed cell psp412660-tbl-0001:row11:col2 = '–1.64, –0.25'
-- unparsed cell psp412660-tbl-0001:row12:col2 = '–0.60, –0.33'
-- unparsed cell psp412660-tbl-0001:row13:col2 = '1.09, 1.18'
-- unparsed cell psp412660-tbl-0001:row14:col2 = '0.09, 0.17'
-- unparsed cell psp412660-tbl-0001:row15:col2 = '0.09, 0.16'
-- unparsed cell psp412660-tbl-0001:row16:col2 = '0.02, 0.29'
-- unparsed cell psp412660-tbl-0001:row17:col2 = '0.46, 0.86'
-- unparsed cell psp412660-tbl-0001:row18:col2 = '0.63, 0.70'
-- unparsed cell psp412660-tbl-0001:row19:col2 = '0.53, 0.70'
-- unparsed cell psp412660-tbl-0001:row20:col2 = '26.70, 40.10'
-- unparsed cell psp412660-tbl-0001:row21:col2 = '12.60, 16.30'
-- unparsed cell psp412660-tbl-0001:row22:col2 = '17.90, 49.50'
-- unparsed cell psp412660-tbl-0001:row23:col2 = '32.60, 60.50'
-- unparsed cell psp412660-tbl-0001:row24:col2 = '76.10, 199.0'
-- unparsed cell psp412660-tbl-0001:row25:col2 = '18.80, 39.50'
-- unparsed cell psp412660-tbl-0001:row26:col2 = '0.016, 0.023'
+- table Rathi_2021_table_p6_1: unparsed_numeric_cell
 - LLM selected parameter table(s) 1
-- LLM region Rathi_2021:other_prose: no JSON records returned
 
 ## Validation
 
@@ -161,21 +133,34 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C1_half_life_beta | fail | 14.0 | 3.296 | 0.2354 | 0.25 | reported t½β |
 | C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp412660-tbl-0001:row2:col1'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp412660-tbl-0001:row4:col1'] |
-| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['psp412660-tbl-0001:row7:col1'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp412660-tbl-0001:row3:col1'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp412660-tbl-0001:row5:col1'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.94 | not captured | not captured | ['psp412660-tbl-0001:row2:col1'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Rathi_2021_table_p6_1:row0:col1'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Rathi_2021_table_p6_1:row2:col1'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Rathi_2021_table_p6_1:row1:col1'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Rathi_2021_table_p6_1:row3:col1'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.94 | not captured | not captured | ['Rathi_2021_table_p6_1:row0:col1'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.0392 L/h | not captured | not captured | ['psp412660-tbl-0001:row2:col1'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 4.47 L | not captured | not captured | ['psp412660-tbl-0001:row3:col1'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 5.96 L | not captured | not captured | ['psp412660-tbl-0001:row5:col1'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.0392 L/h | not captured | not captured | ['Rathi_2021_table_p6_1:row0:col1'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 4.47 L | not captured | not captured | ['Rathi_2021_table_p6_1:row1:col1'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 5.96 L | not captured | not captured | ['Rathi_2021_table_p6_1:row3:col1'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |
+| T3_rate_constant_conversion | not captured | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model | not captured | rate constant must not be used raw as a clearance |
+| T3_topology_template | not captured | pass | general_linear → PK_General_Linear* | PK_General_Linear | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
+| T1_cmax | reference | skipped | not captured | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 36.5 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 917 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | not captured | not captured | not captured | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -184,7 +169,9 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_belantamab_mafodotin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Rathi_2021` / `Rathi_2021::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_belantamab_mafodotin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Rathi_2021` / `Rathi_2021::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_belantamab_mafodotin/models/modelica/BelantamabMafodotin_Rathi2021_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_belantamab_mafodotin/models/modelica/BelantamabMafodotin_Rathi2021_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -193,14 +180,14 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_belantamab_mafodotin/BelantamabMafodotin_Rathi2021_reference/BelantamabMafodotin_Rathi2021_reference_modelica.zip" download>BelantamabMafodotin_Rathi2021_reference_modelica.zip</a> <span class="pk-size">(5.1 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_belantamab_mafodotin/BelantamabMafodotin_Rathi2021_reference/BelantamabMafodotin_Rathi2021_reference_matlab.zip" download>BelantamabMafodotin_Rathi2021_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_belantamab_mafodotin/BelantamabMafodotin_Rathi2021_reference/BelantamabMafodotin_Rathi2021_reference_matlab_simbio.zip" download>BelantamabMafodotin_Rathi2021_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_belantamab_mafodotin/BelantamabMafodotin_Rathi2021_reference/BelantamabMafodotin_Rathi2021_reference_sbml.zip" download>BelantamabMafodotin_Rathi2021_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_belantamab_mafodotin/BelantamabMafodotin_Rathi2021_reference/BelantamabMafodotin_Rathi2021_reference_cellml.zip" download>BelantamabMafodotin_Rathi2021_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
 </div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
@@ -210,4 +197,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 09:53 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 18:13 UTC</sub>

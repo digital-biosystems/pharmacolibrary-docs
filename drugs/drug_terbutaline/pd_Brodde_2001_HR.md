@@ -18,9 +18,9 @@
 
 **Model:** No model was generated from this record.
 
-> Terbutaline dose increases heart rate (beats/min) with an Emax model; maximal increases were 29.7 beats/min in WT and 20.7 beats/min in Ile164. The excerpts do not state EC50 or the mechanism beyond this direct Emax stimulation.
+> The paper describes an Emax model where terbutaline dose stimulates heart rate, with maximal increases of 29.7 beats/min in wild-type and 20.7 beats/min in Ile164 variants. The specific mechanism of action and potency parameters (e.g., EC50) are not provided in the available excerpts.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
 
 - **paper:** `Brodde_2001`
 - **model family:** `emax`

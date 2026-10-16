@@ -5,7 +5,7 @@
 
 # sodium stibogluconate — `SodiumStibogluconate_Zaghloul2010_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.3). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.3). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -17,9 +17,9 @@
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only clearance was extracted — no volume.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is sodium stibogluconate's own; they describe antimony.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — sodium stibogluconate: t1/2ka 0.21 hours; antimony: t1/2z 9.4 hours, CLm/F 4.88 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has antimony, the second reading sodium stibogluconate; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -31,21 +31,21 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which m
 Zaghloul IY et al., Clinical efficacy and pharmacokinetics…, Journal of clinical pharmac… (2010)
   ·  DOI: [10.1177/0091270009347674](https://doi.org/10.1177/0091270009347674)
 
-<div class="pk-model-meta" hidden drug="sodium stibogluconate" model-id="SodiumStibogluconate_Zaghloul2010_reference" status="rejected" stale="false" population="young male cutaneous leishmaniasis patients" measured-compound="antimony" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="sodium stibogluconate" model-id="SodiumStibogluconate_Zaghloul2010_reference" status="needs_review" stale="false" population="young male patients with cutaneous leishmaniasis" measured-compound="antimony" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.
 
-**Parameterization:** mechanistic.
+**Parameterization:** CLm/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| absorption half-life (first dose) | `Q95` · t1/2ka | 0.21 | hours | 756.0 | [h] | not captured | llm_corrected (0.6) | Zaghloul_2010:abstract | — | not captured |
-| elimination half-life (first day) | `Q57` · t1/2z | 9.4 | hours | 33840.0 | [h] | not captured | llm (0.6) | Zaghloul_2010:abstract | — | not captured |
-| CL(r) (first day) | `Q26` · CLR | 4.88 | L/h | 1.3555555555555556e-06 | [l] / [h] | not captured | exact (1.0) | Zaghloul_2010:abstract | — | not captured |
+| mean absorption half-life | `Q95` · t1/2ka | 0.21 | hours | 756.0 | [h] | not captured | llm_corrected (0.6) | Zaghloul_2010:abstract, Zaghloul_2010:abstract | — | not captured |
+| half-life | `Q57` · t1/2z | 9.4 | hours | 33840.0 | [h] | not captured | llm (0.6) | Zaghloul_2010:abstract, Zaghloul_2010:abstract | — | not captured |
+| mean CL(r) | `Q351` · CLm/F | 4.88 | L/h | 1.3555555555555556e-06 | [l] / [h] | not captured | exact (1.0) | Zaghloul_2010:abstract, Zaghloul_2010:abstract | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -55,10 +55,10 @@ Zaghloul IY et al., Clinical efficacy and pharmacokinetics…, Journal of clinic
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped duplicate Q95 ('absorption half-life (last dose)', value 0.36) — already have one for this compound
-- dropped duplicate Q57 ('elimination half-life (last day)', value 9.69) — already have one for this compound
-- dropped duplicate Q26 ('CL(r) (last day)', value 4.58) — already have one for this compound
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=antimony
+- metabolite antimony: Q22→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=antimony
+- template fit: none — noncompartmental model — not a compartmental parent–metabolite model
+- row roles (LLM): model_class=noncompartmental; 3/3 row label(s) assigned, 2 linked by role; re-tagged antimony→parent ×2
 - molar mass: no plausible PubChem entry for 'antimony' ('antimony') — left in mass units
 - molar mass: none found for 'antimony' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
@@ -101,10 +101,12 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
-| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q26 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Zaghloul_2010:abstract'] |
-| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Zaghloul_2010:abstract'] |
-| C5_dimension_Q95 | pass | [time] | not captured | not captured | not captured | ['Zaghloul_2010:abstract'] |
+| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q351 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Zaghloul_2010:abstract', 'Zaghloul_2010:abstract'] |
+| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Zaghloul_2010:abstract', 'Zaghloul_2010:abstract'] |
+| C5_dimension_Q95 | pass | [time] | not captured | not captured | not captured | ['Zaghloul_2010:abstract', 'Zaghloul_2010:abstract'] |
+| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
 <details class="legend">
@@ -114,14 +116,24 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_sodium_stibogluconate/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Zaghloul_2010` / `Zaghloul_2010::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_sodium_stibogluconate/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Zaghloul_2010` / `Zaghloul_2010::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -130,4 +142,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 08:53 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 19:49 UTC</sub>

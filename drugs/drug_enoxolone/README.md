@@ -41,7 +41,16 @@ Enoxolone (glycyrrhetic acid) is an anti-inflammatory triterpenoid that has been
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Ploeger_2001_urinary_cortisol_cortisone_ratio](drugs/drug_enoxolone/pd_Ploeger_2001_urinary_cortisol_cortisone_ratio.md) | urinary cortisol-cortisone ratio ← glycyrrhetic acid · inhibition effect | — | Ploeger B et al., A population physiologically based phar…, Toxicology and applied phar… (2001) | [10.1006/taap.2000.9078](https://doi.org/10.1006/taap.2000.9078) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> | [Ploeger_2001_urinary_cortisol_cortisone_ratio](drugs/drug_enoxolone/pd_Ploeger_2001_urinary_cortisol_cortisone_ratio.md) | urinary cortisol-cortisone ratio ← glycyrrhetic acid · inhibition effect | — | Ploeger B et al., A population physiologically based phar…, Toxicology and applied phar… (2001) | [10.1006/taap.2000.9078](https://doi.org/10.1006/taap.2000.9078) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=enoxolone).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: PTPN1 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

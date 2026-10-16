@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05A&quot;,&quot;href&quot;:&quot;atc/N05A.md&quot;},{&quot;label&quot;:&quot;lithium&quot;,&quot;href&quot;:&quot;drugs/drug_lithium/&quot;},{&quot;label&quot;:&quot;Yu_2016 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lithium_Chen2025_reference&quot;,&quot;label&quot;:&quot;Chen_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lithium/Lithium_Chen2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lithium_Dickinson2026_reference&quot;,&quot;label&quot;:&quot;Dickinson_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lithium/Lithium_Dickinson2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lithium_Gijsen2021_reference&quot;,&quot;label&quot;:&quot;Gijsen_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lithium/Lithium_Gijsen2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lithium_Morse2025_reference&quot;,&quot;label&quot;:&quot;Morse_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lithium/Lithium_Morse2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lithium_Silva2023_reference&quot;,&quot;label&quot;:&quot;Silva_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lithium/Lithium_Silva2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lithium_Christie2025_reference&quot;,&quot;label&quot;:&quot;Christie_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lithium/Lithium_Christie2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lithium_Jermain1991_reference&quot;,&quot;label&quot;:&quot;Jermain_1991_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lithium/Lithium_Jermain1991_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lithium_Min2025_reference&quot;,&quot;label&quot;:&quot;Min_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lithium/Lithium_Min2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lithium_Yu2016_reference&quot;,&quot;label&quot;:&quot;Yu_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lithium/Lithium_Yu2016_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lithium_Adamiszak2025_reference&quot;,&quot;label&quot;:&quot;Adamiszak_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lithium/Lithium_Adamiszak2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lithium_Chen2025_reference&quot;,&quot;label&quot;:&quot;Chen_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lithium/Lithium_Chen2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lithium_Dickinson2026_reference&quot;,&quot;label&quot;:&quot;Dickinson_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lithium/Lithium_Dickinson2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lithium_Gijsen2021_reference&quot;,&quot;label&quot;:&quot;Gijsen_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lithium/Lithium_Gijsen2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lithium_Silva2023_reference&quot;,&quot;label&quot;:&quot;Silva_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lithium/Lithium_Silva2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lithium_Christie2025_reference&quot;,&quot;label&quot;:&quot;Christie_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lithium/Lithium_Christie2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lithium_Jermain1991_reference&quot;,&quot;label&quot;:&quot;Jermain_1991_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lithium/Lithium_Jermain1991_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lithium_Min2025_reference&quot;,&quot;label&quot;:&quot;Min_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lithium/Lithium_Min2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lithium_Yu2016_reference&quot;,&quot;label&quot;:&quot;Yu_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lithium/Lithium_Yu2016_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,13 +17,13 @@
 
 ### Reviewer guidance
 
-**The lithium record is incomplete: the apparent central volume of distribution V2/F (10.4 L) was not carried into the model, so only 5 of 6 expected parameters were covered, and the record was built from the abstract alone.**
+**T3_param_coverage.**
 
-The parameter V2/F, the apparent distribution volume of the central compartment for lithium (10.4 L), was neither emitted nor defaulted, leaving the parameter coverage at 5 of 6. The record also relies on abstract-only summary statistics rather than a fitted model. The builder assumed F=1 and Fm=1 with no molar correction, so all parameters are apparent (CL/F, Q/F, V/F). Extracted — lithium: CL 9.39 L/h, V2/F 10.4 L, Q/F 22.1 L/h, V3/F 216 L, V/F 1.46e+03 L, kabs 1.03 h−1, tlag 0.186 h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — lithium: CL 9.39 L/h, V2/F 10.4 L, Q/F 22.1 L/h, V3/F 216 L, V/F 1.46e+03 L, kabs 1.46 h−1, tlag 0.836 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of ka *: this record has 1.03, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by glm-5.3-flash</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 > **Dose compound ≠ measured compound:** dosed `lithium carbonate`, measured `lithium`.
 
@@ -31,7 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Yu W et al., Population Pharmacokinetics of Lithium…, Pharmacopsychiatry (2016)
   ·  DOI: [10.1055/s-0042-103329](https://doi.org/10.1055/s-0042-103329)
 
-<div class="pk-model-meta" hidden drug="lithium" model-id="Lithium_Yu2016_reference" status="needs_review" stale="false" population="healthy young male Chinese volunteers" measured-compound="lithium" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="lithium" model-id="Lithium_Yu2016_reference" status="needs_review" stale="false" population="young male healthy Chinese volunteers" measured-compound="lithium" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 7 extracted.
@@ -47,9 +47,9 @@ Yu W et al., Population Pharmacokinetics of Lithium…, Pharmacopsychiatry (2016
 | apparent distribution volume of the central compartment (V2/F) | `Q82` · V2/F | 10.4 | L | 0.010400000000000001 | [l] | not captured | llm_corrected (0.6) | Yu_2016:abstract | — | not captured |
 | inter-compartmental clearance (Q/F) | `Q69` · Q/F | 22.1 | L/h | 6.138888888888889e-06 | [l] / [h] | not captured | llm_corrected (0.6) | Yu_2016:abstract | — | not captured |
 | apparent distribution volume of the peripheral compartment (V3/F) | `Q78` · V3/F | 216 | L | 0.216 | [l] | not captured | llm_corrected (0.6) | Yu_2016:abstract | — | not captured |
-| V/F (L) | `Q76` · V/F | 1460.0 | L | 1.46 | L | not captured | review_gapfill (0.7) | Chen_2025:review | — | not captured |
-| Ka * (h−1) | `Q49` · kabs | 1.03 | h−1 | 0.0002861111111111111 | 1/h | not captured | review_gapfill (0.7) | Aurélie_2023:review | — | not captured |
-| Tlag (h) | `Q83` · tlag | 0.186 | h | 669.6 | h | not captured | review_gapfill (0.7) | Aurélie_2023:review | — | not captured |
+| V/F | `Q76` · V/F | 1460.0 | L | 1.46 | L | not captured | review_gapfill (0.7) | Chen_2025:review | — | not captured |
+| Ka | `Q49` · kabs | 1.46 | h−1 | 0.00040555555555555554 | 1/h | not captured | review_gapfill (0.7) | Chen_2025:review | — | not captured |
+| Lag time (h) | `Q83` · tlag | 0.836 | h | 3009.6 | h | not captured | review_gapfill (0.7) | Dickinson_2026:review | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -66,8 +66,8 @@ Yu W et al., Population Pharmacokinetics of Lithium…, Pharmacopsychiatry (2016
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - gap-filled Q76 (V/F) from Chen_2025's review values (primary lacked it)
-- gap-filled Q49 (kabs) from Aurélie_2023's review values (primary lacked it)
-- gap-filled Q83 (tlag) from Aurélie_2023's review values (primary lacked it)
+- gap-filled Q49 (kabs) from Chen_2025's review values (primary lacked it)
+- gap-filled Q83 (tlag) from Dickinson_2026's review values (primary lacked it)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Yu_2016_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
@@ -105,12 +105,12 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Yu_2016:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Aurélie_2023:review'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Chen_2025:review'] |
 | C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Yu_2016:abstract'] |
 | C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Chen_2025:review'] |
 | C5_dimension_Q78 | pass | [length] ** 3 | not captured | not captured | not captured | ['Yu_2016:abstract'] |
 | C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['Yu_2016:abstract'] |
-| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Aurélie_2023:review'] |
+| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Dickinson_2026:review'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 9.39 L/h | not captured | not captured | ['Yu_2016:abstract'] |
@@ -136,10 +136,10 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_lithium/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Yu_2016` / `Yu_2016::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_lithium/models/modelica/Lithium_Yu2016_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_lithium/models/modelica/Lithium_Yu2016_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_lithium/models/modelica/Lithium_Yu2016_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_lithium/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Yu_2016` / `Yu_2016::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_lithium/models/modelica/Lithium_Yu2016_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_lithium/models/modelica/Lithium_Yu2016_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_lithium/models/modelica/Lithium_Yu2016_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -157,11 +157,11 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_lithium/Lithium_Yu2016_reference/Lithium_Yu2016_reference.svg" alt="Lithium_Yu2016_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_lithium/Lithium_Yu2016_reference/Lithium_Yu2016_reference.svg" alt="Lithium_Yu2016_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 1.03 /h, lag 11.2 min, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 1.46 /h, lag 50.2 min, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_lithium/Lithium_Yu2016_reference/Lithium_Yu2016_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_lithium/Lithium_Yu2016_reference/Lithium_Yu2016_reference_sim_controls.json"></dbs-fmusim>
 
@@ -170,4 +170,4 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 16:25 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 20:49 UTC</sub>

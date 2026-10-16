@@ -18,11 +18,26 @@ Methoxamine is a sympathomimetic alpha-1 agonist that acts as a vasoconstrictor 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 08:35 | 5:32 | 0/0/0 | 0/0/0 | 0/0/0 | 221,577/5,258 | ollama / qwen3.8:27b-mtp-q8_0 | 8 | 5/6 | 8/0 | 0 |
+| 2026-10-13 12:38 | 5:17 | 0/0/0 | 1/0/0 | 0/0/0 | 168,984/4,547 | einfracz / qwen3.8-27b | 10 | 6/6 | 9/1 | 0 |
 
 ## popPK records
 
 _not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> | [Abdelmawla_1995_venous_tone](drugs/drug_methoxamine/pd_Abdelmawla_1995_venous_tone.md) | venous tone ← methoxamine · direct Emax (saturable) effect | — | Abdelmawla AH et al., Comparison of the effects of desipramin…, British journal of clinical… (1995) | — |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=methoxamine).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: ADRA1A (target), ADRA1B (target), ADRA1D (binder).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -32,31 +47,40 @@ _not available_
 
 ## Coverage
 
-- **PubMed hits:** 598 matched, 118 returned
-- **screened:** 0  ·  **relevant:** 0
+- **PubMed hits:** 598 matched, 163 returned
+- **screened:** 3  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
 
-_12 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_21 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
+| `Simpson_2014.pdf` | Simpson JA et al., A randomised, controlled, crossover stu…, Colorectal disease : the of… (2014) | popPK | 10 | [10.1111/codi.12541](https://doi.org/10.1111/codi.12541) | [24499492](https://pubmed.ncbi.nlm.nih.gov/24499492) | The study reports on the pharmacokinetics of methoxamine (NRL001) in humans, but the specific quantitative parameter values (CL, V, ka, etc.) are not included in the provided text, only qualitative descriptions and Cmax comparisons. |
+| `Li_2026.pdf` | Li S et al., A New Precolumn Derivatization LC-MS/MS…, Biomedical chromatography :… (2026) | popPK | 9 | [10.1002/bmc.70408](https://doi.org/10.1002/bmc.70408) | [41731916](https://pubmed.ncbi.nlm.nih.gov/41731916) | The study reports stereoselective pharmacokinetic parameters (AUC, t1/2, Vd, CL) for methoxamine in rats, but the specific numeric values are not present in the provided evidence. |
+| `Bell_2014_2.pdf` | Bell D et al., A randomised, controlled, crossover stu…, Colorectal disease : the of… (2014) | popPK | 7 | [10.1111/codi.12543](https://doi.org/10.1111/codi.12543) | [24499494](https://pubmed.ncbi.nlm.nih.gov/24499494) | The study is a Phase I PK/PD study of methoxamine, but the provided evidence text lacks specific quantitative parameter values (CL, V, etc.), which are likely in tables or figures not included. |
+| `Davis_2013.pdf` | Davis AJ et al., Potent vasorelaxant activity of the TME…, British journal of pharmaco… (2013) | pd | 5 | [10.1111/j.1476-5381.2012.02199.x](https://doi.org/10.1111/j.1476-5381.2012.02199.x) | [22946562](https://www.ncbi.nlm.nih.gov/pubmed/22946562) | metadata signals extractable PD data (concentration-effect) |
 | `Akimoto_1989.pdf` | Akimoto Y et al., Effects of specific alpha-adrenoceptive…, Life sciences (1989) | pd | 4 | [10.1016/0024-3205(89)90493-1](https://doi.org/10.1016/0024-3205(89)90493-1) | [2564613](https://www.ncbi.nlm.nih.gov/pubmed/2564613) | metadata signals extractable PD data (IC50) |
 | `Baan_1998.pdf` | Baan J et al., Effects of angiotensin II and losartan…, Journal of hypertension (1998) | pd | 4 | [10.1097/00004872-199816090-00011](https://doi.org/10.1097/00004872-199816090-00011) | [9746117](https://www.ncbi.nlm.nih.gov/pubmed/9746117) | metadata signals extractable PD data (Emax) |
 | `Bevilacqua_1991.pdf` | Bevilacqua M et al., Alpha 1 adrenoceptor subtype mediates n…, Cardiovascular research (1991) | pd | 4 | [10.1093/cvr/25.4.290](https://doi.org/10.1093/cvr/25.4.290) | [1653111](https://www.ncbi.nlm.nih.gov/pubmed/1653111) | metadata signals extractable PD data (EC50) |
 | `Dantas_2014.pdf` | Dantas da Silva Júnior E et al., Effects of clonidine in the isolated ra…, European journal of pharmac… (2014) | pd | 4 | [10.1016/j.ejphar.2014.01.027](https://doi.org/10.1016/j.ejphar.2014.01.027) | [24485887](https://www.ncbi.nlm.nih.gov/pubmed/24485887) | metadata signals extractable PD data (Emax) |
 | `Elliott_1997.pdf` | Elliott J, Alpha-adrenoceptors in equine digital v…, Journal of veterinary pharm… (1997) | pd | 4 | [10.1046/j.1365-2885.1997.00078.x](https://doi.org/10.1046/j.1365-2885.1997.00078.x) | [9280371](https://www.ncbi.nlm.nih.gov/pubmed/9280371) | metadata signals extractable PD data (EC50) |
+| `Fink_1993.pdf` | Fink K et al., Modulation of N-methyl-D-aspartate (NMD…, Naunyn-Schmiedeberg's archi… (1993) | pd | 4 | [10.1007/BF00171336](https://doi.org/10.1007/BF00171336) | [7904051](https://www.ncbi.nlm.nih.gov/pubmed/7904051) | metadata signals extractable PD data (EC50) |
 | `Hale_2002.pdf` | Hale TM et al., Recovery of erectile function after bri…, The Journal of urology (2002) | pd | 4 | not captured | [12050568](https://www.ncbi.nlm.nih.gov/pubmed/12050568) | metadata signals extractable PD data (EC50) |
 | `Henry_1990.pdf` | Henry PJ et al., Beta 1-adrenoceptors mediate smooth mus…, British journal of pharmaco… (1990) | pd | 4 | [10.1111/j.1476-5381.1990.tb14666.x](https://doi.org/10.1111/j.1476-5381.1990.tb14666.x) | [2158831](https://www.ncbi.nlm.nih.gov/pubmed/2158831) | metadata signals extractable PD data (EC50) |
+| `Hernández-Guerra_2014.pdf` | Hernández-Guerra M et al., Role of gap junctions modulating hepati…, Liver international : offic… (2014) | pd | 4 | [10.1111/liv.12446](https://doi.org/10.1111/liv.12446) | [24350605](https://www.ncbi.nlm.nih.gov/pubmed/24350605) | metadata signals extractable PD data (concentration-effect) |
 | `Parker_1999.pdf` | Parker C et al., Non-specific action of methoxamine on I…, British journal of pharmaco… (1999) | pd | 4 | [10.1038/sj.bjp.0702335](https://doi.org/10.1038/sj.bjp.0702335) | [10188969](https://www.ncbi.nlm.nih.gov/pubmed/10188969) | metadata signals extractable PD data (EC50) |
+| `Raiteri_1992.pdf` | Raiteri M et al., Subclassification of release-regulating…, British journal of pharmaco… (1992) | pd | 4 | [10.1111/j.1476-5381.1992.tb13421.x](https://doi.org/10.1111/j.1476-5381.1992.tb13421.x) | [1361400](https://www.ncbi.nlm.nih.gov/pubmed/1361400) | metadata signals extractable PD data (EC50) |
 | `Sarsero_1998.pdf` | Sarsero D et al., Human vascular to cardiac tissue select…, British journal of pharmaco… (1998) | pd | 4 | [10.1038/sj.bjp.0702045](https://doi.org/10.1038/sj.bjp.0702045) | [9776350](https://www.ncbi.nlm.nih.gov/pubmed/9776350) | metadata signals extractable PD data (IC50) |
 | `Starling_1987.pdf` | Starling MR et al., The relationship of various measures of…, Circulation (1987) | pd | 4 | [10.1161/01.cir.76.1.32](https://doi.org/10.1161/01.cir.76.1.32) | [3594773](https://www.ncbi.nlm.nih.gov/pubmed/3594773) | metadata signals extractable PD data (Emax) |
+| `Starling_1988.pdf` | Starling MR et al., Assessment of the radionuclide angiogra…, Journal of nuclear medicine… (1988) | pd | 4 | not captured | [3404254](https://www.ncbi.nlm.nih.gov/pubmed/3404254) | metadata signals extractable PD data (Emax) |
 | `Starling_1989.pdf` | Starling MR, Responsiveness of the maximum time-vary…, American heart journal (1989) | pd | 4 | [10.1016/0002-8703(89)90019-7](https://doi.org/10.1016/0002-8703(89)90019-7) | [2589166](https://www.ncbi.nlm.nih.gov/pubmed/2589166) | metadata signals extractable PD data (Emax) |
+| `Sumner_1990.pdf` | Sumner MJ et al., Sumatriptan (GR43175) inhibits cyclic-A…, British journal of pharmaco… (1990) | pd | 4 | [10.1111/j.1476-5381.1990.tb14682.x](https://doi.org/10.1111/j.1476-5381.1990.tb14682.x) | [2158369](https://www.ncbi.nlm.nih.gov/pubmed/2158369) | metadata signals extractable PD data (EC50) |
 | `Tabrizchi_1989.pdf` | Tabrizchi R et al., Benextramine and nifedipine distinguish…, Life sciences (1989) | pd | 4 | [10.1016/0024-3205(89)90242-7](https://doi.org/10.1016/0024-3205(89)90242-7) | [2559276](https://www.ncbi.nlm.nih.gov/pubmed/2559276) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-10-06T08:33:07.722721+00:00</sub>
+<sub>queue written 2026-10-13T12:37:23.806749+00:00</sub>
 
 ## Screened and excluded
 
@@ -77,14 +101,22 @@ _12 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | popPK | Baines_1987 | irrelevant | 0 | 0 | The study is a mechanistic renal physiology experiment using methoxamine as an alpha-1 adrenergic agonist to stimulate sodium reabsorption, not a pharmacokinetic study of methoxamine disposition. |
 | PD | Barber_1986 | not_relevant | 0 | 0 | The paper reports that methoxamine did not alter basal neurotensin secretion at a single concentration (10 microM), providing no dose-response curve or numeric PD parameters for methoxamine. |
 | PD | Belardinelli_2013 | not_relevant | 0 | 0 | The paper focuses on the pharmacology of GS967; methoxamine is only mentioned as a tool compound to induce arrhythmias, and no exposure-response or dose-response analysis for methoxamine is reported. |
+| popPK | Bell_2014 | irrelevant | 4 | 0 | The study reports PK metrics like AUC and Cmax but lacks specific disposition parameters (CL, V) and no numeric values are provided in the evidence. |
+| popPK | Bell_2014_2 | relevant | 7 | 1 | The study is a Phase I PK/PD study of methoxamine, but the provided evidence text lacks specific quantitative parameter values (CL, V, etc.), which are likely in tables or figures not included. |
 | popPK | Bevilacqua_1991 | irrelevant | 0 | 0 | no_text gate: only 144 chars of text extracted (&lt; 400) |
 | PD | Bevilacqua_1991 | not_relevant | 0 | 0 | The paper focuses on the pharmacology of noradrenaline on human internal mammary artery and does not report any pharmacokinetic or pharmacodynamic data for methoxamine. |
 | popPK | Blair_1983 | irrelevant | 0 | 0 | The study investigates the pharmacodynamic effect of methoxamine on renin secretion in dogs, not its pharmacokinetic disposition parameters. |
+| popPK | Blöchl-Daum_1991 | irrelevant | 0 | 0 | This is a pharmacodynamic study measuring venous diameter changes in response to alpha-adrenergic agonists, not a pharmacokinetic study reporting disposition parameters for methoxamine. |
 | PD | Boehm_1991 | not_relevant | 0 | 0 | The paper reports that methoxamine did not significantly reduce Ca2+ current at 10 umol/l, providing no numeric PD parameters or dose-response relationship for methoxamine. |
 | popPK | Brown_1979 | irrelevant | 0 | 0 | The study is a pharmacological investigation of alpha-2 adrenoceptors in rat sympathetic ganglia, not a pharmacokinetic study of methoxamine. |
+| popPK | Carrier_1985 | irrelevant | 0 | 0 | The study is a pharmacological investigation of vascular reactivity and adrenergic receptor function in rat aorta, not a pharmacokinetic study of methoxamine. |
+| popPK | Castillo_2006 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of alpha-adrenoceptors in rat aorta where methoxamine is used only as a precontracting agent, not as the subject drug for PK analysis. |
 | popPK | Chia_2013 | irrelevant | 0 | 0 | Methoxamine is used only as a diagnostic agonist to assess renal hemodynamics, not as the subject of a pharmacokinetic study. |
 | popPK | Corbo_1989 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics and pharmacodynamics of propranolol, using methoxamine only as a tool to induce hypertension. |
 | popPK | Cosford_1996 | irrelevant | 0 | 0 | The study investigates microdialysis extraction fractions of serotonin and norepinephrine, using methoxamine only as a pharmacological tool to test receptor effects, not as the subject of PK analysis. |
+| popPK | Costa_1993 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of adrenergic receptors using methoxamine as a tool compound, not a pharmacokinetic study. |
+| popPK | Crawford_1990 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of inositol phosphate accumulation in rat brain slices, and methoxamine is used only as a stimulant agent, with no pharmacokinetic or disposition parameters reported. |
+| popPK | Daniel_1996 | irrelevant | 0 | 0 | This is a pharmacological study investigating adrenoceptor subtypes in canine veins, not a pharmacokinetic study of methoxamine. |
 | popPK | Dantas_2014 | irrelevant | 0 | 0 | no_text gate: only 59 chars of text extracted (&lt; 400) |
 | PD | Dantas_2014 | not_relevant | 0 | 0 | The paper investigates the effects of clonidine, not methoxamine, and does not report any exposure-response or dose-response relationship for methoxamine. |
 | popPK | Davies_2002 | irrelevant | 0 | 0 | The paper is a mechanistic study on blood-brain barrier breakdown where methoxamine is used only as a pharmacological tool to provoke oedema, not as a subject of pharmacokinetic analysis. |
@@ -94,19 +126,23 @@ _12 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | PD | Elverdin_1984 | not_relevant | 3 | 2 | The paper describes qualitative dose-response shifts and antagonist potency ratios for methoxamine but does not provide numeric PD parameters (e.g., EC50, Emax) or a quantitative concentration-effect curve for the drug itself. |
 | PD | Endoh_1978 | not_relevant | 1 | 0 | The paper mentions methoxamine only qualitatively as an alpha-adrenoceptor stimulant that decreased active tension, without providing any numeric dose-response parameters or concentration-effect data for it. |
 | PD | Escubedo_1992 | not_relevant | 0 | 0 | The paper reports PD parameters for Ro 5-4864 and PK 11195, not for methoxamine; methoxamine is only used as a stimulus in a secondary assay where no dose-response curve or PD parameters for methoxamine itself are reported. |
+| popPK | Fink_1993 | irrelevant | 0 | 0 | The study is a mechanistic investigation of neurotransmitter release in rat brain, using methoxamine as a pharmacological tool to characterize alpha-1 adrenoceptors, not a pharmacokinetic study. |
 | PD | Francque_2012 | not_relevant | 2 | 1 | The paper mentions a dose-response to methoxamine but only provides a qualitative comparison (P-value) without reporting specific numeric PD parameters (EC50, Emax) or extractable curve data. |
 | popPK | Fu_2020 | irrelevant | 0 | 0 | The study is a dose-response pharmacodynamic trial determining ED50/ED95 for preventing hypotension, not a pharmacokinetic study reporting clearance, volume, or half-life. |
 | popPK | Fuder_1984 | irrelevant | 0 | 0 | The study is a mechanistic pharmacological investigation of noradrenaline release in rat hearts, where methoxamine is used only as a negative control/comparator and no pharmacokinetic parameters are reported. |
 | popPK | González_1996 | irrelevant | 0 | 0 | The study investigates the vascular pharmacology of agmatine in rat tail arteries, using methoxamine only as a non-specific alpha-adrenoceptor agonist for contraction assays, not as a subject for pharmacokinetic analysis. |
 | PD | González_1996 | not_relevant | 3 | 2 | The paper reports a qualitative shift in the EC50 of methoxamine in the presence of agmatine, but does not provide a formal PD model or extractable numeric PD parameters (like Emax or specific EC50 values) for methoxamine itself. |
 | popPK | Gracia-Sancho_2007 | irrelevant | 0 | 0 | Methoxamine is used as a tool compound to stimulate prostanoid release in an in-vitro mechanistic study, not as the subject of a pharmacokinetic analysis. |
+| popPK | Hale_2002 | irrelevant | 0 | 0 | The study measures methoxamine's pharmacodynamic effect (EC50) on alpha-adrenoceptors in rat penile vasculature, not its pharmacokinetic disposition parameters. |
 | PD | Hale_2002 | not_relevant | 0 | 0 | The paper focuses on the recovery of erectile function after antihypertensive therapy and does not report any pharmacodynamic or exposure-response analysis for methoxamine. |
 | popPK | Hartmann_1995 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of adrenergic receptor effects on contractility and phosphorylation, not a pharmacokinetic study. |
 | popPK | Hasan_1996 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological characterization of adrenoceptors in guinea-pig ileum, not a pharmacokinetic study of methoxamine. |
 | PD | Hasan_1996 | not_relevant | 0 | 0 | The provided text is metadata for the GROBID software and does not contain any pharmacological data, PD models, or information regarding methoxamine. |
 | popPK | Henry_1990 | irrelevant | 0 | 0 | no_text gate: only 79 chars of text extracted (&lt; 400) |
 | PD | Henry_1990 | not_relevant | 0 | 0 | The paper focuses on beta-1 adrenoceptor-mediated smooth muscle relaxation in mouse trachea and does not mention methoxamine or report any exposure-response or dose-response data for it. |
+| popPK | Hernandez_1988 | irrelevant | 0 | 0 | Methoxamine is used only as an alpha-adrenergic antagonist comparator in an in vitro receptor mechanism study, with no pharmacokinetic parameters reported. |
 | popPK | Hernández-Guerra_2013 | irrelevant | 0 | 0 | Methoxamine is used as a vasoconstrictor probe to assess endothelial function, not as the subject of a pharmacokinetic study. |
+| popPK | Hool_1997 | irrelevant | 0 | 0 | The study is a pharmacological mechanism study in isolated guinea-pig myocytes using methoxamine as a receptor agonist, not a pharmacokinetic study. |
 | popPK | Hori_1993 | irrelevant | 0 | 0 | The study is a functional morphometric analysis of microvascular mechanisms and blood flow in rats, not a pharmacokinetic study reporting disposition parameters for methoxamine. |
 | PGx | Hori_1993 | not_relevant | 0 | 0 | The paper investigates microvascular mechanisms of tumor blood flow in rats using methoxamine as a vasopressor, but does not report any pharmacogenomic effects or gene variants. |
 | popPK | Hu_2025 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of verapamil's antagonism of alpha-adrenoceptors using methoxamine as a tool agonist, not a pharmacokinetic study of methoxamine. |
@@ -117,7 +153,8 @@ _12 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | popPK | Hye_2008 | irrelevant | 0 | 0 | The study investigates renal hemodynamics and adrenoceptor subtypes using methoxamine as a pharmacological agonist, not its pharmacokinetics. |
 | popPK | Ingebretsen_1981 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of cardiac physiology where methoxamine is used only as a negative control/comparator, with no pharmacokinetic parameters reported. |
 | popPK | Iribe_2004 | irrelevant | 0 | 0 | The study is a hemodynamic investigation in dogs where methoxamine is used solely as a vasoconstrictor to alter afterload, with no pharmacokinetic parameters reported. |
-| PD | Iribe_2004 | not_relevant | 0 | 0 | The paper investigates the hemodynamic effects of afterload on pulsus alternans using methoxamine only as a tool to increase afterload, and does not report any exposure-response or dose-response relationship or PD parameters for methoxamine. |
+| PD | Iribe_2004 | not_relevant | 0 | 0 | The study investigates the hemodynamic effect of afterload (induced by methoxamine) on the transient alternans of contractility (Emax) and arterial pressure, not the pharmacodynamic exposure-response relationship or dose-effect curve of the drug methoxamine itself. |
+| popPK | Jara_1998 | irrelevant | 0 | 0 | This is a clinical case report on the efficacy of methoxamine for treating priapism and contains no pharmacokinetic data, quantitative disposition parameters, or PK models. |
 | popPK | Jepps_2015 | irrelevant | 0 | 0 | The study investigates ion channel physiology in rat arteries and uses methoxamine only as a vasoconstrictor probe, not as a subject for pharmacokinetic analysis. |
 | popPK | Jones_2003 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological assay measuring potency (EC50) in porcine tissue, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
 | popPK | Khammy_2016 | irrelevant | 0 | 0 | The study is an in-vitro pharmacodynamic assessment of vascular reactivity (EC50/Emax) to methoxamine, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
@@ -129,32 +166,42 @@ _12 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | popPK | Li_1990 | irrelevant | 0 | 0 | The study investigates the hemodynamic effects of methoxamine on tumor blood flow in rats, not its pharmacokinetic disposition parameters. |
 | popPK | Li_1993 | irrelevant | 0 | 0 | The study measures tumor blood flow using methoxamine as a vasoactive agent, not its pharmacokinetic parameters. |
 | popPK | Li_2011 | irrelevant | 0 | 0 | The study investigates the vasorelaxant effects of fasudil mesylate, using methoxamine only as a contractile agent in in vitro assays, and does not report pharmacokinetic parameters for methoxamine. |
+| popPK | Li_2026 | relevant | 9 | 0 | The study reports stereoselective pharmacokinetic parameters (AUC, t1/2, Vd, CL) for methoxamine in rats, but the specific numeric values are not present in the provided evidence. |
 | popPK | Maclouf_1986 | irrelevant | 0 | 0 | The paper describes the development of a radioimmunoassay for prostaglandin D2 using methoxamine as a derivatizing reagent, not a pharmacokinetic study of methoxamine itself. |
 | popPK | Macquin-Mavier_1991 | irrelevant | 0 | 0 | The study measures lung epithelial permeability using a radiotracer, and methoxamine is used only as a pharmacological agent to modulate bronchoconstriction, not as the subject of a pharmacokinetic analysis. |
 | PD | McAdams_1986 | not_relevant | 0 | 0 | The text is a correction regarding antagonist pA2 values for prazosin and indoramin, containing no data or analysis for methoxamine. |
+| popPK | McPherson_1992 | irrelevant | 0 | 0 | The study assesses vascular reactivity (pharmacodynamics) of methoxamine in isolated vessels, not its pharmacokinetic disposition parameters. |
 | popPK | Miyauchi_1996 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of CGRP vasorelaxation where methoxamine is used only as a precontracting agent, not as the subject of pharmacokinetic analysis. |
 | popPK | Moeller_2015 | irrelevant | 0 | 0 | The study uses methoxamine as a pharmacological tool to measure vascular resistance in rat livers, not to characterize its pharmacokinetic parameters. |
 | popPK | Munzar_1999 | irrelevant | 0 | 0 | The study is a behavioral pharmacology experiment investigating the discriminative-stimulus effects of methamphetamine, using methoxamine only as a comparator agent, and reports no pharmacokinetic parameters. |
 | PD | Munzar_1999 | not_relevant | 1 | 0 | The paper reports qualitative behavioral shifts in dose-response curves for methamphetamine modulated by methoxamine, but provides no numeric PD parameters (e.g., EC50, Emax) or concentration-effect data for methoxamine itself. |
 | PD | Ohizumi_1982 | not_relevant | 0 | 0 | The paper studies the effect of MCI-2016 on methoxamine responses in guinea-pig vas deferens, but does not report a pharmacodynamic (exposure- or dose-response) relationship for methoxamine itself. |
+| popPK | Oleksa_1996 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology experiment investigating ion channel regulation in guinea pig myocytes, not a pharmacokinetic disposition study. |
 | popPK | Osborn_1982 | irrelevant | 0 | 0 | The study uses methoxamine as a pharmacological tool to investigate renal physiology and renin secretion, not to characterize the pharmacokinetic parameters of methoxamine itself. |
 | popPK | Parker_1999 | irrelevant | 0 | 0 | no_text gate: only 85 chars of text extracted (&lt; 400) |
 | PD | Parker_1999 | not_relevant | 0 | 0 | The paper investigates the electrophysiological mechanism of methoxamine on ion channels (Ito, hKv1.5, Kv4.2) and does not report pharmacodynamic exposure-response or dose-response relationships with numeric PD parameters. |
 | popPK | Pettibone_1986 | irrelevant | 0 | 0 | The study focuses on the pharmacodynamics of L-654,284, using methoxamine only as a reference agonist for receptor selectivity, with no PK parameters reported for methoxamine. |
 | popPK | Pirova_1990 | irrelevant | 0 | 0 | The study is a pharmacodynamic investigation of renal excretory function and diuresis in rats, not a pharmacokinetic study reporting disposition parameters for methoxamine. |
 | popPK | Qi_1992 | irrelevant | 0 | 0 | The study is a pharmacodynamic investigation of adrenoceptor effects on palpebral fissure and lacrimation in mice, reporting no pharmacokinetic parameters for methoxamine. |
+| popPK | Raiteri_1992 | irrelevant | 0 | 0 | no_text gate: only 83 chars of text extracted (&lt; 400) |
 | PD | Ralevic_1996 | not_relevant | 0 | 0 | The paper uses methoxamine only as a tool to establish vascular tone in an isolated organ bath; it does not report a pharmacodynamic or exposure-response relationship for methoxamine itself. |
+| popPK | Rump_1995 | irrelevant | 0 | 0 | The study is an in vitro pharmacological investigation of norepinephrine release where methoxamine is used only as a comparator agent, reporting no pharmacokinetic parameters. |
 | popPK | Salazar-Bookaman_2006 | irrelevant | 0 | 0 | The study is a pharmacological investigation of receptor antagonism in guinea-pig ileum and does not report any pharmacokinetic parameters for methoxamine. |
 | popPK | Sapienza_1996 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of vascular contractility and receptor binding, not a pharmacokinetic study of methoxamine. |
 | PD | Sarsero_1998 | not_relevant | 0 | 0 | The paper focuses on calcium channel antagonists and does not mention methoxamine or report any pharmacodynamic parameters for it. |
 | popPK | Simpson_1985 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of adrenergic receptor signaling in cultured rat heart cells, not a pharmacokinetic study of methoxamine. |
+| popPK | Simpson_2014 | relevant | 10 | 0 | The study reports on the pharmacokinetics of methoxamine (NRL001) in humans, but the specific quantitative parameter values (CL, V, ka, etc.) are not included in the provided text, only qualitative descriptions and Cmax comparisons. |
+| popPK | Siproudhis_2014 | irrelevant | 0 | 0 | The paper is a study design for an efficacy trial of methoxamine (NRL001) where PK is a secondary objective, but no quantitative PK parameters are reported in the provided evidence. |
 | popPK | Sladeczek_1988 | irrelevant | 0 | 0 | The study is an in-vitro receptor binding and functional assay (pharmacodynamics) and does not report pharmacokinetic parameters for methoxamine. |
 | PD | Sladeczek_1988 | not_relevant | 3 | 2 | The paper reports binding affinities (Ki) and EC50 values for inositol phosphate accumulation, but methoxamine is only mentioned as an exception to a correlation trend without specific numeric PD parameters provided in the text. |
 | PD | Smallwood_2005 | not_relevant | 0 | 0 | The paper is a molecular biology study on PKC-delta and actin binding; methoxamine is used only as a stimulant for NKCC1 activation, and no pharmacodynamic or exposure-response parameters for methoxamine are reported. |
 | popPK | Starling_1987 | irrelevant | 0 | 0 | no_text gate: only 109 chars of text extracted (&lt; 400) |
 | PD | Starling_1987 | not_relevant | 0 | 0 | The paper focuses on hemodynamic indices and left ventricular elastance in humans and does not report any pharmacodynamic or exposure-response analysis for methoxamine. |
+| popPK | Starling_1988 | irrelevant | 0 | 0 | Methoxamine is used only as a pharmacological agent to alter loading conditions in a hemodynamic study, not as a subject of PK analysis. |
 | PD | Starling_1989 | not_relevant | 0 | 0 | The paper focuses on the responsiveness of maximum time-varying elastance to left ventricular contractile state and does not report a pharmacodynamic or exposure-response relationship for methoxamine. |
 | popPK | Sudhir_1990 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of vascular reactivity where methoxamine is used as a tool compound, not a pharmacokinetic study. |
+| popPK | Summers_1992 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of nedocromil sodium, with methoxamine used only as a control agent that did not alter the outcomes. |
+| popPK | Sumner_1990 | irrelevant | 0 | 0 | no_text gate: only 85 chars of text extracted (&lt; 400) |
 | PD | Sumner_1992 | not_relevant | 0 | 0 | The paper investigates 5-HT1 receptor mechanisms in dog saphenous vein; methoxamine is only mentioned as a negative control for alpha-1 adrenoceptor activity and no PD parameters for methoxamine are reported. |
 | popPK | Tabrizchi_1989 | irrelevant | 0 | 0 | no_text gate: only 84 chars of text extracted (&lt; 400) |
 | PD | Tabrizchi_1989 | not_relevant | 0 | 0 | The paper focuses on the pharmacological classification of alpha-1 adrenoceptors using benextramine and nifedipine, and does not report any pharmacodynamic or exposure-response data for methoxamine. |
@@ -175,7 +222,6 @@ _12 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | popPK | unknown_1991 | irrelevant | 0 | 0 | no_text gate: only 109 chars of text extracted (&lt; 400) |
 | PD | unknown_1991 | not_relevant | 0 | 0 | The provided text is only a citation header for a conference abstract collection and contains no scientific content, data, or PD parameters for methoxamine. |
 | popPK | unknown_2015 | irrelevant | 0 | 0 | no_text gate: only 40 chars of text extracted (&lt; 400) |
-| PD | unknown_2015 | not_relevant | 0 | 0 | The provided text is only a header for a poster session and contains no scientific content, data, or mention of methoxamine or pharmacodynamics. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

@@ -5,7 +5,7 @@
 
 # tetracycline — `Tetracycline_Grada2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.429), gpt-oss:120b (partly confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.571), gpt-oss:120b (partly confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -21,7 +21,7 @@
 
 The record reports tetracycline CL/F of 3.15 L/h, V1/F of 54.2 L, V2/F of 15.1 L and an absorption rate constant of 3.45 h−1, but the model structure check found an unreachable compartment or unlinked metabolite with no path from the dose. The second reader disagreed on several extracted values: the first reader recorded 21.7, 19, 26, 22 and 27 where the second reader recorded none, and recorded none where the second reader recorded 21.7 and 31, so the parameter values are not reliably established. Extracted — tetracycline: CL/F 3.15 L/h, V1/F 54.2 L, V2/F 15.1 L, kabs 3.45 h−1.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q18: this record has 21.7, the second reading none; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q18: this record has 21.7, the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -66,20 +66,18 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.429 (6/14 fields) | 8 |
+| `gpt-oss-120b` | not confirmed | 0.571 (8/14 fields) | 6 |
 | `gpt-oss:120b` | partly confirmed | 0.5 (6/12 fields) | 6 |
 
-<details><summary>14 field discrepancies</summary>
+<details><summary>12 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `values[Q18]` | 21.7 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `values[Q21]` | not captured | 27 | only_one_extracted |
-| `gpt-oss-120b` | `values[Q32]` | 19 | 31 | mismatch |
-| `gpt-oss-120b` | `values[Q40]` | 26 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `values[Q56]` | 0.53 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `values[Q83]` | not captured | 0.53 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q32]` | 19 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q33]` | not captured | 31 | only_one_extracted |
 | `gpt-oss-120b` | `values[Q84]` | 22 | 21.7 | mismatch |
+| `gpt-oss-120b` | `values[Q87]` | not captured | 46 | only_one_extracted |
 | `gpt-oss-120b` | `values[Q88]` | 27 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q18]` | 21.7 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q32]` | 19 | not captured | only_one_extracted |
@@ -120,7 +118,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_tetracycline/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Grada_2022` / `Grada_2022::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_tetracycline/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Grada_2022` / `Grada_2022::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

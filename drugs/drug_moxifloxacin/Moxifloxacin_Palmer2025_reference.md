@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01M&quot;,&quot;href&quot;:&quot;atc/J01M.md&quot;},{&quot;label&quot;:&quot;moxifloxacin&quot;,&quot;href&quot;:&quot;drugs/drug_moxifloxacin/&quot;},{&quot;label&quot;:&quot;Palmer_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Moxifloxacin_Greenberg2022_reference&quot;,&quot;label&quot;:&quot;Greenberg_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_moxifloxacin/Moxifloxacin_Greenberg2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Moxifloxacin_Nyangwa2026_reference&quot;,&quot;label&quot;:&quot;Nyangwa_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_moxifloxacin/Moxifloxacin_Nyangwa2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Moxifloxacin_Yun2022_reference&quot;,&quot;label&quot;:&quot;Yun_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_moxifloxacin/Moxifloxacin_Yun2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Moxifloxacin_Xu2024_reference&quot;,&quot;label&quot;:&quot;Xu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_moxifloxacin/Moxifloxacin_Xu2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Moxifloxacin_Nyangwa2026_reference&quot;,&quot;label&quot;:&quot;Nyangwa_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_moxifloxacin/Moxifloxacin_Nyangwa2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Moxifloxacin_Yun2022_value&quot;,&quot;label&quot;:&quot;Yun_2022_value&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_moxifloxacin/Moxifloxacin_Yun2022_value.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Moxifloxacin_Greenberg2022_population_estimate_or_median&quot;,&quot;label&quot;:&quot;Greenberg_2022_population_estimate_or_median&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_moxifloxacin/Moxifloxacin_Greenberg2022_population_estimate_or_median.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Moxifloxacin_Greenberg2022_standard_error_of_the_population&quot;,&quot;label&quot;:&quot;Greenberg_2022_standard_error_of_the_population_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_moxifloxacin/Moxifloxacin_Greenberg2022_standard_error_of_the_population.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Moxifloxacin_Palmer2025_reference&quot;,&quot;label&quot;:&quot;Palmer_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_moxifloxacin/Moxifloxacin_Palmer2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Moxifloxacin_Xu2024_reference&quot;,&quot;label&quot;:&quot;Xu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_moxifloxacin/Moxifloxacin_Xu2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Moxifloxacin_Yun2022_population_estimates&quot;,&quot;label&quot;:&quot;Yun_2022_population_estimates&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_moxifloxacin/Moxifloxacin_Yun2022_population_estimates.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Gotta_2015_QTc&quot;,&quot;label&quot;:&quot;Gotta_2015 \u00b7 \u0394QTc&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_moxifloxacin/pd_Gotta_2015_QTc.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # moxifloxacin — `Moxifloxacin_Palmer2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.875), gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-check: disputed 1/2</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.875), gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-check: disputed 1/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -13,40 +13,39 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 ### Reviewer guidance
 
-**The moxifloxacin model was quarantined because clearance, volume of distribution, absorption rate constant, absorption lag time and both intercompartmental rate constants had no source values and library placeholders were used instead.**
+**Ka use library defaults, not estimates from this paper; t6_deviations.**
 
-Although the paper reports apparent parameters for moxifloxacin (CL/F 6.90 L/h, V1/F 61.1 L, Q/F 0.860 L/h, V2/F 44.5 L, MAT 1.01 h), the model's clearance, volume of distribution, absorption rate constant, absorption lag time, central→peripheral rate constant and peripheral→central rate constant had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. The builder also assumed F=1 and Fm=1 without molar correction, giving an apparent (/F) parameterization, and used first-order depot input consistent with extravascular dosing. The absorption rate constant was defaulted because it was not reported in the source, and this invented absorption was judged not acceptable; the deviations check could not compute a comparison (ratio None). Extracted — moxifloxacin: CL/F 6.9, V1/F 61.1, Q/F 0.86, V2/F 44.5, MAT 1.01 h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — moxifloxacin: CL/F 6.9 L/h, V1/F 61.1 L, Q/F 0.86 L/h, V2/F 44.5 L, MAT 1.01 h, Fab 1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[vc/f (l) a].parameter_id`: this record has Q76, the second reading Q290; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by glm-5.3-flash</sub>
-
-> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-28 14:39:06.024196+00:00) predates the upstream re-run (2026-10-07 12:29:35.747563+00:00). Current validate status: `rejected`.
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Palmer M et al., Population pharmacokinetics and dosing…, British journal of clinical… (2025)
   ·  DOI: [10.1111/bcp.70005](https://doi.org/10.1111/bcp.70005)
 
-<div class="pk-model-meta" hidden drug="moxifloxacin" model-id="Moxifloxacin_Palmer2025_reference" status="rejected" stale="true" population="children with rifampicin-resistant tuberculosis" measured-compound="moxifloxacin" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="moxifloxacin" model-id="Moxifloxacin_Palmer2025_reference" status="needs_review" stale="false" population="children with rifampicin-resistant tuberculosis" measured-compound="moxifloxacin" parameterization="apparent" topology="2C"></div>
 
-**Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 5 extracted.
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameters:** 6 extracted.
 
-**Parameterization:** CL/F, Q/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F (L/h) a | `Q27` · CL/F | 6.90 | unit | not captured | [unit] | 3.5 | llm_confirmed (0.6) | bcp70005-tbl-0002:row2:col1, bcp70005-tbl-0002:row2:col2, bcp70005-tbl-0002:row2:col3 | — | not captured |
-| Vc/F (L) a | `Q76` · V/F | 61.1 | unit | not captured | [unit] | 3.7 | llm_confirmed (0.6) | bcp70005-tbl-0002:row3:col1, bcp70005-tbl-0002:row3:col2, bcp70005-tbl-0002:row3:col3 | — | not captured |
-| Q/F (L/h) a | `Q69` · Q/F | 0.860 | unit | not captured | [unit] | 19 | llm_confirmed (0.6) | bcp70005-tbl-0002:row4:col1, bcp70005-tbl-0002:row4:col2, bcp70005-tbl-0002:row4:col3 | — | not captured |
-| MAT (h) | `Q73` · MAT | 1.01 | h | 3636.0 | [h] | 5.5 | exact (1.0) | bcp70005-tbl-0002:row6:col1, bcp70005-tbl-0002:row6:col2, bcp70005-tbl-0002:row6:col3 | — | 42.2 (None% RSE) |
+| CL/F (L/h) a | `Q27` · CL/F | 6.90 | L/h | 1.916666666666667e-06 | [l] / [h] | not captured | llm_confirmed (0.6) | bcp70005-tbl-0002:row2:col1 | — | not captured |
+| Vc/F (L) a | `Q290` · V1/F | 61.1 | L | 0.0611 | [l] | not captured | llm_confirmed (0.6) | bcp70005-tbl-0002:row3:col1 | — | not captured |
+| Q/F (L/h) a | `Q69` · Q/F | 0.860 | L/h | 2.388888888888889e-07 | [l] / [h] | not captured | llm_confirmed (0.6) | bcp70005-tbl-0002:row4:col1 | — | not captured |
+| Vp/F (L) a | `Q82` · V2/F | 44.5 | L | 0.0445 | [l] | not captured | llm_confirmed (0.6) | bcp70005-tbl-0002:row5:col1 | — | not captured |
+| MAT (h) | `Q73` · MAT | 1.01 | h | 3636.0 | [h] | not captured | exact (1.0) | bcp70005-tbl-0002:row6:col1 | — | 42.2 (None% RSE) |
 | F | `Q40` · Fab | 1 | not captured | not captured | not captured | not captured | exact (1.0) | bcp70005-tbl-0002:row7:col1 | — | not captured |
 
 <details class="legend">
@@ -56,22 +55,20 @@ Palmer M et al., Population pharmacokinetics and dosing…, British journal of c
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['ka', 'Tlag']
+- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+- `invented_absorption`: ka defaulted — not reported in source
+- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
+
 **Interpretation flags:**
 - table section iiv: 'IIV on CL (%CV) c' routed out of structural estimates ('IIV/IOV')
 - table section iiv: 'IOV on F (%CV) c' routed out of structural estimates ('IIV/IOV')
 - table section iiv: 'IOV on MAT (%CV) c' routed out of structural estimates ('IIV/IOV')
-- unit_dimension_mismatch: 'CL/F (L/h) a' → Q27 (unit '[luminosity] / [length] ** 2' vs ontology '[length] ** 3 / [time]') — route to review
-- unit_dimension_mismatch: 'Vc/F (L) a' → Q290 (unit '[luminosity] / [length] ** 2' vs ontology '[length] ** 3') — route to review
-- unit_dimension_mismatch: 'Q/F (L/h) a' → Q69 (unit '[luminosity] / [length] ** 2' vs ontology '[length] ** 3 / [time]') — route to review
-- dropped unlinked row (NIL): 'Vp/F (L) a' — extend the ontology if this is a real PK parameter (source ['bcp70005-tbl-0002:row5:col1', 'bcp70005-tbl-0002:row5:col2', 'bcp70005-tbl-0002:row5:col3'])
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=moxifloxacin
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
-- 1C volume normalization: Q290→Q76 (single-compartment model has no central/peripheral split; 'Vc/F (L) a' is the general volume)
-- status held at route_to_review — not promoted
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
+- table bcp70005-tbl-0002: unbound_uncertainty
 - LLM selected parameter table(s) 3
 
 ## Validation
@@ -103,16 +100,19 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C2_base_Q40 | fail | 1.0 | 6.9 | 6.9 | 0.05 | footnote reference category |
-| C5_dimension_Q27 | fail | [luminosity] / [length] ** 2 | unit | not captured | not captured | ['bcp70005-tbl-0002:row2:col1', 'bcp70005-tbl-0002:row2:col2', 'bcp70005-tbl-0002:row2:col3'] |
-| C5_dimension_Q69 | fail | [luminosity] / [length] ** 2 | unit | not captured | not captured | ['bcp70005-tbl-0002:row4:col1', 'bcp70005-tbl-0002:row4:col2', 'bcp70005-tbl-0002:row4:col3'] |
-| C5_dimension_Q73 | pass | [time] | not captured | not captured | not captured | ['bcp70005-tbl-0002:row6:col1', 'bcp70005-tbl-0002:row6:col2', 'bcp70005-tbl-0002:row6:col3'] |
-| C5_dimension_Q76 | fail | [luminosity] / [length] ** 2 | unit | not captured | not captured | ['bcp70005-tbl-0002:row3:col1', 'bcp70005-tbl-0002:row3:col2', 'bcp70005-tbl-0002:row3:col3'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['bcp70005-tbl-0002:row2:col1'] |
+| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['bcp70005-tbl-0002:row3:col1'] |
+| C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['bcp70005-tbl-0002:row4:col1'] |
+| C5_dimension_Q73 | pass | [time] | not captured | not captured | not captured | ['bcp70005-tbl-0002:row6:col1'] |
+| C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['bcp70005-tbl-0002:row5:col1'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 6.9 L/h | not captured | not captured | ['bcp70005-tbl-0002:row2:col1'] |
+| C9_phys_window_Q290 | pass | volume within physiological range | 61.1 L | not captured | not captured | ['bcp70005-tbl-0002:row3:col1'] |
+| C9_phys_window_Q82 | pass | volume within physiological range | 44.5 L | not captured | not captured | ['bcp70005-tbl-0002:row5:col1'] |
 
 **Reviewer per-scenario checks:**
 
@@ -121,10 +121,12 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_output_variable | not captured | pass | C_central (measured=moxifloxacin) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
-| T1_cmax | reference | skipped | 103 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable; invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
+| T1_cmax | reference | pass | 0.0031000000000000003 | 0.003149877842418796 | 1.0161 | mg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | skipped | 103 | 0.003149877842418796 | not captured | unresolved concentration unit (exp '%', sim 'kg/m3') |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -133,22 +135,38 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_moxifloxacin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Palmer_2025` / `Palmer_2025::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_moxifloxacin/models/modelica/_needs_review/Moxifloxacin_Palmer2025_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_moxifloxacin/models/modelica/_needs_review/Moxifloxacin_Palmer2025_reference.deviation.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_moxifloxacin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Palmer_2025` / `Palmer_2025::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_moxifloxacin/models/modelica/Moxifloxacin_Palmer2025_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_moxifloxacin/models/modelica/Moxifloxacin_Palmer2025_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_moxifloxacin/models/modelica/Moxifloxacin_Palmer2025_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_moxifloxacin/Moxifloxacin_Palmer2025_reference/Moxifloxacin_Palmer2025_reference_modelica.zip" download>Moxifloxacin_Palmer2025_reference_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_moxifloxacin/Moxifloxacin_Palmer2025_reference/Moxifloxacin_Palmer2025_reference_fmi.zip" download>Moxifloxacin_Palmer2025_reference_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_moxifloxacin/Moxifloxacin_Palmer2025_reference/Moxifloxacin_Palmer2025_reference_matlab.zip" download>Moxifloxacin_Palmer2025_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_moxifloxacin/Moxifloxacin_Palmer2025_reference/Moxifloxacin_Palmer2025_reference_matlab_simbio.zip" download>Moxifloxacin_Palmer2025_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_moxifloxacin/Moxifloxacin_Palmer2025_reference/Moxifloxacin_Palmer2025_reference_sbml.zip" download>Moxifloxacin_Palmer2025_reference_sbml.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_moxifloxacin/Moxifloxacin_Palmer2025_reference/Moxifloxacin_Palmer2025_reference_cellml.zip" download>Moxifloxacin_Palmer2025_reference_cellml.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
+</tbody></table>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_moxifloxacin/Moxifloxacin_Palmer2025_reference/Moxifloxacin_Palmer2025_reference.svg" alt="Moxifloxacin_Palmer2025_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+**Administration: oral** — 400 mg, single dose, first-order absorption (ka 0.5 /h, F 1). Dose in the paper: 400 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_moxifloxacin/Moxifloxacin_Palmer2025_reference/Moxifloxacin_Palmer2025_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_moxifloxacin/Moxifloxacin_Palmer2025_reference/Moxifloxacin_Palmer2025_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_2C_enteral` · parameters `Moxifloxacin_Palmer2025_reference_params.json` · controls `Moxifloxacin_Palmer2025_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 12:29 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 23:13 UTC</sub>

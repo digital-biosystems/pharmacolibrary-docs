@@ -19,9 +19,9 @@
 
 **Model:** No model was generated from this record.
 
-> Vorapaxar directly binds to the FOXO1 protein, inhibiting its phosphorylation at Ser256 to promote nuclear translocation and transcriptional activity, with a measured equilibrium dissociation constant (KD) of 8.67 μM, association rate constant (kon) of 8.32×103 M−1s−1, and dissociation rate constant (koff) of 7.21 × 10−2 s−1. The paper describes this as a direct binding interaction that modulates post-translational modification and activity rather than a standard target-mediated drug disposition (TMDD) elimination model.
+> Vorapaxar (concentration in μM) directly binds to the FOXO1 protein to enhance its transcriptional activity and nuclear translocation. The paper reports binding affinity parameters of kon = 8.32×103 M−1s−1, koff = 7.21×10−2 s−1, and KD = 8.67 μM, but does not state a pharmacodynamic mechanism for response inhibition such as Imax, IC50, or Emax.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Zhou_2025`
 - **model family:** `tmdd`

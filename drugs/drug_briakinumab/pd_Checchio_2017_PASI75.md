@@ -17,7 +17,7 @@
 
 **Model:** No model was generated from this record.
 
-> The paper models the time course of briakinumab-induced PASI75 response using a sigmoid Emax function where the effect increases toward a maximum over time, although it does not explicitly state the underlying biological mechanism of the drug's action. For briakinumab, the time to reach 50% and 90% of the maximal effect (ET50 and ET90) were estimated at 5.8 weeks and 10.9 weeks, respectively.
+> The paper describes a longitudinal model where the dose of briakinumab (an IL-17 inhibitor) drives the time-course of PASI75 response using a sigmoidal Emax function, but it does not explicitly state the specific physiological mechanism (e.g., inhibition of production vs. elimination) for this drug in the provided text. The record lists an ET50 of 5.8 weeks and a Week 12 response of 78.4%, though the paper notes that IL-17 inhibitors generally achieved ET50 in approximately 3.7 to 3.9 weeks.
 >
 > <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
@@ -35,7 +35,7 @@ Checchio T et al., Quantitative Evaluations of Time-Course…, Clinical pharmaco
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
 | — | ET 50 | `Q100` · not captured | 5.8 | Week | not captured | nil (not captured) | Checchio_2017:pdv3 |
-| — | ET 90 | `Q100` · not captured | 10.9 | Week | not captured | nil (not captured) | Checchio_2017:pdv3 |
+| — | PASI75 Week 12 | `Q100` · not captured | 78.4 | % | not captured | nil (not captured) | Checchio_2017:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>

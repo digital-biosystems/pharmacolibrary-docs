@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;risankizumab&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/&quot;},{&quot;label&quot;:&quot;Pang_2020 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Risankizumab_RodrguezFernndez2022_reference&quot;,&quot;label&quot;:&quot;Rodr\u00edguez-Fern\u00e1ndez_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/Risankizumab_RodrguezFernndez2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Risankizumab_Khatri2019_chinese&quot;,&quot;label&quot;:&quot;Khatri_2019_chinese&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/Risankizumab_Khatri2019_chinese.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Risankizumab_Khatri2019_japanese&quot;,&quot;label&quot;:&quot;Khatri_2019_japanese&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/Risankizumab_Khatri2019_japanese.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Risankizumab_Khatri2019_risankizumab_1200_mg_iv&quot;,&quot;label&quot;:&quot;Khatri_2019_risankizumab_1200_mg_iv&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/Risankizumab_Khatri2019_risankizumab_1200_mg_iv.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Risankizumab_Khatri2019_white&quot;,&quot;label&quot;:&quot;Khatri_2019_white&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/Risankizumab_Khatri2019_white.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Risankizumab_Suleiman2019_reference&quot;,&quot;label&quot;:&quot;Suleiman_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/Risankizumab_Suleiman2019_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Risankizumab_Thomas2026_reference&quot;,&quot;label&quot;:&quot;Thomas_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/Risankizumab_Thomas2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Risankizumab_RodrguezFernndez2022_reference&quot;,&quot;label&quot;:&quot;Rodr\u00edguez-Fern\u00e1ndez_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/Risankizumab_RodrguezFernndez2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Risankizumab_Thomas2026_reference&quot;,&quot;label&quot;:&quot;Thomas_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/Risankizumab_Thomas2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Risankizumab_Suleiman2019_reference&quot;,&quot;label&quot;:&quot;Suleiman_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/Risankizumab_Suleiman2019_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Khatri_2020_PASI100&quot;,&quot;label&quot;:&quot;Khatri_2020 \u00b7 PASI100&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/pd_Khatri_2020_PASI100.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Khatri_2020_PASI100_2&quot;,&quot;label&quot;:&quot;Khatri_2020 \u00b7 PASI100&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/pd_Khatri_2020_PASI100_2.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Khatri_2020_PASI75&quot;,&quot;label&quot;:&quot;Khatri_2020 \u00b7 PASI75&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/pd_Khatri_2020_PASI75.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Khatri_2020_PASI90&quot;,&quot;label&quot;:&quot;Khatri_2020 \u00b7 PASI90&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/pd_Khatri_2020_PASI90.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Khatri_2020_sPGA0_1&quot;,&quot;label&quot;:&quot;Khatri_2020 \u00b7 sPGA0/1&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/pd_Khatri_2020_sPGA0_1.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,34 +17,37 @@
 
 ### Reviewer guidance
 
-**The review rejected the risankizumab record because the model's second compartment is disconnected from the central compartment.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record defines a three-compartment structure including a central volume (6.52 L) and a peripheral volume (4.67 L). However, the findings indicate this peripheral compartment is unreachable from the dose, meaning the model structure is incomplete. No other parameters were flagged as inconsistent. Extracted — risankizumab: V1 6.52 L, V2 4.67 L, V 11.2 L, CL 0.19 L/day, kabs 0.908 day−1.
+Extracted — risankizumab: CL 0.31 L/day, V1 6.52 L, V2 4.67 L, kabs 0.908 day−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has risankizumab, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Pang Y et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokinetics (2020)
   ·  DOI: [10.1007/s40262-019-00842-5](https://doi.org/10.1007/s40262-019-00842-5)
 
-<div class="pk-model-meta" hidden drug="risankizumab" model-id="Risankizumab_Pang2020_reference" status="rejected" stale="false" population="patients with moderate-to-severe plaque psoriasis" measured-compound="risankizumab" parameterization="mechanistic" topology="3C"></div>
+<div class="pk-model-meta" hidden drug="risankizumab" model-id="Risankizumab_Pang2020_reference" status="rejected" stale="false" population="adults with moderate-to-severe plaque psoriasis" measured-compound="risankizumab" parameterization="apparent" topology="1C"></div>
 
-**Model structure:** 3-compartment; no model was built for this record.  
-**Parameters:** 5 extracted.
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 8 extracted.
 
-**Parameterization:** mechanistic.
+**Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| volume of distribution of the central (Vc) | `Q63` · V1 | 6.52 | L | 0.00652 | L | not captured | boundary_compartment (0.9) | Pang_2020:results_prose | — | not captured |
-| peripheral (Vp) compartments | `Q64` · V2 | 4.67 | L | 0.00467 | L | not captured | boundary (0.8) | Pang_2020:results_prose | — | not captured |
-| steady-state volume of distribution (Vss) | `Q61` · V | 11.2 | L | 0.0112 | L | not captured | boundary (0.8) | Pang_2020:results_prose | — | not captured |
-| CL | `Q22` · CL | 0.19 | L/day | 2.1990740740740743e-09 | L/h | not captured | review_gapfill (0.7) | Rodríguez-Fernández_2022:review | — | not captured |
+| Cmax | `Q32` · Cmax | 0.311 | µg/mL | not captured | [µg] / [ml] | not captured | exact (1.0) | Pang_2020_table_3:row2:col2, Pang_2020_table_3:row2:col3, Pang_2020_table_3:row2:col4, Pang_2020_table_3:row2:col5, Pang_2020_table_3:row2:col6, Pang_2020_table_3:row2:col7 | — | not captured |
+| Tmaxa | `Q56` · tmax | 0.083 | day | 7171.200000000001 | [d] | not captured | llm (0.6) | Pang_2020_table_3:row3:col2, Pang_2020_table_3:row3:col3, Pang_2020_table_3:row3:col4, Pang_2020_table_3:row3:col5, Pang_2020_table_3:row3:col6, Pang_2020_table_3:row3:col7 | — | not captured |
+| AUC∞ | `Q17` · AUC∞ | 2.93 | ng*h/mL | not captured | ng*h/mL | not captured | exact (1.0) | Pang_2020_table_3:row4:col2, Pang_2020_table_3:row4:col3, Pang_2020_table_3:row4:col4, Pang_2020_table_3:row4:col5, Pang_2020_table_3:row4:col6, Pang_2020_table_3:row4:col7 | — | not captured |
+| t½ | `Q57` · t1/2z | 19.4 | day | 1676159.9999999998 | [d] | not captured | llm (0.6) | Pang_2020_table_3:row5:col2, Pang_2020_table_3:row5:col3, Pang_2020_table_3:row5:col4, Pang_2020_table_3:row5:col5, Pang_2020_table_3:row5:col6, Pang_2020_table_3:row5:col7 | — | not captured |
+| CL or CL/Fb | `Q27` · CL/F | 0.325 | L/day | 3.761574074074074e-09 | [l] / [d] | not captured | llm_corrected (0.6) | Pang_2020_table_3:row6:col2, Pang_2020_table_3:row6:col3, Pang_2020_table_3:row6:col4, Pang_2020_table_3:row6:col5, Pang_2020_table_3:row6:col6, Pang_2020_table_3:row6:col7 | — | not captured |
+| AUC∞/dose | `Q189` · AUC/dose | 3.08 | µg day/mL/mg | not captured | [[d] · [µg]] / [[mg] · [ml]] | not captured | exact (1.0) | Pang_2020_table_3:row7:col2, Pang_2020_table_3:row7:col3, Pang_2020_table_3:row7:col4, Pang_2020_table_3:row7:col5, Pang_2020_table_3:row7:col6, Pang_2020_table_3:row7:col7 | — | not captured |
+| V/F | `Q76` · V/F | 24.9 | L | 0.0249 | L | not captured | review_gapfill (0.7) | Rodríguez-Fernández_2022:review | — | not captured |
 | ka | `Q49` · kabs | 0.908 | day−1 | 1.0509259259259259e-05 | 1/h | not captured | review_gapfill (0.7) | Rodríguez-Fernández_2022:review | — | not captured |
 
 <details class="legend">
@@ -55,25 +58,29 @@ Pang Y et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokine
 ## Departures & gaps
 
 **Interpretation flags:**
-- column 'unit' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- dropped unlinked row (NIL): '0.01 mg/kg' — extend the ontology if this is a real PK parameter (source ['Pang_2020_table_3:row0:col1', 'Pang_2020_table_3:row0:col2', 'Pang_2020_table_3:row0:col3', 'Pang_2020_table_3:row0:col4', 'Pang_2020_table_3:row0:col5', 'Pang_2020_table_3:row0:col6', 'Pang_2020_table_3:row0:col7'])
-- dropped unlinked row (NIL): '[n = 3]' — extend the ontology if this is a real PK parameter (source ['Pang_2020_table_3:row1:col1', 'Pang_2020_table_3:row1:col2', 'Pang_2020_table_3:row1:col3', 'Pang_2020_table_3:row1:col4', 'Pang_2020_table_3:row1:col5', 'Pang_2020_table_3:row1:col6', 'Pang_2020_table_3:row1:col7'])
-- dropped unlinked row (NIL): 'Non-Japanese (phase III) [n = 1130]' — extend the ontology if this is a real PK parameter (source ['Pang_2020_table_5:row0:col1'])
-- salvaged Q63 ('volume of distribution of the central (Vc)'=6.52) from results prose — parameter table was unreadable
-- salvaged Q64 ('peripheral (Vp) compartments'=4.67) from results prose — parameter table was unreadable
-- salvaged Q61 ('steady-state volume of distribution (Vss)'=11.2) from results prose — parameter table was unreadable
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=risankizumab
+- dropped unlinked row (NIL): '0.01 mg/kg' — extend the ontology if this is a real PK parameter (source ['Pang_2020_table_3:row0:col2', 'Pang_2020_table_3:row0:col3', 'Pang_2020_table_3:row0:col4', 'Pang_2020_table_3:row0:col5', 'Pang_2020_table_3:row0:col6', 'Pang_2020_table_3:row0:col7'])
+- dropped unlinked row (NIL): '[n = 3]' — extend the ontology if this is a real PK parameter (source ['Pang_2020_table_3:row1:col2', 'Pang_2020_table_3:row1:col3', 'Pang_2020_table_3:row1:col4', 'Pang_2020_table_3:row1:col5', 'Pang_2020_table_3:row1:col6', 'Pang_2020_table_3:row1:col7'])
+- unit_dimension_unknown: 'µg day/mL' (AUC∞)
+- unit_dimension_unknown: 'µg day/mL/mg' (AUC/dose)
+- implicit units: 'AUC∞' → ng*h/mL (from the popPK convention: 'AUC is a measure of exposure (concentration x time). For monoclonal antibodies like risankizumab, plasma concentrations ')
+- implicit units: 'AUC∞/dose' — the LLM proposed 'ng*h/mL/mg', whose dimension does not fit Q189; left unset
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=risankizumab
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- structure disagreement: deterministic 3C vs LLM 2C — review compartment count
 - status held at route_to_review — not promoted
+- population split: 'iv dose of risankizumab' subgroup of Pang_2020 (paper reports 7 populations: iv dose of risankizumab, sc dose of risankizumab, week 16, week 28, week 4, week 40, week 52)
 - molar mass: none found for 'risankizumab' — its concentrations stay mass-only
-- gap-filled Q22 (CL) from Rodríguez-Fernández_2022's review values (primary lacked it)
+- gap-filled Q76 (V/F) from Rodríguez-Fernández_2022's review values (primary lacked it)
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - gap-filled Q49 (kabs) from Rodríguez-Fernández_2022's review values (primary lacked it)
 
 **Extraction notes:**
-- companion parameter table 3 transcribed (14 record(s))
+- table Pang_2020_table_3: ragged_grid
+- companion parameter table 3 transcribed (60 record(s))
+- table Pang_2020_table_5: ragged_grid
+- table Pang_2020_table_5: unparsed_numeric_cell
 - companion parameter table 5 transcribed (1 record(s))
-- LLM selected parameter table(s) 3, 4, 5
+- LLM selected parameter table(s) 3, 5
 
 ## Validation
 
@@ -111,18 +118,21 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C1_half_life_beta | pass | 28.0 | 23.786 | 0.8495 | 0.25 | reported t½β |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Rodríguez-Fernández_2022:review'] |
+| C5_dimension_Q17 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Pang_2020_table_3:row4:col2', 'Pang_2020_table_3:row4:col3', 'Pang_2020_table_3:row4:col4', 'Pang_2020_table_3:row4:col5', 'Pang_2020_table_3:row4:col6', 'Pang_2020_table_3:row4:col7'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Pang_2020_table_3:row6:col2', 'Pang_2020_table_3:row6:col3', 'Pang_2020_table_3:row6:col4', 'Pang_2020_table_3:row6:col5', 'Pang_2020_table_3:row6:col6', 'Pang_2020_table_3:row6:col7'] |
+| C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Pang_2020_table_3:row2:col2', 'Pang_2020_table_3:row2:col3', 'Pang_2020_table_3:row2:col4', 'Pang_2020_table_3:row2:col5', 'Pang_2020_table_3:row2:col6', 'Pang_2020_table_3:row2:col7'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Rodríguez-Fernández_2022:review'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.19 | not captured | not captured | ['Rodríguez-Fernández_2022:review'] |
-| C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.00792 L/h | not captured | not captured | ['Rodríguez-Fernández_2022:review'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 11.2 L | not captured | not captured | ['Pang_2020:results_prose'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 6.52 L | not captured | not captured | ['Pang_2020:results_prose'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 4.67 L | not captured | not captured | ['Pang_2020:results_prose'] |
+| C5_dimension_Q56 | pass | [time] | not captured | not captured | not captured | ['Pang_2020_table_3:row3:col2', 'Pang_2020_table_3:row3:col3', 'Pang_2020_table_3:row3:col4', 'Pang_2020_table_3:row3:col5', 'Pang_2020_table_3:row3:col6', 'Pang_2020_table_3:row3:col7'] |
+| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Pang_2020_table_3:row5:col2', 'Pang_2020_table_3:row5:col3', 'Pang_2020_table_3:row5:col4', 'Pang_2020_table_3:row5:col5', 'Pang_2020_table_3:row5:col6', 'Pang_2020_table_3:row5:col7'] |
+| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Rodríguez-Fernández_2022:review'] |
+| C5_unit_missing_Q189 | fail | [mass] * [time] / [length] ** 3 | µg day/mL/mg | not captured | not captured | ['Pang_2020_table_3:row7:col2', 'Pang_2020_table_3:row7:col3', 'Pang_2020_table_3:row7:col4', 'Pang_2020_table_3:row7:col5', 'Pang_2020_table_3:row7:col6', 'Pang_2020_table_3:row7:col7'] |
+| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
+| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 0.0135 L/h | not captured | not captured | ['Pang_2020_table_3:row6:col2', 'Pang_2020_table_3:row6:col3', 'Pang_2020_table_3:row6:col4', 'Pang_2020_table_3:row6:col5', 'Pang_2020_table_3:row6:col6', 'Pang_2020_table_3:row6:col7'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 24.9 L | not captured | not captured | ['Rodríguez-Fernández_2022:review'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -131,7 +141,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_risankizumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Pang_2020` / `Pang_2020::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_risankizumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Pang_2020` / `Pang_2020::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -147,4 +157,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 00:20 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 00:05 UTC</sub>

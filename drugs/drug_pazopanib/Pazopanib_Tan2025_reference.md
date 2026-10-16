@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;pazopanib&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/&quot;},{&quot;label&quot;:&quot;Tan_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pazopanib_Attia2023_reference&quot;,&quot;label&quot;:&quot;Attia_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Attia2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pazopanib_Balakirouchenane2020_reference&quot;,&quot;label&quot;:&quot;Balakirouchenane_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Balakirouchenane2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pazopanib_Bins2019_base&quot;,&quot;label&quot;:&quot;Bins_2019_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Bins2019_base.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pazopanib_Bins2019_final&quot;,&quot;label&quot;:&quot;Bins_2019_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Bins2019_final.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pazopanib_Ozbey2021_reference&quot;,&quot;label&quot;:&quot;Ozbey_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Ozbey2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pazopanib_Attia2023_reference&quot;,&quot;label&quot;:&quot;Attia_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Attia2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pazopanib_Balakirouchenane2020_reference&quot;,&quot;label&quot;:&quot;Balakirouchenane_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Balakirouchenane2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pazopanib_Ozbey2021_reference&quot;,&quot;label&quot;:&quot;Ozbey_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Ozbey2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -29,7 +29,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 Tan Z et al., Model-Informed Dose Optimization of Paz…, Clinical pharmacokinetics (2025)
   ·  DOI: [10.1007/s40262-025-01504-5](https://doi.org/10.1007/s40262-025-01504-5)
 
-<div class="pk-model-meta" hidden drug="pazopanib" model-id="Pazopanib_Tan2025_reference" status="needs_review" stale="false" population="real-world patients with mRCC and soft tissue sarcoma" measured-compound="pazopanib" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="pazopanib" model-id="Pazopanib_Tan2025_reference" status="needs_review" stale="false" population="patients with metastatic renal cell carcinoma (mRCC) and soft tissue sarcoma (STS)" measured-compound="pazopanib" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.
@@ -41,10 +41,10 @@ Tan Z et al., Model-Informed Dose Optimization of Paz…, Clinical pharmacokinet
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| V/F | `Q76` · V/F | 46 | L | 0.046 | L | not captured | exact (1.0) | Tan_2025:discussion_prose | — | not captured |
-| CL/F | `Q27` · CL/F | 17.7 | L/h | 4.9166666666666665e-06 | L/h | not captured | review_gapfill (0.7) | Balakirouchenane_2020:review | — | not captured |
-| k a | `Q49` · kabs | 1.8 | 1/h | 0.0005 | 1/h | not captured | review_gapfill (0.7) | Balakirouchenane_2020:review | — | not captured |
-| Tlag | `Q83` · tlag | 0.5 | h | 1800.0 | h | not captured | review_gapfill (0.7) | Balakirouchenane_2020:review | — | not captured |
+| V/F estimated from our study | `Q76` · V/F | 46 | L | 0.046 | L | not captured | boundary (0.8) | Tan_2025:discussion_prose | — | not captured |
+| CL/F (L/h) Estimate (Base DAB/OHD Model) | `Q27` · CL/F | 17.7 | L/h | 4.9166666666666665e-06 | L/h | not captured | review_gapfill (0.7) | Balakirouchenane_2020:review | — | not captured |
+| k a (1/h) Estimate (Base DAB/OHD Model) | `Q49` · kabs | 1.8 | 1/h | 0.0005 | 1/h | not captured | review_gapfill (0.7) | Balakirouchenane_2020:review | — | not captured |
+| Tlag (h) Estimate (Base DAB/OHD Model) | `Q83` · tlag | 0.5 | h | 1800.0 | h | not captured | review_gapfill (0.7) | Balakirouchenane_2020:review | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -56,7 +56,7 @@ Tan Z et al., Model-Informed Dose Optimization of Paz…, Clinical pharmacokinet
 **Interpretation flags:**
 - dropped value-less row: '\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$F1=TVF1*{(200/DOSE)}^{EXP}$$\\end{document}F1=TVF1∗(200/DOSE)EXP'
 - dropped value-less row: 'TVF1'
-- salvaged Q76 ('V/F'=46) from results prose — parameter table was unreadable
+- salvaged Q76 ('V/F estimated from our study'=46) from results prose — parameter table was unreadable
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=pazopanib
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
@@ -67,6 +67,7 @@ Tan Z et al., Model-Informed Dose Optimization of Paz…, Clinical pharmacokinet
 - gap-filled Q83 (tlag) from Balakirouchenane_2020's review values (primary lacked it)
 
 **Extraction notes:**
+- table Tab2: unparsed_numeric_cell
 - LLM selected parameter table(s) 2
 
 ## Validation
@@ -116,7 +117,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_pazopanib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Tan_2025` / `Tan_2025::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_pazopanib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Tan_2025` / `Tan_2025::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -142,4 +143,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 04:38 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 20:23 UTC</sub>

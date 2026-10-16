@@ -1,9 +1,13 @@
 {
- "dose_source": "library default",
+ "dose_source": "paper",
  "model_id": "Guselkumab_Chen2022_reference",
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  100.0
  ],
  "parameters": {
   "Cl": 6.898148148148148e-09,
@@ -13,16 +17,16 @@
   "adminCount": 1.0,
   "adminDuration": 600.0,
   "adminMass": 0.0001,
-  "ka": 0.0001388888888888889,
+  "ka": 6.6203703703703694e-06,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 42096.65092483971
+  "central.C": 441176.753507014
  },
  "reference_peaks": {
-  "central.C": 0.0063336030302534084
+  "central.C": 0.005310880894573766
  },
- "stop_time": 7862400.0,
+ "stop_time": 8467200.0,
  "template": "PK_1C_enteral",
  "template_fmu": "PK_1C_enteral.fmu"
 }

@@ -4,7 +4,7 @@
 
 # fosphenytoin — `Fosphenytoin_Tanaka2013_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.938), gpt-oss:120b (not confirmed, agreement 0.882). Primary extraction retained.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.938), gpt-oss:120b (not confirmed, agreement 0.882). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -18,13 +18,11 @@
 
 **V3 has no unit.**
 
-Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (V3), so that value has no SI equivalent. None of the extracted parameters is fosphenytoin's own; they describe phenytoin. Extracted — phenytoin: CL 1.61 L/h, V1 20.3 L, Q 53.4 L/h, V2 26.5 L, V3 0.591 V3, kfm 4.96 1/h.
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (V3), so that value has no SI equivalent. None of the extracted parameters is fosphenytoin's own; they describe phenytoin. Extracted — phenytoin: CLm/F 1.61 L/h, V1 20.8 L, Q 53 L/h, V2 26 L, V3 0.584 V3, kfm 5.02 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has fosphenytoin, the second reading fosphenytoin sodium. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
-
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:26:54.232824+00:00) predates the upstream re-run (2026-10-07 06:53:59.940964+00:00). Current validate status: `needs_review`.
 
 > **Dose compound ≠ measured compound:** dosed `fosphenytoin`, measured `phenytoin`.
 
@@ -32,7 +30,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Tanaka J et al., Population pharmacokinetics of phenytoi…, European journal of clinica… (2013)
   ·  DOI: [10.1007/s00228-012-1373-8](https://doi.org/10.1007/s00228-012-1373-8)
 
-<div class="pk-model-meta" hidden drug="fosphenytoin" model-id="Fosphenytoin_Tanaka2013_reference" status="needs_review" stale="true" population="pediatric patients, adult patients, and healthy volunteers" measured-compound="phenytoin" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="fosphenytoin" model-id="Fosphenytoin_Tanaka2013_reference" status="needs_review" stale="false" population="healthy volunteers, pediatric patients, and adult patients" measured-compound="phenytoin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.
@@ -44,12 +42,12 @@ Tanaka J et al., Population pharmacokinetics of phenytoi…, European journal of
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL (L/h)a | `Q351` · CLm/F | 1.61 | L/h | 4.4722222222222223e-07 | L/h | 0.0878 | exact (1.0) | Tab3:row2:col2, Tab3:row2:col3, Tab3:row2:col4, Tab3:row2:col5, Tab3:row2:col6, Tab3:row2:col7 | — | 0.190 (0.0348% RSE) |
-| V2 (L)a | `Q63` · V1 | 20.3 | L | 0.020300000000000002 | L | 2.68 | exact (1.0) | Tab3:row4:col2, Tab3:row4:col3, Tab3:row4:col4, Tab3:row4:col5, Tab3:row4:col6, Tab3:row4:col7 | — | not captured |
-| Q (L/h) | `Q30` · Q | 53.4 | L/h | 1.4833333333333334e-05 | [l] / [h] | 5.87 | exact (1.0) | Tab3:row5:col2, Tab3:row5:col3, Tab3:row5:col4, Tab3:row5:col5, Tab3:row5:col6, Tab3:row5:col7 | — | not captured |
-| V3 (L)a | `Q64` · V2 | 26.5 | L | 0.0265 | L | 2.43 | exact (1.0) | Tab3:row6:col2, Tab3:row6:col3, Tab3:row6:col4, Tab3:row6:col5, Tab3:row6:col6, Tab3:row6:col7 | — | 0.133 (0.0684% RSE) |
-| ΘWT (V3) | `Q77` · V3 | 0.591 | V3 | not captured | [v3] | 0.0520 | llm (0.6) | Tab3:row7:col2, Tab3:row7:col3, Tab3:row7:col4, Tab3:row7:col5, Tab3:row7:col6, Tab3:row7:col7 | — | 0.0470 (0.0214% RSE) |
-| K12 (1/h) | `Q305` · kfm | 4.96 | 1/h | 0.0013777777777777777 | 1/h | 0.518 | exact (1.0) | Tab3:row8:col2, Tab3:row8:col3, Tab3:row8:col4, Tab3:row8:col5, Tab3:row8:col6, Tab3:row8:col7 | — | not captured |
+| CL (L/h)a | `Q351` · CLm/F | 1.61 | L/h | 4.4722222222222223e-07 | [l] / [h] | not captured | exact (1.0) | Tab3:row2:col2 | — | 0.194 (None% RSE) |
+| V2 (L)a | `Q63` · V1 | 20.8 | L | 0.020800000000000003 | [l] | not captured | exact (1.0) | Tab3:row4:col2 | — | not captured |
+| Q (L/h) | `Q30` · Q | 53.0 | L/h | 1.4722222222222222e-05 | [l] / [h] | not captured | exact (1.0) | Tab3:row5:col2 | — | not captured |
+| V3 (L)a | `Q64` · V2 | 26.0 | L | 0.026000000000000002 | [l] | not captured | exact (1.0) | Tab3:row6:col2 | — | 0.161 (None% RSE) |
+| ΘWT (V3) | `Q77` · V3 | 0.584 | V3 | not captured | [v3] | not captured | llm (0.6) | Tab3:row7:col2 | — | 0.0430 (None% RSE) |
+| K12 (1/h) | `Q305` · kfm | 5.02 | 1/h | 0.0013944444444444442 | [1] / [h] | not captured | exact (1.0) | Tab3:row8:col2 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -59,37 +57,18 @@ Tanaka J et al., Population pharmacokinetics of phenytoi…, European journal of
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_mismatch: 'ΘWT (CL)' → Q22 (unit '[length] ** 3' vs ontology '[length] ** 3 / [time]') — route to review
-- dropped duplicate Q22 ('ΘWT (CL)', value '0.575') — already have one for this compound
+- routed 'ΘWT (CL)' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
 - unit_dimension_unknown: 'V3' (V3)
-- implicit units: 'CL (L/h)a' → L/h (from the paper text: 'The paper text states: "The basic pharmacokinetic parameters were total clearance (CL, L/h)" and Table 3 lists "Populati')
-- implicit units: 'V2 (L)a' → L (from the paper text: 'The paper text states: "central volume of distribution (V2, L)" and Table 3 lists "V2 (L)".')
-- implicit units: 'V3 (L)a' → L (from the paper text: 'The paper text states: "peripheral volume of distribution (V3, L)" and Table 3 lists "V3 (L)".')
-- implicit units: 'K12 (1/h)' → 1/h (from the paper text: 'The paper text states: "metabolism rate constant (K12, h−1)".')
 - metabolite phenytoin: Q22→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=phenytoin
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - template fit: none — only the metabolite is modelled — no parent compartment
 - structure disagreement: deterministic 1C vs LLM 3C — review compartment count
 - status held at route_to_review — not promoted
-- row roles (LLM): model_class=compartmental; 14/14 row label(s) assigned, 30 linked by role
+- row roles (LLM): model_class=compartmental; 14/14 row label(s) assigned, 5 linked by role
 - review gap-fill skipped: this record measures 'phenytoin', not fosphenytoin — the review values are the parent's
 
 **Extraction notes:**
-- unparsed cell Tab3:row2:col1 = 'θ1'
-- unparsed cell Tab3:row3:col1 = 'θ2'
-- unparsed cell Tab3:row4:col1 = 'θ3'
-- unparsed cell Tab3:row5:col1 = 'θ4'
-- unparsed cell Tab3:row6:col1 = 'θ5'
-- unparsed cell Tab3:row7:col1 = 'θ6'
-- unparsed cell Tab3:row8:col1 = 'θ7'
-- unparsed cell Tab3:row10:col1 = 'ω1,1'
-- unparsed cell Tab3:row11:col1 = 'ω2,2'
-- unparsed cell Tab3:row12:col1 = 'ω3,3'
-- unparsed cell Tab3:row13:col1 = 'ω4,4'
-- unparsed cell Tab3:row14:col1 = 'ω5,5'
-- unparsed cell Tab3:row16:col1 = 'σ1,1'
-- unparsed cell Tab3:row17:col1 = 'σ2,2'
 - LLM selected parameter table(s) 3
 
 ## Validation
@@ -125,16 +104,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab3:row5:col2', 'Tab3:row5:col3', 'Tab3:row5:col4', 'Tab3:row5:col5', 'Tab3:row5:col6', 'Tab3:row5:col7'] |
-| C5_dimension_Q305 | pass | 1 / [time] | not captured | not captured | not captured | ['Tab3:row8:col2', 'Tab3:row8:col3', 'Tab3:row8:col4', 'Tab3:row8:col5', 'Tab3:row8:col6', 'Tab3:row8:col7'] |
-| C5_dimension_Q351 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab3:row2:col2', 'Tab3:row2:col3', 'Tab3:row2:col4', 'Tab3:row2:col5', 'Tab3:row2:col6', 'Tab3:row2:col7'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab3:row4:col2', 'Tab3:row4:col3', 'Tab3:row4:col4', 'Tab3:row4:col5', 'Tab3:row4:col6', 'Tab3:row4:col7'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab3:row6:col2', 'Tab3:row6:col3', 'Tab3:row6:col4', 'Tab3:row6:col5', 'Tab3:row6:col6', 'Tab3:row6:col7'] |
-| C5_unit_missing_Q77 | fail | [length] ** 3 | V3 | not captured | not captured | ['Tab3:row7:col2', 'Tab3:row7:col3', 'Tab3:row7:col4', 'Tab3:row7:col5', 'Tab3:row7:col6', 'Tab3:row7:col7'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab3:row5:col2'] |
+| C5_dimension_Q305 | pass | 1 / [time] | not captured | not captured | not captured | ['Tab3:row8:col2'] |
+| C5_dimension_Q351 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab3:row2:col2'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab3:row4:col2'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab3:row6:col2'] |
+| C5_unit_missing_Q77 | fail | [length] ** 3 | V3 | not captured | not captured | ['Tab3:row7:col2'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q63 | pass | volume within physiological range | 20.3 L | not captured | not captured | ['Tab3:row4:col2', 'Tab3:row4:col3', 'Tab3:row4:col4', 'Tab3:row4:col5', 'Tab3:row4:col6', 'Tab3:row4:col7'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 26.5 L | not captured | not captured | ['Tab3:row6:col2', 'Tab3:row6:col3', 'Tab3:row6:col4', 'Tab3:row6:col5', 'Tab3:row6:col6', 'Tab3:row6:col7'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 20.8 L | not captured | not captured | ['Tab3:row4:col2'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 26 L | not captured | not captured | ['Tab3:row6:col2'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -143,7 +122,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_fosphenytoin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Tanaka_2013` / `Tanaka_2013::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_fosphenytoin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Tanaka_2013` / `Tanaka_2013::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -169,4 +148,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 06:53 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 19:08 UTC</sub>

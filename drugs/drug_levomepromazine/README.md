@@ -17,7 +17,7 @@ Levomepromazine is a phenothiazine antipsychotic used for conditions such as pai
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 15:55 | 6:17 | 0/0/0 | 1/2/0 | 0/0/1 | 59,580/4,377 | ollama / glm-5.3-flash | 4 | 0/4 | 4/0 | 0 |
+| 2026-10-14 20:44 | 0:24 | 0/0/0 | 1/0/0 | 0/0/1 | 27,309/2,581 | einfracz / qwen3.8-27b | 4 | 0/4 | 4/0 | 0 |
 
 ## popPK records
 
@@ -27,13 +27,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">fish</span> | [Pihlaja_2024_BFCOD](drugs/drug_levomepromazine/pd_Pihlaja_2024_BFCOD.md) | CYP3A-like activity (benzyloxy-4-trifluoromethylcoumarin-O-debenzyloxylation, BFCOD) ← levomepromazine · inhibition effect | — | Pihlaja TLM et al., Comparative in vitro hepatic clearances…, Aquatic toxicology (Amsterd… (2024) | [10.1016/j.aquatox.2024.107048](https://doi.org/10.1016/j.aquatox.2024.107048) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">fish</span> | [Pihlaja_2024_EROD](drugs/drug_levomepromazine/pd_Pihlaja_2024_EROD.md) | CYP1A-like activity (7-ethoxyresorufin-O-deethylation, EROD) ← levomepromazine · inhibition effect | — | Pihlaja TLM et al., Comparative in vitro hepatic clearances…, Aquatic toxicology (Amsterd… (2024) | [10.1016/j.aquatox.2024.107048](https://doi.org/10.1016/j.aquatox.2024.107048) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span> | [Järvinen_2024_Cytotoxicity_toward_3D_spheroid_cultures_of_rainbow_trout_hepatocytes_RTH_149_RTHEP](drugs/drug_levomepromazine/pd_J_rvinen_2024_Cytotoxicity_toward_3D_spheroid_cultures_of_ra.md) | Cytotoxicity toward 3D spheroid cultures of rainbow trout hepatocytes (RTH-149 / RTHEP) ← levomepromazine · direct sigmoid Emax (Hill) effect | — | Järvinen P et al., Cytotoxicity of pharmaceuticals and the…, European journal of pharmac… (2024) | [10.1016/j.ejps.2024.106817](https://doi.org/10.1016/j.ejps.2024.106817) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Ohsuka_1995_3H_ketanserin_binding](drugs/drug_levomepromazine/pd_Ohsuka_1995_3H_ketanserin_binding.md) | 3H-ketanserin binding ← levomepromazine · inhibition effect | — | Ohsuka N et al., Effects of Antidepressants and antipsyc…, Psychopharmacology (1995) | [10.1007/BF02246490](https://doi.org/10.1007/BF02246490) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Ohsuka_1995_3H_paroxetine_binding](drugs/drug_levomepromazine/pd_Ohsuka_1995_3H_paroxetine_binding.md) | 3H-paroxetine binding ← levomepromazine · inhibition effect | — | Ohsuka N et al., Effects of Antidepressants and antipsyc…, Psychopharmacology (1995) | [10.1007/BF02246490](https://doi.org/10.1007/BF02246490) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Ohsuka_1995_5HT_induced_intracellular_Ca2_increase](drugs/drug_levomepromazine/pd_Ohsuka_1995_5HT_induced_intracellular_Ca2_increase.md) | 5HT-induced intracellular Ca2+ increase ← levomepromazine · inhibition effect | — | Ohsuka N et al., Effects of Antidepressants and antipsyc…, Psychopharmacology (1995) | [10.1007/BF02246490](https://doi.org/10.1007/BF02246490) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Ohsuka_1995_5HT_induced_shape_change](drugs/drug_levomepromazine/pd_Ohsuka_1995_5HT_induced_shape_change.md) | 5HT-induced shape change ← levomepromazine · inhibition effect | — | Ohsuka N et al., Effects of Antidepressants and antipsyc…, Psychopharmacology (1995) | [10.1007/BF02246490](https://doi.org/10.1007/BF02246490) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">fish</span> | [Pihlaja_2024_BFCOD](drugs/drug_levomepromazine/pd_Pihlaja_2024_BFCOD.md) | benzyloxy-4-trifluoromethylcoumarin-O-debenzyloxylation (BFCOD) biomarker turnover ← levomepromazine | — | Pihlaja TLM et al., Comparative in vitro hepatic clearances…, Aquatic toxicology (Amsterd… (2024) | [10.1016/j.aquatox.2024.107048](https://doi.org/10.1016/j.aquatox.2024.107048) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">fish</span> | [Pihlaja_2024_EROD](drugs/drug_levomepromazine/pd_Pihlaja_2024_EROD.md) | 7-ethoxyresorufin-O-deethylation (EROD) biomarker turnover ← levomepromazine | — | Pihlaja TLM et al., Comparative in vitro hepatic clearances…, Aquatic toxicology (Amsterd… (2024) | [10.1016/j.aquatox.2024.107048](https://doi.org/10.1016/j.aquatox.2024.107048) |
 
 ## Pharmacogenomics (PGx)
 
@@ -47,6 +42,18 @@ _not available_
 <summary>PGx field definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=levomepromazine).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| metabolism | brain | `CYP2D6` inhibitor/metabolism/substrate | DrugBank actor |
+| metabolism | liver | `CYP2D6` inhibitor/metabolism/substrate, `CYP2E1` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ADRA1A (target), ADRA1B (target), ADRA1D (target), ADRA2A (target), ADRA2B (target), ADRA2C (target), CHRM1 (target), CHRM2 (target), CHRM3 (target), CHRM4 (target), CHRM5 (target), DRD1 (target), DRD2 (target), DRD3 (target), DRD4 (target), DRD5 (target), HRH1 (target), HTR2A (target), HTR2C (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -67,7 +74,7 @@ _16 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `ter_2003.pdf` | ter Horst PG et al., Simultaneous determination of levomepro…, Journal of chromatography.… (2003) | popPK | 8 | [10.1016/s1570-0232(03)00253-8](https://doi.org/10.1016/s1570-0232(03)00253-8) | [12798199](https://pubmed.ncbi.nlm.nih.gov/12798199) | Reports numeric PK parameters for levomepromazine (V 4.1±2.4 l/kg, clearance 309±225 l/h/70 kg) from a one-compartment model in human plasma. |
+| `ter_2003.pdf` | ter Horst PG et al., Simultaneous determination of levomepro…, Journal of chromatography.… (2003) | popPK | 10 | [10.1016/s1570-0232(03)00253-8](https://doi.org/10.1016/s1570-0232(03)00253-8) | [12798199](https://pubmed.ncbi.nlm.nih.gov/12798199) | The text explicitly reports quantitative pharmacokinetic parameters (Vd and CL) for levomepromazine in human plasma. |
 | `El_2004.pdf` | El Ela AA et al., Identification of P-glycoprotein substr…, The Journal of pharmacy and… (2004) | pd | 5 | [10.1211/0022357043969](https://doi.org/10.1211/0022357043969) | [15285840](https://www.ncbi.nlm.nih.gov/pubmed/15285840) | metadata signals extractable PD data (IC50) |
 | `Pihlaja_2024.pdf` | Pihlaja TLM et al., Comparative in vitro hepatic clearances…, Aquatic toxicology (Amsterd… (2024) | pd | 5 | [10.1016/j.aquatox.2024.107048](https://doi.org/10.1016/j.aquatox.2024.107048) | [39146846](https://www.ncbi.nlm.nih.gov/pubmed/39146846) | metadata signals extractable PD data (IC50) |
 | `Koski_2003.pdf` | Koski A et al., Interaction of alcohol and drugs in fat…, Human & experimental toxico… (2003) | pd | 4 | [10.1191/0960327103ht324oa](https://doi.org/10.1191/0960327103ht324oa) | [12774892](https://www.ncbi.nlm.nih.gov/pubmed/12774892) | metadata signals extractable PD data (concentration-effect) |
@@ -84,39 +91,39 @@ _16 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Ieiri_2003.pdf` | Ieiri I et al., A CYP2D6 phenotype-genotype mismatch in…, Pharmacopsychiatry (2003) | pgx | 5 | [10.1055/s-2003-43049](https://doi.org/10.1055/s-2003-43049) | [14571354](https://www.ncbi.nlm.nih.gov/pubmed/14571354) | metadata signals extractable PGX data (CYP2D6) |
 | `Vevelstad_2009.pdf` | Vevelstad M et al., O-demethylation of codeine to morphine…, European journal of clinica… (2009) | pgx | 5 | [10.1007/s00228-009-0640-9](https://doi.org/10.1007/s00228-009-0640-9) | [19308365](https://www.ncbi.nlm.nih.gov/pubmed/19308365) | metadata signals extractable PGX data (CYP2D6) |
 
-<sub>queue written 2026-10-06T15:54:15.724539+00:00</sub>
+<sub>queue written 2026-10-14T20:44:06.488066+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| PGx | Balant-Gorgia_1986 | not_relevant | 2 | 3 | The pharmacogenomic effect (debrisoquine oxidation phenotype) concerns clomipramine pharmacokinetics, not levomepromazine, which is only mentioned as a co-administered neuroleptic. |
-| PGx | Basińska-Ziobroń_2015 | not_relevant | 0 | 0 | In vitro enzyme inhibition by levomepromazine (drug as inhibitor), not a gene variant/genotype effect on its PK/PD. |
-| PGx | Belančić_2024 | not_relevant | 2 | 1 | Levomepromazine is only listed among the patient's medications; no gene variant effect on its PK/PD parameters is reported or quantified. |
-| PGx | Brøsen_1991 | not_relevant | 0 | 0 | Levomepromazine appears only as a competitive inhibitor of imipramine 2-hydroxylation; the paper does not report a pharmacogenomic effect of any variant on levomepromazine's own PK/PD parameters. |
-| PGx | Butwicka_2014 | not_relevant | 6 | 3 | Case report suggests CYP2D6*4/*4 may have increased levomepromazine toxicity/NMS risk, but no plasma concentrations or PK/PD parameters were measured. |
-| PGx | Danek_2021 | not_relevant | 0 | 0 | Study reports CYP3A4 induction by levomepromazine in vitro; no gene variant/genotype/phenotype effect on levomepromazine PK/PD parameters. |
-| PGx | Daniel_2001 | not_relevant | 0 | 5 | In vitro rat microsome CYP inhibition by levomepromazine; no gene variant/genotype/phenotype effect on PK/PD parameters. |
-| PGx | Daniel_2005 | not_relevant | 0 | 0 | Rat in vitro/in vivo drug-drug inhibition of CYP2D; no gene variant/genotype effect on levomepromazine PK/PD. |
-| PGx | Davies_2010 | not_relevant | 0 | 0 | Paper concerns zuclopenthixol drug-drug interactions; levomepromazine is only a co-medication, no gene variant effect on levomepromazine PK/PD reported. |
-| PGx | Gervasini_2013 | not_relevant | 2 | 5 | Reports levomepromazine's in vitro CYP2D6/CYP3A inhibition (IC50 25.5 and 30 μM), a drug-drug interaction, not a gene variant/genotype effect on levomepromazine PK/PD. |
-| PGx | Gram_1993 | not_relevant | 0 | 0 | Drug-drug interaction study in all extensive metabolizers; no gene variant/genotype effect on levomepromazine PK/PD reported. |
-| PGx | Ieiri_2003 | not_relevant | 6 | 3 | Reports mean levomepromazine serum concentrations but no genotype/phenotype-stratified PK comparison or effect size for levomepromazine. |
-| PGx | Jerling_1994 | not_relevant | 0 | 0 | Reports drug–drug interactions (levomepromazine inhibiting nortriptyline metabolism), not a pharmacogenomic effect of a gene variant on levomepromazine PK/PD. |
-| popPK | Järvinen_2024 | irrelevant | 0 | 0 | In-vitro fish hepatocyte cytotoxicity study; levomepromazine only tested for EC50 toxicity, no PK disposition parameters. |
+| PGx | Bagli_1995 | not_relevant | 5 | 5 | The study explicitly reports that CYP2D6 phenotypes did not show a significant correlation with levomepromazine pharmacokinetic parameters, indicating no major pharmacogenomic effect for this drug/metabolism pathway. |
+| PGx | Balant-Gorgia_1986 | not_relevant | 0 | 0 | The paper reports pharmacokinetics of clomipramine affected by genetic polymorphism and levomepromazine, but does not report pharmacogenomic effects on levomepromazine itself. |
+| PGx | Basińska-Ziobroń_2015 | not_relevant | 0 | 0 | The paper is an in vitro drug-drug interaction study investigating CYP inhibition by levomepromazine, not a pharmacogenomic study of levomepromazine's PK/PD. |
+| PGx | Belančić_2024 | not_relevant | 2 | 1 | The paper reports a clinical case of therapeutic failure and subsequent dose adjustment based on pharmacogenetic testing, but it does not report a quantified pharmacokinetic or pharmacodynamic effect size attributable to a specific gene variant for levomepromazine. |
+| PGx | Brøsen_1991 | not_relevant | 0 | 0 | The paper studies the metabolism of imipramine and mentions levomepromazine only as a competitive inhibitor in an in vitro assay, not as a drug whose pharmacokinetics are modulated by a genetic variant. |
+| PGx | Butwicka_2014 | not_relevant | 2 | 0 | The paper is a case report describing an adverse event (NMS) in a CYP2D6 poor metabolizer and does not report quantitative PK or PD parameter changes for levomepromazine. |
+| PGx | Danek_2021 | not_relevant | 0 | 0 | The study investigates drug-induced CYP3A4 enzyme induction in vitro, not a pharmacogenomic effect (gene variant) on the PK or PD of levomepromazine. |
+| PGx | Daniel_2001 | not_relevant | 0 | 10 | The paper investigates CYP enzyme inhibition by levomepromazine, which does not constitute a pharmacogenomic effect on the drug's own PK or PD. |
+| PGx | Daniel_2005 | not_relevant | 1 | 1 | The study investigates pharmacodynamic interactions (CYP2D inhibition) of levomepromazine in rats but does not report a gene variant or genotype influencing levomepromazine pharmacokinetics or pharmacodynamics. |
+| PGx | Davies_2010 | not_relevant | 0 | 0 | The study investigates drug-drug interactions (CYP inhibitors/inducers) on zuclopenthixol, not the effect of gene variants (pharmacogenomics) on levomepromazine. |
+| PGx | Gervasini_2013 | not_relevant | 0 | 0 | The paper assesses the in vitro enzyme inhibitory potential of levomepromazine, but does not report any pharmacogenomic effects of gene variants on its PK or PD parameters. |
+| PGx | Gram_1993 | not_relevant | 0 | 10 | The study investigates drug-drug interactions in a population restricted to extensive metabolizers and does not report pharmacogenomic effects of a specific gene variant on levomepromazine parameters. |
+| PGx | Jerling_1994 | not_relevant | 0 | 0 | The paper studies drug-drug interactions (levomepromazine affecting amitriptyline/nortriptyline PK) and does not report pharmacogenomic effects on levomepromazine itself. |
+| popPK | Järvinen_2024 | irrelevant | 0 | 0 | The study is an in-vitro cytotoxicity/toxicology assay in rainbow trout cells and does not report pharmacokinetic parameters (CL, V, t1/2, etc.) for levomepromazine. |
 | popPK | Kornhuber_2006 | irrelevant | 0 | 0 | no_text gate: only 66 chars of text extracted (&lt; 400) |
-| PGx | Kornhuber_2006 | not_relevant | 0 | 0 | Study of brain regional distribution of levomepromazine; no gene variant/genotype effect on PK/PD parameters reported. |
-| popPK | Kornhuber_2006_2 | irrelevant | 1 | 0 | The study models amantadine brain PK; levomepromazine is only mentioned as a previously investigated comparator with no numeric parameters given. |
-| PGx | LLerena_2003 | not_relevant | 0 | 0 | Paper concerns risperidone PK and CYP2D6 interaction; levomepromazine is only a co-medication with no gene-variant effect on its PK/PD reported. |
-| PGx | Mannheimer_2008 | not_relevant | 0 | 0 | Levomepromazine is only mentioned as a CYP2D6 inhibitor affecting risperidone levels; no pharmacogenomic effect on levomepromazine's own PK/PD parameters is reported. |
-| PGx | Park_2026 | not_relevant | 0 | 0 | Levomepromazine is only mentioned as an exclusion criterion (CYP2D6 inhibitor); the paper reports pharmacogenomic effects on venlafaxine, not levomepromazine PK/PD. |
-| PGx | Syvälahti_1997 | not_relevant | 3 | 2 | CYP2D6 genotyping found no poor metabolizers and no genotype-stratified PK effect on levomepromazine levels is reported. |
-| PGx | Takei_2024 | not_relevant | 2 | 3 | No gene variant/genotype or pharmacogenomic effect on levomepromazine PK/PD is reported; only a drug-drug interaction hypothesis with postmortem concentrations. |
-| PGx | Vandel_1995 | not_relevant | 3 | 4 | Levomepromazine levels reported unchanged under SSRI co-treatment; no gene variant/genotype effect on its PK/PD, only drug-drug interaction and phenotype switching of probe drugs. |
-| PGx | Vevelstad_2009 | not_relevant | 3 | 5 | CYP2D6 genotype affects codeine metabolism, with levomepromazine acting only as an inhibitor; no pharmacogenomic effect on levomepromazine's own PK/PD parameters is reported. |
-| PGx | Wójcikowski_2014 | not_relevant | 3 | 5 | In vitro CYP phenotyping of levomepromazine metabolism; no gene variant/genotype/phenotype effect on PK/PD parameters in patients reported. |
-| PGx | Yoshimura_2000 | not_relevant | 2 | 3 | Study examines levomepromazine's effect on fluvoxamine PK, not a gene variant's effect on levomepromazine PK/PD; no genotype-stratified results reported. |
-| popPK | Yukawa_2002 | irrelevant | 0 | 0 | This is a population PK study of haloperidol; levomepromazine appears only as a co-administered CYP2D6 substrate covariate, with no levomepromazine parameters reported. |
+| PGx | Kornhuber_2006 | not_relevant | 0 | 0 | The paper describes the regional distribution of levomepromazine in the human brain but does not report any pharmacogenomic analysis or gene-variant specific effects on PK/PD parameters. |
+| popPK | Kornhuber_2006_2 | irrelevant | 1 | 0 | The study focuses on the pharmacokinetics of amantadine, and levomepromazine is only mentioned as a comparator without providing quantitative PK data for it. |
+| PGx | LLerena_2003 | not_relevant | 0 | 0 | The paper focuses on a method for determining risperidone and its metabolite, and mentions a case involving levomepromazine only in the context of side effects, but does not report a pharmacogenomic effect of a gene variant on the PK/PD of levomepromazine. |
+| PGx | Mannheimer_2008 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics of risperidone and investigates drug-drug interactions with CYP2D6 inhibitors (including levomepromazine) rather than pharmacogenomic effects on levomepromazine. |
+| PGx | Park_2026 | not_relevant | 0 | 0 | The study focuses on venlafaxine, and levomepromazine is only mentioned as a strong CYP2D6 inhibitor used to exclude participants, not as the subject of the pharmacogenomic analysis. |
+| PGx | Syvälahti_1997 | not_relevant | 0 | 0 | The paper investigates a drug-drug interaction (citalopram) and found no significant changes in levomepromazine levels, nor does it report specific pharmacogenomic effect sizes for CYP2D6 genotypes on levomepromazine PK. |
+| PGx | Takei_2024 | not_relevant | 0 | 0 | The paper reports a case of fatal drug-drug interaction involving CYP2D6 inhibition but does not report any effect of a genetic variant, genotype, or phenotype on the PK/PD of levomepromazine. |
+| PGx | Vandel_1995 | not_relevant | 0 | 0 | The study reports a drug-drug interaction (SSRI inhibition of CYP2D6) rather than a genetic variant effect, and specifically states there was no significant change in levomepromazine plasma levels. |
+| PGx | Vevelstad_2009 | not_relevant | 0 | 0 | The study reports how a CYP2D6 genotype affects the PK of codeine (a victim drug) under levomepromazine (the perpetrator), rather than how a genotype affects the PK/PD of levomepromazine itself. |
+| PGx | Wójcikowski_2014 | not_relevant | 2 | 0 | The paper identifies the CYP enzymes responsible for levomepromazine metabolism in vitro (CYP3A4, CYP1A2) but does not report a pharmacogenomic effect of a specific human genetic variant/genotype/phenotype on a PK or PD parameter. |
+| PGx | Yoshimura_2000 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction (levomepromazine inhibiting fluvoxamine metabolism) and does not report how a genetic variant or genotype affects the PK or PD parameters of levomepromazine. |
+| popPK | Yukawa_2002 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for haloperidol, while levomepromazine is only mentioned as a concomitant drug (CYP 2D6 substrate) that did not significantly affect the model. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

@@ -27,24 +27,38 @@ Filgotinib is a JAK inhibitor used to treat rheumatoid arthritis. It is authoris
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 00:03 | 3:02 | 0/6/0 | 1/0/0 | 0/0/0 | 262,949/13,995 | einfracz / qwen3.8-27b | 9 | 0/9 | 9/0 | 0 |
+| 2026-10-14 22:10 | 3:00 | 0/1/0 | 1/0/0 | 0/0/0 | 166,295/8,792 | einfracz / qwen3.8-27b | 9 | 0/9 | 9/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.095). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Namour_2015_anova_p_value](drugs/drug_filgotinib/Filgotinib_Namour2015_anova_p_value.md) | — | parent + metabolite (no model) | 5 | Namour F et al., Pharmacokinetics and Pharmacokinetic/Ph…, Clinical pharmacokinetics (2015) | [10.1007/s40262-015-0240-z](https://doi.org/10.1007/s40262-015-0240-z) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.095). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Namour_2015_anovaa_p_value](drugs/drug_filgotinib/Filgotinib_Namour2015_anovaa_p_value.md) | — | parent + metabolite (no model) | 5 | Namour F et al., Pharmacokinetics and Pharmacokinetic/Ph…, Clinical pharmacokinetics (2015) | [10.1007/s40262-015-0240-z](https://doi.org/10.1007/s40262-015-0240-z) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.095). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Namour_2015_anovaa_p_value_tukey_s_test](drugs/drug_filgotinib/Filgotinib_Namour2015_anovaa_p_value_tukey_s_test.md) | — | parent + metabolite (no model) | 5 | Namour F et al., Pharmacokinetics and Pharmacokinetic/Ph…, Clinical pharmacokinetics (2015) | [10.1007/s40262-015-0240-z](https://doi.org/10.1007/s40262-015-0240-z) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.452). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub><br><sub>route_to: `human_review`</sub> | [Namour_2015_estimate_rse](drugs/drug_filgotinib/Filgotinib_Namour2015_estimate_rse.md) | — | parent + metabolite (no model) | 12 (+2 cov.) | Namour F et al., Pharmacokinetics and Pharmacokinetic/Ph…, Clinical pharmacokinetics (2015) | [10.1007/s40262-015-0240-z](https://doi.org/10.1007/s40262-015-0240-z) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.1). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Namour_2015_filgotinib](drugs/drug_filgotinib/Filgotinib_Namour2015_filgotinib.md) | — | parent + metabolite (no model) | 5 | Namour F et al., Pharmacokinetics and Pharmacokinetic/Ph…, Clinical pharmacokinetics (2015) | [10.1007/s40262-015-0240-z](https://doi.org/10.1007/s40262-015-0240-z) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.1). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Namour_2015_metabolite](drugs/drug_filgotinib/Filgotinib_Namour2015_metabolite.md) | — | parent + metabolite (no model) | 5 | Namour F et al., Pharmacokinetics and Pharmacokinetic/Ph…, Clinical pharmacokinetics (2015) | [10.1007/s40262-015-0240-z](https://doi.org/10.1007/s40262-015-0240-z) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub><br><sub>route_to: `human_review`</sub> | [Namour_2015_reference](drugs/drug_filgotinib/Filgotinib_Namour2015_reference.md) | — | parent + metabolite (no model) | 7 (+2 cov.) | Namour F et al., Pharmacokinetics and Pharmacokinetic/Ph…, Clinical pharmacokinetics (2015) | [10.1007/s40262-015-0240-z](https://doi.org/10.1007/s40262-015-0240-z) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Namour_2015_pSTAT1](drugs/drug_filgotinib/pd_Namour_2015_pSTAT1.md) | pSTAT1-positive cells biomarker turnover ← filgotinib and metabolite | — | Namour F et al., Pharmacokinetics and Pharmacokinetic/Ph…, Clinical pharmacokinetics (2015) | [10.1007/s40262-015-0240-z](https://doi.org/10.1007/s40262-015-0240-z) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Namour_2015_pSTAT1](drugs/drug_filgotinib/pd_Namour_2015_pSTAT1.md) | IL-6-induced phosphorylation of signal-transducer and activator of transcription 1 ← filgotinib, its active metabolite · direct sigmoid Emax (Hill) effect | — | Namour F et al., Pharmacokinetics and Pharmacokinetic/Ph…, Clinical pharmacokinetics (2015) | [10.1007/s40262-015-0240-z](https://doi.org/10.1007/s40262-015-0240-z) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=filgotinib).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` substrate | DrugBank actor |
+| absorption | liver | `ABCB1` substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
+| absorption | testis | `ABCB1` substrate | DrugBank actor |
+| metabolism | liver | `CES1` metabolizer, `CES2` metabolizer | DrugBank actor |
+| metabolism | small intestine | `CES2` metabolizer | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: JAK1 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,24 +70,24 @@ Filgotinib is a JAK inhibitor used to treat rheumatoid arthritis. It is authoris
 
 - **PubMed hits:** 14 matched, 14 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 6  ·  extracted 0  ·  needs_review 0  ·  rejected 6  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Adami_2025 | irrelevant | 0 | 0 | The paper is a clinical pharmacodynamic analysis of glucocorticoid sparing effects in rheumatoid arthritis and does not report any pharmacokinetic parameters for filgotinib. |
-| popPK | Chandran_2023 | irrelevant | 0 | 0 | The paper is a pharmacodynamic and biomarker study of filgotinib in psoriatic arthritis and does not report pharmacokinetic disposition parameters. |
-| popPK | Ma_2025 | irrelevant | 0 | 0 | This is a post-hoc efficacy analysis of filgotinib in Crohn's disease reporting clinical and endoscopic response rates, not a pharmacokinetic study. |
-| popPK | Meng_2022 | relevant | 9 | 2 | This is a relevant population PK study for filgotinib, but the specific numeric parameter values (CL, V, ka) are in Supporting Information Tables S3/S4 which are not included in the provided evidence. |
-| popPK | Namour_2015_2 | relevant | 8 | 2 | The text is an author's reply to a PK modeling study containing specific numeric values for model comparison (OFV) and ratio estimates, but it lacks the core population PK parameter values (CL, V, Q) which are likely in the original publication or figures not provided. |
-| popPK | Qtaishat_2026 | irrelevant | 0 | 0 | The paper is a systematic review and network meta-analysis of efficacy and safety in Crohn's disease, containing no pharmacokinetic data or disposition parameters for filgotinib. |
-| popPK | Quraishi_2026 | irrelevant | 0 | 0 | The paper is a systematic review and meta-analysis regarding the incidence of acne (an adverse event) in IBD patients treated with JAK inhibitors, and it reports no pharmacokinetic parameters for filgotinib. |
-| popPK | Sonomoto_2026 | irrelevant | 0 | 0 | The paper is a real-world comparative effectiveness and safety study of JAK inhibitors, reporting clinical outcomes like CDAI scores rather than pharmacokinetic parameters for filgotinib. |
+| popPK | Adami_2025 | irrelevant | 0 | 0 | The paper is a clinical retrospective analysis of glucocorticoid sparing effects and does not report any pharmacokinetic parameters for filgotinib. |
+| popPK | Chandran_2023 | irrelevant | 0 | 0 | The paper is a pharmacodynamic and biomarker study focusing on gene expression and protein changes, reporting no pharmacokinetic parameters (CL, V, ka, etc.) for filgotinib. |
+| popPK | Ma_2025 | irrelevant | 0 | 0 | This is a post-hoc efficacy analysis of the FITZROY trial focusing on disease location (ileal vs colonic) and does not report any pharmacokinetic parameters for filgotinib. |
+| popPK | Meng_2022 | irrelevant | 6 | 0 | The paper describes a PopPK model but reports specific parameter values (CL, V, ka) only in Supplementary Tables/Figures not provided in the evidence. |
+| popPK | Namour_2015_2 | relevant | 8 | 3 | The text discusses a population PK model for filgotinib and its metabolite and provides qualitative metrics (OFV, AUC ratios) that confirm the existence of quantitative disposition parameters, but the specific numeric PK parameters (CL, V) are not listed in the provided evidence. |
+| popPK | Qtaishat_2026 | irrelevant | 0 | 0 | The paper is a network meta-analysis of efficacy and safety outcomes, containing no pharmacokinetic parameters for filgotinib. |
+| popPK | Quraishi_2026 | irrelevant | 0 | 0 | This is a systematic review of acne incidence in IBD patients, containing no pharmacokinetic parameters for filgotinib. |
+| popPK | Sonomoto_2026 | irrelevant | 0 | 0 | The paper is a real-world clinical effectiveness study comparing JAK inhibitors, containing no pharmacokinetic parameter values for filgotinib. |
 | popPK | Srinivas_2015 | irrelevant | 0 | 0 | no_text gate: only 169 chars of text extracted (&lt; 400) |
-| popPK | Wang_2023 | irrelevant | 0 | 0 | The study investigates the antiviral effects of filgotinib in vitro against coronaviruses and does not report pharmacokinetic parameters for filgotinib. |
-| popPK | Zhang_2026 | irrelevant | 0 | 0 | The study evaluates a different drug (H018) using filgotinib only as a positive control, and filgotinib plasma concentrations were explicitly reported as undetectable. |
+| popPK | Wang_2023 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic analysis of filgotinib's antiviral activity against coronaviruses, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Zhang_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of H018, using filgotinib only as a positive control, with no quantitative PK parameters reported for filgotinib. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 00:01 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-14 22:08 UTC</sub>

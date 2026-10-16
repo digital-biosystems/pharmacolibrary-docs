@@ -17,7 +17,7 @@ Gemtuzumab ozogamicin is an antibody-drug conjugate used to treat acute myeloid 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 12:42 | 1:50 | 0/0/0 | 1/1/0 | 0/0/0 | 45,736/10,269 | openai / gpt-6-luna | 2 | 2/0 | 2/0 | 0 |
+| 2026-10-14 19:30 | 0:18 | 0/0/0 | 1/0/0 | 0/0/0 | 45,764/1,088 | einfracz / qwen3.8-27b | 2 | 2/0 | 2/0 | 0 |
 
 ## popPK records
 
@@ -27,16 +27,17 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 0.00).">in vitro</span> | [Gómez-Castañeda_2022_viable_cells](drugs/drug_gemtuzumab_ozogamicin/pd_G_mez_Casta_eda_2022_viable_cells.md) | viable cells ← gemtuzumab-ozogamicin · inhibition effect | — | Gómez-Castañeda E et al., Tyrosine Kinase Inhibitor Independent G…, Cancers (2022) | [10.3390/cancers14215253](https://doi.org/10.3390/cancers14215253) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> | [Fostvedt_2019_ALB](drugs/drug_gemtuzumab_ozogamicin/pd_Fostvedt_2019_ALB.md) | Grade ≥ 3 hypoalbuminemia ← total hP67.6 antibody · categorical (graded) response model | — | Fostvedt LK et al., Pharmacokinetic/Pharmacodynamic Modelin…, Clinical pharmacology and t… (2019) | [10.1002/cpt.1500](https://doi.org/10.1002/cpt.1500) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> | [Fostvedt_2019_ALP](drugs/drug_gemtuzumab_ozogamicin/pd_Fostvedt_2019_ALP.md) | Grade ≥ 3 elevated alkaline phosphatase ← total hP67.6 antibody · categorical (graded) response model | — | Fostvedt LK et al., Pharmacokinetic/Pharmacodynamic Modelin…, Clinical pharmacology and t… (2019) | [10.1002/cpt.1500](https://doi.org/10.1002/cpt.1500) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> | [Fostvedt_2019_AST](drugs/drug_gemtuzumab_ozogamicin/pd_Fostvedt_2019_AST.md) | Grade ≥ 3 elevated aspartate transaminase ← total hP67.6 antibody · categorical (graded) response model | — | Fostvedt LK et al., Pharmacokinetic/Pharmacodynamic Modelin…, Clinical pharmacology and t… (2019) | [10.1002/cpt.1500](https://doi.org/10.1002/cpt.1500) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span> | [Fostvedt_2019_BF](drugs/drug_gemtuzumab_ozogamicin/pd_Fostvedt_2019_BF.md) | Blast-free status ← total hP67.6 antibody · categorical (graded) response model | — | Fostvedt LK et al., Pharmacokinetic/Pharmacodynamic Modelin…, Clinical pharmacology and t… (2019) | [10.1002/cpt.1500](https://doi.org/10.1002/cpt.1500) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> | [Fostvedt_2019_Bilirubin](drugs/drug_gemtuzumab_ozogamicin/pd_Fostvedt_2019_Bilirubin.md) | Grade ≥ 3 bilirubinemia ← total hP67.6 antibody · categorical (graded) response model | — | Fostvedt LK et al., Pharmacokinetic/Pharmacodynamic Modelin…, Clinical pharmacology and t… (2019) | [10.1002/cpt.1500](https://doi.org/10.1002/cpt.1500) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span> | [Fostvedt_2019_CR_CRp](drugs/drug_gemtuzumab_ozogamicin/pd_Fostvedt_2019_CR_CRp.md) | Complete remission/complete remission without platelet recovery ← total hP67.6 antibody · categorical (graded) response model | — | Fostvedt LK et al., Pharmacokinetic/Pharmacodynamic Modelin…, Clinical pharmacology and t… (2019) | [10.1002/cpt.1500](https://doi.org/10.1002/cpt.1500) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> | [Fostvedt_2019_VOD](drugs/drug_gemtuzumab_ozogamicin/pd_Fostvedt_2019_VOD.md) | Veno-occlusive disease ← total hP67.6 antibody · categorical (graded) response model | — | Fostvedt LK et al., Pharmacokinetic/Pharmacodynamic Modelin…, Clinical pharmacology and t… (2019) | [10.1002/cpt.1500](https://doi.org/10.1002/cpt.1500) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed</span> | [Fostvedt_2019_Neutrophils](drugs/drug_gemtuzumab_ozogamicin/pd_Fostvedt_2019_Neutrophils.md) | Neutrophil count ← total hP67.6 antibody · indirect response — drug inhibits the production of Neutrophil count | — | Fostvedt LK et al., Pharmacokinetic/Pharmacodynamic Modelin…, Clinical pharmacology and t… (2019) | [10.1002/cpt.1500](https://doi.org/10.1002/cpt.1500) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.583). Primary extraction retained.">cross-check: disputed</span> | [Fostvedt_2019_Platelets](drugs/drug_gemtuzumab_ozogamicin/pd_Fostvedt_2019_Platelets.md) | Platelet count ← total hP67.6 antibody · indirect response — drug inhibits the production of Platelet count | — | Fostvedt LK et al., Pharmacokinetic/Pharmacodynamic Modelin…, Clinical pharmacology and t… (2019) | [10.1002/cpt.1500](https://doi.org/10.1002/cpt.1500) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 0.00).">in vitro</span> | [Gómez-Castañeda_2022_CFC](drugs/drug_gemtuzumab_ozogamicin/pd_G_mez_Casta_eda_2022_CFC.md) | CFC ← gemtuzumab ozogamicin · direct linear effect | — | Gómez-Castañeda E et al., Tyrosine Kinase Inhibitor Independent G…, Cancers (2022) | [10.3390/cancers14215253](https://doi.org/10.3390/cancers14215253) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 0.00).">in vitro</span> | [Gómez-Castañeda_2022_viability](drugs/drug_gemtuzumab_ozogamicin/pd_G_mez_Casta_eda_2022_viability.md) | viability ← gemtuzumab ozogamicin · direct Emax (saturable) effect | — | Gómez-Castañeda E et al., Tyrosine Kinase Inhibitor Independent G…, Cancers (2022) | [10.3390/cancers14215253](https://doi.org/10.3390/cancers14215253) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=gemtuzumab_ozogamicin).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: CD33 (antibody), CD33 (regulator), FCGR1A (binder), FCGR3A (binder), FCGR3B (binder).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -57,20 +58,20 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Hibma_2019.pdf` | Hibma J et al., Population Pharmacokinetic Modeling of…, Clinical pharmacokinetics (2019) | popPK | 10 | [10.1007/s40262-018-0699-5](https://doi.org/10.1007/s40262-018-0699-5) | [30062662](https://pubmed.ncbi.nlm.nih.gov/30062662) | The paper describes a human population-PK model, but no numeric disposition parameter estimates are provided in the evidence. |
-| `Masters_2019.pdf` | Masters JC et al., Population Pharmacokinetics of Gemtuzum…, Clinical pharmacokinetics (2019) | popPK | 10 | [10.1007/s40262-018-0694-x](https://doi.org/10.1007/s40262-018-0694-x) | [30022367](https://pubmed.ncbi.nlm.nih.gov/30022367) | The paper reports population-PK models for GO, but no numeric parameter estimates are present in the evidence. |
+| `Hibma_2019.pdf` | Hibma J et al., Population Pharmacokinetic Modeling of…, Clinical pharmacokinetics (2019) | popPK | 10 | [10.1007/s40262-018-0699-5](https://doi.org/10.1007/s40262-018-0699-5) | [30062662](https://pubmed.ncbi.nlm.nih.gov/30062662) | The abstract describes a population PK model for gemtuzumab ozogamicin but provides no specific numeric parameter values (such as clearance or volume) which are likely in the full text or tables not included in the evidence. |
+| `Masters_2019.pdf` | Masters JC et al., Population Pharmacokinetics of Gemtuzum…, Clinical pharmacokinetics (2019) | popPK | 9 | [10.1007/s40262-018-0694-x](https://doi.org/10.1007/s40262-018-0694-x) | [30022367](https://pubmed.ncbi.nlm.nih.gov/30022367) | The paper describes a population pharmacokinetic model for gemtuzumab ozogamicin in pediatric patients, but the specific numeric parameter values are not present in the provided evidence text. |
 
-<sub>queue written 2026-10-07T12:40:57.997255+00:00</sub>
+<sub>queue written 2026-10-14T19:30:28.452763+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Fostvedt_2019 | irrelevant | 3 | 0 | The paper uses a two-compartment population PK model but reports no numeric gemtuzumab ozogamicin disposition parameters in the supplied evidence. |
-| popPK | Gómez-Castañeda_2022 | irrelevant | 0 | 0 | This is an in-vitro drug-response study and reports no gemtuzumab-ozogamicin disposition parameters. |
-| popPK | Hedrich_2018 | irrelevant | 1 | 0 | This is a review with no numeric gemtuzumab ozogamicin disposition parameters in the provided evidence. |
-| popPK | Hibma_2019 | relevant | 10 | 0 | The paper describes a human population-PK model, but no numeric disposition parameter estimates are provided in the evidence. |
-| popPK | Masters_2019 | relevant | 10 | 0 | The paper reports population-PK models for GO, but no numeric parameter estimates are present in the evidence. |
+| popPK | Fostvedt_2019 | irrelevant | 4 | 1 | The paper focuses on pharmacodynamic and exposure-response modeling, and while it references a population PK model and provides specific EC50 values for myelosuppression, it does not provide the quantitative disposition parameters (CL, V, Q, ka) for gemtuzumab ozogamicin, which are likely in the referenced separate PK publications or supplementary material not fully detailed here. |
+| popPK | Gómez-Castañeda_2022 | irrelevant | 0 | 0 | The paper is an in vitro mechanistic study using gemtuzumab-ozogamicin as a cytotoxic agent, reporting EC50 values for cell viability rather than pharmacokinetic disposition parameters (CL, Vd, etc.). |
+| popPK | Hedrich_2018 | irrelevant | 0 | 0 | This is a review article that discusses ADCs in general and mentions gemtuzumab ozogamicin as an example, but it does not report original quantitative pharmacokinetic parameters or specific numeric values for the drug. |
+| popPK | Hibma_2019 | relevant | 10 | 2 | The abstract describes a population PK model for gemtuzumab ozogamicin but provides no specific numeric parameter values (such as clearance or volume) which are likely in the full text or tables not included in the evidence. |
+| popPK | Masters_2019 | relevant | 9 | 1 | The paper describes a population pharmacokinetic model for gemtuzumab ozogamicin in pediatric patients, but the specific numeric parameter values are not present in the provided evidence text. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

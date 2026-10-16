@@ -172,10 +172,10 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_remimazolam/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `de_2025` / `de_2025::vellinga_38`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_remimazolam/models/modelica/Remimazolam_de2025_vellinga_38.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_remimazolam/models/modelica/Remimazolam_de2025_vellinga_38.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_remimazolam/models/modelica/Remimazolam_de2025_vellinga_38.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_remimazolam/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `de_2025` / `de_2025::vellinga_38`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_remimazolam/models/modelica/Remimazolam_de2025_vellinga_38.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_remimazolam/models/modelica/Remimazolam_de2025_vellinga_38.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_remimazolam/models/modelica/Remimazolam_de2025_vellinga_38.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

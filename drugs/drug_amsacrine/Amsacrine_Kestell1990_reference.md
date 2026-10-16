@@ -18,13 +18,13 @@
 
 ### Reviewer guidance
 
-**Amsacrine's Vss value of 3.3 liter/kg caused a dimension mismatch, rejecting the abstract-only record.**
+**C5 dimension mismatch on a structural parameter.**
 
-The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. A dimension mismatch was found on a structural parameter, specifically the volume of distribution under steady state. This inconsistency prevented the model from being accepted. Extracted — amsacrine: Km 3.7 mumol/liter, Vmax 18 mumol/h/kg, Vss 3.3 liter/kg, AUC 31 mumol.h/liter, fu 0.63.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — amsacrine: Km 3.7 mumol/liter, Vmax 18 mumol/h/kg, Vss 3.3 liter/kg, AUC 31 mumol.h/liter, fu 0.63.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of dose: this record has none, the second reading 57.7; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Kestell P et al., Disposition of amsacrine and its analog…, Cancer research (1990)
@@ -44,7 +44,7 @@ Kestell P et al., Disposition of amsacrine and its analog…, Cancer research (1
 | Km | `Q1` · Km | 3.7 | mumol/liter | not captured | [µM] / [l] | not captured | exact (1.0) | Kestell_1990:abstract, Kestell_1990:abstract | — | not captured |
 | Vmax | `Q66` · Vmax | 18 | mumol/h/kg | not captured | [µM] / [[h] · [kg]] | not captured | special_case (0.95) | Kestell_1990:abstract, Kestell_1990:abstract | — | not captured |
 | V ss | `Q65` · Vss | 3.3 | liter/kg | 0.231 | [l] / [kg] | not captured | space_fold (0.95) | Kestell_1990:abstract | — | not captured |
-| AUC | `Q88` · AUC | 31 | mumol.h/liter | not captured | [[h] · [µM]] / [l] | not captured | exact (1.0) | Kestell_1990:abstract, Kestell_1990:abstract, Kestell_1990:abstract, Kestell_1990:abstract | — | not captured |
+| AUC | `Q88` · AUC | 31 | mumol.h/liter | not captured | [[h] · [µM]] / [l] | not captured | exact (1.0) | Kestell_1990:abstract, Kestell_1990:abstract, Kestell_1990:abstract, Kestell_1990:abstract, Kestell_1990:abstract, Kestell_1990:abstract | — | not captured |
 | free drug fractions | `Q46` · fu | 0.63 | not captured | not captured | not captured | not captured | llm (0.6) | Kestell_1990:abstract, Kestell_1990:abstract | — | not captured |
 
 <details class="legend">
@@ -59,8 +59,6 @@ Kestell P et al., Disposition of amsacrine and its analog…, Cancer research (1
 - unit_dimension_mismatch: 'Vmax' → Q66 (unit '[substance] / [time]' vs ontology '[length] ** 3') — route to review
 - dropped duplicate Q65 ('Vss', value 4.8) — already have one for this compound
 - unit_dimension_mismatch: 'AUC' → Q88 (unit '[substance] * [time] / [length] ** 3' vs ontology '[mass] * [time] / [length] ** 3') — route to review
-- unit_dimension_mismatch: 'Tumor AUC' → Q88 (unit '[substance] * [time] / [length] ** 3' vs ontology '[mass] * [time] / [length] ** 3') — route to review
-- dropped duplicate Q88 ('Tumor AUC', value 68) — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=amsacrine
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
@@ -106,7 +104,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_dimension_Q1 | fail | [substance] / [length] ** 3 | mumol/liter | not captured | not captured | ['Kestell_1990:abstract', 'Kestell_1990:abstract'] |
 | C5_dimension_Q65 | pass | [length] ** 3 | not captured | not captured | not captured | ['Kestell_1990:abstract'] |
 | C5_dimension_Q66 | fail | [substance] / [time] | mumol/h/kg | not captured | not captured | ['Kestell_1990:abstract', 'Kestell_1990:abstract'] |
-| C5_dimension_Q88 | fail | [substance] * [time] / [length] ** 3 | mumol.h/liter | not captured | not captured | ['Kestell_1990:abstract', 'Kestell_1990:abstract', 'Kestell_1990:abstract', 'Kestell_1990:abstract'] |
+| C5_dimension_Q88 | fail | [substance] * [time] / [length] ** 3 | mumol.h/liter | not captured | not captured | ['Kestell_1990:abstract', 'Kestell_1990:abstract', 'Kestell_1990:abstract', 'Kestell_1990:abstract', 'Kestell_1990:abstract', 'Kestell_1990:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q65 | pass | volume within physiological range | 231 L | not captured | not captured | ['Kestell_1990:abstract'] |
 
@@ -117,7 +115,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_amsacrine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kestell_1990` / `Kestell_1990::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_amsacrine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kestell_1990` / `Kestell_1990::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -133,4 +131,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 22:59 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 04:15 UTC</sub>

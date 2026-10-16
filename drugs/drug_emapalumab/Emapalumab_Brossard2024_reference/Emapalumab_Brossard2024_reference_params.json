@@ -1,0 +1,35 @@
+{
+ "dose_source": "paper",
+ "model_id": "Emapalumab_Brossard2024_reference",
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  70.0,
+  210.0,
+  420.0,
+  700.0
+ ],
+ "parameters": {
+  "Cl": 2.4333333333333336e-09,
+  "F": 1.0,
+  "VdPerKg": 5.814285714285715e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 7e-05,
+  "k12": 5.555555555555554e-06,
+  "k21": 5.3708102401689096e-06,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662069
+ },
+ "reference_peaks": {
+  "central.C": 0.011819982630178628
+ },
+ "stop_time": 6048000.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06D&quot;,&quot;href&quot;:&quot;atc/N06D.md&quot;},{&quot;label&quot;:&quot;lecanemab&quot;,&quot;href&quot;:&quot;drugs/drug_lecanemab/&quot;},{&quot;label&quot;:&quot;Hayato_2022 \u00b7 PD plasma A\u03b242/40 ratio&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06D&quot;,&quot;href&quot;:&quot;atc/N06D.md&quot;},{&quot;label&quot;:&quot;lecanemab&quot;,&quot;href&quot;:&quot;drugs/drug_lecanemab/&quot;},{&quot;label&quot;:&quot;Hayato_2022 \u00b7 PD Plasma A\u03b242/40 ratio&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# plasma Aβ42/40 ratio — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+# Plasma Aβ42/40 ratio — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -13,13 +13,13 @@
 
 ## Record summary
 
-**As extracted:** Lecanemab (concentrations from this paper's PK model) drives plasma Aβ42/40 ratio: indirect response — drug stimulates the production of plasma Aβ42/40 ratio.
+**As extracted:** Lecanemab (concentrations from this paper's PK model) drives Plasma Aβ42/40 ratio: indirect response — drug stimulates the production of Plasma Aβ42/40 ratio.
 
 **Model:** No model was generated from this record.
 
-> Lecanemab plasma concentrations (μg/ml) act on the plasma Aβ42/40 ratio via an indirect response model in which lecanemab exposure, as a linear (proportional) function, stimulates the production (formation) rate of the ratio, increasing it from a baseline of 0.0842; the paper does not state Imax/IC50/EC50/Emax or ke0 for this endpoint, giving a Kout of 0.367 1/year and a linear slope of 0.00155 1/(μg/ml).
+> Lecanemab plasma concentrations drive a proportional increase in the production rate of the plasma Aβ42/40 ratio using a linear effect function (indirect response model III). The population parameters include a baseline ratio of 0.0842, a $K_{out}$ of 0.367 1/year, and a slope of 0.00155 1/μg/ml.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Hayato_2022`
 - **model family:** `indirect_response_iii`
@@ -37,8 +37,6 @@ Hayato S et al., Population pharmacokinetic-pharmacodyna…, CPT: pharmacometric
 | PD (effect) | Baseline plasma Aβ42/40 ratio | `Q324` · not captured | 0.0842 | not captured | not captured | llm (not captured) | Hayato_2022:pdv3 |
 | PD (effect) | K out | `Q328` · not captured | 0.367 | 1/year | not captured | llm (not captured) | Hayato_2022:pdv3 |
 | PD (effect) | Slope | `Q335` · not captured | 0.00155 | 1/μg/ml | not captured | llm (not captured) | Hayato_2022:pdv3 |
-| variability | Baseline IIV | `Q312` · not captured | 6.78 | CV% | not captured | llm (not captured) | Hayato_2022:pdv3 |
-| variability | Slope IIV | `Q312` · not captured | 44.1 | CV% | not captured | llm (not captured) | Hayato_2022:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -47,7 +45,7 @@ Hayato S et al., Population pharmacokinetic-pharmacodyna…, CPT: pharmacometric
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|

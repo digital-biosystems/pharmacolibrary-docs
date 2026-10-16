@@ -23,7 +23,7 @@
 
 Without a unit the value cannot be converted, so the model cannot use it. Extracted — polymyxin b: kabs 14.7, CL 0.437, V1 0.74, V2 0.743, Q 0.315, fu 0.166.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has polymyxin_b, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has polymyxin_b, the second reading polymyxin B; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -92,9 +92,9 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | `gpt-oss-120b` | `parameters[bmax: maximum bacterial count reached in the tissue]` | not captured | 8.00 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[knet: apparent growth rate constant]` | not captured | 0.594 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[theta_q325_weight_power]` | not captured | 0.162 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta_q47_category]` | not captured | 1.00 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | polymyxin_b | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | polymyxin_b | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[theta_q335_category]` | not captured | 1.00 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | polymyxin_b | polymyxin B | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | polymyxin_b | polymyxin B | mismatch |
 | `gpt-oss:120b` | `parameters[amount in the subcutaneous compartment that produces 50% of the maximum absorption rate]` | not captured | 2.24 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[bmax: maximum bacterial count reached in the tissue]` | not captured | 8.00 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[theta_q325_weight_power]` | not captured | 0.162 | only_one_extracted |
@@ -135,7 +135,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_polymyxin_b/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Chauzy_2022` / `Chauzy_2022::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_polymyxin_b/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Chauzy_2022` / `Chauzy_2022::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

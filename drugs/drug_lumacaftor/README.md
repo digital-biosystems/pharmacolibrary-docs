@@ -28,15 +28,15 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Beuschlein_2024_FEV1](drugs/drug_lumacaftor/pd_Beuschlein_2024_FEV1.md) | lung function ← lumacaftor · direct Emax (saturable) effect | — | Beuschlein F et al., European Society of Endocrinology and E…, The Journal of clinical end… (2024) | [10.1210/clinem/dgae250](https://doi.org/10.1210/clinem/dgae250) |
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Beuschlein_2024_PPA](drugs/drug_lumacaftor/pd_Beuschlein_2024_PPA.md) | plasma protein A ← lumacaftor · direct Emax (saturable) effect | — | Beuschlein F et al., European Society of Endocrinology and E…, The Journal of clinical end… (2024) | [10.1210/clinem/dgae250](https://doi.org/10.1210/clinem/dgae250) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Hanafin_2021_none](drugs/drug_lumacaftor/pd_Hanafin_2021_none.md) | none ← none · model not identified | — | Hanafin PO et al., Insights Into Patient Variability Durin…, Frontiers in pharmacology (2021) | [10.3389/fphar.2021.577263](https://doi.org/10.3389/fphar.2021.577263) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Beuschlein_2024_FEV1](drugs/drug_lumacaftor/pd_Beuschlein_2024_FEV1.md) | lung function ← lumacaftor · direct Emax (saturable) effect | — | Beuschlein F et al., European Society of Endocrinology and E…, The Journal of clinical end… (2024) | [10.1210/clinem/dgae250](https://doi.org/10.1210/clinem/dgae250) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Beuschlein_2024_PPA](drugs/drug_lumacaftor/pd_Beuschlein_2024_PPA.md) | plasma protein A ← lumacaftor · direct Emax (saturable) effect | — | Beuschlein F et al., European Society of Endocrinology and E…, The Journal of clinical end… (2024) | [10.1210/clinem/dgae250](https://doi.org/10.1210/clinem/dgae250) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Hanafin_2021_none](drugs/drug_lumacaftor/pd_Hanafin_2021_none.md) | none ← none · model not identified | — | Hanafin PO et al., Insights Into Patient Variability Durin…, Frontiers in pharmacology (2021) | [10.3389/fphar.2021.577263](https://doi.org/10.3389/fphar.2021.577263) |
 
 ## Pharmacogenomics (PGx)
 
 | status | gene | affects | mechanism | detail | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> | **CFTR** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | target | [Efremova_2024](drugs/drug_lumacaftor/pgx_Efremova_2024_CFTR_Q100.md) | Efremova A et al., Estimation of Chloride Channel Residual…, International journal of mo… (2024) | [10.3390/ijms251910424](https://doi.org/10.3390/ijms251910424) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (?, agreement 0.25). Primary extraction retained.">cross-check: partial</span> | **CFTR** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | target | [Efremova_2024](drugs/drug_lumacaftor/pgx_Efremova_2024_CFTR_Q100.md) | Efremova A et al., Estimation of Chloride Channel Residual…, International journal of mo… (2024) | [10.3390/ijms251910424](https://doi.org/10.3390/ijms251910424) |
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -44,6 +44,26 @@ _not available_
 <summary>PGx field definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=lumacaftor).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inducer/inhibitor | DrugBank actor |
+| absorption | kidney | `ABCB1` inducer/inhibitor | DrugBank actor |
+| absorption | liver | `ABCB1` inducer/inhibitor | DrugBank actor |
+| absorption | placenta | `ABCB1` inducer/inhibitor | DrugBank actor |
+| absorption | small intestine | `ABCB1` inducer/inhibitor | DrugBank actor |
+| absorption | testis | `ABCB1` inducer/inhibitor | DrugBank actor |
+| distribution | blood | `ALB` carrier | DrugBank actor |
+| metabolism | liver | `CYP2B6` inducer, `CYP2C19` inducer, `CYP2C8` inducer/inhibitor, `CYP2C9` inducer/inhibitor, `CYP3A4` inducer | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inducer | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: CFTR (modulator), CFTR (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

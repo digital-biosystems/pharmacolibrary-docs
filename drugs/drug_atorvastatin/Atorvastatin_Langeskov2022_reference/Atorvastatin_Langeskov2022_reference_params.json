@@ -1,0 +1,41 @@
+{
+ "dose_source": "paper",
+ "model_id": "Atorvastatin_Langeskov2022_reference",
+ "molar_masses": {
+  "central.C": 0.5586398
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  0.25,
+  0.5,
+  1.0,
+  1500.0
+ ],
+ "parameters": {
+  "Cl": 0.0001722222222222222,
+  "F": 1.0,
+  "MM": 0.5586398,
+  "Tlag": 576.0,
+  "VdPerKg": 0.026328571428571427,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 2.5e-07,
+  "k12": 0.00013157894736842105,
+  "k21": 5.795889101338432e-05,
+  "ka": 0.0026111111111111114,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 2077.755511022044
+ },
+ "reference_peaks": {
+  "central.C": 1.1491172176164886e-07
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

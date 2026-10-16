@@ -17,15 +17,15 @@
 
 **Model:** No model was generated from this record.
 
-> Free elranatamab exposure (Cave,day28; ng/mL) was positively associated with the probability of complete response in a binomial logistic-regression model, with a log-exposure coefficient of 3.62 and an intercept of −13.2. The paper does not specify a biological mechanism or report potency or response-rate parameters such as IC50, EC50, or Emax.
+> The study models the probability of complete response rate (CRR) as a binary outcome using binomial logistic regression, where the log of the day-28 free elranatamab concentration (ng/mL) acts as the primary driver with a slope of 3.62 and an intercept of -13.2. The paper does not specify a mechanistic pharmacodynamic model (such as an Emax or inhibition of elimination), but notes that higher free drug exposure is associated with a higher probability of response.
 >
-> <sub>Source-based summary by gpt-6-luna from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Lon_2025`
 - **model family:** `categorical`
 - **driver:** `cited_pk`
 - **tier:** population
-- **effect:** stimulation/additive
+- **effect:** stimulation/proportional
 
 ## Citation
 Lon HK et al., Population Exposure-Response Efficacy A…, Targeted oncology (2025)
@@ -34,9 +34,8 @@ Lon HK et al., Population Exposure-Response Efficacy A…, Targeted oncology (20
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| model term | Intercept | `Q900` · not captured | −13.2 | not captured | not captured | llm (not captured) | Lon_2025:pdv3 |
-| model term | Log free (Cave,day28) | `Q900` · not captured | 3.62 | not captured | not captured | llm (not captured) | Lon_2025:pdv3 |
-| model term | With EMD at baseline | `Q900` · not captured | − 0.882 | not captured | not captured | llm (not captured) | Lon_2025:pdv3 |
+| PD (effect) | Log free (Cave,day28) (ng/mL) | `Q335` · not captured | 3.62 | not captured | not captured | llm (not captured) | Lon_2025:pdv3 |
+| — | Intercept | `Q100` · not captured | -13.2 | not captured | not captured | nil (not captured) | Lon_2025:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>

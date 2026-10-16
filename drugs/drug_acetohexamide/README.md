@@ -18,11 +18,23 @@ Acetohexamide is a sulfonylurea blood-glucose-lowering drug that was used to tre
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-04 22:05 | 1:05 | 0/0/0 | 0/0/0 | 0/0/0 | 31,159/1,302 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 4/0 | 5/0 | 0 |
+| 2026-10-13 13:14 | 0:41 | 0/0/0 | 0/0/0 | 0/0/0 | 2,698/273 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 5/0 | 6/0 | 0 |
 
 ## popPK records
 
 _not available_
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=acetohexamide).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| distribution | blood | `ALB` unknown | DrugBank actor |
+| metabolism | liver | `CYP2C9` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ABCC8 (modulator), CBR1 (substrate), KCNJ1 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -32,7 +44,7 @@ _not available_
 
 ## Coverage
 
-- **PubMed hits:** 14 matched, 27 returned
+- **PubMed hits:** 23 matched, 28 returned
 - **screened:** 1  ·  **relevant:** 1
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
@@ -48,12 +60,13 @@ _4 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | `Inoue_1995.pdf` | Inoue Y et al., Characterization of the binding sites f…, European journal of pharmac… (1995) | pd | 4 | [10.1016/0014-2999(95)00368-u](https://doi.org/10.1016/0014-2999(95)00368-u) | [8549639](https://www.ncbi.nlm.nih.gov/pubmed/8549639) | metadata signals extractable PD data (IC50) |
 | `Ortiz-Pérez_2025.pdf` | Ortiz-Pérez E et al., Repositioning FDA-Approved Sulfonamide-…, Pharmaceuticals (Basel, Swi… (2025) | pd | 4 | [10.3390/ph18050669](https://doi.org/10.3390/ph18050669) | [40430488](https://www.ncbi.nlm.nih.gov/pubmed/40430488) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-10-04T22:05:36.962281+00:00</sub>
+<sub>queue written 2026-10-13T13:14:57.627093+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
+| popPK | Asada_1989 | irrelevant | 0 | 0 | The provided evidence contains only software metadata and no scientific content regarding acetohexamide pharmacokinetics. |
 | popPK | Chen_1991 | irrelevant | 0 | 0 | The paper is a simulation study on bioequivalence assessment using metabolite data, and acetohexamide is only mentioned as a real-world example to validate the simulation, with no original PK parameter values reported. |
 | popPK | Ferner_1987 | irrelevant | 0 | 0 | The paper is a review discussing general pharmacokinetic properties and adverse effects of oral hypoglycaemic agents, mentioning acetohexamide only as an example of a drug with renally excreted active metabolites, without reporting any quantitative PK parameters. |
 | PD | Ferner_1987 | not_relevant | 1 | 0 | The text is a qualitative review discussing general PK/PD concepts and adverse effects of sulfonylureas, including acetohexamide, but provides no numeric PD parameters, concentration-effect curves, or specific dose-response data. |

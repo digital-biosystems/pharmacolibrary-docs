@@ -26,14 +26,36 @@ Galantamine is an acetylcholinesterase inhibitor used to treat Alzheimer's disea
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 02:02 | 6:04 | 0/2/0 | 0/0/0 | 0/0/0 | 364,784/25,381 | ollama / glm-5.3-flash | 9 | 0/9 | 9/0 | 0 |
+| 2026-10-13 13:27 | 1:31 | 0/2/0 | 0/0/0 | 0/0/0 | 112,775/5,442 | einfracz / qwen3.8-27b | 9 | 0/9 | 9/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.154). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Mihailova_1986_reference](drugs/drug_galantamine/Galantamine_Mihailova1986_reference.md) | — | 1-compartment (no model) | 0 | Mihailova D et al., Pharmacokinetics of galanthamine hydrob…, Pharmacology (1986) | [10.1159/000138184](https://doi.org/10.1159/000138184) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Piotrovsky_2003_reference](drugs/drug_galantamine/Galantamine_Piotrovsky2003_reference.md) | — | 1-compartment (no model) | 2 | Piotrovsky V et al., Galantamine population pharmacokinetics…, Journal of clinical pharmac… (2003) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Piotrovsky_2003_reference](drugs/drug_galantamine/Galantamine_Piotrovsky2003_reference.md) | — | 1-compartment (no model) | 2 | Piotrovsky V et al., Galantamine population pharmacokinetics…, Journal of clinical pharmac… (2003) | — |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=galantamine).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inhibitor | DrugBank actor |
+| absorption | kidney | `ABCB1` inhibitor | DrugBank actor |
+| absorption | liver | `ABCB1` inhibitor | DrugBank actor |
+| absorption | placenta | `ABCB1` inhibitor | DrugBank actor |
+| absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
+| absorption | testis | `ABCB1` inhibitor | DrugBank actor |
+| metabolism | blood | `BCHE` inhibitor | DrugBank actor |
+| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
+| metabolism | liver | `BCHE` inhibitor, `CYP2D6` substrate, `CYP3A4` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| — | blood | `ACHE` inhibitor | DrugBank actor |
+| — | neuromuscular junction | `ACHE` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: CHRNA7 (allosteric modulator), Muscle nicotinic acetylcholine receptor (allosteric modulator).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -58,7 +80,7 @@ _3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | `Mihailova_1986.pdf` | Mihailova D et al., Pharmacokinetics of galanthamine hydrob…, Pharmacology (1986) | popPK | 9 | [10.1159/000138184](https://doi.org/10.1159/000138184) | [3725886](https://pubmed.ncbi.nlm.nih.gov/3725886) | Original PK study in rats reporting t½, Vd, CL, and bioavailability values directly in the abstract. |
 | `Hing_2005.pdf` | Hing JP et al., Pharmacokinetic simulation for switchin…, Current medical research an… (2005) | popPK | 7 | [10.1185/030079905X38213](https://doi.org/10.1185/030079905X38213) | [15899095](https://pubmed.ncbi.nlm.nih.gov/15899095) | Population PK simulation for galantamine IR/ER in AD patients, but numeric model parameters (CL, V, ka) are not shown in the abstract, likely in figures/supplementary material. |
 
-<sub>queue written 2026-10-07T01:56:56.673743+00:00</sub>
+<sub>queue written 2026-10-13T13:25:30.290435+00:00</sub>
 
 ## Screened and excluded
 

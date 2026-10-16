@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B06A&quot;,&quot;href&quot;:&quot;atc/B06A.md&quot;},{&quot;label&quot;:&quot;c1-inhibitor, plasma derived&quot;,&quot;href&quot;:&quot;drugs/drug_c1_inhibitor_plasma_derived/&quot;},{&quot;label&quot;:&quot;Pawaskar_2018 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;C1InhibitorPlasmaDerived_Pawaskar2018_reference&quot;,&quot;label&quot;:&quot;Pawaskar_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_c1_inhibitor_plasma_derived/C1InhibitorPlasmaDerived_Pawaskar2018_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;C1InhibitorPlasmaDerived_Pawaskar2018_reference&quot;,&quot;label&quot;:&quot;Pawaskar_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_c1_inhibitor_plasma_derived/C1InhibitorPlasmaDerived_Pawaskar2018_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # c1-inhibitor, plasma derived — `C1InhibitorPlasmaDerived_Pawaskar2018_reference`
 
-> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.176). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.176). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -27,15 +27,13 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `accepted_with_caveats` (reviewed 2026-09-28 14:36:22.920664+00:00) predates the upstream re-run (2026-10-06 00:58:40.520895+00:00). Current validate status: `extracted`.
-
-> **Dose compound ≠ measured compound:** dosed `C1-inhibitor (SC)`, measured `C1-INH functional activity`.
+> **Dose compound ≠ measured compound:** dosed `C1-inhibitor (SC)`, measured `C1-inhibitor functional activity`.
 
 ## Citation
 Pawaskar D et al., Population pharmacokinetics of subcutan…, Clinical and experimental a… (2018)
   ·  DOI: [10.1111/cea.13220](https://doi.org/10.1111/cea.13220)
 
-<div class="pk-model-meta" hidden drug="c1-inhibitor, plasma derived" model-id="C1InhibitorPlasmaDerived_Pawaskar2018_reference" status="extracted" stale="true" population="healthy volunteers and HAE patients" measured-compound="C1-INH functional activity" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="c1-inhibitor, plasma derived" model-id="C1InhibitorPlasmaDerived_Pawaskar2018_reference" status="accepted_with_caveats" stale="false" population="healthy volunteers and subjects with hereditary angioedema" measured-compound="C1-inhibitor functional activity" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 6 extracted.
@@ -64,12 +62,12 @@ Pawaskar D et al., Population pharmacokinetics of subcutan…, Clinical and expe
 
 **Interpretation flags:**
 - covariate bodyweight for CL from footnote/prose kept as documentation only (['Pawaskar_2018:abstract'])
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=C1-INH functional activity
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=C1-inhibitor functional activity
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
-- molar mass: no plausible PubChem entry for 'C1-INH functional activity' ('C1-INH functional activity') — left in mass units
+- molar mass: no plausible PubChem entry for 'C1-inhibitor functional activity' ('C1-inhibitor functional activity') — left in mass units
 - molar mass: none found for 'c1_inhibitor_plasma_derived' — its concentrations stay mass-only
-- molar mass: none found for 'C1-INH functional activity' — its concentrations stay mass-only
+- molar mass: none found for 'C1-inhibitor functional activity' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
@@ -149,10 +147,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_c1_inhibitor_plasma_derived/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Pawaskar_2018` / `Pawaskar_2018::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_c1_inhibitor_plasma_derived/models/modelica/C1InhibitorPlasmaDerived_Pawaskar2018_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_c1_inhibitor_plasma_derived/models/modelica/C1InhibitorPlasmaDerived_Pawaskar2018_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_c1_inhibitor_plasma_derived/models/modelica/C1InhibitorPlasmaDerived_Pawaskar2018_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_c1_inhibitor_plasma_derived/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Pawaskar_2018` / `Pawaskar_2018::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_c1_inhibitor_plasma_derived/models/modelica/C1InhibitorPlasmaDerived_Pawaskar2018_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_c1_inhibitor_plasma_derived/models/modelica/C1InhibitorPlasmaDerived_Pawaskar2018_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_c1_inhibitor_plasma_derived/models/modelica/C1InhibitorPlasmaDerived_Pawaskar2018_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -170,7 +168,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_c1_inhibitor_plasma_derived/C1InhibitorPlasmaDerived_Pawaskar2018_reference/C1InhibitorPlasmaDerived_Pawaskar2018_reference.svg" alt="C1InhibitorPlasmaDerived_Pawaskar2018_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_c1_inhibitor_plasma_derived/C1InhibitorPlasmaDerived_Pawaskar2018_reference/C1InhibitorPlasmaDerived_Pawaskar2018_reference.svg" alt="C1InhibitorPlasmaDerived_Pawaskar2018_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -183,4 +181,4 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 00:58 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 21:35 UTC</sub>

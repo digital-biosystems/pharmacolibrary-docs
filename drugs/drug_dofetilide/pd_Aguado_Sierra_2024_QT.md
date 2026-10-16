@@ -1,7 +1,8 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;dofetilide&quot;,&quot;href&quot;:&quot;drugs/drug_dofetilide/&quot;},{&quot;label&quot;:&quot;Aguado-Sierra_2024 \u00b7 PD QT interval&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dofetilide_Jonker2005_basic_pharmacokinetic_model&quot;,&quot;label&quot;:&quot;Jonker_2005_basic_pharmacokinetic_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dofetilide/Dofetilide_Jonker2005_basic_pharmacokinetic_model.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dofetilide_Tunblad2008_base&quot;,&quot;label&quot;:&quot;Tunblad_2008_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dofetilide/Dofetilide_Tunblad2008_base.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dofetilide_Tunblad2008_final&quot;,&quot;label&quot;:&quot;Tunblad_2008_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dofetilide/Dofetilide_Tunblad2008_final.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dofetilide_Ollerstam2006_reference&quot;,&quot;label&quot;:&quot;Ollerstam_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dofetilide/Dofetilide_Ollerstam2006_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Le_1995_QTc&quot;,&quot;label&quot;:&quot;Le_1995 \u00b7 QTc&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dofetilide/pd_Le_1995_QTc.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Gotta_2015_QTc&quot;,&quot;label&quot;:&quot;Gotta_2015 \u00b7 QTc&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dofetilide/pd_Gotta_2015_QTc.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Ollerstam_2006_QTc&quot;,&quot;label&quot;:&quot;Ollerstam_2006 \u00b7 QTc&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dofetilide/pd_Ollerstam_2006_QTc.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# QT interval — PD  <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+# QT interval — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by ollama:gpt-oss:120b (not confirmed, agreement 0.571), einfracz:gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-check: disputed 1/2</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -13,11 +14,11 @@
 
 ## Record summary
 
-**As extracted:** Dofetilide (concentrations from the PK model of Gotta_2015) drives QT interval (in ms): direct linear effect.
+**As extracted:** Dofetilide (concentrations from the PK model of Gotta_2015::dofetilide_estimate_rse) drives QT interval (in ms): direct linear effect.
 
-**Model:** No model was generated from this record.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
-> The paper describes a linear mixed-effect concentration-QT model where dofetilide plasma concentrations (ng/mL) linearly stimulate the QT interval (ms) with an additive effect, characterized by a slope of 24.82 and an intercept of 0.67. The provided excerpts do not specify the underlying physiological mechanism (e.g., ion channel blockade) or potency parameters (IC50/EC50) for dofetilide, focusing instead on the statistical regression of the concentration-response relationship.
+> The paper describes a linear mixed-effect concentration-QT model where dofetilide plasma concentrations (ng/mL) linearly stimulate the QT interval (ms) with an additive effect, characterized by a slope of 24.82 and an intercept of 0.67. The provided excerpts do not specify the underlying physiological mechanism (e.g., ion channel blockade) or potency parameters such as IC50 or Emax for this specific linear fit.
 >
 > <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
 
@@ -35,7 +36,7 @@ Aguado-Sierra J et al., Virtual clinical QT exposure-response s…, Journal of p
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
 | PD (effect) | Slope | `Q335` · not captured | 24.82 | not captured | not captured | llm (not captured) | Aguado-Sierra_2024:pdv3 |
-| PD (effect) | Intercept | `Q324` · not captured | 0.67 | not captured | not captured | llm (not captured) | Aguado-Sierra_2024:pdv3 |
+| model term | Intercept | `Q900` · not captured | 0.67 | not captured | not captured | llm (not captured) | Aguado-Sierra_2024:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -43,14 +44,56 @@ Aguado-Sierra J et al., Virtual clinical QT exposure-response s…, Journal of p
 </details>
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+## Exposure-response model
+
+`Dofetilide_AguadoSierra2024_PD_qt` — linear, `response = E0 + slope*exposure`
+
+| parameter | value (paper units) | SI |
+|---|---|---|
+| E0 | 0 | — |
+| slope | 24.82 | — |
+
+Closed-form check points (response, SI): `at_0` = 0, `per_exposure_unit` = 24.82
+
+Deviations:
+
+- `defaulted_parameters` — E0
+
+## Review
+
+Verdict <span class="pk-badge pk-badge--orange">needs review</span> · route to `scholar`
+
+| check | status | note |
+|---|---|---|
+| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
+| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
+| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
+| `T2_direction` | skipped | a line has no plateau to compare |
+| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
+| `T4_defaults` | fail | a core parameter took a library default: E0 |
+
+Advisory:
+
+- defaulted: E0 — a row the paper has and the record lacks
+
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  1 of 2 readers agree  
 Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `ollama:gpt-oss:120b` | not confirmed | 0.571 (4/7 fields) | 3 |
 | `einfracz:gpt-oss-120b` | confirmed | 1.0 (6/6 fields) | none |
 
-_All readers agree on the compared fields of this PD record._
+<details><summary>3 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `ollama:gpt-oss:120b` | `parameters[Q324]` | not captured | : 0.67 | only_one_extracted |
+| `ollama:gpt-oss:120b` | `parameters[Q335].value` | 24.82 | : 24.82 | mismatch |
+| `ollama:gpt-oss:120b` | `parameters[Q900]` | 0.67 | not captured | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -64,14 +107,14 @@ _All readers agree on the compared fields of this PD record._
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_dofetilide/Dofetilide_AguadoSierra2024_PD_qt/Dofetilide_AguadoSierra2024_PD_qt_modelica.zip" download>Dofetilide_AguadoSierra2024_PD_qt_modelica.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_dofetilide/Dofetilide_AguadoSierra2024_PD_qt/Dofetilide_AguadoSierra2024_PD_qt_matlab.zip" download>Dofetilide_AguadoSierra2024_PD_qt_matlab.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_dofetilide/Dofetilide_AguadoSierra2024_PD_qt/Dofetilide_AguadoSierra2024_PD_qt_sbml.zip" download>Dofetilide_AguadoSierra2024_PD_qt_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_dofetilide/Dofetilide_AguadoSierra2024_PD_qt/Dofetilide_AguadoSierra2024_PD_qt_cellml.zip" download>Dofetilide_AguadoSierra2024_PD_qt_cellml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
 </div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>

@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;tinzaparin&quot;,&quot;href&quot;:&quot;drugs/drug_tinzaparin/&quot;},{&quot;label&quot;:&quot;Gouin-Thibault_2024 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tinzaparin_Barrett2001_reference&quot;,&quot;label&quot;:&quot;Barrett_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tinzaparin/Tinzaparin_Barrett2001_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # tinzaparin — `Tinzaparin_GouinThibault2024_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.727), gpt-oss:120b (not confirmed, agreement 0.727). Primary extraction retained.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.727), gpt-oss:120b (not confirmed, agreement 0.727). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -18,13 +19,11 @@
 
 **The clearance plausibility check could not be computed.**
 
-The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. None of the extracted parameters is tinzaparin's own; they describe tinzaparin anti-Xa. Extracted — tinzaparin anti-Xa: V 3.66e+03 mL, CL 891 mL.h -1.
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. None of the extracted parameters is tinzaparin's own; they describe tinzaparin anti-Xa. Extracted — tinzaparin anti-Xa: kabs 0.079 h -1, V 3.66e+03 mL, CL 891 mL.h -1, allometric_exponent 1.45 25.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has tinzaparin, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
-
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:41:49.551139+00:00) predates the upstream re-run (2026-10-05 16:46:40.781284+00:00). Current validate status: `needs_review`.
 
 > **Dose compound ≠ measured compound:** dosed `tinzaparin`, measured `tinzaparin anti-Xa`.
 
@@ -32,7 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Gouin-Thibault I et al., Tinzaparin, an alternative to subcutane…, Journal of thrombosis and h… (2024)
   ·  DOI: [10.1016/j.jtha.2024.07.006](https://doi.org/10.1016/j.jtha.2024.07.006)
 
-<div class="pk-model-meta" hidden drug="tinzaparin" model-id="Tinzaparin_GouinThibault2024_reference" status="needs_review" stale="true" population="patients with severe and end-stage renal impairment" measured-compound="tinzaparin anti-Xa" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="tinzaparin" model-id="Tinzaparin_GouinThibault2024_reference" status="needs_review" stale="false" population="adults with severe and end-stage renal impairment" measured-compound="tinzaparin anti-Xa" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.
@@ -44,10 +43,10 @@ Gouin-Thibault I et al., Tinzaparin, an alternative to subcutane…, Journal of 
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Ka (h -1 ) | `Q49` · kabs | 0.079 | h -1 | 2.1944444444444445e-05 | [1] / [h] | 12.4 | exact (1.0) | tab_0:row2:col1, tab_0:row2:col2 | — | not captured |
-| V (mL)* | `Q61` · V | 3661 | mL | 0.0036609999999999998 | L | 24.5 | llm (0.6) | tab_0:row3:col1, tab_0:row3:col2 | — | not captured |
-| Cl (mL.h -1 )* | `Q22` · CL | 891 | mL/h | 2.475e-07 | L/h | 3.7 | llm_confirmed (0.6) | tab_0:row4:col1, tab_0:row4:col2 | — | not captured |
-| 𝛽 𝐵𝑊 𝑉 | `Q319` · allometric_exponent | 1.45 | not captured | not captured | not captured | 35.1 | llm (0.6) | tab_0:row6:col1, tab_0:row6:col2 | — | not captured |
+| Ka (h -1 ) | `Q49` · kabs | 0.079 | h -1 | 2.1944444444444445e-05 | [1] / [h] | 12.4 | exact (1.0) | tab_0:row2:col1 | — | not captured |
+| V (mL)* | `Q61` · V | 3661 | mL | 0.0036609999999999998 | [ml] | 24.5 | llm (0.6) | tab_0:row3:col1 | — | not captured |
+| Cl (mL.h -1 )* | `Q22` · CL | 891 | mL.h -1 | 2.475e-07 | [ml] / [h] | 3.7 | llm_confirmed (0.6) | tab_0:row4:col1 | — | not captured |
+| 𝛽 𝐵𝑊 𝑉 | `Q319` · allometric_exponent | 1.45 | 25 | not captured | [25] | 35.1 | llm_corrected (0.6) | tab_0:row6:col1 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -59,10 +58,8 @@ Gouin-Thibault I et al., Tinzaparin, an alternative to subcutane…, Journal of 
 **Interpretation flags:**
 - table section residual_error: 'Proportional (%)' routed out of structural estimates ('Residual error model')
 - dropped duplicate Q319 ('𝛽 𝐵𝑊 𝐶𝑙', value '0.87') — already have one for this compound
-- dropped value-less row: '𝜼 𝑽'
-- dropped value-less row: '𝜼 𝑪𝒍'
-- implicit units: 'V (mL)*' → mL (from the paper text: "The paper text states: 'Mean values were 0.079 h -1 , 3661 mL, 891 mL.h -1 for constant of absorption, volume of distrib")
-- implicit units: 'Cl (mL.h -1 )*' → mL/h (from the paper text: "The paper text states: 'Mean values were 0.079 h -1 , 3661 mL, 891 mL.h -1 for constant of absorption, volume of distrib")
+- dropped duplicate Q319 ('𝜼 𝑽', value '128') — already have one for this compound
+- routed '𝜼 𝑪𝒍' → Q315 (sigma) to residual_error — variability estimate, not a structural parameter
 - apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q61 (V (mL)*); Q22 (Cl (mL.h -1 )*)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=tinzaparin anti-Xa
 - molar mass: no plausible PubChem entry for 'tinzaparin anti-Xa' ('tinzaparin') — left in mass units
@@ -70,8 +67,7 @@ Gouin-Thibault I et al., Tinzaparin, an alternative to subcutane…, Journal of 
 - molar mass: none found for 'tinzaparin anti-Xa' — its concentrations stay mass-only
 
 **Extraction notes:**
-- unparsed cell tab_0:row9:col1 = '128% (11.6)'
-- unparsed cell tab_0:row10:col1 = '42% (6.9)'
+- table tab_0: unbound_uncertainty
 
 ## Validation
 
@@ -109,13 +105,13 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_0:row4:col1', 'tab_0:row4:col2'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['tab_0:row2:col1', 'tab_0:row2:col2'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_0:row3:col1', 'tab_0:row3:col2'] |
-| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 891.0 | not captured | not captured | ['tab_0:row4:col1', 'tab_0:row4:col2'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_0:row4:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['tab_0:row2:col1'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_0:row3:col1'] |
+| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 891.0 | not captured | not captured | ['tab_0:row4:col1'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.891 L/h | not captured | not captured | ['tab_0:row4:col1', 'tab_0:row4:col2'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 3.66 L | not captured | not captured | ['tab_0:row3:col1', 'tab_0:row3:col2'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.891 L/h | not captured | not captured | ['tab_0:row4:col1'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 3.66 L | not captured | not captured | ['tab_0:row3:col1'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -124,7 +120,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_tinzaparin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Gouin-Thibault_2024` / `Gouin-Thibault_2024::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_tinzaparin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Gouin-Thibault_2024` / `Gouin-Thibault_2024::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -150,4 +146,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 16:46 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 18:24 UTC</sub>

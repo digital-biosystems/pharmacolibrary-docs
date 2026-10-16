@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;durvalumab&quot;,&quot;href&quot;:&quot;drugs/drug_durvalumab/&quot;},{&quot;label&quot;:&quot;Zhao_2026 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Durvalumab_Zhao2026_reference&quot;,&quot;label&quot;:&quot;Zhao_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_durvalumab/Durvalumab_Zhao2026_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Durvalumab_Abegesah2025_reference&quot;,&quot;label&quot;:&quot;Abegesah_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_durvalumab/Durvalumab_Abegesah2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Durvalumab_Zhao2026_reference&quot;,&quot;label&quot;:&quot;Zhao_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_durvalumab/Durvalumab_Zhao2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Durvalumab_Abegesah2025_reference&quot;,&quot;label&quot;:&quot;Abegesah_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_durvalumab/Durvalumab_Abegesah2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # durvalumab — `Durvalumab_Zhao2026_reference`
 
-> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.583). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.583). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -15,13 +15,11 @@
 
 **Model:** Model and browser simulation available in **Models** and **Simulation**.
 
-> **Caveat** (`covariates_not_exercised`): Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.
-
 ### Reviewer guidance
 
-**Accepted with a caveat: the covariate scenarios were not simulated.**
+**Every check that could be run on this record passed.**
 
-The base model was simulated, not the covariate effects the record defines.
+A reported unit could not be converted (equation variable), so that value has no SI equivalent.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has durvalumab, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -31,26 +29,21 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which co
 Zhao X et al., Population pharmacokinetics and exposur…, British journal of clinical… (2026)
   ·  DOI: [10.1002/bcp.70287](https://doi.org/10.1002/bcp.70287)
 
-<div class="pk-model-meta" hidden drug="durvalumab" model-id="Durvalumab_Zhao2026_reference" status="accepted_with_caveats" stale="false" population="Patients with urothelial carcinoma, NSCLC, SCLC and other solid tumours in the pooled PopPK dataset, including patients with resectable NSCLC" measured-compound="durvalumab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="durvalumab" model-id="Durvalumab_Zhao2026_reference" status="curated_candidate" stale="false" population="patients with resectable stage II to IIIB (N2) NSCLC" measured-compound="durvalumab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
-**Parameters:** 4 extracted, plus 6 covariate effects.
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL | `Q22` · CL | 0.285 | L/day | 3.298611111111111e-09 | L/h | 1.68 | exact (1.0) | bcp70287-tbl-0003:row2:col1, bcp70287-tbl-0003:row2:col2, bcp70287-tbl-0003:row2:col3 | — | 0.0845 (None% RSE) |
-| V1 | `Q63` · V1 | 3.42 | L | 0.00342 | L | 0.962 | exact (1.0) | bcp70287-tbl-0003:row3:col1, bcp70287-tbl-0003:row3:col2, bcp70287-tbl-0003:row3:col3 | — | 0.0563 (None% RSE) |
-| V2 | `Q64` · V2 | 2.30 | L | 0.0023 | L | 2.09 | exact (1.0) | bcp70287-tbl-0003:row4:col1, bcp70287-tbl-0003:row4:col2, bcp70287-tbl-0003:row4:col3 | — | not captured |
-| Qintercompartmental | `Q30` · Q | 0.381 | L/h | 1.0583333333333333e-07 | L/h | 4.90 | llm (0.6) | bcp70287-tbl-0003:row5:col1, bcp70287-tbl-0003:row5:col2, bcp70287-tbl-0003:row5:col3 | — | not captured |
-| albumin_on_cl | `Q900` · albumin_on_cl | -0.537 | not captured | not captured | not captured | 2.88 | not captured (not captured) | bcp70287-tbl-0003:row10:col1, bcp70287-tbl-0003:row10:col2, bcp70287-tbl-0003:row10:col3 | — | not captured |
-| sex_on_v1 | `Q900` · sex_on_v1 | -0.143 | not captured | not captured | not captured | 8.27 | not captured (not captured) | bcp70287-tbl-0003:row17:col1, bcp70287-tbl-0003:row17:col2, bcp70287-tbl-0003:row17:col3 | — | not captured |
-| theta_cl_creatinine | `Q900` · theta_cl_creatinine | 0.111 | not captured | not captured | not captured | 19.1 | not captured (not captured) | bcp70287-tbl-0003:row11:col1, bcp70287-tbl-0003:row11:col2, bcp70287-tbl-0003:row11:col3 | — | not captured |
-| theta_cl_sex | `Q900` · theta_cl_sex | -0.165 | not captured | not captured | not captured | 7.40 | not captured (not captured) | bcp70287-tbl-0003:row13:col1, bcp70287-tbl-0003:row13:col2, bcp70287-tbl-0003:row13:col3 | — | not captured |
-| theta_q319_bodyweight | `Q900` · theta_q319_bodyweight | 0.382 | not captured | not captured | not captured | 9.31 | not captured (not captured) | bcp70287-tbl-0003:row16:col1, bcp70287-tbl-0003:row16:col2, bcp70287-tbl-0003:row16:col3 | — | not captured |
-| theta_q319_bodyweight | `Q900` · theta_q319_bodyweight | 0.502 | not captured | not captured | not captured | 5.73 | not captured (not captured) | bcp70287-tbl-0003:row18:col1, bcp70287-tbl-0003:row18:col2, bcp70287-tbl-0003:row18:col3 | — | not captured |
+| CL | `Q22` · CL | 0.285 | L/day | 3.298611111111111e-09 | [l] / [d] | 1.68 | exact (1.0) | bcp70287-tbl-0003:row2:col1 | — | 0.0845 (3.43% RSE) |
+| V1 | `Q63` · V1 | 3.42 | L | 0.00342 | [l] | 0.962 | exact (1.0) | bcp70287-tbl-0003:row3:col1 | — | 0.0563 (3.74% RSE) |
+| V2 | `Q64` · V2 | 2.30 | L | 0.0023 | [l] | 2.09 | exact (1.0) | bcp70287-tbl-0003:row4:col1 | — | not captured |
+| Qintercompartmental | `Q30` · Q | 0.381 | L/day | 4.409722222222222e-09 | [l] / [d] | 4.90 | llm (0.6) | bcp70287-tbl-0003:row5:col1 | — | not captured |
+| COMB1 on CL | `Q900` · equation variable | -0.0701 | ‐ | not captured | [‐] | 17.9 | llm_corrected (0.6) | bcp70287-tbl-0003:row14:col1 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -66,44 +59,25 @@ Zhao X et al., Population pharmacokinetics and exposur…, British journal of cl
 - table section iiv: 'ETA T max' routed out of structural estimates ('Interindividual variability')
 - table section residual_error: 'Proportional component' routed out of structural estimates ('Residual variability')
 - table section residual_error: 'Additive component' routed out of structural estimates ('Residual variability')
-- dropped duplicate Q22 ('T max change CL', value '-0.414') — already have one for this compound
-- dropped duplicate Q22 ('TC50 change CL', value '47.4') — already have one for this compound
-- dropped duplicate Q22 ('LAM change CL', value '1.00') — already have one for this compound
-- covariate level 'Albumin on CL' → Q900:albumin_on_cl = -0.537 (linear_fractional on Q22)
-- dropped unlinked row (NIL): 'ECOG status on CL' — extend the ontology if this is a real PK parameter (source ['bcp70287-tbl-0003:row12:col1', 'bcp70287-tbl-0003:row12:col2', 'bcp70287-tbl-0003:row12:col3'])
-- dropped duplicate Q22 ('COMB1 on CL', value '-0.0694') — already have one for this compound
-- dropped duplicate Q22 ('COMB 2 on CL', value '-0.0561') — already have one for this compound
-- covariate level 'Sex on V1' → Q900:sex_on_v1 = -0.143 (linear_fractional on Q22)
-- covariate effect for Q319 has no base parameter row (kept as unattached equation-variable)
-- implicit units: 'CL' → L/day (from the paper text: 'The text states that the typical parameter estimate for clearance was “0.285 L/day.”')
-- implicit units: 'V1' → L (from the paper text: 'The text states that the typical parameter estimate for central volume of distribution was “3.42 L.”')
-- implicit units: 'V2' → L (from the paper text: 'The text states that the typical parameter estimate for peripheral volume of distribution was “2.30 L.”')
-- implicit units: 'Qintercompartmental' → L/h (from the popPK convention: 'No unit is stated for Qintercompartmental. Intercompartmental clearances are conventionally expressed in L/h.')
+- dropped duplicate Q22 ('T max change CL', value '-0.412') — already have one for this compound
+- unit_dimension_mismatch: 'TC50 change CL' → Q22 (unit '[time]' vs ontology '[length] ** 3 / [time]') — route to review
+- dropped duplicate Q22 ('TC50 change CL', value '48.0') — already have one for this compound
+- dropped unlinked row (NIL): 'LAM change CL' — extend the ontology if this is a real PK parameter (source ['bcp70287-tbl-0003:row8:col1'])
+- dropped unlinked row (NIL): 'Albumin on CL' — extend the ontology if this is a real PK parameter (source ['bcp70287-tbl-0003:row10:col1'])
+- dropped unlinked row (NIL): 'Creatinine clearance on CL' — extend the ontology if this is a real PK parameter (source ['bcp70287-tbl-0003:row11:col1'])
+- dropped unlinked row (NIL): 'ECOG status on CL' — extend the ontology if this is a real PK parameter (source ['bcp70287-tbl-0003:row12:col1'])
+- dropped unlinked row (NIL): 'Sex on CL' — extend the ontology if this is a real PK parameter (source ['bcp70287-tbl-0003:row13:col1'])
+- unit_dimension_unknown: '‐' (equation variable)
+- dropped unlinked row (NIL): 'COMB 2 on CL' — extend the ontology if this is a real PK parameter (source ['bcp70287-tbl-0003:row15:col1'])
+- dropped unlinked row (NIL): 'Bodyweight on CL' — extend the ontology if this is a real PK parameter (source ['bcp70287-tbl-0003:row16:col1'])
+- dropped unlinked row (NIL): 'Sex on V1' — extend the ontology if this is a real PK parameter (source ['bcp70287-tbl-0003:row17:col1'])
+- dropped unlinked row (NIL): 'Bodyweight on V1' — extend the ontology if this is a real PK parameter (source ['bcp70287-tbl-0003:row18:col1'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=durvalumab
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at route_to_review — not promoted
 - molar mass: none found for 'durvalumab' — its concentrations stay mass-only
 
 **Extraction notes:**
-- unparsed cell bcp70287-tbl-0003:row2:col4 = '[0.270; 0.303]'
-- unparsed cell bcp70287-tbl-0003:row3:col4 = '[3.38; 3.48]'
-- unparsed cell bcp70287-tbl-0003:row4:col4 = '[2.15; 2.44]'
-- unparsed cell bcp70287-tbl-0003:row5:col4 = '[0.297; 0.465]'
-- unparsed cell bcp70287-tbl-0003:row6:col4 = '[−0.465; −0.360]'
-- unparsed cell bcp70287-tbl-0003:row7:col4 = '[32.8; 71.9]'
-- unparsed cell bcp70287-tbl-0003:row10:col4 = '[−0.776; −0.389]'
-- unparsed cell bcp70287-tbl-0003:row11:col4 = '[0.0699; 0.153]'
-- unparsed cell bcp70287-tbl-0003:row12:col4 = '[−0.0836; −0.0325]'
-- unparsed cell bcp70287-tbl-0003:row13:col4 = '[−0.189; −0.139]'
-- unparsed cell bcp70287-tbl-0003:row14:col4 = '[−0.0984; −0.0406]'
-- unparsed cell bcp70287-tbl-0003:row15:col4 = '[−0.108; −0.00867]'
-- unparsed cell bcp70287-tbl-0003:row16:col4 = '[0.311; 0.453]'
-- unparsed cell bcp70287-tbl-0003:row17:col4 = '[−0.166; −0.121]'
-- unparsed cell bcp70287-tbl-0003:row18:col4 = '[0.446; 0.558]'
-- unparsed cell bcp70287-tbl-0003:row20:col4 = '[0.0737; 0.0942]'
-- unparsed cell bcp70287-tbl-0003:row21:col4 = '[0.0345; 0.0471]'
-- unparsed cell bcp70287-tbl-0003:row22:col4 = '[0.0482; 0.0644]'
-- unparsed cell bcp70287-tbl-0003:row23:col4 = '[0.0341; 0.0772]'
-- unparsed cell bcp70287-tbl-0003:row25:col4 = '[0.245; 0.261]'
-- unparsed cell bcp70287-tbl-0003:row26:col4 = '[4.16; 6.80]'
 - LLM selected parameter table(s) 3
 
 ## Validation
@@ -145,23 +119,22 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C2_base_Q22 | pass | 0.285 | 0.285 | 1.0 | 0.05 | footnote reference category |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['bcp70287-tbl-0003:row2:col1', 'bcp70287-tbl-0003:row2:col2', 'bcp70287-tbl-0003:row2:col3'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['bcp70287-tbl-0003:row5:col1', 'bcp70287-tbl-0003:row5:col2', 'bcp70287-tbl-0003:row5:col3'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['bcp70287-tbl-0003:row3:col1', 'bcp70287-tbl-0003:row3:col2', 'bcp70287-tbl-0003:row3:col3'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['bcp70287-tbl-0003:row4:col1', 'bcp70287-tbl-0003:row4:col2', 'bcp70287-tbl-0003:row4:col3'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.285 | not captured | not captured | ['bcp70287-tbl-0003:row2:col1', 'bcp70287-tbl-0003:row2:col2', 'bcp70287-tbl-0003:row2:col3'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['bcp70287-tbl-0003:row2:col1'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['bcp70287-tbl-0003:row5:col1'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['bcp70287-tbl-0003:row3:col1'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['bcp70287-tbl-0003:row4:col1'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.285 | not captured | not captured | ['bcp70287-tbl-0003:row2:col1'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.0119 L/h | not captured | not captured | ['bcp70287-tbl-0003:row2:col1', 'bcp70287-tbl-0003:row2:col2', 'bcp70287-tbl-0003:row2:col3'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 3.42 L | not captured | not captured | ['bcp70287-tbl-0003:row3:col1', 'bcp70287-tbl-0003:row3:col2', 'bcp70287-tbl-0003:row3:col3'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 2.3 L | not captured | not captured | ['bcp70287-tbl-0003:row4:col1', 'bcp70287-tbl-0003:row4:col2', 'bcp70287-tbl-0003:row4:col3'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.0119 L/h | not captured | not captured | ['bcp70287-tbl-0003:row2:col1'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 3.42 L | not captured | not captured | ['bcp70287-tbl-0003:row3:col1'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 2.3 L | not captured | not captured | ['bcp70287-tbl-0003:row4:col1'] |
 
 **Reviewer per-scenario checks:**
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
 | T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_output_variable | not captured | pass | C_central (measured=durvalumab) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C | not captured | engineer template must match the scholar topology |
@@ -174,10 +147,10 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_durvalumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Zhao_2026` / `Zhao_2026::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_durvalumab/models/modelica/Durvalumab_Zhao2026_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_durvalumab/models/modelica/Durvalumab_Zhao2026_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_durvalumab/models/modelica/Durvalumab_Zhao2026_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_durvalumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Zhao_2026` / `Zhao_2026::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_durvalumab/models/modelica/Durvalumab_Zhao2026_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_durvalumab/models/modelica/Durvalumab_Zhao2026_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_durvalumab/models/modelica/Durvalumab_Zhao2026_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -186,7 +159,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_durvalumab/Durvalumab_Zhao2026_reference/Durvalumab_Zhao2026_reference_modelica.zip" download>Durvalumab_Zhao2026_reference_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_durvalumab/Durvalumab_Zhao2026_reference/Durvalumab_Zhao2026_reference_modelica.zip" download>Durvalumab_Zhao2026_reference_modelica.zip</a> <span class="pk-size">(4.5 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_durvalumab/Durvalumab_Zhao2026_reference/Durvalumab_Zhao2026_reference_fmi.zip" download>Durvalumab_Zhao2026_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_2C.fmu" download>PK_2C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_durvalumab/Durvalumab_Zhao2026_reference/Durvalumab_Zhao2026_reference_matlab.zip" download>Durvalumab_Zhao2026_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_durvalumab/Durvalumab_Zhao2026_reference/Durvalumab_Zhao2026_reference_matlab_simbio.zip" download>Durvalumab_Zhao2026_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
@@ -195,7 +168,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_durvalumab/Durvalumab_Zhao2026_reference/Durvalumab_Zhao2026_reference.svg" alt="Durvalumab_Zhao2026_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_durvalumab/Durvalumab_Zhao2026_reference/Durvalumab_Zhao2026_reference.svg" alt="Durvalumab_Zhao2026_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -208,4 +181,4 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 12:18 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 19:20 UTC</sub>

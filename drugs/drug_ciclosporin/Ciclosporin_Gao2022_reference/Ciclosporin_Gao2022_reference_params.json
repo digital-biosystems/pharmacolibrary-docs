@@ -1,0 +1,40 @@
+{
+ "dose_source": "paper",
+ "model_id": "Ciclosporin_Gao2022_reference",
+ "molar_masses": {
+  "central.C": 1.202635
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  350.0,
+  560.0,
+  700.0
+ ],
+ "parameters": {
+  "Cl": 8.083333333333333e-06,
+  "F": 1.0,
+  "MM": 1.202635,
+  "Tlag": 0.0,
+  "VdPerKg": 0.004642857142857143,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.00035,
+  "k12": 2.64957264957265e-06,
+  "k21": 3.286683630195081e-06,
+  "ka": 0.00035,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 7993.61223096414
+ },
+ "reference_peaks": {
+  "central.C": 0.0008471594953997851
+ },
+ "stop_time": 151200.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

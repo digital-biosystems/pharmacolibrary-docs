@@ -19,9 +19,9 @@
 
 **Model:** No model was generated from this record.
 
-> Carbenoxolone inhibits Cx38 hemichannel currents via a sigmoidal Emax model with an IC50 of 34 microM. The paper does not provide further mechanistic details or rate constants.
+> Carbenoxolone concentration inhibits Cx38 hemichannel currents following a sigmoid Emax model with an IC50 of 34 microM. The paper does not provide full text excerpts to confirm the underlying mechanism (e.g., direct block vs. elimination inhibition) or rate constants.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Ripps_2002`
 - **model family:** `sigmoid_emax`

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;phenobarbital&quot;,&quot;href&quot;:&quot;drugs/drug_phenobarbital/&quot;},{&quot;label&quot;:&quot;Teixeira-da-Silva_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Phenobarbital_TeixeiradaSilva2022_reference&quot;,&quot;label&quot;:&quot;Teixeira-da-Silva_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_phenobarbital/Phenobarbital_TeixeiradaSilva2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Phenobarbital_TeixeiradaSilva2022_reference&quot;,&quot;label&quot;:&quot;Teixeira-da-Silva_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_phenobarbital/Phenobarbital_TeixeiradaSilva2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # phenobarbital — `Phenobarbital_TeixeiradaSilva2022_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.7), gpt-oss:120b (partly confirmed, agreement 0.429). Primary extraction retained.">cross-check: partial 0/2</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.7), gpt-oss:120b (partly confirmed, agreement 0.429). Primary extraction retained.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -23,13 +23,11 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:39:24.759401+00:00) predates the upstream re-run (2026-10-07 07:18:47.608610+00:00). Current validate status: `extracted`.
-
 ## Citation
 Teixeira-da-Silva P et al., Population Pharmacokinetics of Valproic…, Pharmaceutics (2022)
   ·  DOI: [10.3390/pharmaceutics14040811](https://doi.org/10.3390/pharmaceutics14040811)
 
-<div class="pk-model-meta" hidden drug="phenobarbital" model-id="Phenobarbital_TeixeiradaSilva2022_reference" status="extracted" stale="true" population="" measured-compound="phenobarbital" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="phenobarbital" model-id="Phenobarbital_TeixeiradaSilva2022_reference" status="curated_candidate" stale="false" population="" measured-compound="phenobarbital" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.
@@ -122,10 +120,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_phenobarbital/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Teixeira-da-Silva_2022` / `Teixeira-da-Silva_2022::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_phenobarbital/models/modelica/Phenobarbital_TeixeiradaSilva2022_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_phenobarbital/models/modelica/Phenobarbital_TeixeiradaSilva2022_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_phenobarbital/models/modelica/Phenobarbital_TeixeiradaSilva2022_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_phenobarbital/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Teixeira-da-Silva_2022` / `Teixeira-da-Silva_2022::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_phenobarbital/models/modelica/Phenobarbital_TeixeiradaSilva2022_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_phenobarbital/models/modelica/Phenobarbital_TeixeiradaSilva2022_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_phenobarbital/models/modelica/Phenobarbital_TeixeiradaSilva2022_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -143,7 +141,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_phenobarbital/Phenobarbital_TeixeiradaSilva2022_reference/Phenobarbital_TeixeiradaSilva2022_reference.svg" alt="Phenobarbital_TeixeiradaSilva2022_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_phenobarbital/Phenobarbital_TeixeiradaSilva2022_reference/Phenobarbital_TeixeiradaSilva2022_reference.svg" alt="Phenobarbital_TeixeiradaSilva2022_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -156,4 +154,4 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 07:18 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 19:40 UTC</sub>

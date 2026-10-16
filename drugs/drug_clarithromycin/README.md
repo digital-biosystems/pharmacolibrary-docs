@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;clarithromycin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clarithromycin_Shah2025_reference&quot;,&quot;label&quot;:&quot;Shah_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clarithromycin/Clarithromycin_Shah2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # clarithromycin
 
@@ -27,13 +26,40 @@ Clarithromycin is a macrolide antibiotic used to treat many bacterial infections
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-04 10:47 | 12:34 | 1/0/0 | 0/0/0 | 0/0/0 | 293,730/27,088 | ollama / qwen3.8:27b-mtp-q8_0 | 20 | 4/16 | 19/1 | 0 |
+| 2026-10-15 03:44 | 3:14 | 0/1/0 | 2/0/0 | 0/0/0 | 220,644/15,576 | einfracz / qwen3.8-27b | 20 | 4/16 | 19/1 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.727), gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-check: disputed 1/2</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Shah_2025_reference](drugs/drug_clarithromycin/Clarithromycin_Shah2025_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Shah RV et al., Intravenous Clarithromycin in Criticall…, Antibiotics (Basel, Switzer… (2025) | [10.3390/antibiotics14060559](https://doi.org/10.3390/antibiotics14060559) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.727), gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-check: disputed 1/2</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Shah_2025_reference](drugs/drug_clarithromycin/Clarithromycin_Shah2025_reference.md) | — | 2-compartment (no model) | 4 | Shah RV et al., Intravenous Clarithromycin in Criticall…, Antibiotics (Basel, Switzer… (2025) | [10.3390/antibiotics14060559](https://doi.org/10.3390/antibiotics14060559) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Singh_2025_RLU](drugs/drug_clarithromycin/pd_Singh_2025_RLU.md) | relative light units ← clarithromycin · direct sigmoid Emax (Hill) effect | — | Singh S et al., Repurposing drugs to advance the treatm…, Antimicrobial agents and ch… (2025) | [10.1128/aac.00029-25](https://doi.org/10.1128/aac.00029-25) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.625). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Zhang_2023_rGr](drugs/drug_clarithromycin/pd_Zhang_2023_rGr.md) | M. aeruginosa cell growth rate ← Clarithromycin · direct sigmoid Emax (Hill) effect | — | Zhang Q et al., The influence of pH and dissolved organ…, The Science of the total en… (2023) | [10.1016/j.scitotenv.2023.166781](https://doi.org/10.1016/j.scitotenv.2023.166781) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=clarithromycin).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | liver | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | testis | `ABCB1` inhibitor/substrate | DrugBank actor |
+| metabolism | kidney | `CYP3A5` inhibitor/substrate, `SLC22A7` inhibitor | DrugBank actor |
+| metabolism | liver | `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor/substrate, `SLC22A7` inhibitor, `SLCO1B1` inhibitor, `SLCO1B3` inhibitor | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor/substrate | DrugBank actor |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | liver | `ABCB11` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: KCNH2 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,7 +71,7 @@ Clarithromycin is a macrolide antibiotic used to treat many bacterial infections
 
 - **PubMed hits:** 714 matched, 75 returned
 - **screened:** 15  ·  **relevant:** 2
-- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 1
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -54,8 +80,8 @@ _23 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Poapolathep_2022.pdf` | Poapolathep S et al., Pharmacokinetic profiles of clarithromy…, Journal of veterinary pharm… (2022) | popPK | 10 | [10.1111/jvp.13034](https://doi.org/10.1111/jvp.13034) | [34845734](https://pubmed.ncbi.nlm.nih.gov/34845734) | The study reports quantitative PK parameters (t1/2, F%, protein binding) for clarithromycin in crocodiles, but specific values for clearance (CL) and volume (V) are not explicitly listed in the provided text. |
-| `Methaneethorn_2014.pdf` | Methaneethorn J et al., A pharmacokinetic drug-drug interaction…, Annual International Confer… (2014) | popPK | 8 | [10.1109/EMBC.2014.6944922](https://doi.org/10.1109/EMBC.2014.6944922) | [25571290](https://pubmed.ncbi.nlm.nih.gov/25571290) | The paper describes a compartmental PK model for clarithromycin (parent-metabolite) in humans, but no numeric parameter values are provided in the evidence. |
+| `Poapolathep_2022.pdf` | Poapolathep S et al., Pharmacokinetic profiles of clarithromy…, Journal of veterinary pharm… (2022) | popPK | 9 | [10.1111/jvp.13034](https://doi.org/10.1111/jvp.13034) | [34845734](https://pubmed.ncbi.nlm.nih.gov/34845734) | Reports pharmacokinetics of clarithromycin in crocodiles with key parameters like t1/2 (20 h), bioavailability (complete), and protein binding (30%) present in the abstract, but other compartmental values (CL, V) are likely in the full text/tables not fully provided. |
+| `Methaneethorn_2014.pdf` | Methaneethorn J et al., A pharmacokinetic drug-drug interaction…, Annual International Confer… (2014) | popPK | 6 | [10.1109/EMBC.2014.6944922](https://doi.org/10.1109/EMBC.2014.6944922) | [25571290](https://pubmed.ncbi.nlm.nih.gov/25571290) | The paper develops a population PK model for clarithromycin (parent-metabolite) in a drug-drug interaction study, but the specific numeric parameter values are not present in the extracted text. |
 | `Del_2009.pdf` | Del Bortolo Ruenis AP et al., A PK/PD approach on the effects of clar…, International journal of cl… (2009) | pd | 5 | [10.5414/cpp47096](https://doi.org/10.5414/cpp47096) | [19203565](https://www.ncbi.nlm.nih.gov/pubmed/19203565) | metadata signals extractable PD data (PK/PD) |
 | `Sanders_2026.pdf` | Sanders M et al., Effect of concomitant rifampin and clar…, Expert opinion on drug meta… (2026) | pd | 5 | [10.1080/17425255.2026.2689048](https://doi.org/10.1080/17425255.2026.2689048) | [42287332](https://www.ncbi.nlm.nih.gov/pubmed/42287332) | metadata signals extractable PD data (EC50) |
 | `Srivastava_2022.pdf` | Srivastava S et al., An overview of drugs for the treatment…, Journal of global antimicro… (2022) | pd | 4 | [10.1016/j.jgar.2021.12.010](https://doi.org/10.1016/j.jgar.2021.12.010) | [34933140](https://www.ncbi.nlm.nih.gov/pubmed/34933140) | metadata signals extractable PD data (sigmoid) |
@@ -78,79 +104,79 @@ _23 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `von_1995.pdf` | von Rosensteil NA et al., Macrolide antibacterials. Drug interact…, Drug safety (1995) | pgx | 7 | [10.2165/00002018-199513020-00005](https://doi.org/10.2165/00002018-199513020-00005) | [7576262](https://www.ncbi.nlm.nih.gov/pubmed/7576262) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Zambon_2007.pdf` | Zambon CF et al., Clarithromycin resistance, tumor necros…, Journal of gastrointestinal… (2007) | pgx | 5 | [10.1007/s11605-007-0246-4](https://doi.org/10.1007/s11605-007-0246-4) | [17846855](https://www.ncbi.nlm.nih.gov/pubmed/17846855) | metadata signals extractable PGX data (CYP2C19) |
 
-<sub>queue written 2026-10-04T10:36:25.477050+00:00</sub>
+<sub>queue written 2026-10-15T03:41:40.191668+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| PGx | Abduljalil_2009 | not_relevant | 0 | 0 | The study models the autoinhibition of clarithromycin metabolism in healthy volunteers but does not investigate the impact of specific gene variants or genotypes on pharmacokinetic parameters. |
-| PGx | Arazo_2013 | not_relevant | 0 | 0 | The text describes a drug-drug interaction between rilpivirine and clarithromycin, not a pharmacogenomic effect of a gene variant on clarithromycin's PK/PD. |
-| PGx | Attia_2019 | not_relevant | 0 | 0 | The study investigates drug-drug interactions affecting omeprazole metabolism, not the pharmacogenomics of clarithromycin. |
-| PGx | Auttajaroon_2019 | not_relevant | 0 | 0 | The study examines the association between CYP2C19 genotype and H. pylori antibiotic resistance (including clarithromycin) and FD subtypes, but does not measure or report pharmacokinetic or pharmacodynamic parameters of clarithromycin in humans. |
-| PGx | Becker_2016 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction (riociguat with clarithromycin) in healthy males, not a pharmacogenomic effect of a gene variant on clarithromycin's PK/PD. |
-| PGx | Byeon_2018 | not_relevant | 0 | 0 | The study investigates the pharmacokinetics of zolpidem, not clarithromycin. |
-| PGx | Cao_2026 | not_relevant | 0 | 0 | The paper investigates the pharmacokinetics of Zastaprazan (JP-1366) and its drug-drug interactions, not the pharmacogenomics of clarithromycin. |
-| PGx | Cobos-Trigueros_2009 | not_relevant | 0 | 0 | The text is a general review of macrolides and ketolides that mentions CYP3A4 metabolism but does not report specific pharmacogenomic effects of gene variants on clarithromycin PK/PD parameters. |
-| PGx | Cui_2021 | not_relevant | 0 | 0 | The study investigates bacterial resistance genes (H. pylori) and their effect on clinical eradication rates, not human pharmacogenomic variants affecting the PK or PD of clarithromycin. |
+| PGx | Abduljalil_2009 | not_relevant | 0 | 0 | The study focuses on the time-dependent autoinhibition of CYP3A4 by clarithromycin in healthy volunteers and does not report any genetic variants or pharmacogenomic factors affecting its pharmacokinetics. |
+| PGx | Arazo_2013 | not_relevant | 0 | 0 | The paper discusses pharmacokinetic drug-drug interactions involving clarithromycin but contains no information regarding gene variants, genotypes, or pharmacogenomic effects. |
+| PGx | Attia_2019 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions involving clarithromycin affecting omeprazole metabolism, not the pharmacogenomic effect of a gene variant on clarithromycin PK/PD. |
+| PGx | Auttajaroon_2019 | not_relevant | 0 | 0 | The study reports the prevalence of H. pylori resistance to clarithromycin but does not measure or report pharmacokinetic or pharmacodynamic parameters of the drug affected by the CYP2C19 genotype. |
+| PGx | Becker_2016 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction between riociguat and clarithromycin, not a pharmacogenomic effect of a genetic variant on clarithromycin PK/PD. |
+| PGx | Byeon_2018 | not_relevant | 0 | 0 | The paper reports on the pharmacokinetics of zolpidem, not clarithromycin; clarithromycin is only used as a CYP3A4 inhibitor. |
+| PGx | Cao_2026 | not_relevant | 0 | 0 | The study investigates drug-drug interactions (DDI) involving clarithromycin, but clarithromycin is used as a perpetrator/inhibitor to modulate the PK of the study drug (JP-1366/Zastaprazan); the paper does not report how genetic variants affect clarithromycin's own PK or PD parameters. |
+| PGx | Cobos-Trigueros_2009 | not_relevant | 0 | 0 | The text provides a general overview of macrolides and ketolides, including their metabolic pathways, but does not report any specific pharmacogenomic effects on PK/PD parameters. |
+| PGx | Cui_2021 | not_relevant | 0 | 0 | The paper investigates antimicrobial resistance in Helicobacter pylori, not pharmacogenomics of clarithromycin in humans. |
 | popPK | Del_2009 | irrelevant | 0 | 0 | no_text gate: only 105 chars of text extracted (&lt; 400) |
 | PD | Del_2009 | not_relevant | 0 | 0 | The provided text is only the title of the paper and does not contain the full text, results, or any numeric PD parameters. |
-| PGx | Djebli_2021 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics of entrectinib and its interaction with clarithromycin, not on the pharmacogenomics of clarithromycin itself. |
-| popPK | Dresser_2000 | irrelevant | 0 | 0 | The paper is a review of CYP3A4 inhibition where clarithromycin is listed only as an inhibitor/comparator, not as the subject drug for PK parameter estimation. |
+| PGx | Djebli_2021 | not_relevant | 0 | 0 | The paper focuses on drug-drug interactions (CYP3A4 inhibition/induction) affecting entrectinib pharmacokinetics and does not report pharmacogenomic effects on clarithromycin. |
+| popPK | Dresser_2000 | irrelevant | 0 | 0 | This is a review article discussing clarithromycin as a CYP3A4 inhibitor affecting other drugs, not a study reporting clarithromycin's own quantitative pharmacokinetic parameters. |
 | PD | Dresser_2000 | not_relevant | 1 | 0 | The text is a general review of CYP3A4 inhibition and drug interactions, mentioning clarithromycin only as an example of an inhibitor without providing any specific pharmacokinetic or pharmacodynamic data, models, or numeric parameters. |
-| popPK | Echizen_2016 | irrelevant | 0 | 0 | The paper focuses on the pharmacokinetics of vonoprazan, and clarithromycin is only mentioned as a co-administered drug in a drug-drug interaction context without providing its own disposition parameters. |
-| PGx | Echizen_2016 | not_relevant | 0 | 0 | The paper discusses the pharmacokinetics of vonoprazan and its interaction with clarithromycin, but does not report a pharmacogenomic effect (gene variant) on clarithromycin's PK or PD parameters. |
-| PGx | Gallelli_2017 | not_relevant | 0 | 0 | The paper is a review of drug-drug interactions in cocaine users and mentions clarithromycin only as a CYP3A4 inhibitor, without reporting any pharmacogenomic effects on its PK or PD parameters. |
-| PGx | Ghiaur_2023 | not_relevant | 0 | 0 | The paper investigates the role of CYP3A4 in bone marrow chemoprotection and uses clarithromycin as an inhibitor, but it does not report pharmacogenomic effects of gene variants on clarithromycin's PK or PD parameters. |
-| PGx | Hanke_2018 | not_relevant | 0 | 0 | The paper focuses on PBPK modeling of drug-drug interactions (DDIs) involving clarithromycin, not on pharmacogenomic effects (gene variants) on its PK/PD. |
-| popPK | Hirai_2024 | irrelevant | 2 | 0 | The study focuses on the pharmacokinetics of tacrolimus and the drug-drug interaction with clarithromycin, but no quantitative PK parameter values (CL, V, etc.) for clarithromycin are provided in the evidence. |
-| PGx | Hirai_2024 | not_relevant | 0 | 0 | The paper models the drug-drug interaction between tacrolimus and clarithromycin (via CYP3A4 inhibition) but does not report any pharmacogenomic effects (gene variants/genotypes) on PK/PD parameters. |
-| popPK | Ho_2022 | irrelevant | 0 | 0 | The paper is a systematic review of antibiotic resistance rates in H. pylori, not a pharmacokinetic study of clarithromycin. |
-| popPK | Jayasagar_2000 | irrelevant | 1 | 0 | The study focuses on the pharmacokinetics of tolbutamide, with clarithromycin serving only as a co-administered drug to assess interaction effects, and no PK parameters for clarithromycin are reported. |
-| popPK | Jeong_2019 | irrelevant | 0 | 0 | The study is a retrospective cohort analysis of clinical outcomes (hospitalization, AKI) following macrolide co-prescription, not a pharmacokinetic study reporting disposition parameters for clarithromycin. |
-| PGx | Jurima-Romet_1994 | not_relevant | 0 | 0 | The paper investigates the in vitro inhibition of terfenadine metabolism by clarithromycin, not the effect of a gene variant on clarithromycin's PK or PD. |
-| popPK | Katsube_2014 | irrelevant | 0 | 0 | The study focuses on the PK/PD modeling of modithromycin, with clarithromycin serving only as a comparator in in-vitro time-kill assays, and no quantitative disposition parameters for clarithromycin are reported. |
+| popPK | Echizen_2016 | irrelevant | 0 | 0 | The paper is a pharmacokinetic review of vonoprazan, and clarithromycin is only mentioned as a co-administered comparator/probe drug without its own quantitative PK parameters being reported. |
+| PGx | Echizen_2016 | not_relevant | 2 | 10 | The paper reports the pharmacokinetics of vonoprazan and mentions that CYP2C19 polymorphism affects vonoprazan exposure, but it does not report pharmacogenomic effects on the PK or PD of clarithromycin. |
+| PGx | Gallelli_2017 | not_relevant | 0 | 0 | The paper is a review of drug-drug interactions in cocaine users and mentions clarithromycin only as a CYP3A4 inhibitor, without reporting any pharmacogenomic effects on its PK/PD parameters. |
+| PGx | Ghiaur_2023 | not_relevant | 2 | 0 | The paper describes the use of clarithromycin as a CYP3A4 inhibitor to overcome chemoresistance in a cancer model, but it does not report pharmacogenomic effects (gene variants) on clarithromycin's own PK or PD parameters. |
+| PGx | Hanke_2018 | not_relevant | 0 | 0 | The paper reports PBPK modeling of drug-drug interactions (DDIs) involving clarithromycin as a perpetrator, but it does not investigate gene variants, genotypes, or pharmacogenomic effects on clarithromycin's PK or PD parameters. |
+| popPK | Hirai_2024 | irrelevant | 1 | 0 | Clarithromycin is a mechanistic component of a drug-drug interaction model for tacrolimus, with no quantitative disposition parameters reported for clarithromycin itself. |
+| PGx | Hirai_2024 | not_relevant | 0 | 0 | The paper models drug-drug interactions between tacrolimus and clarithromycin/voriconazole, not pharmacogenomic effects of gene variants on clarithromycin. |
+| popPK | Ho_2022 | irrelevant | 0 | 0 | The paper is a systematic review and meta-analysis of H. pylori antibiotic resistance rates, not a pharmacokinetic study reporting disposition parameters for clarithromycin. |
+| popPK | Jayasagar_2000 | irrelevant | 1 | 1 | Clarithromycin is used only as a probe/co-administered agent to study the pharmacokinetics of tolbutamide, and no PK parameters for clarithromycin itself are reported. |
+| popPK | Jeong_2019 | irrelevant | 0 | 0 | This is a retrospective cohort study on clinical outcomes (renal function, hospitalization) in kidney transplant recipients; it does not report pharmacokinetic parameters (CL, V, ka) for clarithromycin. |
+| PGx | Jurima-Romet_1994 | not_relevant | 0 | 0 | The study investigates the pharmacokinetic interaction between clarithromycin and terfenadine (in vitro) rather than a pharmacogenomic effect (gene variant) on clarithromycin's PK/PD parameters. |
+| popPK | Katsube_2014 | irrelevant | 0 | 0 | The study focuses on in-vitro pharmacodynamic modeling of modithromycin, with clarithromycin used only as a comparator in time-kill assays, not as the subject of PK parameter estimation. |
 | PD | Katsube_2014 | not_relevant | 4 | 3 | The paper focuses on modithromycin and only uses clarithromycin as a comparator in in vitro time-kill modeling; it does not report specific numeric PD parameters (e.g., Emax, EC50) for clarithromycin in the provided text. |
-| PGx | Kaukab_2020 | not_relevant | 0 | 0 | The study investigates a drug-drug interaction (clarithromycin affecting metoclopramide PK) in a general population, not a pharmacogenomic effect of a gene variant on clarithromycin. |
-| PGx | Klis_2024 | not_relevant | 0 | 0 | The study investigates the pharmacokinetics of clarithromycin in patients with Mycobacterium ulcerans infection and drug-drug interactions with rifampicin, but does not report any pharmacogenomic effects (gene variants/genotypes) on PK or PD parameters. |
-| PGx | Kovar_2022 | not_relevant | 0 | 0 | The paper focuses on the pharmacogenomics of clomiphene, not clarithromycin; clarithromycin is only used as a perpetrator drug in interaction studies. |
-| PGx | Kurata_2020 | not_relevant | 0 | 0 | The study focuses on theophylline pharmacokinetics and the effect of liver disease, not on the pharmacokinetics or pharmacodynamics of clarithromycin. |
-| PGx | Kurata_2021 | not_relevant | 0 | 0 | The study focuses on the pharmacokinetics of theophylline and the impact of heart failure, not on the pharmacogenomics of clarithromycin. |
-| popPK | Kurosawa_2021 | irrelevant | 2 | 3 | The study focuses on the pharmacokinetics of bedaquiline, with clarithromycin serving only as a co-administered CYP3A inhibitor; while non-compartmental parameters (Cmax, AUC) for clarithromycin are reported, no compartmental or population PK model parameters (CL, V, Q, ka) for clarithromycin are provided. |
-| PGx | Laberge_1997 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction (clarithromycin affecting digoxin PK) but does not report a pharmacogenomic effect (gene variant/genotype) on clarithromycin's PK or PD parameters. |
-| PGx | Levy_1995 | not_relevant | 0 | 0 | The paper discusses drug-drug interactions involving clarithromycin but does not report pharmacogenomic effects (gene variants) on its PK/PD parameters. |
-| PGx | Maev_2017 | not_relevant | 0 | 0 | The paper discusses host genetic variants (CYP2C19, MDR1) affecting the pharmacokinetics of proton pump inhibitors, not clarithromycin. |
-| PGx | Makihara_2017 | not_relevant | 0 | 0 | The study investigates a drug-drug interaction (clarithromycin and irinotecan) and does not report any pharmacogenomic effects (gene variants) on pharmacokinetic or pharmacodynamic parameters. |
-| PGx | Marsousi_2018 | not_relevant | 0 | 0 | The paper focuses on validating PBPK models for drug-drug interactions (DDIs) involving clarithromycin as a CYP3A inhibitor, not on pharmacogenomic effects (gene variants) on clarithromycin's PK/PD. |
-| popPK | Methaneethorn_2014 | relevant | 8 | 0 | The paper describes a compartmental PK model for clarithromycin (parent-metabolite) in humans, but no numeric parameter values are provided in the evidence. |
-| PGx | Methaneethorn_2014 | not_relevant | 0 | 0 | The paper models a drug-drug interaction between simvastatin and clarithromycin, not a pharmacogenomic effect of a gene variant on clarithromycin's PK/PD. |
-| PGx | Miyamoto_2016 | not_relevant | 0 | 0 | The paper analyzes H. pylori genotypes associated with clarithromycin resistance, not human pharmacogenomic variants affecting drug PK/PD. |
-| PGx | Nakade_2008 | not_relevant | 0 | 0 | The study examines a drug-drug interaction (clarithromycin inhibiting pranlukast metabolism) in a general population, not a pharmacogenomic effect of a gene variant on clarithromycin's PK/PD. |
-| PGx | Ngeyvijit_2023 | not_relevant | 0 | 0 | The paper describes a drug-drug interaction (clarithromycin inhibiting colchicine metabolism) rather than a pharmacogenomic effect of a gene variant on clarithromycin's PK/PD. |
-| PGx | Saito_2005 | not_relevant | 0 | 0 | The study investigates the effect of clarithromycin on lansoprazole pharmacokinetics, not the effect of a gene variant on clarithromycin pharmacokinetics or pharmacodynamics. |
+| PGx | Kaukab_2020 | not_relevant | 0 | 0 | The study reports a drug-drug interaction (clarithromycin affecting metoclopramide PK) and does not investigate any genetic variants or pharmacogenomic factors. |
+| PGx | Klis_2024 | not_relevant | 0 | 0 | The paper reports pharmacokinetics of clarithromycin influenced by drug-drug interactions (Rifampicin), but does not study or report pharmacogenomic effects (gene variants/genotypes) on PK or PD parameters. |
+| PGx | Kovar_2022 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects for the drug (E)-clomiphene, not clarithromycin (which is used as a CYP3A4 inhibitor/perpetrator). |
+| PGx | Kurata_2020 | not_relevant | 0 | 0 | The study investigates pharmacokinetics of theophylline, not clarithromycin, and does not report a pharmacogenomic effect. |
+| PGx | Kurata_2021 | not_relevant | 0 | 0 | The study investigates the pharmacokinetics of theophylline, not clarithromycin, and does not report gene variants. |
+| popPK | Kurosawa_2021 | irrelevant | 1 | 0 | The study investigates the pharmacokinetics of bedaquiline with clarithromycin as a co-administered CYP3A inhibitor; while limited NCA parameters for clarithromycin are reported, there are no disposition parameters (CL, V, half-life) or population PK model for clarithromycin. |
+| PGx | Laberge_1997 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction (clarithromycin-digoxin) but does not report any pharmacogenomic effect (gene variant/genotype) on a PK or PD parameter of clarithromycin. |
+| PGx | Levy_1995 | not_relevant | 1 | 1 | The paper discusses drug-drug interactions involving clarithromycin (as an inhibitor) but does not report any pharmacogenomic effects (gene variants) on clarithromycin's PK/PD parameters. |
+| PGx | Maev_2017 | not_relevant | 0 | 0 | The paper discusses genetic predictors for *Helicobacter pylori* antibiotic resistance and host genetics affecting PPI pharmacokinetics, but it does not report any pharmacogenomic effects on the PK or PD parameters of clarithromycin. |
+| PGx | Makihara_2017 | not_relevant | 0 | 0 | The paper reports on drug-drug interactions (clarithromycin and irinotecan) and clinical toxicity outcomes, but it does not report pharmacogenomic effects on PK/PD parameters. |
+| PGx | Marsousi_2018 | not_relevant | 0 | 0 | The paper evaluates PBPK models for drug-drug interactions involving CYP modulators (including clarithromycin) but does not report pharmacogenomic effects (gene variants) on clarithromycin PK/PD. |
+| popPK | Methaneethorn_2014 | relevant | 6 | 2 | The paper develops a population PK model for clarithromycin (parent-metabolite) in a drug-drug interaction study, but the specific numeric parameter values are not present in the extracted text. |
+| PGx | Methaneethorn_2014 | not_relevant | 0 | 0 | The paper describes a drug-drug interaction between simvastatin and clarithromycin, not a pharmacogenomic effect of clarithromycin on its own PK or PD parameters. |
+| PGx | Miyamoto_2016 | not_relevant | 0 | 0 | The paper analyzes H. pylori genotypes and clarithromycin resistance in bacteria, not human pharmacogenomic effects on drug PK or PD. |
+| PGx | Nakade_2008 | not_relevant | 0 | 0 | The study evaluates a drug-drug interaction between clarithromycin and pranlukast, but does not report any pharmacogenomic effects (gene variants/genotypes) on the PK or PD of clarithromycin. |
+| PGx | Ngeyvijit_2023 | not_relevant | 0 | 0 | The paper describes a clinical case of colchicine toxicity due to drug-drug interaction with clarithromycin, but does not report pharmacogenomic effects on clarithromycin PK/PD parameters. |
+| PGx | Saito_2005 | not_relevant | 0 | 0 | The study reports CYP2C19 genotype effects on Lansoprazole pharmacokinetics, not Clarithromycin. |
 | popPK | Sanders_2026 | irrelevant | 0 | 0 | no_text gate: only 156 chars of text extracted (&lt; 400) |
 | PD | Sanders_2026 | not_relevant | 0 | 0 | The paper focuses on PBPK modeling of drug-drug interactions (PK only) and does not report any pharmacodynamic or exposure-response relationships for clarithromycin. |
-| popPK | Singh_2025 | irrelevant | 0 | 0 | The study is an in-vitro pharmacodynamic assessment of drug efficacy (MIC, EC50) against Mycobacterium ulcerans, not a pharmacokinetic study reporting disposition parameters for clarithromycin. |
+| popPK | Singh_2025 | irrelevant | 0 | 0 | This is an in-vitro microbiological study measuring MICs and bactericidal activity of clarithromycin against M. ulcerans, not a pharmacokinetic study of the drug's disposition. |
 | popPK | Srivastava_2022 | irrelevant | 0 | 0 | no_text gate: only 82 chars of text extracted (&lt; 400) |
 | PD | Srivastava_2022 | not_relevant | 1 | 0 | The paper is a general overview/review of drugs for Mycobacterium kansasii and does not report specific pharmacokinetic or pharmacodynamic modeling or numeric exposure-response parameters for clarithromycin. |
-| PGx | Takanohashi_2007 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions (inhibition of nateglinide metabolism by clarithromycin) and does not report pharmacogenomic effects (gene variants) on clarithromycin PK/PD. |
-| popPK | Torumkuney_2020 | irrelevant | 0 | 0 | The paper is an antibiotic susceptibility survey (MICs) and does not report pharmacokinetic parameters for clarithromycin. |
+| PGx | Takanohashi_2007 | not_relevant | 0 | 0 | The study investigates drug-drug interactions involving nateglinide and does not report pharmacogenomic effects on clarithromycin. |
+| popPK | Torumkuney_2020 | irrelevant | 0 | 0 | The study reports antimicrobial susceptibility (MICs) and breakpoint applications for clarithromycin, not pharmacokinetic parameters for the drug itself. |
 | PD | Torumkuney_2020 | not_relevant | 1 | 0 | The paper reports antibiotic susceptibility rates using PK/PD breakpoints but does not provide a concentration-effect analysis or numeric PD parameters (e.g., Emax, EC50) for clarithromycin. |
-| PGx | Tungtrongchitr_2024 | not_relevant | 0 | 0 | The study evaluates H. pylori eradication rates (clinical efficacy) and mentions CYP3A4 genotyping, but it does not report pharmacokinetic or pharmacodynamic parameters of clarithromycin. |
-| PGx | Wang_2025 | not_relevant | 0 | 0 | The paper reports bacterial genetic variants (erm(41), rrl) associated with drug resistance (MIC), not human pharmacogenomic variants affecting PK/PD. |
-| popPK | Wei_2023 | irrelevant | 2 | 1 | Clarithromycin is a co-administered perpetrator drug in a PBPK study focused on tegoprazan, and specific numeric PK parameters for clarithromycin are not provided in the text (referenced in Table S1 or SimCYP library). |
+| PGx | Tungtrongchitr_2024 | not_relevant | 0 | 0 | The study evaluates the clinical efficacy (eradication rate) of a treatment regimen in relation to H. pylori antibiotic resistance, not the effect of a pharmacogenomic variant on the pharmacokinetic or pharmacodynamic parameters of clarithromycin. |
+| PGx | Wang_2025 | not_relevant | 0 | 0 | The paper reports bacterial genetic variants (erm(41), rrl) associated with drug resistance, which is antimicrobial resistance, not human pharmacogenomics. |
+| popPK | Wei_2023 | irrelevant | 4 | 0 | Clarithromycin is a co-administered DDI perpetrator (CYP3A4 inhibitor) rather than the subject of the PK investigation, and the specific quantitative parameter values for clarithromycin are located in Supplementary Table S1 which is not provided in the evidence. |
 | PD | Wei_2023 | not_relevant | 2 | 0 | The paper focuses on PBPK modeling of clarithromycin PK and DDI effects on tegoprazan PD (pH), but does not report a concentration-effect or dose-response model for clarithromycin itself with numeric PD parameters. |
-| PGx | Wendl_2022 | not_relevant | 0 | 0 | The paper focuses on drug-drug interactions (DDIs) involving CYP3A4 inhibitors/inducers, not pharmacogenomic variants affecting clarithromycin PK/PD. |
-| PGx | Williams_2002 | not_relevant | 0 | 0 | The paper compares in vitro metabolic capabilities of CYP3A isoforms but does not report in vivo pharmacokinetic or pharmacodynamic parameters of clarithromycin influenced by genetic variants. |
-| PGx | Yang_2009 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on rabeprazole PK/PD, not clarithromycin. |
-| PGx | Yoneda_2009 | not_relevant | 0 | 0 | The paper investigates the in vitro metabolism of pranlukast and its interaction with clarithromycin, but does not report any pharmacogenomic effects on clarithromycin's PK/PD parameters. |
-| PGx | Yoon_2021 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction (DDI) between tegoprazan and clarithromycin, not a pharmacogenomic effect (gene variant) on clarithromycin's PK/PD. |
-| PGx | Zambon_2007 | not_relevant | 0 | 0 | The paper investigates host genetic polymorphisms (TNF-alpha, IL-10, etc.) and bacterial resistance in relation to H. pylori eradication success, but does not report pharmacokinetic or pharmacodynamic parameters of clarithromycin. |
+| PGx | Wendl_2022 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction (CYP3A4 inhibition by clarithromycin), not a pharmacogenomic effect (gene variant/genotype impact) on PK/PD parameters. |
+| PGx | Williams_2002 | not_relevant | 0 | 0 | The paper compares in vitro metabolic capabilities of CYP3A isoforms but does not report pharmacogenomic effects of specific human gene variants on PK/PD parameters in a clinical or human pharmacokinetic context. |
+| PGx | Yang_2009 | not_relevant | 0 | 0 | The paper investigates the pharmacogenomics of rabeprazole (CYP2C19), not clarithromycin. |
+| PGx | Yoneda_2009 | not_relevant | 0 | 0 | The paper investigates the metabolism of pranlukast and its interaction with clarithromycin, but does not report on the effect of any gene variant or genotype on the pharmacokinetics or pharmacodynamics of clarithromycin. |
+| PGx | Yoon_2021 | not_relevant | 0 | 0 | The paper focuses on drug-drug interaction modeling (clarihromycin as a CYP3A4 inhibitor affecting tegoprazan) and does not report any pharmacogenomic effects on clarithromycin's PK/PD parameters. |
+| PGx | Zambon_2007 | not_relevant | 0 | 0 | The paper investigates the relationship between host gene polymorphisms and clinical eradication success, but does not report any changes in the pharmacokinetic or pharmacodynamic parameters of clarithromycin. |
 | popPK | Zhanel_2016 | irrelevant | 0 | 0 | no_text gate: only 97 chars of text extracted (&lt; 400) |
-| PGx | Zhanel_2016 | not_relevant | 0 | 0 | The paper discusses solithromycin, not clarithromycin, and does not report pharmacogenomic effects on PK/PD parameters. |
-| popPK | Zhang_2023 | irrelevant | 0 | 0 | The study is an ecotoxicology investigation of clarithromycin bioavailability in cyanobacteria, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
-| PGx | van_2019 | not_relevant | 0 | 0 | The study validates a reduced sampling interval for midazolam PK and does not report pharmacogenomic effects on clarithromycin. |
-| PGx | von_1995 | not_relevant | 0 | 0 | The paper discusses drug-drug interactions involving CYP3A4 inhibition, not pharmacogenomic effects of genetic variants on clarithromycin PK/PD. |
+| PGx | Zhanel_2016 | not_relevant | 0 | 0 | The paper discusses solithromycin, not clarithromycin, and does not report pharmacogenomic effects on its PK/PD parameters. |
+| popPK | Zhang_2023 | irrelevant | 0 | 0 | The paper describes an ecotoxicity and bioavailability study of clarithromycin in cyanobacteria (Microcystis aeruginosa), not a pharmacokinetic study measuring disposition parameters like CL or V in an organism. |
+| PGx | van_2019 | not_relevant | 0 | 0 | The study investigates sampling strategies for CYP3A phenotyping using midazolam; it does not report pharmacogenomic effects (gene variants) on the pharmacokinetics of clarithromycin. |
+| PGx | von_1995 | not_relevant | 0 | 0 | The paper discusses drug-drug interactions via CYP3A4 inhibition, not pharmacogenomic (genetic variant) effects. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-04 10:36 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-15 03:41 UTC</sub>

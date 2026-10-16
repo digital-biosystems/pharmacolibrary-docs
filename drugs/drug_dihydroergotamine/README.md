@@ -26,14 +26,43 @@ Dihydroergotamine is an ergot alkaloid used to treat migraine and orthostatic hy
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 06:27 | 1:46 | 0/0/2 | 0/0/0 | 0/0/0 | 149,693/8,219 | einfracz / qwen3.8-27b | 6 | 4/2 | 5/1 | 0 |
+| 2026-10-15 04:00 | 1:15 | 0/0/2 | 1/0/1 | 0/0/0 | 131,623/6,546 | einfracz / qwen3.8-27b | 6 | 4/2 | 5/1 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167), gpt-oss:120b (partly confirmed, agreement 0.778). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q61 — no SI value to build from</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Hilke_1978_reference](drugs/drug_dihydroergotamine/Dihydroergotamine_Hilke1978_reference.md) | — | 1-compartment (no model) | 4 | Hilke H et al., Dihydroergotamine: pharmacokinetics and…, Acta anaesthesiologica Scan… (1978) | [10.1111/aas.1978.22.3.215](https://doi.org/10.1111/aas.1978.22.3.215) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2), gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-check: disputed 1/2</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Schran_1985_reference](drugs/drug_dihydroergotamine/Dihydroergotamine_Schran1985_reference.md) | — | 1-compartment (no model) | 3 | Schran HF et al., Pharmacokinetics of dihydroergotamine f…, International journal of cl… (1985) | — |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167), gpt-oss:120b (partly confirmed, agreement 0.778). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q61 — no SI value to build from</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Hilke_1978_reference](drugs/drug_dihydroergotamine/Dihydroergotamine_Hilke1978_reference.md) | — | 1-compartment (no model) | 4 | Hilke H et al., Dihydroergotamine: pharmacokinetics and…, Acta anaesthesiologica Scan… (1978) | [10.1111/aas.1978.22.3.215](https://doi.org/10.1111/aas.1978.22.3.215) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2), gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-check: disputed 1/2</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Schran_1985_reference](drugs/drug_dihydroergotamine/Dihydroergotamine_Schran1985_reference.md) | — | 1-compartment (no model) | 3 | Schran HF et al., Pharmacokinetics of dihydroergotamine f…, International journal of cl… (1985) | — |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Hanoun_2003_firing_of_serotoninergic_neurons](drugs/drug_dihydroergotamine/pd_Hanoun_2003_firing_of_serotoninergic_neurons.md) | firing of serotoninergic neurons ← dihydroergotamine · direct Emax (saturable) effect | — | Hanoun N et al., Dihydroergotamine and its metabolite, 8…, British journal of pharmaco… (2003) | [10.1038/sj.bjp.0705258](https://doi.org/10.1038/sj.bjp.0705258) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Hanoun_2003_specific_binding_of_3_H_8_OH_DPAT](drugs/drug_dihydroergotamine/pd_Hanoun_2003_specific_binding_of_3_H_8_OH_DPAT.md) | specific binding of [ 3 H]8-OH-DPAT ← dihydroergotamine · direct sigmoid Emax (Hill) effect | — | Hanoun N et al., Dihydroergotamine and its metabolite, 8…, British journal of pharmaco… (2003) | [10.1038/sj.bjp.0705258](https://doi.org/10.1038/sj.bjp.0705258) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Hanoun_2003_specific_binding_of_3_H_WAY_100635](drugs/drug_dihydroergotamine/pd_Hanoun_2003_specific_binding_of_3_H_WAY_100635.md) | specific binding of [ 3 H]WAY 100635 ← dihydroergotamine · direct sigmoid Emax (Hill) effect | — | Hanoun N et al., Dihydroergotamine and its metabolite, 8…, British journal of pharmaco… (2003) | [10.1038/sj.bjp.0705258](https://doi.org/10.1038/sj.bjp.0705258) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [MaassenVanDenBrink_1998_contraction](drugs/drug_dihydroergotamine/pd_MaassenVanDenBrink_1998_contraction.md) | coronary artery contraction ← dihydroergotamine · direct sigmoid Emax (Hill) effect | — | MaassenVanDenBrink A et al., Coronary side-effect potential of curre…, Circulation (1998) | [10.1161/01.cir.98.1.25](https://doi.org/10.1161/01.cir.98.1.25) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=dihydroergotamine).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inhibitor | DrugBank actor |
+| absorption | kidney | `ABCB1` inhibitor | DrugBank actor |
+| absorption | liver | `ABCB1` inhibitor | DrugBank actor |
+| absorption | placenta | `ABCB1` inhibitor | DrugBank actor |
+| absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
+| absorption | testis | `ABCB1` inhibitor | DrugBank actor |
+| metabolism | liver | `CYP3A4` inhibitor/substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inhibitor/substrate | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: ADRA1A (target), ADRA2A (target), ADRB3 (target), DRD2 (target), DRD3 (target), DRD4 (target), HTR1A (target), HTR1B (target), HTR1D (target), HTR1E (target), HTR1F (target), HTR2A (target), HTR2B (target), HTR2C (target), HTR4 (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,7 +74,7 @@ Dihydroergotamine is an ergot alkaloid used to treat migraine and orthostatic hy
 
 - **PubMed hits:** 36 matched, 29 returned
 - **screened:** 5  ·  **relevant:** 3
-- **records:** 2  ·  extracted 0  ·  needs_review 2  ·  rejected 0  ·  stale 2
+- **records:** 2  ·  extracted 0  ·  needs_review 2  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -54,42 +83,42 @@ _6 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Hilke_1978.pdf` | Hilke H et al., Dihydroergotamine: pharmacokinetics and…, Acta anaesthesiologica Scan… (1978) | popPK | 10 | [10.1111/aas.1978.22.3.215](https://doi.org/10.1111/aas.1978.22.3.215) | [354304](https://pubmed.ncbi.nlm.nih.gov/354304) | The text explicitly reports quantitative pharmacokinetic parameters (alpha and beta half-lives, volume of distribution, and clearance) for dihydroergotamine in humans. |
-| `Schran_1985.pdf` | Schran HF et al., Pharmacokinetics of dihydroergotamine f…, International journal of cl… (1985) | popPK | 10 | not captured | [3988387](https://pubmed.ncbi.nlm.nih.gov/3988387) | The study reports quantitative compartmental PK parameters (half-lives, Vd, CL, renal CL) for dihydroergotamine in humans directly in the text. |
+| `Hilke_1978.pdf` | Hilke H et al., Dihydroergotamine: pharmacokinetics and…, Acta anaesthesiologica Scan… (1978) | popPK | 10 | [10.1111/aas.1978.22.3.215](https://doi.org/10.1111/aas.1978.22.3.215) | [354304](https://pubmed.ncbi.nlm.nih.gov/354304) | The paper reports specific quantitative pharmacokinetic parameters (half-lives, volume of distribution, clearance) for dihydroergotamine in humans. |
+| `Schran_1985.pdf` | Schran HF et al., Pharmacokinetics of dihydroergotamine f…, International journal of cl… (1985) | popPK | 10 | not captured | [3988387](https://pubmed.ncbi.nlm.nih.gov/3988387) | The study reports quantitative pharmacokinetic parameters (half-lives, volume, clearance) for dihydroergotamine in humans, with all values clearly visible in the provided abstract. |
 | `Kitazawa_1998.pdf` | Kitazawa T et al., Involvement of 5-hydroxytryptamine7 rec…, British journal of pharmaco… (1998) | pd | 4 | [10.1038/sj.bjp.0701583](https://doi.org/10.1038/sj.bjp.0701583) | [9489604](https://www.ncbi.nlm.nih.gov/pubmed/9489604) | metadata signals extractable PD data (EC50) |
 | `Albrecht_2026.pdf` | Albrecht D et al., An Open-Label, 2-Period, Fixed Sequence…, Journal of clinical pharmac… (2026) | pgx | 7 | [10.1002/jcph.70239](https://doi.org/10.1002/jcph.70239) | [42530156](https://www.ncbi.nlm.nih.gov/pubmed/42530156) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Fung_2000.pdf` | Fung HB et al., Amprenavir: a new human immunodeficienc…, Clinical therapeutics (2000) | pgx | 7 | [10.1016/S0149-2918(00)80044-2](https://doi.org/10.1016/S0149-2918(00)80044-2) | [10868554](https://www.ncbi.nlm.nih.gov/pubmed/10868554) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Nakasa_1998.pdf` | Nakasa H et al., Prediction of drug-drug interactions of…, European journal of clinica… (1998) | pgx | 7 | [10.1007/s002280050442](https://doi.org/10.1007/s002280050442) | [9626925](https://www.ncbi.nlm.nih.gov/pubmed/9626925) | metadata signals extractable PGX data (CYP2C19, PK/PD-context) |
 
-<sub>queue written 2026-10-07T06:26:09.106843+00:00</sub>
+<sub>queue written 2026-10-15T03:59:29.663394+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| PGx | Albrecht_2026 | not_relevant | 0 | 0 | The study evaluates a drug-drug interaction (DHE with itraconazole) rather than a pharmacogenomic effect (gene variant/genotype) on PK or PD. |
-| popPK | Assié_1999 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological analysis of receptor affinity and intrinsic activity, not a pharmacokinetic study reporting disposition parameters. |
+| PGx | Albrecht_2026 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction with a CYP3A4 inhibitor rather than the effect of a genetic variant on pharmacokinetics or pharmacodynamics. |
+| popPK | Assié_1999 | irrelevant | 0 | 0 | The paper reports in-vitro receptor binding and functional assay data, not pharmacokinetic disposition parameters like clearance or volume. |
 | PD | Assié_1999 | not_relevant | 1 | 0 | The paper discusses receptor binding affinities and qualitative intrinsic activity (Emax) comparisons but does not provide numeric concentration-effect curves or specific PD parameters for dihydroergotamine. |
-| PGx | Ball_1992 | not_relevant | 0 | 0 | The paper characterizes CYP3A4 metabolism of a different ergot alkaloid (CQA 206-291) and does not report pharmacogenomic effects on the PK or PD of dihydroergotamine. |
-| PGx | Fung_2000 | not_relevant | 0 | 0 | The paper is a review of amprenavir and only mentions dihydroergotamine as a contraindication; it does not report any pharmacogenomic effects on its PK or PD. |
-| popPK | Hanoun_2003 | irrelevant | 0 | 0 | This is a mechanistic in vitro pharmacology study of receptor binding and electrophysiology, not a pharmacokinetic study reporting disposition parameters. |
-| popPK | Inoue_2003 | irrelevant | 0 | 0 | This is a pharmacological study on 5-HT7 receptor-mediated oviduct relaxation in pigs where dihydroergotamine is used only as a less effective antagonist/probe, not for PK parameter estimation. |
+| PGx | Ball_1992 | not_relevant | 0 | 0 | The paper focuses on the metabolic characterization of an ergot alkaloid analog (CQA 206-291) and does not report pharmacogenomic effects on the PK or PD parameters of dihydroergotamine. |
+| PGx | Fung_2000 | not_relevant | 0 | 0 | The paper is a review of amprenavir and mentions dihydroergotamine only in the context of drug-drug interaction contraindications, without reporting pharmacogenomic effects or quantitative PK/PD parameters for dihydroergotamine. |
+| popPK | Hanoun_2003 | irrelevant | 0 | 0 | The study is an in vitro pharmacological investigation of receptor binding and electrophysiology, not a pharmacokinetic study. |
+| popPK | Inoue_2003 | irrelevant | 0 | 0 | The study is a pharmacological investigation of 5-HT7 receptors in pig oviducts where dihydroergotamine is used only as a non-specific antagonist/probe, and no pharmacokinetic parameters are reported. |
 | PD | Inoue_2003 | not_relevant | 1 | 0 | The paper investigates 5-HT receptor pharmacology in porcine oviducts; dihydroergotamine is only mentioned qualitatively as a less effective agonist without providing specific numeric PD parameters or concentration-effect curves for it. |
-| PGx | Kellerman_2012 | not_relevant | 0 | 0 | The study investigates a drug-drug interaction with a CYP3A4 inhibitor, not the effect of a genetic variant, genotype, or phenotype. |
-| popPK | Kitazawa_1998 | irrelevant | 0 | 0 | The paper is an in-vitro pharmacological study on porcine myometrium where dihydroergotamine is used only as a comparative antagonist/agonist to characterize 5-HT receptors, not for pharmacokinetic analysis. |
+| PGx | Kellerman_2012 | not_relevant | 0 | 0 | The study investigates a drug-drug interaction with CYP3A4 inhibitors, not the impact of genetic variants on pharmacokinetics or pharmacodynamics. |
+| popPK | Kitazawa_1998 | irrelevant | 0 | 0 | The study is a mechanistic in vitro pharmacology investigation of 5-HT receptors in porcine myometrium, where dihydroergotamine is used only as a probe agonist and no PK parameters are reported. |
 | PD | Kitazawa_1998 | not_relevant | 0 | 0 | The paper reports that dihydroergotamine had "almost no effect" on myometrial contractility at tested concentrations, providing no numeric PD parameters or concentration-effect curve for the drug. |
-| popPK | MaassenVanDenBrink_1998 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of coronary artery contraction (measuring EC50 and Emax), not a pharmacokinetic study reporting quantitative disposition parameters like clearance, volume of distribution, or half-life. |
-| popPK | McConnachie_2023 | irrelevant | 0 | 0 | The paper reports in-vitro receptor binding and functional pharmacology parameters (IC50, EC50) for dihydroergotamine, not pharmacokinetic disposition parameters. |
-| popPK | Mlinar_2003 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological characterization of serotonin receptors in rat hippocampus where dihydroergotamine is used only as a receptor antagonist, with no pharmacokinetic data reported. |
+| popPK | MaassenVanDenBrink_1998 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological analysis of coronary artery contraction and does not report pharmacokinetic parameters (clearance, volume, half-life) for dihydroergotamine. |
+| popPK | McConnachie_2023 | irrelevant | 0 | 0 | The study is an in-vitro receptor pharmacology assessment (binding/functional activity) of dihydroergotamine, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Mlinar_2003 | irrelevant | 0 | 0 | The study is an in vitro electrophysiological pharmacological characterization of 5-HT1B receptors in rat hippocampus, where dihydroergotamine is used only as an antagonist/co-agent, and no pharmacokinetic parameters are reported. |
 | PD | Mlinar_2003 | not_relevant | 0 | 0 | The paper reports EC50 values for other 5-HT1B agonists (CP 93129, 5-CT, methylergometrine) but only mentions dihydroergotamine as a non-selective antagonist used to block effects, without providing any dose-response curve or numeric PD parameters for dihydroergotamine itself. |
-| PGx | Moubarak_2003 | not_relevant | 0 | 0 | The study investigates drug-drug interactions involving CYP3A4 in rats but does not report any pharmacogenomic effects (gene variants/genotypes) on the pharmacokinetics or pharmacodynamics of dihydroergotamine. |
-| PGx | Nakasa_1998 | not_relevant | 0 | 0 | The paper focuses on the metabolism of zonisamide and drug-drug interactions, mentioning dihydroergotamine only as a CYP3A4 substrate/inhibitor, but does not report the pharmacokinetics or pharmacodynamics of dihydroergotamine itself. |
-| PGx | Rasmussen_1998 | not_relevant | 0 | 0 | The study focuses on the interaction between fluvoxamine and proguanil mediated by CYP2C19, and does not report pharmacogenomic effects on dihydroergotamine's PK or PD. |
-| popPK | Roon_1999 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological assay measuring receptor-mediated contractile potency (pD2/Emax), not pharmacokinetic disposition parameters. |
-| PGx | Rosenkrans_2015 | not_relevant | 0 | 0 | The paper studies CYP450 inhibition by ergot alkaloids in cattle, not human pharmacogenomics of dihydroergotamine. |
-| popPK | Sampson_1977 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic study where dihydroergotamine is used as a pharmacological antagonist to block adrenergic effects, not as the subject of pharmacokinetic analysis. |
-| popPK | Valentin_1998 | irrelevant | 0 | 0 | The study is an in vitro pharmacological analysis of contractile responses and receptor potency (pD2), not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
-| popPK | de_1986 | irrelevant | 0 | 0 | The study focuses on hemodynamic effects (venoconstriction) and qualitative concentration profile comparisons, but does not report quantitative pharmacokinetic parameters (CL, V, t1/2, ka) or a PK model for dihydroergotamine. |
+| PGx | Moubarak_2003 | not_relevant | 0 | 0 | The study investigates CYP3A4 enzyme modulation in rat liver microsomes but does not report any genetic variants or pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of dihydroergotamine. |
+| PGx | Nakasa_1998 | not_relevant | 0 | 0 | The study focuses on drug-drug interactions involving zonisamide and dihydroergotamine as a CYP3A4 inhibitor, not on pharmacogenomic effects on dihydroergotamine's PK/PD. |
+| PGx | Rasmussen_1998 | not_relevant | 0 | 0 | The paper investigates the drug-drug interaction between fluvoxamine and proguanil using CYP2C19, and while dihydroergotamine is mentioned only as a CYP3A4 inhibitor in a negative control experiment, the study does not assess pharmacogenomic effects on dihydroergotamine. |
+| popPK | Roon_1999 | irrelevant | 0 | 0 | The study is an in vitro pharmacodynamic investigation of vascular contraction in bovine arteries, reporting receptor potency (pD2) and efficacy (Emax) rather than pharmacokinetic disposition parameters. |
+| PGx | Rosenkrans_2015 | not_relevant | 2 | 5 | The study focuses on CYP450 inhibition by ergot alkaloids in cattle and genotype effects on that inhibition, not on the PK/PD of dihydroergotamine as a drug in humans. |
+| popPK | Sampson_1977 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiological investigation where dihydroergotamine is used solely as a pharmacological antagonist, with no PK parameters reported. |
+| popPK | Valentin_1998 | irrelevant | 0 | 0 | This is an in-vitro pharmacodynamic study measuring contractile responses in isolated canine coronary arteries, not a pharmacokinetic study reporting disposition parameters for dihydroergotamine. |
+| popPK | de_1986 | irrelevant | 2 | 0 | The study focuses on pharmacodynamic effects (venous capacitance) and notes that plasma concentration profiles were comparable, but no specific quantitative pharmacokinetic parameters (CL, V, t1/2) or numeric concentration values are provided in the evidence. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 06:26 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-15 03:59 UTC</sub>

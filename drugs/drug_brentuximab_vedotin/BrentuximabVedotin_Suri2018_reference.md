@@ -4,7 +4,7 @@
 
 # brentuximab vedotin — `BrentuximabVedotin_Suri2018_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2), qwen3.8-27b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -16,21 +16,21 @@
 
 ### Reviewer guidance
 
-**The ADC-to-MMAE conversion rate for MMAE has an unknown value, leaving this metabolite without a path from the brentuximab vedotin dose.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record lists MMAE as formed from brentuximab vedotin (ADC), but assigns MMAE no compartment and gives the conversion-rate parameter no value. The finding is that MMAE is unreachable from the dose; the record reports clearance of 0.0478 L/h and central and peripheral volumes of 3.5 L and 3.67 L, respectively, for the ADC and MMAE. Extracted — brentuximab vedotin (ADC) and MMAE: CL 0.0478 L/h, V1 3.5 L, V2 3.67 L.
+None of the extracted parameters is brentuximab vedotin's own; they describe ADC. Extracted — ADC: CL 0.0478 L/h, V1 3.5 L, V2 3.67 L.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which molecule was measured: this record has brentuximab vedotin (ADC) and MMAE, the second reading ADC; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has brentuximab vedotin (ADC) and MMAE, the second reading brentuximab vedotin; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
-> **Dose compound ≠ measured compound:** dosed `brentuximab vedotin`, measured `brentuximab vedotin (ADC) and MMAE`.
+> **Dose compound ≠ measured compound:** dosed `brentuximab vedotin`, measured `ADC`.
 
 ## Citation
 Suri A et al., Population PK and Exposure-Response Rel…, Clinical pharmacology and t… (2018)
   ·  DOI: [10.1002/cpt.1037](https://doi.org/10.1002/cpt.1037)
 
-<div class="pk-model-meta" hidden drug="brentuximab vedotin" model-id="BrentuximabVedotin_Suri2018_reference" status="rejected" stale="false" population="patients with CD30-positive malignancies" measured-compound="brentuximab vedotin (ADC) and MMAE" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="brentuximab vedotin" model-id="BrentuximabVedotin_Suri2018_reference" status="rejected" stale="false" population="patients with CD30-positive malignancies" measured-compound="ADC" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 3 extracted.
@@ -57,16 +57,14 @@ Suri A et al., Population PK and Exposure-Response Rel…, Clinical pharmacology
 - salvaged Q22 ('CL'=0.0478) from results prose — parameter table was unreadable
 - salvaged Q63 ('central volume'=3.5) from results prose — parameter table was unreadable
 - salvaged Q64 ('peripheral volume one'=3.67) from results prose — parameter table was unreadable
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=brentuximab vedotin (ADC) and MMAE
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=ADC
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
 - template fit: PK_3M_9C — formed from central; parent 2, metabolites [0]
 - status held at route_to_review — not promoted
-- molar mass: no plausible PubChem entry for 'brentuximab vedotin (ADC)' ('brentuximab vedotin') — left in mass units
-- molar mass: no plausible PubChem entry for 'brentuximab vedotin (ADC) and MMAE' ('brentuximab vedotin and monomethyl auristatin E') — left in mass units
-- molar mass: none found for 'brentuximab vedotin (ADC)' — its concentrations stay mass-only
-- molar mass: none found for 'brentuximab vedotin (ADC) and MMAE' — its concentrations stay mass-only
-- skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
+- molar mass: no plausible PubChem entry for 'ADC' ('no full name in the paper') — left in mass units
+- molar mass: none found for 'brentuximab vedotin' — its concentrations stay mass-only
+- molar mass: none found for 'ADC' — its concentrations stay mass-only
+- review gap-fill skipped: this record measures 'ADC', not brentuximab_vedotin — the review values are the parent's
 
 **Extraction notes:**
 - no TEI final-model table id; trying text-pointer table recovery
@@ -74,17 +72,26 @@ Suri A et al., Population PK and Exposure-Response Rel…, Clinical pharmacology
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.2 (2/10 fields) | 8 |
 | `qwen3.8-27b` | not confirmed | 0.2 (2/10 fields) | 8 |
 
-<details><summary>8 field discrepancies</summary>
+<details><summary>16 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['brentuximab vedotin (adc)', 'mmae', 'metabolism']] | [['brentuximab vedotin', 'monomethyl auristatin e', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[central volume]` | not captured | 3.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[central volume]` | 3.5 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` | not captured | 0.0478 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` | 0.0478 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[peripheral volume one]` | not captured | 3.67 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[peripheral volume one]` | 3.67 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.primary_analyte` | brentuximab vedotin (ADC) and MMAE | brentuximab vedotin | mismatch |
 | `qwen3.8-27b` | `model.links` | [['brentuximab vedotin (adc)', 'mmae', 'metabolism']] | [['brentuximab vedotin', 'mmae', 'metabolism']] | mismatch |
 | `qwen3.8-27b` | `parameters[central volume]` | not captured | 3.5 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[central volume]` | 3.5 | not captured | only_one_extracted |
@@ -122,7 +129,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_brentuximab_vedotin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Suri_2018` / `Suri_2018::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_brentuximab_vedotin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Suri_2018` / `Suri_2018::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -138,4 +145,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 10:33 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 18:28 UTC</sub>

@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;pexidartinib&quot;,&quot;href&quot;:&quot;drugs/drug_pexidartinib/&quot;},{&quot;label&quot;:&quot;Yin_2021_2 \u00b7 PD Overall response rate by RECIST&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;pexidartinib&quot;,&quot;href&quot;:&quot;drugs/drug_pexidartinib/&quot;},{&quot;label&quot;:&quot;Yin_2021_2 \u00b7 PD overall response rate by RECIST&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Overall response rate by RECIST — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span>
+# overall response rate by RECIST — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -13,19 +13,19 @@
 
 ## Record summary
 
-**As extracted:** Pexidartinib (concentrations from the PK model of Yin_2021::estimate_a) drives Overall response rate by RECIST: categorical (graded) response model.
+**As extracted:** Pexidartinib (concentrations from the PK model of Yin_2021::estimate_a) drives overall response rate by RECIST: categorical (graded) response model.
 
 **Model:** No model was generated from this record.
 
-> Average pexidartinib concentration (Cavg) was associated with an increased probability of partial or complete response by RECIST, modeled with an Emax concentration–response term. The paper does not specify a biological mechanism or provide numerical Emax, EC50, or Hill coefficient (γ) values in the excerpts.
+> The paper models the categorical overall response rate (ORR) using a sigmoidal Emax proportional odds logistic regression driven by average pexidartinib concentration (Cavg). The specific parameter values for Emax, EC50, and the Hill coefficient (gamma) are not provided in the text, though near-maximum efficacy is noted at a dose of 800 mg/day.
 >
-> <sub>Source-based summary by gpt-6-luna from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Yin_2021_2`
 - **model family:** `categorical`
 - **driver:** `cited_pk`
-- **tier:** population
-- **effect:** stimulation/additive
+- **tier:** descriptive
+- **effect:** stimulation/unknown
 
 ## Citation
 Yin O et al., Exposure-response analysis of efficacy…, CPT: pharmacometrics & syst… (2021)

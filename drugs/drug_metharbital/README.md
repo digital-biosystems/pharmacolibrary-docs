@@ -18,11 +18,20 @@ Metharbital is a barbiturate derivative that was used as an antiepileptic drug t
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 07:11 | 0:08 | 0/0/0 | 0/0/0 | 0/0/0 | 17,774/199 | einfracz / qwen3.8-27b | 0 | 1/1 | 0/0 | 0 |
+| 2026-10-14 19:32 | 0:21 | 0/0/0 | 0/0/0 | 0/0/0 | 17,774/184 | einfracz / qwen3.8-27b | 0 | 1/1 | 0/0 | 0 |
 
 ## popPK records
 
 _not available_
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=metharbital).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: CHRNA4 (target), CHRNA7 (target), GABRA1 (positive allosteric modulator), GABRA1 (potentiator), GABRA2 (potentiator), GABRA3 (potentiator), GABRA4 (potentiator), GABRA5 (potentiator), GABRA6 (potentiator), GABRG3 (modulator), GRIA2 (target), GRIK2 (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -37,23 +46,13 @@ _not available_
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
-## Full-text requests
-
-_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Farag_1987.pdf` | Farag MM et al., Acute hepatic damage in rats impairs me…, Pharmacology (1987) | popPK | 7 | [10.1159/000138268](https://doi.org/10.1159/000138268) | [2885858](https://pubmed.ncbi.nlm.nih.gov/2885858) | Study reports qualitative changes in clearance and concentration-time curve slopes for metharbital in rats but lacks specific numeric PK parameter values in the provided evidence. |
-
-<sub>queue written 2026-10-07T07:11:46.614012+00:00</sub>
-
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Campbell_2024 | irrelevant | 0 | 0 | The paper describes an analytical method for detecting barbiturates in urine and does not report any pharmacokinetic parameters for metharbital. |
 | popPK | Coupey_1997 | irrelevant | 0 | 0 | The text is a general review of barbiturate abuse in adolescents and contains no pharmacokinetic parameters or specific data for metharbital. |
-| popPK | Farag_1987 | relevant | 7 | 3 | Study reports qualitative changes in clearance and concentration-time curve slopes for metharbital in rats but lacks specific numeric PK parameter values in the provided evidence. |
+| popPK | Farag_1987 | irrelevant | 4 | 1 | The study reports qualitative changes in clearance and slopes but provides no specific numeric pharmacokinetic parameter values in the evidence. |
 | popPK | JONES_1963 | irrelevant | 0 | 0 | The provided evidence contains only a title and no pharmacokinetic data or quantitative parameters for metharbital. |
 | popPK | Kamel_1982 | irrelevant | 0 | 0 | The provided evidence contains only a general category title ("Barbituric acid derivatives") with no specific data, parameters, or mention of metharbital. |
 | popPK | Lyness_1979 | irrelevant | 1 | 0 | The study focuses on behavioral tolerance and brain distribution of barbiturates rather than systemic pharmacokinetic parameters (CL, V, ka) for metharbital. |
@@ -61,7 +60,7 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | popPK | MERLEY_1948 | irrelevant | 0 | 0 | The paper describes a qualitative detection method for barbiturates in urine and does not report any quantitative pharmacokinetic parameters for metharbital. |
 | popPK | MULLAN_1965 | irrelevant | 0 | 0 | The provided evidence contains only a title and no pharmacokinetic data or quantitative parameters for metharbital. |
 | popPK | Neighbors_1995 | irrelevant | 0 | 0 | The paper is a chemical synthesis study of glucuronide derivatives and does not report any pharmacokinetic parameters for metharbital. |
-| popPK | Pressler_2024 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for brivaracetam, not metharbital. |
+| popPK | Pressler_2024 | irrelevant | 0 | 0 | The study evaluates the pharmacokinetics of brivaracetam, not metharbital. |
 | PD | Pressler_2024 | not_relevant | 0 | 0 | The paper reports pharmacokinetics (PK) and safety of brivaracetam, not metharbital, and contains no pharmacodynamic (PD) or exposure-response modeling. |
 | popPK | Rondeau_1981 | irrelevant | 0 | 0 | The paper is a behavioral study on taste aversion using phenobarbital and related drugs, containing no pharmacokinetic parameters for metharbital. |
 | popPK | Sato_1983 | irrelevant | 0 | 0 | The provided evidence contains only software metadata and no scientific content regarding metharbital pharmacokinetics. |

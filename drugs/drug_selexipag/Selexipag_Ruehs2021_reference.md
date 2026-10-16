@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;selexipag&quot;,&quot;href&quot;:&quot;drugs/drug_selexipag/&quot;},{&quot;label&quot;:&quot;Ruehs_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Selexipag_Ruehs2021_reference&quot;,&quot;label&quot;:&quot;Ruehs_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_selexipag/Selexipag_Ruehs2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Selexipag_Ruehs2021_reference&quot;,&quot;label&quot;:&quot;Ruehs_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_selexipag/Selexipag_Ruehs2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # selexipag — `Selexipag_Ruehs2021_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -17,29 +17,32 @@
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Ka use library defaults, not estimates from this paper; t6_deviations.**
+
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — selexipag: CL/F 1.3 L/h, V/F 38.9 L.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Ruehs H et al., Population Pharmacokinetics and Pharmac…, Clinical pharmacokinetics (2021)
   ·  DOI: [10.1007/s40262-021-01024-y](https://doi.org/10.1007/s40262-021-01024-y)
 
-<div class="pk-model-meta" hidden drug="selexipag" model-id="Selexipag_Ruehs2021_reference" status="curated_candidate" stale="false" population="" measured-compound="selexipag" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="selexipag" model-id="Selexipag_Ruehs2021_reference" status="needs_review" stale="false" population="" measured-compound="selexipag" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 3 extracted.
+**Parameters:** 2 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F | `Q27` · CL/F | 1.3 | L/h | 3.611111111111112e-07 | L/h | not captured | review (0.7) | Ruehs_2021:review | — | not captured |
-| V/F | `Q76` · V/F | 38.9 | L | 0.0389 | L | not captured | review (0.7) | Ruehs_2021:review | — | not captured |
-| ka | `Q49` · kabs | 1.5 | 1/h | 0.00041666666666666664 | 1/h | not captured | review (0.7) | Ruehs_2021:review | — | not captured |
+| Population mean estimates (inter-individual variability [%]) for CL/F | `Q27` · CL/F | 1.3 | L/h | 3.611111111111112e-07 | L/h | not captured | review (0.7) | Ruehs_2021:review | — | not captured |
+| Population mean estimates (inter-individual variability [%]) for V/F | `Q76` · V/F | 38.9 | L | 0.0389 | L | not captured | review (0.7) | Ruehs_2021:review | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -49,8 +52,10 @@ Ruehs H et al., Population Pharmacokinetics and Pharmac…, Clinical pharmacokin
 ## Departures & gaps
 
 **Deviations:**
-- `defaulted_parameters`: ['Tlag']
+- `defaulted_parameters`: ['ka', 'Tlag']
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+- `invented_absorption`: ka defaulted — not reported in source
+- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
 
 **Interpretation flags:**
 - built from REVIEW reference values (Ruehs_2021) — secondary source
@@ -77,11 +82,10 @@ _All readers agree on the compared fields of this record._
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Ruehs_2021:review'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Ruehs_2021:review'] |
 | C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Ruehs_2021:review'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
@@ -96,9 +100,9 @@ _All readers agree on the compared fields of this record._
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_output_variable | not captured | pass | C_central (measured=selexipag) | central.C | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
+| T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable; invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -107,10 +111,10 @@ _All readers agree on the compared fields of this record._
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_selexipag/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Ruehs_2021` / `Ruehs_2021::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_selexipag/models/modelica/Selexipag_Ruehs2021_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_selexipag/models/modelica/Selexipag_Ruehs2021_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_selexipag/models/modelica/Selexipag_Ruehs2021_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_selexipag/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Ruehs_2021` / `Ruehs_2021::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_selexipag/models/modelica/Selexipag_Ruehs2021_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_selexipag/models/modelica/Selexipag_Ruehs2021_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_selexipag/models/modelica/Selexipag_Ruehs2021_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -119,20 +123,20 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_selexipag/Selexipag_Ruehs2021_reference/Selexipag_Ruehs2021_reference_modelica.zip" download>Selexipag_Ruehs2021_reference_modelica.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_selexipag/Selexipag_Ruehs2021_reference/Selexipag_Ruehs2021_reference_fmi.zip" download>Selexipag_Ruehs2021_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_selexipag/Selexipag_Ruehs2021_reference/Selexipag_Ruehs2021_reference_matlab.zip" download>Selexipag_Ruehs2021_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_selexipag/Selexipag_Ruehs2021_reference/Selexipag_Ruehs2021_reference_matlab_simbio.zip" download>Selexipag_Ruehs2021_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_selexipag/Selexipag_Ruehs2021_reference/Selexipag_Ruehs2021_reference_modelica.zip" download>Selexipag_Ruehs2021_reference_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_selexipag/Selexipag_Ruehs2021_reference/Selexipag_Ruehs2021_reference_fmi.zip" download>Selexipag_Ruehs2021_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_selexipag/Selexipag_Ruehs2021_reference/Selexipag_Ruehs2021_reference_matlab.zip" download>Selexipag_Ruehs2021_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_selexipag/Selexipag_Ruehs2021_reference/Selexipag_Ruehs2021_reference_matlab_simbio.zip" download>Selexipag_Ruehs2021_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_selexipag/Selexipag_Ruehs2021_reference/Selexipag_Ruehs2021_reference_sbml.zip" download>Selexipag_Ruehs2021_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_selexipag/Selexipag_Ruehs2021_reference/Selexipag_Ruehs2021_reference_cellml.zip" download>Selexipag_Ruehs2021_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_selexipag/Selexipag_Ruehs2021_reference/Selexipag_Ruehs2021_reference_cellml.zip" download>Selexipag_Ruehs2021_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_selexipag/Selexipag_Ruehs2021_reference/Selexipag_Ruehs2021_reference.svg" alt="Selexipag_Ruehs2021_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_selexipag/Selexipag_Ruehs2021_reference/Selexipag_Ruehs2021_reference.svg" alt="Selexipag_Ruehs2021_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 1.8 mg, single dose, first-order absorption (ka 1.5 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 1.8 mg oral (B01AC27) (defined daily dose)._
+**Administration: oral** — 1.8 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 1.8 mg oral (B01AC27) (defined daily dose)._
 
 <dbs-fmusim paramsurl="drugs/drug_selexipag/Selexipag_Ruehs2021_reference/Selexipag_Ruehs2021_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_selexipag/Selexipag_Ruehs2021_reference/Selexipag_Ruehs2021_reference_sim_controls.json"></dbs-fmusim>
 
@@ -141,4 +145,4 @@ _All readers agree on the compared fields of this record._
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 18:20 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 21:41 UTC</sub>

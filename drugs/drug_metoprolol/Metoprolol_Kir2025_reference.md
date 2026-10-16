@@ -4,7 +4,7 @@
 
 # metoprolol — `Metoprolol_Kir2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -18,22 +18,20 @@
 
 ### Reviewer guidance
 
-**The metoprolol/atenolol rat model was held back because its simulated Cmax (0.0498) and tmax (1.81) fail to match the paper's reported values (e.g. 0.025 and 5.0), and the absorption rate was invented rather than reported.**
+**C5 dimension mismatch on a structural parameter.**
 
-Simulated as the paper dosed it, the model's peak concentration exceeds the reported values by ratios of 1.9928, 2.1851, 2.4185 and 3.484 (expected 0.025, 0.0228, 0.0206, 0.0143 vs obtained 0.04982117140128287), and the time of the peak is 1.8062765240005605 against an expected 5.0 (ratio 0.3613), with a minutes-versus-hours unit mismatch noted. The absorption rate constant was defaulted because it was not reported in the source, an invented absorption that was judged not acceptable, and bioavailability and lag time were also left at defaults. Additionally, one reported parameter's unit could not be converted to SI, so that parameter entered the model without an SI value, and a second reader disagreed on the analyte naming and on whether the clearance (16.04 mL/min/kg), absorption rate (1.19 mg/min/kg) and volume of distribution (1.41 L/kg) values belong to this record. Extracted — atenolol and metoprolol: CL 16 mL/min/kg, kabs 1.19 mg/min/kg, V 1.41 L/kg.
+A reported unit could not be converted (CLint, kabs and equation variable), so that value has no SI equivalent. Extracted — metoprolol: Kp 4.03, CLint 148 mL/min/kg, kabs 1.19 mg/min/kg, Vss 5.82 L/kg, CL 16 mL/min/kg.
 
-<sub>reviewed by glm-5.3-flash</sub>
-
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:39:00.182353+00:00) predates the upstream re-run (2026-10-07 00:07:54.133168+00:00). Current validate status: `rejected`.
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Kir F et al., Minimal Physiologically-Based Pharmacok…, European journal of drug me… (2025)
   ·  DOI: [10.1007/s13318-025-00943-6](https://doi.org/10.1007/s13318-025-00943-6)
 
-<div class="pk-model-meta" hidden drug="metoprolol" model-id="Metoprolol_Kir2025_reference" status="rejected" stale="true" population="malnourished rats" measured-compound="metoprolol" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="metoprolol" model-id="Metoprolol_Kir2025_reference" status="rejected" stale="false" population="malnourished rats" measured-compound="metoprolol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 7 extracted.
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -44,11 +42,10 @@ Kir F et al., Minimal Physiologically-Based Pharmacok…, European journal of dr
 |---|---|---|---|---|---|---|---|---|---|---|
 | Kp1 | `Q410` · Kp | 4.033 | not captured | not captured | not captured | not captured | llm (0.6) | Tab3:row4:col2, Tab3:row4:col3, Tab3:row4:col4 | — | not captured |
 | CLint (mL/min/kg) | `Q3` · CLint | 148 | mL/min/kg | not captured | [ml] / [[min] · [kg]] | not captured | exact (1.0) | Tab3:row5:col2, Tab3:row5:col3, Tab3:row5:col4 | — | not captured |
-| k01 C (mg/min/kg) | `Q49` · kabs | 1.19 | mg/min/kg | not captured | [mg] / [[min] · [kg]] | not captured | llm_confirmed (0.6) | Tab3:row6:col1, Tab3:row6:col3, Tab3:row6:col4, Kir_2025_table_2:row5:col1, Kir_2025_table_2:row5:col2, Kir_2025_table_2:row5:col3, Kir_2025_table_2:row5:col4 | — | not captured |
+| k01 C (mg/min/kg) | `Q49` · kabs | 1.19 | mg/min/kg | not captured | [mg] / [[min] · [kg]] | not captured | llm_confirmed (0.6) | Tab3:row6:col2, Tab3:row6:col3, Tab3:row6:col4, Kir_2025_table_2:row5:col2, Kir_2025_table_2:row5:col3, Kir_2025_table_2:row5:col4 | — | not captured |
+| k02 C (mg/min/kg) | `Q900` · equation variable | 1.86 | mg/min/kg | not captured | [mg] / [[min] · [kg]] | not captured | llm (0.6) | Tab3:row8:col2, Tab3:row8:col3, Tab3:row8:col4, Kir_2025_table_2:row7:col2, Kir_2025_table_2:row7:col3, Kir_2025_table_2:row7:col4 | — | not captured |
 | Vss (L/kg) | `Q65` · Vss | 5.82 | L/kg | 0.40740000000000004 | [l] / [kg] | not captured | exact (1.0) | Tab3:row12:col2 | — | not captured |
-| F M | `Q45` · fm | 0.839 | not captured | not captured | not captured | not captured | space_fold (0.95) | Tab3:row14:col1 | — | not captured |
 | CL (mL/min/kg) | `Q22` · CL | 16.04 | mL/min/kg | 1.8713333333333333e-05 | [ml] / [[min] · [kg]] | not captured | exact (1.0) | Kir_2025_table_2:row4:col2, Kir_2025_table_2:row4:col3, Kir_2025_table_2:row4:col4 | — | not captured |
-| k03 Cc (mg/min/kg) | `Q303` · k13 | 0 | mg/min/kg | not captured | [mg] / [[min] · [kg]] | not captured | llm (0.6) | Kir_2025_table_2:row9:col1, Kir_2025_table_2:row9:col2 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -58,43 +55,47 @@ Kir F et al., Minimal Physiologically-Based Pharmacok…, European journal of dr
 ## Departures & gaps
 
 **Interpretation flags:**
+- table representations disagree for 'fd1a'; source reconciliation required
 - column 'linearization' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- column 'definition' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- table representations disagree for 'Kp1'; source reconciliation required
+- table representations disagree for 'CLint (mL/min/kg)'; source reconciliation required
+- table representations disagree for 'k01 C (mg/min/kg)'; source reconciliation required
+- table representations disagree for 'k01 M (mg/min/kg)'; source reconciliation required
+- table representations disagree for 'k02 C (mg/min/kg)'; source reconciliation required
+- table representations disagree for 'k02 M (mg/min/kg)'; source reconciliation required
+- table representations disagree for 'fr C'; source reconciliation required
+- table representations disagree for 'fr M'; source reconciliation required
+- table representations disagree for 'Vss (L/kg)'; source reconciliation required
+- table representations disagree for 'F C'; source reconciliation required
 - dropped unlinked row (NIL): 'fd1a' — extend the ontology if this is a real PK parameter (source ['Tab3:row3:col2', 'Tab3:row3:col3', 'Tab3:row3:col4', 'Kir_2025_table_2:row2:col2', 'Kir_2025_table_2:row2:col3', 'Kir_2025_table_2:row2:col4'])
 - unit_dimension_mismatch: 'CLint (mL/min/kg)' → Q3 (unit '[length] ** 3 / [time]' vs ontology '[length] ** 3 / [time] / [mass]') — route to review
 - unit_dimension_mismatch: 'k01 C (mg/min/kg)' → Q49 (unit '[mass] / [time]' vs ontology '1 / [time]') — route to review
 - unit_dimension_mismatch: 'k01 M (mg/min/kg)' → Q49 (unit '[mass] / [time]' vs ontology '1 / [time]') — route to review
 - dropped duplicate Q49 ('k01 M (mg/min/kg)', value '0.0633') — already have one for this compound
-- dropped unlinked row (NIL): 'k02 C (mg/min/kg)' — extend the ontology if this is a real PK parameter (source ['Tab3:row8:col1', 'Tab3:row8:col2', 'Tab3:row8:col3', 'Tab3:row8:col4', 'Kir_2025_table_2:row7:col1', 'Kir_2025_table_2:row7:col3', 'Kir_2025_table_2:row7:col4'])
-- dropped unlinked row (NIL): 'k02 M (mg/min/kg)' — extend the ontology if this is a real PK parameter (source ['Tab3:row9:col1', 'Tab3:row9:col2', 'Tab3:row9:col3', 'Tab3:row9:col4', 'Kir_2025_table_2:row8:col1', 'Kir_2025_table_2:row8:col2', 'Kir_2025_table_2:row8:col3'])
+- dropped unlinked row (NIL): 'k02 M (mg/min/kg)' — extend the ontology if this is a real PK parameter (source ['Tab3:row9:col2', 'Tab3:row9:col3', 'Tab3:row9:col4', 'Kir_2025_table_2:row8:col2', 'Kir_2025_table_2:row8:col3'])
 - dropped unlinked row (NIL): 'fr C' — extend the ontology if this is a real PK parameter (source ['Tab3:row10:col2', 'Tab3:row10:col3', 'Tab3:row10:col4'])
-- dropped unlinked row (NIL): 'fr M' — extend the ontology if this is a real PK parameter (source ['Tab3:row11:col1', 'Tab3:row11:col2', 'Tab3:row11:col3'])
-- dropped unlinked row (NIL): 'F C' — extend the ontology if this is a real PK parameter (source ['Tab3:row13:col2'])
-- dropped unlinked row (NIL): 'Kp1b' — extend the ontology if this is a real PK parameter (source ['Kir_2025_table_2:row3:col2', 'Kir_2025_table_2:row3:col3', 'Kir_2025_table_2:row3:col4'])
-- unit_dimension_mismatch: 'k03 Cc (mg/min/kg)' → Q303 (unit '[mass] / [time]' vs ontology '1 / [time]') — route to review
-- unit_dimension_mismatch: 'k03 M (mg/min/kg)' → Q303 (unit '[mass] / [time]' vs ontology '1 / [time]') — route to review
-- dropped duplicate Q303 ('k03 M (mg/min/kg)', value '1.16') — already have one for this compound
+- dropped unlinked row (NIL): 'fr M' — extend the ontology if this is a real PK parameter (source ['Tab3:row11:col2', 'Tab3:row11:col3'])
+- dropped duplicate Q900 ('F C', value '0.422') — already have one for this compound
+- dropped duplicate Q410 ('Kp1b', value '1.43') — already have one for this compound
+- dropped unlinked row (NIL): 'k03 Cc (mg/min/kg)' — extend the ontology if this is a real PK parameter (source ['Kir_2025_table_2:row9:col2'])
+- dropped unlinked row (NIL): 'k03 M (mg/min/kg)' — extend the ontology if this is a real PK parameter (source ['Kir_2025_table_2:row10:col2', 'Kir_2025_table_2:row10:col3', 'Kir_2025_table_2:row10:col4'])
 - dropped duplicate Q65 ('Vss (L/kg)d', value '1.41') — already have one for this compound
 - dropped unlinked row (NIL): 'F Ce' — extend the ontology if this is a real PK parameter (source ['Kir_2025_table_2:row12:col2'])
-- dropped unlinked row (NIL): 'F Me' — extend the ontology if this is a real PK parameter (source ['Kir_2025_table_2:row13:col1'])
 - apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q22 (CL (mL/min/kg))
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=metoprolol
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- structure disagreement: deterministic 1C vs LLM 3C — review compartment count
 - status held at route_to_review — not promoted
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- unparsed cell Tab3:row3:col1 = 'Fractional distribution parameter for Tissue 1'
-- unparsed cell Tab3:row4:col1 = 'Tissue-to-plasma partition coefficient for Tissue 1'
-- unparsed cell Tab3:row6:col2 = '4.5*'
-- unparsed cell Kir_2025_table_2:row2:col1 = 'Fractional distribution parameter for Tissue 1'
-- unparsed cell Kir_2025_table_2:row3:col1 = 'Tissue-to-plasma partition coefficient for Tissue 1'
-- unparsed cell Kir_2025_table_2:row6:col1 = '1.012*'
-- unparsed cell Kir_2025_table_2:row7:col2 = '1.86**'
-- companion parameter table 2 transcribed (30 record(s))
+- table Tab3: unbound_uncertainty
+- table Tab3: ragged_grid
+- table Tab3: representations disagree; selected evidence retained, not merged
+- table Kir_2025_table_2: unbound_uncertainty
+- table Kir_2025_table_2: ragged_grid
+- companion parameter table 2 transcribed (32 record(s))
 - LLM selected parameter table(s) 2, 3
 
 ## Validation
@@ -103,36 +104,17 @@ Kir F et al., Minimal Physiologically-Based Pharmacok…, European journal of dr
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 7 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Kir_2025_table_2:row4:col2', 'Kir_2025_table_2:row4:col3', 'Kir_2025_table_2:row4:col4'] |
 | C5_dimension_Q3 | fail | [length] ** 3 / [time] | mL/min/kg | not captured | not captured | ['Tab3:row5:col2', 'Tab3:row5:col3', 'Tab3:row5:col4'] |
-| C5_dimension_Q303 | fail | [mass] / [time] | mg/min/kg | not captured | not captured | ['Kir_2025_table_2:row9:col1', 'Kir_2025_table_2:row9:col2'] |
-| C5_dimension_Q49 | fail | [mass] / [time] | mg/min/kg | not captured | not captured | ['Tab3:row6:col1', 'Tab3:row6:col3', 'Tab3:row6:col4', 'Kir_2025_table_2:row5:col1', 'Kir_2025_table_2:row5:col2', 'Kir_2025_table_2:row5:col3', 'Kir_2025_table_2:row5:col4'] |
+| C5_dimension_Q49 | fail | [mass] / [time] | mg/min/kg | not captured | not captured | ['Tab3:row6:col2', 'Tab3:row6:col3', 'Tab3:row6:col4', 'Kir_2025_table_2:row5:col2', 'Kir_2025_table_2:row5:col3', 'Kir_2025_table_2:row5:col4'] |
 | C5_dimension_Q65 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab3:row12:col2'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 16.04 | not captured | not captured | ['Kir_2025_table_2:row4:col2', 'Kir_2025_table_2:row4:col3', 'Kir_2025_table_2:row4:col4'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 67.4 L/h | not captured | not captured | ['Kir_2025_table_2:row4:col2', 'Kir_2025_table_2:row4:col3', 'Kir_2025_table_2:row4:col4'] |
 | C9_phys_window_Q65 | pass | volume within physiological range | 407 L | not captured | not captured | ['Tab3:row12:col2'] |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_output_variable | not captured | pass | C_central (measured=atenolol and metoprolol) | central.C | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
-| T1_cmax | reference | fail | 0.025 | 0.04982117140128287 | 1.9928 | µg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.0228 | 0.04982117140128287 | 2.1851 | µg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.0143 | 0.04982117140128287 | 3.484 | µg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.0206 | 0.04982117140128287 | 2.4185 | µg/mL→SI vs simulated kg/m3 |
-| T1_tmax | reference | fail | 5.0 | 1.8062765240005605 | 0.3613 | min→SI vs simulated h |
-| T1_tmax | reference | pass | 2.25 | 1.8062765240005605 | 0.8028 | min→SI vs simulated h |
-| T1_tmax | reference | pass | 1.8333333333333333 | 1.8062765240005605 | 0.9852 | min→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -141,10 +123,7 @@ Kir F et al., Minimal Physiologically-Based Pharmacok…, European journal of dr
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_metoprolol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kir_2025` / `Kir_2025::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_metoprolol/models/modelica/Metoprolol_Kir2025_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_metoprolol/models/modelica/Metoprolol_Kir2025_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_metoprolol/models/modelica/Metoprolol_Kir2025_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_metoprolol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kir_2025` / `Kir_2025::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -160,4 +139,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 00:07 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 03:29 UTC</sub>

@@ -80,9 +80,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 |---|---|---|---|---|
 | `gpt-oss:120b` | `model.parameterization` | mechanistic | apparent | mismatch |
 | `gpt-oss:120b` | `parameters[apparent clearance]` | not captured | 21.6 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[estimated glomerular filtration rate]` | not captured | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[median auc was]` | not captured | 1.6 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[ka]` | 57.4 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[median auc]` | 1.6 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[median auc]` | not captured | 1.6 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[previous estimates in adults with t2dm and healthy subjects]` | not captured | 22.9 | only_one_extracted |
 | `gpt-oss:120b` | `screen.dose_compound` | dapagliflozin | unknown | mismatch |
 | `gpt-oss:120b` | `screen.primary_analyte` | dapagliflozin | unknown | mismatch |
@@ -112,7 +112,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_dapagliflozin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Penland_2023` / `Penland_2023::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_dapagliflozin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Penland_2023` / `Penland_2023::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

@@ -5,7 +5,7 @@
 
 # fexofenadine — `Fexofenadine_Jang2023_slco1b1_521t_c_genotypes`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.824). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.938). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -21,7 +21,7 @@
 
 Simulated as the paper dosed it, the model’s time of peak (tmax) differs from the paper’s reported value by more than the tolerance (paper 2 h, model 2.69 h). The model’s peak concentration (Cmax) also differs by more than the tolerance (paper 0.00045, model 0.000109 kg/m³), as does its terminal half-life (paper 2.45 h, model 2.4 h). The absorption-rate constant ka and lag time Tlag were defaulted rather than reported estimates; absorption was represented as first-order depot input, with F=1, Fm=1, and no molar correction. A reported unit could not be converted to SI, leaving its parameter without an SI value. Extracted — fexofenadine: t1/2z 2.45 h, tmax 2 h, Cmax 450 ng/mL, AUCt 2.5e+03 h·ng/mL, AUC∞ 2.63e+03 h·ng/mL, V/F 259 L, CL/F 75.9 L/h, MRT 4.44 h, … (+2).
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of auc108-120: this record has none, the second reading 2633.14; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `parameters[css,mean (ng/ml) a].parameter_id`: this record has Q71, the second reading Q34. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by gpt-6-luna</sub>
 
@@ -89,15 +89,13 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `qwen3.8-27b` | not confirmed | 0.824 (14/17 fields) | 3 |
+| `qwen3.8-27b` | not confirmed | 0.938 (15/16 fields) | 1 |
 
-<details><summary>3 field discrepancies</summary>
+<details><summary>1 field discrepancy</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `qwen3.8-27b` | `parameters[auc108-120]` | not captured | 2633.14 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[css,mean (ng/ml) a].parameter_id` | Q71 | Q34 | mismatch |
-| `qwen3.8-27b` | `parameters[r value a]` | 1.04 | not captured | only_one_extracted |
 
 </details>
 
@@ -171,10 +169,10 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_fexofenadine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Jang_2023` / `Jang_2023::slco1b1_521t_c_genotypes`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_fexofenadine/models/modelica/Fexofenadine_Jang2023_slco1b1_521t_c_genotypes.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_fexofenadine/models/modelica/Fexofenadine_Jang2023_slco1b1_521t_c_genotypes.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_fexofenadine/models/modelica/Fexofenadine_Jang2023_slco1b1_521t_c_genotypes.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_fexofenadine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Jang_2023` / `Jang_2023::slco1b1_521t_c_genotypes`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_fexofenadine/models/modelica/Fexofenadine_Jang2023_slco1b1_521t_c_genotypes.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_fexofenadine/models/modelica/Fexofenadine_Jang2023_slco1b1_521t_c_genotypes.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_fexofenadine/models/modelica/Fexofenadine_Jang2023_slco1b1_521t_c_genotypes.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -192,7 +190,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_fexofenadine/Fexofenadine_Jang2023_slco1b1_521t_c_genotypes/Fexofenadine_Jang2023_slco1b1_521t_c_genotypes.svg" alt="Fexofenadine_Jang2023_slco1b1_521t_c_genotypes diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_fexofenadine/Fexofenadine_Jang2023_slco1b1_521t_c_genotypes/Fexofenadine_Jang2023_slco1b1_521t_c_genotypes.svg" alt="Fexofenadine_Jang2023_slco1b1_521t_c_genotypes diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

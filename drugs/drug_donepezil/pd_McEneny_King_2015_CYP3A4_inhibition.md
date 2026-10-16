@@ -20,9 +20,9 @@
 
 **Model:** No model was generated from this record.
 
-> Donepezil concentrations (μM) inhibit CYP3A4 activity (%), described by a sigmoid Emax inhibition model with an IC50 of 54.68±1.00 μM; the paper excerpts do not state Emax, gamma, or a mechanistic production/elimination pathway.
+> The model describes CYP3A4 inhibition by donepezil using a sigmoid Emax framework. The only parameter reported in the record is an IC50 of 54.68 ± 1.00 μM; no mechanism details, Imax, or rate constants are provided in the available excerpts.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `McEneny-King_2015`
 - **model family:** `sigmoid_emax`

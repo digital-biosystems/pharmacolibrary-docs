@@ -18,7 +18,7 @@
 
 **The model does not reproduce the paper's terminal half-life (model/paper ratio 0.55).**
 
-Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. A reported unit could not be converted (Cmax, AUClast, AUC∞ and AUCt), so that value has no SI equivalent. Extracted — vedolizumab: Cmax 48.2 µg/mL, AUClast 884 µg·day/mL, AUC∞ 899 µg·day/mL, t1/2z 14.3 day, CL 0.2 L/day, V 4.05 L, Vss 5.72 L, AUCt 375 µg·day/mL.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. A reported unit could not be converted (Cmax, AUClast and AUC∞), so that value has no SI equivalent. Extracted — vedolizumab: Cmax 48.2 µg/mL, AUClast 884 µg·day/mL, AUC∞ 899 µg·day/mL, t1/2z 14.3 day, CL 0.2 L/day, V 4.05 L, Vss 5.72 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has vedolizumab, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -28,10 +28,10 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Rosario M et al., A Review of the Clinical Pharmacokineti…, Clinical pharmacokinetics (2017)
   ·  DOI: [10.1007/s40262-017-0546-0](https://doi.org/10.1007/s40262-017-0546-0)
 
-<div class="pk-model-meta" hidden drug="vedolizumab" model-id="Vedolizumab_Rosario2017_reference" status="needs_review" stale="false" population="adults with ulcerative colitis or Crohn&#39;s disease and healthy volunteers" measured-compound="vedolizumab" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="vedolizumab" model-id="Vedolizumab_Rosario2017_reference" status="needs_review" stale="false" population="healthy volunteers, patients with ulcerative colitis, and patients with Crohn&#39;s disease" measured-compound="vedolizumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 8 extracted.
+**Parameters:** 7 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -43,11 +43,10 @@ Rosario M et al., A Review of the Clinical Pharmacokineti…, Clinical pharmacok
 | C max (µg/mL) | `Q32` · Cmax | 48.2 | µg/mL | not captured | [µg] / [ml] | not captured | space_fold (0.95) | Tab2:row2:col1, Tab2:row2:col2, Tab2:row2:col3, Tab2:row2:col4, Tab2:row2:col5, Rosario_2017_table_1:row1:col1, Rosario_2017_table_1:row1:col2, Rosario_2017_table_1:row1:col3, Rosario_2017_table_1:row1:col4, Rosario_2017_table_1:row1:col5 | — | not captured |
 | AUC0−tlast (µg·day/mL) | `Q74` · AUClast | 884 | µg·day/mL | not captured | [[d] · [µg]] / [ml] | not captured | exact (1.0) | Tab2:row3:col1, Tab2:row3:col2, Tab2:row3:col4, Tab2:row3:col5, Rosario_2017_table_1:row2:col1, Rosario_2017_table_1:row2:col2, Rosario_2017_table_1:row2:col3, Rosario_2017_table_1:row2:col4, Rosario_2017_table_1:row2:col5 | — | not captured |
 | AUC0−∞ (µg·day/mL) | `Q17` · AUC∞ | 899 | µg·day/mL | not captured | [[d] · [µg]] / [ml] | not captured | exact (1.0) | Tab2:row4:col1, Tab2:row4:col2, Tab2:row4:col4, Tab2:row4:col5, Rosario_2017_table_1:row3:col1, Rosario_2017_table_1:row3:col2, Rosario_2017_table_1:row3:col3, Rosario_2017_table_1:row3:col4, Rosario_2017_table_1:row3:col5 | — | not captured |
-| t ½ (day) | `Q57` · t1/2z | 14.3 | day | 1235520.0 | [d] | not captured | llm (0.6) | Tab2:row5:col1, Tab2:row5:col2, Tab2:row5:col4, Tab2:row5:col5, Rosario_2017_table_1:row6:col1, Rosario_2017_table_1:row6:col2, Rosario_2017_table_1:row6:col3, Rosario_2017_table_1:row6:col4, Rosario_2017_table_1:row6:col5, Rosario_2017_table_3:row5:col1, Rosario_2017_table_3:row5:col2, Rosario_2017_table_3:row5:col3 | — | not captured |
+| t ½ (day) | `Q57` · t1/2z | 14.3 | day | 1235520.0 | [d] | not captured | llm (0.6) | Tab2:row5:col1, Tab2:row5:col2, Tab2:row5:col4, Tab2:row5:col5, Rosario_2017_table_1:row6:col1, Rosario_2017_table_1:row6:col2, Rosario_2017_table_1:row6:col3, Rosario_2017_table_1:row6:col4, Rosario_2017_table_1:row6:col5 | — | not captured |
 | CL (L/day) | `Q22` · CL | 0.200 | L/day | 2.3148148148148148e-09 | [l] / [d] | not captured | exact (1.0) | Tab2:row6:col1, Tab2:row6:col2, Tab2:row6:col4, Rosario_2017_table_1:row5:col1, Rosario_2017_table_1:row5:col2, Rosario_2017_table_1:row5:col3, Rosario_2017_table_1:row5:col4, Rosario_2017_table_1:row5:col5 | — | not captured |
 | V z (L) | `Q61` · V | 4.05 | L | 0.00405 | [l] | not captured | space_fold (0.95) | Tab2:row7:col1, Tab2:row7:col2, Tab2:row7:col4, Rosario_2017_table_1:row4:col1, Rosario_2017_table_1:row4:col2, Rosario_2017_table_1:row4:col3, Rosario_2017_table_1:row4:col4, Rosario_2017_table_1:row4:col5 | — | not captured |
 | V ss (L) | `Q65` · Vss | 5.72 | L | 0.00572 | [l] | not captured | space_fold (0.95) | Tab2:row8:col1, Tab2:row8:col2, Tab2:row8:col4 | — | not captured |
-| AUCday 0–14 (µg·day/mL) | `Q19` · AUCt | 375 | µg·day/mL | not captured | [[d] · [µg]] / [ml] | not captured | llm (0.6) | Rosario_2017_table_3:row3:col1, Rosario_2017_table_3:row3:col2, Rosario_2017_table_3:row3:col3 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -57,21 +56,28 @@ Rosario M et al., A Review of the Clinical Pharmacokineti…, Clinical pharmacok
 ## Departures & gaps
 
 **Interpretation flags:**
+- table representations disagree for 'Study 1: 180 mg (n = 11b)'; source reconciliation required
+- table representations disagree for 'C max (µg/mL)'; source reconciliation required
+- table representations disagree for 'AUC0−tlast (µg·day/mL)'; source reconciliation required
+- table representations disagree for 'AUC0−∞ (µg·day/mL)'; source reconciliation required
+- table representations disagree for 't ½ (day)'; source reconciliation required
+- table representations disagree for 'CL (L/day)'; source reconciliation required
+- table representations disagree for 'V z (L)'; source reconciliation required
+- table representations disagree for 'V ss (L)'; source reconciliation required
 - dropped unlinked row (NIL): 'Study 1: 180 mg (n = 11b)' — extend the ontology if this is a real PK parameter (source ['Tab2:row1:col1', 'Tab2:row1:col2', 'Tab2:row1:col3', 'Tab2:row1:col4'])
 - dropped unlinked row (NIL): '0.2 mg/kg (n = 4b)' — extend the ontology if this is a real PK parameter (source ['Rosario_2017_table_1:row0:col1', 'Rosario_2017_table_1:row0:col2', 'Rosario_2017_table_1:row0:col3', 'Rosario_2017_table_1:row0:col4'])
-- dropped unlinked row (NIL): '2.0 mg/kg (n = 10b)' — extend the ontology if this is a real PK parameter (source ['Rosario_2017_table_3:row0:col1', 'Rosario_2017_table_3:row0:col2'])
-- dropped duplicate Q32 ('C max, day 1 (µg/mL)', value '54.0') — already have one for this compound
-- dropped duplicate Q32 ('C max, day 85 (µg/mL)', value '60.4') — already have one for this compound
-- dropped duplicate Q19 ('AUCday 85–99 (µg·day/mL)', value '473') — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=vedolizumab
+- status held at route_to_review — not promoted
 - molar mass: none found for 'vedolizumab' — its concentrations stay mass-only
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
+- table Tab2: ragged_grid
+- table Tab2: representations disagree; selected evidence retained, not merged
+- table Rosario_2017_table_1: ragged_grid
 - companion parameter table 1 transcribed (34 record(s))
-- companion parameter table 3 transcribed (17 record(s))
-- LLM selected parameter table(s) 1, 2, 3
+- LLM selected parameter table(s) 1, 2
 
 ## Validation
 
@@ -102,15 +108,14 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 8 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 7 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C1_half_life_beta | fail | 25.5 | 14.036 | 0.5504 | 0.25 | reported t½β |
 | C5_dimension_Q17 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Tab2:row4:col1', 'Tab2:row4:col2', 'Tab2:row4:col4', 'Tab2:row4:col5', 'Rosario_2017_table_1:row3:col1', 'Rosario_2017_table_1:row3:col2', 'Rosario_2017_table_1:row3:col3', 'Rosario_2017_table_1:row3:col4', 'Rosario_2017_table_1:row3:col5'] |
-| C5_dimension_Q19 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Rosario_2017_table_3:row3:col1', 'Rosario_2017_table_3:row3:col2', 'Rosario_2017_table_3:row3:col3'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row6:col1', 'Tab2:row6:col2', 'Tab2:row6:col4', 'Rosario_2017_table_1:row5:col1', 'Rosario_2017_table_1:row5:col2', 'Rosario_2017_table_1:row5:col3', 'Rosario_2017_table_1:row5:col4', 'Rosario_2017_table_1:row5:col5'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Tab2:row2:col1', 'Tab2:row2:col2', 'Tab2:row2:col3', 'Tab2:row2:col4', 'Tab2:row2:col5', 'Rosario_2017_table_1:row1:col1', 'Rosario_2017_table_1:row1:col2', 'Rosario_2017_table_1:row1:col3', 'Rosario_2017_table_1:row1:col4', 'Rosario_2017_table_1:row1:col5'] |
-| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Tab2:row5:col1', 'Tab2:row5:col2', 'Tab2:row5:col4', 'Tab2:row5:col5', 'Rosario_2017_table_1:row6:col1', 'Rosario_2017_table_1:row6:col2', 'Rosario_2017_table_1:row6:col3', 'Rosario_2017_table_1:row6:col4', 'Rosario_2017_table_1:row6:col5', 'Rosario_2017_table_3:row5:col1', 'Rosario_2017_table_3:row5:col2', 'Rosario_2017_table_3:row5:col3'] |
+| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Tab2:row5:col1', 'Tab2:row5:col2', 'Tab2:row5:col4', 'Tab2:row5:col5', 'Rosario_2017_table_1:row6:col1', 'Rosario_2017_table_1:row6:col2', 'Rosario_2017_table_1:row6:col3', 'Rosario_2017_table_1:row6:col4', 'Rosario_2017_table_1:row6:col5'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row7:col1', 'Tab2:row7:col2', 'Tab2:row7:col4', 'Rosario_2017_table_1:row4:col1', 'Rosario_2017_table_1:row4:col2', 'Rosario_2017_table_1:row4:col3', 'Rosario_2017_table_1:row4:col4', 'Rosario_2017_table_1:row4:col5'] |
 | C5_dimension_Q65 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row8:col1', 'Tab2:row8:col2', 'Tab2:row8:col4'] |
 | C5_dimension_Q74 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Tab2:row3:col1', 'Tab2:row3:col2', 'Tab2:row3:col4', 'Tab2:row3:col5', 'Rosario_2017_table_1:row2:col1', 'Rosario_2017_table_1:row2:col2', 'Rosario_2017_table_1:row2:col3', 'Rosario_2017_table_1:row2:col4', 'Rosario_2017_table_1:row2:col5'] |
@@ -127,7 +132,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_vedolizumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Rosario_2017` / `Rosario_2017::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_vedolizumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Rosario_2017` / `Rosario_2017::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -153,4 +158,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 01:05 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 23:33 UTC</sub>

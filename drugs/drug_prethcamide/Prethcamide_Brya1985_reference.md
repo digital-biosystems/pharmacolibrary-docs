@@ -4,7 +4,7 @@
 
 # prethcamide — `Prethcamide_Brya1985_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -22,7 +22,7 @@
 
 The record was built solely from the paper's abstract, so summary statistics replaced fitted model parameters. A structural check found the blood clearance value of 0.05 per minute was dimensionally mismatched for the specified one-compartment topology. Consequently, the model record was rejected rather than published. Extracted — prethcamide: t1/2β 43.1 min, CLb 0.05 1/min, kabs 0.033 1/h, tmax 30 min.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has prethcamide, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has prethcamide, the second reading ethyl butamide and propyl butamide; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -72,24 +72,21 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.143 (2/14 fields) | 12 |
+| `gpt-oss-120b` | not confirmed | 0.25 (3/12 fields) | 9 |
 
-<details><summary>12 field discrepancies</summary>
+<details><summary>9 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.bioavailability.theta` | not captured | -32 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[clb]` | 0.05 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[clb]` | not captured | 0.05 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[f]` | not captured | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[ka, min1-]` | not captured | 0.033 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clb]` | 0.05 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | not captured | 0.033 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[ka]` | 0.033 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[t1/2 beta]` | 43.07 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[t1/2 beta]` | not captured | 43.07 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[tmax]` | 30.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2 beta]` | 43.07 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[tmax]` | not captured | 30.0 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | prethcamide | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | prethcamide | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[tmax]` | 30.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.primary_analyte` | prethcamide | ethyl butamide and propyl butamide | mismatch |
 
 </details>
 
@@ -120,7 +117,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_prethcamide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Bryła_1985` / `Bryła_1985::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_prethcamide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Bryła_1985` / `Bryła_1985::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

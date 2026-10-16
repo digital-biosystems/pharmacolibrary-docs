@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;pemetrexed&quot;,&quot;href&quot;:&quot;drugs/drug_pemetrexed/&quot;},{&quot;label&quot;:&quot;Ouellet_2000 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pemetrexed_Boosman2023_reference&quot;,&quot;label&quot;:&quot;Boosman_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pemetrexed/Pemetrexed_Boosman2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pemetrexed_Cao2022_reference&quot;,&quot;label&quot;:&quot;Cao_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pemetrexed/Pemetrexed_Cao2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pemetrexed_Srinivasan2019_reference&quot;,&quot;label&quot;:&quot;Srinivasan_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pemetrexed/Pemetrexed_Srinivasan2019_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pemetrexed_Boosman2023_test_dose_base_model&quot;,&quot;label&quot;:&quot;Boosman_2023_test_dose_base_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pemetrexed/Pemetrexed_Boosman2023_test_dose_base_model.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pemetrexed_Boosman2023_therapeutic_dose_model&quot;,&quot;label&quot;:&quot;Boosman_2023_therapeutic_dose_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pemetrexed/Pemetrexed_Boosman2023_therapeutic_dose_model.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pemetrexed_Cao2022_reference&quot;,&quot;label&quot;:&quot;Cao_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pemetrexed/Pemetrexed_Cao2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pemetrexed_Srinivasan2019_reference&quot;,&quot;label&quot;:&quot;Srinivasan_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pemetrexed/Pemetrexed_Srinivasan2019_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # pemetrexed — `Pemetrexed_Ouellet2000_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -17,19 +17,19 @@
 
 ### Reviewer guidance
 
-**Pemetrexed's central volume of distribution (11.3) had an undefined unit, causing a dimension mismatch in the two-compartment model.**
+**Only volume was extracted — no clearance.**
 
-The record lists the central volume as 11.3 with a unit of '1', which is not a valid volume unit for pharmacokinetic conversion. This undefined unit triggered a structural dimension check failure. The model parameters were also derived solely from the paper's abstract rather than full fitted data. Extracted — pemetrexed: V1 11.3 1, Q 3.21 l/h, V2 5.2 l.
+A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — pemetrexed: V1 11.3 l, Q 3.21 l/h, V2 5.2 l.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has pemetrexed disodium, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Ouellet D et al., Population pharmacokinetics of pemetrex…, Cancer chemotherapy and pha… (2000)
   ·  DOI: [10.1007/s002800000144](https://doi.org/10.1007/s002800000144)
 
-<div class="pk-model-meta" hidden drug="pemetrexed" model-id="Pemetrexed_Ouellet2000_reference" status="rejected" stale="false" population="cancer patients" measured-compound="pemetrexed disodium" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="pemetrexed" model-id="Pemetrexed_Ouellet2000_reference" status="needs_review" stale="false" population="patients with cancer" measured-compound="pemetrexed disodium" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.
@@ -37,11 +37,11 @@ Ouellet D et al., Population pharmacokinetics of pemetrex…, Cancer chemotherap
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| central volume (V(c)) | `Q63` · V1 | 11.3 | 1 | not captured | [1] | not captured | llm_confirmed (0.6) | Ouellet_2000:abstract | — | not captured |
+| central volume (V(c)) | `Q63` · V1 | 11.3 | l | 0.011300000000000001 | [l] | not captured | llm_confirmed (0.6) | Ouellet_2000:abstract | — | not captured |
 | distributional CL (Q) | `Q30` · Q | 3.21 | l/h | 8.916666666666667e-07 | [l] / [h] | not captured | llm_corrected (0.6) | Ouellet_2000:abstract | — | not captured |
 | peripheral volume (V(p)) | `Q64` · V2 | 5.2 | l | 0.005200000000000001 | [l] | not captured | llm_confirmed (0.6) | Ouellet_2000:abstract | — | not captured |
 
@@ -53,18 +53,15 @@ Ouellet D et al., Population pharmacokinetics of pemetrex…, Cancer chemotherap
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'slope of 0.0292' — extend the ontology if this is a real PK parameter (source ['Ouellet_2000:abstract'])
-- unit_dimension_mismatch: 'central volume (V(c))' → Q63 (unit 'dimensionless' vs ontology '[length] ** 3') — route to review
-- routed 'Between-patient variability was 19.6%' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
-- routed 'coefficient of variation of 23.7%' → Q313 (IOV) to iov — variability estimate, not a structural parameter
-- dropped unlinked row (NIL): 'standard deviation of 0.0410 microg/ml' — extend the ontology if this is a real PK parameter (source ['Ouellet_2000:abstract'])
+- dropped unlinked row (NIL): 'relationship to creatinine clearance (CrCL) with a slope' — extend the ontology if this is a real PK parameter (source ['Ouellet_2000:abstract'])
+- routed 'Between-patient variability' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
+- covariate category for IIV from footnote/prose kept as documentation only (['Ouellet_2000:abstract'])
+- covariate category for add_error from footnote/prose kept as documentation only (['Ouellet_2000:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=pemetrexed disodium
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at route_to_review — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Ouellet_2000_metadata.yaml (7 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Ouellet_2000_metadata.yaml (9 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -104,9 +101,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Ouellet_2000:abstract'] |
-| C5_dimension_Q63 | fail | dimensionless | 1 | not captured | not captured | ['Ouellet_2000:abstract'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Ouellet_2000:abstract'] |
 | C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Ouellet_2000:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q63 | pass | volume within physiological range | 11.3 L | not captured | not captured | ['Ouellet_2000:abstract'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 5.2 L | not captured | not captured | ['Ouellet_2000:abstract'] |
 
 <details class="legend">
@@ -116,14 +114,24 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_pemetrexed/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Ouellet_2000` / `Ouellet_2000::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_pemetrexed/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Ouellet_2000` / `Ouellet_2000::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -132,4 +140,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 17:11 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 21:43 UTC</sub>

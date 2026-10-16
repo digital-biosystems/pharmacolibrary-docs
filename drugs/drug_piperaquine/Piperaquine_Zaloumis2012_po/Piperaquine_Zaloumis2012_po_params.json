@@ -1,0 +1,36 @@
+{
+ "dose_source": "paper",
+ "model_id": "Piperaquine_Zaloumis2012_po",
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  581.0,
+  1050.0,
+  1260.0,
+  2520.0
+ ],
+ "parameters": {
+  "Cl": 1.8333333333333333e-05,
+  "F": 1.0,
+  "Tlag": 0.0,
+  "VdPerKg": 0.12371428571428572,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.000581,
+  "k21": 1.5162037037037037e-06,
+  "ka": 0.00019916666666666667,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662028
+ },
+ "reference_peaks": {
+  "central.C": 1.0834101631347567e-07
+ },
+ "stop_time": 1641600.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

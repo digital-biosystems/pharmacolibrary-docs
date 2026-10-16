@@ -2,7 +2,7 @@
  {
   "key": "Emax",
   "label": "Effect term Emax",
-  "unit": "mg dl -1",
+  "unit": "mg dl-1",
   "scale": 100.00000000000001,
   "min": 0.2,
   "max": 3,
@@ -12,7 +12,7 @@
  {
   "key": "EC50",
   "label": "Potency EC50",
-  "unit": "mg ml -1",
+  "unit": "mg ml-1",
   "scale": 1.0000000000000002,
   "min": 0.1,
   "max": 10,
@@ -30,8 +30,8 @@
  },
  {
   "key": "stop_time",
-  "label": "Exposure range",
-  "unit": "mg ml -1",
+  "label": "Metformin concentration range",
+  "unit": "mg ml-1",
   "scale": 1.0000000000000002,
   "min": 3.7,
   "max": 185.0,

@@ -16,13 +16,13 @@
 
 ### Reviewer guidance
 
-**The record was rejected because the A771726 elimination rate constant (211 h) is dimensionally mismatched with its structural role.**
+**No volume or clearance — not a compartmental population PK model.**
 
-The source text is abstract-only, so summary statistics stand in for a fitted model. The elimination rate constant for A771726 is listed as 211 h, which is dimensionally inconsistent as a rate constant. Additionally, Tmax and Cmax values for A771726 (307 h and 41.5 mg/L) are present without corresponding fitted parameters. Extracted — A771726: kel 211 h, Cmax 41.5 mg/L, tmax 307 h; leflunomide: tmax 13 h, Cmax 2 mg/L.
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cmax: this record has 2.0, the second reading none; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `leflunomide`, measured `A771726`.
 
@@ -32,7 +32,7 @@ Li J et al., Pharmacokinetics of leflunomide in Chin…, Acta pharmacologica Sin
 <div class="pk-model-meta" hidden drug="leflunomide" model-id="Leflunomide_Li2002_reference" status="rejected" stale="false" population="healthy Chinese volunteers" measured-compound="A771726" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 5 extracted.
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -41,34 +41,32 @@ Li J et al., Pharmacokinetics of leflunomide in Chin…, Acta pharmacologica Sin
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| T1/2,ke(h) | `Q47` · kel | 211 | h | not captured | [h] | not captured | exact (1.0) | Li_2002:abstract, Li_2002:abstract, Li_2002:abstract | — | not captured |
+| T1/2,ke(h) | `Q57` · t1/2z | 211 | h | 759600.0 | [h] | not captured | boundary_llm_dim_refused (0.8) | Li_2002:abstract, Li_2002:abstract, Li_2002:abstract | — | not captured |
 | Tmax(h) | `Q56` · tmax | 13 | h | 46800.0 | [h] | not captured | exact (1.0) | Li_2002:abstract, Li_2002:abstract, Li_2002:abstract | — | not captured |
 | Cmax (mg/L) | `Q32` · Cmax | 2.0 | mg/L | not captured | [mg] / [l] | not captured | exact (1.0) | Li_2002:abstract, Li_2002:abstract, Li_2002:abstract | — | not captured |
-| Cmax | `Q32` · Cmax | 41.5 | mg/L | not captured | [mg] / [l] | not captured | exact (1.0) | Li_2002:abstract | — | not captured |
-| Tmax | `Q56` · tmax | 307 | h | 1105200.0 | [h] | not captured | exact (1.0) | Li_2002:abstract | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
+### Unresolved rows _(no Q-code or no value — not parameters)_
+| label (paper) | Q-code | value | link |
+|---|---|---|---|
+| T1/2,ka | Q95 | not captured | llm_corrected |
+
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped value-less row: 'T1/2,ka'
-- unit_dimension_mismatch: 'T1/2,ke(h)' → Q47 (unit '[time]' vs ontology '1 / [time]') — route to review
+- dropped unlinked row (NIL): 'The Cmax, Tmax, AU C0- 24' — extend the ontology if this is a real PK parameter (source ['Li_2002:abstract', 'Li_2002:abstract', 'Li_2002:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=A771726
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - template fit: none — noncompartmental model — not a compartmental parent–metabolite model
-- status held at route_to_review — not promoted
-- row roles (LLM): model_class=noncompartmental; 6/6 row label(s) assigned, 4 linked by role; re-tagged A771726→parent ×7
-- molar mass: none of 1 PubChem candidate(s) is 'A771726' (LLM) — left in mass units
-- molar mass: none found for 'A771726' — its concentrations stay mass-only
+- row roles (LLM): model_class=noncompartmental; 5/5 row label(s) assigned, 0 linked by role; re-tagged A771726→parent ×12
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - review gap-fill skipped: this record measures 'A771726', not leflunomide — the review values are the parent's
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Li_2002_metadata.yaml (12 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Li_2002_metadata.yaml (13 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -103,14 +101,12 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
+| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Li_2002:abstract', 'Li_2002:abstract', 'Li_2002:abstract'] |
-| C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Li_2002:abstract'] |
-| C5_dimension_Q47 | fail | [time] | h | not captured | not captured | ['Li_2002:abstract', 'Li_2002:abstract', 'Li_2002:abstract'] |
 | C5_dimension_Q56 | pass | [time] | not captured | not captured | not captured | ['Li_2002:abstract', 'Li_2002:abstract', 'Li_2002:abstract'] |
-| C5_dimension_Q56 | pass | [time] | not captured | not captured | not captured | ['Li_2002:abstract'] |
+| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Li_2002:abstract', 'Li_2002:abstract', 'Li_2002:abstract'] |
+| C5_dimension_Q95 | pass | [time] | not captured | not captured | not captured | ['Li_2002:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
 <details class="legend">
@@ -120,7 +116,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_leflunomide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Li_2002` / `Li_2002::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_leflunomide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Li_2002` / `Li_2002::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -136,4 +132,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 23:58 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 04:08 UTC</sub>

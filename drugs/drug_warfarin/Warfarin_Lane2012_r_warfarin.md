@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;warfarin&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/&quot;},{&quot;label&quot;:&quot;Lane_2012 \u00b7 r_warfarin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Warfarin_Kwack2026_reference&quot;,&quot;label&quot;:&quot;Kwack_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Kwack2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Lane2012_r_warfarin&quot;,&quot;label&quot;:&quot;Lane_2012_r_warfarin&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Lane2012_r_warfarin.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Warfarin_Lane2012_s_warfarin&quot;,&quot;label&quot;:&quot;Lane_2012_s_warfarin&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Lane2012_s_warfarin.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Sridharan2021_reference&quot;,&quot;label&quot;:&quot;Sridharan_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Sridharan2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Zhu2017_reference&quot;,&quot;label&quot;:&quot;Zhu_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Zhu2017_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Aoyama_2022_INR&quot;,&quot;label&quot;:&quot;Aoyama_2022 \u00b7 INR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/pd_Aoyama_2022_INR.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hirai_2024_PT_INR&quot;,&quot;label&quot;:&quot;Hirai_2024 \u00b7 PT-INR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/pd_Hirai_2024_PT_INR.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Warfarin_Sridharan2021_reference&quot;,&quot;label&quot;:&quot;Sridharan_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Sridharan2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Gomeni2026_reference&quot;,&quot;label&quot;:&quot;Gomeni_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Gomeni2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Kwack2026_reference&quot;,&quot;label&quot;:&quot;Kwack_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Kwack2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Lane2012_estimate&quot;,&quot;label&quot;:&quot;Lane_2012_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Lane2012_estimate.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Lane2012_r_warfarin&quot;,&quot;label&quot;:&quot;Lane_2012_r_warfarin&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Lane2012_r_warfarin.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Warfarin_Lane2012_s_warfarin&quot;,&quot;label&quot;:&quot;Lane_2012_s_warfarin&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Lane2012_s_warfarin.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Zhu2017_reference&quot;,&quot;label&quot;:&quot;Zhu_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Zhu2017_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Aoyama_2022_INR&quot;,&quot;label&quot;:&quot;Aoyama_2022 \u00b7 INR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/pd_Aoyama_2022_INR.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hirai_2024_PT_INR&quot;,&quot;label&quot;:&quot;Hirai_2024 \u00b7 PT-INR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/pd_Hirai_2024_PT_INR.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # warfarin — `Warfarin_Lane2012_r_warfarin`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.545), gpt-oss:120b (not confirmed, agreement 0.545). Primary extraction retained.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.545), gpt-oss:120b (not confirmed, agreement 0.545). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -17,37 +17,36 @@
 
 ### Reviewer guidance
 
-**The warfarin record was held back because bioavailability F (and Tlag) were left at library defaults instead of being estimated or justified from Lane_2012.**
+**No value for warfarin's bioavailability, clearance, volume of distribution and absorption lag time — all 3 extracted parameters describe R-warfarin, not warfarin; t6_deviations.**
 
-The record reports warfarin (R- and S-warfarin) parameters CL 0.00647 and 0.125 l/h, V 1.57 and 10.9 l, and kabs 1.66 1/h, but the deviations check failed because F and Tlag were defaulted rather than extracted. F taken from library defaults affects the simulated profile without support from this paper. A second reader also disagreed on the primary analyte (warfarin vs R-warfarin, S-warfarin) and suggested a missing parameter value of 0.0899. Extracted — warfarin: CL 0.00647 l h -1, V 1.57 l; R-warfarin: CL 0.125 l h -1, V 10.9 l, kabs 1.66 1/h.
+The model was built, but warfarin's bioavailability, clearance, volume of distribution and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — R-warfarin: CL 0.125 l h-1, V 10.9 l, kabs 1.66 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has R-warfarin, S-warfarin, the second reading warfarin; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by glm-5.3-flash</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:33:22.015245+00:00) predates the upstream re-run (2026-10-05 17:16:29.204662+00:00). Current validate status: `extracted`.
-
-> **Dose compound ≠ measured compound:** dosed `warfarin`, measured `R-warfarin, S-warfarin`.
+> **Dose compound ≠ measured compound:** dosed `warfarin`, measured `R-warfarin; S-warfarin`.
 
 ## Citation
 Lane S et al., The population pharmacokinetics of R- a…, British journal of clinical… (2012)
   ·  DOI: [10.1111/j.1365-2125.2011.04051.x](https://doi.org/10.1111/j.1365-2125.2011.04051.x)
 
-<div class="pk-model-meta" hidden drug="warfarin" model-id="Warfarin_Lane2012_r_warfarin" status="extracted" stale="true" population="patients on long-term warfarin therapy" measured-compound="R-warfarin, S-warfarin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="warfarin" model-id="Warfarin_Lane2012_r_warfarin" status="model_quarantined" stale="false" population="patients on long-term warfarin therapy" measured-compound="R-warfarin; S-warfarin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 5 extracted.
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL (l h -1 ) | `Q22` · CL | 0.00647 | l h -1 | 1.7972222222222223e-09 | [l] / [h] | not captured | exact (1.0) | tab_2:row3:col2, tab_2:row3:col5, Lane_2012_table_2:row2:col2, Lane_2012_table_2:row2:col5 | — | 0.352 (None% RSE) |
-| CL (l h -1 ) | `Q22` · CL | 0.125 | l h -1 | 3.472222222222222e-08 | [l] / [h] | not captured | exact (1.0) | tab_2:row3:col4, Lane_2012_table_2:row2:col4 | — | not captured |
-| V (l) | `Q61` · V | 1.57 | l | 0.00157 | [l] | not captured | exact (1.0) | tab_2:row4:col2, tab_2:row4:col5, Lane_2012_table_2:row3:col2, Lane_2012_table_2:row3:col5 | — | not captured |
-| V (l) | `Q61` · V | 10.9 | l | 0.0109 | [l] | not captured | exact (1.0) | tab_2:row4:col4, Lane_2012_table_2:row3:col4 | — | not captured |
-| Ka | `Q49` · kabs | 1.66 | 1/h | 0.0004611111111111111 | 1/h | not captured | exact (1.0) | tab_2:row5:col4, Lane_2012_table_2:row4:col4 | — | not captured |
+| CL (l h-1) | `Q22` · CL | 0.125 | l h-1 | 3.472222222222222e-08 | [l] / [h] | not captured | exact (1.0) | Lane_2012_table_3:row1:col5, Lane_2012_table_2:row1:col5 | — | 43.0 (None% RSE) |
+| V (l) | `Q61` · V | 10.9 | l | 0.0109 | [l] | not captured | exact (1.0) | Lane_2012_table_3:row2:col5, Lane_2012_table_2:row2:col5 | — | not captured |
+| Kas | `Q49` · kabs | 1.66 | 1/h | 0.0004611111111111111 | 1/h | not captured | llm_confirmed (0.6) | Lane_2012_table_3:row3:col5, Lane_2012_table_2:row3:col5 | — | not captured |
+| θwgt | `Q900` · equation variable | 0.650 | not captured | not captured | not captured | not captured | llm (0.6) | Lane_2012_table_3:row4:col5 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -56,69 +55,45 @@ Lane S et al., The population pharmacokinetics of R- a…, British journal of cl
 
 ## Departures & gaps
 
-**Deviations:**
-- `defaulted_parameters`: ['F', 'Tlag']
-
 **Interpretation flags:**
-- table section iiv: 'Covariance (CL, V) †' routed out of structural estimates ('IIV V*')
-- dropped unlinked row (NIL): 'Objective function' — extend the ontology if this is a real PK parameter (source ['tab_2:row1:col4', 'Lane_2012_table_2:row0:col4'])
-- dropped unlinked row (NIL): 'qwgt' — extend the ontology if this is a real PK parameter (source ['tab_2:row6:col2', 'tab_2:row6:col5'])
-- dropped unlinked row (NIL): 'qwgt' — extend the ontology if this is a real PK parameter (source ['tab_2:row6:col4'])
-- dropped unlinked row (NIL): 'qage' — extend the ontology if this is a real PK parameter (source ['tab_2:row7:col2', 'tab_2:row7:col5'])
-- dropped unlinked row (NIL): 'qage' — extend the ontology if this is a real PK parameter (source ['tab_2:row7:col4'])
-- dropped unlinked row (NIL): 'Male' — extend the ontology if this is a real PK parameter (source ['tab_2:row10:col2'])
-- dropped unlinked row (NIL): '*1/*2' — extend the ontology if this is a real PK parameter (source ['tab_2:row13:col2'])
-- dropped unlinked row (NIL): '*2/*2' — extend the ontology if this is a real PK parameter (source ['tab_2:row14:col2'])
-- dropped unlinked row (NIL): '*1/*3' — extend the ontology if this is a real PK parameter (source ['tab_2:row15:col2'])
-- dropped unlinked row (NIL): '*2/*3' — extend the ontology if this is a real PK parameter (source ['tab_2:row16:col2'])
-- dropped unlinked row (NIL): '*3/*3' — extend the ontology if this is a real PK parameter (source ['tab_2:row17:col2'])
-- dropped unlinked row (NIL): 'Missing' — extend the ontology if this is a real PK parameter (source ['tab_2:row18:col2', 'tab_2:row23:col5'])
-- dropped unlinked row (NIL): 'Homozygote' — extend the ontology if this is a real PK parameter (source ['tab_2:row20:col4', 'tab_2:row25:col4'])
-- dropped unlinked row (NIL): 'Heterozygote' — extend the ontology if this is a real PK parameter (source ['tab_2:row21:col4', 'tab_2:row26:col4'])
-- dropped unlinked row (NIL): 'Heterozygote' — extend the ontology if this is a real PK parameter (source ['tab_2:row21:col5', 'tab_2:row26:col5'])
-- dropped unlinked row (NIL): 'Mutant -homozygote' — extend the ontology if this is a real PK parameter (source ['tab_2:row22:col4', 'tab_2:row27:col4'])
-- dropped unlinked row (NIL): 'Mutant -homozygote' — extend the ontology if this is a real PK parameter (source ['tab_2:row22:col5', 'tab_2:row27:col5'])
-- dropped unlinked row (NIL): 'Missing' — extend the ontology if this is a real PK parameter (source ['tab_2:row23:col4'])
-- dropped unlinked row (NIL): 'qCYP3A4' — extend the ontology if this is a real PK parameter (source ['tab_2:row24:col4'])
-- dropped unlinked row (NIL): 'Homozygote' — extend the ontology if this is a real PK parameter (source ['tab_2:row25:col5'])
-- implicit units: 'Ka' → 1/h (from the paper text: "The text states: 'A fixed absorption rate of 1.66 h -1 had to be assumed...'")
-- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q22 (CL (l h -1 )); Q22 (CL (l h -1 )); Q61 (V (l)); Q61 (V (l))
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=R-warfarin, S-warfarin
-- population split: 'r-warfarin' subgroup of Lane_2012 (paper reports 2 populations: r-warfarin, s-warfarin)
-- molar mass: no plausible PubChem entry for 'R-warfarin, S-warfarin' ('R-warfarin, S-warfarin') — left in mass units
-- molar mass: none found for 'R-warfarin, S-warfarin' — its concentrations stay mass-only
+- table representations disagree for 'Objective function'; source reconciliation required
+- table representations disagree for 'CL (l h-1)'; source reconciliation required
+- table representations disagree for 'V (l)'; source reconciliation required
+- table representations disagree for 'Kas'; source reconciliation required
+- table representations disagree for 'θwgt'; source reconciliation required
+- table representations disagree for 'θage'; source reconciliation required
+- table representations disagree for 'Homozygote'; source reconciliation required
+- table representations disagree for 'Heterozygote'; source reconciliation required
+- table representations disagree for 'Mutant – homozygote'; source reconciliation required
+- table representations disagree for 'Missing'; source reconciliation required
+- table representations disagree for 'IIV CL*'; source reconciliation required
+- table representations disagree for 'IIV V*'; source reconciliation required
+- table representations disagree for 'Covariance (CL, V)†'; source reconciliation required
+- table representations disagree for 'Proportional error*'; source reconciliation required
+- table representations disagree for 'Additive error (μg ml-1)'; source reconciliation required
+- dropped unlinked row (NIL): 'Objective function' — extend the ontology if this is a real PK parameter (source ['Lane_2012_table_3:row0:col5', 'Lane_2012_table_2:row0:col5'])
+- dropped duplicate Q900 ('θage', value '-0.00657') — already have one for this compound
+- dropped unlinked row (NIL): 'Homozygote' — extend the ontology if this is a real PK parameter (source ['Lane_2012_table_3:row18:col5', 'Lane_2012_table_3:row23:col5'])
+- dropped unlinked row (NIL): 'Heterozygote' — extend the ontology if this is a real PK parameter (source ['Lane_2012_table_3:row19:col5', 'Lane_2012_table_3:row24:col5', 'Lane_2012_table_3:row25:col5'])
+- dropped unlinked row (NIL): 'Mutant – homozygote' — extend the ontology if this is a real PK parameter (source ['Lane_2012_table_3:row20:col5', 'Lane_2012_table_3:row26:col5'])
+- dropped unlinked row (NIL): 'Missing' — extend the ontology if this is a real PK parameter (source ['Lane_2012_table_3:row21:col5'])
+- implicit units: 'Kas' → 1/h (from the popPK convention: "The text states that a 'fixed absorption rate of 1.66 h -1' was assumed, explicitly providing the unit as h^-1 (or 1/h) ")
+- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q22 (CL (l h-1)); Q61 (V (l))
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=R-warfarin; S-warfarin
+- status held at route_to_review — not promoted
+- population split: 'r-warfarin' subgroup of Lane_2012 (paper reports 3 populations: estimate, r-warfarin, s-warfarin)
+- molar mass: no plausible PubChem entry for 'R-warfarin; S-warfarin' ('R-warfarin; S-warfarin') — left in mass units
+- molar mass: none found for 'R-warfarin; S-warfarin' — its concentrations stay mass-only
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- unparsed cell tab_2:row3:col3 = '(0.131, 0.157)'
-- unparsed cell tab_2:row3:col6 = '(0.115, 0.135)'
-- unparsed cell tab_2:row4:col3 = '(13.5, 19.7)'
-- unparsed cell tab_2:row4:col6 = '(8.63, 13.2)'
-- unparsed cell tab_2:row6:col3 = '(0.037, 0.605)'
-- unparsed cell tab_2:row6:col6 = '(0.391, 0.909)'
-- unparsed cell tab_2:row7:col3 = '(-0.0122, -0.00412)'
-- unparsed cell tab_2:row7:col6 = '(-0.0109, -0.00220)'
-- unparsed cell tab_2:row10:col3 = '(0.982, 1.26)'
-- unparsed cell tab_2:row13:col3 = '(0.732, 0.978)'
-- unparsed cell tab_2:row14:col3 = '(0.561, 0.783)'
-- unparsed cell tab_2:row15:col3 = '(0.355, 0.553)'
-- unparsed cell tab_2:row16:col3 = '(0.259, 0.733)'
-- unparsed cell tab_2:row17:col3 = '(0.222, 0.350)'
-- unparsed cell tab_2:row18:col3 = '(0.606, 0.958)'
-- unparsed cell tab_2:row21:col6 = '(0.648, 0.874)'
-- unparsed cell tab_2:row22:col6 = '(0.120, 0.868)'
-- unparsed cell tab_2:row23:col6 = '(0.701, 0.907)'
-- unparsed cell tab_2:row25:col6 = '(1.13, 1.51)'
-- unparsed cell tab_2:row26:col6 = '(0.723, 1.40)'
-- unparsed cell tab_2:row27:col6 = '().771, 1.10)'
-- unparsed cell Lane_2012_table_2:row2:col3 = '(0.140, 0.158)'
-- unparsed cell Lane_2012_table_2:row2:col6 = '(0.125, 0.139)'
-- unparsed cell Lane_2012_table_2:row3:col3 = '(12.0, 18.4)'
-- unparsed cell Lane_2012_table_2:row3:col6 = '(7.28, 10.9)'
-- unparsed cell Lane_2012_table_2:row8:col3 = '(-40.8, 76.6)'
-- companion parameter table 2 transcribed (14 record(s))
+- table Lane_2012_table_3: ambiguous_uncertainty_binding
+- table tab_2: representations disagree; selected evidence retained, not merged
+- table Lane_2012_table_2: ambiguous_uncertainty_binding
+- table Lane_2012_table_2: unbound_uncertainty
+- companion parameter table 2 transcribed (25 record(s), model stage 'base')
 - LLM selected parameter table(s) 2, 3
 
 ## Validation
@@ -158,20 +133,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_2:row3:col2', 'tab_2:row3:col5', 'Lane_2012_table_2:row2:col2', 'Lane_2012_table_2:row2:col5'] |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_2:row3:col4', 'Lane_2012_table_2:row2:col4'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['tab_2:row5:col4', 'Lane_2012_table_2:row4:col4'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_2:row4:col2', 'tab_2:row4:col5', 'Lane_2012_table_2:row3:col2', 'Lane_2012_table_2:row3:col5'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_2:row4:col4', 'Lane_2012_table_2:row3:col4'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.00647 | not captured | not captured | ['tab_2:row3:col2', 'tab_2:row3:col5', 'Lane_2012_table_2:row2:col2', 'Lane_2012_table_2:row2:col5'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Lane_2012_table_3:row1:col5', 'Lane_2012_table_2:row1:col5'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Lane_2012_table_3:row3:col5', 'Lane_2012_table_2:row3:col5'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Lane_2012_table_3:row2:col5', 'Lane_2012_table_2:row2:col5'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.125 | not captured | not captured | ['Lane_2012_table_3:row1:col5', 'Lane_2012_table_2:row1:col5'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.00647 L/h | not captured | not captured | ['tab_2:row3:col2', 'tab_2:row3:col5', 'Lane_2012_table_2:row2:col2', 'Lane_2012_table_2:row2:col5'] |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.125 L/h | not captured | not captured | ['tab_2:row3:col4', 'Lane_2012_table_2:row2:col4'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 1.57 L | not captured | not captured | ['tab_2:row4:col2', 'tab_2:row4:col5', 'Lane_2012_table_2:row3:col2', 'Lane_2012_table_2:row3:col5'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 10.9 L | not captured | not captured | ['tab_2:row4:col4', 'Lane_2012_table_2:row3:col4'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.125 L/h | not captured | not captured | ['Lane_2012_table_3:row1:col5', 'Lane_2012_table_2:row1:col5'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 10.9 L | not captured | not captured | ['Lane_2012_table_3:row2:col5', 'Lane_2012_table_2:row2:col5'] |
 
 **Reviewer per-scenario checks:**
 
@@ -179,8 +150,8 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 |---|---|---|---|---|---|---|
 | T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_output_variable | not captured | pass | C_central (measured=R-warfarin, S-warfarin) | C_central | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | pass | 5 scholar param(s) emitted or defaulted | 5 covered | not captured | all structural parameters accounted for |
+| T3_output_variable | not captured | pass | C_central (measured=R-warfarin; S-warfarin) | C_central | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable | not captured | LLM adjudication → deterministic rule |
 
@@ -191,10 +162,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_warfarin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Lane_2012` / `Lane_2012::r_warfarin`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_warfarin/models/modelica/Warfarin_Lane2012_r_warfarin.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_warfarin/models/modelica/Warfarin_Lane2012_r_warfarin.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_warfarin/models/modelica/Warfarin_Lane2012_r_warfarin.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_warfarin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Lane_2012` / `Lane_2012::r_warfarin`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_warfarin/models/modelica/_needs_review/Warfarin_Lane2012_r_warfarin.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_warfarin/models/modelica/_needs_review/Warfarin_Lane2012_r_warfarin.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_warfarin/models/modelica/Warfarin_Lane2012_r_warfarin.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -203,16 +174,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_warfarin/Warfarin_Lane2012_r_warfarin/Warfarin_Lane2012_r_warfarin_modelica.zip" download>Warfarin_Lane2012_r_warfarin_modelica.zip</a> <span class="pk-size">(4.9 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_warfarin/Warfarin_Lane2012_r_warfarin/Warfarin_Lane2012_r_warfarin_fmi.zip" download>Warfarin_Lane2012_r_warfarin_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_warfarin/Warfarin_Lane2012_r_warfarin/Warfarin_Lane2012_r_warfarin_matlab.zip" download>Warfarin_Lane2012_r_warfarin_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_warfarin/Warfarin_Lane2012_r_warfarin/Warfarin_Lane2012_r_warfarin_matlab_simbio.zip" download>Warfarin_Lane2012_r_warfarin_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_warfarin/Warfarin_Lane2012_r_warfarin/Warfarin_Lane2012_r_warfarin_sbml.zip" download>Warfarin_Lane2012_r_warfarin_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_warfarin/Warfarin_Lane2012_r_warfarin/Warfarin_Lane2012_r_warfarin_cellml.zip" download>Warfarin_Lane2012_r_warfarin_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_warfarin/Warfarin_Lane2012_r_warfarin/Warfarin_Lane2012_r_warfarin_fmi.zip" download>Warfarin_Lane2012_r_warfarin_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_warfarin/Warfarin_Lane2012_r_warfarin/Warfarin_Lane2012_r_warfarin_matlab.zip" download>Warfarin_Lane2012_r_warfarin_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_warfarin/Warfarin_Lane2012_r_warfarin/Warfarin_Lane2012_r_warfarin_matlab_simbio.zip" download>Warfarin_Lane2012_r_warfarin_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_warfarin/Warfarin_Lane2012_r_warfarin/Warfarin_Lane2012_r_warfarin_sbml.zip" download>Warfarin_Lane2012_r_warfarin_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_warfarin/Warfarin_Lane2012_r_warfarin/Warfarin_Lane2012_r_warfarin_cellml.zip" download>Warfarin_Lane2012_r_warfarin_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_warfarin/Warfarin_Lane2012_r_warfarin/Warfarin_Lane2012_r_warfarin.svg" alt="Warfarin_Lane2012_r_warfarin diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_warfarin/Warfarin_Lane2012_r_warfarin/Warfarin_Lane2012_r_warfarin.svg" alt="Warfarin_Lane2012_r_warfarin diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -225,4 +196,4 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 17:16 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 18:52 UTC</sub>

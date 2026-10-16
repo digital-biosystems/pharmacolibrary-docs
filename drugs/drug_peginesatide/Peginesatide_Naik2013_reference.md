@@ -4,7 +4,7 @@
 
 # peginesatide — `Peginesatide_Naik2013_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.871). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.871). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -16,24 +16,22 @@
 
 ### Reviewer guidance
 
-**The peginesatide record lacks any clearance parameter — only volumes (V2 35.6 mL/kg, V3 7.42 mL/kg, V 34.9 mL/kg) and Q 5.23 mL/kg/hr were extracted — so the disposition is incomplete and the model was held back.**
+**Only volume was extracted — no clearance; vmax has no unit.**
 
-Only volume terms were extracted for peginesatide; no clearance was recorded, so a model would have needed a library default for the missing clearance and was therefore not built. A reference check also failed without computing a comparison (ratio None), so it is inconclusive rather than a demonstrated fault. A second reader further disagreed on covariate forms, reading the BMI effect on Q (-0.485) as a BMI power on the central volume instead, and did not confirm the mean volume of 34.9 mL/kg. Extracted — peginesatide: Vmax 44.7, Km 1.86e+03, V2 35.6, kabs 0.00869, Fab 0.499 F1, Q 5.23, V3 7.42, V 34.9 mL/kg.
+A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (Vmax, Km, Fab and theta_kabs_category), so that value has no SI equivalent. Extracted — peginesatide: Vmax 45.3 in ng/mL/hr, Km 1.88e+03 ng/mL, V1 35.6 mL/kg, kabs 0.00865 1/hr, Fab 0.498 F1, Q 5.23 mL/kg/hr, V2 7.44 mL/kg.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has none, the second reading peginesatide → hemoglobin (pharmacodynamic_stimulation); it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by glm-5.3-flash</sub>
-
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:39:24.225026+00:00) predates the upstream re-run (2026-10-05 21:32:49.280078+00:00). Current validate status: `needs_review`.
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Naik H et al., A Population Pharmacokinetic and Pharma…, PloS one (2013)
   ·  DOI: [10.1371/journal.pone.0066422](https://doi.org/10.1371/journal.pone.0066422)
 
-<div class="pk-model-meta" hidden drug="peginesatide" model-id="Peginesatide_Naik2013_reference" status="needs_review" stale="true" population="patients with chronic kidney disease on dialysis" measured-compound="peginesatide" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="peginesatide" model-id="Peginesatide_Naik2013_reference" status="needs_review" stale="false" population="patients with chronic kidney disease on dialysis" measured-compound="peginesatide" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
-**Parameters:** 7 extracted, plus 5 covariate effects.
+**Parameters:** 7 extracted, plus 6 covariate effects.
 
 **Parameterization:** mechanistic.
 
@@ -42,18 +40,19 @@ Naik H et al., A Population Pharmacokinetic and Pharma…, PloS one (2013)
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Maximum rate of elimination (Vmax), in ng/mL/hr | `Q66` · Vmax | 44.7 | not captured | not captured | not captured | 10.0 | llm_confirmed (0.6) | pone-0066422-t006:row1:col1, pone-0066422-t006:row1:col2, pone-0066422-t006:row1:col3, pone-0066422-t006:row1:col4 | — | not captured |
-| Concentration needed to reach 50% of Vmax (KM),in ng/mL | `Q1` · Km | 1860 | ng/mL | not captured | ng/mL | 14.6 | llm_corrected (0.6) | pone-0066422-t006:row2:col1, pone-0066422-t006:row2:col2, pone-0066422-t006:row2:col3, pone-0066422-t006:row2:col4 | — | 0.0575 (29.0% RSE) |
-| Central volume of distribution (V2), in mL/kg | `Q63` · V1 | 35.6 | mL/kg | 0.002492 | L | 2.7 | boundary_compartment (0.9) | pone-0066422-t006:row3:col1, pone-0066422-t006:row3:col2, pone-0066422-t006:row3:col3, pone-0066422-t006:row3:col4 | — | not captured |
-| Absorption rate constant (Ka), in 1/hr | `Q49` · kabs | 0.00869 | 1/hr | 2.413888888888889e-06 | 1/h | 15.6 | llm_confirmed (0.6) | pone-0066422-t006:row4:col1, pone-0066422-t006:row4:col2, pone-0066422-t006:row4:col3, pone-0066422-t006:row4:col4 | — | 0.190 (32.0% RSE) |
-| Subcutaneous bioavailability (F1) | `Q40` · Fab | 0.499 | F1 | not captured | not captured | 4.4 | llm_confirmed (0.6) | pone-0066422-t006:row5:col1, pone-0066422-t006:row5:col2, pone-0066422-t006:row5:col3, pone-0066422-t006:row5:col4 | — | not captured |
-| Inter–compartmental clearance (Q), in mL/kg/hr | `Q30` · Q | 5.23 | mL/kg/hr | 1.0169444444444444e-07 | L/h | not captured | llm_confirmed (0.6) | pone-0066422-t006:row6:col1, pone-0066422-t006:row6:col2 | — | not captured |
-| Peripheral volume of distribution (V3), in mL/kg | `Q64` · V2 | 7.42 | mL/kg | 0.0005193999999999999 | L | 10.3 | boundary_compartment (0.9) | pone-0066422-t006:row7:col1, pone-0066422-t006:row7:col2, pone-0066422-t006:row7:col3, pone-0066422-t006:row7:col4 | — | 0.100 (8.1% RSE) |
-| theta_q319_bmi_power | `Q900` · theta_q319_bmi_power | -0.485 | not captured | not captured | not captured | 8.7 | not captured (not captured) | pone-0066422-t006:row8:col1, pone-0066422-t006:row8:col2 | — | not captured |
-| theta_q335_age | `Q900` · theta_q335_age | -0.125 | not captured | not captured | not captured | 19.0 | not captured (not captured) | pone-0066422-t006:row9:col1, pone-0066422-t006:row9:col2 | — | not captured |
-| theta_km_weight_power | `Q900` · theta_km_weight_power | -0.190 | not captured | not captured | not captured | 25.5 | not captured (not captured) | pone-0066422-t006:row10:col1, pone-0066422-t006:row10:col2 | — | not captured |
-| theta_q335_category | `Q900` · theta_q335_category | 0.482 | not captured | not captured | not captured | 22.4 | not captured (not captured) | pone-0066422-t006:row11:col1, pone-0066422-t006:row11:col2, pone-0066422-t006:row11:col3, pone-0066422-t006:row11:col4 | — | not captured |
-| theta_kabs_category | `Q900` · theta_kabs_category | 0.00815 | not captured | not captured | not captured | 20.3 | not captured (not captured) | pone-0066422-t006:row13:col1, pone-0066422-t006:row13:col2, pone-0066422-t006:row13:col3, pone-0066422-t006:row13:col4 | — | not captured |
+| Maximum rate of elimination (Vmax), in ng/mL/hr | `Q66` · Vmax | 45.3 | in ng/mL/hr | not captured | [inng] / [[h] · [ml]] | 10.0 | llm_confirmed (0.6) | pone-0066422-t006:row1:col1 | — | not captured |
+| Concentration needed to reach 50% of Vmax (KM),in ng/mL | `Q1` · Km | 1880 | ng/mL | not captured | ng/mL | 14.6 | llm_corrected (0.6) | pone-0066422-t006:row2:col1 | — | 0.0589 (29.0% RSE) |
+| Central volume of distribution (V2), in mL/kg | `Q63` · V1 | 35.6 | mL/kg | 0.002492 | L | 2.7 | boundary_compartment (0.9) | pone-0066422-t006:row3:col1 | — | not captured |
+| Absorption rate constant (Ka), in 1/hr | `Q49` · kabs | 0.00865 | 1/hr | 2.4027777777777777e-06 | 1/h | 15.6 | llm_confirmed (0.6) | pone-0066422-t006:row4:col1 | — | 0.197 (32.0% RSE) |
+| Subcutaneous bioavailability (F1) | `Q40` · Fab | 0.498 | F1 | not captured | not captured | 4.4 | llm_confirmed (0.6) | pone-0066422-t006:row5:col1 | — | not captured |
+| Inter–compartmental clearance (Q), in mL/kg/hr | `Q30` · Q | 5.23 | mL/kg/hr | 1.0169444444444444e-07 | L/h | not captured | llm_confirmed (0.6) | pone-0066422-t006:row6:col1 | — | not captured |
+| Peripheral volume of distribution (V3), in mL/kg | `Q64` · V2 | 7.44 | mL/kg | 0.0005208 | L | 10.3 | boundary_compartment (0.9) | pone-0066422-t006:row7:col1 | — | 0.101 (8.1% RSE) |
+| theta_q319_bmi_power | `Q900` · theta_q319_bmi_power | -0.491 | not captured | not captured | not captured | 8.7 | not captured (not captured) | pone-0066422-t006:row8:col1 | — | not captured |
+| theta_q335_age | `Q900` · theta_q335_age | -0.125 | not captured | not captured | not captured | 19.0 | not captured (not captured) | pone-0066422-t006:row9:col1 | — | not captured |
+| theta_km_weight_power | `Q900` · theta_km_weight_power | -0.194 | not captured | not captured | not captured | 25.5 | not captured (not captured) | pone-0066422-t006:row10:col1 | — | not captured |
+| theta_q335_category | `Q900` · theta_q335_category | 0.477 | not captured | not captured | not captured | 22.4 | not captured (not captured) | pone-0066422-t006:row11:col1 | — | not captured |
+| theta_q335_creatinine | `Q900` · theta_q335_creatinine | 7.84E-04 | not captured | not captured | not captured | 69.1 | not captured (not captured) | pone-0066422-t006:row12:col1 | — | not captured |
+| theta_kabs_category | `Q900` · theta_kabs_category | 0.00811 | in 1/hr | not captured | not captured | 20.3 | not captured (not captured) | pone-0066422-t006:row13:col1 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -63,15 +62,21 @@ Naik H et al., A Population Pharmacokinetic and Pharma…, PloS one (2013)
 ## Departures & gaps
 
 **Interpretation flags:**
+- unit_dimension_unknown: 'in ng/mL/hr' (Vmax)
+- unit_dimension_unknown: 'in ng/mL' (Km)
+- unit_dimension_unknown: 'in mL/kg' (V1)
+- unit_dimension_unknown: 'in 1/hr' (kabs)
+- unit_dimension_unknown: 'in mL/kg/hr' (Q)
+- unit_dimension_unknown: 'in mL/kg' (V2)
 - routed 'Cov between V2 and Ka' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
 - covariate effect for Q319 has no base parameter row (kept as unattached equation-variable)
 - covariate effect for Q335 has no base parameter row (kept as unattached equation-variable)
 - implicit units: 'Maximum rate of elimination (Vmax), in ng/mL/hr' — the LLM proposed 'ng/mL/hr', whose dimension does not fit Q66; left unset
-- implicit units: 'Concentration needed to reach 50% of Vmax (KM),in ng/mL' → ng/mL (from the paper text: "The parameter list explicitly states: 'Concentration needed to reach 50% of Vmax (KM),in ng/mL = 1860'")
-- implicit units: 'Central volume of distribution (V2), in mL/kg' → mL/kg (from the paper text: "The parameter list explicitly states: 'Central volume of distribution (V2), in mL/kg = 35.6'")
-- implicit units: 'Absorption rate constant (Ka), in 1/hr' → 1/hr (from the paper text: "The parameter list explicitly states: 'Absorption rate constant (Ka), in 1/hr = 0.00869'")
-- implicit units: 'Inter–compartmental clearance (Q), in mL/kg/hr' → mL/kg/hr (from the paper text: "The parameter list explicitly states: 'Inter–compartmental clearance (Q), in mL/kg/hr = 5.23'")
-- implicit units: 'Peripheral volume of distribution (V3), in mL/kg' → mL/kg (from the paper text: "The parameter list explicitly states: 'Peripheral volume of distribution (V3), in mL/kg = 7.42'")
+- implicit units: 'Concentration needed to reach 50% of Vmax (KM),in ng/mL' → ng/mL (from the paper text: "Parameter list explicitly states: 'Concentration needed to reach 50% of Vmax (KM),in ng/mL = 1880'")
+- implicit units: 'Central volume of distribution (V2), in mL/kg' → mL/kg (from the paper text: "Parameter list explicitly states: 'Central volume of distribution (V2), in mL/kg = 35.6'; Also supported by text: 'The e")
+- implicit units: 'Absorption rate constant (Ka), in 1/hr' → 1/hr (from the paper text: "Parameter list explicitly states: 'Absorption rate constant (Ka), in 1/hr = 0.00865'")
+- implicit units: 'Inter–compartmental clearance (Q), in mL/kg/hr' → mL/kg/hr (from the paper text: "Parameter list explicitly states: 'Inter–compartmental clearance (Q), in mL/kg/hr = 5.23'")
+- implicit units: 'Peripheral volume of distribution (V3), in mL/kg' → mL/kg (from the paper text: "Parameter list explicitly states: 'Peripheral volume of distribution (V3), in mL/kg = 7.44'")
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=peginesatide
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
@@ -79,14 +84,6 @@ Naik H et al., A Population Pharmacokinetic and Pharma…, PloS one (2013)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- unparsed cell pone-0066422-t006:row8:col3 = '–0.685 to –0.280'
-- unparsed cell pone-0066422-t006:row8:col4 = '–0.685 to –0.280'
-- unparsed cell pone-0066422-t006:row9:col3 = '–0.238 to –0.0015'
-- unparsed cell pone-0066422-t006:row9:col4 = '–0.238 to –0.0015'
-- unparsed cell pone-0066422-t006:row10:col3 = '–0.307 to –0.0895'
-- unparsed cell pone-0066422-t006:row10:col4 = '–0.307 to –0.0895'
-- unparsed cell pone-0066422-t006:row16:col3 = '–0.136 to –0.0342'
-- unparsed cell pone-0066422-t006:row16:col4 = '–0.136 to –0.0342'
 - LLM selected parameter table(s) 6
 
 ## Validation
@@ -123,15 +120,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q1 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['pone-0066422-t006:row2:col1', 'pone-0066422-t006:row2:col2', 'pone-0066422-t006:row2:col3', 'pone-0066422-t006:row2:col4'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['pone-0066422-t006:row6:col1', 'pone-0066422-t006:row6:col2'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['pone-0066422-t006:row4:col1', 'pone-0066422-t006:row4:col2', 'pone-0066422-t006:row4:col3', 'pone-0066422-t006:row4:col4'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['pone-0066422-t006:row3:col1', 'pone-0066422-t006:row3:col2', 'pone-0066422-t006:row3:col3', 'pone-0066422-t006:row3:col4'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['pone-0066422-t006:row7:col1', 'pone-0066422-t006:row7:col2', 'pone-0066422-t006:row7:col3', 'pone-0066422-t006:row7:col4'] |
-| C5_unit_missing_Q66 | fail | [length] ** 3 | not captured | not captured | not captured | ['pone-0066422-t006:row1:col1', 'pone-0066422-t006:row1:col2', 'pone-0066422-t006:row1:col3', 'pone-0066422-t006:row1:col4'] |
+| C5_dimension_Q1 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['pone-0066422-t006:row2:col1'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['pone-0066422-t006:row6:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['pone-0066422-t006:row4:col1'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['pone-0066422-t006:row3:col1'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['pone-0066422-t006:row7:col1'] |
+| C5_unit_missing_Q66 | fail | [length] ** 3 | in ng/mL/hr | not captured | not captured | ['pone-0066422-t006:row1:col1'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q63 | pass | volume within physiological range | 2.49 L | not captured | not captured | ['pone-0066422-t006:row3:col1', 'pone-0066422-t006:row3:col2', 'pone-0066422-t006:row3:col3', 'pone-0066422-t006:row3:col4'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 0.519 L | not captured | not captured | ['pone-0066422-t006:row7:col1', 'pone-0066422-t006:row7:col2', 'pone-0066422-t006:row7:col3', 'pone-0066422-t006:row7:col4'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 2.49 L | not captured | not captured | ['pone-0066422-t006:row3:col1'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 0.521 L | not captured | not captured | ['pone-0066422-t006:row7:col1'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -140,7 +137,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_peginesatide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Naik_2013` / `Naik_2013::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_peginesatide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Naik_2013` / `Naik_2013::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -166,4 +163,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 21:32 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 20:37 UTC</sub>

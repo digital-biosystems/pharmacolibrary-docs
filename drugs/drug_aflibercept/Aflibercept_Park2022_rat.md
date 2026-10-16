@@ -5,7 +5,7 @@
 
 # aflibercept — `Aflibercept_Park2022_rat`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.625). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.625). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -13,25 +13,25 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-> **Species: human + animal.** The paper reports both human and animal data; check which group this record describes before reading it as human pharmacology (read from the LLM relevance screen, p(non-human) 0.50).
+> **Species: rat.** This record comes from an animal study (rat), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
 **Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
-**Aflibercept clearance and volume of distribution values are physiologically implausible, indicating a unit or scale extraction error.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record lists a clearance of 0.0023 %ID/h and a volume of distribution of 0.10 ml for aflibercept. These magnitudes fall outside the physiological window for the drug, suggesting the extracted values do not represent realistic pharmacokinetic parameters. Extracted — aflibercept: t1/2z 29.9 h, AUC∞ 4.48e+04, V 0.1 ml, CL 0.0023.
+Extracted — aflibercept: t1/2z 29.9 h, AUC∞ 4.48e+04, V 0.1 ml, CL 0.0023.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has aflibercept, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Park S et al., Pharmacokinetic evaluation of radiolabe…, Clinical and translational… (2022)
   ·  DOI: [10.1111/cts.13412](https://doi.org/10.1111/cts.13412)
 
-<div class="pk-model-meta" hidden drug="aflibercept" model-id="Aflibercept_Park2022_rat" status="rejected" stale="false" population="mice, rats, and rabbits" measured-compound="aflibercept" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="aflibercept" model-id="Aflibercept_Park2022_rat" status="rejected" stale="false" population="preclinical animal species and predicted human" measured-compound="aflibercept" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.
@@ -56,9 +56,8 @@ Park S et al., Pharmacokinetic evaluation of radiolabe…, Clinical and translat
 ## Departures & gaps
 
 **Interpretation flags:**
-- implicit units: 'AUC0‐∞, %ID∙ml/h' — the LLM proposed '%ID·ml/h', whose dimension does not fit Q17; left unset
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=aflibercept
-- population split: 'rat' subgroup of Park_2022 (paper reports 3 populations: mouse, rabbit, rat)
+- population split: 'rat' subgroup of Park_2022 (paper reports 5 populations: aflibercept, anti‐clec14a, mouse, rabbit, rat)
 - molar mass: none found for 'aflibercept' — its concentrations stay mass-only
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
@@ -115,7 +114,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_aflibercept/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Park_2022` / `Park_2022::rat`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_aflibercept/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Park_2022` / `Park_2022::rat`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -131,4 +130,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 21:50 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 03:57 UTC</sub>

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B06A&quot;,&quot;href&quot;:&quot;atc/B06A.md&quot;},{&quot;label&quot;:&quot;c1-inhibitor, plasma derived&quot;,&quot;href&quot;:&quot;drugs/drug_c1_inhibitor_plasma_derived/&quot;},{&quot;label&quot;:&quot;Bernstein_2010 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;C1InhibitorPlasmaDerived_Pawaskar2018_reference&quot;,&quot;label&quot;:&quot;Pawaskar_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_c1_inhibitor_plasma_derived/C1InhibitorPlasmaDerived_Pawaskar2018_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;C1InhibitorPlasmaDerived_Pawaskar2018_reference&quot;,&quot;label&quot;:&quot;Pawaskar_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_c1_inhibitor_plasma_derived/C1InhibitorPlasmaDerived_Pawaskar2018_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # c1-inhibitor, plasma derived — `C1InhibitorPlasmaDerived_Bernstein2010_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -19,19 +19,17 @@
 
 **Only clearance was extracted — no volume.**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is c1 inhibitor plasma derived's own; they describe C1 esterase inhibitor. Extracted — C1 esterase inhibitor: t1/2z 32.7 hours, CL 0.92 mL/kg/h.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — c1 inhibitor plasma derived: t1/2z 32.7 hours, CL 0.92 mL/kg/h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has C1 esterase inhibitor, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:36:22.912948+00:00) predates the upstream re-run (2026-10-06 00:58:33.910908+00:00). Current validate status: `needs_review`.
-
 ## Citation
 Bernstein JA et al., Population pharmacokinetics of plasma-d…, Annals of allergy, asthma &… (2010)
   ·  DOI: [10.1016/j.anai.2010.06.005](https://doi.org/10.1016/j.anai.2010.06.005)
 
-<div class="pk-model-meta" hidden drug="c1-inhibitor, plasma derived" model-id="C1InhibitorPlasmaDerived_Bernstein2010_reference" status="needs_review" stale="true" population="patients with hereditary angioedema" measured-compound="C1 esterase inhibitor" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="c1-inhibitor, plasma derived" model-id="C1InhibitorPlasmaDerived_Bernstein2010_reference" status="needs_review" stale="false" population="patients with hereditary angioedema" measured-compound="c1_inhibitor_plasma_derived" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.
@@ -43,8 +41,8 @@ Bernstein JA et al., Population pharmacokinetics of plasma-d…, Annals of aller
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| estimated mean half-life | `Q57` · t1/2z | 32.7 | hours | 117720.00000000001 | [h] | not captured | llm (0.6) | Bernstein_2010:abstract | — | not captured |
-| estimated mean clearance | `Q22` · CL | 0.92 | mL/kg/h | 1.7888888888888888e-08 | [ml] / [[h] · [kg]] | not captured | llm_confirmed (0.6) | Bernstein_2010:abstract | — | not captured |
+| mean half-life | `Q57` · t1/2z | 32.7 | hours | 117720.00000000001 | [h] | not captured | llm (0.6) | Bernstein_2010:abstract | — | not captured |
+| mean clearance | `Q22` · CL | 0.92 | mL/kg/h | 1.7888888888888888e-08 | [ml] / [[h] · [kg]] | not captured | llm_confirmed (0.6) | Bernstein_2010:abstract | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -54,12 +52,12 @@ Bernstein JA et al., Population pharmacokinetics of plasma-d…, Annals of aller
 ## Departures & gaps
 
 **Interpretation flags:**
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=C1 esterase inhibitor
-- molar mass: no plausible PubChem entry for 'C1 esterase inhibitor' ('C1 esterase inhibitor') — left in mass units
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=c1_inhibitor_plasma_derived
 - molar mass: none found for 'c1_inhibitor_plasma_derived' — its concentrations stay mass-only
-- molar mass: none found for 'C1 esterase inhibitor' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- review gap-fill skipped: this record measures 'C1 esterase inhibitor', not c1_inhibitor_plasma_derived — the review values are the parent's
+- skipped review gap-fill of V from Farrell_2013: its label names a different analyte ('rhc1inh') — 'volume of distribution of rhC1INH'
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Bernstein_2010_metadata.yaml (2 record(s)); values are summary statistics, not a fitted model
@@ -112,7 +110,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_c1_inhibitor_plasma_derived/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Bernstein_2010` / `Bernstein_2010::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_c1_inhibitor_plasma_derived/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Bernstein_2010` / `Bernstein_2010::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -138,4 +136,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 00:58 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 21:35 UTC</sub>

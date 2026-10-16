@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;repotrectinib&quot;,&quot;href&quot;:&quot;drugs/drug_repotrectinib/&quot;},{&quot;label&quot;:&quot;Du_2025_2 \u00b7 PD Grade 2 or higher (Gr2+) dizziness&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Repotrectinib_Du2025_reference&quot;,&quot;label&quot;:&quot;Du_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_repotrectinib/Repotrectinib_Du2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Grade 2 or higher (Gr2+) dizziness — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span>
@@ -18,9 +17,9 @@
 
 **Model:** No model was generated from this record.
 
-> Repotrectinib exposure, represented by time-varying cumulative half-daily average concentration, was associated with an increased hazard of first Grade 2 or higher dizziness in a Cox proportional-hazards model. The paper does not specify a mechanistic pathway or report potency or rate parameters for this relationship.
+> Repotrectinib exposure acts on the time to first occurrence of Grade 2 or higher dizziness using a Cox proportional-hazards model driven by time-varying cumulative half-daily average drug concentration. The paper states that risk increases with higher exposure but does not specify quantitative potency or rate parameters such as IC50, EC50, or ke0 for this endpoint.
 >
-> <sub>Source-based summary by gpt-6-luna from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Du_2025_2`
 - **model family:** `tte`

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;golimumab&quot;,&quot;href&quot;:&quot;drugs/drug_golimumab/&quot;},{&quot;label&quot;:&quot;Zhou_2007 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Golimumab_Dreesen2020_reference&quot;,&quot;label&quot;:&quot;Dreesen_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_golimumab/Golimumab_Dreesen2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Golimumab_Lee2023_reference&quot;,&quot;label&quot;:&quot;Lee_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_golimumab/Golimumab_Lee2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Golimumab_RodrguezFernndez2022_reference&quot;,&quot;label&quot;:&quot;Rodr\u00edguez-Fern\u00e1ndez_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_golimumab/Golimumab_RodrguezFernndez2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Golimumab_Dreesen2020_base_model_estimate_rse&quot;,&quot;label&quot;:&quot;Dreesen_2020_base_model_estimate_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_golimumab/Golimumab_Dreesen2020_base_model_estimate_rse.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Golimumab_Lee2023_reference&quot;,&quot;label&quot;:&quot;Lee_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_golimumab/Golimumab_Lee2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -45,10 +45,10 @@ _No resolved parameters._
 
 **Interpretation flags:**
 - table section iiv: 'median half-life' routed out of structural estimates ('Interindividual variability of the pharmacokinetic parameters was quantified for CL (44.3%), V(c) (25.5%), Q (44.6%), and V(p) (44.6%).')
-- table section iiv: 'clearance (CL)' routed out of structural estimates ('Interindividual variability of the pharmacokinetic parameters was quantified for CL (44.3%), V(c) (25.5%), Q (44.6%), and V(p) (44.6%).')
-- table section iiv: 'volume of distribution in the central compartment (V(c))' routed out of structural estimates ('Interindividual variability of the pharmacokinetic parameters was quantified for CL (44.3%), V(c) (25.5%), Q (44.6%), and V(p) (44.6%).')
-- table section iiv: 'intercompartmental clearance (Q)' routed out of structural estimates ('Interindividual variability of the pharmacokinetic parameters was quantified for CL (44.3%), V(c) (25.5%), Q (44.6%), and V(p) (44.6%).')
-- table section iiv: 'volume of distribution in the peripheral compartment (V(p))' routed out of structural estimates ('Interindividual variability of the pharmacokinetic parameters was quantified for CL (44.3%), V(c) (25.5%), Q (44.6%), and V(p) (44.6%).')
+- table section iiv: 'clearance (CL' routed out of structural estimates ('Interindividual variability of the pharmacokinetic parameters was quantified for CL (44.3%), V(c) (25.5%), Q (44.6%), and V(p) (44.6%).')
+- table section iiv: 'volume of distribution in the central compartment (V(c)' routed out of structural estimates ('Interindividual variability of the pharmacokinetic parameters was quantified for CL (44.3%), V(c) (25.5%), Q (44.6%), and V(p) (44.6%).')
+- table section iiv: 'intercompartmental clearance (Q' routed out of structural estimates ('Interindividual variability of the pharmacokinetic parameters was quantified for CL (44.3%), V(c) (25.5%), Q (44.6%), and V(p) (44.6%).')
+- table section iiv: 'volume of distribution in the peripheral compartment (V(p)' routed out of structural estimates ('Interindividual variability of the pharmacokinetic parameters was quantified for CL (44.3%), V(c) (25.5%), Q (44.6%), and V(p) (44.6%).')
 - table section iiv: 'Interindividual variability of the pharmacokinetic parameters ... CL' routed out of structural estimates ('Interindividual variability of the pharmacokinetic parameters was quantified for CL (44.3%), V(c) (25.5%), Q (44.6%), and V(p) (44.6%).')
 - table section iiv: 'Interindividual variability of the pharmacokinetic parameters ... V(c)' routed out of structural estimates ('Interindividual variability of the pharmacokinetic parameters was quantified for CL (44.3%), V(c) (25.5%), Q (44.6%), and V(p) (44.6%).')
 - table section iiv: 'Interindividual variability of the pharmacokinetic parameters ... Q' routed out of structural estimates ('Interindividual variability of the pharmacokinetic parameters was quantified for CL (44.3%), V(c) (25.5%), Q (44.6%), and V(p) (44.6%).')
@@ -94,7 +94,7 @@ _All readers agree on the compared fields of this record._
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_golimumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Zhou_2007` / `Zhou_2007::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_golimumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Zhou_2007` / `Zhou_2007::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -110,4 +110,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 00:10 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 22:12 UTC</sub>

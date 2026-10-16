@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01C&quot;,&quot;href&quot;:&quot;atc/C01C.md&quot;},{&quot;label&quot;:&quot;theodrenaline&quot;,&quot;href&quot;:&quot;drugs/drug_theodrenaline/&quot;},{&quot;label&quot;:&quot;Dings_2026 \u00b7 PD Heart rate&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Heart rate — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.833). Primary extraction retained.">cross-check: disputed</span>
+# Heart rate — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -13,16 +13,16 @@
 
 ## Record summary
 
-**As extracted:** Cafedrine/theodrenaline (measured concentrations) drives Heart rate (in bpm): direct Emax (saturable) effect.
+**As extracted:** Cafedrine/theodrenaline (measured concentrations) drives Heart rate (in bpm): delayed effect through transit (transduction) compartments.
 
 **Model:** No model was generated from this record.
 
-> The paper describes an Emax model where the concentration of cafedrine/theodrenaline in the final transit compartment drives an additive increase in heart rate, with a maximum effect (MAXHR) of 77.9 bpm. The record lists a half-effective concentration of 5.63 mg/L, but the provided paper excerpts do not state this specific potency value or the mechanism of action for the heart rate response.
+> The pharmacodynamic effect of cafedrine/theodrenaline concentration on heart rate is described by an Emax model utilizing an effect compartment to drive the response. The population estimate for maximum heart rate (Emax) was 77.9 bpm, and the paper states that cafedrine/theodrenaline acts via β1-adrenoceptor stimulation and phosphodiesterase inhibition.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Dings_2026`
-- **model family:** `emax`
+- **model family:** `transduction`
 - **driver:** `conc_no_pk`
 - **tier:** population
 - **effect:** stimulation/additive
@@ -37,6 +37,7 @@ Dings C et al., Pharmacometric Analysis of Cafedrine/Th…, Pharmaceutics (2026)
 | PD (effect) | Maximum HR | `Q320` · not captured | 77.8 | bpm | not captured | llm (not captured) | Dings_2026:pdv3 |
 | PD (effect) | Half-effective concentration HR | `Q321` · not captured | 5.63 | mg/L | not captured | llm (not captured) | Dings_2026:pdv3 |
 | variability | Proportional error HR | `Q315` · not captured | 13 | %CV | not captured | llm (not captured) | Dings_2026:pdv3 |
+| variability | IIV on MAXHR | `Q312` · not captured | 15.8 | %CV | not captured | llm (not captured) | Dings_2026:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -45,17 +46,18 @@ Dings C et al., Pharmacometric Analysis of Cafedrine/Th…, Pharmaceutics (2026)
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `einfracz:gpt-oss-120b` | not confirmed | 0.833 (5/6 fields) | 1 |
+| `einfracz:gpt-oss-120b` | not confirmed | 0.667 (4/6 fields) | 2 |
 
-<details><summary>1 field discrepancy</summary>
+<details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `einfracz:gpt-oss-120b` | `driver_compound` | cafedrine/theodrenaline | cafedrine/theodrenaline (C/T) | mismatch |
+| `einfracz:gpt-oss-120b` | `model_family` | transduction | emax | mismatch |
 
 </details>
 

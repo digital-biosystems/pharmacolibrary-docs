@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;pazopanib&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/&quot;},{&quot;label&quot;:&quot;Balakirouchenane_2020 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pazopanib_Attia2023_reference&quot;,&quot;label&quot;:&quot;Attia_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Attia2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pazopanib_Balakirouchenane2020_reference&quot;,&quot;label&quot;:&quot;Balakirouchenane_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Balakirouchenane2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Pazopanib_Bins2019_base&quot;,&quot;label&quot;:&quot;Bins_2019_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Bins2019_base.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pazopanib_Bins2019_final&quot;,&quot;label&quot;:&quot;Bins_2019_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Bins2019_final.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pazopanib_Ozbey2021_reference&quot;,&quot;label&quot;:&quot;Ozbey_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Ozbey2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pazopanib_Attia2023_reference&quot;,&quot;label&quot;:&quot;Attia_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Attia2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pazopanib_Balakirouchenane2020_reference&quot;,&quot;label&quot;:&quot;Balakirouchenane_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Balakirouchenane2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Pazopanib_Ozbey2021_reference&quot;,&quot;label&quot;:&quot;Ozbey_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Ozbey2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -37,12 +37,12 @@ Balakirouchenane D et al., Population Pharmacokinetics/Pharmacodyn…, Cancers (
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F | `Q27` · CL/F | 17.7 | L/h | 4.9166666666666665e-06 | L/h | not captured | review (0.7) | Balakirouchenane_2020:review | — | not captured |
-| V 5 /F | `Q76` · V/F | 25.7 | L | 0.0257 | L | not captured | review (0.7) | Balakirouchenane_2020:review | — | not captured |
-| V 2 /F | `Q82` · V2/F | 39.5 | L | 0.0395 | L | not captured | review (0.7) | Balakirouchenane_2020:review | — | not captured |
-| Q/F | `Q69` · Q/F | 3.85 | L/h | 1.0694444444444445e-06 | L/h | not captured | review (0.7) | Balakirouchenane_2020:review | — | not captured |
-| k a | `Q49` · kabs | 1.8 | 1/h | 0.0005 | 1/h | not captured | review (0.7) | Balakirouchenane_2020:review | — | not captured |
-| Tlag | `Q83` · tlag | 0.5 | h | 1800.0 | h | not captured | review (0.7) | Balakirouchenane_2020:review | — | not captured |
+| CL/F (L/h) Estimate (Base DAB/OHD Model) | `Q27` · CL/F | 17.7 | L/h | 4.9166666666666665e-06 | L/h | not captured | review (0.7) | Balakirouchenane_2020:review | — | not captured |
+| V 5 /F (L) Estimate (Base DAB/OHD Model) | `Q76` · V/F | 25.7 | L | 0.0257 | L | not captured | review (0.7) | Balakirouchenane_2020:review | — | not captured |
+| V 2 /F (L) Estimate (Base DAB/OHD Model) | `Q82` · V2/F | 39.5 | L | 0.0395 | L | not captured | review (0.7) | Balakirouchenane_2020:review | — | not captured |
+| Q/F (L/h) Estimate (Base DAB/OHD Model) | `Q69` · Q/F | 3.85 | L/h | 1.0694444444444445e-06 | L/h | not captured | review (0.7) | Balakirouchenane_2020:review | — | not captured |
+| Tlag (h) Estimate (Base DAB/OHD Model) | `Q83` · tlag | 0.5 | h | 1800.0 | h | not captured | review (0.7) | Balakirouchenane_2020:review | — | not captured |
+| k a (1/h) Estimate (Base DAB/OHD Model) | `Q49` · kabs | 1.8 | 1/h | 0.0005 | 1/h | not captured | review (0.7) | Balakirouchenane_2020:review | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -124,10 +124,10 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_pazopanib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Balakirouchenane_2020` / `Balakirouchenane_2020::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_pazopanib/models/modelica/Pazopanib_Balakirouchenane2020_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_pazopanib/models/modelica/Pazopanib_Balakirouchenane2020_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_pazopanib/models/modelica/Pazopanib_Balakirouchenane2020_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_pazopanib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Balakirouchenane_2020` / `Balakirouchenane_2020::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_pazopanib/models/modelica/Pazopanib_Balakirouchenane2020_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_pazopanib/models/modelica/Pazopanib_Balakirouchenane2020_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_pazopanib/models/modelica/Pazopanib_Balakirouchenane2020_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -145,7 +145,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_pazopanib/Pazopanib_Balakirouchenane2020_reference/Pazopanib_Balakirouchenane2020_reference.svg" alt="Pazopanib_Balakirouchenane2020_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_pazopanib/Pazopanib_Balakirouchenane2020_reference/Pazopanib_Balakirouchenane2020_reference.svg" alt="Pazopanib_Balakirouchenane2020_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -158,4 +158,4 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 04:32 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 20:20 UTC</sub>

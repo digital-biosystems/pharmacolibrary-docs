@@ -18,7 +18,7 @@ Penbutolol is a non-selective beta blocker that was used to treat high blood pre
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 00:33 | 0:42 | 0/0/0 | 1/1/0 | 0/0/0 | 21,112/786 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-15 03:34 | 0:32 | 0/0/0 | 1/1/0 | 0/0/0 | 21,112/968 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
@@ -29,7 +29,21 @@ _not available_
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Brockmeier_1988_reduction_in_exercise_induced_tachycardia](drugs/drug_penbutolol/pd_Brockmeier_1988_reduction_in_exercise_induced_tachycardia.md) | reduction in exercise-induced tachycardia ← penbutolol · direct Emax (saturable) effect | — | Brockmeier D et al., Penbutolol: pharmacokinetics, effect on…, European journal of clinica… (1988) | [10.1007/BF00637597](https://doi.org/10.1007/BF00637597) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span> | [Aguirre_1996_HR](drugs/drug_penbutolol/pd_Aguirre_1996_HR.md) | heart rate ← penbutolol · direct linear effect | — | Aguirre C et al., Pharmacokinetics and pharmacodynamics o…, Research communications in… (1996) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span> | [Aguirre_1996_HR](drugs/drug_penbutolol/pd_Aguirre_1996_HR.md) | heart rate (HR) ← penbutolol · direct linear effect | — | Aguirre C et al., Pharmacokinetics and pharmacodynamics o…, Research communications in… (1996) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Aguirre_1996_HR_2](drugs/drug_penbutolol/pd_Aguirre_1996_HR_2.md) | heart rate (HR) ← penbutolol · model not identified | — | Aguirre C et al., Pharmacokinetics and pharmacodynamics o…, Research communications in… (1996) | — |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=penbutolol).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| distribution | blood | `ORM1` other/unknown | DrugBank actor |
+| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
+| metabolism | liver | `CYP2D6` substrate | DrugBank actor |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: ADRB1 (partial agonist), ADRB1 (target), ADRB2 (partial agonist), ADRB2 (target), HTR1A (target), HTR1B (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,14 +60,15 @@ _not available_
 
 ## Full-text requests
 
-_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
+| `Aguirre_1996.pdf` | Aguirre C et al., Pharmacokinetics and pharmacodynamics o…, Research communications in… (1996) | pd | 5 | not captured | [8733828](https://www.ncbi.nlm.nih.gov/pubmed/8733828) | metadata signals extractable PD data (pk/pd) |
 | `Wellstein_1985.pdf` | Wellstein A et al., Penbutolol: beta-adrenoceptor interacti…, European journal of clinica… (1985) | pd | 5 | [10.1007/BF00544083](https://doi.org/10.1007/BF00544083) | [3000796](https://www.ncbi.nlm.nih.gov/pubmed/3000796) | metadata signals extractable PD data (IC50) |
 | `Grobecker_1976.pdf` | Grobecker H et al., [Specific and non-specific effects of b…, Klinische Wochenschrift (1976) | pd | 4 | [10.1007/BF01614295](https://doi.org/10.1007/BF01614295) | [8664](https://www.ncbi.nlm.nih.gov/pubmed/8664) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-10-07T00:32:37.421281+00:00</sub>
+<sub>queue written 2026-10-15T03:34:30.870656+00:00</sub>
 
 ## Screened and excluded
 
@@ -74,15 +89,15 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | popPK | Mutschler_1984 | irrelevant | 2 | 0 | The study focuses on drug-drug interactions and reports qualitative changes in metabolite levels rather than quantitative disposition parameters (CL, V, etc.) for penbutolol. |
 | PD | Mutschler_1984 | not_relevant | 1 | 0 | The paper reports qualitative findings that pharmacodynamic effects (inhibition of tachycardia) were not affected by co-administration, but provides no numeric PD parameters or concentration-effect curves. |
 | popPK | Müller_1979 | irrelevant | 2 | 0 | The paper discusses pharmacokinetics qualitatively but provides no quantitative disposition parameters (CL, V, ka, etc.) for penbutolol in the evidence. |
-| popPK | Schlicker_1992 | irrelevant | 0 | 0 | The study focuses on the pharmacology of anpirtoline, using penbutolol only as a receptor antagonist in binding and functional assays, with no PK parameters reported. |
+| popPK | Schlicker_1992 | irrelevant | 0 | 0 | The paper focuses on the pharmacology of anpirtoline, and penbutolol is only mentioned as a non-selective receptor antagonist used to confirm mechanism, with no PK data provided. |
 | PD | Schlicker_1992 | not_relevant | 0 | 0 | The paper studies anpirtoline, not penbutolol; penbutolol is only mentioned as a 5-HT1B antagonist used to block anpirtoline's effects, with no PD parameters reported for penbutolol itself. |
 | popPK | Schoenberger_1989 | irrelevant | 0 | 0 | The paper is a clinical efficacy study evaluating blood pressure response and does not report any pharmacokinetic parameters for penbutolol. |
 | popPK | Sharma_1978 | irrelevant | 0 | 0 | The study reports comparative potency and pharmacodynamic effects (heart rate) but contains no pharmacokinetic parameters such as clearance, volume, or half-life. |
 | popPK | Silke_1983 | irrelevant | 2 | 0 | The study reports plasma concentrations and haemodynamic effects but does not provide quantitative pharmacokinetic parameters such as clearance, volume of distribution, or half-life. |
 | popPK | Silke_1984 | irrelevant | 1 | 0 | The study is a comparative haemodynamic dose-response analysis that does not report quantitative pharmacokinetic parameters (e.g., clearance, volume) for penbutolol. |
 | PD | Silke_1984 | not_relevant | 3 | 2 | The study reports qualitative comparative haemodynamic effects of fixed doses but does not provide numeric concentration-effect data, dose-response curves, or specific PD parameters (e.g., EC50, Emax) for penbutolol. |
-| popPK | Sánchez_1995 | irrelevant | 0 | 0 | The study is a behavioral pharmacology experiment in mice investigating serotonergic mechanisms, with no pharmacokinetic parameters reported for penbutolol. |
-| popPK | Sánchez_1997 | irrelevant | 0 | 0 | The study is a behavioral pharmacology experiment in mice using penbutolol as a probe drug to test receptor involvement, with no pharmacokinetic parameters reported. |
+| popPK | Sánchez_1995 | irrelevant | 0 | 0 | The study is a behavioral pharmacology experiment in mice investigating serotonergic mechanisms, with no pharmacokinetic parameter estimation for penbutolol. |
+| popPK | Sánchez_1997 | irrelevant | 0 | 0 | The study is a behavioral pharmacology experiment in mice where penbutolol is used as a probe to characterize receptor mechanisms, not a pharmacokinetic study reporting quantitative disposition parameters. |
 | popPK | Wellstein_1985 | irrelevant | 2 | 0 | The study focuses on in-vitro receptor binding and qualitative plasma concentration profiles without reporting quantitative pharmacokinetic parameters like clearance or volume of distribution. |
 | popPK | Wong_2014 | irrelevant | 0 | 0 | The paper is a systematic review of blood pressure efficacy, not a pharmacokinetic study, and contains no PK parameters for penbutolol. |
 | PD | Wong_2014 | not_relevant | 2 | 1 | The paper is a systematic review that concludes there is no convincing dose-response relationship for blood pressure and provides only aggregate mean differences, lacking specific numeric PD parameters (e.g., Emax, EC50) or individual concentration-effect data for penbutolol. |

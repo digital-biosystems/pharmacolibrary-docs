@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;ritlecitinib&quot;,&quot;href&quot;:&quot;drugs/drug_ritlecitinib/&quot;},{&quot;label&quot;:&quot;Huh_2024 \u00b7 PD SALT score&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;ritlecitinib&quot;,&quot;href&quot;:&quot;drugs/drug_ritlecitinib/&quot;},{&quot;label&quot;:&quot;Huh_2024 \u00b7 PD Severity of Alopecia Tool score&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# SALT score — PD  <span class="pk-badge pk-badge--orange">needs review</span>
+# Severity of Alopecia Tool score — PD  <span class="pk-badge pk-badge--green">accepted (caveats)</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -13,11 +13,11 @@
 
 ## Record summary
 
-**As extracted:** Ritlecitinib (concentrations from the PK model of Purohit_2023::study_1_30_mg_qd) drives SALT score: indirect response — drug stimulates the production of SALT score.
+**As extracted:** Ritlecitinib (concentrations from the PK model of Purohit_2023) drives Severity of Alopecia Tool score: indirect response — drug stimulates the production of Severity of Alopecia Tool score.
 
 **Model:** No model was generated from this record.
 
-> Ritlecitinib plasma concentrations (ng/mL) directly stimulate the production of the SALT score (0-100, where 0 is no hair loss) via an Indirect Response Type III (IRIII) model, with a maximum effect (Emax) of 15.8 and an EC50 of 53.6 ng/mL. The response is characterized by an elimination rate constant (kout2) with a half-life of 7.80 wk.
+> Ritlecitinib concentration (ng/mL) directly modulates the baseline (BASE) parameter of the SALT score (Indirect Response III model with direct effect on production), rather than inhibiting or stimulating response turnover via kout. The model is characterized by an Emax of 15.8 and an EC50 of 53.6 ng/mL, with a basal SALT response half-life (kout2) of 7.80 weeks.
 >
 > <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
@@ -34,9 +34,16 @@ Huh Y et al., Moving Beyond Boundaries: Utilization o…, Clinical pharmacokinet
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
+| PD (effect) | BASE for non-AT/AU | `Q324` · not captured | 1.92 | not captured | not captured | llm (not captured) | Huh_2024:pdv3 |
+| PD (effect) | BASE for AT/AU | `Q324` · not captured | 11.6 | not captured | not captured | llm (not captured) | Huh_2024:pdv3 |
+| model term | B7981032 effect on BASE for non-AT/AU | `Q900` · not captured | -0.645 | not captured | not captured | llm (not captured) | Huh_2024:pdv3 |
+| PD (effect) | Pmax for AT/AU | `Q341` · not captured | 2.75 | not captured | not captured | llm (not captured) | Huh_2024:pdv3 |
 | PD (effect) | Emax | `Q320` · not captured | 15.8 | not captured | not captured | llm (not captured) | Huh_2024:pdv3 |
-| PD (effect) | EC50 | `Q321` · not captured | 53.6 | ng/mL | not captured | llm (not captured) | Huh_2024:pdv3 |
-| PD (effect) | kout2 half-life | `Q328` · not captured | 7.80 | wk | not captured | llm (not captured) | Huh_2024:pdv3 |
+| PD (effect) | EC50 (ng/mL) | `Q321` · not captured | 53.6 | ng/mL | not captured | llm (not captured) | Huh_2024:pdv3 |
+| PD (effect) | kout2 half-life (wk) | `Q328` · not captured | 7.80 | wk | not captured | llm (not captured) | Huh_2024:pdv3 |
+| model term | AT/AU effect on kout2 half-life (wk) | `Q900` · not captured | -0.601 | wk | not captured | llm (not captured) | Huh_2024:pdv3 |
+| variability | ω2Emax | `Q312` · not captured | 0.754 | not captured | not captured | llm (not captured) | Huh_2024:pdv3 |
+| variability | ω2Kout2 | `Q312` · not captured | 0.973 | not captured | not captured | llm (not captured) | Huh_2024:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>

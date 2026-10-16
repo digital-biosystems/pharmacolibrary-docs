@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;avatrombopag&quot;,&quot;href&quot;:&quot;drugs/drug_avatrombopag/&quot;},{&quot;label&quot;:&quot;Liu_2025_2 \u00b7 PGx CYP2C9&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# CYP2C9 — PGx  <span class="pk-badge pk-badge--neutral" title="Adverse-reaction risk allele; no quantitative PK/PD parameter effect.">safety allele</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+# CYP2C9 — PGx  <span class="pk-badge pk-badge--neutral" title="Adverse-reaction risk allele; no quantitative PK/PD parameter effect.">safety allele</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓ 2/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -26,11 +26,12 @@ Liu X et al., Investigation of the, Pharmaceuticals (Basel, Swi… (2025)
   ·  DOI: [10.3390/ph18060903](https://doi.org/10.3390/ph18060903)
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  ·  2 of 2 readers agree  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | confirmed | 1.0 (4/4 fields) | none |
 | `gpt-oss:120b` | confirmed | 1.0 (4/4 fields) | none |
 
 _All readers agree on the compared fields of this PGx record._

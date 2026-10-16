@@ -17,7 +17,7 @@
   "0.0039499999999999995": -0.324
  },
  "stop_time": 40.0,
- "subtitle": "Pain score (PPPM) against ibuprofen concentration",
+ "subtitle": "Pain Score (PPPM) against ibuprofen concentration",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
  "title": "Exposure–response simulated by the PD model",
@@ -58,6 +58,6 @@
  "y_axis": {
   "display_unit": "pain units",
   "factor": 1.0,
-  "label": "Pain score (PPPM)"
+  "label": "Pain Score (PPPM)"
  }
 }

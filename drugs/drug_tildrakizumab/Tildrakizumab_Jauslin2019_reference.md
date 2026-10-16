@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;tildrakizumab&quot;,&quot;href&quot;:&quot;drugs/drug_tildrakizumab/&quot;},{&quot;label&quot;:&quot;Jauslin_2019 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tildrakizumab_RodrguezFernndez2022_reference&quot;,&quot;label&quot;:&quot;Rodr\u00edguez-Fern\u00e1ndez_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tildrakizumab/Tildrakizumab_RodrguezFernndez2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tildrakizumab_Jauslin2019_reference&quot;,&quot;label&quot;:&quot;Jauslin_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tildrakizumab/Tildrakizumab_Jauslin2019_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tildrakizumab_Jauslin2019_reference&quot;,&quot;label&quot;:&quot;Jauslin_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tildrakizumab/Tildrakizumab_Jauslin2019_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Tildrakizumab_RodrguezFernndez2022_reference&quot;,&quot;label&quot;:&quot;Rodr\u00edguez-Fern\u00e1ndez_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tildrakizumab/Tildrakizumab_RodrguezFernndez2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # tildrakizumab — `Tildrakizumab_Jauslin2019_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.105). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.105). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -17,19 +17,19 @@
 
 ### Reviewer guidance
 
-**The bioavailability parameter for tildrakizumab lacked an estimated value, forcing reliance on a generic library default.**
+**Every check that could be run on this record passed.**
 
-The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. Consequently, no bioavailability estimate was extracted, and a generic library default was used instead. This placeholder value affects the simulated profile but is not supported by the paper's data. Extracted — tildrakizumab: CL 0.32 L/day, V 10.8 L, t1/2ka 1.5 days, t1/2z 23.4 days, tlag 1.2 h, kabs 0.908 day−1.
+Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has tildrakizumab, the second reading unknown; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Jauslin P et al., Population-Pharmacokinetic Modeling of…, Clinical pharmacokinetics (2019)
   ·  DOI: [10.1007/s40262-019-00743-7](https://doi.org/10.1007/s40262-019-00743-7)
 
-<div class="pk-model-meta" hidden drug="tildrakizumab" model-id="Tildrakizumab_Jauslin2019_reference" status="needs_review" stale="false" population="healthy volunteers and subjects with psoriasis" measured-compound="tildrakizumab" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="tildrakizumab" model-id="Tildrakizumab_Jauslin2019_reference" status="curated_candidate" stale="false" population="healthy volunteers and subjects with psoriasis" measured-compound="tildrakizumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 6 extracted.
@@ -37,15 +37,13 @@ Jauslin P et al., Population-Pharmacokinetic Modeling of…, Clinical pharmacoki
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| geometric mean clearance | `Q22` · CL | 0.32 | L/day | 3.703703703703704e-09 | [l] / [d] | not captured | llm_confirmed (0.6) | Jauslin_2019:abstract | — | not captured |
-| volume of distribution | `Q61` · V | 10.8 | L | 0.0108 | [l] | not captured | exact (1.0) | Jauslin_2019:abstract | — | not captured |
-| absorption half-life | `Q95` · t1/2ka | 1.5 | days | 129600.0 | [d] | not captured | llm_corrected (0.6) | Jauslin_2019:abstract | — | not captured |
-| elimination half-life | `Q57` · t1/2z | 23.4 | days | 2021759.9999999998 | [d] | not captured | llm (0.6) | Jauslin_2019:abstract | — | not captured |
-| absorption lag time | `Q83` · tlag | 1.2 | h | 4320.0 | [h] | not captured | exact (1.0) | Jauslin_2019:abstract | — | not captured |
+| geometric mean clearance (coefficient of variation) | `Q22` · CL | 0.32 | L/day | 3.703703703703704e-09 | [l] / [d] | not captured | llm_confirmed (0.6) | Jauslin_2019:abstract, Jauslin_2019:abstract | — | not captured |
+| volume of distribution | `Q61` · V | 10.8 | L | 0.0108 | [l] | not captured | exact (1.0) | Jauslin_2019:abstract, Jauslin_2019:abstract | — | not captured |
+| absorption lag time | `Q83` · tlag | 1.2 | h | 4320.0 | [h] | not captured | exact (1.0) | Jauslin_2019:abstract, Jauslin_2019:abstract | — | not captured |
+| maximum plasma concentration | `Q32` · Cmax | 1.1 | mg/L | not captured | mg/L | not captured | llm (0.6) | Jauslin_2019:abstract | — | not captured |
+| bioavailability | `Q40` · Fab | 31 | % | not captured | not captured | not captured | exact (1.0) | Jauslin_2019:abstract | — | not captured |
 | ka | `Q49` · kabs | 0.908 | day−1 | 1.0509259259259259e-05 | 1/h | not captured | review_gapfill (0.7) | Rodríguez-Fernández_2022:review | — | not captured |
 
 <details class="legend">
@@ -55,12 +53,13 @@ Jauslin P et al., Population-Pharmacokinetic Modeling of…, Clinical pharmacoki
 
 ## Departures & gaps
 
-**Deviations:**
-- `defaulted_parameters`: ['F']
-
 **Interpretation flags:**
-- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q22 (geometric mean clearance); Q61 (volume of distribution)
+- dropped unlinked row (NIL): 'absorption and elimination half-life' — extend the ontology if this is a real PK parameter (source ['Jauslin_2019:abstract', 'Jauslin_2019:abstract', 'Jauslin_2019:abstract', 'Jauslin_2019:abstract'])
+- unit_dimension_unknown: 'fold' (Cmax)
+- implicit units: 'maximum plasma concentration' → mg/L (from the popPK convention: 'No unit is provided in the text. In population PK modeling, plasma concentrations are most commonly reported in mg/L (or')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=tildrakizumab
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at route_to_review — not promoted
 - molar mass: none found for 'tildrakizumab' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
@@ -68,7 +67,7 @@ Jauslin P et al., Population-Pharmacokinetic Modeling of…, Clinical pharmacoki
 - gap-filled Q49 (kabs) from Rodríguez-Fernández_2022's review values (primary lacked it)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Jauslin_2019_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Jauslin_2019_metadata.yaml (12 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -116,16 +115,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Jauslin_2019:abstract'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Jauslin_2019:abstract', 'Jauslin_2019:abstract'] |
+| C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Jauslin_2019:abstract'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Rodríguez-Fernández_2022:review'] |
-| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Jauslin_2019:abstract'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Jauslin_2019:abstract'] |
-| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Jauslin_2019:abstract'] |
-| C5_dimension_Q95 | pass | [time] | not captured | not captured | not captured | ['Jauslin_2019:abstract'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.32 | not captured | not captured | ['Jauslin_2019:abstract'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Jauslin_2019:abstract', 'Jauslin_2019:abstract'] |
+| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Jauslin_2019:abstract', 'Jauslin_2019:abstract'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.32 | not captured | not captured | ['Jauslin_2019:abstract', 'Jauslin_2019:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.0133 L/h | not captured | not captured | ['Jauslin_2019:abstract'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 10.8 L | not captured | not captured | ['Jauslin_2019:abstract'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.0133 L/h | not captured | not captured | ['Jauslin_2019:abstract', 'Jauslin_2019:abstract'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 10.8 L | not captured | not captured | ['Jauslin_2019:abstract', 'Jauslin_2019:abstract'] |
 
 **Reviewer per-scenario checks:**
 
@@ -136,7 +134,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_output_variable | not captured | pass | C_central (measured=tildrakizumab) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -145,10 +143,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_tildrakizumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Jauslin_2019` / `Jauslin_2019::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_tildrakizumab/models/modelica/Tildrakizumab_Jauslin2019_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_tildrakizumab/models/modelica/Tildrakizumab_Jauslin2019_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_tildrakizumab/models/modelica/Tildrakizumab_Jauslin2019_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_tildrakizumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Jauslin_2019` / `Jauslin_2019::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_tildrakizumab/models/modelica/Tildrakizumab_Jauslin2019_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_tildrakizumab/models/modelica/Tildrakizumab_Jauslin2019_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_tildrakizumab/models/modelica/Tildrakizumab_Jauslin2019_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -158,19 +156,19 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_tildrakizumab/Tildrakizumab_Jauslin2019_reference/Tildrakizumab_Jauslin2019_reference_modelica.zip" download>Tildrakizumab_Jauslin2019_reference_modelica.zip</a> <span class="pk-size">(4.5 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_tildrakizumab/Tildrakizumab_Jauslin2019_reference/Tildrakizumab_Jauslin2019_reference_fmi.zip" download>Tildrakizumab_Jauslin2019_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_tildrakizumab/Tildrakizumab_Jauslin2019_reference/Tildrakizumab_Jauslin2019_reference_matlab.zip" download>Tildrakizumab_Jauslin2019_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_tildrakizumab/Tildrakizumab_Jauslin2019_reference/Tildrakizumab_Jauslin2019_reference_matlab_simbio.zip" download>Tildrakizumab_Jauslin2019_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_tildrakizumab/Tildrakizumab_Jauslin2019_reference/Tildrakizumab_Jauslin2019_reference_sbml.zip" download>Tildrakizumab_Jauslin2019_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_tildrakizumab/Tildrakizumab_Jauslin2019_reference/Tildrakizumab_Jauslin2019_reference_cellml.zip" download>Tildrakizumab_Jauslin2019_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_tildrakizumab/Tildrakizumab_Jauslin2019_reference/Tildrakizumab_Jauslin2019_reference_fmi.zip" download>Tildrakizumab_Jauslin2019_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_tildrakizumab/Tildrakizumab_Jauslin2019_reference/Tildrakizumab_Jauslin2019_reference_matlab.zip" download>Tildrakizumab_Jauslin2019_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_tildrakizumab/Tildrakizumab_Jauslin2019_reference/Tildrakizumab_Jauslin2019_reference_matlab_simbio.zip" download>Tildrakizumab_Jauslin2019_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_tildrakizumab/Tildrakizumab_Jauslin2019_reference/Tildrakizumab_Jauslin2019_reference_sbml.zip" download>Tildrakizumab_Jauslin2019_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_tildrakizumab/Tildrakizumab_Jauslin2019_reference/Tildrakizumab_Jauslin2019_reference_cellml.zip" download>Tildrakizumab_Jauslin2019_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_tildrakizumab/Tildrakizumab_Jauslin2019_reference/Tildrakizumab_Jauslin2019_reference.svg" alt="Tildrakizumab_Jauslin2019_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_tildrakizumab/Tildrakizumab_Jauslin2019_reference/Tildrakizumab_Jauslin2019_reference.svg" alt="Tildrakizumab_Jauslin2019_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.0378 /h, lag 72 min, F 0.9). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.0378 /h, lag 72 min, F 31). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_tildrakizumab/Tildrakizumab_Jauslin2019_reference/Tildrakizumab_Jauslin2019_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_tildrakizumab/Tildrakizumab_Jauslin2019_reference/Tildrakizumab_Jauslin2019_reference_sim_controls.json"></dbs-fmusim>
 
@@ -179,4 +177,4 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 00:51 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 23:09 UTC</sub>

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;voclosporin&quot;,&quot;href&quot;:&quot;drugs/drug_voclosporin/&quot;},{&quot;label&quot;:&quot;Abdel-Kahaar_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Voclosporin_AbdelKahaar2023_reference&quot;,&quot;label&quot;:&quot;Abdel-Kahaar_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_voclosporin/Voclosporin_AbdelKahaar2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Voclosporin_AbdelKahaar2023_reference&quot;,&quot;label&quot;:&quot;Abdel-Kahaar_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_voclosporin/Voclosporin_AbdelKahaar2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Mayo_2014_CNa&quot;,&quot;label&quot;:&quot;Mayo_2014 \u00b7 CNa&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_voclosporin/pd_Mayo_2014_CNa.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,13 +17,13 @@
 
 ### Reviewer guidance
 
-**Voclosporin's absorption rate and lag time were left unspecified, causing the model to rely on unreported assumptions rather than paper estimates.**
+**Ka use library defaults, not estimates from this paper; t6_deviations.**
 
-The record includes apparent clearance and volume but omits the absorption rate constant and lag time. Consequently, the model builder substituted placeholder values for these parameters instead of using estimates from the paper. The simulated profile therefore relies on invented absorption assumptions not supported by the source text. Extracted — voclosporin: CL/F 60 L/h, V/F 2.15e+03 L.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — voclosporin: CL/F 60 L/h, V/F 2.15e+03 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q22: this record has 1.0, the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Abdel-Kahaar E et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokinetics (2023)
@@ -122,10 +122,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_voclosporin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Abdel-Kahaar_2023` / `Abdel-Kahaar_2023::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_voclosporin/models/modelica/Voclosporin_AbdelKahaar2023_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_voclosporin/models/modelica/Voclosporin_AbdelKahaar2023_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_voclosporin/models/modelica/Voclosporin_AbdelKahaar2023_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_voclosporin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Abdel-Kahaar_2023` / `Abdel-Kahaar_2023::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_voclosporin/models/modelica/Voclosporin_AbdelKahaar2023_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_voclosporin/models/modelica/Voclosporin_AbdelKahaar2023_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_voclosporin/models/modelica/Voclosporin_AbdelKahaar2023_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -143,7 +143,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_voclosporin/Voclosporin_AbdelKahaar2023_reference/Voclosporin_AbdelKahaar2023_reference.svg" alt="Voclosporin_AbdelKahaar2023_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_voclosporin/Voclosporin_AbdelKahaar2023_reference/Voclosporin_AbdelKahaar2023_reference.svg" alt="Voclosporin_AbdelKahaar2023_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -156,4 +156,4 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 01:06 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 23:35 UTC</sub>

@@ -17,7 +17,7 @@ Batroxobin, an enzyme derived from snake venom, acts as a hemostatic agent and h
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-05 17:29 | 0:23 | 0/0/0 | 0/0/0 | 0/0/0 | 7,741/274 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 1/2 | 6/0 | 0 |
+| 2026-10-14 21:16 | 0:13 | 0/0/0 | 0/0/0 | 0/0/0 | 7,741/286 | einfracz / qwen3.8-27b | 6 | 1/5 | 6/0 | 0 |
 
 ## popPK records
 
@@ -32,7 +32,7 @@ _not available_
 ## Coverage
 
 - **PubMed hits:** 10 matched, 7 returned
-- **screened:** 1  ·  **relevant:** 1
+- **screened:** 4  ·  **relevant:** 1
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
@@ -42,9 +42,9 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Zheng_2013.pdf` | Zheng ZH et al., [Pharmacodynamics and pharmacokinetics…, Yao xue xue bao = Acta phar… (2013) | popPK | 9 | not captured | [24187841](https://pubmed.ncbi.nlm.nih.gov/24187841) | The study reports quantitative pharmacokinetic parameters (t1/2, Cmax, AUC) for batroxobin in Beagle dogs, with values explicitly listed in the text. |
+| `Zheng_2013.pdf` | Zheng ZH et al., [Pharmacodynamics and pharmacokinetics…, Yao xue xue bao = Acta phar… (2013) | popPK | 7 | not captured | [24187841](https://pubmed.ncbi.nlm.nih.gov/24187841) | The study reports quantitative PK parameters (t1/2, Cmax, AUC) for batroxobin in Beagle dogs, but specific clearance (CL) and volume of distribution (V) values are not explicitly listed in the provided text. |
 
-<sub>queue written 2026-10-05T17:29:33.158518+00:00</sub>
+<sub>queue written 2026-10-14T21:16:10.204138+00:00</sub>
 
 ## Screened and excluded
 
@@ -52,13 +52,13 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 |---|---|---|---|---|---|
 | popPK | Choi_2018 | irrelevant | 1 | 0 | The study reports pharmacodynamic endpoints (fibrinogen, TT) and safety, but does not report quantitative pharmacokinetic parameters (CL, V, t1/2) for batroxobin. |
 | popPK | Clare_2023 | irrelevant | 0 | 0 | The paper is an in-vitro high-throughput screening study for snake venom metalloproteinase inhibitors and does not report pharmacokinetic parameters for batroxobin. |
-| popPK | Markwardt_1979 | irrelevant | 0 | 0 | The study uses batroxobin as an agent to induce secondary fibrinolysis in rats to test other drugs, rather than measuring batroxobin's own pharmacokinetic parameters. |
+| popPK | Markwardt_1979 | irrelevant | 0 | 0 | The study is a pharmacologic investigation of secondary fibrinolysis in rats where batroxobin is used as a tool to induce the condition, not a pharmacokinetic study of batroxobin's disposition parameters. |
 | popPK | Markwardt_1985 | irrelevant | 2 | 0 | The study focuses on the enzymatic deacylation half-life and qualitative defibrinogenation effects in rats, without reporting quantitative pharmacokinetic disposition parameters (CL, V, ka) for batroxobin. |
 | popPK | Richter_1988 | irrelevant | 2 | 0 | The study focuses on enzymatic activity and defibrinogenation effects in rats rather than reporting quantitative pharmacokinetic disposition parameters (CL, V, etc.) for batroxobin. |
 | popPK | Stocker_1982 | irrelevant | 0 | 0 | The paper is a mechanistic review of snake venom proteinases and does not report quantitative pharmacokinetic parameters (CL, V, t1/2) for batroxobin. |
 | PD | Stocker_1982 | not_relevant | 1 | 0 | The text is a qualitative review of thrombin-like proteinases that mentions dose-response relationships exist but provides no numeric PD parameters, curves, or specific exposure-response data for batroxobin. |
 | popPK | Sugai_1986 | irrelevant | 0 | 0 | The provided evidence contains only metadata and software version information, with no scientific content or pharmacokinetic data for batroxobin. |
-| popPK | Surette_2011 | irrelevant | 0 | 0 | Batroxobin is used only as a tool to induce thrombi in a mechanistic study of S100A10, with no pharmacokinetic parameters reported. |
+| popPK | Surette_2011 | irrelevant | 0 | 0 | The study investigates the role of S100A10 in fibrinolysis using batroxobin only as an agent to induce thrombi, without reporting any pharmacokinetic parameters for the drug itself. |
 | popPK | Wang_2003 | irrelevant | 0 | 0 | The study uses batroxobin as a tool to induce fibrin deposition for a thrombolysis mechanism study, not to characterize its pharmacokinetic parameters. |
 | PD | Wang_2003 | not_relevant | 1 | 0 | The study describes a qualitative interaction between LPS and batroxobin-induced fibrinolysis but does not provide numeric concentration-effect or dose-response parameters for batroxobin itself. |
 | popPK | Xie_2022 | irrelevant | 0 | 0 | The paper is a comparative genomics and evolutionary study of snake venom toxins, not a pharmacokinetic study of batroxobin. |

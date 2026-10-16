@@ -18,9 +18,9 @@
 
 **Model:** No model was generated from this record.
 
-> The paper does not provide the mechanism: ciclesonide dose is linked to the binary pneumonia response in an Emax-type model, but no excerpts are available, so no potency (Emax, EC50) or rate values are reported.
+> No summary can be provided as the paper full text is unavailable and the record does not specify a mechanism, potency, or rate values for ciclesonide's effect on pneumonia.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Pu_2026`
 - **model family:** `emax`

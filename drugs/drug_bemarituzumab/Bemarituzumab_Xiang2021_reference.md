@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;bemarituzumab&quot;,&quot;href&quot;:&quot;drugs/drug_bemarituzumab/&quot;},{&quot;label&quot;:&quot;Xiang_2021 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bemarituzumab_Xiang2020_reference&quot;,&quot;label&quot;:&quot;Xiang_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bemarituzumab/Bemarituzumab_Xiang2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -18,7 +19,7 @@
 
 **CL has no unit.**
 
-Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (CL), so that value has no SI equivalent. Extracted — bemarituzumab: CL 4.03 µg/day, V1 3.38 L, Q 0.953 L/day, V2 2.78 L.
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (CL), so that value has no SI equivalent. Extracted — bemarituzumab: CL 2.8 µg/day, V1 3.58 L, Q 0.952 L/day, V2 2.71 L.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of base model estimates (% rse): inter-compartmental clearance, q: this record has 0.953, the second reading none; it also differs on 7 more fields. That field does not shape the model.
 
@@ -28,7 +29,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 Xiang H et al., Covariate effects and population pharma…, Cancer chemotherapy and pha… (2021)
   ·  DOI: [10.1007/s00280-021-04333-y](https://doi.org/10.1007/s00280-021-04333-y)
 
-<div class="pk-model-meta" hidden drug="bemarituzumab" model-id="Bemarituzumab_Xiang2021_reference" status="needs_review" stale="false" population="patients from phase 1 to phase 2 trials" measured-compound="bemarituzumab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="bemarituzumab" model-id="Bemarituzumab_Xiang2021_reference" status="needs_review" stale="false" population="patients with gastric and gastroesophageal junction adenocarcinoma" measured-compound="bemarituzumab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.
@@ -40,10 +41,10 @@ Xiang H et al., Covariate effects and population pharma…, Cancer chemotherapy 
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Base model estimates (% RSE): Maximum drug elimination by nonlinear clearance, Vmax | `Q22` · CL | 4.03 | µg/day | not captured | µg/day | not captured | boundary (0.8) | Xiang_2021:other_prose | — | not captured |
-| Base model estimates (% RSE): Volume of central compartment, Vc | `Q63` · V1 | 3.38 | L | 0.0033799999999999998 | L | not captured | boundary_compartment (0.9) | Xiang_2021:other_prose | — | not captured |
-| Base model estimates (% RSE): Inter-compartmental clearance, Q | `Q30` · Q | 0.953 | L/day | 1.1030092592592593e-08 | L/h | not captured | boundary (0.8) | Xiang_2021:other_prose | — | not captured |
-| Base model estimates (% RSE): Volume of peripheral compartment, Vp | `Q64` · V2 | 2.78 | L | 0.00278 | L | not captured | boundary_compartment (0.9) | Xiang_2021:other_prose | — | not captured |
+| Maximum drug elimination by nonlinear clearance, Vmax (µg/day) | `Q22` · CL | 2.8 | µg/day | not captured | µg/day | not captured | boundary (0.8) | Xiang_2021:other_prose | — | not captured |
+| Volume of central compartment, Vc (L) | `Q63` · V1 | 3.58 | L | 0.0035800000000000003 | L | not captured | boundary_compartment (0.9) | Xiang_2021:other_prose | — | not captured |
+| Inter-compartmental clearance, Q (L/day) | `Q30` · Q | 0.952 | L/day | 1.1018518518518517e-08 | L/h | not captured | boundary (0.8) | Xiang_2021:other_prose | — | not captured |
+| Volume of peripheral compartment, Vp (L) | `Q64` · V2 | 2.71 | L | 0.00271 | L | not captured | boundary_compartment (0.9) | Xiang_2021:other_prose | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -53,18 +54,19 @@ Xiang H et al., Covariate effects and population pharma…, Cancer chemotherapy 
 ## Departures & gaps
 
 **Interpretation flags:**
-- salvaged Q22 ('Base model estimates (% RSE): Maximum drug elimination by nonlinear clearance, Vmax'=4.03) from results prose — parameter table was unreadable
-- salvaged Q63 ('Base model estimates (% RSE): Volume of central compartment, Vc'=3.38) from results prose — parameter table was unreadable
-- salvaged Q30 ('Base model estimates (% RSE): Inter-compartmental clearance, Q'=0.953) from results prose — parameter table was unreadable
-- salvaged Q64 ('Base model estimates (% RSE): Volume of peripheral compartment, Vp'=2.78) from results prose — parameter table was unreadable
+- salvaged Q22 ('Maximum drug elimination by nonlinear clearance, Vmax (µg/day)'=2.8) from results prose — parameter table was unreadable
+- salvaged Q63 ('Volume of central compartment, Vc (L)'=3.58) from results prose — parameter table was unreadable
+- salvaged Q30 ('Inter-compartmental clearance, Q (L/day)'=0.952) from results prose — parameter table was unreadable
+- salvaged Q64 ('Volume of peripheral compartment, Vp (L)'=2.71) from results prose — parameter table was unreadable
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=bemarituzumab
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
 - molar mass: none found for 'bemarituzumab' — its concentrations stay mass-only
 
 **Extraction notes:**
+- table Xiang_2021_table_p7_1: unparsed_numeric_cell
+- final table Tab2: no supported point estimates; targeted recovery unresolved
 - LLM selected parameter table(s) 2
-- LLM region Xiang_2021:results_prose: no JSON records returned
 
 ## Validation
 
@@ -104,10 +106,10 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | µg/day | not captured | not captured | ['Xiang_2021:other_prose'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 4.03 | not captured | not captured | ['Xiang_2021:other_prose'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 2.8 | not captured | not captured | ['Xiang_2021:other_prose'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q63 | pass | volume within physiological range | 3.38 L | not captured | not captured | ['Xiang_2021:other_prose'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 2.78 L | not captured | not captured | ['Xiang_2021:other_prose'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 3.58 L | not captured | not captured | ['Xiang_2021:other_prose'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 2.71 L | not captured | not captured | ['Xiang_2021:other_prose'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -116,7 +118,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_bemarituzumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Xiang_2021` / `Xiang_2021::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_bemarituzumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Xiang_2021` / `Xiang_2021::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -142,4 +144,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 10:08 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 18:18 UTC</sub>

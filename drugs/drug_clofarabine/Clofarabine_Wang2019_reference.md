@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;clofarabine&quot;,&quot;href&quot;:&quot;drugs/drug_clofarabine/&quot;},{&quot;label&quot;:&quot;Wang_2019 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clofarabine_Bonate2011_reference&quot;,&quot;label&quot;:&quot;Bonate_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clofarabine/Clofarabine_Bonate2011_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clofarabine_Bonate2011_reference&quot;,&quot;label&quot;:&quot;Bonate_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clofarabine/Clofarabine_Bonate2011_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # clofarabine — `Clofarabine_Wang2019_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0), gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓ 2/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -21,7 +21,7 @@
 
 No clearance, volume or rate constant of the model is reported in it. Only the abstract was available, so reported summary statistics stand in for a fitted model. No parameter values were extracted.
 
-Independently confirmed by `gpt-oss-120b`.
+Independently confirmed by `gpt-oss:120b`, `gpt-oss-120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -29,7 +29,7 @@ Independently confirmed by `gpt-oss-120b`.
 Wang H et al., Population Pharmacokinetics of Clofarab…, Biology of blood and marrow… (2019)
   ·  DOI: [10.1016/j.bbmt.2019.04.017](https://doi.org/10.1016/j.bbmt.2019.04.017)
 
-<div class="pk-model-meta" hidden drug="clofarabine" model-id="Clofarabine_Wang2019_reference" status="rejected" stale="false" population="pediatric subjects undergoing allogeneic hematopoietic cell transplantation" measured-compound="clofarabine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="clofarabine" model-id="Clofarabine_Wang2019_reference" status="rejected" stale="false" population="pediatric subjects before hematopoietic cell transplantation" measured-compound="clofarabine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.
@@ -44,19 +44,27 @@ _No resolved parameters._
 ## Departures & gaps
 
 **Interpretation flags:**
+- table section residual_error: 'clearance (CL)' routed out of structural estimates ('Unexplained variability was acceptable at 33%, and the additive residual error (reflective of the assay) was estimated to be 0.36 ng/mL.')
+- table section residual_error: 'volume of the central compartment' routed out of structural estimates ('Unexplained variability was acceptable at 33%, and the additive residual error (reflective of the assay) was estimated to be 0.36 ng/mL.')
+- table section residual_error: 'volume of peripheral compartment' routed out of structural estimates ('Unexplained variability was acceptable at 33%, and the additive residual error (reflective of the assay) was estimated to be 0.36 ng/mL.')
+- table section residual_error: 'intercompartmental CL' routed out of structural estimates ('Unexplained variability was acceptable at 33%, and the additive residual error (reflective of the assay) was estimated to be 0.36 ng/mL.')
+- table section residual_error: 'Unexplained variability' routed out of structural estimates ('Unexplained variability was acceptable at 33%, and the additive residual error (reflective of the assay) was estimated to be 0.36 ng/mL.')
+- table section residual_error: 'additive residual error (reflective of the assay)' routed out of structural estimates ('Unexplained variability was acceptable at 33%, and the additive residual error (reflective of the assay) was estimated to be 0.36 ng/mL.')
+- table section residual_error: 'median AUC0-24' routed out of structural estimates ('Unexplained variability was acceptable at 33%, and the additive residual error (reflective of the assay) was estimated to be 0.36 ng/mL.')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=clofarabine
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Wang_2019_metadata.yaml (0 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Wang_2019_metadata.yaml (7 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  ·  2 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss:120b` | confirmed | 1.0 (4/4 fields) | none |
 | `gpt-oss-120b` | confirmed | 1.0 (4/4 fields) | none |
 
 _All readers agree on the compared fields of this record._
@@ -82,7 +90,7 @@ _All readers agree on the compared fields of this record._
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_clofarabine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Wang_2019` / `Wang_2019::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_clofarabine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Wang_2019` / `Wang_2019::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -98,4 +106,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 16:39 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 03:10 UTC</sub>

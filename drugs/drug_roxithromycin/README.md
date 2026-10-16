@@ -18,20 +18,37 @@ Roxithromycin is a macrolide antibiotic used to treat bacterial infections. It i
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 11:22 | 2:03 | 0/1/0 | 1/0/0 | 0/0/0 | 49,375/3,364 | einfracz / qwen3.8-27b | 5 | 2/3 | 5/0 | 0 |
+| 2026-10-13 11:36 | 4:09 | 0/1/0 | 1/0/0 | 0/0/0 | 27,462/7,202 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 2/3 | 5/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Del_1990_reference](drugs/drug_roxithromycin/Roxithromycin_Del1990_reference.md) | — | 1-compartment (no model) | 0 | Del Tacca M et al., Roxithromycin penetration into gingiva…, Chemotherapy (1990) | [10.1159/000238785](https://doi.org/10.1159/000238785) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5), gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Del_1990_reference](drugs/drug_roxithromycin/Roxithromycin_Del1990_reference.md) | — | 1-compartment (no model) | 0 | Del Tacca M et al., Roxithromycin penetration into gingiva…, Chemotherapy (1990) | [10.1159/000238785](https://doi.org/10.1159/000238785) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.714). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span> | [Lim_2006_TNF_alpha](drugs/drug_roxithromycin/pd_Lim_2006_TNF_alpha.md) | tumour necrosis factor-alpha ← roxithromycin · indirect response — drug inhibits the production of tumour necrosis factor-alpha | — | Lim JH et al., Pharmacokinetic/pharmacodynamic modelli…, Journal of veterinary medic… (2006) | [10.1111/j.1439-0442.2006.00852.x](https://doi.org/10.1111/j.1439-0442.2006.00852.x) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.857). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span> | [Lim_2006_IL_6](drugs/drug_roxithromycin/pd_Lim_2006_IL_6.md) | interleukin-6 ← roxithromycin · indirect response — drug inhibits the production of interleukin-6 | — | Lim JH et al., Pharmacokinetic/pharmacodynamic modelli…, Journal of veterinary medic… (2006) | [10.1111/j.1439-0442.2006.00852.x](https://doi.org/10.1111/j.1439-0442.2006.00852.x) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by ollama:gpt-oss:120b (not confirmed, agreement 0.857). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span> | [Lim_2006_TNF_alpha](drugs/drug_roxithromycin/pd_Lim_2006_TNF_alpha.md) | tumour necrosis factor-alpha ← roxithromycin · indirect response — drug inhibits the production of tumour necrosis factor-alpha | — | Lim JH et al., Pharmacokinetic/pharmacodynamic modelli…, Journal of veterinary medic… (2006) | [10.1111/j.1439-0442.2006.00852.x](https://doi.org/10.1111/j.1439-0442.2006.00852.x) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by ollama:gpt-oss:120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span> | [Lim_2006_IL_6](drugs/drug_roxithromycin/pd_Lim_2006_IL_6.md) | interleukin-6 ← roxithromycin · indirect response — drug inhibits the production of interleukin-6 | — | Lim JH et al., Pharmacokinetic/pharmacodynamic modelli…, Journal of veterinary medic… (2006) | [10.1111/j.1439-0442.2006.00852.x](https://doi.org/10.1111/j.1439-0442.2006.00852.x) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=roxithromycin).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` unknown | DrugBank actor |
+| absorption | kidney | `ABCB1` unknown | DrugBank actor |
+| absorption | liver | `ABCB1` unknown | DrugBank actor |
+| absorption | placenta | `ABCB1` unknown | DrugBank actor |
+| absorption | small intestine | `ABCB1` unknown | DrugBank actor |
+| absorption | testis | `ABCB1` unknown | DrugBank actor |
+| metabolism | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| metabolism | liver | `CYP2B6` inhibitor, `CYP3A4` inhibitor/substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inhibitor/substrate | DrugBank actor |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -42,7 +59,7 @@ Roxithromycin is a macrolide antibiotic used to treat bacterial infections. It i
 ## Coverage
 
 - **PubMed hits:** 37 matched, 37 returned
-- **screened:** 3  ·  **relevant:** 3
+- **screened:** 8  ·  **relevant:** 3
 - **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
@@ -65,7 +82,7 @@ _12 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Polasek_2006.pdf` | Polasek TM et al., Quantitative prediction of macrolide dr…, European journal of clinica… (2006) | pgx | 7 | [10.1007/s00228-005-0091-x](https://doi.org/10.1007/s00228-005-0091-x) | [16416302](https://www.ncbi.nlm.nih.gov/pubmed/16416302) | metadata signals extractable PGX data (CYP3A, PK/PD-context) |
 | `von_1995.pdf` | von Rosensteil NA et al., Macrolide antibacterials. Drug interact…, Drug safety (1995) | pgx | 7 | [10.2165/00002018-199513020-00005](https://doi.org/10.2165/00002018-199513020-00005) | [7576262](https://www.ncbi.nlm.nih.gov/pubmed/7576262) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 
-<sub>queue written 2026-10-07T11:21:24.953253+00:00</sub>
+<sub>queue written 2026-10-13T11:33:17.691334+00:00</sub>
 
 ## Screened and excluded
 

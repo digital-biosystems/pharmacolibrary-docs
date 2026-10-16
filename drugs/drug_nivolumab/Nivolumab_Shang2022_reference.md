@@ -17,13 +17,13 @@
 
 ### Reviewer guidance
 
-**The record was rejected because the peripheral compartment is unreachable from the dose, and the second reader could not confirm the dose compound or primary analyte.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model structure defines a two-compartment system, but the review identified the peripheral compartment as an orphan with no path from the dose. Additionally, a second reader disagreed with the record's identification of nivolumab as the dose compound and primary analyte, marking both as unknown. Extracted — nivolumab: Q 0.77 L/Day, V2 2.78 L.
+Extracted — nivolumab: Q 0.77 L/Day, V2 2.78 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has nivolumab, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Shang J et al., Population pharmacokinetic models of an…, Frontiers in immunology (2022)
@@ -41,10 +41,10 @@ Shang J et al., Population pharmacokinetic models of an…, Frontiers in immunol
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Q (L/Day) | `Q30` · Q | 0.77 | L/Day | 8.912037037037038e-09 | [l] / [d] | not captured | exact (1.0) | Shang_2022_table_3:row4:col2, Shang_2022_table_3:row4:col3, Shang_2022_table_3:row4:col4, Shang_2022_table_3:row4:col5, Shang_2022_table_3:row4:col6, Shang_2022_table_3:row4:col7, Shang_2022_table_3:row4:col8 | — | not captured |
-| VP(L) | `Q64` · V2 | 2.78 | L | 0.00278 | [l] | not captured | exact (1.0) | Shang_2022_table_3:row6:col2, Shang_2022_table_3:row6:col3, Shang_2022_table_3:row6:col4, Shang_2022_table_3:row6:col5, Shang_2022_table_3:row6:col6, Shang_2022_table_3:row6:col7, Shang_2022_table_3:row6:col8 | — | not captured |
-| VC | `Q900` · VC | 3.63 | L | 0.00363 | not captured | not captured | not captured (not captured) | Shang_2022_table_3:row5:col2, Shang_2022_table_3:row5:col3, Shang_2022_table_3:row5:col4, Shang_2022_table_3:row5:col5, Shang_2022_table_3:row5:col6, Shang_2022_table_3:row5:col7, Shang_2022_table_3:row5:col8 | — | not captured |
-| CL | `Q900` · CL | 0.225 | L/Day | 2.604166666666667e-09 | not captured | not captured | not captured (not captured) | Shang_2022_table_3:row3:col2, Shang_2022_table_3:row3:col3, Shang_2022_table_3:row3:col4, Shang_2022_table_3:row3:col5, Shang_2022_table_3:row3:col6, Shang_2022_table_3:row3:col7, Shang_2022_table_3:row3:col8 | — | not captured |
+| Q (L/Day) | `Q30` · Q | 0.77 | L/Day | 8.912037037037038e-09 | [l] / [d] | not captured | exact (1.0) | Shang_2022_table_3:row1:col5, Shang_2022_table_3:row2:col5, Shang_2022_table_3:row3:col5, Shang_2022_table_3:row4:col5, Shang_2022_table_3:row5:col5, Shang_2022_table_3:row6:col5, Shang_2022_table_3:row7:col5 | — | not captured |
+| VP(L) | `Q64` · V2 | 2.78 | L | 0.00278 | [l] | not captured | exact (1.0) | Shang_2022_table_3:row1:col7, Shang_2022_table_3:row2:col7, Shang_2022_table_3:row3:col7, Shang_2022_table_3:row4:col7, Shang_2022_table_3:row5:col7, Shang_2022_table_3:row6:col7, Shang_2022_table_3:row7:col7 | — | not captured |
+| VC | `Q900` · VC | 3.63 | L | 0.00363 | not captured | not captured | not captured (not captured) | Shang_2022_table_3:row1:col6, Shang_2022_table_3:row2:col6, Shang_2022_table_3:row3:col6, Shang_2022_table_3:row4:col6, Shang_2022_table_3:row5:col6, Shang_2022_table_3:row6:col6, Shang_2022_table_3:row7:col6 | — | not captured |
+| CL | `Q900` · CL | 0.225 | L/Day | 2.604166666666667e-09 | not captured | not captured | not captured (not captured) | Shang_2022_table_3:row1:col4, Shang_2022_table_3:row2:col4, Shang_2022_table_3:row3:col4, Shang_2022_table_3:row4:col4, Shang_2022_table_3:row5:col4, Shang_2022_table_3:row6:col4, Shang_2022_table_3:row7:col4 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -60,7 +60,7 @@ Shang J et al., Population pharmacokinetic models of an…, Frontiers in immunol
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'Pharmacokinetic parameters and covariates relationships' — extend the ontology if this is a real PK parameter (source ['Shang_2022_table_3:row7:col2', 'Shang_2022_table_3:row7:col3', 'Shang_2022_table_3:row7:col4', 'Shang_2022_table_3:row7:col5', 'Shang_2022_table_3:row7:col6', 'Shang_2022_table_3:row7:col7', 'Shang_2022_table_3:row7:col8', 'Shang_2022_table_3:row8:col2', 'Shang_2022_table_3:row8:col3', 'Shang_2022_table_3:row8:col5', 'Shang_2022_table_3:row8:col6', 'Shang_2022_table_3:row8:col7', 'Shang_2022_table_3:row8:col8'])
+- dropped unlinked row (NIL): 'Pharmacokinetic parameters and covariates relationships' — extend the ontology if this is a real PK parameter (source ['Shang_2022_table_3:row1:col8', 'Shang_2022_table_3:row1:col9', 'Shang_2022_table_3:row2:col8', 'Shang_2022_table_3:row2:col9', 'Shang_2022_table_3:row3:col8', 'Shang_2022_table_3:row4:col8', 'Shang_2022_table_3:row4:col9', 'Shang_2022_table_3:row5:col8', 'Shang_2022_table_3:row5:col9', 'Shang_2022_table_3:row6:col8', 'Shang_2022_table_3:row6:col9', 'Shang_2022_table_3:row7:col8', 'Shang_2022_table_3:row7:col9'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=nivolumab
 - bound model equation to Q63 (V1): VC = 3.63 * (BBWT/80)^0.597 * (e/0.152)SEX
 - bound model equation to Q22 (CL): CL = 0.22 *(BBWT/76.8)^0.578* (ALB/39.6)-0.907 * (BSLD/89.6)^00872* (eGFR/88.47)^0.135* [ (1 – 0.152) if female ]* [ (1+ 0.145) if NSCLC ]* [ (1+0.0739) if baseline ECOG numeric=1 ]* [ (1+0.140) if IPI=prior treatment ]
@@ -69,18 +69,10 @@ Shang J et al., Population pharmacokinetic models of an…, Frontiers in immunol
 - molar mass: none found for 'nivolumab' — its concentrations stay mass-only
 
 **Extraction notes:**
-- transposed table Shang_2022_table_3: parameters were across the columns, populations/subgroups down the first column — transposed for parsing
-- unparsed cell Shang_2022_table_3:row2:col11 = 'Time-varying CL (4 time-varying covariates: RSLD RLC RALB RLDH)'
-- unparsed cell Shang_2022_table_3:row10:col2 = 'Proportional residual error model (21.5%)'
-- unparsed cell Shang_2022_table_3:row10:col3 = 'Proportional residual error model (100%)'
-- unparsed cell Shang_2022_table_3:row10:col4 = 'Proportional residual error model (31.8%)'
-- unparsed cell Shang_2022_table_3:row10:col5 = 'Proportional residual error model (21.9%)'
-- unparsed cell Shang_2022_table_3:row10:col6 = 'Proportional residual error model (2.01%)'
-- unparsed cell Shang_2022_table_3:row10:col7 = 'Proportional residual error model (22.4%)'
-- unparsed cell Shang_2022_table_3:row10:col8 = 'Proportional residual error model (24.5%)'
-- unparsed cell Shang_2022_table_3:row10:col9 = 'Log-transformed additive residual error model (27.2%)'
-- unparsed cell Shang_2022_table_3:row10:col10 = 'Log-transformed additive residual error model (25.1%)'
-- unparsed cell Shang_2022_table_3:row10:col12 = 'Proportional residual error model (17%)'
+- table T4: no_numeric_grid
+- table T4: ragged_grid
+- final table T4: no supported point estimates; targeted recovery unresolved
+- transposed table Shang_2022_table_3: logical view retains original source coordinates
 - companion parameter table 3 transcribed (85 record(s))
 - LLM selected parameter table(s) 3
 - captured model equation VC = 3.63 * (BBWT/80)^0.597 * (e/0.152)SEX
@@ -120,12 +112,12 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Shang_2022_table_3:row3:col2', 'Shang_2022_table_3:row3:col3', 'Shang_2022_table_3:row3:col4', 'Shang_2022_table_3:row3:col5', 'Shang_2022_table_3:row3:col6', 'Shang_2022_table_3:row3:col7', 'Shang_2022_table_3:row3:col8'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Shang_2022_table_3:row4:col2', 'Shang_2022_table_3:row4:col3', 'Shang_2022_table_3:row4:col4', 'Shang_2022_table_3:row4:col5', 'Shang_2022_table_3:row4:col6', 'Shang_2022_table_3:row4:col7', 'Shang_2022_table_3:row4:col8'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Shang_2022_table_3:row5:col2', 'Shang_2022_table_3:row5:col3', 'Shang_2022_table_3:row5:col4', 'Shang_2022_table_3:row5:col5', 'Shang_2022_table_3:row5:col6', 'Shang_2022_table_3:row5:col7', 'Shang_2022_table_3:row5:col8'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Shang_2022_table_3:row6:col2', 'Shang_2022_table_3:row6:col3', 'Shang_2022_table_3:row6:col4', 'Shang_2022_table_3:row6:col5', 'Shang_2022_table_3:row6:col6', 'Shang_2022_table_3:row6:col7', 'Shang_2022_table_3:row6:col8'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Shang_2022_table_3:row1:col4', 'Shang_2022_table_3:row2:col4', 'Shang_2022_table_3:row3:col4', 'Shang_2022_table_3:row4:col4', 'Shang_2022_table_3:row5:col4', 'Shang_2022_table_3:row6:col4', 'Shang_2022_table_3:row7:col4'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Shang_2022_table_3:row1:col5', 'Shang_2022_table_3:row2:col5', 'Shang_2022_table_3:row3:col5', 'Shang_2022_table_3:row4:col5', 'Shang_2022_table_3:row5:col5', 'Shang_2022_table_3:row6:col5', 'Shang_2022_table_3:row7:col5'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Shang_2022_table_3:row1:col6', 'Shang_2022_table_3:row2:col6', 'Shang_2022_table_3:row3:col6', 'Shang_2022_table_3:row4:col6', 'Shang_2022_table_3:row5:col6', 'Shang_2022_table_3:row6:col6', 'Shang_2022_table_3:row7:col6'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Shang_2022_table_3:row1:col7', 'Shang_2022_table_3:row2:col7', 'Shang_2022_table_3:row3:col7', 'Shang_2022_table_3:row4:col7', 'Shang_2022_table_3:row5:col7', 'Shang_2022_table_3:row6:col7', 'Shang_2022_table_3:row7:col7'] |
 | C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q64 | pass | volume within physiological range | 2.78 L | not captured | not captured | ['Shang_2022_table_3:row6:col2', 'Shang_2022_table_3:row6:col3', 'Shang_2022_table_3:row6:col4', 'Shang_2022_table_3:row6:col5', 'Shang_2022_table_3:row6:col6', 'Shang_2022_table_3:row6:col7', 'Shang_2022_table_3:row6:col8'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 2.78 L | not captured | not captured | ['Shang_2022_table_3:row1:col7', 'Shang_2022_table_3:row2:col7', 'Shang_2022_table_3:row3:col7', 'Shang_2022_table_3:row4:col7', 'Shang_2022_table_3:row5:col7', 'Shang_2022_table_3:row6:col7', 'Shang_2022_table_3:row7:col7'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -134,7 +126,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_nivolumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Shang_2022` / `Shang_2022::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_nivolumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Shang_2022` / `Shang_2022::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -150,4 +142,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 17:35 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 03:46 UTC</sub>

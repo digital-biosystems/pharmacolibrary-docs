@@ -1,8 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01C&quot;,&quot;href&quot;:&quot;atc/P01C.md&quot;},{&quot;label&quot;:&quot;suramin sodium&quot;,&quot;href&quot;:&quot;drugs/drug_suramin_sodium/&quot;},{&quot;label&quot;:&quot;Bachmann_1999 \u00b7 PD CFTR Cl- current&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SuraminSodium_Kosarek2006_reference&quot;,&quot;label&quot;:&quot;Kosarek_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_suramin_sodium/SuraminSodium_Kosarek2006_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;SuraminSodium_Naviaux2017_reference&quot;,&quot;label&quot;:&quot;Naviaux_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_suramin_sodium/SuraminSodium_Naviaux2017_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01C&quot;,&quot;href&quot;:&quot;atc/P01C.md&quot;},{&quot;label&quot;:&quot;suramin sodium&quot;,&quot;href&quot;:&quot;drugs/drug_suramin_sodium/&quot;},{&quot;label&quot;:&quot;Bachmann_1999 \u00b7 PD I(CFTR)&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SuraminSodium_Kosarek2006_reference&quot;,&quot;label&quot;:&quot;Kosarek_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_suramin_sodium/SuraminSodium_Kosarek2006_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Del_2023_vasoconstriction&quot;,&quot;label&quot;:&quot;Del_2023 \u00b7 vasoconstriction&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_suramin_sodium/pd_Del_2023_vasoconstriction.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# CFTR Cl- current — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span>
+# I(CFTR) — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -16,19 +16,19 @@
 
 ## Record summary
 
-**As extracted:** Suramin (concentrations from the PK model of Kosarek_2006) drives CFTR Cl- current (in microM IC50 context): direct sigmoid Emax (Hill) effect.
+**As extracted:** Suramin (concentrations from the PK model of Kosarek_2006) drives I(CFTR): direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
 
-> Suramin inhibits the CFTR Cl- current (I(CFTR)) with a sigmoid Emax-type concentration-response relationship; the paper reports an IC50 of 1 microM and a Hill coefficient close to 1, but the excerpts do not state the mechanism or Emax.
+> Suramin acts on the continuous response I(CFTR) via a sigmoidal Emax inhibition mechanism, proportional to the drug concentration. The cited potency is an IC50 of 1 μM with a Hill coefficient of 1.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Bachmann_1999`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`
 - **tier:** descriptive
-- **effect:** inhibition/unknown
+- **effect:** inhibition/proportional
 
 ## Citation
 Bachmann A et al., Potent inhibition of the CFTR chloride…, Naunyn-Schmiedeberg's archi… (1999)
@@ -38,7 +38,7 @@ Bachmann A et al., Potent inhibition of the CFTR chloride…, Naunyn-Schmiedeber
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
 | PD (effect) | IC50 | `Q322` · not captured | 1 | microM | not captured | llm (not captured) | Bachmann_1999:pdv3 |
-| PD (effect) | Hill coefficient | `Q325` · not captured | close to 1 | not captured | not captured | llm (not captured) | Bachmann_1999:pdv3 |
+| PD (effect) | Hill coefficient | `Q325` · not captured | 1 | not captured | not captured | llm (not captured) | Bachmann_1999:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>

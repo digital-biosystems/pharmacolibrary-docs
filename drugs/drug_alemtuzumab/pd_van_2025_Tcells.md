@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01X&quot;,&quot;href&quot;:&quot;atc/L01X.md&quot;},{&quot;label&quot;:&quot;alemtuzumab&quot;,&quot;href&quot;:&quot;drugs/drug_alemtuzumab/&quot;},{&quot;label&quot;:&quot;van_2025 \u00b7 PD T cells&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Alemtuzumab_Dong2022_reference&quot;,&quot;label&quot;:&quot;Dong_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alemtuzumab/Alemtuzumab_Dong2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Alemtuzumab_Dong2022_reference&quot;,&quot;label&quot;:&quot;Dong_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alemtuzumab/Alemtuzumab_Dong2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Dong_2022_ALC&quot;,&quot;label&quot;:&quot;Dong_2022 \u00b7 ALC&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_alemtuzumab/pd_Dong_2022_ALC.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Mould_2007_WBC&quot;,&quot;label&quot;:&quot;Mould_2007 \u00b7 WBC&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_alemtuzumab/pd_Mould_2007_WBC.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_van_2025_Tcells&quot;,&quot;label&quot;:&quot;van_2025 \u00b7 Tcells&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_alemtuzumab/pd_van_2025_Tcells.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # T cells — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.778). Primary extraction retained.">cross-check: disputed</span>
@@ -14,13 +14,13 @@
 
 ## Record summary
 
-**As extracted:** Alemtuzumab (concentrations from the PK model of Admiraal_2019) drives T cells (in cells/μL): indirect response — drug stimulates the loss of T cells.
+**As extracted:** Alemtuzumab (concentrations from the PK model of Achini-Gutzwiller_2023_2) drives T cells (in cells/μL): indirect response — drug stimulates the loss of T cells.
 
-**Model:** Model available in **Models**; browser simulation unavailable.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
-> Alemtuzumab concentrations (mg/L) stimulate the first-order elimination of T cells (cells/μL) via a parallel Emax mechanism, with an Emax of 2.41 day⁻¹ and an EC50 of 0.0786 mg/L. T cell production is governed by a first-order influx rate (kin) of 0.00548 day⁻¹, which is set equal to the efflux rate (kout) and modulated by positive feedback and baseline T cell covariates.
+> Alemtuzumab concentration (mg/L) stimulates the first-order removal of T cells (cells/µL) in parallel to a baseline first-order efflux, while T cell production is governed by a constant rate with positive feedback. The drug effect is modeled as a non-sigmoidal Emax relationship with an Emax of 2.41 day⁻¹ and an EC50 of 0.0786 mg/L, against a T cell influx rate (kin) of 0.00548 day⁻¹.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `van_2025`
 - **model family:** `indirect_response_iv`
@@ -36,13 +36,11 @@ van Vugt LK et al., Alemtuzumab Exposure and T Lymphocyte D…, Clinical pharmac
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
 | PD (effect) | kin | `Q327` · not captured | 0.00548 | day−1 | not captured | llm (not captured) | van_2025:pdv3 |
-| model term | base | `Q900` · not captured | 4.82 | not captured | not captured | llm (not captured) | van_2025:pdv3 |
+| — | base | `Q100` · not captured | 4.82 | not captured | not captured | nil (not captured) | van_2025:pdv3 |
 | PD (effect) | E max | `Q320` · not captured | 2.41 | day−1 | not captured | llm (not captured) | van_2025:pdv3 |
 | PD (effect) | EC 50 | `Q321` · not captured | 0.0786 | mg/L | not captured | llm (not captured) | van_2025:pdv3 |
-| model term | Baseline T cells on kin | `Q900` · not captured | 0.454 | not captured | not captured | llm (not captured) | van_2025:pdv3 |
-| model term | Baseline T cells on EC50 | `Q900` · not captured | -1.28 | not captured | not captured | llm (not captured) | van_2025:pdv3 |
-| variability | kin (CV%) | `Q312` · not captured | 24.2 | CV% | not captured | llm (not captured) | van_2025:pdv3 |
-| variability | EC50 (CV%) | `Q312` · not captured | 106.8 | CV% | not captured | llm (not captured) | van_2025:pdv3 |
+| variability | kin | `Q312` · not captured | 24.2 | CV% | not captured | llm (not captured) | van_2025:pdv3 |
+| variability | EC50 | `Q312` · not captured | 106.8 | CV% | not captured | llm (not captured) | van_2025:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -114,18 +112,21 @@ Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_alemtuzumab/Alemtuzumab_van2025_PD_tcells/Alemtuzumab_van2025_PD_tcells_modelica.zip" download>Alemtuzumab_van2025_PD_tcells_modelica.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_alemtuzumab/Alemtuzumab_van2025_PD_tcells/Alemtuzumab_van2025_PD_tcells_matlab.zip" download>Alemtuzumab_van2025_PD_tcells_matlab.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_alemtuzumab/Alemtuzumab_van2025_PD_tcells/Alemtuzumab_van2025_PD_tcells_sbml.zip" download>Alemtuzumab_van2025_PD_tcells_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_alemtuzumab/Alemtuzumab_van2025_PD_tcells/Alemtuzumab_van2025_PD_tcells_cellml.zip" download>Alemtuzumab_van2025_PD_tcells_cellml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PD_IndirectTurnoverSweep.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+<dbs-fmusim paramsurl="drugs/drug_alemtuzumab/Alemtuzumab_van2025_PD_tcells/Alemtuzumab_van2025_PD_tcells_params.json" metaurl="assets/fmu/PD_IndirectTurnoverSweep.vr.json" wasmurl="assets/fmu/PD_IndirectTurnoverSweep.js" controlsurl="drugs/drug_alemtuzumab/Alemtuzumab_van2025_PD_tcells/Alemtuzumab_van2025_PD_tcells_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PD_IndirectTurnoverSweep` · parameters `Alemtuzumab_van2025_PD_tcells_params.json` · controls `Alemtuzumab_van2025_PD_tcells_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 

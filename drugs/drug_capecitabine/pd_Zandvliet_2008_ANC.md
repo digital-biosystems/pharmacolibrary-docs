@@ -1,8 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;capecitabine&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/&quot;},{&quot;label&quot;:&quot;Zandvliet_2008 \u00b7 PD Absolute neutrophil count&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Capecitabine_Panoilia2015_reference&quot;,&quot;label&quot;:&quot;Panoilia_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Panoilia2015_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Capecitabine_Schmulenson2022_reference&quot;,&quot;label&quot;:&quot;Schmulenson_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Schmulenson2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Capecitabine_Wen2021_reference&quot;,&quot;label&quot;:&quot;Wen_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Wen2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Capecitabine_Zuo2024_reference&quot;,&quot;label&quot;:&quot;Zuo_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Zuo2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;capecitabine&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/&quot;},{&quot;label&quot;:&quot;Zandvliet_2008 \u00b7 PD absolute neutrophil count&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Capecitabine_Panoilia2015_reference&quot;,&quot;label&quot;:&quot;Panoilia_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Panoilia2015_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Capecitabine_Wen2021_reference&quot;,&quot;label&quot;:&quot;Wen_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Wen2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Capecitabine_Zuo2024_reference&quot;,&quot;label&quot;:&quot;Zuo_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Zuo2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Absolute neutrophil count — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed</span>
+# absolute neutrophil count — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by ollama:gpt-oss:120b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -14,13 +14,13 @@
 
 ## Record summary
 
-**As extracted:** 5'-DFUR (concentrations from this paper's PK model) drives Absolute neutrophil count (in ×10 9 /l): direct linear effect.
+**As extracted:** Indisulam (concentrations from this paper's PK model) drives absolute neutrophil count (in ×10 9 /l): direct linear effect.
 
-**Model:** No model was generated from this record.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
-> The paper describes an interaction model where 5'-DFUR concentrations inhibit the saturable elimination pathway of indisulam via an Emax model, rather than directly acting on absolute neutrophil count. The estimated IC50 for this inhibition is 0.0167 nM, while the record cites a slope parameter for capecitabine inhibition of ANC without providing a numerical value.
+> The paper describes a semiphysiological model where indisulam plasma concentrations (mg/l) inhibit the production of absolute neutrophil counts (ANC, ×10^9/l) via a transit compartment model with a mean transit time (MTT) of 138 h and a slope of 0.0194 l/mg. The paper does not explicitly state the value for the gamma parameter (g) in the provided excerpts, though the record lists it as 0.093.
 >
-> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
 
 - **paper:** `Zandvliet_2008`
 - **model family:** `linear`
@@ -35,8 +35,9 @@ Zandvliet AS et al., PK/PD model of indisulam and capecitabi…, Clinical pharma
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | Slope capecitabine | `Q335` · not captured | - | l/mg | not captured | llm (not captured) | Zandvliet_2008:pdv3 |
-| variability | Proportional residual error | `Q315` · not captured | 32.5 | % | not captured | llm (not captured) | Zandvliet_2008:pdv3 |
+| PD (effect) | Slope indisulam | `Q335` · not captured | 0.0194 | l/mg | not captured | llm (not captured) | Zandvliet_2008:pdv3 |
+| PD (effect) | MTT | `Q338` · not captured | 138 | h | not captured | llm (not captured) | Zandvliet_2008:pdv3 |
+| model term | g | `Q900` · not captured | 0.093 | not captured | not captured | llm (not captured) | Zandvliet_2008:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -44,21 +45,55 @@ Zandvliet AS et al., PK/PD model of indisulam and capecitabi…, Clinical pharma
 </details>
 
 
+## Exposure-response model
+
+`Capecitabine_Zandvliet2008_PD_anc` — linear, `response = E0 + slope*exposure`
+
+| parameter | value (paper units) | SI |
+|---|---|---|
+| E0 | 0 | — |
+| slope | 0.0194 l/mg | 19.4 meter ** 3 / kilogram |
+
+Closed-form check points (response, SI): `at_0` = 0, `per_exposure_unit` = 19.4
+
+Deviations:
+
+- `defaulted_parameters` — E0
+
+## Review
+
+Verdict <span class="pk-badge pk-badge--orange">needs review</span> · route to `scholar`
+
+| check | status | note |
+|---|---|---|
+| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
+| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
+| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
+| `T2_direction` | skipped | a line has no plateau to compare |
+| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
+| `T4_defaults` | fail | a core parameter took a library default: E0 |
+
+Advisory:
+
+- defaulted: E0 — a row the paper has and the record lacks
+
+
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
+Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `einfracz:gpt-oss-120b` | not confirmed | 0.429 (3/7 fields) | 4 |
+| `ollama:gpt-oss:120b` | not confirmed | 0.375 (3/8 fields) | 5 |
 
-<details><summary>4 field discrepancies</summary>
+<details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `einfracz:gpt-oss-120b` | `model_family` | linear | indirect_response_i | mismatch |
-| `einfracz:gpt-oss-120b` | `parameters[Q324]` | not captured | 0.093 | only_one_extracted |
-| `einfracz:gpt-oss-120b` | `parameters[Q335].value` | - | 0.0194 | mismatch |
-| `einfracz:gpt-oss-120b` | `parameters[Q338]` | not captured | 138 | only_one_extracted |
+| `ollama:gpt-oss:120b` | `driver_compound` | indisulam | 5'-DFUR | mismatch |
+| `ollama:gpt-oss:120b` | `model_family` | linear | indirect_response_i | mismatch |
+| `ollama:gpt-oss:120b` | `parameters[Q100]` | not captured | 0.093 | only_one_extracted |
+| `ollama:gpt-oss:120b` | `parameters[Q338]` | 138 | not captured | only_one_extracted |
+| `ollama:gpt-oss:120b` | `parameters[Q900]` | 0.093 | not captured | only_one_extracted |
 
 </details>
 
@@ -74,14 +109,14 @@ Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check v
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_capecitabine/Capecitabine_Zandvliet2008_PD_anc/Capecitabine_Zandvliet2008_PD_anc_modelica.zip" download>Capecitabine_Zandvliet2008_PD_anc_modelica.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_capecitabine/Capecitabine_Zandvliet2008_PD_anc/Capecitabine_Zandvliet2008_PD_anc_matlab.zip" download>Capecitabine_Zandvliet2008_PD_anc_matlab.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_capecitabine/Capecitabine_Zandvliet2008_PD_anc/Capecitabine_Zandvliet2008_PD_anc_sbml.zip" download>Capecitabine_Zandvliet2008_PD_anc_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_capecitabine/Capecitabine_Zandvliet2008_PD_anc/Capecitabine_Zandvliet2008_PD_anc_cellml.zip" download>Capecitabine_Zandvliet2008_PD_anc_cellml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
 </div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>

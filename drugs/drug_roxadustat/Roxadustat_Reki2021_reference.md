@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B03X&quot;,&quot;href&quot;:&quot;atc/B03X.md&quot;},{&quot;label&quot;:&quot;roxadustat&quot;,&quot;href&quot;:&quot;drugs/drug_roxadustat/&quot;},{&quot;label&quot;:&quot;Reki\u0107_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Roxadustat_Takada2022v2_reference&quot;,&quot;label&quot;:&quot;Takada_2022_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_roxadustat/Roxadustat_Takada2022v2_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Roxadustat_Takada2022v2_reference&quot;,&quot;label&quot;:&quot;Takada_2022_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_roxadustat/Roxadustat_Takada2022v2_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Roxadustat_Czock2022_healthy_sca&quot;,&quot;label&quot;:&quot;Czock_2022_healthy_sca&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_roxadustat/Roxadustat_Czock2022_healthy_sca.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Roxadustat_Czock2022_kidney_function_normal&quot;,&quot;label&quot;:&quot;Czock_2022_kidney_function_normal&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_roxadustat/Roxadustat_Czock2022_kidney_function_normal.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # roxadustat — `Roxadustat_Reki2021_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (partly confirmed, agreement 0.625). Primary extraction retained.">cross-check: partial 1/2</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (partly confirmed, agreement 0.625). Primary extraction retained.">cross-check: partial 1/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -17,26 +17,24 @@
 
 ### Reviewer guidance
 
-**The roxadustat record was held back because the absorption rate constant ka was not reported in the source and a placeholder value was substituted, alongside defaulted Tlag, in a model built only from the paper's abstract.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record comes from Rekić_2021 (abstract-only), so the reported summary statistics — apparent clearance CL/F of 1.1 L/h and apparent volume of distribution of 14.9 L for roxadustat — stood in for a fitted model. The absorption parameters ka and Tlag were missing from the source and left at defaults, which the adjudication judged an invented absorption input and not acceptable. The parameterization is apparent (F=1, Fm=1, no molar correction) with first-order depot input, and a second reader disagreed on this point, preferring a mechanistic parameterization, while reading null for both the 1.1 L/h clearance and 14.9 L volume values. Extracted — roxadustat: CL/F 1.1 L/h, V 14.9 L.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — roxadustat: CL/F 1.1 L/h, V1 14.9 L, V2 9.5 L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of apparent central and peripheral volumes of distribution: this record has 14.9, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by glm-5.3-flash</sub>
-
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:40:24.544286+00:00) predates the upstream re-run (2026-10-07 18:36:33.561404+00:00). Current validate status: `rejected`.
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Rekić D et al., Pharmacokinetics of Roxadustat: A Popul…, Clinical pharmacokinetics (2021)
   ·  DOI: [10.1007/s40262-020-00974-z](https://doi.org/10.1007/s40262-020-00974-z)
 
-<div class="pk-model-meta" hidden drug="roxadustat" model-id="Roxadustat_Reki2021_reference" status="rejected" stale="true" population="dialysis- and non-dialysis-dependent patients with chronic kidney disease" measured-compound="roxadustat" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="roxadustat" model-id="Roxadustat_Reki2021_reference" status="rejected" stale="false" population="patients with chronic kidney disease" measured-compound="roxadustat" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.
 
-**Parameterization:** CL/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
@@ -44,8 +42,8 @@ Rekić D et al., Pharmacokinetics of Roxadustat: A Popul…, Clinical pharmacoki
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | apparent clearance | `Q27` · CL/F | 1.1 | L/h | 3.055555555555556e-07 | [l] / [h] | not captured | exact (1.0) | Rekić_2021:abstract | — | not captured |
-| apparent central volume of distribution | `Q290` · V1/F | 14.9 | L | 0.0149 | [l] | not captured | llm_confirmed (0.6) | Rekić_2021:abstract | — | not captured |
-| apparent peripheral volume of distribution | `Q82` · V2/F | 9.5 | L | 0.0095 | [l] | not captured | llm_confirmed (0.6) | Rekić_2021:abstract | — | not captured |
+| apparent central ... volumes of distribution | `Q63` · V1 | 14.9 | L | 0.0149 | [l] | not captured | llm (0.6) | Rekić_2021:abstract | — | not captured |
+| peripheral volumes of distribution | `Q64` · V2 | 9.5 | L | 0.0095 | [l] | not captured | llm (0.6) | Rekić_2021:abstract | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -95,25 +93,13 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Rekić_2021:abstract'] |
-| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['Rekić_2021:abstract'] |
-| C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['Rekić_2021:abstract'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Rekić_2021:abstract'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Rekić_2021:abstract'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 1.1 L/h | not captured | not captured | ['Rekić_2021:abstract'] |
-| C9_phys_window_Q290 | pass | volume within physiological range | 14.9 L | not captured | not captured | ['Rekić_2021:abstract'] |
-| C9_phys_window_Q82 | pass | volume within physiological range | 9.5 L | not captured | not captured | ['Rekić_2021:abstract'] |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
-| T3_output_variable | not captured | pass | C_central (measured=roxadustat) | central.C | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
+| C9_phys_window_Q63 | pass | volume within physiological range | 14.9 L | not captured | not captured | ['Rekić_2021:abstract'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 9.5 L | not captured | not captured | ['Rekić_2021:abstract'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -122,10 +108,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_roxadustat/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Rekić_2021` / `Rekić_2021::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_roxadustat/models/modelica/Roxadustat_Reki2021_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_roxadustat/models/modelica/Roxadustat_Reki2021_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_roxadustat/models/modelica/Roxadustat_Reki2021_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_roxadustat/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Rekić_2021` / `Rekić_2021::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -141,4 +124,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 18:36 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 20:39 UTC</sub>

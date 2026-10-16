@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;abatacept&quot;,&quot;href&quot;:&quot;drugs/drug_abatacept/&quot;},{&quot;label&quot;:&quot;Roy_2007 \u00b7 PD interleukin-6&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;abatacept&quot;,&quot;href&quot;:&quot;drugs/drug_abatacept/&quot;},{&quot;label&quot;:&quot;Roy_2007 \u00b7 PD interleukin (IL)-6&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# interleukin-6 — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
+# interleukin (IL)-6 — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -13,16 +13,16 @@
 
 ## Record summary
 
-**As extracted:** Abatacept (concentrations from the PK model of Emery_2025) drives interleukin-6: indirect response — drug inhibits the loss of interleukin-6.
+**As extracted:** Abatacept (concentrations from the PK model of Emery_2025) drives interleukin (IL)-6: indirect response — drug inhibits the production of interleukin (IL)-6.
 
 **Model:** No model was generated from this record.
 
-> The record describes abatacept as an indirect response model with an inhibitory effect on interleukin-6, but the effect form is unknown. The provided paper excerpts contain no full text or specific parameters to confirm the mechanism or potency values.
+> The model is described as an indirect response model where abatacept inhibits the measured response of interleukin (IL)-6. Because no full text was available, the specific mechanism of inhibition and any key potency or rate values are not stated.
 >
 > <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Roy_2007`
-- **model family:** `indirect_response_ii`
+- **model family:** `indirect_response_i`
 - **driver:** `cited_pk`
 - **tier:** population
 - **effect:** inhibition/unknown

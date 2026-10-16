@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;phenobarbital&quot;,&quot;href&quot;:&quot;drugs/drug_phenobarbital/&quot;},{&quot;label&quot;:&quot;Stoschus_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Phenobarbital_TeixeiradaSilva2022_reference&quot;,&quot;label&quot;:&quot;Teixeira-da-Silva_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_phenobarbital/Phenobarbital_TeixeiradaSilva2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Phenobarbital_TeixeiradaSilva2022_reference&quot;,&quot;label&quot;:&quot;Teixeira-da-Silva_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_phenobarbital/Phenobarbital_TeixeiradaSilva2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # phenobarbital — `Phenobarbital_Stoschus2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -17,47 +17,59 @@
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**This paper's disposition core is incomplete; t1/2ka  has no unit.**
+
+A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Li_2020, Teixeira-da-Silva_2022) cannot stand in for this paper's evidence. Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (t1/2ka ), so that value has no SI equivalent. Extracted — phenobarbital: t1/2ka 1.9 h−1 a, CL 44 mL/min, kabs 2.64 h−1.
 
 Independently confirmed by `gpt-oss-120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:39:24.746222+00:00) predates the upstream re-run (2026-10-07 07:27:01.352518+00:00). Current validate status: `rejected`.
-
 ## Citation
 Stoschus M et al., Optimizing phenobarbital dosing in crit…, Epilepsia (2025)
   ·  DOI: [10.1111/epi.18517](https://doi.org/10.1111/epi.18517)
 
-<div class="pk-model-meta" hidden drug="phenobarbital" model-id="Phenobarbital_Stoschus2025_reference" status="rejected" stale="true" population="critically ill patients with refractory and superrefractory status epilepticus" measured-compound="phenobarbital" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="phenobarbital" model-id="Phenobarbital_Stoschus2025_reference" status="needs_review" stale="false" population="critically ill patients with refractory and superrefractory status epilepticus" measured-compound="phenobarbital" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 0 extracted.
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
-_No resolved parameters._
+| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
+|---|---|---|---|---|---|---|---|---|---|---|
+| k a, h−1 a | `Q95` · t1/2ka | 1.9 | h−1 a | not captured | [a] / [h] | not captured | llm (0.6) | epi18517-tbl-0002:row3:col1, epi18517-tbl-0002:row3:col2 | — | not captured |
+| estimated creatinine clearance | `Q22` · CL | 44.0 | mL/min | 7.333333333333333e-07 | L/h | not captured | review_gapfill (0.7) | Li_2020:review | — | not captured |
+| absorption rate constant (Ka) | `Q49` · kabs | 2.64 | h−1 | 0.0007333333333333333 | 1/h | not captured | review_gapfill (0.7) | Teixeira-da-Silva_2022:review | — | not captured |
+
+<details class="legend">
+<summary>Parameter definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- table section iiv: 'V, L' routed out of structural estimates ('IIV parameters')
-- table section iiv: 'CL, L/h' routed out of structural estimates ('IIV parameters')
-- table section iov: 'CL, L/h' routed out of structural estimates ('IOV parameters')
-- dropped value-less row: 'k a, h−1 a'
+- table section iiv: 'V, L' routed out of structural estimates ('IIV parameters SD CV %')
+- table section iiv: 'CL, L/h' routed out of structural estimates ('IIV parameters SD CV %')
+- table section iov: 'CL, L/h' routed out of structural estimates ('IOV parameters SD')
+- table representations disagree for 'k a, h−1 a'; source reconciliation required
+- unit_dimension_unknown: 'h−1 a' (t1/2ka )
+- implicit units: 'k a, h−1 a' — the LLM proposed '1/h', whose dimension does not fit Q95; left unset
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=phenobarbital
-- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at route_to_review — not promoted
+- gap-filled Q22 (CL) from Li_2020's review values (primary lacked it)
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- gap-filled Q49 (kabs) from Teixeira-da-Silva_2022's review values (primary lacked it)
 
 **Extraction notes:**
-- unparsed cell epi18517-tbl-0002:row7:col1 = '.71 (12.1; .56–.9)'
-- unparsed cell epi18517-tbl-0002:row7:col3 = '.7 (.37–.96)'
-- unparsed cell epi18517-tbl-0002:row8:col1 = '.4 (16.2; .29–.54)'
-- unparsed cell epi18517-tbl-0002:row8:col3 = '.39 (.17–.58)'
-- unparsed cell epi18517-tbl-0002:row10:col1 = '.36 (6.64; .31–.41)'
-- unparsed cell epi18517-tbl-0002:row10:col3 = '.29 (.19–.4)'
+- table epi18517-tbl-0002: unparsed_numeric_cell
+- table epi18517-tbl-0002: representations disagree; selected evidence retained, not merged
 - LLM selected parameter table(s) 2
 
 ## Validation
@@ -81,20 +93,14 @@ _All readers agree on the compared fields of this record._
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
-| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Li_2020:review'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Teixeira-da-Silva_2022:review'] |
+| C5_unit_missing_Q95 | fail | [time] | h−1 a | not captured | not captured | ['epi18517-tbl-0002:row3:col1', 'epi18517-tbl-0002:row3:col2'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 44.0 | not captured | not captured | ['Li_2020:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_output_variable | not captured | pass | C_central (measured=phenobarbital) | central.C | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 2.64 L/h | not captured | not captured | ['Li_2020:review'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -103,17 +109,24 @@ _All readers agree on the compared fields of this record._
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_phenobarbital/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Stoschus_2025` / `Stoschus_2025::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_phenobarbital/models/modelica/Phenobarbital_Stoschus2025_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_phenobarbital/models/modelica/Phenobarbital_Stoschus2025_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_phenobarbital/models/modelica/Phenobarbital_Stoschus2025_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_phenobarbital/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Stoschus_2025` / `Stoschus_2025::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -122,4 +135,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 07:27 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 19:41 UTC</sub>

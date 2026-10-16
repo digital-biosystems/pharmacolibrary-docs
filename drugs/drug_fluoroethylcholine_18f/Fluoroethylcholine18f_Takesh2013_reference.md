@@ -4,7 +4,7 @@
 
 # fluoroethylcholine (18F) — `Fluoroethylcholine18f_Takesh2013_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (primary re-run, agreement 0.333). Primary extraction retained.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.8), gpt-oss:120b (primary re-run, agreement 0.333). Primary extraction retained.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -20,7 +20,7 @@
 
 No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has fluoroethylcholine_18f, the second reading 18F-fluoroethylcholine; it also differs on 3 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of k1: this record has none, the second reading 19. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -63,17 +63,19 @@ _No resolved parameters._
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | primary re-run | 0.8 (4/5 fields) | 1 |
 | `gpt-oss:120b` | primary re-run | 0.333 (2/6 fields) | 4 |
 
-<details><summary>4 field discrepancies</summary>
+<details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[k1]` | not captured | 19 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[k2]` | not captured | 0.6 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[k4]` | not captured | 0.99 | only_one_extracted |
 | `gpt-oss:120b` | `screen.dose_compound` | fluoroethylcholine_18f | 18F-fluoroethylcholine | mismatch |
@@ -102,7 +104,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_fluoroethylcholine_18f/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Takesh_2013` / `Takesh_2013::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_fluoroethylcholine_18f/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Takesh_2013` / `Takesh_2013::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

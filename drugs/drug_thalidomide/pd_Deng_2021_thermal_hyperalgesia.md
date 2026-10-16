@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;thalidomide&quot;,&quot;href&quot;:&quot;drugs/drug_thalidomide/&quot;},{&quot;label&quot;:&quot;Deng_2021 \u00b7 PD thermal hyperalgesia&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Thalidomide_Chen1989_reference&quot;,&quot;label&quot;:&quot;Chen_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_thalidomide/Thalidomide_Chen1989_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Thalidomide_Figg1999_reference&quot;,&quot;label&quot;:&quot;Figg_1999_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_thalidomide/Thalidomide_Figg1999_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Thalidomide_Kamikawa2006_reference&quot;,&quot;label&quot;:&quot;Kamikawa_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_thalidomide/Thalidomide_Kamikawa2006_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Thalidomide_Noormohamed1999_reference&quot;,&quot;label&quot;:&quot;Noormohamed_1999_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_thalidomide/Thalidomide_Noormohamed1999_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Thalidomide_Chen1989_reference&quot;,&quot;label&quot;:&quot;Chen_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_thalidomide/Thalidomide_Chen1989_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Thalidomide_Figg1999_reference&quot;,&quot;label&quot;:&quot;Figg_1999_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_thalidomide/Thalidomide_Figg1999_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Thalidomide_Kamikawa2006_reference&quot;,&quot;label&quot;:&quot;Kamikawa_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_thalidomide/Thalidomide_Kamikawa2006_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # thermal hyperalgesia — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
@@ -16,11 +16,11 @@
 
 ## Record summary
 
-**As extracted:** Thalidomide (the dose) drives thermal hyperalgesia (in % MPE): direct Emax (saturable) effect.
+**As extracted:** Thalidomide (the dose) drives thermal hyperalgesia (in MPE): direct Emax (saturable) effect.
 
 **Model:** No model was generated from this record.
 
-> The model describes the dose-dependent inhibition of thermal hyperalgesia by thalidomide using an Emax framework. The estimated ED50 is 23.5 mg/kg and the maximum inhibitory effect (Emax) is 84% MPE, although the paper excerpt does not provide details on the specific mechanism (e.g., production vs. elimination) or rate constants.
+> The paper describes a dose-dependent inhibitory effect of thalidomide (mg/kg) on thermal hyperalgesia measured as MPE, but the full text is unavailable to determine the specific mechanism (e.g., production inhibition vs. direct effect). The recorded model estimates an ED50 of 23.5 mg/kg and a maximum inhibitory effect (Emax) of 84% MPE.
 >
 > <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
@@ -37,8 +37,8 @@ Deng MY et al., Thalidomide alleviates neuropathic pain…, Biochemical pharmaco
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | ED50 | `Q321` · not captured | 23.5 | mg/kg | not captured | llm (not captured) | Deng_2021:pdv3 |
-| PD (effect) | Emax | `Q323` · not captured | 84% | MPE | not captured | direction (not captured) | Deng_2021:pdv3 |
+| — | ED50 | `Q100` · not captured | 23.5 | mg/kg | not captured | nil (not captured) | Deng_2021:pdv3 |
+| PD (effect) | Emax | `Q323` · not captured | 84 | % MPE | not captured | llm (not captured) | Deng_2021:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>

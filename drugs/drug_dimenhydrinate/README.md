@@ -28,8 +28,19 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Kranke_2002_PONV](drugs/drug_dimenhydrinate/pd_Kranke_2002_PONV.md) | complete absence of postoperative nausea and vomiting within 6 hours ← dimenhydrinate · inhibition effect | — | Kranke P et al., Dimenhydrinate for prophylaxis of posto…, Acta anaesthesiologica Scan… (2002) | [10.1034/j.1399-6576.2002.t01-1-460303.x](https://doi.org/10.1034/j.1399-6576.2002.t01-1-460303.x) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Sher_2022_Nv](drugs/drug_dimenhydrinate/pd_Sher_2022_Nv.md) | Number of vomits biomarker turnover ← dimenhydrinate | — | Sher AA et al., GC-MS analysis of organic fractions of…, Brazilian journal of biolog… (2022) | [10.1590/1519-6984.260566](https://doi.org/10.1590/1519-6984.260566) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Kranke_2002_PONV](drugs/drug_dimenhydrinate/pd_Kranke_2002_PONV.md) | complete absence of postoperative nausea and vomiting within 6 hours ← dimenhydrinate · inhibition effect | — | Kranke P et al., Dimenhydrinate for prophylaxis of posto…, Acta anaesthesiologica Scan… (2002) | [10.1034/j.1399-6576.2002.t01-1-460303.x](https://doi.org/10.1034/j.1399-6576.2002.t01-1-460303.x) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Sher_2022_Nv](drugs/drug_dimenhydrinate/pd_Sher_2022_Nv.md) | Number of vomits biomarker turnover ← dimenhydrinate | — | Sher AA et al., GC-MS analysis of organic fractions of…, Brazilian journal of biolog… (2022) | [10.1590/1519-6984.260566](https://doi.org/10.1590/1519-6984.260566) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=dimenhydrinate).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: HRH1 (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -129,7 +129,7 @@ Aoyama T et al., Pharmacokinetics and Pharmacodynamics o…, CPT: pharmacometric
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_meloxicam/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Aoyama_2017` / `Aoyama_2017::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_meloxicam/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Aoyama_2017` / `Aoyama_2017::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -147,7 +147,7 @@ Aoyama T et al., Pharmacokinetics and Pharmacodynamics o…, CPT: pharmacometric
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_meloxicam/Meloxicam_Aoyama2017_reference/Meloxicam_Aoyama2017_reference.svg" alt="Meloxicam_Aoyama2017_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_meloxicam/Meloxicam_Aoyama2017_reference/Meloxicam_Aoyama2017_reference.svg" alt="Meloxicam_Aoyama2017_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

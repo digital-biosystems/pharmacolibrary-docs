@@ -1,7 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;blinatumomab&quot;,&quot;href&quot;:&quot;drugs/drug_blinatumomab/&quot;},{&quot;label&quot;:&quot;Zhu_2018 \u00b7 PD complete remission or CR with partial hematologic recovery&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;blinatumomab&quot;,&quot;href&quot;:&quot;drugs/drug_blinatumomab/&quot;},{&quot;label&quot;:&quot;Zhu_2018 \u00b7 PD complete remission [CR] or CR with partial hematologic recovery [CRh]&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Blinatumomab_Hijazi2018_reference&quot;,&quot;label&quot;:&quot;Hijazi_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_blinatumomab/Blinatumomab_Hijazi2018_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Blinatumomab_Kuchimanchi2019_reference&quot;,&quot;label&quot;:&quot;Kuchimanchi_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_blinatumomab/Blinatumomab_Kuchimanchi2019_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hijazi_2018_SPD&quot;,&quot;label&quot;:&quot;Hijazi_2018 \u00b7 SPD&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_blinatumomab/pd_Hijazi_2018_SPD.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hijazi_2018_kdep&quot;,&quot;label&quot;:&quot;Hijazi_2018 \u00b7 kdep&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_blinatumomab/pd_Hijazi_2018_kdep.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# complete remission or CR with partial hematologic recovery — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span>
+# complete remission [CR] or CR with partial hematologic recovery [CRh] — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -13,13 +14,13 @@
 
 ## Record summary
 
-**As extracted:** Blinatumomab (concentrations from the PK model of Clements_2020::45_kg) drives complete remission or CR with partial hematologic recovery (the model form was not identified).
+**As extracted:** Blinatumomab (concentrations from the PK model of Clements_2020) drives complete remission [CR] or CR with partial hematologic recovery [CRh] (the model form was not identified).
 
 **Model:** No model was generated from this record.
 
-> Blinatumomab concentration (pg/mL) was related to the binary CR/CRh response, with an odds ratio of 1.90. The available information does not specify the concentration contrast underlying this OR or the PD mechanism.
+> The paper reports an odds ratio of 0.78 for bone marrow blast percentage associated with blinatumomab concentrations (pg/mL) affecting complete remission, but no full text is available to describe the underlying mechanism, effect compartment, or specific potency and rate parameters.
 >
-> <sub>Source-based summary by gpt-6-luna from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Zhu_2018`
 - **model family:** `unknown`
@@ -34,7 +35,7 @@ Zhu M et al., Blinatumomab Pharmacodynamics and Expos…, Journal of clinical ph
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| — | OR | `Q100` · not captured | 1.90 | not captured | not captured | nil (not captured) | Zhu_2018:pdv3 |
+| — | OR for BM blast percentage | `Q100` · not captured | 0.78 | not captured | not captured | nil (not captured) | Zhu_2018:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>

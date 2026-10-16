@@ -158,9 +158,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_methadone/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Ward_2014` / `Ward_2014::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_methadone/models/modelica/Methadone_Ward2014_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_methadone/models/modelica/Methadone_Ward2014_reference.deviation.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_methadone/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Ward_2014` / `Ward_2014::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_methadone/models/modelica/Methadone_Ward2014_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_methadone/models/modelica/Methadone_Ward2014_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

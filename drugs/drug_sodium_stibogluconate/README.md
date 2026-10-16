@@ -21,31 +21,32 @@ Sodium stibogluconate is an antiprotozoal medicine used to treat leishmaniasis. 
 
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
-| sodium_stibogluconate | metabolite | 907.88 | C12H35Na3O26Sb2 | DrugBank | [56927674](https://pubchem.ncbi.nlm.nih.gov/compound/56927674) | Chulay_1988, Jaser_1995, Zaghloul_2010 |
+| antimony | metabolite | — (mass units only) | — | — | — | — |
+| sodium_stibogluconate (sodium stibogluconate) | metabolite | 907.88 | C12H35Na3O26Sb2 | DrugBank | [56927674](https://pubchem.ncbi.nlm.nih.gov/compound/56927674) | Chulay_1988, Jaser_1995, Zaghloul_2010 |
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 08:54 | 2:30 | 0/3/1 | 2/1/0 | 0/0/0 | 150,143/9,221 | ollama / glm-5.3-flash | 4 | 0/4 | 4/0 | 0 |
+| 2026-10-14 19:50 | 1:46 | 0/2/2 | 0/0/0 | 0/0/0 | 124,030/7,675 | einfracz / qwen3.8-27b | 4 | 0/4 | 4/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.833). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: unreported model parameter default(s): F</sub><br><sub>route_to: `scholar`</sub> | [Verrest_2021_reference](drugs/drug_sodium_stibogluconate/SodiumStibogluconate_Verrest2021_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Verrest L et al., Geographical Variability in Paromomycin…, Clinical pharmacokinetics (2021) | [10.1007/s40262-021-01036-8](https://doi.org/10.1007/s40262-021-01036-8) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.875). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Chulay_1988_reference](drugs/drug_sodium_stibogluconate/SodiumStibogluconate_Chulay1988_reference.md) | — | 1-compartment (no model) | 3 | Chulay JD et al., Pharmacokinetics of antimony during tre…, Transactions of the Royal S… (1988) | — |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.067). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Jaser_1995_reference](drugs/drug_sodium_stibogluconate/SodiumStibogluconate_Jaser1995_reference.md) | — | 1-compartment (no model) | 6 | Jaser MA et al., Pharmacokinetics of antimony in patient…, Pharmaceutical research (1995) | [10.1023/a:1016251023427](https://doi.org/10.1023/a:1016251023427) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.3). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Zaghloul_2010_reference](drugs/drug_sodium_stibogluconate/SodiumStibogluconate_Zaghloul2010_reference.md) | — | 1-compartment (no model) | 3 | Zaghloul IY et al., Clinical efficacy and pharmacokinetics…, Journal of clinical pharmac… (2010) | [10.1177/0091270009347674](https://doi.org/10.1177/0091270009347674) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.3). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Zaghloul_2010_reference](drugs/drug_sodium_stibogluconate/SodiumStibogluconate_Zaghloul2010_reference.md) | — | 1-compartment (no model) | 3 | Zaghloul IY et al., Clinical efficacy and pharmacokinetics…, Journal of clinical pharmac… (2010) | [10.1177/0091270009347674](https://doi.org/10.1177/0091270009347674) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.875). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Chulay_1988_reference](drugs/drug_sodium_stibogluconate/SodiumStibogluconate_Chulay1988_reference.md) | — | general linear (no model) | 1 | Chulay JD et al., Pharmacokinetics of antimony during tre…, Transactions of the Royal S… (1988) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.067). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Jaser_1995_reference](drugs/drug_sodium_stibogluconate/SodiumStibogluconate_Jaser1995_reference.md) | — | 1-compartment (no model) | 5 | Jaser MA et al., Pharmacokinetics of antimony in patient…, Pharmaceutical research (1995) | [10.1023/a:1016251023427](https://doi.org/10.1023/a:1016251023427) |
 
-## Pharmacodynamics (PD)
+## ADME sites
 
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Mehta_2010_Drug_activity_against_intracellular_Leishmania_amazonensis_amastigotes_egfp_fluorescence_in_PBMC_derived_macrophages](drugs/drug_sodium_stibogluconate/pd_Mehta_2010_Drug_activity_against_intracellular_Leishmania_am.md) | Drug activity against intracellular Leishmania amazonensis amastigotes (egfp fluorescence) in PBMC derived macrophages ← sodium stibogluconate · direct sigmoid Emax (Hill) effect | — | Mehta SR et al., Flow cytometric screening for anti-leis…, Experimental parasitology (2010) | [10.1016/j.exppara.2010.06.007](https://doi.org/10.1016/j.exppara.2010.06.007) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Mehta_2010_Drug_activity_against_intracellular_Leishmania_amazonensis_amastigotes_egfp_fluorescence_in_THP_1_cells](drugs/drug_sodium_stibogluconate/pd_Mehta_2010_Drug_activity_against_intracellular_Leishmania_am.md) | Drug activity against intracellular Leishmania amazonensis amastigotes (egfp fluorescence) in THP-1 cells ← sodium stibogluconate · direct sigmoid Emax (Hill) effect | — | Mehta SR et al., Flow cytometric screening for anti-leis…, Experimental parasitology (2010) | [10.1016/j.exppara.2010.06.007](https://doi.org/10.1016/j.exppara.2010.06.007) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Verrest_2024_parasite_load](drugs/drug_sodium_stibogluconate/pd_Verrest_2024_parasite_load.md) | blood parasite load (Leishmania kDNA by qPCR) ← sodium stibogluconate · direct linear effect | model (no simulator) | Verrest L et al., Leishmania blood parasite dynamics duri…, PLoS neglected tropical dis… (2024) | [10.1371/journal.pntd.0012078](https://doi.org/10.1371/journal.pntd.0012078) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 0.00).">in vitro</span> | [Seifert_2010_inhibition](drugs/drug_sodium_stibogluconate/pd_Seifert_2010_inhibition.md) | percentage inhibition of infected macrophages ← sodium stibogluconate · direct sigmoid Emax (Hill) effect | — | Seifert K et al., In vitro activity of anti-leishmanial d…, The Journal of antimicrobia… (2010) | [10.1093/jac/dkp500](https://doi.org/10.1093/jac/dkp500) |
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=sodium_stibogluconate).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: TOP1 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -57,7 +58,7 @@ Sodium stibogluconate is an antiprotozoal medicine used to treat leishmaniasis. 
 
 - **PubMed hits:** 16 matched, 16 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 4  ·  extracted 0  ·  needs_review 1  ·  rejected 3  ·  stale 0
+- **records:** 4  ·  extracted 0  ·  needs_review 2  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -66,28 +67,28 @@ _4 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Jaser_1995.pdf` | Jaser MA et al., Pharmacokinetics of antimony in patient…, Pharmaceutical research (1995) | popPK | 10 | [10.1023/a:1016251023427](https://doi.org/10.1023/a:1016251023427) | [7724470](https://pubmed.ncbi.nlm.nih.gov/7724470) | Full PK parameters (ka, kd, Cmax, Tmax, TBC, Vd, renal clearance) for sodium stibogluconate-derived antimony are reported directly in the abstract. |
-| `Zaghloul_2010.pdf` | Zaghloul IY et al., Clinical efficacy and pharmacokinetics…, Journal of clinical pharmac… (2010) | popPK | 10 | [10.1177/0091270009347674](https://doi.org/10.1177/0091270009347674) | [20663995](https://pubmed.ncbi.nlm.nih.gov/20663995) | Human PK study of sodium stibogluconate with numeric compartmental parameters (absorption half-life, elimination half-life, renal clearance) reported directly in the abstract. |
-| `Zaghloul_2004.pdf` | Zaghloul IY et al., Effect of renal impairment on the pharm…, Annals of tropical medicine… (2004) | popPK | 8 | [10.1179/000349804X3171](https://doi.org/10.1179/000349804X3171) | [15667712](https://pubmed.ncbi.nlm.nih.gov/15667712) | Original PK study in hamsters with numeric CL, Cmax, AUC, half-life values reported directly in the abstract. |
-| `Chulay_1988.pdf` | Chulay JD et al., Pharmacokinetics of antimony during tre…, Transactions of the Royal S… (1988) | popPK | 7 | not captured | [2845611](https://pubmed.ncbi.nlm.nih.gov/2845611) | Human PK study of sodium stibogluconate reporting compartmental half-lives (0.85, 2.02, 76 h) and concentrations, though CL/V values are not given. |
+| `Jaser_1995.pdf` | Jaser MA et al., Pharmacokinetics of antimony in patient…, Pharmaceutical research (1995) | popPK | 10 | [10.1023/a:1016251023427](https://doi.org/10.1023/a:1016251023427) | [7724470](https://pubmed.ncbi.nlm.nih.gov/7724470) | The study reports complete quantitative disposition parameters (ka, kd, TBC, Vd, renal clearance) for sodium stibogluconate in humans. |
+| `Zaghloul_2004.pdf` | Zaghloul IY et al., Effect of renal impairment on the pharm…, Annals of tropical medicine… (2004) | popPK | 10 | [10.1179/000349804X3171](https://doi.org/10.1179/000349804X3171) | [15667712](https://pubmed.ncbi.nlm.nih.gov/15667712) | The study reports quantitative non-compartmental PK parameters (Cmax, Clearance, AUC, half-life) for sodium stibogluconate in hamsters, with specific numeric values provided in the abstract. |
+| `Zaghloul_2010.pdf` | Zaghloul IY et al., Clinical efficacy and pharmacokinetics…, Journal of clinical pharmac… (2010) | popPK | 10 | [10.1177/0091270009347674](https://doi.org/10.1177/0091270009347674) | [20663995](https://pubmed.ncbi.nlm.nih.gov/20663995) | The paper reports quantitative pharmacokinetic parameters (half-lives, renal clearance, absorption rates) for sodium stibogluconate in humans directly in the abstract. |
+| `Chulay_1988.pdf` | Chulay JD et al., Pharmacokinetics of antimony during tre…, Transactions of the Royal S… (1988) | popPK | 9 | not captured | [2845611](https://pubmed.ncbi.nlm.nih.gov/2845611) | The abstract reports a compartmental model for sodium stibogluconate with specific half-lives, but lacks explicit clearance (CL) or volume (V) values. |
 
-<sub>queue written 2026-10-07T08:52:54.311632+00:00</sub>
+<sub>queue written 2026-10-14T19:49:13.319310+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Coelho_2014 | irrelevant | 3 | 3 | Study is about meglumine antimoniate (a different pentavalent antimonial) in rats; sodium stibogluconate is only mentioned as a related drug, and only half-lives (0.6 h, &gt;24 h) are given without CL/V or a full PK model. |
-| popPK | Ghosh_2021 | irrelevant | 0 | 0 | In vitro drug-susceptibility (EC50) study of Leishmania isolates; no PK disposition parameters for sodium stibogluconate are reported. |
-| popPK | Kiderlen_2001 | irrelevant | 0 | 0 | In-vitro antileishmanial efficacy study; sodium stibogluconate is only a comparator EC50, no PK parameters. |
-| popPK | Mehta_2010 | irrelevant | 0 | 0 | In vitro efficacy screening reporting EC50 values, not pharmacokinetic disposition parameters for sodium stibogluconate. |
-| popPK | Mukhopadhyay_2011 | irrelevant | 0 | 0 | In-vitro study of parasite resistance (EC50 values), not a pharmacokinetic study of sodium stibogluconate disposition. |
-| popPK | Seifert_2006 | irrelevant | 0 | 0 | Interaction study (FIC/AEI) with no PK disposition parameters for sodium stibogluconate. |
-| popPK | Seifert_2010 | irrelevant | 0 | 0 | In vitro efficacy study reporting EC50 values, not pharmacokinetic disposition parameters for sodium stibogluconate. |
-| popPK | Seifert_2011 | irrelevant | 0 | 0 | In vitro drug-interaction study with no pharmacokinetic parameters for sodium stibogluconate. |
-| popPK | Ullman_1989 | irrelevant | 0 | 0 | In-vitro study of drug-resistant Leishmania cell lines with EC50 values, not a pharmacokinetic study of sodium stibogluconate disposition. |
-| popPK | Verrest_2021 | irrelevant | 0 | 0 | This is a population-PK study of paromomycin; sodium stibogluconate is only a co-administered comparator drug with no PK parameters reported for it. |
-| popPK | Verrest_2024 | irrelevant | 2 | 1 | This is a PK-PD model of Leishmania parasite dynamics; sodium stibogluconate is only one of several treatments, with no SSG disposition parameters estimated (only a literature half-life of 2 h used in a kinetic-pharmacodynamic assumption), and no numeric SSG PK values are present. |
+| popPK | Coelho_2014 | irrelevant | 1 | 1 | The study focuses on tissue distribution and antimony levels in rats treated with meglumine antimoniate, not sodium stibogluconate as the subject drug. |
+| popPK | Ghosh_2021 | irrelevant | 0 | 0 | The paper is an in vitro susceptibility and resistance mechanism study for Leishmania parasites, not a pharmacokinetic study of sodium stibogluconate. |
+| popPK | Kiderlen_2001 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of tannins against Leishmania, where sodium stibogluconate is used only as a reference comparator agent (EC50) rather than being the subject of pharmacokinetic analysis. |
+| popPK | Mehta_2010 | irrelevant | 0 | 0 | The study is an in vitro pharmacodynamic screening for anti-leishmanial activity (EC50) and does not report any pharmacokinetic parameters such as clearance, volume, or half-life for sodium stibogluconate. |
+| popPK | Mukhopadhyay_2011 | irrelevant | 0 | 0 | The study reports in vitro pharmacodynamic EC50 values for antimony resistance in Leishmania, not pharmacokinetic disposition parameters for sodium stibogluconate. |
+| popPK | Seifert_2006 | irrelevant | 0 | 0 | The study assesses in vitro and in vivo antileishmanial efficacy and drug interactions, reporting FIC indices and activity enhancement indices rather than pharmacokinetic disposition parameters. |
+| popPK | Seifert_2010 | irrelevant | 0 | 0 | The study is an in vitro pharmacodynamic evaluation of drug efficacy (EC50 values) rather than a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | Seifert_2011 | irrelevant | 0 | 0 | The study is an in vitro pharmacodynamic interaction assay, not a pharmacokinetic study, and does not report any disposition parameters for sodium stibogluconate. |
+| popPK | Ullman_1989 | irrelevant | 0 | 0 | This is an in-vitro study on Leishmania resistance mechanisms, not a pharmacokinetic study in humans or animals. |
+| popPK | Verrest_2021 | irrelevant | 0 | 0 | The study models the pharmacokinetics of paromomycin, and sodium stibogluconate is only mentioned as a co-administered comparator agent without reported PK parameters. |
+| popPK | Verrest_2024 | irrelevant | 0 | 0 | The study focuses on Leishmania parasite dynamics and pharmacodynamics; sodium stibogluconate is a co-administered drug for which no original quantitative PK parameters (e.g., CL, V) are reported, only a fixed half-life is used for modeling. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 08:53 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-14 19:49 UTC</sub>

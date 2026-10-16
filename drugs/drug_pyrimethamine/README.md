@@ -20,7 +20,7 @@ Pyrimethamine is an antiprotozoal medicine used to treat malaria, including falc
 
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
-| dapsone and pyrimethamine (pyrimethamine) | metabolite | 248.714 | C12H13ClN4 | PubChem | [4993](https://pubchem.ncbi.nlm.nih.gov/compound/4993) | Falloon_1994, Odongo_2015, Salman_2011, de_2017 |
+| pyrimethamine | parent | 248.711 | C12H13ClN4 | DrugBank | [4993](https://pubchem.ncbi.nlm.nih.gov/compound/4993) | Odongo_2015, Salman_2011, de_2017 |
 | N(4)-acetylsulfadoxine | metabolite | 352.365 | C14H16N4O5S | PubChem | [160773](https://pubchem.ncbi.nlm.nih.gov/compound/160773) | Salman_2011 |
 | sulfadoxine | metabolite | 310.328 | C12H14N4O4S | PubChem | [17134](https://pubchem.ncbi.nlm.nih.gov/compound/17134) | Salman_2011 |
 
@@ -28,22 +28,31 @@ Pyrimethamine is an antiprotozoal medicine used to treat malaria, including falc
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 08:15 | 8:16 | 0/3/1 | 1/0/0 | 0/0/0 | 426,937/24,372 | ollama / glm-5.3-flash | 11 | 2/9 | 11/0 | 0 |
+| 2026-10-15 03:20 | 7:34 | 0/7/0 | 0/0/0 | 0/0/0 | 328,874/51,213 | einfracz / qwen3.8-27b | 11 | 2/9 | 11/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub><br><sub>route_to: `human_review`</sub> | [Falloon_1994_reference](drugs/drug_pyrimethamine/Pyrimethamine_Falloon1994_reference.md) | — | 1-compartment (no model) | 2 | Falloon J et al., Pharmacokinetics and safety of weekly d…, Antimicrobial agents and ch… (1994) | [10.1128/AAC.38.7.1580](https://doi.org/10.1128/AAC.38.7.1580) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.824). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Odongo_2015_reference](drugs/drug_pyrimethamine/Pyrimethamine_Odongo2015_reference.md) | — | 2-compartment (no model) | 8 (+2 cov.) | Odongo CO et al., Trimester-Specific Population Pharmacok…, Drugs in R&D (2015) | [10.1007/s40268-015-0110-z](https://doi.org/10.1007/s40268-015-0110-z) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.417). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Salman_2011_reference](drugs/drug_pyrimethamine/Pyrimethamine_Salman2011_reference.md) | — | parent + metabolite (no model) | 4 | Salman S et al., Pharmacokinetic properties of conventio…, Antimicrobial agents and ch… (2011) | [10.1128/AAC.01075-10](https://doi.org/10.1128/AAC.01075-10) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.526). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub><br><sub>route_to: `human_review`</sub> | [de_2017_reference](drugs/drug_pyrimethamine/Pyrimethamine_de2017_reference.md) | — | 2-compartment (no model) | 9 | de Kock M et al., Pharmacokinetics of Sulfadoxine and Pyr…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12181](https://doi.org/10.1002/psp4.12181) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Falloon_1994_reference](drugs/drug_pyrimethamine/Pyrimethamine_Falloon1994_reference.md) | — | general linear (no model) | 0 | Falloon J et al., Pharmacokinetics and safety of weekly d…, Antimicrobial agents and ch… (1994) | [10.1128/AAC.38.7.1580](https://doi.org/10.1128/AAC.38.7.1580) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.824). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Odongo_2015_reference](drugs/drug_pyrimethamine/Pyrimethamine_Odongo2015_reference.md) | — | 1-compartment (no model) | 8 | Odongo CO et al., Trimester-Specific Population Pharmacok…, Drugs in R&D (2015) | [10.1007/s40268-015-0110-z](https://doi.org/10.1007/s40268-015-0110-z) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.417). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Salman_2011_reference](drugs/drug_pyrimethamine/Pyrimethamine_Salman2011_reference.md) | — | parent + metabolite (no model) | 2 | Salman S et al., Pharmacokinetic properties of conventio…, Antimicrobial agents and ch… (2011) | [10.1128/AAC.01075-10](https://doi.org/10.1128/AAC.01075-10) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.526). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [de_2017_country](drugs/drug_pyrimethamine/Pyrimethamine_de2017_country.md) | — | 1-compartment (no model) | 0 | de Kock M et al., Pharmacokinetics of Sulfadoxine and Pyr…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12181](https://doi.org/10.1002/psp4.12181) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.526). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [de_2017_pyrimethamine](drugs/drug_pyrimethamine/Pyrimethamine_de2017_pyrimethamine.md) | — | 1-compartment (no model) | 0 | de Kock M et al., Pharmacokinetics of Sulfadoxine and Pyr…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12181](https://doi.org/10.1002/psp4.12181) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.526). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub><br><sub>route_to: `human_review`</sub> | [de_2017_pyrimethamine_estimate](drugs/drug_pyrimethamine/Pyrimethamine_de2017_pyrimethamine_estimate.md) | — | 2-compartment (no model) | 10 | de Kock M et al., Pharmacokinetics of Sulfadoxine and Pyr…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12181](https://doi.org/10.1002/psp4.12181) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.526). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub><br><sub>route_to: `human_review`</sub> | [de_2017_sulfadoxine_estimate](drugs/drug_pyrimethamine/Pyrimethamine_de2017_sulfadoxine_estimate.md) | — | 2-compartment (no model) | 8 | de Kock M et al., Pharmacokinetics of Sulfadoxine and Pyr…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12181](https://doi.org/10.1002/psp4.12181) |
 
-## Pharmacodynamics (PD)
+## ADME sites
 
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Adeyemi_2023_T_gondii_parasite_viability_RH_2F_tachyzoites_luciferase_reporter_assay](drugs/drug_pyrimethamine/pd_Adeyemi_2023_T_gondii_parasite_viability_RH_2F_tachyzoites_l.md) | T. gondii parasite viability (RH-2F tachyzoites, luciferase reporter assay) ← pyrimethamine · inhibition effect | — | Adeyemi OS et al., The In Vitro Anti-Parasitic Activities…, Pharmaceuticals (Basel, Swi… (2023) | [10.3390/ph16030447](https://doi.org/10.3390/ph16030447) |
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=pyrimethamine).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | `CYP2C8` inhibitor | DrugBank actor |
+| excretion | kidney | `SLC47A1` inhibitor, `SLC47A2` inhibitor | DrugBank actor |
+| excretion | liver | `SLC47A1` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: DHFR (inhibitor), FOLR1 (modulator), HEXB (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,7 +64,7 @@ Pyrimethamine is an antiprotozoal medicine used to treat malaria, including falc
 
 - **PubMed hits:** 72 matched, 20 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 4  ·  extracted 0  ·  needs_review 1  ·  rejected 3  ·  stale 0
+- **records:** 7  ·  extracted 0  ·  needs_review 0  ·  rejected 7  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -64,31 +73,31 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Salman_2011.pdf` | Salman S et al., Pharmacokinetic properties of conventio…, Antimicrobial agents and ch… (2011) | popPK | 10 | [10.1128/AAC.01075-10](https://doi.org/10.1128/AAC.01075-10) | [21282434](https://pubmed.ncbi.nlm.nih.gov/21282434) | Population PK two-compartment model of pyrimethamine in infants; abstract gives half-life and AUC but full CL/V parameter values likely in tables/supplement not shown. |
-| `Bell_2011.pdf` | Bell DJ et al., Population pharmacokinetics of sulfadox…, Clinical pharmacology and t… (2011) | popPK | 8 | [10.1038/clpt.2010.297](https://doi.org/10.1038/clpt.2010.297) | [21191379](https://pubmed.ncbi.nlm.nih.gov/21191379) | Population PK models for pyrimethamine in children are described, but the abstract gives no numeric CL/V/ka values, which likely reside in tables or supplementary material not provided. |
+| `Bell_2011.pdf` | Bell DJ et al., Population pharmacokinetics of sulfadox…, Clinical pharmacology and t… (2011) | popPK | 10 | [10.1038/clpt.2010.297](https://doi.org/10.1038/clpt.2010.297) | [21191379](https://pubmed.ncbi.nlm.nih.gov/21191379) | The paper describes a population pharmacokinetic model for pyrimethamine in human children, but no specific numeric parameter values (e.g., CL, V, half-life) are provided in the extracted evidence. |
+| `Salman_2011.pdf` | Salman S et al., Pharmacokinetic properties of conventio…, Antimicrobial agents and ch… (2011) | popPK | 8 | [10.1128/AAC.01075-10](https://doi.org/10.1128/AAC.01075-10) | [21282434](https://pubmed.ncbi.nlm.nih.gov/21282434) | The study reports quantitative population PK parameters (AUC, half-life) for pyrimethamine in infants, though specific values for clearance and volume are not listed in the provided text. |
 
-<sub>queue written 2026-10-07T08:08:36.349060+00:00</sub>
+<sub>queue written 2026-10-15T03:13:56.899820+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Abbaali_2021 | irrelevant | 0 | 0 | In vitro Toxoplasma drug-efficacy study; pyrimethamine is only a comparator, with no PK parameters reported. |
-| popPK | Adeyemi_2023 | irrelevant | 0 | 0 | In vitro anti-Toxoplasma study of emodin; pyrimethamine is only a positive-control comparator with no PK parameters. |
-| popPK | Bell_2011 | relevant | 8 | 3 | Population PK models for pyrimethamine in children are described, but the abstract gives no numeric CL/V/ka values, which likely reside in tables or supplementary material not provided. |
-| popPK | Elati_2026 | irrelevant | 0 | 0 | In vitro drug screening of tubercidin analogues against T. gondii; pyrimethamine is only a comparator and no PK parameters are reported. |
-| popPK | Jafari_2021 | irrelevant | 0 | 0 | Pyrimethamine is only a comparator in an anti-Toxoplasma efficacy study; no PK parameters (CL, V, half-life, model) are reported. |
-| popPK | Karunajeewa_2010 | irrelevant | 2 | 2 | Pyrimethamine is only a co-administered drug; the PK model and parameters are for chloroquine/DECQ, with no pyrimethamine values reported. |
-| popPK | Ma_2022 | irrelevant | 0 | 0 | This is an in vitro/in vivo efficacy study of tilmicosin and ATLL against T. gondii; pyrimethamine is only a positive-control comparator with no PK parameters reported. |
-| popPK | Moore_2015 | irrelevant | 0 | 0 | The study models piperaquine breast-milk transfer; pyrimethamine is only part of a co-administered combination therapy, with no pyrimethamine PK parameters reported. |
-| popPK | Ndlovu_2024 | irrelevant | 0 | 0 | Medicinal chemistry study of new anti-Toxoplasma compounds; pyrimethamine only appears as a comparator EC50, with no PK parameters. |
-| popPK | Philipps_1998 | irrelevant | 0 | 0 | In vitro parasite susceptibility study (EC50 values), not a pharmacokinetic study of pyrimethamine disposition. |
-| popPK | Qiu_2025 | irrelevant | 0 | 0 | Pyrimethamine is only a comparator (EC50 0.60 µM in Fig. S1, not provided); no PK parameters for pyrimethamine. |
-| popPK | Ramharter_2019 | irrelevant | 0 | 0 | This is a population PK study of mefloquine (and its metabolite CMQ), not pyrimethamine; pyrimethamine appears only as part of the SP comparator regimen. |
-| popPK | Salman_2010 | irrelevant | 2 | 1 | The paper models azithromycin's population PK; pyrimethamine is only co-administered as SP with no pyrimethamine parameter values reported. |
-| popPK | Zuidema_1986 | irrelevant | 0 | 0 | This is a clinical PK review of dapsone; pyrimethamine is only mentioned as a co-administered agent in malaria prophylaxis, with no PK parameters for pyrimethamine. |
-| popPK | da_2025 | irrelevant | 0 | 0 | Pyrimethamine is only mentioned as current standard-of-care; no PK parameters for it are reported. |
-| popPK | van_2025 | irrelevant | 0 | 0 | This is a meta-analysis of IPTp-SP effectiveness and parasite resistance markers, with no PK parameters (CL, V, ka, half-life, or PK model) for pyrimethamine reported. |
+| popPK | Abbaali_2021 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on parasite tubulin targeting where pyrimethamine serves only as a negative control, and no pharmacokinetic parameters are reported. |
+| popPK | Adeyemi_2023 | irrelevant | 0 | 0 | The paper is an in vitro mechanistic study of emodin against Toxoplasma gondii where pyrimethamine serves only as a positive control, reporting no pharmacokinetic parameters for pyrimethamine. |
+| popPK | Bell_2011 | relevant | 10 | 0 | The paper describes a population pharmacokinetic model for pyrimethamine in human children, but no specific numeric parameter values (e.g., CL, V, half-life) are provided in the extracted evidence. |
+| popPK | Elati_2026 | irrelevant | 0 | 0 | The paper is an in-vitro pharmacological study screening purine nucleoside analogues against Toxoplasma gondii, with pyrimethamine mentioned only as a standard control compound, and it contains no pharmacokinetic data. |
+| popPK | Jafari_2021 | irrelevant | 0 | 0 | The study reports anti-Toxoplasma efficacy (EC50, survival, parasite load) of a plant extract compared to pyrimethamine, but contains no pharmacokinetic parameters (CL, V, ka, etc.) for pyrimethamine. |
+| popPK | Karunajeewa_2010 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of chloroquine and its metabolite in pregnancy, using sulfadoxine-pyrimethamine only as a co-administered drug, not as the subject of PK modeling. |
+| popPK | Ma_2022 | irrelevant | 0 | 0 | The study evaluates tilmicosin and ATLL as anti-parasitic agents, using pyrimethamine only as a positive control without reporting any pharmacokinetic parameters for it. |
+| popPK | Moore_2015 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of piperaquine (PQ) in breast milk, with pyrimethamine only mentioned as part of a co-administered drug regimen (SP-PQ) and no PK parameters for pyrimethamine are reported. |
+| popPK | Ndlovu_2024 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on novel anti-Toxoplasmosis compounds, using pyrimethamine only as an efficacy comparator (EC50), with no pharmacokinetic data. |
+| popPK | Philipps_1998 | irrelevant | 0 | 0 | The study reports in-vitro susceptibility data (EC50) for antimalarials, not pharmacokinetic parameters for pyrimethamine. |
+| popPK | Qiu_2025 | irrelevant | 0 | 0 | The study evaluates the anti-Toxoplasma activity of quisinostat, using pyrimethamine only as a positive control in vitro, and does not report any pharmacokinetic parameters for pyrimethamine. |
+| popPK | Ramharter_2019 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of mefloquine and its metabolite carboxymefloquine in pregnant women, with pyrimethamine only mentioned as the comparator drug (SP-IPTp) and no PK parameters provided for it. |
+| popPK | Salman_2010 | irrelevant | 1 | 0 | The study focuses on the pharmacokinetics of azithromycin, with pyrimethamine (as part of SP) used only as a co-administered comparator for antimalarial treatment. |
+| popPK | Zuidema_1986 | irrelevant | 0 | 0 | The paper is a review of the pharmacokinetics of dapsone, not pyrimethamine; pyrimethamine is only mentioned as a combination therapy partner. |
+| popPK | da_2025 | irrelevant | 0 | 0 | The study focuses on the in vitro anti-parasitic activity (EC50/CC50) of novel marinoquinolines, with pyrimethamine mentioned only as part of current standard therapy, reporting no pharmacokinetic parameters for pyrimethamine. |
+| popPK | van_2025 | irrelevant | 0 | 0 | This is a systematic review and meta-analysis of clinical effectiveness (malaria outcomes) of sulfadoxine-pyrimethamine, not a pharmacokinetic study, and reports no PK parameters. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 08:08 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-15 03:16 UTC</sub>

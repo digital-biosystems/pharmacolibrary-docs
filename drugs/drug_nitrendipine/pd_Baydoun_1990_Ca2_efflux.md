@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C08C&quot;,&quot;href&quot;:&quot;atc/C08C.md&quot;},{&quot;label&quot;:&quot;nitrendipine&quot;,&quot;href&quot;:&quot;drugs/drug_nitrendipine/&quot;},{&quot;label&quot;:&quot;Baydoun_1990 \u00b7 PD Ca2+ efflux&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C08C&quot;,&quot;href&quot;:&quot;atc/C08C.md&quot;},{&quot;label&quot;:&quot;nitrendipine&quot;,&quot;href&quot;:&quot;drugs/drug_nitrendipine/&quot;},{&quot;label&quot;:&quot;Baydoun_1990 \u00b7 PD Ca2+ efflux from mitochondria&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Ca2+ efflux — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+# Ca2+ efflux from mitochondria — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -15,13 +15,13 @@
 
 ## Record summary
 
-**As extracted:** Nitrendipine drives Ca2+ efflux (in nmol Ca2+ min-1 mg-1 protein): direct Emax (saturable) effect.
+**As extracted:** Nitrendipine drives Ca2+ efflux from mitochondria (in nmol Ca2+ min-1 mg-1 protein): direct Emax (saturable) effect.
 
 **Model:** No model was generated from this record.
 
-> The paper does not provide a full text or mechanism description, so the specific mode of action (e.g., inhibition of production vs. elimination) is not stated. The record indicates an Emax model where nitrendipine stimulates Ca2+ efflux with an EC50 of 57.3 microM.
+> Nitrendipine was described as stimulating mitochondrial Ca2+ efflux, an effect modeled by an Emax-type function with an EC50 of 57.3 µM. As no full text was available, the paper's specific mechanistic details and any other rate or potency values were not provided.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Baydoun_1990`
 - **model family:** `emax`
@@ -45,7 +45,7 @@ Baydoun AR et al., Bay K 8644, modifier of calcium transpo…, British journal o
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|

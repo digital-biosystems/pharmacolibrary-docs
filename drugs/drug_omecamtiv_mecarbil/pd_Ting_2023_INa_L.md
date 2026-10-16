@@ -20,9 +20,9 @@
 
 **Model:** No model was generated from this record.
 
-> Omecamtiv mecarbil directly stimulates the late component of voltage-gated Na+ current (INa(L)) in GH3 cells via a concentration-dependent mechanism, with an EC50 of 2.3 µM. The paper does not specify the maximal effect (Emax) or the Hill coefficient (nH) for this specific response.
+> Omecamtiv mecarbil stimulates the late component of the voltage-gated Na+ current (INa(L)) in GH3 cells, with a reported EC50 of 2.3 µM. The paper fits this concentration-response relationship using a Hill equation but does not specify the underlying mechanism of action or kinetic rate parameters such as kout or ke0.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Ting_2023`
 - **model family:** `sigmoid_emax`

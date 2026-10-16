@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;primaquine&quot;,&quot;href&quot;:&quot;drugs/drug_primaquine/&quot;},{&quot;label&quot;:&quot;Sridharan_2019 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Primaquine_Chairat2018_reference&quot;,&quot;label&quot;:&quot;Chairat_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_primaquine/Primaquine_Chairat2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Primaquine_Sridharan2019_reference&quot;,&quot;label&quot;:&quot;Sridharan_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_primaquine/Primaquine_Sridharan2019_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Primaquine_Chairat2018_reference&quot;,&quot;label&quot;:&quot;Chairat_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_primaquine/Primaquine_Chairat2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -13,26 +13,26 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** Model and browser simulation available in **Models** and **Simulation**.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
-**The primaquine model was held back because bioavailability (F) and lag time (Tlag) were left at library defaults rather than estimated, so the simulated absorption profile is not supported by Sridharan_2019.**
+**Only clearance was extracted — no volume; cL and kabs have no unit.**
 
-The record reports primaquine clearance 10.34 L/h, volume of distribution 11.9 L, absorption rate constant 18.08 1/h, and a dialyzer extraction fraction E_HD of 30.17, but the deviations check failed because defaulted parameters were used. F and Tlag were substituted with library defaults instead of values estimated from this paper. These defaults affect the simulated concentration profile and are not supported by the paper, so the model needs the values extracted or explicitly justified as conventions. Extracted — primaquine: CL 10.3 L/h, V 11.9 L, kabs 18.1 1/h, E_HD 30.2.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. Extracted — primaquine: CL 39.1, kabs 0.946.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl θ].value`: this record has 10.34, the second reading 31.36; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by glm-5.3-flash</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Sridharan K et al., Population pharmacokinetics of primaqui…, Indian journal of pharmacol… (2019)
   ·  DOI: [10.4103/ijp.IJP_230_16](https://doi.org/10.4103/ijp.IJP_230_16)
 
-<div class="pk-model-meta" hidden drug="primaquine" model-id="Primaquine_Sridharan2019_reference" status="needs_review" stale="false" population="healthy volunteers and patients with hepatic or renal dysfunction" measured-compound="primaquine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="primaquine" model-id="Primaquine_Sridharan2019_reference" status="needs_review" stale="false" population="healthy and dysfunctional subjects" measured-compound="primaquine" parameterization="mechanistic" topology="1C"></div>
 
-**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 4 extracted.
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -41,10 +41,8 @@ Sridharan K et al., Population pharmacokinetics of primaqui…, Indian journal o
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL θ | `Q22` · CL | 10.34 | L/h | 2.872222222222222e-06 | L/h | not captured | llm_confirmed (0.6) | T2:row4:col1, T2:row4:col2, T2:row4:col3, T2:row4:col4 | — | not captured |
-| V θ | `Q61` · V | 11.9 | L | 0.0119 | L | not captured | llm (0.6) | T2:row5:col1, T2:row5:col2, T2:row5:col3, T2:row5:col4 | — | not captured |
-| Ka θ | `Q49` · kabs | 18.08 | 1/h | 0.005022222222222221 | 1/h | not captured | llm_confirmed (0.6) | T2:row6:col1, T2:row6:col2, T2:row6:col3, T2:row6:col4 | — | not captured |
-| Moderate HD on V θ | `Q359` · E_HD | 30.17 | not captured | not captured | not captured | not captured | llm (0.6) | T2:row7:col1, T2:row7:col2, T2:row7:col3, T2:row7:col4 | — | not captured |
+| CL Ø | `Q22` · CL | 39.14 | not captured | not captured | not captured | not captured | boundary (0.8) | Sridharan_2019_table_p4_1:row1:col1, Sridharan_2019_table_p4_1:row1:col3 | — | not captured |
+| Ka Ø | `Q49` · kabs | 0.9462 | not captured | not captured | not captured | not captured | boundary (0.8) | Sridharan_2019_table_p4_1:row3:col1, Sridharan_2019_table_p4_1:row3:col3 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -53,33 +51,23 @@ Sridharan K et al., Population pharmacokinetics of primaqui…, Indian journal o
 
 ## Departures & gaps
 
-**Deviations:**
-- `defaulted_parameters`: ['F', 'Tlag']
-
 **Interpretation flags:**
 - table section iiv: 'BSV on CL (% CV)' routed out of structural estimates ('Between subject variability')
 - table section iiv: 'BSV on V (% CV)' routed out of structural estimates ('Between subject variability')
 - table section iiv: 'BSV on Ka (% CV)' routed out of structural estimates ('Between subject variability')
 - table section residual_error: 'Proportional (% CV)' routed out of structural estimates ('Residual variability')
 - table section residual_error: 'Additive (ng/ml)' routed out of structural estimates ('Residual variability')
-- dropped unlinked row (NIL): 'OFV' — extend the ontology if this is a real PK parameter (source ['T2:row3:col1', 'T2:row3:col2', 'T2:row3:col3'])
-- dropped value-less row: 'CL=Clearance'
-- dropped value-less row: 'Ka=Absorption rate constant'
-- dropped value-less row: 'V=Volume of distribution'
-- dropped value-less row: 'CI=Confidence interval'
-- dropped value-less row: '% RSE=Relative standard error percentage'
-- dropped value-less row: 'OFV=Objective function value'
-- dropped value-less row: 'HD=Hepatic dysfunction'
-- implicit units: 'CL θ' → L/h (from the paper text: "Text states 'the estimated CL was 39.1 L/h' for the final model.")
-- implicit units: 'V θ' → L (from the paper text: "Text states 'volume of distribution (Vd) was 438 L' for the final model.")
-- implicit units: 'Ka θ' → 1/h (from the paper text: "Text states 'Ka was 0.95/h' for the final model.")
-- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q22 (CL θ); Q61 (V θ)
+- dropped unlinked row (NIL): 'V Ø' — extend the ontology if this is a real PK parameter (source ['Sridharan_2019_table_p4_1:row2:col1', 'Sridharan_2019_table_p4_1:row2:col3'])
+- dropped unlinked row (NIL): 'Moderate HD on V Ø' — extend the ontology if this is a real PK parameter (source ['Sridharan_2019_table_p4_1:row4:col1', 'Sridharan_2019_table_p4_1:row4:col3'])
+- implicit units: LLM call failed (APIConnectionError) — units left missing
+- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q22 (CL Ø)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=primaquine
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
+- table Sridharan_2019_table_p4_1: unbound_uncertainty
 - LLM selected parameter table(s) 2
 
 ## Validation
@@ -112,27 +100,13 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T2:row4:col1', 'T2:row4:col2', 'T2:row4:col3', 'T2:row4:col4'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['T2:row6:col1', 'T2:row6:col2', 'T2:row6:col3', 'T2:row6:col4'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['T2:row5:col1', 'T2:row5:col2', 'T2:row5:col3', 'T2:row5:col4'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 10.34 | not captured | not captured | ['T2:row4:col1', 'T2:row4:col2', 'T2:row4:col3', 'T2:row4:col4'] |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['Sridharan_2019_table_p4_1:row1:col1', 'Sridharan_2019_table_p4_1:row1:col3'] |
+| C5_unit_missing_Q49 | fail | 1 / [time] | not captured | not captured | not captured | ['Sridharan_2019_table_p4_1:row3:col1', 'Sridharan_2019_table_p4_1:row3:col3'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 39.14 | not captured | not captured | ['Sridharan_2019_table_p4_1:row1:col1', 'Sridharan_2019_table_p4_1:row1:col3'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 10.3 L/h | not captured | not captured | ['T2:row4:col1', 'T2:row4:col2', 'T2:row4:col3', 'T2:row4:col4'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 11.9 L | not captured | not captured | ['T2:row5:col1', 'T2:row5:col2', 'T2:row5:col3', 'T2:row5:col4'] |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_output_variable | not captured | pass | C_central (measured=primaquine) | central.C | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -141,10 +115,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_primaquine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Sridharan_2019` / `Sridharan_2019::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_primaquine/models/modelica/Primaquine_Sridharan2019_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_primaquine/models/modelica/Primaquine_Sridharan2019_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_primaquine/models/modelica/Primaquine_Sridharan2019_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_primaquine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Sridharan_2019` / `Sridharan_2019::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -154,25 +125,20 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_primaquine/Primaquine_Sridharan2019_reference/Primaquine_Sridharan2019_reference_modelica.zip" download>Primaquine_Sridharan2019_reference_modelica.zip</a> <span class="pk-size">(4.6 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_primaquine/Primaquine_Sridharan2019_reference/Primaquine_Sridharan2019_reference_fmi.zip" download>Primaquine_Sridharan2019_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><a href="drugs/drug_primaquine/Primaquine_Sridharan2019_reference/Primaquine_Sridharan2019_reference_fmi.zip" download>Primaquine_Sridharan2019_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_primaquine/Primaquine_Sridharan2019_reference/Primaquine_Sridharan2019_reference_matlab.zip" download>Primaquine_Sridharan2019_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_primaquine/Primaquine_Sridharan2019_reference/Primaquine_Sridharan2019_reference_matlab_simbio.zip" download>Primaquine_Sridharan2019_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_primaquine/Primaquine_Sridharan2019_reference/Primaquine_Sridharan2019_reference_sbml.zip" download>Primaquine_Sridharan2019_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_primaquine/Primaquine_Sridharan2019_reference/Primaquine_Sridharan2019_reference_cellml.zip" download>Primaquine_Sridharan2019_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_primaquine/Primaquine_Sridharan2019_reference/Primaquine_Sridharan2019_reference.svg" alt="Primaquine_Sridharan2019_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 15 mg, single dose, first-order absorption (ka 18.1 /h, F 0.9). Dose in the paper: 15 mg.
-
-<dbs-fmusim paramsurl="drugs/drug_primaquine/Primaquine_Sridharan2019_reference/Primaquine_Sridharan2019_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_primaquine/Primaquine_Sridharan2019_reference/Primaquine_Sridharan2019_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C_enteral` · parameters `Primaquine_Sridharan2019_reference_params.json` · controls `Primaquine_Sridharan2019_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 07:50 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 01:12 UTC</sub>

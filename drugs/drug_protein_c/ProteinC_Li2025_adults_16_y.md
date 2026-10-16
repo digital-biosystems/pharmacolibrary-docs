@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;protein C&quot;,&quot;href&quot;:&quot;drugs/drug_protein_c/&quot;},{&quot;label&quot;:&quot;Li_2025 \u00b7 adults_16_y&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;ProteinC_Cojutti2024_reference&quot;,&quot;label&quot;:&quot;Cojutti_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_protein_c/ProteinC_Cojutti2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;ProteinC_Troisi2024_reference&quot;,&quot;label&quot;:&quot;Troisi_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_protein_c/ProteinC_Troisi2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;ProteinC_Cojutti2024_reference&quot;,&quot;label&quot;:&quot;Cojutti_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_protein_c/ProteinC_Cojutti2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;ProteinC_Li2025v2_reference&quot;,&quot;label&quot;:&quot;Li_2025_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_protein_c/ProteinC_Li2025v2_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # protein C — `ProteinC_Li2025_adults_16_y`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -15,15 +15,17 @@
 
 **Model:** Model withheld: a core parameter is unspecified.
 
+> **Caveat** (`covariates_not_exercised`): Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.
+
 ### Reviewer guidance
 
-**Protein C clearance lacked an extracted value, so a placeholder stood in and the model was held back.**
+**No value for protein c's clearance; the covariate scenarios were not simulated (+1 more).**
 
-The record lists a clearance of 0.0444 dL/kg/h, but the model builder used a default instead of an explicit estimate. A second reader disagreed, citing a clearance of 7.14 and an RSE of 6.76%. The model was quarantined because the clearance parameter had no valid value. Extracted — protein c: t1/2z 9.96 h, CL 0.0444 dL/kg/h, Vss 0.624 dL/kg, V 20 L.
+The model was built, but protein c's clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. The base model was simulated, not the covariate effects the record defines. A reported unit could not be converted (t1/2z), so that value has no SI equivalent. Extracted — protein c: t1/2z 9.96 hh, CL 0.0444 dL/kg/h, Vss 0.624 dL/kg, V 20 L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has protein C, the second reading protein C concentrate; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 > **Dose compound ≠ measured compound:** dosed `protein C concentrate`, measured `protein C`.
 
@@ -43,7 +45,7 @@ Li Z et al., Evaluation of pharmacokinetics of intra…, Research and practice i
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| t½, hh | `Q57` · t1/2z | 9.96 | h | 35856.0 | h | not captured | llm (0.6) | Li_2025_table_2:row1:col4 | — | not captured |
+| t½, hh | `Q57` · t1/2z | 9.96 | hh | not captured | [h]^2 | not captured | llm (0.6) | Li_2025_table_2:row1:col4 | — | not captured |
 | CL, dL/kg/h | `Q22` · CL | 0.0444 | dL/kg/h | 8.633333333333335e-08 | [dl] / [[h] · [kg]] | not captured | exact (1.0) | Li_2025_table_2:row2:col4 | — | not captured |
 | Vdss, dL/kg | `Q65` · Vss | 0.624 | dL/kg | 0.004368 | [dl] / [kg] | not captured | llm (0.6) | Li_2025_table_2:row5:col4 | — | not captured |
 | V (L) | `Q61` · V | 20.0 | L | 0.02 | L | not captured | review_gapfill (0.7) | Troisi_2024:review | — | not captured |
@@ -56,9 +58,14 @@ Li Z et al., Evaluation of pharmacokinetics of intra…, Research and practice i
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_unknown: 'n = 9' (t1/2z)
 - dropped unlinked row (NIL): 'IR, IU/dL per IU/kg' — extend the ontology if this is a real PK parameter (source ['Li_2025_table_2:row3:col4'])
-- implicit units: 't½, hh' → h (from the paper text: "The parameter label in the input is 't½, hh', where 'hh' indicates the unit hours. Additionally, the text lists 'half-li")
+- covariate weight for allometric_exponent from footnote/prose kept as documentation only (['tbl4:footnote'])
+- NIL: refused to back-fill base 'NIL' from footnote/prose loose number 70 (source ['tbl4:footnote']); the table cell was unparseable — needs review
+- NIL: refused to back-fill base 'NIL' from footnote/prose loose number 19.01 (source ['tbl4:footnote']); the table cell was unparseable — needs review
+- NIL: refused to back-fill base 'shrinkage' from footnote/prose loose number 9.87 (source ['tbl4:footnote', 'tbl4:footnote', 'tbl4:footnote']); the table cell was unparseable — needs review
+- NIL: refused to back-fill base 'NIL' from footnote/prose loose number 93.6 (source ['tbl4:footnote']); the table cell was unparseable — needs review
+- NIL: refused to back-fill base 'NIL' from footnote/prose loose number 4.1 (source ['tbl4:footnote']); the table cell was unparseable — needs review
+- dropped value-less row: 'reference indication'
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=protein C
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - population split: 'adults (≥16 y)(n = 9)' subgroup of Li_2025 (paper reports 4 populations: adolescents (≥12 to &lt;16 y) (n = 3), adults (≥16 y)(n = 9), neonates and infants (birth to &lt;2 y) (n = 10), population estimate)
@@ -69,26 +76,7 @@ Li Z et al., Evaluation of pharmacokinetics of intra…, Research and practice i
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- unparsed cell tbl4:row1:col4 = '7.03 (5.94, 8.66)'
-- unparsed cell tbl4:row2:col4 = '60.8 (56.8, 65.3)'
-- unparsed cell tbl4:row3:col4 = '0.185 (0.159, 0.214)'
-- unparsed cell tbl4:row5:col4 = '201 (159, 248)'
-- unparsed cell tbl4:row6:col4 = '−0.566 (−0.651, −0.479)'
-- unparsed cell tbl4:row7:col4 = '0.586 (0.422, 0.775)'
-- unparsed cell tbl4:row8:col4 = '−0.967 (−0.982, −0.938)'
-- unparsed cell tbl4:row9:col4 = '−0.112 (−0.169, −0.0742)'
-- unparsed cell tbl4:row10:col4 = '0.0914 (0.0136, 0.162)'
-- unparsed cell tbl4:row11:col4 = '0.0488 (0.0231, 0.0777)'
-- unparsed cell tbl4:row12:col4 = '0.0953 (0.0158, 0.253)'
-- unparsed cell Li_2025_table_2:row1:col1 = '2.38 (84.1)a'
-- unparsed cell Li_2025_table_2:row1:col2 = '8.19 (35.8)e'
-- unparsed cell Li_2025_table_2:row2:col1 = '0.555 (122.0)a'
-- unparsed cell Li_2025_table_2:row2:col2 = '0.0678 (49.0)e'
-- unparsed cell Li_2025_table_2:row4:col2 = '56.8 (34.6)f'
-- unparsed cell Li_2025_table_2:row4:col3 = '53.5 (13.3)c'
-- unparsed cell Li_2025_table_2:row4:col4 = '74.2 (14.8)b'
-- unparsed cell Li_2025_table_2:row5:col1 = '2.09 (63.7)a'
-- unparsed cell Li_2025_table_2:row5:col2 = '0.780 (31.1)e'
+- table Li_2025_table_2: unparsed_numeric_cell
 - companion parameter table 2 transcribed (11 record(s))
 - LLM selected parameter table(s) 2, 4
 
@@ -144,17 +132,11 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
 | T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable | not captured | LLM adjudication → deterministic rule |
-| T1_cmax | reference | skipped | 100 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 100 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 100 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 100 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_cmin_ss | reference | skipped | 25 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_cmin_ss | reference | skipped | 25 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
 | T1_t_half_terminal | reference | skipped | 2.63 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
 | T1_t_half_terminal | reference | skipped | 7.51 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
 | T1_t_half_terminal | reference | skipped | 10.4 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
@@ -163,6 +145,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T1_t_half_terminal | reference | skipped | 8.19 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
 | T1_t_half_terminal | reference | skipped | 11.9 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
 | T1_t_half_terminal | reference | skipped | 9.96 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | not captured | not captured | not captured | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -171,9 +154,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_protein_c/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Li_2025` / `Li_2025::adults_16_y`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_protein_c/models/modelica/_needs_review/ProteinC_Li2025_adults_16_y.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_protein_c/models/modelica/_needs_review/ProteinC_Li2025_adults_16_y.deviation.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_protein_c/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Li_2025` / `Li_2025::adults_16_y`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_protein_c/models/modelica/_needs_review/ProteinC_Li2025_adults_16_y.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_protein_c/models/modelica/_needs_review/ProteinC_Li2025_adults_16_y.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -199,4 +182,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 15:21 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 21:24 UTC</sub>

@@ -17,7 +17,7 @@ Lepirudin is a direct thrombin inhibitor that was used as an anticoagulant in co
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-05 14:55 | 0:30 | 0/0/0 | 0/1/0 | 0/0/0 | 13,889/571 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/4 | 2/0 | 0 |
+| 2026-10-14 21:13 | 2:02 | 0/0/0 | 0/1/0 | 0/0/0 | 16,516/932 | einfracz / qwen3.8-27b | 3 | 0/4 | 3/0 | 0 |
 
 ## popPK records
 
@@ -27,7 +27,18 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> | [Fenyvesi_2003_ECT](drugs/drug_lepirudin/pd_Fenyvesi_2003_ECT.md) | ecarin clotting time ← lepirudin · direct linear effect | — | Fenyvesi T et al., Effects of lepirudin, argatroban and me…, Thrombosis research (2003) | [10.1016/j.thromres.2003.08.013](https://doi.org/10.1016/j.thromres.2003.08.013) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">in vitro</span> | [Mirabet_2005_LDH_release](drugs/drug_lepirudin/pd_Mirabet_2005_LDH_release.md) | LDH release ← lepirudin · direct Emax (saturable) effect | — | Mirabet M et al., Thrombin increases cardiomyocyte acute…, Journal of molecular and ce… (2005) | [10.1016/j.yjmcc.2005.03.005](https://doi.org/10.1016/j.yjmcc.2005.03.005) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=lepirudin).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: F2 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -37,10 +48,10 @@ _not available_
 
 ## Coverage
 
-- **PubMed hits:** 29 matched, 24 returned
+- **PubMed hits:** 98 matched, 57 returned
 - **screened:** 2  ·  **relevant:** 2
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
-- **scholar-agent fallback query used:** True
+- **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
 
@@ -53,7 +64,7 @@ _4 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | `Petros_2006.pdf` | Petros S et al., The effect of different anticoagulants…, Blood coagulation & fibrino… (2006) | pd | 4 | [10.1097/01.mbc.0000214708.73374.ce](https://doi.org/10.1097/01.mbc.0000214708.73374.ce) | [16479195](https://www.ncbi.nlm.nih.gov/pubmed/16479195) | metadata signals extractable PD data (IC50) |
 | `Sun_2022.pdf` | Sun Y et al., Molecular dynamic and pharmacological s…, British journal of pharmaco… (2022) | pd | 4 | [10.1111/bph.15816](https://doi.org/10.1111/bph.15816) | [35135035](https://www.ncbi.nlm.nih.gov/pubmed/35135035) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-10-05T14:55:32.600942+00:00</sub>
+<sub>queue written 2026-10-14T21:13:47.910224+00:00</sub>
 
 ## Screened and excluded
 
@@ -77,7 +88,7 @@ _4 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | popPK | Francis_2005 | irrelevant | 0 | 0 | The paper is a narrative review of direct thrombin inhibitors that discusses lepirudin's clinical use and clearance mechanisms qualitatively but does not report any quantitative pharmacokinetic parameters. |
 | popPK | Gifford_2019 | irrelevant | 0 | 0 | The study focuses on complement activation and nanomedicine performance, using lepirudin only as an anticoagulant for blood samples rather than as the subject of pharmacokinetic analysis. |
 | PD | Gifford_2019 | not_relevant | 0 | 0 | The paper investigates the pharmacodynamics of CD55 domains on complement activation, not lepirudin; lepirudin is only used as an anticoagulant in the plasma samples. |
-| popPK | Hamilton_2012 | irrelevant | 0 | 0 | The study focuses on the immunogenicity of desirudin (with lepirudin only mentioned as a comparator in the context of antibody reports) and does not report any pharmacokinetic parameters for lepirudin. |
+| popPK | Hamilton_2012 | irrelevant | 0 | 0 | The study investigates the immunogenicity (antibody production) of desirudin, not the pharmacokinetic disposition parameters of lepirudin. |
 | popPK | He_2010 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of fibrin network structure and does not report pharmacokinetic parameters for lepirudin. |
 | PD | He_2010 | not_relevant | 3 | 1 | The paper describes a qualitative dose-response relationship (steep vs. shallow curves) for lepirudin in an in vitro assay but does not provide numeric PD parameters (Emax, EC50) or a quantitative effect-concentration curve in the provided text. |
 | popPK | Hyers_2005 | irrelevant | 0 | 0 | The text is a general review of anticoagulants that mentions lepirudin only as a class example without providing any pharmacokinetic parameters or numeric values. |
@@ -97,19 +108,19 @@ _4 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | popPK | Morishima_2013 | irrelevant | 0 | 0 | The study is a pharmacodynamic comparison of antithrombotic and hemorrhagic effects where lepirudin is a comparator agent, and no pharmacokinetic parameters are reported. |
 | popPK | Nowak_1997 | irrelevant | 1 | 0 | The paper is a clinical case report describing the use of r-hirudin (lepirudin) for anticoagulation during hemodialysis, reporting only dosing and therapeutic blood levels, but lacking any quantitative pharmacokinetic parameters (CL, V, ka, etc.) or compartmental modeling. |
 | popPK | Petros_2006 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of thrombin generation and does not report pharmacokinetic parameters for lepirudin. |
-| popPK | Petruk_2023 | irrelevant | 0 | 0 | The paper describes a novel peptide compound (sHVF18) targeting TLR/CD14 and does not involve lepirudin or report its pharmacokinetic parameters. |
+| popPK | Petruk_2023 | irrelevant | 0 | 0 | The paper describes the development and mechanism of a new peptide drug (sHVF18) and does not mention lepirudin or report its pharmacokinetic parameters. |
 | PD | Petruk_2023 | not_relevant | 0 | 0 | The paper studies the peptide sHVF18, not lepirudin, and does not report any pharmacodynamic parameters for lepirudin. |
-| popPK | Redwan_2009 | irrelevant | 0 | 0 | The paper is a review of animal-derived pharmaceutical proteins and does not contain any pharmacokinetic data or parameters for lepirudin. |
-| popPK | Sakor_2023 | irrelevant | 0 | 0 | The paper describes a knowledge graph framework for COVID-19 drug interactions and does not contain any pharmacokinetic data for lepirudin. |
+| popPK | Redwan_2009 | irrelevant | 0 | 0 | The paper is a review of animal-derived pharmaceutical proteins and does not contain pharmacokinetic data for lepirudin. |
+| popPK | Sakor_2023 | irrelevant | 0 | 0 | The paper is about a knowledge graph framework for COVID-19 drug interactions and does not report any pharmacokinetic parameters for lepirudin. |
 | PD | Sakor_2023 | not_relevant | 0 | 0 | The paper is a computational framework for constructing a knowledge graph of drug-drug interactions and does not report any pharmacokinetic or pharmacodynamic data, models, or numeric parameters for lepirudin. |
-| popPK | Sanhajariya_2020 | irrelevant | 0 | 0 | The study is an in silico simulation of snake venom pharmacokinetics and does not involve lepirudin. |
+| popPK | Sanhajariya_2020 | irrelevant | 0 | 0 | The study is an in silico simulation focusing on snake venom toxins, not lepirudin. |
 | PD | Sanhajariya_2020 | not_relevant | 0 | 0 | The paper is an in silico pharmacokinetic (PK) simulation study of snake venom components and does not involve lepirudin or report any pharmacodynamic (PD) or exposure-response relationships. |
 | popPK | Seybert_2006 | irrelevant | 0 | 0 | The paper is a review discussing the clinical use of bivalirudin for HIT, with lepirudin mentioned only as a comparator, and no quantitative pharmacokinetic parameters are reported. |
 | popPK | Sun_2022 | irrelevant | 0 | 0 | The study focuses on molecular dynamics and pharmacological effects of hirudin variants, not the pharmacokinetics of lepirudin. |
 | PD | Sun_2022 | not_relevant | 2 | 1 | The paper reports in vitro IC50/Ki values and qualitative in vivo changes in coagulation times for engineered hirudin variants, but does not provide a quantitative exposure-response or dose-response model with derivable PD parameters (e.g., Emax, EC50) for lepirudin. |
 | popPK | Wanat_2013 | irrelevant | 0 | 0 | The paper is a case report on argatroban monitoring where lepirudin is only mentioned as a comparator in a cited in-vitro study, with no PK parameters reported. |
 | PD | Wanat_2013 | not_relevant | 0 | 0 | The paper is a case report on argatroban monitoring and only qualitatively mentions a study on lepirudin without providing any numeric PD parameters or exposure-response data. |
-| popPK | Warkentin_2004 | irrelevant | 1 | 0 | The paper is a review comparing pharmacological properties and clinical efficacy, and it does not report original quantitative population-pharmacokinetic parameters (CL, V, Q, ka) for lepirudin. |
+| popPK | Warkentin_2004 | irrelevant | 1 | 0 | The paper is a review comparing pharmacological properties and clinical efficacy, lacking original quantitative PK parameter values (CL, V, etc.) for lepirudin in the provided text. |
 | popPK | Warkentin_2008 | irrelevant | 0 | 0 | The paper focuses on bivalirudin, with lepirudin mentioned only as a comparator for thrombin affinity, and no PK parameters for lepirudin are reported. |
 | popPK | Weltermann_2003 | irrelevant | 0 | 0 | The paper is a review of novel anticoagulants and does not report original quantitative pharmacokinetic parameters for lepirudin. |
 | PD | Weltermann_2003 | not_relevant | 1 | 0 | The text is a general review of novel anticoagulants and mentions lepirudin only in the context of its approval and mechanism, without providing any specific pharmacodynamic data, exposure-response analysis, or numeric parameters. |

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;lamotrigine&quot;,&quot;href&quot;:&quot;drugs/drug_lamotrigine/&quot;},{&quot;label&quot;:&quot;Huo_2025 \u00b7 base&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lamotrigine_Huo2025_base&quot;,&quot;label&quot;:&quot;Huo_2025_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lamotrigine/Lamotrigine_Huo2025_base.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Lamotrigine_Huo2025_final&quot;,&quot;label&quot;:&quot;Huo_2025_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lamotrigine/Lamotrigine_Huo2025_final.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lamotrigine_Chan2001_reference&quot;,&quot;label&quot;:&quot;Chan_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lamotrigine/Lamotrigine_Chan2001_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lamotrigine_Huo2025_base&quot;,&quot;label&quot;:&quot;Huo_2025_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lamotrigine/Lamotrigine_Huo2025_base.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Lamotrigine_Huo2025_final&quot;,&quot;label&quot;:&quot;Huo_2025_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lamotrigine/Lamotrigine_Huo2025_final.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Castel_Branco_2005_anticonvulsant_profile_against_maximal_el&quot;,&quot;label&quot;:&quot;Castel-Branco_2005 \u00b7 anticonvulsant profile against maximal electroshock seizure stimulation&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_lamotrigine/pd_Castel_Branco_2005_anticonvulsant_profile_against_maximal_el.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,19 +17,19 @@
 
 ### Reviewer guidance
 
-**Bioavailability and lag time were left at library defaults rather than using estimates from the paper for Chinese epileptic patients.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The record lists absorption rate constant, volume of distribution, and clearance for lamotrigine, but omits an explicit bioavailability value. The model builder relied on library placeholders for bioavailability and lag time, which affects the simulated profile but lacks support from the paper. Although a second reader disagreed on the identity of the residual error parameter, the lack of explicit values necessitated holding the model back for review. Extracted — lamotrigine: kabs 1.93 h−1, V 68.8 L, CL 3.43 L/h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — lamotrigine: kabs 1.93 h−1, V 68.8 L, CL 3.43 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has lamotrigine, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Huo J et al., Dosing Optimization of Lamotrigine in P…, Drug design, development an… (2025)
   ·  DOI: [10.2147/DDDT.S541597](https://doi.org/10.2147/DDDT.S541597)
 
-<div class="pk-model-meta" hidden drug="lamotrigine" model-id="Lamotrigine_Huo2025_base" status="needs_review" stale="false" population="Chinese epileptic patients during the peripregnancy period" measured-compound="lamotrigine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="lamotrigine" model-id="Lamotrigine_Huo2025_base" status="needs_review" stale="false" population="peripregnancy epilepsy patients" measured-compound="lamotrigine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.
@@ -41,9 +41,9 @@ Huo J et al., Dosing Optimization of Lamotrigine in P…, Drug design, developme
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Ka (h−1) | `Q49` · kabs | 1.93 | h−1 | 0.0005361111111111111 | [1] / [h] | not captured | exact (1.0) | t0004:row2:col1 | — | not captured |
-| Vd (L) | `Q61` · V | 68.8 | L | 0.0688 | [l] | not captured | exact (1.0) | t0004:row3:col1 | — | not captured |
-| CL (L/h) | `Q22` · CL | 3.43 | L/h | 9.527777777777779e-07 | [l] / [h] | not captured | exact (1.0) | t0004:row4:col1 | — | not captured |
+| Ka (h−1) | `Q49` · kabs | 1.93 | h−1 | 0.0005361111111111111 | [1] / [h] | not captured | exact (1.0) | Huo_2025_table_4:row0:col1 | — | not captured |
+| Vd (L) | `Q61` · V | 68.8 | L | 0.0688 | [l] | not captured | exact (1.0) | Huo_2025_table_4:row1:col1 | — | not captured |
+| CL (L/h) | `Q22` · CL | 3.43 | L/h | 9.527777777777779e-07 | [l] / [h] | not captured | exact (1.0) | Huo_2025_table_4:row2:col1 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -64,23 +64,6 @@ Huo J et al., Dosing Optimization of Lamotrigine in P…, Drug design, developme
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- unparsed cell t0004:row4:col2 = '(3.11, 3.74)'
-- unparsed cell t0004:row4:col4 = '(1.84, 3.00)'
-- unparsed cell t0004:row4:col6 = '(1.94, 3.16)'
-- unparsed cell t0004:row5:col4 = '(0.02, 0.53)'
-- unparsed cell t0004:row5:col6 = '(0.003, 0.50)'
-- unparsed cell t0004:row6:col4 = '(0.34, 0.85)'
-- unparsed cell t0004:row6:col6 = '(0.32, 0.82)'
-- unparsed cell t0004:row7:col4 = '(0.30, 0.84)'
-- unparsed cell t0004:row7:col6 = '(0.27, 0.82)'
-- unparsed cell t0004:row9:col4 = '(0.52, 1.38)'
-- unparsed cell t0004:row9:col6 = '(0.51, 1.33)'
-- unparsed cell t0004:row12:col2 = '(0.28, 0.47)'
-- unparsed cell t0004:row12:col4 = '(0.27, 0.34)'
-- unparsed cell t0004:row12:col6 = '(0.27, 0.34)'
-- unparsed cell t0004:row13:col2 = '(0.17, 0.59)'
-- unparsed cell t0004:row13:col4 = '(0.003, 0.005)'
-- unparsed cell t0004:row13:col6 = '(0.003729, 0.003733)'
 - LLM selected parameter table(s) 4
 
 ## Validation
@@ -114,14 +97,13 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C2_base_Q22 | fail | 3.43 | 2.42 | 0.7055 | 0.05 | footnote reference category |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['t0004:row4:col1'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['t0004:row2:col1'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['t0004:row3:col1'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 3.43 | not captured | not captured | ['t0004:row4:col1'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Huo_2025_table_4:row2:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Huo_2025_table_4:row0:col1'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Huo_2025_table_4:row1:col1'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 3.43 | not captured | not captured | ['Huo_2025_table_4:row2:col1'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 3.43 L/h | not captured | not captured | ['t0004:row4:col1'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 68.8 L | not captured | not captured | ['t0004:row3:col1'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 3.43 L/h | not captured | not captured | ['Huo_2025_table_4:row2:col1'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 68.8 L | not captured | not captured | ['Huo_2025_table_4:row1:col1'] |
 
 **Reviewer per-scenario checks:**
 
@@ -141,10 +123,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_lamotrigine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Huo_2025` / `Huo_2025::base`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_lamotrigine/models/modelica/Lamotrigine_Huo2025_base.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_lamotrigine/models/modelica/Lamotrigine_Huo2025_base.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_lamotrigine/models/modelica/Lamotrigine_Huo2025_base.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_lamotrigine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Huo_2025` / `Huo_2025::base`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_lamotrigine/models/modelica/Lamotrigine_Huo2025_base.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_lamotrigine/models/modelica/Lamotrigine_Huo2025_base.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_lamotrigine/models/modelica/Lamotrigine_Huo2025_base.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -162,7 +144,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_lamotrigine/Lamotrigine_Huo2025_base/Lamotrigine_Huo2025_base.svg" alt="Lamotrigine_Huo2025_base diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_lamotrigine/Lamotrigine_Huo2025_base/Lamotrigine_Huo2025_base.svg" alt="Lamotrigine_Huo2025_base diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -175,4 +157,4 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 07:02 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 19:19 UTC</sub>

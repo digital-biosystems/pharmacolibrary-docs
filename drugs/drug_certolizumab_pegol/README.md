@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;certolizumab pegol&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;CertolizumabPegol_Menshykau2024_reference&quot;,&quot;label&quot;:&quot;Menshykau_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_certolizumab_pegol/CertolizumabPegol_Menshykau2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;CertolizumabPegol_Menshykau2024_reference&quot;,&quot;label&quot;:&quot;Menshykau_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_certolizumab_pegol/CertolizumabPegol_Menshykau2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;CertolizumabPegol_Vande2017_reference&quot;,&quot;label&quot;:&quot;Vande_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_certolizumab_pegol/CertolizumabPegol_Vande2017_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;CertolizumabPegol_Wade2015_reference&quot;,&quot;label&quot;:&quot;Wade_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_certolizumab_pegol/CertolizumabPegol_Wade2015_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # certolizumab pegol
 
@@ -18,24 +18,31 @@ Certolizumab pegol is a TNF-alpha inhibitor used to treat inflammatory condition
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 00:00 | 2:08 | 1/1/1 | 1/0/1 | 0/0/0 | 188,833/9,734 | einfracz / qwen3.8-27b | 8 | 0/8 | 7/1 | 0 |
+| 2026-10-14 21:15 | 3:02 | 3/0/0 | 0/0/1 | 0/0/0 | 173,591/10,949 | einfracz / qwen3.8-27b | 8 | 0/8 | 7/1 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.462). Primary extraction retained.">cross-check: disputed</span> | [Menshykau_2024_reference](drugs/drug_certolizumab_pegol/CertolizumabPegol_Menshykau2024_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Menshykau D et al., Population PK modeling of certolizumab…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13220](https://doi.org/10.1002/psp4.13220) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.48). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Wade_2015_reference](drugs/drug_certolizumab_pegol/CertolizumabPegol_Wade2015_reference.md) | — | 1-compartment (no model) | 5 (+5 cov.) | Wade JR et al., Population pharmacokinetic analysis of…, Journal of clinical pharmac… (2015) | [10.1002/jcph.491](https://doi.org/10.1002/jcph.491) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.125). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Vande_2017_reference](drugs/drug_certolizumab_pegol/CertolizumabPegol_Vande2017_reference.md) | — | 1-compartment (no model) | 0 | Vande Casteele N et al., Accounting for Pharmacokinetic Variabil…, Clinical pharmacokinetics (2017) | [10.1007/s40262-017-0535-3](https://doi.org/10.1007/s40262-017-0535-3) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.125). Primary extraction retained.">cross-check: partial</span> | [Vande_2017_reference](drugs/drug_certolizumab_pegol/CertolizumabPegol_Vande2017_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Vande Casteele N et al., Accounting for Pharmacokinetic Variabil…, Clinical pharmacokinetics (2017) | [10.1007/s40262-017-0535-3](https://doi.org/10.1007/s40262-017-0535-3) |
+| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.48). Primary extraction retained.">cross-check: disputed</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub> | [Wade_2015_reference](drugs/drug_certolizumab_pegol/CertolizumabPegol_Wade2015_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 (+2 cov.) | Wade JR et al., Population pharmacokinetic analysis of…, Journal of clinical pharmac… (2015) | [10.1002/jcph.491](https://doi.org/10.1002/jcph.491) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Wang_2024_TNF_stimulated_inflammation_in_primary_microglia](drugs/drug_certolizumab_pegol/pd_Wang_2024_TNF_stimulated_inflammation_in_primary_microglia.md) | TNF-α-stimulated inflammation in primary microglia ← certolizumab_pegol · direct Emax (saturable) effect | — | Wang D et al., Targeting TNF-α: The therapeutic potent…, International immunopharmac… (2024) | [10.1016/j.intimp.2024.112498](https://doi.org/10.1016/j.intimp.2024.112498) |
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Lacroix_2014_ACR20](drugs/drug_certolizumab_pegol/pd_Lacroix_2014_ACR20.md) | ACR20 ← certolizumab_pegol · categorical (graded) response model | — | Lacroix BD et al., Simultaneous Exposure-Response Modeling…, CPT: pharmacometrics & syst… (2014) | [10.1038/psp.2014.41](https://doi.org/10.1038/psp.2014.41) |
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Lacroix_2014_ACR50](drugs/drug_certolizumab_pegol/pd_Lacroix_2014_ACR50.md) | ACR50 ← certolizumab_pegol · categorical (graded) response model | — | Lacroix BD et al., Simultaneous Exposure-Response Modeling…, CPT: pharmacometrics & syst… (2014) | [10.1038/psp.2014.41](https://doi.org/10.1038/psp.2014.41) |
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Lacroix_2014_ACR70](drugs/drug_certolizumab_pegol/pd_Lacroix_2014_ACR70.md) | ACR70 ← certolizumab_pegol · categorical (graded) response model | — | Lacroix BD et al., Simultaneous Exposure-Response Modeling…, CPT: pharmacometrics & syst… (2014) | [10.1038/psp.2014.41](https://doi.org/10.1038/psp.2014.41) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Lacroix_2014_ACR](drugs/drug_certolizumab_pegol/pd_Lacroix_2014_ACR.md) | ACR20, ACR50, and ACR70 Improvement Scores ← certolizumab_pegol · categorical (graded) response model | — | Lacroix BD et al., Simultaneous Exposure-Response Modeling…, CPT: pharmacometrics & syst… (2014) | [10.1038/psp.2014.41](https://doi.org/10.1038/psp.2014.41) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=certolizumab_pegol).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: AKR1A1 (substrate), TNF (neutralizer).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,7 +54,7 @@ Certolizumab pegol is a TNF-alpha inhibitor used to treat inflammatory condition
 
 - **PubMed hits:** 12 matched, 12 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 3  ·  extracted 1  ·  needs_review 1  ·  rejected 1  ·  stale 0
+- **records:** 3  ·  extracted 3  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -56,22 +63,22 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Vande_2017.pdf` | Vande Casteele N et al., Accounting for Pharmacokinetic Variabil…, Clinical pharmacokinetics (2017) | popPK | 10 | [10.1007/s40262-017-0535-3](https://doi.org/10.1007/s40262-017-0535-3) | [28353055](https://pubmed.ncbi.nlm.nih.gov/28353055) | The paper reports a population PK model for certolizumab pegol in humans with explicit numeric values for CL/F, V/F, and absorption rate constants. |
+| `Vande_2017.pdf` | Vande Casteele N et al., Accounting for Pharmacokinetic Variabil…, Clinical pharmacokinetics (2017) | popPK | 10 | [10.1007/s40262-017-0535-3](https://doi.org/10.1007/s40262-017-0535-3) | [28353055](https://pubmed.ncbi.nlm.nih.gov/28353055) | The study reports a population PK model for certolizumab pegol with specific quantitative parameters (CL/F, V/F, ka) explicitly stated in the results. |
 
-<sub>queue written 2026-10-06T23:59:17.191943+00:00</sub>
+<sub>queue written 2026-10-14T21:13:21.386532+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Brekkan_2024 | irrelevant | 3 | 0 | The paper focuses on a novel statistical model (mixed hidden-Markov model) for characterizing anti-drug antibody (ADA) dynamics; while it utilizes certolizumab pegol PK data as a test case, it does not report new quantitative PK parameter estimates (CL, V, etc.) for the drug itself in the main text, but rather MHMM transition and variance parameters. |
-| popPK | Lacroix_2009 | irrelevant | 1 | 0 | The paper describes a pharmacodynamic exposure-response model for clinical outcomes (ACR20) rather than reporting quantitative pharmacokinetic disposition parameters (CL, V, etc.) for certolizumab pegol. |
-| popPK | Lacroix_2014 | irrelevant | 1 | 0 | This is an exposure-response modeling study focused on clinical efficacy (ACR scores) rather than a pharmacokinetic study, and it explicitly references a "previously developed one-compartment population model" for PK rather than reporting new PK parameter values. |
-| popPK | Lefevre_2022 | relevant | 4 | 2 | The paper reports quantitative clearance thresholds and covariates for certolizumab pegol derived from a population PK model, but the specific numeric parameter estimates (median/mean clearance values) are located in Supplementary Table 1 which is not provided in the evidence. |
-| popPK | Paul_2020 | irrelevant | 2 | 0 | The study is an exposure-response analysis reporting plasma concentration thresholds for efficacy, not a pharmacokinetic study reporting quantitative disposition parameters (CL, V, half-life) or compartmental PK models. |
-| popPK | Steenholdt_2025 | irrelevant | 0 | 0 | The study is a retrospective clinical cohort analyzing treatment outcomes and sequencing, not a pharmacokinetic study reporting quantitative disposition parameters (CL, V, etc.) for certolizumab pegol. |
-| popPK | Vande_2018 | irrelevant | 4 | 0 | The paper is an exposure-response analysis using a pre-existing population PK model, and while it reports exposure metrics (AUC, concentrations), it does not report the underlying quantitative disposition parameters (CL, V, ka) which are cited from other sources. |
-| popPK | Wang_2024 | irrelevant | 0 | 0 | This is a mechanistic/therapeutic study in mice focusing on neuroinflammation and efficacy (EC50), not a pharmacokinetic study reporting disposition parameters like clearance or volume for certolizumab pegol. |
+| popPK | Brekkan_2024 | relevant | 7 | 2 | The paper describes a population PK model for certolizumab pegol involving CL/F and V/F, but specific numeric parameter values are not explicitly provided in the text, likely residing in Table 3 or supplementary material which is not included. |
+| popPK | Lacroix_2009 | irrelevant | 2 | 0 | The paper focuses on a pharmacodynamic exposure-response model (ACR20) rather than reporting pharmacokinetic disposition parameters (CL, V, etc.) for certolizumab pegol. |
+| popPK | Lacroix_2014 | irrelevant | 1 | 0 | The paper is an exposure-response model of clinical efficacy (ACR scores) and does not report primary pharmacokinetic parameters (CL, V, etc.) for certolizumab pegol, only derived concentrations. |
+| popPK | Lefevre_2022 | irrelevant | 4 | 2 | The study uses a pre-existing population PK model to predict clinical outcomes and reports derived clearance thresholds, but does not report the original PK parameter estimates (CL, V, Q, half-life) for certolizumab_pegol itself in the provided text. |
+| popPK | Paul_2020 | irrelevant | 1 | 0 | The study reports an exposure-response relationship using plasma concentration cutoffs, but it does not report quantitative pharmacokinetic disposition parameters (such as clearance, volume of distribution, or half-life) or a compartmental PK model. |
+| popPK | Steenholdt_2025 | irrelevant | 0 | 0 | This is a clinical outcome study on biologic sequencing; it does not report quantitative PK parameters (CL, V, t1/2) for certolizumab pegol, mentioning it only as a prior therapy for 3 patients. |
+| popPK | Vande_2018 | relevant | 8 | 2 | The paper describes a population pharmacokinetic model and reports exposure-response data (AUC, concentrations) for certolizumab pegol, but specific PK parameter estimates (like mean CL or V) are referenced as being in a separate citation (ref 11) or not explicitly listed in the provided evidence. |
+| popPK | Wang_2024 | irrelevant | 0 | 0 | The study reports therapeutic efficacy and in vitro IC50/EC50 values, not population pharmacokinetic parameters (CL, V, etc.) for certolizumab pegol. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-06 23:59 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-14 21:13 UTC</sub>

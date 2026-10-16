@@ -1,8 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;ticagrelor&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/&quot;},{&quot;label&quot;:&quot;\u00c5strand_2019 \u00b7 PD P2Y12 reaction units (PRU)&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ticagrelor_Henrich2021_reference&quot;,&quot;label&quot;:&quot;Henrich_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/Ticagrelor_Henrich2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ticagrelor_strand2019_reference&quot;,&quot;label&quot;:&quot;\u00c5strand_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/Ticagrelor_strand2019_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ticagrelor_Li2016_reference&quot;,&quot;label&quot;:&quot;Li_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/Ticagrelor_Li2016_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_strand_2019_PRU&quot;,&quot;label&quot;:&quot;\u00c5strand_2019 \u00b7 PRU&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/pd_strand_2019_PRU.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;ticagrelor&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/&quot;},{&quot;label&quot;:&quot;\u00c5strand_2019 \u00b7 PD platelet function&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ticagrelor_strand2019_reference&quot;,&quot;label&quot;:&quot;\u00c5strand_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/Ticagrelor_strand2019_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ticagrelor_Henrich2021_reference&quot;,&quot;label&quot;:&quot;Henrich_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/Ticagrelor_Henrich2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ticagrelor_Li2016_reference&quot;,&quot;label&quot;:&quot;Li_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/Ticagrelor_Li2016_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_strand_2019_PRU&quot;,&quot;label&quot;:&quot;\u00c5strand_2019 \u00b7 PRU&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/pd_strand_2019_PRU.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# P2Y12 reaction units (PRU) — PD  <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.889). Primary extraction retained.">cross-check: disputed</span>
+# platelet function — PD  <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.889). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -14,13 +14,13 @@
 
 ## Record summary
 
-**As extracted:** Ticagrelor (concentrations from this paper's PK model) drives P2Y12 reaction units (PRU): direct sigmoid Emax (Hill) effect.
+**As extracted:** Ticagrelor (concentrations from this paper's PK model) drives platelet function: direct sigmoid Emax (Hill) effect.
 
 **Model:** Model and browser simulation available in **Models** and **Simulation**.
 
-> Ticagrelor plasma concentrations directly inhibit P2Y12 reaction units (PRU) via a sigmoid Emax model, with an EC50 of 116 nmol l–1, a maximal effect (Emax) of 98.5%, and a steepness exponent (γ) of 1.59. The model estimates baseline PRU levels at 311 for the ONSET/OFFSET study and 261 for the PEGASUS-TIMI 54 study.
+> A sigmoid Emax model describes the direct, proportional inhibition of platelet function (PRU) by ticagrelor plasma concentrations, with a maximum inhibition (Emax) of 98.5% and a half-maximum effective concentration (EC50) of 116 nmol l–1. The steepness of the exposure-response relationship (gamma) was estimated at 1.59, and PRU baselines were 311 for ONSET/OFFSET and 261 for PEGASUS-TIMI 54.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Åstrand_2019`
 - **model family:** `sigmoid_emax`
@@ -37,11 +37,10 @@
 |---|---|---|---|---|---|---|---|
 | PD (effect) | PRU baseline ONSET/OFFSET | `Q324` · not captured | 311 | not captured | not captured | llm (not captured) | Åstrand_2019:pdv3 |
 | PD (effect) | PRU baseline PEGASUS | `Q324` · not captured | 261 | not captured | not captured | llm (not captured) | Åstrand_2019:pdv3 |
-| PD (effect) | EC 50 | `Q321` · not captured | 116 | nmol l –1 | not captured | llm (not captured) | Åstrand_2019:pdv3 |
+| PD (effect) | EC 50 | `Q321` · not captured | 116 | nmol l–1 | not captured | llm (not captured) | Åstrand_2019:pdv3 |
 | PD (effect) | E max | `Q323` · not captured | 98.5 | % | not captured | llm (not captured) | Åstrand_2019:pdv3 |
 | PD (effect) | Steepness of exposure‐response | `Q325` · not captured | 1.59 | not captured | not captured | llm (not captured) | Åstrand_2019:pdv3 |
-| model term | Exponent for PRU error | `Q900` · not captured | 0.48 | not captured | not captured | llm (not captured) | Åstrand_2019:pdv3 |
-| variability | Additive residual error PRU (at PRU = 300) | `Q315` · not captured | 47.6 | not captured | not captured | llm (not captured) | Åstrand_2019:pdv3 |
+| variability | Additive residual error PRU | `Q315` · not captured | 47.6 | not captured | not captured | llm (not captured) | Åstrand_2019:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -57,7 +56,7 @@
 |---|---|---|
 | E0 | 311 | — |
 | Emax | -98.5 % | -0.985 1 |
-| EC50 | 116 nmol l –1 | 0.000116 mol/m3 |
+| EC50 | 116 nmol l–1 | 0.000116 mol/m3 |
 | gamma | 1.59 | — |
 
 Closed-form check points (response, SI): `at_0` = 311, `at_EC50` = 310.5, `at_inf` = 310
@@ -107,7 +106,7 @@ Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ticagrelor/Ticagrelor_strand2019_PD_pru/Ticagrelor_strand2019_PD_pru_modelica.zip" download>Ticagrelor_strand2019_PD_pru_modelica.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ticagrelor/Ticagrelor_strand2019_PD_pru/Ticagrelor_strand2019_PD_pru_modelica.zip" download>Ticagrelor_strand2019_PD_pru_modelica.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_ticagrelor/Ticagrelor_strand2019_PD_pru/Ticagrelor_strand2019_PD_pru_fmi.zip" download>Ticagrelor_strand2019_PD_pru_fmi.zip</a> <span class="pk-size">(4.5 kB)</span><br><a href="models/fmu/PD_SigmoidEmaxSweep.fmu" download>PD_SigmoidEmaxSweep.fmu</a> <span class="pk-size">(1.2 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_ticagrelor/Ticagrelor_strand2019_PD_pru/Ticagrelor_strand2019_PD_pru_matlab.zip" download>Ticagrelor_strand2019_PD_pru_matlab.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;metformin&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/&quot;},{&quot;label&quot;:&quot;Nikolaidis_2026 \u00b7 final&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Metformin_Ailabouni2026_final_model_estimate&quot;,&quot;label&quot;:&quot;Ailabouni_2026_final_model_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Ailabouni2026_final_model_estimate.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Cantor2026_reference&quot;,&quot;label&quot;:&quot;Cantor_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Cantor2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Chae2012_reference&quot;,&quot;label&quot;:&quot;Chae_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Chae2012_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Chen2025_reference&quot;,&quot;label&quot;:&quot;Chen_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Chen2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Dong2024_reference&quot;,&quot;label&quot;:&quot;Dong_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Dong2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Fujimoto2025_reference&quot;,&quot;label&quot;:&quot;Fujimoto_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Fujimoto2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Hong2008_reference&quot;,&quot;label&quot;:&quot;Hong_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Hong2008_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Jiang2025_reference&quot;,&quot;label&quot;:&quot;Jiang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Jiang2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Jin2025_reference&quot;,&quot;label&quot;:&quot;Jin_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Jin2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Mak2023_focei_estimates&quot;,&quot;label&quot;:&quot;Mak_2023_focei_estimates&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Mak2023_focei_estimates.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Mak2023_saem_estimates&quot;,&quot;label&quot;:&quot;Mak_2023_saem_estimates&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Mak2023_saem_estimates.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Min2025_reference&quot;,&quot;label&quot;:&quot;Min_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Min2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Nikolaidis2026_base&quot;,&quot;label&quot;:&quot;Nikolaidis_2026_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Nikolaidis2026_base.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Nikolaidis2026_final&quot;,&quot;label&quot;:&quot;Nikolaidis_2026_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Nikolaidis2026_final.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Metformin_StanisawiakRudowicz2024_reference&quot;,&quot;label&quot;:&quot;Stanis\u0142awiak-Rudowicz_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_StanisawiakRudowicz2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Zheng2024_reference&quot;,&quot;label&quot;:&quot;Zheng_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Zheng2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Liang2017_reference&quot;,&quot;label&quot;:&quot;Liang_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Liang2017_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Chae_2012_antihyperglycaemic_effect&quot;,&quot;label&quot;:&quot;Chae_2012 \u00b7 antihyperglycaemic effect&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/pd_Chae_2012_antihyperglycaemic_effect.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Metformin_Cantor2026_reference&quot;,&quot;label&quot;:&quot;Cantor_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Cantor2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Chen2025_reference&quot;,&quot;label&quot;:&quot;Chen_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Chen2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Fujimoto2025_reference&quot;,&quot;label&quot;:&quot;Fujimoto_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Fujimoto2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Hong2008_reference&quot;,&quot;label&quot;:&quot;Hong_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Hong2008_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Jiang2025_reference&quot;,&quot;label&quot;:&quot;Jiang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Jiang2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Jin2025_reference&quot;,&quot;label&quot;:&quot;Jin_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Jin2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Sinnappah2020_duong_et_al4&quot;,&quot;label&quot;:&quot;Sinnappah_2020_duong_et_al4&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Sinnappah2020_duong_et_al4.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Sukhram2026_reference&quot;,&quot;label&quot;:&quot;Sukhram_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Sukhram2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Zheng2024_reference&quot;,&quot;label&quot;:&quot;Zheng_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Zheng2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Ailabouni2026_reference&quot;,&quot;label&quot;:&quot;Ailabouni_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Ailabouni2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Chae2012_reference&quot;,&quot;label&quot;:&quot;Chae_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Chae2012_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Liang2017_reference&quot;,&quot;label&quot;:&quot;Liang_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Liang2017_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Mak2023_focei_estimates&quot;,&quot;label&quot;:&quot;Mak_2023_focei_estimates&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Mak2023_focei_estimates.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Mak2023_saem_estimates&quot;,&quot;label&quot;:&quot;Mak_2023_saem_estimates&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Mak2023_saem_estimates.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Min2025_reference&quot;,&quot;label&quot;:&quot;Min_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Min2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Nikolaidis2026_base&quot;,&quot;label&quot;:&quot;Nikolaidis_2026_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Nikolaidis2026_base.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Nikolaidis2026_final&quot;,&quot;label&quot;:&quot;Nikolaidis_2026_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Nikolaidis2026_final.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Metformin_StanisawiakRudowicz2024_reference&quot;,&quot;label&quot;:&quot;Stanis\u0142awiak-Rudowicz_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_StanisawiakRudowicz2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Chae_2012_FPG&quot;,&quot;label&quot;:&quot;Chae_2012 \u00b7 FPG&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/pd_Chae_2012_FPG.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # metformin — `Metformin_Nikolaidis2026_final`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.833), gpt-oss:120b (not confirmed, agreement 0.833). Primary extraction retained.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.833), gpt-oss:120b (not confirmed, agreement 0.833). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -15,35 +15,42 @@
 
 **Model:** Model and browser simulation available in **Models** and **Simulation**.
 
+> **Caveat** (`covariates_not_exercised`): Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.
+
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**The model does not reproduce the paper's terminal half-life (paper 2.2, model 2.03); the covariate scenarios were not simulated.**
+
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. The base model was simulated, not the covariate effects the record defines. Extracted — metformin: kabs 0.35 h−1, V/F 169 L, Vnorm/F 136 L, CL/F 83.6 l h−1, CLnorm/F 71.1 l h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has metformin, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:38:53.700198+00:00) predates the upstream re-run (2026-10-05 00:48:44.675835+00:00). Current validate status: `extracted`.
-
 ## Citation
 Nikolaidis S et al., Effect of high-intensity interval exerc…, British journal of pharmaco… (2026)
   ·  DOI: [10.1111/bph.70208](https://doi.org/10.1111/bph.70208)
 
-<div class="pk-model-meta" hidden drug="metformin" model-id="Metformin_Nikolaidis2026_final" status="extracted" stale="true" population="healthy men" measured-compound="metformin" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="metformin" model-id="Metformin_Nikolaidis2026_final" status="needs_review" stale="false" population="healthy men" measured-compound="metformin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 5 extracted.
+**Parameters:** 5 extracted, plus 3 covariate effects.
 
 **Parameterization:** CL/F, CLnorm/F, V/F, Vnorm/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| θka (h⁻¹) | `Q49` · kabs | 0.35 | h⁻¹ | 9.722222222222222e-05 | [1] / [h] | 0.36 | boundary_llm_dim_refused (0.8) | Nikolaidis_2026_table_3:row0:col2, Nikolaidis_2026_table_3:row0:col3, Nikolaidis_2026_table_3:row0:col4 | — | None (0.50% RSE) |
-| θV/F (L) | `Q76` · V/F | 168.8 | L | 0.1688 | [l] | 175.7 | llm_confirmed (0.6) | Nikolaidis_2026_table_3:row1:col2, Nikolaidis_2026_table_3:row1:col3, Nikolaidis_2026_table_3:row1:col4 | — | None (0.32% RSE) |
+| θka (h−1) | `Q49` · kabs | 0.35 | h−1 | 9.722222222222222e-05 | [1] / [h] | 16.79 | boundary_llm_dim_refused (0.8) | Nikolaidis_2026_table_3:row0:col2 | — | 0.48 (30.36% RSE) |
+| θV/F (L) | `Q76` · V/F | 168.8 | L | 0.1688 | [l] | 16.9 | llm_confirmed (0.6) | Nikolaidis_2026_table_3:row1:col2 | — | 0.35 (44.83% RSE) |
 | V/Fn (L) | `Q353` · Vnorm/F | 136.0 | L | 0.136 | [l] | not captured | exact (1.0) | Nikolaidis_2026_table_3:row2:col2 | — | not captured |
-| θCL/F (l h⁻¹) | `Q27` · CL/F | 83.6 | l h⁻¹ | 2.322222222222222e-05 | [l] / [h] | 83.5 | llm_confirmed (0.6) | Nikolaidis_2026_table_3:row4:col2, Nikolaidis_2026_table_3:row4:col3, Nikolaidis_2026_table_3:row4:col4 | — | None (0.19% RSE) |
-| CL/Fn (l h⁻¹) | `Q355` · CLnorm/F | 71.1 | l h⁻¹ | 1.975e-05 | [l] / [h] | not captured | exact (1.0) | Nikolaidis_2026_table_3:row5:col2 | — | not captured |
+| theta_v_f_exercise_session_a | `Q900` · theta_v_f_exercise_session_a | -0.37 | not captured | not captured | not captured | 31.92 | not captured (not captured) | Nikolaidis_2026_table_3:row3:col2 | — | not captured |
+| θCL/F (l h−1) | `Q27` · CL/F | 83.6 | l h−1 | 2.322222222222222e-05 | [l] / [h] | 7.2 | llm_confirmed (0.6) | Nikolaidis_2026_table_3:row4:col2 | — | 0.19 (26.99% RSE) |
+| CL/Fn (l h−1) | `Q355` · CLnorm/F | 71.1 | l h−1 | 1.975e-05 | [l] / [h] | not captured | exact (1.0) | Nikolaidis_2026_table_3:row5:col2 | — | not captured |
+| theta_cl_f_exercise_session_a | `Q900` · theta_cl_f_exercise_session_a | -0.29 | not captured | not captured | not captured | 21.14 | not captured (not captured) | Nikolaidis_2026_table_3:row6:col2 | — | not captured |
+| theta_cl_f_exercise_session_b | `Q900` · theta_cl_f_exercise_session_b | -0.19 | not captured | not captured | not captured | 32.04 | not captured (not captured) | Nikolaidis_2026_table_3:row7:col2 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -57,11 +64,13 @@ Nikolaidis S et al., Effect of high-intensity interval exerc…, British journal
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
 
 **Interpretation flags:**
-- dropped duplicate Q76 ('βV/Fexercise session A', value '-0.37') — already have one for this compound
-- dropped duplicate Q27 ('βCL/Fexercise session A', value '-0.29') — already have one for this compound
-- dropped duplicate Q27 ('βCL/Fexercise session B', value '-0.19') — already have one for this compound
-- dropped unlinked row (NIL): 'Corr ka–V/F' — extend the ontology if this is a real PK parameter (source ['Nikolaidis_2026_table_3:row14:col2', 'Nikolaidis_2026_table_3:row14:col3', 'Nikolaidis_2026_table_3:row14:col4'])
-- dropped unlinked row (NIL): 'a' — extend the ontology if this is a real PK parameter (source ['Nikolaidis_2026_table_3:row15:col2', 'Nikolaidis_2026_table_3:row15:col3', 'Nikolaidis_2026_table_3:row15:col4'])
+- 'βV/Fexercise session A' is a β covariate effect on V/F, not Q76 (llm link set aside)
+- covariate level 'βV/Fexercise session A' → Q900:theta_v_f_exercise_session_a = -0.37 (linear_fractional on Q76)
+- 'βCL/Fexercise session A' is a β covariate effect on CL/F, not Q27 (llm link set aside)
+- covariate level 'βCL/Fexercise session A' → Q900:theta_cl_f_exercise_session_a = -0.29 (linear_fractional on Q27)
+- 'βCL/Fexercise session B' is a β covariate effect on CL/F, not Q27 (llm link set aside)
+- covariate level 'βCL/Fexercise session B' → Q900:theta_cl_f_exercise_session_b = -0.19 (linear_fractional on Q27)
+- dropped duplicate Q76 ('Corr ka–V/F', value '0.76') — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=metformin
 - model-stage split: 'final estimate (rse%) [η-shrinkage%]' is the final model of Nikolaidis_2026 (paper reports 2 stages: base estimate (rse%) [η-shrinkage%], final estimate (rse%) [η-shrinkage%]); same population, different model-building step
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
@@ -71,15 +80,7 @@ Nikolaidis S et al., Effect of high-intensity interval exerc…, British journal
 **Extraction notes:**
 - no TEI final-model table id; trying text-pointer table recovery
 - LLM selected parameter table(s) 3
-- unparsed cell Nikolaidis_2026_table_3:row3:col4 = '−0.40 to −0.33'
-- unparsed cell Nikolaidis_2026_table_3:row6:col4 = '−0.29 to −0.28'
-- unparsed cell Nikolaidis_2026_table_3:row7:col4 = '−0.19 to −0.17'
-- unparsed cell Nikolaidis_2026_table_3:row8:col1 = '0.48 (34.33) [14.6]'
-- unparsed cell Nikolaidis_2026_table_3:row8:col2 = '0.48 (30.36) [48.6]'
-- unparsed cell Nikolaidis_2026_table_3:row9:col1 = '0.40 (37.77) [29.1]'
-- unparsed cell Nikolaidis_2026_table_3:row9:col2 = '0.35 (44.83) [11.7]'
-- unparsed cell Nikolaidis_2026_table_3:row10:col1 = '0.17 (32.80) [0.04]'
-- unparsed cell Nikolaidis_2026_table_3:row10:col2 = '0.19 (26.99) [3.1]'
+- table Nikolaidis_2026_table_3: unparsed_numeric_cell
 
 ## Validation
 
@@ -125,30 +126,44 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Nikolaidis_2026_table_3:row4:col2', 'Nikolaidis_2026_table_3:row4:col3', 'Nikolaidis_2026_table_3:row4:col4'] |
+| C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Nikolaidis_2026_table_3:row4:col2'] |
 | C5_dimension_Q353 | pass | [length] ** 3 | not captured | not captured | not captured | ['Nikolaidis_2026_table_3:row2:col2'] |
 | C5_dimension_Q355 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Nikolaidis_2026_table_3:row5:col2'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Nikolaidis_2026_table_3:row0:col2', 'Nikolaidis_2026_table_3:row0:col3', 'Nikolaidis_2026_table_3:row0:col4'] |
-| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Nikolaidis_2026_table_3:row1:col2', 'Nikolaidis_2026_table_3:row1:col3', 'Nikolaidis_2026_table_3:row1:col4'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Nikolaidis_2026_table_3:row0:col2'] |
+| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Nikolaidis_2026_table_3:row1:col2'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 83.6 L/h | not captured | not captured | ['Nikolaidis_2026_table_3:row4:col2', 'Nikolaidis_2026_table_3:row4:col3', 'Nikolaidis_2026_table_3:row4:col4'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 169 L | not captured | not captured | ['Nikolaidis_2026_table_3:row1:col2', 'Nikolaidis_2026_table_3:row1:col3', 'Nikolaidis_2026_table_3:row1:col4'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 83.6 L/h | not captured | not captured | ['Nikolaidis_2026_table_3:row4:col2'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 169 L | not captured | not captured | ['Nikolaidis_2026_table_3:row1:col2'] |
 
 **Reviewer per-scenario checks:**
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
 | T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_output_variable | not captured | pass | C_central (measured=metformin) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
-| T1_cmax | reference | skipped | not captured | 0.0018134689985697871 | not captured | non-numeric value |
-| T1_t_half_terminal | reference | skipped | not captured | 2.0314754544796934 | not captured | non-numeric value |
-| T1_tmax | reference | skipped | not captured | 2.4919735689099585 | not captured | non-numeric value |
+| T1_cmax | reference | skipped | 1.9 (1.2-2.6) | 0.0018134689985697871 | not captured | unresolved concentration unit (exp 'a', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 2.7 (2.4-4.0)* | 0.0018134689985697871 | not captured | unresolved concentration unit (exp '†', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 2.1 (1.7-3.6)* | 0.0018134689985697871 | not captured | unresolved concentration unit (exp 'mg l À1', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 1.66 (1.47-1.87) | 0.0018134689985697871 | not captured | unresolved concentration unit (exp 'mg l À1', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 1.23 (1.15-1.31) | 0.0018134689985697871 | not captured | unresolved concentration unit (exp 'mg l À1', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 1.35 (1.20-1.51) | 0.0018134689985697871 | not captured | unresolved concentration unit (exp 'mg l À1', sim 'kg/m3') |
+| T1_t_half_terminal | reference | pass | 2.2 | 2.0314754544796934 | 0.9234 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 2.1 | 2.0314754544796934 | 0.9674 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 1.7 | 2.0314754544796934 | 1.195 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 1.0 | 2.0314754544796934 | 2.0315 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.9 | 2.0314754544796934 | 2.2572 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 1.11 | 2.0314754544796934 | 1.8302 | h→SI vs simulated h |
+| T1_tmax | reference | skipped | 3.0 (1.4-3.5) | 2.4919735689099585 | not captured | unresolved time unit 'a' |
+| T1_tmax | reference | skipped | 2.1 (1.4-2.5)* | 2.4919735689099585 | not captured | unresolved time unit '†' |
+| T1_tmax | reference | pass | 3.0 | 2.4919735689099585 | 0.8307 | h→SI vs simulated h |
+| T1_tmax | reference | skipped | n.a. | 2.4919735689099585 | not captured | non-numeric value |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -157,10 +172,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_metformin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Nikolaidis_2026` / `Nikolaidis_2026::final`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_metformin/models/modelica/Metformin_Nikolaidis2026_final.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_metformin/models/modelica/Metformin_Nikolaidis2026_final.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_metformin/models/modelica/Metformin_Nikolaidis2026_final.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_metformin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Nikolaidis_2026` / `Nikolaidis_2026::final`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_metformin/models/modelica/Metformin_Nikolaidis2026_final.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_metformin/models/modelica/Metformin_Nikolaidis2026_final.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_metformin/models/modelica/Metformin_Nikolaidis2026_final.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -169,7 +184,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_metformin/Metformin_Nikolaidis2026_final/Metformin_Nikolaidis2026_final_modelica.zip" download>Metformin_Nikolaidis2026_final_modelica.zip</a> <span class="pk-size">(4.6 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_metformin/Metformin_Nikolaidis2026_final/Metformin_Nikolaidis2026_final_modelica.zip" download>Metformin_Nikolaidis2026_final_modelica.zip</a> <span class="pk-size">(4.8 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_metformin/Metformin_Nikolaidis2026_final/Metformin_Nikolaidis2026_final_fmi.zip" download>Metformin_Nikolaidis2026_final_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_metformin/Metformin_Nikolaidis2026_final/Metformin_Nikolaidis2026_final_matlab.zip" download>Metformin_Nikolaidis2026_final_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_metformin/Metformin_Nikolaidis2026_final/Metformin_Nikolaidis2026_final_matlab_simbio.zip" download>Metformin_Nikolaidis2026_final_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
@@ -178,7 +193,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_metformin/Metformin_Nikolaidis2026_final/Metformin_Nikolaidis2026_final.svg" alt="Metformin_Nikolaidis2026_final diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_metformin/Metformin_Nikolaidis2026_final/Metformin_Nikolaidis2026_final.svg" alt="Metformin_Nikolaidis2026_final diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -191,4 +206,4 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 00:48 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 23:56 UTC</sub>

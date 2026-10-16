@@ -18,9 +18,9 @@
 
 **Model:** No model was generated from this record.
 
-> The paper models terbutaline stimulating lipolysis in freshly isolated subcutaneous fat cells with an Emax-type model driven by terbutaline concentrations; the excerpts provide no mechanism details and no potency or rate values (Imax, EC50, Emax, kin, kout, ke0, gamma) are stated.
+> The record identifies terbutaline as a stimulator of lipolysis in freshly isolated subcutaneous fat cells using an Emax model, but the paper excerpts are unavailable. Consequently, the specific mechanism and key potency or rate values (such as EC50 or Emax) are not provided in the available text.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
 
 - **paper:** `Hoffstedt_2001`
 - **model family:** `emax`

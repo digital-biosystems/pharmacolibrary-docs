@@ -17,9 +17,9 @@
 
 **Model:** No model was generated from this record.
 
-> The paper models aducanumab exposure (cited PK) against time to first ARIA-E incidence as a time-to-event endpoint, but the available excerpts do not state the mechanism, effect form, or any potency or rate values.
+> The paper describes the time to the first incidence of ARIA-E driven by aducanumab, but does not specify the mechanism, effect form, or any key potency or rate parameters.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Muralidharan_2022`
 - **model family:** `tte`
@@ -36,7 +36,7 @@ _No resolved parameters._
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|

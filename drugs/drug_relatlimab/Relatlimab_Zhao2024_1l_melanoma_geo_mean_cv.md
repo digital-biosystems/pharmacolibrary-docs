@@ -16,13 +16,13 @@
 
 ### Reviewer guidance
 
-**Relatlimab's peripheral compartment volume of 3 L is dimensionally inconsistent with its clearance and maximum metabolic rate units.**
+**C5 dimension mismatch on a structural parameter; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record lists a peripheral volume of 3 L alongside a clearance of 6.06 mL/h and a maximum metabolic rate of 80.3 μg/h. This combination creates a structural dimension mismatch because the units do not align for a two-compartment model. Additionally, the peripheral compartment is identified as unreachable from the dose, meaning it is an orphan compartment with no defined input path. Extracted — relatlimab: Cmin 5.7 μg/mL, Cmax 44.4 μg/mL, Cavg 14.8 μg/mL, CL 6.06 mL/h, V1 3.59 L, V2 3 L, Vss 6.65 L, Vmax 80.3 μg/h.
+A reported unit could not be converted (Cmin, Cmax, Cavg and Vmax), so that value has no SI equivalent. Extracted — relatlimab: Cmin 5.7 μg/mL, Cmax 44.4 μg/mL, Cavg 14.8 μg/mL, CL 6.06 mL/h, V1 3.59 L, V2 3 L, Vss 6.65 L, Vmax 80.3 μg/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of clss/cl0: this record has none, the second reading 90.3. That field does not shape the model.
 
-<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Zhao Y et al., Model-Informed Clinical Pharmacology Pr…, Clinical cancer research :… (2024)
@@ -40,14 +40,14 @@ Zhao Y et al., Model-Informed Clinical Pharmacology Pr…, Clinical cancer resea
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Cmin1 | `Q36` · Cmin | 5.7 | μg/mL | not captured | [µg] / [ml] | 49.5 | llm (0.6) | tbl3:row3:col1 | — | not captured |
-| Cmax1 | `Q32` · Cmax | 44.4 | μg/mL | not captured | [µg] / [ml] | 23.3 | llm (0.6) | tbl3:row4:col1 | — | not captured |
-| Cavg1 | `Q71` · Cavg | 14.8 | μg/mL | not captured | [µg] / [ml] | 25.3 | llm (0.6) | tbl3:row5:col1 | — | not captured |
-| CL0 (mL/h) | `Q22` · CL | 6.06 | mL/h | 1.6833333333333333e-09 | [ml] / [h] | 38.9 | llm (0.6) | tbl3:row9:col1 | — | not captured |
-| V C (L) | `Q63` · V1 | 3.59 | L | 0.00359 | [l] | 22 | space_fold (0.95) | tbl3:row11:col1 | — | not captured |
-| V P (L) | `Q64` · V2 | 3 | L | 0.003 | [l] | 26.9 | space_fold (0.95) | tbl3:row12:col1 | — | not captured |
-| V SS (L) | `Q65` · Vss | 6.65 | L | 0.0066500000000000005 | [l] | 19.8 | space_fold (0.95) | tbl3:row13:col1 | — | not captured |
-| V MAX (μg/h) | `Q66` · Vmax | 80.3 | μg/h | not captured | [µg] / [h] | 32.3 | special_case (0.95) | tbl3:row14:col1 | — | not captured |
+| Cmin1 | `Q36` · Cmin | 5.7 | μg/mL | not captured | [µg] / [ml] | not captured | llm (0.6) | tbl3:row3:col1 | — | not captured |
+| Cmax1 | `Q32` · Cmax | 44.4 | μg/mL | not captured | [µg] / [ml] | not captured | llm (0.6) | tbl3:row4:col1 | — | not captured |
+| Cavg1 | `Q71` · Cavg | 14.8 | μg/mL | not captured | [µg] / [ml] | not captured | llm (0.6) | tbl3:row5:col1 | — | not captured |
+| CL0 (mL/h) | `Q22` · CL | 6.06 | mL/h | 1.6833333333333333e-09 | [ml] / [h] | not captured | llm (0.6) | tbl3:row9:col1 | — | not captured |
+| V C (L) | `Q63` · V1 | 3.59 | L | 0.00359 | [l] | not captured | space_fold (0.95) | tbl3:row11:col1 | — | not captured |
+| V P (L) | `Q64` · V2 | 3 | L | 0.003 | [l] | not captured | space_fold (0.95) | tbl3:row12:col1 | — | not captured |
+| V SS (L) | `Q65` · Vss | 6.65 | L | 0.0066500000000000005 | [l] | not captured | space_fold (0.95) | tbl3:row13:col1 | — | not captured |
+| V MAX (μg/h) | `Q66` · Vmax | 80.3 | μg/h | not captured | [µg] / [h] | not captured | special_case (0.95) | tbl3:row14:col1 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -57,13 +57,13 @@ Zhao Y et al., Model-Informed Clinical Pharmacology Pr…, Clinical cancer resea
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'N = 333' — extend the ontology if this is a real PK parameter (source ['tbl3:row1:col1'])
 - dropped duplicate Q36 ('Cminss', value '15.3') — already have one for this compound
 - dropped duplicate Q32 ('Cmaxss', value '62.2') — already have one for this compound
 - dropped duplicate Q71 ('Cavgss', value '28.8') — already have one for this compound
 - dropped duplicate Q22 ('CLss (mL/h)', value '5.48') — already have one for this compound
 - unit_dimension_mismatch: 'V MAX (μg/h)' → Q66 (unit '[mass] / [time]' vs ontology '[length] ** 3') — route to review
-- dropped unlinked row (NIL): 'CLss/CL0 (%)' — extend the ontology if this is a real PK parameter (source ['tbl3:row15:col1'])
+- unit_dimension_mismatch: 'CLss/CL0 (%)' → Q22 (unit 'dimensionless' vs ontology '[length] ** 3 / [time]') — route to review
+- dropped duplicate Q22 ('CLss/CL0 (%)', value '90.3') — already have one for this compound
 - dropped unlinked row (NIL): 'RAC' — extend the ontology if this is a real PK parameter (source ['tbl3:row16:col1'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=relatlimab
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
@@ -72,6 +72,7 @@ Zhao Y et al., Model-Informed Clinical Pharmacology Pr…, Clinical cancer resea
 - molar mass: none found for 'relatlimab' — its concentrations stay mass-only
 
 **Extraction notes:**
+- table tbl3: ragged_grid
 - companion parameter table 2 transcribed (44 record(s))
 - LLM selected parameter table(s) 2, 3
 
@@ -127,7 +128,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_relatlimab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Zhao_2024` / `Zhao_2024::1l_melanoma_geo_mean_cv`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_relatlimab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Zhao_2024` / `Zhao_2024::1l_melanoma_geo_mean_cv`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -143,4 +144,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 19:32 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 03:04 UTC</sub>

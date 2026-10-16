@@ -5,7 +5,7 @@
 
 # Ornithine — `Ornithine_Jia2026_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75), gpt-oss:120b (not confirmed, agreement 0.625). Primary extraction retained.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.625), gpt-oss:120b (not confirmed, agreement 0.625). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -21,7 +21,7 @@
 
 The record reports CL/F = 7.48 L/h, V/F = 4.75 L and kabs = 0.14 1/h for ornithine, all bioavailability-adjusted apparent values, but the builder assumed F=1 and Fm=1 with no molar correction, an assumption the deviation check judged not acceptable. Tlag was defaulted instead of explicitly estimated. A second reader also read an additional value of 1.23 where this record has none, while agreeing on the other values (0.831 and 61.5). Extracted — ornithine: CL/F 7.48 L/h, V/F 4.75 L, kabs 0.14 1/h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has 83.4, the second reading 61.5; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q310: this record has 0.831, the second reading 0.831; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -67,14 +67,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.75 (6/8 fields) | 2 |
+| `gpt-oss-120b` | not confirmed | 0.625 (5/8 fields) | 3 |
 | `gpt-oss:120b` | not confirmed | 0.625 (5/8 fields) | 3 |
 
-<details><summary>5 field discrepancies</summary>
+<details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `values[Q312]` | 83.4 | 61.5 | mismatch |
+| `gpt-oss-120b` | `values[Q310]` | 0.831 | 0.831 | mismatch |
+| `gpt-oss-120b` | `values[Q312]` | 83.4 | 83.4 | mismatch |
 | `gpt-oss-120b` | `values[Q83]` | not captured | 1.23 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q310]` | 0.831 | 0.831 | mismatch |
 | `gpt-oss:120b` | `values[Q312]` | 61.5 | 61.5 | mismatch |
@@ -122,10 +123,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ornithine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Jia_2026` / `Jia_2026::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ornithine/models/modelica/Ornithine_Jia2026_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ornithine/models/modelica/Ornithine_Jia2026_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ornithine/models/modelica/Ornithine_Jia2026_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ornithine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Jia_2026` / `Jia_2026::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ornithine/models/modelica/Ornithine_Jia2026_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ornithine/models/modelica/Ornithine_Jia2026_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ornithine/models/modelica/Ornithine_Jia2026_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -143,7 +144,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_ornithine/Ornithine_Jia2026_reference/Ornithine_Jia2026_reference.svg" alt="Ornithine_Jia2026_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_ornithine/Ornithine_Jia2026_reference/Ornithine_Jia2026_reference.svg" alt="Ornithine_Jia2026_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

@@ -5,7 +5,7 @@
 
 # glycopyrronium — `Glycopyrronium_Bartels2021_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.111). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -20,8 +20,6 @@
 **The glycopyrronium model was rejected because the absorption rate constant kabs was recorded as 50 with unit L/h instead of 1/h (dimension mismatch), and the peripheral compartment is unreachable from the dose.**
 
 The record lists kabs (absorption rate constant) with a value of 50 in L/h, a unit dimensionally inconsistent with a first-order rate constant (1/h), so the structural parameter failed the dimension check. The one-compartment-plus-peripheral structure also left the peripheral compartment, whose volume V2/F is 1300 L, without a path from the dose. Additionally, the reported unit for kabs could not be converted to SI, so the parameter arrived without an SI value. A second reader disputed several entries, reading kabs and the zero-order absorption duration D1 (0.01 h) as absent and adding covariate effects (theta_v2_f_body_weight 1, theta_q27_body_weight 0.75) not present in this record. Extracted — glycopyrronium: V2/F 1.3e+03 L, kabs 50 L/h, D1 0.01 h.
-
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has indacaterol/glycopyrronium/mometasone furoate, the second reading unknown; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -86,42 +84,6 @@ Bartels C et al., Population Pharmacokinetic Analysis of…, European journal of
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
-
-| second reader | verdict | agreement | disagreements |
-|---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.111 (2/18 fields) | 16 |
-
-<details><summary>16 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[body_weight_on_cl_f]` | 0.75 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[body_weight_on_q_f]` | 0.75 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[body_weight_on_vp_f]` | 1 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[duration of zero-order absorption]` | 0.01 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[duration of zero-order absorption]` | not captured | 0.01 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[ka]` | 50 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[ka]` | not captured | 50 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta_q27_body_weight]` | not captured | 0.75 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta_q290_body_weight]` | not captured | 1 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta_q319_body_weight]` | 1 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta_q69_body_weight]` | not captured | 0.75 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta_v2_f_body_weight]` | not captured | 1 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[vp/f]` | 1300 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[vp/f]` | not captured | 1300 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | indacaterol/glycopyrronium/mometasone furoate | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | glycopyrronium | unknown | mismatch |
-
-</details>
-
-<details class="legend">
-<summary>Cross-check definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
-</details>
-
-
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
@@ -143,7 +105,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_glycopyrronium/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Bartels_2021` / `Bartels_2021::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_glycopyrronium/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Bartels_2021` / `Bartels_2021::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

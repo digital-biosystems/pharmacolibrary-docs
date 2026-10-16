@@ -13,44 +13,51 @@ Pentamidine is an antiprotozoal medicine used against leishmaniasis and trypanos
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q26841221](https://www.wikidata.org/wiki/Q26841221) and the WHO ATC classification; not checked by a person.</small>
 
-## Molecular properties
-
-> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
-
-| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
-|---|---|---|---|---|---|---|
-| pentamidine | parent | 340.427 | C19H24N4O2 | PubChem | [4735](https://pubchem.ncbi.nlm.nih.gov/compound/4735) | Conte_1991 |
-
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 08:26 | 14:17 | 0/1/0 | 8/0/0 | 0/0/0 | 493,109/20,176 | ollama / glm-5.3-flash | 12 | 0/12 | 12/0 | 0 |
+| 2026-10-14 19:41 | 3:48 | 0/1/0 | 1/0/0 | 0/0/1 | 214,072/13,543 | einfracz / qwen3.8-27b | 12 | 0/12 | 12/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Conte_1991_reference](drugs/drug_pentamidine/Pentamidine_Conte1991_reference.md) | — | 1-compartment (no model) | 5 | Conte JE, Pharmacokinetics of intravenous pentami…, The Journal of infectious d… (1991) | [10.1093/infdis/163.1.169](https://doi.org/10.1093/infdis/163.1.169) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Conte_1991_reference](drugs/drug_pentamidine/Pentamidine_Conte1991_reference.md) | — | 1-compartment (no model) | 0 | Conte JE, Pharmacokinetics of intravenous pentami…, The Journal of infectious d… (1991) | [10.1093/infdis/163.1.169](https://doi.org/10.1093/infdis/163.1.169) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Aviles_2000_total_number_of_P_carinii_microorganisms_in_treated_cultures_relative_to_drug_free_cultures](drugs/drug_pentamidine/pd_Aviles_2000_total_number_of_P_carinii_microorganisms_in_trea.md) | total number of P. carinii microorganisms in treated cultures relative to drug-free cultures ← pentamidine · direct sigmoid Emax (Hill) effect | — | Aviles P et al., In vitro pharmacodynamic parameters of…, Antimicrobial agents and ch… (2000) | [10.1128/AAC.44.5.1284-1290.2000](https://doi.org/10.1128/AAC.44.5.1284-1290.2000) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 0.50).">human + animal</span> | [Cox_1992_aggregation](drugs/drug_pentamidine/pd_Cox_1992_aggregation.md) | ADP-induced platelet aggregation in human platelet rich plasma ← pentamidine · inhibition effect | — | Cox D et al., Pentamidine: a non-peptide GPIIb/IIIa a…, Thrombosis and haemostasis (1992) | — |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 0.50).">human + animal</span> | [Cox_1992_fibrinogen_binding](drugs/drug_pentamidine/pd_Cox_1992_fibrinogen_binding.md) | 125I-fibrinogen binding to ADP-activated fixed platelets ← pentamidine · inhibition effect | — | Cox D et al., Pentamidine: a non-peptide GPIIb/IIIa a…, Thrombosis and haemostasis (1992) | — |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 0.50).">human + animal</span> | [Cox_1992_fibronectin_binding](drugs/drug_pentamidine/pd_Cox_1992_fibronectin_binding.md) | 125I-fibronectin binding to ADP-activated fixed platelets ← pentamidine · inhibition effect | — | Cox D et al., Pentamidine: a non-peptide GPIIb/IIIa a…, Thrombosis and haemostasis (1992) | — |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 0.50).">human + animal</span> | [Cox_1992_vWF_binding](drugs/drug_pentamidine/pd_Cox_1992_vWF_binding.md) | 125I-von Willebrand factor binding to ADP-activated fixed platelets ← pentamidine · inhibition effect | — | Cox D et al., Pentamidine: a non-peptide GPIIb/IIIa a…, Thrombosis and haemostasis (1992) | — |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Data from bacteria, fungi or plants, not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">other organism</span> | [Kandpal_1995_arginine_transport_uptake_by_L_donovani_promastigotes](drugs/drug_pentamidine/pd_Kandpal_1995_arginine_transport_uptake_by_L_donovani_promast.md) | arginine transport (uptake) by L. donovani promastigotes biomarker turnover ← pentamidine | — | Kandpal M et al., Kinetics and molecular characteristics…, Molecular and biochemical p… (1995) | [10.1016/0166-6851(95)00042-y](https://doi.org/10.1016/0166-6851(95)00042-y) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 0.90).">in vitro</span> | [Kuryshev_2005_hERG_current](drugs/drug_pentamidine/pd_Kuryshev_2005_hERG_current.md) | hERG current reduction after overnight exposure (hERG trafficking block) ← pentamidine · inhibition effect | — | Kuryshev YA et al., Pentamidine-induced long QT syndrome an…, The Journal of pharmacology… (2005) | [10.1124/jpet.104.073692](https://doi.org/10.1124/jpet.104.073692) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Data from bacteria, fungi or plants, not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">other organism</span> | [Ludewig_1994_growth_on_glucose](drugs/drug_pentamidine/pd_Ludewig_1994_growth_on_glucose.md) | growth on glucose ← pentamidine · inhibition effect | — | Ludewig G et al., Effects of pentamidine isethionate on S…, Antimicrobial agents and ch… (1994) | [10.1128/AAC.38.5.1123](https://doi.org/10.1128/AAC.38.5.1123) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Data from bacteria, fungi or plants, not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">other organism</span> | [Ludewig_1994_growth_on_glycerol](drugs/drug_pentamidine/pd_Ludewig_1994_growth_on_glycerol.md) | growth on glycerol ← pentamidine · inhibition effect | — | Ludewig G et al., Effects of pentamidine isethionate on S…, Antimicrobial agents and ch… (1994) | [10.1128/AAC.38.5.1123](https://doi.org/10.1128/AAC.38.5.1123) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Data from bacteria, fungi or plants, not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">other organism</span> | [Ludewig_1994_respiration_by_intact_yeast_cells](drugs/drug_pentamidine/pd_Ludewig_1994_respiration_by_intact_yeast_cells.md) | respiration by intact yeast cells ← pentamidine · inhibition effect | — | Ludewig G et al., Effects of pentamidine isethionate on S…, Antimicrobial agents and ch… (1994) | [10.1128/AAC.38.5.1123](https://doi.org/10.1128/AAC.38.5.1123) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Reguera_1994_putrescine_uptake](drugs/drug_pentamidine/pd_Reguera_1994_putrescine_uptake.md) | Putrescine uptake inhibition in Leishmania infantum promastigotes ← pentamidine · inhibition effect | — | Reguera R et al., Putrescine uptake inhibition by aromati…, Biochemical pharmacology (1994) | [10.1016/0006-2952(94)90316-6](https://doi.org/10.1016/0006-2952(94)90316-6) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">rat</span> | [Reynolds_1993_3H_dizocilpine_binding](drugs/drug_pentamidine/pd_Reynolds_1993_3H_dizocilpine_binding.md) | [3H]dizocilpine binding to rat brain membranes ← pentamidine · direct sigmoid Emax (Hill) effect | — | Reynolds IJ et al., Studies on the effects of several penta…, European journal of pharmac… (1993) | [10.1016/0922-4106(93)90023-3](https://doi.org/10.1016/0922-4106(93)90023-3) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">rat</span> | [Reynolds_1993_Ca2](drugs/drug_pentamidine/pd_Reynolds_1993_Ca2.md) | NMDA- and glycine-induced intracellular Ca2+ changes ← pentamidine · direct sigmoid Emax (Hill) effect | — | Reynolds IJ et al., Studies on the effects of several penta…, European journal of pharmac… (1993) | [10.1016/0922-4106(93)90023-3](https://doi.org/10.1016/0922-4106(93)90023-3) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Thao_2014_T_brucei_growth_inhibition](drugs/drug_pentamidine/pd_Thao_2014_T_brucei_growth_inhibition.md) | T. brucei growth inhibition ← pentamidine · direct sigmoid Emax (Hill) effect | — | Thao NP et al., Secondary metabolites from Vietnamese m…, Molecules (Basel, Switzerla… (2014) | [10.3390/molecules19067869](https://doi.org/10.3390/molecules19067869) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Aviles_2000_total_number_of_microorganisms](drugs/drug_pentamidine/pd_Aviles_2000_total_number_of_microorganisms.md) | total number of microorganisms ← pentamidine · direct sigmoid Emax (Hill) effect | — | Aviles P et al., In vitro pharmacodynamic parameters of…, Antimicrobial agents and ch… (2000) | [10.1128/AAC.44.5.1284-1290.2000](https://doi.org/10.1128/AAC.44.5.1284-1290.2000) |
+
+## Pharmacogenomics (PGx)
+
+| status | gene | affects | mechanism | detail | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **KCNH2** | `Q321` · EC50 | target | [Cubeddu_2016](drugs/drug_pentamidine/pgx_Cubeddu_2016_KCNH2_Q321.md) | Cubeddu LX, Drug-induced Inhibition and Trafficking…, Current cardiology reviews (2016) | [10.2174/1573403x12666160301120217](https://doi.org/10.2174/1573403x12666160301120217) |
+
+<details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
+
+<details class="legend">
+<summary>PGx field definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=pentamidine).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
+| metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
+| metabolism | liver | `CYP2C19` substrate, `CYP2D6` substrate, `CYP3A5` substrate | DrugBank actor |
+| metabolism | lung | `CYP1A1` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP1A1` substrate, `CYP3A5` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: CYP4A11 (substrate), DNA (intercalation), KCNH2 (target), TPSAB1 (inhibitor), TRDMT1 (other).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -71,7 +78,7 @@ _8 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Conte_1991.pdf` | Conte JE, Pharmacokinetics of intravenous pentami…, The Journal of infectious d… (1991) | popPK | 10 | [10.1093/infdis/163.1.169](https://doi.org/10.1093/infdis/163.1.169) | [1984463](https://pubmed.ncbi.nlm.nih.gov/1984463) | Human IV pentamidine PK with numeric CL, half-life, and compartmental model values reported directly in the abstract. |
+| `Conte_1991.pdf` | Conte JE, Pharmacokinetics of intravenous pentami…, The Journal of infectious d… (1991) | popPK | 10 | [10.1093/infdis/163.1.169](https://doi.org/10.1093/infdis/163.1.169) | [1984463](https://pubmed.ncbi.nlm.nih.gov/1984463) | The abstract reports quantitative pharmacokinetic parameters for pentamidine including clearance (l/h), half-life (h), and a three-compartment model fit in human subjects. |
 | `Berger_1993.pdf` | Berger BJ et al., Polyamine and pentamidine metabolism in…, Acta tropica (1993) | pd | 5 | [10.1016/0001-706x(93)90094-r](https://doi.org/10.1016/0001-706x(93)90094-r) | [7902659](https://www.ncbi.nlm.nih.gov/pubmed/7902659) | metadata signals extractable PD data (IC50) |
 | `Aréchiga-Figueroa_2017.pdf` | Aréchiga-Figueroa IA et al., High-potency block of Kir4.1 channels b…, European journal of pharmac… (2017) | pd | 4 | [10.1016/j.ejphar.2017.10.009](https://doi.org/10.1016/j.ejphar.2017.10.009) | [28993158](https://www.ncbi.nlm.nih.gov/pubmed/28993158) | metadata signals extractable PD data (IC50) |
 | `Dron_2020.pdf` | Dron MY et al., Mechanisms of NMDA receptor inhibition…, The European journal of neu… (2020) | pd | 4 | [10.1111/ejn.14589](https://doi.org/10.1111/ejn.14589) | [31605636](https://www.ncbi.nlm.nih.gov/pubmed/31605636) | metadata signals extractable PD data (IC50) |
@@ -80,42 +87,42 @@ _8 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | `Michalets_2000.pdf` | Michalets EL et al., Drug interactions with cisapride: clini…, Clinical pharmacokinetics (2000) | pgx | 7 | [10.2165/00003088-200039010-00004](https://doi.org/10.2165/00003088-200039010-00004) | [10926350](https://www.ncbi.nlm.nih.gov/pubmed/10926350) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Koon_2023.pdf` | Koon A et al., Evaluation of pentamidine tolerability…, Pharmacogenomics (2023) | pgx | 5 | [10.2217/pgs-2023-0093](https://doi.org/10.2217/pgs-2023-0093) | [37846549](https://www.ncbi.nlm.nih.gov/pubmed/37846549) | metadata signals extractable PGX data (CYP2C19) |
 
-<sub>queue written 2026-10-07T08:20:27.568514+00:00</sub>
+<sub>queue written 2026-10-14T19:39:04.313608+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| PGx | Afrin_2011 | not_relevant | 0 | 0 | Only a title is provided; no PK/PD parameter data or genotype effect for pentamidine is reported or extractable. |
-| PGx | Ameen_2007 | not_relevant | 0 | 0 | Review abstract mentions pentamidine toxicity/resistance generally, with no pharmacogenomic effect on PK/PD parameters. |
-| popPK | Aviles_2000 | irrelevant | 0 | 0 | Pentamidine is only a comparator in an in vitro pharmacodynamic (EC50) study of sordarin derivatives; no PK disposition parameters are reported. |
-| popPK | Bertin_2023 | irrelevant | 0 | 0 | This is an in vitro drug-combination synergy screening study (RECOVER deep learning model) with no pharmacokinetic parameters for pentamidine or any drug. |
-| PGx | Bürenheide_2008 | not_relevant | 0 | 0 | In vitro CYP inhibition study of pentamidine; no gene variant/genotype effect on pentamidine PK/PD reported. |
-| popPK | Changtam_2010 | irrelevant | 0 | 0 | In-vitro antiprotozoal efficacy study of curcuminoid analogs; pentamidine appears only as a control drug with an EC50, no PK parameters. |
-| PGx | Clement_2003 | not_relevant | 0 | 0 | Paper concerns in vitro biotransformation of ximelagatran; pentamidine only mentioned as prodrug principle origin, with no gene variant effect on pentamidine PK/PD. |
-| PGx | Cubeddu_2016 | not_relevant | 2 | 3 | Pentamidine is only mentioned as a hERG trafficking disruptor; no gene variant/genotype effect on its PK or PD parameters is reported. |
-| popPK | Dardonville_2015 | irrelevant | 0 | 0 | Medicinal chemistry SAR study of trypanocidal compounds; pentamidine only mentioned as transporter reference, no PK parameters. |
-| popPK | Fernández-Llaneza_2025 | irrelevant | 0 | 0 | This is a drug-safety/AKI knowledge-integration study; pentamidine appears only in a nephrotoxicity drug list, with no PK parameters reported. |
-| PGx | Fülöp_2026 | not_relevant | 3 | 2 | In vitro transporter interaction data for pentamidine analogs; no gene variant/genotype effect on pentamidine PK/PD parameters reported. |
-| popPK | Gómez-Pérez_2014 | irrelevant | 0 | 0 | In-vitro antileishmanial efficacy study of pentamidine analogues; no PK disposition parameters for pentamidine. |
-| PGx | Jabri_2024 | not_relevant | 0 | 0 | No gene variant/genotype/phenotype effects on pentamidine PK/PD are reported; study concerns nanomaterial drug delivery in Acanthamoeba. |
-| popPK | Kabran_2015 | irrelevant | 0 | 0 | Natural product study; pentamidine only appears as a reference comparator in an in-vitro assay, with no PK parameters. |
-| popPK | Kayukova_2026 | irrelevant | 0 | 0 | This is a medicinal chemistry synthesis/in vitro screening paper; pentamidine is only mentioned as an example amidine drug, with no PK parameters. |
-| PGx | Latifi_2023 | not_relevant | 0 | 0 | In vitro drug susceptibility study with no gene variant/genotype effect on pentamidine PK/PD parameters. |
-| popPK | Li_2026 | irrelevant | 0 | 0 | In vitro E. coli resistance-evolution study; pentamidine is only one of many drugs tested, with no PK parameters. |
-| popPK | Mendonça_2019 | irrelevant | 0 | 0 | In vitro antileishmanial drug-screening study with no PK parameters for pentamidine (only mentioned as standard therapy). |
-| PGx | Michalets_2000 | not_relevant | 0 | 0 | Paper concerns cisapride drug interactions, not pentamidine pharmacogenomics. |
-| popPK | Mollineda-Diogo_2025 | irrelevant | 0 | 0 | This is an in vivo efficacy study of indazole derivatives in mice; pentamidine is only mentioned as a comparator drug with no PK parameters reported. |
-| popPK | Nicco_2025 | irrelevant | 0 | 0 | Study protocol for acoziborole in gHAT; pentamidine is only mentioned as standard-of-care comparator, no PK parameters. |
-| popPK | Oualha_2025 | irrelevant | 0 | 0 | In vitro study of tranylcypromine against Leishmania; pentamidine is only mentioned as a comparator drug, with no PK parameters. |
-| popPK | Pereira_2025 | irrelevant | 0 | 0 | This is a medicinal-chemistry review of hydrazone anti-leishmanial scaffolds; pentamidine appears only as a reference comparator with no PK parameters reported. |
-| popPK | Reguera_1994 | irrelevant | 0 | 0 | In-vitro Leishmania uptake inhibition study; no PK disposition parameters for pentamidine. |
-| popPK | Ribeiro_2024 | irrelevant | 0 | 0 | Study of letrozole for leishmaniasis with no pentamidine PK parameters reported. |
-| popPK | Taladriz_2012 | irrelevant | 0 | 0 | In-vitro drug discovery study of phosphonium salts; pentamidine only a comparator, no PK parameters. |
-| popPK | Thao_2014 | irrelevant | 0 | 0 | Pentamidine is only an in-vitro assay positive control (EC50 reported), with no PK/disposition parameters. |
-| popPK | Ullman_1989 | irrelevant | 0 | 0 | Pentamidine is only mentioned as a comparator antiprotozoal agent in an in-vitro Leishmania resistance study; no PK parameters reported. |
-| PGx | Wong_2009 | not_relevant | 2 | 5 | Reports drug-drug synergism (quinacrine/apigenin dimer) reversing pentamidine resistance in Leishmania, not a gene variant/genotype effect on pentamidine PK/PD. |
-| popPK | Yaima-Yate_2026 | irrelevant | 0 | 0 | Systematic review of plant-derived antileishmanial compounds; pentamidine is not the subject drug and no PK parameters are reported. |
+| PGx | Ameen_2007 | not_relevant | 0 | 0 | The paper is a general review of therapeutic strategies for cutaneous leishmaniasis and does not report any pharmacogenomic studies or gene-variant effects on pentamidine PK/PD. |
+| popPK | Aviles_2000 | irrelevant | 0 | 0 | The study reports in vitro pharmacodynamic parameters (EC50) for anti-infective drugs, not pharmacokinetic disposition parameters (CL, V, etc.) for pentamidine. |
+| popPK | Bertin_2023 | irrelevant | 0 | 0 | The paper describes an in vitro machine learning platform for identifying synergistic drug combinations in cancer cell lines and does not report pharmacokinetic parameters for pentamidine. |
+| PGx | Bürenheide_2008 | not_relevant | 0 | 0 | The study investigates CYP450 inhibitory properties of pentamidine in vitro and does not report any pharmacogenomic effects on its PK or PD parameters. |
+| popPK | Changtam_2010 | irrelevant | 0 | 0 | The study reports in vitro anti-protozoal activity (IC50/EC50) of curcuminoids, with pentamidine serving only as a control agent, and contains no pharmacokinetic parameters. |
+| PGx | Clement_2003 | not_relevant | 0 | 0 | The paper describes the in vitro biotransformation of ximelagatran, a direct thrombin inhibitor, and only mentions pentamidine historically; it does not report pharmacogenomic effects on pentamidine PK/PD. |
+| PGx | Cubeddu_2016 | not_relevant | 5 | 2 | The paper mentions pentamidine's effect on channel trafficking and lists genetic risk factors for arrhythmia, but it is a general review that does not report specific pharmacogenomic genotype-phenotype associations with quantified PK/PD parameters for pentamidine. |
+| popPK | Dardonville_2015 | irrelevant | 0 | 0 | This is an in-vitro structure-activity relationship study of novel trypanocides, not a pharmacokinetic study of pentamidine. |
+| popPK | Fernández-Llaneza_2025 | irrelevant | 0 | 0 | The paper is a review of drug-induced acute kidney injury signals and databases, mentioning pentamidine only as one of many drugs with AKI potential, without reporting any pharmacokinetic parameters. |
+| PGx | Fülöp_2026 | not_relevant | 0 | 0 | The paper describes transporter (OATP/ABCB1) interactions with pentamidine analogs in vitro but does not report pharmacogenomic effects (e.g., specific gene variants/polymorphisms) on human PK or PD parameters. |
+| popPK | Gómez-Pérez_2014 | irrelevant | 0 | 0 | The study is an in vitro pharmacological investigation of new antileishmanial compounds using EC50 values and mode of action assays, with no population pharmacokinetic modeling or disposition parameters. |
+| PGx | Jabri_2024 | not_relevant | 0 | 0 | The paper investigates nanotechnology-based drug formulation and anti-amoebic efficacy, not pharmacogenomic effects of gene variants on PK/PD parameters. |
+| popPK | Kabran_2015 | irrelevant | 0 | 0 | The paper describes the isolation and in-vitro trypanocidal activity of plant compounds, using pentamidine only as a reference standard. |
+| popPK | Kayukova_2026 | irrelevant | 0 | 0 | This is a medicinal chemistry study on the synthesis and in vitro biological activity of novel amidoxime derivatives, and pentamidine is only mentioned as a reference drug with general properties, not as the subject of pharmacokinetic analysis. |
+| PGx | Koon_2023 | not_relevant | 2 | 5 | The study evaluates CYP2C19 phenotypes but reports no association with PK parameters or clinical PD outcomes (discontinuation/infection) for pentamidine. |
+| PGx | Latifi_2023 | not_relevant | 0 | 0 | The study is an in vitro comparison of antimicrobial efficacy and cytotoxicity without any genetic variation or pharmacogenomic analysis. |
+| popPK | Li_2026 | irrelevant | 0 | 0 | The study is an in-vitro evolution of antibiotic resistance in Escherichia coli, not a pharmacokinetic study, and does not report PK parameters for pentamidine. |
+| popPK | Mendonça_2019 | irrelevant | 0 | 0 | The paper is an in vitro study of the antiparasitic activity of nitro-heterocyclic compounds against Leishmania, mentioning pentamidine only as background context for current treatments without reporting any pharmacokinetic parameters for it. |
+| PGx | Michalets_2000 | not_relevant | 0 | 0 | The paper discusses pharmacokinetic and pharmacodynamic drug-drug interactions with cisapride, but does not report any pharmacogenomic effects (gene variants) on the PK or PD parameters of pentamidine. |
+| popPK | Mollineda-Diogo_2025 | irrelevant | 0 | 0 | The study evaluates the in vivo antileishmanial efficacy of novel indazole derivatives in mice, mentioning pentamidine only as a general comparator for existing drug toxicity, and provides no pharmacokinetic parameters for pentamidine. |
+| popPK | Nicco_2025 | irrelevant | 0 | 0 | The paper is a study protocol for an epidemiological and safety trial of acoziborole for Human African Trypanosomiasis, and pentamidine is only mentioned as a standard of care comparator for confirmed cases, with no pharmacokinetic data reported. |
+| popPK | Oualha_2025 | irrelevant | 0 | 0 | The study investigates the in vitro antileishmanial activity of tranylcypromine and only mentions pentamidine as a second-line therapy in the introduction, providing no pharmacokinetic data for pentamidine. |
+| popPK | Pereira_2025 | irrelevant | 0 | 0 | The paper is a review of hydrazone scaffolds for Leishmania, and pentamidine is only mentioned as a reference drug for comparing IC50 values, not as the subject of a PK study. |
+| popPK | Reguera_1994 | irrelevant | 0 | 0 | The study reports in-vitro biochemical data (putrescine uptake inhibition) for pentamidine, not pharmacokinetic disposition parameters. |
+| popPK | Ribeiro_2024 | irrelevant | 0 | 0 | The study investigates the antileishmanial activity of letrozole in vitro and in mice, not the pharmacokinetics of pentamidine. |
+| popPK | Taladriz_2012 | irrelevant | 0 | 0 | The paper is an in-vitro structure-activity relationship (SAR) study of new phosphonium compounds, where pentamidine is only used as a reference for resistance and transport inhibition, with no PK parameters reported. |
+| popPK | Thao_2014 | irrelevant | 0 | 0 | The paper is an in vitro screening study for anti-trypanosomal activity of marine natural products, where pentamidine is used only as a positive control. |
+| popPK | Ullman_1989 | irrelevant | 0 | 0 | The paper is an in-vitro study on Leishmania donovani resistance to Pentostam, and pentamidine is only mentioned as a comparator agent, with no pharmacokinetic data reported. |
+| PGx | Wong_2009 | not_relevant | 0 | 0 | The paper investigates pharmacological sensitization of a parasite using chemical compounds, not human pharmacogenomics (gene variants affecting drug response). |
+| popPK | Yaima-Yate_2026 | irrelevant | 0 | 0 | The paper is a systematic review on antileishmanial activity of plant compounds, with no pharmacokinetic data for pentamidine. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 08:20 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-14 19:39 UTC</sub>

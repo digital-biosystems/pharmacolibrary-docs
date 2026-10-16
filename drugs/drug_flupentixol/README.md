@@ -18,7 +18,7 @@ Flupentixol is an antipsychotic of the thioxanthene class used to treat psychoti
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 15:31 | 1:02 | 0/0/0 | 3/0/0 | 0/0/0 | 83,490/3,394 | ollama / glm-5.3-flash | 14 | 2/1 | 3/0 | 0 |
+| 2026-10-14 20:34 | 0:50 | 0/0/0 | 1/0/0 | 0/0/0 | 48,219/2,071 | einfracz / qwen3.8-27b | 14 | 2/1 | 3/0 | 0 |
 
 ## popPK records
 
@@ -28,12 +28,29 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span> | [Hensler_1987_3H_ACh_release](drugs/drug_flupentixol/pd_Hensler_1987_3H_ACh_release.md) | dopamine-evoked [3H]acetylcholine release from rabbit retina ← cis-flupenthixol · direct sigmoid Emax (Hill) effect | — | Hensler JG et al., Pharmacological and biochemical charact…, The Journal of pharmacology… (1987) | — |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Sugamori_1995_cAMP](drugs/drug_flupentixol/pd_Sugamori_1995_cAMP.md) | cAMP accumulation (inhibition of DA-stimulated cAMP production) ← alpha-flupenthixol · inhibition effect | — | Sugamori KS et al., A primordial dopamine D1-like adenylyl…, FEBS letters (1995) | [10.1016/0014-5793(95)00224-w](https://doi.org/10.1016/0014-5793(95)00224-w) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Yang_2021_MERS_CoV_S_pseudovirus_infectivity](drugs/drug_flupentixol/pd_Yang_2021_MERS_CoV_S_pseudovirus_infectivity.md) | MERS-CoV S pseudovirus infectivity in Huh-7 cells ← flupenthixol · direct sigmoid Emax (Hill) effect | — | Yang L et al., Identification of SARS-CoV-2 entry inhi…, Acta pharmacologica Sinica (2021) | [10.1038/s41401-020-00556-6](https://doi.org/10.1038/s41401-020-00556-6) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Yang_2021_SARS2_S_pseudovirus_infectivity](drugs/drug_flupentixol/pd_Yang_2021_SARS2_S_pseudovirus_infectivity.md) | SARS2-S pseudovirus infectivity in Huh-7 cells ← flupenthixol · direct sigmoid Emax (Hill) effect | — | Yang L et al., Identification of SARS-CoV-2 entry inhi…, Acta pharmacologica Sinica (2021) | [10.1038/s41401-020-00556-6](https://doi.org/10.1038/s41401-020-00556-6) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Yang_2021_SARS_CoV_S_pseudovirus_infectivity](drugs/drug_flupentixol/pd_Yang_2021_SARS_CoV_S_pseudovirus_infectivity.md) | SARS-CoV S pseudovirus infectivity in Huh-7 cells ← flupenthixol · direct sigmoid Emax (Hill) effect | — | Yang L et al., Identification of SARS-CoV-2 entry inhi…, Acta pharmacologica Sinica (2021) | [10.1038/s41401-020-00556-6](https://doi.org/10.1038/s41401-020-00556-6) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Yang_2021_viral_RNA_load](drugs/drug_flupentixol/pd_Yang_2021_viral_RNA_load.md) | SARS-CoV-2 viral RNA load in Vero E6 cell supernatant ← flupenthixol · direct sigmoid Emax (Hill) effect | — | Yang L et al., Identification of SARS-CoV-2 entry inhi…, Acta pharmacologica Sinica (2021) | [10.1038/s41401-020-00556-6](https://doi.org/10.1038/s41401-020-00556-6) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Yang_2021_MERS_CoV_S_pseudovirus_infection](drugs/drug_flupentixol/pd_Yang_2021_MERS_CoV_S_pseudovirus_infection.md) | MERS-CoV S pseudovirus infection ← Flupenthixol · inhibition effect | — | Yang L et al., Identification of SARS-CoV-2 entry inhi…, Acta pharmacologica Sinica (2021) | [10.1038/s41401-020-00556-6](https://doi.org/10.1038/s41401-020-00556-6) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Yang_2021_SARS2_S_pseudovirus_infectivity](drugs/drug_flupentixol/pd_Yang_2021_SARS2_S_pseudovirus_infectivity.md) | SARS2-S pseudovirus infectivity ← Flupenthixol · inhibition effect | — | Yang L et al., Identification of SARS-CoV-2 entry inhi…, Acta pharmacologica Sinica (2021) | [10.1038/s41401-020-00556-6](https://doi.org/10.1038/s41401-020-00556-6) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Yang_2021_SARS_CoV_2_virus_replication](drugs/drug_flupentixol/pd_Yang_2021_SARS_CoV_2_virus_replication.md) | SARS-CoV-2 virus replication ← Flupenthixol · inhibition effect | — | Yang L et al., Identification of SARS-CoV-2 entry inhi…, Acta pharmacologica Sinica (2021) | [10.1038/s41401-020-00556-6](https://doi.org/10.1038/s41401-020-00556-6) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Yang_2021_SARS_CoV_S_pseudovirus_infection](drugs/drug_flupentixol/pd_Yang_2021_SARS_CoV_S_pseudovirus_infection.md) | SARS-CoV S pseudovirus infection ← Flupenthixol · inhibition effect | — | Yang L et al., Identification of SARS-CoV-2 entry inhi…, Acta pharmacologica Sinica (2021) | [10.1038/s41401-020-00556-6](https://doi.org/10.1038/s41401-020-00556-6) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=flupentixol).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inhibitor | DrugBank actor |
+| absorption | kidney | `ABCB1` inhibitor | DrugBank actor |
+| absorption | liver | `ABCB1` inhibitor | DrugBank actor |
+| absorption | placenta | `ABCB1` inhibitor | DrugBank actor |
+| absorption | skeletal muscle | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
+| absorption | testis | `ABCB1` inhibitor | DrugBank actor |
+| metabolism | liver | `CES1` inhibitor | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: ADRA1A (target), CHRM1 (target), DDC (inducer), DRD1 (target), DRD2 (target), DRD3 (target), DRD4 (target), HTR2A (target), HTR2C (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,18 +69,18 @@ _not available_
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Anand-Srivastava_1985 | irrelevant | 0 | 0 | Flupentixol is only used as a pharmacological blocker of dopamine-stimulated adenylate cyclase in vitro; no PK parameters for flupentixol are reported. |
-| popPK | Barbas_2006 | irrelevant | 0 | 0 | Flupentixol is only used as an inverse agonist tool in an in-vitro receptor study; no PK parameters reported. |
-| popPK | Brown_1979 | irrelevant | 0 | 0 | This is an in-vitro electrophysiology/receptor pharmacology study in rat ganglia; flupentixol appears only as an ineffective antagonist, with no PK parameters. |
-| popPK | Hensler_1987 | irrelevant | 0 | 0 | In-vitro receptor pharmacology study in rabbit retina; flupentixol appears only as a comparator antagonist with no PK parameters. |
-| popPK | Josselyn_1993 | irrelevant | 0 | 0 | Flupentixol is only used as a dopamine receptor blocker in a behavioral study; no PK parameters reported. |
-| popPK | Muraki_1994 | irrelevant | 0 | 0 | This is an in-vitro electrophysiology study of catecholamine effects on calcium currents in guinea-pig smooth muscle cells; flupentixol is only used as a dopamine receptor antagonist tool, with no PK parameters. |
-| popPK | Ohta_2009 | irrelevant | 0 | 0 | In vitro insect dopamine receptor pharmacology; flupentixol is only an antagonist probe with no PK parameters. |
-| popPK | Olivier_2015 | irrelevant | 0 | 0 | This is a cognitive-outcome study in schizophrenia patients; flupentixol is only the treatment given, with no PK parameters or numeric disposition values reported. |
-| popPK | Richfield_1991 | irrelevant | 0 | 0 | In-vitro receptor binding study in rat brain; flupentixol is only used as a displacing agent, with no PK parameters for flupentixol. |
-| popPK | Sugamori_1995 | irrelevant | 0 | 0 | This is a Drosophila dopamine receptor binding/functional study; flupentixol appears only as a test ligand with a Kb, with no pharmacokinetic parameters. |
-| popPK | Vayssette_1986 | irrelevant | 0 | 0 | In vitro receptor binding study in dog pancreatic acini; flupentixol is only a receptor antagonist probe, no PK parameters. |
-| popPK | Yang_2021 | irrelevant | 0 | 0 | In-vitro antiviral screening study; flupentixol is only a hit compound with EC50/CC50 values, no PK disposition parameters. |
+| popPK | Anand-Srivastava_1985 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of adenylate cyclase where flupentixol is used only as a pharmacological antagonist to confirm dopamine receptor involvement, not a PK study. |
+| popPK | Barbas_2006 | irrelevant | 0 | 0 | The study characterizes a dopamine receptor in Aplysia and uses flupentixol only as a pharmacological probe (inverse agonist) to demonstrate receptor activity, not to measure its pharmacokinetic parameters. |
+| popPK | Brown_1979 | irrelevant | 0 | 0 | The paper characterizes alpha-adrenergic receptors in rat superior cervical ganglia using flupentixol only as a negative control antagonist, containing no pharmacokinetic data for the drug. |
+| popPK | Hensler_1987 | irrelevant | 0 | 0 | This is a pharmacological study characterizing D-1 receptors in rabbit retina using flupentixol as a probe drug, not a pharmacokinetic study. |
+| popPK | Josselyn_1993 | irrelevant | 0 | 0 | The study investigates the behavioral effects (place preference) and pharmacological interaction (dopamine blockade) of flupentixol, containing no pharmacokinetic or disposition parameters. |
+| popPK | Muraki_1994 | irrelevant | 0 | 0 | The paper is an electrophysiological study of calcium currents in guinea-pig smooth muscle, where flupenthixol is used only as a dopamine receptor antagonist probe to characterize a receptor, and no pharmacokinetic parameters are reported. |
+| popPK | Ohta_2009 | irrelevant | 0 | 0 | The study is an in-vitro receptor pharmacology study in silkworm receptors where flupentixol is used only as a comparator antagonist, not as the subject of a PK study. |
+| popPK | Olivier_2015 | irrelevant | 0 | 0 | The study is a clinical trial assessing cognitive performance in schizophrenia and does not report any pharmacokinetic parameters for flupenthixol. |
+| popPK | Richfield_1991 | irrelevant | 0 | 0 | The paper describes in vitro receptor binding characteristics of a radioligand in rat brain and uses flupentixol only as a competitor/displacer to define specific binding, rather than reporting pharmacokinetic disposition parameters for flupentixol. |
+| popPK | Sugamori_1995 | irrelevant | 0 | 0 | The paper describes a Drosophila dopamine receptor study where flupentixol is used only as a ligand for binding affinity measurements, not as a subject for pharmacokinetic analysis. |
+| popPK | Vayssette_1986 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of dopamine receptors in dog pancreatic acini where flupenthixol (not flupentixol) is used as a probe ligand/antagonist, providing no pharmacokinetic disposition parameters. |
+| popPK | Yang_2021 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological screening for antiviral activity against SARS-CoV-2 and does not report any pharmacokinetic parameters (CL, V, ka, etc.) for flupentixol. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

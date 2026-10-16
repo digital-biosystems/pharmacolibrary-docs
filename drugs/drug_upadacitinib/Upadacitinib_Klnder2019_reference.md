@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;upadacitinib&quot;,&quot;href&quot;:&quot;drugs/drug_upadacitinib/&quot;},{&quot;label&quot;:&quot;Kl\u00fcnder_2019 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Upadacitinib_Klnder2018_reference&quot;,&quot;label&quot;:&quot;Kl\u00fcnder_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_upadacitinib/Upadacitinib_Klnder2018_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Upadacitinib_Klnder2019_reference&quot;,&quot;label&quot;:&quot;Kl\u00fcnder_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_upadacitinib/Upadacitinib_Klnder2019_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Mohamed_2021_EASI_75&quot;,&quot;label&quot;:&quot;Mohamed_2021 \u00b7 EASI-75&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_upadacitinib/pd_Mohamed_2021_EASI_75.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Mohamed_2021_EASI_90&quot;,&quot;label&quot;:&quot;Mohamed_2021 \u00b7 EASI-90&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_upadacitinib/pd_Mohamed_2021_EASI_90.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Mohamed_2021_IGA_0_1&quot;,&quot;label&quot;:&quot;Mohamed_2021 \u00b7 IGA 0/1&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_upadacitinib/pd_Mohamed_2021_IGA_0_1.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # upadacitinib — `Upadacitinib_Klnder2019_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.85). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.85). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -12,13 +13,15 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
+
+> **Caveat** (`covariates_not_exercised`): Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.
 
 ### Reviewer guidance
 
-**CL_ratio and Km have no unit.**
+**Accepted with a caveat: the covariate scenarios were not simulated.**
 
-Without a unit the value cannot be converted, so the model cannot use it. Extracted — upadacitinib: CL/F 40.9 L/h, V1/F 156 L, Q/F 3.22 L/h, V2/F 68 L, kabs 0.0523 1/h, tlag 0.154 h, AUC%ext 74.5, D1 3.29 h, … (+2).
+The base model was simulated, not the covariate effects the record defines. A reported unit could not be converted (Frel), so that value has no SI equivalent.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of bioavailability of the extended-release formulation relative to the immediate-release formulation: this record has none, the second reading 76.2; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -28,31 +31,27 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Klünder B et al., Population Pharmacokinetics of Upadacit…, Clinical pharmacokinetics (2019)
   ·  DOI: [10.1007/s40262-019-00739-3](https://doi.org/10.1007/s40262-019-00739-3)
 
-<div class="pk-model-meta" hidden drug="upadacitinib" model-id="Upadacitinib_Klnder2019_reference" status="needs_review" stale="false" population="healthy subjects and subjects with rheumatoid arthritis" measured-compound="upadacitinib" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="upadacitinib" model-id="Upadacitinib_Klnder2019_reference" status="accepted_with_caveats" stale="false" population="healthy volunteers and subjects with rheumatoid arthritis" measured-compound="upadacitinib" parameterization="apparent" topology="2C"></div>
 
-**Model structure:** 2-compartment; no model was built for this record.  
-**Parameters:** 10 extracted, plus 3 covariate effects.
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameters:** 8 extracted, plus 3 covariate effects.
 
 **Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F (L/h) | `Q27` · CL/F | 40.9 | L/h | 1.1361111111111111e-05 | [l] / [h] | not captured | exact (1.0) | Tab3:row2:col1, Tab3:row2:col2, Tab3:row2:col3 | — | not captured |
-| Vc/F (L) | `Q290` · V1/F | 156 | L | 0.156 | [l] | not captured | exact (1.0) | Tab3:row3:col1, Tab3:row3:col2, Tab3:row3:col3 | — | not captured |
-| Q/F (L/h) | `Q69` · Q/F | 3.22 | L/h | 8.944444444444445e-07 | [l] / [h] | not captured | exact (1.0) | Tab3:row4:col1, Tab3:row4:col2, Tab3:row4:col3 | — | not captured |
-| Vp/F (L) | `Q82` · V2/F | 68.0 | L | 0.068 | [l] | not captured | exact (1.0) | Tab3:row5:col1, Tab3:row5:col2, Tab3:row5:col3 | — | not captured |
-| Extended-release Ka (1/h) | `Q49` · kabs | 0.0523 | 1/h | 1.4527777777777777e-05 | 1/h | not captured | boundary_llm_dim_refused (0.8) | Tab3:row6:col1, Tab3:row6:col2, Tab3:row6:col3 | — | not captured |
-| Extended-release absorption lag time (h) | `Q83` · tlag | 0.154 | h | 554.4 | [h] | not captured | llm_confirmed (0.6) | Tab3:row7:col1, Tab3:row7:col2, Tab3:row7:col3 | — | not captured |
-| Fraction of extended-release dose absorbed through zero-order process (%) | `Q84` · AUC%ext | 74.5 | not captured | not captured | not captured | not captured | llm (0.6) | Tab3:row8:col1, Tab3:row8:col2, Tab3:row8:col3 | — | not captured |
-| Zero-order infusion duration (h) | `Q310` · D1 | 3.29 | h | 11844.0 | [h] | not captured | exact (1.0) | Tab3:row9:col1, Tab3:row9:col2, Tab3:row9:col3 | — | not captured |
-| CL/F ratio of RA patients compared with healthy subjects | `Q31` · CL_ratio | 0.754 | not captured | not captured | not captured | not captured | llm_corrected (0.6) | Tab3:row13:col1, Tab3:row13:col2, Tab3:row13:col3 | — | not captured |
-| ISV on CL/F in phase II/III (%) | `Q1` · Km | 36.5 | not captured | not captured | not captured | not captured | llm_corrected (0.6) | Tab3:row18:col1, Tab3:row18:col2, Tab3:row18:col3 | — | not captured |
-| theta_cl_f_creatinine_power | `Q900` · theta_cl_f_creatinine_power | 0.256 | not captured | not captured | not captured | not captured | not captured (not captured) | Tab3:row14:col1, Tab3:row14:col2, Tab3:row14:col3 | — | not captured |
-| theta_q319_weight_power | `Q900` · theta_q319_weight_power | 0.804 | not captured | not captured | not captured | not captured | not captured (not captured) | Tab3:row15:col1, Tab3:row15:col2, Tab3:row15:col3 | — | not captured |
-| theta_q319_weight_power | `Q900` · theta_q319_weight_power | 0.132 | not captured | not captured | not captured | not captured | not captured (not captured) | Tab3:row16:col1, Tab3:row16:col2, Tab3:row16:col3 | — | not captured |
+| CL/F (L/h) | `Q27` · CL/F | 40.9 | L/h | 1.1361111111111111e-05 | [l] / [h] | 1.6 | exact (1.0) | Tab3:row2:col1 | — | not captured |
+| Vc/F (L) | `Q290` · V1/F | 156 | L | 0.156 | [l] | 1.7 | exact (1.0) | Tab3:row3:col1 | — | not captured |
+| Q/F (L/h) | `Q69` · Q/F | 3.22 | L/h | 8.944444444444445e-07 | [l] / [h] | 5.8 | exact (1.0) | Tab3:row4:col1 | — | not captured |
+| Vp/F (L) | `Q82` · V2/F | 68.0 | L | 0.068 | [l] | 7.2 | exact (1.0) | Tab3:row5:col1 | — | not captured |
+| Extended-release Ka (1/h) | `Q49` · kabs | 0.0523 | 1/h | 1.4527777777777777e-05 | [1] / [h] | 6.0 | llm_confirmed (0.6) | Tab3:row6:col1 | — | not captured |
+| Extended-release absorption lag time (h) | `Q83` · tlag | 0.154 | h | 554.4 | [h] | 7.7 | llm_confirmed (0.6) | Tab3:row7:col1 | — | not captured |
+| Fraction of extended-release dose absorbed through zero-order process (%) | `Q87` · Frel | 74.5 | % | not captured | [%] | 1.7 | llm (0.6) | Tab3:row8:col1 | — | not captured |
+| Zero-order infusion duration (h) | `Q310` · D1 | 3.29 | h | 11844.0 | [h] | 1.7 | exact (1.0) | Tab3:row9:col1 | — | not captured |
+| covariate_exponent_of_creatinine_clearance_on_cl_f | `Q900` · covariate_exponent_of_creatinine_clearance_on_cl_f | 0.256 | not captured | not captured | not captured | 10.0 | not captured (not captured) | Tab3:row14:col1 | — | not captured |
+| theta_q319_weight_power | `Q900` · theta_q319_weight_power | 0.804 | not captured | not captured | not captured | 8.0 | not captured (not captured) | Tab3:row15:col1 | — | not captured |
+| theta_q319_weight_power | `Q900` · theta_q319_weight_power | 0.132 | not captured | not captured | not captured | 28.7 | not captured (not captured) | Tab3:row16:col1 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -61,19 +60,27 @@ Klünder B et al., Population Pharmacokinetics of Upadacit…, Clinical pharmaco
 
 ## Departures & gaps
 
+**Deviations:**
+- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+
 **Interpretation flags:**
 - dropped duplicate Q49 ('Immediate-release Ka (1/h)', value '2.77') — already have one for this compound
 - dropped duplicate Q83 ('Immediate-release absorption lag time (h)', value '0.200') — already have one for this compound
-- dropped unlinked row (NIL): 'ISV on CL/F in phase I (%)' — extend the ontology if this is a real PK parameter (source ['Tab3:row17:col1', 'Tab3:row17:col2', 'Tab3:row17:col3'])
-- dropped unlinked row (NIL): 'ISV on Vc/F in phase I (%)' — extend the ontology if this is a real PK parameter (source ['Tab3:row19:col1', 'Tab3:row19:col2', 'Tab3:row19:col3'])
-- routed 'ISV on Vc/F in phase II/III (%)' → Q313 (IOV) to iov — variability estimate, not a structural parameter
+- covariate level 'Covariate exponent of creatinine clearance on CL/F' → Q900:covariate_exponent_of_creatinine_clearance_on_cl_f = 0.256 (power on Q27)
+- unit_dimension_mismatch: 'ISV on CL/F in phase I (%)' → Q27 (unit 'dimensionless' vs ontology '[length] ** 3 / [time]') — route to review
+- dropped duplicate Q27 ('ISV on CL/F in phase I (%)', value '20.5') — already have one for this compound
+- dropped unlinked row (NIL): 'ISV on CL/F in phase II/III (%)' — extend the ontology if this is a real PK parameter (source ['Tab3:row18:col1'])
+- unit_dimension_mismatch: 'ISV on Vc/F in phase I (%)' → Q290 (unit 'dimensionless' vs ontology '[length] ** 3') — route to review
+- dropped duplicate Q290 ('ISV on Vc/F in phase I (%)', value '24.4') — already have one for this compound
+- unit_dimension_mismatch: 'ISV on Vc/F in phase II/III (%)' → Q290 (unit 'dimensionless' vs ontology '[length] ** 3') — route to review
+- dropped duplicate Q290 ('ISV on Vc/F in phase II/III (%)', value '53.0') — already have one for this compound
+- unit_dimension_mismatch: 'ISV on extended-release Ka (%)' → Q49 (unit 'dimensionless' vs ontology '1 / [time]') — route to review
 - dropped duplicate Q49 ('ISV on extended-release Ka (%)', value '66.8') — already have one for this compound
 - covariate effect for Q319 has no base parameter row (kept as unattached equation-variable)
-- implicit units: 'Extended-release Ka (1/h)' → 1/h (from the paper text: "The unit is explicitly provided in the parameter label as '(1/h)'.")
-- implicit units: 'ISV on CL/F in phase II/III (%)' — the LLM proposed '%', whose dimension does not fit Q1; left unset
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=upadacitinib
 
 **Extraction notes:**
+- table Tab3: ragged_grid
 - LLM selected parameter table(s) 3
 
 ## Validation
@@ -105,24 +112,34 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 10 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 8 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab3:row2:col1', 'Tab3:row2:col2', 'Tab3:row2:col3'] |
-| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab3:row3:col1', 'Tab3:row3:col2', 'Tab3:row3:col3'] |
-| C5_dimension_Q310 | pass | [time] | not captured | not captured | not captured | ['Tab3:row9:col1', 'Tab3:row9:col2', 'Tab3:row9:col3'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Tab3:row6:col1', 'Tab3:row6:col2', 'Tab3:row6:col3'] |
-| C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab3:row4:col1', 'Tab3:row4:col2', 'Tab3:row4:col3'] |
-| C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab3:row5:col1', 'Tab3:row5:col2', 'Tab3:row5:col3'] |
-| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Tab3:row7:col1', 'Tab3:row7:col2', 'Tab3:row7:col3'] |
-| C5_unit_missing_Q1 | fail | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Tab3:row18:col1', 'Tab3:row18:col2', 'Tab3:row18:col3'] |
-| C5_unit_missing_Q31 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab3:row13:col1', 'Tab3:row13:col2', 'Tab3:row13:col3'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab3:row2:col1'] |
+| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab3:row3:col1'] |
+| C5_dimension_Q310 | pass | [time] | not captured | not captured | not captured | ['Tab3:row9:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Tab3:row6:col1'] |
+| C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab3:row4:col1'] |
+| C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab3:row5:col1'] |
+| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Tab3:row7:col1'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 40.9 L/h | not captured | not captured | ['Tab3:row2:col1', 'Tab3:row2:col2', 'Tab3:row2:col3'] |
-| C9_phys_window_Q290 | pass | volume within physiological range | 156 L | not captured | not captured | ['Tab3:row3:col1', 'Tab3:row3:col2', 'Tab3:row3:col3'] |
-| C9_phys_window_Q82 | pass | volume within physiological range | 68 L | not captured | not captured | ['Tab3:row5:col1', 'Tab3:row5:col2', 'Tab3:row5:col3'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 40.9 L/h | not captured | not captured | ['Tab3:row2:col1'] |
+| C9_phys_window_Q290 | pass | volume within physiological range | 156 L | not captured | not captured | ['Tab3:row3:col1'] |
+| C9_phys_window_Q82 | pass | volume within physiological range | 68 L | not captured | not captured | ['Tab3:row5:col1'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_output_variable | not captured | pass | C_central (measured=upadacitinib) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 6 scholar param(s) emitted or defaulted | 6 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -131,7 +148,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_upadacitinib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Klünder_2019` / `Klünder_2019::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_upadacitinib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Klünder_2019` / `Klünder_2019::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_upadacitinib/models/modelica/Upadacitinib_Klnder2019_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_upadacitinib/models/modelica/Upadacitinib_Klnder2019_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_upadacitinib/models/modelica/Upadacitinib_Klnder2019_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -140,21 +160,26 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_upadacitinib/Upadacitinib_Klnder2019_reference/Upadacitinib_Klnder2019_reference_modelica.zip" download>Upadacitinib_Klnder2019_reference_modelica.zip</a> <span class="pk-size">(4.8 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_upadacitinib/Upadacitinib_Klnder2019_reference/Upadacitinib_Klnder2019_reference_fmi.zip" download>Upadacitinib_Klnder2019_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_upadacitinib/Upadacitinib_Klnder2019_reference/Upadacitinib_Klnder2019_reference_matlab.zip" download>Upadacitinib_Klnder2019_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_upadacitinib/Upadacitinib_Klnder2019_reference/Upadacitinib_Klnder2019_reference_matlab_simbio.zip" download>Upadacitinib_Klnder2019_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_upadacitinib/Upadacitinib_Klnder2019_reference/Upadacitinib_Klnder2019_reference_sbml.zip" download>Upadacitinib_Klnder2019_reference_sbml.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_upadacitinib/Upadacitinib_Klnder2019_reference/Upadacitinib_Klnder2019_reference_cellml.zip" download>Upadacitinib_Klnder2019_reference_cellml.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_upadacitinib/Upadacitinib_Klnder2019_reference/Upadacitinib_Klnder2019_reference.svg" alt="Upadacitinib_Klnder2019_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+**Administration: oral** — 1 mg, single dose, first-order absorption (ka 0.0523 /h, lag 9.24 min, F 1). Doses in the paper: 1, 7.5, 30, 48 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_upadacitinib/Upadacitinib_Klnder2019_reference/Upadacitinib_Klnder2019_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_upadacitinib/Upadacitinib_Klnder2019_reference/Upadacitinib_Klnder2019_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_2C_enteral` · parameters `Upadacitinib_Klnder2019_reference_params.json` · controls `Upadacitinib_Klnder2019_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 01:01 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 23:27 UTC</sub>

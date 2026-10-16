@@ -4,7 +4,7 @@
 
 # coagulation factor VIII — `CoagulationFactorViii_Preijers2018_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333), gpt-oss:120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -16,15 +16,13 @@
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**The paper reports none of the model's key parameters.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is coagulation factor viii's own; they describe factor VIII.
+No clearance, volume or rate constant of the model is reported in it. Only the abstract was available, so reported summary statistics stand in for a fitted model. No parameter values were extracted.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has recombinant FVIII, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has recombinant FVIII, the second reading recombinant factor VIII (Advate/Kogenate); it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
-
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:37:14.621037+00:00) predates the upstream re-run (2026-10-05 18:42:02.191560+00:00). Current validate status: `rejected`.
 
 > **Dose compound ≠ measured compound:** dosed `recombinant FVIII`, measured `FVIII`.
 
@@ -32,51 +30,49 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Preijers T et al., Cross-evaluation of Pharmacokinetic-Gui…, Thrombosis and haemostasis (2018)
   ·  DOI: [10.1055/s-0038-1623531](https://doi.org/10.1055/s-0038-1623531)
 
-<div class="pk-model-meta" hidden drug="coagulation factor VIII" model-id="CoagulationFactorViii_Preijers2018_reference" status="rejected" stale="true" population="patients with severe or moderate haemophilia A" measured-compound="FVIII" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="coagulation factor VIII" model-id="CoagulationFactorViii_Preijers2018_reference" status="rejected" stale="false" population="patients with severe or moderate haemophilia A" measured-compound="FVIII" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 1 extracted.
+**Parameters:** 0 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| Half-life | `Q57` · t1/2z | 12.6 | hours | 45360.0 | [h] | not captured | llm (0.6) | Preijers_2018:abstract, Preijers_2018:abstract, Preijers_2018:abstract | — | not captured |
-
-<details class="legend">
-<summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
-</details>
+_No resolved parameters._
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped duplicate Q57 ('half-life', value 15.0) — already have one for this compound
-- dropped unlinked row (NIL): 'time to 0.05 IU mL-1' — extend the ontology if this is a real PK parameter (source ['Preijers_2018:abstract', 'Preijers_2018:abstract'])
+- covariate category for t1/2z from footnote/prose kept as documentation only (['Preijers_2018:abstract'])
+- dropped unlinked row (NIL): 'time to 0.05 IU mL-1 for WAPPS' — extend the ontology if this is a real PK parameter (source ['Preijers_2018:abstract'])
+- dropped unlinked row (NIL): 'time to 0.05 IU mL-1 for NONMEM' — extend the ontology if this is a real PK parameter (source ['Preijers_2018:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=FVIII
-- molar mass: none found for 'coagulation_factor_viii' — its concentrations stay mass-only
-- molar mass: none found for 'FVIII' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
+- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Preijers_2018_metadata.yaml (7 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.333 (2/6 fields) | 4 |
 | `gpt-oss:120b` | not confirmed | 0.333 (2/6 fields) | 4 |
 
-<details><summary>4 field discrepancies</summary>
+<details><summary>8 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[half-life]` | 12.6 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[half-life]` | not captured | 12.6 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | recombinant FVIII | recombinant factor VIII (Advate/Kogenate) | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | FVIII | factor VIII activity | mismatch |
 | `gpt-oss:120b` | `parameters[half-life]` | 12.6 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[half-life]` | not captured | 12.6 | only_one_extracted |
 | `gpt-oss:120b` | `screen.dose_compound` | recombinant FVIII | unknown | mismatch |
@@ -94,9 +90,8 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
+| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
 | C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Preijers_2018:abstract', 'Preijers_2018:abstract', 'Preijers_2018:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
 <details class="legend">
@@ -106,7 +101,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_coagulation_factor_viii/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Preijers_2018` / `Preijers_2018::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_coagulation_factor_viii/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Preijers_2018` / `Preijers_2018::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -122,4 +117,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 18:42 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 21:44 UTC</sub>

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;adalimumab&quot;,&quot;href&quot;:&quot;drugs/drug_adalimumab/&quot;},{&quot;label&quot;:&quot;Ternant_2015 \u00b7 PD disease activity score in 28 joints&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Adalimumab_RodrguezFernndez2022_reference&quot;,&quot;label&quot;:&quot;Rodr\u00edguez-Fern\u00e1ndez_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_adalimumab/Adalimumab_RodrguezFernndez2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Adalimumab_Chan2020_reference&quot;,&quot;label&quot;:&quot;Chan_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_adalimumab/Adalimumab_Chan2020_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Adalimumab_van2024_reference&quot;,&quot;label&quot;:&quot;van_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_adalimumab/Adalimumab_van2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Adalimumab_RodrguezFernndez2022_reference&quot;,&quot;label&quot;:&quot;Rodr\u00edguez-Fern\u00e1ndez_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_adalimumab/Adalimumab_RodrguezFernndez2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Adalimumab_Ternant2015_reference&quot;,&quot;label&quot;:&quot;Ternant_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_adalimumab/Adalimumab_Ternant2015_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # disease activity score in 28 joints — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
@@ -14,19 +14,19 @@
 
 ## Record summary
 
-**As extracted:** Adalimumab (concentrations from the PK model of Chan_2020) drives disease activity score in 28 joints: direct Emax (saturable) effect.
+**As extracted:** Adalimumab (concentrations from this paper's PK model) drives disease activity score in 28 joints: direct Emax (saturable) effect.
 
 **Model:** No model was generated from this record.
 
-> The model uses an Emax inhibition form where adalimumab concentration (mg/L) drives a proportional decrease in the Disease Activity Score in 28 (DAS28). The paper cites an IC50 of 11.0 mg/L for the 50% decrease in the response, but no specific rate constants or maximum effect values are provided in the available excerpts.
+> Adalimumab concentration inhibits the Disease Activity Score 28 (DAS28) with a baseline value of 5.5 mg/L and a half-maximal inhibitory concentration of 11.0 mg/L. The paper does not provide a full-text excerpt to confirm the specific mechanism of action or effect compartment.
 >
 > <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Ternant_2015`
 - **model family:** `emax`
-- **driver:** `cited_pk`
+- **driver:** `pk_record`
 - **tier:** population
-- **effect:** inhibition/proportional
+- **effect:** inhibition/unknown
 
 ## Citation
 Ternant D et al., Pharmacokinetics and concentration-effe…, British journal of clinical… (2015)

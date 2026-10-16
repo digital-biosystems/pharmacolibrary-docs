@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V10X&quot;,&quot;href&quot;:&quot;atc/V10X.md&quot;},{&quot;label&quot;:&quot;lutetium (177Lu) oxodotreotide&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_oxodotreotide/&quot;},{&quot;label&quot;:&quot;Sood_2026 \u00b7 netter_p_estimate&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lutetium177luOxodotreotide_Barakat2023_base&quot;,&quot;label&quot;:&quot;Barakat_2023_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_oxodotreotide/Lutetium177luOxodotreotide_Barakat2023_base.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lutetium177luOxodotreotide_Barakat2023_base_structural_model&quot;,&quot;label&quot;:&quot;Barakat_2023_base_structural_model_estimate_value_cv&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_oxodotreotide/Lutetium177luOxodotreotide_Barakat2023_base_structural_model.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lutetium177luOxodotreotide_Barakat2023_final&quot;,&quot;label&quot;:&quot;Barakat_2023_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_oxodotreotide/Lutetium177luOxodotreotide_Barakat2023_final.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lutetium177luOxodotreotide_Sood2026_netter_1_estimate&quot;,&quot;label&quot;:&quot;Sood_2026_netter_1_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_oxodotreotide/Lutetium177luOxodotreotide_Sood2026_netter_1_estimate.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lutetium177luOxodotreotide_Sood2026_netter_p_estimate&quot;,&quot;label&quot;:&quot;Sood_2026_netter_p_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_oxodotreotide/Lutetium177luOxodotreotide_Sood2026_netter_p_estimate.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lutetium177luOxodotreotide_Barakat2023_base&quot;,&quot;label&quot;:&quot;Barakat_2023_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_oxodotreotide/Lutetium177luOxodotreotide_Barakat2023_base.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lutetium177luOxodotreotide_Barakat2023_final&quot;,&quot;label&quot;:&quot;Barakat_2023_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_oxodotreotide/Lutetium177luOxodotreotide_Barakat2023_final.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lutetium177luOxodotreotide_Sood2026_netter_1_estimate&quot;,&quot;label&quot;:&quot;Sood_2026_netter_1_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_oxodotreotide/Lutetium177luOxodotreotide_Sood2026_netter_1_estimate.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lutetium177luOxodotreotide_Sood2026_netter_p_estimate&quot;,&quot;label&quot;:&quot;Sood_2026_netter_p_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_oxodotreotide/Lutetium177luOxodotreotide_Sood2026_netter_p_estimate.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # lutetium (177Lu) oxodotreotide — `Lutetium177luOxodotreotide_Sood2026_netter_p_estimate`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75), gpt-oss:120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75), gpt-oss:120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -23,13 +23,11 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-10-01 20:28:09.512497+00:00) predates the upstream re-run (2026-10-07 17:09:38.807083+00:00). Current validate status: `extracted`.
-
 ## Citation
 Sood M et al., [, Journal of nuclear medicine… (2026)
   ·  DOI: [10.2967/jnumed.125.270202](https://doi.org/10.2967/jnumed.125.270202)
 
-<div class="pk-model-meta" hidden drug="lutetium (177Lu) oxodotreotide" model-id="Lutetium177luOxodotreotide_Sood2026_netter_p_estimate" status="extracted" stale="true" population="adolescent and adult patients with somatostatin receptor–positive gastroenteropancreatic neuroendocrine tumors" measured-compound="lutetium_177lu_oxodotreotide" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="lutetium (177Lu) oxodotreotide" model-id="Lutetium177luOxodotreotide_Sood2026_netter_p_estimate" status="curated_candidate" stale="false" population="adolescent and adult patients with SSTR-positive GEP-NETs and PPGLs" measured-compound="lutetium_177lu_oxodotreotide" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.
@@ -39,10 +37,10 @@ Sood M et al., [, Journal of nuclear medicine… (2026)
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL (L/h) | `Q22` · CL | 5.92 | L/h | 1.6444444444444445e-06 | [l] / [h] | not captured | exact (1.0) | Sood_2026_table_4:row0:col1 | — | 0.14 (None% RSE) |
-| Vc (L) | `Q63` · V1 | 17.86 | L | 0.01786 | [l] | not captured | exact (1.0) | Sood_2026_table_4:row1:col1 | — | not captured |
-| Q (L/h) | `Q30` · Q | 2.63 | L/h | 7.305555555555555e-07 | [l] / [h] | not captured | exact (1.0) | Sood_2026_table_4:row2:col1 | — | not captured |
-| Vp (L) | `Q64` · V2 | 99.42 | L | 0.09942000000000001 | [l] | not captured | exact (1.0) | Sood_2026_table_4:row3:col1 | — | not captured |
+| CL (L/h) | `Q22` · CL | 5.92 | L/h | 1.6444444444444445e-06 | [l] / [h] | 5.43 | exact (1.0) | Sood_2026_table_4:row0:col1 | — | 0.14 (30.72% RSE) |
+| Vc (L) | `Q63` · V1 | 17.86 | L | 0.01786 | [l] | 7.22 | exact (1.0) | Sood_2026_table_4:row1:col1 | — | not captured |
+| Q (L/h) | `Q30` · Q | 2.63 | L/h | 7.305555555555555e-07 | [l] / [h] | 8.89 | exact (1.0) | Sood_2026_table_4:row2:col1 | — | not captured |
+| Vp (L) | `Q64` · V2 | 99.42 | L | 0.09942000000000001 | [l] | 15.04 | exact (1.0) | Sood_2026_table_4:row3:col1 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -57,6 +55,7 @@ Sood M et al., [, Journal of nuclear medicine… (2026)
 - molar mass: none found for 'lutetium_177lu_oxodotreotide' — its concentrations stay mass-only
 
 **Extraction notes:**
+- table tbl5: units_need_context
 - companion parameter table 2 transcribed (8 record(s))
 - companion parameter table 4 transcribed (6 record(s))
 - LLM selected parameter table(s) 2, 4
@@ -123,10 +122,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_lutetium_177lu_oxodotreotide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Sood_2026` / `Sood_2026::netter_p_estimate`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_lutetium_177lu_oxodotreotide/models/modelica/Lutetium177luOxodotreotide_Sood2026_netter_p_estimate.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_lutetium_177lu_oxodotreotide/models/modelica/Lutetium177luOxodotreotide_Sood2026_netter_p_estimate.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_lutetium_177lu_oxodotreotide/models/modelica/Lutetium177luOxodotreotide_Sood2026_netter_p_estimate.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_lutetium_177lu_oxodotreotide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Sood_2026` / `Sood_2026::netter_p_estimate`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_lutetium_177lu_oxodotreotide/models/modelica/Lutetium177luOxodotreotide_Sood2026_netter_p_estimate.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_lutetium_177lu_oxodotreotide/models/modelica/Lutetium177luOxodotreotide_Sood2026_netter_p_estimate.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_lutetium_177lu_oxodotreotide/models/modelica/Lutetium177luOxodotreotide_Sood2026_netter_p_estimate.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -144,7 +143,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_lutetium_177lu_oxodotreotide/Lutetium177luOxodotreotide_Sood2026_netter_p_estimate/Lutetium177luOxodotreotide_Sood2026_netter_p_estimate.svg" alt="Lutetium177luOxodotreotide_Sood2026_netter_p_estimate diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_lutetium_177lu_oxodotreotide/Lutetium177luOxodotreotide_Sood2026_netter_p_estimate/Lutetium177luOxodotreotide_Sood2026_netter_p_estimate.svg" alt="Lutetium177luOxodotreotide_Sood2026_netter_p_estimate diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -157,4 +156,4 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 17:09 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 19:52 UTC</sub>

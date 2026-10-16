@@ -5,7 +5,7 @@
 
 # flecainide — `Flecainide_Sllstrm2014_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓ 2/2</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0), gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓ 2/2</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -19,13 +19,13 @@
 
 ### Reviewer guidance
 
-**Flecainide bioavailability and lag time were left at library defaults rather than using values from the Sällström review.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The record lacks explicit estimates for bioavailability (F) and lag time (Tlag), forcing the use of placeholder values. These defaults affect the simulated concentration profile but are not supported by the cited review. Consequently, the model was held back because these parameters were not extracted or justified as specific conventions. Extracted — flecainide: CL 1.72 L/h, V 6.34 L/kg, kabs 1.03 /h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — flecainide: CL 1.72 L/h, V 6.34 L/kg, kabs 1.03 /h.
 
-Independently confirmed by `gpt-oss-120b`, `gpt-oss:120b`.
+Independently confirmed by `gpt-oss:120b`, `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Sällström J et al., Pharmacokinetic-pharmacodynamic modelin…, Journal of pharmacological… (2014)
@@ -68,8 +68,8 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | confirmed | 1.0 (7/7 fields) | none |
 | `gpt-oss:120b` | confirmed | 1.0 (7/7 fields) | none |
+| `gpt-oss-120b` | confirmed | 1.0 (7/7 fields) | none |
 
 _All readers agree on the compared fields of this record._
 
@@ -112,10 +112,10 @@ _All readers agree on the compared fields of this record._
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_flecainide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Sällström_2014` / `Sällström_2014::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_flecainide/models/modelica/Flecainide_Sllstrm2014_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_flecainide/models/modelica/Flecainide_Sllstrm2014_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_flecainide/models/modelica/Flecainide_Sllstrm2014_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_flecainide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Sällström_2014` / `Sällström_2014::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_flecainide/models/modelica/Flecainide_Sllstrm2014_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_flecainide/models/modelica/Flecainide_Sllstrm2014_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_flecainide/models/modelica/Flecainide_Sllstrm2014_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -133,7 +133,7 @@ _All readers agree on the compared fields of this record._
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_flecainide/Flecainide_Sllstrm2014_reference/Flecainide_Sllstrm2014_reference.svg" alt="Flecainide_Sllstrm2014_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_flecainide/Flecainide_Sllstrm2014_reference/Flecainide_Sllstrm2014_reference.svg" alt="Flecainide_Sllstrm2014_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -146,4 +146,4 @@ _All readers agree on the compared fields of this record._
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-08 17:59 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 23:04 UTC</sub>

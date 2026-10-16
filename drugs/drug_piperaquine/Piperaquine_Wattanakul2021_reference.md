@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;Piperaquine&quot;,&quot;href&quot;:&quot;drugs/drug_piperaquine/&quot;},{&quot;label&quot;:&quot;Wattanakul_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Piperaquine_Chairat2018_reference&quot;,&quot;label&quot;:&quot;Chairat_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_piperaquine/Piperaquine_Chairat2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Piperaquine_Chotsiri2021_population_estimatec&quot;,&quot;label&quot;:&quot;Chotsiri_2021_population_estimatec&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_piperaquine/Piperaquine_Chotsiri2021_population_estimatec.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Piperaquine_Chotsiri2021_prior_estimateb&quot;,&quot;label&quot;:&quot;Chotsiri_2021_prior_estimateb&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_piperaquine/Piperaquine_Chotsiri2021_prior_estimateb.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Piperaquine_Zaloumis2012_reference&quot;,&quot;label&quot;:&quot;Zaloumis_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_piperaquine/Piperaquine_Zaloumis2012_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Piperaquine_Ding2024_nonmem_population_estimates_rse_a&quot;,&quot;label&quot;:&quot;Ding_2024_nonmem_population_estimates_rse_a&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_piperaquine/Piperaquine_Ding2024_nonmem_population_estimates_rse_a.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Piperaquine_Zaloumis2012_ars_dha&quot;,&quot;label&quot;:&quot;Zaloumis_2012_ars_dha&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_piperaquine/Piperaquine_Zaloumis2012_ars_dha.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Piperaquine_Zaloumis2012_art&quot;,&quot;label&quot;:&quot;Zaloumis_2012_art&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_piperaquine/Piperaquine_Zaloumis2012_art.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Piperaquine_Chairat2018_reference&quot;,&quot;label&quot;:&quot;Chairat_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_piperaquine/Piperaquine_Chairat2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Piperaquine_Chotsiri2021_reference&quot;,&quot;label&quot;:&quot;Chotsiri_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_piperaquine/Piperaquine_Chotsiri2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Piperaquine_Ding2024_reference&quot;,&quot;label&quot;:&quot;Ding_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_piperaquine/Piperaquine_Ding2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Piperaquine_Zaloumis2012_po&quot;,&quot;label&quot;:&quot;Zaloumis_2012_po&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_piperaquine/Piperaquine_Zaloumis2012_po.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Felices_2025_QTcF&quot;,&quot;label&quot;:&quot;Felices_2025 \u00b7 \u0394QTcF&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_piperaquine/pd_Felices_2025_QTcF.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wattanakul_2021_PCIR&quot;,&quot;label&quot;:&quot;Wattanakul_2021 \u00b7 PCIR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_piperaquine/pd_Wattanakul_2021_PCIR.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -25,11 +25,13 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> **Dose compound ≠ measured compound:** dosed `dihydroartemisinin-piperaquine`, measured `piperaquine`.
+
 ## Citation
 Wattanakul T et al., Semimechanistic Pharmacokinetic and Pha…, Antimicrobial agents and ch… (2021)
   ·  DOI: [10.1128/AAC.01583-20](https://doi.org/10.1128/AAC.01583-20)
 
-<div class="pk-model-meta" hidden drug="Piperaquine" model-id="Piperaquine_Wattanakul2021_reference" status="needs_review" stale="false" population="healthy adults with induced P. falciparum malaria" measured-compound="piperaquine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Piperaquine" model-id="Piperaquine_Wattanakul2021_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="piperaquine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.
@@ -41,42 +43,24 @@ Wattanakul T et al., Semimechanistic Pharmacokinetic and Pha…, Antimicrobial a
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| parasite clearance half-life for sensitive | `Q22` · CL | 2.5 | h | not captured | h | not captured | boundary (0.8) | Wattanakul_2021:other_prose | — | not captured |
+| The reported mean parasite clearance half-life for sensitive (2.5 h) and resistant (6.2 h) infections from the TRAC study | `Q22` · CL | 2.5 | h | not captured | h | not captured | boundary (0.8) | Wattanakul_2021:other_prose | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
-### Unresolved rows _(no Q-code or no value — not parameters)_
-| label (paper) | Q-code | value | link |
-|---|---|---|---|
-| F | Q40 | not captured | exact |
-
 ## Departures & gaps
 
 **Interpretation flags:**
 - table section iiv: 'CL/F (liter/h)' routed out of structural estimates ('IIV b or IOVb (% RSE)c')
-- table section iiv: 'CL/F (liter/h)' routed out of structural estimates ('IIV b or IOVb 95% CIc')
 - table section iiv: 'Q1/F (liter/h)' routed out of structural estimates ('IIV b or IOVb (% RSE)c')
-- table section iiv: 'Q1/F (liter/h)' routed out of structural estimates ('IIV b or IOVb 95% CIc')
 - table section iiv: 'VP1/F (liter)' routed out of structural estimates ('IIV b or IOVb (% RSE)c')
-- table section iiv: 'VP1/F (liter)' routed out of structural estimates ('IIV b or IOVb 95% CIc')
 - table section iiv: 'Q2/F (liter/h)' routed out of structural estimates ('IIV b or IOVb (% RSE)c')
-- table section iiv: 'Q2/F (liter/h)' routed out of structural estimates ('IIV b or IOVb 95% CIc')
 - table section iiv: 'VP2/F (liter)' routed out of structural estimates ('IIV b or IOVb (% RSE)c')
-- table section iiv: 'VP2/F (liter)' routed out of structural estimates ('IIV b or IOVb 95% CIc')
-- dropped value-less row: 'MTT (h)' (captured trailing unit 'h' for child rows)
-- dropped value-less row: 'CL/F (liter/h)' (captured trailing unit 'liter/h' for child rows)
-- dropped value-less row: 'VC/F (liter)' (captured trailing unit 'liter' for child rows)
-- dropped value-less row: 'Q1/F (liter/h)' (captured trailing unit 'liter/h' for child rows)
-- dropped value-less row: 'VP1/F (liter)' (captured trailing unit 'liter' for child rows)
-- dropped value-less row: 'Q2/F (liter/h)' (captured trailing unit 'liter/h' for child rows)
-- dropped value-less row: 'VP2/F (liter)' (captured trailing unit 'liter' for child rows)
 - NIL: refused to back-fill base 'NIL' from footnote/prose loose number 69.3 (source ['T2:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'NIL' from footnote/prose loose number None (source ['T2:footnote']); the table cell was unparseable — needs review
 - NIL: refused to back-fill base 'NIL' from footnote/prose loose number 1000 (source ['T2:footnote']); the table cell was unparseable — needs review
-- salvaged Q22 ('parasite clearance half-life for sensitive'=2.5) from results prose — parameter table was unreadable
+- salvaged Q22 ('The reported mean parasite clearance half-life for sensitive (2.5 h) and resistant (6.2 h) infections from the TRAC study'=2.5) from results prose — parameter table was unreadable
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=piperaquine
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
@@ -85,12 +69,9 @@ Wattanakul T et al., Semimechanistic Pharmacokinetic and Pha…, Antimicrobial a
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- unparsed cell T2:row1:col3 = '43.7 (14.4), 19.0 (28.8)d'
-- unparsed cell T2:row1:col4 = '28.1–56.0, 5.98–29.1d'
-- unparsed cell T2:row1:col5 = '6.22, 64.2d'
-- unparsed cell T2:row2:col3 = '39.4 (29.7)d'
-- unparsed cell T2:row2:col4 = '12.3–64.5d'
-- unparsed cell T2:row2:col5 = '45.0d'
+- table T2: unbound_uncertainty
+- table T2: ambiguous_numeric_format
+- table T2: unparsed_numeric_cell
 - LLM selected parameter table(s) 2
 
 ## Validation
@@ -136,7 +117,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_piperaquine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Wattanakul_2021` / `Wattanakul_2021::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_piperaquine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Wattanakul_2021` / `Wattanakul_2021::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -162,4 +143,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 07:37 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 01:03 UTC</sub>

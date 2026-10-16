@@ -18,7 +18,7 @@
 
 **C5 dimension mismatch on a structural parameter.**
 
-A reported unit could not be converted (Vmax, Km, Vmax and Css), so that value has no SI equivalent. None of the extracted parameters is polatuzumab vedotin's own; they describe acMMAE and unconjugated MMAE. Extracted — acMMAE: kel 0.0046 1/h, CL 0.00623 L/hour, V1 3.15 L, V2 3.98 L, Q 0.0145 L/hour, Vmax 0.0203 ng/mL/hour, Km 0.604 ng/mL; unconjugated MMAE: V1 82.2 L, CL 1.89 L/hour, Q 36.3 L/hour, V2 200 L, Vmax 0.0307 ng/mL/hour, Css 0.581 ng/mL, CLfm 3.7.
+A reported unit could not be converted (Vmax, Km, equation variable and Vmax), so that value has no SI equivalent. None of the extracted parameters is polatuzumab vedotin's own; they describe acMMAE and unconjugated MMAE. Extracted — acMMAE: kel 0.0046 1/hour, CL 0.00623 L/hour, V1 3.15 L, V2 3.98 L, Q 0.0145 L/hour, Vmax 0.0203 ng/mL/hour, Km 0.604 ng/mL, CLint 0.223; unconjugated MMAE: V1 82.2 L, CL 1.89 L/hour, Q 36.3 L/hour, V2 200 L, Vmax 0.0307 ng/mL/hour, Css 0.581 ng/mL, kfm 3.7.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has polatuzumab_vedotin, the second reading unknown; it also differs on 19 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -33,7 +33,7 @@ Lu D et al., Integrated Two-Analyte Population Pharm…, CPT: pharmacometrics & 
 <div class="pk-model-meta" hidden drug="polatuzumab vedotin" model-id="PolatuzumabVedotin_Lu2020_reference" status="rejected" stale="false" population="patients with non-Hodgkin lymphoma" measured-compound="acMMAE" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
-**Parameters:** 14 extracted.
+**Parameters:** 15 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -42,20 +42,22 @@ Lu D et al., Integrated Two-Analyte Population Pharm…, CPT: pharmacometrics & 
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| k des (1/hour) | `Q47` · kel | 0.0046 | 1/h | 1.2777777777777777e-06 | 1/h | 7.95 | llm (0.6) | psp412482-tbl-0001:row2:col3, psp412482-tbl-0001:row2:col4, psp412482-tbl-0001:row2:col5 | — | not captured |
-| CLT (L/hour) | `Q22` · CL | 0.00623 | L/hour | 1.7305555555555556e-09 | [l] / [h] | 19.6 | exact (1.0) | psp412482-tbl-0001:row3:col3, psp412482-tbl-0001:row3:col4, psp412482-tbl-0001:row3:col5 | — | not captured |
-| V 1 (L) | `Q63` · V1 | 3.15 | L | 0.00315 | [l] | 1.58 | exact (1.0) | psp412482-tbl-0001:row5:col3, psp412482-tbl-0001:row5:col4, psp412482-tbl-0001:row5:col5 | — | not captured |
-| V 2 (L) | `Q64` · V2 | 3.98 | L | 0.00398 | [l] | 2.92 | exact (1.0) | psp412482-tbl-0001:row6:col3, psp412482-tbl-0001:row6:col4, psp412482-tbl-0001:row6:col5 | — | not captured |
-| Q (L/hour) | `Q30` · Q | 0.0145 | L/hour | 4.027777777777778e-09 | [l] / [h] | 2.53 | exact (1.0) | psp412482-tbl-0001:row7:col3, psp412482-tbl-0001:row7:col4, psp412482-tbl-0001:row7:col5 | — | not captured |
-| V max (ng/mL/hour) | `Q66` · Vmax | 0.0203 | ng/mL/hour | not captured | [ng] / [[h] · [ml]] | 14.3 | special_case (0.95) | psp412482-tbl-0001:row8:col3, psp412482-tbl-0001:row8:col4, psp412482-tbl-0001:row8:col5 | — | not captured |
-| K M (ng/mL) | `Q1` · Km | 0.604 | ng/mL | not captured | [ng] / [ml] | 36.2 | space_fold (0.95) | psp412482-tbl-0001:row9:col3, psp412482-tbl-0001:row9:col4, psp412482-tbl-0001:row9:col5 | — | not captured |
-| V MMAE (L) | `Q63` · V1 | 82.2 | L | 0.08220000000000001 | [l] | 8.15 | exact (1.0) | psp412482-tbl-0001:row14:col3, psp412482-tbl-0001:row14:col4, psp412482-tbl-0001:row14:col5 | — | not captured |
-| CLMMAE (L/hour) | `Q22` · CL | 1.89 | L/hour | 5.25e-07 | [l] / [h] | 8.14 | exact (1.0) | psp412482-tbl-0001:row15:col3, psp412482-tbl-0001:row15:col4, psp412482-tbl-0001:row15:col5 | — | not captured |
-| Q MMAE (L/hour) | `Q30` · Q | 36.3 | L/hour | 1.0083333333333332e-05 | [l] / [h] | 12.3 | exact (1.0) | psp412482-tbl-0001:row16:col3, psp412482-tbl-0001:row16:col4, psp412482-tbl-0001:row16:col5 | — | not captured |
-| V 2,MMAE (L) | `Q64` · V2 | 200 | L | 0.2 | [l] | 6.13 | exact (1.0) | psp412482-tbl-0001:row17:col3, psp412482-tbl-0001:row17:col4, psp412482-tbl-0001:row17:col5 | — | not captured |
-| V MAX,MMAE (ng/mL/hour) | `Q66` · Vmax | 0.0307 | ng/mL/hour | not captured | [ng] / [[h] · [ml]] | 9.17 | llm (0.6) | psp412482-tbl-0001:row18:col3, psp412482-tbl-0001:row18:col4, psp412482-tbl-0001:row18:col5 | — | not captured |
-| K SS (ng/mL) | `Q34` · Css | 0.581 | ng/mL | not captured | [ng] / [ml] | 10.5 | llm (0.6) | psp412482-tbl-0001:row19:col3, psp412482-tbl-0001:row19:col4, psp412482-tbl-0001:row19:col5 | — | not captured |
-| FRACCLT | `Q370` · CLfm | 3.70 | not captured | not captured | not captured | 3.11 | exact (1.0) | psp412482-tbl-0001:row20:col3, psp412482-tbl-0001:row20:col4, psp412482-tbl-0001:row20:col5 | — | not captured |
+| k des (1/hour) | `Q47` · kel | 0.0046 | 1/hour | 1.2777777777777777e-06 | [1] / [h] | 7.95 | llm (0.6) | psp412482-tbl-0001:row2:col3 | — | not captured |
+| CLT (L/hour) | `Q22` · CL | 0.00623 | L/hour | 1.7305555555555556e-09 | [l] / [h] | 19.6 | exact (1.0) | psp412482-tbl-0001:row3:col3 | — | not captured |
+| V 1 (L) | `Q63` · V1 | 3.15 | L | 0.00315 | [l] | 1.58 | exact (1.0) | psp412482-tbl-0001:row5:col3 | — | not captured |
+| V 2 (L) | `Q64` · V2 | 3.98 | L | 0.00398 | [l] | 2.92 | exact (1.0) | psp412482-tbl-0001:row6:col3 | — | not captured |
+| Q (L/hour) | `Q30` · Q | 0.0145 | L/hour | 4.027777777777778e-09 | [l] / [h] | 2.53 | exact (1.0) | psp412482-tbl-0001:row7:col3 | — | not captured |
+| V max (ng/mL/hour) | `Q66` · Vmax | 0.0203 | ng/mL/hour | not captured | [ng] / [[h] · [ml]] | 14.3 | special_case (0.95) | psp412482-tbl-0001:row8:col3 | — | not captured |
+| K M (ng/mL) | `Q1` · Km | 0.604 | ng/mL | not captured | [ng] / [ml] | 36.2 | space_fold (0.95) | psp412482-tbl-0001:row9:col3 | — | not captured |
+| CLINF,MAX | `Q3` · CLint | 0.223 | not captured | not captured | not captured | 8.6 | llm (0.6) | psp412482-tbl-0001:row10:col3 | — | not captured |
+| γ | `Q900` · equation variable | 2.27 | t | not captured | [t] | 12.5 | llm (0.6) | psp412482-tbl-0001:row12:col3 | — | not captured |
+| V MMAE (L) | `Q63` · V1 | 82.2 | L | 0.08220000000000001 | [l] | 8.15 | exact (1.0) | psp412482-tbl-0001:row14:col3 | — | not captured |
+| CLMMAE (L/hour) | `Q22` · CL | 1.89 | L/hour | 5.25e-07 | [l] / [h] | 8.14 | exact (1.0) | psp412482-tbl-0001:row15:col3 | — | not captured |
+| Q MMAE (L/hour) | `Q30` · Q | 36.3 | L/hour | 1.0083333333333332e-05 | [l] / [h] | 12.3 | exact (1.0) | psp412482-tbl-0001:row16:col3 | — | not captured |
+| V 2,MMAE (L) | `Q64` · V2 | 200 | L | 0.2 | [l] | 6.13 | exact (1.0) | psp412482-tbl-0001:row17:col3 | — | not captured |
+| V MAX,MMAE (ng/mL/hour) | `Q66` · Vmax | 0.0307 | ng/mL/hour | not captured | [ng] / [[h] · [ml]] | 9.17 | llm (0.6) | psp412482-tbl-0001:row18:col3 | — | not captured |
+| K SS (ng/mL) | `Q34` · Css | 0.581 | ng/mL | not captured | [ng] / [ml] | 10.5 | llm (0.6) | psp412482-tbl-0001:row19:col3 | — | not captured |
+| FRACCLT | `Q305` · kfm | 3.70 | not captured | not captured | not captured | 3.11 | exact (1.0) | psp412482-tbl-0001:row20:col3 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -67,43 +69,23 @@ Lu D et al., Integrated Two-Analyte Population Pharm…, CPT: pharmacometrics & 
 **Interpretation flags:**
 - dropped duplicate Q22 ('CLINF (L/hour)', value '0.0344') — already have one for this compound
 - unit_dimension_mismatch: 'V max (ng/mL/hour)' → Q66 (unit '[mass] / [length] ** 3 / [time]' vs ontology '[length] ** 3') — route to review
-- dropped duplicate Q22 ('CLINF,MAX', value '0.223') — already have one for this compound
-- dropped unlinked row (NIL): 'T 50 (month)' — extend the ontology if this is a real PK parameter (source ['psp412482-tbl-0001:row11:col3', 'psp412482-tbl-0001:row11:col4', 'psp412482-tbl-0001:row11:col5'])
-- dropped unlinked row (NIL): 'γ' — extend the ontology if this is a real PK parameter (source ['psp412482-tbl-0001:row12:col3', 'psp412482-tbl-0001:row12:col4', 'psp412482-tbl-0001:row12:col5'])
+- dropped unlinked row (NIL): 'T 50 (month)' — extend the ontology if this is a real PK parameter (source ['psp412482-tbl-0001:row11:col3'])
 - unit_dimension_mismatch: 'V MAX,MMAE (ng/mL/hour)' → Q66 (unit '[mass] / [length] ** 3 / [time]' vs ontology '[length] ** 3') — route to review
-- dropped duplicate Q370 ('FRACMM', value '2.72') — already have one for this compound
-- dropped unlinked row (NIL): 'ALPH (1/month)' — extend the ontology if this is a real PK parameter (source ['psp412482-tbl-0001:row22:col3', 'psp412482-tbl-0001:row22:col4', 'psp412482-tbl-0001:row22:col5'])
-- dropped duplicate Q370 ('FRACT', value '0.139') — already have one for this compound
-- implicit units: 'k des (1/hour)' → 1/h (from the paper text: 'The text states: "...k des is the rate constant of exponential decline, with an estimated half‐life of 6.28 days based o')
+- dropped duplicate Q305 ('FRACMM', value '2.72') — already have one for this compound
+- dropped unlinked row (NIL): 'ALPH (1/month)' — extend the ontology if this is a real PK parameter (source ['psp412482-tbl-0001:row22:col3'])
+- dropped unlinked row (NIL): 'FRACT' — extend the ontology if this is a real PK parameter (source ['psp412482-tbl-0001:row23:col3'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=acMMAE
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - template fit: PK_3M_9C — formed from central; parent 2, metabolites [2]
 - status held at route_to_review — not promoted
-- row roles (LLM): model_class=compartmental; 21/21 row label(s) assigned, 36 linked by role; re-tagged acMMAE→unconjugated MMAE ×30
+- row roles: 36 row(s) kept on the molecule their table section names, against the LLM's assignment
+- row roles (LLM): model_class=compartmental; 21/21 row label(s) assigned, 11 linked by role; re-tagged acMMAE→unconjugated MMAE ×10
+- molar mass: LLM call failed (APIConnectionError) — metabolites left in mass units
+- molar mass: none found for 'acMMAE' — its concentrations stay mass-only
+- molar mass: none found for 'unconjugated MMAE' — its concentrations stay mass-only
 - review gap-fill skipped: this record measures 'acMMAE', not polatuzumab_vedotin — the review values are the parent's
 
 **Extraction notes:**
-- unparsed cell psp412482-tbl-0001:row2:col1 = 'θ1'
-- unparsed cell psp412482-tbl-0001:row3:col1 = 'θ2'
-- unparsed cell psp412482-tbl-0001:row4:col1 = 'θ3'
-- unparsed cell psp412482-tbl-0001:row5:col1 = 'θ4'
-- unparsed cell psp412482-tbl-0001:row6:col1 = 'θ5'
-- unparsed cell psp412482-tbl-0001:row7:col1 = 'θ6'
-- unparsed cell psp412482-tbl-0001:row8:col1 = 'θ7'
-- unparsed cell psp412482-tbl-0001:row9:col1 = 'θ8'
-- unparsed cell psp412482-tbl-0001:row10:col1 = 'θ9'
-- unparsed cell psp412482-tbl-0001:row11:col1 = 'θ10'
-- unparsed cell psp412482-tbl-0001:row12:col1 = 'θ11'
-- unparsed cell psp412482-tbl-0001:row14:col1 = 'θ12'
-- unparsed cell psp412482-tbl-0001:row15:col1 = 'θ13'
-- unparsed cell psp412482-tbl-0001:row16:col1 = 'θ14'
-- unparsed cell psp412482-tbl-0001:row17:col1 = 'θ15'
-- unparsed cell psp412482-tbl-0001:row18:col1 = 'θ16'
-- unparsed cell psp412482-tbl-0001:row19:col1 = 'θ17'
-- unparsed cell psp412482-tbl-0001:row20:col1 = 'θ18'
-- unparsed cell psp412482-tbl-0001:row21:col1 = 'θ19'
-- unparsed cell psp412482-tbl-0001:row22:col1 = 'θ20'
-- unparsed cell psp412482-tbl-0001:row23:col1 = 'θ21'
 - LLM selected parameter table(s) 1
 
 ## Validation
@@ -152,31 +134,32 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 14 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 15 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q1 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['psp412482-tbl-0001:row9:col3', 'psp412482-tbl-0001:row9:col4', 'psp412482-tbl-0001:row9:col5'] |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp412482-tbl-0001:row3:col3', 'psp412482-tbl-0001:row3:col4', 'psp412482-tbl-0001:row3:col5'] |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp412482-tbl-0001:row15:col3', 'psp412482-tbl-0001:row15:col4', 'psp412482-tbl-0001:row15:col5'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp412482-tbl-0001:row7:col3', 'psp412482-tbl-0001:row7:col4', 'psp412482-tbl-0001:row7:col5'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp412482-tbl-0001:row16:col3', 'psp412482-tbl-0001:row16:col4', 'psp412482-tbl-0001:row16:col5'] |
-| C5_dimension_Q34 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['psp412482-tbl-0001:row19:col3', 'psp412482-tbl-0001:row19:col4', 'psp412482-tbl-0001:row19:col5'] |
-| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['psp412482-tbl-0001:row2:col3', 'psp412482-tbl-0001:row2:col4', 'psp412482-tbl-0001:row2:col5'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp412482-tbl-0001:row5:col3', 'psp412482-tbl-0001:row5:col4', 'psp412482-tbl-0001:row5:col5'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp412482-tbl-0001:row14:col3', 'psp412482-tbl-0001:row14:col4', 'psp412482-tbl-0001:row14:col5'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp412482-tbl-0001:row6:col3', 'psp412482-tbl-0001:row6:col4', 'psp412482-tbl-0001:row6:col5'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp412482-tbl-0001:row17:col3', 'psp412482-tbl-0001:row17:col4', 'psp412482-tbl-0001:row17:col5'] |
-| C5_dimension_Q66 | fail | [mass] / [length] ** 3 / [time] | ng/mL/hour | not captured | not captured | ['psp412482-tbl-0001:row8:col3', 'psp412482-tbl-0001:row8:col4', 'psp412482-tbl-0001:row8:col5'] |
-| C5_dimension_Q66 | fail | [mass] / [length] ** 3 / [time] | ng/mL/hour | not captured | not captured | ['psp412482-tbl-0001:row18:col3', 'psp412482-tbl-0001:row18:col4', 'psp412482-tbl-0001:row18:col5'] |
-| C5_unit_missing_Q370 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp412482-tbl-0001:row20:col3', 'psp412482-tbl-0001:row20:col4', 'psp412482-tbl-0001:row20:col5'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.00623 | not captured | not captured | ['psp412482-tbl-0001:row3:col3', 'psp412482-tbl-0001:row3:col4', 'psp412482-tbl-0001:row3:col5'] |
+| C5_dimension_Q1 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['psp412482-tbl-0001:row9:col3'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp412482-tbl-0001:row3:col3'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp412482-tbl-0001:row15:col3'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp412482-tbl-0001:row7:col3'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp412482-tbl-0001:row16:col3'] |
+| C5_dimension_Q34 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['psp412482-tbl-0001:row19:col3'] |
+| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['psp412482-tbl-0001:row2:col3'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp412482-tbl-0001:row5:col3'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp412482-tbl-0001:row14:col3'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp412482-tbl-0001:row6:col3'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp412482-tbl-0001:row17:col3'] |
+| C5_dimension_Q66 | fail | [mass] / [length] ** 3 / [time] | ng/mL/hour | not captured | not captured | ['psp412482-tbl-0001:row8:col3'] |
+| C5_dimension_Q66 | fail | [mass] / [length] ** 3 / [time] | ng/mL/hour | not captured | not captured | ['psp412482-tbl-0001:row18:col3'] |
+| C5_unit_missing_Q3 | fail | [length] ** 3 / [time] / [mass] | not captured | not captured | not captured | ['psp412482-tbl-0001:row10:col3'] |
+| C5_unit_missing_Q305 | fail | 1 / [time] | not captured | not captured | not captured | ['psp412482-tbl-0001:row20:col3'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.00623 | not captured | not captured | ['psp412482-tbl-0001:row3:col3'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.00623 L/h | not captured | not captured | ['psp412482-tbl-0001:row3:col3', 'psp412482-tbl-0001:row3:col4', 'psp412482-tbl-0001:row3:col5'] |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 1.89 L/h | not captured | not captured | ['psp412482-tbl-0001:row15:col3', 'psp412482-tbl-0001:row15:col4', 'psp412482-tbl-0001:row15:col5'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 3.15 L | not captured | not captured | ['psp412482-tbl-0001:row5:col3', 'psp412482-tbl-0001:row5:col4', 'psp412482-tbl-0001:row5:col5'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 82.2 L | not captured | not captured | ['psp412482-tbl-0001:row14:col3', 'psp412482-tbl-0001:row14:col4', 'psp412482-tbl-0001:row14:col5'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 3.98 L | not captured | not captured | ['psp412482-tbl-0001:row6:col3', 'psp412482-tbl-0001:row6:col4', 'psp412482-tbl-0001:row6:col5'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 200 L | not captured | not captured | ['psp412482-tbl-0001:row17:col3', 'psp412482-tbl-0001:row17:col4', 'psp412482-tbl-0001:row17:col5'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.00623 L/h | not captured | not captured | ['psp412482-tbl-0001:row3:col3'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 1.89 L/h | not captured | not captured | ['psp412482-tbl-0001:row15:col3'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 3.15 L | not captured | not captured | ['psp412482-tbl-0001:row5:col3'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 82.2 L | not captured | not captured | ['psp412482-tbl-0001:row14:col3'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 3.98 L | not captured | not captured | ['psp412482-tbl-0001:row6:col3'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 200 L | not captured | not captured | ['psp412482-tbl-0001:row17:col3'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -185,7 +168,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_polatuzumab_vedotin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Lu_2020` / `Lu_2020::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_polatuzumab_vedotin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Lu_2020` / `Lu_2020::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -201,4 +184,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 19:11 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 01:13 UTC</sub>

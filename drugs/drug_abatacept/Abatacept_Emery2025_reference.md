@@ -4,7 +4,7 @@
 
 # abatacept — `Abatacept_Emery2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -16,9 +16,9 @@
 
 ### Reviewer guidance
 
-**The paper reports none of the model's key parameters.**
+**Only clearance was extracted — no volume; aUC has no unit.**
 
-No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (Fab, Cmin, Cmax and Cavg), so that value has no SI equivalent. Extracted — abatacept: CL 0.018 L/h, Q 0.034 L/h, kabs 0.008 1/h, Fab 0.838 %, Cmin 30.4 μg/mL, Cmax 34.8 μg/mL, Cavg 34.2 μg/mL, AUC 5.57e+03.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has abatacept, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
@@ -28,46 +28,53 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Emery P et al., Association Between Abatacept Exposure…, The Journal of rheumatology (2025)
   ·  DOI: [10.3899/jrheum.2024-0498](https://doi.org/10.3899/jrheum.2024-0498)
 
-<div class="pk-model-meta" hidden drug="abatacept" model-id="Abatacept_Emery2025_reference" status="rejected" stale="false" population="adults with early rheumatoid arthritis" measured-compound="abatacept" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="abatacept" model-id="Abatacept_Emery2025_reference" status="needs_review" stale="false" population="adults with early rheumatoid arthritis" measured-compound="abatacept" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 0 extracted.
+**Parameters:** 8 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
-_No resolved parameters._
+| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Clearance [L/h] | `Q22` · CL | 0.018 | L/h | 5e-09 | [l] / [h] | not captured | llm_confirmed (0.6) | tab_1:row1:col1, tab_1:row1:col2 | — | not captured |
+| Distribution clearance [L/h] | `Q30` · Q | 0.034 | L/h | 9.444444444444447e-09 | [l] / [h] | not captured | llm_confirmed (0.6) | tab_1:row2:col1, tab_1:row2:col2 | — | not captured |
+| First-order absorption rate [1/h] | `Q49` · kabs | 0.008 | 1/h | 2.222222222222222e-06 | [1] / [h] | not captured | llm_confirmed (0.6) | tab_1:row3:col1, tab_1:row3:col2 | — | not captured |
+| Bioavailability (%) | `Q40` · Fab | 0.838 | % | not captured | not captured | not captured | exact (1.0) | tab_1:row4:col1, tab_1:row4:col2 | — | not captured |
+| C min [μg/mL] | `Q36` · Cmin | 30.4 | μg/mL | not captured | [µg] / [ml] | not captured | llm (0.6) | tab_1:row5:col1, tab_1:row5:col2 | — | not captured |
+| C max [μg/mL] | `Q32` · Cmax | 34.8 | μg/mL | not captured | [µg] / [ml] | not captured | llm (0.6) | tab_1:row6:col1, tab_1:row6:col2 | — | not captured |
+| C avg [μg/mL] | `Q71` · Cavg | 34.2 | μg/mL | not captured | [µg] / [ml] | not captured | llm (0.6) | tab_1:row7:col1, tab_1:row7:col2 | — | not captured |
+| AUC 0-168 [μg•h/mL] | `Q88` · AUC | 5565.5 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | tab_1:row8:col1, tab_1:row8:col2 | — | not captured |
 
-### Unresolved rows _(no Q-code or no value — not parameters)_
-| label (paper) | Q-code | value | link |
-|---|---|---|---|
-| Bioavailability (%) | Q40 | not captured | exact |
+<details class="legend">
+<summary>Parameter definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped value-less row: 'Clearance [L/h]' (captured trailing unit 'L/h' for child rows)
-- dropped value-less row: 'Distribution clearance [L/h]' (captured trailing unit 'L/h' for child rows)
-- dropped value-less row: 'First-order absorption rate [1/h]' (captured trailing unit '1/h' for child rows)
-- dropped value-less row: 'C min [μg/mL]' (captured trailing unit 'μg/mL' for child rows)
-- dropped value-less row: 'C max [μg/mL]' (captured trailing unit 'μg/mL' for child rows)
-- dropped value-less row: 'C avg [μg/mL]' (captured trailing unit 'μg/mL' for child rows)
-- dropped value-less row: 'AUC 0-168 [μg•h/mL]' (captured trailing unit 'μg•h/mL' for child rows)
+- competing summary columns for 'Clearance [L/h]'; not population strata
+- competing summary columns for 'Distribution clearance [L/h]'; not population strata
+- competing summary columns for 'First-order absorption rate [1/h]'; not population strata
+- competing summary columns for 'Bioavailability (%)'; not population strata
+- competing summary columns for 'C min [μg/mL]'; not population strata
+- competing summary columns for 'C max [μg/mL]'; not population strata
+- competing summary columns for 'C avg [μg/mL]'; not population strata
+- competing summary columns for 'AUC 0-168 [μg•h/mL]'; not population strata
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=abatacept
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- status held at route_to_review — not promoted
 - molar mass: none found for 'abatacept' — its concentrations stay mass-only
-- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- unparsed cell tab_1:row1:col2 = '0.018 (0.01, 0.04)'
-- unparsed cell tab_1:row2:col2 = '0.034 (0.02, 0.07)'
-- unparsed cell tab_1:row3:col2 = '0.008 (0.00, 0.03)'
-- unparsed cell tab_1:row4:col2 = '0.838 (0.31, 0.89)'
-- unparsed cell tab_1:row5:col2 = '30.4 (6.06, 67.2)'
-- unparsed cell tab_1:row6:col2 = '34.8 (10.2, 73.1)'
-- unparsed cell tab_1:row7:col2 = '34.2 (9.12, 76.1)'
-- unparsed cell tab_1:row8:col2 = '5565.5 (1532.6, 11924.9)'
+- table tab_1: competing_summary_estimates
 
 ## Validation
 
@@ -97,9 +104,19 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
-| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 8 | not captured | not captured | not captured |
+| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row1:col1', 'tab_1:row1:col2'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row2:col1', 'tab_1:row2:col2'] |
+| C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['tab_1:row6:col1', 'tab_1:row6:col2'] |
+| C5_dimension_Q36 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['tab_1:row5:col1', 'tab_1:row5:col2'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['tab_1:row3:col1', 'tab_1:row3:col2'] |
+| C5_dimension_Q71 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['tab_1:row7:col1', 'tab_1:row7:col2'] |
+| C5_unit_missing_Q88 | fail | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['tab_1:row8:col1', 'tab_1:row8:col2'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.018 | not captured | not captured | ['tab_1:row1:col1', 'tab_1:row1:col2'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.018 L/h | not captured | not captured | ['tab_1:row1:col1', 'tab_1:row1:col2'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -108,14 +125,24 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_abatacept/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Emery_2025` / `Emery_2025::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_abatacept/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Emery_2025` / `Emery_2025::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -124,4 +151,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 23:32 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 00:18 UTC</sub>

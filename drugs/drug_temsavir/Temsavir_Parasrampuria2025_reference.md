@@ -110,7 +110,7 @@ Parasrampuria R et al., Population pharmacokinetics and exposur…, Pharmacology
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs_non_atc/drug_temsavir/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Parasrampuria_2025` / `Parasrampuria_2025::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs_non_atc/drug_temsavir/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Parasrampuria_2025` / `Parasrampuria_2025::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

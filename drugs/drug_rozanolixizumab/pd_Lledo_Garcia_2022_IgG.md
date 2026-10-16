@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;rozanolixizumab&quot;,&quot;href&quot;:&quot;drugs/drug_rozanolixizumab/&quot;},{&quot;label&quot;:&quot;Lledo-Garcia_2022 \u00b7 PD IgG&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;rozanolixizumab&quot;,&quot;href&quot;:&quot;drugs/drug_rozanolixizumab/&quot;},{&quot;label&quot;:&quot;Lledo-Garcia_2022 \u00b7 PD total IgG&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# IgG — PD  <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.30).">human + animal</span>
+# total IgG — PD  <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -11,15 +11,15 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-> **Species: human + animal.** The paper reports both human and animal data; check which group this record describes before reading it as human pharmacology (read from the LLM relevance screen, p(non-human) 0.30).
+> **Species: human + animal.** The paper reports both human and animal data; check which group this record describes before reading it as human pharmacology (read from the LLM relevance screen, p(non-human) 0.50).
 
 ## Record summary
 
-**As extracted:** Rozanolixizumab (concentrations from this paper's PK model) drives IgG (in mg/ml): indirect response — drug stimulates the loss of IgG.
+**As extracted:** Rozanolixizumab (concentrations from this paper's PK model) drives total IgG (in mg/ml): indirect response — drug stimulates the loss of total IgG.
 
 **Model:** No model was generated from this record.
 
-> Rozanolixizumab acts on IgG by inhibiting the elimination (via FcRn-mediated recycling inhibition), as described by the paper despite the record listing an incorrect 'stimulation' direction, using an indirect response model. The key parameters for the effect on IgG elimination are Emax = 4.24 (dimensionless), EC50 = 0.154 mg/L, kout = 0.0364 day−1, and IgG base = 9.88 mg/ml.
+> Rozanolixizumab concentrations (mg/L) reduce total IgG (mg/ml) by inhibiting the elimination of the response via FcRn-mediated recycling, rather than stimulating it. The model parameters include an Emax of 4.24, an EC50 of 0.154 mg/L, and a baseline kout of 0.0364 day−1.
 >
 > <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
@@ -40,7 +40,6 @@ Lledo-Garcia R et al., Pharmacokinetic-pharmacodynamic modelli…, CPT: pharmaco
 | PD (effect) | K out | `Q328` · not captured | 0.0364 | day−1 | not captured | llm (not captured) | Lledo-Garcia_2022:pdv3 |
 | PD (effect) | Emax | `Q320` · not captured | 4.24 | not captured | not captured | llm (not captured) | Lledo-Garcia_2022:pdv3 |
 | PD (effect) | EC50 | `Q321` · not captured | 0.154 | mg/L | not captured | llm (not captured) | Lledo-Garcia_2022:pdv3 |
-| variability | IIV IgG base | `Q312` · not captured | 18.4 | CV % | not captured | llm (not captured) | Lledo-Garcia_2022:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>

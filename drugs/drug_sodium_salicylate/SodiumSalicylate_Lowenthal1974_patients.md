@@ -109,7 +109,7 @@ Lowenthal DT et al., Kinetics of salicylate elimination by a…, The Journal of 
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_sodium_salicylate/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Lowenthal_1974` / `Lowenthal_1974::patients`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_sodium_salicylate/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Lowenthal_1974` / `Lowenthal_1974::patients`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

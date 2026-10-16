@@ -17,7 +17,7 @@ Glofitamab is a monoclonal antibody used to treat diffuse large B-cell lymphoma.
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 12:42 | 0:33 | 0/0/0 | 0/1/0 | 0/0/0 | 9,675/2,290 | openai / gpt-6-luna | 1 | 1/0 | 1/0 | 0 |
+| 2026-10-14 19:30 | 0:07 | 0/0/0 | 0/1/0 | 0/0/0 | 9,898/774 | einfracz / qwen3.8-27b | 1 | 1/0 | 1/0 | 0 |
 
 ## popPK records
 
@@ -27,7 +27,18 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span> | [Frances_2022_CR](drugs/drug_glofitamab/pd_Frances_2022_CR.md) | cytokine release ← glofitamab · stimulation effect | — | Frances N et al., Novel in Vivo and in Vitro Pharmacokine…, Journal of pharmaceutical s… (2022) | [10.1016/j.xphs.2021.12.019](https://doi.org/10.1016/j.xphs.2021.12.019) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 0.90).">monkey</span> | [Frances_2022_IFN](drugs/drug_glofitamab/pd_Frances_2022_IFN.md) | interferon-γ release ← glofitamab · stimulation effect | — | Frances N et al., Novel in Vivo and in Vitro Pharmacokine…, Journal of pharmaceutical s… (2022) | [10.1016/j.xphs.2021.12.019](https://doi.org/10.1016/j.xphs.2021.12.019) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 0.90).">monkey</span> | [Frances_2022_IL_6](drugs/drug_glofitamab/pd_Frances_2022_IL_6.md) | IL-6 release ← glofitamab · stimulation effect | — | Frances N et al., Novel in Vivo and in Vitro Pharmacokine…, Journal of pharmaceutical s… (2022) | [10.1016/j.xphs.2021.12.019](https://doi.org/10.1016/j.xphs.2021.12.019) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 0.90).">monkey</span> | [Frances_2022_TNF](drugs/drug_glofitamab/pd_Frances_2022_TNF.md) | TNF-α release ← glofitamab · stimulation effect | — | Frances N et al., Novel in Vivo and in Vitro Pharmacokine…, Journal of pharmaceutical s… (2022) | [10.1016/j.xphs.2021.12.019](https://doi.org/10.1016/j.xphs.2021.12.019) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=glofitamab).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: CD3D (antibody), CD3D (binder), MS4A1 (antibody), MS4A1 (binder).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,16 +59,16 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Frances_2022.pdf` | Frances N et al., Novel in Vivo and in Vitro Pharmacokine…, Journal of pharmaceutical s… (2022) | popPK | 9 | [10.1016/j.xphs.2021.12.019](https://doi.org/10.1016/j.xphs.2021.12.019) | [34953862](https://pubmed.ncbi.nlm.nih.gov/34953862) | Animal glofitamab PK/PD is studied, but no numeric PK parameter values are provided in the evidence. |
+| `Frances_2022.pdf` | Frances N et al., Novel in Vivo and in Vitro Pharmacokine…, Journal of pharmaceutical s… (2022) | popPK | 8 | [10.1016/j.xphs.2021.12.019](https://doi.org/10.1016/j.xphs.2021.12.019) | [34953862](https://pubmed.ncbi.nlm.nih.gov/34953862) | The paper describes a PK/PD study for glofitamab, but the extracted evidence is an abstract that qualitatively describes high clearance without providing specific numeric parameter values (e.g., CL, V, half-life). |
 
-<sub>queue written 2026-10-07T12:42:39.307995+00:00</sub>
+<sub>queue written 2026-10-14T19:30:40.164250+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Frances_2022 | relevant | 9 | 0 | Animal glofitamab PK/PD is studied, but no numeric PK parameter values are provided in the evidence. |
-| popPK | Jamois_2025 | irrelevant | 0 | 0 | The population-PK model and quantitative parameters are for tocilizumab; glofitamab is only the associated therapy. |
+| popPK | Frances_2022 | relevant | 8 | 2 | The paper describes a PK/PD study for glofitamab, but the extracted evidence is an abstract that qualitatively describes high clearance without providing specific numeric parameter values (e.g., CL, V, half-life). |
+| popPK | Jamois_2025 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of tocilizumab (used for CRS management) in patients treated with glofitamab or mosunetuzumab, not on glofitamab's PK parameters. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;tocilizumab&quot;,&quot;href&quot;:&quot;drugs/drug_tocilizumab/&quot;},{&quot;label&quot;:&quot;Kovalenko_2020 \u00b7 PD Absolute Neutrophil Count&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;tocilizumab&quot;,&quot;href&quot;:&quot;drugs/drug_tocilizumab/&quot;},{&quot;label&quot;:&quot;Kovalenko_2020 \u00b7 PD absolute neutrophil count&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Absolute Neutrophil Count — PD  <span class="pk-badge pk-badge--green">extracted</span>
+# absolute neutrophil count — PD  <span class="pk-badge pk-badge--green">accepted (caveats)</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -13,16 +13,16 @@
 
 ## Record summary
 
-**As extracted:** Tocilizumab (concentrations from the PK model of Bastida_2019) drives Absolute Neutrophil Count (in ×109/L) (inhibition; the model form was not identified).
+**As extracted:** Tocilizumab (concentrations from the PK model of Arrivé_2024) drives absolute neutrophil count (in ×109/L): delayed effect through transit (transduction) compartments.
 
 **Model:** No model was generated from this record.
 
-> Tocilizumab plasma concentrations inhibit Absolute Neutrophil Count (ANC) via a direct proportional mechanism described by the formula ANC0 * (1 - Emax * C^gamma / (EC50^gamma + C^gamma)), incorporating a tolerance compartment with a rate constant of 0.281 1/day. The model parameters include a baseline ANC0 of 4.57 ×109/L, an Emax of 1.75, and an EC50 of 1.78 mg/L, though the specific value for the gamma parameter is not provided in the record or excerpts.
+> The model describes tocilizumab (mg/L) reducing absolute neutrophil count (×10^9/L) via a direct inhibitory effect on neutrophil margination into a non-circulating pool, characterized by an Emax of 1.74, an EC50 of 1.78 mg/L, a baseline ANC0 of 4.56 ×10^9/L, and a tolerance rate constant (k_tol) of 0.277 1/day.
 >
 > <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Kovalenko_2020`
-- **model family:** `tolerance`
+- **model family:** `transduction`
 - **driver:** `cited_pk`
 - **tier:** population
 - **effect:** inhibition/proportional
@@ -34,10 +34,12 @@ Kovalenko P et al., Population Pharmacodynamic Model of Neu…, CPT: pharmacomet
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | ANC0 | `Q324` · not captured | 4.57 | ×109/L | not captured | llm (not captured) | Kovalenko_2020:pdv3 |
-| PD (effect) | Emax | `Q323` · not captured | 1.75 | unitless | not captured | llm (not captured) | Kovalenko_2020:pdv3 |
-| PD (effect) | EC50, mg/L: tocilizumab | `Q321` · not captured | 1.78 | mg/L | not captured | llm (not captured) | Kovalenko_2020:pdv3 |
-| PD (effect) | k tol | `Q337` · not captured | 0.281 | 1/day | not captured | llm (not captured) | Kovalenko_2020:pdv3 |
+| PD (effect) | Emax | `Q323` · not captured | 1.74 | not captured | not captured | direction (not captured) | Kovalenko_2020:pdv3 |
+| PD (effect) | EC50 | `Q321` · not captured | 1.78 | mg/L | not captured | llm (not captured) | Kovalenko_2020:pdv3 |
+| PD (effect) | ANC0 | `Q324` · not captured | 4.56 | ×109/L | not captured | llm (not captured) | Kovalenko_2020:pdv3 |
+| PD (effect) | k tol | `Q337` · not captured | 0.277 | 1/day | not captured | llm (not captured) | Kovalenko_2020:pdv3 |
+| variability | ω, ANC0 | `Q312` · not captured | 0.101 | not captured | not captured | llm (not captured) | Kovalenko_2020:pdv3 |
+| variability | ω, Emax | `Q312` · not captured | 0.800 | not captured | not captured | llm (not captured) | Kovalenko_2020:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>

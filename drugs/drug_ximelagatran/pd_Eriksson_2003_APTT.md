@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;ximelagatran&quot;,&quot;href&quot;:&quot;drugs/drug_ximelagatran/&quot;},{&quot;label&quot;:&quot;Eriksson_2003 \u00b7 PD activated partial thromboplastin time&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ximelagatran_Eriksson2003_reference&quot;,&quot;label&quot;:&quot;Eriksson_2003_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ximelagatran/Ximelagatran_Eriksson2003_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ximelagatran_Eriksson2003_reference&quot;,&quot;label&quot;:&quot;Eriksson_2003_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ximelagatran/Ximelagatran_Eriksson2003_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # activated partial thromboplastin time — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span>
@@ -18,15 +18,15 @@
 
 **Model:** No model was generated from this record.
 
-> The record describes a log-linear model where melagatran concentrations stimulate activated partial thromboplastin time (APTT) via a proportional effect, but the paper does not provide the specific mechanism or key potency and rate values.
+> The record identifies melagatran as the driver for activated partial thromboplastin time (APTT) using a log-linear model, but the paper excerpts are unavailable. Consequently, the specific mechanism of action and any potency or rate parameters (such as Imax, IC50, or ke0) are not provided in the source text.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Eriksson_2003`
 - **model family:** `log_linear`
 - **driver:** `pk_record`
 - **tier:** population
-- **effect:** stimulation/proportional
+- **effect:** stimulation/unknown
 
 ## Citation
 Eriksson UG et al., Pharmacokinetics of melagatran and the…, Clinical pharmacokinetics (2003)

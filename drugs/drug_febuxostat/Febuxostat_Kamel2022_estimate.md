@@ -150,10 +150,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_febuxostat/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kamel_2022` / `Kamel_2022::estimate`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_febuxostat/models/modelica/Febuxostat_Kamel2022_estimate.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_febuxostat/models/modelica/Febuxostat_Kamel2022_estimate.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_febuxostat/models/modelica/Febuxostat_Kamel2022_estimate.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_febuxostat/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kamel_2022` / `Kamel_2022::estimate`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_febuxostat/models/modelica/Febuxostat_Kamel2022_estimate.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_febuxostat/models/modelica/Febuxostat_Kamel2022_estimate.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_febuxostat/models/modelica/Febuxostat_Kamel2022_estimate.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -171,7 +171,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_febuxostat/Febuxostat_Kamel2022_estimate/Febuxostat_Kamel2022_estimate.svg" alt="Febuxostat_Kamel2022_estimate diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_febuxostat/Febuxostat_Kamel2022_estimate/Febuxostat_Kamel2022_estimate.svg" alt="Febuxostat_Kamel2022_estimate diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

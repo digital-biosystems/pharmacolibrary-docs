@@ -13,19 +13,19 @@
 
 ## Record summary
 
-**As extracted:** Briakinumab (the dose) drives proportion of patients achieving ≥90% reduction from baseline Psoriasis Area and Severity Index score: direct sigmoid Emax (Hill) effect.
+**As extracted:** Briakinumab (the dose) drives proportion of patients achieving ≥90% reduction from baseline Psoriasis Area and Severity Index score: direct Emax (saturable) effect.
 
 **Model:** No model was generated from this record.
 
-> Briakinumab dose (in mg) directly drives the binary response of achieving PASI90 via a sigmoidal Emax effect described by the model equation P(response) = g(E0 + Edrug). The estimated parameters are an Emax of 4.9 and an ED50 of 9.47 mg.
+> Briakinumab dose (mg) stimulates the proportion of patients achieving PASI90 via an additive Emax model, with an estimated maximum effect (E_max) of 4.9 and an ED_50 of 9.47 mg. The paper does not explicitly state the mechanistic link between the drug and the response, nor does it provide specific Emax or ED50 values for briakinumab in the provided excerpts.
 >
 > <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `He_2021`
-- **model family:** `sigmoid_emax`
+- **model family:** `emax`
 - **driver:** `dose_only`
 - **tier:** population
-- **effect:** stimulation/unknown
+- **effect:** stimulation/additive
 
 ## Citation
 He H et al., Model-Based Meta-Analysis in Psoriasis:…, Frontiers in pharmacology (2021)

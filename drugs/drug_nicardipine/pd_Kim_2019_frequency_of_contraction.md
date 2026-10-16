@@ -20,9 +20,9 @@
 
 **Model:** No model was generated from this record.
 
-> Nicardipine concentrations (10−12 to 10−8 M) inhibit the frequency of contraction of isolated uterine smooth muscle in a concentration-dependent manner, with an EC50 of 9.04 × 10−11 M and an EC95 of 4.18 × 10−7 M. The paper does not specify the underlying mechanism of this inhibition beyond its concentration-dependent effect.
+> Nicardipine directly inhibits the frequency of contraction of isolated rat uterine smooth muscle through a concentration-dependent mechanism, characterized by an EC50 of 9.04 × 10−11 M. The paper does not specify the underlying molecular mechanism (e.g., calcium channel blockade kinetics) beyond this direct pharmacological effect.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Kim_2019`
 - **model family:** `sigmoid_emax`

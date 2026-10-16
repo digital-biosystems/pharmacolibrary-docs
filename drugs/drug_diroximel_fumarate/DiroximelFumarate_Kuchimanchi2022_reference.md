@@ -4,7 +4,7 @@
 
 # diroximel fumarate — `DiroximelFumarate_Kuchimanchi2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.0). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.0). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -16,37 +16,35 @@
 
 ### Reviewer guidance
 
-**The record was rejected because 2-hydroxyethyl succinimide has no path from the dose.**
+**Only clearance was extracted — no volume.**
 
-The model structure lists 2-hydroxyethyl succinimide as a metabolite of diroximel fumarate but assigns it zero compartments. This configuration leaves the metabolite unlinked, making it an orphan that cannot be reached from the administered dose. Extracted — monomethyl fumarate: CLm/F 13.5 L/h, V 30.4 L, kabs 5.04 1/h; 2-hydroxyethyl succinimide: CL 3.24 L/h, kabs 1.49 1/h.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. A reported unit could not be converted (equation variable), so that value has no SI equivalent. None of the extracted parameters is diroximel fumarate's own; they describe monomethyl fumarate, 2-hydroxyethyl succinimide. Extracted — monomethyl fumarate, 2-hydroxyethyl succinimide: kel 3.24 h−1, Q 1.49 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has diroximel fumarate, the second reading diroximel_fumarate; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
-> **Dose compound ≠ measured compound:** dosed `diroximel fumarate`, measured `monomethyl fumarate`.
+> **Dose compound ≠ measured compound:** dosed `diroximel_fumarate`, measured `monomethyl fumarate, 2-hydroxyethyl succinimide`.
 
 ## Citation
 Kuchimanchi M et al., Development of a Population Pharmacokin…, Neurology and therapy (2022)
   ·  DOI: [10.1007/s40120-021-00316-6](https://doi.org/10.1007/s40120-021-00316-6)
 
-<div class="pk-model-meta" hidden drug="diroximel fumarate" model-id="DiroximelFumarate_Kuchimanchi2022_reference" status="rejected" stale="false" population="healthy participants and patients with multiple sclerosis" measured-compound="monomethyl fumarate" parameterization="apparent" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="diroximel fumarate" model-id="DiroximelFumarate_Kuchimanchi2022_reference" status="needs_review" stale="false" population="healthy participants and patients with multiple sclerosis" measured-compound="monomethyl fumarate, 2-hydroxyethyl succinimide" parameterization="mechanistic" topology="1C"></div>
 
-**Model structure:** general linear; no model was built for this record.  
-**Parameters:** 5 extracted.
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 2 extracted.
 
-**Parameterization:** CLm/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 1 | `Q351` · CLm/F | 13.5 | L/h | 3.75e-06 | L/h | 3.1 | exact (1.0) | Tab2:row1:col2, Tab2:row1:col3, Tab2:row1:col4, Tab2:row1:col5 | — | not captured |
-| 2 | `Q61` · V | 30.4 | L | 0.0304 | L | 1.3 | exact (1.0) | Tab2:row2:col2, Tab2:row2:col3, Tab2:row2:col4, Tab2:row2:col5 | — | not captured |
-| 3 | `Q49` · kabs | 5.04 | 1/h | 0.0014 | 1/h | 2.5 | exact (1.0) | Tab2:row3:col2, Tab2:row3:col3, Tab2:row3:col4, Tab2:row3:col5 | — | not captured |
-| 6 | `Q22` · CL | 3.24 | L/h | 9.000000000000001e-07 | L/h | 2.4 | exact (1.0) | Tab2:row4:col2, Tab2:row4:col3, Tab2:row4:col4, Tab2:row4:col5 | — | not captured |
-| 7 | `Q49` · kabs | 1.49 | 1/h | 0.0004138888888888889 | 1/h | 1.2 | exact (1.0) | Tab2:row5:col2, Tab2:row5:col3, Tab2:row5:col4, Tab2:row5:col5 | — | not captured |
+| 1 | `Q900` · equation variable | 13.5 | L/h | not captured | [l] / [h] | 3.1 | llm (0.6) | Tab2:row1:col2, Tab2:row1:col3 | — | not captured |
+| 6 | `Q47` · kel | 3.24 | h−1 | 0.0009000000000000001 | [1] / [h] | 2.4 | llm (0.6) | Tab2:row4:col2, Tab2:row4:col3 | — | not captured |
+| 7 | `Q30` · Q | 1.49 | L/h | 4.1388888888888887e-07 | [l] / [h] | 1.2 | llm (0.6) | Tab2:row5:col2, Tab2:row5:col3 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -69,52 +67,50 @@ Kuchimanchi M et al., Development of a Population Pharmacokin…, Neurology and 
 - table section iiv: '4' routed out of structural estimates ('IIV')
 - table section iiv: '5' routed out of structural estimates ('IIV')
 - table section iiv: '8' routed out of structural estimates ('IIV')
+- table representations disagree for '1'; source reconciliation required
+- column 'ase' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- table representations disagree for '2'; source reconciliation required
+- table representations disagree for '3'; source reconciliation required
+- table representations disagree for '6'; source reconciliation required
+- table representations disagree for '7'; source reconciliation required
+- table representations disagree for '8'; source reconciliation required
+- table representations disagree for '9'; source reconciliation required
+- table representations disagree for '10'; source reconciliation required
+- table representations disagree for '15'; source reconciliation required
+- table representations disagree for '17'; source reconciliation required
+- table representations disagree for '23'; source reconciliation required
+- table representations disagree for '24'; source reconciliation required
+- table representations disagree for '25'; source reconciliation required
+- table representations disagree for '26'; source reconciliation required
+- table representations disagree for '27'; source reconciliation required
+- table representations disagree for '28'; source reconciliation required
+- table representations disagree for '35'; source reconciliation required
+- table representations disagree for '36'; source reconciliation required
+- dropped unlinked row (NIL): '2' — extend the ontology if this is a real PK parameter (source ['Tab2:row2:col2', 'Tab2:row2:col3'])
+- dropped unlinked row (NIL): '3' — extend the ontology if this is a real PK parameter (source ['Tab2:row3:col2', 'Tab2:row3:col3'])
 - dropped unlinked row (NIL): '8' — extend the ontology if this is a real PK parameter (source ['Tab2:row6:col2'])
-- dropped unlinked row (NIL): '9' — extend the ontology if this is a real PK parameter (source ['Tab2:row7:col2', 'Tab2:row7:col3', 'Tab2:row7:col4', 'Tab2:row7:col5'])
-- dropped unlinked row (NIL): '10' — extend the ontology if this is a real PK parameter (source ['Tab2:row8:col2', 'Tab2:row8:col3', 'Tab2:row8:col4', 'Tab2:row8:col5'])
-- dropped unlinked row (NIL): '15' — extend the ontology if this is a real PK parameter (source ['Tab2:row13:col2', 'Tab2:row13:col3', 'Tab2:row13:col4', 'Tab2:row13:col5'])
+- dropped unlinked row (NIL): '9' — extend the ontology if this is a real PK parameter (source ['Tab2:row7:col2', 'Tab2:row7:col3'])
+- dropped duplicate Q30 ('10', value '0.878') — already have one for this compound
+- dropped unlinked row (NIL): '15' — extend the ontology if this is a real PK parameter (source ['Tab2:row13:col2', 'Tab2:row13:col3'])
 - dropped unlinked row (NIL): '17' — extend the ontology if this is a real PK parameter (source ['Tab2:row15:col2'])
-- dropped unlinked row (NIL): '23' — extend the ontology if this is a real PK parameter (source ['Tab2:row21:col2', 'Tab2:row21:col3', 'Tab2:row21:col4', 'Tab2:row21:col5'])
+- dropped unlinked row (NIL): '23' — extend the ontology if this is a real PK parameter (source ['Tab2:row21:col2', 'Tab2:row21:col3'])
 - dropped unlinked row (NIL): '24' — extend the ontology if this is a real PK parameter (source ['Tab2:row22:col2'])
 - dropped unlinked row (NIL): '25' — extend the ontology if this is a real PK parameter (source ['Tab2:row23:col2'])
-- dropped unlinked row (NIL): '26' — extend the ontology if this is a real PK parameter (source ['Tab2:row24:col2', 'Tab2:row24:col3', 'Tab2:row24:col4', 'Tab2:row24:col5'])
-- dropped unlinked row (NIL): '27' — extend the ontology if this is a real PK parameter (source ['Tab2:row25:col2', 'Tab2:row25:col3', 'Tab2:row25:col4', 'Tab2:row25:col5'])
-- dropped unlinked row (NIL): '28' — extend the ontology if this is a real PK parameter (source ['Tab2:row26:col2', 'Tab2:row26:col3', 'Tab2:row26:col4', 'Tab2:row26:col5'])
-- dropped value-less row: '35'
-- dropped value-less row: '36'
-- implicit units: '1' → L/h (from the paper text: "The text states: 'Estimated MMF clearance (CLMMF), volume of distribution, and absorption rate constant (Ka) were 13.5 L")
-- implicit units: '2' → L (from the paper text: "The text states: 'Estimated MMF clearance (CLMMF), volume of distribution, and absorption rate constant (Ka) were 13.5 L")
-- implicit units: '3' → 1/h (from the paper text: "The text states: 'Estimated MMF clearance (CLMMF), volume of distribution, and absorption rate constant (Ka) were 13.5 L")
-- implicit units: '6' → L/h (from the paper text: "The text states: 'Estimated MMF clearance (CLMMF)... were 13.5 L/h...'. Parameter 4 (3.24) is a clearance parameter (lab")
-- implicit units: '7' → 1/h (from the popPK convention: 'The parameter is an absorption rate constant (kabs). The text provides the unit for the MMF absorption rate constant as ')
-- metabolite monomethyl fumarate: Q22→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
-- metabolite volume: '2' Q63→Q61 for monomethyl fumarate — it is 1-compartment, so its central volume is its only volume
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=monomethyl fumarate
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
-- template fit: none — only the metabolite is modelled — no parent compartment
+- dropped unlinked row (NIL): '26' — extend the ontology if this is a real PK parameter (source ['Tab2:row24:col2', 'Tab2:row24:col3'])
+- dropped unlinked row (NIL): '27' — extend the ontology if this is a real PK parameter (source ['Tab2:row25:col2', 'Tab2:row25:col3'])
+- dropped unlinked row (NIL): '28' — extend the ontology if this is a real PK parameter (source ['Tab2:row26:col2', 'Tab2:row26:col3'])
+- dropped unlinked row (NIL): '35' — extend the ontology if this is a real PK parameter (source ['Tab2:row27:col3'])
+- dropped unlinked row (NIL): '36' — extend the ontology if this is a real PK parameter (source ['Tab2:row28:col3'])
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=monomethyl fumarate, 2-hydroxyethyl succinimide
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- model equation 'Vc_i = 30.4 ⋅ (WT_i/78)^0.878 ⋅ exp(η_i^Vc)' not bound — neither LHS nor base term 'WT_i' linked to an ontology parameter
 - status held at route_to_review — not promoted
-- row roles: 11 per-group rows of monomethyl fumarate covariate_effect but 0 reference group(s) — kept as printed
-- row roles: 3 per-group rows of 2-hydroxyethyl succinimide covariate_effect but 0 reference group(s) — kept as printed
-- row roles (LLM): model_class=compartmental; 26/26 row label(s) assigned, 30 linked by role; re-tagged parent→monomethyl fumarate ×79, parent→2-hydroxyethyl succinimide ×24
 
 **Extraction notes:**
-- unparsed cell Tab2:row3:col6 = 'h−1'
-- unparsed cell Tab2:row4:col6 = 'h−1'
-- unparsed cell Tab2:row6:col1 = 'F4'
-- unparsed cell Tab2:row7:col1 = 'F1'
-- unparsed cell Tab2:row15:col1 = 'LOW on F1'
-- unparsed cell Tab2:row22:col1 = 'HES ALAG4 PM dosing'
-- unparsed cell Tab2:row23:col1 = 'HES ALAG4 LOW'
-- unparsed cell Tab2:row27:col2 = '− 0.284'
-- unparsed cell Tab2:row27:col5 = '(− 0.363 to − 0.204)'
-- unparsed cell Tab2:row28:col2 = '− 0.122'
-- unparsed cell Tab2:row28:col5 = '(− 0.180 to − 0.0642)'
-- unparsed cell Tab2:row39:col1 = 'ETA1–CLMMF'
-- unparsed cell Tab2:row40:col1 = 'ETA2–Vc'
-- unparsed cell Tab2:row41:col1 = 'ETA4–CLHES'
-- unparsed cell Tab2:row42:col1 = 'ETA4–CLHES'
-- unparsed cell Tab2:row43:col1 = 'ETA8–KaHES'
-- LLM selected parameter table(s) 2
+- table Tab2: missing_unit_binding
+- table Tab2: representations disagree; selected evidence retained, not merged
+- LLM selected parameter table(s) 4, 5, 6
+- captured model equation Vc_i = 30.4 ⋅ (WT_i/78)^0.878 ⋅ exp(η_i^Vc)
 
 ## Validation
 
@@ -159,18 +155,12 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row4:col2', 'Tab2:row4:col3', 'Tab2:row4:col4', 'Tab2:row4:col5'] |
-| C5_dimension_Q351 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row1:col2', 'Tab2:row1:col3', 'Tab2:row1:col4', 'Tab2:row1:col5'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Tab2:row3:col2', 'Tab2:row3:col3', 'Tab2:row3:col4', 'Tab2:row3:col5'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Tab2:row5:col2', 'Tab2:row5:col3', 'Tab2:row5:col4', 'Tab2:row5:col5'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row2:col2', 'Tab2:row2:col3', 'Tab2:row2:col4', 'Tab2:row2:col5'] |
-| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
-| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none', 'none'] | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 3.24 L/h | not captured | not captured | ['Tab2:row4:col2', 'Tab2:row4:col3', 'Tab2:row4:col4', 'Tab2:row4:col5'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 30.4 L | not captured | not captured | ['Tab2:row2:col2', 'Tab2:row2:col3', 'Tab2:row2:col4', 'Tab2:row2:col5'] |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row5:col2', 'Tab2:row5:col3'] |
+| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['Tab2:row4:col2', 'Tab2:row4:col3'] |
+| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -179,14 +169,24 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_diroximel_fumarate/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kuchimanchi_2022` / `Kuchimanchi_2022::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_diroximel_fumarate/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kuchimanchi_2022` / `Kuchimanchi_2022::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -195,4 +195,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 23:49 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 21:50 UTC</sub>

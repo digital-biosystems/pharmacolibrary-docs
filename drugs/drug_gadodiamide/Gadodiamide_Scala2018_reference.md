@@ -4,7 +4,7 @@
 
 # gadodiamide — `Gadodiamide_Scala2018_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.667). Primary extraction retained.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.909). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -20,7 +20,7 @@
 
 The record reports V1 as 0.161 L, alongside clearance (CL) of 2.51 L/h and intercompartmental clearance (Q) of 0.335 L/h. The finding flags a clearance/volume magnitude as outside the physiological window and attributes this to a possible unit or scale extraction error. Extracted — gadodiamide: CL 2.51 L/h, V1 0.161 L, Q 0.335 L/h.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on parameter Q21: this record has none, the second reading 0.62; it also differs on 3 more fields. That field does not shape the model.
+A second, independent reading of the paper (`qwen3.8-27b`) disagrees on parameter Q315: this record has none, the second reading 16. That field does not shape the model.
 
 <sub>reviewed by gpt-6-luna</sub>
 
@@ -62,16 +62,13 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `qwen3.8-27b` | partly confirmed | 0.667 (8/12 fields) | 4 |
+| `qwen3.8-27b` | partly confirmed | 0.909 (10/11 fields) | 1 |
 
-<details><summary>4 field discrepancies</summary>
+<details><summary>1 field discrepancy</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `qwen3.8-27b` | `values[Q21]` | not captured | 0.62 | only_one_extracted |
 | `qwen3.8-27b` | `values[Q315]` | not captured | 16 | only_one_extracted |
-| `qwen3.8-27b` | `values[Q354]` | 0.06 | not captured | only_one_extracted |
-| `qwen3.8-27b` | `values[Q61]` | 0.20 | not captured | only_one_extracted |
 
 </details>
 
@@ -103,7 +100,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_gadodiamide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Scala_2018` / `Scala_2018::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_gadodiamide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Scala_2018` / `Scala_2018::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

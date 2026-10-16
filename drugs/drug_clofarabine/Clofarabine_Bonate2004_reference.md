@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;clofarabine&quot;,&quot;href&quot;:&quot;drugs/drug_clofarabine/&quot;},{&quot;label&quot;:&quot;Bonate_2004 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clofarabine_Bonate2011_reference&quot;,&quot;label&quot;:&quot;Bonate_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clofarabine/Clofarabine_Bonate2011_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clofarabine_Bonate2011_reference&quot;,&quot;label&quot;:&quot;Bonate_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clofarabine/Clofarabine_Bonate2011_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # clofarabine — `Clofarabine_Bonate2004_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.615). Primary extraction retained.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.308), gpt-oss-120b (partly confirmed, agreement 0.615). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -17,22 +17,22 @@
 
 ### Reviewer guidance
 
-**Clearance normalized to 70 kg was reported in kg, creating a dimension mismatch with the volume parameters.**
+**C5 dimension mismatch on a structural parameter.**
 
-The record lists clearance normalized to a reference individual with a value of 0.75 and unit kg, which is dimensionally invalid. In contrast, the systemic clearance is correctly provided as 32.8 L/h. Since only the abstract was read, these summary statistics could not be reconciled into a consistent fitted model. Extracted — clofarabine: CLnorm 0.75 kg, V 1 kg, CL 32.8 L/h, V1 115 L, Q 20.5 L/h, V2 94.5 L.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — clofarabine: CL 32.8 L/h, V1 115 L, Q 20.5 L/h, V2 94.5 L, Cavg 11.6 microM.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of average predicted concentration: this record has none, the second reading 11.6; it also differs on 4 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has clofarabine → clofarabine triphosphate (metabolism), the second reading none; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Bonate PL et al., Population pharmacokinetics of clofarab…, Journal of clinical pharmac… (2004)
   ·  DOI: [10.1177/0091270004269236](https://doi.org/10.1177/0091270004269236)
 
-<div class="pk-model-meta" hidden drug="clofarabine" model-id="Clofarabine_Bonate2004_reference" status="rejected" stale="false" population="pediatric patients with acute leukemias" measured-compound="clofarabine" parameterization="mechanistic" topology="3C"></div>
+<div class="pk-model-meta" hidden drug="clofarabine" model-id="Clofarabine_Bonate2004_reference" status="rejected" stale="false" population="pediatric patients with acute leukemia" measured-compound="clofarabine" parameterization="mechanistic" topology="parent_metabolite"></div>
 
-**Model structure:** 3-compartment; no model was built for this record.  
-**Parameters:** 6 extracted.
+**Model structure:** parent + metabolite; no model was built for this record.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -41,50 +41,43 @@ Bonate PL et al., Population pharmacokinetics of clofarab…, Journal of clinica
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| clearance-related terms | `Q354` · CLnorm | 0.75 | kg | not captured | [kg] | not captured | llm_corrected (0.6) | Bonate_2004:abstract | — | not captured |
-| volume-related terms | `Q61` · V | 1.0 | kg | not captured | [kg] | not captured | llm_confirmed (0.6) | Bonate_2004:abstract | — | not captured |
-| reference patient | `Q900` · equation variable | 40 | kg | not captured | [kg] | not captured | llm (0.6) | Bonate_2004:abstract | — | not captured |
 | systemic clearance | `Q22` · CL | 32.8 | L/h | 9.11111111111111e-06 | [l] / [h] | not captured | llm_confirmed (0.6) | Bonate_2004:abstract | — | not captured |
 | central volume | `Q63` · V1 | 115 | L | 0.115 | [l] | not captured | exact (1.0) | Bonate_2004:abstract | — | not captured |
 | intercompartmental clearance | `Q30` · Q | 20.5 | L/h | 5.694444444444445e-06 | [l] / [h] | not captured | exact (1.0) | Bonate_2004:abstract | — | not captured |
 | peripheral volume | `Q64` · V2 | 94.5 | L | 0.0945 | [l] | not captured | exact (1.0) | Bonate_2004:abstract | — | not captured |
+| average predicted concentration | `Q71` · Cavg | 11.6 | microM | not captured | [m] · [icrom] | not captured | llm (0.6) | Bonate_2004:abstract | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
-### Unresolved rows _(no Q-code or no value — not parameters)_
-| label (paper) | Q-code | value | link |
-|---|---|---|---|
-| clofarabine triphosphate half-life | Q57 | not captured | llm |
-
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped value-less row: 'weight'
-- unit_dimension_mismatch: 'clearance-related terms' → Q354 (unit '[mass]' vs ontology '[length] ** 3 / [time]') — route to review
-- unit_dimension_mismatch: 'volume-related terms' → Q61 (unit '[mass]' vs ontology '[length] ** 3') — route to review
-- dropped duplicate Q900 ('average predicted concentration', value 11.6) — already have one for this compound
+- unit_dimension_mismatch: 'average predicted concentration' → Q71 (unit '[length]' vs ontology '[mass] / [length] ** 3') — route to review
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=clofarabine
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- structure disagreement: deterministic 3C vs LLM 2C — review compartment count
+- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
+- template fit: PK_3M_9C — formed from central; parent 2, metabolites [0]
 - status held at route_to_review — not promoted
+- row roles (LLM): model_class=compartmental; 5/5 row label(s) assigned, 4 linked by role; re-tagged clofarabine→parent ×4
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Bonate_2004_metadata.yaml (10 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Bonate_2004_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss:120b` | not confirmed | 0.308 (4/13 fields) | 9 |
 | `gpt-oss-120b` | partly confirmed | 0.615 (8/13 fields) | 5 |
 
-<details><summary>5 field discrepancies</summary>
+<details><summary>14 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -93,6 +86,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | `gpt-oss-120b` | `parameters[clofarabine triphosphate half-life]` | not captured | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[reference patient]` | 40 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[volume-related terms]` | 1.0 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `model.links` | [['clofarabine', 'clofarabine triphosphate', 'metabolism']] | [] | mismatch |
+| `gpt-oss:120b` | `parameters[central volume]` | 115 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[central volume]` | not captured | 115 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[intercompartmental clearance]` | 20.5 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[intercompartmental clearance]` | not captured | 20.5 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[peripheral volume]` | 94.5 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[peripheral volume]` | not captured | 94.5 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[systemic clearance]` | 32.8 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[systemic clearance]` | not captured | 32.8 | only_one_extracted |
 
 </details>
 
@@ -106,16 +108,14 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Bonate_2004:abstract'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Bonate_2004:abstract'] |
-| C5_dimension_Q354 | fail | [mass] | kg | not captured | not captured | ['Bonate_2004:abstract'] |
-| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Bonate_2004:abstract'] |
-| C5_dimension_Q61 | fail | [mass] | kg | not captured | not captured | ['Bonate_2004:abstract'] |
 | C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Bonate_2004:abstract'] |
 | C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Bonate_2004:abstract'] |
+| C5_dimension_Q71 | fail | [length] | microM | not captured | not captured | ['Bonate_2004:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 32.8 | not captured | not captured | ['Bonate_2004:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 32.8 L/h | not captured | not captured | ['Bonate_2004:abstract'] |
@@ -129,7 +129,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_clofarabine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Bonate_2004` / `Bonate_2004::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_clofarabine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Bonate_2004` / `Bonate_2004::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -145,4 +145,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 16:39 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 03:09 UTC</sub>

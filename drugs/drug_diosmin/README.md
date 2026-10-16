@@ -18,11 +18,31 @@ Diosmin is a bioflavonoid used as a capillary-stabilizing and vasoprotective med
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 21:43 | 3:03 | 0/0/0 | 0/0/0 | 0/0/0 | 44,712/1,559 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 3/16 | 5/0 | 0 |
+| 2026-10-14 23:50 | 0:30 | 0/0/0 | 0/0/0 | 0/0/0 | 44,712/1,611 | einfracz / qwen3.8-27b | 5 | 3/16 | 5/0 | 0 |
 
 ## popPK records
 
 _not available_
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=diosmin).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inhibitor | DrugBank actor |
+| absorption | kidney | `ABCB1` inhibitor | DrugBank actor |
+| absorption | liver | `ABCB1` inhibitor, `SLCO2B1` unknown | DrugBank actor |
+| absorption | placenta | `ABCB1` inhibitor | DrugBank actor |
+| absorption | small intestine | `ABCB1` inhibitor, `SLCO2B1` unknown | DrugBank actor |
+| absorption | testis | `ABCB1` inhibitor | DrugBank actor |
+| distribution | blood | `ALB` binder | DrugBank actor |
+| metabolism | liver | `CYP2C9` inhibitor, `CYP2E1` inhibitor, `CYP3A4` inhibitor, `SLCO1B1` inhibitor, `SLCO1B3` unknown | DrugBank actor |
+| metabolism | lung | `CYP1A1` inducer | DrugBank actor |
+| metabolism | small intestine | `CYP1A1` inducer, `CYP3A4` inhibitor | DrugBank actor |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: AHR (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -43,8 +63,8 @@ _14 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Ma_2007.pdf` | Ma YL et al., [Studies on pharmacokinetics of diosmin…, Zhongguo Zhong yao za zhi =… (2007) | popPK | 9 | not captured | [17511149](https://pubmed.ncbi.nlm.nih.gov/17511149) | The study reports a one-compartment PK model for diosmin in rats, but the specific numeric parameter values (CL, V, t1/2) are not listed in the provided evidence text. |
-| `Russo_2015.pdf` | Russo R et al., Pharmacokinetic Profile of µSMIN Plus™,…, Natural product communicati… (2015) | popPK | 8 | not captured | [26594761](https://pubmed.ncbi.nlm.nih.gov/26594761) | The study reports pharmacokinetic parameters for diosmin in rats, but the specific numeric values are not present in the provided evidence text. |
+| `Ma_2007.pdf` | Ma YL et al., [Studies on pharmacokinetics of diosmin…, Zhongguo Zhong yao za zhi =… (2007) | popPK | 10 | not captured | [17511149](https://pubmed.ncbi.nlm.nih.gov/17511149) | The study establishes a one-compartment model for diosmin in rats and mentions obtaining main pharmacokinetics parameters, but the specific numeric values are not present in the provided evidence text. |
+| `Russo_2015.pdf` | Russo R et al., Pharmacokinetic Profile of µSMIN Plus™,…, Natural product communicati… (2015) | popPK | 8 | not captured | [26594761](https://pubmed.ncbi.nlm.nih.gov/26594761) | The study reports a non-compartmental pharmacokinetic profile of diosmin in rats, but specific numeric parameter values (CL, V, t1/2, etc.) are not present in the provided abstract or evidence text. |
 | `El-Shiekh_2024.pdf` | El-Shiekh RA et al., Natural compounds as possible anti-SARS…, Natural product research (2024) | pd | 5 | [10.1080/14786419.2023.2261069](https://doi.org/10.1080/14786419.2023.2261069) | [37752734](https://www.ncbi.nlm.nih.gov/pubmed/37752734) | metadata signals extractable PD data (IC50) |
 | `Cho_2020.pdf` | Cho YW et al., Small molecule inhibitors of IκB kinase…, Bioorganic & medicinal chem… (2020) | pd | 4 | [10.1016/j.bmc.2020.115440](https://doi.org/10.1016/j.bmc.2020.115440) | [32205046](https://www.ncbi.nlm.nih.gov/pubmed/32205046) | metadata signals extractable PD data (IC50) |
 | `Dubey_2021.pdf` | Dubey K et al., Exploration of Diosmin to Control Diabe…, Current computer-aided drug… (2021) | pd | 4 | [10.2174/1573409916666200324135734](https://doi.org/10.2174/1573409916666200324135734) | [32208122](https://www.ncbi.nlm.nih.gov/pubmed/32208122) | metadata signals extractable PD data (IC50) |
@@ -58,7 +78,7 @@ _14 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Poór_2018.pdf` | Poór M et al., Pharmacokinetic interaction of diosmeti…, Biomedicine & pharmacothera… (2018) | pgx | 7 | [10.1016/j.biopha.2018.03.146](https://doi.org/10.1016/j.biopha.2018.03.146) | [29710546](https://www.ncbi.nlm.nih.gov/pubmed/29710546) | metadata signals extractable PGX data (CYP2C9, PK/PD-context) |
 | `Rajnarayana_2007.pdf` | Rajnarayana K et al., Bioavailability of diclofenac sodium af…, Drug metabolism and drug in… (2007) | pgx | 7 | [10.1515/dmdi.2007.22.2-3.165](https://doi.org/10.1515/dmdi.2007.22.2-3.165) | [17708066](https://www.ncbi.nlm.nih.gov/pubmed/17708066) | metadata signals extractable PGX data (CYP2C9, PK/PD-context) |
 
-<sub>queue written 2026-10-06T21:42:30.862539+00:00</sub>
+<sub>queue written 2026-10-14T23:50:03.497203+00:00</sub>
 
 ## Screened and excluded
 
@@ -66,14 +86,14 @@ _14 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 |---|---|---|---|---|---|
 | popPK | Al-Mur_2024 | irrelevant | 0 | 0 | This is a phytochemical/bioactivity study of seaweed extract; diosmin appears only as an HPLC-detected flavonoid content (121.745 mg/g), with no pharmacokinetic parameters. |
 | PD | Al-Mur_2024 | not_relevant | 1 | 1 | Diosmin is only quantified as a phytochemical constituent of seaweed extract; IC50 values are for crude extract cytotoxicity/antioxidant assays, not a diosmin exposure- or dose-response PD relationship. |
-| popPK | Amaliah_2025 | irrelevant | 0 | 0 | The paper is a review of ternary solid dispersions and does not report specific quantitative pharmacokinetic parameters for diosmin. |
+| popPK | Amaliah_2025 | irrelevant | 0 | 0 | This is a review paper on ternary solid dispersions and does not report specific pharmacokinetic parameters for diosmin. |
 | PD | Amaliah_2025 | not_relevant | 0 | 0 | The paper is a review of ternary solid dispersions and does not report any specific pharmacodynamic or exposure-response data for diosmin. |
 | popPK | Amato_1994 | irrelevant | 1 | 0 | Clinical efficacy trial of micronized vs nonmicronized diosmin with no PK disposition parameters reported. |
 | PD | Amato_1994 | not_relevant | 2 | 0 | The paper reports clinical and plethysmographic outcomes comparing two formulations but does not provide plasma concentration data or numeric pharmacodynamic parameters (e.g., Emax, EC50) to define an exposure-response relationship. |
 | popPK | Amiel_1998 | irrelevant | 1 | 0 | Pharmacodynamic (venous tone) study with no PK disposition parameters or numeric values reported. |
 | PD | Amiel_1998 | not_relevant | 2 | 1 | The text describes a qualitative pharmacodynamic effect (venous tone reinforcement) and duration but provides no numeric concentration-effect data, dose-response curve, or PD parameters (Emax, EC50) for diosmin. |
 | popPK | Artanti_2024 | irrelevant | 0 | 0 | In vitro cytotoxicity study (IC50, CI values) with no pharmacokinetic disposition parameters for diosmin. |
-| PGx | Bedada_2017 | not_relevant | 0 | 0 | The study investigates a drug-drug interaction (diosmin affecting carbamazepine PK) and does not report any pharmacogenomic effects (gene variants) on diosmin's PK or PD parameters. |
+| PGx | Bedada_2017 | not_relevant | 0 | 0 | The study investigates a drug-drug interaction between diosmin and carbamazepine, not a pharmacogenomic effect (gene variant impact) on diosmin's PK/PD. |
 | popPK | Chinnam_2010 | irrelevant | 0 | 0 | In-vitro enzymology study of bioflavonoids on E. coli ATP synthase; no PK parameters for diosmin. |
 | PD | Chinnam_2010 | not_relevant | 4 | 3 | The paper reports a partial inhibition range (40-60%) for diosmin but does not provide a specific IC50 or a full concentration-effect curve with numeric parameters for diosmin, unlike the other compounds listed. |
 | popPK | Cho_2020 | irrelevant | 0 | 0 | In vitro enzyme inhibition screening of IKKβ; diosmin is only a hit compound with IC50 comparisons, no PK parameters reported. |
@@ -85,12 +105,12 @@ _14 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | popPK | Dubey_2021 | irrelevant | 0 | 0 | In vitro enzyme inhibition and docking study with no pharmacokinetic disposition parameters for diosmin. |
 | popPK | El-Shiekh_2024 | irrelevant | 1 | 0 | In-vitro/in-silico antiviral screening with only IC50 values and qualitative predictive ADME; no PK disposition parameters for diosmin. |
 | PD | El-Shiekh_2024 | not_relevant | 0 | 0 | The paper is an in-vitro and in-silico study of natural compounds against SARS-CoV-2 and does not report pharmacokinetic or pharmacodynamic modeling, exposure-response relationships, or numeric PD parameters for diosmin. |
-| popPK | Fan_2025 | irrelevant | 0 | 0 | The paper is a review of flavonoids in neurological diseases and does not report quantitative pharmacokinetic parameters for diosmin. |
+| popPK | Fan_2025 | irrelevant | 0 | 0 | This is a review article focusing on the mechanisms and therapeutic potential of flavonoids in neurological diseases, not a pharmacokinetic study of diosmin. |
 | PD | Fan_2025 | not_relevant | 1 | 0 | The paper is a narrative review of flavonoids in neurological diseases and does not report specific PK/PD data, exposure-response curves, or numeric PD parameters for diosmin. |
 | popPK | Habib_2022 | irrelevant | 0 | 0 | This is a pharmacodynamic neuroprotection study in rats with no PK parameters (CL, V, ka, half-life, or PK model) reported for diosmin. |
 | PD | Habib_2022 | not_relevant | 3 | 2 | The study reports a qualitative dose-response trend (50, 100, 200 mg/kg) but lacks numeric PD parameters (e.g., EC50, Emax) or concentration-effect data, as it is a preclinical efficacy study without PK/PD modeling. |
 | popPK | Harasstani_2010 | irrelevant | 0 | 0 | In-vitro anti-inflammatory study in RAW 264.7 cells with IC50 values, no pharmacokinetic disposition parameters for diosmin. |
-| popPK | Islam_2022 | irrelevant | 0 | 0 | The paper is a review on immune system rejuvenation and does not contain any pharmacokinetic data for diosmin. |
+| popPK | Islam_2022 | irrelevant | 0 | 0 | The paper is a review on immune system rejuvenation and does not report pharmacokinetic parameters for diosmin. |
 | PD | Islam_2022 | not_relevant | 0 | 0 | The paper is a general review on immune system rejuvenation and does not contain any pharmacodynamic or exposure-response data for diosmin. |
 | popPK | Karetová_2020 | irrelevant | 0 | 0 | Czech narrative review of diosmin/hesperidin clinical efficacy with no PK parameters (no CL, V, ka, half-life, or PK model) reported. |
 | PD | Karetová_2020 | not_relevant | 2 | 1 | The paper is a qualitative review discussing mechanisms of action and clinical trial outcomes (e.g., cytokine reduction) but does not report any quantitative exposure-response or dose-response models with numeric PD parameters (Emax, EC50, etc.). |
@@ -100,42 +120,42 @@ _14 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | popPK | Khodja_2025 | irrelevant | 0 | 0 | In silico docking/phytochemistry study with no PK parameters for diosmin. |
 | PD | Khodja_2025 | not_relevant | 0 | 0 | The paper reports IC50 values for the whole plant extract and binding affinities for diosmin via docking, but does not provide a concentration-effect curve or numeric PD parameters (Emax, EC50, slope) specifically for diosmin. |
 | popPK | Kiran_2024 | irrelevant | 0 | 0 | This is an in vitro/in vivo pharmacodynamic study of diosmin as a PLA2 inhibitor, with no PK parameters (CL, V, ka, half-life, or population-PK model) reported. |
-| popPK | Kuntz_1999 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of flavonoid effects on cell proliferation and apoptosis, not a pharmacokinetic study. |
+| popPK | Kuntz_1999 | irrelevant | 0 | 0 | The study is an in-vitro investigation of the antiproliferative and cytotoxic effects of flavonoids on cancer cell lines, containing no pharmacokinetic parameters (CL, V, T1/2, etc.) for diosmin. |
 | popPK | Kuppusamy_2017 | irrelevant | 0 | 0 | In silico docking and in vitro AChE inhibition study with no pharmacokinetic disposition parameters for diosmin. |
 | PD | Kuppusamy_2017 | not_relevant | 0 | 0 | The paper focuses on in silico and in vitro acetylcholinesterase inhibition of flavonoids for Alzheimer's disease and does not report pharmacokinetic or pharmacodynamic exposure-response relationships for diosmin. |
 | popPK | Liu_2025 | irrelevant | 0 | 0 | This is an immunoassay method-development paper (ELISA for flavonoid detection) with no pharmacokinetic parameters for diosmin. |
 | PD | Liu_2025 | not_relevant | 0 | 0 | The paper describes the preparation of a monoclonal antibody and the development of an ELISA method for quantifying rhoifolin and diosmin, containing no pharmacodynamic or exposure-response data. |
-| popPK | Ma_2007 | relevant | 9 | 2 | The study reports a one-compartment PK model for diosmin in rats, but the specific numeric parameter values (CL, V, t1/2) are not listed in the provided evidence text. |
+| popPK | Ma_2007 | relevant | 10 | 0 | The study establishes a one-compartment model for diosmin in rats and mentions obtaining main pharmacokinetics parameters, but the specific numeric values are not present in the provided evidence text. |
 | popPK | Mahran_2019 | irrelevant | 0 | 0 | This is a natural-product isolation/phytochemistry paper; diosmin is merely an isolated compound with no pharmacokinetic parameters reported. |
 | PD | Mahran_2019 | not_relevant | 0 | 0 | The paper is a phytochemical isolation study; diosmin is merely identified as one of the isolated compounds, and no pharmacodynamic or exposure-response analysis is performed for it. |
-| popPK | Majnooni_2020 | irrelevant | 0 | 0 | The paper is a review of phytochemicals for lung injury and does not report pharmacokinetic parameters for diosmin. |
+| popPK | Majnooni_2020 | irrelevant | 0 | 0 | The paper is a review of phytochemicals for lung injury and does not report any pharmacokinetic parameters for diosmin. |
 | PD | Majnooni_2020 | not_relevant | 0 | 0 | The paper is a narrative review of phytochemical mechanisms and does not report any specific pharmacokinetic or pharmacodynamic data, exposure-response relationships, or numeric PD parameters for diosmin. |
 | popPK | Melzig_1999 | irrelevant | 0 | 0 | In-vitro pharmacodynamic study of diosmin on endothelial cells with no PK parameters. |
 | popPK | Miara_2025 | irrelevant | 0 | 0 | This is a phytochemical/biological activity study of Thymbra nabateorum extract; diosmin appears only as a quantified plant constituent (118.75 mg/g), with no PK parameters for diosmin. |
 | PD | Miara_2025 | not_relevant | 1 | 1 | In vitro phytochemistry/bioassay study (IC50 enzyme inhibition, cytotoxicity) of plant extracts; no in vivo exposure- or dose-response PD relationship for diosmin. |
-| PGx | Michalczyk_2025 | not_relevant | 0 | 0 | The study investigates the pharmacological interaction between diosmetin and doxorubicin in cell lines, not the effect of a gene variant on the PK/PD of diosmin. |
+| PGx | Michalczyk_2025 | not_relevant | 0 | 0 | The study investigates the drug interaction of diosmetin with doxorubicin in cell lines, not the pharmacogenomics of diosmin itself. |
 | popPK | Nugroho_2013 | irrelevant | 0 | 0 | This is an HPLC quantification and antioxidant assay of plant constituents, not a pharmacokinetic study; diosmin is only a quantified analyte with no disposition parameters. |
 | PD | Nugroho_2013 | not_relevant | 3 | 2 | The paper reports IC50 values for various compounds including diosmin in a peroxynitrite-scavenging assay, but this is a simple in vitro bioassay potency metric, not a pharmacodynamic (exposure-response) model or dose-response curve analysis with derivable PD parameters like Emax or slope in a PK/PD context. |
-| popPK | Nureye_2025 | irrelevant | 0 | 0 | The paper is a review of medicinal plants for hypertension and does not report pharmacokinetic parameters for diosmin. |
+| popPK | Nureye_2025 | irrelevant | 0 | 0 | The paper is a review of medicinal plants for hypertension and does not report specific pharmacokinetic parameters for diosmin. |
 | PD | Nureye_2025 | not_relevant | 0 | 0 | The paper is a review of medicinal plants for hypertension in Ethiopia and does not report any specific pharmacodynamic or exposure-response analysis for diosmin. |
-| PGx | Orzetti_2023 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction between diosmin and ribociclib, not a pharmacogenomic effect of a gene variant on diosmin's PK/PD. |
+| PGx | Orzetti_2023 | not_relevant | 0 | 0 | The paper reports a clinical case of a drug-drug interaction between diosmin and ribociclib via CYP3A4, not a pharmacogenomic effect based on genetic variants. |
 | popPK | Ouari_2026 | irrelevant | 0 | 0 | Evidence is only an LC-MS instrument report for a plant leaf extract with no diosmin PK parameters. |
 | PD | Ouari_2026 | not_relevant | 0 | 0 | The text is raw LC-MS/MS instrument data for a plant extract sample and contains no pharmacodynamic, exposure-response, or dose-response analysis. |
 | popPK | Paul_2026 | irrelevant | 0 | 0 | This is a phytochemical/antimicrobial/docking study of Achillea millefolium extract; diosmin appears only as an identified compound and docking ligand, with no PK parameters. |
 | PD | Paul_2026 | not_relevant | 1 | 1 | In vitro phytochemical screening (DPPH IC50, ZOI, docking) of plant extracts; no in vivo diosmin exposure- or dose-response PD relationship or PK/PD parameters. |
-| PGx | Poór_2018 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions (CYP2C9 inhibition and albumin displacement) of diosmetin, not the effect of a gene variant on diosmin's PK/PD. |
+| PGx | Poór_2018 | not_relevant | 0 | 0 | The paper studies the drug-drug interaction and protein binding of diosmetin (the aglycone of diosmin) and silibinin, with no mention of genetic variants or pharmacogenomics. |
 | popPK | Rajasekar_2025 | irrelevant | 0 | 0 | In vitro anticancer mechanism study with no PK parameters for diosmin. |
-| PGx | Rajnarayana_2007 | not_relevant | 0 | 0 | The study investigates a drug-drug interaction (diosmin affecting diclofenac PK) and does not report any pharmacogenomic effects (gene variants) on diosmin or diclofenac. |
-| popPK | Rajnarayana_2008 | irrelevant | 1 | 0 | The study measures the pharmacokinetics of chlorzoxazone (a probe drug) to assess diosmin's effect on CYP2E1, rather than reporting PK parameters for diosmin itself. |
-| popPK | Russo_2015 | relevant | 8 | 0 | The study reports pharmacokinetic parameters for diosmin in rats, but the specific numeric values are not present in the provided evidence text. |
+| PGx | Rajnarayana_2007 | not_relevant | 0 | 0 | The paper investigates a drug-drug interaction (diosmin effect on diclofenac PK) and does not report any pharmacogenomic effects of diosmin. |
+| popPK | Rajnarayana_2008 | irrelevant | 1 | 0 | The study measures the pharmacokinetics of chlorzoxazone (a CYP2E1 probe drug) to assess diosmin's inhibitory effect, rather than reporting quantitative disposition parameters for diosmin itself. |
+| popPK | Russo_2015 | relevant | 8 | 0 | The study reports a non-compartmental pharmacokinetic profile of diosmin in rats, but specific numeric parameter values (CL, V, t1/2, etc.) are not present in the provided abstract or evidence text. |
 | popPK | Sher_1992 | irrelevant | 0 | 0 | In-vitro mechanistic study of amine uptake inhibition in cell lines; no PK disposition parameters for diosmin. |
-| popPK | Sheridan_2022 | irrelevant | 0 | 0 | The paper is a review of polyphenolic antiviral mechanisms and does not report pharmacokinetic parameters for diosmin. |
+| popPK | Sheridan_2022 | irrelevant | 0 | 0 | The paper is a review of polyphenolic antivirals and does not report quantitative pharmacokinetic parameters for diosmin. |
 | PD | Sheridan_2022 | not_relevant | 2 | 1 | The paper is a review discussing mechanisms and citing in vitro IC50s for various polyphenols, but it does not report a specific pharmacodynamic or exposure-response model with numeric parameters for diosmin. |
 | popPK | Singh_2021 | irrelevant | 0 | 0 | Diosmin is only listed as a phytochemical constituent of a plant extract; no PK parameters are reported. |
 | PD | Singh_2021 | not_relevant | 0 | 0 | The paper reports an IC50 for a crude plant extract, not for the specific drug diosmin, and does not provide a dose-response curve or PD parameters for diosmin itself. |
 | popPK | Sovrlić_2022 | irrelevant | 0 | 0 | In-vitro spectroscopic protein-binding study of tigecycline on HSA; diosmin is only a co-ligand, with no PK disposition parameters. |
 | PD | Sovrlić_2022 | not_relevant | 0 | 0 | The study investigates in vitro binding affinity and competition for Human Serum Albumin (HSA) using spectroscopy and docking, not in vivo pharmacodynamics or exposure-response relationships. |
-| popPK | Stanoiu_2025 | irrelevant | 0 | 0 | The study focuses on the characterization and biological activity of Inonotus obliquus delivery systems and does not involve diosmin or pharmacokinetic modeling. |
+| popPK | Stanoiu_2025 | irrelevant | 0 | 0 | The study focuses on Inonotus obliquus delivery systems and has no relation to diosmin pharmacokinetics. |
 | PD | Stanoiu_2025 | not_relevant | 0 | 0 | The paper focuses on the characterization of Inonotus obliquus delivery systems and does not mention diosmin or report any pharmacodynamic or exposure-response data. |
 | popPK | Sun_2022 | irrelevant | 0 | 0 | This is an in-vitro antioxidant/LDL oxidation study of plant flavonoids; diosmin is only a minor identified component (2.88%), with no PK parameters. |
 | PD | Sun_2022 | not_relevant | 0 | 0 | The paper reports in vitro antioxidant and anti-glycation activities of a flavonoid mixture (PEF) and identifies diosmin as a constituent, but it does not perform a pharmacokinetic or pharmacodynamic analysis for diosmin specifically, nor does it provide exposure-response or dose-response parameters (e.g., EC50, Emax) for diosmin in a biological system. |
@@ -143,19 +163,19 @@ _14 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | PD | Taleghani_2025 | not_relevant | 0 | 0 | The paper is a phytochemical and in vitro biological activity study of plant fractions; it identifies diosmin as a constituent but does not report any pharmacodynamic or exposure-response analysis for diosmin specifically. |
 | popPK | Vyas_2024 | irrelevant | 0 | 0 | In vitro/in silico enzyme inhibition study with no pharmacokinetic disposition parameters for diosmin. |
 | PD | Vyas_2024 | not_relevant | 0 | 0 | The paper focuses on in vitro enzyme inhibition and molecular docking of plant polyphenols, not on the pharmacokinetic or pharmacodynamic modeling of diosmin in a biological system. |
-| popPK | Wahyuningsih_2026 | irrelevant | 0 | 0 | The paper is a review on nanocarrier delivery systems for diabetic wound healing and does not report quantitative pharmacokinetic parameters for diosmin. |
+| popPK | Wahyuningsih_2026 | irrelevant | 0 | 0 | The paper is a review focused on nanocarrier delivery mechanisms for diabetic wound healing and does not report any quantitative pharmacokinetic parameters for diosmin. |
 | PD | Wahyuningsih_2026 | not_relevant | 0 | 0 | The paper is a review of nanocarrier delivery systems for phytochemicals in diabetic wound healing and does not report any specific pharmacodynamic or exposure-response data for diosmin. |
 | popPK | Wang_2005 | irrelevant | 1 | 1 | In-vitro transporter inhibition study (OATP1B1 in HeLa cells); diosmin is only a tested modulator, no PK disposition parameters. |
 | PD | Wang_2005 | not_relevant | 0 | 0 | The paper reports in vitro transporter inhibition (IC50/Ki) for flavonoids, not a pharmacodynamic exposure-response or dose-response relationship for diosmin in a physiological or clinical context. |
-| popPK | Wang_2026 | irrelevant | 0 | 0 | The paper describes a molecular foundational model for chemical structure representation and generation, containing no pharmacokinetic data for diosmin. |
+| popPK | Wang_2026 | irrelevant | 0 | 0 | The paper describes a computational molecular foundational model for drug design and does not report any pharmacokinetic parameters for diosmin. |
 | PD | Wang_2026 | not_relevant | 0 | 0 | The paper describes a molecular foundational model for chemical representation and generation, containing no pharmacodynamic or exposure-response data for diosmin. |
 | popPK | Xie_2009 | irrelevant | 0 | 0 | This is a natural product isolation and cytotoxicity study; diosmin is only an isolated compound with IC50 data, no PK parameters. |
 | PD | Xie_2009 | not_relevant | 0 | 0 | The paper reports an IC50 for diosmin only qualitatively as "little cytotoxic activity" without providing a specific numeric value or dose-response curve parameters. |
-| popPK | Xu_2024 | irrelevant | 0 | 0 | This is a critical review of flavonoid drugs and clinical candidates without original pharmacokinetic data or quantitative disposition parameters for diosmin. |
+| popPK | Xu_2024 | irrelevant | 0 | 0 | The paper is a critical review of flavonoid drugs that does not report quantitative pharmacokinetic parameters for diosmin. |
 | PD | Xu_2024 | not_relevant | 1 | 0 | The paper is a critical review of flavonoid drug development and informatics analysis, containing no specific pharmacodynamic modeling, exposure-response data, or numeric PD parameters for diosmin. |
-| popPK | Xu_2025 | irrelevant | 0 | 0 | This is a narrative review of flavonoids in digestive diseases and does not report quantitative pharmacokinetic parameters for diosmin. |
+| popPK | Xu_2025 | irrelevant | 0 | 0 | The paper is a general review of flavonoids in digestive diseases and contains no pharmacokinetic data or quantitative disposition parameters for diosmin. |
 | PD | Xu_2025 | not_relevant | 1 | 0 | The paper is a narrative review of flavonoids in digestive diseases and does not report specific pharmacokinetic or pharmacodynamic data, exposure-response relationships, or numeric PD parameters for diosmin. |
-| popPK | Zhang_2026 | irrelevant | 0 | 0 | The paper focuses on antibacterial drug repurposing and does not involve diosmin or pharmacokinetic parameters. |
+| popPK | Zhang_2026 | irrelevant | 0 | 0 | The paper focuses on the antibacterial discovery of lifitegrast via drug repurposing and contains no pharmacokinetic data for diosmin. |
 | PD | Zhang_2026 | not_relevant | 0 | 0 | The paper focuses on drug repurposing for antibacterial discovery and does not mention diosmin or report any pharmacodynamic parameters for it. |
 
 ---

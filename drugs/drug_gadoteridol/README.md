@@ -28,7 +28,15 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Yuh_1991_lesion_contrast_ratio](drugs/drug_gadoteridol/pd_Yuh_1991_lesion_contrast_ratio.md) | lesion contrast ratio ← gadoteridol · direct linear effect | — | Yuh WT et al., MR evaluation of CNS tumors: dose compa…, Radiology (1991) | [10.1148/radiology.180.2.2068317](https://doi.org/10.1148/radiology.180.2.2068317) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Yuh_1991_lesion_contrast_ratio](drugs/drug_gadoteridol/pd_Yuh_1991_lesion_contrast_ratio.md) | lesion contrast ratio ← gadoteridol · direct linear effect | — | Yuh WT et al., MR evaluation of CNS tumors: dose compa…, Radiology (1991) | [10.1148/radiology.180.2.2068317](https://doi.org/10.1148/radiology.180.2.2068317) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=gadoteridol).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

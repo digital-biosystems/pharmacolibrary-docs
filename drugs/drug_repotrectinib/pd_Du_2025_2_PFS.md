@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;repotrectinib&quot;,&quot;href&quot;:&quot;drugs/drug_repotrectinib/&quot;},{&quot;label&quot;:&quot;Du_2025_2 \u00b7 PD progression-free survival&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Repotrectinib_Du2025_reference&quot;,&quot;label&quot;:&quot;Du_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_repotrectinib/Repotrectinib_Du2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # progression-free survival — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span>
@@ -18,9 +17,9 @@
 
 **Model:** No model was generated from this record.
 
-> Time-varying cumulative half-daily average repotrectinib concentration (Cavgc) was related to time to a PFS event using semiparametric Cox proportional-hazards models; higher exposure was associated with longer PFS in ROS1-positive NSCLC, while the NTRK-positive solid-tumor relationship was not significant but trended toward longer PFS. The paper does not specify a biological mechanism or report potency or rate parameter values for this relationship.
+> The paper uses a Cox proportional hazards model to link the time-varying cumulative half-daily average concentration (Cavgc) of repotrectinib to progression-free survival, treating the drug concentration as a covariate that modifies the hazard rate over time. The excerpts do not specify mechanistic parameters such as Imax, IC50, ke0, or rate constants, noting only that higher exposure was associated with longer PFS.
 >
-> <sub>Source-based summary by gpt-6-luna from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Du_2025_2`
 - **model family:** `tte`

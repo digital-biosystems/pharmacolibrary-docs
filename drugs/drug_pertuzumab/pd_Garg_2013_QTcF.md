@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;pertuzumab&quot;,&quot;href&quot;:&quot;drugs/drug_pertuzumab/&quot;},{&quot;label&quot;:&quot;Garg_2013 \u00b7 PD \u0394QTcF&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pertuzumab_Luo2017_reference&quot;,&quot;label&quot;:&quot;Luo_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pertuzumab/Pertuzumab_Luo2017_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pertuzumab_Sakaeda2024_10_mg_kg_iv&quot;,&quot;label&quot;:&quot;Sakaeda_2024_10_mg_kg_iv&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pertuzumab/Pertuzumab_Sakaeda2024_10_mg_kg_iv.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pertuzumab_Luo2017_reference&quot;,&quot;label&quot;:&quot;Luo_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pertuzumab/Pertuzumab_Luo2017_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pertuzumab_Sun2022_reference&quot;,&quot;label&quot;:&quot;Sun_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pertuzumab/Pertuzumab_Sun2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pertuzumab_Sakaeda2024_10_mg_kg_iv&quot;,&quot;label&quot;:&quot;Sakaeda_2024_10_mg_kg_iv&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pertuzumab/Pertuzumab_Sakaeda2024_10_mg_kg_iv.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ΔQTcF — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.625). Primary extraction retained.">cross-check: disputed</span>
@@ -18,9 +18,9 @@
 
 **Model:** No model was generated from this record.
 
-> A linear mixed-effects model evaluated the relationship between observed pertuzumab serum concentrations (μg/ml) and the placebo-corrected change in QTcF (ΔΔQTcF, ms), but the slope was not statistically significant (−0.0093 ms/μg/ml, SE 0.0167), indicating no apparent exposure–response relationship. The model included a cycle-specific intercept with a significant difference of −9.5 ms (SE 2.8 ms) between Cycle 3 and Cycle 1, attributed to intercycle variability in baseline QTcF.
+> The paper reports a linear mixed-effects model in which observed pertuzumab concentrations (μg/ml) were tested against ΔQTcF (ms), but the slope was non-significant (−0.0093), indicating no relationship and no specific mechanism (e.g., inhibition or production) was identified. The model instead captured a statistically significant difference in the intercept between Cycle 3 and Cycle 1 of −9.5 ms (with a standard error of 2.8 ms) due to intercycle variability.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Garg_2013`
 - **model family:** `linear`
@@ -35,9 +35,8 @@ Garg A et al., Exposure-response analysis of pertuzuma…, Cancer chemotherapy a
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | Intercept for Cycle 1 | `Q324` · not captured | 3.4 | ms | not captured | llm (not captured) | Garg_2013:pdv3 |
-| model term | Difference in intercept (Cycle 3 vs. Cycle 1) | `Q900` · not captured | -9.5 | ms | not captured | llm (not captured) | Garg_2013:pdv3 |
-| PD (effect) | Slope | `Q335` · not captured | NS | ms/μg/ml | not captured | llm (not captured) | Garg_2013:pdv3 |
+| model term | Intercept for Cycle 1 (ms) | `Q900` · not captured | 3.4 | ms | not captured | llm (not captured) | Garg_2013:pdv3 |
+| model term | Difference in intercept (Cycle 3 vs. Cycle 1) | `Q900` · not captured | −9.5 | ms | not captured | llm (not captured) | Garg_2013:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>

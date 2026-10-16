@@ -16,13 +16,13 @@
 
 ### Reviewer guidance
 
-**The record was rejected because the peripheral compartment is unreachable from the dose, and the second reader could not verify any parameter values.**
+**C5 dimension mismatch on a structural parameter; c2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).**
 
-The model structure defines a peripheral compartment with a volume of 4.42 L, but the review found this compartment is unreachable from the dose. The second reader disagreed with the extracted values for clearance (0.189 L/day) and all volumes, marking them as null. Consequently, the record lacks verified pharmacokinetic parameters for odronextamab. Extracted — odronextamab: V1 4.99 L, V2 4.42 L, V 9.41 L, CL 0.189 L/day.
+A reported unit could not be converted (albumin_effect_on_v_c_and_v_p, female_sex_effect_on_v_c_and_v_p, Vmax and equation variable), so that value has no SI equivalent. Extracted — odronextamab: CL 0.189 L/day, Q 1.21 L/day, V1 4.99 L, V2 4.42 L, Vmax 2.93 mg/L/day, V -0.133.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has odronextamab, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Bravo Padros M et al., Pharmacokinetics of Odronextamab, A Bis…, CPT: pharmacometrics & syst… (2026)
@@ -31,7 +31,7 @@ Bravo Padros M et al., Pharmacokinetics of Odronextamab, A Bis…, CPT: pharmaco
 <div class="pk-model-meta" hidden drug="odronextamab" model-id="Odronextamab_Bravo2026_reference" status="rejected" stale="false" population="adult patients with relapsed or refractory B-cell non-Hodgkin lymphoma" measured-compound="odronextamab" parameterization="mechanistic" topology="3C"></div>
 
 **Model structure:** 3-compartment; no model was built for this record.  
-**Parameters:** 4 extracted.
+**Parameters:** 6 extracted, plus 5 covariate effects.
 
 **Parameterization:** mechanistic.
 
@@ -40,10 +40,18 @@ Bravo Padros M et al., Pharmacokinetics of Odronextamab, A Bis…, CPT: pharmaco
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| V c | `Q63` · V1 | 4.99 | L | 0.0049900000000000005 | L | not captured | space_fold (0.95) | Bravo_2026:other_prose | — | not captured |
-| V p | `Q64` · V2 | 4.42 | L | 0.00442 | L | not captured | space_fold (0.95) | Bravo_2026:other_prose | — | not captured |
-| volume of distribution at steady state | `Q61` · V | 9.41 | L | 0.00941 | L | not captured | boundary (0.8) | Bravo_2026:other_prose | — | not captured |
-| linear clearance | `Q22` · CL | 0.189 | L/day | 2.1875e-09 | L/h | not captured | boundary (0.8) | Bravo_2026:discussion_prose | — | not captured |
+| Linear clearance, CL (L/day) | `Q22` · CL | 0.189 | L/day | 2.1875e-09 | [l] / [d] | not captured | llm_confirmed (0.6) | psp470162-tbl-0002:row1:col1, psp470162-tbl-0002:row1:col2, psp470162-tbl-0002:row1:col3 | — | not captured |
+| Intercompartmental clearance, Q (L/day) | `Q30` · Q | 1.21 | L/day | 1.4004629629629629e-08 | [l] / [d] | not captured | llm_confirmed (0.6) | psp470162-tbl-0002:row7:col1, psp470162-tbl-0002:row7:col2, psp470162-tbl-0002:row7:col3 | — | not captured |
+| Volume of distribution of central compartment, V c (L) | `Q63` · V1 | 4.99 | L | 0.0049900000000000005 | [l] | not captured | boundary_compartment (0.9) | psp470162-tbl-0002:row8:col1, psp470162-tbl-0002:row8:col2, psp470162-tbl-0002:row8:col3 | — | not captured |
+| Volume of distribution of peripheral compartment, V p (L) | `Q64` · V2 | 4.42 | L | 0.00442 | [l] | not captured | boundary_compartment (0.9) | psp470162-tbl-0002:row9:col1, psp470162-tbl-0002:row9:col2, psp470162-tbl-0002:row9:col3 | — | not captured |
+| albumin_effect_on_v_c_and_v_p | `Q900` · albumin_effect_on_v_c_and_v_p | -0.561 | 0 | not captured | [0] | not captured | not captured (not captured) | psp470162-tbl-0002:row10:col2, psp470162-tbl-0002:row10:col3 | — | not captured |
+| female_sex_effect_on_v_c_and_v_p | `Q900` · female_sex_effect_on_v_c_and_v_p | -0.186 | 0 | not captured | [0] | not captured | not captured (not captured) | psp470162-tbl-0002:row12:col3 | — | not captured |
+| Baseline maximum velocity of Michaelis–Menten elimination, V max,0 (mg/L/day) | `Q66` · Vmax | 2.93 | mg/L/day | not captured | [mg] / [[d] · [l]] | not captured | llm_corrected (0.6) | psp470162-tbl-0002:row14:col1, psp470162-tbl-0002:row14:col2, psp470162-tbl-0002:row14:col3 | — | not captured |
+| Follicular lymphoma effect on V max,0 | `Q900` · equation variable | -0.252 | 0 | not captured | [0] | not captured | llm (0.6) | psp470162-tbl-0002:row17:col2, psp470162-tbl-0002:row17:col3 | — | not captured |
+| Follicular lymphoma effect on R v | `Q61` · V | -0.133 | not captured | not captured | not captured | not captured | llm (0.6) | psp470162-tbl-0002:row25:col2, psp470162-tbl-0002:row25:col3 | — | not captured |
+| theta_cl_albumin | `Q900` · theta_cl_albumin | -0.933 | not captured | not captured | not captured | not captured | not captured (not captured) | psp470162-tbl-0002:row2:col2, psp470162-tbl-0002:row2:col3 | — | not captured |
+| theta_cl_body_weight | `Q900` · theta_cl_body_weight | 0.854 | not captured | not captured | not captured | not captured | not captured (not captured) | psp470162-tbl-0002:row3:col2, psp470162-tbl-0002:row3:col3 | — | not captured |
+| theta_v_body_weight | `Q900` · theta_v_body_weight | 0.372 | not captured | not captured | not captured | not captured | not captured (not captured) | psp470162-tbl-0002:row11:col2, psp470162-tbl-0002:row11:col3 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -53,10 +61,30 @@ Bravo Padros M et al., Pharmacokinetics of Odronextamab, A Bis…, CPT: pharmaco
 ## Departures & gaps
 
 **Interpretation flags:**
-- salvaged Q63 ('V c'=4.99) from results prose — parameter table was unreadable
-- salvaged Q64 ('V p'=4.42) from results prose — parameter table was unreadable
-- salvaged Q61 ('volume of distribution at steady state'=9.41) from results prose — parameter table was unreadable
-- salvaged Q22 ('linear clearance'=0.189) from results prose — parameter table was unreadable
+- dropped unlinked row (NIL): 'Immunoglobulin G effect on CL' — extend the ontology if this is a real PK parameter (source ['psp470162-tbl-0002:row4:col2', 'psp470162-tbl-0002:row4:col3'])
+- dropped duplicate Q22 ('Interferon gamma effect on CL', value '0.0274') — already have one for this compound
+- dropped duplicate Q22 ('Interleukin 10 effect on CL', value '-0.0717') — already have one for this compound
+- covariate level 'Albumin effect on V c and V p' → Q900:albumin_effect_on_v_c_and_v_p = -0.561 (linear_fractional on Q22)
+- covariate level 'Female sex effect on V c and V p' → Q900:female_sex_effect_on_v_c_and_v_p = -0.186 (linear_fractional on Q22)
+- dropped unlinked row (NIL): 'Lymphocyte count effect on V c and V p' — extend the ontology if this is a real PK parameter (source ['psp470162-tbl-0002:row13:col2', 'psp470162-tbl-0002:row13:col3'])
+- unit_dimension_mismatch: 'Baseline maximum velocity of Michaelis–Menten elimination, V max,0 (mg/L/day)' → Q66 (unit '[mass] / [length] ** 3 / [time]' vs ontology '[length] ** 3') — route to review
+- unit_dimension_mismatch: 'Ann Arbor stage &lt; 4 effect on V max,0' → Q66 (unit 'dimensionless' vs ontology '[length] ** 3') — route to review
+- dropped duplicate Q66 ('Ann Arbor stage &lt; 4 effect on V max,0', value '-0.285') — already have one for this compound
+- dropped unlinked row (NIL): 'Lymphocyte count effect on V max,0' — extend the ontology if this is a real PK parameter (source ['psp470162-tbl-0002:row16:col2', 'psp470162-tbl-0002:row16:col3'])
+- unit_dimension_mismatch: 'Prior CAR T therapy effect on V max,0' → Q66 (unit 'dimensionless' vs ontology '[length] ** 3') — route to review
+- dropped duplicate Q66 ('Prior CAR T therapy effect on V max,0', value '-0.201') — already have one for this compound
+- dropped unlinked row (NIL): 'Tumor size effect on V max,0' — extend the ontology if this is a real PK parameter (source ['psp470162-tbl-0002:row19:col2', 'psp470162-tbl-0002:row19:col3'])
+- dropped PD-category row 'Concentration reaching 50% of V max,0, k m (mg/L)' → Q321 (EC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['psp470162-tbl-0002:row20:col1', 'psp470162-tbl-0002:row20:col2', 'psp470162-tbl-0002:row20:col3'])
+- dropped PD-category row 'Rate constant describing the decline in V max per unit of time, K v (1/day)' → Q335 (slope, category G13) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['psp470162-tbl-0002:row21:col1', 'psp470162-tbl-0002:row21:col2', 'psp470162-tbl-0002:row21:col3'])
+- dropped unlinked row (NIL): 'Follicular lymphoma effect on K v' — extend the ontology if this is a real PK parameter (source ['psp470162-tbl-0002:row22:col2', 'psp470162-tbl-0002:row22:col3'])
+- dropped unlinked row (NIL): 'Other B‐NHL type effect on K v' — extend the ontology if this is a real PK parameter (source ['psp470162-tbl-0002:row23:col2', 'psp470162-tbl-0002:row23:col3'])
+- dropped unlinked row (NIL): 'Asymptotic V max (V max,asym) to V max,0 ratio, R v' — extend the ontology if this is a real PK parameter (source ['psp470162-tbl-0002:row24:col1', 'psp470162-tbl-0002:row24:col2', 'psp470162-tbl-0002:row24:col3'])
+- dropped unlinked row (NIL): 'Other B‐NHL type effect on R v' — extend the ontology if this is a real PK parameter (source ['psp470162-tbl-0002:row26:col2', 'psp470162-tbl-0002:row26:col3'])
+- routed 'Variance of between‐patient variability in V c' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
+- routed 'Variance of between‐patient variability in V max,0' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
+- routed 'Variance of between‐patient variability in V p' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
+- unit inherited for albumin_effect_on_v_c_and_v_p (Q900): '0' from a same-Q-code sibling (this row's label had no unit)
+- unit inherited for female_sex_effect_on_v_c_and_v_p (Q900): '0' from a same-Q-code sibling (this row's label had no unit)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=odronextamab
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - structure disagreement: deterministic 3C vs LLM 2C — review compartment count
@@ -64,6 +92,7 @@ Bravo Padros M et al., Pharmacokinetics of Odronextamab, A Bis…, CPT: pharmaco
 - molar mass: none found for 'odronextamab' — its concentrations stay mass-only
 
 **Extraction notes:**
+- table psp470162-tbl-0002: unparsed_numeric_cell
 - LLM selected parameter table(s) 2
 
 ## Validation
@@ -108,15 +137,21 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.189 | not captured | not captured | ['Bravo_2026:discussion_prose'] |
-| C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.00788 L/h | not captured | not captured | ['Bravo_2026:discussion_prose'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 9.41 L | not captured | not captured | ['Bravo_2026:other_prose'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 4.99 L | not captured | not captured | ['Bravo_2026:other_prose'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 4.42 L | not captured | not captured | ['Bravo_2026:other_prose'] |
+| C2_base_sign_Q61 | fail | not captured | -0.133 | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp470162-tbl-0002:row1:col1', 'psp470162-tbl-0002:row1:col2', 'psp470162-tbl-0002:row1:col3'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp470162-tbl-0002:row7:col1', 'psp470162-tbl-0002:row7:col2', 'psp470162-tbl-0002:row7:col3'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp470162-tbl-0002:row8:col1', 'psp470162-tbl-0002:row8:col2', 'psp470162-tbl-0002:row8:col3'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp470162-tbl-0002:row9:col1', 'psp470162-tbl-0002:row9:col2', 'psp470162-tbl-0002:row9:col3'] |
+| C5_dimension_Q66 | fail | [mass] / [length] ** 3 / [time] | mg/L/day | not captured | not captured | ['psp470162-tbl-0002:row14:col1', 'psp470162-tbl-0002:row14:col2', 'psp470162-tbl-0002:row14:col3'] |
+| C5_unit_missing_Q61 | fail | [length] ** 3 | not captured | not captured | not captured | ['psp470162-tbl-0002:row25:col2', 'psp470162-tbl-0002:row25:col3'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.189 | not captured | not captured | ['psp470162-tbl-0002:row1:col1', 'psp470162-tbl-0002:row1:col2', 'psp470162-tbl-0002:row1:col3'] |
+| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.00788 L/h | not captured | not captured | ['psp470162-tbl-0002:row1:col1', 'psp470162-tbl-0002:row1:col2', 'psp470162-tbl-0002:row1:col3'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 4.99 L | not captured | not captured | ['psp470162-tbl-0002:row8:col1', 'psp470162-tbl-0002:row8:col2', 'psp470162-tbl-0002:row8:col3'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 4.42 L | not captured | not captured | ['psp470162-tbl-0002:row9:col1', 'psp470162-tbl-0002:row9:col2', 'psp470162-tbl-0002:row9:col3'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -125,7 +160,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_odronextamab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Bravo_2026` / `Bravo_2026::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_odronextamab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Bravo_2026` / `Bravo_2026::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -141,4 +176,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 18:32 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 03:59 UTC</sub>

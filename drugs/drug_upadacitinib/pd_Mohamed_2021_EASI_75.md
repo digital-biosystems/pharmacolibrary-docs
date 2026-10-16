@@ -1,7 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;upadacitinib&quot;,&quot;href&quot;:&quot;drugs/drug_upadacitinib/&quot;},{&quot;label&quot;:&quot;Mohamed_2021 \u00b7 PD EASI-75&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;upadacitinib&quot;,&quot;href&quot;:&quot;drugs/drug_upadacitinib/&quot;},{&quot;label&quot;:&quot;Mohamed_2021 \u00b7 PD EASI\u201075&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Upadacitinib_Klnder2018_reference&quot;,&quot;label&quot;:&quot;Kl\u00fcnder_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_upadacitinib/Upadacitinib_Klnder2018_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Upadacitinib_Klnder2019_reference&quot;,&quot;label&quot;:&quot;Kl\u00fcnder_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_upadacitinib/Upadacitinib_Klnder2019_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Mohamed_2021_EASI_75&quot;,&quot;label&quot;:&quot;Mohamed_2021 \u00b7 EASI-75&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_upadacitinib/pd_Mohamed_2021_EASI_75.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Mohamed_2021_EASI_90&quot;,&quot;label&quot;:&quot;Mohamed_2021 \u00b7 EASI-90&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_upadacitinib/pd_Mohamed_2021_EASI_90.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Mohamed_2021_IGA_0_1&quot;,&quot;label&quot;:&quot;Mohamed_2021 \u00b7 IGA 0/1&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_upadacitinib/pd_Mohamed_2021_IGA_0_1.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# EASI-75 — PD  <span class="pk-badge pk-badge--orange">needs review</span>
+# EASI‐75 — PD  <span class="pk-badge pk-badge--orange">needs review</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -13,11 +14,11 @@
 
 ## Record summary
 
-**As extracted:** Upadacitinib (concentrations from the PK model of Klünder_2018) drives EASI-75: direct Emax (saturable) effect.
+**As extracted:** Upadacitinib (concentrations from the PK model of Bhatnagar_2024::as) drives EASI‐75: direct Emax (saturable) effect.
 
-**Model:** No model was generated from this record.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
-> The paper describes a direct Emax effect where the average plasma concentration (Cavg) of upadacitinib increases the logit probability of achieving the binary EASI-75 response, without specifying a physiological mechanism of action. The model parameters are an intercept of -2.43, an Emax of 5.35 on the logit scale, and an EC50 of 18.6 ng/mL.
+> The paper models the probability of achieving a binary EASI-75 response using a logistic Emax model driven by upadacitinib average plasma concentration (Cavg). The model estimates an Intercept of -2.43, an Emax of 5.35 (logit scale), and an EC50 of 18.6 ng/mL, without specifying a mechanism for drug action beyond this exposure-response relationship.
 >
 > <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
@@ -25,7 +26,7 @@
 - **model family:** `emax`
 - **driver:** `cited_pk`
 - **tier:** descriptive
-- **effect:** stimulation/additive
+- **effect:** stimulation/proportional
 
 ## Citation
 Mohamed MF et al., Exposure-Response Analyses for Upadacit…, Journal of clinical pharmac… (2021)
@@ -44,25 +45,63 @@ Mohamed MF et al., Exposure-Response Analyses for Upadacit…, Journal of clinic
 </details>
 
 
+## Exposure-response model
+
+`Upadacitinib_Mohamed2021_PD_easi_75` — sigmoid_emax, `response = E0 + Emax*frac`
+
+| parameter | value (paper units) | SI |
+|---|---|---|
+| E0 | 0 | — |
+| Emax | 5.35 | — |
+| EC50 | 18.6 ng/mL | 1.86e-05 kg/m3 |
+| gamma | 1 | — |
+
+Closed-form check points (response, SI): `at_0` = 0, `at_EC50` = 2.675, `at_inf` = 5.35
+
+Deviations:
+
+- `defaulted_parameters` — E0, gamma
+
+## Review
+
+Verdict <span class="pk-badge pk-badge--orange">needs review</span> · route to `scholar`
+
+| check | status | note |
+|---|---|---|
+| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
+| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
+| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
+| `T2_direction` | pass | the response rises, as direct effect predicts |
+| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
+| `T4_defaults` | fail | a core parameter took a library default: E0 |
+
+Advisory:
+
+- defaulted: E0 — a row the paper has and the record lacks
+
+
 <div class="pk-tab-mark" data-tab="Models"></div>
 
 ## Model downloads
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_upadacitinib/Upadacitinib_Mohamed2021_PD_easi_75/Upadacitinib_Mohamed2021_PD_easi_75_modelica.zip" download>Upadacitinib_Mohamed2021_PD_easi_75_modelica.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_upadacitinib/Upadacitinib_Mohamed2021_PD_easi_75/Upadacitinib_Mohamed2021_PD_easi_75_matlab.zip" download>Upadacitinib_Mohamed2021_PD_easi_75_matlab.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_upadacitinib/Upadacitinib_Mohamed2021_PD_easi_75/Upadacitinib_Mohamed2021_PD_easi_75_sbml.zip" download>Upadacitinib_Mohamed2021_PD_easi_75_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_upadacitinib/Upadacitinib_Mohamed2021_PD_easi_75/Upadacitinib_Mohamed2021_PD_easi_75_cellml.zip" download>Upadacitinib_Mohamed2021_PD_easi_75_cellml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PD_SigmoidEmaxSweep.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+<dbs-fmusim paramsurl="drugs/drug_upadacitinib/Upadacitinib_Mohamed2021_PD_easi_75/Upadacitinib_Mohamed2021_PD_easi_75_params.json" metaurl="assets/fmu/PD_SigmoidEmaxSweep.vr.json" wasmurl="assets/fmu/PD_SigmoidEmaxSweep.js" controlsurl="drugs/drug_upadacitinib/Upadacitinib_Mohamed2021_PD_easi_75/Upadacitinib_Mohamed2021_PD_easi_75_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PD_SigmoidEmaxSweep` · parameters `Upadacitinib_Mohamed2021_PD_easi_75_params.json` · controls `Upadacitinib_Mohamed2021_PD_easi_75_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 

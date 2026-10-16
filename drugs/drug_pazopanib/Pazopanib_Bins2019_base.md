@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;pazopanib&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/&quot;},{&quot;label&quot;:&quot;Bins_2019 \u00b7 base&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pazopanib_Attia2023_reference&quot;,&quot;label&quot;:&quot;Attia_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Attia2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pazopanib_Balakirouchenane2020_reference&quot;,&quot;label&quot;:&quot;Balakirouchenane_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Balakirouchenane2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pazopanib_Bins2019_base&quot;,&quot;label&quot;:&quot;Bins_2019_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Bins2019_base.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Pazopanib_Bins2019_final&quot;,&quot;label&quot;:&quot;Bins_2019_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Bins2019_final.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pazopanib_Ozbey2021_reference&quot;,&quot;label&quot;:&quot;Ozbey_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Ozbey2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pazopanib_Attia2023_reference&quot;,&quot;label&quot;:&quot;Attia_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Attia2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pazopanib_Balakirouchenane2020_reference&quot;,&quot;label&quot;:&quot;Balakirouchenane_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Balakirouchenane2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pazopanib_Ozbey2021_reference&quot;,&quot;label&quot;:&quot;Ozbey_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Ozbey2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # pazopanib — `Pazopanib_Bins2019_base`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.808). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.808). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -13,39 +13,42 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** Model and browser simulation available in **Models** and **Simulation**.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**C5 dimension mismatch on a structural parameter; c8 unreachable/orphan compartment or unlinked metabolite.**
+
+A reported unit could not be converted (Fab, fm, Frel and λ1), so that value has no SI equivalent. Extracted — pazopanib: kabs 0.38 h−1, Fab 35 %, fm 65 %, CL 0.27 L/h, V1 2.39 L, V2 25.3 L, Frel 49.7 %, λ1 0.15 Day−1.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of dose level with half of bioavailability at dose 200 mg: this record has none, the second reading 478; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Bins S et al., Impact of CYP3A4*22 on Pazopanib Pharma…, Clinical pharmacokinetics (2019)
   ·  DOI: [10.1007/s40262-018-0719-5](https://doi.org/10.1007/s40262-018-0719-5)
 
-<div class="pk-model-meta" hidden drug="pazopanib" model-id="Pazopanib_Bins2019_base" status="curated_candidate" stale="false" population="cancer patients" measured-compound="pazopanib" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="pazopanib" model-id="Pazopanib_Bins2019_base" status="rejected" stale="false" population="cancer patients" measured-compound="pazopanib" parameterization="mechanistic" topology="2C"></div>
 
-**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
-**Parameters:** 9 extracted.
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 8 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Fast absorption rate constant | `Q49` · kabs | 0.38 | 1/h | 0.00010555555555555555 | 1/h | 32 | llm_confirmed (0.6) | Tab4:row1:col2 | — | 142 (20% RSE) |
-| Fraction of fast absorption | `Q40` · Fab | 35 | not captured | not captured | not captured | 34 | llm_confirmed (0.6) | Tab4:row3:col2 | — | not captured |
-| Lag time between fast and slow absorption | `Q83` · tlag | 0.98 | h | 3528.0 | h | 6 | llm_corrected (0.6) | Tab4:row5:col2 | — | not captured |
-| Clearance | `Q22` · CL | 0.27 | L/h | 7.5e-08 | L/h | 23 | exact (1.0) | Tab4:row6:col2 | — | 31 (20% RSE) |
-| Volume of distribution of central compartment | `Q63` · V1 | 2.39 | L | 0.00239 | L | 35 | boundary_compartment (0.9) | Tab4:row8:col2 | — | not captured |
-| Inter-compartment clearance | `Q30` · Q | 0.99 | L/h | 2.75e-07 | L/h | 29 | llm_corrected (0.6) | Tab4:row9:col2 | — | not captured |
-| Volume of distribution of peripheral compartment | `Q64` · V2 | 25.3 | L | 0.0253 | L | 27 | boundary_compartment (0.9) | Tab4:row10:col2 | — | 98 (17% RSE) |
-| Magnitude of decrease in relative bioavailability in time | `Q87` · Frel | 49.7 | not captured | not captured | not captured | 27 | llm_confirmed (0.6) | Tab4:row12:col2 | — | 36 (16% RSE) |
-| First-order decay constant | `Q47` · kel | 0.15 | 1/h | 4.1666666666666665e-05 | 1/h | 44 | llm (0.6) | Tab4:row13:col2 | — | not captured |
+| Fast absorption rate constant | `Q49` · kabs | 0.38 | h−1 | 0.00010555555555555555 | [1] / [h] | 32 | llm_confirmed (0.6) | Tab4:row1:col2 | — | 142 (20% RSE) |
+| Fraction of fast absorption | `Q40` · Fab | 35 | % | not captured | [%] | 34 | llm_confirmed (0.6) | Tab4:row3:col2 | — | not captured |
+| Fraction of slow absorption | `Q45` · fm | 65 | % | not captured | [%] | 34 | llm_corrected (0.6) | Tab4:row4:col2 | — | not captured |
+| Clearance | `Q22` · CL | 0.27 | L/h | 7.5e-08 | [l] / [h] | 23 | exact (1.0) | Tab4:row6:col2 | — | 31 (20% RSE) |
+| Volume of distribution of central compartment | `Q63` · V1 | 2.39 | L | 0.00239 | [l] | 35 | boundary_compartment (0.9) | Tab4:row8:col2 | — | not captured |
+| Volume of distribution of peripheral compartment | `Q64` · V2 | 25.3 | L | 0.0253 | [l] | 27 | boundary_compartment (0.9) | Tab4:row10:col2 | — | 98 (17% RSE) |
+| Magnitude of decrease in relative bioavailability in time | `Q87` · Frel | 49.7 | % | not captured | not captured | 27 | llm_confirmed (0.6) | Tab4:row12:col2 | — | 36 (16% RSE) |
+| First-order decay constant | `Q67` · λ1 | 0.15 | Day−1 | not captured | [1] / [d] | 44 | llm (0.6) | Tab4:row13:col2 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -59,23 +62,35 @@ Bins S et al., Impact of CYP3A4*22 on Pazopanib Pharma…, Clinical pharmacokine
 - table section iiv: 'Clearance' routed out of structural estimates ('Between-subject variability')
 - table section iiv: 'Volume of distribution of peripheral compartment' routed out of structural estimates ('Between-subject variability')
 - table section iiv: 'Relative bioavailability' routed out of structural estimates ('Between-subject variability')
+- table representations disagree for 'Fast absorption rate constant'; source reconciliation required
+- table representations disagree for 'Slow absorption rate constant'; source reconciliation required
+- table representations disagree for 'Fraction of fast absorption'; source reconciliation required
+- table representations disagree for 'Fraction of slow absorption'; source reconciliation required
+- table representations disagree for 'Lag time between fast and slow absorption'; source reconciliation required
+- table representations disagree for 'Clearance'; source reconciliation required
+- table representations disagree for 'Volume of distribution of central compartment'; source reconciliation required
+- table representations disagree for 'Inter-compartment clearance'; source reconciliation required
+- table representations disagree for 'Volume of distribution of peripheral compartment'; source reconciliation required
+- table representations disagree for 'Dose level with half of bioavailability at dose 200 mg'; source reconciliation required
+- table representations disagree for 'Magnitude of decrease in relative bioavailability in time'; source reconciliation required
+- table representations disagree for 'First-order decay constant'; source reconciliation required
+- table representations disagree for 'Relative bioavailability'; source reconciliation required
+- table representations disagree for 'Proportional residual error'; source reconciliation required
+- table representations disagree for 'Additive residual error'; source reconciliation required
 - dropped duplicate Q49 ('Slow absorption rate constant', value '0.12') — already have one for this compound
-- dropped duplicate Q40 ('Fraction of slow absorption', value '65') — already have one for this compound
-- implicit units: 'Fast absorption rate constant' → 1/h (from the popPK convention: 'A first-order absorption rate constant is conventionally expressed in 1/h; 0.38 is consistent with that unit.')
-- implicit units: 'Lag time between fast and slow absorption' → h (from the popPK convention: 'A lag time is conventionally expressed in h; 0.98 is consistent with that unit.')
-- implicit units: 'Clearance' → L/h (from the paper text: 'The text states clearance values as “0.18 vs. 0.27 L/h.”')
-- implicit units: 'Volume of distribution of central compartment' → L (from the popPK convention: 'A compartment volume is conventionally expressed in L; 2.39 is consistent with that unit.')
-- implicit units: 'Inter-compartment clearance' → L/h (from the popPK convention: 'Intercompartmental clearance is conventionally expressed in L/h; 0.99 is consistent with that unit.')
-- implicit units: 'Volume of distribution of peripheral compartment' → L (from the popPK convention: 'A compartment volume is conventionally expressed in L; 25.3 is consistent with that unit.')
-- implicit units: 'First-order decay constant' → 1/h (from the popPK convention: 'A first-order elimination rate constant is conventionally expressed in 1/h; 0.15 is consistent with that unit.')
+- dropped unlinked row (NIL): 'Lag time between fast and slow absorption' — extend the ontology if this is a real PK parameter (source ['Tab4:row5:col2'])
+- dropped duplicate Q22 ('Inter-compartment clearance', value '0.99') — already have one for this compound
+- unit_dimension_mismatch: 'First-order decay constant' → Q67 (unit '1 / [time]' vs ontology '[mass] / [time]') — route to review
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=pazopanib
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at route_to_review — not promoted
 - model-stage split: 'base model estimate [rse (%)] [16]' is the base model of Bins_2019 (paper reports 3 stages: base model estimate [rse (%)] [16], final model estimates [rse (%)], parameter estimate (rse %)); same population, different model-building step
+- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- unparsed cell Tab4:row1:col1 = 'h−1'
-- unparsed cell Tab4:row2:col1 = 'h−1'
-- unparsed cell Tab4:row13:col1 = 'Day−1'
-- unparsed cell Bins_2019_table_3:row4:col4 = '0.21a (1.58)'
+- table Tab4: representations disagree; selected evidence retained, not merged
+- table Bins_2019_table_3: ragged_grid
+- table Bins_2019_table_3: unparsed_numeric_cell
 - companion parameter table 3 transcribed (9 record(s))
 - LLM selected parameter table(s) 3, 4
 
@@ -110,32 +125,19 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 9 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 8 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab4:row6:col2'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab4:row9:col2'] |
-| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['Tab4:row13:col2'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Tab4:row1:col2'] |
 | C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab4:row8:col2'] |
 | C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab4:row10:col2'] |
-| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Tab4:row5:col2'] |
+| C5_dimension_Q67 | fail | 1 / [time] | Day−1 | not captured | not captured | ['Tab4:row13:col2'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.27 | not captured | not captured | ['Tab4:row6:col2'] |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.27 L/h | not captured | not captured | ['Tab4:row6:col2'] |
 | C9_phys_window_Q63 | pass | volume within physiological range | 2.39 L | not captured | not captured | ['Tab4:row8:col2'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 25.3 L | not captured | not captured | ['Tab4:row10:col2'] |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_output_variable | not captured | pass | C_central (measured=pazopanib) | central.C | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | pass | 7 scholar param(s) emitted or defaulted | 7 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -144,38 +146,20 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_pazopanib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Bins_2019` / `Bins_2019::base`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_pazopanib/models/modelica/Pazopanib_Bins2019_base.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_pazopanib/models/modelica/Pazopanib_Bins2019_base.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_pazopanib/models/modelica/Pazopanib_Bins2019_base.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_pazopanib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Bins_2019` / `Bins_2019::base`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_pazopanib/Pazopanib_Bins2019_base/Pazopanib_Bins2019_base_modelica.zip" download>Pazopanib_Bins2019_base_modelica.zip</a> <span class="pk-size">(4.6 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_pazopanib/Pazopanib_Bins2019_base/Pazopanib_Bins2019_base_fmi.zip" download>Pazopanib_Bins2019_base_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_pazopanib/Pazopanib_Bins2019_base/Pazopanib_Bins2019_base_matlab.zip" download>Pazopanib_Bins2019_base_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_pazopanib/Pazopanib_Bins2019_base/Pazopanib_Bins2019_base_matlab_simbio.zip" download>Pazopanib_Bins2019_base_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_pazopanib/Pazopanib_Bins2019_base/Pazopanib_Bins2019_base_sbml.zip" download>Pazopanib_Bins2019_base_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_pazopanib/Pazopanib_Bins2019_base/Pazopanib_Bins2019_base_cellml.zip" download>Pazopanib_Bins2019_base_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_pazopanib/Pazopanib_Bins2019_base/Pazopanib_Bins2019_base.svg" alt="Pazopanib_Bins2019_base diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 200 mg, single dose, first-order absorption (ka 0.38 /h, lag 58.8 min, F 478). Doses in the paper: 200–1000 mg.
-
-<dbs-fmusim paramsurl="drugs/drug_pazopanib/Pazopanib_Bins2019_base/Pazopanib_Bins2019_base_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_pazopanib/Pazopanib_Bins2019_base/Pazopanib_Bins2019_base_sim_controls.json"></dbs-fmusim>
-
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_2C_enteral` · parameters `Pazopanib_Bins2019_base_params.json` · controls `Pazopanib_Bins2019_base_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 04:37 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 20:23 UTC</sub>

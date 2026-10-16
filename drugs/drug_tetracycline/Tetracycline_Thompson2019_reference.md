@@ -5,7 +5,7 @@
 
 # tetracycline — `Tetracycline_Thompson2019_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (partly confirmed, agreement 0.5). Primary extraction retained.">cross-check: partial 1/2</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5), gpt-oss:120b (partly confirmed, agreement 0.5). Primary extraction retained.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -21,7 +21,7 @@
 
 The record lists clearance, volume, and absorption rate, but bioavailability and lag time were not extracted from the paper. Consequently, library placeholder values were used for these parameters instead of specific estimates. A second reader also disagreed on the assignment of the 96.8 liter value between volume and another field. Extracted — tetracycline: CL 3.32 liters/h, V 96.8 liters, kabs 0.414 h Ϫ1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q352: this record has none, the second reading 96.8; it also differs on 1 more field. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q352: this record has none, the second reading 96.8; it also differs on 1 more field. That field does not shape the model.
 
 <sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
@@ -61,18 +61,20 @@ Thompson EJ et al., Population Pharmacokinetics of Doxycycl…, Antimicrobial ag
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  1 of 2 readers agree  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
 Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | confirmed | 1.0 (5/5 fields) | none |
+| `gpt-oss-120b` | partly confirmed | 0.5 (2/4 fields) | 2 |
 | `gpt-oss:120b` | partly confirmed | 0.5 (2/4 fields) | 2 |
 
-<details><summary>2 field discrepancies</summary>
+<details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q352]` | not captured | 96.8 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q61]` | 96.8 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q352]` | not captured | 96.8 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q61]` | 96.8 | not captured | only_one_extracted |
 
@@ -117,10 +119,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_tetracycline/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Thompson_2019` / `Thompson_2019::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_tetracycline/models/modelica/Tetracycline_Thompson2019_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_tetracycline/models/modelica/Tetracycline_Thompson2019_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_tetracycline/models/modelica/Tetracycline_Thompson2019_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_tetracycline/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Thompson_2019` / `Thompson_2019::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_tetracycline/models/modelica/Tetracycline_Thompson2019_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_tetracycline/models/modelica/Tetracycline_Thompson2019_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_tetracycline/models/modelica/Tetracycline_Thompson2019_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -138,7 +140,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_tetracycline/Tetracycline_Thompson2019_reference/Tetracycline_Thompson2019_reference.svg" alt="Tetracycline_Thompson2019_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_tetracycline/Tetracycline_Thompson2019_reference/Tetracycline_Thompson2019_reference.svg" alt="Tetracycline_Thompson2019_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

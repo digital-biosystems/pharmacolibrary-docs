@@ -115,10 +115,10 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_remimazolam/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Chen_2025` / `Chen_2025::median_by_1_000_bootstraps`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_remimazolam/models/modelica/Remimazolam_Chen2025_median_by_1_000_bootstraps.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_remimazolam/models/modelica/Remimazolam_Chen2025_median_by_1_000_bootstraps.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_remimazolam/models/modelica/Remimazolam_Chen2025_median_by_1_000_bootstraps.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_remimazolam/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Chen_2025` / `Chen_2025::median_by_1_000_bootstraps`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_remimazolam/models/modelica/Remimazolam_Chen2025_median_by_1_000_bootstraps.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_remimazolam/models/modelica/Remimazolam_Chen2025_median_by_1_000_bootstraps.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_remimazolam/models/modelica/Remimazolam_Chen2025_median_by_1_000_bootstraps.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -136,7 +136,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_remimazolam/Remimazolam_Chen2025_median_by_1_000_bootstraps/Remimazolam_Chen2025_median_by_1_000_bootstraps.svg" alt="Remimazolam_Chen2025_median_by_1_000_bootstraps diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_remimazolam/Remimazolam_Chen2025_median_by_1_000_bootstraps/Remimazolam_Chen2025_median_by_1_000_bootstraps.svg" alt="Remimazolam_Chen2025_median_by_1_000_bootstraps diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

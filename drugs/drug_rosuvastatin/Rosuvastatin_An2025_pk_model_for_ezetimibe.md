@@ -96,7 +96,7 @@ An H et al., Population Pharmacokinetics and Pharmac…, Drug design, developmen
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_rosuvastatin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `An_2025` / `An_2025::pk_model_for_ezetimibe`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_rosuvastatin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `An_2025` / `An_2025::pk_model_for_ezetimibe`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

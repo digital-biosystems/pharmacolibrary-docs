@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;amodiaquine&quot;,&quot;href&quot;:&quot;drugs/drug_amodiaquine/&quot;},{&quot;label&quot;:&quot;Tarning_2012 \u00b7 PD recurrent malaria infections&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amodiaquine_Ding2024_nonmem_estimates_rse_a&quot;,&quot;label&quot;:&quot;Ding_2024_nonmem_estimates_rse_a&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amodiaquine/Amodiaquine_Ding2024_nonmem_estimates_rse_a.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # recurrent malaria infections — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span>
@@ -13,19 +14,19 @@
 
 ## Record summary
 
-**As extracted:** Desethylamodiaquine (concentrations from the PK model of Ali_2018::bsv_or_bova_b) drives recurrent malaria infections: time-to-event model.
+**As extracted:** Desethylamodiaquine (concentrations from the PK model of Ali_2018) drives recurrent malaria infections: time-to-event model.
 
 **Model:** No model was generated from this record.
 
-> The paper does not provide excerpts describing the mechanism; the record indicates desethylamodiaquine (amodiaquine's active metabolite) exposure is linked to time to recurrent malaria infection in a time-to-event model with an inhibitory effect direction, but no potency or rate values are available.
+> The record specifies a proportional time-to-event model where desethylamodiaquine concentrations inhibit the rate of recurrent malaria infections, but as no full text is available, the specific mechanism (e.g., impact on event hazard vs. production/elimination) and key potency or rate parameters are not provided.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Tarning_2012`
 - **model family:** `tte`
 - **driver:** `cited_pk`
 - **tier:** population
-- **effect:** inhibition/unknown
+- **effect:** inhibition/proportional
 
 ## Citation
 Tarning J et al., Population pharmacokinetic and pharmaco…, Antimicrobial agents and ch… (2012)

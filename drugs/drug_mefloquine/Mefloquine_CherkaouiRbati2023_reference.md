@@ -17,13 +17,13 @@
 
 ### Reviewer guidance
 
-**The mefloquine two-compartment model record is incomplete: the absorption lag time tlag (0.147 h) was not covered, so only 4 of the 5 expected parameters (CL 0.476 L/h, V1 8.58 L, V2 57.3 L, Q 37.1 L/h) are present.**
+**K21 use library defaults, not estimates from this paper; t3_param_coverage (+1 more).**
 
-The record carries mefloquine's clearance, central and peripheral volumes and intercompartmental clearance, but the absorption lag time tlag was neither emitted nor defaulted, leaving 4 of 5 expected parameters covered. Because tlag has no value in the record, the model was held back for review rather than published. Extracted — mefloquine: CL 0.476 L/h, V1 8.58 L, V2 57.3 L, Q 37.1 L/h, tlag 0.147 h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — mefloquine: CL 0.476 L/h, V1 8.58 L, Q 37.1 L/h, tlag 0.147 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q310: this record has 2.85, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by glm-5.3-flash</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Cherkaoui-Rbati MH et al., A pharmacokinetic-pharmacodynamic model…, CPT: pharmacometrics & syst… (2023)
@@ -32,7 +32,7 @@ Cherkaoui-Rbati MH et al., A pharmacokinetic-pharmacodynamic model…, CPT: phar
 <div class="pk-model-meta" hidden drug="mefloquine" model-id="Mefloquine_CherkaouiRbati2023_reference" status="needs_review" stale="false" population="" measured-compound="mefloquine" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
-**Parameters:** 5 extracted.
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -43,7 +43,6 @@ Cherkaoui-Rbati MH et al., A pharmacokinetic-pharmacodynamic model…, CPT: phar
 |---|---|---|---|---|---|---|---|---|---|---|
 | CL | `Q22` · CL | 0.476 | L/h | 1.322222222222222e-07 | L/h | not captured | review (0.7) | Cherkaoui-Rbati_2023:review | — | not captured |
 | V c | `Q63` · V1 | 8.58 | L | 0.00858 | L | not captured | review (0.7) | Cherkaoui-Rbati_2023:review | — | not captured |
-| V p,1 | `Q64` · V2 | 57.3 | L | 0.0573 | L | not captured | review (0.7) | Cherkaoui-Rbati_2023:review | — | not captured |
 | Q 1 | `Q30` · Q | 37.1 | L/h | 1.0305555555555556e-05 | L/h | not captured | review (0.7) | Cherkaoui-Rbati_2023:review | — | not captured |
 | T lag,1 | `Q83` · tlag | 0.147 | h | 529.1999999999999 | h | not captured | review (0.7) | Cherkaoui-Rbati_2023:review | — | not captured |
 
@@ -53,6 +52,9 @@ Cherkaoui-Rbati MH et al., A pharmacokinetic-pharmacodynamic model…, CPT: phar
 </details>
 
 ## Departures & gaps
+
+**Deviations:**
+- `defaulted_parameters`: ['k21']
 
 **Interpretation flags:**
 - built from REVIEW reference values (Cherkaoui-Rbati_2023) — secondary source
@@ -87,19 +89,17 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Cherkaoui-Rbati_2023:review'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Cherkaoui-Rbati_2023:review'] |
 | C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Cherkaoui-Rbati_2023:review'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Cherkaoui-Rbati_2023:review'] |
 | C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Cherkaoui-Rbati_2023:review'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.476 | not captured | not captured | ['Cherkaoui-Rbati_2023:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.476 L/h | not captured | not captured | ['Cherkaoui-Rbati_2023:review'] |
 | C9_phys_window_Q63 | pass | volume within physiological range | 8.58 L | not captured | not captured | ['Cherkaoui-Rbati_2023:review'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 57.3 L | not captured | not captured | ['Cherkaoui-Rbati_2023:review'] |
 
 **Reviewer per-scenario checks:**
 
@@ -108,9 +108,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_output_variable | not captured | pass | C_central (measured=mefloquine) | central.C | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | fail | 5 scholar param(s) emitted or defaulted | 4 covered | not captured | neither emitted nor in defaulted[]: ['tlag'] |
+| T3_param_coverage | not captured | fail | 4 scholar param(s) emitted or defaulted | 3 covered | not captured | neither emitted nor in defaulted[]: ['tlag'] |
 | T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
+| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -119,10 +119,10 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_mefloquine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Cherkaoui-Rbati_2023` / `Cherkaoui-Rbati_2023::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_mefloquine/models/modelica/Mefloquine_CherkaouiRbati2023_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_mefloquine/models/modelica/Mefloquine_CherkaouiRbati2023_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_mefloquine/models/modelica/Mefloquine_CherkaouiRbati2023_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_mefloquine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Cherkaoui-Rbati_2023` / `Cherkaoui-Rbati_2023::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_mefloquine/models/modelica/Mefloquine_CherkaouiRbati2023_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_mefloquine/models/modelica/Mefloquine_CherkaouiRbati2023_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_mefloquine/models/modelica/Mefloquine_CherkaouiRbati2023_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -131,16 +131,16 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_mefloquine/Mefloquine_CherkaouiRbati2023_reference/Mefloquine_CherkaouiRbati2023_reference_modelica.zip" download>Mefloquine_CherkaouiRbati2023_reference_modelica.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_mefloquine/Mefloquine_CherkaouiRbati2023_reference/Mefloquine_CherkaouiRbati2023_reference_modelica.zip" download>Mefloquine_CherkaouiRbati2023_reference_modelica.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_mefloquine/Mefloquine_CherkaouiRbati2023_reference/Mefloquine_CherkaouiRbati2023_reference_fmi.zip" download>Mefloquine_CherkaouiRbati2023_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_2C.fmu" download>PK_2C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_mefloquine/Mefloquine_CherkaouiRbati2023_reference/Mefloquine_CherkaouiRbati2023_reference_matlab.zip" download>Mefloquine_CherkaouiRbati2023_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_mefloquine/Mefloquine_CherkaouiRbati2023_reference/Mefloquine_CherkaouiRbati2023_reference_matlab_simbio.zip" download>Mefloquine_CherkaouiRbati2023_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_mefloquine/Mefloquine_CherkaouiRbati2023_reference/Mefloquine_CherkaouiRbati2023_reference_sbml.zip" download>Mefloquine_CherkaouiRbati2023_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_mefloquine/Mefloquine_CherkaouiRbati2023_reference/Mefloquine_CherkaouiRbati2023_reference_sbml.zip" download>Mefloquine_CherkaouiRbati2023_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_mefloquine/Mefloquine_CherkaouiRbati2023_reference/Mefloquine_CherkaouiRbati2023_reference_cellml.zip" download>Mefloquine_CherkaouiRbati2023_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_mefloquine/Mefloquine_CherkaouiRbati2023_reference/Mefloquine_CherkaouiRbati2023_reference.svg" alt="Mefloquine_CherkaouiRbati2023_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_mefloquine/Mefloquine_CherkaouiRbati2023_reference/Mefloquine_CherkaouiRbati2023_reference.svg" alt="Mefloquine_CherkaouiRbati2023_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -153,4 +153,4 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 07:23 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 00:54 UTC</sub>

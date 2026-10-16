@@ -1,11 +1,10 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;sirukumab&quot;,&quot;href&quot;:&quot;drugs/drug_sirukumab/&quot;},{&quot;label&quot;:&quot;Xu_2011 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sirukumab_Zhuang2013_reference&quot;,&quot;label&quot;:&quot;Zhuang_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sirukumab/Sirukumab_Zhuang2013_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sirukumab_Xu2011_reference&quot;,&quot;label&quot;:&quot;Xu_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sirukumab/Sirukumab_Xu2011_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # sirukumab — `Sirukumab_Xu2011_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -13,38 +12,38 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** Model and browser simulation available in **Models** and **Simulation**.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's terminal half-life.**
+**C5 dimension mismatch on a structural parameter.**
 
-Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — sirukumab: CL 0.364 l day -1, V1 3.28 l, Q 0.588 l day -1, V2 4.97 l.
+A reported unit could not be converted (V), so that value has no SI equivalent. Extracted — sirukumab: Q 0.365 L/h, Q2 3.27 L/h, Q3 0.599 L/h, V 18.9 %.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Xu Z et al., Pharmacokinetics, pharmacodynamics and…, British journal of clinical… (2011)
   ·  DOI: [10.1111/j.1365-2125.2011.03964.x](https://doi.org/10.1111/j.1365-2125.2011.03964.x)
 
-<div class="pk-model-meta" hidden drug="sirukumab" model-id="Sirukumab_Xu2011_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="sirukumab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="sirukumab" model-id="Sirukumab_Xu2011_reference" status="rejected" stale="false" population="healthy adults" measured-compound="sirukumab" parameterization="mechanistic" topology="1C"></div>
 
-**Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
+**Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL (l day -1 ) | `Q22` · CL | 0.364 | l day -1 | 4.212962962962963e-09 | [l] / [d] | 4.6 | exact (1.0) | tab_2:row2:col2, tab_2:row2:col3, tab_2:row2:col4, tab_2:row2:col5, tab_2:row2:col6 | — | not captured |
-| V1 (l) | `Q63` · V1 | 3.28 | l | 0.00328 | [l] | 3.2 | exact (1.0) | tab_2:row3:col2, tab_2:row3:col3, tab_2:row3:col4, tab_2:row3:col5, tab_2:row3:col6 | — | not captured |
-| Q (l day -1 ) | `Q30` · Q | 0.588 | l day -1 | 6.8055555555555556e-09 | [l] / [d] | 13.6 | exact (1.0) | tab_2:row4:col2, tab_2:row4:col3, tab_2:row4:col4, tab_2:row4:col5, tab_2:row4:col6 | — | not captured |
-| V2 (l) | `Q64` · V2 | 4.97 | l | 0.00497 | [l] | 6.8 | exact (1.0) | tab_2:row5:col2, tab_2:row5:col3, tab_2:row5:col4, tab_2:row5:col5, tab_2:row5:col6 | — | not captured |
+| q1 | `Q30` · Q | 0.365 | L/h | 1.0138888888888888e-07 | L/h | not captured | exact (1.0) | tab_2:row2:col2, tab_2:row2:col4, tab_2:row2:col5, tab_2:row2:col6 | — | not captured |
+| q2 | `Q99` · Q2 | 3.27 | L/h | 9.083333333333334e-07 | L/h | not captured | second_intercompartmental (0.9) | tab_2:row3:col2, tab_2:row3:col4, tab_2:row3:col5, tab_2:row3:col6 | — | not captured |
+| q3 | `Q308` · Q3 | 0.599 | L/h | 1.663888888888889e-07 | L/h | not captured | exact (1.0) | tab_2:row4:col2, tab_2:row4:col4, tab_2:row4:col5, tab_2:row4:col6 | — | not captured |
+| wVc | `Q61` · V | 18.9 | % | not captured | [%] | not captured | llm (0.6) | tab_2:row8:col2, tab_2:row8:col4, tab_2:row8:col5, tab_2:row8:col6 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -54,28 +53,26 @@ Xu Z et al., Pharmacokinetics, pharmacodynamics and…, British journal of clini
 ## Departures & gaps
 
 **Interpretation flags:**
-- table section iiv: 'IIV (%) on CL' routed out of structural estimates ('Inter-individual variability (IIV)')
-- table section iiv: 'IIV (%) on V1' routed out of structural estimates ('Inter-individual variability (IIV)')
-- table section iiv: 'IIV (%) on Q' routed out of structural estimates ('Inter-individual variability (IIV)')
-- table section iiv: 'IIV (%) on V2' routed out of structural estimates ('Inter-individual variability (IIV)')
-- table section residual_error: 'Proportional error variability (%)' routed out of structural estimates ('Residual variability')
-- table section residual_error: 'Additive error (mg l -1 )' routed out of structural estimates ('Residual variability')
-- NIL: refused to back-fill base 'shrinkage' from footnote/prose loose number None (source ['tab_2:footnote']); the table cell was unparseable — needs review
-- dropped value-less row: 'w 2'
-- dropped value-less row: 's 2'
-- NIL: refused to back-fill base 'CL' from footnote/prose loose number None (source ['tab_2:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'V1' from footnote/prose loose number None (source ['tab_2:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'Q' from footnote/prose loose number None (source ['tab_2:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'V2' from footnote/prose loose number None (source ['tab_2:footnote']); the table cell was unparseable — needs review
-- dropped value-less row: '2.5th, 50th, 97.5th percentiles'
+- 'q2' linked to Q99: a second intercompartmental clearance beside the Q30 already present
+- dropped duplicate Q99 ('q4', value '4.96') — already have one for this compound
+- dropped unlinked row (NIL): 'wCL' — extend the ontology if this is a real PK parameter (source ['tab_2:row7:col2', 'tab_2:row7:col4', 'tab_2:row7:col5', 'tab_2:row7:col6'])
+- unit_dimension_mismatch: 'wVc' → Q61 (unit 'dimensionless' vs ontology '[length] ** 3') — route to review
+- dropped unlinked row (NIL): 'wQ' — extend the ontology if this is a real PK parameter (source ['tab_2:row9:col2', 'tab_2:row9:col4', 'tab_2:row9:col5', 'tab_2:row9:col6'])
+- unit_dimension_mismatch: 'wVp' → Q30 (unit 'dimensionless' vs ontology '[length] ** 3 / [time]') — route to review
+- dropped duplicate Q30 ('wVp', value '27.8') — already have one for this compound
+- dropped unlinked row (NIL): 'sProp' — extend the ontology if this is a real PK parameter (source ['tab_2:row12:col2', 'tab_2:row12:col4', 'tab_2:row12:col5', 'tab_2:row12:col6'])
+- dropped unlinked row (NIL): 'sAdd' — extend the ontology if this is a real PK parameter (source ['tab_2:row13:col2', 'tab_2:row13:col4', 'tab_2:row13:col5', 'tab_2:row13:col6'])
+- implicit units: 'q1' → L/h (from the popPK convention: 'Intercompartmental clearance in population PK models is standardly expressed in L/h. No unit was explicitly stated in th')
+- implicit units: 'q2' → L/h (from the popPK convention: 'Intercompartmental clearance in population PK models is standardly expressed in L/h. No unit was explicitly stated in th')
+- implicit units: 'q3' → L/h (from the popPK convention: 'Intercompartmental clearance in population PK models is standardly expressed in L/h. No unit was explicitly stated in th')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=sirukumab
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- structure disagreement: deterministic 1C vs LLM 3C — review compartment count
+- status held at route_to_review — not promoted
 - molar mass: none found for 'sirukumab' — its concentrations stay mass-only
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- unparsed cell tab_2:row2:col1 = 'q1'
-- unparsed cell tab_2:row3:col1 = 'q2'
-- unparsed cell tab_2:row4:col1 = 'q3'
-- unparsed cell tab_2:row5:col1 = 'q4'
 - LLM selected parameter table(s) 3
 
 ## Validation
@@ -101,31 +98,12 @@ _All readers agree on the compared fields of this record._
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C1_half_life_beta | pass | 20.9 | 19.712 | 0.9432 | 0.25 | reported t½β |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_2:row2:col2', 'tab_2:row2:col3', 'tab_2:row2:col4', 'tab_2:row2:col5', 'tab_2:row2:col6'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_2:row4:col2', 'tab_2:row4:col3', 'tab_2:row4:col4', 'tab_2:row4:col5', 'tab_2:row4:col6'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_2:row3:col2', 'tab_2:row3:col3', 'tab_2:row3:col4', 'tab_2:row3:col5', 'tab_2:row3:col6'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_2:row5:col2', 'tab_2:row5:col3', 'tab_2:row5:col4', 'tab_2:row5:col5', 'tab_2:row5:col6'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.364 | not captured | not captured | ['tab_2:row2:col2', 'tab_2:row2:col3', 'tab_2:row2:col4', 'tab_2:row2:col5', 'tab_2:row2:col6'] |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_2:row2:col2', 'tab_2:row2:col4', 'tab_2:row2:col5', 'tab_2:row2:col6'] |
+| C5_dimension_Q308 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_2:row4:col2', 'tab_2:row4:col4', 'tab_2:row4:col5', 'tab_2:row4:col6'] |
+| C5_dimension_Q61 | fail | dimensionless | % | not captured | not captured | ['tab_2:row8:col2', 'tab_2:row8:col4', 'tab_2:row8:col5', 'tab_2:row8:col6'] |
+| C5_dimension_Q99 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_2:row3:col2', 'tab_2:row3:col4', 'tab_2:row3:col5', 'tab_2:row3:col6'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.0152 L/h | not captured | not captured | ['tab_2:row2:col2', 'tab_2:row2:col3', 'tab_2:row2:col4', 'tab_2:row2:col5', 'tab_2:row2:col6'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 3.28 L | not captured | not captured | ['tab_2:row3:col2', 'tab_2:row3:col3', 'tab_2:row3:col4', 'tab_2:row3:col5', 'tab_2:row3:col6'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 4.97 L | not captured | not captured | ['tab_2:row5:col2', 'tab_2:row5:col3', 'tab_2:row5:col4', 'tab_2:row5:col5', 'tab_2:row5:col6'] |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_output_variable | not captured | pass | C_central (measured=sirukumab) | central.C | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
-| T1_cmax | reference | skipped | not captured | 0.0053300420435781915 | not captured | non-numeric value |
-| T1_t_half_terminal | reference | skipped | not captured | 4521.197801405212 | not captured | non-numeric value |
-| T1_t_half_terminal | reference | fail | 501.59999999999997 | 4521.197801405212 | 9.0136 | days→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -134,38 +112,20 @@ _All readers agree on the compared fields of this record._
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_sirukumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Xu_2011` / `Xu_2011::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_sirukumab/models/modelica/Sirukumab_Xu2011_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_sirukumab/models/modelica/Sirukumab_Xu2011_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_sirukumab/models/modelica/Sirukumab_Xu2011_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_sirukumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Xu_2011` / `Xu_2011::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_sirukumab/Sirukumab_Xu2011_reference/Sirukumab_Xu2011_reference_modelica.zip" download>Sirukumab_Xu2011_reference_modelica.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_sirukumab/Sirukumab_Xu2011_reference/Sirukumab_Xu2011_reference_fmi.zip" download>Sirukumab_Xu2011_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_2C.fmu" download>PK_2C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_sirukumab/Sirukumab_Xu2011_reference/Sirukumab_Xu2011_reference_matlab.zip" download>Sirukumab_Xu2011_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_sirukumab/Sirukumab_Xu2011_reference/Sirukumab_Xu2011_reference_matlab_simbio.zip" download>Sirukumab_Xu2011_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_sirukumab/Sirukumab_Xu2011_reference/Sirukumab_Xu2011_reference_sbml.zip" download>Sirukumab_Xu2011_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_sirukumab/Sirukumab_Xu2011_reference/Sirukumab_Xu2011_reference_cellml.zip" download>Sirukumab_Xu2011_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_sirukumab/Sirukumab_Xu2011_reference/Sirukumab_Xu2011_reference.svg" alt="Sirukumab_Xu2011_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 21 mg infusion over 10 min, single dose. Doses in the paper: 21, 70, 210, 420, 700 mg.
-
-<dbs-fmusim paramsurl="drugs/drug_sirukumab/Sirukumab_Xu2011_reference/Sirukumab_Xu2011_reference_params.json" metaurl="assets/fmu/PK_2C.vr.json" wasmurl="assets/fmu/PK_2C.js" controlsurl="drugs/drug_sirukumab/Sirukumab_Xu2011_reference/Sirukumab_Xu2011_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_2C` · parameters `Sirukumab_Xu2011_reference_params.json` · controls `Sirukumab_Xu2011_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 00:34 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 00:25 UTC</sub>

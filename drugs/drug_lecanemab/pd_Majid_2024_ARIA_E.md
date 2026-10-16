@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06D&quot;,&quot;href&quot;:&quot;atc/N06D.md&quot;},{&quot;label&quot;:&quot;lecanemab&quot;,&quot;href&quot;:&quot;drugs/drug_lecanemab/&quot;},{&quot;label&quot;:&quot;Majid_2024 \u00b7 PD incidence of ARIA-E (amyloid-related imaging abnormalities\u2013edema/effusion)&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06D&quot;,&quot;href&quot;:&quot;atc/N06D.md&quot;},{&quot;label&quot;:&quot;lecanemab&quot;,&quot;href&quot;:&quot;drugs/drug_lecanemab/&quot;},{&quot;label&quot;:&quot;Majid_2024 \u00b7 PD ARIA-E&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# incidence of ARIA-E (amyloid-related imaging abnormalities–edema/effusion) — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
+# ARIA-E — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.857). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -13,19 +13,19 @@
 
 ## Record summary
 
-**As extracted:** Lecanemab (concentrations from this paper's PK model) drives incidence of ARIA-E (amyloid-related imaging abnormalities–edema/effusion): direct linear effect.
+**As extracted:** Lecanemab (concentrations from this paper's PK model) drives ARIA-E: categorical (graded) response model.
 
 **Model:** No model was generated from this record.
 
-> Lecanemab plasma concentrations (C_ss,max, μg/mL) act directly (linear model, no Emax or effect compartment) on the logit of ARIA-E incidence, with an intercept of −4.89 and a slope of 0.00666 per μg/mL; APOE4 heterozygous and homozygous covariates add 0.640 and 1.91 to the logit, respectively. The paper excerpts do not state a mechanism beyond this direct exposure–response link.
+> Lecanemab exposure (C_ss,max) stimulates the binary response ARIA-E in a linear model where the log-odds increase by 0.00666 per unit increase in concentration (μg/mL) from an intercept of -4.89. The model includes covariates for APOE4 genotype (heterozygous +0.640, homozygous +1.91), but the paper does not specify the underlying biological mechanism or rate constants.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Majid_2024`
-- **model family:** `linear`
+- **model family:** `categorical`
 - **driver:** `pk_record`
 - **tier:** population
-- **effect:** stimulation/additive
+- **effect:** stimulation/unknown
 
 ## Citation
 Majid O et al., Population pharmacokinetics and exposur…, CPT: pharmacometrics & syst… (2024)
@@ -34,10 +34,10 @@ Majid O et al., Population pharmacokinetics and exposur…, CPT: pharmacometrics
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | Intercept (INT) | `Q344` · not captured | −4.89 | not captured | not captured | llm (not captured) | Majid_2024:pdv3 |
-| PD (effect) | Slope of lecanemab exposure effect (SLP; per C ss,max unit in μg/mL) | `Q335` · not captured | 0.00666 | per C ss,max unit in μg/mL | not captured | llm (not captured) | Majid_2024:pdv3 |
-| model term | Cov APOE4Hetero: effect of APOE4 heterozygous | `Q900` · not captured | 0.640 | not captured | not captured | llm (not captured) | Majid_2024:pdv3 |
-| model term | Cov APOE4Homo: effect of APOE4 homozygous | `Q900` · not captured | 1.91 | not captured | not captured | llm (not captured) | Majid_2024:pdv3 |
+| PD (effect) | Intercept (INT) | `Q344` · not captured | -4.89 | not captured | not captured | llm (not captured) | Majid_2024:pdv3 |
+| PD (effect) | Slope of lecanemab exposure effect (SLP; per C ss,max unit in μg/mL) | `Q335` · not captured | 0.00666 | not captured | not captured | llm (not captured) | Majid_2024:pdv3 |
+| — | Cov APOE4Hetero: effect of APOE4 heterozygous | `Q100` · not captured | 0.640 | not captured | not captured | nil (not captured) | Majid_2024:pdv3 |
+| — | Cov APOE4Homo: effect of APOE4 homozygous | `Q100` · not captured | 1.91 | not captured | not captured | nil (not captured) | Majid_2024:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -46,20 +46,17 @@ Majid O et al., Population pharmacokinetics and exposur…, CPT: pharmacometrics
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `einfracz:gpt-oss-120b` | not confirmed | 0.5 (4/8 fields) | 4 |
+| `einfracz:gpt-oss-120b` | not confirmed | 0.857 (6/7 fields) | 1 |
 
-<details><summary>4 field discrepancies</summary>
+<details><summary>1 field discrepancy</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `einfracz:gpt-oss-120b` | `model_family` | linear | categorical | mismatch |
-| `einfracz:gpt-oss-120b` | `parameters[Q100]` | not captured | 1.91 | only_one_extracted |
-| `einfracz:gpt-oss-120b` | `parameters[Q344].value` | −4.89 | -4.89 | mismatch |
-| `einfracz:gpt-oss-120b` | `parameters[Q900]` | 1.91 | not captured | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `effect_form` | unknown | additive | mismatch |
 
 </details>
 

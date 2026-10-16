@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;carvedilol&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/&quot;},{&quot;label&quot;:&quot;Nardotto_2017 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Carvedilol_McTavish1993_reference&quot;,&quot;label&quot;:&quot;McTavish_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_McTavish1993_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carvedilol_Nikolic2013_reference&quot;,&quot;label&quot;:&quot;Nikolic_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Nikolic2013_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carvedilol_Yamamoto2024_final&quot;,&quot;label&quot;:&quot;Yamamoto_2024_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Yamamoto2024_final.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carvedilol_Yamamoto2024_final_s_carvedilol_final_model_estim&quot;,&quot;label&quot;:&quot;Yamamoto_2024_final_s_carvedilol_final_model_estimate_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Yamamoto2024_final_s_carvedilol_final_model_estim.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Carvedilol_Nikolic2013_reference&quot;,&quot;label&quot;:&quot;Nikolic_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Nikolic2013_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carvedilol_Hwang2023_reference&quot;,&quot;label&quot;:&quot;Hwang_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Hwang2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hwang_2023_HR&quot;,&quot;label&quot;:&quot;Hwang_2023 \u00b7 HR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/pd_Hwang_2023_HR.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yamamoto_2024_exercise_induced_heart_rate&quot;,&quot;label&quot;:&quot;Yamamoto_2024 \u00b7 exercise-induced heart rate&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/pd_Yamamoto_2024_exercise_induced_heart_rate.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Baek_2008_DBP&quot;,&quot;label&quot;:&quot;Baek_2008 \u00b7 DBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/pd_Baek_2008_DBP.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Baek_2008_SBP&quot;,&quot;label&quot;:&quot;Baek_2008 \u00b7 SBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/pd_Baek_2008_SBP.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pgx_Hwang_2023_CYP2D6_Q27&quot;,&quot;label&quot;:&quot;Hwang_2023 \u00b7 CYP2D6&quot;,&quot;group&quot;:&quot;PGx&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/pgx_Hwang_2023_CYP2D6_Q27.md&quot;,&quot;status&quot;:&quot;quantitative&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # carvedilol — `Carvedilol_Nardotto2017_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.074), gpt-oss:120b (not confirmed, agreement 0.091). Primary extraction retained.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.074), gpt-oss:120b (not confirmed, agreement 0.091). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -13,45 +13,40 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** Model available in **Models**; browser simulation unavailable.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
-**The carvedilol absorption parameter was rejected for a dimension mismatch: it is reported as 17.41 h⁻¹ (label 'KaR (h-1)') but its meaning is an absorption half-life, a time quantity, so the value and unit contradict the parameter's definition.**
+**This paper's disposition core is incomplete.**
 
-In this parent–metabolite model for carvedilol in type-2 diabetes and healthy subjects, the parameter named t1/2ka is labeled 'KaR (h-1)' with value 17.41 in units of h⁻¹, yet its meaning is the half-life of the absorption phase — a time, not a rate — giving a structural parameter with mismatched dimensions. The record also reached review without an SI value because the reported unit could not be converted. Secondary readers further disagreed on several extracted values, e.g. FR as 18.25 versus 17.67, KaR as 17.41 versus 10.25, and a renal clearance of 16.50 L/h versus none, so the extraction itself is not settled. Extracted — carvedilol: t1/2ka 17.4 h -1, FR 18.2, V 17.9 L, Q3 17.9 L/h, CLR 16.5 L/h.
+A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (McTavish_1993) cannot stand in for this paper's evidence. A reported unit could not be converted (FR), so that value has no SI equivalent. Extracted — carvedilol: kabs 0.86 h -1, FR 25.4 %, Q 28.5 L/h, CLR 29 L/h, V 2 L/kg; carvedilol metabolites: CLfm 13.7 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has carvedilol enantiomers, the second reading carvedilol; it also differs on 24 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by glm-5.3-flash</sub>
-
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:25:09.159210+00:00) predates the upstream re-run (2026-10-07 00:33:23.563545+00:00). Current validate status: `extracted`.
-
-> **Dose compound ≠ measured compound:** dosed `carvedilol`, measured `carvedilol enantiomers`.
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Nardotto GHB et al., Population pharmacokinetics of carvedil…, European journal of pharmac… (2017)
   ·  DOI: [10.1016/j.ejps.2017.05.033](https://doi.org/10.1016/j.ejps.2017.05.033)
 
-<div class="pk-model-meta" hidden drug="carvedilol" model-id="Carvedilol_Nardotto2017_reference" status="extracted" stale="true" population="type-2 diabetes and healthy subjects" measured-compound="carvedilol enantiomers" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="carvedilol" model-id="Carvedilol_Nardotto2017_reference" status="needs_review" stale="false" population="type-2 diabetes and healthy subjects" measured-compound="carvedilol" parameterization="mechanistic" topology="parent_metabolite"></div>
 
-**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 9 extracted.
+**Model structure:** parent + metabolite; no model was built for this record.  
+**Parameters:** 6 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| KaR (h -1 ) | `Q49` · kabs | 10.63 | h -1 | 0.002952777777777778 | [1] / [h] | not captured | exact (1.0) | tab_1:row6:col3, tab_1:row6:col4, tab_1:row6:col5, tab_1:row6:col7, tab_1:row6:col9 | — | not captured |
-| FR (%) | `Q43` · FR | 19.54 | not captured | not captured | not captured | not captured | exact (1.0) | tab_1:row8:col3, tab_1:row8:col4, tab_1:row8:col5, tab_1:row8:col7, tab_1:row8:col9 | — | not captured |
-| VcR (L) | `Q63` · V1 | 0.67 | L | 0.00067 | [l] | not captured | llm (0.6) | tab_1:row9:col3, tab_1:row9:col4, tab_1:row9:col6, tab_1:row9:col8 | — | not captured |
-| QR (L/h) | `Q30` · Q | 12.67 | L/h | 3.5194444444444445e-06 | [l] / [h] | not captured | llm (0.6) | tab_1:row10:col3, tab_1:row10:col4, tab_1:row10:col5, tab_1:row10:col7, tab_1:row10:col9 | — | not captured |
-| CLR_CYP2D6 (L/h) | `Q370` · CLfm | 15.42 | L/h | 4.2833333333333335e-06 | [l] / [h] | not captured | exact (1.0) | tab_1:row15:col3, tab_1:row15:col4, tab_1:row15:col5, tab_1:row15:col7, tab_1:row15:col9 | — | not captured |
-| (L/h) | `Q22` · CL | 4.85 | L/h | 1.3472222222222222e-06 | [l] / [h] | not captured | exact (1.0) | tab_1:row22:col2, tab_1:row22:col3, tab_1:row22:col4, tab_1:row22:col5, tab_1:row22:col6, tab_1:row22:col7, tab_1:row22:col9 | — | not captured |
-| Total CLR (L/h) | `Q26` · CLR | 16.25 | L/h | 4.513888888888889e-06 | [l] / [h] | not captured | llm_confirmed (0.6) | tab_1:row28:col7 | — | not captured |
-| OHC_CLR (L/h) | `Q22` · CL | 14.08 | L/h | 3.911111111111111e-06 | [l] / [h] | not captured | exact (1.0) | tab_1:row32:col3, tab_1:row32:col7 | — | not captured |
-| OHC_VcR (L) | `Q61` · V | 16.14 | L | 0.01614 | [l] | not captured | exact (1.0) | tab_1:row33:col3, tab_1:row33:col7 | — | not captured |
+| KaR (h -1 ) | `Q49` · kabs | 0.86 | h -1 | 0.00023888888888888888 | [1] / [h] | not captured | exact (1.0) | Nardotto_2017_table_2:row5:col2 | — | not captured |
+| FR (%) | `Q43` · FR | 25.40 | % | not captured | [%] | not captured | exact (1.0) | Nardotto_2017_table_2:row7:col2 | — | not captured |
+| QR (L/h) | `Q30` · Q | 28.52 | L/h | 7.922222222222223e-06 | [l] / [h] | not captured | llm (0.6) | Nardotto_2017_table_2:row9:col2 | — | not captured |
+| CLR_CYP2D6 (L/h) | `Q370` · CLfm | 13.70 | L/h | 3.8055555555555556e-06 | [l] / [h] | not captured | exact (1.0) | Nardotto_2017_table_2:row14:col2 | — | not captured |
+| Total CLR (L/h) | `Q26` · CLR | 29.01 | L/h | 8.058333333333334e-06 | [l] / [h] | not captured | llm_confirmed (0.6) | Nardotto_2017_table_2:row27:col2 | — | not captured |
+| volume of distribution | `Q61` · V | 2.0 | L/kg | 0.14 | L | not captured | review_gapfill (0.7) | McTavish_1993:review | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -60,58 +55,33 @@ Nardotto GHB et al., Population pharmacokinetics of carvedil…, European journa
 
 ## Departures & gaps
 
-**Deviations:**
-- `defaulted_parameters`: ['F', 'Tlag']
-
 **Interpretation flags:**
-- column 'bootstrap' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- dropped duplicate Q63 ('VpR (L)', value '64.44') — already have one for this compound
+- table representations disagree for 'KaR (h -1 )'; source reconciliation required
+- table representations disagree for 'Residual_CLR (L/h)'; source reconciliation required
+- table representations disagree for 'FR (%)'; source reconciliation required
+- table representations disagree for 'QR (L/h)'; source reconciliation required
+- table representations disagree for 'CLR_CYP2D6 (L/h)'; source reconciliation required
+- table representations disagree for 'CLR_CYP2C9'; source reconciliation required
+- table representations disagree for 'Total CLR (L/h)'; source reconciliation required
+- unit_dimension_unknown: 'R' (CLfm)
 - dropped duplicate Q370 ('CLR_CYP2C9', value '10.50') — already have one for this compound
-- linked '(L/h)' as 'CL' → Q22 (CL) for carvedilol enantiomers — compound marker removed
-- dropped duplicate Q22 ('DMC_CLR (L/h)', value '16.24') — already have one for this compound
-- metabolite volume: 'OHC_VcR (L)' Q63→Q61 for carvedilol metabolites — it is 1-compartment, so its central volume is its only volume
-- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q63 (VcR (L)); Q30 (QR (L/h)); Q22 ((L/h)); Q22 (OHC_CLR (L/h)); Q61 (OHC_VcR (L))
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=carvedilol enantiomers
-- template fit: PK_3M_9C — formed from central; parent 1, metabolites [1]
-- row roles (LLM): model_class=compartmental; 13/13 row label(s) assigned, 48 linked by role; re-tagged parent→carvedilol enantiomers ×40, parent→carvedilol metabolites ×13
-- molar mass: no plausible PubChem entry for 'carvedilol enantiomers' ('carvedilol enantiomers') — left in mass units
-- molar mass: none found for 'carvedilol enantiomers' — its concentrations stay mass-only
+- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q30 (QR (L/h))
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=carvedilol
+- template fit: none — only the metabolite is modelled — no parent compartment
+- status held at route_to_review — not promoted
+- row roles (LLM): model_class=compartmental; 7/7 row label(s) assigned, 6 linked by role; re-tagged parent→carvedilol metabolites ×2
+- molar mass: none found for 'carvedilol metabolites' — its concentrations stay mass-only
+- gap-filled Q61 (V) from McTavish_1993's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- unparsed cell tab_1:row6:col2 = '0.86 (0.54-1.46)'
-- unparsed cell tab_1:row6:col6 = '0.85 (0.75-1.02)'
-- unparsed cell tab_1:row6:col8 = '0.12 0.16) (0.08-'
-- unparsed cell tab_1:row7:col2 = '4.81 (3.47 -7.19)'
-- unparsed cell tab_1:row7:col6 = '4.19 (3.87-5.20)'
-- unparsed cell tab_1:row7:col8 = '0.110 0.16) (0.08-'
-- unparsed cell tab_1:row8:col2 = '25.40 (16.89 -51.54)'
-- unparsed cell tab_1:row8:col6 = '23.13 (18.49-30.20)'
-- unparsed cell tab_1:row8:col8 = '0.16 0.25) (0.11-'
-- unparsed cell tab_1:row9:col2 = '21.42 (7.84 -68.06) 16.88'
-- unparsed cell tab_1:row9:col5 = '19.63 (16.30-26.02)'
-- unparsed cell tab_1:row9:col7 = '0.66 (0.42-1.1)'
-- unparsed cell tab_1:row10:col2 = '28.52 (7.52-34.13)'
-- unparsed cell tab_1:row10:col6 = '28.49 (21.83-35.84)'
-- unparsed cell tab_1:row10:col8 = '0.18 (0.13-0.26)'
-- unparsed cell tab_1:row15:col1 = 'EM T2DM EM CYP2D6'
-- unparsed cell tab_1:row15:col2 = '13.70 (7.45-27.56)'
-- unparsed cell tab_1:row15:col6 = '6.07 (5.42-8.04)'
-- unparsed cell tab_1:row15:col8 = '0.11 (0.08-0.15)'
-- unparsed cell tab_1:row21:col1 = 'T2DM'
-- unparsed cell tab_1:row21:col8 = '(0.16-'
-- unparsed cell tab_1:row22:col1 = 'CYP2D6'
-- unparsed cell tab_1:row22:col8 = '0.35)'
-- unparsed cell tab_1:row28:col1 = 'T2DM CYP2D6 EM'
-- unparsed cell tab_1:row28:col2 = '29.01 (19.34-44.04)'
-- unparsed cell tab_1:row28:col6 = '21.69 (17.74-26.34)'
-- unparsed cell tab_1:row32:col2 = '31.10 --'
-- unparsed cell tab_1:row32:col6 = '42.87 (34.39-53.43)'
-- unparsed cell tab_1:row33:col2 = '10.05 --'
-- unparsed cell tab_1:row33:col6 = '9.98 (8.72-11.42)'
-- unparsed cell tab_1:row34:col2 = '131.54 --'
-- unparsed cell tab_1:row34:col6 = '142.44 (102.62-'
+- table Nardotto_2017_table_2: unknown_column_role
+- table Nardotto_2017_table_2: missing_label
+- table Nardotto_2017_table_2: unbound_uncertainty
+- table Nardotto_2017_table_2: ragged_grid
+- table Nardotto_2017_table_2: unparsed_numeric_cell
+- table tab_1: representations disagree; selected evidence retained, not merged
 - LLM selected parameter table(s) 2
 
 ## Validation
@@ -186,23 +156,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 9 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row22:col2', 'tab_1:row22:col3', 'tab_1:row22:col4', 'tab_1:row22:col5', 'tab_1:row22:col6', 'tab_1:row22:col7', 'tab_1:row22:col9'] |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row32:col3', 'tab_1:row32:col7'] |
-| C5_dimension_Q26 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row28:col7'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row10:col3', 'tab_1:row10:col4', 'tab_1:row10:col5', 'tab_1:row10:col7', 'tab_1:row10:col9'] |
-| C5_dimension_Q370 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row15:col3', 'tab_1:row15:col4', 'tab_1:row15:col5', 'tab_1:row15:col7', 'tab_1:row15:col9'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['tab_1:row6:col3', 'tab_1:row6:col4', 'tab_1:row6:col5', 'tab_1:row6:col7', 'tab_1:row6:col9'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_1:row33:col3', 'tab_1:row33:col7'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_1:row9:col3', 'tab_1:row9:col4', 'tab_1:row9:col6', 'tab_1:row9:col8'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 4.85 | not captured | not captured | ['tab_1:row22:col2', 'tab_1:row22:col3', 'tab_1:row22:col4', 'tab_1:row22:col5', 'tab_1:row22:col6', 'tab_1:row22:col7', 'tab_1:row22:col9'] |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q26 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Nardotto_2017_table_2:row27:col2'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Nardotto_2017_table_2:row9:col2'] |
+| C5_dimension_Q370 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Nardotto_2017_table_2:row14:col2'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Nardotto_2017_table_2:row5:col2'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['McTavish_1993:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 4.85 L/h | not captured | not captured | ['tab_1:row22:col2', 'tab_1:row22:col3', 'tab_1:row22:col4', 'tab_1:row22:col5', 'tab_1:row22:col6', 'tab_1:row22:col7', 'tab_1:row22:col9'] |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 14.1 L/h | not captured | not captured | ['tab_1:row32:col3', 'tab_1:row32:col7'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 16.1 L | not captured | not captured | ['tab_1:row33:col3', 'tab_1:row33:col7'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 0.67 L | not captured | not captured | ['tab_1:row9:col3', 'tab_1:row9:col4', 'tab_1:row9:col6', 'tab_1:row9:col8'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 140 L | not captured | not captured | ['McTavish_1993:review'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -211,7 +173,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_carvedilol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Nardotto_2017` / `Nardotto_2017::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_carvedilol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Nardotto_2017` / `Nardotto_2017::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -220,14 +182,14 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_carvedilol/Carvedilol_Nardotto2017_reference/Carvedilol_Nardotto2017_reference_modelica.zip" download>Carvedilol_Nardotto2017_reference_modelica.zip</a> <span class="pk-size">(5.2 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_carvedilol/Carvedilol_Nardotto2017_reference/Carvedilol_Nardotto2017_reference_matlab.zip" download>Carvedilol_Nardotto2017_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_carvedilol/Carvedilol_Nardotto2017_reference/Carvedilol_Nardotto2017_reference_matlab_simbio.zip" download>Carvedilol_Nardotto2017_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_carvedilol/Carvedilol_Nardotto2017_reference/Carvedilol_Nardotto2017_reference_sbml.zip" download>Carvedilol_Nardotto2017_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_carvedilol/Carvedilol_Nardotto2017_reference/Carvedilol_Nardotto2017_reference_cellml.zip" download>Carvedilol_Nardotto2017_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
@@ -237,4 +199,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 00:33 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 20:18 UTC</sub>

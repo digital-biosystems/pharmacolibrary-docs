@@ -17,7 +17,7 @@ Mosunetuzumab is a monoclonal antibody cancer medicine used to treat follicular 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 17:19 | 9:44 | 0/1/3 | 1/0/0 | 0/0/0 | 171,023/24,435 | ollama / qwen3.8:27b-mtp-q8_0 | 4 | 0/4 | 4/0 | 0 |
+| 2026-10-15 03:44 | 1:50 | 0/1/2 | 1/0/0 | 0/0/0 | 120,685/6,701 | einfracz / qwen3.8-27b | 4 | 0/4 | 4/0 | 0 |
 
 ## popPK records
 
@@ -25,17 +25,23 @@ Mosunetuzumab is a monoclonal antibody cancer medicine used to treat follicular 
 |---|---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.889), gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-check: partial 1/2</span><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub><br><sub>route_to: `human_review`</sub> | [Li_2025_china_study_yo43555](drugs/drug_mosunetuzumab/Mosunetuzumab_Li2025_china_study_yo43555.md) | — | 1-compartment (no model) | 5 | Li J et al., Ethnic Sensitivity Assessment of Mosune…, Clinical and translational… (2025) | [10.1111/cts.70211](https://doi.org/10.1111/cts.70211) |
 | <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.889), gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-check: partial 1/2</span><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub><br><sub>route_to: `human_review`</sub> | [Li_2025_global_study_go29781_group_b_dose_expansion_cohort_patients_with_r_r_fl](drugs/drug_mosunetuzumab/Mosunetuzumab_Li2025_global_study_go29781_group_b_dose_expan.md) | — | 1-compartment (no model) | 5 | Li J et al., Ethnic Sensitivity Assessment of Mosune…, Clinical and translational… (2025) | [10.1111/cts.70211](https://doi.org/10.1111/cts.70211) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.875), gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-check: partial 1/2</span><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub><br><sub>route_to: `human_review`</sub> | [Li_2025_mean](drugs/drug_mosunetuzumab/Mosunetuzumab_Li2025_mean.md) | — | 1-compartment (no model) | 4 | Li J et al., Ethnic Sensitivity Assessment of Mosune…, Clinical and translational… (2025) | [10.1111/cts.70211](https://doi.org/10.1111/cts.70211) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.542), gpt-oss:120b (not confirmed, agreement 0.609). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Bender_2024_reference](drugs/drug_mosunetuzumab/Mosunetuzumab_Bender2024_reference.md) | — | 2-compartment (no model) | 6 | Bender B et al., Population pharmacokinetics and CD20 bi…, Clinical and translational… (2024) | [10.1111/cts.13825](https://doi.org/10.1111/cts.13825) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.542), gpt-oss:120b (not confirmed, agreement 0.609). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Bender_2024_reference](drugs/drug_mosunetuzumab/Mosunetuzumab_Bender2024_reference.md) | — | 2-compartment (no model) | 5 (+2 cov.) | Bender B et al., Population pharmacokinetics and CD20 bi…, Clinical and translational… (2024) | [10.1111/cts.13825](https://doi.org/10.1111/cts.13825) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span> | [Li_2025_2_CRR](drugs/drug_mosunetuzumab/pd_Li_2025_2_CRR.md) | Complete response rate ← mosunetuzumab · direct Emax (saturable) effect | — | Li CC et al., A Novel Step-Up Dosage Regimen for Enha…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3445](https://doi.org/10.1002/cpt.3445) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Li_2025_2_CRS](drugs/drug_mosunetuzumab/pd_Li_2025_2_CRS.md) | Grade ≥ 2 cytokine release syndrome ← mosunetuzumab · direct linear effect | — | Li CC et al., A Novel Step-Up Dosage Regimen for Enha…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3445](https://doi.org/10.1002/cpt.3445) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Li_2025_2_Log2_IFN_CFBLmax](drugs/drug_mosunetuzumab/pd_Li_2025_2_Log2_IFN_CFBLmax.md) | Log2 maximal fold change from pre-dose baseline of IFN-γ ← mosunetuzumab · stimulation effect | — | Li CC et al., A Novel Step-Up Dosage Regimen for Enha…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3445](https://doi.org/10.1002/cpt.3445) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span> | [Li_2025_2_ORR](drugs/drug_mosunetuzumab/pd_Li_2025_2_ORR.md) | Objective response rate ← mosunetuzumab · direct Emax (saturable) effect | — | Li CC et al., A Novel Step-Up Dosage Regimen for Enha…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3445](https://doi.org/10.1002/cpt.3445) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span> | [Li_2025_2_CRR](drugs/drug_mosunetuzumab/pd_Li_2025_2_CRR.md) | Complete response rate ← mosunetuzumab AUC0-42 · direct Emax (saturable) effect | — | Li CC et al., A Novel Step-Up Dosage Regimen for Enha…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3445](https://doi.org/10.1002/cpt.3445) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span> | [Li_2025_2_ORR](drugs/drug_mosunetuzumab/pd_Li_2025_2_ORR.md) | Objective response rate ← mosunetuzumab AUC0-42 · direct Emax (saturable) effect | — | Li CC et al., A Novel Step-Up Dosage Regimen for Enha…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3445](https://doi.org/10.1002/cpt.3445) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=mosunetuzumab).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: CD3E (binder), MS4A1 (binder).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,15 +53,15 @@ Mosunetuzumab is a monoclonal antibody cancer medicine used to treat follicular 
 
 - **PubMed hits:** 5 matched, 5 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 4  ·  extracted 0  ·  needs_review 3  ·  rejected 1  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs_review 2  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Jamois_2025 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for tocilizumab (the CRS management agent), not for mosunetuzumab (the subject drug). |
-| popPK | Li_2025_2 | relevant | 8 | 2 | The paper describes a population PK model for mosunetuzumab and reports a terminal half-life, but the specific numeric values for clearance, volume, and other parameters are explicitly stated to be in Tables S3 and S5, which are not included in the evidence. |
+| popPK | Jamois_2025 | irrelevant | 0 | 0 | The study models the pharmacokinetics of tocilizumab (a comparator/management agent for CRS) in patients receiving mosunetuzumab, but does not report PK parameters for mosunetuzumab itself. |
+| popPK | Li_2025_2 | relevant | 8 | 4 | The paper describes a population PK model for mosunetuzumab and reports specific PK metrics (terminal half-life 16.1 days, V1 5.49 L), but the detailed parameter table (Table S3/S5) is in supplementary material. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 17:11 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-15 03:42 UTC</sub>

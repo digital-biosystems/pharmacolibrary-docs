@@ -104,7 +104,7 @@ Good M et al., Pharmacokinetics of N,N-dimethyltryptam…, European journal of d
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs_non_atc/drug_dimethyltryptamine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Good_2023` / `Good_2023::cohort_2`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs_non_atc/drug_dimethyltryptamine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Good_2023` / `Good_2023::cohort_2`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

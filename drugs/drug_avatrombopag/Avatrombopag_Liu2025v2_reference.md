@@ -4,7 +4,7 @@
 
 # avatrombopag — `Avatrombopag_Liu2025v2_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75), gpt-oss:120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -16,24 +16,22 @@
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's terminal half-life (model/paper ratio 0.684).**
+**R1 has no unit.**
 
-Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. A reported unit could not be converted (MTT), so that value has no SI equivalent. Extracted — avatrombopag: CL/F 7.85 L/h, V/F 199 L, kabs 0.582 /h, MTT 1.33 h.
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (MTT), so that value has no SI equivalent. Extracted — avatrombopag: CL/F 7.85 L/h, V/F 199 L, kabs 0.582 /h, MTT 1.33 h, R1 -0.272.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has avatrombopag, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has avatrombopag, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
-
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:36:14.992274+00:00) predates the upstream re-run (2026-10-05 17:23:36.818827+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Liu X et al., Investigation of the, Pharmaceuticals (Basel, Swi… (2025)
   ·  DOI: [10.3390/ph18060903](https://doi.org/10.3390/ph18060903)
 
-<div class="pk-model-meta" hidden drug="avatrombopag" model-id="Avatrombopag_Liu2025v2_reference" status="needs_review" stale="true" population="healthy Chinese adults" measured-compound="avatrombopag" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="avatrombopag" model-id="Avatrombopag_Liu2025v2_reference" status="needs_review" stale="false" population="healthy Chinese individuals" measured-compound="avatrombopag" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 4 extracted.
+**Parameters:** 5 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -42,10 +40,11 @@ Liu X et al., Investigation of the, Pharmaceuticals (Basel, Swi… (2025)
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F (L/h) | `Q27` · CL/F | 7.85 | L/h | 2.1805555555555555e-06 | [l] / [h] | not captured | exact (1.0) | pharmaceuticals-18-00903-t003:row2:col1 | — | 0.182 (None% RSE) |
-| Vd/F (L) | `Q76` · V/F | 199 | L | 0.199 | [l] | not captured | exact (1.0) | pharmaceuticals-18-00903-t003:row3:col1 | — | 0.159 (None% RSE) |
-| ka (/h) | `Q49` · kabs | 0.582 | /h | 0.00016166666666666665 | [1] / [h] | not captured | exact (1.0) | pharmaceuticals-18-00903-t003:row4:col1 | — | 0.504 (None% RSE) |
-| MTT (h) | `Q81` · MTT | 1.33 | h | not captured | [h] | not captured | exact (1.0) | pharmaceuticals-18-00903-t003:row5:col1 | — | 0.131 (None% RSE) |
+| CL/F (L/h) | `Q27` · CL/F | 7.85 | L/h | 2.1805555555555555e-06 | [l] / [h] | 14 | exact (1.0) | Liu_2025_2_table_p6_1:row0:col1 | — | 0.182 (35% RSE) |
+| Vd/F (L) | `Q76` · V/F | 199 | L | 0.199 | [l] | 13 | exact (1.0) | Liu_2025_2_table_p6_1:row1:col1 | — | 0.159 (32% RSE) |
+| ka (/h) | `Q49` · kabs | 0.582 | /h | 0.00016166666666666665 | [1] / [h] | 13 | exact (1.0) | Liu_2025_2_table_p6_1:row2:col1 | — | 0.504 (35% RSE) |
+| MTT (h) | `Q81` · MTT | 1.33 | h | not captured | [h] | 5 | exact (1.0) | Liu_2025_2_table_p6_1:row3:col1 | — | 0.131 (23% RSE) |
+| COV2 * | `Q307` · R1 | -0.272 | not captured | not captured | not captured | 15 | llm (0.6) | Liu_2025_2_table_p6_1:row5:col1 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -60,56 +59,34 @@ Liu X et al., Investigation of the, Pharmaceuticals (Basel, Swi… (2025)
 - table section iiv: 'KA' routed out of structural estimates ('Between-subject variability')
 - table section iiv: 'MTT' routed out of structural estimates ('Between-subject variability')
 - table section iiv: 'OCC [KA]' routed out of structural estimates ('Between-subject variability')
-- dropped unlinked row (NIL): 'COV1 *' — extend the ontology if this is a real PK parameter (source ['pharmaceuticals-18-00903-t003:row6:col1'])
-- dropped unlinked row (NIL): 'COV2 *' — extend the ontology if this is a real PK parameter (source ['pharmaceuticals-18-00903-t003:row7:col1'])
-- dropped unlinked row (NIL): 'COV3 *' — extend the ontology if this is a real PK parameter (source ['pharmaceuticals-18-00903-t003:row8:col1'])
+- routed 'COV1 *' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
+- dropped unlinked row (NIL): 'COV3 *' — extend the ontology if this is a real PK parameter (source ['Liu_2025_2_table_p6_1:row6:col1'])
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=avatrombopag
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- unparsed cell pharmaceuticals-18-00903-t003:row2:col2 = '14%'
-- unparsed cell pharmaceuticals-18-00903-t003:row2:col3 = '7.81 [5.92–10.62]'
-- unparsed cell pharmaceuticals-18-00903-t003:row3:col2 = '13%'
-- unparsed cell pharmaceuticals-18-00903-t003:row3:col3 = '198.01 [149.77–267.64]'
-- unparsed cell pharmaceuticals-18-00903-t003:row4:col2 = '13%'
-- unparsed cell pharmaceuticals-18-00903-t003:row4:col3 = '0.581 [0.4723–0.785]'
-- unparsed cell pharmaceuticals-18-00903-t003:row5:col2 = '5%'
-- unparsed cell pharmaceuticals-18-00903-t003:row5:col3 = '1.33 [1.22–1.45]'
-- unparsed cell pharmaceuticals-18-00903-t003:row6:col2 = '111%'
-- unparsed cell pharmaceuticals-18-00903-t003:row6:col3 = '−0.0702 [−0.3069–0.2698]'
-- unparsed cell pharmaceuticals-18-00903-t003:row7:col2 = '15%'
-- unparsed cell pharmaceuticals-18-00903-t003:row7:col3 = '−0.28 [−0.47–0.01]'
-- unparsed cell pharmaceuticals-18-00903-t003:row8:col2 = '56%'
-- unparsed cell pharmaceuticals-18-00903-t003:row8:col3 = '0.186 [−0.216–0.431]'
-- unparsed cell pharmaceuticals-18-00903-t003:row10:col2 = '35%'
-- unparsed cell pharmaceuticals-18-00903-t003:row10:col3 = '0.174 [0.126–0.235]'
-- unparsed cell pharmaceuticals-18-00903-t003:row11:col2 = '32%'
-- unparsed cell pharmaceuticals-18-00903-t003:row11:col3 = '0.153 [0.106–0.204]'
-- unparsed cell pharmaceuticals-18-00903-t003:row12:col2 = '35%'
-- unparsed cell pharmaceuticals-18-00903-t003:row12:col3 = '0.48 [0.29–0.78]'
-- unparsed cell pharmaceuticals-18-00903-t003:row13:col2 = '23%'
-- unparsed cell pharmaceuticals-18-00903-t003:row13:col3 = '0.128 [0.093–0.169]'
-- unparsed cell pharmaceuticals-18-00903-t003:row14:col2 = '12%'
-- unparsed cell pharmaceuticals-18-00903-t003:row14:col3 = '0.922 [0.681–1.346]'
-- unparsed cell pharmaceuticals-18-00903-t003:row17:col2 = '3.00%'
-- unparsed cell pharmaceuticals-18-00903-t003:row17:col3 = '1.17 [0.86–1.48]'
+- table Liu_2025_2_table_p6_1: conflicting_units
+- table Liu_2025_2_table_p6_1: unparsed_numeric_cell
 - LLM selected parameter table(s) 3
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.75 (6/8 fields) | 2 |
 | `gpt-oss:120b` | not confirmed | 0.75 (6/8 fields) | 2 |
 
-<details><summary>2 field discrepancies</summary>
+<details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `screen.dose_compound` | avatrombopag | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | avatrombopag | unknown | mismatch |
 | `gpt-oss:120b` | `screen.dose_compound` | avatrombopag | unknown | mismatch |
 | `gpt-oss:120b` | `screen.primary_analyte` | avatrombopag | unknown | mismatch |
 
@@ -125,17 +102,17 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C1_half_life_beta | fail | 25.68 | 17.572 | 0.6843 | 0.25 | reported t½β |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['pharmaceuticals-18-00903-t003:row2:col1'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['pharmaceuticals-18-00903-t003:row4:col1'] |
-| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['pharmaceuticals-18-00903-t003:row3:col1'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Liu_2025_2_table_p6_1:row0:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Liu_2025_2_table_p6_1:row2:col1'] |
+| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Liu_2025_2_table_p6_1:row1:col1'] |
+| C5_unit_missing_Q307 | fail | [mass] / [time] | not captured | not captured | not captured | ['Liu_2025_2_table_p6_1:row5:col1'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 7.85 L/h | not captured | not captured | ['pharmaceuticals-18-00903-t003:row2:col1'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 199 L | not captured | not captured | ['pharmaceuticals-18-00903-t003:row3:col1'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 7.85 L/h | not captured | not captured | ['Liu_2025_2_table_p6_1:row0:col1'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 199 L | not captured | not captured | ['Liu_2025_2_table_p6_1:row1:col1'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -144,7 +121,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_avatrombopag/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Liu_2025_2` / `Liu_2025_2::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_avatrombopag/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Liu_2025_2` / `Liu_2025_2::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -170,4 +147,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 17:23 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 21:14 UTC</sub>

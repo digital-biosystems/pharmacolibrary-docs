@@ -13,17 +13,17 @@
 
 ## Record summary
 
-**As extracted:** Nedosiran (concentrations from the PK model of Zhang_2025) drives 24-h urinary oxalate (in μmol/24 h): indirect response — drug inhibits the production of 24-h urinary oxalate.
+**As extracted:** Nedosiran (concentrations from this paper's PK model) drives 24-h urinary oxalate (in μmol/24 h): indirect response — drug inhibits the production of 24-h urinary oxalate.
 
 **Model:** No model was generated from this record.
 
-> Nedosiran plasma concentrations (ng/mL) drive an indirect response model where an effect compartment (equilibration half-life of 21.9 weeks) inhibits the first-order production of 24-h urinary oxalate (μmol/24 h) via a maximum effect (Emax) mechanism. The model parameters are an I_max of 64.5%, an IC50 of 1.04 ng/mL, a Hill coefficient of 2.56, and a baseline elimination rate (Kout) of 0.338 1/week.
+> Nedosiran plasma concentrations drive 24-h urinary oxalate via an indirect response model with an effect compartment, where the drug inhibits the production (kin) of the response. Key parameters include a maximum inhibitory effect (Imax) of 64.5%, a half-maximal inhibitory concentration (IC50) in the effect compartment of 1.04 ng/mL, a Hill coefficient of 2.56, and a first-order elimination rate (kout) of 0.338 1/week.
 >
 > <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Zhang_2024`
 - **model family:** `indirect_response_i`
-- **driver:** `cited_pk`
+- **driver:** `pk_record`
 - **tier:** population
 - **effect:** inhibition/proportional
 
@@ -39,7 +39,9 @@ Zhang S et al., Nedosiran population pharmacokinetic an…, British journal of c
 | PD (effect) | Maximum inhibitory effect | `Q323` · not captured | 64.5 | % | not captured | llm (not captured) | Zhang_2024:pdv3 |
 | PD (effect) | Half‐maximal inhibitory concentration in effect compartment | `Q322` · not captured | 1.04 | ng/mL | not captured | llm (not captured) | Zhang_2024:pdv3 |
 | PD (effect) | Hill coefficient | `Q325` · not captured | 2.56 | not captured | not captured | llm (not captured) | Zhang_2024:pdv3 |
-| PD (effect) | Equilibration half‐life in the effect compartment | `Q326` · not captured | 21.9 | week | not captured | llm (not captured) | Zhang_2024:pdv3 |
+| variability | Between‐subject variability for baseline 24‐h U ox | `Q312` · not captured | 31.7 | %CV | not captured | llm (not captured) | Zhang_2024:pdv3 |
+| variability | Between‐subject variability for IC50 | `Q312` · not captured | 86 | %CV | not captured | llm (not captured) | Zhang_2024:pdv3 |
+| variability | Between‐subject variability for I max | `Q312` · not captured | 29.4 | %CV | not captured | llm (not captured) | Zhang_2024:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>

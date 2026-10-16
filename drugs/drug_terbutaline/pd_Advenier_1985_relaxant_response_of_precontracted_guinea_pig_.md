@@ -20,9 +20,9 @@
 
 **Model:** No model was generated from this record.
 
-> Terbutaline (microM concentrations) produces a direct Emax-type relaxant response of precontracted guinea-pig intralobular bronchi, with EC50 = 0.87 +/- 0.18 microM and maximal relaxant response = 263 +/- 40 mg; no mechanism beyond a direct concentration-effect (Emax) relationship is stated.
+> The paper describes a direct Emax model where terbutaline concentrations stimulate the relaxant response of precontracted guinea-pig intralobular bronchi, with an EC50 of 0.87 +/- 0.18 microM and a maximal relaxant response of 263 +/- 40 mg. No mechanism details or rate constants are provided in the available excerpts.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
 
 - **paper:** `Advenier_1985`
 - **model family:** `emax`

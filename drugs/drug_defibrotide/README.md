@@ -18,14 +18,25 @@ Defibrotide, a mixture of single-stranded DNA fragments from pig intestinal muco
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-05 14:32 | 12:13 | 1/1/0 | 0/0/0 | 0/0/0 | 215,520/27,692 | ollama / qwen3.8:27b-mtp-q8_0 | 19 | 5/11 | 9/10 | 0 |
+| 2026-10-14 23:03 | 5:38 | 1/2/0 | 0/0/0 | 0/0/0 | 310,292/25,369 | einfracz / qwen3.8-27b | 19 | 10/11 | 9/10 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓ 2/2</span> | [Tocchetti_2016_reference](drugs/drug_defibrotide/Defibrotide_Tocchetti2016_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Tocchetti P et al., Pharmacokinetic profile of defibrotide…, Drug design, development an… (2016) | [10.2147/DDDT.S112181](https://doi.org/10.2147/DDDT.S112181) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.308), gpt-oss:120b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Pescador_1983_reference](drugs/drug_defibrotide/Defibrotide_Pescador1983_reference.md) | — | 2-compartment (no model) | 8 | Pescador R et al., Pharmacokinetics of Defibrotide and of…, Thrombosis research (1983) | [10.1016/0049-3848(83)90391-2](https://doi.org/10.1016/0049-3848(83)90391-2) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Noseda_1986_reference](drugs/drug_defibrotide/Defibrotide_Noseda1986_reference.md) | — | 1-compartment (no model) | 3 | Noseda G et al., Pharmacokinetics of defibrotide in heal…, Haemostasis 16 Suppl (1986) | [10.1159/000215336](https://doi.org/10.1159/000215336) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.308), gpt-oss:120b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Pescador_1983_reference](drugs/drug_defibrotide/Defibrotide_Pescador1983_reference.md) | — | 1-compartment (no model) | 7 | Pescador R et al., Pharmacokinetics of Defibrotide and of…, Thrombosis research (1983) | [10.1016/0049-3848(83)90391-2](https://doi.org/10.1016/0049-3848(83)90391-2) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=defibrotide).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: ADORA1 (target), ADORA2A (target), ADORA2B (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -36,8 +47,8 @@ Defibrotide, a mixture of single-stranded DNA fragments from pig intestinal muco
 ## Coverage
 
 - **PubMed hits:** 48 matched, 41 returned
-- **screened:** 4  ·  **relevant:** 4
-- **records:** 2  ·  extracted 1  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **screened:** 11  ·  **relevant:** 4
+- **records:** 3  ·  extracted 1  ·  needs_review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -49,7 +60,7 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | `Gryglewski_1989.pdf` | Gryglewski RJ et al., Prostacyclin and the mechanism of actio…, Eicosanoids (1989) | pd | 4 | not captured | [2517030](https://www.ncbi.nlm.nih.gov/pubmed/2517030) | metadata signals extractable PD data (IC50) |
 | `Zhang_2022.pdf` | Zhang F et al., Potential Anti-SARS-CoV-2 Activity of P…, Pharmaceuticals (Basel, Swi… (2022) | pd | 4 | [10.3390/ph15020258](https://doi.org/10.3390/ph15020258) | [35215371](https://www.ncbi.nlm.nih.gov/pubmed/35215371) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-10-05T14:22:00.872069+00:00</sub>
+<sub>queue written 2026-10-14T22:58:36.337411+00:00</sub>
 
 ## Screened and excluded
 
@@ -57,44 +68,43 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 |---|---|---|---|---|---|
 | popPK | Arnold_2023 | irrelevant | 0 | 0 | The study investigates heparan sulfate oligosaccharides, not defibrotide. |
 | popPK | Asako_1994 | irrelevant | 0 | 0 | The paper studies histamine-induced leukocyte rolling and albumin clearance in rat mesentery and does not involve defibrotide or report pharmacokinetic parameters for it. |
-| PD | Aziz_2018 | not_relevant | 1 | 0 | The paper is a narrative review summarizing efficacy and safety outcomes (response rates, survival) rather than reporting a specific pharmacodynamic model or numeric exposure-response parameters. |
-| PD | Bagal_2018 | not_relevant | 1 | 0 | The paper explicitly states that no dose-response relationship was observed and provides no numeric PD parameters or concentration-effect data. |
-| popPK | Bartelink_2016 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics and clinical outcomes of busulfan, not defibrotide. |
+| PD | Aziz_2018 | not_relevant | 0 | 0 | The provided text is an introductory section describing the clinical syndrome of Sinusoidal Obstruction Syndrome and diagnostic criteria; it contains no pharmacokinetic data, pharmacodynamic analysis, or exposure-response relationship for defibrotide. |
+| PD | Bagal_2018 | not_relevant | 1 | 0 | The paper reports clinical outcomes for a fixed low dose of defibrotide in VOD but does not provide drug concentrations, PK/PD modeling, or numeric exposure-response parameters. |
+| popPK | Bartelink_2016 | irrelevant | 0 | 0 | The study focuses on busulfan pharmacokinetics and outcomes, not defibrotide. |
 | PD | Bartelink_2016 | not_relevant | 0 | 0 | The paper analyzes busulfan exposure-response relationships, not defibrotide. |
-| popPK | Berti_1991 | irrelevant | 1 | 0 | The study focuses on the pharmacodynamic effects of defibrotide on prostacyclin release and renal function in rabbits, not on quantitative pharmacokinetic parameters like clearance or volume of distribution. |
+| popPK | Berti_1991 | irrelevant | 0 | 0 | This is a mechanistic study in rabbits focusing on prostacyclin release and renal protection, not a pharmacokinetic study reporting disposition parameters for defibrotide. |
 | popPK | Bi_2023 | irrelevant | 0 | 0 | The paper focuses on curcumin nanoemulsions and does not involve defibrotide or its pharmacokinetics. |
-| popPK | Botting_1989 | irrelevant | 0 | 0 | The paper is a review of endothelial mediators and mentions defibrotide only as a drug that may release prostacyclin, without reporting any pharmacokinetic parameters. |
+| popPK | Botting_1989 | irrelevant | 0 | 0 | The paper is a review of vasoactive mediators (prostacyclin, EDRF, endothelin) and mentions defibrotide only as a drug that may release prostacyclin, without reporting any pharmacokinetic parameters. |
 | popPK | Cao_2022 | irrelevant | 0 | 0 | The paper focuses on the preparation and properties of a thymol-chitooligosaccharide complex for food storage, with no mention of defibrotide or pharmacokinetic parameters. |
-| popPK | Cella_2001 | irrelevant | 2 | 1 | The study focuses on the mechanism of TFPI release and reports only a single plasma concentration point for defibrotide, lacking a full pharmacokinetic model or standard disposition parameters like clearance and volume. |
+| popPK | Cella_2001 | irrelevant | 1 | 1 | The study focuses on the mechanism of action (TFPI release) rather than pharmacokinetic parameters, and only provides qualitative concentration trends for defibrotide without reporting clearance, volume, or half-life values. |
 | popPK | Chen_2020 | irrelevant | 0 | 0 | The paper is about sewage sludge pretreatment for lipid production and does not involve defibrotide or pharmacokinetics. |
 | popPK | Cheng_2024 | irrelevant | 0 | 0 | The paper studies zinc bioavailability using nanoparticles and does not involve defibrotide or pharmacokinetic parameters. |
-| PGx | Coppell_2003 | not_relevant | 0 | 0 | The paper is a review of the pathogenesis of hepatic veno-occlusive disease and does not report pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of defibrotide. |
-| PD | Glusa_2001 | not_relevant | 1 | 2 | The paper reports an IC50 for defibrotide as an inhibitor of cathepsin G-induced relaxation, which is a pharmacological interaction study, not a pharmacodynamic exposure-response or dose-response analysis of defibrotide's own therapeutic effect. |
+| PGx | Coppell_2003 | not_relevant | 0 | 0 | The paper is a review of VOD pathogenesis and mentions defibrotide, but does not report any pharmacogenomic studies linking genetic variants to specific PK or PD parameters of defibrotide. |
+| PD | Glusa_2001 | not_relevant | 2 | 1 | The paper reports an IC50 for defibrotide as an inhibitor of cathepsin G-induced relaxation in a biological assay, but it does not report a pharmacodynamic model, exposure-response relationship, or dose-response curve for defibrotide's own therapeutic effect. |
 | popPK | Gross_1987 | irrelevant | 0 | 0 | The paper studies the clearance of rat liver secretory glycoproteins and does not involve defibrotide. |
 | popPK | Guo_2025 | irrelevant | 0 | 0 | The paper studies naringin nanoparticles and does not involve defibrotide or its pharmacokinetics. |
 | popPK | Halbeek_1993 | irrelevant | 0 | 0 | The paper is a review on NMR spectroscopy for glycoprotein characterization and does not contain any pharmacokinetic data for defibrotide. |
 | popPK | Harenberg_2010 | irrelevant | 0 | 0 | The paper discusses idraparinux and idrabiotaparinux, not defibrotide. |
-| popPK | Hong_2025 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of cyclophosphamide, not defibrotide. |
+| popPK | Hong_2025 | irrelevant | 0 | 0 | The study analyzes the pharmacokinetics of cyclophosphamide, not defibrotide. |
 | PD | Hong_2025 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics of cyclophosphamide and its metabolites, not defibrotide; while defibrotide is mentioned in supplementary tables regarding VOD treatment, no pharmacodynamic or exposure-response analysis for defibrotide is presented. |
 | popPK | Huang_2019 | irrelevant | 0 | 0 | The study focuses on curcumin as a model drug for solid dispersion formulation, not defibrotide. |
 | popPK | Imber_1981 | irrelevant | 0 | 0 | The paper studies the clearance of alpha 2-macroglobulin in mice, not the pharmacokinetics of defibrotide. |
-| popPK | Koehl_2007 | irrelevant | 0 | 0 | The study focuses on the anti-angiogenic mechanism of defibrotide in vitro and in vivo, reporting no quantitative pharmacokinetic parameters such as clearance, volume, or half-life values. |
+| popPK | Koehl_2007 | irrelevant | 0 | 0 | The study is a pharmacodynamic/mechanistic investigation of anti-angiogenic potential, not a pharmacokinetic study, and reports no quantitative PK parameters for defibrotide. |
 | popPK | Li_2023 | irrelevant | 0 | 0 | The paper studies lutein-stachyose derivatives and does not involve defibrotide. |
 | popPK | Liu_2023 | irrelevant | 0 | 0 | The study focuses on the oral delivery of doxorubicin, not defibrotide. |
-| popPK | Loganathan_2023 | irrelevant | 0 | 0 | The paper is a review of non-coding RNAs in human health and disease and contains no pharmacokinetic data for defibrotide. |
+| popPK | Loganathan_2023 | irrelevant | 0 | 0 | The paper is a review on non-coding RNAs and contains no pharmacokinetic data or parameters for defibrotide. |
 | PD | Loganathan_2023 | not_relevant | 0 | 0 | The paper is a review on non-coding RNAs as biomarkers and therapeutic targets and does not contain any pharmacodynamic or exposure-response analysis for defibrotide. |
 | popPK | Lu_2022 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of sodium oligomannate, not defibrotide. |
 | popPK | Lunghi_2025 | irrelevant | 0 | 0 | The paper investigates the effects of OligoGM1 on microglial activation and alpha-synuclein clearance in an in vitro model, and does not involve defibrotide or report any pharmacokinetic parameters. |
 | popPK | Magner_1984 | irrelevant | 0 | 0 | The paper is a mechanistic study on carbohydrate processing of thyrotropin in mouse pituitary tumors and does not involve defibrotide or pharmacokinetic parameters. |
-| popPK | Natale_2022 | irrelevant | 0 | 0 | This is a Cochrane review of antiplatelet agents in CKD that mentions defibrotide only as a comparator in limited head-to-head data, without reporting any pharmacokinetic parameters. |
-| PD | Noseda_1986 | not_relevant | 0 | 0 | The paper reports only pharmacokinetic parameters (half-life, AUC, Vd) and their dose-dependence, with no pharmacodynamic or exposure-response data. |
-| popPK | Oltolini_2023 | irrelevant | 0 | 0 | The paper is a clinical case report regarding SARS-CoV-2 management in a transplant patient where defibrotide is mentioned only as a treatment for veno-occlusive disease, with no pharmacokinetic parameters reported. |
-| PD | Palmer_1993 | not_relevant | 1 | 0 | The text is a qualitative review of pharmacodynamic properties and therapeutic use, containing no numeric PD parameters, concentration-effect curves, or quantitative exposure-response data. |
-| popPK | Pennesi_2022 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics and pharmacodynamics of inotuzumab ozogamicin, not defibrotide. |
-| PD | Pescador_1983 | not_relevant | 4 | 2 | The abstract describes dose-dependent PK parameters and qualitative trends in profibrinolytic activity but does not provide specific numeric PD parameters (e.g., Emax, EC50) or quantitative concentration-effect data. |
+| popPK | Natale_2022 | irrelevant | 0 | 0 | This is a Cochrane review on antiplatelet agents in CKD; defibrotide is only mentioned as a comparator in limited data and no PK parameters are reported. |
+| PD | Noseda_1986 | not_relevant | 0 | 0 | The study reports dose-dependent pharmacokinetic parameters (saturation of elimination) but provides no pharmacodynamic effect data or concentration-effect relationship. |
+| popPK | Oltolini_2023 | irrelevant | 0 | 0 | The paper is a clinical case report regarding hematopoietic stem cell transplantation where defibrotide is used as a therapeutic agent for veno-occlusive disease, with no pharmacokinetic modeling or quantitative disposition parameters reported. |
+| PD | Palmer_1993 | not_relevant | 2 | 0 | The paper is a clinical review that provides a general description of defibrotide's pharmacodynamic mechanisms (e.g., increased prostaglandins, fibrinolytic activity) and PK parameters (half-life, AUC), but it does not report specific numeric exposure-response or dose-response parameters (such as EC50, Emax, or regression slopes) linking concentration to effect. |
+| popPK | Pennesi_2022 | irrelevant | 0 | 0 | The paper investigates the pharmacokinetics and pharmacodynamics of inotuzumab ozogamicin (InO), not defibrotide. |
 | popPK | Pérez-González_2025 | irrelevant | 0 | 0 | The study focuses on a dexamethasone nanosystem and does not involve defibrotide or report any pharmacokinetic parameters for it. |
-| popPK | Rigotti_1991 | irrelevant | 0 | 0 | The study measures renal function and urinary prostanoid excretion, not the pharmacokinetic disposition parameters (CL, V, t1/2) of defibrotide. |
-| popPK | Shah_2018 | irrelevant | 0 | 0 | The paper is a case series discussing Sinusoidal Obstruction Syndrome and mentions defibrotide only as a treatment, without reporting any pharmacokinetic parameters for it. |
+| popPK | Rigotti_1991 | irrelevant | 0 | 0 | The study evaluates renal function and prostanoid excretion, not the pharmacokinetic disposition parameters of defibrotide. |
+| popPK | Shah_2018 | irrelevant | 0 | 0 | The paper is a case series discussing Sinusoidal Obstruction Syndrome and defibrotide's FDA approval, but it does not report any quantitative pharmacokinetic parameters (CL, V, etc.) for defibrotide. |
 | popPK | Strous_1985 | irrelevant | 0 | 0 | The paper studies the effect of monensin on glycosylation in HeLa cells and does not involve defibrotide or pharmacokinetic parameters. |
 | popPK | Tanabe_2020 | irrelevant | 0 | 0 | The paper studies the bioavailability of maltobionic acid, not defibrotide. |
 | popPK | Thotakura_1991 | irrelevant | 0 | 0 | The paper studies recombinant human thyrotropin (TSH), not defibrotide. |
@@ -134,4 +144,4 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | PD | unknown_2022 | not_relevant | 0 | 0 | The provided text contains abstracts regarding bone marrow transplantation outcomes and risk scores, with no mention of defibrotide or any pharmacodynamic modeling. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-05 14:22 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-14 22:58 UTC</sub>

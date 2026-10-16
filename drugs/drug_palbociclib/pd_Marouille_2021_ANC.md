@@ -1,7 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;palbociclib&quot;,&quot;href&quot;:&quot;drugs/drug_palbociclib/&quot;},{&quot;label&quot;:&quot;Marouille_2021 \u00b7 PD absolute neutrophil count&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;palbociclib&quot;,&quot;href&quot;:&quot;drugs/drug_palbociclib/&quot;},{&quot;label&quot;:&quot;Marouille_2021 \u00b7 PD absolute neutrophil counts&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Palbociclib_Courlet2022_reference&quot;,&quot;label&quot;:&quot;Courlet_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_palbociclib/Palbociclib_Courlet2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# absolute neutrophil count — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span>
+# absolute neutrophil counts — PD  <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -13,16 +14,16 @@
 
 ## Record summary
 
-**As extracted:** Palbociclib (concentrations from this paper's PK model) drives absolute neutrophil count (in G/L): indirect response — drug inhibits the production of absolute neutrophil count.
+**As extracted:** Palbociclib (concentrations from this paper's PK model) drives absolute neutrophil counts (in G/L): direct linear effect.
 
-**Model:** No model was generated from this record.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
-> Palbociclib concentrations (µg/L) were related to ANC (G/L) with a proportional inhibitory effect in an indirect-response-I model, but the excerpts do not specify the biological or kinetic mechanism. The record gives a slope of 0.0011 L/µg, γ = 0.103, and baseline ANC of 2.92 G/L.
+> The paper describes a PK/PD model for palbociclib in which plasma concentrations (µg/L) act on absolute neutrophil counts (G/L) via a linear, proportional inhibition mechanism (specifically, a direct linear decrease in ANC relative to baseline) with a slope of 0.0011 L/µg, a baseline (Base) of 2.92 G/L, and a gamma parameter of 0.103.
 >
-> <sub>Source-based summary by gpt-6-luna from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Marouille_2021`
-- **model family:** `indirect_response_i`
+- **model family:** `linear`
 - **driver:** `pk_record`
 - **tier:** population
 - **effect:** inhibition/proportional
@@ -37,13 +38,37 @@ Marouille AL et al., Pharmacokinetic/Pharmacodynamic Model o…, Pharmaceutics (
 | PD (effect) | Base | `Q324` · not captured | 2.92 | G/L | not captured | llm (not captured) | Marouille_2021:pdv3 |
 | PD (effect) | Slope | `Q335` · not captured | 0.0011 | L/µg | not captured | llm (not captured) | Marouille_2021:pdv3 |
 | PD (effect) | Gamma | `Q325` · not captured | 0.103 | not captured | not captured | exact (not captured) | Marouille_2021:pdv3 |
-| model term | Age on Base (med = 63.7 years) | `Q900` · not captured | 0.465 | not captured | not captured | llm (not captured) | Marouille_2021:pdv3 |
-| variability | Slope IIV (CV %) | `Q312` · not captured | 28.8 | CV % | not captured | llm (not captured) | Marouille_2021:pdv3 |
+| variability | Slope IIV | `Q312` · not captured | 28.8 | CV % | not captured | llm (not captured) | Marouille_2021:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
+
+
+## Exposure-response model
+
+`Palbociclib_Marouille2021_PD_anc` — linear, `response = E0 + slope*exposure`
+
+| parameter | value (paper units) | SI |
+|---|---|---|
+| E0 | 2.92 G/L | 2.92 kg/m3 |
+| slope | 0.0011 L/µg | 1100 meter ** 3 / kilogram |
+
+Closed-form check points (response, SI): `at_0` = 2.92, `per_exposure_unit` = 1100
+
+## Review
+
+Verdict <span class="pk-badge pk-badge--green">reviewed — candidate</span>
+
+| check | status | note |
+|---|---|---|
+| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
+| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
+| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
+| `T2_direction` | skipped | a line has no plateau to compare |
+| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
+| `T4_defaults` | pass | nothing defaulted |
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
@@ -74,14 +99,14 @@ Primary extraction: `openai:gpt-6-luna`; retained regardless of cross-check verd
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_palbociclib/Palbociclib_Marouille2021_PD_anc/Palbociclib_Marouille2021_PD_anc_modelica.zip" download>Palbociclib_Marouille2021_PD_anc_modelica.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_palbociclib/Palbociclib_Marouille2021_PD_anc/Palbociclib_Marouille2021_PD_anc_matlab.zip" download>Palbociclib_Marouille2021_PD_anc_matlab.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_palbociclib/Palbociclib_Marouille2021_PD_anc/Palbociclib_Marouille2021_PD_anc_sbml.zip" download>Palbociclib_Marouille2021_PD_anc_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_palbociclib/Palbociclib_Marouille2021_PD_anc/Palbociclib_Marouille2021_PD_anc_cellml.zip" download>Palbociclib_Marouille2021_PD_anc_cellml.zip</a> <span class="pk-size">(2.3 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
 </div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>

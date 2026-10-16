@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;etanercept&quot;,&quot;href&quot;:&quot;drugs/drug_etanercept/&quot;},{&quot;label&quot;:&quot;Lee_2003 \u00b7 PD ACR20&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Etanercept_Ling2024_reference&quot;,&quot;label&quot;:&quot;Ling_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etanercept/Etanercept_Ling2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Etanercept_Ling2024_reference&quot;,&quot;label&quot;:&quot;Ling_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etanercept/Etanercept_Ling2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Breedveld_2018_ESR&quot;,&quot;label&quot;:&quot;Breedveld_2018 \u00b7 ESR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_etanercept/pd_Breedveld_2018_ESR.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Breedveld_2018_IL_6&quot;,&quot;label&quot;:&quot;Breedveld_2018 \u00b7 IL-6&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_etanercept/pd_Breedveld_2018_IL_6.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Breedveld_2018_MMP_3&quot;,&quot;label&quot;:&quot;Breedveld_2018 \u00b7 MMP-3&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_etanercept/pd_Breedveld_2018_MMP_3.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Breedveld_2018_Painful_joints&quot;,&quot;label&quot;:&quot;Breedveld_2018 \u00b7 Painful joints&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_etanercept/pd_Breedveld_2018_Painful_joints.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Breedveld_2018_Swollen_joints&quot;,&quot;label&quot;:&quot;Breedveld_2018 \u00b7 Swollen joints&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_etanercept/pd_Breedveld_2018_Swollen_joints.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ACR20 — PD  <span class="pk-badge pk-badge--orange">needs review</span>
@@ -14,17 +14,17 @@
 
 ## Record summary
 
-**As extracted:** Etanercept (the dose) drives ACR20: categorical (graded) response model.
+**As extracted:** Etanercept (concentrations from this paper's PK model) drives ACR20: categorical (graded) response model.
 
 **Model:** No model was generated from this record.
 
-> The paper does not provide full text or specific potency and rate values, describing only a dose-only relationship between etanercept and the binary ACR20 response without detailing the underlying mechanism or quantitative parameters.
+> The record links etanercept concentrations to ACR20 response but specifies no mechanism or potency values. Because no full text is available, the paper does not provide the mechanism, Imax, IC50, EC50, or rate constants.
 >
 > <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Lee_2003`
 - **model family:** `categorical`
-- **driver:** `dose_only`
+- **driver:** `pk_record`
 - **tier:** population
 - **effect:** stimulation/unknown
 

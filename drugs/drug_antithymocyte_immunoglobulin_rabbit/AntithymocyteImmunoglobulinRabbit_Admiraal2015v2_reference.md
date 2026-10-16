@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;antithymocyte immunoglobulin (rabbit)&quot;,&quot;href&quot;:&quot;drugs/drug_antithymocyte_immunoglobulin_rabbit/&quot;},{&quot;label&quot;:&quot;Admiraal_2015_2 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;AntithymocyteImmunoglobulinRabbit_Admiraal2015v2_reference&quot;,&quot;label&quot;:&quot;Admiraal_2015_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_antithymocyte_immunoglobulin_rabbit/AntithymocyteImmunoglobulinRabbit_Admiraal2015v2_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -13,13 +12,13 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** Model and browser simulation available in **Models** and **Simulation**.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's time of the peak (tmax) (paper 157, model 0.183).**
+**CL and V have no unit.**
 
-Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. Extracted — antithymocyte immunoglobulin rabbit: CL 2.12 L/h, V 7.84 L.
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (CL and V), so that value has no SI equivalent. Extracted — antithymocyte immunoglobulin rabbit: CL 2.12 0, V 7.84 0.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has antithymocyte immunoglobulin, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -29,9 +28,9 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Admiraal R et al., Population pharmacokinetic modeling of…, Clinical pharmacokinetics (2015)
   ·  DOI: [10.1007/s40262-014-0214-6](https://doi.org/10.1007/s40262-014-0214-6)
 
-<div class="pk-model-meta" hidden drug="antithymocyte immunoglobulin (rabbit)" model-id="AntithymocyteImmunoglobulinRabbit_Admiraal2015v2_reference" status="needs_review" stale="false" population="children receiving allogeneic hematopoietic cell transplantation" measured-compound="antithymocyte immunoglobulin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="antithymocyte immunoglobulin (rabbit)" model-id="AntithymocyteImmunoglobulinRabbit_Admiraal2015v2_reference" status="needs_review" stale="false" population="children receiving allogeneic hematopoietic cell transplantation" measured-compound="Thymoglobulin" parameterization="mechanistic" topology="1C"></div>
 
-**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
@@ -41,8 +40,8 @@ Admiraal R et al., Population pharmacokinetic modeling of…, Clinical pharmacok
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL | `Q22` · CL | 2.12 | L/h | 5.88888888888889e-07 | L/h | not captured | exact (1.0) | Admiraal_2015_2:other_prose | — | not captured |
-| V1 | `Q61` · V | 7.84 | L | 0.00784 | L | not captured | exact (1.0) | Admiraal_2015_2:other_prose | — | not captured |
+| CL | `Q22` · CL | 2.12 | 0 | not captured | 0 | not captured | exact (1.0) | Admiraal_2015_2:other_prose | — | not captured |
+| V1 | `Q61` · V | 7.84 | 0 | not captured | 0 | not captured | exact (1.0) | Admiraal_2015_2:other_prose | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -54,12 +53,12 @@ Admiraal R et al., Population pharmacokinetic modeling of…, Clinical pharmacok
 **Interpretation flags:**
 - salvaged Q22 ('CL'=2.12) from results prose — parameter table was unreadable
 - salvaged Q63 ('V1'=7.84) from results prose — parameter table was unreadable
-- implicit units: 'CL' → L/h (from the popPK convention: 'The paper defines TIME in days and AMT in mg, but does not explicitly state the unit for CL in the text. Based on popula')
-- implicit units: 'V1' → L (from the popPK convention: 'The paper does not explicitly state the unit for V1. Based on population PK conventions, volume of distribution is commo')
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=antithymocyte immunoglobulin
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=Thymoglobulin
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - 1C volume normalization: Q63→Q61 (single-compartment model has no central/peripheral split; 'V1' is the general volume)
+- status held at route_to_review — not promoted
 - molar mass: none found for 'antithymocyte_immunoglobulin_rabbit' — its concentrations stay mass-only
-- molar mass: none found for 'antithymocyte immunoglobulin' — its concentrations stay mass-only
+- molar mass: none found for 'Thymoglobulin' — its concentrations stay mass-only
 
 **Extraction notes:**
 - no TEI final-model table id; trying text-pointer table recovery
@@ -100,24 +99,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Admiraal_2015_2:other_prose'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Admiraal_2015_2:other_prose'] |
+| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | 0 | not captured | not captured | ['Admiraal_2015_2:other_prose'] |
+| C5_unit_missing_Q61 | fail | [length] ** 3 | 0 | not captured | not captured | ['Admiraal_2015_2:other_prose'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 2.12 | not captured | not captured | ['Admiraal_2015_2:other_prose'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 2.12 L/h | not captured | not captured | ['Admiraal_2015_2:other_prose'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 7.84 L | not captured | not captured | ['Admiraal_2015_2:other_prose'] |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_output_variable | not captured | pass | C_central (measured=antithymocyte immunoglobulin) | central.C | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
-| T1_tmax | reference | fail | 157.0 | 0.18333333335172428 | 0.0012 | →SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -126,10 +111,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_antithymocyte_immunoglobulin_rabbit/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Admiraal_2015_2` / `Admiraal_2015_2::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_antithymocyte_immunoglobulin_rabbit/models/modelica/AntithymocyteImmunoglobulinRabbit_Admiraal2015v2_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_antithymocyte_immunoglobulin_rabbit/models/modelica/AntithymocyteImmunoglobulinRabbit_Admiraal2015v2_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_antithymocyte_immunoglobulin_rabbit/models/modelica/AntithymocyteImmunoglobulinRabbit_Admiraal2015v2_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_antithymocyte_immunoglobulin_rabbit/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Admiraal_2015_2` / `Admiraal_2015_2::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -139,25 +121,20 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_antithymocyte_immunoglobulin_rabbit/AntithymocyteImmunoglobulinRabbit_Admiraal2015v2_reference/AntithymocyteImmunoglobulinRabbit_Admiraal2015v2_reference_modelica.zip" download>AntithymocyteImmunoglobulinRabbit_Admiraal2015v2_reference_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_antithymocyte_immunoglobulin_rabbit/AntithymocyteImmunoglobulinRabbit_Admiraal2015v2_reference/AntithymocyteImmunoglobulinRabbit_Admiraal2015v2_reference_fmi.zip" download>AntithymocyteImmunoglobulinRabbit_Admiraal2015v2_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><a href="drugs/drug_antithymocyte_immunoglobulin_rabbit/AntithymocyteImmunoglobulinRabbit_Admiraal2015v2_reference/AntithymocyteImmunoglobulinRabbit_Admiraal2015v2_reference_fmi.zip" download>AntithymocyteImmunoglobulinRabbit_Admiraal2015v2_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_antithymocyte_immunoglobulin_rabbit/AntithymocyteImmunoglobulinRabbit_Admiraal2015v2_reference/AntithymocyteImmunoglobulinRabbit_Admiraal2015v2_reference_matlab.zip" download>AntithymocyteImmunoglobulinRabbit_Admiraal2015v2_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_antithymocyte_immunoglobulin_rabbit/AntithymocyteImmunoglobulinRabbit_Admiraal2015v2_reference/AntithymocyteImmunoglobulinRabbit_Admiraal2015v2_reference_matlab_simbio.zip" download>AntithymocyteImmunoglobulinRabbit_Admiraal2015v2_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_antithymocyte_immunoglobulin_rabbit/AntithymocyteImmunoglobulinRabbit_Admiraal2015v2_reference/AntithymocyteImmunoglobulinRabbit_Admiraal2015v2_reference_sbml.zip" download>AntithymocyteImmunoglobulinRabbit_Admiraal2015v2_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_antithymocyte_immunoglobulin_rabbit/AntithymocyteImmunoglobulinRabbit_Admiraal2015v2_reference/AntithymocyteImmunoglobulinRabbit_Admiraal2015v2_reference_cellml.zip" download>AntithymocyteImmunoglobulinRabbit_Admiraal2015v2_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_antithymocyte_immunoglobulin_rabbit/AntithymocyteImmunoglobulinRabbit_Admiraal2015v2_reference/AntithymocyteImmunoglobulinRabbit_Admiraal2015v2_reference.svg" alt="AntithymocyteImmunoglobulinRabbit_Admiraal2015v2_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the default is the WHO ATC DDD 100 mg parenteral (L04AA04) (defined daily dose)._
-
-<dbs-fmusim paramsurl="drugs/drug_antithymocyte_immunoglobulin_rabbit/AntithymocyteImmunoglobulinRabbit_Admiraal2015v2_reference/AntithymocyteImmunoglobulinRabbit_Admiraal2015v2_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_antithymocyte_immunoglobulin_rabbit/AntithymocyteImmunoglobulinRabbit_Admiraal2015v2_reference/AntithymocyteImmunoglobulinRabbit_Admiraal2015v2_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C` · parameters `AntithymocyteImmunoglobulinRabbit_Admiraal2015v2_reference_params.json` · controls `AntithymocyteImmunoglobulinRabbit_Admiraal2015v2_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 23:39 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 00:31 UTC</sub>

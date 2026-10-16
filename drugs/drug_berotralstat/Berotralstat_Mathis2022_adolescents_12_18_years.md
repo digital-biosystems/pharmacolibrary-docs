@@ -1,11 +1,10 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B06A&quot;,&quot;href&quot;:&quot;atc/B06A.md&quot;},{&quot;label&quot;:&quot;berotralstat&quot;,&quot;href&quot;:&quot;drugs/drug_berotralstat/&quot;},{&quot;label&quot;:&quot;Mathis_2022 \u00b7 adolescents_12_18_years&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Berotralstat_Mathis2022_parameter_estimate_rse&quot;,&quot;label&quot;:&quot;Mathis_2022_parameter_estimate_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_berotralstat/Berotralstat_Mathis2022_parameter_estimate_rse.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # berotralstat — `Berotralstat_Mathis2022_adolescents_12_18_years`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.875). Primary extraction retained.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.875). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -25,13 +24,11 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:36:15.535186+00:00) predates the upstream re-run (2026-10-06 00:52:22.887291+00:00). Current validate status: `rejected`.
-
 ## Citation
 Mathis A et al., Population pharmacokinetic modeling and…, Clinical and translational… (2022)
   ·  DOI: [10.1111/cts.13233](https://doi.org/10.1111/cts.13233)
 
-<div class="pk-model-meta" hidden drug="berotralstat" model-id="Berotralstat_Mathis2022_adolescents_12_18_years" status="rejected" stale="true" population="healthy subjects and patients with hereditary angioedema" measured-compound="berotralstat" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="berotralstat" model-id="Berotralstat_Mathis2022_adolescents_12_18_years" status="rejected" stale="false" population="healthy subjects and patients with hereditary angioedema" measured-compound="berotralstat" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.
@@ -43,9 +40,9 @@ Mathis A et al., Population pharmacokinetic modeling and…, Clinical and transl
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| AUC, initial dose (ng*h/ml) | `Q88` · AUC | 820 | ng*h/ml | not captured | [[h] · [ng]] / [ml] | not captured | llm_confirmed (0.6) | Mathis_2022_table_2:row0:col5 | — | not captured |
-| Cmax, initial dose (ng/ml) | `Q32` · Cmax | 67 | ng/ml | not captured | [ng] / [ml] | not captured | llm_confirmed (0.6) | Mathis_2022_table_2:row1:col5 | — | not captured |
-| AUC, steady state (ng*h/ml) | `Q18` · AUCSS | 2515 | ng*h/ml | not captured | [[h] · [ng]] / [ml] | not captured | llm_corrected (0.6) | Mathis_2022_table_2:row2:col5 | — | not captured |
+| AUC, initial dose (ng*h/ml) | `Q88` · AUC | 820 | ng*h/ml | not captured | [[h] · [ng]] / [ml] | not captured | llm_confirmed (0.6) | Mathis_2022_table_2:row4:col1 | — | not captured |
+| Cmax, initial dose (ng/ml) | `Q32` · Cmax | 67 | ng/ml | not captured | [ng] / [ml] | not captured | llm_confirmed (0.6) | Mathis_2022_table_2:row4:col2 | — | not captured |
+| AUC, steady state (ng*h/ml) | `Q18` · AUCSS | 2515 | ng*h/ml | not captured | [[h] · [ng]] / [ml] | not captured | llm_corrected (0.6) | Mathis_2022_table_2:row4:col3 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -64,7 +61,7 @@ Mathis A et al., Population pharmacokinetic modeling and…, Clinical and transl
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- transposed table Mathis_2022_table_2: parameters were across the columns, populations/subgroups down the first column — transposed for parsing
+- transposed table Mathis_2022_table_2: logical view retains original source coordinates
 - companion parameter table 2 transcribed (25 record(s))
 - LLM selected parameter table(s) 1, 2
 
@@ -97,9 +94,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q18 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Mathis_2022_table_2:row2:col5'] |
-| C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Mathis_2022_table_2:row1:col5'] |
-| C5_dimension_Q88 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Mathis_2022_table_2:row0:col5'] |
+| C5_dimension_Q18 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Mathis_2022_table_2:row4:col3'] |
+| C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Mathis_2022_table_2:row4:col2'] |
+| C5_dimension_Q88 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Mathis_2022_table_2:row4:col1'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
 <details class="legend">
@@ -109,7 +106,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_berotralstat/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Mathis_2022` / `Mathis_2022::adolescents_12_18_years`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_berotralstat/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Mathis_2022` / `Mathis_2022::adolescents_12_18_years`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -125,4 +122,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 00:52 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 21:33 UTC</sub>

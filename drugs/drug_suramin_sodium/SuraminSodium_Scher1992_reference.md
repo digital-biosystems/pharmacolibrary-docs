@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01C&quot;,&quot;href&quot;:&quot;atc/P01C.md&quot;},{&quot;label&quot;:&quot;suramin sodium&quot;,&quot;href&quot;:&quot;drugs/drug_suramin_sodium/&quot;},{&quot;label&quot;:&quot;Scher_1992 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SuraminSodium_Kosarek2006_reference&quot;,&quot;label&quot;:&quot;Kosarek_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_suramin_sodium/SuraminSodium_Kosarek2006_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;SuraminSodium_Naviaux2017_reference&quot;,&quot;label&quot;:&quot;Naviaux_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_suramin_sodium/SuraminSodium_Naviaux2017_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SuraminSodium_Kosarek2006_reference&quot;,&quot;label&quot;:&quot;Kosarek_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_suramin_sodium/SuraminSodium_Kosarek2006_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Del_2023_vasoconstriction&quot;,&quot;label&quot;:&quot;Del_2023 \u00b7 vasoconstriction&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_suramin_sodium/pd_Del_2023_vasoconstriction.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,18 +17,18 @@
 
 ### Reviewer guidance
 
-**The suramin sodium two-compartment record was rejected because its model structure leaves a compartment with no path from the administered dose, and it was built from the paper's abstract only, so summary statistics stand in for a fitted model.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The structure check found an unreachable or orphan compartment in the two-compartment model for suramin, meaning part of the model has no path from the administered dose. The record is abstract-only: the reported values (V1 4.5 L, V2 10.6 L, distributional half-life 25 h, elimination half-life 29.7 h, clearance 1.95 mL/h/kg) are summary statistics from the abstract rather than a fitted model. Because of this limitation, the record was not published. Extracted — suramin sodium: V1 4.5 L, V2 10.6 L, t1/2α 25 h, t1/2z 29.7 h, CL 1.95 mL/h/kg.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — suramin sodium: V1 4.5 L, V2 10.6 L, t1/2α 25 h, t1/2z 29.7 h, CL 1.95 mL/h/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has suramin, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by glm-5.3-flash</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Scher HI et al., Use of adaptive control with feedback t…, Cancer research (1992)
 
-<div class="pk-model-meta" hidden drug="suramin sodium" model-id="SuraminSodium_Scher1992_reference" status="rejected" stale="false" population="cancer patients receiving suramin" measured-compound="suramin" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="suramin sodium" model-id="SuraminSodium_Scher1992_reference" status="rejected" stale="false" population="patients with tumors" measured-compound="suramin" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.
@@ -44,7 +44,7 @@ Scher HI et al., Use of adaptive control with feedback t…, Cancer research (19
 | volume of the peripheral compartment | `Q64` · V2 | 10.6 | L | 0.0106 | L | not captured | exact (1.0) | Scher_1992:abstract | — | not captured |
 | distributional half-life | `Q59` · t1/2α | 25 | h | 90000.0 | [h] | not captured | llm (0.6) | Scher_1992:abstract, Scher_1992:abstract | — | not captured |
 | elimination half-life | `Q57` · t1/2z | 29.7 | h | 106920.0 | [h] | not captured | llm (0.6) | Scher_1992:abstract, Scher_1992:abstract | — | not captured |
-| Clearance | `Q22` · CL | 1.95 | mL/h/kg | 3.7916666666666665e-08 | L/h | not captured | review_gapfill (0.7) | Naviaux_2017:review | — | not captured |
+| The clearance | `Q22` · CL | 1.95 | mL/h/kg | 3.7916666666666665e-08 | L/h | not captured | review_gapfill (0.7) | Naviaux_2017:review | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -56,8 +56,8 @@ Scher HI et al., Use of adaptive control with feedback t…, Cancer research (19
 **Interpretation flags:**
 - unit_dimension_unknown: 'liters/m2' (V1)
 - unit_dimension_unknown: 'liters/m2' (V2)
-- implicit units: 'mean volume of the central compartment' → L (from the popPK convention: 'No unit stated in text or captions; volumes of distribution in population PK are conventionally reported in L, and 4.5 L')
-- implicit units: 'volume of the peripheral compartment' → L (from the popPK convention: 'No unit stated in text or captions; peripheral volumes of distribution are conventionally reported in L, and 10.6 L is a')
+- implicit units: 'mean volume of the central compartment' → L (from the popPK convention: 'No unit is stated in the text or table. A value of 4.5 for the central volume of distribution (V1) is consistent with th')
+- implicit units: 'volume of the peripheral compartment' → L (from the popPK convention: 'No unit is stated in the text or table. A value of 10.6 for the peripheral volume of distribution (V2) is consistent wit')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=suramin
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - gap-filled Q22 (CL) from Naviaux_2017's review values (primary lacked it)
@@ -123,7 +123,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_suramin_sodium/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Scher_1992` / `Scher_1992::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_suramin_sodium/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Scher_1992` / `Scher_1992::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -139,4 +139,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 09:31 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 19:58 UTC</sub>

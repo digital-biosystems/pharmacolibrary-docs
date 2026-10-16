@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;capecitabine&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/&quot;},{&quot;label&quot;:&quot;Zandvliet_2008 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Capecitabine_Panoilia2015_reference&quot;,&quot;label&quot;:&quot;Panoilia_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Panoilia2015_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Capecitabine_Schmulenson2022_reference&quot;,&quot;label&quot;:&quot;Schmulenson_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Schmulenson2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Capecitabine_Wen2021_reference&quot;,&quot;label&quot;:&quot;Wen_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Wen2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Capecitabine_Zuo2024_reference&quot;,&quot;label&quot;:&quot;Zuo_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Zuo2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Capecitabine_Panoilia2015_reference&quot;,&quot;label&quot;:&quot;Panoilia_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Panoilia2015_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Capecitabine_Wen2021_reference&quot;,&quot;label&quot;:&quot;Wen_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Wen2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Capecitabine_Zuo2024_reference&quot;,&quot;label&quot;:&quot;Zuo_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Zuo2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # capecitabine — `Capecitabine_Zandvliet2008_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.062). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429), gpt-oss-120b (not confirmed, agreement 0.062). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -17,13 +17,13 @@
 
 ### Reviewer guidance
 
-**K12 has no unit.**
+**No volume or clearance — not a compartmental population PK model; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (MTT), so that value has no SI equivalent. Extracted — indisulam: MTT 230 h; capecitabine: kabs 0.791 1/h, tlag 0.0242 h, V1 112 L, CL 35.9 L/h; 5'-DFCR: CL 9.39 L/h; 5'-DFUR: kfm 3.71 1/h; 5-fluorouracil: kfm 6.66 1/h, kel 27 1/h, k12 22.
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. A reported unit could not be converted (MTT), so that value has no SI equivalent. None of the extracted parameters is capecitabine's own; they describe indisulam. Extracted — indisulam: MTT 230 h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has indisulam, capecitabine, the second reading capecitabine; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has capecitabine → 5'-dfcr (metabolism); 5'-dfcr → 5'-dfur (metabolism); 5'-dfur → 5-fluorouracil (metabolism), the second reading capecitabine → 5'‐dfcr (metabolism); 5'‐dfcr → 5'‐dfur (metabolism); 5'‐dfur → 5‐fluorouracil (metabolism); it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 > **Dose compound ≠ measured compound:** dosed `indisulam, capecitabine`, measured `indisulam`.
 
@@ -31,29 +31,19 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Zandvliet AS et al., PK/PD model of indisulam and capecitabi…, Clinical pharmacology and t… (2008)
   ·  DOI: [10.1038/sj.clpt.6100344](https://doi.org/10.1038/sj.clpt.6100344)
 
-<div class="pk-model-meta" hidden drug="capecitabine" model-id="Capecitabine_Zandvliet2008_reference" status="needs_review" stale="false" population="cancer patients" measured-compound="indisulam" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="capecitabine" model-id="Capecitabine_Zandvliet2008_reference" status="rejected" stale="false" population="patients with cancer" measured-compound="indisulam" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
-**Parameters:** 10 extracted, plus 1 covariate effect.
+**Parameters:** 1 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| MTT enzyme (h) | `Q81` · MTT | 230 | h | not captured | [h] | 0.68 | llm_confirmed (0.6) | tab_2:row2:col2, tab_2:row2:col3, tab_2:row2:col6 | — | 78 (None% RSE) |
-| ka | `Q49` · kabs | 0.791 | 1/h | 0.00021972222222222223 | 1/h | 4.42 | exact (1.0) | Zandvliet_2008_table_1:row0:col2, Zandvliet_2008_table_1:row0:col3 | — | not captured |
-| Absorption lag time (TLAG) | `Q83` · tlag | 0.0242 | h | 87.12 | h | 0.202 | exact (1.0) | Zandvliet_2008_table_1:row1:col2, Zandvliet_2008_table_1:row1:col3 | — | not captured |
-| V1 | `Q63` · V1 | 112 | L | 0.112 | L | 316 | exact (1.0) | Zandvliet_2008_table_1:row2:col2, Zandvliet_2008_table_1:row2:col3 | — | not captured |
-| CL10 | `Q22` · CL | 35.9 | L/h | 9.972222222222222e-06 | L/h | 187 | exact (1.0) | Zandvliet_2008_table_1:row3:col2, Zandvliet_2008_table_1:row3:col3 | — | not captured |
-| CL12 | `Q22` · CL | 9.39 | L/h | 2.6083333333333335e-06 | L/h | 30.6 | exact (1.0) | Zandvliet_2008_table_1:row4:col2, Zandvliet_2008_table_1:row4:col3 | — | not captured |
-| k23 | `Q305` · kfm | 3.71 | 1/h | 0.0010305555555555556 | 1/h | 13.1 | exact (1.0) | Zandvliet_2008_table_1:row5:col2, Zandvliet_2008_table_1:row5:col3 | — | not captured |
-| Typical value, TV k34 a | `Q305` · kfm | 6.66 | 1/h | 0.00185 | 1/h | 22.2 | exact (1.0) | Zandvliet_2008_table_1:row7:col2, Zandvliet_2008_table_1:row7:col3 | — | not captured |
-| k40 | `Q47` · kel | 27 | 1/h | 0.0075 | 1/h | 82.4 | exact (1.0) | Zandvliet_2008_table_1:row9:col2, Zandvliet_2008_table_1:row9:col3 | — | not captured |
-| Interindividual variability k34 | `Q301` · k12 | 22 | not captured | not captured | not captured | 27 | llm_corrected (0.6) | Zandvliet_2008_table_1:row19:col2, Zandvliet_2008_table_1:row19:col3 | — | not captured |
-| theta_q48_bilirubin | `Q900` · theta_q48_bilirubin | 0.178 | not captured | not captured | not captured | not captured | not captured (not captured) | Zandvliet_2008_table_1:row8:col3 | — | not captured |
+| MTT enzyme (h) | `Q81` · MTT | 230 | h | not captured | [h] | 0.12 | llm_confirmed (0.6) | tab_2:row2:col2 | — | 78 (None% RSE) |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -63,60 +53,54 @@ Zandvliet AS et al., PK/PD model of indisulam and capecitabi…, Clinical pharma
 ## Departures & gaps
 
 **Interpretation flags:**
+- compound tags: 2 row(s) → 5'-DFCR, 2 row(s) → 5'-DFUR, 2 row(s) → 5-fluorouracil (name 6)
 - table section iiv: 'MTT enzyme (h)' routed out of structural estimates ('IIV (%)')
 - table section iiv: 'MTT (h)' routed out of structural estimates ('IIV (%)')
 - table section iiv: 'g' routed out of structural estimates ('IIV (%)')
 - table section iiv: 'Slope indisulam (l/mg)' routed out of structural estimates ('IIV (%)')
+- table representations disagree for 'MTT enzyme (h)'; source reconciliation required
+- table representations disagree for 'MTT (h)'; source reconciliation required
+- table representations disagree for 'g'; source reconciliation required
+- table representations disagree for 'Slope indisulam (l/mg)'; source reconciliation required
+- table representations disagree for 'Proportional residual error (%)'; source reconciliation required
+- table representations disagree for '0'; source reconciliation required
 - dropped duplicate Q81 ('MTT (h)', value '93.7') — already have one for this compound
-- dropped unlinked row (NIL): 'g' — extend the ontology if this is a real PK parameter (source ['tab_2:row5:col2', 'tab_2:row5:col3', 'tab_2:row5:col4', 'tab_2:row5:col6', 'tab_2:row5:col7', 'tab_2:row11:col2', 'tab_2:row11:col3', 'tab_2:row11:col4', 'tab_2:row11:col6', 'tab_2:row11:col7'])
-- dropped PD-category row 'Slope indisulam (l/mg)' → Q335 (slope, category G13) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tab_2:row6:col1', 'tab_2:row6:col2', 'tab_2:row6:col3', 'tab_2:row6:col4', 'tab_2:row6:col6', 'tab_2:row12:col1', 'tab_2:row12:col2', 'tab_2:row12:col3', 'tab_2:row12:col4', 'tab_2:row12:col6'])
-- dropped unlinked row (NIL): '0' — extend the ontology if this is a real PK parameter (source ['tab_2:row16:col1', 'tab_2:row16:col2', 'tab_2:row16:col3'])
-- unit_dimension_unknown: 'TLAG' (tlag)
-- routed 'Interindividual variability ka' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
-- dropped duplicate Q83 ('Interindividual variability TLAG', value '78') — already have one for this compound
-- routed 'Interindividual variability V1' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
-- routed 'Interindividual variability CL10' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
-- routed 'Interindividual variability k23' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
-- routed 'Interindividual variability k40' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
-- covariate effect for Q48 has no base parameter row (kept as unattached equation-variable)
-- implicit units: 'ka' → 1/h (from the popPK convention: 'First-order absorption rate constant (ka) is conventionally expressed in 1/h. The value 0.791 corresponds to a half-life')
-- implicit units: 'Absorption lag time (TLAG)' → h (from the popPK convention: 'Lag time (TLAG) is a duration and is conventionally expressed in hours (h). The value 0.0242 h (approx 1.45 min) is cons')
-- implicit units: 'V1' → L (from the popPK convention: 'Volume of distribution (V1) is conventionally expressed in liters (L) in population PK models (often normalized to weigh')
-- implicit units: 'CL10' → L/h (from the popPK convention: 'Clearance (CL10) is conventionally expressed in L/h in population PK. The value 35.9 L/h is consistent with typical huma')
-- implicit units: 'CL12' → L/h (from the popPK convention: 'Intercompartmental clearance (CL12) is conventionally expressed in L/h. The value 9.39 is consistent with this magnitude')
-- implicit units: 'k23' → 1/h (from the popPK convention: 'First-order rate constant for metabolite formation (k23) is conventionally expressed in 1/h. The value 3.71 is consisten')
-- implicit units: 'Typical value, TV k34 a' → 1/h (from the popPK convention: 'First-order rate constant for metabolite formation (k34) is conventionally expressed in 1/h. The value 6.66 is consisten')
-- implicit units: 'k40' → 1/h (from the popPK convention: 'Elimination rate constant (k40) is conventionally expressed in 1/h. The value 27 indicates a very fast elimination, whic')
-- implicit units: 'Interindividual variability k34' — the LLM proposed '%', whose dimension does not fit Q301; left unset
-- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q63 (V1); Q22 (CL10); Q22 (CL12)
+- dropped unlinked row (NIL): 'g' — extend the ontology if this is a real PK parameter (source ['tab_2:row5:col2', 'tab_2:row11:col2'])
+- dropped PD-category row 'Slope indisulam (l/mg)' → Q335 (slope, category G13) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tab_2:row6:col2', 'tab_2:row12:col2'])
+- dropped unlinked row (NIL): '0' — extend the ontology if this is a real PK parameter (source ['tab_2:row16:col2'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=indisulam
-- topology: 3 first-order transfer(s) across 7 compounds → general_linear
+- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
 - template fit: none — pbpk model — not a compartmental parent–metabolite model
-- row roles (LLM): model_class=pbpk; 26/26 row label(s) assigned, 16 linked by role; re-tagged parent→indisulam ×37, parent→capecitabine ×18, parent→5'-DFCR ×4, parent→5'-DFUR ×6, parent→5-fluorouracil ×11
+- status held at route_to_review — not promoted
+- row roles: 6 row(s) kept on the molecule their table section names, against the LLM's assignment
+- row roles (LLM): model_class=pbpk; 6/6 row label(s) assigned, 0 linked by role; re-tagged parent→indisulam ×15, parent→capecitabine ×2
 - molar mass: none of 1 PubChem candidate(s) is 'indisulam' (LLM) — left in mass units
 - molar mass: none found for 'indisulam' — its concentrations stay mass-only
 - review gap-fill skipped: this record measures 'indisulam', not capecitabine — the review values are the parent's
 
 **Extraction notes:**
-- unparsed cell tab_2:row16:col4 = '1 2'
-- unparsed cell Zandvliet_2008_table_1:row0:col1 = '( h À1 )'
-- unparsed cell Zandvliet_2008_table_1:row5:col1 = '(h À1 )'
-- unparsed cell Zandvliet_2008_table_1:row7:col1 = '(h À1 )'
-- unparsed cell Zandvliet_2008_table_1:row8:col2 = 'À0.181'
-- unparsed cell Zandvliet_2008_table_1:row9:col1 = '(h À1 )'
+- table tab_2: unbound_uncertainty
+- table tab_2: unknown_column_role
+- table tab_2: ragged_grid
+- table tab_2: unparsed_numeric_cell
+- table tab_2: representations disagree; selected evidence retained, not merged
+- table Zandvliet_2008_table_1: unbound_uncertainty
+- table Zandvliet_2008_table_1: unknown_column_role
+- table Zandvliet_2008_table_1: ragged_grid
 - companion parameter table 1 transcribed (39 record(s))
 - LLM selected parameter table(s) 1, 2
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss:120b` | not confirmed | 0.429 (3/7 fields) | 4 |
 | `gpt-oss-120b` | not confirmed | 0.062 (1/16 fields) | 15 |
 
-<details><summary>15 field discrepancies</summary>
+<details><summary>19 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -135,6 +119,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | `gpt-oss-120b` | `parameters[v1]` | 112 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `screen.dose_compound` | indisulam, capecitabine | capecitabine | mismatch |
 | `gpt-oss-120b` | `screen.primary_analyte` | indisulam | capecitabine | mismatch |
+| `gpt-oss:120b` | `model.links` | [['capecitabine', "5'-dfcr", 'metabolism'], ["5'-dfcr", "5'-dfur", 'metabolism'], ["5'-dfur", '5-fluorouracil', 'metabolism']] | [['capecitabine', "5'‐dfcr", 'metabolism'], ["5'‐dfcr", "5'‐dfur", 'metabolism'], ["5'‐dfur", '5‐fluorouracil', 'metabolism']] | mismatch |
+| `gpt-oss:120b` | `parameters[0]` | not captured | 6 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[mtt enzyme]` | not captured | 230 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[mtt enzyme]` | 230 | not captured | only_one_extracted |
 
 </details>
 
@@ -148,23 +136,9 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 10 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Zandvliet_2008_table_1:row3:col2', 'Zandvliet_2008_table_1:row3:col3'] |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Zandvliet_2008_table_1:row4:col2', 'Zandvliet_2008_table_1:row4:col3'] |
-| C5_dimension_Q305 | pass | 1 / [time] | not captured | not captured | not captured | ['Zandvliet_2008_table_1:row5:col2', 'Zandvliet_2008_table_1:row5:col3'] |
-| C5_dimension_Q305 | pass | 1 / [time] | not captured | not captured | not captured | ['Zandvliet_2008_table_1:row7:col2', 'Zandvliet_2008_table_1:row7:col3'] |
-| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['Zandvliet_2008_table_1:row9:col2', 'Zandvliet_2008_table_1:row9:col3'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Zandvliet_2008_table_1:row0:col2', 'Zandvliet_2008_table_1:row0:col3'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Zandvliet_2008_table_1:row2:col2', 'Zandvliet_2008_table_1:row2:col3'] |
-| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Zandvliet_2008_table_1:row1:col2', 'Zandvliet_2008_table_1:row1:col3'] |
-| C5_unit_missing_Q301 | fail | 1 / [time] | not captured | not captured | not captured | ['Zandvliet_2008_table_1:row19:col2', 'Zandvliet_2008_table_1:row19:col3'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 35.9 | not captured | not captured | ['Zandvliet_2008_table_1:row3:col2', 'Zandvliet_2008_table_1:row3:col3'] |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 35.9 L/h | not captured | not captured | ['Zandvliet_2008_table_1:row3:col2', 'Zandvliet_2008_table_1:row3:col3'] |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 9.39 L/h | not captured | not captured | ['Zandvliet_2008_table_1:row4:col2', 'Zandvliet_2008_table_1:row4:col3'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 112 L | not captured | not captured | ['Zandvliet_2008_table_1:row2:col2', 'Zandvliet_2008_table_1:row2:col3'] |
+| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
+| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
+| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none', 'none', 'none'] | not captured | not captured | not captured |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -173,24 +147,14 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_capecitabine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Zandvliet_2008` / `Zandvliet_2008::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_capecitabine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Zandvliet_2008` / `Zandvliet_2008::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-</tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -199,4 +163,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 16:28 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 23:57 UTC</sub>

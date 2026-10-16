@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;linagliptin&quot;,&quot;href&quot;:&quot;drugs/drug_linagliptin/&quot;},{&quot;label&quot;:&quot;Tadayasu_2013 \u00b7 PD DPP-4 inhibition&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Linagliptin_Retlich2010v2_reference&quot;,&quot;label&quot;:&quot;Retlich_2010_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_linagliptin/Linagliptin_Retlich2010v2_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Retlich_2015_DPP_4&quot;,&quot;label&quot;:&quot;Retlich_2015 \u00b7 DPP-4&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_linagliptin/pd_Retlich_2015_DPP_4.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # DPP-4 inhibition — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span>
@@ -17,9 +18,9 @@
 
 **Model:** No model was generated from this record.
 
-> Linagliptin plasma concentrations (nmol/L) drive DPP-4 inhibition (%) via a target-mediated drug disposition (TMDD) mechanism, where the drug binds to and inhibits the DPP-4 enzyme. The model estimates a maximum effect (EMAX) of 92.5%, but the provided excerpts do not state specific potency (IC50/EC50) or rate (kin/kout/ke0) parameters.
+> Linagliptin plasma concentrations inhibit DPP-4 enzyme activity through a target-mediated drug disposition (TMDD) mechanism described by a 2-compartment model with concentration-dependent binding to DPP-4 in the central and peripheral compartments. Key parameter estimates from this model include a maximum inhibition (EMAX) of 92.5%, a binding capacity (BMAX) of 6.07 nmol/L, and a dissociation constant (KD) of 0.108 nmol/L.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Tadayasu_2013`
 - **model family:** `tmdd`
@@ -35,6 +36,8 @@ Tadayasu Y et al., Population pharmacokinetic/pharmacodyna…, Journal of pharma
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
 | PD (effect) | EMAX | `Q323` · not captured | 92.5 | % | not captured | llm (not captured) | Tadayasu_2013:pdv3 |
+| PD (effect) | BMAX | `Q332` · not captured | 6.07 | nmol/L | not captured | llm (not captured) | Tadayasu_2013:pdv3 |
+| PD (effect) | KD | `Q331` · not captured | 0.108 | nmol/L | not captured | llm (not captured) | Tadayasu_2013:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>

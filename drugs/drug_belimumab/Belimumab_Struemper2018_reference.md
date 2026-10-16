@@ -16,45 +16,29 @@
 
 ### Reviewer guidance
 
-**The third compartment in the three-compartment belimumab model is unreachable from the central compartment due to missing linkages.**
+**The paper reports none of the model's key parameters.**
 
-The model defines three volume parameters (V1 2300 mL, V2 2650 mL, and steady-state V 4950 mL) but lacks a transit path connecting the third compartment to the dose. This structural discontinuity renders the third compartment an orphan, preventing drug distribution from reaching it. Consequently, the model fails the topology check for unreachable compartments. Extracted — belimumab: tlag 0.18 days, CL 204 mL/day, V1 2.3e+03 mL, V2 2.65e+03 mL, V 4.95e+03 mL.
+No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of effect of bbmi [kg/m2]: this record has none, the second reading none; it also differs on 6 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Struemper H et al., Population Pharmacokinetic and Pharmaco…, Clinical pharmacokinetics (2018)
   ·  DOI: [10.1007/s40262-017-0586-5](https://doi.org/10.1007/s40262-017-0586-5)
 
-<div class="pk-model-meta" hidden drug="belimumab" model-id="Belimumab_Struemper2018_reference" status="rejected" stale="false" population="healthy volunteers and patients with systemic lupus erythematosus" measured-compound="belimumab" parameterization="mechanistic" topology="3C"></div>
+<div class="pk-model-meta" hidden drug="belimumab" model-id="Belimumab_Struemper2018_reference" status="rejected" stale="false" population="healthy adults and adults with systemic lupus erythematosus" measured-compound="belimumab" parameterization="mechanistic" topology="1C"></div>
 
-**Model structure:** 3-compartment; no model was built for this record.  
-**Parameters:** 5 extracted.
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| lag time | `Q83` · tlag | 0.18 | days | 15552.0 | h | not captured | exact (1.0) | Struemper_2018:results_prose | — | not captured |
-| total systemic CL | `Q22` · CL | 204 | mL/day | 2.3611111111111113e-09 | L/h | not captured | boundary (0.8) | Struemper_2018:results_prose | — | not captured |
-| V c | `Q63` · V1 | 2300 | mL | 0.0023 | L | not captured | space_fold (0.95) | Struemper_2018:results_prose | — | not captured |
-| volume of distribution of the peripheral compartment | `Q64` · V2 | 2650 | mL | 0.00265 | L | not captured | boundary_compartment (0.9) | Struemper_2018:results_prose | — | not captured |
-| steady-state volume of distribution | `Q61` · V | 4950 | mL | 0.0049499999999999995 | L | not captured | boundary (0.8) | Struemper_2018:results_prose | — | not captured |
-
-<details class="legend">
-<summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
-</details>
-
-### Unresolved rows _(no Q-code or no value — not parameters)_
-| label (paper) | Q-code | value | link |
-|---|---|---|---|
-| Effect of BBMI [kg/m2] | Q319 | not captured | llm |
+_No resolved parameters._
 
 ## Departures & gaps
 
@@ -64,26 +48,16 @@ Struemper H et al., Population Pharmacokinetic and Pharmaco…, Clinical pharmac
 - dropped unlinked row (NIL): 'Effect of BALB [g/L]' — extend the ontology if this is a real PK parameter (source ['Tab3:row7:col1'])
 - dropped unlinked row (NIL): 'Effect of BIGG [g/L]' — extend the ontology if this is a real PK parameter (source ['Tab3:row8:col1'])
 - dropped unlinked row (NIL): 'Effect of BWT' — extend the ontology if this is a real PK parameter (source ['Tab3:row10:col1', 'Tab3:row13:col1', 'Tab3:row15:col1'])
-- table mostly unlinked (4/5 table-cell rows NIL) — likely the wrong table was located, not 1 genuinely-missing ontology parameter(s); route_to_review instead of building a model from the residual linked cell(s)
-- salvaged Q83 ('lag time'=0.18) from results prose — parameter table was unreadable
-- salvaged Q22 ('total systemic CL'=204) from results prose — parameter table was unreadable
-- salvaged Q63 ('V c'=2300) from results prose — parameter table was unreadable
-- salvaged Q64 ('volume of distribution of the peripheral compartment'=2650) from results prose — parameter table was unreadable
-- salvaged Q61 ('steady-state volume of distribution'=4950) from results prose — parameter table was unreadable
-- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q22 (total systemic CL); Q63 (V c); Q64 (volume of distribution of the peripheral compartment); Q61 (steady-state volume of distribution)
+- dropped unlinked row (NIL): 'Effect of BBMI [kg/m2]' — extend the ontology if this is a real PK parameter (source ['Tab3:row11:col1'])
+- table mostly unlinked (5/5 table-cell rows NIL) — likely the wrong table was located, not 0 genuinely-missing ontology parameter(s); route_to_review instead of building a model from the residual linked cell(s)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=belimumab
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- structure disagreement: deterministic 3C vs LLM 2C — review compartment count
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - status held at route_to_review — not promoted
-- molar mass: none found for 'belimumab' — its concentrations stay mass-only
+- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
-- unparsed cell Tab3:row7:col2 = '−0.736 (14.1, −0.940 to −0.532)'
-- unparsed cell Tab3:row7:col3 = '−0.737 (14.6, −0.953 to −0.533)'
-- unparsed cell Tab3:row8:col2 = '0.347 (10.4, 0.276–0.418)'
-- unparsed cell Tab3:row8:col3 = '0.352 (11.7, 0.272–0.436)'
-- unparsed cell Tab3:row11:col2 = '−0.610 (28.2, −0.947 to −0.273)'
-- unparsed cell Tab3:row11:col3 = '−0.608 (36.7, –0.997 to −0.16)'
+- table Tab3: unparsed_numeric_cell
+- final table Tab3: no supported point estimates; targeted recovery unresolved
 - LLM selected parameter table(s) 2
 
 ## Validation
@@ -119,15 +93,9 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 204.0 | not captured | not captured | ['Struemper_2018:results_prose'] |
-| C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.0085 L/h | not captured | not captured | ['Struemper_2018:results_prose'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 4.95 L | not captured | not captured | ['Struemper_2018:results_prose'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 2.3 L | not captured | not captured | ['Struemper_2018:results_prose'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 2.65 L | not captured | not captured | ['Struemper_2018:results_prose'] |
+| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
+| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
+| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -136,7 +104,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_belimumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Struemper_2018` / `Struemper_2018::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_belimumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Struemper_2018` / `Struemper_2018::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -152,4 +120,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 23:30 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 20:56 UTC</sub>

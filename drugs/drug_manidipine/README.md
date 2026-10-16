@@ -18,7 +18,7 @@ Manidipine is a dihydropyridine calcium channel blocker used to treat high blood
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 15:21 | 0:21 | 0/0/0 | 0/1/0 | 0/0/0 | 39,932/1,459 | einfracz / qwen3.8-27b | 5 | 5/4 | 5/0 | 0 |
+| 2026-10-13 13:07 | 2:13 | 0/0/0 | 1/1/0 | 0/0/0 | 57,340/2,753 | einfracz / qwen3.8-27b | 6 | 5/5 | 6/0 | 0 |
 
 ## popPK records
 
@@ -28,7 +28,23 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 1.00).">human + animal</span> | [Zhou_2025_P_gp_ATPase_activity](drugs/drug_manidipine/pd_Zhou_2025_P_gp_ATPase_activity.md) | P-gp ATPase activity ← manidipine · stimulation effect | — | Zhou J et al., Targeting NFAT2 for Reversing the P-gp-…, Cancers (2025) | [10.3390/cancers17203289](https://doi.org/10.3390/cancers17203289) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">in vitro</span> | [Katoh_2000_transcellular_transport_of_3H_daunorubicin](drugs/drug_manidipine/pd_Katoh_2000_transcellular_transport_of_3H_daunorubicin.md) | transcellular transport of [3H]daunorubicin ← manidipine · inhibition effect | — | Katoh M et al., Inhibitory potencies of 1,4-dihydropyri…, Pharmaceutical research (2000) | [10.1023/a:1007568811691](https://doi.org/10.1023/a:1007568811691) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=manidipine).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
+| metabolism | liver | `CYP2B6` inhibitor, `CYP2C19` inhibitor, `CYP2C9` inhibitor, `CYP2D6` inhibitor, `CYP3A4` inhibitor/substrate | DrugBank actor |
+| metabolism | lung | `CYP1A1` inhibitor | DrugBank actor |
+| metabolism | small intestine | `CYP1A1` inhibitor, `CYP3A4` inhibitor/substrate | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: CACNA1C (blocker), CACNA1C (inhibitor), CACNA1D (inhibitor), CACNA1G (blocker), CACNA1G (inhibitor), CACNA1H (inhibitor), CACNA1I (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -39,22 +55,23 @@ _not available_
 ## Coverage
 
 - **PubMed hits:** 30 matched, 29 returned
-- **screened:** 0  ·  **relevant:** 0
+- **screened:** 3  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
-- **scholar-agent fallback query used:** not captured
+- **scholar-agent fallback query used:** True
 
 ## Full-text requests
 
-_4 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_5 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
+| `Stockis_2003.pdf` | Stockis A et al., Pharmacokinetics and tolerability of a…, Arzneimittel-Forschung (2003) | popPK | 8 | [10.1055/s-0031-1297149](https://doi.org/10.1055/s-0031-1297149) | [13677245](https://pubmed.ncbi.nlm.nih.gov/13677245) | The study reports pharmacokinetic parameters for manidipine, but the evidence only provides relative percentage changes (e.g., t1/2 +45%) rather than absolute numeric values for clearance, volume, or half-life. |
 | `Correa_2021.pdf` | Correa ITS et al., Bioenergetics impairment of Trypanosoma…, Acta tropica (2021) | pd | 4 | [10.1016/j.actatropica.2020.105768](https://doi.org/10.1016/j.actatropica.2020.105768) | [33245907](https://www.ncbi.nlm.nih.gov/pubmed/33245907) | metadata signals extractable PD data (IC50) |
 | `Katoh_2000.pdf` | Katoh M et al., Inhibitory potencies of 1,4-dihydropyri…, Pharmaceutical research (2000) | pd | 4 | [10.1023/a:1007568811691](https://doi.org/10.1023/a:1007568811691) | [11145223](https://www.ncbi.nlm.nih.gov/pubmed/11145223) | metadata signals extractable PD data (IC50) |
 | `Qu_1996.pdf` | Qu YL et al., Slow association of positively charged…, General pharmacology (1996) | pd | 4 | [10.1016/0306-3623(95)00085-2](https://doi.org/10.1016/0306-3623(95)00085-2) | [8742511](https://www.ncbi.nlm.nih.gov/pubmed/8742511) | metadata signals extractable PD data (IC50) |
 | `Uno_2006.pdf` | Uno T et al., Effect of grapefruit juice on the dispo…, British journal of clinical… (2006) | pgx | 7 | [10.1111/j.1365-2125.2006.02583.x](https://doi.org/10.1111/j.1365-2125.2006.02583.x) | [16669846](https://www.ncbi.nlm.nih.gov/pubmed/16669846) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 
-<sub>queue written 2026-10-07T15:21:00.520368+00:00</sub>
+<sub>queue written 2026-10-13T13:06:42.658621+00:00</sub>
 
 ## Screened and excluded
 
@@ -66,7 +83,6 @@ _4 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | PD | Cabré_2026 | not_relevant | 0 | 0 | The text is a narrative review of cardiovascular pharmacotherapy and does not contain specific data, models, or numeric parameters for manidipine. |
 | popPK | Correa_2021 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of manidipine's antiparasitic activity against Trypanosoma cruzi and does not report any pharmacokinetic parameters. |
 | popPK | Ghahremanpour_2020 | irrelevant | 0 | 0 | no_text gate: only 81 chars of text extracted (&lt; 400) |
-| PD | Ghahremanpour_2020 | not_relevant | 0 | 0 | The paper focuses on in vitro inhibition of the SARS-CoV-2 main protease by various drugs and does not report pharmacokinetic or pharmacodynamic exposure-response relationships for manidipine in humans or animal models. |
 | popPK | Hirata_1992 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of manidipine's effects on cell proliferation and gene expression, reporting no pharmacokinetic parameters. |
 | popPK | Ide_1994 | irrelevant | 0 | 0 | The provided evidence contains only software metadata and no scientific content regarding manidipine pharmacokinetics. |
 | PD | Ide_1994 | not_relevant | 0 | 0 | The provided text is metadata from a document processing tool (GROBID) and does not contain the scientific content of the paper, nor any information regarding manidipine or pharmacodynamic parameters. |
@@ -84,14 +100,13 @@ _4 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | PD | Ren_2022 | not_relevant | 2 | 0 | The paper is a review/tutorial on slow reversible binding models and does not report PD data or parameters for manidipine. |
 | popPK | Satoh_2004 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of manidipine's inhibition of estradiol glucuronidation, not a pharmacokinetic study reporting disposition parameters for manidipine. |
 | popPK | Shimada_1996 | irrelevant | 1 | 0 | The study focuses on pharmacodynamics (EC50, Kd) rather than reporting quantitative pharmacokinetic disposition parameters (CL, V, Ka) for manidipine. |
-| PD | Shimada_1996 | not_relevant | 0 | 0 | The provided text is metadata from a document processing tool (GROBID) and does not contain the scientific content of the paper, nor any information regarding manidipine or pharmacodynamic parameters. |
+| PD | Shimada_1996 | not_relevant | 0 | 0 | The provided text consists solely of GROBID software version information and processing flags, containing no scientific content, drug data, or pharmacodynamic analysis for manidipine. |
 | popPK | Stockis_2003 | relevant | 8 | 2 | The study reports pharmacokinetic parameters for manidipine, but the evidence only provides relative percentage changes (e.g., t1/2 +45%) rather than absolute numeric values for clearance, volume, or half-life. |
 | PD | Stockis_2003 | not_relevant | 2 | 1 | The study reports PK parameters and qualitative BP/HR profiles but does not provide numeric PD parameters (e.g., Emax, EC50) or a quantitative exposure-response model. |
 | popPK | Tohse_1993 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiological investigation of calcium channel modulation, not a pharmacokinetic study reporting disposition parameters. |
 | PGx | Uno_2006 | not_relevant | 0 | 0 | The study investigates the effect of grapefruit juice (a food/drug interaction) on manidipine pharmacokinetics, but it does not report any pharmacogenomic effects or genotype-stratified data. |
 | PGx | Yan_2025 | not_relevant | 2 | 0 | The paper investigates the mechanism of manidipine reducing P-gp expression in rheumatoid arthritis models, not how genetic variants affect manidipine's PK/PD. |
 | popPK | Zhou_2025 | irrelevant | 0 | 0 | The study focuses on the mechanistic reversal of multidrug resistance and molecular interactions in vitro and in mice, reporting no pharmacokinetic parameters (CL, V, t1/2) for manidipine. |
-| PD | Zhou_2025 | not_relevant | 0 | 0 | The paper focuses on the molecular mechanism of manidipine reversing P-gp mediated multidrug resistance to paclitaxel, not on pharmacodynamic modeling or exposure-response relationships for manidipine itself. |
 | PGx | Zhou_2025 | not_relevant | 0 | 0 | The paper reports the mechanism of action of manidipine (reversing P-gp mediated resistance via NFAT2) in cancer cell lines and mice, but does not investigate how human gene variants affect manidipine's pharmacokinetics or pharmacodynamics. |
 
 ---

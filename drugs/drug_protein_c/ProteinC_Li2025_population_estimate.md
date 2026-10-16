@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;protein C&quot;,&quot;href&quot;:&quot;drugs/drug_protein_c/&quot;},{&quot;label&quot;:&quot;Li_2025 \u00b7 population_estimate&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;ProteinC_Cojutti2024_reference&quot;,&quot;label&quot;:&quot;Cojutti_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_protein_c/ProteinC_Cojutti2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;ProteinC_Troisi2024_reference&quot;,&quot;label&quot;:&quot;Troisi_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_protein_c/ProteinC_Troisi2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;ProteinC_Cojutti2024_reference&quot;,&quot;label&quot;:&quot;Cojutti_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_protein_c/ProteinC_Cojutti2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;ProteinC_Li2025v2_reference&quot;,&quot;label&quot;:&quot;Li_2025_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_protein_c/ProteinC_Li2025v2_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # protein C — `ProteinC_Li2025_population_estimate`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.643). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.643). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -19,13 +19,11 @@
 
 **The model does not reproduce the paper's terminal half-life (model/paper ratio 2.24).**
 
-Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — protein c: CL 7.14, V 60.7.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — protein c: CL 7.14 dL/h, V 60.7 dL.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has protein C, the second reading protein C concentrate; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
-
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:39:30.497223+00:00) predates the upstream re-run (2026-10-05 15:21:55.754549+00:00). Current validate status: `needs_review`.
 
 > **Dose compound ≠ measured compound:** dosed `protein C concentrate`, measured `protein C`.
 
@@ -33,7 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which m
 Li Z et al., Evaluation of pharmacokinetics of intra…, Research and practice in th… (2025)
   ·  DOI: [10.1016/j.rpth.2025.102859](https://doi.org/10.1016/j.rpth.2025.102859)
 
-<div class="pk-model-meta" hidden drug="protein C" model-id="ProteinC_Li2025_population_estimate" status="needs_review" stale="true" population="patients with severe congenital or acquired protein C deficiency" measured-compound="protein C" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="protein C" model-id="ProteinC_Li2025_population_estimate" status="needs_review" stale="false" population="patients with severe congenital or acquired protein C deficiency" measured-compound="protein C" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted, plus 2 covariate effects.
@@ -45,10 +43,10 @@ Li Z et al., Evaluation of pharmacokinetics of intra…, Research and practice i
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL, dL/h | `Q22` · CL | 7.14 | dL/h | 1.9833333333333332e-07 | [dl] / [h] | not captured | exact (1.0) | tbl4:row1:col1 | — | 0.0992 (None% RSE) |
-| Vd, dL | `Q61` · V | 60.7 | dL | 0.006070000000000001 | [dl] | not captured | exact (1.0) | tbl4:row2:col1 | — | 0.0505 (None% RSE) |
-| effect_of_age_on_endo | `Q900` · effect_of_age_on_endo | 0.589 | not captured | not captured | not captured | not captured | not captured (not captured) | tbl4:row7:col1 | — | not captured |
-| theta_v_age | `Q900` · theta_v_age | -0.112 | not captured | not captured | not captured | not captured | not captured (not captured) | tbl4:row9:col1 | — | not captured |
+| CL, dL/h | `Q22` · CL | 7.14 | dL/h | 1.9833333333333332e-07 | [dl] / [h] | 6.76 | exact (1.0) | tbl4:row1:col1 | — | 0.0992 (25.2% RSE) |
+| Vd, dL | `Q61` · V | 60.7 | dL | 0.006070000000000001 | [dl] | 5.07 | exact (1.0) | tbl4:row2:col1 | — | 0.0505 (31.1% RSE) |
+| theta_q38_age | `Q900` · theta_q38_age | 0.589 | not captured | not captured | not captured | 12.7 | not captured (not captured) | tbl4:row7:col1 | — | not captured |
+| theta_v_age | `Q900` · theta_v_age | -0.112 | not captured | not captured | not captured | -32.8 | not captured (not captured) | tbl4:row9:col1 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -60,8 +58,15 @@ Li Z et al., Evaluation of pharmacokinetics of intra…, Research and practice i
 **Interpretation flags:**
 - dropped unlinked row (NIL): 'ENDO, IU/h' — extend the ontology if this is a real PK parameter (source ['tbl4:row5:col1'])
 - dropped duplicate Q22 ('Effect of SCPCD indication on CL', value '-0.575') — already have one for this compound
-- covariate level 'Effect of age on ENDO' → Q900:effect_of_age_on_endo = 0.589 (linear_fractional on Q22)
 - dropped unlinked row (NIL): 'Effect of SCPCD indication on ENDO' — extend the ontology if this is a real PK parameter (source ['tbl4:row8:col1'])
+- covariate weight for allometric_exponent from footnote/prose kept as documentation only (['tbl4:footnote'])
+- NIL: refused to back-fill base 'NIL' from footnote/prose loose number 70 (source ['tbl4:footnote']); the table cell was unparseable — needs review
+- NIL: refused to back-fill base 'NIL' from footnote/prose loose number 19.01 (source ['tbl4:footnote']); the table cell was unparseable — needs review
+- NIL: refused to back-fill base 'shrinkage' from footnote/prose loose number 9.87 (source ['tbl4:footnote', 'tbl4:footnote', 'tbl4:footnote']); the table cell was unparseable — needs review
+- NIL: refused to back-fill base 'NIL' from footnote/prose loose number 93.6 (source ['tbl4:footnote']); the table cell was unparseable — needs review
+- NIL: refused to back-fill base 'NIL' from footnote/prose loose number 4.1 (source ['tbl4:footnote']); the table cell was unparseable — needs review
+- dropped value-less row: 'reference indication'
+- covariate effect for Q38 has no base parameter row (kept as unattached equation-variable)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=protein C
 - population split: 'population estimate' subgroup of Li_2025 (paper reports 4 populations: adolescents (≥12 to &lt;16 y) (n = 3), adults (≥16 y)(n = 9), neonates and infants (birth to &lt;2 y) (n = 10), population estimate)
 - molar mass: none found for 'protein_c' — its concentrations stay mass-only
@@ -70,26 +75,7 @@ Li Z et al., Evaluation of pharmacokinetics of intra…, Research and practice i
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- unparsed cell tbl4:row1:col4 = '7.03 (5.94, 8.66)'
-- unparsed cell tbl4:row2:col4 = '60.8 (56.8, 65.3)'
-- unparsed cell tbl4:row3:col4 = '0.185 (0.159, 0.214)'
-- unparsed cell tbl4:row5:col4 = '201 (159, 248)'
-- unparsed cell tbl4:row6:col4 = '−0.566 (−0.651, −0.479)'
-- unparsed cell tbl4:row7:col4 = '0.586 (0.422, 0.775)'
-- unparsed cell tbl4:row8:col4 = '−0.967 (−0.982, −0.938)'
-- unparsed cell tbl4:row9:col4 = '−0.112 (−0.169, −0.0742)'
-- unparsed cell tbl4:row10:col4 = '0.0914 (0.0136, 0.162)'
-- unparsed cell tbl4:row11:col4 = '0.0488 (0.0231, 0.0777)'
-- unparsed cell tbl4:row12:col4 = '0.0953 (0.0158, 0.253)'
-- unparsed cell Li_2025_table_2:row1:col1 = '2.38 (84.1)a'
-- unparsed cell Li_2025_table_2:row1:col2 = '8.19 (35.8)e'
-- unparsed cell Li_2025_table_2:row2:col1 = '0.555 (122.0)a'
-- unparsed cell Li_2025_table_2:row2:col2 = '0.0678 (49.0)e'
-- unparsed cell Li_2025_table_2:row4:col2 = '56.8 (34.6)f'
-- unparsed cell Li_2025_table_2:row4:col3 = '53.5 (13.3)c'
-- unparsed cell Li_2025_table_2:row4:col4 = '74.2 (14.8)b'
-- unparsed cell Li_2025_table_2:row5:col1 = '2.09 (63.7)a'
-- unparsed cell Li_2025_table_2:row5:col2 = '0.780 (31.1)e'
+- table Li_2025_table_2: unparsed_numeric_cell
 - companion parameter table 2 transcribed (11 record(s))
 - LLM selected parameter table(s) 2, 4
 
@@ -143,7 +129,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_protein_c/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Li_2025` / `Li_2025::population_estimate`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_protein_c/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Li_2025` / `Li_2025::population_estimate`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -169,4 +155,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 15:21 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 21:24 UTC</sub>

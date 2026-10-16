@@ -27,13 +27,24 @@ Bopindolol is a non-selective beta blocker that was used for cardiovascular cond
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 00:24 | 0:42 | 0/1/0 | 0/0/0 | 0/0/0 | 2,501/273 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-14 20:15 | 0:18 | 0/1/0 | 0/0/0 | 0/0/0 | 2,501/300 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.429), gpt-oss:120b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Aellig_1986_reference](drugs/drug_bopindolol/Bopindolol_Aellig1986_reference.md) | — | 1-compartment (no model) | 2 | Aellig WH et al., Relationship between plasma concentrati…, British journal of clinical… (1986) | [10.1111/j.1365-2125.1986.tb02821.x](https://doi.org/10.1111/j.1365-2125.1986.tb02821.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.429), gpt-oss:120b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Aellig_1986_reference](drugs/drug_bopindolol/Bopindolol_Aellig1986_reference.md) | — | 1-compartment (no model) | 2 | Aellig WH et al., Relationship between plasma concentrati…, British journal of clinical… (1986) | [10.1111/j.1365-2125.1986.tb02821.x](https://doi.org/10.1111/j.1365-2125.1986.tb02821.x) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=bopindolol).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
+| metabolism | liver | `CYP2D6` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ADRB1 (partial agonist), ADRB1 (target), ADRB2 (partial agonist), ADRB2 (target), ADRB3 (modulator), HTR1A (unknown), HTR1B (unknown).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,7 +56,7 @@ Bopindolol is a non-selective beta blocker that was used for cardiovascular cond
 
 - **PubMed hits:** 8 matched, 8 returned
 - **screened:** 1  ·  **relevant:** 0
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 1
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -54,19 +65,19 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Platzer_1984.pdf` | Platzer R et al., Simultaneous modeling of bopindolol kin…, Clinical pharmacology and t… (1984) | popPK | 9 | [10.1038/clpt.1984.130](https://doi.org/10.1038/clpt.1984.130) | [6329585](https://pubmed.ncbi.nlm.nih.gov/6329585) | The study reports a compartmental PK model and half-life for bopindolol, but specific numeric values for clearance or volume are not explicitly listed in the provided text. |
+| `Platzer_1984.pdf` | Platzer R et al., Simultaneous modeling of bopindolol kin…, Clinical pharmacology and t… (1984) | popPK | 5 | [10.1038/clpt.1984.130](https://doi.org/10.1038/clpt.1984.130) | [6329585](https://pubmed.ncbi.nlm.nih.gov/6329585) | The study models the kinetics of the measurable hydrolysis product (metabolite) of bopindolol, providing a half-life (4-5 hr) and a one-compartment model, but explicit numeric values for clearance, volume, or specific PK parameters are not detailed in the text. |
 | `Grevel_1986.pdf` | Grevel J, Pharmacodynamic models of various beta…, Journal of cardiovascular p… (1986) | pd | 5 | not captured | [2439812](https://www.ncbi.nlm.nih.gov/pubmed/2439812) | metadata signals extractable PD data (Pharmacodynamicmodel) |
 
-<sub>queue written 2026-10-07T00:24:38.996842+00:00</sub>
+<sub>queue written 2026-10-14T20:15:17.116419+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Aellig_1986 | irrelevant | 0 | 0 | no_text gate: only 127 chars of text extracted (&lt; 400) |
-| PGx | Dayer_1985 | not_relevant | 5 | 2 | The paper reports that the genetic polymorphism was only significant for metoprolol and implies no significant effect for bopindolol, failing to report a specific pharmacogenomic effect for the target drug. |
+| PGx | Dayer_1986 | not_relevant | 6 | 3 | The paper reports a qualitative significant prolongation of elimination in poor metabolizers, but lacks specific fitted effect sizes (theta) or quantitative PK parameters (like AUC values) in the provided text. |
 | popPK | Grevel_1986 | irrelevant | 0 | 0 | no_text gate: only 109 chars of text extracted (&lt; 400) |
-| popPK | Platzer_1984 | relevant | 9 | 2 | The study reports a compartmental PK model and half-life for bopindolol, but specific numeric values for clearance or volume are not explicitly listed in the provided text. |
+| popPK | Platzer_1984 | relevant | 5 | 2 | The study models the kinetics of the measurable hydrolysis product (metabolite) of bopindolol, providing a half-life (4-5 hr) and a one-compartment model, but explicit numeric values for clearance, volume, or specific PK parameters are not detailed in the text. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 00:24 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-14 20:15 UTC</sub>

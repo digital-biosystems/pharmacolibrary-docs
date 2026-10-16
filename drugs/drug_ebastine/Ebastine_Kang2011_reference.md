@@ -4,7 +4,7 @@
 
 # ebastine — `Ebastine_Kang2011_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -22,7 +22,7 @@
 
 No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the links between molecules: this record has ebastine → hydroxyebastine (metabolism); hydroxyebastine → carebastine (metabolism), the second reading ebastine → hydroxyebastine (metabolism); hydroxyebastine → carebastine (metabolism); carebastine → unknown (metabolism). That field shapes the model, so the record is marked disputed.
+Independently confirmed by `qwen3.8-27b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -58,20 +58,14 @@ _No resolved parameters._
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
 Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `qwen3.8-27b` | not confirmed | 0.75 (3/4 fields) | 1 |
+| `qwen3.8-27b` | confirmed | 1.0 (4/4 fields) | none |
 
-<details><summary>1 field discrepancy</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `qwen3.8-27b` | `model.links` | [['ebastine', 'hydroxyebastine', 'metabolism'], ['hydroxyebastine', 'carebastine', 'metabolism']] | [['ebastine', 'hydroxyebastine', 'metabolism'], ['hydroxyebastine', 'carebastine', 'metabolism'], ['carebastine', 'unknown', 'metabolism']] | mismatch |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -94,7 +88,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ebastine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kang_2011` / `Kang_2011::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ebastine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kang_2011` / `Kang_2011::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

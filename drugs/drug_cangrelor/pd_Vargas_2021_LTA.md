@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;cangrelor&quot;,&quot;href&quot;:&quot;drugs/drug_cangrelor/&quot;},{&quot;label&quot;:&quot;Vargas_2021 \u00b7 PD maximal platelet aggregation&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cangrelor_Henrich2021_reference&quot;,&quot;label&quot;:&quot;Henrich_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cangrelor/Cangrelor_Henrich2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cangrelor_Henrich2021_reference&quot;,&quot;label&quot;:&quot;Henrich_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cangrelor/Cangrelor_Henrich2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Vargas_2021_LTA&quot;,&quot;label&quot;:&quot;Vargas_2021 \u00b7 LTA&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_cangrelor/pd_Vargas_2021_LTA.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Vargas_2021_MF&quot;,&quot;label&quot;:&quot;Vargas_2021 \u00b7 MF&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_cangrelor/pd_Vargas_2021_MF.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # maximal platelet aggregation — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span>
@@ -16,17 +16,17 @@
 
 **As extracted:** Cangrelor (concentrations from this paper's PK model) drives maximal platelet aggregation (in %): direct Emax (saturable) effect.
 
-**Model:** Model available in **Models**; browser simulation unavailable.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
-> Cangrelor plasma concentrations (ng/mL) directly inhibit maximal platelet aggregation (LTA) via a simple Emax model, with an Emax of 100.8% and an EC50 of 5.8 ng/mL. The paper does not specify a mechanism of action (e.g., inhibition of production or elimination) beyond the direct concentration-dependent effect.
+> Cangrelor plasma concentration drives the inhibition of maximal platelet aggregation measured by LTA through a direct pharmacological Emax model, characterized by an Emax of 100.8 ± 9.2% and an EC50 of 5.8 ± 2.9 ng/mL. The paper does not describe a time-dependent effect mechanism or specify rate parameters such as ke0 or gamma for the effect compartment.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Vargas_2021`
 - **model family:** `emax`
 - **driver:** `pk_record`
 - **tier:** descriptive
-- **effect:** inhibition/unknown
+- **effect:** inhibition/additive
 
 ## Citation
 Vargas D et al., Cangrelor PK/PD analysis in post-operat…, Journal of thrombosis and h… (2021)
@@ -36,7 +36,7 @@ Vargas D et al., Cangrelor PK/PD analysis in post-operat…, Journal of thrombos
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
 | PD (effect) | Emax | `Q323` · not captured | 100.8 | % | not captured | llm (not captured) | Vargas_2021:pdv3 |
-| PD (effect) | EC 50 | `Q322` · not captured | 5.8 | ng/mL | not captured | llm (not captured) | Vargas_2021:pdv3 |
+| PD (effect) | EC50 | `Q321` · not captured | 5.8 | ng/mL | not captured | llm (not captured) | Vargas_2021:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -113,18 +113,21 @@ Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_cangrelor/Cangrelor_Vargas2021_PD_lta/Cangrelor_Vargas2021_PD_lta_modelica.zip" download>Cangrelor_Vargas2021_PD_lta_modelica.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_cangrelor/Cangrelor_Vargas2021_PD_lta/Cangrelor_Vargas2021_PD_lta_matlab.zip" download>Cangrelor_Vargas2021_PD_lta_matlab.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_cangrelor/Cangrelor_Vargas2021_PD_lta/Cangrelor_Vargas2021_PD_lta_sbml.zip" download>Cangrelor_Vargas2021_PD_lta_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_cangrelor/Cangrelor_Vargas2021_PD_lta/Cangrelor_Vargas2021_PD_lta_cellml.zip" download>Cangrelor_Vargas2021_PD_lta_cellml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PD_SigmoidEmaxSweep.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+<dbs-fmusim paramsurl="drugs/drug_cangrelor/Cangrelor_Vargas2021_PD_lta/Cangrelor_Vargas2021_PD_lta_params.json" metaurl="assets/fmu/PD_SigmoidEmaxSweep.vr.json" wasmurl="assets/fmu/PD_SigmoidEmaxSweep.js" controlsurl="drugs/drug_cangrelor/Cangrelor_Vargas2021_PD_lta/Cangrelor_Vargas2021_PD_lta_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PD_SigmoidEmaxSweep` · parameters `Cangrelor_Vargas2021_PD_lta_params.json` · controls `Cangrelor_Vargas2021_PD_lta_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 

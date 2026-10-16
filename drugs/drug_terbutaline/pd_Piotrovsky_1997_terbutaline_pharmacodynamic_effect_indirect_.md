@@ -18,9 +18,9 @@
 
 **Model:** No model was generated from this record.
 
-> Terbutaline plasma concentrations (PK from Gupta_2019) drive a continuous pharmacodynamic response via an indirect response model (model III, stimulation): the drug stimulates the production of the response with a proportional effect form. The paper excerpts provide no parameter values (Imax, IC50, kin, kout) and no full-text mechanism description beyond the record.
+> The record describes an indirect response model (IR3) where terbutaline concentrations stimulate the response via a proportional effect, but the paper excerpts are unavailable. Consequently, the specific mechanism and key potency or rate values (such as Imax, IC50, or kout) are not provided in the available text.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
 
 - **paper:** `Piotrovsky_1997`
 - **model family:** `indirect_response_iii`

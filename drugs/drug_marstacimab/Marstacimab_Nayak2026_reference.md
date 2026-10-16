@@ -4,7 +4,7 @@
 
 # marstacimab — `Marstacimab_Nayak2026_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -16,39 +16,35 @@
 
 ### Reviewer guidance
 
-**The marstacimab record was held back because the absorption lag time (tlag, 2 h) was not extracted or defaulted, leaving only 5 of 6 expected parameters covered, and the intercompartmental rate constants k13/k31 had no source values.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-For marstacimab (3-compartment structure), the coverage check expected 6 parameters but found 5, with tlag (2 h) neither emitted nor given a placeholder value. The model builder substituted assumed placeholder values for the missing first-order transfer rate constants k13 and k31, which describe distribution between the central (V1, 3.61 L) and peripheral (V2, 4.99 L) compartments and correspond to the intercompartmental clearance Q (0.00489 L/h). A second reader returned null for all six parameters — CL (0.0188 L/h), tlag, Q, total volume of distribution (8.6 L), Vc, and Vp — so no independent confirmation of any value exists. Extracted — marstacimab: Cmax 12.2, V1 3.61 L, CL 0.0188 L/h, tlag 2 h, V2 4.99 L, V 8.6 L, Q 0.00489 L/h.
+Extracted — marstacimab: V1 3.61 L, CL 0.0188 L/h, tlag 2 h, V2 4.99 L, V 8.6 L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has marstacimab, the second reading unknown; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by glm-5.3-flash</sub>
-
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:38:38.745638+00:00) predates the upstream re-run (2026-10-05 19:00:04.988425+00:00). Current validate status: `needs_review`.
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Nayak S et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokinetics (2026)
   ·  DOI: [10.1007/s40262-026-01695-5](https://doi.org/10.1007/s40262-026-01695-5)
 
-<div class="pk-model-meta" hidden drug="marstacimab" model-id="Marstacimab_Nayak2026_reference" status="needs_review" stale="true" population="adolescent and adult participants with hemophilia and healthy volunteers" measured-compound="marstacimab" parameterization="mechanistic" topology="3C"></div>
+<div class="pk-model-meta" hidden drug="marstacimab" model-id="Marstacimab_Nayak2026_reference" status="rejected" stale="false" population="adolescent and adult participants with hemophilia and healthy volunteers" measured-compound="marstacimab" parameterization="mechanistic" topology="general_linear"></div>
 
-**Model structure:** 3-compartment; no model was built for this record.  
-**Parameters:** 7 extracted.
+**Model structure:** general linear; no model was built for this record.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Maximum peak TGA, P MAX (nM) 91.4 | `Q32` · Cmax | 12.2 | not captured | not captured | not captured | 13.3 | llm_confirmed (0.6) | tab_6:row5:col1, tab_6:row5:col2, tab_6:row5:col3, tab_6:row5:col4 | — | not captured |
 | V c (L) | `Q63` · V1 | 3.61 | L | 0.00361 | L | not captured | space_fold (0.95) | Nayak_2026:other_prose | — | not captured |
 | -CL (L/h) | `Q22` · CL | 0.0188 | L/h | 5.222222222222222e-09 | L/h | not captured | boundary (0.8) | Nayak_2026:other_prose | — | not captured |
 | -Lag time (h) | `Q83` · tlag | 2 | h | 7200.0 | h | not captured | boundary (0.8) | Nayak_2026:other_prose | — | not captured |
 | V p | `Q64` · V2 | 4.99 | L | 0.0049900000000000005 | L | not captured | space_fold (0.95) | Nayak_2026:results_prose | — | not captured |
 | total volume of distribution | `Q61` · V | 8.6 | L | 0.0086 | L | not captured | boundary (0.8) | Nayak_2026:results_prose | — | not captured |
-| -Q (L/h) | `Q30` · Q | 0.00489 | L/h | 1.3583333333333335e-09 | L/h | not captured | review_gapfill (0.7) | Nayak_2026:review | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -58,30 +54,29 @@ Nayak S et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokin
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped value-less row: 'Parameter'
-- dropped PD-category row 'Baseline peak TGA, P BASE (nM) 37.8' → Q324 (E0, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tab_6:row3:col1', 'tab_6:row3:col2', 'tab_6:row3:col3', 'tab_6:row3:col4'])
-- dropped PD-category row 'EC 50 (nM)' → Q321 (EC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tab_6:row4:col1', 'tab_6:row4:col3', 'tab_6:row4:col4'])
-- dropped PD-category row 'Hill coefficient (fixed)' → Q325 (Hill, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tab_6:row6:col1', 'tab_6:row6:col2', 'tab_6:row6:col3', 'tab_6:row6:col4', 'tab_6:row6:col5'])
+- column 'popula-' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- dropped PD-category row 'EC 50 (nM)' → Q321 (EC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tab_6:row4:col1'])
+- dropped PD-category row 'Hill coefficient (fixed)' → Q325 (Hill, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tab_6:row6:col1'])
 - salvaged Q63 ('V c (L)'=3.61) from results prose — parameter table was unreadable
 - salvaged Q22 ('-CL (L/h)'=0.0188) from results prose — parameter table was unreadable
 - salvaged Q83 ('-Lag time (h)'=2) from results prose — parameter table was unreadable
 - salvaged Q64 ('V p'=4.99) from results prose — parameter table was unreadable
 - salvaged Q61 ('total volume of distribution'=8.6) from results prose — parameter table was unreadable
-- implicit units: 'Maximum peak TGA, P MAX (nM) 91.4' — the LLM proposed 'nM', whose dimension does not fit Q32; left unset
 - apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q63 (V c (L)); Q22 (-CL (L/h)); Q64 (V p); Q61 (total volume of distribution)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=marstacimab
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- structure disagreement: deterministic 3C vs LLM 2C — review compartment count
+- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
 - status held at route_to_review — not promoted
 - molar mass: none found for 'marstacimab' — its concentrations stay mass-only
-- gap-filled Q30 (Q) from Nayak_2026's review values (primary lacked it)
+- skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- unparsed cell tab_6:row4:col2 = '0.359 12.3'
-- unparsed cell tab_6:row8:col2 = '0.0863 32.2'
-- unparsed cell tab_6:row9:col2 = '0.0351 16.8'
-- unparsed cell tab_6:row10:col2 = '0.0473 33.3'
+- table tab_6: unbound_uncertainty
+- table tab_6: unparsed_numeric_cell
+- table Nayak_2026_table_2: no_numeric_grid
+- table Nayak_2026_table_2: ragged_grid
 - companion parameter table 2 transcribed (0 record(s))
+- LLM selected parameter table(s) 2
 
 ## Validation
 
@@ -124,30 +119,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 7 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Nayak_2026:review'] |
-| C5_unit_missing_Q32 | fail | [mass] / [length] ** 3 | not captured | not captured | not captured | ['tab_6:row5:col1', 'tab_6:row5:col2', 'tab_6:row5:col3', 'tab_6:row5:col4'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.0188 | not captured | not captured | ['Nayak_2026:other_prose'] |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C8_topology | fail | ontology-linked transfer parameter on every edge | ['Kcom', 'none'] | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.0188 L/h | not captured | not captured | ['Nayak_2026:other_prose'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 8.6 L | not captured | not captured | ['Nayak_2026:results_prose'] |
 | C9_phys_window_Q63 | pass | volume within physiological range | 3.61 L | not captured | not captured | ['Nayak_2026:other_prose'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 4.99 L | not captured | not captured | ['Nayak_2026:results_prose'] |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_output_variable | not captured | pass | C_central (measured=marstacimab) | central.C | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | fail | 6 scholar param(s) emitted or defaulted | 5 covered | not captured | neither emitted nor in defaulted[]: ['tlag'] |
-| T3_topology_template | not captured | pass | 3C → PK_3C* | PK_3C | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
-| T1_t_half_beta | reference | skipped | not captured | 5691.904705292905 | not captured | non-numeric value |
-| T1_t_half_terminal | reference | skipped | not captured | 5691.904705292905 | not captured | non-numeric value |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -156,27 +136,14 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_marstacimab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Nayak_2026` / `Nayak_2026::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_marstacimab/models/modelica/Marstacimab_Nayak2026_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_marstacimab/models/modelica/Marstacimab_Nayak2026_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_marstacimab/models/modelica/Marstacimab_Nayak2026_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_marstacimab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Nayak_2026` / `Nayak_2026::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_marstacimab/Marstacimab_Nayak2026_reference/Marstacimab_Nayak2026_reference_modelica.zip" download>Marstacimab_Nayak2026_reference_modelica.zip</a> <span class="pk-size">(4.7 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><a href="drugs/drug_marstacimab/Marstacimab_Nayak2026_reference/Marstacimab_Nayak2026_reference_fmi.zip" download>Marstacimab_Nayak2026_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_marstacimab/Marstacimab_Nayak2026_reference/Marstacimab_Nayak2026_reference_matlab.zip" download>Marstacimab_Nayak2026_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_marstacimab/Marstacimab_Nayak2026_reference/Marstacimab_Nayak2026_reference_matlab_simbio.zip" download>Marstacimab_Nayak2026_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_marstacimab/Marstacimab_Nayak2026_reference/Marstacimab_Nayak2026_reference_sbml.zip" download>Marstacimab_Nayak2026_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_marstacimab/Marstacimab_Nayak2026_reference/Marstacimab_Nayak2026_reference_cellml.zip" download>Marstacimab_Nayak2026_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-</div></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -185,4 +152,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 19:00 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 17:51 UTC</sub>

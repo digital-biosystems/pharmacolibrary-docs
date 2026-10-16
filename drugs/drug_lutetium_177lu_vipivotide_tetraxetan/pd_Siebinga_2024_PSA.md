@@ -1,8 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V10X&quot;,&quot;href&quot;:&quot;atc/V10X.md&quot;},{&quot;label&quot;:&quot;lutetium (177Lu) vipivotide tetraxetan&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_vipivotide_tetraxetan/&quot;},{&quot;label&quot;:&quot;Siebinga_2024 \u00b7 PD PSA&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lutetium177luVipivotideTetraxetan_Shi2026_reference&quot;,&quot;label&quot;:&quot;Shi_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_vipivotide_tetraxetan/Lutetium177luVipivotideTetraxetan_Shi2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lutetium177luVipivotideTetraxetan_Siebinga2023_reference&quot;,&quot;label&quot;:&quot;Siebinga_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_vipivotide_tetraxetan/Lutetium177luVipivotideTetraxetan_Siebinga2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V10X&quot;,&quot;href&quot;:&quot;atc/V10X.md&quot;},{&quot;label&quot;:&quot;lutetium (177Lu) vipivotide tetraxetan&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_vipivotide_tetraxetan/&quot;},{&quot;label&quot;:&quot;Siebinga_2024 \u00b7 PD prostate-specific antigen (PSA)&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lutetium177luVipivotideTetraxetan_Shi2026_reference&quot;,&quot;label&quot;:&quot;Shi_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_vipivotide_tetraxetan/Lutetium177luVipivotideTetraxetan_Shi2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lutetium177luVipivotideTetraxetan_Siebinga2023_reference&quot;,&quot;label&quot;:&quot;Siebinga_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_vipivotide_tetraxetan/Lutetium177luVipivotideTetraxetan_Siebinga2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# PSA — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
+# prostate-specific antigen (PSA) — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.0). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -14,16 +14,16 @@
 
 ## Record summary
 
-**As extracted:** [177Lu]Lu-PSMA-I&T drives PSA (in µg/L): delayed effect through an effect compartment.
+**As extracted:** [177Lu]Lu-PSMA-I&T drives prostate-specific antigen (PSA) (in µg/L): direct linear effect.
 
 **Model:** Model available in **Models**; browser simulation unavailable.
 
-> The model describes the effect of [177Lu]Lu-PSMA-I&T on PSA using an effect compartment where the drug acts as a linear elimination term (Edrug) from the PSA compartment, with a direct effect parameter (KD, direct) of 0.000335 L·day−1·GBq−1 and a PSA growth rate (kG) of 0.000408 h−1. A delayed linear effect was also included, characterized by an effect compartment rate constant (ke0) of 0.00128 h−1 and a delayed effect parameter of 0.0000328 L·day−1·MBq−1.
+> The paper describes a sequential PKPD model where [177Lu]Lu-PSMA-I&T concentrations act on PSA dynamics through a linear direct inhibitory effect (parameter KD, direct 0.000335 L·day−1·GBq−1) and a linear delayed effect (parameter 0.0000328 L·day−1·MBq−1) via an effect compartment (kE0 0.00128 h−1), in addition to a baseline exponential PSA growth rate of 0.000408 h−1. The authors note that the delayed effect is linearly concentration-dependent and suggest mechanisms such as tumor microenvironment changes or radiation-induced bystander effects, but do not specify the precise PD mechanism for the immediate inhibition.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Siebinga_2024`
-- **model family:** `effect_compartment`
+- **model family:** `linear`
 - **driver:** `not_resolved`
 - **tier:** population
 - **effect:** inhibition/additive
@@ -37,7 +37,7 @@ Siebinga H et al., Quantification of biochemical PSA dynam…, EJNMMI physics (2
 |---|---|---|---|---|---|---|---|
 | PD (effect) | Baseline PSA | `Q324` · not captured | 140 | µg/L | not captured | llm (not captured) | Siebinga_2024:pdv3 |
 | PD (effect) | PSA growth rate | `Q340` · not captured | 0.000408 | h−1 | not captured | llm (not captured) | Siebinga_2024:pdv3 |
-| PD (effect) | Direct drug-induced effect | `Q335` · not captured | 0.00335 | L·day−1·GBq−1 | not captured | llm (not captured) | Siebinga_2024:pdv3 |
+| PD (effect) | Direct drug-induced effect | `Q335` · not captured | 0.000335 | L·day−1·GBq−1 | not captured | llm (not captured) | Siebinga_2024:pdv3 |
 | PD (effect) | Rate constant effect compartment | `Q326` · not captured | 0.00128 | h−1 | not captured | llm (not captured) | Siebinga_2024:pdv3 |
 | PD (effect) | Delayed drug-induced effect | `Q335` · not captured | 0.0000328 | L·day−1·MBq−1 | not captured | llm (not captured) | Siebinga_2024:pdv3 |
 
@@ -54,13 +54,12 @@ Siebinga H et al., Quantification of biochemical PSA dynam…, EJNMMI physics (2
 | parameter | value (paper units) | SI |
 |---|---|---|
 | E0 | 140 µg/L | 0.00014 kg/m3 |
-| slope | 0.00335 L·day−1·GBq−1 | — |
+| slope | 0.000335 L·day−1·GBq−1 | — |
 
-Closed-form check points (response, SI): `at_0` = 0.00014, `per_exposure_unit` = 0.00335
+Closed-form check points (response, SI): `at_0` = 0.00014, `per_exposure_unit` = 0.000335
 
 Deviations:
 
-- `pd_binding_family_inferred` — the record's model family is effect_compartment; read from the parameters: a slope and no Emax — linear
 - `pd_binding_off_target_driver` — driver compound '[177Lu]Lu-PSMA-I&T' is not 'lutetium_177lu_vipivotide_tetraxetan' nor one of its metabolites — the curve belongs to that compound's exposure (S12)
 
 ## Review
@@ -82,22 +81,25 @@ Blocking:
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.333 (3/9 fields) | 6 |
+| `einfracz:gpt-oss-120b` | not confirmed | 0.0 (0/9 fields) | 9 |
 
-<details><summary>6 field discrepancies</summary>
+<details><summary>9 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `effect_form` | proportional | additive | mismatch |
-| `gpt-oss:120b` | `model_family` | indirect_response_i | effect_compartment | mismatch |
-| `gpt-oss:120b` | `parameters[Q100]` | 15.5 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q324]` | not captured | 15.5 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q335]` | 0.000286 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q47]` | not captured | 0.000286 | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `driver_compound` | [177Lu]Lu-PSMA-I&T | [177Lu]Lu-PSMA-I&T tumor concentration | mismatch |
+| `einfracz:gpt-oss-120b` | `effect_direction` | inhibition | stimulation | mismatch |
+| `einfracz:gpt-oss-120b` | `effect_form` | additive | proportional | mismatch |
+| `einfracz:gpt-oss-120b` | `model_family` | effect_compartment | linear | mismatch |
+| `einfracz:gpt-oss-120b` | `parameters[Q324].value` | 140 | 57.5 | mismatch |
+| `einfracz:gpt-oss-120b` | `parameters[Q326]` | 0.00128 | not captured | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q327]` | not captured | 0.000408 | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q335].value` | 0.0000328 | 0.00335 | mismatch |
+| `einfracz:gpt-oss-120b` | `parameters[Q340]` | 0.000408 | not captured | only_one_extracted |
 
 </details>
 

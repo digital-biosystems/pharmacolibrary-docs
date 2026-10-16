@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B03X&quot;,&quot;href&quot;:&quot;atc/B03X.md&quot;},{&quot;label&quot;:&quot;darbepoetin alfa&quot;,&quot;href&quot;:&quot;drugs/drug_darbepoetin_alfa/&quot;},{&quot;label&quot;:&quot;Agoram_2006 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;DarbepoetinAlfa_Doshi2010_reference&quot;,&quot;label&quot;:&quot;Doshi_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Doshi2010_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;DarbepoetinAlfa_Jeon2021_reference&quot;,&quot;label&quot;:&quot;Jeon_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Jeon2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;DarbepoetinAlfa_Kawakami2009_reference&quot;,&quot;label&quot;:&quot;Kawakami_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Kawakami2009_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;DarbepoetinAlfa_Roberts2015_reference&quot;,&quot;label&quot;:&quot;Roberts_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Roberts2015_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;DarbepoetinAlfa_Doshi2010_reference&quot;,&quot;label&quot;:&quot;Doshi_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Doshi2010_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;DarbepoetinAlfa_Kawakami2009_reference&quot;,&quot;label&quot;:&quot;Kawakami_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Kawakami2009_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;DarbepoetinAlfa_Kim2019_reference&quot;,&quot;label&quot;:&quot;Kim_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Kim2019_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;DarbepoetinAlfa_Roberts2015_reference&quot;,&quot;label&quot;:&quot;Roberts_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Roberts2015_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # darbepoetin alfa — `DarbepoetinAlfa_Agoram2006_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -17,24 +17,22 @@
 
 ### Reviewer guidance
 
-**Only clearance was extracted — no volume; the clearance plausibility check could not be computed.**
+**The clearance plausibility check could not be computed.**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — darbepoetin alfa: CL 2.01e+03 mL/day, Vss 3.39e+03 mL, Fab 44.3 %.
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — darbepoetin alfa: CL 2.01e+03 mL/day, Vss 3.39e+03 mL, Fab 44.3 %, V 34.9 mL/kg, kabs 0.0269 1/h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavailability: this record has 44.3, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:37:31.432929+00:00) predates the upstream re-run (2026-10-05 20:54:50.446074+00:00). Current validate status: `needs_review`.
-
 ## Citation
 Agoram B et al., Development and evaluation of a populat…, The AAPS journal (2006)
   ·  DOI: [10.1208/aapsj080364](https://doi.org/10.1208/aapsj080364)
 
-<div class="pk-model-meta" hidden drug="darbepoetin alfa" model-id="DarbepoetinAlfa_Agoram2006_reference" status="needs_review" stale="true" population="patients with nonmyeloid malignancies and chemotherapy-induced anemia" measured-compound="darbepoetin_alfa" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="darbepoetin alfa" model-id="DarbepoetinAlfa_Agoram2006_reference" status="needs_review" stale="false" population="patients with nonmyeloid malignancies and chemotherapy-induced anemia" measured-compound="darbepoetin_alfa" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 4 extracted.
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -46,7 +44,8 @@ Agoram B et al., Development and evaluation of a populat…, The AAPS journal (2
 | clearance | `Q22` · CL | 2010 | mL/day | 2.3263888888888888e-08 | [ml] / [d] | not captured | exact (1.0) | Agoram_2006:abstract | — | not captured |
 | steady-state volume of distribution | `Q65` · Vss | 3390 | mL | 0.00339 | [ml] | not captured | llm_corrected (0.6) | Agoram_2006:abstract | — | not captured |
 | bioavailability | `Q40` · Fab | 44.3 | % | not captured | not captured | not captured | exact (1.0) | Agoram_2006:abstract | — | not captured |
-| Vz (L) | `Q61` · V | 16.23 | L | 0.01623 | L | not captured | review_gapfill (0.7) | Jeon_2021:review | — | not captured |
+| volume of distribution | `Q61` · V | 34.9 | mL/kg | 0.0024429999999999994 | L | not captured | review_gapfill (0.7) | Naik_2013:review | — | not captured |
+| KAE (1/h) | `Q49` · kabs | 0.0269 | 1/h | 7.472222222222222e-06 | 1/h | not captured | review_gapfill (0.7) | Fan_2023_2:review | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -59,10 +58,12 @@ Agoram B et al., Development and evaluation of a populat…, The AAPS journal (2
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=darbepoetin_alfa
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
+- molar mass: none found for 'darbepoetin_alfa' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- gap-filled Q61 (V) from Jeon_2021's review values (primary lacked it)
+- gap-filled Q61 (V) from Naik_2013's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- gap-filled Q49 (kabs) from Fan_2023_2's review values (primary lacked it)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Agoram_2006_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model
@@ -101,12 +102,13 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Agoram_2006:abstract'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Jeon_2021:review'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Fan_2023_2:review'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Naik_2013:review'] |
 | C5_dimension_Q65 | pass | [length] ** 3 | not captured | not captured | not captured | ['Agoram_2006:abstract'] |
 | C6_cl_magnitude | fail | &lt;= 90.0 L/h | 2010.0 | not captured | not captured | ['Agoram_2006:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.0837 L/h | not captured | not captured | ['Agoram_2006:abstract'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 16.2 L | not captured | not captured | ['Jeon_2021:review'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 2.44 L | not captured | not captured | ['Naik_2013:review'] |
 | C9_phys_window_Q65 | pass | volume within physiological range | 3.39 L | not captured | not captured | ['Agoram_2006:abstract'] |
 
 <details class="legend">
@@ -116,7 +118,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_darbepoetin_alfa/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Agoram_2006` / `Agoram_2006::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_darbepoetin_alfa/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Agoram_2006` / `Agoram_2006::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -142,4 +144,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 20:54 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 20:21 UTC</sub>

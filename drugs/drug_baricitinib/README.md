@@ -26,24 +26,43 @@ Baricitinib is a JAK inhibitor used to treat rheumatoid arthritis and, in some s
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 23:49 | 3:26 | 0/4/0 | 2/0/0 | 0/0/0 | 268,085/13,929 | einfracz / qwen3.8-27b | 9 | 0/9 | 9/0 | 0 |
+| 2026-10-15 00:43 | 2:33 | 0/2/0 | 1/0/0 | 0/0/0 | 182,810/10,882 | einfracz / qwen3.8-27b | 9 | 0/9 | 9/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.812). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Decker_2024_jia_a](drugs/drug_baricitinib/Baricitinib_Decker2024_jia_a.md) | — | 3-compartment (no model) | 9 | Decker RL et al., A population pharmacokinetic model usin…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13131](https://doi.org/10.1002/psp4.13131) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Decker_2024_population_mean_see](drugs/drug_baricitinib/Baricitinib_Decker2024_population_mean_see.md) | — | 3-compartment (no model) | 9 (+2 cov.) | Decker RL et al., A population pharmacokinetic model usin…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13131](https://doi.org/10.1002/psp4.13131) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.786). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Decker_2024_ra_b](drugs/drug_baricitinib/Baricitinib_Decker2024_ra_b.md) | — | 3-compartment (no model) | 7 | Decker RL et al., A population pharmacokinetic model usin…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13131](https://doi.org/10.1002/psp4.13131) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Decker_2026_reference](drugs/drug_baricitinib/Baricitinib_Decker2026_reference.md) | — | 3-compartment (no model) | 9 (+1 cov.) | Decker RL et al., A Population Pharmacokinetic and Exposu…, Clinical pharmacokinetics (2026) | [10.1007/s40262-025-01563-8](https://doi.org/10.1007/s40262-025-01563-8) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Decker_2024_reference](drugs/drug_baricitinib/Baricitinib_Decker2024_reference.md) | — | 2-compartment (no model) | 8 (+2 cov.) | Decker RL et al., A population pharmacokinetic model usin…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13131](https://doi.org/10.1002/psp4.13131) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Decker_2026_reference](drugs/drug_baricitinib/Baricitinib_Decker2026_reference.md) | — | 3-compartment (no model) | 9 (+2 cov.) | Decker RL et al., A Population Pharmacokinetic and Exposu…, Clinical pharmacokinetics (2026) | [10.1007/s40262-025-01563-8](https://doi.org/10.1007/s40262-025-01563-8) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span> | [Vaskeikina_2026_mRSS](drugs/drug_baricitinib/pd_Vaskeikina_2026_mRSS.md) | modified Rodnan skin score ← baricitinib · direct Emax (saturable) effect | — | Vaskeikina M et al., Systematic Review and Model-Based Meta-…, Pharmaceutics (2026) | [10.3390/pharmaceutics18020250](https://doi.org/10.3390/pharmaceutics18020250) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.364). Primary extraction retained.">cross-check: disputed</span> | [Zhang_2017_Hgb](drugs/drug_baricitinib/pd_Zhang_2017_Hgb.md) | Hemoglobin ← baricitinib · delayed effect through transit (transduction) compartments | — | Zhang X et al., Dose/Exposure-Response Modeling to Supp…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12251](https://doi.org/10.1002/psp4.12251) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span> | [Zhang_2017_ACRL](drugs/drug_baricitinib/pd_Zhang_2017_ACRL.md) | ACR20/50/70 response rate (latent variable ACRL) ← baricitinib · indirect response — drug inhibits the production of ACR20/50/70 response rate (latent variable ACRL) | — | Zhang X et al., Dose/Exposure-Response Modeling to Supp…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12251](https://doi.org/10.1002/psp4.12251) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.364). Primary extraction retained.">cross-check: disputed</span> | [Zhang_2017_Hgb](drugs/drug_baricitinib/pd_Zhang_2017_Hgb.md) | hemoglobin ← baricitinib · delayed effect through transit (transduction) compartments | — | Zhang X et al., Dose/Exposure-Response Modeling to Supp…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12251](https://doi.org/10.1002/psp4.12251) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Zhang_2017_ACR20](drugs/drug_baricitinib/pd_Zhang_2017_ACR20.md) | ACR20 ← baricitinib · indirect response — drug inhibits the production of ACR20 | — | Zhang X et al., Dose/Exposure-Response Modeling to Supp…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12251](https://doi.org/10.1002/psp4.12251) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Zhang_2017_ACR50](drugs/drug_baricitinib/pd_Zhang_2017_ACR50.md) | ACR50 ← baricitinib · indirect response — drug inhibits the production of ACR50 | — | Zhang X et al., Dose/Exposure-Response Modeling to Supp…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12251](https://doi.org/10.1002/psp4.12251) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Zhang_2017_ACR70](drugs/drug_baricitinib/pd_Zhang_2017_ACR70.md) | ACR70 ← baricitinib · indirect response — drug inhibits the production of ACR70 | — | Zhang X et al., Dose/Exposure-Response Modeling to Supp…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12251](https://doi.org/10.1002/psp4.12251) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=baricitinib).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` substrate | DrugBank actor |
+| absorption | liver | `ABCB1` substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
+| absorption | mammary gland | `ABCG2` inhibitor/substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
+| absorption | testis | `ABCB1` substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
+| metabolism | liver | `CYP3A4` substrate, `SLCO1B3` inhibitor | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | `SLC22A2` inhibitor, `SLC22A6` inhibitor, `SLC22A8` inhibitor/substrate, `SLC47A2` inhibitor/substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: JAK1 (inhibitor), JAK2 (inhibitor), JAK3 (inhibitor), TYK2 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,7 +74,7 @@ Baricitinib is a JAK inhibitor used to treat rheumatoid arthritis and, in some s
 
 - **PubMed hits:** 14 matched, 13 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 4  ·  extracted 0  ·  needs_review 0  ·  rejected 4  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -64,24 +83,24 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Kim_2018.pdf` | Kim H et al., Pharmacokinetics, Pharmacodynamics, and…, Clinical pharmacology and t… (2018) | popPK | 9 | [10.1002/cpt.936](https://doi.org/10.1002/cpt.936) | [29134648](https://pubmed.ncbi.nlm.nih.gov/29134648) | The paper describes a population PK model for baricitinib and reports summary exposure metrics (AUC) and qualitative covariate effects, but specific quantitative parameter estimates (CL, V, Q, ka, t1/2) are not provided in the evidence text. |
+| `Kim_2018.pdf` | Kim H et al., Pharmacokinetics, Pharmacodynamics, and…, Clinical pharmacology and t… (2018) | popPK | 10 | [10.1002/cpt.936](https://doi.org/10.1002/cpt.936) | [29134648](https://pubmed.ncbi.nlm.nih.gov/29134648) | The paper describes a population PK model for baricitinib in humans and reports qualitative findings (weight and renal function influence V and CL), but specific numeric parameter values (CL, V, Q, ka) are not present in the provided evidence. |
 
-<sub>queue written 2026-10-06T23:46:36.201202+00:00</sub>
+<sub>queue written 2026-10-15T00:41:21.520638+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Adami_2025 | irrelevant | 0 | 0 | The paper is a clinical analysis of glucocorticoid sparing effects in RA patients and does not report any pharmacokinetic parameters for baricitinib. |
-| popPK | Bayat_2022 | irrelevant | 0 | 0 | The study is a clinical efficacy and drug persistence analysis in rheumatoid arthritis patients and does not report any pharmacokinetic parameters for baricitinib. |
-| popPK | Kim_2018 | relevant | 9 | 2 | The paper describes a population PK model for baricitinib and reports summary exposure metrics (AUC) and qualitative covariate effects, but specific quantitative parameter estimates (CL, V, Q, ka, t1/2) are not provided in the evidence text. |
-| popPK | Qi_2025 | irrelevant | 0 | 0 | The study is a clinical efficacy trial for vitiligo treatment and does not report any pharmacokinetic parameters for baricitinib. |
-| popPK | Rotbain_2023 | irrelevant | 0 | 0 | The study measures the effect of baricitinib on a biomarker (suPAR) and does not report pharmacokinetic disposition parameters. |
-| popPK | Sonomoto_2026 | irrelevant | 0 | 0 | The paper is a clinical efficacy and safety comparison study that does not report any pharmacokinetic parameters for baricitinib. |
-| popPK | Tachet_2025 | irrelevant | 2 | 0 | This is a study protocol that describes the methods for a future pharmacokinetic study; it contains no actual numerical parameter values or model estimates. |
-| popPK | Temiz_2025 | irrelevant | 0 | 0 | The paper is a clinical efficacy and safety study in rheumatoid arthritis and reports no pharmacokinetic parameters (clearance, volume, half-life, etc.). |
-| popPK | Vaskeikina_2026 | irrelevant | 0 | 0 | The paper is a model-based meta-analysis of clinical efficacy endpoints (mRSS and FVC) in systemic sclerosis, not a pharmacokinetic study, and contains no PK parameters for baricitinib. |
-| popPK | Zhang_2017 | relevant | 8 | 2 | The study reports a population PK model for baricitinib and estimates a terminal half-life of ~14 hours, but the detailed numeric parameters (CL, V, Q, ka) are explicitly stated to be in Supplementary Table S1 which is not provided in the evidence. |
+| popPK | Adami_2025 | irrelevant | 0 | 0 | The study is a clinical analysis of glucocorticoid tapering efficacy in RA patients and does not contain any pharmacokinetic parameters for baricitinib. |
+| popPK | Bayat_2022 | irrelevant | 0 | 0 | The study is a clinical efficacy and safety trial comparing baricitinib monotherapy vs. combination therapy in rheumatoid arthritis, and it reports no pharmacokinetic parameters (CL, V, ka, etc.). |
+| popPK | Kim_2018 | relevant | 10 | 2 | The paper describes a population PK model for baricitinib in humans and reports qualitative findings (weight and renal function influence V and CL), but specific numeric parameter values (CL, V, Q, ka) are not present in the provided evidence. |
+| popPK | Qi_2025 | irrelevant | 0 | 0 | This is a clinical efficacy trial for vitiligo treatment that reports no pharmacokinetic parameters for baricitinib. |
+| popPK | Rotbain_2023 | irrelevant | 0 | 0 | The study evaluates the effect of baricitinib on a biomarker (suPAR) in a clinical trial and does not report any pharmacokinetic parameters (e.g., clearance, volume) for baricitinib. |
+| popPK | Sonomoto_2026 | irrelevant | 0 | 0 | The paper is a clinical observational study comparing efficacy and safety in rheumatoid arthritis, containing no pharmacokinetic or disposition parameters for baricitinib. |
+| popPK | Tachet_2025 | irrelevant | 3 | 0 | This is a study protocol that describes the methodology for a future PK analysis but does not report any original quantitative pharmacokinetic parameter values for baricitinib. |
+| popPK | Temiz_2025 | irrelevant | 0 | 0 | The paper is a clinical efficacy and safety study (real-world cohort) reporting disease activity scores and adverse events, containing no pharmacokinetic parameters for baricitinib. |
+| popPK | Vaskeikina_2026 | irrelevant | 0 | 0 | The paper is a model-based meta-analysis of clinical efficacy endpoints (mRSS and FVC) in systemic sclerosis, not a pharmacokinetic study of baricitinib. |
+| popPK | Zhang_2017 | relevant | 5 | 0 | The paper describes a population PK model for baricitinib, but the specific numeric parameter estimates are located in Supplementary Table S1, which is not provided in the evidence. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-06 23:46 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-15 00:41 UTC</sub>

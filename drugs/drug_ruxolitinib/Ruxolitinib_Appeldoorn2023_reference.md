@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D11A&quot;,&quot;href&quot;:&quot;atc/D11A.md&quot;},{&quot;label&quot;:&quot;ruxolitinib&quot;,&quot;href&quot;:&quot;drugs/drug_ruxolitinib/&quot;},{&quot;label&quot;:&quot;Appeldoorn_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ruxolitinib_Polepally2026_reference&quot;,&quot;label&quot;:&quot;Polepally_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ruxolitinib/Ruxolitinib_Polepally2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,13 +16,13 @@
 
 ### Reviewer guidance
 
-**The peripheral compartment in the ruxolitinib model is structurally disconnected from the central compartment, rendering the model invalid.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The two-compartment structure defines a central volume (58.6 L) and a peripheral volume (11.2 L) but lacks the distribution rate constants that link them. Because no path exists from the dose to the peripheral space, it remains an orphan compartment. The review identified this structural deficiency as the sole reason for rejection. Extracted — ruxolitinib: CL/F 20 L/h, V1 58.6 L, V2 11.2 L, kabs 3.43 h−1.
+Extracted — ruxolitinib: CL/F 22.8 L/h, V1 58.6 L, V2 11.2 L, kabs 3.43 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q19: this record has 27, the second reading 2130; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Appeldoorn TYJ et al., Pharmacokinetics and Pharmacodynamics o…, Clinical pharmacokinetics (2023)
@@ -41,10 +40,10 @@ Appeldoorn TYJ et al., Pharmacokinetics and Pharmacodynamics o…, Clinical phar
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F | `Q27` · CL/F | 20.0 | L/h | 5.555555555555556e-06 | L/h | not captured | review (0.7) | Appeldoorn_2023:review | — | not captured |
-| Vc | `Q63` · V1 | 58.6 | L | 0.0586 | L | not captured | review (0.7) | Appeldoorn_2023:review | — | not captured |
-| Vp | `Q64` · V2 | 11.2 | L | 0.0112 | L | not captured | review (0.7) | Appeldoorn_2023:review | — | not captured |
-| Ka | `Q49` · kabs | 3.43 | h−1 | 0.0009527777777777779 | 1/h | not captured | review (0.7) | Appeldoorn_2023:review | — | not captured |
+| CL/F for IR | `Q27` · CL/F | 22.8 | L/h | 6.333333333333333e-06 | L/h | not captured | review (0.7) | Appeldoorn_2023:review | — | not captured |
+| Volume of distribution for the central compartment | `Q63` · V1 | 58.6 | L | 0.0586 | L | not captured | review (0.7) | Appeldoorn_2023:review | — | not captured |
+| peripheral volume | `Q64` · V2 | 11.2 | L | 0.0112 | L | not captured | review (0.7) | Appeldoorn_2023:review | — | not captured |
+| absorption rate constant (Ka) | `Q49` · kabs | 3.43 | h−1 | 0.0009527777777777779 | 1/h | not captured | review (0.7) | Appeldoorn_2023:review | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -97,7 +96,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Appeldoorn_2023:review'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 20 L/h | not captured | not captured | ['Appeldoorn_2023:review'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 22.8 L/h | not captured | not captured | ['Appeldoorn_2023:review'] |
 | C9_phys_window_Q63 | pass | volume within physiological range | 58.6 L | not captured | not captured | ['Appeldoorn_2023:review'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 11.2 L | not captured | not captured | ['Appeldoorn_2023:review'] |
 
@@ -108,7 +107,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ruxolitinib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Appeldoorn_2023` / `Appeldoorn_2023::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ruxolitinib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Appeldoorn_2023` / `Appeldoorn_2023::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -124,4 +123,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 07:51 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 23:21 UTC</sub>

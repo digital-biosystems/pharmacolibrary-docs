@@ -15,19 +15,19 @@
 
 ## Record summary
 
-**As extracted:** Bezafibrate (measured concentrations) drives insulin secretion: direct Emax (saturable) effect.
+**As extracted:** Bezafibrate (measured concentrations) drives insulin secretion (in %): direct Emax (saturable) effect.
 
 **Model:** No model was generated from this record.
 
-> Bezafibrate stimulates insulin secretion in INS-1 832/13 β-cells via GPR40 receptor activation, as evidenced by the abolition of the effect by the GPR40 antagonist DC26012. The paper reports an EC50 of 13.5 nM for this stimulation but does not specify the underlying kinetic mechanism (e.g., Emax, kin/kout) or other rate parameters.
+> Bezafibrate concentrations stimulate insulin secretion (reported as percentage increase) in INS-1 832/13 cells via GPR40 receptor activation, as evidenced by the abolition of the effect by the GPR40 antagonist DC26012. The additive Emax model for this stimulation reports an EC50 of 13.5 nM.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Cione_2021`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
 - **tier:** descriptive
-- **effect:** stimulation/unknown
+- **effect:** stimulation/additive
 
 ## Citation
 Cione E et al., Pharmacophore-guided repurposing of fib…, Journal of enzyme inhibitio… (2021)

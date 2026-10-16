@@ -17,7 +17,7 @@ Carbasalate calcium is a salicylate derivative related to aspirin, classified as
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-05 12:40 | 0:38 | 0/0/0 | 0/0/0 | 0/0/0 | 18,785/351 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/1 | 0/0 | 0 |
+| 2026-10-14 22:07 | 0:07 | 0/0/0 | 0/0/0 | 0/0/0 | 18,194/274 | einfracz / qwen3.8-27b | 0 | 0/1 | 0/0 | 0 |
 
 ## popPK records
 
@@ -42,17 +42,17 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Wang_2011.pdf` | Wang X et al., Analytical determination and pharmacoki…, Journal of veterinary pharm… (2011) | popPK | 9 | [10.1111/j.1365-2885.2010.01250.x](https://doi.org/10.1111/j.1365-2885.2010.01250.x) | [21091728](https://pubmed.ncbi.nlm.nih.gov/21091728) | The study reports quantitative non-compartmental pharmacokinetic parameters (Cmax, Tmax, t1/2) for the major metabolites of carbasalate calcium in broilers, which constitutes the pharmacokinetic profile of the drug in this species. |
+| `Wang_2011.pdf` | Wang X et al., Analytical determination and pharmacoki…, Journal of veterinary pharm… (2011) | popPK | 10 | [10.1111/j.1365-2885.2010.01250.x](https://doi.org/10.1111/j.1365-2885.2010.01250.x) | [21091728](https://pubmed.ncbi.nlm.nih.gov/21091728) | The study reports non-compartmental pharmacokinetic parameters (Cmax, Tmax, half-life) for the major metabolites of carbasalate calcium in broilers. |
 
-<sub>queue written 2026-10-05T12:39:46.151574+00:00</sub>
+<sub>queue written 2026-10-14T22:07:44.334018+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Crews_2023 | irrelevant | 0 | 0 | The paper studies the pharmacokinetics of Rebecsinib, not carbasalate_calcium. |
+| popPK | Crews_2023 | irrelevant | 0 | 0 | The paper focuses on the mechanism of action and toxicokinetics of Rebecsinib in an ADAR1 context, and does not report pharmacokinetic parameters for carbasalate_calcium. |
 | PD | Crews_2023 | not_relevant | 0 | 0 | The paper discusses Rebecsinib, not carbasalate_calcium, and does not report specific numeric PD parameters for the queried drug. |
-| popPK | Zian_2024 | irrelevant | 0 | 0 | The study is a clinical trial regarding aspirin use in neurosurgery and does not involve carbasalate_calcium or pharmacokinetic modeling. |
+| popPK | Zian_2024 | irrelevant | 0 | 0 | The paper describes a clinical trial regarding aspirin management in spinal surgery and does not involve carbasalate_calcium or its pharmacokinetics. |
 | PD | Zian_2024 | not_relevant | 0 | 0 | The paper is a clinical trial protocol for aspirin (not carbasalate calcium) focusing on bleeding and thrombotic outcomes, with no pharmacokinetic or pharmacodynamic modeling or numeric PD parameters. |
 
 ---

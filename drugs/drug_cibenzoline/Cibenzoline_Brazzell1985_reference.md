@@ -16,13 +16,13 @@
 
 ### Reviewer guidance
 
-**The renal clearance parameter for cibenzoline was rejected because its reported unit, ng/mL, is dimensionally inconsistent with a clearance value.**
+**C5 dimension mismatch on a structural parameter.**
 
-The record lists the renal portion of total clearance as 265 ng/mL, a concentration unit that cannot represent a volumetric flow rate. This dimensional mismatch prevented the value from being converted to standard SI units, causing the model to be held back. Additionally, the second reader disagreed on the presence of several parameters, including the fast phase coefficient and terminal half-life, which were recorded in this entry but not by the second reader. Extracted — cibenzoline: λ1 0.406 hr-1, kel 0.0717 hr-1, V 23.8 L, kexcr 0.749 hr-1, Ae 50.4 mg, CLR 265 ng/mL, t1/2z 9.4 hr.
+A reported unit could not be converted (λ1, equation variable, Ae  and CLR), so that value has no SI equivalent. Extracted — cibenzoline: λ1 0.406 hr-1, kel 0.0717 hr-1, V 23.8 L, kexcr 0.749 hr-1, Ae 50.4 mg, CLR 265 ng/mL, t1/2z 9.4 hr.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of a: this record has 2021, the second reading none; it also differs on 10 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Brazzell RK et al., Pharmacokinetics and pharmacodynamics o…, Journal of clinical pharmac… (1985)
@@ -150,7 +150,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_cibenzoline/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Brazzell_1985` / `Brazzell_1985::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_cibenzoline/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Brazzell_1985` / `Brazzell_1985::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

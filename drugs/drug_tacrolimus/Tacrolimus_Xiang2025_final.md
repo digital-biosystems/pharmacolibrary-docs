@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D11A&quot;,&quot;href&quot;:&quot;atc/D11A.md&quot;},{&quot;label&quot;:&quot;tacrolimus&quot;,&quot;href&quot;:&quot;drugs/drug_tacrolimus/&quot;},{&quot;label&quot;:&quot;Xiang_2025 \u00b7 final&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tacrolimus_AbdelKahaar2023v2_reference&quot;,&quot;label&quot;:&quot;Abdel-Kahaar_2023_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tacrolimus/Tacrolimus_AbdelKahaar2023v2_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tacrolimus_Chen2023_base&quot;,&quot;label&quot;:&quot;Chen_2023_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tacrolimus/Tacrolimus_Chen2023_base.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tacrolimus_Chen2023_final&quot;,&quot;label&quot;:&quot;Chen_2023_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tacrolimus/Tacrolimus_Chen2023_final.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tacrolimus_Franken2022_reference&quot;,&quot;label&quot;:&quot;Franken_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tacrolimus/Tacrolimus_Franken2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tacrolimus_Hou2025_reference&quot;,&quot;label&quot;:&quot;Hou_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tacrolimus/Tacrolimus_Hou2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tacrolimus_Paschier2023_reference&quot;,&quot;label&quot;:&quot;Paschier_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tacrolimus/Tacrolimus_Paschier2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tacrolimus_AbdelKahaar2023v2_reference&quot;,&quot;label&quot;:&quot;Abdel-Kahaar_2023_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tacrolimus/Tacrolimus_AbdelKahaar2023v2_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tacrolimus_Chen2023_base&quot;,&quot;label&quot;:&quot;Chen_2023_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tacrolimus/Tacrolimus_Chen2023_base.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tacrolimus_Chen2023_final&quot;,&quot;label&quot;:&quot;Chen_2023_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tacrolimus/Tacrolimus_Chen2023_final.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tacrolimus_Hou2025_reference&quot;,&quot;label&quot;:&quot;Hou_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tacrolimus/Tacrolimus_Hou2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tacrolimus_Paschier2023_base&quot;,&quot;label&quot;:&quot;Paschier_2023_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tacrolimus/Tacrolimus_Paschier2023_base.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tacrolimus_Paschier2023_final&quot;,&quot;label&quot;:&quot;Paschier_2023_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tacrolimus/Tacrolimus_Paschier2023_final.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tacrolimus_Paschier2023_final_final_model_in_development_set&quot;,&quot;label&quot;:&quot;Paschier_2023_final_final_model_in_development_set_model_used_for_the_be&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tacrolimus/Tacrolimus_Paschier2023_final_final_model_in_development_set.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tacrolimus_Xiang2025_base&quot;,&quot;label&quot;:&quot;Xiang_2025_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tacrolimus/Tacrolimus_Xiang2025_base.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tacrolimus_Xiang2025_final&quot;,&quot;label&quot;:&quot;Xiang_2025_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tacrolimus/Tacrolimus_Xiang2025_final.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Tacrolimus_Paschier2023_be_model_in_validation_set&quot;,&quot;label&quot;:&quot;Paschier_2023_be_model_in_validation_set&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tacrolimus/Tacrolimus_Paschier2023_be_model_in_validation_set.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tacrolimus_Paschier2023_reference&quot;,&quot;label&quot;:&quot;Paschier_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tacrolimus/Tacrolimus_Paschier2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tacrolimus_Paschier2023_relative_mean_bias&quot;,&quot;label&quot;:&quot;Paschier_2023_relative_mean_bias&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tacrolimus/Tacrolimus_Paschier2023_relative_mean_bias.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Xiang_2025_eGFR&quot;,&quot;label&quot;:&quot;Xiang_2025 \u00b7 eGFR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_tacrolimus/pd_Xiang_2025_eGFR.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # tacrolimus — `Tacrolimus_Xiang2025_final`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.923). Primary extraction retained.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">accepted (caveats)</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.923). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -13,13 +13,15 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
+
+> **Caveat** (`covariates_not_exercised`): Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.
 
 ### Reviewer guidance
 
-**Kel has no unit.**
+**Accepted with a caveat: the covariate scenarios were not simulated.**
 
-Without a unit the value cannot be converted, so the model cannot use it. Extracted — tacrolimus: kabs 3.09 h−1, V/F 2.25e+03 L, CL/F 33.7 L/h, kel 0.264.
+The base model was simulated, not the covariate effects the record defines.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of fpg0: this record has none, the second reading 4.2. That field does not shape the model.
 
@@ -29,25 +31,22 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Xiang Q et al., Population Pharmacokinetic/Pharmacodyna…, Drug design, development an… (2025)
   ·  DOI: [10.2147/DDDT.S542786](https://doi.org/10.2147/DDDT.S542786)
 
-<div class="pk-model-meta" hidden drug="tacrolimus" model-id="Tacrolimus_Xiang2025_final" status="needs_review" stale="false" population="renal transplant recipients" measured-compound="tacrolimus" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="tacrolimus" model-id="Tacrolimus_Xiang2025_final" status="accepted_with_caveats" stale="false" population="renal transplant recipients" measured-compound="tacrolimus" parameterization="apparent" topology="1C"></div>
 
-**Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 4 extracted, plus 3 covariate effects.
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 3 extracted, plus 3 covariate effects.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Ka (h−1) | `Q49` · kabs | 3.09 | h−1 | 0.0008583333333333333 | [1] / [h] | not captured | exact (1.0) | t0002:row3:col3 | — | not captured |
-| V/F (L) | `Q76` · V/F | 2248 | L | 2.248 | [l] | not captured | exact (1.0) | t0002:row4:col3, t0002:row4:col4 | — | 88.6 (None% RSE) |
-| CL/F (L/h) | `Q27` · CL/F | 33.7 | L/h | 9.361111111111111e-06 | [l] / [h] | not captured | exact (1.0) | t0002:row5:col3, t0002:row5:col4 | — | 32.6 (None% RSE) |
-| β | `Q47` · kel | 0.264 | not captured | not captured | not captured | not captured | exact (1.0) | t0002:row14:col3 | — | not captured |
-| age_on_fpg0 | `Q900` · age_on_fpg0 | 0.232 | not captured | not captured | not captured | not captured | not captured (not captured) | t0002:row15:col3, t0002:row15:col4 | — | not captured |
-| age_on_egfr0 | `Q900` · age_on_egfr0 | -0.403 | not captured | not captured | not captured | not captured | not captured (not captured) | t0002:row22:col3, t0002:row22:col4 | — | not captured |
-| theta_cl_f_cyp3a5 | `Q900` · theta_cl_f_cyp3a5 | -0.381 | not captured | not captured | not captured | not captured | not captured (not captured) | t0002:row8:col3, t0002:row8:col4 | — | not captured |
+| V/F (L) | `Q76` · V/F | 10.4 | L | 0.010400000000000001 | [l] | 2248 | exact (1.0) | t0002:row4:col4 | — | 19.3 (88.6% RSE) |
+| CL/F (L/h) | `Q27` · CL/F | 6.9 | L/h | 1.916666666666667e-06 | [l] / [h] | 33.7 | exact (1.0) | t0002:row5:col4 | — | 17.1 (32.6% RSE) |
+| cyp3a5_3_3_on_cl_f | `Q900` · cyp3a5_3_3_on_cl_f | 21.1 | not captured | not captured | not captured | -0.381 | not captured (not captured) | t0002:row8:col4 | — | not captured |
+| age_on_fpg0 | `Q900` · age_on_fpg0 | 23.9 | not captured | not captured | not captured | 0.232 | not captured (not captured) | t0002:row15:col4 | — | not captured |
+| age_on_egfr0 | `Q900` · age_on_egfr0 | 14.8 | not captured | not captured | not captured | -0.403 | not captured (not captured) | t0002:row22:col4 | — | not captured |
+| the Ka | `Q49` · kabs | 3.9 | h−1 | 0.0010833333333333333 | 1/h | not captured | review_gapfill (0.7) | Xiang_2025:review | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -56,26 +55,47 @@ Xiang Q et al., Population Pharmacokinetic/Pharmacodyna…, Drug design, develop
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['Tlag']
+- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'POD on CL/F' — extend the ontology if this is a real PK parameter (source ['t0002:row6:col3', 't0002:row6:col4'])
-- dropped unlinked row (NIL): 'WZ on CL/F' — extend the ontology if this is a real PK parameter (source ['t0002:row7:col3', 't0002:row7:col4'])
-- dropped unlinked row (NIL): 'FPG0 (mmol/L)' — extend the ontology if this is a real PK parameter (source ['t0002:row13:col3', 't0002:row13:col4'])
-- covariate level 'Age on FPG0' → Q900:age_on_fpg0 = 0.232 (linear_fractional on Q27)
-- dropped unlinked row (NIL): 'eGFR0 (mL/min/1.73 m2)' — extend the ontology if this is a real PK parameter (source ['t0002:row19:col3', 't0002:row19:col4'])
-- dropped PD-category row 'IC50 (ng/mL)' → Q322 (IC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['t0002:row20:col3'])
-- dropped PD-category row 'Imax (mL/min/1.73 m2)' → Q323 (Imax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['t0002:row21:col3'])
-- covariate level 'Age on eGFR0' → Q900:age_on_egfr0 = -0.403 (linear_fractional on Q27)
-- dropped unlinked row (NIL): 'HB on eGFR0' — extend the ontology if this is a real PK parameter (source ['t0002:row23:col3', 't0002:row23:col4'])
+- table representations disagree for 'V/F (L)'; source reconciliation required
+- table representations disagree for 'CL/F (L/h)'; source reconciliation required
+- table representations disagree for 'POD on CL/F'; source reconciliation required
+- table representations disagree for 'WZ on CL/F'; source reconciliation required
+- table representations disagree for 'CYP3A5*3/*3 on CL/F'; source reconciliation required
+- table representations disagree for 'IIV CL/F (%)'; source reconciliation required
+- table representations disagree for 'IIV V/F (%)'; source reconciliation required
+- table representations disagree for 'Residual errorAdditive (ng/mL)'; source reconciliation required
+- table representations disagree for 'FPG0 (mmol/L)'; source reconciliation required
+- table representations disagree for 'Age on FPG0'; source reconciliation required
+- table representations disagree for 'IIV FPG0 ((%)'; source reconciliation required
+- table representations disagree for 'Residual errorProportional (%)'; source reconciliation required
+- table representations disagree for 'eGFR0 (mL/min/1.73 m2)'; source reconciliation required
+- table representations disagree for 'Age on eGFR0'; source reconciliation required
+- table representations disagree for 'HB on eGFR0'; source reconciliation required
+- table representations disagree for 'IIV eGFR0 (%)'; source reconciliation required
+- dropped unlinked row (NIL): 'POD on CL/F' — extend the ontology if this is a real PK parameter (source ['t0002:row6:col4'])
+- dropped unlinked row (NIL): 'WZ on CL/F' — extend the ontology if this is a real PK parameter (source ['t0002:row7:col4'])
+- covariate level 'CYP3A5*3/*3 on CL/F' → Q900:cyp3a5_3_3_on_cl_f = 21.1 (linear_fractional on Q27)
+- dropped unlinked row (NIL): 'FPG0 (mmol/L)' — extend the ontology if this is a real PK parameter (source ['t0002:row13:col4'])
+- covariate level 'Age on FPG0' → Q900:age_on_fpg0 = 23.9 (linear_fractional on Q27)
+- dropped PD-category row 'eGFR0 (mL/min/1.73 m2)' → Q324 (E0, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['t0002:row19:col4'])
+- covariate level 'Age on eGFR0' → Q900:age_on_egfr0 = 14.8 (linear_fractional on Q27)
+- dropped unlinked row (NIL): 'HB on eGFR0' — extend the ontology if this is a real PK parameter (source ['t0002:row23:col4'])
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=tacrolimus
-- model-stage split: 'final model' is the final model of Xiang_2025 (paper reports 2 stages: base model, final model); same population, different model-building step
+- pharmacogenetic covariate 'cyp3a5_3_3_on_cl_f' (cyp3a5) — PGx domain
+- status held at route_to_review — not promoted
+- model-stage split: 'final model / median' is the final model of Xiang_2025 (paper reports 2 stages: base model / estimate, final model / median); same population, different model-building step
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
-- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- gap-filled Q49 (kabs) from Xiang_2025's review values (primary lacked it)
 
 **Extraction notes:**
-- unparsed cell t0002:row7:col7 = '(−0.433 to −0.047)'
-- unparsed cell t0002:row8:col7 = '(−0.554 to −0.188)'
-- unparsed cell t0002:row22:col7 = '(−0.525 to −0.254)'
+- table t0002: unbound_uncertainty
+- table t0002: ragged_grid
+- table t0002: representations disagree; selected evidence retained, not merged
 - LLM selected parameter table(s) 2
 
 ## Validation
@@ -105,18 +125,29 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C2_base_Q27 | pass | 33.7 | 33.7 | 1.0 | 0.05 | footnote reference category |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['t0002:row5:col3', 't0002:row5:col4'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['t0002:row3:col3'] |
-| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['t0002:row4:col3', 't0002:row4:col4'] |
-| C5_unit_missing_Q47 | fail | 1 / [time] | not captured | not captured | not captured | ['t0002:row14:col3'] |
+| C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['t0002:row5:col4'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Xiang_2025:review'] |
+| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['t0002:row4:col4'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 33.7 L/h | not captured | not captured | ['t0002:row5:col3', 't0002:row5:col4'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 2.25e+03 L | not captured | not captured | ['t0002:row4:col3', 't0002:row4:col4'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 6.9 L/h | not captured | not captured | ['t0002:row5:col4'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 10.4 L | not captured | not captured | ['t0002:row4:col4'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_output_variable | not captured | pass | C_central (measured=tacrolimus) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -125,7 +156,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_tacrolimus/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Xiang_2025` / `Xiang_2025::final`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_tacrolimus/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Xiang_2025` / `Xiang_2025::final`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_tacrolimus/models/modelica/Tacrolimus_Xiang2025_final.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_tacrolimus/models/modelica/Tacrolimus_Xiang2025_final.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_tacrolimus/models/modelica/Tacrolimus_Xiang2025_final.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -134,21 +168,26 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_tacrolimus/Tacrolimus_Xiang2025_final/Tacrolimus_Xiang2025_final_modelica.zip" download>Tacrolimus_Xiang2025_final_modelica.zip</a> <span class="pk-size">(4.8 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_tacrolimus/Tacrolimus_Xiang2025_final/Tacrolimus_Xiang2025_final_fmi.zip" download>Tacrolimus_Xiang2025_final_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_tacrolimus/Tacrolimus_Xiang2025_final/Tacrolimus_Xiang2025_final_matlab.zip" download>Tacrolimus_Xiang2025_final_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_tacrolimus/Tacrolimus_Xiang2025_final/Tacrolimus_Xiang2025_final_matlab_simbio.zip" download>Tacrolimus_Xiang2025_final_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_tacrolimus/Tacrolimus_Xiang2025_final/Tacrolimus_Xiang2025_final_sbml.zip" download>Tacrolimus_Xiang2025_final_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_tacrolimus/Tacrolimus_Xiang2025_final/Tacrolimus_Xiang2025_final_cellml.zip" download>Tacrolimus_Xiang2025_final_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_tacrolimus/Tacrolimus_Xiang2025_final/Tacrolimus_Xiang2025_final.svg" alt="Tacrolimus_Xiang2025_final diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+**Administration: oral** — 5 mg, single dose, first-order absorption (ka 3.9 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 5 mg oral (L04AD02) (defined daily dose)._
+
+<dbs-fmusim paramsurl="drugs/drug_tacrolimus/Tacrolimus_Xiang2025_final/Tacrolimus_Xiang2025_final_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_tacrolimus/Tacrolimus_Xiang2025_final/Tacrolimus_Xiang2025_final_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C_enteral` · parameters `Tacrolimus_Xiang2025_final_params.json` · controls `Tacrolimus_Xiang2025_final_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 15:37 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 23:26 UTC</sub>

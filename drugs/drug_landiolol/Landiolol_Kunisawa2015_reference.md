@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;landiolol&quot;,&quot;href&quot;:&quot;drugs/drug_landiolol/&quot;},{&quot;label&quot;:&quot;Kunisawa_2015 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Landiolol_Kunisawa2015_reference&quot;,&quot;label&quot;:&quot;Kunisawa_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_landiolol/Landiolol_Kunisawa2015_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Landiolol_Kunisawa2015v2_reference&quot;,&quot;label&quot;:&quot;Kunisawa_2015_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_landiolol/Landiolol_Kunisawa2015v2_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Landiolol_Kunisawa2015_reference&quot;,&quot;label&quot;:&quot;Kunisawa_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_landiolol/Landiolol_Kunisawa2015_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Landiolol_Kunisawa2015v2_healthy_male_volunteers_mean_se&quot;,&quot;label&quot;:&quot;Kunisawa_2015_2_healthy_male_volunteers_mean_se&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_landiolol/Landiolol_Kunisawa2015v2_healthy_male_volunteers_mean_se.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Landiolol_Kunisawa2015v2_patients_with_peripheral_arterial_d&quot;,&quot;label&quot;:&quot;Kunisawa_2015_2_patients_with_peripheral_arterial_disease_mean_se&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_landiolol/Landiolol_Kunisawa2015v2_patients_with_peripheral_arterial_d.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # landiolol — `Landiolol_Kunisawa2015_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143), gpt-oss:120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143), gpt-oss:120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -17,15 +17,13 @@
 
 ### Reviewer guidance
 
-**The landiolol record lacks a value for the absorption lag time, leaving the parameter undefined in the two-compartment model.**
+**T3_param_coverage.**
 
-The record lists five parameters for landiolol, including a lag time of 0.634 min, but the review found only four parameters covered. The absorption lag time was neither emitted nor included in the defaulted list, causing a parameter coverage failure. Because the record was built from the abstract alone, these summary statistics stand in for a fitted model. Extracted — landiolol: CL 34 mL/min/kg, V1 74.9 mL/kg, Q 70.9 mL/min/kg, V2 38.9 mL/kg, tlag 0.634 min.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — landiolol: CL 34 mL/min/kg, V1 74.9 mL/kg, Q 70.9 mL/min/kg, V2 38.9 mL/kg, tlag 0.634 min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has landiolol hydrochloride, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
-
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-29 08:52:02.773497+00:00) predates the upstream re-run (2026-10-06 23:55:10.850575+00:00). Current validate status: `extracted`.
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 > **Dose compound ≠ measured compound:** dosed `landiolol hydrochloride`, measured `landiolol`.
 
@@ -33,7 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Kunisawa T et al., Target-controlled infusion and populati…, Journal of anesthesia (2015)
   ·  DOI: [10.1007/s00540-014-1908-5](https://doi.org/10.1007/s00540-014-1908-5)
 
-<div class="pk-model-meta" hidden drug="landiolol" model-id="Landiolol_Kunisawa2015_reference" status="extracted" stale="true" population="gynecologic patients" measured-compound="landiolol" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="landiolol" model-id="Landiolol_Kunisawa2015_reference" status="needs_review" stale="false" population="gynecologic patients" measured-compound="landiolol" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 5 extracted.
@@ -41,6 +39,8 @@ Kunisawa T et al., Target-controlled infusion and populati…, Journal of anesth
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | total body clearance (CL) | `Q22` · CL | 34.0 | mL/min/kg | 3.966666666666667e-05 | [ml] / [[min] · [kg]] | not captured | llm_confirmed (0.6) | Kunisawa_2015:abstract | — | not captured |
@@ -147,10 +147,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_landiolol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kunisawa_2015` / `Kunisawa_2015::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_landiolol/models/modelica/Landiolol_Kunisawa2015_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_landiolol/models/modelica/Landiolol_Kunisawa2015_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_landiolol/models/modelica/Landiolol_Kunisawa2015_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_landiolol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kunisawa_2015` / `Kunisawa_2015::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_landiolol/models/modelica/Landiolol_Kunisawa2015_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_landiolol/models/modelica/Landiolol_Kunisawa2015_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_landiolol/models/modelica/Landiolol_Kunisawa2015_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -168,7 +168,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_landiolol/Landiolol_Kunisawa2015_reference/Landiolol_Kunisawa2015_reference.svg" alt="Landiolol_Kunisawa2015_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_landiolol/Landiolol_Kunisawa2015_reference/Landiolol_Kunisawa2015_reference.svg" alt="Landiolol_Kunisawa2015_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -181,4 +181,4 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 23:55 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 03:27 UTC</sub>

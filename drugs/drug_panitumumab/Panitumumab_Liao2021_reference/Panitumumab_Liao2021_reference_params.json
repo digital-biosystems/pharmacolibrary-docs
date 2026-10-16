@@ -1,0 +1,32 @@
+{
+ "dose_source": "paper",
+ "model_id": "Panitumumab_Liao2021_reference",
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  420.0
+ ],
+ "parameters": {
+  "Cl": 2.4074074074074074e-09,
+  "F": 1.0,
+  "VdPerKg": 4.6e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.00042,
+  "k12": 1.3658845180584312e-06,
+  "k21": 1.766324557489216e-06,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662027
+ },
+ "reference_peaks": {
+  "central.C": 0.11521610247600783
+ },
+ "stop_time": 4838400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

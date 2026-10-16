@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;propranolol&quot;,&quot;href&quot;:&quot;drugs/drug_propranolol/&quot;},{&quot;label&quot;:&quot;Salehifar_2017 \u00b7 male&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Propranolol_Takechi2018_reference&quot;,&quot;label&quot;:&quot;Takechi_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_propranolol/Propranolol_Takechi2018_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Propranolol_Salehifar2017_mean_of_differences&quot;,&quot;label&quot;:&quot;Salehifar_2017_mean_of_differences&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_propranolol/Propranolol_Salehifar2017_mean_of_differences.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Propranolol_Salehifar2017_other_sources&quot;,&quot;label&quot;:&quot;Salehifar_2017_other_sources&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_propranolol/Propranolol_Salehifar2017_other_sources.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Propranolol_Salehifar2017_this_study&quot;,&quot;label&quot;:&quot;Salehifar_2017_this_study&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_propranolol/Propranolol_Salehifar2017_this_study.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Propranolol_Takechi2018_estimate_rse&quot;,&quot;label&quot;:&quot;Takechi_2018_estimate_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_propranolol/Propranolol_Takechi2018_estimate_rse.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Propranolol_Takechi2018_original_data_estimate_rse&quot;,&quot;label&quot;:&quot;Takechi_2018_original_data_estimate_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_propranolol/Propranolol_Takechi2018_original_data_estimate_rse.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # propranolol — `Propranolol_Salehifar2017_male`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.778), gpt-oss:120b (partly confirmed, agreement 0.933). Primary extraction retained.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.778), gpt-oss:120b (partly confirmed, agreement 0.933). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -25,16 +25,14 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-29 08:52:10.560711+00:00) predates the upstream re-run (2026-10-07 15:15:02.487440+00:00). Current validate status: `needs_review`.
-
 ## Citation
 Salehifar E et al., Pharmacokinetic Parameters and Over-Res…, Advanced pharmaceutical bul… (2017)
   ·  DOI: [10.15171/apb.2017.024](https://doi.org/10.15171/apb.2017.024)
 
-<div class="pk-model-meta" hidden drug="propranolol" model-id="Propranolol_Salehifar2017_male" status="needs_review" stale="true" population="healthy Iranian adults" measured-compound="propranolol" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="propranolol" model-id="Propranolol_Salehifar2017_male" status="needs_review" stale="false" population="healthy adults" measured-compound="propranolol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 11 extracted.
+**Parameters:** 10 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -51,8 +49,7 @@ Salehifar E et al., Pharmacokinetic Parameters and Over-Res…, Advanced pharmac
 | T½α (hr) | `Q59` · t1/2α | 0.77 | hr | 2772.0 | [h] | not captured | llm (0.6) | T2:row10:col1, T2:row10:col2, T2:row10:col3 | — | not captured |
 | T½β (hr) | `Q60` · t1/2β | 19.7 | hr | 70920.0 | [h] | not captured | llm (0.6) | T2:row11:col1, T2:row11:col2, T2:row11:col3 | — | not captured |
 | T½ (hr) | `Q57` · t1/2z | 2.1 | hr | 7560.0 | [h] | not captured | llm (0.6) | T2:row12:col1, T2:row12:col2, T2:row12:col3 | — | not captured |
-| AUC 0-2 (ng×hr/ml) | `Q88` · AUC | 32.7 | ng*h/mL | not captured | ng*h/mL | not captured | llm_confirmed (0.6) | T2:row13:col1, T2:row13:col2, T2:row13:col3 | — | not captured |
-| AUC 0-10 (ng×hr/ml) | `Q19` · AUCt | 169.2 | ng*h/mL | not captured | ng*h/mL | not captured | llm_corrected (0.6) | T2:row14:col1, T2:row14:col2, T2:row14:col3 | — | not captured |
+| AUC 0-2 (ng×hr/ml) | `Q19` · AUCt | 32.7 | ng*h/mL | not captured | ng*h/mL | not captured | llm_corrected (0.6) | T2:row13:col1, T2:row13:col2, T2:row13:col3 | — | not captured |
 | AUC 0-∞ (ng×hr/ml) | `Q17` · AUC∞ | 169.6 | ng*h/mL | not captured | ng*h/mL | not captured | space_fold (0.95) | T2:row15:col1, T2:row15:col2, T2:row15:col3 | — | not captured |
 
 <details class="legend">
@@ -60,50 +57,54 @@ Salehifar E et al., Pharmacokinetic Parameters and Over-Res…, Advanced pharmac
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
-### Unresolved rows _(no Q-code or no value — not parameters)_
-| label (paper) | Q-code | value | link |
-|---|---|---|---|
-| Variable | Q900 | not captured | llm |
-
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_unknown: 'N=10' (equation variable)
+- table representations disagree for '\u200dDose (mg/kg)'; source reconciliation required
+- table representations disagree for 'Cp max (ng/ml)'; source reconciliation required
+- table representations disagree for 'T max (min)'; source reconciliation required
+- table representations disagree for 'Vd (Lit)'; source reconciliation required
+- table representations disagree for 'Vd (Lit/Kg)'; source reconciliation required
+- table representations disagree for 'Cl (Lit/hr)'; source reconciliation required
+- table representations disagree for 'Cl (Lit /Kg/hr)'; source reconciliation required
+- table representations disagree for 'Ka (hr -1)'; source reconciliation required
+- table representations disagree for 'T½α (hr)'; source reconciliation required
+- table representations disagree for 'T½β (hr)'; source reconciliation required
+- table representations disagree for 'T½ (hr)'; source reconciliation required
+- table representations disagree for 'AUC 0-2 (ng×hr/ml)'; source reconciliation required
+- table representations disagree for 'AUC 0-10 (ng×hr/ml)'; source reconciliation required
+- table representations disagree for 'AUC 0-∞ (ng×hr/ml)'; source reconciliation required
+- table representations disagree for 'pH at time zero urine'; source reconciliation required
+- table representations disagree for 'pH at time 4hr urine'; source reconciliation required
 - dropped unlinked row (NIL): '\u200dDose (mg/kg)' — extend the ontology if this is a real PK parameter (source ['T2:row2:col1', 'T2:row2:col2', 'T2:row2:col3'])
-- unit_dimension_unknown: 'Lit' (V)
-- unit_dimension_unknown: 'Lit/Kg' (V)
+- unit_dimension_unknown: 'N=10' (V)
 - dropped duplicate Q61 ('Vd (Lit/Kg)', value '4.95') — already have one for this compound
-- unit_dimension_unknown: 'Lit/hr' (CL)
-- unit_dimension_unknown: 'Lit /Kg/hr' (CL)
+- unit_dimension_unknown: 'N=10' (CL)
 - dropped duplicate Q22 ('Cl (Lit /Kg/hr)', value '1.77') — already have one for this compound
-- unit_dimension_unknown: 'ng×hr/ml' (AUC)
 - unit_dimension_unknown: 'ng×hr/ml' (AUCt)
+- dropped duplicate Q19 ('AUC 0-10 (ng×hr/ml)', value '169.2') — already have one for this compound
 - unit_dimension_unknown: 'ng×hr/ml' (AUC∞)
 - dropped unlinked row (NIL): 'pH at time zero urine' — extend the ontology if this is a real PK parameter (source ['T2:row16:col1', 'T2:row16:col2', 'T2:row16:col3'])
 - dropped unlinked row (NIL): 'pH at time 4hr urine' — extend the ontology if this is a real PK parameter (source ['T2:row17:col1', 'T2:row17:col2', 'T2:row17:col3'])
-- implicit units: 'Vd (Lit)' → L (from the paper text: "Table 2 lists 'Vd (Lit)' and the text reports '334.12 Lit'.")
-- implicit units: 'Cl (Lit/hr)' → L/h (from the paper text: "Table 2 lists 'Cl (Lit/hr)' and the text reports '126.59 ml/hr'.")
-- implicit units: 'AUC 0-2 (ng×hr/ml)' → ng*h/mL (from the paper text: "Table 2 lists 'AUC 0-2 (ng×hr/ml)'.")
-- implicit units: 'AUC 0-10 (ng×hr/ml)' → ng*h/mL (from the paper text: "Table 2 lists 'AUC 0-10 (ng×hr/ml)'.")
-- implicit units: 'AUC 0-∞ (ng×hr/ml)' → ng*h/mL (from the paper text: "Table 2 lists 'AUC 0-∞ (ng×hr/ml)'.")
+- implicit units: 'Vd (Lit)' → L (from the paper text: "Table 2 column header lists 'Vd (Lit)' and the text states 'apparent volume of distribution (V/F)... were 334.12 Lit'.")
+- implicit units: 'Cl (Lit/hr)' → L/h (from the paper text: "Table 2 column header lists 'Cl (Lit/hr)' and the text states 'oral plasma clearance (CL/F) was 126.59 ml/hr' (note: val")
+- implicit units: 'AUC 0-2 (ng×hr/ml)' → ng*h/mL (from the paper text: "Table 2 column header lists 'AUC 0-2 (ng×hr/ml)'.")
+- implicit units: 'AUC 0-∞ (ng×hr/ml)' → ng*h/mL (from the paper text: "Table 2 column header lists 'AUC 0-∞ (ng×hr/ml)'.")
 - apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q61 (Vd (Lit)); Q22 (Cl (Lit/hr))
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=propranolol
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - status held at route_to_review — not promoted
-- population split: 'male (n=10)' subgroup of Salehifar_2017 (paper reports 4 populations: female (n=10), male (n=10), mean of differences, this study)
+- population split: 'male (n=10)' subgroup of Salehifar_2017 (paper reports 5 populations: female (n=10), male (n=10), mean of differences, other sources, this study)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- unparsed cell Salehifar_2017_table_4:row0:col4 = '0.59 to 1.44'
-- unparsed cell Salehifar_2017_table_4:row0:col5 = '&lt;0.001'
-- unparsed cell Salehifar_2017_table_4:row1:col4 = '0.24 to 1.87\u200f-'
-- unparsed cell Salehifar_2017_table_4:row2:col4 = '-1.79 to -1.05'
-- unparsed cell Salehifar_2017_table_4:row2:col5 = '&lt;0.001'
+- table T2: ragged_grid
+- table T2: representations disagree; selected evidence retained, not merged
+- table Salehifar_2017_table_4: unparsed_numeric_cell
 - companion parameter table 4 transcribed (10 record(s))
-- LLM selected parameter table(s) 4
+- LLM selected parameter table(s) 2, 4
 
 ## Validation
 
@@ -137,12 +138,11 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 11 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 10 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C1_half_life_beta | fail | 32.5 | 1.948 | 0.0599 | 0.25 | reported t½β |
 | C5_dimension_Q17 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['T2:row15:col1', 'T2:row15:col2', 'T2:row15:col3'] |
-| C5_dimension_Q19 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['T2:row14:col1', 'T2:row14:col2', 'T2:row14:col3'] |
+| C5_dimension_Q19 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['T2:row13:col1', 'T2:row13:col2', 'T2:row13:col3'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T2:row7:col1', 'T2:row7:col2', 'T2:row7:col3'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['T2:row3:col1', 'T2:row3:col2', 'T2:row3:col3'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['T2:row9:col1', 'T2:row9:col2', 'T2:row9:col3'] |
@@ -151,7 +151,6 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C5_dimension_Q59 | pass | [time] | not captured | not captured | not captured | ['T2:row10:col1', 'T2:row10:col2', 'T2:row10:col3'] |
 | C5_dimension_Q60 | pass | [time] | not captured | not captured | not captured | ['T2:row11:col1', 'T2:row11:col2', 'T2:row11:col3'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['T2:row5:col1', 'T2:row5:col2', 'T2:row5:col3'] |
-| C5_dimension_Q88 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['T2:row13:col1', 'T2:row13:col2', 'T2:row13:col3'] |
 | C6_cl_magnitude | fail | &lt;= 90.0 L/h | 128.4 | not captured | not captured | ['T2:row7:col1', 'T2:row7:col2', 'T2:row7:col3'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 128 L/h | not captured | not captured | ['T2:row7:col1', 'T2:row7:col2', 'T2:row7:col3'] |
@@ -164,7 +163,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_propranolol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Salehifar_2017` / `Salehifar_2017::male`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_propranolol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Salehifar_2017` / `Salehifar_2017::male`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -190,4 +189,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 15:15 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 03:37 UTC</sub>

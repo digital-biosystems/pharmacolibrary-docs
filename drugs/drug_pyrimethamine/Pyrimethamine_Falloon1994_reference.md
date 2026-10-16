@@ -4,7 +4,7 @@
 
 # pyrimethamine — `Pyrimethamine_Falloon1994_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -16,56 +16,49 @@
 
 ### Reviewer guidance
 
-**This paper's disposition core is incomplete.**
+**The paper reports none of the model's key parameters.**
 
-A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Ramharter_2019) cannot stand in for this paper's evidence. Extracted — pyrimethamine: MRT 0.579 h; dapsone and pyrimethamine: V 1.33e+03 liters.
+No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has dapsone and pyrimethamine, the second reading dapsone, pyrimethamine; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> **Dose compound ≠ measured compound:** dosed `dapsone, pyrimethamine`, measured `pyrimethamine, dapsone`.
+
 ## Citation
 Falloon J et al., Pharmacokinetics and safety of weekly d…, Antimicrobial agents and ch… (1994)
   ·  DOI: [10.1128/AAC.38.7.1580](https://doi.org/10.1128/AAC.38.7.1580)
 
-<div class="pk-model-meta" hidden drug="pyrimethamine" model-id="Pyrimethamine_Falloon1994_reference" status="needs_review" stale="false" population="HIV-infected adults for Pneumocystis pneumonia prophylaxis" measured-compound="dapsone and pyrimethamine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="pyrimethamine" model-id="Pyrimethamine_Falloon1994_reference" status="rejected" stale="false" population="HIV-infected adults" measured-compound="pyrimethamine, dapsone" parameterization="mechanistic" topology="general_linear"></div>
 
-**Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 2 extracted.
+**Model structure:** general linear; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| Mean | `Q53` · MRT | 0.579 | h | 2084.3999999999996 | [h] | not captured | llm (0.6) | tab_4:row3:col1, tab_4:row3:col2, tab_4:row3:col3, tab_4:row3:col4, tab_4:row3:col5, tab_4:row3:col6, tab_4:row3:col7, tab_4:row7:col1, tab_4:row7:col2, tab_4:row7:col3, tab_4:row7:col4, tab_4:row7:col5, tab_4:row7:col6, tab_4:row7:col7 | — | not captured |
-| total volume of distribution | `Q61` · V | 1330.0 | liters | 1.33 | L | not captured | review_gapfill (0.7) | Ramharter_2019:review | — | not captured |
-
-<details class="legend">
-<summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
-</details>
+_No resolved parameters._
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- column 'tiag (h)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- column "k, (h-')" classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- column 'vj/f (liters/kg)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- column 'vpi/ (liters/kg)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- column 'cld/f (liters/h/kg)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- column 'cl/hf (liters/h/kg)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- column 't1n (h)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- table representations disagree for 'Median'; source reconciliation required
+- table representations disagree for 'Mean'; source reconciliation required
+- table representations disagree for 'CV (%)'; source reconciliation required
 - dropped unlinked row (NIL): 'Median' — extend the ontology if this is a real PK parameter (source ['tab_4:row2:col1', 'tab_4:row2:col2', 'tab_4:row2:col3', 'tab_4:row2:col4', 'tab_4:row2:col5', 'tab_4:row2:col6', 'tab_4:row2:col7', 'tab_4:row6:col1', 'tab_4:row6:col2', 'tab_4:row6:col3', 'tab_4:row6:col4', 'tab_4:row6:col5', 'tab_4:row6:col6', 'tab_4:row6:col7'])
+- dropped unlinked row (NIL): 'Mean' — extend the ontology if this is a real PK parameter (source ['tab_4:row3:col1', 'tab_4:row3:col2', 'tab_4:row3:col3', 'tab_4:row3:col4', 'tab_4:row3:col5', 'tab_4:row3:col6', 'tab_4:row3:col7', 'tab_4:row7:col1', 'tab_4:row7:col2', 'tab_4:row7:col3', 'tab_4:row7:col4', 'tab_4:row7:col5', 'tab_4:row7:col6', 'tab_4:row7:col7'])
 - dropped unlinked row (NIL): 'CV (%)' — extend the ontology if this is a real PK parameter (source ['tab_4:row4:col1', 'tab_4:row4:col2', 'tab_4:row4:col3', 'tab_4:row4:col4', 'tab_4:row4:col5', 'tab_4:row4:col6', 'tab_4:row4:col7', 'tab_4:row8:col1', 'tab_4:row8:col2', 'tab_4:row8:col3', 'tab_4:row8:col4', 'tab_4:row8:col5', 'tab_4:row8:col6', 'tab_4:row8:col7'])
-- dropped value-less row: 'TABLE 5 . Fitted pharmacokinetic parameters for dapsone and pyrimethaminea'
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=dapsone and pyrimethamine
-- molar mass: none of 1 PubChem candidate(s) is 'dapsone and pyrimethamine' (LLM) — left in mass units
-- gap-filled Q61 (V) from Ramharter_2019's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=pyrimethamine, dapsone
+- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
+- status held at route_to_review — not promoted
+- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
+
+**Extraction notes:**
+- table tab_4: representations disagree; selected evidence retained, not merged
+- LLM selected parameter table(s) 4
 
 ## Validation
 
@@ -97,12 +90,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
-| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q53 | pass | [time] | not captured | not captured | not captured | ['tab_4:row3:col1', 'tab_4:row3:col2', 'tab_4:row3:col3', 'tab_4:row3:col4', 'tab_4:row3:col5', 'tab_4:row3:col6', 'tab_4:row3:col7', 'tab_4:row7:col1', 'tab_4:row7:col2', 'tab_4:row7:col3', 'tab_4:row7:col4', 'tab_4:row7:col5', 'tab_4:row7:col6', 'tab_4:row7:col7'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Ramharter_2019:review'] |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q61 | pass | volume within physiological range | 1.33e+03 L | not captured | not captured | ['Ramharter_2019:review'] |
+| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
+| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
+| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none'] | not captured | not captured | not captured |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -111,24 +101,14 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_pyrimethamine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Falloon_1994` / `Falloon_1994::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_pyrimethamine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Falloon_1994` / `Falloon_1994::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-</tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -137,4 +117,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 08:08 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 03:13 UTC</sub>

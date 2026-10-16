@@ -15,11 +15,11 @@
 
 ## Record summary
 
-**As extracted:** 2-chloro-adenosine (CADO) (measured concentrations) drives NMDA receptor-mediated currents: direct sigmoid Emax (Hill) effect.
+**As extracted:** 2-chloro-adenosine (measured concentrations) drives NMDA receptor-mediated currents: direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
 
-> The concentration of the analog 2-chloro-adenosine (CADO) inhibits NMDA receptor-mediated currents via a sigmoidal Emax mechanism. The model parameters indicate a maximal effect (Emax) of 54.2% and an EC50 of 10.3 nM, though the paper excerpts do not provide further mechanistic details.
+> 2-chloro-adenosine concentrations inhibit NMDA receptor-mediated currents according to a sigmoidal Emax model. The reported EC50 is 10.3 nM with a maximal inhibition of 54.2%.
 >
 > <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
@@ -27,7 +27,7 @@
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
 - **tier:** descriptive
-- **effect:** inhibition/proportional
+- **effect:** inhibition/unknown
 
 ## Citation
 de Mendonça A et al., Inhibition of NMDA receptor-mediated cu…, Neuroreport (1995)
@@ -37,7 +37,7 @@ de Mendonça A et al., Inhibition of NMDA receptor-mediated cu…, Neuroreport (
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
 | PD (effect) | maximal effect | `Q323` · not captured | 54.2 | % | not captured | llm (not captured) | de_1995:pdv3 |
-| PD (effect) | EC50 | `Q321` · not captured | 10.3 | nM | not captured | llm (not captured) | de_1995:pdv3 |
+| PD (effect) | EC50 | `Q322` · not captured | 10.3 | nM | not captured | llm (not captured) | de_1995:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>

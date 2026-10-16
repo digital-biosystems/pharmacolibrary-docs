@@ -17,7 +17,7 @@ Oxedrine (synephrine) is a sympathomimetic, alpha-adrenergic agonist that acts a
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 10:04 | 2:33 | 0/0/0 | 1/0/1 | 0/0/0 | 96,148/2,779 | ollama / qwen3.8:27b-mtp-q8_0 | 4 | 1/7 | 4/0 | 0 |
+| 2026-10-13 12:50 | 1:24 | 0/0/0 | 1/0/1 | 0/0/0 | 74,526/2,312 | einfracz / qwen3.8-27b | 5 | 1/7 | 5/0 | 0 |
 
 ## popPK records
 
@@ -27,11 +27,19 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span> | [Yuan_2024_FPDc](drugs/drug_oxedrine/pd_Yuan_2024_FPDc.md) | field potential duration ← Synephrine · direct linear effect | — | Yuan X et al., Non-invasive assessment of proarrhythmi…, Frontiers in cardiovascular… (2024) | [10.3389/fcvm.2024.1407138](https://doi.org/10.3389/fcvm.2024.1407138) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Pinckaers_2026_Vasocontractile_response_of_aorta_segments](drugs/drug_oxedrine/pd_Pinckaers_2026_Vasocontractile_response_of_aorta_segments.md) | Vasocontractile response of aorta segments ← p-synephrine · direct Emax (saturable) effect | — | Pinckaers NET et al., Potential Cardiovascular Risks of Phene…, Cardiovascular toxicology (2026) | [10.1007/s12012-026-10109-8](https://doi.org/10.1007/s12012-026-10109-8) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Pinckaers_2026_Vasocontractile_response_of_mesenteric_artery_segments](drugs/drug_oxedrine/pd_Pinckaers_2026_Vasocontractile_response_of_mesenteric_artery.md) | Vasocontractile response of mesenteric artery segments ← p-synephrine · direct Emax (saturable) effect | — | Pinckaers NET et al., Potential Cardiovascular Risks of Phene…, Cardiovascular toxicology (2026) | [10.1007/s12012-026-10109-8](https://doi.org/10.1007/s12012-026-10109-8) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Pinckaers_2026_Vasocontractile_response_of_renal_artery_segments](drugs/drug_oxedrine/pd_Pinckaers_2026_Vasocontractile_response_of_renal_artery_segm.md) | Vasocontractile response of renal artery segments ← p-synephrine · direct Emax (saturable) effect | — | Pinckaers NET et al., Potential Cardiovascular Risks of Phene…, Cardiovascular toxicology (2026) | [10.1007/s12012-026-10109-8](https://doi.org/10.1007/s12012-026-10109-8) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span> | [Yuan_2024_HR](drugs/drug_oxedrine/pd_Yuan_2024_HR.md) | beating rate ← Synephrine · direct Emax (saturable) effect | — | Yuan X et al., Non-invasive assessment of proarrhythmi…, Frontiers in cardiovascular… (2024) | [10.3389/fcvm.2024.1407138](https://doi.org/10.3389/fcvm.2024.1407138) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span> | [Yuan_2024_FPDc](drugs/drug_oxedrine/pd_Yuan_2024_FPDc.md) | corrected field potential duration ← synephrine · direct linear effect | — | Yuan X et al., Non-invasive assessment of proarrhythmi…, Frontiers in cardiovascular… (2024) | [10.3389/fcvm.2024.1407138](https://doi.org/10.3389/fcvm.2024.1407138) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Pinckaers_2026_VC](drugs/drug_oxedrine/pd_Pinckaers_2026_VC.md) | vasocontractile response ← p-synephrine · direct Emax (saturable) effect | — | Pinckaers NET et al., Potential Cardiovascular Risks of Phene…, Cardiovascular toxicology (2026) | [10.1007/s12012-026-10109-8](https://doi.org/10.1007/s12012-026-10109-8) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span> | [Yuan_2024_beating_rate](drugs/drug_oxedrine/pd_Yuan_2024_beating_rate.md) | beating rate ← synephrine · direct Emax (saturable) effect | — | Yuan X et al., Non-invasive assessment of proarrhythmi…, Frontiers in cardiovascular… (2024) | [10.3389/fcvm.2024.1407138](https://doi.org/10.3389/fcvm.2024.1407138) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span> | [Yuan_2024_contractility](drugs/drug_oxedrine/pd_Yuan_2024_contractility.md) | contractility ← synephrine · stimulation effect | — | Yuan X et al., Non-invasive assessment of proarrhythmi…, Frontiers in cardiovascular… (2024) | [10.3389/fcvm.2024.1407138](https://doi.org/10.3389/fcvm.2024.1407138) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=oxedrine).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: ADRA1A (unknown).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -42,7 +50,7 @@ _not available_
 ## Coverage
 
 - **PubMed hits:** 33 matched, 33 returned
-- **screened:** 0  ·  **relevant:** 0
+- **screened:** 1  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
@@ -55,7 +63,7 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | `Carpéné_1999.pdf` | Carpéné C et al., Selective activation of beta3-adrenocep…, Naunyn-Schmiedeberg's archi… (1999) | pd | 5 | [10.1007/pl00005357](https://doi.org/10.1007/pl00005357) | [10344530](https://www.ncbi.nlm.nih.gov/pubmed/10344530) | metadata signals extractable PD data (IC50) |
 | `Wierenga_1990.pdf` | Wierenga JM et al., Octopamine uptake and metabolism in the…, Journal of neurochemistry (1990) | pd | 4 | [10.1111/j.1471-4159.1990.tb01897.x](https://doi.org/10.1111/j.1471-4159.1990.tb01897.x) | [2105376](https://www.ncbi.nlm.nih.gov/pubmed/2105376) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-10-06T10:03:05.128445+00:00</sub>
+<sub>queue written 2026-10-13T12:49:17.257002+00:00</sub>
 
 ## Screened and excluded
 
@@ -82,7 +90,7 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | popPK | Pinckaers_2025 | irrelevant | 0 | 0 | The study focuses on phenethylamine analogues (e.g., higenamine, synephrine) and does not mention or report pharmacokinetic parameters for oxedrine. |
 | popPK | Pinckaers_2026 | irrelevant | 0 | 0 | The paper investigates the vasocontractile effects of phenethylamine analogues in rat arteries and does not mention oxedrine or report any pharmacokinetic parameters for it. |
 | popPK | Saleem_2013 | irrelevant | 0 | 0 | The study investigates the uterine contractile effects of a plant extract in mice and does not involve oxedrine or pharmacokinetic parameters. |
-| PD | Saleem_2013 | not_relevant | 0 | 0 | The paper studies Haloxylon salicornicum and its constituents (synephrine, N-methyltyramine), not oxedrine. |
+| PD | Saleem_2013 | not_relevant | 5 | 9 | The paper reports an in vitro concentration-response relationship for Haloxylon salicornicum extracts (synephrine, etc.), not for the drug 'oxedrine'. |
 | popPK | Vatsavai_2018 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of gliclazide, not oxedrine. |
 | PD | Vatsavai_2018 | not_relevant | 2 | 1 | The paper reports time-course pharmacodynamic effects (glucose reduction) and non-compartmental PK parameters, but does not provide a concentration-effect model, Emax/EC50, or any numeric PD parameters linking drug exposure to effect. |
 | popPK | Wierenga_1990 | irrelevant | 0 | 0 | The paper concerns octopamine in insect nervous systems, not oxedrine pharmacokinetics. |

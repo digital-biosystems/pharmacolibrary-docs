@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05B&quot;,&quot;href&quot;:&quot;atc/N05B.md&quot;},{&quot;label&quot;:&quot;buspirone&quot;,&quot;href&quot;:&quot;drugs/drug_buspirone/&quot;},{&quot;label&quot;:&quot;Zuideveld_2002 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Buspirone_Chen2024v2_reference&quot;,&quot;label&quot;:&quot;Chen_2024_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_buspirone/Buspirone_Chen2024v2_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Buspirone_Zhang2024_reference&quot;,&quot;label&quot;:&quot;Zhang_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_buspirone/Buspirone_Zhang2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Buspirone_Zhang2024v2_reference&quot;,&quot;label&quot;:&quot;Zhang_2024_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_buspirone/Buspirone_Zhang2024v2_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Buspirone_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_buspirone/Buspirone_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Buspirone_Zhang2025v2_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_buspirone/Buspirone_Zhang2025v2_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Buspirone_Liu2022_reference&quot;,&quot;label&quot;:&quot;Liu_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_buspirone/Buspirone_Liu2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Buspirone_Chen2024v2_reference&quot;,&quot;label&quot;:&quot;Chen_2024_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_buspirone/Buspirone_Chen2024v2_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Buspirone_Zhang2024_reference&quot;,&quot;label&quot;:&quot;Zhang_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_buspirone/Buspirone_Zhang2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Buspirone_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_buspirone/Buspirone_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Buspirone_Zhang2025v2_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_buspirone/Buspirone_Zhang2025v2_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Buspirone_Liu2022_reference&quot;,&quot;label&quot;:&quot;Liu_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_buspirone/Buspirone_Liu2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Marazziti_2002_AC_activity&quot;,&quot;label&quot;:&quot;Marazziti_2002 \u00b7 AC activity&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_buspirone/pd_Marazziti_2002_AC_activity.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -19,34 +19,34 @@
 
 ### Reviewer guidance
 
-**Only clearance was extracted — no volume.**
+**This paper's disposition core is incomplete.**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — buspirone: CLm/F 13.1 ml/min, t1/2z 25 min.
+A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Chen_2024, Liu_2022) cannot stand in for this paper's evidence. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — buspirone: CL 13.1 ml/min, t1/2z 25 min, V 18.3 L/kg, kabs 0.01 /h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has buspirone, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> **Dose compound ≠ measured compound:** dosed `buspirone`, measured `1-PP`.
-
 ## Citation
 Zuideveld KP et al., Pharmacokinetic-pharmacodynamic modelin…, The Journal of pharmacology… (2002)
   ·  DOI: [10.1124/jpet.102.036798](https://doi.org/10.1124/jpet.102.036798)
 
-<div class="pk-model-meta" hidden drug="buspirone" model-id="Buspirone_Zuideveld2002_reference" status="needs_review" stale="false" population="rats" measured-compound="1-PP" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="buspirone" model-id="Buspirone_Zuideveld2002_reference" status="needs_review" stale="false" population="rats" measured-compound="buspirone" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
-**Parameters:** 2 extracted.
+**Parameters:** 4 extracted.
 
-**Parameterization:** CLm/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** mechanistic.
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| clearance | `Q351` · CLm/F | 13.1 | ml/min | 2.1833333333333332e-07 | [ml] / [min] | not captured | exact (1.0) | Zuideveld_2002:abstract, Zuideveld_2002:abstract | — | not captured |
+| clearance | `Q22` · CL | 13.1 | ml/min | 2.1833333333333332e-07 | [ml] / [min] | not captured | exact (1.0) | Zuideveld_2002:abstract, Zuideveld_2002:abstract | — | not captured |
 | terminal elimination half-life | `Q57` · t1/2z | 25 | min | 1500.0 | [min] | not captured | llm (0.6) | Zuideveld_2002:abstract, Zuideveld_2002:abstract | — | not captured |
+| volume of distribution | `Q61` · V | 18.3 | L/kg | 1.281 | L | not captured | review_gapfill (0.7) | Liu_2022:review | — | not captured |
+| Ka | `Q49` · kabs | 0.01 | /h | 2.777777777777778e-06 | 1/h | not captured | review_gapfill (0.7) | Chen_2024:review | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -57,12 +57,16 @@ Zuideveld KP et al., Pharmacokinetic-pharmacodynamic modelin…, The Journal of 
 
 **Interpretation flags:**
 - dropped PD-category row 'potency' → Q321 (EC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Zuideveld_2002:abstract', 'Zuideveld_2002:abstract'])
-- metabolite 1-pp: Q22→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=1-PP
-- template fit: none — other model — not a compartmental parent–metabolite model
-- row roles (LLM): model_class=other; 3/3 row label(s) assigned, 2 linked by role; re-tagged 1-PP→parent ×6
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=buspirone
+- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
+- template fit: none — noncompartmental model — not a compartmental parent–metabolite model
+- status held at route_to_review — not promoted
+- row roles (LLM): model_class=noncompartmental; 3/3 row label(s) assigned, 2 linked by role; re-tagged buspirone→parent ×4, buspirone→1-(2-pyrimidinyl)-piperazine ×2
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- review gap-fill skipped: this record measures '1-PP', not buspirone — the review values are the parent's
+- gap-filled Q61 (V) from Liu_2022's review values (primary lacked it)
+- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
+- gap-filled Q49 (kabs) from Chen_2024's review values (primary lacked it)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Zuideveld_2002_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
@@ -101,10 +105,14 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q351 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Zuideveld_2002:abstract', 'Zuideveld_2002:abstract'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Zuideveld_2002:abstract', 'Zuideveld_2002:abstract'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Chen_2024:review'] |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Zuideveld_2002:abstract', 'Zuideveld_2002:abstract'] |
-| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Liu_2022:review'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 13.1 | not captured | not captured | ['Zuideveld_2002:abstract', 'Zuideveld_2002:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.786 L/h | not captured | not captured | ['Zuideveld_2002:abstract', 'Zuideveld_2002:abstract'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 1.28e+03 L | not captured | not captured | ['Liu_2022:review'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -113,7 +121,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_buspirone/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Zuideveld_2002` / `Zuideveld_2002::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_buspirone/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Zuideveld_2002` / `Zuideveld_2002::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -139,4 +147,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 18:42 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 22:17 UTC</sub>

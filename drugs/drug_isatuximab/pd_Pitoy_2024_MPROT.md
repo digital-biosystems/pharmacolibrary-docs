@@ -1,8 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;isatuximab&quot;,&quot;href&quot;:&quot;drugs/drug_isatuximab/&quot;},{&quot;label&quot;:&quot;Pitoy_2024 \u00b7 PD serum M-protein level&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Isatuximab_Fau2020_reference&quot;,&quot;label&quot;:&quot;Fau_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_isatuximab/Isatuximab_Fau2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;isatuximab&quot;,&quot;href&quot;:&quot;drugs/drug_isatuximab/&quot;},{&quot;label&quot;:&quot;Pitoy_2024 \u00b7 PD Serum M-protein&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# serum M-protein level — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed</span>
+# Serum M-protein — PD  <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -14,19 +13,19 @@
 
 ## Record summary
 
-**As extracted:** Isatuximab (concentrations from the PK model of Brillac_2025::final) drives serum M-protein level (in g.L–1): direct Emax (saturable) effect.
+**As extracted:** Isatuximab, Pomalidomide, Dexamethasone drive Serum M-protein (in g.L−1): disease-progression model.
 
 **Model:** No model was generated from this record.
 
-> The record links isatuximab concentration (mol.L−1) to serum M-protein (MPROT; g.L−1), but the paper excerpts do not state the PD mechanism. Reported values are EC50 0.516 mol.L−1, kg 0.003 days−1, ks 0.017 L.mol−1.days−1, R 0.015 days−1, and M0 25.6 g.L−1.
+> Isatuximab, Pomalidomide, and Dexamethasone concentrations inhibit the elimination of Serum M-protein (MPROT) through an additive disease progression model with a baseline M0 of 25.6 g.L−1 and production/elimination rates ks of 0.017 L.mol–1.days–1, R of 0.015 days−1, and kg of 0.003 days−1. The inhibition is characterized by an EC50 of 0.516 mol.L–1, with specific rate constants k Dex of 9.35 and k Pom of 5.52, though the paper excerpts do not explicitly detail the mechanistic basis of this specific inhibition.
 >
-> <sub>Source-based summary by gpt-6-luna from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Pitoy_2024`
-- **model family:** `emax`
-- **driver:** `cited_pk`
+- **model family:** `disease_progression`
+- **driver:** `not_resolved`
 - **tier:** population
-- **effect:** stimulation/proportional
+- **effect:** inhibition/additive
 
 ## Citation
 Pitoy A et al., Isatuximab-dexamethasone-pomalidomide c…, CPT: pharmacometrics & syst… (2024)
@@ -35,12 +34,13 @@ Pitoy A et al., Isatuximab-dexamethasone-pomalidomide c…, CPT: pharmacometrics
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | M 0 | `Q324` · not captured | 25.6 | g.L–1 | not captured | llm (not captured) | Pitoy_2024:pdv3 |
-| — | kg | `Q100` · not captured | 0.003 | days−1 | not captured | nil (not captured) | Pitoy_2024:pdv3 |
-| — | ks | `Q100` · not captured | 0.017 | L.mol–1.days–1 | not captured | nil (not captured) | Pitoy_2024:pdv3 |
-| — | R | `Q100` · not captured | 0.015 | days−1 | not captured | nil (not captured) | Pitoy_2024:pdv3 |
+| PD (effect) | M0 | `Q324` · not captured | 25.6 | g.L−1 | not captured | llm (not captured) | Pitoy_2024:pdv3 |
+| PD (effect) | kg | `Q340` · not captured | 0.003 | days−1 | not captured | llm (not captured) | Pitoy_2024:pdv3 |
+| PD (effect) | ks | `Q334` · not captured | 0.017 | L.mol–1.days–1 | not captured | llm (not captured) | Pitoy_2024:pdv3 |
+| PD (effect) | R | `Q337` · not captured | 0.015 | days−1 | not captured | llm (not captured) | Pitoy_2024:pdv3 |
 | PD (effect) | EC50 | `Q321` · not captured | 0.516 | mol.L–1 | not captured | llm (not captured) | Pitoy_2024:pdv3 |
-| variability | Interindividual coefficient of variation in % (EC50) | `Q312` · not captured | 2.77 | % | not captured | llm (not captured) | Pitoy_2024:pdv3 |
+| PD (effect) | k Dex | `Q335` · not captured | 9.35 | not captured | not captured | llm (not captured) | Pitoy_2024:pdv3 |
+| PD (effect) | k Pom | `Q335` · not captured | 5.52 | not captured | not captured | llm (not captured) | Pitoy_2024:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>

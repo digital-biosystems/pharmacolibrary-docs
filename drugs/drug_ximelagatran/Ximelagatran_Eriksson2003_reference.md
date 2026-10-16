@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;ximelagatran&quot;,&quot;href&quot;:&quot;drugs/drug_ximelagatran/&quot;},{&quot;label&quot;:&quot;Eriksson_2003 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ximelagatran_Eriksson2003_reference&quot;,&quot;label&quot;:&quot;Eriksson_2003_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ximelagatran/Ximelagatran_Eriksson2003_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ximelagatran_Eriksson2003_reference&quot;,&quot;label&quot;:&quot;Eriksson_2003_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ximelagatran/Ximelagatran_Eriksson2003_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ximelagatran — `Ximelagatran_Eriksson2003_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25), gpt-oss:120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25), gpt-oss:120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -17,37 +17,35 @@
 
 ### Reviewer guidance
 
-**The record was rejected because it models melagatran kinetics using abstract-only summary statistics and invented absorption parameters.**
+**Ka use library defaults, not estimates from this paper; t6_deviations.**
 
-The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. The model builder defaulted the absorption rate constant and lag time, which were not reported in the source. The second reader disagreed on the primary analyte and parameterization, identifying the record as mechanistic rather than apparent. Extracted — melagatran: CLm/F 5.3 L/h, Fab 23 %, V 15.5 L; ximelagatran: CL 22.9 L/h, V/F 159 L.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is ximelagatran's own; they describe melagatran. Extracted — melagatran: CLm/F 5.3 L/h, Fab 23 %, V 15.5 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has melagatran, ximelagatran, the second reading melagatran (SC) and ximelagatran (PO); it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
-> **Dose compound ≠ measured compound:** dosed `melagatran, ximelagatran`, measured `melagatran`.
+> **Dose compound ≠ measured compound:** dosed `ximelagatran`, measured `melagatran`.
 
 ## Citation
 Eriksson UG et al., Pharmacokinetics of melagatran and the…, Clinical pharmacokinetics (2003)
   ·  DOI: [10.2165/00003088-200342070-00006](https://doi.org/10.2165/00003088-200342070-00006)
 
-<div class="pk-model-meta" hidden drug="ximelagatran" model-id="Ximelagatran_Eriksson2003_reference" status="rejected" stale="false" population="orthopaedic surgery patients" measured-compound="melagatran" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="ximelagatran" model-id="Ximelagatran_Eriksson2003_reference" status="needs_review" stale="false" population="orthopaedic surgery patients" measured-compound="melagatran" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 5 extracted.
+**Parameters:** 3 extracted.
 
-**Parameterization:** CLm/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** CLm/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| median population clearance (creatinine clearance 70 mL/min) ... subcutaneous | `Q351` · CLm/F | 5.3 | L/h | 1.4722222222222223e-06 | [l] / [h] | not captured | exact (1.0) | Eriksson_2003:abstract | — | not captured |
-| median population clearance (creatinine clearance 70 mL/min) ... oral | `Q22` · CL | 22.9 | L/h | 6.361111111111111e-06 | [l] / [h] | not captured | exact (1.0) | Eriksson_2003:abstract | — | not captured |
-| bioavailability of melagatran after oral ximelagatran relative to subcutaneous melagatran | `Q40` · Fab | 23 | % | not captured | not captured | not captured | llm_confirmed (0.6) | Eriksson_2003:abstract | — | not captured |
-| median population estimates ... subcutaneous | `Q61` · V | 15.5 | L | 0.0155 | [l] | not captured | exact (1.0) | Eriksson_2003:abstract | — | not captured |
-| median population estimates ... oral | `Q76` · V/F | 159 | L | 0.159 | [l] | not captured | llm (0.6) | Eriksson_2003:abstract | — | not captured |
+| The median population clearance (creatinine clearance 70 mL/min) was | `Q351` · CLm/F | 5.3 | L/h | 1.4722222222222223e-06 | [l] / [h] | not captured | exact (1.0) | Eriksson_2003:abstract, Eriksson_2003:abstract | — | not captured |
+| The bioavailability of melagatran after oral ximelagatran relative to subcutaneous melagatran was | `Q40` · Fab | 23 | % | not captured | not captured | not captured | llm_confirmed (0.6) | Eriksson_2003:abstract | — | not captured |
+| For a patient with a bodyweight of 75kg, the median population estimates were | `Q61` · V | 15.5 | L | 0.0155 | [l] | not captured | exact (1.0) | Eriksson_2003:abstract, Eriksson_2003:abstract | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -64,12 +62,13 @@ Eriksson UG et al., Pharmacokinetics of melagatran and the…, Clinical pharmaco
 
 **Interpretation flags:**
 - metabolite melagatran: Q22→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
-- metabolite volume: 'median population estimates ... subcutaneous' Q63→Q61 for melagatran — it is 1-compartment, so its central volume is its only volume
+- metabolite volume: 'For a patient with a bodyweight of 75kg, the median population estimates were' Q63→Q61 for melagatran — it is 1-compartment, so its central volume is its only volume
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=melagatran
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- template fit: PK_3M_9C — formed from central; parent 1, metabolites [1]
+- template fit: none — only the metabolite is modelled — no parent compartment
 - status held at route_to_review — not promoted
-- row roles (LLM): model_class=compartmental; 5/5 row label(s) assigned, 4 linked by role; re-tagged melagatran→ximelagatran ×2
+- row roles (LLM): model_class=compartmental; 3/3 row label(s) assigned, 4 linked by role
+- molar mass: none found for 'melagatran' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - review gap-fill skipped: this record measures 'melagatran', not ximelagatran — the review values are the parent's
 
@@ -124,28 +123,24 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Eriksson_2003:abstract'] |
-| C5_dimension_Q351 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Eriksson_2003:abstract'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Eriksson_2003:abstract'] |
-| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Eriksson_2003:abstract'] |
+| C5_dimension_Q351 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Eriksson_2003:abstract', 'Eriksson_2003:abstract'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Eriksson_2003:abstract', 'Eriksson_2003:abstract'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 22.9 L/h | not captured | not captured | ['Eriksson_2003:abstract'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 15.5 L | not captured | not captured | ['Eriksson_2003:abstract'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 159 L | not captured | not captured | ['Eriksson_2003:abstract'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 15.5 L | not captured | not captured | ['Eriksson_2003:abstract', 'Eriksson_2003:abstract'] |
 
 **Reviewer per-scenario checks:**
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
-| T0_analyte_identity | not captured | fail | ximelagatran (or metabolite) | median population clearance (creatinine clearance 70 mL/min) ... oral | not captured | disposition label(s) name a biomarker, not ximelagatran: 'median population clearance (creatinine clearance 70 mL/min) ... oral' · the biomarker kinetics are in the PD record(s) Eriksson_2003::APTT |
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_output_variable | not captured | pass | C_central (measured=melagatran) | central.C | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
+| T3_param_coverage | not captured | pass | 1 scholar param(s) emitted or defaulted | 1 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable; invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
 
@@ -156,17 +151,28 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ximelagatran/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Eriksson_2003` / `Eriksson_2003::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ximelagatran/models/modelica/Ximelagatran_Eriksson2003_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ximelagatran/models/modelica/Ximelagatran_Eriksson2003_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ximelagatran/models/modelica/Ximelagatran_Eriksson2003_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ximelagatran/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Eriksson_2003` / `Eriksson_2003::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ximelagatran/models/modelica/Ximelagatran_Eriksson2003_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ximelagatran/models/modelica/Ximelagatran_Eriksson2003_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ximelagatran/models/modelica/Ximelagatran_Eriksson2003_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ximelagatran/Ximelagatran_Eriksson2003_reference/Ximelagatran_Eriksson2003_reference_modelica.zip" download>Ximelagatran_Eriksson2003_reference_modelica.zip</a> <span class="pk-size">(5.3 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_ximelagatran/Ximelagatran_Eriksson2003_reference/Ximelagatran_Eriksson2003_reference_fmi.zip" download>Ximelagatran_Eriksson2003_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_ximelagatran/Ximelagatran_Eriksson2003_reference/Ximelagatran_Eriksson2003_reference_matlab.zip" download>Ximelagatran_Eriksson2003_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_ximelagatran/Ximelagatran_Eriksson2003_reference/Ximelagatran_Eriksson2003_reference_matlab_simbio.zip" download>Ximelagatran_Eriksson2003_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_ximelagatran/Ximelagatran_Eriksson2003_reference/Ximelagatran_Eriksson2003_reference_sbml.zip" download>Ximelagatran_Eriksson2003_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_ximelagatran/Ximelagatran_Eriksson2003_reference/Ximelagatran_Eriksson2003_reference_cellml.zip" download>Ximelagatran_Eriksson2003_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+</tbody></table>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_ximelagatran/Ximelagatran_Eriksson2003_reference/Ximelagatran_Eriksson2003_reference.svg" alt="Ximelagatran_Eriksson2003_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -179,4 +185,4 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 17:56 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 19:04 UTC</sub>

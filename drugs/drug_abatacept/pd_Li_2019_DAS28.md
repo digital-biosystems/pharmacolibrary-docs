@@ -13,17 +13,17 @@
 
 ## Record summary
 
-**As extracted:** Abatacept (concentrations from the PK model of Emery_2025) drives Disease Activity Score in 28 joints: direct Emax (saturable) effect.
+**As extracted:** Abatacept (concentrations from this paper's PK model) drives Disease Activity Score in 28 joints: direct Emax (saturable) effect.
 
 **Model:** No model was generated from this record.
 
-> Abatacept Cminss (μg/mL) acts on the DAS28 score via an additive inhibitory Emax model where exposure determines the magnitude of response (EC50 = 6.82 μg/mL, Emax,aba = 2.15) and time determines the response onset (T50 = 63.2 days), with a baseline DAS28 of 6.22. The model includes a separate placebo response component (Emax,pbo = 1.97) that is independent of exposure but correlated with baseline disease severity.
+> A nonlinear Emax model describes abatacept steady-state trough concentration (Cminss) as directly inhibiting the reduction of the DAS28 score, where the concentration determines the magnitude of the maximal drug effect (Emax,aba = 2.15, EC50 = 6.82 μg/mL) while the time to half-maximal response (T50 = 63.2 days) is independent of exposure. The model further accounts for a baseline DAS28 (E0 = 6.22) and a non-drug placebo effect (Emax,pbo = 1.97) in the additive calculation of the observed score.
 >
 > <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Li_2019`
 - **model family:** `emax`
-- **driver:** `cited_pk`
+- **driver:** `pk_record`
 - **tier:** population
 - **effect:** inhibition/additive
 
@@ -34,12 +34,12 @@ Li X et al., Population Pharmacokinetics and Exposur…, Journal of clinical pha
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | E0 | `Q324` · not captured | 6.22 | not captured | not captured | llm (not captured) | Li_2019:pdv3 |
-| PD (effect) | Emax,pbo | `Q341` · not captured | 1.97 | not captured | not captured | llm (not captured) | Li_2019:pdv3 |
-| PD (effect) | Emax,aba | `Q323` · not captured | 2.15 | not captured | not captured | llm (not captured) | Li_2019:pdv3 |
-| PD (effect) | EC50 | `Q321` · not captured | 6.82 | μg/mL | not captured | llm (not captured) | Li_2019:pdv3 |
+| PD (effect) | E0 | `Q324` · not captured | 6.22 | – | not captured | llm (not captured) | Li_2019:pdv3 |
+| PD (effect) | Emax,pbo | `Q341` · not captured | 1.97 | – | not captured | llm (not captured) | Li_2019:pdv3 |
 | — | T50 | `Q100` · not captured | 63.2 | day | not captured | nil (not captured) | Li_2019:pdv3 |
-| variability | ZEmax | `Q312` · not captured | 1.20 | not captured | not captured | llm (not captured) | Li_2019:pdv3 |
+| PD (effect) | Emax,aba | `Q323` · not captured | 2.15 | – | not captured | llm (not captured) | Li_2019:pdv3 |
+| PD (effect) | EC50 | `Q321` · not captured | 6.82 | μg/mL | not captured | llm (not captured) | Li_2019:pdv3 |
+| variability | ZEmax | `Q312` · not captured | 1.44 | – | not captured | llm (not captured) | Li_2019:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>

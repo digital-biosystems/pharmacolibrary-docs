@@ -18,9 +18,9 @@
 
 **Model:** No model was generated from this record.
 
-> The record describes an additive Emax model where omecamtiv mecarbil concentrations (ng/mL) stimulate systolic ejection time (milliseconds) with a maximum effect (Emax) of 137 milliseconds. The paper does not provide the full text or specify the mechanism, potency (e.g., EC50), or rate parameters.
+> Omecamtiv mecarbil plasma concentrations act on systolic ejection time (SET) via an additive stimulation model with a stated Emax of 137 milliseconds. The specific mechanism of action and other potency or rate parameters are not described in the provided excerpts.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Vu_2015`
 - **model family:** `emax`

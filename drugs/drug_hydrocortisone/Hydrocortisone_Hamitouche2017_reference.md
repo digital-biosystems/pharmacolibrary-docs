@@ -4,7 +4,7 @@
 
 # hydrocortisone — `Hydrocortisone_Hamitouche2017_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125), gpt-oss:120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25), gpt-oss:120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -20,7 +20,7 @@
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is hydrocortisone's own; they describe fludrocortisone, hydrocortisone. Extracted — fludrocortisone, hydrocortisone: t1/2z 1.4 h, CL 40.8 L/h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has fludrocortisone, hydrocortisone, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has fludrocortisone, hydrocortisone, the second reading fludrocortisone and hydrocortisone; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -66,24 +66,23 @@ Hamitouche N et al., Population Pharmacokinetic-Pharmacodyna…, The AAPS journa
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
-Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.125 (1/8 fields) | 7 |
+| `gpt-oss-120b` | not confirmed | 0.25 (2/8 fields) | 6 |
 | `gpt-oss:120b` | not confirmed | 0.25 (2/8 fields) | 6 |
 
-<details><summary>13 field discrepancies</summary>
+<details><summary>12 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.links` | [] | [['', '', '']] | mismatch |
 | `gpt-oss-120b` | `parameters[clearance]` | 40.8 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[clearance]` | not captured | 40.8 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[mean plasma half-life]` | 1.4 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[mean plasma half-life]` | not captured | 1.40 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | fludrocortisone, hydrocortisone | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | fludrocortisone, hydrocortisone | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[mean plasma half-life]` | not captured | 1.4 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | fludrocortisone, hydrocortisone | fludrocortisone and hydrocortisone | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | fludrocortisone, hydrocortisone | hydrocortisone | mismatch |
 | `gpt-oss:120b` | `parameters[clearance]` | 40.8 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[clearance]` | not captured | 40.8 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[mean plasma half-life]` | 1.4 | not captured | only_one_extracted |
@@ -119,7 +118,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_hydrocortisone/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Hamitouche_2017` / `Hamitouche_2017::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_hydrocortisone/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Hamitouche_2017` / `Hamitouche_2017::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

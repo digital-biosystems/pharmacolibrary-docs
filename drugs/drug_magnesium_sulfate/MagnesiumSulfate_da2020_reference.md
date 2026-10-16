@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A06A&quot;,&quot;href&quot;:&quot;atc/A06A.md&quot;},{&quot;label&quot;:&quot;magnesium sulfate&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_sulfate/&quot;},{&quot;label&quot;:&quot;da_2020 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;MagnesiumSulfate_Chuan2001_reference&quot;,&quot;label&quot;:&quot;Chuan_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_sulfate/MagnesiumSulfate_Chuan2001_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;MagnesiumSulfate_Du2019_reference&quot;,&quot;label&quot;:&quot;Du_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_sulfate/MagnesiumSulfate_Du2019_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;MagnesiumSulfate_da2020_reference&quot;,&quot;label&quot;:&quot;da_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_sulfate/MagnesiumSulfate_da2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;MagnesiumSulfate_Rui1996_reference&quot;,&quot;label&quot;:&quot;Rui_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_sulfate/MagnesiumSulfate_Rui1996_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Lu_2002_DBP&quot;,&quot;label&quot;:&quot;Lu_2002 \u00b7 DBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_sulfate/pd_Lu_2002_DBP.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Lu_2002_SBP&quot;,&quot;label&quot;:&quot;Lu_2002 \u00b7 SBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_sulfate/pd_Lu_2002_SBP.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # magnesium sulfate — `MagnesiumSulfate_da2020_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.727), gpt-oss:120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.727), gpt-oss:120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -13,37 +13,34 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 ### Reviewer guidance
 
 **Every check that could be run on this record passed.**
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has magnesium_sulfate, the second reading magnesium sulfate; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has magnesium_sulfate, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-10-04 17:46:26.941485+00:00) predates the upstream re-run (2026-10-07 19:49:09.428233+00:00). Current validate status: `rejected`.
+> **Dose compound ≠ measured compound:** dosed `magnesium_sulfate`, measured `magnesium`.
 
 ## Citation
 da Costa TX et al., Population Pharmacokinetics of Magnesiu…, Drugs in R&D (2020)
   ·  DOI: [10.1007/s40268-020-00315-2](https://doi.org/10.1007/s40268-020-00315-2)
 
-<div class="pk-model-meta" hidden drug="magnesium sulfate" model-id="MagnesiumSulfate_da2020_reference" status="rejected" stale="true" population="pregnant women with preeclampsia" measured-compound="magnesium_sulfate" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="magnesium sulfate" model-id="MagnesiumSulfate_da2020_reference" status="curated_candidate" stale="false" population="pregnant women with preeclampsia" measured-compound="magnesium" parameterization="mechanistic" topology="1C"></div>
 
-**Model structure:** 2-compartment; no model was built for this record.  
-**Parameters:** 3 extracted.
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| V_pop | `Q61` · V | 13.3 | L | 0.013300000000000001 | L | 0.112 | llm (0.6) | Tab3:row1:col1, Tab3:row1:col2, Tab3:row1:col3, Tab3:row1:col5 | — | not captured |
-| CL_pop | `Q22` · CL | 1.38 | L/h | 3.833333333333333e-07 | L/h | 0.0239 | llm (0.6) | Tab3:row2:col1, Tab3:row2:col2, Tab3:row2:col3, Tab3:row2:col5 | — | not captured |
-| Beta_V_Weith_kg | `Q64` · V2 | 28 | not captured | not captured | not captured | 0.0187 | llm (0.6) | Tab3:row4:col2, Tab3:row4:col3 | — | not captured |
+| V_pop | `Q61` · V | 13.3 | L | 0.013300000000000001 | L | not captured | llm (0.6) | Tab3:row1:col1, Tab3:row1:col2 | — | not captured |
+| CL_pop | `Q22` · CL | 1.38 | L/h | 3.833333333333333e-07 | L/h | not captured | llm (0.6) | Tab3:row2:col1, Tab3:row2:col2 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -53,15 +50,19 @@ da Costa TX et al., Population Pharmacokinetics of Magnesiu…, Drugs in R&D (20
 ## Departures & gaps
 
 **Interpretation flags:**
-- column '%' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- dropped duplicate Q22 ('Beta_CL_creatinine_mg_dL', value '34.2') — already have one for this compound
-- implicit units: 'V_pop' → L (from the paper text: 'Results: The model estimate of the population CL was 1.38 L/h; for V, it was 13.3 L;')
-- implicit units: 'CL_pop' → L/h (from the paper text: 'Results: The model estimate of the population CL was 1.38 L/h; for V, it was 13.3 L;')
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=magnesium_sulfate
+- dropped duplicate Q22 ('Beta_CL_creatinine_mg_dL', value '0.0279') — already have one for this compound
+- dropped duplicate Q61 ('Beta_V_Weith_kg', value '0.0187') — already have one for this compound
+- implicit units: 'V_pop' → L (from the paper text: 'The text states: "for V, it was 13.3 L"')
+- implicit units: 'CL_pop' → L/h (from the paper text: 'The text states: "The model estimate of the population CL was 1.38 L/h"')
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=magnesium
+- molar mass: PubChem entry choice failed (JSONDecodeError)
+- molar mass: none of 2 PubChem candidate(s) is 'magnesium' (LLM) — left in mass units
+- molar mass: none found for 'magnesium' — its concentrations stay mass-only
+- review gap-fill skipped: this record measures 'magnesium', not magnesium_sulfate — the review values are the parent's
 
 **Extraction notes:**
-- unparsed cell Tab3:row3:col1 = '− 0.0814'
-- unparsed cell Tab3:row4:col1 = '+ 0.0752'
+- table Tab3: unknown_column_role
+- table Tab3: units_need_context
 - LLM selected parameter table(s) 3
 
 ## Validation
@@ -79,8 +80,8 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `parameters[beta_v_weith_kg].parameter_id` | Q64 | Q319 | mismatch |
-| `gpt-oss-120b` | `screen.dose_compound` | magnesium_sulfate | magnesium sulfate | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | magnesium_sulfate | magnesium sulfate | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | magnesium_sulfate | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | magnesium_sulfate | unknown | mismatch |
 | `gpt-oss:120b` | `screen.dose_compound` | magnesium_sulfate | unknown | mismatch |
 | `gpt-oss:120b` | `screen.primary_analyte` | magnesium_sulfate | unknown | mismatch |
 
@@ -96,16 +97,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab3:row2:col1', 'Tab3:row2:col2', 'Tab3:row2:col3', 'Tab3:row2:col5'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab3:row1:col1', 'Tab3:row1:col2', 'Tab3:row1:col3', 'Tab3:row1:col5'] |
-| C5_unit_missing_Q64 | fail | [length] ** 3 | not captured | not captured | not captured | ['Tab3:row4:col2', 'Tab3:row4:col3'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 1.38 | not captured | not captured | ['Tab3:row2:col1', 'Tab3:row2:col2', 'Tab3:row2:col3', 'Tab3:row2:col5'] |
-| C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 1.38 L/h | not captured | not captured | ['Tab3:row2:col1', 'Tab3:row2:col2', 'Tab3:row2:col3', 'Tab3:row2:col5'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 13.3 L | not captured | not captured | ['Tab3:row1:col1', 'Tab3:row1:col2', 'Tab3:row1:col3', 'Tab3:row1:col5'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab3:row2:col1', 'Tab3:row2:col2'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab3:row1:col1', 'Tab3:row1:col2'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 1.38 | not captured | not captured | ['Tab3:row2:col1', 'Tab3:row2:col2'] |
+| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 1.38 L/h | not captured | not captured | ['Tab3:row2:col1', 'Tab3:row2:col2'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 13.3 L | not captured | not captured | ['Tab3:row1:col1', 'Tab3:row1:col2'] |
 
 **Reviewer per-scenario checks:**
 
@@ -113,7 +113,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 |---|---|---|---|---|---|---|
 | T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_output_variable | not captured | pass | C_central (measured=magnesium_sulfate) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_output_variable | not captured | pass | C_central (measured=magnesium) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
@@ -125,23 +125,38 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_magnesium_sulfate/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `da_2020` / `da_2020::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_magnesium_sulfate/models/modelica/MagnesiumSulfate_da2020_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_magnesium_sulfate/models/modelica/MagnesiumSulfate_da2020_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_magnesium_sulfate/models/modelica/MagnesiumSulfate_da2020_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_magnesium_sulfate/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `da_2020` / `da_2020::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_magnesium_sulfate/models/modelica/MagnesiumSulfate_da2020_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_magnesium_sulfate/models/modelica/MagnesiumSulfate_da2020_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_magnesium_sulfate/models/modelica/MagnesiumSulfate_da2020_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_magnesium_sulfate/MagnesiumSulfate_da2020_reference/MagnesiumSulfate_da2020_reference_modelica.zip" download>MagnesiumSulfate_da2020_reference_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_magnesium_sulfate/MagnesiumSulfate_da2020_reference/MagnesiumSulfate_da2020_reference_fmi.zip" download>MagnesiumSulfate_da2020_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_magnesium_sulfate/MagnesiumSulfate_da2020_reference/MagnesiumSulfate_da2020_reference_matlab.zip" download>MagnesiumSulfate_da2020_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_magnesium_sulfate/MagnesiumSulfate_da2020_reference/MagnesiumSulfate_da2020_reference_matlab_simbio.zip" download>MagnesiumSulfate_da2020_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_magnesium_sulfate/MagnesiumSulfate_da2020_reference/MagnesiumSulfate_da2020_reference_sbml.zip" download>MagnesiumSulfate_da2020_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_magnesium_sulfate/MagnesiumSulfate_da2020_reference/MagnesiumSulfate_da2020_reference_cellml.zip" download>MagnesiumSulfate_da2020_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+</tbody></table>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_magnesium_sulfate/MagnesiumSulfate_da2020_reference/MagnesiumSulfate_da2020_reference.svg" alt="MagnesiumSulfate_da2020_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+**Administration: intravenous** — 1000 mg infusion over 10 min, single dose. Doses in the paper: 1000, 4000 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_magnesium_sulfate/MagnesiumSulfate_da2020_reference/MagnesiumSulfate_da2020_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_magnesium_sulfate/MagnesiumSulfate_da2020_reference/MagnesiumSulfate_da2020_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C` · parameters `MagnesiumSulfate_da2020_reference_params.json` · controls `MagnesiumSulfate_da2020_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 19:49 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 00:46 UTC</sub>

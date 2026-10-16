@@ -20,9 +20,9 @@
 
 **Model:** No model was generated from this record.
 
-> Rivastigmine concentrations (µmol/l, from the cited PK model) drive acetylcholinesterase inhibition; the paper excerpts provide no full text, so the PD mechanism (e.g., Emax or turnover) and potency/rate parameters are not stated.
+> The record indicates that rivastigmine concentration acts on acetylcholinesterase inhibition, but the provided excerpts do not specify the mechanism (e.g., direct inhibition vs. effect compartment) or any potency and rate parameter values.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Ndongo_2021`
 - **model family:** `unknown`

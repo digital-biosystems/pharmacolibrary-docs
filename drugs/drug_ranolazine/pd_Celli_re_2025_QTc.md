@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01E&quot;,&quot;href&quot;:&quot;atc/C01E.md&quot;},{&quot;label&quot;:&quot;ranolazine&quot;,&quot;href&quot;:&quot;drugs/drug_ranolazine/&quot;},{&quot;label&quot;:&quot;Celli\u00e8re_2025 \u00b7 PD placebo-corrected change from baseline in QTc interval duration&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01E&quot;,&quot;href&quot;:&quot;atc/C01E.md&quot;},{&quot;label&quot;:&quot;ranolazine&quot;,&quot;href&quot;:&quot;drugs/drug_ranolazine/&quot;},{&quot;label&quot;:&quot;Celli\u00e8re_2025 \u00b7 PD \u0394\u0394QTc&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# placebo-corrected change from baseline in QTc interval duration — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.714). Primary extraction retained.">cross-check: disputed</span>
+# ΔΔQTc — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.714). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -13,17 +13,17 @@
 
 ## Record summary
 
-**As extracted:** Ranolazine (measured concentrations) drives placebo-corrected change from baseline in QTc interval duration: direct linear effect.
+**As extracted:** Ranolazine drives ΔΔQTc: direct linear effect.
 
 **Model:** No model was generated from this record.
 
-> Ranolazine plasma concentration (ng/mL) directly linearly increases the placebo-corrected change from baseline in QTc interval duration (ΔΔQTc), with a slope (ϴ2) of 0.004 ms per ng/mL and a treatment intercept (ϴ1) of 2.441 ms. The paper does not describe a specific mechanistic mode of action (e.g., inhibition of potassium channels) or rate constants (e.g., ke0) for ranolazine, noting only that the linear model was not the best-fitting model in all cases.
+> The paper describes a linear regression model where the effect of ranolazine concentration (ϴ2) additively increases the mean ΔΔQTc (ϴ1 + ϴ2 * C), indicating a direct concentration-dependent prolongation of the QTc interval. The estimated treatment intercept is 2.441 ms and the concentration slope is 0.004, with the paper not specifying the units for the slope or defining an Emax.
 >
 > <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Cellière_2025`
 - **model family:** `linear`
-- **driver:** `conc_no_pk`
+- **driver:** `not_resolved`
 - **tier:** population
 - **effect:** stimulation/additive
 
@@ -34,8 +34,8 @@ Cellière G et al., Beyond the linear model in concentratio…, Journal of pharm
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| model term | Treatment/Intercept(ϴ1) | `Q900` · not captured | 2.441 | not captured | not captured | llm (not captured) | Cellière_2025:pdv3 |
-| PD (effect) | Concentration (ϴ2) | `Q335` · not captured | 0.004 | not captured | not captured | llm (not captured) | Cellière_2025:pdv3 |
+| model term | Treatment/Intercept | `Q900` · not captured | 2.441 | not captured | not captured | llm (not captured) | Cellière_2025:pdv3 |
+| PD (effect) | Concentration | `Q335` · not captured | 0.004 | not captured | not captured | llm (not captured) | Cellière_2025:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>

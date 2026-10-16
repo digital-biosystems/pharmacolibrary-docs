@@ -93,8 +93,8 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | `gpt-oss-120b` | `parameters[loading dose]` | not captured | 5.6 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[man plasma theophylline clearance]` | 0.1 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[mean steady-state plasma concentration of theophylline]` | 10 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[mean steady-state plasma concentration of theophylline]` | not captured | 10 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[plasma theophylline clearance]` | not captured | 0.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[steady-state plasma concentration of theophylline]` | not captured | 10 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[v1]` | 0.25 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[v1]` | not captured | 0.25 | only_one_extracted |
 | `gpt-oss-120b` | `screen.dose_compound` | theophylline | unknown | mismatch |
@@ -130,7 +130,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_aminophylline/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Loughnan_1976` / `Loughnan_1976::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_aminophylline/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Loughnan_1976` / `Loughnan_1976::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

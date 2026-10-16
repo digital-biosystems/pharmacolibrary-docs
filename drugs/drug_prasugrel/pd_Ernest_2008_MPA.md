@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;prasugrel&quot;,&quot;href&quot;:&quot;drugs/drug_prasugrel/&quot;},{&quot;label&quot;:&quot;Erne \u00b7 PD maximal platelet aggregation&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;prasugrel&quot;,&quot;href&quot;:&quot;drugs/drug_prasugrel/&quot;},{&quot;label&quot;:&quot;Ernest_2008 \u00b7 PD maximal platelet aggregation&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# maximal platelet aggregation — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
+# maximal platelet aggregation — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -13,22 +13,23 @@
 
 ## Record summary
 
-**As extracted:** Prasugrel active metabolite (concentrations from the PK model of Moser_2018) drives maximal platelet aggregation: direct sigmoid Emax (Hill) effect.
+**As extracted:** Prasugrel active metabolite drives maximal platelet aggregation: direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
 
-> The record identifies a sigmoid Emax inhibition model where the prasugrel active metabolite drives maximal platelet aggregation, but the paper excerpts are unavailable. Consequently, the specific mechanism and key potency or rate values are not provided in the available text.
+> The record describes a sigmoid Emax model where the prasugrel active metabolite inhibits maximal platelet aggregation. As no full text is available, the paper does not provide specific mechanism details or numerical values for potency or rate parameters.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
-- **paper:** `Erne`
+- **paper:** `Ernest_2008`
 - **model family:** `sigmoid_emax`
-- **driver:** `cited_pk`
+- **driver:** `not_resolved`
 - **tier:** population
 - **effect:** inhibition/unknown
 
 ## Citation
-not matched (stem Erne)
+Ernest CS et al., Population pharmacokinetics and pharmac…, Journal of pharmacokinetics… (2008)
+  ·  DOI: [10.1007/s10928-008-9103-7](https://doi.org/10.1007/s10928-008-9103-7)
 
 ## Parameters
 _No resolved parameters._
@@ -58,19 +59,9 @@ Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-</tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

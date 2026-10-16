@@ -18,9 +18,9 @@
 
 **Model:** No model was generated from this record.
 
-> Ciclesonide dose acts on the binary URTI response via an Emax-type model; the paper excerpts provide no mechanism, effect direction, or parameter values (Imax, ED50/IC50, gamma), so these cannot be stated.
+> The model describes the effect of ciclesonide dose on the binary response of upper respiratory tract infection using an Emax model, but the paper does not specify the mechanism or provide key potency and rate values.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Pu_2026`
 - **model family:** `emax`

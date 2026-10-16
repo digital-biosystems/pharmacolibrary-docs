@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;perampanel&quot;,&quot;href&quot;:&quot;drugs/drug_perampanel/&quot;},{&quot;label&quot;:&quot;Silva_2023 \u00b7 final&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Perampanel_Jing2023_reference&quot;,&quot;label&quot;:&quot;Jing_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_perampanel/Perampanel_Jing2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Perampanel_Silva2023_base&quot;,&quot;label&quot;:&quot;Silva_2023_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_perampanel/Perampanel_Silva2023_base.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Perampanel_Silva2023_final&quot;,&quot;label&quot;:&quot;Silva_2023_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_perampanel/Perampanel_Silva2023_final.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Perampanel_Yu2025_reference&quot;,&quot;label&quot;:&quot;Yu_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_perampanel/Perampanel_Yu2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Perampanel_Silva2023_base&quot;,&quot;label&quot;:&quot;Silva_2023_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_perampanel/Perampanel_Silva2023_base.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Perampanel_Silva2023_final&quot;,&quot;label&quot;:&quot;Silva_2023_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_perampanel/Perampanel_Silva2023_final.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Perampanel_Jing2023_reference&quot;,&quot;label&quot;:&quot;Jing_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_perampanel/Perampanel_Jing2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Perampanel_Yu2025_reference&quot;,&quot;label&quot;:&quot;Yu_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_perampanel/Perampanel_Yu2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -37,8 +37,8 @@ Silva R et al., Population Pharmacokinetic Analysis of…, Pharmaceutics (2023)
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| TVCL (L/h) | `Q22` · CL | 0.419 | L/h | 1.1638888888888888e-07 | [l] / [h] | not captured | tv_prefix (0.95) | pharmaceutics-15-01704-t002:row2:col3, pharmaceutics-15-01704-t002:row2:col4 | — | not captured |
-| TVV (L) | `Q61` · V | 29.50 | L | 0.029500000000000002 | [l] | not captured | tv_prefix (0.95) | pharmaceutics-15-01704-t002:row3:col3, pharmaceutics-15-01704-t002:row3:col4 | — | not captured |
+| TVCL (L/h) | `Q22` · CL | 5.56 | L/h | 1.5444444444444444e-06 | [l] / [h] | 0.419 | tv_prefix (0.95) | pharmaceutics-15-01704-t002:row2:col4 | — | not captured |
+| TVV (L) | `Q61` · V | 6.41 | L | 0.00641 | [l] | 29.50 | tv_prefix (0.95) | pharmaceutics-15-01704-t002:row3:col4 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -48,16 +48,17 @@ Silva R et al., Population Pharmacokinetic Analysis of…, Pharmaceutics (2023)
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'INDCL' — extend the ontology if this is a real PK parameter (source ['pharmaceutics-15-01704-t002:row4:col3', 'pharmaceutics-15-01704-t002:row4:col4'])
-- dropped unlinked row (NIL): 'BMIV' — extend the ontology if this is a real PK parameter (source ['pharmaceutics-15-01704-t002:row5:col3', 'pharmaceutics-15-01704-t002:row5:col4'])
-- dropped unlinked row (NIL): 'IPVCL (%)' — extend the ontology if this is a real PK parameter (source ['pharmaceutics-15-01704-t002:row6:col3', 'pharmaceutics-15-01704-t002:row6:col4'])
-- dropped unlinked row (NIL): 'REproportional (%)' — extend the ontology if this is a real PK parameter (source ['pharmaceutics-15-01704-t002:row7:col3', 'pharmaceutics-15-01704-t002:row7:col4'])
+- dropped unlinked row (NIL): 'INDCL' — extend the ontology if this is a real PK parameter (source ['pharmaceutics-15-01704-t002:row4:col4'])
+- dropped duplicate Q61 ('BMIV', value '1.37') — already have one for this compound
+- routed 'IPVCL (%)' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
+- routed 'REproportional (%)' → Q316 (prop_error) to residual_error — variability estimate, not a structural parameter
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=perampanel
-- model-stage split: 'final model' is the final model of Silva_2023 (paper reports 2 stages: base model, final model); same population, different model-building step
+- model-stage split: 'final model / median' is the final model of Silva_2023 (paper reports 2 stages: base model / estimate, final model / median); same population, different model-building step
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
+- table pharmaceutics-15-01704-t002: ragged_grid
 - LLM selected parameter table(s) 2
 
 ## Validation
@@ -84,12 +85,12 @@ _All readers agree on the compared fields of this record._
 | C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['pharmaceutics-15-01704-t002:row2:col3', 'pharmaceutics-15-01704-t002:row2:col4'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['pharmaceutics-15-01704-t002:row3:col3', 'pharmaceutics-15-01704-t002:row3:col4'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.419 | not captured | not captured | ['pharmaceutics-15-01704-t002:row2:col3', 'pharmaceutics-15-01704-t002:row2:col4'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['pharmaceutics-15-01704-t002:row2:col4'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['pharmaceutics-15-01704-t002:row3:col4'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 5.56 | not captured | not captured | ['pharmaceutics-15-01704-t002:row2:col4'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.419 L/h | not captured | not captured | ['pharmaceutics-15-01704-t002:row2:col3', 'pharmaceutics-15-01704-t002:row2:col4'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 29.5 L | not captured | not captured | ['pharmaceutics-15-01704-t002:row3:col3', 'pharmaceutics-15-01704-t002:row3:col4'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 5.56 L/h | not captured | not captured | ['pharmaceutics-15-01704-t002:row2:col4'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 6.41 L | not captured | not captured | ['pharmaceutics-15-01704-t002:row3:col4'] |
 
 **Reviewer per-scenario checks:**
 
@@ -109,10 +110,10 @@ _All readers agree on the compared fields of this record._
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_perampanel/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Silva_2023` / `Silva_2023::final`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_perampanel/models/modelica/Perampanel_Silva2023_final.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_perampanel/models/modelica/Perampanel_Silva2023_final.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_perampanel/models/modelica/Perampanel_Silva2023_final.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_perampanel/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Silva_2023` / `Silva_2023::final`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_perampanel/models/modelica/Perampanel_Silva2023_final.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_perampanel/models/modelica/Perampanel_Silva2023_final.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_perampanel/models/modelica/Perampanel_Silva2023_final.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -121,7 +122,7 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_perampanel/Perampanel_Silva2023_final/Perampanel_Silva2023_final_modelica.zip" download>Perampanel_Silva2023_final_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_perampanel/Perampanel_Silva2023_final/Perampanel_Silva2023_final_modelica.zip" download>Perampanel_Silva2023_final_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_perampanel/Perampanel_Silva2023_final/Perampanel_Silva2023_final_fmi.zip" download>Perampanel_Silva2023_final_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_perampanel/Perampanel_Silva2023_final/Perampanel_Silva2023_final_matlab.zip" download>Perampanel_Silva2023_final_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_perampanel/Perampanel_Silva2023_final/Perampanel_Silva2023_final_matlab_simbio.zip" download>Perampanel_Silva2023_final_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
@@ -130,11 +131,11 @@ _All readers agree on the compared fields of this record._
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_perampanel/Perampanel_Silva2023_final/Perampanel_Silva2023_final.svg" alt="Perampanel_Silva2023_final diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_perampanel/Perampanel_Silva2023_final/Perampanel_Silva2023_final.svg" alt="Perampanel_Silva2023_final diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 2 mg infusion over 10 min, single dose. Doses in the paper: 2, 4, 6, 8, 10, 12 mg.
+**Administration: intravenous** — 2 mg infusion over 10 min, single dose. Doses in the paper: 2, 4, 8 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_perampanel/Perampanel_Silva2023_final/Perampanel_Silva2023_final_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_perampanel/Perampanel_Silva2023_final/Perampanel_Silva2023_final_sim_controls.json"></dbs-fmusim>
 
@@ -143,4 +144,4 @@ _All readers agree on the compared fields of this record._
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 07:16 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 19:36 UTC</sub>

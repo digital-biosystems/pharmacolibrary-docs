@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;s-atenolol&quot;,&quot;href&quot;:&quot;drugs/drug_s_atenolol/&quot;},{&quot;label&quot;:&quot;Kir_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SAtenolol_Buck1989_reference&quot;,&quot;label&quot;:&quot;Buck_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_s_atenolol/SAtenolol_Buck1989_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SAtenolol_Buck1989_reference&quot;,&quot;label&quot;:&quot;Buck_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_s_atenolol/SAtenolol_Buck1989_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # s-atenolol — `SAtenolol_Kir2025_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.833), gpt-oss:120b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.833), gpt-oss:120b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -27,13 +27,11 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the lin
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-29 08:52:10.666162+00:00) predates the upstream re-run (2026-10-07 01:01:45.973263+00:00). Current validate status: `needs_review`.
-
 ## Citation
 Kir F et al., Minimal Physiologically-Based Pharmacok…, European journal of drug me… (2025)
   ·  DOI: [10.1007/s13318-025-00943-6](https://doi.org/10.1007/s13318-025-00943-6)
 
-<div class="pk-model-meta" hidden drug="s-atenolol" model-id="SAtenolol_Kir2025_reference" status="needs_review" stale="true" population="malnourished and non-malnourished rats" measured-compound="atenolol" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="s-atenolol" model-id="SAtenolol_Kir2025_reference" status="needs_review" stale="false" population="malnourished and non-malnourished rats" measured-compound="atenolol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.
@@ -56,14 +54,14 @@ Kir F et al., Minimal Physiologically-Based Pharmacok…, European journal of dr
 
 **Interpretation flags:**
 - salvaged Q22 ('CL (mL/min/kg)'=16.04) from results prose — parameter table was unreadable
-- implicit units: 'CL (mL/min/kg)' → mL/min/kg (from the paper text: "The table row explicitly lists the parameter as 'CL (mL/min/kg)'.")
+- implicit units: 'CL (mL/min/kg)' → mL/min/kg (from the paper text: "The table explicitly lists the parameter as 'CL (mL/min/kg)' with the description 'Total clearance'.")
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=atenolol
 - structure disagreement: deterministic 1C vs LLM 3C — review compartment count
 - review gap-fill skipped: this record measures 'atenolol', not s_atenolol — the review values are the parent's
 
 **Extraction notes:**
-- final table tab_0: grid unusable → re-running vision table extraction for Kir_2025
-- final table tab_0: no readable grid (GROBID mangled)
+- table tab_0: no_numeric_grid
+- final table tab_0: no supported point estimates; targeted recovery unresolved
 
 ## Validation
 
@@ -113,7 +111,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_s_atenolol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kir_2025` / `Kir_2025::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_s_atenolol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kir_2025` / `Kir_2025::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -139,4 +137,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 01:01 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 03:42 UTC</sub>

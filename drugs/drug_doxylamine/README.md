@@ -28,9 +28,21 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Tzeng_2018_nociceptive_blockade](drugs/drug_doxylamine/pd_Tzeng_2018_nociceptive_blockade.md) | nociceptive blockade ← doxylamine · stimulation effect | — | Tzeng JI et al., Spinal sensory and motor blockade by in…, The Journal of pharmacy and… (2018) | [10.1111/jphp.13017](https://doi.org/10.1111/jphp.13017) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Tzeng_2018_proprioceptive_blockade](drugs/drug_doxylamine/pd_Tzeng_2018_proprioceptive_blockade.md) | proprioceptive blockade ← doxylamine · stimulation effect | — | Tzeng JI et al., Spinal sensory and motor blockade by in…, The Journal of pharmacy and… (2018) | [10.1111/jphp.13017](https://doi.org/10.1111/jphp.13017) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Tzeng_2018_spinal_motor_blockade](drugs/drug_doxylamine/pd_Tzeng_2018_spinal_motor_blockade.md) | spinal motor blockade ← doxylamine · stimulation effect | — | Tzeng JI et al., Spinal sensory and motor blockade by in…, The Journal of pharmacy and… (2018) | [10.1111/jphp.13017](https://doi.org/10.1111/jphp.13017) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Tzeng_2018_nociceptive_blockade](drugs/drug_doxylamine/pd_Tzeng_2018_nociceptive_blockade.md) | nociceptive blockade ← doxylamine · stimulation effect | — | Tzeng JI et al., Spinal sensory and motor blockade by in…, The Journal of pharmacy and… (2018) | [10.1111/jphp.13017](https://doi.org/10.1111/jphp.13017) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Tzeng_2018_proprioceptive_blockade](drugs/drug_doxylamine/pd_Tzeng_2018_proprioceptive_blockade.md) | proprioceptive blockade ← doxylamine · stimulation effect | — | Tzeng JI et al., Spinal sensory and motor blockade by in…, The Journal of pharmacy and… (2018) | [10.1111/jphp.13017](https://doi.org/10.1111/jphp.13017) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Tzeng_2018_spinal_motor_blockade](drugs/drug_doxylamine/pd_Tzeng_2018_spinal_motor_blockade.md) | spinal motor blockade ← doxylamine · stimulation effect | — | Tzeng JI et al., Spinal sensory and motor blockade by in…, The Journal of pharmacy and… (2018) | [10.1111/jphp.13017](https://doi.org/10.1111/jphp.13017) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=doxylamine).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| distribution | blood | `ALB` regulator | DrugBank actor |
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: CHRM1 (target), CYP2B (inducer), HRH1 (target), NR1I3 (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

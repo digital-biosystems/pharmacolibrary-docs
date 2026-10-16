@@ -18,14 +18,14 @@
 
 **Model:** No model was generated from this record.
 
-> The paper does not describe a pharmacodynamic mechanism (e.g., Emax, indirect response) for the effect of nivolumab on grade 3+ adverse events, stating only that Cmax1 was not a significant predictor of this endpoint. Consequently, no potency or rate parameters (such as IC50, Emax, or kout) are provided for this specific response.
+> The paper states that the mechanism for the safety exposure-response model for grade 3+ adverse events is not specified, noting that Cmax1 was not a significant predictor of this endpoint. In contrast, for grade 2+ immune-mediated AEs, higher Cmax1 was significantly associated with higher risk, with an approximate 19% increase in risk from a median Cmax1 of 58 μg/ml to the 95th percentile of 169 μg/ml.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Sanghavi_2021`
 - **model family:** `tte`
 - **driver:** `cited_pk`
-- **tier:** descriptive
+- **tier:** population
 - **effect:** unknown/unknown
 
 ## Citation

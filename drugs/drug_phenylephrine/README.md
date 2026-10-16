@@ -26,20 +26,26 @@ Phenylephrine is a decongestant and vasoconstrictor used for conditions such as 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 10:13 | 8:52 | 0/0/1 | 0/0/0 | 0/0/2 | 201,310/17,998 | ollama / qwen3.8:27b-mtp-q8_0 | 13 | 1/12 | 13/0 | 0 |
+| 2026-10-13 12:51 | 1:57 | 0/0/1 | 1/0/0 | 0/0/2 | 91,896/9,728 | einfracz / qwen3.8-27b | 13 | 1/12 | 13/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Anderson_2017_reference](drugs/drug_phenylephrine/Phenylephrine_Anderson2017_reference.md) | — | 2-compartment (no model) | 7 | Anderson BJ et al., The phenylephrine concentration-respons…, Paediatric anaesthesia (2017) | [10.1111/pan.13221](https://doi.org/10.1111/pan.13221) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.158), gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-check: disputed 1/2</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Anderson_2017_reference](drugs/drug_phenylephrine/Phenylephrine_Anderson2017_reference.md) | — | 2-compartment (no model) | 7 | Anderson BJ et al., The phenylephrine concentration-respons…, Paediatric anaesthesia (2017) | [10.1111/pan.13221](https://doi.org/10.1111/pan.13221) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Choi_2024_PE_Response](drugs/drug_phenylephrine/pd_Choi_2024_PE_Response.md) | Vasocontractile response ← phenylephrine · stimulation effect | — | Choi R et al., Optimization of resting tension for wir…, Physiological reports (2024) | [10.14814/phy2.15911](https://doi.org/10.14814/phy2.15911) |
 
 ## Pharmacogenomics (PGx)
 
 | status | gene | affects | mechanism | detail | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.25). Primary extraction retained.">cross-check: partial</span> | **ADRA1A** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | target | [Zhang_2019](drugs/drug_phenylephrine/pgx_Zhang_2019_ADRA1A_Q100.md) | Zhang Y et al., Dissecting genetic factors affecting ph…, BMC medicine (2019) | [10.1186/s12916-019-1405-7](https://doi.org/10.1186/s12916-019-1405-7) |
-| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.25). Primary extraction retained.">cross-check: partial</span> | **EDN2** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | target | [Zhang_2019](drugs/drug_phenylephrine/pgx_Zhang_2019_EDN2_Q100.md) | Zhang Y et al., Dissecting genetic factors affecting ph…, BMC medicine (2019) | [10.1186/s12916-019-1405-7](https://doi.org/10.1186/s12916-019-1405-7) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (?, agreement 0.25), gpt-oss:120b (?, agreement 0.25). Primary extraction retained.">cross-check: partial 0/2</span> | **ADRA1A** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | target | [Zhang_2019](drugs/drug_phenylephrine/pgx_Zhang_2019_ADRA1A_Q100.md) | Zhang Y et al., Dissecting genetic factors affecting ph…, BMC medicine (2019) | [10.1186/s12916-019-1405-7](https://doi.org/10.1186/s12916-019-1405-7) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (?, agreement 0.25), gpt-oss:120b (?, agreement 0.25). Primary extraction retained.">cross-check: partial 0/2</span> | **EDN2** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | target | [Zhang_2019](drugs/drug_phenylephrine/pgx_Zhang_2019_EDN2_Q100.md) | Zhang Y et al., Dissecting genetic factors affecting ph…, BMC medicine (2019) | [10.1186/s12916-019-1405-7](https://doi.org/10.1186/s12916-019-1405-7) |
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -47,6 +53,20 @@ Phenylephrine is a decongestant and vasoconstrictor used for conditions such as 
 <summary>PGx field definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=phenylephrine).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | brain | `MAOA` substrate, `MAOB` substrate | DrugBank actor |
+| metabolism | liver | `CYP1A2` inducer, `MAOA` substrate | DrugBank actor |
+| metabolism | platelet | `MAOB` substrate | DrugBank actor |
+| metabolism | small intestine | `MAOA` substrate | DrugBank actor |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: ADRA1A (target), ADRA1B (target), ADRA1D (target), DRD2 (target), EDN2 (target), SULT1A3 (substrate).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -57,7 +77,7 @@ Phenylephrine is a decongestant and vasoconstrictor used for conditions such as 
 ## Coverage
 
 - **PubMed hits:** 946 matched, 50 returned
-- **screened:** 1  ·  **relevant:** 1
+- **screened:** 9  ·  **relevant:** 1
 - **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
@@ -75,7 +95,7 @@ _7 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | `McIntyre_1996.pdf` | McIntyre RC et al., Pulmonary vascular smooth muscle contra…, The Journal of surgical res… (1996) | pd | 4 | [10.1006/jsre.1996.0100](https://doi.org/10.1006/jsre.1996.0100) | [8769962](https://www.ncbi.nlm.nih.gov/pubmed/8769962) | metadata signals extractable PD data (EC50) |
 | `Morais_2019.pdf` | Morais ICPS et al., Cardiovascular Effect of Diosgenin in O…, Journal of medicinal food (2019) | pd | 4 | [10.1089/jmf.2018.0019](https://doi.org/10.1089/jmf.2018.0019) | [30735081](https://www.ncbi.nlm.nih.gov/pubmed/30735081) | metadata signals extractable PD data (Emax) |
 
-<sub>queue written 2026-10-06T10:05:51.852690+00:00</sub>
+<sub>queue written 2026-10-13T12:50:42.544754+00:00</sub>
 
 ## Screened and excluded
 

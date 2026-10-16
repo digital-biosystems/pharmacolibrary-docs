@@ -4,7 +4,7 @@
 
 # dapagliflozin — `Dapagliflozin_Melin2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -20,7 +20,7 @@
 
 A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Kobuchi_2025) cannot stand in for this paper's evidence. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — dapagliflozin: CL/F 20.5 L/h, V/F 73.9 L, kabs 57.4 1/day.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has dapagliflozin, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has dapagliflozin, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -69,15 +69,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.286 (2/7 fields) | 5 |
+| `gpt-oss:120b` | not confirmed | 0.25 (2/8 fields) | 6 |
 
-<details><summary>5 field discrepancies</summary>
+<details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `parameters[apparent clearance]` | 20.5 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[estimated apparent clearance]` | not captured | 20.5 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[systemic exposure &gt;1.4-fold compared to a reference individual]` | not captured | 1.4 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[ka]` | 57.4 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v/f]` | 73.9 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `screen.dose_compound` | dapagliflozin | unknown | mismatch |
 | `gpt-oss:120b` | `screen.primary_analyte` | dapagliflozin | unknown | mismatch |
 
@@ -111,7 +112,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_dapagliflozin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Melin_2022` / `Melin_2022::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_dapagliflozin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Melin_2022` / `Melin_2022::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

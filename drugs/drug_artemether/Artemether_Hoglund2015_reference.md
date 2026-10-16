@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;artemether&quot;,&quot;href&quot;:&quot;drugs/drug_artemether/&quot;},{&quot;label&quot;:&quot;Hoglund_2015 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Artemether_Lohy2018_reference&quot;,&quot;label&quot;:&quot;Lohy_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_artemether/Artemether_Lohy2018_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Artemether_Lohy2018_reference&quot;,&quot;label&quot;:&quot;Lohy_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_artemether/Artemether_Lohy2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,24 +17,22 @@
 
 ### Reviewer guidance
 
-**The artemether model was rejected because the metabolite desbutyl-lumefantrine, formed from lumefantrine, has no path from the administered dose, leaving an unlinked metabolite in the structure.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record lists two metabolism links: artemether to dihydroartemisinin, and lumefantrine to desbutyl-lumefantrine. Lumefantrine is not a drug of this model (only artemether is dosed), so desbutyl-lumefantrine is an orphan metabolite with no connection to the dose. Additionally, several lumefantrine parameters carry the unit 'l' although they are dimensionless quantities (number of transit compartments = 3, bioavailability = 1, Vmax = 1); this unit could not be converted to SI, so these parameters reached the model without SI values. Extracted — lumefantrine: n_transit 3 l, Fab 1 l, Vmax 1 l; artemether: CL 168 %, kabs 0.0577 h−1, tlag 1.31 h.
+A reported unit could not be converted (n_transit, Fab and CL), so that value has no SI equivalent. Extracted — lumefantrine: n_transit 1 9.14, Fab 1 %; artemether: CL 40 %, kabs 0.0577 h−1, tlag 1.31 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of ka: this record has 0.0577, the second reading none; it also differs on 4 more fields. That field does not shape the model.
 
-<sub>reviewed by glm-5.3-flash</sub>
-
-> **Dose compound ≠ measured compound:** dosed `artemether-lumefantrine`, measured `artemether`.
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Hoglund RM et al., Artemether-lumefantrine co-administrati…, British journal of clinical… (2015)
   ·  DOI: [10.1111/bcp.12529](https://doi.org/10.1111/bcp.12529)
 
-<div class="pk-model-meta" hidden drug="artemether" model-id="Artemether_Hoglund2015_reference" status="rejected" stale="false" population="HIV-infected patients treated with antiretroviral therapy" measured-compound="artemether" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="artemether" model-id="Artemether_Hoglund2015_reference" status="rejected" stale="false" population="HIV-infected patients" measured-compound="artemether" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
-**Parameters:** 6 extracted.
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -43,11 +41,9 @@ Hoglund RM et al., Artemether-lumefantrine co-administrati…, British journal o
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Number of trans comp | `Q311` · n_transit | 3 | l | not captured | [l] | not captured | llm (0.6) | tbl3:row4:col1, Hoglund_2015_table_2:row5:col1 | — | not captured |
-| Bioavailability (%) | `Q40` · Fab | 1 | l | not captured | not captured | not captured | exact (1.0) | tbl3:row6:col1, Hoglund_2015_table_2:row7:col1 | — | not captured |
-| MMAX | `Q66` · Vmax | 1 | l | 0.001 | [l] | not captured | llm (0.6) | tbl3:row8:col1 | — | not captured |
-| MF50 | `Q900` · equation variable | 62 | not captured | not captured | not captured | not captured | llm (0.6) | tbl3:row9:col1 | — | not captured |
-| RSE of between subject variability of the elimination clearance of dihydroartemisinin | `Q22` · CL | 168 | % | not captured | % | not captured | boundary (0.8) | Hoglund_2015:other_prose | — | not captured |
+| Number of trans comp | `Q311` · n_transit | 1 | 9.14 | not captured | [9.14] | not captured | llm (0.6) | tbl3:row4:col1, Hoglund_2015_table_2:row5:col1 | — | not captured |
+| Bioavailability (%) | `Q40` · Fab | 1 | % | not captured | not captured | not captured | exact (1.0) | tbl3:row6:col1, Hoglund_2015_table_2:row7:col1 | — | not captured |
+| η-shrinkages were high for lumefantrine elimination clearance | `Q22` · CL | 40 | % | not captured | % | not captured | boundary (0.8) | Hoglund_2015:other_prose | — | not captured |
 | ka (h−1) | `Q49` · kabs | 0.0577 | h−1 | 1.6027777777777778e-05 | 1/h | not captured | review_gapfill (0.7) | Kloprogge_2015:review | — | not captured |
 | Lag time (h) | `Q83` · tlag | 1.31 | h | 4716.0 | h | not captured | review_gapfill (0.7) | Kloprogge_2015:review | — | not captured |
 
@@ -59,53 +55,25 @@ Hoglund RM et al., Artemether-lumefantrine co-administrati…, British journal o
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped value-less row: 'CL/F (l h−1)' (captured trailing unit 'l h−1' for child rows)
-- dropped value-less row: 'MTT (h)' (captured trailing unit 'h' for child rows)
-- salvaged Q22 ('RSE of between subject variability of the elimination clearance of dihydroartemisinin'=168) from results prose — parameter table was unreadable
+- dropped unlinked row (NIL): 'MMAX' — extend the ontology if this is a real PK parameter (source ['tbl3:row8:col1'])
+- dropped unlinked row (NIL): 'MF50' — extend the ontology if this is a real PK parameter (source ['tbl3:row9:col1'])
+- salvaged Q22 ('η-shrinkages were high for lumefantrine elimination clearance'=40) from results prose — parameter table was unreadable
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=artemether
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - topology: 2 first-order transfer(s) across 4 compounds → general_linear
 - template fit: none — only the metabolite is modelled — no parent compartment
 - status held at route_to_review — not promoted
-- row roles (LLM): model_class=compartmental; 7/7 row label(s) assigned, 5 linked by role; re-tagged parent→lumefantrine ×13
+- row roles (LLM): model_class=compartmental; 4/4 row label(s) assigned, 2 linked by role; re-tagged parent→lumefantrine ×6
+- molar mass: none of 1 PubChem candidate(s) is 'desbutyl-lumefantrine' (LLM) — left in mass units
+- molar mass: none found for 'desbutyl-lumefantrine' — its concentrations stay mass-only
 - skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
 - gap-filled Q49 (kabs) from Kloprogge_2015's review values (primary lacked it)
 - gap-filled Q83 (tlag) from Kloprogge_2015's review values (primary lacked it)
 
 **Extraction notes:**
-- unparsed cell tbl3:row2:col1 = '317 [8.25]'
-- unparsed cell tbl3:row2:col2 = '270, 374'
-- unparsed cell tbl3:row2:col3 = '9.8 [60.6]'
-- unparsed cell tbl3:row2:col4 = '2.75, 16.1'
-- unparsed cell tbl3:row5:col1 = '0.970 [6.58]'
-- unparsed cell tbl3:row5:col2 = '0.853, 1.10'
-- unparsed cell tbl3:row5:col3 = '51.6 [18.6]'
-- unparsed cell tbl3:row5:col4 = '41.1, 61.6'
-- unparsed cell tbl3:row6:col3 = '58.6 [27.6]'
-- unparsed cell tbl3:row6:col4 = '39.9, 76.6'
-- unparsed cell tbl3:row7:col1 = '0.724 [5.60]'
-- unparsed cell tbl3:row7:col2 = '0.644, 0.803'
-- unparsed cell tbl3:row15:col1 = '160 [4.93]'
-- unparsed cell tbl3:row15:col2 = '145, 174'
-- unparsed cell tbl3:row15:col3 = '53.9 [31.5]'
-- unparsed cell tbl3:row15:col4 = '33.4, 70.4'
-- unparsed cell tbl3:row17:col1 = '0.707 [4.40]'
-- unparsed cell tbl3:row17:col2 = '0.645, 0.764'
-- unparsed cell Hoglund_2015_table_2:row1:col1 = '4.77 [5.30]'
-- unparsed cell Hoglund_2015_table_2:row1:col2 = '4.31, 5.30'
-- unparsed cell Hoglund_2015_table_2:row1:col3 = '14.8 [50.7]'
-- unparsed cell Hoglund_2015_table_2:row1:col4 = '5.68, 22.7'
-- unparsed cell Hoglund_2015_table_2:row6:col1 = '6.27 [21.2]'
-- unparsed cell Hoglund_2015_table_2:row6:col2 = '3.75, 8.35'
-- unparsed cell Hoglund_2015_table_2:row6:col3 = '31.4 [106]'
-- unparsed cell Hoglund_2015_table_2:row6:col4 = '15.1, 94.6'
-- unparsed cell Hoglund_2015_table_2:row7:col3 = '47.4 [18.3]'
-- unparsed cell Hoglund_2015_table_2:row7:col4 = '38.2, 57.4'
-- unparsed cell Hoglund_2015_table_2:row8:col1 = '0.566 [7.83]'
-- unparsed cell Hoglund_2015_table_2:row8:col2 = '0.479, 0.643'
-- unparsed cell Hoglund_2015_table_2:row15:col1 = '0.465 [13.3]'
-- unparsed cell Hoglund_2015_table_2:row15:col2 = '0.357, 0.591'
+- table tbl3: unparsed_numeric_cell
+- table Hoglund_2015_table_2: unparsed_numeric_cell
 - companion parameter table 2 transcribed (7 record(s))
 - LLM selected parameter table(s) 2, 3
 
@@ -140,14 +108,13 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Kloprogge_2015:review'] |
-| C5_dimension_Q66 | pass | [length] ** 3 | not captured | not captured | not captured | ['tbl3:row8:col1'] |
 | C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Kloprogge_2015:review'] |
 | C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | % | not captured | not captured | ['Hoglund_2015:other_prose'] |
-| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 168.0 | not captured | not captured | ['Hoglund_2015:other_prose'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 40.0 | not captured | not captured | ['Hoglund_2015:other_prose'] |
 | C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
 
 <details class="legend">
@@ -157,7 +124,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_artemether/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Hoglund_2015` / `Hoglund_2015::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_artemether/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Hoglund_2015` / `Hoglund_2015::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -173,4 +140,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 05:52 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 18:01 UTC</sub>

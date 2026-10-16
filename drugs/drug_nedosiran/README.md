@@ -17,13 +17,14 @@ Nedosiran is a small interfering RNA medication used to treat primary hyperoxalu
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 17:54 | 1:00 | 0/0/1 | 3/0/0 | 0/0/0 | 89,074/2,822 | einfracz / qwen3.8-27b | 4 | 1/3 | 4/0 | 0 |
+| 2026-10-15 03:37 | 4:51 | 0/2/0 | 3/0/0 | 0/0/0 | 167,922/39,162 | einfracz / qwen3.8-27b | 4 | 1/3 | 4/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.815), gpt-oss:120b (not confirmed, agreement 0.846). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q66, Q22, Q61 — no SI value to buil…</sub><br><sub>route_to: `human_review`</sub> | [Zhang_2025_reference](drugs/drug_nedosiran/Nedosiran_Zhang2025_reference.md) | — | 3-compartment (no model) | 10 | Zhang S et al., Population Pharmacokinetic and Pharmaco…, Clinical pharmacokinetics (2025) | [10.1007/s40262-025-01540-1](https://doi.org/10.1007/s40262-025-01540-1) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Zhang_2024_reference](drugs/drug_nedosiran/Nedosiran_Zhang2024_reference.md) | — | 1-compartment (no model) | 6 (+15 cov.) | Zhang S et al., Nedosiran population pharmacokinetic an…, British journal of clinical… (2024) | [10.1111/bcp.16194](https://doi.org/10.1111/bcp.16194) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.846), gpt-oss:120b (not confirmed, agreement 0.846). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Zhang_2025_reference](drugs/drug_nedosiran/Nedosiran_Zhang2025_reference.md) | — | 3-compartment (no model) | 11 | Zhang S et al., Population Pharmacokinetic and Pharmaco…, Clinical pharmacokinetics (2025) | [10.1007/s40262-025-01540-1](https://doi.org/10.1007/s40262-025-01540-1) |
 
 ## Pharmacodynamics (PD)
 
@@ -32,6 +33,16 @@ Nedosiran is a small interfering RNA medication used to treat primary hyperoxalu
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span> | [Hoppe_2022_Uox](drugs/drug_nedosiran/pd_Hoppe_2022_Uox.md) | 24-hour urinary oxalate excretion ← nedosiran · indirect response — drug inhibits the production of 24-hour urinary oxalate excretion | — | Hoppe B et al., Safety, pharmacodynamics, and exposure-…, Kidney international (2022) | [10.1016/j.kint.2021.08.015](https://doi.org/10.1016/j.kint.2021.08.015) |
 | <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.9). Primary extraction retained.">cross-check: disputed</span> | [Zhang_2024_24_h_U_ox](drugs/drug_nedosiran/pd_Zhang_2024_24_h_U_ox.md) | 24-h urinary oxalate ← nedosiran · indirect response — drug inhibits the production of 24-h urinary oxalate | — | Zhang S et al., Nedosiran population pharmacokinetic an…, British journal of clinical… (2024) | [10.1111/bcp.16194](https://doi.org/10.1111/bcp.16194) |
 | <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.9). Primary extraction retained.">cross-check: disputed</span> | [Zhang_2025_Uox_Cr](drugs/drug_nedosiran/pd_Zhang_2025_Uox_Cr.md) | spot urine oxalate-to-creatinine ratio ← nedosiran · indirect response — drug inhibits the production of spot urine oxalate-to-creatinine ratio | — | Zhang S et al., Population Pharmacokinetic and Pharmaco…, Clinical pharmacokinetics (2025) | [10.1007/s40262-025-01540-1](https://doi.org/10.1007/s40262-025-01540-1) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=nedosiran).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: LDHA (antisense oligonucleotide).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -43,7 +54,7 @@ Nedosiran is a small interfering RNA medication used to treat primary hyperoxalu
 
 - **PubMed hits:** 8 matched, 8 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 1
+- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -54,15 +65,15 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 |---|---|---|---|---|---|---|
 | `Amrite_2023.pdf` | Amrite A et al., Safety, Pharmacokinetics, and Exposure-…, Clinical pharmacology in dr… (2023) | pd | 5 | [10.1002/cpdd.1320](https://doi.org/10.1002/cpdd.1320) | [37605486](https://www.ncbi.nlm.nih.gov/pubmed/37605486) | metadata signals extractable PD data (Exposure-Response) |
 
-<sub>queue written 2026-10-07T17:53:37.613686+00:00</sub>
+<sub>queue written 2026-10-15T03:32:31.766285+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Amrite_2023 | irrelevant | 0 | 0 | no_text gate: only 120 chars of text extracted (&lt; 400) |
-| PGx | Gupta_2022 | not_relevant | 0 | 0 | The paper mentions nedosiran as a therapy in PH1 but does not report any pharmacogenomic effect of gene variants on its pharmacokinetic or pharmacodynamic parameters. |
-| popPK | Hoppe_2022 | relevant | 7 | 2 | The study develops a population PK model for nedosiran and reports qualitative PK metrics (half-life range, linear PK), but specific numeric parameter values (CL, V, Q, theta) are referenced in Supplementary Table S6 which is not provided in the evidence. |
+| PGx | Gupta_2022 | not_relevant | 0 | 0 | The paper discusses pyridoxine response and general treatment of Primary Hyperoxaluria Type 1, but does not mention nedosiran or any pharmacogenomic effects on its PK/PD parameters. |
+| popPK | Hoppe_2022 | irrelevant | 4 | 2 | The study develops a population PK/PD model, but the specific numeric parameter estimates (CL, V, Q, etc.) are not present in the provided evidence, with key data referred to Supplementary Tables (e.g., S6, S7). |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 17:53 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-15 03:34 UTC</sub>

@@ -20,9 +20,9 @@
 
 **Model:** No model was generated from this record.
 
-> Nicardipine concentrations (10−12 to 10−8 M) inhibit oxytocin-induced active tension in isolated pregnant rat uterine smooth muscle via a concentration-dependent mechanism, with an EC50 of 2.41 × 10−10 M and an EC95 of 3.06 × 10−7 M. The paper does not specify the underlying pharmacodynamic mechanism (e.g., Emax, effect compartment, or production/elimination kinetics) beyond describing the concentration-response relationship.
+> Nicardipine concentration acts directly to inhibit active tension in uterine smooth muscle following a sigmoid Emax model (probit analysis), with an EC50 of 2.41 × 10−10 M and an EC95 of 3.06 × 10−7 M. The paper does not specify the underlying physiological mechanism (e.g., production vs. elimination inhibition) beyond the observed concentration-dependent relaxant effect.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Kim_2019`
 - **model family:** `sigmoid_emax`

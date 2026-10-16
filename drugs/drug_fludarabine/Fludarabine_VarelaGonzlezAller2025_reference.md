@@ -4,7 +4,7 @@
 
 # fludarabine — `Fludarabine_VarelaGonzlezAller2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0), gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓ 2/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -16,11 +16,11 @@
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**Only volume was extracted — no clearance.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper.
+A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Extracted — fludarabine: V1 41.2 L, V2 14.5 L, V3 10.8 L, Q 4.8 L/h.
 
-Independently confirmed by `gpt-oss-120b`.
+Independently confirmed by `gpt-oss:120b`, `gpt-oss-120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -28,18 +28,21 @@ Independently confirmed by `gpt-oss-120b`.
 Varela-González-Aller J et al., Towards Personalized Lymphodepletion: A…, Pharmaceutics (2025)
   ·  DOI: [10.3390/pharmaceutics17121592](https://doi.org/10.3390/pharmaceutics17121592)
 
-<div class="pk-model-meta" hidden drug="fludarabine" model-id="Fludarabine_VarelaGonzlezAller2025_reference" status="rejected" stale="false" population="patients receiving CAR T-cell therapy" measured-compound="fludarabine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="fludarabine" model-id="Fludarabine_VarelaGonzlezAller2025_reference" status="needs_review" stale="false" population="adults with relapsed/refractory large B-cell lymphoma receiving CAR T-cell therapy" measured-compound="fludarabine" parameterization="mechanistic" topology="2C"></div>
 
-**Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 1 extracted.
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
+| V1 (L) | `Q63` · V1 | 41.2 | L | 0.0412 | [l] | 9.3 | exact (1.0) | pharmaceutics-17-01592-t002:row4:col2 | — | 34.8 (3.6% RSE) |
+| V2 (L) | `Q64` · V2 | 14.5 | L | 0.0145 | [l] | 14.0 | exact (1.0) | pharmaceutics-17-01592-t002:row5:col2 | — | not captured |
+| V3 (L) | `Q77` · V3 | 10.8 | L | 0.0108 | [l] | 3.0 | exact (1.0) | pharmaceutics-17-01592-t002:row6:col2 | — | not captured |
 | CLD2 (L/h) | `Q30` · Q | 4.8 | L/h | 1.3333333333333332e-06 | [l] / [h] | 5.3 | special_case (0.95) | pharmaceutics-17-01592-t002:row7:col2 | — | not captured |
 
 <details class="legend">
@@ -51,34 +54,27 @@ Varela-González-Aller J et al., Towards Personalized Lymphodepletion: A…, Pha
 | label (paper) | Q-code | value | link |
 |---|---|---|---|
 | CL (L/h) | Q22 | not captured | exact |
-| V1 (L) | Q63 | not captured | exact |
-| V2 (L) | Q64 | not captured | exact |
-| V3 (L) | Q77 | not captured | exact |
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- column 'description' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - dropped duplicate Q22 ('CLD3 (L/h)', value '3.6') — already have one for this compound
-- dropped unlinked row (NIL): 'Error [log(ng/mL)]' — extend the ontology if this is a real PK parameter (source ['pharmaceutics-17-01592-t002:row11:col2'])
+- routed 'Error [log(ng/mL)]' → Q315 (sigma) to residual_error — variability estimate, not a structural parameter
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=fludarabine
-- structure disagreement: deterministic 1C vs LLM 3C — review compartment count
+- structure disagreement: deterministic 2C vs LLM 3C — review compartment count
 
 **Extraction notes:**
-- unparsed cell pharmaceutics-17-01592-t002:row4:col1 = 'θV1×g(WGT)'
-- unparsed cell pharmaceutics-17-01592-t002:row5:col1 = 'θV2×g(WGT)'
-- unparsed cell pharmaceutics-17-01592-t002:row6:col1 = 'θV3×g(WGT)'
-- unparsed cell pharmaceutics-17-01592-t002:row7:col1 = 'θCLD2×f(WGT)'
-- unparsed cell pharmaceutics-17-01592-t002:row8:col1 = 'θCLD3×f(WGT)'
+- table pharmaceutics-17-01592-t002: ragged_grid
 - LLM selected parameter table(s) 2
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  ·  2 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss:120b` | confirmed | 1.0 (13/13 fields) | none |
 | `gpt-oss-120b` | confirmed | 1.0 (10/10 fields) | none |
 
 _All readers agree on the compared fields of this record._
@@ -93,14 +89,17 @@ _All readers agree on the compared fields of this record._
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
-| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['pharmaceutics-17-01592-t002:row1:col1', 'pharmaceutics-17-01592-t002:row1:col2'] |
+| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['pharmaceutics-17-01592-t002:row1:col2'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['pharmaceutics-17-01592-t002:row7:col2'] |
 | C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['pharmaceutics-17-01592-t002:row4:col2'] |
 | C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['pharmaceutics-17-01592-t002:row5:col2'] |
 | C5_dimension_Q77 | pass | [length] ** 3 | not captured | not captured | not captured | ['pharmaceutics-17-01592-t002:row6:col2'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q63 | pass | volume within physiological range | 41.2 L | not captured | not captured | ['pharmaceutics-17-01592-t002:row4:col2'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 14.5 L | not captured | not captured | ['pharmaceutics-17-01592-t002:row5:col2'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -109,14 +108,24 @@ _All readers agree on the compared fields of this record._
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_fludarabine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Varela-González-Aller_2025` / `Varela-González-Aller_2025::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_fludarabine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Varela-González-Aller_2025` / `Varela-González-Aller_2025::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -125,4 +134,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 16:51 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 04:04 UTC</sub>

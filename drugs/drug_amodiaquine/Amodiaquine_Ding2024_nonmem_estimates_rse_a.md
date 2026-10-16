@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;amodiaquine&quot;,&quot;href&quot;:&quot;drugs/drug_amodiaquine/&quot;},{&quot;label&quot;:&quot;Ding_2024 \u00b7 nonmem_estimates_rse_a&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amodiaquine_Ding2024_nonmem_estimates_rse_a&quot;,&quot;label&quot;:&quot;Ding_2024_nonmem_estimates_rse_a&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amodiaquine/Amodiaquine_Ding2024_nonmem_estimates_rse_a.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # amodiaquine — `Amodiaquine_Ding2024_nonmem_estimates_rse_a`
 
-> ## <span class="pk-badge pk-badge--neutral" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated. · molar_mass_missing:desethylamodiaquine: a molar mass is missing: the model forms 1 mg of metabolite per mg of parent converted, not one molecule per molecule">not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.37). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.37). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -12,22 +13,17 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** Model available in **Models**; browser simulation unavailable.
-
-> **Caveats:**
-
-> - `covariates_not_exercised` — Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.
-> - `molar_mass_missing:desethylamodiaquine` — a molar mass is missing: the model forms 1 mg of metabolite per mg of parent converted, not one molecule per molecule
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 ### Reviewer guidance
 
-**The amodiaquine→desethylamodiaquine parent–metabolite model was not published because the metabolite was never given its own V, CL and formation clearance (all 0), its molar mass is missing, the peripheral volume V2 (13200 L) was not carried through, and the built structure (one-compartment enteral) does not match the reported two-compartment metabolite topology.**
+**The model does not reproduce the paper's terminal half-life (paper 470, model 15.5); t3_output_variable (+1 more).**
 
-The record reports desethylamodiaquine apparent parameters (CL/FDEAQ 38.3 L/h, VC/FDEAQ 861 L, Q/FDEAQ 81.7 L/h, Vp/FDEAQ 13200 L), but in the built model the metabolite's V, CL and formation clearance were all 0, so its compartment would only hold placeholder values. The molar mass of desethylamodiaquine is missing, so formation was treated as 1 mg metabolite per mg parent converted instead of a molecule-for-molecule conversion, alongside the apparent-parameter assumption F=1, Fm=1. The built structure is a one-compartment enteral model, not the reported parent–metabolite structure with a two-compartment metabolite, and V2 (13200 L) was neither carried through nor defaulted (3 of 4 parameters covered). The gestational-age covariate effect (1.28 on FAQ) was defined but only the reference individual was simulated, one reported unit could not be converted to SI so the parameter arrived without an SI value, and Tlag was left at a default. Extracted — amodiaquine: Fab 100, kabs 0.589 1/h, MTT 0.236 h, n_transit 2, CLm/F 6.78e+03 L/h, Vm/F 2.72e+05 L; desethylamodiaquine: CLm/F 38.3 L/h, V1 861 L, Q 81.7 L/h, V2 1.32e+04 L.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. A reported unit could not be converted (MTT, n_transit, AUC%ext and Ct), so that value has no SI equivalent. Extracted — amodiaquine: kabs 0.589 1/h, MTT 0.236 h, n_transit 2 GA, CLm/F 6.78e+03 L/h, t1/2z 26.3 hours, AUC%ext 283 GA; desethylamodiaquine: CLm/F 38.3 L/h, V 861 L, Q 81.7 L/h, t1/2z 14.1 day, Ct 63.3 ng/mL, AUC 45.2 h∙μg/mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has amodiaquine, the second reading unknown; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by glm-5.3-flash</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 > **Dose compound ≠ measured compound:** dosed `amodiaquine`, measured `desethylamodiaquine`.
 
@@ -35,29 +31,30 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Ding J et al., Population pharmacokinetics of amodiaqu…, CPT: pharmacometrics & syst… (2024)
   ·  DOI: [10.1002/psp4.13211](https://doi.org/10.1002/psp4.13211)
 
-<div class="pk-model-meta" hidden drug="amodiaquine" model-id="Amodiaquine_Ding2024_nonmem_estimates_rse_a" status="not_simulated" stale="false" population="pregnant women with uncomplicated Plasmodium falciparum malaria" measured-compound="desethylamodiaquine" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="amodiaquine" model-id="Amodiaquine_Ding2024_nonmem_estimates_rse_a" status="rejected" stale="false" population="African pregnant women with uncomplicated P. falciparum infections" measured-compound="desethylamodiaquine" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 10 extracted, plus 1 covariate effect.
+**Parameters:** 12 extracted.
 
-**Parameterization:** CLm/F, Vm/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** CLm/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `not_simulated`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| FAQ (%) | `Q40` · Fab | 100 | not captured | not captured | not captured | not captured | llm (0.6) | psp413211-tbl-0002:row2:col1 | — | not captured |
-| Ka (1/h) | `Q49` · kabs | 0.589 | 1/h | 0.0001636111111111111 | 1/h | not captured | exact (1.0) | psp413211-tbl-0002:row3:col1 | — | not captured |
+| Ka (1/h) | `Q49` · kabs | 0.589 | 1/h | 0.0001636111111111111 | [1] / [h] | not captured | exact (1.0) | psp413211-tbl-0002:row3:col1 | — | not captured |
 | MTT (h) | `Q81` · MTT | 0.236 | h | not captured | [h] | not captured | exact (1.0) | psp413211-tbl-0002:row4:col1 | — | not captured |
-| Number of transit compartment | `Q311` · n_transit | 2 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | psp413211-tbl-0002:row5:col1 | — | not captured |
+| Number of transit compartment | `Q311` · n_transit | 2 | GA | not captured | [g] · [a] | not captured | llm_confirmed (0.6) | psp413211-tbl-0002:row5:col1 | — | not captured |
 | CL/FAQ (L/h) | `Q351` · CLm/F | 6780 | L/h | 0.0018833333333333334 | [l] / [h] | 4.9 | llm (0.6) | psp413211-tbl-0002:row6:col1 | — | not captured |
-| VC/FAQ (L) | `Q367` · Vm/F | 272000 | L | 272.0 | [l] | 8.9 | llm (0.6) | psp413211-tbl-0002:row7:col1 | — | not captured |
 | CL/FDEAQ (L/h) | `Q351` · CLm/F | 38.3 | L/h | 1.0638888888888888e-05 | [l] / [h] | 9.6 | exact (1.0) | psp413211-tbl-0002:row10:col1 | — | not captured |
-| VC/FDEAQ (L) | `Q63` · V1 | 861 | L | 0.861 | [l] | 15.7 | exact (1.0) | psp413211-tbl-0002:row11:col1 | — | not captured |
+| VC/FDEAQ (L) | `Q61` · V | 861 | L | 0.861 | [l] | 15.7 | exact (1.0) | psp413211-tbl-0002:row11:col1 | — | not captured |
 | Q/FDEAQ (L/h) | `Q30` · Q | 81.7 | L/h | 2.2694444444444446e-05 | [l] / [h] | 7.0 | exact (1.0) | psp413211-tbl-0002:row12:col1 | — | not captured |
-| Vp/FDEAQ (L) | `Q64` · V2 | 13200 | L | 13.200000000000001 | [l] | 13.4 | exact (1.0) | psp413211-tbl-0002:row13:col1 | — | not captured |
-| gestational_age_on_faq | `Q900` · gestational_age_on_faq | 1.28 | not captured | not captured | not captured | 25.0 | not captured (not captured) | psp413211-tbl-0002:row16:col1 | — | not captured |
+| T1/2 AQ (hours) | `Q57` · t1/2z | 26.3 | hours | 94680.0 | [h] | not captured | llm_confirmed (0.6) | psp413211-tbl-0002:row18:col1 | — | not captured |
+| AUCAQ (h∙ng/mL) | `Q84` · AUC%ext | 283 | GA | not captured | [g] · [a] | not captured | llm (0.6) | psp413211-tbl-0002:row19:col1 | — | not captured |
+| T1/2 DEAQ (day) | `Q57` · t1/2z | 14.1 | day | 1218240.0 | [d] | not captured | llm_confirmed (0.6) | psp413211-tbl-0002:row20:col1 | — | not captured |
+| Day 7 DEAQ (ng/mL) | `Q75` · Ct | 63.3 | ng/mL | not captured | [ng] / [ml] | not captured | llm (0.6) | psp413211-tbl-0002:row21:col1 | — | not captured |
+| AUC DEAQ (h∙μg/mL) | `Q88` · AUC | 45.2 | h∙μg/mL | not captured | [[h] · [µg]] / [ml] | not captured | llm_confirmed (0.6) | psp413211-tbl-0002:row22:col1 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -71,42 +68,46 @@ Ding J et al., Population pharmacokinetics of amodiaqu…, CPT: pharmacometrics 
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
 
 **Interpretation flags:**
-- covariate level 'Gestational age on FAQ (%)' → Q900:gestational_age_on_faq = 1.28 (linear_fractional on Q27)
-- NIL: refused to back-fill base 'NIL' from footnote/prose loose number None (source ['psp413211-tbl-0002:footnote']); the table cell was unparseable — needs review
-- implicit units: 'Ka (1/h)' → 1/h (from the popPK convention: 'No unit stated in text or footnotes; Ka is a first-order absorption rate constant, conventionally in 1/h, consistent wit')
+- column 'nonmem estimates (%rse a )' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- table representations disagree for 'FAQ (%)'; source reconciliation required
+- table representations disagree for 'Ka (1/h)'; source reconciliation required
+- table representations disagree for 'MTT (h)'; source reconciliation required
+- table representations disagree for 'Number of transit compartment'; source reconciliation required
+- table representations disagree for 'CL/FAQ (L/h)'; source reconciliation required
+- table representations disagree for 'RUV'; source reconciliation required
+- table representations disagree for 'CL/FDEAQ (L/h)'; source reconciliation required
+- table representations disagree for 'VC/FDEAQ (L)'; source reconciliation required
+- table representations disagree for 'Q/FDEAQ (L/h)'; source reconciliation required
+- table representations disagree for 'Gestational age on FAQ (%)'; source reconciliation required
+- table representations disagree for 'T1/2 AQ (hours)'; source reconciliation required
+- table representations disagree for 'AUCAQ (h∙ng/mL)'; source reconciliation required
+- table representations disagree for 'T1/2 DEAQ (day)'; source reconciliation required
+- table representations disagree for 'Day 7 DEAQ (ng/mL)'; source reconciliation required
+- table representations disagree for 'AUC DEAQ (h∙μg/mL)'; source reconciliation required
+- dropped unlinked row (NIL): 'FAQ (%)' — extend the ontology if this is a real PK parameter (source ['psp413211-tbl-0002:row2:col1'])
+- unit_dimension_unknown: 'GA' (n_transit)
+- dropped unlinked row (NIL): 'Gestational age on FAQ (%)' — extend the ontology if this is a real PK parameter (source ['psp413211-tbl-0002:row16:col1'])
+- unit_dimension_unknown: 'GA' (AUC%ext)
 - metabolite desethylamodiaquine: Q27→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
-- metabolite desethylamodiaquine: Q76→Q367 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
 - metabolite desethylamodiaquine: Q22→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
+- metabolite volume: 'VC/FDEAQ (L)' Q63→Q61 for desethylamodiaquine — it is 1-compartment, so its central volume is its only volume
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=desethylamodiaquine
-- template fit: PK_3M_9C — formed from central; parent 1, metabolites [2]
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- template fit: none — only the metabolite is modelled — no parent compartment
+- status held at route_to_review — not promoted
 - population split: 'nonmem estimates (%rse a )' subgroup of Ding_2024 (paper reports 2 populations: nonmem estimates (%rse a ), nonmem population estimates (%rse a ))
-- row roles (LLM): model_class=compartmental; 23/23 row label(s) assigned, 19 linked by role; re-tagged parent→desethylamodiaquine ×8, parent→piperaquine ×14, desethylamodiaquine→piperaquine ×1
+- row roles: 3 row(s) kept on the molecule their table section names, against the LLM's assignment
+- row roles (LLM): model_class=compartmental; 27/27 row label(s) assigned, 13 linked by role; re-tagged parent→desethylamodiaquine ×9, parent→piperaquine ×14
+- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
+- engineer: parent_metabolite composite downgraded to a 1C model of the measured compound — the paper reports the metabolite's own CL and V but neither the parent's disposition nor a formation rate, so the parent sub-component could not be populated; the parent's concentration-time course is NOT produced by this model
 
 **Extraction notes:**
-- unparsed cell psp413211-tbl-0002:row2:col4 = '30.4 (24.9–35.4)'
-- unparsed cell psp413211-tbl-0002:row6:col2 = '6770 (6130–7440)'
-- unparsed cell psp413211-tbl-0002:row7:col2 = '270,000 (228,000–322,000)'
-- unparsed cell psp413211-tbl-0002:row8:col2 = '0.262 (0.200–0.338)'
-- unparsed cell psp413211-tbl-0002:row10:col2 = '38.0 (30.4–43.6)'
-- unparsed cell psp413211-tbl-0002:row10:col4 = '19.2 (6.2–36.2)'
-- unparsed cell psp413211-tbl-0002:row11:col2 = '897 (656–1240)'
-- unparsed cell psp413211-tbl-0002:row11:col4 = '191 (103–318)'
-- unparsed cell psp413211-tbl-0002:row12:col2 = '82.2 (72.1–94.5)'
-- unparsed cell psp413211-tbl-0002:row13:col2 = '13,400 (11,200–17,100)'
-- unparsed cell psp413211-tbl-0002:row14:col2 = '0.122 (0.096–0.148)'
-- unparsed cell psp413211-tbl-0002:row16:col2 = '1.29 (0.65–1.92)'
-- unparsed cell Ding_2024_table_3:row0:col4 = '33.6 (27.2–40.2)'
-- unparsed cell Ding_2024_table_3:row3:col2 = '69.3 (62.5–76.1)'
-- unparsed cell Ding_2024_table_3:row4:col2 = '4010 (1600‐7600)'
-- unparsed cell Ding_2024_table_3:row4:col4 = '125 (37–308)'
-- unparsed cell Ding_2024_table_3:row5:col2 = '243 (63–472)'
-- unparsed cell Ding_2024_table_3:row6:col2 = '3860 (1240–5730)'
-- unparsed cell Ding_2024_table_3:row7:col2 = '100 (76–127)'
-- unparsed cell Ding_2024_table_3:row8:col2 = '22,800 (19,900–26,700)'
-- unparsed cell Ding_2024_table_3:row9:col2 = '0.215 (0.177–0.256)'
-- unparsed cell Ding_2024_table_3:row11:col2 = '−12.1 (−16.2 to −7.3)'
-- companion parameter table 3 transcribed (17 record(s), model stage 'final')
+- table psp413211-tbl-0002: ambiguous_numeric_format
+- table psp413211-tbl-0002: representations disagree; selected evidence retained, not merged
+- table Ding_2024_table_3: ambiguous_numeric_format
+- table Ding_2024_table_3: unparsed_numeric_cell
+- companion parameter table 3 transcribed (28 record(s), model stage 'final')
 - LLM selected parameter table(s) 2, 3
 
 ## Validation
@@ -152,39 +153,39 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 10 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 12 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp413211-tbl-0002:row12:col1'] |
 | C5_dimension_Q351 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp413211-tbl-0002:row6:col1'] |
 | C5_dimension_Q351 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp413211-tbl-0002:row10:col1'] |
-| C5_dimension_Q367 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp413211-tbl-0002:row7:col1'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['psp413211-tbl-0002:row3:col1'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp413211-tbl-0002:row11:col1'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp413211-tbl-0002:row13:col1'] |
+| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['psp413211-tbl-0002:row18:col1'] |
+| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['psp413211-tbl-0002:row20:col1'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp413211-tbl-0002:row11:col1'] |
+| C5_dimension_Q75 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['psp413211-tbl-0002:row21:col1'] |
+| C5_dimension_Q88 | pass | [time] * [mass] / [length] ** 3 | not captured | not captured | not captured | ['psp413211-tbl-0002:row22:col1'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q63 | pass | volume within physiological range | 861 L | not captured | not captured | ['psp413211-tbl-0002:row11:col1'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 1.32e+04 L | not captured | not captured | ['psp413211-tbl-0002:row13:col1'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 861 L | not captured | not captured | ['psp413211-tbl-0002:row11:col1'] |
 
 **Reviewer per-scenario checks:**
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
 | T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
-| T3_metabolite_built[desethylamodiaquine] | not captured | fail | own V, CL and formation clearance &gt; 0 | {'V': 0, 'CL': 0, 'formation': 0} | not captured | desethylamodiaquine: V, CL, formation not set — the metabolite's compartment would be the template default |
-| T3_metabolite_output[desethylamodiaquine] | not captured | skipped | not captured | not captured | not captured | the simulation recorded no per-molecule outputs |
-| T3_molar_mass[desethylamodiaquine] | not captured | fail | not captured | {'MW': 0, 'MW_m1': 0} | not captured | a molar mass is missing: the model forms 1 mg of metabolite per mg of parent converted, not one molecule per molecule |
-| T3_param_coverage | not captured | fail | 4 scholar param(s) emitted or defaulted | 3 covered | not captured | neither emitted nor in defaulted[]: ['V2'] |
-| T3_shared_parameters | not captured | pass | 4 shared param(s) bound once | bound once | not captured | shared params must bind one value to both compartments |
-| T3_topology_template | not captured | fail | parent_metabolite_central → PK_3M_9C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T3_output_variable | not captured | fail | Metabolite_C (measured=desethylamodiaquine) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
+| T3_rate_constant_conversion | not captured | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model | not captured | rate constant must not be used raw as a clearance |
+| T3_shared_parameters | not captured | pass | 6 shared param(s) bound once | bound once | not captured | shared params must bind one value to both compartments |
+| T3_topology_template | not captured | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
-| T1_t_half_terminal | reference | skipped | 19.6 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 23.4 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 15.9 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 17.5 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_beta | reference | fail | 470.40000000000003 | 15.503240342907326 | 0.033 | days→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 561.5999999999999 | 15.503240342907326 | 0.0276 | days→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 381.6 | 15.503240342907326 | 0.0406 | days→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 420.0 | 15.503240342907326 | 0.0369 | days→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -193,32 +194,27 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_amodiaquine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Ding_2024` / `Ding_2024::nonmem_estimates_rse_a`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_amodiaquine/models/modelica/Amodiaquine_Ding2024_nonmem_estimates_rse_a.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_amodiaquine/models/modelica/Amodiaquine_Ding2024_nonmem_estimates_rse_a.deviation.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_amodiaquine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Ding_2024` / `Ding_2024::nonmem_estimates_rse_a`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_amodiaquine/models/modelica/Amodiaquine_Ding2024_nonmem_estimates_rse_a.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_amodiaquine/models/modelica/Amodiaquine_Ding2024_nonmem_estimates_rse_a.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_amodiaquine/models/modelica/Amodiaquine_Ding2024_nonmem_estimates_rse_a.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_amodiaquine/Amodiaquine_Ding2024_nonmem_estimates_rse_a/Amodiaquine_Ding2024_nonmem_estimates_rse_a_modelica.zip" download>Amodiaquine_Ding2024_nonmem_estimates_rse_a_modelica.zip</a> <span class="pk-size">(5.4 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-</div></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+**Administration: oral** — 171 mg, single dose, first-order absorption (ka 0.589 /h, F 1). Doses in the paper: 171, 270 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_amodiaquine/Amodiaquine_Ding2024_nonmem_estimates_rse_a/Amodiaquine_Ding2024_nonmem_estimates_rse_a_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_amodiaquine/Amodiaquine_Ding2024_nonmem_estimates_rse_a/Amodiaquine_Ding2024_nonmem_estimates_rse_a_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C_enteral` · parameters `Amodiaquine_Ding2024_nonmem_estimates_rse_a_params.json` · controls `Amodiaquine_Ding2024_nonmem_estimates_rse_a_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 05:41 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 17:50 UTC</sub>

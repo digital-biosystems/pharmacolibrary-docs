@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06D&quot;,&quot;href&quot;:&quot;atc/N06D.md&quot;},{&quot;label&quot;:&quot;tacrine&quot;,&quot;href&quot;:&quot;drugs/drug_tacrine/&quot;},{&quot;label&quot;:&quot;Cook_2016 \u00b7 PD Alzheimer&#x27;s Disease Assessment Scale-Cognitive Subscale&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Alzheimer's Disease Assessment Scale-Cognitive Subscale — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed</span>
+# Alzheimer's Disease Assessment Scale-Cognitive Subscale — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -13,17 +13,17 @@
 
 ## Record summary
 
-**As extracted:** Tacrine (the dose) drives Alzheimer's Disease Assessment Scale-Cognitive Subscale (in ADAS-Cog units): disease-progression model.
+**As extracted:** Tacrine (concentrations from the PK model of Hartvig_1990) drives Alzheimer's Disease Assessment Scale-Cognitive Subscale (in ADAS-Cog units): disease-progression model.
 
 **Model:** No model was generated from this record.
 
-> Tacrine dose was modeled as an additive inhibitory effect on the progression of the ADAS-Cog score in an empirical disease progression model, with a drug effect of -2.99 ADAS-Cog units; the excerpts do not state potency (IC50/EC50) or rate parameters.
+> The paper describes an empirical disease progression model where tacrine, an acetylcholinesterase inhibitor, exerts an additive inhibitory effect on the Alzheimer's Disease Assessment Scale-Cognitive Subscale (ADAS-Cog) score. The model parameters indicate a baseline disease progression rate (alpha) of 6.17 ADAS-Cog units/year and a maximum drug effect (E tacrine) of -2.99 ADAS-Cog units, but the excerpt does not provide specific potency parameters such as EC50 or link this effect directly to drug concentrations.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Cook_2016`
 - **model family:** `disease_progression`
-- **driver:** `dose_only`
+- **driver:** `cited_pk`
 - **tier:** population
 - **effect:** inhibition/additive
 
@@ -34,7 +34,8 @@ Cook SF et al., Disease Progression Modeling: Key Conce…, Current pharmacology
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| model term | effect of tacrine | `Q900` · not captured | -2.99 | ADAS-Cog units | not captured | llm (not captured) | Cook_2016:pdv3 |
+| PD (effect) | α | `Q340` · not captured | 6.17 | ADAS-Cog units/year | not captured | llm (not captured) | Cook_2016:pdv3 |
+| PD (effect) | E tacrine (t) | `Q341` · not captured | -2.99 | ADAS-Cog units | not captured | llm (not captured) | Cook_2016:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -43,20 +44,21 @@ Cook SF et al., Disease Progression Modeling: Key Conce…, Current pharmacology
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `einfracz:gpt-oss-120b` | not confirmed | 0.429 (3/7 fields) | 4 |
+| `einfracz:gpt-oss-120b` | not confirmed | 0.375 (3/8 fields) | 5 |
 
-<details><summary>4 field discrepancies</summary>
+<details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `einfracz:gpt-oss-120b` | `model_family` | disease_progression | linear | mismatch |
 | `einfracz:gpt-oss-120b` | `parameters[Q100]` | not captured | -2.99 | only_one_extracted |
 | `einfracz:gpt-oss-120b` | `parameters[Q335]` | not captured | 6.17 | only_one_extracted |
-| `einfracz:gpt-oss-120b` | `parameters[Q900]` | -2.99 | not captured | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q340]` | 6.17 | not captured | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q341]` | -2.99 | not captured | only_one_extracted |
 
 </details>
 

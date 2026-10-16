@@ -16,22 +16,22 @@
 
 ### Reviewer guidance
 
-**Camrelizumab was rejected for an unspecified structural-parameter dimension mismatch; Vmax is reported as 2.86 mg/day, but the findings do not identify it as the affected parameter.**
+**C5 dimension mismatch on a structural parameter.**
 
-The findings report a dimension mismatch for a structural parameter but do not name the parameter, so the affected value cannot be determined from this record. They also state that one reported unit could not be converted to SI, leaving a parameter without an SI value; the unit and parameter are not identified. Extracted — camrelizumab: CL 0.242 L/day, Vmax 2.86 mg/day, Km 1.28 mg/L, V1 3.08 L, Q 0.385 L/day, V2 2.88 L, Cmax 47.3 mg/L, Cmin 26.1 mg/L.
+A reported unit could not be converted (Vmax and Km), so that value has no SI equivalent. Extracted — camrelizumab: CL 0.242 L/day, Vmax 2.86 mg/day, Km 1.28 mg/L, V1 3.08 L, Q 0.385 L/day, V2 2.88 L.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of c max,ss: this record has 47.26, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Wang CY et al., Population pharmacokinetics of the anti…, Acta pharmacologica Sinica (2021)
   ·  DOI: [10.1038/s41401-020-00550-y](https://doi.org/10.1038/s41401-020-00550-y)
 
-<div class="pk-model-meta" hidden drug="camrelizumab" model-id="Camrelizumab_Wang2021_base" status="rejected" stale="false" population="patients with melanoma, advanced solid tumors, or relapsed/refractory classical Hodgkin lymphoma" measured-compound="camrelizumab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="camrelizumab" model-id="Camrelizumab_Wang2021_base" status="rejected" stale="false" population="patients with multiple tumor types and relapsed or refractory classical Hodgkin lymphoma" measured-compound="camrelizumab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
-**Parameters:** 8 extracted.
+**Parameters:** 6 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -40,14 +40,12 @@ Wang CY et al., Population pharmacokinetics of the anti…, Acta pharmacologica 
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL linear (L/day) | `Q22` · CL | 0.242 | L/day | 2.800925925925926e-09 | [l] / [d] | not captured | llm_confirmed (0.6) | tab_2:row3:col1 | — | 57.0 (17.3% RSE) |
-| V m (mg/day) | `Q66` · Vmax | 2.86 | mg/day | not captured | [mg] / [d] | not captured | special_case (0.95) | tab_2:row5:col1 | — | 48.3 (17.5% RSE) |
+| CL linear (L/day) | `Q22` · CL | 0.242 | L/day | 2.800925925925926e-09 | [l] / [d] | not captured | llm_confirmed (0.6) | tab_2:row3:col1 | — | 57.0 (None% RSE) |
+| V m (mg/day) | `Q66` · Vmax | 2.86 | mg/day | not captured | [mg] / [d] | not captured | special_case (0.95) | tab_2:row5:col1 | — | 48.3 (None% RSE) |
 | K m (mg/L) | `Q1` · Km | 1.28 | mg/L | not captured | [mg] / [l] | not captured | space_fold (0.95) | tab_2:row6:col1 | — | not captured |
-| V 1 (L) | `Q63` · V1 | 3.08 | L | 0.0030800000000000003 | [l] | not captured | space_fold (0.95) | tab_2:row7:col1 | — | 40.2 (13.3% RSE) |
+| V 1 (L) | `Q63` · V1 | 3.08 | L | 0.0030800000000000003 | [l] | not captured | space_fold (0.95) | tab_2:row7:col1 | — | 40.2 (None% RSE) |
 | Q (L/day) | `Q30` · Q | 0.385 | L/day | 4.456018518518519e-09 | [l] / [d] | not captured | exact (1.0) | tab_2:row8:col1 | — | not captured |
 | V 2 (L) | `Q64` · V2 | 2.88 | L | 0.0028799999999999997 | [l] | not captured | space_fold (0.95) | tab_2:row10:col1 | — | not captured |
-| C max,ss (mg/L) | `Q32` · Cmax | 47.26 | mg/L | not captured | [mg] / [l] | not captured | llm (0.6) | Wang_2021_table_4:row0:col3 | — | not captured |
-| C min,ss (mg/L) | `Q36` · Cmin | 26.13 | mg/L | not captured | [mg] / [l] | not captured | llm (0.6) | Wang_2021_table_4:row1:col3, Wang_2021_table_4:row1:col4 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -66,27 +64,12 @@ Wang CY et al., Population pharmacokinetics of the anti…, Acta pharmacologica 
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=camrelizumab
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
-- model-stage split: 'base model' is the base model of Wang_2021 (paper reports 3 stages: base model, final model, median 2.5%-97.5%); same population, different model-building step
+- model-stage split: 'base model / parameter estimates' is the base model of Wang_2021 (paper reports 2 stages: base model / parameter estimates, final model / parameter estimates); same population, different model-building step
 - molar mass: none found for 'camrelizumab' — its concentrations stay mass-only
 
 **Extraction notes:**
-- unparsed cell tab_2:row3:col5 = '0.23 (0.20-0.26)'
-- unparsed cell tab_2:row4:col5 = '-1.93 (-2.94 to -0.89)'
-- unparsed cell tab_2:row5:col5 = '3.00 (2.26-3.71)'
-- unparsed cell tab_2:row6:col5 = '1.40 (0.91-2.76)'
-- unparsed cell tab_2:row7:col5 = '3.08 (2.77-3.33)'
-- unparsed cell tab_2:row8:col5 = '0.41 (0.34-0.51)'
-- unparsed cell tab_2:row9:col5 = '1.18 (0.31-2.28)'
-- unparsed cell tab_2:row10:col5 = '2.91 (2.35-3.35)'
-- unparsed cell tab_2:row12:col5 = '50.2 (32.7-68.9)'
-- unparsed cell tab_2:row13:col5 = '47.8 (29.4-70.9)'
-- unparsed cell tab_2:row14:col5 = '39.0 (17.0-70.68)'
-- unparsed cell tab_2:row16:col5 = '28.9 (23.8-33.9)'
-- unparsed cell tab_2:row17:col5 = '0.0823 (0.0293-0.112)'
-- unparsed cell Wang_2021_table_4:row0:col2 = '39.27-195.41 96.40'
-- unparsed cell Wang_2021_table_4:row2:col1 = '12.81-113.87 45.48'
-- companion parameter table 4 transcribed (7 record(s))
-- LLM selected parameter table(s) 3, 4
+- table tab_2: unparsed_numeric_cell
+- LLM selected parameter table(s) 3
 
 ## Validation
 
@@ -116,14 +99,12 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 8 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q1 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['tab_2:row6:col1'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_2:row3:col1'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_2:row8:col1'] |
-| C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Wang_2021_table_4:row0:col3'] |
-| C5_dimension_Q36 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Wang_2021_table_4:row1:col3', 'Wang_2021_table_4:row1:col4'] |
 | C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_2:row7:col1'] |
 | C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_2:row10:col1'] |
 | C5_dimension_Q66 | fail | [mass] / [time] | mg/day | not captured | not captured | ['tab_2:row5:col1'] |
@@ -140,7 +121,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_camrelizumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Wang_2021` / `Wang_2021::base`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_camrelizumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Wang_2021` / `Wang_2021::base`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -156,4 +137,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 10:48 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 18:32 UTC</sub>

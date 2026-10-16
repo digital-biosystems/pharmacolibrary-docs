@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;ponatinib&quot;,&quot;href&quot;:&quot;drugs/drug_ponatinib/&quot;},{&quot;label&quot;:&quot;Hanley_2025 \u00b7 PD AOEs&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;ponatinib&quot;,&quot;href&quot;:&quot;drugs/drug_ponatinib/&quot;},{&quot;label&quot;:&quot;Hanley_2025 \u00b7 PD Arterial occlusive events&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# AOEs — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span>
+# Arterial occlusive events — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -13,19 +13,19 @@
 
 ## Record summary
 
-**As extracted:** Ponatinib (concentrations from the PK model of Hanley_2022::daily_ponatinib_dose) drives AOEs: categorical (graded) response model.
+**As extracted:** Ponatinib (concentrations from the PK model of Hanley_2022) drives Arterial occlusive events: categorical (graded) response model.
 
 **Model:** No model was generated from this record.
 
-> Ponatinib exposure (driver concentration in ng/mL) was evaluated in relation to the probability of AOEs; the paper reports no statistically significant relationship and does not specify a mechanism. The record lists an odds ratio of 0.933, but its scale is not stated.
+> The paper describes a categorical model assessing the odds of arterial occlusive events (AOEs) as a function of ponatinib exposure (measured in ng/mL), yielding an odds ratio of 0.933. No mechanism (e.g., production or elimination inhibition, Emax) or potency parameters (IC50, EC50, Emax, etc.) are stated in the provided excerpts.
 >
-> <sub>Source-based summary by gpt-6-luna from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Hanley_2025`
 - **model family:** `categorical`
 - **driver:** `cited_pk`
 - **tier:** descriptive
-- **effect:** unknown/additive
+- **effect:** inhibition/unknown
 
 ## Citation
 Hanley MJ et al., Population Pharmacokinetic and Exposure…, Clinical and translational… (2025)
@@ -34,7 +34,7 @@ Hanley MJ et al., Population Pharmacokinetic and Exposure…, Clinical and trans
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| — | Odds ratio | `Q100` · not captured | 0.933 | not captured | not captured | nil (not captured) | Hanley_2025:pdv3 |
+| PD (effect) | Odds ratio for ponatinib exposure | `Q345` · not captured | 0.933 | not captured | not captured | llm (not captured) | Hanley_2025:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>

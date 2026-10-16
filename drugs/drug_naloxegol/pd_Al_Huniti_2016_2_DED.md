@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A06A&quot;,&quot;href&quot;:&quot;atc/A06A.md&quot;},{&quot;label&quot;:&quot;naloxegol&quot;,&quot;href&quot;:&quot;drugs/drug_naloxegol/&quot;},{&quot;label&quot;:&quot;Al-Huniti_2016_2 \u00b7 PD diary entry discontinuation&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Naloxegol_AlHuniti2016_reference&quot;,&quot;label&quot;:&quot;Al-Huniti_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_naloxegol/Naloxegol_AlHuniti2016_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # diary entry discontinuation — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span>
@@ -26,7 +25,7 @@
 - **model family:** `tte`
 - **driver:** `dose_only`
 - **tier:** population
-- **effect:** stimulation/unknown
+- **effect:** unknown/unknown
 
 ## Citation
 Al-Huniti N et al., Population Exposure-Response Modeling o…, CPT: pharmacometrics & syst… (2016)

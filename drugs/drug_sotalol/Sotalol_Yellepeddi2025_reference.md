@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;sotalol&quot;,&quot;href&quot;:&quot;drugs/drug_sotalol/&quot;},{&quot;label&quot;:&quot;Yellepeddi_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sotalol_Yellepeddi2025_reference&quot;,&quot;label&quot;:&quot;Yellepeddi_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sotalol/Sotalol_Yellepeddi2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sotalol_Yellepeddi2025_reference&quot;,&quot;label&quot;:&quot;Yellepeddi_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sotalol/Sotalol_Yellepeddi2025_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Dubois_2016_Displacement&quot;,&quot;label&quot;:&quot;Dubois_2016 \u00b7 Displacement&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_sotalol/pd_Dubois_2016_Displacement.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # sotalol — `Sotalol_Yellepeddi2025_reference`
 
-> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.952), gpt-oss:120b (not confirmed, agreement 0.952). Primary extraction retained.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.952), gpt-oss:120b (not confirmed, agreement 0.952). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -21,35 +21,34 @@
 
 **Accepted with a caveat: the covariate scenarios were not simulated.**
 
-The base model was simulated, not the covariate effects the record defines. A reported unit could not be converted (Frel), so that value has no SI equivalent.
+The base model was simulated, not the covariate effects the record defines. A reported unit could not be converted (Frel and allometric_exponent), so that value has no SI equivalent.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[oral bioavailability relative to iv].parameter_id`: this record has Q87, the second reading Q40. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `accepted_with_caveats` (reviewed 2026-09-29 08:52:10.782466+00:00) predates the upstream re-run (2026-10-07 01:15:27.452261+00:00). Current validate status: `extracted`.
-
 ## Citation
 Yellepeddi VK et al., Population Pharmacokinetics and Pharmac…, CPT: pharmacometrics & syst… (2025)
   ·  DOI: [10.1002/psp4.13302](https://doi.org/10.1002/psp4.13302)
 
-<div class="pk-model-meta" hidden drug="sotalol" model-id="Sotalol_Yellepeddi2025_reference" status="extracted" stale="true" population="adults with atrial arrhythmias" measured-compound="sotalol" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="sotalol" model-id="Sotalol_Yellepeddi2025_reference" status="accepted_with_caveats" stale="false" population="adults with atrial arrhythmias" measured-compound="sotalol" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
-**Parameters:** 6 extracted, plus 1 covariate effect.
+**Parameters:** 7 extracted, plus 1 covariate effect.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Clearance (CL), L/h | `Q22` · CL | 9.5 | L/h | 2.638888888888889e-06 | [l] / [h] | 33.1 | space_fold (0.95) | psp413302-tbl-0002:row2:col1, psp413302-tbl-0002:row2:col2 | — | not captured |
-| Intercompartmental clearance (Q), L/h | `Q30` · Q | 71.3 | L/h | 1.9805555555555557e-05 | [l] / [h] | 20.3 | llm_confirmed (0.6) | psp413302-tbl-0002:row3:col1, psp413302-tbl-0002:row3:col2 | — | not captured |
-| Central Volume of distribution (Vc), L | `Q63` · V1 | 38.2 | L | 0.038200000000000005 | [l] | 31.2 | boundary_compartment (0.9) | psp413302-tbl-0002:row4:col1, psp413302-tbl-0002:row4:col2 | — | not captured |
-| Peripheral volume of distribution (Vp), L | `Q64` · V2 | 89.1 | L | 0.0891 | [l] | 25.4 | boundary_compartment (0.9) | psp413302-tbl-0002:row5:col1, psp413302-tbl-0002:row5:col2 | — | not captured |
-| Absorption rate constant (Ka), h−1 | `Q49` · kabs | 0.2 | h−1 | 5.555555555555556e-05 | [1] / [h] | 34.2 | llm_confirmed (0.6) | psp413302-tbl-0002:row6:col1, psp413302-tbl-0002:row6:col2 | — | not captured |
-| Oral bioavailability relative to IV (Foral) | `Q87` · Frel | 1.6 | Foral | not captured | not captured | 28.4 | llm_corrected (0.6) | psp413302-tbl-0002:row7:col1, psp413302-tbl-0002:row7:col2 | — | not captured |
-| theta_cl_crcl | `Q900` · theta_cl_crcl | 0.7 | not captured | not captured | not captured | 31.8 | not captured (not captured) | psp413302-tbl-0002:row8:col1, psp413302-tbl-0002:row8:col2 | — | not captured |
+| Clearance (CL), L/h | `Q22` · CL | 9.5 | L/h | 2.638888888888889e-06 | [l] / [h] | 33.1 | space_fold (0.95) | psp413302-tbl-0002:row2:col1 | — | not captured |
+| Intercompartmental clearance (Q), L/h | `Q30` · Q | 71.3 | L/h | 1.9805555555555557e-05 | [l] / [h] | 20.3 | llm_confirmed (0.6) | psp413302-tbl-0002:row3:col1 | — | not captured |
+| Central Volume of distribution (Vc), L | `Q63` · V1 | 38.2 | L | 0.038200000000000005 | [l] | 31.2 | boundary_compartment (0.9) | psp413302-tbl-0002:row4:col1 | — | not captured |
+| Peripheral volume of distribution (Vp), L | `Q64` · V2 | 89.1 | L | 0.0891 | [l] | 25.4 | boundary_compartment (0.9) | psp413302-tbl-0002:row5:col1 | — | not captured |
+| Absorption rate constant (Ka), h−1 | `Q49` · kabs | 0.2 | h−1 | 5.555555555555556e-05 | [1] / [h] | 34.2 | llm_confirmed (0.6) | psp413302-tbl-0002:row6:col1 | — | not captured |
+| Oral bioavailability relative to IV (Foral) | `Q87` · Frel | 1.6 | Foral | not captured | not captured | 28.4 | llm_corrected (0.6) | psp413302-tbl-0002:row7:col1 | — | not captured |
+| θWT on Vc (Vc*[WTKG/104]θ) | `Q319` · allometric_exponent | 1.1 | Vc*[WTKG/104]θ | not captured | [[vc] · [wtkg]] / [[104] · [θ]] | 49.6 | llm_corrected (0.6) | psp413302-tbl-0002:row9:col1 | — | not captured |
+| theta_cl_crcl | `Q900` · theta_cl_crcl | 0.7 | not captured | not captured | not captured | 31.8 | not captured (not captured) | psp413302-tbl-0002:row8:col1 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -65,8 +64,7 @@ Yellepeddi VK et al., Population Pharmacokinetics and Pharmac…, CPT: pharmacom
 - table section iiv: 'IIV – CL(%)' routed out of structural estimates ('Interindividual variability (IIV)')
 - table section iiv: 'IIV – Vc (%)' routed out of structural estimates ('Interindividual variability (IIV)')
 - table section iiv: 'IIV – Ka (%)' routed out of structural estimates ('Interindividual variability (IIV)')
-- unit_dimension_unknown: 'Vc*[WTKG/104]θ' (V1)
-- dropped duplicate Q63 ('θWT on Vc (Vc*[WTKG/104]θ)', value '1.1') — already have one for this compound
+- unit_dimension_unknown: 'Vc*[WTKG/104]θ' (allometric_exponent)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=sotalol
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
@@ -74,6 +72,7 @@ Yellepeddi VK et al., Population Pharmacokinetics and Pharmac…, CPT: pharmacom
 
 **Extraction notes:**
 - LLM selected parameter table(s) 2
+- dropped sensitivity-analysis table(s) 3 from the LLM selection — perturbations of a model, not a model
 
 ## Validation
 
@@ -104,20 +103,20 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 7 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp413302-tbl-0002:row2:col1', 'psp413302-tbl-0002:row2:col2'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp413302-tbl-0002:row3:col1', 'psp413302-tbl-0002:row3:col2'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['psp413302-tbl-0002:row6:col1', 'psp413302-tbl-0002:row6:col2'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp413302-tbl-0002:row4:col1', 'psp413302-tbl-0002:row4:col2'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp413302-tbl-0002:row5:col1', 'psp413302-tbl-0002:row5:col2'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 9.5 | not captured | not captured | ['psp413302-tbl-0002:row2:col1', 'psp413302-tbl-0002:row2:col2'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp413302-tbl-0002:row2:col1'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp413302-tbl-0002:row3:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['psp413302-tbl-0002:row6:col1'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp413302-tbl-0002:row4:col1'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp413302-tbl-0002:row5:col1'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 9.5 | not captured | not captured | ['psp413302-tbl-0002:row2:col1'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 9.5 L/h | not captured | not captured | ['psp413302-tbl-0002:row2:col1', 'psp413302-tbl-0002:row2:col2'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 38.2 L | not captured | not captured | ['psp413302-tbl-0002:row4:col1', 'psp413302-tbl-0002:row4:col2'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 89.1 L | not captured | not captured | ['psp413302-tbl-0002:row5:col1', 'psp413302-tbl-0002:row5:col2'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 9.5 L/h | not captured | not captured | ['psp413302-tbl-0002:row2:col1'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 38.2 L | not captured | not captured | ['psp413302-tbl-0002:row4:col1'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 89.1 L | not captured | not captured | ['psp413302-tbl-0002:row5:col1'] |
 
 **Reviewer per-scenario checks:**
 
@@ -137,10 +136,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_sotalol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Yellepeddi_2025` / `Yellepeddi_2025::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_sotalol/models/modelica/Sotalol_Yellepeddi2025_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_sotalol/models/modelica/Sotalol_Yellepeddi2025_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_sotalol/models/modelica/Sotalol_Yellepeddi2025_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_sotalol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Yellepeddi_2025` / `Yellepeddi_2025::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_sotalol/models/modelica/Sotalol_Yellepeddi2025_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_sotalol/models/modelica/Sotalol_Yellepeddi2025_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_sotalol/models/modelica/Sotalol_Yellepeddi2025_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -158,7 +157,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_sotalol/Sotalol_Yellepeddi2025_reference/Sotalol_Yellepeddi2025_reference.svg" alt="Sotalol_Yellepeddi2025_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_sotalol/Sotalol_Yellepeddi2025_reference/Sotalol_Yellepeddi2025_reference.svg" alt="Sotalol_Yellepeddi2025_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -171,4 +170,4 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 01:15 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 03:44 UTC</sub>

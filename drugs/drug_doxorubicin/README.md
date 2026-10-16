@@ -142,6 +142,37 @@ Doxorubicin is a chemotherapy drug used to treat many cancers, including breast 
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=doxorubicin).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inducer/inhibitor/substrate/transport, `ABCG2` substrate/transport | DrugBank actor |
+| absorption | kidney | `ABCB1` inducer/inhibitor/substrate/transport | DrugBank actor |
+| absorption | liver | `ABCB1` inducer/inhibitor/substrate/transport, `ABCG2` substrate/transport | DrugBank actor |
+| absorption | mammary gland | `ABCG2` substrate/transport | DrugBank actor |
+| absorption | placenta | `ABCB1` inducer/inhibitor/substrate/transport | DrugBank actor |
+| absorption | small intestine | `ABCB1` inducer/inhibitor/substrate/transport, `ABCG2` substrate/transport | DrugBank actor |
+| absorption | testis | `ABCB1` inducer/inhibitor/substrate/transport, `ABCG2` substrate/transport | DrugBank actor |
+| distribution | blood | `ALB` unknown | DrugBank actor |
+| distribution | blood-brain barrier | `ABCC1` inhibitor/substrate | DrugBank actor |
+| distribution | liver | `SLC22A3` transport | PGx paper |
+| distribution | lung | `ABCC1` inhibitor/substrate | DrugBank actor |
+| distribution | placenta | `SLC22A3` transport | PGx paper |
+| distribution | skeletal muscle | `SLC22A3` transport | PGx paper |
+| metabolism | brain | `CYP2D6` inhibitor/metabolism/substrate | DrugBank actor |
+| metabolism | liver | `CYP2B6` inhibitor, `CYP2D6` inhibitor/metabolism/substrate, `CYP3A4` inhibitor/metabolism/substrate, `NQO1` substrate, `POR` substrate, `SLC22A1` transport, `XDH` substrate | DrugBank actor |
+| metabolism | lung | `CYP1B1` inducer/inhibitor | DrugBank actor |
+| metabolism | skin | `CYP1B1` inducer/inhibitor | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inhibitor/metabolism/substrate, `XDH` substrate | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | `ABCC2` substrate/transport, `SLC22A2` transport | DrugBank actor |
+| excretion | liver | `ABCB11` substrate, `ABCC2` substrate/transport, `ABCC3` inhibitor | DrugBank actor |
+| excretion | small intestine | `ABCC2` substrate/transport, `ABCC3` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ABCB4 (transport), ABCB5 (transport), ABCB8 (substrate), ABCC10 (inhibitor), ABCC10 (transport), ABCC5 (transport), ABCC6 (inhibitor), ABCC6 (substrate), ABCC9 (transport), AKR1A1 (substrate), AKR1B1 (substrate), AKR1B10 (substrate), AKR1C3 (substrate), AKR1C4 (substrate), CBR1 (metabolism), CBR1 (substrate), CBR3 (metabolism), CBR3 (substrate), CELF4 (target), DNA (intercalation), NDUFS2 (substrate), NDUFS3 (substrate), NDUFS7 (substrate), NOLC1 (inhibitor), NOS1 (substrate), NOS2 (substrate), NOS3 (substrate), PXR (unknown), RAC2 (target), RALBP1 (substrate), RARG (target), RLIP76 (transport), SLC22A16 (substrate), SLC22A16 (transport), SLC22A17 (transport), SLC28A1 (transport), SLC28A3 (transport), TERT (other/unknown), TOP1 (inhibitor), TOP2A (inhibitor), TOP2B (inhibitor).</sub>
+
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
 <table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>

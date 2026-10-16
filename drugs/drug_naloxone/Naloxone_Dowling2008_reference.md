@@ -18,7 +18,7 @@
 
 **The clearance plausibility check could not be computed.**
 
-The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — naloxone: Frel 36 %, CL 91 L/hr, V1 2.87 L, V2 1.49 L, V3 33.6 L, Q 5.66 L/hr, kabs 0.65 1/hr.
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — naloxone: Frel 36 %, CL 91 L/hr, V1 2.87 L, V2 1.49 L, V3 33.6 L, Q 5.66 L/hr, Q2 29.8 L/hr, kabs 0.65 1/h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of relative bioavailability of intramuscular and intranasal naloxone: this record has 36, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
@@ -28,10 +28,10 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Dowling J et al., Population pharmacokinetics of intraven…, Therapeutic drug monitoring (2008)
   ·  DOI: [10.1097/FTD.0b013e3181816214](https://doi.org/10.1097/FTD.0b013e3181816214)
 
-<div class="pk-model-meta" hidden drug="naloxone" model-id="Naloxone_Dowling2008_reference" status="needs_review" stale="false" population="healthy male volunteers" measured-compound="naloxone" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="naloxone" model-id="Naloxone_Dowling2008_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="naloxone" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
-**Parameters:** 7 extracted.
+**Parameters:** 8 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -40,13 +40,14 @@ Dowling J et al., Population pharmacokinetics of intraven…, Therapeutic drug m
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Relative bioavailability of intramuscular and intranasal naloxone | `Q87` · Frel | 36 | % | not captured | not captured | not captured | llm_confirmed (0.6) | Dowling_2008:abstract, Dowling_2008:abstract | — | not captured |
+| Relative bioavailability of intramuscular | `Q87` · Frel | 36 | % | not captured | not captured | not captured | llm_confirmed (0.6) | Dowling_2008:abstract | — | not captured |
 | clearance | `Q22` · CL | 91 | L/hr | 2.5277777777777776e-05 | [l] / [h] | not captured | exact (1.0) | Dowling_2008:abstract | — | not captured |
 | central volume | `Q63` · V1 | 2.87 | L | 0.00287 | [l] | not captured | exact (1.0) | Dowling_2008:abstract | — | not captured |
 | first peripheral compartment volume | `Q64` · V2 | 1.49 | L | 0.00149 | [l] | not captured | llm_confirmed (0.6) | Dowling_2008:abstract | — | not captured |
 | second peripheral compartment volume | `Q77` · V3 | 33.6 | L | 0.033600000000000005 | [l] | not captured | exact (1.0) | Dowling_2008:abstract | — | not captured |
 | first intercompartmental clearance | `Q30` · Q | 5.66 | L/hr | 1.5722222222222222e-06 | [l] / [h] | not captured | llm_confirmed (0.6) | Dowling_2008:abstract | — | not captured |
-| Ka (intramuscular) | `Q49` · kabs | 0.65 | 1/hr | 0.00018055555555555557 | [1] / [h] | not captured | exact (1.0) | Dowling_2008:abstract | — | not captured |
+| second intercompartmental clearance | `Q99` · Q2 | 29.8 | L/hr | 8.277777777777778e-06 | [l] / [h] | not captured | llm_corrected (0.6) | Dowling_2008:abstract | — | not captured |
+| Ka (intramuscular) | `Q49` · kabs | 0.65 | 1/h | 0.00018055555555555557 | 1/h | not captured | exact (1.0) | Dowling_2008:abstract | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -56,8 +57,9 @@ Dowling J et al., Population pharmacokinetics of intraven…, Therapeutic drug m
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped duplicate Q30 ('second intercompartmental clearance', value 29.8) — already have one for this compound
+- unit_dimension_unknown: 'null' (kabs)
 - dropped duplicate Q49 ('Ka (intranasal)', value 1.52) — already have one for this compound
+- implicit units: 'Ka (intramuscular)' → 1/h (from the popPK convention: 'Ka is a first-order absorption rate constant, which is conventionally expressed in reciprocal time units, typically per ')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=naloxone
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - structure disagreement: deterministic 2C vs LLM 3C — review compartment count
@@ -97,7 +99,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 7 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 8 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Dowling_2008:abstract'] |
@@ -106,6 +108,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Dowling_2008:abstract'] |
 | C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Dowling_2008:abstract'] |
 | C5_dimension_Q77 | pass | [length] ** 3 | not captured | not captured | not captured | ['Dowling_2008:abstract'] |
+| C5_dimension_Q99 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Dowling_2008:abstract'] |
 | C6_cl_magnitude | fail | &lt;= 90.0 L/h | 91.0 | not captured | not captured | ['Dowling_2008:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 91 L/h | not captured | not captured | ['Dowling_2008:abstract'] |
@@ -119,7 +122,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_naloxone/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Dowling_2008` / `Dowling_2008::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_naloxone/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Dowling_2008` / `Dowling_2008::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -145,4 +148,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 17:02 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 01:03 UTC</sub>

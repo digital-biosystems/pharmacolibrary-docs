@@ -1,0 +1,63 @@
+{
+ "model_id": "Tacrolimus_Xiang2025_PD_egfr",
+ "note": "Values for the shared PD_SigmoidEmaxSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 52.3,
+  "EC50": 1e-05,
+  "Emax": -30.0,
+  "exposure_per_s": 1e-06,
+  "gamma": 1.0
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 52.3,
+  "9.999999999999999e-06": 37.3
+ },
+ "stop_time": 100.0,
+ "subtitle": "eGFR against tacrolimus concentration",
+ "template": "PD_SigmoidEmaxSweep",
+ "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Exposure–response simulated by the PD model",
+ "units": {
+  "E0": {
+   "display_only": true,
+   "display_unit": "mL/min/1.73 m2",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "EC50": {
+   "display_only": false,
+   "display_unit": "ng/mL",
+   "factor": 1e-06,
+   "si_unit": "kg/m3"
+  },
+  "Emax": {
+   "display_only": true,
+   "display_unit": "mL/min/1.73 m2",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "exposure": {
+   "display_only": false,
+   "display_unit": "ng/mL",
+   "factor": 1e-06,
+   "si_unit": "kg/m3"
+  },
+  "response_unit": "mL/min/1.73 m2"
+ },
+ "x_axis": {
+  "display_unit": "ng/mL",
+  "factor": 1e-06,
+  "label": "tacrolimus concentration",
+  "per_s": 1e-06,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "mL/min/1.73 m2",
+  "factor": 1.0,
+  "label": "eGFR"
+ }
+}

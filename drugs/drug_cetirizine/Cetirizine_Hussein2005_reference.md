@@ -5,7 +5,7 @@
 
 # cetirizine — `Cetirizine_Hussein2005_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.357). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -21,7 +21,7 @@
 
 The apparent clearance of the metabolite levocetirizine is reported as 0.044 L/h/kg, and its apparent volume of distribution is 0.639 l kg(-1). Both parameters are already normalized to body size, yet the model structure implies a further weight-based scaling, resulting in a coherence violation. Additionally, the record relies on abstract-only summary statistics, such as an AUCSS of 1952 microg l(-1) h, rather than a fully fitted model. Extracted — cetirizine: CLm,norm/F 0.044 L/h/kg, Vm/F 0.639 l kg(-1), Frel 0.28 12% of instances of suspected noncompliance, AUCSS 1.95e+03 microg l(-1) h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cetirizine, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cetirizine, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
@@ -82,18 +82,17 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.333 (5/15 fields) | 10 |
+| `gpt-oss-120b` | not confirmed | 0.357 (5/14 fields) | 9 |
 
-<details><summary>10 field discrepancies</summary>
+<details><summary>9 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[auc(ss) calculated in compliant subjects using posterior estimates of the final model]` | not captured | 1952 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc(ss) mean]` | not captured | 1952 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[auc(ss), calculated in compliant subjects using posterior estimates of the final model, was 1952 (1227-3319) microg l(-1) h (mean, min-max), a value similar to that in adults after intake of 5 mg oral solution (2036 (1414-2827) microg l(-1) h.]` | 1952 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[cl/f increased linearly with weight by].parameter_id` | Q375 | Q27 | mismatch |
-| `gpt-oss-120b` | `parameters[estimated relative bioavailability]` | not captured | 0.28 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[intercept of]` | not captured | 0.244 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[levocetirizine dose]` | not captured | 0.125 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[population estimate v/f]` | not captured | 5.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[relative bioavailability]` | not captured | 0.28 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[the estimated relative bioavailability was 0.28 in 12% of instances of suspected noncompliance.]` | 0.28 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[v/f increased linearly with weight by].parameter_id` | Q367 | Q76 | mismatch |
 | `gpt-oss-120b` | `screen.dose_compound` | cetirizine | unknown | mismatch |
@@ -127,7 +126,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_cetirizine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Hussein_2005` / `Hussein_2005::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_cetirizine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Hussein_2005` / `Hussein_2005::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

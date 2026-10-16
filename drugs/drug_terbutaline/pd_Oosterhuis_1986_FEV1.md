@@ -18,9 +18,9 @@
 
 **Model:** No model was generated from this record.
 
-> Terbutaline concentrations drive FEV1 via an effect-compartment (stimulatory) model, with PK taken from a cited PK model; the excerpts provide no mechanism details and no potency (Emax, EC50) or rate (ke0) values.
+> The record identifies terbutaline as the driver for FEV1 using an effect compartment model, but the paper excerpts are unavailable. Consequently, the specific mechanism and key potency or rate values are not provided in the available text.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
 
 - **paper:** `Oosterhuis_1986`
 - **model family:** `effect_compartment`

@@ -18,17 +18,23 @@ Oxprenolol is a non-selective beta blocker that was used to treat high blood pre
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 00:32 | 0:45 | 0/0/0 | 1/0/0 | 0/0/0 | 28,205/1,022 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
+| 2026-10-15 03:34 | 0:12 | 0/0/0 | 0/0/0 | 0/0/0 | 28,205/703 | einfracz / qwen3.8-27b | 1 | 1/0 | 1/0 | 0 |
 
 ## popPK records
 
 _not available_
 
-## Pharmacodynamics (PD)
+## ADME sites
 
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> | [Jonkers_1989_plasma_potassium_concentrations](drugs/drug_oxprenolol/pd_Jonkers_1989_plasma_potassium_concentrations.md) | plasma potassium concentrations ← oxprenolol · inhibition effect | — | Jonkers R et al., A nonsteady-state agonist antagonist in…, The Journal of pharmacology… (1989) | — |
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=oxprenolol).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
+| metabolism | liver | `CYP2D6` inhibitor/substrate | DrugBank actor |
+| excretion | kidney | `SLC22A2` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ADRB1 (target), ADRB2 (target), ADRB3 (unknown).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -57,7 +63,7 @@ _7 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | `McInnes_1988.pdf` | McInnes GT et al., Concentration-effect relationships for…, British journal of clinical… (1988) | pd | 4 | [10.1111/j.1365-2125.1988.tb03343.x](https://doi.org/10.1111/j.1365-2125.1988.tb03343.x) | [3408634](https://www.ncbi.nlm.nih.gov/pubmed/3408634) | metadata signals extractable PD data (Concentration-effect) |
 | `Maideen_2021.pdf` | Maideen NMP et al., A Review on Pharmacokinetic and Pharmac…, Current drug metabolism (2021) | pgx | 7 | [10.2174/1389200222666210614112529](https://doi.org/10.2174/1389200222666210614112529) | [34182907](https://www.ncbi.nlm.nih.gov/pubmed/34182907) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 
-<sub>queue written 2026-10-07T00:31:45.884869+00:00</sub>
+<sub>queue written 2026-10-15T03:34:04.361889+00:00</sub>
 
 ## Screened and excluded
 
@@ -74,21 +80,21 @@ _7 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | popPK | Chou_2023 | irrelevant | 0 | 0 | The study investigates the pharmacodynamic effect of cutaneous analgesia in rats and does not report pharmacokinetic parameters such as clearance, volume, or half-life. |
 | popPK | Dayer_1986 | irrelevant | 2 | 0 | Oxprenolol is used only as a comparator for relative potency and duration of action, with no quantitative pharmacokinetic parameters (CL, V, t1/2) reported for it in the evidence. |
 | PD | Dayer_1986 | not_relevant | 2 | 1 | The text provides only qualitative comparisons of relative potency (dose equivalence) and duration of action, without reporting specific numeric PD parameters (e.g., EC50, Emax) or concentration-effect curves for oxprenolol. |
-| PGx | Dayer_1986 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects for bopindolol and metoprolol, but oxprenolol is only used as a comparator in a study involving only extensive metabolizers, with no genetic variation analysis for oxprenolol. |
+| PGx | Dayer_1986 | not_relevant | 0 | 0 | Oxprenolol is used only as a comparative reference in a potency study, and no pharmacogenomic effects on its parameters are reported. |
 | popPK | Esler_2022 | irrelevant | 0 | 0 | The paper is a review/position statement on hypertension guidelines and does not report original quantitative pharmacokinetic parameters for oxprenolol. |
 | PD | Esler_2022 | not_relevant | 1 | 0 | The paper is a qualitative position statement arguing against guideline downgrading of beta-blockers and does not report any numeric pharmacodynamic parameters or exposure-response data for oxprenolol. |
 | popPK | Foëx_1981 | irrelevant | 0 | 0 | The study is a pharmacodynamic dose-response investigation in dogs and does not report any pharmacokinetic parameters such as clearance, volume, or half-life for oxprenolol. |
 | popPK | Först_2014 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of membrane interactions using fluorescence and simulations, reporting no pharmacokinetic parameters for oxprenolol. |
 | PD | Först_2014 | not_relevant | 0 | 0 | The paper investigates biophysical interactions with lipid membranes using fluorescence and simulations, not pharmacodynamic exposure-response relationships or dose-effect curves for clinical endpoints. |
-| popPK | Hellwich_1995 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of membrane binding and partition coefficients, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | Hellwich_1995 | irrelevant | 0 | 0 | The study investigates in vitro membrane binding and partition coefficients of oxprenolol, which are physicochemical properties rather than in vivo pharmacokinetic disposition parameters. |
 | PD | Hellwich_1995 | not_relevant | 0 | 0 | The paper describes in vitro membrane binding/partitioning of oxprenolol to liposomes, not a pharmacodynamic (exposure-response or dose-response) effect on a biological system. |
 | popPK | Jennings_1981 | irrelevant | 0 | 0 | no_text gate: only 143 chars of text extracted (&lt; 400) |
 | PD | Jennings_1981 | not_relevant | 0 | 0 | The provided text is only a title and does not contain the full text, data, or numeric PD parameters required to assess the exposure-response relationship. |
 | popPK | Jeong_2012 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology investigation of carvedilol on Kv1.5 channels, and oxprenolol is only mentioned as a comparator with no pharmacokinetic parameters reported. |
 | PD | Jeong_2012 | not_relevant | 0 | 0 | The paper reports that oxprenolol had little or no effect on Kv1.5 currents and does not provide numeric PD parameters for oxprenolol. |
-| popPK | Jonkers_1987 | irrelevant | 1 | 0 | The study focuses on the pharmacokinetics of terbutaline (the subject drug) and its interaction with oxprenolol, which is used as a co-administered antagonist rather than the primary subject of PK parameter estimation. |
+| popPK | Jonkers_1987 | irrelevant | 3 | 1 | The study focuses on the PK/PD of terbutaline, using oxprenolol as a co-administered antagonist; no quantitative disposition parameters (CL, V, etc.) are reported for oxprenolol itself. |
 | popPK | Jonkers_1989 | irrelevant | 2 | 0 | The study focuses on beta-2 selectivity (IC50) and the effect of oxprenolol on terbutaline's pharmacokinetics, rather than reporting quantitative disposition parameters (CL, V, t1/2) for oxprenolol itself. |
-| popPK | Kawashima_1981 | irrelevant | 0 | 0 | The provided evidence contains only software metadata and no scientific content regarding oxprenolol pharmacokinetics. |
+| popPK | Kawashima_1981 | irrelevant | 0 | 0 | The provided evidence contains only software metadata and no scientific content, data, or text regarding oxprenolol pharmacokinetics. |
 | popPK | Kendall_1983 | irrelevant | 2 | 0 | The text is a qualitative review describing general pharmacokinetic properties (e.g., lipophilicity, protein binding) without reporting specific quantitative disposition parameters (CL, V, t1/2) for oxprenolol. |
 | PD | Kendall_1983 | not_relevant | 2 | 0 | The text is a qualitative review stating that beta-blocking effects correlate with plasma concentrations but explicitly notes that direct correlation with therapeutic actions is not possible, providing no numeric PD parameters or curves. |
 | popPK | Kendall_1984 | irrelevant | 2 | 0 | The study reports qualitative changes in AUC and Cmax for oxprenolol due to drug interaction but does not provide specific quantitative PK parameter values (CL, V, ka, etc.) in the evidence. |
@@ -106,7 +112,7 @@ _7 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | PD | Lochan_1981 | not_relevant | 3 | 2 | The paper reports qualitative speed of onset and relative ranking of drugs but does not provide numeric concentration-effect curves or specific PD parameters (Emax, EC50) for oxprenolol. |
 | popPK | Maideen_2021 | irrelevant | 0 | 0 | The paper is a review of drug interactions without original quantitative pharmacokinetic parameter values for oxprenolol. |
 | PD | Maideen_2021 | not_relevant | 1 | 0 | The paper is a qualitative review of drug interactions and does not report specific numeric PD parameters or concentration-effect curves for oxprenolol. |
-| PGx | Maideen_2021 | not_relevant | 0 | 0 | The paper reviews drug-drug interactions (CYP inhibition/induction) and does not report pharmacogenomic effects of gene variants on oxprenolol PK/PD. |
+| PGx | Maideen_2021 | not_relevant | 1 | 2 | The paper is a review of drug-drug interactions with a focus on CYP enzymes generally, but it does not report specific pharmacogenomic effects (gene variants) on the PK/PD parameters of oxprenolol. |
 | popPK | McInnes_1988 | irrelevant | 0 | 0 | no_text gate: only 89 chars of text extracted (&lt; 400) |
 | popPK | Moretti-Rojas_1983 | irrelevant | 0 | 0 | The study is an in-vitro receptor binding assay where oxprenolol is used only as a competitive antagonist probe, not a pharmacokinetic study of oxprenolol disposition. |
 | PD | Moretti-Rojas_1983 | not_relevant | 1 | 2 | The paper reports receptor binding affinity (IC50) for oxprenolol in a radioligand binding assay, which is a pharmacological binding parameter, not a pharmacodynamic exposure-response or dose-response relationship for a physiological effect. |
@@ -116,7 +122,7 @@ _7 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | popPK | Sakuta_1992 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology investigation of ion channel blockade in Xenopus oocytes and does not report pharmacokinetic parameters for oxprenolol. |
 | popPK | Saunders_1985 | irrelevant | 0 | 0 | no_text gate: only 85 chars of text extracted (&lt; 400) |
 | popPK | Silke_1981 | irrelevant | 0 | 0 | The study reports haemodynamic dose-response effects (blood pressure, heart rate) rather than pharmacokinetic disposition parameters (CL, V, t1/2). |
-| popPK | Sári_1998 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of nitroglycerin tolerance in rabbit sphincter of Oddi, where oxprenolol is used only as a non-selective beta-blocker in a NANC cocktail, not as the subject of PK analysis. |
+| popPK | Sári_1998 | irrelevant | 0 | 0 | This is an in-vitro physiological study on rabbit sphincter of Oddi where oxprenolol is used as a diagnostic blocking agent, not a subject of pharmacokinetic analysis. |
 | PD | Sári_1998 | not_relevant | 0 | 0 | The paper studies nitroglycerin tolerance in rabbit sphincter of Oddi; oxprenolol is used only as a fixed-concentration blocker in a pharmacological cocktail, with no dose-response or exposure-response analysis for oxprenolol. |
 
 ---

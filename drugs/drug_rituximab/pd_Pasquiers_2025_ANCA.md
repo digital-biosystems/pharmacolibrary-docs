@@ -1,8 +1,8 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;rituximab&quot;,&quot;href&quot;:&quot;drugs/drug_rituximab/&quot;},{&quot;label&quot;:&quot;Pasquiers_2025 \u00b7 PD MPO-ANCA and PR3-ANCA&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rituximab_Pasquiers2025_reference&quot;,&quot;label&quot;:&quot;Pasquiers_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rituximab/Rituximab_Pasquiers2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rituximab_Bender2024_reference&quot;,&quot;label&quot;:&quot;Bender_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rituximab/Rituximab_Bender2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rituximab_Liu2022_reference&quot;,&quot;label&quot;:&quot;Liu_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rituximab/Rituximab_Liu2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Li_2024_E&quot;,&quot;label&quot;:&quot;Li_2024 \u00b7 E&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_rituximab/pd_Li_2024_E.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# MPO-ANCA and PR3-ANCA — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span>
+# MPO-ANCA and PR3-ANCA — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -14,16 +14,16 @@
 
 ## Record summary
 
-**As extracted:** Rituximab (concentrations from this paper's PK model) drives MPO-ANCA and PR3-ANCA (in U/mL): indirect response — drug inhibits the production of MPO-ANCA and PR3-ANCA.
+**As extracted:** Rituximab (concentrations from this paper's PK model) drives MPO-ANCA and PR3-ANCA (in U/mL): delayed effect through transit (transduction) compartments.
 
-**Model:** Model available in **Models**; browser simulation unavailable.
+**Model:** No model was generated from this record.
 
-> Rituximab concentrations (mg/L) inhibit the production of MPO-ANCA and PR3-ANCA (U/mL) via an indirect response model with a mean transit time of 31.9 days and a negative feedback term (GammaANCA = 0.03). The half-maximal inhibitory concentration (IC50,ANCA) for rituximab is 264 mg/L, with a baseline ANCA level (BASEANCA) of 75.6 U/mL.
+> Rituximab concentration acts as an inhibitor of ANCA production via a transit compartment model, where rituximab reduces ANCA formation with a negative feedback effect (Gamma) and a half-maximal inhibitory concentration (IC50) of 264 mg/L. The model assumes a baseline ANCA level of 75.6 U/mL, with the transit mean time (MTT) for production and elimination processes estimated at 31.9 days.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Pasquiers_2025`
-- **model family:** `indirect_response_i`
+- **model family:** `transduction`
 - **driver:** `pk_record`
 - **tier:** population
 - **effect:** inhibition/proportional
@@ -36,7 +36,7 @@ Pasquiers B et al., Comparison of rituximab induction and m…, EBioMedicine (20
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
 | PD (effect) | BASEANCA | `Q324` · not captured | 75.6 | U/mL | not captured | llm (not captured) | Pasquiers_2025:pdv3 |
-| PD (effect) | MTTANCA | `Q338` · not captured | 31.9 | days | not captured | llm (not captured) | Pasquiers_2025:pdv3 |
+| model term | MTTANCA | `Q900` · not captured | 31.9 | days | not captured | llm (not captured) | Pasquiers_2025:pdv3 |
 | model term | GammaANCA | `Q900` · not captured | 0.03 | not captured | not captured | llm (not captured) | Pasquiers_2025:pdv3 |
 | PD (effect) | IC50,ANCA | `Q322` · not captured | 264 | mg/L | not captured | llm (not captured) | Pasquiers_2025:pdv3 |
 | variability | ANCA σprop | `Q315` · not captured | 0.40 | not captured | not captured | llm (not captured) | Pasquiers_2025:pdv3 |
@@ -45,41 +45,6 @@ Pasquiers B et al., Comparison of rituximab induction and m…, EBioMedicine (20
 <summary>Parameter definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
-
-
-## Exposure-response model
-
-`Rituximab_Pasquiers2025_PD_anca` — turnover (indirect response type I), `response = E0*(1 - Emax*frac)`
-
-| parameter | value (paper units) | SI |
-|---|---|---|
-| E0 | 75.6 U/mL | 1.255e-19 kg/m3 |
-| Emax | 1 | — |
-| EC50 | 264 mg/L | 0.264 kg/m3 |
-| gamma | 1 | — |
-
-Closed-form check points (response, SI): `at_0` = 1.255e-19, `at_EC50` = 6.277e-20, `at_inf` = 0
-
-Deviations:
-
-- `defaulted_parameters` — Emax, gamma
-
-## Review
-
-Verdict <span class="pk-badge pk-badge--orange">needs review</span> · route to `scholar`
-
-| check | status | note |
-|---|---|---|
-| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
-| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
-| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
-| `T2_direction` | pass | the response falls, as IDR-I predicts |
-| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
-| `T4_defaults` | fail | a core parameter took a library default: Emax |
-
-Advisory:
-
-- defaulted: Emax — a row the paper has and the record lacks
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
@@ -112,14 +77,14 @@ Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_rituximab/Rituximab_Pasquiers2025_PD_anca/Rituximab_Pasquiers2025_PD_anca_modelica.zip" download>Rituximab_Pasquiers2025_PD_anca_modelica.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_rituximab/Rituximab_Pasquiers2025_PD_anca/Rituximab_Pasquiers2025_PD_anca_matlab.zip" download>Rituximab_Pasquiers2025_PD_anca_matlab.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_rituximab/Rituximab_Pasquiers2025_PD_anca/Rituximab_Pasquiers2025_PD_anca_sbml.zip" download>Rituximab_Pasquiers2025_PD_anca_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_rituximab/Rituximab_Pasquiers2025_PD_anca/Rituximab_Pasquiers2025_PD_anca_cellml.zip" download>Rituximab_Pasquiers2025_PD_anca_cellml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>

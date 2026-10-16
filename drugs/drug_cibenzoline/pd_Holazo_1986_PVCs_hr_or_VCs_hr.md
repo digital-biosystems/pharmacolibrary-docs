@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;cibenzoline&quot;,&quot;href&quot;:&quot;drugs/drug_cibenzoline/&quot;},{&quot;label&quot;:&quot;Holazo_1986 \u00b7 PD premature ventricular contractions (PVCs) per hour or ventricular contractions (VCs) per hour&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# premature ventricular contractions (PVCs) per hour or ventricular contractions (VCs) per hour — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.7). Primary extraction retained.">cross-check: disputed</span>
+# premature ventricular contractions (PVCs) per hour or ventricular contractions (VCs) per hour — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by ollama:gpt-oss:120b (not confirmed, agreement 0.778), einfracz:gpt-oss-120b (not confirmed, agreement 0.7). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -13,17 +13,17 @@
 
 ## Record summary
 
-**As extracted:** Cibenzoline (concentrations from the PK model of Brazzell_1985) drives premature ventricular contractions (PVCs) per hour or ventricular contractions (VCs) per hour (in PVCs/hr or VCs/hr): direct sigmoid Emax (Hill) effect.
+**As extracted:** Cibenzoline (concentrations from this paper's PK model) drives premature ventricular contractions (PVCs) per hour or ventricular contractions (VCs) per hour (in PVCs/hr or VCs/hr): direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
 
-> Cibenzoline plasma concentrations (ng/mL) inhibit the rate of premature ventricular contractions (PVCs/hr) via a sigmoid Emax model with an effect compartment (ke0 = 0.101 hr-1). The model parameters are C50 = 391 ng/mL, gamma = 7.2, and E0 = 98 PVCs/hr.
+> Cibenzoline plasma concentrations inhibit the rate of premature ventricular contractions (PVCs) per hour via a sigmoid Emax model linked to the plasma concentration through an effect compartment (ke0). The paper reports patient-specific parameters including ke0 values of 0.101, 0.028, 0.036, and 0.147 hr-1; C(ss)(50) values of 391, 77, 230, and 91 ng/mL; gamma values of 7.2, 0.5, 1.3, and 1.1; and baseline E0 values of 98, 103, 2,212, and 454 PVCs/hr.
 >
 > <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
 
 - **paper:** `Holazo_1986`
 - **model family:** `sigmoid_emax`
-- **driver:** `cited_pk`
+- **driver:** `pk_record`
 - **tier:** descriptive
 - **effect:** inhibition/additive
 
@@ -35,9 +35,21 @@ Holazo AA et al., Pharmacokinetic and pharmacodynamic mod…, Journal of clinica
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
 | PD (effect) | keo | `Q326` · not captured | 0.101 | hr-1 | not captured | llm (not captured) | Holazo_1986:pdv3 |
-| PD (effect) | C(50) | `Q322` · not captured | 391 | ng/mL | not captured | llm (not captured) | Holazo_1986:pdv3 |
+| PD (effect) | C(ss)(50) | `Q322` · not captured | 391 | ng/mL | not captured | llm (not captured) | Holazo_1986:pdv3 |
 | PD (effect) | gamma | `Q325` · not captured | 7.2 | not captured | not captured | llm (not captured) | Holazo_1986:pdv3 |
 | PD (effect) | E0 | `Q324` · not captured | 98 | PVCs/hr or VCs/hr | not captured | llm (not captured) | Holazo_1986:pdv3 |
+| PD (effect) | keo | `Q326` · not captured | 0.028 | hr-1 | not captured | llm (not captured) | Holazo_1986:pdv3 |
+| PD (effect) | C(ss)(50) | `Q322` · not captured | 77 | ng/mL | not captured | llm (not captured) | Holazo_1986:pdv3 |
+| PD (effect) | gamma | `Q325` · not captured | 0.5 | not captured | not captured | llm (not captured) | Holazo_1986:pdv3 |
+| PD (effect) | E0 | `Q324` · not captured | 103 | PVCs/hr or VCs/hr | not captured | llm (not captured) | Holazo_1986:pdv3 |
+| PD (effect) | keo | `Q326` · not captured | 0.036 | hr-1 | not captured | llm (not captured) | Holazo_1986:pdv3 |
+| PD (effect) | C(ss)(50) | `Q322` · not captured | 230 | ng/mL | not captured | llm (not captured) | Holazo_1986:pdv3 |
+| PD (effect) | gamma | `Q325` · not captured | 1.3 | not captured | not captured | llm (not captured) | Holazo_1986:pdv3 |
+| PD (effect) | E0 | `Q324` · not captured | 2,212 | PVCs/hr or VCs/hr | not captured | llm (not captured) | Holazo_1986:pdv3 |
+| PD (effect) | keo | `Q326` · not captured | 0.147 | hr-1 | not captured | llm (not captured) | Holazo_1986:pdv3 |
+| PD (effect) | C(ss)(50) | `Q322` · not captured | 91 | ng/mL | not captured | llm (not captured) | Holazo_1986:pdv3 |
+| PD (effect) | gamma | `Q325` · not captured | 1.1 | not captured | not captured | llm (not captured) | Holazo_1986:pdv3 |
+| PD (effect) | E0 | `Q324` · not captured | 454 | PVCs/hr or VCs/hr | not captured | llm (not captured) | Holazo_1986:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -45,20 +57,23 @@ Holazo AA et al., Pharmacokinetic and pharmacodynamic mod…, Journal of clinica
 </details>
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `ollama:gpt-oss:120b` | not confirmed | 0.778 (7/9 fields) | 2 |
 | `einfracz:gpt-oss-120b` | not confirmed | 0.7 (7/10 fields) | 3 |
 
-<details><summary>3 field discrepancies</summary>
+<details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `einfracz:gpt-oss-120b` | `parameters[Q321]` | not captured | 391 | only_one_extracted |
 | `einfracz:gpt-oss-120b` | `parameters[Q322]` | 391 | not captured | only_one_extracted |
 | `einfracz:gpt-oss-120b` | `parameters[Q328]` | not captured | 0.064 | only_one_extracted |
+| `ollama:gpt-oss:120b` | `parameters[Q321]` | not captured | 91 | only_one_extracted |
+| `ollama:gpt-oss:120b` | `parameters[Q322]` | 91 | not captured | only_one_extracted |
 
 </details>
 

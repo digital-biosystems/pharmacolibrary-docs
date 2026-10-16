@@ -48,6 +48,22 @@ Epinephrine (adrenaline) is used for emergencies and conditions such as anaphyla
 | <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Yoo_2015_SE_Drug](drugs/drug_epinephrine/pd_Yoo_2015_SE_Drug.md) | Subjective effects: Drug effect ← norepinephrine · direct sigmoid Emax (Hill) effect | — | Yoo H et al., Mechanism-based population pharmacokine…, European journal of clinica… (2015) | [10.1007/s00228-015-1913-0](https://doi.org/10.1007/s00228-015-1913-0) |
 | <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Yoo_2015_SE_Perf](drugs/drug_epinephrine/pd_Yoo_2015_SE_Perf.md) | Subjective effects: Performance ← norepinephrine · direct sigmoid Emax (Hill) effect | — | Yoo H et al., Mechanism-based population pharmacokine…, European journal of clinica… (2015) | [10.1007/s00228-015-1913-0](https://doi.org/10.1007/s00228-015-1913-0) |
 
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=epinephrine).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | skeletal muscle | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| absorption | skin | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| metabolism | brain | `COMT` substrate, `MAOA` substrate | DrugBank actor |
+| metabolism | kidney | `COMT` substrate | DrugBank actor |
+| metabolism | liver | `COMT` substrate, `CYP2C9` inhibitor, `CYP3A4` inhibitor, `MAOA` substrate, `SLC22A1` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inhibitor, `MAOA` substrate | DrugBank actor |
+| excretion | kidney | `SLC22A2` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ADRA1A (target), ADRA1B (target), ADRA1D (target), ADRA2A (target), ADRA2B (target), ADRB1 (target), ADRB2 (target), TNF (target).</sub>
+
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
 <table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>

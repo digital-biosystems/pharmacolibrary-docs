@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;cilostazol&quot;,&quot;href&quot;:&quot;drugs/drug_cilostazol/&quot;},{&quot;label&quot;:&quot;Jung_2018 \u00b7 PD closure time&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# closure time — PD  <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.7). Primary extraction retained.">cross-check: disputed</span>
+# closure time — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.7). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -13,16 +13,16 @@
 
 ## Record summary
 
-**As extracted:** Cilostazol (concentrations from the PK model of Lee_2014) drives closure time (in seconds): indirect response — drug inhibits the production of closure time.
+**As extracted:** Cilostazol (concentrations from the PK model of Lee_2014) drives closure time (in seconds): indirect response — drug inhibits the loss of closure time.
 
 **Model:** No model was generated from this record.
 
-> Cilostazol plasma concentrations (ng/ml) inhibit the production of closure time (seconds) via an indirect response model with a proportional effect. The model parameters are Kout = 0.613 hr⁻¹, Emax = 0.192, EC50 = 730 ng/ml, γ = 5.137, and a baseline closure time of 85.36 seconds.
+> Cilostazol plasma concentrations (ng/ml) indirectly inhibit the production of closure time (seconds) via an indirect response model. The model is characterized by a Kout of 0.613 hr⁻¹, an Emax of 0.192, an EC50 of 730 ng/ml, and a gamma of 5.137.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Jung_2018`
-- **model family:** `indirect_response_i`
+- **model family:** `indirect_response_ii`
 - **driver:** `cited_pk`
 - **tier:** population
 - **effect:** inhibition/proportional
@@ -38,7 +38,6 @@ Jung YS et al., Population pharmacodynamics of cilostaz…, Translational and cl
 | PD (effect) | Emax | `Q323` · not captured | 0.192 | not captured | not captured | llm (not captured) | Jung_2018:pdv3 |
 | PD (effect) | EC 50 | `Q322` · not captured | 730 | ng/ml | not captured | llm (not captured) | Jung_2018:pdv3 |
 | PD (effect) | γ | `Q325` · not captured | 5.137 | not captured | not captured | llm (not captured) | Jung_2018:pdv3 |
-| PD (effect) | baseline CT | `Q324` · not captured | 85.36 | seconds | not captured | llm (not captured) | Jung_2018:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -47,7 +46,7 @@ Jung YS et al., Population pharmacodynamics of cilostaz…, Translational and cl
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
@@ -57,9 +56,9 @@ Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `einfracz:gpt-oss-120b` | `model_family` | indirect_response_i | indirect_response_ii | mismatch |
 | `einfracz:gpt-oss-120b` | `parameters[Q321]` | not captured | 730 | only_one_extracted |
 | `einfracz:gpt-oss-120b` | `parameters[Q322]` | 730 | not captured | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q324]` | not captured | 85.36 | only_one_extracted |
 
 </details>
 

@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01C&quot;,&quot;href&quot;:&quot;atc/C01C.md&quot;},{&quot;label&quot;:&quot;octopamine&quot;,&quot;href&quot;:&quot;drugs/drug_octopamine/&quot;},{&quot;label&quot;:&quot;Schendzielorz_2015 \u00b7 PD cAMP&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01C&quot;,&quot;href&quot;:&quot;atc/C01C.md&quot;},{&quot;label&quot;:&quot;octopamine&quot;,&quot;href&quot;:&quot;drugs/drug_octopamine/&quot;},{&quot;label&quot;:&quot;Schendzielorz_2015 \u00b7 PD cAMP concentration&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# cAMP — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">other animal</span>
+# cAMP concentration — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">other animal</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -15,13 +15,13 @@
 
 ## Record summary
 
-**As extracted:** Octopamine (measured concentrations) drives cAMP (in pmol/mg): direct Emax (saturable) effect.
+**As extracted:** Octopamine (measured concentrations) drives cAMP concentration (in pmol/mg): direct Emax (saturable) effect.
 
 **Model:** No model was generated from this record.
 
-> Octopamine stimulates cAMP production in hawkmoth antennae via a direct Emax mechanism, with EC50 values of 234.5 nM and 703.5 nM and maximal cAMP levels of 187.8 pmol/mg and 191.2 pmol/mg.
+> The study describes a direct Emax stimulation model where octopamine concentration (in mol/L) drives cAMP production (in pmol/mg) via OA-receptor activation, a mechanism supported by the antagonist EPI and the cAMP-specific activator FSK. The derived EC50 values were 703.5 nM at ZT 9 and 234.5 nM at ZT 20, with calculated maximal cAMP concentrations of 187.8 pmol/mg and 191.2 pmol/mg, respectively.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Schendzielorz_2015`
 - **model family:** `emax`
@@ -36,10 +36,10 @@ Schendzielorz T et al., Octopamine regulates antennal sensory n…, PloS one (20
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | EC50 | `Q321` · not captured | 234.5 | nM | not captured | llm (not captured) | Schendzielorz_2015:pdv3 |
 | PD (effect) | EC50 | `Q321` · not captured | 703.5 | nM | not captured | llm (not captured) | Schendzielorz_2015:pdv3 |
-| PD (effect) | maximal value | `Q320` · not captured | 187.8 | pmol/mg | not captured | llm (not captured) | Schendzielorz_2015:pdv3 |
-| PD (effect) | maximal value | `Q320` · not captured | 191.2 | pmol/mg | not captured | llm (not captured) | Schendzielorz_2015:pdv3 |
+| PD (effect) | EC50 | `Q321` · not captured | 234.5 | nM | not captured | llm (not captured) | Schendzielorz_2015:pdv3 |
+| PD (effect) | calculated maximal value of the EC50 equation | `Q320` · not captured | 187.8 | pmol/mg | not captured | llm (not captured) | Schendzielorz_2015:pdv3 |
+| PD (effect) | calculated maximal value of the EC50 equation | `Q320` · not captured | 191.2 | pmol/mg | not captured | llm (not captured) | Schendzielorz_2015:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -48,7 +48,7 @@ Schendzielorz T et al., Octopamine regulates antennal sensory n…, PloS one (20
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
@@ -61,7 +61,7 @@ Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-
 | `einfracz:gpt-oss-120b` | `effect_form` | unknown | additive | mismatch |
 | `einfracz:gpt-oss-120b` | `model_family` | emax | sigmoid_emax | mismatch |
 | `einfracz:gpt-oss-120b` | `parameters[Q320].value` | 191.2 | 191.2 pmol/mg | mismatch |
-| `einfracz:gpt-oss-120b` | `parameters[Q321]` | 703.5 | not captured | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q321]` | 234.5 | not captured | only_one_extracted |
 | `einfracz:gpt-oss-120b` | `parameters[Q322]` | not captured | 234.5 nM | only_one_extracted |
 
 </details>

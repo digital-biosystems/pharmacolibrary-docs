@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01M&quot;,&quot;href&quot;:&quot;atc/J01M.md&quot;},{&quot;label&quot;:&quot;enoxacin&quot;,&quot;href&quot;:&quot;drugs/drug_enoxacin/&quot;},{&quot;label&quot;:&quot;Marchbanks_1990 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Enoxacin_Naber1989_iox&quot;,&quot;label&quot;:&quot;Naber_1989_iox&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_enoxacin/Enoxacin_Naber1989_iox.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Enoxacin_Marchbanks1990_reference&quot;,&quot;label&quot;:&quot;Marchbanks_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_enoxacin/Enoxacin_Marchbanks1990_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # enoxacin — `Enoxacin_Marchbanks1990_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429), gpt-oss-120b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -12,15 +13,15 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 ### Reviewer guidance
 
-**Only clearance was extracted — no volume; cL and CL/F have no unit.**
+**The model does not reproduce the paper's terminal half-life (paper 8.2, model 7.21).**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (CL and CL/F), so that value has no SI equivalent. Extracted — enoxacin: CL 2.58 ml/min per kg, CL/F 3.01 ml/min per kg.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — enoxacin: V 1.61 liters/kg, CL 2.58 mL/min/kg.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -28,20 +29,20 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the
 Marchbanks CR et al., Pharmacokinetics and bioavailability of…, Antimicrobial agents and ch… (1990)
   ·  DOI: [10.1128/AAC.34.10.1966](https://doi.org/10.1128/AAC.34.10.1966)
 
-<div class="pk-model-meta" hidden drug="enoxacin" model-id="Enoxacin_Marchbanks1990_reference" status="needs_review" stale="false" population="elderly patients with complicated urinary tract infections" measured-compound="enoxacin" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="enoxacin" model-id="Enoxacin_Marchbanks1990_reference" status="needs_review" stale="false" population="elderly men with complicated urinary tract infections" measured-compound="enoxacin" parameterization="mechanistic" topology="1C"></div>
 
-**Model structure:** 1-compartment; no model was built for this record.  
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.
 
-**Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** mechanistic.
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| enoxacin CL (or CL/F following oral dosing) | `Q22` · CL | 2.58 | ml/min per kg | not captured | ml/min per kg | not captured | boundary (0.8) | Marchbanks_1990:other_prose | — | not captured |
-| enoxacin CL (or CL/F following oral dosing) following i.v. | `Q27` · CL/F | 3.01 | ml/min per kg | not captured | ml/min per kg | not captured | boundary (0.8) | Marchbanks_1990:other_prose | — | not captured |
+| volume of distribution | `Q61` · V | 1.61 | liters/kg | 0.11270000000000001 | L | not captured | exact (1.0) | Marchbanks_1990:other_prose | — | not captured |
+| total body clearance | `Q22` · CL | 2.58 | mL/min/kg | 3.0099999999999996e-06 | L/h | not captured | boundary (0.8) | Marchbanks_1990:other_prose | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -51,12 +52,10 @@ Marchbanks CR et al., Pharmacokinetics and bioavailability of…, Antimicrobial 
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): '0' — extend the ontology if this is a real PK parameter (source ['tab_1:row1:col1', 'tab_1:row1:col2', 'tab_1:row1:col3', 'tab_1:row1:col5'])
-- salvaged Q22 ('enoxacin CL (or CL/F following oral dosing)'=2.58) from results prose — parameter table was unreadable
-- salvaged Q27 ('enoxacin CL (or CL/F following oral dosing) following i.v.'=3.01) from results prose — parameter table was unreadable
-- implicit units: 'enoxacin CL (or CL/F following oral dosing)' — the LLM proposed 'ml/min per kg', whose dimension does not fit Q22; left unset
-- implicit units: 'enoxacin CL (or CL/F following oral dosing) following i.v.' — the LLM proposed 'ml/min per kg', whose dimension does not fit Q27; left unset
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=enoxacin
+- salvaged Q61 ('volume of distribution'=1.61) from results prose — parameter table was unreadable
+- salvaged Q22 ('total body clearance'=2.58) from results prose — parameter table was unreadable
+- implicit units: 'total body clearance' → mL/min/kg (from the paper text: 'Mean values for major pharmacokinetic parameters (noncompartmental) were similar following i.v. and oral administration,')
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=enoxacin
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - status held at route_to_review — not promoted
@@ -64,19 +63,21 @@ Marchbanks CR et al., Pharmacokinetics and bioavailability of…, Antimicrobial 
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- unparsed cell tab_1:row1:col4 = 's0'
+- table tab_1: unknown_column_role
+- final table tab_1: no supported point estimates; targeted recovery unresolved
 - LLM selected parameter table(s) 2
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss:120b` | not confirmed | 0.429 (3/7 fields) | 4 |
 | `gpt-oss-120b` | not confirmed | 0.429 (3/7 fields) | 4 |
 
-<details><summary>4 field discrepancies</summary>
+<details><summary>8 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -84,6 +85,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | `gpt-oss-120b` | `parameters[0]` | not captured | 20 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[enoxacin cl (or cl/f following oral dosing) following i.v.]` | 3.01 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[enoxacin cl]` | 2.58 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss:120b` | `parameters[0]` | not captured | 20 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[enoxacin cl (or cl/f following oral dosing) following i.v.]` | 3.01 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[enoxacin cl]` | 2.58 | not captured | only_one_extracted |
 
 </details>
 
@@ -99,11 +104,28 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | ml/min per kg | not captured | not captured | ['Marchbanks_1990:other_prose'] |
-| C5_unit_missing_Q27 | fail | [length] ** 3 / [time] | ml/min per kg | not captured | not captured | ['Marchbanks_1990:other_prose'] |
-| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Marchbanks_1990:other_prose'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 2.58 | not captured | not captured | ['Marchbanks_1990:other_prose'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 10.8 L/h | not captured | not captured | ['Marchbanks_1990:other_prose'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 113 L | not captured | not captured | ['Marchbanks_1990:other_prose'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_output_variable | not captured | pass | C_central (measured=enoxacin) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
+| T1_t_half_terminal | reference | pass | 8.2 | 7.209337767896453 | 0.8792 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 9.1 | 7.209337767896453 | 0.7922 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | skipped | not captured | 7.209337767896453 | not captured | non-numeric value |
+| T1_t_half_terminal | reference | fail | 14.9 | 7.209337767896453 | 0.4838 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | skipped | not captured | 7.209337767896453 | not captured | non-numeric value |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -112,7 +134,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_enoxacin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Marchbanks_1990` / `Marchbanks_1990::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_enoxacin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Marchbanks_1990` / `Marchbanks_1990::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_enoxacin/models/modelica/Enoxacin_Marchbanks1990_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_enoxacin/models/modelica/Enoxacin_Marchbanks1990_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_enoxacin/models/modelica/Enoxacin_Marchbanks1990_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -121,21 +146,26 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_enoxacin/Enoxacin_Marchbanks1990_reference/Enoxacin_Marchbanks1990_reference_modelica.zip" download>Enoxacin_Marchbanks1990_reference_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_enoxacin/Enoxacin_Marchbanks1990_reference/Enoxacin_Marchbanks1990_reference_fmi.zip" download>Enoxacin_Marchbanks1990_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_enoxacin/Enoxacin_Marchbanks1990_reference/Enoxacin_Marchbanks1990_reference_matlab.zip" download>Enoxacin_Marchbanks1990_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_enoxacin/Enoxacin_Marchbanks1990_reference/Enoxacin_Marchbanks1990_reference_matlab_simbio.zip" download>Enoxacin_Marchbanks1990_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_enoxacin/Enoxacin_Marchbanks1990_reference/Enoxacin_Marchbanks1990_reference_sbml.zip" download>Enoxacin_Marchbanks1990_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_enoxacin/Enoxacin_Marchbanks1990_reference/Enoxacin_Marchbanks1990_reference_cellml.zip" download>Enoxacin_Marchbanks1990_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_enoxacin/Enoxacin_Marchbanks1990_reference/Enoxacin_Marchbanks1990_reference.svg" alt="Enoxacin_Marchbanks1990_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+**Administration: intravenous** — 400 mg infusion over 10 min, single dose. Dose in the paper: 400 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_enoxacin/Enoxacin_Marchbanks1990_reference/Enoxacin_Marchbanks1990_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_enoxacin/Enoxacin_Marchbanks1990_reference/Enoxacin_Marchbanks1990_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C` · parameters `Enoxacin_Marchbanks1990_reference_params.json` · controls `Enoxacin_Marchbanks1990_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 11:50 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 22:48 UTC</sub>

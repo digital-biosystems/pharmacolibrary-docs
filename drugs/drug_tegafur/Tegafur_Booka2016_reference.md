@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;tegafur&quot;,&quot;href&quot;:&quot;drugs/drug_tegafur/&quot;},{&quot;label&quot;:&quot;Booka_2016 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tegafur_Kim2017_multiple_dose&quot;,&quot;label&quot;:&quot;Kim_2017_multiple_dose&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tegafur/Tegafur_Kim2017_multiple_dose.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tegafur_Kim2017_single_dose&quot;,&quot;label&quot;:&quot;Kim_2017_single_dose&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tegafur/Tegafur_Kim2017_single_dose.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tegafur_Zuo2024_reference&quot;,&quot;label&quot;:&quot;Zuo_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tegafur/Tegafur_Zuo2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tegafur_Zuo2024_reference&quot;,&quot;label&quot;:&quot;Zuo_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tegafur/Tegafur_Zuo2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # tegafur — `Tegafur_Booka2016_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -17,34 +17,35 @@
 
 ### Reviewer guidance
 
-**The model for tegafur to 5-FU conversion lacks a specific metabolic rate constant, leaving the metabolite's clearance as an orphan parameter.**
+**CLm/F and V1/F have no unit.**
 
-The record lists an apparent clearance (CLm/F) of 41.8 L/h/m2 and apparent volume (Vm/F) of 23.6 L/m2 for the metabolite. However, the structural link from tegafur to 5-FU is defined without an associated rate parameter. Consequently, the model builder could not establish a functional path for the metabolite's kinetics from the parent drug. Extracted — tegafur: CLm/F 41.8 L/h/m2, Vm/F 23.6 L/m2.
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (CLm/F and V1/F), so that value has no SI equivalent. None of the extracted parameters is tegafur's own; they describe 5-fluorouracil. Extracted — 5-fluorouracil: kabs 0.551 1/h, CLm/F 2.89 L/h/m2, V1/F 44.9 L/m2.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has S-1, the second reading tegafur; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
-> **Dose compound ≠ measured compound:** dosed `S-1`, measured `5-FU`.
+> **Dose compound ≠ measured compound:** dosed `S-1`, measured `5-fluorouracil`.
 
 ## Citation
 Booka E et al., Development of an S-1 dosage formula ba…, Gastric cancer : official j… (2016)
   ·  DOI: [10.1007/s10120-015-0536-6](https://doi.org/10.1007/s10120-015-0536-6)
 
-<div class="pk-model-meta" hidden drug="tegafur" model-id="Tegafur_Booka2016_reference" status="rejected" stale="false" population="cancer patients with various degrees of renal function" measured-compound="5-FU" parameterization="apparent" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="tegafur" model-id="Tegafur_Booka2016_reference" status="needs_review" stale="false" population="cancer patients" measured-compound="5-fluorouracil" parameterization="apparent" topology="parent_metabolite"></div>
 
-**Model structure:** general linear; no model was built for this record.  
-**Parameters:** 2 extracted.
+**Model structure:** parent + metabolite; no model was built for this record.  
+**Parameters:** 3 extracted.
 
-**Parameterization:** CLm/F, Vm/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** CLm/F, V1/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F (L/h/m2) | `Q351` · CLm/F | 41.8 | L/h/m2 | not captured | [l] / [[h] · [m2]] | not captured | exact (1.0) | Tab2:row2:col2, Tab2:row6:col2, Tab2:row10:col1, Tab2:row10:col2 | — | not captured |
-| V/F (L/m2) | `Q367` · Vm/F | 23.6 | L/m2 | not captured | [l] / [m2] | not captured | exact (1.0) | Tab2:row3:col2, Tab2:row7:col2, Tab2:row11:col1, Tab2:row11:col2 | — | not captured |
+| Ka (1/h) | `Q49` · kabs | 0.551 | 1/h | 0.00015305555555555556 | [1] / [h] | not captured | exact (1.0) | Booka_2016_table_p8_1:row0:col2, Booka_2016_table_p8_1:row4:col2, Booka_2016_table_p8_1:row8:col2 | — | 202 (None% RSE) |
+| CL/F (L/h/m2) | `Q351` · CLm/F | 2.89 | L/h/m2 | not captured | [l] / [[h] · [m2]] | not captured | exact (1.0) | Booka_2016_table_p8_1:row9:col2 | — | 27.5 (None% RSE) |
+| V/F (L/m2) | `Q290` · V1/F | 44.9 | L/m2 | not captured | [l] / [m2] | not captured | exact (1.0) | Booka_2016_table_p8_1:row10:col2 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -54,35 +55,24 @@ Booka E et al., Development of an S-1 dosage formula ba…, Gastric cancer : off
 ## Departures & gaps
 
 **Interpretation flags:**
-- compound tags: 3 row(s) → 5-FU, 3 row(s) → tegafur (name 6)
-- table section iiv: '5-FU' routed out of structural estimates ('Interindividual variability (%)')
-- table section iiv: 'CDHP' routed out of structural estimates ('Interindividual variability (%)')
-- table section iiv: 'Tegafur' routed out of structural estimates ('Interindividual variability (%)')
-- column 'parameter' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- dropped unlinked row (NIL): '5-FU' — extend the ontology if this is a real PK parameter (source ['Tab2:row1:col1', 'Tab2:row1:col2'])
+- table section iiv: 'Ka (1/h)' routed out of structural estimates ('Interindividual variability (%)')
+- table section iiv: 'CL/F (L/h/m2)' routed out of structural estimates ('Interindividual variability (%)')
+- table section iiv: 'V/F (L/m2)' routed out of structural estimates ('Interindividual variability (%)')
 - unit_dimension_unknown: 'L/h/m2' (CL/F)
-- unit_dimension_unknown: 'L/m2' (V/F)
-- dropped unlinked row (NIL): 'CDHP' — extend the ontology if this is a real PK parameter (source ['Tab2:row5:col1', 'Tab2:row5:col2'])
-- dropped unlinked row (NIL): 'Tegafur' — extend the ontology if this is a real PK parameter (source ['Tab2:row9:col1', 'Tab2:row9:col2'])
+- unit_dimension_unknown: 'L/m2' (V1/F)
 - implicit units: 'CL/F (L/h/m2)' — the LLM proposed 'L/h/m2', whose dimension does not fit Q27; left unset
-- implicit units: 'V/F (L/m2)' — the LLM proposed 'L/m2', whose dimension does not fit Q76; left unset
-- metabolite 5-fu: Q27→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
-- metabolite 5-fu: Q76→Q367 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=5-FU
+- implicit units: 'V/F (L/m2)' — the LLM proposed 'L/m2', whose dimension does not fit Q290; left unset
+- metabolite 5-fluorouracil: Q27→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=5-fluorouracil
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
-- template fit: none — 3 metabolites — the templates hold two
+- template fit: none — only the metabolite is modelled — no parent compartment
 - status held at route_to_review — not promoted
-- row roles (LLM): model_class=compartmental; 0/6 row label(s) assigned, 0 linked by role
-- molar mass: no plausible PubChem entry for 'S-1' ('S-1') — left in mass units
-- molar mass: none found for 'S-1' — its concentrations stay mass-only
-- review gap-fill skipped: this record measures '5-FU', not tegafur — the review values are the parent's
+- row roles (LLM): model_class=compartmental; 4/4 row label(s) assigned, 14 linked by role; re-tagged parent→5-fluorouracil ×17
+- review gap-fill skipped: this record measures '5-fluorouracil', not tegafur — the review values are the parent's
 
 **Extraction notes:**
-- unparsed cell Tab2:row2:col1 = '(21.9 + 0.375 × CLcr) × BSA'
-- unparsed cell Tab2:row3:col1 = '362 × BSA'
-- unparsed cell Tab2:row6:col1 = '(3.77 + 0.403 × CLcr) × BSA'
-- unparsed cell Tab2:row7:col1 = '200 × BSA'
+- table Booka_2016_table_p8_1: unparsed_numeric_cell
 - LLM selected parameter table(s) 2
 
 ## Validation
@@ -115,13 +105,14 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_unit_missing_Q351 | fail | [length] ** 3 / [time] | L/h/m2 | not captured | not captured | ['Tab2:row2:col2', 'Tab2:row6:col2', 'Tab2:row10:col1', 'Tab2:row10:col2'] |
-| C5_unit_missing_Q367 | fail | [length] ** 3 | L/m2 | not captured | not captured | ['Tab2:row3:col2', 'Tab2:row7:col2', 'Tab2:row11:col1', 'Tab2:row11:col2'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Booka_2016_table_p8_1:row0:col2', 'Booka_2016_table_p8_1:row4:col2', 'Booka_2016_table_p8_1:row8:col2'] |
+| C5_unit_missing_Q290 | fail | [length] ** 3 | L/m2 | not captured | not captured | ['Booka_2016_table_p8_1:row10:col2'] |
+| C5_unit_missing_Q351 | fail | [length] ** 3 / [time] | L/h/m2 | not captured | not captured | ['Booka_2016_table_p8_1:row9:col2'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
-| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none', 'none', 'none'] | not captured | not captured | not captured |
+| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -130,14 +121,24 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_tegafur/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Booka_2016` / `Booka_2016::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_tegafur/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Booka_2016` / `Booka_2016::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -146,4 +147,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 17:19 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 21:52 UTC</sub>

@@ -4,7 +4,7 @@
 
 # brentuximab vedotin — `BrentuximabVedotin_Li2017_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.0). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.03), qwen3.8-27b (not confirmed, agreement 0.0). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -18,19 +18,17 @@
 
 **Λ1 has no unit.**
 
-Without a unit the value cannot be converted, so the model cannot use it. None of the extracted parameters is brentuximab vedotin's own; they describe MMAE and brentuximab vedotin (ADC). Extracted — MMAE: CL 55.7 L/d, V1 79.8 L, λ1 0.25, kfm 0.0785 1/h, Q 65 L/h, V2 28.1 L, fm -0.261, allometric_exponent 0.75; brentuximab vedotin (ADC): CL 1.56 L/d, V1 4.29 L, Q 2.83 L/h, V2 3.83 L, Q2 0.708 L/h, V3 9.52 L, allometric_exponent 0.698.
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (λ1 and fm), so that value has no SI equivalent. Extracted — brentuximab vedotin: CL 1.56 L/d, V1 4.29 L, Q 2.83 L/d, V2 3.83 L, Q2 0.708 L/d, V3 9.52 L, D1 4 h, λ1 0.25 —, … (+1); MMAE: CL 55.7 L/d, V1 79.8 L, Q 65 L/d, V2 28.1 L, fm -0.261 Fraction, ktr 1 1/h.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has brentuximab vedotin, the second reading brentuximab_vedotin; it also differs on 29 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has brentuximab vedotin, the second reading brentuximab_vedotin; it also differs on 31 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
-
-> **Dose compound ≠ measured compound:** dosed `brentuximab vedotin`, measured `brentuximab vedotin ADC and unconjugated MMAE`.
 
 ## Citation
 Li H et al., Population Pharmacokinetics of Brentuxi…, Journal of clinical pharmac… (2017)
   ·  DOI: [10.1002/jcph.920](https://doi.org/10.1002/jcph.920)
 
-<div class="pk-model-meta" hidden drug="brentuximab vedotin" model-id="BrentuximabVedotin_Li2017_reference" status="needs_review" stale="false" population="patients with relapsed/refractory CD30-expressing hematologic malignancies" measured-compound="brentuximab vedotin ADC and unconjugated MMAE" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="brentuximab vedotin" model-id="BrentuximabVedotin_Li2017_reference" status="needs_review" stale="false" population="adults with CD30-expressing hematologic malignancies" measured-compound="brentuximab_vedotin" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 15 extracted.
@@ -42,22 +40,21 @@ Li H et al., Population Pharmacokinetics of Brentuxi…, Journal of clinical pha
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CLM | `Q22` · CL | 55.7 | L/d | 6.44675925925926e-07 | L/h | 5.2 | exact (1.0) | jcph920-tbl-0004:row1:col2 | — | 46.9 (20% RSE) |
-| V4 | `Q63` · V1 | 79.8 | L | 0.0798 | L | 11 | exact (1.0) | jcph920-tbl-0004:row2:col2 | — | 13.5 (24% RSE) |
-| α | `Q67` · λ1 | 0.25 | not captured | not captured | not captured | not captured | exact (1.0) | jcph920-tbl-0004:row4:col2 | — | not captured |
-| β | `Q305` · kfm | 0.0785 | 1/h | 2.1805555555555554e-05 | 1/h | 12 | exact (1.0) | jcph920-tbl-0004:row5:col1, jcph920-tbl-0004:row5:col2 | — | not captured |
-| Q5 | `Q30` · Q | 65.0 | L/h | 1.8055555555555555e-05 | L/h | 30 | exact (1.0) | jcph920-tbl-0004:row6:col2 | — | 15 (None% RSE) |
-| V5 | `Q64` · V2 | 28.1 | L | 0.028100000000000003 | L | 14 | exact (1.0) | jcph920-tbl-0004:row7:col2 | — | 25 (None% RSE) |
-| Fm by cycle | `Q45` · fm | -0.261 | not captured | not captured | not captured | 14 | exact (1.0) | jcph920-tbl-0004:row8:col2 | — | 130 (17% RSE) |
-| ΘBW,CLM,Q5 b | `Q319` · allometric_exponent | 0.75 | not captured | not captured | not captured | not captured | llm_corrected (0.6) | jcph920-tbl-0004:row9:col2 | — | not captured |
-| CL | `Q22` · CL | 1.56 | L/d | 1.8055555555555556e-08 | L/h | 2.9 | exact (1.0) | Li_2017_table_3:row0:col2 | — | not captured |
-| V1 | `Q63` · V1 | 4.29 | L | 0.00429 | L | 1.9 | exact (1.0) | Li_2017_table_3:row1:col2 | — | not captured |
-| Q2 | `Q30` · Q | 2.83 | L/h | 7.861111111111111e-07 | L/h | 5.9 | exact (1.0) | Li_2017_table_3:row2:col2 | — | not captured |
-| V2 | `Q64` · V2 | 3.83 | L | 0.00383 | L | 6.3 | exact (1.0) | Li_2017_table_3:row3:col2 | — | not captured |
-| Q3 | `Q99` · Q2 | 0.708 | L/h | 1.9666666666666665e-07 | L/h | 8.2 | exact (1.0) | Li_2017_table_3:row4:col2 | — | not captured |
-| V3 | `Q77` · V3 | 9.52 | L | 0.009519999999999999 | L | 8.8 | exact (1.0) | Li_2017_table_3:row5:col2 | — | 106 (19% RSE) |
-| ΘBW,CL,Q2,Q3 b | `Q319` · allometric_exponent | 0.698 | not captured | not captured | not captured | 8.8 | llm_corrected (0.6) | Li_2017_table_3:row6:col2 | — | not captured |
-| ΘSEX,V1 | `Q900` · equation variable | 0.873 | not captured | not captured | not captured | 2.5 | llm_corrected (0.6) | Li_2017_table_3:row8:col2 | — | not captured |
+| CL | `Q22` · CL | 1.56 | L/d | 1.8055555555555556e-08 | [l] / [d] | 2.9 | exact (1.0) | jcph920-tbl-0003:row1:col2 | — | 46.9 (20% RSE) |
+| V1 | `Q63` · V1 | 4.29 | L | 0.00429 | [l] | 1.9 | exact (1.0) | jcph920-tbl-0003:row2:col2 | — | 13.5 (24% RSE) |
+| Q2 | `Q30` · Q | 2.83 | L/d | 3.275462962962963e-08 | [l] / [d] | 5.9 | exact (1.0) | jcph920-tbl-0003:row3:col2 | — | 15 (None% RSE) |
+| V2 | `Q64` · V2 | 3.83 | L | 0.00383 | [l] | 6.3 | exact (1.0) | jcph920-tbl-0003:row4:col2 | — | 25 (None% RSE) |
+| Q3 | `Q99` · Q2 | 0.708 | L/d | 8.194444444444444e-09 | [l] / [d] | 8.2 | exact (1.0) | jcph920-tbl-0003:row5:col2 | — | not captured |
+| V3 | `Q77` · V3 | 9.52 | L | 0.009519999999999999 | [l] | 8.8 | exact (1.0) | jcph920-tbl-0003:row6:col2 | — | 106 (19% RSE) |
+| CLM | `Q22` · CL | 55.7 | L/d | 6.44675925925926e-07 | [l] / [d] | 5.2 | exact (1.0) | Li_2017_table_4:row0:col2 | — | not captured |
+| V4 | `Q63` · V1 | 79.8 | L | 0.0798 | [l] | 11 | exact (1.0) | Li_2017_table_4:row1:col2 | — | not captured |
+| DAR0 | `Q310` · D1 | 4 | h | 14400.0 | h | not captured | llm (0.6) | Li_2017_table_4:row2:col2 | — | not captured |
+| α | `Q67` · λ1 | 0.25 | — | not captured | [-] | not captured | exact (1.0) | Li_2017_table_4:row3:col2 | — | not captured |
+| β | `Q47` · kel | 0.0785 | 1/d | 9.085648148148148e-07 | [1] / [d] | 12 | exact (1.0) | Li_2017_table_4:row4:col2 | — | 98.1 (24% RSE) |
+| Q5 | `Q30` · Q | 65.0 | L/d | 7.523148148148148e-07 | [l] / [d] | 30 | exact (1.0) | Li_2017_table_4:row5:col2 | — | not captured |
+| V5 | `Q64` · V2 | 28.1 | L | 0.028100000000000003 | [l] | 14 | exact (1.0) | Li_2017_table_4:row6:col2 | — | not captured |
+| Fm by cycle | `Q45` · fm | -0.261 | Fraction | not captured | [fraction] | 14 | exact (1.0) | Li_2017_table_4:row7:col2 | — | 130 (17% RSE) |
+| ΘBW,V4,V5 c | `Q306` · ktr | 1.0 | 1/h | 0.0002777777777777778 | 1/h | not captured | llm (0.6) | Li_2017_table_4:row9:col2 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -67,59 +64,86 @@ Li H et al., Population Pharmacokinetics of Brentuxi…, Journal of clinical pha
 ## Departures & gaps
 
 **Interpretation flags:**
-- table section iiv: 'CLM' routed out of structural estimates ('BSV %CV (%RSE)')
-- table section iiv: 'V4' routed out of structural estimates ('BSV %CV (%RSE)')
-- table section iiv: 'β' routed out of structural estimates ('BSV %CV (%RSE)')
-- table section iiv: 'Q5' routed out of structural estimates ('BSV %CV (%RSE)')
-- table section iiv: 'V5' routed out of structural estimates ('BSV %CV (%RSE)')
-- table section iiv: 'Fm by cycle' routed out of structural estimates ('BSV %CV (%RSE)')
 - table section iiv: 'CL' routed out of structural estimates ('BSV %CV (%RSE)')
 - table section iiv: 'V1' routed out of structural estimates ('BSV %CV (%RSE)')
 - table section iiv: 'Q2' routed out of structural estimates ('BSV %CV (%RSE)')
 - table section iiv: 'V2' routed out of structural estimates ('BSV %CV (%RSE)')
 - table section iiv: 'Q3' routed out of structural estimates ('BSV %CV (%RSE)')
 - table section iiv: 'V3' routed out of structural estimates ('BSV %CV (%RSE)')
-- column 'units' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- dropped unlinked row (NIL): 'DAR0' — extend the ontology if this is a real PK parameter (source ['jcph920-tbl-0004:row3:col2'])
-- dropped duplicate Q319 ('ΘBW,V4,V5 c', value '1.0') — already have one for this compound
-- dropped duplicate Q319 ('ΘBW,V1,V2,V3 c', value '0.503') — already have one for this compound
-- NIL: refused to back-fill base 'NIL' from footnote/prose loose number None (source ['jcph920-tbl-0004:footnote', 'jcph920-tbl-0004:footnote', 'jcph920-tbl-0004:footnote', 'jcph920-tbl-0004:footnote']); the table cell was unparseable — needs review
-- implicit units: 'CLM' → L/d (from the paper text: 'The text states: “Typical values of MMAE apparent CL (CLM) and apparent volume of central compartment (V4) were 55.7 L/d')
-- implicit units: 'V4' → L (from the paper text: 'The text states: “Typical values of MMAE apparent CL (CLM) and apparent volume of central compartment (V4) were 55.7 L/d')
+- table section iiv: 'CLM' routed out of structural estimates ('BSV %CV (%RSE)')
+- table section iiv: 'V4' routed out of structural estimates ('BSV %CV (%RSE)')
+- table section iiv: 'β' routed out of structural estimates ('BSV %CV (%RSE)')
+- table section iiv: 'Q5' routed out of structural estimates ('BSV %CV (%RSE)')
+- table section iiv: 'V5' routed out of structural estimates ('BSV %CV (%RSE)')
+- table section iiv: 'Fm by cycle' routed out of structural estimates ('BSV %CV (%RSE)')
+- unit_dimension_unknown: '—' (CL)
+- dropped duplicate Q22 ('ΘBW,CL,Q2,Q3 b', value '0.698') — already have one for this compound
+- dropped unlinked row (NIL): 'ΘBW,V1,V2,V3 c' — extend the ontology if this is a real PK parameter (source ['jcph920-tbl-0003:row8:col2'])
+- routed 'ΘSEX,V1' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
+- unit_dimension_unknown: '—' (D1)
+- unit_dimension_unknown: '—' (λ1)
+- dropped unlinked row (NIL): 'ΘBW,CLM,Q5 b' — extend the ontology if this is a real PK parameter (source ['Li_2017_table_4:row8:col2'])
+- unit_dimension_unknown: '—' (ktr)
+- implicit units: 'DAR0' → h (from the popPK convention: "DAR0 represents the duration of a zero-order input (infusion). The paper text states that 'Brentuximab vedotin was admin")
 - implicit units: 'α' — the LLM proposed '1/h', whose dimension does not fit Q67; left unset
-- implicit units: 'β' → 1/h (from the popPK convention: 'β is a first-order rate constant, conventionally expressed per unit time. The paper states that the infusion rate was mo')
-- implicit units: 'Q5' → L/h (from the popPK convention: 'Q5 is an intercompartmental clearance, conventionally expressed in L/h.')
-- implicit units: 'V5' → L (from the popPK convention: 'V5 is a compartment volume, conventionally expressed in L.')
-- implicit units: 'CL' → L/d (from the paper text: 'The text states: “The typical values of ADC CL and V1 for a 75-kg male patient were 1.56 L/d and 4.29 L, respectively.”')
-- implicit units: 'V1' → L (from the paper text: 'The text states: “The typical values of ADC CL and V1 for a 75-kg male patient were 1.56 L/d and 4.29 L, respectively.”')
-- implicit units: 'Q2' → L/h (from the popPK convention: 'Q2 is a distributional intercompartmental clearance; this type of clearance is conventionally expressed in L/h.')
-- implicit units: 'V2' → L (from the popPK convention: 'V2 is a compartment volume, conventionally expressed in L.')
-- implicit units: 'Q3' → L/h (from the popPK convention: 'Q3 is a distributional intercompartmental clearance; this type of clearance is conventionally expressed in L/h.')
-- implicit units: 'V3' → L (from the popPK convention: 'V3 is a compartment volume, conventionally expressed in L.')
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=brentuximab vedotin ADC and unconjugated MMAE
+- implicit units: 'ΘBW,V4,V5 c' → 1/h (from the popPK convention: "The parameter is labeled ΘBW,V4,V5 with the description 'ktr: First-order transit rate constant in a transit-compartment")
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=brentuximab_vedotin
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - template fit: PK_3M_9C — formed from central; parent 3, metabolites [2]
-- row roles (LLM): model_class=compartmental; 24/24 row label(s) assigned, 25 linked by role; re-tagged parent→MMAE ×21, parent→brentuximab vedotin (ADC) ×15
-- molar mass: no plausible PubChem entry for 'brentuximab vedotin ADC and unconjugated MMAE' ('brentuximab vedotin ADC and unconjugated monomethyl auristatin E') — left in mass units
-- molar mass: none found for 'brentuximab vedotin ADC and unconjugated MMAE' — its concentrations stay mass-only
-- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
+- status held at route_to_review — not promoted
+- row roles (LLM): model_class=compartmental; 23/23 row label(s) assigned, 22 linked by role; re-tagged brentuximab_vedotin→parent ×19, brentuximab_vedotin→MMAE ×12
+- molar mass: none found for 'brentuximab_vedotin' — its concentrations stay mass-only
 
 **Extraction notes:**
-- companion parameter table 3 transcribed (18 record(s), model stage 'final')
+- companion parameter table 4 transcribed (19 record(s), model stage 'final')
 - LLM selected parameter table(s) 3, 4
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.03 (1/33 fields) | 32 |
 | `qwen3.8-27b` | not confirmed | 0.0 (0/30 fields) | 30 |
 
-<details><summary>30 field discrepancies</summary>
+<details><summary>62 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['brentuximab vedotin (adc)', 'mmae', 'metabolism']] | [['brentuximab_vedotin', 'monomethyl auristatin e (mmae)', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[cl]` | not captured | 1.56 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` | 1.56 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clm]` | 55.7 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clm]` | not captured | 55.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fm by cycle]` | -0.261 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fm by cycle]` | not captured | -0.261 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q2]` | not captured | 2.83 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q2]` | 2.83 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q3]` | not captured | 0.708 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q3]` | 0.708 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q5]` | 65.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q5]` | not captured | 65.0 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v1]` | not captured | 4.29 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v1]` | 4.29 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v2]` | not captured | 3.83 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v2]` | 3.83 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v3]` | not captured | 9.52 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v3]` | 9.52 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v4]` | 79.8 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v4]` | not captured | 79.8 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v5]` | 28.1 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v5]` | not captured | 28.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[α]` | not captured | 0.25 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[α]` | 0.25 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[β]` | not captured | 0.0785 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[β]` | 0.0785 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θbw,cl,q2,q3 b]` | 0.698 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θbw,clm,q5 b]` | 0.75 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θsex,v1]` | 0.873 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | brentuximab vedotin | brentuximab_vedotin | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | brentuximab vedotin ADC and unconjugated MMAE | brentuximab_vedotin | mismatch |
 | `qwen3.8-27b` | `model.links` | [['brentuximab vedotin (adc)', 'mmae', 'metabolism']] | [] | mismatch |
 | `qwen3.8-27b` | `model.parameterization` | mechanistic | apparent | mismatch |
 | `qwen3.8-27b` | `parameters[cl]` | not captured | 1.56 | only_one_extracted |
@@ -166,26 +190,28 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass | not captured | 15 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['jcph920-tbl-0004:row1:col2'] |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Li_2017_table_3:row0:col2'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['jcph920-tbl-0004:row6:col2'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Li_2017_table_3:row2:col2'] |
-| C5_dimension_Q305 | pass | 1 / [time] | not captured | not captured | not captured | ['jcph920-tbl-0004:row5:col1', 'jcph920-tbl-0004:row5:col2'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['jcph920-tbl-0004:row2:col2'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Li_2017_table_3:row1:col2'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['jcph920-tbl-0004:row7:col2'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Li_2017_table_3:row3:col2'] |
-| C5_dimension_Q77 | pass | [length] ** 3 | not captured | not captured | not captured | ['Li_2017_table_3:row5:col2'] |
-| C5_dimension_Q99 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Li_2017_table_3:row4:col2'] |
-| C5_unit_missing_Q67 | fail | [mass] / [time] | not captured | not captured | not captured | ['jcph920-tbl-0004:row4:col2'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 55.7 | not captured | not captured | ['jcph920-tbl-0004:row1:col2'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['jcph920-tbl-0003:row1:col2'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Li_2017_table_4:row0:col2'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['jcph920-tbl-0003:row3:col2'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Li_2017_table_4:row5:col2'] |
+| C5_dimension_Q306 | pass | 1 / [time] | not captured | not captured | not captured | ['Li_2017_table_4:row9:col2'] |
+| C5_dimension_Q310 | pass | [time] | not captured | not captured | not captured | ['Li_2017_table_4:row2:col2'] |
+| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['Li_2017_table_4:row4:col2'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['jcph920-tbl-0003:row2:col2'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Li_2017_table_4:row1:col2'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['jcph920-tbl-0003:row4:col2'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Li_2017_table_4:row6:col2'] |
+| C5_dimension_Q77 | pass | [length] ** 3 | not captured | not captured | not captured | ['jcph920-tbl-0003:row6:col2'] |
+| C5_dimension_Q99 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['jcph920-tbl-0003:row5:col2'] |
+| C5_unit_missing_Q67 | fail | [mass] / [time] | — | not captured | not captured | ['Li_2017_table_4:row3:col2'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 1.56 | not captured | not captured | ['jcph920-tbl-0003:row1:col2'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 2.32 L/h | not captured | not captured | ['jcph920-tbl-0004:row1:col2'] |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.065 L/h | not captured | not captured | ['Li_2017_table_3:row0:col2'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 79.8 L | not captured | not captured | ['jcph920-tbl-0004:row2:col2'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 4.29 L | not captured | not captured | ['Li_2017_table_3:row1:col2'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 28.1 L | not captured | not captured | ['jcph920-tbl-0004:row7:col2'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 3.83 L | not captured | not captured | ['Li_2017_table_3:row3:col2'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.065 L/h | not captured | not captured | ['jcph920-tbl-0003:row1:col2'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 2.32 L/h | not captured | not captured | ['Li_2017_table_4:row0:col2'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 4.29 L | not captured | not captured | ['jcph920-tbl-0003:row2:col2'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 79.8 L | not captured | not captured | ['Li_2017_table_4:row1:col2'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 3.83 L | not captured | not captured | ['jcph920-tbl-0003:row4:col2'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 28.1 L | not captured | not captured | ['Li_2017_table_4:row6:col2'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -194,7 +220,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_brentuximab_vedotin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Li_2017` / `Li_2017::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_brentuximab_vedotin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Li_2017` / `Li_2017::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -220,4 +246,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 10:33 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 18:28 UTC</sub>

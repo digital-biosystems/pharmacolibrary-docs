@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01X&quot;,&quot;href&quot;:&quot;atc/L01X.md&quot;},{&quot;label&quot;:&quot;asparaginase&quot;,&quot;href&quot;:&quot;drugs/drug_asparaginase/&quot;},{&quot;label&quot;:&quot;Borghorst_2012 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Asparaginase_Borghorst2012_reference&quot;,&quot;label&quot;:&quot;Borghorst_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_asparaginase/Asparaginase_Borghorst2012_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Asparaginase_Sassen2017_estimate&quot;,&quot;label&quot;:&quot;Sassen_2017_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_asparaginase/Asparaginase_Sassen2017_estimate.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Asparaginase_Sassen2017_median&quot;,&quot;label&quot;:&quot;Sassen_2017_median&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_asparaginase/Asparaginase_Sassen2017_median.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Asparaginase_Sassen2017_reference&quot;,&quot;label&quot;:&quot;Sassen_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_asparaginase/Asparaginase_Sassen2017_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # asparaginase — `Asparaginase_Borghorst2012_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -13,36 +13,39 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** Model and browser simulation available in **Models** and **Simulation**.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-Only the abstract was available, so reported summary statistics stand in for a fitted model.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — asparaginase: CL 0.13 L/h, V1 4.11 L, V2 1.63 L, Q 0.106 L/h, kabs 0.0348 h–1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has asparaginase, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Borghorst S et al., Population pharmacokinetics of native E…, Pediatric hematology and on… (2012)
   ·  DOI: [10.3109/08880018.2011.627978](https://doi.org/10.3109/08880018.2011.627978)
 
-<div class="pk-model-meta" hidden drug="asparaginase" model-id="Asparaginase_Borghorst2012_reference" status="curated_candidate" stale="false" population="pediatric patients with previously untreated acute lymphoblastic leukemia" measured-compound="asparaginase" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="asparaginase" model-id="Asparaginase_Borghorst2012_reference" status="rejected" stale="false" population="pediatric patients with previously untreated acute lymphoblastic leukemia" measured-compound="asparaginase" parameterization="mechanistic" topology="general_linear"></div>
 
-**Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
-**Parameters:** 4 extracted.
+**Model structure:** general linear; no model was built for this record.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | total body clearance | `Q22` · CL | 0.13 | L/h | 3.611111111111111e-08 | L/h | not captured | llm_confirmed (0.6) | Borghorst_2012:abstract | — | not captured |
 | volume of distribution in the central compartment | `Q63` · V1 | 4.11 | L | 0.004110000000000001 | L | not captured | boundary_compartment (0.9) | Borghorst_2012:abstract | — | not captured |
 | volume of distribution in the peripheral compartment | `Q64` · V2 | 1.63 | L | 0.00163 | L | not captured | boundary_compartment (0.9) | Borghorst_2012:abstract | — | not captured |
 | intercompartmental clearance | `Q30` · Q | 0.106 | L/h | 2.9444444444444446e-08 | [l] / [h] | not captured | exact (1.0) | Borghorst_2012:abstract | — | not captured |
+| ka (h–1) | `Q49` · kabs | 0.0348 | h–1 | 9.666666666666667e-06 | 1/h | not captured | review_gapfill (0.7) | Lin_2021:review | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -55,12 +58,15 @@ Borghorst S et al., Population pharmacokinetics of native E…, Pediatric hemato
 - unit_dimension_unknown: 'L/h per 1.73 m(2)' (CL)
 - unit_dimension_unknown: 'L per 70 kg' (V1)
 - unit_dimension_unknown: 'L per 70 kg' (V2)
-- implicit units: 'total body clearance' → L/h (from the popPK convention: 'Total body clearance is conventionally expressed in L/h in population PK studies; the value 0.13 is consistent with this')
-- implicit units: 'volume of distribution in the central compartment' → L (from the popPK convention: 'Volume of distribution is conventionally expressed in L; the value 4.11 is consistent with a central compartment volume ')
-- implicit units: 'volume of distribution in the peripheral compartment' → L (from the popPK convention: 'Volume of distribution is conventionally expressed in L; the value 1.63 is consistent with a peripheral compartment volu')
+- implicit units: 'total body clearance' → L/h (from the popPK convention: 'Total body clearance in population PK is conventionally expressed in L/h; the value 0.13 is consistent with this unit.')
+- implicit units: 'volume of distribution in the central compartment' → L (from the popPK convention: 'Volume of distribution in the central compartment is conventionally expressed in L; the value 4.11 is consistent with th')
+- implicit units: 'volume of distribution in the peripheral compartment' → L (from the popPK convention: 'Volume of distribution in the peripheral compartment is conventionally expressed in L; the value 1.63 is consistent with')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=asparaginase
+- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
+- status held at route_to_review — not promoted
 - molar mass: none found for 'asparaginase' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
+- gap-filled Q49 (kabs) from Lin_2021's review values (primary lacked it)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Borghorst_2012_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
@@ -106,24 +112,14 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Borghorst_2012:abstract'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Borghorst_2012:abstract'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Lin_2021:review'] |
 | C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Borghorst_2012:abstract'] |
 | C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Borghorst_2012:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.13 | not captured | not captured | ['Borghorst_2012:abstract'] |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none'] | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.13 L/h | not captured | not captured | ['Borghorst_2012:abstract'] |
 | C9_phys_window_Q63 | pass | volume within physiological range | 4.11 L | not captured | not captured | ['Borghorst_2012:abstract'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 1.63 L | not captured | not captured | ['Borghorst_2012:abstract'] |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_output_variable | not captured | pass | C_central (measured=asparaginase) | central.C | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -132,38 +128,20 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_asparaginase/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Borghorst_2012` / `Borghorst_2012::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_asparaginase/models/modelica/Asparaginase_Borghorst2012_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_asparaginase/models/modelica/Asparaginase_Borghorst2012_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_asparaginase/models/modelica/Asparaginase_Borghorst2012_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_asparaginase/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Borghorst_2012` / `Borghorst_2012::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_asparaginase/Asparaginase_Borghorst2012_reference/Asparaginase_Borghorst2012_reference_modelica.zip" download>Asparaginase_Borghorst2012_reference_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_asparaginase/Asparaginase_Borghorst2012_reference/Asparaginase_Borghorst2012_reference_fmi.zip" download>Asparaginase_Borghorst2012_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_2C.fmu" download>PK_2C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_asparaginase/Asparaginase_Borghorst2012_reference/Asparaginase_Borghorst2012_reference_matlab.zip" download>Asparaginase_Borghorst2012_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_asparaginase/Asparaginase_Borghorst2012_reference/Asparaginase_Borghorst2012_reference_matlab_simbio.zip" download>Asparaginase_Borghorst2012_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_asparaginase/Asparaginase_Borghorst2012_reference/Asparaginase_Borghorst2012_reference_sbml.zip" download>Asparaginase_Borghorst2012_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_asparaginase/Asparaginase_Borghorst2012_reference/Asparaginase_Borghorst2012_reference_cellml.zip" download>Asparaginase_Borghorst2012_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_asparaginase/Asparaginase_Borghorst2012_reference/Asparaginase_Borghorst2012_reference.svg" alt="Asparaginase_Borghorst2012_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 10 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
-
-<dbs-fmusim paramsurl="drugs/drug_asparaginase/Asparaginase_Borghorst2012_reference/Asparaginase_Borghorst2012_reference_params.json" metaurl="assets/fmu/PK_2C.vr.json" wasmurl="assets/fmu/PK_2C.js" controlsurl="drugs/drug_asparaginase/Asparaginase_Borghorst2012_reference/Asparaginase_Borghorst2012_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_2C` · parameters `Asparaginase_Borghorst2012_reference_params.json` · controls `Asparaginase_Borghorst2012_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 23:16 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 04:18 UTC</sub>

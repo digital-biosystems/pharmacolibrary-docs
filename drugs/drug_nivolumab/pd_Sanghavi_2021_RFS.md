@@ -18,14 +18,14 @@
 
 **Model:** No model was generated from this record.
 
-> The paper reports that nivolumab trough exposures (Cmin) were not significant predictors of recurrence-free survival (RFS) or distant metastasis-free survival (DMFS), with efficacy instead driven by covariates such as PD-L1 status, baseline lactate dehydrogenase, and age. Consequently, no specific potency or rate parameters (e.g., IC50, Emax, ke0) for the drug's effect on RFS are provided, as the exposure-response relationship for efficacy was not significant.
+> The paper does not describe a direct pharmacodynamic mechanism by which nivolumab concentrations influence recurrence-free survival, stating instead that nivolumab trough exposures were not significant predictors of RFS or DMFS at the dose of 3 mg/kg every 2 weeks. No potency or rate parameters (e.g., IC50, EC50, Emax, ke0) are provided for the efficacy endpoint.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Sanghavi_2021`
 - **model family:** `tte`
 - **driver:** `cited_pk`
-- **tier:** descriptive
+- **tier:** population
 - **effect:** unknown/unknown
 
 ## Citation

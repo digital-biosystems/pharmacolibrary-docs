@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;tocilizumab&quot;,&quot;href&quot;:&quot;drugs/drug_tocilizumab/&quot;},{&quot;label&quot;:&quot;Levi_2013_2 \u00b7 PD Disease Activity Score using 28 joints&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;tocilizumab&quot;,&quot;href&quot;:&quot;drugs/drug_tocilizumab/&quot;},{&quot;label&quot;:&quot;Levi_2013_2 \u00b7 PD Disease Activity Score using 28 joints (DAS28)&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Disease Activity Score using 28 joints — PD  <span class="pk-badge pk-badge--green">extracted</span>
+# Disease Activity Score using 28 joints (DAS28) — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -13,11 +13,11 @@
 
 ## Record summary
 
-**As extracted:** Tocilizumab (concentrations from the PK model of Bastida_2019) drives Disease Activity Score using 28 joints: indirect response — drug inhibits the production of Disease Activity Score using 28 joints.
+**As extracted:** Tocilizumab (concentrations from the PK model of Arrivé_2024) drives Disease Activity Score using 28 joints (DAS28): indirect response — drug inhibits the production of Disease Activity Score using 28 joints (DAS28).
 
 **Model:** No model was generated from this record.
 
-> The record indicates tocilizumab serum concentrations drive a proportional inhibition of the production of DAS28 via an indirect response model, but the provided paper excerpts do not state the specific mechanism, potency, or rate parameter values.
+> The model describes tocilizumab concentration as an indirect response inhibitor of DAS28, though the full text is unavailable to confirm whether the mechanism targets production or elimination. Consequently, no specific potency or rate parameters are provided.
 >
 > <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
@@ -25,7 +25,7 @@
 - **model family:** `indirect_response_i`
 - **driver:** `cited_pk`
 - **tier:** population
-- **effect:** inhibition/proportional
+- **effect:** inhibition/unknown
 
 ## Citation
 Levi M et al., Exposure-Exposure Relationship of Tocil…, Journal of clinical pharmac… (2013)

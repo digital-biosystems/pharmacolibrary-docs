@@ -87,7 +87,7 @@ Lu D et al., Population pharmacokinetics of trastuzu…, Cancer chemotherapy and
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_trastuzumab_emtansine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Lu_2014` / `Lu_2014::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_trastuzumab_emtansine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Lu_2014` / `Lu_2014::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;s-atenolol&quot;,&quot;href&quot;:&quot;drugs/drug_s_atenolol/&quot;},{&quot;label&quot;:&quot;van_2007 \u00b7 PD heart rate&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SAtenolol_Buck1989_reference&quot;,&quot;label&quot;:&quot;Buck_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_s_atenolol/SAtenolol_Buck1989_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SAtenolol_Buck1989_reference&quot;,&quot;label&quot;:&quot;Buck_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_s_atenolol/SAtenolol_Buck1989_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # heart rate — PD  <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
@@ -18,17 +18,17 @@
 
 **As extracted:** S(-)-atenolol drives heart rate (in b.p.m.): direct sigmoid Emax (Hill) effect.
 
-**Model:** Model available in **Models**; browser simulation unavailable.
+**Model:** No model was generated from this record.
 
-> S(-)-atenolol concentrations (ng ml(-1)) inhibit heart rate (b.p.m.) via a sigmoid Emax model with an effect compartment (ke0 = 0.042 min(-1)). The model parameters are E0 = 517 b.p.m., Emax = 168 b.p.m., EC50 = 49 ng ml(-1), and gamma (n) = 0.95.
+> S(-)-atenolol concentrations (ng ml(-1)) inhibit heart rate (b.p.m.) via a sigmoid Emax model with an effect compartment rate constant ke0 of 0.042 min(-1). The model specifies a baseline E0 of 517 b.p.m., maximum effect Emax of 168 b.p.m., EC50 of 49 ng ml(-1), and Hill coefficient n of 0.95.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `van_2007`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`
 - **tier:** descriptive
-- **effect:** inhibition/additive
+- **effect:** inhibition/proportional
 
 ## Citation
 van Steeg TJ et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of pharmaco… (2007)
@@ -37,47 +37,16 @@ van Steeg TJ et al., Pharmacokinetic-pharmacodynamic modelli…, British journal
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | E0 | `Q324` · not captured | 517 | b.p.m. | not captured | llm (not captured) | van_2007:pdv3 |
-| PD (effect) | Emax | `Q323` · not captured | 168 | b.p.m. | not captured | direction (not captured) | van_2007:pdv3 |
-| PD (effect) | EC50 | `Q321` · not captured | 49 | ng ml(-1) | not captured | llm (not captured) | van_2007:pdv3 |
-| PD (effect) | keo | `Q326` · not captured | 0.042 | min(-1) | not captured | llm (not captured) | van_2007:pdv3 |
-| PD (effect) | n | `Q325` · not captured | 0.95 | not captured | not captured | llm (not captured) | van_2007:pdv3 |
+| PD (effect) | E0 | `Q324` · not captured | 517+/-13 | b.p.m. | not captured | llm (not captured) | van_2007:pdv3 |
+| PD (effect) | Emax | `Q323` · not captured | 168+/-15 | b.p.m. | not captured | llm (not captured) | van_2007:pdv3 |
+| PD (effect) | EC50 | `Q321` · not captured | 49+/-14 | ng ml(-1) | not captured | llm (not captured) | van_2007:pdv3 |
+| PD (effect) | keo | `Q326` · not captured | 0.042+/-0.012 | min(-1) | not captured | llm (not captured) | van_2007:pdv3 |
+| PD (effect) | n | `Q325` · not captured | 0.95+/-0.34 | not captured | not captured | llm (not captured) | van_2007:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
-
-
-## Exposure-response model
-
-`SAtenolol_van2007_PD_hr` — sigmoid_emax, `response = E0 + Emax*frac`
-
-| parameter | value (paper units) | SI |
-|---|---|---|
-| E0 | 517 b.p.m. | — |
-| Emax | -168 b.p.m. | — |
-| EC50 | 49 ng ml(-1) | 4.9e-05 kg/m3 |
-| gamma | 0.95 | — |
-
-Closed-form check points (response, SI): `at_0` = 517, `at_EC50` = 433, `at_inf` = 349
-
-Deviations:
-
-- `pd_binding_imax_as_negative_emax` — Imax (Q323) enters SigmoidEmaxSweep as −Emax
-
-## Review
-
-Verdict <span class="pk-badge pk-badge--green">reviewed — candidate</span>
-
-| check | status | note |
-|---|---|---|
-| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
-| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
-| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
-| `T2_direction` | pass | the response falls, as direct effect predicts |
-| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
-| `T4_defaults` | pass | nothing defaulted |
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
@@ -111,14 +80,14 @@ Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_s_atenolol/SAtenolol_van2007_PD_hr/SAtenolol_van2007_PD_hr_modelica.zip" download>SAtenolol_van2007_PD_hr_modelica.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_s_atenolol/SAtenolol_van2007_PD_hr/SAtenolol_van2007_PD_hr_matlab.zip" download>SAtenolol_van2007_PD_hr_matlab.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_s_atenolol/SAtenolol_van2007_PD_hr/SAtenolol_van2007_PD_hr_sbml.zip" download>SAtenolol_van2007_PD_hr_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_s_atenolol/SAtenolol_van2007_PD_hr/SAtenolol_van2007_PD_hr_cellml.zip" download>SAtenolol_van2007_PD_hr_cellml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>

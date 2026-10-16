@@ -4,7 +4,7 @@
 
 # galantamine — `Galantamine_Piotrovsky2003_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -20,7 +20,7 @@
 
 For galantamine in Alzheimer's disease patients, the record contains CL of 14.8 L/h (median in male patients) alongside a CLm/F entry whose value is 60 with unit '%', taken from a sentence describing a percent reduction in metabolic clearance rather than an apparent metabolite clearance in L/h. This dimension mismatch on a structural parameter made the record unusable. Additionally, the record was built from the paper's abstract alone, so reported summary statistics stood in for a fitted model. Extracted — galantamine: CL 14.8 L/h, CLm/F 60 %.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has galantamine, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -64,23 +64,21 @@ Piotrovsky V et al., Galantamine population pharmacokinetics…, Journal of clin
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.125 (1/8 fields) | 7 |
+| `gpt-oss-120b` | not confirmed | 0.375 (3/8 fields) | 5 |
 
-<details><summary>7 field discrepancies</summary>
+<details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
 | `gpt-oss-120b` | `parameters[median clearance in male and female patients with alzheimer's disease (ad) was 14.8 and 12.4 l/h, respectively.]` | 14.8 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[median clearance in male patients with alzheimer's disease]` | not captured | 14.8 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[metabolic clearance reduction in patients with moderate or severe hepatic dysfunction]` | not captured | 60 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[metabolic clearance was reduced by 60% in patients with moderate or severe hepatic dysfunction (pugh score 7 or higher).]` | 60 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[metabolic clearance was reduced by 60% in patients with moderate or severe hepatic dysfunction]` | not captured | 60 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | galantamine | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | galantamine | unknown | mismatch |
 
 </details>
 
@@ -110,7 +108,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_galantamine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Piotrovsky_2003` / `Piotrovsky_2003::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_galantamine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Piotrovsky_2003` / `Piotrovsky_2003::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

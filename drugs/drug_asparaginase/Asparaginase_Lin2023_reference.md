@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01X&quot;,&quot;href&quot;:&quot;atc/L01X.md&quot;},{&quot;label&quot;:&quot;asparaginase&quot;,&quot;href&quot;:&quot;drugs/drug_asparaginase/&quot;},{&quot;label&quot;:&quot;Lin_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Asparaginase_Borghorst2012_reference&quot;,&quot;label&quot;:&quot;Borghorst_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_asparaginase/Asparaginase_Borghorst2012_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Asparaginase_Sassen2017_estimate&quot;,&quot;label&quot;:&quot;Sassen_2017_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_asparaginase/Asparaginase_Sassen2017_estimate.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Asparaginase_Sassen2017_median&quot;,&quot;label&quot;:&quot;Sassen_2017_median&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_asparaginase/Asparaginase_Sassen2017_median.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Asparaginase_Sassen2017_reference&quot;,&quot;label&quot;:&quot;Sassen_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_asparaginase/Asparaginase_Sassen2017_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -19,22 +19,22 @@
 
 **C5 dimension mismatch on a structural parameter.**
 
-A reported unit could not be converted (kabs), so that value has no SI equivalent. None of the extracted parameters is asparaginase's own; they describe JZP458. Extracted — JZP458: CL 146 mL/h, V 445 mL, kabs 0.0369 l/h, Frel 0.359.
+A reported unit could not be converted (kabs and Frel), so that value has no SI equivalent. None of the extracted parameters is asparaginase's own; they describe JZP458. Extracted — JZP458: CL 146 mL/h, V 445 mL, kabs 0.0369 l/h, Frel 0.359 %, allometric_exponent 1.48.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has JZP458, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>the checker's own wording — not yet put into words by an LLM</sub>
 
-> **Dose compound ≠ measured compound:** dosed `JZP458`, measured `serum asparaginase activity`.
+> **Dose compound ≠ measured compound:** dosed `JZP458`, measured `serum asparaginase activity (SAA)`.
 
 ## Citation
 Lin T et al., Population pharmacokinetics of intramus…, Clinical and translational… (2023)
   ·  DOI: [10.1111/cts.13499](https://doi.org/10.1111/cts.13499)
 
-<div class="pk-model-meta" hidden drug="asparaginase" model-id="Asparaginase_Lin2023_reference" status="rejected" stale="false" population="patients with acute lymphoblastic leukemia/lymphoblastic lymphoma" measured-compound="serum asparaginase activity" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="asparaginase" model-id="Asparaginase_Lin2023_reference" status="rejected" stale="false" population="patients with acute lymphoblastic leukemia (ALL)/lymphoblastic lymphoma (LBL)" measured-compound="serum asparaginase activity (SAA)" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 4 extracted, plus 1 covariate effect.
+**Parameters:** 5 extracted, plus 1 covariate effect.
 
 **Parameterization:** mechanistic.
 
@@ -43,11 +43,12 @@ Lin T et al., Population pharmacokinetics of intramus…, Clinical and translati
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL (mL/h) | `Q22` · CL | 146 | mL/h | 4.055555555555555e-08 | [ml] / [h] | 3.38 | exact (1.0) | cts13499-tbl-0002:row1:col2, cts13499-tbl-0002:row1:col4, cts13499-tbl-0002:row1:col5, cts13499-tbl-0002:row1:col6, cts13499-tbl-0002:row1:col7 | — | 0.125 (13.8% RSE) |
-| Central compartment V (mL) | `Q61` · V | 445 | mL | 0.000445 | [ml] | 7.85 | llm (0.6) | cts13499-tbl-0002:row2:col2, cts13499-tbl-0002:row2:col4, cts13499-tbl-0002:row2:col5, cts13499-tbl-0002:row2:col6, cts13499-tbl-0002:row2:col7 | — | not captured |
+| CL (mL/h) | `Q22` · CL | 146 | mL/h | 4.055555555555555e-08 | [ml] / [h] | 3.38 | exact (1.0) | cts13499-tbl-0002:row1:col2 | — | 0.125 (13.8% RSE) |
+| Central compartment V (mL) | `Q61` · V | 445 | mL | 0.000445 | [ml] | 7.85 | llm (0.6) | cts13499-tbl-0002:row2:col2 | — | not captured |
 | Absorption rate constant (l/h) | `Q49` · kabs | 0.0369 | l/h | not captured | [l] / [h] | not captured | exact (1.0) | cts13499-tbl-0002:row3:col2 | — | not captured |
-| Relative bioavailability (%) | `Q87` · Frel | 0.359 | not captured | not captured | not captured | not captured | exact (1.0) | cts13499-tbl-0002:row5:col2 | — | not captured |
-| black_african_american_race_on_cl | `Q900` · black_african_american_race_on_cl | 0.674 | not captured | not captured | not captured | 10.6 | not captured (not captured) | cts13499-tbl-0002:row10:col2, cts13499-tbl-0002:row10:col4, cts13499-tbl-0002:row10:col5, cts13499-tbl-0002:row10:col6, cts13499-tbl-0002:row10:col7 | — | not captured |
+| Relative bioavailability (%) | `Q87` · Frel | 0.359 | % | not captured | not captured | not captured | exact (1.0) | cts13499-tbl-0002:row5:col2 | — | not captured |
+| BSA on CL | `Q319` · allometric_exponent | 1.48 | not captured | not captured | not captured | 4.63 | llm_corrected (0.6) | cts13499-tbl-0002:row6:col2 | — | not captured |
+| black_african_american_race_on_cl | `Q900` · black_african_american_race_on_cl | 0.674 | not captured | not captured | not captured | 10.6 | not captured (not captured) | cts13499-tbl-0002:row10:col2 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -58,27 +59,22 @@ Lin T et al., Population pharmacokinetics of intramus…, Clinical and translati
 
 **Interpretation flags:**
 - unit_dimension_mismatch: 'Absorption rate constant (l/h)' → Q49 (unit '[length] ** 3 / [time]' vs ontology '1 / [time]') — route to review
-- dropped unlinked row (NIL): 'Zero‐order rate (IU/h)' — extend the ontology if this is a real PK parameter (source ['cts13499-tbl-0002:row4:col2'])
-- dropped unlinked row (NIL): 'BSA on CL' — extend the ontology if this is a real PK parameter (source ['cts13499-tbl-0002:row6:col2', 'cts13499-tbl-0002:row6:col4', 'cts13499-tbl-0002:row6:col5', 'cts13499-tbl-0002:row6:col6', 'cts13499-tbl-0002:row6:col7'])
-- dropped unlinked row (NIL): 'BSA on V' — extend the ontology if this is a real PK parameter (source ['cts13499-tbl-0002:row7:col2', 'cts13499-tbl-0002:row7:col4', 'cts13499-tbl-0002:row7:col5', 'cts13499-tbl-0002:row7:col6', 'cts13499-tbl-0002:row7:col7'])
+- dropped PD-category row 'Zero‐order rate (IU/h)' → Q327 (kin, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['cts13499-tbl-0002:row4:col2'])
+- dropped unlinked row (NIL): 'BSA on V' — extend the ontology if this is a real PK parameter (source ['cts13499-tbl-0002:row7:col2'])
 - covariate level 'Black/African American race on CL' → Q900:black_african_american_race_on_cl = 0.674 (linear_fractional on Q22)
-- dropped unlinked row (NIL): 'Disease subtype (T‐ALL) on CL' — extend the ontology if this is a real PK parameter (source ['cts13499-tbl-0002:row11:col2', 'cts13499-tbl-0002:row11:col4', 'cts13499-tbl-0002:row11:col5', 'cts13499-tbl-0002:row11:col6', 'cts13499-tbl-0002:row11:col7'])
+- dropped unlinked row (NIL): 'Disease subtype (T‐ALL) on CL' — extend the ontology if this is a real PK parameter (source ['cts13499-tbl-0002:row11:col2'])
 - routed 'Within‐subject variability' → Q313 (IOV) to iov — variability estimate, not a structural parameter
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=serum asparaginase activity
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=serum asparaginase activity (SAA)
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- 1C volume normalization: Q63→Q61 (single-compartment model has no central/peripheral split; 'Central compartment V (mL)' is the general volume)
 - status held at route_to_review — not promoted
-- molar mass: no plausible PubChem entry for 'serum asparaginase activity' ('serum asparaginase activity') — left in mass units
+- molar mass: no plausible PubChem entry for 'serum asparaginase activity (SAA)' ('serum asparaginase activity') — left in mass units
 - molar mass: none found for 'asparaginase' — its concentrations stay mass-only
-- molar mass: none found for 'serum asparaginase activity' — its concentrations stay mass-only
+- molar mass: none found for 'serum asparaginase activity (SAA)' — its concentrations stay mass-only
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- unparsed cell cts13499-tbl-0002:row12:col3 = '36.5%'
-- unparsed cell cts13499-tbl-0002:row13:col3 = '78.4%'
-- unparsed cell cts13499-tbl-0002:row14:col3 = '100%'
 - LLM selected parameter table(s) 2
 
 ## Validation
@@ -113,17 +109,17 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['cts13499-tbl-0002:row1:col2', 'cts13499-tbl-0002:row1:col4', 'cts13499-tbl-0002:row1:col5', 'cts13499-tbl-0002:row1:col6', 'cts13499-tbl-0002:row1:col7'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['cts13499-tbl-0002:row1:col2'] |
 | C5_dimension_Q49 | fail | [length] ** 3 / [time] | l/h | not captured | not captured | ['cts13499-tbl-0002:row3:col2'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['cts13499-tbl-0002:row2:col2', 'cts13499-tbl-0002:row2:col4', 'cts13499-tbl-0002:row2:col5', 'cts13499-tbl-0002:row2:col6', 'cts13499-tbl-0002:row2:col7'] |
-| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 146.0 | not captured | not captured | ['cts13499-tbl-0002:row1:col2', 'cts13499-tbl-0002:row1:col4', 'cts13499-tbl-0002:row1:col5', 'cts13499-tbl-0002:row1:col6', 'cts13499-tbl-0002:row1:col7'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['cts13499-tbl-0002:row2:col2'] |
+| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 146.0 | not captured | not captured | ['cts13499-tbl-0002:row1:col2'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.146 L/h | not captured | not captured | ['cts13499-tbl-0002:row1:col2', 'cts13499-tbl-0002:row1:col4', 'cts13499-tbl-0002:row1:col5', 'cts13499-tbl-0002:row1:col6', 'cts13499-tbl-0002:row1:col7'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 0.445 L | not captured | not captured | ['cts13499-tbl-0002:row2:col2', 'cts13499-tbl-0002:row2:col4', 'cts13499-tbl-0002:row2:col5', 'cts13499-tbl-0002:row2:col6', 'cts13499-tbl-0002:row2:col7'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.146 L/h | not captured | not captured | ['cts13499-tbl-0002:row1:col2'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 0.445 L | not captured | not captured | ['cts13499-tbl-0002:row2:col2'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -132,7 +128,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_asparaginase/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Lin_2023` / `Lin_2023::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_asparaginase/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Lin_2023` / `Lin_2023::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -148,4 +144,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 23:15 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 04:18 UTC</sub>

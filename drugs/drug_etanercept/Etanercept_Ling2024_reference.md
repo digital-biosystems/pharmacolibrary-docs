@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;etanercept&quot;,&quot;href&quot;:&quot;drugs/drug_etanercept/&quot;},{&quot;label&quot;:&quot;Ling_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Etanercept_Ling2024_reference&quot;,&quot;label&quot;:&quot;Ling_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etanercept/Etanercept_Ling2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Etanercept_Ling2024_reference&quot;,&quot;label&quot;:&quot;Ling_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etanercept/Etanercept_Ling2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Breedveld_2018_ESR&quot;,&quot;label&quot;:&quot;Breedveld_2018 \u00b7 ESR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_etanercept/pd_Breedveld_2018_ESR.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Breedveld_2018_IL_6&quot;,&quot;label&quot;:&quot;Breedveld_2018 \u00b7 IL-6&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_etanercept/pd_Breedveld_2018_IL_6.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Breedveld_2018_MMP_3&quot;,&quot;label&quot;:&quot;Breedveld_2018 \u00b7 MMP-3&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_etanercept/pd_Breedveld_2018_MMP_3.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Breedveld_2018_Painful_joints&quot;,&quot;label&quot;:&quot;Breedveld_2018 \u00b7 Painful joints&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_etanercept/pd_Breedveld_2018_Painful_joints.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Breedveld_2018_Swollen_joints&quot;,&quot;label&quot;:&quot;Breedveld_2018 \u00b7 Swollen joints&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_etanercept/pd_Breedveld_2018_Swollen_joints.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,19 +17,19 @@
 
 ### Reviewer guidance
 
-**Bioavailability (F) and lag time (Tlag) were left at library defaults, not estimated from the etanercept biosimilar data in Ling_2024.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The record lists volume of distribution (9.19 L), clearance (0.00283 L/h), and absorption rate constant (0.1167 /h), but omits explicit values for F and Tlag. The model builder substituted library defaults for these missing parameters rather than extracting them from the paper. Because these default values affect the simulated profile but are not supported by the source data, the model was held for review. Extracted — etanercept biosimilar: V 9.19 L, CL 0.00283 L/h, kabs 0.117 /h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. None of the extracted parameters is etanercept's own; they describe etanercept biosimilar. Extracted — etanercept biosimilar: V 9.19 L, CL 0.00283 L/h, kabs 0.117 /h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has etanercept biosimilar, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Ling SF et al., Population Pharmacokinetic Analysis and…, Pharmaceutics (2024)
   ·  DOI: [10.3390/pharmaceutics16060702](https://doi.org/10.3390/pharmaceutics16060702)
 
-<div class="pk-model-meta" hidden drug="etanercept" model-id="Etanercept_Ling2024_reference" status="needs_review" stale="false" population="patients with rheumatoid arthritis" measured-compound="etanercept biosimilar" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="etanercept" model-id="Etanercept_Ling2024_reference" status="needs_review" stale="false" population="adults with rheumatoid arthritis" measured-compound="etanercept biosimilar" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.
@@ -41,8 +41,8 @@ Ling SF et al., Population Pharmacokinetic Analysis and…, Pharmaceutics (2024)
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| VD (L) | `Q61` · V | 9.19 | L | 0.00919 | [l] | 12.7 | exact (1.0) | pharmaceutics-16-00702-t004:row1:col2, pharmaceutics-16-00702-t004:row1:col3, Ling_2024_table_3:row0:col2, Ling_2024_table_3:row0:col3 | — | 15.60 (141.0% RSE) |
-| CL (L/h) | `Q22` · CL | 0.00283 | L/h | 7.861111111111112e-10 | [l] / [h] | 23.3 | exact (1.0) | pharmaceutics-16-00702-t004:row2:col2, pharmaceutics-16-00702-t004:row2:col3, Ling_2024_table_3:row1:col2, Ling_2024_table_3:row1:col3 | — | 68.90 (24.8% RSE) |
+| VD (L) | `Q61` · V | 9.19 | L | 0.00919 | [l] | not captured | exact (1.0) | pharmaceutics-16-00702-t004:row1:col2, Ling_2024_table_3:row0:col2 | — | 15.60 (None% RSE) |
+| CL (L/h) | `Q22` · CL | 0.00283 | L/h | 7.861111111111112e-10 | [l] / [h] | not captured | exact (1.0) | pharmaceutics-16-00702-t004:row2:col2, Ling_2024_table_3:row1:col2 | — | 68.90 (None% RSE) |
 | ka (/h) | `Q49` · kabs | 0.1167 | /h | 3.2416666666666664e-05 | [1] / [h] | not captured | exact (1.0) | pharmaceutics-16-00702-t004:row3:col2, Ling_2024_table_3:row2:col2 | — | not captured |
 
 <details class="legend">
@@ -58,7 +58,7 @@ Ling SF et al., Population Pharmacokinetic Analysis and…, Pharmaceutics (2024)
 **Interpretation flags:**
 - apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q61 (VD (L)); Q22 (CL (L/h))
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=etanercept biosimilar
-- molar mass: no plausible PubChem entry for 'etanercept biosimilar' ('etanercept') — left in mass units
+- molar mass: no plausible PubChem entry for 'etanercept biosimilar' ('etanercept biosimilar') — left in mass units
 - molar mass: none found for 'etanercept' — its concentrations stay mass-only
 - molar mass: none found for 'etanercept biosimilar' — its concentrations stay mass-only
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
@@ -66,6 +66,8 @@ Ling SF et al., Population Pharmacokinetic Analysis and…, Pharmaceutics (2024)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
+- table pharmaceutics-16-00702-t004: unbound_uncertainty
+- table Ling_2024_table_3: unbound_uncertainty
 - companion parameter table 3 transcribed (13 record(s))
 - LLM selected parameter table(s) 3, 4
 
@@ -100,13 +102,13 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['pharmaceutics-16-00702-t004:row2:col2', 'pharmaceutics-16-00702-t004:row2:col3', 'Ling_2024_table_3:row1:col2', 'Ling_2024_table_3:row1:col3'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['pharmaceutics-16-00702-t004:row2:col2', 'Ling_2024_table_3:row1:col2'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['pharmaceutics-16-00702-t004:row3:col2', 'Ling_2024_table_3:row2:col2'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['pharmaceutics-16-00702-t004:row1:col2', 'pharmaceutics-16-00702-t004:row1:col3', 'Ling_2024_table_3:row0:col2', 'Ling_2024_table_3:row0:col3'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.00283 | not captured | not captured | ['pharmaceutics-16-00702-t004:row2:col2', 'pharmaceutics-16-00702-t004:row2:col3', 'Ling_2024_table_3:row1:col2', 'Ling_2024_table_3:row1:col3'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['pharmaceutics-16-00702-t004:row1:col2', 'Ling_2024_table_3:row0:col2'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.00283 | not captured | not captured | ['pharmaceutics-16-00702-t004:row2:col2', 'Ling_2024_table_3:row1:col2'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.00283 L/h | not captured | not captured | ['pharmaceutics-16-00702-t004:row2:col2', 'pharmaceutics-16-00702-t004:row2:col3', 'Ling_2024_table_3:row1:col2', 'Ling_2024_table_3:row1:col3'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 9.19 L | not captured | not captured | ['pharmaceutics-16-00702-t004:row1:col2', 'pharmaceutics-16-00702-t004:row1:col3', 'Ling_2024_table_3:row0:col2', 'Ling_2024_table_3:row0:col3'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.00283 L/h | not captured | not captured | ['pharmaceutics-16-00702-t004:row2:col2', 'Ling_2024_table_3:row1:col2'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 9.19 L | not captured | not captured | ['pharmaceutics-16-00702-t004:row1:col2', 'Ling_2024_table_3:row0:col2'] |
 
 **Reviewer per-scenario checks:**
 
@@ -126,10 +128,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_etanercept/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Ling_2024` / `Ling_2024::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_etanercept/models/modelica/Etanercept_Ling2024_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_etanercept/models/modelica/Etanercept_Ling2024_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_etanercept/models/modelica/Etanercept_Ling2024_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_etanercept/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Ling_2024` / `Ling_2024::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_etanercept/models/modelica/Etanercept_Ling2024_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_etanercept/models/modelica/Etanercept_Ling2024_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_etanercept/models/modelica/Etanercept_Ling2024_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -147,7 +149,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_etanercept/Etanercept_Ling2024_reference/Etanercept_Ling2024_reference.svg" alt="Etanercept_Ling2024_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_etanercept/Etanercept_Ling2024_reference/Etanercept_Ling2024_reference.svg" alt="Etanercept_Ling2024_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -160,4 +162,4 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 23:59 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 22:06 UTC</sub>

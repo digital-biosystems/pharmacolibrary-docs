@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;durvalumab&quot;,&quot;href&quot;:&quot;drugs/drug_durvalumab/&quot;},{&quot;label&quot;:&quot;Abegesah_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Durvalumab_Zhao2026_reference&quot;,&quot;label&quot;:&quot;Zhao_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_durvalumab/Durvalumab_Zhao2026_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Durvalumab_Abegesah2025_reference&quot;,&quot;label&quot;:&quot;Abegesah_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_durvalumab/Durvalumab_Abegesah2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Durvalumab_Zhao2026_reference&quot;,&quot;label&quot;:&quot;Zhao_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_durvalumab/Durvalumab_Zhao2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Durvalumab_Abegesah2025_reference&quot;,&quot;label&quot;:&quot;Abegesah_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_durvalumab/Durvalumab_Abegesah2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -19,9 +19,9 @@
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's time of the peak (tmax) (paper − 0.498, model 0.183); the covariate scenarios were not simulated.**
+**The model does not reproduce the paper's time of the peak (tmax) (paper -0.498, model 0.183); the covariate scenarios were not simulated.**
 
-Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. The base model was simulated, not the covariate effects the record defines. Extracted — durvalumab: CL 0.298 L/day, V1 3.42 L, Q 0.453 L/day, V2 1.99 L.
+Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. The base model was simulated, not the covariate effects the record defines. Extracted — durvalumab: CL 0.298 L/day, V1 3.42 L, Q 0.452 L/day, V2 1.99 L.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of body_weight_on_v1: this record has none, the second reading 0.518; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -31,10 +31,10 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 Abegesah A et al., Population pharmacokinetics and exposur…, Cancer chemotherapy and pha… (2025)
   ·  DOI: [10.1007/s00280-024-04743-8](https://doi.org/10.1007/s00280-024-04743-8)
 
-<div class="pk-model-meta" hidden drug="durvalumab" model-id="Durvalumab_Abegesah2025_reference" status="needs_review" stale="false" population="patients with advanced cancers, including biliary tract cancer" measured-compound="durvalumab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="durvalumab" model-id="Durvalumab_Abegesah2025_reference" status="needs_review" stale="false" population="patients with advanced biliary tract cancer" measured-compound="durvalumab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
-**Parameters:** 4 extracted, plus 4 covariate effects.
+**Parameters:** 4 extracted, plus 3 covariate effects.
 
 **Parameterization:** mechanistic.
 
@@ -43,15 +43,13 @@ Abegesah A et al., Population pharmacokinetics and exposur…, Cancer chemothera
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL | `Q22` · CL | 0.298 | L/day | 3.449074074074074e-09 | L/h | 1.99 | exact (1.0) | Tab4:row2:col1, Tab4:row2:col2, Tab4:row2:col3 | — | 0.0795 (None% RSE) |
-| V1 | `Q63` · V1 | 3.42 | L | 0.00342 | L | 0.931 | exact (1.0) | Tab4:row3:col1, Tab4:row3:col2, Tab4:row3:col3 | — | 0.0593 (None% RSE) |
-| Q | `Q30` · Q | 0.453 | L/day | 5.243055555555556e-09 | L/h | 5.76 | exact (1.0) | Tab4:row4:col1, Tab4:row4:col2, Tab4:row4:col3 | — | not captured |
-| V2 | `Q64` · V2 | 1.99 | L | 0.00199 | L | 2.23 | exact (1.0) | Tab4:row5:col1, Tab4:row5:col2, Tab4:row5:col3 | — | not captured |
-| crcl_on_cl | `Q900` · crcl_on_cl | 0.134 | not captured | not captured | not captured | 15.6 | not captured (not captured) | Tab4:row11:col1, Tab4:row11:col2, Tab4:row11:col3 | — | not captured |
-| Tumor type 1 on CL | `Q900` · equation variable | 0.0096 | not captured | not captured | not captured | 185 | llm_corrected (0.6) | Tab4:row18:col1, Tab4:row18:col2, Tab4:row18:col3 | — | not captured |
-| sex_on_v1 | `Q900` · sex_on_v1 | -0.140 | not captured | not captured | not captured | 8.31 | not captured (not captured) | Tab4:row21:col1, Tab4:row21:col2 | — | not captured |
-| theta_q319_body_weight | `Q900` · theta_q319_body_weight | 0.342 | not captured | not captured | not captured | 9.96 | not captured (not captured) | Tab4:row17:col1, Tab4:row17:col2, Tab4:row17:col3 | — | not captured |
-| theta_q319_body_weight | `Q900` · theta_q319_body_weight | 0.518 | not captured | not captured | not captured | 5.39 | not captured (not captured) | Tab4:row22:col1, Tab4:row22:col2, Tab4:row22:col3 | — | not captured |
+| CL | `Q22` · CL | 0.298 | L/day | 3.449074074074074e-09 | [l] / [d] | 1.99 | exact (1.0) | Tab4:row2:col1 | — | 0.0795 (3.54% RSE) |
+| V1 | `Q63` · V1 | 3.42 | L | 0.00342 | [l] | 0.931 | exact (1.0) | Tab4:row3:col1 | — | 0.0593 (3.46% RSE) |
+| Q | `Q30` · Q | 0.452 | L/day | 5.231481481481482e-09 | [l] / [d] | 5.76 | exact (1.0) | Tab4:row4:col1 | — | not captured |
+| V2 | `Q64` · V2 | 1.99 | L | 0.00199 | [l] | 2.23 | exact (1.0) | Tab4:row5:col1 | — | not captured |
+| body_weight_on_v1 | `Q900` · body_weight_on_v1 | 0.515 | not captured | not captured | not captured | 5.39 | not captured (not captured) | Tab4:row22:col1 | — | not captured |
+| theta_cl_crcl | `Q900` · theta_cl_crcl | 0.136 | not captured | not captured | not captured | 15.6 | not captured (not captured) | Tab4:row11:col1 | — | not captured |
+| theta_q319_body_weight | `Q900` · theta_q319_body_weight | 0.338 | not captured | not captured | not captured | 9.96 | not captured (not captured) | Tab4:row17:col1 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -67,66 +65,38 @@ Abegesah A et al., Population pharmacokinetics and exposur…, Cancer chemothera
 - table section iiv: 'ETA Tmax' routed out of structural estimates ('Interindividual variability')
 - table section residual_error: 'Proportional component' routed out of structural estimates ('Residual variability')
 - table section residual_error: 'Additive component' routed out of structural estimates ('Residual variability')
-- dropped value-less row: 'Tmax change CL'
-- dropped unlinked row (NIL): 'TC50 change CL' — extend the ontology if this is a real PK parameter (source ['Tab4:row7:col1', 'Tab4:row7:col2', 'Tab4:row7:col3'])
+- table representations disagree for 'CL'; source reconciliation required
+- table representations disagree for 'V1'; source reconciliation required
+- table representations disagree for 'Q'; source reconciliation required
+- table representations disagree for 'V2'; source reconciliation required
+- table representations disagree for 'TC50 change CL'; source reconciliation required
+- table representations disagree for 'LAM'; source reconciliation required
+- table representations disagree for 'CrCL on CL'; source reconciliation required
+- table representations disagree for 'LDH on CL'; source reconciliation required
+- table representations disagree for 'Body weight on CL'; source reconciliation required
+- table representations disagree for 'Tumor type 1 on CL'; source reconciliation required
+- table representations disagree for 'Tumor type 2 on CL'; source reconciliation required
+- table representations disagree for 'Tumor type 3 on CL'; source reconciliation required
+- table representations disagree for 'Sex on V1'; source reconciliation required
+- table representations disagree for 'Body weight on V1'; source reconciliation required
+- unit_dimension_mismatch: 'TC50 change CL' → Q22 (unit '[time]' vs ontology '[length] ** 3 / [time]') — route to review
+- dropped duplicate Q22 ('TC50 change CL', value '61.3') — already have one for this compound
 - dropped unlinked row (NIL): 'LAM' — extend the ontology if this is a real PK parameter (source ['Tab4:row8:col1'])
-- dropped value-less row: 'Albumin on CL'
-- covariate level 'CrCL on CL' → Q900:crcl_on_cl = 0.134 (linear_fractional on Q22)
-- dropped value-less row: 'ECOG status on CL'
-- dropped duplicate Q22 ('LDH on CL', value '0.0516') — already have one for this compound
-- dropped value-less row: 'Sex on CL'
-- dropped value-less row: 'COMB1 on CL'
-- dropped value-less row: 'COMB2 on CL'
-- dropped unlinked row (NIL): 'Tumor type 2 on CL' — extend the ontology if this is a real PK parameter (source ['Tab4:row19:col1', 'Tab4:row19:col2', 'Tab4:row19:col3'])
-- dropped duplicate Q22 ('Tumor type 3 on CL', value '0.1661') — already have one for this compound
-- covariate level 'Sex on V1' → Q900:sex_on_v1 = -0.140 (linear_fractional on Q22)
+- dropped unlinked row (NIL): 'LDH on CL' — extend the ontology if this is a real PK parameter (source ['Tab4:row13:col1'])
+- dropped unlinked row (NIL): 'Tumor type 1 on CL' — extend the ontology if this is a real PK parameter (source ['Tab4:row18:col1'])
+- dropped unlinked row (NIL): 'Tumor type 2 on CL' — extend the ontology if this is a real PK parameter (source ['Tab4:row19:col1'])
+- dropped unlinked row (NIL): 'Tumor type 3 on CL' — extend the ontology if this is a real PK parameter (source ['Tab4:row20:col1'])
+- dropped unlinked row (NIL): 'Sex on V1' — extend the ontology if this is a real PK parameter (source ['Tab4:row21:col1'])
+- covariate level 'Body weight on V1' → Q900:body_weight_on_v1 = 0.515 (linear_fractional on Q22)
 - covariate effect for Q319 has no base parameter row (kept as unattached equation-variable)
-- implicit units: 'CL' → L/day (from the paper text: 'The paper states: “CL, 0.298 L/day” and identifies CL as clearance.')
-- implicit units: 'V1' → L (from the paper text: 'The paper states: “V1, 3.42 L” and identifies V1 as the volume of distribution of the central compartment.')
-- implicit units: 'Q' → L/day (from the paper text: 'The paper states: “Q, 0.452 L/day” and identifies Q as intercompartmental clearance.')
-- implicit units: 'V2' → L (from the paper text: 'The paper states: “V2, 1.99 L” and identifies V2 as the volume of distribution of the peripheral compartment.')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=durvalumab
+- status held at route_to_review — not promoted
 - molar mass: none found for 'durvalumab' — its concentrations stay mass-only
 
 **Extraction notes:**
-- unparsed cell Tab4:row2:col4 = '[0.283; 0.315]'
-- unparsed cell Tab4:row3:col4 = '[3.37; 3.47]'
-- unparsed cell Tab4:row4:col4 = '[0.374; 0.535]'
-- unparsed cell Tab4:row5:col4 = '[1.83; 2.15]'
-- unparsed cell Tab4:row6:col1 = '− 0.498'
-- unparsed cell Tab4:row6:col3 = '− 0.499'
-- unparsed cell Tab4:row6:col4 = '[− 0.551; − 0.446]'
-- unparsed cell Tab4:row7:col4 = '[44.5; 84.5]'
-- unparsed cell Tab4:row10:col1 = '− 0.589'
-- unparsed cell Tab4:row10:col3 = '− 0.596'
-- unparsed cell Tab4:row10:col4 = '[− 0.772; − 0.430]'
-- unparsed cell Tab4:row11:col4 = '[0.0925; 0.178]'
-- unparsed cell Tab4:row12:col1 = '− 0.0501'
-- unparsed cell Tab4:row12:col3 = '− 0.0495'
-- unparsed cell Tab4:row12:col4 = '[− 0.0725; − 0.0232]'
-- unparsed cell Tab4:row13:col4 = '[0.0262; 0.0740]'
-- unparsed cell Tab4:row14:col1 = '− 0.161'
-- unparsed cell Tab4:row14:col3 = '− 0.160'
-- unparsed cell Tab4:row14:col4 = '[− 0.184; − 0.136]'
-- unparsed cell Tab4:row15:col1 = '− 0.163'
-- unparsed cell Tab4:row15:col3 = '− 0.1631'
-- unparsed cell Tab4:row15:col4 = '[−0.192; − 0.132]'
-- unparsed cell Tab4:row16:col1 = '− 0.0929'
-- unparsed cell Tab4:row16:col3 = '− 0.0925'
-- unparsed cell Tab4:row16:col4 = '[− 0.136; 0.0489]'
-- unparsed cell Tab4:row17:col4 = '[0.270; 0.408]'
-- unparsed cell Tab4:row18:col4 = '[− 0.0228; 0.0466]'
-- unparsed cell Tab4:row19:col4 = '[0.00115; 0.143]'
-- unparsed cell Tab4:row20:col4 = '[0.0973; 0.236]'
-- unparsed cell Tab4:row21:col3 = '− 0.141'
-- unparsed cell Tab4:row21:col4 = '[− 0.162; − 0.116]'
-- unparsed cell Tab4:row22:col4 = '[0.463; 0.571]'
-- unparsed cell Tab4:row24:col4 = '[0.0698; 0.0887]'
-- unparsed cell Tab4:row25:col4 = '[0.0339; 0.0442]'
-- unparsed cell Tab4:row26:col4 = '[0.0500; 0.0677]'
-- unparsed cell Tab4:row27:col4 = '[0.0437; 0.0864]'
-- unparsed cell Tab4:row29:col4 = '[0.246; 0.263]'
-- unparsed cell Tab4:row30:col4 = '[3.55; 6.17]'
+- table Tab4: unbound_uncertainty
+- table Tab4: missing_unit_binding
+- table Tab4: representations disagree; selected evidence retained, not merged
 - LLM selected parameter table(s) 4
 
 ## Validation
@@ -164,15 +134,15 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab4:row2:col1', 'Tab4:row2:col2', 'Tab4:row2:col3'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab4:row4:col1', 'Tab4:row4:col2', 'Tab4:row4:col3'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab4:row3:col1', 'Tab4:row3:col2', 'Tab4:row3:col3'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab4:row5:col1', 'Tab4:row5:col2', 'Tab4:row5:col3'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.298 | not captured | not captured | ['Tab4:row2:col1', 'Tab4:row2:col2', 'Tab4:row2:col3'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab4:row2:col1'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab4:row4:col1'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab4:row3:col1'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab4:row5:col1'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.298 | not captured | not captured | ['Tab4:row2:col1'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.0124 L/h | not captured | not captured | ['Tab4:row2:col1', 'Tab4:row2:col2', 'Tab4:row2:col3'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 3.42 L | not captured | not captured | ['Tab4:row3:col1', 'Tab4:row3:col2', 'Tab4:row3:col3'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 1.99 L | not captured | not captured | ['Tab4:row5:col1', 'Tab4:row5:col2', 'Tab4:row5:col3'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.0124 L/h | not captured | not captured | ['Tab4:row2:col1'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 3.42 L | not captured | not captured | ['Tab4:row3:col1'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 1.99 L | not captured | not captured | ['Tab4:row5:col1'] |
 
 **Reviewer per-scenario checks:**
 
@@ -184,9 +154,9 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
-| T1_tmax | reference | skipped | − 0.498 | 0.18333333335172405 | not captured | unresolved time unit '–' |
-| T1_tmax | reference | skipped | 0.0623 | 0.18333333335172405 | not captured | unresolved time unit '–' |
-| T1_tmax | reference | fail | 0.498 | 0.18333333335172405 | 0.3681 | →SI vs simulated h |
+| T1_tmax | reference | fail | -0.498 | 0.1833333333517245 | -0.3681 | →SI vs simulated h |
+| T1_tmax | reference | fail | 0.0623 | 0.1833333333517245 | 2.9428 | →SI vs simulated h |
+| T1_tmax | reference | fail | 0.498 | 0.1833333333517245 | 0.3681 | →SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -195,10 +165,10 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_durvalumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Abegesah_2025` / `Abegesah_2025::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_durvalumab/models/modelica/Durvalumab_Abegesah2025_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_durvalumab/models/modelica/Durvalumab_Abegesah2025_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_durvalumab/models/modelica/Durvalumab_Abegesah2025_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_durvalumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Abegesah_2025` / `Abegesah_2025::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_durvalumab/models/modelica/Durvalumab_Abegesah2025_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_durvalumab/models/modelica/Durvalumab_Abegesah2025_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_durvalumab/models/modelica/Durvalumab_Abegesah2025_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -208,7 +178,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_durvalumab/Durvalumab_Abegesah2025_reference/Durvalumab_Abegesah2025_reference_modelica.zip" download>Durvalumab_Abegesah2025_reference_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_durvalumab/Durvalumab_Abegesah2025_reference/Durvalumab_Abegesah2025_reference_fmi.zip" download>Durvalumab_Abegesah2025_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_2C.fmu" download>PK_2C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_durvalumab/Durvalumab_Abegesah2025_reference/Durvalumab_Abegesah2025_reference_fmi.zip" download>Durvalumab_Abegesah2025_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_2C.fmu" download>PK_2C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_durvalumab/Durvalumab_Abegesah2025_reference/Durvalumab_Abegesah2025_reference_matlab.zip" download>Durvalumab_Abegesah2025_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_durvalumab/Durvalumab_Abegesah2025_reference/Durvalumab_Abegesah2025_reference_matlab_simbio.zip" download>Durvalumab_Abegesah2025_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_durvalumab/Durvalumab_Abegesah2025_reference/Durvalumab_Abegesah2025_reference_sbml.zip" download>Durvalumab_Abegesah2025_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
@@ -216,11 +186,11 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_durvalumab/Durvalumab_Abegesah2025_reference/Durvalumab_Abegesah2025_reference.svg" alt="Durvalumab_Abegesah2025_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_durvalumab/Durvalumab_Abegesah2025_reference/Durvalumab_Abegesah2025_reference.svg" alt="Durvalumab_Abegesah2025_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 7 mg infusion over 10 min, single dose. Doses in the paper: 7–1400 mg.
+**Administration: intravenous** — 53.6 mg infusion over 10 min, single dose. _The paper's dose was not captured; the default is the WHO ATC DDD 53.6 mg parenteral (L01FF03) (defined daily dose)._
 
 <dbs-fmusim paramsurl="drugs/drug_durvalumab/Durvalumab_Abegesah2025_reference/Durvalumab_Abegesah2025_reference_params.json" metaurl="assets/fmu/PK_2C.vr.json" wasmurl="assets/fmu/PK_2C.js" controlsurl="drugs/drug_durvalumab/Durvalumab_Abegesah2025_reference/Durvalumab_Abegesah2025_reference_sim_controls.json"></dbs-fmusim>
 
@@ -229,4 +199,4 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 12:18 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 19:20 UTC</sub>

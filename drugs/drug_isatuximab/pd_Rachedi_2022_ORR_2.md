@@ -1,8 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;isatuximab&quot;,&quot;href&quot;:&quot;drugs/drug_isatuximab/&quot;},{&quot;label&quot;:&quot;Rachedi_2022 \u00b7 PD Overall response rate&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Isatuximab_Fau2020_reference&quot;,&quot;label&quot;:&quot;Fau_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_isatuximab/Isatuximab_Fau2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;isatuximab&quot;,&quot;href&quot;:&quot;drugs/drug_isatuximab/&quot;},{&quot;label&quot;:&quot;Rachedi_2022 \u00b7 PD overall response rate&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Overall response rate — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span>
+# overall response rate — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -14,19 +13,19 @@
 
 ## Record summary
 
-**As extracted:** Isatuximab (concentrations from the PK model of Brillac_2025::final) drives Overall response rate: direct log-linear effect.
+**As extracted:** Isatuximab (concentrations from the PK model of Brillac_2025::final) drives overall response rate: direct log-linear effect.
 
 **Model:** No model was generated from this record.
 
-> Isatuximab exposure, represented by log CT4W (concentration in μg/mL), was modeled as a log-linear predictor of binary ORR (partial response or better), with higher exposure associated with a higher response probability. The paper does not specify a pharmacologic mechanism or report Imax, IC50, EC50, Emax, or rate constants.
+> A logistic regression model linked isatuximab exposure (specifically log CT4W) to the binary response of overall response rate (ORR), selecting the log-linear function over linear or Emax forms based on AIC. The paper describes the statistical association between exposure metrics and the probability of response but does not specify the underlying pharmacodynamic mechanism (e.g., direct Emax, inhibition of elimination, or effect compartment) or provide specific potency values such as IC50 or EC50.
 >
-> <sub>Source-based summary by gpt-6-luna from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Rachedi_2022`
 - **model family:** `log_linear`
 - **driver:** `cited_pk`
 - **tier:** descriptive
-- **effect:** stimulation/additive
+- **effect:** stimulation/unknown
 
 ## Citation
 Rachedi F et al., Exposure-response analyses for selectio…, CPT: pharmacometrics & syst… (2022)

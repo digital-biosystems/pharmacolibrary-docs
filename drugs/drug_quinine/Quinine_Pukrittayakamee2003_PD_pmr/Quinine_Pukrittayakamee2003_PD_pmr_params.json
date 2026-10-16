@@ -1,0 +1,63 @@
+{
+ "model_id": "Quinine_Pukrittayakamee2003_PD_pmr",
+ "note": "Values for the shared PD_SigmoidEmaxSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 0.0,
+  "EC50": 3360.0,
+  "Emax": -0.9999,
+  "exposure_per_s": 1000.0,
+  "gamma": 3.0
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 0.0,
+  "3359.9999999999995": -0.49995
+ },
+ "stop_time": 34.0,
+ "subtitle": "parasite multiplication rate (PMR) against quinine concentration",
+ "template": "PD_SigmoidEmaxSweep",
+ "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Concentration–effect simulated by the PD model",
+ "units": {
+  "EC50": {
+   "display_only": false,
+   "display_unit": "g/ml",
+   "factor": 999.9999999999999,
+   "si_unit": "kg/m3"
+  },
+  "Emax": {
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "exposure": {
+   "display_only": false,
+   "display_unit": "g/ml",
+   "factor": 999.9999999999999,
+   "si_unit": "kg/m3"
+  },
+  "gamma": {
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "response_unit": ""
+ },
+ "x_axis": {
+  "display_unit": "g/ml",
+  "factor": 999.9999999999999,
+  "label": "quinine concentration",
+  "per_s": 1000.0,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "",
+  "factor": 1.0,
+  "label": "parasite multiplication rate (PMR)"
+ }
+}

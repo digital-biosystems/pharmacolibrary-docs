@@ -1,11 +1,10 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J06B&quot;,&quot;href&quot;:&quot;atc/J06B.md&quot;},{&quot;label&quot;:&quot;palivizumab&quot;,&quot;href&quot;:&quot;drugs/drug_palivizumab/&quot;},{&quot;label&quot;:&quot;Madhi_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Palivizumab_Huang2017_reference&quot;,&quot;label&quot;:&quot;Huang_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_palivizumab/Palivizumab_Huang2017_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Palivizumab_Li2021_reference&quot;,&quot;label&quot;:&quot;Li_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_palivizumab/Palivizumab_Li2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # palivizumab — `Palivizumab_Madhi2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.727), gpt-oss:120b (not confirmed, agreement 0.7). Primary extraction retained.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.727), gpt-oss:120b (not confirmed, agreement 0.7). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -17,21 +16,19 @@
 
 ### Reviewer guidance
 
-**The palivizumab record was rejected because its apparent clearance (CL/F 0.0128 L/d) and apparent volume (V/F 0.901 L) are physiologically implausible for this monoclonal antibody, indicating a unit or scale extraction error.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-Palivizumab is an intravenous monoclonal antibody, yet the parameters are recorded as bioavailability-adjusted oral values (CL/F 0.0128 L/d, V/F 0.901 L), and these magnitudes fall far outside the physiological window for such a drug, which triggered the rejection. A second reader disagreed on several extracted values (e.g., 45 vs 48.8, and one value 0.91 with no counterpart, plus a value 2.24 the record lacks), so the extracted numbers are not consistently reproducible. The record was sourced from review-secondary text rather than a fitted primary analysis, which further limits its reliability. Extracted — palivizumab: CL/F 0.0128 L/d, V/F 0.901 L.
+Extracted — palivizumab: CL/F 0.0128 L/d, V/F 0.91 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q56: this record has 4, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by glm-5.3-flash</sub>
-
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:39:17.231365+00:00) predates the upstream re-run (2026-10-07 14:43:25.376945+00:00). Current validate status: `rejected`.
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Madhi SA et al., A Phase 1b/2a Trial of a Half-life Exte…, The Journal of infectious d… (2025)
   ·  DOI: [10.1093/infdis/jiae581](https://doi.org/10.1093/infdis/jiae581)
 
-<div class="pk-model-meta" hidden drug="palivizumab" model-id="Palivizumab_Madhi2025_reference" status="rejected" stale="true" population="" measured-compound="palivizumab" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="palivizumab" model-id="Palivizumab_Madhi2025_reference" status="rejected" stale="false" population="" measured-compound="palivizumab" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.
@@ -44,7 +41,7 @@ Madhi SA et al., A Phase 1b/2a Trial of a Half-life Exte…, The Journal of infe
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | CL/F, L/d | `Q27` · CL/F | 0.0128 | L/d | 1.4814814814814817e-10 | L/h | not captured | review (0.7) | Madhi_2025:review | — | not captured |
-| Vz/F, L | `Q76` · V/F | 0.901 | L | 0.000901 | L | not captured | review (0.7) | Madhi_2025:review | — | not captured |
+| Vz/F | `Q76` · V/F | 0.91 | L | 0.00091 | L | not captured | review (0.7) | Madhi_2025:review | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -98,7 +95,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q27 | fail | clearance within physiological range | 0.000533 L/h | not captured | not captured | ['Madhi_2025:review'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 0.901 L | not captured | not captured | ['Madhi_2025:review'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 0.91 L | not captured | not captured | ['Madhi_2025:review'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -107,7 +104,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_palivizumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Madhi_2025` / `Madhi_2025::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_palivizumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Madhi_2025` / `Madhi_2025::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -123,4 +120,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 14:43 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 22:45 UTC</sub>

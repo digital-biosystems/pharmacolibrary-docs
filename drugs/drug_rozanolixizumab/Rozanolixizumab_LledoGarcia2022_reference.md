@@ -4,7 +4,7 @@
 
 # rozanolixizumab — `Rozanolixizumab_LledoGarcia2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.583). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.30).">human + animal</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.583). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -12,19 +12,19 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-> **Species: human + animal.** The paper reports both human and animal data; check which group this record describes before reading it as human pharmacology (read from the LLM relevance screen, p(non-human) 0.30).
+> **Species: human + animal.** The paper reports both human and animal data; check which group this record describes before reading it as human pharmacology (read from the LLM relevance screen, p(non-human) 0.50).
 
 **Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
-**Rozanolixizumab total clearance (0.0709 L/day) and formation clearance (0.968 L/day) failed plausibility checks, and a structural parameter had a unit dimension mismatch.**
+**C5 dimension mismatch on a structural parameter; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The total clearance of 0.0709 L/day is flagged as physiologically implausible, indicating a likely scale or unit extraction error. A separate formation clearance of 0.968 L/day also exceeded the expected physiological window. One reported unit could not be converted to standard SI units, leaving the parameter without a comparable value. Additionally, a structural parameter exhibited a dimensional inconsistency in the model equations. Extracted — rozanolixizumab: Q 0.27 L/day, V2 0.383 L, CLfm 0.968 L/day, KD 0.359 nM, CL 0.0709 L/day, V 0.108 L.
+A reported unit could not be converted (equation variable and KD), so that value has no SI equivalent. Extracted — rozanolixizumab: Q 0.27 L/day, V2 0.383 L, CL 0.968 L/day, KD 0.359 nM, V 0.108 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading not captured → not captured (none); it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Lledo-Garcia R et al., Pharmacokinetic-pharmacodynamic modelli…, CPT: pharmacometrics & syst… (2022)
@@ -33,7 +33,7 @@ Lledo-Garcia R et al., Pharmacokinetic-pharmacodynamic modelli…, CPT: pharmaco
 <div class="pk-model-meta" hidden drug="rozanolixizumab" model-id="Rozanolixizumab_LledoGarcia2022_reference" status="rejected" stale="false" population="healthy adults" measured-compound="rozanolixizumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 6 extracted.
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -42,12 +42,11 @@ Lledo-Garcia R et al., Pharmacokinetic-pharmacodynamic modelli…, CPT: pharmaco
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
+| PK (TMDD) | `Q900` · equation variable | 2.7 | TMDD | not captured | [tmdd] | 6.3 | llm (0.6) | psp412739-tbl-0002:row1:col2, psp412739-tbl-0002:row1:col3 | — | not captured |
 | Q (L/day) | `Q30` · Q | 0.27 | L/day | 3.125e-09 | [l] / [d] | not captured | exact (1.0) | psp412739-tbl-0002:row2:col1 | — | not captured |
 | V2 (L) | `Q64` · V2 | 0.383 | L | 0.00038300000000000004 | [l] | not captured | exact (1.0) | psp412739-tbl-0002:row3:col1 | — | not captured |
-| CLA (L/day) | `Q370` · CLfm | 0.968 | L/day | 1.1203703703703703e-08 | [l] / [d] | not captured | llm (0.6) | psp412739-tbl-0002:row4:col1, psp412739-tbl-0002:row4:col2 | — | not captured |
+| CLA (L/day) | `Q22` · CL | 0.968 | L/day | 1.1203703703703703e-08 | [l] / [d] | 6.8 | llm_confirmed (0.6) | psp412739-tbl-0002:row4:col1, psp412739-tbl-0002:row4:col2 | — | not captured |
 | KD (nM) | `Q331` · KD | 0.359 | nM | not captured | [nM] | not captured | exact (1.0) | psp412739-tbl-0002:row5:col1 | — | not captured |
-| [FcRn] (nM) | `Q900` · equation variable | 592.8 | nM | not captured | [nM] | not captured | llm (0.6) | psp412739-tbl-0002:row6:col1 | — | not captured |
-| CLA (L/day) | `Q22` · CL | 0.0709 | L/day | 8.206018518518518e-10 | L/h | not captured | review_gapfill (0.7) | Lledo-Garcia_2022:review | — | not captured |
 | V (L) | `Q61` · V | 0.108 | L | 0.000108 | L | not captured | review_gapfill (0.7) | Lledo-Garcia_2022:review | — | not captured |
 
 <details class="legend">
@@ -58,10 +57,27 @@ Lledo-Garcia R et al., Pharmacokinetic-pharmacodynamic modelli…, CPT: pharmaco
 ## Departures & gaps
 
 **Interpretation flags:**
+- table representations disagree for 'PK (TMDD)'; source reconciliation required
 - column 'parameter' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- dropped unlinked row (NIL): 'PK (TMDD)' — extend the ontology if this is a real PK parameter (source ['psp412739-tbl-0002:row1:col2', 'psp412739-tbl-0002:row1:col3'])
+- table representations disagree for 'Q (L/day)'; source reconciliation required
+- table representations disagree for 'V2 (L)'; source reconciliation required
+- table representations disagree for 'CLA (L/day)'; source reconciliation required
+- table representations disagree for 'KD (nM)'; source reconciliation required
+- table representations disagree for '[FcRn] (nM)'; source reconciliation required
+- table representations disagree for 'RB nmol/day RB = [FcRn]*Kdeg*V'; source reconciliation required
+- table representations disagree for 'K deg (day−1)'; source reconciliation required
+- table representations disagree for 'Prop RE (CV %)'; source reconciliation required
+- table representations disagree for 'IIV V (CV %)'; source reconciliation required
+- table representations disagree for 'IIV K deg (CV %)'; source reconciliation required
+- table representations disagree for 'PD'; source reconciliation required
+- table representations disagree for 'K out (day−1)'; source reconciliation required
+- table representations disagree for 'Emax'; source reconciliation required
+- table representations disagree for 'EC50 (mg/L)'; source reconciliation required
+- table representations disagree for 'IIV IgG base (CV %)'; source reconciliation required
+- unit_dimension_unknown: 'TMDD' (equation variable)
 - unit_dimension_mismatch: 'KD (nM)' → Q331 (unit '[length]' vs ontology '[mass] / [length] ** 3') — route to review
-- dropped duplicate Q900 ('RB nmol/day RB = [FcRn]*Kdeg*V', value '349.3') — already have one for this compound
+- dropped unlinked row (NIL): '[FcRn] (nM)' — extend the ontology if this is a real PK parameter (source ['psp412739-tbl-0002:row6:col1'])
+- dropped unlinked row (NIL): 'RB nmol/day RB = [FcRn]*Kdeg*V' — extend the ontology if this is a real PK parameter (source ['psp412739-tbl-0002:row7:col1', 'psp412739-tbl-0002:row7:col2'])
 - dropped PD-category row 'K deg (day−1)' → Q328 (kout, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['psp412739-tbl-0002:row8:col1', 'psp412739-tbl-0002:row8:col2'])
 - dropped unlinked row (NIL): 'Prop RE (CV %)' — extend the ontology if this is a real PK parameter (source ['psp412739-tbl-0002:row9:col2', 'psp412739-tbl-0002:row17:col2'])
 - dropped unlinked row (NIL): 'PD' — extend the ontology if this is a real PK parameter (source ['psp412739-tbl-0002:row12:col2', 'psp412739-tbl-0002:row12:col3'])
@@ -73,14 +89,12 @@ Lledo-Garcia R et al., Pharmacokinetic-pharmacodynamic modelli…, CPT: pharmaco
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - status held at route_to_review — not promoted
 - molar mass: none found for 'rozanolixizumab' — its concentrations stay mass-only
-- gap-filled Q22 (CL) from Lledo-Garcia_2022's review values (primary lacked it)
 - gap-filled Q61 (V) from Lledo-Garcia_2022's review values (primary lacked it)
 
 **Extraction notes:**
-- unparsed cell psp412739-tbl-0002:row2:col2 = '0.271 a (16.6)'
-- unparsed cell psp412739-tbl-0002:row3:col2 = '0.36 a (20.8)'
-- unparsed cell psp412739-tbl-0002:row5:col2 = '1 a (14.6)'
-- unparsed cell psp412739-tbl-0002:row6:col2 = '147 a (14.4)'
+- table psp412739-tbl-0002: ragged_grid
+- table psp412739-tbl-0002: unparsed_numeric_cell
+- table psp412739-tbl-0002: representations disagree; selected evidence retained, not merged
 - LLM selected parameter table(s) 2
 
 ## Validation
@@ -114,18 +128,17 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Lledo-Garcia_2022:review'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp412739-tbl-0002:row4:col1', 'psp412739-tbl-0002:row4:col2'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp412739-tbl-0002:row2:col1'] |
 | C5_dimension_Q331 | fail | [length] | nM | not captured | not captured | ['psp412739-tbl-0002:row5:col1'] |
-| C5_dimension_Q370 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp412739-tbl-0002:row4:col1', 'psp412739-tbl-0002:row4:col2'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Lledo-Garcia_2022:review'] |
 | C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp412739-tbl-0002:row3:col1'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.0709 | not captured | not captured | ['Lledo-Garcia_2022:review'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.968 | not captured | not captured | ['psp412739-tbl-0002:row4:col1', 'psp412739-tbl-0002:row4:col2'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.00295 L/h | not captured | not captured | ['Lledo-Garcia_2022:review'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.0403 L/h | not captured | not captured | ['psp412739-tbl-0002:row4:col1', 'psp412739-tbl-0002:row4:col2'] |
 | C9_phys_window_Q61 | fail | volume within physiological range | 0.108 L | not captured | not captured | ['Lledo-Garcia_2022:review'] |
 | C9_phys_window_Q64 | fail | volume within physiological range | 0.383 L | not captured | not captured | ['psp412739-tbl-0002:row3:col1'] |
 
@@ -136,7 +149,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_rozanolixizumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Lledo-Garcia_2022` / `Lledo-Garcia_2022::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_rozanolixizumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Lledo-Garcia_2022` / `Lledo-Garcia_2022::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -152,4 +165,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 00:25 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 00:15 UTC</sub>

@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;anifrolumab&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Anifrolumab_Almquist2022_reference&quot;,&quot;label&quot;:&quot;Almquist_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_anifrolumab/Anifrolumab_Almquist2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # anifrolumab
 
@@ -17,13 +18,30 @@ Anifrolumab is a monoclonal antibody used to treat systemic lupus erythematosus.
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 23:39 | 0:40 | 0/0/1 | 0/0/0 | 0/0/0 | 80,333/2,668 | einfracz / qwen3.8-27b | 5 | 0/5 | 5/0 | 0 |
+| 2026-10-15 00:31 | 2:20 | 1/2/0 | 0/0/1 | 0/0/0 | 169,216/6,006 | einfracz / qwen3.8-27b | 5 | 0/5 | 5/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.692). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q56 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Almquist_2022_reference](drugs/drug_anifrolumab/Anifrolumab_Almquist2022_reference.md) | — | 2-compartment (no model) | 7 | Almquist J et al., Nonlinear Population Pharmacokinetics o…, Journal of clinical pharmac… (2022) | [10.1002/jcph.2055](https://doi.org/10.1002/jcph.2055) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.692). Primary extraction retained.">cross-check: partial</span> | [Almquist_2022_reference](drugs/drug_anifrolumab/Anifrolumab_Almquist2022_reference.md) | ▶ model + simulator | 2-compartment, IV | 6 | Almquist J et al., Nonlinear Population Pharmacokinetics o…, Journal of clinical pharmac… (2022) | [10.1002/jcph.2055](https://doi.org/10.1002/jcph.2055) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Tang_2023_dose_s_of_anifrolumab](drugs/drug_anifrolumab/Anifrolumab_Tang2023_dose_s_of_anifrolumab.md) | — | 1-compartment (no model) | 0 | Tang W et al., Clinical Pharmacokinetics, Pharmacodyna…, Clinical pharmacokinetics (2023) | [10.1007/s40262-023-01238-2](https://doi.org/10.1007/s40262-023-01238-2) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Tang_2023_study_population](drugs/drug_anifrolumab/Anifrolumab_Tang2023_study_population.md) | — | 1-compartment (no model) | 0 | Tang W et al., Clinical Pharmacokinetics, Pharmacodyna…, Clinical pharmacokinetics (2023) | [10.1007/s40262-023-01238-2](https://doi.org/10.1007/s40262-023-01238-2) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Chia_2021_SRI_4](drugs/drug_anifrolumab/pd_Chia_2021_SRI_4.md) | SLE Responder Index ← anifrolumab · categorical (graded) response model | — | Chia YL et al., Exposure-response analysis for selectio…, Rheumatology (Oxford, Engla… (2021) | [10.1093/rheumatology/keab176](https://doi.org/10.1093/rheumatology/keab176) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=anifrolumab).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: IFNAR1 (inhibitor), IFNAR2 (target), IFNGR2 (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -34,8 +52,8 @@ Anifrolumab is a monoclonal antibody used to treat systemic lupus erythematosus.
 ## Coverage
 
 - **PubMed hits:** 7 matched, 7 returned
-- **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
+- **screened:** 2  ·  **relevant:** 2
+- **records:** 3  ·  extracted 1  ·  needs_review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -44,19 +62,18 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Chia_2021.pdf` | Chia YL et al., Exposure-response analysis for selectio…, Rheumatology (Oxford, Engla… (2021) | popPK | 10 | [10.1093/rheumatology/keab176](https://doi.org/10.1093/rheumatology/keab176) | [33629110](https://pubmed.ncbi.nlm.nih.gov/33629110) | The paper describes a population PK model for anifrolumab in humans, but the evidence provided only contains qualitative descriptions of covariates (weight, IFNGS) and conclusions regarding dosage, without listing specific numeric parameter estimates (CL, V, Q, etc.). |
+| `Chia_2021.pdf` | Chia YL et al., Exposure-response analysis for selectio…, Rheumatology (Oxford, Engla… (2021) | popPK | 9 | [10.1093/rheumatology/keab176](https://doi.org/10.1093/rheumatology/keab176) | [33629110](https://pubmed.ncbi.nlm.nih.gov/33629110) | The study describes a population PK model for anifrolumab and identifies covariates for clearance, but no specific numeric parameter values (e.g., CL, V, Q) are provided in the evidence text. |
 
-<sub>queue written 2026-10-06T23:38:43.500012+00:00</sub>
+<sub>queue written 2026-10-15T00:29:03.554439+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Chia_2021 | relevant | 10 | 2 | The paper describes a population PK model for anifrolumab in humans, but the evidence provided only contains qualitative descriptions of covariates (weight, IFNGS) and conclusions regarding dosage, without listing specific numeric parameter estimates (CL, V, Q, etc.). |
-| popPK | Chia_2022 | irrelevant | 2 | 0 | The study is an exposure-response analysis using model-predicted concentrations but does not report specific quantitative population PK parameters (CL, V, Q, etc.) for anifrolumab. |
-| popPK | Chia_2022_2 | relevant | 9 | 2 | The paper analyzes PK/PD relationships and uses a compartmental population PK model for anifrolumab, but the specific quantitative disposition parameters (CL, V, Q) are in Table 2 or Supplementary Material, which are not provided; only concentration metrics (Ctrough, Cave, IC80) are visible in the text. |
-| popPK | Rademacher_2026 | irrelevant | 0 | 0 | The study analyzes clinical outcomes (SLEDAI scores) and serological biomarkers (complement, anti-dsDNA) in SLE patients, reporting no pharmacokinetic parameters (CL, V, ka) for anifrolumab. |
-| popPK | Tang_2023 | relevant | 4 | 8 | This is a review article summarizing quantitative PK parameters (CL, t1/2, AUC) from original clinical trials, with values present in the text. |
+| popPK | Chia_2021 | relevant | 9 | 0 | The study describes a population PK model for anifrolumab and identifies covariates for clearance, but no specific numeric parameter values (e.g., CL, V, Q) are provided in the evidence text. |
+| popPK | Chia_2022 | irrelevant | 3 | 0 | The study reports an exposure-response analysis using pre-existing model-predicted concentrations (Cave) rather than deriving new quantitative PK parameters (CL, V, etc.), and specific numeric PK values are not present in the text. |
+| popPK | Chia_2022_2 | relevant | 6 | 0 | The paper reports PK/PD relationships for anifrolumab using a population PK model, but the specific numeric disposition parameters (CL, V, Q, etc.) are in Table 2 or supplementary materials which are not included in the provided evidence. |
+| popPK | Rademacher_2026 | irrelevant | 0 | 0 | The paper is a clinical analysis of serological markers (complement and autoantibodies) and disease activity scores in SLE patients, not a pharmacokinetic study; it contains no PK parameters (CL, V, ka) for anifrolumab. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-06 23:38 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-15 00:29 UTC</sub>

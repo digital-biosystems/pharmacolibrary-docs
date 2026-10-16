@@ -18,9 +18,9 @@
 
 **Model:** No model was generated from this record.
 
-> The paper relates ciclesonide dose to all-cause mortality (binary) using an Emax-type model, but the excerpts provide no mechanism, no effect direction, and no parameter values (Emax, ED50, gamma) are stated.
+> The paper does not provide a pharmacodynamic model description, mechanism, or parameter values for the effect of ciclesonide dose on all-cause mortality.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Pu_2026`
 - **model family:** `emax`

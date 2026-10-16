@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A06A&quot;,&quot;href&quot;:&quot;atc/A06A.md&quot;},{&quot;label&quot;:&quot;magnesium sulfate&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_sulfate/&quot;},{&quot;label&quot;:&quot;Brookfield_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;MagnesiumSulfate_Chuan2001_reference&quot;,&quot;label&quot;:&quot;Chuan_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_sulfate/MagnesiumSulfate_Chuan2001_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;MagnesiumSulfate_Du2019_reference&quot;,&quot;label&quot;:&quot;Du_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_sulfate/MagnesiumSulfate_Du2019_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;MagnesiumSulfate_da2020_reference&quot;,&quot;label&quot;:&quot;da_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_sulfate/MagnesiumSulfate_da2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;MagnesiumSulfate_Rui1996_reference&quot;,&quot;label&quot;:&quot;Rui_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_sulfate/MagnesiumSulfate_Rui1996_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Lu_2002_DBP&quot;,&quot;label&quot;:&quot;Lu_2002 \u00b7 DBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_sulfate/pd_Lu_2002_DBP.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Lu_2002_SBP&quot;,&quot;label&quot;:&quot;Lu_2002 \u00b7 SBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_sulfate/pd_Lu_2002_SBP.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # magnesium sulfate — `MagnesiumSulfate_Brookfield2021_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.8), gpt-oss:120b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.8), gpt-oss:120b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -15,25 +15,25 @@
 
 **Model:** Model withheld: a core parameter is unspecified.
 
+> **Caveat** (`covariates_not_exercised`): Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.
+
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**No value for magnesium sulfate's clearance, volume of distribution, absorption lag time and central→peripheral rate constant; the covariate scenarios were not simulated (+1 more).**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+The model was built, but magnesium sulfate's clearance, volume of distribution, absorption lag time and central→peripheral rate constant had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. The base model was simulated, not the covariate effects the record defines. Extracted — magnesium sulfate: CL 3.52 L/h, V1 16.9 L, Q 3.62 L/h, V2 14.3 L, kabs 0.451 hr−1, Fab 0.91.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading magnesium sulfate → magnesium (hydrolysis); it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has magnesium, the second reading magnesium sulfate; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-04 17:46:26.901869+00:00) predates the upstream re-run (2026-10-07 19:45:51.304343+00:00). Current validate status: `extracted`.
-
-> **Dose compound ≠ measured compound:** dosed `magnesium sulfate`, measured `magnesium`.
+> **Dose compound ≠ measured compound:** dosed `magnesium_sulfate`, measured `magnesium`.
 
 ## Citation
 Brookfield K et al., Magnesium sulfate pharmacokinetics afte…, AJOG global reports (2021)
   ·  DOI: [10.1016/j.xagr.2021.100018](https://doi.org/10.1016/j.xagr.2021.100018)
 
-<div class="pk-model-meta" hidden drug="magnesium sulfate" model-id="MagnesiumSulfate_Brookfield2021_reference" status="extracted" stale="true" population="women with severe preeclampsia" measured-compound="magnesium" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="magnesium sulfate" model-id="MagnesiumSulfate_Brookfield2021_reference" status="model_quarantined" stale="false" population="women with severe preeclampsia" measured-compound="magnesium" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 6 extracted, plus 3 covariate effects.
@@ -41,17 +41,19 @@ Brookfield K et al., Magnesium sulfate pharmacokinetics afte…, AJOG global rep
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL (L/h) | `Q22` · CL | 3.52 | L/h | 9.777777777777778e-07 | [l] / [h] | 2.9 | exact (1.0) | tbl0002:row1:col1, tbl0002:row1:col2 | — | not captured |
-| Vc (L) | `Q63` · V1 | 16.9 | L | 0.0169 | [l] | 2.8 | exact (1.0) | tbl0002:row2:col1, tbl0002:row2:col2 | — | not captured |
-| Q (L/h) | `Q30` · Q | 3.62 | L/h | 1.0055555555555558e-06 | [l] / [h] | 18.9 | exact (1.0) | tbl0002:row3:col1, tbl0002:row3:col2 | — | not captured |
-| Vp (L) | `Q64` · V2 | 14.3 | L | 0.0143 | [l] | 4.6 | exact (1.0) | tbl0002:row4:col1, tbl0002:row4:col2 | — | not captured |
-| Ka (hr−1) | `Q49` · kabs | 0.451 | hr−1 | 0.00012527777777777778 | [1] / [h] | 21.1 | exact (1.0) | tbl0002:row5:col1, tbl0002:row5:col2 | — | not captured |
+| CL (L/h) | `Q22` · CL | 3.52 | L/h | 9.777777777777778e-07 | [l] / [h] | 2.9 | exact (1.0) | tbl0002:row1:col1 | — | not captured |
+| Vc (L) | `Q63` · V1 | 16.9 | L | 0.0169 | [l] | 2.8 | exact (1.0) | tbl0002:row2:col1 | — | not captured |
+| Q (L/h) | `Q30` · Q | 3.62 | L/h | 1.0055555555555558e-06 | [l] / [h] | 18.9 | exact (1.0) | tbl0002:row3:col1 | — | not captured |
+| Vp (L) | `Q64` · V2 | 14.3 | L | 0.0143 | [l] | 4.6 | exact (1.0) | tbl0002:row4:col1 | — | not captured |
+| Ka (hr−1) | `Q49` · kabs | 0.451 | hr−1 | 0.00012527777777777778 | [1] / [h] | 21.1 | exact (1.0) | tbl0002:row5:col1 | — | not captured |
 | F | `Q40` · Fab | 0.91 | not captured | not captured | not captured | not captured | exact (1.0) | tbl0002:row6:col1 | — | not captured |
 | theta_q319_wt_power | `Q900` · theta_q319_wt_power | 0.75 | not captured | not captured | not captured | not captured | not captured (not captured) | tbl0002:row7:col1 | — | not captured |
 | theta_q319_wt_power | `Q900` · theta_q319_wt_power | 1 | not captured | not captured | not captured | not captured | not captured (not captured) | tbl0002:row8:col1 | — | not captured |
-| theta_q1_creatinine_power | `Q900` · theta_q1_creatinine_power | -0.73 | not captured | not captured | not captured | 15.5 | not captured (not captured) | tbl0002:row9:col1, tbl0002:row9:col2 | — | not captured |
+| theta_q319_creatinine_power | `Q900` · theta_q319_creatinine_power | -0.73 | not captured | not captured | not captured | 15.5 | not captured (not captured) | tbl0002:row9:col1 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -64,11 +66,11 @@ Brookfield K et al., Magnesium sulfate pharmacokinetics afte…, AJOG global rep
 - table section residual_error: 'Proportional (CV%)' routed out of structural estimates ('Residual error')
 - table section residual_error: 'Additive (mg/L)' routed out of structural estimates ('Residual error')
 - covariate effect for Q319 has no base parameter row (kept as unattached equation-variable)
-- covariate effect for Q1 has no base parameter row (kept as unattached equation-variable)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=magnesium
 - review gap-fill skipped: this record measures 'magnesium', not magnesium_sulfate — the review values are the parent's
 
 **Extraction notes:**
+- table tbl0002: ragged_grid
 - LLM selected parameter table(s) 2
 
 ## Validation
@@ -85,10 +87,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.links` | [] | [['magnesium sulfate', 'magnesium', 'hydrolysis']] | mismatch |
 | `gpt-oss-120b` | `parameters[cl].covariate_forms` | [] | ['power'] | mismatch |
-| `gpt-oss-120b` | `parameters[theta_cl_creatinine_power]` | not captured | -0.73 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[serum_creatinine_exponent_for_cl]` | not captured | -0.73 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[theta_q1_creatinine_power]` | -0.73 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.primary_analyte` | magnesium | magnesium sulfate | mismatch |
 | `gpt-oss:120b` | `parameters[absolute bioavailability]` | 0.86 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[absolute bioavailability]` | not captured | 0.86 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[absorption rate constant]` | 0.32 | not captured | only_one_extracted |
@@ -110,16 +112,26 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tbl0002:row1:col1', 'tbl0002:row1:col2'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tbl0002:row3:col1', 'tbl0002:row3:col2'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['tbl0002:row5:col1', 'tbl0002:row5:col2'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['tbl0002:row2:col1', 'tbl0002:row2:col2'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['tbl0002:row4:col1', 'tbl0002:row4:col2'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 3.52 | not captured | not captured | ['tbl0002:row1:col1', 'tbl0002:row1:col2'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tbl0002:row1:col1'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tbl0002:row3:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['tbl0002:row5:col1'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['tbl0002:row2:col1'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['tbl0002:row4:col1'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 3.52 | not captured | not captured | ['tbl0002:row1:col1'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 3.52 L/h | not captured | not captured | ['tbl0002:row1:col1', 'tbl0002:row1:col2'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 16.9 L | not captured | not captured | ['tbl0002:row2:col1', 'tbl0002:row2:col2'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 14.3 L | not captured | not captured | ['tbl0002:row4:col1', 'tbl0002:row4:col2'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 3.52 L/h | not captured | not captured | ['tbl0002:row1:col1'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 16.9 L | not captured | not captured | ['tbl0002:row2:col1'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 14.3 L | not captured | not captured | ['tbl0002:row4:col1'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_param_coverage | not captured | pass | 5 scholar param(s) emitted or defaulted | 5 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -128,7 +140,9 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_magnesium_sulfate/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Brookfield_2021` / `Brookfield_2021::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_magnesium_sulfate/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Brookfield_2021` / `Brookfield_2021::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_magnesium_sulfate/models/modelica/_needs_review/MagnesiumSulfate_Brookfield2021_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_magnesium_sulfate/models/modelica/_needs_review/MagnesiumSulfate_Brookfield2021_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -154,4 +168,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 19:45 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 00:46 UTC</sub>

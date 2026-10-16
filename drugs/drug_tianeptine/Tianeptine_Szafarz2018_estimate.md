@@ -178,10 +178,10 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_tianeptine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Szafarz_2018` / `Szafarz_2018::estimate`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_tianeptine/models/modelica/Tianeptine_Szafarz2018_estimate.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_tianeptine/models/modelica/Tianeptine_Szafarz2018_estimate.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_tianeptine/models/modelica/Tianeptine_Szafarz2018_estimate.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_tianeptine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Szafarz_2018` / `Szafarz_2018::estimate`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_tianeptine/models/modelica/Tianeptine_Szafarz2018_estimate.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_tianeptine/models/modelica/Tianeptine_Szafarz2018_estimate.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_tianeptine/models/modelica/Tianeptine_Szafarz2018_estimate.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

@@ -19,7 +19,7 @@
 
 **The paper reports none of the model's key parameters.**
 
-No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
+No clearance, volume or rate constant of the model is reported in it. A reported unit could not be converted (equation variable), so that value has no SI equivalent. No parameter values were extracted.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none → none (none), the second reading none. That field shapes the model, so the record is marked disputed.
 
@@ -29,9 +29,9 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 Hamada Y et al., Pharmacokinetic/Pharmacodynamic Analysi…, Antibiotics (Basel, Switzer… (2022)
   ·  DOI: [10.3390/antibiotics11040456](https://doi.org/10.3390/antibiotics11040456)
 
-<div class="pk-model-meta" hidden drug="flomoxef" model-id="Flomoxef_Hamada2022_reference" status="rejected" stale="false" population="patients with invasive urinary tract infection" measured-compound="flomoxef" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="flomoxef" model-id="Flomoxef_Hamada2022_reference" status="rejected" stale="false" population="patients with invasive urinary tract infection and varying renal function" measured-compound="flomoxef" parameterization="mechanistic" topology="1C"></div>
 
-**Model structure:** general linear; no model was built for this record.  
+**Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.
 
 **Parameterization:** mechanistic.
@@ -39,7 +39,14 @@ Hamada Y et al., Pharmacokinetic/Pharmacodynamic Analysi…, Antibiotics (Basel,
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
-_No resolved parameters._
+| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 40 &lt; CCR ≦ 70 | `Q900` · equation variable | 10 | mL/min | not captured | [ml] / [min] | not captured | llm (0.6) | Hamada_2022_table_3:row7:col1, Hamada_2022_table_3:row7:col2, Hamada_2022_table_3:row7:col3 | — | not captured |
+
+<details class="legend">
+<summary>Parameter definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
 
 ## Departures & gaps
 
@@ -47,13 +54,18 @@ _No resolved parameters._
 - column 'pharmacokinetics parameter calculation formula for flomoxef by renal function; as a 1 h infusion of flomoxef 1 g' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - dropped unlinked row (NIL): 'Healthy' — extend the ontology if this is a real PK parameter (source ['Hamada_2022_table_3:row1:col2', 'Hamada_2022_table_3:row1:col3', 'Hamada_2022_table_3:row1:col4'])
 - dropped unlinked row (NIL): '20 &lt; CCR ≦ 40' — extend the ontology if this is a real PK parameter (source ['Hamada_2022_table_3:row5:col1', 'Hamada_2022_table_3:row5:col2', 'Hamada_2022_table_3:row5:col3'])
-- dropped unlinked row (NIL): '40 &lt; CCR ≦ 70' — extend the ontology if this is a real PK parameter (source ['Hamada_2022_table_3:row7:col1', 'Hamada_2022_table_3:row7:col2', 'Hamada_2022_table_3:row7:col3'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=flomoxef
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
-- status held at route_to_review — not promoted
 - review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
+- table antibiotics-11-00456-t001: missing_label
+- table antibiotics-11-00456-t001: ragged_grid
+- table antibiotics-11-00456-t001: unparsed_numeric_cell
+- table antibiotics-11-00456-t001: representations disagree; selected evidence retained, not merged
+- final table antibiotics-11-00456-t001: no supported point estimates; targeted recovery unresolved
+- table Hamada_2022_table_3: missing_label
+- table Hamada_2022_table_3: ragged_grid
+- table Hamada_2022_table_3: unparsed_numeric_cell
 - companion parameter table 3 transcribed (9 record(s))
 - LLM selected parameter table(s) 1, 3
 
@@ -86,7 +98,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
 | C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
-| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none'] | not captured | not captured | not captured |
+| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -95,7 +107,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_flomoxef/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Hamada_2022` / `Hamada_2022::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_flomoxef/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Hamada_2022` / `Hamada_2022::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -111,4 +123,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 11:06 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 00:07 UTC</sub>

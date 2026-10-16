@@ -17,9 +17,9 @@
 
 **Model:** No model was generated from this record.
 
-> Free elranatamab exposure (ng/mL) was assessed against duration of response using a Cox proportional hazards model, but exposure showed minimal to no association with DOR; the paper does not specify a concentration-dependent mechanism or report potency or rate values. The final model identified baseline sBCMA and R-ISS disease stage as covariates (recorded values 1.080 and 1.046, respectively); lower baseline sBCMA was associated with longer DOR.
+> The paper characterizes duration of response (DOR) using a Cox proportional hazards model driven by model-predicted average free elranatamab concentration (Cave) up to day 42, 56, or 70, but reports minimal to no trend for an association between exposure and DOR (p-value &gt; 0.05). The analysis indicates that lower baseline soluble BCMA (sBCMA) and R-ISS disease stage are significant covariates associated with DOR, with lower baseline sBCMA linked to longer DOR (p-value = 0.012).
 >
-> <sub>Source-based summary by gpt-6-luna from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Lon_2025`
 - **model family:** `tte`
@@ -32,15 +32,7 @@ Lon HK et al., Population Exposure-Response Efficacy A…, Targeted oncology (20
   ·  DOI: [10.1007/s11523-025-01168-y](https://doi.org/10.1007/s11523-025-01168-y)
 
 ## Parameters
-| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|---|
-| model term | Log baseline sBCMA | `Q900` · not captured | 1.080 | not captured | not captured | llm (not captured) | Lon_2025:pdv3 |
-| model term | Disease stage R-ISS of 3 (versus 1–2) | `Q900` · not captured | 1.046 | not captured | not captured | llm (not captured) | Lon_2025:pdv3 |
-
-<details class="legend">
-<summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
-</details>
+_No resolved parameters._
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  

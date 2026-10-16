@@ -18,7 +18,7 @@ Alprenolol is a non-selective beta blocker that was used to treat high blood pre
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 23:05 | 2:52 | 0/0/0 | 0/1/0 | 0/0/0 | 83,930/4,102 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/1 | 1/0 | 0 |
+| 2026-10-14 19:53 | 1:16 | 0/0/0 | 2/1/0 | 0/0/0 | 83,930/4,559 | einfracz / qwen3.8-27b | 1 | 1/1 | 1/0 | 0 |
 
 ## popPK records
 
@@ -28,7 +28,20 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Cleveland_2019_EGF_mediated_JB6_P_colony_formation](drugs/drug_alprenolol/pd_Cleveland_2019_EGF_mediated_JB6_P_colony_formation.md) | EGF-mediated JB6 P+ colony formation ← alprenolol · direct sigmoid Emax (Hill) effect | — | Cleveland KH et al., Carvedilol inhibits EGF-mediated JB6 P+…, PloS one (2019) | [10.1371/journal.pone.0217038](https://doi.org/10.1371/journal.pone.0217038) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">in vitro</span> | [Adie_2003_beta_2_adrenoceptor_activation](drugs/drug_alprenolol/pd_Adie_2003_beta_2_adrenoceptor_activation.md) | beta(2)-adrenoceptor activation ← alprenolol · inhibition effect | — | Adie EJ et al., CypHer 5: a generic approach for measur…, Assay and drug development… (2003) | [10.1089/15406580360545062](https://doi.org/10.1089/15406580360545062) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Cleveland_2019_JB6_P_colony_formation](drugs/drug_alprenolol/pd_Cleveland_2019_JB6_P_colony_formation.md) | EGF-induced JB6 P+ cell transformation ← alprenolol · direct sigmoid Emax (Hill) effect | — | Cleveland KH et al., Carvedilol inhibits EGF-mediated JB6 P+…, PloS one (2019) | [10.1371/journal.pone.0217038](https://doi.org/10.1371/journal.pone.0217038) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Cunliffe_2007_AC_activity](drugs/drug_alprenolol/pd_Cunliffe_2007_AC_activity.md) | basal adenylyl cyclase activity ← alprenolol · stimulation effect | — | Cunliffe JM et al., Detection of g protein coupled receptor…, Analytical chemistry (2007) | [10.1021/ac071203+](https://doi.org/10.1021/ac071203+) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=alprenolol).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
+| metabolism | liver | `CYP2D6` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ADRB1 (target), ADRB2 (target), ADRB3 (target), HTR1A (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,7 +62,7 @@ _23 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Alván_1977.pdf` | Alván G et al., Effect of pentobarbital on the disposit…, Clinical pharmacology and t… (1977) | popPK | 9 | [10.1002/cpt1977223316](https://doi.org/10.1002/cpt1977223316) | [891097](https://pubmed.ncbi.nlm.nih.gov/891097) | The study reports quantitative PK parameters (AUC, hepatic extraction ratio, clearance) for alprenolol in humans, with specific numeric values provided in the abstract. |
+| `Alván_1977.pdf` | Alván G et al., Effect of pentobarbital on the disposit…, Clinical pharmacology and t… (1977) | popPK | 10 | [10.1002/cpt1977223316](https://doi.org/10.1002/cpt1977223316) | [891097](https://pubmed.ncbi.nlm.nih.gov/891097) | The study reports quantitative PK parameters for alprenolol in humans, specifically liver extraction ratios (0.72 to 0.93) and AUC values, although specific clearance (CL) and volume (V) numbers are not explicitly listed in the provided text. |
 | `Sager_1986.pdf` | Sager G et al., Effect of serum, alpha-1 acid glycoprot…, Acta pharmacologica et toxi… (1986) | pd | 5 | [10.1111/j.1600-0773.1986.tb00094.x](https://doi.org/10.1111/j.1600-0773.1986.tb00094.x) | [3012942](https://www.ncbi.nlm.nih.gov/pubmed/3012942) | metadata signals extractable PD data (EC50) |
 | `Unsworth_1992.pdf` | Unsworth CD et al., Regulation of the 5-hydroxytryptamine1B…, Molecular pharmacology (1992) | pd | 5 | not captured | [1328846](https://www.ncbi.nlm.nih.gov/pubmed/1328846) | metadata signals extractable PD data (EC50) |
 | `Bianchetti_1990.pdf` | Bianchetti A et al., In vitro inhibition of intestinal motil…, British journal of pharmaco… (1990) | pd | 4 | [10.1111/j.1476-5381.1990.tb14100.x](https://doi.org/10.1111/j.1476-5381.1990.tb14100.x) | [1976401](https://www.ncbi.nlm.nih.gov/pubmed/1976401) | metadata signals extractable PD data (EC50) |
@@ -73,93 +86,93 @@ _23 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Yamamoto_2003.pdf` | Yamamoto T et al., High-throughput screening to estimate s…, Xenobiotica; the fate of fo… (2003) | pd | 4 | [10.1080/0049825031000140887](https://doi.org/10.1080/0049825031000140887) | [12936703](https://www.ncbi.nlm.nih.gov/pubmed/12936703) | metadata signals extractable PD data (IC50) |
 | `Maideen_2021.pdf` | Maideen NMP et al., A Review on Pharmacokinetic and Pharmac…, Current drug metabolism (2021) | pgx | 7 | [10.2174/1389200222666210614112529](https://doi.org/10.2174/1389200222666210614112529) | [34182907](https://www.ncbi.nlm.nih.gov/pubmed/34182907) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 
-<sub>queue written 2026-10-06T23:05:05.752571+00:00</sub>
+<sub>queue written 2026-10-14T19:53:20.413105+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Ablad_1974 | irrelevant | 0 | 0 | no_text gate: only 98 chars of text extracted (&lt; 400) |
-| popPK | Adie_2003 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic assay measuring GPCR activation and alprenolol is used only as a reference antagonist to validate the assay, with no pharmacokinetic parameters reported. |
+| popPK | Adie_2003 | irrelevant | 0 | 0 | This is an in vitro cell biology/assay validation study using alprenolol as an antagonist probe, not a pharmacokinetic study, and no disposition parameters are reported. |
 | popPK | Aellig_1982 | irrelevant | 1 | 0 | This is a clinical pharmacology review of pindolol; alprenolol is only mentioned as a comparator with no PK parameters reported. |
-| popPK | Audus_1982 | irrelevant | 0 | 0 | The study investigates the mechanism of action of propranolol and other beta-blockers on murine lymphocytes using fluorescent probes, not pharmacokinetic parameters. |
+| popPK | Audus_1982 | irrelevant | 0 | 0 | The study is a mechanistic investigation of propranolol on murine lymphocytes using fluorescent probes, and alprenolol is only mentioned as a comparative agent without any pharmacokinetic parameters. |
 | PD | Audus_1982 | not_relevant | 2 | 1 | The paper focuses on propranolol's mechanism of action on lymphocytes using fluorescent probes; alprenolol is only mentioned as a comparator for qualitative comparison, and no numeric PD parameters or exposure-response curves for alprenolol are provided. |
-| popPK | Barrett_1970 | irrelevant | 0 | 0 | The study reports pharmacodynamic chronotropic activity and receptor blocking potency, not pharmacokinetic disposition parameters. |
+| popPK | Barrett_1970 | irrelevant | 0 | 0 | The study focuses on comparative chronotropic activity and beta-adrenoceptor blocking potency (pharmacodynamics) in rats and cats, not pharmacokinetic disposition parameters. |
 | popPK | Bianchetti_1990 | irrelevant | 0 | 0 | no_text gate: only 128 chars of text extracted (&lt; 400) |
 | PD | Bianchetti_1990 | not_relevant | 0 | 0 | The paper focuses on in vitro inhibition of intestinal motility by phenylethanolaminotetralines in rat colon and does not report any pharmacodynamic or exposure-response data for alprenolol. |
 | popPK | Bodewei_1988 | irrelevant | 0 | 0 | In-vitro electrophysiology study of propranolol on calcium currents; alprenolol is only a reference compound with no PK parameters. |
 | popPK | Box_1989 | irrelevant | 0 | 0 | In-vitro receptor binding study in S49 cells; no pharmacokinetic disposition parameters for alprenolol. |
-| popPK | Branch_1984 | irrelevant | 2 | 0 | The paper is a review discussing enzyme induction effects on clearance qualitatively (percent changes) without reporting specific quantitative PK parameter values (CL, V, t1/2) for alprenolol. |
-| popPK | Capponi_1977 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of renin release in rat kidney slices, not a pharmacokinetic study of alprenolol. |
+| popPK | Branch_1984 | irrelevant | 1 | 0 | The paper is a review discussing qualitative changes in clearance (50%-500% increase) without reporting specific quantitative PK parameters (like CL, V, ka) for alprenolol. |
+| popPK | Capponi_1977 | irrelevant | 0 | 0 | The study is a mechanistic in vitro investigation of renin release in rat kidney slices, not a pharmacokinetic study reporting disposition parameters for alprenolol. |
 | popPK | Cleveland_2019 | irrelevant | 0 | 0 | This is an in-vitro pharmacology/cancer chemoprevention study of β-blockers in JB6 cells; alprenolol appears only as a comparator ligand with IC50/Kd values, no PK disposition parameters. |
-| popPK | Collste_1976 | irrelevant | 4 | 2 | The study reports steady-state plasma concentrations and pharmacodynamic correlations but does not provide quantitative disposition parameters like clearance, volume of distribution, or half-life. |
-| popPK | Collste_1976_2 | irrelevant | 2 | 0 | The study focuses on the relationship between steady-state plasma concentrations and blood pressure response (pharmacodynamics) rather than reporting quantitative disposition parameters like clearance, volume, or half-life. |
+| popPK | Collste_1976 | irrelevant | 4 | 1 | The study reports steady-state plasma concentrations and PK/PD correlations but lacks quantitative disposition parameters like clearance, volume, or half-life. |
+| popPK | Collste_1976_2 | irrelevant | 4 | 0 | The study examines the relationship between steady-state plasma concentrations and blood pressure but does not report specific pharmacokinetic disposition parameters (CL, V, ka) in the provided evidence. |
 | popPK | Croci_1988 | irrelevant | 0 | 0 | no_text gate: only 107 chars of text extracted (&lt; 400) |
 | PD | Croci_1988 | not_relevant | 0 | 0 | The paper focuses on the inhibition of rat colon motility by atypical beta-adrenoceptor agonists and does not report pharmacodynamic or exposure-response data for alprenolol. |
-| popPK | Cunliffe_2007 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic assay for adenylyl cyclase activity where alprenolol is used as a pharmacological probe, not a pharmacokinetic study. |
-| popPK | De_1995 | irrelevant | 0 | 0 | The study investigates the pharmacological effects of SR 58611A on canine colonic motility, using alprenolol only as a non-selective beta-adrenoceptor antagonist for competitive antagonism (pA2), not as the subject of a pharmacokinetic analysis. |
+| popPK | Cunliffe_2007 | irrelevant | 0 | 0 | The paper describes a pharmacological assay for adenylyl cyclase activity where alprenolol is used as a partial agonist, but no pharmacokinetic parameters are reported. |
+| popPK | De_1995 | irrelevant | 0 | 0 | The study focuses on colonic motility and uses alprenolol only as a non-selective beta-adrenoceptor antagonist (comparative pharmacology), with no pharmacokinetic parameters reported. |
 | popPK | De_1995_2 | irrelevant | 0 | 0 | no_text gate: only 105 chars of text extracted (&lt; 400) |
 | PD | De_1995_2 | not_relevant | 0 | 0 | The paper investigates beta-3 adrenoceptor function in guinea pig tissues and does not report any pharmacokinetic or pharmacodynamic data for alprenolol. |
 | popPK | Drira-Chaabane_1996 | irrelevant | 0 | 0 | no_text gate: only 96 chars of text extracted (&lt; 400) |
-| PGx | Eichelbaum_1984 | not_relevant | 3 | 0 | The paper mentions alprenolol as a substrate affected by the PM phenotype but provides no specific PK/PD data, effect sizes, or quantitative parameters for alprenolol. |
+| PGx | Eichelbaum_1984 | not_relevant | 2 | 0 | The paper lists alprenolol as a substrate affected by PM phenotype but provides no quantitative PK/PD data or specific effect sizes for it. |
 | popPK | Fowler_1991 | irrelevant | 0 | 0 | no_text gate: only 204 chars of text extracted (&lt; 400) |
 | PD | Fowler_1991 | not_relevant | 0 | 0 | The paper investigates serotonin agonists and muscarinic receptors in neuroblastoma cells and does not mention alprenolol or report any pharmacodynamic parameters for it. |
-| popPK | Fowler_1992 | irrelevant | 0 | 0 | The study is an in vitro pharmacological investigation of 5-HT1A receptors where alprenolol is used solely as a non-selective beta-blocker antagonist, not as the subject of pharmacokinetic analysis. |
+| popPK | Fowler_1992 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological receptor assay where alprenolol is used solely as a beta-adrenergic antagonist to block serotonergic responses, not as the subject of a pharmacokinetic study. |
 | PD | Fowler_1992 | not_relevant | 3 | 2 | The paper reports a pA2 value (7.0) for (-)-alprenolol as a competitive antagonist in an in vitro cAMP assay, which is a pharmacological potency parameter but not a pharmacodynamic exposure-response or dose-response relationship for the drug's therapeutic effect. |
-| popPK | Fyles_1986 | irrelevant | 0 | 0 | The study is an in vitro receptor binding and functional assay using alprenolol as a pharmacological tool, not a pharmacokinetic study. |
+| popPK | Fyles_1986 | irrelevant | 0 | 0 | The paper investigates beta-adrenergic receptor binding in pancreatic islets using alprenolol as a ligand/antagonist, not pharmacokinetics. |
 | PD | Fyles_1986 | not_relevant | 3 | 2 | The paper reports receptor binding densities and qualitative functional effects (e.g., abolition of response by 1 µM alprenolol) but does not provide a quantitative concentration-effect curve or numeric PD parameters (like IC50 or Emax) for alprenolol itself. |
 | popPK | Garcia_2021 | irrelevant | 0 | 0 | This is a pharmacovigilance study of nightmare reporting odds ratios, with no PK disposition parameters for alprenolol. |
 | popPK | Ghahary_1990 | irrelevant | 0 | 0 | In-vitro receptor binding study using alprenolol only as a ligand; no PK disposition parameters. |
 | popPK | Golf_1986 | irrelevant | 0 | 0 | In-vitro receptor pharmacology study (adenylate cyclase/binding IC50s), no PK disposition parameters for alprenolol. |
 | popPK | Green_1983 | irrelevant | 0 | 0 | This is an in-vitro receptor binding study reporting IC50 values, not pharmacokinetic disposition parameters for alprenolol. |
-| popPK | Gugler_1976 | irrelevant | 2 | 0 | The paper is a review summarizing general pharmacokinetic properties (half-life, bioavailability) without reporting specific quantitative disposition parameters (CL, V, Q, ka) or a compartmental model for alprenolol. |
-| popPK | Hanasaki_1987 | irrelevant | 0 | 0 | The study is an in-vitro receptor binding assay in rabbit platelets where alprenolol is used only as a pharmacological antagonist, not a subject of pharmacokinetic analysis. |
-| popPK | Jaspersen_2000 | irrelevant | 0 | 0 | The paper is a review of drug-induced oesophageal disorders and mentions alprenolol only as a causative agent for injury, providing no pharmacokinetic data. |
+| popPK | Gugler_1976 | irrelevant | 1 | 0 | The text is a review summarizing general properties and provides a qualitative half-life range (2-4 h) without specific quantitative population-PK parameter values (e.g., CL, V) for alprenolol. |
+| popPK | Hanasaki_1987 | irrelevant | 0 | 0 | The study is a mechanistic investigation of prostaglandin D2 binding in rabbit platelets where alprenolol is used solely as a comparator antagonist, with no pharmacokinetic parameters reported. |
+| popPK | Jaspersen_2000 | irrelevant | 0 | 0 | This is a clinical review on drug-induced oesophageal disorders; alprenolol is listed only as an offending agent for oesophagitis, with no pharmacokinetic data. |
 | popPK | Jeong_2012 | irrelevant | 0 | 0 | In-vitro electrophysiology study of carvedilol on Kv1.5 channels; alprenolol is only a comparator with no PK parameters. |
 | PD | Jeong_2012 | not_relevant | 0 | 0 | The paper reports PD parameters (IC50, rate constants) for carvedilol, but explicitly states that alprenolol had little or no effect on Kv1.5 currents, providing no numeric PD relationship for alprenolol. |
-| popPK | Jiang_1978 | irrelevant | 0 | 0 | The study focuses on the synthesis and distribution of radioiodinated derivatives of beta-blockers for imaging, not the pharmacokinetic parameters (CL, V, etc.) of alprenolol itself. |
-| popPK | Johnson_1993 | irrelevant | 0 | 0 | The study investigates serotonin receptor modulation of tyrosine hydroxylation, using alprenolol only as a pharmacological antagonist, not as a subject for PK analysis. |
+| popPK | Jiang_1978 | irrelevant | 1 | 0 | The study focuses on the synthesis and tissue distribution of new radioiodinated derivatives, not the quantitative pharmacokinetic parameters (CL, V, ka) of alprenolol itself. |
+| popPK | Johnson_1993 | irrelevant | 0 | 0 | The study investigates serotonin 5-HT1A receptors and tyrosine hydroxylation, using alprenolol only as a receptor antagonist probe, and does not report pharmacokinetic parameters for alprenolol. |
 | PD | Johnson_1993 | not_relevant | 0 | 0 | The paper investigates serotonin 5-HT1A receptor modulation of tyrosine hydroxylation; alprenolol is used only as a 5-HT1A antagonist to confirm receptor specificity, not as the drug of interest for a PD/exposure-response analysis. |
-| popPK | Johnsson_1976 | irrelevant | 2 | 0 | This is a review article that discusses alprenolol qualitatively (e.g., low bioavailability) but does not report specific quantitative PK parameter values (CL, V, t1/2) for alprenolol in the provided text. |
-| popPK | Johnsson_1976_2 | irrelevant | 1 | 0 | The text is a general review discussing the pharmacokinetics of beta-blockers qualitatively without providing specific quantitative parameter values (CL, V, t1/2) for alprenolol. |
-| popPK | Kaukel_1984 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of beta-adrenergic receptor binding and cAMP levels in guinea pig tracheae, not a pharmacokinetic study of alprenolol. |
+| popPK | Johnsson_1976 | irrelevant | 1 | 0 | This is a review article providing general qualitative descriptions of beta-blocker PK without reporting specific quantitative parameter values (like clearance or volume) for alprenolol. |
+| popPK | Johnsson_1976_2 | irrelevant | 1 | 0 | This is a narrative review of beta-blockers that lacks original quantitative pharmacokinetic parameter values for alprenolol. |
+| popPK | Kaukel_1984 | irrelevant | 0 | 0 | The study is an in vitro/mechanistic investigation of guinea-pig tracheae using alprenolol (3H-labeled) only as a radioligand for receptor binding, not as a drug for pharmacokinetic evaluation. |
 | popPK | Kessler_1991 | irrelevant | 0 | 0 | Alprenolol appears only as a test ligand in an in vitro receptor-binding study; no PK parameters for it are reported. |
 | PD | Kessler_1991 | not_relevant | 0 | 0 | The paper characterizes a radioligand ([125I]epidepride) and reports in vitro binding affinities (IC50) for various compounds including alprenolol, but does not report a pharmacodynamic exposure-response or dose-response relationship for alprenolol itself. |
 | popPK | Klug_1994 | irrelevant | 0 | 0 | no_text gate: only 119 chars of text extracted (&lt; 400) |
 | popPK | Kousvelari_1983 | irrelevant | 0 | 0 | In-vitro receptor pharmacology study of a derivative (BrAlpM) in rat parotid cells; no PK disposition parameters for alprenolol. |
-| popPK | Krämer_2016 | irrelevant | 0 | 0 | The paper is a mechanistic study on membrane permeation of tetracycline and rifampicin, and does not report pharmacokinetic parameters for alprenolol. |
-| popPK | Kubrusly_2007 | irrelevant | 0 | 0 | The study is a mechanistic pharmacology investigation in avian retinas where alprenolol is used only as a non-specific antagonist control, with no pharmacokinetic parameters reported. |
+| popPK | Krämer_2016 | irrelevant | 0 | 0 | The paper focuses on membrane permeability mechanisms of other drugs (tetracycline, rifampicin, labetalol, metoprolol) and does not report pharmacokinetic parameters for alprenolol. |
+| popPK | Kubrusly_2007 | irrelevant | 0 | 0 | This is a mechanistic study of receptor pharmacology in chicken retina where alprenolol is used only as a beta-adrenergic antagonist control, not as the subject of a pharmacokinetic study. |
 | PD | Kubrusly_2007 | not_relevant | 0 | 0 | The paper uses alprenolol only as a qualitative antagonist to block beta-adrenergic effects; it does not report a concentration-effect or dose-response relationship for alprenolol itself. |
-| popPK | Kusiak_1983 | irrelevant | 0 | 0 | The study focuses on the pharmacological mechanism (adenylate cyclase inhibition) of alprenolol derivatives, not on quantitative pharmacokinetic parameters like clearance or volume. |
+| popPK | Kusiak_1983 | irrelevant | 0 | 0 | The study focuses on the mechanism of action (adenylate cyclase inhibition and receptor binding) of novel alprenolol derivatives, not on the quantitative pharmacokinetic parameters of alprenolol itself. |
 | popPK | Kusiak_1987 | irrelevant | 0 | 0 | This is a receptor-binding study of a cyanopindolol analogue; alprenolol appears only as a radioligand/protecting agent, with no PK parameters. |
 | PD | Kusiak_1987 | not_relevant | 3 | 2 | The paper reports receptor binding displacement (IC50) and qualitative in vivo dose effects on receptor density, but does not provide a pharmacodynamic exposure-response model or numeric PD parameters (e.g., Emax, EC50 for functional effect) for alprenolol itself. |
 | popPK | Landi_1992 | irrelevant | 0 | 0 | no_text gate: only 144 chars of text extracted (&lt; 400) |
 | PD | Landi_1992 | not_relevant | 0 | 0 | The paper reports in vitro radioligand binding competition assays, not pharmacodynamic exposure-response or dose-response relationships in a biological system. |
 | popPK | Lima_1996 | irrelevant | 0 | 0 | no_text gate: only 145 chars of text extracted (&lt; 400) |
 | PD | Lima_1996 | not_relevant | 0 | 0 | The provided text is only a title and does not contain the full text, data, or numeric parameters required to assess PD relationships for alprenolol. |
-| popPK | MacEwan_1995 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological analysis of receptor number and agonist efficacy, not a pharmacokinetic study of alprenolol. |
+| popPK | MacEwan_1995 | irrelevant | 0 | 0 | The study is an in-vitro receptor pharmacology analysis of beta-adrenoceptor ligands and does not report pharmacokinetic parameters for alprenolol. |
 | PD | MacEwan_1995 | not_relevant | 4 | 3 | The paper analyzes concentration-response curves for beta-agonists in cell lines, but alprenolol is only mentioned as a component of the irreversible antagonist BAAM used to reduce receptor density, not as the subject of a PD or exposure-response analysis. |
-| popPK | Maderspach_1982 | irrelevant | 0 | 0 | The study investigates in vitro receptor binding kinetics (Bmax, Kd) of alprenolol in brain cells, not pharmacokinetic disposition parameters. |
+| popPK | Maderspach_1982 | irrelevant | 0 | 0 | The study investigates in-vitro beta-adrenergic receptor binding kinetics (Bmax, Kd) of alprenolol in brain cells, not pharmacokinetic disposition parameters (CL, V, t1/2). |
 | PD | Maderspach_1982 | not_relevant | 0 | 0 | The paper reports in vitro receptor binding kinetics and affinity parameters (Kd, Bmax, Hill coefficient) for alprenolol, which are pharmacological binding data, not pharmacodynamic (exposure-response or dose-response) effect data. |
 | popPK | Maideen_2021 | irrelevant | 0 | 0 | no_text gate: only 133 chars of text extracted (&lt; 400) |
 | PD | Maideen_2021 | not_relevant | 1 | 0 | The paper is a qualitative review of drug interactions and does not report specific numeric PD parameters or concentration-effect curves for alprenolol. |
-| PGx | Maideen_2021 | not_relevant | 0 | 0 | The paper is a review of drug-drug interactions, not pharmacogenomic effects of gene variants on alprenolol PK/PD. |
-| popPK | Man_1982 | irrelevant | 0 | 0 | The paper is a review of haemodynamic effects and plasma noradrenaline concentrations, not a pharmacokinetic study reporting disposition parameters for alprenolol. |
-| popPK | Man_1983 | irrelevant | 0 | 0 | The paper is a review of haemodynamic effects and does not report quantitative pharmacokinetic parameters for alprenolol. |
-| popPK | Mauger_1980 | irrelevant | 0 | 0 | The study is an in-vitro receptor binding and functional assay, not a pharmacokinetic study of alprenolol disposition. |
+| PGx | Maideen_2021 | not_relevant | 0 | 0 | The paper is a review of drug-drug interactions, not pharmacogenomic effects. |
+| popPK | Man_1982 | irrelevant | 0 | 0 | This is a review of haemodynamic effects (blood pressure, cardiac output) of beta-blockers, not a study reporting pharmacokinetic disposition parameters (CL, V, t1/2) for alprenolol. |
+| popPK | Man_1983 | irrelevant | 0 | 0 | The paper is a review analyzing haemodynamic effects and pharmacodynamics of beta-blockers, not a pharmacokinetic study reporting quantitative disposition parameters (CL, V, t1/2) for alprenolol. |
+| popPK | Mauger_1980 | irrelevant | 0 | 0 | The study is an in vitro receptor binding and functional assay using alprenolol as a pharmacological probe, not a pharmacokinetic study. |
 | popPK | Mazzocchi_1998 | irrelevant | 0 | 0 | no_text gate: only 169 chars of text extracted (&lt; 400) |
 | PD | Mazzocchi_1998 | not_relevant | 0 | 0 | The paper focuses on the interaction between angiotensin receptors and catecholamine/aldosterone release in rats, with no mention of alprenolol or its pharmacodynamic parameters. |
-| popPK | Millan_1991 | irrelevant | 0 | 0 | The study is a pharmacological investigation of 5-HT1A receptors and opioid antinociception, using alprenolol only as a putative antagonist/comparator, with no pharmacokinetic parameters reported. |
-| popPK | Millan_1992 | irrelevant | 0 | 0 | The paper studies the pharmacology of S 14671, using alprenolol only as a 5-HT1A antagonist control, and reports no pharmacokinetic parameters for alprenolol. |
+| popPK | Millan_1991 | irrelevant | 0 | 0 | The study focuses on the pharmacological effects of 5-HT1A partial agonists on opioid antinociception, using alprenolol only as a putative antagonist comparator rather than studying its pharmacokinetics. |
+| popPK | Millan_1992 | irrelevant | 0 | 0 | The paper studies the pharmacological properties of S 14671 at serotonin receptors, using alprenolol only as a 5-HT1A antagonist control rather than as the subject drug for pharmacokinetic analysis. |
 | PD | Millan_1992 | not_relevant | 0 | 0 | The paper focuses on the pharmacology of S 14671; alprenolol is only mentioned as a non-specific antagonist used to block effects, with no PD or exposure-response analysis for alprenolol. |
-| popPK | Millan_1994 | irrelevant | 0 | 0 | The paper is a pharmacological study of benzodioxopiperazines where alprenolol is used only as a reference compound for receptor binding affinity, not a PK study. |
-| popPK | Nakamura_1991 | irrelevant | 0 | 0 | The study is an in-vitro receptor binding assay investigating alpha-2/beta-adrenergic interactions, not a pharmacokinetic study of alprenolol disposition. |
+| popPK | Millan_1994 | irrelevant | 0 | 0 | The study is a comparative pharmacological characterization of benzodioxopiperazines at 5-HT1A receptors, using (-)-alprenolol only as a reference compound for receptor binding affinity, with no pharmacokinetic parameters reported. |
+| popPK | Nakamura_1991 | irrelevant | 0 | 0 | This is an in vitro receptor binding study using [3H]dihydroalprenolol as a ligand, not a pharmacokinetic study of alprenolol disposition. |
 | PD | Nakamura_1991 | not_relevant | 0 | 0 | The paper reports in vitro receptor binding affinities and Hill coefficients, not pharmacodynamic exposure-response or dose-response relationships for alprenolol. |
-| popPK | Nisoli_1994 | irrelevant | 0 | 0 | The study focuses on the pharmacodynamics of SR 58611A in rat brown adipose tissue, using alprenolol only as a non-selective antagonist control without reporting any pharmacokinetic parameters for alprenolol. |
+| popPK | Nisoli_1994 | irrelevant | 0 | 0 | The paper focuses on the pharmacological mechanism of SR 58611A, using alprenolol only as a non-specific antagonist probe, and provides no pharmacokinetic data. |
 | PD | Nisoli_1994 | not_relevant | 0 | 0 | The paper reports PD parameters (EC50) for the agonist SR 58611A, but alprenolol is only mentioned qualitatively as a non-selective antagonist used at high doses to confirm receptor subtype, with no numeric PD parameters or dose-response curve provided for alprenolol itself. |
-| popPK | Nonogaki_1995 | irrelevant | 0 | 0 | The study investigates lipid metabolism in rats, using alprenolol only as a pharmacological tool to block beta-adrenergic receptors, not as the subject of pharmacokinetic analysis. |
-| popPK | Ogg_1987 | irrelevant | 0 | 0 | The study investigates the pharmacological effects of propranolol metabolites on beta-receptors, using alprenolol only as a radioligand for binding assays, and does not report pharmacokinetic parameters for alprenolol. |
-| popPK | Rane_1977 | irrelevant | 2 | 0 | The study is an in vitro/in situ mechanistic investigation of hepatic extraction ratios in rat livers, not a pharmacokinetic study reporting quantitative disposition parameters (CL, V, t1/2) for alprenolol in a physiological context. |
+| popPK | Nonogaki_1995 | irrelevant | 0 | 0 | The study investigates lipid metabolism in rats where alprenolol is used only as a co-administered receptor antagonist, not as the subject drug for pharmacokinetic analysis. |
+| popPK | Ogg_1987 | irrelevant | 0 | 0 | The paper is a mechanistic pharmacology study on propranolol metabolites, where alprenolol is used only as a radioligand to assess beta-receptor binding, not as a subject for PK parameter estimation. |
+| popPK | Rane_1977 | irrelevant | 1 | 1 | The study is an in vitro/in situ mechanistic analysis using isolated perfused rat livers to predict hepatic extraction ratios, not a systemic PK study reporting disposition parameters like CL, V, or t1/2 for alprenolol in vivo. |
 | popPK | Regardh_1974 | irrelevant | 0 | 0 | no_text gate: only 143 chars of text extracted (&lt; 400) |
 | PD | Regardh_1974 | not_relevant | 0 | 0 | The provided text is only a title and does not contain the full text, data, or numeric PD parameters required to assess the relationship. |
 | popPK | Regårdh_1975 | irrelevant | 0 | 0 | no_text gate: only 133 chars of text extracted (&lt; 400) |
@@ -171,11 +184,11 @@ _23 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | popPK | Schumacher_1984 | irrelevant | 0 | 0 | no_text gate: only 109 chars of text extracted (&lt; 400) |
 | PD | Schumacher_1984 | not_relevant | 0 | 0 | The paper focuses on the developmental biology of beta-adrenergic receptors in rabbit hearts and does not report pharmacokinetic or pharmacodynamic modeling for alprenolol. |
 | popPK | Sealey_1971 | irrelevant | 0 | 0 | no_text gate: only 110 chars of text extracted (&lt; 400) |
-| popPK | Shimizu_2009 | irrelevant | 0 | 0 | The paper is a review of beta blockers in migraine prophylaxis and does not report original quantitative pharmacokinetic parameters for alprenolol. |
-| popPK | Shiraki_1998 | irrelevant | 0 | 0 | The study is a mechanistic cell death assay in chick neurons where alprenolol is used only as a pharmacological tool (beta-blocker) to determine receptor subtype involvement, not as a subject of PK analysis. |
+| popPK | Shimizu_2009 | irrelevant | 2 | 0 | The paper is a review of beta-blockers for migraine prophylaxis and mentions alprenolol only as a drug with intrinsic sympathomimetic activity that is not effective for migraine, without providing original quantitative PK parameters. |
+| popPK | Shiraki_1998 | irrelevant | 0 | 0 | The paper is an in vitro mechanistic study on neuronal cell death where alprenolol is used only as a pharmacological antagonist to block beta-adrenoceptors, with no PK parameter reporting. |
 | PD | Shiraki_1998 | not_relevant | 0 | 0 | The paper reports a dose-response relationship for noradrenaline (EC50 13 μM) and antagonist potency for phentolamine (IC50 1.5 nM), but explicitly states that alprenolol had no effect on cell survival or NA-induced cell death, providing no numeric PD parameters for alprenolol. |
 | popPK | Steinkraus_1990 | irrelevant | 0 | 0 | In-vitro radioligand binding study; alprenolol is only a displacing ligand with an IC50, no PK parameters. |
-| popPK | Stevens_1998 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of receptor efficacy and does not report any pharmacokinetic parameters for alprenolol. |
+| popPK | Stevens_1998 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of beta-adrenoceptor ligand efficacy (agonism/antagonism) and does not report pharmacokinetic disposition parameters for alprenolol. |
 | PD | Stevens_1998 | not_relevant | 1 | 0 | The paper mentions alprenolol only qualitatively as a partial agonist in a cell-based assay and does not provide specific numeric PD parameters (e.g., EC50, Emax) for alprenolol in the provided text. |
 | popPK | Street_1984 | irrelevant | 0 | 0 | In-vitro synaptosomal uptake inhibition study; alprenolol is only one of many tested compounds with no PK disposition parameters. |
 | popPK | Subbarao_1990 | irrelevant | 0 | 0 | no_text gate: only 81 chars of text extracted (&lt; 400) |
@@ -185,21 +198,21 @@ _23 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | PD | Svoboda_1986 | not_relevant | 1 | 0 | The paper mentions alprenolol qualitatively as an inhibitor of Na,K-ATPase at a concentration range (10^-5-10^-3 M) but does not provide specific numeric PD parameters (like EC50 or Emax) for alprenolol, nor does it present a dose-response curve or model for it. |
 | popPK | Taira_2010 | irrelevant | 0 | 0 | This is a pharmacology review on inverse agonism at β-adrenoceptors; alprenolol is only mentioned as an example drug, with no PK parameters or numeric values. |
 | PD | Taira_2010 | not_relevant | 1 | 0 | The text is a qualitative introduction/review discussing the concept of inverse agonism and mentions alprenolol as an example, but it does not report any specific experimental data, concentration-effect curves, or numeric PD parameters. |
-| popPK | Tomei_1976 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of adrenergic responses in rat vas deferens, not a pharmacokinetic study of alprenolol. |
+| popPK | Tomei_1976 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of contractile responses in rat vas deferens, not a pharmacokinetic study. |
 | popPK | Unsworth_1992 | irrelevant | 0 | 0 | no_text gate: only 99 chars of text extracted (&lt; 400) |
 | PD | Unsworth_1992 | not_relevant | 0 | 0 | The paper focuses on 5-HT1B receptor regulation in opossum kidney cells and does not mention alprenolol or report any pharmacodynamic parameters for it. |
-| popPK | Wainscott_2007 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological characterization of the TAAR1 receptor, using alprenolol only as a non-specific beta-blocker to isolate receptor activity, with no pharmacokinetic parameters reported. |
+| popPK | Wainscott_2007 | irrelevant | 0 | 0 | The study is a receptor pharmacology investigation of TAAR1 where alprenolol is used solely as a non-specific antagonist to block beta-adrenoceptors, rather than as the subject of pharmacokinetic analysis. |
 | PD | Wainscott_2007 | not_relevant | 0 | 0 | The paper uses alprenolol solely as a non-specific beta-adrenoceptor blocker to isolate TAAR1 signaling; it does not report a pharmacodynamic or exposure-response relationship for alprenolol itself. |
-| popPK | Wiersinga_1991 | irrelevant | 0 | 0 | The paper focuses on the effects of propranolol on thyroid hormone metabolism, with alprenolol mentioned only as a comparator for membrane-stabilizing activity, and no PK parameters for alprenolol are reported. |
+| popPK | Wiersinga_1991 | irrelevant | 0 | 0 | The study focuses on propranolol and thyroid hormone metabolism, mentioning alprenolol only as a comparator for membrane-stabilizing activity without providing any PK parameters for alprenolol. |
 | popPK | Winther_1985 | irrelevant | 0 | 0 | In-vitro receptor binding/pharmacodynamics study; alprenolol is only a blocking agent, no PK disposition parameters. |
-| popPK | Witczyńska_2025 | irrelevant | 0 | 0 | The paper is a review of propranolol's crystallography and pharmacology, with alprenolol mentioned only as a structural comparator, and no quantitative PK parameters are reported. |
-| PGx | Witczyńska_2025 | not_relevant | 0 | 0 | The paper is a structural and pharmacological review of propranolol that mentions alprenolol only for structural comparison, without reporting any pharmacogenomic effects on PK or PD parameters. |
+| popPK | Witczyńska_2025 | irrelevant | 0 | 0 | The paper is a review of propranolol's structural and pharmacological properties, using alprenolol only as a structural comparator with no quantitative PK parameter values reported. |
+| PGx | Witczyńska_2025 | not_relevant | 0 | 0 | The paper discusses propranolol and compares its structure to alprenolol but does not report a pharmacogenomic effect on a PK or PD parameter of alprenolol. |
 | popPK | Yamamoto_2003 | irrelevant | 1 | 1 | In-vitro CYP2D6 inhibition study reporting only IC50 values, no PK disposition parameters for alprenolol. |
 | PD | Yamamoto_2003 | not_relevant | 0 | 0 | The paper describes a high-throughput screening assay for drug metabolism using CYP2D6 and liver microsomes, and does not report any pharmacodynamic or exposure-response data for alprenolol. |
-| PGx | Yamamoto_2003 | not_relevant | 0 | 0 | The paper describes an in vitro assay method for estimating enzyme involvement in drug metabolism and does not report pharmacogenomic effects on PK/PD parameters in humans. |
-| popPK | Yang_1990 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of metoprolol, using alprenolol only as an internal standard for the analytical method. |
-| popPK | Yang_1992 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of Guan-fu base A in rabbits, using alprenolol only as an internal standard for the analytical method. |
-| popPK | de_2000 | irrelevant | 0 | 0 | The study is a mechanistic pharmacology investigation of beta-adrenergic receptors in bovine tissue, not a pharmacokinetic study of alprenolol. |
+| PGx | Yamamoto_2003 | not_relevant | 0 | 0 | The paper uses alprenolol as an inhibitor to assess CYP2D6 activity, not as a substrate to measure how genetic variants affect its own pharmacokinetics or pharmacodynamics. |
+| popPK | Yang_1990 | irrelevant | 0 | 0 | The study focuses on metoprolol pharmacokinetics, using alprenolol only as an internal standard for the assay. |
+| popPK | Yang_1992 | irrelevant | 1 | 0 | The study investigates the pharmacokinetics of the drug "Guan-fu base A" in rabbits, using alprenolol only as an internal standard for the analytical method; no PK parameters for alprenolol are reported. |
+| popPK | de_2000 | irrelevant | 0 | 0 | The study is a mechanistic pharmacology paper investigating receptor signaling in bovine tissue, not a pharmacokinetic study reporting disposition parameters for alprenolol. |
 | PD | de_2000 | not_relevant | 1 | 0 | The paper investigates constitutive receptor activity and inverse agonism in bovine tracheal smooth muscle; alprenolol is only mentioned in a qualitative rank order of efficacy, with no numeric PD parameters or exposure-response relationship reported for it. |
 
 ---

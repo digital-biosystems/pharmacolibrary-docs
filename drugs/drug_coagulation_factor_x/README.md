@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;coagulation factor X&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;CoagulationFactorX_Zhang2024_reference&quot;,&quot;label&quot;:&quot;Zhang_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_coagulation_factor_x/CoagulationFactorX_Zhang2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;CoagulationFactorX_Zou2025_reference&quot;,&quot;label&quot;:&quot;Zou_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_coagulation_factor_x/CoagulationFactorX_Zou2025_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;CoagulationFactorX_Nayak2026_reference&quot;,&quot;label&quot;:&quot;Nayak_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_coagulation_factor_x/CoagulationFactorX_Nayak2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Zou_2025_anti_FXa&quot;,&quot;label&quot;:&quot;Zou_2025 \u00b7 anti-FXa&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_coagulation_factor_x/pd_Zou_2025_anti_FXa.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # coagulation factor X
 
@@ -13,15 +14,36 @@ Coagulation factor X is a human blood-clotting protein used to treat bleeding ca
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q423701](https://www.wikidata.org/wiki/Q423701) and the WHO ATC classification; not checked by a person.</small>
 
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| edoxaban | metabolite | 548.059 | C24H30ClN7O4S | PubChem | [10280735](https://pubchem.ncbi.nlm.nih.gov/compound/10280735) | Zou_2025 |
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-05 18:57 | 10:13 | 0/0/0 | 0/0/0 | 0/0/0 | 350,949/13,207 | ollama / qwen3.8:27b-mtp-q8_0 | 20 | 5/30 | 20/0 | 0 |
+| 2026-10-14 21:58 | 8:57 | 2/0/1 | 1/1/0 | 0/0/0 | 632,870/47,307 | einfracz / qwen3.8-27b | 25 | 6/34 | 25/0 | 0 |
 
 ## popPK records
 
-_not available_
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Zhang_2024_reference](drugs/drug_coagulation_factor_x/CoagulationFactorX_Zhang2024_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Zhang JY et al., Pharmacokinetics, pharmacodynamics, and…, Clinical and translational… (2024) | [10.1111/cts.13787](https://doi.org/10.1111/cts.13787) |
+| <span class="pk-badge pk-badge--green">accepted (caveats)</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub> | [Zou_2025_reference](drugs/drug_coagulation_factor_x/CoagulationFactorX_Zou2025_reference.md) | ▶ model + simulator | 2-compartment, oral | 6 (+2 cov.) | Zou P et al., Population pharmacokinetics and pharmac…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13248](https://doi.org/10.1002/psp4.13248) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: unreported model parameter default(s): F</sub><br><sub>route_to: `scholar`</sub> | [Nayak_2026_reference](drugs/drug_coagulation_factor_x/CoagulationFactorX_Nayak2026_reference.md) | ▶ model + simulator | 2-compartment, oral | 6 | Nayak S et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokinetics (2026) | [10.1007/s40262-026-01695-5](https://doi.org/10.1007/s40262-026-01695-5) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span> | [Zou_2025_PT](drugs/drug_coagulation_factor_x/pd_Zou_2025_PT.md) | prothrombin time ← edoxaban · direct linear effect | model (no simulator) | Zou P et al., Population pharmacokinetics and pharmac…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13248](https://doi.org/10.1002/psp4.13248) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span> | [Zou_2025_aPTT](drugs/drug_coagulation_factor_x/pd_Zou_2025_aPTT.md) | activated partial thromboplastin time ← edoxaban · direct linear effect | model (no simulator) | Zou P et al., Population pharmacokinetics and pharmac…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13248](https://doi.org/10.1002/psp4.13248) |
+| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span> | [Zou_2025_anti_FXa](drugs/drug_coagulation_factor_x/pd_Zou_2025_anti_FXa.md) | anti-Factor Xa activity ← edoxaban · direct Emax (saturable) effect | ▶ model + simulator | Zou P et al., Population pharmacokinetics and pharmac…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13248](https://doi.org/10.1002/psp4.13248) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.95).">in vitro</span> | [Wakui_2019_maximum_positive_values_in_the_successive_derivatives](drugs/drug_coagulation_factor_x/pd_Wakui_2019_maximum_positive_values_in_the_successive_derivat.md) | maximum positive values in the successive derivatives ← activated factor X inhibitors · direct sigmoid Emax (Hill) effect | — | Wakui M et al., Assessment of in vitro effects of direc…, Journal of clinical patholo… (2019) | [10.1136/jclinpath-2018-205517](https://doi.org/10.1136/jclinpath-2018-205517) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -31,23 +53,23 @@ _not available_
 
 ## Coverage
 
-- **PubMed hits:** 251 matched, 132 returned
-- **screened:** 0  ·  **relevant:** 0
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **PubMed hits:** 253 matched, 160 returned
+- **screened:** 9  ·  **relevant:** 1
+- **records:** 3  ·  extracted 2  ·  needs_review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
 
-_21 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_22 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Sarode_2020.pdf` | Sarode R et al., Pharmacometric modeling to explore 4F-P…, Blood advances (2020) | popPK | 9 | [10.1182/bloodadvances.2020002267](https://doi.org/10.1182/bloodadvances.2020002267) | [32898246](https://pubmed.ncbi.nlm.nih.gov/32898246) | The paper describes a pharmacometric model for Factor X (FX) levels following 4F-PCC dosing, but specific numeric PK parameter values (CL, V, etc.) are not explicitly listed in the provided text. |
+| `Hajducek_2026.pdf` | Hajducek DM et al., Population Pharmacokinetics of Plasma‑D…, Haemophilia : the official… (2026) | popPK | 9 | [10.1111/hae.70420](https://doi.org/10.1111/hae.70420) | [42862648](https://pubmed.ncbi.nlm.nih.gov/42862648) | The paper describes a population pharmacokinetic model for Factor X (Coagdex) but the evidence provided (abstract) contains no quantitative parameter values (CL, V, etc.). |
+| `Sarode_2020.pdf` | Sarode R et al., Pharmacometric modeling to explore 4F-P…, Blood advances (2020) | popPK | 8 | [10.1182/bloodadvances.2020002267](https://doi.org/10.1182/bloodadvances.2020002267) | [32898246](https://pubmed.ncbi.nlm.nih.gov/32898246) | The study develops pharmacometric models for Factor X (FX) disposition following 4F-PCC dosing to evaluate dose strategies, but the specific numeric parameter values (e.g., clearance, volume) are not explicitly listed in the provided text, appearing instead as model outputs or likely in supplementary tables. |
 | `Koppelman_1995.pdf` | Koppelman SJ et al., Inhibition of the intrinsic factor X ac…, Blood (1995) | pd | 5 | not captured | [7620160](https://www.ncbi.nlm.nih.gov/pubmed/7620160) | metadata signals extractable PD data (IC50) |
 | `Leclerc_1995.pdf` | Leclerc NE et al., Inhibitors of phosphodiesterase (pentox…, Journal of cardiovascular p… (1995) | pd | 5 | [10.1097/00005344-199500252-00019](https://doi.org/10.1097/00005344-199500252-00019) | [8699870](https://www.ncbi.nlm.nih.gov/pubmed/8699870) | metadata signals extractable PD data (EC50) |
 | `Song_2014.pdf` | Song S et al., Population pharmacokinetic-pharmacodyna…, Journal of clinical pharmac… (2014) | pd | 5 | [10.1002/jcph.306](https://doi.org/10.1002/jcph.306) | [24706516](https://www.ncbi.nlm.nih.gov/pubmed/24706516) | metadata signals extractable PD data (pharmacodynamicmodel) |
 | `Ueshima_2019.pdf` | Ueshima S et al., Population Pharmacokinetics and Pharmac…, The AAPS journal (2019) | pd | 5 | [10.1208/s12248-019-0353-7](https://doi.org/10.1208/s12248-019-0353-7) | [31236790](https://www.ncbi.nlm.nih.gov/pubmed/31236790) | metadata signals extractable PD data (IC50) |
-| `Zou_2025.pdf` | Zou P et al., Population pharmacokinetics and pharmac…, CPT: pharmacometrics & syst… (2025) | pd | 5 | [10.1002/psp4.13248](https://doi.org/10.1002/psp4.13248) | [39526427](https://www.ncbi.nlm.nih.gov/pubmed/39526427) | metadata signals extractable PD data (PK-PD) |
 | `Barrow_1994.pdf` | Barrow RT et al., Inhibition by heparin of the human bloo…, The Journal of biological c… (1994) | pd | 4 | not captured | [7929416](https://www.ncbi.nlm.nih.gov/pubmed/7929416) | metadata signals extractable PD data (IC50) |
 | `Brinkman_1994.pdf` | Brinkman HJ et al., The activation of human blood coagulati…, British journal of haematol… (1994) | pd | 4 | [10.1111/j.1365-2141.1994.tb04918.x](https://doi.org/10.1111/j.1365-2141.1994.tb04918.x) | [7947276](https://www.ncbi.nlm.nih.gov/pubmed/7947276) | metadata signals extractable PD data (IC50) |
 | `Dennis_2001.pdf` | Dennis MS et al., Selection and characterization of a new…, Biochemistry (2001) | pd | 4 | [10.1021/bi010591l](https://doi.org/10.1021/bi010591l) | [11583150](https://www.ncbi.nlm.nih.gov/pubmed/11583150) | metadata signals extractable PD data (IC50) |
@@ -59,12 +81,13 @@ _21 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Orning_1998.pdf` | Orning L et al., A peptide sequence from mouse tissue fa…, Thrombosis research (1998) | pd | 4 | [10.1016/s0049-3848(98)00119-4](https://doi.org/10.1016/s0049-3848(98)00119-4) | [9806365](https://www.ncbi.nlm.nih.gov/pubmed/9806365) | metadata signals extractable PD data (IC50) |
 | `Spiegel_2004.pdf` | Spiegel PC et al., Disruption of protein-membrane binding…, Chemistry & biology (2004) | pd | 4 | [10.1016/j.chembiol.2004.08.006](https://doi.org/10.1016/j.chembiol.2004.08.006) | [15489168](https://www.ncbi.nlm.nih.gov/pubmed/15489168) | metadata signals extractable PD data (IC50) |
 | `Zhang_1998.pdf` | Zhang Y et al., Nitrophorin-2: a novel mixed-type rever…, Biochemistry (1998) | pd | 4 | [10.1021/bi973050y](https://doi.org/10.1021/bi973050y) | [9692958](https://www.ncbi.nlm.nih.gov/pubmed/9692958) | metadata signals extractable PD data (EC50) |
+| `Zhou_1994.pdf` | Zhou L et al., Differential ligand binding specificiti…, The Journal of biological c… (1994) | pd | 4 | not captured | [7516332](https://www.ncbi.nlm.nih.gov/pubmed/7516332) | metadata signals extractable PD data (IC50) |
 | `Aquilante_2006.pdf` | Aquilante CL et al., Influence of coagulation factor, vitami…, Clinical pharmacology and t… (2006) | pgx | 8 | [10.1016/j.clpt.2005.11.011](https://doi.org/10.1016/j.clpt.2005.11.011) | [16580898](https://www.ncbi.nlm.nih.gov/pubmed/16580898) | metadata signals extractable PGX data (VKORC1, PK/PD-context) |
 | `Ueshima_2017.pdf` | Ueshima S et al., Impact of ABCB1, ABCG2, and CYP3A5 poly…, Pharmacogenetics and genomi… (2017) | pgx | 8 | [10.1097/FPC.0000000000000294](https://doi.org/10.1097/FPC.0000000000000294) | [28678049](https://www.ncbi.nlm.nih.gov/pubmed/28678049) | metadata signals extractable PGX data (ABCB1, PK/PD-context) |
 | `Gegu_2013.pdf` | Gegu M et al., [General characteristics of the new ora…, Geriatrie et psychologie ne… (2013) | pgx | 7 | [10.1684/pnv.2013.0446](https://doi.org/10.1684/pnv.2013.0446) | [24463058](https://www.ncbi.nlm.nih.gov/pubmed/24463058) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Scholz_2021.pdf` | Scholz I et al., Effects of Hypericum perforatum (St Joh…, British journal of clinical… (2021) | pgx | 7 | [10.1111/bcp.14553](https://doi.org/10.1111/bcp.14553) | [32959922](https://www.ncbi.nlm.nih.gov/pubmed/32959922) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 
-<sub>queue written 2026-10-05T18:50:48.659193+00:00</sub>
+<sub>queue written 2026-10-14T21:51:55.609113+00:00</sub>
 
 ## Screened and excluded
 
@@ -72,152 +95,176 @@ _21 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 |---|---|---|---|---|---|
 | popPK | Ahmed_2018 | irrelevant | 0 | 0 | The paper studies the pharmacological effects of dibenzylidene ketone derivatives, not the pharmacokinetics of coagulation factor X. |
 | PD | Ahmed_2018 | not_relevant | 2 | 1 | The paper reports molecular docking scores for Factor X and general anticoagulant effects (PRT, bleeding time) but does not provide a concentration-effect or dose-response analysis specifically for Factor X inhibition with numeric PD parameters. |
-| PGx | Akhavan_2007 | not_relevant | 0 | 0 | The paper describes a genetic cause of congenital Factor X deficiency (disease etiology) rather than a pharmacogenomic effect on the PK/PD of a drug. |
-| PGx | Bafunno_2011 | not_relevant | 0 | 0 | The paper reviews protein Z deficiency and venous thrombosis risk, not the pharmacokinetics or pharmacodynamics of coagulation factor X. |
-| PGx | Baroni_2015 | not_relevant | 0 | 0 | The paper investigates the structural and functional consequences of a specific mutation on coagulation factor X activation kinetics, not the pharmacokinetic or pharmacodynamic effects of a drug. |
-| PGx | Baroni_2020 | not_relevant | 0 | 0 | The paper investigates the association between FVIIa-AT levels and FXa generation in CAD patients, not the effect of a specific gene variant on the PK/PD of a drug. |
+| PGx | Akhavan_2007 | not_relevant | 0 | 0 | The paper describes a rare genetic disorder (Factor X deficiency) rather than a pharmacogenomic variation affecting the response to a therapeutic drug. |
+| popPK | Babilonia_2014 | irrelevant | 0 | 0 | The paper reviews pharmacokinetics of direct oral anticoagulants (dabigatran, rivaroxaban, apixaban) and reversal strategies, but does not report quantitative PK parameters for coagulation factor X as the subject drug. |
+| PGx | Bafunno_2011 | not_relevant | 1 | 0 | The paper reviews the association between Protein Z genetic polymorphisms and venous thrombosis risk, not the pharmacokinetics or pharmacodynamics of the drug coagulation_factor_x. |
+| PGx | Baroni_2015 | not_relevant | 0 | 0 | The paper characterizes the biochemical effects of a coagulation factor X mutation on enzyme kinetics, not the pharmacogenomics of a drug. |
+| PGx | Baroni_2020 | not_relevant | 0 | 0 | The study analyzes the association between protein levels (FVIIa-AT) and a coagulation parameter (FXa generation) in patient plasma, rather than investigating how a specific drug's pharmacokinetic or pharmacodynamic profile is modulated by a gene variant/genotype. |
 | popPK | Barrow_1994 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study of heparin's inhibition of factor X activation, not a pharmacokinetic study of coagulation_factor_x. |
-| popPK | Bozhko_2025 | irrelevant | 0 | 0 | The paper describes a mechanistic mathematical model of the enzymatic activation of Factor X by Factor IXa, not the pharmacokinetic disposition (clearance, volume, half-life) of Factor X as a drug. |
+| popPK | Berman_2013 | irrelevant | 0 | 0 | The paper is a clinical review of oral anticoagulants (dabigatran, rivaroxaban, apixaban) and does not report quantitative PK parameters for coagulation factor X itself. |
+| popPK | Blake_1984 | irrelevant | 0 | 0 | The paper describes a homogeneous ligand-binding assay using Factor X as a component of a detection cascade, not a pharmacokinetic study of Factor X's disposition. |
+| popPK | Bozhko_2025 | irrelevant | 0 | 0 | The paper describes a mechanistic mathematical model of the enzymatic activation of Factor X by Factor IXa (a coagulation cascade reaction), not the population pharmacokinetic disposition parameters (CL, V, ka) of coagulation_factor_x as a drug. |
 | popPK | Brinkman_1994 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study of coagulation factor X activation kinetics on cell surfaces, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
-| popPK | Brockmüller_2025 | irrelevant | 0 | 0 | The study focuses on DOAC underdosing in atrial fibrillation and does not report pharmacokinetic parameters for coagulation_factor_x. |
+| popPK | Brockmüller_2025 | irrelevant | 0 | 0 | The paper is a clinical registry study regarding DOAC underdosing and does not report pharmacokinetic parameters for coagulation_factor_x. |
 | PD | Brockmüller_2025 | not_relevant | 0 | 0 | The paper is a pharmacoepidemiological registry study analyzing predictors of DOAC underdosing based on medication data and clinical scores; it does not report any pharmacokinetic or pharmacodynamic modeling, exposure-response relationships, or numeric PD parameters. |
-| popPK | Carreño_2024 | irrelevant | 0 | 0 | The study characterizes the pharmacokinetics of enoxaparin, not coagulation_factor_x. |
+| popPK | Carreño_2024 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of enoxaparin, not coagulation_factor_x. |
 | PD | Carreño_2024 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PopPK) model for enoxaparin but does not include a pharmacodynamic (PD) model or exposure-response analysis with numeric PD parameters. |
+| popPK | Chauhan_2014 | irrelevant | 0 | 0 | The paper describes a small-molecule inhibitor of c-Myc-Max dimerization and contains no pharmacokinetic data for coagulation factor X. |
 | popPK | Chen_1990 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of ethynyloestradiol and norethisterone, with Factor X mentioned only as a pharmacodynamic marker that increased, not as the subject drug for PK parameter estimation. |
 | PD | Chen_1990 | not_relevant | 1 | 0 | The paper reports qualitative changes in Factor X levels and general PK/PD correlations for other markers, but provides no numeric concentration-effect or dose-response parameters for Factor X. |
-| PGx | Chen_2010 | not_relevant | 0 | 0 | The paper describes using the Factor X GLA domain as a targeting ligand for adenovirus vectors, not a pharmacogenomic effect on Factor X pharmacokinetics or pharmacodynamics. |
-| popPK | Chen_2026 | irrelevant | 0 | 0 | The paper discusses a theoretical pharmacological framework (TAPD) and tissue expression landscapes, not the pharmacokinetic disposition parameters (CL, V, etc.) of coagulation factor X. |
+| PGx | Chen_2010 | not_relevant | 0 | 0 | The paper describes the engineering of fusion proteins for adenoviral gene therapy targeting, not pharmacogenomic effects on the PK/PD of coagulation factor X as a drug. |
+| popPK | Chen_2026 | irrelevant | 0 | 0 | The paper discusses theoretical pharmacological principles and tissue-selective direction using traditional Chinese metabolites, not the PK of coagulation_factor_x. |
 | PD | Chen_2026 | not_relevant | 0 | 0 | The paper proposes a theoretical framework (TAPD) and uses transcriptomic data to predict tissue-specific directionality, but it does not report experimental pharmacodynamic data, concentration-effect curves, or numeric PD parameters (e.g., Emax, EC50) for coagulation factor X. |
-| popPK | Choi_2016 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for the drug GCC-4401C (a Factor Xa inhibitor), not for the drug coagulation_factor_x (Factor X) itself. |
-| PGx | Choppin_2009 | not_relevant | 0 | 0 | The study investigates the pharmacodynamic effects of tecarfarin on coagulation factors in beagle dogs but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
-| popPK | Chung_2023 | irrelevant | 0 | 0 | The paper is a review of QSP models of the coagulation cascade and does not report specific quantitative PK parameters (CL, V, etc.) for coagulation factor X. |
+| popPK | Cheng_2012 | irrelevant | 0 | 0 | The paper investigates a venom-derived inhibitor of activated protein C and its effect on coagulation, not the pharmacokinetics of coagulation_factor_x. |
+| popPK | Choi_2016 | irrelevant | 2 | 1 | The study analyzes the pharmacokinetics of GCC-4401C, a Factor Xa *inhibitor* (drug), not the pharmacokinetics of the endogenous protein coagulation factor X itself. |
+| PGx | Choppin_2009 | not_relevant | 0 | 0 | The study investigates the pharmacological effects of tecarfarin and drug interactions (CYP2C9 inhibition) in beagle dogs, but does not report on any pharmacogenomic effect (gene variant/genotype) on a PK or PD parameter. |
+| popPK | Chung_2023 | irrelevant | 0 | 0 | The paper is a review of quantitative systems pharmacology (QSP) models of the coagulation cascade, not a study reporting pharmacokinetic parameters (CL, V, etc.) for Factor X. |
 | PD | Chung_2023 | not_relevant | 2 | 0 | The paper is a review of QSP models for the coagulation cascade and does not report specific numeric PD parameters (e.g., Emax, EC50) or exposure-response curves for Factor X in the provided text. |
-| popPK | DAmico_2026 | irrelevant | 0 | 0 | The study is a pharmacovigilance analysis of drug-drug interactions for bleeding risk and does not report pharmacokinetic parameters for coagulation_factor_x. |
+| popPK | Conversy_2013 | irrelevant | 0 | 0 | The study is an in vitro mechanistic evaluation of rivaroxaban's anticoagulant effect and reports no pharmacokinetic parameters for the target drug coagulation_factor_x. |
+| popPK | DAmico_2026 | irrelevant | 0 | 0 | The paper is a pharmacoepidemiological study of drug-drug interactions in nursing home residents and does not report any pharmacokinetic parameters for coagulation_factor_x. |
 | PD | DAmico_2026 | not_relevant | 0 | 0 | The paper is a pharmacoepidemiological study using claims data to identify drug-drug interaction signals for bleeding; it does not report pharmacokinetic or pharmacodynamic modeling, concentration-effect relationships, or numeric PD parameters for coagulation factor X. |
-| popPK | Daher_2025 | irrelevant | 0 | 0 | The paper focuses on microvascular autoregulation and hemodynamic modeling, not the pharmacokinetics of coagulation factor X. |
+| popPK | Daher_2025 | irrelevant | 0 | 0 | The study focuses on calibrating microvessel autoregulatory models (hemodynamics) and does not contain pharmacokinetic data for coagulation_factor_x. |
 | PD | Daher_2025 | not_relevant | 0 | 0 | The paper focuses on calibrating a hemodynamic model of microvessel autoregulation (myogenic/endothelial responses) and does not involve coagulation factor X or any pharmacodynamic exposure-response relationship. |
-| PGx | Delahousse_2002 | not_relevant | 0 | 0 | The paper focuses on Factor II (Prothrombin) levels and assay methods, not the pharmacokinetics or pharmacodynamics of Factor X. |
-| popPK | Delavenne_2012 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of fondaparinux, not coagulation factor X. |
-| popPK | Deng_2025 | irrelevant | 0 | 0 | The paper describes a machine learning workflow for drug design and contains no pharmacokinetic data for coagulation_factor_x. |
+| PGx | Delahousse_2002 | not_relevant | 0 | 0 | The paper investigates the pharmacogenomic effect of a prothrombin variant on Factor II levels, not Factor X. |
+| popPK | Delavenne_2012 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of fondaparinux (an anticoagulant), not the disposition of the drug coagulation_factor_x itself. |
+| popPK | Deng_2025 | irrelevant | 0 | 0 | The paper is about a drug discovery AI workflow and does not report pharmacokinetic parameters for coagulation_factor_x. |
 | PD | Deng_2025 | not_relevant | 0 | 0 | The paper describes a machine learning workflow for drug design and does not report any pharmacodynamic or exposure-response data for coagulation factor X. |
 | popPK | Dennis_2001 | irrelevant | 0 | 0 | The paper describes in-vitro peptide inhibitors of Factor VIIa and reports IC50/Ki values, but contains no pharmacokinetic parameters (CL, V, t1/2) for coagulation_factor_x. |
 | popPK | Dixon-Jimenez_2016 | irrelevant | 0 | 0 | The study evaluates the pharmacokinetics of rivaroxaban, not coagulation_factor_x, which is only used as a pharmacodynamic biomarker (anti-Xa activity). |
 | popPK | Dockal_2014 | irrelevant | 0 | 0 | no_text gate: only 119 chars of text extracted (&lt; 400) |
 | PD | Dockal_2014 | not_relevant | 0 | 0 | The paper describes the mechanism of action of peptides blocking TFPI-mediated inhibition of Factor Xa, but does not report a quantitative exposure-response or dose-response relationship with numeric PD parameters (e.g., IC50, Emax) for Factor X itself. |
-| popPK | Dos_2025 | irrelevant | 0 | 0 | The study investigates the anticoagulant activity of Eucalyptus essential oils using in vitro assays and in silico binding models, rather than reporting quantitative pharmacokinetic disposition parameters for coagulation factor X itself. |
+| popPK | Dos_2025 | irrelevant | 0 | 0 | The study investigates the anticoagulant activity of Eucalyptus essential oils and their interaction with Factor X, not the pharmacokinetics of the drug coagulation_factor_x itself. |
 | PD | Dos_2025 | not_relevant | 3 | 2 | The paper reports in vitro dose-response data (PT/aPTT prolongation) and in silico binding energies for Factor X, but lacks a formal PK/PD model or numeric PD parameters (e.g., EC50, Emax) derived from a pharmacodynamic fit. |
-| PGx | Elikowski_2015 | not_relevant | 0 | 0 | The paper is a case report on a drug-drug interaction (rivaroxaban and amiodarone) and does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
-| PGx | Fernández-Cadenas_2006 | not_relevant | 0 | 0 | The study explicitly reports no association between ACE genotypes and Factor X activities, and the primary outcome (recanalization) is a clinical efficacy endpoint, not a PK/PD parameter of the drug. |
+| PGx | Elikowski_2015 | not_relevant | 0 | 0 | The paper is a clinical case report of a drug-drug interaction between rivaroxaban and amiodarone, not a pharmacogenomic study investigating gene variants. |
+| popPK | Eriksson_2009 | irrelevant | 1 | 0 | The paper is a review of Factor Xa inhibitors (drugs targeting the protein) rather than a PK study of coagulation_factor_x (the endogenous protein) as a subject drug. |
+| PGx | Fernández-Cadenas_2006 | not_relevant | 1 | 3 | The study explicitly states there was no association between ACE genotypes and Factor X activities, only an association with vessel recanalization outcomes. |
 | popPK | Francischetti_2002 | irrelevant | 0 | 0 | The paper is a mechanistic in-vitro study of a tick salivary protein (Ixolaris) interacting with Factor X, not a pharmacokinetic study of coagulation_factor_x as a drug. |
-| popPK | Fromage_2025 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for mycophenolate sodium/mycophenolic acid, not coagulation_factor_x. |
+| popPK | Fromage_2025 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for mycophenolic acid (MPA), not coagulation_factor_x. |
 | PD | Fromage_2025 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) model for mycophenolic acid, not a pharmacodynamic (PD) or exposure-response model for coagulation factor X. |
 | popPK | Frost_2021 | irrelevant | 0 | 0 | The study evaluates the pharmacokinetics of apixaban (a factor Xa inhibitor), not coagulation factor X itself, which is the target protein rather than the subject drug. |
-| PGx | Furlan_2004 | not_relevant | 0 | 0 | The paper studies Factor VII (FVII) variants, not Factor X (FX). |
-| popPK | Gandhi_2024 | irrelevant | 2 | 0 | The study focuses on the pharmacokinetics of the bispecific antibody HMB-001 and its effect on FVIIa half-life, rather than reporting standard population PK parameters (CL, V, Q) for coagulation factor X itself. |
-| PGx | Gegu_2013 | not_relevant | 0 | 0 | The paper is a general review of new oral anticoagulants and does not report specific pharmacogenomic effects of gene variants on the PK or PD of coagulation factor X. |
-| PGx | Girolami_2008 | not_relevant | 0 | 0 | The paper is a general review of congenital bleeding disorders and does not report specific pharmacogenomic effects on PK/PD parameters for coagulation factor X. |
-| popPK | Gordon_2026 | irrelevant | 0 | 0 | The study focuses on the rational design of Factor Xa inhibitors using QSAR and molecular docking, not the pharmacokinetics of coagulation factor X itself. |
+| PGx | Furlan_2004 | not_relevant | 0 | 0 | The paper studies pharmacokinetics of Coagulation Factor VII variants, not Coagulation Factor X. |
+| popPK | Gandhi_2024 | relevant | 7 | 3 | The study reports PK parameters for FVIIa (a coagulation factor) in non-human primates, but the specific quantitative values (clearance, half-life) are located in Supplementary Table 6 which is not provided in the evidence. |
+| PGx | Gegu_2013 | not_relevant | 0 | 0 | The paper provides a general overview of new oral anticoagulants but does not report any pharmacogenomic effects of gene variants on their PK or PD parameters. |
+| PGx | Girolami_2008 | not_relevant | 0 | 0 | The paper is a review of congenital bleeding disorders and does not report pharmacogenomic effects on pharmacokinetic or pharmacodynamic parameters of exogenous drugs. |
+| popPK | Gordon_2026 | irrelevant | 0 | 0 | The paper describes the in silico design of Factor Xa inhibitors (ligands) and does not report pharmacokinetic parameters for coagulation_factor_x itself. |
 | PD | Gordon_2026 | not_relevant | 0 | 0 | The paper reports a QSAR model correlating molecular descriptors with in vitro inhibitory activity (Ki), not a pharmacodynamic (exposure-response or dose-response) relationship involving drug concentration in a biological system. |
-| popPK | Guerrero-Hurtado_2025 | irrelevant | 0 | 0 | The study is a computational fluid dynamics simulation of coagulation efficacy, not a pharmacokinetic study reporting disposition parameters for coagulation_factor_x. |
+| popPK | Guerrero-Hurtado_2025 | irrelevant | 0 | 0 | This is a computational hemodynamics and coagulation mechanism study that does not report population pharmacokinetic parameters (CL, V, etc.) for factor X. |
 | PD | Guerrero-Hurtado_2025 | not_relevant | 0 | 0 | The paper focuses on Factor XI/XII inhibition and computational fluid dynamics, not Factor X, and does not report numeric PD parameters for Factor X. |
+| popPK | Hajducek_2026 | relevant | 9 | 0 | The paper describes a population pharmacokinetic model for Factor X (Coagdex) but the evidence provided (abstract) contains no quantitative parameter values (CL, V, etc.). |
+| popPK | Halim_2014 | irrelevant | 0 | 0 | The study is an ex vivo coagulation assay investigating reversal of edoxaban effects and does not report pharmacokinetic parameters for coagulation_factor_x. |
 | popPK | Hawthorne_1994 | irrelevant | 0 | 0 | The paper characterizes recombinant annexin V, not coagulation factor X, and contains no pharmacokinetic parameters. |
 | popPK | Hoffmann_2002 | irrelevant | 0 | 0 | The study investigates the pharmacodynamics and bioequivalence of low-molecular-weight heparin (Certoparin), not the pharmacokinetics of coagulation factor X. |
 | PD | Hoffmann_2002 | not_relevant | 3 | 2 | The study reports bioequivalence metrics (AUC ratios) and qualitative PD effects but does not provide a concentration-effect model or numeric PD parameters (e.g., EC50, Emax) for Factor X. |
-| popPK | Hofmann_1987 | irrelevant | 0 | 0 | The paper describes the biochemical characterization and purification of venom components that activate factor X, not the pharmacokinetics of factor X itself. |
+| popPK | Hofmann_1987 | irrelevant | 0 | 0 | The study is a biochemical characterization of venom components and in vitro cleavage of factor X, not a pharmacokinetic study of Factor X as a drug. |
 | PD | Hofmann_1987 | not_relevant | 3 | 2 | The paper reports biochemical characterization and a Hill coefficient for Ca2+ dependency, but does not provide a drug exposure-response or dose-response curve with numeric PD parameters (Emax, EC50) for the activators themselves. |
 | popPK | Husbyn_1997 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on Factor VII peptides and their effect on Factor X activation, containing no pharmacokinetic parameters for Factor X. |
+| popPK | Jacobs_2026 | irrelevant | 0 | 0 | The paper is a commentary proposing a clinical trial pathway for Factor V deficiency and does not report any quantitative pharmacokinetic parameters. |
 | popPK | Jakobsen_2000 | irrelevant | 0 | 0 | The paper is an in-vitro medicinal chemistry study on inhibitors of the coagulation pathway, not a pharmacokinetic study of coagulation factor X. |
-| popPK | Jay_2007 | irrelevant | 0 | 0 | The paper discusses thermoregulation and body temperature estimation during exercise, not the pharmacokinetics of coagulation factor X. |
+| popPK | Jay_2007 | irrelevant | 0 | 0 | The paper describes a thermoregulation study on mean body temperature estimation and does not involve the drug coagulation_factor_x or its pharmacokinetics. |
 | popPK | Jesty_1990 | irrelevant | 0 | 0 | no_text gate: only 125 chars of text extracted (&lt; 400) |
 | PD | Jesty_1990 | not_relevant | 0 | 0 | The paper analyzes the kinetics of Factor Xa generation and inhibition in a biochemical context, focusing on the independence of the area under the curve from generation rate, rather than reporting a pharmacodynamic exposure-response or dose-response relationship for a drug with numeric PD parameters. |
-| popPK | Jian_2025 | irrelevant | 0 | 0 | The paper is a protocol for immunotherapy biomarker analysis and contains no pharmacokinetic data for coagulation_factor_x. |
+| popPK | Jian_2025 | irrelevant | 0 | 0 | The paper is a protocol for immunotherapy biomarker analysis via scRNA-seq and CyTOF, containing no pharmacokinetic data for coagulation_factor_x. |
 | PD | Jian_2025 | not_relevant | 0 | 0 | The paper is a protocol for single-cell RNA-seq and CyTOF analysis of immune response to immunotherapy and contains no pharmacokinetic or pharmacodynamic data for coagulation factor X. |
-| popPK | Jin_2016 | irrelevant | 0 | 0 | The study characterizes an antibody against antithrombin III and its effect on coagulation assays, but does not report pharmacokinetic parameters (CL, V, etc.) for coagulation factor X. |
-| popPK | Jonsson_2021 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics and exposure-response of emicizumab, not coagulation factor X. |
-| PGx | Karimi_2012 | not_relevant | 2 | 5 | The paper reports genotype-phenotype correlations for bleeding severity (intracranial hemorrhage) in Factor X deficiency, but does not report how specific genotypes alter the pharmacokinetic or pharmacodynamic parameters of the administered Factor X concentrate. |
+| popPK | Jin_2016 | irrelevant | 0 | 0 | The study focuses on the functional characterization of an antibody against antithrombin III beta, not on the pharmacokinetic parameters of coagulation factor X. |
+| popPK | Jonsson_2021 | irrelevant | 0 | 0 | The study focuses on the exposure-response of emicizumab in hemophilia A, and coagulation factor X is only a target of the drug, not the subject drug being modeled pharmacokinetically. |
+| PGx | Karimi_2012 | not_relevant | 2 | 10 | The paper reports general PK/PD profiles of Factor X concentrate in severe deficiency and lists genotypes associated with bleeding severity, but it does not demonstrate that a specific gene variant alters the pharmacokinetic or pharmacodynamic parameters of the administered factor. |
+| popPK | Kelleher_1990 | irrelevant | 0 | 0 | The paper is a review discussing the relationship between oral contraceptives and clotting factor levels (hypercoagulability) without reporting any pharmacokinetic parameters (CL, V, ka) for coagulation factor X. |
 | popPK | Koppelman_1995 | irrelevant | 0 | 0 | The study is a mechanistic in-vitro investigation of protein S inhibition of factor X activation, not a pharmacokinetic study reporting disposition parameters for coagulation_factor_x. |
-| popPK | Kovalenko_2023 | irrelevant | 0 | 0 | The paper describes mechanistic mathematical models of coagulation factor X activation kinetics (enzyme-substrate reaction rates) rather than pharmacokinetic disposition parameters (CL, V, t1/2) for the drug. |
+| popPK | Kovalenko_2023 | irrelevant | 1 | 0 | This is a mechanistic in vitro study of coagulation kinetics focusing on mathematical modeling of Factor X activation rates, not a pharmacokinetic study reporting disposition parameters like clearance, volume of distribution, or half-life. |
 | popPK | Kubisz_2017 | irrelevant | 0 | 0 | The paper is a review of apixaban (a drug that inhibits coagulation factor X), not a pharmacokinetic study of coagulation factor X itself, and contains no quantitative PK parameters for the target drug. |
 | PD | Kubisz_2017 | not_relevant | 1 | 0 | The text is a general review summary that qualitatively describes apixaban's mechanism and pharmacodynamic properties but does not provide specific numeric PD parameters or exposure-response data. |
 | popPK | Kubitza_2013 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of rivaroxaban, not coagulation_factor_x, which is only the target of the drugs' pharmacodynamic activity. |
-| PGx | Kurdi_2012 | not_relevant | 0 | 0 | The paper investigates the mechanism of Factor X clearance via N-glycosylation and macrophage interaction, but does not report a pharmacogenomic effect (gene variant/genotype) on a PK or PD parameter. |
+| PGx | Kurdi_2012 | not_relevant | 0 | 0 | The paper investigates the role of post-translational modifications (glycosylation) on drug clearance, not the effect of genetic variants/genotypes. |
 | popPK | Kvasnicka_2017 | irrelevant | 0 | 0 | The paper is a review of rivaroxaban (a drug that inhibits factor Xa), not a pharmacokinetic study of coagulation factor X itself. |
 | PD | Kvasnicka_2017 | not_relevant | 1 | 0 | The text is a general review of rivaroxaban's pharmacokinetics and clinical indications, lacking specific numeric PD parameters or exposure-response data. |
-| popPK | Lanoiselée_2024 | irrelevant | 0 | 0 | The study models the pharmacokinetics of heparin (using anti-Xa as a biomarker), not the pharmacokinetics of coagulation factor X itself. |
+| popPK | Lanoiselée_2024 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of heparin, not coagulation factor X, and does not report PK parameters for factor X. |
 | PD | Lanoiselée_2024 | not_relevant | 0 | 0 | The study reports a pharmacokinetic (PK) model for heparin to predict anti-Xa levels, but does not report a pharmacodynamic (PD) model or exposure-response relationship for coagulation factor X itself. |
-| PGx | Le_2010 | not_relevant | 0 | 0 | The paper discusses Protein Z gene polymorphisms and their effect on Protein Z plasma levels, not the pharmacokinetics or pharmacodynamics of coagulation factor X. |
+| PGx | Le_2010 | not_relevant | 2 | 0 | The text discusses the impact of Protein Z gene polymorphisms on Protein Z plasma levels and thrombosis risk, but does not report how a gene variant changes a PK or PD parameter of coagulation factor X itself (it is a review of Protein Z's role as a cofactor for Factor Xa inhibition, not a pharmacogenomic study of Factor X). |
 | popPK | Leclerc_1995 | irrelevant | 0 | 0 | no_text gate: only 162 chars of text extracted (&lt; 400) |
 | PD | Leclerc_1995 | not_relevant | 0 | 0 | The paper investigates the effect of phosphodiesterase inhibitors on tissue factor expression in endothelial cells, which is unrelated to the pharmacodynamics of coagulation factor X. |
-| popPK | Lee_1995 | irrelevant | 0 | 0 | The paper describes the isolation and in-vitro enzymatic properties of a snake venom protein that activates Factor X, rather than the pharmacokinetics of Factor X itself. |
+| popPK | Lee_1995 | irrelevant | 0 | 0 | The paper describes the biochemical purification and enzymatic properties of a snake venom toxin that activates factor X, rather than the pharmacokinetics (disposition parameters) of coagulation factor X itself. |
 | PD | Lee_1995 | not_relevant | 3 | 2 | The paper reports a Hill coefficient (6.83) for Ca2+ dependence of factor X activation, but does not provide a concentration-effect curve, Emax, EC50, or other numeric PD parameters for the drug/enzyme itself. |
 | popPK | Lindley_1994 | irrelevant | 0 | 0 | The study investigates recombinant factor VIIa (rFVIIa), not coagulation factor X, which is the required subject drug. |
 | PD | Lindley_1994 | not_relevant | 4 | 2 | The paper reports a qualitative "maximum effect model" relationship between FVII:C and PT/aPTT but does not provide the specific numeric PD parameters (Emax, EC50) or data points required to derive them. |
-| PGx | Lippi_2009 | not_relevant | 0 | 0 | The paper discusses pharmacogenetics of vitamin K antagonists (warfarin), not coagulation factor X. |
+| PGx | Lippi_2009 | not_relevant | 2 | 1 | The paper is a narrative review discussing pharmacogenetics of Vitamin K Antagonists (e.g., Warfarin), not the specific drug coagulation_factor_x, and lacks quantitative PK/PD data. |
+| popPK | Lippi_2019 | irrelevant | 0 | 0 | The paper is a narrative review of direct oral anticoagulants (inhibitors of factor Xa/thrombin) and does not report quantitative pharmacokinetic parameters for coagulation factor X itself. |
 | popPK | London_1996 | irrelevant | 0 | 0 | no_text gate: only 131 chars of text extracted (&lt; 400) |
-| popPK | Manco-Johnson_1994 | irrelevant | 0 | 0 | The study measures plasma concentrations of coagulation factor X in sheep to assess the effects of glucose and insulin infusions, but it does not report pharmacokinetic disposition parameters (clearance, volume, half-life) for factor X as a dosed drug. |
+| popPK | Manco-Johnson_1994 | irrelevant | 0 | 0 | The study measures plasma concentrations of Factor X in sheep but does not report pharmacokinetic parameters (clearance, volume, half-life) for exogenously dosed Factor X. |
+| popPK | Margetić_2022 | irrelevant | 0 | 0 | The paper is a review of laboratory monitoring for Direct Oral Anticoagulants (dabigatran, rivaroxaban, etc.) and does not report pharmacokinetic parameters for coagulation factor X. |
 | popPK | Mathur_1997 | irrelevant | 0 | 0 | no_text gate: only 152 chars of text extracted (&lt; 400) |
 | PD | Mathur_1997 | not_relevant | 0 | 0 | The paper focuses on the structural and mechanistic interaction between Factor IXa and Factor VIIIa, not on the pharmacodynamic exposure-response relationship of Factor X. |
-| PGx | Mertens_1993 | not_relevant | 0 | 0 | The paper studies engineered recombinant Factor VIII variants, not the pharmacogenomics of Factor X. |
+| PGx | Mertens_1993 | not_relevant | 0 | 0 | The paper studies engineered recombinant Factor VIII variants, not a pharmacogenomic effect on the PK/PD of a drug (specifically coagulation_factor_x). |
+| popPK | Meysman_2005 | irrelevant | 0 | 0 | The paper is a review of pulmonary embolism treatment and discusses factor Xa inhibitors generally, but does not report quantitative pharmacokinetic parameters for coagulation factor X. |
 | popPK | Mismetti_1998 | irrelevant | 0 | 0 | The study focuses on acenocoumarol, and coagulation_factor_x is only measured as a pharmacodynamic biomarker, not as the subject drug for PK parameter estimation. |
 | PD | Mismetti_1998 | not_relevant | 2 | 1 | The paper reports qualitative observations of stable pharmacodynamic activity (INR, Factor X) over 24 hours but does not provide numeric concentration-effect parameters or a fitted PD model. |
-| popPK | Mohammed_2008 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of warfarin, not coagulation factor X. |
-| PGx | Monroe_2016 | not_relevant | 0 | 0 | The paper characterizes the structure and function of a recombinant Factor IX product (IXINITY) but does not report pharmacogenomic effects on PK/PD parameters. |
-| PGx | Muczynski_2019 | not_relevant | 0 | 0 | The paper describes the pharmacokinetics and pharmacodynamics of an engineered protein variant (FX/FpA) in a mouse model, not the effect of a human genetic variant on the PK/PD of a drug. |
-| popPK | Muir_2024 | irrelevant | 2 | 2 | The paper is a mechanistic in silico model of the coagulation cascade, not a pharmacokinetic study of Factor X; the PK parameters listed are for the 4F-PCC product components, not Factor X as a subject drug. |
+| popPK | Mohammed_2008 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of warfarin, not coagulation_factor_x; Factor X is only measured as a pharmacodynamic biomarker of warfarin's effect. |
+| PGx | Monroe_2016 | not_relevant | 0 | 0 | The paper characterizes the biochemical and functional properties of a recombinant Factor IX product and does not report pharmacokinetic or pharmacodynamic changes based on a patient's genetic variant. |
+| PGx | Muczynski_2019 | not_relevant | 0 | 0 | The paper describes engineered protein variants for therapeutic purposes and their efficacy in disease models, not a pharmacogenomic effect of endogenous genetic variants on pharmacokinetics or pharmacodynamics. |
+| popPK | Muir_2024 | irrelevant | 2 | 2 | The paper focuses on a mechanistic coagulation model for Factor Xa inhibitor reversal, and while it briefly lists clearance and volume values for Factor X in a table, the primary subject is the modeling of clotting dynamics rather than the pharmacokinetic disposition of Factor X as a drug. |
 | popPK | Nagahara_1994 | irrelevant | 0 | 0 | The paper describes the synthesis and in vitro/in vivo anticoagulant activity of FXa inhibitors, not the pharmacokinetic disposition parameters of coagulation factor X itself. |
-| PGx | Nagarajan_2023 | not_relevant | 0 | 0 | The paper investigates the role of the MLX gene in lipid and glucose metabolism, not the pharmacokinetics or pharmacodynamics of coagulation factor X. |
-| PGx | Newman_2023 | not_relevant | 0 | 0 | The paper describes a genetic mutation in the endogenous coagulation factor FVII (a disease mechanism), not the pharmacokinetics or pharmacodynamics of an exogenous drug (coagulation_factor_x). |
-| PGx | Okuda_2010 | not_relevant | 0 | 0 | The paper investigates the association between the TSNAX gene and Major Depressive Disorder, not the pharmacokinetics or pharmacodynamics of coagulation factor X. |
-| popPK | Oliveira_2024 | irrelevant | 0 | 0 | The study is an in silico investigation of lanostane-type triterpenes targeting MYC, not a pharmacokinetic study of coagulation_factor_x. |
+| PGx | Nagarajan_2023 | not_relevant | 0 | 0 | The paper studies the role of the MLX gene (Max-like protein factor X) in lipid and glucose metabolism, which is unrelated to coagulation factor X pharmacokinetics or pharmacodynamics. |
+| popPK | Nayak_2026 | irrelevant | 0 | 0 | The study analyzes the pharmacokinetics of marstacimab, not coagulation factor X. |
+| PGx | Newman_2023 | not_relevant | 3 | 8 | The paper describes a pharmacogenomic variant of a coagulation factor (Factor VII), not a drug, and does not report the effect of a gene variant on the pharmacokinetic or pharmacodynamic parameters of a specific pharmacological agent. |
+| PGx | Okuda_2010 | not_relevant | 0 | 0 | The paper investigates the association between the TSNAX gene (Translin-associated factor X) and Major Depressive Disorder, not the pharmacokinetics or pharmacodynamics of the coagulation factor X protein. |
+| popPK | Oliveira_2024 | irrelevant | 0 | 0 | The paper is an in silico study of triterpenes targeting the MYC protein and does not involve the pharmacokinetics of coagulation factor X. |
 | PD | Oliveira_2024 | not_relevant | 0 | 0 | The paper is an in silico study of triterpenes targeting MYC and contains no data, analysis, or mention of coagulation factor X or any pharmacodynamic/exposure-response relationship. |
+| popPK | Op_2021 | irrelevant | 0 | 0 | The paper is a toxicological and bioactivity analysis of snake venoms on human plasma, focusing on clotting kinetics and enzymatic activity, and does not report pharmacokinetic parameters (CL, V, etc.) for coagulation factor X as a dosed therapeutic drug. |
 | popPK | Orning_1998 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on peptide inhibition of factor X activation and does not report pharmacokinetic parameters for coagulation_factor_x. |
+| popPK | Palareti_2001 | irrelevant | 0 | 0 | The paper is a review discussing antithrombotic drugs (pentasaccharide, ximelagatran) that inhibit factor Xa, but it does not present pharmacokinetic disposition parameters for coagulation_factor_x itself. |
 | popPK | Parsons-Rich_2017 | irrelevant | 2 | 1 | The study reports only a single half-life value (~4 min) without clearance, volume, or compartmental model parameters, and the drug is a specific variant (FXaI16L) rather than standard coagulation factor X. |
 | PD | Parsons-Rich_2017 | not_relevant | 3 | 1 | The abstract reports qualitative PD changes (aPTT, TGA, etc.) and dose-proportional PK, but does not provide numeric PD parameters (Emax, EC50) or a quantitative concentration-effect model. |
-| PGx | Parsons-Rich_2017 | not_relevant | 0 | 0 | The paper reports a Phase 1 safety and PK/PD study of a recombinant factor Xa variant in healthy volunteers but does not investigate the impact of human genetic variants (pharmacogenomics) on these parameters. |
-| PGx | Rao_1986 | not_relevant | 0 | 0 | The paper investigates the biochemical mechanism of coagulation factor activation in vitro and in plasma, not the effect of a gene variant on the pharmacokinetics or pharmacodynamics of a drug. |
-| PGx | Rao_2013 | not_relevant | 0 | 0 | The paper investigates mitochondrial function and catecholamine content in pheochromocytoma tumors, not the pharmacokinetics or pharmacodynamics of coagulation factor X. |
-| popPK | Redondo-Castillejo_2025 | irrelevant | 0 | 0 | The study investigates diatomaceous earth supplementation in rats and does not involve coagulation_factor_x. |
+| PGx | Parsons-Rich_2017 | not_relevant | 0 | 0 | The study evaluates the PK/PD of a recombinant factor X variant in healthy volunteers and does not report the effect of a human gene variant on a pharmacokinetic or pharmacodynamic parameter of coagulation factor X. |
+| PGx | Rao_1986 | not_relevant | 0 | 0 | The paper studies the biochemical mechanism of Factor VII-mediated activation of Factor X in coagulation pathways, not the pharmacokinetics or pharmacodynamics of a drug named coagulation_factor_x. |
+| PGx | Rao_2013 | not_relevant | 0 | 0 | The study investigates mitochondrial function and catecholamine metabolism in pheochromocytoma/paraganglioma tumors, not the pharmacokinetics or pharmacodynamics of coagulation factor X. |
+| popPK | Rao_2017 | irrelevant | 0 | 0 | The paper is a review of Factor Xa inhibitors (drugs that inhibit the drug) rather than a pharmacokinetic study of Coagulation Factor X itself as the subject drug. |
+| popPK | Redondo-Castillejo_2025 | irrelevant | 0 | 0 | The study investigates diatomaceous earth supplementation and lipid metabolism in rats, with no mention of coagulation_factor_x or its pharmacokinetics. |
 | PD | Redondo-Castillejo_2025 | not_relevant | 0 | 0 | The paper investigates the effects of diatomaceous earth on lipid metabolism and does not report any pharmacodynamic or exposure-response relationship for coagulation factor X. |
-| popPK | Retout_2020 | irrelevant | 0 | 0 | The study analyzes the pharmacokinetics of emicizumab, not coagulation_factor_x. |
+| popPK | Retout_2020 | irrelevant | 0 | 0 | The study analyzes the pharmacokinetics of emicizumab, not coagulation factor X. |
 | PD | Retout_2020 | not_relevant | 3 | 1 | The paper reports a population PK model and a descriptive/exploratory comparison of exposure vs. bleeding rates, but it does not fit a formal PD model or provide numeric PD parameters (e.g., Emax, EC50) for the exposure-response relationship. |
-| popPK | Sarode_2020 | relevant | 9 | 2 | The paper describes a pharmacometric model for Factor X (FX) levels following 4F-PCC dosing, but specific numeric PK parameter values (CL, V, etc.) are not explicitly listed in the provided text. |
-| PGx | Scholz_2021 | not_relevant | 0 | 0 | The study investigates a drug-herb interaction (St. John's Wort) rather than a genetic variant or genotype effect. |
-| popPK | Serpa_2018 | irrelevant | 0 | 0 | The study evaluates the pharmacokinetics of apixaban (a factor Xa inhibitor), not coagulation factor X itself. |
+| popPK | Roldán_2012 | irrelevant | 0 | 0 | This is a review of anticoagulant drugs (rivaroxaban, apixaban, dabigatran) that target coagulation factor X or II, rather than a pharmacokinetic study of coagulation factor X itself. |
+| popPK | Sarode_2020 | relevant | 8 | 3 | The study develops pharmacometric models for Factor X (FX) disposition following 4F-PCC dosing to evaluate dose strategies, but the specific numeric parameter values (e.g., clearance, volume) are not explicitly listed in the provided text, appearing instead as model outputs or likely in supplementary tables. |
+| PGx | Scholz_2021 | not_relevant | 0 | 10 | The study investigates a drug-herb interaction (St. John's wort) rather than a specific genetic variant or genotype effect on rivaroxaban pharmacokinetics or pharmacodynamics. |
+| popPK | Serpa_2018 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of apixaban (an anticoagulant), not coagulation factor X as the subject drug. |
 | PD | Serpa_2018 | not_relevant | 3 | 2 | The study explicitly states that the pharmacodynamic response (dPT) showed no relationship to apixaban concentration, and no numeric PD parameters (Emax, EC50, etc.) were derived or reported. |
-| popPK | Sheehan_2006 | irrelevant | 0 | 0 | The study investigates the mechanism of inhibition of the intrinsic tenase complex (involving Factor X activation) by DHG and heparin, but does not report pharmacokinetic parameters (CL, V, etc.) for Factor X itself. |
-| popPK | Sinn_1990 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for phenprocoumon, not coagulation factor X, which is only measured as a biomarker of anticoagulant effect. |
+| popPK | Sheehan_2006 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of DHG's inhibition of the intrinsic tenase complex and does not report pharmacokinetic disposition parameters for Factor X. |
+| popPK | Sinn_1990 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of phenprocoumon in horses, using Factor X activity as a pharmacodynamic biomarker, not as the subject of a pharmacokinetic modeling study. |
 | popPK | Song_2014 | irrelevant | 0 | 0 | no_text gate: only 114 chars of text extracted (&lt; 400) |
 | popPK | Spiegel_2004 | irrelevant | 0 | 0 | The paper focuses on the mechanism of action and inhibition of coagulation factor VIII, not the pharmacokinetics of coagulation factor X. |
-| PGx | Srivastava_2016 | not_relevant | 0 | 0 | The text is a table of contents for a genome meeting and does not contain specific data or findings regarding pharmacogenomic effects on coagulation factor X. |
+| PGx | Srivastava_2016 | not_relevant | 0 | 0 | This is a table of contents for a conference; the abstracts are titles only and do not contain the data or specific pharmacokinetic/pharmacodynamic effects for coagulation factor X. |
 | popPK | Stucke-Ring_2016 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of doxorubicin and the pharmacodynamics of tTF-NGR, using Factor X only as a diagnostic assay substrate rather than as the subject drug for PK parameter estimation. |
+| popPK | Székely_2019 | irrelevant | 0 | 0 | The paper is a narrative review of factor XI inhibitors, not a pharmacokinetic study, and reports no quantitative disposition parameters for coagulation factor X. |
+| popPK | Traini_1994 | irrelevant | 0 | 0 | The study investigates the pharmacodynamics of low-molecular-weight dermatan sulphate, not the pharmacokinetics of coagulation factor X. |
 | popPK | Trellu_2013 | irrelevant | 2 | 1 | The study focuses on the pharmacodynamic bioequipotency of idraparinux (an FXa inhibitor) and reports PK parameters for the drug itself, not for the target protein coagulation_factor_x. |
-| popPK | Ueshima_2018 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for apixaban, not coagulation_factor_x. |
+| popPK | Ueshima_2018 | irrelevant | 0 | 0 | The study is about apixaban, not coagulation_factor_x. |
 | PD | Ueshima_2018 | not_relevant | 0 | 0 | The paper reports population pharmacokinetics (PK) and pharmacogenomics of apixaban, but does not report any pharmacodynamic (PD) or exposure-response relationship for coagulation factor X or any other PD endpoint. |
 | popPK | Ueshima_2019 | irrelevant | 0 | 0 | no_text gate: only 192 chars of text extracted (&lt; 400) |
-| popPK | Ueshima_2025 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of edoxaban, not coagulation_factor_x. |
+| popPK | Ueshima_2025 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for edoxaban, not coagulation_factor_x. |
 | PD | Ueshima_2025 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PPK) model for edoxaban, focusing on clearance and volume of distribution, but does not include any pharmacodynamic (PD) modeling, exposure-response analysis, or dose-response relationship for coagulation factor X or any other PD endpoint. |
-| popPK | Veyrat-Follet_2009 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for idraparinux (a factor Xa inhibitor), not for coagulation factor X itself. |
+| popPK | Verhaeghe_1998 | irrelevant | 0 | 0 | The paper is a review of low-molecular-weight heparins and discusses Factor Xa only as a target/mechanism of action, not providing PK parameters for Factor X itself. |
+| popPK | Veyrat-Follet_2009 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for idraparinux (an anticoagulant that inhibits Factor X), not for coagulation_factor_x itself. |
 | popPK | Wakui_2019 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic assessment of clot waveform analysis for anticoagulants, not a pharmacokinetic study reporting disposition parameters for coagulation factor X. |
 | popPK | Wallin_1988 | irrelevant | 0 | 0 | The paper is an in-vitro/mechanistic study on the carboxylation of factor X precursors, not a pharmacokinetic study reporting disposition parameters for coagulation_factor_x. |
 | PD | Wallin_1988 | not_relevant | 3 | 1 | The paper mentions a qualitative dose-response relationship between warfarin administration and factor X substrate labeling but does not provide numeric PD parameters, concentration-effect curves, or a formal PK/PD model. |
-| popPK | Weiss_2025 | irrelevant | 0 | 0 | The paper describes an in vitro aerosol exposure system (NAVETTA) and does not involve coagulation_factor_x or any pharmacokinetic parameters. |
+| popPK | Weiss_2025 | irrelevant | 0 | 0 | The paper describes an in vitro aerosol exposure system and its performance with reference particles, not a pharmacokinetic study of coagulation factor X. |
 | PD | Weiss_2025 | not_relevant | 0 | 0 | The paper describes an in vitro aerosol exposure system (NAVETTA) and reports qualitative cellular stress responses (viability, IL-8) to TiO2 nanoparticles, but it does not report a pharmacodynamic model, exposure-response relationship, or numeric PD parameters (e.g., EC50, Emax) for coagulation factor X or any other drug. |
-| PGx | Wheeler_2013 | not_relevant | 0 | 0 | The paper investigates the genetic architecture of paclitaxel-induced neuropathy, not the pharmacokinetics or pharmacodynamics of coagulation factor X. |
-| popPK | Wilkinson_2002 | irrelevant | 0 | 0 | The paper is a mechanistic in-vitro study of coagulation factor X activation kinetics, not a pharmacokinetic study of the drug coagulation_factor_x. |
+| PGx | Wheeler_2013 | not_relevant | 0 | 0 | The paper focuses on paclitaxel-induced neuropathy and cellular cytotoxicity, containing no pharmacogenomic data for coagulation factor X. |
+| popPK | Wilkinson_2002 | irrelevant | 0 | 0 | The paper reports in vitro enzymatic kinetics and complex assembly binding constants (Vmax, Km, Kd) for coagulation factor IXa mutants, not pharmacokinetic disposition parameters (CL, Vd, t1/2) for coagulation factor X. |
 | PD | Wilkinson_2002 | not_relevant | 0 | 0 | The paper reports biochemical kinetic parameters (Vmax, Km, Kd) for protein-protein interactions and complex assembly, not a pharmacodynamic exposure-response or dose-response relationship for a drug. |
+| popPK | Wong_2013 | irrelevant | 0 | 0 | The study is an in-vitro pharmacodynamic assay measuring the inhibitory potency of apixaban on thrombin generation, not a pharmacokinetic study of coagulation factor X disposition. |
+| popPK | Wychowski_2017 | irrelevant | 0 | 0 | The study is a clinical stewardship program evaluation regarding cost and outcome improvements for anticoagulants and does not report pharmacokinetic parameters for coagulation factor X. |
 | popPK | Yetman_2017 | irrelevant | 0 | 0 | The study focuses on the pharmacodynamic activity of apixaban (a Factor Xa inhibitor) and does not report pharmacokinetic parameters for coagulation factor X itself. |
-| popPK | Yoneyama_2018 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for emicizumab, not coagulation factor X. |
-| popPK | Yuan_2005 | irrelevant | 0 | 0 | The paper is a mechanistic in-vitro study of factor IXa (not factor X) mutations and heparin binding, reporting no pharmacokinetic parameters. |
+| popPK | Yoneyama_2018 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for emicizumab (a bispecific antibody), not for coagulation factor X, which is only mentioned as a binding target. |
+| popPK | Yoneyama_2023 | irrelevant | 0 | 0 | The paper is a review of emicizumab's pharmacology and does not report pharmacokinetic parameters for coagulation factor X. |
+| popPK | Yuan_2005 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study of factor IXa mutations and heparin binding, not a pharmacokinetic study of coagulation factor X. |
 | PD | Yuan_2005 | not_relevant | 3 | 2 | The paper reports mechanistic enzymatic kinetics and heparin affinity (EC50) for Factor IXa mutants, not a pharmacodynamic exposure-response relationship for Factor X or a drug's effect on Factor X levels. |
 | popPK | Zaiss_2011 | irrelevant | 0 | 0 | The paper investigates the mechanistic role of coagulation factor X in adenovirus transduction and does not report any pharmacokinetic parameters. |
 | popPK | Zajda_2022 | irrelevant | 0 | 0 | The study investigates the pharmacodynamic effects of metformin derivatives on coagulation factor X activity in vitro, rather than reporting pharmacokinetic disposition parameters for coagulation factor X itself. |
-| popPK | Zhang_1995 | irrelevant | 0 | 0 | The paper describes the purification and in-vitro enzymatic characterization of a venom protein that activates Factor X, not the pharmacokinetics of Factor X itself. |
+| popPK | Zhang_1995 | irrelevant | 0 | 0 | The paper describes an in-vitro biochemical purification and characterization of a venom enzyme that activates factor X, containing no pharmacokinetic parameters. |
 | PD | Zhang_1995 | not_relevant | 3 | 2 | The paper reports a Hill coefficient of 7.9 for Ca2+ dependence, but does not provide a concentration-effect curve, Emax, EC50, or other numeric PD parameters for the drug's effect on Factor X activation. |
 | popPK | Zhang_1998 | irrelevant | 0 | 0 | no_text gate: only 108 chars of text extracted (&lt; 400) |
-| popPK | Zhang_2024 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of frunexian (an FXIa inhibitor), not the pharmacokinetics of coagulation factor X itself. |
-| popPK | Zhou_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of milvexian (a Factor XI inhibitor), not coagulation factor X. |
-| popPK | Zou_2025 | irrelevant | 0 | 0 | no_text gate: only 82 chars of text extracted (&lt; 400) |
-| PD | Zou_2025 | not_relevant | 0 | 0 | The paper focuses on edoxaban, a direct factor Xa inhibitor, and does not report pharmacodynamic parameters for coagulation factor X itself. |
+| popPK | Zhang_2024 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of frunexian, a coagulation factor XI (FXI) inhibitor, not the pharmacokinetics of coagulation factor X itself. |
+| popPK | Zhou_1994 | irrelevant | 0 | 0 | The study investigates the binding kinetics of ligands (fibrinogen, factor X) to the CD11b integrin I-domain, not the population pharmacokinetic disposition of coagulation factor X. |
+| popPK | Zhou_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of milvexian (a factor XI inhibitor), not coagulation factor X. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2)</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-14 21:51 UTC</sub>

@@ -17,13 +17,13 @@
 
 ### Reviewer guidance
 
-**The sodium stibogluconate (antimony) record was rejected because the equilibrium dissociation constant KD was reported as 0.391 hr-1, a rate dimension, whereas a dissociation constant must carry concentration units.**
+**C5 dimension mismatch on a structural parameter.**
 
-In the Jaser_1995 abstract-only record for adults with cutaneous leishmaniasis, the parameter labelled 'kd' with value 0.391 hr-1 is defined as the equilibrium dissociation constant for drug-target binding (koff/kon), which is a ratio of concentrations, not a first-order rate; its hr-1 unit therefore fails the dimensional check on a structural parameter. The record was also built from the abstract alone, so the reported summary statistics stood in for a fitted model. The other antimony parameters (kabs 1.71 hr-1, CL 17.67 L/hr, V 45.7 L, fe 0.8, CLR 12.7 L/hr) are dimensionally consistent with their meanings. Extracted — antimony: kabs 1.71 hr-1, KD 0.391 hr-1, CL 17.7 L/hr, V 45.7 L, fe 0.8, CLR 12.7 L/hr.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — sodium stibogluconate: CLm/F 17.7 L/hr, Vm/F 45.7 L, CLR 12.7 L/hr, AUC 11.7 mg.hr/L; antimony: fe 0.8 hr-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sodium stibogluconate, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by glm-5.3-flash</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 > **Dose compound ≠ measured compound:** dosed `sodium stibogluconate`, measured `antimony`.
 
@@ -31,24 +31,23 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Jaser MA et al., Pharmacokinetics of antimony in patient…, Pharmaceutical research (1995)
   ·  DOI: [10.1023/a:1016251023427](https://doi.org/10.1023/a:1016251023427)
 
-<div class="pk-model-meta" hidden drug="sodium stibogluconate" model-id="SodiumStibogluconate_Jaser1995_reference" status="rejected" stale="false" population="adults with cutaneous leishmaniasis" measured-compound="antimony" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="sodium stibogluconate" model-id="SodiumStibogluconate_Jaser1995_reference" status="rejected" stale="false" population="adults with cutaneous leishmaniasis" measured-compound="antimony" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 6 extracted.
+**Parameters:** 5 extracted.
 
-**Parameterization:** mechanistic.
+**Parameterization:** CLm/F, Vm/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| ka | `Q49` · kabs | 1.71 | hr-1 | 0.000475 | [1] / [h] | not captured | exact (1.0) | Jaser_1995:abstract | — | not captured |
-| kd | `Q331` · KD | 0.391 | hr-1 | not captured | [1] / [h] | not captured | exact (1.0) | Jaser_1995:abstract | — | not captured |
-| TBC | `Q22` · CL | 17.67 | L/hr | 4.9083333333333335e-06 | [l] / [h] | not captured | llm (0.6) | Jaser_1995:abstract | — | not captured |
-| Vd | `Q61` · V | 45.7 | L | 0.045700000000000005 | [l] | not captured | exact (1.0) | Jaser_1995:abstract | — | not captured |
-| fraction of dose of Sb excreted in the urine | `Q44` · fe | 0.8 | not captured | not captured | not captured | not captured | llm (0.6) | Jaser_1995:abstract | — | not captured |
+| total body clearance (TBC) | `Q351` · CLm/F | 17.67 | L/hr | 4.9083333333333335e-06 | [l] / [h] | not captured | llm_confirmed (0.6) | Jaser_1995:abstract | — | not captured |
+| volume of distribution (Vd) | `Q367` · Vm/F | 45.7 | L | 0.045700000000000005 | [l] | not captured | exact (1.0) | Jaser_1995:abstract | — | not captured |
+| fraction of dose of Sb excreted in the urine | `Q44` · fe | 0.8 | hr-1 | not captured | [1] / [h] | not captured | llm (0.6) | Jaser_1995:abstract | — | not captured |
 | renal clearance | `Q26` · CLR | 12.7 | L/hr | 3.5277777777777775e-06 | [l] / [h] | not captured | exact (1.0) | Jaser_1995:abstract | — | not captured |
+| area-under-the-curve (AUC) | `Q88` · AUC | 11.7 | mg.hr/L | not captured | [[h] · [mg]] / [l] | not captured | llm (0.6) | Jaser_1995:abstract, Jaser_1995:abstract | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -58,13 +57,16 @@ Jaser MA et al., Pharmacokinetics of antimony in patient…, Pharmaceutical rese
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_mismatch: 'kd' → Q331 (unit '1 / [time]' vs ontology '[mass] / [length] ** 3') — route to review
-- dropped value-less row: 'AUC (low exposure)' (captured trailing unit 'low exposure' for child rows)
-- dropped value-less row: 'AUC (high exposure)' (captured trailing unit 'high exposure' for child rows)
-- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q22 (TBC); Q61 (Vd)
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=antimony
+- covariate category for kabs from footnote/prose kept as documentation only (['Jaser_1995:abstract'])
+- covariate category for kel from footnote/prose kept as documentation only (['Jaser_1995:abstract'])
+- unit_dimension_mismatch: 'fraction of dose of Sb excreted in the urine' → Q44 (unit '1 / [time]' vs ontology 'dimensionless') — route to review
+- metabolite antimony: Q22→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
+- metabolite antimony: Q61→Q367 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=antimony
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- template fit: none — noncompartmental model — not a compartmental parent–metabolite model
 - status held at route_to_review — not promoted
+- row roles (LLM): model_class=noncompartmental; 7/7 row label(s) assigned, 5 linked by role; re-tagged antimony→parent ×7
 - molar mass: no plausible PubChem entry for 'antimony' ('antimony') — left in mass units
 - molar mass: none found for 'antimony' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
@@ -113,18 +115,16 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Jaser_1995:abstract'] |
 | C5_dimension_Q26 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Jaser_1995:abstract'] |
-| C5_dimension_Q331 | fail | 1 / [time] | hr-1 | not captured | not captured | ['Jaser_1995:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Jaser_1995:abstract'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Jaser_1995:abstract'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 17.67 | not captured | not captured | ['Jaser_1995:abstract'] |
+| C5_dimension_Q351 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Jaser_1995:abstract'] |
+| C5_dimension_Q367 | pass | [length] ** 3 | not captured | not captured | not captured | ['Jaser_1995:abstract'] |
+| C5_dimension_Q44 | fail | 1 / [time] | hr-1 | not captured | not captured | ['Jaser_1995:abstract'] |
+| C5_dimension_Q88 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Jaser_1995:abstract', 'Jaser_1995:abstract'] |
+| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 17.7 L/h | not captured | not captured | ['Jaser_1995:abstract'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 45.7 L | not captured | not captured | ['Jaser_1995:abstract'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -133,7 +133,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_sodium_stibogluconate/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Jaser_1995` / `Jaser_1995::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_sodium_stibogluconate/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Jaser_1995` / `Jaser_1995::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -149,4 +149,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 08:53 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 19:49 UTC</sub>

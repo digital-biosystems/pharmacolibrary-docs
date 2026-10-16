@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C05C&quot;,&quot;href&quot;:&quot;atc/C05C.md&quot;},{&quot;label&quot;:&quot;rutoside&quot;,&quot;href&quot;:&quot;drugs/drug_rutoside/&quot;},{&quot;label&quot;:&quot;Dom\u00ednguez_2024 \u00b7 extract_equivalent_to_7_4_mg_kg_of_rutin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut&quot;,&quot;label&quot;:&quot;Dom\u00ednguez_2024_extract_equivalent_to_7_4_mg_kg_of_rutin&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rutoside/Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut&quot;,&quot;label&quot;:&quot;Dom\u00ednguez_2024_extract_equivalent_to_7_4_mg_kg_of_rutin&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rutoside/Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # rutoside — `Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.158), gpt-oss:120b (partly confirmed, agreement 0.211). Primary extraction retained.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.158), gpt-oss:120b (partly confirmed, agreement 0.211). Primary extraction retained.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -19,21 +19,19 @@
 
 ### Reviewer guidance
 
-**The rutoside (rutin) record was rejected because its structure is a one-compartment parent-only model, while the measured analyte is rutin with quercetin as a metabolite, and the model output is not the measured rutin compartment.**
+**T3_output_variable; t3_topology_template.**
 
-The record declares a parent–metabolite structure (rutin forming quercetin in the central compartment), but the fitted topology is a single-compartment model, so the required three-compartment parent–metabolite structure was not built. The model output is the central compartment amount rather than the measured analyte compartment for rutin. Additionally, a reported unit could not be converted to SI, so that parameter reached the model builder without an SI value, and the second reader disputed several values (e.g., V 0.32 vs none, k12 4.02 vs none, MRT 22.12 vs none). Extracted — quercetin: AUC∞ 8.27e+03 ng ·h/mL, Cmax 614 ng/mL, Frel 12 Equivalent to 7.4 mg/kg of Rutin; rutoside: kel 0.043 h−1, MRT 22.1 h, V 0.084 L/kg, CL 0.079 L/h/kg.
+A reported unit could not be converted (AUC∞, Cmax and Frel), so that value has no SI equivalent. Extracted — quercetin: AUC∞ 8.27e+03 ng ·h/mL, Cmax 614 ng/mL, Frel 12 Equivalent to 7.4 mg/kg of Rutin; rutoside: kel 0.043 h−1, MRT 22.1 h, V 0.084 L/kg, CL 0.079 L/h/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has rutin, the second reading unknown; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by glm-5.3-flash</sub>
-
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:31:40.253887+00:00) predates the upstream re-run (2026-10-06 22:20:12.420883+00:00). Current validate status: `extracted`.
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Domínguez Moré GP et al., Rutin and Physalis peruviana Extract: P…, Pharmaceutics (2024)
   ·  DOI: [10.3390/pharmaceutics16101241](https://doi.org/10.3390/pharmaceutics16101241)
 
-<div class="pk-model-meta" hidden drug="rutoside" model-id="Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut" status="extracted" stale="true" population="New Zealand rabbits" measured-compound="rutin" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="rutoside" model-id="Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut" status="rejected" stale="false" population="New Zealand rabbits" measured-compound="rutin" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 7 extracted.
@@ -41,6 +39,8 @@ Domínguez Moré GP et al., Rutin and Physalis peruviana Extract: P…, Pharmace
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | AUC0–∞ (ng ·h/mL) | `Q17` · AUC∞ | 8273.24 | ng ·h/mL | not captured | [[h] · [ng]] / [ml] | not captured | exact (1.0) | Domínguez_2024_table_2:row0:col2 | — | not captured |
@@ -195,28 +195,17 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_rutoside/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Domínguez_2024` / `Domínguez_2024::extract_equivalent_to_7_4_mg_kg_of_rutin`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_rutoside/models/modelica/Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_rutoside/models/modelica/Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_rutoside/models/modelica/Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_rutoside/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Domínguez_2024` / `Domínguez_2024::extract_equivalent_to_7_4_mg_kg_of_rutin`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_rutoside/models/modelica/Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_rutoside/models/modelica/Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_rutoside/models/modelica/Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_rutoside/Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut/Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut_modelica.zip" download>Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut_modelica.zip</a> <span class="pk-size">(5.3 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_rutoside/Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut/Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut_fmi.zip" download>Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_rutoside/Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut/Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut_matlab.zip" download>Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_rutoside/Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut/Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut_matlab_simbio.zip" download>Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_rutoside/Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut/Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut_sbml.zip" download>Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_rutoside/Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut/Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut_cellml.zip" download>Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_rutoside/Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut/Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut.svg" alt="Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -229,4 +218,4 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 22:20 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 00:03 UTC</sub>

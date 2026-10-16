@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01D&quot;,&quot;href&quot;:&quot;atc/J01D.md&quot;},{&quot;label&quot;:&quot;tebipenem pivoxil&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;TebipenemPivoxil_Ganesan2023_reference&quot;,&quot;label&quot;:&quot;Ganesan_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tebipenem_pivoxil/TebipenemPivoxil_Ganesan2023_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # tebipenem pivoxil
 
@@ -28,13 +27,19 @@ Tebipenem pivoxil is an investigational carbapenem (beta-lactam) antibacterial b
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 11:48 | 1:49 | 1/0/0 | 0/0/0 | 0/0/0 | 94,174/4,220 | einfracz / qwen3.8-27b | 3 | 0/3 | 3/0 | 0 |
+| 2026-10-15 00:37 | 2:34 | 0/0/1 | 1/0/0 | 0/0/0 | 151,239/11,687 | einfracz / qwen3.8-27b | 3 | 0/3 | 3/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.312). Primary extraction retained.">cross-check: disputed</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub> | [Ganesan_2023_reference](drugs/drug_tebipenem_pivoxil/TebipenemPivoxil_Ganesan2023_reference.md) | ▶ model + simulator | 2-compartment, oral | 6 (+2 cov.) | Ganesan H et al., Population Pharmacokinetic Analyses for…, Antimicrobial agents and ch… (2023) | [10.1128/aac.01451-22](https://doi.org/10.1128/aac.01451-22) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.312). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q27 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Ganesan_2023_reference](drugs/drug_tebipenem_pivoxil/TebipenemPivoxil_Ganesan2023_reference.md) | — | 2-compartment (no model) | 7 (+2 cov.) | Ganesan H et al., Population Pharmacokinetic Analyses for…, Antimicrobial agents and ch… (2023) | [10.1128/aac.01451-22](https://doi.org/10.1128/aac.01451-22) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Matsumoto_2014_BC](drugs/drug_tebipenem_pivoxil/pd_Matsumoto_2014_BC.md) | viable in vivo bacterial counts ← tebipenem · disease-progression model | — | Matsumoto K et al., Prediction of clinical bacteriological…, The Japanese journal of ant… (2014) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,28 +51,29 @@ Tebipenem pivoxil is an investigational carbapenem (beta-lactam) antibacterial b
 
 - **PubMed hits:** 7 matched, 7 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
 
-_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Sato_2008.pdf` | Sato N et al., Population pharmacokinetics of tebipene…, Drug metabolism and pharmac… (2008) | popPK | 10 | [10.2133/dmpk.23.434](https://doi.org/10.2133/dmpk.23.434) | [19122338](https://pubmed.ncbi.nlm.nih.gov/19122338) | The paper is a population PK study of tebipenem pivoxil, but the specific numeric parameter estimates (CL/F, Vd/F values) are not provided in the extracted text. |
+| `Sato_2008.pdf` | Sato N et al., Population pharmacokinetics of tebipene…, Drug metabolism and pharmac… (2008) | popPK | 10 | [10.2133/dmpk.23.434](https://doi.org/10.2133/dmpk.23.434) | [19122338](https://pubmed.ncbi.nlm.nih.gov/19122338) | The paper is a population PK study for tebipenem pivoxil in pediatric humans, but the evidence provided contains only a summary of the model and covariates without specific numeric parameter values (e.g., median CL/F, Vd/F, ka). |
+| `Baba_2009.pdf` | Baba S et al., [Clinical efficacy, safety and PK-PD an…, The Japanese journal of ant… (2009) | popPK | 5 | not captured | [19673357](https://pubmed.ncbi.nlm.nih.gov/19673357) | The study reports PK-PD indices (AUCf/MIC, Cmaxf/MIC) for the active metabolite of tebipenem pivoxil in humans, but lacks absolute quantitative disposition parameters like CL, V, or half-life. |
 
-<sub>queue written 2026-10-07T11:47:06.524402+00:00</sub>
+<sub>queue written 2026-10-15T00:35:27.731299+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Baba_2009 | irrelevant | 3 | 0 | The paper focuses on clinical efficacy and PK-PD indices (AUC/MIC, Cmax/MIC) rather than reporting specific quantitative pharmacokinetic disposition parameters (CL, V, ka, half-life) for tebipenem pivoxil. |
-| popPK | Hao_2024 | relevant | 3 | 5 | The study reports non-compartmental PK parameters (Cmax, AUC, t1/2) for tebipenem pivoxil in humans, but lacks clearance (CL) or volume of distribution (V) values required for compartmental or population PK modeling. |
-| popPK | Matsumoto_2014 | irrelevant | 4 | 1 | The study is a PK-PD simulation that uses population PK parameters but does not report specific numeric values for clearance, volume, or other disposition parameters in the provided evidence. |
-| popPK | Sato_2008 | relevant | 10 | 0 | The paper is a population PK study of tebipenem pivoxil, but the specific numeric parameter estimates (CL/F, Vd/F values) are not provided in the extracted text. |
-| popPK | Zhang_2026 | relevant | 8 | 2 | The paper uses a population PK model for tebipenem (Equations 6 and 7 are provided) to simulate PK/PD in children, but it does not report the estimated parameter values (clearance, volume) or the observed PK data, relying instead on a previously published model and simulation results. |
+| popPK | Baba_2009 | relevant | 5 | 1 | The study reports PK-PD indices (AUCf/MIC, Cmaxf/MIC) for the active metabolite of tebipenem pivoxil in humans, but lacks absolute quantitative disposition parameters like CL, V, or half-life. |
+| popPK | Hao_2024 | irrelevant | 4 | 8 | The study is a bioequivalence trial using a non-compartmental model for tebipenem (the metabolite), reporting descriptive statistics (Cmax, AUC, t1/2) rather than the specific population-pharmacokinetic parameters (CL, V, Q, ka) required for a population PK model. |
+| popPK | Matsumoto_2014 | irrelevant | 2 | 0 | The paper is a PK-PD modeling simulation using "population pharmacokinetic parameters" obtained from other sources, but it does not report or extract the actual numeric PK values (CL, V, ka) for tebipenem pivoxil itself. |
+| popPK | Sato_2008 | relevant | 10 | 0 | The paper is a population PK study for tebipenem pivoxil in pediatric humans, but the evidence provided contains only a summary of the model and covariates without specific numeric parameter values (e.g., median CL/F, Vd/F, ka). |
+| popPK | Zhang_2026 | relevant | 7 | 4 | The paper uses a published population PK model for tebipenem (providing parameter equations but not the full distribution of values) to simulate PK/PD outcomes for tebipenem pivoxil in pediatric humans. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 11:47 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-15 00:35 UTC</sub>

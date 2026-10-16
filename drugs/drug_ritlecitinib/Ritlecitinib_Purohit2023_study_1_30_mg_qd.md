@@ -18,7 +18,7 @@
 
 **Only clearance was extracted — no volume.**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. A reported unit could not be converted (AUCt, AUClast and Cmax), so that value has no SI equivalent. Extracted — ritlecitinib: AUCt 454 ng·h/mL, AUClast 449 ng·h/mL, CL/F 66 L/h, Cmax 194 ng/mL.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. A reported unit could not be converted (AUClast and Cmax), so that value has no SI equivalent. Extracted — ritlecitinib: AUClast 454 ng·h/mL, CL/F 66 L/h, Cmax 194 ng/mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of auc0-24: this record has 454.5, the second reading none; it also differs on 3 more fields. That field does not shape the model.
 
@@ -28,10 +28,10 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Purohit V et al., Leveraging Prior Healthy Participant Ph…, The AAPS journal (2023)
   ·  DOI: [10.1208/s12248-023-00792-8](https://doi.org/10.1208/s12248-023-00792-8)
 
-<div class="pk-model-meta" hidden drug="ritlecitinib" model-id="Ritlecitinib_Purohit2023_study_1_30_mg_qd" status="needs_review" stale="false" population="healthy adults and patients with renal or hepatic impairment" measured-compound="ritlecitinib" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="ritlecitinib" model-id="Ritlecitinib_Purohit2023_study_1_30_mg_qd" status="needs_review" stale="false" population="healthy adults and patients with rheumatoid arthritis" measured-compound="ritlecitinib" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 4 extracted.
+**Parameters:** 3 extracted.
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -40,8 +40,7 @@ Purohit V et al., Leveraging Prior Healthy Participant Ph…, The AAPS journal (
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| AUC0-24, ng·h/mL | `Q19` · AUCt | 454.5 | ng·h/mL | not captured | [[h] · [ng]] / [ml] | not captured | llm (0.6) | Purohit_2023_table_2:row1:col1, Purohit_2023_table_2:row1:col2 | — | not captured |
-| AUClast, ng·h/mL | `Q74` · AUClast | 448.6 | ng·h/mL | not captured | [[h] · [ng]] / [ml] | not captured | exact (1.0) | Purohit_2023_table_2:row2:col1, Purohit_2023_table_2:row2:col2 | — | not captured |
+| AUC0-24, ng·h/mL | `Q74` · AUClast | 454.5 | ng·h/mL | not captured | [[h] · [ng]] / [ml] | not captured | llm (0.6) | Purohit_2023_table_2:row1:col1, Purohit_2023_table_2:row1:col2 | — | not captured |
 | CL/F, L/h | `Q27` · CL/F | 65.96 | L/h | 1.832222222222222e-05 | [l] / [h] | not captured | exact (1.0) | Purohit_2023_table_2:row3:col1, Purohit_2023_table_2:row3:col2 | — | not captured |
 | Cmax, ng/mL | `Q32` · Cmax | 194.3 | ng/mL | not captured | [ng] / [ml] | not captured | exact (1.0) | Purohit_2023_table_2:row4:col1, Purohit_2023_table_2:row4:col2 | — | not captured |
 
@@ -50,16 +49,26 @@ Purohit V et al., Leveraging Prior Healthy Participant Ph…, The AAPS journal (
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
+### Unresolved rows _(no Q-code or no value — not parameters)_
+| label (paper) | Q-code | value | link |
+|---|---|---|---|
+| Parametera | Q310 | not captured | llm |
+
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'Parametera' — extend the ontology if this is a real PK parameter (source ['Purohit_2023_table_2:row0:col1', 'Purohit_2023_table_2:row0:col2'])
+- unit_dimension_unknown: '30 mg QD' (D1)
+- dropped duplicate Q74 ('AUClast, ng·h/mL', value '448.6') — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=ritlecitinib
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at route_to_review — not promoted
 - population split: 'study 1 (30 mg qd)' subgroup of Purohit_2023 (paper reports 2 populations: study 1 (30 mg qd), study 2 (50 mg qd))
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
+- table Tab4: representations disagree; selected evidence retained, not merged
+- table Purohit_2023_table_2: unparsed_numeric_cell
 - companion parameter table 2 transcribed (15 record(s))
 - LLM selected parameter table(s) 2, 4
 
@@ -93,13 +102,12 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q19 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Purohit_2023_table_2:row1:col1', 'Purohit_2023_table_2:row1:col2'] |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Purohit_2023_table_2:row3:col1', 'Purohit_2023_table_2:row3:col2'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Purohit_2023_table_2:row4:col1', 'Purohit_2023_table_2:row4:col2'] |
-| C5_dimension_Q74 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Purohit_2023_table_2:row2:col1', 'Purohit_2023_table_2:row2:col2'] |
+| C5_dimension_Q74 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Purohit_2023_table_2:row1:col1', 'Purohit_2023_table_2:row1:col2'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 66 L/h | not captured | not captured | ['Purohit_2023_table_2:row3:col1', 'Purohit_2023_table_2:row3:col2'] |
@@ -111,7 +119,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ritlecitinib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Purohit_2023` / `Purohit_2023::study_1_30_mg_qd`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ritlecitinib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Purohit_2023` / `Purohit_2023::study_1_30_mg_qd`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -137,4 +145,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 00:23 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 00:12 UTC</sub>

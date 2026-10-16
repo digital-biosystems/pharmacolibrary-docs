@@ -19,13 +19,13 @@
 
 ### Reviewer guidance
 
-**Mycophenolic acid model fails because peripheral volume is uncovered and the simulated terminal half-life of 1.22 hours deviates from the paper's 17.0 hours.**
+**The model does not reproduce the paper's terminal half-life (paper 17, model 1.22); the covariate scenarios were not simulated (+1 more).**
 
-The parameter coverage check found that the peripheral volume (V2/F) was neither emitted nor included in the defaulted list. The terminal half-life check calculated a ratio of 0.0716 because the model produced 1.2179307980221128 hours against an expected 17.0 hours. Additionally, the record defines covariate effects, but the simulation only ran the reference individual, leaving those scenarios unexercised. Extracted — mycophenolic acid: CLm/F 14.8 L/h, kabs 2 h−1, V1/F 6 L, V2/F 269 L, Q/F 15.4 L/h.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. The base model was simulated, not the covariate effects the record defines. Extracted — mycophenolic acid: CLm/F 14.8 L/h, kabs 2 h−1, V1/F 6 L, V2/F 269 L, Q/F 15.4 L/h.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 > **Dose compound ≠ measured compound:** dosed `mycophenolate mofetil`, measured `mycophenolic acid`.
 
@@ -45,11 +45,11 @@ Wei Y et al., Population pharmacokinetics of mycophen…, Frontiers in pharmacol
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F (L/h) | `Q351` · CLm/F | 14.8 | L/h | 4.111111111111111e-06 | [l] / [h] | not captured | exact (1.0) | T3:row3:col1, T3:row3:col2, T3:row3:col4 | — | 24.5 (None% RSE) |
-| Ka (h−1) | `Q49` · kabs | 2.0 | h−1 | 0.0005555555555555556 | [1] / [h] | not captured | exact (1.0) | T3:row4:col1, T3:row4:col2, T3:row4:col4 | — | not captured |
-| Vc/F (L) | `Q290` · V1/F | 6.0 | L | 0.006 | [l] | not captured | exact (1.0) | T3:row5:col1, T3:row5:col2, T3:row5:col4 | — | not captured |
-| Vp/F (L) | `Q82` · V2/F | 269 | L | 0.269 | [l] | not captured | exact (1.0) | T3:row6:col1, T3:row6:col4 | — | not captured |
-| Q/F (L/h) | `Q69` · Q/F | 15.4 | L/h | 4.277777777777778e-06 | [l] / [h] | not captured | exact (1.0) | T3:row7:col1, T3:row7:col2, T3:row7:col4 | — | 117.9 (None% RSE) |
+| CL/F (L/h) | `Q351` · CLm/F | 14.8 | L/h | 4.111111111111111e-06 | [l] / [h] | not captured | exact (1.0) | T3:row3:col1, T3:row3:col2 | — | 24.5 (None% RSE) |
+| Ka (h−1) | `Q49` · kabs | 2.0 | h−1 | 0.0005555555555555556 | [1] / [h] | not captured | exact (1.0) | T3:row4:col1, T3:row4:col2 | — | not captured |
+| Vc/F (L) | `Q290` · V1/F | 6.0 | L | 0.006 | [l] | not captured | exact (1.0) | T3:row5:col1, T3:row5:col2 | — | not captured |
+| Vp/F (L) | `Q82` · V2/F | 269 | L | 0.269 | [l] | not captured | exact (1.0) | T3:row6:col1 | — | not captured |
+| Q/F (L/h) | `Q69` · Q/F | 15.4 | L/h | 4.277777777777778e-06 | [l] / [h] | not captured | exact (1.0) | T3:row7:col1, T3:row7:col2 | — | 117.9 (None% RSE) |
 | θDOSE | `Q900` · θDOSE | 0.452 | not captured | not captured | not captured | not captured | not captured (not captured) | not captured | — | not captured |
 
 <details class="legend">
@@ -64,26 +64,29 @@ Wei Y et al., Population pharmacokinetics of mycophen…, Frontiers in pharmacol
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'OFV' — extend the ontology if this is a real PK parameter (source ['T3:row2:col1', 'T3:row2:col4'])
+- table representations disagree for 'CL/F (L/h)'; source reconciliation required
+- table representations disagree for 'Ka (h−1)'; source reconciliation required
+- table representations disagree for 'Vc/F (L)'; source reconciliation required
+- table representations disagree for 'Vp/F (L)'; source reconciliation required
+- table representations disagree for 'Q/F (L/h)'; source reconciliation required
+- table representations disagree for 'θDOSE'; source reconciliation required
+- table representations disagree for 'IIV CL/F (%)'; source reconciliation required
+- table representations disagree for 'IIV Q/F (%)'; source reconciliation required
+- table representations disagree for 'RV (%)'; source reconciliation required
 - kept covariate coefficient θDOSE=0.452 (covariate DOSE) — not an ontology parameter
-- dropped unlinked row (NIL): 'RV (%)' — extend the ontology if this is a real PK parameter (source ['T3:row11:col1', 'T3:row11:col2', 'T3:row11:col3', 'T3:row11:col4', 'T3:row11:col6'])
+- routed 'RV (%)' → Q315 (sigma) to residual_error — variability estimate, not a structural parameter
 - metabolite mycophenolic acid: Q27→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=mycophenolic acid
 - template fit: none — only the metabolite is modelled — no parent compartment
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
-- row roles (LLM): model_class=compartmental; 10/10 row label(s) assigned, 14 linked by role
+- status held at route_to_review — not promoted
+- row roles (LLM): model_class=compartmental; 9/9 row label(s) assigned, 9 linked by role
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- unparsed cell T3:row2:col5 = '-162.5, -45.2'
-- unparsed cell T3:row3:col5 = '11.0, 17.6'
-- unparsed cell T3:row4:col5 = '1.4, 3.5'
-- unparsed cell T3:row5:col5 = '3.1, 12.7'
-- unparsed cell T3:row7:col5 = '6.8, 31.8'
-- unparsed cell T3:row8:col5 = '0.183, 0.934'
-- unparsed cell T3:row9:col5 = '8.3, 33.5'
-- unparsed cell T3:row10:col5 = '46.4, 161.2'
-- unparsed cell T3:row11:col5 = '41.4, 56.1'
+- table T3: ragged_grid
+- table T3: unparsed_numeric_cell
+- table T3: representations disagree; selected evidence retained, not merged
 - LLM selected parameter table(s) 3
 
 ## Validation
@@ -110,15 +113,15 @@ _All readers agree on the compared fields of this record._
 | C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['T3:row5:col1', 'T3:row5:col2', 'T3:row5:col4'] |
-| C5_dimension_Q351 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T3:row3:col1', 'T3:row3:col2', 'T3:row3:col4'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['T3:row4:col1', 'T3:row4:col2', 'T3:row4:col4'] |
-| C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T3:row7:col1', 'T3:row7:col2', 'T3:row7:col4'] |
-| C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['T3:row6:col1', 'T3:row6:col4'] |
+| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['T3:row5:col1', 'T3:row5:col2'] |
+| C5_dimension_Q351 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T3:row3:col1', 'T3:row3:col2'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['T3:row4:col1', 'T3:row4:col2'] |
+| C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T3:row7:col1', 'T3:row7:col2'] |
+| C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['T3:row6:col1'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q290 | pass | volume within physiological range | 6 L | not captured | not captured | ['T3:row5:col1', 'T3:row5:col2', 'T3:row5:col4'] |
-| C9_phys_window_Q82 | pass | volume within physiological range | 269 L | not captured | not captured | ['T3:row6:col1', 'T3:row6:col4'] |
+| C9_phys_window_Q290 | pass | volume within physiological range | 6 L | not captured | not captured | ['T3:row5:col1', 'T3:row5:col2'] |
+| C9_phys_window_Q82 | pass | volume within physiological range | 269 L | not captured | not captured | ['T3:row6:col1'] |
 
 **Reviewer per-scenario checks:**
 
@@ -140,10 +143,10 @@ _All readers agree on the compared fields of this record._
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_mycophenolic_acid/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Wei_2022` / `Wei_2022::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_mycophenolic_acid/models/modelica/MycophenolicAcid_Wei2022_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_mycophenolic_acid/models/modelica/MycophenolicAcid_Wei2022_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_mycophenolic_acid/models/modelica/MycophenolicAcid_Wei2022_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_mycophenolic_acid/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Wei_2022` / `Wei_2022::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_mycophenolic_acid/models/modelica/MycophenolicAcid_Wei2022_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_mycophenolic_acid/models/modelica/MycophenolicAcid_Wei2022_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_mycophenolic_acid/models/modelica/MycophenolicAcid_Wei2022_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -152,7 +155,7 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_mycophenolic_acid/MycophenolicAcid_Wei2022_reference/MycophenolicAcid_Wei2022_reference_modelica.zip" download>MycophenolicAcid_Wei2022_reference_modelica.zip</a> <span class="pk-size">(4.9 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_mycophenolic_acid/MycophenolicAcid_Wei2022_reference/MycophenolicAcid_Wei2022_reference_modelica.zip" download>MycophenolicAcid_Wei2022_reference_modelica.zip</a> <span class="pk-size">(5.0 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_mycophenolic_acid/MycophenolicAcid_Wei2022_reference/MycophenolicAcid_Wei2022_reference_fmi.zip" download>MycophenolicAcid_Wei2022_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
@@ -161,7 +164,7 @@ _All readers agree on the compared fields of this record._
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_mycophenolic_acid/MycophenolicAcid_Wei2022_reference/MycophenolicAcid_Wei2022_reference.svg" alt="MycophenolicAcid_Wei2022_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_mycophenolic_acid/MycophenolicAcid_Wei2022_reference/MycophenolicAcid_Wei2022_reference.svg" alt="MycophenolicAcid_Wei2022_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -174,4 +177,4 @@ _All readers agree on the compared fields of this record._
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 00:36 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 18:20 UTC</sub>

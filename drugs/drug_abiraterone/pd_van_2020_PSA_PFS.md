@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01X&quot;,&quot;href&quot;:&quot;atc/L01X.md&quot;},{&quot;label&quot;:&quot;abiraterone&quot;,&quot;href&quot;:&quot;drugs/drug_abiraterone/&quot;},{&quot;label&quot;:&quot;van_2020 \u00b7 PD prostate-specific antigen (PSA) independent progression-free survival&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Abiraterone_Stuyckens2014_final&quot;,&quot;label&quot;:&quot;Stuyckens_2014_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abiraterone/Abiraterone_Stuyckens2014_final.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abiraterone_Stuyckens2014_final_chemotherapy_pretreated_pati&quot;,&quot;label&quot;:&quot;Stuyckens_2014_final_chemotherapy_pretreated_patients_final_model_1&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abiraterone/Abiraterone_Stuyckens2014_final_chemotherapy_pretreated_pati.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # prostate-specific antigen (PSA) independent progression-free survival — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span>
@@ -14,19 +13,19 @@
 
 ## Record summary
 
-**As extracted:** Abiraterone (concentrations from the PK model of Stuyckens_2014::final) drives prostate-specific antigen (PSA) independent progression-free survival (in months): time-to-event model.
+**As extracted:** Abiraterone (concentrations from the PK model of Russu_2025) drives prostate-specific antigen (PSA) independent progression-free survival: time-to-event model.
 
 **Model:** No model was generated from this record.
 
-> The record links abiraterone plasma concentrations (ng/mL) to prostate-specific antigen (PSA) independent progression-free survival (months) via a time-to-event model with an inhibitory effect, but the paper does not provide the specific mechanism or rate parameters. The only reported value is a hazard ratio of 0.44.
+> The record describes a time-to-event model where abiraterone concentration acts on PSA-independent progression-free survival via a proportional inhibition mechanism characterized by a hazard ratio of 0.44. No specific mechanism (e.g., production or elimination inhibition) or additional potency parameters are provided as the full text is unavailable.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `van_2020`
 - **model family:** `tte`
 - **driver:** `cited_pk`
 - **tier:** descriptive
-- **effect:** inhibition/unknown
+- **effect:** inhibition/proportional
 
 ## Citation
 van Nuland M et al., Exposure-response analyses of abiratero…, Prostate cancer and prostat… (2020)
@@ -35,7 +34,7 @@ van Nuland M et al., Exposure-response analyses of abiratero…, Prostate cancer
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| — | hazard ratio | `Q100` · not captured | 0.44 | not captured | not captured | nil (not captured) | van_2020:pdv3 |
+| PD (effect) | hazard ratio | `Q342` · not captured | 0.44 | not captured | not captured | llm (not captured) | van_2020:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>

@@ -106,7 +106,7 @@ Beck D et al., Population Pharmacokinetics of Elagolix…, Clinical pharmacokine
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_elagolix/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Beck_2022` / `Beck_2022::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_elagolix/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Beck_2022` / `Beck_2022::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

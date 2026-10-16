@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;voclosporin&quot;,&quot;href&quot;:&quot;drugs/drug_voclosporin/&quot;},{&quot;label&quot;:&quot;Mayo_2014 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Voclosporin_AbdelKahaar2023_reference&quot;,&quot;label&quot;:&quot;Abdel-Kahaar_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_voclosporin/Voclosporin_AbdelKahaar2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Voclosporin_AbdelKahaar2023_reference&quot;,&quot;label&quot;:&quot;Abdel-Kahaar_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_voclosporin/Voclosporin_AbdelKahaar2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Mayo_2014_CNa&quot;,&quot;label&quot;:&quot;Mayo_2014 \u00b7 CNa&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_voclosporin/pd_Mayo_2014_CNa.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,13 +17,13 @@
 
 ### Reviewer guidance
 
-**Voclosporin total clearance was recorded in milliliters per minute, conflicting with the dimension requirements for a structural parameter.**
+**C5 dimension mismatch on a structural parameter.**
 
-The record lists total clearance as 717 mL min(-1) but fails a dimensional consistency check. The record was constructed from the abstract alone, so these summary statistics stand in for a fitted model. This mismatch prevented the validation of the model structure. Extracted — voclosporin: CL/F 717 mL min(-1), V 2.01e+03 mL.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — voclosporin: CL/F 717 mL min(-1), V 2.01e+03 mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has voclosporin, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Mayo PR et al., Population PKPD of voclosporin in renal…, Journal of clinical pharmac… (2014)
@@ -41,8 +41,8 @@ Mayo PR et al., Population PKPD of voclosporin in renal…, Journal of clinical 
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F | `Q27` · CL/F | 717 | mL min(-1) | 1.1949999999999999e-05 | [ml] / [min] | not captured | exact (1.0) | Mayo_2014:abstract | — | not captured |
-| V1 | `Q61` · V | 2010 | mL | 0.00201 | [ml] | not captured | exact (1.0) | Mayo_2014:abstract | — | not captured |
+| oral clearance (CL/F) | `Q27` · CL/F | 717 | mL min(-1) | 1.1949999999999999e-05 | [ml] / [min] | not captured | exact (1.0) | Mayo_2014:abstract | — | not captured |
+| first compartment volume of distribution (V1) | `Q61` · V | 2010 | mL | 0.00201 | [ml] | not captured | llm_corrected (0.6) | Mayo_2014:abstract | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -53,15 +53,15 @@ Mayo PR et al., Population PKPD of voclosporin in renal…, Journal of clinical 
 | label (paper) | Q-code | value | link |
 |---|---|---|---|
 | CLi | Q3 | not captured | llm |
+| S0i | Q900 | not captured | llm |
 
 ## Departures & gaps
 
 **Interpretation flags:**
 - unit_dimension_mismatch: 'CLi' → Q3 (unit '[length] ** 3 / [time]' vs ontology '[length] ** 3 / [time] / [mass]') — route to review
-- dropped unlinked row (NIL): 'S0i' — extend the ontology if this is a real PK parameter (source ['Mayo_2014:abstract'])
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=voclosporin
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- 1C volume normalization: Q63→Q61 (single-compartment model has no central/peripheral split; 'V1' is the general volume)
+- 1C volume normalization: Q63→Q61 (single-compartment model has no central/peripheral split; 'first compartment volume of distribution (V1)' is the general volume)
 - status held at route_to_review — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
@@ -121,7 +121,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_voclosporin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Mayo_2014` / `Mayo_2014::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_voclosporin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Mayo_2014` / `Mayo_2014::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -137,4 +137,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 01:06 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 23:35 UTC</sub>

@@ -17,9 +17,9 @@
 
 **Model:** No model was generated from this record.
 
-> Free elranatamab exposure (Cave,t, ng/mL) was modeled as a log-transformed covariate in a Cox proportional-hazards model for PFS; higher exposure was associated with longer PFS. The paper does not specify a production, elimination, or direct-response mechanism, nor does it report potency or rate values for this relationship.
+> A Cox proportional hazards model relates the log-transformed free elranatamab concentration (Cave,t, ng/mL) to progression-free survival, where higher exposure is associated with longer PFS. The paper does not state specific potency or rate parameters such as IC50, Emax, kin, or kout, nor does it describe a specific PD mechanism beyond the exposure-response association.
 >
-> <sub>Source-based summary by gpt-6-luna from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Lon_2025`
 - **model family:** `tte`
@@ -34,9 +34,7 @@ Lon HK et al., Population Exposure-Response Efficacy A…, Targeted oncology (20
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| model term | Log free (Cave,t) | `Q900` · not captured | − 0.3422 | not captured | not captured | llm (not captured) | Lon_2025:pdv3 |
-| model term | Log baseline sBCMA | `Q900` · not captured | 1.065 | not captured | not captured | llm (not captured) | Lon_2025:pdv3 |
-| model term | With prior BCMA therapy | `Q900` · not captured | 0.7482 | not captured | not captured | llm (not captured) | Lon_2025:pdv3 |
+| PD (effect) | Log free (Cave,t) (ng/mL) | `Q335` · not captured | - 0.3422 | not captured | not captured | llm (not captured) | Lon_2025:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>

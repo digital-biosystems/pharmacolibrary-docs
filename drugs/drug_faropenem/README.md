@@ -18,7 +18,7 @@ Faropenem is an investigational beta-lactam antibacterial drug, studied for trea
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 11:05 | 0:17 | 0/0/0 | 1/0/1 | 0/0/0 | 17,720/1,342 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
+| 2026-10-15 00:06 | 0:11 | 0/0/0 | 1/0/0 | 0/0/0 | 15,280/1,362 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
 
 ## popPK records
 
@@ -28,8 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Gumbo_2020_Mab](drugs/drug_faropenem/pd_Gumbo_2020_Mab.md) | Mycobacterium abscessus subspecies abscessus (Mab) bacterial load ← faropenem · direct sigmoid Emax (Hill) effect | — | Gumbo T et al., Repurposing drugs for treatment of Myco…, The Journal of antimicrobia… (2020) | [10.1093/jac/dkz523](https://doi.org/10.1093/jac/dkz523) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Gill_2010_survival](drugs/drug_faropenem/pd_Gill_2010_survival.md) | survival ← faropenem · direct Emax (saturable) effect | — | Gill SC et al., Pharmacokinetic-pharmacodynamic assessm…, Antimicrobial agents and ch… (2010) | [10.1128/AAC.00737-08](https://doi.org/10.1128/AAC.00737-08) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Gumbo_2020_Mab](drugs/drug_faropenem/pd_Gumbo_2020_Mab.md) | Mycobacterium abscessus subspecies abscessus (Mab) burden ← faropenem · direct sigmoid Emax (Hill) effect | — | Gumbo T et al., Repurposing drugs for treatment of Myco…, The Journal of antimicrobia… (2020) | [10.1093/jac/dkz523](https://doi.org/10.1093/jac/dkz523) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -44,13 +43,23 @@ _not available_
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
+## Full-text requests
+
+_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Gill_2010.pdf` | Gill SC et al., Pharmacokinetic-pharmacodynamic assessm…, Antimicrobial agents and ch… (2010) | popPK | 8 | [10.1128/AAC.00737-08](https://doi.org/10.1128/AAC.00737-08) | [20145081](https://pubmed.ncbi.nlm.nih.gov/20145081) | This is a PK/PD study in mice that likely reports clearance and volume values in the full text or tables not provided, while the extract only contains PK-PD indices (f %T(MIC)) and efficacy doses. |
+
+<sub>queue written 2026-10-15T00:06:49.282142+00:00</sub>
+
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Gill_2010 | irrelevant | 2 | 0 | The study is a PK-PD efficacy trial in mice and the provided text reports efficacy metrics (ED50, %T&gt;MIC) but does not contain specific quantitative disposition parameters (CL, V, ka) or a PK model for faropenem. |
-| popPK | Gumbo_2020 | irrelevant | 0 | 0 | The study is an in-vitro efficacy and MIC determination for Mycobacterium abscessus treatment, not a pharmacokinetic study of faropenem disposition. |
-| popPK | Yamada_2022 | irrelevant | 1 | 0 | The study uses existing population PK models for faropenem in Monte Carlo simulations but does not report new quantitative PK parameter values for the drug. |
+| popPK | Gill_2010 | relevant | 8 | 2 | This is a PK/PD study in mice that likely reports clearance and volume values in the full text or tables not provided, while the extract only contains PK-PD indices (f %T(MIC)) and efficacy doses. |
+| popPK | Gumbo_2020 | irrelevant | 1 | 0 | This is an in-vitro efficacy study against Mycobacterium abscessus reporting MICs and Emax parameters, not a pharmacokinetic study of faropenem disposition. |
+| popPK | Yamada_2022 | irrelevant | 1 | 0 | This is a pharmacodynamic probability of target attainment (PTA) simulation study using external population PK models rather than reporting original PK parameter estimation, and no numeric PK values for faropenem are present in the evidence. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

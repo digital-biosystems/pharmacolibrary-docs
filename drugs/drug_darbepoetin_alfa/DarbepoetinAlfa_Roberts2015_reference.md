@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B03X&quot;,&quot;href&quot;:&quot;atc/B03X.md&quot;},{&quot;label&quot;:&quot;darbepoetin alfa&quot;,&quot;href&quot;:&quot;drugs/drug_darbepoetin_alfa/&quot;},{&quot;label&quot;:&quot;Roberts_2015 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;DarbepoetinAlfa_Doshi2010_reference&quot;,&quot;label&quot;:&quot;Doshi_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Doshi2010_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;DarbepoetinAlfa_Jeon2021_reference&quot;,&quot;label&quot;:&quot;Jeon_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Jeon2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;DarbepoetinAlfa_Kawakami2009_reference&quot;,&quot;label&quot;:&quot;Kawakami_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Kawakami2009_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;DarbepoetinAlfa_Roberts2015_reference&quot;,&quot;label&quot;:&quot;Roberts_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Roberts2015_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;DarbepoetinAlfa_Doshi2010_reference&quot;,&quot;label&quot;:&quot;Doshi_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Doshi2010_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;DarbepoetinAlfa_Kawakami2009_reference&quot;,&quot;label&quot;:&quot;Kawakami_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Kawakami2009_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;DarbepoetinAlfa_Kim2019_reference&quot;,&quot;label&quot;:&quot;Kim_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Kim2019_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;DarbepoetinAlfa_Roberts2015_reference&quot;,&quot;label&quot;:&quot;Roberts_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Roberts2015_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # darbepoetin alfa — `DarbepoetinAlfa_Roberts2015_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -19,13 +19,11 @@
 
 **Every check that could be run on this record passed.**
 
-Only the abstract was available, so reported summary statistics stand in for a fitted model.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is darbepoetin alfa's own; they describe erythropoietin.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has darbepoetin_alfa, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
-
-> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:37:31.460238+00:00) predates the upstream re-run (2026-10-05 20:55:13.720271+00:00). Current validate status: `extracted`.
 
 > **Dose compound ≠ measured compound:** dosed `darbepoetin_alfa`, measured `erythropoietin`.
 
@@ -33,7 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Roberts JK et al., Population Pharmacokinetics of Darbepoe…, Clinical pharmacokinetics (2015)
   ·  DOI: [10.1007/s40262-015-0286-y](https://doi.org/10.1007/s40262-015-0286-y)
 
-<div class="pk-model-meta" hidden drug="darbepoetin alfa" model-id="DarbepoetinAlfa_Roberts2015_reference" status="extracted" stale="true" population="hypothermic neonates with hypoxic-ischemic encephalopathy" measured-compound="erythropoietin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="darbepoetin alfa" model-id="DarbepoetinAlfa_Roberts2015_reference" status="curated_candidate" stale="false" population="hypothermic neonates with hypoxic-ischemic encephalopathy" measured-compound="erythropoietin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.
@@ -43,8 +41,8 @@ Roberts JK et al., Population Pharmacokinetics of Darbepoe…, Clinical pharmaco
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| darbepoetin alfa clearance | `Q22` · CL | 0.0465 | L/h | 1.2916666666666667e-08 | [l] / [h] | not captured | llm_confirmed (0.6) | Roberts_2015:abstract | — | not captured |
-| darbepoetin alfa volume of distribution | `Q61` · V | 1.58 | L | 0.00158 | [l] | not captured | llm_confirmed (0.6) | Roberts_2015:abstract | — | not captured |
+| clearance | `Q22` · CL | 0.0465 | L/h | 1.2916666666666667e-08 | [l] / [h] | not captured | exact (1.0) | Roberts_2015:abstract | — | not captured |
+| volume of distribution | `Q61` · V | 1.58 | L | 0.00158 | [l] | not captured | exact (1.0) | Roberts_2015:abstract | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -112,7 +110,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 |---|---|---|---|---|---|---|
 | T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_output_variable | not captured | pass | C_central (measured=darbepoetin_alfa) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_output_variable | not captured | pass | C_central (measured=erythropoietin) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
@@ -124,10 +122,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_darbepoetin_alfa/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Roberts_2015` / `Roberts_2015::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_darbepoetin_alfa/models/modelica/DarbepoetinAlfa_Roberts2015_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_darbepoetin_alfa/models/modelica/DarbepoetinAlfa_Roberts2015_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_darbepoetin_alfa/models/modelica/DarbepoetinAlfa_Roberts2015_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_darbepoetin_alfa/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Roberts_2015` / `Roberts_2015::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_darbepoetin_alfa/models/modelica/DarbepoetinAlfa_Roberts2015_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_darbepoetin_alfa/models/modelica/DarbepoetinAlfa_Roberts2015_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_darbepoetin_alfa/models/modelica/DarbepoetinAlfa_Roberts2015_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -145,7 +143,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Roberts2015_reference/DarbepoetinAlfa_Roberts2015_reference.svg" alt="DarbepoetinAlfa_Roberts2015_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Roberts2015_reference/DarbepoetinAlfa_Roberts2015_reference.svg" alt="DarbepoetinAlfa_Roberts2015_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -158,4 +156,4 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 20:55 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 20:24 UTC</sub>

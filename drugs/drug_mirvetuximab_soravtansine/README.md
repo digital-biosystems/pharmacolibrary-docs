@@ -17,11 +17,29 @@ Mirvetuximab soravtansine is an antibody-drug conjugate used to treat ovarian, f
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 17:09 | 1:47 | 0/0/0 | 0/0/0 | 0/0/0 | 14,198/526 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 1/1 | 2/0 | 0 |
+| 2026-10-15 03:42 | 0:06 | 0/0/0 | 0/0/0 | 0/0/0 | 8,323/530 | einfracz / qwen3.8-27b | 2 | 1/1 | 2/0 | 0 |
 
 ## popPK records
 
 _not available_
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=mirvetuximab_soravtansine).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` substrate | DrugBank actor |
+| absorption | liver | `ABCB1` substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
+| absorption | testis | `ABCB1` substrate | DrugBank actor |
+| metabolism | liver | `CYP3A4` inhibitor/substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inhibitor/substrate | DrugBank actor |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: FOLR1 (binder).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -42,20 +60,19 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Tu_2025.pdf` | Tu YP et al., Exposure-response relationships of mirv…, British journal of clinical… (2025) | popPK | 8 | [10.1111/bcp.16250](https://doi.org/10.1111/bcp.16250) | [39307840](https://pubmed.ncbi.nlm.nih.gov/39307840) | The paper describes a population PK model and exposure-response analysis for mirvetuximab soravtansine, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence. |
+| `Tu_2025.pdf` | Tu YP et al., Exposure-response relationships of mirv…, British journal of clinical… (2025) | popPK | 5 | [10.1111/bcp.16250](https://doi.org/10.1111/bcp.16250) | [39307840](https://pubmed.ncbi.nlm.nih.gov/39307840) | The paper describes a population PK model for mirvetuximab soravtansine to derive exposure metrics for exposure-response analysis, but does not explicitly list the numeric parameter values (CL, V, Q, etc.) in the provided evidence. |
 | `Tu_2024.pdf` | Tu YP et al., Population pharmacokinetics of mirvetux…, British journal of clinical… (2024) | pgx | 7 | [10.1111/bcp.15937](https://doi.org/10.1111/bcp.15937) | [37872122](https://www.ncbi.nlm.nih.gov/pubmed/37872122) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 
-<sub>queue written 2026-10-07T17:09:03.594098+00:00</sub>
+<sub>queue written 2026-10-15T03:42:05.150801+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| PGx | Roth_2025 | not_relevant | 3 | 5 | The paper reports in vitro transporter-mediated resistance (P-gp efflux of the payload) affecting ADC efficacy, but does not report a pharmacogenomic effect (gene variant/genotype) on a PK or PD parameter in humans. |
-| PGx | Roth_2026 | not_relevant | 5 | 5 | The paper reports that ABCB1 (P-gp) overexpression reduces the efficacy (PD) of mirvetuximab soravtansine, but it does not report a specific gene variant or genotype associated with this effect, nor does it provide a fitted quantitative effect size for a specific pharmacogenomic interaction. |
+| PGx | Roth_2026 | not_relevant | 3 | 5 | The paper reports that overexpression of the ABCB1 gene (P-gp) confers resistance to mirvetuximab soravtansine, but it does not report a specific genetic variant or polymorphism and its impact on a defined PK or PD parameter. |
 | popPK | Tu_2024 | irrelevant | 0 | 0 | no_text gate: only 168 chars of text extracted (&lt; 400) |
-| PGx | Tu_2024 | not_relevant | 0 | 0 | The paper describes population pharmacokinetics but does not report pharmacogenomic effects (gene variants) on PK parameters. |
-| popPK | Tu_2025 | relevant | 8 | 0 | The paper describes a population PK model and exposure-response analysis for mirvetuximab soravtansine, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence. |
+| PGx | Tu_2024 | not_relevant | 0 | 0 | The paper describes population pharmacokinetics but does not report the impact of specific gene variants, genotypes, or pharmacogenomic phenotypes on mirvetuximab soravtansine exposure. |
+| popPK | Tu_2025 | relevant | 5 | 2 | The paper describes a population PK model for mirvetuximab soravtansine to derive exposure metrics for exposure-response analysis, but does not explicitly list the numeric parameter values (CL, V, Q, etc.) in the provided evidence. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

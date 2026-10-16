@@ -129,9 +129,9 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_fentanyl/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Craft_1983` / `Craft_1983::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_fentanyl/models/modelica/_needs_review/Fentanyl_Craft1983_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_fentanyl/models/modelica/_needs_review/Fentanyl_Craft1983_reference.deviation.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_fentanyl/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Craft_1983` / `Craft_1983::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_fentanyl/models/modelica/_needs_review/Fentanyl_Craft1983_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_fentanyl/models/modelica/_needs_review/Fentanyl_Craft1983_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

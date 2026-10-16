@@ -148,9 +148,9 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_lasmiditan/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Tsai_2021` / `Tsai_2021::population_mean_see`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_lasmiditan/models/modelica/_needs_review/Lasmiditan_Tsai2021_population_mean_see.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_lasmiditan/models/modelica/_needs_review/Lasmiditan_Tsai2021_population_mean_see.deviation.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_lasmiditan/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Tsai_2021` / `Tsai_2021::population_mean_see`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_lasmiditan/models/modelica/_needs_review/Lasmiditan_Tsai2021_population_mean_see.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_lasmiditan/models/modelica/_needs_review/Lasmiditan_Tsai2021_population_mean_see.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

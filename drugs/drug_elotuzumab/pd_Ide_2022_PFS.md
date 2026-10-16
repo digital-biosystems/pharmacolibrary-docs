@@ -13,13 +13,13 @@
 
 ## Record summary
 
-**As extracted:** Elotuzumab (concentrations from this paper's PK model) drives progression-free survival (in months): time-to-event model.
+**As extracted:** Elotuzumab (concentrations from this paper's PK model) drives progression-free survival: time-to-event model.
 
 **Model:** No model was generated from this record.
 
-> Elotuzumab daily average concentration (Cavg, μg/mL) was related to progression-free survival (PFS; months) in a semi-parametric time-varying Cox proportional-hazards model; higher exposure was associated with lower risk of progression or death, but the paper does not specify a production/elimination or other mechanistic pathway. The reported hazard ratio for daily Cavg was 0.9983.
+> Elotuzumab daily average concentration (Cavg) inhibits the hazard of progression-free survival using a semi-parametric Cox proportional hazards model where the hazard is expressed as a proportional effect of the time-varying exposure. The paper reports a hazard ratio of 0.853 for PFS at the 95th percentile relative to the 5th percentile of the first-dose average concentration (Cavg1).
 >
-> <sub>Source-based summary by gpt-6-luna from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Ide_2022`
 - **model family:** `tte`
@@ -34,7 +34,7 @@ Ide T et al., Population pharmacokinetic and exposure…, Cancer chemotherapy an
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| model term | Hazard ratio for daily Cavg | `Q900` · not captured | 0.9983 | not captured | not captured | llm (not captured) | Ide_2022:pdv3 |
+| — | HR of PFS at 95th percentile relative to 5th percentile of Cavg1 | `Q100` · not captured | 0.853 | not captured | not captured | nil (not captured) | Ide_2022:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>

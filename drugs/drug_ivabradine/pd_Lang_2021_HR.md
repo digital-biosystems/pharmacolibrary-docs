@@ -17,9 +17,9 @@
 
 **Model:** No model was generated from this record.
 
-> The paper describes a PBPK-PD model where ivabradine and its metabolite concentrations in the heart tissue inhibit heart rate via an Emax model, but the specific mechanism (e.g., direct effect vs. effect compartment) and key potency or rate parameters (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) are not provided in the excerpts.
+> The paper states that the pharmacological effects of ivabradine and its metabolite on heart rate are linked through a PD model, with the driver defined as both the parent drug and the metabolite. The provided text does not specify the mechanism or provide any numerical values for potency or rate parameters.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Lang_2021`
 - **model family:** `emax`

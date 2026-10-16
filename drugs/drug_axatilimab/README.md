@@ -17,31 +17,29 @@ Axatilimab is a monoclonal antibody drug used to treat chronic graft-versus-host
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 23:42 | 1:20 | 0/1/0 | 0/1/1 | 0/0/0 | 115,142/10,659 | einfracz / qwen3.8-27b | 2 | 0/2 | 2/0 | 0 |
+| 2026-10-15 00:35 | 2:22 | 0/2/0 | 1/0/0 | 0/0/0 | 155,832/9,198 | einfracz / qwen3.8-27b | 2 | 0/2 | 2/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Yang_2025_reference](drugs/drug_axatilimab/Axatilimab_Yang2025_reference.md) | — | general linear (no model) | 8 (+2 cov.) | Yang YO et al., Semimechanistic Population PK/PD Modeli…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3503](https://doi.org/10.1002/cpt.3503) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Yang_2025_typical_values_estimate](drugs/drug_axatilimab/Axatilimab_Yang2025_typical_values_estimate.md) | — | 2-compartment (no model) | 8 (+2 cov.) | Yang YO et al., Semimechanistic Population PK/PD Modeli…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3503](https://doi.org/10.1002/cpt.3503) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Yang_2025_typical_values_rse](drugs/drug_axatilimab/Axatilimab_Yang2025_typical_values_rse.md) | — | 2-compartment (no model) | 8 (+1 cov.) | Yang YO et al., Semimechanistic Population PK/PD Modeli…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3503](https://doi.org/10.1002/cpt.3503) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Yang_2025_2_AESI](drugs/drug_axatilimab/pd_Yang_2025_2_AESI.md) | Grade ≥ 3 AESI ← axatilimab · categorical (graded) response model | — | Yang YO et al., Exposure-Response Relationships for Axa…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3731](https://doi.org/10.1002/cpt.3731) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Yang_2025_2_Amylase_and_lipase_increases](drugs/drug_axatilimab/pd_Yang_2025_2_Amylase_and_lipase_increases.md) | Amylase and lipase increases ← axatilimab · categorical (graded) response model | — | Yang YO et al., Exposure-Response Relationships for Axa…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3731](https://doi.org/10.1002/cpt.3731) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed</span> | [Yang_2025_2_CPK](drugs/drug_axatilimab/pd_Yang_2025_2_CPK.md) | CPK elevations ← axatilimab · categorical (graded) response model | — | Yang YO et al., Exposure-Response Relationships for Axa…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3731](https://doi.org/10.1002/cpt.3731) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed</span> | [Yang_2025_2_Infusion_related_reactions](drugs/drug_axatilimab/pd_Yang_2025_2_Infusion_related_reactions.md) | Infusion-related reactions ← axatilimab · categorical (graded) response model | — | Yang YO et al., Exposure-Response Relationships for Axa…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3731](https://doi.org/10.1002/cpt.3731) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Yang_2025_2_Liver_enzyme_elevations](drugs/drug_axatilimab/pd_Yang_2025_2_Liver_enzyme_elevations.md) | Liver enzyme elevations ← axatilimab · categorical (graded) response model | — | Yang YO et al., Exposure-Response Relationships for Axa…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3731](https://doi.org/10.1002/cpt.3731) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed</span> | [Yang_2025_2_OR](drugs/drug_axatilimab/pd_Yang_2025_2_OR.md) | Overall response ← axatilimab · categorical (graded) response model | — | Yang YO et al., Exposure-Response Relationships for Axa…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3731](https://doi.org/10.1002/cpt.3731) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed</span> | [Yang_2025_2_Periorbital_edema](drugs/drug_axatilimab/pd_Yang_2025_2_Periorbital_edema.md) | Periorbital edema ← axatilimab · categorical (graded) response model | — | Yang YO et al., Exposure-Response Relationships for Axa…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3731](https://doi.org/10.1002/cpt.3731) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Yang_2025_2_TEAEs](drugs/drug_axatilimab/pd_Yang_2025_2_TEAEs.md) | Grade ≥ 3 TEAEs ← axatilimab · categorical (graded) response model | — | Yang YO et al., Exposure-Response Relationships for Axa…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3731](https://doi.org/10.1002/cpt.3731) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Yang_2025_2_TEAEs_2](drugs/drug_axatilimab/pd_Yang_2025_2_TEAEs_2.md) | TEAEs leading to dose modifications ← axatilimab · categorical (graded) response model | — | Yang YO et al., Exposure-Response Relationships for Axa…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3731](https://doi.org/10.1002/cpt.3731) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Yang_2025_2_TEAEs_3](drugs/drug_axatilimab/pd_Yang_2025_2_TEAEs_3.md) | Serious TEAEs ← axatilimab · categorical (graded) response model | — | Yang YO et al., Exposure-Response Relationships for Axa…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3731](https://doi.org/10.1002/cpt.3731) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Yang_2025_2_TEAEs_4](drugs/drug_axatilimab/pd_Yang_2025_2_TEAEs_4.md) | Treatment-related TEAEs ← axatilimab · categorical (graded) response model | — | Yang YO et al., Exposure-Response Relationships for Axa…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3731](https://doi.org/10.1002/cpt.3731) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Yang_2025_2_mLSS](drugs/drug_axatilimab/pd_Yang_2025_2_mLSS.md) | ≥ 7-point improvement in mLSS ← axatilimab · categorical (graded) response model | — | Yang YO et al., Exposure-Response Relationships for Axa…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3731](https://doi.org/10.1002/cpt.3731) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span> | [Yang_2025_CSF_1](drugs/drug_axatilimab/pd_Yang_2025_CSF_1.md) | CSF-1 ← axatilimab · indirect response — drug inhibits the loss of CSF-1 | — | Yang YO et al., Semimechanistic Population PK/PD Modeli…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3503](https://doi.org/10.1002/cpt.3503) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span> | [Yang_2025_CSF_1](drugs/drug_axatilimab/pd_Yang_2025_CSF_1.md) | CSF-1 ← axatilimab · indirect response — drug inhibits the loss of CSF-1 | — | Yang YO et al., Semimechanistic Population PK/PD Modeli…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3503](https://doi.org/10.1002/cpt.3503) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=axatilimab).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: CSF1R (antibody), CSF1R (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,14 +51,14 @@ Axatilimab is a monoclonal antibody drug used to treat chronic graft-versus-host
 
 - **PubMed hits:** 4 matched, 4 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Yang_2025_2 | irrelevant | 1 | 0 | The paper is an exposure-response analysis that references a previously developed population PK model (reference 16) but does not report the quantitative disposition parameters (CL, V, etc.) for axatilimab itself within the provided text. |
+| popPK | Yang_2025_2 | irrelevant | 2 | 0 | The paper focuses on exposure-response relationships using exposure metrics (AUC, Cmax) derived from a previously developed population PK model, rather than reporting the quantitative compartmental PK parameters (CL, V, Q, etc.) themselves. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-06 23:41 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-15 00:33 UTC</sub>

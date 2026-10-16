@@ -97,7 +97,7 @@ Anderson KL et al., Pharmacokinetics of chloramphenicol in…, Journal of veteri
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_chloramphenicol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Anderson_1983` / `Anderson_1983::from_mean_data`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_chloramphenicol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Anderson_1983` / `Anderson_1983::from_mean_data`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

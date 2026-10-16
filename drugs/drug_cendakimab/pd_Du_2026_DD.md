@@ -13,11 +13,11 @@
 
 ## Record summary
 
-**As extracted:** CEN (measured concentrations) drives Dysphagia Days (in days): indirect response — drug inhibits the production of Dysphagia Days.
+**As extracted:** Cendakimab (measured concentrations) drives Dysphagia Days (in days): indirect response — drug inhibits the production of Dysphagia Days.
 
 **Model:** No model was generated from this record.
 
-> Cendakimab concentration drives a latent variable in an indirect response model that inhibits the occurrence of Dysphagia Days (DD) through a proportional effect mechanism. The paper specifies an EC50 of 76.5 μg/mL and a placebo half-life of ~28 weeks, while the record lists a log-transformed EC50 of 4.337 μg/mL and a drug onset half-life of 1.408 weeks.
+> Cendakimab concentration (μg/mL) inhibits the underlying disease trajectory (latent variable) which governs the bounded dysphagia days (DD) response via an Emax mechanism with an estimated EC50 of 76.5 μg/mL. The model includes a placebo effect with a half-life of approximately 28 weeks, while the specific rate constant for drug onset (kDEKON) is not explicitly reported in the provided excerpts.
 >
 > <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
@@ -25,7 +25,7 @@
 - **model family:** `indirect_response_i`
 - **driver:** `conc_no_pk`
 - **tier:** population
-- **effect:** inhibition/proportional
+- **effect:** inhibition/unknown
 
 ## Citation
 Du S et al., Latent Variable Indirect Response Model…, CPT: pharmacometrics & syst… (2026)
@@ -34,12 +34,12 @@ Du S et al., Latent Variable Indirect Response Model…, CPT: pharmacometrics & 
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | Maximum drug effect | `Q323` · not captured | 1.865 | not captured | not captured | direction (not captured) | Du_2026:pdv3 |
-| PD (effect) | Log‐transformed half‐maximal concentration | `Q321` · not captured | 4.337 | μg/mL | not captured | llm (not captured) | Du_2026:pdv3 |
-| PD (effect) | Half‐life of drug onset | `Q328` · not captured | 1.408 | weeks | not captured | llm (not captured) | Du_2026:pdv3 |
-| PD (effect) | Logit‐transformed baseline | `Q324` · not captured | 4.521 | not captured | not captured | llm (not captured) | Du_2026:pdv3 |
-| PD (effect) | Maximum PBO effect | `Q341` · not captured | 8.092 | not captured | not captured | llm (not captured) | Du_2026:pdv3 |
-| PD (effect) | Half‐life of PBO onset | `Q338` · not captured | 27.66 | weeks | not captured | llm (not captured) | Du_2026:pdv3 |
+| PD (effect) | Maximum drug effect (Emax) | `Q323` · not captured | 1.865 | not captured | not captured | direction (not captured) | Du_2026:pdv3 |
+| PD (effect) | Log‐transformed half‐maximal concentration (μg/mL; EC50) | `Q321` · not captured | 4.337 | μg/mL | not captured | llm (not captured) | Du_2026:pdv3 |
+| — | Half‐life of drug onset (weeks; kDEKON) | `Q100` · not captured | 1.408 | weeks | not captured | nil (not captured) | Du_2026:pdv3 |
+| PD (effect) | Logit‐transformed baseline (BASE) | `Q324` · not captured | 4.521 | not captured | not captured | llm (not captured) | Du_2026:pdv3 |
+| PD (effect) | Maximum PBO effect (Pmax) | `Q341` · not captured | 8.092 | not captured | not captured | llm (not captured) | Du_2026:pdv3 |
+| — | Half‐life of PBO onset (weeks; kPBOKON) | `Q100` · not captured | 27.66 | weeks | not captured | nil (not captured) | Du_2026:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>

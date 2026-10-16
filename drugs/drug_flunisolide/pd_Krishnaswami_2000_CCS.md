@@ -17,9 +17,9 @@
 
 **Model:** No model was generated from this record.
 
-> The paper relates flunisolide exposure to cumulative cortisol suppression (CCS) using an Emax-type inhibitory model, but the excerpts provide no concentration–response details, mechanism, or parameter values (Imax, IC50, etc.), so the potency and mechanism cannot be stated.
+> The paper does not provide full text excerpts or specific mechanism details, so it is not possible to state whether flunisolide inhibits cortisol production or elimination, nor can specific potency and rate values be extracted.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Krishnaswami_2000`
 - **model family:** `emax`

@@ -4,7 +4,7 @@
 
 # crizanlizumab — `Crizanlizumab_Sy2023_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -16,22 +16,20 @@
 
 ### Reviewer guidance
 
-**The crizanlizumab two-compartment TMDD model was rejected because one compartment has no path from the dose, making part of the structure unreachable.**
+**C5 dimension mismatch on a structural parameter.**
 
-The record describes crizanlizumab (Adakveo) in healthy subjects and sickle cell disease patients, with a two-compartment structure and parameters including clearance CL of 0.75, central volume V of 1, peripheral volume V2 of 1, binding affinity KD of 0.354, and an internalisation rate constant kint with no extracted value. The rejection reason is an unreachable or orphan compartment: a compartment in the model structure has no connection from the administered dose, so drug could never reach it. No other failed checks or builder deviations are reported. Extracted — crizanlizumab: V 1, KD 0.354, CL 0.75, V2 1.
+A reported unit could not be converted (Vnorm and KD), so that value has no SI equivalent. Extracted — crizanlizumab: Vnorm 1 2.56%, KD 0.354 nM, V1 2.97 L, CL 0.012 L/h, Q 0.033 L/h, V2 2.26 L.
 
-<sub>reviewed by glm-5.3-flash</sub>
-
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:37:17.925700+00:00) predates the upstream re-run (2026-10-06 01:18:52.361765+00:00). Current validate status: `rejected`.
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Sy SKB et al., Population Pharmacokinetics and Pharmac…, Clinical pharmacokinetics (2023)
   ·  DOI: [10.1007/s40262-022-01193-4](https://doi.org/10.1007/s40262-022-01193-4)
 
-<div class="pk-model-meta" hidden drug="crizanlizumab" model-id="Crizanlizumab_Sy2023_reference" status="rejected" stale="true" population="healthy subjects and patients with sickle cell disease" measured-compound="crizanlizumab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="crizanlizumab" model-id="Crizanlizumab_Sy2023_reference" status="rejected" stale="false" population="healthy subjects and patients with sickle cell disease" measured-compound="crizanlizumab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
-**Parameters:** 4 extracted.
+**Parameters:** 6 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -40,41 +38,40 @@ Sy SKB et al., Population Pharmacokinetics and Pharmac…, Clinical pharmacokine
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| WTonVc | `Q61` · V | 1 | not captured | not captured | not captured | not captured | llm (0.6) | Sy_2023_table_p12_1:row2:col2, Sy_2023_table_p12_1:row2:col3 | — | not captured |
-| Kd | `Q331` · KD | 0.354 | not captured | not captured | not captured | not captured | exact (1.0) | Sy_2023_table_p12_1:row4:col2, Sy_2023_table_p12_1:row4:col3, Sy_2023_table_p12_1:row4:col4 | — | not captured |
-| WTonCL | `Q22` · CL | 0.75 | not captured | not captured | not captured | not captured | llm (0.6) | Sy_2023_table_p12_1:row7:col2, Sy_2023_table_p12_1:row7:col3 | — | not captured |
-| WTonV2 | `Q64` · V2 | 1 | not captured | not captured | not captured | not captured | llm (0.6) | Sy_2023_table_p12_1:row11:col2, Sy_2023_table_p12_1:row11:col3 | — | not captured |
+| WTonVc | `Q352` · Vnorm | 1 | 2.56% | not captured | [2.56%] | not captured | llm (0.6) | Sy_2023_table_p12_1:row2:col2, Sy_2023_table_p12_1:row2:col3 | — | not captured |
+| Kd | `Q331` · KD | 0.354 | nM | not captured | [nM] | not captured | exact (1.0) | Sy_2023_table_p12_1:row4:col2, Sy_2023_table_p12_1:row4:col3, Sy_2023_table_p12_1:row4:col4 | — | not captured |
+| Vc Volume of central compartment (L) | `Q63` · V1 | 2.97 | L | 0.0029700000000000004 | L | not captured | boundary_compartment (0.9) | Sy_2023:other_prose | — | not captured |
+| CL Clearance (L/h) | `Q22` · CL | 0.012 | L/h | 3.3333333333333334e-09 | L/h | not captured | boundary (0.8) | Sy_2023:other_prose | — | not captured |
+| Q Intercompartmental clearance (L/h) | `Q30` · Q | 0.033 | L/h | 9.166666666666668e-09 | L/h | not captured | boundary (0.8) | Sy_2023:other_prose | — | not captured |
+| Vp Volume of peripheral compartment (L) | `Q64` · V2 | 2.26 | L | 0.00226 | L | not captured | boundary_compartment (0.9) | Sy_2023:other_prose | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
-### Unresolved rows _(no Q-code or no value — not parameters)_
-| label (paper) | Q-code | value | link |
-|---|---|---|---|
-| Kint | Q334 | not captured | exact |
-
 ## Departures & gaps
 
 **Interpretation flags:**
 - table section residual_error: 'additive error' routed out of structural estimates ('Residual variability')
 - table section residual_error: 'proportional error' routed out of structural estimates ('Residual variability')
-- table section residual_error: 'OFV' routed out of structural estimates ('Residual variability')
 - table section residual_error: 'cBIC' routed out of structural estimates ('Residual variability')
-- column 'description' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- unit_dimension_unknown: '2.56%' (Vnorm)
+- unit_dimension_mismatch: 'Kd' → Q331 (unit '[length]' vs ontology '[mass] / [length] ** 3') — route to review
+- dropped unlinked row (NIL): 'WTonCL' — extend the ontology if this is a real PK parameter (source ['Sy_2023_table_p12_1:row7:col2', 'Sy_2023_table_p12_1:row7:col3'])
 - dropped unlinked row (NIL): 'WTonQ' — extend the ontology if this is a real PK parameter (source ['Sy_2023_table_p12_1:row9:col2', 'Sy_2023_table_p12_1:row9:col3'])
+- dropped unlinked row (NIL): 'WTonV2' — extend the ontology if this is a real PK parameter (source ['Sy_2023_table_p12_1:row11:col2', 'Sy_2023_table_p12_1:row11:col3'])
+- salvaged Q63 ('Vc Volume of central compartment (L)'=2.97) from results prose — parameter table was unreadable
+- salvaged Q22 ('CL Clearance (L/h)'=0.012) from results prose — parameter table was unreadable
+- salvaged Q30 ('Q Intercompartmental clearance (L/h)'=0.033) from results prose — parameter table was unreadable
+- salvaged Q64 ('Vp Volume of peripheral compartment (L)'=2.26) from results prose — parameter table was unreadable
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=crizanlizumab
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at route_to_review — not promoted
 - molar mass: none found for 'crizanlizumab' — its concentrations stay mass-only
 
 **Extraction notes:**
-- unparsed cell Sy_2023_table_p12_1:row2:col4 = '0.14 (82.9%)'
-- unparsed cell Sy_2023_table_p12_1:row3:col2 = '0.0059 (9.96%)'
-- unparsed cell Sy_2023_table_p12_1:row3:col3 = '0.006 (10.1%)'
-- unparsed cell Sy_2023_table_p12_1:row3:col4 = '0.011 (14.5%)'
-- unparsed cell Sy_2023_table_p12_1:row7:col4 = '0.32 (40%)'
-- unparsed cell Sy_2023_table_p12_1:row9:col4 = '0.29 (166%)'
-- unparsed cell Sy_2023_table_p12_1:row11:col4 = '0.64 (28.2%)'
+- table Sy_2023_table_p12_1: unparsed_numeric_cell
 
 ## Validation
 
@@ -82,15 +79,16 @@ Sy SKB et al., Population Pharmacokinetics and Pharmac…, Clinical pharmacokine
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['Sy_2023_table_p12_1:row7:col2', 'Sy_2023_table_p12_1:row7:col3'] |
-| C5_unit_missing_Q331 | fail | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Sy_2023_table_p12_1:row4:col2', 'Sy_2023_table_p12_1:row4:col3', 'Sy_2023_table_p12_1:row4:col4'] |
-| C5_unit_missing_Q61 | fail | [length] ** 3 | not captured | not captured | not captured | ['Sy_2023_table_p12_1:row2:col2', 'Sy_2023_table_p12_1:row2:col3'] |
-| C5_unit_missing_Q64 | fail | [length] ** 3 | not captured | not captured | not captured | ['Sy_2023_table_p12_1:row11:col2', 'Sy_2023_table_p12_1:row11:col3'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.75 | not captured | not captured | ['Sy_2023_table_p12_1:row7:col2', 'Sy_2023_table_p12_1:row7:col3'] |
-| C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q331 | fail | [length] | nM | not captured | not captured | ['Sy_2023_table_p12_1:row4:col2', 'Sy_2023_table_p12_1:row4:col3', 'Sy_2023_table_p12_1:row4:col4'] |
+| C5_unit_missing_Q352 | fail | [length] ** 3 | 2.56% | not captured | not captured | ['Sy_2023_table_p12_1:row2:col2', 'Sy_2023_table_p12_1:row2:col3'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.012 | not captured | not captured | ['Sy_2023:other_prose'] |
+| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.012 L/h | not captured | not captured | ['Sy_2023:other_prose'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 2.97 L | not captured | not captured | ['Sy_2023:other_prose'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 2.26 L | not captured | not captured | ['Sy_2023:other_prose'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -99,7 +97,7 @@ Sy SKB et al., Population Pharmacokinetics and Pharmac…, Clinical pharmacokine
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_crizanlizumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Sy_2023` / `Sy_2023::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_crizanlizumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Sy_2023` / `Sy_2023::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -115,4 +113,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 01:18 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 21:42 UTC</sub>

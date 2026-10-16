@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;eculizumab&quot;,&quot;href&quot;:&quot;drugs/drug_eculizumab/&quot;},{&quot;label&quot;:&quot;Ter_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Eculizumab_Cosson2025_reference&quot;,&quot;label&quot;:&quot;Cosson_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eculizumab/Eculizumab_Cosson2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Eculizumab_Badri2021_reference&quot;,&quot;label&quot;:&quot;Badri_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eculizumab/Eculizumab_Badri2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Eculizumab_Gatault2015_reference&quot;,&quot;label&quot;:&quot;Gatault_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eculizumab/Eculizumab_Gatault2015_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Eculizumab_Monteleone2021_mean&quot;,&quot;label&quot;:&quot;Monteleone_2021_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eculizumab/Eculizumab_Monteleone2021_mean.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Eculizumab_Monteleone2021_median&quot;,&quot;label&quot;:&quot;Monteleone_2021_median&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eculizumab/Eculizumab_Monteleone2021_median.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Eculizumab_Singh2021_mean&quot;,&quot;label&quot;:&quot;Singh_2021_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eculizumab/Eculizumab_Singh2021_mean.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Eculizumab_Singh2021_median&quot;,&quot;label&quot;:&quot;Singh_2021_median&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eculizumab/Eculizumab_Singh2021_median.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Eculizumab_Chen2026_reference&quot;,&quot;label&quot;:&quot;Chen_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eculizumab/Eculizumab_Chen2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Eculizumab_Cosson2025_reference&quot;,&quot;label&quot;:&quot;Cosson_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eculizumab/Eculizumab_Cosson2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Eculizumab_Badri2021_reference&quot;,&quot;label&quot;:&quot;Badri_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eculizumab/Eculizumab_Badri2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Eculizumab_Gatault2015_reference&quot;,&quot;label&quot;:&quot;Gatault_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eculizumab/Eculizumab_Gatault2015_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Eculizumab_Monteleone2021_reference&quot;,&quot;label&quot;:&quot;Monteleone_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eculizumab/Eculizumab_Monteleone2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Eculizumab_Singh2021_reference&quot;,&quot;label&quot;:&quot;Singh_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eculizumab/Eculizumab_Singh2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Lee_2024_TCA&quot;,&quot;label&quot;:&quot;Lee_2024 \u00b7 TCA&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_eculizumab/pd_Lee_2024_TCA.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Ter_2023_CP_activity&quot;,&quot;label&quot;:&quot;Ter_2023 \u00b7 CP activity&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_eculizumab/pd_Ter_2023_CP_activity.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Ter_2025_CP&quot;,&quot;label&quot;:&quot;Ter_2025 \u00b7 CP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_eculizumab/pd_Ter_2025_CP.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Lee_2024_LDH&quot;,&quot;label&quot;:&quot;Lee_2024 \u00b7 LDH&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_eculizumab/pd_Lee_2024_LDH.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,22 +17,22 @@
 
 ### Reviewer guidance
 
-**Eculizumab's Vmax was assigned mg/day instead of L/day, causing a dimensional mismatch in the one-compartment model.**
+**C5 dimension mismatch on a structural parameter.**
 
-The record lists Vmax as 29.6 mg/day, which is a rate of mass elimination rather than a volume of distribution. A one-compartment model structurally requires all clearance and volume parameters to share consistent volume-based dimensions. Because mg/day could not be converted to standard volume units, the parameter lacked a valid SI value. Extracted — eculizumab: CL 0.163 L/day, V 6.42 L, Vmax 29.6 mg/day.
+A reported unit could not be converted (Vmax), so that value has no SI equivalent. Extracted — eculizumab: CL 0.163 L/day, V 6.42 L, Vmax 29.6 mg/day, kabs 1.58 h−1, tlag 0.278 h.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Ter Avest M et al., Proposal for individualized dosing of e…, Nephrology, dialysis, trans… (2023)
   ·  DOI: [10.1093/ndt/gfac056](https://doi.org/10.1093/ndt/gfac056)
 
-<div class="pk-model-meta" hidden drug="eculizumab" model-id="Eculizumab_Ter2023_reference" status="rejected" stale="false" population="aHUS patients (adults and children)" measured-compound="eculizumab" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="eculizumab" model-id="Eculizumab_Ter2023_reference" status="rejected" stale="false" population="paediatric and adult patients with atypical haemolytic uraemic syndrome" measured-compound="eculizumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 3 extracted, plus 1 covariate effect.
+**Parameters:** 5 extracted, plus 1 covariate effect.
 
 **Parameterization:** mechanistic.
 
@@ -45,6 +45,8 @@ Ter Avest M et al., Proposal for individualized dosing of e…, Nephrology, dial
 | Volume of distribution (L) | `Q61` · V | 6.42 | L | 0.00642 | [l] | 5.9 | exact (1.0) | tbl3:row2:col1 | — | 37.1 (12.5% RSE) |
 | Maximum rate (Vmax) (mg/day) | `Q66` · Vmax | 29.6 | mg/day | not captured | [mg] / [d] | 7.0 | llm_confirmed (0.6) | tbl3:row3:col1 | — | not captured |
 | theta_q1_category | `Q900` · theta_q1_category | 37.9 | not captured | not captured | not captured | 18.7 | not captured (not captured) | tbl3:row4:col1 | — | not captured |
+| Ka | `Q49` · kabs | 1.58 | h−1 | 0.0004388888888888889 | 1/h | not captured | review_gapfill (0.7) | Chen_2026:review | — | not captured |
+| Tlag | `Q83` · tlag | 0.278 | h | 1000.8000000000001 | h | not captured | review_gapfill (0.7) | Chen_2026:review | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -57,6 +59,7 @@ Ter Avest M et al., Proposal for individualized dosing of e…, Nephrology, dial
 - table section iiv: 'Clearance (L/day)' routed out of structural estimates ('IIV (CV%) (RSE%)')
 - table section iov: 'Clearance (L/day)' routed out of structural estimates ('IOV (CV%) (RSE%)')
 - table section iiv: 'Volume of distribution (L)' routed out of structural estimates ('IIV (CV%) (RSE%)')
+- column 'estimate (rse%)' classified 'rse' by the LLM but kept as the estimate: the header names the point value
 - unit_dimension_mismatch: 'Maximum rate (Vmax) (mg/day)' → Q66 (unit '[mass] / [time]' vs ontology '[length] ** 3') — route to review
 - routed 'Additional error (mg/L)' → Q317 (add_error) to residual_error — variability estimate, not a structural parameter
 - covariate effect for Q1 has no base parameter row (kept as unattached equation-variable)
@@ -66,8 +69,11 @@ Ter Avest M et al., Proposal for individualized dosing of e…, Nephrology, dial
 - molar mass: none found for 'eculizumab' — its concentrations stay mass-only
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- gap-filled Q49 (kabs) from Chen_2026's review values (primary lacked it)
+- gap-filled Q83 (tlag) from Chen_2026's review values (primary lacked it)
 
 **Extraction notes:**
+- table tbl3: unparsed_numeric_cell
 - LLM selected parameter table(s) 3
 
 ## Validation
@@ -95,8 +101,10 @@ _All readers agree on the compared fields of this record._
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tbl3:row1:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Chen_2026:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['tbl3:row2:col1'] |
 | C5_dimension_Q66 | fail | [mass] / [time] | mg/day | not captured | not captured | ['tbl3:row3:col1'] |
+| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Chen_2026:review'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.163 | not captured | not captured | ['tbl3:row1:col1'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.00679 L/h | not captured | not captured | ['tbl3:row1:col1'] |
@@ -109,7 +117,7 @@ _All readers agree on the compared fields of this record._
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_eculizumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Ter_2023` / `Ter_2023::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_eculizumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Ter_2023` / `Ter_2023::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -125,4 +133,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 23:51 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 21:54 UTC</sub>

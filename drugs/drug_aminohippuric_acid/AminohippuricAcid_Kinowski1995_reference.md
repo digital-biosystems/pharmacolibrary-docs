@@ -21,7 +21,7 @@
 
 Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has aminohippuric_acid, the second reading p-aminohippurate; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has aminohippuric_acid, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -75,8 +75,8 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | `gpt-oss-120b` | `parameters[cl]` | not captured | 30.7 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[v]` | 10.6 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[v]` | not captured | 10.6 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | aminohippuric_acid | p-aminohippurate | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | aminohippuric_acid | p-aminohippurate | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | aminohippuric_acid | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | aminohippuric_acid | unknown | mismatch |
 
 </details>
 
@@ -118,10 +118,10 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_aminohippuric_acid/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kinowski_1995` / `Kinowski_1995::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_aminohippuric_acid/models/modelica/AminohippuricAcid_Kinowski1995_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_aminohippuric_acid/models/modelica/AminohippuricAcid_Kinowski1995_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_aminohippuric_acid/models/modelica/AminohippuricAcid_Kinowski1995_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_aminohippuric_acid/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kinowski_1995` / `Kinowski_1995::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_aminohippuric_acid/models/modelica/AminohippuricAcid_Kinowski1995_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_aminohippuric_acid/models/modelica/AminohippuricAcid_Kinowski1995_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_aminohippuric_acid/models/modelica/AminohippuricAcid_Kinowski1995_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -139,7 +139,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_aminohippuric_acid/AminohippuricAcid_Kinowski1995_reference/AminohippuricAcid_Kinowski1995_reference.svg" alt="AminohippuricAcid_Kinowski1995_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_aminohippuric_acid/AminohippuricAcid_Kinowski1995_reference/AminohippuricAcid_Kinowski1995_reference.svg" alt="AminohippuricAcid_Kinowski1995_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

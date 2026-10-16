@@ -18,11 +18,20 @@ Xamoterol is a beta-1 adrenergic receptor agonist used as a cardiac stimulant in
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 10:18 | 2:13 | 0/0/0 | 0/0/0 | 0/0/0 | 54,593/2,341 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 1/1 | 2/0 | 0 |
+| 2026-10-13 12:56 | 2:08 | 0/0/0 | 0/0/0 | 0/0/0 | 46,226/1,227 | einfracz / qwen3.8-27b | 2 | 1/1 | 2/0 | 0 |
 
 ## popPK records
 
 _not available_
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=xamoterol).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: ADRB1 (partial agonist), ADRB3 (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -32,10 +41,10 @@ _not available_
 
 ## Coverage
 
-- **PubMed hits:** 71 matched, 75 returned
-- **screened:** 4  ·  **relevant:** 4
+- **PubMed hits:** 56 matched, 77 returned
+- **screened:** 5  ·  **relevant:** 4
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
-- **scholar-agent fallback query used:** not captured
+- **scholar-agent fallback query used:** True
 
 ## Full-text requests
 
@@ -54,7 +63,7 @@ _10 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Skeberdis_1997.pdf` | Skeberdis VA et al., Pharmacological characterization of the…, British journal of pharmaco… (1997) | pd | 4 | [10.1038/sj.bjp.0701268](https://doi.org/10.1038/sj.bjp.0701268) | [9257904](https://www.ncbi.nlm.nih.gov/pubmed/9257904) | metadata signals extractable PD data (EC50) |
 | `Vigholt-Sørensen_1991.pdf` | Vigholt-Sørensen E et al., Comparative effects of beta-adrenocepto…, Pharmacology & toxicology (1991) | pd | 4 | [10.1111/j.1600-0773.1991.tb01309.x](https://doi.org/10.1111/j.1600-0773.1991.tb01309.x) | [1687080](https://www.ncbi.nlm.nih.gov/pubmed/1687080) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-10-06T10:17:52.350503+00:00</sub>
+<sub>queue written 2026-10-13T12:55:39.532386+00:00</sub>
 
 ## Screened and excluded
 
@@ -62,23 +71,28 @@ _10 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 |---|---|---|---|---|---|
 | popPK | Abrahamsson_1989 | irrelevant | 0 | 0 | no_text gate: only 137 chars of text extracted (&lt; 400) |
 | popPK | Baker_2011 | irrelevant | 0 | 0 | The study is a pharmacodynamic assessment of cardiovascular effects (heart rate and vascular conductance) in rats, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | Bastain_1989 | irrelevant | 2 | 0 | The abstract mentions pharmacokinetics but does not report quantitative disposition parameters (CL, V, etc.), and no numeric values are present in the evidence. |
 | popPK | Bellantuono_2008 | irrelevant | 0 | 0 | no_text gate: only 70 chars of text extracted (&lt; 400) |
 | PD | Bellantuono_2008 | not_relevant | 0 | 0 | The paper focuses on the identification of adrenergic receptor subtypes in frog skin and does not report any pharmacodynamic or exposure-response data for xamoterol. |
 | popPK | Bøtker_1993 | irrelevant | 0 | 0 | The study focuses on renal physiology (sodium excretion, GFR) rather than pharmacokinetic disposition parameters (CL, V, t1/2) of xamoterol. |
 | popPK | Deighton_1992 | irrelevant | 0 | 0 | no_text gate: only 183 chars of text extracted (&lt; 400) |
 | popPK | Fischer_1990 | irrelevant | 0 | 0 | The study reports haemodynamic and metabolic effects (cardiac output, blood glucose) rather than pharmacokinetic disposition parameters (CL, V, t1/2). |
+| popPK | Furlong_1988 | irrelevant | 0 | 0 | The paper is a preliminary review of pharmacodynamic and therapeutic properties that does not contain quantitative pharmacokinetic parameter values. |
 | PD | Furlong_1988 | not_relevant | 2 | 0 | The text is a qualitative review summarizing general pharmacodynamic properties and clinical outcomes without providing specific numeric PD parameters, concentration-effect curves, or detailed PK/PD modeling data. |
 | popPK | Hashimoto_1986 | irrelevant | 2 | 0 | The study reports cardiovascular effects and AUC but does not provide specific quantitative disposition parameters like clearance, volume of distribution, or half-life. |
 | popPK | Hashimoto_1988 | irrelevant | 0 | 0 | The provided evidence contains only software metadata and no scientific content regarding xamoterol pharmacokinetics. |
 | popPK | Hicks_1987 | irrelevant | 0 | 0 | The study is a pharmacodynamic analysis of beta-adrenoceptor potency and selectivity, not a pharmacokinetic study reporting disposition parameters. |
 | popPK | James_1990 | irrelevant | 2 | 0 | The study focuses on pharmacodynamic effects (systolic time intervals) and only mentions qualitative plasma concentration trends (peak time, linearity) without reporting quantitative PK parameters like clearance or volume. |
+| popPK | Karle_2002 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology experiment examining mechanistic effects on potassium currents in guinea-pig myocytes, containing no pharmacokinetic parameters. |
 | popPK | Kullmer_1988 | irrelevant | 0 | 0 | The study focuses on pharmacodynamic effects (physical performance, cardiocirculatory, metabolic) and does not report pharmacokinetic parameters such as clearance or volume of distribution. |
 | popPK | Marlow_1990 | irrelevant | 2 | 0 | The study reports pharmacodynamic (inotropic) responses and plasma concentrations, but does not provide quantitative pharmacokinetic disposition parameters such as clearance, volume of distribution, or half-life. |
 | popPK | Marten_1984 | irrelevant | 2 | 0 | The study reports qualitative metabolic pathways and absorption percentages but lacks quantitative compartmental PK parameters (CL, V, ka) for xamoterol. |
 | popPK | McCormick_1988 | irrelevant | 1 | 0 | The study is an in-vitro mechanistic investigation of metabolism using isolated rat hepatocytes and does not report quantitative population pharmacokinetic parameters (CL, V, etc.) for xamoterol. |
+| popPK | McMurray_1990 | irrelevant | 0 | 0 | The paper is a clinical review of heart failure management that mentions xamoterol as a therapeutic agent but does not report any quantitative pharmacokinetic parameters for it. |
 | PD | McMurray_1990 | not_relevant | 1 | 0 | The text is a general review of heart failure treatment in the elderly that mentions xamoterol as a therapeutic option but provides no pharmacodynamic data, exposure-response analysis, or numeric PD parameters. |
 | popPK | Molajo_1987 | irrelevant | 0 | 0 | no_text gate: only 96 chars of text extracted (&lt; 400) |
 | popPK | Mulder_1987 | irrelevant | 2 | 0 | The study focuses on metabolic pathways (glucuronidation) and reports qualitative findings and an extraction ratio, but lacks quantitative disposition parameters like clearance, volume, or half-life values for xamoterol. |
+| popPK | Ng_1994 | irrelevant | 0 | 0 | The study reports pharmacodynamic (hemodynamic) effects, not pharmacokinetic disposition parameters such as clearance or volume of distribution. |
 | PD | Ng_1994 | not_relevant | 2 | 1 | The study reports qualitative changes in hemodynamic variables (HR, CO, MBP) for fixed doses but does not provide plasma concentration data or fit a concentration-effect model, making numeric PD parameters like Emax or EC50 unextractable. |
 | popPK | Okabayashi_2021 | irrelevant | 0 | 0 | The study is an in vitro mechanistic investigation of sIgA secretion where xamoterol is used only as a beta-1 agonist comparator, with no pharmacokinetic parameters reported. |
 | popPK | Persson_2002 | irrelevant | 0 | 0 | The study measures neurohormonal markers (e.g., N-ANF, NPY) in heart failure patients and does not report pharmacokinetic parameters for xamoterol. |
@@ -93,13 +107,16 @@ _10 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | popPK | Skeberdis_1997 | irrelevant | 0 | 0 | no_text gate: only 160 chars of text extracted (&lt; 400) |
 | PD | Skeberdis_1997 | not_relevant | 0 | 0 | The paper focuses on the pharmacological characterization of beta-adrenoceptors in frog ventricular myocytes and does not mention xamoterol or report any exposure-response or dose-response data for it. |
 | popPK | Stark_2004 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of adenylyl cyclase VI in rat myocytes using xamoterol as a pharmacological probe, not a pharmacokinetic study. |
+| popPK | Sørensen_1990 | irrelevant | 0 | 0 | The study is a pharmacodynamic investigation of inotropic effects in isolated rat atria and does not report any pharmacokinetic parameters (such as clearance or volume) for xamoterol. |
 | PD | Sørensen_1990 | not_relevant | 3 | 1 | The paper investigates dose-activity relationships in isolated atria but only provides qualitative comparisons of maximal responses and time-to-effect; it does not report specific numeric PD parameters (e.g., EC50, Emax values) or extractable concentration-effect curves for xamoterol. |
 | popPK | Takashio_1990 | irrelevant | 0 | 0 | The study is a pharmacodynamic investigation of pulmonary vascular resistance and pressor responses in an isolated dog lung model, reporting no pharmacokinetic parameters for xamoterol. |
 | popPK | Takeda_2002 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological characterization of beta-adrenoceptor subtypes in monkey bladder smooth muscle, not a pharmacokinetic study of xamoterol. |
 | popPK | Tangø_1985 | irrelevant | 0 | 0 | The study reports hemodynamic effects (heart rate, blood pressure, cardiac output) rather than pharmacokinetic disposition parameters (CL, V, t1/2). |
+| popPK | Torrente_2023 | irrelevant | 0 | 0 | The paper is a neuropharmacology study investigating the effects of xamoterol on neuroinflammation and neuron survival in mice, and it does not report any pharmacokinetic disposition parameters for the drug. |
 | PD | Torrente_2023 | not_relevant | 1 | 0 | The paper reports qualitative effects of xamoterol (increased neuroinflammation/degeneration) at a single fixed dose (3 mg/kg) but provides no concentration-effect data, dose-response curve, or numeric PD parameters (Emax, EC50, etc.). |
 | popPK | Vigholt-Sørensen_1991 | irrelevant | 0 | 0 | no_text gate: only 80 chars of text extracted (&lt; 400) |
 | PD | Vigholt-Sørensen_1991 | not_relevant | 0 | 0 | The paper studies beta-adrenoceptor partial agonists on isolated rat atrium and does not mention xamoterol or report any exposure-response or dose-response data for it. |
+| popPK | Vigholt_1986 | irrelevant | 0 | 0 | The study is an in-vitro pharmacodynamic/mechanistic study on the isolated rabbit heart measuring contractility and chronotropy, not a pharmacokinetic study reporting disposition parameters. |
 | popPK | Willette_1998 | irrelevant | 0 | 0 | The study evaluates the intrinsic sympathomimetic activity of bucindolol and carvedilol in rats, mentioning xamoterol only as a background example of a drug with ISA, without reporting any pharmacokinetic parameters for xamoterol. |
 | popPK | Yabana_1992 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of receptor agonism/antagonism in guinea-pig tissues, not a pharmacokinetic study, and xamoterol is used only as a comparator. |
 | popPK | Zech_1989 | irrelevant | 0 | 0 | The study examines renal physiology and blood pressure effects, not pharmacokinetic disposition parameters. |

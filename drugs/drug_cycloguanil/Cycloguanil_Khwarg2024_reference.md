@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;Cycloguanil&quot;,&quot;href&quot;:&quot;drugs/drug_cycloguanil/&quot;},{&quot;label&quot;:&quot;Khwarg_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cycloguanil_Chotsiri2021_reference&quot;,&quot;label&quot;:&quot;Chotsiri_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cycloguanil/Cycloguanil_Chotsiri2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -19,7 +18,7 @@
 
 **The paper reports none of the model's key parameters.**
 
-No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
+No clearance, volume or rate constant of the model is reported in it. No model template covers this structure. No parameter values were extracted.
 
 Independently confirmed by `gpt-oss-120b`.
 
@@ -31,12 +30,12 @@ Independently confirmed by `gpt-oss-120b`.
 Khwarg J et al., Effect of SLC22A1 polymorphism on the p…, Clinical and translational… (2024)
   ·  DOI: [10.1111/cts.70103](https://doi.org/10.1111/cts.70103)
 
-<div class="pk-model-meta" hidden drug="Cycloguanil" model-id="Cycloguanil_Khwarg2024_reference" status="rejected" stale="false" population="healthy Korean adults" measured-compound="cycloguanil" parameterization="apparent_wrt_Fm" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="Cycloguanil" model-id="Cycloguanil_Khwarg2024_reference" status="rejected" stale="false" population="healthy Korean adults" measured-compound="cycloguanil" parameterization="mechanistic" topology="manual_model_class"></div>
 
-**Model structure:** parent + metabolite; no model was built for this record.  
+**Model structure:** nonlinear / manual; no model was built for this record.  
 **Parameters:** 0 extracted.
 
-**Parameterization:** apparent_wrt_Fm.
+**Parameterization:** mechanistic.
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
@@ -72,12 +71,15 @@ _No resolved parameters._
 - $THETA(15) has no $PK binding — index may be misassigned
 - $THETA(16) has no $PK binding — index may be misassigned
 - control_stream: nonlinear kinetics (MM/product $DES or general ODE ADVAN) — manual_model_class, route_to_review
-- apparent-ness: parameterization=apparent_wrt_Fm (metabolite model)
+- control_stream ADVAN6: topology=manual_model_class, parameterization=mechanistic (clearance)
 - theta_crosscheck: table present but its labels did not align to bound THETAs (skipped)
-- template fit: none — only the metabolite is modelled — no parent compartment (site hepatic: 'Based on the PK and genotype data, a parent‐metabolite joint population PK model including a well‐stirred liver compartm')
 - status held at route_to_review — not promoted
-- row roles (LLM): model_class=compartmental; 22/22 row label(s) assigned, 0 linked by role
 - review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
+
+**Extraction notes:**
+- table cts70103-tbl-0003: unbound_uncertainty
+- table cts70103-tbl-0003: units_need_context
+- table cts70103-tbl-0003: ragged_grid
 
 ## Validation
 
@@ -102,8 +104,7 @@ _All readers agree on the compared fields of this record._
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
 | C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
-| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -112,7 +113,7 @@ _All readers agree on the compared fields of this record._
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_cycloguanil/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Khwarg_2024` / `Khwarg_2024::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_cycloguanil/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Khwarg_2024` / `Khwarg_2024::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -128,4 +129,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 06:52 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 23:39 UTC</sub>

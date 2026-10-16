@@ -1,7 +1,8 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;belantamab mafodotin&quot;,&quot;href&quot;:&quot;drugs/drug_belantamab_mafodotin/&quot;},{&quot;label&quot;:&quot;Collins_2023 \u00b7 PD serum M-protein concentration&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;BelantamabMafodotin_FerronBrady2021_reference&quot;,&quot;label&quot;:&quot;Ferron-Brady_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_belantamab_mafodotin/BelantamabMafodotin_FerronBrady2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# serum M-protein concentration — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span>
+# serum M-protein concentration — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -13,19 +14,19 @@
 
 ## Record summary
 
-**As extracted:** Belantamab mafodotin (measured concentrations) drives serum M-protein concentration (in g/L): disease-progression model.
+**As extracted:** Belantamab mafodotin drives serum M-protein concentration: disease-progression model.
 
-**Model:** No model was generated from this record.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
-> Belantamab mafodotin concentrations drove a logistic tumor-growth inhibition model of serum M-protein, promoting tumor shrinkage (kill) relative to growth, with resistance reducing shrinkage over time and an effect-compartment delay; the paper does not describe direct inhibition of M-protein production or elimination. The reported growth and kill rates were 0.0174 and 0.0207 day−1, respectively, the resistance rate was 0.0024 day−1, and the effect-compartment rate constant (KEO) was 0.0284 day−1; reported exposure-effect terms were A50 1.16 μg/ml and slope 0.619 ml/μg.
+> The paper describes a concentration-driven tumor growth inhibition model where belantamab mafodotin exposure drives the shrinkage of serum M-protein concentration, with the effect mediated via an effect compartment (characterized by a rate constant influenced by extramedullary disease). While the record lists parameter estimates including TVKGR (0.0174 day−1), TVLAMBDA (0.0024 day−1), Slope (0.619 ml/μg), TVKEO (0.0284 day−1), and A50 (1.16 μg/ml), the provided excerpts do not explicitly state whether these values correspond to the Emax, IC50, or specific kinetic rate constants for the M-protein response.
 >
-> <sub>Source-based summary by gpt-6-luna from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Collins_2023`
 - **model family:** `disease_progression`
-- **driver:** `conc_no_pk`
+- **driver:** `not_resolved`
 - **tier:** population
-- **effect:** stimulation/unknown
+- **effect:** inhibition/proportional
 
 ## Citation
 Collins J et al., Longitudinal efficacy and safety modeli…, CPT: pharmacometrics & syst… (2023)
@@ -34,21 +35,50 @@ Collins J et al., Longitudinal efficacy and safety modeli…, CPT: pharmacometri
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| model term | TVKGR | `Q900` · not captured | 0.0174 (0.0146, 0.0208) | day−1 | not captured | llm (not captured) | Collins_2023:pdv3 |
-| model term | TVKD | `Q900` · not captured | 0.0207 (0.0159, 0.0268) | day−1 | not captured | llm (not captured) | Collins_2023:pdv3 |
-| model term | TVLAMBDA | `Q900` · not captured | 0.0024 (0.00123, 0.00480) | day−1 | not captured | llm (not captured) | Collins_2023:pdv3 |
-| PD (effect) | Slope | `Q335` · not captured | 0.619 (0.554, 0.691) | ml/μg | not captured | llm (not captured) | Collins_2023:pdv3 |
-| PD (effect) | TVKEO | `Q326` · not captured | 0.0284 (0.0248, 0.0326) | day−1 | not captured | llm (not captured) | Collins_2023:pdv3 |
-| model term | A50 | `Q900` · not captured | 1.16 (0.839, 1.481) | μg/ml | not captured | llm (not captured) | Collins_2023:pdv3 |
-| model term | Effect of baseline sBCMA on KEO | `Q900` · not captured | −0.414 (−0.561, −0.267) | not captured | not captured | llm (not captured) | Collins_2023:pdv3 |
-| model term | Effect of MEDFL on KEO | `Q900` · not captured | 0.108 (0.0617, 0.187) | not captured | not captured | llm (not captured) | Collins_2023:pdv3 |
-| model term | Effect of bB2M on KGR | `Q900` · not captured | 0.219 (0.011, 0.427) | not captured | not captured | llm (not captured) | Collins_2023:pdv3 |
-| model term | Effect of bMPROT &lt; 20 on KD | `Q900` · not captured | 1.41 (1.08, 1.85) | not captured | not captured | llm (not captured) | Collins_2023:pdv3 |
+| — | TVKGR | `Q100` · not captured | 0.0174 | day−1 | not captured | nil (not captured) | Collins_2023:pdv3 |
+| PD (effect) | TVLAMBDA | `Q342` · not captured | 0.0024 | day−1 | not captured | tv_prefix (not captured) | Collins_2023:pdv3 |
+| PD (effect) | Slope | `Q335` · not captured | 0.619 | ml/μg | not captured | llm (not captured) | Collins_2023:pdv3 |
+| PD (effect) | TVKEO | `Q326` · not captured | 0.0284 | day−1 | not captured | llm (not captured) | Collins_2023:pdv3 |
+| — | A50 | `Q100` · not captured | 1.16 | μg/ml | not captured | nil (not captured) | Collins_2023:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
+
+
+## Exposure-response model
+
+`BelantamabMafodotin_Collins2023_PD_m_protein` — linear, `response = E0 + slope*exposure`
+
+| parameter | value (paper units) | SI |
+|---|---|---|
+| E0 | 0 | — |
+| slope | 0.619 ml/μg | 619 meter ** 3 / kilogram |
+
+Closed-form check points (response, SI): `at_0` = 0, `per_exposure_unit` = 619
+
+Deviations:
+
+- `defaulted_parameters` — E0
+- `pd_binding_family_inferred` — the record's model family is disease_progression; read from the parameters: a slope and no Emax — linear
+
+## Review
+
+Verdict <span class="pk-badge pk-badge--orange">needs review</span> · route to `scholar`
+
+| check | status | note |
+|---|---|---|
+| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
+| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
+| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
+| `T2_direction` | skipped | a line has no plateau to compare |
+| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
+| `T4_defaults` | fail | a core parameter took a library default: E0 |
+
+Advisory:
+
+- defaulted: E0 — a row the paper has and the record lacks
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
@@ -86,14 +116,14 @@ Primary extraction: `openai:gpt-6-luna`; retained regardless of cross-check verd
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_belantamab_mafodotin/BelantamabMafodotin_Collins2023_PD_m_protein/BelantamabMafodotin_Collins2023_PD_m_protein_modelica.zip" download>BelantamabMafodotin_Collins2023_PD_m_protein_modelica.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_belantamab_mafodotin/BelantamabMafodotin_Collins2023_PD_m_protein/BelantamabMafodotin_Collins2023_PD_m_protein_matlab.zip" download>BelantamabMafodotin_Collins2023_PD_m_protein_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_belantamab_mafodotin/BelantamabMafodotin_Collins2023_PD_m_protein/BelantamabMafodotin_Collins2023_PD_m_protein_sbml.zip" download>BelantamabMafodotin_Collins2023_PD_m_protein_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_belantamab_mafodotin/BelantamabMafodotin_Collins2023_PD_m_protein/BelantamabMafodotin_Collins2023_PD_m_protein_cellml.zip" download>BelantamabMafodotin_Collins2023_PD_m_protein_cellml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
 </div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>

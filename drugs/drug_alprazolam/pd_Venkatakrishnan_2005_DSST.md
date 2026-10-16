@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05B&quot;,&quot;href&quot;:&quot;atc/N05B.md&quot;},{&quot;label&quot;:&quot;alprazolam&quot;,&quot;href&quot;:&quot;drugs/drug_alprazolam/&quot;},{&quot;label&quot;:&quot;Venkatakrishnan_2005 \u00b7 PD Digit Symbol Substitution Test (DSST) performance&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Alprazolam_Klein2026_body_weight_50_kg&quot;,&quot;label&quot;:&quot;Klein_2026_body_weight_50_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alprazolam/Alprazolam_Klein2026_body_weight_50_kg.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Alprazolam_Mertes2022_reference&quot;,&quot;label&quot;:&quot;Mertes_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alprazolam/Alprazolam_Mertes2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Witt_2026_RGR&quot;,&quot;label&quot;:&quot;Witt_2026 \u00b7 RGR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_alprazolam/pd_Witt_2026_RGR.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Digit Symbol Substitution Test (DSST) performance — PD  <span class="pk-badge pk-badge--green">extracted</span>
@@ -14,17 +14,17 @@
 
 ## Record summary
 
-**As extracted:** Alprazolam (concentrations from the PK model of DeVane_1993) drives Digit Symbol Substitution Test (DSST) performance (inhibition; the model form was not identified).
+**As extracted:** Alprazolam (concentrations from this paper's PK model) drives Digit Symbol Substitution Test (DSST) performance: direct linear effect.
 
 **Model:** No model was generated from this record.
 
-> The paper does not provide the mechanism or model details: alprazolam concentrations are linked to inhibition of DSST performance via a cited PK source, but no potency (IC50/EC50/Emax) or rate parameters (kin, kout, ke0) are stated in the available excerpts.
+> The provided record indicates that alprazolam plasma concentrations drive an inhibitory effect on Digit Symbol Substitution Test (DSST) performance using a linear model family. However, no full text is available and the record lacks specific mechanism details or numerical values for parameters such as Imax, IC50, or rate constants.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Venkatakrishnan_2005`
-- **model family:** `unknown`
-- **driver:** `cited_pk`
+- **model family:** `linear`
+- **driver:** `pk_record`
 - **tier:** descriptive
 - **effect:** inhibition/unknown
 

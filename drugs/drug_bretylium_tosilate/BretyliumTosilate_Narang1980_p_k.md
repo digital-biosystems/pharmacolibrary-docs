@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;bretylium tosilate&quot;,&quot;href&quot;:&quot;drugs/drug_bretylium_tosilate/&quot;},{&quot;label&quot;:&quot;Narang_1980 \u00b7 p_k&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;BretyliumTosilate_Kamath1981_reference&quot;,&quot;label&quot;:&quot;Kamath_1981_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bretylium_tosilate/BretyliumTosilate_Kamath1981_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BretyliumTosilate_Rapeport1985_anderson_et_al_1980b&quot;,&quot;label&quot;:&quot;Rapeport_1985_anderson_et_al_1980b&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bretylium_tosilate/BretyliumTosilate_Rapeport1985_anderson_et_al_1980b.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BretyliumTosilate_Rapeport1985_garret_et_al&quot;,&quot;label&quot;:&quot;Rapeport_1985_garret_et_al&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bretylium_tosilate/BretyliumTosilate_Rapeport1985_garret_et_al.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BretyliumTosilate_Rapeport1985_narang_et_al&quot;,&quot;label&quot;:&quot;Rapeport_1985_narang_et_al&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bretylium_tosilate/BretyliumTosilate_Rapeport1985_narang_et_al.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;BretyliumTosilate_Kamath1981_reference&quot;,&quot;label&quot;:&quot;Kamath_1981_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bretylium_tosilate/BretyliumTosilate_Kamath1981_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # bretylium tosilate — `BretyliumTosilate_Narang1980_p_k`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.737). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -17,11 +17,13 @@
 
 ### Reviewer guidance
 
-**The record was rejected because the renal clearance unit, liters per hour per kilogram, could not be converted to standard SI units.**
+**C5 dimension mismatch on a structural parameter; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-The renal clearance parameter is reported in liters per hour per kilogram, a unit that could not be converted to standard SI units, causing a dimension mismatch. This prevented the parameter from having a valid value for the model. Additionally, the second reader disagreed on the primary analyte, identifying it as bretylium tosylate rather than bretylium, and noted missing parameters for renal excretion rate and 72-hour urinary excretion. Extracted — bretylium tosilate: λ1 1.12 hr⁻¹, t1/2α 37.2 min, kel 0.085 hr⁻¹, t1/2β 8.15 hr, k12 0.5 hr⁻¹, k21 0.182 hr⁻¹, kabs 0.081 hr⁻¹, V1 1.31 liters/kg, … (+5).
+A reported unit could not be converted (λ1), so that value has no SI equivalent. Extracted — bretylium tosilate: λ1 1.12 hr⁻¹, t1/2α 37.2 min, kel 0.085 hr⁻¹, t1/2β 8.15 hr, k12 0.5 hr⁻¹, k21 0.182 hr⁻¹, kfm 0.081 hr⁻¹, V1 1.31 liters/kg, … (+4).
 
-<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has bretylium_tosilate, the second reading bretylium tosylate; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 > **Dose compound ≠ measured compound:** dosed `bretylium_tosilate`, measured `bretylium`.
 
@@ -32,7 +34,7 @@ Narang PK et al., Pharmacokinetics of bretylium in man af…, Journal of pharmac
 <div class="pk-model-meta" hidden drug="bretylium tosilate" model-id="BretyliumTosilate_Narang1980_p_k" status="rejected" stale="false" population="normal male volunteers" measured-compound="bretylium" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
-**Parameters:** 13 extracted.
+**Parameters:** 12 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -47,13 +49,12 @@ Narang PK et al., Pharmacokinetics of bretylium in man af…, Journal of pharmac
 | t₁/₂,β (hr) | `Q60` · t1/2β | 8.15 | hr | 29340.0 | [h] | not captured | llm_corrected (0.6) | Narang_1980_table_2:row3:col3 | — | not captured |
 | k₁₂ (hr⁻¹) | `Q301` · k12 | 0.500 | hr⁻¹ | 0.0001388888888888889 | [1] / [h] | not captured | exact (1.0) | Narang_1980_table_2:row4:col3 | — | not captured |
 | k₂₁ (hr⁻¹) | `Q302` · k21 | 0.182 | hr⁻¹ | 5.055555555555555e-05 | [1] / [h] | not captured | exact (1.0) | Narang_1980_table_2:row5:col3 | — | not captured |
-| kₐₓ (hr⁻¹) | `Q49` · kabs | 0.081 | hr⁻¹ | 2.25e-05 | [1] / [h] | not captured | llm (0.6) | Narang_1980_table_2:row7:col3 | — | not captured |
+| k₍ₙ₎f (hr⁻¹) | `Q305` · kfm | 0.081 | hr⁻¹ | 2.25e-05 | [1] / [h] | not captured | space_fold (0.95) | Narang_1980_table_2:row7:col3 | — | not captured |
 | Vc (liters/kg) | `Q63` · V1 | 1.31 | liters/kg | 0.09170000000000002 | [l] / [kg] | not captured | exact (1.0) | Narang_1980_table_2:row9:col3 | — | not captured |
 | Vd,β (liters/kg) | `Q64` · V2 | 8.05 | liters/kg | 0.5635000000000001 | [l] / [kg] | not captured | llm_corrected (0.6) | Narang_1980_table_2:row10:col3 | — | not captured |
 | Vdss (liters/kg) | `Q65` · Vss | 4.92 | liters/kg | 0.3444 | [l] / [kg] | not captured | llm (0.6) | Narang_1980_table_2:row11:col3 | — | not captured |
-| RC (liters/hr-kg) | `Q26` · CLR | 0.578 | L/h/kg | 1.1238888888888888e-05 | L/h | not captured | llm (0.6) | Narang_1980_table_2:row12:col3 | — | not captured |
-| TBC (liters/hr-kg) | `Q30` · Q | 0.685 | L/h/kg | 1.3319444444444446e-05 | L/h | not captured | llm (0.6) | Narang_1980_table_2:row13:col3 | — | not captured |
-| Percent dose in urine after 24 hr | `Q44` · fe | 74.0 | not captured | not captured | not captured | not captured | llm (0.6) | Narang_1980_table_2:row14:col3 | — | not captured |
+| RC (liters/hr·kg) | `Q26` · CLR | 0.578 | liters/hr·kg | 1.1238888888888888e-05 | [l] / [[h] · [kg]] | not captured | llm (0.6) | Narang_1980_table_2:row12:col3 | — | not captured |
+| TBC (liters/hr·kg) | `Q54` · Qb | 0.685 | liters/hr·kg | 1.3319444444444446e-05 | [l] / [[h] · [kg]] | not captured | llm (0.6) | Narang_1980_table_2:row13:col3 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -66,17 +67,15 @@ Narang PK et al., Pharmacokinetics of bretylium in man af…, Journal of pharmac
 - column 'p. k.' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - unit_dimension_mismatch: 'α (hr⁻¹)' → Q67 (unit '1 / [time]' vs ontology '[mass] / [time]') — route to review
 - dropped duplicate Q47 ('kᵣ (hr⁻¹)', value '0.442') — already have one for this compound
-- dropped duplicate Q49 ('kₐ₁ (hr⁻¹)', value '0.523') — already have one for this compound
-- unit_dimension_unknown: 'liters/hr-kg' (CLR)
-- unit_dimension_unknown: 'liters/hr-kg' (Q)
-- dropped duplicate Q44 ('Percent dose in urine after 72 hr', value '78.5') — already have one for this compound
-- implicit units: 'RC (liters/hr-kg)' → L/h/kg (from the paper text: "The abstract states the apparent volume of distribution is in 'liters/kg' and the renal clearance is 6 times GFR. The te")
-- implicit units: 'TBC (liters/hr-kg)' → L/h/kg (from the popPK convention: "The parameter is defined as 'Apparent intercompartmental clearance'. In population PK, clearances are typically expresse")
-- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q63 (Vc (liters/kg)); Q64 (Vd,β (liters/kg)); Q30 (TBC (liters/hr-kg))
+- dropped duplicate Q305 ('k₍ₐ₎f (hr⁻¹)', value '0.523') — already have one for this compound
+- dropped unlinked row (NIL): 'after 24 hr' — extend the ontology if this is a real PK parameter (source ['Narang_1980_table_2:row15:col3'])
+- dropped unlinked row (NIL): 'after 72 hr' — extend the ontology if this is a real PK parameter (source ['Narang_1980_table_2:row16:col3'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=bretylium
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
-- population split: 'p. k.' subgroup of Narang_1980 (paper reports 5 populations: b. b., j. j., mean, p. k., s. b.)
+- population split: 'p. k.' subgroup of Narang_1980 (paper reports 4 populations: b. b., j. j., p. k., s. b.)
+- skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
+- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
 - no TEI final-model table id; trying text-pointer table recovery
@@ -84,26 +83,51 @@ Narang PK et al., Pharmacokinetics of bretylium in man af…, Journal of pharmac
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss:120b` | not confirmed | 0.737 (14/19 fields) | 5 |
+
+<details><summary>5 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `parameters[after 24 hr]` | not captured | 74.0 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[rc].parameter_id` | Q26 | Q22 | mismatch |
+| `gpt-oss:120b` | `parameters[tbc]` | 0.685 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[vd,β].parameter_id` | Q64 | Q61 | mismatch |
+| `gpt-oss:120b` | `screen.dose_compound` | bretylium_tosilate | bretylium tosylate | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 13 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 12 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q26 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Narang_1980_table_2:row12:col3'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Narang_1980_table_2:row13:col3'] |
 | C5_dimension_Q301 | pass | 1 / [time] | not captured | not captured | not captured | ['Narang_1980_table_2:row4:col3'] |
 | C5_dimension_Q302 | pass | 1 / [time] | not captured | not captured | not captured | ['Narang_1980_table_2:row5:col3'] |
+| C5_dimension_Q305 | pass | 1 / [time] | not captured | not captured | not captured | ['Narang_1980_table_2:row7:col3'] |
 | C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['Narang_1980_table_2:row2:col3'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Narang_1980_table_2:row7:col3'] |
+| C5_dimension_Q54 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Narang_1980_table_2:row13:col3'] |
 | C5_dimension_Q59 | pass | [time] | not captured | not captured | not captured | ['Narang_1980_table_2:row1:col3'] |
 | C5_dimension_Q60 | pass | [time] | not captured | not captured | not captured | ['Narang_1980_table_2:row3:col3'] |
 | C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Narang_1980_table_2:row9:col3'] |
 | C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Narang_1980_table_2:row10:col3'] |
 | C5_dimension_Q65 | pass | [length] ** 3 | not captured | not captured | not captured | ['Narang_1980_table_2:row11:col3'] |
 | C5_dimension_Q67 | fail | 1 / [time] | hr⁻¹ | not captured | not captured | ['Narang_1980_table_2:row0:col3'] |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q63 | pass | volume within physiological range | 91.7 L | not captured | not captured | ['Narang_1980_table_2:row9:col3'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 564 L | not captured | not captured | ['Narang_1980_table_2:row10:col3'] |
 | C9_phys_window_Q65 | pass | volume within physiological range | 344 L | not captured | not captured | ['Narang_1980_table_2:row11:col3'] |
@@ -115,7 +139,7 @@ Narang PK et al., Pharmacokinetics of bretylium in man af…, Journal of pharmac
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_bretylium_tosilate/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Narang_1980` / `Narang_1980::p_k`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_bretylium_tosilate/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Narang_1980` / `Narang_1980::p_k`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -131,4 +155,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-08 16:24 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 20:02 UTC</sub>

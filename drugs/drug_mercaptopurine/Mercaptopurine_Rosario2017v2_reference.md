@@ -4,7 +4,7 @@
 
 # mercaptopurine — `Mercaptopurine_Rosario2017v2_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.875), gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-check: disputed 1/2</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.875), gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-check: disputed 1/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -16,21 +16,19 @@
 
 ### Reviewer guidance
 
-**The mercaptopurine two-compartment model (CL 0.159 L/day, V1 3.19 L, V2 1.65 L) was rejected because its peripheral compartment is unreachable, i.e. not connected to the dose path.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record describes a two-compartment structure for mercaptopurine with total clearance 0.159 L/day, central volume of distribution 3.19 L and peripheral volume 1.65 L. The failed check found an unreachable or orphan compartment: the peripheral compartment has no path from the administered dose, so the reported structure is inconsistent with the parameterization. No other parameter values were disputed. Extracted — mercaptopurine: CL 0.159 L/day, V1 3.19 L, V2 1.65 L.
+Extracted — mercaptopurine: CL 0.159 L/day, V1 3.19 L, V2 1.65 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of V2: this record has 4.84, the second reading 1.65. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by glm-5.3-flash</sub>
-
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:38:40.953562+00:00) predates the upstream re-run (2026-10-07 16:52:06.289681+00:00). Current validate status: `rejected`.
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Rosario M et al., A Review of the Clinical Pharmacokineti…, Clinical pharmacokinetics (2017)
   ·  DOI: [10.1007/s40262-017-0546-0](https://doi.org/10.1007/s40262-017-0546-0)
 
-<div class="pk-model-meta" hidden drug="mercaptopurine" model-id="Mercaptopurine_Rosario2017v2_reference" status="rejected" stale="true" population="" measured-compound="mercaptopurine" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="mercaptopurine" model-id="Mercaptopurine_Rosario2017v2_reference" status="rejected" stale="false" population="" measured-compound="mercaptopurine" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.
@@ -42,9 +40,9 @@ Rosario M et al., A Review of the Clinical Pharmacokineti…, Clinical pharmacok
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL L were 0.159 L/day for patients with UC | `Q22` · CL | 0.159 | L/day | 1.840277777777778e-09 | L/h | not captured | review (0.7) | Rosario_2017_2:review | — | not captured |
+| Population estimates of CL L ... for patients with UC | `Q22` · CL | 0.159 | L/day | 1.840277777777778e-09 | L/h | not captured | review (0.7) | Rosario_2017_2:review | — | not captured |
 | volume of distribution in the central compartment (V c ) | `Q63` · V1 | 3.19 | L | 0.00319 | L | not captured | review (0.7) | Rosario_2017_2:review | — | not captured |
-| vedolizumab V ss was estimated to be 4.84 L for both patients with UC and patients with CD [volume of distribution in the central compartment (V c ) = 3.19 L plus volume of distribution in the peripheral compartment (V p ) = 1.65 L] | `Q64` · V2 | 4.84 | L | 0.00484 | L | not captured | review (0.7) | Rosario_2017_2:review | — | not captured |
+| volume of distribution in the peripheral compartment (V p ) | `Q64` · V2 | 1.65 | L | 0.00165 | L | not captured | review (0.7) | Rosario_2017_2:review | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -95,7 +93,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.00663 L/h | not captured | not captured | ['Rosario_2017_2:review'] |
 | C9_phys_window_Q63 | pass | volume within physiological range | 3.19 L | not captured | not captured | ['Rosario_2017_2:review'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 4.84 L | not captured | not captured | ['Rosario_2017_2:review'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 1.65 L | not captured | not captured | ['Rosario_2017_2:review'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -104,7 +102,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_mercaptopurine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Rosario_2017_2` / `Rosario_2017_2::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_mercaptopurine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Rosario_2017_2` / `Rosario_2017_2::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -120,4 +118,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 16:52 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 21:22 UTC</sub>

@@ -18,11 +18,20 @@ Leriglitazone was investigated as a treatment for adrenoleukodystrophy. It remai
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 17:43 | 0:13 | 0/0/0 | 0/0/0 | 0/0/0 | 36,752/1,055 | einfracz / qwen3.8-27b | 2 | 0/2 | 2/0 | 0 |
+| 2026-10-15 03:14 | 0:14 | 0/0/0 | 0/0/0 | 0/0/0 | 38,777/720 | einfracz / qwen3.8-27b | 2 | 0/2 | 2/0 | 0 |
 
 ## popPK records
 
 _not available_
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=leriglitazone).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: PPARG (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,7 +54,7 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 |---|---|---|---|---|---|---|
 | `Albassam_2015.pdf` | Albassam AA et al., Inhibitory effect of six herbal extract…, Xenobiotica; the fate of fo… (2015) | pd | 4 | [10.3109/00498254.2014.989935](https://doi.org/10.3109/00498254.2014.989935) | [25430798](https://www.ncbi.nlm.nih.gov/pubmed/25430798) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-10-07T17:43:52.033964+00:00</sub>
+<sub>queue written 2026-10-15T03:13:59.281019+00:00</sub>
 
 ## Screened and excluded
 
@@ -55,16 +64,16 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | PD | Albassam_2015 | not_relevant | 0 | 0 | The paper reports in vitro CYP2C8 inhibition by herbal extracts, not a pharmacodynamic or exposure-response relationship for leriglitazone. |
 | popPK | Albassam_2019 | irrelevant | 0 | 0 | no_text gate: only 69 chars of text extracted (&lt; 400) |
 | PD | Albassam_2019 | not_relevant | 0 | 0 | The paper focuses on the effect of pterostilbene on in vitro drug metabolizing enzyme activity and does not report any pharmacodynamic or exposure-response data for leriglitazone. |
-| PGx | Albassam_2019 | not_relevant | 0 | 0 | The paper studies the effect of pterostilbene on enzyme activity and does not report pharmacogenomic effects on leriglitazone pharmacokinetics or pharmacodynamics. |
-| popPK | Almeida_2011 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics and bioequivalence of pioglitazone, not leriglitazone. |
-| PGx | Cavestro_2026 | not_relevant | 0 | 0 | The paper evaluates the therapeutic efficacy of leriglitazone in a mouse model of COPAN, but does not report pharmacogenomic effects on PK or PD parameters. |
-| popPK | Chinnalalaiah_2017 | irrelevant | 0 | 0 | The study reports an analytical method for pioglitazone and its metabolite, not for leriglitazone. |
-| popPK | Li_2012 | irrelevant | 0 | 0 | The study analyzes metoprolol in beagle dogs, not leriglitazone. |
-| popPK | Patel_2011 | irrelevant | 0 | 0 | The study focuses on saxagliptin, metformin, glyburide, and pioglitazone, but does not involve leriglitazone. |
+| PGx | Albassam_2019 | not_relevant | 0 | 0 | The paper investigates the in vitro effect of pterostilbene on CYP and UGT enzyme activities using pioglitazone as a substrate, but does not report pharmacogenomic (gene variant) effects on leriglitazone. |
+| popPK | Almeida_2011 | irrelevant | 0 | 0 | The study evaluates the pharmacokinetics and bioequivalence of pioglitazone, not leriglitazone. |
+| PGx | Cavestro_2026 | not_relevant | 0 | 0 | The paper reports the therapeutic efficacy of leriglitazone in a disease model, but does not investigate how genetic variants affect the pharmacokinetics or pharmacodynamics of the drug. |
+| popPK | Chinnalalaiah_2017 | irrelevant | 0 | 0 | The study concerns pioglitazone, not leriglitazone. |
+| popPK | Li_2012 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for metoprolol, not leriglitazone. |
+| popPK | Patel_2011 | irrelevant | 0 | 0 | The paper studies saxagliptin and its interactions with metformin, glyburide, and pioglitazone, but does not involve leriglitazone. |
 | PD | Patel_2011 | not_relevant | 0 | 0 | The paper focuses on pharmacokinetic interactions of saxagliptin with other drugs and does not report any pharmacodynamic or exposure-response data for leriglitazone. |
-| popPK | Rodríguez-Pascau_2021 | irrelevant | 0 | 0 | The paper focuses on the neuroprotective and anti-inflammatory mechanisms of leriglitazone in disease models and does not report any pharmacokinetic parameters (CL, V, ka, etc.). |
-| PGx | Traver_2024 | not_relevant | 2 | 2 | The paper focuses on clinical PK and PBPK modeling in healthy adults and children, but does not report pharmacogenomic effects (gene variant/genotype impact) on PK parameters. |
-| popPK | Vaidyanathan_2008 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of aliskiren, metformin, pioglitazone, and fenofibrate; leriglitazone is not mentioned or studied. |
+| popPK | Rodríguez-Pascau_2021 | irrelevant | 0 | 0 | The paper is a mechanistic/preclinical study focused on therapeutic efficacy in disease models, with no report of pharmacokinetic parameters (CL, V, etc.) for leriglitazone. |
+| PGx | Traver_2024 | not_relevant | 0 | 0 | The paper describes the development of a PBPK model and dose selection for children based on age/weight ontogeny, but does not report a pharmacogenomic effect of a specific gene variant on PK or PD parameters. |
+| popPK | Vaidyanathan_2008 | irrelevant | 0 | 0 | The study investigates the drug aliskiren and its interactions with metformin, pioglitazone, and fenofibrate; it does not involve leriglitazone. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

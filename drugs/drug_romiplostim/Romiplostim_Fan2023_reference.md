@@ -4,7 +4,7 @@
 
 # romiplostim — `Romiplostim_Fan2023_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.75). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.75). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -18,24 +18,22 @@
 
 ### Reviewer guidance
 
-**The romiplostim elimination rate constant kel is reported as 52.94 with the unit 'units' (×10–4/h), a dimension mismatch that could not be converted to SI, so the record was rejected.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The elimination rate constant kel for romiplostim carries the verbatim unit 'units' (label KE ×10–4/h), which does not match the dimension of a rate constant and could not be expressed in SI units, so no usable value reached the model. The absorption rate constant kabs (0.0269 1/h) was read consistently by both readers. A second reader additionally extracted parameters tmp (106) and tret (35.13) that are absent from this record. Extracted — romiplostim: kel 52.9 units, kabs 0.0269 1/h.
+Extracted — romiplostim: t1/2z 140 h, kel 52.9 1/h, kabs 0.173 1/h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of tmp: this record has none, the second reading 106; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by glm-5.3-flash</sub>
-
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:39:43.381102+00:00) predates the upstream re-run (2026-10-05 19:24:12.692844+00:00). Current validate status: `rejected`.
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Fan X et al., Novel Combination of Erythropoietin and…, ACS pharmacology & translat… (2023)
   ·  DOI: [10.1021/acsptsci.3c00194](https://doi.org/10.1021/acsptsci.3c00194)
 
-<div class="pk-model-meta" hidden drug="romiplostim" model-id="Romiplostim_Fan2023_reference" status="rejected" stale="true" population="rats with chemotherapy-induced anemia and thrombocytopenia" measured-compound="romiplostim" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="romiplostim" model-id="Romiplostim_Fan2023_reference" status="rejected" stale="false" population="female Sprague-Dawley rats with carboplatin-induced anemia and thrombocytopenia" measured-compound="romiplostim" parameterization="mechanistic" topology="general_linear"></div>
 
-**Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 2 extracted.
+**Model structure:** general linear; no model was built for this record.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -44,8 +42,9 @@ Fan X et al., Novel Combination of Erythropoietin and…, ACS pharmacology & tra
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| KE (×10–4/h) | `Q47` · kel | 52.94 | units | not captured | [units] | 16.02 | exact (1.0) | tbl1:row8:col2, tbl1:row8:col3 | — | not captured |
-| KAE (1/h) | `Q49` · kabs | 0.0269 | 1/h | 7.472222222222222e-06 | 1/h | not captured | review_gapfill (0.7) | Fan_2023_2:review | — | not captured |
+| TPLT (h) | `Q57` · t1/2z | 139.8 | h | 503280.00000000006 | [h] | 5.423 | llm (0.6) | tbl1:row7:col2 | — | not captured |
+| KE (×10–4/h) | `Q47` · kel | 52.94 | 1/h | 0.014705555555555555 | 1/h | 16.02 | exact (1.0) | tbl1:row8:col2 | — | not captured |
+| KINTR (1/h) | `Q49` · kabs | 0.173 | 1/h | 4.805555555555555e-05 | 1/h | not captured | review_gapfill (0.7) | Fan_2023_2:review | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -55,29 +54,27 @@ Fan X et al., Novel Combination of Erythropoietin and…, ACS pharmacology & tra
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'kill (mL/μg)' — extend the ontology if this is a real PK parameter (source ['tbl1:row1:col2', 'tbl1:row1:col3'])
-- dropped unlinked row (NIL): 'RBC0 (×1012 cells/L)' — extend the ontology if this is a real PK parameter (source ['tbl1:row2:col2', 'tbl1:row2:col3'])
-- dropped unlinked row (NIL): 'TRET (h)' — extend the ontology if this is a real PK parameter (source ['tbl1:row3:col2', 'tbl1:row3:col3'])
-- dropped unlinked row (NIL): 'TRBC (h)' — extend the ontology if this is a real PK parameter (source ['tbl1:row4:col2', 'tbl1:row4:col3'])
-- dropped unlinked row (NIL): 'PLT0 (×1012 cells/L)' — extend the ontology if this is a real PK parameter (source ['tbl1:row5:col2', 'tbl1:row5:col3'])
-- dropped unlinked row (NIL): 'TMP (h)' — extend the ontology if this is a real PK parameter (source ['tbl1:row6:col2', 'tbl1:row6:col3'])
-- dropped unlinked row (NIL): 'TPLT (h)' — extend the ontology if this is a real PK parameter (source ['tbl1:row7:col2', 'tbl1:row7:col3'])
-- unit_dimension_mismatch: 'KE (×10–4/h)' → Q47 (unit '[luminosity] / [length] ** 2' vs ontology '1 / [time]') — route to review
-- dropped unlinked row (NIL): 'MCH (pg/cell)' — extend the ontology if this is a real PK parameter (source ['tbl1:row9:col2', 'tbl1:row9:col3'])
-- dropped unlinked row (NIL): 'SmaxRM1' — extend the ontology if this is a real PK parameter (source ['tbl1:row10:col2', 'tbl1:row10:col3'])
-- dropped unlinked row (NIL): 'SmaxRM2' — extend the ontology if this is a real PK parameter (source ['tbl1:row11:col2', 'tbl1:row11:col3'])
-- dropped unlinked row (NIL): 'SmaxPLT1' — extend the ontology if this is a real PK parameter (source ['tbl1:row12:col2', 'tbl1:row12:col3'])
-- dropped unlinked row (NIL): 'SmaxPLT2' — extend the ontology if this is a real PK parameter (source ['tbl1:row13:col2', 'tbl1:row13:col3'])
-- dropped unlinked row (NIL): 'SmaxEPO' — extend the ontology if this is a real PK parameter (source ['tbl1:row14:col2', 'tbl1:row14:col3'])
-- dropped PD-category row 'SC50E (mIU/mL)' → Q321 (EC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tbl1:row15:col2', 'tbl1:row15:col3'])
-- dropped PD-category row 'Ke0 (1/h)' → Q326 (ke0, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tbl1:row16:col2', 'tbl1:row16:col3'])
-- table mostly unlinked (13/16 table-cell rows NIL) — likely the wrong table was located, not 3 genuinely-missing ontology parameter(s); route_to_review instead of building a model from the residual linked cell(s)
+- dropped PD-category row 'kill (mL/μg)' → Q342 (lambda_hazard, category G14) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tbl1:row1:col2'])
+- dropped unlinked row (NIL): 'RBC0 (×1012 cells/L)' — extend the ontology if this is a real PK parameter (source ['tbl1:row2:col2'])
+- dropped unlinked row (NIL): 'TRET (h)' — extend the ontology if this is a real PK parameter (source ['tbl1:row3:col2'])
+- dropped unlinked row (NIL): 'TRBC (h)' — extend the ontology if this is a real PK parameter (source ['tbl1:row4:col2'])
+- dropped unlinked row (NIL): 'PLT0 (×1012 cells/L)' — extend the ontology if this is a real PK parameter (source ['tbl1:row5:col2'])
+- dropped unlinked row (NIL): 'TMP (h)' — extend the ontology if this is a real PK parameter (source ['tbl1:row6:col2'])
+- dropped unlinked row (NIL): 'MCH (pg/cell)' — extend the ontology if this is a real PK parameter (source ['tbl1:row9:col2'])
+- dropped unlinked row (NIL): 'SmaxRM1' — extend the ontology if this is a real PK parameter (source ['tbl1:row10:col2'])
+- dropped unlinked row (NIL): 'SmaxRM2' — extend the ontology if this is a real PK parameter (source ['tbl1:row11:col2'])
+- dropped unlinked row (NIL): 'SmaxPLT1' — extend the ontology if this is a real PK parameter (source ['tbl1:row12:col2'])
+- dropped unlinked row (NIL): 'SmaxPLT2' — extend the ontology if this is a real PK parameter (source ['tbl1:row13:col2'])
+- dropped unlinked row (NIL): 'SmaxEPO' — extend the ontology if this is a real PK parameter (source ['tbl1:row14:col2'])
+- dropped unlinked row (NIL): 'SC50E (mIU/mL)' — extend the ontology if this is a real PK parameter (source ['tbl1:row15:col2'])
+- dropped PD-category row 'Ke0 (1/h)' → Q326 (ke0, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tbl1:row16:col2'])
+- implicit units: 'KE (×10–4/h)' → 1/h (from the popPK convention: "The text explicitly identifies KE as a 'first-order rate constant' (specifically for the differentiation of HSPCs). By d")
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=romiplostim
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
 - status held at route_to_review — not promoted
 - molar mass: none found for 'romiplostim' — its concentrations stay mass-only
 - skipped review gap-fill of CL: primary's parameterization (rate-constant / ka-only) does not use it
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
 - gap-filled Q49 (kabs) from Fan_2023_2's review values (primary lacked it)
 
@@ -109,12 +106,13 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q47 | fail | [luminosity] / [length] ** 2 | units | not captured | not captured | ['tbl1:row8:col2', 'tbl1:row8:col3'] |
+| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['tbl1:row8:col2'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Fan_2023_2:review'] |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['tbl1:row7:col2'] |
+| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none'] | not captured | not captured | not captured |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -123,7 +121,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_romiplostim/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Fan_2023` / `Fan_2023::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_romiplostim/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Fan_2023` / `Fan_2023::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -139,4 +137,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 19:24 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 18:15 UTC</sub>

@@ -1,7 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;ixekizumab&quot;,&quot;href&quot;:&quot;drugs/drug_ixekizumab/&quot;},{&quot;label&quot;:&quot;Chigutsa_2018 \u00b7 PD Psoriasis Activity and Severity Index [PASI] scores&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;ixekizumab&quot;,&quot;href&quot;:&quot;drugs/drug_ixekizumab/&quot;},{&quot;label&quot;:&quot;Chigutsa_2018 \u00b7 PD Psoriasis Activity and Severity Index [PASI]&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ixekizumab_RodrguezFernndez2022_reference&quot;,&quot;label&quot;:&quot;Rodr\u00edguez-Fern\u00e1ndez_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ixekizumab/Ixekizumab_RodrguezFernndez2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Psoriasis Activity and Severity Index [PASI] scores — PD  <span class="pk-badge pk-badge--orange">needs review</span>
+# Psoriasis Activity and Severity Index [PASI] — PD  <span class="pk-badge pk-badge--orange">needs review</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -13,19 +14,19 @@
 
 ## Record summary
 
-**As extracted:** Ixekizumab drives Psoriasis Activity and Severity Index [PASI] scores: categorical (graded) response model.
+**As extracted:** Ixekizumab (concentrations from the PK model of Jackson_2022) drives Psoriasis Activity and Severity Index [PASI]: categorical (graded) response model.
 
 **Model:** No model was generated from this record.
 
-> No pharmacodynamic mechanism or model parameters are described because no paper text is available. Therefore, the specific relationship between ixekizumab concentrations and PASI scores cannot be summarized.
+> The paper does not provide full text or a specific pharmacodynamic model description. Therefore, the mechanism and specific potency values are not available.
 >
 > <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Chigutsa_2018`
 - **model family:** `categorical`
-- **driver:** `not_resolved`
-- **tier:** descriptive
-- **effect:** inhibition/unknown
+- **driver:** `cited_pk`
+- **tier:** population
+- **effect:** unknown/unknown
 
 ## Citation
 Chigutsa E et al., Exposure-Response Modeling to Character…, Journal of clinical pharmac… (2018)

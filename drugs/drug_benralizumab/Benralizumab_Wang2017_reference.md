@@ -5,7 +5,7 @@
 
 # benralizumab — `Benralizumab_Wang2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.667). Primary extraction retained.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -21,7 +21,7 @@
 
 The values on this record come from other papers. Extracted — benralizumab: ? 25, ? -0.4, CL/F 407 mL/day, V/F 8.9 L.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl/f: this record has 406.8, the second reading none; it also differs on 1 more field. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has benralizumab, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -83,19 +83,22 @@ Wang B et al., Population Pharmacokinetics and Pharmac…, CPT: pharmacometrics 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.667 (4/6 fields) | 2 |
+| `gpt-oss-120b` | not confirmed | 0.167 (1/6 fields) | 5 |
 
-<details><summary>2 field discrepancies</summary>
+<details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.parameterization` | apparent_wrt_Fm | mechanistic | mismatch |
 | `gpt-oss-120b` | `parameters[cl/f]` | 406.8 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[vz/f]` | 8.9 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | benralizumab | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | benralizumab | unknown | mismatch |
 
 </details>
 
@@ -125,7 +128,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_benralizumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Wang_2017` / `Wang_2017::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_benralizumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Wang_2017` / `Wang_2017::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

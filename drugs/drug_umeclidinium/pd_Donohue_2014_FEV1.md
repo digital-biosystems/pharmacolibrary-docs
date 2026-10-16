@@ -18,9 +18,9 @@
 
 **Model:** No model was generated from this record.
 
-> The paper does not state the mechanism. Umeclidinium dose was related to trough FEV1 with an Emax-type model, with an ED50 of 33 mcg; no Imax, kin, kout, ke0, or gamma values are given.
+> The model describes a direct Emax stimulation of trough FEV1 by umeclidinium dose, with an ED50 of 33 mcg. The paper does not provide further mechanistic details or rate constants.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
 
 - **paper:** `Donohue_2014`
 - **model family:** `emax`

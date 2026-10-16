@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B03X&quot;,&quot;href&quot;:&quot;atc/B03X.md&quot;},{&quot;label&quot;:&quot;darbepoetin alfa&quot;,&quot;href&quot;:&quot;drugs/drug_darbepoetin_alfa/&quot;},{&quot;label&quot;:&quot;Keller_2015 \u00b7 PD erythropoietin effect&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;DarbepoetinAlfa_Doshi2010_reference&quot;,&quot;label&quot;:&quot;Doshi_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Doshi2010_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;DarbepoetinAlfa_Jeon2021_reference&quot;,&quot;label&quot;:&quot;Jeon_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Jeon2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;DarbepoetinAlfa_Kawakami2009_reference&quot;,&quot;label&quot;:&quot;Kawakami_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Kawakami2009_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;DarbepoetinAlfa_Roberts2015_reference&quot;,&quot;label&quot;:&quot;Roberts_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Roberts2015_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;DarbepoetinAlfa_Doshi2010_reference&quot;,&quot;label&quot;:&quot;Doshi_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Doshi2010_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;DarbepoetinAlfa_Kawakami2009_reference&quot;,&quot;label&quot;:&quot;Kawakami_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Kawakami2009_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;DarbepoetinAlfa_Kim2019_reference&quot;,&quot;label&quot;:&quot;Kim_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Kim2019_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;DarbepoetinAlfa_Roberts2015_reference&quot;,&quot;label&quot;:&quot;Roberts_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Roberts2015_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # erythropoietin effect — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.833). Primary extraction retained.">cross-check: disputed</span>
@@ -18,15 +18,15 @@
 
 **Model:** No model was generated from this record.
 
-> The model describes a direct sigmoidal Emax stimulation of the erythropoietin effect by darbepoetin concentrations, with a CE50 of 0.41 ng/ml and a Hill coefficient (H) of 3.0. The paper does not provide further mechanistic details or rate constants.
+> The record specifies a sigmoidal Emax model where darbepoetin concentrations (ng/ml) directly stimulate the erythropoietin effect with a CE50 of 0.41 ng/ml and a Hill coefficient (H) of 3.0. Since no paper excerpts are available, the specific mechanistic details regarding production or inhibition of the response are not described in the provided text.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Keller_2015`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
 - **tier:** descriptive
-- **effect:** stimulation/unknown
+- **effect:** stimulation/additive
 
 ## Citation
 Keller F et al., Pharmacokinetic and pharmacodynamic con…, Expert opinion on drug meta… (2015)

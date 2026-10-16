@@ -19,7 +19,7 @@
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's terminal half-life (paper 580, model 2.22e+04); the model does not reproduce the paper's peak concentration (Cmax).**
+**The model does not reproduce the paper's terminal half-life; the model does not reproduce the paper's peak concentration (Cmax).**
 
 Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. Extracted — mefloquine: kabs 0.3 h -1, CL/F 0.014 L/h, Q/F 0.027 L/h, V1/F 1.04 L, V2/F 7.39 L.
 
@@ -31,7 +31,7 @@ Independently confirmed by `gpt-oss-120b`.
 Rufener R et al., Activity of mefloquine and mefloquine d…, International journal for p… (2018)
   ·  DOI: [10.1016/j.ijpddr.2018.06.004](https://doi.org/10.1016/j.ijpddr.2018.06.004)
 
-<div class="pk-model-meta" hidden drug="mefloquine" model-id="Mefloquine_Rufener2018_reference" status="needs_review" stale="false" population="mice infected with E. multilocularis eggs" measured-compound="mefloquine" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="mefloquine" model-id="Mefloquine_Rufener2018_reference" status="needs_review" stale="false" population="mice" measured-compound="mefloquine" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 5 extracted.
@@ -72,7 +72,8 @@ Rufener R et al., Activity of mefloquine and mefloquine d…, International jour
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- no TEI final-model table id; trying text-pointer table recovery
+- table Rufener_2018_table_p4_1: no_numeric_grid
+- table Rufener_2018_table_p4_1: unparsed_numeric_cell
 - text-pointer recovery: parsed 0 structural record(s) from the flattened table 1 sentence
 
 ## Validation
@@ -119,12 +120,9 @@ _All readers agree on the compared fields of this record._
 | T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 | T1_cmax | reference | skipped | not captured | 0.07662929016038568 | not captured | non-numeric value |
 | T1_cmax | reference | fail | 0.00263 | 0.07662929016038568 | 29.1366 | mg/L→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.00263 | 0.07662929016038568 | 29.1366 | mg/L→SI vs simulated kg/m3 |
-| T1_cmax | reference | skipped | 96.6 | 0.07662929016038568 | not captured | unresolved concentration unit (exp '%', sim 'kg/m3') |
 | T1_cmin_ss | reference | skipped | not captured | not captured | not captured | no simulated metric for this quantity (single reference sim) |
 | T1_cmin_ss | reference | skipped | 1.15 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_cmin_ss | reference | skipped | 1.15 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_cmin_ss | reference | skipped | 91.4 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_beta | reference | skipped | not captured | 22227.4629480398 | not captured | non-numeric value |
 | T1_t_half_beta | reference | fail | 580.0 | 22227.4629480398 | 38.3232 | h→SI vs simulated h |
 
 <details class="legend">
@@ -134,10 +132,10 @@ _All readers agree on the compared fields of this record._
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_mefloquine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Rufener_2018` / `Rufener_2018::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_mefloquine/models/modelica/Mefloquine_Rufener2018_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_mefloquine/models/modelica/Mefloquine_Rufener2018_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_mefloquine/models/modelica/Mefloquine_Rufener2018_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_mefloquine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Rufener_2018` / `Rufener_2018::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_mefloquine/models/modelica/Mefloquine_Rufener2018_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_mefloquine/models/modelica/Mefloquine_Rufener2018_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_mefloquine/models/modelica/Mefloquine_Rufener2018_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -155,7 +153,7 @@ _All readers agree on the compared fields of this record._
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_mefloquine/Mefloquine_Rufener2018_reference/Mefloquine_Rufener2018_reference.svg" alt="Mefloquine_Rufener2018_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_mefloquine/Mefloquine_Rufener2018_reference/Mefloquine_Rufener2018_reference.svg" alt="Mefloquine_Rufener2018_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -168,4 +166,4 @@ _All readers agree on the compared fields of this record._
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 07:25 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 00:55 UTC</sub>

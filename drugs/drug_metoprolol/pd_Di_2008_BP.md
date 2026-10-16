@@ -19,9 +19,9 @@
 
 **Model:** No model was generated from this record.
 
-> The record describes an effect compartment model where metoprolol concentrations inhibit blood pressure, with maximum effects (Emax) of -24 mm Hg and -14 mm Hg. The paper does not provide the full text or specific mechanism details beyond the record's classification.
+> The record describes an effect compartment model where metoprolol concentrations inhibit blood pressure (mm Hg), but the paper does not provide the underlying mechanism or kinetic parameters (IC50, EC50, ke0). The record lists maximum effect (Emax) values of -24 +/- 1 mm Hg and -14 +/- 1 mm Hg.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Di_2008`
 - **model family:** `effect_compartment`
@@ -36,8 +36,8 @@ Di Verniero CA et al., In vitro and in vivo pharmacodynamic pr…, Journal of ca
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | Emax | `Q323` · not captured | -24 | mm Hg | not captured | direction (not captured) | Di_2008:pdv3 |
-| PD (effect) | Emax | `Q323` · not captured | -14 | mm Hg | not captured | direction (not captured) | Di_2008:pdv3 |
+| PD (effect) | Emax | `Q323` · not captured | -24 +/- 1 | mm Hg | not captured | direction (not captured) | Di_2008:pdv3 |
+| PD (effect) | Emax | `Q323` · not captured | -14 +/- 1 | mm Hg | not captured | direction (not captured) | Di_2008:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>

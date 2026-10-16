@@ -1,8 +1,8 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;fluorouracil&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/&quot;},{&quot;label&quot;:&quot;Daryani_2016 \u00b7 PD tumor growth&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fluorouracil_Bae2026_reference&quot;,&quot;label&quot;:&quot;Bae_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Bae2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Lubomirov2025_reference&quot;,&quot;label&quot;:&quot;Lubomirov_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Lubomirov2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Lvi2000_reference&quot;,&quot;label&quot;:&quot;L\u00e9vi_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Lvi2000_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Yang2025_reference&quot;,&quot;label&quot;:&quot;Yang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Yang2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Daryani_2016_bioluminescence&quot;,&quot;label&quot;:&quot;Daryani_2016 \u00b7 bioluminescence&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/pd_Daryani_2016_bioluminescence.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fluorouracil_Kang2025_reference&quot;,&quot;label&quot;:&quot;Kang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Kang2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Lubomirov2025_reference&quot;,&quot;label&quot;:&quot;Lubomirov_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Lubomirov2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Lvi2000_reference&quot;,&quot;label&quot;:&quot;L\u00e9vi_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Lvi2000_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Yang2025_reference&quot;,&quot;label&quot;:&quot;Yang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Yang2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Bae2026_reference&quot;,&quot;label&quot;:&quot;Bae_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Bae2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Pierik_2024_V&quot;,&quot;label&quot;:&quot;Pierik_2024 \u00b7 V&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/pd_Pierik_2024_V.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Daryani_2016_bioluminescence&quot;,&quot;label&quot;:&quot;Daryani_2016 \u00b7 bioluminescence&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/pd_Daryani_2016_bioluminescence.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Ma_2022_T&quot;,&quot;label&quot;:&quot;Ma_2022 \u00b7 T&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/pd_Ma_2022_T.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# tumor growth — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.50).">human + animal</span>
+# tumor growth — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by ollama:gpt-oss:120b (not confirmed, agreement 0.875). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.50).">human + animal</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -20,15 +20,15 @@
 
 **Model:** Model and browser simulation available in **Models** and **Simulation**.
 
-> Fluorouracil concentration in the tumor interstitial fluid (tECF) inhibits tumor bioluminescence by acting as a direct inhibitory term on the proliferation of tumor cells within a transit compartment model, where the drug effect is described by a sigmoidal Emax function. The model parameters are a maximum inhibitory rate (Kmax,m) of 0.658 1/hr, an IC50,m of 2.12 μM, and a Hill coefficient (Hm) of 1.22.
+> The model describes 5-FU concentrations in the tumor extracellular fluid (tECF) inhibiting tumor growth (measured by bioluminescence) via a sigmoidal Emax effect on the tumor growth rate constant (Km), with a maximum inhibitory effect (kmax,m) of 0.658 1/hr, an EC50 of 2.12 μM, and a Hill coefficient of 1.22. Drug-induced cell death is represented by three transit compartments with a first-order rate constant (Kdel,m) of 0.946 1/hr.
 >
-> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
 
 - **paper:** `Daryani_2016`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
 - **tier:** population
-- **effect:** inhibition/unknown
+- **effect:** inhibition/proportional
 
 ## Citation
 Daryani VM et al., Translational Pharmacokinetic-Pharmacod…, CPT: pharmacometrics & syst… (2016)
@@ -37,15 +37,11 @@ Daryani VM et al., Translational Pharmacokinetic-Pharmacod…, CPT: pharmacometr
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | Maximum 5‐FU tumor inhibitory effect (Kmax,m) | `Q323` · not captured | 0.658 | 1/hr | not captured | llm (not captured) | Daryani_2016:pdv3 |
-| PD (effect) | 5‐FU tECF concentration producing half the maximum tumor inhibitory effect (IC50,m) | `Q322` · not captured | 2.12 | μM | not captured | llm (not captured) | Daryani_2016:pdv3 |
-| PD (effect) | Hill coefficient (Hm) | `Q325` · not captured | 1.22 | not captured | not captured | llm (not captured) | Daryani_2016:pdv3 |
-| PD (effect) | Rate constant transit tumor compartment (Kdel,m) | `Q328` · not captured | 0.946 | 1/hr | not captured | llm (not captured) | Daryani_2016:pdv3 |
-| model term | Exponential tumor growth parameter ( θKexp,m, 1) for experiment one | `Q900` · not captured | 0.158 | 1/hr | not captured | llm (not captured) | Daryani_2016:pdv3 |
-| model term | Linear covariate effect on θKexp,m,1 for experiments two and three ( θKexp,m, 2/3) | `Q900` · not captured | 0.102 | 1/hr | not captured | llm (not captured) | Daryani_2016:pdv3 |
-| model term | Linear tumor growth parameter (Klin,m) | `Q900` · not captured | 214,000 | 1/hr | not captured | llm (not captured) | Daryani_2016:pdv3 |
-| model term | Constant related to switching tumor growth from exponential to linear (Ψm) | `Q900` · not captured | 0.0936 | not captured | not captured | llm (not captured) | Daryani_2016:pdv3 |
-| variability | Residual variability for tumor growth (σefficacy, prop) | `Q315` · not captured | 37.0 | % CV | not captured | llm (not captured) | Daryani_2016:pdv3 |
+| PD (effect) | Maximum 5-FU tumor inhibitory effect | `Q323` · not captured | 0.658 | 1/hr | not captured | llm (not captured) | Daryani_2016:pdv3 |
+| PD (effect) | 5-FU tECF concentration producing half the maximum tumor inhibitory effect | `Q322` · not captured | 2.12 | μM | not captured | llm (not captured) | Daryani_2016:pdv3 |
+| PD (effect) | Hill coefficient | `Q325` · not captured | 1.22 | not captured | not captured | llm (not captured) | Daryani_2016:pdv3 |
+| — | Rate constant transit tumor compartment | `Q100` · not captured | 0.946 | 1/hr | not captured | nil (not captured) | Daryani_2016:pdv3 |
+| variability | Residual variability for tumor growth | `Q315` · not captured | 37.0 | % CV | not captured | llm (not captured) | Daryani_2016:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -97,24 +93,17 @@ Advisory:
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
+Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `einfracz:gpt-oss-120b` | not confirmed | 0.2 (2/10 fields) | 8 |
+| `ollama:gpt-oss:120b` | not confirmed | 0.875 (7/8 fields) | 1 |
 
-<details><summary>8 field discrepancies</summary>
+<details><summary>1 field discrepancy</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `einfracz:gpt-oss-120b` | `driver_compound` | 5-FU | 5-FU tECF concentration | mismatch |
-| `einfracz:gpt-oss-120b` | `effect_form` | unknown | proportional | mismatch |
-| `einfracz:gpt-oss-120b` | `parameters[Q321]` | not captured | 2.12 (0.28–5.84) | only_one_extracted |
-| `einfracz:gpt-oss-120b` | `parameters[Q322]` | 2.12 | not captured | only_one_extracted |
-| `einfracz:gpt-oss-120b` | `parameters[Q323].value` | 0.658 | 0.658 (0.316–1.134) | mismatch |
-| `einfracz:gpt-oss-120b` | `parameters[Q325].value` | 1.22 | 1.22 (0.64–1.89) | mismatch |
-| `einfracz:gpt-oss-120b` | `parameters[Q328]` | 0.946 | not captured | only_one_extracted |
-| `einfracz:gpt-oss-120b` | `parameters[Q900]` | 0.0936 | not captured | only_one_extracted |
+| `ollama:gpt-oss:120b` | `parameters[Q100]` | 0.946 | not captured | only_one_extracted |
 
 </details>
 

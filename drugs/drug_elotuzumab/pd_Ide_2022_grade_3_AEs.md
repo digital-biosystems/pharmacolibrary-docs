@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;elotuzumab&quot;,&quot;href&quot;:&quot;drugs/drug_elotuzumab/&quot;},{&quot;label&quot;:&quot;Ide_2022 \u00b7 PD time to the first occurrence of grade 3 + AEs&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;elotuzumab&quot;,&quot;href&quot;:&quot;drugs/drug_elotuzumab/&quot;},{&quot;label&quot;:&quot;Ide_2022 \u00b7 PD time to the first occurrence of grade 3 + adverse events&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# time to the first occurrence of grade 3 + AEs — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span>
+# time to the first occurrence of grade 3 + adverse events — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -13,13 +13,13 @@
 
 ## Record summary
 
-**As extracted:** Elotuzumab (concentrations from this paper's PK model) drives time to the first occurrence of grade 3 + AEs: time-to-event model.
+**As extracted:** Elotuzumab (concentrations from this paper's PK model) drives time to the first occurrence of grade 3 + adverse events: time-to-event model.
 
 **Model:** No model was generated from this record.
 
-> Elotuzumab daily Cavg (μg/mL) was related to time to first grade 3+ adverse event using a time-varying Cox proportional-hazards model; higher exposure was associated with lower hazard, with a hazard ratio of 0.9981 for daily Cavg and a predicted HR of 0.845 (95% CI 0.734–0.980) for the 95th versus 5th exposure percentiles. The paper does not specify a biological mechanism for this association.
+> Elotuzumab exposure (daily Cavg) was modeled using a semi-parametric Cox proportional hazards model to assess its impact on the hazard of time to the first occurrence of grade 3+ adverse events, with the relationship described as a proportional effect where higher exposures decreased risk. The model predicted a hazard ratio of 0.845 (95% CI 0.734–0.980) for grade 3+ AEs at the 95th percentile of daily Cavg relative to the 5th percentile, and the paper does not specify a mechanistic mode of action (e.g., Emax or compartmental) for this toxicity, noting that the inverse association may reflect patient health rather than a direct pharmacodynamic mechanism.
 >
-> <sub>Source-based summary by gpt-6-luna from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Ide_2022`
 - **model family:** `tte`
@@ -34,7 +34,7 @@ Ide T et al., Population pharmacokinetic and exposure…, Cancer chemotherapy an
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| model term | Hazard ratio for daily Cavg | `Q900` · not captured | 0.9981 | not captured | not captured | llm (not captured) | Ide_2022:pdv3 |
+| — | HR of grade 3 + AEs at 95th percentile relative to 5th percentile of Cavg1 | `Q100` · not captured | 0.845 | not captured | not captured | nil (not captured) | Ide_2022:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>

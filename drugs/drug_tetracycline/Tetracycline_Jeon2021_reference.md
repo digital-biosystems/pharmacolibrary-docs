@@ -5,7 +5,7 @@
 
 # tetracycline — `Tetracycline_Jeon2021_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.889), gpt-oss:120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.417), gpt-oss:120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -21,7 +21,7 @@
 
 The source text does not report an absorption rate constant, so the model builder used placeholder values for the absorption rate and lag time. This means the simulated absorption profile relies on generic assumptions rather than data specific to this tetracycline study. Additionally, the second reader disagreed with the record on several other parameter values, including those for bioavailability and metabolic fractions. Extracted — tetracycline: CL/F 18.4 L/h, V/F 138 L.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q19: this record has 3.02, the second reading 3.02. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q19: this record has 3.02, the second reading 3.02; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
@@ -68,14 +68,20 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.889 (8/9 fields) | 1 |
+| `gpt-oss-120b` | not confirmed | 0.417 (5/12 fields) | 7 |
 | `gpt-oss:120b` | not confirmed | 0.5 (6/12 fields) | 6 |
 
-<details><summary>7 field discrepancies</summary>
+<details><summary>13 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `values[Q19]` | 3.02 | 3.02 | mismatch |
+| `gpt-oss-120b` | `values[Q21]` | not captured | 0.7821 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q32]` | not captured | 0.6 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q34]` | 0.6 | 0.1 | mismatch |
+| `gpt-oss-120b` | `values[Q35]` | not captured | 0.7485 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q36]` | 0.1 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q56]` | 1.5 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q19]` | 3.02 | 3.02 | mismatch |
 | `gpt-oss:120b` | `values[Q32]` | not captured | 0.6 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q34]` | 0.6 | 0.1 | mismatch |
@@ -124,10 +130,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_tetracycline/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Jeon_2021` / `Jeon_2021::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_tetracycline/models/modelica/Tetracycline_Jeon2021_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_tetracycline/models/modelica/Tetracycline_Jeon2021_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_tetracycline/models/modelica/Tetracycline_Jeon2021_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_tetracycline/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Jeon_2021` / `Jeon_2021::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_tetracycline/models/modelica/Tetracycline_Jeon2021_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_tetracycline/models/modelica/Tetracycline_Jeon2021_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_tetracycline/models/modelica/Tetracycline_Jeon2021_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -145,7 +151,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_tetracycline/Tetracycline_Jeon2021_reference/Tetracycline_Jeon2021_reference.svg" alt="Tetracycline_Jeon2021_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_tetracycline/Tetracycline_Jeon2021_reference/Tetracycline_Jeon2021_reference.svg" alt="Tetracycline_Jeon2021_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

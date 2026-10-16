@@ -19,9 +19,9 @@
 
 **Model:** No model was generated from this record.
 
-> The model describes bevantolol concentrations (in microgram.ml-1) inhibiting heart rate via an effect compartment mechanism. The estimated parameters are an EC50 of 0.2 +/- 0.1 microgram.ml-1 and a K(eo) of 0.03 +/- 0.02 min-1.
+> Bevantolol concentrations inhibit heart rate through a direct effect linked to the plasma concentration by an effect compartment. The model characterizes this inhibition with an EC50 of 0.2 +/- 0.1 microgram.ml-1 and a rate constant (ke0) of 0.03 +/- 0.02 min-1.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Liu_1993`
 - **model family:** `effect_compartment`

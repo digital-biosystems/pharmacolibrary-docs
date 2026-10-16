@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;quinine&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/&quot;},{&quot;label&quot;:&quot;Le_2005 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Quinine_Hendriksen2013_reference&quot;,&quot;label&quot;:&quot;Hendriksen_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Hendriksen2013_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quinine_Kloprogge2014_reference&quot;,&quot;label&quot;:&quot;Kloprogge_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Kloprogge2014_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quinine_Phillips1986_reference&quot;,&quot;label&quot;:&quot;Phillips_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Phillips1986_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Quinine_Hendriksen2013_reference&quot;,&quot;label&quot;:&quot;Hendriksen_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Hendriksen2013_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quinine_Phillips1986_mean_s_d&quot;,&quot;label&quot;:&quot;Phillips_1986_mean_s_d&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Phillips1986_mean_s_d.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quinine_Kloprogge2014_reference&quot;,&quot;label&quot;:&quot;Kloprogge_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Kloprogge2014_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quinine_Michels2019_estimate&quot;,&quot;label&quot;:&quot;Michels_2019_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Michels2019_estimate.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Maciel_2024_P_berghei_infected_erythrocytes&quot;,&quot;label&quot;:&quot;Maciel_2024 \u00b7 P. berghei-infected erythrocytes&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/pd_Maciel_2024_P_berghei_infected_erythrocytes.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Pukrittayakamee_2003_PMR&quot;,&quot;label&quot;:&quot;Pukrittayakamee_2003 \u00b7 PMR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/pd_Pukrittayakamee_2003_PMR.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,22 +17,22 @@
 
 ### Reviewer guidance
 
-**The quinine record was rejected because parameter units were extracted wrongly: the absorption rate constant kabs (0.934) and the slow disposition macro-rate constant λ2 (0.001) carry liters/kg instead of 1/h, and the free-quinine clearance of 0.156 mL/h is physiologically implausible.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The dimension mismatch on the structural parameters is visible in the record itself: kabs and λ2 are rate constants (1/h) but are reported with the unit liters/kg, so their magnitudes cannot be interpreted as rates. The clearance value 0.156 mL/h for free quinine falls far outside any physiological window, consistent with a unit or scale extraction error. Additionally, one reported unit could not be converted to SI units, so that parameter entered the model without a usable SI value, which contributed to holding the record back. Extracted — quinine: kabs 0.934 liters/kg, λ2 0.001 liters/kg, CL 0.156 mL/h.
+Extracted — quinine: kabs 0.934 1/h, CL 0.156 mL/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of b: this record has 0.001, the second reading none; it also differs on 3 more fields. That field does not shape the model.
 
-<sub>reviewed by glm-5.3-flash</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Le Jouan M et al., Quinine pharmacokinetics and pharmacody…, Antimicrobial agents and ch… (2005)
   ·  DOI: [10.1128/AAC.49.9.3658-3662.2005](https://doi.org/10.1128/AAC.49.9.3658-3662.2005)
 
-<div class="pk-model-meta" hidden drug="quinine" model-id="Quinine_Le2005_reference" status="rejected" stale="false" population="children with uncomplicated falciparum malaria" measured-compound="quinine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="quinine" model-id="Quinine_Le2005_reference" status="rejected" stale="false" population="children with malaria" measured-compound="quinine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 3 extracted.
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -41,8 +41,7 @@ Le Jouan M et al., Quinine pharmacokinetics and pharmacody…, Antimicrobial age
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| K a (1/h) | `Q49` · kabs | 0.934 | liters/kg | not captured | [l] / [kg] | 0.244 | space_fold (0.95) | tab_1:row4:col1 | — | 113 (None% RSE) |
-| b (1/h) | `Q68` · λ2 | 0.001 | liters/kg | not captured | [l] / [kg] | not captured | llm (0.6) | tab_1:row5:col1 | — | not captured |
+| K a (1/h) | `Q49` · kabs | 0.934 | 1/h | 0.00025944444444444447 | [1] / [h] | not captured | space_fold (0.95) | tab_1:row4:col1 | — | not captured |
 | CL (free QN) | `Q22` · CL | 0.156 | mL/h | 4.333333333333333e-11 | L/h | not captured | review_gapfill (0.7) | Maciel_2024:review | — | not captured |
 
 <details class="legend">
@@ -53,25 +52,18 @@ Le Jouan M et al., Quinine pharmacokinetics and pharmacody…, Antimicrobial age
 ## Departures & gaps
 
 **Interpretation flags:**
-- table section iiv: 'Clearance parameters, a 1' routed out of structural estimates ('Interindividual CV (%)')
-- table section iiv: '(liter/h), 5 (liters/h/kg) Volume parameters, a 2' routed out of structural estimates ('Interindividual CV (%)')
-- table section iiv: 'K a (1/h)' routed out of structural estimates ('Interindividual CV (%)')
-- table section iiv: 'b (1/h)' routed out of structural estimates ('Interindividual CV (%)')
-- unit_dimension_mismatch: 'K a (1/h)' → Q49 (unit '[length] ** 3' vs ontology '1 / [time]') — route to review
-- unit_dimension_mismatch: 'b (1/h)' → Q68 (unit '[length] ** 3' vs ontology '[mass] / [time]') — route to review
+- dropped unlinked row (NIL): 'b (1/h)' — extend the ontology if this is a real PK parameter (source ['tab_1:row5:col1'])
 - routed 'Variance (ε)' → Q315 (sigma) to residual_error — variability estimate, not a structural parameter
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=quinine
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
-- status held at route_to_review — not promoted
 - gap-filled Q22 (CL) from Maciel_2024's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- unparsed cell tab_1:row1:col1 = '0 (fixed), 0.53 (0.05)'
-- unparsed cell tab_1:row2:col1 = '57 (28), 3.8 (2.0)'
+- table tab_1: unbound_uncertainty
+- table tab_1: unparsed_numeric_cell
 - LLM selected parameter table(s) 1
 
 ## Validation
@@ -104,11 +96,10 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Maciel_2024:review'] |
-| C5_dimension_Q49 | fail | [length] ** 3 | liters/kg | not captured | not captured | ['tab_1:row4:col1'] |
-| C5_dimension_Q68 | fail | [length] ** 3 | liters/kg | not captured | not captured | ['tab_1:row5:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['tab_1:row4:col1'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.156 | not captured | not captured | ['Maciel_2024:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | fail | clearance within physiological range | 0.000156 L/h | not captured | not captured | ['Maciel_2024:review'] |
@@ -120,7 +111,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_quinine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Le_2005` / `Le_2005::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_quinine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Le_2005` / `Le_2005::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -136,4 +127,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 08:36 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 03:32 UTC</sub>

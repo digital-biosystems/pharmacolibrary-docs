@@ -18,7 +18,7 @@ Ramucirumab is a monoclonal antibody used as an anticancer treatment for tumours
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 19:28 | 6:41 | 2/0/1 | 0/0/0 | 0/0/0 | 196,198/10,179 | ollama / qwen3.8:27b-mtp-q8_0 | 9 | 1/8 | 9/0 | 0 |
+| 2026-10-15 03:03 | 32:35 | 2/1/0 | 0/0/3 | 0/0/0 | 92,739/9,055 | einfracz / qwen3.8-27b | 9 | 1/8 | 9/0 | 0 |
 
 ## popPK records
 
@@ -26,7 +26,27 @@ Ramucirumab is a monoclonal antibody used as an anticancer treatment for tumours
 |---|---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.909). Primary extraction retained.">cross-check: partial</span> | [Marachelian_2016_reference](drugs/drug_ramucirumab/Ramucirumab_Marachelian2016_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Marachelian A et al., Comparative pharmacokinetics, safety, a…, Cancer chemotherapy and pha… (2016) | [10.1007/s00280-015-2955-9](https://doi.org/10.1007/s00280-015-2955-9) |
 | <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.818). Primary extraction retained.">cross-check: disputed</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub> | [OBrien_2017_reference](drugs/drug_ramucirumab/Ramucirumab_OBrien2017_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 (+2 cov.) | O'Brien L et al., Population pharmacokinetic meta-analysi…, British journal of clinical… (2017) | [10.1111/bcp.13403](https://doi.org/10.1111/bcp.13403) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Kaneko_2023_reference](drugs/drug_ramucirumab/Ramucirumab_Kaneko2023_reference.md) | — | 1-compartment (no model) | 2 | Kaneko T et al., Effect of massive ascites on ramuciruma…, Cancer chemotherapy and pha… (2023) | [10.1007/s00280-023-04568-x](https://doi.org/10.1007/s00280-023-04568-x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Kaneko_2023_reference](drugs/drug_ramucirumab/Ramucirumab_Kaneko2023_reference.md) | — | 1-compartment (no model) | 0 | Kaneko T et al., Effect of massive ascites on ramuciruma…, Cancer chemotherapy and pha… (2023) | [10.1007/s00280-023-04568-x](https://doi.org/10.1007/s00280-023-04568-x) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Cohn_2017_OS](drugs/drug_ramucirumab/pd_Cohn_2017_OS.md) | overall survival ← ramucirumab · time-to-event model | — | Cohn AL et al., Exposure-response relationship of ramuc…, Cancer chemotherapy and pha… (2017) | [10.1007/s00280-017-3380-z](https://doi.org/10.1007/s00280-017-3380-z) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Cohn_2017_PFS](drugs/drug_ramucirumab/pd_Cohn_2017_PFS.md) | progression-free survival ← ramucirumab · time-to-event model | — | Cohn AL et al., Exposure-response relationship of ramuc…, Cancer chemotherapy and pha… (2017) | [10.1007/s00280-017-3380-z](https://doi.org/10.1007/s00280-017-3380-z) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Cohn_2017_neutropenia](drugs/drug_ramucirumab/pd_Cohn_2017_neutropenia.md) | neutropenia ← ramucirumab · categorical (graded) response model | — | Cohn AL et al., Exposure-response relationship of ramuc…, Cancer chemotherapy and pha… (2017) | [10.1007/s00280-017-3380-z](https://doi.org/10.1007/s00280-017-3380-z) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Nakagawa_2022_PFS](drugs/drug_ramucirumab/pd_Nakagawa_2022_PFS.md) | progression-free survival ← ramucirumab · time-to-event model | — | Nakagawa K et al., RELAY, ramucirumab plus erlotinib versu…, Cancer chemotherapy and pha… (2022) | [10.1007/s00280-022-04447-x](https://doi.org/10.1007/s00280-022-04447-x) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [de_2022_OS](drugs/drug_ramucirumab/pd_de_2022_OS.md) | overall survival ← ramucirumab · time-to-event model | — | de Wit R et al., Exposure-response relationship of ramuc…, British journal of clinical… (2022) | [10.1111/bcp.15233](https://doi.org/10.1111/bcp.15233) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [de_2022_PFS](drugs/drug_ramucirumab/pd_de_2022_PFS.md) | progression-free survival ← ramucirumab · time-to-event model | — | de Wit R et al., Exposure-response relationship of ramuc…, British journal of clinical… (2022) | [10.1111/bcp.15233](https://doi.org/10.1111/bcp.15233) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=ramucirumab).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: KDR (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -38,7 +58,7 @@ Ramucirumab is a monoclonal antibody used as an anticancer treatment for tumours
 
 - **PubMed hits:** 22 matched, 16 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 3  ·  extracted 2  ·  needs_review 1  ·  rejected 0  ·  stale 0
+- **records:** 3  ·  extracted 2  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -50,7 +70,7 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | `Kaneko_2023.pdf` | Kaneko T et al., Effect of massive ascites on ramuciruma…, Cancer chemotherapy and pha… (2023) | popPK | 10 | [10.1007/s00280-023-04568-x](https://doi.org/10.1007/s00280-023-04568-x) | [37458784](https://pubmed.ncbi.nlm.nih.gov/37458784) | The study is a population pharmacokinetic analysis of ramucirumab in humans and reports specific numeric values for clearance (L/h) and trough concentrations (μg/mL) in the abstract. |
 | `Tabernero_2017.pdf` | Tabernero J et al., Exposure-Response Analyses of Ramucirum…, Molecular cancer therapeuti… (2017) | popPK | 8 | [10.1158/1535-7163.MCT-16-0895](https://doi.org/10.1158/1535-7163.MCT-16-0895) | [28716815](https://pubmed.ncbi.nlm.nih.gov/28716815) | The paper describes a population pharmacokinetic analysis and exposure-response relationships for ramucirumab, but the specific numeric PK parameter values (CL, V, etc.) are not present in the provided abstract text. |
 
-<sub>queue written 2026-10-07T19:23:56.925304+00:00</sub>
+<sub>queue written 2026-10-15T02:46:17.603577+00:00</sub>
 
 ## Screened and excluded
 

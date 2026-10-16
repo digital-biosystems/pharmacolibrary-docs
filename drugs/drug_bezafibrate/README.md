@@ -18,7 +18,7 @@ Bezafibrate is a fibrate lipid-lowering drug used to treat hyperlipidemia, inclu
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 11:12 | 11:31 | 0/0/0 | 2/0/0 | 0/0/0 | 275,059/5,385 | ollama / qwen3.8:27b-mtp-q8_0 | 16 | 4/10 | 14/2 | 0 |
+| 2026-10-15 01:09 | 1:01 | 0/0/0 | 1/0/0 | 0/0/0 | 95,646/3,963 | einfracz / qwen3.8-27b | 16 | 4/10 | 14/2 | 0 |
 
 ## popPK records
 
@@ -28,9 +28,21 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Cione_2021_cell_viability](drugs/drug_bezafibrate/pd_Cione_2021_cell_viability.md) | cell viability biomarker turnover ← bezafibrate | — | Cione E et al., Pharmacophore-guided repurposing of fib…, Journal of enzyme inhibitio… (2021) | [10.1080/14756366.2020.1864629](https://doi.org/10.1080/14756366.2020.1864629) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Cione_2021_cell_growth](drugs/drug_bezafibrate/pd_Cione_2021_cell_growth.md) | MCF-7 cell growth biomarker turnover ← bezafibrate | — | Cione E et al., Pharmacophore-guided repurposing of fib…, Journal of enzyme inhibitio… (2021) | [10.1080/14756366.2020.1864629](https://doi.org/10.1080/14756366.2020.1864629) |
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Cione_2021_insulin_secretion](drugs/drug_bezafibrate/pd_Cione_2021_insulin_secretion.md) | insulin secretion biomarker turnover ← bezafibrate | — | Cione E et al., Pharmacophore-guided repurposing of fib…, Journal of enzyme inhibitio… (2021) | [10.1080/14756366.2020.1864629](https://doi.org/10.1080/14756366.2020.1864629) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span> | [Quinn_2008_2_regeneration](drugs/drug_bezafibrate/pd_Quinn_2008_2_regeneration.md) | regeneration ← bezafibrate · direct Emax (saturable) effect | — | Quinn B et al., The effects of pharmaceuticals on the r…, The Science of the total en… (2008) | [10.1016/j.scitotenv.2008.04.039](https://doi.org/10.1016/j.scitotenv.2008.04.039) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=bezafibrate).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| metabolism | liver | `CYP2C8` inhibitor, `CYP3A4` substrate, `SLCO1B1` inhibitor | DrugBank actor |
+| metabolism | lung | `CYP1A1` inducer | DrugBank actor |
+| metabolism | small intestine | `CYP1A1` inducer, `CYP3A4` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: NR1I2 (partial agonist), PPARA (target), PPARD (target), PPARG (target), RXRA (target), RXRB (target), RXRG (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,54 +61,53 @@ _not available_
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Ali_2026 | irrelevant | 0 | 0 | The study focuses on the synthesis and biological evaluation of novel PPAR agonists, using bezafibrate only as a comparator for PPARδ activity, with no pharmacokinetic data reported. |
-| PGx | Attia_1997 | not_relevant | 2 | 5 | The paper reports a clinical response to bezafibrate in diabetic patients and mentions LPL genotypes (epsilon3/3, etc.) only to describe the baseline hypertriglyceridemic status of a subgroup, without analyzing how these genotypes modulate the drug's pharmacokinetic or pharmacodynamic effects. |
-| popPK | Berger_1989 | irrelevant | 0 | 0 | The study focuses on the efficacy of simvastatin in treating hypercholesterolemia, and bezafibrate is only mentioned as a co-administered agent for lipid effects, with no pharmacokinetic parameters reported. |
-| popPK | Bettati_1998 | irrelevant | 0 | 0 | The paper studies the allosteric mechanism of haemoglobin and mentions bezafibrate only as an allosteric effector, not as a subject of pharmacokinetic analysis. |
-| popPK | Boltes_2012 | irrelevant | 0 | 0 | The study is an in-vitro toxicology assessment of mixture effects on algae, not a pharmacokinetic study of bezafibrate. |
-| PGx | Canudas_2001 | not_relevant | 0 | 0 | The paper investigates the effect of bezafibrate on chitotriosidase activity and lipid levels, but does not report how a gene variant affects the pharmacokinetics or pharmacodynamics of bezafibrate itself. |
-| popPK | Carrara_2009 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of PPAR activation by soy isoflavones, using bezafibrate only as a positive control, and reports no pharmacokinetic parameters. |
-| popPK | Chen_2014 | irrelevant | 0 | 0 | The study focuses on the pharmacodynamics and efficacy of a novel compound (ZBH) in hamsters, using bezafibrate only as a comparator drug without reporting its pharmacokinetic parameters. |
-| popPK | Chen_2024 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for olanzapine, not bezafibrate. |
-| popPK | Cione_2021 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of GPR40 agonism and insulin secretion, not a pharmacokinetic study, and reports no disposition parameters (CL, V, ka, etc.) for bezafibrate. |
-| popPK | EFSA_2018 | irrelevant | 0 | 0 | The paper discusses the toxicology and exposure of PFOS and PFOA, not the pharmacokinetics of bezafibrate. |
-| popPK | EFSA_2020 | irrelevant | 0 | 0 | The paper is a risk assessment for perfluoroalkyl substances (PFASs) and does not contain any pharmacokinetic data for bezafibrate. |
-| popPK | Hernando_2004 | irrelevant | 0 | 0 | The paper describes an analytical method for detecting bezafibrate in wastewater and its toxicity to Daphnia magna, not a pharmacokinetic study in humans or animals. |
-| PGx | Higgins_2012 | not_relevant | 0 | 0 | The paper investigates the interaction between PPARδ and PPARα signaling using transgenic mice, not the effect of human gene variants on bezafibrate pharmacokinetics or pharmacodynamics. |
-| PGx | Honda_2013 | not_relevant | 0 | 0 | The study investigates the anticholestatic mechanism of bezafibrate in PBC patients and does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
-| PGx | Kajosaari_2005 | not_relevant | 0 | 0 | The paper investigates the effect of bezafibrate as a drug inhibitor on repaglinide metabolism, not the effect of a gene variant on bezafibrate's PK/PD. |
-| popPK | Kakara_2014 | irrelevant | 0 | 0 | The study focuses on the pharmacodynamics of statins (atorvastatin, pitavastatin, rosuvastatin) and ezetimibe, with no mention of bezafibrate. |
-| popPK | Kelley_1994 | irrelevant | 0 | 0 | The study focuses on peroxisomal enzyme induction by RG 7152, and bezafibrate is only mentioned as a positive control in an in-vitro assay, with no pharmacokinetic parameters reported. |
-| PGx | Kido_2016 | not_relevant | 0 | 0 | The paper discusses bezafibrate as a therapeutic option for influenza-related metabolic disorders but does not report any pharmacogenomic effects on its pharmacokinetic or pharmacodynamic parameters. |
-| popPK | Kuwabara_2004 | irrelevant | 0 | 0 | The study focuses on the pharmacodynamics of a novel PPAR-alpha agonist (NS-220) in mice, with bezafibrate serving only as a comparator in in-vitro binding assays without any pharmacokinetic parameter reporting. |
-| popPK | Lalezari_1990 | irrelevant | 0 | 0 | The paper describes the structural and functional effects of new hemoglobin effectors, with bezafibrate mentioned only as a reference for binding site location, not as a subject of pharmacokinetic analysis. |
-| popPK | Lendaro_1992 | irrelevant | 0 | 0 | The paper is a study on hemoglobin variants and oxygen affinity, where bezafibrate is used only as an allosteric effector, not as the subject of a pharmacokinetic analysis. |
-| PGx | Leshinsky-Silver_2006 | not_relevant | 0 | 0 | The paper reports allele frequency differences in candidate genes between CVD patients and healthy controls, but does not analyze the effect of these variants on the pharmacokinetics or pharmacodynamics of bezafibrate. |
-| popPK | Li_2017 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology investigation of fenofibrate's effect on ion channels, where bezafibrate is only used as a negative control and no pharmacokinetic parameters are reported. |
-| PGx | Miller_1998 | not_relevant | 0 | 0 | The paper is a general review of fibrate pharmacokinetics and does not report any specific pharmacogenomic effects (gene variants) on bezafibrate PK or PD parameters. |
-| popPK | Muratti_1994 | irrelevant | 0 | 0 | The study is a clinical efficacy analysis of lipid response to fluvastatin and bezafibrate, reporting no pharmacokinetic parameters for bezafibrate. |
-| PGx | Na_2025 | not_relevant | 0 | 0 | The paper is a review of epilepsy treatments in mitochondrial diseases and mentions bezafibrate only as a potential therapy for mitochondrial biogenesis, without reporting any pharmacogenomic effects on its PK or PD parameters. |
-| PGx | Nakajima_2010 | not_relevant | 2 | 5 | The study compares PPARalpha-null vs wild-type mice to assess oxidative stress mechanisms, but does not report pharmacokinetic or pharmacodynamic parameter changes driven by human genetic variants relevant to clinical pharmacogenomics. |
-| PGx | Olsen_2013 | not_relevant | 0 | 0 | The paper is a review discussing bezafibrate as a potential therapeutic agent for fatty acid oxidation defects, but it does not report any pharmacogenomic effects on the PK or PD parameters of bezafibrate itself. |
-| popPK | Olsson_1978 | irrelevant | 0 | 0 | The study reports dose-response effects on serum lipoprotein concentrations (pharmacodynamics) but contains no pharmacokinetic parameters (CL, V, ka, etc.) for bezafibrate. |
-| popPK | Quinn_2008 | irrelevant | 0 | 0 | The study is an ecotoxicology investigation measuring LC50/EC50 in Hydra attenuata, not a pharmacokinetic study reporting disposition parameters for bezafibrate. |
-| popPK | Quinn_2009 | irrelevant | 0 | 0 | The study is an ecotoxicology assessment of pharmaceutical mixtures on Hydra attenuata, not a pharmacokinetic study of bezafibrate. |
-| popPK | Rivera-Jaimes_2018 | irrelevant | 0 | 0 | The study is an environmental analysis of pharmaceutical concentrations in water, not a pharmacokinetic study of bezafibrate disposition. |
-| popPK | Rosal_2010 | irrelevant | 0 | 0 | The paper is an ecotoxicity study reporting EC50 values for aquatic organisms, not a pharmacokinetic study with disposition parameters. |
-| popPK | Somogyi-Végh_2019 | irrelevant | 0 | 0 | The paper is a retrospective analysis of drug interaction prevalence in pharmacy dispensing data and does not report any pharmacokinetic parameters for bezafibrate. |
-| PGx | Southwood_2007 | not_relevant | 0 | 0 | The paper investigates the genotoxicity of bezafibrate via UGT-mediated acyl glucuronide formation in cell lines, but does not report pharmacogenomic effects on pharmacokinetic or pharmacodynamic parameters in humans. |
-| popPK | Sperry_2023 | irrelevant | 0 | 0 | The paper focuses on statins and their effects on COVID-19 mortality and viral inhibition, with no mention of bezafibrate or its pharmacokinetics. |
-| PGx | Takanohashi_2007 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions (inhibition of nateglinide metabolism by bezafibrate) in vitro, not pharmacogenomic effects of gene variants on bezafibrate PK/PD. |
-| popPK | Tanne_2002 | irrelevant | 0 | 0 | The study is a clinical epidemiological analysis of angina severity and stroke risk in patients from a bezafibrate trial, reporting no pharmacokinetic parameters. |
-| PGx | Thompson_2022 | not_relevant | 0 | 0 | The paper is a review of Barth syndrome treatments and mentions bezafibrate only as a therapeutic agent in clinical trials, without reporting any pharmacogenomic effects on its PK or PD parameters. |
-| popPK | Van_2024 | irrelevant | 0 | 0 | The paper is a clinical case report describing therapeutic outcomes and mentions peak levels only qualitatively relative to EC50, without reporting quantitative PK parameters like clearance or volume. |
-| PGx | Yamada_2019 | not_relevant | 0 | 0 | The paper is a review of fatty acid oxidation disorders and mentions bezafibrate only as a potential treatment with controversial efficacy, without reporting any pharmacogenomic effects on PK or PD parameters. |
-| PGx | Yamada_2022 | not_relevant | 0 | 0 | The paper investigates the clinical and genetic characteristics of MADD patients and mentions bezafibrate as a treatment, but it does not report pharmacokinetic or pharmacodynamic parameters of bezafibrate or how genetic variants affect these parameters. |
-| PGx | Yamazaki_2005 | not_relevant | 0 | 0 | The paper investigates in vitro transporter inhibition by fibrates but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
-| PGx | Yao_2011 | not_relevant | 0 | 0 | The paper investigates the effect of bezafibrate on CPT II activity and mitochondrial function in fibroblasts with CPT II variants, which is a pharmacodynamic effect on a disease mechanism, not a pharmacokinetic or pharmacodynamic parameter of bezafibrate itself (e.g., bezafibrate clearance, exposure, or receptor binding affinity). |
-| popPK | Zhang_2024 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of olanzapine, and bezafibrate is only listed as a concomitant medication without any PK parameters reported for it. |
-| PGx | Zhang_2026 | not_relevant | 0 | 0 | The paper is a case report of bezafibrate-induced rhabdomyolysis in a patient with CKD and does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
-| popPK | unknown_1992 | irrelevant | 0 | 0 | The paper reports lipid and lipoprotein levels (TC, HDL-C, TG) for risk classification, not pharmacokinetic parameters (CL, V, ka) for bezafibrate. |
+| popPK | Ali_2026 | irrelevant | 0 | 0 | The study evaluates PPAR agonist activity and biological effects of novel chalcone derivatives, using bezafibrate only as a positive control/comparator, with no PK parameters reported. |
+| PGx | Attia_1997 | not_relevant | 1 | 0 | The study describes a pharmacodynamic response to bezafibrate and mentions APOE genotypes only to describe subgroups with different clinical outcomes, but it does not report the genotypes as a primary factor modifying a specific pharmacokinetic parameter. |
+| popPK | Berger_1989 | irrelevant | 0 | 0 | The paper is a clinical trial evaluating the efficacy of simvastatin for hypercholesterolemia, and while bezafibrate is mentioned as a co-administered lipid-lowering agent, no pharmacokinetic parameters (CL, V, ka, etc.) are reported. |
+| popPK | Bettati_1998 | irrelevant | 0 | 0 | The study investigates the allosteric mechanism of hemoglobin oxygen binding and mentions bezafibrate only as an allosteric effector, containing no pharmacokinetic data for the drug. |
+| popPK | Boltes_2012 | irrelevant | 0 | 0 | The study is an in vitro toxicity assessment of chemical mixtures in algae, containing no pharmacokinetic data for bezafibrate. |
+| PGx | Canudas_2001 | not_relevant | 1 | 5 | The study investigates chitotriosidase genotype/phenotype (an unrelated enzyme marker) and does not report genetic variants affecting the pharmacokinetics or pharmacodynamics of bezafibrate. |
+| popPK | Carrara_2009 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of soy isoflavones on PPAR receptors where bezafibrate serves only as a positive control, with no pharmacokinetic parameters reported. |
+| popPK | Chen_2014 | irrelevant | 0 | 0 | The study focuses on the novel compound ZBH, using bezafibrate only as a comparative reference for pharmacodynamic and efficacy endpoints, without reporting any pharmacokinetic disposition parameters (CL, V, ka, etc.) for bezafibrate. |
+| popPK | Chen_2024 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for olanzapine, not bezafibrate. |
+| popPK | Cione_2021 | irrelevant | 0 | 0 | The paper reports in-vitro pharmacological activity (EC50 values) of bezafibrate as a GPR40 agonist in cell lines, not pharmacokinetic disposition parameters. |
+| popPK | EFSA_2018 | irrelevant | 0 | 0 | The paper is a risk assessment for perfluorooctane sulfonic acid (PFOS) and perfluorooctanoic acid (PFOA) in food, and does not involve the drug bezafibrate. |
+| popPK | EFSA_2020 | irrelevant | 0 | 0 | The paper concerns perfluoroalkyl substances (PFASs), not bezafibrate, and reports no pharmacokinetic parameters for the target drug. |
+| popPK | Hernando_2004 | irrelevant | 0 | 0 | The paper is an environmental analysis method and toxicity study in wastewater/Daphnia, not a pharmacokinetic study. |
+| PGx | Higgins_2012 | not_relevant | 3 | 3 | This paper reports on PPARδ-PPARα interaction in transgenic mice, demonstrating PPARδ-mediated attenuation of bezafibrate-induced hepatomegaly, which is a pharmacodynamic cross-talk effect in an animal model rather than a human pharmacogenomic effect on a specific PK/PD parameter. |
+| PGx | Honda_2013 | not_relevant | 0 | 0 | The study examines the anticholestatic mechanism of action (PD) and efficacy of bezafibrate in PBC patients but does not report any pharmacogenomic variants or genotype-specific effects on PK/PD parameters. |
+| PGx | Kajosaari_2005 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions (enzymatic inhibition) of repaglinide metabolism by bezafibrate in vitro, not pharmacogenomic effects (gene variants). |
+| popPK | Kakara_2014 | irrelevant | 0 | 0 | The study focuses on the pharmacodynamics of statins and ezetimibe in humans, and bezafibrate is not mentioned or modeled. |
+| popPK | Kelley_1994 | irrelevant | 0 | 0 | The study evaluates peroxisomal enzyme induction in various animal species, and bezafibrate is used only as a positive control compound without any pharmacokinetic parameter analysis. |
+| PGx | Kido_2016 | not_relevant | 1 | 0 | The paper discusses bezafibrate as a general therapeutic agent for mitochondrial dysfunction in influenza and does not report any pharmacokinetic or pharmacodynamic parameter changes resulting from genetic variants. |
+| popPK | Kuwabara_2004 | irrelevant | 0 | 0 | The study focuses on the pharmacological profile of NS-220, using bezafibrate only as a comparator in in-vitro binding assays without reporting any pharmacokinetic parameters for bezafibrate. |
+| popPK | Lalezari_1990 | irrelevant | 0 | 0 | The paper describes the structural and functional effects of two new compounds on hemoglobin, mentioning bezafibrate only as a prior binding site reference in a crystallography context, with no pharmacokinetic data. |
+| popPK | Lendaro_1992 | irrelevant | 0 | 0 | The paper is a mechanistic hemoglobin biophysics study where bezafibrate is used only as an allosteric effector, not for pharmacokinetic analysis. |
+| PGx | Leshinsky-Silver_2006 | not_relevant | 0 | 0 | The paper reports allele frequencies in a cohort of cardiovascular patients but does not analyze the effect of genotypes on bezafibrate's pharmacokinetics or pharmacodynamics. |
+| popPK | Li_2017 | irrelevant | 0 | 0 | The study is a mechanistic in-vitro electrophysiology study of fenofibrate, and bezafibrate is only mentioned as a comparator that did not affect Kv currents, with no pharmacokinetic parameters reported. |
+| PGx | Miller_1998 | not_relevant | 0 | 0 | The paper is a general clinical pharmacokinetics review of fibrates and does not report specific pharmacogenomic effects or gene variants for bezafibrate. |
+| popPK | Muratti_1994 | irrelevant | 0 | 0 | The study is a cohort analysis of lipid response to combination therapy, not a pharmacokinetic study, and reports no disposition parameters for bezafibrate. |
+| PGx | Na_2025 | not_relevant | 0 | 0 | The paper discusses bezafibrate's role as a mitochondrial biogenesis inducer in a review of mitochondrial disease treatments, without reporting specific pharmacogenomic effects on its PK or PD parameters. |
+| PGx | Olsen_2013 | not_relevant | 0 | 0 | The paper is a review of genetic modifiers in fatty acid oxidation defects and mentions bezafibrate only as a potential therapeutic agent to induce enzyme expression, without reporting any data on pharmacokinetic or pharmacodynamic effects modified by genetic variants. |
+| popPK | Olsson_1978 | irrelevant | 0 | 0 | The study reports therapeutic effects on serum lipoprotein concentrations (clinical efficacy) rather than pharmacokinetic disposition parameters. |
+| popPK | Quinn_2008 | irrelevant | 0 | 0 | The study is an ecotoxicological investigation of bezafibrate on the cnidarian *Hydra attenuata*, reporting toxicity endpoints (LC50/EC50) rather than pharmacokinetic parameters. |
+| popPK | Quinn_2009 | irrelevant | 0 | 0 | The paper is an ecotoxicology study on Hydra attenuata measuring toxicity endpoints (EC50, teratogenicity), not pharmacokinetic disposition parameters for bezafibrate. |
+| popPK | Rivera-Jaimes_2018 | irrelevant | 0 | 0 | The study measures environmental concentrations of bezafibrate in water, not pharmacokinetic parameters. |
+| popPK | Rosal_2010 | irrelevant | 0 | 0 | The paper reports ecotoxicity (EC50) data for bezafibrate in aquatic organisms, not pharmacokinetic parameters. |
+| popPK | Somogyi-Végh_2019 | irrelevant | 0 | 0 | This is a retrospective analysis of drug utilization and prescription data to identify drug-drug interactions, and it does not report any pharmacokinetic parameters for bezafibrate. |
+| PGx | Southwood_2007 | not_relevant | 0 | 0 | The study investigates UGT-mediated DNA damage (genotoxicity) in HEK293 cells, not the pharmacokinetic or pharmacodynamic parameters of bezafibrate. |
+| popPK | Sperry_2023 | irrelevant | 0 | 0 | The study investigates the antiviral efficacy of statins in COVID-19 patients and does not involve bezafibrate or pharmacokinetic modeling. |
+| PGx | Takanohashi_2007 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions involving bezafibrate as an inhibitor of nateglinide metabolism, not the pharmacogenomic impact on bezafibrate's own PK or PD parameters. |
+| popPK | Tanne_2002 | irrelevant | 0 | 0 | The study is a clinical epidemiological analysis of stroke risk in patients treated with bezafibrate, not a pharmacokinetic study. |
+| PGx | Thompson_2022 | not_relevant | 0 | 0 | The paper is a review of Barth syndrome treatment and mentions bezafibrate only in the context of clinical trials targeting mitochondrial pathology, without reporting any pharmacogenomic associations. |
+| popPK | Van_2024 | irrelevant | 1 | 0 | The paper is a clinical case report on a metabolic disorder treatment, lacking quantitative pharmacokinetic parameter values (CL, V, etc.) for bezafibrate. |
+| PGx | Yamada_2019 | not_relevant | 0 | 0 | The paper discusses the treatment of VLCAD deficiency and mentions bezafibrate, but it does not report any pharmacogenomic effects or data linking gene variants to PK/PD parameters of bezafibrate. |
+| PGx | Yamada_2022 | not_relevant | 2 | 4 | The paper reports the association between the ETFDH p.Y507D variant and poor clinical response to riboflavin, but it does not quantify the effect on pharmacokinetic (PK) or pharmacodynamic (PD) parameters of bezafibrate. |
+| PGx | Yamazaki_2005 | not_relevant | 0 | 0 | The study examines the effect of bezafibrate as an inhibitor of transporters in vitro, not how genetic variants affect the PK/PD of bezafibrate. |
+| PGx | Yao_2011 | not_relevant | 2 | 2 | The study investigates the effect of bezafibrate on mitochondrial function in patients with specific CPT2 variants, but does not report changes in standard PK/PD parameters of the drug itself (e.g., AUC, clearance, receptor binding). |
+| popPK | Zhang_2024 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for olanzapine, with bezafibrate listed only as a co-administered concomitant medication without specific PK data. |
+| PGx | Zhang_2026 | not_relevant | 0 | 0 | The paper is a case report of an adverse drug reaction (rhabdomyolysis) associated with comorbidities (CKD) and drug interactions (CYP3A4 inhibitors), but it does not report a specific gene variant or genotype effect on PK or PD. |
+| popPK | unknown_1992 | irrelevant | 0 | 0 | This is a clinical trial screening phase study reporting lipid profiles (TC, HDL-C, TG) for risk classification, not a pharmacokinetic study providing disposition parameters for bezafibrate. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

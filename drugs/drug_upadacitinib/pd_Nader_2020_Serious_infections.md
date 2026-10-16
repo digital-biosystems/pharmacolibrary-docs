@@ -1,7 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;upadacitinib&quot;,&quot;href&quot;:&quot;drugs/drug_upadacitinib/&quot;},{&quot;label&quot;:&quot;Nader_2020 \u00b7 PD serious infections at Week 24/26&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;upadacitinib&quot;,&quot;href&quot;:&quot;drugs/drug_upadacitinib/&quot;},{&quot;label&quot;:&quot;Nader_2020 \u00b7 PD Serious infections&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Upadacitinib_Klnder2018_reference&quot;,&quot;label&quot;:&quot;Kl\u00fcnder_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_upadacitinib/Upadacitinib_Klnder2018_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Upadacitinib_Klnder2019_reference&quot;,&quot;label&quot;:&quot;Kl\u00fcnder_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_upadacitinib/Upadacitinib_Klnder2019_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Mohamed_2021_EASI_75&quot;,&quot;label&quot;:&quot;Mohamed_2021 \u00b7 EASI-75&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_upadacitinib/pd_Mohamed_2021_EASI_75.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Mohamed_2021_EASI_90&quot;,&quot;label&quot;:&quot;Mohamed_2021 \u00b7 EASI-90&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_upadacitinib/pd_Mohamed_2021_EASI_90.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Mohamed_2021_IGA_0_1&quot;,&quot;label&quot;:&quot;Mohamed_2021 \u00b7 IGA 0/1&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_upadacitinib/pd_Mohamed_2021_IGA_0_1.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# serious infections at Week 24/26 — PD  <span class="pk-badge pk-badge--green">extracted</span>
+# Serious infections — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -13,11 +14,11 @@
 
 ## Record summary
 
-**As extracted:** Upadacitinib (concentrations from the PK model of Klünder_2018) drives serious infections at Week 24/26: direct linear effect.
+**As extracted:** Upadacitinib (concentrations from the PK model of Bhatnagar_2024::as) drives Serious infections: direct linear effect.
 
 **Model:** No model was generated from this record.
 
-> The paper describes a shallow, linear positive exposure-response relationship where upadacitinib plasma exposure (ng/mL) is associated with a slight increase in the incidence of serious infections at Week 24/26, with a model-predicted incidence of 1.67% for the 15 mg q.d. regimen. No specific potency or rate parameters (e.g., IC50, Emax, kin, kout) for this safety endpoint were reported.
+> The paper does not give the mechanism, describing only a linear, additive relationship between upadacitinib exposure (ng/mL) and the binary response of serious infections. No key potency or rate values (such as IC50, EC50, kin, or kout) are stated in the provided text.
 >
 > <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
@@ -25,7 +26,7 @@
 - **model family:** `linear`
 - **driver:** `cited_pk`
 - **tier:** population
-- **effect:** stimulation/unknown
+- **effect:** stimulation/additive
 
 ## Citation
 Nader A et al., Exposure-Response Analyses of Upadaciti…, Clinical pharmacology and t… (2020)

@@ -24,7 +24,7 @@
 - **paper:** `Puchalski_2010`
 - **model family:** `indirect_response_i`
 - **driver:** `not_resolved`
-- **tier:** population
+- **tier:** descriptive
 - **effect:** inhibition/unknown
 
 ## Citation

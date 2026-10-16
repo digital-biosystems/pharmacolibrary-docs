@@ -4,7 +4,7 @@
 
 # obinutuzumab — `Obinutuzumab_Gibiansky2014_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.964), gpt-oss:120b (not confirmed, agreement 0.926). Primary extraction retained.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.964), gpt-oss:120b (not confirmed, agreement 0.926). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -16,40 +16,31 @@
 
 ### Reviewer guidance
 
-**The record was rejected because a structural parameter's unit could not be converted to SI, causing a dimension mismatch.**
+**Only clearance was extracted — no volume; cL has no unit.**
 
-A reported unit for a structural parameter was not recognized, so the parameter lacked a standard SI value. This resulted in a dimension mismatch on that parameter, leading to rejection. The second reader disagreed on the dose compound and primary analyte, marking them as unknown instead of obinutuzumab. Extracted — obinutuzumab: CL 0.196 L/day, CLint 0.0775 L/day, V1 2.68 L, V2 0.922 L, Q 1.03 L/day.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (CL), so that value has no SI equivalent. Extracted — obinutuzumab: CL 41.5 %.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has obinutuzumab, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Gibiansky E et al., Population Pharmacokinetics of Obinutuz…, CPT: pharmacometrics & syst… (2014)
   ·  DOI: [10.1038/psp.2014.42](https://doi.org/10.1038/psp.2014.42)
 
-<div class="pk-model-meta" hidden drug="obinutuzumab" model-id="Obinutuzumab_Gibiansky2014_reference" status="rejected" stale="false" population="patients with CLL and NHL" measured-compound="obinutuzumab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="obinutuzumab" model-id="Obinutuzumab_Gibiansky2014_reference" status="needs_review" stale="false" population="patients with CLL and NHL" measured-compound="obinutuzumab" parameterization="mechanistic" topology="1C"></div>
 
-**Model structure:** 2-compartment; no model was built for this record.  
-**Parameters:** 5 extracted, plus 5 covariate effects.
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 1 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CLt (L/day) | `Q22` · CL | 0.196 | L/day | 2.2685185185185187e-09 | [l] / [d] | 0.231 | exact (1.0) | Gibiansky_2014_table_p4_1:row3:col2, Gibiansky_2014_table_p4_1:row3:col3, Gibiansky_2014_table_p4_1:row3:col4 | — | not captured |
-| CLint (L/day) | `Q3` · CLint | 0.0775 | L/day | not captured | [l] / [d] | 0.0828 | exact (1.0) | Gibiansky_2014_table_p4_1:row5:col2, Gibiansky_2014_table_p4_1:row5:col3, Gibiansky_2014_table_p4_1:row5:col4 | — | 0.137 (0.159% RSE) |
-| V1 (L) | `Q63` · V1 | 2.68 | L | 0.00268 | [l] | 2.76 | exact (1.0) | Gibiansky_2014_table_p4_1:row10:col2, Gibiansky_2014_table_p4_1:row10:col3, Gibiansky_2014_table_p4_1:row10:col4 | — | not captured |
-| V2 (L) | `Q64` · V2 | 0.922 | L | 0.0009220000000000001 | [l] | 1.01 | exact (1.0) | Gibiansky_2014_table_p4_1:row13:col2, Gibiansky_2014_table_p4_1:row13:col3, Gibiansky_2014_table_p4_1:row13:col4 | — | not captured |
-| Q (L/day) | `Q30` · Q | 1.03 | L/day | 1.1921296296296297e-08 | [l] / [d] | 1.29 | exact (1.0) | Gibiansky_2014_table_p4_1:row14:col2, Gibiansky_2014_table_p4_1:row14:col3, Gibiansky_2014_table_p4_1:row14:col4 | — | not captured |
-| theta_cl_sex_clt | `Q900` · theta_cl_sex_clt | 1.23 | not captured | not captured | not captured | 1.49 | not captured (not captured) | Gibiansky_2014_table_p4_1:row4:col2, Gibiansky_2014_table_p4_1:row4:col3, Gibiansky_2014_table_p4_1:row4:col4 | — | not captured |
-| theta_clint_sex_clint | `Q900` · theta_clint_sex_clint | 1.14 | not captured | not captured | not captured | 1.22 | not captured (not captured) | Gibiansky_2014_table_p4_1:row6:col2, Gibiansky_2014_table_p4_1:row6:col3, Gibiansky_2014_table_p4_1:row6:col4 | — | not captured |
-| theta_cl_wt_power | `Q900` · theta_cl_wt_power | 0.437 | not captured | not captured | not captured | 0.615 | not captured (not captured) | Gibiansky_2014_table_p4_1:row7:col2, Gibiansky_2014_table_p4_1:row7:col3, Gibiansky_2014_table_p4_1:row7:col4 | — | not captured |
-| theta_v1_sex_v1 | `Q900` · theta_v1_sex_v1 | 1.14 | not captured | not captured | not captured | 1.18 | not captured (not captured) | Gibiansky_2014_table_p4_1:row11:col2, Gibiansky_2014_table_p4_1:row11:col3, Gibiansky_2014_table_p4_1:row11:col4 | — | not captured |
-| theta_v1_wt_v1 | `Q900` · theta_v1_wt_v1 | 0.293 | not captured | not captured | not captured | 0.383 | not captured (not captured) | Gibiansky_2014_table_p4_1:row12:col2, Gibiansky_2014_table_p4_1:row12:col3, Gibiansky_2014_table_p4_1:row12:col4 | — | not captured |
+| steady-state clearance | `Q22` · CL | 41.5 | % | not captured | % | not captured | boundary (0.8) | Gibiansky_2014:results_prose | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -59,51 +50,18 @@ Gibiansky E et al., Population Pharmacokinetics of Obinutuz…, CPT: pharmacomet
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'kdes (1/day)' — extend the ontology if this is a real PK parameter (source ['Gibiansky_2014_table_p4_1:row0:col2', 'Gibiansky_2014_table_p4_1:row0:col3', 'Gibiansky_2014_table_p4_1:row0:col4'])
-- dropped unlinked row (NIL): 'kdes,DIS' — extend the ontology if this is a real PK parameter (source ['Gibiansky_2014_table_p4_1:row1:col2', 'Gibiansky_2014_table_p4_1:row1:col3', 'Gibiansky_2014_table_p4_1:row1:col4'])
-- dropped unlinked row (NIL): 'kdes,BSI2 ≤ 1,750' — extend the ontology if this is a real PK parameter (source ['Gibiansky_2014_table_p4_1:row2:col2', 'Gibiansky_2014_table_p4_1:row2:col3', 'Gibiansky_2014_table_p4_1:row2:col4'])
-- unit_dimension_mismatch: 'CLint (L/day)' → Q3 (unit '[length] ** 3 / [time]' vs ontology '[length] ** 3 / [time] / [mass]') — route to review
-- dropped duplicate Q3 ('CLint,DIS23 = CLint,DIS23', value '0.778') — already have one for this compound
-- dropped duplicate Q3 ('CLint,DIS4 = CLt,DIS4', value '1.25') — already have one for this compound
+- salvaged Q22 ('steady-state clearance'=41.5) from results prose — parameter table was unreadable
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=obinutuzumab
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - status held at route_to_review — not promoted
 - molar mass: none found for 'obinutuzumab' — its concentrations stay mass-only
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- final table tbl3: grid unusable → re-running vision table extraction for Gibiansky_2014
-- unparsed cell Gibiansky_2014_table_p4_1:row0:col1 = 'exp(θ1)'
-- unparsed cell Gibiansky_2014_table_p4_1:row1:col1 = 'exp(θ12)'
-- unparsed cell Gibiansky_2014_table_p4_1:row2:col1 = 'exp(θ13)'
-- unparsed cell Gibiansky_2014_table_p4_1:row3:col1 = 'exp(θ2)'
-- unparsed cell Gibiansky_2014_table_p4_1:row4:col1 = 'exp(θ3)'
-- unparsed cell Gibiansky_2014_table_p4_1:row5:col1 = 'exp(θ4)'
-- unparsed cell Gibiansky_2014_table_p4_1:row6:col1 = 'exp(θ5)'
-- unparsed cell Gibiansky_2014_table_p4_1:row7:col1 = 'θ7'
-- unparsed cell Gibiansky_2014_table_p4_1:row8:col1 = 'exp(θ13)'
-- unparsed cell Gibiansky_2014_table_p4_1:row9:col1 = 'exp(θ14)'
-- unparsed cell Gibiansky_2014_table_p4_1:row10:col1 = 'exp(θ6)'
-- unparsed cell Gibiansky_2014_table_p4_1:row11:col1 = 'exp(θ11)'
-- unparsed cell Gibiansky_2014_table_p4_1:row12:col1 = 'θ8'
-- unparsed cell Gibiansky_2014_table_p4_1:row13:col1 = 'exp(θ9)'
-- unparsed cell Gibiansky_2014_table_p4_1:row14:col1 = 'exp(θ10)'
-- unparsed cell Gibiansky_2014_table_p4_1:row15:col1 = 'Ω(1,1)'
-- unparsed cell Gibiansky_2014_table_p4_1:row15:col6 = '15.4%'
-- unparsed cell Gibiansky_2014_table_p4_1:row16:col1 = 'Ω(2,2)'
-- unparsed cell Gibiansky_2014_table_p4_1:row16:col6 = '21.6%'
-- unparsed cell Gibiansky_2014_table_p4_1:row17:col1 = 'Ω(3,3)'
-- unparsed cell Gibiansky_2014_table_p4_1:row17:col6 = '11%'
-- unparsed cell Gibiansky_2014_table_p4_1:row18:col1 = 'Ω(4,4)'
-- unparsed cell Gibiansky_2014_table_p4_1:row18:col6 = '10.8%'
-- unparsed cell Gibiansky_2014_table_p4_1:row19:col1 = 'Ω(5,5)'
-- unparsed cell Gibiansky_2014_table_p4_1:row19:col6 = '32.6%'
-- unparsed cell Gibiansky_2014_table_p4_1:row20:col1 = 'Ω(6,6)'
-- unparsed cell Gibiansky_2014_table_p4_1:row20:col6 = '52.2%'
-- unparsed cell Gibiansky_2014_table_p4_1:row21:col1 = 'Ω(7,7)'
-- unparsed cell Gibiansky_2014_table_p4_1:row21:col6 = '0.1%'
-- unparsed cell Gibiansky_2014_table_p4_1:row22:col1 = 'Σ(1,1)'
-- unparsed cell Gibiansky_2014_table_p4_1:row22:col6 = '1.8%'
-- unparsed cell Gibiansky_2014_table_p4_1:row23:col1 = 'Σ(2,2)'
+- table tbl3: no_numeric_grid
+- final table tbl3: no supported point estimates; targeted recovery unresolved
 
 ## Validation
 
@@ -135,20 +93,12 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Gibiansky_2014_table_p4_1:row3:col2', 'Gibiansky_2014_table_p4_1:row3:col3', 'Gibiansky_2014_table_p4_1:row3:col4'] |
-| C5_dimension_Q3 | fail | [length] ** 3 / [time] | L/day | not captured | not captured | ['Gibiansky_2014_table_p4_1:row5:col2', 'Gibiansky_2014_table_p4_1:row5:col3', 'Gibiansky_2014_table_p4_1:row5:col4'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Gibiansky_2014_table_p4_1:row14:col2', 'Gibiansky_2014_table_p4_1:row14:col3', 'Gibiansky_2014_table_p4_1:row14:col4'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Gibiansky_2014_table_p4_1:row10:col2', 'Gibiansky_2014_table_p4_1:row10:col3', 'Gibiansky_2014_table_p4_1:row10:col4'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Gibiansky_2014_table_p4_1:row13:col2', 'Gibiansky_2014_table_p4_1:row13:col3', 'Gibiansky_2014_table_p4_1:row13:col4'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.196 | not captured | not captured | ['Gibiansky_2014_table_p4_1:row3:col2', 'Gibiansky_2014_table_p4_1:row3:col3', 'Gibiansky_2014_table_p4_1:row3:col4'] |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | % | not captured | not captured | ['Gibiansky_2014:results_prose'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 41.5 | not captured | not captured | ['Gibiansky_2014:results_prose'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.00817 L/h | not captured | not captured | ['Gibiansky_2014_table_p4_1:row3:col2', 'Gibiansky_2014_table_p4_1:row3:col3', 'Gibiansky_2014_table_p4_1:row3:col4'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 2.68 L | not captured | not captured | ['Gibiansky_2014_table_p4_1:row10:col2', 'Gibiansky_2014_table_p4_1:row10:col3', 'Gibiansky_2014_table_p4_1:row10:col4'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 0.922 L | not captured | not captured | ['Gibiansky_2014_table_p4_1:row13:col2', 'Gibiansky_2014_table_p4_1:row13:col3', 'Gibiansky_2014_table_p4_1:row13:col4'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -157,14 +107,24 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_obinutuzumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Gibiansky_2014` / `Gibiansky_2014::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_obinutuzumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Gibiansky_2014` / `Gibiansky_2014::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -173,4 +133,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 18:08 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 03:54 UTC</sub>

@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;daclizumab&quot;,&quot;href&quot;:&quot;drugs/drug_daclizumab/&quot;},{&quot;label&quot;:&quot;Othman_2014 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Daclizumab_Othman2014_reference&quot;,&quot;label&quot;:&quot;Othman_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_daclizumab/Daclizumab_Othman2014_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -12,26 +13,26 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 ### Reviewer guidance
 
-**Only clearance was extracted — no volume.**
+**T3_param_coverage.**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is daclizumab's own; they describe daclizumab high-yield process. Extracted — daclizumab high-yield process: CL 10 mL/h, Q 44 mL/h, tlag 2 h, MAT 4.6 days, Fab 84 %.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — daclizumab: CL 10 mL/h, Q 44 mL/h, V 3.89 L, Vss 2.52 L, tlag 2 h, MAT 4.6 days, Fab 84 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has daclizumab high-yield process, the second reading daclizumab HYP; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Othman AA et al., Population pharmacokinetics of daclizum…, Clinical pharmacokinetics (2014)
   ·  DOI: [10.1007/s40262-014-0159-9](https://doi.org/10.1007/s40262-014-0159-9)
 
-<div class="pk-model-meta" hidden drug="daclizumab" model-id="Daclizumab_Othman2014_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="daclizumab high-yield process" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="daclizumab" model-id="Daclizumab_Othman2014_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="daclizumab" parameterization="mechanistic" topology="1C"></div>
 
-**Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 5 extracted.
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 7 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -42,31 +43,35 @@ Othman AA et al., Population pharmacokinetics of daclizum…, Clinical pharmacok
 |---|---|---|---|---|---|---|---|---|---|---|
 | Daclizumab HYP clearance | `Q22` · CL | 10 | mL/h | 2.7777777777777776e-09 | [ml] / [h] | not captured | llm_confirmed (0.6) | Othman_2014:abstract | — | not captured |
 | inter-compartmental clearance | `Q30` · Q | 44 | mL/h | 1.2222222222222222e-08 | [ml] / [h] | not captured | llm_confirmed (0.6) | Othman_2014:abstract | — | not captured |
+| central ... volumes of distribution | `Q61` · V | 3.89 | L | 0.0038900000000000002 | [l] | not captured | llm (0.6) | Othman_2014:abstract | — | not captured |
+| ... and peripheral volumes of distribution | `Q65` · Vss | 2.52 | L | 0.00252 | [l] | not captured | llm (0.6) | Othman_2014:abstract | — | not captured |
 | Lag-time | `Q83` · tlag | 2 | h | 7200.0 | [h] | not captured | llm (0.6) | Othman_2014:abstract | — | not captured |
 | mean absorption time | `Q73` · MAT | 4.6 | days | 397439.99999999994 | [d] | not captured | exact (1.0) | Othman_2014:abstract | — | not captured |
-| absolute bioavailability | `Q40` · Fab | 84 | % | not captured | not captured | not captured | exact (1.0) | Othman_2014:abstract | — | not captured |
+| absolute bioavailability (100-300 mg) | `Q40` · Fab | 84 | % | not captured | not captured | not captured | exact (1.0) | Othman_2014:abstract | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
+### Unresolved rows _(no Q-code or no value — not parameters)_
+| label (paper) | Q-code | value | link |
+|---|---|---|---|
+| The estimated effective half-life | Q57 | not captured | llm |
+
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped value-less row: 'central and peripheral volumes of distribution'
-- dropped value-less row: 'estimated effective half-life'
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=daclizumab high-yield process
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=daclizumab
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- 1C volume normalization: Q63→Q61 (single-compartment model has no central/peripheral split; 'central ... volumes of distribution' is the general volume)
 - status held at route_to_review — not promoted
-- molar mass: no plausible PubChem entry for 'daclizumab high-yield process' ('daclizumab') — left in mass units
 - molar mass: none found for 'daclizumab' — its concentrations stay mass-only
-- molar mass: none found for 'daclizumab high-yield process' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Othman_2014_metadata.yaml (7 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Othman_2014_metadata.yaml (8 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -109,16 +114,32 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 7 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Othman_2014:abstract'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Othman_2014:abstract'] |
+| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Othman_2014:abstract'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Othman_2014:abstract'] |
+| C5_dimension_Q65 | pass | [length] ** 3 | not captured | not captured | not captured | ['Othman_2014:abstract'] |
 | C5_dimension_Q73 | pass | [time] | not captured | not captured | not captured | ['Othman_2014:abstract'] |
 | C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Othman_2014:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 10.0 | not captured | not captured | ['Othman_2014:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.01 L/h | not captured | not captured | ['Othman_2014:abstract'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 3.89 L | not captured | not captured | ['Othman_2014:abstract'] |
+| C9_phys_window_Q65 | pass | volume within physiological range | 2.52 L | not captured | not captured | ['Othman_2014:abstract'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_output_variable | not captured | pass | C_central (measured=daclizumab) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | fail | 4 scholar param(s) emitted or defaulted | 3 covered | not captured | neither emitted nor in defaulted[]: ['tlag'] |
+| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -127,7 +148,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_daclizumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Othman_2014` / `Othman_2014::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_daclizumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Othman_2014` / `Othman_2014::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_daclizumab/models/modelica/Daclizumab_Othman2014_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_daclizumab/models/modelica/Daclizumab_Othman2014_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_daclizumab/models/modelica/Daclizumab_Othman2014_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -136,21 +160,26 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_daclizumab/Daclizumab_Othman2014_reference/Daclizumab_Othman2014_reference_modelica.zip" download>Daclizumab_Othman2014_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_daclizumab/Daclizumab_Othman2014_reference/Daclizumab_Othman2014_reference_fmi.zip" download>Daclizumab_Othman2014_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_daclizumab/Daclizumab_Othman2014_reference/Daclizumab_Othman2014_reference_matlab.zip" download>Daclizumab_Othman2014_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_daclizumab/Daclizumab_Othman2014_reference/Daclizumab_Othman2014_reference_matlab_simbio.zip" download>Daclizumab_Othman2014_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_daclizumab/Daclizumab_Othman2014_reference/Daclizumab_Othman2014_reference_sbml.zip" download>Daclizumab_Othman2014_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_daclizumab/Daclizumab_Othman2014_reference/Daclizumab_Othman2014_reference_cellml.zip" download>Daclizumab_Othman2014_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_daclizumab/Daclizumab_Othman2014_reference/Daclizumab_Othman2014_reference.svg" alt="Daclizumab_Othman2014_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+**Administration: intravenous** — 5 mg infusion over 10 min, single dose. _The paper's dose was not captured; the default is the WHO ATC DDD 5 mg parenteral (L04AC01) (defined daily dose)._
+
+<dbs-fmusim paramsurl="drugs/drug_daclizumab/Daclizumab_Othman2014_reference/Daclizumab_Othman2014_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_daclizumab/Daclizumab_Othman2014_reference/Daclizumab_Othman2014_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C` · parameters `Daclizumab_Othman2014_reference_params.json` · controls `Daclizumab_Othman2014_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 00:07 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 21:26 UTC</sub>

@@ -1,7 +1,8 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;ibutilide&quot;,&quot;href&quot;:&quot;drugs/drug_ibutilide/&quot;},{&quot;label&quot;:&quot;Tisdale_2012 \u00b7 PD Fridericia-corrected QT interval&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ibutilide_Li2007_reference&quot;,&quot;label&quot;:&quot;Li_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibutilide/Ibutilide_Li2007_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Zeng_2017_QTc&quot;,&quot;label&quot;:&quot;Zeng_2017 \u00b7 QTc&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ibutilide/pd_Zeng_2017_QTc.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Tisdale_2012_QTF&quot;,&quot;label&quot;:&quot;Tisdale_2012 \u00b7 QTF&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ibutilide/pd_Tisdale_2012_QTF.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Fridericia-corrected QT interval — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+# Fridericia-corrected QT interval — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by ollama:gpt-oss:120b (confirmed, agreement 1.0), einfracz:gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓ 2/2</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -13,11 +14,11 @@
 
 ## Record summary
 
-**As extracted:** Ibutilide (concentrations from the PK model of Zeng_2017) drives Fridericia-corrected QT interval (in s): direct sigmoid Emax (Hill) effect.
+**As extracted:** Ibutilide (concentrations from the PK model of Li_2007) drives Fridericia-corrected QT interval (in s): direct sigmoid Emax (Hill) effect.
 
-**Model:** No model was generated from this record.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
-> Ibutilide concentrations (μg/L) stimulate the Fridericia-corrected QT interval (QTF) via a sigmoidal Emax model with a hypothetical effect compartment to account for the observed delay in response. The key parameters are an EC50 of 0.48 μg/L, an Emax of 0.491 s, a Hill coefficient of 3.21, and an effect compartment rate constant (Ke0) of 0.20 h−1.
+> Ibutilide concentrations (μg/L) stimulate the Fridericia-corrected QT interval (QTF) via a sigmoidal Emax model with a hypothetical effect compartment to account for the observed delay in response. The key parameters are an EC50 of 0.48 μg/L, an Emax of 0.491 s, a Hill coefficient of 3.21, and a ke0 of 0.20 h−1.
 >
 > <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
 
@@ -45,11 +46,47 @@ Tisdale JE et al., Enhanced sensitivity to drug-induced QT…, Journal of clinic
 </details>
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+## Exposure-response model
+
+`Ibutilide_Tisdale2012_PD_qtf` — sigmoid_emax, `response = E0 + Emax*frac`
+
+| parameter | value (paper units) | SI |
+|---|---|---|
+| E0 | 0 | — |
+| Emax | 0.491 s | 0.491 s |
+| EC50 | 0.48 μg/L | 4.8e-07 kg/m3 |
+| gamma | 3.21 | — |
+
+Closed-form check points (response, SI): `at_0` = 0, `at_EC50` = 0.2455, `at_inf` = 0.491
+
+Deviations:
+
+- `defaulted_parameters` — E0
+
+## Review
+
+Verdict <span class="pk-badge pk-badge--orange">needs review</span> · route to `scholar`
+
+| check | status | note |
+|---|---|---|
+| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
+| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
+| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
+| `T2_direction` | pass | the response rises, as direct effect predicts |
+| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
+| `T4_defaults` | fail | a core parameter took a library default: E0 |
+
+Advisory:
+
+- defaulted: E0 — a row the paper has and the record lacks
+
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  ·  2 of 2 readers agree  
 Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `ollama:gpt-oss:120b` | confirmed | 1.0 (8/8 fields) | none |
 | `einfracz:gpt-oss-120b` | confirmed | 1.0 (8/8 fields) | none |
 
 _All readers agree on the compared fields of this PD record._
@@ -66,19 +103,22 @@ _All readers agree on the compared fields of this PD record._
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ibutilide/Ibutilide_Tisdale2012_PD_qtf/Ibutilide_Tisdale2012_PD_qtf_modelica.zip" download>Ibutilide_Tisdale2012_PD_qtf_modelica.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_ibutilide/Ibutilide_Tisdale2012_PD_qtf/Ibutilide_Tisdale2012_PD_qtf_matlab.zip" download>Ibutilide_Tisdale2012_PD_qtf_matlab.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_ibutilide/Ibutilide_Tisdale2012_PD_qtf/Ibutilide_Tisdale2012_PD_qtf_sbml.zip" download>Ibutilide_Tisdale2012_PD_qtf_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_ibutilide/Ibutilide_Tisdale2012_PD_qtf/Ibutilide_Tisdale2012_PD_qtf_cellml.zip" download>Ibutilide_Tisdale2012_PD_qtf_cellml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PD_SigmoidEmaxSweep.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+<dbs-fmusim paramsurl="drugs/drug_ibutilide/Ibutilide_Tisdale2012_PD_qtf/Ibutilide_Tisdale2012_PD_qtf_params.json" metaurl="assets/fmu/PD_SigmoidEmaxSweep.vr.json" wasmurl="assets/fmu/PD_SigmoidEmaxSweep.js" controlsurl="drugs/drug_ibutilide/Ibutilide_Tisdale2012_PD_qtf/Ibutilide_Tisdale2012_PD_qtf_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PD_SigmoidEmaxSweep` · parameters `Ibutilide_Tisdale2012_PD_qtf_params.json` · controls `Ibutilide_Tisdale2012_PD_qtf_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 

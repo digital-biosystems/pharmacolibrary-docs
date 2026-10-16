@@ -16,13 +16,13 @@
 
 ### Reviewer guidance
 
-**The pentamidine record was rejected because the intercompartmental clearance Q between central and peripheral compartments has a dimension mismatch, with a value of 0.001 L/h that is inconsistent with the structural parameter's expected scale.**
+**The paper reports none of the model's key parameters.**
 
-The model for pentamidine (Conte_1991, one-compartment structure) reports plasma clearance of 268 l/h, terminal half-life of 29 h, and Cmax of 249 ng/ml, but the intercompartmental clearance Q is recorded as 0.001 L/h, which failed the dimensional check on a structural parameter. The record was also built from the paper's abstract alone, so reported summary statistics stood in for a fitted model, limiting what could be validated. Extracted — pentamidine: Cmax 249 ng/ml, CL 268 l/h, t1/2z 29 h, Q 0.001 L/h, CL_ratio 2.1 %.
+No clearance, volume or rate constant of the model is reported in it. Only the abstract was available, so reported summary statistics stand in for a fitted model. No parameter values were extracted.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[elimination half-life].value`: this record has 29, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by glm-5.3-flash</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Conte JE, Pharmacokinetics of intravenous pentami…, The Journal of infectious d… (1991)
@@ -31,48 +31,24 @@ Conte JE, Pharmacokinetics of intravenous pentami…, The Journal of infectious 
 <div class="pk-model-meta" hidden drug="Pentamidine" model-id="Pentamidine_Conte1991_reference" status="rejected" stale="false" population="patients with normal renal function or receiving hemodialysis" measured-compound="pentamidine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 5 extracted.
+**Parameters:** 0 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| peak plasma concentration | `Q32` · Cmax | 249 | ng/ml | not captured | [ng] / [ml] | not captured | llm_confirmed (0.6) | Conte_1991:abstract, Conte_1991:abstract | — | not captured |
-| plasma clearance | `Q22` · CL | 268 | l/h | 7.444444444444444e-05 | [l] / [h] | not captured | llm_confirmed (0.6) | Conte_1991:abstract, Conte_1991:abstract | — | not captured |
-| elimination half-life | `Q57` · t1/2z | 29 | h | 104400.0 | [h] | not captured | llm (0.6) | Conte_1991:abstract, Conte_1991:abstract | — | not captured |
-| P | `Q30` · Q | 0.001 | L/h | 2.7777777777777777e-10 | L/h | not captured | llm (0.6) | Conte_1991:abstract | — | not captured |
-| renal clearance-to-plasma clearance ratio | `Q31` · CL_ratio | 2.1 | % | not captured | [%] | not captured | llm_confirmed (0.6) | Conte_1991:abstract | — | not captured |
-
-<details class="legend">
-<summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
-</details>
-
-### Unresolved rows _(no Q-code or no value — not parameters)_
-| label (paper) | Q-code | value | link |
-|---|---|---|---|
-| linear regression | Q900 | not captured | llm |
+_No resolved parameters._
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped duplicate Q900 ('r', value 0.91) — already have one for this compound
-- unit_dimension_mismatch: 'renal clearance-to-plasma clearance ratio' → Q31 (unit 'dimensionless' vs ontology '[length] ** 3 / [time]') — route to review
-- dropped duplicate Q57 ('elimination half-life after the last dose', value 12.0) — already have one for this compound
-- covariate renal for fe from footnote/prose kept as documentation only (['Conte_1991:abstract', 'Conte_1991:abstract'])
-- implicit units: 'P' → L/h (from the popPK convention: 'No unit stated in text, caption, or footnotes. Intercompartmental clearance (Q) in population PK is conventionally expre')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=pentamidine
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
-- status held at route_to_review — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Conte_1991_metadata.yaml (13 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Conte_1991_metadata.yaml (0 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -105,17 +81,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Conte_1991:abstract', 'Conte_1991:abstract'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Conte_1991:abstract'] |
-| C5_dimension_Q31 | fail | dimensionless | % | not captured | not captured | ['Conte_1991:abstract'] |
-| C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Conte_1991:abstract', 'Conte_1991:abstract'] |
-| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Conte_1991:abstract', 'Conte_1991:abstract'] |
-| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 268.0 | not captured | not captured | ['Conte_1991:abstract', 'Conte_1991:abstract'] |
+| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
+| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 268 L/h | not captured | not captured | ['Conte_1991:abstract', 'Conte_1991:abstract'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -124,7 +92,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_pentamidine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Conte_1991` / `Conte_1991::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_pentamidine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Conte_1991` / `Conte_1991::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -140,4 +108,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 08:20 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 19:39 UTC</sub>

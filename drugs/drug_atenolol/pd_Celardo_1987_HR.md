@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;atenolol&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/&quot;},{&quot;label&quot;:&quot;Celardo_1987 \u00b7 PD heart rate fall&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atenolol_Frampton1992_reference&quot;,&quot;label&quot;:&quot;Frampton_1992_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_Frampton1992_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Baek_2008_DBP&quot;,&quot;label&quot;:&quot;Baek_2008 \u00b7 DBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/pd_Baek_2008_DBP.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_McCoy_1994_HR&quot;,&quot;label&quot;:&quot;McCoy_1994 \u00b7 HR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/pd_McCoy_1994_HR.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_McCoy_1994_HR_2&quot;,&quot;label&quot;:&quot;McCoy_1994 \u00b7 HR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/pd_McCoy_1994_HR_2.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_McCoy_1994_HR_3&quot;,&quot;label&quot;:&quot;McCoy_1994 \u00b7 HR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/pd_McCoy_1994_HR_3.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Baek_2008_SBP&quot;,&quot;label&quot;:&quot;Baek_2008 \u00b7 SBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/pd_Baek_2008_SBP.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # heart rate fall — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
@@ -15,16 +16,16 @@
 
 ## Record summary
 
-**As extracted:** Atenolol (concentrations from this paper's PK model) drives heart rate fall (in beats): delayed effect through an effect compartment.
+**As extracted:** Atenolol (concentrations from this paper's PK model) drives heart rate fall (in beats): direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
 
-> Atenolol plasma concentrations (mg/l) drive a fall in heart rate (beats) via an effect compartment model, where the drug inhibits the response with a steep power function (gamma = 3.83 ± 3.12). The key parameters are an EC50 of 0.26 ± 0.12 mg/l, a maximum effect (Emax) of 91 ± 18 beats, and an effect compartment rate constant (ke0) of 1.10 ± 0.15 h⁻¹.
+> The effect of atenolol blood concentrations on heart rate fall was modeled using a sigmoid Emax equation with an effect compartment, where the mechanism is described as a link between blood and effect site rather than a specific physiological inhibition. Key parameters included a mean equilibration half-time of 0.7 h in normal conditions and 1.5 h in renal failure, with ke0 values of 1.10 ± 0.15 h⁻¹ and 0.45 ± 0.27 h⁻¹, respectively; the EC50 was approximately 0.23 mg/l (recorded as 0.26 ± 0.12 mg/l and 0.21 ± 0.10 mg/l), the maximum effect (Emax) was approximately 90 beats (recorded as 91 ± 18 beats and 87 ± 28 beats), and the sigmoidicity factor (γ) was 3.83 ± 3.12 and 5.48 ± 3.83.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Celardo_1987`
-- **model family:** `effect_compartment`
+- **model family:** `sigmoid_emax`
 - **driver:** `pk_record`
 - **tier:** descriptive
 - **effect:** inhibition/unknown
@@ -37,9 +38,13 @@ Celardo A et al., Pharmacokinetic and pharmacodynamic mod…, European journal o
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
 | PD (effect) | keO | `Q326` · not captured | 1.10± 0.15 | h-I | not captured | llm (not captured) | Celardo_1987:pdv3 |
+| PD (effect) | keO | `Q326` · not captured | 0.45 ± 0.27 | h-I | not captured | llm (not captured) | Celardo_1987:pdv3 |
 | PD (effect) | y | `Q325` · not captured | 3.83 ± 3.12 | not captured | not captured | llm (not captured) | Celardo_1987:pdv3 |
+| PD (effect) | y | `Q325` · not captured | 5.48 ± 3.83 | not captured | not captured | llm (not captured) | Celardo_1987:pdv3 |
 | PD (effect) | EC so | `Q321` · not captured | 0.26±0.12 | mg/I | not captured | llm (not captured) | Celardo_1987:pdv3 |
+| PD (effect) | EC so | `Q321` · not captured | 0.21±0.1O | mg/I | not captured | llm (not captured) | Celardo_1987:pdv3 |
 | PD (effect) | E max | `Q323` · not captured | 91 ± 18 | beats | not captured | direction (not captured) | Celardo_1987:pdv3 |
+| PD (effect) | E max | `Q323` · not captured | 87±28 | beats | not captured | direction (not captured) | Celardo_1987:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>

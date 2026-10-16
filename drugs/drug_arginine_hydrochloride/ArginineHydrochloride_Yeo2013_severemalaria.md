@@ -125,9 +125,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_arginine_hydrochloride/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Yeo_2013` / `Yeo_2013::severemalaria`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_arginine_hydrochloride/models/modelica/_needs_review/ArginineHydrochloride_Yeo2013_severemalaria.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_arginine_hydrochloride/models/modelica/_needs_review/ArginineHydrochloride_Yeo2013_severemalaria.deviation.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_arginine_hydrochloride/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Yeo_2013` / `Yeo_2013::severemalaria`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_arginine_hydrochloride/models/modelica/_needs_review/ArginineHydrochloride_Yeo2013_severemalaria.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_arginine_hydrochloride/models/modelica/_needs_review/ArginineHydrochloride_Yeo2013_severemalaria.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

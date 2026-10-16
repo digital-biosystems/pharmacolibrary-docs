@@ -4,7 +4,7 @@
 
 # erythropoietin — `Erythropoietin_Chakraborty2005_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -16,15 +16,13 @@
 
 ### Reviewer guidance
 
-**The erythropoietin record was held back because the absorption rate constant ka was not reported in the source and a placeholder value was substituted, an invented absorption input the review deemed unacceptable.**
+**The paper reports none of the model's key parameters.**
 
-The record comes from the paper's abstract only, so summary statistics stood in for a fitted model; ka and the lag time were given assumed placeholder values because the source reports none. The builder also assumed bioavailability F=1 and Fm=1 with no molar correction, giving an apparent (/F) parameterization with first-order depot input, and a second reader disputed this parameterization (preferring mechanistic) and could not confirm the reported CL/F of 1.86 L/h or V/F of 27.8 L. Extracted — erythropoietin: CL/F 1.86 L/h, V/F 27.8 L.
+No clearance, volume or rate constant of the model is reported in it. Only the abstract was available, so reported summary statistics stand in for a fitted model. No parameter values were extracted.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has epoetin alfa, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by glm-5.3-flash</sub>
-
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:37:55.755757+00:00) predates the upstream re-run (2026-10-05 21:06:05.847564+00:00). Current validate status: `rejected`.
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `epoetin alfa`, measured `erythropoietin`.
 
@@ -32,7 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Chakraborty A et al., Population pharmacokinetics of erythrop…, Journal of clinical pharmac… (2005)
   ·  DOI: [10.1177/0091270004269520](https://doi.org/10.1177/0091270004269520)
 
-<div class="pk-model-meta" hidden drug="erythropoietin" model-id="Erythropoietin_Chakraborty2005_reference" status="rejected" stale="true" population="critically ill subjects" measured-compound="erythropoietin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="erythropoietin" model-id="Erythropoietin_Chakraborty2005_reference" status="rejected" stale="false" population="critically ill subjects" measured-compound="erythropoietin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.
@@ -49,17 +47,14 @@ _No resolved parameters._
 **Interpretation flags:**
 - table section iiv: 'typical apparent clearance (CL/F)' routed out of structural estimates ('The interindividual variability in CL/F and V/F was estimated to be 57.2% and 83.8%.')
 - table section iiv: 'typical apparent volume of distribution (V/F)' routed out of structural estimates ('The interindividual variability in CL/F and V/F was estimated to be 57.2% and 83.8%.')
-- table section iiv: 'interindividual variability in CL/F' routed out of structural estimates ('The interindividual variability in CL/F and V/F was estimated to be 57.2% and 83.8%.')
-- table section iiv: 'interindividual variability in V/F' routed out of structural estimates ('The interindividual variability in CL/F and V/F was estimated to be 57.2% and 83.8%.')
 - table section iiv: 'CL/F' routed out of structural estimates ('The interindividual variability in CL/F and V/F was estimated to be 57.2% and 83.8%.')
 - table section iiv: 'V/F' routed out of structural estimates ('The interindividual variability in CL/F and V/F was estimated to be 57.2% and 83.8%.')
-- table section iiv: 'drop in exposure of EPO from the first to the subsequent dosing events' routed out of structural estimates ('The interindividual variability in CL/F and V/F was estimated to be 57.2% and 83.8%.')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=erythropoietin
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Chakraborty_2005_metadata.yaml (7 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Chakraborty_2005_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -93,18 +88,6 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
-| T3_output_variable | not captured | pass | C_central (measured=erythropoietin) | central.C | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
-
 <details class="legend">
 <summary>Validation definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
@@ -112,10 +95,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_erythropoietin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Chakraborty_2005` / `Chakraborty_2005::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_erythropoietin/models/modelica/Erythropoietin_Chakraborty2005_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_erythropoietin/models/modelica/Erythropoietin_Chakraborty2005_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_erythropoietin/models/modelica/Erythropoietin_Chakraborty2005_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_erythropoietin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Chakraborty_2005` / `Chakraborty_2005::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -131,4 +111,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 21:06 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 20:30 UTC</sub>

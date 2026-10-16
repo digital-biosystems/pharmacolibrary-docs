@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;atezolizumab&quot;,&quot;href&quot;:&quot;drugs/drug_atezolizumab/&quot;},{&quot;label&quot;:&quot;Netterberg_2019 \u00b7 PD interleukin 18&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atezolizumab_Chan2025_reference&quot;,&quot;label&quot;:&quot;Chan_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atezolizumab/Atezolizumab_Chan2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atezolizumab_Shemesh2019_adult_model_estimate&quot;,&quot;label&quot;:&quot;Shemesh_2019_adult_model_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atezolizumab/Atezolizumab_Shemesh2019_adult_model_estimate.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atezolizumab_Shemesh2019_pediatric_young_adult_model_estimat&quot;,&quot;label&quot;:&quot;Shemesh_2019_pediatric_young_adult_model_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atezolizumab/Atezolizumab_Shemesh2019_pediatric_young_adult_model_estimat.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # interleukin 18 — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
@@ -17,9 +18,9 @@
 
 **Model:** No model was generated from this record.
 
-> Atezolizumab produces a linear stimulatory effect on IL-18 release from a pool compartment into plasma; the model uses an effect compartment and a zero-order input rate with first-order IL-18 elimination. The reported values are a slope of 0.168 mL/μg, kₑ₀ of 4.36·10⁻³ day⁻¹, Rᵢₙ of 23.0 pg/mL/day, kₒᵤₜ of 0.106 day⁻¹, and baseline pool concentration of 499 pg/mL.
+> Atezolizumab plasma concentrations stimulate the production of interleukin-18 (IL-18) via an indirect response model with an effect compartment and a precursor pool, using a linear effect mechanism characterized by a slope of 0.168 mL/μg and an effect compartment rate constant (ke0) of 4.36·10−3 day−1. The model assumes a zero-order input rate (Rin) of 23.0 pg/mL/day and a fractional elimination rate constant (kout) of 0.106 day−1, with a baseline pool concentration of 499 pg/mL.
 >
-> <sub>Source-based summary by gpt-6-luna from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Netterberg_2019`
 - **model family:** `indirect_response_iii`
@@ -39,8 +40,6 @@ Netterberg I et al., A PK/PD Analysis of Circulating Biomark…, Clinical pharma
 | — | Pool0 | `Q100` · not captured | 499 | pg/mL | not captured | nil (not captured) | Netterberg_2019:pdv3 |
 | PD (effect) | Slope | `Q335` · not captured | 0.168 | mL/μg | not captured | llm (not captured) | Netterberg_2019:pdv3 |
 | PD (effect) | k e0 | `Q326` · not captured | 4.36·10−3 | day−1 | not captured | llm (not captured) | Netterberg_2019:pdv3 |
-| variability | IIV, CV% on k out | `Q312` · not captured | 47 | CV% | not captured | llm (not captured) | Netterberg_2019:pdv3 |
-| variability | IIV, CV% on Slope | `Q312` · not captured | 80 | CV% | not captured | llm (not captured) | Netterberg_2019:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>

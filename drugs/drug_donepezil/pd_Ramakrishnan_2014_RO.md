@@ -20,9 +20,9 @@
 
 **Model:** No model was generated from this record.
 
-> Donepezil dose (mg/kg) was related to Sigma-1 receptor occupancy (%) in rat whole brain using a sigmoid Emax (inhibitory) model; the paper reports an ED50 of 1.29 mg/kg, but no mechanism beyond this dose-response relationship and no Imax/Emax or gamma values are given in the available excerpts.
+> Donepezil dose (mg/kg) is modeled to inhibit the percentage of Sigma-1 receptor occupancy in rat whole brain via a sigmoidal Emax model. The paper states an ED50 of 1.29 mg/kg, but no full text is available to describe the specific mechanism or additional parameters.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Ramakrishnan_2014`
 - **model family:** `sigmoid_emax`

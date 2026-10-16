@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;gemcitabine&quot;,&quot;href&quot;:&quot;drugs/drug_gemcitabine/&quot;},{&quot;label&quot;:&quot;Ram\u00f3n-L\u00f3pez_2012 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Gemcitabine_Doi2017_reference&quot;,&quot;label&quot;:&quot;Doi_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gemcitabine/Gemcitabine_Doi2017_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gemcitabine_Serdjebi2017_reference&quot;,&quot;label&quot;:&quot;Serdjebi_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gemcitabine/Gemcitabine_Serdjebi2017_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gemcitabine_Terranova2021_reference&quot;,&quot;label&quot;:&quot;Terranova_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gemcitabine/Gemcitabine_Terranova2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gemcitabine_Jiang2008_reference&quot;,&quot;label&quot;:&quot;Jiang_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gemcitabine/Gemcitabine_Jiang2008_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gemcitabine_RamnLpez2012_reference&quot;,&quot;label&quot;:&quot;Ram\u00f3n-L\u00f3pez_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gemcitabine/Gemcitabine_RamnLpez2012_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Yao_2023_Tumor_volume&quot;,&quot;label&quot;:&quot;Yao_2023 \u00b7 Tumor volume&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_gemcitabine/pd_Yao_2023_Tumor_volume.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Gemcitabine_Doi2017_reference&quot;,&quot;label&quot;:&quot;Doi_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gemcitabine/Gemcitabine_Doi2017_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gemcitabine_Terranova2021_reference&quot;,&quot;label&quot;:&quot;Terranova_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gemcitabine/Gemcitabine_Terranova2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gemcitabine_RamnLpez2012_reference&quot;,&quot;label&quot;:&quot;Ram\u00f3n-L\u00f3pez_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gemcitabine/Gemcitabine_RamnLpez2012_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Blaauboer_2022_cell_amount&quot;,&quot;label&quot;:&quot;Blaauboer_2022 \u00b7 cell amount&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_gemcitabine/pd_Blaauboer_2022_cell_amount.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,13 +17,13 @@
 
 ### Reviewer guidance
 
-**The record was rejected because the output was set to the parent gemcitabine compartment instead of the measured analyte, 2',2'-difluorodeoxyuridine.**
+**T3_output_variable; t3_topology_template.**
 
-The expected model topology for a parent-metabolite system was not instantiated, leaving a single-compartment structure. The output variable remained linked to the central parent compartment rather than the metabolite. Since the record was abstract-only, these structural mismatches were not resolved by fitted model adjustments. Extracted — gemcitabine: CL 2.7 L/min, Vss 30 L; 2',2'-difluorodeoxyuridine: CL 0.0515 L/min.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — gemcitabine: CL 2.7 L/min, Vss 30 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has gemcitabine → 2',2'-difluorodeoxyuridine (metabolism), the second reading gemcitabine → dfdu (metabolism); it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Ramón-López A et al., [Population pharmacokinetics of gemcita…, Farmacia hospitalaria : org… (2012)
@@ -32,7 +32,7 @@ Ramón-López A et al., [Population pharmacokinetics of gemcita…, Farmacia hos
 <div class="pk-model-meta" hidden drug="gemcitabine" model-id="Gemcitabine_RamnLpez2012_reference" status="rejected" stale="false" population="cancer patients" measured-compound="gemcitabine" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
-**Parameters:** 3 extracted.
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -41,8 +41,7 @@ Ramón-López A et al., [Population pharmacokinetics of gemcita…, Farmacia hos
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| clearance | `Q22` · CL | 2.7 | L/min | 4.5e-05 | [l] / [min] | not captured | exact (1.0) | Ramón-López_2012:abstract | — | not captured |
-| dFdU clearance | `Q22` · CL | 0.0515 | L/min | 8.583333333333333e-07 | [l] / [min] | not captured | exact (1.0) | Ramón-López_2012:abstract | — | not captured |
+| clearance | `Q22` · CL | 2.7 | L/min | 4.5e-05 | [l] / [min] | not captured | exact (1.0) | Ramón-López_2012:abstract, Ramón-López_2012:abstract | — | not captured |
 | distribution volume at steady state | `Q65` · Vss | 30 | L | 0.03 | [l] | not captured | llm_confirmed (0.6) | Ramón-López_2012:abstract, Ramón-López_2012:abstract | — | not captured |
 
 <details class="legend">
@@ -57,8 +56,10 @@ Ramón-López A et al., [Population pharmacokinetics of gemcita…, Farmacia hos
 
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=gemcitabine
+- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
 - template fit: none — noncompartmental model — not a compartmental parent–metabolite model
-- row roles (LLM): model_class=noncompartmental; 3/3 row label(s) assigned, 2 linked by role; re-tagged gemcitabine→parent ×3, gemcitabine→2',2'-difluorodeoxyuridine ×1
+- status held at route_to_review — not promoted
+- row roles (LLM): model_class=noncompartmental; 2/2 row label(s) assigned, 0 linked by role; re-tagged gemcitabine→parent ×4
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
@@ -101,16 +102,14 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Ramón-López_2012:abstract'] |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Ramón-López_2012:abstract'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Ramón-López_2012:abstract', 'Ramón-López_2012:abstract'] |
 | C5_dimension_Q65 | pass | [length] ** 3 | not captured | not captured | not captured | ['Ramón-López_2012:abstract', 'Ramón-López_2012:abstract'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 2.7 | not captured | not captured | ['Ramón-López_2012:abstract'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 2.7 | not captured | not captured | ['Ramón-López_2012:abstract', 'Ramón-López_2012:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 162 L/h | not captured | not captured | ['Ramón-López_2012:abstract'] |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 3.09 L/h | not captured | not captured | ['Ramón-López_2012:abstract'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 162 L/h | not captured | not captured | ['Ramón-López_2012:abstract', 'Ramón-López_2012:abstract'] |
 | C9_phys_window_Q65 | pass | volume within physiological range | 30 L | not captured | not captured | ['Ramón-López_2012:abstract', 'Ramón-López_2012:abstract'] |
 
 **Reviewer per-scenario checks:**
@@ -120,8 +119,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_output_variable | not captured | fail | Metabolite_C (measured=gemcitabine) | central.C | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
-| T3_rate_constant_conversion | not captured | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model | not captured | rate constant must not be used raw as a clearance |
+| T3_param_coverage | not captured | pass | 1 scholar param(s) emitted or defaulted | 1 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | fail | parent_metabolite → PK_3M_9C* | PK_1C | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
@@ -132,10 +130,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_gemcitabine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Ramón-López_2012` / `Ramón-López_2012::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_gemcitabine/models/modelica/Gemcitabine_RamnLpez2012_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_gemcitabine/models/modelica/Gemcitabine_RamnLpez2012_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_gemcitabine/models/modelica/Gemcitabine_RamnLpez2012_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_gemcitabine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Ramón-López_2012` / `Ramón-López_2012::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_gemcitabine/models/modelica/Gemcitabine_RamnLpez2012_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_gemcitabine/models/modelica/Gemcitabine_RamnLpez2012_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_gemcitabine/models/modelica/Gemcitabine_RamnLpez2012_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -155,4 +153,4 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 16:45 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 21:15 UTC</sub>

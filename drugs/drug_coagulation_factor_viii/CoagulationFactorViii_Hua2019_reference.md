@@ -4,7 +4,7 @@
 
 # coagulation factor VIII — `CoagulationFactorViii_Hua2019_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -16,21 +16,19 @@
 
 ### Reviewer guidance
 
-**No model parameters were extracted from this paper.**
+**The paper reports none of the model's key parameters.**
 
-Nothing in the extracted data describes the drug's disposition, so there is no model to build.
+No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has coagulation_factor_viii, the second reading Kogenate FS, Advate; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has recombinant coagulation factor VIII, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
-
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:37:14.619092+00:00) predates the upstream re-run (2026-10-05 18:41:56.379337+00:00). Current validate status: `rejected`.
 
 ## Citation
 Hua BL et al., [Population pharmacokinetics of two rec…, Zhonghua xue ye xue za zhi… (2019)
   ·  DOI: [10.3760/cma.j.issn.0253-2727.2019.08.009](https://doi.org/10.3760/cma.j.issn.0253-2727.2019.08.009)
 
-<div class="pk-model-meta" hidden drug="coagulation factor VIII" model-id="CoagulationFactorViii_Hua2019_reference" status="rejected" stale="true" population="patients with hemophilia A" measured-compound="coagulation_factor_viii" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="coagulation factor VIII" model-id="CoagulationFactorViii_Hua2019_reference" status="rejected" stale="false" population="patients with hemophilia A" measured-compound="recombinant human coagulation factor VIII" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.
@@ -45,10 +43,24 @@ _No resolved parameters._
 ## Departures & gaps
 
 **Interpretation flags:**
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=coagulation_factor_viii
+- dropped unlinked row (NIL): '&lt;12岁' — extend the ontology if this is a real PK parameter (source ['Hua_2019_table_2:row1:col3', 'Hua_2019_table_2:row4:col3'])
+- dropped unlinked row (NIL): '≥12岁' — extend the ontology if this is a real PK parameter (source ['Hua_2019_table_2:row2:col3', 'Hua_2019_table_2:row5:col3'])
+- dropped unlinked row (NIL): '&lt; 20 IU/kg' — extend the ontology if this is a real PK parameter (source ['Hua_2019_table_3:row1:col3', 'Hua_2019_table_3:row6:col3'])
+- dropped unlinked row (NIL): '20 ~ 29 IU/kg' — extend the ontology if this is a real PK parameter (source ['Hua_2019_table_3:row2:col3', 'Hua_2019_table_3:row7:col3'])
+- dropped unlinked row (NIL): '30 ~ 39 IU/kg' — extend the ontology if this is a real PK parameter (source ['Hua_2019_table_3:row3:col3', 'Hua_2019_table_3:row8:col3'])
+- dropped unlinked row (NIL): '≥40 IU/kg' — extend the ontology if this is a real PK parameter (source ['Hua_2019_table_3:row4:col3', 'Hua_2019_table_3:row9:col3'])
+- table mostly unlinked (6/6 table-cell rows NIL) — likely the wrong table was located, not 0 genuinely-missing ontology parameter(s); route_to_review instead of building a model from the residual linked cell(s)
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=recombinant human coagulation factor VIII
+- status held at route_to_review — not promoted
+- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
-- no GROBID TEI available; abstract in Hua_2019_metadata.yaml carries no parameter-bearing sentence
+- no TEI final-model table id; trying text-pointer table recovery
+- LLM selected parameter table(s) 2, 3
+- table Hua_2019_table_2: unknown_column_role
+- table Hua_2019_table_2: units_need_context
+- table Hua_2019_table_3: unknown_column_role
+- table Hua_2019_table_3: units_need_context
 
 ## Validation
 
@@ -57,14 +69,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.5 (2/4 fields) | 2 |
+| `gpt-oss-120b` | not confirmed | 0.333 (2/6 fields) | 4 |
 
-<details><summary>2 field discrepancies</summary>
+<details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `screen.dose_compound` | coagulation_factor_viii | Kogenate FS, Advate | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | coagulation_factor_viii | coagulation factor VIII | mismatch |
+| `gpt-oss-120b` | `parameters[30 - 39 iu/kg]` | 58.2 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[&lt;20 iu/kg]` | not captured | 50.8 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | recombinant coagulation factor VIII | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | coagulation factor VIII | unknown | mismatch |
 
 </details>
 
@@ -89,7 +103,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_coagulation_factor_viii/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Hua_2019` / `Hua_2019::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_coagulation_factor_viii/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Hua_2019` / `Hua_2019::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -105,4 +119,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 18:41 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 21:43 UTC</sub>

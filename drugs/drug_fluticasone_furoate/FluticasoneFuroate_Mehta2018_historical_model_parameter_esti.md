@@ -130,9 +130,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_fluticasone_furoate/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Mehta_2018` / `Mehta_2018::historical_model_parameter_estimates_rse`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_fluticasone_furoate/models/modelica/_needs_review/FluticasoneFuroate_Mehta2018_historical_model_parameter_esti.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_fluticasone_furoate/models/modelica/_needs_review/FluticasoneFuroate_Mehta2018_historical_model_parameter_esti.deviation.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_fluticasone_furoate/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Mehta_2018` / `Mehta_2018::historical_model_parameter_estimates_rse`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_fluticasone_furoate/models/modelica/_needs_review/FluticasoneFuroate_Mehta2018_historical_model_parameter_esti.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_fluticasone_furoate/models/modelica/_needs_review/FluticasoneFuroate_Mehta2018_historical_model_parameter_esti.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

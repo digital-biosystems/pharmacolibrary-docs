@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03A&quot;,&quot;href&quot;:&quot;atc/R03A.md&quot;},{&quot;label&quot;:&quot;Vilanterol&quot;,&quot;href&quot;:&quot;drugs/drug_vilanterol/&quot;},{&quot;label&quot;:&quot;Llanos-Paez_2023 \u00b7 PD morning trough FEV1&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03A&quot;,&quot;href&quot;:&quot;atc/R03A.md&quot;},{&quot;label&quot;:&quot;Vilanterol&quot;,&quot;href&quot;:&quot;drugs/drug_vilanterol/&quot;},{&quot;label&quot;:&quot;Llanos-Paez_2023 \u00b7 PD forced expiratory volume in one second&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# morning trough FEV1 — PD  <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
+# forced expiratory volume in one second — PD  <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--green" title="re-read by ollama:gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -13,19 +13,19 @@
 
 ## Record summary
 
-**As extracted:** Vilanterol (the dose) drives morning trough FEV1 (in L): direct sigmoid Emax (Hill) effect.
+**As extracted:** Vilanterol (the dose) drives forced expiratory volume in one second (in L): direct Emax (saturable) effect.
 
 **Model:** No model was generated from this record.
 
-> Vilanterol dose (µg) stimulates morning trough FEV1 via a sigmoid Emax dose-response model, with ED50 of 2.02 µg, Emax of 123.4 mL above a reference effect (Effref) of 114 mL; the paper does not describe a mechanistic production/elimination or effect-compartment structure for this drug.
+> Vilanterol dose (in µg) stimulates FEV1 (in L) via an additive Emax model, with an estimated ED50 of 2.02 µg and an Emax of 123.4 mL. The paper does not explicitly state the mechanism of action for vilanterol in this context, nor does it provide specific rate parameters (e.g., ke0, kin, kout) for this drug.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
 
 - **paper:** `Llanos-Paez_2023`
-- **model family:** `sigmoid_emax`
+- **model family:** `emax`
 - **driver:** `dose_only`
 - **tier:** population
-- **effect:** stimulation/proportional
+- **effect:** stimulation/additive
 
 ## Citation
 Llanos-Paez C et al., Joint longitudinal model-based meta-ana…, Journal of pharmacokinetics… (2023)
@@ -35,7 +35,6 @@ Llanos-Paez C et al., Joint longitudinal model-based meta-ana…, Journal of pha
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
 | PD (effect) | ED50 | `Q321` · not captured | 2.02 | ug | not captured | llm (not captured) | Llanos-Paez_2023:pdv3 |
-| PD (effect) | Effref | `Q320` · not captured | 114 | mL | not captured | llm (not captured) | Llanos-Paez_2023:pdv3 |
 | PD (effect) | Emax | `Q320` · not captured | 123.4 | mL | not captured | llm (not captured) | Llanos-Paez_2023:pdv3 |
 | PD (effect) | Olodaterol Effref | `Q324` · not captured | 89.3 | mL | not captured | review_gapfill (not captured) | Llanos-Paez_2023:review |
 
@@ -45,25 +44,14 @@ Llanos-Paez C et al., Joint longitudinal model-based meta-ana…, Journal of pha
 </details>
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `einfracz:gpt-oss-120b` | not confirmed | 0.25 (2/8 fields) | 6 |
+| `ollama:gpt-oss:120b` | confirmed | 1.0 (6/6 fields) | none |
 
-<details><summary>6 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `einfracz:gpt-oss-120b` | `effect_form` | proportional | additive | mismatch |
-| `einfracz:gpt-oss-120b` | `model_family` | sigmoid_emax | emax | mismatch |
-| `einfracz:gpt-oss-120b` | `parameters[Q100]` | not captured | unit": "mL", | only_one_extracted |
-| `einfracz:gpt-oss-120b` | `parameters[Q320].value` | 123.4 | unit": "mL", | mismatch |
-| `einfracz:gpt-oss-120b` | `parameters[Q321].value` | 2.02 | unit": "ug", | mismatch |
-| `einfracz:gpt-oss-120b` | `parameters[Q324]` | 89.3 | not captured | only_one_extracted |
-
-</details>
+_All readers agree on the compared fields of this PD record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>

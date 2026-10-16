@@ -20,9 +20,9 @@
 
 **Model:** No model was generated from this record.
 
-> Rivastigmine, the positive control, inhibited acetylcholinesterase activity in vitro (Ellman assay, % inhibition) with an IC50 of 24.52 μg/mL; the paper reports a dose-dependent inhibitory concentration–response but does not describe a specific PD mechanism beyond direct AChE inhibition.
+> Rivastigmine acts as an acetylcholinesterase inhibitor, with a reported IC50 of 24.52 μg/mL. The paper describes the effect as dose-dependent AChE inhibition but does not specify the detailed kinetic mechanism or rate constants (e.g., kin, kout, ke0) for the response.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Manalo_2017`
 - **model family:** `emax`

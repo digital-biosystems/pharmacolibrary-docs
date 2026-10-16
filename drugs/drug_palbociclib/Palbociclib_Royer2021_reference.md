@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;palbociclib&quot;,&quot;href&quot;:&quot;drugs/drug_palbociclib/&quot;},{&quot;label&quot;:&quot;Royer_2021 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Palbociclib_Courlet2022_reference&quot;,&quot;label&quot;:&quot;Courlet_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_palbociclib/Palbociclib_Courlet2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -16,19 +17,19 @@
 
 ### Reviewer guidance
 
-**Palbociclib’s absorption lag time, tlag = 0.658, was reported in L, a dimensional mismatch that led to rejection.**
+**C5 dimension mismatch on a structural parameter.**
 
-The record identifies tlag as the drug absorption lag time but reports its unit as L. That unit could not be converted to SI, so the parameter reached the model without an SI value. Extracted — palbociclib: CL/F 58.3 L/h, V/F 1.58e+03 L, kabs 0.187 h−1, tlag 0.658 L.
+A reported unit could not be converted (tlag), so that value has no SI equivalent. Extracted — palbociclib: CL/F 58.3 L/h, V/F 1.58e+03 L, kabs 0.187 h−1, tlag 0.658 L.
 
 Independently confirmed by `qwen3.8-27b`.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Royer B et al., Population Pharmacokinetics of Palbocic…, Pharmaceuticals (Basel, Swi… (2021)
   ·  DOI: [10.3390/ph14030181](https://doi.org/10.3390/ph14030181)
 
-<div class="pk-model-meta" hidden drug="palbociclib" model-id="Palbociclib_Royer2021_reference" status="rejected" stale="false" population="postmenopausal women with metastatic breast cancer routinely followed in a cancer center" measured-compound="palbociclib" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="palbociclib" model-id="Palbociclib_Royer2021_reference" status="rejected" stale="false" population="postmenopausal women with metastatic breast cancer" measured-compound="palbociclib" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted, plus 1 covariate effect.
@@ -40,11 +41,11 @@ Royer B et al., Population Pharmacokinetics of Palbocic…, Pharmaceuticals (Bas
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F (L/h) | `Q27` · CL/F | 58.3 | L/h | 1.6194444444444444e-05 | [l] / [h] | not captured | exact (1.0) | pharmaceuticals-14-00181-t002:row2:col1, pharmaceuticals-14-00181-t002:row2:col4 | — | not captured |
-| V/F (L) | `Q76` · V/F | 1580 | L | 1.58 | [l] | not captured | exact (1.0) | pharmaceuticals-14-00181-t002:row4:col1, pharmaceuticals-14-00181-t002:row4:col4 | — | not captured |
-| Ka (h−1) | `Q49` · kabs | 0.187 | h−1 | 5.1944444444444446e-05 | [1] / [h] | not captured | exact (1.0) | pharmaceuticals-14-00181-t002:row5:col1, pharmaceuticals-14-00181-t002:row5:col4 | — | not captured |
-| Tlag (L) | `Q83` · tlag | 0.658 | L | not captured | [l] | not captured | exact (1.0) | pharmaceuticals-14-00181-t002:row6:col1 | — | not captured |
-| theta_cl_f_crcl | `Q900` · theta_cl_f_crcl | 0.419 | not captured | not captured | not captured | not captured | not captured (not captured) | pharmaceuticals-14-00181-t002:row3:col1, pharmaceuticals-14-00181-t002:row3:col4 | — | not captured |
+| CL/F (L/h) | `Q27` · CL/F | 58.3 | L/h | 1.6194444444444444e-05 | [l] / [h] | 3.3 | exact (1.0) | Royer_2021_table_p5_1:row0:col1 | — | 31.3 (36.2% RSE) |
+| crcl_on_cl_f | `Q900` · crcl_on_cl_f | 0.419 | not captured | not captured | not captured | 13.9 | not captured (not captured) | Royer_2021_table_p5_1:row1:col1 | — | not captured |
+| V/F (L) | `Q76` · V/F | 1580 | L | 1.58 | [l] | 16.2 | exact (1.0) | Royer_2021_table_p5_1:row2:col1 | — | not captured |
+| Ka (h−1) | `Q49` · kabs | 0.187 | h−1 | 5.1944444444444446e-05 | [1] / [h] | 19.3 | exact (1.0) | Royer_2021_table_p5_1:row3:col1 | — | 126.1 (36.2% RSE) |
+| Tlag (L) | `Q83` · tlag | 0.658 | L | not captured | [l] | not captured | exact (1.0) | Royer_2021_table_p5_1:row4:col1 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -54,10 +55,9 @@ Royer B et al., Population Pharmacokinetics of Palbocic…, Pharmaceuticals (Bas
 ## Departures & gaps
 
 **Interpretation flags:**
-- table section covariance: 'Additional Error (µG/L)' routed out of structural estimates ('Correlation between CL/F and Ka')
-- table section covariance: 'Proportional Error' routed out of structural estimates ('Correlation between CL/F and Ka')
-- dropped value-less row: 'Model Parameters'
+- covariate level 'CRCL on CL/F' → Q900:crcl_on_cl_f = 0.419 (linear_fractional on Q27)
 - unit_dimension_mismatch: 'Tlag (L)' → Q83 (unit '[length] ** 3' vs ontology '[time]') — route to review
+- routed 'Additional Error (µG/L)' → Q317 (add_error) to residual_error — variability estimate, not a structural parameter
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=palbociclib
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
@@ -65,14 +65,9 @@ Royer B et al., Population Pharmacokinetics of Palbocic…, Pharmaceuticals (Bas
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- unparsed cell pharmaceuticals-14-00181-t002:row2:col2 = '3.3%'
-- unparsed cell pharmaceuticals-14-00181-t002:row3:col2 = '13.9%'
-- unparsed cell pharmaceuticals-14-00181-t002:row4:col2 = '16.2%'
-- unparsed cell pharmaceuticals-14-00181-t002:row5:col2 = '19.3%'
-- unparsed cell pharmaceuticals-14-00181-t002:row10:col2 = '17.6%'
-- unparsed cell pharmaceuticals-14-00181-t002:row10:col3 = '58.9%'
-- unparsed cell pharmaceuticals-14-00181-t002:row11:col2 = '31.3%'
-- unparsed cell pharmaceuticals-14-00181-t002:row11:col3 = '58.9%'
+- table Royer_2021_table_p5_1: conflicting_units
+- table Royer_2021_table_p5_1: unbound_uncertainty
+- table Royer_2021_table_p5_1: unparsed_numeric_cell
 - LLM selected parameter table(s) 2
 
 ## Validation
@@ -100,14 +95,14 @@ _All readers agree on the compared fields of this record._
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['pharmaceuticals-14-00181-t002:row2:col1', 'pharmaceuticals-14-00181-t002:row2:col4'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['pharmaceuticals-14-00181-t002:row5:col1', 'pharmaceuticals-14-00181-t002:row5:col4'] |
-| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['pharmaceuticals-14-00181-t002:row4:col1', 'pharmaceuticals-14-00181-t002:row4:col4'] |
-| C5_dimension_Q83 | fail | [length] ** 3 | L | not captured | not captured | ['pharmaceuticals-14-00181-t002:row6:col1'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Royer_2021_table_p5_1:row0:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Royer_2021_table_p5_1:row3:col1'] |
+| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Royer_2021_table_p5_1:row2:col1'] |
+| C5_dimension_Q83 | fail | [length] ** 3 | L | not captured | not captured | ['Royer_2021_table_p5_1:row4:col1'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 58.3 L/h | not captured | not captured | ['pharmaceuticals-14-00181-t002:row2:col1', 'pharmaceuticals-14-00181-t002:row2:col4'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 1.58e+03 L | not captured | not captured | ['pharmaceuticals-14-00181-t002:row4:col1', 'pharmaceuticals-14-00181-t002:row4:col4'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 58.3 L/h | not captured | not captured | ['Royer_2021_table_p5_1:row0:col1'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 1.58e+03 L | not captured | not captured | ['Royer_2021_table_p5_1:row2:col1'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -116,7 +111,7 @@ _All readers agree on the compared fields of this record._
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_palbociclib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Royer_2021` / `Royer_2021::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_palbociclib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Royer_2021` / `Royer_2021::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -132,4 +127,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 04:09 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 20:16 UTC</sub>

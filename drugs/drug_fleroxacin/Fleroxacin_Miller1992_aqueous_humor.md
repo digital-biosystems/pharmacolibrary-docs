@@ -4,7 +4,7 @@
 
 # fleroxacin — `Fleroxacin_Miller1992_aqueous_humor`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.8), gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -22,15 +22,17 @@
 
 The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. A reported unit could not be converted (AUC and Cmax), so that value has no SI equivalent. Extracted — fleroxacin: t1/2α 3.21 h, AUC 7.96 mg·h/L, Cmax 1.54 pg/mi, tmax 0.503 h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of % penetration: this record has none, the second reading 27.109; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of % penetration: this record has none, the second reading 27.109; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>the checker's own wording — not yet put into words by an LLM</sub>
+
+> **Dose compound ≠ measured compound:** dosed `floxacin`, measured `fleroxacin`.
 
 ## Citation
 Miller MH et al., Fleroxacin pharmacokinetics in aqueous…, Antimicrobial agents and ch… (1992)
   ·  DOI: [10.1128/AAC.36.1.32](https://doi.org/10.1128/AAC.36.1.32)
 
-<div class="pk-model-meta" hidden drug="fleroxacin" model-id="Fleroxacin_Miller1992_aqueous_humor" status="rejected" stale="false" population="New Zealand White rabbits" measured-compound="fleroxacin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="fleroxacin" model-id="Fleroxacin_Miller1992_aqueous_humor" status="rejected" stale="false" population="adult male New Zealand White rabbits" measured-compound="fleroxacin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.
@@ -66,29 +68,24 @@ Miller MH et al., Fleroxacin pharmacokinetics in aqueous…, Antimicrobial agent
 - status held at route_to_review — not promoted
 - population split: 'aqueous humor' subgroup of Miller_1992 (paper reports 3 populations: aqueous humor, serum, vitreous humor)
 
-**Extraction notes:**
-- transposed table tab_1: parameters were across the columns, populations/subgroups down the first column — transposed for parsing
-- unparsed cell tab_1:row0:col1 = 'a3'
-- unparsed cell tab_1:row1:col1 = 'tl,2| (h)'
-- unparsed cell tab_1:row7:col1 = 'k12 (W-)'
-- unparsed cell tab_1:row8:col1 = "k2l (h-')"
-- LLM selected parameter table(s) 2
-
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss:120b` | not confirmed | 0.8 (8/10 fields) | 2 |
 | `gpt-oss-120b` | not confirmed | 0.8 (8/10 fields) | 2 |
 
-<details><summary>2 field discrepancies</summary>
+<details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `parameters[% penetration]` | not captured | 27.109 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[tl,2|].parameter_id` | Q59 | Q60 | mismatch |
+| `gpt-oss:120b` | `parameters[% penetration]` | not captured | 27.109 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[tl,2|].parameter_id` | Q59 | Q60 | mismatch |
 
 </details>
 
@@ -117,7 +114,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_fleroxacin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Miller_1992` / `Miller_1992::aqueous_humor`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_fleroxacin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Miller_1992` / `Miller_1992::aqueous_humor`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -133,4 +130,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 11:53 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 22:52 UTC</sub>

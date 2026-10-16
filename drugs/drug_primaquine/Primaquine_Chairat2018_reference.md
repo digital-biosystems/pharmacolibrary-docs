@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;primaquine&quot;,&quot;href&quot;:&quot;drugs/drug_primaquine/&quot;},{&quot;label&quot;:&quot;Chairat_2018 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Primaquine_Chairat2018_reference&quot;,&quot;label&quot;:&quot;Chairat_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_primaquine/Primaquine_Chairat2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Primaquine_Sridharan2019_reference&quot;,&quot;label&quot;:&quot;Sridharan_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_primaquine/Primaquine_Sridharan2019_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Primaquine_Chairat2018_reference&quot;,&quot;label&quot;:&quot;Chairat_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_primaquine/Primaquine_Chairat2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,38 +17,40 @@
 
 ### Reviewer guidance
 
-**The primaquine model was held back because the hepatic intercompartmental clearances (90 L/h each way) and the absorption rate constant ka were left at library defaults rather than reported estimates from Chairat_2018.**
+**Q12/q21 (hepatic flow, 90 L/h), ka use library defaults, not estimates from this paper; t6_deviations.**
 
-The record covers primaquine with its metabolite carboxyprimaquine (presystemic formation, ΔOFV −260, −11.1 and −42.5 for racemic, (+)-S- and (−)-R-enantiomer models), with reported values such as CL/F 23.1 L/h, V3/F 160 L, MTT 0.833 h and 5 transit compartments. However, the hepatic distribution clearances between the compartments (90 L/h) and the absorption rate constant ka were not estimated in the paper; the model builder substituted library defaults, so the simulated profile depends on values unsupported by this source. The builder also assumed F=1 and Fm=1 with no molar correction (apparent parameterization), and one reported unit could not be converted to SI, so that parameter lacked an SI value. Extracted — primaquine: Fab 100, MTT 0.833 h, n_transit 5, CL/F 23.1 L/h, V3/F 160 L, V/F 22.3 L, tlag 0 h; carboxyprimaquine: fm 0.46, CL 0.377 L/h, V 10.5 L.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. A reported unit could not be converted (Fab, MTT and fm), so that value has no SI equivalent. Extracted — primaquine: Fab 100 %, MTT 0.833 h, n_transit 5, CL/F 23.1 L/h, V 160 L, tlag 0 h; carboxyprimaquine: fm 0.46 %, CL 0.377 L/h, V 10.5 L.
 
-<sub>reviewed by glm-5.3-flash</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Chairat K et al., Enantiospecific pharmacokinetics and dr…, The Journal of antimicrobia… (2018)
   ·  DOI: [10.1093/jac/dky297](https://doi.org/10.1093/jac/dky297)
 
-<div class="pk-model-meta" hidden drug="primaquine" model-id="Primaquine_Chairat2018_reference" status="needs_review" stale="false" population="healthy adult volunteers" measured-compound="primaquine" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="primaquine" model-id="Primaquine_Chairat2018_reference" status="needs_review" stale="false" population="healthy adult volunteers" measured-compound="primaquine" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent–metabolite model: parent with 1 compartment(s) plus a liver compartment (first pass); metabolite carboxyprimaquine: 1 compartment(s); formed in the liver; oral dose — template `PK_3M_3C`.  
-**Parameters:** 10 extracted.
+**Parameters:** 12 extracted.
 
-**Parameterization:** CL/F, V/F, V3/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** mechanistic.
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| F (%) | `Q40` · Fab | 100 | not captured | not captured | not captured | not captured | exact (1.0) | dky297-T1:row3:col5 | — | 13.8 (None% RSE) |
-| MTT (h) | `Q81` · MTT | 0.833 | h | not captured | [h] | not captured | exact (1.0) | dky297-T1:row4:col5, dky297-T1:row4:col6 | — | not captured |
-| No. of transit compartments | `Q311` · n_transit | 5 | not captured | not captured | not captured | not captured | llm_corrected (0.6) | dky297-T1:row5:col5 | — | not captured |
-| CL/FPRQ (L/h) | `Q27` · CL/F | 23.1 | L/h | 6.416666666666667e-06 | [l] / [h] | not captured | llm (0.6) | dky297-T1:row6:col5, dky297-T1:row6:col6 | — | not captured |
-| V/FPRQ (L) | `Q78` · V3/F | 160 | L | 0.16 | [l] | not captured | llm (0.6) | dky297-T1:row7:col5, dky297-T1:row7:col6 | — | not captured |
-| Fm (%) | `Q45` · fm | 0.460 | not captured | not captured | not captured | not captured | exact (1.0) | dky297-T1:row8:col5, dky297-T1:row8:col6 | — | not captured |
-| CL/FCPRQ (L/h) | `Q22` · CL | 0.377 | L/h | 1.0472222222222222e-07 | [l] / [h] | not captured | exact (1.0) | dky297-T1:row9:col5, dky297-T1:row9:col6 | — | not captured |
-| V/FCPRQ (L) | `Q61` · V | 10.5 | L | 0.0105 | [l] | not captured | exact (1.0) | dky297-T1:row10:col5, dky297-T1:row10:col6 | — | not captured |
-| V/FPRQ | `Q76` · V/F | 22.3 | L | 0.0223 | L | not captured | llm (0.6) | dky297-T1:row15:col5, dky297-T1:row15:col6, dky297-T1:row18:col5, dky297-T1:row18:col6 | — | not captured |
-| Lag time (h) | `Q83` · tlag | 0.0 | h | 0.0 | h | not captured | review_gapfill (0.7) | Fasinu_2022_2:review | — | not captured |
+| Cmax PRQ (ng/mL) | `Q32` · Cmax | 144 | ng/mL | not captured | [ng] / [ml] | not captured | llm_confirmed (0.6) | Chairat_2018_table_2:row1:col4, Chairat_2018_table_2:row13:col4, Chairat_2018_table_2:row25:col4 | — | not captured |
+| Tmax PRQ (h) | `Q56` · tmax | 1.35 | h | 4860.0 | [h] | not captured | llm_confirmed (0.6) | Chairat_2018_table_2:row2:col4, Chairat_2018_table_2:row14:col4, Chairat_2018_table_2:row26:col4 | — | not captured |
+| t1/2 PRQ (h) | `Q57` · t1/2z | 5.74 | h | 20664.0 | [h] | not captured | llm_confirmed (0.6) | Chairat_2018_table_2:row3:col4, Chairat_2018_table_2:row15:col4, Chairat_2018_table_2:row27:col4 | — | not captured |
+| AUC0–48 PRQ (ng·h/mL) | `Q88` · AUC | 1370 | ng·h/mL | not captured | [[h] · [ng]] / [ml] | not captured | llm (0.6) | Chairat_2018_table_2:row4:col4, Chairat_2018_table_2:row16:col4, Chairat_2018_table_2:row28:col4 | — | not captured |
+| AUC0–∞ PRQ (ng·h/mL) | `Q17` · AUC∞ | 1380 | ng·h/mL | not captured | [[h] · [ng]] / [ml] | not captured | llm_confirmed (0.6) | Chairat_2018_table_2:row5:col4, Chairat_2018_table_2:row17:col4, Chairat_2018_table_2:row29:col4 | — | not captured |
+| Cmax CPRQ (ng/mL) | `Q32` · Cmax | 1220 | ng/mL | not captured | [ng] / [ml] | not captured | llm_confirmed (0.6) | Chairat_2018_table_2:row6:col4, Chairat_2018_table_2:row18:col4, Chairat_2018_table_2:row30:col4 | — | not captured |
+| Tmax CPRQ (h) | `Q56` · tmax | 8.87 | h | 31931.999999999996 | [h] | not captured | llm_confirmed (0.6) | Chairat_2018_table_2:row7:col4, Chairat_2018_table_2:row19:col4, Chairat_2018_table_2:row31:col4 | — | not captured |
+| t1/2 CPRQ (h) | `Q57` · t1/2z | 13.8 | h | 49680.0 | [h] | not captured | llm_confirmed (0.6) | Chairat_2018_table_2:row8:col4, Chairat_2018_table_2:row20:col4, Chairat_2018_table_2:row32:col4 | — | not captured |
+| AUC0–48 CPRQ (ng·h/mL) | `Q19` · AUCt | 34600 | ng·h/mL | not captured | [[h] · [ng]] / [ml] | not captured | llm (0.6) | Chairat_2018_table_2:row9:col4, Chairat_2018_table_2:row21:col4, Chairat_2018_table_2:row33:col4 | — | not captured |
+| AUC0–∞ CPRQ (ng·h/mL) | `Q17` · AUC∞ | 45700 | ng·h/mL | not captured | [[h] · [ng]] / [ml] | not captured | llm_confirmed (0.6) | Chairat_2018_table_2:row10:col4, Chairat_2018_table_2:row22:col4, Chairat_2018_table_2:row34:col4 | — | not captured |
+| AUC_CPRQ/AUC_PRQ | `Q21` · AUC ratio | 32.9 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | Chairat_2018_table_2:row11:col4, Chairat_2018_table_2:row23:col4, Chairat_2018_table_2:row35:col4 | — | not captured |
+| Lag time | `Q83` · tlag | 0.0 | h | 0.0 | h | not captured | review_gapfill (0.7) | Fasinu_2022_2:review | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -65,20 +67,33 @@ Chairat K et al., Enantiospecific pharmacokinetics and dr…, The Journal of ant
 
 **Interpretation flags:**
 - dropped value-less row: 'NA'
-- NIL: refused to back-fill base 'NIL' from footnote/prose loose number 1000 (source ['dky297-T1:footnote']); the table cell was unparseable — needs review
-- implicit units: 'V/FPRQ' → L (from the paper text: "Table 1 lists the parameter as 'V/FPRQ (L)', i.e. volume of distribution adjusted for bioavailability in litres (text: '")
-- metabolite volume: 'V/FCPRQ (L)' Q63→Q61 for carboxyprimaquine — it is 1-compartment, so its central volume is its only volume
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=primaquine
-- template fit: PK_3M_3C — first-pass formation; parent 2 + hepatic, metabolites [1] (site presystemic: 'Incorporation of hepatic first-pass metabolism showed a significant improvement (P &lt; 0.05) in model fit (ΔOFV of −260, −')
-- row roles (LLM): model_class=compartmental; 22/22 row label(s) assigned, 39 linked by role; re-tagged primaquine→parent ×68, primaquine→carboxyprimaquine ×36
+- dropped value-less row: 'RSE and 95% CI'
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=primaquine
+- template fit: none — only the metabolite is modelled — no parent compartment (site presystemic: 'Incorporation of hepatic first-pass metabolism showed a significant improvement (P &lt; 0.05) in model fit (ΔOFV of −260, −')
+- population split: 'primaquine co-administered with antimalarial drugs: pyronaridine/artesunate' subgroup of Chairat_2018 (paper reports 4 populations: primaquine alone, primaquine co-administered with antimalarial drugs: chloroquine, primaquine co-administered with antimalarial drugs: dihydroartemisinin/ piperaquine, primaquine co-administered with antimalarial drugs: pyronaridine/artesunate)
+- row roles: 2 row(s) kept on the molecule their table section names, against the LLM's assignment
+- row roles (LLM): model_class=compartmental; 35/35 row label(s) assigned, 18 linked by role; re-tagged primaquine→parent ×86, primaquine→carboxyprimaquine ×65, primaquine→chloroquine ×1
 - skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - gap-filled Q83 (tlag) from Fasinu_2022_2's review values (primary lacked it)
+- dropped unlinked row (NIL): 'VIFPRQ' — extend the ontology if this is a real PK parameter (source ['Chairat_2018_table_1:row11:col1'])
+- dropped unlinked row (NIL): 'VIFPRQ' — extend the ontology if this is a real PK parameter (source ['Chairat_2018_table_1:row13:col1', 'Chairat_2018_table_1:row13:col3', 'Chairat_2018_table_1:row13:col5', 'Chairat_2018_table_1:row16:col1', 'Chairat_2018_table_1:row16:col3', 'Chairat_2018_table_1:row16:col5'])
+- dropped unlinked row (NIL): 'CL/FPRQ' — extend the ontology if this is a real PK parameter (source ['Chairat_2018_table_1:row15:col1', 'Chairat_2018_table_1:row15:col3'])
+- metabolite volume: 'VIFCPRQ (L)' Q63→Q61 for carboxyprimaquine — it is 1-compartment, so its central volume is its only volume
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=primaquine
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- template fit: PK_3M_3C — first-pass formation; parent 1 + hepatic, metabolites [1] (site presystemic: 'Incorporation of hepatic first-pass metabolism showed a significant improvement (P &lt; 0.05) in model fit (ΔOFV of −260, −')
+- status held at route_to_review — not promoted
+- base model from table(s) without population columns (Chairat_2018_table_1, dky297-T1:footnote); populations primaquine alone, primaquine co-administered with antimalarial drugs: chloroquine, primaquine co-administered with antimalarial drugs: dihydroartemisinin/ piperaquine, primaquine co-administered with antimalarial drugs: pyronaridine/artesunate kept as separate records
 
 **Extraction notes:**
-- companion parameter table 2 transcribed (0 record(s), model stage 'final')
+- table Chairat_2018_table_1: unbound_uncertainty
+- table Chairat_2018_table_2: unparsed_numeric_cell
+- companion parameter table 2 transcribed (107 record(s), model stage 'final')
 - LLM selected parameter table(s) 1, 2
-- LLM region Chairat_2018:other_prose: no JSON records returned
+- LLM region Chairat_2018:other_prose: Connection error.
+- LLM region Chairat_2018:other_prose: Connection error.
+- LLM region Chairat_2018:discussion_prose: Connection error.
 
 ## Validation
 
@@ -86,21 +101,20 @@ Chairat K et al., Enantiospecific pharmacokinetics and dr…, The Journal of ant
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 9 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['dky297-T1:row9:col5', 'dky297-T1:row9:col6'] |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['dky297-T1:row6:col5', 'dky297-T1:row6:col6'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['dky297-T1:row10:col5', 'dky297-T1:row10:col6'] |
-| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['dky297-T1:row15:col5', 'dky297-T1:row15:col6', 'dky297-T1:row18:col5', 'dky297-T1:row18:col6'] |
-| C5_dimension_Q78 | pass | [length] ** 3 | not captured | not captured | not captured | ['dky297-T1:row7:col5', 'dky297-T1:row7:col6'] |
+| C0_has_structural_params | pass | not captured | 11 | not captured | not captured | not captured |
+| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q17 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Chairat_2018_table_2:row5:col4', 'Chairat_2018_table_2:row17:col4', 'Chairat_2018_table_2:row29:col4'] |
+| C5_dimension_Q17 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Chairat_2018_table_2:row10:col4', 'Chairat_2018_table_2:row22:col4', 'Chairat_2018_table_2:row34:col4'] |
+| C5_dimension_Q19 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Chairat_2018_table_2:row9:col4', 'Chairat_2018_table_2:row21:col4', 'Chairat_2018_table_2:row33:col4'] |
+| C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Chairat_2018_table_2:row1:col4', 'Chairat_2018_table_2:row13:col4', 'Chairat_2018_table_2:row25:col4'] |
+| C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Chairat_2018_table_2:row6:col4', 'Chairat_2018_table_2:row18:col4', 'Chairat_2018_table_2:row30:col4'] |
+| C5_dimension_Q56 | pass | [time] | not captured | not captured | not captured | ['Chairat_2018_table_2:row2:col4', 'Chairat_2018_table_2:row14:col4', 'Chairat_2018_table_2:row26:col4'] |
+| C5_dimension_Q56 | pass | [time] | not captured | not captured | not captured | ['Chairat_2018_table_2:row7:col4', 'Chairat_2018_table_2:row19:col4', 'Chairat_2018_table_2:row31:col4'] |
+| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Chairat_2018_table_2:row3:col4', 'Chairat_2018_table_2:row15:col4', 'Chairat_2018_table_2:row27:col4'] |
+| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Chairat_2018_table_2:row8:col4', 'Chairat_2018_table_2:row20:col4', 'Chairat_2018_table_2:row32:col4'] |
 | C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Fasinu_2022_2:review'] |
-| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q88 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Chairat_2018_table_2:row4:col4', 'Chairat_2018_table_2:row16:col4', 'Chairat_2018_table_2:row28:col4'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.377 L/h | not captured | not captured | ['dky297-T1:row9:col5', 'dky297-T1:row9:col6'] |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 23.1 L/h | not captured | not captured | ['dky297-T1:row6:col5', 'dky297-T1:row6:col6'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 10.5 L | not captured | not captured | ['dky297-T1:row10:col5', 'dky297-T1:row10:col6'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 22.3 L | not captured | not captured | ['dky297-T1:row15:col5', 'dky297-T1:row15:col6', 'dky297-T1:row18:col5', 'dky297-T1:row18:col6'] |
 
 **Reviewer per-scenario checks:**
 
@@ -109,11 +123,12 @@ Chairat K et al., Enantiospecific pharmacokinetics and dr…, The Journal of ant
 | T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
-| T3_metabolite_built[carboxyprimaquine] | not captured | pass | own V, CL and formation clearance &gt; 0 | {'V': 0.0105, 'CL': 1.0472222222222222e-07, 'formation': 2.951666666666667e-06} | not captured | carboxyprimaquine = compartment M1 with its own numbers |
-| T3_metabolite_output[carboxyprimaquine] | not captured | pass | not captured | 0.0010730518256291829 | not captured | C_M1 (carboxyprimaquine) must rise above 0 when the parent is dosed |
+| T3_metabolite_built[carboxyprimaquine] | not captured | pass | own V, CL and formation clearance &gt; 0 | {'V': 0.0105, 'CL': 1.0472222222222222e-07, 'formation': 2.951666666666667e-08} | not captured | carboxyprimaquine = compartment M1 with its own numbers |
+| T3_metabolite_output[carboxyprimaquine] | not captured | pass | not captured | 6.772921432099152e-06 | not captured | C_M1 (carboxyprimaquine) must rise above 0 when the parent is dosed |
 | T3_molar_mass[carboxyprimaquine] | not captured | pass | not captured | {'MW': 0.2593467, 'MW_m1': 0.27432} | not captured | formation is molecule-for-molecule |
 | T3_output_variable | not captured | pass | C_central (measured=primaquine) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 5 scholar param(s) emitted or defaulted | 5 covered | not captured | all structural parameters accounted for |
+| T3_rate_constant_conversion | not captured | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model | not captured | rate constant must not be used raw as a clearance |
 | T3_shared_parameters | not captured | skipped | not captured | not captured | not captured | parent–metabolite template: every compound has its own slot |
 | T3_topology_template | not captured | pass | parent_metabolite_hepatic → PK_3M_3C* | PK_3M_3C | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable; invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
@@ -125,10 +140,10 @@ Chairat K et al., Enantiospecific pharmacokinetics and dr…, The Journal of ant
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_primaquine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Chairat_2018` / `Chairat_2018::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_primaquine/models/modelica/Primaquine_Chairat2018_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_primaquine/models/modelica/Primaquine_Chairat2018_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_primaquine/models/modelica/Primaquine_Chairat2018_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_primaquine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Chairat_2018` / `Chairat_2018::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_primaquine/models/modelica/Primaquine_Chairat2018_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_primaquine/models/modelica/Primaquine_Chairat2018_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_primaquine/models/modelica/Primaquine_Chairat2018_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -137,16 +152,15 @@ Chairat K et al., Enantiospecific pharmacokinetics and dr…, The Journal of ant
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_primaquine/Primaquine_Chairat2018_reference/Primaquine_Chairat2018_reference_modelica.zip" download>Primaquine_Chairat2018_reference_modelica.zip</a> <span class="pk-size">(5.5 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_primaquine/Primaquine_Chairat2018_reference/Primaquine_Chairat2018_reference_fmi.zip" download>Primaquine_Chairat2018_reference_fmi.zip</a> <span class="pk-size">(4.5 kB)</span><br><a href="models/fmu/PK_3M_3C.fmu" download>PK_3M_3C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_primaquine/Primaquine_Chairat2018_reference/Primaquine_Chairat2018_reference_matlab.zip" download>Primaquine_Chairat2018_reference_matlab.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_primaquine/Primaquine_Chairat2018_reference/Primaquine_Chairat2018_reference_sbml.zip" download>Primaquine_Chairat2018_reference_sbml.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_primaquine/Primaquine_Chairat2018_reference/Primaquine_Chairat2018_reference_cellml.zip" download>Primaquine_Chairat2018_reference_cellml.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_3M_3C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_primaquine/Primaquine_Chairat2018_reference/Primaquine_Chairat2018_reference.svg" alt="Primaquine_Chairat2018_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+<p>No model archives available.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_primaquine/Primaquine_Chairat2018_reference/Primaquine_Chairat2018_reference.svg" alt="Primaquine_Chairat2018_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -159,4 +173,4 @@ Chairat K et al., Enantiospecific pharmacokinetics and dr…, The Journal of ant
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 07:50 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 01:12 UTC</sub>

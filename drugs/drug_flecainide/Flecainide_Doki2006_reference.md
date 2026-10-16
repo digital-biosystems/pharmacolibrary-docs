@@ -5,7 +5,7 @@
 
 # flecainide — `Flecainide_Doki2006_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.875), gpt-oss:120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.7), gpt-oss-120b (partly confirmed, agreement 0.875). Primary extraction retained.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -17,24 +17,22 @@
 
 ### Reviewer guidance
 
-**Only clearance was extracted — no volume; cL/F has no unit.**
+**CL/F has no unit.**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — flecainide: CL/F 0.25 l h(-1) kg(-1).
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (CL/F), so that value has no SI equivalent. Extracted — flecainide: CL/F 32.9 %, V/F 379 l, kabs 0.62 h À1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has flecainide, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of interpatient variability of cl/f: this record has 32.9, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
-
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:38:00.944826+00:00) predates the upstream re-run (2026-10-08 17:58:33.246812+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Doki K et al., Effect of CYP2D6 genotype on flecainide…, European journal of clinica… (2006)
   ·  DOI: [10.1007/s00228-006-0188-x](https://doi.org/10.1007/s00228-006-0188-x)
 
-<div class="pk-model-meta" hidden drug="flecainide" model-id="Flecainide_Doki2006_reference" status="needs_review" stale="true" population="Japanese patients with supraventricular tachyarrhythmia" measured-compound="flecainide" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="flecainide" model-id="Flecainide_Doki2006_reference" status="needs_review" stale="false" population="Japanese patients with supraventricular tachyarrhythmia" measured-compound="flecainide" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 3 extracted, plus 1 covariate effect.
+**Parameters:** 3 extracted, plus 3 covariate effects.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -43,7 +41,9 @@ Doki K et al., Effect of CYP2D6 genotype on flecainide…, European journal of c
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| genotype_of_cyp2d6 | `Q900` · genotype_of_cyp2d6 | 0.37 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_3:row3:col6, tab_3:row3:col7, tab_3:row3:col8 | — | not captured |
+| em_em | `Q900` · em_em | 2.09 | not captured | not captured | not captured | not captured | not captured (not captured) | Doki_2006_table_p6_1:row0:col3 | — | not captured |
+| em_im | `Q900` · em_im | 1.86 | not captured | not captured | not captured | not captured | not captured (not captured) | Doki_2006_table_p6_1:row1:col3 | — | not captured |
+| im_im | `Q900` · im_im | 1.64 | not captured | not captured | not captured | not captured | not captured (not captured) | Doki_2006_table_p6_1:row3:col3 | — | not captured |
 | interpatient variability of CL/F | `Q27` · CL/F | 32.9 | % | not captured | % | not captured | boundary (0.8) | Doki_2006:results_prose | — | not captured |
 | V/F (l) | `Q76` · V/F | 379.0 | l | 0.379 | L | not captured | exact (1.0) | Doki_2006:discussion_prose | — | not captured |
 | ka | `Q49` · kabs | 0.62 | h À1 | 0.0001722222222222222 | 1/h | not captured | review_gapfill (0.7) | Deneer_2004:review | — | not captured |
@@ -56,49 +56,48 @@ Doki K et al., Effect of CYP2D6 genotype on flecainide…, European journal of c
 ## Departures & gaps
 
 **Interpretation flags:**
-- column 'p &lt; 0.05' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- covariate level 'Genotype of CYP2D6' → Q900:genotype_of_cyp2d6 = 0.37 (linear_fractional on the model)
-- dropped unlinked row (NIL): 'hom-EMs' — extend the ontology if this is a real PK parameter (source ['tab_3:row4:col3', 'tab_3:row4:col4'])
-- dropped unlinked row (NIL): 'het-EMs' — extend the ontology if this is a real PK parameter (source ['tab_3:row5:col3', 'tab_3:row5:col4', 'tab_3:row5:col6'])
-- dropped unlinked row (NIL): 'IMs' — extend the ontology if this is a real PK parameter (source ['tab_3:row7:col3', 'tab_3:row7:col4'])
-- table mostly unlinked (3/4 table-cell rows NIL) — likely the wrong table was located, not 1 genuinely-missing ontology parameter(s); route_to_review instead of building a model from the residual linked cell(s)
+- covariate level 'EM/EM' → Q900:em_em = 2.09 (linear_fractional on the model)
+- covariate level 'EM/IM' → Q900:em_im = 1.86 (linear_fractional on the model)
+- dropped unlinked row (NIL): 'θ_E + θ_P' — extend the ontology if this is a real PK parameter (source ['Doki_2006_table_p6_1:row2:col2', 'Doki_2006_table_p6_1:row2:col3'])
+- covariate level 'IM/IM' → Q900:im_im = 1.64 (linear_fractional on the model)
+- dropped unlinked row (NIL): 'θ_I + θ_P' — extend the ontology if this is a real PK parameter (source ['Doki_2006_table_p6_1:row4:col2', 'Doki_2006_table_p6_1:row4:col3'])
 - salvaged Q27 ('interpatient variability of CL/F'=32.9) from results prose — parameter table was unreadable
 - salvaged Q76 ('V/F (l)'=379.0) from results prose — parameter table was unreadable
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=flecainide
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- pharmacogenetic covariate 'em_em' (em) — PGx domain
+- pharmacogenetic covariate 'em_im' (em) — PGx domain
+- pharmacogenetic covariate 'im_im' (im) — PGx domain
 - status held at route_to_review — not promoted
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - gap-filled Q49 (kabs) from Deneer_2004's review values (primary lacked it)
 
 **Extraction notes:**
-- unparsed cell tab_3:row3:col4 = 'Flecainide clearance (Lh -1'
-- unparsed cell tab_3:row3:col5 = '0.1 0.2 0.3 0.4'
-- unparsed cell tab_3:row4:col2 = '2θ E'
-- unparsed cell tab_3:row7:col2 = '2θ I'
-- LLM selected parameter table(s) 3
+- table Doki_2006_table_p6_1: unknown_column_role
+- table Doki_2006_table_p6_1: units_need_context
+- table Doki_2006_table_p6_1: ragged_grid
+- table Doki_2006_table_p6_1: unparsed_numeric_cell
+- no LLM table selection; kept 2 deterministically-scored parameter table(s)
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss:120b` | partly confirmed | 0.7 (7/10 fields) | 3 |
 | `gpt-oss-120b` | partly confirmed | 0.875 (7/8 fields) | 1 |
-| `gpt-oss:120b` | not confirmed | 0.333 (3/9 fields) | 6 |
 
-<details><summary>7 field discrepancies</summary>
+<details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `parameters[ka]` | 0.62 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[interpatient variability of cl/f]` | 32.9 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[interpatient variability of cl/f]` | not captured | 32.9 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[v/f]` | 379.0 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v/f]` | not captured | 379.0 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | flecainide | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | flecainide | unknown | mismatch |
+| `gpt-oss:120b` | `parameters[θ_e + θ_p]` | not captured | 0.84 | only_one_extracted |
 
 </details>
 
@@ -128,7 +127,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_flecainide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Doki_2006` / `Doki_2006::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_flecainide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Doki_2006` / `Doki_2006::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -154,4 +153,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-08 17:58 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 23:05 UTC</sub>

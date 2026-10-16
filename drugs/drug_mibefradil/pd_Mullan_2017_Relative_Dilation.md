@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C08C&quot;,&quot;href&quot;:&quot;atc/C08C.md&quot;},{&quot;label&quot;:&quot;mibefradil&quot;,&quot;href&quot;:&quot;drugs/drug_mibefradil/&quot;},{&quot;label&quot;:&quot;Mullan_2017 \u00b7 PD Relative Dilation&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Relative Dilation — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+# Relative Dilation — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -19,15 +19,15 @@
 
 **Model:** No model was generated from this record.
 
-> Mibefradil concentrations directly stimulate relative dilation in isolated superior epigastric arteries via a sigmoid Emax model, with a maximum effect (Emax) of 0.74 and a Log EC50 of -6.9. The model includes a Hill-slope of 0.8, and the paper does not specify the underlying molecular mechanism for this dilation.
+> The study describes a sigmoid Emax model in which mibefradil concentration drives a direct proportional increase in the response of Relative Dilation. The paper does not specify the biological mechanism linking mibefradil to this response, but reports a maximum effect (Emax) of 0.74 ± 0.08 and a log EC50 of -6.9 ± 0.7 with a Hill slope of 0.8 ± 0.2.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Mullan_2017`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`
 - **tier:** descriptive
-- **effect:** stimulation/unknown
+- **effect:** inhibition/proportional
 
 ## Citation
 Mullan B et al., T-type voltage-gated Ca2+ channels do n…, Pharmacology research & per… (2017)
@@ -36,9 +36,9 @@ Mullan B et al., T-type voltage-gated Ca2+ channels do n…, Pharmacology resear
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | E max | `Q320` · not captured | 0.74 | not captured | not captured | llm (not captured) | Mullan_2017:pdv3 |
-| PD (effect) | Log EC 50 | `Q321` · not captured | -6.9 | not captured | not captured | llm (not captured) | Mullan_2017:pdv3 |
-| PD (effect) | Hill‐slope | `Q325` · not captured | 0.8 | not captured | not captured | llm (not captured) | Mullan_2017:pdv3 |
+| PD (effect) | E max | `Q323` · not captured | 0.74 ± 0.08 | not captured | not captured | direction (not captured) | Mullan_2017:pdv3 |
+| PD (effect) | Log EC 50 | `Q321` · not captured | -6.9 ± 0.7 | not captured | not captured | llm (not captured) | Mullan_2017:pdv3 |
+| PD (effect) | Hill‐slope | `Q325` · not captured | 0.8 ± 0.2 | not captured | not captured | llm (not captured) | Mullan_2017:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -47,20 +47,21 @@ Mullan B et al., T-type voltage-gated Ca2+ channels do n…, Pharmacology resear
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `einfracz:gpt-oss-120b` | not confirmed | 0.429 (3/7 fields) | 4 |
+| `einfracz:gpt-oss-120b` | not confirmed | 0.375 (3/8 fields) | 5 |
 
-<details><summary>4 field discrepancies</summary>
+<details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `einfracz:gpt-oss-120b` | `effect_form` | unknown | additive | mismatch |
-| `einfracz:gpt-oss-120b` | `parameters[Q320].value` | 0.74 | 0.74 ± 0.08 | mismatch |
-| `einfracz:gpt-oss-120b` | `parameters[Q321].value` | -6.9 | 0.13 | mismatch |
-| `einfracz:gpt-oss-120b` | `parameters[Q325].value` | 0.8 | 0.8 ± 0.2 | mismatch |
+| `einfracz:gpt-oss-120b` | `effect_direction` | inhibition | stimulation | mismatch |
+| `einfracz:gpt-oss-120b` | `effect_form` | proportional | additive | mismatch |
+| `einfracz:gpt-oss-120b` | `parameters[Q320]` | not captured | 0.74 ± 0.08 | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q321].value` | -6.9 ± 0.7 | 0.13 | mismatch |
+| `einfracz:gpt-oss-120b` | `parameters[Q323]` | 0.74 ± 0.08 | not captured | only_one_extracted |
 
 </details>
 

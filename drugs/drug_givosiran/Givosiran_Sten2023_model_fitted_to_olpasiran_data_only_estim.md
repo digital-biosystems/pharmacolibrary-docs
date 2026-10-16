@@ -156,9 +156,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_givosiran/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Sten_2023` / `Sten_2023::model_fitted_to_olpasiran_data_only_estimate_se`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_givosiran/models/modelica/_needs_review/Givosiran_Sten2023_model_fitted_to_olpasiran_data_only_estim.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_givosiran/models/modelica/_needs_review/Givosiran_Sten2023_model_fitted_to_olpasiran_data_only_estim.deviation.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_givosiran/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Sten_2023` / `Sten_2023::model_fitted_to_olpasiran_data_only_estimate_se`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_givosiran/models/modelica/_needs_review/Givosiran_Sten2023_model_fitted_to_olpasiran_data_only_estim.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_givosiran/models/modelica/_needs_review/Givosiran_Sten2023_model_fitted_to_olpasiran_data_only_estim.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

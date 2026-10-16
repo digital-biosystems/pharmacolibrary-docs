@@ -17,9 +17,9 @@
 
 ### Reviewer guidance
 
-**Only clearance was extracted — no volume.**
+**Only clearance was extracted — no volume; cL/F has no unit.**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Extracted — tafenoquine: CL/F 3.1 L/h, tlag 0.147 h.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. Extracted — tafenoquine: CL/F 0.71, kabs 0.694 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on bioavailability: this record has none, the second reading 4; it also differs on 3 more fields. That field does not shape the model.
 
@@ -29,7 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on bioavai
 Edstein MD et al., Population pharmacokinetics of the new…, British journal of clinical… (2001)
   ·  DOI: [10.1046/j.0306-5251.2001.01482.x](https://doi.org/10.1046/j.0306-5251.2001.01482.x)
 
-<div class="pk-model-meta" hidden drug="tafenoquine" model-id="Tafenoquine_Edstein2001_reference" status="needs_review" stale="false" population="healthy male Thai soldiers" measured-compound="tafenoquine" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="tafenoquine" model-id="Tafenoquine_Edstein2001_reference" status="needs_review" stale="false" population="male Thai soldiers" measured-compound="tafenoquine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.
@@ -41,8 +41,8 @@ Edstein MD et al., Population pharmacokinetics of the new…, British journal of
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| typical population CL/F (nonaffected subjects) | `Q27` · CL/F | 3.1 | L/h | 8.611111111111112e-07 | L/h | not captured | boundary (0.8) | Edstein_2001:results_prose | — | not captured |
-| Tlag,1 | `Q83` · tlag | 0.147 | h | 529.1999999999999 | h | not captured | review_gapfill (0.7) | Cherkaoui-Rbati_2023:review | — | not captured |
+| coef®cient of correlation (r) between CL/F and V/F | `Q27` · CL/F | 0.71 | not captured | not captured | L/h | not captured | boundary (0.8) | Edstein_2001:other_prose | — | not captured |
+| K a | `Q49` · kabs | 0.694 | 1/h | 0.00019277777777777777 | 1/h | not captured | space_fold (0.95) | Edstein_2001:other_prose | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -52,29 +52,17 @@ Edstein MD et al., Population pharmacokinetics of the new…, British journal of
 ## Departures & gaps
 
 **Interpretation flags:**
-- NIL: refused to back-fill base 'Fab' from footnote/prose loose number None (source ['fig_1:caption']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'CL/F' from footnote/prose loose number None (source ['fig_1:caption']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'equation variable' from footnote/prose loose number None (source ['fig_1:caption']); the table cell was unparseable — needs review
-- dropped value-less row: 'a Objective function value'
-- dropped value-less row: 'b Change in OFV from model no. 1 (OFV=x4556)' (captured trailing unit 'OFV=x4556' for child rows)
-- dropped value-less row: 'c Change in OFV from model no. 8 (OFV=x4627)' (captured trailing unit 'OFV=x4627' for child rows)
-- dropped value-less row: 'CL/F: clearance'
-- dropped value-less row: 'V/F: volume of distribution'
-- dropped value-less row: 'K a : absorption rate constant'
-- dropped value-less row: '(WT-60.3): centred body weight'
-- dropped value-less row: '(AGE-28.9): centred age'
-- dropped value-less row: 'MAL: presence (1) absence (0) of malaria'
-- dropped value-less row: '*P&lt;0.01 (full model vs reduced model)'
-- salvaged Q27 ('typical population CL/F (nonaffected subjects)'=3.1) from results prose — parameter table was unreadable
-- implicit units: 'typical population CL/F (nonaffected subjects)' → L/h (from the paper text: "Table 2 footnote states 'CL/F: clearance (1 h-1)'.")
+- salvaged Q27 ('coef®cient of correlation (r) between CL/F and V/F'=0.71) from results prose — parameter table was unreadable
+- salvaged Q49 ('K a'=0.694) from results prose — parameter table was unreadable
+- implicit units: 'K a' → 1/h (from the paper text: "The table footnotes explicitly define the units for the model parameters: 'Ka: absorption rate constant (h-1)'.")
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=tafenoquine
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q83 (tlag) from Cherkaoui-Rbati_2023's review values (primary lacked it)
+- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- final table tab_1: grid unusable → re-running vision table extraction for Edstein_2001
-- final table tab_1: no readable grid (GROBID mangled)
+- table tab_1: no_numeric_grid
+- final table tab_1: no supported point estimates; targeted recovery unresolved
 
 ## Validation
 
@@ -106,15 +94,13 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C2_base_Q27 | pass | 3.1 | 3.1 | 1.0 | 0.05 | footnote reference category |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Edstein_2001:results_prose'] |
-| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Cherkaoui-Rbati_2023:review'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Edstein_2001:other_prose'] |
+| C5_unit_missing_Q27 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['Edstein_2001:other_prose'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 3.1 L/h | not captured | not captured | ['Edstein_2001:results_prose'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -123,7 +109,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_tafenoquine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Edstein_2001` / `Edstein_2001::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_tafenoquine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Edstein_2001` / `Edstein_2001::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -149,4 +135,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 08:52 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 03:44 UTC</sub>

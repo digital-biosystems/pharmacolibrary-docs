@@ -17,13 +17,25 @@ Strontium-89 chloride is a bone-seeking radiopharmaceutical used to relieve pain
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 16:45 | 1:44 | 0/1/0 | 0/0/0 | 0/0/0 | 13,061/3,664 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-14 19:49 | 0:17 | 0/1/0 | 0/0/0 | 0/0/0 | 8,152/642 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.6), gpt-oss:120b (primary re-run, agreement 0.4). Primary extraction retained.">cross-check: partial 0/2</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Blake_1986_reference](drugs/drug_strontium_89sr_chloride/Strontium89srChloride_Blake1986_reference.md) | — | 1-compartment (no model) | 0 | Blake GM et al., Sr-89 therapy: strontium kinetics in di…, European journal of nuclear… (1986) | [10.1007/BF00254749](https://doi.org/10.1007/BF00254749) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.6), gpt-oss:120b (primary re-run, agreement 0.4). Primary extraction retained.">cross-check: partial 0/2</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Blake_1986_reference](drugs/drug_strontium_89sr_chloride/Strontium89srChloride_Blake1986_reference.md) | — | 1-compartment (no model) | 0 | Blake GM et al., Sr-89 therapy: strontium kinetics in di…, European journal of nuclear… (1986) | [10.1007/BF00254749](https://doi.org/10.1007/BF00254749) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=strontium_89sr_chloride).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: ALPG (cofactor), ALPL (cofactor), Adenosine triphosphate (ATP) (cofactor), CACNA1I (inducer), SLC8A1 (inducer).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -35,7 +47,7 @@ Strontium-89 chloride is a bone-seeking radiopharmaceutical used to relieve pain
 
 - **PubMed hits:** 5 matched, 5 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 1
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -44,19 +56,19 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Sips_1996.pdf` | Sips AJ et al., Intestinal absorption of strontium chlo…, British journal of clinical… (1996) | popPK | 9 | [10.1046/j.1365-2125.1996.33411.x](https://doi.org/10.1046/j.1365-2125.1996.33411.x) | [8799520](https://pubmed.ncbi.nlm.nih.gov/8799520) | The study reports quantitative PK parameters (bioavailability, absorption kinetics) for strontium chloride in humans, but specific numeric values for clearance, volume, or rate constants are not explicitly listed in the provided text. |
-| `Blake_1986.pdf` | Blake GM et al., Sr-89 therapy: strontium kinetics in di…, European journal of nuclear… (1986) | popPK | 8 | [10.1007/BF00254749](https://doi.org/10.1007/BF00254749) | [3102236](https://pubmed.ncbi.nlm.nih.gov/3102236) | The study reports quantitative pharmacokinetic parameters (renal plasma clearance, retention rates, power law coefficients) for strontium-89 in human patients. |
+| `Sips_1996.pdf` | Sips AJ et al., Intestinal absorption of strontium chlo…, British journal of clinical… (1996) | popPK | 9 | [10.1046/j.1365-2125.1996.33411.x](https://doi.org/10.1046/j.1365-2125.1996.33411.x) | [8799520](https://pubmed.ncbi.nlm.nih.gov/8799520) | The paper reports a compartmental pharmacokinetic analysis (four-compartment model, absorption kinetics) for strontium chloride in humans, but the specific numeric parameter values (CL, V, Q, ka, etc.) are described in the abstract without the actual numbers being present in the provided text. |
+| `Blake_1986.pdf` | Blake GM et al., Sr-89 therapy: strontium kinetics in di…, European journal of nuclear… (1986) | popPK | 8 | [10.1007/BF00254749](https://doi.org/10.1007/BF00254749) | [3102236](https://pubmed.ncbi.nlm.nih.gov/3102236) | The paper reports quantitative strontium kinetics including renal plasma clearance (1.6-11.6 l/day) and retention parameters (R30, b) in human patients, with specific numeric ranges provided in the abstract. |
 
-<sub>queue written 2026-10-07T16:43:57.203070+00:00</sub>
+<sub>queue written 2026-10-14T19:49:21.908053+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Dahl_2001 | irrelevant | 2 | 0 | The paper discusses qualitative distribution and incorporation mechanisms of strontium in bone without reporting quantitative pharmacokinetic parameters (CL, V, ka) for strontium-89 chloride specifically. |
-| popPK | Giammarile_2001 | irrelevant | 0 | 0 | The paper is a clinical review of pain palliation outcomes and does not report quantitative pharmacokinetic parameters (CL, V, t1/2) for strontium-89. |
+| popPK | Dahl_2001 | irrelevant | 2 | 0 | The paper discusses general strontium distribution and incorporation into bone qualitatively but does not provide specific quantitative pharmacokinetic parameters (CL, V, ka) for strontium-89 chloride. |
+| popPK | Giammarile_2001 | irrelevant | 0 | 0 | The paper is a clinical review of pain palliation outcomes and does not report quantitative pharmacokinetic parameters (CL, V, ka, half-life) for strontium-89. |
 | PD | Giammarile_2001 | not_relevant | 1 | 0 | The text is a qualitative review that explicitly states there is no clear dose-response relationship and provides no numeric PD parameters or concentration-effect data. |
-| popPK | Sips_1996 | relevant | 9 | 4 | The study reports quantitative PK parameters (bioavailability, absorption kinetics) for strontium chloride in humans, but specific numeric values for clearance, volume, or rate constants are not explicitly listed in the provided text. |
+| popPK | Sips_1996 | relevant | 9 | 2 | The paper reports a compartmental pharmacokinetic analysis (four-compartment model, absorption kinetics) for strontium chloride in humans, but the specific numeric parameter values (CL, V, Q, ka, etc.) are described in the abstract without the actual numbers being present in the provided text. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 16:44 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-14 19:49 UTC</sub>

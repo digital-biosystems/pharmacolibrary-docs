@@ -21,7 +21,7 @@
 
 **Every check that could be run on this record passed.**
 
-Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is ganaxolone's own; they describe ganaxolone and allopregnanolone.
+Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ganaxolone and allopregnanolone, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -31,7 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Zolkowska D et al., Intramuscular allopregnanolone and gana…, Epilepsia 59 Suppl 2(Suppl… (2018)
   ·  DOI: [10.1111/epi.13999](https://doi.org/10.1111/epi.13999)
 
-<div class="pk-model-meta" hidden drug="ganaxolone" model-id="Ganaxolone_Zolkowska2018_reference" status="curated_candidate" stale="false" population="mice" measured-compound="ganaxolone and allopregnanolone" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="ganaxolone" model-id="Ganaxolone_Zolkowska2018_reference" status="curated_candidate" stale="false" population="mice" measured-compound="ganaxolone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 5 extracted.
@@ -55,11 +55,9 @@ Zolkowska D et al., Intramuscular allopregnanolone and gana…, Epilepsia 59 Sup
 ## Departures & gaps
 
 **Interpretation flags:**
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=ganaxolone and allopregnanolone
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=ganaxolone
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
-- molar mass: no plausible PubChem entry for 'ganaxolone and allopregnanolone' ('ganaxolone and allopregnanolone') — left in mass units
-- molar mass: none found for 'ganaxolone and allopregnanolone' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
@@ -123,7 +121,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 |---|---|---|---|---|---|---|
 | T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_output_variable | not captured | pass | C_central (measured=ganaxolone and allopregnanolone) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_output_variable | not captured | pass | C_central (measured=ganaxolone) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
@@ -135,10 +133,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ganaxolone/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Zolkowska_2018` / `Zolkowska_2018::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ganaxolone/models/modelica/Ganaxolone_Zolkowska2018_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ganaxolone/models/modelica/Ganaxolone_Zolkowska2018_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ganaxolone/models/modelica/Ganaxolone_Zolkowska2018_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ganaxolone/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Zolkowska_2018` / `Zolkowska_2018::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ganaxolone/models/modelica/Ganaxolone_Zolkowska2018_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ganaxolone/models/modelica/Ganaxolone_Zolkowska2018_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ganaxolone/models/modelica/Ganaxolone_Zolkowska2018_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -147,7 +145,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ganaxolone/Ganaxolone_Zolkowska2018_reference/Ganaxolone_Zolkowska2018_reference_modelica.zip" download>Ganaxolone_Zolkowska2018_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ganaxolone/Ganaxolone_Zolkowska2018_reference/Ganaxolone_Zolkowska2018_reference_modelica.zip" download>Ganaxolone_Zolkowska2018_reference_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_ganaxolone/Ganaxolone_Zolkowska2018_reference/Ganaxolone_Zolkowska2018_reference_fmi.zip" download>Ganaxolone_Zolkowska2018_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_ganaxolone/Ganaxolone_Zolkowska2018_reference/Ganaxolone_Zolkowska2018_reference_matlab.zip" download>Ganaxolone_Zolkowska2018_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_ganaxolone/Ganaxolone_Zolkowska2018_reference/Ganaxolone_Zolkowska2018_reference_matlab_simbio.zip" download>Ganaxolone_Zolkowska2018_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
@@ -156,7 +154,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_ganaxolone/Ganaxolone_Zolkowska2018_reference/Ganaxolone_Zolkowska2018_reference.svg" alt="Ganaxolone_Zolkowska2018_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_ganaxolone/Ganaxolone_Zolkowska2018_reference/Ganaxolone_Zolkowska2018_reference.svg" alt="Ganaxolone_Zolkowska2018_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -169,4 +167,4 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 06:55 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 19:10 UTC</sub>

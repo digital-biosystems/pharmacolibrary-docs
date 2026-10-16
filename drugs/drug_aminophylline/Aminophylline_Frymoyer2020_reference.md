@@ -5,7 +5,7 @@
 
 # aminophylline — `Aminophylline_Frymoyer2020_reference`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.364). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -23,7 +23,7 @@
 
 Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. The base model was simulated, not the covariate effects the record defines. None of the extracted parameters is aminophylline's own; they describe theophylline. Extracted — theophylline: V3 2.7 L, Kp 0.68, CL 0.049 L/h, V 2.7 L.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of clearance: this record has 0.049, the second reading none; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has aminophylline, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -100,19 +100,17 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.364 (4/11 fields) | 7 |
+| `gpt-oss-120b` | not confirmed | 0.5 (5/10 fields) | 5 |
 
-<details><summary>7 field discrepancies</summary>
+<details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[clearance]` | 0.049 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[k (rbc/plasma ratio)4].value` | 0.68 | 0.42 | mismatch |
 | `gpt-oss-120b` | `parameters[theta_q22_category]` | not captured | 0.040 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[theta_q354_category]` | 0.048 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v (l per 3.3 kg)3].parameter_id` | Q77 | Q61 | mismatch |
 | `gpt-oss-120b` | `parameters[v (l per 3.3 kg)3].value` | 2.70 | 2.38 | mismatch |
-| `gpt-oss-120b` | `parameters[volume]` | 2.7 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | aminophylline | unknown | mismatch |
 
 </details>
 
@@ -157,10 +155,10 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_aminophylline/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Frymoyer_2020` / `Frymoyer_2020::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_aminophylline/models/modelica/Aminophylline_Frymoyer2020_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_aminophylline/models/modelica/Aminophylline_Frymoyer2020_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_aminophylline/models/modelica/Aminophylline_Frymoyer2020_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_aminophylline/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Frymoyer_2020` / `Frymoyer_2020::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_aminophylline/models/modelica/Aminophylline_Frymoyer2020_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_aminophylline/models/modelica/Aminophylline_Frymoyer2020_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_aminophylline/models/modelica/Aminophylline_Frymoyer2020_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -178,7 +176,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_aminophylline/Aminophylline_Frymoyer2020_reference/Aminophylline_Frymoyer2020_reference.svg" alt="Aminophylline_Frymoyer2020_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_aminophylline/Aminophylline_Frymoyer2020_reference/Aminophylline_Frymoyer2020_reference.svg" alt="Aminophylline_Frymoyer2020_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

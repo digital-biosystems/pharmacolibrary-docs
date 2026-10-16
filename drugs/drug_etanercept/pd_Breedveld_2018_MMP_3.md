@@ -1,8 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;etanercept&quot;,&quot;href&quot;:&quot;drugs/drug_etanercept/&quot;},{&quot;label&quot;:&quot;Breedveld_2018 \u00b7 PD matrix metalloproteinase-3&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Etanercept_Ling2024_reference&quot;,&quot;label&quot;:&quot;Ling_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etanercept/Etanercept_Ling2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;etanercept&quot;,&quot;href&quot;:&quot;drugs/drug_etanercept/&quot;},{&quot;label&quot;:&quot;Breedveld_2018 \u00b7 PD change from baseline in matrix metalloproteinase-3&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Etanercept_Ling2024_reference&quot;,&quot;label&quot;:&quot;Ling_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etanercept/Etanercept_Ling2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Breedveld_2018_ESR&quot;,&quot;label&quot;:&quot;Breedveld_2018 \u00b7 ESR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_etanercept/pd_Breedveld_2018_ESR.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Breedveld_2018_IL_6&quot;,&quot;label&quot;:&quot;Breedveld_2018 \u00b7 IL-6&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_etanercept/pd_Breedveld_2018_IL_6.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Breedveld_2018_MMP_3&quot;,&quot;label&quot;:&quot;Breedveld_2018 \u00b7 MMP-3&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_etanercept/pd_Breedveld_2018_MMP_3.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Breedveld_2018_Painful_joints&quot;,&quot;label&quot;:&quot;Breedveld_2018 \u00b7 Painful joints&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_etanercept/pd_Breedveld_2018_Painful_joints.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Breedveld_2018_Swollen_joints&quot;,&quot;label&quot;:&quot;Breedveld_2018 \u00b7 Swollen joints&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_etanercept/pd_Breedveld_2018_Swollen_joints.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# matrix metalloproteinase-3 — PD  <span class="pk-badge pk-badge--orange">needs review</span>
+# change from baseline in matrix metalloproteinase-3 — PD  <span class="pk-badge pk-badge--orange">needs review</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -14,11 +14,11 @@
 
 ## Record summary
 
-**As extracted:** Etanercept (concentrations from the PK model of Zhou_2004) drives matrix metalloproteinase-3 (in ng/mL): direct sigmoid Emax (Hill) effect.
+**As extracted:** Etanercept (concentrations from the PK model of Lee_2003) drives change from baseline in matrix metalloproteinase-3 (in %): direct sigmoid Emax (Hill) effect.
 
-**Model:** Model available in **Models**; browser simulation unavailable.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
-> Etanercept steady-state concentrations inhibit the change in matrix metalloproteinase-3 (MMP-3) via a direct sigmoidal Emax mechanism, with an EC50 of 159 ng/mL, maximum effect (Emax) of 27.88%, and a sigmoidicity factor of 1.39. The paper does not explicitly specify whether the inhibition targets MMP-3 production or elimination, nor does it provide rate constants (kin, kout, ke0).
+> A sigmoidal Emax model describes how steady-state etanercept concentrations drive the change from baseline in matrix metalloproteinase-3 (MMP-3), with an Emax of 27.88% and an EC50 of 159 ng/mL. The sigmoidicity factor is estimated at 1.39, but the paper does not specify a direct mechanism for this specific biomarker beyond the general context of TNF inhibition.
 >
 > <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
@@ -26,7 +26,7 @@
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`
 - **tier:** descriptive
-- **effect:** inhibition/unknown
+- **effect:** stimulation/proportional
 
 ## Citation
 Breedveld FC et al., A Pilot Dose-Finding Study of Etanercep…, Clinical and translational… (2018)
@@ -35,8 +35,8 @@ Breedveld FC et al., A Pilot Dose-Finding Study of Etanercep…, Clinical and tr
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | Emax | `Q323` · not captured | 27.88 | % | not captured | llm (not captured) | Breedveld_2018:pdv3 |
-| PD (effect) | EC50 | `Q322` · not captured | 159 | ng/mL | not captured | llm (not captured) | Breedveld_2018:pdv3 |
+| PD (effect) | Emax | `Q320` · not captured | 27.88 | % | not captured | llm (not captured) | Breedveld_2018:pdv3 |
+| PD (effect) | EC50 | `Q321` · not captured | 159 | ng/mL | not captured | llm (not captured) | Breedveld_2018:pdv3 |
 | PD (effect) | Sigmoidicity factor | `Q325` · not captured | 1.39 | not captured | not captured | llm (not captured) | Breedveld_2018:pdv3 |
 
 <details class="legend">
@@ -52,16 +52,15 @@ Breedveld FC et al., A Pilot Dose-Finding Study of Etanercep…, Clinical and tr
 | parameter | value (paper units) | SI |
 |---|---|---|
 | E0 | 0 | — |
-| Emax | -27.88 % | -0.2788 1 |
+| Emax | 27.88 % | 0.2788 1 |
 | EC50 | 159 ng/mL | 0.000159 kg/m3 |
 | gamma | 1.39 | — |
 
-Closed-form check points (response, SI): `at_0` = 0, `at_EC50` = -0.1394, `at_inf` = -0.2788
+Closed-form check points (response, SI): `at_0` = 0, `at_EC50` = 0.1394, `at_inf` = 0.2788
 
 Deviations:
 
 - `defaulted_parameters` — E0
-- `pd_binding_imax_as_negative_emax` — Imax (Q323) enters SigmoidEmaxSweep as −Emax
 
 ## Review
 
@@ -72,7 +71,7 @@ Verdict <span class="pk-badge pk-badge--orange">needs review</span> · route to 
 | `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
 | `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
 | `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
-| `T2_direction` | pass | the response falls, as direct effect predicts |
+| `T2_direction` | pass | the response rises, as direct effect predicts |
 | `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
 | `T4_defaults` | fail | a core parameter took a library default: E0 |
 
@@ -87,19 +86,22 @@ Advisory:
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_etanercept/Etanercept_Breedveld2018_PD_mmp_3/Etanercept_Breedveld2018_PD_mmp_3_modelica.zip" download>Etanercept_Breedveld2018_PD_mmp_3_modelica.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_etanercept/Etanercept_Breedveld2018_PD_mmp_3/Etanercept_Breedveld2018_PD_mmp_3_modelica.zip" download>Etanercept_Breedveld2018_PD_mmp_3_modelica.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_etanercept/Etanercept_Breedveld2018_PD_mmp_3/Etanercept_Breedveld2018_PD_mmp_3_matlab.zip" download>Etanercept_Breedveld2018_PD_mmp_3_matlab.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_etanercept/Etanercept_Breedveld2018_PD_mmp_3/Etanercept_Breedveld2018_PD_mmp_3_sbml.zip" download>Etanercept_Breedveld2018_PD_mmp_3_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_etanercept/Etanercept_Breedveld2018_PD_mmp_3/Etanercept_Breedveld2018_PD_mmp_3_cellml.zip" download>Etanercept_Breedveld2018_PD_mmp_3_cellml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PD_SigmoidEmaxSweep.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+<dbs-fmusim paramsurl="drugs/drug_etanercept/Etanercept_Breedveld2018_PD_mmp_3/Etanercept_Breedveld2018_PD_mmp_3_params.json" metaurl="assets/fmu/PD_SigmoidEmaxSweep.vr.json" wasmurl="assets/fmu/PD_SigmoidEmaxSweep.js" controlsurl="drugs/drug_etanercept/Etanercept_Breedveld2018_PD_mmp_3/Etanercept_Breedveld2018_PD_mmp_3_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PD_SigmoidEmaxSweep` · parameters `Etanercept_Breedveld2018_PD_mmp_3_params.json` · controls `Etanercept_Breedveld2018_PD_mmp_3_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;rituximab&quot;,&quot;href&quot;:&quot;drugs/drug_rituximab/&quot;},{&quot;label&quot;:&quot;Serkland_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rituximab_Pasquiers2025_reference&quot;,&quot;label&quot;:&quot;Pasquiers_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rituximab/Rituximab_Pasquiers2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rituximab_Bender2024_reference&quot;,&quot;label&quot;:&quot;Bender_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rituximab/Rituximab_Bender2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rituximab_Liu2022_reference&quot;,&quot;label&quot;:&quot;Liu_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rituximab/Rituximab_Liu2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Li_2024_E&quot;,&quot;label&quot;:&quot;Li_2024 \u00b7 E&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_rituximab/pd_Li_2024_E.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,13 +17,13 @@
 
 ### Reviewer guidance
 
-**Rituximab clearance of 0.075 1/day was rejected due to a dimension mismatch on this structural parameter.**
+**C5 dimension mismatch on a structural parameter.**
 
-The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. The clearance value of 0.075 1/day failed a dimension check on the structural parameter. No other parameters or checks are detailed in the findings. Extracted — rituximab: CL 0.075 1/day.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — rituximab: CL 0.075 1/day, kel 0.125 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has rituximab, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Serkland TT et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of clinical… (2025)
@@ -32,7 +32,7 @@ Serkland TT et al., Pharmacokinetic-pharmacodynamic modelli…, British journal 
 <div class="pk-model-meta" hidden drug="rituximab" model-id="Rituximab_Serkland2025_reference" status="rejected" stale="false" population="treatment-naïve patients with relapsing-remitting multiple sclerosis" measured-compound="rituximab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 1 extracted.
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -42,6 +42,7 @@ Serkland TT et al., Pharmacokinetic-pharmacodynamic modelli…, British journal 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | CL | `Q22` · CL | 0.075 | 1/day | not captured | [1] / [d] | not captured | exact (1.0) | Serkland_2025:abstract, Serkland_2025:abstract | — | not captured |
+| kdeg,1 | `Q47` · kel | 0.125 | 1/h | 3.472222222222222e-05 | 1/h | not captured | llm_corrected (0.6) | Serkland_2025:abstract, Serkland_2025:abstract | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -52,14 +53,15 @@ Serkland TT et al., Pharmacokinetic-pharmacodynamic modelli…, British journal 
 
 **Interpretation flags:**
 - unit_dimension_mismatch: 'CL' → Q22 (unit '1 / [time]' vs ontology '[length] ** 3 / [time]') — route to review
-- dropped PD-category row 'kdeg,1' → Q328 (kout, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Serkland_2025:abstract', 'Serkland_2025:abstract'])
+- unit_dimension_unknown: 'mm-3/day' (kel)
+- implicit units: 'kdeg,1' → 1/h (from the popPK convention: 'No unit is stated in the provided text or captions. In population pharmacokinetics, elimination rate constants (k_el, kd')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=rituximab
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
 - molar mass: none found for 'rituximab' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Serkland_2025_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
@@ -95,10 +97,11 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | fail | 1 / [time] | 1/day | not captured | not captured | ['Serkland_2025:abstract', 'Serkland_2025:abstract'] |
+| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['Serkland_2025:abstract', 'Serkland_2025:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.075 | not captured | not captured | ['Serkland_2025:abstract', 'Serkland_2025:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
@@ -109,7 +112,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_rituximab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Serkland_2025` / `Serkland_2025::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_rituximab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Serkland_2025` / `Serkland_2025::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -125,4 +128,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 19:42 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 03:07 UTC</sub>

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;mirikizumab&quot;,&quot;href&quot;:&quot;drugs/drug_mirikizumab/&quot;},{&quot;label&quot;:&quot;Chua_2025 \u00b7 serenity&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mirikizumab_Chua2023_reference&quot;,&quot;label&quot;:&quot;Chua_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mirikizumab/Mirikizumab_Chua2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mirikizumab_Otani2025_reference&quot;,&quot;label&quot;:&quot;Otani_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mirikizumab/Mirikizumab_Otani2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # mirikizumab — `Mirikizumab_Chua2025_serenity`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.118). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.118). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -17,9 +17,9 @@
 
 ### Reviewer guidance
 
-**Only clearance was extracted — no volume; cL has no unit.**
+**The paper reports none of the model's key parameters.**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. Extracted — mirikizumab: CL 0.227.
+No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has mirikizumab, the second reading unknown; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -29,27 +29,25 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Chua L et al., Mirikizumab Pharmacokinetics and Exposu…, Clinical and translational… (2025)
   ·  DOI: [10.1111/cts.70320](https://doi.org/10.1111/cts.70320)
 
-<div class="pk-model-meta" hidden drug="mirikizumab" model-id="Mirikizumab_Chua2025_serenity" status="needs_review" stale="false" population="adults with moderately-to-severely active Crohn&#39;s disease" measured-compound="mirikizumab" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="mirikizumab" model-id="Mirikizumab_Chua2025_serenity" status="rejected" stale="false" population="adults with moderately-to-severely active Crohn&#39;s disease" measured-compound="mirikizumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 1 extracted, plus 8 covariate effects.
+**Parameters:** 0 extracted, plus 7 covariate effects.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| BL SES-CD effect on CL | `Q22` · CL | 0.227 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | tab_1:row14:col1 | — | not captured |
-| bl_bmi_effect_on_f | `Q900` · bl_bmi_effect_on_f | -0.0318 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_1:row32:col1, tab_1:row32:col3 | — | not captured |
-| theta_q49_category | `Q900` · theta_q49_category | 0.00647 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_1:row5:col1, tab_1:row5:col3 | — | not captured |
-| theta_cl_category | `Q900` · theta_cl_category | 0.0217 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_1:row9:col1, tab_1:row9:col3, tab_1:row9:col4 | — | not captured |
-| theta_cl_albumin | `Q900` · theta_cl_albumin | -0.754 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_1:row11:col1, tab_1:row11:col3 | — | not captured |
-| theta_q30_category | `Q900` · theta_q30_category | 0.00884 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_1:row18:col1, tab_1:row18:col3 | — | not captured |
-| theta_q64_category | `Q900` · theta_q64_category | 3.31 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_1:row23:col1, tab_1:row23:col3, tab_1:row23:col4 | — | not captured |
-| theta_q77_category | `Q900` · theta_q77_category | 1.75 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_1:row25:col1, tab_1:row25:col3, tab_1:row25:col4 | — | not captured |
-| theta_q44_category | `Q900` · theta_q44_category | 33.4 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_1:row30:col1, tab_1:row30:col3, tab_1:row30:col4 | — | not captured |
+| theta_q49_category | `Q900` · theta_q49_category | 0.00647 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_1:row5:col1 | — | not captured |
+| theta_q22_category | `Q900` · theta_q22_category | 21.9 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_1:row9:col1, tab_1:row9:col2 | — | not captured |
+| theta_q22_albumin | `Q900` · theta_q22_albumin | -0.754 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_1:row11:col1 | — | not captured |
+| theta_q30_category | `Q900` · theta_q30_category | 0.00884 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_1:row18:col1 | — | not captured |
+| theta_q64_category | `Q900` · theta_q64_category | 17.2 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_1:row23:col1, tab_1:row23:col2 | — | not captured |
+| theta_q77_category | `Q900` · theta_q77_category | 37.3 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_1:row25:col1, tab_1:row25:col2 | — | not captured |
+| theta_q40_bmi | `Q900` · theta_q40_bmi | -0.0318 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_1:row32:col1 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -59,23 +57,36 @@ Chua L et al., Mirikizumab Pharmacokinetics and Exposu…, Clinical and translat
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped duplicate Q22 ('BL CRP effect on CL', value '0.0853') — already have one for this compound
-- dropped unlinked row (NIL): 'BL BW effect on CL and Q' — extend the ontology if this is a real PK parameter (source ['tab_1:row20:col1', 'tab_1:row20:col3'])
-- dropped unlinked row (NIL): 'BL BW effect on V c and V p' — extend the ontology if this is a real PK parameter (source ['tab_1:row27:col1', 'tab_1:row27:col3'])
-- covariate level 'BL BMI effect on F' → Q900:bl_bmi_effect_on_f = -0.0318 (linear_fractional on Q22)
+- table representations disagree for 'Parameter for Ka (h -1 )'; source reconciliation required
+- table representations disagree for 'Parameter for CL c (L/h)'; source reconciliation required
+- table representations disagree for 'Albumin effect on CL'; source reconciliation required
+- table representations disagree for 'BL SES-CD effect on CL'; source reconciliation required
+- table representations disagree for 'Parameter for Q c (L/h)'; source reconciliation required
+- table representations disagree for 'BL BW effect on CL and Q'; source reconciliation required
+- table representations disagree for 'Parameter for V 2 , d (L)'; source reconciliation required
+- table representations disagree for 'Parameter for V 3 , d (L)'; source reconciliation required
+- table representations disagree for 'BL BW effect on V c and V p'; source reconciliation required
+- table representations disagree for 'Parameter for F, e (%)'; source reconciliation required
+- table representations disagree for 'BL BMI effect on F'; source reconciliation required
+- dropped unlinked row (NIL): 'BL SES-CD effect on CL' — extend the ontology if this is a real PK parameter (source ['tab_1:row14:col1'])
+- dropped unlinked row (NIL): 'BL BW effect on CL and Q' — extend the ontology if this is a real PK parameter (source ['tab_1:row20:col1'])
+- dropped unlinked row (NIL): 'BL BW effect on V c and V p' — extend the ontology if this is a real PK parameter (source ['tab_1:row27:col1'])
+- dropped unlinked row (NIL): 'Parameter for F, e (%)' — extend the ontology if this is a real PK parameter (source ['tab_1:row30:col1', 'tab_1:row30:col2'])
 - covariate effect for Q49 has no base parameter row (kept as unattached equation-variable)
+- covariate effect for Q22 has no base parameter row (kept as unattached equation-variable)
 - covariate effect for Q30 has no base parameter row (kept as unattached equation-variable)
 - covariate effect for Q64 has no base parameter row (kept as unattached equation-variable)
 - covariate effect for Q77 has no base parameter row (kept as unattached equation-variable)
-- covariate effect for Q44 has no base parameter row (kept as unattached equation-variable)
+- covariate effect for Q40 has no base parameter row (kept as unattached equation-variable)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=mirikizumab
-- structure disagreement: deterministic 1C vs LLM 3C — review compartment count
+- status held at route_to_review — not promoted
 - population split: 'serenity' subgroup of Chua_2025 (paper reports 2 populations: serenity, vivid-1)
 - molar mass: none found for 'mirikizumab' — its concentrations stay mass-only
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
+- table tab_1: unparsed_numeric_cell
+- table tab_1: representations disagree; selected evidence retained, not merged
 - LLM selected parameter table(s) 2
 
 ## Validation
@@ -119,12 +130,8 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row14:col1'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.227 | not captured | not captured | ['tab_1:row14:col1'] |
+| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
+| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
 <details class="legend">
@@ -134,24 +141,14 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_mirikizumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Chua_2025` / `Chua_2025::serenity`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_mirikizumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Chua_2025` / `Chua_2025::serenity`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-</tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -160,4 +157,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 00:08 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 04:17 UTC</sub>

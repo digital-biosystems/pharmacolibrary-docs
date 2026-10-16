@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;emapalumab&quot;,&quot;href&quot;:&quot;drugs/drug_emapalumab/&quot;},{&quot;label&quot;:&quot;Brossard_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Emapalumab_Brossard2025_reference&quot;,&quot;label&quot;:&quot;Brossard_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_emapalumab/Emapalumab_Brossard2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Emapalumab_Brossard2024_reference&quot;,&quot;label&quot;:&quot;Brossard_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_emapalumab/Emapalumab_Brossard2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # emapalumab — `Emapalumab_Brossard2024_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.769). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.769). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -13,13 +13,11 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 ### Reviewer guidance
 
-**CLNR has no unit.**
-
-Without a unit the value cannot be converted, so the model cannot use it. Extracted — emapalumab: CL 0.00876 L/h/kg, V1 4.07 L/kg, Q 0.0814 L/h/kg, V2 4.21 L/kg, CLNR 0.562.
+**Every check that could be run on this record passed.**
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has emapalumab, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -29,23 +27,20 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Brossard P et al., Population Pharmacokinetics of the Anti…, Rheumatology and therapy (2024)
   ·  DOI: [10.1007/s40744-024-00669-y](https://doi.org/10.1007/s40744-024-00669-y)
 
-<div class="pk-model-meta" hidden drug="emapalumab" model-id="Emapalumab_Brossard2024_reference" status="needs_review" stale="false" population="patients with primary HLH or MAS in sJIA" measured-compound="emapalumab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="emapalumab" model-id="Emapalumab_Brossard2024_reference" status="curated_candidate" stale="false" population="patients with primary HLH or MAS in sJIA" measured-compound="emapalumab" parameterization="mechanistic" topology="2C"></div>
 
-**Model structure:** 2-compartment; no model was built for this record.  
-**Parameters:** 5 extracted.
+**Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CLL, l/h/70 kg | `Q22` · CL | 0.00876 | L/h/kg | 1.7033333333333336e-07 | L/h | 11.2 | llm (0.6) | Tab3:row2:col1, Brossard_2024_table_2:row1:col1 | — | not captured |
-| V1, l/70 kg | `Q63` · V1 | 4.07 | L/kg | 0.28490000000000004 | L | 10.2 | llm_confirmed (0.6) | Tab3:row4:col1, Brossard_2024_table_2:row3:col1 | — | not captured |
-| Q, l/h/70 kg | `Q30` · Q | 0.0814 | L/h/kg | 1.5827777777777777e-06 | L/h | 14.4 | llm (0.6) | Tab3:row5:col1, Brossard_2024_table_2:row4:col1 | — | not captured |
-| V2, l/70 kg | `Q64` · V2 | 4.21 | L/kg | 0.2947 | L | 10.4 | llm_confirmed (0.6) | Tab3:row6:col1, Brossard_2024_table_2:row5:col1 | — | not captured |
-| CLNL_IFNγ | `Q79` · CLNR | 0.562 | not captured | not captured | not captured | 14.9 | llm (0.6) | Tab3:row7:col1, Brossard_2024_table_2:row6:col1 | — | not captured |
+| CLL, l/h/70 kg | `Q22` · CL | 0.00876 | l/h/70 kg | 2.4333333333333336e-09 | [l] / [[h] · [70kg]] | 7.93 | llm (0.6) | Tab3:row2:col1, Brossard_2024_table_2:row1:col1 | — | not captured |
+| V1, l/70 kg | `Q63` · V1 | 4.07 | l/70 kg | 0.004070000000000001 | [l] / [70kg] | 3.92 | llm_confirmed (0.6) | Tab3:row4:col1, Brossard_2024_table_2:row3:col1 | — | not captured |
+| Q, l/h/70 kg | `Q30` · Q | 0.0814 | l/h/70 kg | 2.261111111111111e-08 | [l] / [[h] · [70kg]] | 20.0 | llm (0.6) | Tab3:row5:col1, Brossard_2024_table_2:row4:col1 | — | not captured |
+| V2, l/70 kg | `Q64` · V2 | 4.21 | l/70 kg | 0.00421 | [l] / [70kg] | 10.9 | llm_confirmed (0.6) | Tab3:row6:col1, Brossard_2024_table_2:row5:col1 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -57,13 +52,11 @@ Brossard P et al., Population Pharmacokinetics of the Anti…, Rheumatology and 
 **Interpretation flags:**
 - table section residual_error: 'RUV_add' routed out of structural estimates ('Residual variability')
 - dropped duplicate Q22 ('CLNL, l/h/70 kg', value '0.0748') — already have one for this compound
-- routed 'CLs_AGE' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
+- dropped duplicate Q22 ('CLNL_IFNγ', value '0.562') — already have one for this compound
+- dropped duplicate Q22 ('CLs_AGE', value '0.187') — already have one for this compound
+- unit_dimension_mismatch: 'CLs_V1_TBIL' → Q22 (unit 'dimensionless' vs ontology '[length] ** 3 / [time]') — route to review
 - dropped duplicate Q22 ('CLs_V1_TBIL', value '0.162') — already have one for this compound
 - dropped unlinked row (NIL): 'Corr V1,V2' — extend the ontology if this is a real PK parameter (source ['Tab3:row18:col1', 'Brossard_2024_table_2:row14:col1'])
-- implicit units: 'CLL, l/h/70 kg' → L/h/kg (from the paper text: "The value is listed as '0.00876' with the label 'l/h/70 kg'. In the text, emapalumab CL is explicitly reported in 'l/h' ")
-- implicit units: 'V1, l/70 kg' → L/kg (from the paper text: "The value is listed as '4.07' with the label 'l/70 kg'. The text states allometric scaling was implemented on volume par")
-- implicit units: 'Q, l/h/70 kg' → L/h/kg (from the paper text: "The value is listed as '0.0814' with the label 'l/h/70 kg'. Q is an intercompartmental clearance. The text confirms allo")
-- implicit units: 'V2, l/70 kg' → L/kg (from the paper text: "The value is listed as '4.21' with the label 'l/70 kg'. V2 is a volume of distribution. The text confirms allometric sca")
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=emapalumab
 - molar mass: none found for 'emapalumab' — its concentrations stay mass-only
 
@@ -100,19 +93,29 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab3:row2:col1', 'Brossard_2024_table_2:row1:col1'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab3:row5:col1', 'Brossard_2024_table_2:row4:col1'] |
 | C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab3:row4:col1', 'Brossard_2024_table_2:row3:col1'] |
 | C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab3:row6:col1', 'Brossard_2024_table_2:row5:col1'] |
-| C5_unit_missing_Q79 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab3:row7:col1', 'Brossard_2024_table_2:row6:col1'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.00876 | not captured | not captured | ['Tab3:row2:col1', 'Brossard_2024_table_2:row1:col1'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.613 L/h | not captured | not captured | ['Tab3:row2:col1', 'Brossard_2024_table_2:row1:col1'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 285 L | not captured | not captured | ['Tab3:row4:col1', 'Brossard_2024_table_2:row3:col1'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 295 L | not captured | not captured | ['Tab3:row6:col1', 'Brossard_2024_table_2:row5:col1'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.00876 L/h | not captured | not captured | ['Tab3:row2:col1', 'Brossard_2024_table_2:row1:col1'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 4.07 L | not captured | not captured | ['Tab3:row4:col1', 'Brossard_2024_table_2:row3:col1'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 4.21 L | not captured | not captured | ['Tab3:row6:col1', 'Brossard_2024_table_2:row5:col1'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_output_variable | not captured | pass | C_central (measured=emapalumab) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -121,7 +124,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_emapalumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Brossard_2024` / `Brossard_2024::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_emapalumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Brossard_2024` / `Brossard_2024::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_emapalumab/models/modelica/Emapalumab_Brossard2024_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_emapalumab/models/modelica/Emapalumab_Brossard2024_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_emapalumab/models/modelica/Emapalumab_Brossard2024_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -130,21 +136,26 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_emapalumab/Emapalumab_Brossard2024_reference/Emapalumab_Brossard2024_reference_modelica.zip" download>Emapalumab_Brossard2024_reference_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_emapalumab/Emapalumab_Brossard2024_reference/Emapalumab_Brossard2024_reference_fmi.zip" download>Emapalumab_Brossard2024_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_2C.fmu" download>PK_2C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_emapalumab/Emapalumab_Brossard2024_reference/Emapalumab_Brossard2024_reference_matlab.zip" download>Emapalumab_Brossard2024_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_emapalumab/Emapalumab_Brossard2024_reference/Emapalumab_Brossard2024_reference_matlab_simbio.zip" download>Emapalumab_Brossard2024_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_emapalumab/Emapalumab_Brossard2024_reference/Emapalumab_Brossard2024_reference_sbml.zip" download>Emapalumab_Brossard2024_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_emapalumab/Emapalumab_Brossard2024_reference/Emapalumab_Brossard2024_reference_cellml.zip" download>Emapalumab_Brossard2024_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_emapalumab/Emapalumab_Brossard2024_reference/Emapalumab_Brossard2024_reference.svg" alt="Emapalumab_Brossard2024_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+**Administration: intravenous** — 70 mg infusion over 10 min, single dose. Doses in the paper: 70, 210, 420, 700 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_emapalumab/Emapalumab_Brossard2024_reference/Emapalumab_Brossard2024_reference_params.json" metaurl="assets/fmu/PK_2C.vr.json" wasmurl="assets/fmu/PK_2C.js" controlsurl="drugs/drug_emapalumab/Emapalumab_Brossard2024_reference/Emapalumab_Brossard2024_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_2C` · parameters `Emapalumab_Brossard2024_reference_params.json` · controls `Emapalumab_Brossard2024_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 23:57 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 22:05 UTC</sub>

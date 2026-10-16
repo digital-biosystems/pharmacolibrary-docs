@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;carvedilol&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/&quot;},{&quot;label&quot;:&quot;Albers_2008 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Carvedilol_McTavish1993_reference&quot;,&quot;label&quot;:&quot;McTavish_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_McTavish1993_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carvedilol_Nikolic2013_reference&quot;,&quot;label&quot;:&quot;Nikolic_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Nikolic2013_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carvedilol_Yamamoto2024_final&quot;,&quot;label&quot;:&quot;Yamamoto_2024_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Yamamoto2024_final.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carvedilol_Yamamoto2024_final_s_carvedilol_final_model_estim&quot;,&quot;label&quot;:&quot;Yamamoto_2024_final_s_carvedilol_final_model_estimate_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Yamamoto2024_final_s_carvedilol_final_model_estim.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Carvedilol_Nikolic2013_reference&quot;,&quot;label&quot;:&quot;Nikolic_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Nikolic2013_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carvedilol_Hwang2023_reference&quot;,&quot;label&quot;:&quot;Hwang_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Hwang2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hwang_2023_HR&quot;,&quot;label&quot;:&quot;Hwang_2023 \u00b7 HR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/pd_Hwang_2023_HR.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yamamoto_2024_exercise_induced_heart_rate&quot;,&quot;label&quot;:&quot;Yamamoto_2024 \u00b7 exercise-induced heart rate&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/pd_Yamamoto_2024_exercise_induced_heart_rate.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Baek_2008_DBP&quot;,&quot;label&quot;:&quot;Baek_2008 \u00b7 DBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/pd_Baek_2008_DBP.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Baek_2008_SBP&quot;,&quot;label&quot;:&quot;Baek_2008 \u00b7 SBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/pd_Baek_2008_SBP.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pgx_Hwang_2023_CYP2D6_Q27&quot;,&quot;label&quot;:&quot;Hwang_2023 \u00b7 CYP2D6&quot;,&quot;group&quot;:&quot;PGx&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/pgx_Hwang_2023_CYP2D6_Q27.md&quot;,&quot;status&quot;:&quot;quantitative&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # carvedilol — `Carvedilol_Albers2008_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667), gpt-oss:120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667), gpt-oss:120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -17,38 +17,36 @@
 
 ### Reviewer guidance
 
-**The carvedilol absorption rate constant kabs is recorded as 0.62 l h-1, a dimensionally wrong unit for a first-order rate constant (should be h-1), so the record was rejected.**
+**Kabs has no unit.**
 
-In the Albers_2008 paediatric congestive heart failure model, kabs is listed with unit 'l h -1', which does not match a rate constant's dimension of inverse time; the reported unit could not be converted to SI, so the parameter reached the record without an SI value. A second reader gave 2.67 for this parameter instead of the recorded 0.62, disagreeing with the extracted value. The other parameters (CL/F 37.6 l h-1, V2/F 21.8 l, V3/F 103.7 l, Q/F 13.6 l h-1, tlag 0.15 h) show no stated problems. Extracted — carvedilol: CL/F 37.6 l h -1, V2/F 21.8 l, V3/F 104 l, Q/F 13.6 l h -1, kabs 0.62 l h -1, tlag 0.15 h.
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (kabs), so that value has no SI equivalent. Extracted — carvedilol: CL 2.7 L/h/kg, CL/F 31.5 l h -1, V2/F 18.1 l, Q/F 16.1 l h -1, kabs 0.55 l h -1, tlag 0.14 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has carvedilol, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by glm-5.3-flash</sub>
-
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:24:48.287533+00:00) predates the upstream re-run (2026-10-07 00:32:44.202288+00:00). Current validate status: `rejected`.
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Albers S et al., Population pharmacokinetics and dose si…, British journal of clinical… (2008)
   ·  DOI: [10.1111/j.1365-2125.2007.03046.x](https://doi.org/10.1111/j.1365-2125.2007.03046.x)
 
-<div class="pk-model-meta" hidden drug="carvedilol" model-id="Carvedilol_Albers2008_reference" status="rejected" stale="true" population="paediatric patients with congestive heart failure" measured-compound="carvedilol" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="carvedilol" model-id="Carvedilol_Albers2008_reference" status="needs_review" stale="false" population="paediatric patients with congestive heart failure" measured-compound="carvedilol" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.
 
-**Parameterization:** CL/F, Q/F, V2/F, V3/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** CL/F, Q/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F (l h -1 ) | `Q27` · CL/F | 37.6 | l h -1 | 1.0444444444444445e-05 | [l] / [h] | not captured | exact (1.0) | tab_2:row2:col1, tab_2:row2:col2 | — | not captured |
-| V2/F (l) | `Q82` · V2/F | 21.8 | l | 0.0218 | [l] | not captured | exact (1.0) | tab_2:row4:col1, tab_2:row4:col2 | — | not captured |
-| V3/F (l) | `Q78` · V3/F | 103.7 | l | 0.1037 | [l] | not captured | exact (1.0) | tab_2:row6:col1, tab_2:row6:col2 | — | not captured |
-| Q/F (l h -1 ) | `Q69` · Q/F | 13.6 | l h -1 | 3.7777777777777777e-06 | [l] / [h] | not captured | exact (1.0) | tab_2:row8:col1, tab_2:row8:col2 | — | not captured |
-| KA (l h -1 ) | `Q49` · kabs | 0.62 | l h -1 | not captured | [l] / [h] | not captured | exact (1.0) | tab_2:row10:col1, tab_2:row10:col2 | — | not captured |
-| TLAG (h) | `Q83` · tlag | 0.15 | h | 540.0 | [h] | not captured | exact (1.0) | tab_2:row12:col1, tab_2:row12:col2 | — | not captured |
+| weight-adjusted clearance | `Q22` · CL | 2.7 | L/h/kg | 5.25e-05 | L/h | not captured | boundary (0.8) | Albers_2008:results_prose | — | not captured |
+| CL/F (l h -1 ) [CV (%)] | `Q27` · CL/F | 31.5 | l h -1 | 8.75e-06 | L/h | not captured | boundary (0.8) | Albers_2008:other_prose | — | not captured |
+| V2/F (l) [CV (%)] | `Q82` · V2/F | 18.1 | l | 0.0181 | L | not captured | boundary (0.8) | Albers_2008:other_prose | — | not captured |
+| Q/F (l h -1 ) [CV (%)] | `Q69` · Q/F | 16.1 | l h -1 | 4.472222222222223e-06 | L/h | not captured | boundary (0.8) | Albers_2008:other_prose | — | not captured |
+| KA (l h -1 ) [CV (%)] | `Q49` · kabs | 0.55 | l h -1 | not captured | l h -1 | not captured | boundary (0.8) | Albers_2008:other_prose | — | not captured |
+| TLAG (h) [CV (%)] | `Q83` · tlag | 0.14 | h | 504.00000000000006 | h | not captured | boundary (0.8) | Albers_2008:other_prose | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -58,25 +56,26 @@ Albers S et al., Population pharmacokinetics and dose si…, British journal of 
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_mismatch: 'KA (l h -1 )' → Q49 (unit '[length] ** 3 / [time]' vs ontology '1 / [time]') — route to review
-- dropped unlinked row (NIL): 'q7' — extend the ontology if this is a real PK parameter (source ['tab_2:row14:col1', 'tab_2:row14:col2'])
-- dropped unlinked row (NIL): 'q8' — extend the ontology if this is a real PK parameter (source ['tab_2:row16:col1', 'tab_2:row16:col2'])
+- salvaged Q22 ('weight-adjusted clearance'=2.7) from results prose — parameter table was unreadable
+- salvaged Q27 ('CL/F (l h -1 ) [CV (%)]'=31.5) from results prose — parameter table was unreadable
+- salvaged Q82 ('V2/F (l) [CV (%)]'=18.1) from results prose — parameter table was unreadable
+- salvaged Q69 ('Q/F (l h -1 ) [CV (%)]'=16.1) from results prose — parameter table was unreadable
+- salvaged Q49 ('KA (l h -1 ) [CV (%)]'=0.55) from results prose — parameter table was unreadable
+- salvaged Q83 ('TLAG (h) [CV (%)]'=0.14) from results prose — parameter table was unreadable
+- implicit units: 'weight-adjusted clearance' → L/h/kg (from the paper text: "The Results section explicitly states: 'The weight-adjusted clearance was highest for the younger patients with 2.7 l h ")
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=carvedilol
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- structure disagreement: deterministic 1C vs LLM 3C — review compartment count
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - status held at route_to_review — not promoted
 
 **Extraction notes:**
-- unparsed cell tab_2:row2:col3 = '31.6, 43.7'
-- unparsed cell tab_2:row4:col3 = '13.4, 32.1'
-- unparsed cell tab_2:row6:col3 = '62.6, 170.0'
-- unparsed cell tab_2:row8:col3 = '10.3, 17.8'
-- unparsed cell tab_2:row10:col3 = '0.55, 0.72'
-- unparsed cell tab_2:row12:col3 = '0.11, 0.19'
-- unparsed cell tab_2:row14:col3 = '2.44, 2.82'
-- unparsed cell tab_2:row16:col3 = '-0.17, -0.04'
+- table tab_2: unknown_column_role
+- table tab_2: missing_label
+- table tab_2: unbound_uncertainty
+- table tab_2: no_point_estimates
+- table tab_2: unparsed_numeric_cell
+- final table tab_2: no supported point estimates; targeted recovery unresolved
 - LLM selected parameter table(s) 2
-- LLM region Albers_2008:discussion_prose: no JSON records returned
 
 ## Validation
 
@@ -118,16 +117,13 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_2:row2:col1', 'tab_2:row2:col2'] |
-| C5_dimension_Q49 | fail | [length] ** 3 / [time] | l h -1 | not captured | not captured | ['tab_2:row10:col1', 'tab_2:row10:col2'] |
-| C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_2:row8:col1', 'tab_2:row8:col2'] |
-| C5_dimension_Q78 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_2:row6:col1', 'tab_2:row6:col2'] |
-| C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_2:row4:col1', 'tab_2:row4:col2'] |
-| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['tab_2:row12:col1', 'tab_2:row12:col2'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Albers_2008:results_prose'] |
+| C5_unit_missing_Q49 | fail | 1 / [time] | l h -1 | not captured | not captured | ['Albers_2008:other_prose'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 37.6 L/h | not captured | not captured | ['tab_2:row2:col1', 'tab_2:row2:col2'] |
-| C9_phys_window_Q82 | pass | volume within physiological range | 21.8 L | not captured | not captured | ['tab_2:row4:col1', 'tab_2:row4:col2'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 189 L/h | not captured | not captured | ['Albers_2008:results_prose'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 31.5 L/h | not captured | not captured | ['Albers_2008:other_prose'] |
+| C9_phys_window_Q82 | pass | volume within physiological range | 18.1 L | not captured | not captured | ['Albers_2008:other_prose'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -136,14 +132,24 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_carvedilol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Albers_2008` / `Albers_2008::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_carvedilol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Albers_2008` / `Albers_2008::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -152,4 +158,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 00:32 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 20:18 UTC</sub>

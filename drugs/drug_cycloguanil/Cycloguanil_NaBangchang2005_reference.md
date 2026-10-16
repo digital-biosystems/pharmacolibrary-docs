@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;Cycloguanil&quot;,&quot;href&quot;:&quot;drugs/drug_cycloguanil/&quot;},{&quot;label&quot;:&quot;Na-Bangchang_2005 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cycloguanil_Chotsiri2021_reference&quot;,&quot;label&quot;:&quot;Chotsiri_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cycloguanil/Cycloguanil_Chotsiri2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -25,51 +24,55 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> **Dose compound ≠ measured compound:** dosed `proguanil (with atovaquone, Malarone)`, measured `cycloguanil`.
+> **Dose compound ≠ measured compound:** dosed `atovaquone and proguanil`, measured `cycloguanil`.
 
 ## Citation
 Na-Bangchang K et al., The pharmacokinetics and pharmacodynami…, European journal of clinica… (2005)
   ·  DOI: [10.1007/s00228-005-0969-7](https://doi.org/10.1007/s00228-005-0969-7)
 
-<div class="pk-model-meta" hidden drug="Cycloguanil" model-id="Cycloguanil_NaBangchang2005_reference" status="rejected" stale="false" population="third-trimester pregnant women with uncomplicated falciparum malaria" measured-compound="cycloguanil" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="Cycloguanil" model-id="Cycloguanil_NaBangchang2005_reference" status="rejected" stale="false" population="third-trimester pregnant women" measured-compound="cycloguanil" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.
 
-**Parameterization:** mechanistic.
+**Parameterization:** CLm,norm/F, Vm,norm/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 _No resolved parameters._
 
+### Unresolved rows _(no Q-code or no value — not parameters)_
+| label (paper) | Q-code | value | link |
+|---|---|---|---|
+| Cmax | Q32 | not captured | exact |
+| V/F | Q376 | not captured | exact |
+| CL/F | Q375 | not captured | exact |
+| t(1/2beta) | Q60 | not captured | llm |
+| t(max) | Q56 | not captured | llm |
+| CL(R-CG) | Q375 | not captured | exact |
+| t(1/2z) | Q57 | not captured | llm |
+
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped value-less row: 'Cmax'
-- dropped value-less row: 't(max)' (captured trailing unit 'max' for child rows)
-- dropped value-less row: 'V/F'
-- dropped value-less row: 'CL/F'
-- dropped value-less row: 't(1/2beta)' (captured trailing unit '1/2beta' for child rows)
-- dropped value-less row: 'Cmax (proguanil)' (captured trailing unit 'proguanil' for child rows)
-- dropped value-less row: 'Cmax (cycloguanil)' (captured trailing unit 'cycloguanil' for child rows)
-- dropped value-less row: 't(max) (proguanil)' (captured trailing unit 'proguanil' for child rows)
-- dropped value-less row: 't(max) (cycloguanil)' (captured trailing unit 'cycloguanil' for child rows)
-- dropped value-less row: 'V/F (proguanil)' (captured trailing unit 'proguanil' for child rows)
-- dropped value-less row: 'CL/F (proguanil)' (captured trailing unit 'proguanil' for child rows)
-- dropped value-less row: 't(1/2beta) (proguanil)' (captured trailing unit 'proguanil' for child rows)
-- dropped value-less row: 'CL(R-CG)' (captured trailing unit 'R-CG' for child rows)
-- dropped value-less row: 't(1/2z) (CG)' (captured trailing unit 'CG' for child rows)
-- dropped value-less row: 'proguanil/cycloguanil metabolic ratios'
-- dropped value-less row: 'AUC(PG/CG)' (captured trailing unit 'PG/CG' for child rows)
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=cycloguanil
+- unit_dimension_mismatch: 't(1/2z)' → Q57 (unit '[length] ** 3 / [time]' vs ontology '[time]') — route to review
+- dropped unlinked row (NIL): '(CG)' — extend the ontology if this is a real PK parameter (source ['Na-Bangchang_2005:abstract'])
+- dropped unlinked row (NIL): 'proguanil/cycloguanil metabolic ratios' — extend the ontology if this is a real PK parameter (source ['Na-Bangchang_2005:abstract'])
+- covariate category for AUC ratio from footnote/prose kept as documentation only (['Na-Bangchang_2005:abstract'])
+- metabolite cycloguanil: Q76→Q376 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided), normalised to a standard size
+- metabolite cycloguanil: Q27→Q375 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided), normalised to a standard size
+- metabolite cycloguanil: Q22→Q375 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided), normalised to a standard size
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=cycloguanil
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - template fit: none — noncompartmental model — not a compartmental parent–metabolite model
-- row roles (LLM): model_class=noncompartmental; 16/16 row label(s) assigned, 0 linked by role; re-tagged cycloguanil→atovaquone ×5, cycloguanil→proguanil ×5
+- status held at route_to_review — not promoted
+- row roles (LLM): model_class=noncompartmental; 10/10 row label(s) assigned, 0 linked by role
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Na-Bangchang_2005_metadata.yaml (17 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Na-Bangchang_2005_metadata.yaml (16 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -109,6 +112,14 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
 | C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Na-Bangchang_2005:abstract', 'Na-Bangchang_2005:abstract', 'Na-Bangchang_2005:abstract'] |
+| C5_dimension_Q375 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Na-Bangchang_2005:abstract', 'Na-Bangchang_2005:abstract'] |
+| C5_dimension_Q375 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Na-Bangchang_2005:abstract'] |
+| C5_dimension_Q376 | pass | [length] ** 3 | not captured | not captured | not captured | ['Na-Bangchang_2005:abstract', 'Na-Bangchang_2005:abstract'] |
+| C5_dimension_Q56 | pass | [time] | not captured | not captured | not captured | ['Na-Bangchang_2005:abstract', 'Na-Bangchang_2005:abstract'] |
+| C5_dimension_Q57 | fail | [length] ** 3 / [time] | ml/h/kg | not captured | not captured | ['Na-Bangchang_2005:abstract'] |
+| C5_dimension_Q60 | pass | [time] | not captured | not captured | not captured | ['Na-Bangchang_2005:abstract', 'Na-Bangchang_2005:abstract'] |
+| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
 <details class="legend">
@@ -118,7 +129,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_cycloguanil/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Na-Bangchang_2005` / `Na-Bangchang_2005::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_cycloguanil/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Na-Bangchang_2005` / `Na-Bangchang_2005::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -134,4 +145,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 06:52 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 23:39 UTC</sub>

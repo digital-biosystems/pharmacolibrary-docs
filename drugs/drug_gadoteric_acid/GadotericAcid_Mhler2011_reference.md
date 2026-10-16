@@ -4,7 +4,7 @@
 
 # gadoteric acid — `GadotericAcid_Mhler2011_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -21,6 +21,8 @@
 **No volume or clearance — not a compartmental population PK model.**
 
 The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is gadoteric acid's own; they describe gadolinium.
+
+A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the links between molecules: this record has none, the second reading gadoterate meglumine → gadolinium (interconversion); it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -63,6 +65,31 @@ Mühler MR et al., Maternofetal pharmacokinetics of a gado…, Radiology (2011)
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `qwen3.8-27b` | not confirmed | 0.375 (3/8 fields) | 5 |
+
+<details><summary>5 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `qwen3.8-27b` | `model.links` | [] | [['gadoterate meglumine', 'gadolinium', 'interconversion']] | mismatch |
+| `qwen3.8-27b` | `parameters[first half-life of distribution]` | 47 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[half-life of distribution]` | not captured | 47 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[half-life of elimination]` | not captured | 107 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[second half-life of elimination]` | 107 | not captured | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
@@ -80,7 +107,7 @@ Mühler MR et al., Maternofetal pharmacokinetics of a gado…, Radiology (2011)
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_gadoteric_acid/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Mühler_2011` / `Mühler_2011::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_gadoteric_acid/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Mühler_2011` / `Mühler_2011::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

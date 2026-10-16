@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01X&quot;,&quot;href&quot;:&quot;atc/L01X.md&quot;},{&quot;label&quot;:&quot;belzutifan&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Belzutifan_Marathe2023_arithmetic_mean&quot;,&quot;label&quot;:&quot;Marathe_2023_arithmetic_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_belzutifan/Belzutifan_Marathe2023_arithmetic_mean.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Belzutifan_Marathe2023_geometric_mean&quot;,&quot;label&quot;:&quot;Marathe_2023_geometric_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_belzutifan/Belzutifan_Marathe2023_geometric_mean.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Belzutifan_Marathe2023_arithmetic_mean&quot;,&quot;label&quot;:&quot;Marathe_2023_arithmetic_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_belzutifan/Belzutifan_Marathe2023_arithmetic_mean.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Belzutifan_Marathe2023_geometric_mean&quot;,&quot;label&quot;:&quot;Marathe_2023_geometric_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_belzutifan/Belzutifan_Marathe2023_geometric_mean.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # belzutifan
 
@@ -27,16 +27,34 @@ Belzutifan is an anticancer medicine used to treat von Hippel-Lindau disease, in
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 23:26 | 2:31 | 0/1/3 | 0/0/0 | 0/0/0 | 64,927/2,710 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/1 | 1/0 | 0 |
+| 2026-10-15 04:24 | 1:14 | 2/0/2 | 0/0/0 | 0/0/0 | 68,377/4,550 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Marathe_2023_absolute_parameter_value](drugs/drug_belzutifan/Belzutifan_Marathe2023_absolute_parameter_value.md) | — | 1-compartment (no model) | 2 | Marathe DD et al., Population pharmacokinetic analyses for…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.13028](https://doi.org/10.1002/psp4.13028) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.706). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: T1_cmax</sub><br><sub>route_to: `scholar`</sub> | [Marathe_2023_arithmetic_mean](drugs/drug_belzutifan/Belzutifan_Marathe2023_arithmetic_mean.md) | ▶ model + simulator | 1-compartment, oral | 10 | Marathe DD et al., Population pharmacokinetic analyses for…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.13028](https://doi.org/10.1002/psp4.13028) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.815). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: T1_cmax</sub><br><sub>route_to: `scholar`</sub> | [Marathe_2023_geometric_mean](drugs/drug_belzutifan/Belzutifan_Marathe2023_geometric_mean.md) | ▶ model + simulator | 1-compartment, oral | 10 | Marathe DD et al., Population pharmacokinetic analyses for…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.13028](https://doi.org/10.1002/psp4.13028) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.476). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub><br><sub>route_to: `human_review`</sub> | [Marathe_2023_estimate](drugs/drug_belzutifan/Belzutifan_Marathe2023_estimate.md) | — | 1-compartment (no model) | 7 (+4 cov.) | Marathe DD et al., Population pharmacokinetic analyses for…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.13028](https://doi.org/10.1002/psp4.13028) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.706). Primary extraction retained.">cross-check: disputed</span> | [Marathe_2023_arithmetic_mean](drugs/drug_belzutifan/Belzutifan_Marathe2023_arithmetic_mean.md) | ▶ model + simulator | 1-compartment, oral | 11 | Marathe DD et al., Population pharmacokinetic analyses for…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.13028](https://doi.org/10.1002/psp4.13028) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.815). Primary extraction retained.">cross-check: disputed</span> | [Marathe_2023_geometric_mean](drugs/drug_belzutifan/Belzutifan_Marathe2023_geometric_mean.md) | ▶ model + simulator | 1-compartment, oral | 11 | Marathe DD et al., Population pharmacokinetic analyses for…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.13028](https://doi.org/10.1002/psp4.13028) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Vd, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Marathe_2023_absolute_parameter_value](drugs/drug_belzutifan/Belzutifan_Marathe2023_absolute_parameter_value.md) | held back | 1-compartment, oral | 3 | Marathe DD et al., Population pharmacokinetic analyses for…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.13028](https://doi.org/10.1002/psp4.13028) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.476). Primary extraction retained.">cross-check: disputed</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: model_quarantined: Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Marathe_2023_estimate](drugs/drug_belzutifan/Belzutifan_Marathe2023_estimate.md) | held back | 1-compartment, oral | 7 (+4 cov.) | Marathe DD et al., Population pharmacokinetic analyses for…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.13028](https://doi.org/10.1002/psp4.13028) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=belzutifan).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` substrate | DrugBank actor |
+| absorption | liver | `ABCB1` substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
+| absorption | testis | `ABCB1` substrate | DrugBank actor |
+| metabolism | liver | `CYP2C19` substrate, `CYP3A4` substrate, `SLCO1B1` substrate, `SLCO1B3` substrate, `UGT2B17` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate, `UGT2B17` substrate | DrugBank actor |
+| excretion | kidney | `SLC47A2` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: EPAS1 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,24 +66,14 @@ Belzutifan is an anticancer medicine used to treat von Hippel-Lindau disease, in
 
 - **PubMed hits:** 3 matched, 3 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 4  ·  extracted 0  ·  needs_review 3  ·  rejected 1  ·  stale 0
+- **records:** 4  ·  extracted 2  ·  needs_review 2  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
-
-## Full-text requests
-
-_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Marathe_2024.pdf` | Marathe DD et al., Exposure-Response Analyses for Belzutif…, Journal of clinical pharmac… (2024) | popPK | 8 | [10.1002/jcph.2459](https://doi.org/10.1002/jcph.2459) | [38752556](https://pubmed.ncbi.nlm.nih.gov/38752556) | The paper describes a population pharmacokinetic model for belzutifan used for exposure-response analysis, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence. |
-
-<sub>queue written 2026-10-07T23:24:06.751842+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Marathe_2024 | relevant | 8 | 0 | The paper describes a population pharmacokinetic model for belzutifan used for exposure-response analysis, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence. |
+| popPK | Marathe_2024 | irrelevant | 3 | 0 | The paper is an exposure-response analysis which relies on a PK model but the abstract and evidence provided do not contain the specific numeric PK parameter estimates (CL, V, etc.). |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 23:24 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-15 04:23 UTC</sub>

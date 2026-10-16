@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01E&quot;,&quot;href&quot;:&quot;atc/C01E.md&quot;},{&quot;label&quot;:&quot;ibuprofen&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/&quot;},{&quot;label&quot;:&quot;Troc\u00f3niz_2000 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ibuprofen_DeGraves1993v2_reference&quot;,&quot;label&quot;:&quot;DeGraves_1993_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_DeGraves1993v2_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Knihinicki1990_reference&quot;,&quot;label&quot;:&quot;Knihinicki_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Knihinicki1990_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Todd1986_reference&quot;,&quot;label&quot;:&quot;Todd_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Todd1986_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Trocniz2000_reference&quot;,&quot;label&quot;:&quot;Troc\u00f3niz_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Trocniz2000_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Hannam_2018_PPPM&quot;,&quot;label&quot;:&quot;Hannam_2018 \u00b7 PPPM&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/pd_Hannam_2018_PPPM.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ibuprofen_Clissold1987_reference&quot;,&quot;label&quot;:&quot;Clissold_1987_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Clissold1987_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_DeGraves1993v2_reference&quot;,&quot;label&quot;:&quot;DeGraves_1993_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_DeGraves1993v2_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Knihinicki1990_reference&quot;,&quot;label&quot;:&quot;Knihinicki_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Knihinicki1990_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Todd1986_reference&quot;,&quot;label&quot;:&quot;Todd_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Todd1986_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Brown1998_ibu05&quot;,&quot;label&quot;:&quot;Brown_1998_ibu05&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Brown1998_ibu05.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2018_PPPM&quot;,&quot;label&quot;:&quot;Hannam_2018 \u00b7 PPPM&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/pd_Hannam_2018_PPPM.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ibuprofen — `Ibuprofen_Trocniz2000_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.833), gpt-oss:120b (not confirmed, agreement 0.692). Primary extraction retained.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.833), gpt-oss:120b (not confirmed, agreement 0.692). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -13,39 +13,41 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** Model and browser simulation available in **Models** and **Simulation**.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
+
+A reported unit could not be converted (Fab), so that value has no SI equivalent. Extracted — ibuprofen: kabs 0.82 h⁻¹, tlag 1.33 h, Fab 0.63 %, V1 4.4 L, CLb 4.05 L/h, Qd 2.09 L/h, V2 6.62 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ibuprofen, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
-
-> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:38:19.357653+00:00) predates the upstream re-run (2026-10-08 11:43:23.319947+00:00). Current validate status: `extracted`.
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Trocóniz IF et al., Pharmacokinetic-Pharmacodynamic Modelli…, Clinical pharmacokinetics (2000)
   ·  DOI: [10.2165/00003088-200038060-00004](https://doi.org/10.2165/00003088-200038060-00004)
 
-<div class="pk-model-meta" hidden drug="ibuprofen" model-id="Ibuprofen_Trocniz2000_reference" status="extracted" stale="true" population="mixed" measured-compound="ibuprofen" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="ibuprofen" model-id="Ibuprofen_Trocniz2000_reference" status="rejected" stale="false" population="healthy adults" measured-compound="ibuprofen" parameterization="mechanistic" topology="2C"></div>
 
-**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| kₐ,susp (h⁻¹) | `Q49` · kabs | 0.82 | h⁻¹ | 0.00022777777777777775 | [1] / [h] | not captured | llm_confirmed (0.6) | Trocóniz_2000_table_p6_1:row0:col1 | — | 31 (0.32% RSE) |
-| tₗag (h) | `Q83` · tlag | 1.33 | h | 4788.0 | [h] | not captured | exact (1.0) | Trocóniz_2000_table_p6_1:row3:col1 | — | 16 (0.38% RSE) |
-| F₁ | `Q40` · Fab | 0.63 | not captured | not captured | not captured | not captured | exact (1.0) | Trocóniz_2000_table_p6_1:row4:col1 | — | 19 (0.24% RSE) |
+| kₐ,susp (h⁻¹) | `Q49` · kabs | 0.82 | h⁻¹ | 0.00022777777777777775 | [1] / [h] | not captured | llm_confirmed (0.6) | Trocóniz_2000_table_p6_1:row0:col1 | — | 31 (None% RSE) |
+| tₗag (h) | `Q83` · tlag | 1.33 | h | 4788.0 | [h] | not captured | exact (1.0) | Trocóniz_2000_table_p6_1:row3:col1 | — | 16 (None% RSE) |
+| F₁ | `Q40` · Fab | 0.63 | % | not captured | [%] | not captured | exact (1.0) | Trocóniz_2000_table_p6_1:row4:col1 | — | 19 (None% RSE) |
 | V1 (L)ᵇ | `Q63` · V1 | 4.4 | L | 0.0044 | [l] | not captured | llm_confirmed (0.6) | Trocóniz_2000_table_p6_1:row5:col1 | — | not captured |
-| CL (L/h)ᵇ | `Q23` · CLb | 4.05 | L/h | 1.125e-06 | [l] / [h] | not captured | space_fold (0.95) | Trocóniz_2000_table_p6_1:row6:col1 | — | 24 (0.33% RSE) |
-| CLd (L/h)ᵇ | `Q30` · Q | 2.09 | L/h | 5.805555555555555e-07 | [l] / [h] | not captured | llm_confirmed (0.6) | Trocóniz_2000_table_p6_1:row7:col1 | — | 46 (0.57% RSE) |
-| V2 (L)ᵇ | `Q64` · V2 | 6.62 | L | 0.00662 | [l] | not captured | llm_confirmed (0.6) | Trocóniz_2000_table_p6_1:row8:col1 | — | 65 (0.34% RSE) |
+| CL (L/h)ᵇ | `Q23` · CLb | 4.05 | L/h | 1.125e-06 | [l] / [h] | not captured | space_fold (0.95) | Trocóniz_2000_table_p6_1:row6:col1 | — | 24 (None% RSE) |
+| CLd (L/h)ᵇ | `Q364` · Qd | 2.09 | L/h | 5.805555555555555e-07 | [l] / [h] | not captured | llm_corrected (0.6) | Trocóniz_2000_table_p6_1:row7:col1 | — | not captured |
+| V2 (L)ᵇ | `Q64` · V2 | 6.62 | L | 0.00662 | [l] | not captured | llm_confirmed (0.6) | Trocóniz_2000_table_p6_1:row8:col1 | — | 65 (None% RSE) |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -53,9 +55,6 @@ Trocóniz IF et al., Pharmacokinetic-Pharmacodynamic Modelli…, Clinical pharma
 </details>
 
 ## Departures & gaps
-
-**Deviations:**
-- `defaulted_parameters`: ['F']
 
 **Interpretation flags:**
 - table section iiv: 'kₐ,susp (h⁻¹)' routed out of structural estimates ('Interindividual variabilityᵃ')
@@ -106,27 +105,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q23 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Trocóniz_2000_table_p6_1:row6:col1'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Trocóniz_2000_table_p6_1:row7:col1'] |
+| C5_dimension_Q364 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Trocóniz_2000_table_p6_1:row7:col1'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Trocóniz_2000_table_p6_1:row0:col1'] |
 | C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Trocóniz_2000_table_p6_1:row5:col1'] |
 | C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Trocóniz_2000_table_p6_1:row8:col1'] |
 | C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Trocóniz_2000_table_p6_1:row3:col1'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 4.05 | not captured | not captured | ['Trocóniz_2000_table_p6_1:row6:col1'] |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q23 | pass | clearance within physiological range | 4.05 L/h | not captured | not captured | ['Trocóniz_2000_table_p6_1:row6:col1'] |
 | C9_phys_window_Q63 | pass | volume within physiological range | 4.4 L | not captured | not captured | ['Trocóniz_2000_table_p6_1:row5:col1'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 6.62 L | not captured | not captured | ['Trocóniz_2000_table_p6_1:row8:col1'] |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_output_variable | not captured | pass | C_central (measured=ibuprofen) | central.C | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | pass | 6 scholar param(s) emitted or defaulted | 6 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -135,38 +123,20 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ibuprofen/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Trocóniz_2000` / `Trocóniz_2000::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ibuprofen/models/modelica/Ibuprofen_Trocniz2000_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ibuprofen/models/modelica/Ibuprofen_Trocniz2000_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ibuprofen/models/modelica/Ibuprofen_Trocniz2000_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ibuprofen/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Trocóniz_2000` / `Trocóniz_2000::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ibuprofen/Ibuprofen_Trocniz2000_reference/Ibuprofen_Trocniz2000_reference_modelica.zip" download>Ibuprofen_Trocniz2000_reference_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_ibuprofen/Ibuprofen_Trocniz2000_reference/Ibuprofen_Trocniz2000_reference_fmi.zip" download>Ibuprofen_Trocniz2000_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_ibuprofen/Ibuprofen_Trocniz2000_reference/Ibuprofen_Trocniz2000_reference_matlab.zip" download>Ibuprofen_Trocniz2000_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_ibuprofen/Ibuprofen_Trocniz2000_reference/Ibuprofen_Trocniz2000_reference_matlab_simbio.zip" download>Ibuprofen_Trocniz2000_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_ibuprofen/Ibuprofen_Trocniz2000_reference/Ibuprofen_Trocniz2000_reference_sbml.zip" download>Ibuprofen_Trocniz2000_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_ibuprofen/Ibuprofen_Trocniz2000_reference/Ibuprofen_Trocniz2000_reference_cellml.zip" download>Ibuprofen_Trocniz2000_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_ibuprofen/Ibuprofen_Trocniz2000_reference/Ibuprofen_Trocniz2000_reference.svg" alt="Ibuprofen_Trocniz2000_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 400 mg, single dose, first-order absorption (ka 0.82 /h, lag 79.8 min, F 0.9). Dose in the paper: 400 mg.
-
-<dbs-fmusim paramsurl="drugs/drug_ibuprofen/Ibuprofen_Trocniz2000_reference/Ibuprofen_Trocniz2000_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_ibuprofen/Ibuprofen_Trocniz2000_reference/Ibuprofen_Trocniz2000_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_2C_enteral` · parameters `Ibuprofen_Trocniz2000_reference_params.json` · controls `Ibuprofen_Trocniz2000_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-08 11:43 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 22:44 UTC</sub>

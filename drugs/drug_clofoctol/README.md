@@ -18,7 +18,7 @@ Clofoctol is an antibacterial drug that was used to treat upper respiratory trac
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 11:54 | 1:55 | 0/0/0 | 0/0/0 | 0/0/0 | 9,798/640 | einfracz / qwen3.8-27b | 1 | 0/0 | 1/0 | 0 |
+| 2026-10-13 10:58 | 0:33 | 0/0/0 | 0/0/0 | 0/0/0 | 26,771/466 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
 
 ## popPK records
 
@@ -33,7 +33,7 @@ _not available_
 ## Coverage
 
 - **PubMed hits:** 6 matched, 6 returned
-- **screened:** 1  ·  **relevant:** 1
+- **screened:** 2  ·  **relevant:** 1
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
@@ -47,12 +47,13 @@ _3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | `Scaglione_2012.pdf` | Scaglione F et al., In vitro and in vivo pharmacokinetic/ph…, Journal of chemotherapy (Fl… (2012) | popPK | 6 | [10.1179/1973947812Y.0000000018](https://doi.org/10.1179/1973947812Y.0000000018) | [23040683](https://pubmed.ncbi.nlm.nih.gov/23040683) | The study reports PK/PD relationships and an AUC/MIC ratio but lacks specific quantitative disposition parameters (CL, V, ka) in the provided evidence, which are likely in the full text or figures not included. |
 | `del_1983.pdf` | del Tacca M et al., The pharmacokinetics of clofoctol in he…, Biological research in preg… (1983) | popPK | 6 | not captured | [6652171](https://pubmed.ncbi.nlm.nih.gov/6652171) | The paper is a primary PK study of clofoctol in neonates and adults, but the evidence text contains no specific numeric values for parameters (CL, V, Ka, etc.), only qualitative comparisons and timing. |
 
-<sub>queue written 2026-10-07T11:54:32.974278+00:00</sub>
+<sub>queue written 2026-10-13T10:58:51.255817+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
+| popPK | Belouzard_2022 | irrelevant | 4 | 2 | The study is primarily an antiviral efficacy and mechanistic study; while it mentions mouse PK experiments and lung concentrations, it does not report quantitative PK parameters (CL, V, ka) or a compartmental model for clofoctol. |
 | popPK | Danesi_1988 | irrelevant | 3 | 5 | The study reports only Cmax and AUC values for clofoctol in plasma and lung tissue after rectal dosing, lacking compartmental PK parameters (CL, V, ka, half-life) required for population PK modeling. |
 | popPK | Scaglione_2012 | relevant | 6 | 1 | The study reports PK/PD relationships and an AUC/MIC ratio but lacks specific quantitative disposition parameters (CL, V, ka) in the provided evidence, which are likely in the full text or figures not included. |
 | popPK | del_1983 | relevant | 6 | 0 | The paper is a primary PK study of clofoctol in neonates and adults, but the evidence text contains no specific numeric values for parameters (CL, V, Ka, etc.), only qualitative comparisons and timing. |

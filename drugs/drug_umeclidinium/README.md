@@ -26,7 +26,7 @@ Umeclidinium is an inhaled anticholinergic medicine used to treat chronic obstru
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 15:19 | 8:56 | 0/4/6 | 3/1/0 | 0/0/0 | 379,844/26,562 | ollama / glm-5.3-flash | 14 | 0/14 | 14/0 | 0 |
+| 2026-10-13 12:42 | 0:07 | 0/4/6 | 3/1/0 | 0/0/0 | 2,235/297 | ollama / qwen3.8:27b-mtp-q8_0 | 14 | 0/14 | 14/0 | 0 |
 
 ## popPK records
 
@@ -52,6 +52,28 @@ Umeclidinium is an inhaled anticholinergic medicine used to treat chronic obstru
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> | [Yang_2015_FEV1](drugs/drug_umeclidinium/pd_Yang_2015_FEV1.md) | change from baseline trough FEV1 (day 15) ← umeclidinium · direct linear effect | — | Yang S et al., Dose-response modelling of umeclidinium…, European journal of clinica… (2015) | [10.1007/s00228-015-1894-z](https://doi.org/10.1007/s00228-015-1894-z) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span> | [Gong_2022_trough_FEV1](drugs/drug_umeclidinium/pd_Gong_2022_trough_FEV1.md) | change from baseline in trough FEV1 ← umeclidinium (vilanterol/umeclidinium FDC) · direct Emax (saturable) effect | — | Gong Y et al., Quantitative analysis of efficacy and s…, Therapeutic advances in res… (2022) | [10.1177/17534666211066068](https://doi.org/10.1177/17534666211066068) |
 
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=umeclidinium).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` substrate | DrugBank actor |
+| absorption | liver | `ABCB1` substrate | DrugBank actor |
+| absorption | lung | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| absorption | placenta | `ABCB1` substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
+| absorption | testis | `ABCB1` substrate | DrugBank actor |
+| distribution | blood | `ALB` binder, `ORM1` binder | DrugBank actor |
+| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
+| metabolism | liver | `CYP2D6` substrate, `SLC22A1` substrate | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | `SLC22A2` substrate | DrugBank actor |
+| excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: CHRM1 (target), CHRM2 (target), CHRM3 (target), CHRM4 (target), CHRM5 (target).</sub>
+
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
 <table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
@@ -61,7 +83,7 @@ Umeclidinium is an inhaled anticholinergic medicine used to treat chronic obstru
 ## Coverage
 
 - **PubMed hits:** 65 matched, 37 returned
-- **screened:** 5  ·  **relevant:** 5
+- **screened:** 6  ·  **relevant:** 5
 - **records:** 10  ·  extracted 0  ·  needs_review 6  ·  rejected 4  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 

@@ -1,0 +1,63 @@
+{
+ "model_id": "Alprazolam_Witt2026_PD_rgr",
+ "note": "Values for the shared PD_SigmoidEmaxSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 0.0,
+  "EC50": 0.000465351,
+  "Emax": -1.0,
+  "exposure_per_s": 1e-09,
+  "gamma": -0.4585
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 0.0,
+  "0.000465351": -0.5
+ },
+ "stop_time": 4700000.0,
+ "subtitle": "Relative growth rate (RGR) against alprazolam concentration",
+ "template": "PD_SigmoidEmaxSweep",
+ "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Concentration–response simulated by the PD model",
+ "units": {
+  "EC50": {
+   "display_only": false,
+   "display_unit": "ng L−1",
+   "factor": 1e-09,
+   "si_unit": "kg/m3"
+  },
+  "Emax": {
+   "display_only": false,
+   "display_unit": "%",
+   "factor": 0.01,
+   "si_unit": "1"
+  },
+  "exposure": {
+   "display_only": false,
+   "display_unit": "ng L−1",
+   "factor": 1e-09,
+   "si_unit": "kg/m3"
+  },
+  "gamma": {
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "response_unit": "%"
+ },
+ "x_axis": {
+  "display_unit": "ng L−1",
+  "factor": 1e-09,
+  "label": "alprazolam concentration",
+  "per_s": 1e-09,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "%",
+  "factor": 0.01,
+  "label": "Relative growth rate (RGR)"
+ }
+}

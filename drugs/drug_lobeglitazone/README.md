@@ -18,11 +18,37 @@ Lobeglitazone is a thiazolidinedione, a class of oral blood glucose lowering dru
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-05 00:33 | 2:44 | 0/0/0 | 0/0/0 | 0/0/0 | 93,202/3,357 | ollama / qwen3.8:27b-mtp-q8_0 | 7 | 1/6 | 7/0 | 0 |
+| 2026-10-14 23:51 | 1:01 | 0/0/0 | 1/0/0 | 0/0/0 | 93,186/4,000 | einfracz / qwen3.8-27b | 7 | 1/6 | 7/0 | 0 |
 
 ## popPK records
 
 _not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Jin_2021_viability](drugs/drug_lobeglitazone/pd_Jin_2021_viability.md) | cell viability (MTT assay) ← lobeglitazone · direct sigmoid Emax (Hill) effect | — | Jin JQ et al., Lobeglitazone, A Peroxisome Proliferato…, Endocrinology and metabolis… (2021) | [10.3803/EnM.2021.1155](https://doi.org/10.3803/EnM.2021.1155) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=lobeglitazone).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` unknown | DrugBank actor |
+| absorption | kidney | `ABCB1` unknown | DrugBank actor |
+| absorption | liver | `ABCB1` unknown | DrugBank actor |
+| absorption | placenta | `ABCB1` unknown | DrugBank actor |
+| absorption | small intestine | `ABCB1` unknown | DrugBank actor |
+| absorption | testis | `ABCB1` unknown | DrugBank actor |
+| metabolism | liver | `CYP1A2` inhibitor, `CYP2C19` inhibitor, `CYP2C8` inhibitor/substrate, `CYP2C9` inhibitor, `CYP3A4` substrate, `SLCO1B1` inhibitor | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: PPARA (target), PPARG (activator), SLCO3A1 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -33,78 +59,77 @@ _not available_
 ## Coverage
 
 - **PubMed hits:** 27 matched, 53 returned
-- **screened:** 3  ·  **relevant:** 3
+- **screened:** 4  ·  **relevant:** 2
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
 
-_9 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_7 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Kim_2011.pdf` | Kim JW et al., Tolerability and pharmacokinetics of lo…, Clinical therapeutics (2011) | popPK | 10 | [10.1016/j.clinthera.2011.09.023](https://doi.org/10.1016/j.clinthera.2011.09.023) | [22047812](https://pubmed.ncbi.nlm.nih.gov/22047812) | The study reports PK parameters for lobeglitazone in humans, but specific numeric values for clearance, volume, or half-life are not present in the provided text, only qualitative trends and accumulation ratios. |
-| `Lee_2015_2.pdf` | Lee JH et al., Gender differences in the hepatic elimi…, Biopharmaceutics & drug dis… (2015) | popPK | 9 | [10.1002/bdd.1954](https://doi.org/10.1002/bdd.1954) | [25899769](https://pubmed.ncbi.nlm.nih.gov/25899769) | The study reports quantitative PK parameters (AUC, CLint, half-life) for lobeglitazone in rats, but specific clearance (CL) and volume (V) values are not explicitly listed in the provided text. |
-| `Kim_2019.pdf` | Kim SY et al., Pharmacokinetics of a Lobeglitazone/Met…, Clinical pharmacology in dr… (2019) | popPK | 8 | [10.1002/cpdd.625](https://doi.org/10.1002/cpdd.625) | [30329224](https://pubmed.ncbi.nlm.nih.gov/30329224) | The study reports PK parameters for lobeglitazone, but the evidence provided only contains qualitative comparisons and percentage changes (e.g., 32% decrease in Cmax) without specific numeric values for CL, V, or ka. |
-| `Lee_2015.pdf` | Lee JH et al., Kinetics of the Absorption, Distributio…, Journal of pharmaceutical s… (2015) | popPK | 8 | [10.1002/jps.24378](https://doi.org/10.1002/jps.24378) | [25648999](https://pubmed.ncbi.nlm.nih.gov/25648999) | The study reports qualitative PK properties (bioavailability, linearity) for lobeglitazone in rats, but specific numeric disposition parameters (CL, V, t1/2) are not present in the provided text. |
-| `Lee_2018.pdf` | Lee SJ et al., Pharmacokinetics and bioequivalence of…, International journal of cl… (2018) | popPK | 8 | [10.5414/CP203134](https://doi.org/10.5414/CP203134) | [29932413](https://pubmed.ncbi.nlm.nih.gov/29932413) | The study reports quantitative non-compartmental PK parameters (AUC, Cmax) for lobeglitazone in humans, but does not explicitly list clearance (CL), volume (V), or half-life (t1/2) values in the provided text. |
-| `Park_2014.pdf` | Park MK et al., Tolerability and pharmacokinetics of lo…, Clinical drug investigation (2014) | popPK | 8 | [10.1007/s40261-014-0197-y](https://doi.org/10.1007/s40261-014-0197-y) | [24802657](https://pubmed.ncbi.nlm.nih.gov/24802657) | The study reports quantitative non-compartmental pharmacokinetic parameters (Cmax, AUC, Tmax) for lobeglitazone in humans, with specific numeric values provided in the abstract. |
-| `Park_2022.pdf` | Park J et al., Effects of Hepatic Impairment on the Ph…, Clinical pharmacology in dr… (2022) | popPK | 8 | [10.1002/cpdd.1045](https://doi.org/10.1002/cpdd.1045) | [35255191](https://pubmed.ncbi.nlm.nih.gov/35255191) | The study reports PK parameters for lobeglitazone in humans, but the evidence only provides Geometric Mean Ratios (GMRs) and CIs, not the absolute numeric values for clearance, volume, or half-life. |
-| `Yim_2017.pdf` | Yim CS et al., Specific Inhibition of the Distribution…, Drug metabolism and disposi… (2017) | popPK | 8 | [10.1124/dmd.116.074120](https://doi.org/10.1124/dmd.116.074120) | [28069721](https://pubmed.ncbi.nlm.nih.gov/28069721) | The study reports quantitative PK parameters (clearance and volume of distribution) for lobeglitazone in rats, with specific numeric values provided in the abstract. |
+| `Kim_2011.pdf` | Kim JW et al., Tolerability and pharmacokinetics of lo…, Clinical therapeutics (2011) | popPK | 8 | [10.1016/j.clinthera.2011.09.023](https://doi.org/10.1016/j.clinthera.2011.09.023) | [22047812](https://pubmed.ncbi.nlm.nih.gov/22047812) | The study is a relevant human PK trial for lobeglitazone, but the specific quantitative parameter values (e.g., CL, V, ka, t1/2) are not present in the provided text, only qualitative trends (dose proportionality, accumulation ratio). |
+| `Lee_2015.pdf` | Lee JH et al., Kinetics of the Absorption, Distributio…, Journal of pharmaceutical s… (2015) | popPK | 8 | [10.1002/jps.24378](https://doi.org/10.1002/jps.24378) | [25648999](https://pubmed.ncbi.nlm.nih.gov/25648999) | The paper reports ADME/PK parameters for lobeglitazone in rats, including bioavailability and distribution, but specific quantitative values for clearance, volume, or rate constants are not explicitly listed in the provided evidence text. |
+| `Lee_2015_2.pdf` | Lee JH et al., Gender differences in the hepatic elimi…, Biopharmaceutics & drug dis… (2015) | popPK | 8 | [10.1002/bdd.1954](https://doi.org/10.1002/bdd.1954) | [25899769](https://pubmed.ncbi.nlm.nih.gov/25899769) | The study reports quantitative PK parameters including AUC, in vitro half-life, and CLint for lobeglitazone in rats, with specific numeric values provided in the evidence. |
+| `Yim_2017.pdf` | Yim CS et al., Specific Inhibition of the Distribution…, Drug metabolism and disposi… (2017) | popPK | 8 | [10.1124/dmd.116.074120](https://doi.org/10.1124/dmd.116.074120) | [28069721](https://pubmed.ncbi.nlm.nih.gov/28069721) | The abstract explicitly reports numeric values for systemic clearance and volume of distribution for lobeglitazone in rats. |
+| `Kim_2015.pdf` | Kim CO et al., Pharmacokinetic Interaction Between Aml…, Clinical therapeutics (2015) | popPK | 6 | [10.1016/j.clinthera.2015.06.009](https://doi.org/10.1016/j.clinthera.2015.06.009) | [26163202](https://pubmed.ncbi.nlm.nih.gov/26163202) | The study is a PK interaction trial for lobeglitazone, but the evidence only contains geometric mean ratios of PK parameters; specific quantitative values for clearance, volume, or half-life are not provided in the text. |
+| `Kim_2019.pdf` | Kim SY et al., Pharmacokinetics of a Lobeglitazone/Met…, Clinical pharmacology in dr… (2019) | popPK | 5 | [10.1002/cpdd.625](https://doi.org/10.1002/cpdd.625) | [30329224](https://pubmed.ncbi.nlm.nih.gov/30329224) | The study is a PK study of lobeglitazone in humans, but the provided evidence only contains qualitative comparisons (ratios, percentages) and no specific numeric values for CL, V, t1/2, or ka. |
 | `Sil_2014.pdf` | Sil Oh E et al., Effect of ketoconazole on lobeglitazone…, Clinical therapeutics (2014) | pgx | 7 | [10.1016/j.clinthera.2014.05.064](https://doi.org/10.1016/j.clinthera.2014.05.064) | [25047497](https://www.ncbi.nlm.nih.gov/pubmed/25047497) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 
-<sub>queue written 2026-10-05T00:32:51.578496+00:00</sub>
+<sub>queue written 2026-10-14T23:51:02.454242+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Choi_2018 | irrelevant | 0 | 0 | The study focuses on the therapeutic efficacy of a targeted nanocarrier for atherosclerosis in mice and does not report pharmacokinetic disposition parameters (CL, V, etc.) for lobeglitazone. |
-| popPK | Choung_2018 | irrelevant | 0 | 0 | The study is a mechanistic investigation of hepatic lipid metabolism and gene expression in mice, reporting no pharmacokinetic parameters (CL, V, ka, etc.) for lobeglitazone. |
-| popPK | Dutta_2023 | irrelevant | 0 | 0 | The paper is a meta-analysis of efficacy and safety outcomes (HbA1c, lipids, adverse events) and does not report any pharmacokinetic parameters. |
-| popPK | Dutta_2023_2 | irrelevant | 0 | 0 | The paper is a meta-analysis of rivoglitazone efficacy and safety, not a pharmacokinetic study of lobeglitazone. |
-| popPK | Gunasinghe_2023 | irrelevant | 0 | 0 | The study is an in-silico computational analysis of lobeglitazone as a potential HPV inhibitor, reporting no pharmacokinetic parameters. |
-| popPK | Hadi_2025 | irrelevant | 0 | 0 | The study investigates the neuroprotective effects of rosiglitazone in rats and does not involve lobeglitazone or report any pharmacokinetic parameters. |
-| popPK | Han_2026 | irrelevant | 0 | 0 | The paper is a review of PPAR roles in pancreatic diseases and does not report pharmacokinetic parameters for lobeglitazone. |
-| popPK | Hong_2023 | irrelevant | 0 | 0 | The study is a clinical efficacy trial comparing glucose-lowering effects and body composition, reporting no pharmacokinetic parameters (CL, V, ka, etc.) for lobeglitazone. |
-| popPK | Jang_2018 | irrelevant | 0 | 0 | The paper is a structural biology study (X-ray crystallography) of PPARγ binding to lobeglitazone and does not report any pharmacokinetic parameters. |
-| popPK | Jang_2020 | irrelevant | 2 | 0 | The study is a drug-drug interaction trial reporting only geometric mean ratios and bioequivalence ranges, without providing absolute quantitative disposition parameters (CL, V, ka) for lobeglitazone. |
+| popPK | Choi_2018 | irrelevant | 0 | 0 | The study is a mechanistic and pharmacological investigation of targeted drug delivery and plaque reduction, reporting no quantitative pharmacokinetic disposition parameters (e.g., clearance, volume, half-life) for lobeglitazone. |
+| popPK | Choung_2018 | irrelevant | 1 | 0 | The study is a mechanistic investigation of lobeglitazone's effect on hepatic steatosis and gene expression in mice, reporting no quantitative pharmacokinetic parameters. |
+| popPK | Dutta_2023 | irrelevant | 0 | 0 | The paper is a clinical meta-analysis of efficacy and safety (HbA1c, lipids, AEs) and does not report pharmacokinetic parameters. |
+| popPK | Dutta_2023_2 | irrelevant | 0 | 0 | The paper is a meta-analysis regarding rivoglitazone and mentions lobeglitazone only for efficacy comparison, containing no pharmacokinetic data. |
+| popPK | Gunasinghe_2023 | irrelevant | 0 | 0 | The study is an in-silico docking and QSAR analysis of lobeglitazone as a potential HPV E1 inhibitor, not a pharmacokinetic study of lobeglitazone. |
+| popPK | Hadi_2025 | irrelevant | 0 | 0 | The study investigates rosiglitazone in rats and does not involve lobeglitazone. |
+| popPK | Han_2026 | irrelevant | 0 | 0 | The paper is a review of PPAR roles in pancreatic diseases and does not contain pharmacokinetic parameters for lobeglitazone. |
+| popPK | Hong_2023 | irrelevant | 0 | 0 | The paper is a clinical trial evaluating efficacy and safety (HbA1c, body composition) of lobeglitazone, containing no pharmacokinetic or population PK data. |
+| popPK | Jang_2018 | irrelevant | 0 | 0 | The paper is a structural biology study of PPARγ-ligand complexes and in vitro pharmacology, containing no pharmacokinetic disposition parameters for lobeglitazone. |
+| popPK | Jang_2020 | irrelevant | 1 | 0 | This is a bioequivalence study for drug-drug interaction that only reports ratio estimates (within 80-125%) and relative changes, without providing the absolute quantitative pharmacokinetic disposition parameters (such as CL, V, or ka) for lobeglitazone. |
 | popPK | Jin_2021 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on cancer cell migration and invasion, reporting no pharmacokinetic parameters for lobeglitazone. |
-| popPK | Joshi_2024 | irrelevant | 0 | 0 | The paper is a Phase III clinical efficacy and safety trial reporting HbA1c changes, not a pharmacokinetic study with disposition parameters. |
-| popPK | Jung_2015 | irrelevant | 2 | 0 | The study is a drug-drug interaction trial focused on warfarin, and while it mentions lobeglitazone PK was unaffected, it does not report quantitative disposition parameters (CL, V, etc.) for lobeglitazone in the provided evidence. |
+| popPK | Joshi_2024 | irrelevant | 0 | 0 | The paper is a Phase III efficacy/safety trial focused on HbA1c changes and does not report pharmacokinetic parameters or disposition data. |
+| popPK | Jung_2015 | irrelevant | 1 | 0 | The study evaluates the effect of warfarin on lobeglitazone's pharmacokinetics (stating it was unaffected) but does not report specific quantitative parameters (CL, V, ka) for lobeglitazone, focusing instead on warfarin ratios. |
 | PD | Jung_2015 | not_relevant | 0 | 0 | The study is a drug-drug interaction assessment comparing warfarin PK/PD with and without lobeglitazone; it does not report a concentration- or dose-response relationship for lobeglitazone itself, nor does it provide numeric PD parameters (e.g., Emax, EC50) for lobeglitazone. |
-| popPK | Kim_2011 | relevant | 10 | 2 | The study reports PK parameters for lobeglitazone in humans, but specific numeric values for clearance, volume, or half-life are not present in the provided text, only qualitative trends and accumulation ratios. |
-| popPK | Kim_2015 | irrelevant | 2 | 0 | The study reports only geometric mean ratios for Cmax and AUC, lacking absolute quantitative disposition parameters (CL, V, ka) or a compartmental model for lobeglitazone. |
-| popPK | Kim_2019 | relevant | 8 | 2 | The study reports PK parameters for lobeglitazone, but the evidence provided only contains qualitative comparisons and percentage changes (e.g., 32% decrease in Cmax) without specific numeric values for CL, V, or ka. |
-| popPK | Kim_2020 | irrelevant | 0 | 0 | The paper is a clinical efficacy and safety trial reporting HbA1c and metabolic syndrome outcomes, not a pharmacokinetic study with disposition parameters. |
-| popPK | Kim_2021 | irrelevant | 2 | 0 | The study is a drug-drug interaction trial reporting only relative ratios (Cmax,ss and AUCtau) for lobeglitazone, not absolute quantitative disposition parameters (CL, V, ka, t1/2). |
-| popPK | Kim_2022 | irrelevant | 0 | 0 | The paper is a real-world safety and efficacy study reporting clinical outcomes (HbA1c, adverse events) rather than pharmacokinetic parameters. |
-| popPK | Kim_2023 | irrelevant | 2 | 1 | The study reports only geometric mean ratios for drug interaction assessment and does not provide absolute quantitative disposition parameters (CL, V, ka) for lobeglitazone. |
-| popPK | Kim_2024 | irrelevant | 0 | 0 | The study focuses on the microbiome and efficacy of lobeglitazone in diabetic mice, not on its pharmacokinetic parameters. |
+| popPK | Kim_2011 | relevant | 8 | 2 | The study is a relevant human PK trial for lobeglitazone, but the specific quantitative parameter values (e.g., CL, V, ka, t1/2) are not present in the provided text, only qualitative trends (dose proportionality, accumulation ratio). |
+| popPK | Kim_2015 | relevant | 6 | 0 | The study is a PK interaction trial for lobeglitazone, but the evidence only contains geometric mean ratios of PK parameters; specific quantitative values for clearance, volume, or half-life are not provided in the text. |
+| popPK | Kim_2019 | relevant | 5 | 0 | The study is a PK study of lobeglitazone in humans, but the provided evidence only contains qualitative comparisons (ratios, percentages) and no specific numeric values for CL, V, t1/2, or ka. |
+| popPK | Kim_2020 | irrelevant | 0 | 0 | The paper is a clinical efficacy and safety trial reporting HbA1c and metabolic syndrome outcomes, containing no pharmacokinetic disposition parameters (CL, V, ka, etc.) for lobeglitazone. |
+| popPK | Kim_2021 | irrelevant | 4 | 1 | The study reports PK drug-drug interaction ratios (90% CIs) for lobeglitazone but does not provide the absolute quantitative disposition parameters (CL, V, t1/2, etc.) required for extraction. |
+| popPK | Kim_2022 | irrelevant | 0 | 0 | This is a real-world safety and efficacy study focusing on adverse events and HbA1c changes, with no pharmacokinetic parameters (CL, V, ka, t1/2) reported. |
+| popPK | Kim_2023 | irrelevant | 4 | 3 | The study reports steady-state PK interaction ratios (GMR) for lobeglitazone, not absolute population PK parameters (CL, V, Q) or detailed monotherapy disposition metrics required for population modeling. |
+| popPK | Kim_2024 | irrelevant | 0 | 0 | The study focuses on gut microbiota modulation and efficacy mechanisms in diabetic mice, reporting no pharmacokinetic parameters for lobeglitazone. |
 | PD | Kim_2024 | not_relevant | 1 | 0 | The paper is a mechanistic microbiome study in mice that qualitatively mentions reducing drug doses to IC50 levels but does not report any numeric PD parameters, concentration-effect curves, or PK/PD modeling for lobeglitazone. |
-| popPK | Kim_2026 | irrelevant | 0 | 0 | The study investigates the mechanism of fluid retention and vascular permeability in mice, not the pharmacokinetic disposition parameters of lobeglitazone. |
-| popPK | Lee_2015 | relevant | 8 | 2 | The study reports qualitative PK properties (bioavailability, linearity) for lobeglitazone in rats, but specific numeric disposition parameters (CL, V, t1/2) are not present in the provided text. |
-| PGx | Lee_2015 | not_relevant | 0 | 0 | The study reports standard pharmacokinetic properties in rats but does not investigate the impact of any gene variant or genotype on these parameters. |
-| popPK | Lee_2015_2 | relevant | 9 | 2 | The study reports quantitative PK parameters (AUC, CLint, half-life) for lobeglitazone in rats, but specific clearance (CL) and volume (V) values are not explicitly listed in the provided text. |
-| popPK | Lee_2015_3 | irrelevant | 2 | 1 | The study focuses on in vitro metabolite identification and in vivo metabolite formation rates (kinetics of M1 formation) rather than reporting standard quantitative disposition parameters (CL, V, ka, t1/2) for the parent drug lobeglitazone. |
-| popPK | Lee_2017 | irrelevant | 0 | 0 | The paper is a structural biology study (crystallography and docking) of PPARγ binding to lobeglitazone, reporting no pharmacokinetic parameters such as clearance, volume, or half-life. |
-| popPK | Lee_2023 | irrelevant | 0 | 0 | The study is a pharmacodynamic/metabolic efficacy study in mice and does not report any pharmacokinetic parameters (CL, V, ka, etc.) for lobeglitazone. |
-| popPK | Moon_2020 | irrelevant | 2 | 0 | The study reports only non-compartmental PK interaction ratios (Cmax,ss and AUC) and does not provide quantitative disposition parameters like clearance, volume, or half-life. |
-| popPK | Mudaliar_2024 | irrelevant | 0 | 0 | The paper describes a UV spectrophotometric method for quantifying lobeglitazone in bulk and tablets, not a pharmacokinetic study. |
-| popPK | Nuwormegbe_2022 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of lobeglitazone's antifibrotic effects on corneal fibroblasts and does not report any pharmacokinetic parameters. |
-| popPK | Park_2020 | irrelevant | 0 | 0 | The study is an in vitro imaging and therapeutic evaluation of a nanodrug formulation, not a pharmacokinetic study reporting disposition parameters for lobeglitazone. |
-| popPK | Park_2022 | relevant | 8 | 2 | The study reports PK parameters for lobeglitazone in humans, but the evidence only provides Geometric Mean Ratios (GMRs) and CIs, not the absolute numeric values for clearance, volume, or half-life. |
-| popPK | Patel_2024 | irrelevant | 0 | 0 | The paper is a review of analytical methodologies for thiazolidinediones and does not report pharmacokinetic parameters for lobeglitazone. |
-| popPK | Patel_2026 | irrelevant | 0 | 0 | The paper describes an analytical method (RP-HPLC) for quantifying drug concentrations in a formulation, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | Kim_2026 | irrelevant | 0 | 0 | This is a mechanistic study focusing on vascular permeability and fluid retention, reporting no pharmacokinetic disposition parameters (CL, V, ka, etc.). |
+| popPK | Lee_2015 | relevant | 8 | 4 | The paper reports ADME/PK parameters for lobeglitazone in rats, including bioavailability and distribution, but specific quantitative values for clearance, volume, or rate constants are not explicitly listed in the provided evidence text. |
+| PGx | Lee_2015 | not_relevant | 0 | 0 | The study describes preclinical pharmacokinetics in rats and does not report any human gene variants or genotypes affecting lobeglitazone. |
+| popPK | Lee_2015_3 | relevant | 4 | 2 | Study characterizes lobeglitazone metabolism in rats with limited quantitative kinetic data (M1 formation rate) but lacks full PK parameters (CL, V, t1/2). |
+| popPK | Lee_2017 | irrelevant | 0 | 0 | The paper is a structural biology study focusing on crystal structures and binding affinities of PPARγ with lobeglitazone, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | Lee_2018 | irrelevant | 3 | 3 | The study reports non-compartmental PK parameters (AUC, Cmax) for a bioequivalence assessment but does not provide the specific disposition parameters (CL, V, Q, ka, half-life) or a compartmental/population model required for extraction. |
+| popPK | Lee_2023 | irrelevant | 0 | 0 | The study is a metabolic efficacy trial in mice that does not report pharmacokinetic parameters (CL, V, T1/2) for lobeglitazone. |
+| popPK | Moon_2020 | irrelevant | 3 | 0 | The study provides geometric mean ratios for Cmax and AUC to assess drug-drug interaction, but does not report absolute quantitative disposition parameters (CL, V, ka, t1/2 with V, or compartmental PK model parameters) for lobeglitazone. |
+| popPK | Mudaliar_2024 | irrelevant | 0 | 0 | The paper describes an analytical chemistry method for quantifying drug concentration in bulk/tablets, not a pharmacokinetic study. |
+| popPK | Nuwormegbe_2022 | irrelevant | 0 | 0 | The study is a mechanistic investigation of lobeglitazone's antifibrotic effects on corneal fibroblasts in vitro and contains no pharmacokinetic data. |
+| popPK | Park_2014 | relevant | 4 | 8 | The study reports quantitative non-compartmental pharmacokinetic parameters (Cmax, AUC, tmax) for lobeglitazone in humans, though it does not explicitly report compartmental clearance, volume, or half-life. |
+| popPK | Park_2020 | irrelevant | 0 | 0 | The study is a mechanistic/cell-imaging investigation of nanodrug delivery to foam cells, not a pharmacokinetic study reporting quantitative disposition parameters (CL, V, t1/2) for lobeglitazone. |
+| popPK | Park_2022 | irrelevant | 3 | 2 | The study reports pharmacokinetic ratios (GMR) for lobeglitazone in hepatic impairment subjects rather than absolute quantitative disposition parameters like clearance (CL) or volume (V), and does not describe a population PK model. |
+| popPK | Patel_2024 | irrelevant | 0 | 0 | The paper is a review of analytical methodologies (chromatography, spectrometry) for thiazolidinediones, not a pharmacokinetic study, and contains no PK parameters. |
+| popPK | Patel_2026 | irrelevant | 0 | 0 | The paper describes an analytical method for quantification and stability testing, not a pharmacokinetic study. |
 | popPK | Rocha_2020 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study of PTP1B inhibition and does not report any pharmacokinetic parameters for lobeglitazone. |
-| popPK | Ryang_2022 | irrelevant | 0 | 0 | The study is a clinical efficacy trial focusing on glucose-lowering effects and safety, with no pharmacokinetic parameters reported. |
-| popPK | Shin_2012 | relevant | 4 | 5 | The study reports standard non-compartmental PK parameters (Cmax, AUC) for lobeglitazone in humans, but lacks specific disposition parameters like clearance (CL), volume (V), or half-life (t1/2) required for a full PK model. |
+| popPK | Ryang_2022 | irrelevant | 0 | 0 | This is a clinical efficacy and safety trial (REFIND study) focused on glucose-lowering effects, with no pharmacokinetic parameters reported. |
+| popPK | Shin_2012 | irrelevant | 4 | 2 | The study reports standard descriptive PK metrics (Cmax, AUC) for lobeglitazone but does not provide the specific disposition parameters required, such as clearance, volume of distribution, or half-life. |
 | popPK | Sil_2014 | irrelevant | 0 | 0 | no_text gate: only 77 chars of text extracted (&lt; 400) |
-| PGx | Sil_2014 | not_relevant | 0 | 0 | The paper investigates a drug-drug interaction (ketoconazole) rather than a pharmacogenomic effect (gene variant/genotype). |
-| popPK | Sohn_2018 | irrelevant | 0 | 0 | The study focuses on metabolic and thermogenic effects of lobeglitazone in mice and in vitro, reporting no pharmacokinetic parameters. |
-| popPK | Song_2021 | irrelevant | 0 | 0 | The study is a theranostic imaging and efficacy study in rabbits, not a pharmacokinetic study, and reports no quantitative disposition parameters for lobeglitazone. |
-| popPK | Yang_2026 | irrelevant | 0 | 0 | The study is a mechanistic transcriptomic and metabolomic analysis of hepatic steatosis in rats, reporting no pharmacokinetic parameters (CL, V, ka, etc.) for lobeglitazone. |
-| popPK | Zhang_2017 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on novel PPAR agonists where lobeglitazone is only mentioned as a reference compound, with no pharmacokinetic data reported. |
+| PGx | Sil_2014 | not_relevant | 0 | 0 | The study investigates a drug-drug interaction (ketoconazole) rather than a pharmacogenomic effect (gene variant/genotype). |
+| popPK | Sohn_2018 | irrelevant | 0 | 0 | The paper is a mechanistic/metabolic study on thermogenesis and insulin resistance in mice, lacking pharmacokinetic parameters such as clearance, volume of distribution, or half-life for lobeglitazone. |
+| popPK | Song_2021 | irrelevant | 0 | 0 | This is a theranostic study focused on the anti-inflammatory efficacy of a nanodrug formulation containing lobeglitazone, and it does not report any pharmacokinetic disposition parameters (CL, V, etc.) for the drug. |
+| popPK | Yang_2026 | irrelevant | 0 | 0 | The paper is a mechanistic study on transcriptomics and metabolomics (hepatic steatosis and pyruvate metabolism) in rats, and does not report quantitative pharmacokinetic parameters (CL, V, ka, etc.) for lobeglitazone. |
+| popPK | Zhang_2017 | irrelevant | 0 | 0 | The study is a medicinal chemistry paper reporting the design and in-vitro PPAR assays of new derivatives, with no pharmacokinetic data for lobeglitazone. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

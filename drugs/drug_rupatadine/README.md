@@ -41,8 +41,21 @@ Rupatadine is an antihistamine used to relieve symptoms of allergic conditions s
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Roquini_2024_Larval_motility](drugs/drug_rupatadine/pd_Roquini_2024_Larval_motility.md) | Larval motility ← rupatadine · direct sigmoid Emax (Hill) effect | — | Roquini DB et al., Antihistamines H, ACS omega (2024) | [10.1021/acsomega.4c04773](https://doi.org/10.1021/acsomega.4c04773) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Peña_2008_flare](drugs/drug_rupatadine/pd_Pe_a_2008_flare.md) | histamine-induced flare reaction ← rupatadine, desloratadine · indirect response — drug inhibits the production of histamine-induced flare reaction | — | Peña J et al., Antihistaminic effects of rupatadine an…, European journal of drug me… (2008) | [10.1007/BF03191027](https://doi.org/10.1007/BF03191027) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Roquini_2024_Larval_motility](drugs/drug_rupatadine/pd_Roquini_2024_Larval_motility.md) | Larval motility ← rupatadine · direct sigmoid Emax (Hill) effect | — | Roquini DB et al., Antihistamines H, ACS omega (2024) | [10.1021/acsomega.4c04773](https://doi.org/10.1021/acsomega.4c04773) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> | [Peña_2008_flare](drugs/drug_rupatadine/pd_Pe_a_2008_flare.md) | histamine-induced flare reaction ← rupatadine, desloratadine · indirect response — drug inhibits the production of histamine-induced flare reaction | — | Peña J et al., Antihistaminic effects of rupatadine an…, European journal of drug me… (2008) | [10.1007/BF03191027](https://doi.org/10.1007/BF03191027) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=rupatadine).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
+| metabolism | liver | `CYP2C19` substrate, `CYP2C9` substrate, `CYP2D6` substrate, `CYP3A4` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: HRH1 (target), PTAFR (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

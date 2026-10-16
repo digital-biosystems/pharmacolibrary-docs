@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;ipilimumab&quot;,&quot;href&quot;:&quot;drugs/drug_ipilimumab/&quot;},{&quot;label&quot;:&quot;Sanghavi_2020 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ipilimumab_Hu2024_reference&quot;,&quot;label&quot;:&quot;Hu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ipilimumab/Ipilimumab_Hu2024_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ipilimumab_Leven2019_reference&quot;,&quot;label&quot;:&quot;Leven_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ipilimumab/Ipilimumab_Leven2019_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ipilimumab_Shang2022_reference&quot;,&quot;label&quot;:&quot;Shang_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ipilimumab/Ipilimumab_Shang2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ipilimumab_van2019_reference&quot;,&quot;label&quot;:&quot;van_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ipilimumab/Ipilimumab_van2019_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ipilimumab_Sanghavi2020_reference&quot;,&quot;label&quot;:&quot;Sanghavi_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ipilimumab/Ipilimumab_Sanghavi2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Ipilimumab_van2019_reference&quot;,&quot;label&quot;:&quot;van_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ipilimumab/Ipilimumab_van2019_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ipilimumab_Shang2022_reference&quot;,&quot;label&quot;:&quot;Shang_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ipilimumab/Ipilimumab_Shang2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ipilimumab — `Ipilimumab_Sanghavi2020_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.727). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.727). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -13,13 +13,13 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 ### Reviewer guidance
 
-**V and CL_ratio have no unit.**
+**Every check that could be run on this record passed.**
 
-Without a unit the value cannot be converted, so the model cannot use it. Extracted — ipilimumab: CL 14.1 mL/hour, V1 3.95 L, Q 27.9 mL/hour, V2 3.18 L, allometric_exponent 0.694, V 0.6, t1/2z 2.54e+03 hour, CL_ratio 0.095.
+A reported unit could not be converted (equation variable and allometric_exponent), so that value has no SI equivalent.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of clbbwt: this record has 0.694, the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -29,27 +29,17 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 Sanghavi K et al., Population Pharmacokinetics of Ipilimum…, CPT: pharmacometrics & syst… (2020)
   ·  DOI: [10.1002/psp4.12477](https://doi.org/10.1002/psp4.12477)
 
-<div class="pk-model-meta" hidden drug="ipilimumab" model-id="Ipilimumab_Sanghavi2020_reference" status="needs_review" stale="false" population="patients with advanced solid tumors receiving ipilimumab alone or with nivolumab" measured-compound="ipilimumab" parameterization="mechanistic" topology="3C"></div>
+<div class="pk-model-meta" hidden drug="ipilimumab" model-id="Ipilimumab_Sanghavi2020_reference" status="curated_candidate" stale="false" population="adults with advanced solid tumors" measured-compound="ipilimumab" parameterization="mechanistic" topology="1C"></div>
 
-**Model structure:** 3-compartment; no model was built for this record.  
-**Parameters:** 8 extracted.
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL0REF (mL/hour) | `Q22` · CL | 14.1 | mL/hour | 3.916666666666666e-09 | [ml] / [h] | 0.231 | llm (0.6) | psp412477-tbl-0002:row2:col1, psp412477-tbl-0002:row2:col2, psp412477-tbl-0002:row2:col3 | — | not captured |
-| VCREF (L) | `Q63` · V1 | 3.95 | L | 0.00395 | [l] | 0.0255 | llm (0.6) | psp412477-tbl-0002:row3:col1, psp412477-tbl-0002:row3:col2, psp412477-tbl-0002:row3:col3 | — | not captured |
-| Q REF (mL/hour) | `Q30` · Q | 27.9 | mL/hour | 7.75e-09 | [ml] / [h] | 2.22 | llm (0.6) | psp412477-tbl-0002:row4:col1, psp412477-tbl-0002:row4:col2, psp412477-tbl-0002:row4:col3 | — | not captured |
-| VPREF (L) | `Q64` · V2 | 3.18 | L | 0.00318 | [l] | 0.0802 | llm (0.6) | psp412477-tbl-0002:row5:col1, psp412477-tbl-0002:row5:col2, psp412477-tbl-0002:row5:col3 | — | not captured |
-| CLBBWT | `Q319` · allometric_exponent | 0.694 | not captured | not captured | not captured | 0.0315 | llm (0.6) | psp412477-tbl-0002:row6:col1, psp412477-tbl-0002:row6:col2, psp412477-tbl-0002:row6:col3, psp412477-tbl-0002:footnote | — | not captured |
-| V BBWT | `Q61` · V | 0.600 | not captured | not captured | not captured | 0.0293 | llm (0.6) | psp412477-tbl-0002:row7:col1, psp412477-tbl-0002:row7:col2, psp412477-tbl-0002:row7:col3 | — | not captured |
-| CLlog−BLDH | `Q900` · equation variable | 0.703 | not captured | not captured | not captured | 0.0716 | llm (0.6) | psp412477-tbl-0002:row8:col1, psp412477-tbl-0002:row8:col2, psp412477-tbl-0002:row8:col3 | — | not captured |
-| T 50 (hour) | `Q57` · t1/2z | 2540 | hour | 9144000.0 | [h] | 86.5 | llm (0.6) | psp412477-tbl-0002:row10:col1, psp412477-tbl-0002:row10:col2, psp412477-tbl-0002:row10:col3 | — | not captured |
-| CLN1Q3W | `Q31` · CL_ratio | 0.0950 | not captured | not captured | not captured | 0.0149 | llm (0.6) | psp412477-tbl-0002:row13:col1, psp412477-tbl-0002:row13:col2, psp412477-tbl-0002:row13:col3, psp412477-tbl-0002:footnote | — | not captured |
+| Day 21 | `Q900` · equation variable | 10.9 | µg/mL | not captured | [µg] / [ml] | not captured | llm (0.6) | Sanghavi_2020_table_4:row1:col4 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -59,28 +49,35 @@ Sanghavi K et al., Population Pharmacokinetics of Ipilimum…, CPT: pharmacometr
 ## Departures & gaps
 
 **Interpretation flags:**
+- dropped unlinked row (NIL): 'Day 1' — extend the ontology if this is a real PK parameter (source ['Sanghavi_2020_table_4:row0:col4'])
+- dropped unlinked row (NIL): 'Day 84' — extend the ontology if this is a real PK parameter (source ['Sanghavi_2020_table_4:row2:col4'])
+- dropped duplicate Q900 ('Day 105', value '9.8') — already have one for this compound
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=ipilimumab
+- population split: 'median (minimum, maximum), µg/ml' subgroup of Sanghavi_2020 (paper reports 3 populations: geometric mean, µg/ml, mean, µg/ml, median (minimum, maximum), µg/ml)
+- molar mass: none found for 'ipilimumab' — its concentrations stay mass-only
+- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 - table section residual_error: 'Proportional (‐)' routed out of structural estimates ('Residual error')
 - table section residual_error: 'Additive (μg/mL)' routed out of structural estimates ('Residual error')
-- dropped PD-category row 'EmaxREF' → Q320 (Emax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['psp412477-tbl-0002:row9:col1', 'psp412477-tbl-0002:row9:col2'])
-- dropped PD-category row 'HILL' → Q325 (Hill, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['psp412477-tbl-0002:row11:col1', 'psp412477-tbl-0002:row11:col2', 'psp412477-tbl-0002:row11:col3'])
-- dropped duplicate Q900 ('CLSCLC', value '-0.124') — already have one for this compound
-- dropped duplicate Q900 ('CLN3Q2W', value '0.191') — already have one for this compound
+- dropped duplicate Q22 ('CLBBWT', value '0.694') — already have one for this compound
+- dropped duplicate Q22 ('CLlog−BLDH', value '0.703') — already have one for this compound
+- dropped duplicate Q900 ('EmaxREF', value '-0.0644') — already have one for this compound
+- dropped PD-category row 'HILL' → Q325 (Hill, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['psp412477-tbl-0002:row11:col1'])
+- dropped duplicate Q22 ('CLSCLC', value '-0.124') — already have one for this compound
+- dropped duplicate Q900 ('CLN1Q3W', value '0.0950') — already have one for this compound
+- dropped unlinked row (NIL): 'CLN3Q2W' — extend the ontology if this is a real PK parameter (source ['psp412477-tbl-0002:row14:col1'])
 - dropped duplicate Q900 ('CLLINE', value '-0.0949') — already have one for this compound
-- dropped PD-category row 'EmaxCOMBO' → Q320 (Emax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['psp412477-tbl-0002:row16:col1', 'psp412477-tbl-0002:row16:col2', 'psp412477-tbl-0002:footnote'])
-- dropped value-less row: 'CLlog - BLDH'
-- dropped value-less row: 'VCBBWT'
-- implicit units: 'V BBWT' — the LLM proposed 'dimensionless', whose dimension does not fit Q61; left unset
-- implicit units: 'CLN1Q3W' — the LLM proposed 'dimensionless', whose dimension does not fit Q31; left unset
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=ipilimumab
-- structure disagreement: deterministic 3C vs LLM 2C — review compartment count
-- molar mass: none found for 'ipilimumab' — its concentrations stay mass-only
+- dropped PD-category row 'EmaxCOMBO' → Q320 (Emax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['psp412477-tbl-0002:row16:col1'])
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- base model from table(s) without population columns (psp412477-tbl-0002); populations geometric mean, µg/ml, mean, µg/ml, median (minimum, maximum), µg/ml kept as separate records
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- unparsed cell psp412477-tbl-0002:row9:col3 = '−0.12 to 0.002'
-- unparsed cell psp412477-tbl-0002:row12:col3 = '−0.19 to −0.06'
-- unparsed cell psp412477-tbl-0002:row15:col3 = '−0.12 to −0.06'
-- unparsed cell psp412477-tbl-0002:row16:col3 = '−0.27 to −0.14'
-- LLM selected parameter table(s) 2
+- table psp412477-tbl-0002: unbound_uncertainty
+- table psp412477-tbl-0002: ambiguous_numeric_format
+- table psp412477-tbl-0002: unparsed_numeric_cell
+- table Sanghavi_2020_table_4: unbound_uncertainty
+- companion parameter table 4 transcribed (24 record(s))
+- LLM selected parameter table(s) 2, 4
 
 ## Validation
 
@@ -114,21 +111,20 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 8 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp412477-tbl-0002:row2:col1', 'psp412477-tbl-0002:row2:col2', 'psp412477-tbl-0002:row2:col3'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp412477-tbl-0002:row4:col1', 'psp412477-tbl-0002:row4:col2', 'psp412477-tbl-0002:row4:col3'] |
-| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['psp412477-tbl-0002:row10:col1', 'psp412477-tbl-0002:row10:col2', 'psp412477-tbl-0002:row10:col3'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp412477-tbl-0002:row3:col1', 'psp412477-tbl-0002:row3:col2', 'psp412477-tbl-0002:row3:col3'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp412477-tbl-0002:row5:col1', 'psp412477-tbl-0002:row5:col2', 'psp412477-tbl-0002:row5:col3'] |
-| C5_unit_missing_Q31 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp412477-tbl-0002:row13:col1', 'psp412477-tbl-0002:row13:col2', 'psp412477-tbl-0002:row13:col3', 'psp412477-tbl-0002:footnote'] |
-| C5_unit_missing_Q61 | fail | [length] ** 3 | not captured | not captured | not captured | ['psp412477-tbl-0002:row7:col1', 'psp412477-tbl-0002:row7:col2', 'psp412477-tbl-0002:row7:col3'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 14.1 | not captured | not captured | ['psp412477-tbl-0002:row2:col1', 'psp412477-tbl-0002:row2:col2', 'psp412477-tbl-0002:row2:col3'] |
+| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
+| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.0141 L/h | not captured | not captured | ['psp412477-tbl-0002:row2:col1', 'psp412477-tbl-0002:row2:col2', 'psp412477-tbl-0002:row2:col3'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 3.95 L | not captured | not captured | ['psp412477-tbl-0002:row3:col1', 'psp412477-tbl-0002:row3:col2', 'psp412477-tbl-0002:row3:col3'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 3.18 L | not captured | not captured | ['psp412477-tbl-0002:row5:col1', 'psp412477-tbl-0002:row5:col2', 'psp412477-tbl-0002:row5:col3'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_output_variable | not captured | pass | C_central (measured=ipilimumab) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -137,7 +133,10 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ipilimumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Sanghavi_2020` / `Sanghavi_2020::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ipilimumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Sanghavi_2020` / `Sanghavi_2020::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ipilimumab/models/modelica/Ipilimumab_Sanghavi2020_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ipilimumab/models/modelica/Ipilimumab_Sanghavi2020_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ipilimumab/models/modelica/Ipilimumab_Sanghavi2020_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -147,20 +146,24 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
 <p>No model archives available.</p>
-</div></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_ipilimumab/Ipilimumab_Sanghavi2020_reference/Ipilimumab_Sanghavi2020_reference.svg" alt="Ipilimumab_Sanghavi2020_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+**Administration: intravenous** — 70 mg infusion over 10 min, single dose. Doses in the paper: 70, 210 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_ipilimumab/Ipilimumab_Sanghavi2020_reference/Ipilimumab_Sanghavi2020_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_ipilimumab/Ipilimumab_Sanghavi2020_reference/Ipilimumab_Sanghavi2020_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C` · parameters `Ipilimumab_Sanghavi2020_reference_params.json` · controls `Ipilimumab_Sanghavi2020_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 12:50 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 19:35 UTC</sub>

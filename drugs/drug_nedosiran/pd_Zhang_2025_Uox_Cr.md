@@ -17,7 +17,7 @@
 
 **Model:** No model was generated from this record.
 
-> Nedosiran plasma concentrations drive a sigmoidal maximum inhibitory effect on the production of the spot urine oxalate-to-creatinine ratio (Uox/Cr) via an indirect response model with an effect compartment, utilizing an Imax of 0.687, IC50 of 1.68 ng/mL, kout of 0.338 1/wk, and gamma of 2.56. The paper specifies that the drug effect inhibits the production of Uox/Cr to account for its fast elimination from plasma.
+> Nedosiran plasma concentrations drive an effect compartment that inhibits the production of the spot urine oxalate-to-creatinine ratio (Uox/Cr) via a sigmoidal Imax model. The key parameters are Imax 0.687, IC50 1.68 ng/mL, gamma 2.56, and Kout 0.338 1/wk.
 >
 > <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
@@ -34,12 +34,13 @@ Zhang S et al., Population Pharmacokinetic and Pharmaco…, Clinical pharmacokin
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | Kout | `Q328` · not captured | 0.338 | 1/wk | not captured | llm (not captured) | Zhang_2025:pdv3 |
-| PD (effect) | BSL | `Q324` · not captured | 264 | mmol/mol | not captured | llm (not captured) | Zhang_2025:pdv3 |
 | PD (effect) | Imax | `Q323` · not captured | 0.687 | not captured | not captured | llm (not captured) | Zhang_2025:pdv3 |
 | PD (effect) | IC50 | `Q322` · not captured | 1.68 | ng/mL | not captured | llm (not captured) | Zhang_2025:pdv3 |
 | PD (effect) | Gamma | `Q325` · not captured | 2.56 | not captured | not captured | llm (not captured) | Zhang_2025:pdv3 |
+| PD (effect) | BSL | `Q324` · not captured | 264 | mmol/mol | not captured | llm (not captured) | Zhang_2025:pdv3 |
+| PD (effect) | Kout | `Q328` · not captured | 0.338 | 1/wk | not captured | llm (not captured) | Zhang_2025:pdv3 |
 | PD (effect) | Lambda | `Q326` · not captured | 21.9 | week | not captured | llm (not captured) | Zhang_2025:pdv3 |
+| model term | AGE.BSL | `Q900` · not captured | −0.450 | not captured | not captured | llm (not captured) | Zhang_2025:pdv3 |
 | variability | IC50.IIV | `Q312` · not captured | 85.2 | % | not captured | llm (not captured) | Zhang_2025:pdv3 |
 
 <details class="legend">

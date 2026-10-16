@@ -17,13 +17,13 @@
 
 ### Reviewer guidance
 
-**Melagatran's clearance, volume, absorption rate, and lag time lacked extracted values, so placeholders were used and the model was quarantined.**
+**No value for melagatran's clearance, volume of distribution, absorption rate constant and absorption lag time; t6_deviations.**
 
-The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. The model builder defaulted melagatran's clearance, volume of distribution, absorption rate constant, and absorption lag time because they were not explicitly extracted. A second reader disagreed on the specific parameter labels for the extracted values of 27.3 L/h, 176 L, and 21%. Extracted — melagatran: CLm/F 27.3 L/h, Vm/F 176 L, IIV 21 %.
+The model was built, but melagatran's clearance, volume of distribution, absorption rate constant and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — melagatran: CLm/F 27.3 L/h, Vm/F 176 L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of clearance after oral administration: this record has none, the second reading 27.3; it also differs on 5 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 > **Dose compound ≠ measured compound:** dosed `ximelagatran`, measured `melagatran`.
 
@@ -34,7 +34,7 @@ Cullberg M et al., Pharmacokinetics of ximelagatran and re…, Clinical pharmaco
 <div class="pk-model-meta" hidden drug="melagatran" model-id="Melagatran_Cullberg2005_reference" status="model_quarantined" stale="false" population="patients with acute deep vein thrombosis" measured-compound="melagatran" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 3 extracted.
+**Parameters:** 2 extracted.
 
 **Parameterization:** CLm/F, Vm/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -43,9 +43,8 @@ Cullberg M et al., Pharmacokinetics of ximelagatran and re…, Clinical pharmaco
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Clearance after oral administration (population mean | `Q351` · CLm/F | 27.3 | L/h | 7.583333333333333e-06 | [l] / [h] | not captured | llm_confirmed (0.6) | Cullberg_2005:abstract | — | not captured |
-| volume of distribution (population mean | `Q367` · Vm/F | 176 | L | 0.176 | [l] | not captured | llm_confirmed (0.6) | Cullberg_2005:abstract | — | not captured |
-| Unexplained interpatient variability values in bioavailability | `Q312` · IIV | 21 | % | not captured | not captured | not captured | llm_corrected (0.6) | Cullberg_2005:abstract | — | not captured |
+| Clearance after oral administration | `Q351` · CLm/F | 27.3 | L/h | 7.583333333333333e-06 | [l] / [h] | not captured | llm_confirmed (0.6) | Cullberg_2005:abstract | — | not captured |
+| volume of distribution | `Q367` · Vm/F | 176 | L | 0.176 | [l] | not captured | exact (1.0) | Cullberg_2005:abstract | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -55,14 +54,12 @@ Cullberg M et al., Pharmacokinetics of ximelagatran and re…, Clinical pharmaco
 ## Departures & gaps
 
 **Interpretation flags:**
-- routed 'Unexplained interpatient variability values in total plasma clearance' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
+- routed 'Unexplained interpatient variability' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
 - metabolite melagatran: Q22→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
 - metabolite melagatran: Q61→Q367 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=melagatran
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- template fit: none — noncompartmental model — not a compartmental parent–metabolite model
-- status held at route_to_review — not promoted
-- row roles (LLM): model_class=noncompartmental; 4/4 row label(s) assigned, 2 linked by role; re-tagged melagatran→parent ×4
+- template fit: PK_3M_9C — formed from central; parent 1, metabolites [0]
+- row roles (LLM): model_class=compartmental; 3/3 row label(s) assigned, 2 linked by role; re-tagged melagatran→parent ×2
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 
 **Extraction notes:**
@@ -100,7 +97,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q351 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Cullberg_2005:abstract'] |
@@ -126,9 +123,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_melagatran/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Cullberg_2005` / `Cullberg_2005::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_melagatran/models/modelica/_needs_review/Melagatran_Cullberg2005_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_melagatran/models/modelica/_needs_review/Melagatran_Cullberg2005_reference.deviation.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_melagatran/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Cullberg_2005` / `Cullberg_2005::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_melagatran/models/modelica/_needs_review/Melagatran_Cullberg2005_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_melagatran/models/modelica/_needs_review/Melagatran_Cullberg2005_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -154,4 +151,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 14:56 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 21:14 UTC</sub>

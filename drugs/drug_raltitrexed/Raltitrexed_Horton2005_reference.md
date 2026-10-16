@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;raltitrexed&quot;,&quot;href&quot;:&quot;drugs/drug_raltitrexed/&quot;},{&quot;label&quot;:&quot;Horton_2005 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Raltitrexed_Blair2004_model_validation&quot;,&quot;label&quot;:&quot;Blair_2004_model_validation&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_raltitrexed/Raltitrexed_Blair2004_model_validation.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Raltitrexed_Blair2004_total_cohort&quot;,&quot;label&quot;:&quot;Blair_2004_total_cohort&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_raltitrexed/Raltitrexed_Blair2004_total_cohort.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Raltitrexed_Blair2004_basic_model&quot;,&quot;label&quot;:&quot;Blair_2004_basic_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_raltitrexed/Raltitrexed_Blair2004_basic_model.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Raltitrexed_Blair2004_full&quot;,&quot;label&quot;:&quot;Blair_2004_full&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_raltitrexed/Raltitrexed_Blair2004_full.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,9 +17,9 @@
 
 ### Reviewer guidance
 
-**CL has no unit; the clearance plausibility check could not be computed.**
+**Only clearance was extracted — no volume; cL has no unit (+1 more).**
 
-Without a unit the value cannot be converted, so the model cannot use it. The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — raltitrexed: CL 139 mL/min/m(2), V 2.4 L, t1/2α 6 minutes, t1/2β 45 minutes.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — raltitrexed: CL 139 mL/min/m(2) (8.3 L/h/m(2)), t1/2α 6 minutes, t1/2β 45 minutes.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has raltitrexed, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -32,7 +32,7 @@ Horton TM et al., Phase I trial and pharmacokinetic study…, Clinical cancer re
 <div class="pk-model-meta" hidden drug="raltitrexed" model-id="Raltitrexed_Horton2005_reference" status="needs_review" stale="false" population="children with recurrent or refractory leukemia" measured-compound="raltitrexed" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 4 extracted.
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -41,10 +41,9 @@ Horton TM et al., Phase I trial and pharmacokinetic study…, Clinical cancer re
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| clearance | `Q22` · CL | 139 | mL/min/m(2) | not captured | [ml] / [[min] · [m2]] | not captured | exact (1.0) | Horton_2005:abstract, Horton_2005:abstract | — | not captured |
-| volume of distribution | `Q61` · V | 2.4 | L | 0.0024 | [l] | not captured | exact (1.0) | Horton_2005:abstract | — | not captured |
-| initial half-life (t(1/2alpha)) | `Q59` · t1/2α | 6 | minutes | 360.0 | [min] | not captured | llm (0.6) | Horton_2005:abstract | — | not captured |
-| terminal half-life (t(1/2beta)) | `Q60` · t1/2β | 45 | minutes | 2700.0 | [min] | not captured | llm (0.6) | Horton_2005:abstract | — | not captured |
+| a clearance | `Q22` · CL | 139 | mL/min/m(2) (8.3 L/h/m(2)) | not captured | [ml] / [[min] · [h] · [8.3l] · [m2]^2] | not captured | llm_confirmed (0.6) | Horton_2005:abstract | — | not captured |
+| an initial half-life (t(1/2alpha)) | `Q59` · t1/2α | 6 | minutes | 360.0 | [min] | not captured | llm (0.6) | Horton_2005:abstract | — | not captured |
+| a terminal half-life (t(1/2beta)) | `Q60` · t1/2β | 45 | minutes | 2700.0 | [min] | not captured | llm (0.6) | Horton_2005:abstract | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -54,7 +53,8 @@ Horton TM et al., Phase I trial and pharmacokinetic study…, Clinical cancer re
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_unknown: 'mL/min/m(2)' (CL)
+- unit_dimension_unknown: 'mL/min/m(2) (8.3 L/h/m(2))' (CL)
+- dropped value-less row: 'a 2.4-L volume of distribution'
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=raltitrexed
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
@@ -62,7 +62,7 @@ Horton TM et al., Phase I trial and pharmacokinetic study…, Clinical cancer re
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Horton_2005_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Horton_2005_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -100,16 +100,14 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q59 | pass | [time] | not captured | not captured | not captured | ['Horton_2005:abstract'] |
 | C5_dimension_Q60 | pass | [time] | not captured | not captured | not captured | ['Horton_2005:abstract'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Horton_2005:abstract'] |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | mL/min/m(2) | not captured | not captured | ['Horton_2005:abstract', 'Horton_2005:abstract'] |
-| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 139.0 | not captured | not captured | ['Horton_2005:abstract', 'Horton_2005:abstract'] |
+| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | mL/min/m(2) (8.3 L/h/m(2)) | not captured | not captured | ['Horton_2005:abstract'] |
+| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 139.0 | not captured | not captured | ['Horton_2005:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q61 | pass | volume within physiological range | 2.4 L | not captured | not captured | ['Horton_2005:abstract'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -118,7 +116,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_raltitrexed/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Horton_2005` / `Horton_2005::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_raltitrexed/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Horton_2005` / `Horton_2005::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -144,4 +142,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 17:17 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 21:49 UTC</sub>

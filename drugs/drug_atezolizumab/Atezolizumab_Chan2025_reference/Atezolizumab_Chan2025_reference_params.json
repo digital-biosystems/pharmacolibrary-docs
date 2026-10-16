@@ -1,0 +1,36 @@
+{
+ "dose_source": "paper",
+ "model_id": "Atezolizumab_Chan2025_reference",
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  1200.0,
+  1800.0,
+  1875.0
+ ],
+ "parameters": {
+  "Cl": 2.3148148148148148e-09,
+  "F": 0.9,
+  "Tlag": 0.0,
+  "VdPerKg": 4.685714285714286e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0012,
+  "k12": 1.9266598915989162e-06,
+  "k21": 1.740893786348332e-06,
+  "ka": 3.5185185185185183e-06,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 1308985.9719438879
+ },
+ "reference_peaks": {
+  "central.C": 0.014160044077669095
+ },
+ "stop_time": 6048000.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

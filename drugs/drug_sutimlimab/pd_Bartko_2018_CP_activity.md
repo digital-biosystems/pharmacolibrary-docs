@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;sutimlimab&quot;,&quot;href&quot;:&quot;drugs/drug_sutimlimab/&quot;},{&quot;label&quot;:&quot;Bartko_2018 \u00b7 PD CP activity&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;sutimlimab&quot;,&quot;href&quot;:&quot;drugs/drug_sutimlimab/&quot;},{&quot;label&quot;:&quot;Bartko_2018 \u00b7 PD classical complement pathway activity&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# CP activity — PD  <span class="pk-badge pk-badge--green">extracted</span>
+# classical complement pathway activity — PD  <span class="pk-badge pk-badge--orange">needs review</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -13,19 +13,19 @@
 
 ## Record summary
 
-**As extracted:** Sutimlimab (measured concentrations) drives CP activity: direct sigmoid Emax (Hill) effect.
+**As extracted:** Sutimlimab (concentrations from this paper's PK model) drives classical complement pathway activity (in %): direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
 
-> Sutimlimab serum concentrations directly inhibit complement (CP) activity via a sigmoidal Emax model without an effect compartment delay, with a maximum inhibition (Imax) of 90.2% and an IC50 of 6.2 μg/mL. The steep concentration-response relationship is characterized by a Hill parameter of 2.4, and the paper notes that no delay was observed in CP activity knockdown.
+> Sutimlimab concentrations (μg/mL) directly inhibit classical complement pathway activity (%) via an inhibitory Emax model, as serum concentrations were time-matched to CP activity with no observed delay. The model parameters are an Imax of 90.2%, an IC50 of 6.2 μg/mL, and a Hill parameter of 2.4.
 >
 > <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Bartko_2018`
 - **model family:** `sigmoid_emax`
-- **driver:** `conc_no_pk`
+- **driver:** `pk_record`
 - **tier:** population
-- **effect:** inhibition/proportional
+- **effect:** inhibition/additive
 
 ## Citation
 Bartko J et al., A Randomized, First-in-Human, Healthy V…, Clinical pharmacology and t… (2018)
@@ -34,7 +34,7 @@ Bartko J et al., A Randomized, First-in-Human, Healthy V…, Clinical pharmacolo
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | Imax | `Q323` · not captured | 90.2% | not captured | not captured | llm (not captured) | Bartko_2018:pdv3 |
+| PD (effect) | Imax | `Q323` · not captured | 90.2 | % | not captured | llm (not captured) | Bartko_2018:pdv3 |
 | PD (effect) | IC50 | `Q322` · not captured | 6.2 | μg/mL | not captured | llm (not captured) | Bartko_2018:pdv3 |
 | PD (effect) | Hill parameter | `Q325` · not captured | 2.4 | not captured | not captured | llm (not captured) | Bartko_2018:pdv3 |
 

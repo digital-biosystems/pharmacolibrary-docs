@@ -4,7 +4,7 @@
 
 # omalizumab — `Omalizumab_Li2022_predominantly_caucasian_subjects`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.571). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.643). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -20,7 +20,7 @@
 
 The parameter for faster clearance of free omalizumab is listed as 29 percent. This unit is not a standard volumetric clearance unit and could not be converted to standard SI units. Consequently, the parameter lacks a usable value for pharmacokinetic modeling, resulting in rejection. Extracted — omalizumab: Cmax 15.9 µg/mL, AUClast 594 d*µg/mL, AUC∞ 659 d*µg/mL, t1/2z 23.8 days, Cmin 6.64 ng/mL, CL 29 %, kabs 0.92 1/day, tlag 0.06 day.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has omalizumab → free ige (interconversion), the second reading omalizumab → free ige (interconversion); omalizumab → total ige (interconversion); it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of % decrease of free ige at t max: this record has none, the second reading 490; it also differs on 4 more fields. That field does not shape the model.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -74,21 +74,20 @@ Li J et al., Efficacy and safety of omalizumab in pa…, Asian Pacific journal o
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.571 (8/14 fields) | 6 |
+| `gpt-oss-120b` | partly confirmed | 0.643 (9/14 fields) | 5 |
 
-<details><summary>6 field discrepancies</summary>
+<details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.links` | [['omalizumab', 'free ige', 'interconversion']] | [['omalizumab', 'free ige', 'interconversion'], ['omalizumab', 'total ige', 'interconversion']] | mismatch |
 | `gpt-oss-120b` | `parameters[% decrease of free ige at t max]` | not captured | 490 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[% decrease of free ige at t min]` | not captured | 94.9 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[absorption rate]` | 0.92 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance of free omalizumab]` | not captured | 29 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[faster clearance of free omalizumab]` | 29 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[lag time]` | 0.06 | not captured | only_one_extracted |
 
@@ -125,7 +124,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_omalizumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Li_2022` / `Li_2022::predominantly_caucasian_subjects`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_omalizumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Li_2022` / `Li_2022::predominantly_caucasian_subjects`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

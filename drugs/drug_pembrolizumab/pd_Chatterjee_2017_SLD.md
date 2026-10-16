@@ -13,17 +13,17 @@
 
 ## Record summary
 
-**As extracted:** Pembrolizumab (concentrations from the PK model of Freshwater_2017::dose_regimen) drives tumor size (in mm): disease-progression model.
+**As extracted:** Pembrolizumab AUCss-6weeks (the dose) drives tumor size (in mm): disease-progression model.
 
 **Model:** No model was generated from this record.
 
-> The paper describes a disease progression model where pembrolizumab exposure does not significantly predict tumor size response, indicating the evaluated dose range (2 and 10 mg/kg every 3 weeks) is near the plateau of maximal response. The model characterizes tumor dynamics using a growth rate (kgrowth) and a shrinkage rate (kdeath) for the responsive fraction of the tumor, but does not provide specific potency values (e.g., IC50, Emax) or a direct mechanism linking drug concentration to these rates.
+> The paper describes a disease progression model where tumor size (SLD in mm) changes via a combination of baseline exponential growth and a drug-dependent shrinkage term (kdeath) with a delay, but explicitly states that pembrolizumab exposure was not a significant predictor of this response. The record lists a parameter KD (3.57 × 10⁻³/day) and baseline tumor sizes (56.3 mm and 25.1 mm), but the paper does not provide a mechanism or potency value (such as IC50 or Emax) linking drug concentration to the inhibition of tumor growth.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Chatterjee_2017`
 - **model family:** `disease_progression`
-- **driver:** `cited_pk`
+- **driver:** `dose_only`
 - **tier:** population
 - **effect:** inhibition/proportional
 
@@ -34,10 +34,9 @@ Chatterjee MS et al., Population Pharmacokinetic/Pharmacodyna…, CPT: pharmacom
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| — | KL | `Q100` · not captured | 2.76 | 10− 3/day | not captured | nil (not captured) | Chatterjee_2017:pdv3 |
-| PD (effect) | KD | `Q331` · not captured | 3.57 | 10− 3/day | not captured | exact (not captured) | Chatterjee_2017:pdv3 |
-| PD (effect) | BASEL1 | `Q324` · not captured | 56.3 | mm | not captured | llm (not captured) | Chatterjee_2017:pdv3 |
-| PD (effect) | BASEL2 | `Q324` · not captured | 25.1 | mm | not captured | llm (not captured) | Chatterjee_2017:pdv3 |
+| PD (effect) | KD, 10− 3/day b | `Q331` · not captured | 3.57 | 10− 3/day | not captured | boundary (not captured) | Chatterjee_2017:pdv3 |
+| PD (effect) | BASEL1, mm | `Q324` · not captured | 56.3 | mm | not captured | llm (not captured) | Chatterjee_2017:pdv3 |
+| PD (effect) | BASEL2, mm | `Q324` · not captured | 25.1 | mm | not captured | llm (not captured) | Chatterjee_2017:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>

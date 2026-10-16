@@ -129,7 +129,7 @@ Brookhuis SAM et al., Modelling Tools to Characterize Acetami…, Pharmaceutics 
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_paracetamol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Brookhuis_2021` / `Brookhuis_2021::nimmo_et_al_26`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_paracetamol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Brookhuis_2021` / `Brookhuis_2021::nimmo_et_al_26`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

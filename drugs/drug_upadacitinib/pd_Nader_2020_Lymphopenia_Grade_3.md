@@ -1,7 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;upadacitinib&quot;,&quot;href&quot;:&quot;drugs/drug_upadacitinib/&quot;},{&quot;label&quot;:&quot;Nader_2020 \u00b7 PD lymphopenia Grade 3 or higher at Week 12/14&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;upadacitinib&quot;,&quot;href&quot;:&quot;drugs/drug_upadacitinib/&quot;},{&quot;label&quot;:&quot;Nader_2020 \u00b7 PD Lymphopenia (Grade 3 or higher)&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Upadacitinib_Klnder2018_reference&quot;,&quot;label&quot;:&quot;Kl\u00fcnder_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_upadacitinib/Upadacitinib_Klnder2018_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Upadacitinib_Klnder2019_reference&quot;,&quot;label&quot;:&quot;Kl\u00fcnder_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_upadacitinib/Upadacitinib_Klnder2019_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Mohamed_2021_EASI_75&quot;,&quot;label&quot;:&quot;Mohamed_2021 \u00b7 EASI-75&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_upadacitinib/pd_Mohamed_2021_EASI_75.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Mohamed_2021_EASI_90&quot;,&quot;label&quot;:&quot;Mohamed_2021 \u00b7 EASI-90&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_upadacitinib/pd_Mohamed_2021_EASI_90.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Mohamed_2021_IGA_0_1&quot;,&quot;label&quot;:&quot;Mohamed_2021 \u00b7 IGA 0/1&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_upadacitinib/pd_Mohamed_2021_IGA_0_1.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# lymphopenia Grade 3 or higher at Week 12/14 — PD  <span class="pk-badge pk-badge--green">extracted</span>
+# Lymphopenia (Grade 3 or higher) — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -13,11 +14,11 @@
 
 ## Record summary
 
-**As extracted:** Upadacitinib (concentrations from the PK model of Klünder_2018) drives lymphopenia Grade 3 or higher at Week 12/14: direct linear effect.
+**As extracted:** Upadacitinib (concentrations from the PK model of Bhatnagar_2024::as) drives Lymphopenia (Grade 3 or higher): direct linear effect.
 
 **Model:** No model was generated from this record.
 
-> The paper describes a logistic regression exposure-response model linking upadacitinib plasma concentrations to the binary response of lymphopenia Grade 3 or higher at Week 12/14, indicating an exposure-dependent risk. No specific mechanism (e.g., Emax, IC50) or numerical potency/rate parameters for this specific safety endpoint are provided in the excerpts.
+> The paper reports a shallow, positive (stimulatory) exposure–response relationship between upadacitinib plasma concentrations (ng/mL) and the incidence of Grade 3 or higher lymphopenia, but it does not specify a mechanistic model (e.g., Emax, indirect response) or provide specific potency/rate parameters (IC50, EC50, Imax, Emax, kin, kout, ke0) for this safety endpoint, noting instead that no clear trends were identified for lymphopenia (Grade ≥ 4) while only shallow relationships were observed for Grade ≥ 3.
 >
 > <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
@@ -25,7 +26,7 @@
 - **model family:** `linear`
 - **driver:** `cited_pk`
 - **tier:** population
-- **effect:** stimulation/unknown
+- **effect:** stimulation/additive
 
 ## Citation
 Nader A et al., Exposure-Response Analyses of Upadaciti…, Clinical pharmacology and t… (2020)

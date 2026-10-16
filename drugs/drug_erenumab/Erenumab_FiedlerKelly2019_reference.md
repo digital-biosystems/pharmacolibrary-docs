@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02C&quot;,&quot;href&quot;:&quot;atc/N02C.md&quot;},{&quot;label&quot;:&quot;erenumab&quot;,&quot;href&quot;:&quot;drugs/drug_erenumab/&quot;},{&quot;label&quot;:&quot;Fiedler-Kelly_2019 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Erenumab_FiedlerKelly2019_reference&quot;,&quot;label&quot;:&quot;Fiedler-Kelly_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_erenumab/Erenumab_FiedlerKelly2019_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Erenumab_Kielbasa2019_reference&quot;,&quot;label&quot;:&quot;Kielbasa_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_erenumab/Erenumab_Kielbasa2019_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Erenumab_FiedlerKelly2019_reference&quot;,&quot;label&quot;:&quot;Fiedler-Kelly_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_erenumab/Erenumab_FiedlerKelly2019_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Vu_2017_CIDBF&quot;,&quot;label&quot;:&quot;Vu_2017 \u00b7 CIDBF&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_erenumab/pd_Vu_2017_CIDBF.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # erenumab — `Erenumab_FiedlerKelly2019_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (?, agreement 0.0), gpt-oss:120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial 0/2</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (?, agreement 0.0), gpt-oss:120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -21,13 +21,11 @@
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:37:55.594886+00:00) predates the upstream re-run (2026-10-07 06:34:09.521654+00:00). Current validate status: `extracted`.
-
 ## Citation
 Fiedler-Kelly JB et al., Population pharmacokinetic modelling an…, British journal of clinical… (2019)
   ·  DOI: [10.1111/bcp.14096](https://doi.org/10.1111/bcp.14096)
 
-<div class="pk-model-meta" hidden drug="erenumab" model-id="Erenumab_FiedlerKelly2019_reference" status="extracted" stale="true" population="" measured-compound="erenumab" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="erenumab" model-id="Erenumab_FiedlerKelly2019_reference" status="curated_candidate" stale="false" population="" measured-compound="erenumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.
@@ -38,7 +36,7 @@ Fiedler-Kelly JB et al., Population pharmacokinetic modelling an…, British jou
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | central CL | `Q22` · CL | 0.0902 | L/d | 1.0439814814814816e-09 | L/h | not captured | review (0.7) | Fiedler-Kelly_2019:review | — | not captured |
-| Vc,SC | `Q61` · V | 1.88 | L | 0.00188 | L | not captured | review (0.7) | Fiedler-Kelly_2019:review | — | not captured |
+| Vc,SC | `Q63` · V1 | 1.88 | L | 0.00188 | L | not captured | review (0.7) | Fiedler-Kelly_2019:review | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -77,11 +75,11 @@ _All readers agree on the compared fields of this record._
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Fiedler-Kelly_2019:review'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Fiedler-Kelly_2019:review'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Fiedler-Kelly_2019:review'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.0902 | not captured | not captured | ['Fiedler-Kelly_2019:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.00376 L/h | not captured | not captured | ['Fiedler-Kelly_2019:review'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 1.88 L | not captured | not captured | ['Fiedler-Kelly_2019:review'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 1.88 L | not captured | not captured | ['Fiedler-Kelly_2019:review'] |
 
 **Reviewer per-scenario checks:**
 
@@ -101,10 +99,10 @@ _All readers agree on the compared fields of this record._
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_erenumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Fiedler-Kelly_2019` / `Fiedler-Kelly_2019::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_erenumab/models/modelica/Erenumab_FiedlerKelly2019_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_erenumab/models/modelica/Erenumab_FiedlerKelly2019_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_erenumab/models/modelica/Erenumab_FiedlerKelly2019_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_erenumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Fiedler-Kelly_2019` / `Fiedler-Kelly_2019::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_erenumab/models/modelica/Erenumab_FiedlerKelly2019_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_erenumab/models/modelica/Erenumab_FiedlerKelly2019_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_erenumab/models/modelica/Erenumab_FiedlerKelly2019_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -122,7 +120,7 @@ _All readers agree on the compared fields of this record._
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_erenumab/Erenumab_FiedlerKelly2019_reference/Erenumab_FiedlerKelly2019_reference.svg" alt="Erenumab_FiedlerKelly2019_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_erenumab/Erenumab_FiedlerKelly2019_reference/Erenumab_FiedlerKelly2019_reference.svg" alt="Erenumab_FiedlerKelly2019_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -135,4 +133,4 @@ _All readers agree on the compared fields of this record._
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 06:34 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 04:07 UTC</sub>

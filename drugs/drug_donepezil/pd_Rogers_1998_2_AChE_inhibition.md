@@ -18,9 +18,9 @@
 
 **Model:** No model was generated from this record.
 
-> Donepezil plasma concentrations (ng/mL) were linked to red blood cell acetylcholinesterase inhibition (%) via an Emax (inhibitory) model; the paper reports an EC50 of 15.6 ng/mL, but the excerpts do not state Imax/Emax or the mechanistic form.
+> The paper describes a continuous model in which donepezil plasma concentrations (ng/mL) inhibit red blood cell acetylcholinesterase activity (%), with a stated EC50 of 15.6 ng/mL. Since the full text is unavailable, the specific mechanism (e.g., direct Emax vs. effect compartment) and additional potency or rate parameters are not provided in the available record.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Rogers_1998_2`
 - **model family:** `emax`

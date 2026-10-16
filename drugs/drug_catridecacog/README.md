@@ -17,11 +17,20 @@ Catridecacog is a recombinant coagulation factor XIII A-subunit used to treat in
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-05 17:39 | 0:20 | 0/0/0 | 0/0/0 | 0/0/0 | 11,168/349 | ollama / qwen3.8:27b-mtp-q8_0 | 4 | 2/2 | 4/0 | 0 |
+| 2026-10-14 21:21 | 0:23 | 0/0/0 | 0/0/0 | 0/0/0 | 11,168/321 | einfracz / qwen3.8-27b | 4 | 2/2 | 4/0 | 0 |
 
 ## popPK records
 
 _not available_
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=catridecacog).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: F13B (unknown).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -34,7 +43,7 @@ _not available_
 - **PubMed hits:** 7 matched, 5 returned
 - **screened:** 0  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
-- **scholar-agent fallback query used:** True
+- **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
 
@@ -42,10 +51,10 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Pasca_2022.pdf` | Pasca S et al., The pharmacokinetics of recombinant FXI…, Journal of thrombosis and t… (2022) | popPK | 8 | [10.1007/s11239-022-02700-x](https://doi.org/10.1007/s11239-022-02700-x) | [36094687](https://pubmed.ncbi.nlm.nih.gov/36094687) | The paper reports a comparison of pharmacokinetic profiles for catridecacog in humans, but the specific quantitative parameter values (CL, V, etc.) are not present in the provided text, only dosage and demographic comparisons. |
-| `Zanon_2023.pdf` | Zanon E et al., A multicenter, real-world experience wi…, Blood transfusion = Trasfus… (2023) | popPK | 8 | [10.2450/2022.0121-22](https://doi.org/10.2450/2022.0121-22) | [36580025](https://pubmed.ncbi.nlm.nih.gov/36580025) | The study reports pharmacokinetic assessments for catridecacog in humans, but the specific quantitative parameter values (CL, V, etc.) are not present in the provided text, only dosing ranges and clinical outcomes. |
+| `Zanon_2023.pdf` | Zanon E et al., A multicenter, real-world experience wi…, Blood transfusion = Trasfus… (2023) | popPK | 9 | [10.2450/2022.0121-22](https://doi.org/10.2450/2022.0121-22) | [36580025](https://pubmed.ncbi.nlm.nih.gov/36580025) | The study reports a population PK analysis of catridecacog in humans, but the specific quantitative parameter values (CL, V, etc.) are not provided in the evidence, likely residing in the full text or supplementary materials. |
+| `Pasca_2022.pdf` | Pasca S et al., The pharmacokinetics of recombinant FXI…, Journal of thrombosis and t… (2022) | popPK | 7 | [10.1007/s11239-022-02700-x](https://doi.org/10.1007/s11239-022-02700-x) | [36094687](https://pubmed.ncbi.nlm.nih.gov/36094687) | While the study reports a population PK comparison of catridecacog in humans, the specific quantitative parameter values (CL, V, etc.) are not present in the provided evidence. |
 
-<sub>queue written 2026-10-05T17:39:28.337875+00:00</sub>
+<sub>queue written 2026-10-14T21:21:14.260573+00:00</sub>
 
 ## Screened and excluded
 
@@ -54,7 +63,7 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | popPK | Byrnes_2024 | irrelevant | 0 | 0 | The paper studies the pharmacokinetics of Factor XIII-A (rFXIII-A2), not catridecacog. |
 | popPK | Carcao_2017 | irrelevant | 0 | 0 | The paper is a review of recombinant Factor XIII (rFXIII-A2), not catridecacog, and contains no PK parameters for the target drug. |
 | popPK | Carcao_2018 | irrelevant | 0 | 0 | The paper reports pharmacokinetic parameters for recombinant Factor XIII (rFXIII-A2), not catridecacog. |
-| popPK | Gibbs_2024 | irrelevant | 0 | 0 | The paper is a systematic review of bleeding prevention interventions (e.g., tranexamic acid) in orthopedic surgery and does not contain pharmacokinetic data for catridecacog. |
+| popPK | Gibbs_2024 | irrelevant | 0 | 0 | The paper is a systematic review of surgical bleeding prevention (focusing on tranexamic acid) and does not study catridecacog pharmacokinetics. |
 | PD | Gibbs_2024 | not_relevant | 0 | 0 | The paper is a systematic review and network meta-analysis of bleeding prevention interventions (primarily tranexamic acid) and does not contain any pharmacodynamic modeling, exposure-response analysis, or numeric PD parameters for catridecacog. |
 | popPK | Kerlin_2014 | irrelevant | 0 | 0 | The study evaluates the pharmacokinetics of recombinant factor XIII (rFXIII), not catridecacog. |
 | popPK | Korte_2014 | irrelevant | 2 | 1 | The paper is a narrative review that discusses catridecacog but does not report original quantitative population-pharmacokinetic parameters (CL, V, Q, ka) or compartmental models, only mentioning a general half-life range. |
@@ -62,14 +71,14 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | popPK | Mitchell_2017 | irrelevant | 0 | 0 | The paper is a case report on acquired factor XIII deficiency and does not involve catridecacog or report any pharmacokinetic parameters. |
 | popPK | Muszbek_2018 | irrelevant | 0 | 0 | The paper is a review of laboratory diagnosis and clinical consequences of anti-Factor XIII antibodies, not a pharmacokinetic study of catridecacog. |
 | popPK | Palumbo_2008 | irrelevant | 0 | 0 | The paper investigates the role of Factor XIII in tumor metastasis and does not report any pharmacokinetic parameters for catridecacog. |
-| popPK | Pasca_2022 | relevant | 8 | 2 | The paper reports a comparison of pharmacokinetic profiles for catridecacog in humans, but the specific quantitative parameter values (CL, V, etc.) are not present in the provided text, only dosage and demographic comparisons. |
-| popPK | Pasca_2023 | irrelevant | 0 | 0 | The provided text is a correction notice regarding author affiliations and names, containing no pharmacokinetic data or parameters for catridecacog. |
+| popPK | Pasca_2022 | irrelevant | 7 | 0 | While the study reports a population PK comparison of catridecacog in humans, the specific quantitative parameter values (CL, V, etc.) are not present in the provided evidence. |
+| popPK | Pasca_2023 | irrelevant | 0 | 0 | The provided text is a corrigendum regarding author affiliations and names, containing no pharmacokinetic data or study results. |
 | popPK | Reynolds_2005 | irrelevant | 0 | 0 | The study evaluates recombinant Factor XIII (rFXIII), not catridecacog. |
 | popPK | Souri_2015 | irrelevant | 0 | 0 | The paper is a mechanistic study on coagulation Factor XIII and fibrin cross-linking, not a pharmacokinetic study of catridecacog. |
 | popPK | Souri_2023 | irrelevant | 0 | 0 | The paper investigates the mechanism of antibody inhibition of Factor XIII activation and is not a pharmacokinetic study of catridecacog. |
 | popPK | Souri_2023_2 | irrelevant | 0 | 0 | The paper focuses on the mechanisms of anti-Factor XIII autoantibodies and does not report pharmacokinetic parameters for catridecacog. |
 | popPK | Wada_2013 | irrelevant | 0 | 0 | The paper describes a case of congenital Factor XIII-B deficiency and alloantibody development, not a pharmacokinetic study of catridecacog. |
-| popPK | Zanon_2023 | relevant | 8 | 2 | The study reports pharmacokinetic assessments for catridecacog in humans, but the specific quantitative parameter values (CL, V, etc.) are not present in the provided text, only dosing ranges and clinical outcomes. |
+| popPK | Zanon_2023 | relevant | 9 | 2 | The study reports a population PK analysis of catridecacog in humans, but the specific quantitative parameter values (CL, V, etc.) are not provided in the evidence, likely residing in the full text or supplementary materials. |
 | PD | Zanon_2023 | not_relevant | 2 | 0 | The paper reports pharmacokinetic (PK) profiles and clinical outcomes (bleeding events) but does not provide a quantitative exposure-response or dose-response model with numeric PD parameters (e.g., Emax, EC50) linking drug concentration to effect. |
 
 ---

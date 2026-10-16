@@ -17,24 +17,24 @@
 
 ### Reviewer guidance
 
-**Only clearance was extracted — no volume; cL_ratio has no unit.**
+**Only clearance was extracted — no volume.**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is mefloquine's own; they describe mefloquine enantiomers. Extracted — mefloquine enantiomers: CL/F 3.51 l/h, CL_ratio 6.9 -fold, kabs 0.28 h⁻¹, tlag 0.147 h.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is mefloquine's own; they describe mefloquine enantiomers, artemisinin. Extracted — mefloquine enantiomers, artemisinin: CL/F 3.51 l/h, kabs 0.28 h⁻¹, tlag 0.147 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has mefloquine, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> **Dose compound ≠ measured compound:** dosed `mefloquine`, measured `mefloquine enantiomers`.
+> **Dose compound ≠ measured compound:** dosed `artemisinin, mefloquine`, measured `mefloquine enantiomers, artemisinin`.
 
 ## Citation
 Svensson US et al., Population pharmacokinetic and pharmaco…, European journal of clinica… (2002)
   ·  DOI: [10.1007/s00228-002-0485-y](https://doi.org/10.1007/s00228-002-0485-y)
 
-<div class="pk-model-meta" hidden drug="mefloquine" model-id="Mefloquine_Svensson2002_reference" status="needs_review" stale="false" population="patients with falciparum malaria" measured-compound="mefloquine enantiomers" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="mefloquine" model-id="Mefloquine_Svensson2002_reference" status="needs_review" stale="false" population="patients with falciparum malaria" measured-compound="mefloquine enantiomers, artemisinin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 4 extracted.
+**Parameters:** 3 extracted.
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -43,8 +43,7 @@ Svensson US et al., Population pharmacokinetic and pharmaco…, European journal
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| oral clearance of RS-mefloquine | `Q27` · CL/F | 3.51 | l/h | 9.75e-07 | [l] / [h] | not captured | llm_confirmed (0.6) | Svensson_2002:abstract | — | not captured |
-| artemisinin oral clearance fold difference (last day vs first day) | `Q31` · CL_ratio | 6.9 | -fold | not captured | [-] · [fold] | not captured | llm_corrected (0.6) | Svensson_2002:abstract | — | not captured |
+| oral clearance | `Q27` · CL/F | 3.51 | l/h | 9.75e-07 | [l] / [h] | not captured | exact (1.0) | Svensson_2002:abstract, Svensson_2002:abstract | — | not captured |
 | absorption rate constant | `Q49` · kabs | 0.28 | h⁻¹ | 7.777777777777778e-05 | 1/h | not captured | review_gapfill (0.7) | Mim_2026:review | — | not captured |
 | T lag,1 | `Q83` · tlag | 0.147 | h | 529.1999999999999 | h | not captured | review_gapfill (0.7) | Cherkaoui-Rbati_2023:review | — | not captured |
 
@@ -56,11 +55,11 @@ Svensson US et al., Population pharmacokinetic and pharmaco…, European journal
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped duplicate Q27 ('oral clearance of SR-mefloquine', value 0.602) — already have one for this compound
-- unit_dimension_unknown: '-fold' (CL_ratio)
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=mefloquine enantiomers
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at route_to_review — not promoted
+- unit_dimension_unknown: 'fold' (CL/F)
+- dropped duplicate Q27 ('artemisinin oral clearance', value 6.9) — already have one for this compound
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=mefloquine enantiomers, artemisinin
+- molar mass: no plausible PubChem entry for 'mefloquine enantiomers, artemisinin' ('mefloquine enantiomers, artemisinin') — left in mass units
+- molar mass: none found for 'mefloquine enantiomers, artemisinin' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
@@ -103,16 +102,15 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Svensson_2002:abstract'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Svensson_2002:abstract', 'Svensson_2002:abstract'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Mim_2026:review'] |
 | C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Cherkaoui-Rbati_2023:review'] |
-| C5_unit_missing_Q31 | fail | [length] ** 3 / [time] | -fold | not captured | not captured | ['Svensson_2002:abstract'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 3.51 L/h | not captured | not captured | ['Svensson_2002:abstract'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 3.51 L/h | not captured | not captured | ['Svensson_2002:abstract', 'Svensson_2002:abstract'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -121,7 +119,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_mefloquine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Svensson_2002` / `Svensson_2002::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_mefloquine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Svensson_2002` / `Svensson_2002::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -147,4 +145,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 07:25 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 00:55 UTC</sub>

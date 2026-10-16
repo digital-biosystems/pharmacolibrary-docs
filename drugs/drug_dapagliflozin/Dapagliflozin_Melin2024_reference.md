@@ -4,7 +4,7 @@
 
 # dapagliflozin — `Dapagliflozin_Melin2024_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.714). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -20,7 +20,7 @@
 
 A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Kobuchi_2025) cannot stand in for this paper's evidence. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — dapagliflozin: CL/F 23 L/h, V/F 73.9 L, kabs 57.4 1/day.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has dapagliflozin, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of ka: this record has 57.4, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -64,21 +64,19 @@ Melin J et al., Dapagliflozin pharmacokinetics is simil…, British journal of c
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.333 (2/6 fields) | 4 |
+| `gpt-oss:120b` | partly confirmed | 0.714 (5/7 fields) | 2 |
 
-<details><summary>4 field discrepancies</summary>
+<details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[apparent clearance]` | 23.0 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[apparent clearance]` | not captured | 23.0 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | dapagliflozin | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | dapagliflozin | unknown | mismatch |
+| `gpt-oss:120b` | `parameters[ka]` | 57.4 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v/f]` | 73.9 | not captured | only_one_extracted |
 
 </details>
 
@@ -110,7 +108,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_dapagliflozin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Melin_2024` / `Melin_2024::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_dapagliflozin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Melin_2024` / `Melin_2024::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

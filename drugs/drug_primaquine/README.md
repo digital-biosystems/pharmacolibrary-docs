@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;primaquine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Primaquine_Chairat2018_reference&quot;,&quot;label&quot;:&quot;Chairat_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_primaquine/Primaquine_Chairat2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Primaquine_Sridharan2019_reference&quot;,&quot;label&quot;:&quot;Sridharan_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_primaquine/Primaquine_Sridharan2019_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Primaquine_Chairat2018_reference&quot;,&quot;label&quot;:&quot;Chairat_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_primaquine/Primaquine_Chairat2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # primaquine
 
@@ -22,22 +22,28 @@ Primaquine is an antimalarial drug used to treat malaria, including Plasmodium v
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
 | primaquine | parent | 259.347 | C15H21N3O | DrugBank | [4908](https://pubchem.ncbi.nlm.nih.gov/compound/4908) | Chairat_2018, Chotsiri_2024_2, Lee_2021, Sridharan_2019, Wattanakul_2024_2 |
-| carboxyprimaquine (carboxy-primaquine) | metabolite | 274.32 | C15H18N2O3 | PubChem | [127542](https://pubchem.ncbi.nlm.nih.gov/compound/127542) | Chairat_2018, Chotsiri_2024_2, Lee_2021, Wattanakul_2024_2 |
+| carboxyprimaquine (carboxy-primaquine) | metabolite | 274.32 | C15H18N2O3 | PubChem | [127542](https://pubchem.ncbi.nlm.nih.gov/compound/127542) | Chairat_2018, Chotsiri_2024_2, Lee_2021 |
 | primaquine carbamoyl-glucuronide | metabolite | — (mass units only) | — | — | — | — |
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 07:59 | 12:27 | 0/3/2 | 1/0/0 | 0/0/0 | 458,054/44,881 | ollama / glm-5.3-flash | 30 | 1/14 | 14/1 | 1 |
+| 2026-10-15 03:07 | 1:56:50 | 0/9/2 | 1/0/0 | 0/0/0 | 495,800/35,967 | einfracz / qwen3.8-27b | 30 | 1/14 | 14/1 | 1 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span><br><sub>blocking: unreported model parameter default(s): q12/q21 (hepatic flow, 90 L/h), ka</sub><br><sub>route_to: `scholar`</sub> | [Chairat_2018_reference](drugs/drug_primaquine/Primaquine_Chairat2018_reference.md) | ▶ model + simulator | parent 1-cmt + liver + 1 metabolite (1-cmt) | 10 | Chairat K et al., Enantiospecific pharmacokinetics and dr…, The Journal of antimicrobia… (2018) | [10.1093/jac/dky297](https://doi.org/10.1093/jac/dky297) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: unreported model parameter default(s): F</sub><br><sub>route_to: `scholar`</sub> | [Sridharan_2019_reference](drugs/drug_primaquine/Primaquine_Sridharan2019_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Sridharan K et al., Population pharmacokinetics of primaqui…, Indian journal of pharmacol… (2019) | [10.4103/ijp.IJP_230_16](https://doi.org/10.4103/ijp.IJP_230_16) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.417). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Chotsiri_2024_2_reference](drugs/drug_primaquine/Primaquine_Chotsiri2024v2_reference.md) | — | 2-compartment (no model) | 4 | Chotsiri P et al., Population pharmacokinetics of primaqui…, Malaria journal (2024) | [10.1186/s12936-024-04979-y](https://doi.org/10.1186/s12936-024-04979-y) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span><br><sub>blocking: unreported model parameter default(s): q12/q21 (hepatic flow, 90 L/h), ka</sub><br><sub>route_to: `scholar`</sub> | [Chairat_2018_reference](drugs/drug_primaquine/Primaquine_Chairat2018_reference.md) | ▶ model + simulator | parent 1-cmt + liver + 1 metabolite (1-cmt) | 12 | Chairat K et al., Enantiospecific pharmacokinetics and dr…, The Journal of antimicrobia… (2018) | [10.1093/jac/dky297](https://doi.org/10.1093/jac/dky297) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22, Q49 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Sridharan_2019_reference](drugs/drug_primaquine/Primaquine_Sridharan2019_reference.md) | — | 1-compartment (no model) | 2 | Sridharan K et al., Population pharmacokinetics of primaqui…, Indian journal of pharmacol… (2019) | [10.4103/ijp.IJP_230_16](https://doi.org/10.4103/ijp.IJP_230_16) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Chairat_2018_primaquine_alone](drugs/drug_primaquine/Primaquine_Chairat2018_primaquine_alone.md) | — | parent + metabolite (no model) | 12 | Chairat K et al., Enantiospecific pharmacokinetics and dr…, The Journal of antimicrobia… (2018) | [10.1093/jac/dky297](https://doi.org/10.1093/jac/dky297) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Chairat_2018_primaquine_co_administered_with_antimalarial_drugs_chloroquine](drugs/drug_primaquine/Primaquine_Chairat2018_primaquine_co_administered_with_antim.md) | — | parent + metabolite (no model) | 11 | Chairat K et al., Enantiospecific pharmacokinetics and dr…, The Journal of antimicrobia… (2018) | [10.1093/jac/dky297](https://doi.org/10.1093/jac/dky297) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Chairat_2018_primaquine_co_administered_with_antimalarial_drugs_dihydroartemisinin_piperaquine](drugs/drug_primaquine/Primaquine_Chairat2018_primaquine_co_administered_with_antim.md) | — | parent + metabolite (no model) | 12 | Chairat K et al., Enantiospecific pharmacokinetics and dr…, The Journal of antimicrobia… (2018) | [10.1093/jac/dky297](https://doi.org/10.1093/jac/dky297) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Chairat_2018_primaquine_co_administered_with_antimalarial_drugs_pyronaridine_artesunate](drugs/drug_primaquine/Primaquine_Chairat2018_primaquine_co_administered_with_antim.md) | — | parent + metabolite (no model) | 12 | Chairat K et al., Enantiospecific pharmacokinetics and dr…, The Journal of antimicrobia… (2018) | [10.1093/jac/dky297](https://doi.org/10.1093/jac/dky297) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.417). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Chotsiri_2024_2_g6pd_deficient_individuals](drugs/drug_primaquine/Primaquine_Chotsiri2024v2_g6pd_deficient_individuals.md) | — | general linear (no model) | 3 | Chotsiri P et al., Population pharmacokinetics of primaqui…, Malaria journal (2024) | [10.1186/s12936-024-04979-y](https://doi.org/10.1186/s12936-024-04979-y) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.417). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Chotsiri_2024_2_g6pd_normal_individuals](drugs/drug_primaquine/Primaquine_Chotsiri2024v2_g6pd_normal_individuals.md) | — | general linear (no model) | 3 | Chotsiri P et al., Population pharmacokinetics of primaqui…, Malaria journal (2024) | [10.1186/s12936-024-04979-y](https://doi.org/10.1186/s12936-024-04979-y) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.417). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Chotsiri_2024_2_reference](drugs/drug_primaquine/Primaquine_Chotsiri2024v2_reference.md) | — | general linear (no model) | 3 | Chotsiri P et al., Population pharmacokinetics of primaqui…, Malaria journal (2024) | [10.1186/s12936-024-04979-y](https://doi.org/10.1186/s12936-024-04979-y) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Lee_2021_reference](drugs/drug_primaquine/Primaquine_Lee2021_reference.md) | — | parent + metabolite (no model) | 0 | Lee WY et al., Population Pharmacokinetics of Primaqui…, Pharmaceutics (2021) | [10.3390/pharmaceutics13050652](https://doi.org/10.3390/pharmaceutics13050652) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Wattanakul_2024_2_reference](drugs/drug_primaquine/Primaquine_Wattanakul2024v2_reference.md) | — | parent + metabolite (no model) | 0 | Wattanakul T et al., Population pharmacokinetic modelling of…, Nature communications (2024) | [10.1038/s41467-024-47908-y](https://doi.org/10.1038/s41467-024-47908-y) |
 
@@ -45,7 +51,27 @@ Primaquine is an antimalarial drug used to treat malaria, including Plasmodium v
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Chotivanich_2006_percent_inhibition_of_oocyst_development_transmission_blocking_activity](drugs/drug_primaquine/pd_Chotivanich_2006_percent_inhibition_of_oocyst_development_tr.md) | percent inhibition of oocyst development (transmission-blocking activity) ← primaquine · direct Emax (saturable) effect | — | Chotivanich K et al., Transmission-blocking activities of qui…, Antimicrobial agents and ch… (2006) | [10.1128/AAC.01472-05](https://doi.org/10.1128/AAC.01472-05) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Chotivanich_2006_IR](drugs/drug_primaquine/pd_Chotivanich_2006_IR.md) | Infection rate (IR) ← primaquine · direct sigmoid Emax (Hill) effect | — | Chotivanich K et al., Transmission-blocking activities of qui…, Antimicrobial agents and ch… (2006) | [10.1128/AAC.01472-05](https://doi.org/10.1128/AAC.01472-05) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=primaquine).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inhibitor | DrugBank actor |
+| absorption | kidney | `ABCB1` inhibitor | DrugBank actor |
+| absorption | liver | `ABCB1` inhibitor | DrugBank actor |
+| absorption | placenta | `ABCB1` inhibitor | DrugBank actor |
+| absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
+| absorption | testis | `ABCB1` inhibitor | DrugBank actor |
+| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
+| metabolism | liver | `CYP1A2` inducer/substrate, `CYP2D6` inhibitor, `CYP3A4` inhibitor/substrate | DrugBank actor |
+| metabolism | lung | `CYP1A1` inducer, `CYP1B1` inducer | DrugBank actor |
+| metabolism | skin | `CYP1B1` inducer | DrugBank actor |
+| metabolism | small intestine | `CYP1A1` inducer, `CYP3A4` inhibitor/substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: KRT7 (other/unknown), NQO2 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -57,27 +83,27 @@ Primaquine is an antimalarial drug used to treat malaria, including Plasmodium v
 
 - **PubMed hits:** 33 matched, 20 returned
 - **screened:** 6  ·  **relevant:** 6
-- **records:** 5  ·  extracted 0  ·  needs_review 2  ·  rejected 3  ·  stale 0
+- **records:** 11  ·  extracted 0  ·  needs_review 2  ·  rejected 9  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Araujo-Lima_2023 | irrelevant | 0 | 0 | Primaquine is only a structural moiety in synthetic hybrids; PK is in silico ADME prediction of the hybrids, with no quantitative disposition parameters for primaquine itself. |
-| popPK | Bolchoz_2001 | irrelevant | 1 | 1 | In-vitro/mechanistic metabolism and toxicity study of a primaquine metabolite with no PK disposition parameters reported. |
-| popPK | Boonyasuppayakorn_2014 | irrelevant | 0 | 0 | This is an in-vitro antiviral study of amodiaquine against dengue; primaquine is only a screened comparator with no PK parameters. |
-| popPK | Brueckner_1991 | irrelevant | 0 | 0 | The drug studied is WR 238605, a primaquine analogue, not primaquine itself; numeric PK parameters are for the analogue in dogs. |
-| popPK | Capela_2018 | irrelevant | 0 | 0 | Medicinal chemistry study of hybrid compounds; primaquine only as comparator, no PK parameters. |
-| popPK | Chotivanich_2006 | irrelevant | 0 | 0 | In vitro gametocytocidal EC50/EC90 study, not a PK study; no disposition parameters (CL, V, half-life) for primaquine are reported. |
-| popPK | Chotsiri_2017 | irrelevant | 2 | 1 | Primaquine is only a co-administered probe/placebo arm; the population-PK parameters (CL/F, V, ka, t1/2) reported are for DHA and piperaquine, with no quantitative primaquine PK model values. |
-| popPK | Commons_2019 | irrelevant | 0 | 0 | This is a haematological (haemoglobin response) IPD meta-analysis of vivax malaria; primaquine is a co-intervention, with no PK parameters (CL, V, ka, half-life, or population-PK model) reported anywhere in the evidence. |
-| popPK | Daher_2019_2 | irrelevant | 2 | 1 | PK parameters (AUC, half-life) are for chloroquine/mefloquine/lumefantrine; primaquine PK was not modelled and no numeric primaquine parameters are present. |
-| popPK | Marino_1994 | irrelevant | 0 | 0 | The drug studied is WR242511, a different 8-aminoquinoline; primaquine is only mentioned as background, and no numeric PK parameters for primaquine appear. |
-| popPK | Nyamwihura_2021 | irrelevant | 0 | 0 | This is a medicinal chemistry/synthesis paper on nopol-based quinoline antimalarials with in vitro EC50 data; primaquine is only mentioned as a comparator and no PK parameters are reported. |
-| popPK | Persoons_2021 | irrelevant | 0 | 0 | In-vitro antiviral study of quinoline analogues including primaquine; no PK disposition parameters reported, only EC50/CC50 values. |
-| popPK | Rajić_2018 | irrelevant | 0 | 0 | This is a synthetic chemistry/antimicrobial activity paper on primaquine derivatives; no PK parameters for primaquine are reported. |
-| popPK | Watson_2017 | irrelevant | 2 | 1 | This is a model of primaquine-induced haemolysis (RBC dynamics), not a PK model of primaquine disposition; the only PK value is a half-life (~5 hr) mentioned in passing with no CL/V or population-PK parameters, and no numeric PK table is present. |
+| popPK | Araujo-Lima_2023 | irrelevant | 0 | 0 | The study evaluates synthetic hybrids of atorvastatin and aminoquinolines (derived from chloroquine/primaquine) in vitro and in silico, not the pharmacokinetics of the drug primaquine itself. |
+| popPK | Bolchoz_2001 | irrelevant | 2 | 0 | The study is mechanistic/in-vitro focused on metabolite identification and hemotoxicity, not quantitative population PK parameters for primaquine. |
+| popPK | Boonyasuppayakorn_2014 | irrelevant | 0 | 0 | The study investigates the antiviral activity of amodiaquine against dengue virus in vitro, and while primaquine is listed as a screened compound, no pharmacokinetic parameters or quantitative disposition data are reported for it. |
+| popPK | Brueckner_1991 | irrelevant | 0 | 0 | The study analyzes the pharmacokinetics of WR 238605, a primaquine analogue, not primaquine itself. |
+| popPK | Capela_2018 | irrelevant | 0 | 0 | The study focuses on the synthesis and in-vitro antiplasmodial activity of new hybrid compounds, with primaquine serving only as a comparator for metabolic stability rather than being the subject of a pharmacokinetic study. |
+| popPK | Chotivanich_2006 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological assay measuring gametocytocidal activity (EC50/EC90) rather than pharmacokinetic parameters. |
+| popPK | Chotsiri_2017 | irrelevant | 1 | 1 | The study's subject drugs are dihydroartemisinin and piperaquine; primaquine was used as a placebo/reference arm for drug-drug interaction and ECG baseline correction, and no PK parameters for primaquine are reported. |
+| popPK | Commons_2019 | irrelevant | 0 | 0 | The study is a systematic review and meta-analysis focusing on haematological outcomes (haemoglobin levels) and parasite clearance, not pharmacokinetic parameters (CL, V, ka, etc.). |
+| popPK | Daher_2019_2 | irrelevant | 1 | 0 | The study reports pharmacokinetic parameters (AUC, half-life) only for the long-acting ACT components (mefloquine, chloroquine, lumefantrine), not for primaquine, and explicitly states the sampling design did not allow for proper modeling of primaquine levels. |
+| popPK | Marino_1994 | irrelevant | 0 | 0 | The study subjects is WR242511, a primaquine analog/candidate, not primaquine itself. |
+| popPK | Nyamwihura_2021 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study evaluating the in vitro antiplasmodial activity of novel nopol-based quinoline derivatives, with primaquine mentioned only as a structural/comparative reference. |
+| popPK | Persoons_2021 | irrelevant | 0 | 0 | The study is an in-vitro antiviral activity assay (EC50/CC50) and does not contain pharmacokinetic parameters for primaquine. |
+| popPK | Rajić_2018 | irrelevant | 0 | 0 | The paper describes the synthesis and in vitro biological activity (antimicrobial, antiviral, cytostatic) of novel primaquine derivatives, not the pharmacokinetic profile of primaquine itself. |
+| popPK | Watson_2017 | irrelevant | 2 | 0 | The study models red blood cell dynamics and haemolysis (pharmacodynamics) rather than reporting quantitative PK parameters like clearance or volume of distribution for primaquine. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 07:50 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-15 01:12 UTC</sub>

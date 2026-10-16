@@ -26,7 +26,7 @@ Bentazepam is a benzodiazepine-derivative anxiolytic, sedative and hypnotic that
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 18:19 | 0:48 | 0/3/1 | 0/0/0 | 0/0/0 | 30,621/2,075 | ollama / glm-5.3-flash | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-14 22:13 | 0:24 | 0/3/1 | 0/0/0 | 0/0/0 | 28,399/1,997 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
@@ -34,8 +34,17 @@ Bentazepam is a benzodiazepine-derivative anxiolytic, sedative and hypnotic that
 |---|---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: model_quarantined: F, Cl, Tlag, k12, k21 left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Fernandez_1988_reference](drugs/drug_bentazepam/Bentazepam_Fernandez1988_reference.md) | held back | 2-compartment, oral | 6 | Fernandez Lastra C et al., Discrimination of kinetic models in het…, International journal of cl… (1988) | — |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Colino_1991_reference](drugs/drug_bentazepam/Bentazepam_Colino1991_reference.md) | — | 1-compartment (no model) | 4 | Colino CI et al., Open-loop feedback control of serum ben…, International journal of cl… (1991) | — |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.857). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Mariño_1987_reference](drugs/drug_bentazepam/Bentazepam_Mario1987_reference.md) | — | 1-compartment (no model) | 3 | Mariño EL et al., Simulation of plasma bentazepam levels…, International journal of cl… (1987) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.857). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Mariño_1987_reference](drugs/drug_bentazepam/Bentazepam_Mario1987_reference.md) | — | 1-compartment (no model) | 2 | Mariño EL et al., Simulation of plasma bentazepam levels…, International journal of cl… (1987) | — |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Mariño_1987_2_reference](drugs/drug_bentazepam/Bentazepam_Mario19872_reference.md) | — | 1-compartment (no model) | 0 | Mariño EL et al., Parametrization by non-linear regressio…, International journal of cl… (1987) | — |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=bentazepam).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: GABRA1 (positive allosteric modulator), GABRA1 (target), GABRG3 (modulator).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,12 +65,12 @@ _4 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Colino_1991.pdf` | Colino CI et al., Open-loop feedback control of serum ben…, International journal of cl… (1991) | popPK | 10 | not captured | [1800395](https://pubmed.ncbi.nlm.nih.gov/1800395) | Population PK parameters (Ka, Vd, Ke, half-life) for bentazepam are reported numerically in the abstract. |
-| `Fernandez_1988.pdf` | Fernandez Lastra C et al., Discrimination of kinetic models in het…, International journal of cl… (1988) | popPK | 10 | not captured | [3209281](https://pubmed.ncbi.nlm.nih.gov/3209281) | Population/compartmental PK parameters for bentazepam (Ka, Vd, Ke, K12, K21) are reported numerically in the abstract for 9 human patients. |
-| `Mariño_1987_2.pdf` | Mariño EL et al., Parametrization by non-linear regressio…, International journal of cl… (1987) | popPK | 10 | not captured | [3429066](https://pubmed.ncbi.nlm.nih.gov/3429066) | Human PK study of bentazepam with numeric ka, kel, and Vd values reported directly in the abstract. |
-| `Mariño_1987.pdf` | Mariño EL et al., Simulation of plasma bentazepam levels…, International journal of cl… (1987) | popPK | 9 | not captured | [2893777](https://pubmed.ncbi.nlm.nih.gov/2893777) | Population-style PK parameters (ka, kel, Vd) for bentazepam from patient data are reported numerically in the abstract itself. |
+| `Colino_1991.pdf` | Colino CI et al., Open-loop feedback control of serum ben…, International journal of cl… (1991) | popPK | 10 | not captured | [1800395](https://pubmed.ncbi.nlm.nih.gov/1800395) | The paper reports population PK parameters for bentazepam in humans, but the values for Ka and Ke are unit-annotated as "l/h" (likely a typo for 1/h or h⁻¹), making direct numerical extraction of clearance rates ambiguous. |
+| `Fernandez_1988.pdf` | Fernandez Lastra C et al., Discrimination of kinetic models in het…, International journal of cl… (1988) | popPK | 10 | not captured | [3209281](https://pubmed.ncbi.nlm.nih.gov/3209281) | The paper reports specific quantitative pharmacokinetic parameters (ka, Vd, Ke, etc.) for bentazepam in humans, with values clearly present in the text. |
+| `Mariño_1987_2.pdf` | Mariño EL et al., Parametrization by non-linear regressio…, International journal of cl… (1987) | popPK | 10 | not captured | [3429066](https://pubmed.ncbi.nlm.nih.gov/3429066) | The paper reports quantitative pharmacokinetic parameters (ka, elimination constant, volume) for bentazepam in humans with specific numeric values provided in the text. |
+| `Mariño_1987.pdf` | Mariño EL et al., Simulation of plasma bentazepam levels…, International journal of cl… (1987) | popPK | 9 | not captured | [2893777](https://pubmed.ncbi.nlm.nih.gov/2893777) | The paper reports specific quantitative pharmacokinetic parameters (ka, ke, Vd) for bentazepam in humans derived from a previous study within the same context. |
 
-<sub>queue written 2026-10-06T18:18:37.055773+00:00</sub>
+<sub>queue written 2026-10-14T22:12:47.818349+00:00</sub>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-06 18:18 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-14 22:12 UTC</sub>

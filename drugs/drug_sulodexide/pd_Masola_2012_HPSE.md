@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;sulodexide&quot;,&quot;href&quot;:&quot;drugs/drug_sulodexide/&quot;},{&quot;label&quot;:&quot;Masola_2012 \u00b7 PD Heparanase-1 activity&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;sulodexide&quot;,&quot;href&quot;:&quot;drugs/drug_sulodexide/&quot;},{&quot;label&quot;:&quot;Masola_2012 \u00b7 PD Heparanase-1 (HPSE) activity&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Heparanase-1 activity — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.99).">in vitro</span>
+# Heparanase-1 (HPSE) activity — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.99).">in vitro</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -15,19 +15,19 @@
 
 ## Record summary
 
-**As extracted:** Sulodexide (measured concentrations) drives Heparanase-1 activity (in %): direct Emax (saturable) effect.
+**As extracted:** Sulodexide (measured concentrations) drives Heparanase-1 (HPSE) activity (in %): direct Emax (saturable) effect.
 
 **Model:** No model was generated from this record.
 
-> Sulodexide directly inhibits Heparanase-1 (HPSE) activity in a concentration-dependent manner, with an IC50 of 5 μg/ml and complete inhibition observed at 20 μg/ml. The paper does not specify the underlying molecular mechanism of this direct enzyme inhibition.
+> Sulodexide concentrations exert a direct proportional inhibition on heparanase-1 (HPSE) activity, with the paper stating an IC50 of 5 μg/ml and complete inhibition at 20 μg/ml. The excerpts do not specify the underlying molecular mechanism of inhibition or provide rate constants (e.g., kout) or maximum effect (Emax) parameters.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Masola_2012`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
 - **tier:** descriptive
-- **effect:** inhibition/unknown
+- **effect:** inhibition/proportional
 
 ## Citation
 Masola V et al., A new mechanism of action of sulodexide…, Journal of translational me… (2012)

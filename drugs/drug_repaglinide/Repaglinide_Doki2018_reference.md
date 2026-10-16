@@ -4,7 +4,7 @@
 
 # repaglinide — `Repaglinide_Doki2018_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.071). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -19,6 +19,8 @@
 **Only volume was extracted — no clearance.**
 
 A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. A reported unit could not be converted (MW), so that value has no SI equivalent. Extracted — repaglinide: MW 453 g/mol, fu 0.023, Fab 0.98, kabs 1.6 1/h, Vss 0.24 L/kg, Kp 3.3.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has repaglinide, the second reading unknown; it also differs on 25 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -99,6 +101,52 @@ Doki K et al., Implications of intercorrelation betwee…, British journal of cl
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.071 (2/28 fields) | 26 |
+
+<details><summary>26 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['gemfibrozil', 'gemfibrozil 1-o-β glucuronide', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[absorption rate constant]` | 1.6 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[absorption rate constant]` | not captured | 1.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cyp3a4_cv]` | 60 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cyp3a5_cv]` | 60 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cyp3a5_em_frequency].value` | 0.17 | 1.00 | mismatch |
+| `gpt-oss-120b` | `parameters[fraction absorbed]` | 0.98 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fraction absorbed]` | not captured | 0.98 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fraction unbound in plasma]` | 0.023 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fraction unbound in plasma]` | not captured | 0.023 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[kp scalar]` | 3.3 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[kp scalar]` | not captured | 3.3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[molecular weight]` | 452.6 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[molecular weight]` | not captured | 452.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q1_cyp2c8]` | 2.3 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q1_cyp2c8]` | not captured | 2.3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q1_cyp3a4]` | 13.2 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q1_cyp3a4]` | not captured | 13.2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q312_cyp3a4]` | not captured | 60 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q312_cyp3a5]` | not captured | 0 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q66_cyp2c8]` | 300.8 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q66_cyp2c8]` | not captured | 300.8 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vss]` | 0.24 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vss]` | not captured | 0.24 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | repaglinide | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | repaglinide | unknown | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
@@ -119,7 +167,7 @@ Doki K et al., Implications of intercorrelation betwee…, British journal of cl
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_repaglinide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Doki_2018` / `Doki_2018::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_repaglinide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Doki_2018` / `Doki_2018::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

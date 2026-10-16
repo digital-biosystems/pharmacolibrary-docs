@@ -4,7 +4,7 @@
 
 # ubidecarenone — `Ubidecarenone_Tomono1986_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25), gpt-oss:120b (not confirmed, agreement 0.111). Primary extraction retained.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25), gpt-oss:120b (not confirmed, agreement 0.111). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -24,14 +24,10 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:42:06.167366+00:00) predates the upstream re-run (2026-10-06 11:49:00.464385+00:00). Current validate status: `rejected`.
-
-> **Dose compound ≠ measured compound:** dosed `deuterium-labelled coenzyme Q10`, measured `coenzyme Q10`.
-
 ## Citation
 Tomono Y et al., Pharmacokinetic study of deuterium-labe…, International journal of cl… (1986)
 
-<div class="pk-model-meta" hidden drug="ubidecarenone" model-id="Ubidecarenone_Tomono1986_reference" status="rejected" stale="true" population="healthy male subjects" measured-compound="coenzyme Q10" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="ubidecarenone" model-id="Ubidecarenone_Tomono1986_reference" status="rejected" stale="false" population="healthy male adults" measured-compound="ubidecarenone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.
@@ -43,7 +39,7 @@ Tomono Y et al., Pharmacokinetic study of deuterium-labe…, International journ
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| peak | `Q32` · Cmax | 1.004 | micrograms/ml | not captured | [µg] / [ml] | not captured | exact (1.0) | Tomono_1986:abstract | — | not captured |
+| mean plasma CoQ10 level attained a peak | `Q32` · Cmax | 1.004 | micrograms/ml | not captured | [µg] / [ml] | not captured | llm_confirmed (0.6) | Tomono_1986:abstract, Tomono_1986:abstract | — | not captured |
 | terminal elimination half-life | `Q57` · t1/2z | 33.19 | h | 119483.99999999999 | [h] | not captured | llm (0.6) | Tomono_1986:abstract | — | not captured |
 
 <details class="legend">
@@ -54,8 +50,7 @@ Tomono Y et al., Pharmacokinetic study of deuterium-labe…, International journ
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'at' — extend the ontology if this is a real PK parameter (source ['Tomono_1986:abstract'])
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=coenzyme Q10
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=ubidecarenone
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
@@ -106,7 +101,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Tomono_1986:abstract'] |
+| C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Tomono_1986:abstract', 'Tomono_1986:abstract'] |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Tomono_1986:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
@@ -117,7 +112,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ubidecarenone/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Tomono_1986` / `Tomono_1986::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ubidecarenone/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Tomono_1986` / `Tomono_1986::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -133,4 +128,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 11:49 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 23:46 UTC</sub>

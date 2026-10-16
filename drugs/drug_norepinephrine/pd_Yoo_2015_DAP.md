@@ -17,9 +17,9 @@
 
 **Model:** No model was generated from this record.
 
-> Norepinephrine concentrations in the effect compartment (biophase) stimulate diastolic arterial pressure via a sigmoidal Emax model, with an EC50 of 16.8 nmol/L, a Hill coefficient (γ) of 1.9, and an effect compartment rate constant (ke0) of 1.39 h−1. The model assumes a minimum effect (Emin) of 47.3 mmHg and a maximum effect (Emax) of 140 mmHg.
+> Norepinephrine concentrations in an effect compartment (ke0 = 1.39 h−1) stimulate diastolic arterial pressure via a sigmoidal Emax mechanism, with the maximum effect (Emax) set to 140 mmHg and the minimum effect (Emin) at 47.3 mmHg. The half-maximal effective concentration (EC50) is 16.8 nmol/L with a Hill coefficient (γ) of 1.9.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Yoo_2015`
 - **model family:** `sigmoid_emax`
@@ -47,7 +47,7 @@ Yoo H et al., Mechanism-based population pharmacokine…, European journal of cl
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|

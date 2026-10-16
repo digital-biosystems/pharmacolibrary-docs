@@ -15,16 +15,16 @@
 
 ## Record summary
 
-**As extracted:** Camazepam and active metabolites (temazepam, oxazepam, hydroxy CZ) via receptor binding drive percent anticonvulsant effect (in %): direct sigmoid Emax (Hill) effect.
+**As extracted:** CZ and its active metabolites drive percent anticonvulsant effect (in %): delayed effect through transit (transduction) compartments.
 
 **Model:** No model was generated from this record.
 
-> The paper models camazepam's percent anticonvulsant effect (%) with a sigmoid Emax relationship driven by camazepam and its active metabolites (temazepam, oxazepam, hydroxy CZ) acting via receptor binding, but the excerpts provide no mechanism detail and no potency or rate parameter values (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) are stated.
+> No pharmacodynamic model description, mechanism, or parameter values are provided in the available paper excerpts or record.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Morino_1986`
-- **model family:** `sigmoid_emax`
+- **model family:** `transduction`
 - **driver:** `not_resolved`
 - **tier:** descriptive
 - **effect:** stimulation/unknown

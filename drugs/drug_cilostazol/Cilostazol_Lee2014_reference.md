@@ -4,7 +4,7 @@
 
 # cilostazol — `Cilostazol_Lee2014_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed 1/2</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333), gpt-oss:120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -20,7 +20,7 @@
 
 The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has cilostazol, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cilostazol, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -28,7 +28,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Lee D et al., Population pharmacokinetic analysis of…, Therapeutic drug monitoring (2014)
   ·  DOI: [10.1097/FTD.0000000000000077](https://doi.org/10.1097/FTD.0000000000000077)
 
-<div class="pk-model-meta" hidden drug="cilostazol" model-id="Cilostazol_Lee2014_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="cilostazol" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="cilostazol" model-id="Cilostazol_Lee2014_reference" status="rejected" stale="false" population="healthy adults" measured-compound="cilostazol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.
@@ -50,9 +50,9 @@ Lee D et al., Population pharmacokinetic analysis of…, Therapeutic drug monito
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped duplicate Q49 ('evening absorption rate constant', value 0.234) — already have one for this compound
-- covariate category for kabs from footnote/prose kept as documentation only (['Lee_2014:abstract'])
-- covariate category for CL from footnote/prose kept as documentation only (['Lee_2014:abstract'])
+- unit_dimension_mismatch: 'seasonal variation in the absorption rate constant' → Q49 (unit 'dimensionless' vs ontology '1 / [time]') — route to review
+- dropped duplicate Q49 ('seasonal variation in the absorption rate constant', value 26.9) — already have one for this compound
+- dropped unlinked row (NIL): 'seasonal variation in the clearance' — extend the ontology if this is a real PK parameter (source ['Lee_2014:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=cilostazol
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
@@ -60,22 +60,26 @@ Lee D et al., Population pharmacokinetic analysis of…, Therapeutic drug monito
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Lee_2014_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Lee_2014_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  1 of 2 readers agree  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | confirmed | 1.0 (5/5 fields) | none |
+| `gpt-oss-120b` | not confirmed | 0.333 (2/6 fields) | 4 |
 | `gpt-oss:120b` | not confirmed | 0.333 (2/6 fields) | 4 |
 
-<details><summary>4 field discrepancies</summary>
+<details><summary>8 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[morning absorption rate constant]` | 0.278 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[morning absorption rate constant]` | not captured | 0.278 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | cilostazol | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | cilostazol | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[morning absorption rate constant]` | 0.278 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[morning absorption rate constant]` | not captured | 0.278 | only_one_extracted |
 | `gpt-oss:120b` | `screen.dose_compound` | cilostazol | unknown | mismatch |
@@ -105,7 +109,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_cilostazol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Lee_2014` / `Lee_2014::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_cilostazol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Lee_2014` / `Lee_2014::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -121,4 +125,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 12:40 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 22:08 UTC</sub>

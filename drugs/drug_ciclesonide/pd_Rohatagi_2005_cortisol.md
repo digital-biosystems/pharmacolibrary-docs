@@ -18,9 +18,9 @@
 
 **Model:** No model was generated from this record.
 
-> The paper models ciclesonide (via its active metabolite des-CIC) inhibiting circadian endogenous cortisol release with an Emax-type inhibitory model, but the excerpts provide no concentration–response values (Imax, IC50, Emax, gamma) and no mechanism details beyond inhibition.
+> The record identifies des-CIC as the driver compound that inhibits circadian endogenous cortisol release via an Emax model, but the specific mechanism (e.g., production vs. elimination) and all key potency or rate parameters (e.g., IC50, ke0, Emax) are not provided in the paper excerpts.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Rohatagi_2005`
 - **model family:** `emax`

@@ -1,0 +1,69 @@
+{
+ "model_id": "Chloroquine_Franco2023_PD_r",
+ "note": "Values for the shared PD_SigmoidEmaxSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 0.982,
+  "EC50": 24.4,
+  "Emax": -0.01,
+  "exposure_per_s": 1.0,
+  "gamma": 1.7
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 0.9820000000000001,
+  "24.4": 0.9770000000000001
+ },
+ "stop_time": 250.0,
+ "subtitle": "cell viability (R) against chloroquine concentration",
+ "template": "PD_SigmoidEmaxSweep",
+ "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Concentration–response simulated by the PD model",
+ "units": {
+  "E0": {
+   "display_only": false,
+   "display_unit": "%",
+   "factor": 0.01,
+   "si_unit": "1"
+  },
+  "EC50": {
+   "display_only": true,
+   "display_unit": "μM",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "Emax": {
+   "display_only": false,
+   "display_unit": "%",
+   "factor": 0.01,
+   "si_unit": "1"
+  },
+  "exposure": {
+   "display_only": true,
+   "display_unit": "μM",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "gamma": {
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "response_unit": "%"
+ },
+ "x_axis": {
+  "display_unit": "μM",
+  "factor": 1.0,
+  "label": "chloroquine concentration",
+  "per_s": 1.0,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "%",
+  "factor": 0.01,
+  "label": "cell viability (R)"
+ }
+}

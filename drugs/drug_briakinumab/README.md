@@ -17,7 +17,7 @@ Briakinumab, a monoclonal antibody that blocks interleukin signalling, was inves
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 23:36 | 2:21 | 0/0/0 | 1/0/1 | 0/0/0 | 89,286/2,288 | einfracz / qwen3.8-27b | 4 | 4/0 | 4/0 | 0 |
+| 2026-10-14 21:00 | 0:29 | 0/0/0 | 1/0/1 | 0/0/0 | 71,540/2,471 | einfracz / qwen3.8-27b | 4 | 4/0 | 4/0 | 0 |
 
 ## popPK records
 
@@ -28,8 +28,19 @@ _not available_
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> | [Checchio_2017_PASI75](drugs/drug_briakinumab/pd_Checchio_2017_PASI75.md) | PASI75 ← briakinumab · direct sigmoid Emax (Hill) effect | — | Checchio T et al., Quantitative Evaluations of Time-Course…, Clinical pharmacology and t… (2017) | [10.1002/cpt.732](https://doi.org/10.1002/cpt.732) |
-| <span class="pk-badge pk-badge--orange">needs review</span> | [He_2021_PASI75](drugs/drug_briakinumab/pd_He_2021_PASI75.md) | proportion of patients achieving ≥75% reduction from baseline Psoriasis Area and Severity Index score ← briakinumab · direct sigmoid Emax (Hill) effect | — | He H et al., Model-Based Meta-Analysis in Psoriasis:…, Frontiers in pharmacology (2021) | [10.3389/fphar.2021.586827](https://doi.org/10.3389/fphar.2021.586827) |
-| <span class="pk-badge pk-badge--orange">needs review</span> | [He_2021_PASI90](drugs/drug_briakinumab/pd_He_2021_PASI90.md) | proportion of patients achieving ≥90% reduction from baseline Psoriasis Area and Severity Index score ← briakinumab · direct sigmoid Emax (Hill) effect | — | He H et al., Model-Based Meta-Analysis in Psoriasis:…, Frontiers in pharmacology (2021) | [10.3389/fphar.2021.586827](https://doi.org/10.3389/fphar.2021.586827) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Checchio_2017_PASI75_2](drugs/drug_briakinumab/pd_Checchio_2017_PASI75_2.md) | PASI75 ← briakinumab · direct sigmoid Emax (Hill) effect | — | Checchio T et al., Quantitative Evaluations of Time-Course…, Clinical pharmacology and t… (2017) | [10.1002/cpt.732](https://doi.org/10.1002/cpt.732) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Checchio_2017_PASI90](drugs/drug_briakinumab/pd_Checchio_2017_PASI90.md) | PASI90 ← briakinumab · direct sigmoid Emax (Hill) effect | — | Checchio T et al., Quantitative Evaluations of Time-Course…, Clinical pharmacology and t… (2017) | [10.1002/cpt.732](https://doi.org/10.1002/cpt.732) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [He_2021_PASI75](drugs/drug_briakinumab/pd_He_2021_PASI75.md) | proportion of patients achieving ≥75% reduction from baseline Psoriasis Area and Severity Index score ← briakinumab · direct Emax (saturable) effect | — | He H et al., Model-Based Meta-Analysis in Psoriasis:…, Frontiers in pharmacology (2021) | [10.3389/fphar.2021.586827](https://doi.org/10.3389/fphar.2021.586827) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [He_2021_PASI90](drugs/drug_briakinumab/pd_He_2021_PASI90.md) | proportion of patients achieving ≥90% reduction from baseline Psoriasis Area and Severity Index score ← briakinumab · direct Emax (saturable) effect | — | He H et al., Model-Based Meta-Analysis in Psoriasis:…, Frontiers in pharmacology (2021) | [10.3389/fphar.2021.586827](https://doi.org/10.3389/fphar.2021.586827) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=briakinumab).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: IL12B (unknown), IL23A (unknown).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -40,31 +51,22 @@ _not available_
 ## Coverage
 
 - **PubMed hits:** 9 matched, 9 returned
-- **screened:** 1  ·  **relevant:** 1
+- **screened:** 1  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
-
-## Full-text requests
-
-_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Kelly_2016.pdf` | Kelly RL et al., Target-independent variable region medi…, mAbs (2016) | popPK | 7 | [10.1080/19420862.2016.1208330](https://doi.org/10.1080/19420862.2016.1208330) | [27610650](https://pubmed.ncbi.nlm.nih.gov/27610650) | The study reports qualitative PK findings (faster clearance) for briakinumab in mice, but specific numeric parameter values are not provided in the evidence. |
-
-<sub>queue written 2026-10-06T23:35:43.932619+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Checchio_2017 | irrelevant | 0 | 0 | This is a pharmacodynamic meta-analysis modeling Psoriasis Area and Severity Index (PASI) response, not a pharmacokinetic study reporting disposition parameters (CL, V, ka) for briakinumab. |
-| popPK | He_2021 | irrelevant | 0 | 0 | The study is a pharmacodynamic/efficacy meta-analysis modeling PASI scores, not a pharmacokinetic study, and contains no PK parameters for briakinumab. |
-| popPK | Jensen_2017 | irrelevant | 1 | 0 | This is a mechanistic/in vitro study on FcRn binding mechanisms, not a pharmacokinetic study reporting quantitative disposition parameters (CL, V, Q, ka) or compartmental models for briakinumab in vivo. |
-| popPK | Kelly_2016 | relevant | 7 | 2 | The study reports qualitative PK findings (faster clearance) for briakinumab in mice, but specific numeric parameter values are not provided in the evidence. |
-| popPK | Kerbusch_2020 | irrelevant | 0 | 0 | The study focuses on tildrakizumab, not briakinumab. |
-| PGx | Schoch_2015 | not_relevant | 0 | 0 | The paper describes FcRn-mediated PK mechanisms of briakinumab via charge interactions, not the influence of human gene variants or genotypes. |
-| popPK | Spanke_2026 | irrelevant | 0 | 0 | The paper is a computational and biophysical study on antibody framework design and developability (aggregation, viscosity, surface patches) and does not report pharmacokinetic parameters for briakinumab. |
+| popPK | Checchio_2017 | irrelevant | 0 | 0 | The paper is a pharmacodynamic model-based meta-analysis of psoriasis treatments (including briakinumab) that focuses on efficacy endpoints (PASI scores) rather than pharmacokinetic parameters. |
+| popPK | He_2021 | irrelevant | 0 | 0 | The paper is a pharmacodynamic efficacy meta-analysis (PASI scores) and does not report pharmacokinetic parameters (CL, V, etc.) for briakinumab. |
+| popPK | Jensen_2017 | irrelevant | 2 | 0 | The study is mechanistic/in-vitro focusing on the molecular basis of FcRn binding, not a population PK model with quantitative disposition parameters (CL, V, etc.). |
+| popPK | Kelly_2016 | irrelevant | 4 | 0 | The study reports qualitative PK differences (faster clearance) in mice for briakinumab but lacks specific numeric parameter values (CL, V, t1/2) in the provided text. |
+| popPK | Kerbusch_2020 | irrelevant | 0 | 0 | The study analyzes the pharmacokinetics and exposure-response of tildrakizumab, not briakinumab. |
+| popPK | Schoch_2015 | relevant | 7 | 4 | Reports terminal half-life (48 h) for briakinumab in human FcRn transgenic mice, but lacks clearance, volume of distribution, and compartmental PK parameters; no human PK data. |
+| PGx | Schoch_2015 | not_relevant | 0 | 0 | The paper investigates the physical-chemical interaction between antibody variable domains and FcRn (structure-based), focusing on how the drug's own charge (not a patient's gene variant) affects its FcRn binding. |
+| popPK | Spanke_2026 | irrelevant | 0 | 0 | The paper focuses on antibody developability and structural analysis, not the pharmacokinetics of briakinumab, and no PK parameters are reported. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

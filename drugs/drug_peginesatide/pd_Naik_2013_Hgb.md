@@ -17,9 +17,9 @@
 
 **Model:** No model was generated from this record.
 
-> Peginesatide plasma concentrations (ng/mL) stimulate the endogenous production rate of red blood cell progenitor cells via a modified precursor-dependent lifespan indirect response model, with an estimated EC50 of 401 ng/mL and a maximum effect (Emax) of 0.542. The model incorporates a mean transit time for progenitor cells of 462 hours and for red blood cells of 1640 hours, alongside a baseline hemoglobin of 11.5 g/dL.
+> Peginesatide plasma concentrations (ng/mL) stimulate hemoglobin production via a modified precursor-dependent indirect response model, with an estimated Emax of 0.542 and an EC50 of 401 ng/mL. The model incorporates mean transit times of 1640 hours for red blood cells and 462 hours for progenitor cells to describe the delay between drug effect and observed hemoglobin changes.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Naik_2013`
 - **model family:** `indirect_response_iii`
@@ -34,16 +34,13 @@ Naik H et al., A Population Pharmacokinetic and Pharma…, PloS one (2013)
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | Drug concentration required for 50% of maximumresponse (EC50) | `Q321` · not captured | 401 | ng/mL | not captured | llm (not captured) | Naik_2013:pdv3 |
 | PD (effect) | Maximum pharmacologic effect (Emax) | `Q320` · not captured | 0.542 | not captured | not captured | llm (not captured) | Naik_2013:pdv3 |
+| PD (effect) | Drug concentration required for 50% of maximumresponse (EC50) | `Q321` · not captured | 401 | ng/mL | not captured | llm (not captured) | Naik_2013:pdv3 |
 | PD (effect) | Hemoglobin at baseline | `Q324` · not captured | 11.5 | g/dL | not captured | llm (not captured) | Naik_2013:pdv3 |
-| PD (effect) | Mean transit time for red blood cells (MTT) | `Q338` · not captured | 1640 | hours | not captured | llm (not captured) | Naik_2013:pdv3 |
-| PD (effect) | Mean transit time for progenitor cells (MTP) | `Q338` · not captured | 462 | hours | not captured | llm (not captured) | Naik_2013:pdv3 |
-| model term | Residual effect of previous erythropoiesisstimulating agent dose (RSA) | `Q900` · not captured | 0.153 | not captured | not captured | llm (not captured) | Naik_2013:pdv3 |
-| model term | Correction factor (CF) | `Q900` · not captured | 2.75E–4 | not captured | not captured | llm (not captured) | Naik_2013:pdv3 |
-| variability | ω2 on EC50 | `Q312` · not captured | 8.92 | not captured | not captured | llm (not captured) | Naik_2013:pdv3 |
-| variability | ω2 on BL Hgb | `Q312` · not captured | 0.00485 | not captured | not captured | llm (not captured) | Naik_2013:pdv3 |
-| variability | ω2 on RSA Effect | `Q312` · not captured | 0.0130 | not captured | not captured | llm (not captured) | Naik_2013:pdv3 |
+| PD (effect) | Mean transit time for red blood cells (MTT) | `Q339` · not captured | 1640 | hours | not captured | llm (not captured) | Naik_2013:pdv3 |
+| PD (effect) | Mean transit time for progenitor cells (MTP) | `Q339` · not captured | 462 | hours | not captured | llm (not captured) | Naik_2013:pdv3 |
+| PD (effect) | Residual effect of previous erythropoiesisstimulating agent dose (RSA) | `Q327` · not captured | 0.153 | not captured | not captured | llm (not captured) | Naik_2013:pdv3 |
+| PD (effect) | Correction factor (CF) | `Q340` · not captured | 2.75E–4 | not captured | not captured | llm (not captured) | Naik_2013:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>

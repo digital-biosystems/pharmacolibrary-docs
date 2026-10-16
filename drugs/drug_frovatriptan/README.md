@@ -18,11 +18,23 @@ Frovatriptan is a selective serotonin receptor agonist used to treat migraine at
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 06:43 | 0:52 | 0/0/0 | 0/0/0 | 0/0/0 | 75,295/2,452 | einfracz / qwen3.8-27b | 7 | 3/6 | 7/0 | 0 |
+| 2026-10-15 04:17 | 1:01 | 0/0/0 | 0/0/0 | 0/0/0 | 75,295/2,429 | einfracz / qwen3.8-27b | 7 | 3/6 | 7/0 | 0 |
 
 ## popPK records
 
 _not available_
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=frovatriptan).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| metabolism | liver | `CYP1A2` substrate | DrugBank actor |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: HTR1B (target), HTR1D (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -39,75 +51,74 @@ _not available_
 
 ## Full-text requests
 
-_4 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Elkind_2004.pdf` | Elkind AH et al., Pharmacokinetics of frovatriptan in ado…, Journal of clinical pharmac… (2004) | popPK | 9 | [10.1177/0091270004268046](https://doi.org/10.1177/0091270004268046) | [15342617](https://pubmed.ncbi.nlm.nih.gov/15342617) | The study reports quantitative PK parameters (AUC, Cmax, t1/2) for frovatriptan in humans, though specific clearance and volume values are not explicitly listed in the provided text. |
-| `Rapoport_2001.pdf` | Rapoport AM, Frovatriptan: pharmacological differenc…, Current medical research an… (2001) | popPK | 5 | [10.1185/0300799039117006](https://doi.org/10.1185/0300799039117006) | [12463282](https://pubmed.ncbi.nlm.nih.gov/12463282) | The paper reports qualitative PK characteristics (half-life, Tmax, bioavailability) but lacks the specific quantitative compartmental or population PK parameter values (CL, V, Q, ka) required for extraction. |
+| `Elkind_2004.pdf` | Elkind AH et al., Pharmacokinetics of frovatriptan in ado…, Journal of clinical pharmac… (2004) | popPK | 8 | [10.1177/0091270004268046](https://doi.org/10.1177/0091270004268046) | [15342617](https://pubmed.ncbi.nlm.nih.gov/15342617) | The abstract reports specific quantitative PK parameters (AUC, Cmax, t1/2, tmax) for frovatriptan in humans. |
 | `Koishikawa_2025.pdf` | Koishikawa T et al., Bridging in vitro and clinical data: Ex…, Drug metabolism and disposi… (2025) | pd | 5 | [10.1016/j.dmd.2025.100087](https://doi.org/10.1016/j.dmd.2025.100087) | [40460516](https://www.ncbi.nlm.nih.gov/pubmed/40460516) | metadata signals extractable PD data (IC50) |
 | `Buchan_2002.pdf` | Buchan P et al., Clinical pharmacokinetics of frovatript…, Headache (2002) | pgx | 7 | [10.1046/j.1526-4610.42.s2.3.x](https://doi.org/10.1046/j.1526-4610.42.s2.3.x) | [12028321](https://www.ncbi.nlm.nih.gov/pubmed/12028321) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
 
-<sub>queue written 2026-10-07T06:43:33.115638+00:00</sub>
+<sub>queue written 2026-10-15T04:17:49.405933+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Adelman_2001 | irrelevant | 1 | 0 | The paper is a clinical review comparing migraine efficacy and tolerability; it mentions frovatriptan's long half-life qualitatively but contains no numeric PK parameter values or model outputs. |
-| popPK | Allais_2005 | irrelevant | 1 | 0 | The paper is a narrative review discussing therapeutic strategies for menstrual migraine and mentions frovatriptan only as a candidate drug based on its half-life, without providing any quantitative pharmacokinetic parameter values. |
-| popPK | Allais_2013 | irrelevant | 1 | 2 | This is a clinical review of efficacy and safety in menstrual migraine, not a pharmacokinetic study; it only cites qualitative features like "long half-life" and general bioavailability ranges from Table 1 without original PK disposition parameters (CL, V, etc.). |
-| popPK | Allais_2016 | irrelevant | 2 | 0 | The paper is a clinical review focused on efficacy and does not report quantitative pharmacokinetic disposition parameters (CL, V, Q) for frovatriptan, mentioning only its elimination half-life in passing. |
-| popPK | Ashkenazi_2003 | irrelevant | 0 | 0 | This is a general review of migraine management that qualitatively mentions frovatriptan but contains no original quantitative pharmacokinetic data. |
-| popPK | Balbisi_2004 | irrelevant | 2 | 0 | The text is a narrative review summarizing efficacy and general pharmacokinetic properties (mentioning a half-life of ~25h) but does not report quantitative disposition parameters like clearance, volume, or intercompartmental clearance from an original PK study. |
-| popPK | Balbisi_2006 | irrelevant | 1 | 0 | The paper is a review that mentions a terminal half-life but lacks original quantitative disposition parameters (CL, V) or a compartmental/population PK model. |
-| popPK | Belvis_2014 | irrelevant | 0 | 0 | This is a clinical review on migraine treatment that discusses triptans generally but contains no original quantitative pharmacokinetic parameter values for frovatriptan. |
+| popPK | Adelman_2001 | irrelevant | 1 | 0 | The paper is a narrative review comparing the clinical efficacy and general pharmacokinetic profiles of triptans without reporting any original quantitative disposition parameter values for frovatriptan. |
+| popPK | Allais_2005 | irrelevant | 0 | 0 | The paper is a narrative review discussing prophylactic strategies and clinical use, providing no original pharmacokinetic data or quantitative parameters. |
+| popPK | Allais_2013 | irrelevant | 2 | 0 | This is a clinical review of frovatriptan's efficacy in menstrual migraine that mentions half-life and bioavailability in a comparative table, but it does not report quantitative population PK parameters like clearance, volume, or compartmental models. |
+| popPK | Allais_2016 | irrelevant | 2 | 0 | The paper is a clinical review of efficacy in migraine and does not report original quantitative pharmacokinetic parameters (CL, V, Q, ka) for frovatriptan, only mentioning a qualitative half-life value in passing. |
+| popPK | Ashkenazi_2003 | irrelevant | 0 | 0 | The paper is a narrative review of migraine management that discusses frovatriptan's clinical profile (e.g., longer half-life) but provides no quantitative pharmacokinetic parameters or model results. |
+| popPK | Balbisi_2004 | irrelevant | 2 | 1 | The text is a general review/overview that mentions a half-life of approximately 25 hours but lacks other quantitative disposition parameters (CL, V, ka) required for population PK modeling. |
+| popPK | Balbisi_2006 | relevant | 4 | 1 | The paper is a review that reports a single qualitative PK parameter (terminal half-life ~26 hours) but lacks other quantitative disposition parameters (CL, V, Q) required for a full PK profile, and provides no population modeling data. |
+| popPK | Belvis_2014 | irrelevant | 0 | 0 | The paper is a general review on migraine treatment strategies and does not report original quantitative pharmacokinetic parameters for frovatriptan. |
 | PD | Belvis_2014 | not_relevant | 1 | 0 | The text is a qualitative review discussing the general pharmacokinetic and pharmacodynamic properties of triptans without providing specific numeric PD parameters or exposure-response data for frovatriptan. |
-| popPK | Belvís_2009 | irrelevant | 0 | 0 | The paper is a review discussing the clinical selection of triptans and does not report original quantitative pharmacokinetic parameters for frovatriptan. |
+| popPK | Belvís_2009 | irrelevant | 1 | 0 | The paper is a review article discussing triptan selection and mentions frovatriptan's pharmacokinetics qualitatively but contains no original quantitative PK parameter values. |
 | PD | Belvís_2009 | not_relevant | 1 | 0 | The text is a qualitative review of triptan selection and does not report any specific numeric pharmacodynamic parameters or exposure-response data for frovatriptan. |
 | popPK | Buchan_2002 | irrelevant | 0 | 0 | no_text gate: only 41 chars of text extracted (&lt; 400) |
 | PD | Buchan_2002 | not_relevant | 0 | 0 | The paper focuses on the clinical pharmacokinetics of frovatriptan and does not report any pharmacodynamic or exposure-response analysis with numeric PD parameters. |
-| PGx | Buchan_2002 | not_relevant | 1 | 1 | The paper title indicates a general pharmacokinetic review of frovatriptan and does not mention specific gene variants, genotypes, or pharmacogenomic effects. |
+| PGx | Buchan_2002 | not_relevant | 0 | 0 | The title indicates a general pharmacokinetic review of frovatriptan without mentioning specific gene variants or pharmacogenomic effects. |
 | popPK | Buchan_2002_2 | irrelevant | 0 | 0 | no_text gate: only 48 chars of text extracted (&lt; 400) |
 | PGx | Buchan_2002_2 | not_relevant | 0 | 0 | The paper reviews drug-drug interactions, not pharmacogenomic effects. |
-| popPK | Cady_2016 | irrelevant | 0 | 0 | The paper is a clinical review focusing on migraine patient management strategies; it mentions the half-life qualitatively but does not report original quantitative PK parameters or models for frovatriptan. |
+| popPK | Cady_2016 | irrelevant | 0 | 0 | The paper is a clinical review discussing patient profiles and general PK properties (half-life) without providing quantitative disposition parameters like CL, V, or ka. |
 | popPK | Comer_2002 | irrelevant | 0 | 0 | The paper describes in vitro and in vivo pharmacological mechanisms (receptor binding, vascular effects) rather than quantitative pharmacokinetic disposition parameters. |
 | PD | Comer_2002 | not_relevant | 3 | 1 | The paper describes qualitative pharmacological profiles (affinity, agonism, bell-shaped dose-response) but does not provide numeric PD parameters (EC50, Emax) or extractable concentration-effect curves in the provided text. |
-| popPK | Deleu_2000 | irrelevant | 2 | 0 | This is a comparative review article discussing second-generation triptans, including frovatriptan, but the provided evidence contains no quantitative PK parameters or specific numeric values. |
-| popPK | Easthope_2001 | irrelevant | 1 | 0 | The paper is a narrative review/drug profile that mentions a half-life of ~26 hours but lacks quantitative disposition parameters (CL, V, Q) or compartmental models. |
-| popPK | Elkind_2008 | irrelevant | 0 | 0 | This is a clinical review of therapeutic efficacy that mentions the drug's half-life but provides no quantitative pharmacokinetic parameters such as clearance, volume of distribution, or compartmental models. |
+| popPK | Deleu_2000 | irrelevant | 1 | 0 | The paper is a comparative review of second-generation triptans and contains no original quantitative pharmacokinetic parameter values in the provided text. |
+| popPK | Easthope_2001 | irrelevant | 2 | 1 | This is a review summary (black triangle) that mentions a half-life but lacks quantitative compartmental parameters (CL, V, Q) or a specific population PK model. |
+| popPK | Elkind_2008 | irrelevant | 1 | 0 | The text is a narrative review describing clinical use and mentions half-life only in context, without reporting quantitative PK parameters or models. |
 | popPK | Goldstein_2002 | irrelevant | 1 | 0 | The paper is a clinical efficacy and dose-finding study that does not report quantitative pharmacokinetic parameters (CL, V, ka, etc.) for frovatriptan. |
 | PD | Goldstein_2002 | not_relevant | 3 | 2 | The paper is a clinical dose-finding study that reports qualitative dose-response trends (efficacy plateau, AE increase) but does not provide numeric PD parameters (Emax, EC50) or a formal PK/PD model fit. |
-| popPK | Goldstein_2003 | irrelevant | 1 | 0 | This is a narrative review that mentions a half-life but provides no compartmental models, clearance, volume, or detailed quantitative PK parameters suitable for population modeling. |
-| popPK | Guidotti_2009 | irrelevant | 1 | 0 | The paper is a clinical/economic review comparing efficacy and cost, reporting only the terminal half-life without any compartmental PK parameters, clearance, or volume of distribution. |
-| popPK | Géraud_2003 | irrelevant | 1 | 0 | This is a review/meta-analysis discussing pharmacokinetic factors, but it does not report quantitative disposition parameters (CL, V, ka, etc.) for frovatriptan, only referencing its elimination half-life. |
-| popPK | Hamzah_2024 | relevant | 5 | 4 | The study reports pharmacokinetic data for frovatriptan in rats, including terminal half-life and AUC values, but lacks a full compartmental population model with specific CL and V parameters in the provided text. |
-| popPK | Jhee_2001 | irrelevant | 3 | 0 | This is a review article that summarizes general pharmacokinetic properties (half-life, bioavailability) but does not provide the specific quantitative disposition parameters (CL, V, ka) or PK model parameters required for extraction. |
+| popPK | Goldstein_2003 | relevant | 4 | 2 | The paper is a review that reports a quantitative parameter (half-life of 26 h) in the abstract, but lacks a full compartmental or population PK model with clearance and volume values. |
+| popPK | Guidotti_2009 | irrelevant | 0 | 0 | The paper is a clinical and economic review focused on efficacy and cost, not a pharmacokinetic study reporting quantitative disposition parameters like clearance or volume. |
+| popPK | Géraud_2003 | irrelevant | 2 | 0 | This is a review/meta-analysis discussing clinical efficacy and general half-life correlations, not a primary study reporting quantitative population pharmacokinetic parameters (CL, V, Q, ka) for frovatriptan. |
+| popPK | Hamzah_2024 | irrelevant | 5 | 2 | The study is a formulation paper on binary ethosomes, and while it conducts an in vivo PK study in rats, the extracted evidence provides only bioavailability (F) and AUC values, not the quantitative disposition parameters (CL, V, ka, t1/2, Q) or a compartmental model required for the extraction task. |
+| popPK | Jhee_2001 | irrelevant | 1 | 1 | This is a comparative review of triptans that provides general descriptors and a range for half-life but lacks quantitative disposition parameters like clearance or volume of distribution for frovatriptan. |
 | PD | Jhee_2001 | not_relevant | 1 | 0 | The text is a qualitative comparative review of pharmacokinetic properties and general efficacy, lacking any specific numeric PD parameters or concentration-effect analysis for frovatriptan. |
-| popPK | Kassem_2016 | irrelevant | 2 | 0 | The paper is a review of formulation approaches for triptans and does not report original quantitative pharmacokinetic parameters (CL, V, etc.) for frovatriptan. |
+| popPK | Kassem_2016 | irrelevant | 2 | 0 | The paper is a review article discussing formulation approaches and does not provide original quantitative pharmacokinetic parameter values for frovatriptan. |
 | popPK | Koishikawa_2025 | irrelevant | 0 | 0 | The study focuses on dolutegravir as an OCT2 inhibitor, and frovatriptan is only mentioned as a substrate for in vitro uptake experiments without reporting its pharmacokinetic parameters. |
 | PD | Koishikawa_2025 | not_relevant | 0 | 0 | The paper focuses on dolutegravir's inhibition of OCT2; frovatriptan is only mentioned as a substrate used to demonstrate variability in uptake kinetics, with no PD or exposure-response analysis performed for frovatriptan. |
-| popPK | MacGregor_2014 | irrelevant | 1 | 0 | This is a clinical review focused on efficacy and safety outcomes (pain-free rates, relapse rates) rather than quantitative pharmacokinetic disposition parameters (CL, V, Q), mentioning only half-life without associated volume or model data. |
-| popPK | Macone_2017 | irrelevant | 0 | 0 | The paper is a review of clinical use and formulation developments for triptans and does not report original quantitative pharmacokinetic parameters for frovatriptan. |
-| popPK | Markus_2007 | irrelevant | 1 | 1 | The text is a general review discussing clinical efficacy and tolerance, mentioning a plasma half-life of 26 hours but lacking the specific quantitative disposition parameters (CL, V, Q, ka) or compartmental models required for extraction. |
-| popPK | Negro_2011 | irrelevant | 2 | 0 | This is a review article that summarizes known properties (like half-life) but does not report original quantitative disposition parameters (CL, V, Q, ka) or population PK models with numeric values. |
+| popPK | MacGregor_2014 | irrelevant | 0 | 0 | The paper is a clinical review of frovatriptan's efficacy for menstrual migraine and does not report quantitative pharmacokinetic disposition parameters (CL, V, Q, ka) or population-PK models. |
+| popPK | Macone_2017 | irrelevant | 0 | 0 | This is a narrative review of triptan development and clinical use, containing no original quantitative pharmacokinetic parameter data for frovatriptan. |
+| popPK | Markus_2007 | irrelevant | 1 | 0 | The text is a narrative review describing clinical efficacy and general properties (half-life) but does not report specific quantitative pharmacokinetic parameters (CL, V, Q, ka) or compartmental model values. |
+| popPK | Negro_2011 | irrelevant | 2 | 0 | This is a review article that discusses pharmacokinetic properties in a qualitative manner without providing original quantitative disposition parameters or a PK model in the provided text. |
 | PD | Negro_2011 | not_relevant | 2 | 1 | The text is a review summarizing general pharmacokinetic and pharmacodynamic properties (e.g., receptor potency, half-life) but does not report specific numeric PD parameters (Emax, EC50) or an exposure-response curve for frovatriptan. |
-| popPK | Ohk_2022 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of sumatriptan, not frovatriptan. |
+| popPK | Ohk_2022 | irrelevant | 0 | 0 | The paper reports pharmacokinetic parameters for sumatriptan, not frovatriptan. |
 | PD | Ohk_2022 | not_relevant | 0 | 0 | The paper focuses exclusively on the population pharmacokinetics (PK) of sumatriptan and explicitly states that a PK/PD model was not established, offering no pharmacodynamic data or parameters. |
-| popPK | Parsons_1998 | irrelevant | 0 | 0 | The paper is an in-vitro pharmacodynamics study measuring contractile effects on isolated arteries and does not report any pharmacokinetic parameters. |
-| popPK | Rapoport_2001 | relevant | 5 | 0 | The paper reports qualitative PK characteristics (half-life, Tmax, bioavailability) but lacks the specific quantitative compartmental or population PK parameter values (CL, V, Q, ka) required for extraction. |
+| popPK | Parsons_1998 | irrelevant | 0 | 0 | The study investigates in-vitro pharmacodynamic effects (contractility) of frovatriptan in isolated arteries, not pharmacokinetic disposition parameters. |
+| popPK | Rapoport_2001 | relevant | 3 | 2 | The paper is a review describing frovatriptan's PK characteristics (half-life, Tmax, bioavailability) but lacks explicit clearance (CL) or volume (V) values required for a compartmental model, though these are standard for the drug. |
 | popPK | Rapoport_2002 | irrelevant | 0 | 0 | The paper is a clinical efficacy and safety study for migraine treatment and does not report any pharmacokinetic parameters for frovatriptan. |
-| popPK | Sanford_2012 | irrelevant | 2 | 0 | The paper is a review of efficacy and tolerability with no quantitative PK parameters (CL, V, ka) or compartmental models reported in the evidence. |
+| popPK | Sanford_2012 | irrelevant | 1 | 0 | This is a clinical review of efficacy and tolerability; the only PK value mentioned is a qualitative half-life approximation without clearance or volume parameters, and it lacks a compartmental or population-PK model. |
 | popPK | Silberstein_2009 | irrelevant | 0 | 0 | The paper is a clinical efficacy study for migraine prevention and does not report any pharmacokinetic parameters for frovatriptan. |
 | PD | Silberstein_2009 | not_relevant | 3 | 2 | The paper reports a clinical dose-response (efficacy difference between 2.5 mg QD and BID) but does not provide pharmacokinetic data or numeric PD parameters (e.g., EC50, Emax) required for a pharmacodynamic model. |
-| popPK | Tfelt-Hansen_2000 | irrelevant | 1 | 0 | The paper is a comparative review that only cites a half-life range (26-30h) without providing quantitative disposition parameters like clearance, volume, or compartmental model details for frovatriptan. |
+| popPK | Tfelt-Hansen_2000 | irrelevant | 3 | 1 | This is a comparative review that mentions frovatriptan's half-life (26-30h) but lacks the required quantitative disposition parameters (CL, V, Q) or a compartmental model. |
 | PD | Tfelt-Hansen_2000 | not_relevant | 1 | 0 | The text is a comparative review that lists clinical efficacy outcomes (therapeutic gain percentages) and PK parameters (half-life, bioavailability) but does not report any concentration-effect or dose-response curves, nor does it provide numeric PD parameters like Emax or EC50. |
 | popPK | Tfelt-Hansen_2011 | irrelevant | 0 | 0 | The paper is a clinical review of dose-response and tolerability, not a pharmacokinetic study, and contains no quantitative PK parameters (CL, V, ka, etc.) for frovatriptan. |
-| popPK | Tfelt-Hansen_2019 | irrelevant | 0 | 0 | The paper is a review of clinical efficacy (therapeutic gain/time to maximum effect) and does not report quantitative pharmacokinetic disposition parameters (CL, V, ka, etc.) for frovatriptan. |
+| popPK | Tfelt-Hansen_2019 | irrelevant | 1 | 0 | This is a review discussing the delay of therapeutic effect and does not report quantitative pharmacokinetic disposition parameters (CL, V, ka, etc.) for frovatriptan. |
 | PD | Tfelt-Hansen_2019 | not_relevant | 2 | 1 | The paper is a qualitative review discussing the delay of effect and comparing time to maximum effect (Emax) with Tmax, but it does not provide numeric concentration-effect parameters (like EC50 or slope) or a quantitative PD model for frovatriptan. |
 | popPK | Tullo_2014 | irrelevant | 0 | 0 | The paper is a clinical efficacy study for migraine treatment and does not report quantitative pharmacokinetic parameters for frovatriptan. |
 | PD | Tullo_2014 | not_relevant | 1 | 0 | The paper reports clinical efficacy outcomes (proportions of pain-free subjects) for fixed-dose combinations but does not provide pharmacokinetic data, concentration-effect curves, or numeric PD parameters (e.g., Emax, EC50) for frovatriptan. |
-| popPK | Verma_2014 | irrelevant | 1 | 0 | This is a pharmaceutical formulation study focused on in vitro/ex vivo permeation and tablet characteristics, reporting no in vivo pharmacokinetic parameters (CL, V, ka) for frovatriptan. |
+| popPK | Verma_2014 | irrelevant | 1 | 0 | The study is an in vitro/ex vivo formulation development paper reporting permeation coefficients and dissolution rates, not quantitative pharmacokinetic parameters (CL, V, ka) from a PK study in humans or animals. |
 | popPK | Wade_2009 | irrelevant | 0 | 0 | no_text gate: only 244 chars of text extracted (&lt; 400) |
 | popPK | Zheng_2021 | irrelevant | 0 | 0 | no_text gate: only 119 chars of text extracted (&lt; 400) |
 | popPK | unknown_2024 | irrelevant | 0 | 0 | no_text gate: only 52 chars of text extracted (&lt; 400) |

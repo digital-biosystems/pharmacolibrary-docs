@@ -21,25 +21,35 @@ Teriflunomide is an immunosuppressant used to treat relapsing-remitting multiple
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
 | teriflunomide | parent | 270.207 | C12H9F3N2O2 | DrugBank | [54684141](https://pubchem.ncbi.nlm.nih.gov/compound/54684141) | Hopkins_2015 |
-| leflunomide | metabolite | 270.21 | C12H9F3N2O2 | PubChem | [3899](https://pubchem.ncbi.nlm.nih.gov/compound/3899) | Hopkins_2015 |
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 00:38 | 3:16 | 0/1/0 | 1/0/0 | 0/0/0 | 315,549/23,245 | einfracz / qwen3.8-27b | 6 | 0/6 | 6/0 | 1 |
+| 2026-10-14 23:06 | 5:00 | 0/1/0 | 0/0/0 | 0/0/0 | 273,505/22,064 | einfracz / qwen3.8-27b | 6 | 0/6 | 6/0 | 1 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Hopkins_2015_reference](drugs/drug_teriflunomide/Teriflunomide_Hopkins2015_reference.md) | — | parent + metabolite (no model) | 0 | Hopkins AM et al., Semiphysiologically Based Pharmacokinet…, CPT: pharmacometrics & syst… (2015) | [10.1002/psp4.46](https://doi.org/10.1002/psp4.46) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Hopkins_2015_reference](drugs/drug_teriflunomide/Teriflunomide_Hopkins2015_reference.md) | — | 1-compartment (no model) | 0 | Hopkins AM et al., Semiphysiologically Based Pharmacokinet…, CPT: pharmacometrics & syst… (2015) | [10.1002/psp4.46](https://doi.org/10.1002/psp4.46) |
 
-## Pharmacodynamics (PD)
+## ADME sites
 
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 0.00).">in vitro</span> | [Lang_2023_viral_inhibition](drugs/drug_teriflunomide/pd_Lang_2023_viral_inhibition.md) | viral inhibition ← teriflunomide · inhibition effect | — | Lang P et al., Biochemistry and biophysics… (2023) | [10.1016/j.bbrep.2022.101395](https://doi.org/10.1016/j.bbrep.2022.101395) |
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=teriflunomide).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCG2` inhibitor/substrate | DrugBank actor |
+| absorption | liver | `ABCG2` inhibitor/substrate | DrugBank actor |
+| absorption | mammary gland | `ABCG2` inhibitor/substrate | DrugBank actor |
+| absorption | small intestine | `ABCG2` inhibitor/substrate | DrugBank actor |
+| absorption | testis | `ABCG2` inhibitor/substrate | DrugBank actor |
+| metabolism | liver | `CYP1A2` inducer, `CYP2C8` inhibitor, `SLCO1B1` inhibitor | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: DHODH (inhibitor), HMGCR (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -60,24 +70,24 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Yao_2019.pdf` | Yao X et al., A population pharmacokinetic study to a…, European journal of pharmac… (2019) | popPK | 10 | [10.1016/j.ejps.2019.05.020](https://doi.org/10.1016/j.ejps.2019.05.020) | [31154006](https://pubmed.ncbi.nlm.nih.gov/31154006) | The paper reports a population pharmacokinetic model for teriflunomide with covariates, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract or evidence text. |
+| `Yao_2019.pdf` | Yao X et al., A population pharmacokinetic study to a…, European journal of pharmac… (2019) | popPK | 10 | [10.1016/j.ejps.2019.05.020](https://doi.org/10.1016/j.ejps.2019.05.020) | [31154006](https://pubmed.ncbi.nlm.nih.gov/31154006) | The paper describes a relevant population PK model for teriflunomide, but the extracted evidence contains only qualitative descriptions of the model and covariates, with no numeric parameter values (CL, V, etc.) provided in the text. |
 
-<sub>queue written 2026-10-07T00:36:01.479960+00:00</sub>
+<sub>queue written 2026-10-14T23:01:49.049414+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Hersh_2024 | irrelevant | 0 | 0 | The study analyzes brain atrophy outcomes using MRI data and lists teriflunomide only as a low-efficacy comparator drug; it does not report any pharmacokinetic parameters. |
-| popPK | Hopkins_2016 | irrelevant | 0 | 0 | The study focuses on a time-to-event model for drug cessation and pharmacogenetics, not on the pharmacokinetic disposition parameters (CL, V, ka) of teriflunomide. |
-| popPK | Kaur_2021 | irrelevant | 0 | 0 | This is a narrative review of the efficacy and safety of DHODH inhibitors in COVID-19; it reports in vitro EC50 values and clinical outcomes but contains no quantitative pharmacokinetic parameters (CL, V, t1/2) for teriflunomide. |
-| popPK | Kruger_2023 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for ponesimod, not teriflunomide, which is mentioned only as a comparator. |
-| popPK | Lang_2023 | irrelevant | 0 | 0 | The study is an in vitro antiviral efficacy evaluation (EC50/CC50) and does not report pharmacokinetic disposition parameters (CL, V, ka, etc.) for teriflunomide. |
-| popPK | Pitzalis_2021 | irrelevant | 0 | 0 | The study investigates the impact of teriflunomide therapy on vaccine immunogenicity (antibody titers), not the pharmacokinetic disposition parameters (CL, V, etc.) of teriflunomide. |
-| popPK | Valenzuela_2022 | irrelevant | 0 | 0 | The study is an exposure-response analysis for ponesimod, with teriflunomide serving only as a comparator, and no teriflunomide PK parameters are reported. |
-| popPK | Wiese_2021 | irrelevant | 0 | 0 | The study is a pharmacodynamic/predictive analysis focusing on disease response outcomes (DAS28) rather than quantifying pharmacokinetic disposition parameters such as clearance or volume of distribution. |
-| popPK | Xiong_2020 | irrelevant | 0 | 0 | The paper focuses on antiviral activity and PK of new DHODH inhibitors (S312/S416) in mice and in vitro; teriflunomide is used only as a comparative agent in antiviral assays without reporting its PK parameters. |
-| popPK | Yao_2019 | relevant | 10 | 0 | The paper reports a population pharmacokinetic model for teriflunomide with covariates, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract or evidence text. |
+| popPK | Hersh_2024 | irrelevant | 0 | 0 | The study analyzes brain atrophy outcomes in multiple sclerosis patients and classifies teriflunomide as a low-efficacy disease-modifying therapy, but does not report any pharmacokinetic parameters for the drug. |
+| popPK | Hopkins_2016 | irrelevant | 1 | 0 | The study reports a time-to-event model for leflunomide cessation and uses teriflunomide exposure as a covariate, but it does not report primary pharmacokinetic parameters (CL, V, ka) for teriflunomide itself. |
+| popPK | Kaur_2021 | irrelevant | 0 | 0 | The paper is a narrative review focusing on the antiviral efficacy and safety of leflunomide/teriflunomide in COVID-19, containing no quantitative pharmacokinetic parameters (CL, V, ka, etc.). |
+| popPK | Kruger_2023 | irrelevant | 0 | 0 | The paper focuses on the pharmacokinetics of ponesimod, with teriflunomide mentioned only as a comparator in a clinical efficacy trial. |
+| popPK | Lang_2023 | irrelevant | 0 | 0 | The paper reports in vitro antiviral activity (EC50/CC50) against SARS-CoV-2, not pharmacokinetic disposition parameters like clearance or volume. |
+| popPK | Pitzalis_2021 | irrelevant | 0 | 0 | This is an immunology study assessing vaccine antibody responses in MS patients, not a pharmacokinetic study, and contains no PK parameters for teriflunomide. |
+| popPK | Valenzuela_2022 | irrelevant | 0 | 0 | The study is an exposure-response analysis for ponesimod where teriflunomide serves only as an active comparator, and no PK parameter values are reported for teriflunomide. |
+| popPK | Wiese_2021 | irrelevant | 1 | 0 | The study reports plasma drug concentrations (pharmacodynamics/pharmacogenomics) rather than quantitative pharmacokinetic parameters like clearance, volume of distribution, or rate constants. |
+| popPK | Xiong_2020 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of novel DHODH inhibitors S312 and S416, while Teriflunomide is only used as a pharmacological comparator in antiviral assays without any PK parameter reporting. |
+| popPK | Yao_2019 | relevant | 10 | 0 | The paper describes a relevant population PK model for teriflunomide, but the extracted evidence contains only qualitative descriptions of the model and covariates, with no numeric parameter values (CL, V, etc.) provided in the text. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 00:36 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-14 23:01 UTC</sub>

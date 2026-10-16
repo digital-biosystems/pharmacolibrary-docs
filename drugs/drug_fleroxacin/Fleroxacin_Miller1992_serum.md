@@ -4,7 +4,7 @@
 
 # fleroxacin — `Fleroxacin_Miller1992_serum`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.786). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75), gpt-oss-120b (not confirmed, agreement 0.786). Primary extraction retained.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -18,19 +18,21 @@
 
 ### Reviewer guidance
 
-**The central-to-peripheral transfer rate constant for fleroxacin was reported in an unrecognized unit, preventing a valid one-compartment model.**
+**C5 dimension mismatch on a structural parameter.**
 
-The first-order transfer rate constant from the central to the peripheral compartment is listed as 0.59 with the unit 'W-'. This unit is not a standard reciprocal time unit, causing a dimension mismatch for a rate parameter. Because the unit could not be converted to SI, the model structure was incomplete and the record was rejected. Extracted — fleroxacin: t1/2α 2.34 h, kel 0.554 h-', AUC 23.5 mg h/liter, Cmax 13.1 pg/mi, tmax 0 h, k12 0.59 W-, k21 0.97 h-'.
+A reported unit could not be converted (kel, AUC, Cmax and k12), so that value has no SI equivalent. Extracted — fleroxacin: t1/2α 2.34 h, kel 0.554 h-', AUC 23.5 mg h/liter, Cmax 13.1 pg/mi, tmax 0 h, k12 0.59 W-, k21 0.97 h-'.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[ice].parameter_id`: this record has Q47, the second reading Q57; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of ice: this record has 0.554, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
+
+> **Dose compound ≠ measured compound:** dosed `floxacin`, measured `fleroxacin`.
 
 ## Citation
 Miller MH et al., Fleroxacin pharmacokinetics in aqueous…, Antimicrobial agents and ch… (1992)
   ·  DOI: [10.1128/AAC.36.1.32](https://doi.org/10.1128/AAC.36.1.32)
 
-<div class="pk-model-meta" hidden drug="fleroxacin" model-id="Fleroxacin_Miller1992_serum" status="rejected" stale="false" population="New Zealand White rabbits" measured-compound="fleroxacin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="fleroxacin" model-id="Fleroxacin_Miller1992_serum" status="rejected" stale="false" population="adult male New Zealand White rabbits" measured-compound="fleroxacin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.
@@ -70,30 +72,26 @@ Miller MH et al., Fleroxacin pharmacokinetics in aqueous…, Antimicrobial agent
 - status held at route_to_review — not promoted
 - population split: 'serum' subgroup of Miller_1992 (paper reports 3 populations: aqueous humor, serum, vitreous humor)
 
-**Extraction notes:**
-- transposed table tab_1: parameters were across the columns, populations/subgroups down the first column — transposed for parsing
-- unparsed cell tab_1:row0:col1 = 'a3'
-- unparsed cell tab_1:row1:col1 = 'tl,2| (h)'
-- unparsed cell tab_1:row7:col1 = 'k12 (W-)'
-- unparsed cell tab_1:row8:col1 = "k2l (h-')"
-- LLM selected parameter table(s) 2
-
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss:120b` | not confirmed | 0.75 (9/12 fields) | 3 |
 | `gpt-oss-120b` | not confirmed | 0.786 (11/14 fields) | 3 |
 
-<details><summary>3 field discrepancies</summary>
+<details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `parameters[ice].parameter_id` | Q47 | Q57 | mismatch |
 | `gpt-oss-120b` | `parameters[k2l].parameter_id` | Q302 | Q47 | mismatch |
 | `gpt-oss-120b` | `parameters[tl,2|].parameter_id` | Q59 | Q60 | mismatch |
+| `gpt-oss:120b` | `parameters[ice]` | 0.554 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[k2l]` | 0.97 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[tl,2|].parameter_id` | Q59 | Q57 | mismatch |
 
 </details>
 
@@ -126,7 +124,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_fleroxacin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Miller_1992` / `Miller_1992::serum`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_fleroxacin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Miller_1992` / `Miller_1992::serum`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -142,4 +140,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 11:53 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 22:52 UTC</sub>

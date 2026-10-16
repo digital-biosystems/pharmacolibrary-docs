@@ -17,22 +17,22 @@
 
 ### Reviewer guidance
 
-**The elimination rate constant's unit, Vc,lwt70, is not a standard pharmacokinetic unit, causing a dimension mismatch that rejected the record.**
+**C5 dimension mismatch on a structural parameter.**
 
-The parameter labeled as the elimination rate constant has a value of 1.2 with the unit Vc,lwt70, which is not a recognized rate unit. This non-standard unit prevented conversion to SI, leading to a dimension mismatch on a structural parameter. Additionally, the second reader identified missing parameters for additive concentration and blood volume that were not present in the record. Extracted — ofatumumab: kabs 0.157 day−1, Fab 0.685, V1 2.62 L, kel 1.2 Vc,lwt70, CL 0.34 L/day, Q 0.358 L/day, V2 2.8 L, KD 0.167 nmol/L, … (+2).
+A reported unit could not be converted (kel, KD and Ctrough), so that value has no SI equivalent. Extracted — ofatumumab: kabs 0.157 day⁻¹, Fab 0.685, V1 2.62 L, kel 1.2 V_c,Iwt70, CL 0.34 L/day, Q 0.358 L/day, V2 2.8 L, KD 0.167 nmol/L, … (+3).
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has ofatumumab, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Yu H et al., Population Pharmacokinetic-B Cell Model…, CNS drugs (2022)
   ·  DOI: [10.1007/s40263-021-00895-w](https://doi.org/10.1007/s40263-021-00895-w)
 
-<div class="pk-model-meta" hidden drug="ofatumumab" model-id="Ofatumumab_Yu2022_reference" status="rejected" stale="false" population="adults with relapsing multiple sclerosis" measured-compound="ofatumumab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="ofatumumab" model-id="Ofatumumab_Yu2022_reference" status="rejected" stale="false" population="adult patients with relapsing multiple sclerosis" measured-compound="ofatumumab" parameterization="mechanistic" topology="general_linear"></div>
 
-**Model structure:** 2-compartment; no model was built for this record.  
-**Parameters:** 10 extracted.
+**Model structure:** general linear; no model was built for this record.  
+**Parameters:** 11 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -41,16 +41,17 @@ Yu H et al., Population Pharmacokinetic-B Cell Model…, CNS drugs (2022)
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| ka (day−1) | `Q49` · kabs | 0.157 | day−1 | 1.8171296296296296e-06 | [1] / [d] | 5.80 | exact (1.0) | Tab3:row2:col1, Tab3:row2:col2 | — | 0.652 (None% RSE) |
-| F (–) | `Q40` · Fab | 0.685 | not captured | not captured | not captured | 3.10 | exact (1.0) | Tab3:row4:col1, Tab3:row4:col2 | — | 0.531 (None% RSE) |
-| Vc (L) | `Q63` · V1 | 2.62 | L | 0.0026200000000000004 | [l] | 2.11 | exact (1.0) | Tab3:row5:col1, Tab3:row5:col2 | — | 0.116 (None% RSE) |
-| β(Vc,lwt70) | `Q47` · kel | 1.2 | Vc,lwt70 | not captured | [vc] | 8.66 | exact (1.0) | Tab3:row6:col1, Tab3:row6:col2 | — | 1.14 (None% RSE) |
-| CL (L/day) | `Q22` · CL | 0.34 | L/day | 3.935185185185186e-09 | [l] / [d] | 2.99 | exact (1.0) | Tab3:row14:col1, Tab3:row14:col2 | — | 0.486 (None% RSE) |
-| Q (L/day) | `Q30` · Q | 0.358 | L/day | 4.1435185185185185e-09 | [l] / [d] | 10.9 | exact (1.0) | Tab3:row17:col1, Tab3:row17:col2 | — | 0.705 (None% RSE) |
-| Vp (L) | `Q64` · V2 | 2.8 | L | 0.0028 | [l] | not captured | exact (1.0) | Tab3:row19:col1 | — | not captured |
-| KD (nmol/L) | `Q331` · KD | 0.167 | nmol/L | not captured | [nM] / [l] | not captured | exact (1.0) | Tab3:row20:col1 | — | not captured |
-| koff (day−1) | `Q330` · koff | 5.53 | day−1 | 6.400462962962964e-05 | [1] / [d] | not captured | exact (1.0) | Tab3:row21:col1 | — | not captured |
-| QB (L/day) | `Q54` · Qb | 0.78 | L/day | 9.027777777777778e-09 | [l] / [d] | not captured | exact (1.0) | Tab3:row36:col1 | — | not captured |
+| k_a (day⁻¹) | `Q49` · kabs | 0.157 | day⁻¹ | 1.8171296296296296e-06 | [1] / [d] | 5.80 | exact (1.0) | Yu_2022_table_p9_1:row0:col1 | — | 0.652 (None% RSE) |
+| F (–) | `Q40` · Fab | 0.685 | not captured | not captured | not captured | 3.10 | exact (1.0) | Yu_2022_table_p9_1:row2:col1 | — | 0.531 (None% RSE) |
+| V_c (L) | `Q63` · V1 | 2.62 | L | 0.0026200000000000004 | [l] | 2.11 | exact (1.0) | Yu_2022_table_p9_1:row3:col1 | — | 0.116 (None% RSE) |
+| β(V_c,Iwt70) | `Q47` · kel | 1.2 | V_c,Iwt70 | not captured | [c] · [v_] | 8.66 | exact (1.0) | Yu_2022_table_p9_1:row4:col1 | — | 1.14 (None% RSE) |
+| CL (L/day) | `Q22` · CL | 0.34 | L/day | 3.935185185185186e-09 | [l] / [d] | 2.99 | exact (1.0) | Yu_2022_table_p9_1:row12:col1 | — | 0.486 (None% RSE) |
+| Q (L/day) | `Q30` · Q | 0.358 | L/day | 4.1435185185185185e-09 | [l] / [d] | 10.9 | exact (1.0) | Yu_2022_table_p9_1:row15:col1 | — | 0.705 (None% RSE) |
+| V_p (L) | `Q64` · V2 | 2.8 | L | 0.0028 | [l] | not captured | exact (1.0) | Yu_2022_table_p9_1:row17:col1 | — | not captured |
+| K_D (nmol/L) | `Q331` · KD | 0.167 | nmol/L | not captured | [nM] / [l] | not captured | exact (1.0) | Yu_2022_table_p9_1:row18:col1 | — | not captured |
+| k_off (day⁻¹) | `Q330` · koff | 5.53 | day⁻¹ | 6.400462962962964e-05 | [1] / [d] | not captured | exact (1.0) | Yu_2022_table_p9_1:row19:col1 | — | not captured |
+| B_0 (cells/µL) | `Q37` · Ctrough | 194 | cells/µL | not captured | [cells] / [µl] | 1.25 | llm (0.6) | Yu_2022_table_p9_1:row23:col1 | — | not captured |
+| QB (L/day) | `Q54` · Qb | 0.78 | L/day | 9.027777777777778e-09 | [l] / [d] | not captured | exact (1.0) | Yu_2022_table_p9_1:row34:col1 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -60,104 +61,67 @@ Yu H et al., Population Pharmacokinetic-B Cell Model…, CNS drugs (2022)
 ## Departures & gaps
 
 **Interpretation flags:**
-- table section iiv: 'ka (day−1)' routed out of structural estimates ('Inter-individual variability')
-- table section iiv: 'F (–)' routed out of structural estimates ('Inter-individual variability')
-- table section iiv: 'Vc (L)' routed out of structural estimates ('Inter-individual variability')
-- table section iiv: 'ke(P) (days−1)' routed out of structural estimates ('Inter-individual variability')
-- table section iiv: 'ksyn0 (nmol/L/day)' routed out of structural estimates ('Inter-individual variability')
-- table section iiv: 'R0 (nmol/L)' routed out of structural estimates ('Inter-individual variability')
-- table section iiv: 'CL (L/day)' routed out of structural estimates ('Inter-individual variability')
-- table section iiv: 'Q (L/day)' routed out of structural estimates ('Inter-individual variability')
-- table section iiv: 'kdes (year−1)' routed out of structural estimates ('Inter-individual variability')
-- table section iiv: 'ksyn∞ (nmol/L/day)' routed out of structural estimates ('Inter-individual variability')
-- table section iiv: 'B0 (cells/µL)' routed out of structural estimates ('Inter-individual variability')
-- table section iiv: 'Emax (–)' routed out of structural estimates ('Inter-individual variability')
-- table section iiv: 'EC50 (mg/L)' routed out of structural estimates ('Inter-individual variability')
-- table section iiv: 'Gamma (–)' routed out of structural estimates ('Inter-individual variability')
-- table section iiv: 'kout (day−1)' routed out of structural estimates ('Inter-individual variability')
-- table section iiv: 'Vb (L)' routed out of structural estimates ('Inter-individual variability')
-- dropped value-less row: 'β(ka,lwt70)' (captured trailing unit 'ka,lwt70' for child rows)
-- unit_dimension_unknown: 'Vc,lwt70' (kel)
-- dropped duplicate Q47 ('ke(P) (days−1)', value '1.31') — already have one for this compound
-- unit 'ka,lwt70' inherited from a section-header row for kel (not printed on this row itself) — see the unit_dimension_mismatch check below if this is wrong
-- unit_dimension_unknown: 'ka,lwt70' (kel)
-- dropped duplicate Q47 ('β(ke(P),AI)', value '0.713') — already have one for this compound
-- dropped PD-category row 'ksyn0 (nmol/L/day)' → Q327 (kin, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Tab3:row9:col1', 'Tab3:row9:col2'])
-- dropped value-less row: 'β(ksyn0,lwt70)' (captured trailing unit 'ksyn0,lwt70' for child rows)
-- dropped PD-category row 'R0 (nmol/L)' → Q336 (R0, category G13) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Tab3:row11:col1', 'Tab3:row11:col2'])
-- dropped value-less row: 'β(R0,AI)' (captured trailing unit 'R0,AI' for child rows)
-- unit_dimension_unknown: 'R0,IV' (kel)
-- dropped duplicate Q47 ('β(R0,IV)', value '0.987') — already have one for this compound
-- unit_dimension_unknown: 'CL,lwt70' (kel)
-- dropped duplicate Q47 ('β(CL,lwt70)', value '1.52') — already have one for this compound
-- dropped value-less row: 'β(CL,IV)' (captured trailing unit 'CL,IV' for child rows)
-- unit_dimension_mismatch: 'KD (nmol/L)' → Q331 (unit '[substance] / [length] ** 3' vs ontology '[mass] / [length] ** 3') — route to review
-- dropped duplicate Q47 ('kdes (year−1)', value '2.58') — already have one for this compound
-- dropped unlinked row (NIL): 'ksyn∞ (nmol/L/day)' — extend the ontology if this is a real PK parameter (source ['Tab3:row23:col1', 'Tab3:row23:col2'])
-- unit_dimension_unknown: 'ksyn∞,IV' (kel)
-- dropped duplicate Q47 ('β(ksyn∞,IV)', value '2.49') — already have one for this compound
-- dropped unlinked row (NIL): 'B0 (cells/µL)' — extend the ontology if this is a real PK parameter (source ['Tab3:row25:col1', 'Tab3:row25:col2'])
-- dropped value-less row: 'β(B0,lage38)' (captured trailing unit 'B0,lage38' for child rows)
-- unit_dimension_unknown: 'B0,lwt70' (kel)
-- dropped duplicate Q47 ('β(B0,lwt70)', value '0.271') — already have one for this compound
-- dropped PD-category row 'Emax (–)' → Q320 (Emax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Tab3:row28:col1', 'Tab3:row28:col2'])
-- unit_dimension_unknown: 'Emax,lBc200' (kel)
-- dropped duplicate Q47 ('β(Emax,lBc200)', value '0.275') — already have one for this compound
-- unit_dimension_unknown: 'Emax,APLIOS' (kel)
-- dropped duplicate Q47 ('β(Emax,APLIOS)', value '0.503') — already have one for this compound
-- dropped PD-category row 'EC50 (mg/L)' → Q321 (EC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Tab3:row31:col1', 'Tab3:row31:col2'])
-- dropped PD-category row 'Gamma (–)' → Q325 (Hill, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Tab3:row32:col1', 'Tab3:row32:col2'])
-- dropped PD-category row 'kout (day−1)' → Q328 (kout, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Tab3:row33:col1', 'Tab3:row33:col2'])
-- dropped value-less row: 'β(kout,lwt70)' (captured trailing unit 'kout,lwt70' for child rows)
-- dropped value-less row: 'β(kout,MIRROR)' (captured trailing unit 'kout,MIRROR' for child rows)
-- unit_dimension_mismatch: 'Vb (L)' → Q54 (unit '[length] ** 3' vs ontology '[length] ** 3 / [time]') — route to review
-- dropped duplicate Q54 ('Vb (L)', value '3.7') — already have one for this compound
-- dropped unlinked row (NIL): 'Corr_Vb_Emax' — extend the ontology if this is a real PK parameter (source ['Tab3:row38:col1', 'Tab3:row38:col2'])
-- dropped PD-category row 'Corr_kout_Vb' → Q328 (kout, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Tab3:row39:col2', 'Tab3:row40:col1', 'Tab3:row40:col2'])
-- dropped value-less row: 'Corr_ka_CL'
-- dropped unlinked row (NIL): 'Corr_kdes_CL' — extend the ontology if this is a real PK parameter (source ['Tab3:row42:col1', 'Tab3:row42:col2'])
-- dropped unlinked row (NIL): 'Corr_kdes_ka' — extend the ontology if this is a real PK parameter (source ['Tab3:row43:col1', 'Tab3:row43:col2'])
-- dropped value-less row: 'Corr_ke(P)_R0'
-- dropped unlinked row (NIL): 'Corr_ksyn∞_R0' — extend the ontology if this is a real PK parameter (source ['Tab3:row45:col1', 'Tab3:row45:col2'])
-- dropped value-less row: 'Corr_ksyn∞_ke(P)' (captured trailing unit 'P' for child rows)
-- dropped unlinked row (NIL): 'Ofatumumab conc. additive (mg/L)' — extend the ontology if this is a real PK parameter (source ['Tab3:row47:col1', 'Tab3:row47:col2'])
-- dropped unlinked row (NIL): 'Ofatumumab conc. proportional' — extend the ontology if this is a real PK parameter (source ['Tab3:row48:col1', 'Tab3:row48:col2'])
-- dropped unlinked row (NIL): 'B cell count additive (cells/µL)' — extend the ontology if this is a real PK parameter (source ['Tab3:row49:col1'])
-- dropped unlinked row (NIL): 'B cell count proportional' — extend the ontology if this is a real PK parameter (source ['Tab3:row50:col1'])
+- table section iiv: 'k_a (day⁻¹)' routed out of structural estimates ('Inter-individual variability SD')
+- table section iiv: 'F (–)' routed out of structural estimates ('Inter-individual variability SD')
+- table section iiv: 'V_c (L)' routed out of structural estimates ('Inter-individual variability SD')
+- table section iiv: 'k_e(P) (days⁻¹)' routed out of structural estimates ('Inter-individual variability SD')
+- table section iiv: 'k_syn0 (nmol/L/day)' routed out of structural estimates ('Inter-individual variability SD')
+- table section iiv: 'R_0 (nmol/L)' routed out of structural estimates ('Inter-individual variability SD')
+- table section iiv: 'CL (L/day)' routed out of structural estimates ('Inter-individual variability SD')
+- table section iiv: 'Q (L/day)' routed out of structural estimates ('Inter-individual variability SD')
+- table section iiv: 'k_des (year⁻¹)' routed out of structural estimates ('Inter-individual variability SD')
+- table section iiv: 'k_syn∞ (nmol/L/day)' routed out of structural estimates ('Inter-individual variability SD')
+- table section iiv: 'B_0 (cells/µL)' routed out of structural estimates ('Inter-individual variability SD')
+- table section iiv: 'E_max (–)' routed out of structural estimates ('Inter-individual variability SD')
+- table section iiv: 'EC_50 (mg/L)' routed out of structural estimates ('Inter-individual variability SD')
+- table section iiv: 'Gamma (–)' routed out of structural estimates ('Inter-individual variability SD')
+- table section iiv: 'k_out (day⁻¹)' routed out of structural estimates ('Inter-individual variability SD')
+- table section iiv: 'V_b (L)' routed out of structural estimates ('Inter-individual variability SD')
+- unit_dimension_unknown: 'V_c,Iwt70' (kel)
+- dropped duplicate Q47 ('k_e(P) (days⁻¹)', value '1.31') — already have one for this compound
+- unit_dimension_unknown: 'P' (kel)
+- dropped duplicate Q47 ('β(k_e(P),AI)', value '0.713') — already have one for this compound
+- dropped PD-category row 'k_syn0 (nmol/L/day)' → Q327 (kin, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Yu_2022_table_p9_1:row7:col1'])
+- dropped PD-category row 'R_0 (nmol/L)' → Q336 (R0, category G13) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Yu_2022_table_p9_1:row9:col1'])
+- unit_dimension_unknown: 'R_0,IV' (kel)
+- dropped duplicate Q47 ('β(R_0,IV)', value '0.987') — already have one for this compound
+- unit_dimension_unknown: 'CL,Iwt70' (kel)
+- dropped duplicate Q47 ('β(CL,Iwt70)', value '1.52') — already have one for this compound
+- unit_dimension_mismatch: 'K_D (nmol/L)' → Q331 (unit '[substance] / [length] ** 3' vs ontology '[mass] / [length] ** 3') — route to review
+- dropped PD-category row 'k_des (year⁻¹)' → Q326 (ke0, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Yu_2022_table_p9_1:row20:col1'])
+- dropped unlinked row (NIL): 'k_syn∞ (nmol/L/day)' — extend the ontology if this is a real PK parameter (source ['Yu_2022_table_p9_1:row21:col1'])
+- unit_dimension_unknown: 'k_syn∞,IV' (kel)
+- dropped duplicate Q47 ('β(k_syn∞,IV)', value '2.49') — already have one for this compound
+- unit_dimension_unknown: 'cells/µL' (Ctrough)
+- unit_dimension_unknown: 'B_0,Iwt70' (kel)
+- dropped duplicate Q47 ('β(B_0,Iwt70)', value '0.271') — already have one for this compound
+- dropped PD-category row 'E_max (–)' → Q320 (Emax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Yu_2022_table_p9_1:row26:col1'])
+- unit_dimension_unknown: 'E_max,IBc200' (kel)
+- dropped duplicate Q47 ('β(E_max,IBc200)', value '0.275') — already have one for this compound
+- unit_dimension_unknown: 'E_max,APLIOS' (kel)
+- dropped duplicate Q47 ('β(E_max,APLIOS)', value '0.503') — already have one for this compound
+- dropped PD-category row 'EC_50 (mg/L)' → Q321 (EC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Yu_2022_table_p9_1:row29:col1'])
+- dropped PD-category row 'Gamma (–)' → Q325 (Hill, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Yu_2022_table_p9_1:row30:col1'])
+- dropped PD-category row 'k_out (day⁻¹)' → Q328 (kout, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Yu_2022_table_p9_1:row31:col1'])
+- unit_dimension_mismatch: 'V_b (L)' → Q30 (unit '[length] ** 3' vs ontology '[length] ** 3 / [time]') — route to review
+- dropped duplicate Q30 ('V_b (L)', value '3.7') — already have one for this compound
+- dropped PD-category row 'Corr_V_b-E_max' → Q320 (Emax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Yu_2022_table_p9_1:row36:col1'])
+- dropped unlinked row (NIL): 'Corr_k_out-V_b' — extend the ontology if this is a real PK parameter (source ['Yu_2022_table_p9_1:row38:col1'])
+- dropped duplicate Q22 ('Corr_k_des-CL', value '0.642') — already have one for this compound
+- dropped unlinked row (NIL): 'Corr_k_des-k_a' — extend the ontology if this is a real PK parameter (source ['Yu_2022_table_p9_1:row41:col1'])
+- dropped unlinked row (NIL): 'Corr_k_syn∞-R_0' — extend the ontology if this is a real PK parameter (source ['Yu_2022_table_p9_1:row43:col1'])
+- dropped unlinked row (NIL): 'Ofatumumab conc. additive (mg/L)' — extend the ontology if this is a real PK parameter (source ['Yu_2022_table_p9_1:row45:col1'])
+- implicit units: 'B_0 (cells/µL)' — the LLM proposed 'cells/µL', whose dimension does not fit Q37; left unset
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=ofatumumab
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- topology: 1 first-order transfer(s) across 2 compounds → general_linear
 - status held at route_to_review — not promoted
 - molar mass: none found for 'ofatumumab' — its concentrations stay mass-only
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- unparsed cell Tab3:row2:col4 = '3.95 [52]'
-- unparsed cell Tab3:row3:col1 = '− 0.457'
-- unparsed cell Tab3:row4:col4 = '9.00 [72]'
-- unparsed cell Tab3:row5:col4 = '19.3 [NA]'
-- unparsed cell Tab3:row7:col4 = '5.10 [65]'
-- unparsed cell Tab3:row9:col4 = '64.1 [99]'
-- unparsed cell Tab3:row10:col1 = '− 1.52'
-- unparsed cell Tab3:row11:col4 = '4.66 [61]'
-- unparsed cell Tab3:row12:col1 = '− 0.544'
-- unparsed cell Tab3:row14:col4 = '4.66 [53]'
-- unparsed cell Tab3:row16:col1 = '− 1.07'
-- unparsed cell Tab3:row17:col4 = '27.3 [81]'
-- unparsed cell Tab3:row22:col4 = '7.01 [58]'
-- unparsed cell Tab3:row23:col4 = '10.3 [64]'
-- unparsed cell Tab3:row25:col4 = '2.63 [26]'
-- unparsed cell Tab3:row26:col1 = '− 0.282'
-- unparsed cell Tab3:row28:col4 = '4.17 [57]'
-- unparsed cell Tab3:row31:col4 = '9.68 [81]'
-- unparsed cell Tab3:row32:col4 = '4.79 [80]'
-- unparsed cell Tab3:row33:col4 = '4.64 [64]'
-- unparsed cell Tab3:row34:col1 = '− 0.624'
-- unparsed cell Tab3:row35:col1 = '− 0.554'
-- unparsed cell Tab3:row37:col4 = '5.16 [51]'
-- unparsed cell Tab3:row39:col1 = '− 0.336'
-- unparsed cell Tab3:row41:col1 = '− 0.294'
-- unparsed cell Tab3:row44:col1 = '− 0.551'
-- unparsed cell Tab3:row46:col1 = '− 0.464'
+- table Yu_2022_table_p9_1: unbound_uncertainty
+- table Yu_2022_table_p9_1: unparsed_numeric_cell
 - LLM selected parameter table(s) 3
 
 ## Validation
@@ -194,23 +158,24 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 10 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 11 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab3:row14:col1', 'Tab3:row14:col2'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab3:row17:col1', 'Tab3:row17:col2'] |
-| C5_dimension_Q330 | pass | 1 / [time] | not captured | not captured | not captured | ['Tab3:row21:col1'] |
-| C5_dimension_Q331 | fail | [substance] / [length] ** 3 | nmol/L | not captured | not captured | ['Tab3:row20:col1'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Tab3:row2:col1', 'Tab3:row2:col2'] |
-| C5_dimension_Q54 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab3:row36:col1'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab3:row5:col1', 'Tab3:row5:col2'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab3:row19:col1'] |
-| C5_unit_missing_Q47 | fail | 1 / [time] | Vc,lwt70 | not captured | not captured | ['Tab3:row6:col1', 'Tab3:row6:col2'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.34 | not captured | not captured | ['Tab3:row14:col1', 'Tab3:row14:col2'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Yu_2022_table_p9_1:row12:col1'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Yu_2022_table_p9_1:row15:col1'] |
+| C5_dimension_Q330 | pass | 1 / [time] | not captured | not captured | not captured | ['Yu_2022_table_p9_1:row19:col1'] |
+| C5_dimension_Q331 | fail | [substance] / [length] ** 3 | nmol/L | not captured | not captured | ['Yu_2022_table_p9_1:row18:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Yu_2022_table_p9_1:row0:col1'] |
+| C5_dimension_Q54 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Yu_2022_table_p9_1:row34:col1'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Yu_2022_table_p9_1:row3:col1'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Yu_2022_table_p9_1:row17:col1'] |
+| C5_unit_missing_Q37 | fail | [mass] / [length] ** 3 | cells/µL | not captured | not captured | ['Yu_2022_table_p9_1:row23:col1'] |
+| C5_unit_missing_Q47 | fail | 1 / [time] | V_c,Iwt70 | not captured | not captured | ['Yu_2022_table_p9_1:row4:col1'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.34 | not captured | not captured | ['Yu_2022_table_p9_1:row12:col1'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.0142 L/h | not captured | not captured | ['Tab3:row14:col1', 'Tab3:row14:col2'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 2.62 L | not captured | not captured | ['Tab3:row5:col1', 'Tab3:row5:col2'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 2.8 L | not captured | not captured | ['Tab3:row19:col1'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.0142 L/h | not captured | not captured | ['Yu_2022_table_p9_1:row12:col1'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 2.62 L | not captured | not captured | ['Yu_2022_table_p9_1:row3:col1'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 2.8 L | not captured | not captured | ['Yu_2022_table_p9_1:row17:col1'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -219,7 +184,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ofatumumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Yu_2022` / `Yu_2022::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ofatumumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Yu_2022` / `Yu_2022::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -235,4 +200,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 18:37 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 04:02 UTC</sub>

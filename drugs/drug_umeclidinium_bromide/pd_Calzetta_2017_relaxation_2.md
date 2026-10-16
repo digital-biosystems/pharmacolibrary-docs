@@ -18,9 +18,9 @@
 
 **Model:** No model was generated from this record.
 
-> Umeclidinium + vilanterol (55:22 ratio) produced concentration-dependent relaxation of 10 Hz EFS-induced cholinergic contractile tone in human isolated bronchi, described by an Emax model with Emax 99.6 ± 8.0% and pEC50 8.2 ± 0.4; the paper excerpts do not state the mechanism.
+> The paper does not provide a full text or explicit mechanistic description, but the record indicates an Emax model where the combination of umeclidinium and vilanterol inhibits the relaxation of cholinergic contractile tone in human isolated bronchi. The model is characterized by an Emax of 99.6 ± 8.0% and a pEC50 of 8.2 ± 0.4.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
 
 - **paper:** `Calzetta_2017`
 - **model family:** `emax`

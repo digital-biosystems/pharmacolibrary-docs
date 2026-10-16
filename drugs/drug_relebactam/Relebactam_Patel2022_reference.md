@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01D&quot;,&quot;href&quot;:&quot;atc/J01D.md&quot;},{&quot;label&quot;:&quot;Relebactam&quot;,&quot;href&quot;:&quot;drugs/drug_relebactam/&quot;},{&quot;label&quot;:&quot;Patel_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Relebactam_Fratoni2022_reference&quot;,&quot;label&quot;:&quot;Fratoni_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_relebactam/Relebactam_Fratoni2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Relebactam_Principe2022_reference&quot;,&quot;label&quot;:&quot;Principe_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_relebactam/Relebactam_Principe2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,13 +17,13 @@
 
 ### Reviewer guidance
 
-**The peripheral compartment for relebactam is orphaned because the intercompartmental clearance linking it to the central compartment is unassigned.**
+**The paper reports none of the model's key parameters.**
 
-The model specifies a peripheral compartment volume (V2) of 6.15 L for relebactam, yet the link parameter connecting this compartment to the central compartment is marked as none. The record lists an intercompartmental clearance value of 10.9 L/h, but this value is not assigned to any structural link. Consequently, the model structure contains an unreachable compartment, which is the reason for the record's rejection. Extracted — relebactam: CL 7.23 L/h, V1 11.2 L, V2 6.15 L, Q 10.9 L/h.
+No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has imipenem/cilastatin/relebactam, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `imipenem/cilastatin/relebactam`, measured `relebactam`.
 
@@ -31,82 +31,28 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Patel M et al., Population pharmacokinetic/pharmacodyna…, Clinical and translational… (2022)
   ·  DOI: [10.1111/cts.13158](https://doi.org/10.1111/cts.13158)
 
-<div class="pk-model-meta" hidden drug="Relebactam" model-id="Relebactam_Patel2022_reference" status="rejected" stale="false" population="adults with hospital-acquired/ventilator-associated bacterial pneumonia" measured-compound="relebactam" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="Relebactam" model-id="Relebactam_Patel2022_reference" status="rejected" stale="false" population="adult participants with HABP/VABP and healthy volunteers" measured-compound="relebactam" parameterization="mechanistic" topology="1C"></div>
 
-**Model structure:** general linear; no model was built for this record.  
-**Parameters:** 4 extracted.
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| CL (L/h) | `Q22` · CL | 7.23 | L/h | 2.0083333333333333e-06 | [l] / [h] | not captured | exact (1.0) | cts13158-tbl-0003:row3:col5, cts13158-tbl-0003:row3:col7 | — | not captured |
-| V1 (L) | `Q63` · V1 | 11.2 | L | 0.0112 | [l] | not captured | exact (1.0) | cts13158-tbl-0003:row4:col5, cts13158-tbl-0003:row4:col7 | — | not captured |
-| V2 (L) | `Q64` · V2 | 6.15 | L | 0.00615 | [l] | not captured | exact (1.0) | cts13158-tbl-0003:row5:col5, cts13158-tbl-0003:row5:col7 | — | not captured |
-| Q (L/h) | `Q30` · Q | 10.9 | L/h | 3.0277777777777776e-06 | [l] / [h] | not captured | exact (1.0) | cts13158-tbl-0003:row6:col5, cts13158-tbl-0003:row6:col7 | — | not captured |
-
-<details class="legend">
-<summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
-</details>
+_No resolved parameters._
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'CrCl (power)' — extend the ontology if this is a real PK parameter (source ['cts13158-tbl-0003:row8:col5', 'cts13158-tbl-0003:row8:col7'])
-- dropped unlinked row (NIL): 'Pneumonia f' — extend the ontology if this is a real PK parameter (source ['cts13158-tbl-0003:row10:col5', 'cts13158-tbl-0003:row10:col7', 'cts13158-tbl-0003:row13:col5', 'cts13158-tbl-0003:row13:col7'])
-- dropped unlinked row (NIL): 'WT (power)' — extend the ontology if this is a real PK parameter (source ['cts13158-tbl-0003:row12:col5', 'cts13158-tbl-0003:row12:col7'])
-- dropped unlinked row (NIL): 'Ventilation g' — extend the ontology if this is a real PK parameter (source ['cts13158-tbl-0003:row14:col5', 'cts13158-tbl-0003:row14:col7'])
-- NIL: refused to back-fill base 'CL' from footnote/prose loose number None (source ['cts13158-tbl-0003:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'V1' from footnote/prose loose number None (source ['cts13158-tbl-0003:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'V2' from footnote/prose loose number None (source ['cts13158-tbl-0003:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'Q' from footnote/prose loose number 10.93 (source ['cts13158-tbl-0003:footnote']); the table cell was unparseable — needs review
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=relebactam
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
-- status held at route_to_review — not promoted
+- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
-- unparsed cell cts13158-tbl-0003:row3:col2 = '12.3 to 13.1'
-- unparsed cell cts13158-tbl-0003:row3:col4 = '12.3 to 13.1'
-- unparsed cell cts13158-tbl-0003:row3:col6 = '7.00 to 7.47'
-- unparsed cell cts13158-tbl-0003:row3:col8 = '7.03 to 7.45'
-- unparsed cell cts13158-tbl-0003:row4:col2 = '10.5 to 12.3'
-- unparsed cell cts13158-tbl-0003:row4:col4 = '10.3 to 12.7'
-- unparsed cell cts13158-tbl-0003:row4:col6 = '10.6 to 11.8'
-- unparsed cell cts13158-tbl-0003:row4:col8 = '10.6 to 11.9'
-- unparsed cell cts13158-tbl-0003:row5:col2 = '6.90 to 8.68'
-- unparsed cell cts13158-tbl-0003:row5:col4 = '6.58 to 8.74'
-- unparsed cell cts13158-tbl-0003:row5:col6 = '5.68 to 6.62'
-- unparsed cell cts13158-tbl-0003:row5:col8 = '5.66 to 6.69'
-- unparsed cell cts13158-tbl-0003:row6:col2 = '18.0 to 28.1'
-- unparsed cell cts13158-tbl-0003:row6:col4 = '16.2 to 29.8'
-- unparsed cell cts13158-tbl-0003:row6:col6 = '9.22 to 12.6'
-- unparsed cell cts13158-tbl-0003:row6:col8 = '8.82 to 13.1'
-- unparsed cell cts13158-tbl-0003:row8:col2 = '0.44 to 0.52'
-- unparsed cell cts13158-tbl-0003:row8:col4 = '0.44 to 0.52'
-- unparsed cell cts13158-tbl-0003:row8:col6 = '0.68 to 0.81'
-- unparsed cell cts13158-tbl-0003:row8:col8 = '0.68 to 0.81'
-- unparsed cell cts13158-tbl-0003:row9:col2 = '0.19 to 0.39'
-- unparsed cell cts13158-tbl-0003:row9:col4 = '0.13 to 0.43'
-- unparsed cell cts13158-tbl-0003:row10:col2 = '–0.44 to –0.32'
-- unparsed cell cts13158-tbl-0003:row10:col4 = '–0.44 to–0.32'
-- unparsed cell cts13158-tbl-0003:row10:col6 = '–0.48 to–0.39'
-- unparsed cell cts13158-tbl-0003:row10:col8 = '–0.47 to–0.39'
-- unparsed cell cts13158-tbl-0003:row12:col2 = '0.83 to 1.23'
-- unparsed cell cts13158-tbl-0003:row12:col4 = '0.75 to 1.31'
-- unparsed cell cts13158-tbl-0003:row12:col6 = '0.51 to 0.79'
-- unparsed cell cts13158-tbl-0003:row12:col8 = '0.49 to 0.83'
-- unparsed cell cts13158-tbl-0003:row13:col2 = '–0.52 to–0.27'
-- unparsed cell cts13158-tbl-0003:row13:col4 = '–0.50 to–0.25'
-- unparsed cell cts13158-tbl-0003:row13:col6 = '–0.38 to–0.19'
-- unparsed cell cts13158-tbl-0003:row13:col8 = '–0.38 to–0.18'
-- unparsed cell cts13158-tbl-0003:row14:col2 = '0.02 to 0.45'
-- unparsed cell cts13158-tbl-0003:row14:col4 = '0.02 to 0.48'
-- unparsed cell cts13158-tbl-0003:row14:col6 = '0.13 to 0.58'
-- unparsed cell cts13158-tbl-0003:row14:col8 = '0.15 to 0.58'
+- table Patel_2022_table_p7_1: unbound_uncertainty
+- table Patel_2022_table_p7_1: unparsed_numeric_cell
+- final table cts13158-tbl-0003: no supported point estimates; targeted recovery unresolved
 - LLM selected parameter table(s) 3
 
 ## Validation
@@ -139,18 +85,9 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['cts13158-tbl-0003:row3:col5', 'cts13158-tbl-0003:row3:col7'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['cts13158-tbl-0003:row6:col5', 'cts13158-tbl-0003:row6:col7'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['cts13158-tbl-0003:row4:col5', 'cts13158-tbl-0003:row4:col7'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['cts13158-tbl-0003:row5:col5', 'cts13158-tbl-0003:row5:col7'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 7.23 | not captured | not captured | ['cts13158-tbl-0003:row3:col5', 'cts13158-tbl-0003:row3:col7'] |
-| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none'] | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 7.23 L/h | not captured | not captured | ['cts13158-tbl-0003:row3:col5', 'cts13158-tbl-0003:row3:col7'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 11.2 L | not captured | not captured | ['cts13158-tbl-0003:row4:col5', 'cts13158-tbl-0003:row4:col7'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 6.15 L | not captured | not captured | ['cts13158-tbl-0003:row5:col5', 'cts13158-tbl-0003:row5:col7'] |
+| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
+| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
+| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -159,7 +96,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_relebactam/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Patel_2022` / `Patel_2022::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_relebactam/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Patel_2022` / `Patel_2022::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -175,4 +112,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 11:44 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 00:30 UTC</sub>

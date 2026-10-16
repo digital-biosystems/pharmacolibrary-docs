@@ -19,9 +19,9 @@
 
 ### Reviewer guidance
 
-**C8 unreachable/orphan compartment or unlinked metabolite.**
+**C5 dimension mismatch on a structural parameter.**
 
-A reported unit could not be converted (AUC), so that value has no SI equivalent. Extracted — defibrotide: λ1 0.6, kel 0.054 1/h, k12 0.209 1/h, k21 0.357 1/h, AUC 1.65e+04 ng*h/mL, t1/2z 12.8 h, V 107 L, V2 13.9 L.
+A reported unit could not be converted (equation variable, t1/2α, λ2 and k12), so that value has no SI equivalent. Extracted — defibrotide: t1/2α 0.6 t, λ2 0.054 t, k12 0.209 t, k21 0.357 t, kel 0.091, AUC∞ 1.65e+04, V 107 t.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of 10: this record has none, the second reading 6.66; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -31,10 +31,10 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Pescador R et al., Pharmacokinetics of Defibrotide and of…, Thrombosis research (1983)
   ·  DOI: [10.1016/0049-3848(83)90391-2](https://doi.org/10.1016/0049-3848(83)90391-2)
 
-<div class="pk-model-meta" hidden drug="defibrotide" model-id="Defibrotide_Pescador1983_reference" status="rejected" stale="false" population="rabbits" measured-compound="defibrotide" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="defibrotide" model-id="Defibrotide_Pescador1983_reference" status="rejected" stale="false" population="rabbits" measured-compound="defibrotide" parameterization="mechanistic" topology="1C"></div>
 
-**Model structure:** 2-compartment; no model was built for this record.  
-**Parameters:** 8 extracted.
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 7 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -43,14 +43,14 @@ Pescador R et al., Pharmacokinetics of Defibrotide and of…, Thrombosis researc
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| α | `Q67` · λ1 | 0.60 | not captured | not captured | not captured | not captured | exact (1.0) | Pescador_1983_table_1:row1:col1, Pescador_1983_table_1:row1:col2, Pescador_1983_table_1:row1:col3, Pescador_1983_table_1:row1:col4, Pescador_1983_table_1:row1:col5 | — | not captured |
-| β | `Q47` · kel | 0.054 | 1/h | 1.5e-05 | 1/h | not captured | exact (1.0) | Pescador_1983_table_1:row3:col1, Pescador_1983_table_1:row3:col2, Pescador_1983_table_1:row3:col3, Pescador_1983_table_1:row3:col4, Pescador_1983_table_1:row3:col5 | — | not captured |
-| K12 | `Q301` · k12 | 0.209 | 1/h | 5.805555555555555e-05 | 1/h | not captured | exact (1.0) | Pescador_1983_table_1:row5:col1, Pescador_1983_table_1:row5:col2, Pescador_1983_table_1:row5:col3, Pescador_1983_table_1:row5:col4, Pescador_1983_table_1:row5:col5 | — | not captured |
-| K21 | `Q302` · k21 | 0.357 | 1/h | 9.916666666666666e-05 | 1/h | not captured | exact (1.0) | Pescador_1983_table_1:row6:col1, Pescador_1983_table_1:row6:col2, Pescador_1983_table_1:row6:col3, Pescador_1983_table_1:row6:col4, Pescador_1983_table_1:row6:col5 | — | not captured |
-| AUC | `Q88` · AUC | 16458.0 | ng*h/mL | not captured | ng*h/mL | not captured | exact (1.0) | Pescador_1983_table_1:row9:col1, Pescador_1983_table_1:row9:col2, Pescador_1983_table_1:row9:col3, Pescador_1983_table_1:row9:col4, Pescador_1983_table_1:row9:col5 | — | not captured |
-| T½ | `Q57` · t1/2z | 12.83 | h | 46188.0 | h | not captured | llm (0.6) | Pescador_1983_table_1:row10:col1, Pescador_1983_table_1:row10:col2, Pescador_1983_table_1:row10:col3, Pescador_1983_table_1:row10:col4, Pescador_1983_table_1:row10:col5 | — | not captured |
-| Vol | `Q61` · V | 106.7 | L | 0.1067 | L | not captured | llm (0.6) | Pescador_1983_table_1:row11:col1, Pescador_1983_table_1:row11:col2, Pescador_1983_table_1:row11:col3, Pescador_1983_table_1:row11:col4, Pescador_1983_table_1:row11:col5 | — | not captured |
-| 64 | `Q64` · V2 | 13.86 | L | 0.013859999999999999 | L | not captured | llm (0.6) | Pescador_1983_table_2:row4:col1, Pescador_1983_table_2:row4:col2, Pescador_1983_table_2:row4:col3, Pescador_1983_table_2:row4:col4 | — | not captured |
+| A µg/ml | `Q900` · equation variable | 671.6 | t | not captured | [t] | not captured | llm (0.6) | Pescador_1983_table_1:row0:col1, Pescador_1983_table_1:row1:col1, Pescador_1983_table_1:row2:col1, Pescador_1983_table_1:row3:col1, Pescador_1983_table_1:row4:col1 | — | not captured |
+| α min⁻¹ | `Q59` · t1/2α | 0.60 | t | not captured | [t] | not captured | llm (0.6) | Pescador_1983_table_1:row0:col2, Pescador_1983_table_1:row1:col2, Pescador_1983_table_1:row2:col2, Pescador_1983_table_1:row3:col2, Pescador_1983_table_1:row4:col2 | — | not captured |
+| β min⁻¹ | `Q68` · λ2 | 0.054 | t | not captured | [t] | not captured | llm (0.6) | Pescador_1983_table_1:row0:col4, Pescador_1983_table_1:row1:col4, Pescador_1983_table_1:row2:col4, Pescador_1983_table_1:row3:col4, Pescador_1983_table_1:row4:col4 | — | not captured |
+| K₁₂ min⁻¹ | `Q301` · k12 | 0.209 | t | not captured | [t] | not captured | llm_confirmed (0.6) | Pescador_1983_table_1:row0:col6, Pescador_1983_table_1:row1:col6, Pescador_1983_table_1:row2:col6, Pescador_1983_table_1:row3:col6, Pescador_1983_table_1:row4:col6 | — | not captured |
+| K₂₁ min⁻¹ | `Q302` · k21 | 0.357 | t | not captured | [t] | not captured | llm_confirmed (0.6) | Pescador_1983_table_1:row0:col7, Pescador_1983_table_1:row1:col7, Pescador_1983_table_1:row2:col7, Pescador_1983_table_1:row3:col7, Pescador_1983_table_1:row4:col7 | — | not captured |
+| Kel min⁻¹ | `Q47` · kel | 0.091 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | Pescador_1983_table_1:row0:col8, Pescador_1983_table_1:row1:col8, Pescador_1983_table_1:row2:col8, Pescador_1983_table_1:row3:col8, Pescador_1983_table_1:row4:col8 | — | not captured |
+| AUC µg·min/ml | `Q17` · AUC∞ | 16458.0 | not captured | not captured | not captured | not captured | llm_corrected (0.6) | Pescador_1983_table_1:row0:col10, Pescador_1983_table_1:row1:col10, Pescador_1983_table_1:row2:col10, Pescador_1983_table_1:row3:col10, Pescador_1983_table_1:row4:col10 | — | not captured |
+| Vol ml | `Q61` · V | 106.7 | t | not captured | [t] | not captured | llm (0.6) | Pescador_1983_table_1:row0:col12, Pescador_1983_table_1:row1:col12, Pescador_1983_table_1:row2:col12, Pescador_1983_table_1:row3:col12, Pescador_1983_table_1:row4:col12 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -60,32 +60,35 @@ Pescador R et al., Pharmacokinetics of Defibrotide and of…, Thrombosis researc
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'A' — extend the ontology if this is a real PK parameter (source ['Pescador_1983_table_1:row0:col1', 'Pescador_1983_table_1:row0:col2', 'Pescador_1983_table_1:row0:col3', 'Pescador_1983_table_1:row0:col4', 'Pescador_1983_table_1:row0:col5'])
-- dropped unlinked row (NIL): 'B' — extend the ontology if this is a real PK parameter (source ['Pescador_1983_table_1:row2:col1', 'Pescador_1983_table_1:row2:col2', 'Pescador_1983_table_1:row2:col3', 'Pescador_1983_table_1:row2:col4', 'Pescador_1983_table_1:row2:col5'])
-- dropped unlinked row (NIL): 'R²' — extend the ontology if this is a real PK parameter (source ['Pescador_1983_table_1:row4:col1', 'Pescador_1983_table_1:row4:col2', 'Pescador_1983_table_1:row4:col3', 'Pescador_1983_table_1:row4:col4', 'Pescador_1983_table_1:row4:col5'])
-- dropped duplicate Q47 ('Kel', value '0.091') — already have one for this compound
-- dropped unlinked row (NIL): 'Co' — extend the ontology if this is a real PK parameter (source ['Pescador_1983_table_1:row8:col1', 'Pescador_1983_table_1:row8:col2', 'Pescador_1983_table_1:row8:col3', 'Pescador_1983_table_1:row8:col4', 'Pescador_1983_table_1:row8:col5'])
+- column 'r²' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- unit_dimension_mismatch: 'α min⁻¹' → Q59 (unit '[mass]' vs ontology '[time]') — route to review
+- dropped duplicate Q900 ('B µg/ml', value '828.5') — already have one for this compound
+- unit_dimension_mismatch: 'β min⁻¹' → Q68 (unit '[mass]' vs ontology '[mass] / [time]') — route to review
+- dropped unlinked row (NIL): 'R²' — extend the ontology if this is a real PK parameter (source ['Pescador_1983_table_1:row0:col5', 'Pescador_1983_table_1:row1:col5', 'Pescador_1983_table_1:row2:col5', 'Pescador_1983_table_1:row3:col5', 'Pescador_1983_table_1:row4:col5'])
+- unit_dimension_mismatch: 'K₁₂ min⁻¹' → Q301 (unit '[mass]' vs ontology '1 / [time]') — route to review
+- unit_dimension_mismatch: 'K₂₁ min⁻¹' → Q302 (unit '[mass]' vs ontology '1 / [time]') — route to review
+- dropped unlinked row (NIL): 'Co µg/ml' — extend the ontology if this is a real PK parameter (source ['Pescador_1983_table_1:row0:col9', 'Pescador_1983_table_1:row1:col9', 'Pescador_1983_table_1:row2:col9', 'Pescador_1983_table_1:row3:col9', 'Pescador_1983_table_1:row4:col9'])
+- unit_dimension_mismatch: 'T½ᵢ min' → Q59 (unit '[mass]' vs ontology '[time]') — route to review
+- dropped duplicate Q59 ('T½ᵢ min', value '12.83') — already have one for this compound
+- unit_dimension_mismatch: 'Vol ml' → Q61 (unit '[mass]' vs ontology '[length] ** 3') — route to review
 - dropped unlinked row (NIL): '5' — extend the ontology if this is a real PK parameter (source ['Pescador_1983_table_2:row0:col1', 'Pescador_1983_table_2:row0:col2', 'Pescador_1983_table_2:row0:col3', 'Pescador_1983_table_2:row0:col4'])
-- dropped unlinked row (NIL): '10' — extend the ontology if this is a real PK parameter (source ['Pescador_1983_table_2:row1:col1', 'Pescador_1983_table_2:row1:col2', 'Pescador_1983_table_2:row1:col3', 'Pescador_1983_table_2:row1:col4'])
+- dropped duplicate Q900 ('10', value '6.66') — already have one for this compound
 - dropped unlinked row (NIL): '16' — extend the ontology if this is a real PK parameter (source ['Pescador_1983_table_2:row2:col1', 'Pescador_1983_table_2:row2:col2', 'Pescador_1983_table_2:row2:col3', 'Pescador_1983_table_2:row2:col4'])
 - dropped unlinked row (NIL): '32' — extend the ontology if this is a real PK parameter (source ['Pescador_1983_table_2:row3:col1', 'Pescador_1983_table_2:row3:col2', 'Pescador_1983_table_2:row3:col3', 'Pescador_1983_table_2:row3:col4'])
-- implicit units: 'α' — the LLM proposed '1/h', whose dimension does not fit Q67; left unset
-- implicit units: 'β' → 1/h (from the popPK convention: 'Elimination rate constants (kel) are standardly expressed in reciprocal time units (1/h). The value 0.054 is consistent ')
-- implicit units: 'K12' → 1/h (from the popPK convention: 'Intercompartmental first-order rate constants (k12) are standardly expressed in reciprocal time units (1/h). The value 0')
-- implicit units: 'K21' → 1/h (from the popPK convention: 'Intercompartmental first-order rate constants (k21) are standardly expressed in reciprocal time units (1/h). The value 0')
-- implicit units: 'AUC' → ng*h/mL (from the popPK convention: 'AUC is the product of concentration and time. Given the dose is in mg/kg and the animal is a rabbit (small volume), and ')
-- implicit units: 'T½' → h (from the popPK convention: 'Half-lives (t1/2) are standardly expressed in time units (h). The value 12.83 is consistent with hours.')
-- implicit units: 'Vol' → L (from the popPK convention: 'Volumes of distribution are standardly expressed in liters (L). The value 106.7 is consistent with a volume in liters fo')
-- implicit units: '64' → L (from the popPK convention: 'Peripheral compartment volumes (V2) are standardly expressed in liters (L). The value 13.86 is consistent with this unit')
+- dropped unlinked row (NIL): '64' — extend the ontology if this is a real PK parameter (source ['Pescador_1983_table_2:row4:col1', 'Pescador_1983_table_2:row4:col2', 'Pescador_1983_table_2:row4:col3', 'Pescador_1983_table_2:row4:col4'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=defibrotide
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- status held at route_to_review — not promoted
 - molar mass: none found for 'defibrotide' — its concentrations stay mass-only
 - skipped review gap-fill of CL: primary's parameterization (rate-constant / ka-only) does not use it
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
 - no TEI final-model table id; trying text-pointer table recovery
 - LLM selected parameter table(s) 1, 2
-- transposed table Pescador_1983_table_1: parameters were across the columns, populations/subgroups down the first column — transposed for parsing
+- transposed table Pescador_1983_table_1: logical view retains original source coordinates
 
 ## Validation
 
@@ -133,20 +136,17 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 8 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 7 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q301 | pass | 1 / [time] | not captured | not captured | not captured | ['Pescador_1983_table_1:row5:col1', 'Pescador_1983_table_1:row5:col2', 'Pescador_1983_table_1:row5:col3', 'Pescador_1983_table_1:row5:col4', 'Pescador_1983_table_1:row5:col5'] |
-| C5_dimension_Q302 | pass | 1 / [time] | not captured | not captured | not captured | ['Pescador_1983_table_1:row6:col1', 'Pescador_1983_table_1:row6:col2', 'Pescador_1983_table_1:row6:col3', 'Pescador_1983_table_1:row6:col4', 'Pescador_1983_table_1:row6:col5'] |
-| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['Pescador_1983_table_1:row3:col1', 'Pescador_1983_table_1:row3:col2', 'Pescador_1983_table_1:row3:col3', 'Pescador_1983_table_1:row3:col4', 'Pescador_1983_table_1:row3:col5'] |
-| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Pescador_1983_table_1:row10:col1', 'Pescador_1983_table_1:row10:col2', 'Pescador_1983_table_1:row10:col3', 'Pescador_1983_table_1:row10:col4', 'Pescador_1983_table_1:row10:col5'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Pescador_1983_table_1:row11:col1', 'Pescador_1983_table_1:row11:col2', 'Pescador_1983_table_1:row11:col3', 'Pescador_1983_table_1:row11:col4', 'Pescador_1983_table_1:row11:col5'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Pescador_1983_table_2:row4:col1', 'Pescador_1983_table_2:row4:col2', 'Pescador_1983_table_2:row4:col3', 'Pescador_1983_table_2:row4:col4'] |
-| C5_dimension_Q88 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Pescador_1983_table_1:row9:col1', 'Pescador_1983_table_1:row9:col2', 'Pescador_1983_table_1:row9:col3', 'Pescador_1983_table_1:row9:col4', 'Pescador_1983_table_1:row9:col5'] |
-| C5_unit_missing_Q67 | fail | [mass] / [time] | not captured | not captured | not captured | ['Pescador_1983_table_1:row1:col1', 'Pescador_1983_table_1:row1:col2', 'Pescador_1983_table_1:row1:col3', 'Pescador_1983_table_1:row1:col4', 'Pescador_1983_table_1:row1:col5'] |
-| C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q61 | pass | volume within physiological range | 107 L | not captured | not captured | ['Pescador_1983_table_1:row11:col1', 'Pescador_1983_table_1:row11:col2', 'Pescador_1983_table_1:row11:col3', 'Pescador_1983_table_1:row11:col4', 'Pescador_1983_table_1:row11:col5'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 13.9 L | not captured | not captured | ['Pescador_1983_table_2:row4:col1', 'Pescador_1983_table_2:row4:col2', 'Pescador_1983_table_2:row4:col3', 'Pescador_1983_table_2:row4:col4'] |
+| C5_dimension_Q301 | fail | [mass] | t | not captured | not captured | ['Pescador_1983_table_1:row0:col6', 'Pescador_1983_table_1:row1:col6', 'Pescador_1983_table_1:row2:col6', 'Pescador_1983_table_1:row3:col6', 'Pescador_1983_table_1:row4:col6'] |
+| C5_dimension_Q302 | fail | [mass] | t | not captured | not captured | ['Pescador_1983_table_1:row0:col7', 'Pescador_1983_table_1:row1:col7', 'Pescador_1983_table_1:row2:col7', 'Pescador_1983_table_1:row3:col7', 'Pescador_1983_table_1:row4:col7'] |
+| C5_dimension_Q59 | fail | [mass] | t | not captured | not captured | ['Pescador_1983_table_1:row0:col2', 'Pescador_1983_table_1:row1:col2', 'Pescador_1983_table_1:row2:col2', 'Pescador_1983_table_1:row3:col2', 'Pescador_1983_table_1:row4:col2'] |
+| C5_dimension_Q61 | fail | [mass] | t | not captured | not captured | ['Pescador_1983_table_1:row0:col12', 'Pescador_1983_table_1:row1:col12', 'Pescador_1983_table_1:row2:col12', 'Pescador_1983_table_1:row3:col12', 'Pescador_1983_table_1:row4:col12'] |
+| C5_dimension_Q68 | fail | [mass] | t | not captured | not captured | ['Pescador_1983_table_1:row0:col4', 'Pescador_1983_table_1:row1:col4', 'Pescador_1983_table_1:row2:col4', 'Pescador_1983_table_1:row3:col4', 'Pescador_1983_table_1:row4:col4'] |
+| C5_unit_missing_Q17 | fail | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Pescador_1983_table_1:row0:col10', 'Pescador_1983_table_1:row1:col10', 'Pescador_1983_table_1:row2:col10', 'Pescador_1983_table_1:row3:col10', 'Pescador_1983_table_1:row4:col10'] |
+| C5_unit_missing_Q47 | fail | 1 / [time] | not captured | not captured | not captured | ['Pescador_1983_table_1:row0:col8', 'Pescador_1983_table_1:row1:col8', 'Pescador_1983_table_1:row2:col8', 'Pescador_1983_table_1:row3:col8', 'Pescador_1983_table_1:row4:col8'] |
+| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -155,7 +155,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_defibrotide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Pescador_1983` / `Pescador_1983::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_defibrotide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Pescador_1983` / `Pescador_1983::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -171,4 +171,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 14:22 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 22:58 UTC</sub>

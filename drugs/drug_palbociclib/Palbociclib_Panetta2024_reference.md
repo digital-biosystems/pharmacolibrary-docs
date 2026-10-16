@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;palbociclib&quot;,&quot;href&quot;:&quot;drugs/drug_palbociclib/&quot;},{&quot;label&quot;:&quot;Panetta_2024 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Palbociclib_Courlet2022_reference&quot;,&quot;label&quot;:&quot;Courlet_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_palbociclib/Palbociclib_Courlet2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -28,9 +29,9 @@ Independently confirmed by `qwen3.8-27b`.
 Panetta JC et al., Population Pharmacokinetic and Pharmaco…, Pharmaceutics (2024)
   ·  DOI: [10.3390/pharmaceutics16121528](https://doi.org/10.3390/pharmaceutics16121528)
 
-<div class="pk-model-meta" hidden drug="palbociclib" model-id="Palbociclib_Panetta2024_reference" status="needs_review" stale="false" population="children and young adults with recurrent, progressive, or refractory brain tumors" measured-compound="palbociclib" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="palbociclib" model-id="Palbociclib_Panetta2024_reference" status="needs_review" stale="false" population="children and young adults with recurrent, progressive, or refractory brain tumors" measured-compound="palbociclib" parameterization="apparent" topology="general_linear"></div>
 
-**Model structure:** 1-compartment; no model was built for this record.  
+**Model structure:** general linear; no model was built for this record.  
 **Parameters:** 4 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
@@ -40,10 +41,10 @@ Panetta JC et al., Population Pharmacokinetic and Pharmaco…, Pharmaceutics (20
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Absorption lag time Tlag (h) | `Q83` · tlag | 0.8 | h | 2880.0 | [h] | 12.3 | llm_confirmed (0.6) | pharmaceutics-16-01528-t002:row3:col1, pharmaceutics-16-01528-t002:row3:col2, pharmaceutics-16-01528-t002:row3:col3 | — | 0.68 (14.4% RSE) |
-| Absorption rate constant ka (/h) | `Q49` · kabs | 0.48 | /h | 0.00013333333333333334 | [1] / [h] | 17.9 | llm_confirmed (0.6) | pharmaceutics-16-01528-t002:row4:col1, pharmaceutics-16-01528-t002:row4:col2, pharmaceutics-16-01528-t002:row4:col3 | — | 0.88 (16% RSE) |
-| Volume V/F (L/m2) | `Q76` · V/F | 664.5 | L/m2 | not captured | [l] / [m2] | 4.1 | llm_corrected (0.6) | pharmaceutics-16-01528-t002:row5:col1, pharmaceutics-16-01528-t002:row5:col2, pharmaceutics-16-01528-t002:row5:col3 | — | not captured |
-| Clearance CL/F (L/h/m2) | `Q27` · CL/F | 36.8 | L/h/m2 | not captured | [l] / [[h] · [m2]] | 5.8 | llm_corrected (0.6) | pharmaceutics-16-01528-t002:row6:col1, pharmaceutics-16-01528-t002:row6:col2, pharmaceutics-16-01528-t002:row6:col3 | — | not captured |
+| Tlag | `Q83` · tlag | 0.8 | h | 2880.0 | h | not captured | exact (1.0) | Panetta_2024:results_prose | — | not captured |
+| ka | `Q49` · kabs | 0.48 | /h | 0.00013333333333333334 | 1/h | not captured | exact (1.0) | Panetta_2024:results_prose | — | not captured |
+| V/F | `Q76` · V/F | 664.5 | L/m2 | not captured | L/m2 | not captured | exact (1.0) | Panetta_2024:results_prose | — | not captured |
+| CL/F | `Q27` · CL/F | 36.8 | L/h/m2 | not captured | L/h/m2 | not captured | exact (1.0) | Panetta_2024:results_prose | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -53,37 +54,25 @@ Panetta JC et al., Population Pharmacokinetic and Pharmaco…, Pharmaceutics (20
 ## Departures & gaps
 
 **Interpretation flags:**
-- table section iiv: 'Absorption lag time Tlag' routed out of structural estimates ('Inter-patient variabilities (IIV) *')
-- table section iiv: 'Absorption rate constant ka' routed out of structural estimates ('Inter-patient variabilities (IIV) *')
-- table section iiv: 'Volume V/F' routed out of structural estimates ('Inter-patient variabilities (IIV) *')
-- table section iiv: 'Clearance CL/F' routed out of structural estimates ('Inter-patient variabilities (IIV) *')
-- table section iov: 'Clearance CL/F' routed out of structural estimates ('Inter-occasion variabilities (IOV)')
-- table section iov: 'Residual proportional error' routed out of structural estimates ('Inter-occasion variabilities (IOV)')
-- table section iov: '2 × Log-likelihood value (OFV)' routed out of structural estimates ('Inter-occasion variabilities (IOV)')
-- column 'base model est.(rse%) *' classified 'rse' by the LLM but kept as the estimate: the header names the point value
-- unit_dimension_unknown: 'L/m2' (V/F)
-- unit_dimension_unknown: 'L/h/m2' (CL/F)
-- routed 'AST on CL/F' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
-- implicit units: 'Volume V/F (L/m2)' — the LLM proposed 'L/m2', whose dimension does not fit Q76; left unset
-- implicit units: 'Clearance CL/F (L/h/m2)' — the LLM proposed 'L/h/m2', whose dimension does not fit Q27; left unset
+- salvaged Q83 ('Tlag'=0.8) from results prose — parameter table was unreadable
+- salvaged Q49 ('ka'=0.48) from results prose — parameter table was unreadable
+- salvaged Q76 ('V/F'=664.5) from results prose — parameter table was unreadable
+- salvaged Q27 ('CL/F'=36.8) from results prose — parameter table was unreadable
+- implicit units: 'V/F' — the LLM proposed 'L/m2', whose dimension does not fit Q76; left unset
+- implicit units: 'CL/F' — the LLM proposed 'L/h/m2', whose dimension does not fit Q27; left unset
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=palbociclib
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- topology: 2 first-order transfer(s) across 3 compounds → general_linear
 - status held at route_to_review — not promoted
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- unparsed cell pharmaceutics-16-01528-t002:row3:col4 = '0.65; 0.97'
-- unparsed cell pharmaceutics-16-01528-t002:row4:col4 = '0.39; 0.70'
-- unparsed cell pharmaceutics-16-01528-t002:row5:col4 = '617.1; 757.1'
-- unparsed cell pharmaceutics-16-01528-t002:row6:col4 = '30.5; 37.9'
-- unparsed cell pharmaceutics-16-01528-t002:row8:col4 = '−0.12; −0.36'
-- unparsed cell pharmaceutics-16-01528-t002:row10:col4 = '0.54; 0.88'
-- unparsed cell pharmaceutics-16-01528-t002:row11:col4 = '0.34; 1.19'
-- unparsed cell pharmaceutics-16-01528-t002:row12:col4 = '0.02; 0.26'
-- unparsed cell pharmaceutics-16-01528-t002:row13:col4 = '0.15; 0.30'
-- unparsed cell pharmaceutics-16-01528-t002:row15:col4 = '0.09; 0.18'
-- unparsed cell pharmaceutics-16-01528-t002:row16:col4 = '0.26; 0.39'
+- table pharmaceutics-16-01528-t002: unbound_uncertainty
+- table pharmaceutics-16-01528-t002: unknown_column_role
+- table pharmaceutics-16-01528-t002: ragged_grid
+- table pharmaceutics-16-01528-t002: unparsed_numeric_cell
+- final table pharmaceutics-16-01528-t002: no supported point estimates; targeted recovery unresolved
 - LLM selected parameter table(s) 2
 
 ## Validation
@@ -110,10 +99,8 @@ _All readers agree on the compared fields of this record._
 | C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['pharmaceutics-16-01528-t002:row4:col1', 'pharmaceutics-16-01528-t002:row4:col2', 'pharmaceutics-16-01528-t002:row4:col3'] |
-| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['pharmaceutics-16-01528-t002:row3:col1', 'pharmaceutics-16-01528-t002:row3:col2', 'pharmaceutics-16-01528-t002:row3:col3'] |
-| C5_unit_missing_Q27 | fail | [length] ** 3 / [time] | L/h/m2 | not captured | not captured | ['pharmaceutics-16-01528-t002:row6:col1', 'pharmaceutics-16-01528-t002:row6:col2', 'pharmaceutics-16-01528-t002:row6:col3'] |
-| C5_unit_missing_Q76 | fail | [length] ** 3 | L/m2 | not captured | not captured | ['pharmaceutics-16-01528-t002:row5:col1', 'pharmaceutics-16-01528-t002:row5:col2', 'pharmaceutics-16-01528-t002:row5:col3'] |
+| C5_unit_missing_Q27 | fail | [length] ** 3 / [time] | L/h/m2 | not captured | not captured | ['Panetta_2024:results_prose'] |
+| C5_unit_missing_Q76 | fail | [length] ** 3 | L/m2 | not captured | not captured | ['Panetta_2024:results_prose'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
@@ -124,7 +111,7 @@ _All readers agree on the compared fields of this record._
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_palbociclib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Panetta_2024` / `Panetta_2024::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_palbociclib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Panetta_2024` / `Panetta_2024::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -150,4 +137,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 04:09 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 20:16 UTC</sub>

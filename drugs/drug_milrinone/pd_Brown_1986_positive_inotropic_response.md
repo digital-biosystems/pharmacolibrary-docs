@@ -20,9 +20,9 @@
 
 **Model:** No model was generated from this record.
 
-> The record describes a sigmoid Emax model where milrinone concentrations stimulate a positive inotropic response with an EC50 of 5.8 x 10^-5 mol/l. The paper does not provide full text to specify the underlying mechanism or additional rate parameters.
+> Milrinone acts on the positive inotropic response via a sigmoidal Emax stimulation model with a reported EC50 of 5.8 x 10(-5) mol/l. No full text is available to specify further mechanistic details or rate parameters.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Brown_1986`
 - **model family:** `sigmoid_emax`

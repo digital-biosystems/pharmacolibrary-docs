@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A06A&quot;,&quot;href&quot;:&quot;atc/A06A.md&quot;},{&quot;label&quot;:&quot;magnesium sulfate&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_sulfate/&quot;},{&quot;label&quot;:&quot;Deng_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;MagnesiumSulfate_Chuan2001_reference&quot;,&quot;label&quot;:&quot;Chuan_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_sulfate/MagnesiumSulfate_Chuan2001_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;MagnesiumSulfate_Du2019_reference&quot;,&quot;label&quot;:&quot;Du_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_sulfate/MagnesiumSulfate_Du2019_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;MagnesiumSulfate_da2020_reference&quot;,&quot;label&quot;:&quot;da_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_sulfate/MagnesiumSulfate_da2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;MagnesiumSulfate_Rui1996_reference&quot;,&quot;label&quot;:&quot;Rui_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_sulfate/MagnesiumSulfate_Rui1996_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Lu_2002_DBP&quot;,&quot;label&quot;:&quot;Lu_2002 \u00b7 DBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_sulfate/pd_Lu_2002_DBP.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Lu_2002_SBP&quot;,&quot;label&quot;:&quot;Lu_2002 \u00b7 SBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_sulfate/pd_Lu_2002_SBP.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # magnesium sulfate — `MagnesiumSulfate_Deng2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.429), gpt-oss:120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.429), gpt-oss:120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -13,39 +13,38 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** Model withheld: a core parameter is unspecified.
 
 ### Reviewer guidance
 
-**No value for magnesium sulfate's clearance and volume of distribution.**
+**No value for magnesium sulfate's clearance and volume of distribution; t6_deviations.**
 
 The model was built, but magnesium sulfate's clearance and volume of distribution had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — magnesium sulfate: V 25.1 L, CL 2.98 L/h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has magnesium_sulfate, the second reading magnesium sulfate; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
-> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-28 14:38:38.662982+00:00) predates the upstream re-run (2026-10-07 19:49:05.184485+00:00). Current validate status: `rejected`.
+> **Dose compound ≠ measured compound:** dosed `magnesium_sulfate`, measured `magnesium`.
 
 ## Citation
 Deng J et al., Population pharmacokinetics and dose op…, BMC pregnancy and childbirth (2024)
   ·  DOI: [10.1186/s12884-024-06620-x](https://doi.org/10.1186/s12884-024-06620-x)
 
-<div class="pk-model-meta" hidden drug="magnesium sulfate" model-id="MagnesiumSulfate_Deng2024_reference" status="rejected" stale="true" population="Chinese preeclampsia population" measured-compound="magnesium_sulfate" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="magnesium sulfate" model-id="MagnesiumSulfate_Deng2024_reference" status="model_quarantined" stale="false" population="Chinese women with preeclampsia" measured-compound="magnesium" parameterization="mechanistic" topology="1C"></div>
 
-**Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 3 extracted.
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 2 extracted.
 
-**Parameterization:** CLnorm/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| tvV(L) | `Q61` · V | 25.07 | L | 0.025070000000000002 | [l] | not captured | tv_prefix (0.95) | Tab2:row3:col1, Tab2:row3:col2, Tab2:row3:col3, Tab2:row3:col4, Tab2:row3:col5, Tab2:row3:col6, Tab2:row3:col7, Tab2:row3:col8 | — | not captured |
-| tvCL (L/h) | `Q22` · CL | 2.98 | L/h | 8.277777777777777e-07 | [l] / [h] | not captured | tv_prefix (0.95) | Tab2:row4:col1, Tab2:row4:col2, Tab2:row4:col3, Tab2:row4:col4, Tab2:row4:col5, Tab2:row4:col6, Tab2:row4:col7, Tab2:row4:col8 | — | 0.082 (13.05% RSE) |
-| dCLdBMI | `Q355` · CLnorm/F | -0.54 | not captured | not captured | not captured | not captured | llm (0.6) | Tab2:row8:col1, Tab2:row8:col2, Tab2:row8:col3, Tab2:row8:col5, Tab2:row8:col6, Tab2:row8:col7 | — | not captured |
+| tvV(L) | `Q61` · V | 25.07 | L | 0.025070000000000002 | [l] | not captured | tv_prefix (0.95) | Deng_2024_table_p4_1:row1:col1, Deng_2024_table_p4_1:row1:col5 | — | not captured |
+| tvCL (L/h) | `Q22` · CL | 2.98 | L/h | 8.277777777777777e-07 | [l] / [h] | not captured | tv_prefix (0.95) | Deng_2024_table_p4_1:row2:col1, Deng_2024_table_p4_1:row2:col5 | — | 0.082 (None% RSE) |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -55,23 +54,18 @@ Deng J et al., Population pharmacokinetics and dose op…, BMC pregnancy and chi
 ## Departures & gaps
 
 **Interpretation flags:**
-- table section iiv: 'ω2 V (%)' routed out of structural estimates ('Inter-individual variability')
-- table section iiv: 'ω2 CL (%)' routed out of structural estimates ('Inter-individual variability')
+- table section iiv: 'ω² V (%)' routed out of structural estimates ('Inter-individual variability')
+- table section iiv: 'ω² CL (%)' routed out of structural estimates ('Inter-individual variability')
 - table section residual_error: 'stdev0' routed out of structural estimates ('Residual variability')
-- dropped duplicate Q61 ('dVdfurosemide', value '-0.25') — already have one for this compound
-- dropped duplicate Q22 ('dCLdfurosemide', value '-0.16') — already have one for this compound
-- dropped unlinked row (NIL): 'dCLdCCR' — extend the ontology if this is a real PK parameter (source ['Tab2:row7:col1', 'Tab2:row7:col2', 'Tab2:row7:col3', 'Tab2:row7:col4', 'Tab2:row7:col5', 'Tab2:row7:col6', 'Tab2:row7:col7', 'Tab2:row7:col8'])
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=magnesium_sulfate
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- dropped unlinked row (NIL): 'dVdiuresemide' — extend the ontology if this is a real PK parameter (source ['Deng_2024_table_p4_1:row3:col1', 'Deng_2024_table_p4_1:row3:col5'])
+- dropped duplicate Q22 ('dCLdiuresemide', value '-0.16') — already have one for this compound
+- dropped unlinked row (NIL): 'dCLdCCR' — extend the ontology if this is a real PK parameter (source ['Deng_2024_table_p4_1:row5:col1', 'Deng_2024_table_p4_1:row5:col5'])
+- dropped duplicate Q22 ('dCLdBMI', value '-0.54') — already have one for this compound
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=magnesium
+- review gap-fill skipped: this record measures 'magnesium', not magnesium_sulfate — the review values are the parent's
 
 **Extraction notes:**
-- unparsed cell Tab2:row5:col4 = '(-0.34)-(-0.16)'
-- unparsed cell Tab2:row5:col8 = '(-0.33)-(-0.16)'
-- unparsed cell Tab2:row6:col4 = '(-0.22)-(-0.096)'
-- unparsed cell Tab2:row6:col8 = '(-0.23)-(-0.080)'
-- unparsed cell Tab2:row8:col4 = '(-0.70)-(-0.38)'
-- unparsed cell Tab2:row8:col8 = '(-0.77)-(-0.22)'
+- table Deng_2024_table_p4_1: ambiguous_uncertainty_binding
 - LLM selected parameter table(s) 2
 
 ## Validation
@@ -90,8 +84,8 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 |---|---|---|---|---|
 | `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
 | `gpt-oss-120b` | `parameters[dcldbmi]` | -0.54 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[tvcl].value` | 2.98 | 1.29 | mismatch |
-| `gpt-oss-120b` | `parameters[tvv].value` | 25.07 | 23.31 | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | magnesium_sulfate | magnesium sulfate | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | magnesium_sulfate | magnesium sulfate | mismatch |
 | `gpt-oss:120b` | `parameters[tvcl].value` | 2.98 | 1.21 | mismatch |
 | `gpt-oss:120b` | `parameters[tvv].value` | 25.07 | 23.21 | mismatch |
 | `gpt-oss:120b` | `screen.dose_compound` | magnesium_sulfate | magnesium sulfate | mismatch |
@@ -109,17 +103,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C2_base_sign_Q355 | fail | not captured | -0.54 | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row4:col1', 'Tab2:row4:col2', 'Tab2:row4:col3', 'Tab2:row4:col4', 'Tab2:row4:col5', 'Tab2:row4:col6', 'Tab2:row4:col7', 'Tab2:row4:col8'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row3:col1', 'Tab2:row3:col2', 'Tab2:row3:col3', 'Tab2:row3:col4', 'Tab2:row3:col5', 'Tab2:row3:col6', 'Tab2:row3:col7', 'Tab2:row3:col8'] |
-| C5_unit_missing_Q355 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row8:col1', 'Tab2:row8:col2', 'Tab2:row8:col3', 'Tab2:row8:col5', 'Tab2:row8:col6', 'Tab2:row8:col7'] |
-| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Deng_2024_table_p4_1:row2:col1', 'Deng_2024_table_p4_1:row2:col5'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Deng_2024_table_p4_1:row1:col1', 'Deng_2024_table_p4_1:row1:col5'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 2.98 | not captured | not captured | ['Deng_2024_table_p4_1:row2:col1', 'Deng_2024_table_p4_1:row2:col5'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 2.98 L/h | not captured | not captured | ['Tab2:row4:col1', 'Tab2:row4:col2', 'Tab2:row4:col3', 'Tab2:row4:col4', 'Tab2:row4:col5', 'Tab2:row4:col6', 'Tab2:row4:col7', 'Tab2:row4:col8'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 25.1 L | not captured | not captured | ['Tab2:row3:col1', 'Tab2:row3:col2', 'Tab2:row3:col3', 'Tab2:row3:col4', 'Tab2:row3:col5', 'Tab2:row3:col6', 'Tab2:row3:col7', 'Tab2:row3:col8'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 2.98 L/h | not captured | not captured | ['Deng_2024_table_p4_1:row2:col1', 'Deng_2024_table_p4_1:row2:col5'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 25.1 L | not captured | not captured | ['Deng_2024_table_p4_1:row1:col1', 'Deng_2024_table_p4_1:row1:col5'] |
 
 **Reviewer per-scenario checks:**
 
@@ -127,9 +119,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 |---|---|---|---|---|---|---|
 | T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_output_variable | not captured | pass | C_central (measured=magnesium) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -138,16 +131,27 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_magnesium_sulfate/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Deng_2024` / `Deng_2024::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_magnesium_sulfate/models/modelica/_needs_review/MagnesiumSulfate_Deng2024_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_magnesium_sulfate/models/modelica/_needs_review/MagnesiumSulfate_Deng2024_reference.deviation.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_magnesium_sulfate/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Deng_2024` / `Deng_2024::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_magnesium_sulfate/models/modelica/_needs_review/MagnesiumSulfate_Deng2024_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_magnesium_sulfate/models/modelica/_needs_review/MagnesiumSulfate_Deng2024_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_magnesium_sulfate/models/modelica/MagnesiumSulfate_Deng2024_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_magnesium_sulfate/MagnesiumSulfate_Deng2024_reference/MagnesiumSulfate_Deng2024_reference_matlab.zip" download>MagnesiumSulfate_Deng2024_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_magnesium_sulfate/MagnesiumSulfate_Deng2024_reference/MagnesiumSulfate_Deng2024_reference_matlab_simbio.zip" download>MagnesiumSulfate_Deng2024_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_magnesium_sulfate/MagnesiumSulfate_Deng2024_reference/MagnesiumSulfate_Deng2024_reference_sbml.zip" download>MagnesiumSulfate_Deng2024_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_magnesium_sulfate/MagnesiumSulfate_Deng2024_reference/MagnesiumSulfate_Deng2024_reference_cellml.zip" download>MagnesiumSulfate_Deng2024_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+</tbody></table>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -156,4 +160,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 19:49 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 00:46 UTC</sub>

@@ -20,9 +20,9 @@
 
 **Model:** No model was generated from this record.
 
-> The paper does not provide the full text or specific mechanism details, so the exact pharmacodynamic mechanism (e.g., inhibition of production vs. elimination) and key potency or rate values (such as IC50, Emax, or ke0) for milrinone's effect on pulmonary arterial endothelium-dependent relaxations to bradykinin are not stated in the available excerpts.
+> No mechanism or parameter values are provided, as the paper full text is not available in the record.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Gavra_2017`
 - **model family:** `emax`

@@ -18,9 +18,9 @@
 
 **Model:** No model was generated from this record.
 
-> The paper relates ciclesonide dose to the binary response of oral candidiasis using an Emax-type model, but the available excerpts do not state the mechanism, effect direction, or any potency or rate parameter values.
+> No full text is available to describe the mechanism or provide specific potency and rate parameters for the relationship between ciclesonide dose and oral candidiasis. Consequently, the specific nature of the effect (e.g., incidence prevention or promotion) and key values such as IC50 or Emax cannot be determined from the provided records.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Pu_2026`
 - **model family:** `emax`

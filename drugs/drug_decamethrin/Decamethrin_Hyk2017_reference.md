@@ -4,7 +4,7 @@
 
 # decamethrin — `Decamethrin_Hyk2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">bird</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.158). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">bird</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -21,6 +21,8 @@
 **No volume or clearance — not a compartmental population PK model.**
 
 The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has deltamethrin, the second reading unknown; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -74,6 +76,42 @@ Hüyük R et al., Toxicokinetics of the broad-spectrum py…, British poultry sc
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.158 (3/19 fields) | 16 |
+
+<details><summary>16 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[auc0-inf]` | 702.27 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc0-inf]` | not captured | 702.27 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[bioavailability]` | 21.83 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[bioavailability]` | not captured | 21.83 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax]` | 19.65 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax]` | not captured | 19.65 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mrt]` | 4.65 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mrt]` | not captured | 4.65 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2a]` | 0.18 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2a]` | not captured | 0.18 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2β]` | 4.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2β]` | not captured | 4.0 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tmax]` | 0.7 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tmax]` | not captured | 0.7 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | deltamethrin | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | deltamethrin | unknown | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
@@ -95,7 +133,7 @@ Hüyük R et al., Toxicokinetics of the broad-spectrum py…, British poultry sc
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_decamethrin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Hüyük_2017` / `Hüyük_2017::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_decamethrin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Hüyük_2017` / `Hüyük_2017::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

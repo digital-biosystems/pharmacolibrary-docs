@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01X&quot;,&quot;href&quot;:&quot;atc/L01X.md&quot;},{&quot;label&quot;:&quot;asparaginase&quot;,&quot;href&quot;:&quot;drugs/drug_asparaginase/&quot;},{&quot;label&quot;:&quot;Lin_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Asparaginase_Borghorst2012_reference&quot;,&quot;label&quot;:&quot;Borghorst_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_asparaginase/Asparaginase_Borghorst2012_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Asparaginase_Sassen2017_estimate&quot;,&quot;label&quot;:&quot;Sassen_2017_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_asparaginase/Asparaginase_Sassen2017_estimate.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Asparaginase_Sassen2017_median&quot;,&quot;label&quot;:&quot;Sassen_2017_median&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_asparaginase/Asparaginase_Sassen2017_median.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Asparaginase_Sassen2017_reference&quot;,&quot;label&quot;:&quot;Sassen_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_asparaginase/Asparaginase_Sassen2017_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,24 +17,24 @@
 
 ### Reviewer guidance
 
-**Only volume was extracted — no clearance.**
+**The clearance plausibility check could not be computed.**
 
-A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. None of the extracted parameters is asparaginase's own; they describe JZP-458. Extracted — JZP-458: V 3.03e+03 mL, Fab 0.365, t1/2z 14.4 h, kabs 0.0348 h–1.
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — asparaginase: CL 128 mL/h, V 3.03e+03 mL, kabs 0.0348 h–1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has serum asparaginase activity, the second reading serum asparaginase activity (SAA). That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> **Dose compound ≠ measured compound:** dosed `JZP-458`, measured `serum asparaginase activity`.
+> **Dose compound ≠ measured compound:** dosed `JZP-458`, measured `asparaginase`.
 
 ## Citation
 Lin T et al., Population Pharmacokinetic Model Develo…, Clinical pharmacology in dr… (2021)
   ·  DOI: [10.1002/cpdd.1002](https://doi.org/10.1002/cpdd.1002)
 
-<div class="pk-model-meta" hidden drug="asparaginase" model-id="Asparaginase_Lin2021_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="serum asparaginase activity" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="asparaginase" model-id="Asparaginase_Lin2021_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="asparaginase" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 4 extracted.
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -43,38 +43,20 @@ Lin T et al., Population Pharmacokinetic Model Develo…, Clinical pharmacology 
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Vd, mL | `Q61` · V | 3030 | mL | 0.0030299999999999997 | [ml] | 6.32 | exact (1.0) | cpdd1002-tbl-0002:row2:col1, cpdd1002-tbl-0002:row2:col3, cpdd1002-tbl-0002:row2:col4, cpdd1002-tbl-0002:row2:col5 | — | 32.06 (None% RSE) |
-| F | `Q40` · Fab | 0.365 | not captured | not captured | not captured | 8.05 | exact (1.0) | cpdd1002-tbl-0002:row3:col1, cpdd1002-tbl-0002:row3:col3, cpdd1002-tbl-0002:row3:col4, cpdd1002-tbl-0002:row3:col5 | — | not captured |
-| t1/2 (h) b | `Q57` · t1/2z | 14.4 | h | 51840.0 | h | not captured | llm_confirmed (0.6) | cpdd1002-tbl-0002:row4:col1 | — | not captured |
-| ka (h–1) | `Q49` · kabs | 0.0348 | h–1 | 9.666666666666667e-06 | [1] / [h] | 7.89 | exact (1.0) | cpdd1002-tbl-0002:row5:col1, cpdd1002-tbl-0002:row5:col3, cpdd1002-tbl-0002:row5:col4, cpdd1002-tbl-0002:row5:col5 | — | not captured |
+| CL, mL/h | `Q22` · CL | 128.4 | mL/h | 3.566666666666667e-08 | L/h | not captured | review (0.7) | Lin_2021:review | — | not captured |
+| Vd, mL | `Q61` · V | 3030.0 | mL | 0.0030299999999999997 | L | not captured | review (0.7) | Lin_2021:review | — | not captured |
+| ka (h–1) | `Q49` · kabs | 0.0348 | h–1 | 9.666666666666667e-06 | 1/h | not captured | review (0.7) | Lin_2021:review | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
-### Unresolved rows _(no Q-code or no value — not parameters)_
-| label (paper) | Q-code | value | link |
-|---|---|---|---|
-| CL, mL/h | Q22 | not captured | exact |
-
 ## Departures & gaps
 
 **Interpretation flags:**
-- table section iiv: 'CL, mL/h' routed out of structural estimates ('BSV%')
-- table section iiv: 'Vd, mL' routed out of structural estimates ('BSV%')
-- dropped unlinked row (NIL): 'Zero‐order absorption (IU/h)' — extend the ontology if this is a real PK parameter (source ['cpdd1002-tbl-0002:row6:col1', 'cpdd1002-tbl-0002:row6:col3', 'cpdd1002-tbl-0002:row6:col4', 'cpdd1002-tbl-0002:row6:col5'])
-- implicit units: 't1/2 (h) b' → h (from the paper text: "Table 2 footnote defines 't1/2, half‐life' and the paper text states 'half‐life for the IV route was estimated at ... 14")
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=serum asparaginase activity
-- molar mass: no plausible PubChem entry for 'serum asparaginase activity' ('serum asparaginase activity') — left in mass units
-- molar mass: none found for 'asparaginase' — its concentrations stay mass-only
-- molar mass: none found for 'serum asparaginase activity' — its concentrations stay mass-only
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
-
-**Extraction notes:**
-- LLM selected parameter table(s) 2
+- built from REVIEW reference values (Lin_2021) — secondary source
+- volume reported by review
 
 ## Validation
 
@@ -103,15 +85,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['cpdd1002-tbl-0002:row1:col1', 'cpdd1002-tbl-0002:row1:col3', 'cpdd1002-tbl-0002:row1:col4', 'cpdd1002-tbl-0002:row1:col5'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['cpdd1002-tbl-0002:row5:col1', 'cpdd1002-tbl-0002:row5:col3', 'cpdd1002-tbl-0002:row5:col4', 'cpdd1002-tbl-0002:row5:col5'] |
-| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['cpdd1002-tbl-0002:row4:col1'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['cpdd1002-tbl-0002:row2:col1', 'cpdd1002-tbl-0002:row2:col3', 'cpdd1002-tbl-0002:row2:col4', 'cpdd1002-tbl-0002:row2:col5'] |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Lin_2021:review'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Lin_2021:review'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Lin_2021:review'] |
+| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 128.4 | not captured | not captured | ['Lin_2021:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q61 | pass | volume within physiological range | 3.03 L | not captured | not captured | ['cpdd1002-tbl-0002:row2:col1', 'cpdd1002-tbl-0002:row2:col3', 'cpdd1002-tbl-0002:row2:col4', 'cpdd1002-tbl-0002:row2:col5'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.128 L/h | not captured | not captured | ['Lin_2021:review'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 3.03 L | not captured | not captured | ['Lin_2021:review'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -120,7 +103,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_asparaginase/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Lin_2021` / `Lin_2021::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_asparaginase/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Lin_2021` / `Lin_2021::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -146,4 +129,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 23:15 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 04:18 UTC</sub>

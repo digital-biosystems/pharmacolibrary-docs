@@ -49,7 +49,7 @@ _No comparable checks._
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_glycerol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Beylot_1987` / `Beylot_1987::healthy adults and insulin-dependent diabetic patients`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_glycerol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Beylot_1987` / `Beylot_1987::healthy adults and insulin-dependent diabetic patients`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

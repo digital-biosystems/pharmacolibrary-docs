@@ -19,17 +19,19 @@
 
 **Every check that could be run on this record passed.**
 
-Only the abstract was available, so reported summary statistics stand in for a fitted model.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is aflibercept's own; they describe free aflibercept.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has aflibercept, the second reading aflibercept (free); it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> **Dose compound ≠ measured compound:** dosed `aflibercept`, measured `free aflibercept`.
+
 ## Citation
 Thai HT et al., Population pharmacokinetic analysis of…, Cancer chemotherapy and pha… (2013)
   ·  DOI: [10.1007/s00280-013-2182-1](https://doi.org/10.1007/s00280-013-2182-1)
 
-<div class="pk-model-meta" hidden drug="aflibercept" model-id="Aflibercept_Thai2013_reference" status="curated_candidate" stale="false" population="patients with advanced solid tumors" measured-compound="aflibercept" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="aflibercept" model-id="Aflibercept_Thai2013_reference" status="curated_candidate" stale="false" population="patients with advanced solid tumors" measured-compound="free aflibercept" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.
@@ -52,8 +54,10 @@ Thai HT et al., Population pharmacokinetic analysis of…, Cancer chemotherapy a
 **Interpretation flags:**
 - dropped duplicate Q22 ('CL(b)', value 0.19) — already have one for this compound
 - dropped duplicate Q61 ('V(b)', value 4) — already have one for this compound
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=aflibercept
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=free aflibercept
+- molar mass: no plausible PubChem entry for 'free aflibercept' ('free aflibercept') — left in mass units
 - molar mass: none found for 'aflibercept' — its concentrations stay mass-only
+- molar mass: none found for 'free aflibercept' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
@@ -108,7 +112,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 |---|---|---|---|---|---|---|
 | T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_output_variable | not captured | pass | C_central (measured=aflibercept) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_output_variable | not captured | pass | C_central (measured=free aflibercept) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
@@ -120,10 +124,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_aflibercept/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Thai_2013` / `Thai_2013::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_aflibercept/models/modelica/Aflibercept_Thai2013_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_aflibercept/models/modelica/Aflibercept_Thai2013_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_aflibercept/models/modelica/Aflibercept_Thai2013_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_aflibercept/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Thai_2013` / `Thai_2013::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_aflibercept/models/modelica/Aflibercept_Thai2013_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_aflibercept/models/modelica/Aflibercept_Thai2013_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_aflibercept/models/modelica/Aflibercept_Thai2013_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -141,7 +145,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_aflibercept/Aflibercept_Thai2013_reference/Aflibercept_Thai2013_reference.svg" alt="Aflibercept_Thai2013_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_aflibercept/Aflibercept_Thai2013_reference/Aflibercept_Thai2013_reference.svg" alt="Aflibercept_Thai2013_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -154,4 +158,4 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 21:51 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 03:57 UTC</sub>

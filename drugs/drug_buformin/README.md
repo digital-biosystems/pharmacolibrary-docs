@@ -18,7 +18,7 @@ Buformin is a biguanide anti-diabetic medication used to lower blood glucose in 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-04 22:22 | 0:36 | 0/0/0 | 0/1/0 | 0/0/0 | 18,785/812 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
+| 2026-10-13 13:20 | 0:49 | 0/0/0 | 0/1/0 | 0/0/0 | 3,854/1,364 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
 
 ## popPK records
 
@@ -28,7 +28,15 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Wang_2003_lactate](drugs/drug_buformin/pd_Wang_2003_lactate.md) | blood lactate concentration ← buformin · direct Emax (saturable) effect | — | Wang DS et al., Involvement of organic cation transport…, Molecular pharmacology (2003) | [10.1124/mol.63.4.844](https://doi.org/10.1124/mol.63.4.844) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by ollama:gpt-oss:120b (not confirmed, agreement 0.6), einfracz:gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Wang_2003_lactate](drugs/drug_buformin/pd_Wang_2003_lactate.md) | blood lactate concentration ← buformin · direct Emax (saturable) effect | — | Wang DS et al., Involvement of organic cation transport…, Molecular pharmacology (2003) | [10.1124/mol.63.4.844](https://doi.org/10.1124/mol.63.4.844) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=buformin).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | `SLC22A1` substrate | DrugBank actor |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,7 +59,7 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 |---|---|---|---|---|---|---|
 | `Takanohashi_2007.pdf` | Takanohashi T et al., Prediction of the metabolic interaction…, Drug metabolism and pharmac… (2007) | pgx | 7 | [10.2133/dmpk.22.409](https://doi.org/10.2133/dmpk.22.409) | [18159128](https://www.ncbi.nlm.nih.gov/pubmed/18159128) | metadata signals extractable PGX data (CYP2C9, PK/PD-context) |
 
-<sub>queue written 2026-10-04T22:22:15.784251+00:00</sub>
+<sub>queue written 2026-10-13T13:20:09.135605+00:00</sub>
 
 ## Screened and excluded
 

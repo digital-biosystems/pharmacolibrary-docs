@@ -18,7 +18,7 @@ Acebutolol is a selective beta blocker used to treat high blood pressure, angina
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 23:03 | 3:19 | 0/0/0 | 2/2/1 | 0/0/0 | 144,369/3,272 | ollama / qwen3.8:27b-mtp-q8_0 | 10 | 9/2 | 4/6 | 0 |
+| 2026-10-14 19:52 | 1:18 | 0/0/0 | 2/1/0 | 0/0/0 | 164,733/2,438 | einfracz / qwen3.8-27b | 10 | 9/2 | 4/6 | 0 |
 
 ## popPK records
 
@@ -28,12 +28,34 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Data from bacteria, fungi or plants, not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">other organism</span> | [Oualha_2024_amastigote_viability](drugs/drug_acebutolol/pd_Oualha_2024_amastigote_viability.md) | amastigote viability ← Acebutolol · direct sigmoid Emax (Hill) effect | — | Oualha R et al., Approved drugs successfully repurposed…, Frontiers in cellular and i… (2024) | [10.3389/fcimb.2024.1403589](https://doi.org/10.3389/fcimb.2024.1403589) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Data from bacteria, fungi or plants, not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">other organism</span> | [Oualha_2024_promastigote_viability](drugs/drug_acebutolol/pd_Oualha_2024_promastigote_viability.md) | promastigote viability ← Acebutolol · direct sigmoid Emax (Hill) effect | — | Oualha R et al., Approved drugs successfully repurposed…, Frontiers in cellular and i… (2024) | [10.3389/fcimb.2024.1403589](https://doi.org/10.3389/fcimb.2024.1403589) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span> | [Singh_1985_reduced](drugs/drug_acebutolol/pd_Singh_1985_reduced.md) | reduced ← acebutolol · disease-progression model | — | Singh BN et al., Acebutolol. A review of its pharmacolog…, Drugs (1985) | [10.2165/00003495-198529060-00003](https://doi.org/10.2165/00003495-198529060-00003) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">rat</span> | [Abrahamsson_1989_atrial_rate](drugs/drug_acebutolol/pd_Abrahamsson_1989_atrial_rate.md) | atrial rate ← acebutolol · direct Emax (saturable) effect | — | Abrahamsson T, Characterization of the beta 1-adrenoce…, European journal of pharmac… (1989) | [10.1016/0014-2999(89)90238-0](https://doi.org/10.1016/0014-2999(89)90238-0) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span> | [Fleurot_1991_percent_reduction_in_heart_rate_during_exercise](drugs/drug_acebutolol/pd_Fleurot_1991_percent_reduction_in_heart_rate_during_exercise.md) | percent reduction in heart rate during exercise ← acebutolol · direct log-linear effect | — | Fleurot O et al., A comparative pharmacokinetic and pharm…, Fundamental & clinical phar… (1991) | [10.1111/j.1472-8206.1991.tb00749.x](https://doi.org/10.1111/j.1472-8206.1991.tb00749.x) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">rat</span> | [Klug_1994_Dys](drugs/drug_acebutolol/pd_Klug_1994_Dys.md) | dysmorphogenesis ← acebutolol · direct Emax (saturable) effect | — | Klug S et al., Toxicity of beta-blockers in a rat whol…, Archives of toxicology (1994) | [10.1007/s002040050085](https://doi.org/10.1007/s002040050085) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">dog</span> | [Gülker_1981_AV_conduction_time](drugs/drug_acebutolol/pd_G_lker_1981_AV_conduction_time.md) | AV-conduction time ← acebutolol · model not identified | — | Gülker H et al., Sympathomimetic and cardiodepressant ef…, Arzneimittel-Forschung (1981) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">dog</span> | [Gülker_1981_heart_rate](drugs/drug_acebutolol/pd_G_lker_1981_heart_rate.md) | heart rate ← acebutolol · model not identified | — | Gülker H et al., Sympathomimetic and cardiodepressant ef…, Arzneimittel-Forschung (1981) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">dog</span> | [Gülker_1981_hemodynamics](drugs/drug_acebutolol/pd_G_lker_1981_hemodynamics.md) | hemodynamics ← acebutolol · model not identified | — | Gülker H et al., Sympathomimetic and cardiodepressant ef…, Arzneimittel-Forschung (1981) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">dog</span> | [Gülker_1981_left_ventricular_contractility](drugs/drug_acebutolol/pd_G_lker_1981_left_ventricular_contractility.md) | left ventricular contractility ← acebutolol · model not identified | — | Gülker H et al., Sympathomimetic and cardiodepressant ef…, Arzneimittel-Forschung (1981) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">dog</span> | [Gülker_1981_myocardial_oxygen_consumption](drugs/drug_acebutolol/pd_G_lker_1981_myocardial_oxygen_consumption.md) | myocardial oxygen consumption ← acebutolol · model not identified | — | Gülker H et al., Sympathomimetic and cardiodepressant ef…, Arzneimittel-Forschung (1981) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">rat</span> | [Klug_1994_Dys](drugs/drug_acebutolol/pd_Klug_1994_Dys.md) | dysmorphogenesis ← acebutolol · direct Emax (saturable) effect | — | Klug S et al., Toxicity of beta-blockers in a rat whol…, Archives of toxicology (1994) | [10.1007/s002040050085](https://doi.org/10.1007/s002040050085) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Scott_1995_BP](drugs/drug_acebutolol/pd_Scott_1995_BP.md) | blood pressure ← acebutolol · inhibition effect | — | Scott PJ et al., The Effects of Age on the Pharmacokinet…, American journal of therape… (1995) | [10.1097/00045391-199508000-00004](https://doi.org/10.1097/00045391-199508000-00004) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Scott_1995_HR](drugs/drug_acebutolol/pd_Scott_1995_HR.md) | heart rate ← acebutolol · inhibition effect | — | Scott PJ et al., The Effects of Age on the Pharmacokinet…, American journal of therape… (1995) | [10.1097/00045391-199508000-00004](https://doi.org/10.1097/00045391-199508000-00004) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=acebutolol).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` substrate | DrugBank actor |
+| absorption | liver | `ABCB1` substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
+| absorption | testis | `ABCB1` substrate | DrugBank actor |
+| metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
+| metabolism | liver | `CYP2D6` inhibitor/substrate | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: ADRB1 (partial agonist), ADRB2 (partial agonist).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -60,13 +82,13 @@ _5 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | `Stupack_1999.pdf` | Stupack DG et al., Heterogeneity among beta-adrenoreceptor…, Canadian journal of physiol… (1999) | pd | 4 | not captured | [10537226](https://www.ncbi.nlm.nih.gov/pubmed/10537226) | metadata signals extractable PD data (IC50) |
 | `Maideen_2021.pdf` | Maideen NMP et al., A Review on Pharmacokinetic and Pharmac…, Current drug metabolism (2021) | pgx | 7 | [10.2174/1389200222666210614112529](https://doi.org/10.2174/1389200222666210614112529) | [34182907](https://www.ncbi.nlm.nih.gov/pubmed/34182907) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 
-<sub>queue written 2026-10-06T23:00:23.702223+00:00</sub>
+<sub>queue written 2026-10-14T19:51:24.602052+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Abrahamsson_1989 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of beta-adrenoceptor affinity and efficacy in rat atria, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | Abrahamsson_1989 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of receptor binding and agonist efficacy (pKB, pD2, intrinsic activity) in rat tissue, reporting no pharmacokinetic parameters such as clearance, volume of distribution, or half-life. |
 | popPK | Beresford_1986 | irrelevant | 0 | 0 | The paper is a review of betaxolol, and acebutolol is only mentioned as a comparator drug without any specific pharmacokinetic parameter values reported for it. |
 | PD | Beresford_1986 | not_relevant | 2 | 1 | The paper is a review of betaxolol; acebutolol is only mentioned as a comparator in qualitative statements (e.g., 'more effective than acebutolol') without providing specific numeric PD parameters or concentration-effect data for acebutolol. |
 | popPK | Capponi_1977 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of renin release from rat kidney slices and does not report any pharmacokinetic parameters for acebutolol. |
@@ -88,28 +110,28 @@ _5 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | PD | Hirosawa_2023 | not_relevant | 0 | 0 | The paper reports in vitro enzyme inhibition kinetics (Ki) and in vivo PK changes (AUC) due to drug-drug interaction, but does not report a pharmacodynamic (exposure-response or dose-response) relationship for acebutolol. |
 | popPK | Kendall_1984 | irrelevant | 2 | 0 | The study reports only qualitative changes in AUC and Cmax for acebutolol without providing specific quantitative PK parameter values (CL, V, ka, etc.). |
 | PD | Kendall_1984 | not_relevant | 0 | 0 | The paper reports only pharmacokinetic parameters (AUC, Cmax) affected by oral contraceptives and contains no pharmacodynamic or exposure-response analysis. |
-| popPK | Klug_1994 | irrelevant | 0 | 0 | The study is an in vitro embryotoxicity assay measuring drug concentrations in rat embryos, not a pharmacokinetic study reporting disposition parameters like clearance or volume of distribution. |
+| popPK | Klug_1994 | irrelevant | 1 | 0 | The paper reports in-vitro embryo toxicity and static tissue concentrations/partition coefficients, not time-dependent pharmacokinetic parameters like clearance, volume, or half-life. |
 | popPK | Kober_1982 | irrelevant | 1 | 0 | The study reports pharmacodynamic effects (heart rate, ST-segment) rather than quantitative pharmacokinetic parameters (CL, V, ka). |
 | popPK | Kumar_2023 | irrelevant | 0 | 0 | The study focuses on the repurposing of telmisartan for breast cancer using in-silico and in-vitro methods, with acebutolol serving only as a comparator ligand in virtual screening without any pharmacokinetic data. |
 | PD | Kumar_2023 | not_relevant | 0 | 0 | The paper focuses on telmisartan and does not report any pharmacodynamic or exposure-response data for acebutolol. |
 | popPK | Lemmer_1982 | irrelevant | 1 | 0 | The paper is a general review of beta-blockers that only qualitatively categorizes acebutolol's half-life range without providing specific quantitative PK parameters or compartmental model values. |
 | PD | Lemmer_1982 | not_relevant | 1 | 0 | The text is a general review discussing the pharmacological properties of beta-blockers, including acebutolol, but it does not report specific numeric PD parameters (Emax, EC50) or an extractable concentration-effect curve for acebutolol. |
-| popPK | Lumley_1977 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of adrenoceptor subtypes using guinea-pig atria, reporting pA2 values for antagonism rather than pharmacokinetic disposition parameters for acebutolol. |
+| popPK | Lumley_1977 | irrelevant | 0 | 0 | The study is an in vitro receptor pharmacology assessment using guinea-pig atria and does not report pharmacokinetic disposition parameters for acebutolol. |
 | popPK | MacGregor_1983 | irrelevant | 0 | 0 | The paper is a clinical efficacy study on blood pressure and metabolic effects, not a pharmacokinetic study, and contains no PK parameters for acebutolol. |
 | PD | MacGregor_1983 | not_relevant | 3 | 2 | The paper reports a qualitative "flat dose response" for thiazide in the presence of acebutolol but does not provide numeric PD parameters (e.g., Emax, EC50) or a quantitative concentration-effect curve for acebutolol itself. |
 | popPK | Magder_1983 | irrelevant | 1 | 0 | The study focuses on hemodynamic effects and relative concentrations for equipotent blocking doses in dogs, without reporting quantitative pharmacokinetic disposition parameters (CL, V, ka) for acebutolol. |
 | popPK | Maideen_2021 | irrelevant | 0 | 0 | The paper is a review of drug interactions without original quantitative pharmacokinetic parameter values for acebutolol. |
 | PD | Maideen_2021 | not_relevant | 1 | 0 | The paper is a qualitative review of drug interactions and does not report specific numeric PD parameters or concentration-effect curves for acebutolol. |
-| PGx | Maideen_2021 | not_relevant | 0 | 0 | The paper is a review of drug-drug interactions, not pharmacogenomic effects on acebutolol. |
+| PGx | Maideen_2021 | not_relevant | 1 | 2 | The paper is a review of drug-drug interactions, not pharmacogenomics, and does not report gene-variant specific effects on acebutolol PK/PD. |
 | popPK | Marie_1989 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of cardioprotection in isolated guinea pig hearts and does not report pharmacokinetic parameters for acebutolol. |
 | PD | Marie_1989 | not_relevant | 2 | 2 | The paper reports a single-dose comparative study of cardioprotection (stroke volume recovery) rather than a dose-response or exposure-response relationship with derived PD parameters like Emax or EC50. |
 | popPK | Neuhoff_2000 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of P-glycoprotein binding affinities (IC50) and does not report pharmacokinetic disposition parameters for acebutolol. |
 | PD | Neuhoff_2000 | not_relevant | 0 | 0 | The paper reports in vitro P-glycoprotein binding affinities (IC50) for acebutolol and its metabolite, which is a pharmacokinetic/transporter interaction study, not a pharmacodynamic exposure-response or dose-response relationship for the drug's therapeutic effect. |
 | popPK | Oualha_2024 | irrelevant | 0 | 0 | The paper is an in-vitro study on the anti-Leishmania activity of acebutolol, reporting IC50 values rather than pharmacokinetic parameters. |
-| PGx | PMID38951961_2024 | not_relevant | 0 | 0 | The paper discusses beta-blockers generally and specifically metoprolol, but explicitly states there is insufficient evidence for CYP2D6 and other beta-blockers (including acebutolol) or for the other genes evaluated. |
+| PGx | PMID38951961_2024 | not_relevant | 0 | 0 | The paper focuses on metoprolol, and the abstract explicitly states there is insufficient evidence for CYP2D6 and other beta-blockers (such as acebutolol). |
 | popPK | Pringle_1987 | irrelevant | 0 | 0 | The study is a pharmacodynamic comparison of cardioselectivity and does not report any pharmacokinetic parameters for acebutolol. |
 | popPK | Puşcas_1985 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of carbonic anhydrase activity and does not report any pharmacokinetic parameters for acebutolol. |
-| PGx | Rouby_1982 | not_relevant | 0 | 0 | The paper discusses clinical resistance to sodium nitroprusside and the use of acebutolol as a rescue therapy, but it does not report any pharmacogenomic effects (gene variants) on the PK or PD of acebutolol. |
+| PGx | Rouby_1982 | not_relevant | 0 | 0 | The paper reports resistance to sodium nitroprusside in hypertensive patients and the use of acebutolol as a treatment, but it does not investigate the effect of any genetic variants, genotypes, or genotypes on the pharmacokinetics or pharmacodynamics of acebutolol. |
 | popPK | Sakuta_1992 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology investigation of ion channel blockade in Xenopus oocytes and does not report pharmacokinetic parameters for acebutolol. |
 | popPK | Sawutz_1985 | irrelevant | 0 | 0 | no_text gate: only 125 chars of text extracted (&lt; 400) |
 | PD | Sawutz_1985 | not_relevant | 0 | 0 | The paper focuses on the characterization of monoclonal antibodies to alprenolol as receptor binding models, not on the pharmacodynamics or exposure-response of acebutolol. |

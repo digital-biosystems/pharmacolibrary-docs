@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;osimertinib&quot;,&quot;href&quot;:&quot;drugs/drug_osimertinib/&quot;},{&quot;label&quot;:&quot;Rodier_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Osimertinib_Rodier2022_reference&quot;,&quot;label&quot;:&quot;Rodier_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_osimertinib/Osimertinib_Rodier2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Osimertinib_Westra2025_reference&quot;,&quot;label&quot;:&quot;Westra_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_osimertinib/Osimertinib_Westra2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Osimertinib_Jones2023_reference&quot;,&quot;label&quot;:&quot;Jones_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_osimertinib/Osimertinib_Jones2023_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Osimertinib_Rodier2022_reference&quot;,&quot;label&quot;:&quot;Rodier_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_osimertinib/Osimertinib_Rodier2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Osimertinib_Jones2023_reference&quot;,&quot;label&quot;:&quot;Jones_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_osimertinib/Osimertinib_Jones2023_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Jones_2023_pEGFR&quot;,&quot;label&quot;:&quot;Jones_2023 \u00b7 pEGFR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_osimertinib/pd_Jones_2023_pEGFR.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -37,9 +37,9 @@ Rodier T et al., Exposure-Response Analysis of Osimertin…, Pharmaceutics (2022
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F (L/h) | `Q27` · CL/F | 13.7 | L/h | 3.8055555555555556e-06 | [l] / [h] | 7.2 | exact (1.0) | pharmaceutics-14-01844-t004:row1:col1, pharmaceutics-14-01844-t004:row1:col2 | — | 0.40 (11.7% RSE) |
-| V/F (L) | `Q76` · V/F | 974 | L | 0.974 | [l] | 17.5 | exact (1.0) | pharmaceutics-14-01844-t004:row2:col1, pharmaceutics-14-01844-t004:row2:col2 | — | 0.64 (30.4% RSE) |
-| ka (1/h) | `Q49` · kabs | 0.24 | 1/h | 6.666666666666667e-05 | 1/h | not captured | exact (1.0) | pharmaceutics-14-01844-t004:row3:col1 | — | not captured |
+| CL/F (L/h) | `Q27` · CL/F | 13.7 | L/h | 3.8055555555555556e-06 | [l] / [h] | 7.2 | exact (1.0) | pharmaceutics-14-01844-t004:row1:col1 | — | 0.40 (11.7% RSE) |
+| V/F (L) | `Q76` · V/F | 974 | L | 0.974 | [l] | 17.5 | exact (1.0) | pharmaceutics-14-01844-t004:row2:col1 | — | 0.64 (30.4% RSE) |
+| ka (1/h) | `Q49` · kabs | 0.24 | 1/h | 6.666666666666667e-05 | [1] / [h] | not captured | exact (1.0) | pharmaceutics-14-01844-t004:row3:col1 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -53,7 +53,6 @@ Rodier T et al., Exposure-Response Analysis of Osimertin…, Pharmaceutics (2022
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
 
 **Interpretation flags:**
-- implicit units: 'ka (1/h)' → 1/h (from the paper text: 'The paper states that the “first-order absorption rate constant (ka) was fixed to 0.24 h−1.”')
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=osimertinib
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
@@ -86,13 +85,13 @@ _All readers agree on the compared fields of this record._
 | C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['pharmaceutics-14-01844-t004:row1:col1', 'pharmaceutics-14-01844-t004:row1:col2'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['pharmaceutics-14-01844-t004:row1:col1'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['pharmaceutics-14-01844-t004:row3:col1'] |
-| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['pharmaceutics-14-01844-t004:row2:col1', 'pharmaceutics-14-01844-t004:row2:col2'] |
+| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['pharmaceutics-14-01844-t004:row2:col1'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 13.7 L/h | not captured | not captured | ['pharmaceutics-14-01844-t004:row1:col1', 'pharmaceutics-14-01844-t004:row1:col2'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 974 L | not captured | not captured | ['pharmaceutics-14-01844-t004:row2:col1', 'pharmaceutics-14-01844-t004:row2:col2'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 13.7 L/h | not captured | not captured | ['pharmaceutics-14-01844-t004:row1:col1'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 974 L | not captured | not captured | ['pharmaceutics-14-01844-t004:row2:col1'] |
 
 **Reviewer per-scenario checks:**
 
@@ -114,10 +113,10 @@ _All readers agree on the compared fields of this record._
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_osimertinib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Rodier_2022` / `Rodier_2022::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_osimertinib/models/modelica/Osimertinib_Rodier2022_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_osimertinib/models/modelica/Osimertinib_Rodier2022_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_osimertinib/models/modelica/Osimertinib_Rodier2022_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_osimertinib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Rodier_2022` / `Rodier_2022::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_osimertinib/models/modelica/Osimertinib_Rodier2022_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_osimertinib/models/modelica/Osimertinib_Rodier2022_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_osimertinib/models/modelica/Osimertinib_Rodier2022_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -126,7 +125,7 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_osimertinib/Osimertinib_Rodier2022_reference/Osimertinib_Rodier2022_reference_modelica.zip" download>Osimertinib_Rodier2022_reference_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_osimertinib/Osimertinib_Rodier2022_reference/Osimertinib_Rodier2022_reference_modelica.zip" download>Osimertinib_Rodier2022_reference_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_osimertinib/Osimertinib_Rodier2022_reference/Osimertinib_Rodier2022_reference_fmi.zip" download>Osimertinib_Rodier2022_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_osimertinib/Osimertinib_Rodier2022_reference/Osimertinib_Rodier2022_reference_matlab.zip" download>Osimertinib_Rodier2022_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_osimertinib/Osimertinib_Rodier2022_reference/Osimertinib_Rodier2022_reference_matlab_simbio.zip" download>Osimertinib_Rodier2022_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
@@ -135,7 +134,7 @@ _All readers agree on the compared fields of this record._
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_osimertinib/Osimertinib_Rodier2022_reference/Osimertinib_Rodier2022_reference.svg" alt="Osimertinib_Rodier2022_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_osimertinib/Osimertinib_Rodier2022_reference/Osimertinib_Rodier2022_reference.svg" alt="Osimertinib_Rodier2022_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -148,4 +147,4 @@ _All readers agree on the compared fields of this record._
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 03:48 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 20:08 UTC</sub>

@@ -17,9 +17,9 @@
 
 **Model:** No model was generated from this record.
 
-> The paper does not provide the full text or specific mechanism details, so the exact pharmacodynamic relationship between nitrendipine and heart rate cannot be described. No potency or rate values are available in the provided excerpts.
+> The record identifies a sigmoid Emax model for nitrendipine's effect on heart rate but indicates the effect driver is unresolved and the effect form is unknown. No specific mechanism, potency, or rate values are provided in the available excerpts.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Soons_1993`
 - **model family:** `sigmoid_emax`

@@ -18,13 +18,24 @@ Practolol is a selective beta-1 blocking agent used as an antiarrhythmic drug fo
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 00:42 | 5:01 | 0/1/0 | 0/0/0 | 0/0/0 | 24,344/1,281 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
+| 2026-10-15 03:36 | 0:17 | 0/1/0 | 0/0/0 | 0/0/0 | 24,344/1,273 | einfracz / qwen3.8-27b | 1 | 1/0 | 1/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed 1/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Barber_1971_reference](drugs/drug_practolol/Practolol_Barber1971_reference.md) | — | 1-compartment (no model) | 0 | Barber HE et al., Distribution kinetics and intestinal ab…, British journal of pharmaco… (1971) | [10.1111/j.1476-5381.1971.tb08049.x](https://doi.org/10.1111/j.1476-5381.1971.tb08049.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed 1/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Barber_1971_reference](drugs/drug_practolol/Practolol_Barber1971_reference.md) | — | 1-compartment (no model) | 0 | Barber HE et al., Distribution kinetics and intestinal ab…, British journal of pharmaco… (1971) | [10.1111/j.1476-5381.1971.tb08049.x](https://doi.org/10.1111/j.1476-5381.1971.tb08049.x) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=practolol).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
+| metabolism | liver | `CYP2D6` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ADRB1 (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -36,7 +47,7 @@ Practolol is a selective beta-1 blocking agent used as an antiarrhythmic drug fo
 
 - **PubMed hits:** 118 matched, 52 returned
 - **screened:** 1  ·  **relevant:** 0
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 1
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -53,43 +64,43 @@ _7 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | `Turner_1980.pdf` | Turner CW et al., The effect of thyroid dysfunction on th…, European journal of pharmac… (1980) | pd | 4 | [10.1016/0014-2999(80)90527-0](https://doi.org/10.1016/0014-2999(80)90527-0) | [6110545](https://www.ncbi.nlm.nih.gov/pubmed/6110545) | metadata signals extractable PD data (Emax) |
 | `Wilson_1984.pdf` | Wilson C et al., The rat lipolytic beta-adrenoceptor: st…, European journal of pharmac… (1984) | pd | 4 | [10.1016/0014-2999(84)90007-4](https://doi.org/10.1016/0014-2999(84)90007-4) | [6145597](https://www.ncbi.nlm.nih.gov/pubmed/6145597) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-10-07T00:42:33.347420+00:00</sub>
+<sub>queue written 2026-10-15T03:36:35.713053+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Anesini_2002 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of fibroblast proliferation where practolol is used only as a non-selective beta-adrenoceptor antagonist control, with no pharmacokinetic parameters reported. |
+| popPK | Anesini_2002 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of adrenergic receptors on fibroblasts where practolol is used only as a pharmacological tool compound, with no pharmacokinetic parameters reported. |
 | popPK | Barber_1971 | irrelevant | 0 | 0 | no_text gate: only 71 chars of text extracted (&lt; 400) |
-| popPK | Brown_1986 | irrelevant | 0 | 0 | The study investigates the inotropic effects of milrinone in myocardium, using practolol only as a beta-blocker antagonist, and reports no pharmacokinetic parameters for practolol. |
+| popPK | Brown_1986 | irrelevant | 0 | 0 | The study investigates the inotropic effects and mechanism of action of milrinone in vitro, using practolol only as a blocking agent and not reporting any pharmacokinetic parameters. |
 | PD | Brown_1986 | not_relevant | 0 | 0 | The paper reports PD parameters for milrinone, not practolol; practolol is used only as a beta-blocker antagonist in the experimental setup. |
-| popPK | Brown_1987 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of dobutamine's inotropic effects where practolol is used only as a beta-blocker antagonist, not as the subject of pharmacokinetic analysis. |
-| popPK | Brown_1990 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of dopamine mechanisms in guinea-pig tissues where practolol is used only as a beta-blocker antagonist, not as the subject of pharmacokinetic analysis. |
+| popPK | Brown_1987 | irrelevant | 0 | 0 | The study investigates the pharmacodynamics (inotropic response) of dobutamine in myocardial tissue, using practolol only as a non-selective antagonist for Schild plot analysis, rather than measuring practolol's pharmacokinetic disposition. |
+| popPK | Brown_1990 | irrelevant | 0 | 0 | The study investigates dopamine pharmacology in guinea pigs and uses practolol only as a non-competitive antagonist to characterize receptor interactions, without reporting any pharmacokinetic parameters for practolol. |
 | PD | Brown_1990 | not_relevant | 0 | 0 | The paper investigates the mechanisms of dopamine's action in isolated tissues and mentions practolol only as a noncompetitive antagonist used to characterize receptor involvement, without reporting any exposure-response or dose-response relationship for practolol itself. |
-| popPK | Delhaye_1983 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of beta-adrenergic receptor binding and adenylate cyclase activity, not a pharmacokinetic study of practolol disposition. |
-| PGx | El-Armouche_2009 | not_relevant | 0 | 0 | The paper is a review of beta-adrenergic signaling and heart failure mechanisms, not a study reporting specific pharmacogenomic effects on practolol PK/PD parameters. |
-| popPK | Grevel_1986 | irrelevant | 1 | 0 | The paper is a pharmacodynamic review comparing beta-blockers where practolol is only a comparator, and no specific quantitative PK parameters (CL, V, etc.) for practolol are provided in the text. |
-| popPK | Kimura_1994 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of higenamine's effects on murine atria, using practolol only as a beta-blocker antagonist, with no pharmacokinetic parameters reported. |
+| popPK | Delhaye_1983 | irrelevant | 0 | 0 | The study reports receptor binding/adenylate cyclase potency (Ki/Kact) for practolol as an antagonist, which is pharmacodynamic/mechanistic data, not pharmacokinetic disposition parameters (CL, V, t1/2). |
+| PGx | El-Armouche_2009 | not_relevant | 0 | 0 | The text is a review of beta-adrenergic stimulation and heart failure mechanisms, mentioning practolol only historically, without reporting specific pharmacogenomic effects on PK/PD parameters. |
+| popPK | Grevel_1986 | irrelevant | 2 | 0 | The paper is a pharmacodynamic comparison where practolol serves only as a reference/comparator agent, and no specific quantitative PK parameters for practolol are provided in the evidence. |
+| popPK | Kimura_1994 | irrelevant | 0 | 0 | Practolol is used only as a pharmacological antagonist in an in vitro mouse atrial study to characterize adrenergic receptor subtypes, with no pharmacokinetic data reported. |
 | PD | Kimura_1994 | not_relevant | 3 | 2 | The paper reports a qualitative antagonism of higenamine by practolol over a concentration range (10 nM-3 microM) but does not provide numeric PD parameters (e.g., pA2, Ki, or IC50) for practolol itself. |
-| popPK | Louis_1982 | irrelevant | 0 | 0 | The study is a pharmacological investigation of anticonvulsant effects in rats and does not report any pharmacokinetic parameters for practolol. |
-| popPK | Luck_1991 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of oxytocin secretion in bovine cells where practolol is used only as a receptor antagonist, not as a subject for pharmacokinetic analysis. |
+| popPK | Louis_1982 | irrelevant | 0 | 0 | The study is a behavioral/pharmacological investigation in rats focusing on anticonvulsant mechanisms, with no pharmacokinetic parameters (CL, V, etc.) reported for practolol. |
+| popPK | Luck_1991 | irrelevant | 0 | 0 | The paper is an in-vitro pharmacology study on bovine granulosa cells where practolol is used as a receptor antagonist, not a PK study. |
 | PD | Luck_1991 | not_relevant | 0 | 0 | The paper reports concentration-response data for catecholamines (adrenaline, noradrenaline, salbutamol) but only provides qualitative descriptions of practolol's poor blocking effect without numeric PD parameters or a defined dose-response curve for practolol itself. |
-| popPK | Lumley_1977 | irrelevant | 0 | 0 | The study is a pharmacological investigation of beta-adrenoceptor subtypes in guinea-pig atria using practolol as an antagonist, reporting pA2 values rather than pharmacokinetic disposition parameters. |
+| popPK | Lumley_1977 | irrelevant | 0 | 0 | The study is an in vitro pharmacological investigation of beta-adrenoceptor subtypes using practolol as an antagonist, reporting pA2 values rather than pharmacokinetic disposition parameters. |
 | popPK | Maroto_1992 | irrelevant | 0 | 0 | no_text gate: only 103 chars of text extracted (&lt; 400) |
 | PD | Maroto_1992 | not_relevant | 0 | 0 | The paper focuses on adrenoceptor cross-talk in liver glycogenolysis and does not report pharmacokinetic or pharmacodynamic modeling for practolol. |
-| popPK | Mauger_1980 | irrelevant | 0 | 0 | The study is an in-vitro receptor binding assay where practolol is used only as a pharmacological probe to characterize beta-adrenoceptors, not a pharmacokinetic study of practolol disposition. |
-| popPK | Naito_1985 | irrelevant | 0 | 0 | The study focuses on the receptor binding affinity of denopamine, with practolol serving only as a reference antagonist for selectivity comparison, and no pharmacokinetic parameters are reported. |
-| popPK | Peters_1984 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of adenylate cyclase activity in turkey erythrocytes, not a pharmacokinetic study of practolol. |
-| popPK | Robberecht_1983 | irrelevant | 0 | 0 | The study is an in-vitro receptor binding assay characterizing beta-adrenergic receptor subtypes, not a pharmacokinetic study of practolol disposition. |
+| popPK | Mauger_1980 | irrelevant | 0 | 0 | The paper is a receptor binding and functional assay study in cell lines, not a pharmacokinetic study, and practolol is only used as a comparator antagonist. |
+| popPK | Naito_1985 | irrelevant | 0 | 0 | The paper reports receptor binding affinity (Ki) for denopamine and practolol, not pharmacokinetic parameters (CL, V, t1/2). |
+| popPK | Peters_1984 | irrelevant | 0 | 0 | This is an in vitro mechanistic study on adenylate cyclase activity using turkey erythrocytes, with no pharmacokinetic data for practolol. |
+| popPK | Robberecht_1983 | irrelevant | 0 | 0 | The paper is an in-vitro receptor binding study characterizing beta-adrenergic receptor subtypes in human heart tissue, not a pharmacokinetic study of practolol disposition parameters (CL, V, etc.). |
 | popPK | Setchenska_1986 | irrelevant | 0 | 0 | no_text gate: only 87 chars of text extracted (&lt; 400) |
 | PD | Setchenska_1986 | not_relevant | 0 | 0 | The paper focuses on the classification of beta-adrenergic subtypes in rabbit bone marrow erythroblasts and does not report pharmacodynamic or exposure-response data for practolol. |
-| popPK | Steinberg_1984 | irrelevant | 0 | 0 | The study is an in-vitro receptor binding assay where practolol is used only as a competitive antagonist to characterize beta-adrenoceptors, not a pharmacokinetic study of practolol disposition. |
+| popPK | Steinberg_1984 | irrelevant | 0 | 0 | The study is an in-vitro receptor binding assay where practolol is used only as a competitor drug to assess beta-adrenergic selectivity, not a pharmacokinetic study. |
 | PD | Steinberg_1984 | not_relevant | 0 | 0 | The paper reports receptor binding kinetics and affinity constants (Kd, Bmax) for beta-adrenoceptors, not a pharmacodynamic exposure-response or dose-response relationship for practolol. |
 | popPK | Turner_1980 | irrelevant | 0 | 0 | no_text gate: only 79 chars of text extracted (&lt; 400) |
 | PD | Turner_1980 | not_relevant | 0 | 0 | The paper focuses on the chronotropic response to noradrenaline in thyroid dysfunction and does not report pharmacodynamic or exposure-response data for practolol. |
 | popPK | Wilson_1984 | irrelevant | 0 | 0 | no_text gate: only 83 chars of text extracted (&lt; 400) |
 | PD | Wilson_1984 | not_relevant | 0 | 0 | The paper focuses on beta-adrenoceptor agonists in rat lipolysis and does not mention practolol or report any exposure-response or dose-response data for it. |
-| popPK | Wroblewska_1984 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological characterization of adrenergic receptors using practolol as a probe antagonist, not a pharmacokinetic study. |
+| popPK | Wroblewska_1984 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on adrenergic receptors where practolol is used only as a pharmacological tool/antagonist, not as a subject of pharmacokinetic analysis. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 00:41 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-15 03:36 UTC</sub>

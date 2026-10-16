@@ -18,9 +18,9 @@
 
 **Model:** No model was generated from this record.
 
-> Terbutaline concentration (mol.l-1) produces relaxation of isolated human bronchus, expressed as % of the response to theophylline 3 x 10(-3) mol.l-1, described by an Emax model; the paper excerpts provide no mechanism details and no parameter values (Emax, EC50, gamma).
+> The record identifies terbutaline as the driver for the relaxation of isolated human bronchus using an Emax model, but the paper excerpts are unavailable. Consequently, the specific mechanism and key potency or rate values are not provided in the available text.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
 
 - **paper:** `Naline_1994`
 - **model family:** `emax`

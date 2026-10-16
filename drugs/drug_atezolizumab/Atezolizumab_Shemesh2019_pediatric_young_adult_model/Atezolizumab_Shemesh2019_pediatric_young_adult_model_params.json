@@ -1,0 +1,28 @@
+{
+ "dose_source": "WHO ATC DDD 57.1 mg parenteral (L01FF05)",
+ "model_id": "Atezolizumab_Shemesh2019_pediatric_young_adult_model",
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 2.511574074074074e-09,
+  "F": 1.0,
+  "VdPerKg": 4.2999999999999995e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 5.71e-05,
+  "k12": 7.036729420450352e-07,
+  "k21": 1.5573937908496732e-06,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662063
+ },
+ "reference_peaks": {
+  "central.C": 0.0177015279825599
+ },
+ "stop_time": 4233600.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

@@ -17,13 +17,14 @@ Tocilizumab, a monoclonal antibody that blocks interleukin signalling, is used t
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 00:53 | 2:01 | 0/2/1 | 4/0/1 | 0/0/0 | 220,154/11,702 | einfracz / qwen3.8-27b | 10 | 1/9 | 10/0 | 1 |
+| 2026-10-14 23:14 | 4:09 | 0/3/1 | 3/0/1 | 0/0/0 | 235,343/13,709 | einfracz / qwen3.8-27b | 10 | 1/9 | 10/0 | 1 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub><br><sub>route_to: `human_review`</sub> | [Bastida_2019_reference](drugs/drug_tocilizumab/Tocilizumab_Bastida2019_reference.md) | — | 1-compartment (no model) | 2 | Bastida C et al., Exposure-response modeling of tocilizum…, British journal of clinical… (2019) | [10.1111/bcp.13954](https://doi.org/10.1111/bcp.13954) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Arrivé_2024_reference](drugs/drug_tocilizumab/Tocilizumab_Arriv2024_reference.md) | — | 2-compartment (no model) | 7 (+2 cov.) | Arrivé C et al., A Population Pharmacokinetic Model of T…, BioDrugs : clinical immunot… (2024) | [10.1007/s40259-024-00676-z](https://doi.org/10.1007/s40259-024-00676-z) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Hooijberg_2025_reference](drugs/drug_tocilizumab/Tocilizumab_Hooijberg2025_reference.md) | — | 1-compartment (no model) | 3 | Hooijberg F et al., Precision Dosing of Intravenous Tociliz…, Therapeutic drug monitoring (2025) | [10.1097/FTD.0000000000001258](https://doi.org/10.1097/FTD.0000000000001258) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Leung_2022_reference](drugs/drug_tocilizumab/Tocilizumab_Leung2022_reference.md) | — | 1-compartment (no model) | 0 | Leung E et al., Pharmacokinetic/Pharmacodynamic Conside…, Clinical pharmacokinetics (2022) | [10.1007/s40262-021-01092-0](https://doi.org/10.1007/s40262-021-01092-0) |
 
@@ -31,13 +32,21 @@ Tocilizumab, a monoclonal antibody that blocks interleukin signalling, is used t
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Kovalenko_2020_ANC](drugs/drug_tocilizumab/pd_Kovalenko_2020_ANC.md) | Absolute Neutrophil Count ← tocilizumab · inhibition effect | — | Kovalenko P et al., Population Pharmacodynamic Model of Neu…, CPT: pharmacometrics & syst… (2020) | [10.1002/psp4.12534](https://doi.org/10.1002/psp4.12534) |
+| <span class="pk-badge pk-badge--green">accepted (caveats)</span> | [Kovalenko_2020_ANC](drugs/drug_tocilizumab/pd_Kovalenko_2020_ANC.md) | absolute neutrophil count ← tocilizumab · delayed effect through transit (transduction) compartments | — | Kovalenko P et al., Population Pharmacodynamic Model of Neu…, CPT: pharmacometrics & syst… (2020) | [10.1002/psp4.12534](https://doi.org/10.1002/psp4.12534) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Levi_2013_DAS28](drugs/drug_tocilizumab/pd_Levi_2013_DAS28.md) | Disease Activity Score using 28 joints ← tocilizumab · indirect response — drug inhibits the production of Disease Activity Score using 28 joints | — | Levi M et al., Exposure-response relationship of tocil…, Journal of clinical pharmac… (2013) | [10.1177/0091270012437585](https://doi.org/10.1177/0091270012437585) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Levi_2013_2_DAS28](drugs/drug_tocilizumab/pd_Levi_2013_2_DAS28.md) | Disease Activity Score using 28 joints ← tocilizumab · indirect response — drug inhibits the production of Disease Activity Score using 28 joints | — | Levi M et al., Exposure-Exposure Relationship of Tocil…, Journal of clinical pharmac… (2013) | [10.1177/0091270011437585](https://doi.org/10.1177/0091270011437585) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Vaskeikina_2026_FVC](drugs/drug_tocilizumab/pd_Vaskeikina_2026_FVC.md) | forced vital capacity ← tocilizumab · direct Emax (saturable) effect | — | Vaskeikina M et al., Systematic Review and Model-Based Meta-…, Pharmaceutics (2026) | [10.3390/pharmaceutics18020250](https://doi.org/10.3390/pharmaceutics18020250) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Vaskeikina_2026_mRSS](drugs/drug_tocilizumab/pd_Vaskeikina_2026_mRSS.md) | modified Rodnan skin score ← tocilizumab · direct Emax (saturable) effect | — | Vaskeikina M et al., Systematic Review and Model-Based Meta-…, Pharmaceutics (2026) | [10.3390/pharmaceutics18020250](https://doi.org/10.3390/pharmaceutics18020250) |
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Bastida_2019_CRP_ESR](drugs/drug_tocilizumab/pd_Bastida_2019_CRP_ESR.md) | C-reactive protein and erythrocyte sedimentation rate ← tocilizumab · indirect response — drug inhibits the production of C-reactive protein and erythrocyte sedimentation rate | — | Bastida C et al., Exposure-response modeling of tocilizum…, British journal of clinical… (2019) | [10.1111/bcp.13954](https://doi.org/10.1111/bcp.13954) |
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Bastida_2019_TJC_SJC_PGA_VAS](drugs/drug_tocilizumab/pd_Bastida_2019_TJC_SJC_PGA_VAS.md) | Tender and swollen joint counts and patient and evaluator global assessment ← tocilizumab · indirect response — drug inhibits the production of Tender and swollen joint counts and patient and evaluator global assessment | — | Bastida C et al., Exposure-response modeling of tocilizum…, British journal of clinical… (2019) | [10.1111/bcp.13954](https://doi.org/10.1111/bcp.13954) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Levi_2013_2_DAS28](drugs/drug_tocilizumab/pd_Levi_2013_2_DAS28.md) | Disease Activity Score using 28 joints (DAS28) ← tocilizumab · indirect response — drug inhibits the production of Disease Activity Score using 28 joints (DAS28) | — | Levi M et al., Exposure-Exposure Relationship of Tocil…, Journal of clinical pharmac… (2013) | [10.1177/0091270011437585](https://doi.org/10.1177/0091270011437585) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Vaskeikina_2026_FVC](drugs/drug_tocilizumab/pd_Vaskeikina_2026_FVC.md) | forced vital capacity ← tocilizumab · direct Emax (saturable) effect | — | Vaskeikina M et al., Systematic Review and Model-Based Meta-…, Pharmaceutics (2026) | [10.3390/pharmaceutics18020250](https://doi.org/10.3390/pharmaceutics18020250) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=tocilizumab).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | `CYP3A4` inducer | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inducer | DrugBank actor |
+
+<sub>Actors without a tissue in the table: IL6R (antibody), IL6R (inhibitor), IL6ST (modulator).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,44 +57,45 @@ Tocilizumab, a monoclonal antibody that blocks interleukin signalling, is used t
 ## Coverage
 
 - **PubMed hits:** 45 matched, 19 returned
-- **screened:** 3  ·  **relevant:** 3
-- **records:** 3  ·  extracted 0  ·  needs_review 1  ·  rejected 2  ·  stale 0
+- **screened:** 4  ·  **relevant:** 3
+- **records:** 4  ·  extracted 0  ·  needs_review 1  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
 
-_5 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_6 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Frey_2010.pdf` | Frey N et al., Population pharmacokinetic analysis of…, Journal of clinical pharmac… (2010) | popPK | 10 | [10.1177/0091270009350623](https://doi.org/10.1177/0091270009350623) | [20097931](https://pubmed.ncbi.nlm.nih.gov/20097931) | The paper describes a population PK model for tocilizumab, but the specific numeric parameter values (CL, V, Q, etc.) are not present in the provided evidence text. |
-| `Hooijberg_2025.pdf` | Hooijberg F et al., Precision Dosing of Intravenous Tociliz…, Therapeutic drug monitoring (2025) | popPK | 10 | [10.1097/FTD.0000000000001258](https://doi.org/10.1097/FTD.0000000000001258) | [39509293](https://pubmed.ncbi.nlm.nih.gov/39509293) | The study reports a population pharmacokinetic model for tocilizumab with specific quantitative values for linear clearance (0.20 L/d) and nonlinear elimination parameters (VM 5.2 mg/d, KM 0.19 mg/L) in the abstract. |
-| `Bastida_2019.pdf` | Bastida C et al., Exposure-response modeling of tocilizum…, British journal of clinical… (2019) | popPK | 6 | [10.1111/bcp.13954](https://doi.org/10.1111/bcp.13954) | [30958574](https://pubmed.ncbi.nlm.nih.gov/30958574) | Study performs a population PK/PD analysis of tocilizumab in humans and reports PD parameters (half-life of effect, EC50), but specific PK disposition parameters (CL, Vd) are not explicitly listed in the provided evidence. |
-| `Levi_2013_2.pdf` | Levi M et al., Exposure-Exposure Relationship of Tocil…, Journal of clinical pharmac… (2013) | popPK | 6 | [10.1177/0091270011437585](https://doi.org/10.1177/0091270011437585) | [23504875](https://pubmed.ncbi.nlm.nih.gov/23504875) | The paper describes a population PK/PD model for tocilizumab in humans, but the specific numeric PK parameters (CL, V, etc.) are not present in the provided evidence, which focuses on exposure-response relationships and PD metrics. |
-| `Bastida_2020.pdf` | Bastida C et al., Evaluation of dose-tapering strategies…, European journal of clinica… (2020) | popPK | 5 | [10.1007/s00228-020-02925-w](https://doi.org/10.1007/s00228-020-02925-w) | [32514745](https://pubmed.ncbi.nlm.nih.gov/32514745) | The paper describes a model-based PK/PD simulation study for tocilizumab, but the extracted evidence contains only summary efficacy/cost results and lacks specific numeric PK parameters (CL, V, etc.) or the underlying model equations. |
+| `Frey_2010.pdf` | Frey N et al., Population pharmacokinetic analysis of…, Journal of clinical pharmac… (2010) | popPK | 10 | [10.1177/0091270009350623](https://doi.org/10.1177/0091270009350623) | [20097931](https://pubmed.ncbi.nlm.nih.gov/20097931) | The study describes a population pharmacokinetic model for tocilizumab in humans, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
+| `Hooijberg_2025.pdf` | Hooijberg F et al., Precision Dosing of Intravenous Tociliz…, Therapeutic drug monitoring (2025) | popPK | 10 | [10.1097/FTD.0000000000001258](https://doi.org/10.1097/FTD.0000000000001258) | [39509293](https://pubmed.ncbi.nlm.nih.gov/39509293) | The paper reports a population PK model for tocilizumab with specific numeric parameters (CL, Vmax, Km) in the text. |
+| `Bastida_2019.pdf` | Bastida C et al., Exposure-response modeling of tocilizum…, British journal of clinical… (2019) | popPK | 7 | [10.1111/bcp.13954](https://doi.org/10.1111/bcp.13954) | [30958574](https://pubmed.ncbi.nlm.nih.gov/30958574) | The paper describes a population PK/pharmacodynamic model for tocilizumab in humans, but specific quantitative PK parameters (CL, V) are not present in the provided abstract/evidence, only PD parameters. |
+| `Levi_2013.pdf` | Levi M et al., Exposure-response relationship of tocil…, Journal of clinical pharmac… (2013) | popPK | 7 | [10.1177/0091270012437585](https://doi.org/10.1177/0091270012437585) | [23436260](https://pubmed.ncbi.nlm.nih.gov/23436260) | The paper describes a population PK/PD model for tocilizumab in humans, but specific quantitative PK parameters (CL, V, Q) are not present in the provided evidence, which focuses on exposure-response and EC50. |
+| `Bastida_2020.pdf` | Bastida C et al., Evaluation of dose-tapering strategies…, European journal of clinica… (2020) | popPK | 6 | [10.1007/s00228-020-02925-w](https://doi.org/10.1007/s00228-020-02925-w) | [32514745](https://pubmed.ncbi.nlm.nih.gov/32514745) | The paper describes a simulation study using a PK/PD model but does not report the original quantitative PK parameter values (CL, V, etc.) in the provided evidence, which focuses on simulation outcomes (remission rates, cost savings). |
+| `Levi_2013_2.pdf` | Levi M et al., Exposure-Exposure Relationship of Tocil…, Journal of clinical pharmac… (2013) | popPK | 5 | [10.1177/0091270011437585](https://doi.org/10.1177/0091270011437585) | [23504875](https://pubmed.ncbi.nlm.nih.gov/23504875) | The paper describes a population PK/PD model but provides no numeric PK parameter values (CL, V, etc.) in the evidence, only exposure-response relationships and clinical outcomes. |
 
-<sub>queue written 2026-10-07T00:52:28.406760+00:00</sub>
+<sub>queue written 2026-10-14T23:11:14.957767+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Arrivé_2024 | relevant | 10 | 4 | The study reports a population PK model for tocilizumab with quantitative covariate effects on clearance, but specific fixed-effect parameter values (e.g., typical CL, V, ka) are likely in the omitted Table 2. |
-| popPK | Aydeniz_2024 | irrelevant | 0 | 0 | The study investigates the effect of tocilizumab on lung mechanics using electrical impedance tomography, not its pharmacokinetic disposition. |
-| popPK | Bastida_2020 | relevant | 5 | 0 | The paper describes a model-based PK/PD simulation study for tocilizumab, but the extracted evidence contains only summary efficacy/cost results and lacks specific numeric PK parameters (CL, V, etc.) or the underlying model equations. |
-| popPK | Connarn_2023 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics and exposure-response relationships of the CAR T-cell therapy idecabtagene vicleucel, with tocilizumab mentioned only as a medication used to manage cytokine release syndrome, not as the subject drug. |
-| popPK | Frey_2010 | relevant | 10 | 0 | The paper describes a population PK model for tocilizumab, but the specific numeric parameter values (CL, V, Q, etc.) are not present in the provided evidence text. |
-| popPK | Huang_2025 | irrelevant | 0 | 0 | The paper is a clinical outcome study focusing on eGFR and DSA levels, reporting no pharmacokinetic parameters (CL, V, etc.) for tocilizumab. |
-| popPK | Jamois_2025 | relevant | 9 | 4 | The paper describes a population pharmacokinetic model for tocilizumab with quantitative parameters (CL, V, Q) and specific comparative values, but the primary parameter estimates are referenced in supplementary tables (Table S1, S5) not provided in the text. |
-| popPK | Kovalenko_2020 | irrelevant | 1 | 0 | The study models pharmacodynamics (neutrophil margination/tolerance) rather than pharmacokinetic disposition parameters for tocilizumab, which is treated as a covariate/comparator to the subject drug sarilumab. |
-| popPK | Leil_2021 | irrelevant | 0 | 0 | The paper is a model-based meta-analysis of clinical efficacy endpoints (DAS28 scores) and does not report pharmacokinetic parameters like clearance or volume. |
-| popPK | Levi_2013 | irrelevant | 4 | 0 | The paper describes a PKPD exposure-response analysis rather than a primary PK parameter estimation study, and specific quantitative PK values (CL, V, etc.) are not present in the provided evidence. |
-| popPK | Levi_2013_2 | relevant | 6 | 2 | The paper describes a population PK/PD model for tocilizumab in humans, but the specific numeric PK parameters (CL, V, etc.) are not present in the provided evidence, which focuses on exposure-response relationships and PD metrics. |
-| popPK | Marzolini_2020 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of lopinavir and hydroxychloroquine in COVID-19 patients, with tocilizumab acting only as a comparator to assess the effect of inflammation on drug metabolism. |
-| popPK | Patel_2023 | irrelevant | 0 | 0 | The study analyzes the effects of tocilizumab on HbA1c levels in giant cell arteritis patients and does not report any pharmacokinetic parameters such as clearance or volume. |
-| popPK | Sweiss_2025 | irrelevant | 0 | 0 | The study focuses on fludarabine pharmacokinetics in CAR-T patients; tocilizumab is mentioned only as a co-administered drug for toxicity management, with no PK parameters reported. |
-| popPK | Vaskeikina_2026 | irrelevant | 0 | 0 | The paper is a model-based meta-analysis of clinical efficacy endpoints (mRSS and FVC) for systemic sclerosis, not a pharmacokinetic study, and reports no PK parameters (CL, V, etc.) for tocilizumab. |
-| popPK | Wu_2025 | irrelevant | 0 | 0 | The study focuses on the cellular kinetics of idecabtagene vicleucel (ide-cel), while tocilizumab is only mentioned as a treatment for cytokine release syndrome (CRS) and is not the subject of pharmacokinetic analysis. |
+| popPK | Aydeniz_2024 | irrelevant | 0 | 0 | The study is a clinical observation of lung mechanics via electrical impedance tomography and does not report any pharmacokinetic parameters for tocilizumab. |
+| popPK | Bastida_2019 | relevant | 7 | 3 | The paper describes a population PK/pharmacodynamic model for tocilizumab in humans, but specific quantitative PK parameters (CL, V) are not present in the provided abstract/evidence, only PD parameters. |
+| popPK | Bastida_2020 | irrelevant | 6 | 0 | The paper describes a simulation study using a PK/PD model but does not report the original quantitative PK parameter values (CL, V, etc.) in the provided evidence, which focuses on simulation outcomes (remission rates, cost savings). |
+| popPK | Connarn_2023 | irrelevant | 0 | 0 | The study characterizes the pharmacokinetics of the CAR-T cell therapy idecabtagene vicleucel, not tocilizumab, which is only mentioned as a treatment for cytokine release syndrome. |
+| popPK | Frey_2010 | relevant | 10 | 0 | The study describes a population pharmacokinetic model for tocilizumab in humans, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
+| popPK | Huang_2025 | irrelevant | 0 | 0 | This is a clinical efficacy study evaluating the impact of tocilizumab on kidney transplant outcomes (eGFR, DSA), containing no pharmacokinetic data or disposition parameters. |
+| popPK | Jamois_2025 | relevant | 9 | 2 | The paper reports a population PK model for tocilizumab with quantitative disposition parameters (CL, V, Q), but the specific parameter estimates are located in Supplementary Tables (S1, S2, S5) which are not provided in the evidence. |
+| popPK | Kovalenko_2020 | irrelevant | 1 | 0 | The paper models pharmacodynamics (neutrophil margination/tolerance) rather than reporting quantitative population pharmacokinetic parameter estimates (CL, V, Q) for tocilizumab, which are treated as fixed covariates or external inputs. |
+| popPK | Leil_2021 | irrelevant | 0 | 0 | The paper is a model-based meta-analysis of clinical efficacy (DAS28 scores) for tocilizumab and other RA drugs, not a pharmacokinetic study, and does not report PK parameters like clearance or volume. |
+| popPK | Levi_2013 | relevant | 7 | 2 | The paper describes a population PK/PD model for tocilizumab in humans, but specific quantitative PK parameters (CL, V, Q) are not present in the provided evidence, which focuses on exposure-response and EC50. |
+| popPK | Levi_2013_2 | irrelevant | 5 | 0 | The paper describes a population PK/PD model but provides no numeric PK parameter values (CL, V, etc.) in the evidence, only exposure-response relationships and clinical outcomes. |
+| popPK | Marzolini_2020 | irrelevant | 0 | 0 | The study investigates the effect of tocilizumab on lopinavir and hydroxychloroquine concentrations, not tocilizumab's own pharmacokinetic parameters. |
+| popPK | Patel_2023 | irrelevant | 0 | 0 | The study analyzes effects on hemoglobin A1c levels, not pharmacokinetic parameters. |
+| popPK | Sweiss_2025 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of fludarabine in CAR-T patients, where tocilizumab is only mentioned as a toxicity treatment, not as the subject of PK analysis. |
+| popPK | Vaskeikina_2026 | irrelevant | 0 | 0 | The paper is a pharmacodynamic meta-analysis of treatment efficacy (mRSS/FVC) in systemic sclerosis, not a pharmacokinetic study, and contains no PK parameters for tocilizumab. |
+| popPK | Wu_2025 | irrelevant | 0 | 0 | The study focuses on the cellular kinetics of idecabtagene vicleucel (a CAR-T therapy), and tocilizumab is only mentioned as a treatment for cytokine release syndrome rather than as the subject drug for PK analysis. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 00:52 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-14 23:11 UTC</sub>

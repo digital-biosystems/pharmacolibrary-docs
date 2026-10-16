@@ -263,7 +263,7 @@ font-family="Noto Sans" font-size="9.72789" font-weight="700" font-style="normal
 font-family="Noto Sans" font-size="8" font-weight="400" font-style="normal" 
 >
 <text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="-7.04688" y="3" font-family="Noto Sans" font-size="8" font-weight="400" font-style="normal" 
- >22.3 L</text>
+ >160 L</text>
 </g>
 
 
@@ -381,7 +381,7 @@ font-family="Noto Sans" font-size="9.72789" font-weight="700" font-style="normal
 font-family="Noto Sans" font-size="8" font-weight="400" font-style="normal" 
 >
 <text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="-7.04688" y="3" font-family="Noto Sans" font-size="8" font-weight="400" font-style="normal" 
- >22.3 L</text>
+ >160 L</text>
 </g>
 
 
@@ -1425,7 +1425,7 @@ font-family="Sans" font-size="10" font-weight="400" font-style="normal"
 font-family="Noto Sans" font-size="8.7551" font-weight="400" font-style="normal" 
 >
 <text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="-7.76563" y="3.5" font-family="Noto Sans" font-size="8.7551" font-weight="400" font-style="normal" 
- >12.5 L/h</text>
+ >23 L/h</text>
 </g>
 
 
@@ -2032,7 +2032,7 @@ font-family="Noto Sans" font-size="8" font-weight="400" font-style="normal"
 font-family="Noto Sans" font-size="8" font-weight="400" font-style="normal" 
 >
 <text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="-14.7969" y="3" font-family="Noto Sans" font-size="8" font-weight="400" font-style="normal" 
- >10.6 L/h</text>
+ >0.106 L/h</text>
 </g>
 
 

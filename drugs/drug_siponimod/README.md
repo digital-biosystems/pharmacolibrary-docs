@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;siponimod&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Siponimod_Chaoyang2022v2_estimates_rse&quot;,&quot;label&quot;:&quot;Chaoyang_2022_2_estimates_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_siponimod/Siponimod_Chaoyang2022v2_estimates_rse.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Siponimod_Chaoyang2022v2_weighted_geometric_mean_weighted_ge&quot;,&quot;label&quot;:&quot;Chaoyang_2022_2_weighted_geometric_mean_weighted_geometric_coefficient_of_variation&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_siponimod/Siponimod_Chaoyang2022v2_weighted_geometric_mean_weighted_ge.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Siponimod_Chaoyang2022v2_reference&quot;,&quot;label&quot;:&quot;Chaoyang_2022_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_siponimod/Siponimod_Chaoyang2022v2_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # siponimod
 
@@ -27,14 +27,26 @@ Siponimod is an immunosuppressant used to treat relapsing-remitting multiple scl
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 00:34 | 0:50 | 2/0/0 | 0/0/0 | 0/0/0 | 38,058/2,012 | einfracz / qwen3.8-27b | 10 | 0/1 | 1/0 | 0 |
+| 2026-10-15 00:25 | 0:20 | 1/0/0 | 0/0/0 | 0/0/0 | 23,190/1,853 | einfracz / qwen3.8-27b | 10 | 0/1 | 1/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span> | [Chaoyang_2022_2_estimates_rse](drugs/drug_siponimod/Siponimod_Chaoyang2022v2_estimates_rse.md) | ▶ model + simulator | 1-compartment, oral | 3 | Chaoyang C et al., Pharmacokinetic Characteristics of Sipo…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.824232](https://doi.org/10.3389/fphar.2022.824232) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span> | [Chaoyang_2022_2_weighted_geometric_mean_weighted_geometric_coefficient_of_variation](drugs/drug_siponimod/Siponimod_Chaoyang2022v2_weighted_geometric_mean_weighted_ge.md) | ▶ model + simulator | 1-compartment, oral | 3 | Chaoyang C et al., Pharmacokinetic Characteristics of Sipo…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.824232](https://doi.org/10.3389/fphar.2022.824232) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Chaoyang_2022_2_reference](drugs/drug_siponimod/Siponimod_Chaoyang2022v2_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Chaoyang C et al., Pharmacokinetic Characteristics of Sipo…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.824232](https://doi.org/10.3389/fphar.2022.824232) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=siponimod).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| metabolism | liver | `CYP2C9` substrate, `CYP3A4` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: S1PR1 (modulator), S1PR5 (modulator).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,14 +58,14 @@ Siponimod is an immunosuppressant used to treat relapsing-remitting multiple scl
 
 - **PubMed hits:** 2 matched, 2 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 2  ·  extracted 2  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Biswal_2015 | irrelevant | 2 | 0 | The study is a Drug-Drug Interaction (DDI) trial focused on pharmacodynamic endpoints (heart rate, blood pressure) rather than reporting quantitative population-pharmacokinetic parameters (CL, V, ka) for siponimod. |
+| popPK | Biswal_2015 | irrelevant | 0 | 0 | The study focuses on pharmacodynamic interactions (heart rate, blood pressure) and does not report quantitative pharmacokinetic disposition parameters (CL, V, ka) or a PK model for siponimod in the provided text. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 00:33 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-15 00:25 UTC</sub>

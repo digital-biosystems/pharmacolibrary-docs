@@ -4,7 +4,7 @@
 
 # mibefradil — `Mibefradil_Welker1998v2_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.214), gpt-oss:120b (not confirmed, agreement 0.231). Primary extraction retained.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2), gpt-oss:120b (not confirmed, agreement 0.231). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -20,7 +20,7 @@
 
 A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Welker_1998) cannot stand in for this paper's evidence. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — mibefradil: tmax 2.4 hours, Fab 80 %, V 180 L.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has mibefradil, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has mibefradil, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -78,10 +78,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.214 (3/14 fields) | 11 |
+| `gpt-oss-120b` | not confirmed | 0.2 (3/15 fields) | 12 |
 | `gpt-oss:120b` | not confirmed | 0.231 (3/13 fields) | 10 |
 
-<details><summary>21 field discrepancies</summary>
+<details><summary>22 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -89,6 +89,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | `gpt-oss-120b` | `parameters[absolute bioavailability]` | not captured | 80 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[clearance]` | not captured | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[clearance]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[dose]` | not captured | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[oral terminal exponential volume of distribution]` | 180.0 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[plasma protein binding]` | not captured | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[plasma protein binding]` | not captured | 99.5 | only_one_extracted |
@@ -134,7 +135,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_mibefradil/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Welker_1998_2` / `Welker_1998_2::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_mibefradil/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Welker_1998_2` / `Welker_1998_2::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

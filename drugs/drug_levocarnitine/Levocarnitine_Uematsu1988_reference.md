@@ -4,7 +4,7 @@
 
 # levocarnitine — `Levocarnitine_Uematsu1988_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (primary re-run, agreement 0.222), gpt-oss:120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (primary re-run, agreement 0.222), gpt-oss:120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -24,13 +24,13 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:38:27.665512+00:00) predates the upstream re-run (2026-10-07 17:44:50.681725+00:00). Current validate status: `rejected`.
+> **Dose compound ≠ measured compound:** dosed `l-carnitine`, measured `carnitine`.
 
 ## Citation
 Uematsu T et al., Pharmacokinetics and safety of l-carnit…, European journal of clinica… (1988)
   ·  DOI: [10.1007/BF00614562](https://doi.org/10.1007/BF00614562)
 
-<div class="pk-model-meta" hidden drug="levocarnitine" model-id="Levocarnitine_Uematsu1988_reference" status="rejected" stale="true" population="healthy subjects" measured-compound="l-carnitine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="levocarnitine" model-id="Levocarnitine_Uematsu1988_reference" status="rejected" stale="false" population="healthy subjects" measured-compound="carnitine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.
@@ -42,20 +42,37 @@ Uematsu T et al., Pharmacokinetics and safety of l-carnit…, European journal o
 
 _No resolved parameters._
 
+### Unresolved rows _(no Q-code or no value — not parameters)_
+| label (paper) | Q-code | value | link |
+|---|---|---|---|
+| V. | Q61 | not captured | llm |
+| total 24 h excretion in urine | Q91 | not captured | llm_corrected |
+| Vc | Q63 | not captured | exact |
+| t1/2 gamma | Q89 | not captured | exact |
+| urine recovery in 24 h | Q44 | not captured | llm |
+
 ## Departures & gaps
 
 **Interpretation flags:**
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=l-carnitine
+- dropped unlinked row (NIL): 'l-carnitine' — extend the ontology if this is a real PK parameter (source ['Uematsu_1988:abstract'])
+- dropped unlinked row (NIL): 'healthy subjects' — extend the ontology if this is a real PK parameter (source ['Uematsu_1988:abstract'])
+- unit_dimension_mismatch: 'V.' → Q61 (unit 'dimensionless' vs ontology '[length] ** 3') — route to review
+- unit_dimension_mismatch: 'total 24 h excretion in urine' → Q91 (unit '[mass] / [time]' vs ontology '[mass]') — route to review
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=carnitine
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- 1C volume Q63 kept: Q61 already present — review duplicate volume
+- status held at route_to_review — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Uematsu_1988_metadata.yaml (0 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Uematsu_1988_metadata.yaml (8 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
-Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
@@ -67,12 +84,12 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `parameters[t1/2 gamma]` | not captured | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[total 24 h excretion in urine]` | not captured | 4.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total 24 h excretion in urine]` | not captured | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[urine recovery in 24 h]` | not captured | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v.]` | not captured | 3.0 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v.]` | not captured | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[vc]` | not captured | not captured | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | l-carnitine | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | l-carnitine | unknown | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | l-carnitine | levocarnitine | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | l-carnitine | levocarnitine | mismatch |
 | `gpt-oss:120b` | `parameters[l-carnitine]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[t1/2 gamma]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[t1/2 gamma]` | not captured | not captured | only_one_extracted |
@@ -100,6 +117,11 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
 | C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q44 | pass | dimensionless | not captured | not captured | not captured | ['Uematsu_1988:abstract'] |
+| C5_dimension_Q61 | fail | dimensionless | % | not captured | not captured | ['Uematsu_1988:abstract'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Uematsu_1988:abstract'] |
+| C5_dimension_Q89 | pass | [time] | not captured | not captured | not captured | ['Uematsu_1988:abstract'] |
+| C5_dimension_Q91 | fail | [mass] / [time] | mg/day | not captured | not captured | ['Uematsu_1988:abstract', 'Uematsu_1988:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
 <details class="legend">
@@ -109,7 +131,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_levocarnitine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Uematsu_1988` / `Uematsu_1988::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_levocarnitine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Uematsu_1988` / `Uematsu_1988::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -125,4 +147,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 17:44 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 03:14 UTC</sub>

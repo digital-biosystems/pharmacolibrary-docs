@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C10A&quot;,&quot;href&quot;:&quot;atc/C10A.md&quot;},{&quot;label&quot;:&quot;bempedoic acid&quot;,&quot;href&quot;:&quot;drugs/drug_bempedoic_acid/&quot;},{&quot;label&quot;:&quot;Jadhav_2023 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;BempedoicAcid_Amore2023_reference&quot;,&quot;label&quot;:&quot;Amore_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bempedoic_acid/BempedoicAcid_Amore2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BempedoicAcid_Jadhav2023_reference&quot;,&quot;label&quot;:&quot;Jadhav_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bempedoic_acid/BempedoicAcid_Jadhav2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # bempedoic acid — `BempedoicAcid_Jadhav2023_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.944), gpt-oss:120b (not confirmed, agreement 0.789). Primary extraction retained.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.944), gpt-oss:120b (not confirmed, agreement 0.789). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -12,34 +13,44 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
+
+> **Caveat** (`covariates_not_exercised`): Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.
 
 ### Reviewer guidance
 
+**The covariate scenarios were not simulated; t3_param_coverage.**
+
+The base model was simulated, not the covariate effects the record defines. Extracted — bempedoic acid: CL/F 0.755 L/h, V/F 19.1 L, kabs 1.41 h−1, kcomp 0.184 h−1.
+
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has bempedoic acid, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Jadhav SB et al., Population pharmacokinetic and pharmaco…, Journal of pharmacokinetics… (2023)
   ·  DOI: [10.1007/s10928-023-09864-w](https://doi.org/10.1007/s10928-023-09864-w)
 
-<div class="pk-model-meta" hidden drug="bempedoic acid" model-id="BempedoicAcid_Jadhav2023_reference" status="extracted" stale="false" population="healthy subjects and patients with dyslipidemia" measured-compound="bempedoic acid" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="bempedoic acid" model-id="BempedoicAcid_Jadhav2023_reference" status="needs_review" stale="false" population="healthy subjects and patients with dyslipidemia" measured-compound="bempedoic_acid" parameterization="apparent" topology="1C"></div>
 
-**Model structure:** parent + metabolite; no model was built for this record.  
-**Parameters:** 4 extracted, plus 2 covariate effects.
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 4 extracted, plus 4 covariate effects.
 
-**Parameterization:** CL/F, V1/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F, L/h | `Q27` · CL/F | 0.755 | L/h | 2.0972222222222223e-07 | [l] / [h] | 2.6 | exact (1.0) | Jadhav_2023_table_2:row0:col1, Jadhav_2023_table_2:row0:col2 | — | 29.7 (None% RSE) |
-| Vc/F, L | `Q290` · V1/F | 19.1 | L | 0.019100000000000002 | [l] | 6.9 | exact (1.0) | Jadhav_2023_table_2:row1:col1, Jadhav_2023_table_2:row1:col2 | — | 100 (None% RSE) |
-| Ka, h−1 | `Q49` · kabs | 1.41 | h−1 | 0.00039166666666666663 | [1] / [h] | 5.6 | exact (1.0) | Jadhav_2023_table_2:row2:col1, Jadhav_2023_table_2:row2:col2 | — | 73.9 (None% RSE) |
-| K23, h−1 | `Q48` · kcomp | 0.184 | h−1 | 5.111111111111111e-05 | [1] / [h] | 8.3 | exact (1.0) | Jadhav_2023_table_2:row3:col1, Jadhav_2023_table_2:row3:col2 | — | not captured |
-| egfr | `Q900` · egfr | 0.574 | not captured | not captured | not captured | 6.3 | not captured (not captured) | Jadhav_2023_table_2:row12:col1, Jadhav_2023_table_2:row12:col2 | — | not captured |
-| age | `Q900` · age | 0.743 | not captured | not captured | not captured | 15.9 | not captured (not captured) | Jadhav_2023_table_2:row16:col1, Jadhav_2023_table_2:row16:col2 | — | not captured |
+| CL/F, L/h | `Q27` · CL/F | 0.755 | L/h | 2.0972222222222223e-07 | [l] / [h] | not captured | exact (1.0) | Jadhav_2023_table_2:row0:col1, Jadhav_2023_table_2:row0:col2 | — | 29.7 (None% RSE) |
+| Vc/F, L | `Q76` · V/F | 19.1 | L | 0.019100000000000002 | [l] | not captured | exact (1.0) | Jadhav_2023_table_2:row1:col1, Jadhav_2023_table_2:row1:col2 | — | 100 (None% RSE) |
+| Ka, h−1 | `Q49` · kabs | 1.41 | h−1 | 0.00039166666666666663 | [1] / [h] | not captured | exact (1.0) | Jadhav_2023_table_2:row2:col1, Jadhav_2023_table_2:row2:col2 | — | 73.9 (None% RSE) |
+| K23, h−1 | `Q48` · kcomp | 0.184 | h−1 | 5.111111111111111e-05 | [1] / [h] | not captured | exact (1.0) | Jadhav_2023_table_2:row3:col1, Jadhav_2023_table_2:row3:col2 | — | not captured |
+| black_race | `Q900` · black_race | 18.0 | not captured | not captured | not captured | not captured | not captured (not captured) | Jadhav_2023_table_2:row9:col2 | — | not captured |
+| egfr | `Q900` · egfr | 0.574 | not captured | not captured | not captured | not captured | not captured (not captured) | Jadhav_2023_table_2:row12:col1, Jadhav_2023_table_2:row12:col2 | — | not captured |
+| age | `Q900` · age | 0.743 | not captured | not captured | not captured | not captured | not captured (not captured) | Jadhav_2023_table_2:row16:col1, Jadhav_2023_table_2:row16:col2 | — | not captured |
+| theta_kabs_food | `Q900` · theta_kabs_food | 1.4 | not captured | not captured | not captured | not captured | not captured (not captured) | Jadhav_2023_table_2:row5:col2 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -47,6 +58,10 @@ Jadhav SB et al., Population pharmacokinetic and pharmaco…, Journal of pharmac
 </details>
 
 ## Departures & gaps
+
+**Deviations:**
+- `defaulted_parameters`: ['Tlag']
+- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
 
 **Interpretation flags:**
 - table section residual_error: 'PD proportional, %' routed out of structural estimates ('Residual errora')
@@ -58,102 +73,41 @@ Jadhav SB et al., Population pharmacokinetic and pharmaco…, Journal of pharmac
 - table section iiv: 'CL/F' routed out of structural estimates ('IIV, %CV')
 - table section iiv: 'Vc/F' routed out of structural estimates ('IIV, %CV')
 - table section iiv: 'Ka' routed out of structural estimates ('IIV, %CV')
-- dropped PD-category row 'Imax' → Q323 (Imax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Tab3:row2:col1', 'Tab3:row2:col2'])
-- dropped PD-category row 'IC50, µg/mL' → Q322 (IC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Tab3:row3:col1', 'Tab3:row3:col2'])
-- dropped unlinked row (NIL): 'Baseline LDL-C, mg/dL' — extend the ontology if this is a real PK parameter (source ['Tab3:row4:col1', 'Tab3:row4:col2'])
-- dropped unlinked row (NIL): 'TURN, h' — extend the ontology if this is a real PK parameter (source ['Tab3:row5:col1', 'Tab3:row5:col2'])
-- dropped unlinked row (NIL): 'Ezetimibe' — extend the ontology if this is a real PK parameter (source ['Tab3:row7:col1', 'Tab3:row7:col2', 'Jadhav_2023_table_2:row13:col2'])
-- dropped value-less row: 'Low-intensity statin'
-- dropped value-less row: 'Moderate-intensity statin'
-- dropped value-less row: 'High-intensity statin'
-- dropped unlinked row (NIL): 'Female sex' — extend the ontology if this is a real PK parameter (source ['Tab3:row11:col1', 'Tab3:row11:col2', 'Jadhav_2023_table_2:row7:col2', 'Jadhav_2023_table_2:row15:col2'])
-- dropped unlinked row (NIL): 'Body weight' — extend the ontology if this is a real PK parameter (source ['Tab3:row12:col1', 'Tab3:row12:col2', 'Jadhav_2023_table_2:row8:col1', 'Jadhav_2023_table_2:row8:col2', 'Jadhav_2023_table_2:row17:col1', 'Jadhav_2023_table_2:row17:col2'])
-- dropped value-less row: 'Black race'
-- dropped value-less row: 'Statin prior therapy'
-- dropped unlinked row (NIL): 'HeFH' — extend the ontology if this is a real PK parameter (source ['Tab3:row19:col1', 'Tab3:row19:col2'])
-- dropped value-less row: 'T2DM'
-- dropped value-less row: 'Ezetimibe prior therapy'
+- table representations disagree for 'Imax'; source reconciliation required
+- table representations disagree for 'IC50, µg/mL'; source reconciliation required
+- table representations disagree for 'Baseline LDL-C, mg/dL'; source reconciliation required
+- table representations disagree for 'TURN, h'; source reconciliation required
+- table representations disagree for 'Ezetimibe'; source reconciliation required
+- table representations disagree for 'Female sex'; source reconciliation required
+- table representations disagree for 'Body weight'; source reconciliation required
+- table representations disagree for 'HeFH'; source reconciliation required
+- dropped PD-category row 'Imax' → Q323 (Imax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Tab3:row2:col1'])
+- dropped PD-category row 'IC50, µg/mL' → Q322 (IC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Tab3:row3:col1'])
+- dropped unlinked row (NIL): 'Baseline LDL-C, mg/dL' — extend the ontology if this is a real PK parameter (source ['Tab3:row4:col1'])
+- dropped unlinked row (NIL): 'TURN, h' — extend the ontology if this is a real PK parameter (source ['Tab3:row5:col1'])
+- dropped unlinked row (NIL): 'Ezetimibe' — extend the ontology if this is a real PK parameter (source ['Tab3:row7:col1', 'Jadhav_2023_table_2:row13:col2'])
+- dropped unlinked row (NIL): 'Female sex' — extend the ontology if this is a real PK parameter (source ['Tab3:row11:col1', 'Jadhav_2023_table_2:row7:col2', 'Jadhav_2023_table_2:row15:col2'])
+- dropped unlinked row (NIL): 'Body weight' — extend the ontology if this is a real PK parameter (source ['Tab3:row12:col1', 'Jadhav_2023_table_2:row8:col1', 'Jadhav_2023_table_2:row8:col2', 'Jadhav_2023_table_2:row17:col1', 'Jadhav_2023_table_2:row17:col2'])
+- dropped unlinked row (NIL): 'HeFH' — extend the ontology if this is a real PK parameter (source ['Tab3:row19:col1'])
 - dropped duplicate Q48 ('K32, h−1', value '0.156') — already have one for this compound
-- dropped value-less row: 'Food on Ka'
-- dropped value-less row: 'Hyperlipidemia'
+- covariate level 'Black race' → Q900:black_race = 18.0 (linear_fractional on Q27)
+- dropped unlinked row (NIL): 'Hyperlipidemia' — extend the ontology if this is a real PK parameter (source ['Jadhav_2023_table_2:row10:col2'])
+- dropped unlinked row (NIL): 'T2DM' — extend the ontology if this is a real PK parameter (source ['Jadhav_2023_table_2:row11:col2'])
 - covariate level 'eGFR' → Q900:egfr = 0.574 (power on Q27)
 - covariate level 'Age' → Q900:age = 0.743 (power on Q27)
-- dropped value-less row: 'Simvastatin'
+- dropped unlinked row (NIL): 'Simvastatin' — extend the ontology if this is a real PK parameter (source ['Jadhav_2023_table_2:row18:col2'])
 - dropped unlinked row (NIL): 'Atorvastatin' — extend the ontology if this is a real PK parameter (source ['Jadhav_2023_table_2:row20:col1', 'Jadhav_2023_table_2:row20:col2'])
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=bempedoic acid
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=bempedoic_acid
+- 1C volume normalization: Q290→Q76 (single-compartment model has no central/peripheral split; 'Vc/F, L' is the general volume)
 - status held at route_to_review — not promoted
-- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- unparsed cell Tab3:row2:col3 = '(0.314, 0.386)'
-- unparsed cell Tab3:row3:col3 = '(2.07, 4.26)'
-- unparsed cell Tab3:row4:col3 = '(141, 145)'
-- unparsed cell Tab3:row5:col3 = '(70.2, 101)'
-- unparsed cell Tab3:row7:col3 = '(0.114, 0.266)'
-- unparsed cell Tab3:row8:col1 = '− 0.238'
-- unparsed cell Tab3:row8:col3 = '(− 0.325, − 0.150)'
-- unparsed cell Tab3:row9:col1 = '− 0.302'
-- unparsed cell Tab3:row9:col3 = '(− 0.346, − 0.257)'
-- unparsed cell Tab3:row10:col1 = '− 0.424'
-- unparsed cell Tab3:row10:col3 = '(− 0.461, − 0.387)'
-- unparsed cell Tab3:row11:col3 = '(0.137, 0.269)'
-- unparsed cell Tab3:row12:col3 = '(0.410, 0.679)'
-- unparsed cell Tab3:row13:col1 = '− 0.240'
-- unparsed cell Tab3:row13:col3 = '(− 0.330, − 0.150)'
-- unparsed cell Tab3:row14:col1 = '− 0.373'
-- unparsed cell Tab3:row14:col3 = '(− 0.525, − 0.222)'
-- unparsed cell Tab3:row16:col1 = '− 0.159'
-- unparsed cell Tab3:row16:col3 = '(− 0.191, − 0.128)'
-- unparsed cell Tab3:row17:col1 = '− 0.268'
-- unparsed cell Tab3:row17:col3 = '(− 0.282, − 0.253)'
-- unparsed cell Tab3:row18:col1 = '− 0.293'
-- unparsed cell Tab3:row18:col3 = '(− 0.307, − 0.279)'
-- unparsed cell Tab3:row19:col3 = '(0.0316, 0.103)'
-- unparsed cell Tab3:row20:col1 = '− 0.0661'
-- unparsed cell Tab3:row20:col3 = '(− 0.0830, − 0.0492)'
-- unparsed cell Tab3:row21:col1 = '− 0.0596'
-- unparsed cell Tab3:row21:col3 = '(− 0.0917, − 0.0274)'
-- unparsed cell Tab3:row22:col1 = '− 0.296'
-- unparsed cell Tab3:row22:col3 = '(− 0.345, − 0.247)'
-- unparsed cell Tab3:row24:col3 = '(15.0, 15.6)'
-- unparsed cell Tab3:row25:col3 = '(3.24, 4.64)'
-- unparsed cell Tab3:row27:col3 = '(40.8, 45.3)'
-- unparsed cell Tab3:row28:col3 = '(23.4, 24.5)'
-- unparsed cell Jadhav_2023_table_2:row0:col3 = '(0.716, 0.794)'
-- unparsed cell Jadhav_2023_table_2:row1:col3 = '(16.5, 21.7)'
-- unparsed cell Jadhav_2023_table_2:row2:col3 = '(1.25, 1.56)'
-- unparsed cell Jadhav_2023_table_2:row3:col3 = '(0.154, 0.215)'
-- unparsed cell Jadhav_2023_table_2:row4:col3 = '(0.143, 0.169)'
-- unparsed cell Jadhav_2023_table_2:row5:col1 = '− 0.777'
-- unparsed cell Jadhav_2023_table_2:row5:col3 = '(− 0.799, − 0.754)'
-- unparsed cell Jadhav_2023_table_2:row7:col1 = '− 0.127'
-- unparsed cell Jadhav_2023_table_2:row7:col3 = '(− 0.169, − 0.0846)'
-- unparsed cell Jadhav_2023_table_2:row8:col3 = '(0.493, 0.727)'
-- unparsed cell Jadhav_2023_table_2:row9:col1 = '− 0.143'
-- unparsed cell Jadhav_2023_table_2:row9:col3 = '(− 0.194, − 0.0924)'
-- unparsed cell Jadhav_2023_table_2:row10:col1 = '− 0.0945'
-- unparsed cell Jadhav_2023_table_2:row10:col3 = '(− 0.147, − 0.0416)'
-- unparsed cell Jadhav_2023_table_2:row11:col1 = '− 0.177'
-- unparsed cell Jadhav_2023_table_2:row11:col3 = '(− 0.235, − 0.119)'
-- unparsed cell Jadhav_2023_table_2:row12:col3 = '(0.503, 0.645)'
-- unparsed cell Jadhav_2023_table_2:row13:col1 = '− 0.0934'
-- unparsed cell Jadhav_2023_table_2:row13:col3 = '(− 0.146, − 0.0413)'
-- unparsed cell Jadhav_2023_table_2:row15:col1 = '− 0.0895'
-- unparsed cell Jadhav_2023_table_2:row15:col3 = '(− 0.148, − 0.0308)'
-- unparsed cell Jadhav_2023_table_2:row16:col3 = '(0.511, 0.976)'
-- unparsed cell Jadhav_2023_table_2:row17:col3 = '(0.557, 1.32)'
-- unparsed cell Jadhav_2023_table_2:row18:col1 = '− 0.154'
-- unparsed cell Jadhav_2023_table_2:row18:col3 = '(− 0.242, − 0.0654)'
-- unparsed cell Jadhav_2023_table_2:row20:col3 = '(0.0886, 0.195)'
-- unparsed cell Jadhav_2023_table_2:row22:col3 = '(31.2, 32.6)'
-- unparsed cell Jadhav_2023_table_2:row23:col3 = '(52.9, 55.7)'
-- unparsed cell Jadhav_2023_table_2:row25:col3 = '(27.7, 31.5)'
-- unparsed cell Jadhav_2023_table_2:row26:col3 = '(93.9, 106)'
-- unparsed cell Jadhav_2023_table_2:row27:col3 = '(65.8, 81.2)'
-- companion parameter table 2 transcribed (35 record(s), model stage 'final')
+- table Tab3: unbound_uncertainty
+- table Tab3: representations disagree; selected evidence retained, not merged
+- companion parameter table 2 transcribed (50 record(s), model stage 'final')
 - LLM selected parameter table(s) 2
 
 ## Validation
@@ -193,13 +147,25 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Jadhav_2023_table_2:row0:col1', 'Jadhav_2023_table_2:row0:col2'] |
-| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['Jadhav_2023_table_2:row1:col1', 'Jadhav_2023_table_2:row1:col2'] |
 | C5_dimension_Q48 | pass | 1 / [time] | not captured | not captured | not captured | ['Jadhav_2023_table_2:row3:col1', 'Jadhav_2023_table_2:row3:col2'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Jadhav_2023_table_2:row2:col1', 'Jadhav_2023_table_2:row2:col2'] |
+| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Jadhav_2023_table_2:row1:col1', 'Jadhav_2023_table_2:row1:col2'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 0.755 L/h | not captured | not captured | ['Jadhav_2023_table_2:row0:col1', 'Jadhav_2023_table_2:row0:col2'] |
-| C9_phys_window_Q290 | pass | volume within physiological range | 19.1 L | not captured | not captured | ['Jadhav_2023_table_2:row1:col1', 'Jadhav_2023_table_2:row1:col2'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 19.1 L | not captured | not captured | ['Jadhav_2023_table_2:row1:col1', 'Jadhav_2023_table_2:row1:col2'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_output_variable | not captured | pass | C_central (measured=bempedoic_acid) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | fail | 4 scholar param(s) emitted or defaulted | 3 covered | not captured | neither emitted nor in defaulted[]: ['kcomp'] |
+| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -208,7 +174,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_bempedoic_acid/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Jadhav_2023` / `Jadhav_2023::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_bempedoic_acid/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Jadhav_2023` / `Jadhav_2023::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_bempedoic_acid/models/modelica/BempedoicAcid_Jadhav2023_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_bempedoic_acid/models/modelica/BempedoicAcid_Jadhav2023_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_bempedoic_acid/models/modelica/BempedoicAcid_Jadhav2023_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -217,21 +186,26 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_bempedoic_acid/BempedoicAcid_Jadhav2023_reference/BempedoicAcid_Jadhav2023_reference_modelica.zip" download>BempedoicAcid_Jadhav2023_reference_modelica.zip</a> <span class="pk-size">(5.1 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_bempedoic_acid/BempedoicAcid_Jadhav2023_reference/BempedoicAcid_Jadhav2023_reference_fmi.zip" download>BempedoicAcid_Jadhav2023_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_bempedoic_acid/BempedoicAcid_Jadhav2023_reference/BempedoicAcid_Jadhav2023_reference_matlab.zip" download>BempedoicAcid_Jadhav2023_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_bempedoic_acid/BempedoicAcid_Jadhav2023_reference/BempedoicAcid_Jadhav2023_reference_matlab_simbio.zip" download>BempedoicAcid_Jadhav2023_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_bempedoic_acid/BempedoicAcid_Jadhav2023_reference/BempedoicAcid_Jadhav2023_reference_sbml.zip" download>BempedoicAcid_Jadhav2023_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_bempedoic_acid/BempedoicAcid_Jadhav2023_reference/BempedoicAcid_Jadhav2023_reference_cellml.zip" download>BempedoicAcid_Jadhav2023_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_bempedoic_acid/BempedoicAcid_Jadhav2023_reference/BempedoicAcid_Jadhav2023_reference.svg" alt="BempedoicAcid_Jadhav2023_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+**Administration: oral** — 180 mg, single dose, first-order absorption (ka 1.41 /h, F 1). Dose in the paper: 180 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_bempedoic_acid/BempedoicAcid_Jadhav2023_reference/BempedoicAcid_Jadhav2023_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_bempedoic_acid/BempedoicAcid_Jadhav2023_reference/BempedoicAcid_Jadhav2023_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C_enteral` · parameters `BempedoicAcid_Jadhav2023_reference_params.json` · controls `BempedoicAcid_Jadhav2023_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 10:51 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 01:07 UTC</sub>

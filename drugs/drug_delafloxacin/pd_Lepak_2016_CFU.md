@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01M&quot;,&quot;href&quot;:&quot;atc/J01M.md&quot;},{&quot;label&quot;:&quot;delafloxacin&quot;,&quot;href&quot;:&quot;drugs/drug_delafloxacin/&quot;},{&quot;label&quot;:&quot;Lepak_2016 \u00b7 PD organism burden in the lung (CFU counts)&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01M&quot;,&quot;href&quot;:&quot;atc/J01M.md&quot;},{&quot;label&quot;:&quot;delafloxacin&quot;,&quot;href&quot;:&quot;drugs/drug_delafloxacin/&quot;},{&quot;label&quot;:&quot;Lepak_2016 \u00b7 PD organism burden in the lung&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# organism burden in the lung (CFU counts) — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+# organism burden in the lung — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -15,11 +15,11 @@
 
 ## Record summary
 
-**As extracted:** Delafloxacin (the dose) drives organism burden in the lung (CFU counts) (in log10 CFU/lung): direct Emax (saturable) effect.
+**As extracted:** Delafloxacin (the dose) drives organism burden in the lung (in log10 CFU/lung): direct Emax (saturable) effect.
 
 **Model:** No model was generated from this record.
 
-> No mechanism or parameter values are provided as the paper full text is unavailable. The record only identifies delafloxacin dose as the driver for the inhibition of lung organism burden (log10 CFU/lung) within an emax model family.
+> The model posits that the dose of delafloxacin (mg/kg) directly inhibits the organism burden in the lung (log10 CFU/lung) via an Emax mechanism. The provided record and excerpts do not specify the underlying biological mechanism or provide any numerical values for potency (IC50, EC50) or rate parameters (Emax, kout, ke0).
 >
 > <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 

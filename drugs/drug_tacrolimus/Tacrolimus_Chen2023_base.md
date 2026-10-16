@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D11A&quot;,&quot;href&quot;:&quot;atc/D11A.md&quot;},{&quot;label&quot;:&quot;tacrolimus&quot;,&quot;href&quot;:&quot;drugs/drug_tacrolimus/&quot;},{&quot;label&quot;:&quot;Chen_2023 \u00b7 base&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tacrolimus_AbdelKahaar2023v2_reference&quot;,&quot;label&quot;:&quot;Abdel-Kahaar_2023_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tacrolimus/Tacrolimus_AbdelKahaar2023v2_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tacrolimus_Chen2023_base&quot;,&quot;label&quot;:&quot;Chen_2023_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tacrolimus/Tacrolimus_Chen2023_base.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Tacrolimus_Chen2023_final&quot;,&quot;label&quot;:&quot;Chen_2023_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tacrolimus/Tacrolimus_Chen2023_final.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tacrolimus_Franken2022_reference&quot;,&quot;label&quot;:&quot;Franken_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tacrolimus/Tacrolimus_Franken2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tacrolimus_Hou2025_reference&quot;,&quot;label&quot;:&quot;Hou_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tacrolimus/Tacrolimus_Hou2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tacrolimus_Paschier2023_reference&quot;,&quot;label&quot;:&quot;Paschier_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tacrolimus/Tacrolimus_Paschier2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tacrolimus_AbdelKahaar2023v2_reference&quot;,&quot;label&quot;:&quot;Abdel-Kahaar_2023_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tacrolimus/Tacrolimus_AbdelKahaar2023v2_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tacrolimus_Chen2023_base&quot;,&quot;label&quot;:&quot;Chen_2023_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tacrolimus/Tacrolimus_Chen2023_base.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Tacrolimus_Chen2023_final&quot;,&quot;label&quot;:&quot;Chen_2023_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tacrolimus/Tacrolimus_Chen2023_final.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tacrolimus_Hou2025_reference&quot;,&quot;label&quot;:&quot;Hou_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tacrolimus/Tacrolimus_Hou2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tacrolimus_Paschier2023_base&quot;,&quot;label&quot;:&quot;Paschier_2023_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tacrolimus/Tacrolimus_Paschier2023_base.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tacrolimus_Paschier2023_final&quot;,&quot;label&quot;:&quot;Paschier_2023_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tacrolimus/Tacrolimus_Paschier2023_final.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tacrolimus_Paschier2023_final_final_model_in_development_set&quot;,&quot;label&quot;:&quot;Paschier_2023_final_final_model_in_development_set_model_used_for_the_be&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tacrolimus/Tacrolimus_Paschier2023_final_final_model_in_development_set.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tacrolimus_Xiang2025_base&quot;,&quot;label&quot;:&quot;Xiang_2025_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tacrolimus/Tacrolimus_Xiang2025_base.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tacrolimus_Xiang2025_final&quot;,&quot;label&quot;:&quot;Xiang_2025_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tacrolimus/Tacrolimus_Xiang2025_final.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tacrolimus_Paschier2023_be_model_in_validation_set&quot;,&quot;label&quot;:&quot;Paschier_2023_be_model_in_validation_set&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tacrolimus/Tacrolimus_Paschier2023_be_model_in_validation_set.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tacrolimus_Paschier2023_reference&quot;,&quot;label&quot;:&quot;Paschier_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tacrolimus/Tacrolimus_Paschier2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tacrolimus_Paschier2023_relative_mean_bias&quot;,&quot;label&quot;:&quot;Paschier_2023_relative_mean_bias&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tacrolimus/Tacrolimus_Paschier2023_relative_mean_bias.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Xiang_2025_eGFR&quot;,&quot;label&quot;:&quot;Xiang_2025 \u00b7 eGFR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_tacrolimus/pd_Xiang_2025_eGFR.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -19,6 +19,8 @@
 
 **Every check that could be run on this record passed.**
 
+A reported unit could not be converted (AUCt), so that value has no SI equivalent.
+
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of ecauc50: this record has none, the second reading 4090; it also differs on 1 more field. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
@@ -30,18 +32,18 @@ Chen D et al., Population PK/PD model of tacrolimus fo…, CPT: pharmacometrics 
 <div class="pk-model-meta" hidden drug="tacrolimus" model-id="Tacrolimus_Chen2023_base" status="curated_candidate" stale="false" population="adults with myasthenia gravis" measured-compound="tacrolimus" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 4 extracted.
+**Parameters:** 5 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F (L/h) | `Q27` · CL/F | 22.1 | L/h | 6.138888888888889e-06 | [l] / [h] | not captured | exact (1.0) | psp412966-tbl-0002:row3:col1, psp412966-tbl-0002:row3:col2 | — | 60.3 (None% RSE) |
-| V/F (L) | `Q76` · V/F | 1680 | L | 1.68 | [l] | not captured | exact (1.0) | psp412966-tbl-0002:row4:col1, psp412966-tbl-0002:row4:col2 | — | 94.9 (None% RSE) |
-| k a (h−1) | `Q49` · kabs | 0.502 | h−1 | 0.00013944444444444445 | [1] / [h] | not captured | space_fold (0.95) | psp412966-tbl-0002:row5:col1, psp412966-tbl-0002:row5:col2 | — | not captured |
-| T lag (h) | `Q83` · tlag | 0.346 | h | 1245.6 | [h] | not captured | space_fold (0.95) | psp412966-tbl-0002:row6:col1, psp412966-tbl-0002:row6:col2 | — | not captured |
-| TS0 | `Q900` · equation variable | 11.4 | not captured | not captured | not captured | not captured | llm (0.6) | psp412966-tbl-0002:row15:col1, psp412966-tbl-0002:row15:col2 | — | not captured |
+| CL/F (L/h) | `Q27` · CL/F | 7.6 | L/h | 2.111111111111111e-06 | [l] / [h] | 22.1 | exact (1.0) | psp412966-tbl-0002:row3:col2 | — | 11.9 (60.3% RSE) |
+| V/F (L) | `Q76` · V/F | 23.0 | L | 0.023 | [l] | 1680 | exact (1.0) | psp412966-tbl-0002:row4:col2 | — | 14.1 (94.9% RSE) |
+| k a (h−1) | `Q49` · kabs | 0.502 | h−1 | 0.00013944444444444445 | [1] / [h] | 0.502 | space_fold (0.95) | psp412966-tbl-0002:row5:col2 | — | not captured |
+| T lag (h) | `Q83` · tlag | 0.346 | h | 1245.6 | [h] | 0.346 | space_fold (0.95) | psp412966-tbl-0002:row6:col2 | — | not captured |
+| EcAUC50 (ng*h/mL) | `Q19` · AUCt | 26.4 | ng*h/mL | not captured | [[h] · [ng]] / [ml] | 4090 | llm (0.6) | psp412966-tbl-0002:row20:col2 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -55,14 +57,27 @@ Chen D et al., Population PK/PD model of tacrolimus fo…, CPT: pharmacometrics 
 
 **Interpretation flags:**
 - table section residual_error: 'Proportional error (%)' routed out of structural estimates ('Residual error')
-- dropped PD-category row 'E max' → Q320 (Emax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['psp412966-tbl-0002:row19:col1'])
-- dropped unlinked row (NIL): 'EcAUC50 (ng*h/mL)' — extend the ontology if this is a real PK parameter (source ['psp412966-tbl-0002:row20:col1', 'psp412966-tbl-0002:row20:col2'])
+- table representations disagree for 'CL/F (L/h)'; source reconciliation required
+- table representations disagree for 'V/F (L)'; source reconciliation required
+- table representations disagree for 'k a (h−1)'; source reconciliation required
+- table representations disagree for 'T lag (h)'; source reconciliation required
+- table representations disagree for 'IIV CL/F (%)'; source reconciliation required
+- table representations disagree for 'IIV V/F (%)'; source reconciliation required
+- table representations disagree for 'TS0'; source reconciliation required
+- table representations disagree for 'EcAUC50 (ng*h/mL)'; source reconciliation required
+- table representations disagree for 'IIV TS0 (%)'; source reconciliation required
+- table representations disagree for 'IIV EcAUC50 (%)'; source reconciliation required
+- dropped unlinked row (NIL): 'TS0' — extend the ontology if this is a real PK parameter (source ['psp412966-tbl-0002:row15:col2'])
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=tacrolimus
-- model-stage split: 'base model' is the base model of Chen_2023 (paper reports 2 stages: base model, final model); same population, different model-building step
+- status held at route_to_review — not promoted
+- model-stage split: 'base model / estimates' is the base model of Chen_2023 (paper reports 2 stages: base model / estimates, final model / median); same population, different model-building step
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
+- table psp412966-tbl-0002: unbound_uncertainty
+- table psp412966-tbl-0002: ragged_grid
+- table psp412966-tbl-0002: representations disagree; selected evidence retained, not merged
 - LLM selected parameter table(s) 2
 
 ## Validation
@@ -93,17 +108,18 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp412966-tbl-0002:row3:col1', 'psp412966-tbl-0002:row3:col2'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['psp412966-tbl-0002:row5:col1', 'psp412966-tbl-0002:row5:col2'] |
-| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp412966-tbl-0002:row4:col1', 'psp412966-tbl-0002:row4:col2'] |
-| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['psp412966-tbl-0002:row6:col1', 'psp412966-tbl-0002:row6:col2'] |
+| C5_dimension_Q19 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['psp412966-tbl-0002:row20:col2'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp412966-tbl-0002:row3:col2'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['psp412966-tbl-0002:row5:col2'] |
+| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp412966-tbl-0002:row4:col2'] |
+| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['psp412966-tbl-0002:row6:col2'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 22.1 L/h | not captured | not captured | ['psp412966-tbl-0002:row3:col1', 'psp412966-tbl-0002:row3:col2'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 1.68e+03 L | not captured | not captured | ['psp412966-tbl-0002:row4:col1', 'psp412966-tbl-0002:row4:col2'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 7.6 L/h | not captured | not captured | ['psp412966-tbl-0002:row3:col2'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 23 L | not captured | not captured | ['psp412966-tbl-0002:row4:col2'] |
 
 **Reviewer per-scenario checks:**
 
@@ -124,10 +140,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_tacrolimus/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Chen_2023` / `Chen_2023::base`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_tacrolimus/models/modelica/Tacrolimus_Chen2023_base.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_tacrolimus/models/modelica/Tacrolimus_Chen2023_base.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_tacrolimus/models/modelica/Tacrolimus_Chen2023_base.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_tacrolimus/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Chen_2023` / `Chen_2023::base`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_tacrolimus/models/modelica/Tacrolimus_Chen2023_base.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_tacrolimus/models/modelica/Tacrolimus_Chen2023_base.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_tacrolimus/models/modelica/Tacrolimus_Chen2023_base.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -136,7 +152,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_tacrolimus/Tacrolimus_Chen2023_base/Tacrolimus_Chen2023_base_modelica.zip" download>Tacrolimus_Chen2023_base_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_tacrolimus/Tacrolimus_Chen2023_base/Tacrolimus_Chen2023_base_modelica.zip" download>Tacrolimus_Chen2023_base_modelica.zip</a> <span class="pk-size">(4.5 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_tacrolimus/Tacrolimus_Chen2023_base/Tacrolimus_Chen2023_base_fmi.zip" download>Tacrolimus_Chen2023_base_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_tacrolimus/Tacrolimus_Chen2023_base/Tacrolimus_Chen2023_base_matlab.zip" download>Tacrolimus_Chen2023_base_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_tacrolimus/Tacrolimus_Chen2023_base/Tacrolimus_Chen2023_base_matlab_simbio.zip" download>Tacrolimus_Chen2023_base_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
@@ -145,7 +161,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_tacrolimus/Tacrolimus_Chen2023_base/Tacrolimus_Chen2023_base.svg" alt="Tacrolimus_Chen2023_base diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_tacrolimus/Tacrolimus_Chen2023_base/Tacrolimus_Chen2023_base.svg" alt="Tacrolimus_Chen2023_base diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -158,4 +174,4 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 15:33 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 23:26 UTC</sub>

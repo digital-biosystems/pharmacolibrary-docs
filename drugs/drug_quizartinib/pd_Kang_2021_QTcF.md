@@ -1,7 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;quizartinib&quot;,&quot;href&quot;:&quot;drugs/drug_quizartinib/&quot;},{&quot;label&quot;:&quot;Kang_2021 \u00b7 PD QTcF&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;quizartinib&quot;,&quot;href&quot;:&quot;drugs/drug_quizartinib/&quot;},{&quot;label&quot;:&quot;Kang_2021 \u00b7 PD QT interval corrected using Fridericia\u2019s formula&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Quizartinib_Vaddady2024_final&quot;,&quot;label&quot;:&quot;Vaddady_2024_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quizartinib/Quizartinib_Vaddady2024_final.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quizartinib_Vaddady2024_final_final_quizartinib_model&quot;,&quot;label&quot;:&quot;Vaddady_2024_final_final_quizartinib_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quizartinib/Quizartinib_Vaddady2024_final_final_quizartinib_model.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Kang_2021_QTcF&quot;,&quot;label&quot;:&quot;Kang_2021 \u00b7 QTcF&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_quizartinib/pd_Kang_2021_QTcF.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# QTcF — PD  <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed</span>
+# QT interval corrected using Fridericia’s formula — PD  <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -13,17 +14,17 @@
 
 ## Record summary
 
-**As extracted:** Quizartinib and AC886 (measured concentrations) drive QTcF (in ms): direct sigmoid Emax (Hill) effect.
+**As extracted:** Quizartinib (concentrations from the PK model of Kang_2020::final) drives QT interval corrected using Fridericia’s formula (in ms): direct sigmoid Emax (Hill) effect.
 
-**Model:** No model was generated from this record.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
-> Quizartinib and AC886 concentrations directly and additively increase QTcF through separate sigmoid Emax effects, with no consistent hysteresis; the paper describes a direct concentration–response relationship, not an effect on response production or elimination. For quizartinib, Emax was 31.2 ms, EC50 315 ng/mL, and Hill coefficient 1.52; for AC886, Emax was 2.69 ms, EC50 60.5 ng/mL, and Hill coefficient 16.9.
+> Quizartinib and its metabolite AC886 concentrations directly increase the QTcF response via a sigmoidal maximum effect (Emax) model with additive effects from both compounds. The parent drug exhibits a maximum effect of 31.2 ms and an EC50 of 315 ng/mL, while the metabolite has a maximum effect of 2.69 ms and an EC50 of 60.5 ng/mL.
 >
-> <sub>Source-based summary by gpt-6-luna from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Kang_2021`
 - **model family:** `sigmoid_emax`
-- **driver:** `conc_no_pk`
+- **driver:** `cited_pk`
 - **tier:** population
 - **effect:** stimulation/additive
 
@@ -41,24 +42,41 @@ Kang D et al., Concentration-QTc analysis of quizartin…, Cancer chemotherapy a
 | PD (effect) | Maximum effect of drug metabolite | `Q320` · not captured | 2.69 | ms | not captured | llm (not captured) | Kang_2021:pdv3 |
 | PD (effect) | Concentration at 50% of maximum metabolite effect | `Q321` · not captured | 60.5 | ng/mL | not captured | llm (not captured) | Kang_2021:pdv3 |
 | PD (effect) | Hill coefficient for drug metabolite | `Q325` · not captured | 16.9 | not captured | not captured | llm (not captured) | Kang_2021:pdv3 |
-| model term | Fractional change in baseline for hypokalemia | `Q900` · not captured | 0.0149 | not captured | not captured | llm (not captured) | Kang_2021:pdv3 |
-| model term | Fixed time effect for 1st decile of clock time | `Q900` · not captured | 1.46 | ms | not captured | llm (not captured) | Kang_2021:pdv3 |
-| model term | Fixed time effect for 2nd decile of clock time | `Q900` · not captured | − 0.853 | ms | not captured | llm (not captured) | Kang_2021:pdv3 |
-| model term | Fixed time effect for 4th decile of clock time | `Q900` · not captured | 1.89 | ms | not captured | llm (not captured) | Kang_2021:pdv3 |
-| model term | Fixed time effect for 5th decile of clock time | `Q900` · not captured | 3.06 | ms | not captured | llm (not captured) | Kang_2021:pdv3 |
-| model term | Fixed time effect for 6th decile of clock time | `Q900` · not captured | 4.12 | ms | not captured | llm (not captured) | Kang_2021:pdv3 |
-| model term | Fixed time effect for 7th decile of clock time | `Q900` · not captured | 5.06 | ms | not captured | llm (not captured) | Kang_2021:pdv3 |
-| model term | Fixed time effect for 8th decile of clock time | `Q900` · not captured | 3.56 | ms | not captured | llm (not captured) | Kang_2021:pdv3 |
-| model term | Fixed time effect for 9th decile of clock time | `Q900` · not captured | 3.20 | ms | not captured | llm (not captured) | Kang_2021:pdv3 |
-| model term | Fixed time effect for 10th decile of clock time | `Q900` · not captured | 1.56 | ms | not captured | llm (not captured) | Kang_2021:pdv3 |
-| variability | Interindividual variability in baseline QTcF | `Q312` · not captured | 4.42% CV | % CV | not captured | llm (not captured) | Kang_2021:pdv3 |
-| variability | Interindividual variability in maximum effect of parent drug | `Q312` · not captured | 21.6 (SD) | SD | not captured | llm (not captured) | Kang_2021:pdv3 |
-| variability | Interindividual variability in maximum effect of drug metabolite | `Q312` · not captured | 12.3 (SD) | SD | not captured | llm (not captured) | Kang_2021:pdv3 |
+| variability | Interindividual variability on Emax (quizartinib) | `Q312` · not captured | 21.6 | SD | not captured | llm (not captured) | Kang_2021:pdv3 |
+| variability | Interindividual variability on Emax (AC886) | `Q312` · not captured | 12.3 | SD | not captured | llm (not captured) | Kang_2021:pdv3 |
+| variability | Interindividual variability on baseline QTcF | `Q312` · not captured | 4.42% CV | not captured | not captured | llm (not captured) | Kang_2021:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
+
+
+## Exposure-response model
+
+`Quizartinib_Kang2021_PD_qtcf` — sigmoid_emax, `response = E0 + Emax*frac`
+
+| parameter | value (paper units) | SI |
+|---|---|---|
+| E0 | 413 ms | 0.413 s |
+| Emax | 31.2 ms | 0.0312 s |
+| EC50 | 315 ng/mL | 0.000315 kg/m3 |
+| gamma | 1.52 | — |
+
+Closed-form check points (response, SI): `at_0` = 0.413, `at_EC50` = 0.4286, `at_inf` = 0.4442
+
+## Review
+
+Verdict <span class="pk-badge pk-badge--green">reviewed — candidate</span>
+
+| check | status | note |
+|---|---|---|
+| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
+| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
+| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
+| `T2_direction` | pass | the response rises, as direct effect predicts |
+| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
+| `T4_defaults` | pass | nothing defaulted |
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
@@ -92,19 +110,22 @@ Primary extraction: `openai:gpt-6-luna`; retained regardless of cross-check verd
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_quizartinib/Quizartinib_Kang2021_PD_qtcf/Quizartinib_Kang2021_PD_qtcf_modelica.zip" download>Quizartinib_Kang2021_PD_qtcf_modelica.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_quizartinib/Quizartinib_Kang2021_PD_qtcf/Quizartinib_Kang2021_PD_qtcf_matlab.zip" download>Quizartinib_Kang2021_PD_qtcf_matlab.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_quizartinib/Quizartinib_Kang2021_PD_qtcf/Quizartinib_Kang2021_PD_qtcf_sbml.zip" download>Quizartinib_Kang2021_PD_qtcf_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_quizartinib/Quizartinib_Kang2021_PD_qtcf/Quizartinib_Kang2021_PD_qtcf_cellml.zip" download>Quizartinib_Kang2021_PD_qtcf_cellml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PD_SigmoidEmaxSweep.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+<dbs-fmusim paramsurl="drugs/drug_quizartinib/Quizartinib_Kang2021_PD_qtcf/Quizartinib_Kang2021_PD_qtcf_params.json" metaurl="assets/fmu/PD_SigmoidEmaxSweep.vr.json" wasmurl="assets/fmu/PD_SigmoidEmaxSweep.js" controlsurl="drugs/drug_quizartinib/Quizartinib_Kang2021_PD_qtcf/Quizartinib_Kang2021_PD_qtcf_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PD_SigmoidEmaxSweep` · parameters `Quizartinib_Kang2021_PD_qtcf_params.json` · controls `Quizartinib_Kang2021_PD_qtcf_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 

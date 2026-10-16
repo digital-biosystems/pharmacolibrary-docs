@@ -18,9 +18,9 @@
 
 **Model:** No model was generated from this record.
 
-> Terbutaline plasma concentrations (ng/L) drive hypokalemia via an effect-compartment (biophase) model; the paper excerpts do not state the underlying mechanism beyond this. Reported potency: EC50 = 4.70 ± 2.91 ng/L; no Imax/Emax, kin, kout, ke0, or gamma values are given in the available excerpts.
+> The record describes an effect compartment model where terbutaline concentrations (ng/L) inhibit hypokalemia with an EC50 of 4.70 +/- 2.91 ng/L. The paper does not provide full text to confirm the specific mechanism or other rate parameters.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
 
 - **paper:** `Derks_2000`
 - **model family:** `effect_compartment`

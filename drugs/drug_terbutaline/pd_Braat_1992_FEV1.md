@@ -18,9 +18,9 @@
 
 **Model:** No model was generated from this record.
 
-> Terbutaline concentrations act on FEV1 via an Emax-type stimulation model, with an IC50 of 17 (±8) ng/ml; the paper excerpts provide no further mechanism detail or additional parameters.
+> The record describes an Emax model where terbutaline concentrations stimulate FEV1, with an IC50 of 17 (+/- 8) ng/ml. The paper does not provide full text to specify the mechanism or other parameters.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
 
 - **paper:** `Braat_1992`
 - **model family:** `emax`

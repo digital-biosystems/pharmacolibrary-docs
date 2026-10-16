@@ -147,9 +147,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_salmeterol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Himstedt_2020` / `Himstedt_2020::fluticasone_propionate`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_salmeterol/models/modelica/_needs_review/Salmeterol_Himstedt2020_fluticasone_propionate.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_salmeterol/models/modelica/_needs_review/Salmeterol_Himstedt2020_fluticasone_propionate.deviation.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_salmeterol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Himstedt_2020` / `Himstedt_2020::fluticasone_propionate`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_salmeterol/models/modelica/_needs_review/Salmeterol_Himstedt2020_fluticasone_propionate.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_salmeterol/models/modelica/_needs_review/Salmeterol_Himstedt2020_fluticasone_propionate.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

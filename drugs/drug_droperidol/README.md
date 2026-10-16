@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05A&quot;,&quot;href&quot;:&quot;atc/N05A.md&quot;},{&quot;label&quot;:&quot;droperidol&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Droperidol_Foo2016_reference&quot;,&quot;label&quot;:&quot;Foo_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_droperidol/Droperidol_Foo2016_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Droperidol_Foo2016_reference&quot;,&quot;label&quot;:&quot;Foo_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_droperidol/Droperidol_Foo2016_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Radke_1998_time_averaged_single_channel_conductance&quot;,&quot;label&quot;:&quot;Radke_1998 \u00b7 time averaged single channel conductance&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_droperidol/pd_Radke_1998_time_averaged_single_channel_conductance.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # droperidol
 
@@ -27,7 +27,7 @@ Droperidol is a butyrophenone antipsychotic and antiemetic used for conditions s
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 15:28 | 1:12 | 0/2/1 | 1/0/1 | 0/0/0 | 51,186/3,939 | ollama / glm-5.3-flash | 1 | 0/1 | 1/0 | 0 |
+| 2026-10-14 20:33 | 1:02 | 0/2/1 | 0/0/1 | 0/0/0 | 44,078/3,734 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
 
 ## popPK records
 
@@ -41,9 +41,17 @@ Droperidol is a butyrophenone antipsychotic and antiemetic used for conditions s
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Flood_2002_GABA_response](drugs/drug_droperidol/pd_Flood_2002_GABA_response.md) | GABA response inhibition (GABAA alpha1beta1gamma2 receptor current) ← droperidol · direct sigmoid Emax (Hill) effect | — | Flood P et al., Droperidol inhibits GABA(A) and neurona…, Anesthesiology (2002) | [10.1097/00000542-200204000-00029](https://doi.org/10.1097/00000542-200204000-00029) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Flood_2002_alpha7_nAChR](drugs/drug_droperidol/pd_Flood_2002_alpha7_nAChR.md) | alpha7 nAChR activation inhibition ← droperidol · direct sigmoid Emax (Hill) effect | — | Flood P et al., Droperidol inhibits GABA(A) and neurona…, Anesthesiology (2002) | [10.1097/00000542-200204000-00029](https://doi.org/10.1097/00000542-200204000-00029) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Radke_1998_time_averaged_single_channel_conductance](drugs/drug_droperidol/pd_Radke_1998_time_averaged_single_channel_conductance.md) | time averaged single channel conductance ← droperidol · direct Emax (saturable) effect | model (no simulator) | Radke PW et al., Molecular actions of droperidol on huma…, European journal of anaesth… (1998) | [10.1046/j.1365-2346.1998.00221.x](https://doi.org/10.1046/j.1365-2346.1998.00221.x) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 0.00).">in vitro</span> | [Radke_1998_time_averaged_single_channel_conductance](drugs/drug_droperidol/pd_Radke_1998_time_averaged_single_channel_conductance.md) | time averaged single channel conductance ← droperidol · direct Emax (saturable) effect | ▶ model + simulator | Radke PW et al., Molecular actions of droperidol on huma…, European journal of anaesth… (1998) | [10.1046/j.1365-2346.1998.00221.x](https://doi.org/10.1046/j.1365-2346.1998.00221.x) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=droperidol).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | skeletal muscle | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: ADRA1A (target), DRD2 (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -64,21 +72,21 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Fischler_1986.pdf` | Fischler M et al., The pharmacokinetics of droperidol in a…, Anesthesiology (1986) | popPK | 10 | [10.1097/00000542-198604000-00012](https://doi.org/10.1097/00000542-198604000-00012) | [3963455](https://pubmed.ncbi.nlm.nih.gov/3963455) | Original PK study in humans with full numeric parameters (t1/2 phases, CL, Vd) reported directly in the abstract. |
-| `Foo_2016.pdf` | Foo LK et al., Population pharmacokinetics of intramus…, British journal of clinical… (2016) | popPK | 10 | [10.1111/bcp.13093](https://doi.org/10.1111/bcp.13093) | [27530285](https://pubmed.ncbi.nlm.nih.gov/27530285) | Population PK model of droperidol with numeric CL, Vc, ka, and half-lives reported directly in the abstract. |
+| `Fischler_1986.pdf` | Fischler M et al., The pharmacokinetics of droperidol in a…, Anesthesiology (1986) | popPK | 10 | [10.1097/00000542-198604000-00012](https://doi.org/10.1097/00000542-198604000-00012) | [3963455](https://pubmed.ncbi.nlm.nih.gov/3963455) | The study reports quantitative compartmental pharmacokinetic parameters (half-lives, clearance, volume of distribution) for droperidol in anesthetized human patients, with all numeric values explicitly listed in the abstract/evidence. |
+| `Foo_2016.pdf` | Foo LK et al., Population pharmacokinetics of intramus…, British journal of clinical… (2016) | popPK | 10 | [10.1111/bcp.13093](https://doi.org/10.1111/bcp.13093) | [27530285](https://pubmed.ncbi.nlm.nih.gov/27530285) | The paper reports a population pharmacokinetic analysis of droperidol in humans with explicit numeric values for clearance, volume of distribution, absorption rate, and half-lives in the abstract. |
 
-<sub>queue written 2026-10-06T15:27:49.248103+00:00</sub>
+<sub>queue written 2026-10-14T20:32:59.820815+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Behne_1987 | irrelevant | 0 | 0 | The PK parameters reported are for midazolam; droperidol is only a co-administered anesthetic component, not the subject drug. |
-| popPK | Flood_2002 | irrelevant | 0 | 0 | In-vitro electrophysiology study of receptor modulation; no pharmacokinetic parameters for droperidol. |
-| popPK | Hu_1996 | irrelevant | 0 | 0 | Droperidol is only a non-analgesic test drug in a rabbit pain model; PK parameters reported are for nalbuphine, not droperidol. |
-| popPK | Radke_1998 | irrelevant | 0 | 0 | In-vitro electrophysiology of ion channels, no PK disposition parameters for droperidol. |
-| popPK | Sampson_1977 | irrelevant | 0 | 0 | Droperidol is only used as an antagonist tool in an in vitro electrophysiology study; no PK parameters are reported. |
-| popPK | Schuh_1981 | irrelevant | 0 | 0 | Droperidol is only part of the anaesthetic regimen; the study concerns neuromuscular blockers' dose-response, with no PK parameters for droperidol. |
+| popPK | Behne_1987 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of midazolam, with droperidol serving only as a component of the anesthesia regimen (Group 3) and not as the subject drug. |
+| popPK | Flood_2002 | irrelevant | 0 | 0 | The study is a mechanistic in vitro investigation of receptor binding (GABA and nicotinic receptors) in Xenopus oocytes and does not report any pharmacokinetic parameters (CL, V, ka, etc.) for droperidol. |
+| popPK | Hu_1996 | irrelevant | 0 | 0 | Droperidol is used only as a non-analgesic control drug, and the pharmacokinetic parameters reported are for nalbuphine. |
+| popPK | Radke_1998 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiological investigation of ion channel binding, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Sampson_1977 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of dopamine on carotid bodies where droperidol is used solely as a pharmacological antagonist, not a subject of pharmacokinetic analysis. |
+| popPK | Schuh_1981 | irrelevant | 0 | 0 | The study investigates dose-response curves of neuromuscular blocking agents, using droperidol only as a component of the general anesthesia regimen, and contains no pharmacokinetic data for droperidol. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-06 15:27 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-14 20:33 UTC</sub>

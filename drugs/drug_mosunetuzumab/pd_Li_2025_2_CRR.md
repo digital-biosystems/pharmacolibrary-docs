@@ -13,17 +13,17 @@
 
 ## Record summary
 
-**As extracted:** Mosunetuzumab (concentrations from the PK model of Bender_2024) drives Complete response rate: direct Emax (saturable) effect.
+**As extracted:** Mosunetuzumab AUC0-42 (the dose) drives Complete response rate: direct Emax (saturable) effect.
 
 **Model:** No model was generated from this record.
 
-> The paper describes an Emax logistic regression model where the two-cycle area under the concentration-time curve (AUC0-42) of mosunetuzumab drives the complete response rate (CRR), with a theoretical maximal response (Emax) of 68.6% and an exposure corresponding to 90% of the maximal effect (E90) of 92.7 day*μg/mL. The paper does not specify a mechanistic rate constant (e.g., kin/kout) or an effect compartment, but rather directly links exposure to the binary response probability.
+> The paper uses an Emax logistic regression model where the complete response rate (a binary outcome) increases as a direct function of mosunetuzumab AUC0-42 exposure, with a theoretical maximum effect (Emax) estimated at 68.6%. The model indicates that response plateaus at an E90 AUC0-42 of approximately 92.7 day*μg/mL, but does not specify the underlying biological mechanism or rate constants.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Li_2025_2`
 - **model family:** `emax`
-- **driver:** `cited_pk`
+- **driver:** `dose_only`
 - **tier:** population
 - **effect:** stimulation/unknown
 

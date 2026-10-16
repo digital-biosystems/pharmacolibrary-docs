@@ -135,10 +135,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_sodium_salicylate/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Lowenthal_1974` / `Lowenthal_1974::six_anephric_patients`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_sodium_salicylate/models/modelica/SodiumSalicylate_Lowenthal1974_six_anephric_patients.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_sodium_salicylate/models/modelica/SodiumSalicylate_Lowenthal1974_six_anephric_patients.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_sodium_salicylate/models/modelica/SodiumSalicylate_Lowenthal1974_six_anephric_patients.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_sodium_salicylate/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Lowenthal_1974` / `Lowenthal_1974::six_anephric_patients`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_sodium_salicylate/models/modelica/SodiumSalicylate_Lowenthal1974_six_anephric_patients.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_sodium_salicylate/models/modelica/SodiumSalicylate_Lowenthal1974_six_anephric_patients.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_sodium_salicylate/models/modelica/SodiumSalicylate_Lowenthal1974_six_anephric_patients.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

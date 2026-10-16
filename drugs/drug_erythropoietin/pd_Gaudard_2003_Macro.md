@@ -13,19 +13,19 @@
 
 ## Record summary
 
-**As extracted:** Serum erythropoietin drives percentage macrocytes: direct sigmoid Emax (Hill) effect.
+**As extracted:** Serum erythropoietin drives percentage macrocytes: delayed effect through an effect compartment.
 
 **Model:** No model was generated from this record.
 
-> The paper describes a sigmoid Emax model where serum erythropoietin stimulates the percentage of macrocytes, but the full text is unavailable to confirm the specific mechanism or potency values. The only parameter provided is a half-life of 10.2 days for k(0).
+> The record indicates that serum erythropoietin concentrations stimulate the response of percentage macrocytes through an effect compartment model with a k0 parameter of 10.2 days. However, the paper does not provide specific mechanism details or potency values such as Imax, IC50, or EC50.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Gaudard_2003`
-- **model family:** `sigmoid_emax`
+- **model family:** `effect_compartment`
 - **driver:** `not_resolved`
 - **tier:** population
-- **effect:** stimulation/unknown
+- **effect:** stimulation/proportional
 
 ## Citation
 Gaudard A et al., Pharmacokinetic-pharmacodynamic modelli…, Clinical drug investigation (2003)
@@ -34,7 +34,7 @@ Gaudard A et al., Pharmacokinetic-pharmacodynamic modelli…, Clinical drug inve
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | t1/2 k(0) | `Q326` · not captured | 10.2 | days | not captured | llm (not captured) | Gaudard_2003:pdv3 |
+| PD (effect) | k(0) | `Q326` · not captured | 10.2 | days | not captured | llm (not captured) | Gaudard_2003:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>

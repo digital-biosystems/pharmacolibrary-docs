@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;cladribine&quot;,&quot;href&quot;:&quot;drugs/drug_cladribine/&quot;},{&quot;label&quot;:&quot;Sonderegger_2000 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cladribine_Lu2024_reference&quot;,&quot;label&quot;:&quot;Lu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cladribine/Cladribine_Lu2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cladribine_Lindemalm2005_reference&quot;,&quot;label&quot;:&quot;Lindemalm_2005_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cladribine/Cladribine_Lindemalm2005_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cladribine_Lu2024_reference&quot;,&quot;label&quot;:&quot;Lu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cladribine/Cladribine_Lu2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cladribine_Lindemalm2005_population_average_estimate&quot;,&quot;label&quot;:&quot;Lindemalm_2005_population_average_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cladribine/Cladribine_Lindemalm2005_population_average_estimate.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # cladribine — `Cladribine_Sonderegger2000_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667), gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -17,9 +17,9 @@
 
 ### Reviewer guidance
 
-**This paper's disposition core is incomplete; aUC∞ and Ae  have no unit.**
+**This paper's disposition core is incomplete; ae  has no unit.**
 
-A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Lu_2024) cannot stand in for this paper's evidence. Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — cladribine: kel 0.397 h(-1), AUC∞ 571 pmol x h/ml, Ae 4.75 micromol/24 h, V 1.25e+03 L.
+A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Lu_2024) cannot stand in for this paper's evidence. Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — cladribine: kel 0.397 h(-1), Ae 4.75 micromol/24 h, V 1.25e+03 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cladribine, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -32,7 +32,7 @@ Sonderegger T et al., Pharmacokinetics of 2-chloro-2'-deoxyad…, Cancer chemoth
 <div class="pk-model-meta" hidden drug="cladribine" model-id="Cladribine_Sonderegger2000_reference" status="needs_review" stale="false" population="patients with lymphoproliferative disorders" measured-compound="cladribine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 4 extracted.
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -41,9 +41,8 @@ Sonderegger T et al., Pharmacokinetics of 2-chloro-2'-deoxyad…, Cancer chemoth
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 0.397 h(-1) with i.v. | `Q47` · kel | 0.397 | h(-1) | 0.00011027777777777779 | [1] / [h] | not captured | llm (0.6) | Sonderegger_2000:abstract | — | not captured |
-| 571 +/- 50 pmol x h/ml during i.v. | `Q17` · AUC∞ | 571 | pmol x h/ml | not captured | [[h] · [pM]] / [ml] | not captured | llm (0.6) | Sonderegger_2000:abstract | — | not captured |
-| 4.75 +/- 0.95 vs 3.55 +/- 0.53 micromol/24 h | `Q91` · Ae | 4.75 | micromol/24 h | not captured | [µM] / [24h] | not captured | llm (0.6) | Sonderegger_2000:abstract | — | not captured |
+| with i.v. | `Q47` · kel | 0.397 | h(-1) | 0.00011027777777777779 | [1] / [h] | not captured | llm (0.6) | Sonderegger_2000:abstract | — | not captured |
+| urinary excretion of 2-CDA in 24 h | `Q91` · Ae | 4.75 | micromol/24 h | not captured | [µM] / [24h] | not captured | llm_corrected (0.6) | Sonderegger_2000:abstract, Sonderegger_2000:abstract | — | not captured |
 | volume of distribution (V d) | `Q61` · V | 1250.0 | L | 1.25 | L | not captured | review_gapfill (0.7) | Lu_2024:review | — | not captured |
 
 <details class="legend">
@@ -55,10 +54,10 @@ Sonderegger T et al., Pharmacokinetics of 2-chloro-2'-deoxyad…, Cancer chemoth
 
 **Interpretation flags:**
 - dropped unlinked row (NIL): '0.1 mg/kg 2-CDA per 24 h' — extend the ontology if this is a real PK parameter (source ['Sonderegger_2000:abstract'])
-- unit_dimension_unknown: 'pmol x h/ml' (AUC∞)
+- dropped unlinked row (NIL): 'plateau after' — extend the ontology if this is a real PK parameter (source ['Sonderegger_2000:abstract'])
+- dropped unlinked row (NIL): 'during i.v. infusion' — extend the ontology if this is a real PK parameter (source ['Sonderegger_2000:abstract'])
 - unit_dimension_unknown: 'micromol/24 h' (Ae )
-- implicit units: '571 +/- 50 pmol x h/ml during i.v.' — the LLM proposed 'pmol x h/ml', whose dimension does not fit Q17; left unset
-- implicit units: '4.75 +/- 0.95 vs 3.55 +/- 0.53 micromol/24 h' — the LLM proposed 'micromol/24 h', whose dimension does not fit Q91; left unset
+- implicit units: 'urinary excretion of 2-CDA in 24 h' — the LLM proposed '%', whose dimension does not fit Q91; left unset
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=cladribine
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
@@ -69,18 +68,19 @@ Sonderegger T et al., Pharmacokinetics of 2-chloro-2'-deoxyad…, Cancer chemoth
 - skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Sonderegger_2000_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Sonderegger_2000_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss:120b` | partly confirmed | 0.667 (4/6 fields) | 2 |
 | `gpt-oss-120b` | not confirmed | 0.25 (2/8 fields) | 6 |
 
-<details><summary>6 field discrepancies</summary>
+<details><summary>8 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -90,6 +90,8 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | `gpt-oss-120b` | `parameters[volume of distribution]` | 1250.0 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `screen.dose_compound` | cladribine | unknown | mismatch |
 | `gpt-oss-120b` | `screen.primary_analyte` | cladribine | unknown | mismatch |
+| `gpt-oss:120b` | `parameters[urinary excretion of 2-cda in 24 h]` | 4.75 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[with i.v.]` | 0.397 | not captured | only_one_extracted |
 
 </details>
 
@@ -103,13 +105,12 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['Sonderegger_2000:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Lu_2024:review'] |
-| C5_unit_missing_Q17 | fail | [mass] * [time] / [length] ** 3 | pmol x h/ml | not captured | not captured | ['Sonderegger_2000:abstract'] |
-| C5_unit_missing_Q91 | fail | [mass] | micromol/24 h | not captured | not captured | ['Sonderegger_2000:abstract'] |
+| C5_unit_missing_Q91 | fail | [mass] | micromol/24 h | not captured | not captured | ['Sonderegger_2000:abstract', 'Sonderegger_2000:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q61 | pass | volume within physiological range | 1.25e+03 L | not captured | not captured | ['Lu_2024:review'] |
 
@@ -120,7 +121,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_cladribine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Sonderegger_2000` / `Sonderegger_2000::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_cladribine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Sonderegger_2000` / `Sonderegger_2000::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -146,4 +147,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 16:37 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 01:05 UTC</sub>

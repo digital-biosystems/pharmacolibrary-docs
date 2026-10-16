@@ -34,14 +34,33 @@ Aminohippuric acid is a diagnostic agent used in tests of kidney function and fo
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> | [Kinowski_1995_reference](drugs/drug_aminohippuric_acid/AminohippuricAcid_Kinowski1995_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Kinowski JM et al., Bayesian estimation of p-aminohippurate…, Journal of pharmaceutical s… (1995) | [10.1002/jps.2600840309](https://doi.org/10.1002/jps.2600840309) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Gibiansky_2020_reference](drugs/drug_aminohippuric_acid/AminohippuricAcid_Gibiansky2020_reference.md) | — | 2-compartment (no model) | 4 | Gibiansky L et al., Mechanistic Population Pharmacokinetic…, Clinical pharmacology and t… (2020) | [10.1002/cpt.1791](https://doi.org/10.1002/cpt.1791) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.154). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Estelberger_1995_reference](drugs/drug_aminohippuric_acid/AminohippuricAcid_Estelberger1995_reference.md) | — | 1-compartment (no model) | 5 | Estelberger W et al., System identification of the low-dose k…, European journal of clinica… (1995) | [10.1515/cclm.1995.33.11.847](https://doi.org/10.1515/cclm.1995.33.11.847) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.778). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Gibiansky_2020_reference](drugs/drug_aminohippuric_acid/AminohippuricAcid_Gibiansky2020_reference.md) | — | 2-compartment (no model) | 4 | Gibiansky L et al., Mechanistic Population Pharmacokinetic…, Clinical pharmacology and t… (2020) | [10.1002/cpt.1791](https://doi.org/10.1002/cpt.1791) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Estelberger_1995_reference](drugs/drug_aminohippuric_acid/AminohippuricAcid_Estelberger1995_reference.md) | — | 1-compartment (no model) | 5 | Estelberger W et al., System identification of the low-dose k…, European journal of clinica… (1995) | [10.1515/cclm.1995.33.11.847](https://doi.org/10.1515/cclm.1995.33.11.847) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">rabbit</span> | [Sullivan_1992_fluorescein_influx](drugs/drug_aminohippuric_acid/pd_Sullivan_1992_fluorescein_influx.md) | fluorescein influx across basolateral surface of S2 proximal tubule ← p-aminohippurate (PAH) · inhibition effect | — | Sullivan LP et al., Specificity of basolateral organic anio…, Journal of the American Soc… (1992) | [10.1681/ASN.V271192](https://doi.org/10.1681/ASN.V271192) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">rabbit</span> | [Sullivan_1992_fluorescein_influx](drugs/drug_aminohippuric_acid/pd_Sullivan_1992_fluorescein_influx.md) | fluorescein influx across basolateral surface of S2 proximal tubule ← p-aminohippurate (PAH) · inhibition effect | — | Sullivan LP et al., Specificity of basolateral organic anio…, Journal of the American Soc… (1992) | [10.1681/ASN.V271192](https://doi.org/10.1681/ASN.V271192) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=aminohippuric_acid).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | kidney | `SLC22A4` inhibitor, `SLC22A5` inhibitor | DrugBank actor |
+| absorption | skeletal muscle | `SLC22A5` inhibitor | DrugBank actor |
+| absorption | small intestine | `SLC22A4` inhibitor, `SLC22A5` inhibitor | DrugBank actor |
+| distribution | blood-brain barrier | `ABCC1` substrate | DrugBank actor |
+| distribution | lung | `ABCC1` substrate | DrugBank actor |
+| metabolism | kidney | `SLC22A7` substrate | DrugBank actor |
+| metabolism | liver | `SLC22A7` substrate | DrugBank actor |
+| excretion | kidney | `ABCC2` inhibitor/substrate, `SLC22A2` inhibitor, `SLC22A6` inhibitor/substrate, `SLC22A8` inhibitor/substrate | DrugBank actor |
+| excretion | liver | `ABCC2` inhibitor/substrate | DrugBank actor |
+| excretion | small intestine | `ABCC2` inhibitor/substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: SLC16A1 (substrate), SLC22A11 (inhibitor), SLC22A11 (substrate), SLCO3A1 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;von Willebrand factor&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/&quot;},{&quot;label&quot;:&quot;Al_2025 \u00b7 final&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;VonWillebrandFactor_Schning2026_reference&quot;,&quot;label&quot;:&quot;Sch\u00f6ning_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/VonWillebrandFactor_Schning2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;VonWillebrandFactor_Valke2024_reference&quot;,&quot;label&quot;:&quot;Valke_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/VonWillebrandFactor_Valke2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;VonWillebrandFactor_Wong2025_reference&quot;,&quot;label&quot;:&quot;Wong_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/VonWillebrandFactor_Wong2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;VonWillebrandFactor_Zhu2020_reference&quot;,&quot;label&quot;:&quot;Zhu_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/VonWillebrandFactor_Zhu2020_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;VonWillebrandFactor_Al2025_final&quot;,&quot;label&quot;:&quot;Al_2025_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/VonWillebrandFactor_Al2025_final.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;VonWillebrandFactor_Valke2024_reference&quot;,&quot;label&quot;:&quot;Valke_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/VonWillebrandFactor_Valke2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;VonWillebrandFactor_Wong2025_reference&quot;,&quot;label&quot;:&quot;Wong_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/VonWillebrandFactor_Wong2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;VonWillebrandFactor_Al2025_final&quot;,&quot;label&quot;:&quot;Al_2025_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/VonWillebrandFactor_Al2025_final.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;VonWillebrandFactor_Schning2026_reference&quot;,&quot;label&quot;:&quot;Sch\u00f6ning_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/VonWillebrandFactor_Schning2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;VonWillebrandFactor_Zhu2020_reference&quot;,&quot;label&quot;:&quot;Zhu_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/VonWillebrandFactor_Zhu2020_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Valke_2024_Normalized_plasmin_peak_height&quot;,&quot;label&quot;:&quot;Valke_2024 \u00b7 Normalized plasmin peak height&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/pd_Valke_2024_Normalized_plasmin_peak_height.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Valke_2024_Normalized_thrombin_peak_height&quot;,&quot;label&quot;:&quot;Valke_2024 \u00b7 Normalized thrombin peak height&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/pd_Valke_2024_Normalized_thrombin_peak_height.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Valke_2024_Normalized_thrombin_potential&quot;,&quot;label&quot;:&quot;Valke_2024 \u00b7 Normalized thrombin potential&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/pd_Valke_2024_Normalized_thrombin_potential.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,13 +17,13 @@
 
 ### Reviewer guidance
 
-**Bioavailability and lag time were left at library defaults, and clearance and volume values conflict with a second reader's extraction.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The record lacks explicit estimates for bioavailability and lag time, relying instead on unreported library defaults. A second reader disagreed on the extracted values, citing a clearance of 250 mL/h/70 kg and a volume of 6490 mL/70 kg, which differ from the recorded 76.8 and 3580. These discrepancies in the core pharmacokinetic parameters prevent verification of the model's accuracy. Extracted — von willebrand factor: CL 76.8 mL/h/70 kg, V 3.58e+03 mL/70 kg, kabs 0.5 h−1.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — von willebrand factor: CL 76.8 mL/h/70 kg, V 3.58e+03 mL/70 kg, kabs 0.5 h−1.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has Haemate P, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 > **Dose compound ≠ measured compound:** dosed `Haemate P`, measured `von Willebrand factor`.
 
@@ -45,7 +45,7 @@ Al Arashi W et al., Replacement therapy in pregnant women w…, HemaSphere (2025
 |---|---|---|---|---|---|---|---|---|---|---|
 | CL (mL/h/70 kg) | `Q22` · CL | 76.8 | mL/h/70 kg | 2.1333333333333332e-08 | [ml] / [[h] · [70kg]] | 27 | exact (1.0) | hem370061-tbl-0003:row2:col3 | — | not captured |
 | V (mL/70 kg) | `Q61` · V | 3580 | mL/70 kg | 0.00358 | [ml] / [70kg] | 6 | exact (1.0) | hem370061-tbl-0003:row3:col3 | — | not captured |
-| Absorption rate constant (kapop) [h−1] | `Q49` · kabs | 0.5 | h−1 | 0.0001388888888888889 | 1/h | not captured | review_gapfill (0.7) | Schöning_2026:review | — | not captured |
+| Absorption rate constant (kapop) [h−1] Ground truth | `Q49` · kabs | 0.5 | h−1 | 0.0001388888888888889 | 1/h | not captured | review_gapfill (0.7) | Schöning_2026:review | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -60,7 +60,10 @@ Al Arashi W et al., Replacement therapy in pregnant women w…, HemaSphere (2025
 **Interpretation flags:**
 - table section residual_error: 'Proportional error (%)' routed out of structural estimates ('Residual variability')
 - table section residual_error: 'Additional error (IU/mL)' routed out of structural estimates ('Residual variability')
+- column 'fviii final model values (rse%) [shrinkage %]' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - dropped PD-category row 'Baseline (IU/mL)' → Q324 (E0, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['hem370061-tbl-0003:row1:col3'])
+- dropped PD-category row 'Baseline' → Q324 (E0, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['hem370061-tbl-0003:row5:col3'])
+- dropped duplicate Q22 ('CL', value '74.1') — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=von Willebrand factor
 - model-stage split: 'fviii final model values (rse%) [shrinkage %]' is the final model of Al_2025 (paper reports 2 stages: fviii final model values (rse%) [shrinkage %], vwf final model values (rse%) [shrinkage %]); same population, different model-building step
 - molar mass: none found for 'von_willebrand_factor' — its concentrations stay mass-only
@@ -70,15 +73,6 @@ Al Arashi W et al., Replacement therapy in pregnant women w…, HemaSphere (2025
 - gap-filled Q49 (kabs) from Schöning_2026's review values (primary lacked it)
 
 **Extraction notes:**
-- unparsed cell hem370061-tbl-0003:row1:col2 = '0.363 [0.268–0.484]'
-- unparsed cell hem370061-tbl-0003:row1:col4 = '1.11 [0.66–1.46]'
-- unparsed cell hem370061-tbl-0003:row2:col2 = '249 [215–295]'
-- unparsed cell hem370061-tbl-0003:row2:col4 = '70.8 [42.9–110]'
-- unparsed cell hem370061-tbl-0003:row3:col2 = '6514 [5533–7388]'
-- unparsed cell hem370061-tbl-0003:row3:col4 = '3863 [3431–4421]'
-- unparsed cell hem370061-tbl-0003:row9:col2 = '13.9 [10.2–17.0]'
-- unparsed cell hem370061-tbl-0003:row9:col4 = '15.5 [9.75–20.0]'
-- unparsed cell hem370061-tbl-0003:row10:col4 = '0.12 [0.03−0.19]'
 - LLM selected parameter table(s) 3
 
 ## Validation
@@ -143,10 +137,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_von_willebrand_factor/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Al_2025` / `Al_2025::final`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_von_willebrand_factor/models/modelica/VonWillebrandFactor_Al2025_final.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_von_willebrand_factor/models/modelica/VonWillebrandFactor_Al2025_final.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_von_willebrand_factor/models/modelica/VonWillebrandFactor_Al2025_final.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_von_willebrand_factor/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Al_2025` / `Al_2025::final`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_von_willebrand_factor/models/modelica/VonWillebrandFactor_Al2025_final.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_von_willebrand_factor/models/modelica/VonWillebrandFactor_Al2025_final.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_von_willebrand_factor/models/modelica/VonWillebrandFactor_Al2025_final.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -155,7 +149,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_von_willebrand_factor/VonWillebrandFactor_Al2025_final/VonWillebrandFactor_Al2025_final_modelica.zip" download>VonWillebrandFactor_Al2025_final_modelica.zip</a> <span class="pk-size">(4.7 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_von_willebrand_factor/VonWillebrandFactor_Al2025_final/VonWillebrandFactor_Al2025_final_modelica.zip" download>VonWillebrandFactor_Al2025_final_modelica.zip</a> <span class="pk-size">(4.8 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_von_willebrand_factor/VonWillebrandFactor_Al2025_final/VonWillebrandFactor_Al2025_final_fmi.zip" download>VonWillebrandFactor_Al2025_final_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_von_willebrand_factor/VonWillebrandFactor_Al2025_final/VonWillebrandFactor_Al2025_final_matlab.zip" download>VonWillebrandFactor_Al2025_final_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_von_willebrand_factor/VonWillebrandFactor_Al2025_final/VonWillebrandFactor_Al2025_final_matlab_simbio.zip" download>VonWillebrandFactor_Al2025_final_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
@@ -164,7 +158,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_von_willebrand_factor/VonWillebrandFactor_Al2025_final/VonWillebrandFactor_Al2025_final.svg" alt="VonWillebrandFactor_Al2025_final diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_von_willebrand_factor/VonWillebrandFactor_Al2025_final/VonWillebrandFactor_Al2025_final.svg" alt="VonWillebrandFactor_Al2025_final diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -177,4 +171,4 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 20:06 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 19:03 UTC</sub>

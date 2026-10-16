@@ -17,19 +17,29 @@ Crizanlizumab, a monoclonal antibody, was used to reduce vaso-occlusive crises i
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 01:27 | 8:54 | 0/1/0 | 1/0/0 | 0/0/0 | 112,730/31,800 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 1/2 | 2/1 | 0 |
+| 2026-10-14 21:42 | 1:00 | 0/1/0 | 1/0/0 | 0/0/0 | 49,177/8,551 | einfracz / qwen3.8-27b | 3 | 1/2 | 2/1 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Sy_2023_reference](drugs/drug_crizanlizumab/Crizanlizumab_Sy2023_reference.md) | — | 2-compartment (no model) | 4 | Sy SKB et al., Population Pharmacokinetics and Pharmac…, Clinical pharmacokinetics (2023) | [10.1007/s40262-022-01193-4](https://doi.org/10.1007/s40262-022-01193-4) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Sy_2023_reference](drugs/drug_crizanlizumab/Crizanlizumab_Sy2023_reference.md) | — | 2-compartment (no model) | 6 | Sy SKB et al., Population Pharmacokinetics and Pharmac…, Clinical pharmacokinetics (2023) | [10.1007/s40262-022-01193-4](https://doi.org/10.1007/s40262-022-01193-4) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed</span> | [Sy_2023_Psel](drugs/drug_crizanlizumab/pd_Sy_2023_Psel.md) | P-selectin ← crizanlizumab · target-mediated drug disposition | — | Sy SKB et al., Population Pharmacokinetics and Pharmac…, Clinical pharmacokinetics (2023) | [10.1007/s40262-022-01193-4](https://doi.org/10.1007/s40262-022-01193-4) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span> | [Sy_2023_sP_selectin](drugs/drug_crizanlizumab/pd_Sy_2023_sP_selectin.md) | Serum soluble P-selectin concentration (assay-dependent) ← crizanlizumab · direct Emax (saturable) effect | — | Sy SKB et al., Population Pharmacokinetics and Pharmac…, Clinical pharmacokinetics (2023) | [10.1007/s40262-022-01193-4](https://doi.org/10.1007/s40262-022-01193-4) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=crizanlizumab).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: SELP (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -41,16 +51,16 @@ Crizanlizumab, a monoclonal antibody, was used to reduce vaso-occlusive crises i
 
 - **PubMed hits:** 6 matched, 6 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 1
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| PGx | Egesa_2022 | not_relevant | 0 | 0 | The paper is a general review of sickle cell disease epidemiology and treatment options, mentioning crizanlizumab only as an approved therapy without reporting any pharmacogenomic effects on its PK or PD parameters. |
-| popPK | Rivenbark_2026 | irrelevant | 0 | 0 | The study is a claims analysis of prescription rates for sickle cell disease medications and does not report any pharmacokinetic parameters for crizanlizumab. |
-| PGx | Ross_2025 | not_relevant | 0 | 0 | The paper reports a clinical trial of ruxolitinib combinations (including crizanlizumab) but does not report pharmacogenomic effects on PK/PD parameters. |
+| PGx | Egesa_2022 | not_relevant | 0 | 0 | The paper is a general review of Sickle Cell Disease epidemiology and treatment landscape, mentioning crizanlizumab only as an approved therapy without discussing pharmacogenomic effects on its PK or PD parameters. |
+| popPK | Rivenbark_2026 | irrelevant | 0 | 0 | The study is a claims database analysis of prescription rates for sickle cell disease medications and contains no pharmacokinetic parameters or disposition data. |
+| PGx | Ross_2025 | not_relevant | 0 | 0 | The paper focuses on ruxolitinib combinations and contains no data on pharmacokinetic or pharmacodynamic effects of crizanlizumab, nor any pharmacogenomic analyses. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-06 01:18 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-14 21:42 UTC</sub>

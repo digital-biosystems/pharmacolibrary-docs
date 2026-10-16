@@ -16,19 +16,19 @@
 
 ### Reviewer guidance
 
-**Vmax (832) has a daily rate unit that could not be converted, causing a dimension mismatch that rejected the inebilizumab model.**
+**C5 dimension mismatch on a structural parameter.**
 
-The record lists Vmax with a value of 832 and a unit of µg/day. Because this specific unit was unavailable for conversion to standard SI units, the parameter lacked a valid physical value for dimensional analysis. This incompatibility triggered a structural parameter check failure, resulting in the rejection of the entire pharmacokinetic record. Extracted — inebilizumab: CL 188 mL/day, V1 2.95e+03 mL, Q 363 mL/day, V2 2.57e+03 mL, Vmax 832 µg/day, kel 0.00294 /day, Km 5.89 µg/mL.
+A reported unit could not be converted (Vmax and Km), so that value has no SI equivalent. Extracted — inebilizumab: CL 188 mL/day, V1 2.95e+03 mL, Q 363 mL/day, V2 2.57e+03 mL, Vmax 832 µg/day, kel 0.00294 /day, Km 5.89 µg/mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[km].covariate_forms`: this record has ['linear_fractional'], the second reading none; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Yan L et al., Population Pharmacokinetic Modeling of…, Clinical pharmacokinetics (2022)
   ·  DOI: [10.1007/s40262-021-01071-5](https://doi.org/10.1007/s40262-021-01071-5)
 
-<div class="pk-model-meta" hidden drug="inebilizumab" model-id="Inebilizumab_Yan2022_reference" status="rejected" stale="false" population="adult subjects with NMOSD, SSc, or MS" measured-compound="inebilizumab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="inebilizumab" model-id="Inebilizumab_Yan2022_reference" status="rejected" stale="false" population="adults with NMOSD, SSc, or relapsing MS" measured-compound="inebilizumab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 7 extracted, plus 4 covariate effects.
@@ -40,17 +40,17 @@ Yan L et al., Population Pharmacokinetic Modeling of…, Clinical pharmacokineti
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL (mL/day) | `Q22` · CL | 188 | mL/day | 2.1759259259259256e-09 | [ml] / [d] | 25 | exact (1.0) | Tab6:row1:col1, Tab6:row1:col2, Tab6:row1:col3, Tab6:row1:col5, Tab6:row1:col6 | — | 27 (None% RSE) |
-| Vc (mL) | `Q63` · V1 | 2950 | mL | 0.00295 | [ml] | 30 | exact (1.0) | Tab6:row3:col1, Tab6:row3:col2, Tab6:row3:col3, Tab6:row3:col5, Tab6:row3:col6 | — | 17 (None% RSE) |
-| weight_on_vca | `Q900` · weight_on_vca | 0.39 | not captured | not captured | not captured | 22.4 | not captured (not captured) | Tab6:row4:col1, Tab6:row4:col2, Tab6:row4:col3 | — | not captured |
-| Q (mL/day) | `Q30` · Q | 363 | mL/day | 4.201388888888889e-09 | [ml] / [d] | 6.0 | exact (1.0) | Tab6:row5:col1, Tab6:row5:col2, Tab6:row5:col3 | — | not captured |
-| Vp (mL) | `Q64` · V2 | 2570 | mL | 0.00257 | [ml] | 45 | exact (1.0) | Tab6:row7:col1, Tab6:row7:col2, Tab6:row7:col3, Tab6:row7:col5, Tab6:row7:col6 | — | 16 (None% RSE) |
-| Vmax (µg/day) | `Q66` · Vmax | 832 | µg/day | not captured | [µg] / [d] | 61 | special_case (0.95) | Tab6:row9:col1, Tab6:row9:col2, Tab6:row9:col3, Tab6:row9:col5, Tab6:row9:col6 | — | 30 (None% RSE) |
-| Kdec (/day) | `Q47` · kel | 0.00294 | /day | 3.402777777777778e-08 | [1] / [d] | 55.1 | llm (0.6) | Tab6:row11:col1, Tab6:row11:col2, Tab6:row11:col3 | — | not captured |
-| Km (µg/mL) | `Q1` · Km | 5.89 | µg/mL | not captured | [µg] / [ml] | 25.5 | exact (1.0) | Tab6:row12:col1, Tab6:row12:col2, Tab6:row12:col3 | — | not captured |
-| theta_km_weight | `Q900` · theta_km_weight | 0.57 | not captured | not captured | not captured | 15.8 | not captured (not captured) | Tab6:row2:col1, Tab6:row2:col2, Tab6:row2:col3 | — | not captured |
-| theta_q900_weight | `Q900` · theta_q900_weight | 0.84 | not captured | not captured | not captured | 21.1 | not captured (not captured) | Tab6:row6:col1, Tab6:row6:col2, Tab6:row6:col3 | — | not captured |
-| theta_q321_weight | `Q900` · theta_q321_weight | 0.40 | not captured | not captured | not captured | 27.9 | not captured (not captured) | Tab6:row8:col1, Tab6:row8:col2, Tab6:row8:col3 | — | not captured |
+| CL (mL/day) | `Q22` · CL | 188 | mL/day | 2.1759259259259256e-09 | [ml] / [d] | 2.2 | exact (1.0) | Tab6:row1:col1 | — | 27 (None% RSE) |
+| Vc (mL) | `Q63` · V1 | 2950 | mL | 0.00295 | [ml] | 1.4 | exact (1.0) | Tab6:row3:col1 | — | 17 (None% RSE) |
+| Q (mL/day) | `Q30` · Q | 363 | mL/day | 4.201388888888889e-09 | [ml] / [d] | 6.0 | exact (1.0) | Tab6:row5:col1 | — | not captured |
+| weight_on_qa | `Q900` · weight_on_qa | 0.84 | not captured | not captured | not captured | 21.1 | not captured (not captured) | Tab6:row6:col1 | — | not captured |
+| Vp (mL) | `Q64` · V2 | 2570 | mL | 0.00257 | [ml] | 2.8 | exact (1.0) | Tab6:row7:col1 | — | 16 (None% RSE) |
+| weight_on_vpa | `Q900` · weight_on_vpa | 0.40 | not captured | not captured | not captured | 27.9 | not captured (not captured) | Tab6:row8:col1 | — | not captured |
+| Vmax (µg/day) | `Q66` · Vmax | 832 | µg/day | not captured | [µg] / [d] | 5.3 | special_case (0.95) | Tab6:row9:col1 | — | 30 (None% RSE) |
+| Kdec (/day) | `Q47` · kel | 0.00294 | /day | 3.402777777777778e-08 | [1] / [d] | 55.1 | llm (0.6) | Tab6:row11:col1 | — | not captured |
+| Km (µg/mL) | `Q1` · Km | 5.89 | µg/mL | not captured | [µg] / [ml] | 25.5 | exact (1.0) | Tab6:row12:col1 | — | not captured |
+| theta_km_weight | `Q900` · theta_km_weight | 0.57 | not captured | not captured | not captured | 15.8 | not captured (not captured) | Tab6:row2:col1 | — | not captured |
+| theta_q61_weight | `Q900` · theta_q61_weight | 0.39 | not captured | not captured | not captured | 22.4 | not captured (not captured) | Tab6:row4:col1 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -65,17 +65,18 @@ Yan L et al., Population Pharmacokinetic Modeling of…, Clinical pharmacokineti
 - table section iiv: 'Vp (mL)' routed out of structural estimates ('IIV (CV%)')
 - table section iiv: 'Vmax (µg/day)' routed out of structural estimates ('IIV (CV%)')
 - table section residual_error: 'Proportional error (%CV)' routed out of structural estimates ('Residual variability')
-- covariate level 'Weight on Vca' → Q900:weight_on_vca = 0.39 (linear_fractional on Q22)
+- covariate level 'Weight on Qa' → Q900:weight_on_qa = 0.84 (linear_fractional on Q22)
+- covariate level 'Weight on Vpa' → Q900:weight_on_vpa = 0.40 (linear_fractional on Q22)
 - unit_dimension_mismatch: 'Vmax (µg/day)' → Q66 (unit '[mass] / [time]' vs ontology '[length] ** 3') — route to review
-- dropped duplicate Q66 ('Study CP200 on Vmax (%)', value '210') — already have one for this compound
-- covariate effect for Q900 has no base parameter row (kept as unattached equation-variable)
-- covariate effect for Q321 has no base parameter row (kept as unattached equation-variable)
+- dropped unlinked row (NIL): 'Study CP200 on Vmax (%)' — extend the ontology if this is a real PK parameter (source ['Tab6:row10:col1'])
+- covariate effect for Q61 has no base parameter row (kept as unattached equation-variable)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=inebilizumab
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
 - molar mass: none found for 'inebilizumab' — its concentrations stay mass-only
 
 **Extraction notes:**
+- table Tab6: unbound_uncertainty
 - LLM selected parameter table(s) 6
 
 ## Validation
@@ -118,18 +119,18 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q1 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Tab6:row12:col1', 'Tab6:row12:col2', 'Tab6:row12:col3'] |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab6:row1:col1', 'Tab6:row1:col2', 'Tab6:row1:col3', 'Tab6:row1:col5', 'Tab6:row1:col6'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab6:row5:col1', 'Tab6:row5:col2', 'Tab6:row5:col3'] |
-| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['Tab6:row11:col1', 'Tab6:row11:col2', 'Tab6:row11:col3'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab6:row3:col1', 'Tab6:row3:col2', 'Tab6:row3:col3', 'Tab6:row3:col5', 'Tab6:row3:col6'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab6:row7:col1', 'Tab6:row7:col2', 'Tab6:row7:col3', 'Tab6:row7:col5', 'Tab6:row7:col6'] |
-| C5_dimension_Q66 | fail | [mass] / [time] | µg/day | not captured | not captured | ['Tab6:row9:col1', 'Tab6:row9:col2', 'Tab6:row9:col3', 'Tab6:row9:col5', 'Tab6:row9:col6'] |
-| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 188.0 | not captured | not captured | ['Tab6:row1:col1', 'Tab6:row1:col2', 'Tab6:row1:col3', 'Tab6:row1:col5', 'Tab6:row1:col6'] |
+| C5_dimension_Q1 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Tab6:row12:col1'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab6:row1:col1'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab6:row5:col1'] |
+| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['Tab6:row11:col1'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab6:row3:col1'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab6:row7:col1'] |
+| C5_dimension_Q66 | fail | [mass] / [time] | µg/day | not captured | not captured | ['Tab6:row9:col1'] |
+| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 188.0 | not captured | not captured | ['Tab6:row1:col1'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.00783 L/h | not captured | not captured | ['Tab6:row1:col1', 'Tab6:row1:col2', 'Tab6:row1:col3', 'Tab6:row1:col5', 'Tab6:row1:col6'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 2.95 L | not captured | not captured | ['Tab6:row3:col1', 'Tab6:row3:col2', 'Tab6:row3:col3', 'Tab6:row3:col5', 'Tab6:row3:col6'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 2.57 L | not captured | not captured | ['Tab6:row7:col1', 'Tab6:row7:col2', 'Tab6:row7:col3', 'Tab6:row7:col5', 'Tab6:row7:col6'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.00783 L/h | not captured | not captured | ['Tab6:row1:col1'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 2.95 L | not captured | not captured | ['Tab6:row3:col1'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 2.57 L | not captured | not captured | ['Tab6:row7:col1'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -138,7 +139,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_inebilizumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Yan_2022` / `Yan_2022::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_inebilizumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Yan_2022` / `Yan_2022::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -154,4 +155,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 23:51 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 03:58 UTC</sub>

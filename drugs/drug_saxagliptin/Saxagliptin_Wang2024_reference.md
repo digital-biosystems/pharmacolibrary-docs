@@ -4,7 +4,7 @@
 
 # saxagliptin — `Saxagliptin_Wang2024_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.829), gpt-oss:120b (not confirmed, agreement 0.878). Primary extraction retained.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -22,8 +22,6 @@
 
 The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — saxagliptin: Cmax 3.72e+03 ng/mL, tmax 0.11 h, AUC 585 ng*h/mL, t1/2ka 0.07 h, t1/2α 0.06 h, t1/2β 0.36 h, V 2.31e+03 mL/kg, V2 1.84e+04 mL/kg, … (+4); 5-hydroxy saxagliptin: V1 141 ml/kg, V2 138 ml/kg, CL 882 ml/h/kg, Q 472 ml/h/kg.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has unknown, the second reading saxagliptin (oral) and 5-hydroxy saxagliptin (IV); it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
-
 <sub>reviewed by rule template (no LLM)</sub>
 
 > ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:31:41.846498+00:00) predates the upstream re-run (2026-10-07 16:14:29.138700+00:00). Current validate status: `needs_review`.
@@ -34,9 +32,9 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Wang T et al., Pharmacokinetic/Pharmacodynamic modelli…, BMC pharmacology & toxicolo… (2024)
   ·  DOI: [10.1186/s40360-024-00757-3](https://doi.org/10.1186/s40360-024-00757-3)
 
-<div class="pk-model-meta" hidden drug="saxagliptin" model-id="Saxagliptin_Wang2024_reference" status="needs_review" stale="true" population="unknown" measured-compound="saxagliptin" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="saxagliptin" model-id="Saxagliptin_Wang2024_reference" status="needs_review" stale="true" population="unknown" measured-compound="saxagliptin" parameterization="mechanistic" topology=""></div>
 
-**Model structure:** parent + metabolite; no model was built for this record.  
+**Model structure:** —; no model was built for this record.  
 **Parameters:** 16 extracted.
 
 **Parameterization:** mechanistic.
@@ -85,39 +83,6 @@ Wang T et al., Pharmacokinetic/Pharmacodynamic modelli…, BMC pharmacology & to
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
-Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
-
-| second reader | verdict | agreement | disagreements |
-|---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.829 (34/41 fields) | 7 |
-| `gpt-oss:120b` | not confirmed | 0.878 (36/41 fields) | 5 |
-
-<details><summary>12 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[k (1/h) 12]` | not captured | 46.22 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[k (1/h) 21]` | not captured | 37.47 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[t1/2a].parameter_id` | Q59 | Q95 | mismatch |
-| `gpt-oss-120b` | `parameters[t1/2ka].parameter_id` | Q95 | Q49 | mismatch |
-| `gpt-oss-120b` | `parameters[t1/2β].parameter_id` | Q60 | Q47 | mismatch |
-| `gpt-oss-120b` | `screen.dose_compound` | unknown | saxagliptin (oral) and 5-hydroxy saxagliptin (IV) | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | unknown | saxagliptin and 5-hydroxy saxagliptin | mismatch |
-| `gpt-oss:120b` | `parameters[k (1/h) 12]` | not captured | 46.22 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[k (1/h) 21]` | not captured | 37.47 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[t1/2a].parameter_id` | Q59 | Q95 | mismatch |
-| `gpt-oss:120b` | `parameters[t1/2ka].parameter_id` | Q95 | Q49 | mismatch |
-| `gpt-oss:120b` | `parameters[t1/2β].parameter_id` | Q60 | Q47 | mismatch |
-
-</details>
-
-<details class="legend">
-<summary>Cross-check definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
-</details>
-
-
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
@@ -157,7 +122,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_saxagliptin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Wang_2024` / `Wang_2024::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_saxagliptin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Wang_2024` / `Wang_2024::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

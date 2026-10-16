@@ -4,7 +4,7 @@
 
 # hydrocortisone — `Hydrocortisone_Melin2020_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -20,7 +20,7 @@
 
 The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has hydrocortisone, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on bioavailability: this record has 82.6, the second reading 82.6%; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -65,20 +65,18 @@ Melin J et al., Pharmacokinetic/Pharmacodynamic Evaluat…, The Journal of clini
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.429 (3/7 fields) | 4 |
+| `gpt-oss-120b` | not confirmed | 0.667 (4/6 fields) | 2 |
 
-<details><summary>4 field discrepancies</summary>
+<details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[bioavailability]` | 82.6 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[bioavailability]` | not captured | 82.6 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | hydrocortisone | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | cortisol | unknown | mismatch |
+| `gpt-oss-120b` | `model.bioavailability.theta` | 82.6 | 82.6% | mismatch |
+| `gpt-oss-120b` | `parameters[bioavailability].value` | 82.6 | 82.6% | mismatch |
 
 </details>
 
@@ -103,7 +101,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_hydrocortisone/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Melin_2020` / `Melin_2020::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_hydrocortisone/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Melin_2020` / `Melin_2020::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

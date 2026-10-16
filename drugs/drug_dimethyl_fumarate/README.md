@@ -18,17 +18,26 @@ Dimethyl fumarate is an immunosuppressive drug used to treat multiple sclerosis,
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 23:49 | 12:44 | 0/0/0 | 0/1/0 | 0/0/0 | 335,059/4,387 | einfracz / qwen3.8-27b | 39 | 6/11 | 39/0 | 0 |
+| 2026-10-14 21:50 | 0:58 | 0/0/0 | 0/0/0 | 0/0/0 | 81,969/2,145 | einfracz / qwen3.8-27b | 39 | 6/11 | 39/0 | 0 |
 
 ## popPK records
 
 _not available_
 
-## Pharmacodynamics (PD)
+## ADME sites
 
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Jakimovski_2022_inflammatory_activity](drugs/drug_dimethyl_fumarate/pd_Jakimovski_2022_inflammatory_activity.md) | inflammatory activity · inhibition effect | — | Jakimovski D et al., Multiple Sclerosis in Children: Differe…, CNS drugs (2022) | [10.1007/s40263-021-00887-w](https://doi.org/10.1007/s40263-021-00887-w) |
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=dimethyl_fumarate).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| metabolism | blood | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| metabolism | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | lung | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: KEAP1 (binder), RELA (binder), RELA (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,37 +56,38 @@ _not available_
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Ankrom_2016 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics and pharmacodynamics of apixaban and a novel fIXa inhibitor (CPD1) in rats, not dimethyl fumarate. |
-| popPK | Balshi_2023 | irrelevant | 0 | 0 | The study focuses on immunological lymphocyte subsets (CD4/CD8 ratios) in MS patients and contains no pharmacokinetic parameters for dimethyl fumarate. |
-| popPK | Braley_2018 | irrelevant | 0 | 0 | The study investigates the therapeutic efficacy of dimethyl fumarate on obstructive sleep apnea and reports clinical/cytokine outcomes, but contains no pharmacokinetic parameter estimates. |
-| PGx | Camela_2022 | not_relevant | 2 | 1 | The paper states that pharmacogenetic data for dimethyl fumarate are scant and does not report specific gene-PK/PD effects for this drug. |
-| PGx | Caputo_2021 | not_relevant | 0 | 0 | The paper is a general review of psoriasis pharmacogenomics that only mentions dimethyl fumarate in a list of drugs without reporting any specific gene variants affecting its PK or PD parameters. |
-| PGx | Carlström_2019 | not_relevant | 2 | 5 | The paper links a genetic variant (NOX3 SNP) to clinical treatment response and cellular ROS generation, but does not report a change in pharmacokinetic parameters (ADME) or a defined pharmacodynamic parameter (exposure-response) of dimethyl fumarate itself. |
-| PGx | Chen_2015 | not_relevant | 0 | 0 | The study examines the mechanism of cold stress response in chickens using DMF as an experimental tool, not the pharmacogenomic effect of DMF on its own PK/PD. |
-| PGx | Dello_2021 | not_relevant | 2 | 0 | The paper is a review discussing mechanisms of DMF-induced lymphopenia and notes that pharmacogenetic studies are limited and inconclusive, without reporting specific gene-variant to PK/PD parameter effect sizes. |
-| popPK | Dempsey_2024 | irrelevant | 0 | 0 | The study reports immunological outcomes (lymphocyte counts) following a drug switch, not quantitative pharmacokinetic parameters for dimethyl fumarate. |
-| popPK | Fajana_2026 | irrelevant | 0 | 0 | The paper focuses on the antioxidant and antihypertensive properties of Ficus exasperata leaf extracts and does not involve dimethyl fumarate. |
-| popPK | Frey_2016 | irrelevant | 0 | 0 | The paper investigates the pharmacokinetics of riociguat, not dimethyl fumarate. |
-| popPK | Held_1988 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of radiation sensitivity and glutathione depletion, reporting no pharmacokinetic parameters. |
-| popPK | Hersh_2024 | irrelevant | 0 | 0 | The study analyzes brain atrophy outcomes (BPF) to evaluate treatment efficacy, not the pharmacokinetic disposition parameters (CL, V, ka) of dimethyl fumarate. |
-| PGx | Kowalec_2017 | not_relevant | 3 | 0 | The paper is a study protocol for a planned case-control study and does not report any results or findings. |
-| PGx | Kowalec_2026 | not_relevant | 2 | 5 | The paper reports an association between genetic variation and a clinical adverse effect (lymphopenia), not a pharmacokinetic or pharmacodynamic parameter of the drug itself. |
-| popPK | Larroque-Lombard_2021 | irrelevant | 0 | 0 | The study focuses on the drug AL530, not dimethyl fumarate. |
-| popPK | Liang_2021 | irrelevant | 0 | 0 | The study investigates the mechanical binding dynamics of MLL1 CXXC domain to DNA and the inhibitory effect of dimethyl fumarate, containing no pharmacokinetic or disposition data for dimethyl fumarate. |
-| popPK | Liu_2026 | irrelevant | 0 | 0 | The paper focuses on a synthetic peptidomimetic foldamer M4 for Alzheimer's disease, not the drug dimethyl fumarate. |
-| popPK | Meili-Butz_2008 | irrelevant | 0 | 0 | The study is a mechanistic investigation of cardioprotective effects and NF-kappaB inhibition in rats, with no pharmacokinetic parameters or disposition data for dimethyl fumarate reported. |
-| popPK | Meyer_2024 | irrelevant | 0 | 0 | This is an environmental chemistry study monitoring pharmaceuticals and their metabolites in wastewater using LC-MS/MS; it does not report pharmacokinetic parameters for dimethyl fumarate or any other specific drug as a subject of PK modeling. |
-| popPK | Moura_2025 | irrelevant | 0 | 0 | The paper studies carnosic acid derivatives for anticancer activity and does not mention dimethyl fumarate or report any pharmacokinetic parameters. |
-| popPK | Pedron_2020 | irrelevant | 0 | 0 | The paper studies 8-nitroquinolinone derivatives for trypanosomiasis and does not involve dimethyl fumarate. |
-| PGx | Pistono_2017 | not_relevant | 0 | 0 | The text is a review introduction that discusses the role of immunogenetics in MS generally and mentions the drugs, but it does not report any specific gene variant affecting the PK or PD parameters of dimethyl fumarate. |
-| popPK | Pitzalis_2021 | irrelevant | 0 | 0 | The study investigates the effect of dimethyl fumarate on humoral immune response to a vaccine, not the pharmacokinetics of the drug itself. |
-| PGx | Sangurdekar_2019 | not_relevant | 1 | 0 | The study explicitly reports a null result, finding no genetic variants or gene expression profiles that predict the pharmacodynamic effect (lymphopenia) of dimethyl fumarate. |
-| PGx | Takimoto_1992 | not_relevant | 0 | 0 | The paper discusses dimethyl fumarate only as a negative control substance that does not induce ALDH-3 expression in vitro, and it does not report any pharmacokinetic or pharmacodynamic changes associated with specific genetic variants in humans or model organisms. |
-| popPK | Wright_2017 | irrelevant | 0 | 0 | The paper is a clinical study focusing on lymphocyte count changes and disease outcomes, not a pharmacokinetic study reporting quantitative PK parameters (CL, V, etc.) for dimethyl fumarate. |
-| PGx | Xu_2023 | not_relevant | 0 | 0 | The paper describes general PK in healthy volunteers and explicitly states that the metabolic pathways minimize pharmacogenetic variability, rather than reporting a specific gene variant effect. |
-| popPK | You_2021 | irrelevant | 0 | 0 | The paper is a neuro-ophthalmology study comparing retinal nerve fiber layer thinning in MS patients treated with various drugs (including dimethyl fumarate) but does not report any pharmacokinetic parameters. |
-| popPK | Zinger_2022 | irrelevant | 0 | 0 | The paper is an MRI biomarker and in-vitro mechanistic study on dimethyl fumarate's effect on inflammation, reporting no pharmacokinetic parameters such as clearance, volume, or half-life. |
-| PGx | Żur-Wyrozumska_2025 | not_relevant | 1 | 0 | The paper describes a case report of an ALS patient with an SQSTM1 variant who was treated with dimethyl fumarate, but it does not analyze how the genotype affects the pharmacokinetic or pharmacodynamic parameters of the drug. |
+| popPK | Ankrom_2016 | irrelevant | 0 | 0 | The paper describes the pharmacokinetics and pharmacodynamics of a factor IXa inhibitor (CPD1) and apixaban in rats, and does not involve dimethyl fumarate. |
+| popPK | Balshi_2023 | irrelevant | 0 | 0 | The paper focuses on immunological monitoring (lymphocyte subsets and CD4:CD8 ratios) in patients with multiple sclerosis, not pharmacokinetic disposition parameters. |
+| popPK | Braley_2018 | irrelevant | 0 | 0 | The study is a clinical trial evaluating the therapeutic efficacy of dimethyl fumarate on obstructive sleep apnea outcomes and does not report quantitative pharmacokinetic parameters. |
+| PGx | Camela_2022 | not_relevant | 0 | 0 | The paper is a general review on psoriasis biomarkers and does not report specific pharmacogenomic data linking gene variants to the pharmacokinetics or pharmacodynamics of dimethyl fumarate. |
+| PGx | Caputo_2021 | not_relevant | 2 | 0 | The paper is a review that mentions dimethyl fumarate in the abstract, but the provided tables only cover anti-TNF, cytokine inhibitors, and apremilast, with no specific pharmacogenomic data or parameters for dimethyl fumarate. |
+| PGx | Carlström_2019 | not_relevant | 4 | 8 | The paper reports a genetic association with clinical treatment response (PD outcome) and ROS generation, but does not link the genotype to a specific pharmacokinetic or pharmacodynamic parameter of dimethyl fumarate (e.g., metabolite levels, clearance, or direct target effect size). |
+| PGx | Chen_2015 | not_relevant | 0 | 0 | The paper investigates Nrf2 signaling pathways in chickens under cold stress, using dimethyl fumarate only as a tool compound in ChIP experiments; it does not study pharmacogenomic effects of genetic variants on PK/PD parameters of dimethyl fumarate. |
+| PGx | Dello_2021 | not_relevant | 1 | 0 | The paper is a general review of DMF-induced lymphopenia mechanisms and explicitly states that pharmacogenetic studies are limited and inconclusive, reporting no specific quantitative genotype-PK/PD effects. |
+| popPK | Dempsey_2024 | irrelevant | 0 | 0 | The study investigates immunological effects (lymphocyte counts) of drug switching, not pharmacokinetic parameters like clearance or volume. |
+| popPK | Fajana_2026 | irrelevant | 0 | 0 | The paper investigates in vitro antioxidant properties of plant extracts and does not mention dimethyl fumarate or report any pharmacokinetic parameters. |
+| popPK | Frey_2016 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of riociguat, not dimethyl fumarate. |
+| popPK | Held_1988 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of radiation sensitivity and glutathione depletion, reporting no quantitative pharmacokinetic parameters for dimethyl fumarate. |
+| popPK | Hersh_2024 | irrelevant | 0 | 0 | The study investigates brain atrophy outcomes in multiple sclerosis patients and uses dimethyl fumarate only as a comparator for drug efficacy, reporting no pharmacokinetic parameters. |
+| PGx | Kowalec_2017 | not_relevant | 0 | 0 | The paper is a study protocol for a future case-control investigation and does not report any results, findings, or quantitative pharmacogenomic effects. |
+| PGx | Kowalec_2026 | not_relevant | 1 | 0 | The paper analyzes a pharmacodynamic safety endpoint (lymphopenia) rather than a primary PK parameter, and it identifies a polygenic score and a non-replicated single variant rather than a clear pharmacogenomic effect on the drug's disposition or efficacy. |
+| popPK | Larroque-Lombard_2021 | irrelevant | 0 | 0 | The paper studies the pharmacokinetics of AL530 (a combi-molecule releasing chlorambucil and PD98059) in mice, not dimethyl fumarate. |
+| popPK | Liang_2021 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on protein-DNA dynamics, not a pharmacokinetic study, and contains no disposition parameters. |
+| popPK | Liu_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of the novel peptide M4, not dimethyl fumarate. |
+| popPK | Meili-Butz_2008 | irrelevant | 0 | 0 | The study focuses on the mechanistic effect of dimethyl fumarate on myocardial infarct size and NF-kappaB inhibition, not on pharmacokinetic parameters. |
+| popPK | Meyer_2024 | irrelevant | 0 | 0 | The paper is a wastewater monitoring study for pharmaceutical metabolites and does not report pharmacokinetic parameters for dimethyl fumarate. |
+| popPK | Moura_2025 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on carnosic acid derivatives in cancer cell lines and does not involve dimethyl fumarate or report any pharmacokinetic parameters. |
+| popPK | Pedron_2020 | irrelevant | 0 | 0 | The paper studies the pharmacokinetics of a novel nitroquinolinone derivative (compound 12) in mice, not dimethyl fumarate. |
+| PGx | Pistono_2017 | not_relevant | 2 | 2 | The paper is a review discussing the general importance of pharmacogenomics for MS drugs and highlights that specific studies for oral agents are lacking, rather than reporting a specific quantified effect on PK/PD. |
+| popPK | Pitzalis_2021 | irrelevant | 0 | 0 | The study evaluates humoral immune response to a vaccine in MS patients and does not report any pharmacokinetic parameters for dimethyl fumarate. |
+| PGx | Sangurdekar_2019 | not_relevant | 1 | 0 | The study investigated genetic predictors but found no genetic variants or expression profiles associated with severe or moderate prolonged lymphopenia. |
+| PGx | Takimoto_1992 | not_relevant | 0 | 0 | The paper investigates TCDD-induced gene expression and mentions dimethyl fumarate only as a negative control for induction, not as the primary drug for a pharmacogenomic study. |
+| popPK | Wright_2017 | irrelevant | 0 | 0 | The study focuses on lymphocyte counts and clinical outcomes in MS patients, not the pharmacokinetic parameters (CL, V, etc.) of dimethyl fumarate. |
+| PGx | Xu_2023 | not_relevant | 0 | 0 | The study reports standard pharmacokinetics in healthy volunteers and explicitly states that DMF metabolism utilizes ubiquitous pathways, thereby minimizing pharmacogenetic variability; no specific genetic variant or genotype effect is reported. |
+| popPK | You_2021 | irrelevant | 0 | 0 | The paper is a neuro-ophthalmology study assessing retinal ganglion cell loss in MS patients; dimethyl fumarate is merely listed as a comparator disease-modifying therapy and no pharmacokinetic parameters are reported. |
+| PGx | Zarzuelo_2021 | not_relevant | 2 | 0 | The paper is a review that identifies potential genetic markers for treatment response (efficacy) but does not report specific pharmacokinetic or pharmacodynamic parameter changes for dimethyl fumarate. |
+| popPK | Zinger_2022 | irrelevant | 0 | 0 | This is a clinical imaging and mechanistic study regarding the anti-inflammatory effects of dimethyl fumarate on multiple sclerosis lesions, containing no pharmacokinetic parameters (clearance, volume, half-life, etc.). |
+| PGx | Żur-Wyrozumska_2025 | not_relevant | 0 | 0 | The paper is a case report on the rationale for choosing a drug (dimethyl fumarate) based on a patient's genotype, but it does not report data on how the genotype changes the PK or PD parameters of the drug. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

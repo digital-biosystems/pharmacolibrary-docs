@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A06A&quot;,&quot;href&quot;:&quot;atc/A06A.md&quot;},{&quot;label&quot;:&quot;naloxegol&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Naloxegol_AlHuniti2016_reference&quot;,&quot;label&quot;:&quot;Al-Huniti_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_naloxegol/Naloxegol_AlHuniti2016_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # naloxegol
 
@@ -15,34 +14,43 @@ Naloxegol is an opioid antagonist used to treat constipation caused by opioid me
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q15708351](https://www.wikidata.org/wiki/Q15708351) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
-## Molecular properties
-
-> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
-
-| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
-|---|---|---|---|---|---|---|
-| naloxegol | parent | 651.794 | C34H53NO11 | DrugBank | [56959087](https://pubchem.ncbi.nlm.nih.gov/compound/56959087) | Al-Huniti_2016 |
-
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-04 17:00 | 7:32 | 0/0/1 | 0/0/2 | 0/0/0 | 171,937/14,044 | ollama / qwen3.8:27b-mtp-q8_0 | 7 | 1/6 | 7/0 | 0 |
+| 2026-10-15 01:02 | 0:41 | 0/1/0 | 0/0/2 | 0/0/0 | 75,516/3,224 | einfracz / qwen3.8-27b | 7 | 1/6 | 7/0 | 1 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Al-Huniti_2016_reference](drugs/drug_naloxegol/Naloxegol_AlHuniti2016_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Al-Huniti N et al., Population pharmacokinetics of naloxego…, British journal of clinical… (2016) | [10.1111/bcp.12756](https://doi.org/10.1111/bcp.12756) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Al-Huniti_2016_reference](drugs/drug_naloxegol/Naloxegol_AlHuniti2016_reference.md) | — | 1-compartment (no model) | 0 | Al-Huniti N et al., Population pharmacokinetics of naloxego…, British journal of clinical… (2016) | [10.1111/bcp.12756](https://doi.org/10.1111/bcp.12756) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span> | [Al-Huniti_2016_2_DED](drugs/drug_naloxegol/pd_Al_Huniti_2016_2_DED.md) | diary entry discontinuation ← naloxegol · time-to-event model | — | Al-Huniti N et al., Population Exposure-Response Modeling o…, CPT: pharmacometrics & syst… (2016) | [10.1002/psp4.12099](https://doi.org/10.1002/psp4.12099) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.571). Primary extraction retained.">cross-check: disputed</span> | [Al-Huniti_2016_2_SBM](drugs/drug_naloxegol/pd_Al_Huniti_2016_2_SBM.md) | number of spontaneous bowel movements (SBMs) ← naloxegol · categorical (graded) response model | — | Al-Huniti N et al., Population Exposure-Response Modeling o…, CPT: pharmacometrics & syst… (2016) | [10.1002/psp4.12099](https://doi.org/10.1002/psp4.12099) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Al-Huniti_2017_SBM_response](drugs/drug_naloxegol/pd_Al_Huniti_2017_SBM_response.md) | weekly probability of response ← naloxegol · categorical (graded) response model | — | Al-Huniti N et al., Population Exposure-Response Modeling S…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12229](https://doi.org/10.1002/psp4.12229) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Al-Huniti_2017_dropout](drugs/drug_naloxegol/pd_Al_Huniti_2017_dropout.md) | time to discontinuation ← naloxegol · time-to-event model | — | Al-Huniti N et al., Population Exposure-Response Modeling S…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12229](https://doi.org/10.1002/psp4.12229) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.571). Primary extraction retained.">cross-check: disputed</span> | [Al-Huniti_2016_2_SBM](drugs/drug_naloxegol/pd_Al_Huniti_2016_2_SBM.md) | daily spontaneous bowel movements ← naloxegol · categorical (graded) response model | — | Al-Huniti N et al., Population Exposure-Response Modeling o…, CPT: pharmacometrics & syst… (2016) | [10.1002/psp4.12099](https://doi.org/10.1002/psp4.12099) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Al-Huniti_2017_time_to_study_discontinuation](drugs/drug_naloxegol/pd_Al_Huniti_2017_time_to_study_discontinuation.md) | time to study discontinuation ← naloxegol · time-to-event model | — | Al-Huniti N et al., Population Exposure-Response Modeling S…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12229](https://doi.org/10.1002/psp4.12229) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Al-Huniti_2017_weekly_probability_of_response](drugs/drug_naloxegol/pd_Al_Huniti_2017_weekly_probability_of_response.md) | weekly probability of response ← naloxegol · categorical (graded) response model | — | Al-Huniti N et al., Population Exposure-Response Modeling S…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12229](https://doi.org/10.1002/psp4.12229) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=naloxegol).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| metabolism | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
+| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| metabolism | liver | `CYP2C19` inhibitor, `CYP2D6` inhibitor, `CYP3A4` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: OPRM1 (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,7 +62,7 @@ Naloxegol is an opioid antagonist used to treat constipation caused by opioid me
 
 - **PubMed hits:** 21 matched, 21 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -63,28 +71,27 @@ _4 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Al-Huniti_2016.pdf` | Al-Huniti N et al., Population pharmacokinetics of naloxego…, British journal of clinical… (2016) | popPK | 10 | [10.1111/bcp.12756](https://doi.org/10.1111/bcp.12756) | [26317320](https://pubmed.ncbi.nlm.nih.gov/26317320) | The paper reports a population PK model for naloxegol with explicit numeric values for CL/F, Vc/F, and absorption rate constants in the abstract. |
-| `Hruska_2024.pdf` | Hruska MW et al., Population Pharmacokinetics of Naloxego…, Clinical pharmacology in dr… (2024) | popPK | 10 | [10.1002/cpdd.1457](https://doi.org/10.1002/cpdd.1457) | [39110083](https://pubmed.ncbi.nlm.nih.gov/39110083) | The paper describes a population PK model for naloxegol, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence text. |
+| `Al-Huniti_2016.pdf` | Al-Huniti N et al., Population pharmacokinetics of naloxego…, British journal of clinical… (2016) | popPK | 10 | [10.1111/bcp.12756](https://doi.org/10.1111/bcp.12756) | [26317320](https://pubmed.ncbi.nlm.nih.gov/26317320) | The paper reports a population PK model for naloxegol with explicit numeric estimates for CL/F, Vc/F, and absorption rates in the provided evidence. |
+| `Hruska_2024.pdf` | Hruska MW et al., Population Pharmacokinetics of Naloxego…, Clinical pharmacology in dr… (2024) | popPK | 9 | [10.1002/cpdd.1457](https://doi.org/10.1002/cpdd.1457) | [39110083](https://pubmed.ncbi.nlm.nih.gov/39110083) | The paper describes a population PK model for naloxegol with specific findings (2-compartment, Weibull absorption), but the numeric parameter values are not present in the provided abstract text. |
 | `Yu_2016.pdf` | Yu J et al., Key Findings from Preclinical and Clini…, Drug metabolism and disposi… (2016) | pgx | 8 | [10.1124/dmd.115.066720](https://doi.org/10.1124/dmd.115.066720) | [26424199](https://www.ncbi.nlm.nih.gov/pubmed/26424199) | metadata signals extractable PGX data (CYP3A, PK/PD-context) |
 | `Yu_2018.pdf` | Yu J et al., Risk of Clinically Relevant Pharmacokin…, Drug metabolism and disposi… (2018) | pgx | 7 | [10.1124/dmd.117.078691](https://doi.org/10.1124/dmd.117.078691) | [29572333](https://www.ncbi.nlm.nih.gov/pubmed/29572333) | metadata signals extractable PGX data (CYP3A, PK/PD-context) |
 
-<sub>queue written 2026-10-04T16:54:03.847808+00:00</sub>
+<sub>queue written 2026-10-15T01:02:15.909694+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| PGx | Al-Huniti_2016 | not_relevant | 0 | 0 | The study analyzes demographic and clinical covariates (e.g., CYP3A4 inhibitors, race, gender) but does not report any pharmacogenomic effects based on specific gene variants or genotypes. |
-| popPK | Al-Huniti_2017 | irrelevant | 0 | 0 | The paper describes a population exposure-response (efficacy) model for dose selection, not a pharmacokinetic model, and does not report quantitative PK parameters like clearance or volume. |
-| PGx | Bui_2016 | not_relevant | 0 | 0 | The study investigates drug-drug interactions with CYP3A modulators, not the effect of a specific gene variant or genotype on pharmacokinetics. |
-| PGx | Coluzzi_2022 | not_relevant | 2 | 0 | The paper is a general review of P-glycoprotein and opioids; it mentions naloxegol as a P-gp substrate but does not report specific pharmacogenomic data or quantitative PK/PD effects of gene variants on naloxegol. |
-| PGx | Gudin_2020 | not_relevant | 0 | 0 | The paper discusses drug-drug and drug-food interactions affecting naloxegol PK, but does not report pharmacogenomic effects (gene variants) on PK or PD parameters. |
-| popPK | Hruska_2024 | relevant | 10 | 0 | The paper describes a population PK model for naloxegol, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence text. |
-| popPK | Lawson_2016 | irrelevant | 0 | 0 | The paper is a health utility analysis of naloxegol's efficacy on constipation and does not report any pharmacokinetic parameters. |
-| PGx | Leppert_2016 | not_relevant | 3 | 5 | The paper mentions a potential association between CYP3A5 polymorphism and race-based PK differences (AUC/Cmax), but it is a review article that cites other studies rather than reporting primary pharmacogenomic data or fitted effect sizes for specific gene variants. |
-| PGx | Yu_2016 | not_relevant | 0 | 0 | The paper is a review of drug-drug interactions (DDIs) and mentions naloxegol only as a CYP3A substrate, without reporting any pharmacogenomic effects on its PK or PD parameters. |
-| PGx | Yu_2018 | not_relevant | 0 | 0 | The paper discusses drug-drug interactions (DDIs) involving CYP3A and transporters, not pharmacogenomic effects of gene variants on naloxegol's PK/PD. |
-| PGx | Zhou_2016 | not_relevant | 0 | 0 | The paper focuses on drug-drug interactions (DDIs) mediated by CYP3A and P-gp modulators, not on pharmacogenomic effects of genetic variants on naloxegol PK/PD. |
+| PGx | Al-Huniti_2016 | not_relevant | 2 | 0 | The study evaluates the impact of demographic and clinical factors (specifically CYP3A4/P-gp inhibitors and inducers) on naloxegol PK, but it does not report pharmacogenomic effects (e.g., genetic variants of CYP3A4 or ABCB1) on PK parameters. |
+| popPK | Al-Huniti_2017 | irrelevant | 0 | 0 | The paper describes a population exposure-response (pharmacodynamic) model for efficacy and dropout, not a pharmacokinetic model with quantitative disposition parameters (CL, V, etc.). |
+| PGx | Bui_2016 | not_relevant | 0 | 0 | The study evaluates the effect of drug-drug interactions (CYP3A modulators) on pharmacokinetics, not pharmacogenomic variants. |
+| PGx | Coluzzi_2022 | not_relevant | 1 | 1 | The paper is a qualitative review mentioning that naloxegol is a P-gp substrate, but it does not report specific quantitative data on how ABCB1 genotypes alter naloxegol's PK or PD parameters. |
+| PGx | Gudin_2020 | not_relevant | 0 | 0 | The paper discusses drug-drug interactions and general pharmacokinetic principles of PAMORAs but does not report pharmacogenomic effects (gene variants) on naloxegol. |
+| popPK | Hruska_2024 | relevant | 9 | 1 | The paper describes a population PK model for naloxegol with specific findings (2-compartment, Weibull absorption), but the numeric parameter values are not present in the provided abstract text. |
+| popPK | Lawson_2016 | irrelevant | 0 | 0 | This is a pharmacoeconomic analysis of health state utility (EQ-5D scores) in a clinical trial, reporting no pharmacokinetic parameters (CL, V, t1/2) for naloxegol. |
+| PGx | Yu_2016 | not_relevant | 0 | 0 | The paper is a broad review of FDA approvals in 2014 and mentions naloxegol only as an example of a CYP3A-sensitive substrate in the context of drug-drug interactions, without reporting any specific pharmacogenomic effect. |
+| PGx | Yu_2018 | not_relevant | 0 | 0 | The paper analyzes drug-drug interactions and identifies naloxegol as a CYP3A substrate, but it does not report pharmacogenomic effects (gene variants) on pharmacokinetic or pharmacodynamic parameters. |
+| PGx | Zhou_2016 | not_relevant | 0 | 0 | The paper focuses on Drug-Drug Interactions (DDI) mediated by CYP3A modulators, not on Pharmacogenomic (gene variant) effects. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-04 16:54 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-15 01:02 UTC</sub>

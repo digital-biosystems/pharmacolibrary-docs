@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01C&quot;,&quot;href&quot;:&quot;atc/P01C.md&quot;},{&quot;label&quot;:&quot;miltefosine&quot;,&quot;href&quot;:&quot;drugs/drug_miltefosine/&quot;},{&quot;label&quot;:&quot;Verrest_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Miltefosine_Dorlo2017_reference&quot;,&quot;label&quot;:&quot;Dorlo_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_miltefosine/Miltefosine_Dorlo2017_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Miltefosine_Pali2020_reference&quot;,&quot;label&quot;:&quot;Pali\u0107_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_miltefosine/Miltefosine_Pali2020_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Miltefosine_Verrest2023_reference&quot;,&quot;label&quot;:&quot;Verrest_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_miltefosine/Miltefosine_Verrest2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Miltefosine_Dorlo2017_reference&quot;,&quot;label&quot;:&quot;Dorlo_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_miltefosine/Miltefosine_Dorlo2017_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Miltefosine_Pali2020_reference&quot;,&quot;label&quot;:&quot;Pali\u0107_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_miltefosine/Miltefosine_Pali2020_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Miltefosine_Dorlo2008_reference&quot;,&quot;label&quot;:&quot;Dorlo_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_miltefosine/Miltefosine_Dorlo2008_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Miltefosine_Verrest2023_reference&quot;,&quot;label&quot;:&quot;Verrest_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_miltefosine/Miltefosine_Verrest2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -19,15 +19,13 @@
 
 ### Reviewer guidance
 
-**The miltefosine model was held back because bioavailability (F) and lag time (Tlag) were left at library defaults instead of values estimated in Verrest_2023, and the weight covariate effect was never simulated.**
+**F use library defaults, not estimates from this paper; the covariate scenarios were not simulated (+1 more).**
 
-The record reports miltefosine parameters from the paper (CL 1.85 L/day, V1 9.17 L, Q 0.17 L/day, V2 6.55 L, kabs 0.037 day−1, Fab 1.17), but F and Tlag were substituted with defaults rather than estimates from this paper, so the simulated profile is not supported by the publication. In addition, the record defines a covariate effect (theta_q314_weight_power, −2.40) on weight, yet only the reference individual was simulated, so the covariate scenarios were not exercised. The verdict is needs_review pending explicit extraction or justification of F and Tlag. Extracted — miltefosine: CL 1.85 L/day, V1 9.17 L, Q 0.17 L/day, V2 6.55 L, kabs 0.037 day−1, Fab 1.17.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. The base model was simulated, not the covariate effects the record defines. Extracted — miltefosine: CL 1.85 L/day, V1 9.17 L, Q 0.17 L/day, V2 6.55 L, kabs 0.037 day−1, Fab 1.17.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has miltefosine and paromomycin, the second reading miltefosine; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by glm-5.3-flash</sub>
-
-> **Dose compound ≠ measured compound:** dosed `miltefosine and paromomycin`, measured `miltefosine`.
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Verrest L et al., Population pharmacokinetics of a combin…, The Journal of antimicrobia… (2023)
@@ -45,13 +43,13 @@ Verrest L et al., Population pharmacokinetics of a combin…, The Journal of ant
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL (L/day) | `Q22` · CL | 1.85 | L/day | 2.1412037037037037e-08 | [l] / [d] | not captured | exact (1.0) | dkad286-T4:row2:col1, dkad286-T4:row2:col2 | — | not captured |
-| V c (L) | `Q63` · V1 | 9.17 | L | 0.00917 | [l] | not captured | space_fold (0.95) | dkad286-T4:row3:col1, dkad286-T4:row3:col2, Verrest_2023_table_3:row2:col1, Verrest_2023_table_3:row2:col2 | — | not captured |
-| Q (L/day) | `Q30` · Q | 0.17 | L/day | 1.967592592592593e-09 | [l] / [d] | not captured | exact (1.0) | dkad286-T4:row4:col1, dkad286-T4:row4:col2 | — | not captured |
-| V p (L) | `Q64` · V2 | 6.55 | L | 0.00655 | [l] | not captured | space_fold (0.95) | dkad286-T4:row5:col1, dkad286-T4:row5:col2, Verrest_2023_table_3:row4:col1, Verrest_2023_table_3:row4:col2 | — | not captured |
-| ka (day−1) | `Q49` · kabs | 0.037 | day−1 | 4.282407407407407e-07 | [1] / [d] | not captured | exact (1.0) | dkad286-T4:row6:col1, dkad286-T4:row6:col2 | — | not captured |
+| CL (L/day) | `Q22` · CL | 1.85 | L/day | 2.1412037037037037e-08 | [l] / [d] | not captured | exact (1.0) | dkad286-T4:row2:col1 | — | not captured |
+| V c (L) | `Q63` · V1 | 9.17 | L | 0.00917 | [l] | not captured | space_fold (0.95) | dkad286-T4:row3:col1, Verrest_2023_table_3:row2:col1 | — | not captured |
+| Q (L/day) | `Q30` · Q | 0.17 | L/day | 1.967592592592593e-09 | [l] / [d] | not captured | exact (1.0) | dkad286-T4:row4:col1 | — | not captured |
+| V p (L) | `Q64` · V2 | 6.55 | L | 0.00655 | [l] | not captured | space_fold (0.95) | dkad286-T4:row5:col1, Verrest_2023_table_3:row4:col1 | — | not captured |
+| ka (day−1) | `Q49` · kabs | 0.037 | day−1 | 4.282407407407407e-07 | [1] / [d] | not captured | exact (1.0) | dkad286-T4:row6:col1 | — | not captured |
 | F1 | `Q40` · Fab | 1.17 | not captured | not captured | not captured | not captured | exact (1.0) | dkad286-T4:row7:col1, Verrest_2023_table_3:row6:col1 | — | not captured |
-| theta_q314_weight_power | `Q900` · theta_q314_weight_power | -2.40 | not captured | not captured | not captured | not captured | not captured (not captured) | dkad286-T4:row9:col1 | — | not captured |
+| theta_q319_weight_power | `Q900` · theta_q319_weight_power | -2.40 | not captured | not captured | not captured | not captured | not captured (not captured) | dkad286-T4:row9:col1 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -67,22 +65,20 @@ Verrest L et al., Population pharmacokinetics of a combin…, The Journal of ant
 - table section iiv: 'CL (CV%)' routed out of structural estimates ('Between-subject variability')
 - table section iiv: 'COVF,W1 (CV%)' routed out of structural estimates ('Between-subject variability')
 - table section residual_error: 'Proportional error (CV%)' routed out of structural estimates ('Residual variability')
-- routed 'COVF,W1b (fractional change)' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
+- dropped unlinked row (NIL): 'COVF,W1b (fractional change)' — extend the ontology if this is a real PK parameter (source ['dkad286-T4:row8:col1'])
 - dropped duplicate Q22 ('CL (L/h)', value '2.62') — already have one for this compound
 - dropped duplicate Q30 ('Q', value '0.26') — already have one for this compound
 - dropped duplicate Q49 ('ka (h−1)', value '2.05') — already have one for this compound
-- routed 'COVCL,neutrc (fractional change/103 cells/µL)' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
-- NIL: refused to back-fill base 'CL' from footnote/prose loose number None (source ['dkad286-T4:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'V' from footnote/prose loose number None (source ['dkad286-T4:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'equation variable' from footnote/prose loose number None (source ['dkad286-T4:footnote']); the table cell was unparseable — needs review
-- covariate effect for Q314 has no base parameter row (kept as unattached equation-variable)
+- dropped unlinked row (NIL): 'COVCL,neutrc (fractional change/103 cells/µL)' — extend the ontology if this is a real PK parameter (source ['Verrest_2023_table_3:row7:col1'])
+- covariate effect for Q319 has no base parameter row (kept as unattached equation-variable)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=miltefosine
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- unparsed cell dkad286-T4:row8:col2 = '−0.57 to −0.73'
-- unparsed cell dkad286-T4:row9:col2 = '−3.79 to −1.21'
-- unparsed cell Verrest_2023_table_3:row7:col2 = '−0.16 to −0.10'
+- table dkad286-T4: unbound_uncertainty
+- table dkad286-T4: unparsed_numeric_cell
+- table Verrest_2023_table_3: unbound_uncertainty
+- table Verrest_2023_table_3: unparsed_numeric_cell
 - companion parameter table 3 transcribed (18 record(s), model stage 'final')
 - LLM selected parameter table(s) 3, 4
 
@@ -121,16 +117,16 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['dkad286-T4:row2:col1', 'dkad286-T4:row2:col2'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['dkad286-T4:row4:col1', 'dkad286-T4:row4:col2'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['dkad286-T4:row6:col1', 'dkad286-T4:row6:col2'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['dkad286-T4:row3:col1', 'dkad286-T4:row3:col2', 'Verrest_2023_table_3:row2:col1', 'Verrest_2023_table_3:row2:col2'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['dkad286-T4:row5:col1', 'dkad286-T4:row5:col2', 'Verrest_2023_table_3:row4:col1', 'Verrest_2023_table_3:row4:col2'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 1.85 | not captured | not captured | ['dkad286-T4:row2:col1', 'dkad286-T4:row2:col2'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['dkad286-T4:row2:col1'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['dkad286-T4:row4:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['dkad286-T4:row6:col1'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['dkad286-T4:row3:col1', 'Verrest_2023_table_3:row2:col1'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['dkad286-T4:row5:col1', 'Verrest_2023_table_3:row4:col1'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 1.85 | not captured | not captured | ['dkad286-T4:row2:col1'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.0771 L/h | not captured | not captured | ['dkad286-T4:row2:col1', 'dkad286-T4:row2:col2'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 9.17 L | not captured | not captured | ['dkad286-T4:row3:col1', 'dkad286-T4:row3:col2', 'Verrest_2023_table_3:row2:col1', 'Verrest_2023_table_3:row2:col2'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 6.55 L | not captured | not captured | ['dkad286-T4:row5:col1', 'dkad286-T4:row5:col2', 'Verrest_2023_table_3:row4:col1', 'Verrest_2023_table_3:row4:col2'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.0771 L/h | not captured | not captured | ['dkad286-T4:row2:col1'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 9.17 L | not captured | not captured | ['dkad286-T4:row3:col1', 'Verrest_2023_table_3:row2:col1'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 6.55 L | not captured | not captured | ['dkad286-T4:row5:col1', 'Verrest_2023_table_3:row4:col1'] |
 
 **Reviewer per-scenario checks:**
 
@@ -150,10 +146,10 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_miltefosine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Verrest_2023` / `Verrest_2023::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_miltefosine/models/modelica/Miltefosine_Verrest2023_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_miltefosine/models/modelica/Miltefosine_Verrest2023_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_miltefosine/models/modelica/Miltefosine_Verrest2023_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_miltefosine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Verrest_2023` / `Verrest_2023::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_miltefosine/models/modelica/Miltefosine_Verrest2023_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_miltefosine/models/modelica/Miltefosine_Verrest2023_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_miltefosine/models/modelica/Miltefosine_Verrest2023_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -162,7 +158,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_miltefosine/Miltefosine_Verrest2023_reference/Miltefosine_Verrest2023_reference_modelica.zip" download>Miltefosine_Verrest2023_reference_modelica.zip</a> <span class="pk-size">(4.6 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_miltefosine/Miltefosine_Verrest2023_reference/Miltefosine_Verrest2023_reference_modelica.zip" download>Miltefosine_Verrest2023_reference_modelica.zip</a> <span class="pk-size">(4.8 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_miltefosine/Miltefosine_Verrest2023_reference/Miltefosine_Verrest2023_reference_fmi.zip" download>Miltefosine_Verrest2023_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_miltefosine/Miltefosine_Verrest2023_reference/Miltefosine_Verrest2023_reference_matlab.zip" download>Miltefosine_Verrest2023_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_miltefosine/Miltefosine_Verrest2023_reference/Miltefosine_Verrest2023_reference_matlab_simbio.zip" download>Miltefosine_Verrest2023_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
@@ -171,11 +167,11 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_miltefosine/Miltefosine_Verrest2023_reference/Miltefosine_Verrest2023_reference.svg" alt="Miltefosine_Verrest2023_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_miltefosine/Miltefosine_Verrest2023_reference/Miltefosine_Verrest2023_reference.svg" alt="Miltefosine_Verrest2023_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 150 mg, single dose, first-order absorption (ka 0.00154 /h, F 0.9). _The paper's dose was not captured; the default is the WHO ATC DDD 150 mg oral (P01CX04) (defined daily dose)._
+**Administration: oral** — 1400 mg, single dose, first-order absorption (ka 0.00154 /h, F 0.9). Dose in the paper: 1400 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_miltefosine/Miltefosine_Verrest2023_reference/Miltefosine_Verrest2023_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_miltefosine/Miltefosine_Verrest2023_reference/Miltefosine_Verrest2023_reference_sim_controls.json"></dbs-fmusim>
 
@@ -184,4 +180,4 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 07:52 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 19:25 UTC</sub>

@@ -10,28 +10,26 @@
  ],
  "paper_doses_kind": "discrete",
  "paper_doses_mg": [
-  0.5,
   5.0,
-  10.0,
-  15.0
+  10.0
  ],
  "parameters": {
-  "Cl": 7.305555555555556e-06,
+  "Cl": 6.944444444444445e-06,
   "F": 1.0,
   "MM": 0.31236959999999997,
   "Tlag": 849.5999999999999,
-  "VdPerKg": 0.0016542857142857143,
+  "VdPerKg": 0.0015857142857142858,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 5e-07,
-  "ka": 0.05327777777777778,
+  "adminMass": 5e-06,
+  "ka": 0.002736111111111111,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 1553.0445781251537
+  "central.C": 2678.1296999287606
  },
  "reference_peaks": {
-  "central.C": 4.227427995195738e-06
+  "central.C": 4.1129914926410985e-05
  },
  "stop_time": 86400.0,
  "template": "PK_1C_enteral",

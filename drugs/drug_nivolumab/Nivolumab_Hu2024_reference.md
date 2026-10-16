@@ -17,22 +17,22 @@
 
 ### Reviewer guidance
 
-**The record was rejected because the peritoneal dialysis clearance parameter for nivolumab has an implausible negative value of -0.580.**
+**C5 dimension mismatch on a structural parameter; c2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).**
 
-The parameter labeled 'CL PEDST' is defined as drug clearance by peritoneal dialysis, yet its value is -0.580. Clearance parameters must be non-negative, making this value physiologically impossible. A second reader disagreed on the assignment of several covariate effects, noting that the value 0.0982 was recorded as a generic covariate effect rather than a specific power term, and that a different negative value of -0.382 was expected for a different clearance parameter. Extracted — nivolumab: CL 9.66 mL/h, V 3.9 L, Q 35.8 mL/h, CL_PD -0.58.
+A reported unit could not be converted (Vnorm), so that value has no SI equivalent. Extracted — nivolumab: CL 9.66 mL/h, V1 4.01 L, Q 35.9 mL/h, V 2.77 L, Vss 0.932 L, CLH -0.382 L/h, CL_PD -0.58 L/h, Vnorm 0.789 %, … (+1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl pedst: this record has -0.580, the second reading none; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Hu Z et al., Nivolumab and ipilimumab population pha…, CPT: pharmacometrics & syst… (2024)
   ·  DOI: [10.1002/psp4.13098](https://doi.org/10.1002/psp4.13098)
 
-<div class="pk-model-meta" hidden drug="nivolumab" model-id="Nivolumab_Hu2024_reference" status="rejected" stale="false" population="pediatric oncology patients" measured-compound="nivolumab" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="nivolumab" model-id="Nivolumab_Hu2024_reference" status="rejected" stale="false" population="pediatric and adult oncology patients" measured-compound="nivolumab" parameterization="mechanistic" topology="2C"></div>
 
-**Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 4 extracted, plus 3 covariate effects.
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 9 extracted, plus 3 covariate effects.
 
 **Parameterization:** mechanistic.
 
@@ -41,13 +41,18 @@ Hu Z et al., Nivolumab and ipilimumab population pha…, CPT: pharmacometrics & 
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL0 REF (mL/h) | `Q22` · CL | 9.66 | mL/h | 2.683333333333333e-09 | [ml] / [h] | 0.279 | llm (0.6) | psp413098-tbl-0004:row2:col2, psp413098-tbl-0004:row2:col3 | — | 0.147 (0.00853% RSE) |
-| VC REF (L) | `Q61` · V | 3.90 | L | 0.0039 | [l] | 0.0307 | llm_corrected (0.6) | psp413098-tbl-0004:row3:col2, psp413098-tbl-0004:row3:col3, Hu_2024_table_5:row2:col2, Hu_2024_table_5:row2:col3 | — | not captured |
-| Q REF (mL/h) | `Q30` · Q | 35.8 | mL/h | 9.944444444444443e-09 | [ml] / [h] | 2.33 | llm (0.6) | psp413098-tbl-0004:row4:col2, psp413098-tbl-0004:row4:col3, Hu_2024_table_5:row3:col2, Hu_2024_table_5:row3:col3 | — | not captured |
-| cl_egfr | `Q900` · cl_egfr | 0.0982 | not captured | not captured | not captured | 0.0357 | not captured (not captured) | psp413098-tbl-0004:row7:col2, psp413098-tbl-0004:row7:col3 | — | not captured |
-| vc_sex | `Q900` · vc_sex | 0.0195 | not captured | not captured | not captured | 0.0186 | not captured (not captured) | psp413098-tbl-0004:row13:col2, psp413098-tbl-0004:row13:col3 | — | not captured |
-| CL PEDST | `Q358` · CL_PD | -0.580 | not captured | not captured | not captured | 0.0893 | llm_corrected (0.6) | psp413098-tbl-0004:row20:col2, psp413098-tbl-0004:row20:col3 | — | not captured |
-| theta_cl_sex_cl | `Q900` · theta_cl_sex_cl | -0.0998 | not captured | not captured | not captured | 0.0184 | not captured (not captured) | psp413098-tbl-0004:row8:col2, psp413098-tbl-0004:row8:col3 | — | not captured |
+| CL0 REF (mL/h) | `Q22` · CL | 9.66 | mL/h | 2.683333333333333e-09 | [ml] / [h] | 0.279 | llm (0.6) | psp413098-tbl-0004:row2:col2 | — | 0.108 (0.329% RSE) |
+| VC REF (L) | `Q63` · V1 | 4.01 | L | 0.00401 | [l] | 0.0434 | llm_confirmed (0.6) | psp413098-tbl-0004:row3:col2, Hu_2024_table_5:row2:col2 | — | 0.0751 (0.274% RSE) |
+| Q REF (mL/h) | `Q30` · Q | 35.9 | mL/h | 9.972222222222222e-09 | [ml] / [h] | 1.61 | llm (0.6) | psp413098-tbl-0004:row4:col2, Hu_2024_table_5:row3:col2 | — | not captured |
+| VP REF (L) | `Q61` · V | 2.77 | L | 0.00277 | [l] | 0.0701 | llm_corrected (0.6) | psp413098-tbl-0004:row5:col2, Hu_2024_table_5:row4:col2 | — | not captured |
+| cl_egfr | `Q900` · cl_egfr | 0.0982 | not captured | not captured | not captured | 0.0357 | not captured (not captured) | psp413098-tbl-0004:row7:col2 | — | not captured |
+| VC LBM | `Q65` · Vss | 0.932 | L | 0.0009320000000000001 | L | 0.0325 | llm_corrected (0.6) | psp413098-tbl-0004:row12:col2, Hu_2024_table_5:row6:col2 | — | not captured |
+| vc_sex | `Q900` · vc_sex | 0.0195 | not captured | not captured | not captured | 0.0186 | not captured (not captured) | psp413098-tbl-0004:row13:col2 | — | not captured |
+| CL HL | `Q25` · CLH | -0.382 | L/h | -1.0611111111111112e-07 | L/h | 0.0331 | llm_corrected (0.6) | psp413098-tbl-0004:row17:col2 | — | not captured |
+| CL PEDST | `Q358` · CL_PD | -0.580 | L/h | -1.611111111111111e-07 | L/h | 0.0893 | llm_corrected (0.6) | psp413098-tbl-0004:row20:col2 | — | not captured |
+| CL LBM | `Q352` · Vnorm | 0.789 | % | not captured | [%] | not captured | llm_corrected (0.6) | Hu_2024_table_5:row5:col2 | — | not captured |
+| theta_cl_sex_cl | `Q900` · theta_cl_sex_cl | -0.0998 | not captured | not captured | not captured | 0.0184 | not captured (not captured) | psp413098-tbl-0004:row8:col2 | — | not captured |
+| Peripheral (Vp) | `Q64` · V2 | 4.15 | L | 0.00415 | L | not captured | review_gapfill (0.7) | Leven_2019:review | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -59,117 +64,70 @@ Hu Z et al., Nivolumab and ipilimumab population pha…, CPT: pharmacometrics & 
 **Interpretation flags:**
 - table section residual_error: 'Proportional' routed out of structural estimates ('Residual error')
 - table section residual_error: 'Additive (μg/mL)' routed out of structural estimates ('Residual error')
-- column 'parameter note' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- dropped duplicate Q61 ('VP REF (L)', value '3.47') — already have one for this compound
+- conflicting source units for 'CL WTB': [{'unit': '0', 'source': 'psp413098-tbl-0004:note', 'scope': 'note'}, {'unit': '%', 'source': 'psp413098-tbl-0004:note', 'scope': 'note'}]
+- conflicting source units for 'CL eGFR': [{'unit': '0', 'source': 'psp413098-tbl-0004:note', 'scope': 'note'}, {'unit': '%', 'source': 'psp413098-tbl-0004:note', 'scope': 'note'}]
+- conflicting source units for 'CL SEX': [{'unit': '0', 'source': 'psp413098-tbl-0004:note', 'scope': 'note'}, {'unit': '%', 'source': 'psp413098-tbl-0004:note', 'scope': 'note'}]
+- conflicting source units for 'CL PS': [{'unit': '0', 'source': 'psp413098-tbl-0004:note', 'scope': 'note'}, {'unit': '%', 'source': 'psp413098-tbl-0004:note', 'scope': 'note'}]
+- conflicting source units for 'CL RAAA': [{'unit': '0', 'source': 'psp413098-tbl-0004:note', 'scope': 'note'}, {'unit': '%', 'source': 'psp413098-tbl-0004:note', 'scope': 'note'}]
+- conflicting source units for 'CL RAAS': [{'unit': '0', 'source': 'psp413098-tbl-0004:note', 'scope': 'note'}, {'unit': '%', 'source': 'psp413098-tbl-0004:note', 'scope': 'note'}]
+- conflicting source units for 'CL HL': [{'unit': '0', 'source': 'psp413098-tbl-0004:note', 'scope': 'note'}, {'unit': '%', 'source': 'psp413098-tbl-0004:note', 'scope': 'note'}]
+- conflicting source units for 'CL GBM': [{'unit': '0', 'source': 'psp413098-tbl-0004:note', 'scope': 'note'}, {'unit': '%', 'source': 'psp413098-tbl-0004:note', 'scope': 'note'}]
+- conflicting source units for 'CL OTH': [{'unit': '0', 'source': 'psp413098-tbl-0004:note', 'scope': 'note'}, {'unit': '%', 'source': 'psp413098-tbl-0004:note', 'scope': 'note'}]
+- conflicting source units for 'CL PEDST': [{'unit': '0', 'source': 'psp413098-tbl-0004:note', 'scope': 'note'}, {'unit': '%', 'source': 'psp413098-tbl-0004:note', 'scope': 'note'}]
+- conflicting source units for 'CL PEDHL': [{'unit': '0', 'source': 'psp413098-tbl-0004:note', 'scope': 'note'}, {'unit': '%', 'source': 'psp413098-tbl-0004:note', 'scope': 'note'}]
+- conflicting source units for 'CL PEDCNST': [{'unit': '0', 'source': 'psp413098-tbl-0004:note', 'scope': 'note'}, {'unit': '%', 'source': 'psp413098-tbl-0004:note', 'scope': 'note'}]
+- conflicting source units for 'CL I1Q3': [{'unit': '0', 'source': 'psp413098-tbl-0004:note', 'scope': 'note'}, {'unit': '%', 'source': 'psp413098-tbl-0004:note', 'scope': 'note'}]
+- conflicting source units for 'CL I3Q3': [{'unit': '0', 'source': 'psp413098-tbl-0004:note', 'scope': 'note'}, {'unit': '%', 'source': 'psp413098-tbl-0004:note', 'scope': 'note'}]
+- conflicting source units for 'CL BVCO': [{'unit': '0', 'source': 'psp413098-tbl-0004:note', 'scope': 'note'}, {'unit': '%', 'source': 'psp413098-tbl-0004:note', 'scope': 'note'}]
+- conflicting source units for 'CL ADOST': [{'unit': '0', 'source': 'psp413098-tbl-0004:note', 'scope': 'note'}, {'unit': '%', 'source': 'psp413098-tbl-0004:note', 'scope': 'note'}]
 - dropped duplicate Q22 ('CL WTB', value '0.630') — already have one for this compound
 - covariate level 'CL eGFR' → Q900:cl_egfr = 0.0982 (power on Q22)
 - dropped duplicate Q22 ('CL PS', value '0.166') — already have one for this compound
-- dropped duplicate Q22 ('CL RAAA', value '0.0693') — already have one for this compound
-- dropped duplicate Q22 ('CL RAAS', value '0.00333') — already have one for this compound
-- dropped unlinked row (NIL): 'VC LBM' — extend the ontology if this is a real PK parameter (source ['psp413098-tbl-0004:row12:col2', 'psp413098-tbl-0004:row12:col3', 'Hu_2024_table_5:row6:col2', 'Hu_2024_table_5:row6:col3'])
+- dropped unlinked row (NIL): 'CL RAAA' — extend the ontology if this is a real PK parameter (source ['psp413098-tbl-0004:row10:col2'])
+- dropped unlinked row (NIL): 'CL RAAS' — extend the ontology if this is a real PK parameter (source ['psp413098-tbl-0004:row11:col2'])
 - covariate level 'VC SEX' → Q900:vc_sex = 0.0195 (linear_fractional on Q22)
-- dropped PD-category row 'EMAX REF' → Q320 (Emax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['psp413098-tbl-0004:row14:col2', 'psp413098-tbl-0004:row14:col3'])
-- dropped unlinked row (NIL): 'T50 (h)' — extend the ontology if this is a real PK parameter (source ['psp413098-tbl-0004:row15:col2', 'psp413098-tbl-0004:row15:col3'])
-- dropped PD-category row 'HILL' → Q325 (Hill, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['psp413098-tbl-0004:row16:col2', 'psp413098-tbl-0004:row16:col3'])
-- dropped duplicate Q22 ('CL HL', value '-0.382') — already have one for this compound
-- dropped duplicate Q22 ('CL GBM', value '-0.578') — already have one for this compound
-- dropped duplicate Q22 ('CL OTH', value '-0.698') — already have one for this compound
+- dropped PD-category row 'EMAX REF' → Q320 (Emax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['psp413098-tbl-0004:row14:col2'])
+- dropped unlinked row (NIL): 'T50 (h)' — extend the ontology if this is a real PK parameter (source ['psp413098-tbl-0004:row15:col2'])
+- dropped PD-category row 'HILL' → Q325 (Hill, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['psp413098-tbl-0004:row16:col2'])
+- dropped unlinked row (NIL): 'CL GBM' — extend the ontology if this is a real PK parameter (source ['psp413098-tbl-0004:row18:col2'])
+- dropped duplicate Q22 ('CL OTH', value '0.00699') — already have one for this compound
 - dropped duplicate Q358 ('CL PEDHL', value '-0.411') — already have one for this compound
-- dropped duplicate Q22 ('CL PEDCNST', value '-0.668') — already have one for this compound
+- dropped unlinked row (NIL): 'CL PEDCNST' — extend the ontology if this is a real PK parameter (source ['psp413098-tbl-0004:row22:col2', 'Hu_2024_table_5:row10:col2'])
 - dropped duplicate Q22 ('CL I1Q3', value '0.0973') — already have one for this compound
 - dropped duplicate Q22 ('CL I3Q3', value '0.349') — already have one for this compound
 - dropped duplicate Q22 ('CL BVCO', value '0.132') — already have one for this compound
-- dropped PD-category row 'EMAX PS' → Q320 (Emax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['psp413098-tbl-0004:row26:col2', 'psp413098-tbl-0004:row26:col3'])
-- dropped PD-category row 'EMAX IPICO' → Q320 (Emax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['psp413098-tbl-0004:row27:col2', 'psp413098-tbl-0004:row27:col3'])
-- dropped PD-category row 'EMAX HL' → Q320 (Emax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['psp413098-tbl-0004:row28:col2', 'psp413098-tbl-0004:row28:col3'])
-- dropped PD-category row 'EMAX OTH' → Q320 (Emax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['psp413098-tbl-0004:row29:col2', 'psp413098-tbl-0004:row29:col3'])
-- dropped PD-category row 'EMAX PEDCNST' → Q320 (Emax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['psp413098-tbl-0004:row30:col2', 'psp413098-tbl-0004:row30:col3'])
+- dropped PD-category row 'EMAX PS' → Q320 (Emax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['psp413098-tbl-0004:row26:col2'])
+- dropped PD-category row 'EMAX IPICO' → Q320 (Emax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['psp413098-tbl-0004:row27:col2'])
+- dropped PD-category row 'EMAX HL' → Q320 (Emax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['psp413098-tbl-0004:row28:col2'])
+- dropped PD-category row 'EMAX OTH' → Q320 (Emax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['psp413098-tbl-0004:row29:col2'])
+- dropped PD-category row 'EMAX PEDCNST' → Q320 (Emax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['psp413098-tbl-0004:row30:col2'])
 - dropped duplicate Q22 ('CL ADOST', value '-0.223') — already have one for this compound
-- dropped unlinked row (NIL): 'VC PED' — extend the ontology if this is a real PK parameter (source ['psp413098-tbl-0004:row32:col2', 'psp413098-tbl-0004:row32:col3', 'Hu_2024_table_5:row14:col2', 'Hu_2024_table_5:row14:col3'])
-- dropped unlinked row (NIL): 'VC ADO' — extend the ontology if this is a real PK parameter (source ['psp413098-tbl-0004:row33:col2', 'psp413098-tbl-0004:row33:col3', 'Hu_2024_table_5:row15:col2', 'Hu_2024_table_5:row15:col3'])
+- dropped duplicate Q358 ('VC PED', value '-0.277') — already have one for this compound
+- dropped duplicate Q63 ('VC ADO', value '-0.273') — already have one for this compound
 - dropped duplicate Q22 ('CL REF (mL/h)', value '13.5') — already have one for this compound
-- dropped duplicate Q22 ('CL LBM', value '0.789') — already have one for this compound
+- unit_dimension_mismatch: 'CL LBM' → Q352 (unit 'dimensionless' vs ontology '[length] ** 3') — route to review
+- unit_dimension_mismatch: 'CL CNST' → Q22 (unit 'dimensionless' vs ontology '[length] ** 3 / [time]') — route to review
 - dropped duplicate Q22 ('CL CNST', value '-0.661') — already have one for this compound
+- unit_dimension_mismatch: 'CL PEDOTH' → Q358 (unit 'dimensionless' vs ontology '[length] ** 3 / [time]') — route to review
 - dropped duplicate Q358 ('CL PEDOTH', value '-0.462') — already have one for this compound
-- dropped unlinked row (NIL): 'CL PEDMEL' — extend the ontology if this is a real PK parameter (source ['Hu_2024_table_5:row11:col2', 'Hu_2024_table_5:row11:col3'])
-- dropped duplicate Q22 ('CL N1Q3', value '0.0417') — already have one for this compound
-- dropped duplicate Q22 ('CL N3Q3', value '0.316') — already have one for this compound
+- dropped unlinked row (NIL): 'CL PEDMEL' — extend the ontology if this is a real PK parameter (source ['Hu_2024_table_5:row11:col2'])
+- dropped unlinked row (NIL): 'CL N1Q3' — extend the ontology if this is a real PK parameter (source ['Hu_2024_table_5:row12:col1', 'Hu_2024_table_5:row12:col2'])
+- dropped unlinked row (NIL): 'CL N3Q3' — extend the ontology if this is a real PK parameter (source ['Hu_2024_table_5:row13:col1', 'Hu_2024_table_5:row13:col2'])
+- implicit units: 'VC LBM' → L (from the popPK convention: 'VC denotes volume of distribution. In population pharmacokinetic modeling, volumes are standardly reported in liters (L)')
+- implicit units: 'CL HL' → L/h (from the popPK convention: 'CL denotes clearance. In population pharmacokinetic modeling, clearance parameters are standardly reported in liters per')
+- implicit units: 'CL PEDST' → L/h (from the popPK convention: 'CL denotes clearance. In population pharmacokinetic modeling, clearance parameters are standardly reported in liters per')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=nivolumab
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at route_to_review — not promoted
 - molar mass: none found for 'nivolumab' — its concentrations stay mass-only
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- gap-filled Q64 (V2) from Leven_2019's review values (primary lacked it)
 
 **Extraction notes:**
-- unparsed cell psp413098-tbl-0004:row2:col4 = '8.98 to 10.3'
-- unparsed cell psp413098-tbl-0004:row3:col4 = '3.93 to 4.10'
-- unparsed cell psp413098-tbl-0004:row4:col4 = '32.8 to 39.2'
-- unparsed cell psp413098-tbl-0004:row5:col4 = '2.62 to 2.93'
-- unparsed cell psp413098-tbl-0004:row6:col4 = '0.566 to 0.693'
-- unparsed cell psp413098-tbl-0004:row7:col4 = '0.0206 to 0.174'
-- unparsed cell psp413098-tbl-0004:row8:col4 = '−0.135 to −0.0630'
-- unparsed cell psp413098-tbl-0004:row9:col4 = '0.128 to 0.207'
-- unparsed cell psp413098-tbl-0004:row10:col4 = '−0.0237 to 0.159'
-- unparsed cell psp413098-tbl-0004:row11:col4 = '−0.0693 to 0.0786'
-- unparsed cell psp413098-tbl-0004:row12:col4 = '0.872 to 1.00'
-- unparsed cell psp413098-tbl-0004:row13:col4 = '−0.0168 to 0.0578'
-- unparsed cell psp413098-tbl-0004:row14:col4 = '−0.385 to −0.184'
-- unparsed cell psp413098-tbl-0004:row15:col4 = '1890 to 3750'
-- unparsed cell psp413098-tbl-0004:row16:col4 = '1.69 to 3.71'
-- unparsed cell psp413098-tbl-0004:row17:col4 = '−0.447 to −0.321'
-- unparsed cell psp413098-tbl-0004:row18:col4 = '−0.643 to −0.493'
-- unparsed cell psp413098-tbl-0004:row19:col4 = '−0.0679 to 0.0789'
-- unparsed cell psp413098-tbl-0004:row20:col1 = 'Pediatric (&lt;12 years) solid tumors on CL'
-- unparsed cell psp413098-tbl-0004:row20:col4 = '−0.761 to −0.406'
-- unparsed cell psp413098-tbl-0004:row21:col1 = 'Pediatric (&lt;18 years) lymphoma on CL'
-- unparsed cell psp413098-tbl-0004:row21:col4 = '−0.554 to −0.227'
-- unparsed cell psp413098-tbl-0004:row22:col1 = 'Pediatric (&lt;18 years) CNS tumors on CL'
-- unparsed cell psp413098-tbl-0004:row22:col4 = '−0.930 to −0.654'
-- unparsed cell psp413098-tbl-0004:row23:col4 = '−0.00235 to 0.208'
-- unparsed cell psp413098-tbl-0004:row24:col4 = '0.278 to 0.416'
-- unparsed cell psp413098-tbl-0004:row25:col4 = '−0.0572 to 0.282'
-- unparsed cell psp413098-tbl-0004:row26:col4 = '−0.263 to −0.0708'
-- unparsed cell psp413098-tbl-0004:row27:col4 = '−0.361 to 0.0274'
-- unparsed cell psp413098-tbl-0004:row28:col4 = '0.0391 to 0.233'
-- unparsed cell psp413098-tbl-0004:row29:col4 = '−0.0210 to 0.263'
-- unparsed cell psp413098-tbl-0004:row30:col1 = 'Pediatric (&lt;18 years) CNS tumors on E max'
-- unparsed cell psp413098-tbl-0004:row30:col4 = '0.439 to 1.03'
-- unparsed cell psp413098-tbl-0004:row31:col1 = 'Adolescent (12–17 years) solid tumors on CL'
-- unparsed cell psp413098-tbl-0004:row31:col4 = '−0.393 to −0.0655'
-- unparsed cell psp413098-tbl-0004:row32:col1 = 'Pediatric (&lt;12 years) on VC'
-- unparsed cell psp413098-tbl-0004:row32:col4 = '−0.364 to −0.181'
-- unparsed cell psp413098-tbl-0004:row33:col1 = 'Adolescents (12–17 years) on VC'
-- unparsed cell psp413098-tbl-0004:row33:col4 = '−0.322 to −0.222'
-- unparsed cell psp413098-tbl-0004:row35:col4 = '0.0957 to 0.120'
-- unparsed cell psp413098-tbl-0004:row36:col4 = '0.0607 to 0.0904'
-- unparsed cell psp413098-tbl-0004:row37:col4 = '0.0816 to 0.262'
-- unparsed cell psp413098-tbl-0004:row38:col4 = '0.0163 to 0.0281'
-- unparsed cell psp413098-tbl-0004:row40:col4 = '0.191 to 0.206'
-- unparsed cell Hu_2024_table_5:row1:col4 = '13.1 to 13.9'
-- unparsed cell Hu_2024_table_5:row2:col4 = '3.84 to 3.96'
-- unparsed cell Hu_2024_table_5:row3:col4 = '31.2 to 40.4'
-- unparsed cell Hu_2024_table_5:row4:col4 = '3.31 to 3.63'
-- unparsed cell Hu_2024_table_5:row5:col4 = '0.684 to 0.894'
-- unparsed cell Hu_2024_table_5:row6:col4 = '0.805 to 0.943'
-- unparsed cell Hu_2024_table_5:row7:col4 = '−1.12 to −0.199'
-- unparsed cell Hu_2024_table_5:row8:col4 = '−1.24 to −0.154'
-- unparsed cell Hu_2024_table_5:row9:col1 = 'Pediatric (&lt;18 years) other solid tumors on CL'
-- unparsed cell Hu_2024_table_5:row9:col4 = '−0.677 to −0.248'
-- unparsed cell Hu_2024_table_5:row10:col1 = 'Pediatric (&lt;18 years) CNS tumors on CL'
-- unparsed cell Hu_2024_table_5:row10:col4 = '−1.04 to −0.294'
-- unparsed cell Hu_2024_table_5:row11:col1 = 'Pediatric (&lt;18 years) melanoma on CL'
-- unparsed cell Hu_2024_table_5:row11:col4 = '−0.557 to −0.138'
-- unparsed cell Hu_2024_table_5:row12:col4 = '−0.00318 to 0.0866'
-- unparsed cell Hu_2024_table_5:row13:col4 = '−0.0390 to 0.670'
-- unparsed cell Hu_2024_table_5:row14:col1 = 'Pediatric (&lt;12 years) on VC'
-- unparsed cell Hu_2024_table_5:row14:col4 = '−0.404 to −0.188'
-- unparsed cell Hu_2024_table_5:row15:col1 = 'Adolescents (12–17) years on VC'
-- unparsed cell Hu_2024_table_5:row15:col4 = '−0.283 to −0.150'
-- unparsed cell Hu_2024_table_5:row17:col4 = '0.130 to 0.163'
-- unparsed cell Hu_2024_table_5:row18:col4 = '0.0390 to 0.0672'
-- unparsed cell Hu_2024_table_5:row19:col4 = '0.0178 to 0.0339'
-- unparsed cell Hu_2024_table_5:row21:col4 = '0.171 to 0.199'
-- unparsed cell Hu_2024_table_5:row22:col4 = '0.805 to 1.48'
-- companion parameter table 5 transcribed (42 record(s), model stage 'full')
+- table psp413098-tbl-0004: conflicting_units
+- table psp413098-tbl-0004: unparsed_numeric_cell
+- table Hu_2024_table_5: unbound_uncertainty
+- table Hu_2024_table_5: unparsed_numeric_cell
+- companion parameter table 5 transcribed (41 record(s), model stage 'full')
 - LLM selected parameter table(s) 4, 5
 
 ## Validation
@@ -215,18 +173,27 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 8 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C2_base_sign_Q25 | fail | not captured | -0.382 | not captured | not captured | not captured |
 | C2_base_sign_Q358 | fail | not captured | -0.58 | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp413098-tbl-0004:row2:col2', 'psp413098-tbl-0004:row2:col3'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp413098-tbl-0004:row4:col2', 'psp413098-tbl-0004:row4:col3', 'Hu_2024_table_5:row3:col2', 'Hu_2024_table_5:row3:col3'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp413098-tbl-0004:row3:col2', 'psp413098-tbl-0004:row3:col3', 'Hu_2024_table_5:row2:col2', 'Hu_2024_table_5:row2:col3'] |
-| C5_unit_missing_Q358 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp413098-tbl-0004:row20:col2', 'psp413098-tbl-0004:row20:col3'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 9.66 | not captured | not captured | ['psp413098-tbl-0004:row2:col2', 'psp413098-tbl-0004:row2:col3'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp413098-tbl-0004:row2:col2'] |
+| C5_dimension_Q25 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp413098-tbl-0004:row17:col2'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp413098-tbl-0004:row4:col2', 'Hu_2024_table_5:row3:col2'] |
+| C5_dimension_Q352 | fail | dimensionless | % | not captured | not captured | ['Hu_2024_table_5:row5:col2'] |
+| C5_dimension_Q358 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp413098-tbl-0004:row20:col2'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp413098-tbl-0004:row5:col2', 'Hu_2024_table_5:row4:col2'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp413098-tbl-0004:row3:col2', 'Hu_2024_table_5:row2:col2'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Leven_2019:review'] |
+| C5_dimension_Q65 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp413098-tbl-0004:row12:col2', 'Hu_2024_table_5:row6:col2'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 9.66 | not captured | not captured | ['psp413098-tbl-0004:row2:col2'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.00966 L/h | not captured | not captured | ['psp413098-tbl-0004:row2:col2', 'psp413098-tbl-0004:row2:col3'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 3.9 L | not captured | not captured | ['psp413098-tbl-0004:row3:col2', 'psp413098-tbl-0004:row3:col3', 'Hu_2024_table_5:row2:col2', 'Hu_2024_table_5:row2:col3'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.00966 L/h | not captured | not captured | ['psp413098-tbl-0004:row2:col2'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 2.77 L | not captured | not captured | ['psp413098-tbl-0004:row5:col2', 'Hu_2024_table_5:row4:col2'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 4.01 L | not captured | not captured | ['psp413098-tbl-0004:row3:col2', 'Hu_2024_table_5:row2:col2'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 4.15 L | not captured | not captured | ['Leven_2019:review'] |
+| C9_phys_window_Q65 | pass | volume within physiological range | 0.932 L | not captured | not captured | ['psp413098-tbl-0004:row12:col2', 'Hu_2024_table_5:row6:col2'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -235,7 +202,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_nivolumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Hu_2024` / `Hu_2024::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_nivolumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Hu_2024` / `Hu_2024::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -251,4 +218,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 17:35 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 03:46 UTC</sub>

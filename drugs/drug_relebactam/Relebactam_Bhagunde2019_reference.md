@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01D&quot;,&quot;href&quot;:&quot;atc/J01D.md&quot;},{&quot;label&quot;:&quot;Relebactam&quot;,&quot;href&quot;:&quot;drugs/drug_relebactam/&quot;},{&quot;label&quot;:&quot;Bhagunde_2019 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Relebactam_Fratoni2022_reference&quot;,&quot;label&quot;:&quot;Fratoni_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_relebactam/Relebactam_Fratoni2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Relebactam_Principe2022_reference&quot;,&quot;label&quot;:&quot;Principe_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_relebactam/Relebactam_Principe2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -19,13 +19,13 @@
 
 ### Reviewer guidance
 
-**Relebactam clearance, central volume, and intercompartmental clearance lacked explicit values, causing the model to be quarantined despite defined covariates.**
+**No value for relebactam's clearance, volume of distribution and central→peripheral rate constant; the covariate scenarios were not simulated (+1 more).**
 
-The record lists values of 7.02 L/hour, 11.08 L, and 10.45 L/hour, yet the review determined these parameters were not explicitly extracted, causing the model to rely on generic placeholders. This absence of specific estimates prevented the model from being published. Furthermore, although covariate effects for creatinine clearance and weight are defined, these scenarios were not simulated during the reference individual run. Extracted — relebactam: CL 7.02 L/hour, V1 11.1 L, V2 6.41 L, Q 10.4 L/hour.
+The model was built, but relebactam's clearance, volume of distribution and central→peripheral rate constant had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. The base model was simulated, not the covariate effects the record defines. Extracted — relebactam: CL 7.02 L/hour, V1 11.1 L, V2 6.43 L, Q 10.5 L/hour.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has imipenem and relebactam, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 > **Dose compound ≠ measured compound:** dosed `imipenem and relebactam`, measured `relebactam and imipenem`.
 
@@ -36,7 +36,7 @@ Bhagunde P et al., Population Pharmacokinetic Analysis for…, CPT: pharmacometr
 <div class="pk-model-meta" hidden drug="Relebactam" model-id="Relebactam_Bhagunde2019_reference" status="model_quarantined" stale="false" population="healthy volunteers and patients with bacterial infections" measured-compound="relebactam and imipenem" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
-**Parameters:** 4 extracted, plus 2 covariate effects.
+**Parameters:** 4 extracted, plus 1 covariate effect.
 
 **Parameterization:** mechanistic.
 
@@ -45,12 +45,11 @@ Bhagunde P et al., Population Pharmacokinetic Analysis for…, CPT: pharmacometr
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL (L/hour) | `Q22` · CL | 7.02 | L/hour | 1.95e-06 | [l] / [h] | not captured | exact (1.0) | psp412462-tbl-0004:row3:col5, psp412462-tbl-0004:row3:col6, psp412462-tbl-0004:row3:col7, psp412462-tbl-0004:row3:col8 | — | not captured |
-| V 1 (L) | `Q63` · V1 | 11.08 | L | 0.01108 | [l] | not captured | space_fold (0.95) | psp412462-tbl-0004:row4:col5, psp412462-tbl-0004:row4:col6, psp412462-tbl-0004:row4:col7, psp412462-tbl-0004:row4:col8 | — | not captured |
-| V 2 (L) | `Q64` · V2 | 6.41 | L | 0.00641 | [l] | not captured | space_fold (0.95) | psp412462-tbl-0004:row5:col5, psp412462-tbl-0004:row5:col6, psp412462-tbl-0004:row5:col7, psp412462-tbl-0004:row5:col8 | — | not captured |
-| Q (L/hour) | `Q30` · Q | 10.45 | L/hour | 2.9027777777777776e-06 | [l] / [h] | not captured | exact (1.0) | psp412462-tbl-0004:row6:col5, psp412462-tbl-0004:row6:col6, psp412462-tbl-0004:row6:col7, psp412462-tbl-0004:row6:col8 | — | not captured |
-| theta_q1_crcl_power | `Q900` · theta_q1_crcl_power | 0.75 | not captured | not captured | not captured | not captured | not captured (not captured) | psp412462-tbl-0004:row8:col5, psp412462-tbl-0004:row8:col6, psp412462-tbl-0004:row8:col7, psp412462-tbl-0004:row8:col8 | — | not captured |
-| theta_q900_wt_power | `Q900` · theta_q900_wt_power | 0.70 | not captured | not captured | not captured | not captured | not captured (not captured) | psp412462-tbl-0004:row11:col5, psp412462-tbl-0004:row11:col6, psp412462-tbl-0004:row11:col7, psp412462-tbl-0004:row11:col8 | — | not captured |
+| CL (L/hour) | `Q22` · CL | 7.02 | L/hour | 1.95e-06 | [l] / [h] | 2.0 | exact (1.0) | psp412462-tbl-0004:row3:col5, psp412462-tbl-0004:row3:col7 | — | not captured |
+| V 1 (L) | `Q63` · V1 | 11.06 | L | 0.01106 | [l] | 2.9 | space_fold (0.95) | psp412462-tbl-0004:row4:col5, psp412462-tbl-0004:row4:col7 | — | not captured |
+| V 2 (L) | `Q64` · V2 | 6.43 | L | 0.00643 | [l] | 3.6 | space_fold (0.95) | psp412462-tbl-0004:row5:col5, psp412462-tbl-0004:row5:col7 | — | not captured |
+| Q (L/hour) | `Q30` · Q | 10.48 | L/hour | 2.9111111111111114e-06 | [l] / [h] | 7.0 | exact (1.0) | psp412462-tbl-0004:row6:col5, psp412462-tbl-0004:row6:col7 | — | not captured |
+| theta_q319_crcl_power | `Q900` · theta_q319_crcl_power | 0.75 | not captured | not captured | not captured | 8.3 | not captured (not captured) | psp412462-tbl-0004:row8:col5, psp412462-tbl-0004:row8:col7 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -60,13 +59,22 @@ Bhagunde P et al., Population Pharmacokinetic Analysis for…, CPT: pharmacometr
 ## Departures & gaps
 
 **Interpretation flags:**
-- covariate effect for Q1 has no base parameter row (kept as unattached equation-variable)
-- covariate effect for Q900 has no base parameter row (kept as unattached equation-variable)
+- table representations disagree for 'CL (L/hour)'; source reconciliation required
+- table representations disagree for 'V 1 (L)'; source reconciliation required
+- table representations disagree for 'V 2 (L)'; source reconciliation required
+- table representations disagree for 'Q (L/hour)'; source reconciliation required
+- table representations disagree for 'CrCL (power)'; source reconciliation required
+- table representations disagree for 'WT (power)'; source reconciliation required
+- dropped unlinked row (NIL): 'WT (power)' — extend the ontology if this is a real PK parameter (source ['psp412462-tbl-0004:row11:col5', 'psp412462-tbl-0004:row11:col7'])
+- covariate effect for Q319 has no base parameter row (kept as unattached equation-variable)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=relebactam and imipenem
+- status held at route_to_review — not promoted
 
 **Extraction notes:**
-- unparsed cell psp412462-tbl-0004:row12:col2 = '−0.34 to 0.23'
-- unparsed cell psp412462-tbl-0004:row12:col4 = '−0.34 to 0.23'
+- table psp412462-tbl-0004: ambiguous_uncertainty_binding
+- table psp412462-tbl-0004: ragged_grid
+- table psp412462-tbl-0004: unparsed_numeric_cell
+- table psp412462-tbl-0004: representations disagree; selected evidence retained, not merged
 - LLM selected parameter table(s) 4
 
 ## Validation
@@ -103,15 +111,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp412462-tbl-0004:row3:col5', 'psp412462-tbl-0004:row3:col6', 'psp412462-tbl-0004:row3:col7', 'psp412462-tbl-0004:row3:col8'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp412462-tbl-0004:row6:col5', 'psp412462-tbl-0004:row6:col6', 'psp412462-tbl-0004:row6:col7', 'psp412462-tbl-0004:row6:col8'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp412462-tbl-0004:row4:col5', 'psp412462-tbl-0004:row4:col6', 'psp412462-tbl-0004:row4:col7', 'psp412462-tbl-0004:row4:col8'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp412462-tbl-0004:row5:col5', 'psp412462-tbl-0004:row5:col6', 'psp412462-tbl-0004:row5:col7', 'psp412462-tbl-0004:row5:col8'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 7.02 | not captured | not captured | ['psp412462-tbl-0004:row3:col5', 'psp412462-tbl-0004:row3:col6', 'psp412462-tbl-0004:row3:col7', 'psp412462-tbl-0004:row3:col8'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp412462-tbl-0004:row3:col5', 'psp412462-tbl-0004:row3:col7'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp412462-tbl-0004:row6:col5', 'psp412462-tbl-0004:row6:col7'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp412462-tbl-0004:row4:col5', 'psp412462-tbl-0004:row4:col7'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp412462-tbl-0004:row5:col5', 'psp412462-tbl-0004:row5:col7'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 7.02 | not captured | not captured | ['psp412462-tbl-0004:row3:col5', 'psp412462-tbl-0004:row3:col7'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 7.02 L/h | not captured | not captured | ['psp412462-tbl-0004:row3:col5', 'psp412462-tbl-0004:row3:col6', 'psp412462-tbl-0004:row3:col7', 'psp412462-tbl-0004:row3:col8'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 11.1 L | not captured | not captured | ['psp412462-tbl-0004:row4:col5', 'psp412462-tbl-0004:row4:col6', 'psp412462-tbl-0004:row4:col7', 'psp412462-tbl-0004:row4:col8'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 6.41 L | not captured | not captured | ['psp412462-tbl-0004:row5:col5', 'psp412462-tbl-0004:row5:col6', 'psp412462-tbl-0004:row5:col7', 'psp412462-tbl-0004:row5:col8'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 7.02 L/h | not captured | not captured | ['psp412462-tbl-0004:row3:col5', 'psp412462-tbl-0004:row3:col7'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 11.1 L | not captured | not captured | ['psp412462-tbl-0004:row4:col5', 'psp412462-tbl-0004:row4:col7'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 6.43 L | not captured | not captured | ['psp412462-tbl-0004:row5:col5', 'psp412462-tbl-0004:row5:col7'] |
 
 **Reviewer per-scenario checks:**
 
@@ -132,9 +140,9 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_relebactam/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Bhagunde_2019` / `Bhagunde_2019::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_relebactam/models/modelica/_needs_review/Relebactam_Bhagunde2019_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_relebactam/models/modelica/_needs_review/Relebactam_Bhagunde2019_reference.deviation.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_relebactam/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Bhagunde_2019` / `Bhagunde_2019::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_relebactam/models/modelica/_needs_review/Relebactam_Bhagunde2019_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_relebactam/models/modelica/_needs_review/Relebactam_Bhagunde2019_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -148,7 +156,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_relebactam/Relebactam_Bhagunde2019_reference/Relebactam_Bhagunde2019_reference_matlab.zip" download>Relebactam_Bhagunde2019_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_relebactam/Relebactam_Bhagunde2019_reference/Relebactam_Bhagunde2019_reference_matlab_simbio.zip" download>Relebactam_Bhagunde2019_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_relebactam/Relebactam_Bhagunde2019_reference/Relebactam_Bhagunde2019_reference_sbml.zip" download>Relebactam_Bhagunde2019_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_relebactam/Relebactam_Bhagunde2019_reference/Relebactam_Bhagunde2019_reference_cellml.zip" download>Relebactam_Bhagunde2019_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_relebactam/Relebactam_Bhagunde2019_reference/Relebactam_Bhagunde2019_reference_cellml.zip" download>Relebactam_Bhagunde2019_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 </div></div>
@@ -160,4 +168,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 11:44 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 00:30 UTC</sub>

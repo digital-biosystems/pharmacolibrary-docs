@@ -17,23 +17,35 @@ Abatacept is an immunosuppressive, disease-modifying antirheumatic drug used to 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 23:33 | 1:14 | 0/2/0 | 2/0/1 | 0/0/0 | 119,609/4,400 | einfracz / qwen3.8-27b | 5 | 1/4 | 4/1 | 0 |
+| 2026-10-15 00:21 | 3:33 | 0/1/2 | 3/0/0 | 0/0/0 | 198,334/11,894 | einfracz / qwen3.8-27b | 5 | 1/4 | 4/1 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Emery_2025_reference](drugs/drug_abatacept/Abatacept_Emery2025_reference.md) | — | 1-compartment (no model) | 0 | Emery P et al., Association Between Abatacept Exposure…, The Journal of rheumatology (2025) | [10.3899/jrheum.2024-0498](https://doi.org/10.3899/jrheum.2024-0498) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.344). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Gandhi_2021_reference](drugs/drug_abatacept/Abatacept_Gandhi2021_reference.md) | — | 2-compartment (no model) | 8 (+8 cov.) | Gandhi Y et al., Model-Based Selection and Recommendatio…, Journal of clinical pharmac… (2021) | [10.1002/jcph.1797](https://doi.org/10.1002/jcph.1797) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q88 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Emery_2025_reference](drugs/drug_abatacept/Abatacept_Emery2025_reference.md) | — | 1-compartment (no model) | 8 | Emery P et al., Association Between Abatacept Exposure…, The Journal of rheumatology (2025) | [10.3899/jrheum.2024-0498](https://doi.org/10.3899/jrheum.2024-0498) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q30, Q1, Q63 — no SI value to build…</sub><br><sub>route_to: `human_review`</sub> | [Li_2019_reference](drugs/drug_abatacept/Abatacept_Li2019_reference.md) | — | 2-compartment (no model) | 5 (+2 cov.) | Li X et al., Population Pharmacokinetics and Exposur…, Journal of clinical pharmac… (2019) | [10.1002/jcph.1308](https://doi.org/10.1002/jcph.1308) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.344). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Gandhi_2021_reference](drugs/drug_abatacept/Abatacept_Gandhi2021_reference.md) | — | 2-compartment (no model) | 6 (+9 cov.) | Gandhi Y et al., Model-Based Selection and Recommendatio…, Journal of clinical pharmac… (2021) | [10.1002/jcph.1797](https://doi.org/10.1002/jcph.1797) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.889). Primary extraction retained.">cross-check: disputed</span> | [Li_2019_DAS28](drugs/drug_abatacept/pd_Li_2019_DAS28.md) | Disease Activity Score in 28 joints ← abatacept · direct Emax (saturable) effect | — | Li X et al., Population Pharmacokinetics and Exposur…, Journal of clinical pharmac… (2019) | [10.1002/jcph.1308](https://doi.org/10.1002/jcph.1308) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> | [Roy_2007_IL_6](drugs/drug_abatacept/pd_Roy_2007_IL_6.md) | interleukin-6 ← abatacept · indirect response — drug inhibits the loss of interleukin-6 | — | Roy A et al., Modeling and simulation of abatacept ex…, Journal of clinical pharmac… (2007) | [10.1177/0091270007307573](https://doi.org/10.1177/0091270007307573) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Lon_2013_DIS](drugs/drug_abatacept/pd_Lon_2013_DIS.md) | paw swelling ← abatacept · indirect response — drug inhibits the production of paw swelling | — | Lon HK et al., Modeling pharmacokinetics/pharmacodynam…, Journal of pharmacokinetics… (2013) | [10.1007/s10928-013-9341-1](https://doi.org/10.1007/s10928-013-9341-1) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> | [Roy_2007_IL_6](drugs/drug_abatacept/pd_Roy_2007_IL_6.md) | interleukin (IL)-6 ← abatacept · indirect response — drug inhibits the production of interleukin (IL)-6 | — | Roy A et al., Modeling and simulation of abatacept ex…, Journal of clinical pharmac… (2007) | [10.1177/0091270007307573](https://doi.org/10.1177/0091270007307573) |
 | <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> | [Li_2019_ACR20_50_70](drugs/drug_abatacept/pd_Li_2019_ACR20_50_70.md) | American College of Rheumatology response criteria for 20/50/70% improvement ← abatacept · categorical (graded) response model | — | Li X et al., Population Pharmacokinetics and Exposur…, Journal of clinical pharmac… (2019) | [10.1002/jcph.1308](https://doi.org/10.1002/jcph.1308) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Lon_2013_DIS](drugs/drug_abatacept/pd_Lon_2013_DIS.md) | paw swelling biomarker turnover ← abatacept | — | Lon HK et al., Modeling pharmacokinetics/pharmacodynam…, Journal of pharmacokinetics… (2013) | [10.1007/s10928-013-9341-1](https://doi.org/10.1007/s10928-013-9341-1) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=abatacept).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: CD80 (target), CD86 (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,7 +57,7 @@ Abatacept is an immunosuppressive, disease-modifying antirheumatic drug used to 
 
 - **PubMed hits:** 24 matched, 14 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 2  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs_review 2  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -54,26 +66,26 @@ _4 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Roy_2007.pdf` | Roy A et al., Modeling and simulation of abatacept ex…, Journal of clinical pharmac… (2007) | popPK | 10 | [10.1177/0091270007307573](https://doi.org/10.1177/0091270007307573) | [17962428](https://pubmed.ncbi.nlm.nih.gov/17962428) | The paper describes a population pharmacokinetic model for abatacept in humans, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
-| `Takahashi_2023.pdf` | Takahashi T et al., Higher abatacept exposure after transpl…, Blood (2023) | popPK | 10 | [10.1182/blood.2023020035](https://doi.org/10.1182/blood.2023020035) | [37319437](https://pubmed.ncbi.nlm.nih.gov/37319437) | The paper reports a population PK model structure (2-compartment) and exposure-response relationships for abatacept, but specific numeric parameter estimates (CL, V, Q) are not present in the provided text, likely residing in tables or supplementary material. |
-| `Balevic_2024.pdf` | Balevic SJ et al., Abatacept Pharmacokinetics and Exposure…, JAMA network open (2024) | popPK | 9 | [10.1001/jamanetworkopen.2024.7615](https://doi.org/10.1001/jamanetworkopen.2024.7615) | [38662372](https://pubmed.ncbi.nlm.nih.gov/38662372) | The study is a population PK analysis of abatacept in humans, but the specific quantitative clearance and volume parameters are not explicitly listed in the provided abstract text (only AUC and qualitative trends are given). |
-| `Lon_2013.pdf` | Lon HK et al., Modeling pharmacokinetics/pharmacodynam…, Journal of pharmacokinetics… (2013) | popPK | 9 | [10.1007/s10928-013-9341-1](https://doi.org/10.1007/s10928-013-9341-1) | [24233383](https://pubmed.ncbi.nlm.nih.gov/24233383) | This is a population PK study in rats with a quantitative model, but the abstract lacks specific numeric values for CL, V, etc., implying they are in the full text or tables not provided. |
+| `Roy_2007.pdf` | Roy A et al., Modeling and simulation of abatacept ex…, Journal of clinical pharmac… (2007) | popPK | 10 | [10.1177/0091270007307573](https://doi.org/10.1177/0091270007307573) | [17962428](https://pubmed.ncbi.nlm.nih.gov/17962428) | The study is a population PK analysis of abatacept describing a 2-compartmental model with weight-dependent clearance, but the specific numeric parameter values (e.g., typical CL, V) are not listed in the provided abstract/evidence. |
+| `Takahashi_2023.pdf` | Takahashi T et al., Higher abatacept exposure after transpl…, Blood (2023) | popPK | 10 | [10.1182/blood.2023020035](https://doi.org/10.1182/blood.2023020035) | [37319437](https://pubmed.ncbi.nlm.nih.gov/37319437) | The paper describes a population PK analysis of abatacept using a 2-compartment model, but the specific numeric parameter estimates (CL, V, Q, etc.) are not present in the provided evidence. |
+| `Balevic_2024.pdf` | Balevic SJ et al., Abatacept Pharmacokinetics and Exposure…, JAMA network open (2024) | popPK | 9 | [10.1001/jamanetworkopen.2024.7615](https://doi.org/10.1001/jamanetworkopen.2024.7615) | [38662372](https://pubmed.ncbi.nlm.nih.gov/38662372) | The paper describes a population PK study for abatacept in humans and reports exposure metrics (AUC) and qualitative clearance trends, but specific quantitative PK parameter values (e.g., median CL, V, half-life) are likely in supplementary material or figures not fully detailed in the abstract text provided. |
+| `Lon_2013.pdf` | Lon HK et al., Modeling pharmacokinetics/pharmacodynam…, Journal of pharmacokinetics… (2013) | popPK | 8 | [10.1007/s10928-013-9341-1](https://doi.org/10.1007/s10928-013-9341-1) | [24233383](https://pubmed.ncbi.nlm.nih.gov/24233383) | The abstract describes a population PK/PD study in rats but only provides the bioavailability (F=59.2%) and model structure, omitting the specific quantitative parameter values (CL, V, etc.) for abatacept. |
 
-<sub>queue written 2026-10-06T23:32:25.864270+00:00</sub>
+<sub>queue written 2026-10-15T00:18:40.656912+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Atienza-Mateo_2024 | irrelevant | 0 | 0 | The paper is a clinical observational study evaluating the therapeutic effectiveness of abatacept in rheumatoid arthritis-associated interstitial lung disease, with no pharmacokinetic data, parameters, or models reported. |
-| popPK | Bae_2024 | irrelevant | 0 | 0 | This is a clinical study analyzing quantitative CT imaging scores in interstitial lung disease, not a pharmacokinetic study reporting disposition parameters for abatacept. |
-| popPK | Balevic_2024 | relevant | 9 | 4 | The study is a population PK analysis of abatacept in humans, but the specific quantitative clearance and volume parameters are not explicitly listed in the provided abstract text (only AUC and qualitative trends are given). |
-| popPK | Ebina_2025 | irrelevant | 0 | 0 | The study is a clinical effectiveness and safety retrospective cohort analysis (ANSWER cohort) evaluating treatment retention and disease activity changes, containing no pharmacokinetic parameters such as clearance, volume, or half-life for abatacept. |
-| popPK | Leil_2021 | irrelevant | 0 | 0 | The paper is a model-based meta-analysis of clinical efficacy (DAS28 scores) for rheumatoid arthritis treatments, not a pharmacokinetic study, and contains no PK parameters for abatacept. |
-| popPK | Lon_2013 | relevant | 9 | 3 | This is a population PK study in rats with a quantitative model, but the abstract lacks specific numeric values for CL, V, etc., implying they are in the full text or tables not provided. |
-| popPK | Roy_2007 | relevant | 10 | 0 | The paper describes a population pharmacokinetic model for abatacept in humans, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
-| popPK | Salvato_2026 | irrelevant | 0 | 0 | This is a clinical efficacy study comparing JAK inhibitors and biologics (including abatacept) in rheumatoid arthritis, reporting no pharmacokinetic parameters. |
-| popPK | Takahashi_2023 | relevant | 10 | 3 | The paper reports a population PK model structure (2-compartment) and exposure-response relationships for abatacept, but specific numeric parameter estimates (CL, V, Q) are not present in the provided text, likely residing in tables or supplementary material. |
+| popPK | Atienza-Mateo_2024 | irrelevant | 0 | 0 | The paper is a clinical effectiveness study of abatacept in rheumatoid arthritis-associated interstitial lung disease and does not report pharmacokinetic parameters. |
+| popPK | Bae_2024 | irrelevant | 0 | 0 | The study analyzes high-resolution CT imaging scores and pulmonary function tests in a clinical trial for myositis-associated ILD, but it does not report any pharmacokinetic parameters (such as clearance or volume) for abatacept. |
+| popPK | Balevic_2024 | relevant | 9 | 3 | The paper describes a population PK study for abatacept in humans and reports exposure metrics (AUC) and qualitative clearance trends, but specific quantitative PK parameter values (e.g., median CL, V, half-life) are likely in supplementary material or figures not fully detailed in the abstract text provided. |
+| popPK | Ebina_2025 | irrelevant | 0 | 0 | This is a clinical effectiveness study evaluating treatment retention and disease activity indices, not a pharmacokinetic study reporting quantitative disposition parameters. |
+| popPK | Leil_2021 | irrelevant | 0 | 0 | The paper is a model-based meta-analysis of clinical efficacy (DAS28 scores) for rheumatoid arthritis treatments and does not report any pharmacokinetic parameters (CL, V, ka, half-life) for abatacept. |
+| popPK | Lon_2013 | irrelevant | 8 | 1 | The abstract describes a population PK/PD study in rats but only provides the bioavailability (F=59.2%) and model structure, omitting the specific quantitative parameter values (CL, V, etc.) for abatacept. |
+| popPK | Roy_2007 | relevant | 10 | 2 | The study is a population PK analysis of abatacept describing a 2-compartmental model with weight-dependent clearance, but the specific numeric parameter values (e.g., typical CL, V) are not listed in the provided abstract/evidence. |
+| popPK | Salvato_2026 | irrelevant | 0 | 0 | The study is a clinical efficacy trial in rheumatoid arthritis and does not contain pharmacokinetic data or disposition parameters for abatacept. |
+| popPK | Takahashi_2023 | relevant | 10 | 2 | The paper describes a population PK analysis of abatacept using a 2-compartment model, but the specific numeric parameter estimates (CL, V, Q, etc.) are not present in the provided evidence. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-06 23:32 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-15 00:18 UTC</sub>

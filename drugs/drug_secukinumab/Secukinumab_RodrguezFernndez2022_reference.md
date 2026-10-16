@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;secukinumab&quot;,&quot;href&quot;:&quot;drugs/drug_secukinumab/&quot;},{&quot;label&quot;:&quot;Rodr\u00edguez-Fern\u00e1ndez_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Secukinumab_RodrguezFernndez2022_reference&quot;,&quot;label&quot;:&quot;Rodr\u00edguez-Fern\u00e1ndez_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_secukinumab/Secukinumab_RodrguezFernndez2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Rodriguez_Fernandez_2024_PASI&quot;,&quot;label&quot;:&quot;Rodriguez-Fernandez_2024 \u00b7 PASI&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_secukinumab/pd_Rodriguez_Fernandez_2024_PASI.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # secukinumab — `Secukinumab_RodrguezFernndez2022_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -13,33 +13,40 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** Model and browser simulation available in **Models** and **Simulation**.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q22: this record has 0.19, the second reading 90; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+Extracted — secukinumab: CL/F 1.38 L/d, V/F 24.9 L, kabs 0.908 day−1, CL 0.19 L/day, V1 3.61 L, V2 2.87 L.
 
-<sub>reviewed by rule template (no LLM)</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 0.19, the second reading 90; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Rodríguez-Fernández K et al., Impact of Pharmacokinetic and Pharmacod…, Pharmaceutics (2022)
   ·  DOI: [10.3390/pharmaceutics14030654](https://doi.org/10.3390/pharmaceutics14030654)
 
-<div class="pk-model-meta" hidden drug="secukinumab" model-id="Secukinumab_RodrguezFernndez2022_reference" status="curated_candidate" stale="false" population="adults with psoriasis" measured-compound="secukinumab" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="secukinumab" model-id="Secukinumab_RodrguezFernndez2022_reference" status="rejected" stale="false" population="adults with psoriasis" measured-compound="secukinumab" parameterization="apparent" topology="3C"></div>
 
-**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 3 extracted.
+**Model structure:** 3-compartment; no model was built for this record.  
+**Parameters:** 6 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F | `Q27` · CL/F | 1.38 | L/d | 1.597222222222222e-08 | L/h | not captured | review (0.7) | Rodríguez-Fernández_2022:review | — | not captured |
-| V/F | `Q76` · V/F | 24.9 | L | 0.0249 | L | not captured | review (0.7) | Rodríguez-Fernández_2022:review | — | not captured |
-| ka | `Q49` · kabs | 0.908 | day−1 | 1.0509259259259259e-05 | 1/h | not captured | review (0.7) | Rodríguez-Fernández_2022:review | — | not captured |
+| CL/F | `Q27` · CL/F | 1.38 | L/d | 1.597222222222222e-08 | L/h | not captured | exact (1.0) | Rodríguez-Fernández_2022:other_prose | — | not captured |
+| V/F | `Q76` · V/F | 24.9 | L | 0.0249 | L | not captured | exact (1.0) | Rodríguez-Fernández_2022:other_prose | — | not captured |
+| ka | `Q49` · kabs | 0.908 | day−1 | 1.0509259259259259e-05 | 1/h | not captured | exact (1.0) | Rodríguez-Fernández_2022:other_prose | — | not captured |
+| CL | `Q22` · CL | 0.19 | L/day | 2.1990740740740743e-09 | L/h | not captured | exact (1.0) | Rodríguez-Fernández_2022:other_prose | — | not captured |
+| VC | `Q63` · V1 | 3.61 | L | 0.00361 | L | not captured | exact (1.0) | Rodríguez-Fernández_2022:other_prose | — | not captured |
+| VP | `Q64` · V2 | 2.87 | L | 0.00287 | L | not captured | exact (1.0) | Rodríguez-Fernández_2022:other_prose | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -48,13 +55,67 @@ Rodríguez-Fernández K et al., Impact of Pharmacokinetic and Pharmacod…, Phar
 
 ## Departures & gaps
 
-**Deviations:**
-- `defaulted_parameters`: ['Tlag']
-- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
-
 **Interpretation flags:**
-- built from REVIEW reference values (Rodríguez-Fernández_2022) — secondary source
-- volume reported by review
+- table section iiv: 'Adalimumab [70]' routed out of structural estimates ('PK Parameters / VC IIV, %CV (%RSE)')
+- table section iiv: 'Adalimumab [70]' routed out of structural estimates ('PK Parameters / Q IIV % (%RSE)')
+- table section iiv: 'Golimumab [71]' routed out of structural estimates ('PK Parameters / VC IIV, %CV (%RSE)')
+- table section iiv: 'Golimumab [71]' routed out of structural estimates ('PK Parameters / Q IIV % (%RSE)')
+- table section iiv: 'Ustekinumab [74,75]' routed out of structural estimates ('PK Parameters / CL IIV, %CV (%RSE)')
+- table section iiv: 'Ustekinumab [74,75]' routed out of structural estimates ('PK Parameters / VC IIV, %CV (%RSE)')
+- table section iiv: 'Ustekinumab [74,75]' routed out of structural estimates ('PK Parameters / Q IIV % (%RSE)')
+- table section iiv: 'Ustekinumab [77]' routed out of structural estimates ('PK Parameters / VC IIV, %CV (%RSE)')
+- table section iiv: 'Ustekinumab [77]' routed out of structural estimates ('PK Parameters / Q IIV % (%RSE)')
+- table section iiv: 'Secukinumab [81]' routed out of structural estimates ('PK Parameters / CL IIV, %CV (%RSE)')
+- table section iiv: 'Secukinumab [81]' routed out of structural estimates ('PK Parameters / VC IIV, %CV (%RSE)')
+- table section iiv: 'Secukinumab [81]' routed out of structural estimates ('PK Parameters / Q IIV % (%RSE)')
+- table section iiv: 'Brodalumab [92]' routed out of structural estimates ('PK Parameters / CL IIV, %CV (%RSE)')
+- table section iiv: 'Brodalumab [92]' routed out of structural estimates ('PK Parameters / Q IIV % (%RSE)')
+- table section iiv: 'Brodalumab [92]' routed out of structural estimates ('PK Parameters / Vmax, IIV, %CV (%RSE)')
+- table section iiv: 'Brodalumab [92]' routed out of structural estimates ('PK Parameters / VC IIV, %CV (%RSE)')
+- table section iiv: 'Brodalumab [92]' routed out of structural estimates ('PK Parameters / VP IIV, %CV (%RSE)')
+- table section iiv: 'Brodalumab [91]' routed out of structural estimates ('PK Parameters / CL IIV, %CV (%RSE)')
+- table section iiv: 'Brodalumab [91]' routed out of structural estimates ('PK Parameters / VC IIV, %CV (%RSE)')
+- table section iiv: 'Brodalumab [91]' routed out of structural estimates ('PK Parameters / Q IIV % (%RSE)')
+- table section iiv: 'Brodalumab [91]' routed out of structural estimates ('PK Parameters / VP IIV, %CV (%RSE)')
+- table section iiv: 'Brodalumab [91]' routed out of structural estimates ('PK Parameters / Vmax, IIV, %CV (%RSE)')
+- table section iiv: 'Guselkumab [94]' routed out of structural estimates ('PK Parameters / VC IIV, %CV (%RSE)')
+- table section iiv: 'Guselkumab [94]' routed out of structural estimates ('PK Parameters / Q IIV % (%RSE)')
+- table section iiv: 'Guselkumab [97]' routed out of structural estimates ('PK Parameters / CL IIV, %CV (%RSE)')
+- table section iiv: 'Guselkumab [97]' routed out of structural estimates ('PK Parameters / VC IIV, %CV (%RSE)')
+- table section iiv: 'Guselkumab [97]' routed out of structural estimates ('PK Parameters / Q IIV % (%RSE)')
+- table section iiv: 'Tildrakizumab [99]' routed out of structural estimates ('PK Parameters / CL IIV, %CV (%RSE)')
+- table section iiv: 'Tildrakizumab [99]' routed out of structural estimates ('PK Parameters / VC IIV, %CV (%RSE)')
+- table section iiv: 'Tildrakizumab [99]' routed out of structural estimates ('PK Parameters / Q IIV % (%RSE)')
+- table section iiv: 'Risankizumab [105]' routed out of structural estimates ('PK Parameters / CL IIV, %CV (%RSE)')
+- table section iiv: 'Risankizumab [105]' routed out of structural estimates ('PK Parameters / VC IIV, %CV (%RSE)')
+- table section iiv: 'Risankizumab [105]' routed out of structural estimates ('PK Parameters / Q IIV % (%RSE)')
+- table section iiv: 'Risankizumab [109]' routed out of structural estimates ('PK Parameters / CL IIV, %CV (%RSE)')
+- table section iiv: 'Risankizumab [109]' routed out of structural estimates ('PK Parameters / VC IIV, %CV (%RSE)')
+- table section iiv: 'Risankizumab [109]' routed out of structural estimates ('PK Parameters / Q IIV % (%RSE)')
+- column 'pk parameters' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- table representations disagree for 'Brodalumab [92]'; source reconciliation required
+- table representations disagree for 'Brodalumab [91]'; source reconciliation required
+- dropped unlinked row (NIL): 'Brodalumab [92]' — extend the ontology if this is a real PK parameter (source ['pharmaceutics-14-00654-t003:row12:col13', 'pharmaceutics-14-00654-t003:row12:col14', 'pharmaceutics-14-00654-t003:row13:col13', 'pharmaceutics-14-00654-t003:row13:col14'])
+- dropped unlinked row (NIL): 'Brodalumab [91]' — extend the ontology if this is a real PK parameter (source ['pharmaceutics-14-00654-t003:row16:col13'])
+- salvaged Q27 ('CL/F'=1.38) from results prose — parameter table was unreadable
+- salvaged Q76 ('V/F'=24.9) from results prose — parameter table was unreadable
+- salvaged Q49 ('ka'=0.908) from results prose — parameter table was unreadable
+- salvaged Q22 ('CL'=0.19) from results prose — parameter table was unreadable
+- salvaged Q63 ('VC'=3.61) from results prose — parameter table was unreadable
+- salvaged Q64 ('VP'=2.87) from results prose — parameter table was unreadable
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=secukinumab
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- structure disagreement: deterministic 3C vs LLM 2C — review compartment count
+- status held at route_to_review — not promoted
+- molar mass: none found for 'secukinumab' — its concentrations stay mass-only
+- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
+
+**Extraction notes:**
+- table pharmaceutics-14-00654-t003: ambiguous_uncertainty_binding
+- table pharmaceutics-14-00654-t003: ragged_grid
+- table pharmaceutics-14-00654-t003: unparsed_numeric_cell
+- table pharmaceutics-14-00654-t003: representations disagree; selected evidence retained, not merged
+- LLM selected parameter table(s) 3
 
 ## Validation
 
@@ -85,28 +146,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Rodríguez-Fernández_2022:review'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Rodríguez-Fernández_2022:review'] |
-| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Rodríguez-Fernández_2022:review'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 0.0575 L/h | not captured | not captured | ['Rodríguez-Fernández_2022:review'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 24.9 L | not captured | not captured | ['Rodríguez-Fernández_2022:review'] |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
-| T3_output_variable | not captured | pass | C_central (measured=secukinumab) | central.C | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.00792 L/h | not captured | not captured | ['Rodríguez-Fernández_2022:other_prose'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 0.0575 L/h | not captured | not captured | ['Rodríguez-Fernández_2022:other_prose'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 3.61 L | not captured | not captured | ['Rodríguez-Fernández_2022:other_prose'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 2.87 L | not captured | not captured | ['Rodríguez-Fernández_2022:other_prose'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 24.9 L | not captured | not captured | ['Rodríguez-Fernández_2022:other_prose'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -115,38 +164,20 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_secukinumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Rodríguez-Fernández_2022` / `Rodríguez-Fernández_2022::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_secukinumab/models/modelica/Secukinumab_RodrguezFernndez2022_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_secukinumab/models/modelica/Secukinumab_RodrguezFernndez2022_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_secukinumab/models/modelica/Secukinumab_RodrguezFernndez2022_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_secukinumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Rodríguez-Fernández_2022` / `Rodríguez-Fernández_2022::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_secukinumab/Secukinumab_RodrguezFernndez2022_reference/Secukinumab_RodrguezFernndez2022_reference_modelica.zip" download>Secukinumab_RodrguezFernndez2022_reference_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_secukinumab/Secukinumab_RodrguezFernndez2022_reference/Secukinumab_RodrguezFernndez2022_reference_fmi.zip" download>Secukinumab_RodrguezFernndez2022_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_secukinumab/Secukinumab_RodrguezFernndez2022_reference/Secukinumab_RodrguezFernndez2022_reference_matlab.zip" download>Secukinumab_RodrguezFernndez2022_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_secukinumab/Secukinumab_RodrguezFernndez2022_reference/Secukinumab_RodrguezFernndez2022_reference_matlab_simbio.zip" download>Secukinumab_RodrguezFernndez2022_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_secukinumab/Secukinumab_RodrguezFernndez2022_reference/Secukinumab_RodrguezFernndez2022_reference_sbml.zip" download>Secukinumab_RodrguezFernndez2022_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_secukinumab/Secukinumab_RodrguezFernndez2022_reference/Secukinumab_RodrguezFernndez2022_reference_cellml.zip" download>Secukinumab_RodrguezFernndez2022_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_secukinumab/Secukinumab_RodrguezFernndez2022_reference/Secukinumab_RodrguezFernndez2022_reference.svg" alt="Secukinumab_RodrguezFernndez2022_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.0378 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
-
-<dbs-fmusim paramsurl="drugs/drug_secukinumab/Secukinumab_RodrguezFernndez2022_reference/Secukinumab_RodrguezFernndez2022_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_secukinumab/Secukinumab_RodrguezFernndez2022_reference/Secukinumab_RodrguezFernndez2022_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C_enteral` · parameters `Secukinumab_RodrguezFernndez2022_reference_params.json` · controls `Secukinumab_RodrguezFernndez2022_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 00:30 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 00:20 UTC</sub>

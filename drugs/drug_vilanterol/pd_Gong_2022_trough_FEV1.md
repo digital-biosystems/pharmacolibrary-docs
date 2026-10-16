@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03A&quot;,&quot;href&quot;:&quot;atc/R03A.md&quot;},{&quot;label&quot;:&quot;Vilanterol&quot;,&quot;href&quot;:&quot;drugs/drug_vilanterol/&quot;},{&quot;label&quot;:&quot;Gong_2022 \u00b7 PD change from baseline in trough FEV1&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# change from baseline in trough FEV1 — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
+# change from baseline in trough FEV1 — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by ollama:gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -13,19 +13,19 @@
 
 ## Record summary
 
-**As extracted:** Vilanterol/umeclidinium drives change from baseline in trough FEV1 (in L): direct Emax (saturable) effect.
+**As extracted:** Vilanterol/umeclidinium (the dose) drives change from baseline in trough FEV1 (in L) (stimulation; the model form was not identified).
 
 **Model:** No model was generated from this record.
 
-> Vilanterol/umeclidinium fixed-dose combination acts on change from baseline in trough FEV1 (L) via a direct Emax model with no time-dependent loss of efficacy (τ fixed to 0 week⁻¹); the maximum effect Emax was 0.185 L (95% CI: 0.173–0.197 L). The paper does not state an IC50/EC50 or describe a mechanism beyond this direct maximal-effect stimulation.
+> The model describes the change from baseline in trough FEV1 (L) as a direct effect of the vilanterol/umeclidinium dose, characterized by an immediate maximum effect (Emax) of 0.185 L and a loss-of-efficacy rate (τ) of 0 week⁻¹, indicating no decline in efficacy over time.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
 
 - **paper:** `Gong_2022`
-- **model family:** `emax`
-- **driver:** `not_resolved`
+- **model family:** `unknown`
+- **driver:** `dose_only`
 - **tier:** population
-- **effect:** stimulation/unknown
+- **effect:** stimulation/additive
 
 ## Citation
 Gong Y et al., Quantitative analysis of efficacy and s…, Therapeutic advances in res… (2022)
@@ -35,8 +35,7 @@ Gong Y et al., Quantitative analysis of efficacy and s…, Therapeutic advances 
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
 | PD (effect) | Emax(Vilanterol/umeclidinium) | `Q320` · not captured | 0.185 | L | not captured | llm (not captured) | Gong_2022:pdv3 |
-| — | τ(Vilanterol/umeclidinium) | `Q100` · not captured | 0 FIXED | week-1 | not captured | nil (not captured) | Gong_2022:pdv3 |
-| variability | η(Emax) | `Q312` · not captured | 0.0243 | L | not captured | llm (not captured) | Gong_2022:pdv3 |
+| — | τ(Vilanterol/umeclidinium) | `Q100` · not captured | 0 | week-1 | not captured | nil (not captured) | Gong_2022:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -44,24 +43,14 @@ Gong Y et al., Quantitative analysis of efficacy and s…, Therapeutic advances 
 </details>
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `einfracz:gpt-oss-120b` | not confirmed | 0.167 (1/6 fields) | 5 |
+| `ollama:gpt-oss:120b` | confirmed | 1.0 (6/6 fields) | none |
 
-<details><summary>5 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `einfracz:gpt-oss-120b` | `driver_compound` | vilanterol/umeclidinium | vilanterol | mismatch |
-| `einfracz:gpt-oss-120b` | `effect_form` | unknown | additive | mismatch |
-| `einfracz:gpt-oss-120b` | `model_family` | emax | tolerance | mismatch |
-| `einfracz:gpt-oss-120b` | `parameters[Q100]` | 0 FIXED | not captured | only_one_extracted |
-| `einfracz:gpt-oss-120b` | `parameters[Q320].value` | 0.185 | 0.185 (0.173, 0.197) | mismatch |
-
-</details>
+_All readers agree on the compared fields of this PD record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -71,9 +60,19 @@ Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;etanercept&quot;,&quot;href&quot;:&quot;drugs/drug_etanercept/&quot;},{&quot;label&quot;:&quot;Zhou_2004 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Etanercept_Ling2024_reference&quot;,&quot;label&quot;:&quot;Ling_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etanercept/Etanercept_Ling2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Etanercept_Ling2024_reference&quot;,&quot;label&quot;:&quot;Ling_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etanercept/Etanercept_Ling2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Breedveld_2018_ESR&quot;,&quot;label&quot;:&quot;Breedveld_2018 \u00b7 ESR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_etanercept/pd_Breedveld_2018_ESR.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Breedveld_2018_IL_6&quot;,&quot;label&quot;:&quot;Breedveld_2018 \u00b7 IL-6&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_etanercept/pd_Breedveld_2018_IL_6.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Breedveld_2018_MMP_3&quot;,&quot;label&quot;:&quot;Breedveld_2018 \u00b7 MMP-3&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_etanercept/pd_Breedveld_2018_MMP_3.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Breedveld_2018_Painful_joints&quot;,&quot;label&quot;:&quot;Breedveld_2018 \u00b7 Painful joints&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_etanercept/pd_Breedveld_2018_Painful_joints.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Breedveld_2018_Swollen_joints&quot;,&quot;label&quot;:&quot;Breedveld_2018 \u00b7 Swollen joints&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_etanercept/pd_Breedveld_2018_Swollen_joints.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -54,8 +54,6 @@ _No resolved parameters._
 - table section iiv: 'V(c)' routed out of structural estimates ('Interindividual variability of the pharmacokinetic parameters was quantified for CL (25.1%), V(c) (41.7%), k(a) (53.1%), and F (24.2%).')
 - table section iiv: 'k(a)' routed out of structural estimates ('Interindividual variability of the pharmacokinetic parameters was quantified for CL (25.1%), V(c) (41.7%), k(a) (53.1%), and F (24.2%).')
 - table section iiv: 'F' routed out of structural estimates ('Interindividual variability of the pharmacokinetic parameters was quantified for CL (25.1%), V(c) (41.7%), k(a) (53.1%), and F (24.2%).')
-- table section iiv: 'age' routed out of structural estimates ('Interindividual variability of the pharmacokinetic parameters was quantified for CL (25.1%), V(c) (41.7%), k(a) (53.1%), and F (24.2%).')
-- table section iiv: 'body weight' routed out of structural estimates ('Interindividual variability of the pharmacokinetic parameters was quantified for CL (25.1%), V(c) (41.7%), k(a) (53.1%), and F (24.2%).')
 - table section iiv: 'clearance for patients receiving etanercept alone' routed out of structural estimates ('Interindividual variability of the pharmacokinetic parameters was quantified for CL (25.1%), V(c) (41.7%), k(a) (53.1%), and F (24.2%).')
 - table section iiv: 'clearance for patients receiving a combination of etanercept and methotrexate' routed out of structural estimates ('Interindividual variability of the pharmacokinetic parameters was quantified for CL (25.1%), V(c) (41.7%), k(a) (53.1%), and F (24.2%).')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=etanercept
@@ -63,7 +61,7 @@ _No resolved parameters._
 - review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Zhou_2004_metadata.yaml (14 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Zhou_2004_metadata.yaml (12 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -104,7 +102,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_etanercept/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Zhou_2004` / `Zhou_2004::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_etanercept/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Zhou_2004` / `Zhou_2004::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -120,4 +118,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 23:59 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 22:06 UTC</sub>

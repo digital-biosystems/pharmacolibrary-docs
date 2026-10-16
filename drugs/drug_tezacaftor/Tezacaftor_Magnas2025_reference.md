@@ -21,7 +21,7 @@
 
 No clearance, volume or rate constant of the model is reported in it. Only the abstract was available, so reported summary statistics stand in for a fitted model. No parameter values were extracted.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has elexacaftor-tezacaftor-ivacaftor, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has elexacaftor-tezacaftor-ivacaftor, the second reading ETI (elexacaftor/tezacaftor/ivacaftor); it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -71,7 +71,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `model.links` | [['none', 'none', 'none']] | [] | mismatch |
-| `gpt-oss-120b` | `screen.dose_compound` | elexacaftor-tezacaftor-ivacaftor | unknown | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | elexacaftor-tezacaftor-ivacaftor | ETI (elexacaftor/tezacaftor/ivacaftor) | mismatch |
 | `gpt-oss-120b` | `screen.primary_analyte` | elexacaftor, tezacaftor, ivacaftor | unknown | mismatch |
 
 </details>
@@ -97,7 +97,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_tezacaftor/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Magnas_2025` / `Magnas_2025::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_tezacaftor/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Magnas_2025` / `Magnas_2025::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

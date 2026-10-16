@@ -1,8 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;nivolumab&quot;,&quot;href&quot;:&quot;drugs/drug_nivolumab/&quot;},{&quot;label&quot;:&quot;Sangro_2023 \u00b7 PD overall survival&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;nivolumab&quot;,&quot;href&quot;:&quot;drugs/drug_nivolumab/&quot;},{&quot;label&quot;:&quot;Sangro_2023 \u00b7 PD Overall survival&quot;}]"></div>
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nivolumab_van2019_reference&quot;,&quot;label&quot;:&quot;van_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nivolumab/Nivolumab_van2019_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# overall survival — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
+# Overall survival — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -14,19 +14,19 @@
 
 ## Record summary
 
-**As extracted:** Nivolumab (concentrations from the PK model of Hu_2024) drives overall survival: time-to-event model.
+**As extracted:** Nivolumab (concentrations from the PK model of Hu_2024) drives Overall survival: time-to-event model.
 
 **Model:** No model was generated from this record.
 
-> The paper reports that overall survival improvements were associated with increased ipilimumab exposure (hazard ratio 0.86, 95% CI 0.75–0.98) but not nivolumab exposure, contradicting the record's attribution of the effect to nivolumab. The paper does not specify a mechanistic model (e.g., Emax, indirect response) or provide potency parameters (IC50, EC50) for the nivolumab–OS relationship, noting only a flat dose–response for nivolumab monotherapy in other tumor types.
+> The paper reports that overall survival outcomes are modeled using a proportional relationship (hazard ratio) driven by log-transformed nivolumab first-dose average concentration (Cavg1), but states that improvements in overall survival were associated with ipilimumab exposure, not nivolumab exposure. The record specifies a parameter value of 0.07747 for the log-transformed nivolumab Cavg1 (μg/mL), but the paper does not provide specific potency metrics (such as IC50) or mechanistic rate constants (such as kin or kout) for the nivolumab effect on survival.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Sangro_2023`
 - **model family:** `tte`
 - **driver:** `cited_pk`
 - **tier:** descriptive
-- **effect:** inhibition/proportional
+- **effect:** unknown/proportional
 
 ## Citation
 Sangro B et al., Exposure-response analysis for nivoluma…, Clinical and translational… (2023)
@@ -35,7 +35,7 @@ Sangro B et al., Exposure-response analysis for nivoluma…, Clinical and transl
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | Log‐transformed nivolumab Cavg1, μg/mL | `Q335` · not captured | 0.07747 | not captured | not captured | llm (not captured) | Sangro_2023:pdv3 |
+| model term | Log-transformed nivolumab Cavg1, μg/mL | `Q900` · not captured | 0.07747 | not captured | not captured | llm (not captured) | Sangro_2023:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>

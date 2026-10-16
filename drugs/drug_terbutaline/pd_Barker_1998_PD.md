@@ -20,9 +20,9 @@
 
 **Model:** No model was generated from this record.
 
-> Terbutaline concentrations stimulate amiloride-insensitive transepithelial voltage (PD) via an Emax-type model; the paper excerpts provide no mechanism details and no numeric potency (EC50/Emax) or rate values.
+> The paper does not provide full text or specific mechanism details, so the mechanism by which terbutaline acts on amiloride-insensitive transepithelial voltage is not described. The record indicates an Emax model with an EC50 unit of microM, but no specific potency or rate values are stated in the available excerpts.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
 
 - **paper:** `Barker_1998`
 - **model family:** `emax`

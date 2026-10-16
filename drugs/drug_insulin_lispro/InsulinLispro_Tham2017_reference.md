@@ -5,7 +5,7 @@
 
 # insulin lispro — `InsulinLispro_Tham2017_reference`
 
-> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.529). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -23,7 +23,7 @@
 
 The base model was simulated, not the covariate effects the record defines.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has insulin_lispro, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has insulin_lispro, the second reading insulin lispro; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -87,20 +87,21 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.529 (9/17 fields) | 8 |
+| `gpt-oss-120b` | not confirmed | 0.5 (9/18 fields) | 9 |
 
-<details><summary>8 field discrepancies</summary>
+<details><summary>9 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `parameters[apparent clearance].covariate_forms` | ['linear_fractional'] | [] | mismatch |
 | `gpt-oss-120b` | `parameters[baseline endogenous insulin concentration]` | not captured | 79.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[bioavailability, fglar].parameter_id` | Q40 | Q41 | mismatch |
+| `gpt-oss-120b` | `parameters[covariate effect of dose on bioavailability, θ1]` | not captured | -0.300 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[covariate effect of dose on clearance]` | not captured | -0.282 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[covariate_of_body_weight_on_baseline_endogenous_insulin]` | 0.739 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[duration of 0‐order absorption]` | not captured | 1.06 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[theta_q324_body_weight]` | not captured | 0.739 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | insulin_lispro | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | insulin_lispro | unknown | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | insulin_lispro | insulin lispro | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | insulin_lispro | insulin lispro | mismatch |
 
 </details>
 
@@ -146,10 +147,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_insulin_lispro/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Tham_2017` / `Tham_2017::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_insulin_lispro/models/modelica/InsulinLispro_Tham2017_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_insulin_lispro/models/modelica/InsulinLispro_Tham2017_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_insulin_lispro/models/modelica/InsulinLispro_Tham2017_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_insulin_lispro/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Tham_2017` / `Tham_2017::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_insulin_lispro/models/modelica/InsulinLispro_Tham2017_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_insulin_lispro/models/modelica/InsulinLispro_Tham2017_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_insulin_lispro/models/modelica/InsulinLispro_Tham2017_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -167,7 +168,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_insulin_lispro/InsulinLispro_Tham2017_reference/InsulinLispro_Tham2017_reference.svg" alt="InsulinLispro_Tham2017_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_insulin_lispro/InsulinLispro_Tham2017_reference/InsulinLispro_Tham2017_reference.svg" alt="InsulinLispro_Tham2017_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

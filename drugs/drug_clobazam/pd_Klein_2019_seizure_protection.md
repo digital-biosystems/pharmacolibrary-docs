@@ -13,19 +13,19 @@
 
 ## Record summary
 
-**As extracted:** Clobazam and N-desmethylclobazam (measured concentrations) drive seizure protection (in %): direct Emax (saturable) effect.
+**As extracted:** Clobazam, N-clobazam (measured concentrations) drive seizure protection: direct Emax (saturable) effect.
 
 **Model:** No model was generated from this record.
 
-> Clobazam (with N-desmethylclobazam) concentrations were related to seizure protection (binary, %) using an Emax-type inhibitory model, with EC50 values of 303 ng/mL and 899 ng/mL; the paper excerpts do not state the mechanism beyond this or other model parameters.
+> Clobazam and N-clobazam concentrations drive seizure protection via an additive Emax model, with reported potency values of 303 ng/mL for the half-maximal effective concentration and 899 ng/mL for EC50. The specific mechanism by which the drug acts (e.g., inhibition of production vs. elimination) is not described in the provided excerpts.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Klein_2019`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
 - **tier:** population
-- **effect:** inhibition/unknown
+- **effect:** stimulation/additive
 
 ## Citation
 Klein P et al., Drug-drug interactions and pharmacodyna…, Epilepsy & behavior : E&B (2019)
@@ -34,7 +34,7 @@ Klein P et al., Drug-drug interactions and pharmacodyna…, Epilepsy & behavior 
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | EC50 | `Q321` · not captured | 303 | ng/mL | not captured | llm (not captured) | Klein_2019:pdv3 |
+| PD (effect) | half-maximal effective concentration | `Q321` · not captured | 303 | ng/mL | not captured | llm (not captured) | Klein_2019:pdv3 |
 | PD (effect) | EC50 | `Q321` · not captured | 899 | ng/mL | not captured | llm (not captured) | Klein_2019:pdv3 |
 
 <details class="legend">

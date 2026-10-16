@@ -5,7 +5,7 @@
 
 # gadopiclenol — `Gadopiclenol_Jurkiewicz2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.625). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.75). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -21,7 +21,7 @@
 
 The record describes a two-compartment model and reports V2 as the peripheral-compartment volume, at 0.06 L/kg. The finding identifies an unreachable or orphan compartment but does not specify which compartment or establish that it is the peripheral compartment. Extracted — gadopiclenol: CL 0.08 L/h/kg, V1 0.11 L/kg, V2 0.06 L/kg.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of median cl: this record has 0.08, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of median v2: this record has none, the second reading 0.06; it also differs on 1 more field. That field does not shape the model.
 
 <sub>reviewed by gpt-6-luna</sub>
 
@@ -66,20 +66,19 @@ Jurkiewicz E et al., Pharmacokinetics, Safety, and Efficacy…, Investigative ra
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `qwen3.8-27b` | not confirmed | 0.625 (5/8 fields) | 3 |
+| `qwen3.8-27b` | partly confirmed | 0.75 (6/8 fields) | 2 |
 
-<details><summary>3 field discrepancies</summary>
+<details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `qwen3.8-27b` | `parameters[median cl]` | 0.08 | not captured | only_one_extracted |
-| `qwen3.8-27b` | `parameters[median v1].parameter_id` | Q63 | Q61 | mismatch |
 | `qwen3.8-27b` | `parameters[median v2 for both adults and children]` | 0.06 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[median v2]` | not captured | 0.06 | only_one_extracted |
 
 </details>
 
@@ -109,7 +108,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_gadopiclenol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Jurkiewicz_2022` / `Jurkiewicz_2022::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_gadopiclenol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Jurkiewicz_2022` / `Jurkiewicz_2022::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

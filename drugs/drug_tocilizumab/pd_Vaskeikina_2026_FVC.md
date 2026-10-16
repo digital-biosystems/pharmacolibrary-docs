@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;tocilizumab&quot;,&quot;href&quot;:&quot;drugs/drug_tocilizumab/&quot;},{&quot;label&quot;:&quot;Vaskeikina_2026 \u00b7 PD forced vital capacity&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# forced vital capacity — PD  <span class="pk-badge pk-badge--green">extracted</span>
+# forced vital capacity — PD  <span class="pk-badge pk-badge--orange">needs review</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -13,19 +13,19 @@
 
 ## Record summary
 
-**As extracted:** Tocilizumab (the dose) drives forced vital capacity (in % predicted): direct Emax (saturable) effect.
+**As extracted:** Tocilizumab (concentrations from the PK model of Arrivé_2024) drives forced vital capacity (in %): direct Emax (saturable) effect.
 
 **Model:** No model was generated from this record.
 
-> Tocilizumab exerts an additive stimulatory effect on forced vital capacity (FVC) using an Emax model structure, though the paper excerpts do not explicitly describe the biological mechanism of this action. The estimated effect of tocilizumab on FVC improvement is 4.49%.
+> The paper describes a longitudinal meta-analysis using an Emax structural function to characterize the change from baseline in forced vital capacity (FVC) for various targeted therapies, but it does not specify the direct mechanism of action (e.g., production/elimination inhibition) of tocilizumab on FVC. The provided text does not report specific potency or rate parameter values (such as Imax, IC50, ke0) for tocilizumab, although the record lists a value of 4.49 for the effect of tocilizumab on FVC improvement and a time to 50% maximum change of 27.49 weeks.
 >
 > <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Vaskeikina_2026`
 - **model family:** `emax`
-- **driver:** `dose_only`
+- **driver:** `cited_pk`
 - **tier:** population
-- **effect:** stimulation/additive
+- **effect:** stimulation/unknown
 
 ## Citation
 Vaskeikina M et al., Systematic Review and Model-Based Meta-…, Pharmaceutics (2026)
@@ -34,7 +34,11 @@ Vaskeikina M et al., Systematic Review and Model-Based Meta-…, Pharmaceutics (
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| model term | Effect of tocilizumab on FVC improvement | `Q900` · not captured | 4.49 | % | not captured | llm (not captured) | Vaskeikina_2026:pdv3 |
+| PD (effect) | Effect of tocilizumab on FVC improvement | `Q320` · not captured | 4.49 | not captured | not captured | llm (not captured) | Vaskeikina_2026:pdv3 |
+| PD (effect) | Time to 50% maximum change in mRSS and FVC in weeks | `Q321` · not captured | 27.49 | weeks | not captured | llm (not captured) | Vaskeikina_2026:pdv3 |
+| variability | Standard deviation of residual error for change in FVC | `Q315` · not captured | 4.42 | not captured | not captured | llm (not captured) | Vaskeikina_2026:pdv3 |
+| variability | Standard deviation of BSV for change in FVC | `Q312` · not captured | 1.97 | not captured | not captured | llm (not captured) | Vaskeikina_2026:pdv3 |
+| variability | Standard deviation of BTAV for change in FVC | `Q312` · not captured | 9.94 | not captured | not captured | llm (not captured) | Vaskeikina_2026:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>

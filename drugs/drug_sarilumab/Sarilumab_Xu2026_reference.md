@@ -4,7 +4,7 @@
 
 # sarilumab — `Sarilumab_Xu2026_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.741). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.741). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -16,39 +16,36 @@
 
 ### Reviewer guidance
 
-**The record was rejected because the structural parameter Vm/F has the dimensionally inconsistent unit mg/day instead of a volume like litres.**
+**V has no unit.**
 
-The parameter labelled θ1 is described as the apparent volume of distribution of a metabolite, yet its extracted unit is mg/day. This dimension mismatch prevents the value of 5.63 from being valid for a volume term in the two-compartment model. Extracted — sarilumab: Vm/F 5.63 mg/day, Km 0.694 mg/L, V1/F 1.54 L, kabs 0.117 day−1, Q/F 0.148 L/day, V/F 12.7 L.
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (V and Km), so that value has no SI equivalent. Extracted — sarilumab: V 5.63 N = 42a, Km 0.694 mg/L, V1/F 1.54 L, CL/F 0.218 L/day, kabs 0.117 day−1, Q/F 0.148 L/day.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of theta_q319_wt: this record has none, the second reading 0.617; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Xu C et al., Modeling, Simulation, and Extrapolation…, Journal of pharmacokinetics… (2026)
   ·  DOI: [10.1007/s10928-026-10024-z](https://doi.org/10.1007/s10928-026-10024-z)
 
-<div class="pk-model-meta" hidden drug="sarilumab" model-id="Sarilumab_Xu2026_reference" status="rejected" stale="false" population="patients with pcJIA and adult RA" measured-compound="sarilumab" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="sarilumab" model-id="Sarilumab_Xu2026_reference" status="needs_review" stale="false" population="adults with rheumatoid arthritis and children with polyarticular-course juvenile idiopathic arthritis" measured-compound="sarilumab" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
-**Parameters:** 6 extracted, plus 2 covariate effects.
+**Parameters:** 6 extracted.
 
-**Parameterization:** Q/F, V/F, V1/F, Vm/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** CL/F, Q/F, V1/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| θ1 (Vm, mg/day) | `Q367` · Vm/F | 5.63 | mg/day | not captured | [mg] / [d] | 5.25 | llm (0.6) | Tab1:row1:col1, Tab1:row1:col2 | — | not captured |
-| θ2 (Km, mg/L) | `Q1` · Km | 0.694 | mg/L | not captured | [mg] / [l] | 8.55 | llm (0.6) | Tab1:row2:col1, Tab1:row2:col2 | — | not captured |
-| θ3 (Vc/F, L) | `Q290` · V1/F | 1.54 | L | 0.0015400000000000001 | [l] | 5.49 | llm (0.6) | Tab1:row3:col1, Tab1:row3:col2 | — | not captured |
-| θ5 (Ka, day−1) | `Q49` · kabs | 0.117 | day−1 | 1.3541666666666667e-06 | [1] / [d] | 4.20 | llm (0.6) | Tab1:row5:col1, Tab1:row5:col2 | — | not captured |
-| θ6 (Q/F, L/day) | `Q69` · Q/F | 0.148 | L/day | 1.7129629629629628e-09 | [l] / [d] | 3.39 | llm (0.6) | Tab1:row6:col1, Tab1:row6:col2 | — | not captured |
-| θ7 (Vp/F, L) | `Q76` · V/F | 12.7 | L | 0.0127 | [l] | 11.1 | llm (0.6) | Tab1:row7:col1, Tab1:row7:col2 | — | not captured |
-| θ12 (CLCR effect on Vm) | `Q900` · equation variable | 0.284 | CLCR effect on Vm | not captured | [clcreffectonvm] | 15.4 | llm (0.6) | Tab1:row11:col1, Tab1:row11:col2 | — | not captured |
-| theta_vm_f_wt | `Q900` · theta_vm_f_wt | 0.617 | not captured | not captured | not captured | 12.5 | not captured (not captured) | Tab1:row8:col1, Tab1:row8:col2 | — | not captured |
-| theta_q63_wt | `Q900` · theta_q63_wt | 0.672 | not captured | not captured | not captured | 16.6 | not captured (not captured) | Tab1:row9:col1, Tab1:row9:col2 | — | not captured |
+| θ1 (Vm, mg/day) | `Q61` · V | 5.63 | N = 42a | not captured | [a] · [n=42] | 5.25 | llm (0.6) | Tab1:row1:col1 | — | not captured |
+| θ2 (Km, mg/L) | `Q1` · Km | 0.694 | mg/L | not captured | [mg] / [l] | 8.55 | llm (0.6) | Tab1:row2:col1 | — | not captured |
+| θ3 (Vc/F, L) | `Q290` · V1/F | 1.54 | L | 0.0015400000000000001 | [l] | 5.49 | llm (0.6) | Tab1:row3:col1 | — | not captured |
+| θ4 (CLO/F, L/day) | `Q27` · CL/F | 0.218 | L/day | 2.5231481481481483e-09 | [l] / [d] | 10.8 | llm (0.6) | Tab1:row4:col1 | — | not captured |
+| θ5 (Ka, day−1) | `Q49` · kabs | 0.117 | day−1 | 1.3541666666666667e-06 | [1] / [d] | 4.20 | llm (0.6) | Tab1:row5:col1 | — | not captured |
+| θ6 (Q/F, L/day) | `Q69` · Q/F | 0.148 | L/day | 1.7129629629629628e-09 | [l] / [d] | 3.39 | llm (0.6) | Tab1:row6:col1 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -64,35 +61,22 @@ Xu C et al., Modeling, Simulation, and Extrapolation…, Journal of pharmacokine
 - table section iiv: 'Kad' routed out of structural estimates ('Interindividual variability (CV%)')
 - table section iiv: 'Block Vm–CL0/Fe' routed out of structural estimates ('Interindividual variability (CV%)')
 - table section residual_error: 'σ2' routed out of structural estimates ('Residual variability')
-- unit_dimension_mismatch: 'θ1 (Vm, mg/day)' → Q367 (unit '[mass] / [time]' vs ontology '[length] ** 3') — route to review
-- routed 'θ4 (CLO/F, L/day)' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
-- dropped unlinked row (NIL): 'θ11 (WT effect on CL0/F)' — extend the ontology if this is a real PK parameter (source ['Tab1:row10:col1', 'Tab1:row10:col2'])
-- unit_dimension_unknown: 'CLCR effect on Vm' (equation variable)
-- covariate effect for Q63 has no base parameter row (kept as unattached equation-variable)
+- unit_dimension_unknown: 'N = 42a' (V)
+- dropped duplicate Q290 ('θ7 (Vp/F, L)', value '12.7') — already have one for this compound
+- dropped unlinked row (NIL): 'θ9 (WT effect on Vm)' — extend the ontology if this is a real PK parameter (source ['Tab1:row8:col1'])
+- dropped unlinked row (NIL): 'θ10 (WT effect on Vc)' — extend the ontology if this is a real PK parameter (source ['Tab1:row9:col1'])
+- dropped unlinked row (NIL): 'θ11 (WT effect on CL0/F)' — extend the ontology if this is a real PK parameter (source ['Tab1:row10:col1'])
+- dropped PD-category row 'θ12 (CLCR effect on Vm)' → Q335 (slope, category G13) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Tab1:row11:col1'])
+- implicit units: 'θ1 (Vm, mg/day)' — the LLM proposed 'mg/day', whose dimension does not fit Q61; left unset
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=sarilumab
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- structure disagreement: deterministic 2C vs LLM 1C — review compartment count
 - status held at route_to_review — not promoted
 - molar mass: none found for 'sarilumab' — its concentrations stay mass-only
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- unparsed cell Tab1:row1:col3 = '5.56 [4.83; 6.52]'
-- unparsed cell Tab1:row2:col3 = '0.667 [0.472; 0.970]'
-- unparsed cell Tab1:row3:col3 = '1.53 [1.24; 1.90]'
-- unparsed cell Tab1:row4:col3 = '0.213 [0.146; 0.267]'
-- unparsed cell Tab1:row5:col3 = '0.117 [0.101; 0.133]'
-- unparsed cell Tab1:row6:col3 = '0.155 [0.109; 0.209]'
-- unparsed cell Tab1:row7:col3 = '13.2 [4.90; 44.3]'
-- unparsed cell Tab1:row8:col3 = '0.616 [0.454; 0.801]'
-- unparsed cell Tab1:row9:col3 = '0.680 [0.479; 0.903]'
-- unparsed cell Tab1:row10:col3 = '1.01 [0.696; 1.58]'
-- unparsed cell Tab1:row11:col3 = '0.271 [0.113; 0.409]'
-- unparsed cell Tab1:row13:col3 = '39.3 [32.4; 47.1]'
-- unparsed cell Tab1:row14:col3 = '74.2 [50.5; 104]'
-- unparsed cell Tab1:row15:col3 = '30.1 [13.1; 41.4]'
-- unparsed cell Tab1:row16:col3 = '36.4 [29.1; 43.4]'
-- unparsed cell Tab1:row17:col3 = '−0.195 [−0.301; −0.094]'
-- unparsed cell Tab1:row19:col3 = '0.459 [0.419; 0.500]'
+- table Tab1: unparsed_numeric_cell
 - LLM selected parameter table(s) 1
 
 ## Validation
@@ -130,18 +114,17 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q1 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Tab1:row2:col1', 'Tab1:row2:col2'] |
-| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab1:row3:col1', 'Tab1:row3:col2'] |
-| C5_dimension_Q367 | fail | [mass] / [time] | mg/day | not captured | not captured | ['Tab1:row1:col1', 'Tab1:row1:col2'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Tab1:row5:col1', 'Tab1:row5:col2'] |
-| C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab1:row6:col1', 'Tab1:row6:col2'] |
-| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab1:row7:col1', 'Tab1:row7:col2'] |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q1 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Tab1:row2:col1'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab1:row4:col1'] |
+| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab1:row3:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Tab1:row5:col1'] |
+| C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab1:row6:col1'] |
+| C5_unit_missing_Q61 | fail | [length] ** 3 | N = 42a | not captured | not captured | ['Tab1:row1:col1'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q290 | pass | volume within physiological range | 1.54 L | not captured | not captured | ['Tab1:row3:col1', 'Tab1:row3:col2'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 12.7 L | not captured | not captured | ['Tab1:row7:col1', 'Tab1:row7:col2'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 0.00908 L/h | not captured | not captured | ['Tab1:row4:col1'] |
+| C9_phys_window_Q290 | pass | volume within physiological range | 1.54 L | not captured | not captured | ['Tab1:row3:col1'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -150,14 +133,24 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_sarilumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Xu_2026` / `Xu_2026::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_sarilumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Xu_2026` / `Xu_2026::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -166,4 +159,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 00:27 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 00:16 UTC</sub>

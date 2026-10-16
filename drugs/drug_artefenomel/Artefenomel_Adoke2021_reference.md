@@ -93,7 +93,7 @@ Adoke Y et al., A randomized, double-blind, phase 2b st…, Malaria journal (202
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs_non_atc/drug_artefenomel/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Adoke_2021` / `Adoke_2021::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs_non_atc/drug_artefenomel/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Adoke_2021` / `Adoke_2021::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

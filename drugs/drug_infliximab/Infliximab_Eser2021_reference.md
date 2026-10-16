@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;infliximab&quot;,&quot;href&quot;:&quot;drugs/drug_infliximab/&quot;},{&quot;label&quot;:&quot;Eser_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Infliximab_Eser2021_reference&quot;,&quot;label&quot;:&quot;Eser_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_infliximab/Infliximab_Eser2021_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Infliximab_Little2022_reference&quot;,&quot;label&quot;:&quot;Little_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_infliximab/Infliximab_Little2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Infliximab_Eser2021_reference&quot;,&quot;label&quot;:&quot;Eser_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_infliximab/Infliximab_Eser2021_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Infliximab_Little2022_reference&quot;,&quot;label&quot;:&quot;Little_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_infliximab/Infliximab_Little2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Infliximab_Song2025_reference&quot;,&quot;label&quot;:&quot;Song_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_infliximab/Infliximab_Song2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Infliximab_Hemperly2025_parameter_estimates&quot;,&quot;label&quot;:&quot;Hemperly_2025_parameter_estimates&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_infliximab/Infliximab_Hemperly2025_parameter_estimates.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Infliximab_Hemperly2025_population&quot;,&quot;label&quot;:&quot;Hemperly_2025_population&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_infliximab/Infliximab_Hemperly2025_population.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -31,7 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parame
 Eser A et al., Increased Induction Infliximab Clearanc…, Journal of clinical pharmac… (2021)
   ·  DOI: [10.1002/jcph.1732](https://doi.org/10.1002/jcph.1732)
 
-<div class="pk-model-meta" hidden drug="infliximab" model-id="Infliximab_Eser2021_reference" status="accepted_with_caveats" stale="false" population="adults with rheumatoid arthritis and ankylosing spondylitis" measured-compound="infliximab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="infliximab" model-id="Infliximab_Eser2021_reference" status="accepted_with_caveats" stale="false" population="patients with rheumatoid arthritis and ankylosing spondylitis" measured-compound="infliximab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted, plus 7 covariate effects.
@@ -41,17 +41,17 @@ Eser A et al., Increased Induction Infliximab Clearanc…, Journal of clinical p
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Baseline CL, L/day | `Q22` · CL | 0.266 | L/day | 3.0787037037037037e-09 | [l] / [d] | 1.5 | llm_corrected (0.6) | jcph1732-tbl-0003:row1:col1, jcph1732-tbl-0003:row1:col2, jcph1732-tbl-0003:row1:col3, jcph1732-tbl-0003:row1:col4, jcph1732-tbl-0003:row1:col5 | — | not captured |
-| Vc, L | `Q63` · V1 | 2.79 | L | 0.00279 | [l] | 0.4 | exact (1.0) | jcph1732-tbl-0003:row2:col1, jcph1732-tbl-0003:row2:col2, jcph1732-tbl-0003:row2:col3, jcph1732-tbl-0003:row2:col4, jcph1732-tbl-0003:row2:col5 | — | not captured |
-| Q, L/day | `Q30` · Q | 0.0557 | L/day | 6.44675925925926e-10 | [l] / [d] | 5.7 | exact (1.0) | jcph1732-tbl-0003:row3:col1, jcph1732-tbl-0003:row3:col2, jcph1732-tbl-0003:row3:col3, jcph1732-tbl-0003:row3:col4, jcph1732-tbl-0003:row3:col5 | — | not captured |
-| Vp, L | `Q64` · V2 | 0.898 | L | 0.000898 | [l] | 3 | exact (1.0) | jcph1732-tbl-0003:row4:col1, jcph1732-tbl-0003:row4:col2, jcph1732-tbl-0003:row4:col3, jcph1732-tbl-0003:row4:col4, jcph1732-tbl-0003:row4:col5 | — | not captured |
-| effect_of_weight_on_baseline_cl | `Q900` · effect_of_weight_on_baseline_cl | 0.729 | not captured | not captured | not captured | 5.8 | not captured (not captured) | jcph1732-tbl-0003:row5:col1, jcph1732-tbl-0003:row5:col2, jcph1732-tbl-0003:row5:col3, jcph1732-tbl-0003:row5:col4, jcph1732-tbl-0003:row5:col5 | — | not captured |
-| effect_of_albumin_on_baseline_cl | `Q900` · effect_of_albumin_on_baseline_cl | -0.32 | not captured | not captured | not captured | 11.2 | not captured (not captured) | jcph1732-tbl-0003:row9:col1, jcph1732-tbl-0003:row9:col2, jcph1732-tbl-0003:row9:col3, jcph1732-tbl-0003:row9:col4, jcph1732-tbl-0003:row9:col5 | — | not captured |
-| effect_of_patient_sex_on_baseline_cl | `Q900` · effect_of_patient_sex_on_baseline_cl | -0.0728 | not captured | not captured | not captured | 13.9 | not captured (not captured) | jcph1732-tbl-0003:row12:col1, jcph1732-tbl-0003:row12:col2, jcph1732-tbl-0003:row12:col3, jcph1732-tbl-0003:row12:col4, jcph1732-tbl-0003:row12:col5 | — | not captured |
-| theta_v1_weight | `Q900` · theta_v1_weight | 1 | not captured | not captured | not captured | not captured | not captured (not captured) | jcph1732-tbl-0003:row6:col1, jcph1732-tbl-0003:row6:col3, jcph1732-tbl-0003:row6:col4, jcph1732-tbl-0003:row6:col5 | — | not captured |
-| theta_q_weight | `Q900` · theta_q_weight | 0.75 | not captured | not captured | not captured | not captured | not captured (not captured) | jcph1732-tbl-0003:row7:col1, jcph1732-tbl-0003:row7:col3, jcph1732-tbl-0003:row7:col4, jcph1732-tbl-0003:row7:col5 | — | not captured |
-| theta_v2_weight | `Q900` · theta_v2_weight | 1 | not captured | not captured | not captured | not captured | not captured (not captured) | jcph1732-tbl-0003:row8:col1, jcph1732-tbl-0003:row8:col3, jcph1732-tbl-0003:row8:col4, jcph1732-tbl-0003:row8:col5 | — | not captured |
-| theta_cl_ada | `Q900` · theta_cl_ada | 0.307 | not captured | not captured | not captured | 10.3 | not captured (not captured) | jcph1732-tbl-0003:row10:col1, jcph1732-tbl-0003:row10:col2, jcph1732-tbl-0003:row10:col3, jcph1732-tbl-0003:row10:col4, jcph1732-tbl-0003:row10:col5 | — | not captured |
+| Baseline CL, L/day | `Q22` · CL | 0.262 | L/day | 3.0324074074074076e-09 | [l] / [d] | not captured | llm_corrected (0.6) | jcph1732-tbl-0003:row1:col1 | — | not captured |
+| Vc, L | `Q63` · V1 | 2.8 | L | 0.0028 | [l] | not captured | exact (1.0) | jcph1732-tbl-0003:row2:col1 | — | not captured |
+| Q, L/day | `Q30` · Q | 0.0511 | L/day | 5.914351851851852e-10 | [l] / [d] | not captured | exact (1.0) | jcph1732-tbl-0003:row3:col1 | — | not captured |
+| Vp, L | `Q64` · V2 | 0.868 | L | 0.0008680000000000001 | [l] | not captured | exact (1.0) | jcph1732-tbl-0003:row4:col1 | — | not captured |
+| effect_of_weight_on_baseline_cl | `Q900` · effect_of_weight_on_baseline_cl | 0.726 | not captured | not captured | not captured | not captured | not captured (not captured) | jcph1732-tbl-0003:row5:col1 | — | not captured |
+| effect_of_weight_on_vp | `Q900` · effect_of_weight_on_vp | 1 | not captured | not captured | not captured | not captured | not captured (not captured) | jcph1732-tbl-0003:row8:col1 | — | not captured |
+| effect_of_albumin_on_baseline_cl | `Q900` · effect_of_albumin_on_baseline_cl | -0.34 | not captured | not captured | not captured | not captured | not captured (not captured) | jcph1732-tbl-0003:row9:col1 | — | not captured |
+| effect_of_ada_concentration_on_baseline_cl | `Q900` · effect_of_ada_concentration_on_baseline_cl | 0.304 | not captured | not captured | not captured | not captured | not captured (not captured) | jcph1732-tbl-0003:row10:col1 | — | not captured |
+| effect_of_patient_sex_on_baseline_cl | `Q900` · effect_of_patient_sex_on_baseline_cl | -0.075 | not captured | not captured | not captured | not captured | not captured (not captured) | jcph1732-tbl-0003:row12:col1 | — | not captured |
+| theta_v1_weight | `Q900` · theta_v1_weight | 1 | not captured | not captured | not captured | not captured | not captured (not captured) | jcph1732-tbl-0003:row6:col1 | — | not captured |
+| theta_q_weight | `Q900` · theta_q_weight | 0.75 | not captured | not captured | not captured | not captured | not captured (not captured) | jcph1732-tbl-0003:row7:col1 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -61,15 +61,18 @@ Eser A et al., Increased Induction Infliximab Clearanc…, Journal of clinical p
 ## Departures & gaps
 
 **Interpretation flags:**
-- covariate level 'Effect of weight on baseline CL' → Q900:effect_of_weight_on_baseline_cl = 0.729 (linear_fractional on Q22)
-- covariate level 'Effect of albumin on baseline CL' → Q900:effect_of_albumin_on_baseline_cl = -0.32 (linear_fractional on Q22)
-- dropped duplicate Q22 ('Effect of glucose on baseline CL', value '0.0725') — already have one for this compound
-- covariate level 'Effect of patient sex on baseline CL' → Q900:effect_of_patient_sex_on_baseline_cl = -0.0728 (linear_fractional on Q22)
-- dropped unlinked row (NIL): 'Effect of CRP on baseline CL' — extend the ontology if this is a real PK parameter (source ['jcph1732-tbl-0003:row13:col1', 'jcph1732-tbl-0003:row13:col2', 'jcph1732-tbl-0003:row13:col3', 'jcph1732-tbl-0003:row13:col4', 'jcph1732-tbl-0003:row13:col5'])
+- covariate level 'Effect of weight on baseline CL' → Q900:effect_of_weight_on_baseline_cl = 0.726 (linear_fractional on Q22)
+- covariate level 'Effect of weight on Vp' → Q900:effect_of_weight_on_vp = 1 (linear_fractional on Q22)
+- covariate level 'Effect of albumin on baseline CL' → Q900:effect_of_albumin_on_baseline_cl = -0.34 (linear_fractional on Q22)
+- covariate level 'Effect of ADA concentration on baseline CL' → Q900:effect_of_ada_concentration_on_baseline_cl = 0.304 (linear_fractional on Q22)
+- dropped duplicate Q22 ('Effect of glucose on baseline CL', value '0.0709') — already have one for this compound
+- covariate level 'Effect of patient sex on baseline CL' → Q900:effect_of_patient_sex_on_baseline_cl = -0.075 (linear_fractional on Q22)
+- dropped unlinked row (NIL): 'Effect of CRP on baseline CL' — extend the ontology if this is a real PK parameter (source ['jcph1732-tbl-0003:row13:col1'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=infliximab
 - molar mass: none found for 'infliximab' — its concentrations stay mass-only
 
 **Extraction notes:**
+- table jcph1732-tbl-0003: unbound_uncertainty
 - LLM selected parameter table(s) 3
 
 ## Validation
@@ -111,15 +114,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['jcph1732-tbl-0003:row1:col1', 'jcph1732-tbl-0003:row1:col2', 'jcph1732-tbl-0003:row1:col3', 'jcph1732-tbl-0003:row1:col4', 'jcph1732-tbl-0003:row1:col5'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['jcph1732-tbl-0003:row3:col1', 'jcph1732-tbl-0003:row3:col2', 'jcph1732-tbl-0003:row3:col3', 'jcph1732-tbl-0003:row3:col4', 'jcph1732-tbl-0003:row3:col5'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['jcph1732-tbl-0003:row2:col1', 'jcph1732-tbl-0003:row2:col2', 'jcph1732-tbl-0003:row2:col3', 'jcph1732-tbl-0003:row2:col4', 'jcph1732-tbl-0003:row2:col5'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['jcph1732-tbl-0003:row4:col1', 'jcph1732-tbl-0003:row4:col2', 'jcph1732-tbl-0003:row4:col3', 'jcph1732-tbl-0003:row4:col4', 'jcph1732-tbl-0003:row4:col5'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.266 | not captured | not captured | ['jcph1732-tbl-0003:row1:col1', 'jcph1732-tbl-0003:row1:col2', 'jcph1732-tbl-0003:row1:col3', 'jcph1732-tbl-0003:row1:col4', 'jcph1732-tbl-0003:row1:col5'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['jcph1732-tbl-0003:row1:col1'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['jcph1732-tbl-0003:row3:col1'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['jcph1732-tbl-0003:row2:col1'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['jcph1732-tbl-0003:row4:col1'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.262 | not captured | not captured | ['jcph1732-tbl-0003:row1:col1'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.0111 L/h | not captured | not captured | ['jcph1732-tbl-0003:row1:col1', 'jcph1732-tbl-0003:row1:col2', 'jcph1732-tbl-0003:row1:col3', 'jcph1732-tbl-0003:row1:col4', 'jcph1732-tbl-0003:row1:col5'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 2.79 L | not captured | not captured | ['jcph1732-tbl-0003:row2:col1', 'jcph1732-tbl-0003:row2:col2', 'jcph1732-tbl-0003:row2:col3', 'jcph1732-tbl-0003:row2:col4', 'jcph1732-tbl-0003:row2:col5'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 0.898 L | not captured | not captured | ['jcph1732-tbl-0003:row4:col1', 'jcph1732-tbl-0003:row4:col2', 'jcph1732-tbl-0003:row4:col3', 'jcph1732-tbl-0003:row4:col4', 'jcph1732-tbl-0003:row4:col5'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.0109 L/h | not captured | not captured | ['jcph1732-tbl-0003:row1:col1'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 2.8 L | not captured | not captured | ['jcph1732-tbl-0003:row2:col1'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 0.868 L | not captured | not captured | ['jcph1732-tbl-0003:row4:col1'] |
 
 **Reviewer per-scenario checks:**
 
@@ -139,10 +142,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_infliximab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Eser_2021` / `Eser_2021::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_infliximab/models/modelica/Infliximab_Eser2021_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_infliximab/models/modelica/Infliximab_Eser2021_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_infliximab/models/modelica/Infliximab_Eser2021_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_infliximab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Eser_2021` / `Eser_2021::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_infliximab/models/modelica/Infliximab_Eser2021_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_infliximab/models/modelica/Infliximab_Eser2021_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_infliximab/models/modelica/Infliximab_Eser2021_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -160,7 +163,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_infliximab/Infliximab_Eser2021_reference/Infliximab_Eser2021_reference.svg" alt="Infliximab_Eser2021_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_infliximab/Infliximab_Eser2021_reference/Infliximab_Eser2021_reference.svg" alt="Infliximab_Eser2021_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -173,4 +176,4 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 23:53 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 03:59 UTC</sub>

@@ -206,9 +206,9 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_micafungin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Albanell-Fernández_2025` / `Albanell-Fernández_2025::w_rthwein_2012_41`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_micafungin/models/modelica/_needs_review/Micafungin_AlbanellFernndez2025_w_rthwein_2012_41.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_micafungin/models/modelica/_needs_review/Micafungin_AlbanellFernndez2025_w_rthwein_2012_41.deviation.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_micafungin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Albanell-Fernández_2025` / `Albanell-Fernández_2025::w_rthwein_2012_41`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_micafungin/models/modelica/_needs_review/Micafungin_AlbanellFernndez2025_w_rthwein_2012_41.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_micafungin/models/modelica/_needs_review/Micafungin_AlbanellFernndez2025_w_rthwein_2012_41.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

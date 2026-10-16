@@ -4,7 +4,7 @@
 
 # erythropoietin — `Erythropoietin_Gaudard2003_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -16,26 +16,24 @@
 
 ### Reviewer guidance
 
-**No model parameters were extracted from this paper.**
+**Only clearance was extracted — no volume.**
 
-Nothing in the extracted data describes the drug's disposition, so there is no model to build. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — erythropoietin: CL/F 4.33 L/h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has recombinant human erythropoietin, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:37:55.767845+00:00) predates the upstream re-run (2026-10-05 21:06:13.752555+00:00). Current validate status: `needs_review`.
-
-> **Dose compound ≠ measured compound:** dosed `recombinant human erythropoietin`, measured `erythropoietin`.
+> **Dose compound ≠ measured compound:** dosed `recombinant human erythropoietin (rHuEPO)`, measured `erythropoietin`.
 
 ## Citation
 Gaudard A et al., Pharmacokinetic-pharmacodynamic modelli…, Clinical drug investigation (2003)
   ·  DOI: [10.2165/00044011-200323030-00003](https://doi.org/10.2165/00044011-200323030-00003)
 
-<div class="pk-model-meta" hidden drug="erythropoietin" model-id="Erythropoietin_Gaudard2003_reference" status="needs_review" stale="true" population="trained athletes" measured-compound="erythropoietin" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="erythropoietin" model-id="Erythropoietin_Gaudard2003_reference" status="needs_review" stale="false" population="trained athletes" measured-compound="erythropoietin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 2 extracted.
+**Parameters:** 1 extracted.
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -44,8 +42,7 @@ Gaudard A et al., Pharmacokinetic-pharmacodynamic modelli…, Clinical drug inve
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| The total clearance divided by bio-availability | `Q27` · CL/F | 4.33 | L/h | 1.202777777777778e-06 | [l] / [h] | not captured | llm_corrected (0.6) | Gaudard_2003:abstract | — | not captured |
-| The half-life (t1/2) | `Q57` · t1/2z | 10.2 | days | 881279.9999999999 | [d] | not captured | llm (0.6) | Gaudard_2003:abstract, Gaudard_2003:abstract, Gaudard_2003:abstract | — | not captured |
+| total clearance divided by bio-availability | `Q27` · CL/F | 4.33 | L/h | 1.202777777777778e-06 | [l] / [h] | not captured | llm_corrected (0.6) | Gaudard_2003:abstract | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -55,6 +52,7 @@ Gaudard A et al., Pharmacokinetic-pharmacodynamic modelli…, Clinical drug inve
 ## Departures & gaps
 
 **Interpretation flags:**
+- dropped unlinked row (NIL): 'half-life (t1/2) k(0) (equilibration delay)' — extend the ontology if this is a real PK parameter (source ['Gaudard_2003:abstract', 'Gaudard_2003:abstract', 'Gaudard_2003:abstract'])
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=erythropoietin
 - molar mass: none found for 'erythropoietin' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
@@ -95,11 +93,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Gaudard_2003:abstract'] |
-| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Gaudard_2003:abstract', 'Gaudard_2003:abstract', 'Gaudard_2003:abstract'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 4.33 L/h | not captured | not captured | ['Gaudard_2003:abstract'] |
@@ -111,7 +108,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_erythropoietin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Gaudard_2003` / `Gaudard_2003::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_erythropoietin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Gaudard_2003` / `Gaudard_2003::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -137,4 +134,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 21:06 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 20:30 UTC</sub>

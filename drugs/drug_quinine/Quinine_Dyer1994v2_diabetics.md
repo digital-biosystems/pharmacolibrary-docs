@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;quinine&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/&quot;},{&quot;label&quot;:&quot;Dyer_1994_2 \u00b7 diabetics&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Quinine_Hendriksen2013_reference&quot;,&quot;label&quot;:&quot;Hendriksen_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Hendriksen2013_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quinine_Kloprogge2014_reference&quot;,&quot;label&quot;:&quot;Kloprogge_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Kloprogge2014_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quinine_Phillips1986_reference&quot;,&quot;label&quot;:&quot;Phillips_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Phillips1986_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Quinine_Hendriksen2013_reference&quot;,&quot;label&quot;:&quot;Hendriksen_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Hendriksen2013_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quinine_Phillips1986_mean_s_d&quot;,&quot;label&quot;:&quot;Phillips_1986_mean_s_d&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Phillips1986_mean_s_d.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quinine_Kloprogge2014_reference&quot;,&quot;label&quot;:&quot;Kloprogge_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Kloprogge2014_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quinine_Michels2019_estimate&quot;,&quot;label&quot;:&quot;Michels_2019_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Michels2019_estimate.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Maciel_2024_P_berghei_infected_erythrocytes&quot;,&quot;label&quot;:&quot;Maciel_2024 \u00b7 P. berghei-infected erythrocytes&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/pd_Maciel_2024_P_berghei_infected_erythrocytes.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Pukrittayakamee_2003_PMR&quot;,&quot;label&quot;:&quot;Pukrittayakamee_2003 \u00b7 PMR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/pd_Pukrittayakamee_2003_PMR.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # quinine — `Quinine_Dyer1994v2_diabetics`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.9). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.9). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -17,37 +17,37 @@
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**V/F, tlag, t1/2ka  and Cmax have no unit.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. A reported unit could not be converted (Cmax), so that value has no SI equivalent.
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (V/F and fu), so that value has no SI equivalent. Extracted — quinine: V/F 1.7 V/F, tlag 1.2, t1/2ka 0.7, Cmax 3.7, t1/2z 20 h, CL/F 1.14 mL/kg/min, fu 16 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[volume of distribution (v/f) 1 kg-1].parameter_id`: this record has Q353, the second reading Q76. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> **Dose compound ≠ measured compound:** dosed `quinine sulphate`, measured `quinine`.
-
 ## Citation
 Dyer JR et al., The pharmacokinetics and pharmacodynami…, British journal of clinical… (1994)
   ·  DOI: [10.1111/j.1365-2125.1994.tb04343.x](https://doi.org/10.1111/j.1365-2125.1994.tb04343.x)
 
-<div class="pk-model-meta" hidden drug="quinine" model-id="Quinine_Dyer1994v2_diabetics" status="rejected" stale="false" population="elderly diabetic and non-diabetic adults" measured-compound="quinine" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="quinine" model-id="Quinine_Dyer1994v2_diabetics" status="needs_review" stale="false" population="diabetic and non-diabetic elderly" measured-compound="quinine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 5 extracted.
+**Parameters:** 7 extracted.
 
-**Parameterization:** Vnorm/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Volume of distribution (V/F) 1 kg-1 | `Q353` · Vnorm/F | 1.70 | L/kg | 0.119 | L | not captured | llm_corrected (0.6) | Dyer_1994_2_table_p3_1:row0:col2 | — | not captured |
-| Absorption lag-time (t_lag) h | `Q83` · tlag | 1.2 | h | 4320.0 | h | not captured | llm_confirmed (0.6) | Dyer_1994_2_table_p3_1:row1:col2 | — | not captured |
-| Absorption half-time (t_1/2,abs) h | `Q95` · t1/2ka | 0.7 | h | 2520.0 | h | not captured | llm_corrected (0.6) | Dyer_1994_2_table_p3_1:row2:col2 | — | not captured |
-| Maximum concentration (C_max) mg 1-1 | `Q32` · Cmax | 3.7 | mg/L | not captured | mg/L | not captured | llm_confirmed (0.6) | Dyer_1994_2_table_p3_1:row3:col2 | — | not captured |
-| Elimination half-time (t_1/2,l) h | `Q57` · t1/2z | 20.0 | h | 72000.0 | h | not captured | llm (0.6) | Dyer_1994_2_table_p3_1:row4:col2 | — | not captured |
+| Volume of distribution (V/F) 1 kg-1 | `Q76` · V/F | 1.70 | V/F | not captured | [v] / [f] | not captured | llm_corrected (0.6) | Dyer_1994_2_table_p3_1:row0:col2 | — | not captured |
+| Absorption lag-time (t_lag) h | `Q83` · tlag | 1.2 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | Dyer_1994_2_table_p3_1:row1:col2 | — | not captured |
+| Absorption half-time (t_1/2,abs) h | `Q95` · t1/2ka | 0.7 | not captured | not captured | not captured | not captured | llm_corrected (0.6) | Dyer_1994_2_table_p3_1:row2:col2 | — | not captured |
+| Maximum concentration (C_max) mg 1-1 | `Q32` · Cmax | 3.7 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | Dyer_1994_2_table_p3_1:row3:col2 | — | not captured |
+| Elimination half-time (t_1/2,l) h | `Q57` · t1/2z | 20.0 | h | 72000.0 | h | not captured | llm_confirmed (0.6) | Dyer_1994_2_table_p3_1:row4:col2 | — | not captured |
+| Systemic clearance (CL/F) ml kg-1 min-1 | `Q27` · CL/F | 1.14 | mL/kg/min | 1.33e-06 | L/h | not captured | llm_corrected (0.6) | Dyer_1994_2_table_p3_1:row5:col2, tab_0:footnote | — | not captured |
+| Serum unbound drug (%) | `Q46` · fu | 16 | % | not captured | [%] | not captured | llm_confirmed (0.6) | Dyer_1994_2_table_p3_1:row6:col2 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -57,27 +57,20 @@ Dyer JR et al., The pharmacokinetics and pharmacodynami…, British journal of c
 ## Departures & gaps
 
 **Interpretation flags:**
-- NIL: refused to back-fill base 'CL/F' from footnote/prose loose number 1.07 (source ['tab_0:footnote', 'tab_0:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'fu' from footnote/prose loose number 19 (source ['tab_0:footnote', 'tab_0:footnote']); the table cell was unparseable — needs review
-- implicit units: 'Volume of distribution (V/F) 1 kg-1' → L/kg (from the paper text: 'Table 2 lists volume of distribution normalized per kg (V/F 1 kg-1), i.e. L/kg.')
-- implicit units: 'Absorption lag-time (t_lag) h' → h (from the paper text: "Table 2 shows absorption lag-time in h; abstract states 'mean absorption lag-time of approximately 1 h'.")
-- implicit units: 'Absorption half-time (t_1/2,abs) h' → h (from the paper text: 'Table 2 lists absorption half-time (t1/2,abs) in h.')
-- implicit units: 'Maximum concentration (C_max) mg 1-1' → mg/L (from the paper text: 'Table 2 gives Cmax as mg 1-1 (mg/L); assay concentrations reported in mg 1-1.')
-- implicit units: 'Elimination half-time (t_1/2,l) h' → h (from the paper text: 'Table 2 lists elimination half-time (t1/2,z) in h.')
+- unit_dimension_unknown: 'V/F' (V/F)
+- dropped value-less row: '(t,/2,z) h'
+- dropped value-less row: 'Serum unbound drug (%)19 (10-39)16 (9-24) 11, -3'
+- implicit units: 'Elimination half-time (t_1/2,l) h' → h (from the paper text: "The table excerpt in the prompt shows '(t1/2, z) h' directly above the values for systemic clearance, or the column head")
+- implicit units: 'Systemic clearance (CL/F) ml kg-1 min-1' → mL/kg/min (from the paper text: "The table excerpt in the prompt explicitly shows 'Systemic clearance ... (CL/F) ml kg-1 min-1' next to the value 1.14 (w")
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=quinine
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at route_to_review — not promoted
 - population split: 'diabetics' subgroup of Dyer_1994_2 (paper reports 2 populations: diabetics, non-diabetics)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- final table tab_0: grid unusable → re-running vision table extraction for Dyer_1994_2
-- unparsed cell Dyer_1994_2_table_p3_1:row0:col3 = '0.56, -0.56'
-- unparsed cell Dyer_1994_2_table_p3_1:row1:col3 = '0.3, -0.7'
-- unparsed cell Dyer_1994_2_table_p3_1:row2:col3 = '0.3, -0.5'
-- unparsed cell Dyer_1994_2_table_p3_1:row3:col3 = '0.5, -1.1'
-- unparsed cell Dyer_1994_2_table_p3_1:row4:col3 = '6.4, -6.6'
-- unparsed cell Dyer_1994_2_table_p3_1:row5:col2 = '1.14 ±-0.58'
-- unparsed cell Dyer_1994_2_table_p3_1:row5:col3 = '0.41, -0.55'
+- table Dyer_1994_2_table_p3_1: unparsed_numeric_cell
 
 ## Validation
 
@@ -106,15 +99,18 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
-| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Dyer_1994_2_table_p3_1:row3:col2'] |
-| C5_dimension_Q353 | pass | [length] ** 3 | not captured | not captured | not captured | ['Dyer_1994_2_table_p3_1:row0:col2'] |
+| C0_has_structural_params | pass | not captured | 7 | not captured | not captured | not captured |
+| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Dyer_1994_2_table_p3_1:row5:col2', 'tab_0:footnote'] |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Dyer_1994_2_table_p3_1:row4:col2'] |
-| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Dyer_1994_2_table_p3_1:row1:col2'] |
-| C5_dimension_Q95 | pass | [time] | not captured | not captured | not captured | ['Dyer_1994_2_table_p3_1:row2:col2'] |
+| C5_unit_missing_Q32 | fail | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Dyer_1994_2_table_p3_1:row3:col2'] |
+| C5_unit_missing_Q76 | fail | [length] ** 3 | V/F | not captured | not captured | ['Dyer_1994_2_table_p3_1:row0:col2'] |
+| C5_unit_missing_Q83 | fail | [time] | not captured | not captured | not captured | ['Dyer_1994_2_table_p3_1:row1:col2'] |
+| C5_unit_missing_Q95 | fail | [time] | not captured | not captured | not captured | ['Dyer_1994_2_table_p3_1:row2:col2'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 4.79 L/h | not captured | not captured | ['Dyer_1994_2_table_p3_1:row5:col2', 'tab_0:footnote'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -123,14 +119,24 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_quinine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Dyer_1994_2` / `Dyer_1994_2::diabetics`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_quinine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Dyer_1994_2` / `Dyer_1994_2::diabetics`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -139,4 +145,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 08:36 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 03:32 UTC</sub>

@@ -112,9 +112,9 @@ Rambiritch V et al., Population pharmacokinetic modeling of…, Clinical pharmac
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_glibenclamide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Rambiritch_2016_2` / `Rambiritch_2016_2::final`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_glibenclamide/models/modelica/_needs_review/Glibenclamide_Rambiritch2016v2_final.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_glibenclamide/models/modelica/_needs_review/Glibenclamide_Rambiritch2016v2_final.deviation.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_glibenclamide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Rambiritch_2016_2` / `Rambiritch_2016_2::final`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_glibenclamide/models/modelica/_needs_review/Glibenclamide_Rambiritch2016v2_final.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_glibenclamide/models/modelica/_needs_review/Glibenclamide_Rambiritch2016v2_final.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

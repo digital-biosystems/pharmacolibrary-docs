@@ -196,10 +196,10 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_fruquintinib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Zhou_2025` / `Zhou_2025::nct04557397`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_fruquintinib/models/modelica/Fruquintinib_Zhou2025_nct04557397.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_fruquintinib/models/modelica/Fruquintinib_Zhou2025_nct04557397.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_fruquintinib/models/modelica/Fruquintinib_Zhou2025_nct04557397.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_fruquintinib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Zhou_2025` / `Zhou_2025::nct04557397`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_fruquintinib/models/modelica/Fruquintinib_Zhou2025_nct04557397.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_fruquintinib/models/modelica/Fruquintinib_Zhou2025_nct04557397.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_fruquintinib/models/modelica/Fruquintinib_Zhou2025_nct04557397.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

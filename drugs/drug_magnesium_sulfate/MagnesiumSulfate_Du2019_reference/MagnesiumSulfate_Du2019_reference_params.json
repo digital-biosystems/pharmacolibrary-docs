@@ -1,0 +1,32 @@
+{
+ "dose_source": "library default",
+ "model_id": "MagnesiumSulfate_Du2019_reference",
+ "molar_masses": {
+  "central.C": 0.024305
+ },
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.0333333333333333e-06,
+  "F": 1.0,
+  "MM": 0.024305,
+  "VdPerKg": 0.00022,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05,
+  "k12": 6.601731601731602e-05,
+  "k21": 5.980392156862745e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662051
+ },
+ "reference_peaks": {
+  "central.C": 0.00027607215925370976
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

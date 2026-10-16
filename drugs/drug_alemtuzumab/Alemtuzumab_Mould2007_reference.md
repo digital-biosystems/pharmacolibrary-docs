@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01X&quot;,&quot;href&quot;:&quot;atc/L01X.md&quot;},{&quot;label&quot;:&quot;alemtuzumab&quot;,&quot;href&quot;:&quot;drugs/drug_alemtuzumab/&quot;},{&quot;label&quot;:&quot;Mould_2007 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Alemtuzumab_Dong2022_reference&quot;,&quot;label&quot;:&quot;Dong_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alemtuzumab/Alemtuzumab_Dong2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Alemtuzumab_Dong2022_reference&quot;,&quot;label&quot;:&quot;Dong_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alemtuzumab/Alemtuzumab_Dong2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Dong_2022_ALC&quot;,&quot;label&quot;:&quot;Dong_2022 \u00b7 ALC&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_alemtuzumab/pd_Dong_2022_ALC.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Mould_2007_WBC&quot;,&quot;label&quot;:&quot;Mould_2007 \u00b7 WBC&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_alemtuzumab/pd_Mould_2007_WBC.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_van_2025_Tcells&quot;,&quot;label&quot;:&quot;van_2025 \u00b7 Tcells&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_alemtuzumab/pd_van_2025_Tcells.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,13 +17,13 @@
 
 ### Reviewer guidance
 
-**The elimination rate constant for alemtuzumab is assigned units of micrograms per liter, which is dimensionally invalid for a rate constant.**
+**C5 dimension mismatch on a structural parameter.**
 
-The record lists the elimination rate constant with a value of 338 and units of micrograms per liter, a concentration unit rather than a reciprocal time unit. This dimensional mismatch on a structural parameter caused the rejection. Additionally, the record was built from the abstract alone, so reported summary statistics stood in for a fitted model. Extracted — alemtuzumab: kel 338 microg l(-1), Q 1.05 l h(-1), Ctrough 13.2 microg ml(-1), AUC 484 microg h(-1) ml(-1).
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — alemtuzumab: kel 338 microg l(-1), Q 1.05 l h(-1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has alemtuzumab, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Mould DR et al., Population pharmacokinetics-pharmacodyn…, British journal of clinical… (2007)
@@ -32,7 +32,7 @@ Mould DR et al., Population pharmacokinetics-pharmacodyn…, British journal of 
 <div class="pk-model-meta" hidden drug="alemtuzumab" model-id="Alemtuzumab_Mould2007_reference" status="rejected" stale="false" population="patients with B-cell chronic lymphocytic leukaemia" measured-compound="alemtuzumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 4 extracted.
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -43,8 +43,6 @@ Mould DR et al., Population pharmacokinetics-pharmacodyn…, British journal of 
 |---|---|---|---|---|---|---|---|---|---|---|
 | K(m) | `Q47` · kel | 338 | microg l(-1) | not captured | [µg] / [l] | not captured | exact (1.0) | Mould_2007:abstract | — | not captured |
 | Q | `Q30` · Q | 1.05 | l h(-1) | 2.916666666666667e-07 | [l] / [h] | not captured | exact (1.0) | Mould_2007:abstract | — | not captured |
-| maximal trough concentration | `Q37` · Ctrough | 13.2 | microg ml(-1) | not captured | [µg] / [ml] | not captured | llm_confirmed (0.6) | Mould_2007:abstract | — | not captured |
-| AUC(0-tau) | `Q88` · AUC | 484 | microg h(-1) ml(-1) | not captured | [µg] / [[h] · [ml]] | not captured | exact (1.0) | Mould_2007:abstract | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -63,7 +61,6 @@ Mould DR et al., Population pharmacokinetics-pharmacodyn…, British journal of 
 - unit_dimension_mismatch: 'K(m)' → Q47 (unit '[mass] / [length] ** 3' vs ontology '1 / [time]') — route to review
 - dropped duplicate Q61 ('V(1)', value 11.3) — already have one for this compound
 - dropped duplicate Q61 ('V(2)', value 41.5) — already have one for this compound
-- unit_dimension_mismatch: 'AUC(0-tau)' → Q88 (unit '[mass] / [time] / [length] ** 3' vs ontology '[mass] * [time] / [length] ** 3') — route to review
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=alemtuzumab
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
@@ -74,7 +71,7 @@ Mould DR et al., Population pharmacokinetics-pharmacodyn…, British journal of 
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Mould_2007_metadata.yaml (7 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Mould_2007_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -116,14 +113,12 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Mould_2007:abstract'] |
-| C5_dimension_Q37 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Mould_2007:abstract'] |
 | C5_dimension_Q47 | fail | [mass] / [length] ** 3 | microg l(-1) | not captured | not captured | ['Mould_2007:abstract'] |
 | C5_dimension_Q61 | fail | [mass] / [time] | microg h(-1) | not captured | not captured | ['Mould_2007:abstract'] |
-| C5_dimension_Q88 | fail | [mass] / [time] / [length] ** 3 | microg h(-1) ml(-1) | not captured | not captured | ['Mould_2007:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
 <details class="legend">
@@ -133,7 +128,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_alemtuzumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Mould_2007` / `Mould_2007::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_alemtuzumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Mould_2007` / `Mould_2007::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -149,4 +144,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 22:00 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 04:01 UTC</sub>

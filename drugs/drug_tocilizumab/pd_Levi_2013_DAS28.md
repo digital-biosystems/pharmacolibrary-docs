@@ -13,11 +13,11 @@
 
 ## Record summary
 
-**As extracted:** Tocilizumab (concentrations from the PK model of Bastida_2019) drives Disease Activity Score using 28 joints: indirect response — drug inhibits the production of Disease Activity Score using 28 joints.
+**As extracted:** Tocilizumab (concentrations from the PK model of Arrivé_2024) drives Disease Activity Score using 28 joints: indirect response — drug inhibits the production of Disease Activity Score using 28 joints.
 
 **Model:** No model was generated from this record.
 
-> The model describes tocilizumab inhibiting the production of DAS28 via a proportional indirect response mechanism. No specific potency or rate parameter values are provided in the available record or excerpts.
+> The record describes an indirect response model where tocilizumab concentration inhibits the production of DAS28 via a proportional mechanism. As no full text is available, the specific mechanism details, potency, and rate parameters are not stated in the provided materials.
 >
 > <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 

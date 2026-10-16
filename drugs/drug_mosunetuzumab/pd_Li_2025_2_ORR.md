@@ -13,17 +13,17 @@
 
 ## Record summary
 
-**As extracted:** Mosunetuzumab (concentrations from the PK model of Bender_2024) drives Objective response rate: direct Emax (saturable) effect.
+**As extracted:** Mosunetuzumab AUC0-42 (the dose) drives Objective response rate: direct Emax (saturable) effect.
 
 **Model:** No model was generated from this record.
 
-> The paper describes an Emax logistic regression model where the two-cycle area under the concentration-time curve (AUC0-42) of mosunetuzumab drives the objective response rate (ORR), with a theoretical maximal response (Emax) of 81.4% and an exposure corresponding to 90% of the maximal effect (E90) of 38.4 day*μg/mL. The paper does not specify a mechanistic link (e.g., inhibition of production or elimination) between the drug concentration and the binary response, nor does it provide an IC50 or EC50 value.
+> The probability of objective response rate increases with mosunetuzumab AUC0-42 exposure via an Emax logistic regression model, plateauing at a theoretical maximal response (Emax) of 81.4%. The AUC0-42 value corresponding to 90% of the maximal response (E90) was estimated at 38.4 day*μg/mL.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Li_2025_2`
 - **model family:** `emax`
-- **driver:** `cited_pk`
+- **driver:** `dose_only`
 - **tier:** population
 - **effect:** stimulation/unknown
 

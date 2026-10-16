@@ -13,11 +13,11 @@
 
 ## Record summary
 
-**As extracted:** Ritlecitinib (concentrations from the PK model of Purohit_2023::study_1_30_mg_qd) drives eyebrow assessment: indirect response — drug stimulates the production of eyebrow assessment.
+**As extracted:** Ritlecitinib (concentrations from the PK model of Purohit_2023) drives eyebrow assessment: indirect response — drug stimulates the production of eyebrow assessment.
 
 **Model:** No model was generated from this record.
 
-> Ritlecitinib concentrations (ng/mL) stimulate eyebrow assessment (EBA) scores via an indirect response mechanism where the drug stimulates the production rate (kin) of the response, with kin,drug assumed equal to kout,drug. Key parameters include an EC50 of 10.6 ng/mL (recorded; note paper excerpt lists 40.1 ng/mL for EBA), an Emax of 11.0, and a drug onset half-life (kin,drug) of 34.1 weeks.
+> Ritlecitinib stimulates the production of the eyebrow assessment (EBA) score via an indirect response model, with an effect delay described by kin,drug set equal to kout,drug (34.1 weeks). The effect is parameterized by an Emax of 11.0 and an EC50 of 40.13 ng/mL.
 >
 > <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
@@ -34,13 +34,12 @@ Wang Y et al., Population exposure-response analysis o…, CPT: pharmacometrics 
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | Maximum Drug effect (E max) | `Q320` · not captured | 11.0 | not captured | not captured | llm (not captured) | Wang_2025:pdv3 |
-| PD (effect) | Drug concentration producing half of the maximum stimulation (EC 50) | `Q321` · not captured | 10.6 | ng/mL | not captured | llm (not captured) | Wang_2025:pdv3 |
-| PD (effect) | Half‐Life of Drug Onset (weeks, k in,drug) | `Q327` · not captured | 34.1 | weeks | not captured | llm (not captured) | Wang_2025:pdv3 |
-| PD (effect) | Baseline (B 1) | `Q324` · not captured | 6.05 | not captured | not captured | llm (not captured) | Wang_2025:pdv3 |
-| model term | Difference in baselines for score 3 and score 2 (B2) | `Q900` · not captured | 1.01 | not captured | not captured | llm (not captured) | Wang_2025:pdv3 |
-| model term | Difference in baselines for score 2 and score 1 (B3) | `Q900` · not captured | 1.11 | not captured | not captured | llm (not captured) | Wang_2025:pdv3 |
-| model term | Effect of Asian on E max | `Q900` · not captured | 0.487 | not captured | not captured | llm (not captured) | Wang_2025:pdv3 |
+| PD (effect) | Maximum Drug effect | `Q320` · not captured | 11.0 | not captured | not captured | llm (not captured) | Wang_2025:pdv3 |
+| PD (effect) | Drug concentration producing half of the maximum stimulation | `Q321` · not captured | 40.13 | ng/mL | not captured | llm (not captured) | Wang_2025:pdv3 |
+| PD (effect) | Baseline | `Q324` · not captured | 6.05 | not captured | not captured | exact (not captured) | Wang_2025:pdv3 |
+| — | Difference in baselines for score 3 and score 2 | `Q100` · not captured | 1.01 | not captured | not captured | nil (not captured) | Wang_2025:pdv3 |
+| — | Difference in baselines for score 2 and score 1 | `Q100` · not captured | 1.11 | not captured | not captured | nil (not captured) | Wang_2025:pdv3 |
+| PD (effect) | kin,drug | `Q327` · not captured | 34.1 | weeks | not captured | llm (not captured) | Wang_2025:pdv3 |
 | variability | ωEmax2 | `Q312` · not captured | 0.409 | not captured | not captured | llm (not captured) | Wang_2025:pdv3 |
 
 <details class="legend">

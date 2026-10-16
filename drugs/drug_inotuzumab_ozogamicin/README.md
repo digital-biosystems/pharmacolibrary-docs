@@ -17,20 +17,29 @@ Inotuzumab ozogamicin is an antibody-drug conjugate used to treat a form of acut
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 12:48 | 6:03 | 0/0/2 | 1/0/0 | 0/0/0 | 75,905/37,263 | openai / gpt-6-luna | 2 | 0/2 | 2/0 | 0 |
+| 2026-10-14 19:34 | 3:55 | 0/1/1 | 0/0/0 | 0/0/0 | 109,436/18,940 | einfracz / qwen3.8-27b | 2 | 0/2 | 2/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.727). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: C1_half_life_beta failed (ratio 0.2622)</sub><br><sub>route_to: `human_review`</sub> | [Garrett_2019_reference](drugs/drug_inotuzumab_ozogamicin/InotuzumabOzogamicin_Garrett2019_reference.md) | — | 2-compartment (no model) | 4 | Garrett M et al., Population pharmacokinetics of inotuzum…, Journal of pharmacokinetics… (2019) | [10.1007/s10928-018-9614-9](https://doi.org/10.1007/s10928-018-9614-9) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.778). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub><br><sub>route_to: `human_review`</sub> | [Wu_2024_reference](drugs/drug_inotuzumab_ozogamicin/InotuzumabOzogamicin_Wu2024_reference.md) | — | 2-compartment (no model) | 4 | Wu JH et al., Population Pharmacokinetics of Inotuzum…, Clinical pharmacokinetics (2024) | [10.1007/s40262-024-01386-z](https://doi.org/10.1007/s40262-024-01386-z) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.778). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q47 — no SI value to build from</sub><br><sub>blocking: C1_half_life_beta failed (ratio 0.2191)</sub><br><sub>route_to: `human_review`</sub> | [Wu_2024_reference](drugs/drug_inotuzumab_ozogamicin/InotuzumabOzogamicin_Wu2024_reference.md) | — | 2-compartment (no model) | 5 (+1 cov.) | Wu JH et al., Population Pharmacokinetics of Inotuzum…, Clinical pharmacokinetics (2024) | [10.1007/s40262-024-01386-z](https://doi.org/10.1007/s40262-024-01386-z) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.727). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Garrett_2019_reference](drugs/drug_inotuzumab_ozogamicin/InotuzumabOzogamicin_Garrett2019_reference.md) | — | 2-compartment (no model) | 3 | Garrett M et al., Population pharmacokinetics of inotuzum…, Journal of pharmacokinetics… (2019) | [10.1007/s10928-018-9614-9](https://doi.org/10.1007/s10928-018-9614-9) |
 
-## Pharmacodynamics (PD)
+## ADME sites
 
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span> | [Betts_2016_tumor_growth_and_inhibition](drugs/drug_inotuzumab_ozogamicin/pd_Betts_2016_tumor_growth_and_inhibition.md) | tumor growth and inhibition ← inotuzumab ozogamicin · disease-progression model | — | Betts AM et al., Preclinical to Clinical Translation of…, The AAPS journal (2016) | [10.1208/s12248-016-9929-7](https://doi.org/10.1208/s12248-016-9929-7) |
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=inotuzumab_ozogamicin).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` substrate | DrugBank actor |
+| absorption | liver | `ABCB1` substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
+| absorption | testis | `ABCB1` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: CD22 (antibody), CD22 (regulator).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -42,7 +51,7 @@ Inotuzumab ozogamicin is an antibody-drug conjugate used to treat a form of acut
 
 - **PubMed hits:** 7 matched, 7 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 0  ·  needs_review 2  ·  rejected 0  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -51,20 +60,20 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Betts_2016.pdf` | Betts AM et al., Preclinical to Clinical Translation of…, The AAPS journal (2016) | popPK | 9 | [10.1208/s12248-016-9929-7](https://doi.org/10.1208/s12248-016-9929-7) | [27198897](https://pubmed.ncbi.nlm.nih.gov/27198897) | The study models inotuzumab ozogamicin disposition, but no numeric PK parameter values are shown in the provided evidence. |
-| `Luu_2016.pdf` | Luu KT et al., A method for optimizing dosage regimens…, Cancer chemotherapy and pha… (2016) | popPK | 9 | [10.1007/s00280-016-3118-3](https://doi.org/10.1007/s00280-016-3118-3) | [27491482](https://pubmed.ncbi.nlm.nih.gov/27491482) | A two-compartment InO PK model is reported, but no numeric disposition parameter values are provided. |
+| `Luu_2016.pdf` | Luu KT et al., A method for optimizing dosage regimens…, Cancer chemotherapy and pha… (2016) | popPK | 9 | [10.1007/s00280-016-3118-3](https://doi.org/10.1007/s00280-016-3118-3) | [27491482](https://pubmed.ncbi.nlm.nih.gov/27491482) | The paper describes a two-compartment PK model for inotuzumab ozogamicin in humans, but the specific numeric parameter values are not present in the provided text. |
+| `Betts_2016.pdf` | Betts AM et al., Preclinical to Clinical Translation of…, The AAPS journal (2016) | popPK | 7 | [10.1208/s12248-016-9929-7](https://doi.org/10.1208/s12248-016-9929-7) | [27198897](https://pubmed.ncbi.nlm.nih.gov/27198897) | The paper describes a PK/PD model for inotuzumab ozogamicin but the provided evidence text contains no specific numeric quantitative parameter values (CL, V, etc.) for extraction. |
 
-<sub>queue written 2026-10-07T12:43:25.562463+00:00</sub>
+<sub>queue written 2026-10-14T19:30:59.250389+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Betts_2016 | relevant | 9 | 0 | The study models inotuzumab ozogamicin disposition, but no numeric PK parameter values are shown in the provided evidence. |
-| popPK | Hedrich_2018 | irrelevant | 1 | 0 | This is a review and provides no quantitative inotuzumab ozogamicin disposition parameters. |
-| popPK | Hibma_2019 | irrelevant | 2 | 0 | The study models QTc versus inotuzumab ozogamicin concentration but reports no quantitative disposition parameters. |
-| popPK | Kantarjian_2018 | irrelevant | 0 | 0 | This human patient-reported outcomes study reports no quantitative pharmacokinetic disposition parameters. |
-| popPK | Luu_2016 | relevant | 9 | 1 | A two-compartment InO PK model is reported, but no numeric disposition parameter values are provided. |
+| popPK | Betts_2016 | irrelevant | 7 | 0 | The paper describes a PK/PD model for inotuzumab ozogamicin but the provided evidence text contains no specific numeric quantitative parameter values (CL, V, etc.) for extraction. |
+| popPK | Hedrich_2018 | irrelevant | 1 | 0 | The paper is a narrative review of antibody-drug conjugates and does not contain original quantitative pharmacokinetic data or specific parameter values for inotuzumab ozogamicin. |
+| popPK | Hibma_2019 | irrelevant | 0 | 0 | The study focuses on a QT-interval concentration-response analysis (cardiotoxicity) and does not report population pharmacokinetic parameters (CL, V, T1/2) or a PK model for inotuzumab ozogamicin. |
+| popPK | Kantarjian_2018 | irrelevant | 0 | 0 | The study reports patient-reported outcomes (quality of life) and not pharmacokinetic parameters. |
+| popPK | Luu_2016 | relevant | 9 | 1 | The paper describes a two-compartment PK model for inotuzumab ozogamicin in humans, but the specific numeric parameter values are not present in the provided text. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 12:44 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-14 19:31 UTC</sub>

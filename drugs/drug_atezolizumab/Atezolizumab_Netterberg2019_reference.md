@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;atezolizumab&quot;,&quot;href&quot;:&quot;drugs/drug_atezolizumab/&quot;},{&quot;label&quot;:&quot;Netterberg_2019 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atezolizumab_Chan2025_reference&quot;,&quot;label&quot;:&quot;Chan_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atezolizumab/Atezolizumab_Chan2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atezolizumab_Shemesh2019_adult_model_estimate&quot;,&quot;label&quot;:&quot;Shemesh_2019_adult_model_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atezolizumab/Atezolizumab_Shemesh2019_adult_model_estimate.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atezolizumab_Shemesh2019_pediatric_young_adult_model_estimat&quot;,&quot;label&quot;:&quot;Shemesh_2019_pediatric_young_adult_model_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atezolizumab/Atezolizumab_Shemesh2019_pediatric_young_adult_model_estimat.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -16,22 +17,22 @@
 
 ### Reviewer guidance
 
-**Atezolizumab’s terminal elimination rate constant, reported as 1.56 1/h, had a dimensional mismatch, so the model was rejected.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record identifies 1.56 1/h as the terminal-phase elimination rate constant for atezolizumab. The reported unit could not be converted to SI, so this parameter reached the model builder without an SI value. Extracted — atezolizumab: C0 271 pg/mL, kel 1.56 1/h, V 6.91 L.
+A reported unit could not be converted (kel), so that value has no SI equivalent. Extracted — atezolizumab: kel 0.0609 week−1, V 6.91 L.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `parameters[pool0].parameter_id`: this record has Q86, the second reading Q900; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Netterberg I et al., A PK/PD Analysis of Circulating Biomark…, Clinical pharmacology and t… (2019)
   ·  DOI: [10.1002/cpt.1198](https://doi.org/10.1002/cpt.1198)
 
-<div class="pk-model-meta" hidden drug="atezolizumab" model-id="Atezolizumab_Netterberg2019_reference" status="rejected" stale="false" population="patients with relapsed/refractory non-small cell lung cancer" measured-compound="atezolizumab" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="atezolizumab" model-id="Atezolizumab_Netterberg2019_reference" status="rejected" stale="false" population="non-small cell lung cancer patients" measured-compound="atezolizumab" parameterization="mechanistic" topology="general_linear"></div>
 
-**Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 3 extracted.
+**Model structure:** general linear; no model was built for this record.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -40,9 +41,8 @@ Netterberg I et al., A PK/PD Analysis of Circulating Biomark…, Clinical pharma
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Pool0 (pg/mL) | `Q86` · C0 | 271 | pg/mL | not captured | [pg] / [ml] | 18 | llm (0.6) | cpt1198-tbl-0001:row4:col1, cpt1198-tbl-0001:row11:col1 | — | not captured |
+| λDrug (week−1) | `Q47` · kel | 0.0609 | week−1 | not captured | [1] / [week] | 8.7 | llm (0.6) | cpt1198-tbl-0001:row19:col1 | — | not captured |
 | θ SLD0‐Mets | `Q900` · equation variable | 0.927 | not captured | not captured | not captured | 27 | llm (0.6) | cpt1198-tbl-0001:row22:col1 | — | not captured |
-| Β | `Q47` · kel | 1.56 | 1/h | 0.00043333333333333337 | 1/h | 8.8 | exact (1.0) | cpt1198-tbl-0001:row27:col1 | — | not captured |
 | volume of distribution | `Q61` · V | 6.91 | L | 0.00691 | L | not captured | review_gapfill (0.7) | Chan_2025:review | — | not captured |
 
 <details class="legend">
@@ -61,32 +61,46 @@ Netterberg I et al., A PK/PD Analysis of Circulating Biomark…, Clinical pharma
 - table section iiv: 'R Growth (cm/week)' routed out of structural estimates ('IIV, CV% (RSE, %)')
 - table section iiv: 'K Shr,Drug (l/mg/day/week)' routed out of structural estimates ('IIV, CV% (RSE, %)')
 - table section iiv: 'K Shr,IL‐18 (1/(% week))' routed out of structural estimates ('IIV, CV% (RSE, %)')
-- dropped PD-category row 'R in (pg/mL/day)' → Q327 (kin, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['cpt1198-tbl-0001:row2:col1', 'cpt1198-tbl-0001:row9:col1'])
+- table representations disagree for 'R in (pg/mL/day)'; source reconciliation required
+- table representations disagree for 'k out (day−1)'; source reconciliation required
+- table representations disagree for 'Pool0 (pg/mL)'; source reconciliation required
+- table representations disagree for 'Slope (mL/μg)'; source reconciliation required
+- table representations disagree for 'Residual error (%)'; source reconciliation required
+- table representations disagree for 'Proportional residual error (%)'; source reconciliation required
+- table representations disagree for 'Additive residual error (pg/mL)'; source reconciliation required
+- table representations disagree for 'SLD0 (cm)'; source reconciliation required
+- table representations disagree for 'R Growth (cm/week)'; source reconciliation required
+- table representations disagree for 'λDrug (week−1)'; source reconciliation required
+- table representations disagree for 'K Shr,IL‐18 (1/(% week))'; source reconciliation required
+- table representations disagree for 'θ Rgrowth‐LiverMets'; source reconciliation required
+- table representations disagree for 'θ SLD0‐Mets'; source reconciliation required
+- table representations disagree for 'θ KShr,Drug‐Non‐Smoking'; source reconciliation required
+- table representations disagree for 'h 0 (week−1)'; source reconciliation required
+- table representations disagree for 'Β'; source reconciliation required
+- dropped unlinked row (NIL): 'R in (pg/mL/day)' — extend the ontology if this is a real PK parameter (source ['cpt1198-tbl-0001:row2:col1', 'cpt1198-tbl-0001:row9:col1'])
 - dropped PD-category row 'k out (day−1)' → Q328 (kout, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['cpt1198-tbl-0001:row3:col1'])
-- unit_dimension_mismatch: 'Pool0 (pg/mL)' → Q86 (unit '[mass] / [length] ** 3' vs ontology '[mass] * [time] / [length] ** 3') — route to review
+- dropped PD-category row 'Pool0 (pg/mL)' → Q324 (E0, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['cpt1198-tbl-0001:row4:col1', 'cpt1198-tbl-0001:row11:col1'])
 - dropped PD-category row 'Slope (mL/μg)' → Q335 (slope, category G13) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['cpt1198-tbl-0001:row5:col1', 'cpt1198-tbl-0001:row12:col1'])
-- dropped unlinked row (NIL): 'SLD0 (cm)' — extend the ontology if this is a real PK parameter (source ['cpt1198-tbl-0001:row16:col1'])
-- dropped PD-category row 'R Growth (cm/week)' → Q335 (slope, category G13) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['cpt1198-tbl-0001:row17:col1'])
-- dropped PD-category row 'λDrug (week−1)' → Q342 (lambda_hazard, category G14) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['cpt1198-tbl-0001:row19:col1'])
-- dropped PD-category row 'K Shr,IL‐18 (1/(% week))' → Q335 (slope, category G13) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['cpt1198-tbl-0001:row20:col1'])
+- dropped PD-category row 'SLD0 (cm)' → Q324 (E0, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['cpt1198-tbl-0001:row16:col1'])
+- dropped unlinked row (NIL): 'R Growth (cm/week)' — extend the ontology if this is a real PK parameter (source ['cpt1198-tbl-0001:row17:col1'])
+- dropped diagnostic row 'K Shr,IL‐18 (1/(% week))' → Q318 (shrinkage) — reported statistic, not a parameter
 - dropped unlinked row (NIL): 'θ Rgrowth‐LiverMets' — extend the ontology if this is a real PK parameter (source ['cpt1198-tbl-0001:row21:col1'])
-- dropped duplicate Q900 ('θ KShr,Drug‐Non‐Smoking', value '0') — already have one for this compound
-- dropped PD-category row 'h 0 (week−1)' → Q342 (lambda_hazard, category G14) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['cpt1198-tbl-0001:row26:col1'])
-- dropped value-less row: 'θ Rgrowth‐LiverMets'
-- dropped value-less row: 'θ SLD0‐Mets.'
-- dropped value-less row: 'θ KShr,Drug‐Non‐Smoking'
-- implicit units: 'Β' → 1/h (from the popPK convention: 'The parameter is described as an elimination rate constant, but the provided caption and text do not state its unit. Fir')
+- dropped diagnostic row 'θ KShr,Drug‐Non‐Smoking' → Q318 (shrinkage) — reported statistic, not a parameter
+- dropped duplicate Q900 ('h 0 (week−1)', value '0.0306') — already have one for this compound
+- dropped duplicate Q47 ('Β', value '1.56') — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=atezolizumab
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
 - status held at route_to_review — not promoted
 - molar mass: none found for 'atezolizumab' — its concentrations stay mass-only
 - skipped review gap-fill of CL: primary's parameterization (rate-constant / ka-only) does not use it
 - gap-filled Q61 (V) from Chan_2025's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- unparsed cell cpt1198-tbl-0001:row18:col1 = '2.75·10−6 (23)'
+- table cpt1198-tbl-0001: unparsed_numeric_cell
+- table cpt1198-tbl-0001: representations disagree; selected evidence retained, not merged
+- LLM selected parameter table(s) 1
 
 ## Validation
 
@@ -119,13 +133,12 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['cpt1198-tbl-0001:row27:col1'] |
+| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['cpt1198-tbl-0001:row19:col1'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Chan_2025:review'] |
-| C5_dimension_Q86 | fail | [mass] / [length] ** 3 | pg/mL | not captured | not captured | ['cpt1198-tbl-0001:row4:col1', 'cpt1198-tbl-0001:row11:col1'] |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none', 'none'] | not captured | not captured | not captured |
 | C9_phys_window_Q61 | pass | volume within physiological range | 6.91 L | not captured | not captured | ['Chan_2025:review'] |
 
 <details class="legend">
@@ -135,7 +148,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_atezolizumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Netterberg_2019` / `Netterberg_2019::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_atezolizumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Netterberg_2019` / `Netterberg_2019::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -151,4 +164,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 09:22 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 17:58 UTC</sub>

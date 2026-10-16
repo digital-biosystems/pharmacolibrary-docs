@@ -18,9 +18,9 @@
 
 **Model:** No model was generated from this record.
 
-> The paper does not provide excerpts or state the mechanism; the record indicates terbutaline concentrations act on relaxation of myometrial spontaneous contractions (%) via an Emax inhibition model with Emax approximately 30%, and no IC50, EC50, kin, kout, or ke0 values are given.
+> The record describes an Emax model where terbutaline inhibits the relaxation of myometrial spontaneous contractions with an Emax of approximately 30%. The paper does not provide the full text or specific mechanism details beyond the cited PK driver.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
 
 - **paper:** `Bardou_2000`
 - **model family:** `emax`

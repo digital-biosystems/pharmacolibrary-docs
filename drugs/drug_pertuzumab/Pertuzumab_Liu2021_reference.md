@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;pertuzumab&quot;,&quot;href&quot;:&quot;drugs/drug_pertuzumab/&quot;},{&quot;label&quot;:&quot;Liu_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pertuzumab_Luo2017_reference&quot;,&quot;label&quot;:&quot;Luo_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pertuzumab/Pertuzumab_Luo2017_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pertuzumab_Sakaeda2024_10_mg_kg_iv&quot;,&quot;label&quot;:&quot;Sakaeda_2024_10_mg_kg_iv&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pertuzumab/Pertuzumab_Sakaeda2024_10_mg_kg_iv.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pertuzumab_Luo2017_reference&quot;,&quot;label&quot;:&quot;Luo_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pertuzumab/Pertuzumab_Luo2017_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pertuzumab_Sun2022_reference&quot;,&quot;label&quot;:&quot;Sun_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pertuzumab/Pertuzumab_Sun2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pertuzumab_Sakaeda2024_10_mg_kg_iv&quot;,&quot;label&quot;:&quot;Sakaeda_2024_10_mg_kg_iv&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pertuzumab/Pertuzumab_Sakaeda2024_10_mg_kg_iv.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -19,7 +19,7 @@
 
 **The model does not reproduce the paper's terminal half-life (model/paper ratio 0.51).**
 
-Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — pertuzumab: CL 0.235 L/day, V 3.11 L.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. A reported unit could not be converted (AUCt, Cmax and Ctrough), so that value has no SI equivalent. Extracted — pertuzumab: AUCt 1.91e+03 µg · d/mL, Cmax 258 µg/mL, Ctrough 50.2 µg/mL, CL 0.235 L/day, V 3.11 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has pertuzumab, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -29,10 +29,10 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Liu SN et al., Impact of Dose Delays and Alternative D…, Journal of clinical pharmac… (2021)
   ·  DOI: [10.1002/jcph.1855](https://doi.org/10.1002/jcph.1855)
 
-<div class="pk-model-meta" hidden drug="pertuzumab" model-id="Pertuzumab_Liu2021_reference" status="needs_review" stale="false" population="adults with HER2-positive breast cancer" measured-compound="pertuzumab" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="pertuzumab" model-id="Pertuzumab_Liu2021_reference" status="needs_review" stale="false" population="HER2-positive breast cancer" measured-compound="pertuzumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 2 extracted.
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -41,6 +41,9 @@ Liu SN et al., Impact of Dose Delays and Alternative D…, Journal of clinical p
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
+| AUC0-τ, µg · d/mL | `Q19` · AUCt | 1910 | µg · d/mL | not captured | [[d] · [µg]] / [ml] | not captured | exact (1.0) | Liu_2021_table_1:row0:col2, Liu_2021_table_1:row1:col2, Liu_2021_table_1:row2:col2, Liu_2021_table_1:row3:col2 | — | not captured |
+| Cmax, µg/mL | `Q32` · Cmax | 258 | µg/mL | not captured | [µg] / [ml] | not captured | exact (1.0) | Liu_2021_table_1:row0:col3, Liu_2021_table_1:row1:col3, Liu_2021_table_1:row2:col3, Liu_2021_table_1:row3:col3 | — | not captured |
+| Ctrough, µg/mL | `Q37` · Ctrough | 50.2 | µg/mL | not captured | [µg] / [ml] | not captured | exact (1.0) | Liu_2021_table_1:row0:col4, Liu_2021_table_1:row1:col4, Liu_2021_table_1:row2:col4, Liu_2021_table_1:row3:col4 | — | not captured |
 | clearance | `Q22` · CL | 0.235 | L/day | 2.7199074074074073e-09 | L/h | not captured | exact (1.0) | Liu_2021:other_prose | — | not captured |
 | volume of distribution | `Q61` · V | 3.11 | L | 0.00311 | L | not captured | exact (1.0) | Liu_2021:other_prose | — | not captured |
 
@@ -53,10 +56,12 @@ Liu SN et al., Impact of Dose Delays and Alternative D…, Journal of clinical p
 
 **Interpretation flags:**
 - column '1' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- table representations disagree for 'Dose, mg'; source reconciliation required
+- table representations disagree for '% Above Target'; source reconciliation required
 - column '4' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - column '2' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - column '3' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- dropped unlinked row (NIL): 'Dose, mg' — extend the ontology if this is a real PK parameter (source ['jcph1855-tbl-0004:row0:col2', 'jcph1855-tbl-0004:row0:col3', 'jcph1855-tbl-0004:row0:col4', 'jcph1855-tbl-0004:row0:col5', 'jcph1855-tbl-0004:row0:col6', 'jcph1855-tbl-0004:row0:col7', 'Liu_2021_table_1:row0:col1', 'Liu_2021_table_1:row0:col2', 'Liu_2021_table_1:row0:col3', 'Liu_2021_table_1:row0:col4'])
+- dropped unlinked row (NIL): 'Dose, mg' — extend the ontology if this is a real PK parameter (source ['jcph1855-tbl-0004:row1:col1', 'jcph1855-tbl-0004:row2:col1', 'jcph1855-tbl-0004:row3:col1', 'jcph1855-tbl-0004:row4:col1', 'jcph1855-tbl-0004:row5:col1', 'jcph1855-tbl-0004:row6:col1', 'Liu_2021_table_1:row0:col1', 'Liu_2021_table_1:row1:col1', 'Liu_2021_table_1:row2:col1', 'Liu_2021_table_1:row3:col1'])
 - salvaged Q22 ('clearance'=0.235) from results prose — parameter table was unreadable
 - salvaged Q61 ('volume of distribution'=3.11) from results prose — parameter table was unreadable
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=pertuzumab
@@ -67,11 +72,12 @@ Liu SN et al., Impact of Dose Delays and Alternative D…, Journal of clinical p
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- transposed table jcph1855-tbl-0004: parameters were across the columns, populations/subgroups down the first column — transposed for parsing
-- transposed table Liu_2021_table_1: parameters were across the columns, populations/subgroups down the first column — transposed for parsing
-- companion parameter table 1 transcribed (8 record(s), model stage 'base')
+- table jcph1855-tbl-0004: unparsed_numeric_cell
+- transposed table jcph1855-tbl-0004: logical view retains original source coordinates
+- table jcph1855-tbl-0004: representations disagree; selected evidence retained, not merged
+- transposed table Liu_2021_table_1: logical view retains original source coordinates
+- companion parameter table 1 transcribed (20 record(s), model stage 'base')
 - LLM selected parameter table(s) 1
-- dropped sensitivity-analysis table(s) 4 from the LLM selection — perturbations of a model, not a model
 
 ## Validation
 
@@ -104,10 +110,13 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C1_half_life_beta | fail | 18.0 | 9.173 | 0.5096 | 0.25 | reported t½β |
+| C5_dimension_Q19 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Liu_2021_table_1:row0:col2', 'Liu_2021_table_1:row1:col2', 'Liu_2021_table_1:row2:col2', 'Liu_2021_table_1:row3:col2'] |
+| C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Liu_2021_table_1:row0:col3', 'Liu_2021_table_1:row1:col3', 'Liu_2021_table_1:row2:col3', 'Liu_2021_table_1:row3:col3'] |
+| C5_dimension_Q37 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Liu_2021_table_1:row0:col4', 'Liu_2021_table_1:row1:col4', 'Liu_2021_table_1:row2:col4', 'Liu_2021_table_1:row3:col4'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.235 | not captured | not captured | ['Liu_2021:other_prose'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.00979 L/h | not captured | not captured | ['Liu_2021:other_prose'] |
@@ -120,7 +129,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_pertuzumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Liu_2021` / `Liu_2021::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_pertuzumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Liu_2021` / `Liu_2021::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -146,4 +155,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 18:34 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 00:59 UTC</sub>

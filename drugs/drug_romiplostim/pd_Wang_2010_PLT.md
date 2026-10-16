@@ -17,9 +17,9 @@
 
 **Model:** No model was generated from this record.
 
-> The model describes romiplostim stimulating platelet count via an indirect response model (Type III) with a proportional effect form, where the drug concentration (ng/mL) drives the response. The paper does not provide the full text to specify the exact mechanism (e.g., production vs. elimination) or rate constants (kin, kout, ke0), but the record cites a SC50 of 0.052 ng/mL and a maximum sensitivity (S) of 11.2.
+> Romiplostim concentrations (ng/mL) stimulate platelet count via an indirect response model with a proportional effect, characterized by an SC50 of 0.052 ng/mL and a maximal sensitivity (S) of 11.2.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Wang_2010`
 - **model family:** `indirect_response_iii`

@@ -36,7 +36,15 @@ Gadopiclenol is a gadolinium-based contrast agent used to improve images in magn
 | <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.267). Primary extraction retained.">cross-check: disputed</span> | [Eto_2025_0_025_mmol_kg](drugs/drug_gadopiclenol/Gadopiclenol_Eto2025_0_025_mmol_kg.md) | ▶ model + simulator | 1-compartment, IV | 8 | Eto T et al., Pharmacokinetics and safety of gadopicl…, Japanese journal of radiolo… (2025) | [10.1007/s11604-025-01842-1](https://doi.org/10.1007/s11604-025-01842-1) |
 | <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.267). Primary extraction retained.">cross-check: disputed</span> | [Eto_2025_0_05_mmol_kg](drugs/drug_gadopiclenol/Gadopiclenol_Eto2025_0_05_mmol_kg.md) | ▶ model + simulator | 1-compartment, IV | 8 | Eto T et al., Pharmacokinetics and safety of gadopicl…, Japanese journal of radiolo… (2025) | [10.1007/s11604-025-01842-1](https://doi.org/10.1007/s11604-025-01842-1) |
 | <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.267). Primary extraction retained.">cross-check: disputed</span> | [Eto_2025_0_1_mmol_kg](drugs/drug_gadopiclenol/Gadopiclenol_Eto2025_0_1_mmol_kg.md) | ▶ model + simulator | 1-compartment, IV | 8 | Eto T et al., Pharmacokinetics and safety of gadopicl…, Japanese journal of radiolo… (2025) | [10.1007/s11604-025-01842-1](https://doi.org/10.1007/s11604-025-01842-1) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.625). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Jurkiewicz_2022_reference](drugs/drug_gadopiclenol/Gadopiclenol_Jurkiewicz2022_reference.md) | — | 2-compartment (no model) | 3 | Jurkiewicz E et al., Pharmacokinetics, Safety, and Efficacy…, Investigative radiology (2022) | [10.1097/RLI.0000000000000865](https://doi.org/10.1097/RLI.0000000000000865) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.75). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Jurkiewicz_2022_reference](drugs/drug_gadopiclenol/Gadopiclenol_Jurkiewicz2022_reference.md) | — | 2-compartment (no model) | 3 | Jurkiewicz E et al., Pharmacokinetics, Safety, and Efficacy…, Investigative radiology (2022) | [10.1097/RLI.0000000000000865](https://doi.org/10.1097/RLI.0000000000000865) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=gadopiclenol).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

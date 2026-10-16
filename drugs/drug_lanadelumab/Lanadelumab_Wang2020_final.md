@@ -182,10 +182,10 @@ Wang Y et al., Pharmacokinetics, Pharmacodynamics, and…, Clinical and translat
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_lanadelumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Wang_2020` / `Wang_2020::final`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_lanadelumab/models/modelica/Lanadelumab_Wang2020_final.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_lanadelumab/models/modelica/Lanadelumab_Wang2020_final.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_lanadelumab/models/modelica/Lanadelumab_Wang2020_final.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_lanadelumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Wang_2020` / `Wang_2020::final`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_lanadelumab/models/modelica/Lanadelumab_Wang2020_final.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_lanadelumab/models/modelica/Lanadelumab_Wang2020_final.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_lanadelumab/models/modelica/Lanadelumab_Wang2020_final.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

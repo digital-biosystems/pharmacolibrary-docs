@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;timolol&quot;,&quot;href&quot;:&quot;drugs/drug_timolol/&quot;},{&quot;label&quot;:&quot;Sakanaka_2008_2 \u00b7 PD intraocular pressure&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;timolol&quot;,&quot;href&quot;:&quot;drugs/drug_timolol/&quot;},{&quot;label&quot;:&quot;Sakanaka_2008_2 \u00b7 PD intraocular pressure (IOP)&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# intraocular pressure — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.778). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+# intraocular pressure (IOP) — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.778). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -15,13 +15,13 @@
 
 ## Record summary
 
-**As extracted:** Timolol (concentrations from the PK model of Chiang_1996) drives intraocular pressure (in mmHg): indirect response — drug inhibits the production of intraocular pressure.
+**As extracted:** Timolol (concentrations from the PK model of Chiang_1996) drives intraocular pressure (IOP) (in mmHg): indirect response — drug inhibits the production of intraocular pressure (IOP).
 
 **Model:** No model was generated from this record.
 
-> Timolol inhibits the production of intraocular pressure (IOP) via an indirect response model, with a maximum inhibition (Imax) of 0.268 and an IC50 of 5.71×10⁻³ nmol/ml. The model parameters include a production rate constant (Kin) of 0.148 ml/min, a turnover rate constant (Kout) of 0.0663 min⁻¹, and an effect compartment rate constant (Kt) of 0.0152 min⁻¹.
+> Timolol acts as a beta-adrenergic antagonist that inhibits aqueous humor formation, thereby lowering intraocular pressure (IOP) via an Indirect Response Model I where the drug inhibits the production (Kin) of the response in a proportional manner. The model is characterized by an IC50 of 5.71 × 10⁻³ nmol/ml, Imax of 0.268, Kin of 0.148 ml/min, kout of 0.0663 min⁻¹, and ke0 (labeled Kt) of 0.0152 min⁻¹.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Sakanaka_2008_2`
 - **model family:** `indirect_response_i`
@@ -40,7 +40,7 @@ Sakanaka K et al., Ocular pharmacokinetic/pharmacodynamic…, Biological & pharm
 | PD (effect) | K out | `Q328` · not captured | 0.0663 | min Ϫ1 | not captured | llm (not captured) | Sakanaka_2008_2:pdv3 |
 | PD (effect) | I max | `Q323` · not captured | 0.268 | not captured | not captured | llm (not captured) | Sakanaka_2008_2:pdv3 |
 | PD (effect) | IC 50 | `Q322` · not captured | 5.71ϫ10 Ϫ3 | nmol/ml | not captured | llm (not captured) | Sakanaka_2008_2:pdv3 |
-| — | K t | `Q100` · not captured | 0.0152 | min Ϫ1 | not captured | nil (not captured) | Sakanaka_2008_2:pdv3 |
+| PD (effect) | K t | `Q338` · not captured | 0.0152 | min Ϫ1 | not captured | llm (not captured) | Sakanaka_2008_2:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>

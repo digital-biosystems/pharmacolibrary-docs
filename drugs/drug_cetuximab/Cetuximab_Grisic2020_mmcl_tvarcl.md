@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;cetuximab&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/&quot;},{&quot;label&quot;:&quot;Grisic_2020 \u00b7 mmcl_tvarcl&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cetuximab_Cognetti2026_reference&quot;,&quot;label&quot;:&quot;Cognetti_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/Cetuximab_Cognetti2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cetuximab_Pointreau2016_reference&quot;,&quot;label&quot;:&quot;Pointreau_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/Cetuximab_Pointreau2016_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cetuximab_Yang2026_reference&quot;,&quot;label&quot;:&quot;Yang_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/Cetuximab_Yang2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Lin_2011_Ct_2&quot;,&quot;label&quot;:&quot;Lin_2011 \u00b7 Ct&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/pd_Lin_2011_Ct_2.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -16,9 +17,9 @@
 
 ### Reviewer guidance
 
-**Vmax has no unit.**
+**This paper's disposition core is incomplete; v1, Q, V2, Km, Vmax, t1/2z and tmax have no unit (+1 more).**
 
-Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (Km, Vmax and equation variable), so that value has no SI equivalent. Extracted — cetuximab: CL 0.0174 L/h, V1 3.65 L, Q 0.0368 L/h, V2 2.65 L, Km 13.3 mg/L, Vmax 0.861 RSE%.
+A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Augustin_2026) cannot stand in for this paper's evidence. Without a unit the value cannot be converted, so the model cannot use it. The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — cetuximab: V1 3.65 RSE%, Q 0.0368 RSE%, V2 2.65 RSE%, Km 13.3 RSE%, Vmax 0.861 RSE%, t1/2z 20.5 RSE%, tmax 51.5, CL 350 mL/day.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of lcl: this record has 0.0174, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
@@ -28,10 +29,10 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 Grisic AM et al., Semimechanistic Clearance Models of Onc…, CPT: pharmacometrics & syst… (2020)
   ·  DOI: [10.1002/psp4.12558](https://doi.org/10.1002/psp4.12558)
 
-<div class="pk-model-meta" hidden drug="cetuximab" model-id="Cetuximab_Grisic2020_mmcl_tvarcl" status="needs_review" stale="false" population="adults with metastatic colorectal cancer" measured-compound="cetuximab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="cetuximab" model-id="Cetuximab_Grisic2020_mmcl_tvarcl" status="needs_review" stale="false" population="patients with metastatic colorectal cancer" measured-compound="cetuximab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
-**Parameters:** 6 extracted.
+**Parameters:** 8 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -40,13 +41,14 @@ Grisic AM et al., Semimechanistic Clearance Models of Onc…, CPT: pharmacometri
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| LCL, L/h (RSE%) | `Q22` · CL | 0.0174 | L/h | 4.833333333333333e-09 | L/h | not captured | llm (0.6) | psp412558-tbl-0002:row1:col5 | — | not captured |
-| V 1, L (RSE%) | `Q63` · V1 | 3.65 | L | 0.00365 | L | not captured | space_fold (0.95) | psp412558-tbl-0002:row2:col5 | — | not captured |
-| Q, L/h (RSE%) | `Q30` · Q | 0.0368 | L/h | 1.0222222222222222e-08 | L/h | not captured | exact (1.0) | psp412558-tbl-0002:row3:col5 | — | not captured |
-| V 2, L (RSE%) | `Q64` · V2 | 2.65 | L | 0.00265 | L | not captured | space_fold (0.95) | psp412558-tbl-0002:row4:col5 | — | not captured |
-| K M, mg/L (RSE%) | `Q1` · Km | 13.3 | mg/L | not captured | mg/L | not captured | space_fold (0.95) | psp412558-tbl-0002:row5:col5 | — | not captured |
-| V max, mg/h (RSE%) | `Q66` · Vmax | 0.861 | RSE% | not captured | [rse%] | not captured | special_case (0.95) | psp412558-tbl-0002:row6:col5 | — | not captured |
-| T 50, weeks (RSE%) | `Q900` · equation variable | 20.5 | RSE% | not captured | [rse%] | not captured | llm (0.6) | psp412558-tbl-0002:row8:col5 | — | not captured |
+| V 1, L (RSE%) | `Q63` · V1 | 3.65 | RSE% | not captured | [rse%] | 3 | space_fold (0.95) | psp412558-tbl-0002:row2:col5 | — | not captured |
+| Q, L/h (RSE%) | `Q30` · Q | 0.0368 | RSE% | not captured | [rse%] | 5 | exact (1.0) | psp412558-tbl-0002:row3:col5 | — | not captured |
+| V 2, L (RSE%) | `Q64` · V2 | 2.65 | RSE% | not captured | [rse%] | 4 | space_fold (0.95) | psp412558-tbl-0002:row4:col5 | — | not captured |
+| K M, mg/L (RSE%) | `Q1` · Km | 13.3 | RSE% | not captured | [rse%] | 21 | space_fold (0.95) | psp412558-tbl-0002:row5:col5 | — | not captured |
+| V max, mg/h (RSE%) | `Q66` · Vmax | 0.861 | RSE% | not captured | [rse%] | 5 | special_case (0.95) | psp412558-tbl-0002:row6:col5 | — | not captured |
+| T 50, weeks (RSE%) | `Q57` · t1/2z | 20.5 | RSE% | not captured | [rse%] | 29 | llm (0.6) | psp412558-tbl-0002:row8:col5 | — | not captured |
+| η Tmax, CV% (RSE%) [Shr%] | `Q56` · tmax | 51.5 | not captured | not captured | not captured | 18 | llm_confirmed (0.6) | psp412558-tbl-0002:row15:col5 | — | not captured |
+| CL (mL/day) | `Q22` · CL | 350.0 | mL/day | 4.050925925925926e-09 | L/h | not captured | review_gapfill (0.7) | Augustin_2026:review | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -56,34 +58,28 @@ Grisic AM et al., Semimechanistic Clearance Models of Onc…, CPT: pharmacometri
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_unknown: 'RSE%' (CL)
+- column 'mmcl + tvarcl' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- dropped unlinked row (NIL): 'LCL, L/h (RSE%)' — extend the ontology if this is a real PK parameter (source ['psp412558-tbl-0002:row1:col5'])
 - unit_dimension_unknown: 'RSE%' (V1)
 - unit_dimension_unknown: 'RSE%' (Q)
 - unit_dimension_unknown: 'RSE%' (V2)
 - unit_dimension_unknown: 'RSE%' (Km)
 - unit_dimension_unknown: 'RSE%' (Vmax)
 - dropped PD-category row 'I max, % (RSE%)' → Q323 (Imax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['psp412558-tbl-0002:row7:col5'])
-- unit_dimension_unknown: 'RSE%' (equation variable)
-- dropped unlinked row (NIL): 'AIC (SAEM‐IMP)' — extend the ontology if this is a real PK parameter (source ['psp412558-tbl-0002:row19:col5'])
-- implicit units: 'LCL, L/h (RSE%)' → L/h (from the paper text: 'The paper states: “baseline linear CL (0.0647 vs. 0.0174 L/h, respectively).”')
-- implicit units: 'V 1, L (RSE%)' → L (from the popPK convention: 'The excerpt gives no unit for V1. Central-compartment volumes are conventionally reported in L, consistent with the valu')
-- implicit units: 'Q, L/h (RSE%)' → L/h (from the popPK convention: 'The excerpt identifies Q as an “intercompartmental exchange rate” but states no unit. Intercompartmental clearances are ')
-- implicit units: 'V 2, L (RSE%)' → L (from the popPK convention: 'The excerpt gives no unit for V2. Peripheral-compartment volumes are conventionally reported in L, consistent with the v')
-- implicit units: 'K M, mg/L (RSE%)' → mg/L (from the paper text: 'The paper states: “50% of maximum value reached at a drug concentration of 13.3 mg/L,” referring to the Michaelis–Menten')
-- implicit units: 'V max, mg/h (RSE%)' — the LLM proposed 'mg/h', whose dimension does not fit Q66; left unset
+- unit_dimension_unknown: 'RSE%' (t1/2z)
+- dropped diagnostic row 'η LCL, CV% (RSE%) [Shr%]' → Q318 (shrinkage) — reported statistic, not a parameter
+- dropped diagnostic row 'η V1, CV% (RSE%) [Shr%]' → Q318 (shrinkage) — reported statistic, not a parameter
+- dropped duplicate Q64 ('η V2, CV% (RSE%) [Shr%]', value '61.3') — already have one for this compound
+- dropped duplicate Q66 ('η Vmax, CV% (RSE%) [Shr%]', value '48.8') — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=cetuximab
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
-- population split: 'mmcl + tvarcl' subgroup of Grisic_2020 (paper reports 5 populations: lcl, mmcl, mmcl + lcl, mmcl + tvarcl, tvarcl)
+- population split: 'mmcl + tvarcl' subgroup of Grisic_2020 (paper reports 4 populations: lcl, mmcl, mmcl + lcl, mmcl + tvarcl)
 - molar mass: none found for 'cetuximab' — its concentrations stay mass-only
+- gap-filled Q22 (CL) from Augustin_2026's review values (primary lacked it)
 
 **Extraction notes:**
-- unparsed cell psp412558-tbl-0002:row1:col6 = '0.0206 (‐)'
-- unparsed cell psp412558-tbl-0002:row2:col6 = '3.82 (‐)'
-- unparsed cell psp412558-tbl-0002:row3:col6 = '0.0216 (‐)'
-- unparsed cell psp412558-tbl-0002:row4:col6 = '3.31 (‐)'
-- unparsed cell psp412558-tbl-0002:row17:col6 = '8.65 (‐)'
-- unparsed cell psp412558-tbl-0002:row18:col6 = '22.9 (‐)'
+- table psp412558-tbl-0002: unparsed_numeric_cell
 - LLM selected parameter table(s) 2
 
 ## Validation
@@ -114,20 +110,20 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 7 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q1 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['psp412558-tbl-0002:row5:col5'] |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp412558-tbl-0002:row1:col5'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp412558-tbl-0002:row3:col5'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp412558-tbl-0002:row2:col5'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp412558-tbl-0002:row4:col5'] |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Augustin_2026:review'] |
+| C5_unit_missing_Q1 | fail | [mass] / [length] ** 3 | RSE% | not captured | not captured | ['psp412558-tbl-0002:row5:col5'] |
+| C5_unit_missing_Q30 | fail | [length] ** 3 / [time] | RSE% | not captured | not captured | ['psp412558-tbl-0002:row3:col5'] |
+| C5_unit_missing_Q56 | fail | [time] | not captured | not captured | not captured | ['psp412558-tbl-0002:row15:col5'] |
+| C5_unit_missing_Q57 | fail | [time] | RSE% | not captured | not captured | ['psp412558-tbl-0002:row8:col5'] |
+| C5_unit_missing_Q63 | fail | [length] ** 3 | RSE% | not captured | not captured | ['psp412558-tbl-0002:row2:col5'] |
+| C5_unit_missing_Q64 | fail | [length] ** 3 | RSE% | not captured | not captured | ['psp412558-tbl-0002:row4:col5'] |
 | C5_unit_missing_Q66 | fail | [length] ** 3 | RSE% | not captured | not captured | ['psp412558-tbl-0002:row6:col5'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.0174 | not captured | not captured | ['psp412558-tbl-0002:row1:col5'] |
+| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 350.0 | not captured | not captured | ['Augustin_2026:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.0174 L/h | not captured | not captured | ['psp412558-tbl-0002:row1:col5'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 3.65 L | not captured | not captured | ['psp412558-tbl-0002:row2:col5'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 2.65 L | not captured | not captured | ['psp412558-tbl-0002:row4:col5'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.0146 L/h | not captured | not captured | ['Augustin_2026:review'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -136,7 +132,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_cetuximab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Grisic_2020` / `Grisic_2020::mmcl_tvarcl`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_cetuximab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Grisic_2020` / `Grisic_2020::mmcl_tvarcl`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -162,4 +158,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 11:25 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 18:47 UTC</sub>

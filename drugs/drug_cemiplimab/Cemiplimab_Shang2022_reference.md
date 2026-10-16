@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;cemiplimab&quot;,&quot;href&quot;:&quot;drugs/drug_cemiplimab/&quot;},{&quot;label&quot;:&quot;Shang_2022 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cemiplimab_Nguyen2022_tumor_type_study_a&quot;,&quot;label&quot;:&quot;Nguyen_2022_tumor_type_study_a&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cemiplimab/Cemiplimab_Nguyen2022_tumor_type_study_a.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -16,13 +17,13 @@
 
 ### Reviewer guidance
 
-**Cemiplimab’s intercompartmental clearance Q is 0.638 L/day, but the record was rejected for an unreachable or orphan compartment.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record describes a two-compartment model and gives Q as the clearance between the central and peripheral compartments, with peripheral volume V2 of 1.65 L. The finding identifies an unreachable compartment or unlinked metabolite, but the record does not specify which compartment is unreachable. Extracted — cemiplimab: Q 0.638 L/Day, V2 1.65 L.
+Extracted — cemiplimab: Q 0.638 L/Day, V2 1.65 L.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of inter-compartmental clearance: this record has none, the second reading 0.703; it also differs on 6 more fields. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Shang J et al., Population pharmacokinetic models of an…, Frontiers in immunology (2022)
@@ -40,10 +41,10 @@ Shang J et al., Population pharmacokinetic models of an…, Frontiers in immunol
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Q (L/Day) | `Q30` · Q | 0.638 | L/Day | 7.38425925925926e-09 | [l] / [d] | not captured | exact (1.0) | Shang_2022_table_3:row4:col13 | — | not captured |
-| VP(L) | `Q64` · V2 | 1.65 | L | 0.00165 | [l] | not captured | exact (1.0) | Shang_2022_table_3:row6:col13 | — | not captured |
-| VC | `Q900` · VC | 3.32 | L | 0.00332 | not captured | not captured | not captured (not captured) | Shang_2022_table_3:row5:col13 | — | not captured |
-| CL | `Q900` · CL | 0.290 | L/Day | 3.3564814814814817e-09 | not captured | not captured | not captured (not captured) | Shang_2022_table_3:row3:col13 | — | not captured |
+| Q (L/Day) | `Q30` · Q | 0.638 | L/Day | 7.38425925925926e-09 | [l] / [d] | not captured | exact (1.0) | Shang_2022_table_3:row12:col5 | — | not captured |
+| VP(L) | `Q64` · V2 | 1.65 | L | 0.00165 | [l] | not captured | exact (1.0) | Shang_2022_table_3:row12:col7 | — | not captured |
+| VC | `Q900` · VC | 3.32 | L | 0.00332 | not captured | not captured | not captured (not captured) | Shang_2022_table_3:row12:col6 | — | not captured |
+| CL | `Q900` · CL | 0.290 | L/Day | 3.3564814814814817e-09 | not captured | not captured | not captured (not captured) | Shang_2022_table_3:row12:col4 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -59,8 +60,7 @@ Shang J et al., Population pharmacokinetic models of an…, Frontiers in immunol
 ## Departures & gaps
 
 **Interpretation flags:**
-- table section iiv: 'Residual error' routed out of structural estimates ('IIV')
-- dropped unlinked row (NIL): 'Pharmacokinetic parameters and covariates relationships' — extend the ontology if this is a real PK parameter (source ['Shang_2022_table_3:row7:col13', 'Shang_2022_table_3:row8:col13'])
+- dropped unlinked row (NIL): 'Pharmacokinetic parameters and covariates relationships' — extend the ontology if this is a real PK parameter (source ['Shang_2022_table_3:row12:col8', 'Shang_2022_table_3:row12:col9'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=cemiplimab
 - bound model equation to Q63 (V1): VC = 3.63 * (BBWT/80)^0.597 * (e/0.152)SEX
 - bound model equation to Q22 (CL): CL = 0.22 *(BBWT/76.8)^0.578* (ALB/39.6)-0.907 * (BSLD/89.6)^00872* (eGFR/88.47)^0.135* [ (1 – 0.152) if female ]* [ (1+ 0.145) if NSCLC ]* [ (1+0.0739) if baseline ECOG numeric=1 ]* [ (1+0.140) if IPI=prior treatment ]
@@ -69,18 +69,10 @@ Shang J et al., Population pharmacokinetic models of an…, Frontiers in immunol
 - molar mass: none found for 'cemiplimab' — its concentrations stay mass-only
 
 **Extraction notes:**
-- transposed table Shang_2022_table_3: parameters were across the columns, populations/subgroups down the first column — transposed for parsing
-- unparsed cell Shang_2022_table_3:row2:col11 = 'Time-varying CL (4 time-varying covariates: RSLD RLC RALB RLDH)'
-- unparsed cell Shang_2022_table_3:row10:col2 = 'Proportional residual error model (21.5%)'
-- unparsed cell Shang_2022_table_3:row10:col3 = 'Proportional residual error model (100%)'
-- unparsed cell Shang_2022_table_3:row10:col4 = 'Proportional residual error model (31.8%)'
-- unparsed cell Shang_2022_table_3:row10:col5 = 'Proportional residual error model (21.9%)'
-- unparsed cell Shang_2022_table_3:row10:col6 = 'Proportional residual error model (2.01%)'
-- unparsed cell Shang_2022_table_3:row10:col7 = 'Proportional residual error model (22.4%)'
-- unparsed cell Shang_2022_table_3:row10:col8 = 'Proportional residual error model (24.5%)'
-- unparsed cell Shang_2022_table_3:row10:col9 = 'Log-transformed additive residual error model (27.2%)'
-- unparsed cell Shang_2022_table_3:row10:col10 = 'Log-transformed additive residual error model (25.1%)'
-- unparsed cell Shang_2022_table_3:row10:col12 = 'Proportional residual error model (17%)'
+- table T4: no_numeric_grid
+- table T4: ragged_grid
+- final table T4: no supported point estimates; targeted recovery unresolved
+- transposed table Shang_2022_table_3: logical view retains original source coordinates
 - companion parameter table 3 transcribed (85 record(s))
 - LLM selected parameter table(s) 3
 - captured model equation VC = 3.63 * (BBWT/80)^0.597 * (e/0.152)SEX
@@ -122,12 +114,12 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Shang_2022_table_3:row3:col13'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Shang_2022_table_3:row4:col13'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Shang_2022_table_3:row5:col13'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Shang_2022_table_3:row6:col13'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Shang_2022_table_3:row12:col4'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Shang_2022_table_3:row12:col5'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Shang_2022_table_3:row12:col6'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Shang_2022_table_3:row12:col7'] |
 | C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q64 | pass | volume within physiological range | 1.65 L | not captured | not captured | ['Shang_2022_table_3:row6:col13'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 1.65 L | not captured | not captured | ['Shang_2022_table_3:row12:col7'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -136,7 +128,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_cemiplimab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Shang_2022` / `Shang_2022::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_cemiplimab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Shang_2022` / `Shang_2022::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -152,4 +144,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 10:52 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 18:35 UTC</sub>

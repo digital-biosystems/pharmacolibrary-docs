@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;triflusal&quot;,&quot;href&quot;:&quot;drugs/drug_triflusal/&quot;},{&quot;label&quot;:&quot;Park_2014 \u00b7 PD inhibition of platelet aggregation&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Triflusal_Park2014_reference&quot;,&quot;label&quot;:&quot;Park_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_triflusal/Triflusal_Park2014_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Triflusal_Park2014_final&quot;,&quot;label&quot;:&quot;Park_2014_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_triflusal/Triflusal_Park2014_final.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Triflusal_Park2014_final_estimates_from_final_model_estimate&quot;,&quot;label&quot;:&quot;Park_2014_final_estimates_from_final_model_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_triflusal/Triflusal_Park2014_final_estimates_from_final_model_estimate.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # inhibition of platelet aggregation — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.714). Primary extraction retained.">cross-check: disputed</span>
@@ -16,11 +16,11 @@
 
 **As extracted:** HTB (concentrations from this paper's PK model) drives inhibition of platelet aggregation: direct sigmoid Emax (Hill) effect.
 
-**Model:** Model available in **Models**; browser simulation unavailable.
+**Model:** No model was generated from this record.
 
-> The final model describes the probability of binary inhibition of platelet aggregation (IPA) as a direct function of the plasma concentration of the active metabolite HTB using a sigmoid Emax (binary probability) structure, rather than an indirect response model. The estimated parameters are an EC50 of 84.9 μg/mL and a shape factor (γ) of 19.2, with a maximum effect (Emax) of 1.
+> The final model predicts the probability of binary inhibition of platelet aggregation (defined as &lt;74% aggregation) directly from the plasma concentration of the active metabolite HTB using a sigmoid Emax-like binary probability relationship. The typical EC50 for HTB is 84.9 μg/mL with a shape factor (γ) of 19.2, while the paper does not specify a mechanism involving production or elimination turnover rates for the final selected model.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Park_2014`
 - **model family:** `sigmoid_emax`
@@ -35,55 +35,16 @@ Park SM et al., Population pharmacokinetic and pharmaco…, BMC pharmacology & t
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | EC 50 | `Q321` · not captured | 84.9 | μg/mL | not captured | llm (not captured) | Park_2014:pdv3 |
-| PD (effect) | γ | `Q325` · not captured | 19.2 | not captured | not captured | llm (not captured) | Park_2014:pdv3 |
+| PD (effect) | TV of EC 50 | `Q321` · not captured | 84.9 | μg/mL | not captured | llm (not captured) | Park_2014:pdv3 |
+| PD (effect) | TV of γ | `Q325` · not captured | 19.2 | not captured | not captured | llm (not captured) | Park_2014:pdv3 |
 | PD (effect) | Emax | `Q320` · not captured | 1 | 1 | not captured | review_gapfill (not captured) | Park_2014:review |
 | variability | BSV for EC 50 | `Q312` · not captured | 21.8 | %CV | not captured | llm (not captured) | Park_2014:pdv3 |
+| variability | Proportional error | `Q315` · not captured | 0.098 | not captured | not captured | llm (not captured) | Park_2014:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
-
-
-## Exposure-response model
-
-`Triflusal_Park2014_PD_ipa` — sigmoid_emax, `response = E0 + Emax*frac`
-
-| parameter | value (paper units) | SI |
-|---|---|---|
-| E0 | 0 | — |
-| Emax | -1 1 | -1 1 |
-| EC50 | 84.9 μg/mL | 0.0849 kg/m3 |
-| gamma | 19.2 | — |
-
-Closed-form check points (response, SI): `at_0` = 0, `at_EC50` = -0.5, `at_inf` = -1
-
-Deviations:
-
-- `defaulted_parameters` — E0
-- `pd_binding_inhibition_sign` — effect_direction=inhibition with a positive Emax (Q320) — sign flipped
-
-## Review
-
-Verdict <span class="pk-badge pk-badge--red">rejected</span> · route to `scholar`
-
-| check | status | note |
-|---|---|---|
-| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
-| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
-| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
-| `T2_direction` | pass | the response falls, as direct effect predicts |
-| `T3_plausibility` | fail | gamma 19.2 outside 0.1–10 |
-| `T4_defaults` | fail | a core parameter took a library default: E0 |
-
-Blocking:
-
-- T3 gamma 19.2 outside 0.1–10
-
-Advisory:
-
-- defaulted: E0 — a row the paper has and the record lacks
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  

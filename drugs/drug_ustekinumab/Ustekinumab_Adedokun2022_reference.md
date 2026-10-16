@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;ustekinumab&quot;,&quot;href&quot;:&quot;drugs/drug_ustekinumab/&quot;},{&quot;label&quot;:&quot;Adedokun_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ustekinumab_Adedokun2022_reference&quot;,&quot;label&quot;:&quot;Adedokun_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ustekinumab/Ustekinumab_Adedokun2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Ustekinumab_RodrguezFernndez2022_reference&quot;,&quot;label&quot;:&quot;Rodr\u00edguez-Fern\u00e1ndez_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ustekinumab/Ustekinumab_RodrguezFernndez2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ustekinumab_Lam2026_reference&quot;,&quot;label&quot;:&quot;Lam_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ustekinumab/Ustekinumab_Lam2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ustekinumab_Adedokun2022_reference&quot;,&quot;label&quot;:&quot;Adedokun_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ustekinumab/Ustekinumab_Adedokun2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Ustekinumab_Lam2026_reference&quot;,&quot;label&quot;:&quot;Lam_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ustekinumab/Ustekinumab_Lam2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -29,10 +29,10 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Adedokun OJ et al., Population Pharmacokinetics and Exposur…, Clinical therapeutics (2022)
   ·  DOI: [10.1016/j.clinthera.2022.08.010](https://doi.org/10.1016/j.clinthera.2022.08.010)
 
-<div class="pk-model-meta" hidden drug="ustekinumab" model-id="Ustekinumab_Adedokun2022_reference" status="curated_candidate" stale="false" population="adults with moderately to severely active Crohn&#39;s disease" measured-compound="ustekinumab" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="ustekinumab" model-id="Ustekinumab_Adedokun2022_reference" status="curated_candidate" stale="false" population="patients with moderately to severely active Crohn&#39;s disease" measured-compound="ustekinumab" parameterization="mechanistic" topology="1C"></div>
 
-**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 6 extracted.
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -42,9 +42,8 @@ Adedokun OJ et al., Population Pharmacokinetics and Exposur…, Clinical therape
 | clearance | `Q22` · CL | 0.192 | L/d | 2.222222222222222e-09 | [l] / [d] | not captured | exact (1.0) | Adedokun_2022:abstract | — | not captured |
 | volume of distribution at steady state | `Q65` · Vss | 4.62 | L | 0.00462 | [l] | not captured | llm_corrected (0.6) | Adedokun_2022:abstract | — | not captured |
 | intercompartmental clearance | `Q30` · Q | 0.287 | L/d | 3.321759259259259e-09 | [l] / [d] | not captured | exact (1.0) | Adedokun_2022:abstract | — | not captured |
-| Ustekinumab terminal elimination t1/2 | `Q57` · t1/2z | 19 | days | 1641600.0 | [d] | not captured | llm_confirmed (0.6) | Adedokun_2022:abstract | — | not captured |
-| bioavailability after SC administration | `Q40` · Fab | 78.3 | % | not captured | not captured | not captured | llm_confirmed (0.6) | Adedokun_2022:abstract | — | not captured |
-| ka | `Q49` · kabs | 0.908 | day−1 | 1.0509259259259259e-05 | 1/h | not captured | review_gapfill (0.7) | Rodríguez-Fernández_2022:review | — | not captured |
+| terminal elimination t1/2 | `Q57` · t1/2z | 19 | days | 1641600.0 | [d] | not captured | exact (1.0) | Adedokun_2022:abstract | — | not captured |
+| bioavailability after SC administration | `Q87` · Frel | 78.3 | % | not captured | not captured | not captured | llm_corrected (0.6) | Adedokun_2022:abstract | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -54,7 +53,6 @@ Adedokun OJ et al., Population Pharmacokinetics and Exposur…, Clinical therape
 ## Departures & gaps
 
 **Deviations:**
-- `defaulted_parameters`: ['Tlag']
 - `vss_as_v`: Vss (Q65) used as the distribution volume — no Vc/V reported
 
 **Interpretation flags:**
@@ -65,7 +63,6 @@ Adedokun OJ et al., Population Pharmacokinetics and Exposur…, Clinical therape
 - molar mass: none found for 'ustekinumab' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Rodríguez-Fernández_2022's review values (primary lacked it)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Adedokun_2022_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
@@ -102,7 +99,6 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Adedokun_2022:abstract'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Adedokun_2022:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Rodríguez-Fernández_2022:review'] |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Adedokun_2022:abstract'] |
 | C5_dimension_Q65 | pass | [length] ** 3 | not captured | not captured | not captured | ['Adedokun_2022:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.192 | not captured | not captured | ['Adedokun_2022:abstract'] |
@@ -117,8 +113,8 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_output_variable | not captured | pass | C_central (measured=ustekinumab) | central.C | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
@@ -128,10 +124,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ustekinumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Adedokun_2022` / `Adedokun_2022::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ustekinumab/models/modelica/Ustekinumab_Adedokun2022_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ustekinumab/models/modelica/Ustekinumab_Adedokun2022_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ustekinumab/models/modelica/Ustekinumab_Adedokun2022_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ustekinumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Adedokun_2022` / `Adedokun_2022::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ustekinumab/models/modelica/Ustekinumab_Adedokun2022_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ustekinumab/models/modelica/Ustekinumab_Adedokun2022_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ustekinumab/models/modelica/Ustekinumab_Adedokun2022_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -140,26 +136,26 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ustekinumab/Ustekinumab_Adedokun2022_reference/Ustekinumab_Adedokun2022_reference_modelica.zip" download>Ustekinumab_Adedokun2022_reference_modelica.zip</a> <span class="pk-size">(4.6 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_ustekinumab/Ustekinumab_Adedokun2022_reference/Ustekinumab_Adedokun2022_reference_fmi.zip" download>Ustekinumab_Adedokun2022_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_ustekinumab/Ustekinumab_Adedokun2022_reference/Ustekinumab_Adedokun2022_reference_matlab.zip" download>Ustekinumab_Adedokun2022_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_ustekinumab/Ustekinumab_Adedokun2022_reference/Ustekinumab_Adedokun2022_reference_matlab_simbio.zip" download>Ustekinumab_Adedokun2022_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_ustekinumab/Ustekinumab_Adedokun2022_reference/Ustekinumab_Adedokun2022_reference_sbml.zip" download>Ustekinumab_Adedokun2022_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_ustekinumab/Ustekinumab_Adedokun2022_reference/Ustekinumab_Adedokun2022_reference_cellml.zip" download>Ustekinumab_Adedokun2022_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ustekinumab/Ustekinumab_Adedokun2022_reference/Ustekinumab_Adedokun2022_reference_modelica.zip" download>Ustekinumab_Adedokun2022_reference_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_ustekinumab/Ustekinumab_Adedokun2022_reference/Ustekinumab_Adedokun2022_reference_fmi.zip" download>Ustekinumab_Adedokun2022_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_ustekinumab/Ustekinumab_Adedokun2022_reference/Ustekinumab_Adedokun2022_reference_matlab.zip" download>Ustekinumab_Adedokun2022_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_ustekinumab/Ustekinumab_Adedokun2022_reference/Ustekinumab_Adedokun2022_reference_matlab_simbio.zip" download>Ustekinumab_Adedokun2022_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_ustekinumab/Ustekinumab_Adedokun2022_reference/Ustekinumab_Adedokun2022_reference_sbml.zip" download>Ustekinumab_Adedokun2022_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_ustekinumab/Ustekinumab_Adedokun2022_reference/Ustekinumab_Adedokun2022_reference_cellml.zip" download>Ustekinumab_Adedokun2022_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_ustekinumab/Ustekinumab_Adedokun2022_reference/Ustekinumab_Adedokun2022_reference.svg" alt="Ustekinumab_Adedokun2022_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_ustekinumab/Ustekinumab_Adedokun2022_reference/Ustekinumab_Adedokun2022_reference.svg" alt="Ustekinumab_Adedokun2022_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.0378 /h, F 78.3). _The paper's dose was not captured; the simulator's default is used._
+**Administration: intravenous** — 0.54 mg infusion over 10 min, single dose. _The paper's dose was not captured; the default is the WHO ATC DDD 0.54 mg parenteral (L04AC05) (defined daily dose)._
 
-<dbs-fmusim paramsurl="drugs/drug_ustekinumab/Ustekinumab_Adedokun2022_reference/Ustekinumab_Adedokun2022_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_ustekinumab/Ustekinumab_Adedokun2022_reference/Ustekinumab_Adedokun2022_reference_sim_controls.json"></dbs-fmusim>
+<dbs-fmusim paramsurl="drugs/drug_ustekinumab/Ustekinumab_Adedokun2022_reference/Ustekinumab_Adedokun2022_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_ustekinumab/Ustekinumab_Adedokun2022_reference/Ustekinumab_Adedokun2022_reference_sim_controls.json"></dbs-fmusim>
 
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C_enteral` · parameters `Ustekinumab_Adedokun2022_reference_params.json` · controls `Ustekinumab_Adedokun2022_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C` · parameters `Ustekinumab_Adedokun2022_reference_params.json` · controls `Ustekinumab_Adedokun2022_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 01:03 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 23:30 UTC</sub>

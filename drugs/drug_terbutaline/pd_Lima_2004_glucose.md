@@ -18,9 +18,9 @@
 
 **Model:** No model was generated from this record.
 
-> Terbutaline concentrations (PK from Gupta_2019) drive a stimulatory indirect response model of glucose, acting by stimulation of glucose production (indirect response model III) with a proportional effect; the paper reports slope parameters S(1) of 0.039 and 0.0276 (units not stated), and no Imax, IC50, EC50, kin, kout or ke0 values are given in the available excerpts.
+> The paper does not provide the full text or mechanism details, so the specific mechanism by which terbutaline affects glucose is not described in the available excerpts. The record lists an indirect response model with stimulation and proportional effect, citing S(1) values of 0.039 and 0.0276, but no units or potency parameters (e.g., IC50, Emax) are provided.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
 
 - **paper:** `Lima_2004`
 - **model family:** `indirect_response_iii`

@@ -4,7 +4,7 @@
 
 # teduglutide — `Teduglutide_Marier2021_adults_0_05_mg_kg`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.833). Primary extraction retained.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -20,7 +20,7 @@
 
 No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of parameters a: this record has none, the second reading none. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has teduglutide, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -68,18 +68,24 @@ _No resolved parameters._
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.833 (5/6 fields) | 1 |
+| `gpt-oss-120b` | not confirmed | 0.125 (1/8 fields) | 7 |
 
-<details><summary>1 field discrepancy</summary>
+<details><summary>7 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[parameters a]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `model.parameterization` | mechanistic | apparent | mismatch |
+| `gpt-oss-120b` | `parameters[cl/f]` | not captured | 16.0 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t 1/2]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t 1/2]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v/f]` | not captured | 33.9 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | teduglutide | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | teduglutide | unknown | mismatch |
 
 </details>
 
@@ -105,7 +111,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_teduglutide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Marier_2021` / `Marier_2021::adults_0_05_mg_kg`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_teduglutide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Marier_2021` / `Marier_2021::adults_0_05_mg_kg`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

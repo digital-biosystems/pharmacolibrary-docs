@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;primaquine&quot;,&quot;href&quot;:&quot;drugs/drug_primaquine/&quot;},{&quot;label&quot;:&quot;Chotsiri_2024_2 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Primaquine_Chairat2018_reference&quot;,&quot;label&quot;:&quot;Chairat_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_primaquine/Primaquine_Chairat2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Primaquine_Sridharan2019_reference&quot;,&quot;label&quot;:&quot;Sridharan_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_primaquine/Primaquine_Sridharan2019_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Primaquine_Chairat2018_reference&quot;,&quot;label&quot;:&quot;Chairat_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_primaquine/Primaquine_Chairat2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,100 +17,79 @@
 
 ### Reviewer guidance
 
-**The primaquine model was rejected because its two metabolites, carboxy-primaquine and primaquine carbamoyl-glucuronide, are unlinked: each is formed from primaquine at the central compartment but has no compartment of its own (0 compartments), leaving them without a reachable structure.**
+**No volume or clearance — not a compartmental population PK model; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record lists carboxy-primaquine and primaquine carbamoyl-glucuronide as metabolites formed from primaquine at the central site, but both specify zero compartments, so no path exists from the dose to these metabolites — the structural check for unreachable compartments or unlinked metabolites failed. The parent model itself carries fitted values (CL/F 15.4 L/h, V1/F 163 L, tlag 0.0 h) and a peripheral volume for carboxy-primaquine (0.0328), yet the metabolite structure remains disconnected, so the record was refused. Extracted — primaquine: CL/F 15.4 L/h, V1/F 163 L, V2 0.0328, tlag 0 h.
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Extracted — primaquine: Fab 1, tlag 0 h; primaquine carbamoyl-glucuronide: Fab 1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading primaquine → carboxy-primaquine (metabolism); primaquine → primaquine carbamoyl-glucuronide (metabolism); it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by glm-5.3-flash</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Chotsiri P et al., Population pharmacokinetics of primaqui…, Malaria journal (2024)
   ·  DOI: [10.1186/s12936-024-04979-y](https://doi.org/10.1186/s12936-024-04979-y)
 
-<div class="pk-model-meta" hidden drug="primaquine" model-id="Primaquine_Chotsiri2024v2_reference" status="rejected" stale="false" population="healthy African males (G6PD-normal and G6PD-deficient) without malaria" measured-compound="primaquine" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="primaquine" model-id="Primaquine_Chotsiri2024v2_reference" status="rejected" stale="false" population="African males with G6PD deficiency and G6PD-normal status" measured-compound="primaquine" parameterization="mechanistic" topology="general_linear"></div>
 
-**Model structure:** 2-compartment; no model was built for this record.  
-**Parameters:** 4 extracted.
+**Model structure:** general linear; no model was built for this record.  
+**Parameters:** 3 extracted.
 
-**Parameterization:** CL/F, V1/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** mechanistic.
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F (L/h) | `Q27` · CL/F | 15.4 | L/h | 4.277777777777778e-06 | L/h | not captured | exact (1.0) | Chotsiri_2024_2:other_prose | — | not captured |
-| VC/F (L) | `Q290` · V1/F | 163 | L | 0.163 | L | not captured | exact (1.0) | Chotsiri_2024_2:other_prose | — | not captured |
-| Carboxy-primaquine σVP | `Q64` · V2 | 0.0328 | not captured | not captured | L | not captured | boundary (0.8) | Chotsiri_2024_2:other_prose | — | not captured |
-| Lag time (h) | `Q83` · tlag | 0.0 | h | 0.0 | h | not captured | review_gapfill (0.7) | Fasinu_2022_2:review | — | not captured |
+| CMAX (% HB change per 1 ng/mL) | `Q32` · Cmax | 0.539 | % HB change per 1 ng/mL | not captured | [[h] · [ng] · [%] · [bchangeper1]] / [ml] | not captured | exact (1.0) | Chotsiri_2024_2_table_S1:row1:col2, Chotsiri_2024_2_table_S1:row4:col2, Chotsiri_2024_2_table_S1:row7:col2 | — | not captured |
+| AUC24 (% HB change per 1 nghr/mL) | `Q19` · AUCt | 0.304 | % HB change per 1 nghr/mL | not captured | [[h]^2 · [ng] · [%] · [bchangeper1]] / [ml] | not captured | llm (0.6) | Chotsiri_2024_2_table_S1:row2:col2, Chotsiri_2024_2_table_S1:row5:col2, Chotsiri_2024_2_table_S1:row8:col2 | — | not captured |
+| Lag time | `Q83` · tlag | 0.0 | h | 0.0 | h | not captured | review_gapfill (0.7) | Fasinu_2022_2:review | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
-### Unresolved rows _(no Q-code or no value — not parameters)_
-| label (paper) | Q-code | value | link |
-|---|---|---|---|
-| F | Q40 | not captured | exact |
-
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped value-less row: 'MTT (h)' (captured trailing unit 'h' for child rows)
-- dropped value-less row: 'CL/F (L/h)' (captured trailing unit 'L/h' for child rows)
-- dropped value-less row: 'VC/F (L)' (captured trailing unit 'L' for child rows)
-- dropped value-less row: 'CF (%)' (captured trailing unit '%' for child rows)
-- salvaged Q27 ('CL/F (L/h)'=15.4) from results prose — parameter table was unreadable
-- salvaged Q290 ('VC/F (L)'=163) from results prose — parameter table was unreadable
-- salvaged Q64 ('Carboxy-primaquine σVP'=0.0328) from results prose — parameter table was unreadable
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=primaquine
+- unit_dimension_unknown: '% HB change per 1 ng/mL' (Cmax)
+- unit_dimension_unknown: '% HB change per 1 nghr/mL' (AUCt)
+- unit_dimension_unknown: '% mHB change per 1 ng/mL' (Cmax)
+- dropped duplicate Q32 ('CMAX (% mHB change per 1 ng/mL)', value '0.363') — already have one for this compound
+- unit_dimension_unknown: '% mHB change per 1 nghr/mL' (AUCt)
+- dropped duplicate Q19 ('AUC24 (% mHB change per 1 nghr/mL)', value '0.234') — already have one for this compound
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=primaquine
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- template fit: PK_3M_9C — formed from central; parent 2, metabolites [0, 0]
+- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
+- template fit: none — only the metabolite is modelled — no parent compartment
 - status held at route_to_review — not promoted
-- row roles (LLM): model_class=compartmental; 7/7 row label(s) assigned, 9 linked by role; re-tagged primaquine→parent ×20
+- population split: 'g6pd-normal individuals (n = 10)' subgroup of Chotsiri_2024_2 (paper reports 2 populations: g6pd-deficient individuals (n = 18), g6pd-normal individuals (n = 10))
+- row roles: 1 row(s) kept on the molecule their table section names, against the LLM's assignment
+- row roles (LLM): model_class=compartmental; 5/5 row label(s) assigned, 0 linked by role; re-tagged primaquine→parent ×1, primaquine→primaquine carbamoyl-glucuronide ×1
 - molar mass: no plausible PubChem entry for 'primaquine carbamoyl-glucuronide' ('primaquine carbamoyl-glucuronide') — left in mass units
 - molar mass: none found for 'primaquine carbamoyl-glucuronide' — its concentrations stay mass-only
+- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
 - gap-filled Q83 (tlag) from Fasinu_2022_2's review values (primary lacked it)
 
 **Extraction notes:**
-- unparsed cell Tab2:row2:col3 = '52.9% (15.4%)'
-- unparsed cell Tab2:row2:col4 = '39.7%–74.6%'
-- unparsed cell Tab2:row3:col1 = '0.563 (18.7%)'
-- unparsed cell Tab2:row3:col3 = '63.3% (23.5%)'
-- unparsed cell Tab2:row3:col4 = '36.8%–100%'
-- unparsed cell Tab2:row4:col1 = '15.4 (9.57%)'
-- unparsed cell Tab2:row4:col3 = '12% (12.4%)'
-- unparsed cell Tab2:row4:col4 = '7.99%–14.3%'
-- unparsed cell Tab2:row5:col1 = '163 (10.3%)'
-- unparsed cell Tab2:row6:col1 = '32.9 (6.89%)'
-- unparsed cell Tab2:row7:col1 = '0.173 (9.37%)'
-- unparsed cell Tab2:row8:col1 = '0.226 (9.33%)'
-- unparsed cell Tab2:row10:col1 = '1.24 (11.7%)'
-- unparsed cell Tab2:row10:col3 = '65.3% (13.2%)'
-- unparsed cell Tab2:row10:col4 = '50.6%–89.2%'
-- unparsed cell Tab2:row11:col1 = '0.129 (28.5%)'
-- unparsed cell Tab2:row12:col1 = '93.3 (7.00%)'
-- unparsed cell Tab2:row12:col3 = '37.4% (15.7%)'
-- unparsed cell Tab2:row12:col4 = '29.5%–52.9%'
-- unparsed cell Tab2:row13:col1 = '69.1 (3.83%)'
-- unparsed cell Tab2:row14:col1 = '0.0328 (8.96%)'
-- unparsed cell Tab2:row15:col1 = '0.101 (8.84%)'
-- unparsed cell Tab2:row17:col3 = '63.5% (12.1%)'
-- unparsed cell Tab2:row17:col4 = '48.7%–81.9%'
-- unparsed cell Tab2:row18:col1 = '1.13 (8.84%)'
-- unparsed cell Tab2:row18:col3 = '34.4% (25.1%)'
-- unparsed cell Tab2:row18:col4 = '24.2%–58.5%'
-- unparsed cell Tab2:row19:col1 = '2.83 (15.8%)'
-- unparsed cell Tab2:row19:col3 = '57.8% (12.1%)'
-- unparsed cell Tab2:row19:col4 = '42.8%–75.1%'
-- unparsed cell Tab2:row20:col1 = '55.4 (12.4%)'
-- unparsed cell Tab2:row21:col1 = '40.1 (6.97%)'
-- unparsed cell Tab2:row22:col1 = '0.108 (12.3%)'
-- unparsed cell Tab2:row23:col1 = '0.242 (8.00%)'
-- LLM selected parameter table(s) 2
+- table Tab2: unbound_uncertainty
+- table Tab2: units_need_context
+- table Tab2: unparsed_numeric_cell
+- table Chotsiri_2024_2_table_S1: units_need_context
+- table Chotsiri_2024_2_table_S1: ragged_grid
+- companion parameter table S1 transcribed (12 record(s))
+- table Chotsiri_2024_2_table_S2: units_need_context
+- table Chotsiri_2024_2_table_S2: ragged_grid
+- companion parameter table S2 transcribed (12 record(s))
+- no LLM table selection; kept 3 deterministically-scored parameter table(s)
+- LLM region Tab2:footnote: Connection error.
+- LLM region Chotsiri_2024_2:results_prose: Connection error.
+- LLM region Chotsiri_2024_2:other_prose: Connection error.
+- LLM region Chotsiri_2024_2:other_prose: Connection error.
+- LLM region Chotsiri_2024_2:other_prose: Connection error.
+- LLM region Chotsiri_2024_2:discussion_prose: Connection error.
 
 ## Validation
 
@@ -145,15 +124,12 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
+| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Fasinu_2022_2:review'] |
-| C5_unit_missing_Q64 | fail | [length] ** 3 | not captured | not captured | not captured | ['Chotsiri_2024_2:other_prose'] |
-| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
-| C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 15.4 L/h | not captured | not captured | ['Chotsiri_2024_2:other_prose'] |
-| C9_phys_window_Q290 | pass | volume within physiological range | 163 L | not captured | not captured | ['Chotsiri_2024_2:other_prose'] |
+| C5_unit_missing_Q19 | fail | [mass] * [time] / [length] ** 3 | % HB change per 1 nghr/mL | not captured | not captured | ['Chotsiri_2024_2_table_S1:row2:col2', 'Chotsiri_2024_2_table_S1:row5:col2', 'Chotsiri_2024_2_table_S1:row8:col2'] |
+| C5_unit_missing_Q32 | fail | [mass] / [length] ** 3 | % HB change per 1 ng/mL | not captured | not captured | ['Chotsiri_2024_2_table_S1:row1:col2', 'Chotsiri_2024_2_table_S1:row4:col2', 'Chotsiri_2024_2_table_S1:row7:col2'] |
+| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none', 'none'] | not captured | not captured | not captured |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -162,7 +138,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_primaquine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Chotsiri_2024_2` / `Chotsiri_2024_2::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_primaquine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Chotsiri_2024_2` / `Chotsiri_2024_2::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -178,4 +154,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 07:50 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 01:12 UTC</sub>

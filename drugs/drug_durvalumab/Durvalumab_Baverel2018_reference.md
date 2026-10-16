@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;durvalumab&quot;,&quot;href&quot;:&quot;drugs/drug_durvalumab/&quot;},{&quot;label&quot;:&quot;Baverel_2018 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Durvalumab_Zhao2026_reference&quot;,&quot;label&quot;:&quot;Zhao_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_durvalumab/Durvalumab_Zhao2026_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Durvalumab_Abegesah2025_reference&quot;,&quot;label&quot;:&quot;Abegesah_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_durvalumab/Durvalumab_Abegesah2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Durvalumab_Zhao2026_reference&quot;,&quot;label&quot;:&quot;Zhao_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_durvalumab/Durvalumab_Zhao2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Durvalumab_Abegesah2025_reference&quot;,&quot;label&quot;:&quot;Abegesah_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_durvalumab/Durvalumab_Abegesah2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # durvalumab — `Durvalumab_Baverel2018_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.75). Primary extraction retained.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.75). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -17,33 +17,31 @@
 
 ### Reviewer guidance
 
-**Durvalumab’s peripheral-compartment volume, V2, is 3.45 L, but the compartment is unreachable from the dose, so the record was rejected.**
+**Only clearance was extracted — no volume.**
 
-The record lists a two-compartment structure and V2, the peripheral-compartment volume, as 3.45 L; the peripheral compartment has no path from the dose. A reported parameter unit could not be converted to SI, but the finding does not identify which parameter. Extracted — durvalumab: CL 16.9 %, V1 3.51 L, V2 3.45 L.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Extracted — durvalumab: CL 0.351 L/day.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of decrease in clearance from baseline: this record has 16.9, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Baverel PG et al., Population Pharmacokinetics of Durvalum…, Clinical pharmacology and t… (2018)
   ·  DOI: [10.1002/cpt.982](https://doi.org/10.1002/cpt.982)
 
-<div class="pk-model-meta" hidden drug="durvalumab" model-id="Durvalumab_Baverel2018_reference" status="rejected" stale="false" population="cancer patients with solid tumors" measured-compound="durvalumab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="durvalumab" model-id="Durvalumab_Baverel2018_reference" status="needs_review" stale="false" population="cancer patients with solid tumors" measured-compound="durvalumab" parameterization="mechanistic" topology="1C"></div>
 
-**Model structure:** 2-compartment; no model was built for this record.  
-**Parameters:** 3 extracted.
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 1 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| decrease in clearance from baseline | `Q22` · CL | 16.9 | % | not captured | % | not captured | boundary (0.8) | Baverel_2018:other_prose | — | not captured |
-| V1 | `Q63` · V1 | 3.51 | L | 0.0035099999999999997 | L | not captured | exact (1.0) | Baverel_2018:other_prose | — | not captured |
-| V2 | `Q64` · V2 | 3.45 | L | 0.0034500000000000004 | L | not captured | exact (1.0) | Baverel_2018:other_prose | — | not captured |
+| Time-invariant CL model [95% CI] | `Q22` · CL | 0.351 | L/day | 4.0625e-09 | L/h | not captured | llm_confirmed (0.6) | Baverel_2018_table_5:row2:col1, Baverel_2018_table_5:row3:col1 | — | 0.234 (None% RSE) |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -53,25 +51,22 @@ Baverel PG et al., Population Pharmacokinetics of Durvalum…, Clinical pharmaco
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped value-less row: 'Amount of successful bootstraps out of 1000 replicates'
-- NIL: refused to back-fill base 'NIL' from footnote/prose loose number '0.234' (source ['cpt982-tbl-0002:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'NIL' from footnote/prose loose number '−0.035' (source ['cpt982-tbl-0002:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'NIL' from footnote/prose loose number '0.00149' (source ['cpt982-tbl-0002:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'NIL' from footnote/prose loose number '−0.063' (source ['cpt982-tbl-0002:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'NIL' from footnote/prose loose number '−0.143' (source ['cpt982-tbl-0002:footnote', 'cpt982-tbl-0002:footnote', 'cpt982-tbl-0002:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'NIL' from footnote/prose loose number '0.00178' (source ['cpt982-tbl-0002:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'NIL' from footnote/prose loose number '0.389' (source ['cpt982-tbl-0002:footnote', 'cpt982-tbl-0002:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'NIL' from footnote/prose loose number '0.00336' (source ['cpt982-tbl-0002:footnote']); the table cell was unparseable — needs review
-- salvaged Q22 ('decrease in clearance from baseline'=16.9) from results prose — parameter table was unreadable
-- salvaged Q63 ('V1'=3.51) from results prose — parameter table was unreadable
-- salvaged Q64 ('V2'=3.45) from results prose — parameter table was unreadable
+- table section iiv: 'Empirical time-varying CL model [95% CI]' routed out of structural estimates ('Between-subject variability Tmax ω (SD)')
+- table section residual_error: 'Time-invariant CL model [95% CI]' routed out of structural estimates ('Proportional residual error σ (CV%)')
+- table section residual_error: 'Empirical time-varying CL model [95% CI]' routed out of structural estimates ('Proportional residual error σ (CV%)')
+- table section residual_error: 'Semimechanistic time-varying CL model b [95% CI]' routed out of structural estimates ('Proportional residual error σ (CV%)')
+- column 'amount of successful bootstraps out of 1000 replicates' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- dropped duplicate Q22 ('Empirical time-varying CL model [95% CI]', value '0.371') — already have one for this compound
+- dropped duplicate Q22 ('Semimechanistic time-varying CL model b [95% CI]', value '0.301') — already have one for this compound
+- implicit units: 'Time-invariant CL model [95% CI]' → L/day (from the paper text: "The text explicitly states: 'Typical durvalumab clearance in the semimechanistic time‐varying CL model was 0.232 L/day'.")
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=durvalumab
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at route_to_review — not promoted
 - molar mass: none found for 'durvalumab' — its concentrations stay mass-only
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- LLM selected parameter table(s) 2
+- transposed table Baverel_2018_table_5: logical view retains original source coordinates
+- LLM selected parameter table(s) 4, 5
 
 ## Validation
 
@@ -101,14 +96,13 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | % | not captured | not captured | ['Baverel_2018:other_prose'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 16.9 | not captured | not captured | ['Baverel_2018:other_prose'] |
-| C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q63 | pass | volume within physiological range | 3.51 L | not captured | not captured | ['Baverel_2018:other_prose'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 3.45 L | not captured | not captured | ['Baverel_2018:other_prose'] |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Baverel_2018_table_5:row2:col1', 'Baverel_2018_table_5:row3:col1'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.351 | not captured | not captured | ['Baverel_2018_table_5:row2:col1', 'Baverel_2018_table_5:row3:col1'] |
+| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.0146 L/h | not captured | not captured | ['Baverel_2018_table_5:row2:col1', 'Baverel_2018_table_5:row3:col1'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -117,14 +111,24 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_durvalumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Baverel_2018` / `Baverel_2018::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_durvalumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Baverel_2018` / `Baverel_2018::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -133,4 +137,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 12:18 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 19:20 UTC</sub>

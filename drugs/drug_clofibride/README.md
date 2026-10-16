@@ -18,7 +18,7 @@ Clofibride is a fibrate lipid-modifying agent, a class of drugs used to lower bl
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 11:51 | 0:14 | 0/0/0 | 0/0/0 | 0/0/0 | 1,247/143 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-15 01:20 | 5:01 | 0/0/0 | 0/0/0 | 0/0/0 | 438/74 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
@@ -32,7 +32,7 @@ _not available_
 
 ## Coverage
 
-- **PubMed hits:** 1 matched, 1 returned
+- **PubMed hits:** 0 matched, 1 returned
 - **screened:** 0  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
@@ -45,7 +45,7 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 |---|---|---|---|---|---|---|
 | `Harvengt_1976.pdf` | Harvengt C et al., Pharmacokinetic study and bioavailabili…, International journal of cl… (1976) | popPK | 8 | not captured | [1002348](https://pubmed.ncbi.nlm.nih.gov/1002348) | The study reports pharmacokinetics of clofibride's active metabolite (CPIB) in humans, but the specific numeric parameter values are not present in the provided evidence. |
 
-<sub>queue written 2026-10-07T11:51:02.819848+00:00</sub>
+<sub>queue written 2026-10-15T01:20:04.153606+00:00</sub>
 
 ## Screened and excluded
 

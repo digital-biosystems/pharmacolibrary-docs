@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;apremilast&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Apremilast_Okubo2021_typical_values_rse_for_model_parameters&quot;,&quot;label&quot;:&quot;Okubo_2021_typical_values_rse_for_model_parameters_and_covariate_effects&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_apremilast/Apremilast_Okubo2021_typical_values_rse_for_model_parameters.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Apremilast_Warren2025_reference&quot;,&quot;label&quot;:&quot;Warren_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_apremilast/Apremilast_Warren2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Apremilast_Okubo2021_typical_values_rse_for_model_parameters&quot;,&quot;label&quot;:&quot;Okubo_2021_typical_values_rse_for_model_parameters_and_covariate_effects&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_apremilast/Apremilast_Okubo2021_typical_values_rse_for_model_parameters.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # apremilast
 
@@ -22,29 +22,48 @@ Apremilast is an immunosuppressant used to treat inflammatory conditions such as
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
 | apremilast | parent | 460.5 | C22H24N2O7S | DrugBank | [11561674](https://pubchem.ncbi.nlm.nih.gov/compound/11561674) | Okubo_2021, Warren_2025 |
+| orismilast | metabolite | 510.29 | — | the paper | — | Warren_2025 |
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 23:40 | 1:00 | 2/2/0 | 1/0/0 | 0/0/0 | 104,172/6,532 | einfracz / qwen3.8-27b | 3 | 0/3 | 3/0 | 0 |
+| 2026-10-15 00:33 | 1:18 | 1/2/0 | 1/0/0 | 0/0/0 | 83,911/5,697 | einfracz / qwen3.8-27b | 3 | 0/3 | 3/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> | [Okubo_2021_typical_values_rse_for_model_parameters_and_covariate_effects](drugs/drug_apremilast/Apremilast_Okubo2021_typical_values_rse_for_model_parameters.md) | ▶ model + simulator | 1-compartment, oral | 4 | Okubo Y et al., Population pharmacokinetic and exposure…, The Journal of dermatology (2021) | [10.1111/1346-8138.16068](https://doi.org/10.1111/1346-8138.16068) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.571). Primary extraction retained.">cross-check: disputed</span> | [Warren_2025_reference](drugs/drug_apremilast/Apremilast_Warren2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Warren RB et al., Population Pharmacokinetic-Pharmacodyna…, Dermatology and therapy (2025) | [10.1007/s13555-025-01371-9](https://doi.org/10.1007/s13555-025-01371-9) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Okubo_2021_geometric_mean_cv_geometric_mean](drugs/drug_apremilast/Apremilast_Okubo2021_geometric_mean_cv_geometric_mean.md) | — | 1-compartment (no model) | 4 | Okubo Y et al., Population pharmacokinetic and exposure…, The Journal of dermatology (2021) | [10.1111/1346-8138.16068](https://doi.org/10.1111/1346-8138.16068) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.8). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Okubo_2021_geometric_mean_geometric_cv](drugs/drug_apremilast/Apremilast_Okubo2021_geometric_mean_geometric_cv.md) | — | 1-compartment (no model) | 0 | Okubo Y et al., Population pharmacokinetic and exposure…, The Journal of dermatology (2021) | [10.1111/1346-8138.16068](https://doi.org/10.1111/1346-8138.16068) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.571). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Warren_2025_reference](drugs/drug_apremilast/Apremilast_Warren2025_reference.md) | — | general linear (no model) | 2 | Warren RB et al., Population Pharmacokinetic-Pharmacodyna…, Dermatology and therapy (2025) | [10.1007/s13555-025-01371-9](https://doi.org/10.1007/s13555-025-01371-9) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed</span> | [Okubo_2021_PASI_50](drugs/drug_apremilast/pd_Okubo_2021_PASI_50.md) | PASI-50 ← apremilast · direct Emax (saturable) effect | — | Okubo Y et al., Population pharmacokinetic and exposure…, The Journal of dermatology (2021) | [10.1111/1346-8138.16068](https://doi.org/10.1111/1346-8138.16068) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed</span> | [Okubo_2021_PASI_75](drugs/drug_apremilast/pd_Okubo_2021_PASI_75.md) | PASI-75 ← apremilast · direct Emax (saturable) effect | — | Okubo Y et al., Population pharmacokinetic and exposure…, The Journal of dermatology (2021) | [10.1111/1346-8138.16068](https://doi.org/10.1111/1346-8138.16068) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed</span> | [Okubo_2021_sPGA](drugs/drug_apremilast/pd_Okubo_2021_sPGA.md) | sPGA response (0 or 1) ← apremilast · direct Emax (saturable) effect | — | Okubo Y et al., Population pharmacokinetic and exposure…, The Journal of dermatology (2021) | [10.1111/1346-8138.16068](https://doi.org/10.1111/1346-8138.16068) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed</span> | [Okubo_2021_PASI_50](drugs/drug_apremilast/pd_Okubo_2021_PASI_50.md) | PASI-50 response ← Apremilast · direct Emax (saturable) effect | — | Okubo Y et al., Population pharmacokinetic and exposure…, The Journal of dermatology (2021) | [10.1111/1346-8138.16068](https://doi.org/10.1111/1346-8138.16068) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed</span> | [Okubo_2021_PASI_75](drugs/drug_apremilast/pd_Okubo_2021_PASI_75.md) | PASI-75 response ← Apremilast · direct Emax (saturable) effect | — | Okubo Y et al., Population pharmacokinetic and exposure…, The Journal of dermatology (2021) | [10.1111/1346-8138.16068](https://doi.org/10.1111/1346-8138.16068) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed</span> | [Okubo_2021_sPGA](drugs/drug_apremilast/pd_Okubo_2021_sPGA.md) | sPGA response ← Apremilast · direct Emax (saturable) effect | — | Okubo Y et al., Population pharmacokinetic and exposure…, The Journal of dermatology (2021) | [10.1111/1346-8138.16068](https://doi.org/10.1111/1346-8138.16068) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=apremilast).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` substrate | DrugBank actor |
+| absorption | liver | `ABCB1` substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
+| absorption | testis | `ABCB1` substrate | DrugBank actor |
+| metabolism | liver | `CYP1A2` substrate, `CYP2A6` substrate, `CYP3A4` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: CDK4 (inhibitor), CDK6 (inhibitor), PDE4 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,17 +75,17 @@ Apremilast is an immunosuppressant used to treat inflammatory conditions such as
 
 - **PubMed hits:** 8 matched, 8 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 4  ·  extracted 2  ·  needs_review 0  ·  rejected 2  ·  stale 0
+- **records:** 3  ·  extracted 1  ·  needs_review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Coffey_2026 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic and discovery study for a novel PDE4 inhibitor (LT-104A), with apremilast mentioned only as a comparator drug, and no PK parameters for apremilast are reported. |
-| popPK | Gu_2024 | irrelevant | 0 | 0 | The study focuses on the development of new PDE4 inhibitors (DCN and 7b-1) using apremilast only as a comparator for binding mode and indication, with no PK parameters reported for apremilast. |
-| popPK | Vossen_2019 | irrelevant | 0 | 0 | The paper is a randomized clinical trial evaluating efficacy and safety for hidradenitis suppurativa, and it reports no pharmacokinetic parameters for apremilast. |
-| popPK | Vossen_2019_2 | irrelevant | 0 | 0 | The study is a translational pharmacodynamic evaluation of inflammatory biomarkers in skin biopsies and does not report any pharmacokinetic parameters for apremilast. |
+| popPK | Coffey_2026 | irrelevant | 0 | 0 | The paper is an in-vitro pharmacological study identifying a new PDE4 inhibitor (LT-104A), and apremilast is only mentioned as a marketed comparator without any pharmacokinetic data. |
+| popPK | Gu_2024 | irrelevant | 0 | 0 | The study focuses on the identification and efficacy of novel PDE4 inhibitors in mice, mentioning apremilast only as a structural reference/comparator without providing any pharmacokinetic data. |
+| popPK | Vossen_2019 | irrelevant | 0 | 0 | The paper is a randomized clinical trial assessing efficacy and safety, not a pharmacokinetic study, and does not report PK parameters. |
+| popPK | Vossen_2019_2 | irrelevant | 0 | 0 | This is a pharmacodynamic/translational study analyzing inflammatory biomarkers in skin biopsies, not a pharmacokinetic study reporting disposition parameters. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-06 23:40 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-15 00:32 UTC</sub>

@@ -17,9 +17,9 @@
 
 **Model:** No model was generated from this record.
 
-> The paper describes a population dose-response model where betaxolol dose (5, 10, or 20 mg) inhibits supine diastolic blood pressure, with the lowest dose producing maximum or near-maximum effect. The estimated maximum effect was approximately 13 mm Hg (95% CI 10 to 15 mm Hg), and the D50 was indistinguishable from zero.
+> Betaxolol dose (5–20 mg) reduces supine diastolic blood pressure (baseline 100 mm Hg) via an Emax inhibition model with a maximum effect (Emax) of 13.1 mm Hg. The paper notes that the lowest dose produced maximum effect, making the potency (D50) indistinguishable from zero, and no rate constants are provided.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Sambol_1991`
 - **model family:** `emax`
@@ -34,8 +34,8 @@ Sambol NC et al., Population dose versus response of beta…, Clinical pharmacol
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
+| PD (effect) | Emax | `Q323` · not captured | 13.1 | mm Hg | not captured | direction (not captured) | Sambol_1991:pdv3 |
 | PD (effect) | baseline supine diastolic blood pressure | `Q324` · not captured | 100 | mm Hg | not captured | llm (not captured) | Sambol_1991:pdv3 |
-| PD (effect) | maximum effect | `Q323` · not captured | 13.1 | mm Hg | not captured | direction (not captured) | Sambol_1991:pdv3 |
 | variability | interindividual variability in response | `Q312` · not captured | 19.3 | % | not captured | llm (not captured) | Sambol_1991:pdv3 |
 
 <details class="legend">

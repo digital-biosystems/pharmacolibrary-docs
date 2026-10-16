@@ -1,0 +1,30 @@
+{
+ "dose_source": "library default",
+ "model_id": "Infliximab_Song2025_reference",
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 2.8703703703703706e-09,
+  "F": 0.667,
+  "Tlag": 0.0,
+  "VdPerKg": 2.6714285714285715e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "k12": 3.7074173103584865e-06,
+  "k21": 3.5371787603930464e-06,
+  "ka": 9.60648148148148e-07,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 3381547.094188377
+ },
+ "reference_peaks": {
+  "central.C": 0.0008502038031873285
+ },
+ "stop_time": 5443200.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

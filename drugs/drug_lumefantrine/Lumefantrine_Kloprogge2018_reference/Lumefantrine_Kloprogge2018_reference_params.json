@@ -1,5 +1,5 @@
 {
- "dose_source": "paper",
+ "dose_source": "library default",
  "model_id": "Lumefantrine_Kloprogge2018_reference",
  "molar_masses": {
   "central.C": 0.5289400000000001
@@ -7,13 +7,6 @@
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
- ],
- "paper_doses_kind": "discrete",
- "paper_doses_mg": [
-  120.0,
-  180.0,
-  240.0,
-  360.0
  ],
  "parameters": {
   "Cl": 3.75e-07,
@@ -23,17 +16,17 @@
   "VdPerKg": 0.00015999999999999999,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.00012,
+  "adminMass": 0.0001,
   "ka": 1.0722222222222223e-05,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 50530.572778280526
+  "central.C": 50421.64328657315
  },
  "reference_peaks": {
-  "central.C": 0.002006587051540162
+  "central.C": 0.0016721617080428354
  },
- "stop_time": 432000.0,
+ "stop_time": 104400.0,
  "template": "PK_1C_enteral",
  "template_fmu": "PK_1C_enteral.fmu"
 }

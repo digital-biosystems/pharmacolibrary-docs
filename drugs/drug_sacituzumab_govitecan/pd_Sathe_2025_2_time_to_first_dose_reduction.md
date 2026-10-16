@@ -13,18 +13,18 @@
 
 ## Record summary
 
-**As extracted:** Sacituzumab govitecan (measured concentrations) drives time to first dose reduction: time-to-event model.
+**As extracted:** Sacituzumab govitecan (concentrations from the PK model of Sathe_2024::final_model_estimate_rse) drives time to first dose reduction: time-to-event model.
 
 **Model:** No model was generated from this record.
 
-> The paper models time to first dose reduction using a Cox proportional-hazards model where the average serum concentration of sacituzumab govitecan (CAVGSG) acts as the driver, with higher concentrations associated with an increased risk of dose reduction. The paper does not provide specific potency or rate parameter values (such as IC50, EC50, or hazard ratios) for this relationship.
+> The paper does not provide a mechanism-based pharmacodynamic model with specific potency or rate parameters (such as IC50 or kout); instead, it used a Cox proportional-hazards model where higher average SG-related serum concentration (CAVGSG) increased the risk of the time-to-first dose reduction event. The analysis reported a statistically significant association (P &lt; 0.001) between higher CAVGSG and increased risk of dose reduction, without specifying numerical effect size magnitudes or rate constants.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Sathe_2025_2`
 - **model family:** `tte`
-- **driver:** `conc_no_pk`
-- **tier:** descriptive
+- **driver:** `cited_pk`
+- **tier:** population
 - **effect:** stimulation/unknown
 
 ## Citation

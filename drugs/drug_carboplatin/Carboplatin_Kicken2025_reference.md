@@ -92,7 +92,7 @@ Kicken MP et al., Pharmacokinetic Study of Carboplatin Us…, Therapeutic drug m
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_carboplatin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kicken_2025` / `Kicken_2025::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_carboplatin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kicken_2025` / `Kicken_2025::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

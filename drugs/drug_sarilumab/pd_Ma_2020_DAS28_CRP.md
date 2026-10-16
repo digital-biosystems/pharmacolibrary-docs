@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;sarilumab&quot;,&quot;href&quot;:&quot;drugs/drug_sarilumab/&quot;},{&quot;label&quot;:&quot;Ma_2020 \u00b7 PD 28-joint disease activity score by C-reactive protein&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;sarilumab&quot;,&quot;href&quot;:&quot;drugs/drug_sarilumab/&quot;},{&quot;label&quot;:&quot;Ma_2020 \u00b7 PD DAS28-CRP&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# 28-joint disease activity score by C-reactive protein — PD  <span class="pk-badge pk-badge--green">accepted (caveats)</span>
+# DAS28-CRP — PD  <span class="pk-badge pk-badge--green">reviewed — candidate</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -13,11 +13,11 @@
 
 ## Record summary
 
-**As extracted:** Sarilumab (concentrations from the PK model of Xu_2019::estimate) drives 28-joint disease activity score by C-reactive protein: indirect response — drug inhibits the production of 28-joint disease activity score by C-reactive protein.
+**As extracted:** Sarilumab (concentrations from the PK model of Xu_2019::estimate) drives DAS28-CRP: indirect response — drug inhibits the production of DAS28-CRP.
 
 **Model:** No model was generated from this record.
 
-> Sarilumab concentrations inhibit the production rate (Kin) of DAS28-CRP via a direct Emax effect with a gamma of 1. The model estimates an IC50 of 2.32 mg/L, a Kout of 0.0264 day−1, and a Log(Emax) of 0.237.
+> Sarialumab concentrations (mg/L) inhibit the production rate (Kin) of DAS28-CRP via an indirect-response model with a maximum effect (Emax) of 0.237 and an IC50 of 2.32 mg/L. The response loss rate constant (Kout) is 0.0264 day−1, with a gamma of 1 and a baseline DAS28-CRP of 6.06.
 >
 > <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
@@ -35,17 +35,10 @@ Ma L et al., Population Pharmacokinetic-Pharmacodyna…, Clinical pharmacokineti
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
 | PD (effect) | BASE | `Q324` · not captured | 6.06 | not captured | not captured | llm (not captured) | Ma_2020:pdv3 |
-| PD (effect) | Log (Emax) | `Q323` · not captured | 0.237 | not captured | not captured | llm (not captured) | Ma_2020:pdv3 |
+| PD (effect) | Emax | `Q323` · not captured | 0.237 | not captured | not captured | llm (not captured) | Ma_2020:pdv3 |
 | PD (effect) | IC50 | `Q322` · not captured | 2.32 | mg/L | not captured | llm (not captured) | Ma_2020:pdv3 |
 | PD (effect) | Kout | `Q328` · not captured | 0.0264 | day−1 | not captured | llm (not captured) | Ma_2020:pdv3 |
-| PD (effect) | γ | `Q325` · not captured | 1 (fixed) | not captured | not captured | llm (not captured) | Ma_2020:pdv3 |
-| PD (effect) | PLB | `Q341` · not captured | 0.991 | mg/L | not captured | llm (not captured) | Ma_2020:pdv3 |
-| model term | BLCRP on BASE | `Q900` · not captured | 0.0564 | not captured | not captured | llm (not captured) | Ma_2020:pdv3 |
-| model term | BLPHYVAS on BASE | `Q900` · not captured | 0.105 | not captured | not captured | llm (not captured) | Ma_2020:pdv3 |
-| model term | BLHAQ on BASE | `Q900` · not captured | 0.0779 | not captured | not captured | llm (not captured) | Ma_2020:pdv3 |
-| model term | Weight on BASE | `Q900` · not captured | 0.0522 | not captured | not captured | llm (not captured) | Ma_2020:pdv3 |
-| model term | BLCRP on Log(Emax) | `Q900` · not captured | 0.333 | not captured | not captured | llm (not captured) | Ma_2020:pdv3 |
-| model term | PRICORT on Kout | `Q900` · not captured | 1.26 | not captured | not captured | llm (not captured) | Ma_2020:pdv3 |
+| PD (effect) | γ | `Q325` · not captured | 1 | not captured | not captured | llm (not captured) | Ma_2020:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>

@@ -4,7 +4,7 @@
 
 # erythropoietin — `Erythropoietin_Jolling2004_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -18,21 +18,19 @@
 
 ### Reviewer guidance
 
-**The erythropoietin record was rejected because its clearance (0.728 mL/h) and volumes (V1 15.8 mL, V2 6.99 mL) fall outside the physiological window, indicating a unit or scale extraction error.**
+**The paper reports none of the model's key parameters.**
 
-The record was built from the paper's abstract only, so reported summary statistics stood in for a fitted model. The plausibility check flagged the clearance and volume magnitudes as implausible, consistent with a unit/scale extraction error. A second reader also disputed the dose compound and primary analyte naming (pegylated human erythropoietin vs PEG-EPO) and could not confirm the bioavailability (48.8%), clearance (0.728 mL/h), absorption rate constant (0.0618 h⁻¹), intercompartmental clearance (0.373 mL/h) and lag time (3.13 h) values. Extracted — pegylated human erythropoietin: CL 0.728 mL/h, V1 15.8 mL, Q 0.373 mL/h, V2 6.99 mL, kabs 0.0618 h(-1), tlag 3.13 h, Fab 48.8 %.
+No clearance, volume or rate constant of the model is reported in it. Only the abstract was available, so reported summary statistics stand in for a fitted model. No parameter values were extracted.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has pegylated human erythropoietin, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by glm-5.3-flash</sub>
-
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:37:55.778643+00:00) predates the upstream re-run (2026-10-05 21:06:19.430220+00:00). Current validate status: `rejected`.
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Jolling K et al., Population pharmacokinetic analysis of…, Journal of pharmaceutical s… (2004)
   ·  DOI: [10.1002/jps.20200](https://doi.org/10.1002/jps.20200)
 
-<div class="pk-model-meta" hidden drug="erythropoietin" model-id="Erythropoietin_Jolling2004_reference" status="rejected" stale="true" population="Sprague-Dawley rats" measured-compound="pegylated human erythropoietin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="erythropoietin" model-id="Erythropoietin_Jolling2004_reference" status="rejected" stale="false" population="Sprague-Dawley rats" measured-compound="pegylated human erythropoietin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.
@@ -47,6 +45,8 @@ _No resolved parameters._
 ## Departures & gaps
 
 **Interpretation flags:**
+- table section iiv: 'dose range' routed out of structural estimates ('The interindividual variability in CL, Vc, Vp, Ka, and F was estimated at 10.7, 14.7, 16.6, 11.0, and 13.6%, respectively.')
+- table section iiv: 'male rat weight' routed out of structural estimates ('The interindividual variability in CL, Vc, Vp, Ka, and F was estimated at 10.7, 14.7, 16.6, 11.0, and 13.6%, respectively.')
 - table section iiv: 'CL' routed out of structural estimates ('The interindividual variability in CL, Vc, Vp, Ka, and F was estimated at 10.7, 14.7, 16.6, 11.0, and 13.6%, respectively.')
 - table section iiv: 'Vc' routed out of structural estimates ('The interindividual variability in CL, Vc, Vp, Ka, and F was estimated at 10.7, 14.7, 16.6, 11.0, and 13.6%, respectively.')
 - table section iiv: 'Q' routed out of structural estimates ('The interindividual variability in CL, Vc, Vp, Ka, and F was estimated at 10.7, 14.7, 16.6, 11.0, and 13.6%, respectively.')
@@ -54,12 +54,13 @@ _No resolved parameters._
 - table section iiv: 'Ka' routed out of structural estimates ('The interindividual variability in CL, Vc, Vp, Ka, and F was estimated at 10.7, 14.7, 16.6, 11.0, and 13.6%, respectively.')
 - table section iiv: 'Tlag' routed out of structural estimates ('The interindividual variability in CL, Vc, Vp, Ka, and F was estimated at 10.7, 14.7, 16.6, 11.0, and 13.6%, respectively.')
 - table section iiv: 'F' routed out of structural estimates ('The interindividual variability in CL, Vc, Vp, Ka, and F was estimated at 10.7, 14.7, 16.6, 11.0, and 13.6%, respectively.')
+- table section iiv: 'weight' routed out of structural estimates ('The interindividual variability in CL, Vc, Vp, Ka, and F was estimated at 10.7, 14.7, 16.6, 11.0, and 13.6%, respectively.')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=pegylated human erythropoietin
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Jolling_2004_metadata.yaml (14 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Jolling_2004_metadata.yaml (12 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -100,7 +101,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_erythropoietin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Jolling_2004` / `Jolling_2004::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_erythropoietin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Jolling_2004` / `Jolling_2004::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -116,4 +117,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 21:06 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 20:30 UTC</sub>

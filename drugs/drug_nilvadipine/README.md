@@ -18,18 +18,22 @@ Nilvadipine is a calcium channel blocker used to treat high blood pressure (esse
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 04:38 | 0:48 | 0/0/0 | 1/0/0 | 0/0/0 | 28,596/1,259 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 6/2 | 1/0 | 0 |
+| 2026-10-13 13:18 | 1:10 | 0/0/0 | 0/0/0 | 0/0/0 | 33,020/2,609 | einfracz / qwen3.8-27b | 5 | 6/2 | 5/0 | 0 |
 
 ## popPK records
 
 _not available_
 
-## Pharmacodynamics (PD)
+## ADME sites
 
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 1.00).">dog</span> | [Wu_1988_DBP](drugs/drug_nilvadipine/pd_Wu_1988_DBP.md) | diastolic blood pressure ← nilvadipine · direct log-linear effect | — | Wu WH et al., Relationship between the pharmacokineti…, Drug metabolism and disposi… (1988) | — |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 1.00).">dog</span> | [Wu_1988_SBP](drugs/drug_nilvadipine/pd_Wu_1988_SBP.md) | systolic blood pressure ← nilvadipine · direct log-linear effect | — | Wu WH et al., Relationship between the pharmacokineti…, Drug metabolism and disposi… (1988) | — |
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=nilvadipine).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | `CYP2A6` inhibitor, `CYP2C19` inhibitor, `CYP2C8` inhibitor, `CYP2E1` substrate, `CYP3A4` inhibitor/substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inhibitor/substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: CACNA1C (blocker), CACNA1C (inhibitor), CACNA1D (inhibitor), CACNA1G (inhibitor), CACNA1H (inhibitor), CACNA1I (inhibitor), CACNA1S (inhibitor), CACNA2D1 (inhibitor), CACNA2D3 (inhibitor), CACNB2 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -40,16 +44,17 @@ _not available_
 ## Coverage
 
 - **PubMed hits:** 35 matched, 35 returned
-- **screened:** 1  ·  **relevant:** 1
+- **screened:** 6  ·  **relevant:** 1
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
 
-_6 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_7 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
+| `Wu_1988.pdf` | Wu WH et al., Relationship between the pharmacokineti…, Drug metabolism and disposi… (1988) | popPK | 8 | not captured | [2898337](https://pubmed.ncbi.nlm.nih.gov/2898337) | The study reports quantitative PK parameters (half-life, bioavailability) for nilvadipine in dogs, but lacks specific values for clearance, volume, or absorption rate constants. |
 | `Cheung_1988.pdf` | Cheung WK et al., Importance of oral dosing rate on the h…, Journal of clinical pharmac… (1988) | pd | 5 | [10.1002/j.1552-4604.1988.tb03121.x](https://doi.org/10.1002/j.1552-4604.1988.tb03121.x) | [3243913](https://www.ncbi.nlm.nih.gov/pubmed/3243913) | metadata signals extractable PD data (Emax) |
 | `Ishibashi_1998.pdf` | Ishibashi H et al., Effect of nilvadipine on the voltage-de…, Brain research (1998) | pd | 4 | [10.1016/s0006-8993(98)01018-x](https://doi.org/10.1016/s0006-8993(98)01018-x) | [9824683](https://www.ncbi.nlm.nih.gov/pubmed/9824683) | metadata signals extractable PD data (IC50) |
 | `Nomoto_1988.pdf` | Nomoto A et al., Smooth muscle cell migration induced by…, Atherosclerosis (1988) | pd | 4 | [10.1016/0021-9150(88)90083-4](https://doi.org/10.1016/0021-9150(88)90083-4) | [2850808](https://www.ncbi.nlm.nih.gov/pubmed/2850808) | metadata signals extractable PD data (IC50) |
@@ -57,7 +62,7 @@ _6 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | `Türkeş_2021.pdf` | Türkeş C et al., Calcium channel blockers: molecular doc…, Journal of biomolecular str… (2021) | pd | 4 | [10.1080/07391102.2020.1736631](https://doi.org/10.1080/07391102.2020.1736631) | [32107977](https://www.ncbi.nlm.nih.gov/pubmed/32107977) | metadata signals extractable PD data (IC50) |
 | `Türkeş_2022.pdf` | Türkeş C et al., Some calcium-channel blockers: kinetic…, Journal of biomolecular str… (2022) | pd | 4 | [10.1080/07391102.2020.1806927](https://doi.org/10.1080/07391102.2020.1806927) | [32783605](https://www.ncbi.nlm.nih.gov/pubmed/32783605) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-10-07T04:37:26.693850+00:00</sub>
+<sub>queue written 2026-10-13T13:18:28.312889+00:00</sub>
 
 ## Screened and excluded
 
@@ -80,7 +85,7 @@ _6 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | popPK | Honerjäger_1992 | irrelevant | 0 | 0 | The paper focuses on pharmacodynamics and qualitative comparisons, reporting no quantitative pharmacokinetic parameters (CL, V, ka, etc.) for nilvadipine. |
 | PD | Honerjäger_1992 | not_relevant | 2 | 1 | The text is a qualitative summary comparing nilvadipine to nifedipine and mentions potency ratios, but it does not provide specific numeric PD parameters (like EC50, Emax) or an extractable concentration-effect curve. |
 | popPK | Ikemura_2019 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of CYP2J2 inhibition by antihypertensive drugs, not a pharmacokinetic study reporting disposition parameters for nilvadipine. |
-| PD | Ikemura_2019 | not_relevant | 0 | 0 | The paper reports in vitro enzyme inhibition kinetics (IC50, Ki) for CYP2J2, not pharmacodynamic exposure-response or dose-response relationships for the drug's clinical effect. |
+| PD | Ikemura_2019 | not_relevant | 5 | 8 | The paper reports in vitro enzyme inhibition (IC50, Ki) for CYP2J2, which is a mechanistic/pharmacological parameter, but does not contain pharmacodynamic (exposure-response) or clinical dose-response data for the drug's antihypertensive effect in a physiological subject. |
 | popPK | Ishibashi_1998 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiological investigation of calcium channel inhibition in rat neurons, reporting IC50 values rather than pharmacokinetic disposition parameters. |
 | PGx | Kennelly_2012 | not_relevant | 2 | 5 | The paper reports a pharmacogenomic interaction on clinical cognitive outcomes (MMSE/EXIT25), not on pharmacokinetic or pharmacodynamic parameters of nilvadipine. |
 | popPK | Lago_2022 | irrelevant | 0 | 0 | The paper is a review on the genetics of schizophrenia and drug repurposing, containing no pharmacokinetic data for nilvadipine. |
@@ -98,9 +103,9 @@ _6 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | popPK | Saima_2002 | irrelevant | 2 | 0 | The study reports only AUC and pharmacodynamic effects, lacking the specific quantitative disposition parameters (CL, V, ka, half-life) required for population PK modeling. |
 | PD | Saima_2002 | not_relevant | 2 | 1 | The study reports qualitative changes in blood pressure and PK parameters (AUC) due to drug interaction, but does not provide a concentration-effect curve or numeric PD parameters (e.g., EC50, Emax) for nilvadipine. |
 | popPK | Shimada_1996 | irrelevant | 2 | 0 | The study focuses on pharmacodynamics (effect compartment, EC50, binding affinity) rather than reporting quantitative pharmacokinetic disposition parameters (CL, V, ka) for nilvadipine. |
-| PD | Shimada_1996 | not_relevant | 0 | 0 | The provided text is metadata from a document processing tool (GROBID) and does not contain the scientific content of the paper, nor any information regarding nilvadipine or pharmacodynamic parameters. |
+| PD | Shimada_1996 | not_relevant | 0 | 0 | The provided text consists of software metadata and does not contain any pharmacokinetic or pharmacodynamic data. |
 | popPK | Sugawara_1996 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of antioxidant effects on lipid peroxidation, not a pharmacokinetic study, and reports no disposition parameters for nilvadipine. |
-| PD | Sugawara_1996 | not_relevant | 0 | 0 | The text describes in vitro lipid peroxidation assays and lists nilvadipine as a reagent, but contains no pharmacokinetic or pharmacodynamic modeling, exposure-response analysis, or numeric PD parameters. |
+| PD | Sugawara_1996 | not_relevant | 0 | 0 | The provided text only lists nilvadipine as a reagent purchased from a supplier; it does not contain a pharmacodynamic model or concentration-effect analysis for the drug. |
 | popPK | Türkeş_2019 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of aldose reductase inhibition and does not report any pharmacokinetic parameters for nilvadipine. |
 | popPK | Türkeş_2021 | irrelevant | 0 | 0 | no_text gate: only 108 chars of text extracted (&lt; 400) |
 | PD | Türkeş_2021 | not_relevant | 0 | 0 | The paper focuses on molecular docking and inhibition of carbonic anhydrase by calcium channel blockers, not on pharmacodynamic exposure-response or dose-response relationships for nilvadipine. |
@@ -110,7 +115,7 @@ _6 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | popPK | Worley_2015 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of perfluorooctanoic acid (PFOA) in rats, not nilvadipine. |
 | PD | Worley_2015 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics (PBPK modeling) of perfluorooctanoic acid (PFOA) in rats, not nilvadipine, and does not report any pharmacodynamic or exposure-response relationships. |
 | popPK | Yao_2000 | irrelevant | 0 | 0 | The provided evidence contains only software metadata and no scientific content regarding nilvadipine pharmacokinetics. |
-| PD | Yao_2000 | not_relevant | 0 | 0 | The provided text is metadata from a document processing tool (GROBID) and does not contain the scientific content of the paper, nor any data regarding nilvadipine. |
+| PD | Yao_2000 | not_relevant | 0 | 0 | The provided text contains only metadata and tool information (GROBID software details) and does not contain the body of a scientific paper regarding nilvadipine or any pharmacodynamic data. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

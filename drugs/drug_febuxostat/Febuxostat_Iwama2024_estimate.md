@@ -166,9 +166,9 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_febuxostat/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Iwama_2024` / `Iwama_2024::estimate`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_febuxostat/models/modelica/_needs_review/Febuxostat_Iwama2024_estimate.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_febuxostat/models/modelica/_needs_review/Febuxostat_Iwama2024_estimate.deviation.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_febuxostat/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Iwama_2024` / `Iwama_2024::estimate`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_febuxostat/models/modelica/_needs_review/Febuxostat_Iwama2024_estimate.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_febuxostat/models/modelica/_needs_review/Febuxostat_Iwama2024_estimate.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

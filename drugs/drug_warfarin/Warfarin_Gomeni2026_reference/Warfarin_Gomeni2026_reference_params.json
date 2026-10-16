@@ -1,24 +1,36 @@
 {
+ "dose_source": "paper",
  "model_id": "Warfarin_Gomeni2026_reference",
+ "molar_masses": {
+  "central.C": 0.3083279
+ },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
  ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  105.0
+ ],
  "parameters": {
   "Cl": 3.777777777777779e-08,
   "F": 0.9,
-  "Tlag": 4644.0,
+  "MM": 0.3083279,
+  "Tlag": 0.0,
   "VdPerKg": 0.00011557142857142857,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 0.000105,
   "ka": 5.9444444444444445e-05,
   "weight": 70.0
  },
- "reference_peaks": {
-  "central.C": 0.008857280253071932
+ "reference_peak_times": {
+  "central.C": 46843.11704102321
  },
- "stop_time": 86400.0,
+ "reference_peaks": {
+  "central.C": 0.009403562717760694
+ },
+ "stop_time": 864000.0,
  "template": "PK_1C_enteral",
  "template_fmu": "PK_1C_enteral.fmu"
 }

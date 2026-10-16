@@ -18,11 +18,29 @@ Belinostat is a histone deacetylase inhibitor used as an anticancer medicine, ma
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 23:23 | 0:29 | 0/0/0 | 0/0/0 | 0/0/0 | 14,672/506 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/1 | 0/1 | 0 |
+| 2026-10-15 04:23 | 0:07 | 0/0/0 | 0/0/0 | 0/0/0 | 14,672/513 | einfracz / qwen3.8-27b | 1 | 0/1 | 0/1 | 0 |
 
 ## popPK records
 
 _not available_
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=belinostat).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` substrate | DrugBank actor |
+| absorption | liver | `ABCB1` substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
+| absorption | testis | `ABCB1` substrate | DrugBank actor |
+| metabolism | liver | `CYP1A2` inducer, `CYP2C8` inhibitor, `CYP2C9` inhibitor, `CYP3A4` substrate, `UGT1A1` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate, `UGT1A1` substrate | DrugBank actor |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: HDAC1 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -43,21 +61,21 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Dunn_2024.pdf` | Dunn A et al., The effect of liver dysfunction on the…, Cancer chemotherapy and pha… (2024) | popPK | 10 | [10.1007/s00280-024-04651-x](https://doi.org/10.1007/s00280-024-04651-x) | [38483557](https://pubmed.ncbi.nlm.nih.gov/38483557) | The paper describes a population PK model for belinostat and reports specific percentage reductions in clearance, but the absolute numeric parameter values (CL, V, etc.) are not present in the provided evidence. |
-| `Peer_2016.pdf` | Peer CJ et al., UGT1A1 genotype-dependent dose adjustme…, Journal of clinical pharmac… (2016) | popPK | 10 | [10.1002/jcph.627](https://doi.org/10.1002/jcph.627) | [26637161](https://pubmed.ncbi.nlm.nih.gov/26637161) | The paper describes a population PK model for belinostat in humans, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
+| `Dunn_2024.pdf` | Dunn A et al., The effect of liver dysfunction on the…, Cancer chemotherapy and pha… (2024) | popPK | 10 | [10.1007/s00280-024-04651-x](https://doi.org/10.1007/s00280-024-04651-x) | [38483557](https://pubmed.ncbi.nlm.nih.gov/38483557) | The paper describes a population PK model for belinostat and reports percentage changes in clearance associated with liver impairment, but specific numeric parameter values (CL, V, Q) are not present in the provided abstract. |
+| `Peer_2016.pdf` | Peer CJ et al., UGT1A1 genotype-dependent dose adjustme…, Journal of clinical pharmac… (2016) | popPK | 9 | [10.1002/jcph.627](https://doi.org/10.1002/jcph.627) | [26637161](https://pubmed.ncbi.nlm.nih.gov/26637161) | The paper describes a population pharmacokinetic model for belinostat in humans, but the specific numeric parameter values are not present in the provided evidence text. |
 
-<sub>queue written 2026-10-07T23:23:46.616556+00:00</sub>
+<sub>queue written 2026-10-15T04:22:58.461169+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Dong_2017 | irrelevant | 1 | 0 | The study is an in-vitro mechanistic investigation of enzyme kinetics (Km, Vmax) for glucuronidation, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
-| popPK | Dunn_2024 | relevant | 10 | 2 | The paper describes a population PK model for belinostat and reports specific percentage reductions in clearance, but the absolute numeric parameter values (CL, V, etc.) are not present in the provided evidence. |
-| popPK | Goey_2016_2 | irrelevant | 2 | 0 | This is a review article discussing UGT1A1 genotyping and its impact on belinostat pharmacokinetics, but it does not report original quantitative PK parameter values (CL, V, etc.) for belinostat. |
-| popPK | Peer_2016 | relevant | 10 | 0 | The paper describes a population PK model for belinostat in humans, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
-| popPK | Peer_2018 | relevant | 8 | 2 | The paper describes a population PK/PD model for belinostat in humans, but the specific numeric PK parameter values (CL, V, etc.) are not present in the provided text, likely residing in the referenced Table 1 or supplementary materials. |
-| popPK | Shen_2025 | irrelevant | 0 | 0 | The study is a mechanistic/cell-based screening assay for SIRT1 up-regulation and does not report pharmacokinetic parameters for belinostat. |
+| popPK | Dong_2017 | irrelevant | 0 | 0 | The paper reports in-vitro enzyme kinetic parameters (Km, Vmax) for UGT enzymes, not in-vivo pharmacokinetic disposition parameters (CL, Vd) or population PK models. |
+| popPK | Dunn_2024 | relevant | 10 | 2 | The paper describes a population PK model for belinostat and reports percentage changes in clearance associated with liver impairment, but specific numeric parameter values (CL, V, Q) are not present in the provided abstract. |
+| popPK | Goey_2016_2 | irrelevant | 2 | 0 | The paper is a review focusing on the genetic impact of UGT1A1 polymorphisms on belinostat pharmacology, and no specific numeric disposition parameters (CL, V, etc.) are provided in the evidence. |
+| popPK | Peer_2016 | relevant | 9 | 0 | The paper describes a population pharmacokinetic model for belinostat in humans, but the specific numeric parameter values are not present in the provided evidence text. |
+| popPK | Peer_2018 | irrelevant | 2 | 0 | The study focuses on a pharmacodynamic (platelet) model linked to PK, but the specific numeric PK parameter values (clearance, volume, etc.) for the PPK model are not provided in the text and appear to be referenced from a previous publication or supplementary material. |
+| popPK | Shen_2025 | irrelevant | 0 | 0 | The study is a mechanistic screening assay for SIRT1 up-regulation in cells and mice, reporting no quantitative pharmacokinetic parameters (CL, V, half-life, etc.) for belinostat. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

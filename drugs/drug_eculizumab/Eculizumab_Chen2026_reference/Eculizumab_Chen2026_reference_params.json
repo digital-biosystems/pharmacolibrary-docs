@@ -1,0 +1,30 @@
+{
+ "dose_source": "library default",
+ "model_id": "Eculizumab_Chen2026_reference",
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 2.2083333333333333e-05,
+  "F": 1.0,
+  "Tlag": 1000.8000000000001,
+  "VdPerKg": 0.0023285714285714285,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "k12": 5.947511929107021e-05,
+  "k21": 4.178639846743295e-05,
+  "ka": 0.0004388888888888889,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 5021.24248496994
+ },
+ "reference_peaks": {
+  "central.C": 0.00026808973388472496
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

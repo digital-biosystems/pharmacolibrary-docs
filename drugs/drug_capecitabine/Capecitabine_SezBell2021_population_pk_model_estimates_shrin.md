@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;capecitabine&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/&quot;},{&quot;label&quot;:&quot;S\u00e1ez-Bell\u00f3_2021 \u00b7 population_pk_model_estimates_shrinkage&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Capecitabine_Panoilia2015_reference&quot;,&quot;label&quot;:&quot;Panoilia_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Panoilia2015_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Capecitabine_Schmulenson2022_reference&quot;,&quot;label&quot;:&quot;Schmulenson_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Schmulenson2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Capecitabine_Wen2021_reference&quot;,&quot;label&quot;:&quot;Wen_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Wen2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Capecitabine_Zuo2024_reference&quot;,&quot;label&quot;:&quot;Zuo_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Zuo2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Capecitabine_Panoilia2015_reference&quot;,&quot;label&quot;:&quot;Panoilia_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Panoilia2015_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Capecitabine_Wen2021_reference&quot;,&quot;label&quot;:&quot;Wen_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Wen2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Capecitabine_Zuo2024_reference&quot;,&quot;label&quot;:&quot;Zuo_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Zuo2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,9 +17,9 @@
 
 ### Reviewer guidance
 
-**The clearance plausibility check could not be computed.**
+**Q and V2 have no unit; the clearance plausibility check could not be computed.**
 
-The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — capecitabine: tlag 0.28 h, kabs 2.07 h -1, CL 294 L/h, Q 67 %, V2 55 %.
+Without a unit the value cannot be converted, so the model cannot use it. The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — capecitabine: tlag 0.28 h, kabs 2.07 h -1, CL 294 L/h, Q 67 %, V2 55 %, V 40 mL/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has capecitabine, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -32,7 +32,7 @@ Sáez-Belló M et al., Evaluation of ABC gene polymorphisms on…, British journ
 <div class="pk-model-meta" hidden drug="capecitabine" model-id="Capecitabine_SezBell2021_population_pk_model_estimates_shrin" status="needs_review" stale="false" population="adults with colorectal cancer" measured-compound="capecitabine" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
-**Parameters:** 5 extracted.
+**Parameters:** 6 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -46,6 +46,7 @@ Sáez-Belló M et al., Evaluation of ABC gene polymorphisms on…, British journ
 | CL 0 CAP (L/h) | `Q22` · CL | 294 | L/h | 8.166666666666667e-05 | L/h | not captured | boundary (0.8) | Sáez-Belló_2021:other_prose | — | not captured |
 | CL 2 (%) | `Q30` · Q | 67 | % | not captured | % | not captured | special_case (0.95) | Sáez-Belló_2021:other_prose | — | not captured |
 | V 2 (%) | `Q64` · V2 | 55 | % | not captured | % | not captured | space_fold (0.95) | Sáez-Belló_2021:other_prose | — | not captured |
+| Tissue volume (mL/kg) [17] | `Q61` · V | 40.0 | mL/kg | 0.0027999999999999995 | L | not captured | review_gapfill (0.7) | Sakai_2021:review | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -79,6 +80,7 @@ Sáez-Belló M et al., Evaluation of ABC gene polymorphisms on…, British journ
 - topology: 2 first-order transfer(s) across 3 compounds → general_linear
 - status held at route_to_review — not promoted
 - population split: 'population pk model estimates shrinkage (%)' subgroup of Sáez-Belló_2021 (paper reports 3 populations: population pk model estimates rse (%), population pk model estimates shrinkage (%), population pk model estimates value)
+- gap-filled Q61 (V) from Sakai_2021's review values (primary lacked it)
 
 **Extraction notes:**
 - no TEI final-model table id; trying text-pointer table recovery
@@ -127,11 +129,13 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Sakai_2021:review'] |
 | C5_unit_missing_Q30 | fail | [length] ** 3 / [time] | % | not captured | not captured | ['Sáez-Belló_2021:other_prose'] |
 | C5_unit_missing_Q64 | fail | [length] ** 3 | % | not captured | not captured | ['Sáez-Belló_2021:other_prose'] |
 | C6_cl_magnitude | fail | &lt;= 90.0 L/h | 294.0 | not captured | not captured | ['Sáez-Belló_2021:other_prose'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 294 L/h | not captured | not captured | ['Sáez-Belló_2021:other_prose'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 2.8 L | not captured | not captured | ['Sakai_2021:review'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -140,7 +144,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_capecitabine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Sáez-Belló_2021` / `Sáez-Belló_2021::population_pk_model_estimates_shrinkage`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_capecitabine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Sáez-Belló_2021` / `Sáez-Belló_2021::population_pk_model_estimates_shrinkage`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

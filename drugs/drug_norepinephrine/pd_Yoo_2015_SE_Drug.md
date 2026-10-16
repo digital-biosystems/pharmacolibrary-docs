@@ -17,15 +17,15 @@
 
 **Model:** No model was generated from this record.
 
-> The paper describes an indirect response model where dexmedetomidine concentrations inhibit the production (release) of norepinephrine, with an IC50 of 0.77 nM (or 0.153 ng/mL). The record's parameters for a sigmoid Emax model on subjective effects (E0=20.7 mm, Emax=78.5 mm, EC50=3.5 nmol/L, γ=4.1, ke0=36.5 h−1) are not described in the provided excerpts, which focus on the inhibition of norepinephrine and epinephrine release and their downstream effects on blood pressure and heart rate.
+> The record specifies a sigmoid Emax model where norepinephrine concentrations (nmol/L) directly modulate 'Subjective effects: Drug effect' (mm) with inhibition, reporting E0 as 20.7 mm, Emax as 78.5 mm, EC50 as 3.5 nmol/L, γ as 4.1, and ke0 as 36.5 h⁻¹. However, the provided paper excerpt describes dexmedetomidine inhibiting the production of norepinephrine and epinephrine via an indirect response model, and does not contain any PD model for subjective drug effects driven by norepinephrine.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Yoo_2015`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`
 - **tier:** population
-- **effect:** inhibition/additive
+- **effect:** inhibition/proportional
 
 ## Citation
 Yoo H et al., Mechanism-based population pharmacokine…, European journal of clinica… (2015)
@@ -35,7 +35,7 @@ Yoo H et al., Mechanism-based population pharmacokine…, European journal of cl
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
 | PD (effect) | E0 | `Q324` · not captured | 20.7 | mm | not captured | llm (not captured) | Yoo_2015:pdv3 |
-| PD (effect) | Emax | `Q323` · not captured | 78.5 | mm | not captured | direction (not captured) | Yoo_2015:pdv3 |
+| PD (effect) | Emax | `Q323` · not captured | 78.5 | mm | not captured | llm (not captured) | Yoo_2015:pdv3 |
 | PD (effect) | EC50 | `Q321` · not captured | 3.5 | nmol/L | not captured | llm (not captured) | Yoo_2015:pdv3 |
 | PD (effect) | γ | `Q325` · not captured | 4.1 | not captured | not captured | llm (not captured) | Yoo_2015:pdv3 |
 | PD (effect) | ke0 | `Q326` · not captured | 36.5 | h−1 | not captured | llm (not captured) | Yoo_2015:pdv3 |
@@ -47,7 +47,7 @@ Yoo H et al., Mechanism-based population pharmacokine…, European journal of cl
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
@@ -59,7 +59,7 @@ Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-
 |---|---|---|---|---|
 | `einfracz:gpt-oss-120b` | `driver_compound` | norepinephrine | not captured | mismatch |
 | `einfracz:gpt-oss-120b` | `effect_direction` | inhibition | not captured | mismatch |
-| `einfracz:gpt-oss-120b` | `effect_form` | additive | not captured | mismatch |
+| `einfracz:gpt-oss-120b` | `effect_form` | proportional | not captured | mismatch |
 | `einfracz:gpt-oss-120b` | `model_family` | sigmoid_emax | not captured | mismatch |
 | `einfracz:gpt-oss-120b` | `parameters[Q321]` | 3.5 | not captured | only_one_extracted |
 | `einfracz:gpt-oss-120b` | `parameters[Q323]` | 78.5 | not captured | only_one_extracted |

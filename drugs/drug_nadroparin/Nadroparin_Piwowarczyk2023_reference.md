@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;nadroparin&quot;,&quot;href&quot;:&quot;drugs/drug_nadroparin/&quot;},{&quot;label&quot;:&quot;Piwowarczyk_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nadroparin_Piwowarczyk2023_reference&quot;,&quot;label&quot;:&quot;Piwowarczyk_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nadroparin/Nadroparin_Piwowarczyk2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nadroparin_Piwowarczyk2023_reference&quot;,&quot;label&quot;:&quot;Piwowarczyk_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nadroparin/Nadroparin_Piwowarczyk2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # nadroparin — `Nadroparin_Piwowarczyk2023_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.909), gpt-oss:120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.833), gpt-oss:120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -23,13 +23,11 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-10-05 16:14:39.847607+00:00) predates the upstream re-run (2026-10-07 18:12:37.552504+00:00). Current validate status: `extracted`.
-
 ## Citation
 Piwowarczyk P et al., Population Pharmacokinetics and Probabi…, Clinical pharmacokinetics (2023)
   ·  DOI: [10.1007/s40262-023-01244-4](https://doi.org/10.1007/s40262-023-01244-4)
 
-<div class="pk-model-meta" hidden drug="nadroparin" model-id="Nadroparin_Piwowarczyk2023_reference" status="extracted" stale="true" population="patients with COVID-19" measured-compound="nadroparin" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="nadroparin" model-id="Nadroparin_Piwowarczyk2023_reference" status="curated_candidate" stale="false" population="patients with COVID-19" measured-compound="nadroparin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.
@@ -39,10 +37,9 @@ Piwowarczyk P et al., Population Pharmacokinetics and Probabi…, Clinical pharm
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Apparent volume of distribution in group 1, L | `Q76` · V/F | 6.62 | L | 0.00662 | [l] | 9.6 | llm_confirmed (0.6) | Tab2:row2:col1, Tab2:row2:col2, Tab2:row2:col4, Tab2:row2:col5 | — | not captured |
-| Apparent clearance in group 1, L/h | `Q27` · CL/F | 1.14 | L/h | 3.1666666666666667e-07 | [l] / [h] | 4.2 | llm_confirmed (0.6) | Tab2:row5:col1, Tab2:row5:col2, Tab2:row5:col4, Tab2:row5:col5 | — | not captured |
-| Absorption rate constant in group 1, 1/h | `Q49` · kabs | 0.325 | 1/h | 9.027777777777779e-05 | [1] / [h] | 10.5 | llm_confirmed (0.6) | Tab2:row8:col1, Tab2:row8:col2, Tab2:row8:col4, Tab2:row8:col5 | — | not captured |
-| Proportionality constant in group 1, I.U./µg | `Q900` · equation variable | 0.0835 | not captured | not captured | not captured | 16.8 | llm (0.6) | Tab2:row11:col1, Tab2:row11:col2, Tab2:row11:col4, Tab2:row11:col5 | — | not captured |
+| Apparent volume of distribution in group 1, L | `Q76` · V/F | 6.62 | L | 0.00662 | [l] | 9.6 | llm_confirmed (0.6) | Tab2:row2:col1 | — | not captured |
+| Apparent clearance in group 1, L/h | `Q27` · CL/F | 1.15 | L/h | 3.194444444444444e-07 | [l] / [h] | 4.2 | llm_confirmed (0.6) | Tab2:row5:col1 | — | not captured |
+| Absorption rate constant in group 1, 1/h | `Q49` · kabs | 0.319 | 1/h | 8.861111111111111e-05 | [1] / [h] | 10.5 | boundary_llm_dim_refused (0.8) | Tab2:row8:col1 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -62,14 +59,15 @@ Piwowarczyk P et al., Population Pharmacokinetics and Probabi…, Clinical pharm
 - table section iiv: 'ω2ka, %CV' routed out of structural estimates ('Inter-individual variability (ω2)')
 - table section residual_error: 'σ2C, %CV' routed out of structural estimates ('Residual error model (σ2)')
 - table section residual_error: 'σ2anti-Xa, %CV' routed out of structural estimates ('Residual error model (σ2)')
-- dropped duplicate Q76 ('Apparent volume of distribution in group 2, L', value '4.53') — already have one for this compound
-- dropped duplicate Q76 ('Apparent volume of distribution in group 3, L', value '3.70') — already have one for this compound
-- dropped duplicate Q27 ('Apparent clearance in group 2, L/h', value '2.49') — already have one for this compound
-- dropped duplicate Q27 ('Apparent clearance in group 3, L/h', value '3.38') — already have one for this compound
-- dropped duplicate Q49 ('Absorption rate constant in group 2, 1/h', value '0.0831') — already have one for this compound
-- dropped duplicate Q49 ('Absorption rate constant in group 3, 1/h', value '0.100') — already have one for this compound
-- dropped duplicate Q900 ('Proportionality constant in group 2, I.U./µg', value '0.224') — already have one for this compound
-- dropped unlinked row (NIL): 'Proportionality constant in group 3, I.U./µg' — extend the ontology if this is a real PK parameter (source ['Tab2:row13:col1', 'Tab2:row13:col2', 'Tab2:row13:col4', 'Tab2:row13:col5'])
+- dropped duplicate Q76 ('Apparent volume of distribution in group 2, L', value '4.49') — already have one for this compound
+- dropped duplicate Q76 ('Apparent volume of distribution in group 3, L', value '3.57') — already have one for this compound
+- dropped duplicate Q27 ('Apparent clearance in group 2, L/h', value '2.55') — already have one for this compound
+- dropped duplicate Q27 ('Apparent clearance in group 3, L/h', value '3.37') — already have one for this compound
+- dropped duplicate Q49 ('Absorption rate constant in group 2, 1/h', value '0.0832') — already have one for this compound
+- dropped duplicate Q49 ('Absorption rate constant in group 3, 1/h', value '0.0999') — already have one for this compound
+- dropped unlinked row (NIL): 'Proportionality constant in group 1, I.U./µg' — extend the ontology if this is a real PK parameter (source ['Tab2:row11:col1'])
+- dropped unlinked row (NIL): 'Proportionality constant in group 2, I.U./µg' — extend the ontology if this is a real PK parameter (source ['Tab2:row12:col1'])
+- dropped PD-category row 'Proportionality constant in group 3, I.U./µg' → Q335 (slope, category G13) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Tab2:row13:col1'])
 - routed 'Ratio of standard deviations (θγ), none' → Q315 (sigma) to residual_error — variability estimate, not a structural parameter
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=nadroparin
 - molar mass: none found for 'nadroparin' — its concentrations stay mass-only
@@ -87,14 +85,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.909 (10/11 fields) | 1 |
+| `gpt-oss-120b` | partly confirmed | 0.833 (10/12 fields) | 2 |
 | `gpt-oss:120b` | not confirmed | 0.8 (8/10 fields) | 2 |
 
-<details><summary>3 field discrepancies</summary>
+<details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `parameters[proportionality constant in group 1, i.u./ug]` | 0.0835 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[proportionality constant in group 3, i.u./ug]` | not captured | 0.229 | only_one_extracted |
 | `gpt-oss:120b` | `screen.dose_compound` | nadroparin | unknown | mismatch |
 | `gpt-oss:120b` | `screen.primary_analyte` | nadroparin | unknown | mismatch |
 
@@ -113,13 +112,13 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row5:col1', 'Tab2:row5:col2', 'Tab2:row5:col4', 'Tab2:row5:col5'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Tab2:row8:col1', 'Tab2:row8:col2', 'Tab2:row8:col4', 'Tab2:row8:col5'] |
-| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row2:col1', 'Tab2:row2:col2', 'Tab2:row2:col4', 'Tab2:row2:col5'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row5:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Tab2:row8:col1'] |
+| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row2:col1'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 1.14 L/h | not captured | not captured | ['Tab2:row5:col1', 'Tab2:row5:col2', 'Tab2:row5:col4', 'Tab2:row5:col5'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 6.62 L | not captured | not captured | ['Tab2:row2:col1', 'Tab2:row2:col2', 'Tab2:row2:col4', 'Tab2:row2:col5'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 1.15 L/h | not captured | not captured | ['Tab2:row5:col1'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 6.62 L | not captured | not captured | ['Tab2:row2:col1'] |
 
 **Reviewer per-scenario checks:**
 
@@ -140,10 +139,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_nadroparin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Piwowarczyk_2023` / `Piwowarczyk_2023::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_nadroparin/models/modelica/Nadroparin_Piwowarczyk2023_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_nadroparin/models/modelica/Nadroparin_Piwowarczyk2023_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_nadroparin/models/modelica/Nadroparin_Piwowarczyk2023_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_nadroparin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Piwowarczyk_2023` / `Piwowarczyk_2023::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_nadroparin/models/modelica/Nadroparin_Piwowarczyk2023_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_nadroparin/models/modelica/Nadroparin_Piwowarczyk2023_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_nadroparin/models/modelica/Nadroparin_Piwowarczyk2023_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -152,7 +151,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_nadroparin/Nadroparin_Piwowarczyk2023_reference/Nadroparin_Piwowarczyk2023_reference_modelica.zip" download>Nadroparin_Piwowarczyk2023_reference_modelica.zip</a> <span class="pk-size">(4.5 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_nadroparin/Nadroparin_Piwowarczyk2023_reference/Nadroparin_Piwowarczyk2023_reference_modelica.zip" download>Nadroparin_Piwowarczyk2023_reference_modelica.zip</a> <span class="pk-size">(4.9 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_nadroparin/Nadroparin_Piwowarczyk2023_reference/Nadroparin_Piwowarczyk2023_reference_fmi.zip" download>Nadroparin_Piwowarczyk2023_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_nadroparin/Nadroparin_Piwowarczyk2023_reference/Nadroparin_Piwowarczyk2023_reference_matlab.zip" download>Nadroparin_Piwowarczyk2023_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_nadroparin/Nadroparin_Piwowarczyk2023_reference/Nadroparin_Piwowarczyk2023_reference_matlab_simbio.zip" download>Nadroparin_Piwowarczyk2023_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
@@ -161,11 +160,11 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_nadroparin/Nadroparin_Piwowarczyk2023_reference/Nadroparin_Piwowarczyk2023_reference.svg" alt="Nadroparin_Piwowarczyk2023_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_nadroparin/Nadroparin_Piwowarczyk2023_reference/Nadroparin_Piwowarczyk2023_reference.svg" alt="Nadroparin_Piwowarczyk2023_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.325 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.319 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_nadroparin/Nadroparin_Piwowarczyk2023_reference/Nadroparin_Piwowarczyk2023_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_nadroparin/Nadroparin_Piwowarczyk2023_reference/Nadroparin_Piwowarczyk2023_reference_sim_controls.json"></dbs-fmusim>
 
@@ -174,4 +173,4 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 18:12 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 21:15 UTC</sub>

@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02C&quot;,&quot;href&quot;:&quot;atc/N02C.md&quot;},{&quot;label&quot;:&quot;eletriptan&quot;,&quot;href&quot;:&quot;drugs/drug_eletriptan/&quot;},{&quot;label&quot;:&quot;Mandema_2005 \u00b7 PD pain relief&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# pain relief — PD  <span class="pk-badge pk-badge--orange">needs review</span>
+# pain relief — PD  <span class="pk-badge pk-badge--red">rejected</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -13,11 +13,11 @@
 
 ## Record summary
 
-**As extracted:** Eletriptan (the dose) drives pain relief (in %): direct Emax (saturable) effect.
+**As extracted:** Eletriptan (the dose) drives pain relief (in fraction of patients): direct Emax (saturable) effect.
 
 **Model:** No model was generated from this record.
 
-> The dose of eletriptan acts on the binary response of pain relief via an Emax model with an additive effect form, where the paper explicitly defines Emax as the maximal difference between placebo and active treatment and ED50 as the dose for 50% of maximal effect. The estimated parameters are Emax of 3.23, ED50 of 15.5 mg, and k_em of 0.66 h-1.
+> The study uses an empirical dose-response model where the administered dose of eletriptan drives the fraction of patients with pain relief, characterized by a maximal effect (Emax) of 3.23 and a dose producing 50% of the maximal effect (ED50) of 15.5 mg. The model includes parameters for the time-varying baseline pain level (kpl, 1.56 h-1) and the time to reach maximal effect (kem, 0.66 h-1), but the paper does not describe a specific biological mechanism linking the drug to pain relief.
 >
 > <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
@@ -34,9 +34,12 @@ Mandema JW et al., Therapeutic benefit of eletriptan compa…, Cephalalgia : an 
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | Emax | `Q320` · not captured | 3.23 | not captured | not captured | llm (not captured) | Mandema_2005:pdv3 |
-| PD (effect) | ED50 | `Q321` · not captured | 15.5 | mg | not captured | llm (not captured) | Mandema_2005:pdv3 |
-| — | k_em | `Q100` · not captured | 0.66 | h -1 | not captured | nil (not captured) | Mandema_2005:pdv3 |
+| PD (effect) | PL0 | `Q324` · not captured | -5.03 | not captured | not captured | llm (not captured) | Mandema_2005:pdv3 |
+| — | PLm | `Q100` · not captured | -0.822 | not captured | not captured | nil (not captured) | Mandema_2005:pdv3 |
+| — | kpl | `Q100` · not captured | 1.56 | h-1 | not captured | nil (not captured) | Mandema_2005:pdv3 |
+| PD (effect) | Emax,eletriptan | `Q320` · not captured | 3.23 | not captured | not captured | llm (not captured) | Mandema_2005:pdv3 |
+| — | kem,eletriptan | `Q100` · not captured | 0.66 | h-1 | not captured | nil (not captured) | Mandema_2005:pdv3 |
+| PD (effect) | ED50,eletriptan | `Q321` · not captured | 15.5 | mg | not captured | llm (not captured) | Mandema_2005:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -46,19 +49,9 @@ Mandema JW et al., Therapeutic benefit of eletriptan compa…, Cephalalgia : an 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-</tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

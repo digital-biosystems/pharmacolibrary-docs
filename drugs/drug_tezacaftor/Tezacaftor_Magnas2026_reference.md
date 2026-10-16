@@ -5,7 +5,7 @@
 
 # Tezacaftor — `Tezacaftor_Magnas2026_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.714). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.857). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -21,7 +21,7 @@
 
 A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. None of the extracted parameters is tezacaftor's own; they describe elexacaftor. Extracted — elexacaftor: tlag 2.17 h, kabs 0.59 h−1, V 81.1 L/70 kg.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has elexacaftor/tezacaftor/ivacaftor, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has elexacaftor/tezacaftor/ivacaftor, the second reading tezacaftor. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -82,14 +82,13 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.714 (5/7 fields) | 2 |
+| `gpt-oss-120b` | not confirmed | 0.857 (6/7 fields) | 1 |
 
-<details><summary>2 field discrepancies</summary>
+<details><summary>1 field discrepancy</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `screen.dose_compound` | elexacaftor/tezacaftor/ivacaftor | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | elexacaftor/tezacaftor/ivacaftor | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | elexacaftor/tezacaftor/ivacaftor | tezacaftor | mismatch |
 
 </details>
 
@@ -119,7 +118,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_tezacaftor/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Magnas_2026` / `Magnas_2026::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_tezacaftor/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Magnas_2026` / `Magnas_2026::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

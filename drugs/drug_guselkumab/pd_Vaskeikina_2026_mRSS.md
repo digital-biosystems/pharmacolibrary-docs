@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;guselkumab&quot;,&quot;href&quot;:&quot;drugs/drug_guselkumab/&quot;},{&quot;label&quot;:&quot;Vaskeikina_2026 \u00b7 PD modified Rodnan skin score&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Guselkumab_RodrguezFernndez2022_reference&quot;,&quot;label&quot;:&quot;Rodr\u00edguez-Fern\u00e1ndez_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_guselkumab/Guselkumab_RodrguezFernndez2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Guselkumab_Yao2018_reference&quot;,&quot;label&quot;:&quot;Yao_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_guselkumab/Guselkumab_Yao2018_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Guselkumab_Chen2022_reference&quot;,&quot;label&quot;:&quot;Chen_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_guselkumab/Guselkumab_Chen2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Guselkumab_Chen2022_reference&quot;,&quot;label&quot;:&quot;Chen_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_guselkumab/Guselkumab_Chen2022_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Guselkumab_RodrguezFernndez2022_reference&quot;,&quot;label&quot;:&quot;Rodr\u00edguez-Fern\u00e1ndez_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_guselkumab/Guselkumab_RodrguezFernndez2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Guselkumab_Yao2018_reference&quot;,&quot;label&quot;:&quot;Yao_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_guselkumab/Guselkumab_Yao2018_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Chen_2022_ACR&quot;,&quot;label&quot;:&quot;Chen_2022 \u00b7 ACR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_guselkumab/pd_Chen_2022_ACR.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Chen_2022_ACR_2&quot;,&quot;label&quot;:&quot;Chen_2022 \u00b7 ACR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_guselkumab/pd_Chen_2022_ACR_2.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Chen_2022_IGA&quot;,&quot;label&quot;:&quot;Chen_2022 \u00b7 IGA&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_guselkumab/pd_Chen_2022_IGA.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Vaskeikina_2026_mRSS&quot;,&quot;label&quot;:&quot;Vaskeikina_2026 \u00b7 mRSS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_guselkumab/pd_Vaskeikina_2026_mRSS.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # modified Rodnan skin score — PD  <span class="pk-badge pk-badge--orange">needs review</span>
@@ -14,17 +14,17 @@
 
 ## Record summary
 
-**As extracted:** Guselkumab (concentrations from the PK model of Chen_2022) drives modified Rodnan skin score: direct Emax (saturable) effect.
+**As extracted:** Guselkumab (the dose) drives modified Rodnan skin score (in points): direct Emax (saturable) effect.
 
-**Model:** Model available in **Models**; browser simulation unavailable.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
-> A longitudinal meta-model using a time-dependent Emax structure describes guselkumab’s effect on the modified Rodnan skin score (mRSS) as an inhibition of disease progression, characterized by a maximal effect parameter (βGuselkumabmRSS) of -23.55 and a shared time to 50% maximum response (ET50) of 27.49 weeks. The paper does not explicitly describe the underlying pharmacological mechanism of action on the response variable beyond this statistical Emax time-course framework.
+> The paper does not provide a mechanistic description linking guselkumab concentrations to the response but characterizes the effect on the modified Rodnan skin score (mRSS) using a dose-only Emax model with a time-dependent component. The model yields a maximum reduction in mRSS of -23.55 points with a shared time to 50% maximum change (ET50) of 27.49 weeks.
 >
 > <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Vaskeikina_2026`
 - **model family:** `emax`
-- **driver:** `cited_pk`
+- **driver:** `dose_only`
 - **tier:** population
 - **effect:** inhibition/additive
 
@@ -35,12 +35,11 @@ Vaskeikina M et al., Systematic Review and Model-Based Meta-…, Pharmaceutics (
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | Effect of guselkumab on mRSS reduction (βGuselkumabmRSS) | `Q323` · not captured | -23.55 | not captured | not captured | direction (not captured) | Vaskeikina_2026:pdv3 |
-| PD (effect) | Maximum change in mRSS of the comparator (EmaxpopmRSS) | `Q323` · not captured | -5.29 | not captured | not captured | direction (not captured) | Vaskeikina_2026:pdv3 |
-| PD (effect) | Time to 50% maximum change in mRSS and FVC in weeks (ET50) | `Q321` · not captured | 27.49 | weeks | not captured | llm (not captured) | Vaskeikina_2026:pdv3 |
-| variability | Standard deviation of BSV for change in mRSS (ωEmaxmRSS) | `Q312` · not captured | 4.53 | not captured | not captured | llm (not captured) | Vaskeikina_2026:pdv3 |
-| variability | Standard deviation of BTAV for change in mRSS (γEmaxmRSS) | `Q312` · not captured | 10.23 | not captured | not captured | llm (not captured) | Vaskeikina_2026:pdv3 |
-| variability | Standard deviation of residual error for change in mRSS (σmRSS) | `Q315` · not captured | 4.12 | not captured | not captured | llm (not captured) | Vaskeikina_2026:pdv3 |
+| PD (effect) | Effect of guselkumab on mRSS reduction | `Q323` · not captured | -23.55 | points | not captured | direction (not captured) | Vaskeikina_2026:pdv3 |
+| PD (effect) | Time to 50% maximum change in mRSS and FVC in weeks | `Q321` · not captured | 27.49 | weeks | not captured | llm (not captured) | Vaskeikina_2026:pdv3 |
+| variability | Standard deviation of BSV for change in mRSS | `Q312` · not captured | 4.53 | not captured | not captured | llm (not captured) | Vaskeikina_2026:pdv3 |
+| variability | Standard deviation of BTAV for change in mRSS | `Q312` · not captured | 10.23 | not captured | not captured | llm (not captured) | Vaskeikina_2026:pdv3 |
+| variability | Standard deviation of residual error for change in mRSS | `Q315` · not captured | 4.12 | not captured | not captured | llm (not captured) | Vaskeikina_2026:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -55,7 +54,7 @@ Vaskeikina M et al., Systematic Review and Model-Based Meta-…, Pharmaceutics (
 | parameter | value (paper units) | SI |
 |---|---|---|
 | E0 | 0 | — |
-| Emax | -23.55 | — |
+| Emax | -23.55 points | — |
 | EC50 | 27.49 weeks | 1.663e+07 s |
 | gamma | 1 | — |
 
@@ -91,18 +90,21 @@ Advisory:
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_guselkumab/Guselkumab_Vaskeikina2026_PD_mrss/Guselkumab_Vaskeikina2026_PD_mrss_modelica.zip" download>Guselkumab_Vaskeikina2026_PD_mrss_modelica.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_guselkumab/Guselkumab_Vaskeikina2026_PD_mrss/Guselkumab_Vaskeikina2026_PD_mrss_matlab.zip" download>Guselkumab_Vaskeikina2026_PD_mrss_matlab.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_guselkumab/Guselkumab_Vaskeikina2026_PD_mrss/Guselkumab_Vaskeikina2026_PD_mrss_sbml.zip" download>Guselkumab_Vaskeikina2026_PD_mrss_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_guselkumab/Guselkumab_Vaskeikina2026_PD_mrss/Guselkumab_Vaskeikina2026_PD_mrss_cellml.zip" download>Guselkumab_Vaskeikina2026_PD_mrss_cellml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PD_SigmoidEmaxSweep.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+<dbs-fmusim paramsurl="drugs/drug_guselkumab/Guselkumab_Vaskeikina2026_PD_mrss/Guselkumab_Vaskeikina2026_PD_mrss_params.json" metaurl="assets/fmu/PD_SigmoidEmaxSweep.vr.json" wasmurl="assets/fmu/PD_SigmoidEmaxSweep.js" controlsurl="drugs/drug_guselkumab/Guselkumab_Vaskeikina2026_PD_mrss/Guselkumab_Vaskeikina2026_PD_mrss_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PD_SigmoidEmaxSweep` · parameters `Guselkumab_Vaskeikina2026_PD_mrss_params.json` · controls `Guselkumab_Vaskeikina2026_PD_mrss_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 

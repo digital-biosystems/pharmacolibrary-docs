@@ -20,9 +20,9 @@
 
 **Model:** No model was generated from this record.
 
-> The record describes an additive Emax model where omecamtiv mecarbil stimulates Ca2+-independent passive force with an EC50 of 0.26 μM. The paper does not provide full text to specify the underlying mechanism or additional rate parameters.
+> The paper does not provide full text or mechanistic details regarding how omecamtiv mecarbil influences Ca2+-independent passive force, though the record cites an EC50 of 0.26 μM for a stimulation effect.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Nagy_2015`
 - **model family:** `emax`

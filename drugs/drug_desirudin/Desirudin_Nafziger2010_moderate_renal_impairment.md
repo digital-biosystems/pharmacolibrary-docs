@@ -4,7 +4,7 @@
 
 # desirudin — `Desirudin_Nafziger2010_moderate_renal_impairment`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.909), gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-check: partial 1/2</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.4), gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-check: partial 1/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -16,19 +16,19 @@
 
 ### Reviewer guidance
 
-**The desirudin model was rejected because a structural parameter's unit could not be converted to SI, causing a dimension mismatch.**
+**C5 dimension mismatch on a structural parameter.**
 
-The record lists desirudin parameters including a volume of distribution of 27.3 L and rate constants in h-1. The review identified a dimension mismatch on a structural parameter due to a unit that could not be converted to SI. Consequently, the parameter lacked a valid SI value, leading to the rejection of the record. Extracted — desirudin: λ1 0.25 h-1, kel 0.03 h-1, V 27.3 L, kabs 0.63 h-1, k12 0.014 h-1, k21 0.03 h-1.
+A reported unit could not be converted (λ1), so that value has no SI equivalent. Extracted — desirudin: λ1 0.25 h-1, kel 0.03 h-1, V 27.3 L, kabs 0.63 h-1, k12 0.014 h-1, k21 0.03 h-1.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of measured clcr: this record has none, the second reading 31. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of alpha: this record has 0.25, the second reading none; it also differs on 5 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Nafziger AN et al., Desirudin dosing and monitoring in mode…, Journal of clinical pharmac… (2010)
   ·  DOI: [10.1177/0091270009350626](https://doi.org/10.1177/0091270009350626)
 
-<div class="pk-model-meta" hidden drug="desirudin" model-id="Desirudin_Nafziger2010_moderate_renal_impairment" status="rejected" stale="false" population="adults with normal or moderate renal impairment" measured-compound="desirudin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="desirudin" model-id="Desirudin_Nafziger2010_moderate_renal_impairment" status="rejected" stale="false" population="healthy volunteers and patients with moderate renal impairment" measured-compound="desirudin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.
@@ -57,7 +57,6 @@ Nafziger AN et al., Desirudin dosing and monitoring in mode…, Journal of clini
 **Interpretation flags:**
 - dropped unlinked row (NIL): 'Number of participants' — extend the ontology if this is a real PK parameter (source ['Nafziger_2010_table_2:row0:col2'])
 - dropped unlinked row (NIL): 'Study reference' — extend the ontology if this is a real PK parameter (source ['Nafziger_2010_table_2:row1:col2'])
-- dropped unlinked row (NIL): 'Measured ClCr, mL/min' — extend the ontology if this is a real PK parameter (source ['Nafziger_2010_table_2:row2:col2'])
 - unit_dimension_mismatch: 'Alpha, h-1' → Q67 (unit '1 / [time]' vs ontology '[mass] / [time]') — route to review
 - dropped duplicate Q47 ('K10, h-1', value '0.23') — already have one for this compound
 - apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q63 (Vc, L)
@@ -75,7 +74,7 @@ Nafziger AN et al., Desirudin dosing and monitoring in mode…, Journal of clini
 **Extraction notes:**
 - no TEI final-model table id; trying text-pointer table recovery
 - LLM selected parameter table(s) 2
-- unparsed cell Nafziger_2010_table_2:row2:col1 = '&gt;90'
+- table Nafziger_2010_table_2: unbound_uncertainty
 
 ## Validation
 
@@ -84,14 +83,19 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.909 (10/11 fields) | 1 |
+| `gpt-oss-120b` | partly confirmed | 0.4 (4/10 fields) | 6 |
 | `gpt-oss:120b` | confirmed | 1.0 (10/10 fields) | none |
 
-<details><summary>1 field discrepancy</summary>
+<details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[measured clcr]` | not captured | 31 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[alpha]` | 0.25 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[beta]` | 0.03 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k12]` | 0.014 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k21]` | 0.03 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 0.63 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc]` | 27.3 | not captured | only_one_extracted |
 
 </details>
 
@@ -124,7 +128,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_desirudin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Nafziger_2010` / `Nafziger_2010::moderate_renal_impairment`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_desirudin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Nafziger_2010` / `Nafziger_2010::moderate_renal_impairment`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -140,4 +144,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 14:39 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 23:09 UTC</sub>

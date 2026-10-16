@@ -21,14 +21,14 @@ Nicardipine is a dihydropyridine calcium channel blocker used to treat arterial 
 
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
-| nicardipine | parent | 479.525 | C26H29N3O6 | DrugBank | [4474](https://pubchem.ncbi.nlm.nih.gov/compound/4474) | Guerret_1989, Modi_1993, Sadan_2023 |
+| nicardipine | parent | 479.525 | C26H29N3O6 | DrugBank | [4474](https://pubchem.ncbi.nlm.nih.gov/compound/4474) | Guerret_1989, Modi_1993, Sadan_2023, Sadan_2024 |
 | nicardipine metabolite | metabolite | — (mass units only) | — | — | — | — |
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 04:24 | 11:15 | 1/2/1 | 1/0/0 | 0/0/0 | 158,968/31,074 | ollama / qwen3.8:27b-mtp-q8_0 | 12 | 3/9 | 12/0 | 0 |
+| 2026-10-13 13:16 | 2:32 | 1/3/1 | 1/0/0 | 0/0/0 | 51,380/12,452 | einfracz / qwen3.8-27b | 13 | 3/10 | 13/0 | 0 |
 
 ## popPK records
 
@@ -37,6 +37,7 @@ Nicardipine is a dihydropyridine calcium channel blocker used to treat arterial 
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25), gpt-oss:120b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Modi_1993_reference](drugs/drug_nicardipine/Nicardipine_Modi1993_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Modi NB et al., Application of a system analysis approa…, Journal of pharmaceutical s… (1993) | [10.1002/jps.2600820707](https://doi.org/10.1002/jps.2600820707) |
 | <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2), gpt-oss:120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Guerret_1989_reference](drugs/drug_nicardipine/Nicardipine_Guerret1989_reference.md) | — | 1-compartment (no model) | 2 | Guerret M et al., Simultaneous study of the pharmacokinet…, European journal of clinica… (1989) | [10.1007/BF00558504](https://doi.org/10.1007/BF00558504) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.778), gpt-oss:120b (not confirmed, agreement 0.778). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Sadan_2023_reference](drugs/drug_nicardipine/Nicardipine_Sadan2023_reference.md) | — | 2-compartment (no model) | 5 | Sadan O et al., Cerebrospinal Fluid Pharmacokinetics of…, medRxiv : the preprint serv… (2023) | [10.1101/2023.10.17.23297116](https://doi.org/10.1101/2023.10.17.23297116) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Sadan_2024_reference](drugs/drug_nicardipine/Nicardipine_Sadan2024_reference.md) | — | 2-compartment (no model) | 5 | Sadan O et al., Cerebrospinal Fluid Pharmacokinetics of…, Journal of clinical pharmac… (2024) | [10.1002/jcph.2488](https://doi.org/10.1002/jcph.2488) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75), gpt-oss:120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Shityakov_2013_reference](drugs/drug_nicardipine/Nicardipine_Shityakov2013_reference.md) | — | parent + metabolite (no model) | 0 | Shityakov S et al., Pharmacokinetic delivery and metabolizi…, TheScientificWorldJournal (2013) | [10.1155/2013/131358](https://doi.org/10.1155/2013/131358) |
 
 ## Pharmacodynamics (PD)
@@ -45,6 +46,26 @@ Nicardipine is a dihydropyridine calcium channel blocker used to treat arterial 
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Kim_2019_active_tension](drugs/drug_nicardipine/pd_Kim_2019_active_tension.md) | active tension ← nicardipine · direct sigmoid Emax (Hill) effect | — | Kim DJ et al., The relaxant effect of nicardipine on t…, Anesthesia and pain medicine (2019) | [10.17085/apm.2019.14.4.429](https://doi.org/10.17085/apm.2019.14.4.429) |
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Kim_2019_frequency_of_contraction](drugs/drug_nicardipine/pd_Kim_2019_frequency_of_contraction.md) | frequency of contraction ← nicardipine · direct sigmoid Emax (Hill) effect | — | Kim DJ et al., The relaxant effect of nicardipine on t…, Anesthesia and pain medicine (2019) | [10.17085/apm.2019.14.4.429](https://doi.org/10.17085/apm.2019.14.4.429) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=nicardipine).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | liver | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | testis | `ABCB1` inhibitor/substrate | DrugBank actor |
+| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
+| metabolism | kidney | `CYP3A5` inhibitor | DrugBank actor |
+| metabolism | liver | `CYP2B6` inducer, `CYP2C19` inhibitor, `CYP2C8` inhibitor/substrate, `CYP2C9` inhibitor, `CYP2D6` inhibitor, `CYP2E1` substrate, `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor, `SLCO1B1` inhibitor | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor | DrugBank actor |
+| excretion | liver | `ABCB11` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ADRA1A (target), ADRA1B (target), ADRA1D (target), CACNA1C (inhibitor), CACNA1D (inhibitor), CACNA1G (inhibitor), CACNA1H (inhibitor), CACNA1I (inhibitor), CACNA2D1 (inhibitor), CACNB2 (inhibitor), CACNG1 (inhibitor), CALM1 (other/unknown), CHRM1 (target), CHRM2 (target), CHRM3 (target), CHRM4 (target), CHRM5 (target), PDE1A (inhibitor), PDE1B (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,19 +76,18 @@ Nicardipine is a dihydropyridine calcium channel blocker used to treat arterial 
 ## Coverage
 
 - **PubMed hits:** 183 matched, 60 returned
-- **screened:** 5  ·  **relevant:** 5
-- **records:** 4  ·  extracted 1  ·  needs_review 1  ·  rejected 2  ·  stale 3
+- **screened:** 15  ·  **relevant:** 5
+- **records:** 5  ·  extracted 1  ·  needs_review 1  ·  rejected 3  ·  stale 3
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
 
-_13 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_12 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
 | `Guerret_1989.pdf` | Guerret M et al., Simultaneous study of the pharmacokinet…, European journal of clinica… (1989) | popPK | 10 | [10.1007/BF00558504](https://doi.org/10.1007/BF00558504) | [2598970](https://pubmed.ncbi.nlm.nih.gov/2598970) | The abstract explicitly reports quantitative PK parameters (clearance, volume of distribution, half-life) for nicardipine in humans. |
 | `Modi_1993.pdf` | Modi NB et al., Application of a system analysis approa…, Journal of pharmaceutical s… (1993) | popPK | 10 | [10.1002/jps.2600820707](https://doi.org/10.1002/jps.2600820707) | [8360844](https://pubmed.ncbi.nlm.nih.gov/8360844) | The abstract explicitly reports quantitative population PK parameters (clearance, volume of distribution, mean residence time) for nicardipine in healthy males. |
-| `Sadan_2024.pdf` | Sadan O et al., Cerebrospinal Fluid Pharmacokinetics of…, Journal of clinical pharmac… (2024) | popPK | 10 | [10.1002/jcph.2488](https://doi.org/10.1002/jcph.2488) | [38923537](https://pubmed.ncbi.nlm.nih.gov/38923537) | The paper describes a population pharmacokinetic model for nicardipine in humans, but the specific numeric parameter values (clearance, volume, etc.) are not present in the provided evidence text. |
 | `Silke_1986.pdf` | Silke B et al., Pharmacokinetic, haemodynamic and radio…, European journal of clinica… (1986) | popPK | 8 | [10.1007/BF00615954](https://doi.org/10.1007/BF00615954) | [3709609](https://pubmed.ncbi.nlm.nih.gov/3709609) | The study reports quantitative plasma clearance values (5-12 ml/min/kg) for nicardipine in humans, though it notes that limited data precluded formal compartmental analysis. |
 | `Huber_1998.pdf` | Huber TB et al., Catecholamines modulate podocyte functi…, Journal of the American Soc… (1998) | pd | 5 | [10.1681/ASN.V93335](https://doi.org/10.1681/ASN.V93335) | [9513895](https://www.ncbi.nlm.nih.gov/pubmed/9513895) | metadata signals extractable PD data (EC50) |
 | `Nielsen-Kudsk_1987.pdf` | Nielsen-Kudsk F et al., A comparative study of the pharmacodyna…, Pharmacology & toxicology (1987) | pd | 5 | [10.1111/j.1600-0773.1987.tb01732.x](https://doi.org/10.1111/j.1600-0773.1987.tb01732.x) | [3588513](https://www.ncbi.nlm.nih.gov/pubmed/3588513) | metadata signals extractable PD data (Emax) |
@@ -79,7 +99,7 @@ _13 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Piao_2008.pdf` | Piao YJ et al., Effects of morin on the pharmacokinetic…, The Journal of pharmacy and… (2008) | pgx | 7 | [10.1211/jpp.60.5.0008](https://doi.org/10.1211/jpp.60.5.0008) | [18416939](https://www.ncbi.nlm.nih.gov/pubmed/18416939) | metadata signals extractable PGX data (CYP3A, PK/PD-context) |
 | `Rougée_2017.pdf` | Rougée LRA et al., The Impact of the Hepatocyte-to-Plasma…, Drug metabolism and disposi… (2017) | pgx | 7 | [10.1124/dmd.117.076331](https://doi.org/10.1124/dmd.117.076331) | [28679672](https://www.ncbi.nlm.nih.gov/pubmed/28679672) | metadata signals extractable PGX data (CYP2C9, PK/PD-context) |
 
-<sub>queue written 2026-10-07T04:14:13.167806+00:00</sub>
+<sub>queue written 2026-10-13T13:13:55.369083+00:00</sub>
 
 ## Screened and excluded
 
@@ -143,4 +163,4 @@ _13 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | PGx | Zhou_2005 | not_relevant | 0 | 0 | The study investigates the effect of dihydropyridines on BCRP-mediated transport of other drugs (mitoxantrone/topotecan) and does not report pharmacogenomic effects on nicardipine's PK/PD. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 04:14 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-13 13:14 UTC</sub>

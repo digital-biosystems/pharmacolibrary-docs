@@ -1,8 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;luseogliflozin&quot;,&quot;href&quot;:&quot;drugs/drug_luseogliflozin/&quot;},{&quot;label&quot;:&quot;Samukawa_2017 \u00b7 PD urinary glucose excretion&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Luseogliflozin_Samukawa2017_reference&quot;,&quot;label&quot;:&quot;Samukawa_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_luseogliflozin/Luseogliflozin_Samukawa2017_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Sasaki_2015_UGE&quot;,&quot;label&quot;:&quot;Sasaki_2015 \u00b7 UGE&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_luseogliflozin/pd_Sasaki_2015_UGE.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;luseogliflozin&quot;,&quot;href&quot;:&quot;drugs/drug_luseogliflozin/&quot;},{&quot;label&quot;:&quot;Samukawa_2017 \u00b7 PD UGE&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Luseogliflozin_Samukawa2017_reference&quot;,&quot;label&quot;:&quot;Samukawa_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_luseogliflozin/Luseogliflozin_Samukawa2017_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Sasaki_2015_UGE&quot;,&quot;label&quot;:&quot;Sasaki_2015 \u00b7 UGE&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_luseogliflozin/pd_Sasaki_2015_UGE.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Sato_2024_HbA1c&quot;,&quot;label&quot;:&quot;Sato_2024 \u00b7 HbA1c&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_luseogliflozin/pd_Sato_2024_HbA1c.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# urinary glucose excretion — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
+# UGE — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -14,13 +14,13 @@
 
 ## Record summary
 
-**As extracted:** Luseogliflozin (concentrations from this paper's PK model) drives urinary glucose excretion (in g/h): target-mediated drug disposition.
+**As extracted:** Luseogliflozin (concentrations from this paper's PK model) drives UGE (in g/h): target-mediated drug disposition.
 
 **Model:** No model was generated from this record.
 
-> Luseogliflozin plasma concentrations (nM) inhibit SGLT2-mediated glucose reabsorption via a target-mediated drug disposition (TMDD) mechanism, thereby increasing urinary glucose excretion (g/h). The model estimates an inhibition constant (Ki2) of 0.336 nM, an association rate constant (Kon) of 0.303 1/nM/h, and a dissociation rate constant (Koff) of 0.102 1/h.
+> Luseogliflozin concentrations inhibit urinary glucose excretion (UGE) by competitively binding SGLT2 via a reversible mechanism governed by association (K_on = 0.303 1/nM/h) and dissociation (K_off = 0.102 1/h) rate constants, with an inhibition constant (K_i2) of 0.336 nM. The model incorporates transport maximums for SGLT2 (V_max2 = 376 g/d) and SGLT1 (V_max1 = 30 g/d) to describe the sustained UGE resulting from the 6.81 h dissociation half-time of the drug from the transporter.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Samukawa_2017`
 - **model family:** `tmdd`
@@ -35,10 +35,12 @@ Samukawa Y et al., Mechanism-Based Pharmacokinetic-Pharmac…, Biological & phar
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | K i2 | `Q331` · not captured | 0.336 | nM | not captured | llm (not captured) | Samukawa_2017:pdv3 |
+| — | V max2 | `Q100` · not captured | 376 | g/d | not captured | nil (not captured) | Samukawa_2017:pdv3 |
+| — | V max1 | `Q100` · not captured | 30 | g/d | not captured | nil (not captured) | Samukawa_2017:pdv3 |
+| — | K g | `Q100` · not captured | 2.20 | 1/h | not captured | nil (not captured) | Samukawa_2017:pdv3 |
+| PD (effect) | K i2 | `Q322` · not captured | 0.336 | nM | not captured | llm (not captured) | Samukawa_2017:pdv3 |
 | PD (effect) | K on | `Q329` · not captured | 0.303 | 1/nM/h | not captured | llm (not captured) | Samukawa_2017:pdv3 |
 | PD (effect) | K off | `Q330` · not captured | 0.102 | 1/h | not captured | llm (not captured) | Samukawa_2017:pdv3 |
-| PD (effect) | K g | `Q338` · not captured | 2.20 | 1/h | not captured | llm (not captured) | Samukawa_2017:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>

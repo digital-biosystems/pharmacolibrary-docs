@@ -1,6 +1,9 @@
 {
  "dose_source": "library default",
  "model_id": "Ganaxolone_Zolkowska2018_reference",
+ "molar_masses": {
+  "central.C": 0.33252800000000005
+ },
  "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
@@ -8,6 +11,7 @@
  "parameters": {
   "Cl": 0.00025044444444444447,
   "F": 1.0,
+  "MM": 0.33252800000000005,
   "VdPerKg": 0.00495,
   "adminCount": 1.0,
   "adminDuration": 600.0,

@@ -18,7 +18,7 @@ Dimetotiazine is an antihistamine (H1 antagonist) used as an antimigraine medici
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 06:30 | 0:16 | 0/0/0 | 0/0/0 | 0/0/0 | 1,810/123 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-15 04:03 | 0:32 | 0/0/0 | 0/0/0 | 0/0/0 | 1,807/140 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
@@ -45,13 +45,13 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 |---|---|---|---|---|---|---|
 | `Watano_1997.pdf` | Watano T et al., Inhibitory effect of lomerizine, a diph…, Japanese journal of pharmac… (1997) | pd | 4 | [10.1254/jjp.75.209](https://doi.org/10.1254/jjp.75.209) | [9414039](https://www.ncbi.nlm.nih.gov/pubmed/9414039) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-10-07T06:30:12.675951+00:00</sub>
+<sub>queue written 2026-10-15T04:03:26.751635+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Shimazawa_1995 | irrelevant | 0 | 0 | Dimetotiazine is used only as a control/comparator agent in a neurophysiology study on cerebral blood flow, with no pharmacokinetic parameters reported. |
+| popPK | Shimazawa_1995 | irrelevant | 0 | 0 | The paper studies the effect of dimetotiazine on cerebral blood flow and c-Fos expression in rats, not its pharmacokinetic parameters. |
 | popPK | Watano_1997 | irrelevant | 0 | 0 | no_text gate: only 141 chars of text extracted (&lt; 400) |
 | PD | Watano_1997 | not_relevant | 0 | 0 | The paper studies lomerizine, not dimetotiazine. |
 

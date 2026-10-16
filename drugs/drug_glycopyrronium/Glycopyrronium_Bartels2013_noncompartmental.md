@@ -5,7 +5,7 @@
 
 # glycopyrronium — `Glycopyrronium_Bartels2013_noncompartmental`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.636), gpt-oss:120b (not confirmed, agreement 0.636). Primary extraction retained.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.316), gpt-oss:120b (not confirmed, agreement 0.636). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -21,7 +21,7 @@
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Extracted — glycopyrronium: CL 42.5, Vss 102, t1/2z 0.45.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[fast lung absorption half-life].parameter_id`: this record has Q59, the second reading Q95; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on bioavailability: this record has none, the second reading 1.11; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -87,16 +87,25 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.636 (7/11 fields) | 4 |
+| `gpt-oss-120b` | not confirmed | 0.316 (6/19 fields) | 13 |
 | `gpt-oss:120b` | not confirmed | 0.636 (7/11 fields) | 4 |
 
-<details><summary>8 field discrepancies</summary>
+<details><summary>17 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.bioavailability.theta` | not captured | 1.11 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[0]` | not captured | 5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[bioavailability after inhalation with concomitant charcoal treatment expressed as odds]` | not captured | 1.11 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[fast lung absorption half-life].parameter_id` | Q59 | Q95 | mismatch |
+| `gpt-oss-120b` | `parameters[intercompartmental clearance]` | not captured | 8.23 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[intermediate lung absorption half-life]` | 0.45 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[slow lung absorption half-life]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[slow lung absorption rate]` | not captured | 0.009 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[systemic clearance].rse_percent` | not captured | 3.1 | mismatch |
+| `gpt-oss-120b` | `parameters[volume of central plasma compartment]` | not captured | 11.3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution at steady state].value` | 102 | 82.7 | mismatch |
+| `gpt-oss-120b` | `parameters[volume of peripheral pk compartment]` | not captured | 71.5 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[vz]` | 22.38 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[0]` | not captured | 5 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[fast lung absorption half-life].parameter_id` | Q59 | Q95 | mismatch |
@@ -135,7 +144,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_glycopyrronium/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Bartels_2013` / `Bartels_2013::noncompartmental`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_glycopyrronium/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Bartels_2013` / `Bartels_2013::noncompartmental`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -153,7 +162,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_glycopyrronium/Glycopyrronium_Bartels2013_noncompartmental/Glycopyrronium_Bartels2013_noncompartmental.svg" alt="Glycopyrronium_Bartels2013_noncompartmental diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_glycopyrronium/Glycopyrronium_Bartels2013_noncompartmental/Glycopyrronium_Bartels2013_noncompartmental.svg" alt="Glycopyrronium_Bartels2013_noncompartmental diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

@@ -151,9 +151,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_spironolactone/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Lass_2024` / `Lass_2024::model_2`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_spironolactone/models/modelica/_needs_review/Spironolactone_Lass2024_model_2.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_spironolactone/models/modelica/_needs_review/Spironolactone_Lass2024_model_2.deviation.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_spironolactone/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Lass_2024` / `Lass_2024::model_2`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_spironolactone/models/modelica/_needs_review/Spironolactone_Lass2024_model_2.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_spironolactone/models/modelica/_needs_review/Spironolactone_Lass2024_model_2.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

@@ -31,6 +31,42 @@ _not available_
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Huang_2022_autonomously_bioluminescent_signal](drugs/drug_progesterone/pd_Huang_2022_autonomously_bioluminescent_signal.md) | autonomously bioluminescent signal biomarker turnover ← progesterone | — | Huang Y et al., Rapid and reagent-free bioassay using a…, The Journal of steroid bioc… (2022) | [10.1016/j.jsbmb.2022.106151](https://doi.org/10.1016/j.jsbmb.2022.106151) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed</span> | [Li_2019_hot_flashes](drugs/drug_progesterone/pd_Li_2019_hot_flashes.md) | hot flashes ← progesterone · inhibition effect | — | Li T et al., Quantitative comparison of drug efficac…, Breast cancer research and… (2019) | [10.1007/s10549-018-5029-y](https://doi.org/10.1007/s10549-018-5029-y) |
 
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=progesterone).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inducer/inhibitor/substrate, `ABCG2` inducer/inhibitor | DrugBank actor |
+| absorption | kidney | `ABCB1` inducer/inhibitor/substrate | DrugBank actor |
+| absorption | liver | `ABCB1` inducer/inhibitor/substrate, `ABCG2` inducer/inhibitor | DrugBank actor |
+| absorption | mammary gland | `ABCG2` inducer/inhibitor | DrugBank actor |
+| absorption | placenta | `ABCB1` inducer/inhibitor/substrate | DrugBank actor |
+| absorption | skeletal muscle | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| absorption | small intestine | `ABCB1` inducer/inhibitor/substrate, `ABCG2` inducer/inhibitor | DrugBank actor |
+| absorption | testis | `ABCB1` inducer/inhibitor/substrate, `ABCG2` inducer/inhibitor | DrugBank actor |
+| distribution | blood | `ORM1` binder | DrugBank actor |
+| distribution | blood-brain barrier | `ABCC1` inhibitor | DrugBank actor |
+| distribution | liver | `SLC22A3` inhibitor | DrugBank actor |
+| distribution | lung | `ABCC1` inhibitor | DrugBank actor |
+| distribution | placenta | `SLC22A3` inhibitor | DrugBank actor |
+| distribution | skeletal muscle | `SLC22A3` inhibitor | DrugBank actor |
+| metabolism | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
+| metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
+| metabolism | liver | `CYP2A6` inducer, `CYP2C19` inhibitor/substrate, `CYP2C9` inhibitor/substrate, `CYP2D6` substrate, `CYP3A4` inducer/substrate, `CYP3A5` substrate, `CYP3A7` inhibitor/substrate, `SLC10A1` inhibitor, `SLC22A1` inhibitor, `SLCO1B1` inhibitor, `SLCO1B3` inducer | DrugBank actor |
+| metabolism | lung | `CYP1A1` substrate, `CYP1B1` substrate | DrugBank actor |
+| metabolism | skin | `CYP1B1` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP1A1` substrate, `CYP3A4` inducer/substrate, `CYP3A5` substrate | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | `SLC22A2` inhibitor | DrugBank actor |
+| excretion | liver | `ABCB11` inhibitor | DrugBank actor |
+| — | adrenal gland | `CYP17A1` inhibitor/substrate | DrugBank actor |
+| — | prostate gland | `AR` potentiator/target | DrugBank actor |
+| — | testis | `CYP17A1` inhibitor/substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ESR1 (downregulator), ESR1 (inhibitor), ESR1 (target), ESR2 (downregulator), ESR2 (target), NR3C1 (partial agonist), NR3C2 (target), OPRK1 (activator), OPRK1 (potentiator), PGR (target), SHBG (binder), SHBG (potentiator).</sub>
+
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
 <table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>

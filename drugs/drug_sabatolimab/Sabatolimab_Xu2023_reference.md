@@ -16,52 +16,72 @@
 
 ### Reviewer guidance
 
-**The paper reports none of the model's key parameters.**
+**C5 dimension mismatch on a structural parameter.**
 
-No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
+A reported unit could not be converted (Vmax, Km and equation variable), so that value has no SI equivalent. Extracted — sabatolimab: CL 0.0103 L/h, V 3.59 L, Q 0.0353 L/h, V2 2.38 L, Vmax 0.0197 μg/mL/h, Km 0.074 μg/mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sabatolimab, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Xu S et al., Sabatolimab (MBG453) model-informed dru…, CPT: pharmacometrics & syst… (2023)
   ·  DOI: [10.1002/psp4.12962](https://doi.org/10.1002/psp4.12962)
 
-<div class="pk-model-meta" hidden drug="sabatolimab" model-id="Sabatolimab_Xu2023_reference" status="rejected" stale="false" population="patients with solid tumors and hematologic malignancies" measured-compound="sabatolimab" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="sabatolimab" model-id="Sabatolimab_Xu2023_reference" status="rejected" stale="false" population="patients with solid tumors and hematologic malignancies" measured-compound="sabatolimab" parameterization="mechanistic" topology="2C"></div>
 
-**Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 0 extracted.
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 6 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
-_No resolved parameters._
+| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
+|---|---|---|---|---|---|---|---|---|---|---|
+| CL | `Q22` · CL | 0.0103 | L/h | 2.861111111111111e-09 | [l] / [h] | not captured | exact (1.0) | psp412962-tbl-0001:row1:col3 | — | 0.473 (None% RSE) |
+| V | `Q61` · V | 3.59 | L | 0.00359 | [l] | not captured | exact (1.0) | psp412962-tbl-0001:row2:col3 | — | 0.23 (None% RSE) |
+| Q | `Q30` · Q | 0.0353 | L/h | 9.805555555555555e-09 | [l] / [h] | not captured | exact (1.0) | psp412962-tbl-0001:row3:col3 | — | not captured |
+| V2 | `Q64` · V2 | 2.38 | L | 0.0023799999999999997 | [l] | not captured | exact (1.0) | psp412962-tbl-0001:row4:col3 | — | 0.338 (None% RSE) |
+| V m | `Q66` · Vmax | 0.0197 | μg/mL/h | not captured | [µg] / [[h] · [ml]] | not captured | special_case (0.95) | psp412962-tbl-0001:row5:col3 | — | 0.641 (None% RSE) |
+| K m | `Q1` · Km | 0.074 | μg/mL | not captured | [µg] / [ml] | not captured | space_fold (0.95) | psp412962-tbl-0001:row6:col3 | — | not captured |
+| Corr_V_C L | `Q900` · equation variable | 0.634 | – | not captured | [-] | not captured | llm (0.6) | psp412962-tbl-0001:row11:col3 | — | not captured |
+
+<details class="legend">
+<summary>Parameter definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'Fixed effect' — extend the ontology if this is a real PK parameter (source ['psp412962-tbl-0001:row1:col3', 'psp412962-tbl-0001:row1:col4', 'psp412962-tbl-0001:row1:col5', 'psp412962-tbl-0001:row2:col3', 'psp412962-tbl-0001:row2:col4', 'psp412962-tbl-0001:row2:col5', 'psp412962-tbl-0001:row3:col3', 'psp412962-tbl-0001:row3:col4', 'psp412962-tbl-0001:row3:col5', 'psp412962-tbl-0001:row4:col3', 'psp412962-tbl-0001:row4:col4', 'psp412962-tbl-0001:row4:col5', 'psp412962-tbl-0001:row5:col3', 'psp412962-tbl-0001:row5:col4', 'psp412962-tbl-0001:row5:col5', 'psp412962-tbl-0001:row6:col3'])
-- dropped unlinked row (NIL): 'Random effect b' — extend the ontology if this is a real PK parameter (source ['psp412962-tbl-0001:row7:col3', 'psp412962-tbl-0001:row7:col4', 'psp412962-tbl-0001:row7:col5', 'psp412962-tbl-0001:row8:col3', 'psp412962-tbl-0001:row8:col4', 'psp412962-tbl-0001:row8:col5', 'psp412962-tbl-0001:row9:col3', 'psp412962-tbl-0001:row9:col4', 'psp412962-tbl-0001:row9:col5', 'psp412962-tbl-0001:row10:col3', 'psp412962-tbl-0001:row10:col4', 'psp412962-tbl-0001:row10:col5'])
-- dropped unlinked row (NIL): 'Error' — extend the ontology if this is a real PK parameter (source ['psp412962-tbl-0001:row12:col3', 'psp412962-tbl-0001:row12:col4', 'psp412962-tbl-0001:row12:col5', 'psp412962-tbl-0001:row13:col3', 'psp412962-tbl-0001:row13:col4', 'psp412962-tbl-0001:row13:col5'])
-- dropped unlinked row (NIL): 'Covariate effect c' — extend the ontology if this is a real PK parameter (source ['psp412962-tbl-0001:row14:col3', 'psp412962-tbl-0001:row14:col4', 'psp412962-tbl-0001:row14:col5', 'psp412962-tbl-0001:row15:col3', 'psp412962-tbl-0001:row15:col4', 'psp412962-tbl-0001:row15:col5', 'psp412962-tbl-0001:row16:col3', 'psp412962-tbl-0001:row16:col4', 'psp412962-tbl-0001:row16:col5', 'psp412962-tbl-0001:row17:col3', 'psp412962-tbl-0001:row17:col4', 'psp412962-tbl-0001:row17:col5'])
-- dropped unlinked row (NIL): 'Covariate effect d' — extend the ontology if this is a real PK parameter (source ['psp412962-tbl-0001:row18:col3', 'psp412962-tbl-0001:row18:col4', 'psp412962-tbl-0001:row18:col5', 'psp412962-tbl-0001:row19:col3', 'psp412962-tbl-0001:row19:col4', 'psp412962-tbl-0001:row19:col5', 'psp412962-tbl-0001:row20:col3', 'psp412962-tbl-0001:row20:col4', 'psp412962-tbl-0001:row20:col5'])
-- table mostly unlinked (5/5 table-cell rows NIL) — likely the wrong table was located, not 0 genuinely-missing ontology parameter(s); route_to_review instead of building a model from the residual linked cell(s)
+- unit_dimension_mismatch: 'V m' → Q66 (unit '[mass] / [length] ** 3 / [time]' vs ontology '[length] ** 3') — route to review
+- unit_dimension_unknown: '–' (equation variable)
+- dropped duplicate Q900 ('a', value '1.41') — already have one for this compound
+- dropped duplicate Q900 ('b', value '0.19') — already have one for this compound
+- 'β CL,HASPDR' is a β covariate effect on CL,H, not Q22 (llm_confirmed link set aside)
+- dropped unlinked row (NIL): 'β CL,HASPDR' — extend the ontology if this is a real PK parameter (source ['psp412962-tbl-0001:row14:col3'])
+- 'β CL,AML' is a β covariate effect on CL, not Q22 (llm_confirmed link set aside)
+- dropped unlinked row (NIL): 'β CL,AML' — extend the ontology if this is a real PK parameter (source ['psp412962-tbl-0001:row15:col3'])
+- 'β CL,CMML' is a β covariate effect on CL, not Q22 (llm_confirmed link set aside)
+- dropped unlinked row (NIL): 'β CL,CMML' — extend the ontology if this is a real PK parameter (source ['psp412962-tbl-0001:row16:col3'])
+- 'β CL,MDS' is a β covariate effect on CL, not Q22 (llm_confirmed link set aside)
+- dropped unlinked row (NIL): 'β CL,MDS' — extend the ontology if this is a real PK parameter (source ['psp412962-tbl-0001:row17:col3'])
+- 'β CL,WT0' is a β covariate effect on CL, not Q22 (llm_confirmed link set aside)
+- dropped unlinked row (NIL): 'β CL,WT0' — extend the ontology if this is a real PK parameter (source ['psp412962-tbl-0001:row18:col3'])
+- 'β V,WT0' is a β covariate effect on V, not Q31 (llm link set aside)
+- dropped unlinked row (NIL): 'β V,WT0' — extend the ontology if this is a real PK parameter (source ['psp412962-tbl-0001:row19:col3'])
+- 'β V2,WT0' is a β covariate effect on V2, not Q64 (llm_confirmed link set aside)
+- dropped unlinked row (NIL): 'β V2,WT0' — extend the ontology if this is a real PK parameter (source ['psp412962-tbl-0001:row20:col3'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=sabatolimab
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
+- molar mass: none found for 'sabatolimab' — its concentrations stay mass-only
 
 **Extraction notes:**
-- unparsed cell psp412962-tbl-0001:row4:col1 = 'V2'
-- unparsed cell psp412962-tbl-0001:row9:col1 = 'ω V2'
-- unparsed cell psp412962-tbl-0001:row18:col1 = 'β CL,WT0'
-- unparsed cell psp412962-tbl-0001:row18:col7 = '4.35e‐12'
-- unparsed cell psp412962-tbl-0001:row19:col1 = 'β V,WT0'
-- unparsed cell psp412962-tbl-0001:row19:col7 = '&lt;2.2e‐16'
-- unparsed cell psp412962-tbl-0001:row20:col1 = 'β V2,WT0'
-- unparsed cell psp412962-tbl-0001:row20:col7 = '2.91e‐07'
+- table psp412962-tbl-0001: unbound_uncertainty
+- table psp412962-tbl-0001: unparsed_numeric_cell
 - LLM selected parameter table(s) 1
 
 ## Validation
@@ -92,9 +112,20 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
-| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
+| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q1 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['psp412962-tbl-0001:row6:col3'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp412962-tbl-0001:row1:col3'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp412962-tbl-0001:row3:col3'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp412962-tbl-0001:row2:col3'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp412962-tbl-0001:row4:col3'] |
+| C5_dimension_Q66 | fail | [mass] / [length] ** 3 / [time] | μg/mL/h | not captured | not captured | ['psp412962-tbl-0001:row5:col3'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.0103 | not captured | not captured | ['psp412962-tbl-0001:row1:col3'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.0103 L/h | not captured | not captured | ['psp412962-tbl-0001:row1:col3'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 3.59 L | not captured | not captured | ['psp412962-tbl-0001:row2:col3'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 2.38 L | not captured | not captured | ['psp412962-tbl-0001:row4:col3'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -103,7 +134,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_sabatolimab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Xu_2023` / `Xu_2023::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_sabatolimab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Xu_2023` / `Xu_2023::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -119,4 +150,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 19:56 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 03:11 UTC</sub>

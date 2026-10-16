@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;mirikizumab&quot;,&quot;href&quot;:&quot;drugs/drug_mirikizumab/&quot;},{&quot;label&quot;:&quot;Chua_2025 \u00b7 vivid_1&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mirikizumab_Chua2023_reference&quot;,&quot;label&quot;:&quot;Chua_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mirikizumab/Mirikizumab_Chua2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mirikizumab_Otani2025_reference&quot;,&quot;label&quot;:&quot;Otani_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mirikizumab/Mirikizumab_Otani2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,9 +17,9 @@
 
 ### Reviewer guidance
 
-**Only clearance was extracted — no volume; cL has no unit.**
+**This paper's disposition core is incomplete; cL has no unit.**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. Extracted — mirikizumab: CL 0.0853.
+A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Otani_2025) cannot stand in for this paper's evidence. Without a unit the value cannot be converted, so the model cannot use it. Extracted — mirikizumab: CL 0.0853, V 0.069 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has mirikizumab, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -32,7 +32,7 @@ Chua L et al., Mirikizumab Pharmacokinetics and Exposu…, Clinical and translat
 <div class="pk-model-meta" hidden drug="mirikizumab" model-id="Mirikizumab_Chua2025_vivid_1" status="needs_review" stale="false" population="adults with moderately-to-severely active Crohn&#39;s disease" measured-compound="mirikizumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 1 extracted, plus 8 covariate effects.
+**Parameters:** 2 extracted, plus 7 covariate effects.
 
 **Parameterization:** mechanistic.
 
@@ -42,14 +42,14 @@ Chua L et al., Mirikizumab Pharmacokinetics and Exposu…, Clinical and translat
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | BL CRP effect on CL | `Q22` · CL | 0.0853 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | tab_1:row16:col3 | — | not captured |
-| bl_bmi_effect_on_f | `Q900` · bl_bmi_effect_on_f | -0.0354 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_1:row32:col3 | — | not captured |
 | theta_q49_category | `Q900` · theta_q49_category | 0.00693 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_1:row5:col3 | — | not captured |
-| theta_cl_category | `Q900` · theta_cl_category | 21.9 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_1:row9:col2, tab_1:row9:col3, tab_1:row9:col4 | — | not captured |
+| theta_cl_category | `Q900` · theta_cl_category | 0.0197 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_1:row9:col3, tab_1:row9:col4 | — | not captured |
 | theta_cl_albumin | `Q900` · theta_cl_albumin | -0.0200 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_1:row11:col3 | — | not captured |
 | theta_q30_category | `Q900` · theta_q30_category | 0.00921 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_1:row18:col3 | — | not captured |
-| theta_q64_category | `Q900` · theta_q64_category | 17.2 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_1:row23:col2, tab_1:row23:col3, tab_1:row23:col4 | — | not captured |
-| theta_q77_category | `Q900` · theta_q77_category | 37.3 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_1:row25:col2, tab_1:row25:col3, tab_1:row25:col4 | — | not captured |
-| theta_q44_category | `Q900` · theta_q44_category | 35.7 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_1:row30:col2, tab_1:row30:col3, tab_1:row30:col4 | — | not captured |
+| theta_q64_category | `Q900` · theta_q64_category | 2.78 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_1:row23:col3, tab_1:row23:col4 | — | not captured |
+| theta_q77_category | `Q900` · theta_q77_category | 1.61 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_1:row25:col3, tab_1:row25:col4 | — | not captured |
+| theta_q40_bmi | `Q900` · theta_q40_bmi | -0.0354 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_1:row32:col3 | — | not captured |
+| estimated volume of distribution | `Q61` · V | 0.069 | L/kg | 0.004830000000000001 | L | not captured | review_gapfill (0.7) | Otani_2025:review | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -59,22 +59,36 @@ Chua L et al., Mirikizumab Pharmacokinetics and Exposu…, Clinical and translat
 ## Departures & gaps
 
 **Interpretation flags:**
+- table representations disagree for 'Parameter for Ka (h -1 )'; source reconciliation required
+- table representations disagree for 'Parameter for CL c (L/h)'; source reconciliation required
+- table representations disagree for 'Albumin effect on CL'; source reconciliation required
+- table representations disagree for 'BL CRP effect on CL'; source reconciliation required
+- table representations disagree for 'Parameter for Q c (L/h)'; source reconciliation required
+- table representations disagree for 'BL BW effect on CL and Q'; source reconciliation required
+- table representations disagree for 'Parameter for V 2 , d (L)'; source reconciliation required
+- table representations disagree for 'Parameter for V 3 , d (L)'; source reconciliation required
+- table representations disagree for 'BL BW effect on V c and V p'; source reconciliation required
+- table representations disagree for 'Parameter for F, e (%)'; source reconciliation required
+- table representations disagree for 'BL BMI effect on F'; source reconciliation required
 - dropped unlinked row (NIL): 'BL BW effect on CL and Q' — extend the ontology if this is a real PK parameter (source ['tab_1:row20:col3'])
 - dropped unlinked row (NIL): 'BL BW effect on V c and V p' — extend the ontology if this is a real PK parameter (source ['tab_1:row27:col3'])
-- covariate level 'BL BMI effect on F' → Q900:bl_bmi_effect_on_f = -0.0354 (linear_fractional on Q22)
+- dropped unlinked row (NIL): 'Parameter for F, e (%)' — extend the ontology if this is a real PK parameter (source ['tab_1:row30:col3', 'tab_1:row30:col4'])
 - covariate effect for Q49 has no base parameter row (kept as unattached equation-variable)
 - covariate effect for Q30 has no base parameter row (kept as unattached equation-variable)
 - covariate effect for Q64 has no base parameter row (kept as unattached equation-variable)
 - covariate effect for Q77 has no base parameter row (kept as unattached equation-variable)
-- covariate effect for Q44 has no base parameter row (kept as unattached equation-variable)
+- covariate effect for Q40 has no base parameter row (kept as unattached equation-variable)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=mirikizumab
-- structure disagreement: deterministic 1C vs LLM 3C — review compartment count
+- status held at route_to_review — not promoted
 - population split: 'vivid-1' subgroup of Chua_2025 (paper reports 2 populations: serenity, vivid-1)
 - molar mass: none found for 'mirikizumab' — its concentrations stay mass-only
+- gap-filled Q61 (V) from Otani_2025's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
+- table tab_1: unparsed_numeric_cell
+- table tab_1: representations disagree; selected evidence retained, not merged
 - LLM selected parameter table(s) 2
 
 ## Validation
@@ -115,9 +129,11 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Otani_2025:review'] |
 | C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row16:col3'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.0853 | not captured | not captured | ['tab_1:row16:col3'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q61 | pass | volume within physiological range | 4.83 L | not captured | not captured | ['Otani_2025:review'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -126,7 +142,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_mirikizumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Chua_2025` / `Chua_2025::vivid_1`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_mirikizumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Chua_2025` / `Chua_2025::vivid_1`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -152,4 +168,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 00:08 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 04:17 UTC</sub>

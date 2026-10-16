@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;pazopanib&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/&quot;},{&quot;label&quot;:&quot;Yu_2017 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pazopanib_Attia2023_reference&quot;,&quot;label&quot;:&quot;Attia_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Attia2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pazopanib_Balakirouchenane2020_reference&quot;,&quot;label&quot;:&quot;Balakirouchenane_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Balakirouchenane2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pazopanib_Bins2019_base&quot;,&quot;label&quot;:&quot;Bins_2019_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Bins2019_base.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pazopanib_Bins2019_final&quot;,&quot;label&quot;:&quot;Bins_2019_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Bins2019_final.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pazopanib_Ozbey2021_reference&quot;,&quot;label&quot;:&quot;Ozbey_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Ozbey2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pazopanib_Attia2023_reference&quot;,&quot;label&quot;:&quot;Attia_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Attia2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pazopanib_Balakirouchenane2020_reference&quot;,&quot;label&quot;:&quot;Balakirouchenane_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Balakirouchenane2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pazopanib_Ozbey2021_reference&quot;,&quot;label&quot;:&quot;Ozbey_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Ozbey2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -41,11 +41,11 @@ Yu H et al., Development of a Pharmacokinetic Model…, Clinical pharmacokinetic
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| relative bioavailability (rF) at a dose of 200 mg | `Q87` · Frel | 1 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | Yu_2017:abstract | — | not captured |
+| relative bioavailability (rF) at a dose of 200 mg was fixed to | `Q87` · Frel | 1 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | Yu_2017:abstract | — | not captured |
 | first-order decay constant | `Q47` · kel | 0.15 | day-1 | 1.736111111111111e-06 | [1] / [d] | not captured | llm (0.6) | Yu_2017:abstract | — | not captured |
-| volume of distribution in the current analysis | `Q61` · V | 5.05 | L | 0.00505 | L | not captured | review_gapfill (0.7) | Attia_2023:review | — | not captured |
-| k a | `Q49` · kabs | 1.8 | 1/h | 0.0005 | 1/h | not captured | review_gapfill (0.7) | Balakirouchenane_2020:review | — | not captured |
-| Tlag | `Q83` · tlag | 0.5 | h | 1800.0 | h | not captured | review_gapfill (0.7) | Balakirouchenane_2020:review | — | not captured |
+| the volume of distribution | `Q61` · V | 5.05 | L | 0.00505 | L | not captured | review_gapfill (0.7) | Attia_2023:review | — | not captured |
+| k a (1/h) Estimate (Base DAB/OHD Model) | `Q49` · kabs | 1.8 | 1/h | 0.0005 | 1/h | not captured | review_gapfill (0.7) | Balakirouchenane_2020:review | — | not captured |
+| Tlag (h) Estimate (Base DAB/OHD Model) | `Q83` · tlag | 0.5 | h | 1800.0 | h | not captured | review_gapfill (0.7) | Balakirouchenane_2020:review | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -55,9 +55,9 @@ Yu H et al., Development of a Pharmacokinetic Model…, Clinical pharmacokinetic
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped PD-category row 'E max (maximum effect)' → Q320 (Emax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Yu_2017:abstract'])
-- dropped unlinked row (NIL): 'dose at half of maximum effect' — extend the ontology if this is a real PK parameter (source ['Yu_2017:abstract'])
-- dropped PD-category row 'maximum magnitude' → Q320 (Emax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Yu_2017:abstract'])
+- dropped PD-category row 'E max was fixed to' → Q320 (Emax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Yu_2017:abstract'])
+- dropped PD-category row 'the dose at half of maximum effect' → Q321 (EC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Yu_2017:abstract'])
+- dropped unlinked row (NIL): 'maximum magnitude of 50 % (RSE 27 %)' — extend the ontology if this is a real PK parameter (source ['Yu_2017:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=pazopanib
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - skipped review gap-fill of CL: primary's parameterization (rate-constant / ka-only) does not use it
@@ -120,7 +120,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_pazopanib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Yu_2017` / `Yu_2017::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_pazopanib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Yu_2017` / `Yu_2017::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -146,4 +146,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 04:38 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 20:23 UTC</sub>

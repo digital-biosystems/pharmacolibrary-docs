@@ -20,22 +20,39 @@ Latamoxef is an antibiotic of the cephalosporin class used to treat bacterial in
 
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
-| latamoxef | parent | 520.473 | C20H20N6O9S | DrugBank | [47499](https://pubchem.ncbi.nlm.nih.gov/compound/47499) | Tang_2021 |
-| latamoxef R-epimer | metabolite | — (mass units only) | — | — | — | — |
-| latamoxef S-epimer | metabolite | — (mass units only) | — | — | — | — |
+| latamoxef | parent | 520.473 | C20H20N6O9S | DrugBank | [47499](https://pubchem.ncbi.nlm.nih.gov/compound/47499) | Tang_2021, Wang_2022 |
+| R-latamoxef | metabolite | — (mass units only) | — | — | — | — |
+| S-latamoxef | metabolite | — (mass units only) | — | — | — | — |
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 11:32 | 2:13 | 0/1/1 | 0/0/0 | 0/0/0 | 121,380/3,072 | einfracz / qwen3.8-27b | 7 | 3/3 | 7/0 | 0 |
+| 2026-10-15 00:25 | 4:19 | 0/2/1 | 0/0/1 | 0/0/0 | 269,645/13,210 | einfracz / qwen3.8-27b | 7 | 3/3 | 7/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.385). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q99 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Tang_2021_reference](drugs/drug_latamoxef/Latamoxef_Tang2021_reference.md) | — | 1-compartment (no model) | 3 | Tang BH et al., Drug Clearance in Neonates: A Combinati…, Clinical pharmacokinetics (2021) | [10.1007/s40262-021-01033-x](https://doi.org/10.1007/s40262-021-01033-x) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.6). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Wang_2022_reference](drugs/drug_latamoxef/Latamoxef_Wang2022_reference.md) | — | general linear (no model) | 0 | Wang Y et al., Population Pharmacokinetics and Dosing…, Pharmaceutics (2022) | [10.3390/pharmaceutics14051033](https://doi.org/10.3390/pharmaceutics14051033) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.385). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Tang_2021_reference](drugs/drug_latamoxef/Latamoxef_Tang2021_reference.md) | — | 1-compartment (no model) | 1 | Tang BH et al., Drug Clearance in Neonates: A Combinati…, Clinical pharmacokinetics (2021) | [10.1007/s40262-021-01033-x](https://doi.org/10.1007/s40262-021-01033-x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.6). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Wang_2022_estimate](drugs/drug_latamoxef/Latamoxef_Wang2022_estimate.md) | — | general linear (no model) | 5 | Wang Y et al., Population Pharmacokinetics and Dosing…, Pharmaceutics (2022) | [10.3390/pharmaceutics14051033](https://doi.org/10.3390/pharmaceutics14051033) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.6). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Wang_2022_median_estimate](drugs/drug_latamoxef/Latamoxef_Wang2022_median_estimate.md) | — | general linear (no model) | 4 | Wang Y et al., Population Pharmacokinetics and Dosing…, Pharmaceutics (2022) | [10.3390/pharmaceutics14051033](https://doi.org/10.3390/pharmaceutics14051033) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">dog</span> | [Kusumoto_2024_fTAM](drugs/drug_latamoxef/pd_Kusumoto_2024_fTAM.md) | Probability of target attainment for bacteriostatic effect ← latamoxef · time-to-event model | — | Kusumoto M et al., Estimation of latamoxef (moxalactam) do…, The Journal of veterinary m… (2024) | [10.1292/jvms.24-0197](https://doi.org/10.1292/jvms.24-0197) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">dog</span> | [Kusumoto_2024_fTAM_2](drugs/drug_latamoxef/pd_Kusumoto_2024_fTAM_2.md) | Probability of target attainment for bactericidal effect ← latamoxef · time-to-event model | — | Kusumoto M et al., Estimation of latamoxef (moxalactam) do…, The Journal of veterinary m… (2024) | [10.1292/jvms.24-0197](https://doi.org/10.1292/jvms.24-0197) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=latamoxef).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,8 +63,8 @@ Latamoxef is an antibiotic of the cephalosporin class used to treat bacterial in
 ## Coverage
 
 - **PubMed hits:** 39 matched, 20 returned
-- **screened:** 3  ·  **relevant:** 3
-- **records:** 2  ·  extracted 0  ·  needs_review 1  ·  rejected 1  ·  stale 0
+- **screened:** 3  ·  **relevant:** 2
+- **records:** 3  ·  extracted 0  ·  needs_review 1  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -56,24 +73,25 @@ _4 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Qi_2019.pdf` | Qi H et al., Population pharmacokinetics and dosing…, International journal of an… (2019) | popPK | 10 | [10.1016/j.ijantimicag.2018.11.017](https://doi.org/10.1016/j.ijantimicag.2018.11.017) | [30472290](https://pubmed.ncbi.nlm.nih.gov/30472290) | The paper describes a population PK study of latamoxef in neonates, but the abstract does not contain specific numeric parameter values (CL, V, etc.), which are likely in the full text or tables not provided. |
-| `Aoyama_1985.pdf` | Aoyama H et al., [Transfer of latamoxef into human burn…, The Japanese journal of ant… (1985) | popPK | 9 | not captured | [4078995](https://pubmed.ncbi.nlm.nih.gov/4078995) | The paper reports quantitative pharmacokinetic analysis (two-compartment model parameters like Tmax, Cmax) for latamoxef in humans, with specific numeric values for serum and blister fluid concentrations provided in the abstract. |
-| `Höffler_1984.pdf` | Höffler D et al., On the pharmacokinetics of latamoxef in…, Arzneimittel-Forschung (1984) | popPK | 9 | not captured | [6539614](https://pubmed.ncbi.nlm.nih.gov/6539614) | The study is a direct PK investigation of latamoxef in humans with a two-compartment model, but the specific numeric parameter values (CL, V, t1/2) are not listed in the provided evidence text, only the model description and conclusions about renal impairment are present. |
-| `Sato_1984.pdf` | Sato Y et al., [A comparison of the penetration charac…, The Japanese journal of ant… (1984) | popPK | 9 | not captured | [6471383](https://pubmed.ncbi.nlm.nih.gov/6471383) | The study reports a two-compartment PK model for latamoxef in humans, but specific parameter values (CL, V, ka) are not listed in the provided text, only concentration-time data and half-life for the comparator drug. |
+| `Höffler_1984.pdf` | Höffler D et al., On the pharmacokinetics of latamoxef in…, Arzneimittel-Forschung (1984) | popPK | 10 | not captured | [6539614](https://pubmed.ncbi.nlm.nih.gov/6539614) | The paper reports a two-compartment PK model for latamoxef in humans, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence text, only the model description and relationships. |
+| `Qi_2019.pdf` | Qi H et al., Population pharmacokinetics and dosing…, International journal of an… (2019) | popPK | 10 | [10.1016/j.ijantimicag.2018.11.017](https://doi.org/10.1016/j.ijantimicag.2018.11.017) | [30472290](https://pubmed.ncbi.nlm.nih.gov/30472290) | The paper reports a population PK model for latamoxef in neonates, but the specific numeric parameter estimates (e.g., typical CL, V, Q values) are not present in the provided abstract/text evidence. |
+| `Aoyama_1985.pdf` | Aoyama H et al., [Transfer of latamoxef into human burn…, The Japanese journal of ant… (1985) | popPK | 9 | not captured | [4078995](https://pubmed.ncbi.nlm.nih.gov/4078995) | The paper describes a pharmacokinetic study of latamoxef in humans using a two-compartment model, but the specific parameter values (CL, V, etc.) are not listed in the provided evidence, only raw concentration data and some blister fluid stats. |
+| `Sato_1984.pdf` | Sato Y et al., [A comparison of the penetration charac…, The Japanese journal of ant… (1984) | popPK | 5 | not captured | [6471383](https://pubmed.ncbi.nlm.nih.gov/6471383) | The study reports two-compartment pharmacokinetics for latamoxef in humans, but specific numeric parameters (CL, Vd, t1/2) are not present in the provided abstract text. |
 
-<sub>queue written 2026-10-07T11:31:10.866976+00:00</sub>
+<sub>queue written 2026-10-15T00:21:23.243226+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Höffler_1984 | relevant | 9 | 2 | The study is a direct PK investigation of latamoxef in humans with a two-compartment model, but the specific numeric parameter values (CL, V, t1/2) are not listed in the provided evidence text, only the model description and conclusions about renal impairment are present. |
-| popPK | Kitaura_1988 | irrelevant | 0 | 0 | The provided evidence contains only software metadata and no scientific content regarding latamoxef or pharmacokinetics. |
-| popPK | Kitaura_1989 | irrelevant | 0 | 0 | The provided text contains no scientific content or data regarding latamoxef pharmacokinetics. |
-| popPK | Qi_2019 | relevant | 10 | 2 | The paper describes a population PK study of latamoxef in neonates, but the abstract does not contain specific numeric parameter values (CL, V, etc.), which are likely in the full text or tables not provided. |
-| popPK | Qi_2021 | irrelevant | 2 | 0 | The paper is a study protocol for a clinical trial comparing dosing regimens and does not report original quantitative pharmacokinetic parameter values (such as specific clearance or volume constants), merely referencing a prior model (Qi et al., 2019). |
-| popPK | Sato_1984 | relevant | 9 | 2 | The study reports a two-compartment PK model for latamoxef in humans, but specific parameter values (CL, V, ka) are not listed in the provided text, only concentration-time data and half-life for the comparator drug. |
-| popPK | Tang_2024 | irrelevant | 2 | 0 | This is a machine learning decision support study that uses a previously published population pharmacokinetic model for simulation; the specific numeric PK parameter values (CL, V, etc.) for latamoxef are referenced in Supplementary Material S1 which is not provided in the evidence. |
+| popPK | Aoyama_1985 | relevant | 9 | 4 | The paper describes a pharmacokinetic study of latamoxef in humans using a two-compartment model, but the specific parameter values (CL, V, etc.) are not listed in the provided evidence, only raw concentration data and some blister fluid stats. |
+| popPK | Höffler_1984 | relevant | 10 | 0 | The paper reports a two-compartment PK model for latamoxef in humans, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence text, only the model description and relationships. |
+| popPK | Kitaura_1988 | irrelevant | 0 | 0 | The provided text is empty, containing only software version metadata with no study content or pharmacokinetic data. |
+| popPK | Kitaura_1989 | irrelevant | 0 | 0 | The provided text consists only of GROBID processing metadata and contains no scientific content, pharmacokinetic data, or information regarding latamoxef. |
+| popPK | Qi_2019 | relevant | 10 | 2 | The paper reports a population PK model for latamoxef in neonates, but the specific numeric parameter estimates (e.g., typical CL, V, Q values) are not present in the provided abstract/text evidence. |
+| popPK | Qi_2021 | irrelevant | 2 | 0 | The paper is a study protocol for a randomized controlled trial of a future study and does not report original quantitative PK parameter values (CL, V, etc.) for latamoxef, only referencing a preliminary model from another source (Qi et al., 2019). |
+| popPK | Sato_1984 | relevant | 5 | 0 | The study reports two-compartment pharmacokinetics for latamoxef in humans, but specific numeric parameters (CL, Vd, t1/2) are not present in the provided abstract text. |
+| popPK | Tang_2024 | irrelevant | 2 | 0 | The paper uses a pre-existing PopPK model for latamoxef to generate data for a machine learning decision support system, but does not report original quantitative PK parameter estimates (CL, V, etc.) for latamoxef in the provided text. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 11:31 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-15 00:21 UTC</sub>

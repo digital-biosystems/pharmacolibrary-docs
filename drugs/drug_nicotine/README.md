@@ -53,6 +53,30 @@ Nicotine is used to treat nicotine dependence, helping people stop smoking. It i
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Livett_1983_CA_release](drugs/drug_nicotine/pd_Livett_1983_CA_release.md) | catecholamine release evoked by nicotine ← nicotine · direct Emax (saturable) effect | — | Livett BG et al., Use of isolated chromaffin cells to stu…, Journal of the autonomic ne… (1983) | [10.1016/0165-1838(83)90069-3](https://doi.org/10.1016/0165-1838(83)90069-3) |
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> | [Porchet_1988_HR](drugs/drug_nicotine/pd_Porchet_1988_HR.md) | heart rate ← nicotine · stimulation effect | — | Porchet HC et al., Pharmacodynamic model of tolerance: app…, The Journal of pharmacology… (1988) | — |
 
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=nicotine).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | kidney | `SLC22A4` inhibitor, `SLC22A5` inhibitor | DrugBank actor |
+| absorption | skeletal muscle | `SLC22A5` inhibitor | DrugBank actor |
+| absorption | small intestine | `SLC22A4` inhibitor, `SLC22A5` inhibitor | DrugBank actor |
+| distribution | liver | `SLC22A3` inhibitor | DrugBank actor |
+| distribution | placenta | `SLC22A3` inhibitor | DrugBank actor |
+| distribution | skeletal muscle | `SLC22A3` inhibitor | DrugBank actor |
+| metabolism | brain | `CYP2D6` substrate, `MAOA` inhibitor, `MAOB` inhibitor | DrugBank actor |
+| metabolism | liver | `CYP1A2` inducer/substrate, `CYP2A6` inhibitor/substrate, `CYP2B6` substrate, `CYP2C19` substrate, `CYP2C8` substrate, `CYP2C9` substrate, `CYP2D6` substrate, `CYP2E1` inducer/inhibitor/substrate, `CYP3A4` substrate, `MAOA` inhibitor, `SLC22A1` inhibitor | DrugBank actor |
+| metabolism | lung | `CYP1A1` inducer/substrate | DrugBank actor |
+| metabolism | platelet | `MAOB` inhibitor | DrugBank actor |
+| metabolism | small intestine | `CYP1A1` inducer/substrate, `CYP3A4` substrate, `MAOA` inhibitor | DrugBank actor |
+| excretion | kidney | `SLC22A2` inhibitor | DrugBank actor |
+| — | adipose tissue | `CYP19A1` inhibitor | DrugBank actor |
+| — | ovary | `CYP19A1` inhibitor | DrugBank actor |
+| — | testis | `CYP19A1` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: CHAT (inhibitor), CHRNA10 (target), CHRNA2 (target), CHRNA3 (target), CHRNA4 (target), CHRNA5 (target), CHRNA6 (target), CHRNA7 (target), CHRNA9 (target), CHRNB2 (target), CHRNB3 (target), CHRNB4 (target), CYP2A13 (substrate).</sub>
+
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
 <table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>

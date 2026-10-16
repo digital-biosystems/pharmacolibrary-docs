@@ -17,23 +17,32 @@ Elranatamab is a bispecific monoclonal antibody used to treat multiple myeloma. 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 12:35 | 2:46 | 0/1/0 | 0/0/2 | 0/0/0 | 76,165/14,176 | openai / gpt-6-luna | 2 | 0/2 | 2/0 | 0 |
+| 2026-10-14 19:27 | 1:33 | 0/1/0 | 0/0/2 | 0/0/0 | 86,193/5,289 | einfracz / qwen3.8-27b | 2 | 0/2 | 2/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.704). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Hibma_2026_reference](drugs/drug_elranatamab/Elranatamab_Hibma2026_reference.md) | — | 2-compartment (no model) | 7 (+2 cov.) | Hibma JE et al., Elranatamab Population Pharmacokinetics…, Clinical pharmacokinetics (2026) | [10.1007/s40262-026-01663-z](https://doi.org/10.1007/s40262-026-01663-z) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.704). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Hibma_2026_reference](drugs/drug_elranatamab/Elranatamab_Hibma2026_reference.md) | — | 1-compartment (no model) | 6 (+2 cov.) | Hibma JE et al., Elranatamab Population Pharmacokinetics…, Clinical pharmacokinetics (2026) | [10.1007/s40262-026-01663-z](https://doi.org/10.1007/s40262-026-01663-z) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span> | [Hibma_2026_CRS](drugs/drug_elranatamab/pd_Hibma_2026_CRS.md) | incidence of any-grade CRS after the first step-up priming dose ← free elranatamab · categorical (graded) response model | — | Hibma JE et al., Elranatamab Population Pharmacokinetics…, Clinical pharmacokinetics (2026) | [10.1007/s40262-026-01663-z](https://doi.org/10.1007/s40262-026-01663-z) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span> | [Hibma_2026_CRS](drugs/drug_elranatamab/pd_Hibma_2026_CRS.md) | Cytokine Release Syndrome (any-grade) ← free elranatamab · categorical (graded) response model | — | Hibma JE et al., Elranatamab Population Pharmacokinetics…, Clinical pharmacokinetics (2026) | [10.1007/s40262-026-01663-z](https://doi.org/10.1007/s40262-026-01663-z) |
 | <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> | [Lon_2025_CRR](drugs/drug_elranatamab/pd_Lon_2025_CRR.md) | complete response rate ← elranatamab · categorical (graded) response model | — | Lon HK et al., Population Exposure-Response Efficacy A…, Targeted oncology (2025) | [10.1007/s11523-025-01168-y](https://doi.org/10.1007/s11523-025-01168-y) |
 | <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span> | [Lon_2025_DOR](drugs/drug_elranatamab/pd_Lon_2025_DOR.md) | duration of response ← elranatamab · time-to-event model | — | Lon HK et al., Population Exposure-Response Efficacy A…, Targeted oncology (2025) | [10.1007/s11523-025-01168-y](https://doi.org/10.1007/s11523-025-01168-y) |
 | <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> | [Lon_2025_ORR](drugs/drug_elranatamab/pd_Lon_2025_ORR.md) | objective response rate ← elranatamab · categorical (graded) response model | — | Lon HK et al., Population Exposure-Response Efficacy A…, Targeted oncology (2025) | [10.1007/s11523-025-01168-y](https://doi.org/10.1007/s11523-025-01168-y) |
 | <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span> | [Lon_2025_PFS](drugs/drug_elranatamab/pd_Lon_2025_PFS.md) | progression-free survival ← elranatamab · time-to-event model | — | Lon HK et al., Population Exposure-Response Efficacy A…, Targeted oncology (2025) | [10.1007/s11523-025-01168-y](https://doi.org/10.1007/s11523-025-01168-y) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=elranatamab).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: CD3D (antibody), TNFRSF17 (antibody).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,7 +61,7 @@ Elranatamab is a bispecific monoclonal antibody used to treat multiple myeloma. 
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Lon_2025 | irrelevant | 2 | 0 | This is an exposure–response efficacy analysis, and elranatamab disposition parameters are only referenced via a separate population-PK model, with no values provided here. |
+| popPK | Lon_2025 | irrelevant | 2 | 0 | The paper is a pharmacodynamic exposure-response analysis that uses exposure metrics derived from a PK model described in a separate reference, and does not report quantitative PK disposition parameters (CL, V, etc.) for elranatamab. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 12:33 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-14 19:26 UTC</sub>

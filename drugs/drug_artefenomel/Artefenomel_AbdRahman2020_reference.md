@@ -95,10 +95,10 @@ Abd-Rahman AN et al., Population Pharmacokinetics and Pharmac…, Clinical pharm
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs_non_atc/drug_artefenomel/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Abd-Rahman_2020` / `Abd-Rahman_2020::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs_non_atc/drug_artefenomel/models/modelica/Artefenomel_AbdRahman2020_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs_non_atc/drug_artefenomel/models/modelica/Artefenomel_AbdRahman2020_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs_non_atc/drug_artefenomel/models/modelica/Artefenomel_AbdRahman2020_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs_non_atc/drug_artefenomel/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Abd-Rahman_2020` / `Abd-Rahman_2020::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs_non_atc/drug_artefenomel/models/modelica/Artefenomel_AbdRahman2020_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs_non_atc/drug_artefenomel/models/modelica/Artefenomel_AbdRahman2020_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs_non_atc/drug_artefenomel/models/modelica/Artefenomel_AbdRahman2020_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -116,7 +116,7 @@ Abd-Rahman AN et al., Population Pharmacokinetics and Pharmac…, Clinical pharm
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_artefenomel/Artefenomel_AbdRahman2020_reference/Artefenomel_AbdRahman2020_reference.svg" alt="Artefenomel_AbdRahman2020_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_artefenomel/Artefenomel_AbdRahman2020_reference/Artefenomel_AbdRahman2020_reference.svg" alt="Artefenomel_AbdRahman2020_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

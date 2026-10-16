@@ -17,7 +17,7 @@ Enfortumab vedotin, an antibody-drug conjugate, is used to treat urothelial (tra
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 12:36 | 0:38 | 0/0/0 | 0/1/0 | 0/0/0 | 10,351/2,691 | openai / gpt-6-luna | 2 | 1/1 | 1/1 | 0 |
+| 2026-10-14 19:27 | 0:08 | 0/0/0 | 0/0/1 | 0/0/0 | 10,959/669 | einfracz / qwen3.8-27b | 2 | 1/1 | 1/1 | 0 |
 
 ## popPK records
 
@@ -27,8 +27,27 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Zuo_2024_OS](drugs/drug_enfortumab_vedotin/pd_Zuo_2024_OS.md) | overall survival ← enfortumab vedotin · model not identified | — | Zuo P et al., Population Pharmacokinetic Modeling and…, Clinical pharmacology and t… (2024) | [10.1002/cpt.3383](https://doi.org/10.1002/cpt.3383) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Zuo_2024_grade_3_treatment_related_adverse_events](drugs/drug_enfortumab_vedotin/pd_Zuo_2024_grade_3_treatment_related_adverse_events.md) | grade ≥ 3 treatment-related adverse events ← enfortumab vedotin and free MMAE · model not identified | — | Zuo P et al., Population Pharmacokinetic Modeling and…, Clinical pharmacology and t… (2024) | [10.1002/cpt.3383](https://doi.org/10.1002/cpt.3383) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Zuo_2024_Grade_3_TRAE](drugs/drug_enfortumab_vedotin/pd_Zuo_2024_Grade_3_TRAE.md) | grade ≥ 3 treatment-related adverse events ← enfortumab vedotin · categorical (graded) response model | — | Zuo P et al., Population Pharmacokinetic Modeling and…, Clinical pharmacology and t… (2024) | [10.1002/cpt.3383](https://doi.org/10.1002/cpt.3383) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Zuo_2024_OS](drugs/drug_enfortumab_vedotin/pd_Zuo_2024_OS.md) | overall survival ← enfortumab vedotin · time-to-event model | — | Zuo P et al., Population Pharmacokinetic Modeling and…, Clinical pharmacology and t… (2024) | [10.1002/cpt.3383](https://doi.org/10.1002/cpt.3383) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=enfortumab_vedotin).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` substrate | DrugBank actor |
+| absorption | liver | `ABCB1` substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
+| absorption | testis | `ABCB1` substrate | DrugBank actor |
+| metabolism | liver | `CYP3A4` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: NECTIN4 (antibody), NECTIN4 (binder).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,17 +68,17 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Zuo_2024.pdf` | Zuo P et al., Population Pharmacokinetic Modeling and…, Clinical pharmacology and t… (2024) | popPK | 10 | [10.1002/cpt.3383](https://doi.org/10.1002/cpt.3383) | [39039635](https://pubmed.ncbi.nlm.nih.gov/39039635) | Human population-PK modeling is described, but numeric disposition parameter values are not present in the provided evidence. |
+| `Zuo_2024.pdf` | Zuo P et al., Population Pharmacokinetic Modeling and…, Clinical pharmacology and t… (2024) | popPK | 10 | [10.1002/cpt.3383](https://doi.org/10.1002/cpt.3383) | [39039635](https://pubmed.ncbi.nlm.nih.gov/39039635) | The paper is a population PK study for enfortumab vedotin, but the provided evidence contains only qualitative descriptions and hazard ratios, lacking the specific numeric PK parameter estimates (CL, V, Q, etc.) which are likely in tables or figures not included in the text. |
 
-<sub>queue written 2026-10-07T12:36:04.923759+00:00</sub>
+<sub>queue written 2026-10-14T19:27:48.680033+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Miyake_2026 | irrelevant | 0 | 0 | The evidence only describes patient cohorts and reports no pharmacokinetic parameters. |
-| popPK | Op_2025 | relevant | 8 | 3 | The study simulates enfortumab vedotin with a two-compartment population-PK model and reports numeric AUC and trough values, but not model parameter estimates. |
-| popPK | Zuo_2024 | relevant | 10 | 0 | Human population-PK modeling is described, but numeric disposition parameter values are not present in the provided evidence. |
+| popPK | Miyake_2026 | irrelevant | 0 | 0 | The provided evidence is only a flow diagram for patient cohorts and contains no pharmacokinetic parameters, model, or numeric values for enfortumab vedotin. |
+| popPK | Op_2025 | irrelevant | 3 | 2 | The paper reports derived pharmacokinetic metrics (AUC, Ctrough) from a simulation study using a previously published model, but does not report the fundamental quantitative disposition parameters (CL, V, Q, ka) for enfortumab vedotin itself. |
+| popPK | Zuo_2024 | relevant | 10 | 0 | The paper is a population PK study for enfortumab vedotin, but the provided evidence contains only qualitative descriptions and hazard ratios, lacking the specific numeric PK parameter estimates (CL, V, Q, etc.) which are likely in tables or figures not included in the text. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

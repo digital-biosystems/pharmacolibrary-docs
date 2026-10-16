@@ -18,19 +18,23 @@ Pimecrolimus is a non-steroidal calcineurin inhibitor used to treat atopic derma
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 07:47 | 7:03 | 0/0/0 | 3/0/0 | 0/0/0 | 135,886/1,802 | einfracz / qwen3.8-27b | 8 | 0/2 | 7/1 | 0 |
+| 2026-10-14 23:20 | 0:20 | 0/0/0 | 0/0/0 | 0/0/0 | 25,537/526 | einfracz / qwen3.8-27b | 8 | 0/2 | 7/1 | 0 |
 
 ## popPK records
 
 _not available_
 
-## Pharmacodynamics (PD)
+## ADME sites
 
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.85).">in vitro</span> | [Nagao_2013_ABCA1_mediated_cholesterol_efflux](drugs/drug_pimecrolimus/pd_Nagao_2013_ABCA1_mediated_cholesterol_efflux.md) | ABCA1-mediated cholesterol efflux ← pimecrolimus · inhibition effect | — | Nagao K et al., Cyclosporine A and PSC833 inhibit ABCA1…, Biochimica et biophysica ac… (2013) | [10.1016/j.bbalip.2012.11.002](https://doi.org/10.1016/j.bbalip.2012.11.002) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Prucha_2013_AE](drugs/drug_pimecrolimus/pd_Prucha_2013_AE.md) | Atopic eczema ← pimecrolimus · model not identified | — | Prucha H et al., Pimecrolimus, a topical calcineurin inh…, Expert opinion on drug meta… (2013) | [10.1517/17425255.2013.819343](https://doi.org/10.1517/17425255.2013.819343) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">in vitro</span> | [Shi_2021_hCES2A](drugs/drug_pimecrolimus/pd_Shi_2021_hCES2A.md) | hCES2A inhibition ← pimecrolimus · inhibition effect | — | Shi CC et al., Rapalogues as hCES2A Inhibitors: In Vit…, European journal of drug me… (2021) | [10.1007/s13318-020-00659-9](https://doi.org/10.1007/s13318-020-00659-9) |
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=pimecrolimus).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | `CYP3A4` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: FKBP1A (potentiator), MTOR (potentiator), PPP3CA (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,13 +53,13 @@ _not available_
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| PGx | Chang_2017 | not_relevant | 2 | 8 | The study reports associations between genotypes and treatment use/outcomes (efficacy), not direct pharmacokinetic or pharmacodynamic parameters (e.g., AUC, Cmax, receptor binding) of pimecrolimus. |
-| popPK | Federico_2024 | irrelevant | 0 | 0 | The paper is a systems biology and network analysis study for drug discovery in atopic dermatitis; it does not contain any pharmacokinetic modeling or quantitative disposition parameters for pimecrolimus. |
-| popPK | Kumar_2025 | irrelevant | 0 | 0 | This is a computational machine learning paper on drug-target affinity prediction and contains no pharmacokinetic data for pimecrolimus. |
-| popPK | Lax_2022 | irrelevant | 0 | 0 | The paper is a review of topical corticosteroids for eczema and does not study pimecrolimus or report pharmacokinetic parameters. |
-| popPK | Popp_2021 | irrelevant | 0 | 0 | The paper is a review of antibiotics for COVID-19 and contains no pharmacokinetic data for pimecrolimus. |
-| PGx | Rappersberger_2002 | not_relevant | 0 | 0 | The paper reports clinical efficacy and PK data for oral pimecrolimus in psoriasis, but it does not report on specific gene variants/genotypes or how they alter PK/PD parameters. |
-| PGx | Zollinger_2006 | not_relevant | 0 | 0 | The paper describes standard PK properties in healthy volunteers without investigating the influence of gene variants on PK or PD parameters. |
+| PGx | Chang_2017 | not_relevant | 2 | 0 | The study reports genetic associations with treatment usage patterns (topical steroids/calcineurin inhibitors) rather than changes in specific pharmacokinetic or pharmacodynamic parameters of pimecrolimus. |
+| popPK | Federico_2024 | irrelevant | 0 | 0 | The paper is a computational network analysis for drug discovery in atopic dermatitis and does not report any pharmacokinetic parameters for pimecrolimus. |
+| popPK | Kumar_2025 | irrelevant | 0 | 0 | The paper describes a computational method (CASTER-DTA) for predicting drug-target binding affinity and does not contain any pharmacokinetic parameters or data for pimecrolimus. |
+| popPK | Lax_2022 | irrelevant | 0 | 0 | The paper is a clinical review of topical corticosteroids for eczema and does not contain pharmacokinetic data for pimecrolimus. |
+| popPK | Popp_2021 | irrelevant | 0 | 0 | The paper is a systematic review of antibiotics for COVID-19 and contains no data for pimecrolimus. |
+| PGx | Rappersberger_2002 | not_relevant | 0 | 0 | The study reports gene expression profiling of the disease/immune response, not genetic variants (genotypes) affecting PK or PD parameters. |
+| PGx | Zollinger_2006 | not_relevant | 0 | 0 | The paper describes general PK properties and CYP3A4 involvement but does not investigate or report specific gene variant/genotype effects. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

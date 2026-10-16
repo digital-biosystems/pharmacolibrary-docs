@@ -18,9 +18,9 @@
 
 **Model:** No model was generated from this record.
 
-> Rivastigmine's metabolite ZNS 114-666 (NAP 226-90) concentrations (microg/L) drive inhibition of acetylcholinesterase activity via an Emax (inhibitory) model with a proportional effect form; the paper reports an IC50 of 5.4 microg/L, but no full text is available to confirm the mechanism or other parameters.
+> The model describes the inhibition of acetylcholinesterase activity by the rivastigmine metabolite ZNS 114-666 using an Emax model with an IC50 of 5.4 microg/L. No specific values for Imax or rate constants are provided in the available record or excerpts.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Gobburu_2001`
 - **model family:** `emax`

@@ -13,19 +13,19 @@
 
 ## Record summary
 
-**As extracted:** Serum erythropoietin drives serum soluble transferrin receptor: direct sigmoid Emax (Hill) effect.
+**As extracted:** Serum erythropoietin drives serum soluble transferrin receptor: delayed effect through an effect compartment.
 
 **Model:** No model was generated from this record.
 
-> The paper does not provide full text to describe the mechanism by which serum erythropoietin stimulates serum soluble transferrin receptor. The record lists a half-life parameter of 10.2 days, but no potency or rate values (such as Imax, IC50, or ke0) are stated in the available excerpts.
+> Serum erythropoietin concentrations stimulate the production of serum soluble transferrin receptor via an effect compartment model characterized by a rate constant of 10.2 days.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Gaudard_2003`
-- **model family:** `sigmoid_emax`
+- **model family:** `effect_compartment`
 - **driver:** `not_resolved`
 - **tier:** population
-- **effect:** stimulation/unknown
+- **effect:** stimulation/proportional
 
 ## Citation
 Gaudard A et al., Pharmacokinetic-pharmacodynamic modelli…, Clinical drug investigation (2003)
@@ -34,7 +34,7 @@ Gaudard A et al., Pharmacokinetic-pharmacodynamic modelli…, Clinical drug inve
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | t1/2 k(0) | `Q326` · not captured | 10.2 | days | not captured | llm (not captured) | Gaudard_2003:pdv3 |
+| PD (effect) | k(0) | `Q326` · not captured | 10.2 | days | not captured | llm (not captured) | Gaudard_2003:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>

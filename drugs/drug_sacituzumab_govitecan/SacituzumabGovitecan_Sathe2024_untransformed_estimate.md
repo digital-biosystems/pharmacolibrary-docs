@@ -28,7 +28,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Sathe AG et al., Population Pharmacokinetics of Sacituzu…, Clinical pharmacokinetics (2024)
   ·  DOI: [10.1007/s40262-024-01366-3](https://doi.org/10.1007/s40262-024-01366-3)
 
-<div class="pk-model-meta" hidden drug="sacituzumab govitecan" model-id="SacituzumabGovitecan_Sathe2024_untransformed_estimate" status="rejected" stale="false" population="patients with metastatic triple-negative breast cancer and other solid tumors" measured-compound="sacituzumab_govitecan" parameterization="apparent" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="sacituzumab govitecan" model-id="SacituzumabGovitecan_Sathe2024_untransformed_estimate" status="rejected" stale="false" population="patients with metastatic triple-negative breast cancer and other solid tumors" measured-compound="sacituzumab govitecan" parameterization="apparent" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 0 extracted.
@@ -50,51 +50,20 @@ _No resolved parameters._
 ## Departures & gaps
 
 **Interpretation flags:**
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=sacituzumab_govitecan
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=sacituzumab govitecan
 - topology: 1 first-order transfer(s) across 3 compounds → general_linear
 - template fit: none — only the metabolite is modelled — no parent compartment
-- population split: 'untransformed estimate' subgroup of Sathe_2024 (paper reports 3 populations: final model estimate (%rse), final model estimatea (%rse), untransformed estimate)
-- row roles (LLM): model_class=compartmental; 34/34 row label(s) assigned, 14 linked by role; re-tagged parent→free SN-38 ×13, parent→total antibody ×14
+- population split: 'untransformed estimate' subgroup of Sathe_2024 (paper reports 2 populations: final model estimate (%rse), untransformed estimate)
+- row roles (LLM): model_class=compartmental; 30/30 row label(s) assigned, 11 linked by role; re-tagged parent→free SN-38 ×4, parent→total antibody ×14
 - review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
-- unparsed cell Tab1:row1:col2 = '0.133 (0.131 to 0.137)'
-- unparsed cell Tab1:row2:col2 = '0.006 (0.005 to 0.006)'
-- unparsed cell Tab1:row3:col2 = '2.770 (2.72 to 2.82)'
-- unparsed cell Tab1:row4:col2 = '0.906 (0.852 to 0.974)'
-- unparsed cell Tab1:row5:col2 = '0.011 (0.008 to 0.016)'
-- unparsed cell Tab1:row6:col2 = '0.503 (0.428 to 0.567)'
-- unparsed cell Tab1:row7:col2 = '0.526 (0.463 to 0.593)'
-- unparsed cell Tab1:row8:col2 = '–0.355 (–0.467 to –0.256)'
-- unparsed cell Tab1:row9:col2 = '0.005 (0.004 to 0.008)'
-- unparsed cell Tab1:row10:col2 = '0.202 (0.182 to 0.23)'
-- unparsed cell Sathe_2024_table_2:row0:col2 = '–2.35 (–2.48 to –2.22)'
-- unparsed cell Sathe_2024_table_2:row1:col2 = '6.00 (5.89 to 6.13)'
-- unparsed cell Sathe_2024_table_2:row2:col2 = '5.51 (5.34 to 5.70)'
-- unparsed cell Sathe_2024_table_2:row5:col2 = '0.341 (0.258 to 0.430)'
-- unparsed cell Sathe_2024_table_2:row6:col2 = '0.412 (0.299 to 0.555)'
-- unparsed cell Sathe_2024_table_2:row7:col2 = '0.494 (0.355 to 0.648)'
-- unparsed cell Sathe_2024_table_2:row8:col2 = '0.011 (0.009 to 0.013)'
-- unparsed cell Sathe_2024_table_2:row9:col2 = '–0.224 (–0.361 to 0.038)'
-- unparsed cell Sathe_2024_table_2:row10:col2 = '–1.05 (–1.33 to –0.860)'
-- unparsed cell Sathe_2024_table_2:row11:col2 = '0.274 (0.191 to 0.370)'
+- table Tab1: unparsed_numeric_cell
+- table Sathe_2024_table_2: unbound_uncertainty
+- table Sathe_2024_table_2: units_need_context
+- table Sathe_2024_table_2: unparsed_numeric_cell
 - companion parameter table 2 transcribed (14 record(s))
-- unparsed cell Sathe_2024_table_3:row0:col2 = '0.016 (0.015 to 0.018)'
-- unparsed cell Sathe_2024_table_3:row1:col2 = '0.010 (0.008 to 0.012)'
-- unparsed cell Sathe_2024_table_3:row2:col2 = '3.06 (2.97 to 3.13)'
-- unparsed cell Sathe_2024_table_3:row3:col2 = '1.18 (0.852 to 1.71)'
-- unparsed cell Sathe_2024_table_3:row4:col2 = '0.374 (0.210 to 0.548)'
-- unparsed cell Sathe_2024_table_3:row5:col2 = '0.449 (0.332 to 0.553)'
-- unparsed cell Sathe_2024_table_3:row6:col2 = '–0.756 (–1.04 to –0.404)'
-- unparsed cell Sathe_2024_table_3:row7:col2 = '–0.135 (–0.195 to –0.082)'
-- unparsed cell Sathe_2024_table_3:row8:col2 = '0.122 (0.068 to 0.182)'
-- unparsed cell Sathe_2024_table_3:row9:col2 = '–0.259 (–0.346 to –0.152)'
-- unparsed cell Sathe_2024_table_3:row10:col2 = '17.8 (6.85 to 27.3)'
-- unparsed cell Sathe_2024_table_3:row12:col2 = '0.206 (0.172 to 0.264)'
-- unparsed cell Sathe_2024_table_3:row13:col2 = '26.2 (12.7 to 35.9)'
-- unparsed cell Sathe_2024_table_3:row14:col2 = '0.102 (0.073 to 0.132)'
-- unparsed cell Sathe_2024_table_3:row15:col2 = '0.045 (0.036 to 0.061)'
-- unparsed cell Sathe_2024_table_3:row16:col2 = '0.045 (0.032 to 0.062)'
+- table Sathe_2024_table_3: unparsed_numeric_cell
 - companion parameter table 3 transcribed (16 record(s))
 - LLM selected parameter table(s) 1, 2, 3
 
@@ -155,7 +124,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_sacituzumab_govitecan/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Sathe_2024` / `Sathe_2024::untransformed_estimate`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_sacituzumab_govitecan/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Sathe_2024` / `Sathe_2024::untransformed_estimate`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -171,4 +140,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 19:58 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 03:13 UTC</sub>

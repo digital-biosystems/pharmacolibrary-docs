@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;thalidomide&quot;,&quot;href&quot;:&quot;drugs/drug_thalidomide/&quot;},{&quot;label&quot;:&quot;Deng_2021 \u00b7 PD mechanical allodynia&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Thalidomide_Chen1989_reference&quot;,&quot;label&quot;:&quot;Chen_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_thalidomide/Thalidomide_Chen1989_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Thalidomide_Figg1999_reference&quot;,&quot;label&quot;:&quot;Figg_1999_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_thalidomide/Thalidomide_Figg1999_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Thalidomide_Kamikawa2006_reference&quot;,&quot;label&quot;:&quot;Kamikawa_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_thalidomide/Thalidomide_Kamikawa2006_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Thalidomide_Noormohamed1999_reference&quot;,&quot;label&quot;:&quot;Noormohamed_1999_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_thalidomide/Thalidomide_Noormohamed1999_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Thalidomide_Chen1989_reference&quot;,&quot;label&quot;:&quot;Chen_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_thalidomide/Thalidomide_Chen1989_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Thalidomide_Figg1999_reference&quot;,&quot;label&quot;:&quot;Figg_1999_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_thalidomide/Thalidomide_Figg1999_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Thalidomide_Kamikawa2006_reference&quot;,&quot;label&quot;:&quot;Kamikawa_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_thalidomide/Thalidomide_Kamikawa2006_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # mechanical allodynia — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
@@ -16,11 +16,11 @@
 
 ## Record summary
 
-**As extracted:** Thalidomide (the dose) drives mechanical allodynia (in % MPE): direct Emax (saturable) effect.
+**As extracted:** Thalidomide (the dose) drives mechanical allodynia (in MPE): direct Emax (saturable) effect.
 
 **Model:** No model was generated from this record.
 
-> The paper does not provide full text excerpts to clarify the specific mechanism of action, but the extracted model assumes an Emax inhibition of mechanical allodynia driven by thalidomide dose. The model estimates an ED50 of 44.9 mg/kg and a maximum effect (Emax) of 74% MPE.
+> The paper describes a direct dose-response inhibition of mechanical allodynia by thalidomide (ED50 44.9 mg/kg, Emax 74 % MPE) with an Emax model form, but does not specify the underlying mechanism or the relationship to plasma concentrations.
 >
 > <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
@@ -37,8 +37,8 @@ Deng MY et al., Thalidomide alleviates neuropathic pain…, Biochemical pharmaco
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | ED50 | `Q321` · not captured | 44.9 | mg/kg | not captured | llm (not captured) | Deng_2021:pdv3 |
-| PD (effect) | Emax | `Q323` · not captured | 74% | MPE | not captured | direction (not captured) | Deng_2021:pdv3 |
+| — | ED50 | `Q100` · not captured | 44.9 | mg/kg | not captured | nil (not captured) | Deng_2021:pdv3 |
+| PD (effect) | Emax | `Q323` · not captured | 74 | % MPE | not captured | llm (not captured) | Deng_2021:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>

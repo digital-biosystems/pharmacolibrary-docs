@@ -17,7 +17,7 @@ Relatlimab is a monoclonal antibody used as an anticancer agent in combination w
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 19:38 | 10:15 | 0/3/0 | 0/0/0 | 0/0/0 | 297,554/8,834 | ollama / qwen3.8:27b-mtp-q8_0 | 7 | 0/7 | 7/0 | 0 |
+| 2026-10-15 03:06 | 2:35 | 0/3/0 | 0/0/0 | 0/0/0 | 289,274/6,337 | einfracz / qwen3.8-27b | 7 | 0/7 | 7/0 | 0 |
 
 ## popPK records
 
@@ -26,6 +26,15 @@ Relatlimab is a monoclonal antibody used as an anticancer agent in combination w
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.952). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Zhao_2024_1l_melanoma_geo_mean_cv](drugs/drug_relatlimab/Relatlimab_Zhao2024_1l_melanoma_geo_mean_cv.md) | — | 2-compartment (no model) | 8 | Zhao Y et al., Model-Informed Clinical Pharmacology Pr…, Clinical cancer research :… (2024) | [10.1158/1078-0432.CCR-23-2396](https://doi.org/10.1158/1078-0432.CCR-23-2396) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.952). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Zhao_2024_melanoma_1l_prior_io_geo_mean_cv](drugs/drug_relatlimab/Relatlimab_Zhao2024_melanoma_1l_prior_io_geo_mean_cv.md) | — | 2-compartment (no model) | 8 | Zhao Y et al., Model-Informed Clinical Pharmacology Pr…, Clinical cancer research :… (2024) | [10.1158/1078-0432.CCR-23-2396](https://doi.org/10.1158/1078-0432.CCR-23-2396) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.952). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Zhao_2024_prior_io_melanoma_geo_mean_cv](drugs/drug_relatlimab/Relatlimab_Zhao2024_prior_io_melanoma_geo_mean_cv.md) | — | 2-compartment (no model) | 8 | Zhao Y et al., Model-Informed Clinical Pharmacology Pr…, Clinical cancer research :… (2024) | [10.1158/1078-0432.CCR-23-2396](https://doi.org/10.1158/1078-0432.CCR-23-2396) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=relatlimab).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: LAG3 (antibody).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,22 +58,22 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | `Gopalakrishnan_2024.pdf` | Gopalakrishnan M et al., Project Optimus Elicits the "Holistic"…, Clinical cancer research :… (2024) | pd | 5 | [10.1158/1078-0432.CCR-24-0553](https://doi.org/10.1158/1078-0432.CCR-24-0553) | [38743418](https://www.ncbi.nlm.nih.gov/pubmed/38743418) | metadata signals extractable PD data (PK/PD) |
 | `Thomas_2023.pdf` | Thomas B et al., Nivolumab/Relatlimab-rmbw: A Novel Dual…, American journal of therape… (2023) | pd | 5 | [10.1097/MJT.0000000000001680](https://doi.org/10.1097/MJT.0000000000001680) | [37921680](https://www.ncbi.nlm.nih.gov/pubmed/37921680) | metadata signals extractable PD data (exposure-response) |
 
-<sub>queue written 2026-10-07T19:32:06.749672+00:00</sub>
+<sub>queue written 2026-10-15T03:04:07.337423+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Bhat_2025 | irrelevant | 0 | 0 | The paper is a scoping review of Model-Informed Drug Development (MIDD) and does not report specific quantitative pharmacokinetic parameters for relatlimab. |
-| popPK | Christenson_2025 | irrelevant | 0 | 0 | The paper is a clinical efficacy study (Phase II) reporting response rates and tumor microenvironment changes, with no pharmacokinetic parameters or disposition data for relatlimab. |
-| popPK | Christenson_2026 | irrelevant | 0 | 0 | The paper is a clinical trial of copanlisib and nivolumab for colorectal cancer and does not contain pharmacokinetic data for relatlimab. |
-| popPK | Chun_2025 | irrelevant | 0 | 0 | The paper describes the design and efficacy of a de novo IL-21 mimic (21h10) and does not report pharmacokinetic parameters for relatlimab. |
-| popPK | Cillo_2024 | irrelevant | 0 | 0 | The paper describes immunologic mechanisms and T-cell signatures in a clinical trial, reporting no pharmacokinetic parameters for relatlimab. |
+| popPK | Bhat_2025 | irrelevant | 1 | 0 | This is a scoping review of model-informed drug development (MIDD) methodologies; while it briefly mentions nivolumab PK in passing, it does not report quantitative PK parameters for relatlimab. |
+| popPK | Christenson_2025 | irrelevant | 0 | 0 | This is a clinical efficacy study for colorectal cancer and does not report any pharmacokinetic parameters for relatlimab. |
+| popPK | Christenson_2026 | irrelevant | 0 | 0 | The paper studies a combination of copanlisib and nivolumab for colorectal cancer and does not mention relatlimab or report any pharmacokinetic parameters. |
+| popPK | Chun_2025 | irrelevant | 0 | 0 | The paper studies a de novo IL-21 mimic (21h10) for cancer immunotherapy and does not report pharmacokinetic parameters for the drug relatlimab. |
+| popPK | Cillo_2024 | irrelevant | 0 | 0 | The study investigates immunologic mechanisms and gene expression profiles, not pharmacokinetic disposition parameters. |
 | popPK | Gopalakrishnan_2024 | irrelevant | 0 | 0 | no_text gate: only 82 chars of text extracted (&lt; 400) |
-| PGx | La-Beck_2024 | not_relevant | 0 | 0 | The paper is a review of immune-related adverse events and management guidelines; it does not report pharmacogenomic effects on PK/PD parameters. |
-| popPK | Nada_2026 | irrelevant | 0 | 0 | The study focuses on a new small molecule LAG-3 inhibitor (LAGi-DEL) and uses relatlimab only as a comparator for efficacy, without reporting any pharmacokinetic parameters for relatlimab. |
-| popPK | Quagliariello_2026 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of cardiotoxicity and immune activation, not a pharmacokinetic study, and reports no disposition parameters for relatlimab. |
-| popPK | Xie_2025 | irrelevant | 0 | 0 | The paper is a multi-omics analysis of renal cell carcinoma focusing on ribosome biogenesis and prognostic modeling, with no mention of relatlimab or pharmacokinetic parameters. |
+| PGx | La-Beck_2024 | not_relevant | 0 | 0 | The paper is a review of immune-related adverse events and management guidelines, mentioning relatlimab only as an approved agent, with no data on pharmacogenomic effects on PK or PD. |
+| popPK | Nada_2026 | irrelevant | 0 | 0 | The study focuses on a new small-molecule inhibitor (LAGi-DEL) and uses relatlimab only as a comparator for efficacy, with no PK parameters reported for relatlimab. |
+| popPK | Quagliariello_2026 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study of cardiotoxicity using a cell coculture model and does not report pharmacokinetic parameters for relatlimab. |
+| popPK | Xie_2025 | irrelevant | 0 | 0 | The paper is a multi-omics bioinformatics study on renal cell carcinoma ribosome biogenesis and does not contain any pharmacokinetic data for relatlimab. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 19:32 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-15 03:04 UTC</sub>

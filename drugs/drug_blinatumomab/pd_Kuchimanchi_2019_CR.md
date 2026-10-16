@@ -1,7 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;blinatumomab&quot;,&quot;href&quot;:&quot;drugs/drug_blinatumomab/&quot;},{&quot;label&quot;:&quot;Kuchimanchi_2019 \u00b7 PD Complete remission&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;blinatumomab&quot;,&quot;href&quot;:&quot;drugs/drug_blinatumomab/&quot;},{&quot;label&quot;:&quot;Kuchimanchi_2019 \u00b7 PD complete remission&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Blinatumomab_Hijazi2018_reference&quot;,&quot;label&quot;:&quot;Hijazi_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_blinatumomab/Blinatumomab_Hijazi2018_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Blinatumomab_Kuchimanchi2019_reference&quot;,&quot;label&quot;:&quot;Kuchimanchi_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_blinatumomab/Blinatumomab_Kuchimanchi2019_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hijazi_2018_SPD&quot;,&quot;label&quot;:&quot;Hijazi_2018 \u00b7 SPD&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_blinatumomab/pd_Hijazi_2018_SPD.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hijazi_2018_kdep&quot;,&quot;label&quot;:&quot;Hijazi_2018 \u00b7 kdep&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_blinatumomab/pd_Hijazi_2018_kdep.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Complete remission — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span>
+# complete remission — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -13,18 +14,18 @@
 
 ## Record summary
 
-**As extracted:** Blinatumomab (concentrations from this paper's PK model) drives Complete remission: categorical (graded) response model.
+**As extracted:** Blinatumomab (concentrations from this paper's PK model) drives complete remission: categorical (graded) response model.
 
 **Model:** No model was generated from this record.
 
-> Blinatumomab steady-state concentration (Css) following 28 μg/day dosing was associated with an increased probability of complete remission (CR), with odds ratios of 1.073 (95% CI 1.033–1.114) in the full multivariate analysis and 1.664 (95% CI 1.194–2.319) after excluding patients receiving standard-of-care chemotherapy. The paper does not specify the underlying pharmacodynamic mechanism or the Css increment corresponding to these odds ratios.
+> The paper reports a logistic regression where blinatumomab steady-state concentration (Css) is associated with a higher probability of complete remission, with an odds ratio of 1.073 per unit increase in Css. No specific pharmacodynamic parameters (such as Emax, IC50, or ke0) or mechanistic details (e.g., effect compartment or inhibitory/inductive mechanism) are provided in the excerpts.
 >
-> <sub>Source-based summary by gpt-6-luna from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Kuchimanchi_2019`
 - **model family:** `categorical`
 - **driver:** `pk_record`
-- **tier:** descriptive
+- **tier:** population
 - **effect:** stimulation/unknown
 
 ## Citation
@@ -35,7 +36,6 @@ Kuchimanchi M et al., Exposure-response analysis of blinatumo…, British journa
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
 | model term | Blinatumomab exposure (Css) | `Q900` · not captured | 1.073 | not captured | not captured | llm (not captured) | Kuchimanchi_2019:pdv3 |
-| model term | Blinatumomab exposure (Css) | `Q900` · not captured | 1.664 | not captured | not captured | llm (not captured) | Kuchimanchi_2019:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>

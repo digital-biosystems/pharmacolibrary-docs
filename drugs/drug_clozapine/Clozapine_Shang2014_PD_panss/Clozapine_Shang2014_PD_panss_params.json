@@ -1,0 +1,57 @@
+{
+ "model_id": "Clozapine_Shang2014_PD_panss",
+ "note": "Values for the shared PD_SigmoidEmaxSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 0.0,
+  "EC50": 296.0,
+  "Emax": -0.554,
+  "exposure_per_s": 1.0,
+  "gamma": 1.0
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 0.0,
+  "296.0": -0.277
+ },
+ "stop_time": 3000.0,
+ "subtitle": "Positive and Negative Syndrome Scale (PANSS) score (PANSS) against cumulated clozapine area under the curve concentration",
+ "template": "PD_SigmoidEmaxSweep",
+ "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Exposure–response simulated by the PD model",
+ "units": {
+  "EC50": {
+   "display_only": true,
+   "display_unit": "mg·L(-1)·h(-1)·d(-1)",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "Emax": {
+   "display_only": false,
+   "display_unit": "%",
+   "factor": 0.01,
+   "si_unit": "1"
+  },
+  "exposure": {
+   "display_only": true,
+   "display_unit": "mg·L(-1)·h(-1)·d(-1)",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "response_unit": ""
+ },
+ "x_axis": {
+  "display_unit": "mg·L(-1)·h(-1)·d(-1)",
+  "factor": 1.0,
+  "label": "cumulated clozapine area under the curve concentration",
+  "per_s": 1.0,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "%",
+  "factor": 0.01,
+  "label": "Positive and Negative Syndrome Scale (PANSS) score (PANSS)"
+ }
+}

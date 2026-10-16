@@ -16,13 +16,13 @@
 
 ### Reviewer guidance
 
-**The steady-state clearance parameter for obinutuzumab was rejected due to a dimension mismatch in its reported unit.**
+**C5 dimension mismatch on a structural parameter.**
 
-The record lists a clearance value of 0.584 L/day, but the unit could not be converted to standard SI units. This conversion failure caused a dimension mismatch error on the structural parameter. Additionally, the dose parameter was left null in this record, though a second reader identified a value of 601. Extracted — obinutuzumab: AUCt 1.75e+03 day·μg ml−1, Cmax 0.751 μg ml−1, Cmax/dose 416 μg ml−1 mg−1, Ctrough 0.52 μg ml−1, CL 0.584 L/day.
+A reported unit could not be converted (AUC, Cmax, Cmax/dose and Ctrough), so that value has no SI equivalent. Extracted — obinutuzumab: AUC 1.75e+03 day·μg ml−1, Cmax 0.751 μg ml−1, Cmax/dose 416 μg ml−1 mg−1, Ctrough 0.52 μg ml−1, AUCt 11.4 day·μg ml−1, CL 0.584 L/day.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has obinutuzumab, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Zhai J et al., Pharmacokinetics of obinutuzumab in Chi…, British journal of clinical… (2017)
@@ -31,7 +31,7 @@ Zhai J et al., Pharmacokinetics of obinutuzumab in Chi…, British journal of cl
 <div class="pk-model-meta" hidden drug="obinutuzumab" model-id="Obinutuzumab_Zhai2017_fl_2" status="rejected" stale="false" population="Chinese patients with B-cell lymphomas" measured-compound="obinutuzumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 5 extracted.
+**Parameters:** 6 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -40,10 +40,11 @@ Zhai J et al., Pharmacokinetics of obinutuzumab in Chi…, British journal of cl
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| AUC 7d, day·μg ml−1 | `Q19` · AUCt | 1750 | day·μg ml−1 | not captured | [[d] · [µg]] / [ml] | not captured | llm_corrected (0.6) | bcp13232-tbl-0002:row2:col2 | — | not captured |
-| C max (μg ml−1) | `Q32` · Cmax | 0.751 | μg ml−1 | not captured | [µg] / [ml] | not captured | space_fold (0.95) | Zhai_2017_table_3:row3:col3, Zhai_2017_table_3:row3:col5, Zhai_2017_table_3:row3:col7, Zhai_2017_table_3:row3:col8, Zhai_2017_table_3:row3:col9 | — | not captured |
-| C max/dose (μg ml−1 mg−1) | `Q174` · Cmax/dose | 416 | μg ml−1 mg−1 | not captured | [µg] / [[mg] · [ml]] | not captured | space_fold (0.95) | Zhai_2017_table_3:row4:col3, Zhai_2017_table_3:row4:col5, Zhai_2017_table_3:row4:col7, Zhai_2017_table_3:row4:col8, Zhai_2017_table_3:row4:col9 | — | not captured |
-| C trough (μg ml−1) | `Q37` · Ctrough | 0.520 | μg ml−1 | not captured | [µg] / [ml] | not captured | space_fold (0.95) | Zhai_2017_table_3:row5:col3, Zhai_2017_table_3:row5:col5, Zhai_2017_table_3:row5:col7, Zhai_2017_table_3:row5:col8, Zhai_2017_table_3:row5:col9 | — | not captured |
+| AUC 7d, day·μg ml−1 | `Q88` · AUC | 1750 | day·μg ml−1 | not captured | [[d] · [µg]] / [ml] | not captured | llm_confirmed (0.6) | bcp13232-tbl-0002:row2:col2 | — | not captured |
+| C max (μg ml−1) | `Q32` · Cmax | 0.751 | μg ml−1 | not captured | [µg] / [ml] | not captured | space_fold (0.95) | Zhai_2017_table_3:row2:col4, Zhai_2017_table_3:row4:col4, Zhai_2017_table_3:row6:col4, Zhai_2017_table_3:row7:col4, Zhai_2017_table_3:row8:col4 | — | not captured |
+| C max/dose (μg ml−1 mg−1) | `Q174` · Cmax/dose | 416 | μg ml−1 mg−1 | not captured | [µg] / [[mg] · [ml]] | not captured | space_fold (0.95) | Zhai_2017_table_3:row2:col5, Zhai_2017_table_3:row4:col5, Zhai_2017_table_3:row6:col5, Zhai_2017_table_3:row7:col5, Zhai_2017_table_3:row8:col5 | — | not captured |
+| C trough (μg ml−1) | `Q37` · Ctrough | 0.520 | μg ml−1 | not captured | [µg] / [ml] | not captured | space_fold (0.95) | Zhai_2017_table_3:row2:col6, Zhai_2017_table_3:row4:col6, Zhai_2017_table_3:row6:col6, Zhai_2017_table_3:row7:col6, Zhai_2017_table_3:row8:col6 | — | not captured |
+| AUC 21d (day·μg ml−1) | `Q19` · AUCt | 11.4 | day·μg ml−1 | not captured | [[d] · [µg]] / [ml] | not captured | llm_corrected (0.6) | Zhai_2017_table_3:row2:col8, Zhai_2017_table_3:row4:col8, Zhai_2017_table_3:row6:col8, Zhai_2017_table_3:row7:col8, Zhai_2017_table_3:row8:col8 | — | not captured |
 | CLss | `Q22` · CL | 0.584 | L/day | 6.759259259259259e-09 | L/h | not captured | review_gapfill (0.7) | Bender_2024:review | — | not captured |
 
 <details class="legend">
@@ -54,35 +55,27 @@ Zhai J et al., Pharmacokinetics of obinutuzumab in Chi…, British journal of cl
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'Time point' — extend the ontology if this is a real PK parameter (source ['bcp13232-tbl-0002:row0:col2'])
 - dropped unlinked row (NIL): 'Cycle 1, Day 1 b' — extend the ontology if this is a real PK parameter (source ['bcp13232-tbl-0002:row1:col2'])
-- dropped unlinked row (NIL): 'Disease' — extend the ontology if this is a real PK parameter (source ['Zhai_2017_table_3:row0:col3', 'Zhai_2017_table_3:row0:col5', 'Zhai_2017_table_3:row0:col7', 'Zhai_2017_table_3:row0:col8', 'Zhai_2017_table_3:row0:col9'])
-- dropped unlinked row (NIL): 'No. of patients' — extend the ontology if this is a real PK parameter (source ['Zhai_2017_table_3:row1:col3', 'Zhai_2017_table_3:row1:col5', 'Zhai_2017_table_3:row1:col7', 'Zhai_2017_table_3:row1:col8', 'Zhai_2017_table_3:row1:col9'])
-- dropped unlinked row (NIL): 'Obinutuzumab dose (mg)' — extend the ontology if this is a real PK parameter (source ['Zhai_2017_table_3:row2:col3', 'Zhai_2017_table_3:row2:col5', 'Zhai_2017_table_3:row2:col7', 'Zhai_2017_table_3:row2:col8', 'Zhai_2017_table_3:row2:col9'])
+- dropped unlinked row (NIL): 'Disease' — extend the ontology if this is a real PK parameter (source ['Zhai_2017_table_3:row2:col1', 'Zhai_2017_table_3:row4:col1', 'Zhai_2017_table_3:row6:col1', 'Zhai_2017_table_3:row7:col1', 'Zhai_2017_table_3:row8:col1'])
+- dropped unlinked row (NIL): 'No. of patients' — extend the ontology if this is a real PK parameter (source ['Zhai_2017_table_3:row2:col2', 'Zhai_2017_table_3:row4:col2', 'Zhai_2017_table_3:row6:col2', 'Zhai_2017_table_3:row7:col2', 'Zhai_2017_table_3:row8:col2'])
+- dropped unlinked row (NIL): 'Obinutuzumab dose (mg)' — extend the ontology if this is a real PK parameter (source ['Zhai_2017_table_3:row2:col3', 'Zhai_2017_table_3:row4:col3', 'Zhai_2017_table_3:row6:col3', 'Zhai_2017_table_3:row7:col3', 'Zhai_2017_table_3:row8:col3'])
 - unit_dimension_mismatch: 'C max/dose (μg ml−1 mg−1)' → Q174 (unit '1 / [length] ** 3' vs ontology '[mass] / [length] ** 3') — route to review
 - unit_dimension_mismatch: 'C trough/dose (μg ml−1 mg−1)' → Q37 (unit '1 / [length] ** 3' vs ontology '[mass] / [length] ** 3') — route to review
 - dropped duplicate Q37 ('C trough/dose (μg ml−1 mg−1)', value '9159') — already have one for this compound
-- dropped duplicate Q19 ('AUC 21d (day·μg ml−1)', value '11.4') — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=obinutuzumab
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
-- population split: 'fl (n = 13)' subgroup of Zhai_2017 (paper reports 10 populations: clla , b (n = 11), dlbcl, dlbcla (n = 21), fl, fl (n = 13), gauguin a phase ii, gershwin phase ib, inhl, jo21900 b phase i, αnhl)
+- population split: 'fl (n = 13)' subgroup of Zhai_2017 (paper reports 8 populations: dlbcl, dlbcla (n = 21), fl, fl (n = 13), gauguin a phase ii, gershwin phase ib, inhl, jo21900 b phase i)
 - molar mass: none found for 'obinutuzumab' — its concentrations stay mass-only
 - gap-filled Q22 (CL) from Bender_2024's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- unparsed cell bcp13232-tbl-0002:row1:col1 = 'C max, μg ml−1'
-- transposed table Zhai_2017_table_3: parameters were across the columns, populations/subgroups down the first column — transposed for parsing
-- unparsed cell Zhai_2017_table_3:row6:col5 = '10 223'
-- unparsed cell Zhai_2017_table_3:row6:col7 = '11 900'
-- unparsed cell Zhai_2017_table_3:row6:col8 = '10 800'
-- unparsed cell Zhai_2017_table_3:row6:col9 = '25 100'
-- unparsed cell Zhai_2017_table_3:row6:col11 = '13 000'
-- unparsed cell Zhai_2017_table_3:row6:col12 = '11 285'
-- unparsed cell Zhai_2017_table_3:row7:col1 = '11 001'
-- unparsed cell Zhai_2017_table_3:row7:col10 = '12 289'
+- table bcp13232-tbl-0002: ragged_grid
+- table Zhai_2017_table_3: ragged_grid
+- table Zhai_2017_table_3: unparsed_numeric_cell
+- transposed table Zhai_2017_table_3: logical view retains original source coordinates
 - companion parameter table 3 transcribed (88 record(s))
 - LLM selected parameter table(s) 2, 3
 
@@ -117,13 +110,14 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q174 | fail | 1 / [length] ** 3 | μg ml−1 mg−1 | not captured | not captured | ['Zhai_2017_table_3:row4:col3', 'Zhai_2017_table_3:row4:col5', 'Zhai_2017_table_3:row4:col7', 'Zhai_2017_table_3:row4:col8', 'Zhai_2017_table_3:row4:col9'] |
-| C5_dimension_Q19 | pass | [time] * [mass] / [length] ** 3 | not captured | not captured | not captured | ['bcp13232-tbl-0002:row2:col2'] |
+| C5_dimension_Q174 | fail | 1 / [length] ** 3 | μg ml−1 mg−1 | not captured | not captured | ['Zhai_2017_table_3:row2:col5', 'Zhai_2017_table_3:row4:col5', 'Zhai_2017_table_3:row6:col5', 'Zhai_2017_table_3:row7:col5', 'Zhai_2017_table_3:row8:col5'] |
+| C5_dimension_Q19 | pass | [time] * [mass] / [length] ** 3 | not captured | not captured | not captured | ['Zhai_2017_table_3:row2:col8', 'Zhai_2017_table_3:row4:col8', 'Zhai_2017_table_3:row6:col8', 'Zhai_2017_table_3:row7:col8', 'Zhai_2017_table_3:row8:col8'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Bender_2024:review'] |
-| C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Zhai_2017_table_3:row3:col3', 'Zhai_2017_table_3:row3:col5', 'Zhai_2017_table_3:row3:col7', 'Zhai_2017_table_3:row3:col8', 'Zhai_2017_table_3:row3:col9'] |
-| C5_dimension_Q37 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Zhai_2017_table_3:row5:col3', 'Zhai_2017_table_3:row5:col5', 'Zhai_2017_table_3:row5:col7', 'Zhai_2017_table_3:row5:col8', 'Zhai_2017_table_3:row5:col9'] |
+| C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Zhai_2017_table_3:row2:col4', 'Zhai_2017_table_3:row4:col4', 'Zhai_2017_table_3:row6:col4', 'Zhai_2017_table_3:row7:col4', 'Zhai_2017_table_3:row8:col4'] |
+| C5_dimension_Q37 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Zhai_2017_table_3:row2:col6', 'Zhai_2017_table_3:row4:col6', 'Zhai_2017_table_3:row6:col6', 'Zhai_2017_table_3:row7:col6', 'Zhai_2017_table_3:row8:col6'] |
+| C5_dimension_Q88 | pass | [time] * [mass] / [length] ** 3 | not captured | not captured | not captured | ['bcp13232-tbl-0002:row2:col2'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.584 | not captured | not captured | ['Bender_2024:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.0243 L/h | not captured | not captured | ['Bender_2024:review'] |
@@ -135,7 +129,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_obinutuzumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Zhai_2017` / `Zhai_2017::fl_2`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_obinutuzumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Zhai_2017` / `Zhai_2017::fl_2`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -151,4 +145,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 18:09 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 03:55 UTC</sub>

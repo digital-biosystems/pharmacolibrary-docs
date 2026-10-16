@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;quinine&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/&quot;},{&quot;label&quot;:&quot;Kloprogge_2014 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Quinine_Hendriksen2013_reference&quot;,&quot;label&quot;:&quot;Hendriksen_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Hendriksen2013_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quinine_Kloprogge2014_reference&quot;,&quot;label&quot;:&quot;Kloprogge_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Kloprogge2014_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Quinine_Phillips1986_reference&quot;,&quot;label&quot;:&quot;Phillips_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Phillips1986_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Quinine_Hendriksen2013_reference&quot;,&quot;label&quot;:&quot;Hendriksen_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Hendriksen2013_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quinine_Phillips1986_mean_s_d&quot;,&quot;label&quot;:&quot;Phillips_1986_mean_s_d&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Phillips1986_mean_s_d.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quinine_Kloprogge2014_reference&quot;,&quot;label&quot;:&quot;Kloprogge_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Kloprogge2014_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Quinine_Michels2019_estimate&quot;,&quot;label&quot;:&quot;Michels_2019_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Michels2019_estimate.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Maciel_2024_P_berghei_infected_erythrocytes&quot;,&quot;label&quot;:&quot;Maciel_2024 \u00b7 P. berghei-infected erythrocytes&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/pd_Maciel_2024_P_berghei_infected_erythrocytes.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Pukrittayakamee_2003_PMR&quot;,&quot;label&quot;:&quot;Pukrittayakamee_2003 \u00b7 PMR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/pd_Pukrittayakamee_2003_PMR.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # quinine — `Quinine_Kloprogge2014_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -17,11 +17,13 @@
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**The model does not reproduce the paper's peak concentration (Cmax) (paper 0.00406, model 0.00191); the model does not reproduce the paper's time of the peak (tmax) (paper 3.01, model 5.29) (+2 more).**
+
+Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. A reported unit could not be converted (AUCt and Cmax), so that value has no SI equivalent. Extracted — quinine: AUCt 26.2 mg·h/L, Cmax 3.95 mg/L, tmax 3.01 h, t1/2z 14.6 h, CL/F 0.196 L /h/kg, Vss 4.07 L/kg.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 > **Dose compound ≠ measured compound:** dosed `quinine sulphate`, measured `quinine`.
 
@@ -29,66 +31,59 @@ Independently confirmed by `gpt-oss-120b`.
 Kloprogge F et al., Population pharmacokinetics of quinine…, The Journal of antimicrobia… (2014)
   ·  DOI: [10.1093/jac/dku228](https://doi.org/10.1093/jac/dku228)
 
-<div class="pk-model-meta" hidden drug="quinine" model-id="Quinine_Kloprogge2014_reference" status="curated_candidate" stale="false" population="pregnant women with uncomplicated falciparum malaria" measured-compound="quinine" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="quinine" model-id="Quinine_Kloprogge2014_reference" status="needs_review" stale="false" population="pregnant women with uncomplicated Plasmodium falciparum malaria" measured-compound="quinine" parameterization="apparent" topology="1C"></div>
 
-**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
-**Parameters:** 5 extracted.
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 6 extracted.
 
-**Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| ka | `Q49` · kabs | 0.817 | (1/h) | 0.00022694444444444444 | 1/h | not captured | exact (1.0) | Kloprogge_2014:results_prose | — | not captured |
-| CL/F | `Q27` · CL/F | 10.4 | (L/h) | 2.8888888888888894e-06 | L/h | not captured | exact (1.0) | Kloprogge_2014:results_prose | — | not captured |
-| Vc/F | `Q290` · V1/F | 174 | (L) | 0.17400000000000002 | L | not captured | exact (1.0) | Kloprogge_2014:results_prose | — | not captured |
-| Q/F | `Q69` · Q/F | 10.7 | (L/h) | 2.972222222222222e-06 | L/h | not captured | exact (1.0) | Kloprogge_2014:results_prose | — | not captured |
-| Vp/F | `Q82` · V2/F | 54.3 | (L) | 0.0543 | L | not captured | exact (1.0) | Kloprogge_2014:results_prose | — | not captured |
+| AUC0-8 (mg·h/L) | `Q19` · AUCt | 26.2 | mg·h/L | not captured | [[h] · [mg]] / [l] | not captured | llm (0.6) | DKU228TB2:row11:col2 | — | not captured |
+| Cmax (mg/L) | `Q32` · Cmax | 3.95 | mg/L | not captured | [mg] / [l] | not captured | exact (1.0) | DKU228TB2:row13:col2 | — | 4.16 (None% RSE) |
+| Tmax (h) | `Q56` · tmax | 3.01 | h | 10836.0 | [h] | not captured | exact (1.0) | DKU228TB2:row14:col2 | — | 2.75 (None% RSE) |
+| t½ (h) | `Q57` · t1/2z | 14.6 | h | 52560.0 | [h] | not captured | llm (0.6) | DKU228TB2:row15:col2 | — | not captured |
+| CL/F (L /h/kg) | `Q27` · CL/F | 0.196 | L /h/kg | 3.8111111111111117e-06 | [l] / [[h] · [kg]] | not captured | exact (1.0) | DKU228TB2:row16:col2 | — | 7.69 (65.4% RSE) |
+| VSS/F (L/kg) | `Q65` · Vss | 4.07 | L/kg | 0.28490000000000004 | [l] / [kg] | not captured | llm (0.6) | DKU228TB2:row17:col2 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
-### Unresolved rows _(no Q-code or no value — not parameters)_
-| label (paper) | Q-code | value | link |
-|---|---|---|---|
-| F (%) | Q40 | not captured | exact |
-
 ## Departures & gaps
 
 **Deviations:**
-- `defaulted_parameters`: ['Tlag']
+- `defaulted_parameters`: ['ka', 'Tlag']
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+- `invented_absorption`: ka defaulted — not reported in source
+- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
+- `vss_as_v`: Vss (Q65) used as the distribution volume — no Vc/V reported
 
 **Interpretation flags:**
 - table section iiv: 'ka (1/h)' routed out of structural estimates ('IIV/IOV (% CV)a (% RSE)b')
 - table section iiv: 'CL/F (L/h)' routed out of structural estimates ('IIV/IOV (% CV)a (% RSE)b')
 - table section iiv: 'Vp/F (L)' routed out of structural estimates ('IIV/IOV (% CV)a (% RSE)b')
-- dropped value-less row: 'ka (1/h)' (captured trailing unit '1/h' for child rows)
-- dropped value-less row: 'CL/F (L/h)' (captured trailing unit 'L/h' for child rows)
-- dropped value-less row: 'Vc/F (L)' (captured trailing unit 'L' for child rows)
-- dropped value-less row: 'Q/F (L/h)' (captured trailing unit 'L/h' for child rows)
-- dropped value-less row: 'Vp/F (L)' (captured trailing unit 'L' for child rows)
-- dropped value-less row: 'Parasitaemia (log10) on F (%)' (captured trailing unit '%' for child rows)
-- dropped value-less row: 'Temperature on CL/F'
-- dropped value-less row: 'The additive error (σ) variance will essentially be exponential on normal scale data.'
-- dropped value-less row: 'bThe relative standard error (RSE) is calculated as 100 × (standard deviation/mean value) from 1000 runs of a non-parametric bootstrap. The 95% CI is displayed as the 2.5th to 97.5th percentiles of the bootstrap estimates.'
-- dropped value-less row: 'cPost hoc estimates were calculated as the medians and ranges of the empirical Bayes estimates.'
-- salvaged Q49 ('ka'=0.817) from results prose — parameter table was unreadable
-- salvaged Q27 ('CL/F'=10.4) from results prose — parameter table was unreadable
-- salvaged Q290 ('Vc/F'=174) from results prose — parameter table was unreadable
-- salvaged Q69 ('Q/F'=10.7) from results prose — parameter table was unreadable
-- salvaged Q82 ('Vp/F'=54.3) from results prose — parameter table was unreadable
+- table section iiv: 'AUC0-8 (mg·h/L)' routed out of structural estimates ('IIV/IOV (% CV)a (% RSE)b')
+- table section iiv: 'AUC0-12 (mg·h/L)' routed out of structural estimates ('IIV/IOV (% CV)a (% RSE)b')
+- table section iiv: 'Cmax (mg/L)' routed out of structural estimates ('IIV/IOV (% CV)a (% RSE)b')
+- table section iiv: 'Tmax (h)' routed out of structural estimates ('IIV/IOV (% CV)a (% RSE)b')
+- table section iiv: 't½ (h)' routed out of structural estimates ('IIV/IOV (% CV)a (% RSE)b')
+- table section iiv: 'CL/F (L /h/kg)' routed out of structural estimates ('IIV/IOV (% CV)a (% RSE)b')
+- table section iiv: 'VSS/F (L/kg)' routed out of structural estimates ('IIV/IOV (% CV)a (% RSE)b')
+- dropped duplicate Q19 ('AUC0-12 (mg·h/L)', value '36.7') — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=quinine
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at route_to_review — not promoted
-- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- unparsed cell DKU228TB2:row4:col3 = '12.3 (77.0)/21.4 (48.8)'
-- unparsed cell DKU228TB2:row4:col4 = '0.170–48.8/19.3–93.3'
-- unparsed cell DKU228TB2:row8:col2 = '−0.427 to −0.180'
+- table DKU228TB2: unbound_uncertainty
+- table DKU228TB2: unparsed_numeric_cell
 - LLM selected parameter table(s) 2
 
 ## Validation
@@ -112,14 +107,20 @@ _All readers agree on the compared fields of this record._
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C1_half_life_beta | pass | 15.3 | 14.393 | 0.9407 | 0.25 | reported t½β |
+| C5_dimension_Q19 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['DKU228TB2:row11:col2'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['DKU228TB2:row16:col2'] |
+| C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['DKU228TB2:row13:col2'] |
+| C5_dimension_Q56 | pass | [time] | not captured | not captured | not captured | ['DKU228TB2:row14:col2'] |
+| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['DKU228TB2:row15:col2'] |
+| C5_dimension_Q65 | pass | [length] ** 3 | not captured | not captured | not captured | ['DKU228TB2:row17:col2'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 10.4 L/h | not captured | not captured | ['Kloprogge_2014:results_prose'] |
-| C9_phys_window_Q290 | pass | volume within physiological range | 174 L | not captured | not captured | ['Kloprogge_2014:results_prose'] |
-| C9_phys_window_Q82 | pass | volume within physiological range | 54.3 L | not captured | not captured | ['Kloprogge_2014:results_prose'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 13.7 L/h | not captured | not captured | ['DKU228TB2:row16:col2'] |
+| C9_phys_window_Q65 | pass | volume within physiological range | 285 L | not captured | not captured | ['DKU228TB2:row17:col2'] |
 
 **Reviewer per-scenario checks:**
 
@@ -129,18 +130,18 @@ _All readers agree on the compared fields of this record._
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_output_variable | not captured | pass | C_central (measured=quinine) | central.C | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | pass | 5 scholar param(s) emitted or defaulted | 5 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
-| T1_cmax | reference | skipped | 4.06 (2.40–7.92) | 0.0029816056744582644 | not captured | unresolved concentration unit (exp '(mg/L)', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 3.95 (2.54–6.62) | 0.0029816056744582644 | not captured | unresolved concentration unit (exp '(mg/L)', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 4.16 (2.40–7.92) | 0.0029816056744582644 | not captured | unresolved concentration unit (exp '(mg/L)', sim 'kg/m3') |
-| T1_t_half_terminal | reference | skipped | 15.3 (10.4–30.8) | 12.927409353545489 | not captured | unresolved time unit '(h)' |
-| T1_t_half_terminal | reference | skipped | 14.6 (11.0–29.3) | 12.927409353545489 | not captured | unresolved time unit '(h)' |
-| T1_t_half_terminal | reference | skipped | 16.1 (10.4–30.8) | 12.927409353545489 | not captured | unresolved time unit '(h)' |
-| T1_tmax | reference | skipped | 3.01 (1.85–8.00) | 3.627490642040109 | not captured | unresolved time unit '(h)' |
-| T1_tmax | reference | skipped | 3.01 (2.00–8.00) | 3.627490642040109 | not captured | unresolved time unit '(h)' |
-| T1_tmax | reference | skipped | 2.75 (1.85–4.34) | 3.627490642040109 | not captured | unresolved time unit '(h)' |
+| T3_param_coverage | not captured | pass | 1 scholar param(s) emitted or defaulted | 1 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable; invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
+| T1_cmax | reference | fail | 0.004059999999999999 | 0.0019145867178655223 | 0.4716 | mg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.00395 | 0.0019145867178655223 | 0.4847 | mg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0041600000000000005 | 0.0019145867178655223 | 0.4602 | mg/L→SI vs simulated kg/m3 |
+| T1_t_half_terminal | reference | pass | 15.3 | 14.391593509118067 | 0.9406 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 14.6 | 14.391593509118067 | 0.9857 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 16.1 | 14.391593509118067 | 0.8939 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 3.01 | 5.287570222701102 | 1.7567 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 3.01 | 5.287570222701102 | 1.7567 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 2.75 | 5.287570222701102 | 1.9228 | h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -149,10 +150,10 @@ _All readers agree on the compared fields of this record._
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_quinine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kloprogge_2014` / `Kloprogge_2014::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_quinine/models/modelica/Quinine_Kloprogge2014_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_quinine/models/modelica/Quinine_Kloprogge2014_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_quinine/models/modelica/Quinine_Kloprogge2014_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_quinine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kloprogge_2014` / `Kloprogge_2014::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_quinine/models/modelica/Quinine_Kloprogge2014_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_quinine/models/modelica/Quinine_Kloprogge2014_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_quinine/models/modelica/Quinine_Kloprogge2014_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -161,26 +162,26 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_quinine/Quinine_Kloprogge2014_reference/Quinine_Kloprogge2014_reference_modelica.zip" download>Quinine_Kloprogge2014_reference_modelica.zip</a> <span class="pk-size">(5.0 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_quinine/Quinine_Kloprogge2014_reference/Quinine_Kloprogge2014_reference_fmi.zip" download>Quinine_Kloprogge2014_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_quinine/Quinine_Kloprogge2014_reference/Quinine_Kloprogge2014_reference_matlab.zip" download>Quinine_Kloprogge2014_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_quinine/Quinine_Kloprogge2014_reference/Quinine_Kloprogge2014_reference_matlab_simbio.zip" download>Quinine_Kloprogge2014_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_quinine/Quinine_Kloprogge2014_reference/Quinine_Kloprogge2014_reference_modelica.zip" download>Quinine_Kloprogge2014_reference_modelica.zip</a> <span class="pk-size">(4.9 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_quinine/Quinine_Kloprogge2014_reference/Quinine_Kloprogge2014_reference_fmi.zip" download>Quinine_Kloprogge2014_reference_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_quinine/Quinine_Kloprogge2014_reference/Quinine_Kloprogge2014_reference_matlab.zip" download>Quinine_Kloprogge2014_reference_matlab.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_quinine/Quinine_Kloprogge2014_reference/Quinine_Kloprogge2014_reference_matlab_simbio.zip" download>Quinine_Kloprogge2014_reference_matlab_simbio.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_quinine/Quinine_Kloprogge2014_reference/Quinine_Kloprogge2014_reference_sbml.zip" download>Quinine_Kloprogge2014_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_quinine/Quinine_Kloprogge2014_reference/Quinine_Kloprogge2014_reference_cellml.zip" download>Quinine_Kloprogge2014_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_quinine/Quinine_Kloprogge2014_reference/Quinine_Kloprogge2014_reference_cellml.zip" download>Quinine_Kloprogge2014_reference_cellml.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_quinine/Quinine_Kloprogge2014_reference/Quinine_Kloprogge2014_reference.svg" alt="Quinine_Kloprogge2014_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_quinine/Quinine_Kloprogge2014_reference/Quinine_Kloprogge2014_reference.svg" alt="Quinine_Kloprogge2014_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 700 mg, single dose, first-order absorption (ka 0.817 /h, F 1). Dose in the paper: 700 mg.
+**Administration: oral** — 700 mg, single dose, first-order absorption (ka 0.5 /h, F 1). Dose in the paper: 700 mg.
 
-<dbs-fmusim paramsurl="drugs/drug_quinine/Quinine_Kloprogge2014_reference/Quinine_Kloprogge2014_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_quinine/Quinine_Kloprogge2014_reference/Quinine_Kloprogge2014_reference_sim_controls.json"></dbs-fmusim>
+<dbs-fmusim paramsurl="drugs/drug_quinine/Quinine_Kloprogge2014_reference/Quinine_Kloprogge2014_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_quinine/Quinine_Kloprogge2014_reference/Quinine_Kloprogge2014_reference_sim_controls.json"></dbs-fmusim>
 
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_2C_enteral` · parameters `Quinine_Kloprogge2014_reference_params.json` · controls `Quinine_Kloprogge2014_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C_enteral` · parameters `Quinine_Kloprogge2014_reference_params.json` · controls `Quinine_Kloprogge2014_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 08:36 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 03:32 UTC</sub>

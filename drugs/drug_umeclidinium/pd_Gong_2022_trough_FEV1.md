@@ -18,9 +18,9 @@
 
 **Model:** No model was generated from this record.
 
-> For the vilanterol/umeclidinium FDC, the time course of change from baseline in trough FEV1 (L) was described by an Emax model with an additive (time-decay) term; the drug stimulates trough FEV1 with Emax 0.185 L (95% CI 0.173–0.197) and a decay rate τ fixed at 0 week⁻¹, i.e. no loss of efficacy over time (efficacy at 24 weeks equal to that at 2 days). The paper does not link the effect to drug concentrations (dose-based, not PK-driven), and no IC50/EC50/ke0 values are given.
+> The model describes the change from baseline in trough FEV1 (L) as a direct Emax effect of the vilanterol/umeclidinium fixed-dose combination, with an estimated Emax of 0.185 L (95% CI: 0.173–0.197 L). The paper does not specify a mechanism for the drug's action on the response, and the time constant (τ) for loss of efficacy was fixed at 0 week⁻¹, indicating no loss of efficacy over time.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
 
 - **paper:** `Gong_2022`
 - **model family:** `emax`

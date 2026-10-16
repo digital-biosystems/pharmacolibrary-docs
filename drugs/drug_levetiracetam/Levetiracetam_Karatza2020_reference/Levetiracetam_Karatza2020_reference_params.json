@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 1500 mg oral (N03AX14)",
+ "model_id": "Levetiracetam_Karatza2020_reference",
+ "molar_masses": {
+  "central.C": 0.170212
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 9.055555555555556e-07,
+  "F": 1.0,
+  "MM": 0.170212,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0004957142857142857,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0015,
+  "ka": 0.0001711111111111111,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 13331.264366674099
+ },
+ "reference_peaks": {
+  "central.C": 0.030815032939339636
+ },
+ "stop_time": 151200.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

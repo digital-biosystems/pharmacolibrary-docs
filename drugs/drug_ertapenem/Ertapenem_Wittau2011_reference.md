@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01D&quot;,&quot;href&quot;:&quot;atc/J01D.md&quot;},{&quot;label&quot;:&quot;ertapenem&quot;,&quot;href&quot;:&quot;drugs/drug_ertapenem/&quot;},{&quot;label&quot;:&quot;Wittau_2011 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ertapenem_Chauzy2022_reference&quot;,&quot;label&quot;:&quot;Chauzy_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ertapenem/Ertapenem_Chauzy2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ertapenem_Muangkasem2025_reference&quot;,&quot;label&quot;:&quot;Muangkasem_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ertapenem/Ertapenem_Muangkasem2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ertapenem_Wittau2017_reference&quot;,&quot;label&quot;:&quot;Wittau_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ertapenem/Ertapenem_Wittau2017_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ertapenem_Cardone2012_reference&quot;,&quot;label&quot;:&quot;Cardone_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ertapenem/Ertapenem_Cardone2012_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ertapenem_Chen2024_reference&quot;,&quot;label&quot;:&quot;Chen_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ertapenem/Ertapenem_Chen2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ertapenem_Cardone2012_reference&quot;,&quot;label&quot;:&quot;Cardone_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ertapenem/Ertapenem_Cardone2012_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ertapenem_Chauzy2022_reference&quot;,&quot;label&quot;:&quot;Chauzy_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ertapenem/Ertapenem_Chauzy2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ertapenem_Chen2024_reference&quot;,&quot;label&quot;:&quot;Chen_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ertapenem/Ertapenem_Chen2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ertapenem_Muangkasem2025_reference&quot;,&quot;label&quot;:&quot;Muangkasem_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ertapenem/Ertapenem_Muangkasem2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ertapenem_Murray2025_reference&quot;,&quot;label&quot;:&quot;Murray_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ertapenem/Ertapenem_Murray2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ertapenem_Wittau2017_reference&quot;,&quot;label&quot;:&quot;Wittau_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ertapenem/Ertapenem_Wittau2017_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ertapenem — `Ertapenem_Wittau2011_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.571). Primary extraction retained.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.571). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -17,35 +17,35 @@
 
 ### Reviewer guidance
 
-**Ertapenem clearance of 12.5 l/h is implausible, and the AUC ratio unit l/h prevented standardization to SI units.**
+**This paper's disposition core is incomplete.**
 
-The total clearance value of 12.5 l/h falls outside the physiological window, suggesting a magnitude error. The AUC ratio parameter is also recorded with the unit l/h, which is dimensionally incorrect for a ratio. Because l/h could not be resolved to a standard SI equivalent in this context, the parameter lacked a valid numerical value for model estimation. Extracted — ertapenem: AUC ratio 0.856 l/h, CL 12.5 l/h, V/F 0.231 liters, V 7.3 liters.
+A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Chauzy_2022, Chen_2024, Murray_2025) cannot stand in for this paper's evidence. A reported unit could not be converted (AUC ratio), so that value has no SI equivalent. Extracted — ertapenem: AUC ratio 0.856 31, CL 0.437 L/h/kg, V 14.3 L, kabs 0.759 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of 165-194: this record has none, the second reading 5; it also differs on 5 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Wittau M et al., Pharmacokinetics of ertapenem in colore…, Chemotherapy (2011)
   ·  DOI: [10.1159/000333377](https://doi.org/10.1159/000333377)
 
-<div class="pk-model-meta" hidden drug="ertapenem" model-id="Ertapenem_Wittau2011_reference" status="rejected" stale="false" population="patients with colorectal surgery" measured-compound="ertapenem" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="ertapenem" model-id="Ertapenem_Wittau2011_reference" status="needs_review" stale="false" population="patients" measured-compound="ertapenem" parameterization="mechanistic" topology="1C"></div>
 
-**Model structure:** 2-compartment; no model was built for this record.  
+**Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted, plus 1 covariate effect.
 
-**Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| AUC in the colon divided by area under the unbound concentration time curve in plasma | `Q21` · AUC ratio | 0.856 | l/h | not captured | [l] / [h] | not captured | llm_corrected (0.6) | Wittau_2011_table_p4_1:row7:col2 | — | not captured |
+| AUC in the colon divided by area under the unbound concentration time curve in plasma | `Q21` · AUC ratio | 0.856 | 31 | not captured | [31] | not captured | llm_corrected (0.6) | Wittau_2011_table_p4_1:row7:col2 | — | not captured |
 | theta_q331_category | `Q900` · theta_q331_category | 32.0 | not captured | not captured | not captured | not captured | not captured (not captured) | Wittau_2011_table_p4_1:row10:col2 | — | not captured |
-| Total clearance of unbound ertapenem | `Q22` · CL | 12.5 | l/h | 3.4722222222222224e-06 | L/h | not captured | boundary (0.8) | Wittau_2011:other_prose | — | not captured |
-| apparent volume of distribution of the colon compartment | `Q76` · V/F | 0.231 | liters | 0.000231 | L | not captured | boundary (0.8) | Wittau_2011:other_prose | — | not captured |
-| volume of distribution at steady state | `Q61` · V | 7.3 | liters | 0.0073 | L | not captured | boundary (0.8) | Wittau_2011:discussion_prose | — | not captured |
+| Clearance | `Q22` · CL | 0.437 | L/h/kg | 8.497222222222222e-06 | L/h | not captured | review_gapfill (0.7) | Chauzy_2022:review | — | not captured |
+| V (V1+V2) | `Q61` · V | 14.3 | L | 0.0143 | L | not captured | review_gapfill (0.7) | Chen_2024:review | — | not captured |
+| KaSC (h−1) | `Q49` · kabs | 0.759 | h−1 | 0.00021083333333333333 | 1/h | not captured | review_gapfill (0.7) | Murray_2025:review | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -73,24 +73,16 @@ Wittau M et al., Pharmacokinetics of ertapenem in colore…, Chemotherapy (2011)
 - dropped unlinked row (NIL): 'Linear binding component' — extend the ontology if this is a real PK parameter (source ['Wittau_2011_table_p4_1:row9:col2'])
 - dropped unlinked row (NIL): 'Ratio of maximum binding capacity and Kd' — extend the ontology if this is a real PK parameter (source ['Wittau_2011_table_p4_1:row11:col2'])
 - covariate effect for Q331 has no base parameter row (kept as unattached equation-variable)
-- salvaged Q22 ('Total clearance of unbound ertapenem'=12.5) from results prose — parameter table was unreadable
-- salvaged Q76 ('apparent volume of distribution of the colon compartment'=0.231) from results prose — parameter table was unreadable
-- salvaged Q61 ('volume of distribution at steady state'=7.3) from results prose — parameter table was unreadable
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=ertapenem
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- structure disagreement: deterministic 2C vs LLM 1C — review compartment count
-- status held at route_to_review — not promoted
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=ertapenem
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- gap-filled Q22 (CL) from Chauzy_2022's review values (primary lacked it)
+- gap-filled Q61 (V) from Chen_2024's review values (primary lacked it)
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- gap-filled Q49 (kabs) from Murray_2025's review values (primary lacked it)
 
 **Extraction notes:**
-- final table tab_0: grid unusable → re-running vision table extraction for Wittau_2011
-- unparsed cell Wittau_2011_table_p4_1:row2:col2 = '16.5 (10)1'
-- unparsed cell Wittau_2011_table_p4_1:row3:col2 = '0.605 (15)1'
-- unparsed cell Wittau_2011_table_p4_1:row4:col1 = 'V1'
-- unparsed cell Wittau_2011_table_p4_1:row4:col2 = '24.3 (29)1'
-- unparsed cell Wittau_2011_table_p4_1:row5:col1 = 'V2'
-- unparsed cell Wittau_2011_table_p4_1:row5:col2 = '15.7 (16)1'
-- unparsed cell Wittau_2011_table_p4_1:row6:col1 = 'V3'
-- unparsed cell Wittau_2011_table_p4_1:row6:col2 = '0.231 (23)1'
+- table Wittau_2011_table_p4_1: unparsed_numeric_cell
 
 ## Validation
 
@@ -124,14 +116,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Chauzy_2022:review'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Murray_2025:review'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Chen_2024:review'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.437 | not captured | not captured | ['Chauzy_2022:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 12.5 L/h | not captured | not captured | ['Wittau_2011:other_prose'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 7.3 L | not captured | not captured | ['Wittau_2011:discussion_prose'] |
-| C9_phys_window_Q76 | fail | volume within physiological range | 0.231 L | not captured | not captured | ['Wittau_2011:other_prose'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 30.6 L/h | not captured | not captured | ['Chauzy_2022:review'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 14.3 L | not captured | not captured | ['Chen_2024:review'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -140,14 +133,24 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ertapenem/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Wittau_2011` / `Wittau_2011::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ertapenem/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Wittau_2011` / `Wittau_2011::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -156,4 +159,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 10:51 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 00:01 UTC</sub>

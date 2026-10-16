@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B03X&quot;,&quot;href&quot;:&quot;atc/B03X.md&quot;},{&quot;label&quot;:&quot;daprodustat&quot;,&quot;href&quot;:&quot;drugs/drug_daprodustat/&quot;},{&quot;label&quot;:&quot;Mahar_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Daprodustat_Mahar2024_reference&quot;,&quot;label&quot;:&quot;Mahar_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_daprodustat/Daprodustat_Mahar2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Daprodustat_Mahar2024_reference&quot;,&quot;label&quot;:&quot;Mahar_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_daprodustat/Daprodustat_Mahar2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # daprodustat — `Daprodustat_Mahar2024_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -17,34 +17,32 @@
 
 ### Reviewer guidance
 
-**The daprodustat record was held back because the absorption rate constant ka was invented as a library default rather than reported, alongside other builder deviations from the source.**
+**Ka use library defaults, not estimates from this paper; t6_deviations.**
 
-The record for daprodustat in adults with chronic kidney disease and anemia was built from the abstract alone, so summary statistics (CL/F 24.6 L/h, V 26.9 L, AUC ratio 1.59, Cmax ratio 1.19) stood in for a fitted model. The failed check flagged an invented absorption rate constant: ka was not reported in the source but was defaulted, and Tlag was likewise left at a default. The builder also assumed F=1 and Fm=1 with no molar correction, giving an apparent (/F) parameterization with first-order depot input. A second reader disagreed on the parameterization, preferring mechanistic over apparent, and returned null for all four parameter values. Extracted — daprodustat: CL/F 24.6 L/h, V 26.9 L, AUC ratio 1.59, Cmax_ratio 1.19.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — daprodustat: CL/F 24.6 L/h, V 26.9 L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has daprodustat, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by glm-5.3-flash</sub>
-
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:37:27.752607+00:00) predates the upstream re-run (2026-10-05 20:51:15.493117+00:00). Current validate status: `extracted`.
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Mahar KM et al., Integrated Population Pharmacokinetics…, Clinical pharmacokinetics (2024)
   ·  DOI: [10.1007/s40262-024-01417-9](https://doi.org/10.1007/s40262-024-01417-9)
 
-<div class="pk-model-meta" hidden drug="daprodustat" model-id="Daprodustat_Mahar2024_reference" status="extracted" stale="true" population="adults with chronic kidney disease and anemia" measured-compound="daprodustat" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="daprodustat" model-id="Daprodustat_Mahar2024_reference" status="needs_review" stale="false" population="adults with chronic kidney disease" measured-compound="daprodustat" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 4 extracted.
+**Parameters:** 2 extracted.
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Oral clearance | `Q27` · CL/F | 24.6 | L/h | 6.833333333333334e-06 | [l] / [h] | not captured | exact (1.0) | Mahar_2024:abstract | — | not captured |
 | volume of distribution | `Q61` · V | 26.9 | L | 0.0269 | [l] | not captured | exact (1.0) | Mahar_2024:abstract | — | not captured |
-| area under the plasma concentration-time curve (AUC) ratio | `Q21` · AUC ratio | 1.59 | not captured | not captured | not captured | not captured | llm_corrected (0.6) | Mahar_2024:abstract | — | not captured |
-| Cmax ratio | `Q33` · Cmax_ratio | 1.19 | not captured | not captured | not captured | not captured | llm_corrected (0.6) | Mahar_2024:abstract | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -66,7 +64,7 @@ Mahar KM et al., Integrated Population Pharmacokinetics…, Clinical pharmacokin
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Mahar_2024_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Mahar_2024_metadata.yaml (2 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -104,7 +102,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Mahar_2024:abstract'] |
@@ -124,7 +122,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_output_variable | not captured | pass | C_central (measured=daprodustat) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable; invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -133,10 +131,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_daprodustat/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Mahar_2024` / `Mahar_2024::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_daprodustat/models/modelica/Daprodustat_Mahar2024_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_daprodustat/models/modelica/Daprodustat_Mahar2024_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_daprodustat/models/modelica/Daprodustat_Mahar2024_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_daprodustat/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Mahar_2024` / `Mahar_2024::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_daprodustat/models/modelica/Daprodustat_Mahar2024_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_daprodustat/models/modelica/Daprodustat_Mahar2024_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_daprodustat/models/modelica/Daprodustat_Mahar2024_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -154,7 +152,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_daprodustat/Daprodustat_Mahar2024_reference/Daprodustat_Mahar2024_reference.svg" alt="Daprodustat_Mahar2024_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_daprodustat/Daprodustat_Mahar2024_reference/Daprodustat_Mahar2024_reference.svg" alt="Daprodustat_Mahar2024_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -167,4 +165,4 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 20:51 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 20:11 UTC</sub>

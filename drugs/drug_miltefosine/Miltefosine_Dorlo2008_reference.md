@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01C&quot;,&quot;href&quot;:&quot;atc/P01C.md&quot;},{&quot;label&quot;:&quot;miltefosine&quot;,&quot;href&quot;:&quot;drugs/drug_miltefosine/&quot;},{&quot;label&quot;:&quot;Dorlo_2008 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Miltefosine_Dorlo2017_reference&quot;,&quot;label&quot;:&quot;Dorlo_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_miltefosine/Miltefosine_Dorlo2017_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Miltefosine_Pali2020_reference&quot;,&quot;label&quot;:&quot;Pali\u0107_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_miltefosine/Miltefosine_Pali2020_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Miltefosine_Verrest2023_reference&quot;,&quot;label&quot;:&quot;Verrest_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_miltefosine/Miltefosine_Verrest2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Miltefosine_Dorlo2017_reference&quot;,&quot;label&quot;:&quot;Dorlo_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_miltefosine/Miltefosine_Dorlo2017_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Miltefosine_Pali2020_reference&quot;,&quot;label&quot;:&quot;Pali\u0107_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_miltefosine/Miltefosine_Pali2020_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Miltefosine_Dorlo2008_reference&quot;,&quot;label&quot;:&quot;Dorlo_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_miltefosine/Miltefosine_Dorlo2008_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Miltefosine_Verrest2023_reference&quot;,&quot;label&quot;:&quot;Verrest_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_miltefosine/Miltefosine_Verrest2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -13,13 +13,13 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 ### Reviewer guidance
 
-**Only volume was extracted — no clearance.**
+**The model does not reproduce the paper's terminal half-life (paper 742, model 185).**
 
-A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Extracted — miltefosine: V1 39.6 L, Q 0.0375 L/h, V2 1.65 L.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — miltefosine: kabs 0.36 h-1, CL 3.87 liters/day, V1 39.6 liters, Q/F 0.0375 liters/day, V2 1.65 liters.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has miltefosine, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
@@ -29,21 +29,23 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Dorlo TP et al., Pharmacokinetics of miltefosine in Old…, Antimicrobial agents and ch… (2008)
   ·  DOI: [10.1128/AAC.00014-08](https://doi.org/10.1128/AAC.00014-08)
 
-<div class="pk-model-meta" hidden drug="miltefosine" model-id="Miltefosine_Dorlo2008_reference" status="needs_review" stale="false" population="adults with Old World cutaneous leishmaniasis" measured-compound="miltefosine" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="miltefosine" model-id="Miltefosine_Dorlo2008_reference" status="needs_review" stale="false" population="adults with cutaneous leishmaniasis" measured-compound="miltefosine" parameterization="apparent" topology="2C"></div>
 
-**Model structure:** 2-compartment; no model was built for this record.  
-**Parameters:** 3 extracted.
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameters:** 5 extracted.
 
-**Parameterization:** mechanistic.
+**Parameterization:** Q/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Volume of central | `Q63` · V1 | 39.6 | L | 0.0396 | L | 4.0 | boundary_compartment (0.9) | tab_0:row2:col1 | — | not captured |
-| Intercompartmental clearance | `Q30` · Q | 0.0375 | L/h | 1.0416666666666666e-08 | L/h | 22.0 | exact (1.0) | tab_0:row4:col1 | — | not captured |
-| Volume of peripheral | `Q64` · V2 | 1.65 | L | 0.00165 | L | 12.4 | boundary_compartment (0.9) | tab_0:row6:col1 | — | not captured |
+| Absorption rate (ka) (h-1) | `Q49` · kabs | 0.36 | h-1 | 9.999999999999999e-05 | [1] / [h] | not captured | llm_confirmed (0.6) | Dorlo_2008_table_p3_2:row0:col1 | — | 24.2 (None% RSE) |
+| Clearance (CL/F) (liters/day) | `Q22` · CL | 3.87 | liters/day | 4.4791666666666666e-08 | [l] / [d] | not captured | space_fold (0.95) | Dorlo_2008_table_p3_2:row1:col1 | — | None (None% RSE) |
+| Volume of central compartment (V2/F) (liters) | `Q63` · V1 | 39.6 | liters | 0.0396 | [l] | not captured | boundary_compartment (0.9) | Dorlo_2008_table_p3_2:row2:col1 | — | None (None% RSE) |
+| Intercompartmental clearance (Q/F) (liters/day) | `Q69` · Q/F | 0.0375 | liters/day | 4.340277777777777e-10 | [l] / [d] | not captured | llm_corrected (0.6) | Dorlo_2008_table_p3_2:row3:col1 | — | not captured |
+| Volume of peripheral compartment (V3/F) (liters) | `Q64` · V2 | 1.65 | liters | 0.00165 | [l] | not captured | boundary_compartment (0.9) | Dorlo_2008_table_p3_2:row4:col1 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -52,15 +54,20 @@ Dorlo TP et al., Pharmacokinetics of miltefosine in Old…, Antimicrobial agents
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['Tlag']
+- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+
 **Interpretation flags:**
-- table section iiv: 'Residual variability (%)' routed out of structural estimates ('% Interindividual variability (relative SE ͓%͔) b')
-- implicit units: 'Volume of central' → L (from the popPK convention: 'No unit stated in text or footnotes; volumes of distribution in population PK are conventionally in L, consistent with V')
-- implicit units: 'Intercompartmental clearance' → L/h (from the popPK convention: 'No unit stated; intercompartmental clearances are conventionally in L/h, consistent with Q=0.0375 L/h (very slow distrib')
-- implicit units: 'Volume of peripheral' → L (from the popPK convention: 'No unit stated; volumes of distribution are conventionally in L, consistent with V2=1.65 L.')
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=miltefosine
+- table section iiv: 'Absorption rate (ka) (h-1)' routed out of structural estimates ('% Interindividual variability (relative SE [%])^b')
+- table section iiv: 'Clearance (CL/F) (liters/day)' routed out of structural estimates ('% Interindividual variability (relative SE [%])^b')
+- table section iiv: 'Volume of central compartment (V2/F) (liters)' routed out of structural estimates ('% Interindividual variability (relative SE [%])^b')
+- table section iiv: 'Residual variability (%)' routed out of structural estimates ('% Interindividual variability (relative SE [%])^b')
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=miltefosine
+- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- unparsed cell tab_0:row2:col2 = '18.3 a (25.0)'
+- no LLM table selection; kept 2 deterministically-scored parameter table(s)
 
 ## Validation
 
@@ -90,15 +97,41 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_0:row4:col1'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_0:row2:col1'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_0:row6:col1'] |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C1_half_life_beta | pass | 30.9 | 30.882 | 0.9994 | 0.25 | reported t½β |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Dorlo_2008_table_p3_2:row1:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Dorlo_2008_table_p3_2:row0:col1'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Dorlo_2008_table_p3_2:row2:col1'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Dorlo_2008_table_p3_2:row4:col1'] |
+| C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Dorlo_2008_table_p3_2:row3:col1'] |
+| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q63 | pass | volume within physiological range | 39.6 L | not captured | not captured | ['tab_0:row2:col1'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 1.65 L | not captured | not captured | ['tab_0:row6:col1'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.161 L/h | not captured | not captured | ['Dorlo_2008_table_p3_2:row1:col1'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 39.6 L | not captured | not captured | ['Dorlo_2008_table_p3_2:row2:col1'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 1.65 L | not captured | not captured | ['Dorlo_2008_table_p3_2:row4:col1'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_output_variable | not captured | pass | C_central (measured=miltefosine) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 5 scholar param(s) emitted or defaulted | 5 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| T1_t_half_beta | reference | fail | 741.5999999999999 | 185.23813597531458 | 0.2498 | days→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 741.5999999999999 | 185.23813597531458 | 0.2498 | days→SI vs simulated h |
+| T1_t_half_beta | reference | pass | 150.0 | 185.23813597531458 | 1.2349 | h→SI vs simulated h |
+| T1_t_half_beta | reference | pass | 169.2 | 185.23813597531458 | 1.0948 | days→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 741.5999999999999 | 185.23813597531458 | 0.2498 | days→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 355.20000000000005 | 185.23813597531458 | 0.5215 | days→SI vs simulated h |
+| T1_t_half_beta | reference | pass | 168.0 | 185.23813597531458 | 1.1026 | days→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 741.5999999999999 | 185.23813597531458 | 0.2498 | days→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 169.2 | 185.23813597531458 | 1.0948 | days→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -107,7 +140,10 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_miltefosine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Dorlo_2008` / `Dorlo_2008::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_miltefosine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Dorlo_2008` / `Dorlo_2008::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_miltefosine/models/modelica/Miltefosine_Dorlo2008_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_miltefosine/models/modelica/Miltefosine_Dorlo2008_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_miltefosine/models/modelica/Miltefosine_Dorlo2008_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -116,21 +152,26 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_miltefosine/Miltefosine_Dorlo2008_reference/Miltefosine_Dorlo2008_reference_modelica.zip" download>Miltefosine_Dorlo2008_reference_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_miltefosine/Miltefosine_Dorlo2008_reference/Miltefosine_Dorlo2008_reference_fmi.zip" download>Miltefosine_Dorlo2008_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_miltefosine/Miltefosine_Dorlo2008_reference/Miltefosine_Dorlo2008_reference_matlab.zip" download>Miltefosine_Dorlo2008_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_miltefosine/Miltefosine_Dorlo2008_reference/Miltefosine_Dorlo2008_reference_matlab_simbio.zip" download>Miltefosine_Dorlo2008_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_miltefosine/Miltefosine_Dorlo2008_reference/Miltefosine_Dorlo2008_reference_sbml.zip" download>Miltefosine_Dorlo2008_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_miltefosine/Miltefosine_Dorlo2008_reference/Miltefosine_Dorlo2008_reference_cellml.zip" download>Miltefosine_Dorlo2008_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_miltefosine/Miltefosine_Dorlo2008_reference/Miltefosine_Dorlo2008_reference.svg" alt="Miltefosine_Dorlo2008_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.36 /h, F 1). Dose in the paper: 100 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_miltefosine/Miltefosine_Dorlo2008_reference/Miltefosine_Dorlo2008_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_miltefosine/Miltefosine_Dorlo2008_reference/Miltefosine_Dorlo2008_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_2C_enteral` · parameters `Miltefosine_Dorlo2008_reference_params.json` · controls `Miltefosine_Dorlo2008_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 07:51 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 19:22 UTC</sub>

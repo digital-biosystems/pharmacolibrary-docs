@@ -4,7 +4,7 @@
 
 # lecanemab — `Lecanemab_Hayato2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.722). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.368). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -20,7 +20,7 @@
 
 The record reports lecanemab clearance CL 0.0181 L/h, central volume V1 3.22 L, intercompartmental clearance Q 0.0349 L/h and peripheral volume V2 2.19 L, plus a female clearance ratio of 0.792 and several covariate effects. The rejection reason is a dimension mismatch on a structural parameter, and the stated limitation is that a reported unit could not be converted to SI, so that parameter was carried without an SI value. The bioavailability parameter Fab is listed for lecanemab with no value, and the weight covariate effect on intercompartmental clearance appears twice with conflicting values, 0.403 and 0.606. Extracted — lecanemab: CL 0.0181 L/h, V1 3.22 L, Q 0.0349 L/h, V2 2.19 L, CL_ratio 0.792 ratio.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has lecanemab, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl].value`: this record has 0.0181, the second reading 2.55; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -114,21 +114,28 @@ Hayato S et al., Population pharmacokinetic-pharmacodyna…, CPT: pharmacometric
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.722 (13/18 fields) | 5 |
+| `gpt-oss-120b` | not confirmed | 0.368 (7/19 fields) | 12 |
 
-<details><summary>5 field discrepancies</summary>
+<details><summary>12 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.links` | [] | [['', '', '']] | mismatch |
-| `gpt-oss-120b` | `parameters[f]` | not captured | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[f]` | not captured | not captured | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | lecanemab | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | lecanemab | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[cl].covariate_forms` | [] | ['power'] | mismatch |
+| `gpt-oss-120b` | `parameters[cl].value` | 0.0181 | 2.55 | mismatch |
+| `gpt-oss-120b` | `parameters[females - cl].value` | 0.792 | 3.43 | mismatch |
+| `gpt-oss-120b` | `parameters[q].value` | 0.0349 | 8.02 | mismatch |
+| `gpt-oss-120b` | `parameters[theta_cl_ratio_ada_power].value` | 1.09 | 0.586 | mismatch |
+| `gpt-oss-120b` | `parameters[theta_cl_weight_power]` | not captured | 9.73 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q319_albumin_power].value` | -0.243 | 17.2 | mismatch |
+| `gpt-oss-120b` | `parameters[theta_q319_weight_power].value` | 0.403 | 7.52 | mismatch |
+| `gpt-oss-120b` | `parameters[theta_q87_category].value` | 0.998 | 4.07 | mismatch |
+| `gpt-oss-120b` | `parameters[theta_v2_race_power].value` | 0.455 | 24.4 | mismatch |
+| `gpt-oss-120b` | `parameters[v 1].value` | 3.22 | 1.18 | mismatch |
+| `gpt-oss-120b` | `parameters[v 2].value` | 2.19 | 7.21 | mismatch |
 
 </details>
 
@@ -164,7 +171,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_lecanemab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Hayato_2022` / `Hayato_2022::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_lecanemab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Hayato_2022` / `Hayato_2022::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

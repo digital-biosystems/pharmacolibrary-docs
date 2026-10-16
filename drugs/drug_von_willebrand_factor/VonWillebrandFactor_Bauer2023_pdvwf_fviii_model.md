@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;von Willebrand factor&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/&quot;},{&quot;label&quot;:&quot;Bauer_2023 \u00b7 pdvwf_fviii_model&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;VonWillebrandFactor_Schning2026_reference&quot;,&quot;label&quot;:&quot;Sch\u00f6ning_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/VonWillebrandFactor_Schning2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;VonWillebrandFactor_Valke2024_reference&quot;,&quot;label&quot;:&quot;Valke_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/VonWillebrandFactor_Valke2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;VonWillebrandFactor_Wong2025_reference&quot;,&quot;label&quot;:&quot;Wong_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/VonWillebrandFactor_Wong2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;VonWillebrandFactor_Zhu2020_reference&quot;,&quot;label&quot;:&quot;Zhu_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/VonWillebrandFactor_Zhu2020_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;VonWillebrandFactor_Al2025_final&quot;,&quot;label&quot;:&quot;Al_2025_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/VonWillebrandFactor_Al2025_final.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;VonWillebrandFactor_Valke2024_reference&quot;,&quot;label&quot;:&quot;Valke_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/VonWillebrandFactor_Valke2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;VonWillebrandFactor_Wong2025_reference&quot;,&quot;label&quot;:&quot;Wong_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/VonWillebrandFactor_Wong2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;VonWillebrandFactor_Al2025_final&quot;,&quot;label&quot;:&quot;Al_2025_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/VonWillebrandFactor_Al2025_final.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;VonWillebrandFactor_Schning2026_reference&quot;,&quot;label&quot;:&quot;Sch\u00f6ning_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/VonWillebrandFactor_Schning2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;VonWillebrandFactor_Zhu2020_reference&quot;,&quot;label&quot;:&quot;Zhu_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/VonWillebrandFactor_Zhu2020_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Valke_2024_Normalized_plasmin_peak_height&quot;,&quot;label&quot;:&quot;Valke_2024 \u00b7 Normalized plasmin peak height&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/pd_Valke_2024_Normalized_plasmin_peak_height.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Valke_2024_Normalized_thrombin_peak_height&quot;,&quot;label&quot;:&quot;Valke_2024 \u00b7 Normalized thrombin peak height&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/pd_Valke_2024_Normalized_thrombin_peak_height.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Valke_2024_Normalized_thrombin_potential&quot;,&quot;label&quot;:&quot;Valke_2024 \u00b7 Normalized thrombin potential&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/pd_Valke_2024_Normalized_thrombin_potential.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # von Willebrand factor — `VonWillebrandFactor_Bauer2023_pdvwf_fviii_model`
 
-> ## <span class="pk-badge pk-badge--red" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -15,30 +15,26 @@
 
 **Model:** No model was generated from this record.
 
-> **Caveat** (`covariates_not_exercised`): Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.
-
 ### Reviewer guidance
 
-**Accepted with a caveat: the covariate scenarios were not simulated.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The base model was simulated, not the covariate effects the record defines.
+Extracted — von willebrand factor: CL 12.7 dL/h, V1 16.7 dL, Q 12.3 dL/h, V2 3.12 dL; von Willebrand factor (VWF:RCo): kabs 0.5 h−1.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has von Willebrand factor, the second reading VWF:RCo; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
-> ⚠️ **STALE** — review status `accepted_with_caveats` (reviewed 2026-09-28 14:42:07.737245+00:00) predates the upstream re-run (2026-10-05 20:06:14.623010+00:00). Current validate status: `rejected`.
-
-> **Dose compound ≠ measured compound:** dosed `recombinant von Willebrand factor`, measured `von Willebrand factor`.
+> **Dose compound ≠ measured compound:** dosed `recombinant von Willebrand factor`, measured `von Willebrand factor (VWF:RCo)`.
 
 ## Citation
 Bauer A et al., Pharmacokinetic-Pharmacodynamic Compari…, Journal of blood medicine (2023)
   ·  DOI: [10.2147/JBM.S395845](https://doi.org/10.2147/JBM.S395845)
 
-<div class="pk-model-meta" hidden drug="von Willebrand factor" model-id="VonWillebrandFactor_Bauer2023_pdvwf_fviii_model" status="rejected" stale="true" population="adults with von Willebrand disease" measured-compound="von Willebrand factor" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="von Willebrand factor" model-id="VonWillebrandFactor_Bauer2023_pdvwf_fviii_model" status="rejected" stale="false" population="adults with von Willebrand disease and hemophilia A" measured-compound="von Willebrand factor (VWF:RCo)" parameterization="mechanistic" topology="2C"></div>
 
-**Model structure:** general linear; no model was built for this record.  
-**Parameters:** 5 extracted, plus 2 covariate effects.
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -47,13 +43,11 @@ Bauer A et al., Pharmacokinetic-Pharmacodynamic Compari…, Journal of blood med
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL, dL/h | `Q22` · CL | 4.14 | dL/h | 1.15e-07 | [dl] / [h] | not captured | exact (1.0) | t0004:row3:col3, t0004:row3:col4 | — | 0.235 (None% RSE) |
-| Vc, dL | `Q63` · V1 | 47.0 | dL | 0.0047 | [dl] | not captured | exact (1.0) | t0004:row4:col3, t0004:row4:col4 | — | 0.373 (None% RSE) |
-| Q, dL/h | `Q30` · Q | 4.47 | dL/h | 1.2416666666666666e-07 | [dl] / [h] | not captured | exact (1.0) | t0004:row5:col3, t0004:row5:col4 | — | not captured |
-| Vp, dL | `Q64` · V2 | 19.3 | dL | 0.00193 | [dl] | not captured | exact (1.0) | t0004:row6:col3, t0004:row6:col4 | — | not captured |
-| wt_effect_on_cl_and_q | `Q900` · wt_effect_on_cl_and_q | 0.750 | not captured | not captured | not captured | not captured | not captured (not captured) | t0004:row8:col3 | — | not captured |
-| wt_effect_on_vc_and_vp | `Q900` · wt_effect_on_vc_and_vp | 1.00 | not captured | not captured | not captured | not captured | not captured (not captured) | t0004:row9:col3 | — | not captured |
-| Absorption rate constant (kapop) [h−1] | `Q49` · kabs | 0.5 | h−1 | 0.0001388888888888889 | 1/h | not captured | review_gapfill (0.7) | Schöning_2026:review | — | not captured |
+| CL, dL/h | `Q22` · CL | 12.7 | dL/h | 3.527777777777778e-07 | [dl] / [h] | 4.14 | exact (1.0) | t0004:row3:col4 | — | 38.3 (0.235% RSE) |
+| Vc, dL | `Q63` · V1 | 16.7 | dL | 0.00167 | [dl] | 47.0 | exact (1.0) | t0004:row4:col4 | — | 51.7 (0.373% RSE) |
+| Q, dL/h | `Q30` · Q | 12.3 | dL/h | 3.416666666666667e-07 | [dl] / [h] | 4.47 | exact (1.0) | t0004:row5:col4 | — | not captured |
+| Vp, dL | `Q64` · V2 | 3.12 | dL | 0.00031200000000000005 | [dl] | 19.3 | exact (1.0) | t0004:row6:col4 | — | not captured |
+| Absorption rate constant (kapop) [h−1] Ground truth | `Q49` · kabs | 0.5 | h−1 | 0.0001388888888888889 | 1/h | not captured | review_gapfill (0.7) | Schöning_2026:review | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -63,24 +57,18 @@ Bauer A et al., Pharmacokinetic-Pharmacodynamic Compari…, Journal of blood med
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'EVWF, VWD type 3, IU/dL' — extend the ontology if this is a real PK parameter (source ['t0004:row7:col3'])
-- covariate level 'WT effect on CL and Q' → Q900:wt_effect_on_cl_and_q = 0.750 (linear_fractional on Q22)
-- covariate level 'WT effect on Vc and Vp' → Q900:wt_effect_on_vc_and_vp = 1.00 (linear_fractional on Q22)
-- dropped duplicate Q63 ('Hematocrit effect on Vc', value '-0.334') — already have one for this compound
-- dropped PD-category row 'Baseline FVIII, IU/dLc,d' → Q324 (E0, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['t0004:row16:col3'])
-- dropped PD-category row 'kout, h−1 c' → Q328 (kout, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['t0004:row17:col3'])
-- dropped PD-category row 'Imax' → Q323 (Imax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['t0004:row18:col3', 't0004:row18:col4'])
-- dropped PD-category row 'IC50, IU/dL' → Q322 (IC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['t0004:row19:col3', 't0004:row19:col4'])
-- dropped unlinked row (NIL): 'Hematocrit effect on baseline FVIII' — extend the ontology if this is a real PK parameter (source ['t0004:row20:col3'])
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=von Willebrand factor
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
-- status held at route_to_review — not promoted
-- population split: 'pdvwf/fviii model' subgroup of Bauer_2023 (paper reports 2 populations: pdvwf/fviii model, rvwf model)
+- dropped PD-category row 'Imax' → Q323 (Imax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['t0004:row18:col4'])
+- dropped PD-category row 'IC50, IU/dL' → Q322 (IC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['t0004:row19:col4'])
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=von Willebrand factor (VWF:RCo)
+- population split: 'pdvwf/fviii model' subgroup of Bauer_2023 (paper reports 2 populations: pdvwf/fviii model, rvwf model / point estimate)
+- molar mass: no plausible PubChem entry for 'von Willebrand factor (VWF:RCo)' ('von Willebrand factor') — left in mass units
 - molar mass: none found for 'von_willebrand_factor' — its concentrations stay mass-only
-- molar mass: none found for 'von Willebrand factor' — its concentrations stay mass-only
+- molar mass: none found for 'von Willebrand factor (VWF:RCo)' — its concentrations stay mass-only
 - gap-filled Q49 (kabs) from Schöning_2026's review values (primary lacked it)
 
 **Extraction notes:**
+- table t0004: unbound_uncertainty
+- table t0004: ragged_grid
 - LLM selected parameter table(s) 4
 
 ## Validation
@@ -120,29 +108,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['t0004:row3:col3', 't0004:row3:col4'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['t0004:row5:col3', 't0004:row5:col4'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['t0004:row3:col4'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['t0004:row5:col4'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Schöning_2026:review'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['t0004:row4:col3', 't0004:row4:col4'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['t0004:row6:col3', 't0004:row6:col4'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 4.14 | not captured | not captured | ['t0004:row3:col3', 't0004:row3:col4'] |
-| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none', 'none'] | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.414 L/h | not captured | not captured | ['t0004:row3:col3', 't0004:row3:col4'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 4.7 L | not captured | not captured | ['t0004:row4:col3', 't0004:row4:col4'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 1.93 L | not captured | not captured | ['t0004:row6:col3', 't0004:row6:col4'] |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_output_variable | not captured | pass | C_central (measured=von_willebrand_factor) | central.C | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | pass | 5 scholar param(s) emitted or defaulted | 5 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
-| T1_t_half_terminal | reference | skipped | 1.74 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['t0004:row4:col4'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['t0004:row6:col4'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 12.7 | not captured | not captured | ['t0004:row3:col4'] |
+| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 1.27 L/h | not captured | not captured | ['t0004:row3:col4'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 1.67 L | not captured | not captured | ['t0004:row4:col4'] |
+| C9_phys_window_Q64 | fail | volume within physiological range | 0.312 L | not captured | not captured | ['t0004:row6:col4'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -151,10 +126,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_von_willebrand_factor/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Bauer_2023` / `Bauer_2023::pdvwf_fviii_model`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_von_willebrand_factor/models/modelica/VonWillebrandFactor_Bauer2023_pdvwf_fviii_model.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_von_willebrand_factor/models/modelica/VonWillebrandFactor_Bauer2023_pdvwf_fviii_model.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_von_willebrand_factor/models/modelica/VonWillebrandFactor_Bauer2023_pdvwf_fviii_model.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_von_willebrand_factor/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Bauer_2023` / `Bauer_2023::pdvwf_fviii_model`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -170,4 +142,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 20:06 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 19:03 UTC</sub>

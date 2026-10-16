@@ -33,7 +33,17 @@ Gadofosveset is a paramagnetic contrast agent used for magnetic resonance angiog
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.778). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Spanakis_2014_data_from_fda_drugbank](drugs/drug_gadofosveset/Gadofosveset_Spanakis2014_data_from_fda_drugbank.md) | — | 1-compartment (no model) | 4 | Spanakis M et al., In silico evaluation of gadofosveset ph…, In silico pharmacology (2014) | [10.1186/s40203-014-0002-x](https://doi.org/10.1186/s40203-014-0002-x) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.667). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Spanakis_2014_predicted_from_simcyp](drugs/drug_gadofosveset/Gadofosveset_Spanakis2014_predicted_from_simcyp.md) | — | 1-compartment (no model) | 4 | Spanakis M et al., In silico evaluation of gadofosveset ph…, In silico pharmacology (2014) | [10.1186/s40203-014-0002-x](https://doi.org/10.1186/s40203-014-0002-x) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.778). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Spanakis_2014_predicted_from_simcyp](drugs/drug_gadofosveset/Gadofosveset_Spanakis2014_predicted_from_simcyp.md) | — | 1-compartment (no model) | 4 | Spanakis M et al., In silico evaluation of gadofosveset ph…, In silico pharmacology (2014) | [10.1186/s40203-014-0002-x](https://doi.org/10.1186/s40203-014-0002-x) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=gadofosveset).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| distribution | blood | `ALB` binder/substrate | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

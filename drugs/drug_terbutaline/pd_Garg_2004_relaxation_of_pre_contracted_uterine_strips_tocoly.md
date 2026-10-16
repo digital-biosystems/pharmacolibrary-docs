@@ -20,9 +20,9 @@
 
 **Model:** No model was generated from this record.
 
-> The paper relates terbutaline concentrations to relaxation of pre-contracted uterine strips (tocolytic effect), but the available excerpts provide no model details: the mechanism, effect form, and potency or rate parameters (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) are not stated.
+> The paper does not provide a full text or specific pharmacodynamic model details, so the mechanism and key potency or rate values for terbutaline's tocolytic effect are not stated.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
 
 - **paper:** `Garg_2004`
 - **model family:** `unknown`

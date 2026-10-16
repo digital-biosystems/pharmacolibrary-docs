@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;envafolimab&quot;,&quot;href&quot;:&quot;drugs/drug_envafolimab/&quot;},{&quot;label&quot;:&quot;Cui_2024 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Envafolimab_Cui2024_reference&quot;,&quot;label&quot;:&quot;Cui_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_envafolimab/Envafolimab_Cui2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -12,26 +13,26 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 ### Reviewer guidance
 
-**The envafolimab record, including its reported terminal half-life of 34.0 days, was held back after an inconclusive reference comparison, not a demonstrated parameter fault.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The reference comparison failed without computing a ratio, so it does not establish that envafolimab’s terminal half-life of 34.0 days—or another reported parameter—is wrong. The record’s hold reflects this inconclusive result. Extracted — envafolimab: t1/2z 34 days, CL 0.0478 L/h, V 15.5 L, kabs 0.0147 1/h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — envafolimab: CL 0.0478 L/hr, V 15.5 L, kabs 0.0147 1/hr.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `parameters[cl].value`: this record has 0.0478, the second reading 0.0484; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Cui C et al., Model-informed drug development of enva…, The oncologist (2024)
   ·  DOI: [10.1093/oncolo/oyae102](https://doi.org/10.1093/oncolo/oyae102)
 
-<div class="pk-model-meta" hidden drug="envafolimab" model-id="Envafolimab_Cui2024_reference" status="needs_review" stale="false" population="patients with advanced solid tumors" measured-compound="envafolimab" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="envafolimab" model-id="Envafolimab_Cui2024_reference" status="needs_review" stale="false" population="adults with advanced solid tumors" measured-compound="envafolimab" parameterization="mechanistic" topology="1C"></div>
 
-**Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 4 extracted, plus 1 covariate effect.
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -40,12 +41,9 @@ Cui C et al., Model-informed drug development of enva…, The oncologist (2024)
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| T 50 | `Q57` · t1/2z | 34.0 | days | 2937600.0 | h | not captured | llm (0.6) | T1:row3:col2, T1:row3:col5, T1:row3:col6 | — | not captured |
-| CL | `Q22` · CL | 0.0478 | L/h | 1.3277777777777778e-08 | L/h | not captured | exact (1.0) | T1:row4:col2, T1:row4:col4, T1:row4:col5, T1:row4:col6 | — | not captured |
-| V | `Q61` · V | 15.5 | L | 0.0155 | L | not captured | exact (1.0) | T1:row5:col2, T1:row5:col4, T1:row5:col5, T1:row5:col6 | — | not captured |
-| K a | `Q49` · kabs | 0.0147 | 1/h | 4.083333333333333e-06 | 1/h | not captured | space_fold (0.95) | T1:row6:col1, T1:row6:col2, T1:row6:col4, T1:row6:col5, T1:row6:col6 | — | not captured |
-| Epsilon | `Q900` · equation variable | 0.0501 | not captured | not captured | not captured | not captured | llm (0.6) | T1:row10:col2, T1:row10:col5, T1:row10:col6 | — | not captured |
-| theta_equation_variable_crcl_power | `Q900` · theta_equation_variable_crcl_power | 0.475 | not captured | not captured | not captured | not captured | not captured (not captured) | T1:row7:col2, T1:row7:col6 | — | not captured |
+| CL | `Q22` · CL | 0.0478 | L/hr | 1.3277777777777778e-08 | [l] / [h] | not captured | exact (1.0) | Cui_2024_table_1:row2:col2, Cui_2024_table_1:row2:col4, Cui_2024_table_1:row2:col5 | — | not captured |
+| V | `Q61` · V | 15.5 | L | 0.0155 | [l] | not captured | exact (1.0) | Cui_2024_table_1:row3:col2, Cui_2024_table_1:row3:col4, Cui_2024_table_1:row3:col5 | — | not captured |
+| K a | `Q49` · kabs | 0.0147 | 1/hr | 4.083333333333333e-06 | [1] / [h] | not captured | space_fold (0.95) | Cui_2024_table_1:row4:col2, Cui_2024_table_1:row4:col4, Cui_2024_table_1:row4:col5 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -54,15 +52,17 @@ Cui C et al., Model-informed drug development of enva…, The oncologist (2024)
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['F', 'Tlag']
+
 **Interpretation flags:**
-- column 'unit' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- dropped PD-category row 'E max' → Q320 (Emax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['T1:row2:col2', 'T1:row2:col5', 'T1:row2:col6'])
-- dropped unlinked row (NIL): 'CL-AMERICAN' — extend the ontology if this is a real PK parameter (source ['T1:row8:col2', 'T1:row8:col6'])
-- dropped unlinked row (NIL): 'CL-JAPANESE' — extend the ontology if this is a real PK parameter (source ['T1:row9:col2', 'T1:row9:col6'])
-- implicit units: 'T 50' → days (from the paper text: 'The paper states: “the time for clearance to reduce by half was 34 days.”')
-- implicit units: 'CL' → L/h (from the popPK convention: 'The paper defines CL/F as apparent systemic clearance but does not state its unit; clearance is conventionally reported ')
-- implicit units: 'V' → L (from the popPK convention: 'The paper defines V/F as apparent volume of distribution but does not state its unit; volume is conventionally reported ')
-- implicit units: 'K a' → 1/h (from the popPK convention: 'The paper identifies Ka as an absorption rate constant but does not state its unit; first-order rate constants are conve')
+- dropped PD-category row 'E max' → Q320 (Emax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Cui_2024_table_1:row0:col2', 'Cui_2024_table_1:row0:col5'])
+- dropped unlinked row (NIL): 'T 50' — extend the ontology if this is a real PK parameter (source ['Cui_2024_table_1:row1:col2', 'Cui_2024_table_1:row1:col5'])
+- dropped unlinked row (NIL): 'CL-CRCL' — extend the ontology if this is a real PK parameter (source ['Cui_2024_table_1:row5:col2'])
+- unit_dimension_mismatch: 'CL-AMERICAN' → Q22 (unit '[time]' vs ontology '[length] ** 3 / [time]') — route to review
+- dropped duplicate Q22 ('CL-AMERICAN', value '0.891') — already have one for this compound
+- dropped unlinked row (NIL): 'CL-JAPANESE' — extend the ontology if this is a real PK parameter (source ['Cui_2024_table_1:row7:col2'])
+- dropped unlinked row (NIL): 'Epsilon' — extend the ontology if this is a real PK parameter (source ['Cui_2024_table_1:row8:col2', 'Cui_2024_table_1:row8:col5'])
 - apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q22 (CL); Q61 (V)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=envafolimab
 - molar mass: none found for 'envafolimab' — its concentrations stay mass-only
@@ -71,25 +71,8 @@ Cui C et al., Model-informed drug development of enva…, The oncologist (2024)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- unparsed cell T1:row2:col3 = '(−0.560, −0.318)'
-- unparsed cell T1:row2:col4 = '0 FIX (NA)'
-- unparsed cell T1:row2:col7 = '(−0.727, −0.253)'
-- unparsed cell T1:row3:col3 = '(9.70, 58.3)'
-- unparsed cell T1:row3:col4 = '0 FIX (NA)'
-- unparsed cell T1:row3:col7 = '(13.8, 77.6)'
-- unparsed cell T1:row4:col3 = '(0.0404, 0.0552)'
-- unparsed cell T1:row4:col7 = '(0.0400, 0.0630)'
-- unparsed cell T1:row5:col3 = '(13.2, 17.8)'
-- unparsed cell T1:row5:col7 = '(13.6, 17.1)'
-- unparsed cell T1:row6:col3 = '(0.0120, 0.0170)'
-- unparsed cell T1:row6:col7 = '(0.0125, 0.0171)'
-- unparsed cell T1:row7:col3 = '(0.295, 0.655)'
-- unparsed cell T1:row7:col7 = '(0.316, 0.596)'
-- unparsed cell T1:row8:col3 = '(0.777, 1.01)'
-- unparsed cell T1:row8:col7 = '(0.739, 1.09)'
-- unparsed cell T1:row9:col3 = '(0.624, 0.856)'
-- unparsed cell T1:row9:col7 = '(0.661, 0.827)'
-- unparsed cell T1:row10:col7 = '(0.0418, 0.0604)'
+- table Cui_2024_table_1: ambiguous_uncertainty_binding
+- table Cui_2024_table_1: unparsed_numeric_cell
 
 ## Validation
 
@@ -123,18 +106,30 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C2_reference | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T1:row4:col2', 'T1:row4:col4', 'T1:row4:col5', 'T1:row4:col6'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['T1:row6:col1', 'T1:row6:col2', 'T1:row6:col4', 'T1:row6:col5', 'T1:row6:col6'] |
-| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['T1:row3:col2', 'T1:row3:col5', 'T1:row3:col6'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['T1:row5:col2', 'T1:row5:col4', 'T1:row5:col5', 'T1:row5:col6'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.0478 | not captured | not captured | ['T1:row4:col2', 'T1:row4:col4', 'T1:row4:col5', 'T1:row4:col6'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Cui_2024_table_1:row2:col2', 'Cui_2024_table_1:row2:col4', 'Cui_2024_table_1:row2:col5'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Cui_2024_table_1:row4:col2', 'Cui_2024_table_1:row4:col4', 'Cui_2024_table_1:row4:col5'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Cui_2024_table_1:row3:col2', 'Cui_2024_table_1:row3:col4', 'Cui_2024_table_1:row3:col5'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.0478 | not captured | not captured | ['Cui_2024_table_1:row2:col2', 'Cui_2024_table_1:row2:col4', 'Cui_2024_table_1:row2:col5'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.0478 L/h | not captured | not captured | ['T1:row4:col2', 'T1:row4:col4', 'T1:row4:col5', 'T1:row4:col6'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 15.5 L | not captured | not captured | ['T1:row5:col2', 'T1:row5:col4', 'T1:row5:col5', 'T1:row5:col6'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.0478 L/h | not captured | not captured | ['Cui_2024_table_1:row2:col2', 'Cui_2024_table_1:row2:col4', 'Cui_2024_table_1:row2:col5'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 15.5 L | not captured | not captured | ['Cui_2024_table_1:row3:col2', 'Cui_2024_table_1:row3:col4', 'Cui_2024_table_1:row3:col5'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_output_variable | not captured | pass | C_central (measured=envafolimab) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable | not captured | LLM adjudication → deterministic rule |
+| T1_cmax | reference | skipped | not captured | 0.0038358572591594103 | not captured | non-numeric value |
+| T1_cmin_ss | reference | skipped | not captured | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_cmin_ss | reference | skipped | not captured | not captured | not captured | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -143,7 +138,10 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_envafolimab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Cui_2024` / `Cui_2024::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_envafolimab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Cui_2024` / `Cui_2024::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_envafolimab/models/modelica/Envafolimab_Cui2024_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_envafolimab/models/modelica/Envafolimab_Cui2024_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_envafolimab/models/modelica/Envafolimab_Cui2024_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -152,21 +150,26 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_envafolimab/Envafolimab_Cui2024_reference/Envafolimab_Cui2024_reference_modelica.zip" download>Envafolimab_Cui2024_reference_modelica.zip</a> <span class="pk-size">(4.9 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_envafolimab/Envafolimab_Cui2024_reference/Envafolimab_Cui2024_reference_fmi.zip" download>Envafolimab_Cui2024_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_envafolimab/Envafolimab_Cui2024_reference/Envafolimab_Cui2024_reference_matlab.zip" download>Envafolimab_Cui2024_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_envafolimab/Envafolimab_Cui2024_reference/Envafolimab_Cui2024_reference_matlab_simbio.zip" download>Envafolimab_Cui2024_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_envafolimab/Envafolimab_Cui2024_reference/Envafolimab_Cui2024_reference_sbml.zip" download>Envafolimab_Cui2024_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_envafolimab/Envafolimab_Cui2024_reference/Envafolimab_Cui2024_reference_cellml.zip" download>Envafolimab_Cui2024_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_envafolimab/Envafolimab_Cui2024_reference/Envafolimab_Cui2024_reference.svg" alt="Envafolimab_Cui2024_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.0147 /h, F 0.9). _The paper's dose was not captured; the simulator's default is used._
+
+<dbs-fmusim paramsurl="drugs/drug_envafolimab/Envafolimab_Cui2024_reference/Envafolimab_Cui2024_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_envafolimab/Envafolimab_Cui2024_reference/Envafolimab_Cui2024_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C_enteral` · parameters `Envafolimab_Cui2024_reference_params.json` · controls `Envafolimab_Cui2024_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 12:37 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 19:27 UTC</sub>

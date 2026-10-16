@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;lenalidomide&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lenalidomide_Gupta2019_reference&quot;,&quot;label&quot;:&quot;Gupta_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lenalidomide/Lenalidomide_Gupta2019_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lenalidomide_Papathanasiou2025_reference&quot;,&quot;label&quot;:&quot;Papathanasiou_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lenalidomide/Lenalidomide_Papathanasiou2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lenalidomide_Hughes2019_reference&quot;,&quot;label&quot;:&quot;Hughes_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lenalidomide/Lenalidomide_Hughes2019_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lenalidomide_Gupta2019_reference&quot;,&quot;label&quot;:&quot;Gupta_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lenalidomide/Lenalidomide_Gupta2019_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lenalidomide_Papathanasiou2025_reference&quot;,&quot;label&quot;:&quot;Papathanasiou_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lenalidomide/Lenalidomide_Papathanasiou2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lenalidomide_Liang2024_reference&quot;,&quot;label&quot;:&quot;Liang_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lenalidomide/Lenalidomide_Liang2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # lenalidomide
 
@@ -27,7 +27,7 @@ Lenalidomide is an immunomodulating and anti-angiogenic drug used to treat blood
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 00:07 | 5:05 | 2/6/2 | 2/0/0 | 0/0/0 | 459,120/26,331 | einfracz / qwen3.8-27b | 11 | 0/11 | 11/0 | 0 |
+| 2026-10-15 04:17 | 3:44 | 2/2/2 | 1/0/1 | 0/0/0 | 253,543/13,841 | einfracz / qwen3.8-27b | 11 | 0/11 | 11/0 | 0 |
 
 ## popPK records
 
@@ -35,21 +35,35 @@ Lenalidomide is an immunomodulating and anti-angiogenic drug used to treat blood
 |---|---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed</span> | [Gupta_2019_reference](drugs/drug_lenalidomide/Lenalidomide_Gupta2019_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Gupta N et al., Clinical Pharmacology of Ixazomib: The…, Clinical pharmacokinetics (2019) | [10.1007/s40262-018-0702-1](https://doi.org/10.1007/s40262-018-0702-1) |
 | <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.846). Primary extraction retained.">cross-check: partial</span> | [Papathanasiou_2025_reference](drugs/drug_lenalidomide/Lenalidomide_Papathanasiou2025_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Papathanasiou T et al., Population Pharmacokinetics for Belanta…, Clinical pharmacokinetics (2025) | [10.1007/s40262-025-01508-1](https://doi.org/10.1007/s40262-025-01508-1) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.857). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22, Q61 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Kim_2026_nonmem_final_model](drugs/drug_lenalidomide/Lenalidomide_Kim2026_nonmem_final_model.md) | — | 3-compartment (no model) | 7 | Kim H et al., Population Pharmacokinetics and Model-I…, Drug design, development an… (2026) | [10.2147/DDDT.S605741](https://doi.org/10.2147/DDDT.S605741) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q76 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Liang_2024_reference](drugs/drug_lenalidomide/Lenalidomide_Liang2024_reference.md) | — | 2-compartment (no model) | 4 | Liang X et al., Population pharmacokinetics of lenalido…, Scientific reports (2024) | [10.1038/s41598-024-52460-2](https://doi.org/10.1038/s41598-024-52460-2) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Kim_2026_reference](drugs/drug_lenalidomide/Lenalidomide_Kim2026_reference.md) | — | 2-compartment (no model) | 5 | Kim H et al., Population Pharmacokinetics and Model-I…, Drug design, development an… (2026) | [10.2147/DDDT.S605741](https://doi.org/10.2147/DDDT.S605741) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Liang_2024_reference](drugs/drug_lenalidomide/Lenalidomide_Liang2024_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Liang X et al., Population pharmacokinetics of lenalido…, Scientific reports (2024) | [10.1038/s41598-024-52460-2](https://doi.org/10.1038/s41598-024-52460-2) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Guglieri-López_2017_reference](drugs/drug_lenalidomide/Lenalidomide_GuglieriLpez2017_reference.md) | — | 1-compartment (no model) | 0 | Guglieri-López B et al., Population pharmacokinetics of lenalido…, Cancer chemotherapy and pha… (2017) | [10.1007/s00280-016-3228-y](https://doi.org/10.1007/s00280-016-3228-y) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.154). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: biomarker_kinetics_as_drug_pk</sub><br><sub>route_to: `scholar`</sub> | [Hughes_2019_reference](drugs/drug_lenalidomide/Lenalidomide_Hughes2019_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Hughes JH et al., Population pharmacokinetics of lenalido…, British journal of clinical… (2019) | [10.1111/bcp.13873](https://doi.org/10.1111/bcp.13873) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.842). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub><br><sub>route_to: `human_review`</sub> | [Kim_2026_control](drugs/drug_lenalidomide/Lenalidomide_Kim2026_control.md) | — | 3-compartment (no model) | 12 | Kim H et al., Population Pharmacokinetics and Model-I…, Drug design, development an… (2026) | [10.2147/DDDT.S605741](https://doi.org/10.2147/DDDT.S605741) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.842). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub><br><sub>route_to: `human_review`</sub> | [Kim_2026_moderate_ri](drugs/drug_lenalidomide/Lenalidomide_Kim2026_moderate_ri.md) | — | 3-compartment (no model) | 12 | Kim H et al., Population Pharmacokinetics and Model-I…, Drug design, development an… (2026) | [10.2147/DDDT.S605741](https://doi.org/10.2147/DDDT.S605741) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.842). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub><br><sub>route_to: `human_review`</sub> | [Kim_2026_overall](drugs/drug_lenalidomide/Lenalidomide_Kim2026_overall.md) | — | 3-compartment (no model) | 12 | Kim H et al., Population Pharmacokinetics and Model-I…, Drug design, development an… (2026) | [10.2147/DDDT.S605741](https://doi.org/10.2147/DDDT.S605741) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.889). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub><br><sub>route_to: `human_review`</sub> | [Kim_2026_severe_ri](drugs/drug_lenalidomide/Lenalidomide_Kim2026_severe_ri.md) | — | 3-compartment (no model) | 12 | Kim H et al., Population Pharmacokinetics and Model-I…, Drug design, development an… (2026) | [10.2147/DDDT.S605741](https://doi.org/10.2147/DDDT.S605741) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.154). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Hughes_2019_reference](drugs/drug_lenalidomide/Lenalidomide_Hughes2019_reference.md) | — | 1-compartment (no model) | 4 | Hughes JH et al., Population pharmacokinetics of lenalido…, British journal of clinical… (2019) | [10.1111/bcp.13873](https://doi.org/10.1111/bcp.13873) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Koiwai_2021_M_protein](drugs/drug_lenalidomide/pd_Koiwai_2021_M_protein.md) | serum M-protein ← isatuximab and lenalidomide · indirect response — drug inhibits the loss of serum M-protein | — | Koiwai K et al., PK/PD modeling analysis for dosing regi…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12666](https://doi.org/10.1002/psp4.12666) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Srimani_2022_Platelet](drugs/drug_lenalidomide/pd_Srimani_2022_Platelet.md) | Platelet count ← lenalidomide · indirect response — drug inhibits the production of Platelet count | — | Srimani JK et al., Population pharmacokinetic/pharmacodyna…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12815](https://doi.org/10.1002/psp4.12815) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Koiwai_2021_M](drugs/drug_lenalidomide/pd_Koiwai_2021_M.md) | serum M-protein ← lenalidomide · disease-progression model | model (no simulator) | Koiwai K et al., PK/PD modeling analysis for dosing regi…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12666](https://doi.org/10.1002/psp4.12666) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Srimani_2022_platelet_count](drugs/drug_lenalidomide/pd_Srimani_2022_platelet_count.md) | platelet count ← lenalidomide · delayed effect through an effect compartment | model (no simulator) | Srimani JK et al., Population pharmacokinetic/pharmacodyna…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12815](https://doi.org/10.1002/psp4.12815) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=lenalidomide).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` substrate | DrugBank actor |
+| absorption | liver | `ABCB1` substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
+| absorption | testis | `ABCB1` substrate | DrugBank actor |
+| metabolism | blood | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: CDH5 (target), CRBN (inhibitor), PTGS2 (negative modulator), TNF (inhibitor), TNFSF11 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -60,8 +74,8 @@ Lenalidomide is an immunomodulating and anti-angiogenic drug used to treat blood
 ## Coverage
 
 - **PubMed hits:** 38 matched, 20 returned
-- **screened:** 4  ·  **relevant:** 4
-- **records:** 10  ·  extracted 2  ·  needs_review 2  ·  rejected 6  ·  stale 0
+- **screened:** 4  ·  **relevant:** 3
+- **records:** 6  ·  extracted 2  ·  needs_review 2  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -70,32 +84,33 @@ _3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Connarn_2018.pdf` | Connarn JN et al., Population Pharmacokinetics of Lenalido…, Clinical pharmacology in dr… (2018) | popPK | 10 | [10.1002/cpdd.372](https://doi.org/10.1002/cpdd.372) | [28724202](https://pubmed.ncbi.nlm.nih.gov/28724202) | The paper describes a population pharmacokinetic model for lenalidomide but the specific numeric parameter values (e.g., typical CL, V) are not present in the provided abstract text, only qualitative correlations and percentage changes. |
-| `Guglieri-López_2017.pdf` | Guglieri-López B et al., Population pharmacokinetics of lenalido…, Cancer chemotherapy and pha… (2017) | popPK | 10 | [10.1007/s00280-016-3228-y](https://doi.org/10.1007/s00280-016-3228-y) | [28039509](https://pubmed.ncbi.nlm.nih.gov/28039509) | The paper reports a population PK model for lenalidomide in humans with qualitative descriptions of parameters (CL, V) and covariates, but specific numeric values are not visible in the provided text snippet. |
-| `Hughes_2019.pdf` | Hughes JH et al., Population pharmacokinetics of lenalido…, British journal of clinical… (2019) | popPK | 10 | [10.1111/bcp.13873](https://doi.org/10.1111/bcp.13873) | [30672004](https://pubmed.ncbi.nlm.nih.gov/30672004) | The paper reports a population pharmacokinetic model for lenalidomide with specific numeric estimates for apparent clearance (12 L/h), volume of distribution (68.8 L), and transit rate constant provided directly in the evidence. |
+| `Connarn_2018.pdf` | Connarn JN et al., Population Pharmacokinetics of Lenalido…, Clinical pharmacology in dr… (2018) | popPK | 10 | [10.1002/cpdd.372](https://doi.org/10.1002/cpdd.372) | [28724202](https://pubmed.ncbi.nlm.nih.gov/28724202) | The paper describes a population PK model for lenalidomide in humans, but the specific numeric parameter values (CL, V, etc.) are not listed in the provided text. |
+| `Guglieri-López_2017.pdf` | Guglieri-López B et al., Population pharmacokinetics of lenalido…, Cancer chemotherapy and pha… (2017) | popPK | 10 | [10.1007/s00280-016-3228-y](https://doi.org/10.1007/s00280-016-3228-y) | [28039509](https://pubmed.ncbi.nlm.nih.gov/28039509) | The paper is a population pharmacokinetic study of lenalidomide, but the specific numeric parameter values (CL, V, etc.) are not provided in the abstract evidence, likely residing in the full text or figures. |
+| `Hughes_2019.pdf` | Hughes JH et al., Population pharmacokinetics of lenalido…, British journal of clinical… (2019) | popPK | 10 | [10.1111/bcp.13873](https://doi.org/10.1111/bcp.13873) | [30672004](https://pubmed.ncbi.nlm.nih.gov/30672004) | The paper presents a population pharmacokinetic model for lenalidomide in humans with clear numeric values for clearance, volume of distribution, and transit rate constants provided in the abstract. |
 
-<sub>queue written 2026-10-07T00:03:24.248839+00:00</sub>
+<sub>queue written 2026-10-15T04:14:29.985989+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Burckhardt_2020 | irrelevant | 0 | 0 | The paper describes a simulation training program for pediatric trial staff and does not report any pharmacokinetic parameters or data for lenalidomide. |
-| popPK | Connarn_2018 | relevant | 10 | 2 | The paper describes a population pharmacokinetic model for lenalidomide but the specific numeric parameter values (e.g., typical CL, V) are not present in the provided abstract text, only qualitative correlations and percentage changes. |
-| popPK | Deng_2021 | irrelevant | 0 | 0 | The study is a mechanistic pharmacological investigation of thalidomide's analgesic effects and only uses lenalidomide as a comparator, reporting no pharmacokinetic parameters. |
-| popPK | Gupta_2019 | irrelevant | 0 | 0 | The paper is a review of the pharmacokinetics of ixazomib, not lenalidomide. |
-| popPK | Ide_2022 | irrelevant | 0 | 0 | The study analyzes the pharmacokinetics of elotuzumab, not lenalidomide, which is only mentioned as a co-administered comparator. |
-| popPK | Koiwai_2021 | irrelevant | 3 | 1 | The study focuses on the PK/PD modeling of isatuximab; lenalidomide is a co-administered comparator agent for which only qualitative PK descriptions are provided without specific numeric parameter values in the text. |
-| popPK | Lagrue_2015 | irrelevant | 0 | 0 | The paper reports immunological mechanisms and functional effects on NK cells, not quantitative pharmacokinetic disposition parameters. |
-| popPK | Li_2020 | irrelevant | 0 | 0 | The study reports population pharmacokinetics for pomalidomide, not lenalidomide. |
-| popPK | Papathanasiou_2025 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for belantamab mafodotin and its metabolite cys-mcMMAF, not for lenalidomide, which is only mentioned as a co-administered drug in combination trials. |
-| popPK | Passey_2017 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of elotuzumab and the impact of immunogenicity, with lenalidomide used only as a co-administered comparator drug. |
-| popPK | Passey_2018 | irrelevant | 0 | 0 | The paper is a review of the pharmacology of elotuzumab, not lenalidomide, and provides no PK parameters for lenalidomide. |
-| popPK | Rachedi_2022 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics and exposure-response of isatuximab, using lenalidomide only as a co-administered agent without reporting quantitative PK parameters for lenalidomide itself. |
-| popPK | Srimani_2022 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics and pharmacodynamics of ixazomib, with lenalidomide acting only as a co-administered background therapy in the combination regimen. |
-| popPK | Steichert_2025 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for enalapril and its metabolite enalaprilat, not lenalidomide. |
-| popPK | Takwale_2022 | irrelevant | 0 | 0 | The paper focuses on the development and antitumor activity of novel GSPT1 degraders, using lenalidomide only as a mechanistic reference without reporting any pharmacokinetic parameters. |
-| popPK | Xu_2018 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of daratumumab, with lenalidomide serving only as a co-administered background therapy. |
+| popPK | Burckhardt_2020 | irrelevant | 0 | 0 | The paper describes simulation training for clinical trial conduct and does not report any pharmacokinetic parameters for lenalidomide. |
+| popPK | Connarn_2018 | relevant | 10 | 2 | The paper describes a population PK model for lenalidomide in humans, but the specific numeric parameter values (CL, V, etc.) are not listed in the provided text. |
+| popPK | Deng_2021 | irrelevant | 0 | 0 | The study is a mechanistic pharmacological investigation of neuropathic pain and does not report pharmacokinetic disposition parameters for lenalidomide. |
+| popPK | Guglieri-López_2017 | relevant | 10 | 0 | The paper is a population pharmacokinetic study of lenalidomide, but the specific numeric parameter values (CL, V, etc.) are not provided in the abstract evidence, likely residing in the full text or figures. |
+| popPK | Gupta_2019 | irrelevant | 0 | 0 | The paper is a pharmacokinetic review of ixazomib, not lenalidomide; lenalidomide is only mentioned as a co-administered drug in combination therapy. |
+| popPK | Ide_2022 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for elotuzumab, not lenalidomide, which is only a co-administered drug. |
+| popPK | Koiwai_2021 | relevant | 5 | 1 | The paper reports population PK parameters for lenalidomide in the context of a PK/PD study for isatuximab, but the specific numeric values are located in Table S2 (Supplementary Material), which is not included in the provided evidence. |
+| popPK | Lagrue_2015 | irrelevant | 0 | 0 | The paper is an immunological/mechanistic study describing NK-cell activation and actin remodeling, not a pharmacokinetic study. |
+| popPK | Li_2020 | irrelevant | 0 | 0 | The paper reports population pharmacokinetic parameters for pomalidomide, not lenalidomide, and lenalidomide is only mentioned as a prior treatment for the study population. |
+| popPK | Papathanasiou_2025 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of belantamab mafodotin, with lenalidomide mentioned only as a co-administered agent in combination trials. |
+| popPK | Passey_2017 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of elotuzumab, with lenalidomide serving only as a co-administered drug in the treatment regimen, and no PK parameters for lenalidomide are reported. |
+| popPK | Passey_2018 | irrelevant | 0 | 0 | The paper is a review of the clinical pharmacology of elotuzumab, and lenalidomide is only mentioned as a co-administered drug, with no PK parameters reported for lenalidomide. |
+| popPK | Rachedi_2022 | irrelevant | 0 | 0 | The study is an exposure-response analysis for isatuximab, and lenalidomide is only a co-administered agent, with no population pharmacokinetic parameters reported for lenalidomide. |
+| popPK | Srimani_2022 | irrelevant | 0 | 0 | The study focuses on ixazomide pharmacokinetics and pharmacodynamics in multiple myeloma patients, with lenalidomide serving only as a background comparator drug in the combination regimen. |
+| popPK | Steichert_2025 | irrelevant | 0 | 0 | The paper reports pharmacokinetic parameters for enalapril and its metabolite enalaprilat, not for lenalidomide. |
+| popPK | Takwale_2022 | irrelevant | 0 | 0 | The paper focuses on the structure-activity relationship and antitumor efficacy of novel GSPT1 degraders, with lenalidomide mentioned only as a reference example, and no pharmacokinetic parameters for lenalidomide are reported. |
+| popPK | Xu_2018 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of daratumumab, with lenalidomide serving only as a co-administered drug in the background regimen. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 00:03 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-15 04:14 UTC</sub>

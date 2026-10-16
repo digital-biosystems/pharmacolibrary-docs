@@ -17,13 +17,13 @@
 
 ### Reviewer guidance
 
-**Meropenem clearance lacked an extracted estimate, leaving the parameter with only a typical value of 5.29 L/h and an unusable placeholder.**
+**No value for meropenem's clearance; t6_deviations.**
 
-The record lists a typical clearance of 5.29 L/h, but no population estimate for the clearance parameter was found. Consequently, the model was held back because the clearance parameter had no fitted value to use in the final model. Extracted — meropenem: V 2.05 L.
+The model was built, but meropenem's clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — meropenem: V 2.05 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[clearance].rse_percent`: this record has 0.038, the second reading 0.019; it also differs on 3 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Rančić A et al., Population pharmacokinetics of meropene…, Open medicine (Warsaw, Pola… (2024)
@@ -41,9 +41,9 @@ Rančić A et al., Population pharmacokinetics of meropene…, Open medicine (Wa
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Volume of distribution (L) (θ 2) | `Q61` · V | 2.05 | L | 0.0020499999999999997 | L | 0.006 | llm_confirmed (0.6) | j_med-2024-1004_tab_003:row2:col1, j_med-2024-1004_tab_003:row2:col2, j_med-2024-1004_tab_003:row2:col3 | — | not captured |
-| Effect of HTA (+ θ 8 × HTA) | `Q900` · equation variable | 0.0000 | not captured | not captured | not captured | 0.0000 | llm (0.6) | j_med-2024-1004_tab_003:row5:col1, j_med-2024-1004_tab_003:row5:col2, j_med-2024-1004_tab_003:row5:col3 | — | not captured |
-| Clearance (L/h) | `Q900` · Clearance (L/h) | 5.29 | L/h | 1.4694444444444445e-06 | not captured | 0.038 | not captured (not captured) | j_med-2024-1004_tab_003:row1:col1, j_med-2024-1004_tab_003:row1:col2, j_med-2024-1004_tab_003:row1:col3 | — | not captured |
+| Volume of distribution (L) (θ 2) | `Q61` · V | 2.05 | L | 0.0020499999999999997 | [l] | not captured | llm_confirmed (0.6) | j_med-2024-1004_tab_003:row2:col1 | — | not captured |
+| Effect of CRE (× (CRE) ^ θ 6) | `Q900` · equation variable | 0.0000 | not captured | not captured | not captured | not captured | llm (0.6) | j_med-2024-1004_tab_003:row3:col1 | — | not captured |
+| Clearance (L/h) | `Q900` · Clearance (L/h) | 5.29 | L/h | 1.4694444444444445e-06 | not captured | not captured | not captured (not captured) | j_med-2024-1004_tab_003:row1:col1 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -58,12 +58,10 @@ Rančić A et al., Population pharmacokinetics of meropene…, Open medicine (Wa
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'Effect of CRE (× (CRE) ^ θ 6)' — extend the ontology if this is a real PK parameter (source ['j_med-2024-1004_tab_003:row3:col1', 'j_med-2024-1004_tab_003:row3:col2', 'j_med-2024-1004_tab_003:row3:col3'])
-- dropped unlinked row (NIL): 'Effect of WBCs (× (WBCs) ^ θ 7)' — extend the ontology if this is a real PK parameter (source ['j_med-2024-1004_tab_003:row4:col1', 'j_med-2024-1004_tab_003:row4:col2'])
-- dropped unlinked row (NIL): 'Effect of VAN (+ θ 14 × VAN)' — extend the ontology if this is a real PK parameter (source ['j_med-2024-1004_tab_003:row6:col1', 'j_med-2024-1004_tab_003:row6:col2', 'j_med-2024-1004_tab_003:row6:col3'])
-- dropped unlinked row (NIL): 'Effect of COL (+ θ 15 × COL)' — extend the ontology if this is a real PK parameter (source ['j_med-2024-1004_tab_003:row7:col1', 'j_med-2024-1004_tab_003:row7:col2', 'j_med-2024-1004_tab_003:row7:col3'])
-- implicit units: 'Clearance (L/h) (θ 1)' → L/h (from the paper text: "Table 2 caption states 'CL – clearance (L/h)' and 'θ1 – typical value of CL'.")
-- implicit units: 'Volume of distribution (L) (θ 2)' → L (from the paper text: "The text states: 'Typical values of meropenem clearance and volume of distribution were 3.80 L/h and 3.52 L, respectivel")
+- dropped unlinked row (NIL): 'Effect of WBCs (× (WBCs) ^ θ 7)' — extend the ontology if this is a real PK parameter (source ['j_med-2024-1004_tab_003:row4:col1'])
+- dropped duplicate Q900 ('Effect of HTA (+ θ 8 × HTA)', value '0.0000') — already have one for this compound
+- dropped duplicate Q900 ('Effect of VAN (+ θ 14 × VAN)', value '0.825') — already have one for this compound
+- dropped unlinked row (NIL): 'Effect of COL (+ θ 15 × COL)' — extend the ontology if this is a real PK parameter (source ['j_med-2024-1004_tab_003:row7:col1'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=meropenem
 - bound model equation to Q22 (CL): CL = θ 1 * (AGE/50) ^ θ 3 * Exp[ETA(1)]
 - Q22 (CL) is equation-defined: value moved to equation-variable 'Clearance (L/h) (θ 1)'; equation kept verbatim
@@ -71,7 +69,8 @@ Rančić A et al., Population pharmacokinetics of meropene…, Open medicine (Wa
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- unparsed cell j_med-2024-1004_tab_003:row4:col3 = '−0.219–(−0.110)'
+- table j_med-2024-1004_tab_003: unbound_uncertainty
+- table j_med-2024-1004_tab_003: unparsed_numeric_cell
 - LLM selected parameter table(s) 3
 - captured model equation CL = θ 1 * (AGE/50) ^ θ 3 * Exp[ETA(1)]
 
@@ -108,10 +107,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['j_med-2024-1004_tab_003:row1:col1', 'j_med-2024-1004_tab_003:row1:col2', 'j_med-2024-1004_tab_003:row1:col3'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['j_med-2024-1004_tab_003:row2:col1', 'j_med-2024-1004_tab_003:row2:col2', 'j_med-2024-1004_tab_003:row2:col3'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['j_med-2024-1004_tab_003:row1:col1'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['j_med-2024-1004_tab_003:row2:col1'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q61 | pass | volume within physiological range | 2.05 L | not captured | not captured | ['j_med-2024-1004_tab_003:row2:col1', 'j_med-2024-1004_tab_003:row2:col2', 'j_med-2024-1004_tab_003:row2:col3'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 2.05 L | not captured | not captured | ['j_med-2024-1004_tab_003:row2:col1'] |
 
 **Reviewer per-scenario checks:**
 
@@ -130,9 +129,9 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_meropenem/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Rančić_2024` / `Rančić_2024::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_meropenem/models/modelica/_needs_review/Meropenem_Rani2024_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_meropenem/models/modelica/_needs_review/Meropenem_Rani2024_reference.deviation.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_meropenem/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Rančić_2024` / `Rančić_2024::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_meropenem/models/modelica/_needs_review/Meropenem_Rani2024_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_meropenem/models/modelica/_needs_review/Meropenem_Rani2024_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -158,4 +157,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 11:34 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 00:26 UTC</sub>

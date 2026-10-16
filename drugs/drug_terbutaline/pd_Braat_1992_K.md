@@ -18,9 +18,9 @@
 
 **Model:** No model was generated from this record.
 
-> Terbutaline (cited PK) acts on plasma potassium (hypokalemia) via an Emax-type stimulation model; the paper excerpts do not state the mechanism beyond this. Reported potency: IC50 = 22 ± 12 ng/ml; no Emax, kin, kout, ke0, or gamma values are given.
+> The record describes an Emax model where terbutaline concentrations stimulate plasma potassium levels, with an IC50 of 22 (+/- 12) ng/ml. The paper does not provide full text to specify the underlying mechanism or additional rate parameters.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
 
 - **paper:** `Braat_1992`
 - **model family:** `emax`

@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;cetuximab&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/&quot;},{&quot;label&quot;:&quot;Grisic_2020 \u00b7 mmcl&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cetuximab_Cognetti2026_reference&quot;,&quot;label&quot;:&quot;Cognetti_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/Cetuximab_Cognetti2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cetuximab_Pointreau2016_reference&quot;,&quot;label&quot;:&quot;Pointreau_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/Cetuximab_Pointreau2016_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cetuximab_Yang2026_reference&quot;,&quot;label&quot;:&quot;Yang_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/Cetuximab_Yang2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Lin_2011_Ct_2&quot;,&quot;label&quot;:&quot;Lin_2011 \u00b7 Ct&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/pd_Lin_2011_Ct_2.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -28,7 +29,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 Grisic AM et al., Semimechanistic Clearance Models of Onc…, CPT: pharmacometrics & syst… (2020)
   ·  DOI: [10.1002/psp4.12558](https://doi.org/10.1002/psp4.12558)
 
-<div class="pk-model-meta" hidden drug="cetuximab" model-id="Cetuximab_Grisic2020_mmcl" status="needs_review" stale="false" population="adults with metastatic colorectal cancer" measured-compound="cetuximab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="cetuximab" model-id="Cetuximab_Grisic2020_mmcl" status="needs_review" stale="false" population="patients with metastatic colorectal cancer" measured-compound="cetuximab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.
@@ -40,12 +41,12 @@ Grisic AM et al., Semimechanistic Clearance Models of Onc…, CPT: pharmacometri
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| V 1, L (RSE%) | `Q63` · V1 | 3.75 | L | 0.00375 | L | not captured | space_fold (0.95) | psp412558-tbl-0002:row2:col3 | — | not captured |
-| Q, L/h (RSE%) | `Q30` · Q | 0.0332 | L/h | 9.222222222222223e-09 | L/h | not captured | exact (1.0) | psp412558-tbl-0002:row3:col3 | — | not captured |
-| V 2, L (RSE%) | `Q64` · V2 | 2.67 | L | 0.00267 | L | not captured | space_fold (0.95) | psp412558-tbl-0002:row4:col3 | — | not captured |
-| K M, mg/L (RSE%) | `Q1` · Km | 283 | mg/L | not captured | mg/L | not captured | space_fold (0.95) | psp412558-tbl-0002:row5:col3 | — | not captured |
-| V max, mg/h (RSE%) | `Q66` · Vmax | 9.48 | RSE% | not captured | [rse%] | not captured | special_case (0.95) | psp412558-tbl-0002:row6:col3 | — | not captured |
-| CL | `Q22` · CL | 350.0 | mL/day | 4.050925925925926e-09 | L/h | not captured | review_gapfill (0.7) | Augustin_2026:review | — | not captured |
+| V 1, L (RSE%) | `Q63` · V1 | 3.75 | L | 0.00375 | L | 3 | space_fold (0.95) | psp412558-tbl-0002:row2:col3 | — | not captured |
+| Q, L/h (RSE%) | `Q30` · Q | 0.0332 | L/h | 9.222222222222223e-09 | L/h | 19 | exact (1.0) | psp412558-tbl-0002:row3:col3 | — | not captured |
+| V 2, L (RSE%) | `Q64` · V2 | 2.67 | L | 0.00267 | L | 8 | space_fold (0.95) | psp412558-tbl-0002:row4:col3 | — | not captured |
+| K M, mg/L (RSE%) | `Q1` · Km | 283 | mg/L | not captured | mg/L | 26 | space_fold (0.95) | psp412558-tbl-0002:row5:col3 | — | not captured |
+| V max, mg/h (RSE%) | `Q66` · Vmax | 9.48 | RSE% | not captured | [rse%] | 17 | special_case (0.95) | psp412558-tbl-0002:row6:col3 | — | not captured |
+| CL (mL/day) | `Q22` · CL | 350.0 | mL/day | 4.050925925925926e-09 | L/h | not captured | review_gapfill (0.7) | Augustin_2026:review | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -55,31 +56,29 @@ Grisic AM et al., Semimechanistic Clearance Models of Onc…, CPT: pharmacometri
 ## Departures & gaps
 
 **Interpretation flags:**
+- column 'mmcl' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - unit_dimension_unknown: 'RSE%' (V1)
 - unit_dimension_unknown: 'RSE%' (Q)
 - unit_dimension_unknown: 'RSE%' (V2)
 - unit_dimension_unknown: 'RSE%' (Km)
 - unit_dimension_unknown: 'RSE%' (Vmax)
-- dropped unlinked row (NIL): 'AIC (SAEM‐IMP)' — extend the ontology if this is a real PK parameter (source ['psp412558-tbl-0002:row19:col3'])
-- implicit units: 'V 1, L (RSE%)' → L (from the paper text: 'The parameter entry states “V 1, L (RSE%) = 3.75.”')
-- implicit units: 'Q, L/h (RSE%)' → L/h (from the paper text: 'The parameter entry states “Q, L/h (RSE%) = 0.0332.”')
-- implicit units: 'V 2, L (RSE%)' → L (from the paper text: 'The parameter entry states “V 2, L (RSE%) = 2.67.”')
-- implicit units: 'K M, mg/L (RSE%)' → mg/L (from the paper text: 'The parameter entry states “K M, mg/L (RSE%) = 283.”')
+- dropped diagnostic row 'η V1, CV% (RSE%) [Shr%]' → Q318 (shrinkage) — reported statistic, not a parameter
+- dropped duplicate Q64 ('η V2, CV% (RSE%) [Shr%]', value '83.4') — already have one for this compound
+- dropped duplicate Q66 ('η Vmax, CV% (RSE%) [Shr%]', value '30.5') — already have one for this compound
+- implicit units: 'V 1, L (RSE%)' → L (from the paper text: "Table 1 header for V1 lists 'L' explicitly: 'V 1, L (RSE%) = 3.75'")
+- implicit units: 'Q, L/h (RSE%)' → L/h (from the paper text: "Table 1 header for Q lists 'L/h' explicitly: 'Q, L/h (RSE%) = 0.0332'")
+- implicit units: 'V 2, L (RSE%)' → L (from the paper text: "Table 1 header for V2 lists 'L' explicitly: 'V 2, L (RSE%) = 2.67'")
+- implicit units: 'K M, mg/L (RSE%)' → mg/L (from the paper text: "Table 1 header for KM lists 'mg/L' explicitly: 'K M, mg/L (RSE%) = 283'. Additionally, the text states 'K m, concentrati")
 - implicit units: 'V max, mg/h (RSE%)' — the LLM proposed 'mg/h', whose dimension does not fit Q66; left unset
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=cetuximab
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
-- population split: 'mmcl' subgroup of Grisic_2020 (paper reports 5 populations: lcl, mmcl, mmcl + lcl, mmcl + tvarcl, tvarcl)
+- population split: 'mmcl' subgroup of Grisic_2020 (paper reports 4 populations: lcl, mmcl, mmcl + lcl, mmcl + tvarcl)
 - molar mass: none found for 'cetuximab' — its concentrations stay mass-only
 - gap-filled Q22 (CL) from Augustin_2026's review values (primary lacked it)
 
 **Extraction notes:**
-- unparsed cell psp412558-tbl-0002:row1:col6 = '0.0206 (‐)'
-- unparsed cell psp412558-tbl-0002:row2:col6 = '3.82 (‐)'
-- unparsed cell psp412558-tbl-0002:row3:col6 = '0.0216 (‐)'
-- unparsed cell psp412558-tbl-0002:row4:col6 = '3.31 (‐)'
-- unparsed cell psp412558-tbl-0002:row17:col6 = '8.65 (‐)'
-- unparsed cell psp412558-tbl-0002:row18:col6 = '22.9 (‐)'
+- table psp412558-tbl-0002: unparsed_numeric_cell
 - LLM selected parameter table(s) 2
 
 ## Validation
@@ -131,7 +130,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_cetuximab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Grisic_2020` / `Grisic_2020::mmcl`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_cetuximab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Grisic_2020` / `Grisic_2020::mmcl`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -157,4 +156,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 11:25 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 18:47 UTC</sub>

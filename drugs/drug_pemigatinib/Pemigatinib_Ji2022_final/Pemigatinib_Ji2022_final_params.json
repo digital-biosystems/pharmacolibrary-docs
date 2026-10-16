@@ -1,0 +1,39 @@
+{
+ "dose_source": "paper",
+ "model_id": "Pemigatinib_Ji2022_final",
+ "molar_masses": {
+  "central.C": 0.487508
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "range",
+ "paper_doses_mg": [
+  1.0,
+  20.0
+ ],
+ "parameters": {
+  "Cl": 2.5e-06,
+  "F": 1.0,
+  "MM": 0.487508,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0023,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-06,
+  "k12": 2.760524499654934e-05,
+  "k21": 5.548619780829519e-05,
+  "ka": 0.0004138888888888889,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 8830.460921843687
+ },
+ "reference_peaks": {
+  "central.C": 4.645183922753834e-06
+ },
+ "stop_time": 259200.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

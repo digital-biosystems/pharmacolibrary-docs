@@ -4,7 +4,7 @@
 
 # nedosiran — `Nedosiran_Zhang2025_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.815), gpt-oss:120b (not confirmed, agreement 0.846). Primary extraction retained.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.846), gpt-oss:120b (not confirmed, agreement 0.846). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -16,42 +16,42 @@
 
 ### Reviewer guidance
 
-**Vmax, CL and V have no unit.**
+**C5 dimension mismatch on a structural parameter.**
 
-Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (Km), so that value has no SI equivalent. Extracted — nedosiran: CL/F 6.1 L/h, V1/F 148 L, kabs 0.212 1/h, FR 0.692, V2/F 6.56e+03 L, Q/F 2.79 L/h, Vmax 3.37, Km 248 ng/mL, … (+2).
+A reported unit could not be converted (equation variable, Vmax and Km), so that value has no SI equivalent. Extracted — nedosiran: CL/F 6.1 L/h, V1/F 148 L, kabs 0.212 1/h, FR 0.692, V2/F 6.56e+03 L, Q/F 2.79 L/h, Vmax 3.37 mg/h, Km 248 ng/mL, … (+3).
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has nedosiran, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has nedosiran, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
-
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:39:11.353546+00:00) predates the upstream re-run (2026-10-07 17:53:44.563598+00:00). Current validate status: `needs_review`.
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Zhang S et al., Population Pharmacokinetic and Pharmaco…, Clinical pharmacokinetics (2025)
   ·  DOI: [10.1007/s40262-025-01540-1](https://doi.org/10.1007/s40262-025-01540-1)
 
-<div class="pk-model-meta" hidden drug="nedosiran" model-id="Nedosiran_Zhang2025_reference" status="needs_review" stale="true" population="patients with primary hyperoxaluria (PH1, PH2, HV)" measured-compound="nedosiran" parameterization="apparent" topology="3C"></div>
+<div class="pk-model-meta" hidden drug="nedosiran" model-id="Nedosiran_Zhang2025_reference" status="rejected" stale="false" population="adults and children with primary hyperoxaluria" measured-compound="nedosiran" parameterization="apparent" topology="3C"></div>
 
 **Model structure:** 3-compartment; no model was built for this record.  
-**Parameters:** 10 extracted.
+**Parameters:** 11 extracted.
 
 **Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F | `Q27` · CL/F | 6.10 | L/h | 1.6944444444444442e-06 | L/h | 11.4 | exact (1.0) | Tab2:row1:col3, Tab2:row1:col4 | — | not captured |
-| Vc/F | `Q290` · V1/F | 148 | L | 0.148 | L | 6.07 | exact (1.0) | Tab2:row2:col3, Tab2:row2:col4 | — | not captured |
-| Ka1 | `Q49` · kabs | 0.212 | 1/h | 5.888888888888889e-05 | 1/h | 6.78 | llm (0.6) | Tab2:row3:col2, Tab2:row3:col3, Tab2:row3:col4 | — | not captured |
-| FR1 | `Q43` · FR | 0.692 | not captured | not captured | not captured | 2.20 | llm (0.6) | Tab2:row5:col3, Tab2:row5:col4 | — | not captured |
-| Vp/F | `Q82` · V2/F | 6560 | L | 6.5600000000000005 | L | 22.4 | exact (1.0) | Tab2:row6:col3, Tab2:row6:col4 | — | not captured |
-| Q/F | `Q69` · Q/F | 2.79 | L/h | 7.75e-07 | L/h | 13.0 | exact (1.0) | Tab2:row7:col3, Tab2:row7:col4 | — | not captured |
-| Vmax | `Q66` · Vmax | 3.37 | not captured | not captured | not captured | 20.9 | special_case (0.95) | Tab2:row8:col3, Tab2:row8:col4 | — | not captured |
-| KM | `Q1` · Km | 248 | ng/mL | not captured | ng/mL | 26.7 | exact (1.0) | Tab2:row9:col3, Tab2:row9:col4 | — | not captured |
-| CL.EGFR | `Q22` · CL | 0.969 | not captured | not captured | not captured | 11.6 | llm (0.6) | Tab2:row10:col3, Tab2:row10:col4 | — | not captured |
-| Vc.EGFR | `Q61` · V | 0.174 | not captured | not captured | not captured | 18.1 | llm (0.6) | Tab2:row11:col3, Tab2:row11:col4 | — | not captured |
+| CL/F | `Q27` · CL/F | 6.10 | L/h | 1.6944444444444442e-06 | [l] / [h] | 11.4 | exact (1.0) | Tab2:row1:col3 | — | not captured |
+| Vc/F | `Q290` · V1/F | 148 | L | 0.148 | [l] | 6.07 | exact (1.0) | Tab2:row2:col3 | — | not captured |
+| Ka1 | `Q49` · kabs | 0.212 | 1/h | 5.888888888888889e-05 | [1] / [h] | 6.78 | llm (0.6) | Tab2:row3:col3 | — | not captured |
+| Ka2 | `Q900` · equation variable | 14.9 | 1/h | not captured | [1] / [h] | 4.48 | llm (0.6) | Tab2:row4:col3 | — | not captured |
+| FR1 | `Q43` · FR | 0.692 | not captured | not captured | not captured | 2.20 | llm (0.6) | Tab2:row5:col3 | — | not captured |
+| Vp/F | `Q82` · V2/F | 6560 | L | 6.5600000000000005 | [l] | 22.4 | exact (1.0) | Tab2:row6:col3 | — | not captured |
+| Q/F | `Q69` · Q/F | 2.79 | L/h | 7.75e-07 | [l] / [h] | 13.0 | exact (1.0) | Tab2:row7:col3 | — | not captured |
+| Vmax | `Q66` · Vmax | 3.37 | mg/h | not captured | [mg] / [h] | 20.9 | special_case (0.95) | Tab2:row8:col3 | — | not captured |
+| KM | `Q1` · Km | 248 | ng/mL | not captured | [ng] / [ml] | 26.7 | exact (1.0) | Tab2:row9:col3 | — | not captured |
+| CL.EGFR | `Q86` · C0 | 0.969 | not captured | not captured | not captured | 11.6 | llm (0.6) | Tab2:row10:col3 | — | not captured |
+| Vc.EGFR | `Q61` · V | 0.174 | not captured | not captured | not captured | 18.1 | llm (0.6) | Tab2:row11:col3 | — | not captured |
+| CL.BW | `Q354` · CLnorm | 0.750 | not captured | not captured | not captured | not captured | llm (0.6) | Tab2:row13:col3 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -61,82 +61,44 @@ Zhang S et al., Population Pharmacokinetic and Pharmaco…, Clinical pharmacokin
 ## Departures & gaps
 
 **Interpretation flags:**
-- column 'units' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- dropped unlinked row (NIL): 'Ka2' — extend the ontology if this is a real PK parameter (source ['Tab2:row4:col2', 'Tab2:row4:col3', 'Tab2:row4:col4'])
+- unit_dimension_mismatch: 'Vmax' → Q66 (unit '[mass] / [time]' vs ontology '[length] ** 3') — route to review
 - dropped duplicate Q49 ('ka.BW', value '-0.221') — already have one for this compound
-- dropped duplicate Q22 ('CL.BW', value '0.750') — already have one for this compound
 - dropped duplicate Q61 ('V.BW', value '1.00') — already have one for this compound
 - dropped duplicate Q49 ('Ka1.PH', value '1.32') — already have one for this compound
 - dropped duplicate Q66 ('Vmax.BW', value '0.492') — already have one for this compound
-- routed 'ExpError' → Q316 (prop_error) to residual_error — variability estimate, not a structural parameter
-- dropped PD-category row 'Kout' → Q328 (kout, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Zhang_2025_table_3:row0:col2', 'Zhang_2025_table_3:row0:col3'])
-- dropped unlinked row (NIL): 'BSL' — extend the ontology if this is a real PK parameter (source ['Zhang_2025_table_3:row1:col3', 'Zhang_2025_table_3:row1:col4'])
-- dropped PD-category row 'Imax' → Q323 (Imax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Zhang_2025_table_3:row2:col3', 'Zhang_2025_table_3:row2:col4'])
-- dropped PD-category row 'IC50' → Q322 (IC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Zhang_2025_table_3:row3:col3', 'Zhang_2025_table_3:row3:col4'])
-- dropped PD-category row 'Gamma' → Q325 (Hill, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Zhang_2025_table_3:row4:col3'])
-- dropped PD-category row 'Lambda' → Q342 (lambda_hazard, category G14) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Zhang_2025_table_3:row5:col3'])
-- dropped unlinked row (NIL): 'AGE.BSL' — extend the ontology if this is a real PK parameter (source ['Zhang_2025_table_3:row6:col3', 'Zhang_2025_table_3:row6:col4'])
-- routed 'PropError' → Q316 (prop_error) to residual_error — variability estimate, not a structural parameter
-- NIL: refused to back-fill base 'NIL' from footnote/prose loose number 70 (source ['Tab2:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'NIL' from footnote/prose loose number 90 (source ['Tab2:footnote']); the table cell was unparseable — needs review
+- routed 'ExpError' → Q315 (sigma) to residual_error — variability estimate, not a structural parameter
 - NIL: refused to back-fill base 'NIL' from footnote/prose loose number None (source ['Tab2:footnote']); the table cell was unparseable — needs review
-- implicit units: 'CL/F' → L/h (from the popPK convention: 'CL/F is apparent clearance. In population PK, clearance is conventionally expressed in L/h. The value 6.10 is consistent')
-- implicit units: 'Vc/F' → L (from the popPK convention: 'Vc/F is the apparent volume of distribution of the central compartment. Volumes are conventionally expressed in L. The v')
-- implicit units: 'Ka1' → 1/h (from the popPK convention: 'Ka1 is an absorption rate constant (first-order). Rate constants are conventionally expressed in 1/h. The value 0.212 is')
-- implicit units: 'Vp/F' → L (from the popPK convention: 'Vp/F is the apparent volume of distribution of the peripheral compartment. Volumes are conventionally expressed in L. Th')
-- implicit units: 'Q/F' → L/h (from the popPK convention: 'Q/F is the apparent intercompartmental clearance. Intercompartmental clearances are conventionally expressed in L/h. The')
-- implicit units: 'Vmax' — the LLM proposed 'ng/mL/h', whose dimension does not fit Q66; left unset
-- implicit units: 'KM' → ng/mL (from the popPK convention: 'KM is the Michaelis constant (substrate concentration at half Vmax). It has the same units as the drug concentration. Gi')
-- implicit units: 'CL.EGFR' — the LLM proposed '1', whose dimension does not fit Q22; left unset
-- implicit units: 'Vc.EGFR' — the LLM proposed '1', whose dimension does not fit Q61; left unset
+- NIL: refused to back-fill base 'V1/F' from footnote/prose loose number None (source ['Tab2:footnote']); the table cell was unparseable — needs review
+- NIL: refused to back-fill base 'Q/F' from footnote/prose loose number None (source ['Tab2:footnote']); the table cell was unparseable — needs review
+- NIL: refused to back-fill base 'V2/F' from footnote/prose loose number None (source ['Tab2:footnote']); the table cell was unparseable — needs review
+- NIL: refused to back-fill base 'omega_cov' from footnote/prose loose number None (source ['Tab2:footnote']); the table cell was unparseable — needs review
+- NIL: refused to back-fill base 'C0' from footnote/prose loose number None (source ['Tab2:footnote']); the table cell was unparseable — needs review
+- NIL: refused to back-fill base 'Vmax' from footnote/prose loose number None (source ['Tab2:footnote']); the table cell was unparseable — needs review
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=nedosiran
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - structure disagreement: deterministic 3C vs LLM 2C — review compartment count
+- status held at route_to_review — not promoted
 - molar mass: none found for 'nedosiran' — its concentrations stay mass-only
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- unparsed cell Tab2:row1:col5 = '[4.74; 7.47]'
-- unparsed cell Tab2:row2:col5 = '[130; 165]'
-- unparsed cell Tab2:row3:col5 = '[0.184; 0.240]'
-- unparsed cell Tab2:row4:col5 = '[13.6; 16.2]'
-- unparsed cell Tab2:row5:col5 = '[0.662; 0.721]'
-- unparsed cell Tab2:row6:col5 = '[3690; 9440]'
-- unparsed cell Tab2:row7:col5 = '[2.08; 3.51]'
-- unparsed cell Tab2:row8:col5 = '[1.99; 4.75]'
-- unparsed cell Tab2:row9:col5 = '[118; 378]'
-- unparsed cell Tab2:row10:col5 = '[0.749; 1.19]'
-- unparsed cell Tab2:row11:col5 = '[0.112; 0.236]'
-- unparsed cell Tab2:row12:col1 = 'BW on ka1 and ka2'
-- unparsed cell Tab2:row12:col5 = '[−0.428; 0.0135]'
-- unparsed cell Tab2:row15:col1 = 'PH Type 1 on ka1'
-- unparsed cell Tab2:row15:col5 = '[1.07; 1.57]'
-- unparsed cell Tab2:row16:col5 = '[0.355; 0.629]'
-- unparsed cell Tab2:row18:col1 = 'IIV on ka1 (CV%)'
-- unparsed cell Tab2:row19:col1 = 'IIV on ka2 (CV%)'
-- unparsed cell Tab2:row21:col1 = 'IIV on FR1 (additive on logit) (SD)'
-- unparsed cell Zhang_2025_table_3:row1:col5 = '[202; 325]'
-- unparsed cell Zhang_2025_table_3:row2:col5 = '[0.640; 0.734]'
-- unparsed cell Zhang_2025_table_3:row3:col5 = '[0.992; 2.38]'
-- unparsed cell Zhang_2025_table_3:row6:col5 = '[−0.578; −0.321]'
-- unparsed cell Zhang_2025_table_3:row8:col1 = 'IIV on IC50 (CV%)'
-- companion parameter table 3 transcribed (21 record(s))
-- LLM selected parameter table(s) 2, 3
+- table Tab2: missing_unit_binding
+- LLM selected parameter table(s) 2
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
-Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.815 (22/27 fields) | 5 |
+| `gpt-oss-120b` | not confirmed | 0.846 (22/26 fields) | 4 |
 | `gpt-oss:120b` | not confirmed | 0.846 (22/26 fields) | 4 |
 
-<details><summary>9 field discrepancies</summary>
+<details><summary>8 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[cl.bw]` | not captured | 0.750 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[v.bw]` | not captured | 1.00 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[vc.egfr].parameter_id` | Q61 | Q63 | mismatch |
 | `gpt-oss-120b` | `screen.dose_compound` | nedosiran | unknown | mismatch |
@@ -158,23 +120,24 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 10 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 11 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q1 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Tab2:row9:col3', 'Tab2:row9:col4'] |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row1:col3', 'Tab2:row1:col4'] |
-| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row2:col3', 'Tab2:row2:col4'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Tab2:row3:col2', 'Tab2:row3:col3', 'Tab2:row3:col4'] |
-| C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row7:col3', 'Tab2:row7:col4'] |
-| C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row6:col3', 'Tab2:row6:col4'] |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row10:col3', 'Tab2:row10:col4'] |
-| C5_unit_missing_Q61 | fail | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row11:col3', 'Tab2:row11:col4'] |
-| C5_unit_missing_Q66 | fail | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row8:col3', 'Tab2:row8:col4'] |
+| C5_dimension_Q1 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Tab2:row9:col3'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row1:col3'] |
+| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row2:col3'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Tab2:row3:col3'] |
+| C5_dimension_Q66 | fail | [mass] / [time] | mg/h | not captured | not captured | ['Tab2:row8:col3'] |
+| C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row7:col3'] |
+| C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row6:col3'] |
+| C5_unit_missing_Q354 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row13:col3'] |
+| C5_unit_missing_Q61 | fail | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row11:col3'] |
+| C5_unit_missing_Q86 | fail | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Tab2:row10:col3'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 6.1 L/h | not captured | not captured | ['Tab2:row1:col3', 'Tab2:row1:col4'] |
-| C9_phys_window_Q290 | pass | volume within physiological range | 148 L | not captured | not captured | ['Tab2:row2:col3', 'Tab2:row2:col4'] |
-| C9_phys_window_Q82 | pass | volume within physiological range | 6.56e+03 L | not captured | not captured | ['Tab2:row6:col3', 'Tab2:row6:col4'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 6.1 L/h | not captured | not captured | ['Tab2:row1:col3'] |
+| C9_phys_window_Q290 | pass | volume within physiological range | 148 L | not captured | not captured | ['Tab2:row2:col3'] |
+| C9_phys_window_Q82 | pass | volume within physiological range | 6.56e+03 L | not captured | not captured | ['Tab2:row6:col3'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -183,24 +146,14 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_nedosiran/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Zhang_2025` / `Zhang_2025::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_nedosiran/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Zhang_2025` / `Zhang_2025::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-</tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -209,4 +162,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 17:53 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 03:34 UTC</sub>

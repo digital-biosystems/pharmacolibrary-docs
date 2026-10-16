@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01D&quot;,&quot;href&quot;:&quot;atc/J01D.md&quot;},{&quot;label&quot;:&quot;doripenem&quot;,&quot;href&quot;:&quot;drugs/drug_doripenem/&quot;},{&quot;label&quot;:&quot;Wang_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Doripenem_Nonoshita2020_base_model&quot;,&quot;label&quot;:&quot;Nonoshita_2020_base_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doripenem/Doripenem_Nonoshita2020_base_model.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doripenem_Nonoshita2020_population_mean&quot;,&quot;label&quot;:&quot;Nonoshita_2020_population_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doripenem/Doripenem_Nonoshita2020_population_mean.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doripenem_Tanaka2017_based_on_ppk_model&quot;,&quot;label&quot;:&quot;Tanaka_2017_based_on_ppk_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doripenem/Doripenem_Tanaka2017_based_on_ppk_model.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doripenem_Tanaka2017_bayesian_estimated&quot;,&quot;label&quot;:&quot;Tanaka_2017_bayesian_estimated&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doripenem/Doripenem_Tanaka2017_bayesian_estimated.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doripenem_Wang2022_reference&quot;,&quot;label&quot;:&quot;Wang_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doripenem/Doripenem_Wang2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Doripenem_Nonoshita2020_reference&quot;,&quot;label&quot;:&quot;Nonoshita_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doripenem/Doripenem_Nonoshita2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doripenem_Tanaka2017_reference&quot;,&quot;label&quot;:&quot;Tanaka_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doripenem/Doripenem_Tanaka2017_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # doripenem — `Doripenem_Wang2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.737). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.737). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -13,38 +13,39 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** Model and browser simulation available in **Models** and **Simulation**.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
-**The absorption rate constant and lag time were missing from the doripenem record and replaced with unreported library defaults.**
+**C5 dimension mismatch on a structural parameter.**
 
-The source paper does not report values for the absorption phase, requiring the model to invent these kinetics. Consequently, the record relies on generic placeholder values rather than estimates derived from the doripenem data. This lack of explicit reporting for the absorption process prevents the model from being accepted without further review. Extracted — doripenem: CLu 120 mL/min, V1 8.17 L, V2 6.95 L, Q 8.54 L/h.
+A reported unit could not be converted (C0), so that value has no SI equivalent. Extracted — doripenem: CL 14.2 L/h, V1 8.2 L, Q 8.59 L/h, V2 6.95 L, C0 0.7 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 84.4, the second reading 17.6; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Wang Y et al., Pharmacokinetics and Safety of Doripene…, Antibiotics (Basel, Switzer… (2022)
   ·  DOI: [10.3390/antibiotics11070958](https://doi.org/10.3390/antibiotics11070958)
 
-<div class="pk-model-meta" hidden drug="doripenem" model-id="Doripenem_Wang2022_reference" status="needs_review" stale="false" population="" measured-compound="doripenem" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="doripenem" model-id="Doripenem_Wang2022_reference" status="rejected" stale="false" population="healthy Chinese subjects" measured-compound="doripenem" parameterization="mechanistic" topology="2C"></div>
 
-**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
-**Parameters:** 4 extracted.
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 5 extracted.
 
-**Parameterization:** apparent.
+**Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Ccr | `Q24` · CLu | 120.0 | mL/min | 2e-06 | L/h | not captured | review (0.7) | Wang_2022:review | — | not captured |
-| Vc | `Q63` · V1 | 8.17 | L | 0.00817 | L | not captured | review (0.7) | Wang_2022:review | — | not captured |
-| Vp | `Q64` · V2 | 6.95 | L | 0.0069500000000000004 | L | not captured | review (0.7) | Wang_2022:review | — | not captured |
-| Q | `Q30` · Q | 8.54 | L/h | 2.372222222222222e-06 | L/h | not captured | review (0.7) | Wang_2022:review | — | not captured |
+| CL (L/h) | `Q22` · CL | 14.2 | L/h | 3.944444444444444e-06 | [l] / [h] | not captured | exact (1.0) | antibiotics-11-00958-t004:row2:col1, antibiotics-11-00958-t004:row2:col2 | — | 15.1 (None% RSE) |
+| Vc (L) | `Q63` · V1 | 8.20 | L | 0.008199999999999999 | [l] | not captured | exact (1.0) | antibiotics-11-00958-t004:row3:col1, antibiotics-11-00958-t004:row3:col2 | — | 15.3 (None% RSE) |
+| Q (L/h) | `Q30` · Q | 8.59 | L/h | 2.3861111111111113e-06 | [l] / [h] | not captured | exact (1.0) | antibiotics-11-00958-t004:row4:col1, antibiotics-11-00958-t004:row4:col2 | — | 0 (None% RSE) |
+| Vp (L) | `Q64` · V2 | 6.95 | L | 0.0069500000000000004 | [l] | not captured | exact (1.0) | antibiotics-11-00958-t004:row5:col1, antibiotics-11-00958-t004:row5:col2 | — | 7.37 (None% RSE) |
+| θBW on Vp | `Q86` · C0 | 0.700 | % | not captured | [%] | not captured | llm_corrected (0.6) | antibiotics-11-00958-t004:row6:col1, antibiotics-11-00958-t004:row6:col2 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -53,15 +54,27 @@ Wang Y et al., Pharmacokinetics and Safety of Doripene…, Antibiotics (Basel, S
 
 ## Departures & gaps
 
-**Deviations:**
-- `defaulted_parameters`: ['ka', 'Tlag']
-- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
-- `invented_absorption`: ka defaulted — not reported in source
-- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
-
 **Interpretation flags:**
-- built from REVIEW reference values (Wang_2022) — secondary source
-- volume reported by review
+- table section iiv: 'CL (L/h)' routed out of structural estimates ('Between-Subject Variability')
+- table section iiv: 'Vc (L)' routed out of structural estimates ('Between-Subject Variability')
+- table section iiv: 'Q (L/h)' routed out of structural estimates ('Between-Subject Variability')
+- table section iiv: 'Vp (L)' routed out of structural estimates ('Between-Subject Variability')
+- table representations disagree for 'CL (L/h)'; source reconciliation required
+- table representations disagree for 'Vc (L)'; source reconciliation required
+- table representations disagree for 'Q (L/h)'; source reconciliation required
+- table representations disagree for 'Vp (L)'; source reconciliation required
+- table representations disagree for 'θBW on Vp'; source reconciliation required
+- table representations disagree for 'ProportionalError (%)'; source reconciliation required
+- table representations disagree for 'Additive Error (%)'; source reconciliation required
+- unit_dimension_mismatch: 'θBW on Vp' → Q86 (unit 'dimensionless' vs ontology '[mass] * [time] / [length] ** 3') — route to review
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=doripenem
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at route_to_review — not promoted
+
+**Extraction notes:**
+- table antibiotics-11-00958-t004: ragged_grid
+- table antibiotics-11-00958-t004: representations disagree; selected evidence retained, not merged
+- LLM selected parameter table(s) 4
 
 ## Validation
 
@@ -94,30 +107,19 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q24 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Wang_2022:review'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Wang_2022:review'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Wang_2022:review'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Wang_2022:review'] |
-| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['antibiotics-11-00958-t004:row2:col1', 'antibiotics-11-00958-t004:row2:col2'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['antibiotics-11-00958-t004:row4:col1', 'antibiotics-11-00958-t004:row4:col2'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['antibiotics-11-00958-t004:row3:col1', 'antibiotics-11-00958-t004:row3:col2'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['antibiotics-11-00958-t004:row5:col1', 'antibiotics-11-00958-t004:row5:col2'] |
+| C5_dimension_Q86 | fail | dimensionless | % | not captured | not captured | ['antibiotics-11-00958-t004:row6:col1', 'antibiotics-11-00958-t004:row6:col2'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 14.2 | not captured | not captured | ['antibiotics-11-00958-t004:row2:col1', 'antibiotics-11-00958-t004:row2:col2'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q24 | pass | clearance within physiological range | 7.2 L/h | not captured | not captured | ['Wang_2022:review'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 8.17 L | not captured | not captured | ['Wang_2022:review'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 6.95 L | not captured | not captured | ['Wang_2022:review'] |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
-| T3_output_variable | not captured | pass | C_central (measured=doripenem) | central.C | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable; invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 14.2 L/h | not captured | not captured | ['antibiotics-11-00958-t004:row2:col1', 'antibiotics-11-00958-t004:row2:col2'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 8.2 L | not captured | not captured | ['antibiotics-11-00958-t004:row3:col1', 'antibiotics-11-00958-t004:row3:col2'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 6.95 L | not captured | not captured | ['antibiotics-11-00958-t004:row5:col1', 'antibiotics-11-00958-t004:row5:col2'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -126,38 +128,20 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_doripenem/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Wang_2022` / `Wang_2022::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_doripenem/models/modelica/Doripenem_Wang2022_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_doripenem/models/modelica/Doripenem_Wang2022_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_doripenem/models/modelica/Doripenem_Wang2022_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_doripenem/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Wang_2022` / `Wang_2022::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_doripenem/Doripenem_Wang2022_reference/Doripenem_Wang2022_reference_modelica.zip" download>Doripenem_Wang2022_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_doripenem/Doripenem_Wang2022_reference/Doripenem_Wang2022_reference_fmi.zip" download>Doripenem_Wang2022_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_doripenem/Doripenem_Wang2022_reference/Doripenem_Wang2022_reference_matlab.zip" download>Doripenem_Wang2022_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_doripenem/Doripenem_Wang2022_reference/Doripenem_Wang2022_reference_matlab_simbio.zip" download>Doripenem_Wang2022_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_doripenem/Doripenem_Wang2022_reference/Doripenem_Wang2022_reference_sbml.zip" download>Doripenem_Wang2022_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_doripenem/Doripenem_Wang2022_reference/Doripenem_Wang2022_reference_cellml.zip" download>Doripenem_Wang2022_reference_cellml.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_doripenem/Doripenem_Wang2022_reference/Doripenem_Wang2022_reference.svg" alt="Doripenem_Wang2022_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
-
-<dbs-fmusim paramsurl="drugs/drug_doripenem/Doripenem_Wang2022_reference/Doripenem_Wang2022_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_doripenem/Doripenem_Wang2022_reference/Doripenem_Wang2022_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_2C_enteral` · parameters `Doripenem_Wang2022_reference_params.json` · controls `Doripenem_Wang2022_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2)</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 23:55 UTC</sub>

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05A&quot;,&quot;href&quot;:&quot;atc/N05A.md&quot;},{&quot;label&quot;:&quot;haloperidol&quot;,&quot;href&quot;:&quot;drugs/drug_haloperidol/&quot;},{&quot;label&quot;:&quot;Franken_2017 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Haloperidol_Franken2017_reference&quot;,&quot;label&quot;:&quot;Franken_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_haloperidol/Haloperidol_Franken2017_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Haloperidol_Li2022_base&quot;,&quot;label&quot;:&quot;Li_2022_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_haloperidol/Haloperidol_Li2022_base.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Haloperidol_Li2022_final&quot;,&quot;label&quot;:&quot;Li_2022_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_haloperidol/Haloperidol_Li2022_final.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Haloperidol_Franken2017_reference&quot;,&quot;label&quot;:&quot;Franken_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_haloperidol/Haloperidol_Franken2017_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Haloperidol_Li2022_reference&quot;,&quot;label&quot;:&quot;Li_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_haloperidol/Haloperidol_Li2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Pilla_2013_PANSS&quot;,&quot;label&quot;:&quot;Pilla_2013 \u00b7 PANSS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_haloperidol/pd_Pilla_2013_PANSS.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Pilla_2013_PANSS_negative&quot;,&quot;label&quot;:&quot;Pilla_2013 \u00b7 PANSS negative&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_haloperidol/pd_Pilla_2013_PANSS_negative.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Pilla_2013_PANSS_positive&quot;,&quot;label&quot;:&quot;Pilla_2013 \u00b7 PANSS positive&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_haloperidol/pd_Pilla_2013_PANSS_positive.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # haloperidol — `Haloperidol_Franken2017_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.636), gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-check: disputed 1/2</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.636), gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-check: disputed 1/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -17,21 +17,17 @@
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's terminal half-life (model/paper ratio 1.41).**
-
-Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — haloperidol: kabs 0.236, CL 32.4 L/h, V 1.98e+03 L.
+**Every check that could be run on this record passed.**
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on bioavailability: this record has 0.861, the second reading 0.97; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:38:08.881481+00:00) predates the upstream re-run (2026-10-06 15:45:47.584669+00:00). Current validate status: `extracted`.
-
 ## Citation
 Franken LG et al., Population pharmacokinetics of haloperi…, European journal of clinica… (2017)
   ·  DOI: [10.1007/s00228-017-2283-6](https://doi.org/10.1007/s00228-017-2283-6)
 
-<div class="pk-model-meta" hidden drug="haloperidol" model-id="Haloperidol_Franken2017_reference" status="extracted" stale="true" population="terminally ill adult patients" measured-compound="haloperidol" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="haloperidol" model-id="Haloperidol_Franken2017_reference" status="curated_candidate" stale="false" population="terminally ill adult patients" measured-compound="haloperidol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.
@@ -41,9 +37,9 @@ Franken LG et al., Population pharmacokinetics of haloperi…, European journal 
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| F | `Q40` · Fab | 0.861 | not captured | not captured | not captured | 18 | exact (1.0) | Tab2:row3:col1, Tab2:row3:col2, Tab2:row3:col4, Tab2:row3:col5, Tab2:row3:col6 | — | 55 (None% RSE) |
-| CL (L/h) | `Q22` · CL | 29.3 | L/h | 8.138888888888889e-06 | [l] / [h] | 11 | exact (1.0) | Tab2:row6:col1, Tab2:row6:col2, Tab2:row6:col4, Tab2:row6:col5, Tab2:row6:col6 | — | 43 (None% RSE) |
-| Vd (L) | `Q61` · V | 1260 | L | 1.26 | [l] | 19 | exact (1.0) | Tab2:row7:col1, Tab2:row7:col2, Tab2:row7:col4, Tab2:row7:col5, Tab2:row7:col6 | — | 70 (None% RSE) |
+| F | `Q40` · Fab | 55 | not captured | not captured | not captured | 43 | exact (1.0) | Franken_2017_table_2:row1:col1, Franken_2017_table_2:row7:col1 | — | not captured |
+| CL (L/h) | `Q22` · CL | 29.3 | L/h | 8.138888888888889e-06 | [l] / [h] | 11 | exact (1.0) | Franken_2017_table_2:row4:col1 | — | not captured |
+| Vd (L) | `Q61` · V | 1260 | L | 1.26 | [l] | 19 | exact (1.0) | Franken_2017_table_2:row5:col1 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -53,17 +49,23 @@ Franken LG et al., Population pharmacokinetics of haloperi…, European journal 
 ## Departures & gaps
 
 **Interpretation flags:**
-- table section iiv: 'F' routed out of structural estimates ('IIV (%)')
-- table section iiv: 'CL' routed out of structural estimates ('IIV (%)')
-- table section iiv: 'Vd' routed out of structural estimates ('IIV (%)')
+- table representations disagree for 'F'; source reconciliation required
+- table representations disagree for 'CL (L/h)'; source reconciliation required
+- table representations disagree for 'Vd (L)'; source reconciliation required
+- table representations disagree for 'CL'; source reconciliation required
+- table representations disagree for 'Vd'; source reconciliation required
+- table representations disagree for 'Residual variability'; source reconciliation required
+- dropped duplicate Q22 ('CL', value '43') — already have one for this compound
+- dropped duplicate Q61 ('Vd', value '70') — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=haloperidol
-- model equation 'θi = θpop-θΔ*exp(-θrate*TTD)' not bound — neither LHS nor base term 'θpop' linked to an ontology parameter
+- status held at route_to_review — not promoted
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
+- table Franken_2017_table_2: unparsed_numeric_cell
+- table Tab2: representations disagree; selected evidence retained, not merged
 - LLM selected parameter table(s) 2
-- captured model equation θi = θpop-θΔ*exp(-θrate*TTD)
 
 ## Validation
 
@@ -99,13 +101,23 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C1_half_life_beta | pass | 30.0 | 29.808 | 0.9936 | 0.25 | reported t½β |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row6:col1', 'Tab2:row6:col2', 'Tab2:row6:col4', 'Tab2:row6:col5', 'Tab2:row6:col6'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row7:col1', 'Tab2:row7:col2', 'Tab2:row7:col4', 'Tab2:row7:col5', 'Tab2:row7:col6'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 29.3 | not captured | not captured | ['Tab2:row6:col1', 'Tab2:row6:col2', 'Tab2:row6:col4', 'Tab2:row6:col5', 'Tab2:row6:col6'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Franken_2017_table_2:row4:col1'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Franken_2017_table_2:row5:col1'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 29.3 | not captured | not captured | ['Franken_2017_table_2:row4:col1'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 29.3 L/h | not captured | not captured | ['Tab2:row6:col1', 'Tab2:row6:col2', 'Tab2:row6:col4', 'Tab2:row6:col5', 'Tab2:row6:col6'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 1.26e+03 L | not captured | not captured | ['Tab2:row7:col1', 'Tab2:row7:col2', 'Tab2:row7:col4', 'Tab2:row7:col5', 'Tab2:row7:col6'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 29.3 L/h | not captured | not captured | ['Franken_2017_table_2:row4:col1'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 1.26e+03 L | not captured | not captured | ['Franken_2017_table_2:row5:col1'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_output_variable | not captured | pass | C_central (measured=haloperidol) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -114,7 +126,10 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_haloperidol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Franken_2017` / `Franken_2017::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_haloperidol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Franken_2017` / `Franken_2017::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_haloperidol/models/modelica/Haloperidol_Franken2017_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_haloperidol/models/modelica/Haloperidol_Franken2017_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_haloperidol/models/modelica/Haloperidol_Franken2017_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -132,7 +147,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_haloperidol/Haloperidol_Franken2017_reference/Haloperidol_Franken2017_reference.svg" alt="Haloperidol_Franken2017_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_haloperidol/Haloperidol_Franken2017_reference/Haloperidol_Franken2017_reference.svg" alt="Haloperidol_Franken2017_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -145,4 +160,4 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 15:45 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 20:38 UTC</sub>

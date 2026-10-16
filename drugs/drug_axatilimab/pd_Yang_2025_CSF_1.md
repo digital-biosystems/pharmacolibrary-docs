@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;axatilimab&quot;,&quot;href&quot;:&quot;drugs/drug_axatilimab/&quot;},{&quot;label&quot;:&quot;Yang_2025 \u00b7 PD CSF-1&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# CSF-1 — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span>
+# CSF-1 — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -17,7 +17,7 @@
 
 **Model:** No model was generated from this record.
 
-> Axatilimab concentration inhibits CSF-1 production in a proportional indirect response model, utilizing a dissociation constant (Kd PK) of 1.11 nM and a Hill coefficient (Nh) of 2.5, while CSF-1 elimination (kdegCSF1) is characterized as a CSF-1R–independent rate constant of 0.002 1/h from a baseline of 0.01 nM.
+> The paper describes a turnover model where axatilimab concentration acts on circulating CSF-1 by blocking CSF-1R signaling, but it does not specify the mechanism of action (e.g., inhibition of production or elimination) for CSF-1 in the provided excerpts. The record lists a baseline CSF-1 concentration of 0.01 nM and a CSF-1R-independent elimination rate of 0.002 1/h, but the paper does not report values for Imax, IC50, Emax, kin, or ke0.
 >
 > <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
@@ -25,7 +25,7 @@
 - **model family:** `indirect_response_ii`
 - **driver:** `pk_record`
 - **tier:** population
-- **effect:** inhibition/proportional
+- **effect:** inhibition/unknown
 
 ## Citation
 Yang YO et al., Semimechanistic Population PK/PD Modeli…, Clinical pharmacology and t… (2025)
@@ -34,10 +34,8 @@ Yang YO et al., Semimechanistic Population PK/PD Modeli…, Clinical pharmacolog
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | Baseline CSF-1 concentration (BLCSF1) | `Q324` · not captured | 0.01 | nM | not captured | llm (not captured) | Yang_2025:pdv3 |
-| PD (effect) | CSF-1R–independent CSF-1 elimination rate (kdegCSF1) | `Q328` · not captured | 0.002 | 1/h | not captured | llm (not captured) | Yang_2025:pdv3 |
-| PD (effect) | Dissociation constant of axatilimab/CSF-1R complex (Kd PK) | `Q331` · not captured | 1.11 | nM | not captured | llm (not captured) | Yang_2025:pdv3 |
-| PD (effect) | Hill coefficient (Nh) | `Q325` · not captured | 2.5 | not captured | not captured | llm (not captured) | Yang_2025:pdv3 |
+| PD (effect) | Baseline CSF-1 concentration | `Q324` · not captured | 0.01 | nM | not captured | llm (not captured) | Yang_2025:pdv3 |
+| PD (effect) | CSF-1R-independent CSF-1 elimination rate | `Q328` · not captured | 0.002 | 1/h | not captured | llm (not captured) | Yang_2025:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -69,9 +67,19 @@ Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

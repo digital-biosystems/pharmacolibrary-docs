@@ -17,13 +17,13 @@
 
 ### Reviewer guidance
 
-**The mefloquine CL/F value of 1.0 is not a clearance in L/h but a dihydroartemisinin geometric mean ratio (90% CI) misread as clearance, causing a dimension mismatch on a structural parameter.**
+**C5 dimension mismatch on a structural parameter.**
 
-The record for mefloquine in patients with acute falciparum malaria was built from the abstract alone, so reported summary statistics stood in for a fitted model. The parameter labelled 'CL/F (L/h) [Dihydroartemisinin GMR (90 % CI)]' carries the value 1.0 with unit L/h, but the label shows this number is a dihydroartemisinin geometric mean ratio, not an oral clearance in L/h. This dimension mismatch on a structural parameter led to rejection; the other parameters (AUC∞ increase 50%, AUC ratio 20%, V/F 8.14 L/kg, kabs 0.28 h⁻¹, tlag 0.147 h) are consistent with their meanings. Extracted — mefloquine: AUC∞ 50 %, AUC ratio 20 %, V/F 8.14 L/kg, CL/F 1 L/h, kabs 0.28 h⁻¹, tlag 0.147 h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — mefloquine: AUC∞ 50 %, V/F 8.14 L/kg, CL/F 1 L/h, kabs 0.28 h⁻¹, tlag 0.147 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of absorption rate constant: this record has 0.28, the second reading none; it also differs on 7 more fields. That field does not shape the model.
 
-<sub>reviewed by glm-5.3-flash</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Simpson JA et al., Population pharmacokinetics of mefloqui…, Clinical pharmacology and t… (1999)
@@ -32,7 +32,7 @@ Simpson JA et al., Population pharmacokinetics of mefloqui…, Clinical pharmaco
 <div class="pk-model-meta" hidden drug="mefloquine" model-id="Mefloquine_Simpson1999_reference" status="rejected" stale="false" population="patients with acute falciparum malaria" measured-compound="mefloquine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 6 extracted.
+**Parameters:** 5 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -41,9 +41,8 @@ Simpson JA et al., Population pharmacokinetics of mefloqui…, Clinical pharmaco
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| AUC(0-infinity) increase, monotherapy | `Q17` · AUC∞ | 50 | % | not captured | [%] | not captured | llm_corrected (0.6) | Simpson_1999:abstract | — | not captured |
-| AUC(0-infinity) increase, combined therapy | `Q21` · AUC ratio | 20 | % | not captured | [%] | not captured | llm_corrected (0.6) | Simpson_1999:abstract | — | not captured |
-| V/F, split doses of mefloquine monotherapy | `Q76` · V/F | 8.14 | L/kg | 0.5698000000000001 | [l] / [kg] | not captured | llm_confirmed (0.6) | Simpson_1999:abstract | — | not captured |
+| area under the concentration-time curve [AUC(0-infinity)] | `Q17` · AUC∞ | 50 | % | not captured | [%] | not captured | llm_corrected (0.6) | Simpson_1999:abstract, Simpson_1999:abstract | — | not captured |
+| apparent volume of distribution (V/F) | `Q76` · V/F | 8.14 | L/kg | 0.5698000000000001 | [l] / [kg] | not captured | exact (1.0) | Simpson_1999:abstract, Simpson_1999:abstract | — | not captured |
 | CL/F (L/h) [Dihydroartemisinin GMR (90 % CI)] | `Q27` · CL/F | 1.0 | L/h | 2.7777777777777776e-07 | L/h | not captured | review_gapfill (0.7) | Rattanapunya_2015:review | — | not captured |
 | absorption rate constant | `Q49` · kabs | 0.28 | h⁻¹ | 7.777777777777778e-05 | 1/h | not captured | review_gapfill (0.7) | Mim_2026:review | — | not captured |
 | T lag,1 | `Q83` · tlag | 0.147 | h | 529.1999999999999 | h | not captured | review_gapfill (0.7) | Cherkaoui-Rbati_2023:review | — | not captured |
@@ -56,11 +55,8 @@ Simpson JA et al., Population pharmacokinetics of mefloqui…, Clinical pharmaco
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_mismatch: 'AUC(0-infinity) increase, monotherapy' → Q17 (unit 'dimensionless' vs ontology '[mass] * [time] / [length] ** 3') — route to review
-- dropped duplicate Q76 ('V/F, single dose', value 20.37) — already have one for this compound
-- unit_dimension_unknown: 'ng/mL x day' (AUC∞)
-- dropped duplicate Q17 ('AUC(0-infinity), parasite clearance &lt; 48 hours', value 50373) — already have one for this compound
-- dropped duplicate Q17 ('AUC(0-infinity), slower parasite clearance', value 45583) — already have one for this compound
+- unit_dimension_mismatch: 'area under the concentration-time curve [AUC(0-infinity)]' → Q17 (unit 'dimensionless' vs ontology '[mass] * [time] / [length] ** 3') — route to review
+- dropped value-less row: 'AUC(0-infinity)' (captured trailing unit '0-infinity' for child rows)
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=mefloquine
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
@@ -108,18 +104,18 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q17 | fail | dimensionless | % | not captured | not captured | ['Simpson_1999:abstract'] |
+| C5_dimension_Q17 | fail | dimensionless | % | not captured | not captured | ['Simpson_1999:abstract', 'Simpson_1999:abstract'] |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Rattanapunya_2015:review'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Mim_2026:review'] |
-| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Simpson_1999:abstract'] |
+| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Simpson_1999:abstract', 'Simpson_1999:abstract'] |
 | C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Cherkaoui-Rbati_2023:review'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 1 L/h | not captured | not captured | ['Rattanapunya_2015:review'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 570 L | not captured | not captured | ['Simpson_1999:abstract'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 570 L | not captured | not captured | ['Simpson_1999:abstract', 'Simpson_1999:abstract'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -128,7 +124,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_mefloquine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Simpson_1999` / `Simpson_1999::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_mefloquine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Simpson_1999` / `Simpson_1999::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -144,4 +140,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 07:25 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 00:55 UTC</sub>

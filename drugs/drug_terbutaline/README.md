@@ -19,7 +19,7 @@ Terbutaline is a beta-2 agonist bronchodilator used to treat asthma and other ob
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 15:01 | 22:56 | 2/3/3 | 15/0/0 | 0/0/0 | 1,116,432/51,290 | ollama / glm-5.3-flash | 28 | 0/28 | 28/0 | 0 |
+| 2026-10-13 12:14 | 0:05 | 2/3/3 | 15/0/0 | 0/0/0 | 1,784/206 | ollama / qwen3.8:27b-mtp-q8_0 | 28 | 0/28 | 28/0 | 0 |
 
 ## popPK records
 
@@ -61,6 +61,22 @@ Terbutaline is a beta-2 agonist bronchodilator used to treat asthma and other ob
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Scola_2004_histamine_release](drugs/drug_terbutaline/pd_Scola_2004_histamine_release.md) | IgE-mediated histamine release from mast cells (inhibition) ← terbutaline · direct sigmoid Emax (Hill) effect | — | Scola AM et al., Influence of agonist intrinsic activity…, British journal of pharmaco… (2004) | [10.1038/sj.bjp.0705905](https://doi.org/10.1038/sj.bjp.0705905) |
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span> | [Törneke_1998_relaxation_of_equine_tracheal_muscle_strips_precontracted_with_40_nM_carbachol](drugs/drug_terbutaline/pd_T_rneke_1998_relaxation_of_equine_tracheal_muscle_strips_pre.md) | relaxation of equine tracheal muscle strips precontracted with 40 nM carbachol ← terbutaline · direct Emax (saturable) effect | — | Törneke K et al., A comparison between clenbuterol, salbu…, Journal of veterinary pharm… (1998) | [10.1046/j.1365-2885.1998.00156.x](https://doi.org/10.1046/j.1365-2885.1998.00156.x) |
 
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=terbutaline).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | kidney | `SLC22A5` substrate | DrugBank actor |
+| absorption | skeletal muscle | `SLC22A5` substrate | DrugBank actor |
+| absorption | small intestine | `SLC22A5` substrate | DrugBank actor |
+| metabolism | blood | `BCHE` inhibitor | DrugBank actor |
+| metabolism | liver | `BCHE` inhibitor, `SULT1A1` substrate, `UGT1A1` substrate | DrugBank actor |
+| metabolism | small intestine | `SULT1A1` substrate, `UGT1A1` substrate | DrugBank actor |
+| excretion | kidney | `SLC22A2` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ADRB1 (target), ADRB2 (target), ADRB3 (target).</sub>
+
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
 <table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
@@ -70,7 +86,7 @@ Terbutaline is a beta-2 agonist bronchodilator used to treat asthma and other ob
 ## Coverage
 
 - **PubMed hits:** 353 matched, 117 returned
-- **screened:** 2  ·  **relevant:** 2
+- **screened:** 3  ·  **relevant:** 2
 - **records:** 8  ·  extracted 2  ·  needs_review 3  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 

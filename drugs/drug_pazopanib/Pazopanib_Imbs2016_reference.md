@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;pazopanib&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/&quot;},{&quot;label&quot;:&quot;Imbs_2016 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pazopanib_Attia2023_reference&quot;,&quot;label&quot;:&quot;Attia_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Attia2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pazopanib_Balakirouchenane2020_reference&quot;,&quot;label&quot;:&quot;Balakirouchenane_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Balakirouchenane2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pazopanib_Bins2019_base&quot;,&quot;label&quot;:&quot;Bins_2019_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Bins2019_base.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pazopanib_Bins2019_final&quot;,&quot;label&quot;:&quot;Bins_2019_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Bins2019_final.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pazopanib_Ozbey2021_reference&quot;,&quot;label&quot;:&quot;Ozbey_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Ozbey2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pazopanib_Attia2023_reference&quot;,&quot;label&quot;:&quot;Attia_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Attia2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pazopanib_Balakirouchenane2020_reference&quot;,&quot;label&quot;:&quot;Balakirouchenane_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Balakirouchenane2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pazopanib_Ozbey2021_reference&quot;,&quot;label&quot;:&quot;Ozbey_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Ozbey2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -25,13 +25,11 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which co
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> **Dose compound ≠ measured compound:** dosed `pazopanib and cisplatin`, measured `pazopanib and ultrafilterable cisplatin`.
-
 ## Citation
 Imbs DC et al., Pharmacokinetic interaction between paz…, Cancer chemotherapy and pha… (2016)
   ·  DOI: [10.1007/s00280-015-2953-y](https://doi.org/10.1007/s00280-015-2953-y)
 
-<div class="pk-model-meta" hidden drug="pazopanib" model-id="Pazopanib_Imbs2016_reference" status="rejected" stale="false" population="patients in a phase I pazopanib-cisplatin combination study" measured-compound="pazopanib and ultrafilterable cisplatin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="pazopanib" model-id="Pazopanib_Imbs2016_reference" status="rejected" stale="false" population="cancer patients" measured-compound="pazopanib" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.
@@ -46,11 +44,11 @@ _No resolved parameters._
 ## Departures & gaps
 
 **Interpretation flags:**
-- table section iiv: 'cisplatin clearance' routed out of structural estimates ('Mean (CV\xa0% for inter-individual variability) cisplatin clearance was 10.3 L/h (33.2\xa0%) and appeared not to be influenced by pazopanib.')
-- table section iiv: 'oral pazopanib clearance at Day 0' routed out of structural estimates ('Mean (CV\xa0% for inter-individual variability) cisplatin clearance was 10.3 L/h (33.2\xa0%) and appeared not to be influenced by pazopanib.')
-- table section iiv: 'lower at Day 1' routed out of structural estimates ('Mean (CV\xa0% for inter-individual variability) cisplatin clearance was 10.3 L/h (33.2\xa0%) and appeared not to be influenced by pazopanib.')
-- table section iiv: 'lower at Day 2' routed out of structural estimates ('Mean (CV\xa0% for inter-individual variability) cisplatin clearance was 10.3 L/h (33.2\xa0%) and appeared not to be influenced by pazopanib.')
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=pazopanib and ultrafilterable cisplatin
+- table section iiv: 'Mean (CV % for inter-individual variability) cisplatin clearance' routed out of structural estimates ('Mean (CV\xa0% for inter-individual variability) cisplatin clearance was 10.3 L/h (33.2\xa0%) and appeared not to be influenced by pazopanib.')
+- table section iiv: 'Mean (CV %) of oral pazopanib clearance ... at Day 0 (before cisplatin administration)' routed out of structural estimates ('Mean (CV\xa0% for inter-individual variability) cisplatin clearance was 10.3 L/h (33.2\xa0%) and appeared not to be influenced by pazopanib.')
+- table section iiv: 'Mean (CV %) of oral pazopanib clearance ... at Day 1' routed out of structural estimates ('Mean (CV\xa0% for inter-individual variability) cisplatin clearance was 10.3 L/h (33.2\xa0%) and appeared not to be influenced by pazopanib.')
+- table section iiv: 'Mean (CV %) of oral pazopanib clearance ... at Day 2' routed out of structural estimates ('Mean (CV\xa0% for inter-individual variability) cisplatin clearance was 10.3 L/h (33.2\xa0%) and appeared not to be influenced by pazopanib.')
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=pazopanib
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
@@ -96,7 +94,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_pazopanib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Imbs_2016` / `Imbs_2016::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_pazopanib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Imbs_2016` / `Imbs_2016::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -112,4 +110,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 04:38 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 20:23 UTC</sub>

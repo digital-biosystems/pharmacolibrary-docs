@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;disopyramide&quot;,&quot;href&quot;:&quot;drugs/drug_disopyramide/&quot;},{&quot;label&quot;:&quot;Bonde_1989 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Disopyramide_Bryson1978_reference&quot;,&quot;label&quot;:&quot;Bryson_1978_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_disopyramide/Disopyramide_Bryson1978_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Disopyramide_Aso2001_dp&quot;,&quot;label&quot;:&quot;Aso_2001_dp&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_disopyramide/Disopyramide_Aso2001_dp.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Disopyramide_Aso2001_r_dp&quot;,&quot;label&quot;:&quot;Aso_2001_r_dp&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_disopyramide/Disopyramide_Aso2001_r_dp.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Disopyramide_Aso2001_r_udp&quot;,&quot;label&quot;:&quot;Aso_2001_r_udp&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_disopyramide/Disopyramide_Aso2001_r_udp.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Disopyramide_Aso2001_s_dp&quot;,&quot;label&quot;:&quot;Aso_2001_s_dp&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_disopyramide/Disopyramide_Aso2001_s_dp.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Disopyramide_Aso2001_s_udp&quot;,&quot;label&quot;:&quot;Aso_2001_s_udp&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_disopyramide/Disopyramide_Aso2001_s_udp.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Disopyramide_Aso2001_udp&quot;,&quot;label&quot;:&quot;Aso_2001_udp&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_disopyramide/Disopyramide_Aso2001_udp.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Disopyramide_Bryson1978_reference&quot;,&quot;label&quot;:&quot;Bryson_1978_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_disopyramide/Disopyramide_Bryson1978_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Disopyramide_Aso2001_reference&quot;,&quot;label&quot;:&quot;Aso_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_disopyramide/Disopyramide_Aso2001_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Horie_2001_IRI&quot;,&quot;label&quot;:&quot;Horie_2001 \u00b7 IRI&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_disopyramide/pd_Horie_2001_IRI.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # disopyramide — `Disopyramide_Bonde1989_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.25). Primary extraction retained.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (confirmed, agreement 1.0), gpt-oss-120b (primary re-run, agreement 0.25). Primary extraction retained.">cross-check: partial 1/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -17,66 +17,84 @@
 
 ### Reviewer guidance
 
-**The paper reports none of the model's key parameters.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The values on this record come from other papers. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — disopyramide: CL 61.6 ml/min.
+Extracted — disopyramide: kel 1.68 1/h, k12 15 1/h, k21 3.4 1/h, V1 18.7 L, V2 72 L, t1/2z 475 min, k13 5.8 1/h, k31 0.48 1/h, … (+1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has disopyramide, the second reading unknown; it also differs on 5 more fields. That field does not shape the model.
 
-<sub>reviewed by rule template (no LLM)</sub>
-
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:37:47.637191+00:00) predates the upstream re-run (2026-10-08 17:04:44.703585+00:00). Current validate status: `rejected`.
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Bonde J et al., Disposition kinetics of disopyramide in…, Pharmacology & toxicology (1989)
   ·  DOI: [10.1111/j.1600-0773.1989.tb00677.x](https://doi.org/10.1111/j.1600-0773.1989.tb00677.x)
 
-<div class="pk-model-meta" hidden drug="disopyramide" model-id="Disopyramide_Bonde1989_reference" status="rejected" stale="true" population="healthy adults" measured-compound="disopyramide" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="disopyramide" model-id="Disopyramide_Bonde1989_reference" status="rejected" stale="false" population="healthy adults" measured-compound="disopyramide" parameterization="mechanistic" topology="2C"></div>
 
-**Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 0 extracted.
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 9 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
-_No resolved parameters._
+| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
+|---|---|---|---|---|---|---|---|---|---|---|
+| k10 s-1 | `Q47` · kel | 1.68 | 1/h | 0.00046666666666666666 | 1/h | not captured | llm_confirmed (0.6) | Bonde_1989_table_p4_1:row0:col2, Bonde_1989_table_p4_1:row1:col2, Bonde_1989_table_p4_1:row2:col2, Bonde_1989_table_p4_1:row3:col2, Bonde_1989_table_p4_1:row4:col2, Bonde_1989_table_p4_1:row5:col2, Bonde_1989_table_p4_1:row6:col2, Bonde_1989_table_p4_1:row7:col2, Bonde_1989_table_p4_1:row8:col2, Bonde_1989_table_p4_1:row9:col2 | — | not captured |
+| k12 s-1 | `Q301` · k12 | 15 | 1/h | 0.004166666666666667 | 1/h | not captured | llm_confirmed (0.6) | Bonde_1989_table_p4_1:row0:col3, Bonde_1989_table_p4_1:row1:col3, Bonde_1989_table_p4_1:row2:col3, Bonde_1989_table_p4_1:row3:col3, Bonde_1989_table_p4_1:row4:col3, Bonde_1989_table_p4_1:row5:col3, Bonde_1989_table_p4_1:row6:col3, Bonde_1989_table_p4_1:row7:col3, Bonde_1989_table_p4_1:row8:col3, Bonde_1989_table_p4_1:row9:col3 | — | not captured |
+| k21 s-1 | `Q302` · k21 | 3.4 | 1/h | 0.0009444444444444444 | 1/h | not captured | llm_confirmed (0.6) | Bonde_1989_table_p4_1:row0:col4, Bonde_1989_table_p4_1:row1:col4, Bonde_1989_table_p4_1:row2:col4, Bonde_1989_table_p4_1:row3:col4, Bonde_1989_table_p4_1:row4:col4, Bonde_1989_table_p4_1:row5:col4, Bonde_1989_table_p4_1:row6:col4, Bonde_1989_table_p4_1:row7:col4, Bonde_1989_table_p4_1:row8:col4, Bonde_1989_table_p4_1:row9:col4 | — | not captured |
+| V1 l | `Q63` · V1 | 18.7 | L | 0.0187 | L | not captured | llm_confirmed (0.6) | Bonde_1989_table_p4_1:row0:col7, Bonde_1989_table_p4_1:row1:col7, Bonde_1989_table_p4_1:row2:col7, Bonde_1989_table_p4_1:row3:col7, Bonde_1989_table_p4_1:row4:col7, Bonde_1989_table_p4_1:row5:col7, Bonde_1989_table_p4_1:row6:col7, Bonde_1989_table_p4_1:row7:col7, Bonde_1989_table_p4_1:row8:col7, Bonde_1989_table_p4_1:row9:col7 | — | not captured |
+| V2 l | `Q64` · V2 | 72 | L | 0.07200000000000001 | L | not captured | llm_confirmed (0.6) | Bonde_1989_table_p4_1:row0:col8, Bonde_1989_table_p4_1:row1:col8, Bonde_1989_table_p4_1:row2:col8, Bonde_1989_table_p4_1:row3:col8, Bonde_1989_table_p4_1:row4:col8, Bonde_1989_table_p4_1:row5:col8, Bonde_1989_table_p4_1:row6:col8, Bonde_1989_table_p4_1:row7:col8, Bonde_1989_table_p4_1:row8:col8, Bonde_1989_table_p4_1:row9:col8 | — | not captured |
+| t1/2(tot) min. | `Q57` · t1/2z | 475 | min | 28500.0 | h | not captured | llm_confirmed (0.6) | Bonde_1989_table_p4_1:row0:col10, Bonde_1989_table_p4_1:row1:col10, Bonde_1989_table_p4_1:row2:col10, Bonde_1989_table_p4_1:row3:col10, Bonde_1989_table_p4_1:row4:col10, Bonde_1989_table_p4_1:row5:col10, Bonde_1989_table_p4_1:row6:col10, Bonde_1989_table_p4_1:row7:col10, Bonde_1989_table_p4_1:row8:col10, Bonde_1989_table_p4_1:row9:col10 | — | not captured |
+| k13 s-1 | `Q303` · k13 | 5.8 | 1/h | 0.0016111111111111111 | 1/h | not captured | llm_confirmed (0.6) | Bonde_1989_table_p4_1:row1:col5, Bonde_1989_table_p4_1:row2:col5, Bonde_1989_table_p4_1:row3:col5, Bonde_1989_table_p4_1:row4:col5, Bonde_1989_table_p4_1:row5:col5, Bonde_1989_table_p4_1:row6:col5, Bonde_1989_table_p4_1:row7:col5, Bonde_1989_table_p4_1:row8:col5, Bonde_1989_table_p4_1:row9:col5 | — | not captured |
+| k31 s-1 | `Q304` · k31 | 0.48 | 1/h | 0.00013333333333333334 | 1/h | not captured | llm_confirmed (0.6) | Bonde_1989_table_p4_1:row1:col6, Bonde_1989_table_p4_1:row2:col6, Bonde_1989_table_p4_1:row3:col6, Bonde_1989_table_p4_1:row4:col6, Bonde_1989_table_p4_1:row5:col6, Bonde_1989_table_p4_1:row6:col6, Bonde_1989_table_p4_1:row7:col6, Bonde_1989_table_p4_1:row8:col6, Bonde_1989_table_p4_1:row9:col6 | — | not captured |
+| V3 l | `Q77` · V3 | 100 | L | 0.1 | L | not captured | llm_confirmed (0.6) | Bonde_1989_table_p4_1:row1:col9, Bonde_1989_table_p4_1:row2:col9, Bonde_1989_table_p4_1:row3:col9, Bonde_1989_table_p4_1:row4:col9, Bonde_1989_table_p4_1:row5:col9, Bonde_1989_table_p4_1:row6:col9, Bonde_1989_table_p4_1:row7:col9, Bonde_1989_table_p4_1:row8:col9, Bonde_1989_table_p4_1:row9:col9 | — | not captured |
+
+<details class="legend">
+<summary>Parameter definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- column '-' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- column 'b' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- column 'c' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- dropped unlinked row (NIL): '1' — extend the ontology if this is a real PK parameter (source ['tab_0:row0:col2', 'tab_0:row0:col3', 'tab_0:row0:col4', 'tab_0:row0:col7', 'tab_0:row0:col8', 'tab_0:row0:col10'])
-- dropped unlinked row (NIL): '4' — extend the ontology if this is a real PK parameter (source ['tab_0:row2:col2', 'tab_0:row2:col3', 'tab_0:row2:col4', 'tab_0:row2:col5', 'tab_0:row2:col6', 'tab_0:row2:col7', 'tab_0:row2:col8', 'tab_0:row2:col9', 'tab_0:row2:col10', 'tab_0:row2:col11'])
-- dropped unlinked row (NIL): '5' — extend the ontology if this is a real PK parameter (source ['tab_0:row3:col2', 'tab_0:row3:col3', 'tab_0:row3:col4', 'tab_0:row3:col5', 'tab_0:row3:col6', 'tab_0:row3:col7', 'tab_0:row3:col8', 'tab_0:row3:col9', 'tab_0:row3:col10', 'tab_0:row3:col11'])
-- dropped unlinked row (NIL): '6' — extend the ontology if this is a real PK parameter (source ['tab_0:row4:col2', 'tab_0:row4:col3', 'tab_0:row4:col4', 'tab_0:row4:col5', 'tab_0:row4:col6', 'tab_0:row4:col7', 'tab_0:row4:col8', 'tab_0:row4:col9', 'tab_0:row4:col10', 'tab_0:row4:col11'])
-- dropped unlinked row (NIL): '7' — extend the ontology if this is a real PK parameter (source ['tab_0:row5:col2', 'tab_0:row5:col3', 'tab_0:row5:col4', 'tab_0:row5:col5', 'tab_0:row5:col6', 'tab_0:row5:col7', 'tab_0:row5:col8', 'tab_0:row5:col9', 'tab_0:row5:col10', 'tab_0:row5:col11'])
-- dropped unlinked row (NIL): '8' — extend the ontology if this is a real PK parameter (source ['tab_0:row6:col2', 'tab_0:row6:col3', 'tab_0:row6:col4', 'tab_0:row6:col5', 'tab_0:row6:col6', 'tab_0:row6:col7', 'tab_0:row6:col8', 'tab_0:row6:col9', 'tab_0:row6:col10', 'tab_0:row6:col11'])
-- dropped unlinked row (NIL): '6.6' — extend the ontology if this is a real PK parameter (source ['Bonde_1989_table_2:row1:col1', 'Bonde_1989_table_2:row1:col2'])
-- dropped unlinked row (NIL): '6.4' — extend the ontology if this is a real PK parameter (source ['Bonde_1989_table_2:row2:col1', 'Bonde_1989_table_2:row2:col2'])
-- dropped unlinked row (NIL): '5.1' — extend the ontology if this is a real PK parameter (source ['Bonde_1989_table_2:row3:col1', 'Bonde_1989_table_2:row3:col2'])
-- dropped unlinked row (NIL): '7.3' — extend the ontology if this is a real PK parameter (source ['Bonde_1989_table_2:row4:col1', 'Bonde_1989_table_2:row4:col2'])
-- dropped unlinked row (NIL): '7.6' — extend the ontology if this is a real PK parameter (source ['Bonde_1989_table_2:row5:col1', 'Bonde_1989_table_2:row5:col2'])
-- dropped unlinked row (NIL): '7.4' — extend the ontology if this is a real PK parameter (source ['Bonde_1989_table_2:row6:col1', 'Bonde_1989_table_2:row6:col2'])
-- dropped unlinked row (NIL): '6.3' — extend the ontology if this is a real PK parameter (source ['Bonde_1989_table_2:row7:col1', 'Bonde_1989_table_2:row7:col2'])
-- table mostly unlinked (13/13 table-cell rows NIL) — likely the wrong table was located, not 0 genuinely-missing ontology parameter(s); route_to_review instead of building a model from the residual linked cell(s)
+- column '1' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column '2' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column '3' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column '4' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column '5' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column '6' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column '7' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column '8' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- dropped duplicate Q57 ('t1/2(free) min.', value '312') — already have one for this compound
+- implicit units: 'k10 s-1' → 1/h (from the popPK convention: 'The paper reports half-lives in minutes (e.g., 475 min) and clearances in ml/min, but does not explicitly state the unit')
+- implicit units: 'k12 s-1' → 1/h (from the popPK convention: 'First-order transfer rate constants are conventionally expressed in 1/h. The value 15 is consistent with 1/h (half-life ')
+- implicit units: 'k21 s-1' → 1/h (from the popPK convention: 'First-order transfer rate constants are conventionally expressed in 1/h. The value 3.4 is consistent with 1/h (half-life')
+- implicit units: 'V1 l' → L (from the popPK convention: 'Volumes of distribution are conventionally expressed in Liters (L). The value 18.7 L is consistent with the central comp')
+- implicit units: 'V2 l' → L (from the popPK convention: 'Volumes of distribution are conventionally expressed in Liters (L). The value 72 L is consistent with a peripheral compa')
+- implicit units: 't1/2(tot) min.' → min (from the paper text: "Table 1 explicitly lists 't1/2(min.)' with a value of 475+58 for the bolus injection study. The parameter description id")
+- implicit units: 'k13 s-1' → 1/h (from the popPK convention: 'First-order transfer rate constants are conventionally expressed in 1/h. The value 5.8 is consistent with 1/h (half-life')
+- implicit units: 'k31 s-1' → 1/h (from the popPK convention: 'First-order transfer rate constants are conventionally expressed in 1/h. The value 0.48 is consistent with 1/h (half-lif')
+- implicit units: 'V3 l' → L (from the popPK convention: 'Volumes of distribution are conventionally expressed in Liters (L). The value 100 L is consistent with a second peripher')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=disopyramide
-- status held at route_to_review — not promoted
+- structure disagreement: deterministic 2C vs LLM 3C — review compartment count
+- skipped review gap-fill of CL: primary's parameterization (rate-constant / ka-only) does not use it
+- skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- unparsed cell tab_0:row0:col11 = '20 1'
-- companion parameter table 2 transcribed (14 record(s))
+- table Bonde_1989_table_p4_1: units_need_context
+- transposed table Bonde_1989_table_p4_1: logical view retains original source coordinates
+- LLM selected parameter table(s) 1
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  1 of 2 readers agree  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss:120b` | confirmed | 1.0 (13/13 fields) | none |
 | `gpt-oss-120b` | primary re-run | 0.25 (2/8 fields) | 6 |
 
 <details><summary>6 field discrepancies</summary>
@@ -102,9 +120,21 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
-| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 9 | not captured | not captured | not captured |
+| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q301 | pass | 1 / [time] | not captured | not captured | not captured | ['Bonde_1989_table_p4_1:row0:col3', 'Bonde_1989_table_p4_1:row1:col3', 'Bonde_1989_table_p4_1:row2:col3', 'Bonde_1989_table_p4_1:row3:col3', 'Bonde_1989_table_p4_1:row4:col3', 'Bonde_1989_table_p4_1:row5:col3', 'Bonde_1989_table_p4_1:row6:col3', 'Bonde_1989_table_p4_1:row7:col3', 'Bonde_1989_table_p4_1:row8:col3', 'Bonde_1989_table_p4_1:row9:col3'] |
+| C5_dimension_Q302 | pass | 1 / [time] | not captured | not captured | not captured | ['Bonde_1989_table_p4_1:row0:col4', 'Bonde_1989_table_p4_1:row1:col4', 'Bonde_1989_table_p4_1:row2:col4', 'Bonde_1989_table_p4_1:row3:col4', 'Bonde_1989_table_p4_1:row4:col4', 'Bonde_1989_table_p4_1:row5:col4', 'Bonde_1989_table_p4_1:row6:col4', 'Bonde_1989_table_p4_1:row7:col4', 'Bonde_1989_table_p4_1:row8:col4', 'Bonde_1989_table_p4_1:row9:col4'] |
+| C5_dimension_Q303 | pass | 1 / [time] | not captured | not captured | not captured | ['Bonde_1989_table_p4_1:row1:col5', 'Bonde_1989_table_p4_1:row2:col5', 'Bonde_1989_table_p4_1:row3:col5', 'Bonde_1989_table_p4_1:row4:col5', 'Bonde_1989_table_p4_1:row5:col5', 'Bonde_1989_table_p4_1:row6:col5', 'Bonde_1989_table_p4_1:row7:col5', 'Bonde_1989_table_p4_1:row8:col5', 'Bonde_1989_table_p4_1:row9:col5'] |
+| C5_dimension_Q304 | pass | 1 / [time] | not captured | not captured | not captured | ['Bonde_1989_table_p4_1:row1:col6', 'Bonde_1989_table_p4_1:row2:col6', 'Bonde_1989_table_p4_1:row3:col6', 'Bonde_1989_table_p4_1:row4:col6', 'Bonde_1989_table_p4_1:row5:col6', 'Bonde_1989_table_p4_1:row6:col6', 'Bonde_1989_table_p4_1:row7:col6', 'Bonde_1989_table_p4_1:row8:col6', 'Bonde_1989_table_p4_1:row9:col6'] |
+| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['Bonde_1989_table_p4_1:row0:col2', 'Bonde_1989_table_p4_1:row1:col2', 'Bonde_1989_table_p4_1:row2:col2', 'Bonde_1989_table_p4_1:row3:col2', 'Bonde_1989_table_p4_1:row4:col2', 'Bonde_1989_table_p4_1:row5:col2', 'Bonde_1989_table_p4_1:row6:col2', 'Bonde_1989_table_p4_1:row7:col2', 'Bonde_1989_table_p4_1:row8:col2', 'Bonde_1989_table_p4_1:row9:col2'] |
+| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Bonde_1989_table_p4_1:row0:col10', 'Bonde_1989_table_p4_1:row1:col10', 'Bonde_1989_table_p4_1:row2:col10', 'Bonde_1989_table_p4_1:row3:col10', 'Bonde_1989_table_p4_1:row4:col10', 'Bonde_1989_table_p4_1:row5:col10', 'Bonde_1989_table_p4_1:row6:col10', 'Bonde_1989_table_p4_1:row7:col10', 'Bonde_1989_table_p4_1:row8:col10', 'Bonde_1989_table_p4_1:row9:col10'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Bonde_1989_table_p4_1:row0:col7', 'Bonde_1989_table_p4_1:row1:col7', 'Bonde_1989_table_p4_1:row2:col7', 'Bonde_1989_table_p4_1:row3:col7', 'Bonde_1989_table_p4_1:row4:col7', 'Bonde_1989_table_p4_1:row5:col7', 'Bonde_1989_table_p4_1:row6:col7', 'Bonde_1989_table_p4_1:row7:col7', 'Bonde_1989_table_p4_1:row8:col7', 'Bonde_1989_table_p4_1:row9:col7'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Bonde_1989_table_p4_1:row0:col8', 'Bonde_1989_table_p4_1:row1:col8', 'Bonde_1989_table_p4_1:row2:col8', 'Bonde_1989_table_p4_1:row3:col8', 'Bonde_1989_table_p4_1:row4:col8', 'Bonde_1989_table_p4_1:row5:col8', 'Bonde_1989_table_p4_1:row6:col8', 'Bonde_1989_table_p4_1:row7:col8', 'Bonde_1989_table_p4_1:row8:col8', 'Bonde_1989_table_p4_1:row9:col8'] |
+| C5_dimension_Q77 | pass | [length] ** 3 | not captured | not captured | not captured | ['Bonde_1989_table_p4_1:row1:col9', 'Bonde_1989_table_p4_1:row2:col9', 'Bonde_1989_table_p4_1:row3:col9', 'Bonde_1989_table_p4_1:row4:col9', 'Bonde_1989_table_p4_1:row5:col9', 'Bonde_1989_table_p4_1:row6:col9', 'Bonde_1989_table_p4_1:row7:col9', 'Bonde_1989_table_p4_1:row8:col9', 'Bonde_1989_table_p4_1:row9:col9'] |
+| C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q63 | pass | volume within physiological range | 18.7 L | not captured | not captured | ['Bonde_1989_table_p4_1:row0:col7', 'Bonde_1989_table_p4_1:row1:col7', 'Bonde_1989_table_p4_1:row2:col7', 'Bonde_1989_table_p4_1:row3:col7', 'Bonde_1989_table_p4_1:row4:col7', 'Bonde_1989_table_p4_1:row5:col7', 'Bonde_1989_table_p4_1:row6:col7', 'Bonde_1989_table_p4_1:row7:col7', 'Bonde_1989_table_p4_1:row8:col7', 'Bonde_1989_table_p4_1:row9:col7'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 72 L | not captured | not captured | ['Bonde_1989_table_p4_1:row0:col8', 'Bonde_1989_table_p4_1:row1:col8', 'Bonde_1989_table_p4_1:row2:col8', 'Bonde_1989_table_p4_1:row3:col8', 'Bonde_1989_table_p4_1:row4:col8', 'Bonde_1989_table_p4_1:row5:col8', 'Bonde_1989_table_p4_1:row6:col8', 'Bonde_1989_table_p4_1:row7:col8', 'Bonde_1989_table_p4_1:row8:col8', 'Bonde_1989_table_p4_1:row9:col8'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -113,7 +143,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_disopyramide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Bonde_1989` / `Bonde_1989::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_disopyramide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Bonde_1989` / `Bonde_1989::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -129,4 +159,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-08 17:04 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 21:13 UTC</sub>

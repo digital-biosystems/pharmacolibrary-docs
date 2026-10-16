@@ -4,7 +4,7 @@
 
 # lecanemab — `Lecanemab_Lim2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.833). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -20,7 +20,7 @@
 
 The record describes lecanemab in a two-compartment structure, but the structure check found an unreachable or orphan compartment, meaning a compartment or metabolite has no path from the administered dose. The parameter labels read 'Aducanumab CL', 'Aducanumab V1' and 'Aducanumab V2' while the compound is recorded as lecanemab, so the values 0.0159 L/h, 3.59 L and 6.04 L may belong to a different antibody. No other failed checks or builder deviations are reported. Extracted — lecanemab: CL 0.0159 L/h, V1 3.59 L, V2 6.04 L.
 
-Independently confirmed by `gpt-oss-120b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has 21.6, the second reading none. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -57,14 +57,20 @@ Lim S et al., Sex differences in efficacy/safety of a…, Translational and clin
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | confirmed | 1.0 (6/6 fields) | none |
+| `gpt-oss-120b` | partly confirmed | 0.833 (5/6 fields) | 1 |
 
-_All readers agree on the compared fields of this record._
+<details><summary>1 field discrepancy</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q312]` | 21.6 | not captured | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -95,7 +101,7 @@ _All readers agree on the compared fields of this record._
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_lecanemab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Lim_2025` / `Lim_2025::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_lecanemab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Lim_2025` / `Lim_2025::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

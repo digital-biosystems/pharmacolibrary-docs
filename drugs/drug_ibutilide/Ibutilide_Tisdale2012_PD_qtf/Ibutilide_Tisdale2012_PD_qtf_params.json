@@ -6,18 +6,18 @@
  ],
  "parameters": {
   "E0": 0.0,
-  "EC50": 8e-09,
-  "Emax": 0.07,
+  "EC50": 4.8e-07,
+  "Emax": 0.491,
   "exposure_per_s": 1e-06,
-  "gamma": 1.0
+  "gamma": 3.21
  },
  "reference_peaks": {},
  "reference_points": {
   "0": 0.0,
-  "7.999999999999999e-09": 0.035
+  "4.799999999999999e-07": 0.2455
  },
- "stop_time": 0.08,
- "subtitle": "QTF interval (QTF) against ibutilide concentration",
+ "stop_time": 4.8,
+ "subtitle": "Fridericia-corrected QT interval (QTF) against ibutilide concentration",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
  "title": "Concentration–response simulated by the PD model",
@@ -40,6 +40,12 @@
    "factor": 9.999999999999997e-07,
    "si_unit": "kg/m3"
   },
+  "gamma": {
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
   "response_unit": "s"
  },
  "x_axis": {
@@ -52,6 +58,6 @@
  "y_axis": {
   "display_unit": "s",
   "factor": 1.0,
-  "label": "QTF interval (QTF)"
+  "label": "Fridericia-corrected QT interval (QTF)"
  }
 }

@@ -18,9 +18,9 @@
 
 **Model:** No model was generated from this record.
 
-> The paper models ciclesonide dose acting on the binary response of asthma exacerbations using an Emax-type model; the excerpts provide no further detail on the mechanism, effect direction, or any potency or rate parameter values (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma are not stated).
+> The model describes an Emax relationship where the dose of ciclesonide drives the response of asthma exacerbations, though the specific mechanism and effect direction are not detailed in the available text. No specific potency or rate values (e.g., IC50, ke0) are provided in the record or excerpts.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Pu_2026`
 - **model family:** `emax`

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;secukinumab&quot;,&quot;href&quot;:&quot;drugs/drug_secukinumab/&quot;},{&quot;label&quot;:&quot;Bruin_2017 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Secukinumab_RodrguezFernndez2022_reference&quot;,&quot;label&quot;:&quot;Rodr\u00edguez-Fern\u00e1ndez_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_secukinumab/Secukinumab_RodrguezFernndez2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Rodriguez_Fernandez_2024_PASI&quot;,&quot;label&quot;:&quot;Rodriguez-Fernandez_2024 \u00b7 PASI&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_secukinumab/pd_Rodriguez_Fernandez_2024_PASI.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,13 +17,13 @@
 
 ### Reviewer guidance
 
-**Secukinumab's central volume of distribution and absorption lag time lacked explicit values, causing the model to be quarantined.**
+**No value for secukinumab's volume of distribution and absorption lag time; t6_deviations.**
 
-The record lists peripheral volumes, clearance, and absorption rate, but omits the central volume of distribution and absorption lag time. Because these parameters had no extracted estimates, generic placeholder values were used instead of fitted data. This use of unverified defaults rather than explicit pharmacokinetic estimates led to the record being held back. Extracted — secukinumab: CL 0.19 L/day, V2 3.61 L, Q 0.39 L/day, V3 2.87 L, kabs 0.18 1/day, Frel 72.9.
+The model was built, but secukinumab's volume of distribution and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — secukinumab: CL 0.19 L/day, V2 3.61 L, Q 0.39 L/day, V3 2.87 L, kabs 0.18 1/day.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Bruin G et al., Population Pharmacokinetic Modeling of…, Journal of clinical pharmac… (2017)
@@ -32,7 +32,7 @@ Bruin G et al., Population Pharmacokinetic Modeling of…, Journal of clinical p
 <div class="pk-model-meta" hidden drug="secukinumab" model-id="Secukinumab_Bruin2017_reference" status="model_quarantined" stale="false" population="patients with moderate to severe psoriasis" measured-compound="secukinumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 6 extracted.
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -41,12 +41,11 @@ Bruin G et al., Population Pharmacokinetic Modeling of…, Journal of clinical p
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL, L/day | `Q22` · CL | 0.19 | L/day | 2.1990740740740743e-09 | [l] / [d] | 1.9 | exact (1.0) | jcph876-tbl-0002:row1:col1, jcph876-tbl-0002:row1:col2 | — | 32 (None% RSE) |
-| V2, L | `Q64` · V2 | 3.61 | L | 0.00361 | [l] | 2.6 | exact (1.0) | jcph876-tbl-0002:row2:col1, jcph876-tbl-0002:row2:col2 | — | 30 (None% RSE) |
-| Q, L/day | `Q30` · Q | 0.39 | L/day | 4.513888888888889e-09 | [l] / [d] | 4.6 | exact (1.0) | jcph876-tbl-0002:row3:col1, jcph876-tbl-0002:row3:col2 | — | not captured |
-| V3, L | `Q77` · V3 | 2.87 | L | 0.00287 | [l] | 1.9 | exact (1.0) | jcph876-tbl-0002:row4:col1, jcph876-tbl-0002:row4:col2 | — | 18 (None% RSE) |
-| ka, 1/day | `Q49` · kabs | 0.18 | 1/day | 2.083333333333333e-06 | [1] / [d] | 3.6 | exact (1.0) | jcph876-tbl-0002:row5:col1, jcph876-tbl-0002:row5:col2 | — | 35 (None% RSE) |
-| F, % | `Q87` · Frel | 72.9 | not captured | not captured | not captured | 1.5 | llm (0.6) | jcph876-tbl-0002:row6:col1, jcph876-tbl-0002:row6:col2 | — | not captured |
+| CL, L/day | `Q22` · CL | 0.19 | L/day | 2.1990740740740743e-09 | [l] / [d] | 1.9 | exact (1.0) | jcph876-tbl-0002:row1:col1 | — | 32 (None% RSE) |
+| V2, L | `Q64` · V2 | 3.61 | L | 0.00361 | [l] | 2.6 | exact (1.0) | jcph876-tbl-0002:row2:col1 | — | 30 (None% RSE) |
+| Q, L/day | `Q30` · Q | 0.39 | L/day | 4.513888888888889e-09 | [l] / [d] | 4.6 | exact (1.0) | jcph876-tbl-0002:row3:col1 | — | not captured |
+| V3, L | `Q77` · V3 | 2.87 | L | 0.00287 | [l] | 1.9 | exact (1.0) | jcph876-tbl-0002:row4:col1 | — | 18 (None% RSE) |
+| ka, 1/day | `Q49` · kabs | 0.18 | 1/day | 2.083333333333333e-06 | [1] / [d] | 3.6 | exact (1.0) | jcph876-tbl-0002:row5:col1 | — | 35 (None% RSE) |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -89,18 +88,18 @@ _All readers agree on the compared fields of this record._
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['jcph876-tbl-0002:row1:col1', 'jcph876-tbl-0002:row1:col2'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['jcph876-tbl-0002:row3:col1', 'jcph876-tbl-0002:row3:col2'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['jcph876-tbl-0002:row5:col1', 'jcph876-tbl-0002:row5:col2'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['jcph876-tbl-0002:row2:col1', 'jcph876-tbl-0002:row2:col2'] |
-| C5_dimension_Q77 | pass | [length] ** 3 | not captured | not captured | not captured | ['jcph876-tbl-0002:row4:col1', 'jcph876-tbl-0002:row4:col2'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.19 | not captured | not captured | ['jcph876-tbl-0002:row1:col1', 'jcph876-tbl-0002:row1:col2'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['jcph876-tbl-0002:row1:col1'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['jcph876-tbl-0002:row3:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['jcph876-tbl-0002:row5:col1'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['jcph876-tbl-0002:row2:col1'] |
+| C5_dimension_Q77 | pass | [length] ** 3 | not captured | not captured | not captured | ['jcph876-tbl-0002:row4:col1'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.19 | not captured | not captured | ['jcph876-tbl-0002:row1:col1'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.00792 L/h | not captured | not captured | ['jcph876-tbl-0002:row1:col1', 'jcph876-tbl-0002:row1:col2'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 3.61 L | not captured | not captured | ['jcph876-tbl-0002:row2:col1', 'jcph876-tbl-0002:row2:col2'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.00792 L/h | not captured | not captured | ['jcph876-tbl-0002:row1:col1'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 3.61 L | not captured | not captured | ['jcph876-tbl-0002:row2:col1'] |
 
 **Reviewer per-scenario checks:**
 
@@ -113,6 +112,7 @@ _All readers agree on the compared fields of this record._
 | T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable | not captured | LLM adjudication → deterministic rule |
 | T1_cmax | reference | skipped | 55.2 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
 | T1_cmax | reference | skipped | 27.6 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_beta | reference | skipped | 4 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
 | T1_tmax | reference | skipped | 6 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
@@ -122,9 +122,9 @@ _All readers agree on the compared fields of this record._
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_secukinumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Bruin_2017` / `Bruin_2017::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_secukinumab/models/modelica/_needs_review/Secukinumab_Bruin2017_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_secukinumab/models/modelica/_needs_review/Secukinumab_Bruin2017_reference.deviation.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_secukinumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Bruin_2017` / `Bruin_2017::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_secukinumab/models/modelica/_needs_review/Secukinumab_Bruin2017_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_secukinumab/models/modelica/_needs_review/Secukinumab_Bruin2017_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -150,4 +150,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 00:30 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 00:20 UTC</sub>

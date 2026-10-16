@@ -18,9 +18,9 @@
 
 **Model:** No model was generated from this record.
 
-> Terbutaline dose was related to shortening of electromechanical systole (QS2, ms) via an Emax model, with maximal shortening of 51.9 ms in WT and 37.9 ms in Ile164; the excerpts do not state EC50 or the mechanism.
+> The paper does not provide a full text or explicit mechanism description, but the record indicates a dose-dependent Emax model where terbutaline stimulates the shortening of the electromechanical systole (QS2). The maximal shortening (Emax) is reported as 51.9+/-4.5 ms for the wild type and 37.9+/-4.6 ms for the Ile164 variant.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
 
 - **paper:** `Brodde_2001`
 - **model family:** `emax`

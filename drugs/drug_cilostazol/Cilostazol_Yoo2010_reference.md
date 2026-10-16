@@ -4,7 +4,7 @@
 
 # cilostazol — `Cilostazol_Yoo2010_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed 1/2</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5), gpt-oss:120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -20,7 +20,7 @@
 
 No clearance, volume or rate constant of the model is reported in it. Only the abstract was available, so reported summary statistics stand in for a fitted model. No parameter values were extracted.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has cilostazol, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cilostazol, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -43,32 +43,33 @@ _No resolved parameters._
 ## Departures & gaps
 
 **Interpretation flags:**
-- table section iiv: 'The apparent oral clearance (CL/F)' routed out of structural estimates ('WHAT IS ALREADY KNOWN ABOUT THIS SUBJECT: * The interindividual variability of the pharmacokinetic parameters of cilostazol is relatively large.')
+- table section iiv: 'apparent oral clearance (CL/F)' routed out of structural estimates ('WHAT IS ALREADY KNOWN ABOUT THIS SUBJECT: * The interindividual variability of the pharmacokinetic parameters of cilostazol is relatively large.')
 - table section iiv: 'Intercompartmental clearance' routed out of structural estimates ('WHAT IS ALREADY KNOWN ABOUT THIS SUBJECT: * The interindividual variability of the pharmacokinetic parameters of cilostazol is relatively large.')
 - table section iiv: 'Absorption rate constant' routed out of structural estimates ('WHAT IS ALREADY KNOWN ABOUT THIS SUBJECT: * The interindividual variability of the pharmacokinetic parameters of cilostazol is relatively large.')
 - table section iiv: 'lag time' routed out of structural estimates ('WHAT IS ALREADY KNOWN ABOUT THIS SUBJECT: * The interindividual variability of the pharmacokinetic parameters of cilostazol is relatively large.')
-- table section iiv: 'interindividual variability of the CL/F' routed out of structural estimates ('WHAT IS ALREADY KNOWN ABOUT THIS SUBJECT: * The interindividual variability of the pharmacokinetic parameters of cilostazol is relatively large.')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=cilostazol
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Yoo_2010_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Yoo_2010_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  1 of 2 readers agree  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | confirmed | 1.0 (4/4 fields) | none |
+| `gpt-oss-120b` | not confirmed | 0.5 (2/4 fields) | 2 |
 | `gpt-oss:120b` | not confirmed | 0.5 (2/4 fields) | 2 |
 
-<details><summary>2 field discrepancies</summary>
+<details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `screen.dose_compound` | cilostazol | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | cilostazol | unknown | mismatch |
 | `gpt-oss:120b` | `screen.dose_compound` | cilostazol | unknown | mismatch |
 | `gpt-oss:120b` | `screen.primary_analyte` | cilostazol | unknown | mismatch |
 
@@ -95,7 +96,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_cilostazol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Yoo_2010` / `Yoo_2010::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_cilostazol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Yoo_2010` / `Yoo_2010::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -111,4 +112,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 12:40 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 22:08 UTC</sub>

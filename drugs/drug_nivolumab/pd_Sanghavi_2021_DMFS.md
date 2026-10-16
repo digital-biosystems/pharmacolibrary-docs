@@ -18,14 +18,14 @@
 
 **Model:** No model was generated from this record.
 
-> The paper describes a semiparametric Cox proportional hazards model for distant metastasis-free survival (DMFS) but states that nivolumab trough exposures (Cmin) were not significant predictors of this endpoint. Consequently, no specific mechanism, potency, or rate parameters (such as IC50 or kout) are provided for the effect of nivolumab on DMFS.
+> The paper does not specify a pharmacodynamic mechanism for the effect of nivolumab trough exposures (Cmind) or maximum concentration (Cmax1) on distant metastasis-free survival (DMFS). It reports that these exposures were not significant predictors of DMFS, attributing the effect to covariates such as PD-L1 status and age, without providing values for Imax, EC50, IC50, or kinetic parameters.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Sanghavi_2021`
 - **model family:** `tte`
 - **driver:** `cited_pk`
-- **tier:** descriptive
+- **tier:** population
 - **effect:** unknown/unknown
 
 ## Citation

@@ -18,21 +18,22 @@ Fluspirilene is a diphenylbutylpiperidine antipsychotic and dopamine antagonist 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 15:45 | 0:27 | 0/0/0 | 2/2/0 | 0/0/0 | 42,423/1,628 | ollama / glm-5.3-flash | 1 | 0/1 | 1/0 | 0 |
+| 2026-10-14 20:38 | 0:26 | 0/0/0 | 0/0/0 | 0/0/0 | 19,977/569 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
 
 ## popPK records
 
 _not available_
 
-## Pharmacodynamics (PD)
+## ADME sites
 
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Grantham_1994_N_type_Ca2_current](drugs/drug_fluspirilene/pd_Grantham_1994_N_type_Ca2_current.md) | N-type calcium current block (fraction of current blocked) ← fluspirilene · direct sigmoid Emax (Hill) effect | — | Grantham CJ et al., Fluspirilene block of N-type calcium cu…, British journal of pharmaco… (1994) | [10.1111/j.1476-5381.1994.tb14762.x](https://doi.org/10.1111/j.1476-5381.1994.tb14762.x) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Kenny_1990_3H_PN_200_110_binding](drugs/drug_fluspirilene/pd_Kenny_1990_3H_PN_200_110_binding.md) | Displacement of [3H]-PN-200-110 binding to rat cerebral cortical membranes ← fluspirilene · direct sigmoid Emax (Hill) effect | — | Kenny BA et al., Selective antagonism of calcium channel…, British journal of pharmaco… (1990) | [10.1111/j.1476-5381.1990.tb15784.x](https://doi.org/10.1111/j.1476-5381.1990.tb15784.x) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Sah_1994_N_type_current](drugs/drug_fluspirilene/pd_Sah_1994_N_type_current.md) | N-type Ca2+ channel current inhibition ← fluspirilene · direct Emax (saturable) effect | — | Sah DW et al., Inhibition of P-type and N-type calcium…, Molecular pharmacology (1994) | — |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Sah_1994_P_type_current](drugs/drug_fluspirilene/pd_Sah_1994_P_type_current.md) | P-type Ca2+ channel current inhibition ← fluspirilene · direct Emax (saturable) effect | — | Sah DW et al., Inhibition of P-type and N-type calcium…, Molecular pharmacology (1994) | — |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Sczekan_1996_Ca_2_release](drugs/drug_fluspirilene/pd_Sczekan_1996_Ca_2_release.md) | IP3-induced Ca(2+)-release from Ca(2+)-loaded rat brain microsomes ← fluspirilene · inhibition effect | — | Sczekan SR et al., Antipsychotic drugs block IP3-dependent…, Biological psychiatry (1996) | [10.1016/0006-3223(95)00657-5](https://doi.org/10.1016/0006-3223(95)00657-5) |
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=fluspirilene).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | `CYP3A4` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: CACNG1 (inhibitor), DRD2 (target), HTR2A (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,12 +52,12 @@ _not available_
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Dhaka_2025 | irrelevant | 0 | 0 | This is an antiviral/host-protein interaction study; fluspirilene is only a tested inhibitor with EC50 values, no PK parameters reported. |
-| popPK | Grantham_1994 | irrelevant | 0 | 0 | In-vitro electrophysiology study of calcium channel blockade; no pharmacokinetic parameters for fluspirilene. |
-| popPK | Kenny_1990 | irrelevant | 0 | 0 | In-vitro pharmacology study of calcium channel antagonism; no PK disposition parameters for fluspirilene. |
-| popPK | Sah_1994 | irrelevant | 0 | 0 | In-vitro electrophysiology study of calcium channel blockade; no pharmacokinetic disposition parameters for fluspirilene. |
-| popPK | Sczekan_1996 | irrelevant | 0 | 0 | In-vitro mechanistic study of Ca2+ release in rat brain microsomes with no pharmacokinetic parameters for fluspirilene. |
-| popPK | Vaidya_2025 | irrelevant | 0 | 0 | This is an AI/ML QSAR drug-repurposing study for EBV; fluspirilene appears only as a docking hit with no PK parameters. |
+| popPK | Dhaka_2025 | irrelevant | 0 | 0 | The paper is a mechanistic antiviral study focusing on protein-protein interactions, with no pharmacokinetic parameters reported for fluspirilene. |
+| popPK | Grantham_1994 | irrelevant | 0 | 0 | The paper is an in-vitro electrophysiology study measuring channel block (IC50), not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Kenny_1990 | irrelevant | 0 | 0 | The paper describes in vitro radioligand binding and smooth muscle contractility experiments (mechanistic/pharmacodynamic), containing no pharmacokinetic parameters (CL, V, ka, etc.) for fluspirilene. |
+| popPK | Sah_1994 | irrelevant | 0 | 0 | The paper reports in-vitro electrophysiological data (IC50/EC50) for calcium channel inhibition, not pharmacokinetic parameters (CL, V, t1/2). |
+| popPK | Sczekan_1996 | irrelevant | 0 | 0 | The study reports in-vitro pharmacodynamic effects (IP3-induced Ca2+ release inhibition) and EC50 values, not pharmacokinetic disposition parameters. |
+| popPK | Vaidya_2025 | irrelevant | 0 | 0 | The study is an in-silico AI/ML modeling paper for drug repurposing against EBV where fluspirilene is mentioned only as a docking result, not as a subject of pharmacokinetic analysis. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

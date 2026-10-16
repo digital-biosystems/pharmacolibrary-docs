@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C08C&quot;,&quot;href&quot;:&quot;atc/C08C.md&quot;},{&quot;label&quot;:&quot;nitrendipine&quot;,&quot;href&quot;:&quot;drugs/drug_nitrendipine/&quot;},{&quot;label&quot;:&quot;He_2013 \u00b7 PGx KCNH2&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# KCNH2 — PGx  <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓ 2/2</span>
+# KCNH2 — PGx  <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (?, agreement 0.25), gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-check: partial 1/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -30,15 +30,23 @@ He F et al., The KCNH2 genetic polymorphism (1956, C…, PloS one (2013)
   ·  DOI: [10.1371/journal.pone.0061317](https://doi.org/10.1371/journal.pone.0061317)
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  ·  2 of 2 readers agree  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  1 of 2 readers agree  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | confirmed | 1.0 (4/4 fields) | none |
+| `gpt-oss-120b` | secondary_empty | 0.25 (1/4 fields) | 3 |
 | `gpt-oss:120b` | confirmed | 1.0 (4/4 fields) | none |
 
-_All readers agree on the compared fields of this PGx record._
+<details><summary>3 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `applies_to` | pd | not captured | mismatch |
+| `gpt-oss-120b` | `mechanism` | target | not captured | mismatch |
+| `gpt-oss-120b` | `target_parameter_id` | Q100 | not captured | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check definitions</summary>

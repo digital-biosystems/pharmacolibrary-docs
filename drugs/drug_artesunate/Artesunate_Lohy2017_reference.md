@@ -5,7 +5,7 @@
 
 # artesunate — `Artesunate_Lohy2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.316). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red" title="molar_mass_missing:dihydroartemisinin: a molar mass is missing: the model forms 1 mg of metabolite per mg of parent converted, not one molecule per molecule">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.316). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -15,15 +15,17 @@
 
 **Model:** Model and browser simulation available in **Models** and **Simulation**.
 
+> **Caveat** (`molar_mass_missing:dihydroartemisinin`): a molar mass is missing: the model forms 1 mg of metabolite per mg of parent converted, not one molecule per molecule
+
 ### Reviewer guidance
 
-**The artesunate parent–metabolite model was rejected because the absorption rate ka was never reported and left at library defaults, and the simulated dihydroartemisinin terminal half-life (4.661667497314338 h) does not match the paper's 9.66 h.**
+**The model does not reproduce the paper's terminal half-life (paper 9.66, model 4.66); ka use library defaults, not estimates from this paper (+5 more).**
 
-The record invents absorption settings: ka and Tlag were defaulted rather than extracted, and the apparent parameterization assumes F=1 and Fm=1 with no molar correction, so the metabolite parameters CLm/F (1890 L/h) and Vm/F (778 L) for artesunate's metabolite dihydroartemisinin, and its clearance 116 L/h and volume 124 L, rest on unsupported assumptions. The model structure also does not match the paper's parent–metabolite topology, and the simulated output is not the measured analyte compartment. Simulated as the paper dosed it, the terminal half-life is 4.661667497314338 h against the reported 9.66 h (ratio 0.4826), outside tolerance. One reported unit could not be converted to SI, so that parameter reached the model build without an SI value; the deviations check could not adjudicate and returned 'not acceptable' for defaulted parameters and invented absorption. Extracted — artesunate: MTT 0.869 h, CLm/F 1.89e+03 L/h, Vm/F 778 L; dihydroartemisinin: CLm/F 116 L/h, V1/F 124 L.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. A reported unit could not be converted (MTT), so that value has no SI equivalent. Extracted — artesunate: Fab 1, MTT 0.869 h, CLm/F 1.89e+03 L/h, Vm/F 778 L; dihydroartemisinin: CLm/F 116 L/h, V1/F 124 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has artesunate, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by glm-5.3-flash</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 > **Dose compound ≠ measured compound:** dosed `artesunate`, measured `dihydroartemisinin`.
 
@@ -31,10 +33,10 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Lohy Das J et al., Population Pharmacokinetic and Pharmaco…, The AAPS journal (2017)
   ·  DOI: [10.1208/s12248-017-0141-1](https://doi.org/10.1208/s12248-017-0141-1)
 
-<div class="pk-model-meta" hidden drug="artesunate" model-id="Artesunate_Lohy2017_reference" status="rejected" stale="false" population="adults with uncomplicated P. falciparum malaria (Cambodia and Thailand)" measured-compound="dihydroartemisinin" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="artesunate" model-id="Artesunate_Lohy2017_reference" status="rejected" stale="false" population="patients with P. falciparum malaria in Cambodia and Thailand" measured-compound="dihydroartemisinin" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 5 extracted.
+**Parameters:** 6 extracted.
 
 **Parameterization:** CLm/F, V1/F, Vm/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -43,21 +45,17 @@ Lohy Das J et al., Population Pharmacokinetic and Pharmaco…, The AAPS journal 
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| MTT (h) | `Q81` · MTT | 0.869 | h | not captured | [h] | 7.94 | exact (1.0) | Lohy_2017_table_3:row3:col1, Lohy_2017_table_3:row3:col2, Lohy_2017_table_3:row3:col4 | — | 35.1 (35.4% RSE) |
-| CLARS/F (L/h) | `Q351` · CLm/F | 1890 | L/h | 0.0005250000000000001 | [l] / [h] | 6.73 | llm (0.6) | Lohy_2017_table_3:row5:col1, Lohy_2017_table_3:row5:col2 | — | not captured |
-| VARS/F (L) | `Q367` · Vm/F | 778 | L | 0.778 | [l] | 9.45 | llm (0.6) | Lohy_2017_table_3:row6:col1, Lohy_2017_table_3:row6:col2, Lohy_2017_table_3:row6:col4 | — | not captured |
-| CLDHA/F (L/h) | `Q351` · CLm/F | 116 | L/h | 3.222222222222222e-05 | [l] / [h] | 6.15 | exact (1.0) | Lohy_2017_table_3:row9:col1, Lohy_2017_table_3:row9:col2 | — | not captured |
-| VDHA/F (L) | `Q290` · V1/F | 124 | L | 0.124 | [l] | 6.72 | exact (1.0) | Lohy_2017_table_3:row10:col1, Lohy_2017_table_3:row10:col2, Lohy_2017_table_3:row10:col4 | — | not captured |
+| F | `Q40` · Fab | 1 | not captured | not captured | not captured | not captured | exact (1.0) | Lohy_2017_table_3:row1:col1 | — | 25.8 (25.5% RSE) |
+| MTT (h) | `Q81` · MTT | 0.869 | h | not captured | [h] | 7.94 | exact (1.0) | Lohy_2017_table_3:row3:col1 | — | 35.1 (35.4% RSE) |
+| CLARS/F (L/h) | `Q351` · CLm/F | 1890 | L/h | 0.0005250000000000001 | [l] / [h] | 6.73 | llm (0.6) | Lohy_2017_table_3:row5:col1 | — | not captured |
+| VARS/F (L) | `Q367` · Vm/F | 778 | L | 0.778 | [l] | 9.45 | llm (0.6) | Lohy_2017_table_3:row6:col1 | — | not captured |
+| CLDHA/F (L/h) | `Q351` · CLm/F | 116 | L/h | 3.222222222222222e-05 | [l] / [h] | 6.15 | exact (1.0) | Lohy_2017_table_3:row9:col1 | — | not captured |
+| VDHA/F (L) | `Q290` · V1/F | 124 | L | 0.124 | [l] | 6.72 | exact (1.0) | Lohy_2017_table_3:row10:col1 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
-
-### Unresolved rows _(no Q-code or no value — not parameters)_
-| label (paper) | Q-code | value | link |
-|---|---|---|---|
-| F | Q40 | not captured | exact |
 
 ## Departures & gaps
 
@@ -68,26 +66,26 @@ Lohy Das J et al., Population Pharmacokinetic and Pharmaco…, The AAPS journal 
 - `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
 
 **Interpretation flags:**
-- table section iiv: 'F' routed out of structural estimates ('CV% for BSV/BOVa (% RSE)')
-- table section iiv: 'MTT (h)' routed out of structural estimates ('CV% for BSV/BOVa (% RSE)')
-- table section iiv: 'VARS/F (L)' routed out of structural estimates ('CV% for BSV/BOVa (% RSE)')
-- table section iiv: 'VDHA/F (L)' routed out of structural estimates ('CV% for BSV/BOVa (% RSE)')
-- dropped duplicate Q81 ('PARAMTT', value '0.115') — already have one for this compound
-- dropped unlinked row (NIL): 'PARAMaxF' — extend the ontology if this is a real PK parameter (source ['Lohy_2017_table_3:row15:col1', 'Lohy_2017_table_3:row15:col2'])
-- dropped unlinked row (NIL): 'PARA50F' — extend the ontology if this is a real PK parameter (source ['Lohy_2017_table_3:row16:col1', 'Lohy_2017_table_3:row16:col2'])
+- compound tags: 1 row(s) → dihydroartemisinin (abbreviation 1)
+- table section iiv: 'F' routed out of structural estimates ('CV% for BSV/BOVᵃ (% RSE)')
+- table section iiv: 'MTT (h)' routed out of structural estimates ('CV% for BSV/BOVᵃ (% RSE)')
+- table section iiv: 'VARS/F (L)' routed out of structural estimates ('CV% for BSV/BOVᵃ (% RSE)')
+- table section iiv: 'VDHA/F (L)' routed out of structural estimates ('CV% for BSV/BOVᵃ (% RSE)')
+- dropped unlinked row (NIL): 'PARAMTT' — extend the ontology if this is a real PK parameter (source ['Lohy_2017_table_3:row13:col1'])
+- dropped unlinked row (NIL): 'PARAmaxF' — extend the ontology if this is a real PK parameter (source ['Lohy_2017_table_3:row15:col1'])
+- dropped unlinked row (NIL): 'PARA50F' — extend the ontology if this is a real PK parameter (source ['Lohy_2017_table_3:row16:col1'])
 - metabolite dihydroartemisinin: Q27→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
 - metabolite dihydroartemisinin: Q76→Q367 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=dihydroartemisinin
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
 - template fit: PK_3M_9C — formed from central; parent 1, metabolites [1]
-- status held at route_to_review — not promoted
-- row roles (LLM): model_class=compartmental; 11/11 row label(s) assigned, 12 linked by role; re-tagged parent→dihydroartemisinin ×8
+- row roles (LLM): model_class=compartmental; 11/11 row label(s) assigned, 8 linked by role; re-tagged parent→dihydroartemisinin ×4, parent→parasite density ×3
 - review gap-fill skipped: this record measures 'dihydroartemisinin', not artesunate — the review values are the parent's
-- engineer: parent_metabolite composite downgraded to a 1C model of the measured compound — the paper reports the metabolite's own CL and V but neither the parent's disposition nor a formation rate, so the parent sub-component could not be populated; the parent's concentration-time course is NOT produced by this model
 
 **Extraction notes:**
 - no TEI final-model table id; trying text-pointer table recovery
 - LLM selected parameter table(s) 3
+- table Lohy_2017_table_3: unbound_uncertainty
+- table Lohy_2017_table_3: unparsed_numeric_cell
 
 ## Validation
 
@@ -128,16 +126,16 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['Lohy_2017_table_3:row10:col1', 'Lohy_2017_table_3:row10:col2', 'Lohy_2017_table_3:row10:col4'] |
-| C5_dimension_Q351 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Lohy_2017_table_3:row5:col1', 'Lohy_2017_table_3:row5:col2'] |
-| C5_dimension_Q351 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Lohy_2017_table_3:row9:col1', 'Lohy_2017_table_3:row9:col2'] |
-| C5_dimension_Q367 | pass | [length] ** 3 | not captured | not captured | not captured | ['Lohy_2017_table_3:row6:col1', 'Lohy_2017_table_3:row6:col2', 'Lohy_2017_table_3:row6:col4'] |
+| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['Lohy_2017_table_3:row10:col1'] |
+| C5_dimension_Q351 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Lohy_2017_table_3:row5:col1'] |
+| C5_dimension_Q351 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Lohy_2017_table_3:row9:col1'] |
+| C5_dimension_Q367 | pass | [length] ** 3 | not captured | not captured | not captured | ['Lohy_2017_table_3:row6:col1'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q290 | pass | volume within physiological range | 124 L | not captured | not captured | ['Lohy_2017_table_3:row10:col1', 'Lohy_2017_table_3:row10:col2', 'Lohy_2017_table_3:row10:col4'] |
+| C9_phys_window_Q290 | pass | volume within physiological range | 124 L | not captured | not captured | ['Lohy_2017_table_3:row10:col1'] |
 
 **Reviewer per-scenario checks:**
 
@@ -146,9 +144,12 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
-| T3_output_variable | not captured | fail | Metabolite_C (measured=dihydroartemisinin) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_metabolite_built[dihydroartemisinin] | not captured | fail | own V, CL and formation clearance &gt; 0 | {'V': 0, 'CL': 0, 'formation': 0} | not captured | dihydroartemisinin: V, CL, formation not set — the metabolite's compartment would be the template default |
+| T3_metabolite_output[dihydroartemisinin] | not captured | skipped | not captured | not captured | not captured | the simulation recorded no per-molecule outputs |
+| T3_molar_mass[dihydroartemisinin] | not captured | fail | not captured | {'MW': 0, 'MW_m1': 0} | not captured | a molar mass is missing: the model forms 1 mg of metabolite per mg of parent converted, not one molecule per molecule |
+| T3_output_variable | not captured | fail | C_M1 (measured=dihydroartemisinin) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 1 scholar param(s) emitted or defaulted | 1 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T3_topology_template | not captured | fail | parent_metabolite_central → PK_3M_9C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable; invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
 | T1_t_half_terminal | reference | fail | 9.66 | 4.661667497314338 | 0.4826 | h→SI vs simulated h |
 
@@ -159,10 +160,10 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_artesunate/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Lohy_2017` / `Lohy_2017::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_artesunate/models/modelica/Artesunate_Lohy2017_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_artesunate/models/modelica/Artesunate_Lohy2017_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_artesunate/models/modelica/Artesunate_Lohy2017_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_artesunate/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Lohy_2017` / `Lohy_2017::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_artesunate/models/modelica/Artesunate_Lohy2017_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_artesunate/models/modelica/Artesunate_Lohy2017_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_artesunate/models/modelica/Artesunate_Lohy2017_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -182,4 +183,4 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 06:46 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 20:14 UTC</sub>

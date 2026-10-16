@@ -17,9 +17,9 @@
 
 **Model:** No model was generated from this record.
 
-> Norepinephrine concentrations in a biophase (effect) compartment stimulate heart rate via a sigmoidal Emax mechanism, with an EC50 of 30.6 nmol/L, a maximum effect (Emax) of 191 beats/min, a minimum effect (Emin) of 50.5 beats/min, a Hill coefficient (γ) of 1.7, and an effect compartment rate constant (ke0) of 4.6 h−1.
+> Plasma norepinephrine concentrations, linked via an effect compartment, drive heart rate through a sigmoidal Emax model where norepinephrine stimulates heart rate. The key parameters are an EC50 of 30.6 nmol/L, a ke0 of 4.6 h⁻¹, a γ of 1.7, and an Emax of 191 beats/min.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Yoo_2015`
 - **model family:** `sigmoid_emax`
@@ -47,7 +47,7 @@ Yoo H et al., Mechanism-based population pharmacokine…, European journal of cl
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|

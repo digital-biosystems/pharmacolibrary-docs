@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;ticagrelor&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/&quot;},{&quot;label&quot;:&quot;Henrich_2021 \u00b7 PD P2Y12 reaction units&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ticagrelor_Henrich2021_reference&quot;,&quot;label&quot;:&quot;Henrich_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/Ticagrelor_Henrich2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ticagrelor_strand2019_reference&quot;,&quot;label&quot;:&quot;\u00c5strand_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/Ticagrelor_strand2019_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ticagrelor_Li2016_reference&quot;,&quot;label&quot;:&quot;Li_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/Ticagrelor_Li2016_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_strand_2019_PRU&quot;,&quot;label&quot;:&quot;\u00c5strand_2019 \u00b7 PRU&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/pd_strand_2019_PRU.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ticagrelor_strand2019_reference&quot;,&quot;label&quot;:&quot;\u00c5strand_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/Ticagrelor_strand2019_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ticagrelor_Henrich2021_reference&quot;,&quot;label&quot;:&quot;Henrich_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/Ticagrelor_Henrich2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ticagrelor_Li2016_reference&quot;,&quot;label&quot;:&quot;Li_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/Ticagrelor_Li2016_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_strand_2019_PRU&quot;,&quot;label&quot;:&quot;\u00c5strand_2019 \u00b7 PRU&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/pd_strand_2019_PRU.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # P2Y12 reaction units — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span>
@@ -14,19 +14,19 @@
 
 ## Record summary
 
-**As extracted:** Ticagrelor (concentrations from this paper's PK model) drives P2Y12 reaction units (in PRU): target-mediated drug disposition.
+**As extracted:** Ticagrelor (concentrations from this paper's PK model) drives P2Y12 reaction units (in PRU): delayed effect through transit (transduction) compartments.
 
 **Model:** No model was generated from this record.
 
-> The paper describes a model for selatogrel (not ticagrelor) where plasma concentrations inhibit P2Y12 reaction units (PRU) via a target-mediated drug disposition (TMDD) mechanism, with a half-maximum inhibitory concentration of 41.9 pmol/L. The record lists parameters for ticagrelor, including an allosteric binding rate constant of 2.21 L/nmol/h and a dissociation constant of 193 nmol/L, but the provided excerpts do not describe the specific mechanism or potency values for ticagrelor.
+> The model describes an additive inhibition of P2Y12 reaction units (PRU) driven by ticagrelor plasma concentrations, utilizing a transduction mechanism with a dissociation constant of 193 nmol/L and an allosteric binding rate constant of 2.21 L/nmol/h. The PRU signal is characterized by a half-maximum signal of 0.278 and a Hill coefficient of 2.49, though the paper excerpts provided primarily detail the PK/PD model for selatogrel.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Henrich_2021`
-- **model family:** `tmdd`
+- **model family:** `transduction`
 - **driver:** `pk_record`
 - **tier:** population
-- **effect:** inhibition/unknown
+- **effect:** inhibition/additive
 
 ## Citation
 Henrich A et al., Pharmacokinetic/pharmacodynamic modelin…, CPT: pharmacometrics & syst… (2021)
@@ -35,11 +35,10 @@ Henrich A et al., Pharmacokinetic/pharmacodynamic modelin…, CPT: pharmacometri
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | Ticagrelor allosteric binding rate constant to receptor | `Q329` · not captured | 2.21 | L/nmol/h | not captured | llm (not captured) | Henrich_2021:pdv3 |
+| — | Ticagrelor allosteric binding rate constant to receptor | `Q100` · not captured | 2.21 | L/nmol/h | not captured | nil (not captured) | Henrich_2021:pdv3 |
 | PD (effect) | Ticagrelor dissociation constant | `Q331` · not captured | 193 | nmol/L | not captured | llm (not captured) | Henrich_2021:pdv3 |
-| PD (effect) | Half‐maximum PRU signal | `Q322` · not captured | 0.278 | not captured | not captured | llm (not captured) | Henrich_2021:pdv3 |
+| PD (effect) | Half‐maximum PRU signal | `Q321` · not captured | 0.278 | not captured | not captured | llm (not captured) | Henrich_2021:pdv3 |
 | PD (effect) | Hill coefficient for PRU signal | `Q325` · not captured | 2.49 | not captured | not captured | llm (not captured) | Henrich_2021:pdv3 |
-| PD (effect) | Receptor elimination rate constant | `Q328` · not captured | 0.00641 | 1/h | not captured | llm (not captured) | Henrich_2021:pdv3 |
 | PD (effect) | R0 (‐) | `Q336` · not captured | 1 | ‐ | not captured | review_gapfill (not captured) | Henrich_2021:review |
 
 <details class="legend">

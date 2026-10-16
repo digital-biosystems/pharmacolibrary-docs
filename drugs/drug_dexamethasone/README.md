@@ -51,6 +51,33 @@ Dexamethasone is a corticosteroid used for many conditions, including inflammati
 | <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Świerczek_2023_TNF](drugs/drug_dexamethasone/pd_wierczek_2023_TNF.md) | TNFα ← dexamethasone · indirect response — drug inhibits the production of TNFα | model (no simulator) | Świerczek A et al., Anti-inflammatory effects of dexamethas…, Clinical and translational… (2023) | [10.1111/cts.13577](https://doi.org/10.1111/cts.13577) |
 | <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span> | [Yu_2026_CTS](drugs/drug_dexamethasone/pd_Yu_2026_CTS.md) | cortisol ← dexamethasone · indirect response — drug inhibits the production of cortisol | model (no simulator) | Yu R et al., Meta-Analysis and Physiologically-Based…, Pharmaceutical research (2026) | [10.1007/s11095-026-04120-5](https://doi.org/10.1007/s11095-026-04120-5) |
 
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=dexamethasone).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inducer/inhibitor/substrate, `ABCG2` inhibitor, `SLCO1A2` inhibitor | DrugBank actor |
+| absorption | kidney | `ABCB1` inducer/inhibitor/substrate | DrugBank actor |
+| absorption | liver | `ABCB1` inducer/inhibitor/substrate, `ABCG2` inhibitor | DrugBank actor |
+| absorption | mammary gland | `ABCG2` inhibitor | DrugBank actor |
+| absorption | placenta | `ABCB1` inducer/inhibitor/substrate | DrugBank actor |
+| absorption | skeletal muscle | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| absorption | small intestine | `ABCB1` inducer/inhibitor/substrate, `ABCG2` inhibitor, `SLCO1A2` inhibitor | DrugBank actor |
+| absorption | testis | `ABCB1` inducer/inhibitor/substrate, `ABCG2` inhibitor | DrugBank actor |
+| distribution | blood | `ALB` binder | DrugBank actor |
+| metabolism | kidney | `CYP3A5` inducer/substrate | DrugBank actor |
+| metabolism | liver | `CYP2A6` inducer, `CYP2B6` inducer, `CYP2C19` inducer, `CYP2C8` inducer, `CYP2E1` inducer, `CYP3A4` inducer/inhibitor/substrate, `CYP3A5` inducer/substrate, `CYP3A7` inducer/substrate | DrugBank actor |
+| metabolism | lung | `CYP1A1` inducer/inhibitor | DrugBank actor |
+| metabolism | small intestine | `CYP1A1` inducer/inhibitor, `CYP3A4` inducer/inhibitor/substrate, `CYP3A5` inducer/substrate | DrugBank actor |
+| excretion | kidney | `ABCC2` inducer, `SLC22A8` substrate | DrugBank actor |
+| excretion | liver | `ABCB11` inducer, `ABCC2` inducer | DrugBank actor |
+| excretion | small intestine | `ABCC2` inducer | DrugBank actor |
+| — | adrenal gland | `CYP11B1` inhibitor, `CYP17A1` inhibitor | DrugBank actor |
+| — | testis | `CYP17A1` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ANXA1 (target), CYP3A43 (inducer), CYP4A11 (inducer), HSD11B1 (substrate), HSD11B2 (substrate), NOS2 (negative modulator), NR0B1 (stimulator), NR1I2 (target), NR3C1 (target).</sub>
+
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
 <table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>

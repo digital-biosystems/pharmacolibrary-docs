@@ -4,7 +4,7 @@
 
 # erythropoietin — `Erythropoietin_Frymoyer2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -16,24 +16,22 @@
 
 ### Reviewer guidance
 
-**No value for erythropoietin's clearance, volume of distribution, central→peripheral rate constant and peripheral→central rate constant.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The model was built, but erythropoietin's clearance, volume of distribution, central→peripheral rate constant and peripheral→central rate constant had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — erythropoietin: CL 0.0289, V1 0.25, V2 0.326, Q 0.0308.
+A reported unit could not be converted (AUCt), so that value has no SI equivalent. Extracted — erythropoietin: CL 0.0289 L/h, V1 0.25 L, V2 0.326 L, Q 0.0308 L/h, AUCt 1.11e+06 mU*h/ml.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[cl (l/h)1].value`: this record has 0.0289, the second reading 0.0263; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
-
-> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-28 14:37:55.762015+00:00) predates the upstream re-run (2026-10-05 21:06:00.502229+00:00). Current validate status: `rejected`.
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Frymoyer A et al., High-dose erythropoietin population pha…, Pediatric research (2017)
   ·  DOI: [10.1038/pr.2017.15](https://doi.org/10.1038/pr.2017.15)
 
-<div class="pk-model-meta" hidden drug="erythropoietin" model-id="Erythropoietin_Frymoyer2017_reference" status="rejected" stale="true" population="neonates with hypoxic-ischemic encephalopathy receiving hypothermia" measured-compound="erythropoietin" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="erythropoietin" model-id="Erythropoietin_Frymoyer2017_reference" status="rejected" stale="false" population="neonates with hypoxic-ischemic encephalopathy receiving hypothermia" measured-compound="erythropoietin" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
-**Parameters:** 4 extracted.
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -42,10 +40,11 @@ Frymoyer A et al., High-dose erythropoietin population pha…, Pediatric researc
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL (L/h)1 | `Q22` · CL | 0.0289 | L/h | 8.027777777777777e-09 | L/h | not captured | llm_confirmed (0.6) | T2:row2:col1, T2:row2:col2, T2:row2:col3, T2:row2:col4 | — | not captured |
-| V1 (L)2 | `Q63` · V1 | 0.250 | L | 0.00025 | L | not captured | llm_confirmed (0.6) | T2:row3:col1, T2:row3:col2, T2:row3:col3, T2:row3:col4 | — | not captured |
-| V2 (L)3 | `Q64` · V2 | 0.326 | L | 0.000326 | L | not captured | llm_confirmed (0.6) | T2:row4:col1, T2:row4:col2, T2:row4:col3, T2:row4:col4 | — | not captured |
-| Q (L/h)4 | `Q30` · Q | 0.0308 | L/h | 8.555555555555557e-09 | L/h | not captured | llm (0.6) | T2:row5:col1, T2:row5:col2, T2:row5:col3, T2:row5:col4 | — | not captured |
+| CL (L/h)¹ | `Q22` · CL | 0.0289 | L/h | 8.027777777777777e-09 | [l] / [h] | 4.5 | space_fold (0.95) | Frymoyer_2017_table_p4_1:row0:col1 | — | not captured |
+| V₁ (L)² | `Q63` · V1 | 0.250 | L | 0.00025 | [l] | 4.1 | space_fold (0.95) | Frymoyer_2017_table_p4_1:row1:col1 | — | not captured |
+| V₂ (L)³ | `Q64` · V2 | 0.326 | L | 0.000326 | [l] | 10.9 | space_fold (0.95) | Frymoyer_2017_table_p4_1:row2:col1 | — | not captured |
+| Q (L/h)⁴ | `Q30` · Q | 0.0308 | L/h | 8.555555555555557e-09 | [l] / [h] | 13.5 | space_fold (0.95) | Frymoyer_2017_table_p4_1:row3:col1 | — | not captured |
+| AUC7d (mU*h/ml) | `Q19` · AUCt | 1107500 | mU*h/ml | not captured | [[h] · [m] · [u]] / [ml] | not captured | llm (0.6) | Frymoyer_2017_table_3:row3:col3 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -55,27 +54,22 @@ Frymoyer A et al., High-dose erythropoietin population pha…, Pediatric researc
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'Population pharmacokinetic Parameters' — extend the ontology if this is a real PK parameter (source ['T2:row0:col3', 'T2:row0:col4'])
-- dropped unlinked row (NIL): 'CL, %CV' — extend the ontology if this is a real PK parameter (source ['T2:row7:col2'])
+- dropped unlinked row (NIL): 'CL, %CV' — extend the ontology if this is a real PK parameter (source ['Frymoyer_2017_table_p4_1:row5:col1'])
+- dropped unlinked row (NIL): 'Dose Frequency' — extend the ontology if this is a real PK parameter (source ['Frymoyer_2017_table_3:row0:col4'])
 - NIL: refused to back-fill base 'CL' from footnote/prose loose number None (source ['T2:footnote']); the table cell was unparseable — needs review
 - NIL: refused to back-fill base 'V1' from footnote/prose loose number None (source ['T2:footnote']); the table cell was unparseable — needs review
 - NIL: refused to back-fill base 'V2' from footnote/prose loose number None (source ['T2:footnote']); the table cell was unparseable — needs review
 - NIL: refused to back-fill base 'Q' from footnote/prose loose number None (source ['T2:footnote']); the table cell was unparseable — needs review
-- implicit units: 'CL (L/h)1' → L/h (from the popPK convention: 'The paper does not explicitly state the unit for CL in the table or text. However, CL is a clearance parameter, and the ')
-- implicit units: 'V1 (L)2' → L (from the popPK convention: 'The paper does not explicitly state the unit for V1 in the table or text. However, V1 is a volume of distribution parame')
-- implicit units: 'V2 (L)3' → L (from the popPK convention: 'The paper does not explicitly state the unit for V2 in the table or text. However, V2 is a volume of distribution parame')
-- implicit units: 'Q (L/h)4' → L/h (from the popPK convention: 'The paper does not explicitly state the unit for Q in the table or text. However, Q is an intercompartmental clearance p')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=erythropoietin
 - molar mass: none found for 'erythropoietin' — its concentrations stay mass-only
 
 **Extraction notes:**
-- unparsed cell T2:row7:col1 = '20.1%'
-- unparsed cell T2:row7:col3 = '19.5%'
-- unparsed cell T2:row7:col4 = '9.6% – 25.1%'
-- unparsed cell T2:row8:col1 = '35.1%'
-- unparsed cell T2:row8:col3 = '35.0%'
-- unparsed cell T2:row8:col4 = '30.2% – 39.4%'
-- LLM selected parameter table(s) 2
+- table Frymoyer_2017_table_p4_1: unparsed_numeric_cell
+- table Frymoyer_2017_table_3: ambiguous_numeric_format
+- table Frymoyer_2017_table_3: unparsed_numeric_cell
+- companion parameter table 3 transcribed (10 record(s))
+- LLM selected parameter table(s) 3
+- dropped sensitivity-analysis table(s) 2 from the LLM selection — perturbations of a model, not a model
 
 ## Validation
 
@@ -107,29 +101,19 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T2:row2:col1', 'T2:row2:col2', 'T2:row2:col3', 'T2:row2:col4'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T2:row5:col1', 'T2:row5:col2', 'T2:row5:col3', 'T2:row5:col4'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['T2:row3:col1', 'T2:row3:col2', 'T2:row3:col3', 'T2:row3:col4'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['T2:row4:col1', 'T2:row4:col2', 'T2:row4:col3', 'T2:row4:col4'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.0289 | not captured | not captured | ['T2:row2:col1', 'T2:row2:col2', 'T2:row2:col3', 'T2:row2:col4'] |
+| C5_dimension_Q19 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Frymoyer_2017_table_3:row3:col3'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Frymoyer_2017_table_p4_1:row0:col1'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Frymoyer_2017_table_p4_1:row3:col1'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Frymoyer_2017_table_p4_1:row1:col1'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Frymoyer_2017_table_p4_1:row2:col1'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.0289 | not captured | not captured | ['Frymoyer_2017_table_p4_1:row0:col1'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.0289 L/h | not captured | not captured | ['T2:row2:col1', 'T2:row2:col2', 'T2:row2:col3', 'T2:row2:col4'] |
-| C9_phys_window_Q63 | fail | volume within physiological range | 0.25 L | not captured | not captured | ['T2:row3:col1', 'T2:row3:col2', 'T2:row3:col3', 'T2:row3:col4'] |
-| C9_phys_window_Q64 | fail | volume within physiological range | 0.326 L | not captured | not captured | ['T2:row4:col1', 'T2:row4:col2', 'T2:row4:col3', 'T2:row4:col4'] |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
-| T1_cmax | reference | skipped | 10000 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.0289 L/h | not captured | not captured | ['Frymoyer_2017_table_p4_1:row0:col1'] |
+| C9_phys_window_Q63 | fail | volume within physiological range | 0.25 L | not captured | not captured | ['Frymoyer_2017_table_p4_1:row1:col1'] |
+| C9_phys_window_Q64 | fail | volume within physiological range | 0.326 L | not captured | not captured | ['Frymoyer_2017_table_p4_1:row2:col1'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -138,9 +122,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_erythropoietin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Frymoyer_2017` / `Frymoyer_2017::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_erythropoietin/models/modelica/_needs_review/Erythropoietin_Frymoyer2017_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_erythropoietin/models/modelica/_needs_review/Erythropoietin_Frymoyer2017_reference.deviation.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_erythropoietin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Frymoyer_2017` / `Frymoyer_2017::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -156,4 +138,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 21:06 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 20:30 UTC</sub>

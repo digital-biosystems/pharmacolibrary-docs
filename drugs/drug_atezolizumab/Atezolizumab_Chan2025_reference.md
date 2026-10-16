@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;atezolizumab&quot;,&quot;href&quot;:&quot;drugs/drug_atezolizumab/&quot;},{&quot;label&quot;:&quot;Chan_2025 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atezolizumab_Chan2025_reference&quot;,&quot;label&quot;:&quot;Chan_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atezolizumab/Atezolizumab_Chan2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Atezolizumab_Shemesh2019_adult_model_estimate&quot;,&quot;label&quot;:&quot;Shemesh_2019_adult_model_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atezolizumab/Atezolizumab_Shemesh2019_adult_model_estimate.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atezolizumab_Shemesh2019_pediatric_young_adult_model_estimat&quot;,&quot;label&quot;:&quot;Shemesh_2019_pediatric_young_adult_model_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atezolizumab/Atezolizumab_Shemesh2019_pediatric_young_adult_model_estimat.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # atezolizumab — `Atezolizumab_Chan2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.542). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.542). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -12,46 +13,45 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
+
+> **Caveat** (`covariates_not_exercised`): Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.
 
 ### Reviewer guidance
 
-**Atezolizumab’s absorption rate constant, kabs (0.304), was rejected after its reported unit caused a structural-parameter dimension mismatch.**
+**F use library defaults, not estimates from this paper; the covariate scenarios were not simulated (+1 more).**
 
-For atezolizumab, kabs is reported as 0.304 with unit “unit,” although its label gives KA (1/d) and its meaning is absorption rate constant. That reported unit could not be converted to SI, and the structural parameter failed the dimension check. Extracted — atezolizumab: CL 0.2 L/d, V1 3.28 L, V2 3.63 L, Q 0.546 L/d, kabs 0.304 unit, Fab 0.718.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. The base model was simulated, not the covariate effects the record defines. A reported unit could not be converted (theta_v1_sex), so that value has no SI equivalent. Extracted — atezolizumab: CL 0.2 L/d, V1 3.28 L, V2 3.63 L, Q 0.546 L/d, kabs 0.304 1/d, Fab 0.718.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `parameters[cl].covariate_forms`: this record has ['additive_shift', 'linear_fractional'], the second reading none; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Chan P et al., Population Pharmacokinetics and Exposur…, CPT: pharmacometrics & syst… (2025)
   ·  DOI: [10.1002/psp4.13310](https://doi.org/10.1002/psp4.13310)
 
-<div class="pk-model-meta" hidden drug="atezolizumab" model-id="Atezolizumab_Chan2025_reference" status="rejected" stale="false" population="patients with locally advanced or metastatic non-small cell lung cancer" measured-compound="atezolizumab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="atezolizumab" model-id="Atezolizumab_Chan2025_reference" status="needs_review" stale="false" population="patients with non-small cell lung cancer" measured-compound="atezolizumab" parameterization="mechanistic" topology="2C"></div>
 
-**Model structure:** 2-compartment; no model was built for this record.  
-**Parameters:** 6 extracted, plus 6 covariate effects.
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameters:** 6 extracted, plus 3 covariate effects.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL (L/d) | `Q22` · CL | 0.200 | L/d | 2.3148148148148148e-09 | [l] / [d] | not captured | exact (1.0) | psp413310-tbl-0002:row1:col1 | — | 8.23 (None% RSE) |
-| Vc (L) | `Q63` · V1 | 3.28 | L | 0.00328 | [l] | not captured | exact (1.0) | psp413310-tbl-0002:row2:col1 | — | 39.0 (None% RSE) |
-| Vp (L) | `Q64` · V2 | 3.63 | L | 0.00363 | [l] | not captured | exact (1.0) | psp413310-tbl-0002:row3:col1 | — | 15.6 (None% RSE) |
+| CL (L/d) | `Q22` · CL | 0.200 | L/d | 2.3148148148148148e-09 | [l] / [d] | not captured | exact (1.0) | psp413310-tbl-0002:row1:col1 | — | 29.4 (None% RSE) |
+| Vc (L) | `Q63` · V1 | 3.28 | L | 0.00328 | [l] | not captured | exact (1.0) | psp413310-tbl-0002:row2:col1 | — | 18.1 (None% RSE) |
+| Vp (L) | `Q64` · V2 | 3.63 | L | 0.00363 | [l] | not captured | exact (1.0) | psp413310-tbl-0002:row3:col1 | — | 33.8 (None% RSE) |
 | Q (L/d) | `Q30` · Q | 0.546 | L/d | 6.319444444444445e-09 | [l] / [d] | not captured | exact (1.0) | psp413310-tbl-0002:row4:col1 | — | not captured |
-| KA (1/d) | `Q49` · kabs | 0.304 | unit | not captured | [unit] | 3.0 | exact (1.0) | psp413310-tbl-0002:row13:col1, psp413310-tbl-0002:row13:col2 | — | 23.7 (None% RSE) |
-| F1 | `Q40` · Fab | 0.718 | not captured | not captured | not captured | 1.8 | exact (1.0) | psp413310-tbl-0002:row14:col1, psp413310-tbl-0002:row14:col2 | — | 18.7 (None% RSE) |
-| theta_cl_albumin | `Q900` · theta_cl_albumin | -1.12 | not captured | not captured | not captured | not captured | not captured (not captured) | psp413310-tbl-0002:row5:col1 | — | not captured |
-| theta_cl_ada | `Q900` · theta_cl_ada | 0.159 | L/d | not captured | not captured | not captured | not captured (not captured) | psp413310-tbl-0002:row6:col1 | — | not captured |
-| theta_v1_albumin | `Q900` · theta_v1_albumin | -0.350 | not captured | not captured | not captured | not captured | not captured (not captured) | psp413310-tbl-0002:row9:col1 | — | not captured |
+| KA (1/d) | `Q49` · kabs | 0.304 | 1/d | 3.5185185185185183e-06 | [1] / [d] | 3.0 | exact (1.0) | psp413310-tbl-0002:row13:col1 | — | 34.6 (23.7% RSE) |
+| F1 | `Q40` · Fab | 0.718 | not captured | not captured | not captured | 1.8 | exact (1.0) | psp413310-tbl-0002:row14:col1 | — | 83.0 (18.7% RSE) |
+| theta_q319_ada | `Q900` · theta_q319_ada | 0.159 | not captured | not captured | not captured | not captured | not captured (not captured) | psp413310-tbl-0002:row6:col1 | — | not captured |
+| theta_cl_bodyweight | `Q900` · theta_cl_bodyweight | 0.808 | not captured | not captured | not captured | not captured | not captured (not captured) | psp413310-tbl-0002:row8:col1 | — | not captured |
 | theta_v1_sex | `Q900` · theta_v1_sex | -0.129 | L | not captured | not captured | not captured | not captured (not captured) | psp413310-tbl-0002:row11:col1 | — | not captured |
-| theta_v2_sex | `Q900` · theta_v2_sex | -0.272 | L | not captured | not captured | not captured | not captured (not captured) | psp413310-tbl-0002:row12:col1 | — | not captured |
-| theta_kabs_albumin | `Q900` · theta_kabs_albumin | 0.795 | not captured | not captured | not captured | 33.1 | not captured (not captured) | psp413310-tbl-0002:row15:col1, psp413310-tbl-0002:row15:col2 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -59,6 +59,9 @@ Chan P et al., Population Pharmacokinetics and Exposur…, CPT: pharmacometrics 
 </details>
 
 ## Departures & gaps
+
+**Deviations:**
+- `defaulted_parameters`: ['F', 'Tlag']
 
 **Interpretation flags:**
 - table section iiv: 'POPIIV CL' routed out of structural estimates ('Omega (standard deviation scale)—Between subject variability')
@@ -68,13 +71,14 @@ Chan P et al., Population Pharmacokinetics and Exposur…, CPT: pharmacometrics 
 - table section iiv: 'POPIIV F1' routed out of structural estimates ('Omega (standard deviation scale)—Between subject variability')
 - table section residual_error: 'Proportional error (%)' routed out of structural estimates ('Sigma (residual error)')
 - table section residual_error: 'Additive error (μg/mL)' routed out of structural estimates ('Sigma (residual error)')
-- unit_dimension_unknown: 'Tumor burden/63 mm' (CL)
-- dropped duplicate Q22 ('Tumor burden on CL (Tumor burden/63 mm)', value '0.125') — already have one for this compound
-- dropped unlinked row (NIL): 'Bodyweight on CL (BWT/77 in kg)' — extend the ontology if this is a real PK parameter (source ['psp413310-tbl-0002:row8:col1'])
+- dropped unlinked row (NIL): 'Albumin on CL (ALB/40 in g/L)' — extend the ontology if this is a real PK parameter (source ['psp413310-tbl-0002:row5:col1'])
+- dropped unlinked row (NIL): 'Tumor burden on CL (Tumor burden/63 mm)' — extend the ontology if this is a real PK parameter (source ['psp413310-tbl-0002:row7:col1'])
+- dropped unlinked row (NIL): 'Albumin on Vc (ALB/40 in g/L)' — extend the ontology if this is a real PK parameter (source ['psp413310-tbl-0002:row9:col1'])
 - dropped unlinked row (NIL): 'Bodyweight on Vc (BWT/77 in kg)' — extend the ontology if this is a real PK parameter (source ['psp413310-tbl-0002:row10:col1'])
-- unit_dimension_mismatch: 'KA (1/d)' → Q49 (unit '[luminosity] / [length] ** 2' vs ontology '1 / [time]') — route to review
-- unit_dimension_unknown: 'HGB/123 in g/L' (Fab)
-- dropped duplicate Q40 ('Hemoglobin on F1 On logit scale (HGB/123 in g/L)', value '1.76') — already have one for this compound
+- dropped unlinked row (NIL): 'Sex on Vp (additive effect for female)' — extend the ontology if this is a real PK parameter (source ['psp413310-tbl-0002:row12:col1'])
+- dropped unlinked row (NIL): 'Albumin on KA (ALB/40 in g/L)' — extend the ontology if this is a real PK parameter (source ['psp413310-tbl-0002:row15:col1'])
+- dropped unlinked row (NIL): 'Hemoglobin on F1 On logit scale (HGB/123 in g/L)' — extend the ontology if this is a real PK parameter (source ['psp413310-tbl-0002:row16:col1'])
+- covariate effect for Q319 has no base parameter row (kept as unattached equation-variable)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=atezolizumab
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
@@ -82,14 +86,8 @@ Chan P et al., Population Pharmacokinetics and Exposur…, CPT: pharmacometrics 
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- unparsed cell psp413310-tbl-0002:row18:col1 = '29.4%'
-- unparsed cell psp413310-tbl-0002:row19:col1 = '18.1%'
-- unparsed cell psp413310-tbl-0002:row20:col1 = '33.8%'
-- unparsed cell psp413310-tbl-0002:row21:col1 = '34.6%'
-- unparsed cell psp413310-tbl-0002:row22:col1 = '83.0%'
+- table psp413310-tbl-0002: ragged_grid
 - LLM selected parameter table(s) 2
-- dropped sensitivity-analysis table(s) 3 from the LLM selection — perturbations of a model, not a model
-- LLM region Chan_2025:results_prose: no JSON records returned
 
 ## Validation
 
@@ -134,7 +132,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp413310-tbl-0002:row1:col1'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp413310-tbl-0002:row4:col1'] |
-| C5_dimension_Q49 | fail | [luminosity] / [length] ** 2 | unit | not captured | not captured | ['psp413310-tbl-0002:row13:col1', 'psp413310-tbl-0002:row13:col2'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['psp413310-tbl-0002:row13:col1'] |
 | C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp413310-tbl-0002:row2:col1'] |
 | C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp413310-tbl-0002:row3:col1'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.2 | not captured | not captured | ['psp413310-tbl-0002:row1:col1'] |
@@ -143,6 +141,17 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C9_phys_window_Q63 | pass | volume within physiological range | 3.28 L | not captured | not captured | ['psp413310-tbl-0002:row2:col1'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 3.63 L | not captured | not captured | ['psp413310-tbl-0002:row3:col1'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_output_variable | not captured | pass | C_central (measured=atezolizumab) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 5 scholar param(s) emitted or defaulted | 5 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable | not captured | LLM adjudication → deterministic rule |
+
 <details class="legend">
 <summary>Validation definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
@@ -150,20 +159,38 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_atezolizumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Chan_2025` / `Chan_2025::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_atezolizumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Chan_2025` / `Chan_2025::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_atezolizumab/models/modelica/Atezolizumab_Chan2025_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_atezolizumab/models/modelica/Atezolizumab_Chan2025_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_atezolizumab/models/modelica/Atezolizumab_Chan2025_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_atezolizumab/Atezolizumab_Chan2025_reference/Atezolizumab_Chan2025_reference_modelica.zip" download>Atezolizumab_Chan2025_reference_modelica.zip</a> <span class="pk-size">(5.0 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_atezolizumab/Atezolizumab_Chan2025_reference/Atezolizumab_Chan2025_reference_fmi.zip" download>Atezolizumab_Chan2025_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_atezolizumab/Atezolizumab_Chan2025_reference/Atezolizumab_Chan2025_reference_matlab.zip" download>Atezolizumab_Chan2025_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_atezolizumab/Atezolizumab_Chan2025_reference/Atezolizumab_Chan2025_reference_matlab_simbio.zip" download>Atezolizumab_Chan2025_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_atezolizumab/Atezolizumab_Chan2025_reference/Atezolizumab_Chan2025_reference_sbml.zip" download>Atezolizumab_Chan2025_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_atezolizumab/Atezolizumab_Chan2025_reference/Atezolizumab_Chan2025_reference_cellml.zip" download>Atezolizumab_Chan2025_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+</tbody></table>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_atezolizumab/Atezolizumab_Chan2025_reference/Atezolizumab_Chan2025_reference.svg" alt="Atezolizumab_Chan2025_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+**Administration: oral** — 1200 mg, single dose, first-order absorption (ka 0.0127 /h, F 0.9). Doses in the paper: 1200, 1800, 1875 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_atezolizumab/Atezolizumab_Chan2025_reference/Atezolizumab_Chan2025_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_atezolizumab/Atezolizumab_Chan2025_reference/Atezolizumab_Chan2025_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_2C_enteral` · parameters `Atezolizumab_Chan2025_reference_params.json` · controls `Atezolizumab_Chan2025_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 09:21 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 17:58 UTC</sub>

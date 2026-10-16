@@ -17,18 +17,34 @@ Sutimlimab is a monoclonal antibody that inhibits complement and is used to trea
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 00:36 | 0:08 | 0/0/0 | 1/1/0 | 0/0/0 | 20,704/877 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
+| 2026-10-15 00:27 | 0:51 | 0/6/0 | 1/0/1 | 0/0/0 | 40,317/2,420 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
 
 ## popPK records
 
-_not available_
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Bartko_2018_10](drugs/drug_sutimlimab/Sutimlimab_Bartko2018_10.md) | — | 1-compartment (no model) | 0 | Bartko J et al., A Randomized, First-in-Human, Healthy V…, Clinical pharmacology and t… (2018) | [10.1002/cpt.1111](https://doi.org/10.1002/cpt.1111) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Bartko_2018_100](drugs/drug_sutimlimab/Sutimlimab_Bartko2018_100.md) | — | 1-compartment (no model) | 0 | Bartko J et al., A Randomized, First-in-Human, Healthy V…, Clinical pharmacology and t… (2018) | [10.1002/cpt.1111](https://doi.org/10.1002/cpt.1111) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Bartko_2018_3](drugs/drug_sutimlimab/Sutimlimab_Bartko2018_3.md) | — | 1-compartment (no model) | 0 | Bartko J et al., A Randomized, First-in-Human, Healthy V…, Clinical pharmacology and t… (2018) | [10.1002/cpt.1111](https://doi.org/10.1002/cpt.1111) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Bartko_2018_30](drugs/drug_sutimlimab/Sutimlimab_Bartko2018_30.md) | — | 1-compartment (no model) | 0 | Bartko J et al., A Randomized, First-in-Human, Healthy V…, Clinical pharmacology and t… (2018) | [10.1002/cpt.1111](https://doi.org/10.1002/cpt.1111) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Bartko_2018_60](drugs/drug_sutimlimab/Sutimlimab_Bartko2018_60.md) | — | 1-compartment (no model) | 0 | Bartko J et al., A Randomized, First-in-Human, Healthy V…, Clinical pharmacology and t… (2018) | [10.1002/cpt.1111](https://doi.org/10.1002/cpt.1111) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Bartko_2018_60a](drugs/drug_sutimlimab/Sutimlimab_Bartko2018_60a.md) | — | 1-compartment (no model) | 5 | Bartko J et al., A Randomized, First-in-Human, Healthy V…, Clinical pharmacology and t… (2018) | [10.1002/cpt.1111](https://doi.org/10.1002/cpt.1111) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Bartko_2018_CP_activity](drugs/drug_sutimlimab/pd_Bartko_2018_CP_activity.md) | CP activity ← sutimlimab · direct sigmoid Emax (Hill) effect | — | Bartko J et al., A Randomized, First-in-Human, Healthy V…, Clinical pharmacology and t… (2018) | [10.1002/cpt.1111](https://doi.org/10.1002/cpt.1111) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Frank_2023_Hb](drugs/drug_sutimlimab/pd_Frank_2023_Hb.md) | Hb ← sutimlimab · indirect response — drug stimulates the production of Hb | — | Frank T et al., Sutimlimab Pharmacokinetics and Pharmac…, The Journal of pharmacology… (2023) | [10.1124/jpet.122.001511](https://doi.org/10.1124/jpet.122.001511) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Frank_2023_Hb](drugs/drug_sutimlimab/pd_Frank_2023_Hb.md) | hemoglobin (Hb) levels ← sutimlimab · indirect response — drug stimulates the production of hemoglobin (Hb) levels | — | Frank T et al., Sutimlimab Pharmacokinetics and Pharmac…, The Journal of pharmacology… (2023) | [10.1124/jpet.122.001511](https://doi.org/10.1124/jpet.122.001511) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Bartko_2018_CP_activity](drugs/drug_sutimlimab/pd_Bartko_2018_CP_activity.md) | classical complement pathway activity ← sutimlimab · direct sigmoid Emax (Hill) effect | — | Bartko J et al., A Randomized, First-in-Human, Healthy V…, Clinical pharmacology and t… (2018) | [10.1002/cpt.1111](https://doi.org/10.1002/cpt.1111) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=sutimlimab).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: C1S (antibody), C1S (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -39,8 +55,8 @@ _not available_
 ## Coverage
 
 - **PubMed hits:** 3 matched, 3 returned
-- **screened:** 0  ·  **relevant:** 0
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **screened:** 1  ·  **relevant:** 1
+- **records:** 6  ·  extracted 0  ·  needs_review 0  ·  rejected 6  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -49,16 +65,15 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Frank_2023.pdf` | Frank T et al., Sutimlimab Pharmacokinetics and Pharmac…, The Journal of pharmacology… (2023) | popPK | 10 | [10.1124/jpet.122.001511](https://doi.org/10.1124/jpet.122.001511) | [37164370](https://pubmed.ncbi.nlm.nih.gov/37164370) | The paper describes a population PK model for sutimlimab in humans, but the extracted evidence contains only qualitative descriptions of the model structure and covariates without any specific numeric parameter values (e.g., CL, V, Q). |
+| `Frank_2023.pdf` | Frank T et al., Sutimlimab Pharmacokinetics and Pharmac…, The Journal of pharmacology… (2023) | popPK | 10 | [10.1124/jpet.122.001511](https://doi.org/10.1124/jpet.122.001511) | [37164370](https://pubmed.ncbi.nlm.nih.gov/37164370) | The paper describes a population PK model for sutimlimab with specific structural features (two-compartment, linear/nonlinear clearance) and covariates, but the extracted evidence provided contains only the abstract and no numeric parameter estimates. |
 
-<sub>queue written 2026-10-07T00:36:20.557957+00:00</sub>
+<sub>queue written 2026-10-15T00:27:12.318659+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Bartko_2018 | relevant | 5 | 2 | The paper reports standard non-compartmental PK parameters (Cmax, tmax, AUC, t1/2) but lacks specific quantitative disposition parameters like clearance (CL) and volume of distribution (V) required for population PK modeling; these are typically derived via compartmental analysis not provided in this evidence. |
-| popPK | Frank_2023 | relevant | 10 | 0 | The paper describes a population PK model for sutimlimab in humans, but the extracted evidence contains only qualitative descriptions of the model structure and covariates without any specific numeric parameter values (e.g., CL, V, Q). |
+| popPK | Frank_2023 | relevant | 10 | 0 | The paper describes a population PK model for sutimlimab with specific structural features (two-compartment, linear/nonlinear clearance) and covariates, but the extracted evidence provided contains only the abstract and no numeric parameter estimates. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2)</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-15 00:27 UTC</sub>

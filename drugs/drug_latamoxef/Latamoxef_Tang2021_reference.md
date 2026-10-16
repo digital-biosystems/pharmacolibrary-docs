@@ -16,9 +16,9 @@
 
 ### Reviewer guidance
 
-**Only clearance was extracted — no volume; q2 has no unit.**
+**Only clearance was extracted — no volume.**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. Extracted — latamoxef: Q2 0.544, CL 87 mL/min, CLR 66 mL/min.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. A reported unit could not be converted (equation variable), so that value has no SI equivalent. Extracted — latamoxef: CLR 66 mL/min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has latamoxef, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -31,7 +31,7 @@ Tang BH et al., Drug Clearance in Neonates: A Combinati…, Clinical pharmacokin
 <div class="pk-model-meta" hidden drug="latamoxef" model-id="Latamoxef_Tang2021_reference" status="needs_review" stale="false" population="neonates" measured-compound="latamoxef" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 3 extracted.
+**Parameters:** 1 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -40,11 +40,9 @@ Tang BH et al., Drug Clearance in Neonates: A Combinati…, Clinical pharmacokin
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| θ1 | `Q900` · equation variable | 0.863 | not captured | not captured | not captured | not captured | llm (0.6) | tab_0:row16:col2, tab_0:row16:col3, tab_0:row16:col4, tab_0:row16:col5, tab_0:row16:col6, tab_0:row16:col7 | — | not captured |
-| θ2 | `Q99` · Q2 | 0.544 | not captured | not captured | not captured | not captured | llm (0.6) | tab_0:row18:col2, tab_0:row18:col3, tab_0:row18:col4, tab_0:row18:col5, tab_0:row18:col6, tab_0:row18:col7 | — | not captured |
-| Total Clearance (mL/min) | `Q22` · CL | 87 | mL/min | 1.45e-06 | [ml] / [min] | not captured | exact (1.0) | Tang_2021_table_2:row0:col4 | — | not captured |
-| Renal Clearance (mL/min) | `Q26` · CLR | 66 | mL/min | 1.0999999999999998e-06 | [ml] / [min] | not captured | exact (1.0) | Tang_2021_table_2:row1:col4 | — | not captured |
-| θCL | `Q900` · θCL | 0.0680 | mL/min | 1.1333333333333333e-09 | not captured | not captured | not captured (not captured) | tab_0:row14:col2, tab_0:row14:col3, tab_0:row14:col4, tab_0:row14:col5, tab_0:row14:col6, tab_0:row14:col7 | — | not captured |
+| θ2 | `Q900` · equation variable | 0.288 | 4, 5, 15-18 | not captured | [4] | not captured | llm (0.6) | Tang_2021_table_1:row16:col3 | — | not captured |
+| Renal Clearance (mL/min) | `Q26` · CLR | 66 | mL/min | 1.0999999999999998e-06 | [ml] / [min] | not captured | exact (1.0) | Tang_2021_table_4:row2:col2 | — | not captured |
+| Clearances | `Q900` · Clearances | 0.248 | L/h | 6.888888888888889e-08 | not captured | not captured | not captured (not captured) | Tang_2021_table_1:row9:col3 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -54,33 +52,43 @@ Tang BH et al., Drug Clearance in Neonates: A Combinati…, Clinical pharmacokin
 ### Unresolved rows _(no Q-code or no value — not parameters)_
 | label (paper) | Q-code | value | link |
 |---|---|---|---|
-| θCL | Q22 | not captured | llm_confirmed |
-| Fage | Q40 | not captured | llm |
+| Clearances (L/h) | Q22 | not captured | llm_confirmed |
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'Patients' — extend the ontology if this is a real PK parameter (source ['tab_0:row2:col2', 'tab_0:row2:col3', 'tab_0:row2:col4', 'tab_0:row2:col5', 'tab_0:row2:col6', 'tab_0:row2:col7'])
-- dropped unlinked row (NIL): 'Samples' — extend the ontology if this is a real PK parameter (source ['tab_0:row3:col2', 'tab_0:row3:col3', 'tab_0:row3:col4', 'tab_0:row3:col5', 'tab_0:row3:col6', 'tab_0:row3:col7'])
-- dropped unlinked row (NIL): 'Fsize' — extend the ontology if this is a real PK parameter (source ['tab_0:row15:col2', 'tab_0:row15:col3', 'tab_0:row15:col4', 'tab_0:row15:col5', 'tab_0:row15:col6', 'tab_0:row15:col7'])
-- dropped duplicate Q900 ('θ3', value '0.214') — already have one for this compound
-- dropped unlinked row (NIL): 'FRF' — extend the ontology if this is a real PK parameter (source ['tab_0:row20:col2', 'tab_0:row20:col3', 'tab_0:row20:col4', 'tab_0:row20:col5'])
-- dropped unlinked row (NIL): 'θ4' — extend the ontology if this is a real PK parameter (source ['tab_0:row21:col2', 'tab_0:row21:col3'])
-- dropped duplicate Q900 ('θ5', value '0.666') — already have one for this compound
-- unit inherited for CL (Q22): 'mL/min' from a same-Q-code sibling (this row's label had no unit)
+- dropped unlinked row (NIL): 'Patients' — extend the ontology if this is a real PK parameter (source ['Tang_2021_table_1:row0:col3'])
+- dropped unlinked row (NIL): 'Samples' — extend the ontology if this is a real PK parameter (source ['Tang_2021_table_1:row1:col3'])
+- dropped unlinked row (NIL): 'BW (kg)' — extend the ontology if this is a real PK parameter (source ['Tang_2021_table_1:row2:col3'])
+- dropped unlinked row (NIL): 'CW (kg)' — extend the ontology if this is a real PK parameter (source ['Tang_2021_table_1:row3:col3'])
+- dropped unlinked row (NIL): 'GA (weeks)' — extend the ontology if this is a real PK parameter (source ['Tang_2021_table_1:row4:col3'])
+- dropped unlinked row (NIL): 'PNA (days)' — extend the ontology if this is a real PK parameter (source ['Tang_2021_table_1:row5:col3'])
+- dropped unlinked row (NIL): 'PMA (weeks)' — extend the ontology if this is a real PK parameter (source ['Tang_2021_table_1:row6:col3'])
+- dropped duplicate Q22 ('Clearances (L/h/kg)', value '0.0861') — already have one for this compound
+- unit_dimension_mismatch: 'θCL' → Q22 (unit 'dimensionless' vs ontology '[length] ** 3 / [time]') — route to review
+- dropped duplicate Q22 ('θCL', value '0.268') — already have one for this compound
+- dropped unlinked row (NIL): 'Fsize' — extend the ontology if this is a real PK parameter (source ['Tang_2021_table_1:row13:col3'])
+- dropped unlinked row (NIL): 'θ1' — extend the ontology if this is a real PK parameter (source ['Tang_2021_table_1:row14:col3'])
+- dropped unlinked row (NIL): 'Fage' — extend the ontology if this is a real PK parameter (source ['Tang_2021_table_1:row15:col3'])
+- dropped unlinked row (NIL): 'θ3' — extend the ontology if this is a real PK parameter (source ['Tang_2021_table_1:row17:col3'])
+- dropped unlinked row (NIL): 'FRF' — extend the ontology if this is a real PK parameter (source ['Tang_2021_table_1:row18:col3'])
+- dropped unlinked row (NIL): 'CL-IV (%)' — extend the ontology if this is a real PK parameter (source ['Tang_2021_table_1:row21:col3'])
+- dropped duplicate Q22 ('Total Clearance (mL/min)', value '87') — already have one for this compound
+- unit_dimension_mismatch: '% Renal Clearance' → Q26 (unit 'dimensionless' vs ontology '[length] ** 3 / [time]') — route to review
+- dropped duplicate Q26 ('% Renal Clearance', value '76') — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=latamoxef
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
-- bound model equation to Q22 (CL): CL = 5.9*(CW/70)^0.75*(PMA/3
-- Q22 (CL) is equation-defined: value moved to equation-variable 'θCL'; equation kept verbatim
+- bound model equation to Q22 (CL): CL = 5.9*(CW/70)^0.75*(PMA/3)
+- Q22 (CL) is equation-defined: value moved to equation-variable 'Clearances (L/h)'; equation kept verbatim
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- transposed table Tang_2021_table_2: parameters were across the columns, populations/subgroups down the first column — transposed for parsing
-- unparsed cell Tang_2021_table_2:row0:col6 = '~300'
-- unparsed cell Tang_2021_table_2:row1:col6 = '~166'
-- companion parameter table 2 transcribed (10 record(s))
-- captured model equation CL = 5.9*(CW/70)^0.75*(PMA/3
+- table Tang_2021_table_4: unbound_uncertainty
+- table Tang_2021_table_4: unparsed_numeric_cell
+- transposed table Tang_2021_table_4: logical view retains original source coordinates
+- companion parameter table 4 transcribed (11 record(s))
+- LLM selected parameter table(s) 4
+- captured model equation CL = 5.9*(CW/70)^0.75*(PMA/3)
 
 ## Validation
 
@@ -116,15 +124,12 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tang_2021_table_2:row0:col4'] |
-| C5_dimension_Q26 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tang_2021_table_2:row1:col4'] |
-| C5_unit_missing_Q99 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_0:row18:col2', 'tab_0:row18:col3', 'tab_0:row18:col4', 'tab_0:row18:col5', 'tab_0:row18:col6', 'tab_0:row18:col7'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 87.0 | not captured | not captured | ['Tang_2021_table_2:row0:col4'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tang_2021_table_1:row9:col3'] |
+| C5_dimension_Q26 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tang_2021_table_4:row2:col2'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 5.22 L/h | not captured | not captured | ['Tang_2021_table_2:row0:col4'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -133,7 +138,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_latamoxef/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Tang_2021` / `Tang_2021::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_latamoxef/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Tang_2021` / `Tang_2021::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -159,4 +164,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 11:31 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 00:21 UTC</sub>

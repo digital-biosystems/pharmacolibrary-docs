@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;ticagrelor&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/&quot;},{&quot;label&quot;:&quot;Amilon_2019 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ticagrelor_Henrich2021_reference&quot;,&quot;label&quot;:&quot;Henrich_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/Ticagrelor_Henrich2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ticagrelor_strand2019_reference&quot;,&quot;label&quot;:&quot;\u00c5strand_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/Ticagrelor_strand2019_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ticagrelor_Li2016_reference&quot;,&quot;label&quot;:&quot;Li_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/Ticagrelor_Li2016_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_strand_2019_PRU&quot;,&quot;label&quot;:&quot;\u00c5strand_2019 \u00b7 PRU&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/pd_strand_2019_PRU.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ticagrelor_strand2019_reference&quot;,&quot;label&quot;:&quot;\u00c5strand_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/Ticagrelor_strand2019_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ticagrelor_Henrich2021_reference&quot;,&quot;label&quot;:&quot;Henrich_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/Ticagrelor_Henrich2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ticagrelor_Li2016_reference&quot;,&quot;label&quot;:&quot;Li_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/Ticagrelor_Li2016_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_strand_2019_PRU&quot;,&quot;label&quot;:&quot;\u00c5strand_2019 \u00b7 PRU&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/pd_strand_2019_PRU.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -19,7 +19,7 @@
 
 **This paper's disposition core is incomplete.**
 
-A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Henrich_2021, Åstrand_2019) cannot stand in for this paper's evidence. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — ticagrelor: CL 22.8 L/h, V 17 L, kabs 5.95 1/h, tlag 0.48 h.
+A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Henrich_2021) cannot stand in for this paper's evidence. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — ticagrelor: CL 22.8 L/h, V 17 L, kabs 5.95 1/h; AR-C124910XX: CL 9.97 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -41,10 +41,10 @@ Amilon C et al., Population Pharmacokinetics/Pharmacodyn…, Clinical pharmacoki
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Estimated oral clearances (35 kg patient; median bodyweight) | `Q22` · CL | 22.8 | L/h | 6.333333333333333e-06 | [l] / [h] | not captured | exact (1.0) | Amilon_2019:abstract, Amilon_2019:abstract | — | not captured |
+| Estimated oral clearances (35 kg patient; median bodyweight) were 22.8 L/h (ticagrelor) | `Q22` · CL | 22.8 | L/h | 6.333333333333333e-06 | [l] / [h] | not captured | exact (1.0) | Amilon_2019:abstract | — | not captured |
+| Estimated oral clearances (35 kg patient; median bodyweight) were 9.97 L/h (AR-C124910XX) | `Q22` · CL | 9.97 | L/h | 2.769444444444445e-06 | [l] / [h] | not captured | exact (1.0) | Amilon_2019:abstract | — | not captured |
 | Vcent (L) | `Q61` · V | 17.0 | L | 0.017 | L | not captured | review_gapfill (0.7) | Henrich_2021:review | — | not captured |
 | ka (1/h) | `Q49` · kabs | 5.95 | 1/h | 0.0016527777777777778 | 1/h | not captured | review_gapfill (0.7) | Henrich_2021:review | — | not captured |
-| Absorption lag time prior MI (h) | `Q83` · tlag | 0.48 | h | 1728.0 | h | not captured | review_gapfill (0.7) | Åstrand_2019:review | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -58,14 +58,14 @@ Amilon C et al., Population Pharmacokinetics/Pharmacodyn…, Clinical pharmacoki
 - dropped PD-category row 'maximum PRU effect' → Q320 (Emax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Amilon_2019:abstract'])
 - covariate category for EC50 from footnote/prose kept as documentation only (['Amilon_2019:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=ticagrelor
-- template fit: none — other model — not a compartmental parent–metabolite model
-- row roles (LLM): model_class=other; 4/4 row label(s) assigned, 2 linked by role; re-tagged ticagrelor→parent ×3
+- template fit: none — turnover model — not a compartmental parent–metabolite model
+- row roles (LLM): model_class=turnover; 5/5 row label(s) assigned, 2 linked by role; re-tagged ticagrelor→parent ×2, ticagrelor→AR-C124910XX ×1
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - gap-filled Q61 (V) from Henrich_2021's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - gap-filled Q49 (kabs) from Henrich_2021's review values (primary lacked it)
-- gap-filled Q83 (tlag) from Åstrand_2019's review values (primary lacked it)
+- skipped review gap-fill of TLAG from Teng_2015_2: its label names a different analyte ('ipa') — 'Onset of IPA'
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Amilon_2019_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
@@ -108,16 +108,17 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Amilon_2019:abstract', 'Amilon_2019:abstract'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Amilon_2019:abstract'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Amilon_2019:abstract'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Henrich_2021:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Henrich_2021:review'] |
-| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Åstrand_2019:review'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 22.8 | not captured | not captured | ['Amilon_2019:abstract', 'Amilon_2019:abstract'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 22.8 | not captured | not captured | ['Amilon_2019:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 22.8 L/h | not captured | not captured | ['Amilon_2019:abstract', 'Amilon_2019:abstract'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 22.8 L/h | not captured | not captured | ['Amilon_2019:abstract'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 9.97 L/h | not captured | not captured | ['Amilon_2019:abstract'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 17 L | not captured | not captured | ['Henrich_2021:review'] |
 
 <details class="legend">
@@ -127,7 +128,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ticagrelor/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Amilon_2019` / `Amilon_2019::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ticagrelor/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Amilon_2019` / `Amilon_2019::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -153,4 +154,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 16:24 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 18:13 UTC</sub>

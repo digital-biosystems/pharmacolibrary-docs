@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;ibutilide&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ibutilide_Li2007_reference&quot;,&quot;label&quot;:&quot;Li_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibutilide/Ibutilide_Li2007_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Zeng_2017_QTc&quot;,&quot;label&quot;:&quot;Zeng_2017 \u00b7 QTc&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ibutilide/pd_Zeng_2017_QTc.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Tisdale_2012_QTF&quot;,&quot;label&quot;:&quot;Tisdale_2012 \u00b7 QTF&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ibutilide/pd_Tisdale_2012_QTF.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # ibutilide
 
@@ -26,22 +27,35 @@ Ibutilide is a class III antiarrhythmic drug used to treat atrial fibrillation. 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-08 18:20 | 5:44 | 0/1/0 | 3/0/1 | 0/0/0 | 81,100/8,006 | ollama / qwen3.8:27b-mtp-q8_0 | 7 | 5/8 | 2/5 | 0 |
+| 2026-10-14 23:47 | 11:08 | 1/1/0 | 3/0/1 | 0/0/0 | 179,061/24,147 | ollama / qwen3.8:27b-mtp-q8_0 | 7 | 5/8 | 2/5 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.769), gpt-oss:120b (not confirmed, agreement 0.833). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Zeng_2017_reference](drugs/drug_ibutilide/Ibutilide_Zeng2017_reference.md) | — | 2-compartment (no model) | 4 | Zeng Z et al., Population Pharmacokinetic/Pharmacodyna…, Clinical therapeutics (2017) | [10.1016/j.clinthera.2017.05.349](https://doi.org/10.1016/j.clinthera.2017.05.349) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). Primary extraction retained.">cross-check: partial</span> | [Li_2007_reference](drugs/drug_ibutilide/Ibutilide_Li2007_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Li Y et al., Pharmacokinetic and pharmacodynamic pro…, Clinical therapeutics (2007) | [10.1016/j.clinthera.2007.09.010](https://doi.org/10.1016/j.clinthera.2007.09.010) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (confirmed, agreement 1.0), gpt-oss-120b (not confirmed, agreement 0.769). Primary extraction retained.">cross-check: disputed 1/2</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Zeng_2017_reference](drugs/drug_ibutilide/Ibutilide_Zeng2017_reference.md) | — | 2-compartment (no model) | 4 | Zeng Z et al., Population Pharmacokinetic/Pharmacodyna…, Clinical therapeutics (2017) | [10.1016/j.clinthera.2017.05.349](https://doi.org/10.1016/j.clinthera.2017.05.349) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Data from bacteria, fungi or plants, not measured in people (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 1.00).">other organism</span> | [Lin_2008_HERG](drugs/drug_ibutilide/pd_Lin_2008_HERG.md) | HERG current inhibition ← ibutilide · direct Emax (saturable) effect | — | Lin C et al., Extracellular acidification and hyperka…, Cardiology (2008) | [10.1159/000111932](https://doi.org/10.1159/000111932) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [McBride_2009_IKr](drugs/drug_ibutilide/pd_McBride_2009_IKr.md) | IKr ← ibutilide · direct sigmoid Emax (Hill) effect | — | McBride BF et al., Influence of the G2677T/C3435T haplotyp…, The pharmacogenomics journal (2009) | [10.1038/tpj.2009.1](https://doi.org/10.1038/tpj.2009.1) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed</span> | [Zeng_2017_QTc](drugs/drug_ibutilide/pd_Zeng_2017_QTc.md) | QT interval ← ibutilide · direct sigmoid Emax (Hill) effect | — | Zeng Z et al., Population Pharmacokinetic/Pharmacodyna…, Clinical therapeutics (2017) | [10.1016/j.clinthera.2017.05.349](https://doi.org/10.1016/j.clinthera.2017.05.349) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> | [Tisdale_2012_QTF](drugs/drug_ibutilide/pd_Tisdale_2012_QTF.md) | Fridericia-corrected QT interval ← ibutilide · direct sigmoid Emax (Hill) effect | — | Tisdale JE et al., Enhanced sensitivity to drug-induced QT…, Journal of clinical pharmac… (2012) | [10.1177/0091270011416939](https://doi.org/10.1177/0091270011416939) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by ollama:gpt-oss:120b (?, agreement 0.0), einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial 0/2</span> <span class="pk-badge pk-badge--species" title="Data from bacteria, fungi or plants, not measured in people (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 1.00).">other organism</span> | [Lin_2008_HERG](drugs/drug_ibutilide/pd_Lin_2008_HERG.md) | HERG current inhibition ← ibutilide · direct Emax (saturable) effect | — | Lin C et al., Extracellular acidification and hyperka…, Cardiology (2008) | [10.1159/000111932](https://doi.org/10.1159/000111932) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by ollama:gpt-oss:120b (not confirmed, agreement 0.8), einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [McBride_2009_IKr](drugs/drug_ibutilide/pd_McBride_2009_IKr.md) | IKr ← ibutilide · direct sigmoid Emax (Hill) effect | — | McBride BF et al., Influence of the G2677T/C3435T haplotyp…, The pharmacogenomics journal (2009) | [10.1038/tpj.2009.1](https://doi.org/10.1038/tpj.2009.1) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by ollama:gpt-oss:120b (not confirmed, agreement 0.444), einfracz:gpt-oss-120b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed 0/2</span> | [Zeng_2017_QTc](drugs/drug_ibutilide/pd_Zeng_2017_QTc.md) | QT interval ← ibutilide · direct sigmoid Emax (Hill) effect | ▶ model + simulator | Zeng Z et al., Population Pharmacokinetic/Pharmacodyna…, Clinical therapeutics (2017) | [10.1016/j.clinthera.2017.05.349](https://doi.org/10.1016/j.clinthera.2017.05.349) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by ollama:gpt-oss:120b (confirmed, agreement 1.0), einfracz:gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓ 2/2</span> | [Tisdale_2012_QTF](drugs/drug_ibutilide/pd_Tisdale_2012_QTF.md) | Fridericia-corrected QT interval ← ibutilide · direct sigmoid Emax (Hill) effect | ▶ model + simulator | Tisdale JE et al., Enhanced sensitivity to drug-induced QT…, Journal of clinical pharmac… (2012) | [10.1177/0091270011416939](https://doi.org/10.1177/0091270011416939) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=ibutilide).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: CACNA1C (activator), CACNA2D1 (activator), CACNB1 (activator), CACNG1 (activator), KCNH2 (inhibitor), KCNH6 (inhibitor), KCNH7 (inhibitor), KCNJ11 (inhibitor), KCNK1 (inhibitor), KCNK6 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,8 +66,8 @@ Ibutilide is a class III antiarrhythmic drug used to treat atrial fibrillation. 
 ## Coverage
 
 - **PubMed hits:** 31 matched, 31 returned
-- **screened:** 4  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **screened:** 4  ·  **relevant:** 2
+- **records:** 2  ·  extracted 1  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -64,7 +78,7 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 |---|---|---|---|---|---|---|
 | `Yang_1995.pdf` | Yang T et al., Ibutilide, a methanesulfonanilide antia…, Circulation (1995) | pd | 4 | [10.1161/01.cir.91.6.1799](https://doi.org/10.1161/01.cir.91.6.1799) | [7882490](https://www.ncbi.nlm.nih.gov/pubmed/7882490) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-10-08T18:20:17.677557+00:00</sub>
+<sub>queue written 2026-10-14T23:37:09.830095+00:00</sub>
 
 ## Screened and excluded
 
@@ -105,7 +119,6 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | PD | Yang_1995 | not_relevant | 0 | 0 | The provided text is only a title and abstract fragment describing the mechanism of action (IKr block) and dependencies, but it does not contain the full text, data, or numeric PD parameters (such as IC50 or Emax) required to extract a quantitative exposure-response relationship. |
 | popPK | Yoo_2021 | irrelevant | 0 | 0 | The paper describes an in silico/in vitro proarrhythmia prediction model and does not report pharmacokinetic parameters for ibutilide. |
 | PD | Yoo_2021 | not_relevant | 0 | 0 | The paper focuses on an artificial neural network model for classifying proarrhythmic risk using in silico electrophysiological features and does not report a pharmacodynamic (exposure-response) model or numeric PD parameters (e.g., Emax, EC50) for ibutilide. |
-| popPK | Zeng_2017 | relevant | 10 | 0 | The paper describes a population PK model for ibutilide, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence text. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-08 18:15 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-14 23:37 UTC</sub>

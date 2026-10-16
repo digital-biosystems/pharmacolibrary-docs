@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01D&quot;,&quot;href&quot;:&quot;atc/J01D.md&quot;},{&quot;label&quot;:&quot;doripenem&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Doripenem_Nonoshita2020_base_model&quot;,&quot;label&quot;:&quot;Nonoshita_2020_base_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doripenem/Doripenem_Nonoshita2020_base_model.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doripenem_Nonoshita2020_population_mean&quot;,&quot;label&quot;:&quot;Nonoshita_2020_population_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doripenem/Doripenem_Nonoshita2020_population_mean.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doripenem_Tanaka2017_based_on_ppk_model&quot;,&quot;label&quot;:&quot;Tanaka_2017_based_on_ppk_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doripenem/Doripenem_Tanaka2017_based_on_ppk_model.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doripenem_Tanaka2017_bayesian_estimated&quot;,&quot;label&quot;:&quot;Tanaka_2017_bayesian_estimated&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doripenem/Doripenem_Tanaka2017_bayesian_estimated.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doripenem_Wang2022_reference&quot;,&quot;label&quot;:&quot;Wang_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doripenem/Doripenem_Wang2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Doripenem_Nonoshita2020_reference&quot;,&quot;label&quot;:&quot;Nonoshita_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doripenem/Doripenem_Nonoshita2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doripenem_Tanaka2017_reference&quot;,&quot;label&quot;:&quot;Tanaka_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doripenem/Doripenem_Tanaka2017_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # doripenem
 
@@ -21,30 +21,33 @@ Doripenem is a carbapenem antibiotic that was used to treat bacterial infections
 
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
-| doripenem | parent | 420.504 | C15H24N4O6S2 | DrugBank | [73303](https://pubchem.ncbi.nlm.nih.gov/compound/73303) | Nonoshita_2020, Tanaka_2017 |
+| doripenem | parent | 420.504 | C15H24N4O6S2 | DrugBank | [73303](https://pubchem.ncbi.nlm.nih.gov/compound/73303) | Ikawa_2009, Lee_2017, Nonoshita_2020, Tanaka_2017, Wang_2022 |
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 10:43 | 4:45 | 4/1/1 | 1/0/0 | 0/0/0 | 203,996/15,881 | einfracz / qwen3.8-27b | 8 | 2/6 | 8/0 | 2 |
+| 2026-10-14 23:59 | 4:26 | 2/1/2 | 0/0/0 | 0/0/0 | 192,700/15,115 | einfracz / qwen3.8-27b | 8 | 2/6 | 8/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> | [Nonoshita_2020_base_model](drugs/drug_doripenem/Doripenem_Nonoshita2020_base_model.md) | ▶ model + simulator | 2-compartment, IV | 5 | Nonoshita K et al., Population pharmacokinetic analysis of…, Scientific reports (2020) | [10.1038/s41598-020-79076-6](https://doi.org/10.1038/s41598-020-79076-6) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> | [Nonoshita_2020_population_mean](drugs/drug_doripenem/Doripenem_Nonoshita2020_population_mean.md) | ▶ model + simulator | 2-compartment, IV | 5 | Nonoshita K et al., Population pharmacokinetic analysis of…, Scientific reports (2020) | [10.1038/s41598-020-79076-6](https://doi.org/10.1038/s41598-020-79076-6) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span> | [Tanaka_2017_based_on_ppk_model](drugs/drug_doripenem/Doripenem_Tanaka2017_based_on_ppk_model.md) | ▶ model + simulator | 2-compartment, IV | 4 | Tanaka R et al., Pharmacokinetic/Pharmacodynamic Analysi…, Biological & pharmaceutical… (2017) | [10.1248/bpb.b17-00008](https://doi.org/10.1248/bpb.b17-00008) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span> | [Tanaka_2017_bayesian_estimated](drugs/drug_doripenem/Doripenem_Tanaka2017_bayesian_estimated.md) | ▶ model + simulator | 2-compartment, IV | 4 | Tanaka R et al., Pharmacokinetic/Pharmacodynamic Analysi…, Biological & pharmaceutical… (2017) | [10.1248/bpb.b17-00008](https://doi.org/10.1248/bpb.b17-00008) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.737). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Wang_2022_reference](drugs/drug_doripenem/Doripenem_Wang2022_reference.md) | ▶ model + simulator | 2-compartment, oral | 4 | Wang Y et al., Pharmacokinetics and Safety of Doripene…, Antibiotics (Basel, Switzer… (2022) | [10.3390/antibiotics11070958](https://doi.org/10.3390/antibiotics11070958) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.286). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Ikawa_2009_reference](drugs/drug_doripenem/Doripenem_Ikawa2009_reference.md) | — | 1-compartment (no model) | 0 | Ikawa K et al., Pharmacokinetic-pharmacodynamic target…, International journal of an… (2009) | [10.1016/j.ijantimicag.2008.08.031](https://doi.org/10.1016/j.ijantimicag.2008.08.031) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Nonoshita_2020_reference](drugs/drug_doripenem/Doripenem_Nonoshita2020_reference.md) | ▶ model + simulator | 2-compartment, IV | 5 | Nonoshita K et al., Population pharmacokinetic analysis of…, Scientific reports (2020) | [10.1038/s41598-020-79076-6](https://doi.org/10.1038/s41598-020-79076-6) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Tanaka_2017_reference](drugs/drug_doripenem/Doripenem_Tanaka2017_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Tanaka R et al., Pharmacokinetic/Pharmacodynamic Analysi…, Biological & pharmaceutical… (2017) | [10.1248/bpb.b17-00008](https://doi.org/10.1248/bpb.b17-00008) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.286). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub><br><sub>route_to: `human_review`</sub> | [Ikawa_2009_reference](drugs/drug_doripenem/Doripenem_Ikawa2009_reference.md) | — | 1-compartment (no model) | 2 | Ikawa K et al., Pharmacokinetic-pharmacodynamic target…, International journal of an… (2009) | [10.1016/j.ijantimicag.2008.08.031](https://doi.org/10.1016/j.ijantimicag.2008.08.031) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q354 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Lee_2017_reference](drugs/drug_doripenem/Doripenem_Lee2017_reference.md) | — | 1-compartment (no model) | 5 | Lee DH et al., Population Pharmacokinetic Analysis of…, Antimicrobial agents and ch… (2017) | [10.1128/AAC.02185-16](https://doi.org/10.1128/AAC.02185-16) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.737). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Wang_2022_reference](drugs/drug_doripenem/Doripenem_Wang2022_reference.md) | — | 2-compartment (no model) | 5 | Wang Y et al., Pharmacokinetics and Safety of Doripene…, Antibiotics (Basel, Switzer… (2022) | [10.3390/antibiotics11070958](https://doi.org/10.3390/antibiotics11070958) |
 
-## Pharmacodynamics (PD)
+## ADME sites
 
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.99).">rat</span> | [Soon_2013_bacterial_burden](drugs/drug_doripenem/pd_Soon_2013_bacterial_burden.md) | bacterial burden ← doripenem · direct sigmoid Emax (Hill) effect | — | Soon RL et al., Pharmacodynamic variability beyond that…, Antimicrobial agents and ch… (2013) | [10.1128/AAC.01224-12](https://doi.org/10.1128/AAC.01224-12) |
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=doripenem).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| excretion | kidney | `SLC22A8` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: DPEP1 (substrate).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,34 +58,42 @@ Doripenem is a carbapenem antibiotic that was used to treat bacterial infections
 ## Coverage
 
 - **PubMed hits:** 54 matched, 20 returned
-- **screened:** 3  ·  **relevant:** 3
-- **records:** 6  ·  extracted 4  ·  needs_review 1  ·  rejected 1  ·  stale 0
+- **screened:** 5  ·  **relevant:** 5
+- **records:** 5  ·  extracted 2  ·  needs_review 2  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
 
-_3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_7 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Chung_2017.pdf` | Chung EK et al., Population Pharmacokinetics and Pharmac…, The Annals of pharmacothera… (2017) | popPK | 10 | [10.1177/1060028016676831](https://doi.org/10.1177/1060028016676831) | [28168884](https://pubmed.ncbi.nlm.nih.gov/28168884) | The paper reports a population PK model for doripenem, but specific numeric parameter values (CL, V, Q, half-life) are described qualitatively or by association, and the actual values are likely in the results tables or supplementary material not included in the evidence. |
-| `Ikawa_2009.pdf` | Ikawa K et al., Pharmacokinetic-pharmacodynamic target…, International journal of an… (2009) | popPK | 10 | [10.1016/j.ijantimicag.2008.08.031](https://doi.org/10.1016/j.ijantimicag.2008.08.031) | [19095418](https://pubmed.ncbi.nlm.nih.gov/19095418) | The study reports a quantitative two-compartment population PK model for doripenem with explicit numeric values for clearance, volume, and intercompartmental clearance in the abstract. |
-| `Harada_2013.pdf` | Harada M et al., Pharmacokinetic analysis of doripenem i…, International journal of an… (2013) | popPK | 8 | [10.1016/j.ijantimicag.2013.03.012](https://doi.org/10.1016/j.ijantimicag.2013.03.012) | [23684002](https://pubmed.ncbi.nlm.nih.gov/23684002) | The paper reports non-compartmental PK metrics (Cmax, AUC, t1/2) and identifies covariates, but specific compartmental parameter values (CL, V, Q) are not listed in the provided text. |
+| `Chung_2017.pdf` | Chung EK et al., Population Pharmacokinetics and Pharmac…, The Annals of pharmacothera… (2017) | popPK | 10 | [10.1177/1060028016676831](https://doi.org/10.1177/1060028016676831) | [28168884](https://pubmed.ncbi.nlm.nih.gov/28168884) | The study reports a population PK model for doripenem with qualitative covariate associations, but specific numeric parameter values (e.g., median CL, V) are not present in the provided abstract text. |
+| `Harada_2013.pdf` | Harada M et al., Pharmacokinetic analysis of doripenem i…, International journal of an… (2013) | popPK | 10 | [10.1016/j.ijantimicag.2013.03.012](https://doi.org/10.1016/j.ijantimicag.2013.03.012) | [23684002](https://pubmed.ncbi.nlm.nih.gov/23684002) | Abstract reports summary PK statistics (Cmax, AUC, t1/2) but lacks the specific compartmental parameter values (CL, V) required for a full population PK model, which are typically found in the full text or tables. |
+| `Ikawa_2009.pdf` | Ikawa K et al., Pharmacokinetic-pharmacodynamic target…, International journal of an… (2009) | popPK | 10 | [10.1016/j.ijantimicag.2008.08.031](https://doi.org/10.1016/j.ijantimicag.2008.08.031) | [19095418](https://pubmed.ncbi.nlm.nih.gov/19095418) | The abstract provides explicit numeric values for all compartmental PK parameters (clearance, volumes, intercompartmental clearance) derived from a population PK model in patients. |
+| `Lee_2017.pdf` | Lee DH et al., Population Pharmacokinetic Analysis of…, Antimicrobial agents and ch… (2017) | popPK | 10 | [10.1128/AAC.02185-16](https://doi.org/10.1128/AAC.02185-16) | [28223378](https://pubmed.ncbi.nlm.nih.gov/28223378) | The paper reports a population PK analysis of doripenem in humans with explicit numeric values for clearance and volume of distribution in the abstract. |
+| `Matsuo_2019.pdf` | Matsuo Y et al., Population Pharmacokinetics of Doripene…, Journal of pharmaceutical s… (2019) | popPK | 10 | [10.1016/j.xphs.2019.04.002](https://doi.org/10.1016/j.xphs.2019.04.002) | [30974120](https://pubmed.ncbi.nlm.nih.gov/30974120) | The paper is a population PK study of doripenem in pediatric patients, but the specific numeric parameter values (CL, V, etc.) are not provided in the extracted evidence. |
+| `Samtani_2010.pdf` | Samtani MN et al., Pharmacokinetic-pharmacodynamic-model-g…, Antimicrobial agents and ch… (2010) | popPK | 5 | [10.1128/AAC.01843-09](https://doi.org/10.1128/AAC.01843-09) | [20385857](https://pubmed.ncbi.nlm.nih.gov/20385857) | The paper discusses PK/PD modeling and Monte Carlo simulations for dosing but the extracted evidence contains no specific quantitative PK parameter values (CL, V, etc.), only dosing regimens and MIC targets. |
+| `Soon_2013.pdf` | Soon RL et al., Pharmacodynamic variability beyond that…, Antimicrobial agents and ch… (2013) | popPK | 5 | [10.1128/AAC.01224-12](https://doi.org/10.1128/AAC.01224-12) | [23357773](https://pubmed.ncbi.nlm.nih.gov/23357773) | The study uses murine data for PK/PD modeling but does not report specific numeric PK parameter values (CL, V, Q, ka) in the provided evidence, only PD parameter variability. |
 
-<sub>queue written 2026-10-07T10:40:07.590594+00:00</sub>
+<sub>queue written 2026-10-14T23:55:24.102759+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Chung_2017 | relevant | 10 | 2 | The paper reports a population PK model for doripenem, but specific numeric parameter values (CL, V, Q, half-life) are described qualitatively or by association, and the actual values are likely in the results tables or supplementary material not included in the evidence. |
-| popPK | DeLouise_2023 | irrelevant | 0 | 0 | The paper is a radioprotection study using doripenem as a candidate drug in mice, and it does not report any quantitative pharmacokinetic parameters (CL, V, etc.) for doripenem. |
-| popPK | Harada_2013 | relevant | 8 | 2 | The paper reports non-compartmental PK metrics (Cmax, AUC, t1/2) and identifies covariates, but specific compartmental parameter values (CL, V, Q) are not listed in the provided text. |
-| popPK | Katsube_2008 | irrelevant | 4 | 0 | The study focuses on PD modeling and simulation for bactericidal effects in mice; while it uses doripenem PK data, the abstract does not report specific quantitative PK parameter values (CL, V, etc.) for doripenem, and the primary focus is on meropenem and imipenem indices. |
-| popPK | Lim_2018 | irrelevant | 2 | 0 | The study uses Monte Carlo simulation with PK parameters cited from other sources to evaluate dosing regimens and cost-effectiveness, but does not report original quantitative PK parameter values for doripenem. |
-| popPK | Morales_2022 | irrelevant | 1 | 0 | This is a scoping review of beta-lactam PK/PD targets in children; doripenem is mentioned as one of several drugs studied in the literature, but no specific quantitative PK parameters for doripenem are reported in the text. |
-| popPK | Piraino_2025 | irrelevant | 0 | 0 | The study investigates doripenem as a radioprotective agent in mice and reports efficacy metrics (EC50, radiation damage foci), but contains no pharmacokinetic parameters (CL, V, half-life) or dose-time data for doripenem. |
-| popPK | Tanaka_2025 | irrelevant | 3 | 0 | This is a review article that summarizes multiple studies, including a population PK model for doripenem in ICU patients, but no specific numeric parameter values (e.g., CL, V, Q) are provided in the text, only qualitative descriptions of model development and simulation outcomes. |
+| popPK | Chung_2017 | relevant | 10 | 2 | The study reports a population PK model for doripenem with qualitative covariate associations, but specific numeric parameter values (e.g., median CL, V) are not present in the provided abstract text. |
+| popPK | DeLouise_2023 | irrelevant | 0 | 0 | The study is a radioprotection screening using doripenem as a test compound in mice and does not report any pharmacokinetic parameters for the drug. |
+| popPK | Harada_2013 | relevant | 10 | 3 | Abstract reports summary PK statistics (Cmax, AUC, t1/2) but lacks the specific compartmental parameter values (CL, V) required for a full population PK model, which are typically found in the full text or tables. |
+| popPK | Katsube_2008 | irrelevant | 2 | 0 | The study is a PK/PD simulation in mice where doripenem is one of three agents, but no specific quantitative PK parameter values (CL, V, etc.) for doripenem are present in the provided text. |
+| popPK | Katsube_2010 | irrelevant | 4 | 0 | The study is a PK/PD modeling/simulation paper using a pre-developed model, and no quantitative doripenem PK parameter values (CL, V, etc.) are present in the provided evidence. |
+| popPK | Lim_2018 | irrelevant | 2 | 0 | The study is a PK/PD simulation and cost-effectiveness analysis that cites PK parameters from previous studies but does not report original quantitative PK data for doripenem. |
+| popPK | Matsuo_2019 | relevant | 10 | 0 | The paper is a population PK study of doripenem in pediatric patients, but the specific numeric parameter values (CL, V, etc.) are not provided in the extracted evidence. |
+| popPK | Morales_2022 | irrelevant | 0 | 0 | The paper is a scoping review of therapeutic targets for beta-lactams in children and does not report original quantitative population PK parameters (CL, V, Q) for doripenem. |
+| popPK | Piraino_2025 | irrelevant | 0 | 0 | The paper is a radioprotection study in mice where doripenem is a candidate drug, not a pharmacokinetic study; no PK parameters for doripenem are reported. |
+| popPK | Samtani_2010 | irrelevant | 5 | 0 | The paper discusses PK/PD modeling and Monte Carlo simulations for dosing but the extracted evidence contains no specific quantitative PK parameter values (CL, V, etc.), only dosing regimens and MIC targets. |
+| popPK | Soon_2013 | irrelevant | 5 | 0 | The study uses murine data for PK/PD modeling but does not report specific numeric PK parameter values (CL, V, Q, ka) in the provided evidence, only PD parameter variability. |
+| popPK | Tanaka_2025 | irrelevant | 5 | 0 | The paper is a review that summarizes population PK modeling of doripenem in ICU patients but does not provide the specific numeric parameter values (CL, V, etc.) in the text. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 10:40 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-14 23:55 UTC</sub>

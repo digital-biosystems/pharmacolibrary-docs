@@ -20,9 +20,9 @@
 
 **Model:** No model was generated from this record.
 
-> Donepezil (dose in mg/kg, brain concentration in ng/g, or plasma concentration in ng/mL) inhibits brain regional FTC-146 binding as a measure of sigma-1 receptor occupancy, described by a sigmoid Emax (inhibitory) model; reported ED50 is 0.07–0.09 mg/kg, brain EC50 8.8–11.0 ng/g, and plasma EC50 0.6–0.7 ng/mL. The excerpts do not state a mechanism beyond receptor occupancy or the Hill slope.
+> Donepezil concentration (in brain or plasma) inhibits sigma-1 receptor occupancy (FTC-146 binding) via a proportional sigmoid Emax mechanism. The model characterizes potency using brain EC50 values of 8.8–11.0 ng/g and plasma EC50 values of 0.6–0.7 ng/mL.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Bhyrapuneni_2018`
 - **model family:** `sigmoid_emax`

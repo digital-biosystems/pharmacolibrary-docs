@@ -17,7 +17,7 @@ Elotuzumab is a monoclonal antibody used to treat multiple myeloma. It is an app
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 12:33 | 1:58 | 0/0/1 | 0/0/1 | 0/0/0 | 36,285/10,539 | openai / gpt-6-luna | 1 | 0/1 | 1/0 | 0 |
+| 2026-10-14 19:26 | 0:13 | 0/0/1 | 0/0/1 | 0/0/0 | 25,664/1,365 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
 
 ## popPK records
 
@@ -30,7 +30,16 @@ Elotuzumab is a monoclonal antibody used to treat multiple myeloma. It is an app
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span> | [Ide_2022_PFS](drugs/drug_elotuzumab/pd_Ide_2022_PFS.md) | progression-free survival ← elotuzumab · time-to-event model | — | Ide T et al., Population pharmacokinetic and exposure…, Cancer chemotherapy and pha… (2022) | [10.1007/s00280-021-04365-4](https://doi.org/10.1007/s00280-021-04365-4) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span> | [Ide_2022_grade_3_AEs](drugs/drug_elotuzumab/pd_Ide_2022_grade_3_AEs.md) | time to the first occurrence of grade 3 + AEs ← elotuzumab · time-to-event model | — | Ide T et al., Population pharmacokinetic and exposure…, Cancer chemotherapy and pha… (2022) | [10.1007/s00280-021-04365-4](https://doi.org/10.1007/s00280-021-04365-4) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span> | [Ide_2022_grade_3_AEs](drugs/drug_elotuzumab/pd_Ide_2022_grade_3_AEs.md) | time to the first occurrence of grade 3 + adverse events ← elotuzumab · time-to-event model | — | Ide T et al., Population pharmacokinetic and exposure…, Cancer chemotherapy and pha… (2022) | [10.1007/s00280-021-04365-4](https://doi.org/10.1007/s00280-021-04365-4) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=elotuzumab).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: SLAMF7 (modulator).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -41,7 +50,7 @@ Elotuzumab is a monoclonal antibody used to treat multiple myeloma. It is an app
 ## Coverage
 
 - **PubMed hits:** 6 matched, 6 returned
-- **screened:** 1  ·  **relevant:** 1
+- **screened:** 1  ·  **relevant:** 0
 - **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
@@ -51,20 +60,21 @@ _3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Gibiansky_2016.pdf` | Gibiansky L et al., Model-based pharmacokinetic analysis of…, Journal of pharmacokinetics… (2016) | popPK | 10 | [10.1007/s10928-016-9469-x](https://doi.org/10.1007/s10928-016-9469-x) | [26993283](https://pubmed.ncbi.nlm.nih.gov/26993283) | The human population-PK model is relevant, but numeric disposition parameter estimates are not included in the evidence. |
-| `Ide_2021.pdf` | Ide T et al., Model-Based Determination of Elotuzumab…, Journal of clinical pharmac… (2021) | popPK | 10 | [10.1002/jcph.1698](https://doi.org/10.1002/jcph.1698) | [32656777](https://pubmed.ncbi.nlm.nih.gov/32656777) | A human population-PK model is reported, but numeric disposition parameter estimates are not included in the evidence. |
-| `Passey_2017.pdf` | Passey C et al., An Integrated Assessment of the Effects…, The AAPS journal (2017) | popPK | 8 | [10.1208/s12248-016-0033-9](https://doi.org/10.1208/s12248-016-0033-9) | [28070715](https://pubmed.ncbi.nlm.nih.gov/28070715) | Human population-PK modeling is described, but no numeric parameter values appear in the supplied evidence. |
+| `Gibiansky_2016.pdf` | Gibiansky L et al., Model-based pharmacokinetic analysis of…, Journal of pharmacokinetics… (2016) | popPK | 10 | [10.1007/s10928-016-9469-x](https://doi.org/10.1007/s10928-016-9469-x) | [26993283](https://pubmed.ncbi.nlm.nih.gov/26993283) | The abstract describes a population PK model with qualitative effects (e.g., clearance decreased by 35%) but does not provide the specific numeric parameter values (CL, V, etc.) which are likely in the full text or tables not included in the evidence. |
+| `Ide_2021.pdf` | Ide T et al., Model-Based Determination of Elotuzumab…, Journal of clinical pharmac… (2021) | popPK | 10 | [10.1002/jcph.1698](https://doi.org/10.1002/jcph.1698) | [32656777](https://pubmed.ncbi.nlm.nih.gov/32656777) | The paper describes a population PK model for elotuzumab in humans, but the specific numeric parameter values (CL, V, etc.) are not explicitly listed in the provided abstract text, only their qualitative significance and clinical implications. |
+| `Passey_2017.pdf` | Passey C et al., An Integrated Assessment of the Effects…, The AAPS journal (2017) | popPK | 5 | [10.1208/s12248-016-0033-9](https://doi.org/10.1208/s12248-016-0033-9) | [28070715](https://pubmed.ncbi.nlm.nih.gov/28070715) | The paper reports a population PK analysis and mentions parameters like Vmax and KM for ADA-positive patients, but specific numeric values are not provided in the evidence. |
 
-<sub>queue written 2026-10-07T12:31:26.949770+00:00</sub>
+<sub>queue written 2026-10-14T19:26:01.673374+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Gibiansky_2016 | relevant | 10 | 2 | The human population-PK model is relevant, but numeric disposition parameter estimates are not included in the evidence. |
-| popPK | Ide_2021 | relevant | 10 | 0 | A human population-PK model is reported, but numeric disposition parameter estimates are not included in the evidence. |
-| popPK | Passey_2017 | relevant | 8 | 0 | Human population-PK modeling is described, but no numeric parameter values appear in the supplied evidence. |
-| popPK | Passey_2018 | irrelevant | 2 | 0 | This is a clinical pharmacology review that mentions population PK but provides no numeric disposition parameter values in the evidence. |
+| popPK | Gibiansky_2016 | relevant | 10 | 0 | The abstract describes a population PK model with qualitative effects (e.g., clearance decreased by 35%) but does not provide the specific numeric parameter values (CL, V, etc.) which are likely in the full text or tables not included in the evidence. |
+| popPK | Ide_2021 | relevant | 10 | 2 | The paper describes a population PK model for elotuzumab in humans, but the specific numeric parameter values (CL, V, etc.) are not explicitly listed in the provided abstract text, only their qualitative significance and clinical implications. |
+| popPK | Ide_2022 | relevant | 10 | 3 | This is a population pharmacokinetic study of elotuzumab with detailed model descriptions, but the specific numeric estimates for clearance, volume, and rate constants are not present in the text (likely in tables or supplementary material not fully provided). |
+| popPK | Passey_2017 | relevant | 5 | 1 | The paper reports a population PK analysis and mentions parameters like Vmax and KM for ADA-positive patients, but specific numeric values are not provided in the evidence. |
+| popPK | Passey_2018 | irrelevant | 3 | 0 | This is a review article that summarizes findings (e.g., from a population PK study of 375 patients) but does not provide the specific quantitative numeric parameter values (CL, V, etc.) in the text. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 12:31 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-14 19:25 UTC</sub>

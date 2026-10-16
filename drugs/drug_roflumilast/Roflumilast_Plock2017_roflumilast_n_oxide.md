@@ -99,7 +99,7 @@ Plock N et al., Pharmacokinetic/Pharmacodynamic Modelin…, Clinical and transla
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_roflumilast/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Plock_2017` / `Plock_2017::roflumilast_n_oxide`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_roflumilast/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Plock_2017` / `Plock_2017::roflumilast_n_oxide`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

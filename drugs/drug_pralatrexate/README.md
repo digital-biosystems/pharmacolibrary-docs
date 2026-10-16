@@ -18,18 +18,34 @@ Pralatrexate is an anticancer drug, a folate analogue antimetabolite, used to tr
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 17:17 | 0:27 | 0/0/0 | 1/0/1 | 0/0/0 | 83,948/1,489 | einfracz / qwen3.8-27b | 7 | 1/11 | 7/0 | 0 |
+| 2026-10-14 21:49 | 0:44 | 0/0/0 | 0/0/0 | 0/0/0 | 83,948/1,025 | einfracz / qwen3.8-27b | 7 | 1/11 | 7/0 | 0 |
 
 ## popPK records
 
 _not available_
 
-## Pharmacodynamics (PD)
+## ADME sites
 
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Zhang_2020_viral_copy_numbers](drugs/drug_pralatrexate/pd_Zhang_2020_viral_copy_numbers.md) | viral copy numbers biomarker turnover ← Pralatrexate | — | Zhang H et al., A novel virtual screening procedure ide…, PLoS computational biology (2020) | [10.1371/journal.pcbi.1008489](https://doi.org/10.1371/journal.pcbi.1008489) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Mould_2009_mucositis](drugs/drug_pralatrexate/pd_Mould_2009_mucositis.md) | mucositis ← pralatrexate · categorical (graded) response model | — | Mould DR et al., A population pharmacokinetic and pharma…, Clinical pharmacology and t… (2009) | [10.1038/clpt.2009.80](https://doi.org/10.1038/clpt.2009.80) |
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=pralatrexate).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| absorption | blood-brain barrier | `ABCG2` substrate | DrugBank actor |
+| absorption | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| absorption | liver | `ABCG2` substrate | DrugBank actor |
+| absorption | mammary gland | `ABCG2` substrate | DrugBank actor |
+| absorption | small intestine | `ABCG2` substrate | DrugBank actor |
+| absorption | testis | `ABCG2` substrate | DrugBank actor |
+| distribution | blood | `ALB` binder | DrugBank actor |
+| metabolism | liver | `SLCO1B3` substrate | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | `ABCC2` inhibitor/substrate | DrugBank actor |
+| excretion | liver | `ABCC2` inhibitor/substrate, `ABCC3` inhibitor/substrate | DrugBank actor |
+| excretion | lung | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | small intestine | `ABCC2` inhibitor/substrate, `ABCC3` inhibitor/substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: DHFR (inhibitor), DHFR (substrate), FPGS (substrate), PDF (inhibitor), SLC19A1 (substrate), SLC46A1 (substrate), TYMS (inhibitor), TYMS (substrate).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,34 +66,35 @@ _3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Mould_2009.pdf` | Mould DR et al., A population pharmacokinetic and pharma…, Clinical pharmacology and t… (2009) | popPK | 9 | [10.1038/clpt.2009.80](https://doi.org/10.1038/clpt.2009.80) | [19474785](https://pubmed.ncbi.nlm.nih.gov/19474785) | The paper describes a population PK study of pralatrexate identifying covariates, but the abstract does not provide specific numeric parameter estimates (CL, V, etc.), which likely reside in the full text or supplementary tables not provided. |
+| `Mould_2009.pdf` | Mould DR et al., A population pharmacokinetic and pharma…, Clinical pharmacology and t… (2009) | popPK | 9 | [10.1038/clpt.2009.80](https://doi.org/10.1038/clpt.2009.80) | [19474785](https://pubmed.ncbi.nlm.nih.gov/19474785) | The paper describes a population PK model for pralatrexate in humans, but the provided abstract does not contain specific numeric parameter values (CL, V, etc.). |
 | `Visentin_2014.pdf` | Visentin M et al., The impact of 5-formyltetrahydrofolate…, Cancer chemotherapy and pha… (2014) | pd | 5 | [10.1007/s00280-014-2441-9](https://doi.org/10.1007/s00280-014-2441-9) | [24682532](https://www.ncbi.nlm.nih.gov/pubmed/24682532) | metadata signals extractable PD data (IC50) |
 | `Malhotra_2020.pdf` | Malhotra U et al., Pralatrexate in Combination with Oxalip…, Molecular cancer therapeuti… (2020) | pgx | 5 | [10.1158/1535-7163.MCT-19-0240](https://doi.org/10.1158/1535-7163.MCT-19-0240) | [31575653](https://www.ncbi.nlm.nih.gov/pubmed/31575653) | metadata signals extractable PGX data (SLC19A1) |
 
-<sub>queue written 2026-10-07T17:17:20.892580+00:00</sub>
+<sub>queue written 2026-10-14T21:48:54.955173+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Bertin_2023 | irrelevant | 0 | 0 | The paper is an in silico/in vitro study on drug combination synergism algorithms and does not report any pharmacokinetic parameters for pralatrexate. |
+| popPK | Bertin_2023 | irrelevant | 0 | 0 | The paper describes an in-silico method for drug combination screening and does not report pharmacokinetic parameters for pralatrexate. |
 | PD | Bertin_2023 | not_relevant | 0 | 0 | The paper focuses on machine learning for drug combination synergy prediction and does not report pharmacodynamic parameters (e.g., Emax, EC50) or exposure-response relationships for pralatrexate. |
 | PD | Garmabdari_2026 | not_relevant | 0 | 0 | The paper is an in silico computational study using machine learning and molecular dynamics to predict binding affinity and IC50, but it does not report any experimental pharmacodynamic (exposure-response or dose-response) data or numeric PD parameters for pralatrexate. |
-| PGx | Grem_2015 | not_relevant | 0 | 0 | The study reports that MTHFR and TS polymorphisms did not correlate with toxicity, but it does not report pharmacokinetic or pharmacodynamic parameters, nor any effect size. |
+| PGx | Grem_2015 | not_relevant | 2 | 0 | The study analyzed MTHFR and TS polymorphisms but explicitly concluded they did not correlate with toxicity or efficacy, and no pharmacokinetic parameters were reported. |
 | PD | Jain_2015 | not_relevant | 2 | 1 | The paper describes preclinical synergy and PK/PD analyses in a mouse model but does not provide specific numeric PD parameters (e.g., EC50, Emax) or extractable concentration-effect curves for pralatrexate in the provided text. |
-| popPK | Kumar_2025 | irrelevant | 0 | 0 | The paper describes a machine learning model for drug-target affinity prediction and does not report pharmacokinetic parameters for pralatrexate. |
+| popPK | Kumar_2025 | irrelevant | 0 | 0 | The paper describes a computational method for predicting drug-target affinity and does not contain pharmacokinetic data for pralatrexate. |
 | PD | Kumar_2025 | not_relevant | 0 | 0 | The paper describes a machine learning model for predicting drug-target binding affinity and does not contain any pharmacodynamic or exposure-response data for pralatrexate. |
-| popPK | Kumar_2025_2 | irrelevant | 0 | 0 | The paper discusses dolutegravir for Alzheimer's disease and does not mention pralatrexate or its pharmacokinetics. |
+| popPK | Kumar_2025_2 | irrelevant | 0 | 0 | The study focuses on virtual screening for GSK-3β inhibitors in Alzheimer's disease and mentions dolutegravir, not pralatrexate, with no PK parameter extraction for the target drug. |
 | PD | Kumar_2025_2 | not_relevant | 0 | 0 | The paper is a computational study on drug repurposing for Alzheimer's disease targeting GSK-3β and does not mention pralatrexate or report any pharmacodynamic or exposure-response data. |
-| popPK | Liang_2026 | irrelevant | 0 | 0 | The study is an in-vitro antiviral efficacy and mechanistic investigation, not a pharmacokinetic study, and reports no disposition parameters (CL, V, t1/2) for pralatrexate. |
-| popPK | Maruyama_2024 | irrelevant | 0 | 0 | The study investigates valemetostat, a different drug, and contains no pharmacokinetic data for pralatrexate. |
+| popPK | Liang_2026 | irrelevant | 0 | 0 | The paper is an in-vitro antiviral study reporting EC50 and binding affinity (Kd) for pralatrexate, but contains no population pharmacokinetic parameters (CL, V, etc.). |
+| PGx | Malhotra_2020 | not_relevant | 2 | 5 | The paper reports associations between genetic polymorphisms and clinical outcomes (PFS, OS), but does not report changes in pharmacokinetic (PK) or direct pharmacodynamic (PD) parameters of pralatrexate. |
+| popPK | Maruyama_2024 | irrelevant | 0 | 0 | The study evaluates valemetostat, a different drug, not pralatrexate. |
 | PD | Maruyama_2024 | not_relevant | 0 | 0 | The paper studies valemetostat, not pralatrexate, and reports only clinical efficacy (ORR) and safety without any pharmacodynamic modeling or exposure-response analysis. |
-| popPK | Mould_2009 | relevant | 9 | 0 | The paper describes a population PK study of pralatrexate identifying covariates, but the abstract does not provide specific numeric parameter estimates (CL, V, etc.), which likely reside in the full text or supplementary tables not provided. |
-| popPK | Patten_2022 | irrelevant | 0 | 0 | The paper focuses on SARS-CoV-2 inhibitors and does not report any pharmacokinetic parameters for pralatrexate. |
+| popPK | Mould_2009 | relevant | 9 | 1 | The paper describes a population PK model for pralatrexate in humans, but the provided abstract does not contain specific numeric parameter values (CL, V, etc.). |
+| popPK | Patten_2022 | irrelevant | 0 | 0 | The paper evaluates SARS-CoV-2 inhibitors and does not involve pralatrexate or report its pharmacokinetic parameters. |
 | PD | Patten_2022 | not_relevant | 0 | 0 | The paper does not mention pralatrexate or report any pharmacodynamic data for it. |
-| PGx | Shah_2020 | not_relevant | 4 | 0 | The paper reports associations between SLC19A1/DHFR polymorphisms and clinical outcomes (PFS/OS), not specific pharmacokinetic or pharmacodynamic parameters. |
-| popPK | Zhang_2020 | irrelevant | 0 | 0 | The paper is an in-vitro antiviral screening study using computational docking and cell culture assays to identify SARS-CoV-2 inhibitors, reporting no pharmacokinetic parameters (CL, V, t1/2) for pralatrexate. |
-| popPK | Zhang_2022 | irrelevant | 0 | 0 | The paper is a computational screening study for SARS-CoV-2 inhibitors and mentions pralatrexate only as a comparator for binding residue analysis, providing no pharmacokinetic data. |
+| PGx | Shah_2020 | not_relevant | 1 | 1 | The paper reports associations between gene variants and clinical outcomes (PFS/OS), not changes in pharmacokinetic (e.g., AUC) or direct pharmacodynamic parameters of pralatrexate. |
+| popPK | Zhang_2020 | irrelevant | 0 | 0 | The paper is a computational and in vitro antiviral activity study identifying pralatrexate as a SARS-CoV-2 inhibitor, containing no pharmacokinetic parameters or disposition data for the drug. |
+| popPK | Zhang_2022 | irrelevant | 0 | 0 | The paper is a computational drug screening study for SARS-CoV-2 where pralatrexate is only mentioned as a reference compound for binding residues, with no PK data provided. |
 | PD | Zhang_2022 | not_relevant | 0 | 0 | The paper focuses on virtual screening for SARS-CoV-2 RdRp inhibitors; pralatrexate is only mentioned as a reference compound for binding residue analysis, with no PD or exposure-response data reported for it. |
 
 ---

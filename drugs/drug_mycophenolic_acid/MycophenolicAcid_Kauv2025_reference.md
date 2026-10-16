@@ -5,7 +5,7 @@
 
 # mycophenolic acid — `MycophenolicAcid_Kauv2025_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.583). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.583). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -17,34 +17,37 @@
 
 ### Reviewer guidance
 
-**Only volume was extracted — no clearance.**
+**C5 dimension mismatch on a structural parameter.**
 
-A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. A reported unit could not be converted (allometric_exponent and equation variable), so that value has no SI equivalent. Extracted — mycophenolic acid: allometric_exponent 1.58 a, Q 31.7 L/h, V2 6.6e+03 L.
+A reported unit could not be converted (CL/F and V1), so that value has no SI equivalent. Extracted — mycophenolic acid: tlag 0.25 h, kabs 1.21 h-1, CL/F 14.3 a, allometric_exponent 1.58, V1 27.4 b, Q 31.7 L/h, V2 6.6e+03 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has mycophenolic acid, the second reading mycophenolic_acid; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Kauv J et al., Population pharmacokinetics of mycophen…, European journal of pharmac… (2025)
   ·  DOI: [10.1016/j.ejps.2025.107290](https://doi.org/10.1016/j.ejps.2025.107290)
 
-<div class="pk-model-meta" hidden drug="mycophenolic acid" model-id="MycophenolicAcid_Kauv2025_reference" status="needs_review" stale="false" population="lung transplant adults" measured-compound="mycophenolic acid" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="mycophenolic acid" model-id="MycophenolicAcid_Kauv2025_reference" status="rejected" stale="false" population="adult lung transplant recipients" measured-compound="mycophenolic_acid" parameterization="apparent" topology="2C"></div>
 
-**Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 3 extracted.
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 7 extracted.
 
-**Parameterization:** mechanistic.
+**Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| β BW | `Q319` · allometric_exponent | 1.58 | a | not captured | [a] | 22 | llm (0.6) | tab_1:row2:col1, tab_1:row2:col2 | — | not captured |
-| β M∕ =M1 | `Q900` · equation variable | 0.82 | b | not captured | [b] | 36 | llm (0.6) | tab_1:row5:col1, tab_1:row5:col2 | — | not captured |
-| Q (L/h) | `Q30` · Q | 31.7 | L/h | 8.805555555555555e-06 | [l] / [h] | 9 | exact (1.0) | tab_1:row6:col1, tab_1:row6:col2 | — | 49 (None% RSE) |
-| V 2 (L) | `Q64` · V2 | 6597 | L | 6.597 | [l] | 13 | space_fold (0.95) | tab_1:row7:col1, tab_1:row7:col2 | — | not captured |
+| t lag (h) | `Q83` · tlag | 0.25 | h | 900.0 | [h] | 18 | space_fold (0.95) | Kauv_2025_table_p5_2:row0:col1 | — | not captured |
+| ka (h-1) | `Q49` · kabs | 1.21 | h-1 | 0.0003361111111111111 | [1] / [h] | 9 | exact (1.0) | Kauv_2025_table_p5_2:row1:col1 | — | not captured |
+| CL/F (L/h)(a) | `Q27` · CL/F | 14.3 | a | not captured | [a] | 18 | space_fold (0.95) | Kauv_2025_table_p5_2:row2:col1 | — | 36 (33% RSE) |
+| βBW | `Q319` · allometric_exponent | 1.58 | not captured | not captured | not captured | 22 | llm (0.6) | Kauv_2025_table_p5_2:row3:col1 | — | not captured |
+| V1 (L)(b) | `Q63` · V1 | 27.4 | b | not captured | [b] | 28 | space_fold (0.95) | Kauv_2025_table_p5_2:row6:col1 | — | 70 (30% RSE) |
+| Q (L/h) | `Q30` · Q | 31.7 | L/h | 8.805555555555555e-06 | [l] / [h] | 9 | exact (1.0) | Kauv_2025_table_p5_2:row8:col1 | — | 49 (14% RSE) |
+| V2 (L) | `Q64` · V2 | 6597 | L | 6.597 | [l] | 13 | exact (1.0) | Kauv_2025_table_p5_2:row9:col1 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -54,18 +57,24 @@ Kauv J et al., Population pharmacokinetics of mycophen…, European journal of p
 ## Departures & gaps
 
 **Interpretation flags:**
-- table section iiv: 'Cl/F' routed out of structural estimates ('Between-subject variability ( %)')
-- table section iiv: 'V 1' routed out of structural estimates ('Between-subject variability ( %)')
-- table section iiv: 'Q' routed out of structural estimates ('Between-subject variability ( %)')
-- table section iov: 't lag' routed out of structural estimates ('Interoccasion variability ( %)')
-- table section iov: 'CL/F' routed out of structural estimates ('Interoccasion variability ( %)')
-- table section iov: 'V 1' routed out of structural estimates ('Interoccasion variability ( %)')
-- dropped duplicate Q319 ('β Creat', value '-0.58') — already have one for this compound
-- dropped unlinked row (NIL): 'B' — extend the ontology if this is a real PK parameter (source ['tab_1:row17:col1', 'tab_1:row17:col2'])
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=mycophenolic acid
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- table section iiv: 'CL/F' routed out of structural estimates ('Between-subject variability (%)')
+- table section iiv: 'V1' routed out of structural estimates ('Between-subject variability (%)')
+- table section iiv: 'Q' routed out of structural estimates ('Between-subject variability (%)')
+- table section iov: 't lag' routed out of structural estimates ('Interoccasion variability (%)')
+- table section iov: 'CL/F' routed out of structural estimates ('Interoccasion variability (%)')
+- table section iov: 'V1' routed out of structural estimates ('Interoccasion variability (%)')
+- unit_dimension_mismatch: 'CL/F (L/h)(a)' → Q27 (unit '[time]' vs ontology '[length] ** 3 / [time]') — route to review
+- dropped unlinked row (NIL): 'βCSA-1' — extend the ontology if this is a real PK parameter (source ['Kauv_2025_table_p5_2:row5:col1'])
+- unit_dimension_mismatch: 'V1 (L)(b)' → Q63 (unit '[length] ** 2' vs ontology '[length] ** 3') — route to review
+- dropped unlinked row (NIL): 'βM≠M1' — extend the ontology if this is a real PK parameter (source ['Kauv_2025_table_p5_2:row7:col1'])
+- dropped unlinked row (NIL): 'B' — extend the ontology if this is a real PK parameter (source ['Kauv_2025_table_p5_2:row19:col1'])
+- NIL: refused to back-fill base 'CL/F' from footnote/prose loose number 14.3 (source ['tab_1:footnote']); the table cell was unparseable — needs review
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=mycophenolic_acid
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at route_to_review — not promoted
 
 **Extraction notes:**
+- table Kauv_2025_table_p5_2: unbound_uncertainty
 - LLM selected parameter table(s) 2
 
 ## Validation
@@ -99,13 +108,18 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 7 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row6:col1', 'tab_1:row6:col2'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_1:row7:col1', 'tab_1:row7:col2'] |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q27 | fail | [time] | a | not captured | not captured | ['Kauv_2025_table_p5_2:row2:col1'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Kauv_2025_table_p5_2:row8:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Kauv_2025_table_p5_2:row1:col1'] |
+| C5_dimension_Q63 | fail | [length] ** 2 | b | not captured | not captured | ['Kauv_2025_table_p5_2:row6:col1'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Kauv_2025_table_p5_2:row9:col1'] |
+| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Kauv_2025_table_p5_2:row0:col1'] |
+| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q64 | pass | volume within physiological range | 6.6e+03 L | not captured | not captured | ['tab_1:row7:col1', 'tab_1:row7:col2'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 6.6e+03 L | not captured | not captured | ['Kauv_2025_table_p5_2:row9:col1'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -114,24 +128,14 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_mycophenolic_acid/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kauv_2025` / `Kauv_2025::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_mycophenolic_acid/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kauv_2025` / `Kauv_2025::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-</tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -140,4 +144,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 00:36 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 18:20 UTC</sub>

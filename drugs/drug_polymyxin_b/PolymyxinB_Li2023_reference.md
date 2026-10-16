@@ -5,7 +5,7 @@
 
 # polymyxin B — `PolymyxinB_Li2023_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222), gpt-oss:120b (not confirmed, agreement 0.222). Primary extraction retained.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25), gpt-oss:120b (not confirmed, agreement 0.222). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -21,7 +21,7 @@
 
 Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has polymyxin_b, the second reading polymyxin B; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has polymyxin_b, the second reading polymyxin B; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -69,15 +69,14 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.222 (2/9 fields) | 7 |
+| `gpt-oss-120b` | not confirmed | 0.25 (2/8 fields) | 6 |
 | `gpt-oss:120b` | not confirmed | 0.222 (2/9 fields) | 7 |
 
-<details><summary>14 field discrepancies</summary>
+<details><summary>13 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[appropriate dose]` | not captured | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[typical population value of pmb clearance]` | not captured | 2.43 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[pmb clearance]` | not captured | 2.43 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[typical population value of pmb clearance]` | 2.43 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[volume of distribution]` | not captured | 23.11 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[volume of distribution]` | 23.11 | not captured | only_one_extracted |
@@ -131,10 +130,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_polymyxin_b/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Li_2023` / `Li_2023::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_polymyxin_b/models/modelica/PolymyxinB_Li2023_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_polymyxin_b/models/modelica/PolymyxinB_Li2023_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_polymyxin_b/models/modelica/PolymyxinB_Li2023_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_polymyxin_b/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Li_2023` / `Li_2023::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_polymyxin_b/models/modelica/PolymyxinB_Li2023_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_polymyxin_b/models/modelica/PolymyxinB_Li2023_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_polymyxin_b/models/modelica/PolymyxinB_Li2023_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -152,7 +151,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_polymyxin_b/PolymyxinB_Li2023_reference/PolymyxinB_Li2023_reference.svg" alt="PolymyxinB_Li2023_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_polymyxin_b/PolymyxinB_Li2023_reference/PolymyxinB_Li2023_reference.svg" alt="PolymyxinB_Li2023_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

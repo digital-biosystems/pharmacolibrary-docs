@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;risankizumab&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/&quot;},{&quot;label&quot;:&quot;Suleiman_2019 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Risankizumab_RodrguezFernndez2022_reference&quot;,&quot;label&quot;:&quot;Rodr\u00edguez-Fern\u00e1ndez_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/Risankizumab_RodrguezFernndez2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Risankizumab_Khatri2019_chinese&quot;,&quot;label&quot;:&quot;Khatri_2019_chinese&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/Risankizumab_Khatri2019_chinese.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Risankizumab_Khatri2019_japanese&quot;,&quot;label&quot;:&quot;Khatri_2019_japanese&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/Risankizumab_Khatri2019_japanese.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Risankizumab_Khatri2019_risankizumab_1200_mg_iv&quot;,&quot;label&quot;:&quot;Khatri_2019_risankizumab_1200_mg_iv&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/Risankizumab_Khatri2019_risankizumab_1200_mg_iv.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Risankizumab_Khatri2019_white&quot;,&quot;label&quot;:&quot;Khatri_2019_white&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/Risankizumab_Khatri2019_white.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Risankizumab_Suleiman2019_reference&quot;,&quot;label&quot;:&quot;Suleiman_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/Risankizumab_Suleiman2019_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Risankizumab_Thomas2026_reference&quot;,&quot;label&quot;:&quot;Thomas_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/Risankizumab_Thomas2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Risankizumab_RodrguezFernndez2022_reference&quot;,&quot;label&quot;:&quot;Rodr\u00edguez-Fern\u00e1ndez_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/Risankizumab_RodrguezFernndez2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Risankizumab_Thomas2026_reference&quot;,&quot;label&quot;:&quot;Thomas_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/Risankizumab_Thomas2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Risankizumab_Suleiman2019_reference&quot;,&quot;label&quot;:&quot;Suleiman_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/Risankizumab_Suleiman2019_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Khatri_2020_PASI100&quot;,&quot;label&quot;:&quot;Khatri_2020 \u00b7 PASI100&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/pd_Khatri_2020_PASI100.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Khatri_2020_PASI100_2&quot;,&quot;label&quot;:&quot;Khatri_2020 \u00b7 PASI100&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/pd_Khatri_2020_PASI100_2.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Khatri_2020_PASI75&quot;,&quot;label&quot;:&quot;Khatri_2020 \u00b7 PASI75&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/pd_Khatri_2020_PASI75.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Khatri_2020_PASI90&quot;,&quot;label&quot;:&quot;Khatri_2020 \u00b7 PASI90&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/pd_Khatri_2020_PASI90.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Khatri_2020_sPGA0_1&quot;,&quot;label&quot;:&quot;Khatri_2020 \u00b7 sPGA0/1&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_risankizumab/pd_Khatri_2020_sPGA0_1.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -21,7 +21,7 @@
 
 **The model does not reproduce the paper's terminal half-life (paper 672, model 4.11e+03); the covariate scenarios were not simulated.**
 
-Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. The base model was simulated, not the covariate effects the record defines. A reported unit could not be converted (theta_cl_ada), so that value has no SI equivalent. Extracted — risankizumab: CL 0.243 L/day, V1 4.86 L, kabs 0.229 day−1, Q 0.656 L/day, V2 4.25 L, FG 0.89.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. The base model was simulated, not the covariate effects the record defines. A reported unit could not be converted (theta_cl_ada), so that value has no SI equivalent. Extracted — risankizumab: CL 0.243 L/day, V1 4.86 L, kabs 0.229 day−1, Q 0.656 L/day, V2 4.25 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of absolute sc bioavailability of formulation used in phase i and ii studiesc: this record has none, the second reading 0.710; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -34,7 +34,7 @@ Suleiman AA et al., Population Pharmacokinetics of Risankiz…, Clinical pharmac
 <div class="pk-model-meta" hidden drug="risankizumab" model-id="Risankizumab_Suleiman2019_reference" status="needs_review" stale="false" population="healthy volunteers and subjects with moderate to severe plaque psoriasis" measured-compound="risankizumab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
-**Parameters:** 6 extracted, plus 5 covariate effects.
+**Parameters:** 5 extracted, plus 7 covariate effects.
 
 **Parameterization:** mechanistic.
 
@@ -43,17 +43,18 @@ Suleiman AA et al., Population Pharmacokinetics of Risankiz…, Clinical pharmac
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL (L/day) | `Q22` · CL | 0.243 | L/day | 2.8125e-09 | [l] / [d] | 1.8 | exact (1.0) | Tab3:row2:col1, Tab3:row2:col2 | — | not captured |
-| Vc (L) | `Q63` · V1 | 4.86 | L | 0.004860000000000001 | [l] | 3.8 | exact (1.0) | Tab3:row3:col1, Tab3:row3:col2 | — | not captured |
-| ka (day−1) | `Q49` · kabs | 0.229 | day−1 | 2.650462962962963e-06 | [1] / [d] | 4.8 | exact (1.0) | Tab3:row4:col1, Tab3:row4:col2 | — | not captured |
-| Q (L/day) | `Q30` · Q | 0.656 | L/day | 7.592592592592592e-09 | [l] / [d] | 3.7 | exact (1.0) | Tab3:row5:col1, Tab3:row5:col2 | — | not captured |
-| Vp (L) | `Q64` · V2 | 4.25 | L | 0.00425 | [l] | 2.0 | exact (1.0) | Tab3:row6:col1, Tab3:row6:col2 | — | not captured |
-| Absolute SC bioavailability of formulation used in phase III studiesd | `Q41` · FG | 0.890 | not captured | not captured | not captured | 7.2 | llm_corrected (0.6) | Tab3:row8:col1, Tab3:row8:col2 | — | not captured |
-| exponent_for_the_effect_of_c_reactive_protein_on_risankizumab_cl | `Q900` · exponent_for_the_effect_of_c_reactive_protein_on_risankizumab_cl | 0.044 | not captured | not captured | not captured | 10.5 | not captured (not captured) | Tab3:row13:col1, Tab3:row13:col2 | — | not captured |
-| theta_q319_body_weight_power | `Q900` · theta_q319_body_weight_power | 0.933 | not captured | not captured | not captured | 3.3 | not captured (not captured) | Tab3:row9:col1, Tab3:row9:col2 | — | not captured |
-| theta_q319_body_weight_power | `Q900` · theta_q319_body_weight_power | 1.17 | not captured | not captured | not captured | 7.2 | not captured (not captured) | Tab3:row10:col1, Tab3:row10:col2 | — | not captured |
-| theta_q319_body_weight_power | `Q900` · theta_q319_body_weight_power | 0.377 | not captured | not captured | not captured | 12.0 | not captured (not captured) | Tab3:row14:col1, Tab3:row14:col2 | — | not captured |
-| theta_cl_ada | `Q900` · theta_cl_ada | 0.428 | L/day | not captured | not captured | 5.1 | not captured (not captured) | Tab3:row15:col1, Tab3:row15:col2 | — | not captured |
+| CL (L/day) | `Q22` · CL | 0.243 | L/day | 2.8125e-09 | [l] / [d] | not captured | exact (1.0) | Tab3:row2:col1, Tab3:row2:col2 | — | not captured |
+| Vc (L) | `Q63` · V1 | 4.86 | L | 0.004860000000000001 | [l] | not captured | exact (1.0) | Tab3:row3:col1, Tab3:row3:col2 | — | not captured |
+| ka (day−1) | `Q49` · kabs | 0.229 | day−1 | 2.650462962962963e-06 | [1] / [d] | not captured | exact (1.0) | Tab3:row4:col1, Tab3:row4:col2 | — | not captured |
+| Q (L/day) | `Q30` · Q | 0.656 | L/day | 7.592592592592592e-09 | [l] / [d] | not captured | exact (1.0) | Tab3:row5:col1, Tab3:row5:col2 | — | not captured |
+| Vp (L) | `Q64` · V2 | 4.25 | L | 0.00425 | [l] | not captured | exact (1.0) | Tab3:row6:col1, Tab3:row6:col2 | — | not captured |
+| exponent_for_the_effect_of_serum_creatinine_on_risankizumab_cl | `Q900` · exponent_for_the_effect_of_serum_creatinine_on_risankizumab_cl | 10.2 | not captured | not captured | not captured | not captured | not captured (not captured) | Tab3:row12:col2 | — | not captured |
+| exponent_for_the_effect_of_c_reactive_protein_on_risankizumab_cl | `Q900` · exponent_for_the_effect_of_c_reactive_protein_on_risankizumab_cl | 0.044 | not captured | not captured | not captured | not captured | not captured (not captured) | Tab3:row13:col1, Tab3:row13:col2 | — | not captured |
+| theta_q319_body_weight_power | `Q900` · theta_q319_body_weight_power | 0.933 | not captured | not captured | not captured | not captured | not captured (not captured) | Tab3:row9:col1, Tab3:row9:col2 | — | not captured |
+| theta_q319_body_weight_power | `Q900` · theta_q319_body_weight_power | 1.17 | not captured | not captured | not captured | not captured | not captured (not captured) | Tab3:row10:col1, Tab3:row10:col2 | — | not captured |
+| theta_q319_albumin_power | `Q900` · theta_q319_albumin_power | 10.6 | not captured | not captured | not captured | not captured | not captured (not captured) | Tab3:row11:col2 | — | not captured |
+| theta_q319_body_weight_power | `Q900` · theta_q319_body_weight_power | 0.377 | not captured | not captured | not captured | not captured | not captured (not captured) | Tab3:row14:col1, Tab3:row14:col2 | — | not captured |
+| theta_cl_ada | `Q900` · theta_cl_ada | 0.428 | L/day | not captured | not captured | not captured | not captured (not captured) | Tab3:row15:col1, Tab3:row15:col2 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -72,8 +73,7 @@ Suleiman AA et al., Population Pharmacokinetics of Risankiz…, Clinical pharmac
 - table section iiv: 'Variance of IIV for Ff; (additive error model in logit domain)' routed out of structural estimates ('Inter-individual correlation and residual variability')
 - table section iiv: 'Covariance between IIV CL and IIV Vc (% correlation)' routed out of structural estimates ('Inter-individual correlation and residual variability')
 - table section iiv: 'Proportional residual error (%CV)' routed out of structural estimates ('Inter-individual correlation and residual variability')
-- dropped value-less row: 'Exponent for the effect of serum albumin on risankizumab CL'
-- dropped value-less row: 'Exponent for the effect of serum creatinine on risankizumab CL'
+- covariate level 'Exponent for the effect of serum creatinine on risankizumab CL' → Q900:exponent_for_the_effect_of_serum_creatinine_on_risankizumab_cl = 10.2 (power on Q22)
 - covariate level 'Exponent for the effect of C-reactive protein on risankizumab CL' → Q900:exponent_for_the_effect_of_c_reactive_protein_on_risankizumab_cl = 0.044 (power on Q22)
 - covariate effect for Q319 has no base parameter row (kept as unattached equation-variable)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=risankizumab
@@ -83,28 +83,7 @@ Suleiman AA et al., Population Pharmacokinetics of Risankiz…, Clinical pharmac
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- unparsed cell Tab3:row2:col3 = '0.239 (0.217–0.263)'
-- unparsed cell Tab3:row3:col3 = '4.70 (3.95–5.53)'
-- unparsed cell Tab3:row4:col3 = '0.223 (0.179–0.296)'
-- unparsed cell Tab3:row5:col3 = '0.656 (0.540–0.783)'
-- unparsed cell Tab3:row6:col3 = '4.24 (3.85–4.65)'
-- unparsed cell Tab3:row7:col3 = '0.698 (0.624–0.781)'
-- unparsed cell Tab3:row8:col3 = '0.877 (0.791–0.960)'
-- unparsed cell Tab3:row9:col3 = '0.931 (0.862–0.995)'
-- unparsed cell Tab3:row10:col3 = '1.17 (0.979–1.35)'
-- unparsed cell Tab3:row11:col1 = '− 0.715'
-- unparsed cell Tab3:row11:col3 = '− 0.713 (− 0.886 to –0.516)'
-- unparsed cell Tab3:row12:col1 = '− 0.253'
-- unparsed cell Tab3:row12:col3 = '− 0.255 (− 0.308 to –0.203)'
-- unparsed cell Tab3:row13:col3 = '0.043 (0.034–0.054)'
-- unparsed cell Tab3:row14:col3 = '0.382 (0.245–0.520)'
-- unparsed cell Tab3:row15:col3 = '0.432 (0.287–0.766)'
-- unparsed cell Tab3:row17:col3 = '0.053 (0.038–0.067)'
-- unparsed cell Tab3:row18:col3 = '0.109 (0.052–0.158)'
-- unparsed cell Tab3:row19:col3 = '0.315 (0.129–0.578)'
-- unparsed cell Tab3:row20:col3 = '0.454 (0.269–0.795)'
-- unparsed cell Tab3:row21:col3 = '0.028 (− 0.003 to 0.051)'
-- unparsed cell Tab3:row22:col3 = '0.036 (0.033–0.039)'
+- table Tab3: unparsed_numeric_cell
 - LLM selected parameter table(s) 3
 
 ## Validation
@@ -137,7 +116,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C1_half_life_beta | pass | 28.0 | 28.275 | 1.0098 | 0.25 | reported t½β |
@@ -163,7 +142,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | not captured | pass | 5 scholar param(s) emitted or defaulted | 5 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
-| T1_t_half_terminal | reference | fail | 672.0 | 4110.6080083751485 | 6.117 | days→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 672.0 | 4110.608738253542 | 6.117 | days→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -172,10 +151,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_risankizumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Suleiman_2019` / `Suleiman_2019::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_risankizumab/models/modelica/Risankizumab_Suleiman2019_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_risankizumab/models/modelica/Risankizumab_Suleiman2019_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_risankizumab/models/modelica/Risankizumab_Suleiman2019_reference.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_risankizumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Suleiman_2019` / `Suleiman_2019::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_risankizumab/models/modelica/Risankizumab_Suleiman2019_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_risankizumab/models/modelica/Risankizumab_Suleiman2019_reference.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_risankizumab/models/modelica/Risankizumab_Suleiman2019_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -185,7 +164,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_risankizumab/Risankizumab_Suleiman2019_reference/Risankizumab_Suleiman2019_reference_modelica.zip" download>Risankizumab_Suleiman2019_reference_modelica.zip</a> <span class="pk-size">(4.8 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_risankizumab/Risankizumab_Suleiman2019_reference/Risankizumab_Suleiman2019_reference_fmi.zip" download>Risankizumab_Suleiman2019_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_risankizumab/Risankizumab_Suleiman2019_reference/Risankizumab_Suleiman2019_reference_fmi.zip" download>Risankizumab_Suleiman2019_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_risankizumab/Risankizumab_Suleiman2019_reference/Risankizumab_Suleiman2019_reference_matlab.zip" download>Risankizumab_Suleiman2019_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_risankizumab/Risankizumab_Suleiman2019_reference/Risankizumab_Suleiman2019_reference_matlab_simbio.zip" download>Risankizumab_Suleiman2019_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_risankizumab/Risankizumab_Suleiman2019_reference/Risankizumab_Suleiman2019_reference_sbml.zip" download>Risankizumab_Suleiman2019_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
@@ -193,11 +172,11 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_risankizumab/Risankizumab_Suleiman2019_reference/Risankizumab_Suleiman2019_reference.svg" alt="Risankizumab_Suleiman2019_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_risankizumab/Risankizumab_Suleiman2019_reference/Risankizumab_Suleiman2019_reference.svg" alt="Risankizumab_Suleiman2019_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 0.01 mg, single dose, first-order absorption (ka 0.00954 /h, F 0.71). Doses in the paper: 0.01, 0.25, 1, 5, 18, 150, 200, 300, 1200 mg.
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.00954 /h, F 0.71). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_risankizumab/Risankizumab_Suleiman2019_reference/Risankizumab_Suleiman2019_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_risankizumab/Risankizumab_Suleiman2019_reference/Risankizumab_Suleiman2019_reference_sim_controls.json"></dbs-fmusim>
 
@@ -206,4 +185,4 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 00:20 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 00:05 UTC</sub>

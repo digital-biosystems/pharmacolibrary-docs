@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;nadroparin&quot;,&quot;href&quot;:&quot;drugs/drug_nadroparin/&quot;},{&quot;label&quot;:&quot;Diepstraten_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nadroparin_Piwowarczyk2023_reference&quot;,&quot;label&quot;:&quot;Piwowarczyk_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nadroparin/Nadroparin_Piwowarczyk2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nadroparin_Piwowarczyk2023_reference&quot;,&quot;label&quot;:&quot;Piwowarczyk_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nadroparin/Nadroparin_Piwowarczyk2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # nadroparin — `Nadroparin_Diepstraten2023_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.556). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -17,13 +17,13 @@
 
 ### Reviewer guidance
 
-**Nadroparin's 44.7 mL/min clearance and 17 mL volume were rejected as physiologically implausible magnitudes.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record lists a total clearance of 44.7 mL/min and a volume of distribution of 17 mL. These values fall outside the expected physiological range for the drug, indicating a potential extraction error in units or scale. Extracted — anti-Xa: kabs 0.00483 min−1, V 17 mL, CL 44.7 mL/min.
+None of the extracted parameters is nadroparin's own; they describe anti-Xa. Extracted — anti-Xa: kabs 0.00483 min−1, V 17 mL, CL 44.7 mL/min.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has anti-Xa, the second reading nadroparin; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of base clearance in patients [not undergoing cvvhd in final model]: this record has none, the second reading 26.7; it also differs on 3 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 > **Dose compound ≠ measured compound:** dosed `nadroparin`, measured `anti-Xa`.
 
@@ -31,7 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which m
 Diepstraten J et al., Low and Highly Variable Exposure to Pro…, Clinical pharmacokinetics (2023)
   ·  DOI: [10.1007/s40262-022-01202-6](https://doi.org/10.1007/s40262-022-01202-6)
 
-<div class="pk-model-meta" hidden drug="nadroparin" model-id="Nadroparin_Diepstraten2023_reference" status="rejected" stale="false" population="critically ill patients" measured-compound="anti-Xa" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="nadroparin" model-id="Nadroparin_Diepstraten2023_reference" status="rejected" stale="false" population="critically ill adults in ICU" measured-compound="anti-Xa" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.
@@ -55,8 +55,8 @@ Diepstraten J et al., Low and Highly Variable Exposure to Pro…, Clinical pharm
 ## Departures & gaps
 
 **Interpretation flags:**
-- table section residual_error: 'Objective function' routed out of structural estimates ('Residual variability (%)')
-- table section residual_error: 'Condition number' routed out of structural estimates ('Residual variability (%)')
+- table section residual_error: 'Objective function' routed out of structural estimates ('Residual variability (%) 49.3 (13.5%) 46.4 (14.5%)')
+- table section residual_error: 'Condition number' routed out of structural estimates ('Residual variability (%) 49.3 (13.5%) 46.4 (14.5%)')
 - salvaged Q49 ('Absorption rate (min−1)'=0.00483) from results prose — parameter table was unreadable
 - salvaged Q61 ('Volume of distribution (mL)a'=17) from results prose — parameter table was unreadable
 - salvaged Q22 ('Base clearance in patients [not undergoing CVVHD in final model] (mL/min)a'=44.7) from results prose — parameter table was unreadable
@@ -64,34 +64,32 @@ Diepstraten J et al., Low and Highly Variable Exposure to Pro…, Clinical pharm
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=anti-Xa
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
-- molar mass: no plausible PubChem entry for 'anti-Xa' ('no full name in the paper') — left in mass units
+- molar mass: no plausible PubChem entry for 'anti-Xa' ('Factor Xa inhibitory activity') — left in mass units
 - molar mass: none found for 'nadroparin' — its concentrations stay mass-only
 - molar mass: none found for 'anti-Xa' — its concentrations stay mass-only
 - review gap-fill skipped: this record measures 'anti-Xa', not nadroparin — the review values are the parent's
 
 **Extraction notes:**
-- unparsed cell Tab2:row12:col1 = '− 1053'
+- table Diepstraten_2023_table_p5_1: unparsed_numeric_cell
 - LLM selected parameter table(s) 2
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.333 (3/9 fields) | 6 |
+| `gpt-oss-120b` | partly confirmed | 0.556 (5/9 fields) | 4 |
 
-<details><summary>6 field discrepancies</summary>
+<details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[absorption rate]` | 0.00483 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[absorption rate]` | not captured | 0.00483 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[base clearance in patients [not undergoing cvvhd in final model] (ml/min)a]` | 44.7 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[base clearance in patients [not undergoing cvvhd in final model]]` | not captured | 44.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[base clearance in patients [not undergoing cvvhd in final model]]` | not captured | 26.7 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[volume of distribution (ml)a]` | 17 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `screen.primary_analyte` | anti-Xa | nadroparin | mismatch |
+| `gpt-oss-120b` | `parameters[volume of distribution]` | not captured | 11300 | only_one_extracted |
 
 </details>
 
@@ -120,7 +118,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_nadroparin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Diepstraten_2023` / `Diepstraten_2023::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_nadroparin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Diepstraten_2023` / `Diepstraten_2023::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -136,4 +134,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 18:12 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 21:15 UTC</sub>

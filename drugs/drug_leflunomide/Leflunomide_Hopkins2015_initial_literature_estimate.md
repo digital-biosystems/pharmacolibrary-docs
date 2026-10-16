@@ -16,9 +16,9 @@
 
 ### Reviewer guidance
 
-**Kfm has no unit.**
+**QH, Qb, V, VH, V1, V2, Q, CLfm, CL and V1 have no unit.**
 
-Without a unit the value cannot be converted, so the model cannot use it. Extracted — leflunomide: QH 8.64e+03 L/day/70kg, Q 6.48e+03 L/day/70kg, V 1 L/70kg, VH 1.5 L/70kg, Vnorm 0.5 L/70kg, V1 7.5 L/70kg, kabs 24 day−1; teriflunomide: kabs 39.6 day−1, kel 6.91e+04 day−1, V 0.5 L/70kg, CLfm 566 L/day/70kg, kfm 0.7, fm -6.14.
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (QH, Qb, V and VH), so that value has no SI equivalent. Extracted — leflunomide: QH 8.64e+03 L/day/70 kg FFM, Qb 6.48e+03 L/day/70 kg FFM, V 1 L/70 kg FFM, VH 1.5 L/70 kg FFM, V1 7.5 L/70 kg FFM, kabs 24 day−1, koff 6.91e+04 day−1; teriflunomide: V2 0.5 L/70 kg FFM, Q 0.5 L/day/70 kg FFM, CLfm 566 L/day/70 kg FFM, fm 0.7, fu 0.00215, CL 36 L/day/70 kg FFM, V1 7.5 L/70 kg FFM.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has leflunomide, the second reading unknown; it also differs on 19 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -33,7 +33,7 @@ Hopkins AM et al., Semiphysiologically Based Pharmacokinet…, CPT: pharmacometr
 <div class="pk-model-meta" hidden drug="leflunomide" model-id="Leflunomide_Hopkins2015_initial_literature_estimate" status="needs_review" stale="false" population="rheumatoid arthritis patients" measured-compound="teriflunomide" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
-**Parameters:** 13 extracted.
+**Parameters:** 14 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -42,19 +42,21 @@ Hopkins AM et al., Semiphysiologically Based Pharmacokinet…, CPT: pharmacometr
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| QCO (L/day/70 kg FFM) | `Q369` · QH | 8640 | L/day/70kg | 0.0001 | L/h | not captured | exact (1.0) | tbl1:row3:col2 | — | not captured |
-| QBODY (L/day/70 kg FFM) | `Q30` · Q | 6480 | L/day/70kg | 7.500000000000001e-05 | L/h | not captured | llm (0.6) | tbl1:row7:col2 | — | not captured |
-| VLUNG (L/70 kg FFM) | `Q61` · V | 1 | L/70kg | 0.001 | L | not captured | llm (0.6) | tbl1:row8:col2 | — | not captured |
-| VLIV (L/70 kg FFM) | `Q368` · VH | 1.5 | L/70kg | 0.0015 | L | not captured | exact (1.0) | tbl1:row9:col2 | — | not captured |
-| VPORT (L/70 kg FFM) | `Q352` · Vnorm | 0.5 | L/70kg | 0.0005 | L | not captured | llm (0.6) | tbl1:row10:col2 | — | not captured |
-| VBODYLEF (L/70 kg FFM) | `Q63` · V1 | 7.5 | L/70kg | 0.0075 | L | not captured | exact (1.0) | tbl1:row12:col2 | — | not captured |
+| QCO (L/day/70 kg FFM) | `Q369` · QH | 8640 | L/day/70 kg FFM | not captured | [l] / [[d] · [70kgffm]] | not captured | exact (1.0) | tbl1:row3:col2 | — | not captured |
+| QBODY (L/day/70 kg FFM) | `Q54` · Qb | 6480 | L/day/70 kg FFM | not captured | [l] / [[d] · [70kgffm]] | not captured | llm (0.6) | tbl1:row7:col2 | — | not captured |
+| VLUNG (L/70 kg FFM) | `Q61` · V | 1 | L/70 kg FFM | not captured | [l] / [70kgffm] | not captured | llm (0.6) | tbl1:row8:col2 | — | not captured |
+| VLIV (L/70 kg FFM) | `Q368` · VH | 1.5 | L/70 kg FFM | not captured | [l] / [70kgffm] | not captured | exact (1.0) | tbl1:row9:col2 | — | not captured |
+| VBODYLEF (L/70 kg FFM) | `Q63` · V1 | 7.5 | L/70 kg FFM | not captured | [l] / [70kgffm] | not captured | exact (1.0) | tbl1:row12:col2 | — | not captured |
 | KALEF (day−1) | `Q49` · kabs | 24 | day−1 | 0.0002777777777777778 | [1] / [d] | not captured | exact (1.0) | tbl1:row13:col2 | — | not captured |
-| KA (day−1) | `Q49` · kabs | 39.6 | day−1 | 0.0004583333333333333 | [1] / [d] | not captured | exact (1.0) | tbl1:row15:col2 | — | not captured |
-| KOFF (day−1) | `Q47` · kel | 69120 | day−1 | 0.7999999999999999 | [1] / [d] | not captured | exact (1.0) | tbl1:row16:col2 | — | not captured |
-| VBILE (L/70 kg FFM) | `Q61` · V | 0.5 | L/70kg | 0.0005 | L | not captured | exact (1.0) | tbl1:row17:col2 | — | not captured |
-| CLM (L/day/70 kg FFM) | `Q370` · CLfm | 566.4 | L/day/70kg | 6.5555555555555556e-06 | L/h | not captured | exact (1.0) | tbl1:row21:col2 | — | not captured |
-| MFCLL (θ1) | `Q305` · kfm | 0.7 | not captured | not captured | not captured | not captured | exact (1.0) | tbl1:row22:col2 | — | not captured |
-| LGTFU (θ2) | `Q45` · fm | -6.14 | not captured | not captured | not captured | not captured | exact (1.0) | tbl1:row25:col2 | — | not captured |
+| KOFF (day−1) | `Q330` · koff | 69120 | day−1 | 0.7999999999999999 | [1] / [d] | not captured | exact (1.0) | tbl1:row16:col2 | — | not captured |
+| VBILE (L/70 kg FFM) | `Q64` · V2 | 0.5 | L/70 kg FFM | not captured | [l] / [70kgffm] | not captured | exact (1.0) | tbl1:row17:col2 | — | not captured |
+| BILEFLOW (L/day/70 kg FFM) | `Q30` · Q | 0.5 | L/day/70 kg FFM | not captured | [l] / [[d] · [70kgffm]] | not captured | llm (0.6) | tbl1:row18:col2 | — | not captured |
+| CLM (L/day/70 kg FFM) | `Q370` · CLfm | 566.4 | L/day/70 kg FFM | not captured | [l] / [[d] · [70kgffm]] | not captured | exact (1.0) | tbl1:row21:col2 | — | not captured |
+| MFCLL (θ1) | `Q45` · fm | 0.7 | not captured | not captured | not captured | not captured | exact (1.0) | tbl1:row22:col2 | — | not captured |
+| LGTFU (θ2) | `Q900` · equation variable | -6.14 | not captured | not captured | not captured | not captured | llm (0.6) | tbl1:row25:col2 | — | not captured |
+| FU | `Q46` · fu | 0.00215 | not captured | not captured | not captured | not captured | exact (1.0) | tbl1:row26:col2 | — | not captured |
+| CLINT (θ3) (L/day/70 kg FFM) | `Q22` · CL | 36 | L/day/70 kg FFM | not captured | [l] / [[d] · [70kgffm]] | not captured | exact (1.0) | tbl1:row27:col2 | — | not captured |
+| VBODY (θ5) (L/70 kg FFM) | `Q63` · V1 | 7.5 | L/70 kg FFM | not captured | [l] / [70kgffm] | not captured | exact (1.0) | tbl1:row29:col2 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -64,7 +66,7 @@ Hopkins AM et al., Semiphysiologically Based Pharmacokinet…, CPT: pharmacometr
 ### Unresolved rows _(no Q-code or no value — not parameters)_
 | label (paper) | Q-code | value | link |
 |---|---|---|---|
-| aQREABS (L/day/70 kg FFM) | Q22 | not captured | exact |
+| CLLM (L/day/70 kg FFM) | Q22 | not captured | llm |
 
 ## Departures & gaps
 
@@ -74,63 +76,47 @@ Hopkins AM et al., Semiphysiologically Based Pharmacokinet…, CPT: pharmacometr
 - dropped duplicate Q369 ('QH (L/day/70 kg FFM)', value '2160') — already have one for this compound
 - dropped duplicate Q369 ('QHP (L/day/70 kg FFM)', value None) — already have one for this compound
 - dropped duplicate Q369 ('QHA (L/day/70 kg FFM)', value None) — already have one for this compound
-- unit_dimension_unknown: 'L/day/70 kg FFM' (Q)
+- unit_dimension_unknown: 'L/day/70 kg FFM' (Qb)
 - unit_dimension_unknown: 'L/70 kg FFM' (V)
 - unit_dimension_unknown: 'L/70 kg FFM' (VH)
-- unit_dimension_unknown: 'L/70 kg FFM' (Vnorm)
+- dropped duplicate Q368 ('VPORT (L/70 kg FFM)', value '0.5') — already have one for this compound
 - dropped unlinked row (NIL): 'CPROT (mg/L)' — extend the ontology if this is a real PK parameter (source ['tbl1:row11:col2'])
 - unit_dimension_unknown: 'L/70 kg FFM' (V1)
 - dropped unlinked row (NIL): 'RATEBBM (day−1)' — extend the ontology if this is a real PK parameter (source ['tbl1:row14:col2'])
-- dropped unlinked row (NIL): 'BILEFLOW (L/day/70 kg FFM)' — extend the ontology if this is a real PK parameter (source ['tbl1:row18:col2'])
-- unit_dimension_unknown: 'L/day/70 kg FFM' (CL)
-- dropped duplicate Q22 ('aQE (L/day/70 kg FFM)', value None) — already have one for this compound
+- dropped duplicate Q49 ('KA (day−1)', value '39.6') — already have one for this compound
+- unit_dimension_unknown: 'L/70 kg FFM' (V2)
+- unit_dimension_unknown: 'L/day/70 kg FFM' (Q)
+- dropped unlinked row (NIL): 'aQREABS (L/day/70 kg FFM)' — extend the ontology if this is a real PK parameter (source ['tbl1:row19:col2'])
+- dropped unlinked row (NIL): 'aQE (L/day/70 kg FFM)' — extend the ontology if this is a real PK parameter (source ['tbl1:row20:col2'])
 - unit_dimension_unknown: 'L/day/70 kg FFM' (CLfm)
 - dropped duplicate Q370 ('CLL (L/day/70 kg FFM)', value None) — already have one for this compound
-- dropped duplicate Q370 ('CLLM (L/day/70 kg FFM)', value None) — already have one for this compound
-- dropped duplicate Q45 ('FU', value '0.00215') — already have one for this compound
-- dropped duplicate Q22 ('CLINT (θ3) (L/day/70 kg FFM)', value '36') — already have one for this compound
+- unit_dimension_unknown: 'L/day/70 kg FFM' (CL)
 - dropped unlinked row (NIL): 'QBILE (θ4) (L/day/70 kg FFM)' — extend the ontology if this is a real PK parameter (source ['tbl1:row28:col2'])
-- dropped duplicate Q63 ('VBODY (θ5) (L/70 kg FFM)', value '7.5') — already have one for this compound
 - dropped unlinked row (NIL): '(σ1; %CV)' — extend the ontology if this is a real PK parameter (source ['tbl1:row40:col2'])
 - dropped unlinked row (NIL): '(σ2; %CV)' — extend the ontology if this is a real PK parameter (source ['tbl1:row43:col2'])
 - dropped unlinked row (NIL): '(σ3; %CV)' — extend the ontology if this is a real PK parameter (source ['tbl1:row46:col2'])
-- implicit units: 'QCO (L/day/70 kg FFM)' → L/day/70kg (from the paper text: "The parameter table header/caption context lists the unit as '(L/day/70 kg FFM)' immediately preceding the value 8640. T")
-- implicit units: 'QBODY (L/day/70 kg FFM)' → L/day/70kg (from the paper text: "The parameter table header/caption context lists the unit as '(L/day/70 kg FFM)' immediately preceding the value 6480. Q")
-- implicit units: 'VLUNG (L/70 kg FFM)' → L/70kg (from the paper text: "The parameter table header/caption context lists the unit as '(L/70 kg FFM)' immediately preceding the value 1. VLUNG is")
-- implicit units: 'VLIV (L/70 kg FFM)' → L/70kg (from the paper text: "The parameter table header/caption context lists the unit as '(L/70 kg FFM)' immediately preceding the value 1.5. VLIV i")
-- implicit units: 'VPORT (L/70 kg FFM)' → L/70kg (from the paper text: "The parameter table header/caption context lists the unit as '(L/70 kg FFM)' immediately preceding the value 0.5. VPORT ")
-- implicit units: 'VBODYLEF (L/70 kg FFM)' → L/70kg (from the paper text: "The parameter table header/caption context lists the unit as '(L/70 kg FFM)' immediately preceding the value 7.5. VBODYL")
-- implicit units: 'VBILE (L/70 kg FFM)' → L/70kg (from the paper text: "The parameter table header/caption context lists the unit as '(L/70 kg FFM)' immediately preceding the value 0.5. VBILE ")
-- implicit units: 'CLM (L/day/70 kg FFM)' → L/day/70kg (from the paper text: "The parameter table header/caption context lists the unit as '(L/day/70 kg FFM)' immediately preceding the value 566.4. ")
-- metabolite volume: 'VBILE (L/70 kg FFM)' Q63→Q61 for teriflunomide — it is 1-compartment, so its central volume is its only volume
-- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q30 (QBODY (L/day/70 kg FFM)); Q61 (VLUNG (L/70 kg FFM)); Q63 (VBODYLEF (L/70 kg FFM)); Q61 (VBILE (L/70 kg FFM)); Q22 (aQREABS (L/day/70 kg FFM))
+- implicit units: 'QCO (L/day/70 kg FFM)' — the LLM proposed 'L/day/70 kg FFM', whose dimension does not fit Q369; left unset
+- implicit units: 'QBODY (L/day/70 kg FFM)' — the LLM proposed 'L/day/70 kg FFM', whose dimension does not fit Q54; left unset
+- implicit units: 'VLUNG (L/70 kg FFM)' — the LLM proposed 'L/70 kg FFM', whose dimension does not fit Q61; left unset
+- implicit units: 'VLIV (L/70 kg FFM)' — the LLM proposed 'L/70 kg FFM', whose dimension does not fit Q368; left unset
+- implicit units: 'VBODYLEF (L/70 kg FFM)' — the LLM proposed 'L/70 kg FFM', whose dimension does not fit Q63; left unset
+- implicit units: 'VBILE (L/70 kg FFM)' — the LLM proposed 'L/70 kg FFM', whose dimension does not fit Q64; left unset
+- implicit units: 'BILEFLOW (L/day/70 kg FFM)' — the LLM proposed 'L/day/70 kg FFM', whose dimension does not fit Q30; left unset
+- implicit units: 'CLM (L/day/70 kg FFM)' — the LLM proposed 'L/day/70 kg FFM', whose dimension does not fit Q370; left unset
+- implicit units: 'CLINT (θ3) (L/day/70 kg FFM)' — the LLM proposed 'L/day/70 kg FFM', whose dimension does not fit Q22; left unset
+- implicit units: 'VBODY (θ5) (L/70 kg FFM)' — the LLM proposed 'L/70 kg FFM', whose dimension does not fit Q63; left unset
+- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q61 (VLUNG (L/70 kg FFM)); Q63 (VBODYLEF (L/70 kg FFM)); Q64 (VBILE (L/70 kg FFM)); Q30 (BILEFLOW (L/day/70 kg FFM)); Q22 (CLLM (L/day/70 kg FFM)); Q22 (CLINT (θ3) (L/day/70 kg FFM)); Q63 (VBODY (θ5) (L/70 kg FFM))
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=teriflunomide
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- template fit: PK_3M_3C — hepatic compartment; parent 1 + hepatic, metabolites [1] (site hepatic: 'the record carries a hepatic compartment parameter (Q368, Q369)')
+- template fit: none — pbpk model — not a compartmental parent–metabolite model (site hepatic: 'the record carries a hepatic compartment parameter (Q368, Q369)')
 - status held at route_to_review — not promoted
-- population split: 'initial literature estimate' subgroup of Hopkins_2015 (paper reports 3 populations: base model, covariate model, initial literature estimate)
-- row roles (LLM): model_class=compartmental; 43/43 row label(s) assigned, 45 linked by role; re-tagged leflunomide→parent ×3, leflunomide→teriflunomide ×64
+- population split: 'initial literature estimate' subgroup of Hopkins_2015 (paper reports 4 populations: base model, covariate model, initial literature estimate, mfcll)
+- row roles (LLM): model_class=pbpk; 37/37 row label(s) assigned, 25 linked by role; re-tagged leflunomide→parent ×9, leflunomide→teriflunomide ×44
 - review gap-fill skipped: this record measures 'teriflunomide', not leflunomide — the review values are the parent's
 
 **Extraction notes:**
-- unparsed cell tbl1:row3:col3 = '26, 27'
-- unparsed cell tbl1:row4:col3 = '26, 27'
-- unparsed cell tbl1:row5:col3 = '26, 28'
-- unparsed cell tbl1:row6:col3 = '26, 28'
-- unparsed cell tbl1:row7:col3 = '26, 27'
-- unparsed cell tbl1:row8:col3 = '26, 27'
-- unparsed cell tbl1:row9:col3 = '26, 27'
-- unparsed cell tbl1:row10:col3 = '22, 24'
-- unparsed cell tbl1:row12:col3 = '9, 18'
-- unparsed cell tbl1:row17:col3 = '30, 31, 32'
-- unparsed cell tbl1:row18:col1 = 'Bile flow for turnover of bile volume over 24 hours'
-- unparsed cell tbl1:row18:col3 = '30, 31, 32'
-- unparsed cell tbl1:row19:col3 = '30, 31, 32'
-- unparsed cell tbl1:row20:col3 = '30, 31, 32'
-- unparsed cell tbl1:row21:col3 = '9, 10'
-- unparsed cell tbl1:row23:col3 = '9, 10'
-- unparsed cell tbl1:row24:col3 = '9, 10'
-- unparsed cell tbl1:row29:col3 = '9, 17'
+- table tbl1: unbound_uncertainty
+- table tbl1: unparsed_numeric_cell
 - companion parameter table 3 transcribed (10 record(s), model stage 'base')
 - LLM selected parameter table(s) 1, 3
 
@@ -180,25 +166,22 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 13 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 14 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tbl1:row7:col2'] |
-| C5_dimension_Q352 | pass | [length] ** 3 | not captured | not captured | not captured | ['tbl1:row10:col2'] |
-| C5_dimension_Q368 | pass | [length] ** 3 | not captured | not captured | not captured | ['tbl1:row9:col2'] |
-| C5_dimension_Q369 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tbl1:row3:col2'] |
-| C5_dimension_Q370 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tbl1:row21:col2'] |
-| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['tbl1:row16:col2'] |
+| C5_dimension_Q330 | pass | 1 / [time] | not captured | not captured | not captured | ['tbl1:row16:col2'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['tbl1:row13:col2'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['tbl1:row15:col2'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['tbl1:row8:col2'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['tbl1:row17:col2'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['tbl1:row12:col2'] |
-| C5_unit_missing_Q305 | fail | 1 / [time] | not captured | not captured | not captured | ['tbl1:row22:col2'] |
+| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | L/day/70 kg FFM | not captured | not captured | ['tbl1:row27:col2'] |
+| C5_unit_missing_Q30 | fail | [length] ** 3 / [time] | L/day/70 kg FFM | not captured | not captured | ['tbl1:row18:col2'] |
+| C5_unit_missing_Q368 | fail | [length] ** 3 | L/70 kg FFM | not captured | not captured | ['tbl1:row9:col2'] |
+| C5_unit_missing_Q369 | fail | [length] ** 3 / [time] | L/day/70 kg FFM | not captured | not captured | ['tbl1:row3:col2'] |
+| C5_unit_missing_Q370 | fail | [length] ** 3 / [time] | L/day/70 kg FFM | not captured | not captured | ['tbl1:row21:col2'] |
+| C5_unit_missing_Q54 | fail | [length] ** 3 / [time] | L/day/70 kg FFM | not captured | not captured | ['tbl1:row7:col2'] |
+| C5_unit_missing_Q61 | fail | [length] ** 3 | L/70 kg FFM | not captured | not captured | ['tbl1:row8:col2'] |
+| C5_unit_missing_Q63 | fail | [length] ** 3 | L/70 kg FFM | not captured | not captured | ['tbl1:row12:col2'] |
+| C5_unit_missing_Q63 | fail | [length] ** 3 | L/70 kg FFM | not captured | not captured | ['tbl1:row29:col2'] |
+| C5_unit_missing_Q64 | fail | [length] ** 3 | L/70 kg FFM | not captured | not captured | ['tbl1:row17:col2'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q61 | pass | volume within physiological range | 1 L | not captured | not captured | ['tbl1:row8:col2'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 0.5 L | not captured | not captured | ['tbl1:row17:col2'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 7.5 L | not captured | not captured | ['tbl1:row12:col2'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -207,7 +190,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_leflunomide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Hopkins_2015` / `Hopkins_2015::initial_literature_estimate`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_leflunomide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Hopkins_2015` / `Hopkins_2015::initial_literature_estimate`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -233,4 +216,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 23:58 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 04:08 UTC</sub>

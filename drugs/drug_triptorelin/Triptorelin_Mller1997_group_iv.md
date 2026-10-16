@@ -105,7 +105,7 @@ Müller FO et al., Pharmacokinetics of triptorelin after i…, British journal o
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_triptorelin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Müller_1997` / `Müller_1997::group_iv`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_triptorelin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Müller_1997` / `Müller_1997::group_iv`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

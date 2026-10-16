@@ -20,9 +20,9 @@
 
 **Model:** No model was generated from this record.
 
-> Donepezil inhibits the hERG open-state current with a sigmoid Emax-type concentration–response relationship (concentrations in μM), with an IC50 of 2.7 μM; the paper excerpts do not state the mechanism beyond channel block, which is characterized by a blocking rate constant of 0.54 µM⁻¹s⁻¹ and an unblocking rate constant of 1.82 s⁻¹.
+> The paper does not provide a full text to confirm the specific pharmacodynamic mechanism or effect form beyond the record's specification. The record describes a sigmoidal Emax inhibition of the hERG open state current by donepezil with an IC50 of 2.7 μM, characterized by a blocking rate constant of 0.54 µM⁻¹s⁻¹ and an unblocking rate constant of 1.82 s⁻¹.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Chae_2015`
 - **model family:** `sigmoid_emax`

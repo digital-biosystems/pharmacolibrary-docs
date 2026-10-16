@@ -4,7 +4,7 @@
 
 # Ipratropium — `Ipratropium_Lee2016_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.875). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -20,7 +20,7 @@
 
 The record was built from the paper's abstract alone, so the reported summary statistics stood in for a fitted model. The dimension check on a structural parameter failed for ipratropium bromide in surgical patients under mechanical ventilation: the dose-normalised AUC (0.1 min/L), the apparent volume of distribution (1340 L) and the hepatic clearance (6.78 L/min) do not combine to consistent dimensions. No other findings are reported. Extracted — ipratropium: AUC/dose 0.1 min/L, V/F 1.34e+03 L, CLH 6.78 L/min.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[metabolic clearance].parameter_id`: this record has Q25, the second reading Q22. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ipratropium bromide, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -71,17 +71,24 @@ Lee YH et al., Efficiency of a New Mesh-Type Nebulizer…, Basic & clinical phar
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.875 (7/8 fields) | 1 |
+| `gpt-oss-120b` | not confirmed | 0.2 (2/10 fields) | 8 |
 
-<details><summary>1 field discrepancy</summary>
+<details><summary>8 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[metabolic clearance].parameter_id` | Q25 | Q22 | mismatch |
+| `gpt-oss-120b` | `parameters[apparent volume of distribution]` | 1340 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[apparent volume of distribution]` | not captured | 1340 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[dose-normalized auc]` | 0.1 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[dose-normalized auc]` | not captured | 0.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[metabolic clearance]` | 6.78 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[metabolic clearance]` | not captured | 6.78 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | ipratropium bromide | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | ipratropium bromide | unknown | mismatch |
 
 </details>
 
@@ -112,7 +119,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ipratropium/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Lee_2016` / `Lee_2016::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ipratropium/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Lee_2016` / `Lee_2016::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

@@ -17,9 +17,9 @@
 
 **Model:** No model was generated from this record.
 
-> The record identifies a sigmoid Emax model where labetalol concentrations inhibit systolic blood pressure, but the paper excerpts are unavailable. Consequently, the specific mechanism and key potency or rate values are not provided in the available text.
+> The paper excerpts are unavailable, so the specific mechanism by which labetalol affects systolic blood pressure is not described. No potency or rate values are provided in the available text.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Saotome_1993`
 - **model family:** `sigmoid_emax`

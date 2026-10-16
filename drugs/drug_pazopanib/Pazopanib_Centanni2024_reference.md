@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;pazopanib&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/&quot;},{&quot;label&quot;:&quot;Centanni_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pazopanib_Attia2023_reference&quot;,&quot;label&quot;:&quot;Attia_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Attia2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pazopanib_Balakirouchenane2020_reference&quot;,&quot;label&quot;:&quot;Balakirouchenane_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Balakirouchenane2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pazopanib_Bins2019_base&quot;,&quot;label&quot;:&quot;Bins_2019_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Bins2019_base.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pazopanib_Bins2019_final&quot;,&quot;label&quot;:&quot;Bins_2019_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Bins2019_final.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pazopanib_Ozbey2021_reference&quot;,&quot;label&quot;:&quot;Ozbey_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Ozbey2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pazopanib_Attia2023_reference&quot;,&quot;label&quot;:&quot;Attia_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Attia2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pazopanib_Balakirouchenane2020_reference&quot;,&quot;label&quot;:&quot;Balakirouchenane_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Balakirouchenane2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pazopanib_Ozbey2021_reference&quot;,&quot;label&quot;:&quot;Ozbey_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Ozbey2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,11 +17,11 @@
 
 ### Reviewer guidance
 
-**The record was refused with sunitinib molecular weight 437.53 g/mol and SU12662, an unlinked metabolite, in a pazopanib model.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record is for pazopanib, but lists SU12662 formed from sunitinib and N-desmethyl-imatinib formed from imatinib, with no path from pazopanib dosing to either metabolite. Sunitinib’s molecular-weight value is 437.53 g/mol; that reported unit could not be converted to SI, so the parameter reached the model builder without an SI value. Extracted — sunitinib: MW 438 g/mol, fu 0.001; pazopanib: CL 0.0186 L/h, V 5.05 L, kabs 1.8 1/h, tlag 0.5 h.
+A reported unit could not be converted (MW), so that value has no SI equivalent. Extracted — sunitinib: MW 438 g/mol, fu 0.001; pazopanib: CL 0.0186 L/h, V 5.05 L, kabs 1.8 1/h, tlag 0.5 h.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Centanni M et al., Physiologically-based pharmacokinetic m…, Cancer chemotherapy and pha… (2024)
@@ -41,10 +41,10 @@ Centanni M et al., Physiologically-based pharmacokinetic m…, Cancer chemothera
 |---|---|---|---|---|---|---|---|---|---|---|
 | MW | `Q374` · MW | 437.53 | g/mol | not captured | g/mol | not captured | exact (1.0) | Tab2:row1:col6 | — | not captured |
 | Fraction unbound | `Q46` · fu | 0.001 | not captured | not captured | not captured | not captured | exact (1.0) | Tab2:row21:col6 | — | not captured |
-| systemic clearance in the current analysis | `Q22` · CL | 0.0186 | L/h | 5.166666666666666e-09 | L/h | not captured | review_gapfill (0.7) | Attia_2023:review | — | not captured |
-| volume of distribution in the current analysis | `Q61` · V | 5.05 | L | 0.00505 | L | not captured | review_gapfill (0.7) | Attia_2023:review | — | not captured |
-| k a | `Q49` · kabs | 1.8 | 1/h | 0.0005 | 1/h | not captured | review_gapfill (0.7) | Balakirouchenane_2020:review | — | not captured |
-| Tlag | `Q83` · tlag | 0.5 | h | 1800.0 | h | not captured | review_gapfill (0.7) | Balakirouchenane_2020:review | — | not captured |
+| The systemic clearance | `Q22` · CL | 0.0186 | L/h | 5.166666666666666e-09 | L/h | not captured | review_gapfill (0.7) | Attia_2023:review | — | not captured |
+| the volume of distribution | `Q61` · V | 5.05 | L | 0.00505 | L | not captured | review_gapfill (0.7) | Attia_2023:review | — | not captured |
+| k a (1/h) Estimate (Base DAB/OHD Model) | `Q49` · kabs | 1.8 | 1/h | 0.0005 | 1/h | not captured | review_gapfill (0.7) | Balakirouchenane_2020:review | — | not captured |
+| Tlag (h) Estimate (Base DAB/OHD Model) | `Q83` · tlag | 0.5 | h | 1800.0 | h | not captured | review_gapfill (0.7) | Balakirouchenane_2020:review | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -128,7 +128,7 @@ Centanni M et al., Physiologically-based pharmacokinetic m…, Cancer chemothera
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_pazopanib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Centanni_2024` / `Centanni_2024::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_pazopanib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Centanni_2024` / `Centanni_2024::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -144,4 +144,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 04:38 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 20:20 UTC</sub>

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;ajmaline&quot;,&quot;href&quot;:&quot;drugs/drug_ajmaline/&quot;},{&quot;label&quot;:&quot;Yasuhara_1987 \u00b7 dog_1&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ajmaline_Iven1977_reference&quot;,&quot;label&quot;:&quot;Iven_1977_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ajmaline/Ajmaline_Iven1977_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ajmaline_Iven1977_reference&quot;,&quot;label&quot;:&quot;Iven_1977_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ajmaline/Ajmaline_Iven1977_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yasuhara_1987_PQ&quot;,&quot;label&quot;:&quot;Yasuhara_1987 \u00b7 PQ&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ajmaline/pd_Yasuhara_1987_PQ.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yasuhara_1987_QRS&quot;,&quot;label&quot;:&quot;Yasuhara_1987 \u00b7 QRS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ajmaline/pd_Yasuhara_1987_QRS.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ajmaline — `Ajmaline_Yasuhara1987_dog_1`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓ 2/2</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0), gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓ 2/2</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -21,9 +21,9 @@
 
 **C5 dimension mismatch on a structural parameter.**
 
-A reported unit could not be converted (λ1), so that value has no SI equivalent. Extracted — ajmaline: V 13.8 L/kg, λ1 0.162 min-1, k21 0.396 min-1, kel 0.0354 min-1, CL 1.81 ml/min/kg.
+A reported unit could not be converted (λ1), so that value has no SI equivalent. Extracted — ajmaline: V 0.162 L/kg, λ1 0.396 min⁻¹, k21 0.0354 min⁻¹, kel 0.00272 min⁻¹, CL 4.9 ml/min/kg.
 
-Independently confirmed by `gpt-oss-120b`, `gpt-oss:120b`.
+Independently confirmed by `gpt-oss:120b`, `gpt-oss-120b`.
 
 <sub>the checker's own wording — not yet put into words by an LLM</sub>
 
@@ -43,11 +43,11 @@ Yasuhara M et al., Kinetics of ajmaline disposition and ph…, Journal of pharma
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| V (L/kg) | `Q61` · V | 13.8 | L/kg | 0.9660000000000001 | [l] / [kg] | not captured | exact (1.0) | Yasuhara_1987_table_1:row0:col1 | — | not captured |
-| α (min-1) | `Q67` · λ1 | 0.162 | min-1 | not captured | [1] / [min] | not captured | exact (1.0) | Yasuhara_1987_table_1:row1:col1 | — | not captured |
-| k21 (min-1) | `Q302` · k21 | 0.396 | min-1 | 0.0066 | [1] / [min] | not captured | exact (1.0) | Yasuhara_1987_table_1:row2:col1 | — | not captured |
-| β (min-1) | `Q47` · kel | 0.0354 | min-1 | 0.00059 | [1] / [min] | not captured | exact (1.0) | Yasuhara_1987_table_1:row3:col1 | — | not captured |
-| CLt (ml/min/kg) | `Q22` · CL | 1.81 | ml/min/kg | 2.1116666666666666e-06 | [ml] / [[min] · [kg]] | not captured | exact (1.0) | Yasuhara_1987_table_1:row5:col1 | — | not captured |
+| V (L/kg) | `Q61` · V | 0.162 | L/kg | 0.011340000000000001 | [l] / [kg] | not captured | exact (1.0) | Yasuhara_1987_table_1:row0:col2 | — | not captured |
+| α (min⁻¹) | `Q67` · λ1 | 0.396 | min⁻¹ | not captured | [1] / [min] | not captured | exact (1.0) | Yasuhara_1987_table_1:row0:col3 | — | not captured |
+| k₂₁ (min⁻¹) | `Q302` · k21 | 0.0354 | min⁻¹ | 0.00059 | [1] / [min] | not captured | exact (1.0) | Yasuhara_1987_table_1:row0:col4 | — | not captured |
+| β (min⁻¹) | `Q47` · kel | 0.00272 | min⁻¹ | 4.5333333333333335e-05 | [1] / [min] | not captured | exact (1.0) | Yasuhara_1987_table_1:row0:col5 | — | not captured |
+| CLt (ml/min/kg) | `Q22` · CL | 4.9 | ml/min/kg | 5.716666666666667e-06 | [ml] / [[min] · [kg]] | not captured | exact (1.0) | Yasuhara_1987_table_1:row0:col7 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -57,9 +57,10 @@ Yasuhara M et al., Kinetics of ajmaline disposition and ph…, Journal of pharma
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_mismatch: 'α (min-1)' → Q67 (unit '1 / [time]' vs ontology '[mass] / [time]') — route to review
-- dropped duplicate Q61 ('Vdarea (L/kg)', value '0.00272') — already have one for this compound
-- dropped PD-category row 'S (µg/ml)' → Q335 (slope, category G13) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Yasuhara_1987_table_1:row6:col1'])
+- dropped unlinked row (NIL): 'Weight (kg)' — extend the ontology if this is a real PK parameter (source ['Yasuhara_1987_table_1:row0:col1'])
+- unit_dimension_mismatch: 'α (min⁻¹)' → Q67 (unit '1 / [time]' vs ontology '[mass] / [time]') — route to review
+- dropped duplicate Q61 ('Vdarea (L/kg)', value '1.81') — already have one for this compound
+- dropped PD-category row 'S (µg/ml)' → Q335 (slope, category G13) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Yasuhara_1987_table_1:row0:col8'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=ajmaline
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
@@ -71,7 +72,7 @@ Yasuhara M et al., Kinetics of ajmaline disposition and ph…, Journal of pharma
 **Extraction notes:**
 - no TEI final-model table id; trying text-pointer table recovery
 - LLM selected parameter table(s) 1
-- transposed table Yasuhara_1987_table_1: parameters were across the columns, populations/subgroups down the first column — transposed for parsing
+- transposed table Yasuhara_1987_table_1: logical view retains original source coordinates
 
 ## Validation
 
@@ -80,8 +81,8 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | confirmed | 1.0 (9/9 fields) | none |
 | `gpt-oss:120b` | confirmed | 1.0 (9/9 fields) | none |
+| `gpt-oss-120b` | confirmed | 1.0 (9/9 fields) | none |
 
 _All readers agree on the compared fields of this record._
 
@@ -98,15 +99,15 @@ _All readers agree on the compared fields of this record._
 | C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Yasuhara_1987_table_1:row5:col1'] |
-| C5_dimension_Q302 | pass | 1 / [time] | not captured | not captured | not captured | ['Yasuhara_1987_table_1:row2:col1'] |
-| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['Yasuhara_1987_table_1:row3:col1'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Yasuhara_1987_table_1:row0:col1'] |
-| C5_dimension_Q67 | fail | 1 / [time] | min-1 | not captured | not captured | ['Yasuhara_1987_table_1:row1:col1'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 1.81 | not captured | not captured | ['Yasuhara_1987_table_1:row5:col1'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Yasuhara_1987_table_1:row0:col7'] |
+| C5_dimension_Q302 | pass | 1 / [time] | not captured | not captured | not captured | ['Yasuhara_1987_table_1:row0:col4'] |
+| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['Yasuhara_1987_table_1:row0:col5'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Yasuhara_1987_table_1:row0:col2'] |
+| C5_dimension_Q67 | fail | 1 / [time] | min⁻¹ | not captured | not captured | ['Yasuhara_1987_table_1:row0:col3'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 4.9 | not captured | not captured | ['Yasuhara_1987_table_1:row0:col7'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 7.6 L/h | not captured | not captured | ['Yasuhara_1987_table_1:row5:col1'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 966 L | not captured | not captured | ['Yasuhara_1987_table_1:row0:col1'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 20.6 L/h | not captured | not captured | ['Yasuhara_1987_table_1:row0:col7'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 11.3 L | not captured | not captured | ['Yasuhara_1987_table_1:row0:col2'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -115,7 +116,7 @@ _All readers agree on the compared fields of this record._
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ajmaline/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Yasuhara_1987` / `Yasuhara_1987::dog_1`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ajmaline/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Yasuhara_1987` / `Yasuhara_1987::dog_1`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -131,4 +132,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-08 15:33 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 17:49 UTC</sub>

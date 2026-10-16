@@ -146,9 +146,9 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ampicillin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Onita_2023` / `Onita_2023::ampicillin`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ampicillin/models/modelica/_needs_review/Ampicillin_Onita2023_ampicillin.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ampicillin/models/modelica/_needs_review/Ampicillin_Onita2023_ampicillin.deviation.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ampicillin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Onita_2023` / `Onita_2023::ampicillin`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ampicillin/models/modelica/_needs_review/Ampicillin_Onita2023_ampicillin.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ampicillin/models/modelica/_needs_review/Ampicillin_Onita2023_ampicillin.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

@@ -5,7 +5,7 @@
 
 # ivacaftor — `Ivacaftor_Vonk2025_elexacaftor_m23`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -20,8 +20,6 @@
 **Ivacaftor volume of distribution 1.76 L/h and clearance 1.76 L/h/70 kg are mislabeled or swapped, causing unit errors.**
 
 The parameter labeled 'apparent clearance' has a value of 1.76 L/h, but its meaning describes volume of distribution. The record contains a duplicate 1.76 L/h value assigned to both clearance and volume concepts. A second reader identified distinct values like 1.5 L/h for tezacaftor clearance, indicating the 1.76 L/h assignment for ivacaftor is inconsistent with the expected pharmacokinetic profile. Extracted — ivacaftor: AUC 208 mg*h/L, V 1.76 L/h, CL/F 1.76 L/h/70 kg, V/F 59 L/ 70 kg; elexacaftor: AUC 63.2 mg*h/L.
-
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has elexacaftor-tezacaftor-ivacaftor, the second reading elexacaftor‑tezacaftor‑ivacaftor; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -94,36 +92,6 @@ Vonk SEM et al., Real-world pharmacokinetics of elexacaf…, Journal of cystic f
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
-
-| second reader | verdict | agreement | disagreements |
-|---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.167 (2/12 fields) | 10 |
-
-<details><summary>10 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `model.links` | [] | [['ivacaftor', 'ivacaftor metabolite', 'metabolism'], ['elexacaftor', 'elexacaftor metabolite', 'metabolism'], ['tezacaftor', 'tezacaftor metabolite', 'metabolism']] | mismatch |
-| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
-| `gpt-oss-120b` | `parameters[apparent clearance (cl elx /f) and volume of distribution (v elx /f) normalized for a body weight of 70 kg]` | 1.76 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[auc #]` | 63.2 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[auc #]` | not captured | 11.6 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[corresponding v/f values ... for eti]` | 59.0 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[dose per mean weight]` | not captured | 5.18 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[dose per mean weight]` | not captured | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[typical values of cl/f ... for eti]` | 1.76 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | elexacaftor-tezacaftor-ivacaftor | elexacaftor‑tezacaftor‑ivacaftor | mismatch |
-
-</details>
-
-<details class="legend">
-<summary>Cross-check definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
-</details>
-
-
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
@@ -147,7 +115,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ivacaftor/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Vonk_2025` / `Vonk_2025::elexacaftor_m23`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ivacaftor/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Vonk_2025` / `Vonk_2025::elexacaftor_m23`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

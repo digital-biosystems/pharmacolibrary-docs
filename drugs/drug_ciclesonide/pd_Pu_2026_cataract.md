@@ -18,9 +18,9 @@
 
 **Model:** No model was generated from this record.
 
-> The paper relates ciclesonide dose to the binary cataract response with an Emax-type model, but no full text is available, so the mechanism and any potency or rate parameters (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) are not stated.
+> The paper excerpts are unavailable to describe the mechanism by which ciclesonide dose affects the binary cataract response. No potency or rate values are provided in the available data.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Pu_2026`
 - **model family:** `emax`

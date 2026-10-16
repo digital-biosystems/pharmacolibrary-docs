@@ -15,19 +15,19 @@
 
 ## Record summary
 
-**As extracted:** Ado drives IKACh: direct Emax (saturable) effect.
+**As extracted:** Ado drives IKACh: direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
 
-> Adenosine directly stimulates IKACh current through a concentration-dependent Emax relationship, with no explicit mechanistic description of indirect production or elimination pathways in the excerpts. The model yields EC50 values of 288 nM and 240 nM, Emax values of 0.98 and 1.00, and Hill coefficients (nH) of 1.03 and 1.02.
+> Adenosine stimulates the IKACh current in guinea-pig cardiomyocytes via a direct receptor-activation mechanism (A1R-Gi/o pathway) described by a sigmoid Emax model. The estimated pEC50 is 6.54 ± 0.08 with a Hill coefficient of 1.03 ± 0.12 and an Emax of 0.98 ± 0.01.
 >
 > <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `López-Serrano_2022`
-- **model family:** `emax`
+- **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`
 - **tier:** descriptive
-- **effect:** stimulation/additive
+- **effect:** stimulation/unknown
 
 ## Citation
 López-Serrano AL et al., Differential voltage-dependent modulati…, PloS one (2022)
@@ -36,12 +36,9 @@ López-Serrano AL et al., Differential voltage-dependent modulati…, PloS one (
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | EC50 | `Q321` · not captured | 288 | nM | not captured | llm (not captured) | López-Serrano_2022:pdv3 |
-| PD (effect) | EC50 | `Q321` · not captured | 240 | nM | not captured | llm (not captured) | López-Serrano_2022:pdv3 |
-| PD (effect) | Emax | `Q320` · not captured | 0.98 | not captured | not captured | llm (not captured) | López-Serrano_2022:pdv3 |
-| PD (effect) | Emax | `Q320` · not captured | 1.00 | not captured | not captured | llm (not captured) | López-Serrano_2022:pdv3 |
-| PD (effect) | nH | `Q325` · not captured | 1.03 | not captured | not captured | llm (not captured) | López-Serrano_2022:pdv3 |
-| PD (effect) | nH | `Q325` · not captured | 1.02 | not captured | not captured | llm (not captured) | López-Serrano_2022:pdv3 |
+| PD (effect) | pEC50 | `Q321` · not captured | 6.54 ± 0.08 | not captured | not captured | llm (not captured) | López-Serrano_2022:pdv3 |
+| PD (effect) | Hill coefficient | `Q325` · not captured | 1.03 ± 0.12 | not captured | not captured | llm (not captured) | López-Serrano_2022:pdv3 |
+| PD (effect) | Emax | `Q320` · not captured | 0.98 ± 0.01 | not captured | not captured | llm (not captured) | López-Serrano_2022:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>

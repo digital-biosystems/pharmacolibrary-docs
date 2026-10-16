@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;ipragliflozin&quot;,&quot;href&quot;:&quot;drugs/drug_ipragliflozin/&quot;},{&quot;label&quot;:&quot;Demin_2014 \u00b7 PD Inhibition of glucose reabsorption mediated by SGLT2&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ipragliflozin_Saito2019_reference&quot;,&quot;label&quot;:&quot;Saito_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ipragliflozin/Ipragliflozin_Saito2019_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Saito_2019_UGE24h&quot;,&quot;label&quot;:&quot;Saito_2019 \u00b7 \u0394UGE24h&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ipragliflozin/pd_Saito_2019_UGE24h.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Inhibition of glucose reabsorption mediated by SGLT2 — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span>
@@ -13,19 +14,19 @@
 
 ## Record summary
 
-**As extracted:** Ipragliflozin (concentrations from the PK model of Saito_2019) drives Inhibition of glucose reabsorption mediated by SGLT2 (in %): direct sigmoid Emax (Hill) effect.
+**As extracted:** Ipragliflozin (concentrations from the PK model of Saito_2019) drives Inhibition of glucose reabsorption mediated by SGLT2 (in %): direct Emax (saturable) effect.
 
 **Model:** No model was generated from this record.
 
-> Ipragliflozin concentrations inhibit the response of SGLT2-mediated glucose reabsorption inhibition, which reaches almost 100% at the labeled dose. The paper attributes this effect to high concentrations of the inhibitor in the kidney's lumen and low in vitro IC50 values, but it does not specify a numerical IC50 or Imax value for ipragliflozin.
+> The record specifies an Emax model where the in vitro concentration of ipragliflozin directly inhibits the level of SGLT2-mediated glucose reabsorption with an Imax of 1. The provided excerpts describe the model as a systems pharmacology framework linking plasma and renal luminal concentrations to SGLT2 inhibition but do not state specific potency (e.g., IC50) or rate (e.g., kin, kout) values for ipragliflozin.
 >
 > <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Demin_2014`
-- **model family:** `sigmoid_emax`
+- **model family:** `emax`
 - **driver:** `cited_pk`
 - **tier:** descriptive
-- **effect:** inhibition/proportional
+- **effect:** inhibition/unknown
 
 ## Citation
 Demin O et al., Analysis of the efficacy of SGLT2 inhib…, Frontiers in pharmacology (2014)
@@ -34,7 +35,7 @@ Demin O et al., Analysis of the efficacy of SGLT2 inhib…, Frontiers in pharmac
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | Imax | `Q323` · not captured | 1 | 100% | not captured | llm (not captured) | Demin_2014:pdv3 |
+| PD (effect) | Imax | `Q323` · not captured | 1 | not captured | not captured | llm (not captured) | Demin_2014:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>

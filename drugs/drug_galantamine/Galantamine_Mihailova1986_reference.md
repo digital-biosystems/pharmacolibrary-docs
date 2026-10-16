@@ -22,7 +22,7 @@
 
 The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has galantamine hydrobromide, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has galantamine hydrobromide, the second reading galanthamine hydrobromide; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -68,7 +68,7 @@ _No resolved parameters._
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
@@ -82,13 +82,13 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | `gpt-oss-120b` | `parameters[elimination half-life]` | not captured | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[elimination half-life]` | not captured | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[oral bioavailability]` | not captured | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[oral bioavailability]` | not captured | 65 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[oral bioavailability]` | not captured | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[plasma clearance]` | not captured | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[plasma clearance]` | not captured | 2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[plasma clearance]` | not captured | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[volume of distribution]` | not captured | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[volume of distribution]` | not captured | 2 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | galantamine hydrobromide | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | galantamine | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[volume of distribution]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | galantamine hydrobromide | galanthamine hydrobromide | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | galantamine | galanthamine | mismatch |
 
 </details>
 
@@ -115,7 +115,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_galantamine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Mihailova_1986` / `Mihailova_1986::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_galantamine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Mihailova_1986` / `Mihailova_1986::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

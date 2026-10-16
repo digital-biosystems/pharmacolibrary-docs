@@ -19,9 +19,9 @@
 
 **Model:** No model was generated from this record.
 
-> The paper does not provide a full text or specific pharmacodynamic model details, so the mechanism and key potency values are not stated. The record indicates nitrendipine stimulates State 4 respiration, but no quantitative parameters are available.
+> The provided record identifies nitrendipine (in µM) as the driver for State 4 respiration (ng atoms O2 consumed min-1 mg-1 protein) with a stimulatory effect, but the paper excerpts are unavailable. Consequently, the specific mechanism of action and any potency or rate parameters (such as IC50, Emax, kin, or kout) cannot be reported.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Baydoun_1990`
 - **model family:** `unknown`
@@ -38,7 +38,7 @@ _No resolved parameters._
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|

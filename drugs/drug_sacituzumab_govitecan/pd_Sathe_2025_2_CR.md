@@ -13,18 +13,18 @@
 
 ## Record summary
 
-**As extracted:** Sacituzumab govitecan (measured concentrations) drives complete response: categorical (graded) response model.
+**As extracted:** Sacituzumab govitecan (concentrations from the PK model of Sathe_2024::final_model_estimate_rse) drives complete response: categorical (graded) response model.
 
 **Model:** No model was generated from this record.
 
-> The paper describes a categorical exposure-response model where the average serum concentration of sacituzumab govitecan (CAVGSG) is the sole predictor for the binary probability of complete response (CR), with higher concentrations associated with an increased probability of CR. The paper does not specify a mechanistic model (e.g., Emax, IC50, or rate constants) or provide specific potency values, only reporting that the model-predicted proportion of CR at the 10 mg/kg dose was 4.26%.
+> The paper does not specify the mechanistic pathway (e.g., production or elimination kinetics) linking sacituzumab govitecan exposure to complete response. It establishes that the average serum concentration over the treatment duration (CAVGSG) is the primary driver, with higher CAVGSG significantly increasing the probability of complete response at doses of 8 or 10 mg/kg, though no specific potency or rate parameters (such as IC50 or Emax) are provided in the text.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Sathe_2025_2`
 - **model family:** `categorical`
-- **driver:** `conc_no_pk`
-- **tier:** descriptive
+- **driver:** `cited_pk`
+- **tier:** population
 - **effect:** stimulation/unknown
 
 ## Citation

@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D11A&quot;,&quot;href&quot;:&quot;atc/D11A.md&quot;},{&quot;label&quot;:&quot;ruxolitinib&quot;,&quot;href&quot;:&quot;drugs/drug_ruxolitinib/&quot;},{&quot;label&quot;:&quot;Tachet_2026 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ruxolitinib_Polepally2026_reference&quot;,&quot;label&quot;:&quot;Polepally_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ruxolitinib/Ruxolitinib_Polepally2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,22 +16,22 @@
 
 ### Reviewer guidance
 
-**The ruxolitinib enzyme affinity parameter Km is 14 L, causing a dimensional mismatch in the one-compartment model structure.**
+**C5 dimension mismatch on a structural parameter.**
 
-Km is defined as the enzyme substrate affinity measure but is assigned a value of 14 L. This volume unit is dimensionally inconsistent with the expected affinity dimension for this structural parameter. The parameter remained unconverted because its reported unit could not be translated to standard SI units. Extracted — ruxolitinib: kabs 3.24 h−1, V 69 L, Vss 1, Km 14 L.
+A reported unit could not be converted (CL), so that value has no SI equivalent. Extracted — ruxolitinib: kabs 3.24 h−1, V 69 L, CL 14 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ruxolitinib, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Tachet J et al., Ruxolitinib Pharmacokinetics and Exposu…, Clinical pharmacology and t… (2026)
   ·  DOI: [10.1002/cpt.70367](https://doi.org/10.1002/cpt.70367)
 
-<div class="pk-model-meta" hidden drug="ruxolitinib" model-id="Ruxolitinib_Tachet2026_reference" status="rejected" stale="false" population="adults with hematologic malignancies and immune-mediated diseases" measured-compound="ruxolitinib" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="ruxolitinib" model-id="Ruxolitinib_Tachet2026_reference" status="rejected" stale="false" population="adult patients with hematologic malignancies and immune-mediated diseases" measured-compound="ruxolitinib" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 4 extracted.
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -41,10 +40,9 @@ Tachet J et al., Ruxolitinib Pharmacokinetics and Exposu…, Clinical pharmacolo
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| k a (h−1) | `Q49` · kabs | 3.24 | h−1 | 0.0009000000000000001 | [1] / [h] | not captured | space_fold (0.95) | cpt70367-tbl-0002:row2:col1, cpt70367-tbl-0002:row2:col3 | — | not captured |
-| V pop (L) | `Q61` · V | 69 | L | 0.069 | [l] | not captured | llm (0.6) | cpt70367-tbl-0002:row3:col1, cpt70367-tbl-0002:row3:col2, cpt70367-tbl-0002:row3:col3 | — | not captured |
-| β V,BW | `Q65` · Vss | 1 | not captured | not captured | not captured | not captured | llm (0.6) | cpt70367-tbl-0002:row4:col1, cpt70367-tbl-0002:row4:col3 | — | not captured |
-| CLpop (L) | `Q1` · Km | 14 | L | not captured | [l] | not captured | llm (0.6) | cpt70367-tbl-0002:row5:col1, cpt70367-tbl-0002:row5:col2, cpt70367-tbl-0002:row5:col3 | — | not captured |
+| k a (h−1) | `Q49` · kabs | 3.24 | h−1 | 0.0009000000000000001 | [1] / [h] | not captured | space_fold (0.95) | cpt70367-tbl-0002:row2:col1 | — | not captured |
+| V pop (L) | `Q61` · V | 69 | L | 0.069 | [l] | not captured | llm (0.6) | cpt70367-tbl-0002:row3:col1, cpt70367-tbl-0002:row3:col2 | — | not captured |
+| CLpop (L) | `Q22` · CL | 14 | L | not captured | [l] | not captured | llm (0.6) | cpt70367-tbl-0002:row5:col1, cpt70367-tbl-0002:row5:col2 | — | 37 (None% RSE) |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -54,11 +52,19 @@ Tachet J et al., Ruxolitinib Pharmacokinetics and Exposu…, Clinical pharmacolo
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'Parameters' — extend the ontology if this is a real PK parameter (source ['cpt70367-tbl-0002:row0:col3', 'cpt70367-tbl-0002:row0:col4'])
-- unit_dimension_mismatch: 'CLpop (L)' → Q1 (unit '[length] ** 3' vs ontology '[mass] / [length] ** 3') — route to review
-- dropped unlinked row (NIL): 'β CL,CYP3A/2C9 inhibitors' — extend the ontology if this is a real PK parameter (source ['cpt70367-tbl-0002:row7:col1', 'cpt70367-tbl-0002:row7:col2', 'cpt70367-tbl-0002:row7:col3'])
-- implicit units: 'β V,BW' — the LLM proposed '1', whose dimension does not fit Q65; left unset
-- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q61 (V pop (L))
+- table representations disagree for 'k a (h−1)'; source reconciliation required
+- table representations disagree for 'V pop (L)'; source reconciliation required
+- table representations disagree for 'β V,BW'; source reconciliation required
+- table representations disagree for 'CLpop (L)'; source reconciliation required
+- table representations disagree for 'ω CL (CV, %)'; source reconciliation required
+- table representations disagree for 'β CL,CYP3A/2C9 inhibitors'; source reconciliation required
+- table representations disagree for 'σ prop (CV, %)'; source reconciliation required
+- 'β V,BW' is a β covariate effect on V, not Q61 (llm link set aside)
+- dropped unlinked row (NIL): 'β V,BW' — extend the ontology if this is a real PK parameter (source ['cpt70367-tbl-0002:row4:col1'])
+- unit_dimension_mismatch: 'CLpop (L)' → Q22 (unit '[length] ** 3' vs ontology '[length] ** 3 / [time]') — route to review
+- 'β CL,CYP3A/2C9 inhibitors' is a β covariate effect on CL, not Q22 (llm_confirmed link set aside)
+- dropped unlinked row (NIL): 'β CL,CYP3A/2C9 inhibitors' — extend the ontology if this is a real PK parameter (source ['cpt70367-tbl-0002:row7:col1', 'cpt70367-tbl-0002:row7:col2'])
+- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q61 (V pop (L)); Q22 (CLpop (L))
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=ruxolitinib
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
@@ -67,11 +73,8 @@ Tachet J et al., Ruxolitinib Pharmacokinetics and Exposu…, Clinical pharmacolo
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- unparsed cell cpt70367-tbl-0002:row3:col4 = '[63–79]'
-- unparsed cell cpt70367-tbl-0002:row5:col4 = '[12–16]'
-- unparsed cell cpt70367-tbl-0002:row6:col4 = '[23–47]'
-- unparsed cell cpt70367-tbl-0002:row7:col4 = '[−0.87 to −0.04]'
-- unparsed cell cpt70367-tbl-0002:row8:col4 = '[35–52]'
+- table cpt70367-tbl-0002: ragged_grid
+- table cpt70367-tbl-0002: representations disagree; selected evidence retained, not merged
 - LLM selected parameter table(s) 2
 
 ## Validation
@@ -109,15 +112,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q1 | fail | [length] ** 3 | L | not captured | not captured | ['cpt70367-tbl-0002:row5:col1', 'cpt70367-tbl-0002:row5:col2', 'cpt70367-tbl-0002:row5:col3'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['cpt70367-tbl-0002:row2:col1', 'cpt70367-tbl-0002:row2:col3'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['cpt70367-tbl-0002:row3:col1', 'cpt70367-tbl-0002:row3:col2', 'cpt70367-tbl-0002:row3:col3'] |
-| C5_unit_missing_Q65 | fail | [length] ** 3 | not captured | not captured | not captured | ['cpt70367-tbl-0002:row4:col1', 'cpt70367-tbl-0002:row4:col3'] |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | fail | [length] ** 3 | L | not captured | not captured | ['cpt70367-tbl-0002:row5:col1', 'cpt70367-tbl-0002:row5:col2'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['cpt70367-tbl-0002:row2:col1'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['cpt70367-tbl-0002:row3:col1', 'cpt70367-tbl-0002:row3:col2'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 14.0 | not captured | not captured | ['cpt70367-tbl-0002:row5:col1', 'cpt70367-tbl-0002:row5:col2'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q61 | pass | volume within physiological range | 69 L | not captured | not captured | ['cpt70367-tbl-0002:row3:col1', 'cpt70367-tbl-0002:row3:col2', 'cpt70367-tbl-0002:row3:col3'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 69 L | not captured | not captured | ['cpt70367-tbl-0002:row3:col1', 'cpt70367-tbl-0002:row3:col2'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -126,7 +129,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ruxolitinib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Tachet_2026` / `Tachet_2026::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_ruxolitinib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Tachet_2026` / `Tachet_2026::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -142,4 +145,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 07:52 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 23:22 UTC</sub>

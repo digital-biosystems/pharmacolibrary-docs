@@ -18,7 +18,7 @@
 
 **C5 dimension mismatch on a structural parameter.**
 
-A reported unit could not be converted (ktr), so that value has no SI equivalent. Extracted — mosunetuzumab: CLb 1.08 L/day, V1 5.49 L, CL 0.584 L/day, ktr 16.3 day, V2 6.17 L, Q 1.46 L/day.
+A reported unit could not be converted (equation variable and Vss), so that value has no SI equivalent. Extracted — mosunetuzumab: CL 1.08 L/day, V1 5.49 L, V2 6.17 L, Q 1.46 L/day, Vss 16.1 day.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has mosunetuzumab, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -31,7 +31,7 @@ Bender B et al., Population pharmacokinetics and CD20 bi…, Clinical and transl
 <div class="pk-model-meta" hidden drug="mosunetuzumab" model-id="Mosunetuzumab_Bender2024_reference" status="rejected" stale="false" population="adults with relapsed/refractory B-cell non-Hodgkin lymphoma" measured-compound="mosunetuzumab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
-**Parameters:** 6 extracted.
+**Parameters:** 5 extracted, plus 2 covariate effects.
 
 **Parameterization:** mechanistic.
 
@@ -40,12 +40,14 @@ Bender B et al., Population pharmacokinetics and CD20 bi…, Clinical and transl
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CLbase (L/day) | `Q23` · CLb | 1.08 | L/day | 1.25e-08 | [l] / [d] | 5.6 | llm (0.6) | cts13825-tbl-0002:row1:col1, cts13825-tbl-0002:row1:col2 | — | not captured |
-| V1 (L) | `Q63` · V1 | 5.49 | L | 0.00549 | [l] | 2.5 | exact (1.0) | cts13825-tbl-0002:row2:col1, cts13825-tbl-0002:row2:col2 | — | 0.0981 (5.8% RSE) |
-| CLss (L/day) | `Q22` · CL | 0.584 | L/day | 6.759259259259259e-09 | [l] / [d] | 2.0 | llm (0.6) | cts13825-tbl-0002:row3:col1, cts13825-tbl-0002:row3:col2 | — | not captured |
-| HLtrans (day) | `Q306` · ktr | 16.3 | day | not captured | [d] | 7.1 | llm (0.6) | cts13825-tbl-0002:row4:col1, cts13825-tbl-0002:row4:col2 | — | not captured |
-| V2 (L) | `Q64` · V2 | 6.17 | L | 0.00617 | [l] | 3.6 | exact (1.0) | cts13825-tbl-0002:row5:col1, cts13825-tbl-0002:row5:col2 | — | 0.0621 (16.7% RSE) |
-| Q (L/day) | `Q30` · Q | 1.46 | L/day | 1.6898148148148148e-08 | [l] / [d] | 3.7 | exact (1.0) | cts13825-tbl-0002:row6:col1, cts13825-tbl-0002:row6:col2 | — | not captured |
+| CLbase (L/day) | `Q22` · CL | 1.08 | L/day | 1.25e-08 | [l] / [d] | 5.6 | llm (0.6) | cts13825-tbl-0002:row1:col1 | — | not captured |
+| V1 (L) | `Q63` · V1 | 5.49 | L | 0.00549 | [l] | 2.5 | exact (1.0) | cts13825-tbl-0002:row2:col1 | — | 0.0981 (5.8% RSE) |
+| HLtrans (day) | `Q900` · equation variable | 16.3 | day | not captured | [d] | 7.1 | llm (0.6) | cts13825-tbl-0002:row4:col1 | — | not captured |
+| V2 (L) | `Q64` · V2 | 6.17 | L | 0.00617 | [l] | 3.6 | exact (1.0) | cts13825-tbl-0002:row5:col1 | — | 0.0621 (16.7% RSE) |
+| Q (L/day) | `Q30` · Q | 1.46 | L/day | 1.6898148148148148e-08 | [l] / [d] | 3.7 | exact (1.0) | cts13825-tbl-0002:row6:col1 | — | not captured |
+| HLss (day) b | `Q65` · Vss | 16.1 | day | not captured | [d] | not captured | llm (0.6) | cts13825-tbl-0002:row7:col1 | — | not captured |
+| theta_q61_body_weight | `Q900` · theta_q61_body_weight | 0.433 | not captured | not captured | not captured | 13.4 | not captured (not captured) | cts13825-tbl-0002:row9:col1 | — | not captured |
+| theta_q319_albumin | `Q900` · theta_q319_albumin | -1.51 | not captured | not captured | not captured | 19.1 | not captured (not captured) | cts13825-tbl-0002:row11:col1 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -55,46 +57,23 @@ Bender B et al., Population pharmacokinetics and CD20 bi…, Clinical and transl
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_mismatch: 'HLtrans (day)' → Q306 (unit '[time]' vs ontology '1 / [time]') — route to review
-- dropped unlinked row (NIL): 'HLss (day) b' — extend the ontology if this is a real PK parameter (source ['cts13825-tbl-0002:row7:col1'])
-- dropped unlinked row (NIL): 'Body weight on CLss (WT_CLss)' — extend the ontology if this is a real PK parameter (source ['cts13825-tbl-0002:row8:col1', 'cts13825-tbl-0002:row8:col2'])
-- dropped unlinked row (NIL): 'Body weight on V1 (WT_V1)' — extend the ontology if this is a real PK parameter (source ['cts13825-tbl-0002:row9:col1', 'cts13825-tbl-0002:row9:col2'])
-- dropped unlinked row (NIL): 'Body weight on V2 (WT_V2)' — extend the ontology if this is a real PK parameter (source ['cts13825-tbl-0002:row10:col1', 'cts13825-tbl-0002:row10:col2'])
-- dropped unlinked row (NIL): 'Albumin on CLbase (ALB_CLbase)' — extend the ontology if this is a real PK parameter (source ['cts13825-tbl-0002:row11:col1', 'cts13825-tbl-0002:row11:col2'])
-- dropped unlinked row (NIL): 'anti‐CD20 drug on CLbase (aCD20_CLbase)' — extend the ontology if this is a real PK parameter (source ['cts13825-tbl-0002:row12:col1', 'cts13825-tbl-0002:row12:col2'])
-- dropped unlinked row (NIL): 'Sex (female) on CLss (Sex_CLss)' — extend the ontology if this is a real PK parameter (source ['cts13825-tbl-0002:row13:col1', 'cts13825-tbl-0002:row13:col2'])
-- dropped unlinked row (NIL): 'Albumin on V1 (ALB_V1)' — extend the ontology if this is a real PK parameter (source ['cts13825-tbl-0002:row14:col1', 'cts13825-tbl-0002:row14:col2'])
-- dropped unlinked row (NIL): 'Sex (female) on V1 (Sex_V1)' — extend the ontology if this is a real PK parameter (source ['cts13825-tbl-0002:row15:col1', 'cts13825-tbl-0002:row15:col2'])
-- dropped unlinked row (NIL): 'Tumor SPD on CLss (SPD_CLss)' — extend the ontology if this is a real PK parameter (source ['cts13825-tbl-0002:row16:col1', 'cts13825-tbl-0002:row16:col2'])
+- dropped duplicate Q22 ('CLss (L/day)', value '0.584') — already have one for this compound
+- unit_dimension_mismatch: 'HLss (day) b' → Q65 (unit '[time]' vs ontology '[length] ** 3') — route to review
+- dropped unlinked row (NIL): 'Body weight on CLss (WT_CLss)' — extend the ontology if this is a real PK parameter (source ['cts13825-tbl-0002:row8:col1'])
+- dropped unlinked row (NIL): 'Body weight on V2 (WT_V2)' — extend the ontology if this is a real PK parameter (source ['cts13825-tbl-0002:row10:col1'])
+- dropped unlinked row (NIL): 'anti‐CD20 drug on CLbase (aCD20_CLbase)' — extend the ontology if this is a real PK parameter (source ['cts13825-tbl-0002:row12:col1'])
+- dropped unlinked row (NIL): 'Sex (female) on CLss (Sex_CLss)' — extend the ontology if this is a real PK parameter (source ['cts13825-tbl-0002:row13:col1'])
+- dropped unlinked row (NIL): 'Albumin on V1 (ALB_V1)' — extend the ontology if this is a real PK parameter (source ['cts13825-tbl-0002:row14:col1'])
+- dropped unlinked row (NIL): 'Sex (female) on V1 (Sex_V1)' — extend the ontology if this is a real PK parameter (source ['cts13825-tbl-0002:row15:col1'])
+- dropped unlinked row (NIL): 'Tumor SPD on CLss (SPD_CLss)' — extend the ontology if this is a real PK parameter (source ['cts13825-tbl-0002:row16:col1'])
+- covariate effect for Q61 has no base parameter row (kept as unattached equation-variable)
+- covariate effect for Q319 has no base parameter row (kept as unattached equation-variable)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=mosunetuzumab
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
 - molar mass: none found for 'mosunetuzumab' — its concentrations stay mass-only
 
 **Extraction notes:**
-- unparsed cell cts13825-tbl-0002:row1:col3 = '[0.962; 1.20]'
-- unparsed cell cts13825-tbl-0002:row2:col3 = '[5.221; 5.76]'
-- unparsed cell cts13825-tbl-0002:row3:col3 = '[0.561; 0.607]'
-- unparsed cell cts13825-tbl-0002:row4:col3 = '[14.026; 18.6]'
-- unparsed cell cts13825-tbl-0002:row5:col3 = '[5.729; 6.61]'
-- unparsed cell cts13825-tbl-0002:row6:col3 = '[1.354; 1.57]'
-- unparsed cell cts13825-tbl-0002:row8:col3 = '[0.436; 0.662]'
-- unparsed cell cts13825-tbl-0002:row9:col3 = '[0.319; 0.547]'
-- unparsed cell cts13825-tbl-0002:row10:col3 = '[0.508; 0.966]'
-- unparsed cell cts13825-tbl-0002:row11:col3 = '[−2.074; −0.946]'
-- unparsed cell cts13825-tbl-0002:row12:col3 = '[−0.800; −0.346]'
-- unparsed cell cts13825-tbl-0002:row13:col3 = '[−0.175; −0.081]'
-- unparsed cell cts13825-tbl-0002:row14:col3 = '[−0.701; −0.261]'
-- unparsed cell cts13825-tbl-0002:row15:col3 = '[−0.173; −0.079]'
-- unparsed cell cts13825-tbl-0002:row16:col3 = '[0.045; 0.142]'
-- unparsed cell cts13825-tbl-0002:row17:col3 = '[0.356; 0.496]'
-- unparsed cell cts13825-tbl-0002:row18:col3 = '[0.169; 0.191]'
-- unparsed cell cts13825-tbl-0002:row19:col3 = '[0.0722; 0.124]'
-- unparsed cell cts13825-tbl-0002:row20:col3 = '[0.0266; 0.0420]'
-- unparsed cell cts13825-tbl-0002:row21:col3 = '[−0.133; −0.0459]'
-- unparsed cell cts13825-tbl-0002:row22:col3 = '[0.510; 0.968]'
-- unparsed cell cts13825-tbl-0002:row23:col3 = '[0.0417; 0.0825]'
-- unparsed cell cts13825-tbl-0002:row24:col3 = '[0.258; 0.260]'
 - LLM selected parameter table(s) 2
 
 ## Validation
@@ -144,21 +123,19 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['cts13825-tbl-0002:row3:col1', 'cts13825-tbl-0002:row3:col2'] |
-| C5_dimension_Q23 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['cts13825-tbl-0002:row1:col1', 'cts13825-tbl-0002:row1:col2'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['cts13825-tbl-0002:row6:col1', 'cts13825-tbl-0002:row6:col2'] |
-| C5_dimension_Q306 | fail | [time] | day | not captured | not captured | ['cts13825-tbl-0002:row4:col1', 'cts13825-tbl-0002:row4:col2'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['cts13825-tbl-0002:row2:col1', 'cts13825-tbl-0002:row2:col2'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['cts13825-tbl-0002:row5:col1', 'cts13825-tbl-0002:row5:col2'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.584 | not captured | not captured | ['cts13825-tbl-0002:row3:col1', 'cts13825-tbl-0002:row3:col2'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['cts13825-tbl-0002:row1:col1'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['cts13825-tbl-0002:row6:col1'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['cts13825-tbl-0002:row2:col1'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['cts13825-tbl-0002:row5:col1'] |
+| C5_dimension_Q65 | fail | [time] | day | not captured | not captured | ['cts13825-tbl-0002:row7:col1'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 1.08 | not captured | not captured | ['cts13825-tbl-0002:row1:col1'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.0243 L/h | not captured | not captured | ['cts13825-tbl-0002:row3:col1', 'cts13825-tbl-0002:row3:col2'] |
-| C9_phys_window_Q23 | pass | clearance within physiological range | 0.045 L/h | not captured | not captured | ['cts13825-tbl-0002:row1:col1', 'cts13825-tbl-0002:row1:col2'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 5.49 L | not captured | not captured | ['cts13825-tbl-0002:row2:col1', 'cts13825-tbl-0002:row2:col2'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 6.17 L | not captured | not captured | ['cts13825-tbl-0002:row5:col1', 'cts13825-tbl-0002:row5:col2'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.045 L/h | not captured | not captured | ['cts13825-tbl-0002:row1:col1'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 5.49 L | not captured | not captured | ['cts13825-tbl-0002:row2:col1'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 6.17 L | not captured | not captured | ['cts13825-tbl-0002:row5:col1'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -167,7 +144,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_mosunetuzumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Bender_2024` / `Bender_2024::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_mosunetuzumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Bender_2024` / `Bender_2024::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -183,4 +160,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 17:11 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 03:42 UTC</sub>

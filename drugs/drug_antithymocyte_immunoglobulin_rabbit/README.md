@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;antithymocyte immunoglobulin (rabbit)&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;AntithymocyteImmunoglobulinRabbit_Admiraal2015v2_reference&quot;,&quot;label&quot;:&quot;Admiraal_2015_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_antithymocyte_immunoglobulin_rabbit/AntithymocyteImmunoglobulinRabbit_Admiraal2015v2_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # antithymocyte immunoglobulin (rabbit)
 
@@ -18,13 +17,22 @@ Rabbit anti-thymocyte globulin is an immunosuppressant antibody medicine used to
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 23:39 | 0:45 | 0/0/1 | 0/0/0 | 0/0/0 | 43,472/2,891 | einfracz / qwen3.8-27b | 1 | 1/0 | 0/1 | 0 |
+| 2026-10-15 00:32 | 0:58 | 0/0/1 | 0/0/0 | 0/0/0 | 42,575/2,048 | einfracz / qwen3.8-27b | 1 | 1/0 | 0/1 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: T1_tmax</sub><br><sub>route_to: `scholar`</sub> | [Admiraal_2015_2_reference](drugs/drug_antithymocyte_immunoglobulin_rabbit/AntithymocyteImmunoglobulinRabbit_Admiraal2015v2_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Admiraal R et al., Population pharmacokinetic modeling of…, Clinical pharmacokinetics (2015) | [10.1007/s40262-014-0214-6](https://doi.org/10.1007/s40262-014-0214-6) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22, Q61 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Admiraal_2015_2_reference](drugs/drug_antithymocyte_immunoglobulin_rabbit/AntithymocyteImmunoglobulinRabbit_Admiraal2015v2_reference.md) | — | 1-compartment (no model) | 2 | Admiraal R et al., Population pharmacokinetic modeling of…, Clinical pharmacokinetics (2015) | [10.1007/s40262-014-0214-6](https://doi.org/10.1007/s40262-014-0214-6) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=antithymocyte_immunoglobulin_rabbit).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: CD1A (inhibitor), CD4 (inducer), CD86 (binder), FCGR2B (inducer), ITGAL (inducer), ITGAV (inducer), ITGB1 (inducer), ITGB3 (inducer), MR1 (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -43,9 +51,9 @@ Rabbit anti-thymocyte globulin is an immunosuppressant antibody medicine used to
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Admiraal_2015 | irrelevant | 3 | 2 | The study uses a PK model to calculate exposure (AUC) for pharmacodynamic/outcome analysis (CD4+ reconstitution), but it does not report the underlying PK parameter values (CL, V, ka, etc.) for the drug itself, only the derived exposure metrics and their statistical association with clinical outcomes. |
-| popPK | Admiraal_2017 | irrelevant | 4 | 0 | This is a pharmacodynamic/pharmacokinetic exposure-outcome analysis that references a population PK model but does not report the specific quantitative PK parameters (CL, V, Q) for antithymocyte immunoglobulin rabbit within the provided text. |
-| popPK | Breitinger_2009 | irrelevant | 0 | 0 | The paper investigates the immunological composition (antibody specificity against GPI-AP) of ATG preparations using in vitro binding assays, reporting no pharmacokinetic disposition parameters. |
+| popPK | Admiraal_2015 | irrelevant | 2 | 1 | The study uses a pre-existing population PK model to calculate exposure metrics (AUC) for clinical outcome analysis, but does not report the new PK parameter estimates (CL, V, etc.) or the model structure itself in the provided evidence. |
+| popPK | Admiraal_2017 | irrelevant | 4 | 2 | The study uses a population PK model to calculate exposure metrics (AUC, Cmax) for survival analysis, but the specific parameter values (CL, V, etc.) of the model are not reported in the provided text, only the derived exposure ranges. |
+| popPK | Breitinger_2009 | irrelevant | 0 | 0 | The study investigates the immunological content (antibodies against GPI-APs) of ATG preparations and their potential mechanism of action, but does not report any quantitative pharmacokinetic parameters (CL, V, etc.) for the drug. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-06 23:39 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-15 00:31 UTC</sub>

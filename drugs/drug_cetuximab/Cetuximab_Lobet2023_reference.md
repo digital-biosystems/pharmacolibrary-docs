@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;cetuximab&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/&quot;},{&quot;label&quot;:&quot;Lobet_2023 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cetuximab_Cognetti2026_reference&quot;,&quot;label&quot;:&quot;Cognetti_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/Cetuximab_Cognetti2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cetuximab_Pointreau2016_reference&quot;,&quot;label&quot;:&quot;Pointreau_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/Cetuximab_Pointreau2016_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cetuximab_Yang2026_reference&quot;,&quot;label&quot;:&quot;Yang_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/Cetuximab_Yang2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Lin_2011_Ct_2&quot;,&quot;label&quot;:&quot;Lin_2011 \u00b7 Ct&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/pd_Lin_2011_Ct_2.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -18,7 +19,7 @@
 
 **This paper's disposition core is incomplete.**
 
-A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Cognetti_2026) cannot stand in for this paper's evidence. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — cetuximab: kint 0.95 day-1, CL 0.38 L/h, V 6.31 L.
+A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Cognetti_2026) cannot stand in for this paper's evidence. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — cetuximab: kint 0.95 day-1, CL 0.38 L/h, kel 0.049 day-1, V 6.31 L.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of cl0: this record has 0.38, the second reading none; it also differs on 6 more fields. That field does not shape the model.
 
@@ -28,10 +29,10 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 Lobet S et al., Relationship Between Cetuximab Target-M…, Clinical pharmacokinetics (2023)
   ·  DOI: [10.1007/s40262-023-01270-2](https://doi.org/10.1007/s40262-023-01270-2)
 
-<div class="pk-model-meta" hidden drug="cetuximab" model-id="Cetuximab_Lobet2023_reference" status="needs_review" stale="false" population="patients with metastatic colorectal cancer" measured-compound="cetuximab" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="cetuximab" model-id="Cetuximab_Lobet2023_reference" status="needs_review" stale="false" population="adults with metastatic colorectal cancer" measured-compound="cetuximab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 3 extracted.
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -42,8 +43,8 @@ Lobet S et al., Relationship Between Cetuximab Target-M…, Clinical pharmacokin
 |---|---|---|---|---|---|---|---|---|---|---|
 | kint | `Q334` · kint | 0.95 | day-1 | 1.099537037037037e-05 | [1] / [d] | not captured | exact (1.0) | Lobet_2023:abstract | — | not captured |
 | CL0 | `Q22` · CL | 0.38 | L/h | 1.0555555555555557e-07 | L/h | not captured | llm (0.6) | Lobet_2023:abstract | — | not captured |
-| kdes | `Q900` · equation variable | 0.049 | day-1 | not captured | [1] / [d] | not captured | llm (0.6) | Lobet_2023:abstract | — | not captured |
-| Vz | `Q61` · V | 6.313 | L | 0.006313 | L | not captured | review_gapfill (0.7) | Cognetti_2026:review | — | not captured |
+| kdes | `Q47` · kel | 0.049 | day-1 | 5.671296296296296e-07 | [1] / [d] | not captured | llm (0.6) | Lobet_2023:abstract | — | not captured |
+| Vz, L | `Q61` · V | 6.313 | L | 0.006313 | L | not captured | review_gapfill (0.7) | Cognetti_2026:review | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -56,13 +57,13 @@ Lobet S et al., Relationship Between Cetuximab Target-M…, Clinical pharmacokin
 - dropped PD-category row 'R0' → Q336 (R0, category G13) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Lobet_2023:abstract'])
 - unit_dimension_unknown: 'L/day-1' (CL)
 - dropped duplicate Q22 ('CL1', value 0.058) — already have one for this compound
-- implicit units: 'CL0' → L/h (from the popPK convention: 'No unit is stated in the provided paper text or table notes. CL is clearance, conventionally expressed in L/h; 0.38 is c')
+- implicit units: 'CL0' → L/h (from the popPK convention: 'Clearance (CL) is conventionally expressed in volume per time (e.g., L/h or mL/min) in population PK. Given the value 0.')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=cetuximab
 - molar mass: none found for 'cetuximab' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - gap-filled Q61 (V) from Cognetti_2026's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Lobet_2023_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
@@ -100,11 +101,12 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Lobet_2023:abstract'] |
 | C5_dimension_Q334 | pass | 1 / [time] | not captured | not captured | not captured | ['Lobet_2023:abstract'] |
+| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['Lobet_2023:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Cognetti_2026:review'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.38 | not captured | not captured | ['Lobet_2023:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
@@ -118,7 +120,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_cetuximab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Lobet_2023` / `Lobet_2023::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_cetuximab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Lobet_2023` / `Lobet_2023::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -144,4 +146,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 11:26 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 18:47 UTC</sub>

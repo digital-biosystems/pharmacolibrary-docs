@@ -17,9 +17,9 @@
 
 **Model:** No model was generated from this record.
 
-> Norepinephrine concentrations in an effect compartment drive the bispectral index via a direct sigmoidal Emax mechanism, where the drug's action is mediated by the decline in norepinephrine levels. The model parameters are E0 = 64.2%, Emax = 33.7%, EC50 = 3.9 nmol/L, γ = 3.1, and ke0 = 15.6 h−1.
+> The bispectral index (BI) is modeled using a sigmoidal Emax function driven by norepinephrine (NE) concentrations in a biophase (effect) compartment, where the effect is additive to a baseline (E0 = 64.2%) with a maximum effect (Emax) of 33.7% and an EC50 of 3.9 nmol/L. The paper specifies a hill coefficient (γ) of 3.1 for the BI response, though the record lists an effect-link rate constant (ke0) of 15.6 h−1 that is not explicitly mentioned in the provided excerpts.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Yoo_2015`
 - **model family:** `sigmoid_emax`
@@ -47,7 +47,7 @@ Yoo H et al., Mechanism-based population pharmacokine…, European journal of cl
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|

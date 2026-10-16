@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;nadroparin&quot;,&quot;href&quot;:&quot;drugs/drug_nadroparin/&quot;},{&quot;label&quot;:&quot;Chen_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nadroparin_Piwowarczyk2023_reference&quot;,&quot;label&quot;:&quot;Piwowarczyk_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nadroparin/Nadroparin_Piwowarczyk2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nadroparin_Piwowarczyk2023_reference&quot;,&quot;label&quot;:&quot;Piwowarczyk_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nadroparin/Nadroparin_Piwowarczyk2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # nadroparin — `Nadroparin_Chen2024_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.857), gpt-oss:120b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.857), gpt-oss:120b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -17,15 +17,13 @@
 
 ### Reviewer guidance
 
-**No value for nadroparin's clearance, volume of distribution and absorption lag time.**
+**No value for nadroparin's clearance, volume of distribution and absorption lag time; t6_deviations.**
 
-The model was built, but nadroparin's clearance, volume of distribution and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — nadroparin: CL/F 0.211 L/h, V/F 1.55 L, kabs 0.495 h-1.
+The model was built, but nadroparin's clearance, volume of distribution and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — nadroparin: CL/F 9.4 L/h, V/F 13.7 L, kabs 16.4 h-1.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has anti-Xa, the second reading unknown. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has anti-Xa, the second reading nadroparin. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
-
-> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-28 14:39:06.167938+00:00) predates the upstream re-run (2026-10-07 18:12:31.161136+00:00). Current validate status: `extracted`.
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 > **Dose compound ≠ measured compound:** dosed `nadroparin`, measured `anti-Xa`.
 
@@ -33,7 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which m
 Chen Y et al., Is the current therapeutic dosage of na…, Frontiers in pharmacology (2024)
   ·  DOI: [10.3389/fphar.2024.1331673](https://doi.org/10.3389/fphar.2024.1331673)
 
-<div class="pk-model-meta" hidden drug="nadroparin" model-id="Nadroparin_Chen2024_reference" status="extracted" stale="true" population="neonates and infants less than 8 months" measured-compound="anti-Xa" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="nadroparin" model-id="Nadroparin_Chen2024_reference" status="model_quarantined" stale="false" population="neonates and infants under 8 months" measured-compound="anti-Xa" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.
@@ -41,11 +39,13 @@ Chen Y et al., Is the current therapeutic dosage of na…, Frontiers in pharmaco
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F (L/h) | `Q27` · CL/F | 0.211 | L/h | 5.8611111111111115e-08 | [l] / [h] | not captured | exact (1.0) | T2:row3:col1, T2:row3:col2, T2:row3:col3, T2:row3:col4 | — | 26.5 (None% RSE) |
-| Vd/F (L) | `Q76` · V/F | 1.55 | L | 0.0015500000000000002 | [l] | not captured | exact (1.0) | T2:row4:col1, T2:row4:col2, T2:row4:col3, T2:row4:col4 | — | not captured |
-| ka (h-1) | `Q49` · kabs | 0.495 | h-1 | 0.0001375 | [1] / [h] | not captured | exact (1.0) | T2:row5:col1, T2:row5:col2, T2:row5:col3, T2:row5:col4 | — | not captured |
+| CL/F (L/h) | `Q27` · CL/F | 9.4 | L/h | 2.6111111111111113e-06 | [l] / [h] | 0.211 | exact (1.0) | T2:row3:col2 | — | 29.6 (26.5% RSE) |
+| Vd/F (L) | `Q76` · V/F | 13.7 | L | 0.0137 | [l] | 1.55 | exact (1.0) | T2:row4:col2 | — | not captured |
+| ka (h-1) | `Q49` · kabs | 16.4 | h-1 | 0.004555555555555555 | [1] / [h] | 0.495 | exact (1.0) | T2:row5:col2 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -57,7 +57,7 @@ Chen Y et al., Is the current therapeutic dosage of na…, Frontiers in pharmaco
 **Interpretation flags:**
 - table section iiv: 'CL/F' routed out of structural estimates ('Inter-individual variability (%CV)')
 - table section residual_error: 'Proportional residual error' routed out of structural estimates ('Residual variability (%CV)')
-- dropped duplicate Q27 ('CL/F_CLCR', value '0.238') — already have one for this compound
+- dropped duplicate Q27 ('CL/F_CLCR', value '29.2') — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=anti-Xa
 - molar mass: no plausible PubChem entry for 'anti-Xa' ('anti-factor Xa activity') — left in mass units
 - molar mass: none found for 'nadroparin' — its concentrations stay mass-only
@@ -65,6 +65,7 @@ Chen Y et al., Is the current therapeutic dosage of na…, Frontiers in pharmaco
 - review gap-fill skipped: this record measures 'anti-Xa', not nadroparin — the review values are the parent's
 
 **Extraction notes:**
+- table T2: ragged_grid
 - LLM selected parameter table(s) 2
 
 ## Validation
@@ -81,7 +82,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `screen.primary_analyte` | anti-Xa | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | anti-Xa | nadroparin | mismatch |
 | `gpt-oss:120b` | `parameters[cl/f].value` | 0.211 | 0.063 | mismatch |
 | `gpt-oss:120b` | `parameters[ka].value` | 0.495 | 0.073 | mismatch |
 | `gpt-oss:120b` | `parameters[vd/f].value` | 1.55 | 0.02 | mismatch |
@@ -103,13 +104,13 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T2:row3:col1', 'T2:row3:col2', 'T2:row3:col3', 'T2:row3:col4'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['T2:row5:col1', 'T2:row5:col2', 'T2:row5:col3', 'T2:row5:col4'] |
-| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['T2:row4:col1', 'T2:row4:col2', 'T2:row4:col3', 'T2:row4:col4'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T2:row3:col2'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['T2:row5:col2'] |
+| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['T2:row4:col2'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 0.211 L/h | not captured | not captured | ['T2:row3:col1', 'T2:row3:col2', 'T2:row3:col3', 'T2:row3:col4'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 1.55 L | not captured | not captured | ['T2:row4:col1', 'T2:row4:col2', 'T2:row4:col3', 'T2:row4:col4'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 9.4 L/h | not captured | not captured | ['T2:row3:col2'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 13.7 L | not captured | not captured | ['T2:row4:col2'] |
 
 **Reviewer per-scenario checks:**
 
@@ -120,7 +121,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -129,9 +130,9 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_nadroparin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Chen_2024` / `Chen_2024::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_nadroparin/models/modelica/_needs_review/Nadroparin_Chen2024_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_nadroparin/models/modelica/_needs_review/Nadroparin_Chen2024_reference.deviation.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_nadroparin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Chen_2024` / `Chen_2024::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_nadroparin/models/modelica/_needs_review/Nadroparin_Chen2024_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_nadroparin/models/modelica/_needs_review/Nadroparin_Chen2024_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -157,4 +158,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 18:12 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 21:15 UTC</sub>

@@ -140,10 +140,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_celecoxib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Vaddady_2011` / `Vaddady_2011::shock_0_56`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_celecoxib/models/modelica/Celecoxib_Vaddady2011_shock_0_56.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_celecoxib/models/modelica/Celecoxib_Vaddady2011_shock_0_56.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_celecoxib/models/modelica/Celecoxib_Vaddady2011_shock_0_56.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_celecoxib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Vaddady_2011` / `Vaddady_2011::shock_0_56`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_celecoxib/models/modelica/Celecoxib_Vaddady2011_shock_0_56.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_celecoxib/models/modelica/Celecoxib_Vaddady2011_shock_0_56.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_celecoxib/models/modelica/Celecoxib_Vaddady2011_shock_0_56.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -161,7 +161,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_celecoxib/Celecoxib_Vaddady2011_shock_0_56/Celecoxib_Vaddady2011_shock_0_56.svg" alt="Celecoxib_Vaddady2011_shock_0_56 diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_celecoxib/Celecoxib_Vaddady2011_shock_0_56/Celecoxib_Vaddady2011_shock_0_56.svg" alt="Celecoxib_Vaddady2011_shock_0_56 diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

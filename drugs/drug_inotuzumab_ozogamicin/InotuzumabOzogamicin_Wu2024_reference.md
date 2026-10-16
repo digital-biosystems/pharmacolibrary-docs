@@ -16,9 +16,9 @@
 
 ### Reviewer guidance
 
-**Only volume was extracted — no clearance.**
+**Kel has no unit; the model does not reproduce the paper's terminal half-life (model/paper ratio 0.219).**
 
-A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. A reported unit could not be converted (AUC), so that value has no SI equivalent. Extracted — inotuzumab ozogamicin: AUC 32.2 ng*h/mL, V1 6.49 L, Q 0.569 L/h, V2 4.74 L.
+Without a unit the value cannot be converted, so the model cannot use it. Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — inotuzumab ozogamicin: CL 0.13 L/h, V1 6.49 L, Q 0.569 L/h, kel -0.924, V2 4.74 L.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of cumulative auc estimation: this record has none, the second reading 0.235; it also differs on 1 more field. That field does not shape the model.
 
@@ -28,10 +28,10 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 Wu JH et al., Population Pharmacokinetics of Inotuzum…, Clinical pharmacokinetics (2024)
   ·  DOI: [10.1007/s40262-024-01386-z](https://doi.org/10.1007/s40262-024-01386-z)
 
-<div class="pk-model-meta" hidden drug="inotuzumab ozogamicin" model-id="InotuzumabOzogamicin_Wu2024_reference" status="needs_review" stale="false" population="adult B-cell NHL and BCP-ALL patients and pediatric BCP-ALL patients" measured-compound="inotuzumab ozogamicin" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="inotuzumab ozogamicin" model-id="InotuzumabOzogamicin_Wu2024_reference" status="needs_review" stale="false" population="pediatric patients with relapsed/refractory B-cell precursor acute lymphoblastic leukemia" measured-compound="inotuzumab_ozogamicin" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
-**Parameters:** 4 extracted.
+**Parameters:** 5 extracted, plus 1 covariate effect.
 
 **Parameterization:** mechanistic.
 
@@ -40,10 +40,12 @@ Wu JH et al., Population Pharmacokinetics of Inotuzum…, Clinical pharmacokinet
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Cumulative AUC simulation (median [IQR], *103 ng*h/mL) | `Q88` · AUC | +32.2 | ng*h/mL | not captured | ng*h/mL | not captured | llm_confirmed (0.6) | Wu_2024_table_4:row0:col4, Wu_2024_table_4:row1:col4, Wu_2024_table_4:row2:col4 | — | not captured |
-| V1 | `Q63` · V1 | 6.49 | L | 0.00649 | L | not captured | exact (1.0) | Wu_2024:other_prose | — | not captured |
-| CL2 | `Q30` · Q | 0.569 | L/h | 1.5805555555555554e-07 | L/h | not captured | special_case (0.95) | Wu_2024:other_prose | — | not captured |
-| V2 | `Q64` · V2 | 4.74 | L | 0.00474 | L | not captured | exact (1.0) | Wu_2024:other_prose | — | not captured |
+| CL1, L/h | `Q22` · CL | 0.130 | L/h | 3.611111111111111e-08 | [l] / [h] | not captured | llm (0.6) | Wu_2024_table_p8_1:row0:col2 | — | not captured |
+| V1, L | `Q63` · V1 | 6.49 | L | 0.00649 | [l] | not captured | exact (1.0) | Wu_2024_table_p8_1:row4:col2 | — | 40.1 (None% RSE) |
+| CL2, L/h | `Q30` · Q | 0.569 | L/h | 1.5805555555555554e-07 | [l] / [h] | not captured | special_case (0.95) | Wu_2024_table_p8_1:row6:col2 | — | not captured |
+| ALL effect on kdes | `Q47` · kel | -0.924 | not captured | not captured | not captured | not captured | llm (0.6) | Wu_2024_table_p8_1:row10:col2 | — | not captured |
+| age_effect_on_kdes | `Q900` · age_effect_on_kdes | -0.296 | not captured | not captured | not captured | not captured | not captured (not captured) | Wu_2024_table_p8_1:row12:col2 | — | not captured |
+| V2, L | `Q64` · V2 | 4.74 | L | 0.00474 | [l] | not captured | exact (1.0) | Wu_2024_table_p8_1:row14:col2 | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -53,30 +55,25 @@ Wu JH et al., Population Pharmacokinetics of Inotuzum…, Clinical pharmacokinet
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_unknown: 'median [IQR], *103 ng*h/mL' (AUC)
-- salvaged Q63 ('V1'=6.49) from results prose — parameter table was unreadable
-- salvaged Q30 ('CL2'=0.569) from results prose — parameter table was unreadable
-- salvaged Q64 ('V2'=4.74) from results prose — parameter table was unreadable
-- implicit units: 'Cumulative AUC simulation (median [IQR], *103 ng*h/mL)' → ng*h/mL (from the paper text: 'The paper reports cumulative AUC as “26.1 vs 10.1 ng*h/mL”; the parameter is also labeled “(*103 ng*h/mL),” indicating a')
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=inotuzumab ozogamicin
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at route_to_review — not promoted
+- dropped unlinked row (NIL): 'ALL effecta on CL1' — extend the ontology if this is a real PK parameter (source ['Wu_2024_table_p8_1:row1:col2'])
+- dropped duplicate Q22 ('LBM effect on CL1', value '1.05') — already have one for this compound
+- dropped duplicate Q22 ('Concomitant rituximab treatment effectb on CL1', value '-0.132') — already have one for this compound
+- dropped duplicate Q63 ('LBM effect on V1', value '0.977') — already have one for this compound
+- dropped unlinked row (NIL): 'ALL effect on CL2' — extend the ontology if this is a real PK parameter (source ['Wu_2024_table_p8_1:row7:col2'])
+- dropped duplicate Q22 ('LBM effect on CL2', value '0.687') — already have one for this compound
+- dropped unlinked row (NIL): 'kdes, L/h' — extend the ontology if this is a real PK parameter (source ['Wu_2024_table_p8_1:row9:col2'])
+- dropped duplicate Q47 ('BLSTABL effect on kdes', value '-0.0484') — already have one for this compound
+- covariate level 'Age effect on kdes' → Q900:age_effect_on_kdes = -0.296 (linear_fractional on Q22)
+- dropped duplicate Q30 ('Q, L/h', value '0.0437') — already have one for this compound
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=inotuzumab_ozogamicin
 - molar mass: none found for 'inotuzumab_ozogamicin' — its concentrations stay mass-only
-- molar mass: none found for 'inotuzumab ozogamicin' — its concentrations stay mass-only
 
 **Extraction notes:**
-- transposed table Wu_2024_table_4: parameters were across the columns, populations/subgroups down the first column — transposed for parsing
-- unparsed cell Wu_2024_table_4:row0:col1 = 'End of cycle 1'
-- unparsed cell Wu_2024_table_4:row0:col2 = '19.7 [12.1–30.3]'
-- unparsed cell Wu_2024_table_4:row0:col3 = '26.6 [17.9–37.0]'
-- unparsed cell Wu_2024_table_4:row1:col1 = 'End of cycle 2'
-- unparsed cell Wu_2024_table_4:row1:col2 = '79.0 [50.3–114]'
-- unparsed cell Wu_2024_table_4:row1:col3 = '107 [78.8–139]'
-- unparsed cell Wu_2024_table_4:row2:col1 = 'End of cycle 3'
-- unparsed cell Wu_2024_table_4:row2:col2 = '155 [108–216]'
-- unparsed cell Wu_2024_table_4:row2:col3 = '205 [154–262]'
-- companion parameter table 4 transcribed (3 record(s), model stage 'final')
-- LLM selected parameter table(s) 4
+- table Wu_2024_table_p8_1: unbound_uncertainty
+- table Wu_2024_table_p8_1: unparsed_numeric_cell
+- table Wu_2024_table_1: no_numeric_grid
+- companion parameter table 1 transcribed (0 record(s))
+- LLM selected parameter table(s) 1
 
 ## Validation
 
@@ -106,13 +103,21 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q88 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Wu_2024_table_4:row0:col4', 'Wu_2024_table_4:row1:col4', 'Wu_2024_table_4:row2:col4'] |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C1_half_life_beta | fail | 285.0 | 62.452 | 0.2191 | 0.25 | reported t½β |
+| C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Wu_2024_table_p8_1:row0:col2'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Wu_2024_table_p8_1:row6:col2'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Wu_2024_table_p8_1:row4:col2'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Wu_2024_table_p8_1:row14:col2'] |
+| C5_unit_missing_Q47 | fail | 1 / [time] | not captured | not captured | not captured | ['Wu_2024_table_p8_1:row10:col2'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.13 | not captured | not captured | ['Wu_2024_table_p8_1:row0:col2'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q63 | pass | volume within physiological range | 6.49 L | not captured | not captured | ['Wu_2024:other_prose'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 4.74 L | not captured | not captured | ['Wu_2024:other_prose'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.13 L/h | not captured | not captured | ['Wu_2024_table_p8_1:row0:col2'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 6.49 L | not captured | not captured | ['Wu_2024_table_p8_1:row4:col2'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 4.74 L | not captured | not captured | ['Wu_2024_table_p8_1:row14:col2'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -121,7 +126,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_inotuzumab_ozogamicin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Wu_2024` / `Wu_2024::reference`)
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_inotuzumab_ozogamicin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Wu_2024` / `Wu_2024::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -147,4 +152,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 12:44 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-14 19:31 UTC</sub>

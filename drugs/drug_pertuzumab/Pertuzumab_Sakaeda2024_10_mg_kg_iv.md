@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;pertuzumab&quot;,&quot;href&quot;:&quot;drugs/drug_pertuzumab/&quot;},{&quot;label&quot;:&quot;Sakaeda_2024 \u00b7 10_mg_kg_iv&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pertuzumab_Luo2017_reference&quot;,&quot;label&quot;:&quot;Luo_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pertuzumab/Pertuzumab_Luo2017_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pertuzumab_Sakaeda2024_10_mg_kg_iv&quot;,&quot;label&quot;:&quot;Sakaeda_2024_10_mg_kg_iv&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pertuzumab/Pertuzumab_Sakaeda2024_10_mg_kg_iv.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pertuzumab_Luo2017_reference&quot;,&quot;label&quot;:&quot;Luo_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pertuzumab/Pertuzumab_Luo2017_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pertuzumab_Sun2022_reference&quot;,&quot;label&quot;:&quot;Sun_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pertuzumab/Pertuzumab_Sun2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pertuzumab_Sakaeda2024_10_mg_kg_iv&quot;,&quot;label&quot;:&quot;Sakaeda_2024_10_mg_kg_iv&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pertuzumab/Pertuzumab_Sakaeda2024_10_mg_kg_iv.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -51,7 +51,7 @@ Sakaeda M et al., [Pharmacological properties and clinica…, Nihon yakurigaku z
 | CL (mL/min/kg) | `Q22` · CL | 0.00158 | mL/min/kg | 1.8433333333333334e-09 | [ml] / [[min] · [kg]] | not captured | exact (1.0) | Sakaeda_2024_table_3:row5:col1 | — | not captured |
 | Vss (L/kg) | `Q65` · Vss | 0.0782 | L/kg | 0.005474000000000001 | [l] / [kg] | not captured | exact (1.0) | Sakaeda_2024_table_3:row6:col1 | — | not captured |
 | MRT (h) | `Q53` · MRT | 844 | h | 3038400.0 | [h] | not captured | exact (1.0) | Sakaeda_2024_table_3:row7:col1 | — | not captured |
-| PertuzumabFuc+SA+ | `Q61` · V | 57.3 | mL/kg | 0.004011 | L | not captured | review_gapfill (0.7) | Luo_2017:review | — | not captured |
+| Vd (ml) | `Q61` · V | 2440.9 | ml | 0.0024409 | L | not captured | review_gapfill (0.7) | Sun_2022:review | — | not captured |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -68,7 +68,7 @@ Sakaeda M et al., [Pharmacological properties and clinica…, Nihon yakurigaku z
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=pertuzumab
 - population split: '投与グループ (n=5/グループ) 10 mg/kg ベルツスマブ (iv)' subgroup of Sakaeda_2024 (paper reports 7 populations: 108 mg/動物 トラスツズマブ 0 u rhuph20, 108 mg/動物 トラスツズマブ 2,000 u rhuph20, 108 mg/動物 トラスツズマブ 6,000 u rhuph20, 216 mg/動物 トラスツズマブ 4,000 u rhuph20, 投与グループ (n=5/グループ) 10 mg/kg ベルツスマブ (iv), 投与グループ (n=5/グループ) 120 mg/動物 ベルツスマブ+ 2,000 u rhuph20 (sc), 投与グループ (n=5/グループ) 120 mg/動物 ベルツスマブ+ 2,000 u rhuph20 及び 120 mg/動物 トラスツズマブ+ 2,000 u rhuph20 (sc))
 - molar mass: none found for 'pertuzumab' — its concentrations stay mass-only
-- gap-filled Q61 (V) from Luo_2017's review values (primary lacked it)
+- gap-filled Q61 (V) from Sun_2022's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
@@ -128,12 +128,12 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_dimension_Q53 | pass | [time] | not captured | not captured | not captured | ['Sakaeda_2024_table_3:row7:col1'] |
 | C5_dimension_Q56 | pass | [time] | not captured | not captured | not captured | ['Sakaeda_2024_table_3:row0:col1'] |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Sakaeda_2024_table_3:row2:col1'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Luo_2017:review'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Sun_2022:review'] |
 | C5_dimension_Q65 | pass | [length] ** 3 | not captured | not captured | not captured | ['Sakaeda_2024_table_3:row6:col1'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.00158 | not captured | not captured | ['Sakaeda_2024_table_3:row5:col1'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.00664 L/h | not captured | not captured | ['Sakaeda_2024_table_3:row5:col1'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 4.01 L | not captured | not captured | ['Luo_2017:review'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 2.44 L | not captured | not captured | ['Sun_2022:review'] |
 | C9_phys_window_Q65 | pass | volume within physiological range | 5.47 L | not captured | not captured | ['Sakaeda_2024_table_3:row6:col1'] |
 
 **Reviewer per-scenario checks:**
@@ -146,14 +146,14 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
-| T1_cmax | reference | skipped | not captured | 0.004985600308996566 | not captured | non-numeric value |
-| T1_cmax | reference | skipped | not captured | 0.004985600308996566 | not captured | non-numeric value |
-| T1_cmax | reference | skipped | not captured | 0.004985600308996566 | not captured | non-numeric value |
-| T1_cmax | reference | skipped | not captured | 0.004985600308996566 | not captured | non-numeric value |
-| T1_tmax | reference | fail | 72.0 | 0.18333333335172414 | 0.0025 | h→SI vs simulated h |
-| T1_tmax | reference | fail | 24.0 | 0.18333333335172414 | 0.0076 | h→SI vs simulated h |
-| T1_tmax | reference | fail | 24.0 | 0.18333333335172414 | 0.0076 | h→SI vs simulated h |
-| T1_tmax | reference | fail | 24.0 | 0.18333333335172414 | 0.0076 | h→SI vs simulated h |
+| T1_cmax | reference | skipped | not captured | 0.008191843001279548 | not captured | non-numeric value |
+| T1_cmax | reference | skipped | not captured | 0.008191843001279548 | not captured | non-numeric value |
+| T1_cmax | reference | skipped | not captured | 0.008191843001279548 | not captured | non-numeric value |
+| T1_cmax | reference | skipped | not captured | 0.008191843001279548 | not captured | non-numeric value |
+| T1_tmax | reference | fail | 72.0 | 0.18333333335172391 | 0.0025 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 24.0 | 0.18333333335172391 | 0.0076 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 24.0 | 0.18333333335172391 | 0.0076 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 24.0 | 0.18333333335172391 | 0.0076 | h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -162,10 +162,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_pertuzumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Sakaeda_2024` / `Sakaeda_2024::10_mg_kg_iv`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_pertuzumab/models/modelica/Pertuzumab_Sakaeda2024_10_mg_kg_iv.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_pertuzumab/models/modelica/Pertuzumab_Sakaeda2024_10_mg_kg_iv.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_pertuzumab/models/modelica/Pertuzumab_Sakaeda2024_10_mg_kg_iv.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_pertuzumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Sakaeda_2024` / `Sakaeda_2024::10_mg_kg_iv`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_pertuzumab/models/modelica/Pertuzumab_Sakaeda2024_10_mg_kg_iv.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_pertuzumab/models/modelica/Pertuzumab_Sakaeda2024_10_mg_kg_iv.deviation.json`
+- sim: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_pertuzumab/models/modelica/Pertuzumab_Sakaeda2024_10_mg_kg_iv.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -183,7 +183,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_pertuzumab/Pertuzumab_Sakaeda2024_10_mg_kg_iv/Pertuzumab_Sakaeda2024_10_mg_kg_iv.svg" alt="Pertuzumab_Sakaeda2024_10_mg_kg_iv diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_pertuzumab/Pertuzumab_Sakaeda2024_10_mg_kg_iv/Pertuzumab_Sakaeda2024_10_mg_kg_iv.svg" alt="Pertuzumab_Sakaeda2024_10_mg_kg_iv diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -196,4 +196,4 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 18:34 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-15 00:59 UTC</sub>

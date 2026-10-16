@@ -169,9 +169,9 @@ Periclou A et al., Population Pharmacokinetics of Caripraz…, European journal 
 
 ## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_cariprazine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Periclou_2021` / `Periclou_2021::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_cariprazine/models/modelica/Cariprazine_Periclou2021_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_cariprazine/models/modelica/Cariprazine_Periclou2021_reference.deviation.json`
+- scholar stages: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_cariprazine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Periclou_2021` / `Periclou_2021::reference`)
+- model: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_cariprazine/models/modelica/Cariprazine_Periclou2021_reference.mo`
+- deviation: `../../..//home/vagrant/pharmacolibrary-dev/knowledgebase/drugs/drug_cariprazine/models/modelica/Cariprazine_Periclou2021_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
