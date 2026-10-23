@@ -4,15 +4,44 @@
 
 # tiropramide — `Tiropramide_Arigoni1986_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.133). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
+
+> The reviewer's verdict (Needs review, 2026-09-28 14:41 UTC) predates the latest extraction (2026-10-04 13:16 UTC); the status shown comes from the current checks.
+
+<div class="pk-model-meta" hidden drug="tiropramide" model-id="Tiropramide_Arigoni1986_reference" status="extracted" stale="true" population="healthy volunteers" measured-compound="tiropramide" parameterization="mechanistic" topology="1C"></div>
+
+## Citation
+Arigoni R, Chisté R, Drovanti A, Makovec F, Senin P, Setnikar I. Pharmacokinetics of tiropramide after single doses in man. Arzneimittel-Forschung 36(4):738–744 (1986).
+
+## Population and dosing
+
+**Population:** healthy volunteers · condition healthy · age group adult.
+
+## Model
+
+**Structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameterization:** mechanistic.  
+**Parameters:** 5 extracted.  
+**Availability:** Model withheld: a core parameter is unspecified.
+
+## Parameters
+| label | parameter | value | unit |
+|---|---|---|---|
+| The steady-state volume of distribution | Vss | 221 | l |
+| The terminal elimination constant | kel | 0.279 | h-1 |
+| t1/2 | t1/2z | 2.5 | h |
+| lag time | tlag | 11 | min |
+| percentages of the administered dose of tiropramide and tiropramide-related substances can be found in the 24-h urines. bolus | fe | 16.2 | % |
+
+<details class="pk-evidence"><summary>Evidence &amp; review</summary>
+
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.133). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
-
-**Model:** Model withheld: a core parameter is unspecified.
 
 ### Reviewer guidance
 
@@ -24,30 +53,19 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:41:49.758611+00:00) predates the upstream re-run (2026-10-04 13:16:43.655157+00:00). Current validate status: `extracted`.
+### All parameter columns
 
-## Citation
-Arigoni R et al., Pharmacokinetics of tiropramide after s…, Arzneimittel-Forschung (1986)
-
-<div class="pk-model-meta" hidden drug="tiropramide" model-id="Tiropramide_Arigoni1986_reference" status="extracted" stale="true" population="healthy volunteers" measured-compound="tiropramide" parameterization="mechanistic" topology="1C"></div>
-
-**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
-**Parameters:** 5 extracted.
-
-**Parameterization:** mechanistic.
-
-## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| The steady-state volume of distribution | `Q65` · Vss | 221 | l | 0.221 | [l] | not captured | llm_corrected (0.6) | Arigoni_1986:abstract | — | not captured |
-| The terminal elimination constant | `Q47` · kel | 0.279 | h-1 | 7.750000000000001e-05 | [1] / [h] | not captured | llm (0.6) | Arigoni_1986:abstract | — | not captured |
-| t1/2 | `Q57` · t1/2z | 2.5 | h | 9000.0 | [h] | not captured | exact (1.0) | Arigoni_1986:abstract | — | not captured |
-| lag time | `Q83` · tlag | 11 | min | 660.0 | [min] | not captured | exact (1.0) | Arigoni_1986:abstract | — | not captured |
-| percentages of the administered dose of tiropramide and tiropramide-related substances can be found in the 24-h urines. bolus | `Q44` · fe | 16.2 | % | not captured | [%] | not captured | llm (0.6) | Arigoni_1986:abstract | — | not captured |
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
+|---|---|---|---|---|---|---|---|---|
+| The steady-state volume of distribution | `Q65` · Vss | 221 | l | 0.221 | m3 | l | llm_corrected (0.6) | Arigoni_1986:abstract |
+| The terminal elimination constant | `Q47` · kel | 0.279 | h-1 | 7.75e-05 | 1/s | 1/h | llm (0.6) | Arigoni_1986:abstract |
+| t1/2 | `Q57` · t1/2z | 2.5 | h | 9000 | s | h | exact (1) | Arigoni_1986:abstract |
+| lag time | `Q83` · tlag | 11 | min | 660 | s | min | exact (1) | Arigoni_1986:abstract |
+| percentages of the administered dose of tiropramide and tiropramide-related substances can be found in the 24-h urines. bolus | `Q44` · fe | 16.2 | % |  |  | % | llm (0.6) | Arigoni_1986:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ## Departures & gaps
@@ -76,17 +94,17 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[i.v. dose]` | not captured | 50 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[lag time]` | 11 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[lag time]` | not captured | 11 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[percentage of the administered dose of tiropramide and tiropramide-related substances in the 24-h urines]` | not captured | 16.2 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[percentages of the administered dose of tiropramide and tiropramide-related substances can be found in the 24-h urines. bolus]` | 16.2 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[steady-state volume of distribution]` | not captured | 221 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[t1/2]` | 2.5 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[t1/2]` | not captured | 2.5 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[terminal elimination constant]` | not captured | 0.279 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[the steady-state volume of distribution]` | 221 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[the terminal elimination constant]` | 0.279 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[i.v. dose]` |  | 50 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[lag time]` | 11 |  | only_one_extracted |
+| `gpt-oss:120b` | `parameters[lag time]` |  | 11 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[percentage of the administered dose of tiropramide and tiropramide-related substances in the 24-h urines]` |  | 16.2 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[percentages of the administered dose of tiropramide and tiropramide-related substances can be found in the 24-h urines. bolus]` | 16.2 |  | only_one_extracted |
+| `gpt-oss:120b` | `parameters[steady-state volume of distribution]` |  | 221 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[t1/2]` | 2.5 |  | only_one_extracted |
+| `gpt-oss:120b` | `parameters[t1/2]` |  | 2.5 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[terminal elimination constant]` |  | 0.279 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[the steady-state volume of distribution]` | 221 |  | only_one_extracted |
+| `gpt-oss:120b` | `parameters[the terminal elimination constant]` | 0.279 |  | only_one_extracted |
 | `gpt-oss:120b` | `screen.dose_compound` | tiropramide | unknown | mismatch |
 | `gpt-oss:120b` | `screen.primary_analyte` | tiropramide | unknown | mismatch |
 
@@ -100,28 +118,26 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained | ratio | tol | source |
-|---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q44 | pass | dimensionless | not captured | not captured | not captured | ['Arigoni_1986:abstract'] |
-| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['Arigoni_1986:abstract'] |
-| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Arigoni_1986:abstract'] |
-| C5_dimension_Q65 | pass | [length] ** 3 | not captured | not captured | not captured | ['Arigoni_1986:abstract'] |
-| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Arigoni_1986:abstract'] |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q65 | pass | volume within physiological range | 221 L | not captured | not captured | ['Arigoni_1986:abstract'] |
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 5 |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
+| C5_dimension_Q44 | pass | dimensionless |  | ['Arigoni_1986:abstract'] |
+| C5_dimension_Q47 | pass | 1 / [time] |  | ['Arigoni_1986:abstract'] |
+| C5_dimension_Q57 | pass | [time] |  | ['Arigoni_1986:abstract'] |
+| C5_dimension_Q65 | pass | [length] ** 3 |  | ['Arigoni_1986:abstract'] |
+| C5_dimension_Q83 | pass | [time] |  | ['Arigoni_1986:abstract'] |
+| C8_topology | pass |  |  |  |
+| C9_phys_window_Q65 | pass | volume within physiological range | 221 L | ['Arigoni_1986:abstract'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
-## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_tiropramide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Arigoni_1986` / `Arigoni_1986::reference`)
-
+</details>
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
@@ -146,4 +162,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 13:16 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btiropramide%5D%20Tiropramide_Arigoni1986_reference&body=Drug%3A%20tiropramide%0ARecord%3A%20Tiropramide_Arigoni1986_reference%0APaper%3A%20Arigoni_1986%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tiropramide/Tiropramide_Arigoni1986_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Generated by `docs.py` (scholarv2, release v26.09) · extracted 2026-10-04 13:16 UTC</sub>

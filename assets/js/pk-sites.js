@@ -54,7 +54,9 @@
     opts = opts || {};
     var sites = {};
     q(db, 'SELECT gene, process, tissue, uberon, cell FROM adme_site').forEach(function (r) {
-      (sites[r.gene] = sites[r.gene] || { process: r.process, tissues: [], cell: r.cell }).tissues.push([r.tissue, r.uberon]);
+      // each tissue row carries its own process: an efflux pump absorbs in the gut, distributes
+      // at the blood-brain barrier and excretes in the kidney (adme_sites.site_process)
+      (sites[r.gene] = sites[r.gene] || { process: r.process, tissues: [], cell: r.cell }).tissues.push([r.tissue, r.uberon, r.process]);
     });
     var rows = [];                            // {drug, process, tissue, actor, role, evidence, quote}
     var byActor = {};                         // gene -> {slug -> Set(role)}   (drugbank actors only)
@@ -65,10 +67,9 @@
       catch (e) { acts = q(db, 'SELECT gene, kind, role, evidence, source, page, doi FROM adme_actor WHERE drug_slug = ?', [d.slug]); }
       acts.forEach(function (a) {
         var site = sites[a.gene];
-        var proc = processOf(site, a.kind, a.role);
         var tissues = site ? site.tissues : [[null, null]];
         tissues.forEach(function (t) {
-          rows.push({ drug: d.slug, process: proc, tissue: t[0], actor: a.gene, role: a.role, evidence: a.evidence, cell: site ? site.cell : null, source: a.source, page: a.page, doi: a.doi, url: a.url });
+          rows.push({ drug: d.slug, process: processOf(site, a.kind, a.role, t), tissue: t[0], actor: a.gene, role: a.role, evidence: a.evidence, cell: site ? site.cell : null, source: a.source, page: a.page, doi: a.doi, url: a.url });
         });
         if (a.evidence === 'drugbank_actor') {
           var m = byActor[a.gene] = byActor[a.gene] || {};
@@ -99,7 +100,7 @@
             if (rv.indexOf('substrate') >= 0 && pert(rp)) {
               var eff = rp.filter(function (r) { return r === 'inhibitor' || r === 'inducer'; }).join('/');
               (site.tissues || [[null]]).forEach(function (t) {
-                affected.push({ perpetrator: perp, victim: vict, actor: gene, effect: eff, process: site.process || null, tissue: t[0] });
+                affected.push({ perpetrator: perp, victim: vict, actor: gene, effect: eff, process: (t[2] || site.process || null), tissue: t[0] });
               });
             }
           });
@@ -273,8 +274,8 @@
   // target, a safety allele or an unknown role has none (null, shown '—'), never a guess.
   var KIND_PROCESS = { enzyme: 'metabolism', transporter: 'distribution', carrier: 'distribution' };
   var ROLE_PROCESS = { metabolism: 'metabolism', formation: 'metabolism', transport: 'distribution' };
-  function processOf(site, kind, role) {
-    if (site && site.process !== 'target') return site.process;
+  function processOf(site, kind, role, t) {
+    if (site && site.process !== 'target') return (t && t[2]) || site.process;
     if (kind === 'target' || site) return null;
     return KIND_PROCESS[kind] || ROLE_PROCESS[role] || null;
   }

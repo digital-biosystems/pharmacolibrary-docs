@@ -14,6 +14,18 @@
   40.0,
   80.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Kim_2022:discussion_prose",
+    "value_si": 2.7799999999999998e-05
+   },
+   {
+    "source": "Kim_2022:discussion_prose",
+    "value_si": 5.72e-05
+   }
+  ]
+ },
  "parameters": {
   "Cl": 1.25e-06,
   "F": 1.0,

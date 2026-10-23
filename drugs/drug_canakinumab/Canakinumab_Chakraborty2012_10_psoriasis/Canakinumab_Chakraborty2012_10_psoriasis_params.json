@@ -10,6 +10,30 @@
   140.0,
   10500.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Chakraborty_2012:other_prose",
+    "value_si": 0.0159
+   },
+   {
+    "source": "Chakraborty_2012:other_prose",
+    "value_si": 0.0207
+   },
+   {
+    "source": "Chakraborty_2012:other_prose",
+    "value_si": 0.013300000000000001
+   },
+   {
+    "source": "Chakraborty_2012:other_prose",
+    "value_si": 0.0111
+   },
+   {
+    "source": "Chakraborty_2012:other_prose",
+    "value_si": 0.0117
+   }
+  ]
+ },
  "parameters": {
   "Cl": 4.976851851851852e-09,
   "F": 1.0,

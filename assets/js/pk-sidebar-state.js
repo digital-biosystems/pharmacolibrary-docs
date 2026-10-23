@@ -82,3 +82,40 @@
     snapshot();
   });
 });
+
+// ── "only drugs with records" ───────────────────────────────────────────────
+// The ATC tree lists every drug of a class, most with (0/0/0). The checkbox on the legend
+// line hides those (on by default); a drug with a page but no counted record stays. The
+// choice is a per-viewer convenience in localStorage; without storage it is simply on.
+(window.$docsify.plugins = window.$docsify.plugins || []).push(function (hook) {
+  var KEY = 'pk-sidebar-has-records';
+  function wanted() {
+    try { return localStorage.getItem(KEY) !== '0'; } catch (e) { return true; }
+  }
+  function apply(on) {
+    document.body.classList.toggle('pk-hide-norec', on);
+  }
+  hook.doneEach(function () {
+    var nav = document.querySelector('.sidebar-nav'); if (!nav) return;
+    nav.querySelectorAll('li').forEach(function (li) {
+      if (li.querySelector('ul')) return;                     // a folder, not a drug
+      var t = li.textContent || '';
+      li.classList.toggle('pk-sb-norec', /\(0\/0\/0\)\s*$/.test(t));
+    });
+    var legend = nav.querySelector('.pk-sb-legend');
+    if (legend && !legend.querySelector('input')) {
+      var lab = document.createElement('label');
+      lab.className = 'pk-sb-toggle';
+      lab.innerHTML = '<input type="checkbox"> only drugs with records';
+      var box = lab.querySelector('input');
+      box.checked = wanted();
+      box.addEventListener('change', function () {
+        try { localStorage.setItem(KEY, box.checked ? '1' : '0'); } catch (e) { /* no storage */ }
+        apply(box.checked);
+      });
+      legend.appendChild(document.createElement('br'));
+      legend.appendChild(lab);
+    }
+    apply(wanted());
+  });
+});

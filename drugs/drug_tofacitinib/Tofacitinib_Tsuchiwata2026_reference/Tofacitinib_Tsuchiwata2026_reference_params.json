@@ -14,6 +14,22 @@
   5.0,
   10.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Tsuchiwata_2026:other_prose",
+    "value_si": 1.4e-05
+   },
+   {
+    "source": "Tsuchiwata_2026:other_prose",
+    "value_si": 3.6700000000000004e-05
+   },
+   {
+    "source": "Tsuchiwata_2026:other_prose",
+    "value_si": 7.390000000000001e-05
+   }
+  ]
+ },
  "parameters": {
   "Cl": 7.527777777777778e-06,
   "F": 1.0,

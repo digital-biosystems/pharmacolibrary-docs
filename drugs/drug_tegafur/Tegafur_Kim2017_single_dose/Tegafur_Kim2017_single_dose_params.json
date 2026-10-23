@@ -12,6 +12,18 @@
  "paper_doses_mg": [
   350.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Kim_2017:other_prose",
+    "value_si": 72.6
+   },
+   {
+    "source": "Kim_2017:other_prose",
+    "value_si": 40.9
+   }
+  ]
+ },
  "parameters": {
   "Cl": 2.45e-06,
   "F": 1.0,

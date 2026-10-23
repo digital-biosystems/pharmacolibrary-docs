@@ -1,41 +1,45 @@
 # Pharmacolibrary
 v26.09 (built {{built_at}})
 
-Literature-derived **pharmacokinetic (PK), pharmacodynamic (PD), and pharmacogenomic (PGx)** knowledge base.
+Pharmacokinetic (PK), pharmacodynamic (PD) and pharmacogenomic (PGx) models extracted from the
+published literature, with downloads and a simulator you can run in the browser.
 
-## Contents
+<form class="pk-home-search" onsubmit="location.hash = '#/query?ask=' + encodeURIComponent(this.q.value); return false;">
+  <input name="q" type="search" placeholder="Ask about a drug, a parameter or a gene — e.g. clearance of metformin" aria-label="Ask the data">
+  <button type="submit">Ask</button>
+</form>
 
-- **Drug profiles:** identifiers, ATC classification, synonyms, brands, EU regulatory status,
-  and extracted records.
-- **Population PK:** disposition and absorption parameters, source units, SI-normalised values,
-  covariate relationships, and interindividual variability.
-- **PD:** exposure–response models, biomarkers, drivers, and parameter estimates.
-- **PGx:** genotype or phenotype effects on PK/PD parameters and adverse-reaction risk.
-- **Models:** Modelica, MATLAB, SimBiology, SBML, CellML, and FMI downloads where available;
-  each archive includes source code, a simulation script, and documentation.
-- **Simulation:** browser-based simulations for supported models.
-- **Toxicology:** toxicokinetic and toxicodynamic records, listed separately from drugs.
-  Coverage is under development.
+<div class="pk-home-cards">
+  <a class="pk-home-card" href="#/atc/README"><b>Browse drugs</b><span>By ATC class, or open the sidebar tree. Each drug page lists its popPK, PD and PGx records.</span></a>
+  <a class="pk-home-card" href="#/query"><b>Ask the data</b><span>Questions in words or SQL over every extracted record and parameter.</span></a>
+  <a class="pk-home-card" href="#/sites"><b>ADME sites</b><span>Where drugs are absorbed, metabolised and excreted, and which enzymes and transporters two drugs share.</span></a>
+</div>
 
-## Data provenance
+**Featured — the benchmark drugs** (records checked against hand-curated truth):
+[allopurinol](drugs/drug_allopurinol/) ·
+[amoxicillin](drugs/drug_amoxicillin/) ·
+[clopidogrel](drugs/drug_clopidogrel/) ·
+[ibuprofen](drugs/drug_ibuprofen/) ·
+[metformin](drugs/drug_metformin/) ·
+[semaglutide](drugs/drug_semaglutide/) ·
+[tolvaptan](drugs/drug_tolvaptan/)
 
-Literature is retrieved from PubMed and available full-text sources. Extraction follows
-*relevance assessment → screening → localisation → transcription → interpretation → validation*.
-Parameter estimates retain source labels and units and undergo consistency and plausibility checks.
+{{numbers}} · [data & downloads](data.md)
 
-Status badges indicate curation, validation, and review outcomes. Source references,
-inferred values, and secondary-source substitutions are identified in each record.
+## Record status
 
-| Status | Definition |
+| Status | Meaning |
 |---|---|
-| **curated** | Human-authored or verified reference record |
-| **extracted** | Accepted extraction with applicable validation checks passed |
-| **needs review** | Incomplete, inconsistent, or unresolved extraction |
-| **rejected** | Unaccepted record; displayed values remain unverified |
-| **stale** | Review predates the current extraction |
+| **Curated (human-checked)** | Authored or checked by a person against the paper. |
+| **Reproduces paper** | The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified. |
+| **Reproduces with caveats** | Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated). |
+| **Not simulated** | Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict. |
+| **Needs review** | Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified. |
+| **Rejected** | Not accepted; the values are shown for inspection only. |
 
-Record tabs: **Information** (parameters and provenance), **Models** (downloads), and
-**Simulation** (browser-based execution).
+A record page has three tabs: **Information** (the paper, its population, the model and its
+parameters; the audit trail is folded under *Evidence & review*), **Models** (downloads in
+Modelica, MATLAB, SimBiology, SBML, CellML and FMI) and **Simulation**.
 
 ## Limitations
 

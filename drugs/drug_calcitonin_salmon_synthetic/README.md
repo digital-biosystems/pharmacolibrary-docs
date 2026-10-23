@@ -22,24 +22,26 @@ Synthetic salmon calcitonin is a hormone drug used to treat osteoporosis, helpin
 | calcitonin_salmon_synthetic | metabolite | 3431.89 | C145H240N44O48S2 | PubChem | [16133812](https://pubchem.ncbi.nlm.nih.gov/compound/16133812) | Beveridge_1976, Huwyler_1979 |
 | synthetic salmon calcitonin | metabolite | 3431.89 | C145H240N44O48S2 | PubChem | [16220016](https://pubchem.ncbi.nlm.nih.gov/compound/16220016) | Beveridge_1976 |
 
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub> | [Beveridge_1976_reference](drugs/drug_calcitonin_salmon_synthetic/CalcitoninSalmonSynthetic_Beveridge1976_reference.md) | — | 1-compartment (no model) | 2 | Beveridge T et al., Pharmacokinetic study with synthetic sa…, Zeitschrift fur Gastroenter… (1976) | — |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q3 — no SI value to build from</sub> | [Huwyler_1979_reference](drugs/drug_calcitonin_salmon_synthetic/CalcitoninSalmonSynthetic_Huwyler1979_reference.md) | — | 1-compartment (no model) | 2 | Huwyler R et al., Plasma kinetics and urinary excretion o…, The American journal of phy… (1979) | [10.1152/ajpendo.1979.236.1.E15](https://doi.org/10.1152/ajpendo.1979.236.1.E15) |
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
 | 2026-10-07 10:18 | 6:18 | 0/0/2 | 0/0/0 | 0/0/0 | 203,011/5,113 | einfracz / qwen3.8-27b | 7 | 1/6 | 7/0 | 0 |
-
-## popPK records
-
-| status | detail | model | model structure | params | citation | doi |
-|---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub><br><sub>route_to: `human_review`</sub> | [Beveridge_1976_reference](drugs/drug_calcitonin_salmon_synthetic/CalcitoninSalmonSynthetic_Beveridge1976_reference.md) | — | 1-compartment (no model) | 2 | Beveridge T et al., Pharmacokinetic study with synthetic sa…, Zeitschrift fur Gastroenter… (1976) | — |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q3 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Huwyler_1979_reference](drugs/drug_calcitonin_salmon_synthetic/CalcitoninSalmonSynthetic_Huwyler1979_reference.md) | — | 1-compartment (no model) | 2 | Huwyler R et al., Plasma kinetics and urinary excretion o…, The American journal of phy… (1979) | [10.1152/ajpendo.1979.236.1.E15](https://doi.org/10.1152/ajpendo.1979.236.1.E15) |
-
-<details class="legend">
-<summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
-<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
-</details>
 
 ## Coverage
 
@@ -89,5 +91,9 @@ _6 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | popPK | Zhu_2021 | irrelevant | 0 | 0 | This is a review of oral delivery technologies for peptides; while calcitonin (sCT) is mentioned in a table regarding oral bioavailability percentages, the paper does not report population pharmacokinetic parameters (CL, V, ka, etc.) for calcitonin. |
 | popPK | unknown_2024 | irrelevant | 0 | 0 | no_text gate: only 52 chars of text extracted (&lt; 400) |
 
+
+</details>
+
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 10:17 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
+<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 10:17 UTC</sub>

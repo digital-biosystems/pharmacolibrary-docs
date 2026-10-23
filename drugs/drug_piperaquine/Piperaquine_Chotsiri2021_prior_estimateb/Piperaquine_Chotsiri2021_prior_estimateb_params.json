@@ -12,6 +12,18 @@
  "paper_doses_mg": [
   320.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Chotsiri_2021:other_prose",
+    "value_si": 0.000212
+   },
+   {
+    "source": "Chotsiri_2021:other_prose",
+    "value_si": 0.000232
+   }
+  ]
+ },
  "parameters": {
   "Cl": 1.65e-05,
   "F": 1.0,

@@ -1,57 +1,79 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05C&quot;,&quot;href&quot;:&quot;atc/N05C.md&quot;},{&quot;label&quot;:&quot;midazolam&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/&quot;},{&quot;label&quot;:&quot;Burtin_1994 \u00b7 mean_estimate_se_index_data_set&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Midazolam_Bardol2025_reference&quot;,&quot;label&quot;:&quot;Bardol_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Bardol2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Bertin2026_reference&quot;,&quot;label&quot;:&quot;Bertin_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Bertin2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Briassoulis1998_reference&quot;,&quot;label&quot;:&quot;Briassoulis_1998_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Briassoulis1998_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Burtin1994_mean_estimate_se_index_data_set&quot;,&quot;label&quot;:&quot;Burtin_1994_mean_estimate_se_index_data_set&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Burtin1994_mean_estimate_se_index_data_set.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Midazolam_Davis1986_reference&quot;,&quot;label&quot;:&quot;Davis_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Davis1986_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Greenblatt1989_reference&quot;,&quot;label&quot;:&quot;Greenblatt_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Greenblatt1989_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Gupta2023_reference&quot;,&quot;label&quot;:&quot;Gupta_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Gupta2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Hall1988_reference&quot;,&quot;label&quot;:&quot;Hall_1988_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Hall1988_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Jia2026_reference&quot;,&quot;label&quot;:&quot;Jia_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Jia2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_McCann2025_reference&quot;,&quot;label&quot;:&quot;McCann_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_McCann2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Sathe2021_reference&quot;,&quot;label&quot;:&quot;Sathe_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Sathe2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Tolia1991_clausen_et_al_9&quot;,&quot;label&quot;:&quot;Tolia_1991_clausen_et_al_9&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Tolia1991_clausen_et_al_9.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Tolia1991_payne_et_al_6&quot;,&quot;label&quot;:&quot;Tolia_1991_payne_et_al_6&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Tolia1991_payne_et_al_6.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Tolia1991_present_study&quot;,&quot;label&quot;:&quot;Tolia_1991_present_study&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Tolia1991_present_study.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Tolia1991_salonen_et_al_5&quot;,&quot;label&quot;:&quot;Tolia_1991_salonen_et_al_5&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Tolia1991_salonen_et_al_5.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Zhou2014_reference&quot;,&quot;label&quot;:&quot;Zhou_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Zhou2014_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Bardol_2025_COMFORT_B&quot;,&quot;label&quot;:&quot;Bardol_2025 \u00b7 COMFORT-B&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/pd_Bardol_2025_COMFORT_B.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Flores_P_rez_2023_BIS&quot;,&quot;label&quot;:&quot;Flores-P\u00e9rez_2023 \u00b7 BIS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/pd_Flores_P_rez_2023_BIS.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Koopmans_1988_VER_P100&quot;,&quot;label&quot;:&quot;Koopmans_1988 \u00b7 VER-P100&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/pd_Koopmans_1988_VER_P100.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Midazolam_Bardol2025_reference&quot;,&quot;label&quot;:&quot;Bardol_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Bardol2025_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Bertin2026_reference&quot;,&quot;label&quot;:&quot;Bertin_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Bertin2026_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Briassoulis1998_reference&quot;,&quot;label&quot;:&quot;Briassoulis_1998_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Briassoulis1998_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Davis1986_reference&quot;,&quot;label&quot;:&quot;Davis_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Davis1986_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Greenblatt1989_reference&quot;,&quot;label&quot;:&quot;Greenblatt_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Greenblatt1989_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Hall1988_reference&quot;,&quot;label&quot;:&quot;Hall_1988_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Hall1988_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Burtin1994_mean_estimate_se_index_data_set&quot;,&quot;label&quot;:&quot;Burtin_1994_mean_estimate_se_index_data_set&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Burtin1994_mean_estimate_se_index_data_set.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Midazolam_Gupta2023_reference&quot;,&quot;label&quot;:&quot;Gupta_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Gupta2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Jia2026_reference&quot;,&quot;label&quot;:&quot;Jia_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Jia2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_McCann2025_reference&quot;,&quot;label&quot;:&quot;McCann_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_McCann2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Sathe2021_reference&quot;,&quot;label&quot;:&quot;Sathe_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Sathe2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Tolia1991_clausen_et_al_9&quot;,&quot;label&quot;:&quot;Tolia_1991_clausen_et_al_9&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Tolia1991_clausen_et_al_9.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Tolia1991_payne_et_al_6&quot;,&quot;label&quot;:&quot;Tolia_1991_payne_et_al_6&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Tolia1991_payne_et_al_6.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Tolia1991_present_study&quot;,&quot;label&quot;:&quot;Tolia_1991_present_study&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Tolia1991_present_study.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Tolia1991_salonen_et_al_5&quot;,&quot;label&quot;:&quot;Tolia_1991_salonen_et_al_5&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Tolia1991_salonen_et_al_5.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Zhou2014_reference&quot;,&quot;label&quot;:&quot;Zhou_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Zhou2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Bardol_2025_COMFORT_B&quot;,&quot;label&quot;:&quot;Bardol_2025 \u00b7 COMFORT-B&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/pd_Bardol_2025_COMFORT_B.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Flores_P_rez_2023_BIS&quot;,&quot;label&quot;:&quot;Flores-P\u00e9rez_2023 \u00b7 BIS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/pd_Flores_P_rez_2023_BIS.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # midazolam — `Midazolam_Burtin1994_mean_estimate_se_index_data_set`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.667), gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-check: partial 1/2</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+
+> The bioavailability parameter F was left at library defaults rather than using estimates from the paper, leaving the absorption fraction unsupported.
+
+<div class="pk-model-meta" hidden drug="midazolam" model-id="Midazolam_Burtin1994_mean_estimate_se_index_data_set" status="needs_review" stale="false" population="critically ill neonates" measured-compound="midazolam" parameterization="mechanistic" topology="2C"></div>
+
+## Citation
+Burtin P, Jacqz-Aigrain E, Girard P, Lenclen R, Magny JF, Betremieux P et al. Population pharmacokinetics of midazolam in neonates. Clinical pharmacology and therapeutics 56(6 Pt 1):615–625 (1994).
+  ·  DOI: [10.1038/clpt.1994.186](https://doi.org/10.1038/clpt.1994.186)
+
+## Population and dosing
+
+**Population:** critically ill neonates · condition critically ill · age group neonate · n = , 187.
+
+## Model
+
+**Structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameterization:** mechanistic.  
+**Parameters:** 6 extracted.  
+**Availability:** Model and browser simulation available in **Models** and **Simulation**.
+
+<figure class="pk-models-diagram"><img src="drugs/drug_midazolam/Midazolam_Burtin1994_mean_estimate_se_index_data_set/Midazolam_Burtin1994_mean_estimate_se_index_data_set.svg" alt="Midazolam_Burtin1994_mean_estimate_se_index_data_set diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
+
+## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
+| label | parameter | value | unit |
+|---|---|---|---|
+| CL (L/hr/kg) | CL | 0.132 | L/hr/kg |
+| Vc (L/kg) | V1 | 0.499 | L/kg |
+| Vp (L) | V2 | 0.607 | L |
+| Q (L/hr) | Q | 1.11 | L/hr |
+| Ka (1/h) | kabs | 0.14 | 1/h |
+| t,l2f (h) | tlag | 1.9 | h |
+
+<details class="pk-evidence"><summary>Evidence &amp; review</summary>
+
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.667). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** Model and browser simulation available in **Models** and **Simulation**.
-
 ### Reviewer guidance
 
-**The midazolam two-compartment model for critically ill neonates was held back because oral bioavailability F was left at a library default instead of being estimated or justified from Burtin_1994.**
+**The bioavailability parameter F was left at library defaults rather than using estimates from the paper, leaving the absorption fraction unsupported.**
 
-The record reports midazolam parameters CL 0.132 L/hr/kg, V1 0.499 L/kg, V2 0.607 L, Q 1.11 L/hr, kabs 0.14 1/h and tlag 0.08 h, but no value for F. The model builder substituted a default for F, so the simulated profile would rely on a placeholder not supported by the paper. This unreported default is the sole reason the record needs review; the other checks did not flag further problems. Extracted — midazolam: CL 0.132 L/hr/kg, V1 0.499 L/kg, V2 0.607 L, Q 1.11 L/hr, kabs 0.14 1/h, tlag 0.08 h.
+The model builder did not extract a value for F, so a standard placeholder was used instead of a paper-specific estimate. This means the simulated midazolam levels rely on an assumed fraction of the dose reaching systemic circulation. Consequently, the record was held back because this key pharmacokinetic input lacks direct support from the source study. Extracted — midazolam: CL 0.132 L/hr/kg, V1 0.499 L/kg, V2 0.607 L, Q 1.11 L/hr, kabs 0.14 1/h, tlag 1.9 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of a: this record has 1.77, the second reading none; it also differs on 3 more fields. That field does not shape the model.
 
-<sub>reviewed by glm-5.3-flash</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:29:06.094658+00:00) predates the upstream re-run (2026-10-06 21:44:59.402210+00:00). Current validate status: `extracted`.
+### All parameter columns
 
-## Citation
-Burtin P et al., Population pharmacokinetics of midazola…, Clinical pharmacology and t… (1994)
-  ·  DOI: [10.1038/clpt.1994.186](https://doi.org/10.1038/clpt.1994.186)
-
-<div class="pk-model-meta" hidden drug="midazolam" model-id="Midazolam_Burtin1994_mean_estimate_se_index_data_set" status="extracted" stale="true" population="critically ill neonates requiring IV sedation for artificial ventilation" measured-compound="midazolam" parameterization="mechanistic" topology="2C"></div>
-
-**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
-**Parameters:** 6 extracted.
-
-**Parameterization:** mechanistic.
-
-## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| CL (L/hr/kg) | `Q22` · CL | 0.132 | L/hr/kg | 2.566666666666667e-06 | [l] / [[h] · [kg]] | not captured | exact (1.0) | Burtin_1994_table_p9_1:row0:col1 | — | 0.38 (0.08% RSE) |
-| Vc (L/kg) | `Q63` · V1 | 0.499 | L/kg | 0.034929999999999996 | [l] / [kg] | not captured | exact (1.0) | Burtin_1994_table_p9_1:row4:col1 | — | 0.82 (0.27% RSE) |
-| Vp (L) | `Q64` · V2 | 0.607 | L | 0.000607 | [l] | not captured | exact (1.0) | Burtin_1994_table_p9_1:row6:col1 | — | 0.91 (0.23% RSE) |
-| Q (L/hr) | `Q30` · Q | 1.11 | L/hr | 3.083333333333334e-07 | [l] / [h] | not captured | exact (1.0) | Burtin_1994_table_p9_1:row8:col1 | — | not captured |
-| If C &lt; 200 ng/ml | `Q900` · equation variable | 840 | not captured | not captured | not captured | not captured | llm (0.6) | Burtin_1994_table_p9_1:row10:col1 | — | not captured |
-| a | `Q49` · kabs | 1.77 | per h | 0.0004916666666666666 | 1/h | not captured | review_gapfill (0.7) | Heizmann_1983:review | — | not captured |
-| ALAG1 (h) | `Q83` · tlag | 1.23 | h | 4428.0 | h | not captured | review_gapfill (0.7) | Jia_2026:review | — | not captured |
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
+|---|---|---|---|---|---|---|---|---|
+| CL (L/hr/kg) | `Q22` · CL | 0.132 | L/hr/kg | 2.567e-06 | m3/s | l/(h·kg) | exact (1) | Burtin_1994_table_p9_1:row0:col1 |
+| Vc (L/kg) | `Q63` · V1 | 0.499 | L/kg | 0.03493 | m3 | l/kg | exact (1) | Burtin_1994_table_p9_1:row4:col1 |
+| Vp (L) | `Q64` · V2 | 0.607 | L | 0.000607 | m3 | l | exact (1) | Burtin_1994_table_p9_1:row6:col1 |
+| Q (L/hr) | `Q30` · Q | 1.11 | L/hr | 3.083e-07 | m3/s | l/h | exact (1) | Burtin_1994_table_p9_1:row8:col1 |
+| Ka (1/h) | `Q49` · kabs | 0.14 | 1/h | 3.889e-05 | 1/s | 1/h | review_gapfill (0.7) | Jia_2026:review |
+| t,l2f (h) | `Q83` · tlag | 1.9 | h | 6840 | s | h | review_gapfill (0.7) | Heizmann_1983:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ## Departures & gaps
@@ -60,38 +82,34 @@ Burtin P et al., Population pharmacokinetics of midazola…, Clinical pharmacolo
 - `defaulted_parameters`: ['F']
 
 **Interpretation flags:**
-- table section iiv: 'CL (L/hr/kg)' routed out of structural estimates ('Interindividual variance ± SE Index data set')
-- table section iiv: 'If GA ≥ 39 weeks' routed out of structural estimates ('Interindividual variance ± SE Index data set')
-- table section iiv: 'Vc (L/kg)' routed out of structural estimates ('Interindividual variance ± SE Index data set')
-- table section iiv: 'Vp (L)' routed out of structural estimates ('Interindividual variance ± SE Index data set')
-- dropped duplicate Q900 ('If C ≥ 200 ng/ml', value '0.112') — already have one for this compound
+- dropped unlinked row (NIL): 'If C &lt; 200 ng/ml' — extend the ontology if this is a real PK parameter (source ['Burtin_1994_table_p9_1:row10:col1'])
+- dropped unlinked row (NIL): 'If C ≥ 200 ng/ml' — extend the ontology if this is a real PK parameter (source ['Burtin_1994_table_p9_1:row11:col1'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=midazolam
 - population split: 'mean estimate ± se index data set' subgroup of Burtin_1994 (paper reports 2 populations: mean estimate ± se index data set, mean estimate ± se whole data set)
-- gap-filled Q49 (kabs) from Heizmann_1983's review values (primary lacked it)
-- gap-filled Q83 (tlag) from Jia_2026's review values (primary lacked it)
+- gap-filled Q49 (kabs) from Jia_2026's review values (primary lacked it)
+- gap-filled Q83 (tlag) from Heizmann_1983's review values (primary lacked it)
 
 **Extraction notes:**
-- unparsed cell Burtin_1994_table_p9_1:row1:col1 = '× 1.50 ± 0.19'
-- unparsed cell Burtin_1994_table_p9_1:row1:col2 = '× 1.57 ± 0.18'
+- table Burtin_1994_table_p9_1: unbound_uncertainty
+- table Burtin_1994_table_p9_1: missing_label
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  1 of 2 readers agree  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
 | `gpt-oss-120b` | partly confirmed | 0.667 (8/12 fields) | 4 |
-| `gpt-oss:120b` | confirmed | 1.0 (8/8 fields) | none |
 
 <details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[a]` | 1.77 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[alag1]` | 1.23 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[if c &lt; 200 ng/ml]` | 840 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[if c ≥ 200 ng/ml]` | not captured | 0.112 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[a]` | 1.77 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[alag1]` | 1.23 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[if c &lt; 200 ng/ml]` | 840 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[if c ≥ 200 ng/ml]` |  | 0.112 | only_one_extracted |
 
 </details>
 
@@ -103,46 +121,41 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained | ratio | tol | source |
-|---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Burtin_1994_table_p9_1:row0:col1'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Burtin_1994_table_p9_1:row8:col1'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Heizmann_1983:review'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Burtin_1994_table_p9_1:row4:col1'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Burtin_1994_table_p9_1:row6:col1'] |
-| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Jia_2026:review'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.132 | not captured | not captured | ['Burtin_1994_table_p9_1:row0:col1'] |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 9.24 L/h | not captured | not captured | ['Burtin_1994_table_p9_1:row0:col1'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 34.9 L | not captured | not captured | ['Burtin_1994_table_p9_1:row4:col1'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 0.607 L | not captured | not captured | ['Burtin_1994_table_p9_1:row6:col1'] |
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 4 |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Burtin_1994_table_p9_1:row0:col1'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Burtin_1994_table_p9_1:row8:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['Jia_2026:review'] |
+| C5_dimension_Q63 | pass | [length] ** 3 |  | ['Burtin_1994_table_p9_1:row4:col1'] |
+| C5_dimension_Q64 | pass | [length] ** 3 |  | ['Burtin_1994_table_p9_1:row6:col1'] |
+| C5_dimension_Q83 | pass | [time] |  | ['Heizmann_1983:review'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.132 | ['Burtin_1994_table_p9_1:row0:col1'] |
+| C8_topology | pass |  |  |  |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 9.24 L/h | ['Burtin_1994_table_p9_1:row0:col1'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 34.9 L | ['Burtin_1994_table_p9_1:row4:col1'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 0.607 L | ['Burtin_1994_table_p9_1:row6:col1'] |
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_output_variable | not captured | pass | C_central (measured=midazolam) | C_central | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | pass | 6 scholar param(s) emitted or defaulted | 6 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable | not captured | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | note |
+|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=midazolam) | central.C | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 6 scholar param(s) emitted or defaulted | 6 covered | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
+| T6_deviations | fail |  | deviated_parameters: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Validation definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
-## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_midazolam/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Burtin_1994` / `Burtin_1994::mean_estimate_se_index_data_set`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_midazolam/models/modelica/Midazolam_Burtin1994_mean_estimate_se_index_data_set.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_midazolam/models/modelica/Midazolam_Burtin1994_mean_estimate_se_index_data_set.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_midazolam/models/modelica/Midazolam_Burtin1994_mean_estimate_se_index_data_set.json`
-
+</details>
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
@@ -150,7 +163,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_midazolam/Midazolam_Burtin1994_mean_estimate_se_index_data_set/Midazolam_Burtin1994_mean_estimate_se_index_data_set_modelica.zip" download>Midazolam_Burtin1994_mean_estimate_se_index_data_set_modelica.zip</a> <span class="pk-size">(4.6 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_midazolam/Midazolam_Burtin1994_mean_estimate_se_index_data_set/Midazolam_Burtin1994_mean_estimate_se_index_data_set_modelica.zip" download>Midazolam_Burtin1994_mean_estimate_se_index_data_set_modelica.zip</a> <span class="pk-size">(4.5 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_midazolam/Midazolam_Burtin1994_mean_estimate_se_index_data_set/Midazolam_Burtin1994_mean_estimate_se_index_data_set_fmi.zip" download>Midazolam_Burtin1994_mean_estimate_se_index_data_set_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_midazolam/Midazolam_Burtin1994_mean_estimate_se_index_data_set/Midazolam_Burtin1994_mean_estimate_se_index_data_set_matlab.zip" download>Midazolam_Burtin1994_mean_estimate_se_index_data_set_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_midazolam/Midazolam_Burtin1994_mean_estimate_se_index_data_set/Midazolam_Burtin1994_mean_estimate_se_index_data_set_matlab_simbio.zip" download>Midazolam_Burtin1994_mean_estimate_se_index_data_set_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
@@ -159,11 +172,55 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_midazolam/Midazolam_Burtin1994_mean_estimate_se_index_data_set/Midazolam_Burtin1994_mean_estimate_se_index_data_set.svg" alt="Midazolam_Burtin1994_mean_estimate_se_index_data_set diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div></div>
+
+## Model interface
+
+The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
+
+| direction | role | name | value | unit (SI) |
+|---|---|---|---|---|
+| input | compound | `MM` | 0.3258 | kg/mol |
+| input | dosing | `F` | 0.9 | 1 |
+| input | dosing | `Tlag` | 6840 | s |
+| input | dosing | `adminCount` | 1 | 1 |
+| input | dosing | `adminDuration` | 600 | s |
+| input | dosing | `adminMass` | 1.5e-05 | kg |
+| input | model | `Cl` | 2.567e-06 | m3/s |
+| input | model | `VdPerKg` | 0.000499 | m3/kg |
+| input | model | `k12` | 8.827e-06 | 1/s |
+| input | model | `k21` | 0.000508 | 1/s |
+| input | model | `ka` | 3.889e-05 | 1/s |
+| input | subject | `weight` | 70 | kg |
+| output | concentration | `central.C` |  | kg/m3 |
+
+## Tested with
+
+- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_2C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
+- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
+- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
+
+## How to cite
+
+**Source paper** (the parameters are its): Burtin P, Jacqz-Aigrain E, Girard P, Lenclen R, Magny JF, Betremieux P et al. Population pharmacokinetics of midazolam in neonates. Clinical pharmacology and therapeutics 56(6 Pt 1):615–625 (1994). [doi:10.1038/clpt.1994.186](https://doi.org/10.1038/clpt.1994.186)
+
+**This record:** Pharmacolibrary v26.09, model `Midazolam_Burtin1994_mean_estimate_se_index_data_set`. <https://pharmacolibrary.github.io/#/drugs/drug_midazolam/Midazolam_Burtin1994_mean_estimate_se_index_data_set>
+
+```bibtex
+@misc{pharmacolibrary_MidazolamBurtin1994meanestimateseindexdataset,
+  title  = {{Pharmacolibrary model Midazolam_Burtin1994_mean_estimate_se_index_data_set}},
+  author = {{Pharmacolibrary}},
+  version = {v26.09},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_midazolam/Midazolam_Burtin1994_mean_estimate_se_index_data_set},
+  note   = {Parameters from doi:10.1038/clpt.1994.186},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 15 mg, single dose, first-order absorption (ka 1.77 /h, lag 73.8 min, F 0.9). _The paper's dose was not captured; the default is the WHO ATC DDD 15 mg oral (N05CD08) (defined daily dose)._
+**Administration: oral** — 15 mg, single dose, first-order absorption (ka 0.14 /h, lag 114 min, F 0.9). _The paper's dose was not captured; the default is the WHO ATC DDD 15 mg oral (N05CD08) (defined daily dose)._
 
 <dbs-fmusim paramsurl="drugs/drug_midazolam/Midazolam_Burtin1994_mean_estimate_se_index_data_set/Midazolam_Burtin1994_mean_estimate_se_index_data_set_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_midazolam/Midazolam_Burtin1994_mean_estimate_se_index_data_set/Midazolam_Burtin1994_mean_estimate_se_index_data_set_sim_controls.json"></dbs-fmusim>
 
@@ -172,4 +229,5 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 21:44 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmidazolam%5D%20Midazolam_Burtin1994_mean_estimate_se_index_data_set&body=Drug%3A%20midazolam%0ARecord%3A%20Midazolam_Burtin1994_mean_estimate_se_index_data_set%0APaper%3A%20Burtin_1994%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_midazolam/Midazolam_Burtin1994_mean_estimate_se_index_data_set%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Generated by `docs.py` (scholarv2, release v26.09) · extracted 2026-10-22 11:50 UTC</sub>

@@ -13,6 +13,18 @@
   8.0,
   48.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Valenzuela_2025:other_prose",
+    "value_si": 6.06
+   },
+   {
+    "source": "Valenzuela_2025:other_prose",
+    "value_si": 5.46
+   }
+  ]
+ },
  "parameters": {
   "Cl": 1.4555555555555556e-05,
   "F": 1.0,

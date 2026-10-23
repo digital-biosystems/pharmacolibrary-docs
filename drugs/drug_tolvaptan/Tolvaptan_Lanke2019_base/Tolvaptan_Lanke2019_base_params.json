@@ -1,0 +1,65 @@
+{
+ "dose_source": "paper",
+ "model_id": "Tolvaptan_Lanke2019_base",
+ "molar_masses": {
+  "central.C": 0.448941
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  15.0,
+  30.0,
+  45.0,
+  60.0,
+  90.0,
+  120.0
+ ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Lanke_2019:discussion_prose",
+    "value_si": 3.5
+   },
+   {
+    "source": "Lanke_2019:discussion_prose",
+    "value_si": 0.17
+   },
+   {
+    "source": "Lanke_2019:discussion_prose",
+    "value_si": 0.13
+   },
+   {
+    "source": "Lanke_2019:discussion_prose",
+    "value_si": 15.0
+   },
+   {
+    "source": "Lanke_2019:discussion_prose",
+    "value_si": 96.0
+   }
+  ]
+ },
+ "parameters": {
+  "Cl": 3.1666666666666667e-06,
+  "F": 1.0,
+  "MM": 0.448941,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0015571428571428572,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1.5e-05,
+  "ka": 0.00037222222222222225,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 7791.583166332665
+ },
+ "reference_peaks": {
+  "central.C": 0.0001108744867948291
+ },
+ "stop_time": 129600.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

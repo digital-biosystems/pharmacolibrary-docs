@@ -4,17 +4,61 @@
 
 # belantamab mafodotin — `BelantamabMafodotin_Papathanasiou2025_final`
 
-> ## <span class="pk-badge pk-badge--neutral" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">not modelled</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.067). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--neutral" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Not simulated</span>
+
+<div class="pk-model-meta" hidden drug="belantamab mafodotin" model-id="BelantamabMafodotin_Papathanasiou2025_final" status="not_modelled" stale="false" population="patients with relapsed/refractory multiple myeloma" measured-compound="belantamab_mafodotin ADC and cys-mcMMAF" parameterization="mechanistic" topology="parent_metabolite"></div>
+
+## Citation
+Papathanasiou T, Kaullen J, Polireddy K, Chen X, Ho YL, Taylor A et al. Population Pharmacokinetics for Belantamab Mafodotin Monotherapy and Combination Therapies in Patients with Relapsed/Refractory Multiple Myeloma. Clinical pharmacokinetics 64(6):925–942 (2025).
+  ·  DOI: [10.1007/s40262-025-01508-1](https://doi.org/10.1007/s40262-025-01508-1)
+
+## Population and dosing
+
+**Population:** patients with relapsed/refractory multiple myeloma · condition relapsed/refractory multiple myeloma · age group adult · n = 977.
+
+**Dosing:** 175 mg, iv, multiple, every 504 h.
+
+**Dosed compound ≠ measured compound:** dosed belantamab_mafodotin, measured belantamab_mafodotin ADC and cys-mcMMAF.
+
+## Model
+
+**Structure:** parent + metabolite; no model was built for this record.  
+**Parameterization:** mechanistic.  
+**Parameters:** 4 extracted, plus 7 covariate effects.  
+**Availability:** No model was generated from this record.
+
+## Parameters
+> ⚠️ Status "Not simulated": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
+| label | parameter | value | unit |
+|---|---|---|---|
+| ADC Vc (L) | V1 | 4.21 | L |
+| Q (L/day) | Q | 0.711 | L/day |
+| ADC Vp (L) | V2 | 6.63 | L |
+| TI50 (days) | t1/2z | 66.4 | days |
+| IgG on CL (θCL_IGGBL) | equation variable | 0.170 | θCL_IGGBL |
+| theta_q319_weight | theta_q319_weight | 0.929 |  |
+| theta_q319_weight | theta_q319_weight | 0.542 |  |
+| theta_equation_variable_albumin | theta_equation_variable_albumin | 10.3 |  |
+| theta_v1_albumin | theta_v1_albumin | 17.9 |  |
+| theta_v1_bmi | theta_v1_bmi | 12.4 |  |
+| theta_cl_race | theta_cl_race | 0.861 |  |
+| theta_v2_albumin | theta_v2_albumin | 0.567 |  |
+| CL | CL | 0.926 | L/day |
+
+## Caveats
+
+- Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.
+
+<details class="pk-evidence"><summary>Evidence &amp; review</summary>
+
+**Status and checks:** <span class="pk-badge pk-badge--neutral" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.067). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
-
-**Model:** No model was generated from this record.
-
-> **Caveat** (`covariates_not_exercised`): Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.
 
 ### Reviewer guidance
 
@@ -26,48 +70,35 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which mo
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> **Dose compound ≠ measured compound:** dosed `belantamab_mafodotin`, measured `belantamab_mafodotin ADC and cys-mcMMAF`.
+### All parameter columns
 
-## Citation
-Papathanasiou T et al., Population Pharmacokinetics for Belanta…, Clinical pharmacokinetics (2025)
-  ·  DOI: [10.1007/s40262-025-01508-1](https://doi.org/10.1007/s40262-025-01508-1)
-
-<div class="pk-model-meta" hidden drug="belantamab mafodotin" model-id="BelantamabMafodotin_Papathanasiou2025_final" status="not_modelled" stale="false" population="patients with relapsed/refractory multiple myeloma" measured-compound="belantamab_mafodotin ADC and cys-mcMMAF" parameterization="mechanistic" topology="parent_metabolite"></div>
-
-**Model structure:** parent + metabolite; no model was built for this record.  
-**Parameters:** 4 extracted, plus 7 covariate effects.
-
-**Parameterization:** mechanistic.
-
-## Parameters
-> ⚠️ This record is not accepted (current status `not_modelled`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| ADC Vc (L) | `Q63` · V1 | 4.21 | L | 0.00421 | [l] | not captured | llm_confirmed (0.6) | Tab2:row4:col1, Tab2:row4:col2 | — | not captured |
-| Q (L/day) | `Q30` · Q | 0.711 | L/day | 8.229166666666667e-09 | [l] / [d] | not captured | exact (1.0) | Tab2:row5:col1, Tab2:row5:col2 | — | not captured |
-| ADC Vp (L) | `Q64` · V2 | 6.63 | L | 0.00663 | [l] | not captured | llm_confirmed (0.6) | Tab2:row6:col1, Tab2:row6:col2 | — | not captured |
-| TI50 (days) | `Q57` · t1/2z | 66.4 | days | 5736960.000000001 | [d] | not captured | llm (0.6) | Tab2:row8:col1, Tab2:row8:col2 | — | not captured |
-| IgG on CL (θCL_IGGBL) | `Q900` · equation variable | 0.170 | θCL_IGGBL | not captured | [iggbl] · [θcl_] | not captured | llm_corrected (0.6) | Tab2:row16:col1, Tab2:row16:col2 | — | not captured |
-| theta_q319_weight | `Q900` · theta_q319_weight | 0.929 | not captured | not captured | not captured | not captured | not captured (not captured) | Tab2:row11:col1, Tab2:row11:col2 | — | not captured |
-| theta_q319_weight | `Q900` · theta_q319_weight | 0.542 | not captured | not captured | not captured | not captured | not captured (not captured) | Tab2:row12:col1, Tab2:row12:col2 | — | not captured |
-| theta_equation_variable_albumin | `Q900` · theta_equation_variable_albumin | 10.3 | not captured | not captured | not captured | not captured | not captured (not captured) | Tab2:row13:col2 | — | not captured |
-| theta_v1_albumin | `Q900` · theta_v1_albumin | 17.9 | not captured | not captured | not captured | not captured | not captured (not captured) | Tab2:row14:col2 | — | not captured |
-| theta_v1_bmi | `Q900` · theta_v1_bmi | 12.4 | not captured | not captured | not captured | not captured | not captured (not captured) | Tab2:row17:col2 | — | not captured |
-| theta_cl_race | `Q900` · theta_cl_race | 0.861 | not captured | not captured | not captured | not captured | not captured (not captured) | Tab2:row21:col1, Tab2:row21:col2 | — | not captured |
-| theta_v2_albumin | `Q900` · theta_v2_albumin | 0.567 | not captured | not captured | not captured | not captured | not captured (not captured) | Tab2:row25:col1, Tab2:row25:col2 | — | not captured |
-| CL | `Q900` · CL | 0.926 | L/day | 1.0717592592592594e-08 | not captured | not captured | not captured (not captured) | Tab2:row3:col1, Tab2:row3:col2 | — | not captured |
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
+|---|---|---|---|---|---|---|---|---|
+| ADC Vc (L) | `Q63` · V1 | 4.21 | L | 0.00421 | m3 | l | llm_confirmed (0.6) | Tab2:row4:col1, Tab2:row4:col2 |
+| Q (L/day) | `Q30` · Q | 0.711 | L/day | 8.229e-09 | m3/s | l/d | exact (1) | Tab2:row5:col1, Tab2:row5:col2 |
+| ADC Vp (L) | `Q64` · V2 | 6.63 | L | 0.00663 | m3 | l | llm_confirmed (0.6) | Tab2:row6:col1, Tab2:row6:col2 |
+| TI50 (days) | `Q57` · t1/2z | 66.4 | days | 5.737e+06 | s | d | llm (0.6) | Tab2:row8:col1, Tab2:row8:col2 |
+| IgG on CL (θCL_IGGBL) | `Q900` · equation variable | 0.170 | θCL_IGGBL |  |  | iggbl·θcl_ | llm_corrected (0.6) | Tab2:row16:col1, Tab2:row16:col2 |
+| theta_q319_weight | `Q900` · theta_q319_weight | 0.929 |  |  |  |  |  | Tab2:row11:col1, Tab2:row11:col2 |
+| theta_q319_weight | `Q900` · theta_q319_weight | 0.542 |  |  |  |  |  | Tab2:row12:col1, Tab2:row12:col2 |
+| theta_equation_variable_albumin | `Q900` · theta_equation_variable_albumin | 10.3 |  |  |  |  |  | Tab2:row13:col2 |
+| theta_v1_albumin | `Q900` · theta_v1_albumin | 17.9 |  |  |  |  |  | Tab2:row14:col2 |
+| theta_v1_bmi | `Q900` · theta_v1_bmi | 12.4 |  |  |  |  |  | Tab2:row17:col2 |
+| theta_cl_race | `Q900` · theta_cl_race | 0.861 |  |  |  |  |  | Tab2:row21:col1, Tab2:row21:col2 |
+| theta_v2_albumin | `Q900` · theta_v2_albumin | 0.567 |  |  |  |  |  | Tab2:row25:col1, Tab2:row25:col2 |
+| CL | `Q900` · CL | 0.926 | L/day | 1.072e-08 | m3/s |  |  | Tab2:row3:col1, Tab2:row3:col2 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ### Unresolved rows _(no Q-code or no value — not parameters)_
-| label (paper) | Q-code | value | link |
-|---|---|---|---|
-| CL (L/day) | Q22 | not captured | exact |
-| IMAXi | Q323 | not captured | boundary |
+
+| label (paper) | Q-code | link |
+|---|---|---|
+| CL (L/day) | Q22 | exact |
+| IMAXi | Q323 | boundary |
 
 ## Departures & gaps
 
@@ -237,32 +268,32 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `qwen3.8-27b` | `model.links` | [['belantamab_mafodotin adc', 'cys-mcmmaf', 'metabolism']] | [['belantamab_mafodotin', 'cys-mcmmaf', 'metabolism']] | mismatch |
-| `qwen3.8-27b` | `parameters[adc vc]` | not captured | 4.21 | only_one_extracted |
-| `qwen3.8-27b` | `parameters[adc vc]` | 4.21 | not captured | only_one_extracted |
-| `qwen3.8-27b` | `parameters[adc vp]` | not captured | 6.63 | only_one_extracted |
-| `qwen3.8-27b` | `parameters[adc vp]` | 6.63 | not captured | only_one_extracted |
-| `qwen3.8-27b` | `parameters[cl]` | not captured | not captured | only_one_extracted |
-| `qwen3.8-27b` | `parameters[cl]` | not captured | 0.926 | only_one_extracted |
-| `qwen3.8-27b` | `parameters[cl]` | not captured | not captured | only_one_extracted |
-| `qwen3.8-27b` | `parameters[igg on cl]` | 0.170 | not captured | only_one_extracted |
-| `qwen3.8-27b` | `parameters[imaxi]` | not captured | not captured | only_one_extracted |
-| `qwen3.8-27b` | `parameters[imaxi]` | not captured | not captured | only_one_extracted |
-| `qwen3.8-27b` | `parameters[on adc vc]` | not captured | 20.0 | only_one_extracted |
-| `qwen3.8-27b` | `parameters[q]` | not captured | 0.711 | only_one_extracted |
-| `qwen3.8-27b` | `parameters[q]` | 0.711 | not captured | only_one_extracted |
-| `qwen3.8-27b` | `parameters[theta_cl_race]` | not captured | 0.861 | only_one_extracted |
-| `qwen3.8-27b` | `parameters[theta_cl_race]` | 0.861 | not captured | only_one_extracted |
-| `qwen3.8-27b` | `parameters[theta_equation_variable_albumin]` | 10.3 | not captured | only_one_extracted |
-| `qwen3.8-27b` | `parameters[theta_q314_albumin]` | not captured | 10.3 | only_one_extracted |
-| `qwen3.8-27b` | `parameters[theta_q314_race]` | not captured | 0.913 | only_one_extracted |
-| `qwen3.8-27b` | `parameters[theta_q314_weight]` | not captured | 0.542 | only_one_extracted |
-| `qwen3.8-27b` | `parameters[theta_q319_weight]` | not captured | 0.929 | only_one_extracted |
-| `qwen3.8-27b` | `parameters[theta_q319_weight]` | 0.929 | not captured | only_one_extracted |
-| `qwen3.8-27b` | `parameters[theta_v1_albumin]` | 17.9 | not captured | only_one_extracted |
-| `qwen3.8-27b` | `parameters[theta_v1_bmi]` | 12.4 | not captured | only_one_extracted |
-| `qwen3.8-27b` | `parameters[theta_v2_albumin]` | 0.567 | not captured | only_one_extracted |
-| `qwen3.8-27b` | `parameters[ti50]` | 66.4 | not captured | only_one_extracted |
-| `qwen3.8-27b` | `parameters[ti50i = θti50 (iggbl/15)θτι50_iggbl exp]` | not captured | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[adc vc]` |  | 4.21 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[adc vc]` | 4.21 |  | only_one_extracted |
+| `qwen3.8-27b` | `parameters[adc vp]` |  | 6.63 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[adc vp]` | 6.63 |  | only_one_extracted |
+| `qwen3.8-27b` | `parameters[cl]` |  |  | only_one_extracted |
+| `qwen3.8-27b` | `parameters[cl]` |  | 0.926 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[cl]` |  |  | only_one_extracted |
+| `qwen3.8-27b` | `parameters[igg on cl]` | 0.170 |  | only_one_extracted |
+| `qwen3.8-27b` | `parameters[imaxi]` |  |  | only_one_extracted |
+| `qwen3.8-27b` | `parameters[imaxi]` |  |  | only_one_extracted |
+| `qwen3.8-27b` | `parameters[on adc vc]` |  | 20.0 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[q]` |  | 0.711 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[q]` | 0.711 |  | only_one_extracted |
+| `qwen3.8-27b` | `parameters[theta_cl_race]` |  | 0.861 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[theta_cl_race]` | 0.861 |  | only_one_extracted |
+| `qwen3.8-27b` | `parameters[theta_equation_variable_albumin]` | 10.3 |  | only_one_extracted |
+| `qwen3.8-27b` | `parameters[theta_q314_albumin]` |  | 10.3 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[theta_q314_race]` |  | 0.913 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[theta_q314_weight]` |  | 0.542 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[theta_q319_weight]` |  | 0.929 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[theta_q319_weight]` | 0.929 |  | only_one_extracted |
+| `qwen3.8-27b` | `parameters[theta_v1_albumin]` | 17.9 |  | only_one_extracted |
+| `qwen3.8-27b` | `parameters[theta_v1_bmi]` | 12.4 |  | only_one_extracted |
+| `qwen3.8-27b` | `parameters[theta_v2_albumin]` | 0.567 |  | only_one_extracted |
+| `qwen3.8-27b` | `parameters[ti50]` | 66.4 |  | only_one_extracted |
+| `qwen3.8-27b` | `parameters[ti50i = θti50 (iggbl/15)θτι50_iggbl exp]` |  |  | only_one_extracted |
 | `qwen3.8-27b` | `screen.primary_analyte` | belantamab_mafodotin ADC and cys-mcMMAF | belantamab_mafodotin | mismatch |
 
 </details>
@@ -275,48 +306,46 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained | ratio | tol | source |
-|---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row3:col1', 'Tab2:row3:col2'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row5:col1', 'Tab2:row5:col2'] |
-| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Tab2:row8:col1', 'Tab2:row8:col2'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row4:col1', 'Tab2:row4:col2'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row6:col1', 'Tab2:row6:col2'] |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q63 | pass | volume within physiological range | 4.21 L | not captured | not captured | ['Tab2:row4:col1', 'Tab2:row4:col2'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 6.63 L | not captured | not captured | ['Tab2:row6:col1', 'Tab2:row6:col2'] |
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 6 |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
+| C2_reference | pass |  |  |  |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Tab2:row3:col1', 'Tab2:row3:col2'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Tab2:row5:col1', 'Tab2:row5:col2'] |
+| C5_dimension_Q57 | pass | [time] |  | ['Tab2:row8:col1', 'Tab2:row8:col2'] |
+| C5_dimension_Q63 | pass | [length] ** 3 |  | ['Tab2:row4:col1', 'Tab2:row4:col2'] |
+| C5_dimension_Q64 | pass | [length] ** 3 |  | ['Tab2:row6:col1', 'Tab2:row6:col2'] |
+| C8_topology | pass |  |  |  |
+| C9_phys_window_Q63 | pass | volume within physiological range | 4.21 L | ['Tab2:row4:col1', 'Tab2:row4:col2'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 6.63 L | ['Tab2:row6:col1', 'Tab2:row6:col2'] |
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_param_coverage | not captured | skipped | not captured | not captured | not captured | no emitted model to inspect (engineer build absent) |
-| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
-| T1_cmax | reference | skipped | 43.7 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 0.498 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 0.976 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 22.9 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_beta | reference | skipped | 13.0 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_beta | reference | skipped | 16.8 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_beta | reference | skipped | 19.1 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_beta | reference | skipped | 13.2 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_beta | reference | skipped | 17.0 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| check | scenario | status | expected | note |
+|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_param_coverage |  | skipped |  | no emitted model to inspect (engineer build absent) |
+| T6_deviations |  | pass |  | no engineer deviations to adjudicate |
+| T1_cmax | reference | skipped | 43.7 | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 0.498 | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 0.976 | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 22.9 | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_beta | reference | skipped | 13.0 | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_beta | reference | skipped | 16.8 | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_beta | reference | skipped | 19.1 | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_beta | reference | skipped | 13.2 | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_beta | reference | skipped | 17 | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
-## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_belantamab_mafodotin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Papathanasiou_2025` / `Papathanasiou_2025::final`)
-
+</details>
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
@@ -341,4 +370,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 09:53 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbelantamab_mafodotin%5D%20BelantamabMafodotin_Papathanasiou2025_final&body=Drug%3A%20belantamab_mafodotin%0ARecord%3A%20BelantamabMafodotin_Papathanasiou2025_final%0APaper%3A%20Papathanasiou_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_belantamab_mafodotin/BelantamabMafodotin_Papathanasiou2025_final%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Generated by `docs.py` (scholarv2, release v26.09) · extracted 2026-10-07 09:53 UTC</sub>

@@ -1,21 +1,62 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D01A&quot;,&quot;href&quot;:&quot;atc/D01A.md&quot;},{&quot;label&quot;:&quot;fluconazole&quot;,&quot;href&quot;:&quot;drugs/drug_fluconazole/&quot;},{&quot;label&quot;:&quot;Tanzawa_2022 \u00b7 final&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fluconazole_Comisar2025_reference&quot;,&quot;label&quot;:&quot;Comisar_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluconazole/Fluconazole_Comisar2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluconazole_Matsuno2024_reference&quot;,&quot;label&quot;:&quot;Matsuno_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluconazole/Fluconazole_Matsuno2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fluconazole_Comisar2025_reference&quot;,&quot;label&quot;:&quot;Comisar_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluconazole/Fluconazole_Comisar2025_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluconazole_Matsuno2024_reference&quot;,&quot;label&quot;:&quot;Matsuno_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluconazole/Fluconazole_Matsuno2024_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # fluconazole — `Fluconazole_Tanzawa2022_final`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.833), gpt-oss:120b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
+
+> Fluconazole clearance, volume of distribution, and absorption lag time lacked extracted values, forcing the use of library placeholders.
+
+<div class="pk-model-meta" hidden drug="fluconazole" model-id="Fluconazole_Tanzawa2022_final" status="model_quarantined" stale="false" population="extremely low-birth-weight infants" measured-compound="fluconazole" parameterization="apparent" topology="1C"></div>
+
+## Citation
+Tanzawa A, Saito J, Shoji K, Kojo Y, Funaki T, Maruyama H et al. Fluconazole Population Pharmacokinetics after Fosfluconazole Administration and Dosing Optimization in Extremely Low-Birth-Weight Infants. Microbiology spectrum 10(2):e0195221 (2022).
+  ·  DOI: [10.1128/spectrum.01952-21](https://doi.org/10.1128/spectrum.01952-21)
+
+## Population and dosing
+
+**Population:** extremely low-birth-weight infants · condition healthy · age group neonate · n = &gt;=18.
+
+**Dosing:** 210 mg, iv, multiple, every 72 h.
+
+**Dosed compound ≠ measured compound:** dosed fosfluconazole, measured fluconazole.
+
+## Model
+
+**Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameterization:** CL/F, CLm/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Parameters:** 3 extracted.  
+**Availability:** Model withheld: a core parameter is unspecified.
+
+## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
+| label | parameter | value | unit |
+|---|---|---|---|
+| θkc | kfm | 0.43 | 1/h |
+| θPMA | θPMA | 1.52 |  |
+| θSCr | θSCr | -0.17 |  |
+| θALP | θALP | 0.1 |  |
+| θCL | θCL | 0.011 |  |
+| θV | θV | 0.95 | L/kg |
+| CL/F | CL/F | 24.1 | L/h |
+| ka | kabs | 3.86 | h−1 |
+
+## Caveats
+
+- Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.
+
+<details class="pk-evidence"><summary>Evidence &amp; review</summary>
+
+**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.833). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
-
-**Model:** Model withheld: a core parameter is unspecified.
-
-> **Caveat** (`covariates_not_exercised`): Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.
 
 ### Reviewer guidance
 
@@ -23,47 +64,34 @@
 
 The record lists typical values for clearance and volume, but the specific parameters for clearance, volume of distribution, and absorption lag time had no extracted values, so library placeholders were used. Consequently, the model was quarantined because these critical pharmacokinetic parameters relied on placeholders rather than explicit estimates. Additionally, the defined covariate effects were not exercised during simulation, leaving the model's response to patient characteristics unverified. Extracted — fluconazole: kfm 0.43 1/h, CL/F 24.1 L/h, kabs 3.86 h−1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has fosfluconazole, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl/f: this record has 24.1, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
 <sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
-> **Dose compound ≠ measured compound:** dosed `fosfluconazole`, measured `fluconazole`.
+### All parameter columns
 
-## Citation
-Tanzawa A et al., Fluconazole Population Pharmacokinetics…, Microbiology spectrum (2022)
-  ·  DOI: [10.1128/spectrum.01952-21](https://doi.org/10.1128/spectrum.01952-21)
-
-<div class="pk-model-meta" hidden drug="fluconazole" model-id="Fluconazole_Tanzawa2022_final" status="model_quarantined" stale="false" population="extremely low-birth-weight infants" measured-compound="fluconazole" parameterization="apparent" topology="1C"></div>
-
-**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 3 extracted.
-
-**Parameterization:** CL/F, CLm/F — apparent, F unknown (apparent — bioavailability not identifiable).
-
-## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| θkc | `Q305` · kfm | 0.43 | 1/h | 0.00011944444444444444 | 1/h | not captured | exact (1.0) | tab3:row10:col3 | — | not captured |
-| θPMA | `Q900` · θPMA | 1.52 | not captured | not captured | not captured | not captured | not captured (not captured) | not captured | — | not captured |
-| θSCr | `Q900` · θSCr | -0.17 | not captured | not captured | not captured | not captured | not captured (not captured) | not captured | — | not captured |
-| θALP | `Q900` · θALP | 0.1 | not captured | not captured | not captured | not captured | not captured (not captured) | not captured | — | not captured |
-| θCL | `Q900` · θCL | 0.011 | not captured | not captured | not captured | not captured | not captured (not captured) | tab3:row3:col3 | — | not captured |
-| θV | `Q900` · θV | 0.95 | L/kg | 0.0665 | not captured | not captured | not captured (not captured) | tab3:row8:col3 | — | not captured |
-| CL/F | `Q27` · CL/F | 24.1 | L/h | 6.6944444444444455e-06 | L/h | not captured | review_gapfill (0.7) | Comisar_2025:review | — | not captured |
-| ka | `Q49` · kabs | 3.86 | h−1 | 0.0010722222222222222 | 1/h | not captured | review_gapfill (0.7) | Comisar_2025:review | — | not captured |
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
+|---|---|---|---|---|---|---|---|---|
+| θkc | `Q305` · kfm | 0.43 | 1/h | 0.0001194 | 1/s | 1/h | exact (1) | tab3:row10:col3 |
+| θPMA | `Q900` · θPMA | 1.52 |  |  |  |  |  |  |
+| θSCr | `Q900` · θSCr | -0.17 |  |  |  |  |  |  |
+| θALP | `Q900` · θALP | 0.1 |  |  |  |  |  |  |
+| θCL | `Q900` · θCL | 0.011 |  |  |  |  |  | tab3:row3:col3 |
+| θV | `Q900` · θV | 0.95 | L/kg | 0.0665 | m3 |  |  | tab3:row8:col3 |
+| CL/F | `Q27` · CL/F | 24.1 | L/h | 6.694e-06 | m3/s | L/h | review_gapfill (0.7) | Comisar_2025:review |
+| ka | `Q49` · kabs | 3.86 | h−1 | 0.001072 | 1/s | 1/h | review_gapfill (0.7) | Comisar_2025:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ### Unresolved rows _(no Q-code or no value — not parameters)_
-| label (paper) | Q-code | value | link |
-|---|---|---|---|
-| θCL | Q351 | not captured | exact |
-| θV | Q61 | not captured | exact |
+
+| label (paper) | Q-code | link |
+|---|---|---|
+| θCL | Q351 | exact |
+| θV | Q61 | exact |
 
 ## Departures & gaps
 
@@ -126,30 +154,19 @@ Tanzawa A et al., Fluconazole Population Pharmacokinetics…, Microbiology spect
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
 | `gpt-oss-120b` | partly confirmed | 0.833 (10/12 fields) | 2 |
-| `gpt-oss:120b` | not confirmed | 0.286 (4/14 fields) | 10 |
 
-<details><summary>12 field discrepancies</summary>
+<details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[cl/f]` | 24.1 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[ka]` | 3.86 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
-| `gpt-oss:120b` | `parameters[θalp]` | 0.1 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[θalp]` | not captured | 0.1 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[θcl].parameter_id` | Q351 | Q22 | mismatch |
-| `gpt-oss:120b` | `parameters[θpma]` | 1.52 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[θpma]` | not captured | 1.52 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[θscr]` | -0.17 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[θscr]` | not captured | -0.17 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | fosfluconazole | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | fluconazole | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[cl/f]` | 24.1 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 3.86 |  | only_one_extracted |
 
 </details>
 
@@ -161,41 +178,37 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained | ratio | tol | source |
-|---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Comisar_2025:review'] |
-| C5_dimension_Q305 | pass | 1 / [time] | not captured | not captured | not captured | ['tab3:row10:col3'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Comisar_2025:review'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab3:row8:col3'] |
-| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 24.1 L/h | not captured | not captured | ['Comisar_2025:review'] |
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 3 |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Comisar_2025:review'] |
+| C5_dimension_Q305 | pass | 1 / [time] |  | ['tab3:row10:col3'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['Comisar_2025:review'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['tab3:row8:col3'] |
+| C7_apparent_coherence | pass |  |  |  |
+| C8_topology | pass |  |  |  |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 24.1 L/h | ['Comisar_2025:review'] |
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
-| T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable | not captured | LLM adjudication → deterministic rule |
+| check | scenario | status | expected | obtained | note |
+|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
+| T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Validation definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
-## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_fluconazole/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Tanzawa_2022` / `Tanzawa_2022::final`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_fluconazole/models/modelica/_needs_review/Fluconazole_Tanzawa2022_final.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_fluconazole/models/modelica/_needs_review/Fluconazole_Tanzawa2022_final.deviation.json`
-
+</details>
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
@@ -220,4 +233,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 12:53 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfluconazole%5D%20Fluconazole_Tanzawa2022_final&body=Drug%3A%20fluconazole%0ARecord%3A%20Fluconazole_Tanzawa2022_final%0APaper%3A%20Tanzawa_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fluconazole/Fluconazole_Tanzawa2022_final%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Generated by `docs.py` (scholarv2, release v26.09) · extracted 2026-10-07 12:53 UTC</sub>

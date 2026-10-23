@@ -2,11 +2,11 @@
  "dose_source": "library default",
  "model_id": "Doxorubicin_Mody2023_reference",
  "molar_masses": {
-  "C_central": 0.5435193
+  "central.C": 0.5435193
  },
  "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "C_central"
+  "central.C"
  ],
  "parameters": {
   "Cl": 1.4805555555555555e-05,
@@ -21,10 +21,10 @@
   "weight": 70.0
  },
  "reference_peak_times": {
-  "C_central": 660.000000066219
+  "central.C": 660.000000066203
  },
  "reference_peaks": {
-  "C_central": 1.9195346510096205e-05
+  "central.C": 1.919534651011933e-05
  },
  "stop_time": 86400.0,
  "template": "PK_2C",

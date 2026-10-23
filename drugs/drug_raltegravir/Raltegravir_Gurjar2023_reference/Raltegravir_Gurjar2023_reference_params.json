@@ -12,6 +12,14 @@
  "paper_doses_mg": [
   400.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Gurjar_2023:results_prose",
+    "value_si": 0.0014399999999999999
+   }
+  ]
+ },
  "parameters": {
   "Cl": 1.5499999999999997e-05,
   "F": 1.0,

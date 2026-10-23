@@ -8,6 +8,14 @@
  "observables": [
   "central.C"
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Ly_2023:results_prose",
+    "value_si": 23.0
+   }
+  ]
+ },
  "parameters": {
   "Cl": 5.694444444444444e-07,
   "F": 1.0,

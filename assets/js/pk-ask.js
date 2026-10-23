@@ -371,13 +371,21 @@
     var sql, title;
     switch (p.intent) {
       case 'param_values':
+        // value_norm / unit_norm: value_si in one reader's unit per kind (the drug page's
+        // cross-study table uses the same conversion), so rows from different papers compare
         sql = "SELECT d.generic_name AS drug, q.name AS parameter, p.value, p.unit_verbatim AS unit,\n" +
+              "       CASE p.unit_si WHEN 'm3/s' THEN p.value_si * 3600000 WHEN 'm3' THEN p.value_si * 1000\n" +
+              "         WHEN '1/s' THEN p.value_si * 3600 WHEN 's' THEN p.value_si / 3600 END AS value_norm,\n" +
+              "       CASE p.unit_si WHEN 'm3/s' THEN 'L/h' WHEN 'm3' THEN 'L' WHEN '1/s' THEN '1/h'\n" +
+              "         WHEN 's' THEN 'h' END AS unit_norm,\n" +
               "       p.compound, r.population, r.stem AS paper, r.status, p.link_method, r.model_id,\n" +
               "       p.value_si, p.unit_si\n" +
               "FROM parameter p JOIN record r ON r.id = p.record_id\n" +
               "JOIN drug d ON d.slug = r.drug_slug\n" +
               "JOIN qcode q ON q.parameter_id = p.parameter_id\n" +
-              "WHERE p.parameter_id IN (" + inList(codes) + ")" + drugF + "\n" +
+              // a row without a value is a label the paper printed, not a reported value: the
+              // summary counts values, so the table must list the same rows
+              "WHERE p.parameter_id IN (" + inList(codes) + ") AND p.value IS NOT NULL" + drugF + "\n" +
               "ORDER BY d.generic_name, q.name, r.stem LIMIT 300;";
         title = p.params.label + ' — ' + who + (p.population ? ' · ' + p.population.label : '');
         break;

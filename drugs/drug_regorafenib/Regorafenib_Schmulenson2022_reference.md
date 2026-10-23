@@ -4,15 +4,58 @@
 
 # regorafenib — `Regorafenib_Schmulenson2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.643). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
+
+> The regorafenib record was rejected for a disconnected capecitabine metabolite pathway, although it reports regorafenib CL/F of 1.94 L/h.
+
+<div class="pk-model-meta" hidden drug="regorafenib" model-id="Regorafenib_Schmulenson2022_reference" status="rejected" stale="false" population="patients with locally advanced rectal cancer" measured-compound="regorafenib" parameterization="apparent" topology="general_linear"></div>
+
+## Citation
+Schmulenson E, Bovet C, Theurillat R, Decosterd LA, Largiadèr CR, Prost JC et al. Population pharmacokinetic analyses of regorafenib and capecitabine in patients with locally advanced rectal cancer (SAKK 41/16 RECAP). British journal of clinical pharmacology 88(12):5336–5347 (2022).
+  ·  DOI: [10.1111/bcp.15461](https://doi.org/10.1111/bcp.15461)
+
+## Population and dosing
+
+**Population:** patients with locally advanced rectal cancer · condition locally advanced rectal cancer · n = 25.
+
+**Dosing:** 40, 80, 120 mg, oral, multiple, every 24 h.
+
+**Dosed compound ≠ measured compound:** dosed regorafenib and capecitabine, measured regorafenib.
+
+## Model
+
+**Structure:** general linear; no model was built for this record.  
+**Parameterization:** CL/F, CLm/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Parameters:** 12 extracted.  
+**Availability:** No model was generated from this record.
+
+## Parameters
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
+| label | parameter | value | unit | RSE% |
+|---|---|---|---|---|
+| CLRegorafenib/F [L/h] | CL/F | 1.94 | L/h | 12.1 |
+| Vc/F [L] | V1/F | 10.4 | L | 33.2 |
+| MATRegorafenib [h] | MAT | 3.01 | h | 9.6 |
+| Vp/F [L] | V2/F | 63.9 | L | 8.7 |
+| Q/F [L/h] | Q/F | 13.5 | L/h | 10.8 |
+| CLM-2/F [L/h] | CL/F | 0.936 | L/h | 10.8 |
+| kg,met [1/h] | kfm | 0.265 | 1/h | 12.8 |
+| MATM-2 [h] | MAT | 1.90 | h | 14.1 |
+| CLM-5/F [L/h] | CL/F | 2.01 | L/h | 21.7 |
+| CLM-2/F [%] | CLm/F | 25.2 |  | 33.6 |
+| CLM-5/F [%] | CLm/F | 75.6 |  | 22.3 |
+| REG ka IREG (n = 8) | kabs | 0.41 | h−1 |  |
+
+<details class="pk-evidence"><summary>Evidence &amp; review</summary>
+
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.643). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
-
-**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -24,40 +67,26 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which co
 
 <sub>reviewed by gpt-6-luna</sub>
 
-> **Dose compound ≠ measured compound:** dosed `regorafenib and capecitabine`, measured `regorafenib`.
+### All parameter columns
 
-## Citation
-Schmulenson E et al., Population pharmacokinetic analyses of…, British journal of clinical… (2022)
-  ·  DOI: [10.1111/bcp.15461](https://doi.org/10.1111/bcp.15461)
-
-<div class="pk-model-meta" hidden drug="regorafenib" model-id="Regorafenib_Schmulenson2022_reference" status="rejected" stale="false" population="patients with locally advanced rectal cancer" measured-compound="regorafenib" parameterization="apparent" topology="general_linear"></div>
-
-**Model structure:** general linear; no model was built for this record.  
-**Parameters:** 12 extracted.
-
-**Parameterization:** CL/F, CLm/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
-
-## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| CLRegorafenib/F [L/h] | `Q27` · CL/F | 1.94 | L/h | 5.388888888888888e-07 | [l] / [h] | 12.1 | llm (0.6) | Schmulenson_2022_table_p7_1:row0:col1 | — | not captured |
-| Vc/F [L] | `Q290` · V1/F | 10.4 | L | 0.010400000000000001 | [l] | 33.2 | llm_confirmed (0.6) | Schmulenson_2022_table_p7_1:row1:col1 | — | not captured |
-| MATRegorafenib [h] | `Q73` · MAT | 3.01 | h | 10836.0 | [h] | 9.6 | llm (0.6) | Schmulenson_2022_table_p7_1:row2:col1 | — | not captured |
-| Vp/F [L] | `Q82` · V2/F | 63.9 | L | 0.0639 | [l] | 8.7 | llm_confirmed (0.6) | Schmulenson_2022_table_p7_1:row3:col1 | — | not captured |
-| Q/F [L/h] | `Q69` · Q/F | 13.5 | L/h | 3.75e-06 | [l] / [h] | 10.8 | llm_confirmed (0.6) | Schmulenson_2022_table_p7_1:row4:col1 | — | not captured |
-| CLM-2/F [L/h] | `Q27` · CL/F | 0.936 | L/h | 2.6000000000000005e-07 | [l] / [h] | 10.8 | exact (1.0) | Schmulenson_2022_table_p7_1:row5:col1 | — | not captured |
-| kg,met [1/h] | `Q305` · kfm | 0.265 | 1/h | 7.361111111111111e-05 | [1] / [h] | 12.8 | exact (1.0) | Schmulenson_2022_table_p7_1:row6:col1 | — | not captured |
-| MATM-2 [h] | `Q73` · MAT | 1.90 | h | 6840.0 | [h] | 14.1 | llm (0.6) | Schmulenson_2022_table_p7_1:row7:col1 | — | not captured |
-| CLM-5/F [L/h] | `Q27` · CL/F | 2.01 | L/h | 5.583333333333332e-07 | [l] / [h] | 21.7 | exact (1.0) | Schmulenson_2022_table_p7_1:row8:col1 | — | not captured |
-| CLM-2/F [%] | `Q351` · CLm/F | 25.2 | not captured | not captured | not captured | 33.6 | llm_confirmed (0.6) | Schmulenson_2022_table_p7_1:row13:col1 | — | not captured |
-| CLM-5/F [%] | `Q351` · CLm/F | 75.6 | not captured | not captured | not captured | 22.3 | llm_confirmed (0.6) | Schmulenson_2022_table_p7_1:row14:col1 | — | not captured |
-| REG ka IREG (n = 8) | `Q49` · kabs | 0.41 | h−1 | 0.00011388888888888888 | 1/h | not captured | review_gapfill (0.7) | Szkutnik-Fiedler_2024:review | — | not captured |
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | RSE% | link | source |
+|---|---|---|---|---|---|---|---|---|---|
+| CLRegorafenib/F [L/h] | `Q27` · CL/F | 1.94 | L/h | 5.389e-07 | m3/s | l/h | 12.1 | llm (0.6) | Schmulenson_2022_table_p7_1:row0:col1 |
+| Vc/F [L] | `Q290` · V1/F | 10.4 | L | 0.0104 | m3 | l | 33.2 | llm_confirmed (0.6) | Schmulenson_2022_table_p7_1:row1:col1 |
+| MATRegorafenib [h] | `Q73` · MAT | 3.01 | h | 1.084e+04 | s | h | 9.6 | llm (0.6) | Schmulenson_2022_table_p7_1:row2:col1 |
+| Vp/F [L] | `Q82` · V2/F | 63.9 | L | 0.0639 | m3 | l | 8.7 | llm_confirmed (0.6) | Schmulenson_2022_table_p7_1:row3:col1 |
+| Q/F [L/h] | `Q69` · Q/F | 13.5 | L/h | 3.75e-06 | m3/s | l/h | 10.8 | llm_confirmed (0.6) | Schmulenson_2022_table_p7_1:row4:col1 |
+| CLM-2/F [L/h] | `Q27` · CL/F | 0.936 | L/h | 2.6e-07 | m3/s | l/h | 10.8 | exact (1) | Schmulenson_2022_table_p7_1:row5:col1 |
+| kg,met [1/h] | `Q305` · kfm | 0.265 | 1/h | 7.361e-05 | 1/s | 1/h | 12.8 | exact (1) | Schmulenson_2022_table_p7_1:row6:col1 |
+| MATM-2 [h] | `Q73` · MAT | 1.90 | h | 6840 | s | h | 14.1 | llm (0.6) | Schmulenson_2022_table_p7_1:row7:col1 |
+| CLM-5/F [L/h] | `Q27` · CL/F | 2.01 | L/h | 5.583e-07 | m3/s | l/h | 21.7 | exact (1) | Schmulenson_2022_table_p7_1:row8:col1 |
+| CLM-2/F [%] | `Q351` · CLm/F | 25.2 |  |  |  |  | 33.6 | llm_confirmed (0.6) | Schmulenson_2022_table_p7_1:row13:col1 |
+| CLM-5/F [%] | `Q351` · CLm/F | 75.6 |  |  |  |  | 22.3 | llm_confirmed (0.6) | Schmulenson_2022_table_p7_1:row14:col1 |
+| REG ka IREG (n = 8) | `Q49` · kabs | 0.41 | h−1 | 0.0001139 | 1/s | 1/h |  | review_gapfill (0.7) | Szkutnik-Fiedler_2024:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ## Departures & gaps
@@ -121,14 +150,14 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `qwen3.8-27b` | `model.links` | [['regorafenib', 'm-2', 'metabolism'], ['regorafenib', 'm-5', 'metabolism'], ['capecitabine', "5'-deoxy-5-fluorocytidine (dfcr)", 'metabolism'], ["5'-deoxy-5-fluorocytidine (dfcr)", "5'-deoxy-5-fluorouridine (dfur)", 'metabolism']] | [['regorafenib', 'm-2', 'metabolism'], ['regorafenib', 'm-5', 'metabolism'], ['capecitabine', "5'-deoxy-5-fluorocytidine", 'metabolism'], ['capecitabine', "5'-deoxy-5-fluorouridine", 'metabolism']] | mismatch |
-| `qwen3.8-27b` | `parameters[clregorafenib/f [l/h]]` | not captured | 1.94 | only_one_extracted |
-| `qwen3.8-27b` | `parameters[clregorafenib/f [l/h]]` | 1.94 | not captured | only_one_extracted |
-| `qwen3.8-27b` | `parameters[kg,met [1/h]]` | not captured | 0.265 | only_one_extracted |
-| `qwen3.8-27b` | `parameters[kg,met [1/h]]` | 0.265 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[clregorafenib/f [l/h]]` |  | 1.94 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[clregorafenib/f [l/h]]` | 1.94 |  | only_one_extracted |
+| `qwen3.8-27b` | `parameters[kg,met [1/h]]` |  | 0.265 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[kg,met [1/h]]` | 0.265 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[matm-2 [h]].parameter_id` | Q73 | Q49 | mismatch |
-| `qwen3.8-27b` | `parameters[matregorafenib [h]]` | not captured | 3.01 | only_one_extracted |
-| `qwen3.8-27b` | `parameters[matregorafenib [h]]` | 3.01 | not captured | only_one_extracted |
-| `qwen3.8-27b` | `parameters[reg ka ireg]` | 0.41 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[matregorafenib [h]]` |  | 3.01 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[matregorafenib [h]]` | 3.01 |  | only_one_extracted |
+| `qwen3.8-27b` | `parameters[reg ka ireg]` | 0.41 |  | only_one_extracted |
 | `qwen3.8-27b` | `screen.dose_compound` | regorafenib and capecitabine | regorafenib | mismatch |
 
 </details>
@@ -141,40 +170,38 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained | ratio | tol | source |
-|---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 11 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Schmulenson_2022_table_p7_1:row0:col1'] |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Schmulenson_2022_table_p7_1:row5:col1'] |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Schmulenson_2022_table_p7_1:row8:col1'] |
-| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['Schmulenson_2022_table_p7_1:row1:col1'] |
-| C5_dimension_Q305 | pass | 1 / [time] | not captured | not captured | not captured | ['Schmulenson_2022_table_p7_1:row6:col1'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Szkutnik-Fiedler_2024:review'] |
-| C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Schmulenson_2022_table_p7_1:row4:col1'] |
-| C5_dimension_Q73 | pass | [time] | not captured | not captured | not captured | ['Schmulenson_2022_table_p7_1:row2:col1'] |
-| C5_dimension_Q73 | pass | [time] | not captured | not captured | not captured | ['Schmulenson_2022_table_p7_1:row7:col1'] |
-| C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['Schmulenson_2022_table_p7_1:row3:col1'] |
-| C5_unit_missing_Q351 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['Schmulenson_2022_table_p7_1:row13:col1'] |
-| C5_unit_missing_Q351 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['Schmulenson_2022_table_p7_1:row14:col1'] |
-| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
-| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none', 'none', 'none'] | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 1.94 L/h | not captured | not captured | ['Schmulenson_2022_table_p7_1:row0:col1'] |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 0.936 L/h | not captured | not captured | ['Schmulenson_2022_table_p7_1:row5:col1'] |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 2.01 L/h | not captured | not captured | ['Schmulenson_2022_table_p7_1:row8:col1'] |
-| C9_phys_window_Q290 | pass | volume within physiological range | 10.4 L | not captured | not captured | ['Schmulenson_2022_table_p7_1:row1:col1'] |
-| C9_phys_window_Q82 | pass | volume within physiological range | 63.9 L | not captured | not captured | ['Schmulenson_2022_table_p7_1:row3:col1'] |
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 11 |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Schmulenson_2022_table_p7_1:row0:col1'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Schmulenson_2022_table_p7_1:row5:col1'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Schmulenson_2022_table_p7_1:row8:col1'] |
+| C5_dimension_Q290 | pass | [length] ** 3 |  | ['Schmulenson_2022_table_p7_1:row1:col1'] |
+| C5_dimension_Q305 | pass | 1 / [time] |  | ['Schmulenson_2022_table_p7_1:row6:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['Szkutnik-Fiedler_2024:review'] |
+| C5_dimension_Q69 | pass | [length] ** 3 / [time] |  | ['Schmulenson_2022_table_p7_1:row4:col1'] |
+| C5_dimension_Q73 | pass | [time] |  | ['Schmulenson_2022_table_p7_1:row2:col1'] |
+| C5_dimension_Q73 | pass | [time] |  | ['Schmulenson_2022_table_p7_1:row7:col1'] |
+| C5_dimension_Q82 | pass | [length] ** 3 |  | ['Schmulenson_2022_table_p7_1:row3:col1'] |
+| C5_unit_missing_Q351 | fail | [length] ** 3 / [time] |  | ['Schmulenson_2022_table_p7_1:row13:col1'] |
+| C5_unit_missing_Q351 | fail | [length] ** 3 / [time] |  | ['Schmulenson_2022_table_p7_1:row14:col1'] |
+| C7_apparent_coherence | pass |  |  |  |
+| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none', 'none', 'none'] |  |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 1.94 L/h | ['Schmulenson_2022_table_p7_1:row0:col1'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 0.936 L/h | ['Schmulenson_2022_table_p7_1:row5:col1'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 2.01 L/h | ['Schmulenson_2022_table_p7_1:row8:col1'] |
+| C9_phys_window_Q290 | pass | volume within physiological range | 10.4 L | ['Schmulenson_2022_table_p7_1:row1:col1'] |
+| C9_phys_window_Q82 | pass | volume within physiological range | 63.9 L | ['Schmulenson_2022_table_p7_1:row3:col1'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
-## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_regorafenib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Schmulenson_2022` / `Schmulenson_2022::reference`)
-
+</details>
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
@@ -189,4 +216,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 05:40 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bregorafenib%5D%20Regorafenib_Schmulenson2022_reference&body=Drug%3A%20regorafenib%0ARecord%3A%20Regorafenib_Schmulenson2022_reference%0APaper%3A%20Schmulenson_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_regorafenib/Regorafenib_Schmulenson2022_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Generated by `docs.py` (scholarv2, release v26.09) · extracted 2026-10-07 05:40 UTC</sub>

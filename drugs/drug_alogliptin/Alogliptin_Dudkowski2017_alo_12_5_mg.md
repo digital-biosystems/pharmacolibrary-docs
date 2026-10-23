@@ -1,19 +1,57 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;alogliptin&quot;,&quot;href&quot;:&quot;drugs/drug_alogliptin/&quot;},{&quot;label&quot;:&quot;Dudkowski_2017 \u00b7 alo_12_5_mg&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Alogliptin_Dudkowski2017_final_parameter_estimate&quot;,&quot;label&quot;:&quot;Dudkowski_2017_final_parameter_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alogliptin/Alogliptin_Dudkowski2017_final_parameter_estimate.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Alogliptin_Dudkowski2017_final_parameter_estimate&quot;,&quot;label&quot;:&quot;Dudkowski_2017_final_parameter_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alogliptin/Alogliptin_Dudkowski2017_final_parameter_estimate.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # alogliptin — `Alogliptin_Dudkowski2017_alo_12_5_mg`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+
+> The reviewer's verdict (Rejected, 2026-09-28 14:35 UTC) predates the latest extraction (2026-10-04 22:10 UTC); the status shown comes from the current checks. The alogliptin two-compartment record was rejected because its model structure contains an unreachable compartment, and the reported AUCt value of 1570 %·hr could not be converted to SI units.
+
+<div class="pk-model-meta" hidden drug="alogliptin" model-id="Alogliptin_Dudkowski2017_alo_12_5_mg" status="needs_review" stale="true" population="children, adolescents, and adults with type 2 diabetes mellitus" measured-compound="alogliptin" parameterization="apparent" topology="2C"></div>
+
+## Citation
+Dudkowski C, Tsai M, Liu J, Zhao Z, Schmidt E, Xie J. The pharmacokinetics and pharmacodynamics of alogliptin in children, adolescents, and adults with type 2 diabetes mellitus. European journal of clinical pharmacology 73(3):279–288 (2017).
+  ·  DOI: [10.1007/s00228-016-2175-1](https://doi.org/10.1007/s00228-016-2175-1)
+
+## Population and dosing
+
+**Population:** children, adolescents, and adults with type 2 diabetes mellitus · condition type 2 diabetes mellitus · age group mixed.
+
+**Dosing:** 12.5, 25 mg, oral, single.
+
+## Model
+
+**Structure:** 2-compartment; no model was built for this record.  
+**Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Parameters:** 9 extracted.  
+**Availability:** No model was generated from this record.
+
+## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
+| label | parameter | value | unit |
+|---|---|---|---|
+| AUEC0–24 (%·hr) | AUCt | 1570 | %·hr |
+| Cmax (ng/mL) | Cmax | 57.855 | ng/mL |
+| AUC0-inf (ng·hr./mL) | AUC∞ | 789.318 | ng·hr./mL |
+| CL/F (L/hr) | CL/F | 16.2116 | L/hr |
+| Vz/F (L) | V/F | 387.720 | L |
+| T1/2 (hr) | t1/2z | 16.7519 | hr |
+| CLr (L/hr) | CLR | 11.624 | L/hr |
+| Fe (%) | fe | 60.713 |  |
+| Central volume of distribution [V2/F] (L) | V1 | 27.6 | L |
+
+<details class="pk-evidence"><summary>Evidence &amp; review</summary>
+
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
-
-**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -25,37 +63,23 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:35:58.847644+00:00) predates the upstream re-run (2026-10-04 22:10:02.381001+00:00). Current validate status: `needs_review`.
+### All parameter columns
 
-## Citation
-Dudkowski C et al., The pharmacokinetics and pharmacodynami…, European journal of clinica… (2017)
-  ·  DOI: [10.1007/s00228-016-2175-1](https://doi.org/10.1007/s00228-016-2175-1)
-
-<div class="pk-model-meta" hidden drug="alogliptin" model-id="Alogliptin_Dudkowski2017_alo_12_5_mg" status="needs_review" stale="true" population="children, adolescents, and adults with type 2 diabetes mellitus" measured-compound="alogliptin" parameterization="apparent" topology="2C"></div>
-
-**Model structure:** 2-compartment; no model was built for this record.  
-**Parameters:** 9 extracted.
-
-**Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
-
-## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| AUEC0–24 (%·hr) | `Q19` · AUCt | 1570 | %·hr | not captured | [h] · [%] | not captured | llm (0.6) | Tab3:row4:col3 | — | not captured |
-| Cmax (ng/mL) | `Q32` · Cmax | 57.855 | ng/mL | not captured | [ng] / [ml] | not captured | exact (1.0) | Dudkowski_2017_table_2:row3:col1 | — | not captured |
-| AUC0-inf (ng·hr./mL) | `Q17` · AUC∞ | 789.318 | ng·hr./mL | not captured | [[h] · [ng]] / [ml] | not captured | exact (1.0) | Dudkowski_2017_table_2:row5:col1 | — | not captured |
-| CL/F (L/hr) | `Q27` · CL/F | 16.2116 | L/hr | 4.503222222222222e-06 | [l] / [h] | not captured | exact (1.0) | Dudkowski_2017_table_2:row6:col1 | — | not captured |
-| Vz/F (L) | `Q76` · V/F | 387.720 | L | 0.38772 | [l] | not captured | exact (1.0) | Dudkowski_2017_table_2:row7:col1 | — | not captured |
-| T1/2 (hr) | `Q57` · t1/2z | 16.7519 | hr | 60306.84 | [h] | not captured | exact (1.0) | Dudkowski_2017_table_2:row8:col1 | — | not captured |
-| CLr (L/hr) | `Q26` · CLR | 11.624 | L/hr | 3.228888888888889e-06 | [l] / [h] | not captured | exact (1.0) | Dudkowski_2017_table_2:row9:col1 | — | not captured |
-| Fe (%) | `Q44` · fe | 60.713 | not captured | not captured | not captured | not captured | exact (1.0) | Dudkowski_2017_table_2:row10:col1 | — | not captured |
-| Central volume of distribution [V2/F] (L) | `Q63` · V1 | 27.6 | L | 0.027600000000000003 | [l] | not captured | boundary_compartment (0.9) | Dudkowski_2017_table_S1:row3:col4 | — | not captured |
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
+|---|---|---|---|---|---|---|---|---|
+| AUEC0–24 (%·hr) | `Q19` · AUCt | 1570 | %·hr |  |  | h·% | llm (0.6) | Tab3:row4:col3 |
+| Cmax (ng/mL) | `Q32` · Cmax | 57.855 | ng/mL |  |  | ng/ml | exact (1) | Dudkowski_2017_table_2:row3:col1 |
+| AUC0-inf (ng·hr./mL) | `Q17` · AUC∞ | 789.318 | ng·hr./mL |  |  | (h·ng)/ml | exact (1) | Dudkowski_2017_table_2:row5:col1 |
+| CL/F (L/hr) | `Q27` · CL/F | 16.2116 | L/hr | 4.503e-06 | m3/s | l/h | exact (1) | Dudkowski_2017_table_2:row6:col1 |
+| Vz/F (L) | `Q76` · V/F | 387.720 | L | 0.3877 | m3 | l | exact (1) | Dudkowski_2017_table_2:row7:col1 |
+| T1/2 (hr) | `Q57` · t1/2z | 16.7519 | hr | 6.031e+04 | s | h | exact (1) | Dudkowski_2017_table_2:row8:col1 |
+| CLr (L/hr) | `Q26` · CLR | 11.624 | L/hr | 3.229e-06 | m3/s | l/h | exact (1) | Dudkowski_2017_table_2:row9:col1 |
+| Fe (%) | `Q44` · fe | 60.713 |  |  |  |  | exact (1) | Dudkowski_2017_table_2:row10:col1 |
+| Central volume of distribution [V2/F] (L) | `Q63` · V1 | 27.6 | L | 0.0276 | m3 | l | boundary_compartment (0.9) | Dudkowski_2017_table_S1:row3:col4 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ## Departures & gaps
@@ -129,8 +153,8 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `parameters[auec0-24].parameter_id` | Q19 | Q84 | mismatch |
-| `gpt-oss:120b` | `parameters[e24]` | not captured | 52.0 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[fe]` | 60.713 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[e24]` |  | 52.0 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[fe]` | 60.713 |  | only_one_extracted |
 | `gpt-oss:120b` | `screen.dose_compound` | alogliptin | unknown | mismatch |
 | `gpt-oss:120b` | `screen.primary_analyte` | alogliptin | unknown | mismatch |
 
@@ -146,33 +170,31 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 9 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C2_base_Q44 | fail | 60.713 | 70.0 | 1.153 | 0.05 | footnote reference category |
-| C5_dimension_Q17 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Dudkowski_2017_table_2:row5:col1'] |
-| C5_dimension_Q26 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Dudkowski_2017_table_2:row9:col1'] |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Dudkowski_2017_table_2:row6:col1'] |
-| C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Dudkowski_2017_table_2:row3:col1'] |
-| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Dudkowski_2017_table_2:row8:col1'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Dudkowski_2017_table_S1:row3:col4'] |
-| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Dudkowski_2017_table_2:row7:col1'] |
-| C5_unit_missing_Q19 | fail | [mass] * [time] / [length] ** 3 | %·hr | not captured | not captured | ['Tab3:row4:col3'] |
-| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 16.2 L/h | not captured | not captured | ['Dudkowski_2017_table_2:row6:col1'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 27.6 L | not captured | not captured | ['Dudkowski_2017_table_S1:row3:col4'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 388 L | not captured | not captured | ['Dudkowski_2017_table_2:row7:col1'] |
+| C0_has_structural_params | pass |  | 9 |  |  |  |
+| C0b_disposition_core | pass |  |  |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |  |  |
+| C2_base_Q44 | fail | 60.71 | 70 | 1.153 | 0.05 | footnote reference category |
+| C5_dimension_Q17 | pass | [mass] * [time] / [length] ** 3 |  |  |  | ['Dudkowski_2017_table_2:row5:col1'] |
+| C5_dimension_Q26 | pass | [length] ** 3 / [time] |  |  |  | ['Dudkowski_2017_table_2:row9:col1'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  |  |  | ['Dudkowski_2017_table_2:row6:col1'] |
+| C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  |  |  | ['Dudkowski_2017_table_2:row3:col1'] |
+| C5_dimension_Q57 | pass | [time] |  |  |  | ['Dudkowski_2017_table_2:row8:col1'] |
+| C5_dimension_Q63 | pass | [length] ** 3 |  |  |  | ['Dudkowski_2017_table_S1:row3:col4'] |
+| C5_dimension_Q76 | pass | [length] ** 3 |  |  |  | ['Dudkowski_2017_table_2:row7:col1'] |
+| C5_unit_missing_Q19 | fail | [mass] * [time] / [length] ** 3 | %·hr |  |  | ['Tab3:row4:col3'] |
+| C7_apparent_coherence | pass |  |  |  |  |  |
+| C8_topology | pass |  |  |  |  |  |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 16.2 L/h |  |  | ['Dudkowski_2017_table_2:row6:col1'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 27.6 L |  |  | ['Dudkowski_2017_table_S1:row3:col4'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 388 L |  |  | ['Dudkowski_2017_table_2:row7:col1'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
-## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_alogliptin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Dudkowski_2017` / `Dudkowski_2017::alo_12_5_mg`)
-
+</details>
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
@@ -197,4 +219,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 22:10 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Balogliptin%5D%20Alogliptin_Dudkowski2017_alo_12_5_mg&body=Drug%3A%20alogliptin%0ARecord%3A%20Alogliptin_Dudkowski2017_alo_12_5_mg%0APaper%3A%20Dudkowski_2017%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_alogliptin/Alogliptin_Dudkowski2017_alo_12_5_mg%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Generated by `docs.py` (scholarv2, release v26.09) · extracted 2026-10-04 22:10 UTC</sub>

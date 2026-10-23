@@ -1,17 +1,21 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;chromium&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;Chromium&quot;}]"></div>
 
-# chromium
+# Chromium
 
-- **generic name:** not captured
+- **generic name:** Chromium
 - **ATC codes:** not captured
 - **DrugBank:** not captured · **PubChem:** [CID 23976](https://pubchem.ncbi.nlm.nih.gov/compound/23976)
 - **groups:** approved
 
-## Extraction summary
+## About
 
-| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
-|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-08 15:11 | 1:05:45 | 0/0/0 | 0/0/0 | 0/0/0 | 915,704/20,009 | ollama / qwen3.8:27b-mtp-q8_0 | 70 | 13/56 | 66/3 | 0 |
+**Description.** Chromium is a transition element with the chemical symbol Cr and atomic number 24 that belongs to Group 6 of the periodic table. It is used in various chemical, industrial and manufacturing applications such as wood preservation and metallurgy. The uses of chromium compounds depend on the valency of chromium, where trivalent Cr (III) compounds are used for dietary Cr supplementation and hexavalent Cr (VI) compounds are used as corrosion inhibitors in commercial settings and are known to be human carcinogens [L1982]. Humans can be exposed to chromium via ingestion, inhalation, and dermal or ocular exposure [L1983]. Trivalent chromium (Cr(III)) ion is considered to be an essential dietary trace element as it is involved in metabolism of blood glucose, regulation of insulin resistance and metabolism of lipids. Clinical trials and other studies suggest the evidence of chromium intake improving glucose tolerance in patients with Type I and II diabetes, however its clinical application in the standard management of type II diabetes mellitus is not established. Chromium deficiency has been associated with a diabetic-like state, impaired growth, decreased fertility and increased risk of cardiovascular diseases [A32343, A32351, L1982].
+
+According to the National Institute of Health, the daily dietary reference intake (DRI) of chromium for adult male and non-pregnant female are 35 μg and 25 μg, respectively [L1986]. Chromium picolinate capsules may be used as nutritional adjuvant in patients with or at risk of type 2 diabetes mellitus (T2DM) to improve blood sugar metabolism and stabilize the levels of serum cholesterol. Chromium chloride is available as an intravenous injection for use as a supplement to intravenous solutions given for total parenteral nutrition (TPN) [FDA Label].
+
+**Indication.** Indicated for use as a supplement to intravenous solutions given for total parenteral nutrition (TPN), to maintain chromium serum levels and to prevent depletion of endogenous stores and subsequent deficiency symptoms [FDA Label].
+
+<p><small>Source: <a href="https://go.drugbank.com/drugs/DB11136">DrugBank DB11136</a> · <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></small></p>
 
 ## popPK records
 
@@ -19,9 +23,17 @@ _not available_
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-09-08 15:11 | 1:05:45 | 0/0/0 | 0/0/0 | 0/0/0 | 915,704/20,009 | ollama / qwen3.8:27b-mtp-q8_0 | 70 | 13/56 | 66/3 | 0 |
 
 ## Coverage
 
@@ -95,7 +107,7 @@ _14 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | PD | Dede_2017_2 | irrelevant | 0 | 0 | The paper focuses on PBPK modeling to optimize sampling times for exposure biomonitoring and does not report any adverse toxicodynamic endpoints or dose-response relationships for chromium. |
 | PGx | Dede_2017_2 | not_relevant | 0 | 0 | The paper focuses on PBPK modeling for environmental exposure to elements and does not report any pharmacogenomic effects on PK/PD parameters. |
 | popPK | Domingo-Relloso_2019 | irrelevant | 0 | 0 | The study is an epidemiological analysis of urinary metal concentrations and cardiovascular risk, not a pharmacokinetic study reporting disposition parameters for chromium. |
-| PD | Domingo-Relloso_2019 | not_relevant | 0 | 0 | not captured |
+| PD | Domingo-Relloso_2019 | not_relevant | 0 | 0 |  |
 | popPK | El-Samad_2024 | irrelevant | 0 | 0 | The paper is an ecotoxicological study on heavy metal pollution in aquatic insects, not a pharmacokinetic study of chromium as a drug. |
 | popPK | Eleveld_2026 | irrelevant | 0 | 0 | The paper is a software validation study comparing OpenPMX and NONMEM using simulated data for propofol, fentanyl, and warfarin, and does not report pharmacokinetic parameters for chromium. |
 | PD | Eleveld_2026 | irrelevant | 0 | 0 | The paper is a methodological study comparing software for pharmacometric modeling (OpenPMX vs. NONMEM) using simulated datasets for drugs like propofol and fentanyl; it does not study Chromium or report any toxicodynamic dose-response data. |
@@ -261,5 +273,9 @@ _14 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | popPK | van_2026 | irrelevant | 0 | 0 | The paper is a systematic review of population pharmacokinetics for immunoglobulins (IVIg/SCIg), not chromium. |
 | PD | van_2026 | irrelevant | 0 | 0 | The paper studies the pharmacokinetics and pharmacodynamics of immunoglobulins (IVIg/SCIg) and does not investigate Chromium or any of its metabolites. |
 
+
+</details>
+
 ---
-<sub>Generated by `docs.py` (scholarv2)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
+<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>

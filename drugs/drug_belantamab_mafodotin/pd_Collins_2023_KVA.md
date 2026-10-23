@@ -1,13 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;belantamab mafodotin&quot;,&quot;href&quot;:&quot;drugs/drug_belantamab_mafodotin/&quot;},{&quot;label&quot;:&quot;Collins_2023 \u00b7 PD ocular event grade&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# ocular event grade — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
+# ocular event grade — PD  <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
@@ -32,31 +32,31 @@ Collins J et al., Longitudinal efficacy and safety modeli…, CPT: pharmacometri
   ·  DOI: [10.1002/psp4.13016](https://doi.org/10.1002/psp4.13016)
 
 ## Parameters
-| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|---|
-| model term | B01 | `Q900` · not captured | −2.71 (−2.95, −2.46) | not captured | not captured | llm (not captured) | Collins_2023:pdv3 |
-| model term | B03 | `Q900` · not captured | −2.18 (−2.59, −1.78) | not captured | not captured | llm (not captured) | Collins_2023:pdv3 |
-| model term | B11 | `Q900` · not captured | −0.927 (−1.52, −0.34) | not captured | not captured | llm (not captured) | Collins_2023:pdv3 |
-| model term | B12 | `Q900` · not captured | −1.76 (−2.49, −1.03) | not captured | not captured | llm (not captured) | Collins_2023:pdv3 |
-| model term | B13 | `Q900` · not captured | −1.94 (−2.34, −1.53) | not captured | not captured | llm (not captured) | Collins_2023:pdv3 |
-| model term | B21 | `Q900` · not captured | −0.132 (−0.877, 0.612) | not captured | not captured | llm (not captured) | Collins_2023:pdv3 |
-| model term | B22 | `Q900` · not captured | −0.717 (−0.926, −0.509) | not captured | not captured | llm (not captured) | Collins_2023:pdv3 |
-| model term | B23 | `Q900` · not captured | −3.29 (−3.68, −2.90) | not captured | not captured | llm (not captured) | Collins_2023:pdv3 |
-| model term | B31 | `Q900` · not captured | 1.78 (0.891, 2.66) | not captured | not captured | llm (not captured) | Collins_2023:pdv3 |
-| model term | B32 | `Q900` · not captured | −0.708 (−1.03, −0.387) | not captured | not captured | llm (not captured) | Collins_2023:pdv3 |
-| model term | B33 | `Q900` · not captured | −1.88 (−2.17, −1.59) | not captured | not captured | llm (not captured) | Collins_2023:pdv3 |
-| PD (effect) | Emax | `Q320` · not captured | 4.42 (3.76, 5.08) | not captured | not captured | llm (not captured) | Collins_2023:pdv3 |
-| PD (effect) | EC50 | `Q321` · not captured | 3.64 (2.88, 4.40) | μg/ml | not captured | llm (not captured) | Collins_2023:pdv3 |
-| PD (effect) | KEO | `Q326` · not captured | 0.0244 (0.0164, 0.0324) | day−1 | not captured | llm (not captured) | Collins_2023:pdv3 |
-| PD (effect) | Gamma | `Q325` · not captured | 2.38 (1.53, 3.23) | − | not captured | llm (not captured) | Collins_2023:pdv3 |
-| model term | Baseline sBCMA on Emax | `Q900` · not captured | −0.0973 (−0.151, −0.0436) | not captured | not captured | llm (not captured) | Collins_2023:pdv3 |
-| model term | F1 = Emax factor previous Grade ≥ 1 | `Q900` · not captured | −0.239 (−0.427, −0.0515) | − | not captured | llm (not captured) | Collins_2023:pdv3 |
-| model term | F3 = Emax factor previous Grade ≥ 3 | `Q900` · not captured | −0.484 (−0.683, −0.285) | − | not captured | llm (not captured) | Collins_2023:pdv3 |
-| variability | ω2 Emax | `Q312` · not captured | 0.105 (0.0452, 0.164) | not captured | not captured | llm (not captured) | Collins_2023:pdv3 |
+| role | label (paper) | Q-code · name | value | unit | link | source |
+|---|---|---|---|---|---|---|
+| model term | B01 | `Q900` ·  | −2.71 (−2.95, −2.46) |  | llm | Collins_2023:pdv3 |
+| model term | B03 | `Q900` ·  | −2.18 (−2.59, −1.78) |  | llm | Collins_2023:pdv3 |
+| model term | B11 | `Q900` ·  | −0.927 (−1.52, −0.34) |  | llm | Collins_2023:pdv3 |
+| model term | B12 | `Q900` ·  | −1.76 (−2.49, −1.03) |  | llm | Collins_2023:pdv3 |
+| model term | B13 | `Q900` ·  | −1.94 (−2.34, −1.53) |  | llm | Collins_2023:pdv3 |
+| model term | B21 | `Q900` ·  | −0.132 (−0.877, 0.612) |  | llm | Collins_2023:pdv3 |
+| model term | B22 | `Q900` ·  | −0.717 (−0.926, −0.509) |  | llm | Collins_2023:pdv3 |
+| model term | B23 | `Q900` ·  | −3.29 (−3.68, −2.90) |  | llm | Collins_2023:pdv3 |
+| model term | B31 | `Q900` ·  | 1.78 (0.891, 2.66) |  | llm | Collins_2023:pdv3 |
+| model term | B32 | `Q900` ·  | −0.708 (−1.03, −0.387) |  | llm | Collins_2023:pdv3 |
+| model term | B33 | `Q900` ·  | −1.88 (−2.17, −1.59) |  | llm | Collins_2023:pdv3 |
+| PD (effect) | Emax | `Q320` ·  | 4.42 (3.76, 5.08) |  | llm | Collins_2023:pdv3 |
+| PD (effect) | EC50 | `Q321` ·  | 3.64 (2.88, 4.40) | μg/ml | llm | Collins_2023:pdv3 |
+| PD (effect) | KEO | `Q326` ·  | 0.0244 (0.0164, 0.0324) | day−1 | llm | Collins_2023:pdv3 |
+| PD (effect) | Gamma | `Q325` ·  | 2.38 (1.53, 3.23) | − | llm | Collins_2023:pdv3 |
+| model term | Baseline sBCMA on Emax | `Q900` ·  | −0.0973 (−0.151, −0.0436) |  | llm | Collins_2023:pdv3 |
+| model term | F1 = Emax factor previous Grade ≥ 1 | `Q900` ·  | −0.239 (−0.427, −0.0515) | − | llm | Collins_2023:pdv3 |
+| model term | F3 = Emax factor previous Grade ≥ 3 | `Q900` ·  | −0.484 (−0.683, −0.285) | − | llm | Collins_2023:pdv3 |
+| variability | ω2 Emax | `Q312` ·  | 0.105 (0.0452, 0.164) |  | llm | Collins_2023:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 
@@ -76,7 +76,7 @@ Primary extraction: `openai:gpt-6-luna`; retained regardless of cross-check verd
 | `einfracz:qwen3.8-27b` | `parameters[Q321].value` | 3.64 (2.88, 4.40) | 3.64 | mismatch |
 | `einfracz:qwen3.8-27b` | `parameters[Q325].value` | 2.38 (1.53, 3.23) | 2.38 | mismatch |
 | `einfracz:qwen3.8-27b` | `parameters[Q326].value` | 0.0244 (0.0164, 0.0324) | 0.0244 | mismatch |
-| `einfracz:qwen3.8-27b` | `parameters[Q900]` | −0.484 (−0.683, −0.285) | not captured | only_one_extracted |
+| `einfracz:qwen3.8-27b` | `parameters[Q900]` | −0.484 (−0.683, −0.285) |  | only_one_extracted |
 
 </details>
 

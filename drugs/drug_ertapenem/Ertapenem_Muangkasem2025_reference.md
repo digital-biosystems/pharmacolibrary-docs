@@ -1,19 +1,49 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01D&quot;,&quot;href&quot;:&quot;atc/J01D.md&quot;},{&quot;label&quot;:&quot;ertapenem&quot;,&quot;href&quot;:&quot;drugs/drug_ertapenem/&quot;},{&quot;label&quot;:&quot;Muangkasem_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ertapenem_Chauzy2022_reference&quot;,&quot;label&quot;:&quot;Chauzy_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ertapenem/Ertapenem_Chauzy2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ertapenem_Muangkasem2025_reference&quot;,&quot;label&quot;:&quot;Muangkasem_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ertapenem/Ertapenem_Muangkasem2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Ertapenem_Wittau2017_reference&quot;,&quot;label&quot;:&quot;Wittau_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ertapenem/Ertapenem_Wittau2017_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ertapenem_Cardone2012_reference&quot;,&quot;label&quot;:&quot;Cardone_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ertapenem/Ertapenem_Cardone2012_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ertapenem_Chen2024_reference&quot;,&quot;label&quot;:&quot;Chen_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ertapenem/Ertapenem_Chen2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ertapenem_Chauzy2022_reference&quot;,&quot;label&quot;:&quot;Chauzy_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ertapenem/Ertapenem_Chauzy2022_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ertapenem_Muangkasem2025_reference&quot;,&quot;label&quot;:&quot;Muangkasem_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ertapenem/Ertapenem_Muangkasem2025_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Ertapenem_Wittau2017_reference&quot;,&quot;label&quot;:&quot;Wittau_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ertapenem/Ertapenem_Wittau2017_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ertapenem_Cardone2012_reference&quot;,&quot;label&quot;:&quot;Cardone_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ertapenem/Ertapenem_Cardone2012_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ertapenem_Chen2024_reference&quot;,&quot;label&quot;:&quot;Chen_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ertapenem/Ertapenem_Chen2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ertapenem — `Ertapenem_Muangkasem2025_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">Reproduces paper</span>
+
+<div class="pk-model-meta" hidden drug="ertapenem" model-id="Ertapenem_Muangkasem2025_reference" status="curated_candidate" stale="false" population="critically ill patients" measured-compound="ertapenem" parameterization="mechanistic" topology="2C"></div>
+
+## Citation
+Muangkasem A, Nosoongnoen W, Sririttha S, Aramruang T, Montakantikul P. Dosage Regimen Optimization of Ertapenem Against ESBL-Producing Enterobacterales Infection in Critically Ill Patients Using Monte Carlo Simulation. Clinical and translational science 18(7):e70274 (2025).
+  ·  DOI: [10.1111/cts.70274](https://doi.org/10.1111/cts.70274)
+
+## Population and dosing
+
+**Population:** critically ill patients · condition ESBL-producing Enterobacterales infection · age group adult · n = 10000.
+
+## Model
+
+**Structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
+**Parameterization:** mechanistic.  
+**Parameters:** 4 extracted.  
+**Availability:** Model and browser simulation available in **Models** and **Simulation**.
+
+<figure class="pk-models-diagram"><img src="drugs/drug_ertapenem/Ertapenem_Muangkasem2025_reference/Ertapenem_Muangkasem2025_reference.svg" alt="Ertapenem_Muangkasem2025_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
+
+## Parameters
+| label | parameter | value | unit |
+|---|---|---|---|
+| 0.25 | equation variable | 46.1 | g/L |
+| clearance | CL | 2.63 | L/h |
+| central volume of distribution | V1 | 10.6 | L |
+| peripheral volume of distribution | V2 | 4.24 | L |
+| Intercompartmental clearance | Q | 0.315 | L/h/kg |
+
+<details class="pk-evidence"><summary>Evidence &amp; review</summary>
+
+**Status and checks:** <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
-
-**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 ### Reviewer guidance
 
@@ -23,29 +53,19 @@ A reported unit could not be converted (equation variable), so that value has no
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-## Citation
-Muangkasem A et al., Dosage Regimen Optimization of Ertapene…, Clinical and translational… (2025)
-  ·  DOI: [10.1111/cts.70274](https://doi.org/10.1111/cts.70274)
+### All parameter columns
 
-<div class="pk-model-meta" hidden drug="ertapenem" model-id="Ertapenem_Muangkasem2025_reference" status="curated_candidate" stale="false" population="critically ill patients" measured-compound="ertapenem" parameterization="mechanistic" topology="2C"></div>
-
-**Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
-**Parameters:** 4 extracted.
-
-**Parameterization:** mechanistic.
-
-## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| 0.25 | `Q900` · equation variable | 46.1 | g/L | not captured | [g] / [l] | not captured | llm (0.6) | Muangkasem_2025_table_1:row5:col1, Muangkasem_2025_table_1:row5:col2, Muangkasem_2025_table_1:row5:col3, Muangkasem_2025_table_1:row5:col4, Muangkasem_2025_table_1:row5:col5, Muangkasem_2025_table_1:row5:col6, Muangkasem_2025_table_1:row5:col7, Muangkasem_2025_table_1:row5:col8, Muangkasem_2025_table_1:row5:col9, Muangkasem_2025_table_1:row5:col10, Muangkasem_2025_table_1:row5:col11, Muangkasem_2025_table_1:row5:col12, Muangkasem_2025_table_1:row5:col13, Muangkasem_2025_table_1:row5:col14, Muangkasem_2025_table_1:row5:col15, Muangkasem_2025_table_1:row5:col16, Muangkasem_2025_table_1:row10:col1, Muangkasem_2025_table_1:row10:col2, Muangkasem_2025_table_1:row10:col3, Muangkasem_2025_table_1:row10:col4, Muangkasem_2025_table_1:row10:col5, Muangkasem_2025_table_1:row10:col6, Muangkasem_2025_table_1:row10:col7, Muangkasem_2025_table_1:row10:col8, Muangkasem_2025_table_1:row10:col9, Muangkasem_2025_table_1:row10:col10, Muangkasem_2025_table_1:row10:col11, Muangkasem_2025_table_1:row10:col12, Muangkasem_2025_table_1:row10:col13, Muangkasem_2025_table_1:row10:col14, Muangkasem_2025_table_1:row10:col15, Muangkasem_2025_table_1:row10:col16, Muangkasem_2025_table_1:row15:col1, Muangkasem_2025_table_1:row15:col2, Muangkasem_2025_table_1:row15:col3, Muangkasem_2025_table_1:row15:col4, Muangkasem_2025_table_1:row15:col5, Muangkasem_2025_table_1:row15:col6, Muangkasem_2025_table_1:row15:col7, Muangkasem_2025_table_1:row15:col8, Muangkasem_2025_table_1:row15:col9, Muangkasem_2025_table_1:row15:col10, Muangkasem_2025_table_1:row15:col11, Muangkasem_2025_table_1:row15:col12, Muangkasem_2025_table_1:row15:col13, Muangkasem_2025_table_1:row15:col14, Muangkasem_2025_table_1:row15:col15, Muangkasem_2025_table_1:row15:col16, Muangkasem_2025_table_1:row20:col1, Muangkasem_2025_table_1:row20:col2, Muangkasem_2025_table_1:row20:col3, Muangkasem_2025_table_1:row20:col4, Muangkasem_2025_table_1:row20:col5, Muangkasem_2025_table_1:row20:col6, Muangkasem_2025_table_1:row20:col7, Muangkasem_2025_table_1:row20:col8, Muangkasem_2025_table_1:row20:col9, Muangkasem_2025_table_1:row20:col10, Muangkasem_2025_table_1:row20:col11, Muangkasem_2025_table_1:row20:col12, Muangkasem_2025_table_1:row20:col13, Muangkasem_2025_table_1:row20:col14, Muangkasem_2025_table_1:row20:col15, Muangkasem_2025_table_1:row20:col16, Muangkasem_2025_table_1:row25:col1, Muangkasem_2025_table_1:row25:col2, Muangkasem_2025_table_1:row25:col3, Muangkasem_2025_table_1:row25:col4, Muangkasem_2025_table_1:row25:col5, Muangkasem_2025_table_1:row25:col6, Muangkasem_2025_table_1:row25:col7, Muangkasem_2025_table_1:row25:col8, Muangkasem_2025_table_1:row25:col9, Muangkasem_2025_table_1:row25:col10, Muangkasem_2025_table_1:row25:col11, Muangkasem_2025_table_1:row25:col12, Muangkasem_2025_table_1:row25:col13, Muangkasem_2025_table_1:row25:col14, Muangkasem_2025_table_1:row25:col15, Muangkasem_2025_table_1:row25:col16, Muangkasem_2025_table_1:row30:col1, Muangkasem_2025_table_1:row30:col2, Muangkasem_2025_table_1:row30:col3, Muangkasem_2025_table_1:row30:col4, Muangkasem_2025_table_1:row30:col5, Muangkasem_2025_table_1:row30:col6, Muangkasem_2025_table_1:row30:col7, Muangkasem_2025_table_1:row30:col8, Muangkasem_2025_table_1:row30:col9, Muangkasem_2025_table_1:row30:col10, Muangkasem_2025_table_1:row30:col11, Muangkasem_2025_table_1:row30:col12, Muangkasem_2025_table_1:row30:col13, Muangkasem_2025_table_1:row30:col14, Muangkasem_2025_table_1:row30:col15, Muangkasem_2025_table_1:row30:col16, Muangkasem_2025_table_1:row35:col1, Muangkasem_2025_table_1:row35:col2, Muangkasem_2025_table_1:row35:col3, Muangkasem_2025_table_1:row35:col4, Muangkasem_2025_table_1:row35:col5, Muangkasem_2025_table_1:row35:col6, Muangkasem_2025_table_1:row35:col7, Muangkasem_2025_table_1:row35:col8, Muangkasem_2025_table_1:row35:col9, Muangkasem_2025_table_1:row35:col10, Muangkasem_2025_table_1:row35:col11, Muangkasem_2025_table_1:row35:col12, Muangkasem_2025_table_1:row35:col13, Muangkasem_2025_table_1:row35:col14, Muangkasem_2025_table_1:row35:col15, Muangkasem_2025_table_1:row35:col16, Muangkasem_2025_table_1:row40:col1, Muangkasem_2025_table_1:row40:col2, Muangkasem_2025_table_1:row40:col3, Muangkasem_2025_table_1:row40:col4, Muangkasem_2025_table_1:row40:col5, Muangkasem_2025_table_1:row40:col6, Muangkasem_2025_table_1:row40:col7, Muangkasem_2025_table_1:row40:col8, Muangkasem_2025_table_1:row40:col9, Muangkasem_2025_table_1:row40:col10, Muangkasem_2025_table_1:row40:col11, Muangkasem_2025_table_1:row40:col12, Muangkasem_2025_table_1:row40:col13, Muangkasem_2025_table_1:row40:col14, Muangkasem_2025_table_1:row40:col15, Muangkasem_2025_table_1:row40:col16, Muangkasem_2025_table_1:row45:col1, Muangkasem_2025_table_1:row45:col2, Muangkasem_2025_table_1:row45:col3, Muangkasem_2025_table_1:row45:col4, Muangkasem_2025_table_1:row45:col5, Muangkasem_2025_table_1:row45:col6, Muangkasem_2025_table_1:row45:col7, Muangkasem_2025_table_1:row45:col8, Muangkasem_2025_table_1:row45:col9, Muangkasem_2025_table_1:row45:col10, Muangkasem_2025_table_1:row45:col11, Muangkasem_2025_table_1:row45:col12, Muangkasem_2025_table_1:row45:col13, Muangkasem_2025_table_1:row45:col14, Muangkasem_2025_table_1:row45:col15, Muangkasem_2025_table_1:row45:col16, Muangkasem_2025_table_1:row50:col1, Muangkasem_2025_table_1:row50:col2, Muangkasem_2025_table_1:row50:col3, Muangkasem_2025_table_1:row50:col4, Muangkasem_2025_table_1:row50:col5, Muangkasem_2025_table_1:row50:col6, Muangkasem_2025_table_1:row50:col7, Muangkasem_2025_table_1:row50:col8, Muangkasem_2025_table_1:row50:col9, Muangkasem_2025_table_1:row50:col10, Muangkasem_2025_table_1:row50:col11, Muangkasem_2025_table_1:row50:col12, Muangkasem_2025_table_1:row50:col13, Muangkasem_2025_table_1:row50:col14, Muangkasem_2025_table_1:row50:col15, Muangkasem_2025_table_1:row50:col16 | — | not captured |
-| clearance | `Q22` · CL | 2.63 | L/h | 7.305555555555555e-07 | L/h | not captured | exact (1.0) | Muangkasem_2025:other_prose | — | not captured |
-| central volume of distribution | `Q63` · V1 | 10.6 | L | 0.0106 | L | not captured | boundary_compartment (0.9) | Muangkasem_2025:other_prose | — | not captured |
-| peripheral volume of distribution | `Q64` · V2 | 4.24 | L | 0.004240000000000001 | L | not captured | boundary_compartment (0.9) | Muangkasem_2025:other_prose | — | not captured |
-| Intercompartmental clearance | `Q30` · Q | 0.315 | L/h/kg | 6.125000000000001e-06 | L/h | not captured | review_gapfill (0.7) | Chauzy_2022:review | — | not captured |
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
+|---|---|---|---|---|---|---|---|---|
+| 0.25 | `Q900` · equation variable | 46.1 | g/L |  |  | g/l | llm (0.6) | Muangkasem_2025_table_1:row5:col1, Muangkasem_2025_table_1:row5:col2, Muangkasem_2025_table_1:row5:col3, Muangkasem_2025_table_1:row5:col4, Muangkasem_2025_table_1:row5:col5, Muangkasem_2025_table_1:row5:col6, Muangkasem_2025_table_1:row5:col7, Muangkasem_2025_table_1:row5:col8, Muangkasem_2025_table_1:row5:col9, Muangkasem_2025_table_1:row5:col10, Muangkasem_2025_table_1:row5:col11, Muangkasem_2025_table_1:row5:col12, Muangkasem_2025_table_1:row5:col13, Muangkasem_2025_table_1:row5:col14, Muangkasem_2025_table_1:row5:col15, Muangkasem_2025_table_1:row5:col16, Muangkasem_2025_table_1:row10:col1, Muangkasem_2025_table_1:row10:col2, Muangkasem_2025_table_1:row10:col3, Muangkasem_2025_table_1:row10:col4, Muangkasem_2025_table_1:row10:col5, Muangkasem_2025_table_1:row10:col6, Muangkasem_2025_table_1:row10:col7, Muangkasem_2025_table_1:row10:col8, Muangkasem_2025_table_1:row10:col9, Muangkasem_2025_table_1:row10:col10, Muangkasem_2025_table_1:row10:col11, Muangkasem_2025_table_1:row10:col12, Muangkasem_2025_table_1:row10:col13, Muangkasem_2025_table_1:row10:col14, Muangkasem_2025_table_1:row10:col15, Muangkasem_2025_table_1:row10:col16, Muangkasem_2025_table_1:row15:col1, Muangkasem_2025_table_1:row15:col2, Muangkasem_2025_table_1:row15:col3, Muangkasem_2025_table_1:row15:col4, Muangkasem_2025_table_1:row15:col5, Muangkasem_2025_table_1:row15:col6, Muangkasem_2025_table_1:row15:col7, Muangkasem_2025_table_1:row15:col8, Muangkasem_2025_table_1:row15:col9, Muangkasem_2025_table_1:row15:col10, Muangkasem_2025_table_1:row15:col11, Muangkasem_2025_table_1:row15:col12, Muangkasem_2025_table_1:row15:col13, Muangkasem_2025_table_1:row15:col14, Muangkasem_2025_table_1:row15:col15, Muangkasem_2025_table_1:row15:col16, Muangkasem_2025_table_1:row20:col1, Muangkasem_2025_table_1:row20:col2, Muangkasem_2025_table_1:row20:col3, Muangkasem_2025_table_1:row20:col4, Muangkasem_2025_table_1:row20:col5, Muangkasem_2025_table_1:row20:col6, Muangkasem_2025_table_1:row20:col7, Muangkasem_2025_table_1:row20:col8, Muangkasem_2025_table_1:row20:col9, Muangkasem_2025_table_1:row20:col10, Muangkasem_2025_table_1:row20:col11, Muangkasem_2025_table_1:row20:col12, Muangkasem_2025_table_1:row20:col13, Muangkasem_2025_table_1:row20:col14, Muangkasem_2025_table_1:row20:col15, Muangkasem_2025_table_1:row20:col16, Muangkasem_2025_table_1:row25:col1, Muangkasem_2025_table_1:row25:col2, Muangkasem_2025_table_1:row25:col3, Muangkasem_2025_table_1:row25:col4, Muangkasem_2025_table_1:row25:col5, Muangkasem_2025_table_1:row25:col6, Muangkasem_2025_table_1:row25:col7, Muangkasem_2025_table_1:row25:col8, Muangkasem_2025_table_1:row25:col9, Muangkasem_2025_table_1:row25:col10, Muangkasem_2025_table_1:row25:col11, Muangkasem_2025_table_1:row25:col12, Muangkasem_2025_table_1:row25:col13, Muangkasem_2025_table_1:row25:col14, Muangkasem_2025_table_1:row25:col15, Muangkasem_2025_table_1:row25:col16, Muangkasem_2025_table_1:row30:col1, Muangkasem_2025_table_1:row30:col2, Muangkasem_2025_table_1:row30:col3, Muangkasem_2025_table_1:row30:col4, Muangkasem_2025_table_1:row30:col5, Muangkasem_2025_table_1:row30:col6, Muangkasem_2025_table_1:row30:col7, Muangkasem_2025_table_1:row30:col8, Muangkasem_2025_table_1:row30:col9, Muangkasem_2025_table_1:row30:col10, Muangkasem_2025_table_1:row30:col11, Muangkasem_2025_table_1:row30:col12, Muangkasem_2025_table_1:row30:col13, Muangkasem_2025_table_1:row30:col14, Muangkasem_2025_table_1:row30:col15, Muangkasem_2025_table_1:row30:col16, Muangkasem_2025_table_1:row35:col1, Muangkasem_2025_table_1:row35:col2, Muangkasem_2025_table_1:row35:col3, Muangkasem_2025_table_1:row35:col4, Muangkasem_2025_table_1:row35:col5, Muangkasem_2025_table_1:row35:col6, Muangkasem_2025_table_1:row35:col7, Muangkasem_2025_table_1:row35:col8, Muangkasem_2025_table_1:row35:col9, Muangkasem_2025_table_1:row35:col10, Muangkasem_2025_table_1:row35:col11, Muangkasem_2025_table_1:row35:col12, Muangkasem_2025_table_1:row35:col13, Muangkasem_2025_table_1:row35:col14, Muangkasem_2025_table_1:row35:col15, Muangkasem_2025_table_1:row35:col16, Muangkasem_2025_table_1:row40:col1, Muangkasem_2025_table_1:row40:col2, Muangkasem_2025_table_1:row40:col3, Muangkasem_2025_table_1:row40:col4, Muangkasem_2025_table_1:row40:col5, Muangkasem_2025_table_1:row40:col6, Muangkasem_2025_table_1:row40:col7, Muangkasem_2025_table_1:row40:col8, Muangkasem_2025_table_1:row40:col9, Muangkasem_2025_table_1:row40:col10, Muangkasem_2025_table_1:row40:col11, Muangkasem_2025_table_1:row40:col12, Muangkasem_2025_table_1:row40:col13, Muangkasem_2025_table_1:row40:col14, Muangkasem_2025_table_1:row40:col15, Muangkasem_2025_table_1:row40:col16, Muangkasem_2025_table_1:row45:col1, Muangkasem_2025_table_1:row45:col2, Muangkasem_2025_table_1:row45:col3, Muangkasem_2025_table_1:row45:col4, Muangkasem_2025_table_1:row45:col5, Muangkasem_2025_table_1:row45:col6, Muangkasem_2025_table_1:row45:col7, Muangkasem_2025_table_1:row45:col8, Muangkasem_2025_table_1:row45:col9, Muangkasem_2025_table_1:row45:col10, Muangkasem_2025_table_1:row45:col11, Muangkasem_2025_table_1:row45:col12, Muangkasem_2025_table_1:row45:col13, Muangkasem_2025_table_1:row45:col14, Muangkasem_2025_table_1:row45:col15, Muangkasem_2025_table_1:row45:col16, Muangkasem_2025_table_1:row50:col1, Muangkasem_2025_table_1:row50:col2, Muangkasem_2025_table_1:row50:col3, Muangkasem_2025_table_1:row50:col4, Muangkasem_2025_table_1:row50:col5, Muangkasem_2025_table_1:row50:col6, Muangkasem_2025_table_1:row50:col7, Muangkasem_2025_table_1:row50:col8, Muangkasem_2025_table_1:row50:col9, Muangkasem_2025_table_1:row50:col10, Muangkasem_2025_table_1:row50:col11, Muangkasem_2025_table_1:row50:col12, Muangkasem_2025_table_1:row50:col13, Muangkasem_2025_table_1:row50:col14, Muangkasem_2025_table_1:row50:col15, Muangkasem_2025_table_1:row50:col16 |
+| clearance | `Q22` · CL | 2.63 | L/h | 7.306e-07 | m3/s | L/h | exact (1) | Muangkasem_2025:other_prose |
+| central volume of distribution | `Q63` · V1 | 10.6 | L | 0.0106 | m3 | L | boundary_compartment (0.9) | Muangkasem_2025:other_prose |
+| peripheral volume of distribution | `Q64` · V2 | 4.24 | L | 0.00424 | m3 | L | boundary_compartment (0.9) | Muangkasem_2025:other_prose |
+| Intercompartmental clearance | `Q30` · Q | 0.315 | L/h/kg | 6.125e-06 | m3/s | L/h | review_gapfill (0.7) | Chauzy_2022:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ## Departures & gaps
@@ -75,41 +95,36 @@ Muangkasem A et al., Dosage Regimen Optimization of Ertapene…, Clinical and tr
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained | ratio | tol | source |
-|---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Chauzy_2022:review'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 2.63 | not captured | not captured | ['Muangkasem_2025:other_prose'] |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 2.63 L/h | not captured | not captured | ['Muangkasem_2025:other_prose'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 10.6 L | not captured | not captured | ['Muangkasem_2025:other_prose'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 4.24 L | not captured | not captured | ['Muangkasem_2025:other_prose'] |
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 3 |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Chauzy_2022:review'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 2.63 | ['Muangkasem_2025:other_prose'] |
+| C8_topology | pass |  |  |  |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 2.63 L/h | ['Muangkasem_2025:other_prose'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 10.6 L | ['Muangkasem_2025:other_prose'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 4.24 L | ['Muangkasem_2025:other_prose'] |
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_output_variable | not captured | pass | C_central (measured=ertapenem) | central.C | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
+| check | status | expected | obtained | note |
+|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=ertapenem) | central.C | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
 
 <details class="legend">
 <summary>Validation definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
-## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ertapenem/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Muangkasem_2025` / `Muangkasem_2025::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ertapenem/models/modelica/Ertapenem_Muangkasem2025_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ertapenem/models/modelica/Ertapenem_Muangkasem2025_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ertapenem/models/modelica/Ertapenem_Muangkasem2025_reference.json`
-
+</details>
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
@@ -126,7 +141,49 @@ Muangkasem A et al., Dosage Regimen Optimization of Ertapene…, Clinical and tr
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_ertapenem/Ertapenem_Muangkasem2025_reference/Ertapenem_Muangkasem2025_reference.svg" alt="Ertapenem_Muangkasem2025_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div></div>
+
+## Model interface
+
+The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
+
+| direction | role | name | value | unit (SI) |
+|---|---|---|---|---|
+| input | compound | `MM` | 0.4755 | kg/mol |
+| input | dosing | `F` | 1 | 1 |
+| input | dosing | `adminCount` | 1 | 1 |
+| input | dosing | `adminDuration` | 600 | s |
+| input | dosing | `adminMass` | 0.001 | kg |
+| input | model | `Cl` | 7.306e-07 | m3/s |
+| input | model | `VdPerKg` | 0.0001514 | m3/kg |
+| input | model | `k12` | 0.0005778 | 1/s |
+| input | model | `k21` | 0.001445 | 1/s |
+| input | subject | `weight` | 70 | kg |
+| output | concentration | `central.C` |  | kg/m3 |
+
+## Tested with
+
+- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_2C`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
+- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
+- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
+
+## How to cite
+
+**Source paper** (the parameters are its): Muangkasem A, Nosoongnoen W, Sririttha S, Aramruang T, Montakantikul P. Dosage Regimen Optimization of Ertapenem Against ESBL-Producing Enterobacterales Infection in Critically Ill Patients Using Monte Carlo Simulation. Clinical and translational science 18(7):e70274 (2025). [doi:10.1111/cts.70274](https://doi.org/10.1111/cts.70274)
+
+**This record:** Pharmacolibrary v26.09, model `Ertapenem_Muangkasem2025_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_ertapenem/Ertapenem_Muangkasem2025_reference>
+
+```bibtex
+@misc{pharmacolibrary_ErtapenemMuangkasem2025reference,
+  title  = {{Pharmacolibrary model Ertapenem_Muangkasem2025_reference}},
+  author = {{Pharmacolibrary}},
+  version = {v26.09},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_ertapenem/Ertapenem_Muangkasem2025_reference},
+  note   = {Parameters from doi:10.1111/cts.70274},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -139,4 +196,5 @@ Muangkasem A et al., Dosage Regimen Optimization of Ertapene…, Clinical and tr
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 10:51 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bertapenem%5D%20Ertapenem_Muangkasem2025_reference&body=Drug%3A%20ertapenem%0ARecord%3A%20Ertapenem_Muangkasem2025_reference%0APaper%3A%20Muangkasem_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ertapenem/Ertapenem_Muangkasem2025_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Generated by `docs.py` (scholarv2, release v26.09) · extracted 2026-10-07 10:51 UTC</sub>

@@ -1,19 +1,56 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A03A&quot;,&quot;href&quot;:&quot;atc/A03A.md&quot;},{&quot;label&quot;:&quot;glycopyrronium bromide&quot;,&quot;href&quot;:&quot;drugs/drug_glycopyrronium_bromide/&quot;},{&quot;label&quot;:&quot;Bartels_2013 \u00b7 population_mean_cv&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;GlycopyrroniumBromide_Bartels2013_model_based&quot;,&quot;label&quot;:&quot;Bartels_2013_model_based&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_glycopyrronium_bromide/GlycopyrroniumBromide_Bartels2013_model_based.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;GlycopyrroniumBromide_Bartels2013_noncompartmental&quot;,&quot;label&quot;:&quot;Bartels_2013_noncompartmental&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_glycopyrronium_bromide/GlycopyrroniumBromide_Bartels2013_noncompartmental.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;GlycopyrroniumBromide_Bartels2013_population_mean_cv&quot;,&quot;label&quot;:&quot;Bartels_2013_population_mean_cv&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_glycopyrronium_bromide/GlycopyrroniumBromide_Bartels2013_population_mean_cv.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;GlycopyrroniumBromide_Bartels2013_model_based&quot;,&quot;label&quot;:&quot;Bartels_2013_model_based&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_glycopyrronium_bromide/GlycopyrroniumBromide_Bartels2013_model_based.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;GlycopyrroniumBromide_Bartels2013_noncompartmental&quot;,&quot;label&quot;:&quot;Bartels_2013_noncompartmental&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_glycopyrronium_bromide/GlycopyrroniumBromide_Bartels2013_noncompartmental.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;GlycopyrroniumBromide_Bartels2013_population_mean_cv&quot;,&quot;label&quot;:&quot;Bartels_2013_population_mean_cv&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_glycopyrronium_bromide/GlycopyrroniumBromide_Bartels2013_population_mean_cv.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # glycopyrronium bromide — `GlycopyrroniumBromide_Bartels2013_population_mean_cv`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
+
+> The reviewer's verdict (Needs review, 2026-09-28 14:38 UTC) predates the latest extraction (2026-10-04 12:43 UTC); the status shown comes from the current checks.
+
+<div class="pk-model-meta" hidden drug="glycopyrronium bromide" model-id="GlycopyrroniumBromide_Bartels2013_population_mean_cv" status="extracted" stale="true" population="healthy volunteers" measured-compound="glycopyrronium" parameterization="mechanistic" topology="2C"></div>
+
+## Citation
+Bartels C, Looby M, Sechaud R, Kaiser G. Determination of the pharmacokinetics of glycopyrronium in the lung using a population pharmacokinetic modelling approach. British journal of clinical pharmacology 76(6):868–879 (2013).
+  ·  DOI: [10.1111/bcp.12118](https://doi.org/10.1111/bcp.12118)
+
+## Population and dosing
+
+**Population:** healthy volunteers · condition healthy · age group adult.
+
+**Dosing:** 120, 200, 400 mg, oral, inhaled, iv, single.
+
+## Model
+
+**Structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameterization:** mechanistic.  
+**Parameters:** 8 extracted.  
+**Availability:** Model and browser simulation available in **Models** and **Simulation**.
+
+<figure class="pk-models-diagram"><img src="drugs/drug_glycopyrronium_bromide/GlycopyrroniumBromide_Bartels2013_population_mean_cv/GlycopyrroniumBromide_Bartels2013_population_mean_cv.svg" alt="GlycopyrroniumBromide_Bartels2013_population_mean_cv diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
+
+## Parameters
+| label | parameter | value | unit | RSE% |
+|---|---|---|---|---|
+| Systemic clearance | CL | 44.9 | L/h | 3.1 |
+| Volume of central plasma compartment | V1 | 11.3 | L | 6.7 |
+| Intercompartmental clearance | Q | 8.23 | L/h | 8.9 |
+| Volume of peripheral PK compartment | V2 | 71.5 | L | 4.4 |
+| Bioavailability after inhalation with concomitant charcoal treatment expressed as odds | Fab | 1.11 |  | 18 |
+| Slow lung absorption rate | kabs | 0.009 | 1/h | 10.1 |
+| Volume of distribution at steady state ‡ | Vss | 102 | L |  |
+| Intermediate lung absorption half-life | t1/2z | 0.45 | h |  |
+
+<details class="pk-evidence"><summary>Evidence &amp; review</summary>
+
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
-
-**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 ### Reviewer guidance
 
@@ -25,41 +62,30 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-28 14:38:08.724766+00:00) predates the upstream re-run (2026-10-04 12:43:02.546661+00:00). Current validate status: `extracted`.
+### All parameter columns
 
-## Citation
-Bartels C et al., Determination of the pharmacokinetics o…, British journal of clinical… (2013)
-  ·  DOI: [10.1111/bcp.12118](https://doi.org/10.1111/bcp.12118)
-
-<div class="pk-model-meta" hidden drug="glycopyrronium bromide" model-id="GlycopyrroniumBromide_Bartels2013_population_mean_cv" status="extracted" stale="true" population="healthy volunteers" measured-compound="glycopyrronium" parameterization="mechanistic" topology="2C"></div>
-
-**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
-**Parameters:** 8 extracted.
-
-**Parameterization:** mechanistic.
-
-## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| Systemic clearance | `Q22` · CL | 44.9 | L/h | 1.2472222222222223e-05 | L/h | 3.1 | llm_confirmed (0.6) | Bartels_2013_table_p6_1:row0:col3, Bartels_2013_table_p6_1:row0:col4 | — | not captured |
-| Volume of central plasma compartment | `Q63` · V1 | 11.3 | L | 0.011300000000000001 | L | 6.7 | boundary_compartment (0.9) | Bartels_2013_table_p6_1:row1:col3, Bartels_2013_table_p6_1:row1:col4 | — | not captured |
-| Intercompartmental clearance | `Q30` · Q | 8.23 | L/h | 2.2861111111111114e-06 | L/h | 8.9 | exact (1.0) | Bartels_2013_table_p6_1:row2:col3, Bartels_2013_table_p6_1:row2:col4, Bartels_2013_table_p6_1:row4:col3, Bartels_2013_table_p6_1:row4:col4 | — | not captured |
-| Volume of peripheral PK compartment | `Q64` · V2 | 71.5 | L | 0.07150000000000001 | L | 4.4 | boundary_compartment (0.9) | Bartels_2013_table_p6_1:row3:col3, Bartels_2013_table_p6_1:row3:col4, Bartels_2013_table_p6_1:row5:col3, Bartels_2013_table_p6_1:row5:col4 | — | not captured |
-| Bioavailability after inhalation with concomitant charcoal treatment expressed as odds | `Q40` · Fab | 1.11 | not captured | not captured | not captured | 18 | llm_confirmed (0.6) | Bartels_2013_table_p6_1:row6:col3, Bartels_2013_table_p6_1:row6:col4 | — | not captured |
-| Slow lung absorption rate | `Q49` · kabs | 0.009 | 1/h | 2.4999999999999998e-06 | 1/h | 10.1 | llm_confirmed (0.6) | Bartels_2013_table_p6_1:row10:col3, Bartels_2013_table_p6_1:row10:col4 | — | not captured |
-| Volume of distribution at steady state ‡ | `Q65` · Vss | 102 | L | 0.10200000000000001 | L | not captured | llm_corrected (0.6) | Bartels_2013_table_2:row2:col4 | — | not captured |
-| Intermediate lung absorption half-life | `Q57` · t1/2z | 0.45 | h | 1620.0 | h | not captured | llm_corrected (0.6) | Bartels_2013_table_2:row12:col2, Bartels_2013_table_2:row12:col4 | — | not captured |
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | RSE% | link | source |
+|---|---|---|---|---|---|---|---|---|---|
+| Systemic clearance | `Q22` · CL | 44.9 | L/h | 1.247e-05 | m3/s | L/h | 3.1 | llm_confirmed (0.6) | Bartels_2013_table_p6_1:row0:col3, Bartels_2013_table_p6_1:row0:col4 |
+| Volume of central plasma compartment | `Q63` · V1 | 11.3 | L | 0.0113 | m3 | L | 6.7 | boundary_compartment (0.9) | Bartels_2013_table_p6_1:row1:col3, Bartels_2013_table_p6_1:row1:col4 |
+| Intercompartmental clearance | `Q30` · Q | 8.23 | L/h | 2.286e-06 | m3/s | L/h | 8.9 | exact (1) | Bartels_2013_table_p6_1:row2:col3, Bartels_2013_table_p6_1:row2:col4, Bartels_2013_table_p6_1:row4:col3, Bartels_2013_table_p6_1:row4:col4 |
+| Volume of peripheral PK compartment | `Q64` · V2 | 71.5 | L | 0.0715 | m3 | L | 4.4 | boundary_compartment (0.9) | Bartels_2013_table_p6_1:row3:col3, Bartels_2013_table_p6_1:row3:col4, Bartels_2013_table_p6_1:row5:col3, Bartels_2013_table_p6_1:row5:col4 |
+| Bioavailability after inhalation with concomitant charcoal treatment expressed as odds | `Q40` · Fab | 1.11 |  |  |  |  | 18 | llm_confirmed (0.6) | Bartels_2013_table_p6_1:row6:col3, Bartels_2013_table_p6_1:row6:col4 |
+| Slow lung absorption rate | `Q49` · kabs | 0.009 | 1/h | 2.5e-06 | 1/s | 1/h | 10.1 | llm_confirmed (0.6) | Bartels_2013_table_p6_1:row10:col3, Bartels_2013_table_p6_1:row10:col4 |
+| Volume of distribution at steady state ‡ | `Q65` · Vss | 102 | L | 0.102 | m3 | L |  | llm_corrected (0.6) | Bartels_2013_table_2:row2:col4 |
+| Intermediate lung absorption half-life | `Q57` · t1/2z | 0.45 | h | 1620 | s | h |  | llm_corrected (0.6) | Bartels_2013_table_2:row12:col2, Bartels_2013_table_2:row12:col4 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ### Unresolved rows _(no Q-code or no value — not parameters)_
-| label (paper) | Q-code | value | link |
-|---|---|---|---|
-| Fast lung absorption half-life | Q59 | not captured | llm_corrected |
-| GI tract absorption half-life | Q95 | not captured | llm_corrected |
+
+| label (paper) | Q-code | link |
+|---|---|---|
+| Fast lung absorption half-life | Q59 | llm_corrected |
+| GI tract absorption half-life | Q95 | llm_corrected |
 
 ## Departures & gaps
 
@@ -104,25 +130,25 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[0]` | not captured | 5 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[bioavailability after inhalation with concomitant charcoal treatment expressed as odds]` | 1.11 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[bioavailability after inhalation with concomitant charcoal treatment expressed as odds]` | not captured | 1.11 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[fast lung absorption half-life]` | not captured | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[fast lung absorption half-life]` | not captured | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[gi tract absorption half-life]` | not captured | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[intercompartmental clearance]` | 8.23 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[intercompartmental clearance]` | not captured | 8.23 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[intermediate lung absorption half-life]` | 0.45 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[slow lung absorption rate]` | 0.009 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[slow lung absorption rate]` | not captured | 0.009 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[systemic clearance]` | 44.9 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[systemic clearance]` | not captured | 44.9 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[volume of central plasma compartment]` | 11.3 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[volume of central plasma compartment]` | not captured | 11.3 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[volume of distribution at steady state]` | 102 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[volume of distribution at steady state]` | not captured | 102 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[volume of peripheral pk compartment]` | 71.5 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[volume of peripheral pk compartment]` | not captured | 71.5 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[0]` |  | 5 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[bioavailability after inhalation with concomitant charcoal treatment expressed as odds]` | 1.11 |  | only_one_extracted |
+| `gpt-oss:120b` | `parameters[bioavailability after inhalation with concomitant charcoal treatment expressed as odds]` |  | 1.11 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[fast lung absorption half-life]` |  |  | only_one_extracted |
+| `gpt-oss:120b` | `parameters[fast lung absorption half-life]` |  |  | only_one_extracted |
+| `gpt-oss:120b` | `parameters[gi tract absorption half-life]` |  |  | only_one_extracted |
+| `gpt-oss:120b` | `parameters[intercompartmental clearance]` | 8.23 |  | only_one_extracted |
+| `gpt-oss:120b` | `parameters[intercompartmental clearance]` |  | 8.23 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[intermediate lung absorption half-life]` | 0.45 |  | only_one_extracted |
+| `gpt-oss:120b` | `parameters[slow lung absorption rate]` | 0.009 |  | only_one_extracted |
+| `gpt-oss:120b` | `parameters[slow lung absorption rate]` |  | 0.009 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[systemic clearance]` | 44.9 |  | only_one_extracted |
+| `gpt-oss:120b` | `parameters[systemic clearance]` |  | 44.9 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[volume of central plasma compartment]` | 11.3 |  | only_one_extracted |
+| `gpt-oss:120b` | `parameters[volume of central plasma compartment]` |  | 11.3 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[volume of distribution at steady state]` | 102 |  | only_one_extracted |
+| `gpt-oss:120b` | `parameters[volume of distribution at steady state]` |  | 102 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[volume of peripheral pk compartment]` | 71.5 |  | only_one_extracted |
+| `gpt-oss:120b` | `parameters[volume of peripheral pk compartment]` |  | 71.5 | only_one_extracted |
 | `gpt-oss:120b` | `screen.dose_compound` | glycopyrronium | unknown | mismatch |
 | `gpt-oss:120b` | `screen.primary_analyte` | glycopyrronium | unknown | mismatch |
 
@@ -136,49 +162,45 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained | ratio | tol | source |
-|---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 8 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Bartels_2013_table_p6_1:row0:col3', 'Bartels_2013_table_p6_1:row0:col4'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Bartels_2013_table_p6_1:row2:col3', 'Bartels_2013_table_p6_1:row2:col4', 'Bartels_2013_table_p6_1:row4:col3', 'Bartels_2013_table_p6_1:row4:col4'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Bartels_2013_table_p6_1:row10:col3', 'Bartels_2013_table_p6_1:row10:col4'] |
-| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Bartels_2013_table_2:row12:col2', 'Bartels_2013_table_2:row12:col4'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Bartels_2013_table_p6_1:row1:col3', 'Bartels_2013_table_p6_1:row1:col4'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Bartels_2013_table_p6_1:row3:col3', 'Bartels_2013_table_p6_1:row3:col4', 'Bartels_2013_table_p6_1:row5:col3', 'Bartels_2013_table_p6_1:row5:col4'] |
-| C5_dimension_Q65 | pass | [length] ** 3 | not captured | not captured | not captured | ['Bartels_2013_table_2:row2:col4'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 44.9 | not captured | not captured | ['Bartels_2013_table_p6_1:row0:col3', 'Bartels_2013_table_p6_1:row0:col4'] |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 44.9 L/h | not captured | not captured | ['Bartels_2013_table_p6_1:row0:col3', 'Bartels_2013_table_p6_1:row0:col4'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 11.3 L | not captured | not captured | ['Bartels_2013_table_p6_1:row1:col3', 'Bartels_2013_table_p6_1:row1:col4'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 71.5 L | not captured | not captured | ['Bartels_2013_table_p6_1:row3:col3', 'Bartels_2013_table_p6_1:row3:col4', 'Bartels_2013_table_p6_1:row5:col3', 'Bartels_2013_table_p6_1:row5:col4'] |
-| C9_phys_window_Q65 | pass | volume within physiological range | 102 L | not captured | not captured | ['Bartels_2013_table_2:row2:col4'] |
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 8 |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Bartels_2013_table_p6_1:row0:col3', 'Bartels_2013_table_p6_1:row0:col4'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Bartels_2013_table_p6_1:row2:col3', 'Bartels_2013_table_p6_1:row2:col4', 'Bartels_2013_table_p6_1:row4:col3', 'Bartels_2013_table_p6_1:row4:col4'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['Bartels_2013_table_p6_1:row10:col3', 'Bartels_2013_table_p6_1:row10:col4'] |
+| C5_dimension_Q57 | pass | [time] |  | ['Bartels_2013_table_2:row12:col2', 'Bartels_2013_table_2:row12:col4'] |
+| C5_dimension_Q63 | pass | [length] ** 3 |  | ['Bartels_2013_table_p6_1:row1:col3', 'Bartels_2013_table_p6_1:row1:col4'] |
+| C5_dimension_Q64 | pass | [length] ** 3 |  | ['Bartels_2013_table_p6_1:row3:col3', 'Bartels_2013_table_p6_1:row3:col4', 'Bartels_2013_table_p6_1:row5:col3', 'Bartels_2013_table_p6_1:row5:col4'] |
+| C5_dimension_Q65 | pass | [length] ** 3 |  | ['Bartels_2013_table_2:row2:col4'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 44.9 | ['Bartels_2013_table_p6_1:row0:col3', 'Bartels_2013_table_p6_1:row0:col4'] |
+| C8_topology | pass |  |  |  |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 44.9 L/h | ['Bartels_2013_table_p6_1:row0:col3', 'Bartels_2013_table_p6_1:row0:col4'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 11.3 L | ['Bartels_2013_table_p6_1:row1:col3', 'Bartels_2013_table_p6_1:row1:col4'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 71.5 L | ['Bartels_2013_table_p6_1:row3:col3', 'Bartels_2013_table_p6_1:row3:col4', 'Bartels_2013_table_p6_1:row5:col3', 'Bartels_2013_table_p6_1:row5:col4'] |
+| C9_phys_window_Q65 | pass | volume within physiological range | 102 L | ['Bartels_2013_table_2:row2:col4'] |
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_param_coverage | not captured | pass | 5 scholar param(s) emitted or defaulted | 5 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
-| T1_t_half_terminal | reference | skipped | 52.5 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 57.2 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 3.5 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| check | scenario | status | expected | obtained | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  | no covariate effects in record |
+| T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered | all structural parameters accounted for |
+| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | invented_absorption: not acceptable | LLM adjudication → deterministic rule |
+| T1_t_half_terminal | reference | skipped | 52.5 |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 57.2 |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 3.5 |  | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
-## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_glycopyrronium_bromide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Bartels_2013` / `Bartels_2013::population_mean_cv`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_glycopyrronium_bromide/models/modelica/_needs_review/GlycopyrroniumBromide_Bartels2013_population_mean_cv.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_glycopyrronium_bromide/models/modelica/_needs_review/GlycopyrroniumBromide_Bartels2013_population_mean_cv.deviation.json`
-
+</details>
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
@@ -195,7 +217,51 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_glycopyrronium_bromide/GlycopyrroniumBromide_Bartels2013_population_mean_cv/GlycopyrroniumBromide_Bartels2013_population_mean_cv.svg" alt="GlycopyrroniumBromide_Bartels2013_population_mean_cv diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div></div>
+
+## Model interface
+
+The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
+
+| direction | role | name | value | unit (SI) |
+|---|---|---|---|---|
+| input | compound | `MM` | 0.3184 | kg/mol |
+| input | dosing | `F` | 1.11 | 1 |
+| input | dosing | `Tlag` | 0 | s |
+| input | dosing | `adminCount` | 1 | 1 |
+| input | dosing | `adminDuration` | 600 | s |
+| input | dosing | `adminMass` | 0.00012 | kg |
+| input | model | `Cl` | 1.247e-05 | m3/s |
+| input | model | `VdPerKg` | 0.0001614 | m3/kg |
+| input | model | `k12` | 0.0002023 | 1/s |
+| input | model | `k21` | 3.197e-05 | 1/s |
+| input | model | `ka` | 2.5e-06 | 1/s |
+| input | subject | `weight` | 70 | kg |
+| output | concentration | `central.C` |  | kg/m3 |
+
+## Tested with
+
+- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_2C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
+- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
+- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
+
+## How to cite
+
+**Source paper** (the parameters are its): Bartels C, Looby M, Sechaud R, Kaiser G. Determination of the pharmacokinetics of glycopyrronium in the lung using a population pharmacokinetic modelling approach. British journal of clinical pharmacology 76(6):868–879 (2013). [doi:10.1111/bcp.12118](https://doi.org/10.1111/bcp.12118)
+
+**This record:** Pharmacolibrary v26.09, model `GlycopyrroniumBromide_Bartels2013_population_mean_cv`. <https://pharmacolibrary.github.io/#/drugs/drug_glycopyrronium_bromide/GlycopyrroniumBromide_Bartels2013_population_mean_cv>
+
+```bibtex
+@misc{pharmacolibrary_GlycopyrroniumBromideBartels2013populationmeancv,
+  title  = {{Pharmacolibrary model GlycopyrroniumBromide_Bartels2013_population_mean_cv}},
+  author = {{Pharmacolibrary}},
+  version = {v26.09},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_glycopyrronium_bromide/GlycopyrroniumBromide_Bartels2013_population_mean_cv},
+  note   = {Parameters from doi:10.1111/bcp.12118},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -208,4 +274,5 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 12:43 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bglycopyrronium_bromide%5D%20GlycopyrroniumBromide_Bartels2013_population_mean_cv&body=Drug%3A%20glycopyrronium_bromide%0ARecord%3A%20GlycopyrroniumBromide_Bartels2013_population_mean_cv%0APaper%3A%20Bartels_2013%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_glycopyrronium_bromide/GlycopyrroniumBromide_Bartels2013_population_mean_cv%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Generated by `docs.py` (scholarv2, release v26.09) · extracted 2026-10-04 12:43 UTC</sub>

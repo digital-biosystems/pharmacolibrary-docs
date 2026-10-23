@@ -5,6 +5,58 @@
  "observables": [
   "central.C"
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Li_2022:other_prose",
+    "value_si": 2.4399999999999997e-05
+   },
+   {
+    "source": "Li_2022:other_prose",
+    "value_si": 2.03e-05
+   },
+   {
+    "source": "Li_2022:other_prose",
+    "value_si": 8.34e-07
+   },
+   {
+    "source": "Li_2022:other_prose",
+    "value_si": 0.001647
+   },
+   {
+    "source": "Li_2022:other_prose",
+    "value_si": 0.002962
+   },
+   {
+    "source": "Li_2022:other_prose",
+    "value_si": 1.811e-06
+   },
+   {
+    "source": "Li_2022:other_prose",
+    "value_si": 0.0016029999999999998
+   },
+   {
+    "source": "Li_2022:other_prose",
+    "value_si": 0.001284
+   },
+   {
+    "source": "Li_2022:other_prose",
+    "value_si": 8.01e-07
+   },
+   {
+    "source": "Li_2022:other_prose",
+    "value_si": 0.0017698
+   },
+   {
+    "source": "Li_2022:other_prose",
+    "value_si": 0.0012748
+   },
+   {
+    "source": "Li_2022:other_prose",
+    "value_si": 0.711
+   }
+  ]
+ },
  "parameters": {
   "Cl": 2.1500000000000004e-05,
   "F": 1.0,

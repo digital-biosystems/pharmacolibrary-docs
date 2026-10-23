@@ -12,6 +12,14 @@
  "paper_doses_mg": [
   140.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Na_2019:other_prose",
+    "value_si": 1.15
+   }
+  ]
+ },
  "parameters": {
   "Cl": 8.493333333333334e-06,
   "F": 1.0,

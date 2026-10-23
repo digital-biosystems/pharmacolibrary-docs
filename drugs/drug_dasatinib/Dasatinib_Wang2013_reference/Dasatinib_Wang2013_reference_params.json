@@ -15,6 +15,14 @@
   100.0,
   140.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Wang_2013:discussion_prose",
+    "value_si": 0.76
+   }
+  ]
+ },
  "parameters": {
   "Cl": 8.222222222222222e-05,
   "F": 1.0,

@@ -45,11 +45,11 @@
    "Intermediate": [
     {
      "compound": "clopidogrel H4",
-     "parameter": "fm1",
-     "reference": 0.125,
-     "scale": "logit",
+     "parameter": "CLm1 (L/h)",
+     "reference": 74.25,
+     "scale": "power",
      "theta": -0.45,
-     "value": 0.08348510021221434
+     "value": 47.34389025791667
     },
     {
      "compound": "clopidogrel carboxylic acid",
@@ -94,8 +94,9 @@
   "phenotypes": {
    "Intermediate": {
     "CL1": 0.00038067974236454156,
-    "q1_m11": 0.00018289737020495215,
-    "q1_m21": 0.0020078889671295095
+    "CLm1": 1.3151080627199075e-05,
+    "q1_m11": 0.0002738473238710989,
+    "q1_m21": 0.0019169386625802567
    },
    "Normal": {},
    "Poor": {
@@ -107,8 +108,11 @@
   "record": "Jung_2024",
   "reference": "Normal",
   "sources": [
-   "Jung_2024 covariate theta_fm_im_power",
-   "Jung_2024 covariate theta_fm_pm_power"
+   "Jung_2024 covariate CYP2C19",
+   "Jung_2024 covariate fm1_im",
+   "Jung_2024 covariate fm1_pm",
+   "Jung_2024 covariate fm2_im",
+   "Jung_2024 covariate fm2_pm"
   ]
  },
  "reference_peak_times": {

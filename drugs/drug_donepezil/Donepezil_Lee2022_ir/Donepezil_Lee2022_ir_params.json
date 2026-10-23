@@ -13,6 +13,26 @@
   4.562,
   5.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Lee_2022:other_prose",
+    "value_si": 3.19e-06
+   },
+   {
+    "source": "Lee_2022:other_prose",
+    "value_si": 7.799999999999999e-07
+   },
+   {
+    "source": "Lee_2022:other_prose",
+    "value_si": 6.84
+   },
+   {
+    "source": "Lee_2022:other_prose",
+    "value_si": 8.91
+   }
+  ]
+ },
  "parameters": {
   "Cl": 9.902983333333333e-05,
   "F": 1.0,

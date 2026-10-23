@@ -13,6 +13,50 @@
   140.0,
   210.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Mao_2012:results_prose",
+    "value_si": 3371.0
+   },
+   {
+    "source": "Mao_2012:results_prose",
+    "value_si": 4012.0
+   },
+   {
+    "source": "Mao_2012:other_prose",
+    "value_si": 0.003904
+   },
+   {
+    "source": "Mao_2012:other_prose",
+    "value_si": 0.003371
+   },
+   {
+    "source": "Mao_2012:other_prose",
+    "value_si": 0.003859
+   },
+   {
+    "source": "Mao_2012:other_prose",
+    "value_si": 0.004012
+   },
+   {
+    "source": "Mao_2012:other_prose",
+    "value_si": 0.0043029999999999995
+   },
+   {
+    "source": "Mao_2012:other_prose",
+    "value_si": 0.0036969999999999998
+   },
+   {
+    "source": "Mao_2012:other_prose",
+    "value_si": 0.004206
+   },
+   {
+    "source": "Mao_2012:other_prose",
+    "value_si": 0.0045579999999999996
+   }
+  ]
+ },
  "parameters": {
   "Cl": 3.88888888888889e-06,
   "F": 1.0,

@@ -22,31 +22,33 @@ Drospirenone is a progestogen used in hormonal contraceptives, typically combine
 |---|---|---|---|---|---|---|
 | drospirenone | parent | 366.493 | C24H30O3 | DrugBank | [68873](https://pubchem.ncbi.nlm.nih.gov/compound/68873) | Reif_2013 |
 
-## Extraction summary
-
-| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
-|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 08:51 | 7:11 | 0/0/1 | 0/2/0 | 0/0/0 | 256,176/10,521 | einfracz / qwen3.8-27b | 13 | 2/8 | 12/1 | 0 |
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.12). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Reif_2013_reference](drugs/drug_drospirenone/Drospirenone_Reif2013_reference.md) | held back | 1-compartment, oral | 10 | Reif S et al., Characterisation of the pharmacokinetic…, The journal of family plann… (2013) | [10.1136/jfprhc-2012-100397](https://doi.org/10.1136/jfprhc-2012-100397) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: model_quarantined: Vd left at base-class defaults</sub> | [Reif_2013_reference](drugs/drug_drospirenone/Drospirenone_Reif2013_reference.md) | held back | 1-compartment, oral | 10 | Reif S et al., Characterisation of the pharmacokinetic…, The journal of family plann… (2013) | [10.1136/jfprhc-2012-100397](https://doi.org/10.1136/jfprhc-2012-100397) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Cagnacci_2026_Androgenic](drugs/drug_drospirenone/pd_Cagnacci_2026_Androgenic.md) | androgenic effects ← drospirenone · inhibition effect | — | Cagnacci A et al., Natural estrogens: the new reference in…, Expert opinion on pharmacot… (2026) | [10.1080/14656566.2026.2725109](https://doi.org/10.1080/14656566.2026.2725109) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Farris_2017_coagulation_cascade_factors](drugs/drug_drospirenone/pd_Farris_2017_coagulation_cascade_factors.md) | coagulation cascade factors ← drospirenone · model not identified | — | Farris M et al., Pharmacodynamics of combined estrogen-p…, Expert review of clinical p… (2017) | [10.1080/17512433.2017.1356718](https://doi.org/10.1080/17512433.2017.1356718) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Farris_2017_thromboembolic_events](drugs/drug_drospirenone/pd_Farris_2017_thromboembolic_events.md) | thromboembolic events ← drospirenone · model not identified | — | Farris M et al., Pharmacodynamics of combined estrogen-p…, Expert review of clinical p… (2017) | [10.1080/17512433.2017.1356718](https://doi.org/10.1080/17512433.2017.1356718) |
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Cagnacci_2026_Androgenic](drugs/drug_drospirenone/pd_Cagnacci_2026_Androgenic.md) | androgenic effects ← drospirenone · inhibition effect | — | Cagnacci A et al., Natural estrogens: the new reference in…, Expert opinion on pharmacot… (2026) | [10.1080/14656566.2026.2725109](https://doi.org/10.1080/14656566.2026.2725109) |
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Farris_2017_coagulation_cascade_factors](drugs/drug_drospirenone/pd_Farris_2017_coagulation_cascade_factors.md) | coagulation cascade factors ← drospirenone · model not identified | — | Farris M et al., Pharmacodynamics of combined estrogen-p…, Expert review of clinical p… (2017) | [10.1080/17512433.2017.1356718](https://doi.org/10.1080/17512433.2017.1356718) |
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Farris_2017_thromboembolic_events](drugs/drug_drospirenone/pd_Farris_2017_thromboembolic_events.md) | thromboembolic events ← drospirenone · model not identified | — | Farris M et al., Pharmacodynamics of combined estrogen-p…, Expert review of clinical p… (2017) | [10.1080/17512433.2017.1356718](https://doi.org/10.1080/17512433.2017.1356718) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 08:51 | 7:11 | 0/0/1 | 0/2/0 | 0/0/0 | 256,176/10,521 | einfracz / qwen3.8-27b | 13 | 2/8 | 12/1 | 0 |
 
 ## Coverage
 
@@ -83,5 +85,9 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | PGx | Venter_2021 | not_relevant | 0 | 0 | The paper investigates the effect of drospirenone/EE use on general health status and biotransformation enzyme activity, but does not report a pharmacogenomic effect on a PK or PD parameter of drospirenone. |
 | PGx | Wiesinger_2015 | not_relevant | 0 | 0 | The study reports a drug-drug interaction (ketoconazole) affecting drospirenone PK, not a pharmacogenomic effect based on genetic variants. |
 
+
+</details>
+
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 08:48 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
+<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 08:48 UTC</sub>

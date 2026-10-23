@@ -12,6 +12,18 @@
  "paper_doses_mg": [
   50.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Chandasana_2024_2:other_prose",
+    "value_si": 13.0
+   },
+   {
+    "source": "Chandasana_2024_2:other_prose",
+    "value_si": 22.0
+   }
+  ]
+ },
  "parameters": {
   "Cl": 2.3833333333333334e-07,
   "F": 1.0,

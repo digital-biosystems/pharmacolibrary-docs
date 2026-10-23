@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J04A&quot;,&quot;href&quot;:&quot;atc/J04A.md&quot;},{&quot;label&quot;:&quot;4-aminosalicylic acid&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;D_4AminosalicylicAcid_de2014_reference&quot;,&quot;label&quot;:&quot;de_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_de2014_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;D_4AminosalicylicAcid_Sy2015_reference&quot;,&quot;label&quot;:&quot;Sy_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_Sy2015_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;D_4AminosalicylicAcid_de2014_reference&quot;,&quot;label&quot;:&quot;de_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_de2014_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;D_4AminosalicylicAcid_Sy2015_reference&quot;,&quot;label&quot;:&quot;Sy_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_Sy2015_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # 4-aminosalicylic acid
 
@@ -14,24 +14,32 @@
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q229924](https://www.wikidata.org/wiki/Q229924) and the WHO ATC classification; not checked by a person.</small>
 
-## Extraction summary
+## Start here
 
-| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
-|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 11:59 | 0:22 | 1/0/1 | 0/0/0 | 0/0/0 | 88,782/242 | einfracz / qwen3.8-27b | 4 | 22/1 | 1/2 | 0 |
+> **de_2014_reference** — <span class="pk-badge pk-badge--green">Reproduces paper</span> tuberculosis patients with and without HIV coinfection receiving antiretroviral therapy, n = 73. [Run it in the simulator](drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_de2014_reference.md?tab=Simulation) · [record](drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_de2014_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed 1/2</span> | [de_2014_reference](drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_de2014_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | LizanneDe Kock Division of Clinical Pharmacology Faculty of Medicine and Health Sciences Stellenbosch University Cape Town South Africa et al., Pharmacokinetics of para-Aminosalicylic… (2014) | [10.1128/AAC.03073-14](https://doi.org/10.1128/AAC.03073-14) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.733), gpt-oss:120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: T1_cmax</sub><br><sub>route_to: `scholar`</sub> | [Sy_2015_reference](drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_Sy2015_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 (+1 cov.) | SherwinK BSy Department of Pharmaceutics College of Pharmacy University of Florida Gainesville Florida USA et al., N-Acetyltransferase Genotypes and the P… (2015) | [10.1128/AAC.04049-14](https://doi.org/10.1128/AAC.04049-14) |
+| <span class="pk-rf" hidden data-species="unknown" data-age="adult" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [de_2014_reference](drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_de2014_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | LizanneDe Kock Division of Clinical Pharmacology Faculty of Medicine and Health Sciences Stellenbosch University Cape Town South Africa et al., Pharmacokinetics of para-Aminosalicylic… (2014) | [10.1128/AAC.03073-14](https://doi.org/10.1128/AAC.03073-14) |
+| <span class="pk-rf" hidden data-species="unknown" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: T1_cmax</sub> | [Sy_2015_reference](drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_Sy2015_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 (+1 cov.) | SherwinK BSy Department of Pharmaceutics College of Pharmacy University of Florida Gainesville Florida USA et al., N-Acetyltransferase Genotypes and the P… (2015) | [10.1128/AAC.04049-14](https://doi.org/10.1128/AAC.04049-14) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 11:59 | 0:22 | 1/0/1 | 0/0/0 | 0/0/0 | 88,782/242 | einfracz / qwen3.8-27b | 4 | 22/1 | 1/2 | 0 |
 
 ## Coverage
 
@@ -44,20 +52,20 @@
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Abulfathi_2020 | irrelevant | not captured | not captured | This is a narrative review summarizing historical literature and does not present original population-pharmacokinetic modeling or compartmental parameters for 4-aminosalicylic acid. |
-| popPK | Aguilar_2023 | irrelevant | not captured | not captured | The paper is a review article that only briefly mentions para-aminosalicylic acid without reporting any quantitative pharmacokinetic parameters or population-PK models for it. |
+| popPK | Abulfathi_2020 | irrelevant |  |  | This is a narrative review summarizing historical literature and does not present original population-pharmacokinetic modeling or compartmental parameters for 4-aminosalicylic acid. |
+| popPK | Aguilar_2023 | irrelevant |  |  | The paper is a review article that only briefly mentions para-aminosalicylic acid without reporting any quantitative pharmacokinetic parameters or population-PK models for it. |
 | popPK | Allgayer_1992 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of radical scavenging properties, not a pharmacokinetic study reporting disposition parameters. |
 | PD | Allgayer_1992 | not_relevant | 0 | 0 | The paper reports in vitro radical scavenging activity using ESR spectroscopy and IC50 values, not a population pharmacodynamic or exposure-response model. |
 | popPK | Azadkhan_1982 | irrelevant | 3 | 2 | The study focuses on sulphasalazine and sulphapyridine, with 5-ASA only mentioned as a metabolite lacking serum concentration data or detailed PK parameters. |
-| popPK | Bayoumy_2025 | irrelevant | not captured | not captured | The paper develops a population pharmacokinetic model for thioguanine, with 4-aminosalicylic acid only mentioned as a covariate affecting thioguanine clearance and no PK parameters reported for it. |
+| popPK | Bayoumy_2025 | irrelevant |  |  | The paper develops a population pharmacokinetic model for thioguanine, with 4-aminosalicylic acid only mentioned as a covariate affecting thioguanine clearance and no PK parameters reported for it. |
 | popPK | Bayram_2008 | irrelevant | 0 | 0 | The paper reports in-vitro enzyme inhibition kinetics (IC50, Ki) for carbonic anhydrase, not pharmacokinetic disposition parameters. |
 | PD | Bayram_2008 | not_relevant | 0 | 0 | The paper reports in vitro enzyme inhibition data (IC50) and mechanism, not a population pharmacodynamic or exposure-response model in vivo. |
 | popPK | Belfield-Simpson_2025 | irrelevant | 0 | 0 | The paper investigates burn pit combustion products and asthma in mice, with no mention of 4-aminosalicylic acid or pharmacokinetic parameters. |
-| popPK | Berends_2019 | irrelevant | not captured | not captured | The paper is a review article that only provides qualitative pharmacokinetic descriptions and references to tables without reporting extractable quantitative PK parameters or population models for aminosalicylic acid. |
+| popPK | Berends_2019 | irrelevant |  |  | The paper is a review article that only provides qualitative pharmacokinetic descriptions and references to tables without reporting extractable quantitative PK parameters or population models for aminosalicylic acid. |
 | popPK | Choi_2025 | irrelevant | 0 | 0 | The paper studies bacteriophage therapy for Acinetobacter baumannii and does not involve the drug 4-aminosalicylic acid. |
 | popPK | Chung_2015 | irrelevant | 0 | 0 | The study investigates peptide amphiphile micelles, not 4-aminosalicylic acid. |
 | popPK | Cipolla_2017 | irrelevant | 0 | 0 | The paper studies cerebral blood flow and stroke outcomes in rats, not the pharmacokinetics of 4-aminosalicylic acid. |
-| popPK | Collins_2020 | irrelevant | not captured | not captured | The paper is a broad review on gut microbiome-mediated xenobiotic metabolism and contains no quantitative pharmacokinetic parameters for 4-aminosalicylic acid. |
+| popPK | Collins_2020 | irrelevant |  |  | The paper is a broad review on gut microbiome-mediated xenobiotic metabolism and contains no quantitative pharmacokinetic parameters for 4-aminosalicylic acid. |
 | popPK | Dallmeier_2024 | irrelevant | 0 | 0 | The paper is a neuropathology study on Alzheimer's disease and does not involve the drug 4-aminosalicylic acid. |
 | popPK | Govers_2014 | irrelevant | 0 | 0 | The paper is a microbiology study on protein aggregation in E. coli and does not involve 4-aminosalicylic acid or pharmacokinetics. |
 | popPK | Gómez_2025 | irrelevant | 0 | 0 | The paper describes a laser treatment study for onychomycosis and contains no data regarding 4-aminosalicylic acid or pharmacokinetic parameters. |
@@ -66,25 +74,25 @@
 | PD | Hesham_2026 | not_relevant | 0 | 0 | The paper reports in vitro synthesis and bio-evaluation (IC50 values) of novel derivatives, not a population pharmacodynamic or exposure-response model for 4-aminosalicylic acid. |
 | popPK | Kaskar_2019 | irrelevant | 0 | 0 | The paper describes a biomechanical model of cerebrospinal fluid dynamics in glaucoma and does not involve the drug 4-aminosalicylic acid. |
 | popPK | Mazaheri_2020 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of a PASylated antibody fragment (certolizumab), not 4-aminosalicylic acid. |
-| popPK | Nishida_2026 | irrelevant | not captured | not captured | The paper is a clinical review on ulcerative colitis management using 5-aminosalicylic acid and contains no pharmacokinetic parameters or models for 4-aminosalicylic acid. |
-| popPK | Parvez_2022 | irrelevant | not captured | not captured | The paper focuses on tenofovir pharmacokinetics, with para-aminosalicylic acid serving only as a co-administered perpetrator drug in a drug-drug interaction study. |
+| popPK | Nishida_2026 | irrelevant |  |  | The paper is a clinical review on ulcerative colitis management using 5-aminosalicylic acid and contains no pharmacokinetic parameters or models for 4-aminosalicylic acid. |
+| popPK | Parvez_2022 | irrelevant |  |  | The paper focuses on tenofovir pharmacokinetics, with para-aminosalicylic acid serving only as a co-administered perpetrator drug in a drug-drug interaction study. |
 | popPK | Radiom_2021 | irrelevant | 0 | 0 | The paper studies the rheological properties of human respiratory mucus and contains no pharmacokinetic data for 4-aminosalicylic acid. |
 | popPK | Raicevic_2023 | irrelevant | 0 | 0 | The paper studies cerebrospinal fluid flow in mice and does not involve the drug 4_aminosalicylic_acid. |
 | popPK | Raicevic_2023_2 | irrelevant | 0 | 0 | The paper studies cerebrospinal fluid flow and perivascular space geometry in mice, not the pharmacokinetics of 4-aminosalicylic acid. |
-| popPK | Saleh_2025 | irrelevant | not captured | not captured | 4-aminosalicylic acid is used only as a chemical scaffold for synthesizing new derivatives, and no quantitative pharmacokinetic parameters are reported. |
-| popPK | Salem_2021 | irrelevant | not captured | not captured | The paper focuses exclusively on in vitro formulation development and dissolution testing of 4-aminosalicylic acid cocrystals, containing no pharmacokinetic data or modeling. |
+| popPK | Saleh_2025 | irrelevant |  |  | 4-aminosalicylic acid is used only as a chemical scaffold for synthesizing new derivatives, and no quantitative pharmacokinetic parameters are reported. |
+| popPK | Salem_2021 | irrelevant |  |  | The paper focuses exclusively on in vitro formulation development and dissolution testing of 4-aminosalicylic acid cocrystals, containing no pharmacokinetic data or modeling. |
 | popPK | Shapira-Galitz_2021 | irrelevant | 0 | 0 | The paper studies dysphagia and carbonated water, not the pharmacokinetics of 4-aminosalicylic acid. |
 | popPK | Stigler_2022 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of phosphotriesterase enzymes (PTE-1, PTE-2, PTE-3) and the nerve agent VX, not 4-aminosalicylic acid. |
-| popPK | Suneela_2013 | irrelevant | not captured | not captured | The paper focuses on prodrug synthesis and ex vivo stability, reporting only qualitative pharmacokinetic observations without quantitative compartmental or population-PK parameters for 4-aminosalicylic acid. |
+| popPK | Suneela_2013 | irrelevant |  |  | The paper focuses on prodrug synthesis and ex vivo stability, reporting only qualitative pharmacokinetic observations without quantitative compartmental or population-PK parameters for 4-aminosalicylic acid. |
 | PD | Suneela_2013 | not_relevant | 1 | 0 | The paper describes prodrug synthesis and efficacy in an animal model without performing population pharmacodynamic or exposure-response modeling. |
-| popPK | Tang_2024 | irrelevant | not captured | not captured | The paper focuses on a nanoformulation for 5-aminosalicylic acid rather than 4-ASA and reports only in vitro release and biodistribution data without quantitative systemic pharmacokinetic parameters or modeling. |
+| popPK | Tang_2024 | irrelevant |  |  | The paper focuses on a nanoformulation for 5-aminosalicylic acid rather than 4-ASA and reports only in vitro release and biodistribution data without quantitative systemic pharmacokinetic parameters or modeling. |
 | popPK | Tanigawara_1990 | irrelevant | 0 | 0 | The provided evidence contains no text, data, or parameters, only library service headers. |
 | popPK | Tithof_2019 | irrelevant | 0 | 0 | The paper is a fluid dynamics study on cerebrospinal flow in periarterial spaces and does not involve the drug 4-aminosalicylic acid. |
 | popPK | Tornhamre_1989 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on enzyme inhibition, not a pharmacokinetic study, and contains no disposition parameters for 4-aminosalicylic acid. |
 | PD | Tornhamre_1989 | not_relevant | 0 | 0 | The paper reports in vitro IC50 values from cell suspension experiments, not a population pharmacodynamic or exposure-response model with estimated parameters. |
 | popPK | Verma_2023 | irrelevant | 0 | 0 | The paper is an obstetric study on emergency hysterectomy and contains no pharmacokinetic data for 4-aminosalicylic acid. |
 | popPK | Wang_2012 | irrelevant | 0 | 0 | The paper is a review of pulmonary alveolar proteinosis and does not mention 4-aminosalicylic acid or report any pharmacokinetic parameters. |
-| popPK | Wang_2025 | irrelevant | not captured | not captured | This is a narrative review on nanocarrier formulations for 5-aminosalicylic acid and contains no quantitative pharmacokinetic parameters or modeling data for 4-aminosalicylic acid. |
+| popPK | Wang_2025 | irrelevant |  |  | This is a narrative review on nanocarrier formulations for 5-aminosalicylic acid and contains no quantitative pharmacokinetic parameters or modeling data for 4-aminosalicylic acid. |
 | popPK | Wintjens_2024 | irrelevant | 0 | 0 | The paper studies a UPy-PEG hydrogel delivery system and does not report pharmacokinetic parameters for 4_aminosalicylic_acid. |
 | popPK | Yang_2025 | irrelevant | 0 | 0 | The study investigates Atractylodes lancea in a metabolic syndrome model and does not involve 4-aminosalicylic acid. |
 | popPK | Zhang_2025 | irrelevant | 0 | 0 | The paper investigates mitophagy mechanisms in diabetic cardiomyopathy and does not study the pharmacokinetics of 4-aminosalicylic acid. |
@@ -92,5 +100,9 @@
 | popPK | unknown_2022 | irrelevant | 0 | 0 | no_text gate: only 37 chars of text extracted (&lt; 400) |
 | popPK | Çelikmen_2016 | irrelevant | 0 | 0 | The study investigates acetaminophen and mannitol in rats, not 4-aminosalicylic acid. |
 
+
+</details>
+
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-07-15 09:22 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
+<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-07-15 09:22 UTC</sub>

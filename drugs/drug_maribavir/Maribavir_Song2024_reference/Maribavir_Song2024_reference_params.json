@@ -16,6 +16,26 @@
   800.0,
   1200.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Song_2024:other_prose",
+    "value_si": 31.0
+   },
+   {
+    "source": "Song_2024:other_prose",
+    "value_si": 25.0
+   },
+   {
+    "source": "Song_2024:other_prose",
+    "value_si": 38.0
+   },
+   {
+    "source": "Song_2024:other_prose",
+    "value_si": 310.1
+   }
+  ]
+ },
  "parameters": {
   "Cl": 1.4583333333333333e-05,
   "F": 1.0,

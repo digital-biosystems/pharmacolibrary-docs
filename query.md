@@ -1,6 +1,6 @@
 <!-- AUTOGEN:none — this page is hand-written scaffolding, copied to the site by _seed_scaffold -->
 
-# Query
+# Ask the data
 
 <div id="pkq" class="pkq-chat">
   <div id="pkq-status" class="pkq-status">Loading the knowledge database…</div>
@@ -18,7 +18,7 @@
 
 ## Databases
 
-Two SQLite databases are queried locally using sql.js. Results summarise literature evidence,
+Current file sizes, row counts and licences: [Data & downloads](data.md). Two SQLite databases are queried locally using sql.js. Results summarise literature evidence,
 not medical advice.
 
 **Query database** (~8 MB, loaded with the page):

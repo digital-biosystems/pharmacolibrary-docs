@@ -13,12 +13,6 @@ Pegfilgrastim is a long-acting granulocyte colony-stimulating factor used to pre
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q1592932](https://www.wikidata.org/wiki/Q1592932) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
-## Extraction summary
-
-| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
-|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 23:07 | 1:18 | 0/0/0 | 1/1/1 | 0/0/0 | 104,579/3,752 | einfracz / qwen3.8-27b | 5 | 1/4 | 5/0 | 0 |
-
 ## popPK records
 
 _not available_
@@ -27,15 +21,23 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.714). Primary extraction retained.">cross-check: disputed</span> | [Brekkan_2018_ANC](drugs/drug_pegfilgrastim/pd_Brekkan_2018_ANC.md) | absolute neutrophil count ← pegfilgrastim · indirect response — drug stimulates the production of absolute neutrophil count | — | Brekkan A et al., A Population Pharmacokinetic-Pharmacody…, The AAPS journal (2018) | [10.1208/s12248-018-0249-y](https://doi.org/10.1208/s12248-018-0249-y) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Singh_2021_ANC](drugs/drug_pegfilgrastim/pd_Singh_2021_ANC.md) | Absolute Neutrophil Count biomarker turnover ← pegfilgrastim | — | Singh I et al., Single-Dose Pharmacokinetics, Pharmacod…, Clinical drug investigation (2021) | [10.1007/s40261-020-00987-3](https://doi.org/10.1007/s40261-020-00987-3) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span> | [Macaire_2020_ANC](drugs/drug_pegfilgrastim/pd_Macaire_2020_ANC.md) | absolute neutrophil count ← pegfilgrastim · indirect response — drug stimulates the production of absolute neutrophil count | — | Macaire P et al., Impact of granulocyte colony-stimulatin…, British journal of clinical… (2020) | [10.1111/bcp.14356](https://doi.org/10.1111/bcp.14356) |
+| <span class="pk-badge pk-badge--green">Reproduces with caveats</span> | [Brekkan_2018_ANC](drugs/drug_pegfilgrastim/pd_Brekkan_2018_ANC.md) | absolute neutrophil count ← pegfilgrastim · indirect response — drug stimulates the production of absolute neutrophil count | — | Brekkan A et al., A Population Pharmacokinetic-Pharmacody…, The AAPS journal (2018) | [10.1208/s12248-018-0249-y](https://doi.org/10.1208/s12248-018-0249-y) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Singh_2021_ANC](drugs/drug_pegfilgrastim/pd_Singh_2021_ANC.md) | Absolute Neutrophil Count biomarker turnover ← pegfilgrastim | — | Singh I et al., Single-Dose Pharmacokinetics, Pharmacod…, Clinical drug investigation (2021) | [10.1007/s40261-020-00987-3](https://doi.org/10.1007/s40261-020-00987-3) |
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Macaire_2020_ANC](drugs/drug_pegfilgrastim/pd_Macaire_2020_ANC.md) | absolute neutrophil count ← pegfilgrastim · indirect response — drug stimulates the production of absolute neutrophil count | — | Macaire P et al., Impact of granulocyte colony-stimulatin…, British journal of clinical… (2020) | [10.1111/bcp.14356](https://doi.org/10.1111/bcp.14356) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-06 23:07 | 1:18 | 0/0/0 | 1/1/1 | 0/0/0 | 104,579/3,752 | einfracz / qwen3.8-27b | 5 | 1/4 | 5/0 | 0 |
 
 ## Coverage
 
@@ -72,5 +74,9 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | popPK | Singh_2021 | irrelevant | 5 | 2 | The study reports PK/PD equivalence ratios (AUC, Cmax) for a biosimilar comparison rather than absolute quantitative compartmental parameters (CL, V, ka) or specific concentration-time data for pegfilgrastim. |
 | popPK | Umoru_2021 | irrelevant | 0 | 0 | This is a clinical efficacy and safety study evaluating absolute neutrophil counts (ANC), not a pharmacokinetic study reporting quantitative disposition parameters. |
 
+
+</details>
+
 ---
-<sub>Generated by `docs.py` (scholarv2)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
+<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>

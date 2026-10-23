@@ -13,6 +13,38 @@
   20.0,
   80.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Kim_2021:results_prose",
+    "value_si": 2.8769999999999997e-05
+   },
+   {
+    "source": "Kim_2021:results_prose",
+    "value_si": 0.00011395999999999999
+   },
+   {
+    "source": "Kim_2021:results_prose",
+    "value_si": 1.44
+   },
+   {
+    "source": "Kim_2021:results_prose",
+    "value_si": 1.42
+   },
+   {
+    "source": "Kim_2021:other_prose",
+    "value_si": 2.8769999999999997e-05
+   },
+   {
+    "source": "Kim_2021:other_prose",
+    "value_si": 0.00011395999999999999
+   },
+   {
+    "source": "Kim_2021:other_prose",
+    "value_si": 1.4299999999999999e-06
+   }
+  ]
+ },
  "parameters": {
   "Cl": 8.11111111111111e-05,
   "F": 1.0,

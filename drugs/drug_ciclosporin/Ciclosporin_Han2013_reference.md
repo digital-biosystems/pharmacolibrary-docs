@@ -1,19 +1,54 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;ciclosporin&quot;,&quot;href&quot;:&quot;drugs/drug_ciclosporin/&quot;},{&quot;label&quot;:&quot;Han_2013 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ciclosporin_Kauv2025_reference&quot;,&quot;label&quot;:&quot;Kauv_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciclosporin/Ciclosporin_Kauv2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciclosporin_Han2013_reference&quot;,&quot;label&quot;:&quot;Han_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciclosporin/Ciclosporin_Han2013_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ciclosporin_Kauv2025_reference&quot;,&quot;label&quot;:&quot;Kauv_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciclosporin/Ciclosporin_Kauv2025_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciclosporin_Han2013_reference&quot;,&quot;label&quot;:&quot;Han_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciclosporin/Ciclosporin_Han2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ciclosporin — `Ciclosporin_Han2013_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+
+> Ciclosporin model intercompartmental rate constants were left at library defaults rather than using the paper's estimates.
+
+<div class="pk-model-meta" hidden drug="ciclosporin" model-id="Ciclosporin_Han2013_reference" status="needs_review" stale="false" population="transplant recipients" measured-compound="cyclosporine" parameterization="apparent" topology="2C"></div>
+
+## Citation
+Han K, Pillai VC, Venkataramanan R. Population pharmacokinetics of cyclosporine in transplant recipients. The AAPS journal 15(4):901–912 (2013).
+  ·  DOI: [10.1208/s12248-013-9500-8](https://doi.org/10.1208/s12248-013-9500-8)
+
+## Population and dosing
+
+**Population:** transplant recipients · condition transplantation · age group adult.
+
+## Model
+
+**Structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Parameters:** 6 extracted.  
+**Availability:** Model and browser simulation available in **Models** and **Simulation**.
+
+<figure class="pk-models-diagram"><img src="drugs/drug_ciclosporin/Ciclosporin_Han2013_reference/Ciclosporin_Han2013_reference.svg" alt="Ciclosporin_Han2013_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
+
+## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
+| label | parameter | value | unit |
+|---|---|---|---|
+| CL (L/h) | CL | 23.5 | L/h |
+| CL/F (L/h) | CL/F | 53 | L/h |
+| V (L) | V | 94.4 | L |
+| V/F (L) | V/F | 227 | L |
+| ka (h -1 ) | kabs | 1.21 | h -1 |
+| t lag (h) | tlag | 0.25 | h |
+
+<details class="pk-evidence"><summary>Evidence &amp; review</summary>
+
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
-
-**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 ### Reviewer guidance
 
@@ -25,32 +60,20 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 <sub>reviewed by qwen3.8-27b</sub>
 
-## Citation
-Han K et al., Population pharmacokinetics of cyclospo…, The AAPS journal (2013)
-  ·  DOI: [10.1208/s12248-013-9500-8](https://doi.org/10.1208/s12248-013-9500-8)
+### All parameter columns
 
-<div class="pk-model-meta" hidden drug="ciclosporin" model-id="Ciclosporin_Han2013_reference" status="needs_review" stale="false" population="transplant recipients" measured-compound="cyclosporine" parameterization="apparent" topology="2C"></div>
-
-**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
-**Parameters:** 6 extracted.
-
-**Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
-
-## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| CL (L/h) | `Q22` · CL | 23.5 | L/h | 6.527777777777778e-06 | [l] / [h] | not captured | exact (1.0) | Han_2013_table_2:row2:col1, Han_2013_table_2:row2:col2, Han_2013_table_2:row2:col3, Han_2013_table_2:row2:col6, Han_2013_table_2:row2:col16, Han_2013_table_2:row2:col28, Han_2013_table_2:row2:col29, Han_2013_table_2:row2:col30, Han_2013_table_2:row2:col35, Han_2013_table_2:row2:col36, Han_2013_table_2:row2:col37 | — | not captured |
-| CL/F (L/h) | `Q27` · CL/F | 53 | L/h | 1.4722222222222222e-05 | [l] / [h] | not captured | exact (1.0) | Han_2013_table_2:row3:col4, Han_2013_table_2:row3:col5, Han_2013_table_2:row3:col7, Han_2013_table_2:row3:col8, Han_2013_table_2:row3:col11, Han_2013_table_2:row3:col12, Han_2013_table_2:row3:col13, Han_2013_table_2:row3:col14, Han_2013_table_2:row3:col15, Han_2013_table_2:row3:col17, Han_2013_table_2:row3:col19, Han_2013_table_2:row3:col20, Han_2013_table_2:row3:col21, Han_2013_table_2:row3:col22, Han_2013_table_2:row3:col23, Han_2013_table_2:row3:col24, Han_2013_table_2:row3:col25, Han_2013_table_2:row3:col26, Han_2013_table_2:row3:col27, Han_2013_table_2:row3:col31, Han_2013_table_2:row3:col32, Han_2013_table_2:row3:col33, Han_2013_table_2:row3:col34, Han_2013_table_2:row3:col38 | — | not captured |
-| V (L) | `Q61` · V | 94.4 | L | 0.09440000000000001 | [l] | not captured | exact (1.0) | Han_2013_table_2:row4:col2, Han_2013_table_2:row4:col3, Han_2013_table_2:row4:col6, Han_2013_table_2:row4:col28, Han_2013_table_2:row4:col29, Han_2013_table_2:row4:col30, Han_2013_table_2:row4:col35, Han_2013_table_2:row4:col36, Han_2013_table_2:row4:col37 | — | not captured |
-| V/F (L) | `Q76` · V/F | 227 | L | 0.227 | [l] | not captured | exact (1.0) | Han_2013_table_2:row5:col5, Han_2013_table_2:row5:col7, Han_2013_table_2:row5:col11, Han_2013_table_2:row5:col12, Han_2013_table_2:row5:col13, Han_2013_table_2:row5:col15, Han_2013_table_2:row5:col17, Han_2013_table_2:row5:col19, Han_2013_table_2:row5:col20, Han_2013_table_2:row5:col21, Han_2013_table_2:row5:col22, Han_2013_table_2:row5:col23, Han_2013_table_2:row5:col24, Han_2013_table_2:row5:col25, Han_2013_table_2:row5:col26, Han_2013_table_2:row5:col27, Han_2013_table_2:row5:col31, Han_2013_table_2:row5:col32, Han_2013_table_2:row5:col33, Han_2013_table_2:row5:col34, Han_2013_table_2:row5:col38 | — | not captured |
-| ka (h -1 ) | `Q49` · kabs | 1.21 | h -1 | 0.0003361111111111111 | 1/h | not captured | review_gapfill (0.7) | Kauv_2025:review | — | not captured |
-| t lag (h) | `Q83` · tlag | 0.25 | h | 900.0 | h | not captured | review_gapfill (0.7) | Kauv_2025:review | — | not captured |
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
+|---|---|---|---|---|---|---|---|---|
+| CL (L/h) | `Q22` · CL | 23.5 | L/h | 6.528e-06 | m3/s | l/h | exact (1) | Han_2013_table_2:row2:col1, Han_2013_table_2:row2:col2, Han_2013_table_2:row2:col3, Han_2013_table_2:row2:col6, Han_2013_table_2:row2:col16, Han_2013_table_2:row2:col28, Han_2013_table_2:row2:col29, Han_2013_table_2:row2:col30, Han_2013_table_2:row2:col35, Han_2013_table_2:row2:col36, Han_2013_table_2:row2:col37 |
+| CL/F (L/h) | `Q27` · CL/F | 53 | L/h | 1.472e-05 | m3/s | l/h | exact (1) | Han_2013_table_2:row3:col4, Han_2013_table_2:row3:col5, Han_2013_table_2:row3:col7, Han_2013_table_2:row3:col8, Han_2013_table_2:row3:col11, Han_2013_table_2:row3:col12, Han_2013_table_2:row3:col13, Han_2013_table_2:row3:col14, Han_2013_table_2:row3:col15, Han_2013_table_2:row3:col17, Han_2013_table_2:row3:col19, Han_2013_table_2:row3:col20, Han_2013_table_2:row3:col21, Han_2013_table_2:row3:col22, Han_2013_table_2:row3:col23, Han_2013_table_2:row3:col24, Han_2013_table_2:row3:col25, Han_2013_table_2:row3:col26, Han_2013_table_2:row3:col27, Han_2013_table_2:row3:col31, Han_2013_table_2:row3:col32, Han_2013_table_2:row3:col33, Han_2013_table_2:row3:col34, Han_2013_table_2:row3:col38 |
+| V (L) | `Q61` · V | 94.4 | L | 0.0944 | m3 | l | exact (1) | Han_2013_table_2:row4:col2, Han_2013_table_2:row4:col3, Han_2013_table_2:row4:col6, Han_2013_table_2:row4:col28, Han_2013_table_2:row4:col29, Han_2013_table_2:row4:col30, Han_2013_table_2:row4:col35, Han_2013_table_2:row4:col36, Han_2013_table_2:row4:col37 |
+| V/F (L) | `Q76` · V/F | 227 | L | 0.227 | m3 | l | exact (1) | Han_2013_table_2:row5:col5, Han_2013_table_2:row5:col7, Han_2013_table_2:row5:col11, Han_2013_table_2:row5:col12, Han_2013_table_2:row5:col13, Han_2013_table_2:row5:col15, Han_2013_table_2:row5:col17, Han_2013_table_2:row5:col19, Han_2013_table_2:row5:col20, Han_2013_table_2:row5:col21, Han_2013_table_2:row5:col22, Han_2013_table_2:row5:col23, Han_2013_table_2:row5:col24, Han_2013_table_2:row5:col25, Han_2013_table_2:row5:col26, Han_2013_table_2:row5:col27, Han_2013_table_2:row5:col31, Han_2013_table_2:row5:col32, Han_2013_table_2:row5:col33, Han_2013_table_2:row5:col34, Han_2013_table_2:row5:col38 |
+| ka (h -1 ) | `Q49` · kabs | 1.21 | h -1 | 0.0003361 | 1/s | 1/h | review_gapfill (0.7) | Kauv_2025:review |
+| t lag (h) | `Q83` · tlag | 0.25 | h | 900 | s | h | review_gapfill (0.7) | Kauv_2025:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ## Departures & gaps
@@ -123,8 +146,8 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[ka]` | 1.21 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[t lag]` | 0.25 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 1.21 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t lag]` | 0.25 |  | only_one_extracted |
 | `gpt-oss-120b` | `screen.dose_compound` | cyclosporine | unknown | mismatch |
 | `gpt-oss-120b` | `screen.primary_analyte` | cyclosporine | unknown | mismatch |
 
@@ -138,49 +161,44 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained | ratio | tol | source |
-|---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Han_2013_table_2:row2:col1', 'Han_2013_table_2:row2:col2', 'Han_2013_table_2:row2:col3', 'Han_2013_table_2:row2:col6', 'Han_2013_table_2:row2:col16', 'Han_2013_table_2:row2:col28', 'Han_2013_table_2:row2:col29', 'Han_2013_table_2:row2:col30', 'Han_2013_table_2:row2:col35', 'Han_2013_table_2:row2:col36', 'Han_2013_table_2:row2:col37'] |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Han_2013_table_2:row3:col4', 'Han_2013_table_2:row3:col5', 'Han_2013_table_2:row3:col7', 'Han_2013_table_2:row3:col8', 'Han_2013_table_2:row3:col11', 'Han_2013_table_2:row3:col12', 'Han_2013_table_2:row3:col13', 'Han_2013_table_2:row3:col14', 'Han_2013_table_2:row3:col15', 'Han_2013_table_2:row3:col17', 'Han_2013_table_2:row3:col19', 'Han_2013_table_2:row3:col20', 'Han_2013_table_2:row3:col21', 'Han_2013_table_2:row3:col22', 'Han_2013_table_2:row3:col23', 'Han_2013_table_2:row3:col24', 'Han_2013_table_2:row3:col25', 'Han_2013_table_2:row3:col26', 'Han_2013_table_2:row3:col27', 'Han_2013_table_2:row3:col31', 'Han_2013_table_2:row3:col32', 'Han_2013_table_2:row3:col33', 'Han_2013_table_2:row3:col34', 'Han_2013_table_2:row3:col38'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Kauv_2025:review'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Han_2013_table_2:row4:col2', 'Han_2013_table_2:row4:col3', 'Han_2013_table_2:row4:col6', 'Han_2013_table_2:row4:col28', 'Han_2013_table_2:row4:col29', 'Han_2013_table_2:row4:col30', 'Han_2013_table_2:row4:col35', 'Han_2013_table_2:row4:col36', 'Han_2013_table_2:row4:col37'] |
-| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Han_2013_table_2:row5:col5', 'Han_2013_table_2:row5:col7', 'Han_2013_table_2:row5:col11', 'Han_2013_table_2:row5:col12', 'Han_2013_table_2:row5:col13', 'Han_2013_table_2:row5:col15', 'Han_2013_table_2:row5:col17', 'Han_2013_table_2:row5:col19', 'Han_2013_table_2:row5:col20', 'Han_2013_table_2:row5:col21', 'Han_2013_table_2:row5:col22', 'Han_2013_table_2:row5:col23', 'Han_2013_table_2:row5:col24', 'Han_2013_table_2:row5:col25', 'Han_2013_table_2:row5:col26', 'Han_2013_table_2:row5:col27', 'Han_2013_table_2:row5:col31', 'Han_2013_table_2:row5:col32', 'Han_2013_table_2:row5:col33', 'Han_2013_table_2:row5:col34', 'Han_2013_table_2:row5:col38'] |
-| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Kauv_2025:review'] |
-| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 23.5 L/h | not captured | not captured | ['Han_2013_table_2:row2:col1', 'Han_2013_table_2:row2:col2', 'Han_2013_table_2:row2:col3', 'Han_2013_table_2:row2:col6', 'Han_2013_table_2:row2:col16', 'Han_2013_table_2:row2:col28', 'Han_2013_table_2:row2:col29', 'Han_2013_table_2:row2:col30', 'Han_2013_table_2:row2:col35', 'Han_2013_table_2:row2:col36', 'Han_2013_table_2:row2:col37'] |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 53 L/h | not captured | not captured | ['Han_2013_table_2:row3:col4', 'Han_2013_table_2:row3:col5', 'Han_2013_table_2:row3:col7', 'Han_2013_table_2:row3:col8', 'Han_2013_table_2:row3:col11', 'Han_2013_table_2:row3:col12', 'Han_2013_table_2:row3:col13', 'Han_2013_table_2:row3:col14', 'Han_2013_table_2:row3:col15', 'Han_2013_table_2:row3:col17', 'Han_2013_table_2:row3:col19', 'Han_2013_table_2:row3:col20', 'Han_2013_table_2:row3:col21', 'Han_2013_table_2:row3:col22', 'Han_2013_table_2:row3:col23', 'Han_2013_table_2:row3:col24', 'Han_2013_table_2:row3:col25', 'Han_2013_table_2:row3:col26', 'Han_2013_table_2:row3:col27', 'Han_2013_table_2:row3:col31', 'Han_2013_table_2:row3:col32', 'Han_2013_table_2:row3:col33', 'Han_2013_table_2:row3:col34', 'Han_2013_table_2:row3:col38'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 94.4 L | not captured | not captured | ['Han_2013_table_2:row4:col2', 'Han_2013_table_2:row4:col3', 'Han_2013_table_2:row4:col6', 'Han_2013_table_2:row4:col28', 'Han_2013_table_2:row4:col29', 'Han_2013_table_2:row4:col30', 'Han_2013_table_2:row4:col35', 'Han_2013_table_2:row4:col36', 'Han_2013_table_2:row4:col37'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 227 L | not captured | not captured | ['Han_2013_table_2:row5:col5', 'Han_2013_table_2:row5:col7', 'Han_2013_table_2:row5:col11', 'Han_2013_table_2:row5:col12', 'Han_2013_table_2:row5:col13', 'Han_2013_table_2:row5:col15', 'Han_2013_table_2:row5:col17', 'Han_2013_table_2:row5:col19', 'Han_2013_table_2:row5:col20', 'Han_2013_table_2:row5:col21', 'Han_2013_table_2:row5:col22', 'Han_2013_table_2:row5:col23', 'Han_2013_table_2:row5:col24', 'Han_2013_table_2:row5:col25', 'Han_2013_table_2:row5:col26', 'Han_2013_table_2:row5:col27', 'Han_2013_table_2:row5:col31', 'Han_2013_table_2:row5:col32', 'Han_2013_table_2:row5:col33', 'Han_2013_table_2:row5:col34', 'Han_2013_table_2:row5:col38'] |
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 4 |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Han_2013_table_2:row2:col1', 'Han_2013_table_2:row2:col2', 'Han_2013_table_2:row2:col3', 'Han_2013_table_2:row2:col6', 'Han_2013_table_2:row2:col16', 'Han_2013_table_2:row2:col28', 'Han_2013_table_2:row2:col29', 'Han_2013_table_2:row2:col30', 'Han_2013_table_2:row2:col35', 'Han_2013_table_2:row2:col36', 'Han_2013_table_2:row2:col37'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Han_2013_table_2:row3:col4', 'Han_2013_table_2:row3:col5', 'Han_2013_table_2:row3:col7', 'Han_2013_table_2:row3:col8', 'Han_2013_table_2:row3:col11', 'Han_2013_table_2:row3:col12', 'Han_2013_table_2:row3:col13', 'Han_2013_table_2:row3:col14', 'Han_2013_table_2:row3:col15', 'Han_2013_table_2:row3:col17', 'Han_2013_table_2:row3:col19', 'Han_2013_table_2:row3:col20', 'Han_2013_table_2:row3:col21', 'Han_2013_table_2:row3:col22', 'Han_2013_table_2:row3:col23', 'Han_2013_table_2:row3:col24', 'Han_2013_table_2:row3:col25', 'Han_2013_table_2:row3:col26', 'Han_2013_table_2:row3:col27', 'Han_2013_table_2:row3:col31', 'Han_2013_table_2:row3:col32', 'Han_2013_table_2:row3:col33', 'Han_2013_table_2:row3:col34', 'Han_2013_table_2:row3:col38'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['Kauv_2025:review'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Han_2013_table_2:row4:col2', 'Han_2013_table_2:row4:col3', 'Han_2013_table_2:row4:col6', 'Han_2013_table_2:row4:col28', 'Han_2013_table_2:row4:col29', 'Han_2013_table_2:row4:col30', 'Han_2013_table_2:row4:col35', 'Han_2013_table_2:row4:col36', 'Han_2013_table_2:row4:col37'] |
+| C5_dimension_Q76 | pass | [length] ** 3 |  | ['Han_2013_table_2:row5:col5', 'Han_2013_table_2:row5:col7', 'Han_2013_table_2:row5:col11', 'Han_2013_table_2:row5:col12', 'Han_2013_table_2:row5:col13', 'Han_2013_table_2:row5:col15', 'Han_2013_table_2:row5:col17', 'Han_2013_table_2:row5:col19', 'Han_2013_table_2:row5:col20', 'Han_2013_table_2:row5:col21', 'Han_2013_table_2:row5:col22', 'Han_2013_table_2:row5:col23', 'Han_2013_table_2:row5:col24', 'Han_2013_table_2:row5:col25', 'Han_2013_table_2:row5:col26', 'Han_2013_table_2:row5:col27', 'Han_2013_table_2:row5:col31', 'Han_2013_table_2:row5:col32', 'Han_2013_table_2:row5:col33', 'Han_2013_table_2:row5:col34', 'Han_2013_table_2:row5:col38'] |
+| C5_dimension_Q83 | pass | [time] |  | ['Kauv_2025:review'] |
+| C7_apparent_coherence | pass |  |  |  |
+| C8_topology | pass |  |  |  |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 23.5 L/h | ['Han_2013_table_2:row2:col1', 'Han_2013_table_2:row2:col2', 'Han_2013_table_2:row2:col3', 'Han_2013_table_2:row2:col6', 'Han_2013_table_2:row2:col16', 'Han_2013_table_2:row2:col28', 'Han_2013_table_2:row2:col29', 'Han_2013_table_2:row2:col30', 'Han_2013_table_2:row2:col35', 'Han_2013_table_2:row2:col36', 'Han_2013_table_2:row2:col37'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 53 L/h | ['Han_2013_table_2:row3:col4', 'Han_2013_table_2:row3:col5', 'Han_2013_table_2:row3:col7', 'Han_2013_table_2:row3:col8', 'Han_2013_table_2:row3:col11', 'Han_2013_table_2:row3:col12', 'Han_2013_table_2:row3:col13', 'Han_2013_table_2:row3:col14', 'Han_2013_table_2:row3:col15', 'Han_2013_table_2:row3:col17', 'Han_2013_table_2:row3:col19', 'Han_2013_table_2:row3:col20', 'Han_2013_table_2:row3:col21', 'Han_2013_table_2:row3:col22', 'Han_2013_table_2:row3:col23', 'Han_2013_table_2:row3:col24', 'Han_2013_table_2:row3:col25', 'Han_2013_table_2:row3:col26', 'Han_2013_table_2:row3:col27', 'Han_2013_table_2:row3:col31', 'Han_2013_table_2:row3:col32', 'Han_2013_table_2:row3:col33', 'Han_2013_table_2:row3:col34', 'Han_2013_table_2:row3:col38'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 94.4 L | ['Han_2013_table_2:row4:col2', 'Han_2013_table_2:row4:col3', 'Han_2013_table_2:row4:col6', 'Han_2013_table_2:row4:col28', 'Han_2013_table_2:row4:col29', 'Han_2013_table_2:row4:col30', 'Han_2013_table_2:row4:col35', 'Han_2013_table_2:row4:col36', 'Han_2013_table_2:row4:col37'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 227 L | ['Han_2013_table_2:row5:col5', 'Han_2013_table_2:row5:col7', 'Han_2013_table_2:row5:col11', 'Han_2013_table_2:row5:col12', 'Han_2013_table_2:row5:col13', 'Han_2013_table_2:row5:col15', 'Han_2013_table_2:row5:col17', 'Han_2013_table_2:row5:col19', 'Han_2013_table_2:row5:col20', 'Han_2013_table_2:row5:col21', 'Han_2013_table_2:row5:col22', 'Han_2013_table_2:row5:col23', 'Han_2013_table_2:row5:col24', 'Han_2013_table_2:row5:col25', 'Han_2013_table_2:row5:col26', 'Han_2013_table_2:row5:col27', 'Han_2013_table_2:row5:col31', 'Han_2013_table_2:row5:col32', 'Han_2013_table_2:row5:col33', 'Han_2013_table_2:row5:col34', 'Han_2013_table_2:row5:col38'] |
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
-| T3_output_variable | not captured | pass | C_central (measured=cyclosporine) | central.C | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | pass | 6 scholar param(s) emitted or defaulted | 6 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable | not captured | LLM adjudication → deterministic rule |
-| T1_t_half_terminal | reference | skipped | not captured | 4.642808875433401 | not captured | non-numeric value |
+| check | scenario | status | expected | obtained | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  | no covariate effects in record |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
+| T3_output_variable |  | pass | C_central (measured=cyclosporine) | central.C | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 6 scholar param(s) emitted or defaulted | 6 covered | all structural parameters accounted for |
+| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| T1_t_half_terminal | reference | skipped |  | 4.643 | non-numeric value |
 
 <details class="legend">
 <summary>Validation definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
-## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ciclosporin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Han_2013` / `Han_2013::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ciclosporin/models/modelica/Ciclosporin_Han2013_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ciclosporin/models/modelica/Ciclosporin_Han2013_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ciclosporin/models/modelica/Ciclosporin_Han2013_reference.json`
-
+</details>
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
@@ -197,7 +215,49 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_ciclosporin/Ciclosporin_Han2013_reference/Ciclosporin_Han2013_reference.svg" alt="Ciclosporin_Han2013_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div></div>
+
+## Model interface
+
+The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
+
+| direction | role | name | value | unit (SI) |
+|---|---|---|---|---|
+| input | compound | `MM` | 1.203 | kg/mol |
+| input | dosing | `F` | 1 | 1 |
+| input | dosing | `Tlag` | 900 | s |
+| input | dosing | `adminCount` | 1 | 1 |
+| input | dosing | `adminDuration` | 600 | s |
+| input | dosing | `adminMass` | 0.00025 | kg |
+| input | model | `Cl` | 6.528e-06 | m3/s |
+| input | model | `VdPerKg` | 0.001349 | m3/kg |
+| input | model | `ka` | 0.0003361 | 1/s |
+| input | subject | `weight` | 70 | kg |
+| output | concentration | `central.C` |  | kg/m3 |
+
+## Tested with
+
+- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_2C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
+- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
+- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
+
+## How to cite
+
+**Source paper** (the parameters are its): Han K, Pillai VC, Venkataramanan R. Population pharmacokinetics of cyclosporine in transplant recipients. The AAPS journal 15(4):901–912 (2013). [doi:10.1208/s12248-013-9500-8](https://doi.org/10.1208/s12248-013-9500-8)
+
+**This record:** Pharmacolibrary v26.09, model `Ciclosporin_Han2013_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_ciclosporin/Ciclosporin_Han2013_reference>
+
+```bibtex
+@misc{pharmacolibrary_CiclosporinHan2013reference,
+  title  = {{Pharmacolibrary model Ciclosporin_Han2013_reference}},
+  author = {{Pharmacolibrary}},
+  version = {v26.09},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_ciclosporin/Ciclosporin_Han2013_reference},
+  note   = {Parameters from doi:10.1208/s12248-013-9500-8},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -210,4 +270,5 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 00:01 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bciclosporin%5D%20Ciclosporin_Han2013_reference&body=Drug%3A%20ciclosporin%0ARecord%3A%20Ciclosporin_Han2013_reference%0APaper%3A%20Han_2013%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ciclosporin/Ciclosporin_Han2013_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Generated by `docs.py` (scholarv2, release v26.09) · extracted 2026-10-07 00:01 UTC</sub>

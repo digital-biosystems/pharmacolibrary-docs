@@ -13,12 +13,6 @@ Nesiritide, a form of human brain natriuretic peptide, was used as a vasodilator
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q6997373](https://www.wikidata.org/wiki/Q6997373) and the WHO ATC classification; not checked by a person.</small>
 
-## Extraction summary
-
-| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
-|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 10:58 | 8:13 | 0/0/0 | 1/0/0 | 0/0/0 | 311,043/7,531 | ollama / qwen3.8:27b-mtp-q8_0 | 40 | 10/62 | 39/1 | 0 |
-
 ## popPK records
 
 _not available_
@@ -27,13 +21,21 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Yeung_1991_cGMP](drugs/drug_nesiritide/pd_Yeung_1991_cGMP.md) | cyclic GMP ← brain natriuretic peptide · direct Emax (saturable) effect | — | Yeung VT et al., Binding of brain and atrial natriuretic…, Journal of neurochemistry (1991) | [10.1111/j.1471-4159.1991.tb02068.x](https://doi.org/10.1111/j.1471-4159.1991.tb02068.x) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Yeung_1991_cGMP](drugs/drug_nesiritide/pd_Yeung_1991_cGMP.md) | cyclic GMP ← brain natriuretic peptide · direct Emax (saturable) effect | — | Yeung VT et al., Binding of brain and atrial natriuretic…, Journal of neurochemistry (1991) | [10.1111/j.1471-4159.1991.tb02068.x](https://doi.org/10.1111/j.1471-4159.1991.tb02068.x) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-06 10:58 | 8:13 | 0/0/0 | 1/0/0 | 0/0/0 | 311,043/7,531 | ollama / qwen3.8:27b-mtp-q8_0 | 40 | 10/62 | 39/1 | 0 |
 
 ## Coverage
 
@@ -126,7 +128,7 @@ _9 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | PD | Khurana_1993 | not_relevant | 0 | 0 | The paper investigates the effect of natriuretic peptides on testosterone production in mouse Leydig cells and does not mention nesiritide or report any pharmacodynamic parameters for it. |
 | popPK | Kimura_2007 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of ANP and BNP, not nesiritide. |
 | popPK | Koomen_2021 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics and pharmacodynamics of atrasentan, not nesiritide. |
-| PD | Koomen_2021 | not_relevant | 0 | 0 | not captured |
+| PD | Koomen_2021 | not_relevant | 0 | 0 |  |
 | popPK | Krause_2017 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for selexipag and its metabolite ACT-333679, not nesiritide. |
 | popPK | Krischke_2016 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of doxorubicin, not nesiritide. |
 | PD | Krischke_2016 | not_relevant | 0 | 0 | The paper studies doxorubicin, not nesiritide, and reports no extractable PD parameters for the target drug. |
@@ -250,5 +252,9 @@ _9 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | popPK | Şenkal_2020 | irrelevant | 0 | 0 | The study is a retrospective cohort analysis of ACE inhibitor/ARB exposure in COVID-19 patients and does not report pharmacokinetic parameters for nesiritide. |
 | PD | Şenkal_2020 | not_relevant | 0 | 0 | The paper is a retrospective cohort study on ACE inhibitors in COVID-19 and does not involve nesiritide or any pharmacodynamic modeling. |
 
+
+</details>
+
 ---
-<sub>Generated by `docs.py` (scholarv2)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
+<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>

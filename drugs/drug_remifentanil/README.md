@@ -22,32 +22,42 @@ Remifentanil is a potent opioid painkiller used as part of general anaesthesia t
 |---|---|---|---|---|---|---|
 | remifentanil | parent | 376.447 | C20H28N2O5 | DrugBank | [60815](https://pubchem.ncbi.nlm.nih.gov/compound/60815) | Maharaj_2025 |
 
-## Extraction summary
+## Parameters across studies
 
-| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
-|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 04:31 | 2:33 | 0/2/1 | 2/0/0 | 0/0/0 | 311,867/14,851 | einfracz / qwen3.8-27b | 17 | 2/7 | 9/0 | 0 |
+| parameter | as named | value | unit | as reported | population | n | species | status | record |
+|---|---|---|---|---|---|---|---|---|---|
+| CL | CL | 60 | L/h | 1.0 L/min | adults with and without obstructive sleep apnoea | 74 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Maharaj_2025_reference](drugs/drug_remifentanil/Remifentanil_Maharaj2025_reference.md) |
+
+<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Maharaj_2025_reference](drugs/drug_remifentanil/Remifentanil_Maharaj2025_reference.md) | — | 1-compartment (no model) | 2 | Maharaj AR et al., Opioid use in treated and untreated obs…, British journal of anaesthe… (2025) | [10.1016/j.bja.2024.10.042](https://doi.org/10.1016/j.bja.2024.10.042) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.917). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Cascone_2013_reference](drugs/drug_remifentanil/Remifentanil_Cascone2013_reference.md) | — | 2-compartment (no model) | 3 | Cascone S et al., Pharmacokinetics of Remifentanil: a thr…, Translational medicine @ Un… (2013) | — |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Iwata_2025_reference](drugs/drug_remifentanil/Remifentanil_Iwata2025_reference.md) | — | 1-compartment (no model) | 0 | Iwata H et al., Machine Learning Prediction and Validat…, Molecular pharmaceutics (2025) | [10.1021/acs.molpharmaceut.4c01431](https://doi.org/10.1021/acs.molpharmaceut.4c01431) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Maharaj_2025_reference](drugs/drug_remifentanil/Remifentanil_Maharaj2025_reference.md) | — | 1-compartment (no model) | 2 | Maharaj AR et al., Opioid use in treated and untreated obs…, British journal of anaesthe… (2025) | [10.1016/j.bja.2024.10.042](https://doi.org/10.1016/j.bja.2024.10.042) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Cascone_2013_reference](drugs/drug_remifentanil/Remifentanil_Cascone2013_reference.md) | — | 2-compartment (no model) | 3 | Cascone S et al., Pharmacokinetics of Remifentanil: a thr…, Translational medicine @ Un… (2013) | — |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Iwata_2025_reference](drugs/drug_remifentanil/Remifentanil_Iwata2025_reference.md) | — | 1-compartment (no model) | 0 | Iwata H et al., Machine Learning Prediction and Validat…, Molecular pharmaceutics (2025) | [10.1021/acs.molpharmaceut.4c01431](https://doi.org/10.1021/acs.molpharmaceut.4c01431) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Eleveld_2017_SEF](drugs/drug_remifentanil/pd_Eleveld_2017_SEF.md) | spectral-edge frequency ← remifentanil · delayed effect through an effect compartment | — | Eleveld DJ et al., An Allometric Model of Remifentanil Pha…, Anesthesiology (2017) | [10.1097/ALN.0000000000001634](https://doi.org/10.1097/ALN.0000000000001634) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Vide_2020_PPI](drugs/drug_remifentanil/pd_Vide_2020_PPI.md) | Pupillary Pain Index ← remifentanil · direct sigmoid Emax (Hill) effect | — | Vide S et al., Pharmacodynamic modelling of the effect…, Journal of clinical monitor… (2020) | [10.1007/s10877-019-00323-x](https://doi.org/10.1007/s10877-019-00323-x) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Eleveld_2017_SEF](drugs/drug_remifentanil/pd_Eleveld_2017_SEF.md) | spectral-edge frequency ← remifentanil · delayed effect through an effect compartment | — | Eleveld DJ et al., An Allometric Model of Remifentanil Pha…, Anesthesiology (2017) | [10.1097/ALN.0000000000001634](https://doi.org/10.1097/ALN.0000000000001634) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Vide_2020_PPI](drugs/drug_remifentanil/pd_Vide_2020_PPI.md) | Pupillary Pain Index ← remifentanil · direct sigmoid Emax (Hill) effect | — | Vide S et al., Pharmacodynamic modelling of the effect…, Journal of clinical monitor… (2020) | [10.1007/s10877-019-00323-x](https://doi.org/10.1007/s10877-019-00323-x) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 04:31 | 2:33 | 0/2/1 | 2/0/0 | 0/0/0 | 311,867/14,851 | einfracz / qwen3.8-27b | 17 | 2/7 | 9/0 | 0 |
 
 ## Coverage
 
@@ -86,5 +96,9 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | popPK | Vellinga_2025 | irrelevant | 1 | 0 | The study characterizes the drug-drug interaction of remifentanil on the pharmacokinetics of remimazolam, using an existing model for remifentanil rather than deriving new population pharmacokinetic parameters for remifentanil itself. |
 | popPK | Vide_2020 | irrelevant | 0 | 0 | The study reports pharmacodynamic parameters (effect-site concentrations, PPI) for pain suppression, not pharmacokinetic disposition parameters (CL, V, ka). |
 
+
+</details>
+
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 04:29 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
+<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 04:29 UTC</sub>

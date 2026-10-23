@@ -2,11 +2,11 @@
  "dose_source": "library default",
  "model_id": "Doxorubicin_DeJongh2025_reference",
  "molar_masses": {
-  "C_central": 0.5435193
+  "central.C": 0.5435193
  },
  "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "C_central"
+  "central.C"
  ],
  "parameters": {
   "Cl": 4.880555555555556e-06,
@@ -19,10 +19,10 @@
   "weight": 70.0
  },
  "reference_peak_times": {
-  "C_central": 660.0000000662068
+  "central.C": 660.0000000662068
  },
  "reference_peaks": {
-  "C_central": 4.115784722635203e-05
+  "central.C": 4.115784722635225e-05
  },
  "stop_time": 172800.0,
  "template": "PK_1C",

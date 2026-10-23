@@ -1,19 +1,51 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;dolutegravir&quot;,&quot;href&quot;:&quot;drugs/drug_dolutegravir/&quot;},{&quot;label&quot;:&quot;Kengo_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dolutegravir_Kengo2023_reference&quot;,&quot;label&quot;:&quot;Kengo_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dolutegravir/Dolutegravir_Kengo2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Dolutegravir_Zhang2015_reference&quot;,&quot;label&quot;:&quot;Zhang_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dolutegravir/Dolutegravir_Zhang2015_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dolutegravir_Kengo2023_reference&quot;,&quot;label&quot;:&quot;Kengo_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dolutegravir/Dolutegravir_Kengo2023_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Dolutegravir_Zhang2015_reference&quot;,&quot;label&quot;:&quot;Zhang_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dolutegravir/Dolutegravir_Zhang2015_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # dolutegravir — `Dolutegravir_Kengo2023_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
+
+> The reviewer's verdict (Rejected, 2026-10-07 14:20 UTC) predates the latest extraction (2026-10-07 16:25 UTC); the status shown comes from the current checks.
+
+<div class="pk-model-meta" hidden drug="dolutegravir" model-id="Dolutegravir_Kengo2023_reference" status="extracted" stale="true" population="adults with TB and HIV" measured-compound="dolutegravir" parameterization="mechanistic" topology="1C"></div>
+
+## Citation
+Kengo A, Nabisere R, Gausi K, Musaazi J, Buzibye A, Omali D et al. Dolutegravir pharmacokinetics in Ugandan patients with TB and HIV receiving standard- versus high-dose rifampicin. Antimicrobial agents and chemotherapy 67(11):e0043023 (2023).
+  ·  DOI: [10.1128/aac.00430-23](https://doi.org/10.1128/aac.00430-23)
+
+## Population and dosing
+
+**Population:** adults with TB and HIV · condition tuberculosis and HIV · age group adult · n = 44.
+
+## Model
+
+**Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameterization:** mechanistic.  
+**Parameters:** 5 extracted.  
+**Availability:** Model and browser simulation available in **Models** and **Simulation**.
+
+<figure class="pk-models-diagram"><img src="drugs/drug_dolutegravir/Dolutegravir_Kengo2023_reference/Dolutegravir_Kengo2023_reference.svg" alt="Dolutegravir_Kengo2023_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
+
+## Parameters
+| label | parameter | value | unit |
+|---|---|---|---|
+| median (interquartile range) rifampicin area under the curve (AUC) in the standard-dose arm | AUC | 32.3 | mg·h/L |
+| clearance | CL | 1.87 | L/h |
+| absorption rate constant | kabs | 1.42 | h-1 |
+| volume of distribution | V | 12.4 | L |
+| decrease in dolutegravir bioavailability per 10 mg·h/L increase in the AUC of coadministered rifampicin | Fab | 2.3 | % |
+
+<details class="pk-evidence"><summary>Evidence &amp; review</summary>
+
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
-
-**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 ### Reviewer guidance
 
@@ -25,31 +57,19 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-07 14:20:56.630641+00:00) predates the upstream re-run (2026-10-07 16:25:45.065502+00:00). Current validate status: `extracted`.
+### All parameter columns
 
-## Citation
-Kengo A et al., Dolutegravir pharmacokinetics in Uganda…, Antimicrobial agents and ch… (2023)
-  ·  DOI: [10.1128/aac.00430-23](https://doi.org/10.1128/aac.00430-23)
-
-<div class="pk-model-meta" hidden drug="dolutegravir" model-id="Dolutegravir_Kengo2023_reference" status="extracted" stale="true" population="adults with TB and HIV" measured-compound="dolutegravir" parameterization="mechanistic" topology="1C"></div>
-
-**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 5 extracted.
-
-**Parameterization:** mechanistic.
-
-## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| median (interquartile range) rifampicin area under the curve (AUC) in the standard-dose arm | `Q88` · AUC | 32.3 | mg·h/L | not captured | [[h] · [mg]] / [l] | not captured | llm_confirmed (0.6) | Kengo_2023:abstract | — | not captured |
-| clearance | `Q22` · CL | 1.87 | L/h | 5.194444444444445e-07 | [l] / [h] | not captured | exact (1.0) | Kengo_2023:abstract | — | not captured |
-| absorption rate constant | `Q49` · kabs | 1.42 | h-1 | 0.00039444444444444444 | [1] / [h] | not captured | exact (1.0) | Kengo_2023:abstract | — | not captured |
-| volume of distribution | `Q61` · V | 12.4 | L | 0.012400000000000001 | [l] | not captured | exact (1.0) | Kengo_2023:abstract | — | not captured |
-| decrease in dolutegravir bioavailability per 10 mg·h/L increase in the AUC of coadministered rifampicin | `Q40` · Fab | 2.3 | % | not captured | not captured | not captured | llm_confirmed (0.6) | Kengo_2023:abstract | — | not captured |
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
+|---|---|---|---|---|---|---|---|---|
+| median (interquartile range) rifampicin area under the curve (AUC) in the standard-dose arm | `Q88` · AUC | 32.3 | mg·h/L |  |  | (h·mg)/l | llm_confirmed (0.6) | Kengo_2023:abstract |
+| clearance | `Q22` · CL | 1.87 | L/h | 5.194e-07 | m3/s | l/h | exact (1) | Kengo_2023:abstract |
+| absorption rate constant | `Q49` · kabs | 1.42 | h-1 | 0.0003944 | 1/s | 1/h | exact (1) | Kengo_2023:abstract |
+| volume of distribution | `Q61` · V | 12.4 | L | 0.0124 | m3 | l | exact (1) | Kengo_2023:abstract |
+| decrease in dolutegravir bioavailability per 10 mg·h/L increase in the AUC of coadministered rifampicin | `Q40` · Fab | 2.3 | % |  |  |  | llm_confirmed (0.6) | Kengo_2023:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ## Departures & gaps
@@ -83,16 +103,16 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[absorption rate constant]` | 1.42 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[absorption rate constant]` | not captured | 1.42 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[clearance]` | 1.87 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[clearance]` | not captured | 1.87 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[decrease in dolutegravir bioavailability per 10 mg h/l increase in the auc of coadministered rifampicin]` | 2.3 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[dolutegravir bioavailability decrease per 10 mg h/l increase in rifampicin auc]` | not captured | 2.3 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[median (interquartile range) rifampicin area under the curve (auc) in the standard-dose arm]` | 32.3 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[rifampicin area under the curve (auc) - standard-dose arm]` | not captured | 32.3 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[volume of distribution]` | 12.4 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[volume of distribution]` | not captured | 12.4 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[absorption rate constant]` | 1.42 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[absorption rate constant]` |  | 1.42 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` | 1.87 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` |  | 1.87 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[decrease in dolutegravir bioavailability per 10 mg h/l increase in the auc of coadministered rifampicin]` | 2.3 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[dolutegravir bioavailability decrease per 10 mg h/l increase in rifampicin auc]` |  | 2.3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[median (interquartile range) rifampicin area under the curve (auc) in the standard-dose arm]` | 32.3 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[rifampicin area under the curve (auc) - standard-dose arm]` |  | 32.3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` | 12.4 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` |  | 12.4 | only_one_extracted |
 | `gpt-oss-120b` | `screen.dose_compound` | dolutegravir | unknown | mismatch |
 | `gpt-oss-120b` | `screen.primary_analyte` | dolutegravir | unknown | mismatch |
 
@@ -106,29 +126,27 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained | ratio | tol | source |
-|---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Kengo_2023:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Kengo_2023:abstract'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Kengo_2023:abstract'] |
-| C5_dimension_Q88 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Kengo_2023:abstract'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 1.87 | not captured | not captured | ['Kengo_2023:abstract'] |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 1.87 L/h | not captured | not captured | ['Kengo_2023:abstract'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 12.4 L | not captured | not captured | ['Kengo_2023:abstract'] |
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 5 |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Kengo_2023:abstract'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['Kengo_2023:abstract'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Kengo_2023:abstract'] |
+| C5_dimension_Q88 | pass | [mass] * [time] / [length] ** 3 |  | ['Kengo_2023:abstract'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 1.87 | ['Kengo_2023:abstract'] |
+| C8_topology | pass |  |  |  |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 1.87 L/h | ['Kengo_2023:abstract'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 12.4 L | ['Kengo_2023:abstract'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
-## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_dolutegravir/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kengo_2023` / `Kengo_2023::reference`)
-
+</details>
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
@@ -145,7 +163,49 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_dolutegravir/Dolutegravir_Kengo2023_reference/Dolutegravir_Kengo2023_reference.svg" alt="Dolutegravir_Kengo2023_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div></div>
+
+## Model interface
+
+The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
+
+| direction | role | name | value | unit (SI) |
+|---|---|---|---|---|
+| input | compound | `MM` | 0.4194 | kg/mol |
+| input | dosing | `F` | 2.3 | 1 |
+| input | dosing | `Tlag` | 0 | s |
+| input | dosing | `adminCount` | 1 | 1 |
+| input | dosing | `adminDuration` | 600 | s |
+| input | dosing | `adminMass` | 5e-05 | kg |
+| input | model | `Cl` | 5.194e-07 | m3/s |
+| input | model | `VdPerKg` | 0.0001771 | m3/kg |
+| input | model | `ka` | 0.0003944 | 1/s |
+| input | subject | `weight` | 70 | kg |
+| output | concentration | `central.C` |  | kg/m3 |
+
+## Tested with
+
+- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
+- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
+- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
+
+## How to cite
+
+**Source paper** (the parameters are its): Kengo A, Nabisere R, Gausi K, Musaazi J, Buzibye A, Omali D et al. Dolutegravir pharmacokinetics in Ugandan patients with TB and HIV receiving standard- versus high-dose rifampicin. Antimicrobial agents and chemotherapy 67(11):e0043023 (2023). [doi:10.1128/aac.00430-23](https://doi.org/10.1128/aac.00430-23)
+
+**This record:** Pharmacolibrary v26.09, model `Dolutegravir_Kengo2023_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_dolutegravir/Dolutegravir_Kengo2023_reference>
+
+```bibtex
+@misc{pharmacolibrary_DolutegravirKengo2023reference,
+  title  = {{Pharmacolibrary model Dolutegravir_Kengo2023_reference}},
+  author = {{Pharmacolibrary}},
+  version = {v26.09},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_dolutegravir/Dolutegravir_Kengo2023_reference},
+  note   = {Parameters from doi:10.1128/aac.00430-23},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -158,4 +218,5 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 16:25 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdolutegravir%5D%20Dolutegravir_Kengo2023_reference&body=Drug%3A%20dolutegravir%0ARecord%3A%20Dolutegravir_Kengo2023_reference%0APaper%3A%20Kengo_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_dolutegravir/Dolutegravir_Kengo2023_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Generated by `docs.py` (scholarv2, release v26.09) · extracted 2026-10-07 16:25 UTC</sub>

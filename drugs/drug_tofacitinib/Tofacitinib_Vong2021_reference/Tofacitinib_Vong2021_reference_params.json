@@ -15,6 +15,18 @@
   10.0,
   15.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Vong_2021:other_prose",
+    "value_si": 3.6e-06
+   },
+   {
+    "source": "Vong_2021:other_prose",
+    "value_si": 6.7e-06
+   }
+  ]
+ },
  "parameters": {
   "Cl": 7.305555555555556e-06,
   "F": 1.0,

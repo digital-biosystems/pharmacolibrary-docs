@@ -14,6 +14,14 @@
   700.0,
   2800.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Umezaki_2022:other_prose",
+    "value_si": 0.65
+   }
+  ]
+ },
  "parameters": {
   "Cl": 5.555555555555555e-07,
   "F": 1.0,

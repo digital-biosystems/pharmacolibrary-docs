@@ -15,6 +15,14 @@
   140.0,
   280.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Khwarg_2024:results_prose",
+    "value_si": 1.012
+   }
+  ]
+ },
  "parameters": {
   "Cl": 3.986111111111111e-06,
   "F": 0.9,

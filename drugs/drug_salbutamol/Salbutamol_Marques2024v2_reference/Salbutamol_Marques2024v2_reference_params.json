@@ -1,5 +1,5 @@
 {
- "dose_source": "paper",
+ "dose_source": "WHO ATC DDD 12 mg oral (R03CC02)",
  "model_id": "Salbutamol_Marques2024v2_reference",
  "molar_masses": {
   "central.C": 0.2393107
@@ -7,10 +7,6 @@
  "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
- ],
- "paper_doses_kind": "discrete",
- "paper_doses_mg": [
-  0.6
  ],
  "parameters": {
   "Cl": 9.702777777777779e-06,
@@ -20,16 +16,16 @@
   "VdPerKg": 0.002327571428571429,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 6e-07,
+  "adminMass": 1.2e-05,
   "k12": 1.8054788354917243e-05,
   "ka": 0.003763888888888889,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 1558.316633266533
+  "central.C": 1539.107412238724
  },
  "reference_peaks": {
-  "central.C": 3.0929503329449547e-06
+  "central.C": 6.182076680250534e-05
  },
  "stop_time": 86400.0,
  "template": "PK_2C_enteral",

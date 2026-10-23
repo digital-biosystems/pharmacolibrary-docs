@@ -18,6 +18,26 @@
  "paper_doses_mg": [
   100.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Edlund_2022:other_prose",
+    "value_si": 0.000461
+   },
+   {
+    "source": "Edlund_2022:other_prose",
+    "value_si": 0.0004613
+   },
+   {
+    "source": "Edlund_2022:discussion_prose",
+    "value_si": 24.0
+   },
+   {
+    "source": "Edlund_2022:discussion_prose",
+    "value_si": 14.0
+   }
+  ]
+ },
  "parameters": {
   "CL1": 0.0,
   "CLm1": 6.055555555555555e-06,

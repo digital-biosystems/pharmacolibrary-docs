@@ -44,19 +44,21 @@
   "q1_m11": 0.0003085760000000001,
   "q1_m21": 0.0021600320000000005,
   "q21": 0.0002349166666666667,
-  "qm21_m22": 0.00016331388888888887,
-  "qm22_m21": 0.00016331388888888887
+  "q23": 0.00016331388888888887,
+  "q32": 0.00016331388888888887,
+  "qm21_m22": 1.2433333333333332e-06,
+  "qm22_m21": 1.2433333333333332e-06
  },
  "pgx": {
   "effects": {
    "Intermediate": [
     {
      "compound": "clopidogrel H4",
-     "parameter": "fm1",
-     "reference": 0.125,
-     "scale": "logit",
+     "parameter": "CLm1 (L/h)",
+     "reference": 74.25,
+     "scale": "power",
      "theta": -0.45,
-     "value": 0.08348510021221434
+     "value": 47.34389025791667
     },
     {
      "compound": "clopidogrel carboxylic acid",
@@ -101,8 +103,9 @@
   "phenotypes": {
    "Intermediate": {
     "CL1": 0.00038068097603461337,
-    "q1_m11": 0.00018289796292105106,
-    "q1_m21": 0.002007887727711003
+    "CLm1": 1.3151080627199075e-05,
+    "q1_m11": 0.00027384821132900674,
+    "q1_m21": 0.0019169374793030472
    },
    "Normal": {},
    "Poor": {
@@ -114,19 +117,21 @@
   "record": "Jung_2024",
   "reference": "Normal",
   "sources": [
-   "Jung_2024 covariate theta_fm_im_power",
-   "Jung_2024 covariate theta_fm_pm_power"
+   "Jung_2024 covariate fm1_im",
+   "Jung_2024 covariate fm1_pm",
+   "Jung_2024 covariate fm2_im",
+   "Jung_2024 covariate fm2_pm"
   ]
  },
  "reference_peak_times": {
-  "C_M1": 2373.1107348060746,
-  "C_M2": 3374.640582796452,
-  "central.C": 2770.3406813627253
+  "C_M1": 2372.428774971525,
+  "C_M2": 2699.738135759826,
+  "central.C": 2597.194388777555
  },
  "reference_peaks": {
-  "C_M1": 0.00011458370622370195,
-  "C_M2": 0.000756276897553151,
-  "central.C": 3.4105006939161183e-06
+  "C_M1": 0.0001145556873122169,
+  "C_M2": 0.002463252709577246,
+  "central.C": 3.073872859777802e-06
  },
  "stop_time": 86400.0,
  "template": "PK_3M_3C",

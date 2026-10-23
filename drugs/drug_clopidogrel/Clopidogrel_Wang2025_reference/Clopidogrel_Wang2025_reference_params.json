@@ -2,11 +2,11 @@
  "dose_source": "library default",
  "model_id": "Clopidogrel_Wang2025_reference",
  "molar_masses": {
-  "C_central": 0.321822
+  "central.C": 0.321822
  },
  "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "C_central"
+  "central.C"
  ],
  "parameters": {
   "Cl": 8.805555555555556e-07,
@@ -19,10 +19,10 @@
   "weight": 70.0
  },
  "reference_peak_times": {
-  "C_central": 660.0000000662081
+  "central.C": 660.0000000662081
  },
  "reference_peaks": {
-  "C_central": 7.392932607341479e-05
+  "central.C": 7.392932607341479e-05
  },
  "stop_time": 604800.0,
  "template": "PK_1C",

@@ -1,99 +1,117 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01D&quot;,&quot;href&quot;:&quot;atc/L01D.md&quot;},{&quot;label&quot;:&quot;doxorubicin&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/&quot;},{&quot;label&quot;:&quot;Mc_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Doxorubicin_Bguin2024_reference&quot;,&quot;label&quot;:&quot;B\u00e9guin_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Bguin2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_DeJongh2025_reference&quot;,&quot;label&quot;:&quot;DeJongh_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_DeJongh2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Mohmaed2024_reference&quot;,&quot;label&quot;:&quot;Mohmaed_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Mohmaed2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Olivo2024_reference&quot;,&quot;label&quot;:&quot;Olivo_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Olivo2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_PrezBlanco2016_1&quot;,&quot;label&quot;:&quot;P\u00e9rez-Blanco_2016_1&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_PrezBlanco2016_1.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_PrezBlanco2016_a_u_c_m_mg_h_l&quot;,&quot;label&quot;:&quot;P\u00e9rez-Blanco_2016_a_u_c_m_mg_h_l&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_PrezBlanco2016_a_u_c_m_mg_h_l.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_PrezBlanco2016_a_u_c_total_ng_ml&quot;,&quot;label&quot;:&quot;P\u00e9rez-Blanco_2016_a_u_c_total_ng_ml&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_PrezBlanco2016_a_u_c_total_ng_ml.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_PrezBlanco2016_final_model&quot;,&quot;label&quot;:&quot;P\u00e9rez-Blanco_2016_final_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_PrezBlanco2016_final_model.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Sallustio2021_reference&quot;,&quot;label&quot;:&quot;Sallustio_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Sallustio2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Sinha2026_reference&quot;,&quot;label&quot;:&quot;Sinha_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Sinha2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Doxorubicin_Bguin2024_reference&quot;,&quot;label&quot;:&quot;B\u00e9guin_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Bguin2024_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_DeJongh2025_reference&quot;,&quot;label&quot;:&quot;DeJongh_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_DeJongh2025_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Mody2023_reference&quot;,&quot;label&quot;:&quot;Mody_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Mody2023_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Mohmaed2024_reference&quot;,&quot;label&quot;:&quot;Mohmaed_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Mohmaed2024_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Olivo2024_reference&quot;,&quot;label&quot;:&quot;Olivo_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Olivo2024_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_PrezBlanco2016_reference&quot;,&quot;label&quot;:&quot;P\u00e9rez-Blanco_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_PrezBlanco2016_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Sallustio2021_reference&quot;,&quot;label&quot;:&quot;Sallustio_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Sallustio2021_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Sinha2026_reference&quot;,&quot;label&quot;:&quot;Sinha_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Sinha2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # doxorubicin — `Doxorubicin_Mc2024_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.409), gpt-oss:120b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
+
+> The doxorubicin entrapped-to-free interconversion rate of 0.0271 L/h has mismatched units, and the doxorubicinol metabolite is unreachable.
+
+<div class="pk-model-meta" hidden drug="doxorubicin" model-id="Doxorubicin_Mc2024_reference" status="rejected" stale="false" population="patients with advanced solid tumours" measured-compound="doxorubicin (free and entrapped) and doxorubicinol" parameterization="mechanistic" topology="general_linear"></div>
+
+## Citation
+Mc Laughlin AM, Hess D, Michelet R, Colombo I, Haefliger S, Bastian S et al. Population pharmacokinetics of TLD-1, a novel liposomal doxorubicin, in a phase I trial. Cancer chemotherapy and pharmacology 94(3):349–360 (2024).
+  ·  DOI: [10.1007/s00280-024-04679-z](https://doi.org/10.1007/s00280-024-04679-z)
+
+## Population and dosing
+
+**Population:** patients with advanced solid tumours · condition advanced solid tumours · age group adult · n = #30.
+
+**Dosing:** 10, 15, 20, 25, 30, 35, 40, 45 mg/m2, iv, multiple, every 21 h.
+
+**Dosed compound ≠ measured compound:** dosed TLD-1 (liposomal doxorubicin), measured doxorubicin (free and entrapped) and doxorubicinol.
+
+## Model
+
+**Structure:** general linear; no model was built for this record.  
+**Parameterization:** mechanistic.  
+**Parameters:** 9 extracted.  
+**Availability:** No model was generated from this record.
+
+## Parameters
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
+| label | parameter | value | unit |
+|---|---|---|---|
+| V1 [L] | V1 | 3.39 | L |
+| CL1 [L/h] | CL | 0.0271 | L/h |
+| V2 [L] | V1 | 0.531 | L |
+| V2_BSA [-]b | V2 | 4.47 | 27 |
+| Q [L/h] | Q | 0.136 | L/h |
+| V3_BSA [-]b | V3 | 11.5 | 27 |
+| CL2 [L/h] | CL | 0.450 | L/h |
+| V4 [L] | V | 8152 | L |
+| CL4 [L/h] | CL | 74.6 | L/h |
+| θshared | θshared | 0.643 |  |
+
+<details class="pk-evidence"><summary>Evidence &amp; review</summary>
+
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.409), gpt-oss:120b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** Model available in **Models**; browser simulation unavailable.
-
 ### Reviewer guidance
 
-**The doxorubicin record was rejected because the dose compartment TLD-1 has no defined connection into the doxorubicin model, leaving the parent drug unreachable from the dose.**
+**The doxorubicin entrapped-to-free interconversion rate of 0.0271 L/h has mismatched units, and the doxorubicinol metabolite is unreachable.**
 
-The structure lists doxorubicin with a metabolism link to doxorubicinol (formation clearance CLfm 0.450 L/h) and an interconversion link from TLD-1 via CL1, but TLD-1 is otherwise undefined, so the path from the administered dose to doxorubicin is broken. A second reader disagreed on the dose compound and analyte, reading the links as interconversion between doxorubicin entrapped and doxorubicin free followed by metabolism of free doxorubicin to doxorubicinol, and returned null for several volume and clearance parameters (V1 3.39 L, V2 0.531 L, V2_BSA 4.47, V3_BSA 11.5, Q 0.136 L/h). Extracted — doxorubicin: V1 3.39 L, CL 0.0271 L/h, V1 0.531 L, V2 4.47, Q 0.136 L/h, V3 11.5, tlag 2.3 min; doxorubicinol: CLfm 0.45 L/h, V 8.15e+03 L, CL 74.6 L/h.
+The link parameter connecting entrapped and free doxorubicin is recorded as 0.0271 L/h, a clearance unit incompatible with an interconversion rate constant. Doxorubicinol is defined as a metabolite of free doxorubicin but has no defined dose path, leaving it unlinked. The volume parameters for free doxorubicin and doxorubicinol use an unrecognizable unit, preventing conversion to standard metric volumes. Extracted — doxorubicin (entrapped): V1 3.39 L, CL 0.0271 L/h; doxorubicin (free): V1 0.531 L, V2 4.47 27, Q 0.136 L/h, V3 11.5 27, CL 0.45 L/h; doxorubicinol: V 8.15e+03 L, CL 74.6 L/h.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has TLD-1 (liposomal doxorubicin), the second reading TLD-1; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by glm-5.3-flash</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:27:00.254602+00:00) predates the upstream re-run (2026-10-06 17:13:58.236616+00:00). Current validate status: `extracted`.
+### All parameter columns
 
-> **Dose compound ≠ measured compound:** dosed `TLD-1 (liposomal doxorubicin)`, measured `doxorubicin (entrapped and free)`.
-
-## Citation
-Mc Laughlin AM et al., Population pharmacokinetics of TLD-1, a…, Cancer chemotherapy and pha… (2024)
-  ·  DOI: [10.1007/s00280-024-04679-z](https://doi.org/10.1007/s00280-024-04679-z)
-
-<div class="pk-model-meta" hidden drug="doxorubicin" model-id="Doxorubicin_Mc2024_reference" status="extracted" stale="true" population="adults with advanced solid tumours" measured-compound="doxorubicin (entrapped and free)" parameterization="mechanistic" topology="general_linear"></div>
-
-**Model structure:** 2-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
-**Parameters:** 9 extracted.
-
-**Parameterization:** mechanistic.
-
-## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| V1 [L] | `Q63` · V1 | 3.39 | L | 0.0033900000000000002 | [l] | 7 | exact (1.0) | Tab2:row1:col2, Tab2:row1:col3 | — | not captured |
-| CL1 [L/h] | `Q22` · CL | 0.0271 | L/h | 7.527777777777778e-09 | [l] / [h] | 11 | llm (0.6) | Tab2:row2:col2, Tab2:row2:col3 | — | not captured |
-| V2 [L] | `Q63` · V1 | 0.531 | L | 0.000531 | [l] | 16 | exact (1.0) | Tab2:row3:col2, Tab2:row3:col3 | — | not captured |
-| V2_BSA [-]b | `Q319` · allometric_exponent | 4.47 | not captured | not captured | not captured | 19 | llm (0.6) | Tab2:row4:col2, Tab2:row4:col3 | — | not captured |
-| Q [L/h] | `Q30` · Q | 0.136 | L/h | 3.777777777777779e-08 | [l] / [h] | 18 | llm (0.6) | Tab2:row5:col2, Tab2:row5:col3 | — | None (11% RSE) |
-| V3 [L] | `Q64` · V2 | 61.3 | L | 0.0613 | [l] | 19 | exact (1.0) | Tab2:row6:col2, Tab2:row6:col3 | — | not captured |
-| CL2 [L/h] | `Q370` · CLfm | 0.450 | L/h | 1.2500000000000002e-07 | [l] / [h] | 11 | exact (1.0) | Tab2:row8:col2, Tab2:row8:col3 | — | not captured |
-| V4 [L] | `Q61` · V | 8152 | L | 8.152000000000001 | [l] | 12 | exact (1.0) | Tab2:row9:col2, Tab2:row9:col3 | — | not captured |
-| CL4 [L/h] | `Q22` · CL | 74.6 | L/h | 2.072222222222222e-05 | [l] / [h] | 7 | exact (1.0) | Tab2:row10:col2, Tab2:row10:col3 | — | not captured |
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
+|---|---|---|---|---|---|---|---|---|
+| V1 [L] | `Q63` · V1 | 3.39 | L | 0.00339 | m3 | l | exact (1) | Tab2:row1:col2 |
+| CL1 [L/h] | `Q22` · CL | 0.0271 | L/h | 7.528e-09 | m3/s | l/h | exact (1) | Tab2:row2:col2 |
+| V2 [L] | `Q63` · V1 | 0.531 | L | 0.000531 | m3 | l | exact (1) | Tab2:row3:col2 |
+| V2_BSA [-]b | `Q64` · V2 | 4.47 | 27 |  |  | 27 | llm (0.6) | Tab2:row4:col2 |
+| Q [L/h] | `Q30` · Q | 0.136 | L/h | 3.778e-08 | m3/s | l/h | llm (0.6) | Tab2:row5:col2 |
+| V3_BSA [-]b | `Q77` · V3 | 11.5 | 27 |  |  | 27 | llm (0.6) | Tab2:row7:col2 |
+| CL2 [L/h] | `Q22` · CL | 0.450 | L/h | 1.25e-07 | m3/s | l/h | exact (1) | Tab2:row8:col2 |
+| V4 [L] | `Q61` · V | 8152 | L | 8.152 | m3 | l | exact (1) | Tab2:row9:col2 |
+| CL4 [L/h] | `Q22` · CL | 74.6 | L/h | 2.072e-05 | m3/s | l/h | exact (1) | Tab2:row10:col2 |
+| θshared | `Q900` · θshared | 0.643 |  |  |  |  |  |  |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped duplicate Q319 ('V3_BSA [-]b', value '11.5') — already have one for this compound
-- routed 'θshared' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
-- NIL: refused to back-fill base 'V2' from footnote/prose loose number None (source ['Tab2:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'allometric_exponent' from footnote/prose loose number None (source ['Tab2:footnote']); the table cell was unparseable — needs review
+- compound tags: 1 row(s) → doxorubicinol (name 1)
+- unit_dimension_mismatch: 'V2_BSA [-]b' → Q64 (unit 'dimensionless' vs ontology '[length] ** 3') — route to review
+- dropped duplicate Q64 ('V3 [L]', value '61.3') — already have one for this compound
+- unit_dimension_mismatch: 'V3_BSA [-]b' → Q77 (unit 'dimensionless' vs ontology '[length] ** 3') — route to review
+- kept covariate coefficient θshared=0.643 (covariate shared) — not an ontology parameter
 - metabolite volume: 'V4 [L]' Q63→Q61 for doxorubicinol — it is 1-compartment, so its central volume is its only volume
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=doxorubicin (entrapped and free)
-- topology: 2 first-order transfer(s) across 3 compounds → general_linear
-- template fit: PK_3M_9C — formed from central; parent 2, metabolites [1]
-- row roles (LLM): model_class=compartmental; 24/24 row label(s) assigned, 14 linked by role; re-tagged parent→entrapped doxorubicin ×5, parent→free doxorubicin ×14, parent→doxorubicinol ×10, doxorubicin (entrapped and free)→free doxorubicin ×2
-- molar mass: no plausible PubChem entry for 'free doxorubicin' ('free doxorubicin') — left in mass units
-- molar mass: no plausible PubChem entry for 'doxorubicin (entrapped and free)' ('doxorubicin (entrapped and free)') — left in mass units
-- molar mass: none found for 'free doxorubicin' — its concentrations stay mass-only
-- molar mass: none found for 'doxorubicin (entrapped and free)' — its concentrations stay mass-only
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=doxorubicin (free and entrapped) and doxorubicinol
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
+- template fit: PK_3M_9C — formed from central; parent 3, metabolites [1]
+- status held at route_to_review — not promoted
+- row roles (LLM): model_class=compartmental; 11/11 row label(s) assigned, 8 linked by role; re-tagged parent→doxorubicin (entrapped) ×2, parent→doxorubicin (free) ×6, parent→doxorubicinol ×2
+- molar mass: no plausible PubChem entry for 'doxorubicin (free)' ('doxorubicin (free)') — left in mass units
+- molar mass: no plausible PubChem entry for 'doxorubicin (free and entrapped) and doxorubicinol' ('no full name in the paper') — left in mass units
+- molar mass: PubChem entry choice failed (JSONDecodeError)
+- molar mass: none of 1 PubChem candidate(s) is 'doxorubicinol' (LLM) — left in mass units
+- molar mass: none found for 'doxorubicin (free)' — its concentrations stay mass-only
+- molar mass: none found for 'doxorubicinol' — its concentrations stay mass-only
+- molar mass: none found for 'doxorubicin (free and entrapped) and doxorubicinol' — its concentrations stay mass-only
 
 **Extraction notes:**
-- unparsed cell Tab2:row4:col1 = 'Exponent of the power covariate model of BSA on V2'
-- unparsed cell Tab2:row7:col1 = 'Exponent of the power covariate model of BSA on V3'
-- unparsed cell Tab2:row11:col1 = 'Shared η scale factor for V1'
-- unparsed cell Tab2:row12:col2 = '45.1% CV'
-- unparsed cell Tab2:row13:col2 = '28.2% CV'
-- unparsed cell Tab2:row14:col2 = '34.2% CV'
-- unparsed cell Tab2:row15:col2 = '15.1% CV'
-- unparsed cell Tab2:row16:col1 = 'Interoccasion variability for CL1'
-- unparsed cell Tab2:row16:col2 = '14.4% CV'
-- unparsed cell Tab2:row17:col1 = 'Interoccasion variability for CL2'
-- unparsed cell Tab2:row17:col2 = '22.4% CV'
-- unparsed cell Tab2:row18:col1 = 'Interoccasion variability for V1'
-- unparsed cell Tab2:row18:col2 = '8.85% CV'
-- unparsed cell Tab2:row19:col1 = 'Interoccasion variability for V2'
-- unparsed cell Tab2:row19:col2 = '126% CV'
-- unparsed cell Tab2:row20:col2 = '19.6% CV'
-- unparsed cell Tab2:row21:col2 = '64.2% CV'
-- unparsed cell Tab2:row22:col2 = '65.0% CV'
+- table Tab2: unbound_uncertainty
+- table Tab2: unparsed_numeric_cell
 - LLM selected parameter table(s) 2
 
 ## Validation
@@ -111,31 +129,31 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `model.links` | [['tld-1', 'doxorubicin', 'interconversion'], ['doxorubicin', 'doxorubicinol', 'metabolism']] | [['doxorubicin entrapped', 'doxorubicin free', 'interconversion'], ['doxorubicin free', 'doxorubicinol', 'metabolism']] | mismatch |
-| `gpt-oss:120b` | `parameters[q [l/h]]` | 0.136 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[q [l/h]]` | not captured | 0.136 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v1 [l]]` | 3.39 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v1 [l]]` | not captured | 3.39 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v2 [l]]` | 0.531 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v2 [l]]` | not captured | 0.531 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v2_bsa [-]b]` | 4.47 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v2_bsa [-]b]` | not captured | 4.47 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v3_bsa [-]b]` | 11.5 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v3_bsa [-]b]` | not captured | 11.5 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[θshared]` | 0.643 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[θshared]` | not captured | 0.643 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[q [l/h]]` | 0.136 |  | only_one_extracted |
+| `gpt-oss:120b` | `parameters[q [l/h]]` |  | 0.136 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v1 [l]]` | 3.39 |  | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v1 [l]]` |  | 3.39 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v2 [l]]` | 0.531 |  | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v2 [l]]` |  | 0.531 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v2_bsa [-]b]` | 4.47 |  | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v2_bsa [-]b]` |  | 4.47 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v3_bsa [-]b]` | 11.5 |  | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v3_bsa [-]b]` |  | 11.5 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[θshared]` | 0.643 |  | only_one_extracted |
+| `gpt-oss:120b` | `parameters[θshared]` |  | 0.643 | only_one_extracted |
 | `gpt-oss:120b` | `screen.dose_compound` | TLD-1 | unknown | mismatch |
 | `gpt-oss:120b` | `screen.primary_analyte` | doxorubicin | unknown | mismatch |
 | `qwen3.8-27b` | `model.links` | [['entrapped doxorubicin', 'free doxorubicin', 'interconversion'], ['free doxorubicin', 'doxorubicinol', 'metabolism']] | [['doxorubicin', 'doxorubicinol', 'metabolism']] | mismatch |
-| `qwen3.8-27b` | `parameters[q [l/h]]` | not captured | 0.136 | only_one_extracted |
-| `qwen3.8-27b` | `parameters[q [l/h]]` | 0.136 | not captured | only_one_extracted |
-| `qwen3.8-27b` | `parameters[v1 [l]]` | not captured | 3.39 | only_one_extracted |
-| `qwen3.8-27b` | `parameters[v1 [l]]` | 3.39 | not captured | only_one_extracted |
-| `qwen3.8-27b` | `parameters[v2 [l]]` | not captured | 0.531 | only_one_extracted |
-| `qwen3.8-27b` | `parameters[v2 [l]]` | 0.531 | not captured | only_one_extracted |
-| `qwen3.8-27b` | `parameters[v2_bsa [-]b]` | not captured | 4.47 | only_one_extracted |
-| `qwen3.8-27b` | `parameters[v2_bsa [-]b]` | 4.47 | not captured | only_one_extracted |
-| `qwen3.8-27b` | `parameters[v3 [l]]` | 61.3 | not captured | only_one_extracted |
-| `qwen3.8-27b` | `parameters[v3_bsa [-]b]` | not captured | 11.5 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[q [l/h]]` |  | 0.136 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[q [l/h]]` | 0.136 |  | only_one_extracted |
+| `qwen3.8-27b` | `parameters[v1 [l]]` |  | 3.39 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[v1 [l]]` | 3.39 |  | only_one_extracted |
+| `qwen3.8-27b` | `parameters[v2 [l]]` |  | 0.531 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[v2 [l]]` | 0.531 |  | only_one_extracted |
+| `qwen3.8-27b` | `parameters[v2_bsa [-]b]` |  | 4.47 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[v2_bsa [-]b]` | 4.47 |  | only_one_extracted |
+| `qwen3.8-27b` | `parameters[v3 [l]]` | 61.3 |  | only_one_extracted |
+| `qwen3.8-27b` | `parameters[v3_bsa [-]b]` |  | 11.5 | only_one_extracted |
 | `qwen3.8-27b` | `screen.dose_compound` | TLD-1 (liposomal doxorubicin) | TLD-1 | mismatch |
 | `qwen3.8-27b` | `screen.primary_analyte` | doxorubicin (entrapped and free) | doxorubicin | mismatch |
 
@@ -149,53 +167,42 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained | ratio | tol | source |
-|---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 9 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row2:col2', 'Tab2:row2:col3'] |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row10:col2', 'Tab2:row10:col3'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row5:col2', 'Tab2:row5:col3'] |
-| C5_dimension_Q370 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row8:col2', 'Tab2:row8:col3'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row9:col2', 'Tab2:row9:col3'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row1:col2', 'Tab2:row1:col3'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row3:col2', 'Tab2:row3:col3'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row6:col2', 'Tab2:row6:col3'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.0271 | not captured | not captured | ['Tab2:row2:col2', 'Tab2:row2:col3'] |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.0271 L/h | not captured | not captured | ['Tab2:row2:col2', 'Tab2:row2:col3'] |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 74.6 L/h | not captured | not captured | ['Tab2:row10:col2', 'Tab2:row10:col3'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 8.15e+03 L | not captured | not captured | ['Tab2:row9:col2', 'Tab2:row9:col3'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 3.39 L | not captured | not captured | ['Tab2:row1:col2', 'Tab2:row1:col3'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 0.531 L | not captured | not captured | ['Tab2:row3:col2', 'Tab2:row3:col3'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 61.3 L | not captured | not captured | ['Tab2:row6:col2', 'Tab2:row6:col3'] |
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 9 |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Tab2:row2:col2'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Tab2:row8:col2'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Tab2:row10:col2'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Tab2:row5:col2'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Tab2:row9:col2'] |
+| C5_dimension_Q63 | pass | [length] ** 3 |  | ['Tab2:row1:col2'] |
+| C5_dimension_Q63 | pass | [length] ** 3 |  | ['Tab2:row3:col2'] |
+| C5_dimension_Q64 | fail | dimensionless | 27 | ['Tab2:row4:col2'] |
+| C5_dimension_Q77 | fail | dimensionless | 27 | ['Tab2:row7:col2'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.0271 | ['Tab2:row2:col2'] |
+| C8_topology | fail | ontology-linked transfer parameter on every edge | ['CL1'] |  |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.0271 L/h | ['Tab2:row2:col2'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.45 L/h | ['Tab2:row8:col2'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 74.6 L/h | ['Tab2:row10:col2'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 8.15e+03 L | ['Tab2:row9:col2'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 3.39 L | ['Tab2:row1:col2'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 0.531 L | ['Tab2:row3:col2'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
-## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_doxorubicin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Mc_2024` / `Mc_2024::reference`)
-
+</details>
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_doxorubicin/Doxorubicin_Mc2024_reference/Doxorubicin_Mc2024_reference_modelica.zip" download>Doxorubicin_Mc2024_reference_modelica.zip</a> <span class="pk-size">(4.8 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_doxorubicin/Doxorubicin_Mc2024_reference/Doxorubicin_Mc2024_reference_matlab.zip" download>Doxorubicin_Mc2024_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_doxorubicin/Doxorubicin_Mc2024_reference/Doxorubicin_Mc2024_reference_matlab_simbio.zip" download>Doxorubicin_Mc2024_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_doxorubicin/Doxorubicin_Mc2024_reference/Doxorubicin_Mc2024_reference_sbml.zip" download>Doxorubicin_Mc2024_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_doxorubicin/Doxorubicin_Mc2024_reference/Doxorubicin_Mc2024_reference_cellml.zip" download>Doxorubicin_Mc2024_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-</div></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -204,4 +211,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 17:13 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdoxorubicin%5D%20Doxorubicin_Mc2024_reference&body=Drug%3A%20doxorubicin%0ARecord%3A%20Doxorubicin_Mc2024_reference%0APaper%3A%20Mc_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_doxorubicin/Doxorubicin_Mc2024_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Generated by `docs.py` (scholarv2, release v26.09) · extracted 2026-10-22 12:35 UTC</sub>

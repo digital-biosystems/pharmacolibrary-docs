@@ -13,6 +13,22 @@
   800.0,
   1800.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Prasanchaimontri_2024:results_prose",
+    "value_si": 0.0145
+   },
+   {
+    "source": "Prasanchaimontri_2024:results_prose",
+    "value_si": 0.002
+   },
+   {
+    "source": "Prasanchaimontri_2024:discussion_prose",
+    "value_si": 2.0
+   }
+  ]
+ },
  "parameters": {
   "Cl": 2.7777777777777776e-07,
   "F": 1.0,

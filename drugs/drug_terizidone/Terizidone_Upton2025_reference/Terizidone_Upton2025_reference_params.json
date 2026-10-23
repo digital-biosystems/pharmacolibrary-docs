@@ -12,6 +12,22 @@
  "paper_doses_mg": [
   100.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Upton_2025:other_prose",
+    "value_si": 0.0492
+   },
+   {
+    "source": "Upton_2025:other_prose",
+    "value_si": 0.051500000000000004
+   },
+   {
+    "source": "Upton_2025:other_prose",
+    "value_si": 0.00049
+   }
+  ]
+ },
  "parameters": {
   "Cl": 1.5e-07,
   "F": 1.0,

@@ -17,6 +17,18 @@
   4000.0,
   6000.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Zhou_2022:other_prose",
+    "value_si": 0.12
+   },
+   {
+    "source": "Zhou_2022:other_prose",
+    "value_si": 0.0274
+   }
+  ]
+ },
  "parameters": {
   "Cl": 1.2361111111111111e-06,
   "F": 1.0,

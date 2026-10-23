@@ -1,62 +1,91 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;simvastatin&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/&quot;},{&quot;label&quot;:&quot;Tsamandouras_2014 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Simvastatin_Devineni2015_reference&quot;,&quot;label&quot;:&quot;Devineni_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Devineni2015_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Mauro1993_reference&quot;,&quot;label&quot;:&quot;Mauro_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Mauro1993_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Sun2022_reference&quot;,&quot;label&quot;:&quot;Sun_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Sun2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Friedrich2014_reference&quot;,&quot;label&quot;:&quot;Friedrich_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Friedrich2014_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Jadhav2023_reference&quot;,&quot;label&quot;:&quot;Jadhav_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Jadhav2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Kim2021_reference&quot;,&quot;label&quot;:&quot;Kim_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Kim2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Wright2025_reference&quot;,&quot;label&quot;:&quot;Wright_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Wright2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wei_2014_LDL_C&quot;,&quot;label&quot;:&quot;Wei_2014 \u00b7 LDL-C&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/pd_Wei_2014_LDL_C.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Simvastatin_Corsini1999_reference&quot;,&quot;label&quot;:&quot;Corsini_1999_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Corsini1999_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Mauro1993_reference&quot;,&quot;label&quot;:&quot;Mauro_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Mauro1993_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Sun2022_reference&quot;,&quot;label&quot;:&quot;Sun_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Sun2022_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Friedrich2014_reference&quot;,&quot;label&quot;:&quot;Friedrich_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Friedrich2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Jadhav2023_reference&quot;,&quot;label&quot;:&quot;Jadhav_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Jadhav2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wei_2014_LDL_C&quot;,&quot;label&quot;:&quot;Wei_2014 \u00b7 LDL-C&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/pd_Wei_2014_LDL_C.md&quot;,&quot;status&quot;:&quot;Reproduces with caveats&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # simvastatin — `Simvastatin_Tsamandouras2014_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.464). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-<details class="legend">
-<summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
-<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
-</details>
-
-**Model:** No model was generated from this record.
-
-### Reviewer guidance
-
-**The simvastatin record was rejected because the clearance parameter CL/F carries the unit 'h' instead of a flow unit (L/h), a dimension mismatch on a structural parameter.**
-
-The parameter CL/F is labelled 'θ₃; CLSVA/VSA (h)' with unit h, while its meaning is total oral clearance adjusted for bioavailability, which should be in volume per time like the reported Q/F of 384.08 L/h. The value 0.0958 with unit h could not be converted to SI units, so the clearance entered model building without a usable numeric value. The remaining simvastatin parameters (tlag 0.230 h, kabs 2.24 1/h, V/F 2735.72 L) are dimensionally consistent. Extracted — simvastatin: tlag 0.23 h, kabs 2.24, Q/F 384 L/h, CL/F 0.0958 h, V/F 2.74e+03 L, k14 -0.591.
-
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has simvastatin, the second reading unknown; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
-
-<sub>reviewed by glm-5.3-flash</sub>
-
-## Citation
-Tsamandouras N et al., Identification of the effect of multipl…, Clinical pharmacology and t… (2014)
-  ·  DOI: [10.1038/clpt.2014.55](https://doi.org/10.1038/clpt.2014.55)
+> The apparent intercompartmental clearance parameter value of 384.08 L/h was recorded with hours in its label, causing a unit mismatch rejection.
 
 <div class="pk-model-meta" hidden drug="simvastatin" model-id="Simvastatin_Tsamandouras2014_reference" status="rejected" stale="false" population="individuals from three clinical trials" measured-compound="simvastatin" parameterization="apparent" topology="parent_metabolite"></div>
 
-**Model structure:** parent + metabolite; no model was built for this record.  
-**Parameters:** 6 extracted, plus 6 covariate effects.
+## Citation
+Tsamandouras N, Dickinson G, Guo Y, Hall S, Rostami-Hodjegan A, Galetin A et al. Identification of the effect of multiple polymorphisms on the pharmacokinetics of simvastatin and simvastatin acid using a population-modeling approach. Clinical pharmacology and therapeutics 96(1):90–100 (2014).
+  ·  DOI: [10.1038/clpt.2014.55](https://doi.org/10.1038/clpt.2014.55)
 
-**Parameterization:** CL/F, Q/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
+## Population and dosing
+
+**Population:** individuals from three clinical trials · condition healthy · age group adult · n = 74.
+
+**Dosing:** 20, 40 mg, oral, multiple, every 24 h.
+
+## Model
+
+**Structure:** parent + metabolite; no model was built for this record.  
+**Parameterization:** CL/F, Q/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Parameters:** 6 extracted, plus 6 covariate effects.  
+**Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| Lag time (h) | `Q83` · tlag | 0.230 | h | 828.0 | [h] | 0.231 | exact (1.0) | Tsamandouras_2014_table_p4_1:row1:col1, Tsamandouras_2014_table_p4_1:row1:col2 | — | not captured |
-| θ₁; ka (1/h) | `Q49` · kabs | 2.24 | not captured | not captured | not captured | 2.11 | llm_confirmed (0.6) | Tsamandouras_2014_table_p4_1:row2:col1, Tsamandouras_2014_table_p4_1:row2:col2 | — | not captured |
-| θ₂; Q/F (L/h) | `Q69` · Q/F | 384.08 | L/h | 0.00010668888888888888 | [l] / [h] | 386 | llm_confirmed (0.6) | Tsamandouras_2014_table_p4_1:row3:col1, Tsamandouras_2014_table_p4_1:row3:col2 | — | not captured |
-| θ₃; CLSVA/VSA (h) | `Q27` · CL/F | 0.0958 | h | not captured | [h] | 0.0975 | llm (0.6) | Tsamandouras_2014_table_p4_1:row4:col1, Tsamandouras_2014_table_p4_1:row4:col2 | — | not captured |
-| θ₆; VSC/F (L) | `Q76` · V/F | 2735.72 | L | 2.7357199999999997 | [l] | 2770 | llm (0.6) | Tsamandouras_2014_table_p4_1:row7:col1, Tsamandouras_2014_table_p4_1:row7:col2 | — | not captured |
-| age_coefficient_on_f | `Q900` · age_coefficient_on_f | 0.0135 | not captured | not captured | not captured | 0.0133 | not captured (not captured) | Tsamandouras_2014_table_p4_1:row11:col1, Tsamandouras_2014_table_p4_1:row11:col2 | — | not captured |
-| θ₁₄; rs776746 (AA) on CLSVA/VSA | `Q347` · k14 | -0.591 | not captured | not captured | not captured | -0.562 | llm (0.6) | Tsamandouras_2014_table_p4_1:row16:col1, Tsamandouras_2014_table_p4_1:row16:col2 | — | not captured |
-| theta_q314_ethnicity | `Q900` · theta_q314_ethnicity | 0.701 | not captured | not captured | not captured | 0.682 | not captured (not captured) | Tsamandouras_2014_table_p4_1:row14:col1, Tsamandouras_2014_table_p4_1:row14:col2 | — | not captured |
-| theta_q319_weight_power | `Q900` · theta_q319_weight_power | 0.892 | not captured | not captured | not captured | 0.887 | not captured (not captured) | Tsamandouras_2014_table_p4_1:row21:col1, Tsamandouras_2014_table_p4_1:row21:col2 | — | not captured |
-| theta_q319_weight_power | `Q900` · theta_q319_weight_power | 0.75 | not captured | not captured | not captured | 0.75 | not captured (not captured) | Tsamandouras_2014_table_p4_1:row22:col1, Tsamandouras_2014_table_p4_1:row22:col2 | — | not captured |
-| theta_q319_weight_power | `Q900` · theta_q319_weight_power | 1 | not captured | not captured | not captured | 1 | not captured (not captured) | Tsamandouras_2014_table_p4_1:row23:col1, Tsamandouras_2014_table_p4_1:row23:col2 | — | not captured |
-| theta_q319_weight_power | `Q900` · theta_q319_weight_power | 1 | not captured | not captured | not captured | 1 | not captured (not captured) | Tsamandouras_2014_table_p4_1:row24:col1, Tsamandouras_2014_table_p4_1:row24:col2 | — | not captured |
+| label | parameter | value | unit | RSE% |
+|---|---|---|---|---|
+| Lag time (h) | tlag | 0.230 | h | 0.231 |
+| θ₁; ka (1/h) | kabs | 2.24 |  | 2.11 |
+| θ₂; Q/F (L/h) | Q/F | 384.08 | L/h | 386 |
+| θ₃; CLSVA/VSA (h) | CL/F | 0.0958 | h | 0.0975 |
+| θ₆; VSC/F (L) | V/F | 2735.72 | L | 2770 |
+| age_coefficient_on_f | age_coefficient_on_f | 0.0135 |  | 0.0133 |
+| θ₁₄; rs776746 (AA) on CLSVA/VSA | k14 | -0.591 |  | -0.562 |
+| theta_q314_ethnicity | theta_q314_ethnicity | 0.701 |  | 0.682 |
+| theta_q319_weight_power | theta_q319_weight_power | 0.892 |  | 0.887 |
+| theta_q319_weight_power | theta_q319_weight_power | 0.75 |  | 0.75 |
+| theta_q319_weight_power | theta_q319_weight_power | 1 |  | 1 |
+| theta_q319_weight_power | theta_q319_weight_power | 1 |  | 1 |
+
+<details class="pk-evidence"><summary>Evidence &amp; review</summary>
+
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.464). Primary extraction retained.">cross-check: disputed</span>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+### Reviewer guidance
+
+**The apparent intercompartmental clearance parameter value of 384.08 L/h was recorded with hours in its label, causing a unit mismatch rejection.**
+
+The record labels the intercompartmental clearance as 'Q/F (L/h)' but the parameter definition identifies it as 'CLSVA/VSA (h)'. This contradiction means the extracted value of 384.08 has incompatible dimensions for the specified physiological meaning. Consequently, the unit could not be converted to SI, preventing the model from being built with consistent physical units. Extracted — simvastatin: tlag 0.23 h, kabs 2.24, Q/F 384 L/h, CL/F 0.0958 h, V/F 2.74e+03 L, k14 -0.591.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has simvastatin, the second reading unknown; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by qwen3.8-27b</sub>
+
+### All parameter columns
+
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | RSE% | link | source |
+|---|---|---|---|---|---|---|---|---|---|
+| Lag time (h) | `Q83` · tlag | 0.230 | h | 828 | s | h | 0.231 | exact (1) | Tsamandouras_2014_table_p4_1:row1:col1, Tsamandouras_2014_table_p4_1:row1:col2 |
+| θ₁; ka (1/h) | `Q49` · kabs | 2.24 |  |  |  |  | 2.11 | llm_confirmed (0.6) | Tsamandouras_2014_table_p4_1:row2:col1, Tsamandouras_2014_table_p4_1:row2:col2 |
+| θ₂; Q/F (L/h) | `Q69` · Q/F | 384.08 | L/h | 0.0001067 | m3/s | l/h | 386 | llm_confirmed (0.6) | Tsamandouras_2014_table_p4_1:row3:col1, Tsamandouras_2014_table_p4_1:row3:col2 |
+| θ₃; CLSVA/VSA (h) | `Q27` · CL/F | 0.0958 | h |  |  | h | 0.0975 | llm (0.6) | Tsamandouras_2014_table_p4_1:row4:col1, Tsamandouras_2014_table_p4_1:row4:col2 |
+| θ₆; VSC/F (L) | `Q76` · V/F | 2735.72 | L | 2.736 | m3 | l | 2770 | llm (0.6) | Tsamandouras_2014_table_p4_1:row7:col1, Tsamandouras_2014_table_p4_1:row7:col2 |
+| age_coefficient_on_f | `Q900` · age_coefficient_on_f | 0.0135 |  |  |  |  | 0.0133 |  | Tsamandouras_2014_table_p4_1:row11:col1, Tsamandouras_2014_table_p4_1:row11:col2 |
+| θ₁₄; rs776746 (AA) on CLSVA/VSA | `Q347` · k14 | -0.591 |  |  |  |  | -0.562 | llm (0.6) | Tsamandouras_2014_table_p4_1:row16:col1, Tsamandouras_2014_table_p4_1:row16:col2 |
+| theta_q314_ethnicity | `Q900` · theta_q314_ethnicity | 0.701 |  |  |  |  | 0.682 |  | Tsamandouras_2014_table_p4_1:row14:col1, Tsamandouras_2014_table_p4_1:row14:col2 |
+| theta_q319_weight_power | `Q900` · theta_q319_weight_power | 0.892 |  |  |  |  | 0.887 |  | Tsamandouras_2014_table_p4_1:row21:col1, Tsamandouras_2014_table_p4_1:row21:col2 |
+| theta_q319_weight_power | `Q900` · theta_q319_weight_power | 0.75 |  |  |  |  | 0.75 |  | Tsamandouras_2014_table_p4_1:row22:col1, Tsamandouras_2014_table_p4_1:row22:col2 |
+| theta_q319_weight_power | `Q900` · theta_q319_weight_power | 1 |  |  |  |  | 1 |  | Tsamandouras_2014_table_p4_1:row23:col1, Tsamandouras_2014_table_p4_1:row23:col2 |
+| theta_q319_weight_power | `Q900` · theta_q319_weight_power | 1 |  |  |  |  | 1 |  | Tsamandouras_2014_table_p4_1:row24:col1, Tsamandouras_2014_table_p4_1:row24:col2 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ## Departures & gaps
@@ -148,19 +177,19 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[theta_cl_ethnicity]` | not captured | 0.701 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta_q314_ethnicity]` | 0.701 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta_q319_weight_power]` | not captured | 0.892 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_ethnicity]` |  | 0.701 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q314_ethnicity]` | 0.701 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q319_weight_power]` |  | 0.892 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[theta_q319_weight_power].rse_percent` | 0.887 | 1 | mismatch |
 | `gpt-oss-120b` | `parameters[theta_q319_weight_power].value` | 0.892 | 1 | mismatch |
-| `gpt-oss-120b` | `parameters[θ10; rs35599367 (tc) on f]` | not captured | 0.537 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[θ13; rs4149056 (tc) on vsa]` | not captured | 0.462 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[θ14; rs776746 (aa) on clsva/vsa]` | -0.591 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[θ18; rs4149056 (tc) on clsa]` | not captured | -0.434 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[θ3; clsva/vsa]` | 0.0958 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[θ3; clsva/vsa]` | not captured | 0.0958 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[θ4; clsv/f]` | not captured | 1038.9 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[θ5; clsva/vsa]` | not captured | 0.293 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ10; rs35599367 (tc) on f]` |  | 0.537 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ13; rs4149056 (tc) on vsa]` |  | 0.462 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ14; rs776746 (aa) on clsva/vsa]` | -0.591 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ18; rs4149056 (tc) on clsa]` |  | -0.434 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ3; clsva/vsa]` | 0.0958 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ3; clsva/vsa]` |  | 0.0958 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ4; clsv/f]` |  | 1038.9 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ5; clsva/vsa]` |  | 0.293 | only_one_extracted |
 | `gpt-oss-120b` | `screen.dose_compound` | simvastatin | unknown | mismatch |
 | `gpt-oss-120b` | `screen.primary_analyte` | simvastatin | unknown | mismatch |
 
@@ -174,31 +203,29 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained | ratio | tol | source |
-|---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q27 | fail | [time] | h | not captured | not captured | ['Tsamandouras_2014_table_p4_1:row4:col1', 'Tsamandouras_2014_table_p4_1:row4:col2'] |
-| C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tsamandouras_2014_table_p4_1:row3:col1', 'Tsamandouras_2014_table_p4_1:row3:col2'] |
-| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tsamandouras_2014_table_p4_1:row7:col1', 'Tsamandouras_2014_table_p4_1:row7:col2'] |
-| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Tsamandouras_2014_table_p4_1:row1:col1', 'Tsamandouras_2014_table_p4_1:row1:col2'] |
-| C5_unit_missing_Q347 | fail | 1 / [time] | not captured | not captured | not captured | ['Tsamandouras_2014_table_p4_1:row16:col1', 'Tsamandouras_2014_table_p4_1:row16:col2'] |
-| C5_unit_missing_Q49 | fail | 1 / [time] | not captured | not captured | not captured | ['Tsamandouras_2014_table_p4_1:row2:col1', 'Tsamandouras_2014_table_p4_1:row2:col2'] |
-| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q76 | pass | volume within physiological range | 2.74e+03 L | not captured | not captured | ['Tsamandouras_2014_table_p4_1:row7:col1', 'Tsamandouras_2014_table_p4_1:row7:col2'] |
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 6 |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
+| C2_reference | pass |  |  |  |
+| C5_dimension_Q27 | fail | [time] | h | ['Tsamandouras_2014_table_p4_1:row4:col1', 'Tsamandouras_2014_table_p4_1:row4:col2'] |
+| C5_dimension_Q69 | pass | [length] ** 3 / [time] |  | ['Tsamandouras_2014_table_p4_1:row3:col1', 'Tsamandouras_2014_table_p4_1:row3:col2'] |
+| C5_dimension_Q76 | pass | [length] ** 3 |  | ['Tsamandouras_2014_table_p4_1:row7:col1', 'Tsamandouras_2014_table_p4_1:row7:col2'] |
+| C5_dimension_Q83 | pass | [time] |  | ['Tsamandouras_2014_table_p4_1:row1:col1', 'Tsamandouras_2014_table_p4_1:row1:col2'] |
+| C5_unit_missing_Q347 | fail | 1 / [time] |  | ['Tsamandouras_2014_table_p4_1:row16:col1', 'Tsamandouras_2014_table_p4_1:row16:col2'] |
+| C5_unit_missing_Q49 | fail | 1 / [time] |  | ['Tsamandouras_2014_table_p4_1:row2:col1', 'Tsamandouras_2014_table_p4_1:row2:col2'] |
+| C7_apparent_coherence | pass |  |  |  |
+| C8_topology | pass |  |  |  |
+| C9_phys_window_Q76 | pass | volume within physiological range | 2.74e+03 L | ['Tsamandouras_2014_table_p4_1:row7:col1', 'Tsamandouras_2014_table_p4_1:row7:col2'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
-## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_simvastatin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Tsamandouras_2014` / `Tsamandouras_2014::reference`)
-
+</details>
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
@@ -213,4 +240,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-16 00:30 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsimvastatin%5D%20Simvastatin_Tsamandouras2014_reference&body=Drug%3A%20simvastatin%0ARecord%3A%20Simvastatin_Tsamandouras2014_reference%0APaper%3A%20Tsamandouras_2014%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_simvastatin/Simvastatin_Tsamandouras2014_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Generated by `docs.py` (scholarv2, release v26.09) · extracted 2026-09-16 00:30 UTC</sub>

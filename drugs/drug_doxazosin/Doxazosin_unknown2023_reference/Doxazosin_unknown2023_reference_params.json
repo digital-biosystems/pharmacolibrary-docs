@@ -2,11 +2,11 @@
  "dose_source": "WHO ATC DDD 4 mg oral (C02CA04)",
  "model_id": "Doxazosin_unknown2023_reference",
  "molar_masses": {
-  "C_central": 0.4514751
+  "central.C": 0.4514751
  },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "C_central"
+  "central.C"
  ],
  "parameters": {
   "Cl": 6.11111111111111e-06,
@@ -21,10 +21,10 @@
   "weight": 70.0
  },
  "reference_peak_times": {
-  "C_central": 111852.50501002005
+  "central.C": 111852.50501002
  },
  "reference_peaks": {
-  "C_central": 1.1631605666821479e-06
+  "central.C": 1.163160566682185e-06
  },
  "stop_time": 1468800.0,
  "template": "PK_1C_enteral",

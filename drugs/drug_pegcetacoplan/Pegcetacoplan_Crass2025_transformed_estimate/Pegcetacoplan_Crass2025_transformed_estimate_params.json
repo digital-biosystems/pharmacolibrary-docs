@@ -12,6 +12,18 @@
   15.0,
   20.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Crass_2025:other_prose",
+    "value_si": 2.2
+   },
+   {
+    "source": "Crass_2025:other_prose",
+    "value_si": 1.5
+   }
+  ]
+ },
  "parameters": {
   "Cl": 3.761574074074074e-09,
   "F": 1.0,

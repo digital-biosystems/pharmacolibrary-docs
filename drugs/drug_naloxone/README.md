@@ -23,24 +23,36 @@ Naloxone is an opioid antagonist used to reverse opioid overdose, and it has als
 | naloxone | parent | 327.374 | C19H21NO4 | DrugBank | [5284596](https://pubchem.ncbi.nlm.nih.gov/compound/5284596) | Dowling_2008, Gu_2023 |
 | norbuprenorphine | metabolite | — (mass units only) | — | — | — | — |
 
-## Extraction summary
+## Parameters across studies
 
-| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
-|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-04 17:13 | 12:47 | 0/1/1 | 0/0/0 | 0/0/0 | 205,988/34,753 | ollama / qwen3.8:27b-mtp-q8_0 | 12 | 4/8 | 10/2 | 1 |
+| parameter | as named | value | unit | as reported | population | n | species | status | record |
+|---|---|---|---|---|---|---|---|---|---|
+| CL | CL | 91 | L/h | 91 L/hr | healthy male volunteers | &gt;=6 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Dowling_2008_reference](drugs/drug_naloxone/Naloxone_Dowling2008_reference.md) |
+| V | V1 | 2.87 | L | 2.87 L | healthy male volunteers | &gt;=6 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Dowling_2008_reference](drugs/drug_naloxone/Naloxone_Dowling2008_reference.md) |
+| ka | kabs | 0.65 | 1/h | 0.65 1/hr | healthy male volunteers | &gt;=6 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Dowling_2008_reference](drugs/drug_naloxone/Naloxone_Dowling2008_reference.md) |
+
+<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.786). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Dowling_2008_reference](drugs/drug_naloxone/Naloxone_Dowling2008_reference.md) | — | 2-compartment (no model) | 7 | Dowling J et al., Population pharmacokinetics of intraven…, Therapeutic drug monitoring (2008) | [10.1097/FTD.0b013e3181816214](https://doi.org/10.1097/FTD.0b013e3181816214) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Gu_2023_reference](drugs/drug_naloxone/Naloxone_Gu2023_reference.md) | — | parent + metabolite (no model) | 0 | Gu M et al., Population pharmacokinetics of buprenor…, Frontiers in pharmacology (2023) | [10.3389/fphar.2023.1089862](https://doi.org/10.3389/fphar.2023.1089862) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub> | [Dowling_2008_reference](drugs/drug_naloxone/Naloxone_Dowling2008_reference.md) | — | 2-compartment (no model) | 7 | Dowling J et al., Population pharmacokinetics of intraven…, Therapeutic drug monitoring (2008) | [10.1097/FTD.0b013e3181816214](https://doi.org/10.1097/FTD.0b013e3181816214) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Gu_2023_reference](drugs/drug_naloxone/Naloxone_Gu2023_reference.md) | — | parent + metabolite (no model) | 0 | Gu M et al., Population pharmacokinetics of buprenor…, Frontiers in pharmacology (2023) | [10.3389/fphar.2023.1089862](https://doi.org/10.3389/fphar.2023.1089862) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-04 17:13 | 12:47 | 0/1/1 | 0/0/0 | 0/0/0 | 205,988/34,753 | ollama / qwen3.8:27b-mtp-q8_0 | 12 | 4/8 | 10/2 | 1 |
 
 ## Coverage
 
@@ -126,5 +138,9 @@ _10 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | popPK | Tsekouras_2023 | relevant | 9 | 1 | The paper describes a Phase 1 study of naloxone nasal spray with compartmental PK models, but the specific numeric parameter values are not present in the provided text, only model equations and figure captions. |
 | popPK | Yang_2024 | relevant | 10 | 2 | The paper describes a population PK model for naloxone, but the specific numeric parameter values (CL, V, Q) are located in Appendix S1 or supplementary tables not provided in the evidence. |
 
+
+</details>
+
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-04 17:02 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
+<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-04 17:02 UTC</sub>

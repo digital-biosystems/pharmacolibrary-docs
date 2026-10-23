@@ -2,11 +2,11 @@
  "dose_source": "WHO ATC DDD 20 mg oral (C10AA05)",
  "model_id": "Atorvastatin_Malekinejad2014_reference",
  "molar_masses": {
-  "C_central": 0.5586398
+  "central.C": 0.5586398
  },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "C_central"
+  "central.C"
  ],
  "parameters": {
   "Cl": 1.4927499999999999e-05,
@@ -21,10 +21,10 @@
   "weight": 70.0
  },
  "reference_peak_times": {
-  "C_central": 20777.55511022044
+  "central.C": 20777.55511022044
  },
  "reference_peaks": {
-  "C_central": 1.0524873218265141e-05
+  "central.C": 1.052487321826504e-05
  },
  "stop_time": 432000.0,
  "template": "PK_1C_enteral",

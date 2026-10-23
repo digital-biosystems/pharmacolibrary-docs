@@ -13,6 +13,14 @@
   80.0,
   800.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Fernandez_2025:other_prose",
+    "value_si": 0.00146
+   }
+  ]
+ },
  "parameters": {
   "Cl": 1.6555555555555556e-05,
   "F": 1.0,

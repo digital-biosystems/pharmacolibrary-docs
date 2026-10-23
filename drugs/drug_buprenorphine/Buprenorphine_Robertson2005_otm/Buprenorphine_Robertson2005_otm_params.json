@@ -8,6 +8,14 @@
  "observables": [
   "central.C"
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Robertson_2005:other_prose",
+    "value_si": 1.2499999999999999e-05
+   }
+  ]
+ },
  "parameters": {
   "Cl": 1.0850000000000001e-05,
   "F": 1.0,

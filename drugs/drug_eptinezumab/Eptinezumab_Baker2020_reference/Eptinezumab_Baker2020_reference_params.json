@@ -10,6 +10,30 @@
   10.0,
   1000.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Baker_2020:results_prose",
+    "value_si": 37.3
+   },
+   {
+    "source": "Baker_2020:results_prose",
+    "value_si": 114.0
+   },
+   {
+    "source": "Baker_2020:results_prose",
+    "value_si": 30.0
+   },
+   {
+    "source": "Baker_2020:results_prose",
+    "value_si": 60.0
+   },
+   {
+    "source": "Baker_2020:discussion_prose",
+    "value_si": 37.0
+   }
+  ]
+ },
  "parameters": {
   "Cl": 1.7222222222222222e-09,
   "F": 1.0,

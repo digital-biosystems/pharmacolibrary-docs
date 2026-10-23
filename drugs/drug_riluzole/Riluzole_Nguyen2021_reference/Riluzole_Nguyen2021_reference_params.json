@@ -13,6 +13,18 @@
   50.0,
   100.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Nguyen_2021:other_prose",
+    "value_si": 0.0001289
+   },
+   {
+    "source": "Nguyen_2021:other_prose",
+    "value_si": 7.65e-05
+   }
+  ]
+ },
  "parameters": {
   "Cl": 1.375e-05,
   "F": 1.0,

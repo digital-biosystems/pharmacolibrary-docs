@@ -10,6 +10,14 @@
   3500.0,
   7000.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Gastine_2022:results_prose",
+    "value_si": 0.01
+   }
+  ]
+ },
  "parameters": {
   "Cl": 1.9138888888888886e-06,
   "F": 0.9,

@@ -1,19 +1,59 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01G&quot;,&quot;href&quot;:&quot;atc/J01G.md&quot;},{&quot;label&quot;:&quot;plazomicin&quot;,&quot;href&quot;:&quot;drugs/drug_plazomicin/&quot;},{&quot;label&quot;:&quot;Trang_2019_2 \u00b7 geometric_mean_value_cv_d&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Plazomicin_Kuti2019v2_reference&quot;,&quot;label&quot;:&quot;Kuti_2019_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_plazomicin/Plazomicin_Kuti2019v2_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Plazomicin_Trang2019v2_geometric_mean_value_cv_d&quot;,&quot;label&quot;:&quot;Trang_2019_2_geometric_mean_value_cv_d&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_plazomicin/Plazomicin_Trang2019v2_geometric_mean_value_cv_d.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Plazomicin_Kuti2019v2_reference&quot;,&quot;label&quot;:&quot;Kuti_2019_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_plazomicin/Plazomicin_Kuti2019v2_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Plazomicin_Trang2019v2_geometric_mean_value_cv_d&quot;,&quot;label&quot;:&quot;Trang_2019_2_geometric_mean_value_cv_d&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_plazomicin/Plazomicin_Trang2019v2_geometric_mean_value_cv_d.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # plazomicin — `Plazomicin_Trang2019v2_geometric_mean_value_cv_d`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.571). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">Reproduces paper</span>
+
+<div class="pk-model-meta" hidden drug="plazomicin" model-id="Plazomicin_Trang2019v2_geometric_mean_value_cv_d" status="curated_candidate" stale="false" population="adult patients with cUTI/AP and serious infections caused by CRE" measured-compound="plazomicin" parameterization="mechanistic" topology="1C"></div>
+
+## Citation
+Trang M, Seroogy JD, Van Wart SA, Bhavnani SM, Kim A, Gibbons JA et al. Population Pharmacokinetic Analyses for Plazomicin Using Pooled Data from Phase 1, 2, and 3 Clinical Studies. Antimicrobial agents and chemotherapy 63(4) (2019).
+  ·  DOI: [10.1128/AAC.02329-18](https://doi.org/10.1128/AAC.02329-18)
+
+## Population and dosing
+
+**Population:** adult patients with cUTI/AP and serious infections caused by CRE · age group adult · n = ,n_subjects": 564,
+"condition": "complicated urinary tract infection/acute pyelonephritis and serious carbapenem-resistant Enterobacteriaceae infections",
+"species": "human",
+"compounds": ["plazomicin | parent | yes | yes | yes"],
+"links":.
+
+**Dosing:** 1050 mg, iv, single.
+
+## Model
+
+**Structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameterization:** mechanistic.  
+**Parameters:** 9 extracted.  
+**Availability:** Model and browser simulation available in **Models** and **Simulation**.
+
+<figure class="pk-models-diagram"><img src="drugs/drug_plazomicin/Plazomicin_Trang2019v2_geometric_mean_value_cv_d/Plazomicin_Trang2019v2_geometric_mean_value_cv_d.svg" alt="Plazomicin_Trang2019v2_geometric_mean_value_cv_d diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
+
+## Parameters
+| label | parameter | value | unit | RSE% |
+|---|---|---|---|---|
+| AUC0–24 (mg·h/liter)a | AUCt | 248 | mg·h/L | 16.0 |
+| CL (liters/h) | CL | 4.50 | liters/h | 14.3 |
+| Cmax (mg/liter)b | Cmax | 84.6 | mg/L | 21.0 |
+| Cmin (mg/liter)c | Cmin | 0.372 | mg/L | 45.9 |
+| t1/2,α (h) | t1/2α | 0.328 | h | 27.2 |
+| t1/2,β (h) | t1/2β | 2.77 | h | 17.3 |
+| t1/2,γ (h) | t1/2γ | 25.8 | h | 37.6 |
+| Vss (liters) | Vss | 25.0 | liters | 23.9 |
+| Tigecycline 4 Vc (L) | V | 100.2 | L |  |
+
+<details class="pk-evidence"><summary>Evidence &amp; review</summary>
+
+**Status and checks:** <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.571). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
-
-**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 ### Reviewer guidance
 
@@ -25,33 +65,23 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parame
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-## Citation
-Trang M et al., Population Pharmacokinetic Analyses for…, Antimicrobial agents and ch… (2019)
-  ·  DOI: [10.1128/AAC.02329-18](https://doi.org/10.1128/AAC.02329-18)
+### All parameter columns
 
-<div class="pk-model-meta" hidden drug="plazomicin" model-id="Plazomicin_Trang2019v2_geometric_mean_value_cv_d" status="curated_candidate" stale="false" population="adult patients with cUTI/AP and serious infections caused by CRE" measured-compound="plazomicin" parameterization="mechanistic" topology="1C"></div>
-
-**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
-**Parameters:** 9 extracted.
-
-**Parameterization:** mechanistic.
-
-## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| AUC0–24 (mg·h/liter)a | `Q19` · AUCt | 248 | mg·h/L | not captured | mg·h/L | 16.0 | llm (0.6) | Trang_2019_2_table_3:row1:col1, Trang_2019_2_table_3:row1:col2, Trang_2019_2_table_3:row1:col3, Trang_2019_2_table_3:row1:col4 | — | not captured |
-| CL (liters/h) | `Q22` · CL | 4.50 | liters/h | 1.25e-06 | [l] / [h] | 14.3 | exact (1.0) | Trang_2019_2_table_3:row2:col1, Trang_2019_2_table_3:row2:col2, Trang_2019_2_table_3:row2:col3, Trang_2019_2_table_3:row2:col4 | — | not captured |
-| Cmax (mg/liter)b | `Q32` · Cmax | 84.6 | mg/L | not captured | mg/L | 21.0 | llm_confirmed (0.6) | Trang_2019_2_table_3:row3:col1, Trang_2019_2_table_3:row3:col2, Trang_2019_2_table_3:row3:col3, Trang_2019_2_table_3:row3:col4 | — | not captured |
-| Cmin (mg/liter)c | `Q36` · Cmin | 0.372 | mg/L | not captured | mg/L | 45.9 | llm_confirmed (0.6) | Trang_2019_2_table_3:row4:col1, Trang_2019_2_table_3:row4:col2, Trang_2019_2_table_3:row4:col3, Trang_2019_2_table_3:row4:col4 | — | not captured |
-| t1/2,α (h) | `Q59` · t1/2α | 0.328 | h | 1180.8 | [h] | 27.2 | llm_corrected (0.6) | Trang_2019_2_table_3:row5:col1, Trang_2019_2_table_3:row5:col2, Trang_2019_2_table_3:row5:col3, Trang_2019_2_table_3:row5:col4 | — | not captured |
-| t1/2,β (h) | `Q60` · t1/2β | 2.77 | h | 9972.0 | [h] | 17.3 | llm_corrected (0.6) | Trang_2019_2_table_3:row6:col1, Trang_2019_2_table_3:row6:col2, Trang_2019_2_table_3:row6:col3, Trang_2019_2_table_3:row6:col4 | — | not captured |
-| t1/2,γ (h) | `Q89` · t1/2γ | 25.8 | h | 92880.0 | [h] | 37.6 | llm_corrected (0.6) | Trang_2019_2_table_3:row7:col1, Trang_2019_2_table_3:row7:col2, Trang_2019_2_table_3:row7:col3, Trang_2019_2_table_3:row7:col4 | — | not captured |
-| Vss (liters) | `Q65` · Vss | 25.0 | liters | 0.025 | [l] | 23.9 | exact (1.0) | Trang_2019_2_table_3:row8:col1, Trang_2019_2_table_3:row8:col2, Trang_2019_2_table_3:row8:col3, Trang_2019_2_table_3:row8:col4 | — | not captured |
-| Tigecycline 4 Vc (L) | `Q61` · V | 100.2 | L | 0.10020000000000001 | L | not captured | review_gapfill (0.7) | Kuti_2019_2:review | — | not captured |
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | RSE% | link | source |
+|---|---|---|---|---|---|---|---|---|---|
+| AUC0–24 (mg·h/liter)a | `Q19` · AUCt | 248 | mg·h/L |  |  | mg·h/L | 16.0 | llm (0.6) | Trang_2019_2_table_3:row1:col1, Trang_2019_2_table_3:row1:col2, Trang_2019_2_table_3:row1:col3, Trang_2019_2_table_3:row1:col4 |
+| CL (liters/h) | `Q22` · CL | 4.50 | liters/h | 1.25e-06 | m3/s | l/h | 14.3 | exact (1) | Trang_2019_2_table_3:row2:col1, Trang_2019_2_table_3:row2:col2, Trang_2019_2_table_3:row2:col3, Trang_2019_2_table_3:row2:col4 |
+| Cmax (mg/liter)b | `Q32` · Cmax | 84.6 | mg/L |  |  | mg/L | 21.0 | llm_confirmed (0.6) | Trang_2019_2_table_3:row3:col1, Trang_2019_2_table_3:row3:col2, Trang_2019_2_table_3:row3:col3, Trang_2019_2_table_3:row3:col4 |
+| Cmin (mg/liter)c | `Q36` · Cmin | 0.372 | mg/L |  |  | mg/L | 45.9 | llm_confirmed (0.6) | Trang_2019_2_table_3:row4:col1, Trang_2019_2_table_3:row4:col2, Trang_2019_2_table_3:row4:col3, Trang_2019_2_table_3:row4:col4 |
+| t1/2,α (h) | `Q59` · t1/2α | 0.328 | h | 1181 | s | h | 27.2 | llm_corrected (0.6) | Trang_2019_2_table_3:row5:col1, Trang_2019_2_table_3:row5:col2, Trang_2019_2_table_3:row5:col3, Trang_2019_2_table_3:row5:col4 |
+| t1/2,β (h) | `Q60` · t1/2β | 2.77 | h | 9972 | s | h | 17.3 | llm_corrected (0.6) | Trang_2019_2_table_3:row6:col1, Trang_2019_2_table_3:row6:col2, Trang_2019_2_table_3:row6:col3, Trang_2019_2_table_3:row6:col4 |
+| t1/2,γ (h) | `Q89` · t1/2γ | 25.8 | h | 9.288e+04 | s | h | 37.6 | llm_corrected (0.6) | Trang_2019_2_table_3:row7:col1, Trang_2019_2_table_3:row7:col2, Trang_2019_2_table_3:row7:col3, Trang_2019_2_table_3:row7:col4 |
+| Vss (liters) | `Q65` · Vss | 25.0 | liters | 0.025 | m3 | l | 23.9 | exact (1) | Trang_2019_2_table_3:row8:col1, Trang_2019_2_table_3:row8:col2, Trang_2019_2_table_3:row8:col3, Trang_2019_2_table_3:row8:col4 |
+| Tigecycline 4 Vc (L) | `Q61` · V | 100.2 | L | 0.1002 | m3 | L |  | review_gapfill (0.7) | Kuti_2019_2:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ## Departures & gaps
@@ -131,7 +161,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | `gpt-oss-120b` | `parameters[t1/2,α].value` | 0.328 | 0.623 | mismatch |
 | `gpt-oss-120b` | `parameters[t1/2,β].value` | 2.77 | 5.38 | mismatch |
 | `gpt-oss-120b` | `parameters[t1/2,γ].value` | 25.8 | 28.6 | mismatch |
-| `gpt-oss-120b` | `parameters[tigecycline 4 vc]` | 100.2 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tigecycline 4 vc]` | 100.2 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[vss].value` | 25.0 | 56.6 | mismatch |
 
 </details>
@@ -144,49 +174,44 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained | ratio | tol | source |
-|---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 8 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q19 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Trang_2019_2_table_3:row1:col1', 'Trang_2019_2_table_3:row1:col2', 'Trang_2019_2_table_3:row1:col3', 'Trang_2019_2_table_3:row1:col4'] |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Trang_2019_2_table_3:row2:col1', 'Trang_2019_2_table_3:row2:col2', 'Trang_2019_2_table_3:row2:col3', 'Trang_2019_2_table_3:row2:col4'] |
-| C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Trang_2019_2_table_3:row3:col1', 'Trang_2019_2_table_3:row3:col2', 'Trang_2019_2_table_3:row3:col3', 'Trang_2019_2_table_3:row3:col4'] |
-| C5_dimension_Q36 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Trang_2019_2_table_3:row4:col1', 'Trang_2019_2_table_3:row4:col2', 'Trang_2019_2_table_3:row4:col3', 'Trang_2019_2_table_3:row4:col4'] |
-| C5_dimension_Q59 | pass | [time] | not captured | not captured | not captured | ['Trang_2019_2_table_3:row5:col1', 'Trang_2019_2_table_3:row5:col2', 'Trang_2019_2_table_3:row5:col3', 'Trang_2019_2_table_3:row5:col4'] |
-| C5_dimension_Q60 | pass | [time] | not captured | not captured | not captured | ['Trang_2019_2_table_3:row6:col1', 'Trang_2019_2_table_3:row6:col2', 'Trang_2019_2_table_3:row6:col3', 'Trang_2019_2_table_3:row6:col4'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Kuti_2019_2:review'] |
-| C5_dimension_Q65 | pass | [length] ** 3 | not captured | not captured | not captured | ['Trang_2019_2_table_3:row8:col1', 'Trang_2019_2_table_3:row8:col2', 'Trang_2019_2_table_3:row8:col3', 'Trang_2019_2_table_3:row8:col4'] |
-| C5_dimension_Q89 | pass | [time] | not captured | not captured | not captured | ['Trang_2019_2_table_3:row7:col1', 'Trang_2019_2_table_3:row7:col2', 'Trang_2019_2_table_3:row7:col3', 'Trang_2019_2_table_3:row7:col4'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 4.5 | not captured | not captured | ['Trang_2019_2_table_3:row2:col1', 'Trang_2019_2_table_3:row2:col2', 'Trang_2019_2_table_3:row2:col3', 'Trang_2019_2_table_3:row2:col4'] |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 4.5 L/h | not captured | not captured | ['Trang_2019_2_table_3:row2:col1', 'Trang_2019_2_table_3:row2:col2', 'Trang_2019_2_table_3:row2:col3', 'Trang_2019_2_table_3:row2:col4'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 100 L | not captured | not captured | ['Kuti_2019_2:review'] |
-| C9_phys_window_Q65 | pass | volume within physiological range | 25 L | not captured | not captured | ['Trang_2019_2_table_3:row8:col1', 'Trang_2019_2_table_3:row8:col2', 'Trang_2019_2_table_3:row8:col3', 'Trang_2019_2_table_3:row8:col4'] |
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 8 |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
+| C5_dimension_Q19 | pass | [mass] * [time] / [length] ** 3 |  | ['Trang_2019_2_table_3:row1:col1', 'Trang_2019_2_table_3:row1:col2', 'Trang_2019_2_table_3:row1:col3', 'Trang_2019_2_table_3:row1:col4'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Trang_2019_2_table_3:row2:col1', 'Trang_2019_2_table_3:row2:col2', 'Trang_2019_2_table_3:row2:col3', 'Trang_2019_2_table_3:row2:col4'] |
+| C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Trang_2019_2_table_3:row3:col1', 'Trang_2019_2_table_3:row3:col2', 'Trang_2019_2_table_3:row3:col3', 'Trang_2019_2_table_3:row3:col4'] |
+| C5_dimension_Q36 | pass | [mass] / [length] ** 3 |  | ['Trang_2019_2_table_3:row4:col1', 'Trang_2019_2_table_3:row4:col2', 'Trang_2019_2_table_3:row4:col3', 'Trang_2019_2_table_3:row4:col4'] |
+| C5_dimension_Q59 | pass | [time] |  | ['Trang_2019_2_table_3:row5:col1', 'Trang_2019_2_table_3:row5:col2', 'Trang_2019_2_table_3:row5:col3', 'Trang_2019_2_table_3:row5:col4'] |
+| C5_dimension_Q60 | pass | [time] |  | ['Trang_2019_2_table_3:row6:col1', 'Trang_2019_2_table_3:row6:col2', 'Trang_2019_2_table_3:row6:col3', 'Trang_2019_2_table_3:row6:col4'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Kuti_2019_2:review'] |
+| C5_dimension_Q65 | pass | [length] ** 3 |  | ['Trang_2019_2_table_3:row8:col1', 'Trang_2019_2_table_3:row8:col2', 'Trang_2019_2_table_3:row8:col3', 'Trang_2019_2_table_3:row8:col4'] |
+| C5_dimension_Q89 | pass | [time] |  | ['Trang_2019_2_table_3:row7:col1', 'Trang_2019_2_table_3:row7:col2', 'Trang_2019_2_table_3:row7:col3', 'Trang_2019_2_table_3:row7:col4'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 4.5 | ['Trang_2019_2_table_3:row2:col1', 'Trang_2019_2_table_3:row2:col2', 'Trang_2019_2_table_3:row2:col3', 'Trang_2019_2_table_3:row2:col4'] |
+| C8_topology | pass |  |  |  |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 4.5 L/h | ['Trang_2019_2_table_3:row2:col1', 'Trang_2019_2_table_3:row2:col2', 'Trang_2019_2_table_3:row2:col3', 'Trang_2019_2_table_3:row2:col4'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 100 L | ['Kuti_2019_2:review'] |
+| C9_phys_window_Q65 | pass | volume within physiological range | 25 L | ['Trang_2019_2_table_3:row8:col1', 'Trang_2019_2_table_3:row8:col2', 'Trang_2019_2_table_3:row8:col3', 'Trang_2019_2_table_3:row8:col4'] |
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_output_variable | not captured | pass | C_central (measured=plazomicin) | central.C | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
+| check | status | expected | obtained | note |
+|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=plazomicin) | central.C | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
 
 <details class="legend">
 <summary>Validation definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
-## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_plazomicin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Trang_2019_2` / `Trang_2019_2::geometric_mean_value_cv_d`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_plazomicin/models/modelica/Plazomicin_Trang2019v2_geometric_mean_value_cv_d.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_plazomicin/models/modelica/Plazomicin_Trang2019v2_geometric_mean_value_cv_d.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_plazomicin/models/modelica/Plazomicin_Trang2019v2_geometric_mean_value_cv_d.json`
-
+</details>
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
@@ -203,7 +228,47 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_plazomicin/Plazomicin_Trang2019v2_geometric_mean_value_cv_d/Plazomicin_Trang2019v2_geometric_mean_value_cv_d.svg" alt="Plazomicin_Trang2019v2_geometric_mean_value_cv_d diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div></div>
+
+## Model interface
+
+The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
+
+| direction | role | name | value | unit (SI) |
+|---|---|---|---|---|
+| input | compound | `MM` | 0.5927 | kg/mol |
+| input | dosing | `F` | 1 | 1 |
+| input | dosing | `adminCount` | 1 | 1 |
+| input | dosing | `adminDuration` | 600 | s |
+| input | dosing | `adminMass` | 0.00105 | kg |
+| input | model | `Cl` | 1.25e-06 | m3/s |
+| input | model | `VdPerKg` | 0.001431 | m3/kg |
+| input | subject | `weight` | 70 | kg |
+| output | concentration | `central.C` |  | kg/m3 |
+
+## Tested with
+
+- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
+- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
+- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
+
+## How to cite
+
+**Source paper** (the parameters are its): Trang M, Seroogy JD, Van Wart SA, Bhavnani SM, Kim A, Gibbons JA et al. Population Pharmacokinetic Analyses for Plazomicin Using Pooled Data from Phase 1, 2, and 3 Clinical Studies. Antimicrobial agents and chemotherapy 63(4) (2019). [doi:10.1128/AAC.02329-18](https://doi.org/10.1128/AAC.02329-18)
+
+**This record:** Pharmacolibrary v26.09, model `Plazomicin_Trang2019v2_geometric_mean_value_cv_d`. <https://pharmacolibrary.github.io/#/drugs/drug_plazomicin/Plazomicin_Trang2019v2_geometric_mean_value_cv_d>
+
+```bibtex
+@misc{pharmacolibrary_PlazomicinTrang2019v2geometricmeanvaluecvd,
+  title  = {{Pharmacolibrary model Plazomicin_Trang2019v2_geometric_mean_value_cv_d}},
+  author = {{Pharmacolibrary}},
+  version = {v26.09},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_plazomicin/Plazomicin_Trang2019v2_geometric_mean_value_cv_d},
+  note   = {Parameters from doi:10.1128/AAC.02329-18},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -216,4 +281,5 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 15:58 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bplazomicin%5D%20Plazomicin_Trang2019v2_geometric_mean_value_cv_d&body=Drug%3A%20plazomicin%0ARecord%3A%20Plazomicin_Trang2019v2_geometric_mean_value_cv_d%0APaper%3A%20Trang_2019_2%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_plazomicin/Plazomicin_Trang2019v2_geometric_mean_value_cv_d%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Generated by `docs.py` (scholarv2, release v26.09) · extracted 2026-10-07 15:58 UTC</sub>

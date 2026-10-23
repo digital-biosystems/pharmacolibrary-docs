@@ -14,12 +14,6 @@ Chlorprothixene is a thioxanthene antipsychotic used to treat psychotic disorder
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q63395672](https://www.wikidata.org/wiki/Q63395672) and the WHO ATC classification; not checked by a person.</small>
 
-## Extraction summary
-
-| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
-|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 15:36 | 5:04 | 0/0/0 | 1/3/0 | 0/0/0 | 208,065/2,179 | ollama / glm-5.3-flash | 9 | 4/3 | 9/0 | 0 |
-
 ## popPK records
 
 _not available_
@@ -28,16 +22,24 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">in vitro</span> | [Kim_2016_proton_current](drugs/drug_chlorprothixene/pd_Kim_2016_proton_current.md) | proton currents (voltage-gated proton channel current) in BV2 microglial cells ← chlorprothixene · direct sigmoid Emax (Hill) effect | — | Kim J et al., Thioxanthenes, chlorprothixene and flup…, European journal of pharmac… (2016) | [10.1016/j.ejphar.2016.03.009](https://doi.org/10.1016/j.ejphar.2016.03.009) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Bagli_1999_PRL](drugs/drug_chlorprothixene/pd_Bagli_1999_PRL.md) | prolactin biomarker turnover ← chlorprothixene | — | Bagli M et al., Pharmacokinetic-pharmacodynamic modelin…, The Journal of pharmacology… (1999) | — |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Petersson_2013_prolactin](drugs/drug_chlorprothixene/pd_Petersson_2013_prolactin.md) | prolactin ← chlorprothixene · inhibition effect | — | Petersson KJ et al., Predictions of in vivo prolactin levels…, The AAPS journal (2013) | [10.1208/s12248-012-9450-6](https://doi.org/10.1208/s12248-012-9450-6) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 0.90).">in vitro</span> | [Vasudevan_2012_histamine_induced_calcium_release](drugs/drug_chlorprothixene/pd_Vasudevan_2012_histamine_induced_calcium_release.md) | histamine-induced calcium release ← chlorprothixene · inhibition effect | — | Vasudevan SR et al., Shape-based reprofiling of FDA-approved…, Journal of medicinal chemis… (2012) | [10.1021/jm300671m](https://doi.org/10.1021/jm300671m) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">in vitro</span> | [Kim_2016_proton_current](drugs/drug_chlorprothixene/pd_Kim_2016_proton_current.md) | proton currents (voltage-gated proton channel current) in BV2 microglial cells ← chlorprothixene · direct sigmoid Emax (Hill) effect | — | Kim J et al., Thioxanthenes, chlorprothixene and flup…, European journal of pharmac… (2016) | [10.1016/j.ejphar.2016.03.009](https://doi.org/10.1016/j.ejphar.2016.03.009) |
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Bagli_1999_PRL](drugs/drug_chlorprothixene/pd_Bagli_1999_PRL.md) | prolactin biomarker turnover ← chlorprothixene | — | Bagli M et al., Pharmacokinetic-pharmacodynamic modelin…, The Journal of pharmacology… (1999) | — |
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Petersson_2013_prolactin](drugs/drug_chlorprothixene/pd_Petersson_2013_prolactin.md) | prolactin ← chlorprothixene · inhibition effect | — | Petersson KJ et al., Predictions of in vivo prolactin levels…, The AAPS journal (2013) | [10.1208/s12248-012-9450-6](https://doi.org/10.1208/s12248-012-9450-6) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 0.90).">in vitro</span> | [Vasudevan_2012_histamine_induced_calcium_release](drugs/drug_chlorprothixene/pd_Vasudevan_2012_histamine_induced_calcium_release.md) | histamine-induced calcium release ← chlorprothixene · inhibition effect | — | Vasudevan SR et al., Shape-based reprofiling of FDA-approved…, Journal of medicinal chemis… (2012) | [10.1021/jm300671m](https://doi.org/10.1021/jm300671m) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-06 15:36 | 5:04 | 0/0/0 | 1/3/0 | 0/0/0 | 208,065/2,179 | ollama / glm-5.3-flash | 9 | 4/3 | 9/0 | 0 |
 
 ## Coverage
 
@@ -74,5 +76,9 @@ _4 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | popPK | Petersson_2013 | relevant | 5 | 2 | Chlorprothixene appears to be one of the D2 antagonists with a population PK model, but no numeric PK parameter values are present in the evidence (likely in supplementary material/tables not provided). |
 | popPK | Tokmakjian_2026 | irrelevant | 0 | 0 | This is a C. elegans CAD defense/metabolism study; chlorprothixene is not the subject and no PK parameters (CL, V, half-life) are reported. |
 
+
+</details>
+
 ---
-<sub>Generated by `docs.py` (scholarv2)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
+<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>

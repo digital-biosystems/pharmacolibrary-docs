@@ -12,6 +12,22 @@
  "paper_doses_mg": [
   7000.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Rufener_2018:other_prose",
+    "value_si": 0.00263
+   },
+   {
+    "source": "Rufener_2018:discussion_prose",
+    "value_si": 0.00263
+   },
+   {
+    "source": "Rufener_2018:discussion_prose",
+    "value_si": 96.6
+   }
+  ]
+ },
  "parameters": {
   "Cl": 3.8888888888888884e-09,
   "F": 1.0,

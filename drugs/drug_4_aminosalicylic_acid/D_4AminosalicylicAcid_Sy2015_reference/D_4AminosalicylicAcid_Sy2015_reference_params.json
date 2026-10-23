@@ -10,6 +10,42 @@
   4000.0,
   8000.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Sy_2015:other_prose",
+    "value_si": 9.999999999999999e-06
+   },
+   {
+    "source": "Sy_2015:other_prose",
+    "value_si": 0.000135
+   },
+   {
+    "source": "Sy_2015:results_prose",
+    "value_si": 22.4
+   },
+   {
+    "source": "Sy_2015:results_prose",
+    "value_si": 51.6
+   },
+   {
+    "source": "Sy_2015:results_prose",
+    "value_si": 14.3
+   },
+   {
+    "source": "Sy_2015:results_prose",
+    "value_si": 125.0
+   },
+   {
+    "source": "Sy_2015:results_prose",
+    "value_si": 0.873
+   },
+   {
+    "source": "Sy_2015:discussion_prose",
+    "value_si": 0.873
+   }
+  ]
+ },
  "parameters": {
   "Cl": 2.2611111111111117e-06,
   "F": 1.0,

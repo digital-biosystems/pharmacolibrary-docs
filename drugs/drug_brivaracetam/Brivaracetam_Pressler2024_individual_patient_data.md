@@ -1,19 +1,57 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;brivaracetam&quot;,&quot;href&quot;:&quot;drugs/drug_brivaracetam/&quot;},{&quot;label&quot;:&quot;Pressler_2024 \u00b7 individual_patient_data&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Brivaracetam_Schoemaker2018_reference&quot;,&quot;label&quot;:&quot;Schoemaker_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brivaracetam/Brivaracetam_Schoemaker2018_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brivaracetam_Yu2026_reference&quot;,&quot;label&quot;:&quot;Yu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brivaracetam/Brivaracetam_Yu2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brivaracetam_Klein2026_reference&quot;,&quot;label&quot;:&quot;Klein_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brivaracetam/Brivaracetam_Klein2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brivaracetam_Li2025_reference&quot;,&quot;label&quot;:&quot;Li_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brivaracetam/Brivaracetam_Li2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brivaracetam_Pressler2024_all_patients&quot;,&quot;label&quot;:&quot;Pressler_2024_all_patients&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brivaracetam/Brivaracetam_Pressler2024_all_patients.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brivaracetam_Pressler2024_individual_patient_data&quot;,&quot;label&quot;:&quot;Pressler_2024_individual_patient_data&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brivaracetam/Brivaracetam_Pressler2024_individual_patient_data.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Brivaracetam_Schoemaker2018_reference&quot;,&quot;label&quot;:&quot;Schoemaker_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brivaracetam/Brivaracetam_Schoemaker2018_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brivaracetam_Yu2026_reference&quot;,&quot;label&quot;:&quot;Yu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brivaracetam/Brivaracetam_Yu2026_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brivaracetam_Klein2026_reference&quot;,&quot;label&quot;:&quot;Klein_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brivaracetam/Brivaracetam_Klein2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brivaracetam_Li2025_reference&quot;,&quot;label&quot;:&quot;Li_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brivaracetam/Brivaracetam_Li2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brivaracetam_Pressler2024_all_patients&quot;,&quot;label&quot;:&quot;Pressler_2024_all_patients&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brivaracetam/Brivaracetam_Pressler2024_all_patients.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brivaracetam_Pressler2024_individual_patient_data&quot;,&quot;label&quot;:&quot;Pressler_2024_individual_patient_data&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brivaracetam/Brivaracetam_Pressler2024_individual_patient_data.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # brivaracetam — `Brivaracetam_Pressler2024_individual_patient_data`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.818). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+
+> Bioavailability F and lag time Tlag are missing, forcing defaults unsupported by the neonatal brivaracetam data.
+
+<div class="pk-model-meta" hidden drug="brivaracetam" model-id="Brivaracetam_Pressler2024_individual_patient_data" status="needs_review" stale="false" population="neonates with repeated electroencephalographic seizures" measured-compound="brivaracetam" parameterization="mechanistic" topology="1C"></div>
+
+## Citation
+Pressler R, Boylan G, Dempsey E, Klotz KA, Krauwinkel W, Will E et al. Pharmacokinetics and safety of brivaracetam in neonates with repeated electroencephalographic seizures: A multicenter, open-label, single-arm study. Epilepsia open 9(2):522-533 (2024).
+  ·  DOI: [10.1002/epi4.12875](https://doi.org/10.1002/epi4.12875)
+
+## Population and dosing
+
+**Population:** neonates with repeated electroencephalographic seizures · condition neonatal seizures · age group neonate · n = 6.
+
+**Dosing:** 35 mg, iv, multiple, every 12 h.
+
+## Model
+
+**Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameterization:** mechanistic.  
+**Parameters:** 7 extracted.  
+**Availability:** Model and browser simulation available in **Models** and **Simulation**.
+
+<figure class="pk-models-diagram"><img src="drugs/drug_brivaracetam/Brivaracetam_Pressler2024_individual_patient_data/Brivaracetam_Pressler2024_individual_patient_data.svg" alt="Brivaracetam_Pressler2024_individual_patient_data diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
+
+## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
+| label | parameter | value | unit |
+|---|---|---|---|
+| AUC(0–12) (h*mg/L) | AUC | 4.44 | h*mg/L |
+| C max (mg/L) | Cmax | 0.63 | mg/L |
+| t max (min) | tmax | 15.00 | min |
+| V d (L) | V | 2.18 | L |
+| CL (L/h) | CL | 0.22 | L/h |
+| t ½ (h) | t1/2z | 6.87 | h |
+| absorption rate constant for the slow absorption component | kabs | 5.37 | h−1 |
+
+<details class="pk-evidence"><summary>Evidence &amp; review</summary>
+
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.818). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
-
-**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 ### Reviewer guidance
 
@@ -25,33 +63,21 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which m
 
 <sub>reviewed by qwen3.8-27b</sub>
 
-## Citation
-Pressler R et al., Pharmacokinetics and safety of brivarac…, Epilepsia open (2024)
-  ·  DOI: [10.1002/epi4.12875](https://doi.org/10.1002/epi4.12875)
+### All parameter columns
 
-<div class="pk-model-meta" hidden drug="brivaracetam" model-id="Brivaracetam_Pressler2024_individual_patient_data" status="needs_review" stale="false" population="neonates with repeated electroencephalographic seizures" measured-compound="brivaracetam" parameterization="mechanistic" topology="1C"></div>
-
-**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 7 extracted.
-
-**Parameterization:** mechanistic.
-
-## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| AUC(0–12) (h*mg/L) | `Q88` · AUC | 4.44 | h*mg/L | not captured | [[h] · [mg]] / [l] | not captured | space_fold (0.95) | epi412875-tbl-0002:row2:col3, epi412875-tbl-0002:row2:col4, epi412875-tbl-0002:row2:col5, epi412875-tbl-0002:row2:col6, epi412875-tbl-0002:row2:col7, epi412875-tbl-0002:row2:col8 | — | not captured |
-| C max (mg/L) | `Q32` · Cmax | 0.63 | mg/L | not captured | [mg] / [l] | not captured | space_fold (0.95) | epi412875-tbl-0002:row4:col3, epi412875-tbl-0002:row4:col4, epi412875-tbl-0002:row4:col5, epi412875-tbl-0002:row4:col6, epi412875-tbl-0002:row4:col7, epi412875-tbl-0002:row4:col8 | — | not captured |
-| t max (min) | `Q56` · tmax | 15.00 | min | 900.0 | [min] | not captured | space_fold (0.95) | epi412875-tbl-0002:row5:col3, epi412875-tbl-0002:row5:col4, epi412875-tbl-0002:row5:col5, epi412875-tbl-0002:row5:col6, epi412875-tbl-0002:row5:col7, epi412875-tbl-0002:row5:col8 | — | not captured |
-| V d (L) | `Q61` · V | 2.18 | L | 0.00218 | [l] | not captured | space_fold (0.95) | epi412875-tbl-0002:row6:col3, epi412875-tbl-0002:row6:col4, epi412875-tbl-0002:row6:col5, epi412875-tbl-0002:row6:col6, epi412875-tbl-0002:row6:col7, epi412875-tbl-0002:row6:col8 | — | not captured |
-| CL (L/h) | `Q22` · CL | 0.22 | L/h | 6.111111111111111e-08 | [l] / [h] | not captured | exact (1.0) | epi412875-tbl-0002:row7:col3, epi412875-tbl-0002:row7:col4, epi412875-tbl-0002:row7:col5, epi412875-tbl-0002:row7:col6, epi412875-tbl-0002:row7:col7, epi412875-tbl-0002:row7:col8 | — | not captured |
-| t ½ (h) | `Q57` · t1/2z | 6.87 | h | 24732.0 | [h] | not captured | llm (0.6) | epi412875-tbl-0002:row9:col3, epi412875-tbl-0002:row9:col4, epi412875-tbl-0002:row9:col5, epi412875-tbl-0002:row9:col6, epi412875-tbl-0002:row9:col7, epi412875-tbl-0002:row9:col8 | — | not captured |
-| absorption rate constant for the slow absorption component | `Q49` · kabs | 5.37 | h−1 | 0.0014916666666666667 | 1/h | not captured | review_gapfill (0.7) | Klein_2026:review | — | not captured |
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
+|---|---|---|---|---|---|---|---|---|
+| AUC(0–12) (h*mg/L) | `Q88` · AUC | 4.44 | h*mg/L |  |  | (h·mg)/l | space_fold (0.95) | epi412875-tbl-0002:row2:col3, epi412875-tbl-0002:row2:col4, epi412875-tbl-0002:row2:col5, epi412875-tbl-0002:row2:col6, epi412875-tbl-0002:row2:col7, epi412875-tbl-0002:row2:col8 |
+| C max (mg/L) | `Q32` · Cmax | 0.63 | mg/L |  |  | mg/l | space_fold (0.95) | epi412875-tbl-0002:row4:col3, epi412875-tbl-0002:row4:col4, epi412875-tbl-0002:row4:col5, epi412875-tbl-0002:row4:col6, epi412875-tbl-0002:row4:col7, epi412875-tbl-0002:row4:col8 |
+| t max (min) | `Q56` · tmax | 15.00 | min | 900 | s | min | space_fold (0.95) | epi412875-tbl-0002:row5:col3, epi412875-tbl-0002:row5:col4, epi412875-tbl-0002:row5:col5, epi412875-tbl-0002:row5:col6, epi412875-tbl-0002:row5:col7, epi412875-tbl-0002:row5:col8 |
+| V d (L) | `Q61` · V | 2.18 | L | 0.00218 | m3 | l | space_fold (0.95) | epi412875-tbl-0002:row6:col3, epi412875-tbl-0002:row6:col4, epi412875-tbl-0002:row6:col5, epi412875-tbl-0002:row6:col6, epi412875-tbl-0002:row6:col7, epi412875-tbl-0002:row6:col8 |
+| CL (L/h) | `Q22` · CL | 0.22 | L/h | 6.111e-08 | m3/s | l/h | exact (1) | epi412875-tbl-0002:row7:col3, epi412875-tbl-0002:row7:col4, epi412875-tbl-0002:row7:col5, epi412875-tbl-0002:row7:col6, epi412875-tbl-0002:row7:col7, epi412875-tbl-0002:row7:col8 |
+| t ½ (h) | `Q57` · t1/2z | 6.87 | h | 2.473e+04 | s | h | llm (0.6) | epi412875-tbl-0002:row9:col3, epi412875-tbl-0002:row9:col4, epi412875-tbl-0002:row9:col5, epi412875-tbl-0002:row9:col6, epi412875-tbl-0002:row9:col7, epi412875-tbl-0002:row9:col8 |
+| absorption rate constant for the slow absorption component | `Q49` · kabs | 5.37 | h−1 | 0.001492 | 1/s | 1/h | review_gapfill (0.7) | Klein_2026:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ## Departures & gaps
@@ -94,7 +120,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[absorption rate constant for the slow absorption component]` | 5.37 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[absorption rate constant for the slow absorption component]` | 5.37 |  | only_one_extracted |
 | `gpt-oss-120b` | `screen.primary_analyte` | brivaracetam | unknown | mismatch |
 
 </details>
@@ -107,46 +133,41 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained | ratio | tol | source |
-|---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['epi412875-tbl-0002:row7:col3', 'epi412875-tbl-0002:row7:col4', 'epi412875-tbl-0002:row7:col5', 'epi412875-tbl-0002:row7:col6', 'epi412875-tbl-0002:row7:col7', 'epi412875-tbl-0002:row7:col8'] |
-| C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['epi412875-tbl-0002:row4:col3', 'epi412875-tbl-0002:row4:col4', 'epi412875-tbl-0002:row4:col5', 'epi412875-tbl-0002:row4:col6', 'epi412875-tbl-0002:row4:col7', 'epi412875-tbl-0002:row4:col8'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Klein_2026:review'] |
-| C5_dimension_Q56 | pass | [time] | not captured | not captured | not captured | ['epi412875-tbl-0002:row5:col3', 'epi412875-tbl-0002:row5:col4', 'epi412875-tbl-0002:row5:col5', 'epi412875-tbl-0002:row5:col6', 'epi412875-tbl-0002:row5:col7', 'epi412875-tbl-0002:row5:col8'] |
-| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['epi412875-tbl-0002:row9:col3', 'epi412875-tbl-0002:row9:col4', 'epi412875-tbl-0002:row9:col5', 'epi412875-tbl-0002:row9:col6', 'epi412875-tbl-0002:row9:col7', 'epi412875-tbl-0002:row9:col8'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['epi412875-tbl-0002:row6:col3', 'epi412875-tbl-0002:row6:col4', 'epi412875-tbl-0002:row6:col5', 'epi412875-tbl-0002:row6:col6', 'epi412875-tbl-0002:row6:col7', 'epi412875-tbl-0002:row6:col8'] |
-| C5_dimension_Q88 | pass | [time] * [mass] / [length] ** 3 | not captured | not captured | not captured | ['epi412875-tbl-0002:row2:col3', 'epi412875-tbl-0002:row2:col4', 'epi412875-tbl-0002:row2:col5', 'epi412875-tbl-0002:row2:col6', 'epi412875-tbl-0002:row2:col7', 'epi412875-tbl-0002:row2:col8'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.22 | not captured | not captured | ['epi412875-tbl-0002:row7:col3', 'epi412875-tbl-0002:row7:col4', 'epi412875-tbl-0002:row7:col5', 'epi412875-tbl-0002:row7:col6', 'epi412875-tbl-0002:row7:col7', 'epi412875-tbl-0002:row7:col8'] |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.22 L/h | not captured | not captured | ['epi412875-tbl-0002:row7:col3', 'epi412875-tbl-0002:row7:col4', 'epi412875-tbl-0002:row7:col5', 'epi412875-tbl-0002:row7:col6', 'epi412875-tbl-0002:row7:col7', 'epi412875-tbl-0002:row7:col8'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 2.18 L | not captured | not captured | ['epi412875-tbl-0002:row6:col3', 'epi412875-tbl-0002:row6:col4', 'epi412875-tbl-0002:row6:col5', 'epi412875-tbl-0002:row6:col6', 'epi412875-tbl-0002:row6:col7', 'epi412875-tbl-0002:row6:col8'] |
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 6 |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['epi412875-tbl-0002:row7:col3', 'epi412875-tbl-0002:row7:col4', 'epi412875-tbl-0002:row7:col5', 'epi412875-tbl-0002:row7:col6', 'epi412875-tbl-0002:row7:col7', 'epi412875-tbl-0002:row7:col8'] |
+| C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['epi412875-tbl-0002:row4:col3', 'epi412875-tbl-0002:row4:col4', 'epi412875-tbl-0002:row4:col5', 'epi412875-tbl-0002:row4:col6', 'epi412875-tbl-0002:row4:col7', 'epi412875-tbl-0002:row4:col8'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['Klein_2026:review'] |
+| C5_dimension_Q56 | pass | [time] |  | ['epi412875-tbl-0002:row5:col3', 'epi412875-tbl-0002:row5:col4', 'epi412875-tbl-0002:row5:col5', 'epi412875-tbl-0002:row5:col6', 'epi412875-tbl-0002:row5:col7', 'epi412875-tbl-0002:row5:col8'] |
+| C5_dimension_Q57 | pass | [time] |  | ['epi412875-tbl-0002:row9:col3', 'epi412875-tbl-0002:row9:col4', 'epi412875-tbl-0002:row9:col5', 'epi412875-tbl-0002:row9:col6', 'epi412875-tbl-0002:row9:col7', 'epi412875-tbl-0002:row9:col8'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['epi412875-tbl-0002:row6:col3', 'epi412875-tbl-0002:row6:col4', 'epi412875-tbl-0002:row6:col5', 'epi412875-tbl-0002:row6:col6', 'epi412875-tbl-0002:row6:col7', 'epi412875-tbl-0002:row6:col8'] |
+| C5_dimension_Q88 | pass | [time] * [mass] / [length] ** 3 |  | ['epi412875-tbl-0002:row2:col3', 'epi412875-tbl-0002:row2:col4', 'epi412875-tbl-0002:row2:col5', 'epi412875-tbl-0002:row2:col6', 'epi412875-tbl-0002:row2:col7', 'epi412875-tbl-0002:row2:col8'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.22 | ['epi412875-tbl-0002:row7:col3', 'epi412875-tbl-0002:row7:col4', 'epi412875-tbl-0002:row7:col5', 'epi412875-tbl-0002:row7:col6', 'epi412875-tbl-0002:row7:col7', 'epi412875-tbl-0002:row7:col8'] |
+| C8_topology | pass |  |  |  |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.22 L/h | ['epi412875-tbl-0002:row7:col3', 'epi412875-tbl-0002:row7:col4', 'epi412875-tbl-0002:row7:col5', 'epi412875-tbl-0002:row7:col6', 'epi412875-tbl-0002:row7:col7', 'epi412875-tbl-0002:row7:col8'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 2.18 L | ['epi412875-tbl-0002:row6:col3', 'epi412875-tbl-0002:row6:col4', 'epi412875-tbl-0002:row6:col5', 'epi412875-tbl-0002:row6:col6', 'epi412875-tbl-0002:row6:col7', 'epi412875-tbl-0002:row6:col8'] |
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_output_variable | not captured | pass | C_central (measured=brivaracetam) | central.C | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable | not captured | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | note |
+|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=brivaracetam) | central.C | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Validation definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
-## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_brivaracetam/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Pressler_2024` / `Pressler_2024::individual_patient_data`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_brivaracetam/models/modelica/Brivaracetam_Pressler2024_individual_patient_data.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_brivaracetam/models/modelica/Brivaracetam_Pressler2024_individual_patient_data.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_brivaracetam/models/modelica/Brivaracetam_Pressler2024_individual_patient_data.json`
-
+</details>
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
@@ -163,7 +184,49 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_brivaracetam/Brivaracetam_Pressler2024_individual_patient_data/Brivaracetam_Pressler2024_individual_patient_data.svg" alt="Brivaracetam_Pressler2024_individual_patient_data diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div></div>
+
+## Model interface
+
+The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
+
+| direction | role | name | value | unit (SI) |
+|---|---|---|---|---|
+| input | compound | `MM` | 0.2123 | kg/mol |
+| input | dosing | `F` | 0.9 | 1 |
+| input | dosing | `Tlag` | 0 | s |
+| input | dosing | `adminCount` | 1 | 1 |
+| input | dosing | `adminDuration` | 600 | s |
+| input | dosing | `adminMass` | 3.5e-05 | kg |
+| input | model | `Cl` | 6.111e-08 | m3/s |
+| input | model | `VdPerKg` | 3.114e-05 | m3/kg |
+| input | model | `ka` | 0.001492 | 1/s |
+| input | subject | `weight` | 70 | kg |
+| output | concentration | `central.C` |  | kg/m3 |
+
+## Tested with
+
+- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
+- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
+- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
+
+## How to cite
+
+**Source paper** (the parameters are its): Pressler R, Boylan G, Dempsey E, Klotz KA, Krauwinkel W, Will E et al. Pharmacokinetics and safety of brivaracetam in neonates with repeated electroencephalographic seizures: A multicenter, open-label, single-arm study. Epilepsia open 9(2):522-533 (2024). [doi:10.1002/epi4.12875](https://doi.org/10.1002/epi4.12875)
+
+**This record:** Pharmacolibrary v26.09, model `Brivaracetam_Pressler2024_individual_patient_data`. <https://pharmacolibrary.github.io/#/drugs/drug_brivaracetam/Brivaracetam_Pressler2024_individual_patient_data>
+
+```bibtex
+@misc{pharmacolibrary_BrivaracetamPressler2024individualpatientdata,
+  title  = {{Pharmacolibrary model Brivaracetam_Pressler2024_individual_patient_data}},
+  author = {{Pharmacolibrary}},
+  version = {v26.09},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_brivaracetam/Brivaracetam_Pressler2024_individual_patient_data},
+  note   = {Parameters from doi:10.1002/epi4.12875},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -176,4 +239,5 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 07:03 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbrivaracetam%5D%20Brivaracetam_Pressler2024_individual_patient_data&body=Drug%3A%20brivaracetam%0ARecord%3A%20Brivaracetam_Pressler2024_individual_patient_data%0APaper%3A%20Pressler_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_brivaracetam/Brivaracetam_Pressler2024_individual_patient_data%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Generated by `docs.py` (scholarv2, release v26.09) · extracted 2026-10-07 07:03 UTC</sub>

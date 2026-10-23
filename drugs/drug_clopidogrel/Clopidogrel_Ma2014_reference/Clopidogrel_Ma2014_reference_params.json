@@ -2,11 +2,11 @@
  "dose_source": "WHO ATC DDD 75 mg oral (B01AC04)",
  "model_id": "Clopidogrel_Ma2014_reference",
  "molar_masses": {
-  "C_central": 0.321822
+  "central.C": 0.321822
  },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "C_central"
+  "central.C"
  ],
  "parameters": {
   "Cl": 6.008333333333334e-06,
@@ -21,10 +21,10 @@
   "weight": 70.0
  },
  "reference_peak_times": {
-  "C_central": 17660.921843687374
+  "central.C": 17660.92184368737
  },
  "reference_peaks": {
-  "C_central": 0.0001575576372397513
+  "central.C": 0.0001575576372397494
  },
  "stop_time": 259200.0,
  "template": "PK_1C_enteral",

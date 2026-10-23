@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01C&quot;,&quot;href&quot;:&quot;atc/P01C.md&quot;},{&quot;label&quot;:&quot;melarsoprol&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Melarsoprol_Burri1994_reference&quot;,&quot;label&quot;:&quot;Burri_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_melarsoprol/Melarsoprol_Burri1994_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Melarsoprol_Burri1994_reference&quot;,&quot;label&quot;:&quot;Burri_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_melarsoprol/Melarsoprol_Burri1994_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # melarsoprol
 
@@ -23,23 +23,40 @@ Melarsoprol is an arsenic-based antiparasitic drug used to treat sleeping sickne
 |---|---|---|---|---|---|---|
 | melarsoprol | parent | 398.33 | C12H15AsN6OS2 | DrugBank | [10311](https://pubchem.ncbi.nlm.nih.gov/compound/10311) | Burri_1994 |
 
-## Extraction summary
+## Start here
 
-| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
-|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 07:50 | 0:33 | 1/0/0 | 0/0/0 | 0/0/0 | 11,438/712 | ollama / glm-5.3-flash | 0 | 0/0 | 0/0 | 0 |
+> **Burri_1994_reference** — <span class="pk-badge pk-badge--green">Reproduces paper</span> healthy vervet monkeys, n = 6. [Run it in the simulator](drugs/drug_melarsoprol/Melarsoprol_Burri1994_reference.md?tab=Simulation) · [record](drugs/drug_melarsoprol/Melarsoprol_Burri1994_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
+## Parameters across studies
+
+| parameter | as named | value | unit | as reported | population | n | species | status | record |
+|---|---|---|---|---|---|---|---|---|---|
+| CL | CL | 14.7 ‡ | L/h | 3.5 ml/min*kg | healthy vervet monkeys | 6 | monkey | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Burri_1994_reference](drugs/drug_melarsoprol/Melarsoprol_Burri1994_reference.md) |
+| V | V | 252 ‡ | L | 3.6 l/kg | healthy vervet monkeys | 6 | monkey | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Burri_1994_reference](drugs/drug_melarsoprol/Melarsoprol_Burri1994_reference.md) |
+
+<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. Rejected records are left out.</sub>
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span> | [Burri_1994_reference](drugs/drug_melarsoprol/Melarsoprol_Burri1994_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Burri C et al., Pharmacokinetics of melarsoprol in unin…, Acta tropica (1994) | [10.1016/0001-706x(94)90120-1](https://doi.org/10.1016/0001-706x(94)90120-1) |
+| <span class="pk-rf" hidden data-species="monkey" data-age="adult" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span> | [Burri_1994_reference](drugs/drug_melarsoprol/Melarsoprol_Burri1994_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Burri C et al., Pharmacokinetics of melarsoprol in unin…, Acta tropica (1994) | [10.1016/0001-706x(94)90120-1](https://doi.org/10.1016/0001-706x(94)90120-1) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 07:50 | 0:33 | 1/0/0 | 0/0/0 | 0/0/0 | 11,438/712 | ollama / glm-5.3-flash | 0 | 0/0 | 0/0 | 0 |
 
 ## Coverage
 
@@ -66,5 +83,9 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | popPK | Bouteille_1995 | irrelevant | 0 | 0 | Study concerns megazol efficacy in mice; melarsoprol is only mentioned as background, with no PK parameters for any drug. |
 | popPK | Ullman_1989 | irrelevant | 0 | 0 | In-vitro Leishmania resistance study; melarsoprol only a comparator agent, no PK parameters. |
 
+
+</details>
+
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 07:50 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
+<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 07:50 UTC</sub>

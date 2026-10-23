@@ -20,6 +20,146 @@
   1000.0,
   2000.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Ishibashi_2024:other_prose",
+    "value_si": 0.9430000000000001
+   },
+   {
+    "source": "Ishibashi_2024:other_prose",
+    "value_si": 0.0234
+   },
+   {
+    "source": "Ishibashi_2024:other_prose",
+    "value_si": 0.005
+   },
+   {
+    "source": "Ishibashi_2024:other_prose",
+    "value_si": 0.0213
+   },
+   {
+    "source": "Ishibashi_2024:other_prose",
+    "value_si": 0.0103
+   },
+   {
+    "source": "Ishibashi_2024:other_prose",
+    "value_si": 0.0229
+   },
+   {
+    "source": "Ishibashi_2024:other_prose",
+    "value_si": 0.041
+   },
+   {
+    "source": "Ishibashi_2024:other_prose",
+    "value_si": 0.925
+   },
+   {
+    "source": "Ishibashi_2024:other_prose",
+    "value_si": 0.026600000000000002
+   },
+   {
+    "source": "Ishibashi_2024:other_prose",
+    "value_si": 0.00487
+   },
+   {
+    "source": "Ishibashi_2024:other_prose",
+    "value_si": 0.0183
+   },
+   {
+    "source": "Ishibashi_2024:other_prose",
+    "value_si": 0.0143
+   },
+   {
+    "source": "Ishibashi_2024:other_prose",
+    "value_si": 0.0262
+   },
+   {
+    "source": "Ishibashi_2024:other_prose",
+    "value_si": 0.0468
+   },
+   {
+    "source": "Ishibashi_2024:other_prose",
+    "value_si": 0.00488
+   },
+   {
+    "source": "Ishibashi_2024:other_prose",
+    "value_si": 0.9420000000000001
+   },
+   {
+    "source": "Ishibashi_2024:other_prose",
+    "value_si": 0.0489
+   },
+   {
+    "source": "Ishibashi_2024:other_prose",
+    "value_si": 0.0107
+   },
+   {
+    "source": "Ishibashi_2024:other_prose",
+    "value_si": 0.0219
+   },
+   {
+    "source": "Ishibashi_2024:other_prose",
+    "value_si": 0.0249
+   },
+   {
+    "source": "Ishibashi_2024:other_prose",
+    "value_si": 0.047700000000000006
+   },
+   {
+    "source": "Ishibashi_2024:other_prose",
+    "value_si": 0.0869
+   },
+   {
+    "source": "Ishibashi_2024:other_prose",
+    "value_si": 0.92
+   },
+   {
+    "source": "Ishibashi_2024:other_prose",
+    "value_si": 0.0564
+   },
+   {
+    "source": "Ishibashi_2024:other_prose",
+    "value_si": 0.011
+   },
+   {
+    "source": "Ishibashi_2024:other_prose",
+    "value_si": 0.019600000000000003
+   },
+   {
+    "source": "Ishibashi_2024:other_prose",
+    "value_si": 0.0319
+   },
+   {
+    "source": "Ishibashi_2024:other_prose",
+    "value_si": 0.0551
+   },
+   {
+    "source": "Ishibashi_2024:other_prose",
+    "value_si": 0.10400000000000001
+   },
+   {
+    "source": "Ishibashi_2024:other_prose",
+    "value_si": 0.0195
+   },
+   {
+    "source": "Ishibashi_2024:discussion_prose",
+    "value_si": 0.41
+   },
+   {
+    "source": "Ishibashi_2024:discussion_prose",
+    "value_si": 1.741
+   },
+   {
+    "source": "Ishibashi_2024:discussion_prose",
+    "value_si": 2.5
+   },
+   {
+    "source": "Ishibashi_2024:discussion_prose",
+    "value_si": 6.0
+   }
+  ]
+ },
  "parameters": {
   "Cl": 5.583333333333334e-08,
   "F": 1.0,

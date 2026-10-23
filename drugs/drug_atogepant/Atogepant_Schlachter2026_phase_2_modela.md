@@ -1,21 +1,62 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02C&quot;,&quot;href&quot;:&quot;atc/N02C.md&quot;},{&quot;label&quot;:&quot;atogepant&quot;,&quot;href&quot;:&quot;drugs/drug_atogepant/&quot;},{&quot;label&quot;:&quot;Schlachter_2026 \u00b7 phase_2_modela&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atogepant_Schlachter2026_phase_2_modela&quot;,&quot;label&quot;:&quot;Schlachter_2026_phase_2_modela&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atogepant/Atogepant_Schlachter2026_phase_2_modela.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Schlachter_2026_2_MMD&quot;,&quot;label&quot;:&quot;Schlachter_2026_2 \u00b7 MMD&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_atogepant/pd_Schlachter_2026_2_MMD.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atogepant_Schlachter2026_phase_2_modela&quot;,&quot;label&quot;:&quot;Schlachter_2026_phase_2_modela&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atogepant/Atogepant_Schlachter2026_phase_2_modela.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Schlachter_2026_2_MMD&quot;,&quot;label&quot;:&quot;Schlachter_2026_2 \u00b7 MMD&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_atogepant/pd_Schlachter_2026_2_MMD.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # atogepant — `Atogepant_Schlachter2026_phase_2_modela`
 
-> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.632), gpt-oss:120b (not confirmed, agreement 0.591). Primary extraction retained.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--neutral" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
+
+> The reviewer's verdict (Needs review, 2026-09-28 14:36 UTC) predates the latest extraction (2026-10-07 06:23 UTC); the status shown comes from the current checks.
+
+<div class="pk-model-meta" hidden drug="atogepant" model-id="Atogepant_Schlachter2026_phase_2_modela" status="extracted" stale="true" population="healthy participants and patients with migraine" measured-compound="atogepant" parameterization="apparent" topology="2C"></div>
+
+## Citation
+Schlachter L, Stodtmann S, Voelkner A, Jonsson F, Lagraauw HM, Boinpally RR. Population Pharmacokinetics of Atogepant for the Prevention of Migraine. Clinical pharmacokinetics 65(1):149–164 (2026).
+  ·  DOI: [10.1007/s40262-025-01566-5](https://doi.org/10.1007/s40262-025-01566-5)
+
+## Population and dosing
+
+**Population:** healthy participants and patients with migraine · condition migraine · age group adult.
+
+**Dosing:** 10, 30, 60, 170, 300 mg, oral, multiple, every 24 h.
+
+## Model
+
+**Structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameterization:** CL/F, Q/F, Q2/F, V1/F, V3/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Parameters:** 8 extracted, plus 2 covariate effects.  
+**Availability:** Model and browser simulation available in **Models** and **Simulation**.
+
+<figure class="pk-models-diagram"><img src="drugs/drug_atogepant/Atogepant_Schlachter2026_phase_2_modela/Atogepant_Schlachter2026_phase_2_modela.svg" alt="Atogepant_Schlachter2026_phase_2_modela diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
+
+## Parameters
+| label | parameter | value | unit |
+|---|---|---|---|
+| Absorption rate constant [ka (/h)] | kabs | 1.31 | 1/h |
+| Apparent clearance patients [CL/F (L/h)] | CL/F | 18.2 | L/h |
+| Apparent central volume of distribution [V1/F (L)] | V1/F | 72.9 | L |
+| Apparent first intercompartmental clearance [Q/F (L/h)] | Q/F | 0.771 | L/h |
+| Apparent first peripheral volume of distribution [V2/F (L)] | V2 | 91.7 | L |
+| Apparent second intercompartmental clearance [Q2/F (L/h)] | Q2/F | 1.99 | L/h |
+| Apparent second peripheral volume of distribution [V3/F (L)] | V3/F | 22.3 | L |
+| Lag time [ALAG (h)] | tlag | 0.298 | h |
+| theta_q87_weight_power | theta_q87_weight_power | 0.163 |  |
+| theta_kabs_weight_power | theta_kabs_weight_power | -0.252 |  |
+
+## Caveats
+
+- Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.
+
+<details class="pk-evidence"><summary>Evidence &amp; review</summary>
+
+**Status and checks:** <span class="pk-badge pk-badge--neutral" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.632). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
-
-**Model:** Model and browser simulation available in **Models** and **Simulation**.
-
-> **Caveat** (`covariates_not_exercised`): Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.
 
 ### Reviewer guidance
 
@@ -27,42 +68,31 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-28 14:36:13.739827+00:00) predates the upstream re-run (2026-10-07 06:23:55.690380+00:00). Current validate status: `extracted`.
+### All parameter columns
 
-## Citation
-Schlachter L et al., Population Pharmacokinetics of Atogepan…, Clinical pharmacokinetics (2026)
-  ·  DOI: [10.1007/s40262-025-01566-5](https://doi.org/10.1007/s40262-025-01566-5)
-
-<div class="pk-model-meta" hidden drug="atogepant" model-id="Atogepant_Schlachter2026_phase_2_modela" status="extracted" stale="true" population="healthy participants and patients with migraine" measured-compound="atogepant" parameterization="apparent" topology="2C"></div>
-
-**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
-**Parameters:** 8 extracted, plus 2 covariate effects.
-
-**Parameterization:** CL/F, Q/F, Q2/F, V1/F, V3/F — apparent, F unknown (apparent — bioavailability not identifiable).
-
-## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| Absorption rate constant [ka (/h)] | `Q49` · kabs | 1.31 | 1/h | 0.0003638888888888889 | 1/h | not captured | boundary_llm_dim_refused (0.8) | Tab2:row2:col2 | — | not captured |
-| Apparent clearance patients [CL/F (L/h)] | `Q27` · CL/F | 18.2 | L/h | 5.0555555555555555e-06 | L/h | not captured | llm_confirmed (0.6) | Tab2:row3:col2 | — | not captured |
-| Apparent central volume of distribution [V1/F (L)] | `Q290` · V1/F | 72.9 | L | 0.0729 | L | not captured | llm_confirmed (0.6) | Tab2:row6:col2 | — | not captured |
-| Apparent first intercompartmental clearance [Q/F (L/h)] | `Q69` · Q/F | 0.771 | L/h | 2.1416666666666667e-07 | L/h | not captured | llm_corrected (0.6) | Tab2:row7:col2 | — | not captured |
-| Apparent first peripheral volume of distribution [V2/F (L)] | `Q64` · V2 | 91.7 | L | 0.0917 | L | not captured | boundary_compartment (0.9) | Tab2:row8:col2 | — | not captured |
-| Apparent second intercompartmental clearance [Q2/F (L/h)] | `Q80` · Q2/F | 1.99 | L/h | 5.527777777777778e-07 | L/h | not captured | llm_corrected (0.6) | Tab2:row9:col2 | — | not captured |
-| Apparent second peripheral volume of distribution [V3/F (L)] | `Q78` · V3/F | 22.3 | L | 0.0223 | L | not captured | llm_confirmed (0.6) | Tab2:row10:col2 | — | not captured |
-| Lag time [ALAG (h)] | `Q83` · tlag | 0.298 | h | 1072.8 | h | not captured | llm_confirmed (0.6) | Tab2:row11:col2 | — | not captured |
-| theta_q87_weight_power | `Q900` · theta_q87_weight_power | 0.163 | not captured | not captured | not captured | not captured | not captured (not captured) | Tab2:row22:col2 | — | not captured |
-| theta_kabs_weight_power | `Q900` · theta_kabs_weight_power | -0.252 | not captured | not captured | not captured | not captured | not captured (not captured) | Tab2:row24:col2 | — | not captured |
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
+|---|---|---|---|---|---|---|---|---|
+| Absorption rate constant [ka (/h)] | `Q49` · kabs | 1.31 | 1/h | 0.0003639 | 1/s | 1/h | boundary_llm_dim_refused (0.8) | Tab2:row2:col2 |
+| Apparent clearance patients [CL/F (L/h)] | `Q27` · CL/F | 18.2 | L/h | 5.056e-06 | m3/s | L/h | llm_confirmed (0.6) | Tab2:row3:col2 |
+| Apparent central volume of distribution [V1/F (L)] | `Q290` · V1/F | 72.9 | L | 0.0729 | m3 | L | llm_confirmed (0.6) | Tab2:row6:col2 |
+| Apparent first intercompartmental clearance [Q/F (L/h)] | `Q69` · Q/F | 0.771 | L/h | 2.142e-07 | m3/s | L/h | llm_corrected (0.6) | Tab2:row7:col2 |
+| Apparent first peripheral volume of distribution [V2/F (L)] | `Q64` · V2 | 91.7 | L | 0.0917 | m3 | L | boundary_compartment (0.9) | Tab2:row8:col2 |
+| Apparent second intercompartmental clearance [Q2/F (L/h)] | `Q80` · Q2/F | 1.99 | L/h | 5.528e-07 | m3/s | L/h | llm_corrected (0.6) | Tab2:row9:col2 |
+| Apparent second peripheral volume of distribution [V3/F (L)] | `Q78` · V3/F | 22.3 | L | 0.0223 | m3 | L | llm_confirmed (0.6) | Tab2:row10:col2 |
+| Lag time [ALAG (h)] | `Q83` · tlag | 0.298 | h | 1073 | s | h | llm_confirmed (0.6) | Tab2:row11:col2 |
+| theta_q87_weight_power | `Q900` · theta_q87_weight_power | 0.163 |  |  |  |  |  | Tab2:row22:col2 |
+| theta_kabs_weight_power | `Q900` · theta_kabs_weight_power | -0.252 |  |  |  |  |  | Tab2:row24:col2 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ### Unresolved rows _(no Q-code or no value — not parameters)_
-| label (paper) | Q-code | value | link |
-|---|---|---|---|
-| F | Q40 | not captured | exact |
+
+| label (paper) | Q-code | link |
+|---|---|---|
+| F | Q40 | exact |
 
 ## Departures & gaps
 
@@ -104,34 +134,24 @@ Schlachter L et al., Population Pharmacokinetics of Atogepan…, Clinical pharma
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
 | `gpt-oss-120b` | not confirmed | 0.632 (12/19 fields) | 7 |
-| `gpt-oss:120b` | not confirmed | 0.591 (13/22 fields) | 9 |
 
-<details><summary>16 field discrepancies</summary>
+<details><summary>7 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[blood-plasma ratio]` | not captured | 0.567 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[effect of solution on frel]` | not captured | -0.547 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[f]` | not captured | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta_frel_weight_power]` | not captured | 0.163 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta_q87_weight_power]` | 0.163 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[blood-plasma ratio]` |  | 0.567 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[effect of solution on frel]` |  | -0.547 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_frel_weight_power]` |  | 0.163 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q87_weight_power]` | 0.163 |  | only_one_extracted |
 | `gpt-oss-120b` | `screen.dose_compound` | atogepant | unknown | mismatch |
 | `gpt-oss-120b` | `screen.primary_analyte` | atogepant | unknown | mismatch |
-| `gpt-oss:120b` | `parameters[apparent clearance patients [cl/f (l/h)]].covariate_forms` | ['power'] | [] | mismatch |
-| `gpt-oss:120b` | `parameters[apparent first peripheral volume of distribution [v2/f (l)]].parameter_id` | Q82 | Q64 | mismatch |
-| `gpt-oss:120b` | `parameters[blood-plasma ratio]` | not captured | 0.567 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[effect of solution on frel].covariate_forms` | [] | ['power'] | mismatch |
-| `gpt-oss:120b` | `parameters[exponential_effect_of_dose_on_frel]` | 0.163 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[f]` | not captured | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta_frel_weight_power]` | not captured | 0.163 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | atogepant | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | atogepant | unknown | mismatch |
 
 </details>
 
@@ -143,50 +163,46 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained | ratio | tol | source |
-|---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 9 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row3:col2'] |
-| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row6:col2'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Tab2:row2:col2'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row8:col2'] |
-| C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row7:col2'] |
-| C5_dimension_Q78 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row10:col2'] |
-| C5_dimension_Q80 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row9:col2'] |
-| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Tab2:row11:col2'] |
-| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 18.2 L/h | not captured | not captured | ['Tab2:row3:col2'] |
-| C9_phys_window_Q290 | pass | volume within physiological range | 72.9 L | not captured | not captured | ['Tab2:row6:col2'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 91.7 L | not captured | not captured | ['Tab2:row8:col2'] |
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 9 |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
+| C2_reference | pass |  |  |  |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Tab2:row3:col2'] |
+| C5_dimension_Q290 | pass | [length] ** 3 |  | ['Tab2:row6:col2'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['Tab2:row2:col2'] |
+| C5_dimension_Q64 | pass | [length] ** 3 |  | ['Tab2:row8:col2'] |
+| C5_dimension_Q69 | pass | [length] ** 3 / [time] |  | ['Tab2:row7:col2'] |
+| C5_dimension_Q78 | pass | [length] ** 3 |  | ['Tab2:row10:col2'] |
+| C5_dimension_Q80 | pass | [length] ** 3 / [time] |  | ['Tab2:row9:col2'] |
+| C5_dimension_Q83 | pass | [time] |  | ['Tab2:row11:col2'] |
+| C7_apparent_coherence | pass |  |  |  |
+| C8_topology | pass |  |  |  |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 18.2 L/h | ['Tab2:row3:col2'] |
+| C9_phys_window_Q290 | pass | volume within physiological range | 72.9 L | ['Tab2:row6:col2'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 91.7 L | ['Tab2:row8:col2'] |
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
-| T3_param_coverage | not captured | pass | 7 scholar param(s) emitted or defaulted | 7 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
-| T1_cmax | reference | skipped | 3 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 13 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| check | scenario | status | expected | obtained | note |
+|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
+| T3_param_coverage |  | pass | 7 scholar param(s) emitted or defaulted | 7 covered | all structural parameters accounted for |
+| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | invented_absorption: not acceptable | LLM adjudication → deterministic rule |
+| T1_cmax | reference | skipped | 3 |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 13 |  | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
-## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_atogepant/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Schlachter_2026` / `Schlachter_2026::phase_2_modela`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_atogepant/models/modelica/_needs_review/Atogepant_Schlachter2026_phase_2_modela.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_atogepant/models/modelica/_needs_review/Atogepant_Schlachter2026_phase_2_modela.deviation.json`
-
+</details>
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
@@ -203,7 +219,51 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_atogepant/Atogepant_Schlachter2026_phase_2_modela/Atogepant_Schlachter2026_phase_2_modela.svg" alt="Atogepant_Schlachter2026_phase_2_modela diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div></div>
+
+## Model interface
+
+The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
+
+| direction | role | name | value | unit (SI) |
+|---|---|---|---|---|
+| input | compound | `MM` | 0.6035 | kg/mol |
+| input | dosing | `F` | 1 | 1 |
+| input | dosing | `Tlag` | 1073 | s |
+| input | dosing | `adminCount` | 1 | 1 |
+| input | dosing | `adminDuration` | 600 | s |
+| input | dosing | `adminMass` | 1e-05 | kg |
+| input | model | `Cl` | 5.056e-06 | m3/s |
+| input | model | `VdPerKg` | 0.001041 | m3/kg |
+| input | model | `k12` | 2.938e-06 | 1/s |
+| input | model | `k21` | 2.336e-06 | 1/s |
+| input | model | `ka` | 0.0003639 | 1/s |
+| input | subject | `weight` | 70 | kg |
+| output | concentration | `central.C` |  | kg/m3 |
+
+## Tested with
+
+- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_2C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
+- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
+- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
+
+## How to cite
+
+**Source paper** (the parameters are its): Schlachter L, Stodtmann S, Voelkner A, Jonsson F, Lagraauw HM, Boinpally RR. Population Pharmacokinetics of Atogepant for the Prevention of Migraine. Clinical pharmacokinetics 65(1):149–164 (2026). [doi:10.1007/s40262-025-01566-5](https://doi.org/10.1007/s40262-025-01566-5)
+
+**This record:** Pharmacolibrary v26.09, model `Atogepant_Schlachter2026_phase_2_modela`. <https://pharmacolibrary.github.io/#/drugs/drug_atogepant/Atogepant_Schlachter2026_phase_2_modela>
+
+```bibtex
+@misc{pharmacolibrary_AtogepantSchlachter2026phase2modela,
+  title  = {{Pharmacolibrary model Atogepant_Schlachter2026_phase_2_modela}},
+  author = {{Pharmacolibrary}},
+  version = {v26.09},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_atogepant/Atogepant_Schlachter2026_phase_2_modela},
+  note   = {Parameters from doi:10.1007/s40262-025-01566-5},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -216,4 +276,5 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 06:23 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Batogepant%5D%20Atogepant_Schlachter2026_phase_2_modela&body=Drug%3A%20atogepant%0ARecord%3A%20Atogepant_Schlachter2026_phase_2_modela%0APaper%3A%20Schlachter_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_atogepant/Atogepant_Schlachter2026_phase_2_modela%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Generated by `docs.py` (scholarv2, release v26.09) · extracted 2026-10-07 06:23 UTC</sub>

@@ -11,6 +11,14 @@
   210.0,
   420.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Retout_2020:other_prose",
+    "value_si": 1.0
+   }
+  ]
+ },
  "parameters": {
   "Cl": 7.555555555555557e-08,
   "F": 1.0,

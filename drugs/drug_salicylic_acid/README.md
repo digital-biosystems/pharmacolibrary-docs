@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D01A&quot;,&quot;href&quot;:&quot;atc/D01A.md&quot;},{&quot;label&quot;:&quot;salicylic acid&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SalicylicAcid_Mathurkar2018_reference&quot;,&quot;label&quot;:&quot;Mathurkar_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salicylic_acid/SalicylicAcid_Mathurkar2018_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SalicylicAcid_Mathurkar2018_reference&quot;,&quot;label&quot;:&quot;Mathurkar_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salicylic_acid/SalicylicAcid_Mathurkar2018_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # salicylic acid
 
@@ -24,31 +24,53 @@ Salicylic acid is a keratolytic and antifungal agent used topically for skin con
 | salicylic acid | parent | 138.121 | C7H6O3 | DrugBank | [338](https://pubchem.ncbi.nlm.nih.gov/compound/338) | Koh_2025 |
 | acetylsalicylic acid | metabolite | 180.159 | C9H8O4 | PubChem | [2244](https://pubchem.ncbi.nlm.nih.gov/compound/2244) | Koh_2025 |
 
-## Extraction summary
+## Start here
 
-| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
-|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 13:22 | 17:08 | 1/1/1 | 1/0/0 | 0/0/0 | 280,841/45,026 | ollama / qwen3.8:27b-mtp-q8_0 | 7 | 2/5 | 7/0 | 0 |
+> **Mathurkar_2018_reference** — <span class="pk-badge pk-badge--green">Reproduces paper</span> review reference. [Run it in the simulator](drugs/drug_salicylic_acid/SalicylicAcid_Mathurkar2018_reference.md?tab=Simulation) · [record](drugs/drug_salicylic_acid/SalicylicAcid_Mathurkar2018_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
+## Parameters across studies
+
+| parameter | as named | value | unit | as reported | population | n | species | status | record |
+|---|---|---|---|---|---|---|---|---|---|
+| CL | CL | 2.8 ‡ | L/h | 0.04 L/h/kg | review reference |  | sheep | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Mathurkar_2018_reference](drugs/drug_salicylic_acid/SalicylicAcid_Mathurkar2018_reference.md) |
+| V | V | 84 ‡ | L | 1.2 L/kg | review reference |  | sheep | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Mathurkar_2018_reference](drugs/drug_salicylic_acid/SalicylicAcid_Mathurkar2018_reference.md) |
+| V | V1/F | 7.5 | L | 7.5 L | healthy adults | &gt;=44 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Koh_2025_reference](drugs/drug_salicylic_acid/SalicylicAcid_Koh2025_reference.md) |
+| V | V1/F | 23.51 | L | 23.51 L | healthy adults | &gt;=44 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Koh_2025_reference](drugs/drug_salicylic_acid/SalicylicAcid_Koh2025_reference.md) |
+| ka | kabs | 0.22 | 1/h | 0.22 h−1 | healthy adults | &gt;=44 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Koh_2025_reference](drugs/drug_salicylic_acid/SalicylicAcid_Koh2025_reference.md) |
+
+<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. Rejected records are left out.</sub>
+
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">1</text><line x1="365.0" y1="18" x2="365.0" y2="74" stroke="#ddd"/><text x="365.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Mathurkar_2018 · V ·/kg</text><circle cx="526.7" cy="30.0" r="4" fill="#2e7d32"><title>Mathurkar_2018 · V ·/kg: 84 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Koh_2025 · V1/F</text><circle cx="343.1" cy="46.0" r="4" fill="#ef6c00"><title>Koh_2025 · V1/F: 7.5 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Koh_2025 · V1/F</text><circle cx="430.0" cy="62.0" r="4" fill="#ef6c00"><title>Koh_2025 · V1/F: 23.51 L</title></circle></svg></div>
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.833), gpt-oss:120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span> | [Mathurkar_2018_reference](drugs/drug_salicylic_acid/SalicylicAcid_Mathurkar2018_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Mathurkar S et al., Pharmacokinetics of Salicylic Acid Foll…, Animals : an open access jo… (2018) | [10.3390/ani8070122](https://doi.org/10.3390/ani8070122) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333), gpt-oss:120b (not confirmed, agreement 0.103). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q304 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Koh_2025_reference](drugs/drug_salicylic_acid/SalicylicAcid_Koh2025_reference.md) | — | parent + metabolite (no model) | 13 | Koh J et al., Population Pharmacokinetic and Pharmaco…, Drug design, development an… (2025) | [10.2147/DDDT.S533428](https://doi.org/10.2147/DDDT.S533428) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.4), gpt-oss:120b (primary re-run, agreement 0.333). Primary extraction retained.">cross-check: partial 0/2</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Shintaku_2007_reference](drugs/drug_salicylic_acid/SalicylicAcid_Shintaku2007_reference.md) | — | 1-compartment (no model) | 0 | Shintaku K et al., Kinetic analysis of the transport of sa…, Drug metabolism and disposi… (2007) | [10.1124/dmd.106.013029](https://doi.org/10.1124/dmd.106.013029) |
+| <span class="pk-rf" hidden data-species="sheep" data-age="unknown" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span> | [Mathurkar_2018_reference](drugs/drug_salicylic_acid/SalicylicAcid_Mathurkar2018_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Mathurkar S et al., Pharmacokinetics of Salicylic Acid Foll…, Animals : an open access jo… (2018) | [10.3390/ani8070122](https://doi.org/10.3390/ani8070122) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q304 — no SI value to build from</sub> | [Koh_2025_reference](drugs/drug_salicylic_acid/SalicylicAcid_Koh2025_reference.md) | — | parent + metabolite (no model) | 13 | Koh J et al., Population Pharmacokinetic and Pharmaco…, Drug design, development an… (2025) | [10.2147/DDDT.S533428](https://doi.org/10.2147/DDDT.S533428) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Shintaku_2007_reference](drugs/drug_salicylic_acid/SalicylicAcid_Shintaku2007_reference.md) | — | 1-compartment (no model) | 0 | Shintaku K et al., Kinetic analysis of the transport of sa…, Drug metabolism and disposi… (2007) | [10.1124/dmd.106.013029](https://doi.org/10.1124/dmd.106.013029) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Koh_2025_TXB2](drugs/drug_salicylic_acid/pd_Koh_2025_TXB2.md) | thromboxane B2 ← acetylsalicylic acid · indirect response — drug inhibits the production of thromboxane B2 | model (no simulator) | Koh J et al., Population Pharmacokinetic and Pharmaco…, Drug design, development an… (2025) | [10.2147/DDDT.S533428](https://doi.org/10.2147/DDDT.S533428) |
+| <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Koh_2025_TXB2](drugs/drug_salicylic_acid/pd_Koh_2025_TXB2.md) | thromboxane B2 ← acetylsalicylic acid · indirect response — drug inhibits the production of thromboxane B2 | model (no simulator) | Koh J et al., Population Pharmacokinetic and Pharmaco…, Drug design, development an… (2025) | [10.2147/DDDT.S533428](https://doi.org/10.2147/DDDT.S533428) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 13:22 | 17:08 | 1/1/1 | 1/0/0 | 0/0/0 | 280,841/45,026 | ollama / qwen3.8:27b-mtp-q8_0 | 7 | 2/5 | 7/0 | 0 |
 
 ## Coverage
 
@@ -89,5 +111,9 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | popPK | Zhang_2022 | irrelevant | 0 | 0 | The paper is a systematic review of methotrexate pharmacokinetics, where salicylic acid is only mentioned as a co-medication covariate, not as the subject drug. |
 | popPK | Zhu_2018 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on the synthesis and fungicidal activity of phenazine-salicylic acid conjugates, containing no pharmacokinetic data for salicylic acid. |
 
+
+</details>
+
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 13:08 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
+<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 13:08 UTC</sub>

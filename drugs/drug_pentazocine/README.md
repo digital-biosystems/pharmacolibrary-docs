@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;pentazocine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pentazocine_Omori2022_reference&quot;,&quot;label&quot;:&quot;Omori_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pentazocine/Pentazocine_Omori2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pentazocine_Omori2022_reference&quot;,&quot;label&quot;:&quot;Omori_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pentazocine/Pentazocine_Omori2022_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # pentazocine
 
@@ -23,43 +23,64 @@ Pentazocine is an opioid painkiller used to treat moderate to severe pain. It is
 |---|---|---|---|---|---|---|
 | pentazocine | parent | 285.431 | C19H27NO | DrugBank | [441278](https://pubchem.ncbi.nlm.nih.gov/compound/441278) | Peterson_1979 |
 
-## Extraction summary
+## Start here
 
-| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
-|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 06:16 | 1:36 | 1/0/1 | 1/0/0 | 0/0/1 | 171,578/8,632 | einfracz / qwen3.8-27b | 6 | 8/10 | 6/0 | 0 |
+> **Omori_2022_reference** — <span class="pk-badge pk-badge--green">Reproduces paper</span> review reference. [Run it in the simulator](drugs/drug_pentazocine/Pentazocine_Omori2022_reference.md?tab=Simulation) · [record](drugs/drug_pentazocine/Pentazocine_Omori2022_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
+## Parameters across studies
+
+| parameter | as named | value | unit | as reported | population | species | status | record |
+|---|---|---|---|---|---|---|---|---|
+| CL | CL | 3.2 | L/h | 3.2 liters/hr | beagle hounds | dog | <span class="pk-badge pk-badge--orange">Needs review</span> | [Peterson_1979_reference](drugs/drug_pentazocine/Pentazocine_Peterson1979_reference.md) |
+| CL | CL | 83.3 ‡ | L/h | 1.19 L/h/kg | review reference | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Omori_2022_reference](drugs/drug_pentazocine/Pentazocine_Omori2022_reference.md) |
+| V | V1 | 72.8 ‡ | L | 1.04 L/kg | review reference | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Omori_2022_reference](drugs/drug_pentazocine/Pentazocine_Omori2022_reference.md) |
+| t½ | t1/2z | 1.667 | h | 100 min | beagle hounds | dog | <span class="pk-badge pk-badge--orange">Needs review</span> | [Peterson_1979_reference](drugs/drug_pentazocine/Pentazocine_Peterson1979_reference.md) |
+
+<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. Rejected records are left out.</sub>
+
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="365.0" y1="18" x2="365.0" y2="58" stroke="#ddd"/><text x="365.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Peterson_1979 · CL</text><circle cx="278.4" cy="30.0" r="4" fill="#ef6c00"><title>Peterson_1979 · CL: 3.2 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Omori_2022 · CL ·/kg</text><circle cx="526.1" cy="46.0" r="4" fill="#2e7d32"><title>Omori_2022 · CL ·/kg: 83.3 L/h</title></circle></svg></div>
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.308). Primary extraction retained.">cross-check: disputed</span> | [Omori_2022_reference](drugs/drug_pentazocine/Pentazocine_Omori2022_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Omori T et al., Pharmacokinetic/Pharmacodynamic Modelin…, Biological & pharmaceutical… (2022) | [10.1248/bpb.b22-00398](https://doi.org/10.1248/bpb.b22-00398) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Peterson_1979_reference](drugs/drug_pentazocine/Pentazocine_Peterson1979_reference.md) | — | 1-compartment (no model) | 2 | Peterson JE et al., Plasma pentazocine radioimmunoassay, Journal of pharmaceutical s… (1979) | [10.1002/jps.2600680530](https://doi.org/10.1002/jps.2600680530) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [Omori_2022_reference](drugs/drug_pentazocine/Pentazocine_Omori2022_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Omori T et al., Pharmacokinetic/Pharmacodynamic Modelin…, Biological & pharmaceutical… (2022) | [10.1248/bpb.b22-00398](https://doi.org/10.1248/bpb.b22-00398) |
+| <span class="pk-rf" hidden data-species="dog" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Peterson_1979_reference](drugs/drug_pentazocine/Pentazocine_Peterson1979_reference.md) | — | 1-compartment (no model) | 2 | Peterson JE et al., Plasma pentazocine radioimmunoassay, Journal of pharmaceutical s… (1979) | [10.1002/jps.2600680530](https://doi.org/10.1002/jps.2600680530) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">accepted (caveats)</span> | [Omori_2022_NRS](drugs/drug_pentazocine/pd_Omori_2022_NRS.md) | Pain severity ← Pentazocine · indirect response — drug inhibits the loss of Pain severity | model (no simulator) | Omori T et al., Pharmacokinetic/Pharmacodynamic Modelin…, Biological & pharmaceutical… (2022) | [10.1248/bpb.b22-00398](https://doi.org/10.1248/bpb.b22-00398) |
+| <span class="pk-badge pk-badge--green">Reproduces with caveats</span> | [Omori_2022_NRS](drugs/drug_pentazocine/pd_Omori_2022_NRS.md) | Pain severity ← Pentazocine · indirect response — drug inhibits the loss of Pain severity | model (no simulator) | Omori T et al., Pharmacokinetic/Pharmacodynamic Modelin…, Biological & pharmaceutical… (2022) | [10.1248/bpb.b22-00398](https://doi.org/10.1248/bpb.b22-00398) |
 
 ## Pharmacogenomics (PGx)
 
 | status | gene | affects | mechanism | detail | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | **OPRM1** | `Q321` · EC50 | target | [Knapman_2014](drugs/drug_pentazocine/pgx_Knapman_2014_OPRM1_Q321.md) | Knapman A et al., Buprenorphine signalling is compromised…, British journal of pharmaco… (2014) | [10.1111/bph.12785](https://doi.org/10.1111/bph.12785) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | **OPRM1** | `Q321` · EC50 | target | [Knapman_2014](drugs/drug_pentazocine/pgx_Knapman_2014_OPRM1_Q321.md) | Knapman A et al., Buprenorphine signalling is compromised…, British journal of pharmaco… (2014) | [10.1111/bph.12785](https://doi.org/10.1111/bph.12785) |
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
 <details class="legend">
 <summary>PGx field definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 06:16 | 1:36 | 1/0/1 | 1/0/0 | 0/0/1 | 171,578/8,632 | einfracz / qwen3.8-27b | 6 | 8/10 | 6/0 | 0 |
 
 ## Coverage
 
@@ -142,5 +163,9 @@ _9 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | popPK | Zhu_1997 | irrelevant | 0 | 0 | This is an in-vitro receptor binding/signaling study measuring agonist potency and efficacy, not a pharmacokinetic study of pentazocine. |
 | popPK | unknown_1991 | irrelevant | 0 | 0 | no_text gate: only 109 chars of text extracted (&lt; 400) |
 
+
+</details>
+
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 06:15 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
+<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 06:15 UTC</sub>

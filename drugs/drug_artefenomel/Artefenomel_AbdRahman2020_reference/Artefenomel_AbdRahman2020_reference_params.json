@@ -13,22 +13,22 @@
   "F": 1.0,
   "MM": 0.46962200000000004,
   "Tlag": 0.0,
-  "VdPerKg": 0.0005714285714285715,
+  "VdPerKg": 0.04185714285714286,
   "adminCount": 1.0,
   "adminDuration": 600.0,
   "adminMass": 0.0001,
-  "k12": 0.0002520833333333333,
-  "k21": 3.893178893178893e-05,
+  "k12": 4.47478194918468e-06,
+  "k21": 2.7895981087470452e-06,
   "ka": 0.0002619444444444444,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 7445.290581162325
+  "central.C": 15236.87374749499
  },
  "reference_peaks": {
-  "central.C": 0.00016100224349965389
+  "central.C": 3.111375870736984e-05
  },
- "stop_time": 86400.0,
+ "stop_time": 691200.0,
  "template": "PK_2C_enteral",
  "template_fmu": "PK_2C_enteral.fmu"
 }

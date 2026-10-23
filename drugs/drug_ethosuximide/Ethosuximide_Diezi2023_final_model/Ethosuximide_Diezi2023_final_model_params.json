@@ -12,6 +12,18 @@
  "paper_doses_mg": [
   700.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Diezi_2023:other_prose",
+    "value_si": 93.7
+   },
+   {
+    "source": "Diezi_2023:other_prose",
+    "value_si": 87.6
+   }
+  ]
+ },
  "parameters": {
   "Cl": 1.5805555555555554e-07,
   "F": 0.9,

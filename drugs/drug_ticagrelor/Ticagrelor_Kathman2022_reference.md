@@ -1,19 +1,49 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;ticagrelor&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/&quot;},{&quot;label&quot;:&quot;Kathman_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ticagrelor_Henrich2021_reference&quot;,&quot;label&quot;:&quot;Henrich_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/Ticagrelor_Henrich2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ticagrelor_strand2019_reference&quot;,&quot;label&quot;:&quot;\u00c5strand_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/Ticagrelor_strand2019_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ticagrelor_Li2016_reference&quot;,&quot;label&quot;:&quot;Li_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/Ticagrelor_Li2016_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_strand_2019_PRU&quot;,&quot;label&quot;:&quot;\u00c5strand_2019 \u00b7 PRU&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/pd_strand_2019_PRU.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ticagrelor_Henrich2021_reference&quot;,&quot;label&quot;:&quot;Henrich_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/Ticagrelor_Henrich2021_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ticagrelor_strand2019_reference&quot;,&quot;label&quot;:&quot;\u00c5strand_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/Ticagrelor_strand2019_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ticagrelor_Li2016_reference&quot;,&quot;label&quot;:&quot;Li_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/Ticagrelor_Li2016_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_strand_2019_PRU&quot;,&quot;label&quot;:&quot;\u00c5strand_2019 \u00b7 PRU&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/pd_strand_2019_PRU.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ticagrelor — `Ticagrelor_Kathman2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.195). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+
+> The reviewer's verdict (Rejected, 2026-10-05 09:32 UTC) predates the latest extraction (2026-10-05 16:24 UTC); the status shown comes from the current checks. Rejected: the record is not a compartmental population PK model for ticagrelor/PB2452 — it reports no distribution volume and no clearance or elimination rate — and the association rate constant kon carries the unit 'THETA2', a dimension mismatch on a structural parameter.
+
+<div class="pk-model-meta" hidden drug="ticagrelor" model-id="Ticagrelor_Kathman2022_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="PB2452" parameterization="apparent" topology="parent_metabolite"></div>
+
+## Citation
+Kathman SJ, Wheeler JJ, Bhatt DL, Arnold SE, Lee JS. Population pharmacokinetic-pharmacodynamic modeling of PB2452, a monoclonal antibody fragment being developed as a ticagrelor reversal agent, in healthy volunteers. CPT: pharmacometrics & systems pharmacology 11(1):68–81 (2022).
+  ·  DOI: [10.1002/psp4.12734](https://doi.org/10.1002/psp4.12734)
+
+## Population and dosing
+
+**Population:** healthy volunteers · condition healthy · age group adult · n = 61.
+
+**Dosed compound ≠ measured compound:** dosed ticagrelor, PB2452, measured PB2452.
+
+## Model
+
+**Structure:** parent + metabolite; no model was built for this record.  
+**Parameterization:** CL/F, Q3/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Parameters:** 1 extracted, plus 5 covariate effects.  
+**Availability:** No model was generated from this record.
+
+## Parameters
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
+| label | parameter | value | unit |
+|---|---|---|---|
+| THETA2 | Q2 | 1.05 |  |
+
+<details class="pk-evidence"><summary>Evidence &amp; review</summary>
+
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.195). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
-
-**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -25,53 +55,38 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:32:30.545705+00:00) predates the upstream re-run (2026-10-05 16:24:19.294542+00:00). Current validate status: `rejected`.
+### All parameter columns
 
-> **Dose compound ≠ measured compound:** dosed `ticagrelor, PB2452`, measured `PB2452`.
-
-## Citation
-Kathman SJ et al., Population pharmacokinetic-pharmacodyna…, CPT: pharmacometrics & syst… (2022)
-  ·  DOI: [10.1002/psp4.12734](https://doi.org/10.1002/psp4.12734)
-
-<div class="pk-model-meta" hidden drug="ticagrelor" model-id="Ticagrelor_Kathman2022_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="PB2452" parameterization="apparent" topology="parent_metabolite"></div>
-
-**Model structure:** parent + metabolite; no model was built for this record.  
-**Parameters:** 1 extracted, plus 5 covariate effects.
-
-**Parameterization:** CL/F, Q3/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
-
-## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| THETA2 | `Q99` · Q2 | 1.05 | not captured | not captured | not captured | not captured | llm (0.6) | psp412734-tbl-0003:row7:col1, psp412734-tbl-0003:row7:col2, psp412734-tbl-0003:row7:col3, Kathman_2022_table_2:row4:col1, Kathman_2022_table_2:row4:col2, Kathman_2022_table_2:row4:col3 | — | not captured |
+| label (paper) | Q-code · name | value | unit | link | source |
+|---|---|---|---|---|---|
+| THETA2 | `Q99` · Q2 | 1.05 |  | llm (0.6) | psp412734-tbl-0003:row7:col1, psp412734-tbl-0003:row7:col2, psp412734-tbl-0003:row7:col3, Kathman_2022_table_2:row4:col1, Kathman_2022_table_2:row4:col2, Kathman_2022_table_2:row4:col3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ### Unresolved rows _(no Q-code or no value — not parameters)_
-| label (paper) | Q-code | value | link |
-|---|---|---|---|
-| Kon (nmol−1 × h−1) = EXP(THETA2) | Q329 | not captured | llm_confirmed |
-| Kd (nmol) = EXP(−4) | Q331 | not captured | llm_confirmed |
-| Ktr (h−1) = EXP(THETA4 + THETA13*(LOG(WT)−4.35)) | Q306 | not captured | llm_confirmed |
-| CL/F (L/h) = EXP(2.81) clearance of TICA | Q27 | not captured | llm_corrected |
-| V1/F (L) = EXP(5.04) central volume of TICA | Q290 | not captured | llm_corrected |
-| V2/F (L) = EXP(4.02) peripheral volume of TICA | Q82 | not captured | llm_corrected |
-| Q1/F L (h) = EXP(2.34) intercompartmental clearance of TICA | Q309 | not captured | llm_corrected |
-| CLM (L/h) = EXP(THETA11 + THETA10*(LOG(WT)−4.35)) clearance of TAM | Q22 | not captured | llm_confirmed |
-| VM1 (L) = EXP(1.95) central volume of TAM | Q63 | not captured | llm_confirmed |
-| VM2 (L) = EXP(3.74) peripheral volume of TAM | Q64 | not captured | llm_confirmed |
-| Q_ant (L/h) = EXP(−0.765) intercompartmental clearance of PB2452 | Q30 | not captured | llm_confirmed |
-| Koff2 = Kon*Kd2 | Q900 | not captured | llm_corrected |
-| theta_q321_category | Q900 | not captured | not captured |
-| theta_q320_category | Q900 | not captured | not captured |
-| theta_q321_wt | Q900 | not captured | not captured |
-| theta_q49_category | Q900 | not captured | not captured |
-| theta_q45_category | Q900 | not captured | not captured |
+
+| label (paper) | Q-code | link |
+|---|---|---|
+| Kon (nmol−1 × h−1) = EXP(THETA2) | Q329 | llm_confirmed |
+| Kd (nmol) = EXP(−4) | Q331 | llm_confirmed |
+| Ktr (h−1) = EXP(THETA4 + THETA13*(LOG(WT)−4.35)) | Q306 | llm_confirmed |
+| CL/F (L/h) = EXP(2.81) clearance of TICA | Q27 | llm_corrected |
+| V1/F (L) = EXP(5.04) central volume of TICA | Q290 | llm_corrected |
+| V2/F (L) = EXP(4.02) peripheral volume of TICA | Q82 | llm_corrected |
+| Q1/F L (h) = EXP(2.34) intercompartmental clearance of TICA | Q309 | llm_corrected |
+| CLM (L/h) = EXP(THETA11 + THETA10*(LOG(WT)−4.35)) clearance of TAM | Q22 | llm_confirmed |
+| VM1 (L) = EXP(1.95) central volume of TAM | Q63 | llm_confirmed |
+| VM2 (L) = EXP(3.74) peripheral volume of TAM | Q64 | llm_confirmed |
+| Q_ant (L/h) = EXP(−0.765) intercompartmental clearance of PB2452 | Q30 | llm_confirmed |
+| Koff2 = Kon*Kd2 | Q900 | llm_corrected |
+| theta_q321_category | Q900 |  |
+| theta_q320_category | Q900 |  |
+| theta_q321_wt | Q900 |  |
+| theta_q49_category | Q900 |  |
+| theta_q45_category | Q900 |  |
 
 ## Departures & gaps
 
@@ -164,36 +179,36 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `model.links` | [['ticagrelor', 'tam', 'metabolism']] | [['ticagrelor', 'ticagrelor metabolite', 'metabolism']] | mismatch |
-| `gpt-oss-120b` | `parameters[cl/f (l/h) = exp(2.81) clearance of tica]` | not captured | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cl/f (l/h) = exp(2.81) clearance of tica]` | not captured | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cl_ant (l/h) = exp(0.631) clearance of pb2452]` | not captured | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[clm (l/h) = exp(theta11 + theta10*(log(wt)-4.35)) clearance of tam]` | not captured | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[clm (l/h) = exp(theta11 + theta10*(log(wt)-4.35)) clearance of tam]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f (l/h) = exp(2.81) clearance of tica]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f (l/h) = exp(2.81) clearance of tica]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl_ant (l/h) = exp(0.631) clearance of pb2452]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clm (l/h) = exp(theta11 + theta10*(log(wt)-4.35)) clearance of tam]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clm (l/h) = exp(theta11 + theta10*(log(wt)-4.35)) clearance of tam]` |  |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[koff2 = kon*kd2].parameter_id` | Q900 | Q330 | mismatch |
-| `gpt-oss-120b` | `parameters[q1/f l (h) = exp(2.34) intercompartmental clearance of tica]` | not captured | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[q1/f l (h) = exp(2.34) intercompartmental clearance of tica]` | not captured | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[q2m (l/h) = exp(1.48) intercompartment clearance of tam]` | not captured | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[q_ant (l/h) = exp(-0.765) intercompartmental clearance of pb2452]` | not captured | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[q_ant (l/h) = exp(-0.765) intercompartmental clearance of pb2452]` | not captured | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta2]` | 1.05 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta3]` | not captured | -0.770 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta4]` | not captured | 1.24 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta6]` | not captured | 2.98 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta_q45_category]` | not captured | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta_q45_category]` | not captured | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta_q49_category]` | not captured | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta_q49_category]` | not captured | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v1 (l) = exp]` | not captured | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v1/f (l) = exp(5.04) central volume of tica]` | not captured | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v1/f (l) = exp(5.04) central volume of tica]` | not captured | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v2/f (l) = exp(4.02) peripheral volume of tica]` | not captured | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v2/f (l) = exp(4.02) peripheral volume of tica]` | not captured | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v_ant (l) = exp(1.05) central volume of pb2452]` | not captured | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v_ant_perp (l) = exp(1.28) peripheral volume of pb2452]` | not captured | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[vm1 (l) = exp(1.95) central volume of tam]` | not captured | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[vm1 (l) = exp(1.95) central volume of tam]` | not captured | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[vm2 (l) = exp(3.74) peripheral volume of tam]` | not captured | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[vm2 (l) = exp(3.74) peripheral volume of tam]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q1/f l (h) = exp(2.34) intercompartmental clearance of tica]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q1/f l (h) = exp(2.34) intercompartmental clearance of tica]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q2m (l/h) = exp(1.48) intercompartment clearance of tam]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q_ant (l/h) = exp(-0.765) intercompartmental clearance of pb2452]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q_ant (l/h) = exp(-0.765) intercompartmental clearance of pb2452]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta2]` | 1.05 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta3]` |  | -0.770 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta4]` |  | 1.24 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta6]` |  | 2.98 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q45_category]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q45_category]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q49_category]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q49_category]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v1 (l) = exp]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v1/f (l) = exp(5.04) central volume of tica]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v1/f (l) = exp(5.04) central volume of tica]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v2/f (l) = exp(4.02) peripheral volume of tica]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v2/f (l) = exp(4.02) peripheral volume of tica]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v_ant (l) = exp(1.05) central volume of pb2452]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v_ant_perp (l) = exp(1.28) peripheral volume of pb2452]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vm1 (l) = exp(1.95) central volume of tam]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vm1 (l) = exp(1.95) central volume of tam]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vm2 (l) = exp(3.74) peripheral volume of tam]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vm2 (l) = exp(3.74) peripheral volume of tam]` |  |  | only_one_extracted |
 | `gpt-oss-120b` | `screen.dose_compound` | ticagrelor, PB2452 | unknown | mismatch |
 | `gpt-oss-120b` | `screen.primary_analyte` | PB2452 | unknown | mismatch |
 
@@ -207,33 +222,31 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained | ratio | tol | source |
-|---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
-| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | fail | [luminosity] / [length] ** 2 | Units | not captured | not captured | ['psp412734-tbl-0003:row36:col1', 'psp412734-tbl-0003:row36:col2', 'psp412734-tbl-0003:row36:col3'] |
-| C5_dimension_Q27 | fail | [luminosity] / [length] ** 2 | Units | not captured | not captured | ['psp412734-tbl-0003:row28:col1', 'psp412734-tbl-0003:row28:col2', 'psp412734-tbl-0003:row28:col3'] |
-| C5_dimension_Q290 | fail | [luminosity] / [length] ** 2 | Units | not captured | not captured | ['psp412734-tbl-0003:row30:col1', 'psp412734-tbl-0003:row30:col2', 'psp412734-tbl-0003:row30:col3'] |
-| C5_dimension_Q30 | fail | [luminosity] / [length] ** 2 | Units | not captured | not captured | ['psp412734-tbl-0003:row47:col1', 'psp412734-tbl-0003:row47:col2', 'psp412734-tbl-0003:row47:col3'] |
-| C5_dimension_Q306 | fail | [luminosity] / [length] ** 2 | Units | not captured | not captured | ['psp412734-tbl-0003:row12:col1', 'psp412734-tbl-0003:row12:col2', 'psp412734-tbl-0003:row12:col3'] |
-| C5_dimension_Q309 | fail | [luminosity] / [length] ** 2 | Units | not captured | not captured | ['psp412734-tbl-0003:row34:col1', 'psp412734-tbl-0003:row34:col2', 'psp412734-tbl-0003:row34:col3'] |
-| C5_dimension_Q331 | fail | [luminosity] / [length] ** 2 | Units | not captured | not captured | ['psp412734-tbl-0003:row8:col1', 'psp412734-tbl-0003:row8:col2', 'psp412734-tbl-0003:row8:col3'] |
-| C5_dimension_Q63 | fail | [luminosity] / [length] ** 2 | Units | not captured | not captured | ['psp412734-tbl-0003:row39:col1', 'psp412734-tbl-0003:row39:col2', 'psp412734-tbl-0003:row39:col3'] |
-| C5_dimension_Q64 | fail | [luminosity] / [length] ** 2 | Units | not captured | not captured | ['psp412734-tbl-0003:row41:col1', 'psp412734-tbl-0003:row41:col2', 'psp412734-tbl-0003:row41:col3'] |
-| C5_dimension_Q82 | fail | [luminosity] / [length] ** 2 | Units | not captured | not captured | ['psp412734-tbl-0003:row32:col1', 'psp412734-tbl-0003:row32:col2', 'psp412734-tbl-0003:row32:col3'] |
-| C5_unit_missing_Q99 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp412734-tbl-0003:row7:col1', 'psp412734-tbl-0003:row7:col2', 'psp412734-tbl-0003:row7:col3', 'Kathman_2022_table_2:row4:col1', 'Kathman_2022_table_2:row4:col2', 'Kathman_2022_table_2:row4:col3'] |
-| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 1 |  |
+| C0b_disposition_core | fail |  |  |  |
+| C5_dimension_Q22 | fail | [luminosity] / [length] ** 2 | Units | ['psp412734-tbl-0003:row36:col1', 'psp412734-tbl-0003:row36:col2', 'psp412734-tbl-0003:row36:col3'] |
+| C5_dimension_Q27 | fail | [luminosity] / [length] ** 2 | Units | ['psp412734-tbl-0003:row28:col1', 'psp412734-tbl-0003:row28:col2', 'psp412734-tbl-0003:row28:col3'] |
+| C5_dimension_Q290 | fail | [luminosity] / [length] ** 2 | Units | ['psp412734-tbl-0003:row30:col1', 'psp412734-tbl-0003:row30:col2', 'psp412734-tbl-0003:row30:col3'] |
+| C5_dimension_Q30 | fail | [luminosity] / [length] ** 2 | Units | ['psp412734-tbl-0003:row47:col1', 'psp412734-tbl-0003:row47:col2', 'psp412734-tbl-0003:row47:col3'] |
+| C5_dimension_Q306 | fail | [luminosity] / [length] ** 2 | Units | ['psp412734-tbl-0003:row12:col1', 'psp412734-tbl-0003:row12:col2', 'psp412734-tbl-0003:row12:col3'] |
+| C5_dimension_Q309 | fail | [luminosity] / [length] ** 2 | Units | ['psp412734-tbl-0003:row34:col1', 'psp412734-tbl-0003:row34:col2', 'psp412734-tbl-0003:row34:col3'] |
+| C5_dimension_Q331 | fail | [luminosity] / [length] ** 2 | Units | ['psp412734-tbl-0003:row8:col1', 'psp412734-tbl-0003:row8:col2', 'psp412734-tbl-0003:row8:col3'] |
+| C5_dimension_Q63 | fail | [luminosity] / [length] ** 2 | Units | ['psp412734-tbl-0003:row39:col1', 'psp412734-tbl-0003:row39:col2', 'psp412734-tbl-0003:row39:col3'] |
+| C5_dimension_Q64 | fail | [luminosity] / [length] ** 2 | Units | ['psp412734-tbl-0003:row41:col1', 'psp412734-tbl-0003:row41:col2', 'psp412734-tbl-0003:row41:col3'] |
+| C5_dimension_Q82 | fail | [luminosity] / [length] ** 2 | Units | ['psp412734-tbl-0003:row32:col1', 'psp412734-tbl-0003:row32:col2', 'psp412734-tbl-0003:row32:col3'] |
+| C5_unit_missing_Q99 | fail | [length] ** 3 / [time] |  | ['psp412734-tbl-0003:row7:col1', 'psp412734-tbl-0003:row7:col2', 'psp412734-tbl-0003:row7:col3', 'Kathman_2022_table_2:row4:col1', 'Kathman_2022_table_2:row4:col2', 'Kathman_2022_table_2:row4:col3'] |
+| C7_apparent_coherence | pass |  |  |  |
+| C8_topology | pass |  |  |  |
 
 <details class="legend">
 <summary>Validation definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
-## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ticagrelor/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kathman_2022` / `Kathman_2022::reference`)
-
+</details>
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
@@ -248,4 +261,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 16:24 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bticagrelor%5D%20Ticagrelor_Kathman2022_reference&body=Drug%3A%20ticagrelor%0ARecord%3A%20Ticagrelor_Kathman2022_reference%0APaper%3A%20Kathman_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ticagrelor/Ticagrelor_Kathman2022_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Generated by `docs.py` (scholarv2, release v26.09) · extracted 2026-10-05 16:24 UTC</sub>

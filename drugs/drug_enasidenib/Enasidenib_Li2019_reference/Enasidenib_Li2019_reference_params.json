@@ -20,6 +20,14 @@
   450.0,
   650.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Li_2019:other_prose",
+    "value_si": 0.011
+   }
+  ]
+ },
  "parameters": {
   "Cl": 1.0891203703703704e-07,
   "F": 1.0,

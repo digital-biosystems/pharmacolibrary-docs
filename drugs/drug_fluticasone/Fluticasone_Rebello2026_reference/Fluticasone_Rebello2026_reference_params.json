@@ -12,6 +12,34 @@
  "paper_doses_mg": [
   1.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Rebello_2026:other_prose",
+    "value_si": 1.4028e-07
+   },
+   {
+    "source": "Rebello_2026:other_prose",
+    "value_si": 1.5569e-07
+   },
+   {
+    "source": "Rebello_2026:other_prose",
+    "value_si": 1.3134e-07
+   },
+   {
+    "source": "Rebello_2026:other_prose",
+    "value_si": 1.4678000000000002e-07
+   },
+   {
+    "source": "Rebello_2026:other_prose",
+    "value_si": 9.300000000000001e-10
+   },
+   {
+    "source": "Rebello_2026:other_prose",
+    "value_si": 9.4e-10
+   }
+  ]
+ },
  "parameters": {
   "Cl": 7.5e-06,
   "F": 1.0,

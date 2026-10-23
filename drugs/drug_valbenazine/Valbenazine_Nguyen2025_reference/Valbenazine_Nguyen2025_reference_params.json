@@ -12,6 +12,14 @@
   60.0,
   80.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Nguyen_2025:results_prose",
+    "value_si": 1.83
+   }
+  ]
+ },
  "parameters": {
   "Cl": 8.611111111111112e-06,
   "F": 1.0,

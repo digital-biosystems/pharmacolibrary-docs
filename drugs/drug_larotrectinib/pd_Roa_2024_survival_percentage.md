@@ -1,13 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;larotrectinib&quot;,&quot;href&quot;:&quot;drugs/drug_larotrectinib/&quot;},{&quot;label&quot;:&quot;Roa_2024 \u00b7 PD survival percentage&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# survival percentage — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.99).">human + animal</span>
+# survival percentage — PD  <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.99).">human + animal</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
@@ -34,33 +34,33 @@ Roa P et al., Zurletrectinib is a next-generation TRK…, British journal of can
   ·  DOI: [10.1038/s41416-024-02760-1](https://doi.org/10.1038/s41416-024-02760-1)
 
 ## Parameters
-| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|---|
-| PD (effect) | IC50 (IRC-I-XL) | `Q322` · not captured | 13.4 | nM | not captured | llm (not captured) | Roa_2024:pdv3 |
-| PD (effect) | IC50 (Kor1) | `Q322` · not captured | 24.8 | nM | not captured | llm (not captured) | Roa_2024:pdv3 |
-| PD (effect) | IC50 (Ba/F3 LMNA-NTRK1) | `Q322` · not captured | 21.8 | nM | not captured | llm (not captured) | Roa_2024:pdv3 |
-| PD (effect) | IC50 (Ba/F3 ETV6-NTRK2) | `Q322` · not captured | 53.6 | nM | not captured | llm (not captured) | Roa_2024:pdv3 |
-| PD (effect) | IC50 (Ba/F3 ETV6-NTRK3) | `Q322` · not captured | 14.2 | nM | not captured | llm (not captured) | Roa_2024:pdv3 |
-| PD (effect) | IC50 (Ba/F3 LMNA-NTRK1-F589L) | `Q322` · not captured | 614 | nM | not captured | llm (not captured) | Roa_2024:pdv3 |
-| PD (effect) | IC50 (Ba/F3 ETV6-NTRK2-F633L) | `Q322` · not captured | 3113 | nM | not captured | llm (not captured) | Roa_2024:pdv3 |
-| PD (effect) | IC50 (Ba/F3 ETV6-NTRK3-F617L) | `Q322` · not captured | 893 | nM | not captured | llm (not captured) | Roa_2024:pdv3 |
-| PD (effect) | IC50 (Ba/F3 LMNA-NTRK1-G595R) | `Q322` · not captured | 3204 | nM | not captured | llm (not captured) | Roa_2024:pdv3 |
-| PD (effect) | IC50 (Ba/F3 ETV6-NTRK2-G639R) | `Q322` · not captured | 3809 | nM | not captured | llm (not captured) | Roa_2024:pdv3 |
-| PD (effect) | IC50 (Ba/F3 EVT6-NTRK3-G623R) | `Q322` · not captured | 962 | nM | not captured | llm (not captured) | Roa_2024:pdv3 |
-| PD (effect) | IC50 (Ba/F3 ETV6-NTRK3-G623E) | `Q322` · not captured | 61.3 | nM | not captured | llm (not captured) | Roa_2024:pdv3 |
-| PD (effect) | IC50 (Ba/F3 LMNA-NTRK1-G667A) | `Q322` · not captured | 118 | nM | not captured | llm (not captured) | Roa_2024:pdv3 |
-| PD (effect) | IC50 (Ba/F3 LMNA-NTRK1-G667C) | `Q322` · not captured | 1368 | nM | not captured | llm (not captured) | Roa_2024:pdv3 |
-| PD (effect) | IC50 (Ba/F3 LMNA-NTRK1-G667S) | `Q322` · not captured | 3195 | nM | not captured | llm (not captured) | Roa_2024:pdv3 |
-| PD (effect) | IC50 (Ba/F3 ETV6-NTRK2-G709C) | `Q322` · not captured | 2788 | nM | not captured | llm (not captured) | Roa_2024:pdv3 |
-| PD (effect) | IC50 (Ba/F3 ETV6-NTRK3-G696A) | `Q322` · not captured | 45.7 | nM | not captured | llm (not captured) | Roa_2024:pdv3 |
-| PD (effect) | IC50 (Ba/F3 ETV6-NTRK3-G696C) | `Q322` · not captured | 780 | nM | not captured | llm (not captured) | Roa_2024:pdv3 |
-| PD (effect) | IC50 (Ba/F3-LMNA-NTRK1-V573M) | `Q322` · not captured | 45.4 | nM | not captured | llm (not captured) | Roa_2024:pdv3 |
-| PD (effect) | IC50 (Ba/F3 LMNA-NTRK1-A608D) | `Q322` · not captured | 19.7 | nM | not captured | llm (not captured) | Roa_2024:pdv3 |
-| PD (effect) | IC50 (Ba/F3 ETV6-NTRK2-V689M) | `Q322` · not captured | 13.9 | nM | not captured | llm (not captured) | Roa_2024:pdv3 |
+| role | label (paper) | Q-code · name | value | unit | link | source |
+|---|---|---|---|---|---|---|
+| PD (effect) | IC50 (IRC-I-XL) | `Q322` ·  | 13.4 | nM | llm | Roa_2024:pdv3 |
+| PD (effect) | IC50 (Kor1) | `Q322` ·  | 24.8 | nM | llm | Roa_2024:pdv3 |
+| PD (effect) | IC50 (Ba/F3 LMNA-NTRK1) | `Q322` ·  | 21.8 | nM | llm | Roa_2024:pdv3 |
+| PD (effect) | IC50 (Ba/F3 ETV6-NTRK2) | `Q322` ·  | 53.6 | nM | llm | Roa_2024:pdv3 |
+| PD (effect) | IC50 (Ba/F3 ETV6-NTRK3) | `Q322` ·  | 14.2 | nM | llm | Roa_2024:pdv3 |
+| PD (effect) | IC50 (Ba/F3 LMNA-NTRK1-F589L) | `Q322` ·  | 614 | nM | llm | Roa_2024:pdv3 |
+| PD (effect) | IC50 (Ba/F3 ETV6-NTRK2-F633L) | `Q322` ·  | 3113 | nM | llm | Roa_2024:pdv3 |
+| PD (effect) | IC50 (Ba/F3 ETV6-NTRK3-F617L) | `Q322` ·  | 893 | nM | llm | Roa_2024:pdv3 |
+| PD (effect) | IC50 (Ba/F3 LMNA-NTRK1-G595R) | `Q322` ·  | 3204 | nM | llm | Roa_2024:pdv3 |
+| PD (effect) | IC50 (Ba/F3 ETV6-NTRK2-G639R) | `Q322` ·  | 3809 | nM | llm | Roa_2024:pdv3 |
+| PD (effect) | IC50 (Ba/F3 EVT6-NTRK3-G623R) | `Q322` ·  | 962 | nM | llm | Roa_2024:pdv3 |
+| PD (effect) | IC50 (Ba/F3 ETV6-NTRK3-G623E) | `Q322` ·  | 61.3 | nM | llm | Roa_2024:pdv3 |
+| PD (effect) | IC50 (Ba/F3 LMNA-NTRK1-G667A) | `Q322` ·  | 118 | nM | llm | Roa_2024:pdv3 |
+| PD (effect) | IC50 (Ba/F3 LMNA-NTRK1-G667C) | `Q322` ·  | 1368 | nM | llm | Roa_2024:pdv3 |
+| PD (effect) | IC50 (Ba/F3 LMNA-NTRK1-G667S) | `Q322` ·  | 3195 | nM | llm | Roa_2024:pdv3 |
+| PD (effect) | IC50 (Ba/F3 ETV6-NTRK2-G709C) | `Q322` ·  | 2788 | nM | llm | Roa_2024:pdv3 |
+| PD (effect) | IC50 (Ba/F3 ETV6-NTRK3-G696A) | `Q322` ·  | 45.7 | nM | llm | Roa_2024:pdv3 |
+| PD (effect) | IC50 (Ba/F3 ETV6-NTRK3-G696C) | `Q322` ·  | 780 | nM | llm | Roa_2024:pdv3 |
+| PD (effect) | IC50 (Ba/F3-LMNA-NTRK1-V573M) | `Q322` ·  | 45.4 | nM | llm | Roa_2024:pdv3 |
+| PD (effect) | IC50 (Ba/F3 LMNA-NTRK1-A608D) | `Q322` ·  | 19.7 | nM | llm | Roa_2024:pdv3 |
+| PD (effect) | IC50 (Ba/F3 ETV6-NTRK2-V689M) | `Q322` ·  | 13.9 | nM | llm | Roa_2024:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 
@@ -75,11 +75,11 @@ Primary extraction: `openai:gpt-6-luna`; retained regardless of cross-check verd
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `einfracz:qwen3.8-27b` | `driver_compound` | larotrectinib | not captured | mismatch |
-| `einfracz:qwen3.8-27b` | `effect_direction` | inhibition | not captured | mismatch |
-| `einfracz:qwen3.8-27b` | `effect_form` | unknown | not captured | mismatch |
-| `einfracz:qwen3.8-27b` | `model_family` | unknown | not captured | mismatch |
-| `einfracz:qwen3.8-27b` | `parameters[Q322]` | 13.9 | not captured | only_one_extracted |
+| `einfracz:qwen3.8-27b` | `driver_compound` | larotrectinib |  | mismatch |
+| `einfracz:qwen3.8-27b` | `effect_direction` | inhibition |  | mismatch |
+| `einfracz:qwen3.8-27b` | `effect_form` | unknown |  | mismatch |
+| `einfracz:qwen3.8-27b` | `model_family` | unknown |  | mismatch |
+| `einfracz:qwen3.8-27b` | `parameters[Q322]` | 13.9 |  | only_one_extracted |
 
 </details>
 

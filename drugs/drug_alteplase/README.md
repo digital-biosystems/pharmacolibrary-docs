@@ -13,12 +13,6 @@ Alteplase is a clot-dissolving enzyme used to treat blood clots in conditions su
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q45769835](https://www.wikidata.org/wiki/Q45769835) and the WHO ATC classification; not checked by a person.</small>
 
-## Extraction summary
-
-| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
-|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-05 13:36 | 5:11 | 0/0/0 | 1/0/0 | 0/0/0 | 171,370/4,707 | ollama / qwen3.8:27b-mtp-q8_0 | 34 | 13/26 | 14/20 | 0 |
-
 ## popPK records
 
 _not available_
@@ -27,13 +21,21 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span> | [Martin_1992_thrombolysis](drugs/drug_alteplase/pd_Martin_1992_thrombolysis.md) | thrombolysis ← alteplase · direct linear effect | — | Martin U et al., Pharmacokinetic and thrombolytic proper…, Naunyn-Schmiedeberg's archi… (1992) | [10.1007/BF00167579](https://doi.org/10.1007/BF00167579) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span> | [Martin_1992_thrombolysis](drugs/drug_alteplase/pd_Martin_1992_thrombolysis.md) | thrombolysis ← alteplase · direct linear effect | — | Martin U et al., Pharmacokinetic and thrombolytic proper…, Naunyn-Schmiedeberg's archi… (1992) | [10.1007/BF00167579](https://doi.org/10.1007/BF00167579) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-05 13:36 | 5:11 | 0/0/0 | 1/0/0 | 0/0/0 | 171,370/4,707 | ollama / qwen3.8:27b-mtp-q8_0 | 34 | 13/26 | 14/20 | 0 |
 
 ## Coverage
 
@@ -73,7 +75,7 @@ _3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | PD | Dhar_2022 | not_relevant | 0 | 0 | The paper is a clinical efficacy and safety comparison of two thrombolytic agents using clinical endpoints (mRS, NIHSS) and does not report any pharmacokinetic data, concentration-effect relationships, or numeric pharmacodynamic parameters (e.g., Emax, EC50). |
 | popPK | Diprose_2025 | irrelevant | 0 | 0 | The study is a clinical trial evaluating reperfusion outcomes in stroke patients, not a pharmacokinetic study, and contains no PK parameters for alteplase. |
 | PGx | Dunn_2001 | not_relevant | 0 | 0 | The paper compares the pharmacokinetics and efficacy of tenecteplase versus alteplase but does not report any pharmacogenomic effects (gene variants) on these parameters. |
-| PD | Eppler_1998 | not_relevant | 0 | 0 | not captured |
+| PD | Eppler_1998 | not_relevant | 0 | 0 |  |
 | popPK | Erameh_2020 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of ribavirin, not alteplase. |
 | PD | Erameh_2020 | not_relevant | 0 | 0 | The paper is a study protocol for ribavirin in Lassa fever, not alteplase, and reports no numeric PD parameters. |
 | PGx | Gorchakova_2004 | not_relevant | 0 | 0 | The study investigates the effect of the Pl A polymorphism on myocardial salvage (clinical outcome) after reperfusion therapy, not on the pharmacokinetic or pharmacodynamic parameters of alteplase itself. |
@@ -187,5 +189,9 @@ _3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | popPK | unknown_2024 | irrelevant | 0 | 0 | no_text gate: only 52 chars of text extracted (&lt; 400) |
 | PD | unknown_2024 | not_relevant | 0 | 0 | The provided text is a placeholder for a PDF file and contains no scientific content, data, or PD parameters. |
 
+
+</details>
+
 ---
-<sub>Generated by `docs.py` (scholarv2)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
+<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>

@@ -8,6 +8,46 @@
  "observables": [
   "central.C"
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Abbasi_2023:results_prose",
+    "value_si": 5.0
+   },
+   {
+    "source": "Abbasi_2023:results_prose",
+    "value_si": 8.0
+   },
+   {
+    "source": "Abbasi_2023:results_prose",
+    "value_si": 10.0
+   },
+   {
+    "source": "Abbasi_2023:discussion_prose",
+    "value_si": 8.0
+   },
+   {
+    "source": "Abbasi_2023:discussion_prose",
+    "value_si": 10.0
+   },
+   {
+    "source": "Abbasi_2023:discussion_prose",
+    "value_si": 76.2
+   },
+   {
+    "source": "Abbasi_2023:discussion_prose",
+    "value_si": 66.9
+   },
+   {
+    "source": "Abbasi_2023:discussion_prose",
+    "value_si": 0.016
+   },
+   {
+    "source": "Abbasi_2023:discussion_prose",
+    "value_si": 0.03
+   }
+  ]
+ },
  "parameters": {
   "Cl": 1.3055555555555556e-06,
   "F": 1.0,

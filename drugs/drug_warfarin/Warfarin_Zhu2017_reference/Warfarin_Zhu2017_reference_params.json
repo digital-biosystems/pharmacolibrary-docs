@@ -2,11 +2,11 @@
  "dose_source": "WHO ATC DDD 7.5 mg oral (B01AA03)",
  "model_id": "Warfarin_Zhu2017_reference",
  "molar_masses": {
-  "C_central": 0.3083
+  "central.C": 0.3083
  },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "C_central"
+  "central.C"
  ],
  "parameters": {
   "Cl": 1.6277777777777775e-07,
@@ -21,10 +21,10 @@
   "weight": 70.0
  },
  "reference_peak_times": {
-  "C_central": 46056.91382765531
+  "central.C": 46056.91382765531
  },
  "reference_peaks": {
-  "C_central": 0.00022088816902301938
+  "central.C": 0.0002208881690230198
  },
  "stop_time": 604800.0,
  "template": "PK_1C_enteral",

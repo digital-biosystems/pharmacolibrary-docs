@@ -14,6 +14,26 @@
   480.0,
   960.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Fromage_2025:other_prose",
+    "value_si": 0.0149
+   },
+   {
+    "source": "Fromage_2025:other_prose",
+    "value_si": 0.039200000000000006
+   },
+   {
+    "source": "Fromage_2025:discussion_prose",
+    "value_si": 0.025
+   },
+   {
+    "source": "Fromage_2025:discussion_prose",
+    "value_si": 0.0296
+   }
+  ]
+ },
  "parameters": {
   "Cl": 1.0833333333333333e-06,
   "F": 1.0,

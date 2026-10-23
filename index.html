@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Pharmacolibrary simulators</title>
+  <title>Pharmacolibrary</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="Description">
+  <meta name="description" content="Population pharmacokinetic, pharmacodynamic and pharmacogenomic models extracted from the literature, with runnable simulators, for drugs and toxins.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="assets/w3.css">
   <link rel="stylesheet" href="assets/buble.css">
@@ -439,6 +439,36 @@
     .markdown-section table.pk-models td:first-child { white-space: nowrap; }
     .markdown-section .pk-missing { color: #9aa1a9; font-style: italic; }
     .markdown-section .pk-size { color: #6b7280; font-size: 13px; }
+    /* front page: question box and the three entry cards (README-template.md) */
+    .markdown-section .pk-home-search { display: flex; gap: 8px; margin: 18px 0; }
+    .markdown-section .pk-home-search input { flex: 1; min-width: 0; font-size: 16px; padding: 9px 10px;
+      border: 1px solid #c9ced6; border-radius: 4px; }
+    .markdown-section .pk-home-search button { padding: 9px 16px; font-size: 15px; }
+    .markdown-section .pk-home-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px; margin: 0 0 18px; }
+    .markdown-section .pk-home-card { display: block; border: 1px solid rgba(128,128,128,.3); border-radius: 6px;
+      padding: 12px 14px; text-decoration: none; color: inherit; }
+    .markdown-section .pk-home-card b { display: block; font-size: 17px; margin-bottom: 4px; color: var(--theme-color, #42b983); }
+    .markdown-section .pk-home-card span { font-size: 13px; color: #5c6670; }
+    /* the record page's diagram now sits in the Information tab, outside .pk-models-grid */
+    .markdown-section > figure.pk-models-diagram { max-width: 420px; margin: 8px 0 16px; }
+    .markdown-section > figure.pk-models-diagram img { max-width: 100%; height: auto; }
+    .markdown-section details.pk-evidence, .markdown-section details.pk-pipeline {
+      border: 1px solid rgba(128,128,128,.3); border-radius: 6px; padding: 6px 12px; margin: 18px 0; }
+    .markdown-section details.pk-evidence > summary, .markdown-section details.pk-pipeline > summary {
+      font-weight: 600; cursor: pointer; padding: 4px 0; }
+    /* research-use banner on drug, record and Sites pages (plugin below) */
+    .pk-disclaimer { background: #fff8e1; border: 1px solid #f0d68a; color: #5a4a12; border-radius: 4px;
+      padding: 6px 10px; font-size: 13px; margin: 0 0 14px; }
+    /* sidebar: the counts legend and the has-records filter */
+    .sidebar .pk-sb-legend { font-size: 12px; color: #6b7280; }
+    .sidebar .pk-sb-toggle { font-size: 12px; cursor: pointer; }
+    body.pk-hide-norec .sidebar-nav li.pk-sb-norec { display: none; }
+    .markdown-section .pk-rf-bar { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin: 6px 0; }
+    .markdown-section .pk-rf-bar select { font-size: 13px; padding: 3px 4px; }
+    .markdown-section .pk-rf-count { font-size: 12px; color: #6b7280; }
+    .markdown-section .pk-forest-row { display: flex; flex-wrap: wrap; gap: 12px; overflow-x: auto; }
+    .markdown-section svg.pk-forest { max-width: 100%; height: auto; }
   </style>
 </head>
 <body>
@@ -460,6 +490,44 @@
       name: '',
       repo: ''
     }
+  </script>
+  <script>
+    // Research-use banner, keyed on the route: drug cards, record pages (whose Simulation tab
+    // runs a model) and the Sites page. The generated pages also carry the sentence in their
+    // footer, so it survives a copy of the markdown without this script.
+    (window.$docsify.plugins = window.$docsify.plugins || []).push(function (hook, vm) {
+      var TEXT = 'Research data extracted by software from published papers. Not clinically validated; not for dosing decisions.';
+      hook.doneEach(function () {
+        var path = (vm && vm.route && vm.route.path) || '';
+        if (!/^\/(drugs\/(drug|toxin)_|sites)/.test(path)) return;
+        var sec = document.querySelector('.markdown-section');
+        if (!sec || sec.querySelector('.pk-disclaimer')) return;
+        var d = document.createElement('div');
+        d.className = 'pk-disclaimer';
+        d.setAttribute('role', 'note');
+        d.textContent = TEXT;
+        sec.insertBefore(d, sec.firstChild);
+      });
+    });
+  </script>
+  <script>
+    // Page title from the page, not from the sidebar. docsify titles a page with the text of
+    // its active sidebar link, which for a drug is "metformin (18/3/6)" — the counts make a
+    // useless browser tab and search-result title. A drug card (#/drugs/drug_x/) reads
+    // "Metformin – PK/PD/PGx models | Pharmacolibrary"; any other page "<its h1> | Pharmacolibrary".
+    (window.$docsify.plugins = window.$docsify.plugins || []).push(function (hook, vm) {
+      function setTitle() {
+        var h1 = document.querySelector('.markdown-section h1');
+        var text = h1 ? h1.textContent.replace(/\s+/g, ' ').trim() : '';
+        if (!text) { document.title = 'Pharmacolibrary'; return; }
+        var path = (vm && vm.route && vm.route.path) || '';
+        var card = /^\/drugs\/(drug|toxin)_[^/]+\/?$/.test(path) || /\/(drug|toxin)_[^/]+\/(README)?$/.test(path);
+        if (card) text = text.charAt(0).toUpperCase() + text.slice(1) + ' – PK/PD/PGx models';
+        document.title = text + ' | Pharmacolibrary';
+      }
+      // after docsify's own title update, which also runs once the page is rendered
+      hook.doneEach(function () { setTitle(); setTimeout(setTitle, 0); });
+    });
   </script>
   <script>
     // Record tabs. Slices .markdown-section at the sentinels build.py emits: content before
@@ -536,6 +604,9 @@
           var saved = sessionStorage.getItem('pk-tab');
           built.forEach(function (b) { if (b.btn.textContent === saved) want = b.i; });
         } catch (e) {}
+        // A link may name the tab (…/Model_id?tab=Simulation — the drug page's "Start here").
+        var asked = /[?&]tab=([^&]+)/.exec(location.hash || '');
+        if (asked) built.forEach(function (b) { if (b.btn.textContent === decodeURIComponent(asked[1])) want = b.i; });
         select(want);
       });
     });

@@ -1,12 +1,12 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;G04B&quot;,&quot;href&quot;:&quot;atc/G04B.md&quot;},{&quot;label&quot;:&quot;fesoterodine&quot;,&quot;href&quot;:&quot;drugs/drug_fesoterodine/&quot;},{&quot;label&quot;:&quot;Rodr\u00edguez-Lopez_2024 \u00b7 PGx UGT&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fesoterodine_Sano2023_reference&quot;,&quot;label&quot;:&quot;Sano_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fesoterodine/Fesoterodine_Sano2023_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fesoterodine_Sano2023_reference&quot;,&quot;label&quot;:&quot;Sano_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fesoterodine/Fesoterodine_Sano2023_reference.md&quot;,&quot;status&quot;:&quot;Reproduces with caveats&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # UGT — PGx  <span class="pk-badge pk-badge--green" title="Phenotype/genotype-specific effect on a named model parameter (θ).">quantitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
@@ -41,20 +41,20 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `applies_to` | pk | not captured | mismatch |
-| `gpt-oss-120b` | `mechanism` | metabolism | not captured | mismatch |
-| `gpt-oss-120b` | `reference_category` | A/A | not captured | mismatch |
-| `gpt-oss-120b` | `target_parameter_id` | Q351 | not captured | mismatch |
-| `gpt-oss-120b` | `theta[A/A]` | 0.0 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `theta[A/G]` | -0.2319 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `theta[C/C]` | -0.3468 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `theta[G/A]` | -0.2971 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `theta[G/G]` | -0.2037 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `theta[IM/PM]` | -0.4268 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `theta[IM]` | -0.1248 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `theta[NM]` | -0.195 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `theta[T/C]` | -0.1037 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `theta[T/G]` | -0.0656 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `applies_to` | pk |  | mismatch |
+| `gpt-oss-120b` | `mechanism` | metabolism |  | mismatch |
+| `gpt-oss-120b` | `reference_category` | A/A |  | mismatch |
+| `gpt-oss-120b` | `target_parameter_id` | Q351 |  | mismatch |
+| `gpt-oss-120b` | `theta[A/A]` | 0.0 |  | only_one_extracted |
+| `gpt-oss-120b` | `theta[A/G]` | -0.2319 |  | only_one_extracted |
+| `gpt-oss-120b` | `theta[C/C]` | -0.3468 |  | only_one_extracted |
+| `gpt-oss-120b` | `theta[G/A]` | -0.2971 |  | only_one_extracted |
+| `gpt-oss-120b` | `theta[G/G]` | -0.2037 |  | only_one_extracted |
+| `gpt-oss-120b` | `theta[IM/PM]` | -0.4268 |  | only_one_extracted |
+| `gpt-oss-120b` | `theta[IM]` | -0.1248 |  | only_one_extracted |
+| `gpt-oss-120b` | `theta[NM]` | -0.195 |  | only_one_extracted |
+| `gpt-oss-120b` | `theta[T/C]` | -0.1037 |  | only_one_extracted |
+| `gpt-oss-120b` | `theta[T/G]` | -0.0656 |  | only_one_extracted |
 
 </details>
 

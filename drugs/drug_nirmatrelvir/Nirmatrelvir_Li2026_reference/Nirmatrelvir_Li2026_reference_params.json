@@ -12,6 +12,26 @@
  "paper_doses_mg": [
   300.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Li_2026:other_prose",
+    "value_si": 0.003082
+   },
+   {
+    "source": "Li_2026:other_prose",
+    "value_si": 0.0045000000000000005
+   },
+   {
+    "source": "Li_2026:other_prose",
+    "value_si": 0.000546
+   },
+   {
+    "source": "Li_2026:other_prose",
+    "value_si": 0.001109
+   }
+  ]
+ },
  "parameters": {
   "Cl": 2.605277777777778e-06,
   "F": 1.0,

@@ -12,6 +12,14 @@
  "paper_doses_mg": [
   250.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Jeong_2021:results_prose",
+    "value_si": 0.00787
+   }
+  ]
+ },
  "parameters": {
   "Cl": 7.546356388888888e-06,
   "F": 1.0,

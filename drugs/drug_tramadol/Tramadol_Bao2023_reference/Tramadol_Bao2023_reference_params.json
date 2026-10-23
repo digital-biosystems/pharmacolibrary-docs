@@ -2,14 +2,14 @@
  "dose_source": "WHO ATC DDD 300 mg oral (N02AX02)",
  "model_id": "Tramadol_Bao2023_reference",
  "molar_masses": {
-  "C_central": 0.263381
+  "central.C": 0.263381
  },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "C_central"
+  "central.C"
  ],
  "parameters": {
-  "Cl": 5.9811111111111116e-05,
+  "Cl": 0.0005508027777777778,
   "F": 1.0,
   "MM": 0.263381,
   "Tlag": 0.0,
@@ -21,10 +21,10 @@
   "weight": 70.0
  },
  "reference_peak_times": {
-  "C_central": 9349.899799599198
+  "central.C": 3037.74704883098
  },
  "reference_peaks": {
-  "C_central": 0.0001991109265677111
+  "central.C": 5.229239506995489e-05
  },
  "stop_time": 86400.0,
  "template": "PK_1C_enteral",

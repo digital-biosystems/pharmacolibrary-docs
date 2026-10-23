@@ -14,6 +14,14 @@
   350.0,
   700.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Riley_2026:discussion_prose",
+    "value_si": 0.00047889999999999993
+   }
+  ]
+ },
  "parameters": {
   "Cl": 2.6133333333333333e-05,
   "F": 0.9,

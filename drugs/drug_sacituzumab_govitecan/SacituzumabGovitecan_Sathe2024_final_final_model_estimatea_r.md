@@ -4,15 +4,48 @@
 
 # sacituzumab govitecan — `SacituzumabGovitecan_Sathe2024_final_final_model_estimatea_r`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.0). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
+
+> The free SN-38 metabolite is an orphan compartment with no path from the dose, causing the model to be rejected.
+
+<div class="pk-model-meta" hidden drug="sacituzumab govitecan" model-id="SacituzumabGovitecan_Sathe2024_final_final_model_estimatea_r" status="rejected" stale="false" population="patients with metastatic triple-negative breast cancer and other solid tumors" measured-compound="sacituzumab_govitecan" parameterization="apparent" topology="general_linear"></div>
+
+## Citation
+Sathe AG, Singh I, Singh P, Diderichsen PM, Wang X, Chang P et al. Population Pharmacokinetics of Sacituzumab Govitecan in Patients with Metastatic Triple-Negative Breast Cancer and Other Solid Tumors. Clinical pharmacokinetics 63(5):669–681 (2024).
+  ·  DOI: [10.1007/s40262-024-01366-3](https://doi.org/10.1007/s40262-024-01366-3)
+
+## Population and dosing
+
+**Population:** patients with metastatic triple-negative breast cancer and other solid tumors · condition metastatic triple-negative breast cancer and other solid tumors · age group adult.
+
+**Dosing:** 560, 700, 840, 1260 mg, iv, multiple, every 21 h.
+
+## Model
+
+**Structure:** general linear; no model was built for this record.  
+**Parameterization:** CL/F, Q/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Parameters:** 3 extracted, plus 1 covariate effect.  
+**Availability:** No model was generated from this record.
+
+## Parameters
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
+| label | parameter | value | unit | RSE% |
+|---|---|---|---|---|
+| Log (KREL), 1/h | kfm | -2.34 | 1/h | 2.61 |
+| Log (CLSN38/F), L/h | CL/F | 6.02 | L/h | 1.05 |
+| Log(QSN38/F), L/h | Q/F | 5.51 | L/h | 0.466 |
+| theta_q319_weight_power | theta_q319_weight_power | 0.500 |  | 13.3 |
+
+<details class="pk-evidence"><summary>Evidence &amp; review</summary>
+
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.0). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
-
-**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -24,30 +57,18 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 <sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
-## Citation
-Sathe AG et al., Population Pharmacokinetics of Sacituzu…, Clinical pharmacokinetics (2024)
-  ·  DOI: [10.1007/s40262-024-01366-3](https://doi.org/10.1007/s40262-024-01366-3)
+### All parameter columns
 
-<div class="pk-model-meta" hidden drug="sacituzumab govitecan" model-id="SacituzumabGovitecan_Sathe2024_final_final_model_estimatea_r" status="rejected" stale="false" population="patients with metastatic triple-negative breast cancer and other solid tumors" measured-compound="sacituzumab_govitecan" parameterization="apparent" topology="general_linear"></div>
-
-**Model structure:** general linear; no model was built for this record.  
-**Parameters:** 3 extracted, plus 1 covariate effect.
-
-**Parameterization:** CL/F, Q/F — apparent, F unknown (apparent — bioavailability not identifiable).
-
-## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| Log (KREL), 1/h | `Q305` · kfm | -2.34 | 1/h | -0.00065 | [1] / [h] | 2.61 | exact (1.0) | Sathe_2024_table_2:row0:col1 | — | not captured |
-| Log (CLSN38/F), L/h | `Q27` · CL/F | 6.02 | L/h | 1.672222222222222e-06 | [l] / [h] | 1.05 | exact (1.0) | Sathe_2024_table_2:row1:col1 | — | not captured |
-| Log(QSN38/F), L/h | `Q69` · Q/F | 5.51 | L/h | 1.5305555555555556e-06 | [l] / [h] | 0.466 | exact (1.0) | Sathe_2024_table_2:row2:col1 | — | not captured |
-| theta_q319_weight_power | `Q900` · theta_q319_weight_power | 0.500 | not captured | not captured | not captured | 13.3 | not captured (not captured) | Sathe_2024_table_2:row7:col1 | — | not captured |
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | RSE% | link | source |
+|---|---|---|---|---|---|---|---|---|---|
+| Log (KREL), 1/h | `Q305` · kfm | -2.34 | 1/h | -0.00065 | 1/s | 1/h | 2.61 | exact (1) | Sathe_2024_table_2:row0:col1 |
+| Log (CLSN38/F), L/h | `Q27` · CL/F | 6.02 | L/h | 1.672e-06 | m3/s | l/h | 1.05 | exact (1) | Sathe_2024_table_2:row1:col1 |
+| Log(QSN38/F), L/h | `Q69` · Q/F | 5.51 | L/h | 1.531e-06 | m3/s | l/h | 0.466 | exact (1) | Sathe_2024_table_2:row2:col1 |
+| theta_q319_weight_power | `Q900` · theta_q319_weight_power | 0.500 |  |  |  |  | 13.3 |  | Sathe_2024_table_2:row7:col1 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ## Departures & gaps
@@ -118,19 +139,19 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 |---|---|---|---|---|
 | `gpt-oss-120b` | `model.links` | [['sacituzumab_govitecan', 'free sn-38', 'hydrolysis']] | [] | mismatch |
 | `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
-| `gpt-oss-120b` | `parameters[clsg]` | not captured | 0.133 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[log (clsn38/f)]` | 6.02 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[log (krel)]` | -2.34 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[log(qsn38/f)]` | 5.51 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[maximum relative reduction of cltab, %]` | not captured | 16.7 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[qsg]` | not captured | 0.006 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta_q319_albumin_power]` | not captured | -0.735 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta_q319_weight_power]` | not captured | 0.508 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta_q319_weight_power]` | 0.500 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta_q38_albumin_power]` | not captured | -0.355 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta_v1_sex]` | not captured | 0.121 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v1sg]` | not captured | 2.770 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v2sg]` | not captured | 0.908 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clsg]` |  | 0.133 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[log (clsn38/f)]` | 6.02 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[log (krel)]` | -2.34 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[log(qsn38/f)]` | 5.51 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[maximum relative reduction of cltab, %]` |  | 16.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[qsg]` |  | 0.006 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q319_albumin_power]` |  | -0.735 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q319_weight_power]` |  | 0.508 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q319_weight_power]` | 0.500 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q38_albumin_power]` |  | -0.355 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_v1_sex]` |  | 0.121 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v1sg]` |  | 2.770 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v2sg]` |  | 0.908 | only_one_extracted |
 | `gpt-oss-120b` | `screen.dose_compound` | sacituzumab_govitecan | sacituzumab govitecan | mismatch |
 | `gpt-oss-120b` | `screen.primary_analyte` | sacituzumab_govitecan | sacituzumab govitecan | mismatch |
 
@@ -144,27 +165,25 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained | ratio | tol | source |
-|---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Sathe_2024_table_2:row1:col1'] |
-| C5_dimension_Q305 | pass | 1 / [time] | not captured | not captured | not captured | ['Sathe_2024_table_2:row0:col1'] |
-| C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Sathe_2024_table_2:row2:col1'] |
-| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
-| C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 6.02 L/h | not captured | not captured | ['Sathe_2024_table_2:row1:col1'] |
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 3 |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | fail |  |  |  |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Sathe_2024_table_2:row1:col1'] |
+| C5_dimension_Q305 | pass | 1 / [time] |  | ['Sathe_2024_table_2:row0:col1'] |
+| C5_dimension_Q69 | pass | [length] ** 3 / [time] |  | ['Sathe_2024_table_2:row2:col1'] |
+| C7_apparent_coherence | pass |  |  |  |
+| C8_topology | fail |  |  |  |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 6.02 L/h | ['Sathe_2024_table_2:row1:col1'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
-## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_sacituzumab_govitecan/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Sathe_2024` / `Sathe_2024::final_final_model_estimatea_rse`)
-
+</details>
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
@@ -179,4 +198,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 19:58 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsacituzumab_govitecan%5D%20SacituzumabGovitecan_Sathe2024_final_final_model_estimatea_r&body=Drug%3A%20sacituzumab_govitecan%0ARecord%3A%20SacituzumabGovitecan_Sathe2024_final_final_model_estimatea_r%0APaper%3A%20Sathe_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sacituzumab_govitecan/SacituzumabGovitecan_Sathe2024_final_final_model_estimatea_r%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Generated by `docs.py` (scholarv2, release v26.09) · extracted 2026-10-07 19:58 UTC</sub>

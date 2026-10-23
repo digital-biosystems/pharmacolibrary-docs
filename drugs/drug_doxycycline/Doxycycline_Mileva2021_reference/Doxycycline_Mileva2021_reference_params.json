@@ -12,6 +12,14 @@
  "paper_doses_mg": [
   350.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Mileva_2021:results_prose",
+    "value_si": 0.58
+   }
+  ]
+ },
  "parameters": {
   "Cl": 2.8641666666666667e-05,
   "F": 1.0,

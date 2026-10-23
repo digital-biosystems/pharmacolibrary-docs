@@ -19,6 +19,30 @@
   2.1,
   5.6
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Steichert_2025:other_prose",
+    "value_si": 40.0
+   },
+   {
+    "source": "Steichert_2025:other_prose",
+    "value_si": 60.0
+   },
+   {
+    "source": "Steichert_2025:other_prose",
+    "value_si": 1.85e-06
+   },
+   {
+    "source": "Steichert_2025:other_prose",
+    "value_si": 6.789999999999999e-06
+   },
+   {
+    "source": "Steichert_2025:other_prose",
+    "value_si": 14.6
+   }
+  ]
+ },
  "parameters": {
   "CL1": 0.0,
   "CLm1": 3.777777777777778e-07,

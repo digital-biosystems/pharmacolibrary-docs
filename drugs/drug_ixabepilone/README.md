@@ -14,12 +14,6 @@ Ixabepilone is a cancer medicine used to treat certain forms of advanced breast 
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q11711607](https://www.wikidata.org/wiki/Q11711607) and the WHO ATC classification; not checked by a person.</small>
 
-## Extraction summary
-
-| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
-|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 18:15 | 5:02 | 0/0/0 | 2/1/0 | 0/0/0 | 24,492/7,746 | openai / gpt-6-luna | 2 | 0/2 | 2/0 | 0 |
-
 ## popPK records
 
 _not available_
@@ -28,15 +22,23 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> | [Mani_2007_MBF](drugs/drug_ixabepilone/pd_Mani_2007_MBF.md) | percentage of PBMCs with MBF ← ixabepilone · direct sigmoid Emax (Hill) effect | — | Mani S et al., Peripheral blood mononuclear and tumor…, Annals of oncology : offici… (2007) | [10.1093/annonc/mdl315](https://doi.org/10.1093/annonc/mdl315) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> | [Mehrotra_2017_CIPN](drugs/drug_ixabepilone/pd_Mehrotra_2017_CIPN.md) | CIPN ← ixabepilone · model not identified | — | Mehrotra S et al., Kinetic-Pharmacodynamic Model of Chemot…, The AAPS journal (2017) | [10.1208/s12248-017-0101-9](https://doi.org/10.1208/s12248-017-0101-9) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> | [Goel_2008_microtubule_bundle_formation_in_peripheral_blood_mononuclear_cells](drugs/drug_ixabepilone/pd_Goel_2008_microtubule_bundle_formation_in_peripheral_blood_m.md) | microtubule bundle formation in peripheral blood mononuclear cells ← ixabepilone · direct sigmoid Emax (Hill) effect | — | Goel S et al., The effect of ketoconazole on the pharm…, Clinical cancer research :… (2008) | [10.1158/1078-0432.CCR-07-4151](https://doi.org/10.1158/1078-0432.CCR-07-4151) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Mani_2007_MBF](drugs/drug_ixabepilone/pd_Mani_2007_MBF.md) | percentage of PBMCs with MBF ← ixabepilone · direct sigmoid Emax (Hill) effect | — | Mani S et al., Peripheral blood mononuclear and tumor…, Annals of oncology : offici… (2007) | [10.1093/annonc/mdl315](https://doi.org/10.1093/annonc/mdl315) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Mehrotra_2017_CIPN](drugs/drug_ixabepilone/pd_Mehrotra_2017_CIPN.md) | CIPN ← ixabepilone · model not identified | — | Mehrotra S et al., Kinetic-Pharmacodynamic Model of Chemot…, The AAPS journal (2017) | [10.1208/s12248-017-0101-9](https://doi.org/10.1208/s12248-017-0101-9) |
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Goel_2008_microtubule_bundle_formation_in_peripheral_blood_mononuclear_cells](drugs/drug_ixabepilone/pd_Goel_2008_microtubule_bundle_formation_in_peripheral_blood_m.md) | microtubule bundle formation in peripheral blood mononuclear cells ← ixabepilone · direct sigmoid Emax (Hill) effect | — | Goel S et al., The effect of ketoconazole on the pharm…, Clinical cancer research :… (2008) | [10.1158/1078-0432.CCR-07-4151](https://doi.org/10.1158/1078-0432.CCR-07-4151) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-06 18:15 | 5:02 | 0/0/0 | 2/1/0 | 0/0/0 | 24,492/7,746 | openai / gpt-6-luna | 2 | 0/2 | 2/0 | 0 |
 
 ## Coverage
 
@@ -74,5 +76,9 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | popPK | Vishnu_2012 | irrelevant | 0 | 0 | This is an in-vitro antitumor mechanism study and reports no ixabepilone disposition parameters. |
 | PGx | Yardley_2009 | not_relevant | 0 | 0 | The paper addresses adverse-event management and reports no genotype- or phenotype-associated ixabepilone PK/PD parameters. |
 
+
+</details>
+
 ---
-<sub>Generated by `docs.py` (scholarv2)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
+<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>

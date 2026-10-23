@@ -10,6 +10,14 @@
   80.0,
   1700.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Friberg_2006:other_prose",
+    "value_si": 3.0
+   }
+  ]
+ },
  "parameters": {
   "Cl": 6.138888888888889e-06,
   "F": 1.0,

@@ -14,6 +14,22 @@
   70.0,
   210.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Eichler_2023:other_prose",
+    "value_si": 3.8999999999999997e-07
+   },
+   {
+    "source": "Eichler_2023:other_prose",
+    "value_si": 7e-07
+   },
+   {
+    "source": "Eichler_2023:discussion_prose",
+    "value_si": 0.72
+   }
+  ]
+ },
  "parameters": {
   "Cl": 0.00020902777777777781,
   "F": 1.0,

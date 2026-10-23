@@ -8,6 +8,14 @@
  "observables": [
   "central.C"
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Zou_2022:other_prose",
+    "value_si": 0.003538
+   }
+  ]
+ },
  "parameters": {
   "Cl": 1.261111111111111e-06,
   "F": 1.0,

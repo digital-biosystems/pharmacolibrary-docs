@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;G04C&quot;,&quot;href&quot;:&quot;atc/G04C.md&quot;},{&quot;label&quot;:&quot;tamsulosin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tamsulosin_Tsuda2010_reference&quot;,&quot;label&quot;:&quot;Tsuda_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tamsulosin/Tamsulosin_Tsuda2010_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tamsulosin_Tsuda2010_reference&quot;,&quot;label&quot;:&quot;Tsuda_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tamsulosin/Tamsulosin_Tsuda2010_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # tamsulosin
 
@@ -23,24 +23,54 @@ Tamsulosin is an alpha-blocker used to treat prostate problems such as enlarged 
 |---|---|---|---|---|---|---|
 | tamsulosin | parent | 408.512 | C20H28N2O5S | DrugBank | [129211](https://pubchem.ncbi.nlm.nih.gov/compound/129211) | Tsuda_2010 |
 
-## Extraction summary
+## Start here
 
-| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
-|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 09:18 | 2:03 | 1/1/0 | 0/0/0 | 0/0/0 | 70,385/5,743 | einfracz / qwen3.8-27b | 2 | 1/1 | 2/0 | 0 |
+> **Tsuda_2010_reference** — <span class="pk-badge pk-badge--green">Reproduces paper</span> paediatric patients with neuropathic and non-neuropathic bladder, n = ,
+  "condition": "neuropathic and non-neuropathic bladder",
+  "species": "human",
+  "compounds": [
+    {
+      "name": "tamsulosin",
+      "role": "parent",
+      "dosed": "yes",
+      "measured": "yes",
+      "has_parameters": "yes"
+    }
+  ],
+  "links": []. [Run it in the simulator](drugs/drug_tamsulosin/Tamsulosin_Tsuda2010_reference.md?tab=Simulation) · [record](drugs/drug_tamsulosin/Tamsulosin_Tsuda2010_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
+## Parameters across studies
+
+| parameter | as named | value | unit | as reported | population | n | species | status | record |
+|---|---|---|---|---|---|---|---|---|---|
+| CL | CL/F | 2.28 | L/h | 2.28 l h -1 | paediatric patients with neuropathic and non-neuropathic bladder | ,   "condition": "neuropathic and non-neuropathic bladder",   "species": "human",   "compounds": [     {       "name": "tamsulosin",       "role": "parent",       "dosed": "yes",       "measured": "yes",       "has_parameters": "yes"     }   ],   "links": [] | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Tsuda_2010_reference](drugs/drug_tamsulosin/Tamsulosin_Tsuda2010_reference.md) |
+| V | V/F | 37.5 | L | 37.5 l | paediatric patients with neuropathic and non-neuropathic bladder | ,   "condition": "neuropathic and non-neuropathic bladder",   "species": "human",   "compounds": [     {       "name": "tamsulosin",       "role": "parent",       "dosed": "yes",       "measured": "yes",       "has_parameters": "yes"     }   ],   "links": [] | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Tsuda_2010_reference](drugs/drug_tamsulosin/Tamsulosin_Tsuda2010_reference.md) |
+| ka | kabs | 0.368 | 1/h | 0.368 h -1 | paediatric patients with neuropathic and non-neuropathic bladder | ,   "condition": "neuropathic and non-neuropathic bladder",   "species": "human",   "compounds": [     {       "name": "tamsulosin",       "role": "parent",       "dosed": "yes",       "measured": "yes",       "has_parameters": "yes"     }   ],   "links": [] | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Tsuda_2010_reference](drugs/drug_tamsulosin/Tamsulosin_Tsuda2010_reference.md) |
+
+<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span> | [Tsuda_2010_reference](drugs/drug_tamsulosin/Tamsulosin_Tsuda2010_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Tsuda Y et al., Population pharmacokinetics of tamsulos…, British journal of clinical… (2010) | [10.1111/j.1365-2125.2010.03662.x](https://doi.org/10.1111/j.1365-2125.2010.03662.x) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.333). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Nikolic_2024_reference](drugs/drug_tamsulosin/Tamsulosin_Nikolic2024_reference.md) | — | 1-compartment (no model) | 0 | Nikolic VN et al., Population pharmacokinetics of tamsulos…, World journal of urology (2024) | [10.1007/s00345-024-05115-w](https://doi.org/10.1007/s00345-024-05115-w) |
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [Tsuda_2010_reference](drugs/drug_tamsulosin/Tamsulosin_Tsuda2010_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Tsuda Y et al., Population pharmacokinetics of tamsulos…, British journal of clinical… (2010) | [10.1111/j.1365-2125.2010.03662.x](https://doi.org/10.1111/j.1365-2125.2010.03662.x) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Nikolic_2024_reference](drugs/drug_tamsulosin/Tamsulosin_Nikolic2024_reference.md) | — | 1-compartment (no model) | 0 | Nikolic VN et al., Population pharmacokinetics of tamsulos…, World journal of urology (2024) | [10.1007/s00345-024-05115-w](https://doi.org/10.1007/s00345-024-05115-w) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 09:18 | 2:03 | 1/1/0 | 0/0/0 | 0/0/0 | 70,385/5,743 | einfracz / qwen3.8-27b | 2 | 1/1 | 2/0 | 0 |
 
 ## Coverage
 
@@ -74,5 +104,9 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | popPK | Takeda_2013 | irrelevant | 0 | 0 | The study evaluates clinical efficacy and safety of add-on treatment, reporting no pharmacokinetic parameters for tamsulosin. |
 | popPK | Van_1996 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological analysis of receptor antagonism in rat aorta, not a pharmacokinetic study, and reports no disposition parameters (CL, V, ka, etc.) for tamsulosin. |
 
+
+</details>
+
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 09:17 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
+<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 09:17 UTC</sub>

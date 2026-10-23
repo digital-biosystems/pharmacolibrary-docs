@@ -17,6 +17,50 @@
   10.0,
   20.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Heinig_2023:other_prose",
+    "value_si": 9.62e-05
+   },
+   {
+    "source": "Heinig_2023:other_prose",
+    "value_si": 0.000118
+   },
+   {
+    "source": "Heinig_2023:other_prose",
+    "value_si": 9.99e-05
+   },
+   {
+    "source": "Heinig_2023:other_prose",
+    "value_si": 8.840000000000001e-05
+   },
+   {
+    "source": "Heinig_2023:other_prose",
+    "value_si": 0.000163
+   },
+   {
+    "source": "Heinig_2023:other_prose",
+    "value_si": 0.00015999999999999999
+   },
+   {
+    "source": "Heinig_2023:other_prose",
+    "value_si": 0.000149
+   },
+   {
+    "source": "Heinig_2023:other_prose",
+    "value_si": 88.2
+   },
+   {
+    "source": "Heinig_2023:other_prose",
+    "value_si": 122.0
+   },
+   {
+    "source": "Heinig_2023:other_prose",
+    "value_si": 15.7
+   }
+  ]
+ },
  "parameters": {
   "Cl": 8.305555555555555e-06,
   "F": 1.0,

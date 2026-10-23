@@ -1,19 +1,49 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N01B&quot;,&quot;href&quot;:&quot;atc/N01B.md&quot;},{&quot;label&quot;:&quot;bupivacaine&quot;,&quot;href&quot;:&quot;drugs/drug_bupivacaine/&quot;},{&quot;label&quot;:&quot;Araneda_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bupivacaine_Araneda2025_reference&quot;,&quot;label&quot;:&quot;Araneda_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bupivacaine/Bupivacaine_Araneda2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Bupivacaine_Venkatachalam2022_reference&quot;,&quot;label&quot;:&quot;Venkatachalam_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bupivacaine/Bupivacaine_Venkatachalam2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bupivacaine_Araneda2025_reference&quot;,&quot;label&quot;:&quot;Araneda_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bupivacaine/Bupivacaine_Araneda2025_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Bupivacaine_Venkatachalam2022_reference&quot;,&quot;label&quot;:&quot;Venkatachalam_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bupivacaine/Bupivacaine_Venkatachalam2022_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # bupivacaine — `Bupivacaine_Araneda2025_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">Reproduces paper</span>
+
+<div class="pk-model-meta" hidden drug="bupivacaine" model-id="Bupivacaine_Araneda2025_reference" status="curated_candidate" stale="false" population="patients with thoracic/abdominal surgery" measured-compound="levobupivacaine" parameterization="mechanistic" topology="1C"></div>
+
+## Citation
+Araneda A, De la Cuadra JC, Corvetto M, Balde D, Fuente R, Ibacache M et al. Pharmacokinetic modelling and simulation for prolonged infusion of levobupivacaine with or without epinephrine in transversus abdominis plane and erector spinae plane blocks: a randomised controlled trial and analysis of pooled data. British journal of anaesthesia 135(4):1051–1058 (2025).
+  ·  DOI: [10.1016/j.bja.2025.05.047](https://doi.org/10.1016/j.bja.2025.05.047)
+
+## Population and dosing
+
+**Population:** patients with thoracic/abdominal surgery · condition surgery · age group adult.
+
+## Model
+
+**Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameterization:** mechanistic.  
+**Parameters:** 5 extracted.  
+**Availability:** Model and browser simulation available in **Models** and **Simulation**.
+
+<figure class="pk-models-diagram"><img src="drugs/drug_bupivacaine/Bupivacaine_Araneda2025_reference/Bupivacaine_Araneda2025_reference.svg" alt="Bupivacaine_Araneda2025_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
+
+## Parameters
+| label | parameter | value | unit |
+|---|---|---|---|
+| distribution volume | V | 41.9 | L |
+| clearance rate | CL | 0.288 | L min-1 |
+| bioavailability | Fab | 54.3 | % |
+| absorption half-life | t1/2ka | 0.84 | min |
+| -k 0 /D [h À1 ] 0-order absorption rate constant/Dose = Fr/ τ 0 | kabs | -0.254 | h À1 |
+
+<details class="pk-evidence"><summary>Evidence &amp; review</summary>
+
+**Status and checks:** <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
-
-**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 ### Reviewer guidance
 
@@ -25,29 +55,19 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-## Citation
-Araneda A et al., Pharmacokinetic modelling and simulatio…, British journal of anaesthe… (2025)
-  ·  DOI: [10.1016/j.bja.2025.05.047](https://doi.org/10.1016/j.bja.2025.05.047)
+### All parameter columns
 
-<div class="pk-model-meta" hidden drug="bupivacaine" model-id="Bupivacaine_Araneda2025_reference" status="curated_candidate" stale="false" population="patients with thoracic/abdominal surgery" measured-compound="levobupivacaine" parameterization="mechanistic" topology="1C"></div>
-
-**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 5 extracted.
-
-**Parameterization:** mechanistic.
-
-## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| distribution volume | `Q61` · V | 41.9 | L | 0.0419 | [l] | not captured | exact (1.0) | Araneda_2025:abstract | — | not captured |
-| clearance rate | `Q22` · CL | 0.288 | L min-1 | 4.8e-06 | [l] / [min] | not captured | exact (1.0) | Araneda_2025:abstract | — | not captured |
-| bioavailability | `Q40` · Fab | 54.3 | % | not captured | not captured | not captured | exact (1.0) | Araneda_2025:abstract, Araneda_2025:abstract | — | not captured |
-| absorption half-life | `Q95` · t1/2ka | 0.84 | min | 50.4 | [min] | not captured | llm_corrected (0.6) | Araneda_2025:abstract, Araneda_2025:abstract | — | not captured |
-| -k 0 /D [h À1 ] 0-order absorption rate constant/Dose = Fr/ τ 0 | `Q49` · kabs | -0.254 | h À1 | -7.055555555555556e-05 | 1/h | not captured | review_gapfill (0.7) | Storgaard_2024:review | — | not captured |
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
+|---|---|---|---|---|---|---|---|---|
+| distribution volume | `Q61` · V | 41.9 | L | 0.0419 | m3 | l | exact (1) | Araneda_2025:abstract |
+| clearance rate | `Q22` · CL | 0.288 | L min-1 | 4.8e-06 | m3/s | l/min | exact (1) | Araneda_2025:abstract |
+| bioavailability | `Q40` · Fab | 54.3 | % |  |  |  | exact (1) | Araneda_2025:abstract, Araneda_2025:abstract |
+| absorption half-life | `Q95` · t1/2ka | 0.84 | min | 50.4 | s | min | llm_corrected (0.6) | Araneda_2025:abstract, Araneda_2025:abstract |
+| -k 0 /D [h À1 ] 0-order absorption rate constant/Dose = Fr/ τ 0 | `Q49` · kabs | -0.254 | h À1 | -7.056e-05 | 1/s | 1/h | review_gapfill (0.7) | Storgaard_2024:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ## Departures & gaps
@@ -80,16 +100,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[-k 0 /d [h à1 ] 0-order absorption rate constant/dose = fr/ τ 0]` | -0.254 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[absorption half-life]` | 0.84 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[absorption half-life]` | not captured | 0.84 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[bioavailability]` | 54.3 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[bioavailability]` | not captured | 54.3 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[clearance rate]` | 0.288 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[clearance rate]` | not captured | 0.288 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[distribution volume]` | 41.9 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[mean distribution volume]` | not captured | 41.9 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[simulated dose]` | not captured | 50 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[-k 0 /d [h à1 ] 0-order absorption rate constant/dose = fr/ τ 0]` | -0.254 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[absorption half-life]` | 0.84 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[absorption half-life]` |  | 0.84 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[bioavailability]` | 54.3 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[bioavailability]` |  | 54.3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance rate]` | 0.288 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance rate]` |  | 0.288 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[distribution volume]` | 41.9 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean distribution volume]` |  | 41.9 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[simulated dose]` |  | 50 | only_one_extracted |
 | `gpt-oss-120b` | `screen.dose_compound` | levobupivacaine | unknown | mismatch |
 | `gpt-oss-120b` | `screen.primary_analyte` | levobupivacaine | unknown | mismatch |
 
@@ -103,43 +123,38 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained | ratio | tol | source |
-|---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Araneda_2025:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Storgaard_2024:review'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Araneda_2025:abstract'] |
-| C5_dimension_Q95 | pass | [time] | not captured | not captured | not captured | ['Araneda_2025:abstract', 'Araneda_2025:abstract'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.288 | not captured | not captured | ['Araneda_2025:abstract'] |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 17.3 L/h | not captured | not captured | ['Araneda_2025:abstract'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 41.9 L | not captured | not captured | ['Araneda_2025:abstract'] |
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 4 |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Araneda_2025:abstract'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['Storgaard_2024:review'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Araneda_2025:abstract'] |
+| C5_dimension_Q95 | pass | [time] |  | ['Araneda_2025:abstract', 'Araneda_2025:abstract'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.288 | ['Araneda_2025:abstract'] |
+| C8_topology | pass |  |  |  |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 17.3 L/h | ['Araneda_2025:abstract'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 41.9 L | ['Araneda_2025:abstract'] |
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_output_variable | not captured | pass | C_central (measured=levobupivacaine) | central.C | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | note |
+|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=levobupivacaine) | central.C | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Validation definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
-## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_bupivacaine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Araneda_2025` / `Araneda_2025::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_bupivacaine/models/modelica/Bupivacaine_Araneda2025_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_bupivacaine/models/modelica/Bupivacaine_Araneda2025_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_bupivacaine/models/modelica/Bupivacaine_Araneda2025_reference.json`
-
+</details>
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
@@ -156,7 +171,49 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_bupivacaine/Bupivacaine_Araneda2025_reference/Bupivacaine_Araneda2025_reference.svg" alt="Bupivacaine_Araneda2025_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div></div>
+
+## Model interface
+
+The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
+
+| direction | role | name | value | unit (SI) |
+|---|---|---|---|---|
+| input | compound | `MM` | 0.2884 | kg/mol |
+| input | dosing | `F` | 54.3 | 1 |
+| input | dosing | `Tlag` | 0 | s |
+| input | dosing | `adminCount` | 1 | 1 |
+| input | dosing | `adminDuration` | 600 | s |
+| input | dosing | `adminMass` | 0.0001 | kg |
+| input | model | `Cl` | 4.8e-06 | m3/s |
+| input | model | `VdPerKg` | 0.0005986 | m3/kg |
+| input | model | `ka` | -7.056e-05 | 1/s |
+| input | subject | `weight` | 70 | kg |
+| output | concentration | `central.C` |  | kg/m3 |
+
+## Tested with
+
+- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
+- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
+- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
+
+## How to cite
+
+**Source paper** (the parameters are its): Araneda A, De la Cuadra JC, Corvetto M, Balde D, Fuente R, Ibacache M et al. Pharmacokinetic modelling and simulation for prolonged infusion of levobupivacaine with or without epinephrine in transversus abdominis plane and erector spinae plane blocks: a randomised controlled trial and analysis of pooled data. British journal of anaesthesia 135(4):1051–1058 (2025). [doi:10.1016/j.bja.2025.05.047](https://doi.org/10.1016/j.bja.2025.05.047)
+
+**This record:** Pharmacolibrary v26.09, model `Bupivacaine_Araneda2025_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_bupivacaine/Bupivacaine_Araneda2025_reference>
+
+```bibtex
+@misc{pharmacolibrary_BupivacaineAraneda2025reference,
+  title  = {{Pharmacolibrary model Bupivacaine_Araneda2025_reference}},
+  author = {{Pharmacolibrary}},
+  version = {v26.09},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_bupivacaine/Bupivacaine_Araneda2025_reference},
+  note   = {Parameters from doi:10.1016/j.bja.2025.05.047},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -169,4 +226,5 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 03:55 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbupivacaine%5D%20Bupivacaine_Araneda2025_reference&body=Drug%3A%20bupivacaine%0ARecord%3A%20Bupivacaine_Araneda2025_reference%0APaper%3A%20Araneda_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_bupivacaine/Bupivacaine_Araneda2025_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Generated by `docs.py` (scholarv2, release v26.09) · extracted 2026-10-07 03:55 UTC</sub>

@@ -10,6 +10,14 @@
   70.0,
   1400.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Fau_2020:other_prose",
+    "value_si": 1.64
+   }
+  ]
+ },
  "parameters": {
   "Cl": 2.6527777777777777e-09,
   "F": 1.0,

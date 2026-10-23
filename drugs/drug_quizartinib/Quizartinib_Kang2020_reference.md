@@ -4,15 +4,71 @@
 
 # quizartinib — `Quizartinib_Kang2020_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.938). Primary extraction retained.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
+
+> No volume or clearance — not a compartmental population PK model.
+
+<div class="pk-model-meta" hidden drug="quizartinib" model-id="Quizartinib_Kang2020_reference" status="rejected" stale="false" population="healthy volunteers and patients with AML" measured-compound="quizartinib" parameterization="mechanistic" topology="parent_metabolite"></div>
+
+## Citation
+Kang D, Ludwig E, Jaworowicz D, Huang H, Fiedler-Kelly J, Cortes J et al. Population Pharmacokinetic Analysis of Quizartinib in Healthy Volunteers and Patients With Relapsed/Refractory Acute Myeloid Leukemia. Journal of clinical pharmacology 60(12):1629–1641 (2020).
+  ·  DOI: [10.1002/jcph.1680](https://doi.org/10.1002/jcph.1680)
+
+## Population and dosing
+
+**Population:** healthy volunteers and patients with AML · condition healthy volunteers and relapsed/refractory acute myeloid leukemia · age group adult · n = 649.
+
+**Dosing:** 20, 30, 60, 90 mg, oral.
+
+## Model
+
+**Structure:** parent + metabolite; no model was built for this record.  
+**Parameterization:** mechanistic.  
+**Parameters:** 5 extracted, plus 22 covariate effects.  
+**Availability:** No model was generated from this record.
+
+## Parameters
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
+| label | parameter | value | unit | IIV |
+|---|---|---|---|---|
+| Q1 (intercompartmental clearance 1), L/h | Q | 3.14 | L/h | 23.3 (None% RSE) |
+| Q2 (intercompartmental clearance 2), L/h | Q2 | 4.87 | L/h |  |
+| D1 (duration of zero‐order input to depot compartment), h | D1 | 3.86 | h | 8.69 (None% RSE) |
+| ALAG1 (absorption lag time), h | tlag | 4.09 | h | 7.36 (None% RSE) |
+| FMET (fraction of quizartinib converted to AC886) | fm | 0.500 | fraction of quizartinib converted to AC886 |  |
+| theta_q22_category | theta_q22_category | 2.04 |  |  |
+| theta_q63_category | theta_q63_category | 1.89 |  |  |
+| theta_q63_weight_power | theta_q63_weight_power | 12.6 |  |  |
+| theta_q63_weight_power | theta_q63_weight_power | 7.16 |  |  |
+| theta_q_weight_power | theta_q_weight_power | 23.3 |  |  |
+| theta_q82_category | theta_q82_category | 2.53 |  |  |
+| theta_q64_weight_power | theta_q64_weight_power | 10.9 |  |  |
+| theta_q64_age_power | theta_q64_age_power | 10.7 |  |  |
+| theta_q78_category | theta_q78_category | 1.86 |  |  |
+| theta_q49_category | theta_q49_category | 3.00 |  |  |
+| theta_q49_fed | theta_q49_fed | 8.75 |  |  |
+| theta_q40_category | theta_q40_category | 3.26 |  |  |
+| theta_q40_fasted | theta_q40_fasted | 1.86 |  |  |
+| theta_q40_fed | theta_q40_fed | 52.0 |  |  |
+| theta_q27_category | theta_q27_category | 3.07 |  |  |
+| theta_q351_weight_power | theta_q351_weight_power | 12.5 |  |  |
+| theta_q351_race | theta_q351_race | 14.1 |  |  |
+| theta_q351_category | theta_q351_category | 27.7 |  |  |
+| theta_q290_category | theta_q290_category | 8.27 |  |  |
+| theta_q63_category | theta_q63_category | 19.3 |  |  |
+| theta_q82_category | theta_q82_category | 1.06 |  |  |
+| theta_q30_category | theta_q30_category | 1.28 |  |  |
+
+<details class="pk-evidence"><summary>Evidence &amp; review</summary>
+
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.938). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
-
-**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -24,53 +80,41 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-## Citation
-Kang D et al., Population Pharmacokinetic Analysis of…, Journal of clinical pharmac… (2020)
-  ·  DOI: [10.1002/jcph.1680](https://doi.org/10.1002/jcph.1680)
+### All parameter columns
 
-<div class="pk-model-meta" hidden drug="quizartinib" model-id="Quizartinib_Kang2020_reference" status="rejected" stale="false" population="healthy volunteers and patients with AML" measured-compound="quizartinib" parameterization="mechanistic" topology="parent_metabolite"></div>
-
-**Model structure:** parent + metabolite; no model was built for this record.  
-**Parameters:** 5 extracted, plus 22 covariate effects.
-
-**Parameterization:** mechanistic.
-
-## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| Q1 (intercompartmental clearance 1), L/h | `Q30` · Q | 3.14 | L/h | 8.722222222222222e-07 | [l] / [h] | not captured | exact (1.0) | jcph1680-tbl-0003:row8:col1, jcph1680-tbl-0003:row8:col2 | — | 23.3 (None% RSE) |
-| Q2 (intercompartmental clearance 2), L/h | `Q99` · Q2 | 4.87 | L/h | 1.3527777777777778e-06 | [l] / [h] | not captured | exact (1.0) | jcph1680-tbl-0003:row13:col1, jcph1680-tbl-0003:row13:col2 | — | not captured |
-| D1 (duration of zero‐order input to depot compartment), h | `Q310` · D1 | 3.86 | h | 13896.0 | [h] | not captured | space_fold (0.95) | jcph1680-tbl-0003:row18:col1, jcph1680-tbl-0003:row18:col2 | — | 8.69 (None% RSE) |
-| ALAG1 (absorption lag time), h | `Q83` · tlag | 4.09 | h | 14724.0 | [h] | not captured | exact (1.0) | jcph1680-tbl-0003:row23:col1, jcph1680-tbl-0003:row23:col2 | — | 7.36 (None% RSE) |
-| FMET (fraction of quizartinib converted to AC886) | `Q45` · fm | 0.500 | fraction of quizartinib converted to AC886 | not captured | [fractionofquizartinibconvertedtoac886] | not captured | exact (1.0) | Kang_2020_table_4:row5:col1 | — | not captured |
-| theta_q22_category | `Q900` · theta_q22_category | 2.04 | not captured | not captured | not captured | not captured | not captured (not captured) | jcph1680-tbl-0003:row2:col1, jcph1680-tbl-0003:row2:col2 | — | not captured |
-| theta_q63_category | `Q900` · theta_q63_category | 1.89 | not captured | not captured | not captured | not captured | not captured (not captured) | jcph1680-tbl-0003:row5:col1, jcph1680-tbl-0003:row5:col2 | — | not captured |
-| theta_q63_weight_power | `Q900` · theta_q63_weight_power | 12.6 | not captured | not captured | not captured | not captured | not captured (not captured) | jcph1680-tbl-0003:row6:col1, jcph1680-tbl-0003:row6:col2 | — | not captured |
-| theta_q63_weight_power | `Q900` · theta_q63_weight_power | 7.16 | not captured | not captured | not captured | not captured | not captured (not captured) | jcph1680-tbl-0003:row7:col1, jcph1680-tbl-0003:row7:col2 | — | not captured |
-| theta_q_weight_power | `Q900` · theta_q_weight_power | 23.3 | not captured | not captured | not captured | not captured | not captured (not captured) | jcph1680-tbl-0003:row9:col1, jcph1680-tbl-0003:row9:col2 | — | not captured |
-| theta_q82_category | `Q900` · theta_q82_category | 2.53 | not captured | not captured | not captured | not captured | not captured (not captured) | jcph1680-tbl-0003:row10:col1, jcph1680-tbl-0003:row10:col2 | — | not captured |
-| theta_q64_weight_power | `Q900` · theta_q64_weight_power | 10.9 | not captured | not captured | not captured | not captured | not captured (not captured) | jcph1680-tbl-0003:row11:col1, jcph1680-tbl-0003:row11:col2 | — | not captured |
-| theta_q64_age_power | `Q900` · theta_q64_age_power | 10.7 | not captured | not captured | not captured | not captured | not captured (not captured) | jcph1680-tbl-0003:row12:col1, jcph1680-tbl-0003:row12:col2 | — | not captured |
-| theta_q78_category | `Q900` · theta_q78_category | 1.86 | not captured | not captured | not captured | not captured | not captured (not captured) | jcph1680-tbl-0003:row14:col1, jcph1680-tbl-0003:row14:col2 | — | not captured |
-| theta_q49_category | `Q900` · theta_q49_category | 3.00 | not captured | not captured | not captured | not captured | not captured (not captured) | jcph1680-tbl-0003:row15:col1, jcph1680-tbl-0003:row15:col2 | — | not captured |
-| theta_q49_fed | `Q900` · theta_q49_fed | 8.75 | not captured | not captured | not captured | not captured | not captured (not captured) | jcph1680-tbl-0003:row17:col1, jcph1680-tbl-0003:row17:col2 | — | not captured |
-| theta_q40_category | `Q900` · theta_q40_category | 3.26 | not captured | not captured | not captured | not captured | not captured (not captured) | jcph1680-tbl-0003:row19:col1, jcph1680-tbl-0003:row19:col2 | — | not captured |
-| theta_q40_fasted | `Q900` · theta_q40_fasted | 1.86 | not captured | not captured | not captured | not captured | not captured (not captured) | jcph1680-tbl-0003:row21:col1, jcph1680-tbl-0003:row21:col2 | — | not captured |
-| theta_q40_fed | `Q900` · theta_q40_fed | 52.0 | not captured | not captured | not captured | not captured | not captured (not captured) | jcph1680-tbl-0003:row22:col1, jcph1680-tbl-0003:row22:col2 | — | not captured |
-| theta_q27_category | `Q900` · theta_q27_category | 3.07 | not captured | not captured | not captured | not captured | not captured (not captured) | Kang_2020_table_4:row1:col1, Kang_2020_table_4:row1:col2 | — | not captured |
-| theta_q351_weight_power | `Q900` · theta_q351_weight_power | 12.5 | not captured | not captured | not captured | not captured | not captured (not captured) | Kang_2020_table_4:row2:col1, Kang_2020_table_4:row2:col2 | — | not captured |
-| theta_q351_race | `Q900` · theta_q351_race | 14.1 | not captured | not captured | not captured | not captured | not captured (not captured) | Kang_2020_table_4:row3:col1, Kang_2020_table_4:row3:col2 | — | not captured |
-| theta_q351_category | `Q900` · theta_q351_category | 27.7 | not captured | not captured | not captured | not captured | not captured (not captured) | Kang_2020_table_4:row4:col1, Kang_2020_table_4:row4:col2 | — | not captured |
-| theta_q290_category | `Q900` · theta_q290_category | 8.27 | not captured | not captured | not captured | not captured | not captured (not captured) | Kang_2020_table_4:row6:col1, Kang_2020_table_4:row6:col2 | — | not captured |
-| theta_q63_category | `Q900` · theta_q63_category | 19.3 | not captured | not captured | not captured | not captured | not captured (not captured) | Kang_2020_table_4:row7:col1, Kang_2020_table_4:row7:col2 | — | not captured |
-| theta_q82_category | `Q900` · theta_q82_category | 1.06 | not captured | not captured | not captured | not captured | not captured (not captured) | Kang_2020_table_4:row8:col1, Kang_2020_table_4:row8:col2 | — | not captured |
-| theta_q30_category | `Q900` · theta_q30_category | 1.28 | not captured | not captured | not captured | not captured | not captured (not captured) | Kang_2020_table_4:row9:col1, Kang_2020_table_4:row9:col2 | — | not captured |
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source | IIV |
+|---|---|---|---|---|---|---|---|---|---|
+| Q1 (intercompartmental clearance 1), L/h | `Q30` · Q | 3.14 | L/h | 8.722e-07 | m3/s | l/h | exact (1) | jcph1680-tbl-0003:row8:col1, jcph1680-tbl-0003:row8:col2 | 23.3 (None% RSE) |
+| Q2 (intercompartmental clearance 2), L/h | `Q99` · Q2 | 4.87 | L/h | 1.353e-06 | m3/s | l/h | exact (1) | jcph1680-tbl-0003:row13:col1, jcph1680-tbl-0003:row13:col2 |  |
+| D1 (duration of zero‐order input to depot compartment), h | `Q310` · D1 | 3.86 | h | 1.39e+04 | s | h | space_fold (0.95) | jcph1680-tbl-0003:row18:col1, jcph1680-tbl-0003:row18:col2 | 8.69 (None% RSE) |
+| ALAG1 (absorption lag time), h | `Q83` · tlag | 4.09 | h | 1.472e+04 | s | h | exact (1) | jcph1680-tbl-0003:row23:col1, jcph1680-tbl-0003:row23:col2 | 7.36 (None% RSE) |
+| FMET (fraction of quizartinib converted to AC886) | `Q45` · fm | 0.500 | fraction of quizartinib converted to AC886 |  |  | fractionofquizartinibconvertedtoac886 | exact (1) | Kang_2020_table_4:row5:col1 |  |
+| theta_q22_category | `Q900` · theta_q22_category | 2.04 |  |  |  |  |  | jcph1680-tbl-0003:row2:col1, jcph1680-tbl-0003:row2:col2 |  |
+| theta_q63_category | `Q900` · theta_q63_category | 1.89 |  |  |  |  |  | jcph1680-tbl-0003:row5:col1, jcph1680-tbl-0003:row5:col2 |  |
+| theta_q63_weight_power | `Q900` · theta_q63_weight_power | 12.6 |  |  |  |  |  | jcph1680-tbl-0003:row6:col1, jcph1680-tbl-0003:row6:col2 |  |
+| theta_q63_weight_power | `Q900` · theta_q63_weight_power | 7.16 |  |  |  |  |  | jcph1680-tbl-0003:row7:col1, jcph1680-tbl-0003:row7:col2 |  |
+| theta_q_weight_power | `Q900` · theta_q_weight_power | 23.3 |  |  |  |  |  | jcph1680-tbl-0003:row9:col1, jcph1680-tbl-0003:row9:col2 |  |
+| theta_q82_category | `Q900` · theta_q82_category | 2.53 |  |  |  |  |  | jcph1680-tbl-0003:row10:col1, jcph1680-tbl-0003:row10:col2 |  |
+| theta_q64_weight_power | `Q900` · theta_q64_weight_power | 10.9 |  |  |  |  |  | jcph1680-tbl-0003:row11:col1, jcph1680-tbl-0003:row11:col2 |  |
+| theta_q64_age_power | `Q900` · theta_q64_age_power | 10.7 |  |  |  |  |  | jcph1680-tbl-0003:row12:col1, jcph1680-tbl-0003:row12:col2 |  |
+| theta_q78_category | `Q900` · theta_q78_category | 1.86 |  |  |  |  |  | jcph1680-tbl-0003:row14:col1, jcph1680-tbl-0003:row14:col2 |  |
+| theta_q49_category | `Q900` · theta_q49_category | 3.00 |  |  |  |  |  | jcph1680-tbl-0003:row15:col1, jcph1680-tbl-0003:row15:col2 |  |
+| theta_q49_fed | `Q900` · theta_q49_fed | 8.75 |  |  |  |  |  | jcph1680-tbl-0003:row17:col1, jcph1680-tbl-0003:row17:col2 |  |
+| theta_q40_category | `Q900` · theta_q40_category | 3.26 |  |  |  |  |  | jcph1680-tbl-0003:row19:col1, jcph1680-tbl-0003:row19:col2 |  |
+| theta_q40_fasted | `Q900` · theta_q40_fasted | 1.86 |  |  |  |  |  | jcph1680-tbl-0003:row21:col1, jcph1680-tbl-0003:row21:col2 |  |
+| theta_q40_fed | `Q900` · theta_q40_fed | 52.0 |  |  |  |  |  | jcph1680-tbl-0003:row22:col1, jcph1680-tbl-0003:row22:col2 |  |
+| theta_q27_category | `Q900` · theta_q27_category | 3.07 |  |  |  |  |  | Kang_2020_table_4:row1:col1, Kang_2020_table_4:row1:col2 |  |
+| theta_q351_weight_power | `Q900` · theta_q351_weight_power | 12.5 |  |  |  |  |  | Kang_2020_table_4:row2:col1, Kang_2020_table_4:row2:col2 |  |
+| theta_q351_race | `Q900` · theta_q351_race | 14.1 |  |  |  |  |  | Kang_2020_table_4:row3:col1, Kang_2020_table_4:row3:col2 |  |
+| theta_q351_category | `Q900` · theta_q351_category | 27.7 |  |  |  |  |  | Kang_2020_table_4:row4:col1, Kang_2020_table_4:row4:col2 |  |
+| theta_q290_category | `Q900` · theta_q290_category | 8.27 |  |  |  |  |  | Kang_2020_table_4:row6:col1, Kang_2020_table_4:row6:col2 |  |
+| theta_q63_category | `Q900` · theta_q63_category | 19.3 |  |  |  |  |  | Kang_2020_table_4:row7:col1, Kang_2020_table_4:row7:col2 |  |
+| theta_q82_category | `Q900` · theta_q82_category | 1.06 |  |  |  |  |  | Kang_2020_table_4:row8:col1, Kang_2020_table_4:row8:col2 |  |
+| theta_q30_category | `Q900` · theta_q30_category | 1.28 |  |  |  |  |  | Kang_2020_table_4:row9:col1, Kang_2020_table_4:row9:col2 |  |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ## Departures & gaps
@@ -160,8 +204,8 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `qwen3.8-27b` | `parameters[theta_q61_category]` | not captured | 19.3 | only_one_extracted |
-| `qwen3.8-27b` | `parameters[theta_q63_category]` | 19.3 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[theta_q61_category]` |  | 19.3 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[theta_q63_category]` | 19.3 |  | only_one_extracted |
 
 </details>
 
@@ -173,26 +217,24 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained | ratio | tol | source |
-|---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
-| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
-| C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['jcph1680-tbl-0003:row8:col1', 'jcph1680-tbl-0003:row8:col2'] |
-| C5_dimension_Q310 | pass | [time] | not captured | not captured | not captured | ['jcph1680-tbl-0003:row18:col1', 'jcph1680-tbl-0003:row18:col2'] |
-| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['jcph1680-tbl-0003:row23:col1', 'jcph1680-tbl-0003:row23:col2'] |
-| C5_dimension_Q99 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['jcph1680-tbl-0003:row13:col1', 'jcph1680-tbl-0003:row13:col2'] |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 5 |  |
+| C0b_disposition_core | fail |  |  |  |
+| C2_reference | pass |  |  |  |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['jcph1680-tbl-0003:row8:col1', 'jcph1680-tbl-0003:row8:col2'] |
+| C5_dimension_Q310 | pass | [time] |  | ['jcph1680-tbl-0003:row18:col1', 'jcph1680-tbl-0003:row18:col2'] |
+| C5_dimension_Q83 | pass | [time] |  | ['jcph1680-tbl-0003:row23:col1', 'jcph1680-tbl-0003:row23:col2'] |
+| C5_dimension_Q99 | pass | [length] ** 3 / [time] |  | ['jcph1680-tbl-0003:row13:col1', 'jcph1680-tbl-0003:row13:col2'] |
+| C8_topology | pass |  |  |  |
 
 <details class="legend">
 <summary>Validation definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
-## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_quizartinib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kang_2020` / `Kang_2020::reference`)
-
+</details>
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
@@ -207,4 +249,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 05:29 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bquizartinib%5D%20Quizartinib_Kang2020_reference&body=Drug%3A%20quizartinib%0ARecord%3A%20Quizartinib_Kang2020_reference%0APaper%3A%20Kang_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_quizartinib/Quizartinib_Kang2020_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Generated by `docs.py` (scholarv2, release v26.09) · extracted 2026-10-07 05:29 UTC</sub>

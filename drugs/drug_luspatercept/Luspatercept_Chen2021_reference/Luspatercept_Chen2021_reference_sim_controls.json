@@ -54,7 +54,8 @@
   "scale": 1,
   "min": 40,
   "max": 120,
-  "step": 1
+  "step": 1,
+  "note": "Scales the volume (V = Vd per kg × weight) and nothing else."
  },
  {
   "key": "F",
@@ -83,7 +84,8 @@
   "max": 56,
   "step": 1,
   "fallback": true,
-  "default_s": 604800.0
+  "default_s": 604800.0,
+  "needs": "adminCount"
  },
  {
   "key": "stop_time",

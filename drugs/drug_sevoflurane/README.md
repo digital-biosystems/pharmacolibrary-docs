@@ -14,12 +14,6 @@ Sevoflurane is an inhalational general anaesthetic used to induce and maintain a
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q419394](https://www.wikidata.org/wiki/Q419394) and the WHO ATC classification; not checked by a person.</small>
 
-## Extraction summary
-
-| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
-|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 04:32 | 0:51 | 0/0/0 | 0/3/1 | 0/0/0 | 87,022/3,238 | einfracz / qwen3.8-27b | 15 | 3/3 | 6/0 | 0 |
-
 ## popPK records
 
 _not available_
@@ -28,17 +22,25 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Goel_2019_intravenous_cannulation_attempt_and_movement](drugs/drug_sevoflurane/pd_Goel_2019_intravenous_cannulation_attempt_and_movement.md) | intravenous cannulation attempt and movement ← sevoflurane · categorical (graded) response model | — | Goel N et al., Sevoflurane EC50 for intravenous cannul…, Acta anaesthesiologica Scan… (2019) | [10.1111/aas.13363](https://doi.org/10.1111/aas.13363) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Han_2010_QTc](drugs/drug_sevoflurane/pd_Han_2010_QTc.md) | QTc ← sevoflurane · delayed effect through an effect compartment | — | Han DW et al., Modeling the effect of sevoflurane on c…, Anesthesiology (2010) | [10.1097/ALN.0b013e3181f26d34](https://doi.org/10.1097/ALN.0b013e3181f26d34) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Kang_2021_TV](drugs/drug_sevoflurane/pd_Kang_2021_TV.md) | tidal volume ← sevoflurane · direct sigmoid Emax (Hill) effect | — | Kang P et al., A pharmacodynamic model of tidal volume…, Journal of pharmacokinetics… (2021) | [10.1007/s10928-020-09729-6](https://doi.org/10.1007/s10928-020-09729-6) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Kreuer_2009_BIS](drugs/drug_sevoflurane/pd_Kreuer_2009_BIS.md) | Bispectral index ← sevoflurane · direct sigmoid Emax (Hill) effect | — | Kreuer S et al., Comparative pharmacodynamic modeling of…, Journal of clinical monitor… (2009) | [10.1007/s10877-009-9196-6](https://doi.org/10.1007/s10877-009-9196-6) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Kreuer_2009_Narcotrend](drugs/drug_sevoflurane/pd_Kreuer_2009_Narcotrend.md) | Narcotrend index ← sevoflurane · direct sigmoid Emax (Hill) effect | — | Kreuer S et al., Comparative pharmacodynamic modeling of…, Journal of clinical monitor… (2009) | [10.1007/s10877-009-9196-6](https://doi.org/10.1007/s10877-009-9196-6) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Goel_2019_intravenous_cannulation_attempt_and_movement](drugs/drug_sevoflurane/pd_Goel_2019_intravenous_cannulation_attempt_and_movement.md) | intravenous cannulation attempt and movement ← sevoflurane · categorical (graded) response model | — | Goel N et al., Sevoflurane EC50 for intravenous cannul…, Acta anaesthesiologica Scan… (2019) | [10.1111/aas.13363](https://doi.org/10.1111/aas.13363) |
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Han_2010_QTc](drugs/drug_sevoflurane/pd_Han_2010_QTc.md) | QTc ← sevoflurane · delayed effect through an effect compartment | — | Han DW et al., Modeling the effect of sevoflurane on c…, Anesthesiology (2010) | [10.1097/ALN.0b013e3181f26d34](https://doi.org/10.1097/ALN.0b013e3181f26d34) |
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Kang_2021_TV](drugs/drug_sevoflurane/pd_Kang_2021_TV.md) | tidal volume ← sevoflurane · direct sigmoid Emax (Hill) effect | — | Kang P et al., A pharmacodynamic model of tidal volume…, Journal of pharmacokinetics… (2021) | [10.1007/s10928-020-09729-6](https://doi.org/10.1007/s10928-020-09729-6) |
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Kreuer_2009_BIS](drugs/drug_sevoflurane/pd_Kreuer_2009_BIS.md) | Bispectral index ← sevoflurane · direct sigmoid Emax (Hill) effect | — | Kreuer S et al., Comparative pharmacodynamic modeling of…, Journal of clinical monitor… (2009) | [10.1007/s10877-009-9196-6](https://doi.org/10.1007/s10877-009-9196-6) |
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Kreuer_2009_Narcotrend](drugs/drug_sevoflurane/pd_Kreuer_2009_Narcotrend.md) | Narcotrend index ← sevoflurane · direct sigmoid Emax (Hill) effect | — | Kreuer S et al., Comparative pharmacodynamic modeling of…, Journal of clinical monitor… (2009) | [10.1007/s10877-009-9196-6](https://doi.org/10.1007/s10877-009-9196-6) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 04:32 | 0:51 | 0/0/0 | 0/3/1 | 0/0/0 | 87,022/3,238 | einfracz / qwen3.8-27b | 15 | 3/3 | 6/0 | 0 |
 
 ## Coverage
 
@@ -82,5 +84,9 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | popPK | Schumacher_2009 | irrelevant | 0 | 0 | The study analyzes the pharmacodynamic interaction (EEG suppression and tolerance to stimulation) of propofol and sevoflurane, not the population-pharmacokinetic disposition parameters (CL, V) of sevoflurane. |
 | popPK | Williams_2020 | irrelevant | 2 | 1 | This is a theoretical mathematical model of inhalation kinetics using standard solubility coefficients, not an experimental study reporting measured pharmacokinetic parameters like clearance or volume for sevoflurane. |
 
+
+</details>
+
 ---
-<sub>Generated by `docs.py` (scholarv2)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
+<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>

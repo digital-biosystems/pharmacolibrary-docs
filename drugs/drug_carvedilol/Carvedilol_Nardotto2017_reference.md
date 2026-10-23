@@ -1,19 +1,57 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;carvedilol&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/&quot;},{&quot;label&quot;:&quot;Nardotto_2017 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Carvedilol_McTavish1993_reference&quot;,&quot;label&quot;:&quot;McTavish_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_McTavish1993_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carvedilol_Nikolic2013_reference&quot;,&quot;label&quot;:&quot;Nikolic_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Nikolic2013_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carvedilol_Yamamoto2024_final&quot;,&quot;label&quot;:&quot;Yamamoto_2024_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Yamamoto2024_final.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carvedilol_Yamamoto2024_final_s_carvedilol_final_model_estim&quot;,&quot;label&quot;:&quot;Yamamoto_2024_final_s_carvedilol_final_model_estimate_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Yamamoto2024_final_s_carvedilol_final_model_estim.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Carvedilol_McTavish1993_reference&quot;,&quot;label&quot;:&quot;McTavish_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_McTavish1993_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carvedilol_Nikolic2013_reference&quot;,&quot;label&quot;:&quot;Nikolic_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Nikolic2013_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carvedilol_Yamamoto2024_final&quot;,&quot;label&quot;:&quot;Yamamoto_2024_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Yamamoto2024_final.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carvedilol_Yamamoto2024_final_s_carvedilol_final_model_estim&quot;,&quot;label&quot;:&quot;Yamamoto_2024_final_s_carvedilol_final_model_estimate_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Yamamoto2024_final_s_carvedilol_final_model_estim.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # carvedilol — `Carvedilol_Nardotto2017_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.074), gpt-oss:120b (not confirmed, agreement 0.091). Primary extraction retained.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
+
+> The reviewer's verdict (Rejected, 2026-10-05 09:25 UTC) predates the latest extraction (2026-10-07 00:33 UTC); the status shown comes from the current checks.
+
+<div class="pk-model-meta" hidden drug="carvedilol" model-id="Carvedilol_Nardotto2017_reference" status="extracted" stale="true" population="type-2 diabetes and healthy subjects" measured-compound="carvedilol enantiomers" parameterization="mechanistic" topology="parent_metabolite"></div>
+
+## Citation
+Nardotto GHB, Lanchote VL, Coelho EB, Della Pasqua O. Population pharmacokinetics of carvedilol enantiomers and their metabolites in healthy subjects and type-2 diabetes patients. European journal of pharmaceutical sciences : official journal of the European Federation for Pharmaceutical Sciences 109S:S108–S115 (2017).
+  ·  DOI: [10.1016/j.ejps.2017.05.033](https://doi.org/10.1016/j.ejps.2017.05.033)
+
+## Population and dosing
+
+**Population:** type-2 diabetes and healthy subjects · condition type-2 diabetes and healthy · age group adult.
+
+**Dosing:** 12.5 mg, iv, single.
+
+**Dosed compound ≠ measured compound:** dosed carvedilol, measured carvedilol enantiomers.
+
+## Model
+
+**Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameterization:** mechanistic.  
+**Parameters:** 9 extracted.  
+**Availability:** Model available in **Models**; browser simulation unavailable.
+
+## Parameters
+| label | parameter | value | unit |
+|---|---|---|---|
+| KaR (h -1 ) | kabs | 10.63 | h -1 |
+| FR (%) | FR | 19.54 |  |
+| VcR (L) | V1 | 0.67 | L |
+| QR (L/h) | Q | 12.67 | L/h |
+| CLR_CYP2D6 (L/h) | CLfm | 15.42 | L/h |
+| (L/h) | CL | 4.85 | L/h |
+| Total CLR (L/h) | CLR | 16.25 | L/h |
+| OHC_CLR (L/h) | CL | 14.08 | L/h |
+| OHC_VcR (L) | V | 16.14 | L |
+
+<details class="pk-evidence"><summary>Evidence &amp; review</summary>
+
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.074). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
-
-**Model:** Model available in **Models**; browser simulation unavailable.
 
 ### Reviewer guidance
 
@@ -25,37 +63,23 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which m
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:25:09.159210+00:00) predates the upstream re-run (2026-10-07 00:33:23.563545+00:00). Current validate status: `extracted`.
+### All parameter columns
 
-> **Dose compound ≠ measured compound:** dosed `carvedilol`, measured `carvedilol enantiomers`.
-
-## Citation
-Nardotto GHB et al., Population pharmacokinetics of carvedil…, European journal of pharmac… (2017)
-  ·  DOI: [10.1016/j.ejps.2017.05.033](https://doi.org/10.1016/j.ejps.2017.05.033)
-
-<div class="pk-model-meta" hidden drug="carvedilol" model-id="Carvedilol_Nardotto2017_reference" status="extracted" stale="true" population="type-2 diabetes and healthy subjects" measured-compound="carvedilol enantiomers" parameterization="mechanistic" topology="parent_metabolite"></div>
-
-**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 9 extracted.
-
-**Parameterization:** mechanistic.
-
-## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| KaR (h -1 ) | `Q49` · kabs | 10.63 | h -1 | 0.002952777777777778 | [1] / [h] | not captured | exact (1.0) | tab_1:row6:col3, tab_1:row6:col4, tab_1:row6:col5, tab_1:row6:col7, tab_1:row6:col9 | — | not captured |
-| FR (%) | `Q43` · FR | 19.54 | not captured | not captured | not captured | not captured | exact (1.0) | tab_1:row8:col3, tab_1:row8:col4, tab_1:row8:col5, tab_1:row8:col7, tab_1:row8:col9 | — | not captured |
-| VcR (L) | `Q63` · V1 | 0.67 | L | 0.00067 | [l] | not captured | llm (0.6) | tab_1:row9:col3, tab_1:row9:col4, tab_1:row9:col6, tab_1:row9:col8 | — | not captured |
-| QR (L/h) | `Q30` · Q | 12.67 | L/h | 3.5194444444444445e-06 | [l] / [h] | not captured | llm (0.6) | tab_1:row10:col3, tab_1:row10:col4, tab_1:row10:col5, tab_1:row10:col7, tab_1:row10:col9 | — | not captured |
-| CLR_CYP2D6 (L/h) | `Q370` · CLfm | 15.42 | L/h | 4.2833333333333335e-06 | [l] / [h] | not captured | exact (1.0) | tab_1:row15:col3, tab_1:row15:col4, tab_1:row15:col5, tab_1:row15:col7, tab_1:row15:col9 | — | not captured |
-| (L/h) | `Q22` · CL | 4.85 | L/h | 1.3472222222222222e-06 | [l] / [h] | not captured | exact (1.0) | tab_1:row22:col2, tab_1:row22:col3, tab_1:row22:col4, tab_1:row22:col5, tab_1:row22:col6, tab_1:row22:col7, tab_1:row22:col9 | — | not captured |
-| Total CLR (L/h) | `Q26` · CLR | 16.25 | L/h | 4.513888888888889e-06 | [l] / [h] | not captured | llm_confirmed (0.6) | tab_1:row28:col7 | — | not captured |
-| OHC_CLR (L/h) | `Q22` · CL | 14.08 | L/h | 3.911111111111111e-06 | [l] / [h] | not captured | exact (1.0) | tab_1:row32:col3, tab_1:row32:col7 | — | not captured |
-| OHC_VcR (L) | `Q61` · V | 16.14 | L | 0.01614 | [l] | not captured | exact (1.0) | tab_1:row33:col3, tab_1:row33:col7 | — | not captured |
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
+|---|---|---|---|---|---|---|---|---|
+| KaR (h -1 ) | `Q49` · kabs | 10.63 | h -1 | 0.002953 | 1/s | 1/h | exact (1) | tab_1:row6:col3, tab_1:row6:col4, tab_1:row6:col5, tab_1:row6:col7, tab_1:row6:col9 |
+| FR (%) | `Q43` · FR | 19.54 |  |  |  |  | exact (1) | tab_1:row8:col3, tab_1:row8:col4, tab_1:row8:col5, tab_1:row8:col7, tab_1:row8:col9 |
+| VcR (L) | `Q63` · V1 | 0.67 | L | 0.00067 | m3 | l | llm (0.6) | tab_1:row9:col3, tab_1:row9:col4, tab_1:row9:col6, tab_1:row9:col8 |
+| QR (L/h) | `Q30` · Q | 12.67 | L/h | 3.519e-06 | m3/s | l/h | llm (0.6) | tab_1:row10:col3, tab_1:row10:col4, tab_1:row10:col5, tab_1:row10:col7, tab_1:row10:col9 |
+| CLR_CYP2D6 (L/h) | `Q370` · CLfm | 15.42 | L/h | 4.283e-06 | m3/s | l/h | exact (1) | tab_1:row15:col3, tab_1:row15:col4, tab_1:row15:col5, tab_1:row15:col7, tab_1:row15:col9 |
+| (L/h) | `Q22` · CL | 4.85 | L/h | 1.347e-06 | m3/s | l/h | exact (1) | tab_1:row22:col2, tab_1:row22:col3, tab_1:row22:col4, tab_1:row22:col5, tab_1:row22:col6, tab_1:row22:col7, tab_1:row22:col9 |
+| Total CLR (L/h) | `Q26` · CLR | 16.25 | L/h | 4.514e-06 | m3/s | l/h | llm_confirmed (0.6) | tab_1:row28:col7 |
+| OHC_CLR (L/h) | `Q22` · CL | 14.08 | L/h | 3.911e-06 | m3/s | l/h | exact (1) | tab_1:row32:col3, tab_1:row32:col7 |
+| OHC_VcR (L) | `Q61` · V | 16.14 | L | 0.01614 | m3 | l | exact (1) | tab_1:row33:col3, tab_1:row33:col7 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ## Departures & gaps
@@ -116,63 +140,42 @@ Nardotto GHB et al., Population pharmacokinetics of carvedil…, European journa
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
 | `gpt-oss-120b` | not confirmed | 0.074 (2/27 fields) | 25 |
-| `gpt-oss:120b` | not confirmed | 0.091 (2/22 fields) | 20 |
 
-<details><summary>45 field discrepancies</summary>
+<details><summary>25 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `model.links` | [['carvedilol', 'carvedilol metabolites', 'metabolism']] | [['carvedilol', 'carvedilol metabolite', 'metabolism'], ['r-carvedilol', 'carvedilol metabolite', 'metabolism'], ['s-carvedilol', 'carvedilol metabolite', 'metabolism']] | mismatch |
-| `gpt-oss-120b` | `parameters[]` | 4.85 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[clr_cyp2d6]` | not captured | 18.26 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[clr_cyp2d6]` | 15.42 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cls_cyp2d6]` | not captured | 17.31 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[fr]` | not captured | 17.67 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[fr]` | 19.54 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[kar]` | not captured | 10.25 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[kar]` | 10.63 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[kas]` | not captured | 15.26 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[ohc_clr]` | not captured | 14.08 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[ohc_clr]` | 14.08 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[ohc_vcr]` | not captured | 16.14 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[ohc_vcr]` | 16.14 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[qr]` | not captured | 18.45 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[qr]` | 12.67 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[qs]` | not captured | 15.12 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[total clr]` | not captured | 16.25 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[total clr]` | 16.25 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[vcr]` | not captured | 0.67 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[vcr]` | 0.67 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[vcs]` | not captured | 16.24 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[vpr]` | not captured | 16.62 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[vps]` | not captured | 16.24 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[]` | 4.85 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clr_cyp2d6]` |  | 18.26 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clr_cyp2d6]` | 15.42 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cls_cyp2d6]` |  | 17.31 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fr]` |  | 17.67 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fr]` | 19.54 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[kar]` |  | 10.25 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[kar]` | 10.63 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[kas]` |  | 15.26 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ohc_clr]` |  | 14.08 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ohc_clr]` | 14.08 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ohc_vcr]` |  | 16.14 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ohc_vcr]` | 16.14 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[qr]` |  | 18.45 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[qr]` | 12.67 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[qs]` |  | 15.12 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total clr]` |  | 16.25 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total clr]` | 16.25 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vcr]` |  | 0.67 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vcr]` | 0.67 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vcs]` |  | 16.24 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vpr]` |  | 16.62 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vps]` |  | 16.24 | only_one_extracted |
 | `gpt-oss-120b` | `screen.primary_analyte` | carvedilol enantiomers | carvedilol | mismatch |
-| `gpt-oss:120b` | `model.links` | [['carvedilol', 'carvedilol metabolites', 'metabolism']] | [['carvedilol', 'carvedilol metabolite', 'metabolism']] | mismatch |
-| `gpt-oss:120b` | `parameters[]` | 4.85 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[clr_cyp2d6]` | not captured | 15.42 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[clr_cyp2d6]` | 15.42 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[fr]` | not captured | 19.54 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[fr]` | 19.54 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[kar]` | not captured | 10.63 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[kar]` | 10.63 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[ohc_clr]` | not captured | 14.08 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[ohc_clr]` | 14.08 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[ohc_vcr]` | not captured | 16.14 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[ohc_vcr]` | 16.14 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[qr]` | not captured | 12.67 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[qr]` | 12.67 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[qs]` | not captured | 14.46 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[total clr]` | 16.25 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vcr]` | not captured | 0.67 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vcr]` | 0.67 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vpr]` | not captured | 64.44 | only_one_extracted |
-| `gpt-oss:120b` | `screen.primary_analyte` | carvedilol enantiomers | carvedilol | mismatch |
 
 </details>
 
@@ -184,35 +187,33 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained | ratio | tol | source |
-|---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 9 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row22:col2', 'tab_1:row22:col3', 'tab_1:row22:col4', 'tab_1:row22:col5', 'tab_1:row22:col6', 'tab_1:row22:col7', 'tab_1:row22:col9'] |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row32:col3', 'tab_1:row32:col7'] |
-| C5_dimension_Q26 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row28:col7'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row10:col3', 'tab_1:row10:col4', 'tab_1:row10:col5', 'tab_1:row10:col7', 'tab_1:row10:col9'] |
-| C5_dimension_Q370 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row15:col3', 'tab_1:row15:col4', 'tab_1:row15:col5', 'tab_1:row15:col7', 'tab_1:row15:col9'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['tab_1:row6:col3', 'tab_1:row6:col4', 'tab_1:row6:col5', 'tab_1:row6:col7', 'tab_1:row6:col9'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_1:row33:col3', 'tab_1:row33:col7'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_1:row9:col3', 'tab_1:row9:col4', 'tab_1:row9:col6', 'tab_1:row9:col8'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 4.85 | not captured | not captured | ['tab_1:row22:col2', 'tab_1:row22:col3', 'tab_1:row22:col4', 'tab_1:row22:col5', 'tab_1:row22:col6', 'tab_1:row22:col7', 'tab_1:row22:col9'] |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 4.85 L/h | not captured | not captured | ['tab_1:row22:col2', 'tab_1:row22:col3', 'tab_1:row22:col4', 'tab_1:row22:col5', 'tab_1:row22:col6', 'tab_1:row22:col7', 'tab_1:row22:col9'] |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 14.1 L/h | not captured | not captured | ['tab_1:row32:col3', 'tab_1:row32:col7'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 16.1 L | not captured | not captured | ['tab_1:row33:col3', 'tab_1:row33:col7'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 0.67 L | not captured | not captured | ['tab_1:row9:col3', 'tab_1:row9:col4', 'tab_1:row9:col6', 'tab_1:row9:col8'] |
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 9 |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['tab_1:row22:col2', 'tab_1:row22:col3', 'tab_1:row22:col4', 'tab_1:row22:col5', 'tab_1:row22:col6', 'tab_1:row22:col7', 'tab_1:row22:col9'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['tab_1:row32:col3', 'tab_1:row32:col7'] |
+| C5_dimension_Q26 | pass | [length] ** 3 / [time] |  | ['tab_1:row28:col7'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['tab_1:row10:col3', 'tab_1:row10:col4', 'tab_1:row10:col5', 'tab_1:row10:col7', 'tab_1:row10:col9'] |
+| C5_dimension_Q370 | pass | [length] ** 3 / [time] |  | ['tab_1:row15:col3', 'tab_1:row15:col4', 'tab_1:row15:col5', 'tab_1:row15:col7', 'tab_1:row15:col9'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['tab_1:row6:col3', 'tab_1:row6:col4', 'tab_1:row6:col5', 'tab_1:row6:col7', 'tab_1:row6:col9'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['tab_1:row33:col3', 'tab_1:row33:col7'] |
+| C5_dimension_Q63 | pass | [length] ** 3 |  | ['tab_1:row9:col3', 'tab_1:row9:col4', 'tab_1:row9:col6', 'tab_1:row9:col8'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 4.85 | ['tab_1:row22:col2', 'tab_1:row22:col3', 'tab_1:row22:col4', 'tab_1:row22:col5', 'tab_1:row22:col6', 'tab_1:row22:col7', 'tab_1:row22:col9'] |
+| C8_topology | pass |  |  |  |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 4.85 L/h | ['tab_1:row22:col2', 'tab_1:row22:col3', 'tab_1:row22:col4', 'tab_1:row22:col5', 'tab_1:row22:col6', 'tab_1:row22:col7', 'tab_1:row22:col9'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 14.1 L/h | ['tab_1:row32:col3', 'tab_1:row32:col7'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 16.1 L | ['tab_1:row33:col3', 'tab_1:row33:col7'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 0.67 L | ['tab_1:row9:col3', 'tab_1:row9:col4', 'tab_1:row9:col6', 'tab_1:row9:col8'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
-## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_carvedilol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Nardotto_2017` / `Nardotto_2017::reference`)
-
+</details>
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
@@ -230,6 +231,24 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 </div></div>
 
+## How to cite
+
+**Source paper** (the parameters are its): Nardotto GHB, Lanchote VL, Coelho EB, Della Pasqua O. Population pharmacokinetics of carvedilol enantiomers and their metabolites in healthy subjects and type-2 diabetes patients. European journal of pharmaceutical sciences : official journal of the European Federation for Pharmaceutical Sciences 109S:S108–S115 (2017). [doi:10.1016/j.ejps.2017.05.033](https://doi.org/10.1016/j.ejps.2017.05.033)
+
+**This record:** Pharmacolibrary v26.09, model `Carvedilol_Nardotto2017_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_carvedilol/Carvedilol_Nardotto2017_reference>
+
+```bibtex
+@misc{pharmacolibrary_CarvedilolNardotto2017reference,
+  title  = {{Pharmacolibrary model Carvedilol_Nardotto2017_reference}},
+  author = {{Pharmacolibrary}},
+  version = {v26.09},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_carvedilol/Carvedilol_Nardotto2017_reference},
+  note   = {Parameters from doi:10.1016/j.ejps.2017.05.033},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
+
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
 _Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
@@ -237,4 +256,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 00:33 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcarvedilol%5D%20Carvedilol_Nardotto2017_reference&body=Drug%3A%20carvedilol%0ARecord%3A%20Carvedilol_Nardotto2017_reference%0APaper%3A%20Nardotto_2017%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_carvedilol/Carvedilol_Nardotto2017_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Generated by `docs.py` (scholarv2, release v26.09) · extracted 2026-10-07 00:33 UTC</sub>

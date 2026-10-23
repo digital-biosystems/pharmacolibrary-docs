@@ -12,6 +12,18 @@
  "paper_doses_mg": [
   400.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Chien_2022:other_prose",
+    "value_si": 0.003531
+   },
+   {
+    "source": "Chien_2022:other_prose",
+    "value_si": 0.001073
+   }
+  ]
+ },
  "parameters": {
   "Cl": 3.6666666666666666e-06,
   "F": 1.0,

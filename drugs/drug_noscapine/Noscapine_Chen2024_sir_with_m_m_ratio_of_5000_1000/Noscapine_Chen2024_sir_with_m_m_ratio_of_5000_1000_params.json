@@ -12,6 +12,18 @@
  "paper_doses_mg": [
   50.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Chen_2024:results_prose",
+    "value_si": 3.679999999999999e-05
+   },
+   {
+    "source": "Chen_2024:results_prose",
+    "value_si": 4.6899999999999995e-05
+   }
+  ]
+ },
  "parameters": {
   "Cl": 0.00026083333333333335,
   "F": 1.0,

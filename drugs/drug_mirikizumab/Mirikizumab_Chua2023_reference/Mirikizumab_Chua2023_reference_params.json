@@ -5,6 +5,18 @@
  "observables": [
   "central.C"
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Chua_2023:other_prose",
+    "value_si": 0.09970000000000001
+   },
+   {
+    "source": "Chua_2023:other_prose",
+    "value_si": 0.0101
+   }
+  ]
+ },
  "parameters": {
   "Cl": 6.388888888888889e-09,
   "F": 1.0,

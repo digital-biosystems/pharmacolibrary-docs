@@ -19,6 +19,14 @@
   90.0,
   180.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Åstrand_2019:other_prose",
+    "value_si": 2096.0
+   }
+  ]
+ },
  "parameters": {
   "CL1": 3.596666666666667e-06,
   "CLm1": 2.833333333333333e-06,

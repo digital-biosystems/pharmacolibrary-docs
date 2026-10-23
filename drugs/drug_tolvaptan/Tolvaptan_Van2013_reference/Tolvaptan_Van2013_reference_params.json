@@ -1,11 +1,12 @@
 {
+ "dose_source": "paper",
  "model_id": "Tolvaptan_Van2013_reference",
  "molar_masses": {
-  "C_central": 0.448941
+  "central.C": 0.448941
  },
  "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "C_central"
+  "central.C"
  ],
  "paper_doses_kind": "discrete",
  "paper_doses_mg": [
@@ -31,10 +32,10 @@
   "weight": 70.0
  },
  "reference_peak_times": {
-  "C_central": 10100.200400801603
+  "central.C": 10100.2004008016
  },
  "reference_peaks": {
-  "C_central": 2.7860224552442735e-05
+  "central.C": 2.786022455241588e-05
  },
  "stop_time": 100800.0,
  "template": "PK_2C_enteral",

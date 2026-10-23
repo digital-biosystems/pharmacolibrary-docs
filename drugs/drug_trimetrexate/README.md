@@ -22,31 +22,41 @@ Trimetrexate is an antifolate drug used to treat pneumocystosis, a protozoal/fun
 |---|---|---|---|---|---|---|
 | trimetrexate | parent | 369.418 | C19H23N5O3 | DrugBank | [5583](https://pubchem.ncbi.nlm.nih.gov/compound/5583) | Grochow_1989, Grochow_1989_2 |
 
-## Extraction summary
+## Parameters across studies
 
-| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
-|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 05:26 | 1:26 | 0/1/1 | 1/1/0 | 0/0/0 | 26,156/2,494 | ollama / glm-5.3-flash | 1 | 0/0 | 1/0 | 0 |
+| parameter | as named | value | unit | as reported | population | n | species | status | record |
+|---|---|---|---|---|---|---|---|---|---|
+| V | V | 13 | L | 13 L | patients with advanced solid tumors | 35 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Grochow_1989_reference](drugs/drug_trimetrexate/Trimetrexate_Grochow1989_reference.md) |
+
+<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub><br><sub>route_to: `human_review`</sub> | [Grochow_1989_reference](drugs/drug_trimetrexate/Trimetrexate_Grochow1989_reference.md) | — | 1-compartment (no model) | 2 | Grochow LB et al., Phase I trial of trimetrexate glucurona…, Journal of the National Can… (1989) | [10.1093/jnci/81.2.124](https://doi.org/10.1093/jnci/81.2.124) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Grochow_1989_2_reference](drugs/drug_trimetrexate/Trimetrexate_Grochow1989v2_reference.md) | — | 1-compartment (no model) | 2 | Grochow LB et al., A phase I trial of trimetrexate glucuro…, Cancer chemotherapy and pha… (1989) | [10.1007/BF00304765](https://doi.org/10.1007/BF00304765) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub> | [Grochow_1989_reference](drugs/drug_trimetrexate/Trimetrexate_Grochow1989_reference.md) | — | 1-compartment (no model) | 2 | Grochow LB et al., Phase I trial of trimetrexate glucurona…, Journal of the National Can… (1989) | [10.1093/jnci/81.2.124](https://doi.org/10.1093/jnci/81.2.124) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Grochow_1989_2_reference](drugs/drug_trimetrexate/Trimetrexate_Grochow1989v2_reference.md) | — | 1-compartment (no model) | 2 | Grochow LB et al., A phase I trial of trimetrexate glucuro…, Cancer chemotherapy and pha… (1989) | [10.1007/BF00304765](https://doi.org/10.1007/BF00304765) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Lee_2010_1_Emax](drugs/drug_trimetrexate/pd_Lee_2010_1_Emax.md) | fractional inhibition of cell growth (1 - fraction affected) ← trimetrexate · direct Emax (saturable) effect | — | Lee JJ et al., Emax model and interaction index for as…, Frontiers in bioscience (El… (2010) | [10.2741/e116](https://doi.org/10.2741/e116) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [White_2003_cancer_cell_growth_inhibition](drugs/drug_trimetrexate/pd_White_2003_cancer_cell_growth_inhibition.md) | cancer cell growth inhibition ← Trimetrexate (TMQ) in three-drug mixture with LY309887 and Tomudex · direct sigmoid Emax (Hill) effect | — | White DB et al., A new nonlinear mixture response surfac…, Current drug metabolism (2003) | [10.2174/1389200033489316](https://doi.org/10.2174/1389200033489316) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Lee_2010_1_Emax](drugs/drug_trimetrexate/pd_Lee_2010_1_Emax.md) | fractional inhibition of cell growth (1 - fraction affected) ← trimetrexate · direct Emax (saturable) effect | — | Lee JJ et al., Emax model and interaction index for as…, Frontiers in bioscience (El… (2010) | [10.2741/e116](https://doi.org/10.2741/e116) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [White_2003_cancer_cell_growth_inhibition](drugs/drug_trimetrexate/pd_White_2003_cancer_cell_growth_inhibition.md) | cancer cell growth inhibition ← Trimetrexate (TMQ) in three-drug mixture with LY309887 and Tomudex · direct sigmoid Emax (Hill) effect | — | White DB et al., A new nonlinear mixture response surfac…, Current drug metabolism (2003) | [10.2174/1389200033489316](https://doi.org/10.2174/1389200033489316) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 05:26 | 1:26 | 0/1/1 | 1/1/0 | 0/0/0 | 26,156/2,494 | ollama / glm-5.3-flash | 1 | 0/0 | 1/0 | 0 |
 
 ## Coverage
 
@@ -78,5 +88,9 @@ _3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | PGx | Takemura_2001 | not_relevant | 2 | 2 | Abstract discusses general antifolate resistance mechanisms in cell lines, not a gene variant effect on trimetrexate PK/PD parameters. |
 | popPK | White_2003 | irrelevant | 0 | 0 | In vitro drug-interaction (synergism) modeling of cell growth inhibition; no pharmacokinetic disposition parameters for trimetrexate are reported. |
 
+
+</details>
+
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 05:26 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
+<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 05:26 UTC</sub>

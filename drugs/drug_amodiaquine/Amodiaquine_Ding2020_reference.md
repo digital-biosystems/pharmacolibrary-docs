@@ -4,15 +4,54 @@
 
 # amodiaquine — `Amodiaquine_Ding2020_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.483). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span>
+
+<div class="pk-model-meta" hidden drug="amodiaquine" model-id="Amodiaquine_Ding2020_reference" status="not_simulated" stale="false" population="African children under 5 years receiving seasonal malaria chemoprevention" measured-compound="desethylamodiaquine" parameterization="apparent" topology="parent_metabolite"></div>
+
+## Citation
+Ding J, Coldiron ME, Assao B, Guindo O, Blessborn D, Winterberg M et al. Adherence and Population Pharmacokinetic Properties of Amodiaquine When Used for Seasonal Malaria Chemoprevention in African Children. Clinical pharmacology and therapeutics 107(5):1179–1188 (2020).
+  ·  DOI: [10.1002/cpt.1707](https://doi.org/10.1002/cpt.1707)
+
+## Population and dosing
+
+**Population:** African children under 5 years receiving seasonal malaria chemoprevention · condition malaria chemoprevention (healthy children) · age group child · n = 136.
+
+**Dosed compound ≠ measured compound:** dosed amodiaquine, measured desethylamodiaquine.
+
+## Model
+
+**Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameterization:** CLm/F, Q/F, Q2/F, V1/F, V2/F, V3/F, Vm/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Parameters:** 12 extracted.  
+**Availability:** Model available in **Models**; browser simulation unavailable.
+
+## Parameters
+> ⚠️ Status "Not simulated": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
+| label | parameter | value | unit | RSE% | IIV |
+|---|---|---|---|---|---|
+| F AQ (%) | Frel | 100 |  |  |  |
+| k a (1/hour) | kabs | 2.85 | 1/h | 42.8 | 173 (26.0% RSE) |
+| CL/F AQ (L/hour) | CLm/F | 101 | L/hour | 12.3 | 22.2 (35.2% RSE) |
+| V C/F AQ (L) | Vm/F | 314 | L | 22.1 |  |
+| Q/F AQ (L/hour) | Q/F | 119 | L/hour | 27.3 |  |
+| V P/F AQ (L) | V2/F | 1820 | L | 15.8 |  |
+| CL/F DEAQ (L/hour) | CLm/F | 2.33 | L/hour | 7.8 |  |
+| V C/F DEAQ (L) | V1/F | 49.1 | L | 17.6 |  |
+| Q 1/F DEAQ (L/hour) | Q/F | 2.31 | L/hour | 29.9 |  |
+| V P1/F DEAQ (L) | V2/F | 363 | L | 16.9 |  |
+| Q 2/F DEAQ (L/hour) | Q2/F | 4.34 | L/hour | 47.2 |  |
+| V P2/F DEAQ (L) | V3/F | 98.1 | L | 42.9 |  |
+
+<details class="pk-evidence"><summary>Evidence &amp; review</summary>
+
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.483). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
-
-**Model:** Model available in **Models**; browser simulation unavailable.
 
 ### Reviewer guidance
 
@@ -24,46 +63,33 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> **Dose compound ≠ measured compound:** dosed `amodiaquine`, measured `desethylamodiaquine`.
+### All parameter columns
 
-## Citation
-Ding J et al., Adherence and Population Pharmacokineti…, Clinical pharmacology and t… (2020)
-  ·  DOI: [10.1002/cpt.1707](https://doi.org/10.1002/cpt.1707)
-
-<div class="pk-model-meta" hidden drug="amodiaquine" model-id="Amodiaquine_Ding2020_reference" status="not_simulated" stale="false" population="African children under 5 years receiving seasonal malaria chemoprevention" measured-compound="desethylamodiaquine" parameterization="apparent" topology="parent_metabolite"></div>
-
-**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 12 extracted.
-
-**Parameterization:** CLm/F, Q/F, Q2/F, V1/F, V2/F, V3/F, Vm/F — apparent, F unknown (apparent — bioavailability not identifiable).
-
-## Parameters
-> ⚠️ This record is not accepted (current status `not_simulated`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | RSE% | link | source | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| F AQ (%) | `Q87` · Frel | 100 | not captured | not captured | not captured | not captured | llm (0.6) | cpt1707-tbl-0001:row2:col1 | — | not captured |
-| k a (1/hour) | `Q49` · kabs | 2.85 | 1/h | 0.0007916666666666666 | 1/h | 42.8 | exact (1.0) | cpt1707-tbl-0001:row3:col1 | — | 173 (26.0% RSE) |
-| CL/F AQ (L/hour) | `Q351` · CLm/F | 101 | L/hour | 2.8055555555555557e-05 | [l] / [h] | 12.3 | llm_confirmed (0.6) | cpt1707-tbl-0001:row4:col1 | — | 22.2 (35.2% RSE) |
-| V C/F AQ (L) | `Q367` · Vm/F | 314 | L | 0.314 | [l] | 22.1 | llm (0.6) | cpt1707-tbl-0001:row5:col1 | — | not captured |
-| Q/F AQ (L/hour) | `Q69` · Q/F | 119 | L/hour | 3.305555555555556e-05 | [l] / [h] | 27.3 | llm_confirmed (0.6) | cpt1707-tbl-0001:row6:col1 | — | not captured |
-| V P/F AQ (L) | `Q82` · V2/F | 1820 | L | 1.82 | [l] | 15.8 | llm (0.6) | cpt1707-tbl-0001:row7:col1 | — | not captured |
-| CL/F DEAQ (L/hour) | `Q351` · CLm/F | 2.33 | L/hour | 6.472222222222222e-07 | [l] / [h] | 7.8 | exact (1.0) | cpt1707-tbl-0001:row10:col1 | — | not captured |
-| V C/F DEAQ (L) | `Q290` · V1/F | 49.1 | L | 0.049100000000000005 | [l] | 17.6 | exact (1.0) | cpt1707-tbl-0001:row11:col1 | — | not captured |
-| Q 1/F DEAQ (L/hour) | `Q69` · Q/F | 2.31 | L/hour | 6.416666666666666e-07 | [l] / [h] | 29.9 | exact (1.0) | cpt1707-tbl-0001:row12:col1 | — | not captured |
-| V P1/F DEAQ (L) | `Q82` · V2/F | 363 | L | 0.363 | [l] | 16.9 | exact (1.0) | cpt1707-tbl-0001:row13:col1 | — | not captured |
-| Q 2/F DEAQ (L/hour) | `Q80` · Q2/F | 4.34 | L/hour | 1.2055555555555555e-06 | [l] / [h] | 47.2 | special_case (0.95) | cpt1707-tbl-0001:row14:col1 | — | not captured |
-| V P2/F DEAQ (L) | `Q78` · V3/F | 98.1 | L | 0.09809999999999999 | [l] | 42.9 | exact (1.0) | cpt1707-tbl-0001:row15:col1 | — | not captured |
+| F AQ (%) | `Q87` · Frel | 100 |  |  |  |  |  | llm (0.6) | cpt1707-tbl-0001:row2:col1 |  |
+| k a (1/hour) | `Q49` · kabs | 2.85 | 1/h | 0.0007917 | 1/s | 1/h | 42.8 | exact (1) | cpt1707-tbl-0001:row3:col1 | 173 (26.0% RSE) |
+| CL/F AQ (L/hour) | `Q351` · CLm/F | 101 | L/hour | 2.806e-05 | m3/s | l/h | 12.3 | llm_confirmed (0.6) | cpt1707-tbl-0001:row4:col1 | 22.2 (35.2% RSE) |
+| V C/F AQ (L) | `Q367` · Vm/F | 314 | L | 0.314 | m3 | l | 22.1 | llm (0.6) | cpt1707-tbl-0001:row5:col1 |  |
+| Q/F AQ (L/hour) | `Q69` · Q/F | 119 | L/hour | 3.306e-05 | m3/s | l/h | 27.3 | llm_confirmed (0.6) | cpt1707-tbl-0001:row6:col1 |  |
+| V P/F AQ (L) | `Q82` · V2/F | 1820 | L | 1.82 | m3 | l | 15.8 | llm (0.6) | cpt1707-tbl-0001:row7:col1 |  |
+| CL/F DEAQ (L/hour) | `Q351` · CLm/F | 2.33 | L/hour | 6.472e-07 | m3/s | l/h | 7.8 | exact (1) | cpt1707-tbl-0001:row10:col1 |  |
+| V C/F DEAQ (L) | `Q290` · V1/F | 49.1 | L | 0.0491 | m3 | l | 17.6 | exact (1) | cpt1707-tbl-0001:row11:col1 |  |
+| Q 1/F DEAQ (L/hour) | `Q69` · Q/F | 2.31 | L/hour | 6.417e-07 | m3/s | l/h | 29.9 | exact (1) | cpt1707-tbl-0001:row12:col1 |  |
+| V P1/F DEAQ (L) | `Q82` · V2/F | 363 | L | 0.363 | m3 | l | 16.9 | exact (1) | cpt1707-tbl-0001:row13:col1 |  |
+| Q 2/F DEAQ (L/hour) | `Q80` · Q2/F | 4.34 | L/hour | 1.206e-06 | m3/s | l/h | 47.2 | special_case (0.95) | cpt1707-tbl-0001:row14:col1 |  |
+| V P2/F DEAQ (L) | `Q78` · V3/F | 98.1 | L | 0.0981 | m3 | l | 42.9 | exact (1) | cpt1707-tbl-0001:row15:col1 |  |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ### Unresolved rows _(no Q-code or no value — not parameters)_
-| label (paper) | Q-code | value | link |
-|---|---|---|---|
-| F | Q40 | not captured | exact |
+
+| label (paper) | Q-code | link |
+|---|---|---|
+| F | Q40 | exact |
 
 ## Departures & gaps
 
@@ -126,19 +152,19 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[cl/f aq]` | 101 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cl/f aq]` | not captured | 101 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f aq]` | 101 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f aq]` |  | 101 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[cl/f deaq].parameter_id` | Q351 | Q27 | mismatch |
-| `gpt-oss-120b` | `parameters[f aq]` | 100 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[f aq]` | not captured | 100 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[f]` | not captured | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[k a]` | 2.85 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[k a]` | not captured | 2.85 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[q/f aq]` | 119 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[q/f aq]` | not captured | 119 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v c/f aq]` | 314 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v c/f aq]` | not captured | 314 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v p/f aq]` | 1820 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f aq]` | 100 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f aq]` |  | 100 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k a]` | 2.85 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k a]` |  | 2.85 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q/f aq]` | 119 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q/f aq]` |  | 119 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v c/f aq]` | 314 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v c/f aq]` |  | 314 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v p/f aq]` | 1820 |  | only_one_extracted |
 | `gpt-oss-120b` | `screen.dose_compound` | amodiaquine | unknown | mismatch |
 | `gpt-oss-120b` | `screen.primary_analyte` | desethylamodiaquine | unknown | mismatch |
 
@@ -152,51 +178,47 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained | ratio | tol | source |
-|---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 12 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['cpt1707-tbl-0001:row11:col1'] |
-| C5_dimension_Q351 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['cpt1707-tbl-0001:row4:col1'] |
-| C5_dimension_Q351 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['cpt1707-tbl-0001:row10:col1'] |
-| C5_dimension_Q367 | pass | [length] ** 3 | not captured | not captured | not captured | ['cpt1707-tbl-0001:row5:col1'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['cpt1707-tbl-0001:row3:col1'] |
-| C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['cpt1707-tbl-0001:row6:col1'] |
-| C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['cpt1707-tbl-0001:row12:col1'] |
-| C5_dimension_Q78 | pass | [length] ** 3 | not captured | not captured | not captured | ['cpt1707-tbl-0001:row15:col1'] |
-| C5_dimension_Q80 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['cpt1707-tbl-0001:row14:col1'] |
-| C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['cpt1707-tbl-0001:row7:col1'] |
-| C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['cpt1707-tbl-0001:row13:col1'] |
-| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q290 | pass | volume within physiological range | 49.1 L | not captured | not captured | ['cpt1707-tbl-0001:row11:col1'] |
-| C9_phys_window_Q82 | pass | volume within physiological range | 1.82e+03 L | not captured | not captured | ['cpt1707-tbl-0001:row7:col1'] |
-| C9_phys_window_Q82 | pass | volume within physiological range | 363 L | not captured | not captured | ['cpt1707-tbl-0001:row13:col1'] |
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 12 |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
+| C5_dimension_Q290 | pass | [length] ** 3 |  | ['cpt1707-tbl-0001:row11:col1'] |
+| C5_dimension_Q351 | pass | [length] ** 3 / [time] |  | ['cpt1707-tbl-0001:row4:col1'] |
+| C5_dimension_Q351 | pass | [length] ** 3 / [time] |  | ['cpt1707-tbl-0001:row10:col1'] |
+| C5_dimension_Q367 | pass | [length] ** 3 |  | ['cpt1707-tbl-0001:row5:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['cpt1707-tbl-0001:row3:col1'] |
+| C5_dimension_Q69 | pass | [length] ** 3 / [time] |  | ['cpt1707-tbl-0001:row6:col1'] |
+| C5_dimension_Q69 | pass | [length] ** 3 / [time] |  | ['cpt1707-tbl-0001:row12:col1'] |
+| C5_dimension_Q78 | pass | [length] ** 3 |  | ['cpt1707-tbl-0001:row15:col1'] |
+| C5_dimension_Q80 | pass | [length] ** 3 / [time] |  | ['cpt1707-tbl-0001:row14:col1'] |
+| C5_dimension_Q82 | pass | [length] ** 3 |  | ['cpt1707-tbl-0001:row7:col1'] |
+| C5_dimension_Q82 | pass | [length] ** 3 |  | ['cpt1707-tbl-0001:row13:col1'] |
+| C7_apparent_coherence | pass |  |  |  |
+| C8_topology | pass |  |  |  |
+| C9_phys_window_Q290 | pass | volume within physiological range | 49.1 L | ['cpt1707-tbl-0001:row11:col1'] |
+| C9_phys_window_Q82 | pass | volume within physiological range | 1.82e+03 L | ['cpt1707-tbl-0001:row7:col1'] |
+| C9_phys_window_Q82 | pass | volume within physiological range | 363 L | ['cpt1707-tbl-0001:row13:col1'] |
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
-| T3_param_coverage | not captured | fail | 7 scholar param(s) emitted or defaulted | 5 covered | not captured | neither emitted nor in defaulted[]: ['V2/F', 'V2/F'] |
-| T3_shared_parameters | not captured | pass | 7 shared param(s) bound once | bound once | not captured | shared params must bind one value to both compartments |
-| T3_topology_template | not captured | fail | parent_metabolite_central → PK_3M_9C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | note |
+|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
+| T3_param_coverage | fail | 7 scholar param(s) emitted or defaulted | 5 covered | neither emitted nor in defaulted[]: ['V2/F', 'V2/F'] |
+| T3_shared_parameters | pass | 7 shared param(s) bound once | bound once | shared params must bind one value to both compartments |
+| T3_topology_template | fail | parent_metabolite_central → PK_3M_9C* | PK_1C_enteral | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Validation definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
-## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_amodiaquine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Ding_2020` / `Ding_2020::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_amodiaquine/models/modelica/Amodiaquine_Ding2020_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_amodiaquine/models/modelica/Amodiaquine_Ding2020_reference.deviation.json`
-
+</details>
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
@@ -214,6 +236,24 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 </div></div>
 
+## How to cite
+
+**Source paper** (the parameters are its): Ding J, Coldiron ME, Assao B, Guindo O, Blessborn D, Winterberg M et al. Adherence and Population Pharmacokinetic Properties of Amodiaquine When Used for Seasonal Malaria Chemoprevention in African Children. Clinical pharmacology and therapeutics 107(5):1179–1188 (2020). [doi:10.1002/cpt.1707](https://doi.org/10.1002/cpt.1707)
+
+**This record:** Pharmacolibrary v26.09, model `Amodiaquine_Ding2020_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_amodiaquine/Amodiaquine_Ding2020_reference>
+
+```bibtex
+@misc{pharmacolibrary_AmodiaquineDing2020reference,
+  title  = {{Pharmacolibrary model Amodiaquine_Ding2020_reference}},
+  author = {{Pharmacolibrary}},
+  version = {v26.09},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_amodiaquine/Amodiaquine_Ding2020_reference},
+  note   = {Parameters from doi:10.1002/cpt.1707},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
+
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
 _Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
@@ -221,4 +261,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 05:41 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bamodiaquine%5D%20Amodiaquine_Ding2020_reference&body=Drug%3A%20amodiaquine%0ARecord%3A%20Amodiaquine_Ding2020_reference%0APaper%3A%20Ding_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_amodiaquine/Amodiaquine_Ding2020_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Generated by `docs.py` (scholarv2, release v26.09) · extracted 2026-10-07 05:41 UTC</sub>

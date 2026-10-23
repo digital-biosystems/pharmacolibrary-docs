@@ -13,6 +13,38 @@
   60.0,
   180.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Jang_2023:other_prose",
+    "value_si": 0.00045017
+   },
+   {
+    "source": "Jang_2023:other_prose",
+    "value_si": 0.00056164
+   },
+   {
+    "source": "Jang_2023:other_prose",
+    "value_si": 0.00077089
+   },
+   {
+    "source": "Jang_2023:other_prose",
+    "value_si": 0.00047017
+   },
+   {
+    "source": "Jang_2023:other_prose",
+    "value_si": 0.00059383
+   },
+   {
+    "source": "Jang_2023:other_prose",
+    "value_si": 0.00084632
+   },
+   {
+    "source": "Jang_2023:other_prose",
+    "value_si": 0.0009302799999999999
+   }
+  ]
+ },
  "parameters": {
   "Cl": 1.0802777777777778e-05,
   "F": 1.0,

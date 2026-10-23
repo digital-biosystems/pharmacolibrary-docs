@@ -4,17 +4,70 @@
 
 # elinzanetant — `Elinzanetant_Willmann2024_reference`
 
-> ## <span class="pk-badge pk-badge--neutral" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">not simulated</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--neutral" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Not simulated</span>
+
+<div class="pk-model-meta" hidden drug="elinzanetant" model-id="Elinzanetant_Willmann2024_reference" status="not_simulated" stale="false" population="healthy adults and women with vasomotor symptoms" measured-compound="elinzanetant" parameterization="mechanistic" topology="general_linear"></div>
+
+## Citation
+Willmann S, Lloyd A, Austin R, Joseph S, Solms A, Zhang Y et al. Population pharmacokinetic-pharmacodynamic model of elinzanetant based on integrated clinical phase I and II data. CPT: pharmacometrics & systems pharmacology 13(12):2137–2149 (2024).
+  ·  DOI: [10.1002/psp4.13226](https://doi.org/10.1002/psp4.13226)
+
+## Population and dosing
+
+**Population:** healthy adults and women with vasomotor symptoms · condition vasomotor symptoms associated with menopause · age group adult · n = 366.
+
+**Dosing:** 40, 160 mg, oral, multiple, every 24 h.
+
+## Model
+
+**Structure:** 4-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
+**Parameterization:** mechanistic.  
+**Parameters:** 20 extracted.  
+**Availability:** Model available in **Models**; browser simulation unavailable.
+
+## Parameters
+> ⚠️ Status "Not simulated": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
+| label | parameter | value | unit | RSE% |
+|---|---|---|---|---|
+| CLpop | CL | 7.26 | L/h | 4.94 |
+| Vcpop | V | 23.7 | L | 4.64 |
+| Vp | V2 | 168 | L | 2.00 |
+| Q | Q | 6.57 | L/h | 2.56 |
+| KaREF d | kabs | 2.37 | 1/h | 7.22 |
+| ALAGREF d | tlag | 0.292 | h | 0.163 |
+| FREF e | fe | 0.367 | THETA | 1.78 |
+| ALFED2 | equation variable | 0.545 | THETA | 2.91 |
+| CL3034pop | CL | 4.14 | L/h | 5.44 |
+| Vc3034 | V1 | 3.58 | L | 7.76 |
+| Vp3034 | V2 | 15.6 | L | 4.56 |
+| Q3034 | Q | 3.65 | L/h | 9.05 |
+| Vmax3034 | equation variable | 24.1 | THETA | 10.8 |
+| CL27pop | CL | 4.11 | L/h | 5.85 |
+| Vc27 | V1 | 1.85 | L | 7.84 |
+| Vp27 | V2 | 40.4 | L | 5.83 |
+| Q27 | Q | 4.45 | L/h | 5.77 |
+| Vmax27 | equation variable | 42.6 | THETA | 12.6 |
+| Km27 | Km | 17.7 | ng/mL | 11.0 |
+| CL1821pop | CL | 9.10 | L/h | 6.14 |
+| Vc1821 | V | 0.636 | L | 9.86 |
+| Km18/21 | Km | 45.8 | ng/mL | 13.0 |
+| λ | kel | 2.07 | 1/h | 9.51 |
+| θSHIFT | θSHIFT | 8.05 |  |  |
+
+## Caveats
+
+- Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.
+
+<details class="pk-evidence"><summary>Evidence &amp; review</summary>
+
+**Status and checks:** <span class="pk-badge pk-badge--neutral" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Not simulated</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
-
-**Model:** Model available in **Models**; browser simulation unavailable.
-
-> **Caveat** (`covariates_not_exercised`): Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.
 
 ### Reviewer guidance
 
@@ -24,50 +77,38 @@ The record specifies 17 parameters, but only 9 were processed with valid SI valu
 
 <sub>reviewed by qwen3.8-27b</sub>
 
-## Citation
-Willmann S et al., Population pharmacokinetic-pharmacodyna…, CPT: pharmacometrics & syst… (2024)
-  ·  DOI: [10.1002/psp4.13226](https://doi.org/10.1002/psp4.13226)
+### All parameter columns
 
-<div class="pk-model-meta" hidden drug="elinzanetant" model-id="Elinzanetant_Willmann2024_reference" status="not_simulated" stale="false" population="healthy adults and women with vasomotor symptoms" measured-compound="elinzanetant" parameterization="mechanistic" topology="general_linear"></div>
-
-**Model structure:** 4-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
-**Parameters:** 20 extracted.
-
-**Parameterization:** mechanistic.
-
-## Parameters
-> ⚠️ This record is not accepted (current status `not_simulated`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| CLpop | `Q22` · CL | 7.26 | L/h | 2.0166666666666667e-06 | L/h | 4.94 | llm (0.6) | psp413226-tbl-0002:row2:col2, psp413226-tbl-0002:row2:col3, psp413226-tbl-0002:row2:col4, psp413226-tbl-0002:row2:col5 | — | not captured |
-| Vcpop | `Q61` · V | 23.7 | L | 0.0237 | L | 4.64 | llm (0.6) | psp413226-tbl-0002:row3:col2, psp413226-tbl-0002:row3:col3, psp413226-tbl-0002:row3:col4, psp413226-tbl-0002:row3:col5 | — | not captured |
-| Vp | `Q64` · V2 | 168 | L | 0.168 | L | 2.00 | exact (1.0) | psp413226-tbl-0002:row4:col2, psp413226-tbl-0002:row4:col3, psp413226-tbl-0002:row4:col4, psp413226-tbl-0002:row4:col5 | — | not captured |
-| Q | `Q30` · Q | 6.57 | L/h | 1.825e-06 | L/h | 2.56 | exact (1.0) | psp413226-tbl-0002:row5:col2, psp413226-tbl-0002:row5:col3, psp413226-tbl-0002:row5:col4, psp413226-tbl-0002:row5:col5 | — | not captured |
-| KaREF d | `Q49` · kabs | 2.37 | 1/h | 0.0006583333333333334 | 1/h | 7.22 | llm (0.6) | psp413226-tbl-0002:row6:col2, psp413226-tbl-0002:row6:col3, psp413226-tbl-0002:row6:col4, psp413226-tbl-0002:row6:col5 | — | not captured |
-| ALAGREF d | `Q83` · tlag | 0.292 | h | 1051.2 | h | 0.163 | exact (1.0) | psp413226-tbl-0002:row7:col2, psp413226-tbl-0002:row7:col3, psp413226-tbl-0002:row7:col4, psp413226-tbl-0002:row7:col5 | — | not captured |
-| FREF e | `Q44` · fe | 0.367 | THETA | not captured | [theta] | 1.78 | llm (0.6) | psp413226-tbl-0002:row8:col2, psp413226-tbl-0002:row8:col3, psp413226-tbl-0002:row8:col4, psp413226-tbl-0002:row8:col5 | — | not captured |
-| ALFED2 | `Q900` · equation variable | 0.545 | THETA | not captured | [theta] | 2.91 | llm (0.6) | psp413226-tbl-0002:row11:col2, psp413226-tbl-0002:row11:col3, psp413226-tbl-0002:row11:col4, psp413226-tbl-0002:row11:col5, psp413226-tbl-0002:row11:col6 | — | not captured |
-| CL3034pop | `Q22` · CL | 4.14 | L/h | 1.1499999999999998e-06 | L/h | 5.44 | exact (1.0) | psp413226-tbl-0002:row14:col2, psp413226-tbl-0002:row14:col3, psp413226-tbl-0002:row14:col4, psp413226-tbl-0002:row14:col5, psp413226-tbl-0002:row14:col6 | — | not captured |
-| Vc3034 | `Q63` · V1 | 3.58 | L | 0.0035800000000000003 | L | 7.76 | exact (1.0) | psp413226-tbl-0002:row15:col2, psp413226-tbl-0002:row15:col3, psp413226-tbl-0002:row15:col4, psp413226-tbl-0002:row15:col5, psp413226-tbl-0002:row15:col6 | — | not captured |
-| Vp3034 | `Q64` · V2 | 15.6 | L | 0.0156 | L | 4.56 | exact (1.0) | psp413226-tbl-0002:row16:col2, psp413226-tbl-0002:row16:col3, psp413226-tbl-0002:row16:col4, psp413226-tbl-0002:row16:col5, psp413226-tbl-0002:row16:col6 | — | not captured |
-| Q3034 | `Q30` · Q | 3.65 | L/h | 1.013888888888889e-06 | L/h | 9.05 | exact (1.0) | psp413226-tbl-0002:row17:col2, psp413226-tbl-0002:row17:col3, psp413226-tbl-0002:row17:col4, psp413226-tbl-0002:row17:col5, psp413226-tbl-0002:row17:col6 | — | not captured |
-| Vmax3034 | `Q900` · equation variable | 24.1 | THETA | not captured | [theta] | 10.8 | llm (0.6) | psp413226-tbl-0002:row18:col2, psp413226-tbl-0002:row18:col3, psp413226-tbl-0002:row18:col4, psp413226-tbl-0002:row18:col5, psp413226-tbl-0002:row18:col6 | — | not captured |
-| CL27pop | `Q22` · CL | 4.11 | L/h | 1.1416666666666668e-06 | L/h | 5.85 | exact (1.0) | psp413226-tbl-0002:row20:col2, psp413226-tbl-0002:row20:col3, psp413226-tbl-0002:row20:col4, psp413226-tbl-0002:row20:col5 | — | not captured |
-| Vc27 | `Q63` · V1 | 1.85 | L | 0.00185 | L | 7.84 | exact (1.0) | psp413226-tbl-0002:row21:col2, psp413226-tbl-0002:row21:col3, psp413226-tbl-0002:row21:col4, psp413226-tbl-0002:row21:col5 | — | not captured |
-| Vp27 | `Q64` · V2 | 40.4 | L | 0.0404 | L | 5.83 | exact (1.0) | psp413226-tbl-0002:row22:col2, psp413226-tbl-0002:row22:col3, psp413226-tbl-0002:row22:col4, psp413226-tbl-0002:row22:col5 | — | not captured |
-| Q27 | `Q30` · Q | 4.45 | L/h | 1.2361111111111111e-06 | L/h | 5.77 | exact (1.0) | psp413226-tbl-0002:row23:col2, psp413226-tbl-0002:row23:col3, psp413226-tbl-0002:row23:col4, psp413226-tbl-0002:row23:col5 | — | not captured |
-| Vmax27 | `Q900` · equation variable | 42.6 | THETA | not captured | [theta] | 12.6 | llm (0.6) | psp413226-tbl-0002:row24:col2, psp413226-tbl-0002:row24:col3, psp413226-tbl-0002:row24:col4, psp413226-tbl-0002:row24:col5 | — | not captured |
-| Km27 | `Q1` · Km | 17.7 | ng/mL | not captured | ng/mL | 11.0 | llm (0.6) | psp413226-tbl-0002:row25:col2, psp413226-tbl-0002:row25:col3, psp413226-tbl-0002:row25:col4, psp413226-tbl-0002:row25:col5 | — | not captured |
-| CL1821pop | `Q22` · CL | 9.10 | L/h | 2.5277777777777778e-06 | L/h | 6.14 | exact (1.0) | psp413226-tbl-0002:row26:col2, psp413226-tbl-0002:row26:col3, psp413226-tbl-0002:row26:col4, psp413226-tbl-0002:row26:col5, psp413226-tbl-0002:row26:col6 | — | not captured |
-| Vc1821 | `Q61` · V | 0.636 | L | 0.0006360000000000001 | L | 9.86 | exact (1.0) | psp413226-tbl-0002:row27:col2, psp413226-tbl-0002:row27:col3, psp413226-tbl-0002:row27:col4, psp413226-tbl-0002:row27:col5, psp413226-tbl-0002:row27:col6 | — | not captured |
-| Km18/21 | `Q1` · Km | 45.8 | ng/mL | not captured | ng/mL | 13.0 | llm (0.6) | psp413226-tbl-0002:row29:col2, psp413226-tbl-0002:row29:col3, psp413226-tbl-0002:row29:col4, psp413226-tbl-0002:row29:col5, psp413226-tbl-0002:row29:col6 | — | not captured |
-| λ | `Q47` · kel | 2.07 | 1/h | 0.000575 | 1/h | 9.51 | exact (1.0) | psp413226-tbl-0002:row33:col2, psp413226-tbl-0002:row33:col3, psp413226-tbl-0002:row33:col4, psp413226-tbl-0002:row33:col5 | — | not captured |
-| θSHIFT | `Q900` · θSHIFT | 8.05 | not captured | not captured | not captured | not captured | not captured (not captured) | not captured | — | not captured |
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | RSE% | link | source |
+|---|---|---|---|---|---|---|---|---|---|
+| CLpop | `Q22` · CL | 7.26 | L/h | 2.017e-06 | m3/s | L/h | 4.94 | llm (0.6) | psp413226-tbl-0002:row2:col2, psp413226-tbl-0002:row2:col3, psp413226-tbl-0002:row2:col4, psp413226-tbl-0002:row2:col5 |
+| Vcpop | `Q61` · V | 23.7 | L | 0.0237 | m3 | L | 4.64 | llm (0.6) | psp413226-tbl-0002:row3:col2, psp413226-tbl-0002:row3:col3, psp413226-tbl-0002:row3:col4, psp413226-tbl-0002:row3:col5 |
+| Vp | `Q64` · V2 | 168 | L | 0.168 | m3 | L | 2.00 | exact (1) | psp413226-tbl-0002:row4:col2, psp413226-tbl-0002:row4:col3, psp413226-tbl-0002:row4:col4, psp413226-tbl-0002:row4:col5 |
+| Q | `Q30` · Q | 6.57 | L/h | 1.825e-06 | m3/s | L/h | 2.56 | exact (1) | psp413226-tbl-0002:row5:col2, psp413226-tbl-0002:row5:col3, psp413226-tbl-0002:row5:col4, psp413226-tbl-0002:row5:col5 |
+| KaREF d | `Q49` · kabs | 2.37 | 1/h | 0.0006583 | 1/s | 1/h | 7.22 | llm (0.6) | psp413226-tbl-0002:row6:col2, psp413226-tbl-0002:row6:col3, psp413226-tbl-0002:row6:col4, psp413226-tbl-0002:row6:col5 |
+| ALAGREF d | `Q83` · tlag | 0.292 | h | 1051 | s | h | 0.163 | exact (1) | psp413226-tbl-0002:row7:col2, psp413226-tbl-0002:row7:col3, psp413226-tbl-0002:row7:col4, psp413226-tbl-0002:row7:col5 |
+| FREF e | `Q44` · fe | 0.367 | THETA |  |  | theta | 1.78 | llm (0.6) | psp413226-tbl-0002:row8:col2, psp413226-tbl-0002:row8:col3, psp413226-tbl-0002:row8:col4, psp413226-tbl-0002:row8:col5 |
+| ALFED2 | `Q900` · equation variable | 0.545 | THETA |  |  | theta | 2.91 | llm (0.6) | psp413226-tbl-0002:row11:col2, psp413226-tbl-0002:row11:col3, psp413226-tbl-0002:row11:col4, psp413226-tbl-0002:row11:col5, psp413226-tbl-0002:row11:col6 |
+| CL3034pop | `Q22` · CL | 4.14 | L/h | 1.15e-06 | m3/s | L/h | 5.44 | exact (1) | psp413226-tbl-0002:row14:col2, psp413226-tbl-0002:row14:col3, psp413226-tbl-0002:row14:col4, psp413226-tbl-0002:row14:col5, psp413226-tbl-0002:row14:col6 |
+| Vc3034 | `Q63` · V1 | 3.58 | L | 0.00358 | m3 | L | 7.76 | exact (1) | psp413226-tbl-0002:row15:col2, psp413226-tbl-0002:row15:col3, psp413226-tbl-0002:row15:col4, psp413226-tbl-0002:row15:col5, psp413226-tbl-0002:row15:col6 |
+| Vp3034 | `Q64` · V2 | 15.6 | L | 0.0156 | m3 | L | 4.56 | exact (1) | psp413226-tbl-0002:row16:col2, psp413226-tbl-0002:row16:col3, psp413226-tbl-0002:row16:col4, psp413226-tbl-0002:row16:col5, psp413226-tbl-0002:row16:col6 |
+| Q3034 | `Q30` · Q | 3.65 | L/h | 1.014e-06 | m3/s | L/h | 9.05 | exact (1) | psp413226-tbl-0002:row17:col2, psp413226-tbl-0002:row17:col3, psp413226-tbl-0002:row17:col4, psp413226-tbl-0002:row17:col5, psp413226-tbl-0002:row17:col6 |
+| Vmax3034 | `Q900` · equation variable | 24.1 | THETA |  |  | theta | 10.8 | llm (0.6) | psp413226-tbl-0002:row18:col2, psp413226-tbl-0002:row18:col3, psp413226-tbl-0002:row18:col4, psp413226-tbl-0002:row18:col5, psp413226-tbl-0002:row18:col6 |
+| CL27pop | `Q22` · CL | 4.11 | L/h | 1.142e-06 | m3/s | L/h | 5.85 | exact (1) | psp413226-tbl-0002:row20:col2, psp413226-tbl-0002:row20:col3, psp413226-tbl-0002:row20:col4, psp413226-tbl-0002:row20:col5 |
+| Vc27 | `Q63` · V1 | 1.85 | L | 0.00185 | m3 | L | 7.84 | exact (1) | psp413226-tbl-0002:row21:col2, psp413226-tbl-0002:row21:col3, psp413226-tbl-0002:row21:col4, psp413226-tbl-0002:row21:col5 |
+| Vp27 | `Q64` · V2 | 40.4 | L | 0.0404 | m3 | L | 5.83 | exact (1) | psp413226-tbl-0002:row22:col2, psp413226-tbl-0002:row22:col3, psp413226-tbl-0002:row22:col4, psp413226-tbl-0002:row22:col5 |
+| Q27 | `Q30` · Q | 4.45 | L/h | 1.236e-06 | m3/s | L/h | 5.77 | exact (1) | psp413226-tbl-0002:row23:col2, psp413226-tbl-0002:row23:col3, psp413226-tbl-0002:row23:col4, psp413226-tbl-0002:row23:col5 |
+| Vmax27 | `Q900` · equation variable | 42.6 | THETA |  |  | theta | 12.6 | llm (0.6) | psp413226-tbl-0002:row24:col2, psp413226-tbl-0002:row24:col3, psp413226-tbl-0002:row24:col4, psp413226-tbl-0002:row24:col5 |
+| Km27 | `Q1` · Km | 17.7 | ng/mL |  |  | ng/mL | 11.0 | llm (0.6) | psp413226-tbl-0002:row25:col2, psp413226-tbl-0002:row25:col3, psp413226-tbl-0002:row25:col4, psp413226-tbl-0002:row25:col5 |
+| CL1821pop | `Q22` · CL | 9.10 | L/h | 2.528e-06 | m3/s | L/h | 6.14 | exact (1) | psp413226-tbl-0002:row26:col2, psp413226-tbl-0002:row26:col3, psp413226-tbl-0002:row26:col4, psp413226-tbl-0002:row26:col5, psp413226-tbl-0002:row26:col6 |
+| Vc1821 | `Q61` · V | 0.636 | L | 0.000636 | m3 | L | 9.86 | exact (1) | psp413226-tbl-0002:row27:col2, psp413226-tbl-0002:row27:col3, psp413226-tbl-0002:row27:col4, psp413226-tbl-0002:row27:col5, psp413226-tbl-0002:row27:col6 |
+| Km18/21 | `Q1` · Km | 45.8 | ng/mL |  |  | ng/mL | 13.0 | llm (0.6) | psp413226-tbl-0002:row29:col2, psp413226-tbl-0002:row29:col3, psp413226-tbl-0002:row29:col4, psp413226-tbl-0002:row29:col5, psp413226-tbl-0002:row29:col6 |
+| λ | `Q47` · kel | 2.07 | 1/h | 0.000575 | 1/s | 1/h | 9.51 | exact (1) | psp413226-tbl-0002:row33:col2, psp413226-tbl-0002:row33:col3, psp413226-tbl-0002:row33:col4, psp413226-tbl-0002:row33:col5 |
+| θSHIFT | `Q900` · θSHIFT | 8.05 |  |  |  |  |  |  |  |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ## Departures & gaps
@@ -162,68 +203,64 @@ Willmann S et al., Population pharmacokinetic-pharmacodyna…, CPT: pharmacometr
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained | ratio | tol | source |
-|---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 20 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q1 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['psp413226-tbl-0002:row25:col2', 'psp413226-tbl-0002:row25:col3', 'psp413226-tbl-0002:row25:col4', 'psp413226-tbl-0002:row25:col5'] |
-| C5_dimension_Q1 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['psp413226-tbl-0002:row29:col2', 'psp413226-tbl-0002:row29:col3', 'psp413226-tbl-0002:row29:col4', 'psp413226-tbl-0002:row29:col5', 'psp413226-tbl-0002:row29:col6'] |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp413226-tbl-0002:row2:col2', 'psp413226-tbl-0002:row2:col3', 'psp413226-tbl-0002:row2:col4', 'psp413226-tbl-0002:row2:col5'] |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp413226-tbl-0002:row14:col2', 'psp413226-tbl-0002:row14:col3', 'psp413226-tbl-0002:row14:col4', 'psp413226-tbl-0002:row14:col5', 'psp413226-tbl-0002:row14:col6'] |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp413226-tbl-0002:row20:col2', 'psp413226-tbl-0002:row20:col3', 'psp413226-tbl-0002:row20:col4', 'psp413226-tbl-0002:row20:col5'] |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp413226-tbl-0002:row26:col2', 'psp413226-tbl-0002:row26:col3', 'psp413226-tbl-0002:row26:col4', 'psp413226-tbl-0002:row26:col5', 'psp413226-tbl-0002:row26:col6'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp413226-tbl-0002:row5:col2', 'psp413226-tbl-0002:row5:col3', 'psp413226-tbl-0002:row5:col4', 'psp413226-tbl-0002:row5:col5'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp413226-tbl-0002:row17:col2', 'psp413226-tbl-0002:row17:col3', 'psp413226-tbl-0002:row17:col4', 'psp413226-tbl-0002:row17:col5', 'psp413226-tbl-0002:row17:col6'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp413226-tbl-0002:row23:col2', 'psp413226-tbl-0002:row23:col3', 'psp413226-tbl-0002:row23:col4', 'psp413226-tbl-0002:row23:col5'] |
-| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['psp413226-tbl-0002:row33:col2', 'psp413226-tbl-0002:row33:col3', 'psp413226-tbl-0002:row33:col4', 'psp413226-tbl-0002:row33:col5'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['psp413226-tbl-0002:row6:col2', 'psp413226-tbl-0002:row6:col3', 'psp413226-tbl-0002:row6:col4', 'psp413226-tbl-0002:row6:col5'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp413226-tbl-0002:row3:col2', 'psp413226-tbl-0002:row3:col3', 'psp413226-tbl-0002:row3:col4', 'psp413226-tbl-0002:row3:col5'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp413226-tbl-0002:row27:col2', 'psp413226-tbl-0002:row27:col3', 'psp413226-tbl-0002:row27:col4', 'psp413226-tbl-0002:row27:col5', 'psp413226-tbl-0002:row27:col6'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp413226-tbl-0002:row15:col2', 'psp413226-tbl-0002:row15:col3', 'psp413226-tbl-0002:row15:col4', 'psp413226-tbl-0002:row15:col5', 'psp413226-tbl-0002:row15:col6'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp413226-tbl-0002:row21:col2', 'psp413226-tbl-0002:row21:col3', 'psp413226-tbl-0002:row21:col4', 'psp413226-tbl-0002:row21:col5'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp413226-tbl-0002:row4:col2', 'psp413226-tbl-0002:row4:col3', 'psp413226-tbl-0002:row4:col4', 'psp413226-tbl-0002:row4:col5'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp413226-tbl-0002:row16:col2', 'psp413226-tbl-0002:row16:col3', 'psp413226-tbl-0002:row16:col4', 'psp413226-tbl-0002:row16:col5', 'psp413226-tbl-0002:row16:col6'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp413226-tbl-0002:row22:col2', 'psp413226-tbl-0002:row22:col3', 'psp413226-tbl-0002:row22:col4', 'psp413226-tbl-0002:row22:col5'] |
-| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['psp413226-tbl-0002:row7:col2', 'psp413226-tbl-0002:row7:col3', 'psp413226-tbl-0002:row7:col4', 'psp413226-tbl-0002:row7:col5'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 7.26 | not captured | not captured | ['psp413226-tbl-0002:row2:col2', 'psp413226-tbl-0002:row2:col3', 'psp413226-tbl-0002:row2:col4', 'psp413226-tbl-0002:row2:col5'] |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 7.26 L/h | not captured | not captured | ['psp413226-tbl-0002:row2:col2', 'psp413226-tbl-0002:row2:col3', 'psp413226-tbl-0002:row2:col4', 'psp413226-tbl-0002:row2:col5'] |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 4.14 L/h | not captured | not captured | ['psp413226-tbl-0002:row14:col2', 'psp413226-tbl-0002:row14:col3', 'psp413226-tbl-0002:row14:col4', 'psp413226-tbl-0002:row14:col5', 'psp413226-tbl-0002:row14:col6'] |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 4.11 L/h | not captured | not captured | ['psp413226-tbl-0002:row20:col2', 'psp413226-tbl-0002:row20:col3', 'psp413226-tbl-0002:row20:col4', 'psp413226-tbl-0002:row20:col5'] |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 9.1 L/h | not captured | not captured | ['psp413226-tbl-0002:row26:col2', 'psp413226-tbl-0002:row26:col3', 'psp413226-tbl-0002:row26:col4', 'psp413226-tbl-0002:row26:col5', 'psp413226-tbl-0002:row26:col6'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 23.7 L | not captured | not captured | ['psp413226-tbl-0002:row3:col2', 'psp413226-tbl-0002:row3:col3', 'psp413226-tbl-0002:row3:col4', 'psp413226-tbl-0002:row3:col5'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 0.636 L | not captured | not captured | ['psp413226-tbl-0002:row27:col2', 'psp413226-tbl-0002:row27:col3', 'psp413226-tbl-0002:row27:col4', 'psp413226-tbl-0002:row27:col5', 'psp413226-tbl-0002:row27:col6'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 3.58 L | not captured | not captured | ['psp413226-tbl-0002:row15:col2', 'psp413226-tbl-0002:row15:col3', 'psp413226-tbl-0002:row15:col4', 'psp413226-tbl-0002:row15:col5', 'psp413226-tbl-0002:row15:col6'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 1.85 L | not captured | not captured | ['psp413226-tbl-0002:row21:col2', 'psp413226-tbl-0002:row21:col3', 'psp413226-tbl-0002:row21:col4', 'psp413226-tbl-0002:row21:col5'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 168 L | not captured | not captured | ['psp413226-tbl-0002:row4:col2', 'psp413226-tbl-0002:row4:col3', 'psp413226-tbl-0002:row4:col4', 'psp413226-tbl-0002:row4:col5'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 15.6 L | not captured | not captured | ['psp413226-tbl-0002:row16:col2', 'psp413226-tbl-0002:row16:col3', 'psp413226-tbl-0002:row16:col4', 'psp413226-tbl-0002:row16:col5', 'psp413226-tbl-0002:row16:col6'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 40.4 L | not captured | not captured | ['psp413226-tbl-0002:row22:col2', 'psp413226-tbl-0002:row22:col3', 'psp413226-tbl-0002:row22:col4', 'psp413226-tbl-0002:row22:col5'] |
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 20 |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
+| C5_dimension_Q1 | pass | [mass] / [length] ** 3 |  | ['psp413226-tbl-0002:row25:col2', 'psp413226-tbl-0002:row25:col3', 'psp413226-tbl-0002:row25:col4', 'psp413226-tbl-0002:row25:col5'] |
+| C5_dimension_Q1 | pass | [mass] / [length] ** 3 |  | ['psp413226-tbl-0002:row29:col2', 'psp413226-tbl-0002:row29:col3', 'psp413226-tbl-0002:row29:col4', 'psp413226-tbl-0002:row29:col5', 'psp413226-tbl-0002:row29:col6'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['psp413226-tbl-0002:row2:col2', 'psp413226-tbl-0002:row2:col3', 'psp413226-tbl-0002:row2:col4', 'psp413226-tbl-0002:row2:col5'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['psp413226-tbl-0002:row14:col2', 'psp413226-tbl-0002:row14:col3', 'psp413226-tbl-0002:row14:col4', 'psp413226-tbl-0002:row14:col5', 'psp413226-tbl-0002:row14:col6'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['psp413226-tbl-0002:row20:col2', 'psp413226-tbl-0002:row20:col3', 'psp413226-tbl-0002:row20:col4', 'psp413226-tbl-0002:row20:col5'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['psp413226-tbl-0002:row26:col2', 'psp413226-tbl-0002:row26:col3', 'psp413226-tbl-0002:row26:col4', 'psp413226-tbl-0002:row26:col5', 'psp413226-tbl-0002:row26:col6'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['psp413226-tbl-0002:row5:col2', 'psp413226-tbl-0002:row5:col3', 'psp413226-tbl-0002:row5:col4', 'psp413226-tbl-0002:row5:col5'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['psp413226-tbl-0002:row17:col2', 'psp413226-tbl-0002:row17:col3', 'psp413226-tbl-0002:row17:col4', 'psp413226-tbl-0002:row17:col5', 'psp413226-tbl-0002:row17:col6'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['psp413226-tbl-0002:row23:col2', 'psp413226-tbl-0002:row23:col3', 'psp413226-tbl-0002:row23:col4', 'psp413226-tbl-0002:row23:col5'] |
+| C5_dimension_Q47 | pass | 1 / [time] |  | ['psp413226-tbl-0002:row33:col2', 'psp413226-tbl-0002:row33:col3', 'psp413226-tbl-0002:row33:col4', 'psp413226-tbl-0002:row33:col5'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['psp413226-tbl-0002:row6:col2', 'psp413226-tbl-0002:row6:col3', 'psp413226-tbl-0002:row6:col4', 'psp413226-tbl-0002:row6:col5'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['psp413226-tbl-0002:row3:col2', 'psp413226-tbl-0002:row3:col3', 'psp413226-tbl-0002:row3:col4', 'psp413226-tbl-0002:row3:col5'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['psp413226-tbl-0002:row27:col2', 'psp413226-tbl-0002:row27:col3', 'psp413226-tbl-0002:row27:col4', 'psp413226-tbl-0002:row27:col5', 'psp413226-tbl-0002:row27:col6'] |
+| C5_dimension_Q63 | pass | [length] ** 3 |  | ['psp413226-tbl-0002:row15:col2', 'psp413226-tbl-0002:row15:col3', 'psp413226-tbl-0002:row15:col4', 'psp413226-tbl-0002:row15:col5', 'psp413226-tbl-0002:row15:col6'] |
+| C5_dimension_Q63 | pass | [length] ** 3 |  | ['psp413226-tbl-0002:row21:col2', 'psp413226-tbl-0002:row21:col3', 'psp413226-tbl-0002:row21:col4', 'psp413226-tbl-0002:row21:col5'] |
+| C5_dimension_Q64 | pass | [length] ** 3 |  | ['psp413226-tbl-0002:row4:col2', 'psp413226-tbl-0002:row4:col3', 'psp413226-tbl-0002:row4:col4', 'psp413226-tbl-0002:row4:col5'] |
+| C5_dimension_Q64 | pass | [length] ** 3 |  | ['psp413226-tbl-0002:row16:col2', 'psp413226-tbl-0002:row16:col3', 'psp413226-tbl-0002:row16:col4', 'psp413226-tbl-0002:row16:col5', 'psp413226-tbl-0002:row16:col6'] |
+| C5_dimension_Q64 | pass | [length] ** 3 |  | ['psp413226-tbl-0002:row22:col2', 'psp413226-tbl-0002:row22:col3', 'psp413226-tbl-0002:row22:col4', 'psp413226-tbl-0002:row22:col5'] |
+| C5_dimension_Q83 | pass | [time] |  | ['psp413226-tbl-0002:row7:col2', 'psp413226-tbl-0002:row7:col3', 'psp413226-tbl-0002:row7:col4', 'psp413226-tbl-0002:row7:col5'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 7.26 | ['psp413226-tbl-0002:row2:col2', 'psp413226-tbl-0002:row2:col3', 'psp413226-tbl-0002:row2:col4', 'psp413226-tbl-0002:row2:col5'] |
+| C8_topology | pass |  |  |  |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 7.26 L/h | ['psp413226-tbl-0002:row2:col2', 'psp413226-tbl-0002:row2:col3', 'psp413226-tbl-0002:row2:col4', 'psp413226-tbl-0002:row2:col5'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 4.14 L/h | ['psp413226-tbl-0002:row14:col2', 'psp413226-tbl-0002:row14:col3', 'psp413226-tbl-0002:row14:col4', 'psp413226-tbl-0002:row14:col5', 'psp413226-tbl-0002:row14:col6'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 4.11 L/h | ['psp413226-tbl-0002:row20:col2', 'psp413226-tbl-0002:row20:col3', 'psp413226-tbl-0002:row20:col4', 'psp413226-tbl-0002:row20:col5'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 9.1 L/h | ['psp413226-tbl-0002:row26:col2', 'psp413226-tbl-0002:row26:col3', 'psp413226-tbl-0002:row26:col4', 'psp413226-tbl-0002:row26:col5', 'psp413226-tbl-0002:row26:col6'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 23.7 L | ['psp413226-tbl-0002:row3:col2', 'psp413226-tbl-0002:row3:col3', 'psp413226-tbl-0002:row3:col4', 'psp413226-tbl-0002:row3:col5'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 0.636 L | ['psp413226-tbl-0002:row27:col2', 'psp413226-tbl-0002:row27:col3', 'psp413226-tbl-0002:row27:col4', 'psp413226-tbl-0002:row27:col5', 'psp413226-tbl-0002:row27:col6'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 3.58 L | ['psp413226-tbl-0002:row15:col2', 'psp413226-tbl-0002:row15:col3', 'psp413226-tbl-0002:row15:col4', 'psp413226-tbl-0002:row15:col5', 'psp413226-tbl-0002:row15:col6'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 1.85 L | ['psp413226-tbl-0002:row21:col2', 'psp413226-tbl-0002:row21:col3', 'psp413226-tbl-0002:row21:col4', 'psp413226-tbl-0002:row21:col5'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 168 L | ['psp413226-tbl-0002:row4:col2', 'psp413226-tbl-0002:row4:col3', 'psp413226-tbl-0002:row4:col4', 'psp413226-tbl-0002:row4:col5'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 15.6 L | ['psp413226-tbl-0002:row16:col2', 'psp413226-tbl-0002:row16:col3', 'psp413226-tbl-0002:row16:col4', 'psp413226-tbl-0002:row16:col5', 'psp413226-tbl-0002:row16:col6'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 40.4 L | ['psp413226-tbl-0002:row22:col2', 'psp413226-tbl-0002:row22:col3', 'psp413226-tbl-0002:row22:col4', 'psp413226-tbl-0002:row22:col5'] |
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_param_coverage | not captured | fail | 17 scholar param(s) emitted or defaulted | 9 covered | not captured | neither emitted nor in defaulted[]: ['V2', 'kabs', 'tlag', 'V1', 'V2', 'V1', 'V2', 'kel'] |
-| T3_topology_template | not captured | pass | general_linear → PK_General_Linear* | PK_General_Linear | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
-| T1_cmax | reference | skipped | not captured | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_cmin_ss | reference | skipped | not captured | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_cmin_ss | reference | skipped | 9 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| check | scenario | status | expected | obtained | note |
+|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_param_coverage |  | fail | 17 scholar param(s) emitted or defaulted | 9 covered | neither emitted nor in defaulted[]: ['V2', 'kabs', 'tlag', 'V1', 'V2', 'V1', 'V2', 'kel'] |
+| T3_topology_template |  | pass | general_linear → PK_General_Linear* | PK_General_Linear | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  |  | no engineer deviations to adjudicate |
+| T1_cmax | reference | skipped |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmin_ss | reference | skipped |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmin_ss | reference | skipped | 9 |  | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
-## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_elinzanetant/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Willmann_2024` / `Willmann_2024::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_elinzanetant/models/modelica/Elinzanetant_Willmann2024_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_elinzanetant/models/modelica/Elinzanetant_Willmann2024_reference.deviation.json`
-
+</details>
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
@@ -241,6 +278,24 @@ Willmann S et al., Population pharmacokinetic-pharmacodyna…, CPT: pharmacometr
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 </div></div>
 
+## How to cite
+
+**Source paper** (the parameters are its): Willmann S, Lloyd A, Austin R, Joseph S, Solms A, Zhang Y et al. Population pharmacokinetic-pharmacodynamic model of elinzanetant based on integrated clinical phase I and II data. CPT: pharmacometrics & systems pharmacology 13(12):2137–2149 (2024). [doi:10.1002/psp4.13226](https://doi.org/10.1002/psp4.13226)
+
+**This record:** Pharmacolibrary v26.09, model `Elinzanetant_Willmann2024_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_elinzanetant/Elinzanetant_Willmann2024_reference>
+
+```bibtex
+@misc{pharmacolibrary_ElinzanetantWillmann2024reference,
+  title  = {{Pharmacolibrary model Elinzanetant_Willmann2024_reference}},
+  author = {{Pharmacolibrary}},
+  version = {v26.09},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_elinzanetant/Elinzanetant_Willmann2024_reference},
+  note   = {Parameters from doi:10.1002/psp4.13226},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
+
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
 _Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
@@ -248,4 +303,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 08:15 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Belinzanetant%5D%20Elinzanetant_Willmann2024_reference&body=Drug%3A%20elinzanetant%0ARecord%3A%20Elinzanetant_Willmann2024_reference%0APaper%3A%20Willmann_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_elinzanetant/Elinzanetant_Willmann2024_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Generated by `docs.py` (scholarv2, release v26.09) · extracted 2026-10-07 08:15 UTC</sub>

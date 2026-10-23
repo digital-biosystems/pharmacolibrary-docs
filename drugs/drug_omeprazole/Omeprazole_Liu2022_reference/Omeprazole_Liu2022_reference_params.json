@@ -9,7 +9,7 @@
   "central.C"
  ],
  "parameters": {
-  "Cl": 9.333333333333334e-06,
+  "Cl": 3.888888888888889e-06,
   "F": 1.0,
   "MM": 0.345416,
   "Tlag": 0.0,
@@ -21,12 +21,12 @@
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 20084.96993987976
+  "central.C": 24933.06613226453
  },
  "reference_peaks": {
-  "central.C": 1.9609122187828335e-05
+  "central.C": 2.176380228362159e-05
  },
- "stop_time": 345600.0,
+ "stop_time": 777600.0,
  "template": "PK_1C_enteral",
  "template_fmu": "PK_1C_enteral.fmu"
 }

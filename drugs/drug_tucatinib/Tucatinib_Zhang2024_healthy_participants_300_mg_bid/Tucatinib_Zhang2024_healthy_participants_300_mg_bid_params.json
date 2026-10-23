@@ -12,6 +12,22 @@
  "paper_doses_mg": [
   300.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Zhang_2024:other_prose",
+    "value_si": 1.6
+   },
+   {
+    "source": "Zhang_2024:other_prose",
+    "value_si": 0.8
+   },
+   {
+    "source": "Zhang_2024:discussion_prose",
+    "value_si": 0.8
+   }
+  ]
+ },
  "parameters": {
   "Cl": 3.2500000000000004e-05,
   "F": 1.0,

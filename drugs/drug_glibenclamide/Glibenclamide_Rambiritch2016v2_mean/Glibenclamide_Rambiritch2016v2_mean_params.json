@@ -15,6 +15,18 @@
   10.0,
   20.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Rambiritch_2016_2:other_prose",
+    "value_si": 0.000376
+   },
+   {
+    "source": "Rambiritch_2016_2:other_prose",
+    "value_si": 0.000368
+   }
+  ]
+ },
  "parameters": {
   "Cl": 5.388888888888888e-07,
   "F": 1.0,

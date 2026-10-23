@@ -9,7 +9,7 @@
   "central.C"
  ],
  "parameters": {
-  "Cl": 8.03888888888889e-06,
+  "Cl": 8.027777777777777e-06,
   "F": 1.0,
   "MM": 0.2774018,
   "Tlag": 0.0,
@@ -17,16 +17,16 @@
   "adminCount": 1.0,
   "adminDuration": 600.0,
   "adminMass": 0.0001,
-  "ka": 0.0001388888888888889,
+  "ka": 0.0003333333333333333,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 15347.358741750464
+  "central.C": 8657.314629258517
  },
  "reference_peaks": {
-  "central.C": 0.0002194225461368681
+  "central.C": 0.0002600856839336858
  },
- "stop_time": 136800.0,
+ "stop_time": 144000.0,
  "template": "PK_1C_enteral",
  "template_fmu": "PK_1C_enteral.fmu"
 }

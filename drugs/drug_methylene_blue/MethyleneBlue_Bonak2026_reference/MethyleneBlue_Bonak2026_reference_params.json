@@ -17,16 +17,16 @@
   "adminCount": 1.0,
   "adminDuration": 600.0,
   "adminMass": 0.0001,
-  "ka": 0.0003111111111111111,
+  "ka": 0.0001388888888888889,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 10916.981986464849
+  "central.C": 18983.62066230011
  },
  "reference_peaks": {
-  "central.C": 0.0008883415350022577
+  "central.C": 0.000796600846273101
  },
- "stop_time": 345600.0,
+ "stop_time": 259200.0,
  "template": "PK_1C_enteral",
  "template_fmu": "PK_1C_enteral.fmu"
 }

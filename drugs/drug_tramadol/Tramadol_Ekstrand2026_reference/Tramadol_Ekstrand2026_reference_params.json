@@ -2,11 +2,11 @@
  "dose_source": "WHO ATC DDD 300 mg oral (N02AX02)",
  "model_id": "Tramadol_Ekstrand2026_reference",
  "molar_masses": {
-  "C_central": 0.263381
+  "central.C": 0.263381
  },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "C_central"
+  "central.C"
  ],
  "parameters": {
   "Cl": 9.722222222222224e-07,
@@ -21,10 +21,10 @@
   "weight": 70.0
  },
  "reference_peak_times": {
-  "C_central": 20574.198363680523
+  "central.C": 20574.19836368288
  },
  "reference_peaks": {
-  "C_central": 0.0013231482352234073
+  "central.C": 0.001323148235223345
  },
  "stop_time": 691200.0,
  "template": "PK_1C_enteral",

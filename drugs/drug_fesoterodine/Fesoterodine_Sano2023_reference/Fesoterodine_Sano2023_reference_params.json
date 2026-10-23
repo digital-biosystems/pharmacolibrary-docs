@@ -14,6 +14,14 @@
   4.0,
   8.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Sano_2023:results_prose",
+    "value_si": 2.55
+   }
+  ]
+ },
  "parameters": {
   "Cl": 1.9833333333333335e-05,
   "F": 1.0,

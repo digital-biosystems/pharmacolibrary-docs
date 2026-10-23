@@ -13,6 +13,18 @@
   87.5,
   1750.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "de_2018:other_prose",
+    "value_si": 0.263
+   },
+   {
+    "source": "de_2018:other_prose",
+    "value_si": 0.000785
+   }
+  ]
+ },
  "parameters": {
   "Cl": 7.333333333333334e-09,
   "F": 1.0,

@@ -8,6 +8,18 @@
  "observables": [
   "central.C"
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Calderin_2025:other_prose",
+    "value_si": 2.75e-05
+   },
+   {
+    "source": "Calderin_2025:other_prose",
+    "value_si": 3.47e-05
+   }
+  ]
+ },
  "parameters": {
   "Cl": 3.638888888888889e-05,
   "F": 1.0,

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D11A&quot;,&quot;href&quot;:&quot;atc/D11A.md&quot;},{&quot;label&quot;:&quot;abrocitinib&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Abrocitinib_Wojciechowski2022_reference&quot;,&quot;label&quot;:&quot;Wojciechowski_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abrocitinib/Abrocitinib_Wojciechowski2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Abrocitinib_Wojciechowski2022_reference&quot;,&quot;label&quot;:&quot;Wojciechowski_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abrocitinib/Abrocitinib_Wojciechowski2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # abrocitinib
 
@@ -23,32 +23,51 @@ Abrocitinib is a protein kinase inhibitor used to treat atopic dermatitis. It is
 |---|---|---|---|---|---|---|
 | abrocitinib | parent | 323.42 | C14H21N5O2S | DrugBank | — | Wojciechowski_2022 |
 
-## Extraction summary
+## Start here
 
-| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
-|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 07:45 | 3:30 | 0/0/1 | 2/1/0 | 0/0/0 | 243,422/23,741 | einfracz / qwen3.8-27b | 7 | 0/7 | 6/1 | 0 |
+> **Wojciechowski_2022_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> healthy individuals and patients with psoriasis or atopic dermatitis, n = 995. [Run it in the simulator](drugs/drug_abrocitinib/Abrocitinib_Wojciechowski2022_reference.md?tab=Simulation) · [record](drugs/drug_abrocitinib/Abrocitinib_Wojciechowski2022_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
+## Parameters across studies
+
+| parameter | as named | value | unit | as reported | population | n | species | status | record |
+|---|---|---|---|---|---|---|---|---|---|
+| CL | CL | 21.7 | L/h | 21.7 L/h | healthy individuals and patients with psoriasis or atopic dermatitis | 995 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Wojciechowski_2022_reference](drugs/drug_abrocitinib/Abrocitinib_Wojciechowski2022_reference.md) |
+| V | V1 | 86.3 | L | 86.3 L | healthy individuals and patients with psoriasis or atopic dermatitis | 995 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Wojciechowski_2022_reference](drugs/drug_abrocitinib/Abrocitinib_Wojciechowski2022_reference.md) |
+| ka | kabs | 3.99 | 1/h | 3.99 h−1 | healthy individuals and patients with psoriasis or atopic dermatitis | 995 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Wojciechowski_2022_reference](drugs/drug_abrocitinib/Abrocitinib_Wojciechowski2022_reference.md) |
+| F | Fab | 0.013 |  | 1.3 | healthy individuals and patients with psoriasis or atopic dermatitis | 995 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Wojciechowski_2022_reference](drugs/drug_abrocitinib/Abrocitinib_Wojciechowski2022_reference.md) |
+
+<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.393). Primary extraction retained.">cross-check: disputed</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: T1_cmax</sub><br><sub>blocking: unreported model parameter default(s): F</sub><br><sub>route_to: `scholar`</sub> | [Wojciechowski_2022_reference](drugs/drug_abrocitinib/Abrocitinib_Wojciechowski2022_reference.md) | ▶ model + simulator | 2-compartment, oral | 7 (+5 cov.) | Wojciechowski J et al., Population Pharmacokinetics of Abrociti…, Clinical pharmacokinetics (2022) | [10.1007/s40262-021-01104-z](https://doi.org/10.1007/s40262-021-01104-z) |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: T1_cmax</sub><br><sub>blocking: unreported model parameter default(s): F</sub> | [Wojciechowski_2022_reference](drugs/drug_abrocitinib/Abrocitinib_Wojciechowski2022_reference.md) | ▶ model + simulator | 2-compartment, oral | 7 (+5 cov.) | Wojciechowski J et al., Population Pharmacokinetics of Abrociti…, Clinical pharmacokinetics (2022) | [10.1007/s40262-021-01104-z](https://doi.org/10.1007/s40262-021-01104-z) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.625). Primary extraction retained.">cross-check: disputed</span> | [Soto_2020_PLT](drugs/drug_abrocitinib/pd_Soto_2020_PLT.md) | platelet count ← abrocitinib · indirect response — drug inhibits the production of platelet count | — | Soto E et al., Kinetic-Pharmacodynamic Model of Platel…, CPT: pharmacometrics & syst… (2020) | [10.1002/psp4.12548](https://doi.org/10.1002/psp4.12548) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> | [Wojciechowski_2022_2_CIRC](drugs/drug_abrocitinib/pd_Wojciechowski_2022_2_CIRC.md) | platelet count ← abrocitinib · disease-progression model | model (no simulator) | Wojciechowski J et al., Population pharmacokinetic-pharmacodyna…, British journal of clinical… (2022) | [10.1111/bcp.15334](https://doi.org/10.1111/bcp.15334) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.625). Primary extraction retained.">cross-check: disputed</span> | [Wang_2022_2_HR](drugs/drug_abrocitinib/pd_Wang_2022_2_HR.md) | change from baseline in HR (∆HR) ← abrocitinib · direct linear effect | model (no simulator) | Wang X et al., Population Pharmacokinetic/Pharmacodyna…, Clinical pharmacology in dr… (2022) | [10.1002/cpdd.1111](https://doi.org/10.1002/cpdd.1111) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.625). Primary extraction retained.">cross-check: disputed</span> | [Wang_2022_2_QTcF](drugs/drug_abrocitinib/pd_Wang_2022_2_QTcF.md) | change from baseline in Fridericia-corrected QT (∆QTcF) ← abrocitinib · direct linear effect | model (no simulator) | Wang X et al., Population Pharmacokinetic/Pharmacodyna…, Clinical pharmacology in dr… (2022) | [10.1002/cpdd.1111](https://doi.org/10.1002/cpdd.1111) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Soto_2020_PLT](drugs/drug_abrocitinib/pd_Soto_2020_PLT.md) | platelet count ← abrocitinib · indirect response — drug inhibits the production of platelet count | — | Soto E et al., Kinetic-Pharmacodynamic Model of Platel…, CPT: pharmacometrics & syst… (2020) | [10.1002/psp4.12548](https://doi.org/10.1002/psp4.12548) |
+| <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Wojciechowski_2022_2_CIRC](drugs/drug_abrocitinib/pd_Wojciechowski_2022_2_CIRC.md) | platelet count ← abrocitinib · disease-progression model | model (no simulator) | Wojciechowski J et al., Population pharmacokinetic-pharmacodyna…, British journal of clinical… (2022) | [10.1111/bcp.15334](https://doi.org/10.1111/bcp.15334) |
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Wang_2022_2_HR](drugs/drug_abrocitinib/pd_Wang_2022_2_HR.md) | change from baseline in HR (∆HR) ← abrocitinib · direct linear effect | model (no simulator) | Wang X et al., Population Pharmacokinetic/Pharmacodyna…, Clinical pharmacology in dr… (2022) | [10.1002/cpdd.1111](https://doi.org/10.1002/cpdd.1111) |
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Wang_2022_2_QTcF](drugs/drug_abrocitinib/pd_Wang_2022_2_QTcF.md) | change from baseline in Fridericia-corrected QT (∆QTcF) ← abrocitinib · direct linear effect | model (no simulator) | Wang X et al., Population Pharmacokinetic/Pharmacodyna…, Clinical pharmacology in dr… (2022) | [10.1002/cpdd.1111](https://doi.org/10.1002/cpdd.1111) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 07:45 | 3:30 | 0/0/1 | 2/1/0 | 0/0/0 | 243,422/23,741 | einfracz / qwen3.8-27b | 7 | 0/7 | 6/1 | 0 |
 
 ## Coverage
 
@@ -79,5 +98,9 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | popPK | Wojciechowski_2022_2 | irrelevant | 2 | 0 | This is a PK-PD model of platelet counts (pharmacodynamics), not a study reporting quantitative pharmacokinetic disposition parameters (CL, V, ka) for abrocitinib itself; PK values are cited from a previous separate study (ref 8). |
 | popPK | Wojciechowski_2022_3 | irrelevant | 0 | 0 | The provided evidence is a correction notice regarding the licensing and copyright of the original article, containing no pharmacokinetic data, model parameters, or numeric values for abrocitinib. |
 
+
+</details>
+
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 07:43 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
+<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 07:43 UTC</sub>

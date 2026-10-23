@@ -1,22 +1,88 @@
 {
+ "dose_source": "paper",
  "model_id": "Clopidogrel_Grafeneder2024_hv",
- "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "molar_masses": {
+  "central.C": 0.321822
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "C_central"
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  75.0,
+  300.0
  ],
  "parameters": {
-  "Cl": 1.3166666666666666e-06,
-  "F": 1.0,
-  "VdPerKg": 5.8971428571428564e-05,
+  "Cl": 1.4283333333333334e-06,
+  "F": 0.9,
+  "MM": 0.321822,
+  "Tlag": 0.0,
+  "VdPerKg": 0.00010754285714285715,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 7.5e-05,
+  "ka": 0.0016527777777777778,
   "weight": 70.0
  },
+ "pgx": {
+  "effects": {
+   "Intermediate": [
+    {
+     "compound": "clopidogrel",
+     "parameter": "Clearance [ml/min]",
+     "reference": 85.7,
+     "scale": "linear_fractional",
+     "theta": 7.0,
+     "value": 93981.46167731889
+    }
+   ],
+   "Rapid": [
+    {
+     "compound": "clopidogrel",
+     "parameter": "Clearance [ml/min]",
+     "reference": 85.7,
+     "scale": "linear_fractional",
+     "theta": 1.0,
+     "value": 232.95675269894016
+    }
+   ]
+  },
+  "gene": "CYP2C19",
+  "labels": {
+   "Intermediate": "Intermediate metabolizer",
+   "Normal": "Normal metabolizer (reference)",
+   "Rapid": "Rapid metabolizer"
+  },
+  "note": "Each phenotype runs the same template with the parameters the gene acts on changed as the paper states (a fraction on the logit scale), and every parameter the template derives from them recomputed; the reference phenotype is the record's own model.",
+  "order": [
+   "Intermediate",
+   "Normal",
+   "Rapid"
+  ],
+  "phenotypes": {
+   "Intermediate": {
+    "Cl": 0.0015663576946219817
+   },
+   "Normal": {},
+   "Rapid": {
+    "Cl": 3.882612544982336e-06
+   }
+  },
+  "record": "Grafeneder_2024::hv",
+  "reference": "Normal",
+  "sources": [
+   "Grafeneder_2024::hv covariate intermediate_metabolizer",
+   "Grafeneder_2024::hv covariate rapid_metabolizer"
+  ]
+ },
+ "reference_peak_times": {
+  "central.C": 1866.948156694648
+ },
  "reference_peaks": {
-  "C_central": 0.022047843781493718
+  "central.C": 0.006740436138330834
  },
  "stop_time": 86400.0,
- "template": "PK_1C",
- "template_fmu": "PK_1C.fmu"
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
 }

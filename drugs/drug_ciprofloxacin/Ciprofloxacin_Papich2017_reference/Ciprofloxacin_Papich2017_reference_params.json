@@ -12,6 +12,18 @@
  "paper_doses_mg": [
   1645.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Papich_2017:results_prose",
+    "value_si": 0.0011899999999999999
+   },
+   {
+    "source": "Papich_2017:results_prose",
+    "value_si": 0.0044
+   }
+  ]
+ },
  "parameters": {
   "Cl": 4.75e-07,
   "F": 1.0,

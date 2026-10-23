@@ -1,19 +1,52 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V08A&quot;,&quot;href&quot;:&quot;atc/V08A.md&quot;},{&quot;label&quot;:&quot;iopamidol&quot;,&quot;href&quot;:&quot;drugs/drug_iopamidol/&quot;},{&quot;label&quot;:&quot;Hooper_2025 \u00b7 pragmatic_model&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Iopamidol_Hooper2025_final&quot;,&quot;label&quot;:&quot;Hooper_2025_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_iopamidol/Iopamidol_Hooper2025_final.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Iopamidol_Hooper2025_pragmatic_model&quot;,&quot;label&quot;:&quot;Hooper_2025_pragmatic_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_iopamidol/Iopamidol_Hooper2025_pragmatic_model.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Iopamidol_Hooper2025_final&quot;,&quot;label&quot;:&quot;Hooper_2025_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_iopamidol/Iopamidol_Hooper2025_final.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Iopamidol_Hooper2025_pragmatic_model&quot;,&quot;label&quot;:&quot;Hooper_2025_pragmatic_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_iopamidol/Iopamidol_Hooper2025_pragmatic_model.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # iopamidol — `Iopamidol_Hooper2025_pragmatic_model`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.727). Primary extraction retained.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">Reproduces paper</span>
+
+<div class="pk-model-meta" hidden drug="iopamidol" model-id="Iopamidol_Hooper2025_pragmatic_model" status="curated_candidate" stale="false" population="healthy adults with varying kidney function" measured-compound="iopamidol" parameterization="mechanistic" topology="2C"></div>
+
+## Citation
+Hooper L, Heung M, Wang L, Matvekas A, Alikhani R, Kenes MT et al. Pharmacokinetic Characterization of Iopamidol and Iohexol for Optimizing Measured Glomerular Filtration Rate Assessment in Clinical Practice and Drug Development. Journal of clinical pharmacology 65(11):1350–1361 (2025).
+  ·  DOI: [10.1002/jcph.70046](https://doi.org/10.1002/jcph.70046)
+
+## Population and dosing
+
+**Population:** healthy adults with varying kidney function · condition varying kidney function (eGFR 30-120 mL/min) · age group adult · n = 24.
+
+**Dosing:** 1618 mg, iv, single.
+
+## Model
+
+**Structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
+**Parameterization:** mechanistic.  
+**Parameters:** 5 extracted.  
+**Availability:** Model and browser simulation available in **Models** and **Simulation**.
+
+<figure class="pk-models-diagram"><img src="drugs/drug_iopamidol/Iopamidol_Hooper2025_pragmatic_model/Iopamidol_Hooper2025_pragmatic_model.svg" alt="Iopamidol_Hooper2025_pragmatic_model diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
+
+## Parameters
+| label | parameter | value | unit | IIV |
+|---|---|---|---|---|
+| CL_pop (mL/min) | CL | 59.76 | mL/min | 14.191 (16.0% RSE) |
+| V1_pop (mL) | V1 | 5928.74 | mL | 15.833 (26.9% RSE) |
+| CL_ β_BSA | CLnorm | 1.99 | mL/min/kg |  |
+| Q_pop (mL/min) | Q | 125.5 | mL/min | 33.13 (36.9% RSE) |
+| V2_pop (mL) | V2 | 4274.2 | mL | 20.159 (23.2% RSE) |
+| beta_Cl_logtEGFR_comb | equation variable | 0.535 |  |  |
+
+<details class="pk-evidence"><summary>Evidence &amp; review</summary>
+
+**Status and checks:** <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.727). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
-
-**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 ### Reviewer guidance
 
@@ -23,30 +56,20 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-## Citation
-Hooper L et al., Pharmacokinetic Characterization of Iop…, Journal of clinical pharmac… (2025)
-  ·  DOI: [10.1002/jcph.70046](https://doi.org/10.1002/jcph.70046)
+### All parameter columns
 
-<div class="pk-model-meta" hidden drug="iopamidol" model-id="Iopamidol_Hooper2025_pragmatic_model" status="curated_candidate" stale="false" population="healthy adults with varying kidney function" measured-compound="iopamidol" parameterization="mechanistic" topology="2C"></div>
-
-**Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
-**Parameters:** 5 extracted.
-
-**Parameterization:** mechanistic.
-
-## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| CL_pop (mL/min) | `Q22` · CL | 59.76 | mL/min | 9.959999999999999e-07 | [ml] / [min] | not captured | llm (0.6) | jcph70046-tbl-0003:row1:col2, Hooper_2025_table_2:row0:col2 | — | 14.191 (16.0% RSE) |
-| V1_pop (mL) | `Q63` · V1 | 5928.74 | mL | 0.005928739999999999 | [ml] | not captured | llm (0.6) | jcph70046-tbl-0003:row5:col2, Hooper_2025_table_2:row4:col2 | — | 15.833 (26.9% RSE) |
-| CL_ β_BSA | `Q354` · CLnorm | 1.99 | mL/min/kg | 2.3216666666666667e-06 | L/h | not captured | llm (0.6) | jcph70046-tbl-0003:row6:col2 | — | not captured |
-| Q_pop (mL/min) | `Q30` · Q | 125.5 | mL/min | 2.0916666666666664e-06 | [ml] / [min] | not captured | llm (0.6) | jcph70046-tbl-0003:row7:col2, Hooper_2025_table_2:row6:col2 | — | 33.13 (36.9% RSE) |
-| V2_pop (mL) | `Q64` · V2 | 4274.2 | mL | 0.0042742 | [ml] | not captured | llm (0.6) | jcph70046-tbl-0003:row8:col2, Hooper_2025_table_2:row7:col2 | — | 20.159 (23.2% RSE) |
-| beta_Cl_logtEGFR_comb | `Q900` · equation variable | 0.535 | not captured | not captured | not captured | not captured | llm (0.6) | Hooper_2025_table_S25:row4:col4, Hooper_2025_table_S25:row4:col5, Hooper_2025_table_S27:row4:col4, Hooper_2025_table_S27:row4:col5 | — | not captured |
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source | IIV |
+|---|---|---|---|---|---|---|---|---|---|
+| CL_pop (mL/min) | `Q22` · CL | 59.76 | mL/min | 9.96e-07 | m3/s | ml/min | llm (0.6) | jcph70046-tbl-0003:row1:col2, Hooper_2025_table_2:row0:col2 | 14.191 (16.0% RSE) |
+| V1_pop (mL) | `Q63` · V1 | 5928.74 | mL | 0.005929 | m3 | ml | llm (0.6) | jcph70046-tbl-0003:row5:col2, Hooper_2025_table_2:row4:col2 | 15.833 (26.9% RSE) |
+| CL_ β_BSA | `Q354` · CLnorm | 1.99 | mL/min/kg | 2.322e-06 | m3/s | L/h | llm (0.6) | jcph70046-tbl-0003:row6:col2 |  |
+| Q_pop (mL/min) | `Q30` · Q | 125.5 | mL/min | 2.092e-06 | m3/s | ml/min | llm (0.6) | jcph70046-tbl-0003:row7:col2, Hooper_2025_table_2:row6:col2 | 33.13 (36.9% RSE) |
+| V2_pop (mL) | `Q64` · V2 | 4274.2 | mL | 0.004274 | m3 | ml | llm (0.6) | jcph70046-tbl-0003:row8:col2, Hooper_2025_table_2:row7:col2 | 20.159 (23.2% RSE) |
+| beta_Cl_logtEGFR_comb | `Q900` · equation variable | 0.535 |  |  |  |  | llm (0.6) | Hooper_2025_table_S25:row4:col4, Hooper_2025_table_S25:row4:col5, Hooper_2025_table_S27:row4:col4, Hooper_2025_table_S27:row4:col5 |  |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ## Departures & gaps
@@ -102,9 +125,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[beta_cl_logtegfr_comb]` | 0.535 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[beta_v1_logtbsa_mosteller]` | not captured | 0.908 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cl_ β_bsa]` | 1.99 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[beta_cl_logtegfr_comb]` | 0.535 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[beta_v1_logtbsa_mosteller]` |  | 0.908 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl_ β_bsa]` | 1.99 |  | only_one_extracted |
 
 </details>
 
@@ -116,45 +139,40 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained | ratio | tol | source |
-|---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['jcph70046-tbl-0003:row1:col2', 'Hooper_2025_table_2:row0:col2'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['jcph70046-tbl-0003:row7:col2', 'Hooper_2025_table_2:row6:col2'] |
-| C5_dimension_Q354 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['jcph70046-tbl-0003:row6:col2'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['jcph70046-tbl-0003:row5:col2', 'Hooper_2025_table_2:row4:col2'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['jcph70046-tbl-0003:row8:col2', 'Hooper_2025_table_2:row7:col2'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 59.76 | not captured | not captured | ['jcph70046-tbl-0003:row1:col2', 'Hooper_2025_table_2:row0:col2'] |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 3.59 L/h | not captured | not captured | ['jcph70046-tbl-0003:row1:col2', 'Hooper_2025_table_2:row0:col2'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 5.93 L | not captured | not captured | ['jcph70046-tbl-0003:row5:col2', 'Hooper_2025_table_2:row4:col2'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 4.27 L | not captured | not captured | ['jcph70046-tbl-0003:row8:col2', 'Hooper_2025_table_2:row7:col2'] |
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 5 |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['jcph70046-tbl-0003:row1:col2', 'Hooper_2025_table_2:row0:col2'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['jcph70046-tbl-0003:row7:col2', 'Hooper_2025_table_2:row6:col2'] |
+| C5_dimension_Q354 | pass | [length] ** 3 / [time] |  | ['jcph70046-tbl-0003:row6:col2'] |
+| C5_dimension_Q63 | pass | [length] ** 3 |  | ['jcph70046-tbl-0003:row5:col2', 'Hooper_2025_table_2:row4:col2'] |
+| C5_dimension_Q64 | pass | [length] ** 3 |  | ['jcph70046-tbl-0003:row8:col2', 'Hooper_2025_table_2:row7:col2'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 59.76 | ['jcph70046-tbl-0003:row1:col2', 'Hooper_2025_table_2:row0:col2'] |
+| C8_topology | pass |  |  |  |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 3.59 L/h | ['jcph70046-tbl-0003:row1:col2', 'Hooper_2025_table_2:row0:col2'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 5.93 L | ['jcph70046-tbl-0003:row5:col2', 'Hooper_2025_table_2:row4:col2'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 4.27 L | ['jcph70046-tbl-0003:row8:col2', 'Hooper_2025_table_2:row7:col2'] |
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_output_variable | not captured | pass | C_central (measured=iopamidol) | central.C | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
+| check | status | expected | obtained | note |
+|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=iopamidol) | central.C | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
 
 <details class="legend">
 <summary>Validation definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
-## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_iopamidol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Hooper_2025` / `Hooper_2025::pragmatic_model`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_iopamidol/models/modelica/Iopamidol_Hooper2025_pragmatic_model.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_iopamidol/models/modelica/Iopamidol_Hooper2025_pragmatic_model.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_iopamidol/models/modelica/Iopamidol_Hooper2025_pragmatic_model.json`
-
+</details>
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
@@ -171,7 +189,49 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_iopamidol/Iopamidol_Hooper2025_pragmatic_model/Iopamidol_Hooper2025_pragmatic_model.svg" alt="Iopamidol_Hooper2025_pragmatic_model diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div></div>
+
+## Model interface
+
+The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
+
+| direction | role | name | value | unit (SI) |
+|---|---|---|---|---|
+| input | compound | `MM` | 0.7771 | kg/mol |
+| input | dosing | `F` | 1 | 1 |
+| input | dosing | `adminCount` | 1 | 1 |
+| input | dosing | `adminDuration` | 600 | s |
+| input | dosing | `adminMass` | 0.001618 | kg |
+| input | model | `Cl` | 9.96e-07 | m3/s |
+| input | model | `VdPerKg` | 8.47e-05 | m3/kg |
+| input | model | `k12` | 0.0003528 | 1/s |
+| input | model | `k21` | 0.0004894 | 1/s |
+| input | subject | `weight` | 70 | kg |
+| output | concentration | `central.C` |  | kg/m3 |
+
+## Tested with
+
+- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_2C`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
+- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
+- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
+
+## How to cite
+
+**Source paper** (the parameters are its): Hooper L, Heung M, Wang L, Matvekas A, Alikhani R, Kenes MT et al. Pharmacokinetic Characterization of Iopamidol and Iohexol for Optimizing Measured Glomerular Filtration Rate Assessment in Clinical Practice and Drug Development. Journal of clinical pharmacology 65(11):1350–1361 (2025). [doi:10.1002/jcph.70046](https://doi.org/10.1002/jcph.70046)
+
+**This record:** Pharmacolibrary v26.09, model `Iopamidol_Hooper2025_pragmatic_model`. <https://pharmacolibrary.github.io/#/drugs/drug_iopamidol/Iopamidol_Hooper2025_pragmatic_model>
+
+```bibtex
+@misc{pharmacolibrary_IopamidolHooper2025pragmaticmodel,
+  title  = {{Pharmacolibrary model Iopamidol_Hooper2025_pragmatic_model}},
+  author = {{Pharmacolibrary}},
+  version = {v26.09},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_iopamidol/Iopamidol_Hooper2025_pragmatic_model},
+  note   = {Parameters from doi:10.1002/jcph.70046},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -184,4 +244,5 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 22:41 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Biopamidol%5D%20Iopamidol_Hooper2025_pragmatic_model&body=Drug%3A%20iopamidol%0ARecord%3A%20Iopamidol_Hooper2025_pragmatic_model%0APaper%3A%20Hooper_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_iopamidol/Iopamidol_Hooper2025_pragmatic_model%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Generated by `docs.py` (scholarv2, release v26.09) · extracted 2026-10-07 22:41 UTC</sub>

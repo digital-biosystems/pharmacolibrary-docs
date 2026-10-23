@@ -2,11 +2,11 @@
  "dose_source": "WHO ATC DDD 3 mg oral (N05AX16)",
  "model_id": "Brexpiprazole_Wong2021_reference",
  "molar_masses": {
-  "C_central": 0.43357
+  "central.C": 0.43357
  },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "C_central"
+  "central.C"
  ],
  "parameters": {
   "Cl": 4.997222222222222e-07,
@@ -21,10 +21,10 @@
   "weight": 70.0
  },
  "reference_peak_times": {
-  "C_central": 25971.943887775553
+  "central.C": 25971.94388777555
  },
  "reference_peaks": {
-  "C_central": 2.17107735822326e-05
+  "central.C": 2.171077358223147e-05
  },
  "stop_time": 864000.0,
  "template": "PK_1C_enteral",

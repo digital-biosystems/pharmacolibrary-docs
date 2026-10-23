@@ -8,31 +8,62 @@
  "observables": [
   "central.C"
  ],
- "paper_doses_kind": "discrete",
+ "paper_doses_kind": "range",
  "paper_doses_mg": [
   2.5,
-  5.0,
   10.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Courlet_2021:other_prose",
+    "value_si": 8.0
+   },
+   {
+    "source": "Courlet_2021:other_prose",
+    "value_si": 1.0
+   },
+   {
+    "source": "Courlet_2021:other_prose",
+    "value_si": 51.0
+   },
+   {
+    "source": "Courlet_2021:other_prose",
+    "value_si": 17.0
+   },
+   {
+    "source": "Courlet_2021:other_prose",
+    "value_si": 1.3599999999999999e-05
+   },
+   {
+    "source": "Courlet_2021:other_prose",
+    "value_si": 1.2699999999999999e-05
+   },
+   {
+    "source": "Courlet_2021:other_prose",
+    "value_si": 1.37e-05
+   }
+  ]
+ },
  "parameters": {
-  "Cl": 4.722222222222222e-06,
+  "Cl": 2.5e-06,
   "F": 1.0,
   "MM": 0.40887599999999996,
-  "Tlag": 3132.0,
-  "VdPerKg": 0.014285714285714285,
+  "Tlag": 100800.0,
+  "VdPerKg": 0.00022857142857142857,
   "adminCount": 1.0,
   "adminDuration": 600.0,
   "adminMass": 2.5e-06,
-  "ka": 0.00019166666666666665,
+  "ka": 0.006944444444444444,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 23374.749498997997
+  "central.C": 0.0
  },
  "reference_peaks": {
-  "central.C": 2.2767277163417713e-06
+  "central.C": 0.0
  },
- "stop_time": 777600.0,
+ "stop_time": 86400.0,
  "template": "PK_1C_enteral",
  "template_fmu": "PK_1C_enteral.fmu"
 }

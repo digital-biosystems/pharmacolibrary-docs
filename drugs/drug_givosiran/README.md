@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A16A&quot;,&quot;href&quot;:&quot;atc/A16A.md&quot;},{&quot;label&quot;:&quot;givosiran&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Givosiran_Sten2023_model_simultaneously_fitted_to_all_data_e&quot;,&quot;label&quot;:&quot;Sten_2023_model_simultaneously_fitted_to_all_data_estimate_se&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_givosiran/Givosiran_Sten2023_model_simultaneously_fitted_to_all_data_e.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Givosiran_Sten2023_model_simultaneously_fitted_to_all_data_e&quot;,&quot;label&quot;:&quot;Sten_2023_model_simultaneously_fitted_to_all_data_estimate_se&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_givosiran/Givosiran_Sten2023_model_simultaneously_fitted_to_all_data_e.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # givosiran
 
@@ -14,24 +14,42 @@ Givosiran is a small interfering RNA medicine used to treat hepatic porphyria. I
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q56297041](https://www.wikidata.org/wiki/Q56297041) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
-## Extraction summary
+## Start here
 
-| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
-|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-05 10:42 | 4:55 | 0/0/2 | 0/0/0 | 0/0/0 | 97,172/12,959 | ollama / qwen3.8:27b-mtp-q8_0 | 4 | 1/5 | 3/1 | 0 |
+> **Sten_2023_model_simultaneously_fitted_to_all_data_estimate_se** — <span class="pk-badge pk-badge--orange">Needs review</span> adults with acute intermittent porphyria. [Run it in the simulator](drugs/drug_givosiran/Givosiran_Sten2023_model_simultaneously_fitted_to_all_data_e.md?tab=Simulation) · [record](drugs/drug_givosiran/Givosiran_Sten2023_model_simultaneously_fitted_to_all_data_e.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
+## Parameters across studies
+
+| parameter | as named | value | unit | as reported | population | species | status | record |
+|---|---|---|---|---|---|---|---|---|
+| CL | CL/F | 23.8 | L/h | 23.8 L/h | adults with acute intermittent porphyria | human + animal | <span class="pk-badge pk-badge--orange">Needs review</span> | [Sten_2023_model_simultaneously_fitted_to_all_data_estimate_se](drugs/drug_givosiran/Givosiran_Sten2023_model_simultaneously_fitted_to_all_data_e.md) |
+| V | V1/F | 18.1 | L | 18.1 L | adults with acute intermittent porphyria | human + animal | <span class="pk-badge pk-badge--orange">Needs review</span> | [Sten_2023_model_simultaneously_fitted_to_all_data_estimate_se](drugs/drug_givosiran/Givosiran_Sten2023_model_simultaneously_fitted_to_all_data_e.md) |
+| ka | kabs | 0.157 | 1/h | 0.157 1/h | adults with acute intermittent porphyria | human + animal | <span class="pk-badge pk-badge--orange">Needs review</span> | [Sten_2023_model_simultaneously_fitted_to_all_data_estimate_se](drugs/drug_givosiran/Givosiran_Sten2023_model_simultaneously_fitted_to_all_data_e.md) |
+
+<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.188), gpt-oss:120b (not confirmed, agreement 0.188). Primary extraction retained.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span><br><sub>blocking: model_quarantined: Cl, Vd, Tlag, k12 left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Sten_2023_model_fitted_to_olpasiran_data_only_estimate_se](drugs/drug_givosiran/Givosiran_Sten2023_model_fitted_to_olpasiran_data_only_estim.md) | held back | 2-compartment, oral | 6 | Sten S et al., Plasma Pharmacokinetics of N-Acetylgala…, Clinical pharmacokinetics (2023) | [10.1007/s40262-023-01314-7](https://doi.org/10.1007/s40262-023-01314-7) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.938), gpt-oss:120b (not confirmed, agreement 0.938). Primary extraction retained.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span><br><sub>blocking: unreported model parameter default(s): k12</sub><br><sub>route_to: `scholar`</sub> | [Sten_2023_model_simultaneously_fitted_to_all_data_estimate_se](drugs/drug_givosiran/Givosiran_Sten2023_model_simultaneously_fitted_to_all_data_e.md) | ▶ model + simulator | 2-compartment, oral | 6 | Sten S et al., Plasma Pharmacokinetics of N-Acetylgala…, Clinical pharmacokinetics (2023) | [10.1007/s40262-023-01314-7](https://doi.org/10.1007/s40262-023-01314-7) |
+| <span class="pk-rf" hidden data-species="human + animal" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span><br><sub>blocking: model_quarantined: Cl, Vd, Tlag, k12 left at base-class defaults</sub> | [Sten_2023_model_fitted_to_olpasiran_data_only_estimate_se](drugs/drug_givosiran/Givosiran_Sten2023_model_fitted_to_olpasiran_data_only_estim.md) | held back | 2-compartment, oral | 6 | Sten S et al., Plasma Pharmacokinetics of N-Acetylgala…, Clinical pharmacokinetics (2023) | [10.1007/s40262-023-01314-7](https://doi.org/10.1007/s40262-023-01314-7) |
+| <span class="pk-rf" hidden data-species="human + animal" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span><br><sub>blocking: unreported model parameter default(s): k12</sub> | [↳ model_simultaneously_fitted_to_all_data_estimate_se](drugs/drug_givosiran/Givosiran_Sten2023_model_simultaneously_fitted_to_all_data_e.md) | ▶ model + simulator | 2-compartment, oral | 6 |  |  |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-05 10:42 | 4:55 | 0/0/2 | 0/0/0 | 0/0/0 | 97,172/12,959 | ollama / qwen3.8:27b-mtp-q8_0 | 4 | 1/5 | 3/1 | 0 |
 
 ## Coverage
 
@@ -98,5 +116,9 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | popPK | Yue_2019 | irrelevant | 0 | 0 | The paper is a review of substrate reduction therapy for inborn errors of metabolism and does not report quantitative pharmacokinetic parameters for givosiran. |
 | PD | Yue_2019 | not_relevant | 1 | 0 | The text is a general minireview on substrate reduction therapy for inborn errors of metabolism and does not contain specific data, models, or numeric PD parameters for givosiran. |
 
+
+</details>
+
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-05 10:38 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
+<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-05 10:38 UTC</sub>

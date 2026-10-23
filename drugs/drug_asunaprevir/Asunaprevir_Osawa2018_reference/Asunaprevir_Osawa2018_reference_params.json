@@ -13,6 +13,14 @@
   10.0,
   60.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Osawa_2018:other_prose",
+    "value_si": 1.0
+   }
+  ]
+ },
  "parameters": {
   "Cl": 1.4694444444444445e-06,
   "F": 1.0,

@@ -14,31 +14,33 @@ Cefmenoxime is a third-generation cephalosporin antibiotic used to treat bacteri
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q4921166](https://www.wikidata.org/wiki/Q4921166) and the WHO ATC classification; not checked by a person.</small>
 
-## Extraction summary
-
-| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
-|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 11:06 | 2:48 | 0/2/0 | 2/0/0 | 0/0/0 | 122,026/3,639 | einfracz / qwen3.8-27b | 2 | 0/0 | 2/0 | 0 |
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.222). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Granneman_1982_reference](drugs/drug_cefmenoxime/Cefmenoxime_Granneman1982_reference.md) | — | 1-compartment (no model) | 0 | Granneman GR et al., Intramuscular and intravenous pharmacok…, Antimicrobial agents and ch… (1982) | [10.1128/AAC.21.1.141](https://doi.org/10.1128/AAC.21.1.141) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.571). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Sennello_1983_reference](drugs/drug_cefmenoxime/Cefmenoxime_Sennello1983_reference.md) | — | 1-compartment (no model) | 0 | Sennello LT et al., Effect of probenecid on the pharmacokin…, Antimicrobial agents and ch… (1983) | [10.1128/AAC.23.6.803](https://doi.org/10.1128/AAC.23.6.803) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Granneman_1982_reference](drugs/drug_cefmenoxime/Cefmenoxime_Granneman1982_reference.md) | — | 1-compartment (no model) | 0 | Granneman GR et al., Intramuscular and intravenous pharmacok…, Antimicrobial agents and ch… (1982) | [10.1128/AAC.21.1.141](https://doi.org/10.1128/AAC.21.1.141) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Sennello_1983_reference](drugs/drug_cefmenoxime/Cefmenoxime_Sennello1983_reference.md) | — | 1-compartment (no model) | 0 | Sennello LT et al., Effect of probenecid on the pharmacokin…, Antimicrobial agents and ch… (1983) | [10.1128/AAC.23.6.803](https://doi.org/10.1128/AAC.23.6.803) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Kurashige_1982_Clinical_efficacy](drugs/drug_cefmenoxime/pd_Kurashige_1982_Clinical_efficacy.md) | Clinical efficacy ← cefmenoxime · stimulation effect | — | Kurashige T et al., [Therapeutic effects of cefmenoxime in…, The Japanese journal of ant… (1982) | — |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">rabbit</span> | [Yamazaki_1981_CRf](drugs/drug_cefmenoxime/pd_Yamazaki_1981_CRf.md) | renal clearance ← cefmenoxime · inhibition effect | — | Yamazaki I et al., Comparison of the renal excretory mecha…, The Journal of antibiotics (1981) | [10.7164/antibiotics.34.1476](https://doi.org/10.7164/antibiotics.34.1476) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Kurashige_1982_Clinical_efficacy](drugs/drug_cefmenoxime/pd_Kurashige_1982_Clinical_efficacy.md) | Clinical efficacy ← cefmenoxime · stimulation effect | — | Kurashige T et al., [Therapeutic effects of cefmenoxime in…, The Japanese journal of ant… (1982) | — |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">rabbit</span> | [Yamazaki_1981_CRf](drugs/drug_cefmenoxime/pd_Yamazaki_1981_CRf.md) | renal clearance ← cefmenoxime · inhibition effect | — | Yamazaki I et al., Comparison of the renal excretory mecha…, The Journal of antibiotics (1981) | [10.7164/antibiotics.34.1476](https://doi.org/10.7164/antibiotics.34.1476) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 11:06 | 2:48 | 0/2/0 | 2/0/0 | 0/0/0 | 122,026/3,639 | einfracz / qwen3.8-27b | 2 | 0/0 | 2/0 | 0 |
 
 ## Coverage
 
@@ -71,5 +73,9 @@ _7 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | popPK | Fukuda_2002_2 | irrelevant | 2 | 0 | Cefmenoxime is one of multiple drugs tested in an ocular study, and the abstract explicitly states its AQCmax could not be calculated by the one-compartment method, with no other quantitative PK parameters provided. |
 | popPK | Höffler_1983 | relevant | 10 | 0 | The study is a pharmacokinetic investigation of cefmenoxime in humans using a two-compartment model, but specific numeric parameter values (CL, V, etc.) are not present in the provided text. |
 
+
+</details>
+
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 11:05 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
+<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 11:05 UTC</sub>

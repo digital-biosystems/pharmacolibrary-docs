@@ -12,6 +12,14 @@
  "paper_doses_mg": [
   120.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Marathe_2023:other_prose",
+    "value_si": 0.0013629999999999998
+   }
+  ]
+ },
  "parameters": {
   "Cl": 2.013888888888889e-06,
   "F": 1.0,

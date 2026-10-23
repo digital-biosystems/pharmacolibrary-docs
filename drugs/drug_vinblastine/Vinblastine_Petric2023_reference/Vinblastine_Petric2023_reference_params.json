@@ -2,11 +2,11 @@
  "dose_source": "library default",
  "model_id": "Vinblastine_Petric2023_reference",
  "molar_masses": {
-  "C_central": 0.8109741
+  "central.C": 0.8109741
  },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "C_central"
+  "central.C"
  ],
  "parameters": {
   "Cl": 1.559722222222222e-05,
@@ -21,10 +21,10 @@
   "weight": 70.0
  },
  "reference_peak_times": {
-  "C_central": 7618.436873747495
+  "central.C": 7618.436873747495
  },
  "reference_peaks": {
-  "C_central": 0.0003250357372122468
+  "central.C": 0.0003250357372122472
  },
  "stop_time": 86400.0,
  "template": "PK_1C_enteral",

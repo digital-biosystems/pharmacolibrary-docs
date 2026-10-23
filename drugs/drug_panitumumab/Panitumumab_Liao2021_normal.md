@@ -4,15 +4,50 @@
 
 # panitumumab — `Panitumumab_Liao2021_normal`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+
+> CL has no unit; the clearance plausibility check could not be computed.
+
+<div class="pk-model-meta" hidden drug="panitumumab" model-id="Panitumumab_Liao2021_normal" status="needs_review" stale="false" population="patients with metastatic RAS wild-type colorectal cancer" measured-compound="panitumumab" parameterization="mechanistic" topology="2C"></div>
+
+## Citation
+Liao MZ, Prenen H, Dutta S, Upreti VV. The impact of hepatic and renal function on panitumumab exposures in patients with metastatic RAS wild-type colorectal cancer. Cancer chemotherapy and pharmacology 88(4):665–672 (2021).
+  ·  DOI: [10.1007/s00280-021-04319-w](https://doi.org/10.1007/s00280-021-04319-w)
+
+## Population and dosing
+
+**Population:** patients with metastatic RAS wild-type colorectal cancer · condition metastatic RAS wild-type colorectal cancer · age group adult · n = , 349 and 351.
+
+**Dosing:** 420 mg, iv, multiple, every 14 h.
+
+## Model
+
+**Structure:** 2-compartment; no model was built for this record.  
+**Parameterization:** mechanistic.  
+**Parameters:** 6 extracted.  
+**Availability:** No model was generated from this record.
+
+## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
+| label | parameter | value | unit |
+|---|---|---|---|
+| Cmax | Cmax | 218 | µg/mL |
+| Ctrough | Ctrough | 226 | µg/mL |
+| Mean (CV) values for Cmax and Ctrough were 166 µg/mL (37%) and 32 µg/mL (59%), respectively, for patients with normal renal function (Table 4). 2).Table 4Summary of serum panitumumab concentrations in patients with varying degrees of renal function on week 7 before and after IV infusion of panitumumab at 6 mg/kg Q2WRenal function, CLCR rangeCmaxCtroughnMean, μg/mLCV, %nMean, μg/mLCV, %Normal, &gt; 80 mL/min242166372473259Mild Impairment, 50–80 mL/min8016537853057Moderate Impairment, 30–49 mL/min1817227193268CLCR creatinine clearance, Cmax maximum serum concentration, Ctrough trough serum concentration, CV coefficient of variation, IV intravenous, Q2W every 2 weeksFig. 2Cmax (a) and Ctrough (b) in patients with varying degrees of renal dysfunction on week 7 before and after intravenous infusion of panitumumab at 6 mg/kg every 2 weeks. Cmax, maximum serum concentration; Ctrough, trough serum concentration | CL | 166 | µg/mL |
+| panitumumab V1 | V1 | 3.22 | L |
+| peripheral volume of distribution | V2 | 2.49 | L |
+| inter-compartmental clearance | Q | 0.38 | L/day |
+
+<details class="pk-evidence"><summary>Evidence &amp; review</summary>
+
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
-
-**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -24,32 +59,20 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-## Citation
-Liao MZ et al., The impact of hepatic and renal functio…, Cancer chemotherapy and pha… (2021)
-  ·  DOI: [10.1007/s00280-021-04319-w](https://doi.org/10.1007/s00280-021-04319-w)
+### All parameter columns
 
-<div class="pk-model-meta" hidden drug="panitumumab" model-id="Panitumumab_Liao2021_normal" status="needs_review" stale="false" population="patients with metastatic RAS wild-type colorectal cancer" measured-compound="panitumumab" parameterization="mechanistic" topology="2C"></div>
-
-**Model structure:** 2-compartment; no model was built for this record.  
-**Parameters:** 6 extracted.
-
-**Parameterization:** mechanistic.
-
-## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| Cmax | `Q32` · Cmax | 218 | µg/mL | not captured | µg/mL | not captured | exact (1.0) | Liao_2021_table_3:row0:col2, Liao_2021_table_3:row1:col2, Liao_2021_table_3:row2:col2, Liao_2021_table_4:row0:col2, Liao_2021_table_4:row1:col2, Liao_2021_table_4:row2:col2 | — | not captured |
-| Ctrough | `Q37` · Ctrough | 226 | µg/mL | not captured | µg/mL | not captured | exact (1.0) | Liao_2021_table_3:row3:col2, Liao_2021_table_3:row4:col2, Liao_2021_table_3:row5:col2, Liao_2021_table_4:row3:col2, Liao_2021_table_4:row4:col2, Liao_2021_table_4:row5:col2 | — | not captured |
-| Mean (CV) values for Cmax and Ctrough were 166 µg/mL (37%) and 32 µg/mL (59%), respectively, for patients with normal renal function (Table 4). 2).Table 4Summary of serum panitumumab concentrations in patients with varying degrees of renal function on week 7 before and after IV infusion of panitumumab at 6 mg/kg Q2WRenal function, CLCR rangeCmaxCtroughnMean, μg/mLCV, %nMean, μg/mLCV, %Normal, &gt; 80 mL/min242166372473259Mild Impairment, 50–80 mL/min8016537853057Moderate Impairment, 30–49 mL/min1817227193268CLCR creatinine clearance, Cmax maximum serum concentration, Ctrough trough serum concentration, CV coefficient of variation, IV intravenous, Q2W every 2 weeksFig. 2Cmax (a) and Ctrough (b) in patients with varying degrees of renal dysfunction on week 7 before and after intravenous infusion of panitumumab at 6 mg/kg every 2 weeks. Cmax, maximum serum concentration; Ctrough, trough serum concentration | `Q22` · CL | 166 | µg/mL | not captured | µg/mL | not captured | boundary (0.8) | Liao_2021:other_prose | — | not captured |
-| panitumumab V1 | `Q63` · V1 | 3.22 | L | 0.00322 | L | not captured | boundary (0.8) | Liao_2021:discussion_prose | — | not captured |
-| peripheral volume of distribution | `Q64` · V2 | 2.49 | L | 0.0024900000000000005 | L | not captured | boundary_compartment (0.9) | Liao_2021:discussion_prose | — | not captured |
-| inter-compartmental clearance | `Q30` · Q | 0.38 | L/day | 4.3981481481481486e-09 | L/h | not captured | boundary (0.8) | Liao_2021:discussion_prose | — | not captured |
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
+|---|---|---|---|---|---|---|---|---|
+| Cmax | `Q32` · Cmax | 218 | µg/mL |  |  | µg/mL | exact (1) | Liao_2021_table_3:row0:col2, Liao_2021_table_3:row1:col2, Liao_2021_table_3:row2:col2, Liao_2021_table_4:row0:col2, Liao_2021_table_4:row1:col2, Liao_2021_table_4:row2:col2 |
+| Ctrough | `Q37` · Ctrough | 226 | µg/mL |  |  | µg/mL | exact (1) | Liao_2021_table_3:row3:col2, Liao_2021_table_3:row4:col2, Liao_2021_table_3:row5:col2, Liao_2021_table_4:row3:col2, Liao_2021_table_4:row4:col2, Liao_2021_table_4:row5:col2 |
+| Mean (CV) values for Cmax and Ctrough were 166 µg/mL (37%) and 32 µg/mL (59%), respectively, for patients with normal renal function (Table 4). 2).Table 4Summary of serum panitumumab concentrations in patients with varying degrees of renal function on week 7 before and after IV infusion of panitumumab at 6 mg/kg Q2WRenal function, CLCR rangeCmaxCtroughnMean, μg/mLCV, %nMean, μg/mLCV, %Normal, &gt; 80 mL/min242166372473259Mild Impairment, 50–80 mL/min8016537853057Moderate Impairment, 30–49 mL/min1817227193268CLCR creatinine clearance, Cmax maximum serum concentration, Ctrough trough serum concentration, CV coefficient of variation, IV intravenous, Q2W every 2 weeksFig. 2Cmax (a) and Ctrough (b) in patients with varying degrees of renal dysfunction on week 7 before and after intravenous infusion of panitumumab at 6 mg/kg every 2 weeks. Cmax, maximum serum concentration; Ctrough, trough serum concentration | `Q22` · CL | 166 | µg/mL |  |  | µg/mL | boundary (0.8) | Liao_2021:other_prose |
+| panitumumab V1 | `Q63` · V1 | 3.22 | L | 0.00322 | m3 | L | boundary (0.8) | Liao_2021:discussion_prose |
+| peripheral volume of distribution | `Q64` · V2 | 2.49 | L | 0.00249 | m3 | L | boundary_compartment (0.9) | Liao_2021:discussion_prose |
+| inter-compartmental clearance | `Q30` · Q | 0.38 | L/day | 4.398e-09 | m3/s | L/h | boundary (0.8) | Liao_2021:discussion_prose |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ## Departures & gaps
@@ -85,16 +108,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[clearance]` | not captured | 0.208 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cmax]` | 218 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[ctrough]` | 226 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[inter-compartmental clearance]` | 0.38 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[inter-compartmental clearance]` | not captured | 0.38 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[mean (cv) values for cmax and ctrough were 166 ug/ml (37%) and 32 ug/ml (59%), respectively, for patients with normal renal function (table 4). 2).table 4summary of serum panitumumab concentrations in patients with varying degrees of renal function on week 7 before and after iv infusion of panitumumab at 6 mg/kg q2wrenal function, clcr rangecmaxctroughnmean, ug/mlcv, %nmean, ug/mlcv, %normal, &gt; 80 ml/min242166372473259mild impairment, 50-80 ml/min8016537853057moderate impairment, 30-49 ml/min1817227193268clcr creatinine clearance, cmax maximum serum concentration, ctrough trough serum concentration, cv coefficient of variation, iv intravenous, q2w every 2 weeksfig. 2cmax (a) and ctrough (b) in patients with varying degrees of renal dysfunction on week 7 before and after intravenous infusion of panitumumab at 6 mg/kg every 2 weeks. cmax, maximum serum concentration; ctrough, trough serum concentration]` | 166 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[panitumumab v1]` | 3.22 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[peripheral volume of distribution]` | 2.49 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[peripheral volume of distribution]` | not captured | 2.49 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v1]` | not captured | 3.22 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` |  | 0.208 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax]` | 218 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ctrough]` | 226 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[inter-compartmental clearance]` | 0.38 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[inter-compartmental clearance]` |  | 0.38 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean (cv) values for cmax and ctrough were 166 ug/ml (37%) and 32 ug/ml (59%), respectively, for patients with normal renal function (table 4). 2).table 4summary of serum panitumumab concentrations in patients with varying degrees of renal function on week 7 before and after iv infusion of panitumumab at 6 mg/kg q2wrenal function, clcr rangecmaxctroughnmean, ug/mlcv, %nmean, ug/mlcv, %normal, &gt; 80 ml/min242166372473259mild impairment, 50-80 ml/min8016537853057moderate impairment, 30-49 ml/min1817227193268clcr creatinine clearance, cmax maximum serum concentration, ctrough trough serum concentration, cv coefficient of variation, iv intravenous, q2w every 2 weeksfig. 2cmax (a) and ctrough (b) in patients with varying degrees of renal dysfunction on week 7 before and after intravenous infusion of panitumumab at 6 mg/kg every 2 weeks. cmax, maximum serum concentration; ctrough, trough serum concentration]` | 166 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[panitumumab v1]` | 3.22 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[peripheral volume of distribution]` | 2.49 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[peripheral volume of distribution]` |  | 2.49 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v1]` |  | 3.22 | only_one_extracted |
 | `gpt-oss-120b` | `screen.dose_compound` | panitumumab | unknown | mismatch |
 | `gpt-oss-120b` | `screen.primary_analyte` | panitumumab | unknown | mismatch |
 
@@ -108,28 +131,26 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained | ratio | tol | source |
-|---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Liao_2021_table_3:row0:col2', 'Liao_2021_table_3:row1:col2', 'Liao_2021_table_3:row2:col2', 'Liao_2021_table_4:row0:col2', 'Liao_2021_table_4:row1:col2', 'Liao_2021_table_4:row2:col2'] |
-| C5_dimension_Q37 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Liao_2021_table_3:row3:col2', 'Liao_2021_table_3:row4:col2', 'Liao_2021_table_3:row5:col2', 'Liao_2021_table_4:row3:col2', 'Liao_2021_table_4:row4:col2', 'Liao_2021_table_4:row5:col2'] |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | µg/mL | not captured | not captured | ['Liao_2021:other_prose'] |
-| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 166.0 | not captured | not captured | ['Liao_2021:other_prose'] |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q63 | pass | volume within physiological range | 3.22 L | not captured | not captured | ['Liao_2021:discussion_prose'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 2.49 L | not captured | not captured | ['Liao_2021:discussion_prose'] |
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 6 |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
+| C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Liao_2021_table_3:row0:col2', 'Liao_2021_table_3:row1:col2', 'Liao_2021_table_3:row2:col2', 'Liao_2021_table_4:row0:col2', 'Liao_2021_table_4:row1:col2', 'Liao_2021_table_4:row2:col2'] |
+| C5_dimension_Q37 | pass | [mass] / [length] ** 3 |  | ['Liao_2021_table_3:row3:col2', 'Liao_2021_table_3:row4:col2', 'Liao_2021_table_3:row5:col2', 'Liao_2021_table_4:row3:col2', 'Liao_2021_table_4:row4:col2', 'Liao_2021_table_4:row5:col2'] |
+| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | µg/mL | ['Liao_2021:other_prose'] |
+| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 166 | ['Liao_2021:other_prose'] |
+| C8_topology | pass |  |  |  |
+| C9_phys_window_Q63 | pass | volume within physiological range | 3.22 L | ['Liao_2021:discussion_prose'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 2.49 L | ['Liao_2021:discussion_prose'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
-## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_panitumumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Liao_2021` / `Liao_2021::normal`)
-
+</details>
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
@@ -154,4 +175,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 18:04 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpanitumumab%5D%20Panitumumab_Liao2021_normal&body=Drug%3A%20panitumumab%0ARecord%3A%20Panitumumab_Liao2021_normal%0APaper%3A%20Liao_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_panitumumab/Panitumumab_Liao2021_normal%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Generated by `docs.py` (scholarv2, release v26.09) · extracted 2026-10-07 18:04 UTC</sub>

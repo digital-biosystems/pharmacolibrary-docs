@@ -4,17 +4,60 @@
 
 # iloperidone — `Iloperidone_Pei2016_estimate`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">built, not shipped</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
+
+> The iloperidone parent–metabolite model was held back because the parent's elimination clearance had no extracted value and a library placeholder was used instead, so the record was not published with an invented number.
+
+<div class="pk-model-meta" hidden drug="iloperidone" model-id="Iloperidone_Pei2016_estimate" status="model_quarantined" stale="false" population="Chinese schizophrenia patients" measured-compound="iloperidone" parameterization="mechanistic" topology="general_linear"></div>
+
+## Citation
+Pei Q, Huang L, Huang J, Gu JK, Kuang Y, Zuo XC et al. Influences of CYP2D6. Acta pharmacologica Sinica 37(11):1499–1508 (2016).
+  ·  DOI: [10.1038/aps.2016.96](https://doi.org/10.1038/aps.2016.96)
+
+## Population and dosing
+
+**Population:** Chinese schizophrenia patients · condition schizophrenia · age group adult · n = 70.
+
+**Dosing:** 12, 16, 20, 24 mg/d, oral, multiple, every 24 h.
+
+## Model
+
+**Structure:** 1-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
+**Parameterization:** mechanistic.  
+**Parameters:** 9 extracted, plus 3 covariate effects.  
+**Availability:** Model withheld: a core parameter is unspecified.
+
+## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
+| label | parameter | value | unit |
+|---|---|---|---|
+| K a (h -1 ) | kabs | 2.26 | h -1 |
+| K 20 (h -1 ) | kel | 0.067 | h -1 |
+| K 30 (h -1 ) | kel | 0.160 | h -1 |
+| K 40 (h -1 ) | kel | 0.106 | h -1 |
+| V 2 (L) | V1 | 679 | L |
+| V 3 (L) | V | 10 | L |
+| V 4 (L) | V | 10 | L |
+| K 23 (h -1 ) | kfm | 0.00451 | h -1 |
+| K 24 (h -1 ) | kfm | 0.00649 | h -1 |
+| cyp2d6_10_c_t_on_k_24 | cyp2d6_10_c_t_on_k_24 | 0.693 |  |
+| cyp2d6_10_t_t_on_k_24 | cyp2d6_10_t_t_on_k_24 | 0.492 |  |
+| cyp2d6_10_t_t_on_k_23 | cyp2d6_10_t_t_on_k_23 | 1.34 |  |
+
+## Caveats
+
+- Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.
+
+<details class="pk-evidence"><summary>Evidence &amp; review</summary>
+
+**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
-
-**Model:** Model withheld: a core parameter is unspecified.
-
-> **Caveat** (`covariates_not_exercised`): Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.
 
 ### Reviewer guidance
 
@@ -26,38 +69,26 @@ Independently confirmed by `gpt-oss-120b`.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-## Citation
-Pei Q et al., Influences of CYP2D6, Acta pharmacologica Sinica (2016)
-  ·  DOI: [10.1038/aps.2016.96](https://doi.org/10.1038/aps.2016.96)
+### All parameter columns
 
-<div class="pk-model-meta" hidden drug="iloperidone" model-id="Iloperidone_Pei2016_estimate" status="model_quarantined" stale="false" population="Chinese schizophrenia patients" measured-compound="iloperidone" parameterization="mechanistic" topology="general_linear"></div>
-
-**Model structure:** 1-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
-**Parameters:** 9 extracted, plus 3 covariate effects.
-
-**Parameterization:** mechanistic.
-
-## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| K a (h -1 ) | `Q49` · kabs | 2.26 | h -1 | 0.0006277777777777777 | [1] / [h] | not captured | exact (1.0) | tab_2:row1:col1 | — | not captured |
-| K 20 (h -1 ) | `Q47` · kel | 0.067 | h -1 | 1.861111111111111e-05 | [1] / [h] | not captured | exact (1.0) | tab_2:row2:col1 | — | not captured |
-| K 30 (h -1 ) | `Q47` · kel | 0.160 | h -1 | 4.4444444444444447e-05 | [1] / [h] | not captured | exact (1.0) | tab_2:row3:col1 | — | not captured |
-| K 40 (h -1 ) | `Q47` · kel | 0.106 | h -1 | 2.9444444444444445e-05 | [1] / [h] | not captured | exact (1.0) | tab_2:row4:col1 | — | not captured |
-| V 2 (L) | `Q63` · V1 | 679 | L | 0.679 | [l] | not captured | exact (1.0) | tab_2:row5:col1 | — | not captured |
-| V 3 (L) | `Q61` · V | 10 | L | 0.01 | [l] | not captured | exact (1.0) | tab_2:row6:col1 | — | not captured |
-| V 4 (L) | `Q61` · V | 10 | L | 0.01 | [l] | not captured | exact (1.0) | tab_2:row7:col1 | — | not captured |
-| K 23 (h -1 ) | `Q305` · kfm | 0.00451 | h -1 | 1.252777777777778e-06 | [1] / [h] | not captured | exact (1.0) | tab_2:row8:col1 | — | not captured |
-| K 24 (h -1 ) | `Q305` · kfm | 0.00649 | h -1 | 1.8027777777777777e-06 | [1] / [h] | not captured | exact (1.0) | tab_2:row9:col1 | — | not captured |
-| cyp2d6_10_c_t_on_k_24 | `Q900` · cyp2d6_10_c_t_on_k_24 | 0.693 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_2:row10:col1 | — | not captured |
-| cyp2d6_10_t_t_on_k_24 | `Q900` · cyp2d6_10_t_t_on_k_24 | 0.492 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_2:row11:col1 | — | not captured |
-| cyp2d6_10_t_t_on_k_23 | `Q900` · cyp2d6_10_t_t_on_k_23 | 1.34 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_2:row12:col1 | — | not captured |
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
+|---|---|---|---|---|---|---|---|---|
+| K a (h -1 ) | `Q49` · kabs | 2.26 | h -1 | 0.0006278 | 1/s | 1/h | exact (1) | tab_2:row1:col1 |
+| K 20 (h -1 ) | `Q47` · kel | 0.067 | h -1 | 1.861e-05 | 1/s | 1/h | exact (1) | tab_2:row2:col1 |
+| K 30 (h -1 ) | `Q47` · kel | 0.160 | h -1 | 4.444e-05 | 1/s | 1/h | exact (1) | tab_2:row3:col1 |
+| K 40 (h -1 ) | `Q47` · kel | 0.106 | h -1 | 2.944e-05 | 1/s | 1/h | exact (1) | tab_2:row4:col1 |
+| V 2 (L) | `Q63` · V1 | 679 | L | 0.679 | m3 | l | exact (1) | tab_2:row5:col1 |
+| V 3 (L) | `Q61` · V | 10 | L | 0.01 | m3 | l | exact (1) | tab_2:row6:col1 |
+| V 4 (L) | `Q61` · V | 10 | L | 0.01 | m3 | l | exact (1) | tab_2:row7:col1 |
+| K 23 (h -1 ) | `Q305` · kfm | 0.00451 | h -1 | 1.253e-06 | 1/s | 1/h | exact (1) | tab_2:row8:col1 |
+| K 24 (h -1 ) | `Q305` · kfm | 0.00649 | h -1 | 1.803e-06 | 1/s | 1/h | exact (1) | tab_2:row9:col1 |
+| cyp2d6_10_c_t_on_k_24 | `Q900` · cyp2d6_10_c_t_on_k_24 | 0.693 |  |  |  |  |  | tab_2:row10:col1 |
+| cyp2d6_10_t_t_on_k_24 | `Q900` · cyp2d6_10_t_t_on_k_24 | 0.492 |  |  |  |  |  | tab_2:row11:col1 |
+| cyp2d6_10_t_t_on_k_23 | `Q900` · cyp2d6_10_t_t_on_k_23 | 1.34 |  |  |  |  |  | tab_2:row12:col1 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ## Departures & gaps
@@ -108,47 +139,43 @@ _All readers agree on the compared fields of this record._
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained | ratio | tol | source |
-|---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 9 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q305 | pass | 1 / [time] | not captured | not captured | not captured | ['tab_2:row8:col1'] |
-| C5_dimension_Q305 | pass | 1 / [time] | not captured | not captured | not captured | ['tab_2:row9:col1'] |
-| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['tab_2:row2:col1'] |
-| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['tab_2:row3:col1'] |
-| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['tab_2:row4:col1'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['tab_2:row1:col1'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_2:row6:col1'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_2:row7:col1'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_2:row5:col1'] |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q61 | pass | volume within physiological range | 10 L | not captured | not captured | ['tab_2:row6:col1'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 10 L | not captured | not captured | ['tab_2:row7:col1'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 679 L | not captured | not captured | ['tab_2:row5:col1'] |
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 9 |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
+| C5_dimension_Q305 | pass | 1 / [time] |  | ['tab_2:row8:col1'] |
+| C5_dimension_Q305 | pass | 1 / [time] |  | ['tab_2:row9:col1'] |
+| C5_dimension_Q47 | pass | 1 / [time] |  | ['tab_2:row2:col1'] |
+| C5_dimension_Q47 | pass | 1 / [time] |  | ['tab_2:row3:col1'] |
+| C5_dimension_Q47 | pass | 1 / [time] |  | ['tab_2:row4:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['tab_2:row1:col1'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['tab_2:row6:col1'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['tab_2:row7:col1'] |
+| C5_dimension_Q63 | pass | [length] ** 3 |  | ['tab_2:row5:col1'] |
+| C8_topology | pass |  |  |  |
+| C9_phys_window_Q61 | pass | volume within physiological range | 10 L | ['tab_2:row6:col1'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 10 L | ['tab_2:row7:col1'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 679 L | ['tab_2:row5:col1'] |
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_param_coverage | not captured | fail | 7 scholar param(s) emitted or defaulted | 6 covered | not captured | neither emitted nor in defaulted[]: ['kabs'] |
-| T3_rate_constant_conversion | not captured | pass | K23 (rate_constant) → CL = k·V | no explicit k·V edge found in model | not captured | rate constant must not be used raw as a clearance |
-| T3_topology_template | not captured | fail | parent_metabolite_central → PK_3M_9C* | PK_General_Linear | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable | not captured | LLM adjudication → deterministic rule |
+| check | scenario | status | expected | obtained | note |
+|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_param_coverage |  | fail | 7 scholar param(s) emitted or defaulted | 6 covered | neither emitted nor in defaulted[]: ['kabs'] |
+| T3_rate_constant_conversion |  | pass | K23 (rate_constant) → CL = k·V | no explicit k·V edge found in model | rate constant must not be used raw as a clearance |
+| T3_topology_template |  | fail | parent_metabolite_central → PK_3M_9C* | PK_General_Linear | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Validation definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
-## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_iloperidone/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Pei_2016` / `Pei_2016::estimate`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_iloperidone/models/modelica/_needs_review/Iloperidone_Pei2016_estimate.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_iloperidone/models/modelica/_needs_review/Iloperidone_Pei2016_estimate.deviation.json`
-
+</details>
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
@@ -173,4 +200,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 15:48 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Biloperidone%5D%20Iloperidone_Pei2016_estimate&body=Drug%3A%20iloperidone%0ARecord%3A%20Iloperidone_Pei2016_estimate%0APaper%3A%20Pei_2016%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_iloperidone/Iloperidone_Pei2016_estimate%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Generated by `docs.py` (scholarv2, release v26.09) · extracted 2026-10-06 15:48 UTC</sub>

@@ -13,12 +13,24 @@
   80.0,
   100.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Ieiri_2011:other_prose",
+    "value_si": 0.0008359999999999999
+   },
+   {
+    "source": "Ieiri_2011:other_prose",
+    "value_si": 1.0600000000000001e-07
+   }
+  ]
+ },
  "parameters": {
   "Cl": 4.416666666666667e-06,
   "F": 1.0,
   "MM": 0.5146168999999999,
   "Tlag": 871.1999999999999,
-  "VdPerKg": 0.001187142857142857,
+  "VdPerKg": 0.00142,
   "adminCount": 1.0,
   "adminDuration": 600.0,
   "adminMass": 8e-05,
@@ -26,10 +38,10 @@
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 3878.1670569507896
+  "central.C": 4007.664250242644
  },
  "reference_peaks": {
-  "central.C": 0.0008364706402350424
+  "central.C": 0.0007115201524093529
  },
  "stop_time": 86400.0,
  "template": "PK_1C_enteral",

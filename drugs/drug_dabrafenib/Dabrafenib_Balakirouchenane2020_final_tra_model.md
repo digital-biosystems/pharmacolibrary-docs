@@ -4,15 +4,52 @@
 
 # dabrafenib — `Dabrafenib_Balakirouchenane2020_final_tra_model`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.583). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+
+> Dabrafenib’s clearance, volume of distribution, and absorption lag time were missing; the recorded clearance value, 5.83 L/h, belongs to trametinib.
+
+<div class="pk-model-meta" hidden drug="dabrafenib" model-id="Dabrafenib_Balakirouchenane2020_final_tra_model" status="model_quarantined" stale="false" population="adults with metastatic BRAF-mutated solid tumors" measured-compound="dabrafenib, hydroxy-dabrafenib, and trametinib" parameterization="apparent" topology="parent_metabolite"></div>
+
+## Citation
+Balakirouchenane D, Guégan S, Csajka C, Jouinot A, Heidelberger V, Puszkiel A et al. Population Pharmacokinetics/Pharmacodynamics of Dabrafenib Plus Trametinib in Patients with BRAF-Mutated Metastatic Melanoma. Cancers 12(4) (2020).
+  ·  DOI: [10.3390/cancers12040931](https://doi.org/10.3390/cancers12040931)
+
+## Population and dosing
+
+**Population:** adults with metastatic BRAF-mutated solid tumors · condition metastatic BRAF-mutated solid tumors · age group adult · n = 73.
+
+**Dosing:** 75, 150 mg, oral, multiple, every 12 h.
+
+**Dosed compound ≠ measured compound:** dosed dabrafenib and trametinib, measured dabrafenib, hydroxy-dabrafenib, and trametinib.
+
+## Model
+
+**Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Parameters:** 6 extracted.  
+**Availability:** Model withheld: a core parameter is unspecified.
+
+## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
+| label | parameter | value | unit | IIV |
+|---|---|---|---|---|
+| CL/F (L/h) | CL/F | 5.83 | L/h | 29.6 (None% RSE) |
+| V2/F (L) | V1/F | 61.9 | L |  |
+| ka (1/h) | kabs | 0.913 | 1/h |  |
+| Q/F (L/h) | Q/F | 64.9 | L/h |  |
+| V3/F (L) | V2/F | 417.0 | L |  |
+| Tlag (h) | tlag | 0.709 | h |  |
+
+<details class="pk-evidence"><summary>Evidence &amp; review</summary>
+
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.583). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
-
-**Model:** Model withheld: a core parameter is unspecified.
 
 ### Reviewer guidance
 
@@ -24,34 +61,20 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which co
 
 <sub>reviewed by gpt-6-luna</sub>
 
-> **Dose compound ≠ measured compound:** dosed `dabrafenib and trametinib`, measured `dabrafenib, hydroxy-dabrafenib, and trametinib`.
+### All parameter columns
 
-## Citation
-Balakirouchenane D et al., Population Pharmacokinetics/Pharmacodyn…, Cancers (2020)
-  ·  DOI: [10.3390/cancers12040931](https://doi.org/10.3390/cancers12040931)
-
-<div class="pk-model-meta" hidden drug="dabrafenib" model-id="Dabrafenib_Balakirouchenane2020_final_tra_model" status="model_quarantined" stale="false" population="adults with metastatic BRAF-mutated solid tumors" measured-compound="dabrafenib, hydroxy-dabrafenib, and trametinib" parameterization="apparent" topology="parent_metabolite"></div>
-
-**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 6 extracted.
-
-**Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
-
-## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| CL/F (L/h) | `Q27` · CL/F | 5.83 | L/h | 1.6194444444444445e-06 | [l] / [h] | not captured | exact (1.0) | cancers-12-00931-t003:row2:col1, cancers-12-00931-t003:row2:col2 | — | 29.6 (None% RSE) |
-| V2/F (L) | `Q290` · V1/F | 61.9 | L | 0.0619 | [l] | not captured | exact (1.0) | cancers-12-00931-t003:row3:col1, cancers-12-00931-t003:row3:col2 | — | not captured |
-| ka (1/h) | `Q49` · kabs | 0.913 | 1/h | 0.00025361111111111114 | 1/h | not captured | exact (1.0) | cancers-12-00931-t003:row4:col1, cancers-12-00931-t003:row4:col2 | — | not captured |
-| Q/F (L/h) | `Q69` · Q/F | 64.9 | L/h | 1.8027777777777783e-05 | [l] / [h] | not captured | exact (1.0) | cancers-12-00931-t003:row5:col1, cancers-12-00931-t003:row5:col2 | — | not captured |
-| V3/F (L) | `Q82` · V2/F | 417.0 | L | 0.417 | [l] | not captured | exact (1.0) | cancers-12-00931-t003:row6:col1, cancers-12-00931-t003:row6:col2 | — | not captured |
-| Tlag (h) | `Q83` · tlag | 0.709 | h | 2552.4 | [h] | not captured | exact (1.0) | cancers-12-00931-t003:row7:col1, cancers-12-00931-t003:row7:col2 | — | not captured |
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source | IIV |
+|---|---|---|---|---|---|---|---|---|---|
+| CL/F (L/h) | `Q27` · CL/F | 5.83 | L/h | 1.619e-06 | m3/s | l/h | exact (1) | cancers-12-00931-t003:row2:col1, cancers-12-00931-t003:row2:col2 | 29.6 (None% RSE) |
+| V2/F (L) | `Q290` · V1/F | 61.9 | L | 0.0619 | m3 | l | exact (1) | cancers-12-00931-t003:row3:col1, cancers-12-00931-t003:row3:col2 |  |
+| ka (1/h) | `Q49` · kabs | 0.913 | 1/h | 0.0002536 | 1/s | 1/h | exact (1) | cancers-12-00931-t003:row4:col1, cancers-12-00931-t003:row4:col2 |  |
+| Q/F (L/h) | `Q69` · Q/F | 64.9 | L/h | 1.803e-05 | m3/s | l/h | exact (1) | cancers-12-00931-t003:row5:col1, cancers-12-00931-t003:row5:col2 |  |
+| V3/F (L) | `Q82` · V2/F | 417.0 | L | 0.417 | m3 | l | exact (1) | cancers-12-00931-t003:row6:col1, cancers-12-00931-t003:row6:col2 |  |
+| Tlag (h) | `Q83` · tlag | 0.709 | h | 2552 | s | h | exact (1) | cancers-12-00931-t003:row7:col1, cancers-12-00931-t003:row7:col2 |  |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ## Departures & gaps
@@ -114,45 +137,41 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained | ratio | tol | source |
-|---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['cancers-12-00931-t003:row2:col1', 'cancers-12-00931-t003:row2:col2'] |
-| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['cancers-12-00931-t003:row3:col1', 'cancers-12-00931-t003:row3:col2'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['cancers-12-00931-t003:row4:col1', 'cancers-12-00931-t003:row4:col2'] |
-| C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['cancers-12-00931-t003:row5:col1', 'cancers-12-00931-t003:row5:col2'] |
-| C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['cancers-12-00931-t003:row6:col1', 'cancers-12-00931-t003:row6:col2'] |
-| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['cancers-12-00931-t003:row7:col1', 'cancers-12-00931-t003:row7:col2'] |
-| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 5.83 L/h | not captured | not captured | ['cancers-12-00931-t003:row2:col1', 'cancers-12-00931-t003:row2:col2'] |
-| C9_phys_window_Q290 | pass | volume within physiological range | 61.9 L | not captured | not captured | ['cancers-12-00931-t003:row3:col1', 'cancers-12-00931-t003:row3:col2'] |
-| C9_phys_window_Q82 | pass | volume within physiological range | 417 L | not captured | not captured | ['cancers-12-00931-t003:row6:col1', 'cancers-12-00931-t003:row6:col2'] |
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 6 |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['cancers-12-00931-t003:row2:col1', 'cancers-12-00931-t003:row2:col2'] |
+| C5_dimension_Q290 | pass | [length] ** 3 |  | ['cancers-12-00931-t003:row3:col1', 'cancers-12-00931-t003:row3:col2'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['cancers-12-00931-t003:row4:col1', 'cancers-12-00931-t003:row4:col2'] |
+| C5_dimension_Q69 | pass | [length] ** 3 / [time] |  | ['cancers-12-00931-t003:row5:col1', 'cancers-12-00931-t003:row5:col2'] |
+| C5_dimension_Q82 | pass | [length] ** 3 |  | ['cancers-12-00931-t003:row6:col1', 'cancers-12-00931-t003:row6:col2'] |
+| C5_dimension_Q83 | pass | [time] |  | ['cancers-12-00931-t003:row7:col1', 'cancers-12-00931-t003:row7:col2'] |
+| C7_apparent_coherence | pass |  |  |  |
+| C8_topology | pass |  |  |  |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 5.83 L/h | ['cancers-12-00931-t003:row2:col1', 'cancers-12-00931-t003:row2:col2'] |
+| C9_phys_window_Q290 | pass | volume within physiological range | 61.9 L | ['cancers-12-00931-t003:row3:col1', 'cancers-12-00931-t003:row3:col2'] |
+| C9_phys_window_Q82 | pass | volume within physiological range | 417 L | ['cancers-12-00931-t003:row6:col1', 'cancers-12-00931-t003:row6:col2'] |
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
-| T3_param_coverage | not captured | fail | 6 scholar param(s) emitted or defaulted | 5 covered | not captured | neither emitted nor in defaulted[]: ['V2/F'] |
-| T3_topology_template | not captured | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable | not captured | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | note |
+|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
+| T3_param_coverage | fail | 6 scholar param(s) emitted or defaulted | 5 covered | neither emitted nor in defaulted[]: ['V2/F'] |
+| T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Validation definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
-## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_dabrafenib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Balakirouchenane_2020` / `Balakirouchenane_2020::final_tra_model`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_dabrafenib/models/modelica/_needs_review/Dabrafenib_Balakirouchenane2020_final_tra_model.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_dabrafenib/models/modelica/_needs_review/Dabrafenib_Balakirouchenane2020_final_tra_model.deviation.json`
-
+</details>
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
@@ -170,6 +189,24 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 </div></div>
 
+## How to cite
+
+**Source paper** (the parameters are its): Balakirouchenane D, Guégan S, Csajka C, Jouinot A, Heidelberger V, Puszkiel A et al. Population Pharmacokinetics/Pharmacodynamics of Dabrafenib Plus Trametinib in Patients with BRAF-Mutated Metastatic Melanoma. Cancers 12(4) (2020). [doi:10.3390/cancers12040931](https://doi.org/10.3390/cancers12040931)
+
+**This record:** Pharmacolibrary v26.09, model `Dabrafenib_Balakirouchenane2020_final_tra_model`. <https://pharmacolibrary.github.io/#/drugs/drug_dabrafenib/Dabrafenib_Balakirouchenane2020_final_tra_model>
+
+```bibtex
+@misc{pharmacolibrary_DabrafenibBalakirouchenane2020finaltramodel,
+  title  = {{Pharmacolibrary model Dabrafenib_Balakirouchenane2020_final_tra_model}},
+  author = {{Pharmacolibrary}},
+  version = {v26.09},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_dabrafenib/Dabrafenib_Balakirouchenane2020_final_tra_model},
+  note   = {Parameters from doi:10.3390/cancers12040931},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
+
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
 _Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
@@ -177,4 +214,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 23:13 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdabrafenib%5D%20Dabrafenib_Balakirouchenane2020_final_tra_model&body=Drug%3A%20dabrafenib%0ARecord%3A%20Dabrafenib_Balakirouchenane2020_final_tra_model%0APaper%3A%20Balakirouchenane_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_dabrafenib/Dabrafenib_Balakirouchenane2020_final_tra_model%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Generated by `docs.py` (scholarv2, release v26.09) · extracted 2026-10-06 23:13 UTC</sub>

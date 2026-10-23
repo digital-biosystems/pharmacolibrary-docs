@@ -8,6 +8,22 @@
  "observables": [
   "central.C"
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Kim_2018:other_prose",
+    "value_si": 2669.0
+   },
+   {
+    "source": "Kim_2018:other_prose",
+    "value_si": 0.397
+   },
+   {
+    "source": "Kim_2018:other_prose",
+    "value_si": 0.015
+   }
+  ]
+ },
  "parameters": {
   "Cl": 1.0888888888888891e-05,
   "F": 0.9,

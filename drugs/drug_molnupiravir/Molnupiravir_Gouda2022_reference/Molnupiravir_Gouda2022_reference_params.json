@@ -12,6 +12,22 @@
  "paper_doses_mg": [
   800.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Gouda_2022:other_prose",
+    "value_si": 0.0036404299999999996
+   },
+   {
+    "source": "Gouda_2022:other_prose",
+    "value_si": 0.0038269999999999997
+   },
+   {
+    "source": "Gouda_2022:other_prose",
+    "value_si": 1.05
+   }
+  ]
+ },
  "parameters": {
   "Cl": 2.088888888888889e-05,
   "F": 1.0,

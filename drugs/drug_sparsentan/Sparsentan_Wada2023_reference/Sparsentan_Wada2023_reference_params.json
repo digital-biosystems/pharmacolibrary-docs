@@ -14,6 +14,22 @@
   400.0,
   800.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Wada_2023:other_prose",
+    "value_si": 99.0
+   },
+   {
+    "source": "Wada_2023:other_prose",
+    "value_si": 16.0
+   },
+   {
+    "source": "Wada_2023:discussion_prose",
+    "value_si": 10.0
+   }
+  ]
+ },
  "parameters": {
   "Cl": 1.0777777777777777e-06,
   "F": 1.0,

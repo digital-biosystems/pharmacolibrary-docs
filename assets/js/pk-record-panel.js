@@ -71,3 +71,52 @@
     room();
   });
 });
+
+// ── filters on a drug page's popPK record table ────────────────────────────
+// build.py puts a hidden <span class="pk-rf" data-species data-age data-status data-sim>
+// in each row's first cell. Four selects above the table hide the rows that do not match;
+// a nested ↳ row is filtered on its own attributes. Nothing is stored.
+(window.$docsify.plugins = window.$docsify.plugins || []).push(function (hook) {
+  var FIELDS = [['species', 'species'], ['age', 'age group'], ['status', 'status'], ['sim', 'simulatable']];
+  hook.doneEach(function () {
+    var section = document.querySelector('.markdown-section');
+    if (!section) return;
+    var marks = section.querySelectorAll('span.pk-rf');
+    if (marks.length < 4) return;                       // a short table needs no filter
+    var table = marks[0].closest('table');
+    if (!table || table.previousElementSibling && table.previousElementSibling.classList.contains('pk-rf-bar')) return;
+    var rows = Array.prototype.map.call(marks, function (m) { return { tr: m.closest('tr'), d: m.dataset }; });
+    var bar = document.createElement('div');
+    bar.className = 'pk-rf-bar';
+    var sel = {};
+    FIELDS.forEach(function (f) {
+      var vals = {};
+      rows.forEach(function (r) { vals[r.d[f[0]]] = 1; });
+      var keys = Object.keys(vals).sort();
+      if (keys.length < 2) return;
+      var s = document.createElement('select');
+      s.setAttribute('aria-label', 'filter by ' + f[1]);
+      s.innerHTML = '<option value="">' + f[1] + ': all</option>' + keys.map(function (k) {
+        return '<option value="' + k.replace(/"/g, '&quot;') + '">' + (f[0] === 'sim' ? (k === 'yes' ? 'runs in browser' : 'no simulator') : k) + '</option>';
+      }).join('');
+      s.addEventListener('change', apply);
+      sel[f[0]] = s;
+      bar.appendChild(s);
+    });
+    if (!bar.children.length) return;
+    var count = document.createElement('span');
+    count.className = 'pk-rf-count';
+    bar.appendChild(count);
+    function apply() {
+      var shown = 0;
+      rows.forEach(function (r) {
+        var ok = Object.keys(sel).every(function (k) { return !sel[k].value || r.d[k] === sel[k].value; });
+        r.tr.hidden = !ok;
+        if (ok) shown++;
+      });
+      count.textContent = shown + ' of ' + rows.length + ' records';
+    }
+    table.parentNode.insertBefore(bar, table);
+    apply();
+  });
+});

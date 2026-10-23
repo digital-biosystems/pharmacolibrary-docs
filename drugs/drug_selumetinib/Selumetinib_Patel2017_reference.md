@@ -1,19 +1,61 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;selumetinib&quot;,&quot;href&quot;:&quot;drugs/drug_selumetinib/&quot;},{&quot;label&quot;:&quot;Patel_2017 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Selumetinib_Patel2018_reference&quot;,&quot;label&quot;:&quot;Patel_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_selumetinib/Selumetinib_Patel2018_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Selumetinib_Tong2019_reference&quot;,&quot;label&quot;:&quot;Tong_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_selumetinib/Selumetinib_Tong2019_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Selumetinib_Patel2018_reference&quot;,&quot;label&quot;:&quot;Patel_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_selumetinib/Selumetinib_Patel2018_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Selumetinib_Tong2019_reference&quot;,&quot;label&quot;:&quot;Tong_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_selumetinib/Selumetinib_Tong2019_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # selumetinib — `Selumetinib_Patel2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.138). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
+
+> Selumetinib’s absorption rate constant, 0.622 nmol/hr, has amount-per-time units rather than inverse-time units, so the record was rejected.
+
+<div class="pk-model-meta" hidden drug="selumetinib" model-id="Selumetinib_Patel2017_reference" status="rejected" stale="false" population="adults with advanced solid tumors and children with recurrent low-grade gliomas" measured-compound="selumetinib" parameterization="mechanistic" topology="parent_metabolite"></div>
+
+## Citation
+Patel YT, Daryani VM, Patel P, Zhou D, Fangusaro J, Carlile DJ et al. Population Pharmacokinetics of Selumetinib and Its Metabolite N-desmethyl-selumetinib in Adult Patients With Advanced Solid Tumors and Children With Low-Grade Gliomas. CPT: pharmacometrics & systems pharmacology 6(5):305–314 (2017).
+  ·  DOI: [10.1002/psp4.12175](https://doi.org/10.1002/psp4.12175)
+
+## Population and dosing
+
+**Population:** adults with advanced solid tumors and children with recurrent low-grade gliomas · condition cancer · age group mixed · n = 105.
+
+**Dosing:** 25, 75 mg (adults); mg/m2 (pediatric patients), oral, multiple, every 12 h.
+
+## Model
+
+**Structure:** parent + metabolite; no model was built for this record.  
+**Parameterization:** mechanistic.  
+**Parameters:** 12 extracted.  
+**Availability:** No model was generated from this record.
+
+## Parameters
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
+| label | parameter | value | unit | RSE% |
+|---|---|---|---|---|
+| θ1 (nmol/hr) | kabs | 0.622 | nmol/hr | 0.062 |
+| θ2 (hr) | tlag | 0.319 | hr | 0.0279 |
+| θ3 (L/hr) | CL | 13.5 | L/hr | 0.662 |
+| θ4 (L) | V1 | 32.6 | L | 1.78 |
+| θ5 (L) | V2 | 55 | L | 5.34 |
+| θ6 (L/hr) | Q | 8.2 | L/hr | 0.557 |
+| θ8 | equation variable | 0.117 |  | 0.0865 |
+| θ15 | V1 | 1.37 | L | 0.127 |
+| θ16 (L/hr) | Q | 240 | L/hr | 20.4 |
+| θ17 (L/hr) | CL | 49.5 | L/hr | 7.07 |
+| θ18 (L) | V2 | 413 | L | 54.2 |
+| θ19 (L/hr) | CLfm | 0.274 | L/hr | 0.0449 |
+| θ20 | fm | 0.908 |  | 0.163 |
+
+<details class="pk-evidence"><summary>Evidence &amp; review</summary>
+
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.138). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
-
-**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -25,39 +67,27 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which co
 
 <sub>reviewed by gpt-6-luna</sub>
 
-## Citation
-Patel YT et al., Population Pharmacokinetics of Selumeti…, CPT: pharmacometrics & syst… (2017)
-  ·  DOI: [10.1002/psp4.12175](https://doi.org/10.1002/psp4.12175)
+### All parameter columns
 
-<div class="pk-model-meta" hidden drug="selumetinib" model-id="Selumetinib_Patel2017_reference" status="rejected" stale="false" population="adults with advanced solid tumors and children with recurrent low-grade gliomas" measured-compound="selumetinib" parameterization="mechanistic" topology="parent_metabolite"></div>
-
-**Model structure:** parent + metabolite; no model was built for this record.  
-**Parameters:** 12 extracted.
-
-**Parameterization:** mechanistic.
-
-## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| θ1 (nmol/hr) | `Q49` · kabs | 0.622 | nmol/hr | not captured | [nM] / [h] | 0.062 | exact (1.0) | psp412175-tbl-0002:row2:col2, psp412175-tbl-0002:row2:col3 | — | not captured |
-| θ2 (hr) | `Q83` · tlag | 0.319 | hr | 1148.4 | [h] | 0.0279 | exact (1.0) | psp412175-tbl-0002:row3:col2, psp412175-tbl-0002:row3:col3 | — | not captured |
-| θ3 (L/hr) | `Q22` · CL | 13.5 | L/hr | 3.75e-06 | [l] / [h] | 0.662 | exact (1.0) | psp412175-tbl-0002:row4:col2, psp412175-tbl-0002:row4:col3 | — | not captured |
-| θ4 (L) | `Q63` · V1 | 32.6 | L | 0.032600000000000004 | [l] | 1.78 | exact (1.0) | psp412175-tbl-0002:row5:col1, psp412175-tbl-0002:row5:col2, psp412175-tbl-0002:row5:col3 | — | not captured |
-| θ5 (L) | `Q64` · V2 | 55 | L | 0.055 | [l] | 5.34 | exact (1.0) | psp412175-tbl-0002:row6:col1, psp412175-tbl-0002:row6:col2, psp412175-tbl-0002:row6:col3 | — | not captured |
-| θ6 (L/hr) | `Q30` · Q | 8.2 | L/hr | 2.2777777777777776e-06 | [l] / [h] | 0.557 | exact (1.0) | psp412175-tbl-0002:row7:col2, psp412175-tbl-0002:row7:col3 | — | not captured |
-| θ8 | `Q900` · equation variable | 0.117 | not captured | not captured | not captured | 0.0865 | llm (0.6) | psp412175-tbl-0002:row9:col2, psp412175-tbl-0002:row9:col3 | — | not captured |
-| θ15 | `Q63` · V1 | 1.37 | L | 0.0013700000000000001 | [l] | 0.127 | exact (1.0) | psp412175-tbl-0002:row37:col2, psp412175-tbl-0002:row37:col3 | — | not captured |
-| θ16 (L/hr) | `Q30` · Q | 240 | L/hr | 6.666666666666667e-05 | [l] / [h] | 20.4 | exact (1.0) | psp412175-tbl-0002:row38:col2, psp412175-tbl-0002:row38:col3 | — | not captured |
-| θ17 (L/hr) | `Q22` · CL | 49.5 | L/hr | 1.375e-05 | [l] / [h] | 7.07 | exact (1.0) | psp412175-tbl-0002:row39:col2, psp412175-tbl-0002:row39:col3 | — | not captured |
-| θ18 (L) | `Q64` · V2 | 413 | L | 0.41300000000000003 | [l] | 54.2 | exact (1.0) | psp412175-tbl-0002:row40:col1, psp412175-tbl-0002:row40:col2, psp412175-tbl-0002:row40:col3 | — | not captured |
-| θ19 (L/hr) | `Q370` · CLfm | 0.274 | L/hr | 7.611111111111113e-08 | [l] / [h] | 0.0449 | exact (1.0) | psp412175-tbl-0002:row41:col2, psp412175-tbl-0002:row41:col3 | — | not captured |
-| θ20 | `Q45` · fm | 0.908 | not captured | not captured | not captured | 0.163 | exact (1.0) | psp412175-tbl-0002:row42:col2, psp412175-tbl-0002:row42:col3 | — | not captured |
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | RSE% | link | source |
+|---|---|---|---|---|---|---|---|---|---|
+| θ1 (nmol/hr) | `Q49` · kabs | 0.622 | nmol/hr |  |  | nM/h | 0.062 | exact (1) | psp412175-tbl-0002:row2:col2, psp412175-tbl-0002:row2:col3 |
+| θ2 (hr) | `Q83` · tlag | 0.319 | hr | 1148 | s | h | 0.0279 | exact (1) | psp412175-tbl-0002:row3:col2, psp412175-tbl-0002:row3:col3 |
+| θ3 (L/hr) | `Q22` · CL | 13.5 | L/hr | 3.75e-06 | m3/s | l/h | 0.662 | exact (1) | psp412175-tbl-0002:row4:col2, psp412175-tbl-0002:row4:col3 |
+| θ4 (L) | `Q63` · V1 | 32.6 | L | 0.0326 | m3 | l | 1.78 | exact (1) | psp412175-tbl-0002:row5:col1, psp412175-tbl-0002:row5:col2, psp412175-tbl-0002:row5:col3 |
+| θ5 (L) | `Q64` · V2 | 55 | L | 0.055 | m3 | l | 5.34 | exact (1) | psp412175-tbl-0002:row6:col1, psp412175-tbl-0002:row6:col2, psp412175-tbl-0002:row6:col3 |
+| θ6 (L/hr) | `Q30` · Q | 8.2 | L/hr | 2.278e-06 | m3/s | l/h | 0.557 | exact (1) | psp412175-tbl-0002:row7:col2, psp412175-tbl-0002:row7:col3 |
+| θ8 | `Q900` · equation variable | 0.117 |  |  |  |  | 0.0865 | llm (0.6) | psp412175-tbl-0002:row9:col2, psp412175-tbl-0002:row9:col3 |
+| θ15 | `Q63` · V1 | 1.37 | L | 0.00137 | m3 | l | 0.127 | exact (1) | psp412175-tbl-0002:row37:col2, psp412175-tbl-0002:row37:col3 |
+| θ16 (L/hr) | `Q30` · Q | 240 | L/hr | 6.667e-05 | m3/s | l/h | 20.4 | exact (1) | psp412175-tbl-0002:row38:col2, psp412175-tbl-0002:row38:col3 |
+| θ17 (L/hr) | `Q22` · CL | 49.5 | L/hr | 1.375e-05 | m3/s | l/h | 7.07 | exact (1) | psp412175-tbl-0002:row39:col2, psp412175-tbl-0002:row39:col3 |
+| θ18 (L) | `Q64` · V2 | 413 | L | 0.413 | m3 | l | 54.2 | exact (1) | psp412175-tbl-0002:row40:col1, psp412175-tbl-0002:row40:col2, psp412175-tbl-0002:row40:col3 |
+| θ19 (L/hr) | `Q370` · CLfm | 0.274 | L/hr | 7.611e-08 | m3/s | l/h | 0.0449 | exact (1) | psp412175-tbl-0002:row41:col2, psp412175-tbl-0002:row41:col3 |
+| θ20 | `Q45` · fm | 0.908 |  |  |  |  | 0.163 | exact (1) | psp412175-tbl-0002:row42:col2, psp412175-tbl-0002:row42:col3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ## Departures & gaps
@@ -164,29 +194,29 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `qwen3.8-27b` | `parameters[θ10]` | not captured | 0.348 | only_one_extracted |
-| `qwen3.8-27b` | `parameters[θ11]` | not captured | 0.923 | only_one_extracted |
-| `qwen3.8-27b` | `parameters[θ12]` | not captured | 1.24 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[θ10]` |  | 0.348 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[θ11]` |  | 0.923 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[θ12]` |  | 1.24 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[θ15].parameter_id` | Q63 | Q305 | mismatch |
-| `qwen3.8-27b` | `parameters[θ16]` | 240 | not captured | only_one_extracted |
-| `qwen3.8-27b` | `parameters[θ17]` | 49.5 | not captured | only_one_extracted |
-| `qwen3.8-27b` | `parameters[θ18]` | 413 | not captured | only_one_extracted |
-| `qwen3.8-27b` | `parameters[θ19]` | 0.274 | not captured | only_one_extracted |
-| `qwen3.8-27b` | `parameters[θ1]` | 0.622 | not captured | only_one_extracted |
-| `qwen3.8-27b` | `parameters[θ1]` | not captured | 0.622 | only_one_extracted |
-| `qwen3.8-27b` | `parameters[θ20]` | 0.908 | not captured | only_one_extracted |
-| `qwen3.8-27b` | `parameters[θ2]` | 0.319 | not captured | only_one_extracted |
-| `qwen3.8-27b` | `parameters[θ2]` | not captured | 0.319 | only_one_extracted |
-| `qwen3.8-27b` | `parameters[θ3]` | 13.5 | not captured | only_one_extracted |
-| `qwen3.8-27b` | `parameters[θ3]` | not captured | 13.5 | only_one_extracted |
-| `qwen3.8-27b` | `parameters[θ4]` | 32.6 | not captured | only_one_extracted |
-| `qwen3.8-27b` | `parameters[θ4]` | not captured | 32.6 | only_one_extracted |
-| `qwen3.8-27b` | `parameters[θ5]` | 55 | not captured | only_one_extracted |
-| `qwen3.8-27b` | `parameters[θ5]` | not captured | 55 | only_one_extracted |
-| `qwen3.8-27b` | `parameters[θ6]` | 8.2 | not captured | only_one_extracted |
-| `qwen3.8-27b` | `parameters[θ6]` | not captured | 8.2 | only_one_extracted |
-| `qwen3.8-27b` | `parameters[θ8]` | 0.117 | not captured | only_one_extracted |
-| `qwen3.8-27b` | `parameters[θ9]` | not captured | 4.09 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[θ16]` | 240 |  | only_one_extracted |
+| `qwen3.8-27b` | `parameters[θ17]` | 49.5 |  | only_one_extracted |
+| `qwen3.8-27b` | `parameters[θ18]` | 413 |  | only_one_extracted |
+| `qwen3.8-27b` | `parameters[θ19]` | 0.274 |  | only_one_extracted |
+| `qwen3.8-27b` | `parameters[θ1]` | 0.622 |  | only_one_extracted |
+| `qwen3.8-27b` | `parameters[θ1]` |  | 0.622 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[θ20]` | 0.908 |  | only_one_extracted |
+| `qwen3.8-27b` | `parameters[θ2]` | 0.319 |  | only_one_extracted |
+| `qwen3.8-27b` | `parameters[θ2]` |  | 0.319 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[θ3]` | 13.5 |  | only_one_extracted |
+| `qwen3.8-27b` | `parameters[θ3]` |  | 13.5 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[θ4]` | 32.6 |  | only_one_extracted |
+| `qwen3.8-27b` | `parameters[θ4]` |  | 32.6 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[θ5]` | 55 |  | only_one_extracted |
+| `qwen3.8-27b` | `parameters[θ5]` |  | 55 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[θ6]` | 8.2 |  | only_one_extracted |
+| `qwen3.8-27b` | `parameters[θ6]` |  | 8.2 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[θ8]` | 0.117 |  | only_one_extracted |
+| `qwen3.8-27b` | `parameters[θ9]` |  | 4.09 | only_one_extracted |
 | `qwen3.8-27b` | `screen.dose_compound` | selumetinib | unknown | mismatch |
 | `qwen3.8-27b` | `screen.primary_analyte` | selumetinib | unknown | mismatch |
 
@@ -200,39 +230,37 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained | ratio | tol | source |
-|---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 12 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp412175-tbl-0002:row4:col2', 'psp412175-tbl-0002:row4:col3'] |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp412175-tbl-0002:row39:col2', 'psp412175-tbl-0002:row39:col3'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp412175-tbl-0002:row7:col2', 'psp412175-tbl-0002:row7:col3'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp412175-tbl-0002:row38:col2', 'psp412175-tbl-0002:row38:col3'] |
-| C5_dimension_Q370 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp412175-tbl-0002:row41:col2', 'psp412175-tbl-0002:row41:col3'] |
-| C5_dimension_Q49 | fail | [substance] / [time] | nmol/hr | not captured | not captured | ['psp412175-tbl-0002:row2:col2', 'psp412175-tbl-0002:row2:col3'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp412175-tbl-0002:row5:col1', 'psp412175-tbl-0002:row5:col2', 'psp412175-tbl-0002:row5:col3'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp412175-tbl-0002:row6:col1', 'psp412175-tbl-0002:row6:col2', 'psp412175-tbl-0002:row6:col3'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp412175-tbl-0002:row40:col1', 'psp412175-tbl-0002:row40:col2', 'psp412175-tbl-0002:row40:col3'] |
-| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['psp412175-tbl-0002:row3:col2', 'psp412175-tbl-0002:row3:col3'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 13.5 | not captured | not captured | ['psp412175-tbl-0002:row4:col2', 'psp412175-tbl-0002:row4:col3'] |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 13.5 L/h | not captured | not captured | ['psp412175-tbl-0002:row4:col2', 'psp412175-tbl-0002:row4:col3'] |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 49.5 L/h | not captured | not captured | ['psp412175-tbl-0002:row39:col2', 'psp412175-tbl-0002:row39:col3'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 32.6 L | not captured | not captured | ['psp412175-tbl-0002:row5:col1', 'psp412175-tbl-0002:row5:col2', 'psp412175-tbl-0002:row5:col3'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 1.37 L | not captured | not captured | ['psp412175-tbl-0002:row37:col2', 'psp412175-tbl-0002:row37:col3'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 55 L | not captured | not captured | ['psp412175-tbl-0002:row6:col1', 'psp412175-tbl-0002:row6:col2', 'psp412175-tbl-0002:row6:col3'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 413 L | not captured | not captured | ['psp412175-tbl-0002:row40:col1', 'psp412175-tbl-0002:row40:col2', 'psp412175-tbl-0002:row40:col3'] |
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 12 |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['psp412175-tbl-0002:row4:col2', 'psp412175-tbl-0002:row4:col3'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['psp412175-tbl-0002:row39:col2', 'psp412175-tbl-0002:row39:col3'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['psp412175-tbl-0002:row7:col2', 'psp412175-tbl-0002:row7:col3'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['psp412175-tbl-0002:row38:col2', 'psp412175-tbl-0002:row38:col3'] |
+| C5_dimension_Q370 | pass | [length] ** 3 / [time] |  | ['psp412175-tbl-0002:row41:col2', 'psp412175-tbl-0002:row41:col3'] |
+| C5_dimension_Q49 | fail | [substance] / [time] | nmol/hr | ['psp412175-tbl-0002:row2:col2', 'psp412175-tbl-0002:row2:col3'] |
+| C5_dimension_Q63 | pass | [length] ** 3 |  | ['psp412175-tbl-0002:row5:col1', 'psp412175-tbl-0002:row5:col2', 'psp412175-tbl-0002:row5:col3'] |
+| C5_dimension_Q64 | pass | [length] ** 3 |  | ['psp412175-tbl-0002:row6:col1', 'psp412175-tbl-0002:row6:col2', 'psp412175-tbl-0002:row6:col3'] |
+| C5_dimension_Q64 | pass | [length] ** 3 |  | ['psp412175-tbl-0002:row40:col1', 'psp412175-tbl-0002:row40:col2', 'psp412175-tbl-0002:row40:col3'] |
+| C5_dimension_Q83 | pass | [time] |  | ['psp412175-tbl-0002:row3:col2', 'psp412175-tbl-0002:row3:col3'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 13.5 | ['psp412175-tbl-0002:row4:col2', 'psp412175-tbl-0002:row4:col3'] |
+| C8_topology | pass |  |  |  |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 13.5 L/h | ['psp412175-tbl-0002:row4:col2', 'psp412175-tbl-0002:row4:col3'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 49.5 L/h | ['psp412175-tbl-0002:row39:col2', 'psp412175-tbl-0002:row39:col3'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 32.6 L | ['psp412175-tbl-0002:row5:col1', 'psp412175-tbl-0002:row5:col2', 'psp412175-tbl-0002:row5:col3'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 1.37 L | ['psp412175-tbl-0002:row37:col2', 'psp412175-tbl-0002:row37:col3'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 55 L | ['psp412175-tbl-0002:row6:col1', 'psp412175-tbl-0002:row6:col2', 'psp412175-tbl-0002:row6:col3'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 413 L | ['psp412175-tbl-0002:row40:col1', 'psp412175-tbl-0002:row40:col2', 'psp412175-tbl-0002:row40:col3'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
-## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_selumetinib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Patel_2017` / `Patel_2017::reference`)
-
+</details>
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
@@ -247,4 +275,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 06:49 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bselumetinib%5D%20Selumetinib_Patel2017_reference&body=Drug%3A%20selumetinib%0ARecord%3A%20Selumetinib_Patel2017_reference%0APaper%3A%20Patel_2017%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_selumetinib/Selumetinib_Patel2017_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Generated by `docs.py` (scholarv2, release v26.09) · extracted 2026-10-07 06:49 UTC</sub>

@@ -1,21 +1,64 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C09A&quot;,&quot;href&quot;:&quot;atc/C09A.md&quot;},{&quot;label&quot;:&quot;enalapril&quot;,&quot;href&quot;:&quot;drugs/drug_enalapril/&quot;},{&quot;label&quot;:&quot;Steichert_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Enalapril_Kechagia2015_reference&quot;,&quot;label&quot;:&quot;Kechagia_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_enalapril/Enalapril_Kechagia2015_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Enalapril_Steichert2025v2_reference&quot;,&quot;label&quot;:&quot;Steichert_2025_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_enalapril/Enalapril_Steichert2025v2_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Enalapril_Steichert2025_reference&quot;,&quot;label&quot;:&quot;Steichert_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_enalapril/Enalapril_Steichert2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Enalapril_Faisal2019v2_reference&quot;,&quot;label&quot;:&quot;Faisal_2019_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_enalapril/Enalapril_Faisal2019v2_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Kechagia_2015_DBP&quot;,&quot;label&quot;:&quot;Kechagia_2015 \u00b7 DBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_enalapril/pd_Kechagia_2015_DBP.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Enalapril_Kechagia2015_reference&quot;,&quot;label&quot;:&quot;Kechagia_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_enalapril/Enalapril_Kechagia2015_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Enalapril_Steichert2025v2_reference&quot;,&quot;label&quot;:&quot;Steichert_2025_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_enalapril/Enalapril_Steichert2025v2_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Enalapril_Steichert2025_reference&quot;,&quot;label&quot;:&quot;Steichert_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_enalapril/Enalapril_Steichert2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Enalapril_Faisal2019v2_reference&quot;,&quot;label&quot;:&quot;Faisal_2019_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_enalapril/Enalapril_Faisal2019v2_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Kechagia_2015_DBP&quot;,&quot;label&quot;:&quot;Kechagia_2015 \u00b7 DBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_enalapril/pd_Kechagia_2015_DBP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # enalapril — `Enalapril_Steichert2025_reference`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.154), gpt-oss:120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
+
+> The model does not reproduce the paper's peak concentration (Cmax) (paper 40, model 0.000184); the covariate scenarios were not simulated.
+
+<div class="pk-model-meta" hidden drug="enalapril" model-id="Enalapril_Steichert2025_reference" status="needs_review" stale="false" population="children with heart failure" measured-compound="enalapril" parameterization="apparent" topology="parent_metabolite"></div>
+
+## Citation
+Steichert M, Cawello W, Laeer S. Population Pharmacokinetic Analysis of Enalapril and Enalaprilat in Newly Treated Children with Heart Failure: Implications for Safe Dosing of Enalapril (LENA Studies). Clinical pharmacokinetics 64(7):1103–1118 (2025).
+  ·  DOI: [10.1007/s40262-025-01520-5](https://doi.org/10.1007/s40262-025-01520-5)
+
+## Population and dosing
+
+**Population:** children with heart failure · condition heart failure · age group child · n = &gt;=34.
+
+**Dosing:** 2.1, 5.6 mg, oral, multiple, every 12 h.
+
+## Model
+
+**Structure:** parent–metabolite model: parent with 1 compartment(s); metabolite enalaprilat: 1 compartment(s); formed from the central compartment; oral dose — template `PK_3M_9C`.  
+**Parameterization:** CL/F, V/F, V1/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Parameters:** 6 extracted, plus 4 covariate effects.  
+**Availability:** Model and browser simulation available in **Models** and **Simulation**.
+
+<figure class="pk-models-diagram"><img src="drugs/drug_enalapril/Enalapril_Steichert2025_reference/Enalapril_Steichert2025_reference.svg" alt="Enalapril_Steichert2025_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
+
+## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
+| label | parameter | value | unit |
+|---|---|---|---|
+| ka | kabs | 0.6 | 1/h |
+| CL_ENA/F | CL/F | 3.43 | L/h |
+| CL_ENAAT/F | CL/F | 1.36 | L/h |
+| Vd_ENA/F | V/F | 2.83 | L |
+| Vd_ENAAT/F | V1/F | 24.45 | L |
+| tlag | tlag | 0.195 | h |
+| age_on_cl_enaat_f | age_on_cl_enaat_f | 0.092 |  |
+| serum_creatinine_on_cl_enaat_f | serum_creatinine_on_cl_enaat_f | 33.3 |  |
+| theta_q319_weight | theta_q319_weight | 1 |  |
+| theta_q319_weight | theta_q319_weight | 1 |  |
+
+## Caveats
+
+- Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.
+
+<details class="pk-evidence"><summary>Evidence &amp; review</summary>
+
+**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.154). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
-
-**Model:** Model and browser simulation available in **Models** and **Simulation**.
-
-> **Caveat** (`covariates_not_exercised`): Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.
 
 ### Reviewer guidance
 
@@ -27,36 +70,24 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-## Citation
-Steichert M et al., Population Pharmacokinetic Analysis of…, Clinical pharmacokinetics (2025)
-  ·  DOI: [10.1007/s40262-025-01520-5](https://doi.org/10.1007/s40262-025-01520-5)
+### All parameter columns
 
-<div class="pk-model-meta" hidden drug="enalapril" model-id="Enalapril_Steichert2025_reference" status="needs_review" stale="false" population="children with heart failure" measured-compound="enalapril" parameterization="apparent" topology="parent_metabolite"></div>
-
-**Model structure:** parent–metabolite model: parent with 1 compartment(s); metabolite enalaprilat: 1 compartment(s); formed from the central compartment; oral dose — template `PK_3M_9C`.  
-**Parameters:** 6 extracted, plus 4 covariate effects.
-
-**Parameterization:** CL/F, V/F, V1/F — apparent, F unknown (apparent — bioavailability not identifiable).
-
-## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| ka | `Q49` · kabs | 0.6 | 1/h | 0.00016666666666666666 | 1/h | not captured | exact (1.0) | Tab2:row2:col1, Tab2:row2:col2, Tab2:row2:col5 | — | not captured |
-| CL_ENA/F | `Q27` · CL/F | 3.43 | L/h | 9.527777777777779e-07 | L/h | not captured | llm (0.6) | Tab2:row3:col2, Tab2:row3:col3, Tab2:row3:col5, Tab2:row3:col6 | — | not captured |
-| CL_ENAAT/F | `Q27` · CL/F | 1.36 | L/h | 3.777777777777778e-07 | L/h | not captured | exact (1.0) | Tab2:row4:col2, Tab2:row4:col3, Tab2:row4:col5, Tab2:row4:col6 | — | not captured |
-| Vd_ENA/F | `Q76` · V/F | 2.83 | L | 0.00283 | L | not captured | llm (0.6) | Tab2:row5:col2, Tab2:row5:col3, Tab2:row5:col5, Tab2:row5:col6 | — | not captured |
-| Vd_ENAAT/F | `Q290` · V1/F | 24.45 | L | 0.02445 | L | not captured | exact (1.0) | Tab2:row6:col2, Tab2:row6:col3, Tab2:row6:col5, Tab2:row6:col6 | — | not captured |
-| tlag | `Q83` · tlag | 0.195 | h | 702.0 | h | not captured | exact (1.0) | Tab2:row7:col2, Tab2:row7:col3, Tab2:row7:col5, Tab2:row7:col6 | — | not captured |
-| age_on_cl_enaat_f | `Q900` · age_on_cl_enaat_f | 0.092 | not captured | not captured | not captured | not captured | not captured (not captured) | Tab2:row12:col2, Tab2:row12:col3, Tab2:row12:col5, Tab2:row12:col6 | — | not captured |
-| serum_creatinine_on_cl_enaat_f | `Q900` · serum_creatinine_on_cl_enaat_f | 33.3 | not captured | not captured | not captured | not captured | not captured (not captured) | Tab2:row13:col3 | — | not captured |
-| theta_q319_weight | `Q900` · theta_q319_weight | 1 | not captured | not captured | not captured | not captured | not captured (not captured) | Tab2:row10:col2, Tab2:row10:col5 | — | not captured |
-| theta_q319_weight | `Q900` · theta_q319_weight | 1 | not captured | not captured | not captured | not captured | not captured (not captured) | Tab2:row11:col2, Tab2:row11:col5 | — | not captured |
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
+|---|---|---|---|---|---|---|---|---|
+| ka | `Q49` · kabs | 0.6 | 1/h | 0.0001667 | 1/s | 1/h | exact (1) | Tab2:row2:col1, Tab2:row2:col2, Tab2:row2:col5 |
+| CL_ENA/F | `Q27` · CL/F | 3.43 | L/h | 9.528e-07 | m3/s | L/h | llm (0.6) | Tab2:row3:col2, Tab2:row3:col3, Tab2:row3:col5, Tab2:row3:col6 |
+| CL_ENAAT/F | `Q27` · CL/F | 1.36 | L/h | 3.778e-07 | m3/s | L/h | exact (1) | Tab2:row4:col2, Tab2:row4:col3, Tab2:row4:col5, Tab2:row4:col6 |
+| Vd_ENA/F | `Q76` · V/F | 2.83 | L | 0.00283 | m3 | L | llm (0.6) | Tab2:row5:col2, Tab2:row5:col3, Tab2:row5:col5, Tab2:row5:col6 |
+| Vd_ENAAT/F | `Q290` · V1/F | 24.45 | L | 0.02445 | m3 | L | exact (1) | Tab2:row6:col2, Tab2:row6:col3, Tab2:row6:col5, Tab2:row6:col6 |
+| tlag | `Q83` · tlag | 0.195 | h | 702 | s | h | exact (1) | Tab2:row7:col2, Tab2:row7:col3, Tab2:row7:col5, Tab2:row7:col6 |
+| age_on_cl_enaat_f | `Q900` · age_on_cl_enaat_f | 0.092 |  |  |  |  |  | Tab2:row12:col2, Tab2:row12:col3, Tab2:row12:col5, Tab2:row12:col6 |
+| serum_creatinine_on_cl_enaat_f | `Q900` · serum_creatinine_on_cl_enaat_f | 33.3 |  |  |  |  |  | Tab2:row13:col3 |
+| theta_q319_weight | `Q900` · theta_q319_weight | 1 |  |  |  |  |  | Tab2:row10:col2, Tab2:row10:col5 |
+| theta_q319_weight | `Q900` · theta_q319_weight | 1 |  |  |  |  |  | Tab2:row11:col2, Tab2:row11:col5 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ## Departures & gaps
@@ -102,61 +133,39 @@ Steichert M et al., Population Pharmacokinetic Analysis of…, Clinical pharmaco
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
 | `gpt-oss-120b` | not confirmed | 0.154 (4/26 fields) | 22 |
-| `gpt-oss:120b` | not confirmed | 0.125 (3/24 fields) | 21 |
 
-<details><summary>43 field discrepancies</summary>
+<details><summary>22 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `model.links` | [['enalapril', 'enalaprilat', 'metabolism']] | [] | mismatch |
-| `gpt-oss-120b` | `parameters[age_on_cl_enaat_f]` | not captured | 29.3 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[age_on_cl_enaat_f]` | 0.092 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[age_on_cl_enaat_f]` |  | 29.3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[age_on_cl_enaat_f]` | 0.092 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[cl_ena/f].covariate_forms` | ['linear_fractional', 'linear_fractional'] | ['linear_fractional', 'linear_fractional', 'linear_fractional'] | mismatch |
-| `gpt-oss-120b` | `parameters[cl_ena/f].rse_percent` | not captured | 3.43 | mismatch |
+| `gpt-oss-120b` | `parameters[cl_ena/f].rse_percent` |  | 3.43 | mismatch |
 | `gpt-oss-120b` | `parameters[cl_ena/f].value` | 3.43 | 12.6 | mismatch |
-| `gpt-oss-120b` | `parameters[cl_enaat/f]` | 1.36 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[ka].rse_percent` | not captured | 0.6 | mismatch |
-| `gpt-oss-120b` | `parameters[ross score on vd_enaat/f]` | not captured | 26.3 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[serum_creatinine_on_cl_enaat_f]` | not captured | 33.3 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[serum_creatinine_on_cl_enaat_f]` | 33.3 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta_cl_f_weight]` | not captured | 0.75 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta_q319_weight]` | 1 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta_q319_weight].rse_percent` | not captured | 0.75 | mismatch |
+| `gpt-oss-120b` | `parameters[cl_enaat/f]` | 1.36 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka].rse_percent` |  | 0.6 | mismatch |
+| `gpt-oss-120b` | `parameters[ross score on vd_enaat/f]` |  | 26.3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[serum_creatinine_on_cl_enaat_f]` |  | 33.3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[serum_creatinine_on_cl_enaat_f]` | 33.3 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_f_weight]` |  | 0.75 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q319_weight]` | 1 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q319_weight].rse_percent` |  | 0.75 | mismatch |
 | `gpt-oss-120b` | `parameters[theta_q319_weight].value` | 1 | 0.75 | mismatch |
-| `gpt-oss-120b` | `parameters[theta_v_f_weight]` | not captured | 1 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[tlag].rse_percent` | not captured | 0.195 | mismatch |
+| `gpt-oss-120b` | `parameters[theta_v_f_weight]` |  | 1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tlag].rse_percent` |  | 0.195 | mismatch |
 | `gpt-oss-120b` | `parameters[tlag].value` | 0.195 | 2.8 | mismatch |
 | `gpt-oss-120b` | `parameters[vd_ena/f].covariate_forms` | [] | ['linear_fractional', 'linear_fractional'] | mismatch |
-| `gpt-oss-120b` | `parameters[vd_ena/f].rse_percent` | not captured | 2.83 | mismatch |
+| `gpt-oss-120b` | `parameters[vd_ena/f].rse_percent` |  | 2.83 | mismatch |
 | `gpt-oss-120b` | `parameters[vd_ena/f].value` | 2.83 | 18.1 | mismatch |
-| `gpt-oss-120b` | `parameters[vd_enaat/f]` | 24.45 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[age_on_cl_enaat_f]` | 0.092 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cl_ena/f]` | 3.43 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cl_ena/f]` | not captured | 12.6 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cl_enaat/f].covariate_forms` | ['linear_fractional', 'linear_fractional'] | ['linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional'] | mismatch |
-| `gpt-oss:120b` | `parameters[cl_enaat/f].value` | 1.36 | 7.1 | mismatch |
-| `gpt-oss:120b` | `parameters[ka]` | 0.6 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[ka]` | not captured | 0.6 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta_cl_f_age]` | not captured | 29.3 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta_cl_f_weight]` | not captured | 0.75 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta_cl_f_weight]` | not captured | 0.75 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta_q319_weight]` | 1 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta_q319_weight]` | 1 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta_q76_weight]` | not captured | 1 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta_v_f_weight]` | not captured | 1 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[tlag]` | 0.195 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[tlag]` | not captured | 2.8 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vd_ena/f]` | 2.83 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vd_ena/f]` | not captured | 18.1 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vd_enaat/f].value` | 24.45 | 15.7 | mismatch |
-| `gpt-oss:120b` | `screen.dose_compound` | enalapril | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | enalapril | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[vd_enaat/f]` | 24.45 |  | only_one_extracted |
 
 </details>
 
@@ -168,58 +177,53 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained | ratio | tol | source |
-|---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row3:col2', 'Tab2:row3:col3', 'Tab2:row3:col5', 'Tab2:row3:col6'] |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row4:col2', 'Tab2:row4:col3', 'Tab2:row4:col5', 'Tab2:row4:col6'] |
-| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row6:col2', 'Tab2:row6:col3', 'Tab2:row6:col5', 'Tab2:row6:col6'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Tab2:row2:col1', 'Tab2:row2:col2', 'Tab2:row2:col5'] |
-| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row5:col2', 'Tab2:row5:col3', 'Tab2:row5:col5', 'Tab2:row5:col6'] |
-| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Tab2:row7:col2', 'Tab2:row7:col3', 'Tab2:row7:col5', 'Tab2:row7:col6'] |
-| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 3.43 L/h | not captured | not captured | ['Tab2:row3:col2', 'Tab2:row3:col3', 'Tab2:row3:col5', 'Tab2:row3:col6'] |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 1.36 L/h | not captured | not captured | ['Tab2:row4:col2', 'Tab2:row4:col3', 'Tab2:row4:col5', 'Tab2:row4:col6'] |
-| C9_phys_window_Q290 | pass | volume within physiological range | 24.4 L | not captured | not captured | ['Tab2:row6:col2', 'Tab2:row6:col3', 'Tab2:row6:col5', 'Tab2:row6:col6'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 2.83 L | not captured | not captured | ['Tab2:row5:col2', 'Tab2:row5:col3', 'Tab2:row5:col5', 'Tab2:row5:col6'] |
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 6 |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
+| C2_reference | pass |  |  |  |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Tab2:row3:col2', 'Tab2:row3:col3', 'Tab2:row3:col5', 'Tab2:row3:col6'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Tab2:row4:col2', 'Tab2:row4:col3', 'Tab2:row4:col5', 'Tab2:row4:col6'] |
+| C5_dimension_Q290 | pass | [length] ** 3 |  | ['Tab2:row6:col2', 'Tab2:row6:col3', 'Tab2:row6:col5', 'Tab2:row6:col6'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['Tab2:row2:col1', 'Tab2:row2:col2', 'Tab2:row2:col5'] |
+| C5_dimension_Q76 | pass | [length] ** 3 |  | ['Tab2:row5:col2', 'Tab2:row5:col3', 'Tab2:row5:col5', 'Tab2:row5:col6'] |
+| C5_dimension_Q83 | pass | [time] |  | ['Tab2:row7:col2', 'Tab2:row7:col3', 'Tab2:row7:col5', 'Tab2:row7:col6'] |
+| C7_apparent_coherence | pass |  |  |  |
+| C8_topology | pass |  |  |  |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 3.43 L/h | ['Tab2:row3:col2', 'Tab2:row3:col3', 'Tab2:row3:col5', 'Tab2:row3:col6'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 1.36 L/h | ['Tab2:row4:col2', 'Tab2:row4:col3', 'Tab2:row4:col5', 'Tab2:row4:col6'] |
+| C9_phys_window_Q290 | pass | volume within physiological range | 24.4 L | ['Tab2:row6:col2', 'Tab2:row6:col3', 'Tab2:row6:col5', 'Tab2:row6:col6'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 2.83 L | ['Tab2:row5:col2', 'Tab2:row5:col3', 'Tab2:row5:col5', 'Tab2:row5:col6'] |
 
 **Reviewer per-scenario checks:**
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
-| T3_metabolite_built[enalaprilat] | not captured | pass | own V, CL and formation clearance &gt; 0 | {'V': 0.02445, 'CL': 3.777777777777778e-07, 'formation': 9.527777777777779e-07} | not captured | enalaprilat = compartment M1 with its own numbers |
-| T3_metabolite_output[enalaprilat] | not captured | pass | not captured | 6.132765739838674e-05 | not captured | C_M1 (enalaprilat) must rise above 0 when the parent is dosed |
-| T3_molar_mass[enalaprilat] | not captured | pass | not captured | {'MW': 0.3764467, 'MW_m1': 0.348399} | not captured | formation is molecule-for-molecule |
-| T3_output_variable | not captured | pass | C_central (measured=enalapril) | central.C | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | pass | 6 scholar param(s) emitted or defaulted | 6 covered | not captured | all structural parameters accounted for |
-| T3_shared_parameters | not captured | skipped | not captured | not captured | not captured | parent–metabolite template: every compound has its own slot |
-| T3_topology_template | not captured | pass | parent_metabolite_central → PK_3M_9C* | PK_3M_9C | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
-| T1_cmax | reference | skipped | 40 | 0.00018422449909641418 | not captured | unresolved concentration unit (exp '%', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 60 | 0.00018422449909641418 | not captured | unresolved concentration unit (exp '%', sim 'kg/m3') |
-| T1_cmax | reference | fail | 1.85e-06 | 0.00018422449909641418 | 99.5808 | µg/L→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 6.789999999999999e-06 | 0.00018422449909641418 | 27.1317 | µg/L→SI vs simulated kg/m3 |
-| T1_cmax | reference | skipped | 14.6 | 0.00018422449909641418 | not captured | unresolved concentration unit (exp 'µg/L/mg·kg', sim 'kg/m3') |
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_metabolite_built[enalaprilat] |  | pass | own V, CL and formation clearance &gt; 0 | {'V': 0.02445, 'CL': 3.777777777777778e-07, 'formation': 9.527777777777779e-07} |  | enalaprilat = compartment M1 with its own numbers |
+| T3_metabolite_output[enalaprilat] |  | pass |  | 6.133e-05 |  | C_M1 (enalaprilat) must rise above 0 when the parent is dosed |
+| T3_molar_mass[enalaprilat] |  | pass |  | {'MW': 0.3764467, 'MW_m1': 0.348399} |  | formation is molecule-for-molecule |
+| T3_output_variable |  | pass | C_central (measured=enalapril) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 6 scholar param(s) emitted or defaulted | 6 covered |  | all structural parameters accounted for |
+| T3_shared_parameters |  | skipped |  |  |  | parent–metabolite template: every compound has its own slot |
+| T3_topology_template |  | pass | parent_metabolite_central → PK_3M_9C* | PK_3M_9C |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| T1_cmax | reference | skipped | 40 | 0.0001842 |  | unresolved concentration unit (exp '%', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 60 | 0.0001842 |  | unresolved concentration unit (exp '%', sim 'kg/m3') |
+| T1_cmax | reference | fail | 1.85e-06 | 0.0001842 | 99.58 | µg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 6.79e-06 | 0.0001842 | 27.13 | µg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | skipped | 14.6 | 0.0001842 |  | unresolved concentration unit (exp 'µg/L/mg·kg', sim 'kg/m3') |
 
 <details class="legend">
 <summary>Validation definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
-## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_enalapril/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Steichert_2025` / `Steichert_2025::reference`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_enalapril/models/modelica/Enalapril_Steichert2025_reference.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_enalapril/models/modelica/Enalapril_Steichert2025_reference.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_enalapril/models/modelica/Enalapril_Steichert2025_reference.json`
-
+</details>
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
@@ -236,7 +240,53 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_3M_9C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_enalapril/Enalapril_Steichert2025_reference/Enalapril_Steichert2025_reference.svg" alt="Enalapril_Steichert2025_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
+</div></div>
+
+## Model interface
+
+The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
+
+| direction | role | name | value | unit (SI) |
+|---|---|---|---|---|
+| input | dosing | `F` | 1 | 1 |
+| input | dosing | `Tlag` | 702 | s |
+| input | dosing | `adminCount` | 1 | 1 |
+| input | dosing | `adminDuration` | 600 | s |
+| input | dosing | `adminMass` | 2.1e-06 | kg |
+| input | model | `CL1` | 0 | m3/s |
+| input | model | `CLm1` | 3.778e-07 | m3/s |
+| input | model | `MW` | 0.3764 |  |
+| input | model | `MW_m1` | 0.3484 |  |
+| input | model | `Vd1` | 0.00283 |  |
+| input | model | `Vd1m1` | 0.02445 | m3 |
+| input | model | `ka` | 0.0001667 | 1/s |
+| input | model | `q1_m11` | 9.528e-07 | m3/s |
+| output | concentration | `central.C` |  | kg/m3 |
+| output | concentration | `C_M1` |  | kg/m3 |
+
+## Tested with
+
+- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_3M_9C`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
+- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
+- Parent–metabolite exports (MATLAB, SBML, CellML) are checked against OpenModelica, Octave and roadrunner to 1e-5 in the generator's test suite (`test/test_three_m_formats.py`).
+
+## How to cite
+
+**Source paper** (the parameters are its): Steichert M, Cawello W, Laeer S. Population Pharmacokinetic Analysis of Enalapril and Enalaprilat in Newly Treated Children with Heart Failure: Implications for Safe Dosing of Enalapril (LENA Studies). Clinical pharmacokinetics 64(7):1103–1118 (2025). [doi:10.1007/s40262-025-01520-5](https://doi.org/10.1007/s40262-025-01520-5)
+
+**This record:** Pharmacolibrary v26.09, model `Enalapril_Steichert2025_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_enalapril/Enalapril_Steichert2025_reference>
+
+```bibtex
+@misc{pharmacolibrary_EnalaprilSteichert2025reference,
+  title  = {{Pharmacolibrary model Enalapril_Steichert2025_reference}},
+  author = {{Pharmacolibrary}},
+  version = {v26.09},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_enalapril/Enalapril_Steichert2025_reference},
+  note   = {Parameters from doi:10.1007/s40262-025-01520-5},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -249,4 +299,5 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 05:42 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Benalapril%5D%20Enalapril_Steichert2025_reference&body=Drug%3A%20enalapril%0ARecord%3A%20Enalapril_Steichert2025_reference%0APaper%3A%20Steichert_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_enalapril/Enalapril_Steichert2025_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Generated by `docs.py` (scholarv2, release v26.09) · extracted 2026-10-07 05:42 UTC</sub>

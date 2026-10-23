@@ -13,6 +13,26 @@
   1.0,
   5.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Garrett_2014:other_prose",
+    "value_si": 19.3
+   },
+   {
+    "source": "Garrett_2014:other_prose",
+    "value_si": 20.6
+   },
+   {
+    "source": "Garrett_2014:other_prose",
+    "value_si": 8.0
+   },
+   {
+    "source": "Garrett_2014:other_prose",
+    "value_si": 17.9
+   }
+  ]
+ },
  "parameters": {
   "Cl": 2.2777777777777776e-06,
   "F": 7.8,

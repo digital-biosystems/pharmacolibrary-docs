@@ -15,6 +15,14 @@
   10.0,
   20.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Chaoyang_2022_2:other_prose",
+    "value_si": 2.04
+   }
+  ]
+ },
  "parameters": {
   "Cl": 8.805555555555556e-07,
   "F": 1.0,

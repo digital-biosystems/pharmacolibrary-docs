@@ -12,6 +12,14 @@
  "paper_doses_mg": [
   800.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Bihorel_2023:discussion_prose",
+    "value_si": 15.0
+   }
+  ]
+ },
  "parameters": {
   "Cl": 5.472222222222222e-07,
   "F": 1.0,

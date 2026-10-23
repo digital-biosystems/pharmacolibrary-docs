@@ -8,6 +8,14 @@
  "observables": [
   "central.C"
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Garg_2024:other_prose",
+    "value_si": 8.0
+   }
+  ]
+ },
  "parameters": {
   "Cl": 5.188888888888888e-06,
   "F": 0.9,

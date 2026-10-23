@@ -14,12 +14,6 @@ Reboxetine is an antidepressant, once used to treat depression. It has been with
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q72506458](https://www.wikidata.org/wiki/Q72506458) and the WHO ATC classification; not checked by a person.</small>
 
-## Extraction summary
-
-| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
-|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 23:43 | 0:46 | 0/0/0 | 1/1/0 | 0/0/0 | 41,559/2,494 | ollama / glm-5.3-flash | 13 | 2/8 | 13/0 | 0 |
-
 ## popPK records
 
 _not available_
@@ -28,15 +22,23 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Arias_2013_Ca2_influx](drugs/drug_reboxetine/pd_Arias_2013_Ca2_influx.md) | (±)-epibatidine-induced Ca2+ influx in human embryonic muscle AChR (hα1β1γδ) ← (-)-reboxetine · direct sigmoid Emax (Hill) effect | — | Arias HR et al., (-)-Reboxetine inhibits muscle nicotini…, Neurochemistry international (2013) | [10.1016/j.neuint.2013.07.009](https://doi.org/10.1016/j.neuint.2013.07.009) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Arias_2013_Ca2_influx_2](drugs/drug_reboxetine/pd_Arias_2013_Ca2_influx_2.md) | (±)-epibatidine-induced Ca2+ influx in human adult muscle AChR (hα1β1εδ) ← (-)-reboxetine · direct sigmoid Emax (Hill) effect | — | Arias HR et al., (-)-Reboxetine inhibits muscle nicotini…, Neurochemistry international (2013) | [10.1016/j.neuint.2013.07.009](https://doi.org/10.1016/j.neuint.2013.07.009) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Grandoso_2004_locus_coeruleus_neuron_firing_rate](drugs/drug_reboxetine/pd_Grandoso_2004_locus_coeruleus_neuron_firing_rate.md) | locus coeruleus neuron firing rate ← reboxetine · inhibition effect | — | Grandoso L et al., Comparative study of the effects of des…, Neuropharmacology (2004) | [10.1016/j.neuropharm.2003.11.033](https://doi.org/10.1016/j.neuropharm.2003.11.033) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Arias_2013_Ca2_influx](drugs/drug_reboxetine/pd_Arias_2013_Ca2_influx.md) | (±)-epibatidine-induced Ca2+ influx in human embryonic muscle AChR (hα1β1γδ) ← (-)-reboxetine · direct sigmoid Emax (Hill) effect | — | Arias HR et al., (-)-Reboxetine inhibits muscle nicotini…, Neurochemistry international (2013) | [10.1016/j.neuint.2013.07.009](https://doi.org/10.1016/j.neuint.2013.07.009) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Arias_2013_Ca2_influx_2](drugs/drug_reboxetine/pd_Arias_2013_Ca2_influx_2.md) | (±)-epibatidine-induced Ca2+ influx in human adult muscle AChR (hα1β1εδ) ← (-)-reboxetine · direct sigmoid Emax (Hill) effect | — | Arias HR et al., (-)-Reboxetine inhibits muscle nicotini…, Neurochemistry international (2013) | [10.1016/j.neuint.2013.07.009](https://doi.org/10.1016/j.neuint.2013.07.009) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Grandoso_2004_locus_coeruleus_neuron_firing_rate](drugs/drug_reboxetine/pd_Grandoso_2004_locus_coeruleus_neuron_firing_rate.md) | locus coeruleus neuron firing rate ← reboxetine · inhibition effect | — | Grandoso L et al., Comparative study of the effects of des…, Neuropharmacology (2004) | [10.1016/j.neuropharm.2003.11.033](https://doi.org/10.1016/j.neuropharm.2003.11.033) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-06 23:43 | 0:46 | 0/0/0 | 1/1/0 | 0/0/0 | 41,559/2,494 | ollama / glm-5.3-flash | 13 | 2/8 | 13/0 | 0 |
 
 ## Coverage
 
@@ -119,5 +121,9 @@ _10 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | PGx | Wienkers_1999 | not_relevant | 3 | 5 | Identifies CYP3A as the enzyme metabolizing reboxetine in vitro, but does not report a gene variant/genotype/phenotype effect on a PK or PD parameter in vivo. |
 | PD | Zhou_2025 | not_relevant | 3 | 2 | The paper is a network meta-analysis that qualitatively describes dose-response trends (e.g., linear increase for reboxetine) but does not provide specific numeric PD parameters (like EC50 or Emax) or extractable concentration-effect curves for reboxetine. |
 
+
+</details>
+
 ---
-<sub>Generated by `docs.py` (scholarv2)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
+<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>

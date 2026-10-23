@@ -2,11 +2,11 @@
  "dose_source": "WHO ATC DDD 15 mg parenteral (N05CD08)",
  "model_id": "Midazolam_Hall1988_reference",
  "molar_masses": {
-  "C_central": 0.325767
+  "central.C": 0.325767
  },
  "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "C_central"
+  "central.C"
  ],
  "parameters": {
   "Cl": 0.0003716666666666667,
@@ -19,10 +19,10 @@
   "weight": 70.0
  },
  "reference_peak_times": {
-  "C_central": 660.0000000662169
+  "central.C": 660.0000000662169
  },
  "reference_peaks": {
-  "C_central": 6.726457335812362e-05
+  "central.C": 6.726457335812154e-05
  },
  "stop_time": 86400.0,
  "template": "PK_1C",

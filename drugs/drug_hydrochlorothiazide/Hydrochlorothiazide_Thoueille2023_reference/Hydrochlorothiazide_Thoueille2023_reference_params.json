@@ -10,7 +10,7 @@
  ],
  "parameters": {
   "Cl": 1.1083333333333333e-05,
-  "F": 1.0,
+  "F": 0.9,
   "MM": 0.297739,
   "Tlag": 0.0,
   "VdPerKg": 0.038,
@@ -24,7 +24,7 @@
   "central.C": 8657.314629258517
  },
  "reference_peaks": {
-  "central.C": 9.053158199179332e-06
+  "central.C": 8.147637226210177e-06
  },
  "stop_time": 864000.0,
  "template": "PK_1C_enteral",

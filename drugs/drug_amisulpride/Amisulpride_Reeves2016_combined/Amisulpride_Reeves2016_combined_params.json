@@ -13,6 +13,26 @@
   25.0,
   75.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Reeves_2016:other_prose",
+    "value_si": 6.4e-05
+   },
+   {
+    "source": "Reeves_2016:other_prose",
+    "value_si": 2.1
+   },
+   {
+    "source": "Reeves_2016:other_prose",
+    "value_si": 7.75e-05
+   },
+   {
+    "source": "Reeves_2016:other_prose",
+    "value_si": 5.05e-05
+   }
+  ]
+ },
  "parameters": {
   "Cl": 1.5083333333333333e-05,
   "F": 0.9,

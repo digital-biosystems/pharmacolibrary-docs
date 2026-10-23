@@ -9,6 +9,26 @@
  "paper_doses_mg": [
   0.1
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Mohmaed_2026:other_prose",
+    "value_si": 7.820000000000001e-08
+   },
+   {
+    "source": "Mohmaed_2026:other_prose",
+    "value_si": 5.49e-08
+   },
+   {
+    "source": "Mohmaed_2026:other_prose",
+    "value_si": 1.42
+   },
+   {
+    "source": "Mohmaed_2026:discussion_prose",
+    "value_si": 1.42
+   }
+  ]
+ },
  "parameters": {
   "Cl": 2.3388888888888893e-05,
   "F": 1.0,

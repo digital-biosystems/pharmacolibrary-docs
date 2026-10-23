@@ -22,31 +22,41 @@ Ipragliflozin is a sodium-glucose co-transporter 2 inhibitor, a class of blood g
 |---|---|---|---|---|---|---|
 | ipragliflozin | parent | 404.45 | C21H21FO5S | DrugBank | [10453870](https://pubchem.ncbi.nlm.nih.gov/compound/10453870) | Saito_2019 |
 
-## Extraction summary
+## Parameters across studies
 
-| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
-|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 21:21 | 1:00 | 0/0/1 | 1/0/2 | 0/0/0 | 116,815/4,860 | einfracz / qwen3.8-27b | 8 | 2/5 | 7/1 | 0 |
+| parameter | as named | value | unit | as reported | population | species | status | record |
+|---|---|---|---|---|---|---|---|---|
+| CL | CL/F | 9.47 | L/h | 9.47 L/h | healthy subjects and patients with type 2 diabetes mellitus | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Saito_2019_reference](drugs/drug_ipragliflozin/Ipragliflozin_Saito2019_reference.md) |
+
+<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.333), gpt-oss:120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Saito_2019_reference](drugs/drug_ipragliflozin/Ipragliflozin_Saito2019_reference.md) | — | 1-compartment (no model) | 2 | Saito M et al., Pharmacokinetic and pharmacodynamic mod…, British journal of clinical… (2019) | [10.1111/bcp.13972](https://doi.org/10.1111/bcp.13972) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Saito_2019_reference](drugs/drug_ipragliflozin/Ipragliflozin_Saito2019_reference.md) | — | 1-compartment (no model) | 2 | Saito M et al., Pharmacokinetic and pharmacodynamic mod…, British journal of clinical… (2019) | [10.1111/bcp.13972](https://doi.org/10.1111/bcp.13972) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span> | [Demin_2014_SGLT2_inhibition_level](drugs/drug_ipragliflozin/pd_Demin_2014_SGLT2_inhibition_level.md) | Inhibition of glucose reabsorption mediated by SGLT2 ← ipragliflozin · direct sigmoid Emax (Hill) effect | — | Demin O et al., Analysis of the efficacy of SGLT2 inhib…, Frontiers in pharmacology (2014) | [10.3389/fphar.2014.00218](https://doi.org/10.3389/fphar.2014.00218) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> | [Saito_2019_UGE24h](drugs/drug_ipragliflozin/pd_Saito_2019_UGE24h.md) | change from baseline in UGE for 24 hours biomarker turnover ← ipragliflozin | — | Saito M et al., Pharmacokinetic and pharmacodynamic mod…, British journal of clinical… (2019) | [10.1111/bcp.13972](https://doi.org/10.1111/bcp.13972) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.833). Primary extraction retained.">cross-check: disputed</span> | [Toyoshima_2020_renal_glucose_clearance](drugs/drug_ipragliflozin/pd_Toyoshima_2020_renal_glucose_clearance.md) | renal glucose clearance ← ipragliflozin · direct Emax (saturable) effect | — | Toyoshima J et al., Comparison of the Pharmacokinetic and P…, Clinical therapeutics (2020) | [10.1016/j.clinthera.2020.07.009](https://doi.org/10.1016/j.clinthera.2020.07.009) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Demin_2014_SGLT2_inhibition_level](drugs/drug_ipragliflozin/pd_Demin_2014_SGLT2_inhibition_level.md) | Inhibition of glucose reabsorption mediated by SGLT2 ← ipragliflozin · direct sigmoid Emax (Hill) effect | — | Demin O et al., Analysis of the efficacy of SGLT2 inhib…, Frontiers in pharmacology (2014) | [10.3389/fphar.2014.00218](https://doi.org/10.3389/fphar.2014.00218) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Saito_2019_UGE24h](drugs/drug_ipragliflozin/pd_Saito_2019_UGE24h.md) | change from baseline in UGE for 24 hours biomarker turnover ← ipragliflozin | — | Saito M et al., Pharmacokinetic and pharmacodynamic mod…, British journal of clinical… (2019) | [10.1111/bcp.13972](https://doi.org/10.1111/bcp.13972) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Toyoshima_2020_renal_glucose_clearance](drugs/drug_ipragliflozin/pd_Toyoshima_2020_renal_glucose_clearance.md) | renal glucose clearance ← ipragliflozin · direct Emax (saturable) effect | — | Toyoshima J et al., Comparison of the Pharmacokinetic and P…, Clinical therapeutics (2020) | [10.1016/j.clinthera.2020.07.009](https://doi.org/10.1016/j.clinthera.2020.07.009) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 21:21 | 1:00 | 0/0/1 | 1/0/2 | 0/0/0 | 116,815/4,860 | einfracz / qwen3.8-27b | 8 | 2/5 | 7/1 | 0 |
 
 ## Coverage
 
@@ -116,5 +126,9 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | PD | Veltkamp_2012 | not_relevant | 2 | 1 | The study reports a single dose (300 mg) effect on urinary glucose excretion (UGE) but does not provide a concentration-effect curve, multiple dose levels, or formal PK/PD modeling parameters (e.g., Emax, EC50). |
 | popPK | Wang_2022 | irrelevant | 1 | 0 | The study models the pharmacodynamic effect of SGLT-2 inhibitors on body weight (Emax model), not pharmacokinetic disposition parameters (CL, V, etc.). |
 
+
+</details>
+
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 21:20 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
+<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 21:20 UTC</sub>

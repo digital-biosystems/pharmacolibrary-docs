@@ -12,6 +12,22 @@
  "paper_doses_mg": [
   400.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Sun_2025:other_prose",
+    "value_si": 1.2
+   },
+   {
+    "source": "Sun_2025:other_prose",
+    "value_si": 16.0
+   },
+   {
+    "source": "Sun_2025:other_prose",
+    "value_si": 272.65
+   }
+  ]
+ },
  "parameters": {
   "Cl": 1.0944444444444445e-06,
   "F": 1.0,

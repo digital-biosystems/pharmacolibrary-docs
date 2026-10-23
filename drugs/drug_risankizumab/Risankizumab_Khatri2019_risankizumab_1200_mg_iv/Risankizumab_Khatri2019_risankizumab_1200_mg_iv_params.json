@@ -16,6 +16,18 @@
   600.0,
   1200.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Khatri_2019:results_prose",
+    "value_si": 0.0145
+   },
+   {
+    "source": "Khatri_2019:results_prose",
+    "value_si": 0.012400000000000001
+   }
+  ]
+ },
  "parameters": {
   "Cl": 2.777777777777778e-09,
   "F": 0.9,

@@ -4,15 +4,53 @@
 
 # lusutrombopag — `Lusutrombopag_Katsube2019_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.037). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+
+> The reviewer's verdict (Rejected, 2026-09-28 14:38 UTC) predates the latest extraction (2026-10-05 19:48 UTC); the status shown comes from the current checks. The lusutrombopag record was rejected because a structural parameter carries a dimensionally wrong unit: absolute bioavailability Fab is reported as 1.00 with unit h, and Km is reported as 0.0320 /h although it denotes enzyme affinity.
+
+<div class="pk-model-meta" hidden drug="lusutrombopag" model-id="Lusutrombopag_Katsube2019_reference" status="rejected" stale="true" population="healthy subjects and patients with chronic liver disease" measured-compound="lusutrombopag" parameterization="apparent" topology="1C"></div>
+
+## Citation
+Katsube T, Shimizu R, Fukuhara T, Kano T, Wajima T. Pharmacokinetic/Pharmacodynamic Modelling and Simulation of Lusutrombopag, a Novel Thrombopoietin Receptor Agonist, for the Treatment of Thrombocytopenia in Patients with Chronic Liver Disease Undergoing Invasive Procedures. Clinical pharmacokinetics 58(11):1469–1482 (2019).
+  ·  DOI: [10.1007/s40262-019-00770-4](https://doi.org/10.1007/s40262-019-00770-4)
+
+## Population and dosing
+
+**Population:** healthy subjects and patients with chronic liver disease · age group adult.
+
+**Dosing:** 0.25, 1, 2, 3 mg, oral, multiple, every 24 h.
+
+## Model
+
+**Structure:** 1-compartment; no model was built for this record.  
+**Parameterization:** CL/F, Q/F, Q3/F, V2/F, V3/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Parameters:** 9 extracted.  
+**Availability:** No model was generated from this record.
+
+## Parameters
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
+| label | parameter | value | unit | RSE% |
+|---|---|---|---|---|
+| Typical CL/F | CL/F | 0.874 | L/h | 3.9 |
+| Q3/F [L/h] | Q3/F | 0.872 | L/h | 8.0 |
+| Typical V3/F | V3/F | 9.04 | L | 6.6 |
+| Q4/F [L/h] | Q/F | 0.0265 | L/h | 9.7 |
+| F1 of solution in the fasted state | Fab | 1.00 | h |  |
+| KM [/h] | Km | 0.0320 | /h | 5.3 |
+| KL [/h] | kel | 0.00863 | /h | 10.2 |
+| KA Solution in the fed state | kabs | 0.166 | /h |  |
+| Lag time Solution in the fed state | tlag | 0.568 | h |  |
+
+<details class="pk-evidence"><summary>Evidence &amp; review</summary>
+
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.037). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
-
-**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -24,43 +62,30 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:38:35.653560+00:00) predates the upstream re-run (2026-10-05 19:48:10.706823+00:00). Current validate status: `rejected`.
+### All parameter columns
 
-## Citation
-Katsube T et al., Pharmacokinetic/Pharmacodynamic Modelli…, Clinical pharmacokinetics (2019)
-  ·  DOI: [10.1007/s40262-019-00770-4](https://doi.org/10.1007/s40262-019-00770-4)
-
-<div class="pk-model-meta" hidden drug="lusutrombopag" model-id="Lusutrombopag_Katsube2019_reference" status="rejected" stale="true" population="healthy subjects and patients with chronic liver disease" measured-compound="lusutrombopag" parameterization="apparent" topology="1C"></div>
-
-**Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 9 extracted.
-
-**Parameterization:** CL/F, Q/F, Q3/F, V2/F, V3/F — apparent, F unknown (apparent — bioavailability not identifiable).
-
-## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| Typical CL/F | `Q27` · CL/F | 0.874 | L/h | 2.427777777777778e-07 | [l] / [h] | 3.9 | llm_confirmed (0.6) | Tab2:row3:col1 | — | not captured |
-| Q3/F [L/h] | `Q309` · Q3/F | 0.872 | L/h | 2.4222222222222224e-07 | [l] / [h] | 8.0 | llm_confirmed (0.6) | Tab2:row12:col1 | — | not captured |
-| Typical V3/F | `Q78` · V3/F | 9.04 | L | 0.00904 | [l] | 6.6 | llm_confirmed (0.6) | Tab2:row14:col1 | — | not captured |
-| Q4/F [L/h] | `Q69` · Q/F | 0.0265 | L/h | 7.361111111111111e-09 | [l] / [h] | 9.7 | llm (0.6) | Tab2:row16:col1 | — | not captured |
-| F1 of solution in the fasted state | `Q40` · Fab | 1.00 | h | not captured | [h] | not captured | llm_confirmed (0.6) | Tab2:row24:col1 | — | not captured |
-| KM [/h] | `Q1` · Km | 0.0320 | /h | not captured | [1] / [h] | 5.3 | llm_confirmed (0.6) | Tab2:row40:col1 | — | not captured |
-| KL [/h] | `Q47` · kel | 0.00863 | /h | 2.3972222222222225e-06 | [1] / [h] | 10.2 | llm (0.6) | Tab2:row41:col1 | — | not captured |
-| KA Solution in the fed state | `Q49` · kabs | 0.166 | /h | 4.6111111111111115e-05 | 1/h | not captured | review_gapfill (0.7) | Katsube_2019:review | — | not captured |
-| Lag time Solution in the fed state | `Q83` · tlag | 0.568 | h | 2044.7999999999997 | h | not captured | review_gapfill (0.7) | Katsube_2019:review | — | not captured |
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | RSE% | link | source |
+|---|---|---|---|---|---|---|---|---|---|
+| Typical CL/F | `Q27` · CL/F | 0.874 | L/h | 2.428e-07 | m3/s | l/h | 3.9 | llm_confirmed (0.6) | Tab2:row3:col1 |
+| Q3/F [L/h] | `Q309` · Q3/F | 0.872 | L/h | 2.422e-07 | m3/s | l/h | 8.0 | llm_confirmed (0.6) | Tab2:row12:col1 |
+| Typical V3/F | `Q78` · V3/F | 9.04 | L | 0.00904 | m3 | l | 6.6 | llm_confirmed (0.6) | Tab2:row14:col1 |
+| Q4/F [L/h] | `Q69` · Q/F | 0.0265 | L/h | 7.361e-09 | m3/s | l/h | 9.7 | llm (0.6) | Tab2:row16:col1 |
+| F1 of solution in the fasted state | `Q40` · Fab | 1.00 | h |  |  | h |  | llm_confirmed (0.6) | Tab2:row24:col1 |
+| KM [/h] | `Q1` · Km | 0.0320 | /h |  |  | 1/h | 5.3 | llm_confirmed (0.6) | Tab2:row40:col1 |
+| KL [/h] | `Q47` · kel | 0.00863 | /h | 2.397e-06 | 1/s | 1/h | 10.2 | llm (0.6) | Tab2:row41:col1 |
+| KA Solution in the fed state | `Q49` · kabs | 0.166 | /h | 4.611e-05 | 1/s | 1/h |  | review_gapfill (0.7) | Katsube_2019:review |
+| Lag time Solution in the fed state | `Q83` · tlag | 0.568 | h | 2045 | s | h |  | review_gapfill (0.7) | Katsube_2019:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ### Unresolved rows _(no Q-code or no value — not parameters)_
-| label (paper) | Q-code | value | link |
-|---|---|---|---|
-| V2/F [L] | Q82 | not captured | llm_confirmed |
+
+| label (paper) | Q-code | link |
+|---|---|---|
+| V2/F [L] | Q82 | llm_confirmed |
 
 ## Departures & gaps
 
@@ -135,29 +160,29 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `model.links` | [] | [['none', 'none', 'none']] | mismatch |
-| `gpt-oss:120b` | `parameters[2 mg tablet in the fed state]` | not captured | 0.857 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[3 mg tablet in the fed state]` | not captured | 0.843 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[f1 of solution in the fasted state]` | 1.00 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[f1 of solution in the fasted state]` | not captured | 1.00 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[kl [/h]]` | 0.00863 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[kl [/h]]` | not captured | 0.00863 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[km [/h]]` | 0.0320 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[km [/h]]` | not captured | 0.0320 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[q3/f [l/h]]` | 0.872 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[q3/f [l/h]]` | not captured | 0.872 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[q4/f [l/h]]` | 0.0265 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[q4/f [l/h]]` | not captured | 0.0265 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[solution in the fed state]` | not captured | 0.884 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta_cl_f_ethnicity]` | not captured | 0.868 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta_cl_f_sex]` | not captured | 0.874 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta_q61_wt]` | not captured | 1.00 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[typical cl/f]` | 0.874 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[typical cl/f]` | not captured | 0.874 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[typical v3/f]` | 9.04 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[typical v3/f]` | not captured | 9.04 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v2/f [l]]` | not captured | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v2/f [l]]` | not captured | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v4/f [l]]` | not captured | 3.48 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[2 mg tablet in the fed state]` |  | 0.857 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[3 mg tablet in the fed state]` |  | 0.843 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[f1 of solution in the fasted state]` | 1.00 |  | only_one_extracted |
+| `gpt-oss:120b` | `parameters[f1 of solution in the fasted state]` |  | 1.00 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[kl [/h]]` | 0.00863 |  | only_one_extracted |
+| `gpt-oss:120b` | `parameters[kl [/h]]` |  | 0.00863 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[km [/h]]` | 0.0320 |  | only_one_extracted |
+| `gpt-oss:120b` | `parameters[km [/h]]` |  | 0.0320 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[q3/f [l/h]]` | 0.872 |  | only_one_extracted |
+| `gpt-oss:120b` | `parameters[q3/f [l/h]]` |  | 0.872 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[q4/f [l/h]]` | 0.0265 |  | only_one_extracted |
+| `gpt-oss:120b` | `parameters[q4/f [l/h]]` |  | 0.0265 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[solution in the fed state]` |  | 0.884 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[theta_cl_f_ethnicity]` |  | 0.868 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[theta_cl_f_sex]` |  | 0.874 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[theta_q61_wt]` |  | 1.00 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[typical cl/f]` | 0.874 |  | only_one_extracted |
+| `gpt-oss:120b` | `parameters[typical cl/f]` |  | 0.874 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[typical v3/f]` | 9.04 |  | only_one_extracted |
+| `gpt-oss:120b` | `parameters[typical v3/f]` |  | 9.04 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v2/f [l]]` |  |  | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v2/f [l]]` |  |  | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v4/f [l]]` |  | 3.48 | only_one_extracted |
 | `gpt-oss:120b` | `screen.dose_compound` | lusutrombopag | unknown | mismatch |
 | `gpt-oss:120b` | `screen.primary_analyte` | lusutrombopag | unknown | mismatch |
 
@@ -171,33 +196,31 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained | ratio | tol | source |
-|---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 9 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q1 | fail | 1 / [time] | /h | not captured | not captured | ['Tab2:row40:col1'] |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row3:col1'] |
-| C5_dimension_Q309 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row12:col1'] |
-| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['Tab2:row41:col1'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Katsube_2019:review'] |
-| C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row16:col1'] |
-| C5_dimension_Q78 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row14:col1'] |
-| C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row8:col1', 'Tab2:row8:col2'] |
-| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Katsube_2019:review'] |
-| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 0.874 L/h | not captured | not captured | ['Tab2:row3:col1'] |
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 9 |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
+| C5_dimension_Q1 | fail | 1 / [time] | /h | ['Tab2:row40:col1'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Tab2:row3:col1'] |
+| C5_dimension_Q309 | pass | [length] ** 3 / [time] |  | ['Tab2:row12:col1'] |
+| C5_dimension_Q47 | pass | 1 / [time] |  | ['Tab2:row41:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['Katsube_2019:review'] |
+| C5_dimension_Q69 | pass | [length] ** 3 / [time] |  | ['Tab2:row16:col1'] |
+| C5_dimension_Q78 | pass | [length] ** 3 |  | ['Tab2:row14:col1'] |
+| C5_dimension_Q82 | pass | [length] ** 3 |  | ['Tab2:row8:col1', 'Tab2:row8:col2'] |
+| C5_dimension_Q83 | pass | [time] |  | ['Katsube_2019:review'] |
+| C7_apparent_coherence | pass |  |  |  |
+| C8_topology | pass |  |  |  |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 0.874 L/h | ['Tab2:row3:col1'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
-## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_lusutrombopag/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Katsube_2019` / `Katsube_2019::reference`)
-
+</details>
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
@@ -212,4 +235,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 19:48 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blusutrombopag%5D%20Lusutrombopag_Katsube2019_reference&body=Drug%3A%20lusutrombopag%0ARecord%3A%20Lusutrombopag_Katsube2019_reference%0APaper%3A%20Katsube_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_lusutrombopag/Lusutrombopag_Katsube2019_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Generated by `docs.py` (scholarv2, release v26.09) · extracted 2026-10-05 19:48 UTC</sub>

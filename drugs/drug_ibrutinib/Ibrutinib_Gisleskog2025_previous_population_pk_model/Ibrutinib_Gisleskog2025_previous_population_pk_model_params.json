@@ -12,6 +12,18 @@
  "paper_doses_mg": [
   560.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Gisleskog_2025:results_prose",
+    "value_si": 7.45e-05
+   },
+   {
+    "source": "Gisleskog_2025:discussion_prose",
+    "value_si": 6.39e-06
+   }
+  ]
+ },
  "parameters": {
   "Cl": 0.0003055555555555556,
   "F": 1.0,

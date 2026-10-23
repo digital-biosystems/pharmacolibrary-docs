@@ -4,45 +4,63 @@
 
 # bempedoic acid — `BempedoicAcid_Amore2023_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.105), gpt-oss:120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span>
+
+> Extracted and checked against closed-form rules; no simulation has been compared with the paper yet.
+
+<div class="pk-model-meta" hidden drug="bempedoic acid" model-id="BempedoicAcid_Amore2023_reference" status="extracted" stale="false" population="healthy adults" measured-compound="bempedoic_acid" parameterization="mechanistic" topology="2C"></div>
+
+## Citation
+Amore BM, Patel N, Batheja P, Templeton IE, Jones HM, Louie MJ et al. Physiologically Based Pharmacokinetic Model Development and Verification for Bioequivalence Testing of Bempedoic Acid Oral Suspension and Reference Tablet Formulation. Pharmaceutics 15(5) (2023).
+  ·  DOI: [10.3390/pharmaceutics15051476](https://doi.org/10.3390/pharmaceutics15051476)
+
+## Population and dosing
+
+**Population:** review reference.
+
+**Dosed compound ≠ measured compound:** dosed bempedoic acid, measured bempedoic_acid.
+
+## Model
+
+**Structure:** 2-compartment; no model was built for this record.  
+**Parameterization:** mechanistic.  
+**Parameters:** 3 extracted.  
+**Availability:** No model was generated from this record.
+
+## Parameters
+| label | parameter | value | unit |
+|---|---|---|---|
+| CLoral | CL | 0.81 | L/h |
+| V (derived from CL·t½/ln2) | V | 24.5402 | L |
+| flow rate | Q | 1.5 | mL/min |
+
+<details class="pk-evidence"><summary>Evidence &amp; review</summary>
+
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.105). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
-
-**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q21: this record has 1.06, the second reading 2.3; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
 
-> **Dose compound ≠ measured compound:** dosed `bempedoic acid`, measured `bempedoic_acid`.
+### All parameter columns
 
-## Citation
-Amore BM et al., Physiologically Based Pharmacokinetic M…, Pharmaceutics (2023)
-  ·  DOI: [10.3390/pharmaceutics15051476](https://doi.org/10.3390/pharmaceutics15051476)
-
-<div class="pk-model-meta" hidden drug="bempedoic acid" model-id="BempedoicAcid_Amore2023_reference" status="extracted" stale="false" population="healthy adults" measured-compound="bempedoic_acid" parameterization="mechanistic" topology="2C"></div>
-
-**Model structure:** 2-compartment; no model was built for this record.  
-**Parameters:** 3 extracted.
-
-**Parameterization:** mechanistic.
-
-## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| CLoral | `Q22` · CL | 0.81 | L/h | 2.2500000000000002e-07 | L/h | not captured | review (0.7) | Amore_2023:review | — | not captured |
-| V (derived from CL·t½/ln2) | `Q61` · V | 24.5402 | L | 0.02454024264552127 | L | not captured | review (0.7) | Amore_2023:review | — | not captured |
-| flow rate | `Q30` · Q | 1.5 | mL/min | 2.5000000000000002e-08 | L/h | not captured | review (0.7) | Amore_2023:review | — | not captured |
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
+|---|---|---|---|---|---|---|---|---|
+| CLoral | `Q22` · CL | 0.81 | L/h | 2.25e-07 | m3/s | L/h | review (0.7) | Amore_2023:review |
+| V (derived from CL·t½/ln2) | `Q61` · V | 24.5402 | L | 0.02454 | m3 | L | review (0.7) | Amore_2023:review |
+| flow rate | `Q30` · Q | 1.5 | mL/min | 2.5e-08 | m3/s | L/h | review (0.7) | Amore_2023:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ## Departures & gaps
@@ -53,51 +71,34 @@ Amore BM et al., Physiologically Based Pharmacokinetic M…, Pharmaceutics (2023
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
 | `gpt-oss-120b` | not confirmed | 0.105 (2/19 fields) | 17 |
-| `gpt-oss:120b` | not confirmed | 0.2 (4/20 fields) | 16 |
 
-<details><summary>33 field discrepancies</summary>
+<details><summary>17 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `model.parameterization` | mechanistic | apparent | mismatch |
 | `gpt-oss-120b` | `model.topology_template` | 2C | 1C | mismatch |
 | `gpt-oss-120b` | `values[Q21]` | 1.06 | 2.3 | mismatch |
-| `gpt-oss-120b` | `values[Q22]` | 0.81 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `values[Q27]` | not captured | 0.81 | only_one_extracted |
-| `gpt-oss-120b` | `values[Q30]` | 1.5 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q22]` | 0.81 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q27]` |  | 0.81 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q30]` | 1.5 |  | only_one_extracted |
 | `gpt-oss-120b` | `values[Q32]` | 3.5 | 0.489 | mismatch |
 | `gpt-oss-120b` | `values[Q33]` | 0.86 | 0.86 | mismatch |
-| `gpt-oss-120b` | `values[Q349]` | 1 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `values[Q369]` | 90 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `values[Q410]` | not captured | 0.55 | only_one_extracted |
-| `gpt-oss-120b` | `values[Q41]` | 1 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q349]` | 1 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q369]` | 90 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q410]` |  | 0.55 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q41]` | 1 |  | only_one_extracted |
 | `gpt-oss-120b` | `values[Q46]` | 2.6 | 2.6 | mismatch |
-| `gpt-oss-120b` | `values[Q56]` | not captured | 3.5 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q56]` |  | 3.5 | only_one_extracted |
 | `gpt-oss-120b` | `values[Q58]` | 1.07 | 1.07 | mismatch |
 | `gpt-oss-120b` | `values[Q88]` | 0.498 | 0.498 | mismatch |
 | `gpt-oss-120b` | `values[Q93]` | 1.46 | 1.46 | mismatch |
-| `gpt-oss:120b` | `model.parameterization` | mechanistic | apparent | mismatch |
-| `gpt-oss:120b` | `values[Q21]` | 1.06 | 2.3 | mismatch |
-| `gpt-oss:120b` | `values[Q22]` | 0.81 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `values[Q27]` | not captured | 0.81 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q30]` | 1.5 | 1.0 | mismatch |
-| `gpt-oss:120b` | `values[Q32]` | 3.5 | 0.489 | mismatch |
-| `gpt-oss:120b` | `values[Q33]` | 0.86 | 0.86 | mismatch |
-| `gpt-oss:120b` | `values[Q349]` | 1 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `values[Q364]` | not captured | 120 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q369]` | 90 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `values[Q410]` | not captured | 0.55 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q41]` | 1 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `values[Q56]` | not captured | 3.5 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q58]` | 1.07 | 1.07 | mismatch |
-| `gpt-oss:120b` | `values[Q88]` | 0.498 | 0.498 | mismatch |
-| `gpt-oss:120b` | `values[Q93]` | 1.46 | 1.46 | mismatch |
 
 </details>
 
@@ -109,28 +110,26 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained | ratio | tol | source |
-|---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Amore_2023:review'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Amore_2023:review'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Amore_2023:review'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.81 | not captured | not captured | ['Amore_2023:review'] |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.81 L/h | not captured | not captured | ['Amore_2023:review'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 24.5 L | not captured | not captured | ['Amore_2023:review'] |
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 3 |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Amore_2023:review'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Amore_2023:review'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Amore_2023:review'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.81 | ['Amore_2023:review'] |
+| C8_topology | pass |  |  |  |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.81 L/h | ['Amore_2023:review'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 24.5 L | ['Amore_2023:review'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
-## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_bempedoic_acid/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Amore_2023` / `Amore_2023::reference`)
-
+</details>
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
@@ -155,4 +154,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 10:51 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbempedoic_acid%5D%20BempedoicAcid_Amore2023_reference&body=Drug%3A%20bempedoic_acid%0ARecord%3A%20BempedoicAcid_Amore2023_reference%0APaper%3A%20Amore_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_bempedoic_acid/BempedoicAcid_Amore2023_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Generated by `docs.py` (scholarv2, release v26.09) · extracted 2026-10-07 10:51 UTC</sub>

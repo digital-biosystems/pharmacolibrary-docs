@@ -14,6 +14,14 @@
   150.0,
   200.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Huh_2021:results_prose",
+    "value_si": 22.0
+   }
+  ]
+ },
  "parameters": {
   "Cl": 9.25e-07,
   "F": 1.62,

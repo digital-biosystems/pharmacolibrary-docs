@@ -12,19 +12,19 @@
   "Cl": 8.361111111111111e-06,
   "F": 1.0,
   "MM": 0.6453116,
-  "VdPerKg": 0.006327660449338994,
+  "VdPerKg": 0.002357363696812566,
   "adminCount": 1.0,
   "adminDuration": 600.0,
   "adminMass": 0.0002,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 660.0000000662055
+  "central.C": 660.0000000662119
  },
  "reference_peaks": {
-  "central.C": 0.0004489849477009232
+  "central.C": 0.001193769825646878
  },
- "stop_time": 259200.0,
+ "stop_time": 86400.0,
  "template": "PK_1C",
  "template_fmu": "PK_1C.fmu"
 }

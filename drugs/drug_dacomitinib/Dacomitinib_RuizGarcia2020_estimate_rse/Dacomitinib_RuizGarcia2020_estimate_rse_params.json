@@ -12,6 +12,14 @@
  "paper_doses_mg": [
   45.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Ruiz-Garcia_2020:other_prose",
+    "value_si": 873.5
+   }
+  ]
+ },
  "parameters": {
   "Cl": 8.111111111111112e-06,
   "F": 1.0,

@@ -13,6 +13,14 @@
   750.0,
   2000.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Zahr_2022:results_prose",
+    "value_si": 0.06
+   }
+  ]
+ },
  "parameters": {
   "Cl": 2.0500000000000003e-06,
   "F": 1.0,

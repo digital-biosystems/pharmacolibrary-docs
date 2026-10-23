@@ -12,6 +12,38 @@
  "paper_doses_mg": [
   37.5
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Soria-Chacartegui_2026:other_prose",
+    "value_si": 0.000136
+   },
+   {
+    "source": "Soria-Chacartegui_2026:other_prose",
+    "value_si": 0.000139
+   },
+   {
+    "source": "Soria-Chacartegui_2026:other_prose",
+    "value_si": 9.8e-07
+   },
+   {
+    "source": "Soria-Chacartegui_2026:other_prose",
+    "value_si": 3.24e-06
+   },
+   {
+    "source": "Soria-Chacartegui_2026:other_prose",
+    "value_si": 0.00014
+   },
+   {
+    "source": "Soria-Chacartegui_2026:other_prose",
+    "value_si": 0.000185
+   },
+   {
+    "source": "Soria-Chacartegui_2026:other_prose",
+    "value_si": 0.000203
+   }
+  ]
+ },
  "parameters": {
   "Cl": 1.4194444444444445e-05,
   "F": 0.9,
@@ -27,10 +59,10 @@
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 3506.7779920394423
+  "central.C": 3506.777992039641
  },
  "reference_peaks": {
-  "central.C": 0.0001279218339569674
+  "central.C": 0.0001279218339570354
  },
  "stop_time": 86400.0,
  "template": "PK_2C_enteral",

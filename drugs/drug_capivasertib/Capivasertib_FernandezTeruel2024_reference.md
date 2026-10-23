@@ -1,19 +1,59 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;capivasertib&quot;,&quot;href&quot;:&quot;drugs/drug_capivasertib/&quot;},{&quot;label&quot;:&quot;Fernandez-Teruel_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Capivasertib_Fernandez2025_reference&quot;,&quot;label&quot;:&quot;Fernandez_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_capivasertib/Capivasertib_Fernandez2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Capivasertib_Fernandez2025_reference&quot;,&quot;label&quot;:&quot;Fernandez_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_capivasertib/Capivasertib_Fernandez2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # capivasertib — `Capivasertib_FernandezTeruel2024_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.786). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+
+> The model does not reproduce the paper's half life alpha (model/paper ratio 1.88); the model does not reproduce the paper's terminal half-life (model/paper ratio 0.637).
+
+<div class="pk-model-meta" hidden drug="capivasertib" model-id="Capivasertib_FernandezTeruel2024_reference" status="needs_review" stale="false" population="patients with advanced or metastatic solid tumours" measured-compound="capivasertib" parameterization="apparent" topology="2C"></div>
+
+## Citation
+Fernandez-Teruel C, Cullberg M, Eberlein C, Barry ST, Zhou D. Population Pharmacokinetics of Capivasertib in Patients with Advanced or Metastatic Solid Tumours. Clinical pharmacokinetics 63(8):1191–1204 (2024).
+  ·  DOI: [10.1007/s40262-024-01407-x](https://doi.org/10.1007/s40262-024-01407-x)
+
+## Population and dosing
+
+**Population:** patients with advanced or metastatic solid tumours · condition advanced or metastatic solid tumours · age group adult · n = 441.
+
+**Dosing:** 80, 800 mg, oral, multiple, every 12 h.
+
+## Model
+
+**Structure:** 2-compartment; no model was built for this record.  
+**Parameterization:** CL/F, Q/F, Q3/F, V/F, V2/F, V3/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Parameters:** 10 extracted.  
+**Availability:** No model was generated from this record.
+
+## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
+| label | parameter | value | unit | RSE% | IIV |
+|---|---|---|---|---|---|
+| Ka (1/h) | kabs | 0.408 | 1/h | 1.46 |  |
+| CL0/F (L/h) | CL/F | 62 | L/h | 1.58 |  |
+| V2/F (L) | V2/F | 50 | L | 1.34 | 102 (7.94% RSE) |
+| V3/F (L) | V3/F | 119 | L | 4.27 |  |
+| Q3/F (L/h) | Q3/F | 3.06 | L/h | 1.5 |  |
+| Lag1_cap (h) | tlag | 0.459 | h | 0.292 |  |
+| LogitF1 | Frel | 1.49 |  | 6.96 |  |
+| T50 (h) | t1/2z | 71 | h | 2.06 |  |
+| Q4/F (L/h) | Q/F | 19.9 | L/h | 1.31 |  |
+| V4/F (L) | V/F | 95.7 | L | 1.32 |  |
+| D2 (h) | equation variable | 45.1 | h | 0.331 |  |
+
+<details class="pk-evidence"><summary>Evidence &amp; review</summary>
+
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.786). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
-
-**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -25,37 +65,25 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-## Citation
-Fernandez-Teruel C et al., Population Pharmacokinetics of Capivase…, Clinical pharmacokinetics (2024)
-  ·  DOI: [10.1007/s40262-024-01407-x](https://doi.org/10.1007/s40262-024-01407-x)
+### All parameter columns
 
-<div class="pk-model-meta" hidden drug="capivasertib" model-id="Capivasertib_FernandezTeruel2024_reference" status="needs_review" stale="false" population="patients with advanced or metastatic solid tumours" measured-compound="capivasertib" parameterization="apparent" topology="2C"></div>
-
-**Model structure:** 2-compartment; no model was built for this record.  
-**Parameters:** 10 extracted.
-
-**Parameterization:** CL/F, Q/F, Q3/F, V/F, V2/F, V3/F — apparent, F unknown (apparent — bioavailability not identifiable).
-
-## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | RSE% | link | source | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Ka (1/h) | `Q49` · kabs | 0.408 | 1/h | 0.00011333333333333333 | 1/h | 1.46 | exact (1.0) | Tab3:row1:col1, Tab3:row1:col2, Tab3:row1:col3, Tab3:row1:col4 | — | not captured |
-| CL0/F (L/h) | `Q27` · CL/F | 62 | L/h | 1.7222222222222224e-05 | [l] / [h] | 1.58 | llm_corrected (0.6) | Tab3:row2:col1, Tab3:row2:col2, Tab3:row2:col3, Tab3:row2:col4 | — | not captured |
-| V2/F (L) | `Q82` · V2/F | 50 | L | 0.05 | [l] | 1.34 | exact (1.0) | Tab3:row3:col1, Tab3:row3:col2, Tab3:row3:col3, Tab3:row3:col4 | — | 102 (7.94% RSE) |
-| V3/F (L) | `Q78` · V3/F | 119 | L | 0.11900000000000001 | [l] | 4.27 | exact (1.0) | Tab3:row4:col1, Tab3:row4:col2, Tab3:row4:col3, Tab3:row4:col4 | — | not captured |
-| Q3/F (L/h) | `Q309` · Q3/F | 3.06 | L/h | 8.5e-07 | [l] / [h] | 1.5 | exact (1.0) | Tab3:row5:col1, Tab3:row5:col2, Tab3:row5:col3, Tab3:row5:col4 | — | not captured |
-| Lag1_cap (h) | `Q83` · tlag | 0.459 | h | 1652.4 | [h] | 0.292 | llm (0.6) | Tab3:row7:col1, Tab3:row7:col2, Tab3:row7:col3, Tab3:row7:col4 | — | not captured |
-| LogitF1 | `Q87` · Frel | 1.49 | not captured | not captured | not captured | 6.96 | llm (0.6) | Tab3:row8:col1, Tab3:row8:col2, Tab3:row8:col3, Tab3:row8:col4 | — | not captured |
-| T50 (h) | `Q57` · t1/2z | 71 | h | 255600.0 | [h] | 2.06 | llm (0.6) | Tab3:row9:col1, Tab3:row9:col2, Tab3:row9:col3, Tab3:row9:col4 | — | not captured |
-| Q4/F (L/h) | `Q69` · Q/F | 19.9 | L/h | 5.527777777777777e-06 | [l] / [h] | 1.31 | llm (0.6) | Tab3:row10:col1, Tab3:row10:col2, Tab3:row10:col3, Tab3:row10:col4 | — | not captured |
-| V4/F (L) | `Q76` · V/F | 95.7 | L | 0.09570000000000001 | [l] | 1.32 | llm (0.6) | Tab3:row11:col1, Tab3:row11:col2, Tab3:row11:col3, Tab3:row11:col4 | — | not captured |
-| D2 (h) | `Q900` · equation variable | 45.1 | h | not captured | [h] | 0.331 | llm (0.6) | Tab3:row12:col1, Tab3:row12:col2, Tab3:row12:col3, Tab3:row12:col4 | — | not captured |
+| Ka (1/h) | `Q49` · kabs | 0.408 | 1/h | 0.0001133 | 1/s | 1/h | 1.46 | exact (1) | Tab3:row1:col1, Tab3:row1:col2, Tab3:row1:col3, Tab3:row1:col4 |  |
+| CL0/F (L/h) | `Q27` · CL/F | 62 | L/h | 1.722e-05 | m3/s | l/h | 1.58 | llm_corrected (0.6) | Tab3:row2:col1, Tab3:row2:col2, Tab3:row2:col3, Tab3:row2:col4 |  |
+| V2/F (L) | `Q82` · V2/F | 50 | L | 0.05 | m3 | l | 1.34 | exact (1) | Tab3:row3:col1, Tab3:row3:col2, Tab3:row3:col3, Tab3:row3:col4 | 102 (7.94% RSE) |
+| V3/F (L) | `Q78` · V3/F | 119 | L | 0.119 | m3 | l | 4.27 | exact (1) | Tab3:row4:col1, Tab3:row4:col2, Tab3:row4:col3, Tab3:row4:col4 |  |
+| Q3/F (L/h) | `Q309` · Q3/F | 3.06 | L/h | 8.5e-07 | m3/s | l/h | 1.5 | exact (1) | Tab3:row5:col1, Tab3:row5:col2, Tab3:row5:col3, Tab3:row5:col4 |  |
+| Lag1_cap (h) | `Q83` · tlag | 0.459 | h | 1652 | s | h | 0.292 | llm (0.6) | Tab3:row7:col1, Tab3:row7:col2, Tab3:row7:col3, Tab3:row7:col4 |  |
+| LogitF1 | `Q87` · Frel | 1.49 |  |  |  |  | 6.96 | llm (0.6) | Tab3:row8:col1, Tab3:row8:col2, Tab3:row8:col3, Tab3:row8:col4 |  |
+| T50 (h) | `Q57` · t1/2z | 71 | h | 2.556e+05 | s | h | 2.06 | llm (0.6) | Tab3:row9:col1, Tab3:row9:col2, Tab3:row9:col3, Tab3:row9:col4 |  |
+| Q4/F (L/h) | `Q69` · Q/F | 19.9 | L/h | 5.528e-06 | m3/s | l/h | 1.31 | llm (0.6) | Tab3:row10:col1, Tab3:row10:col2, Tab3:row10:col3, Tab3:row10:col4 |  |
+| V4/F (L) | `Q76` · V/F | 95.7 | L | 0.0957 | m3 | l | 1.32 | llm (0.6) | Tab3:row11:col1, Tab3:row11:col2, Tab3:row11:col3, Tab3:row11:col4 |  |
+| D2 (h) | `Q900` · equation variable | 45.1 | h |  |  | h | 0.331 | llm (0.6) | Tab3:row12:col1, Tab3:row12:col2, Tab3:row12:col3, Tab3:row12:col4 |  |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ## Departures & gaps
@@ -96,12 +124,12 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `qwen3.8-27b` | `parameters[cl0_bbw]` | not captured | 0.00617 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[cl0_bbw]` |  | 0.00617 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[d2].parameter_id` | Q900 | Q310 | mismatch |
 | `qwen3.8-27b` | `parameters[lag1_cap].parameter_id` | Q83 | Q95 | mismatch |
-| `qwen3.8-27b` | `parameters[lag1_tab]` | not captured | 0.203 | only_one_extracted |
-| `qwen3.8-27b` | `parameters[logitf1]` | 1.49 | not captured | only_one_extracted |
-| `qwen3.8-27b` | `parameters[v4/f]` | 95.7 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[lag1_tab]` |  | 0.203 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[logitf1]` | 1.49 |  | only_one_extracted |
+| `qwen3.8-27b` | `parameters[v4/f]` | 95.7 |  | only_one_extracted |
 
 </details>
 
@@ -115,35 +143,33 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 10 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C1_half_life_alpha | fail | 0.37 | 0.697 | 1.8838 | 0.25 | reported t½α |
+| C0_has_structural_params | pass |  | 10 |  |  |  |
+| C0b_disposition_core | pass |  |  |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |  |  |
+| C1_half_life_alpha | fail | 0.37 | 0.697 | 1.884 | 0.25 | reported t½α |
 | C1_half_life_beta | fail | 4.2 | 2.674 | 0.6367 | 0.25 | reported t½β |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab3:row2:col1', 'Tab3:row2:col2', 'Tab3:row2:col3', 'Tab3:row2:col4'] |
-| C5_dimension_Q309 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab3:row5:col1', 'Tab3:row5:col2', 'Tab3:row5:col3', 'Tab3:row5:col4'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Tab3:row1:col1', 'Tab3:row1:col2', 'Tab3:row1:col3', 'Tab3:row1:col4'] |
-| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Tab3:row9:col1', 'Tab3:row9:col2', 'Tab3:row9:col3', 'Tab3:row9:col4'] |
-| C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab3:row10:col1', 'Tab3:row10:col2', 'Tab3:row10:col3', 'Tab3:row10:col4'] |
-| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab3:row11:col1', 'Tab3:row11:col2', 'Tab3:row11:col3', 'Tab3:row11:col4'] |
-| C5_dimension_Q78 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab3:row4:col1', 'Tab3:row4:col2', 'Tab3:row4:col3', 'Tab3:row4:col4'] |
-| C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab3:row3:col1', 'Tab3:row3:col2', 'Tab3:row3:col3', 'Tab3:row3:col4'] |
-| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Tab3:row7:col1', 'Tab3:row7:col2', 'Tab3:row7:col3', 'Tab3:row7:col4'] |
-| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 62 L/h | not captured | not captured | ['Tab3:row2:col1', 'Tab3:row2:col2', 'Tab3:row2:col3', 'Tab3:row2:col4'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 95.7 L | not captured | not captured | ['Tab3:row11:col1', 'Tab3:row11:col2', 'Tab3:row11:col3', 'Tab3:row11:col4'] |
-| C9_phys_window_Q82 | pass | volume within physiological range | 50 L | not captured | not captured | ['Tab3:row3:col1', 'Tab3:row3:col2', 'Tab3:row3:col3', 'Tab3:row3:col4'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  |  |  | ['Tab3:row2:col1', 'Tab3:row2:col2', 'Tab3:row2:col3', 'Tab3:row2:col4'] |
+| C5_dimension_Q309 | pass | [length] ** 3 / [time] |  |  |  | ['Tab3:row5:col1', 'Tab3:row5:col2', 'Tab3:row5:col3', 'Tab3:row5:col4'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  |  |  | ['Tab3:row1:col1', 'Tab3:row1:col2', 'Tab3:row1:col3', 'Tab3:row1:col4'] |
+| C5_dimension_Q57 | pass | [time] |  |  |  | ['Tab3:row9:col1', 'Tab3:row9:col2', 'Tab3:row9:col3', 'Tab3:row9:col4'] |
+| C5_dimension_Q69 | pass | [length] ** 3 / [time] |  |  |  | ['Tab3:row10:col1', 'Tab3:row10:col2', 'Tab3:row10:col3', 'Tab3:row10:col4'] |
+| C5_dimension_Q76 | pass | [length] ** 3 |  |  |  | ['Tab3:row11:col1', 'Tab3:row11:col2', 'Tab3:row11:col3', 'Tab3:row11:col4'] |
+| C5_dimension_Q78 | pass | [length] ** 3 |  |  |  | ['Tab3:row4:col1', 'Tab3:row4:col2', 'Tab3:row4:col3', 'Tab3:row4:col4'] |
+| C5_dimension_Q82 | pass | [length] ** 3 |  |  |  | ['Tab3:row3:col1', 'Tab3:row3:col2', 'Tab3:row3:col3', 'Tab3:row3:col4'] |
+| C5_dimension_Q83 | pass | [time] |  |  |  | ['Tab3:row7:col1', 'Tab3:row7:col2', 'Tab3:row7:col3', 'Tab3:row7:col4'] |
+| C7_apparent_coherence | pass |  |  |  |  |  |
+| C8_topology | pass |  |  |  |  |  |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 62 L/h |  |  | ['Tab3:row2:col1', 'Tab3:row2:col2', 'Tab3:row2:col3', 'Tab3:row2:col4'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 95.7 L |  |  | ['Tab3:row11:col1', 'Tab3:row11:col2', 'Tab3:row11:col3', 'Tab3:row11:col4'] |
+| C9_phys_window_Q82 | pass | volume within physiological range | 50 L |  |  | ['Tab3:row3:col1', 'Tab3:row3:col2', 'Tab3:row3:col3', 'Tab3:row3:col4'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
-## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_capivasertib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Fernandez-Teruel_2024` / `Fernandez-Teruel_2024::reference`)
-
+</details>
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
@@ -168,4 +194,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 22:20 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcapivasertib%5D%20Capivasertib_FernandezTeruel2024_reference&body=Drug%3A%20capivasertib%0ARecord%3A%20Capivasertib_FernandezTeruel2024_reference%0APaper%3A%20Fernandez-Teruel_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_capivasertib/Capivasertib_FernandezTeruel2024_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Generated by `docs.py` (scholarv2, release v26.09) · extracted 2026-10-06 22:20 UTC</sub>

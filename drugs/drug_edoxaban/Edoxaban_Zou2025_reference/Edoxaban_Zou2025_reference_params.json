@@ -13,6 +13,18 @@
   30.0,
   60.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Zou_2025:results_prose",
+    "value_si": 30.0
+   },
+   {
+    "source": "Zou_2025:results_prose",
+    "value_si": 50.0
+   }
+  ]
+ },
  "parameters": {
   "Cl": 1.1908333333333333e-05,
   "F": 1.0,

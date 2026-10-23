@@ -22,29 +22,40 @@ Prilocaine is an amino amide local anesthetic used to prevent or relieve pain du
 |---|---|---|---|---|---|---|
 | prilocaine | parent | 220.311 | C13H20N2O | DrugBank | [4906](https://pubchem.ncbi.nlm.nih.gov/compound/4906) | Lauven_1990 |
 
-## Extraction summary
+## Parameters across studies
 
-| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
-|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 04:14 | 1:10 | 0/0/1 | 1/0/0 | 0/0/0 | 28,371/1,626 | einfracz / qwen3.8-27b | 2 | 2/0 | 2/0 | 0 |
+| parameter | as named | value | unit | as reported | population | n | species | status | record |
+|---|---|---|---|---|---|---|---|---|---|
+| CL | CL | 138.6 | L/h | 2310 ml/min | adults undergoing hand surgery | # integer or 'unknown', e.g. 150 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Lauven_1990_reference](drugs/drug_prilocaine/Prilocaine_Lauven1990_reference.md) |
+| V | V | 661 | L | 661 l | adults undergoing hand surgery | # integer or 'unknown', e.g. 150 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Lauven_1990_reference](drugs/drug_prilocaine/Prilocaine_Lauven1990_reference.md) |
+
+<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.9). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Lauven_1990_reference](drugs/drug_prilocaine/Prilocaine_Lauven1990_reference.md) | — | 1-compartment (no model) | 5 | Lauven PM et al., [The blood level and a pharmacokinetic…, Regional-Anaesthesie (1990) | — |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub> | [Lauven_1990_reference](drugs/drug_prilocaine/Prilocaine_Lauven1990_reference.md) | — | 1-compartment (no model) | 5 | Lauven PM et al., [The blood level and a pharmacokinetic…, Regional-Anaesthesie (1990) | — |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Tiger_1995_veratrine_stimulated_phosphoinositide_breakdown](drugs/drug_prilocaine/pd_Tiger_1995_veratrine_stimulated_phosphoinositide_breakdown.md) | veratrine-stimulated phosphoinositide breakdown ← prilocaine · direct Emax (saturable) effect | — | Tiger G et al., Veratrine-stimulated phosphoinositide b…, Anesthesia and analgesia (1995) | [10.1097/00000539-199509000-00009](https://doi.org/10.1097/00000539-199509000-00009) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Tiger_1995_veratrine_stimulated_phosphoinositide_breakdown](drugs/drug_prilocaine/pd_Tiger_1995_veratrine_stimulated_phosphoinositide_breakdown.md) | veratrine-stimulated phosphoinositide breakdown ← prilocaine · direct Emax (saturable) effect | — | Tiger G et al., Veratrine-stimulated phosphoinositide b…, Anesthesia and analgesia (1995) | [10.1097/00000539-199509000-00009](https://doi.org/10.1097/00000539-199509000-00009) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 04:14 | 1:10 | 0/0/1 | 1/0/0 | 0/0/0 | 28,371/1,626 | einfracz / qwen3.8-27b | 2 | 2/0 | 2/0 | 0 |
 
 ## Coverage
 
@@ -74,5 +85,9 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | PGx | Vale_2003 | not_relevant | 0 | 0 | The paper is a general review of racial differences in drug responses to various anesthetics and does not contain any specific data on the pharmacokinetics or pharmacodynamics of prilocaine. |
 | PGx | Şimşek_2026 | not_relevant | 0 | 0 | The paper is a narrative review on perioperative management of dermatologic drugs and does not report any pharmacogenomic analysis or genotype-specific effects on prilocaine pharmacokinetics or pharmacodynamics. |
 
+
+</details>
+
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 04:14 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
+<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 04:14 UTC</sub>

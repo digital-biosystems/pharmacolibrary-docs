@@ -14,85 +14,86 @@
 
 <p><small>Source: <a href="https://go.drugbank.com/drugs/DB13090">DrugBank DB13090</a> · <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></small></p>
 
-## Extraction summary
-
-| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
-|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-09 10:41 | 7:08 | 0/0/0 | 1/0/0 | 0/0/0 | 353,489/5,675 | einfracz / qwen3.8-27b | 12 | 0/12 | 12/0 | 0 |
-
 ## popPK records
 
 _not available_
 
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Soman_2021_MIC](drugs/drug_zidebactam/pd_Soman_2021_MIC.md) | MIC ← zidebactam · inhibition effect | — | Soman R et al., Is it time to move away from polymyxins…, European journal of clinica… (2021) | [10.1007/s10096-020-04053-w](https://doi.org/10.1007/s10096-020-04053-w) |
-
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-22 10:44 | 7:36 | 0/0/0 | 0/0/0 | 0/0/0 | 205,603/4,142 | einfracz / qwen3.8-27b | 12 | 0/12 | 12/0 | 0 |
+
 ## Coverage
 
-- **PubMed hits:** 42 matched, 42 returned
-- **screened:** 8  ·  **relevant:** 3
+- **PubMed hits:** 43 matched, 43 returned
+- **screened:** 8  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
 
-_8 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_5 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Lodise_2026.pdf` | Lodise TP et al., A Phase I, randomized, double-blind, pl…, Antimicrobial agents and ch… (2026) | popPK | 9 | [10.1128/aac.00390-26](https://doi.org/10.1128/aac.00390-26) | [42809435](https://pubmed.ncbi.nlm.nih.gov/42809435) | The paper is a primary Phase I pharmacokinetic study reporting quantitative disposition parameters for zidebactam, but the specific numeric values are not present in the provided evidence text. |
-| `Giri_2020.pdf` | Giri P et al., Relevance of preclinical rodent pharmac…, Xenobiotica; the fate of fo… (2020) | popPK | 6 | [10.1080/00498254.2019.1696494](https://doi.org/10.1080/00498254.2019.1696494) | [31755347](https://pubmed.ncbi.nlm.nih.gov/31755347) | The study reports preclinical PK parameters (CL, VSS) for zidebactam, but the specific numeric values are not provided in the extracted evidence text. |
-| `Lepak_2019.pdf` | Lepak AJ et al., WCK 5222 (Cefepime/Zidebactam) Pharmaco…, Antimicrobial agents and ch… (2019) | popPK | 6 | [10.1128/AAC.01648-19](https://doi.org/10.1128/AAC.01648-19) | [31591114](https://pubmed.ncbi.nlm.nih.gov/31591114) | The paper reports PK parameters for zidebactam in mice (half-life 0.3-0.5 h, penetration), but lacks full compartmental parameters (CL, V) and specific dose-response numerical breakdowns. |
-| `Preston_2019.pdf` | Preston RA et al., Single-Center Evaluation of the Pharmac…, Antimicrobial agents and ch… (2019) | popPK | 5 | [10.1128/AAC.01484-18](https://doi.org/10.1128/AAC.01484-18) | [30397067](https://pubmed.ncbi.nlm.nih.gov/30397067) | The paper is a relevant human PK study for zidebactam (co-administered with cefepime) in renal impairment, but the abstract provides only qualitative trends (increased half-life/AUC, decreased clearance) and lacks any specific numeric PK parameter values. |
-| `Rodvold_2018.pdf` | Rodvold KA et al., Plasma and Intrapulmonary Concentration…, Antimicrobial agents and ch… (2018) | popPK | 5 | [10.1128/AAC.00682-18](https://doi.org/10.1128/AAC.00682-18) | [29784852](https://pubmed.ncbi.nlm.nih.gov/29784852) | The study reports non-compartmental PK parameters (Cmax, AUC0-8) for zidebactam in humans, but lacks compartmental model parameters like CL or V explicitly in the text, though values are present for AUC/Cmax. |
+| `Giri_2020.pdf` | Giri P et al., Relevance of preclinical rodent pharmac…, Xenobiotica; the fate of fo… (2020) | popPK | 8 | [10.1080/00498254.2019.1696494](https://doi.org/10.1080/00498254.2019.1696494) | [31755347](https://pubmed.ncbi.nlm.nih.gov/31755347) | The study reports pharmacokinetic parameters (CL, VSS, T1/2) for zidebactam in rats and mice, but only ratio data are explicitly detailed in the abstract; specific individual numeric values for zidebactam are likely in tables or figures not fully provided in the evidence text. |
+| `Lepak_2019.pdf` | Lepak AJ et al., WCK 5222 (Cefepime/Zidebactam) Pharmaco…, Antimicrobial agents and ch… (2019) | popPK | 5 | [10.1128/AAC.01648-19](https://doi.org/10.1128/AAC.01648-19) | [31591114](https://pubmed.ncbi.nlm.nih.gov/31591114) | Study reports PK for zidebactam in mice with specific half-life values (0.3-0.5 h) and ELF penetration data, but lacks standard disposition parameters (CL, Vd) required for population PK modeling. |
 | `Bhagwat_2019.pdf` | Bhagwat SS et al., The Novel β-Lactam Enhancer Zidebactam…, Antimicrobial agents and ch… (2019) | pd | 5 | [10.1128/AAC.02146-18](https://doi.org/10.1128/AAC.02146-18) | [30670419](https://www.ncbi.nlm.nih.gov/pubmed/30670419) | metadata signals extractable PD data (exposure-response) |
 | `Horcajada_2019.pdf` | Horcajada JP et al., Epidemiology and Treatment of Multidrug…, Clinical microbiology revie… (2019) | pd | 5 | [10.1128/CMR.00031-19](https://doi.org/10.1128/CMR.00031-19) | [31462403](https://www.ncbi.nlm.nih.gov/pubmed/31462403) | metadata signals extractable PD data (PK/PD) |
 | `Polati_2025.pdf` | Polati VR et al., Investigational antibiotic cefepime/zid…, European journal of clinica… (2025) | pd | 5 | [10.1007/s10096-025-05106-8](https://doi.org/10.1007/s10096-025-05106-8) | [40100511](https://www.ncbi.nlm.nih.gov/pubmed/40100511) | metadata signals extractable PD data (PK/PD) |
 
-<sub>queue written 2026-10-09T10:39:59.612530+00:00</sub>
+<sub>queue written 2026-10-22T10:44:13.210062+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Alarcia-Lacalle_2025 | irrelevant | 2 | 0 | This is a systematic review that discusses zidebactam only in passing or as part of a general search strategy, and no specific quantitative PK parameters for zidebactam are provided in the evidence. |
-| popPK | Almarzoky_2019 | irrelevant | 0 | 0 | The paper describes an in vivo efficacy study measuring bacterial reduction, not pharmacokinetic parameters like clearance or volume of distribution. |
-| popPK | Bakthavatchalam_2026 | irrelevant | 0 | 0 | The study reports in vitro MIC (antimicrobial activity) data, not quantitative pharmacokinetic disposition parameters (CL, V, ka) for zidebactam. |
+| popPK | Alarcia-Lacalle_2025 | irrelevant | 2 | 0 | This is a systematic review covering multiple beta-lactamase inhibitors; while zidebactam is mentioned as a search term and included agent, no specific quantitative PK parameters or values for zidebactam are reported in the provided text or tables. |
+| popPK | Almarzoky_2019 | irrelevant | 0 | 0 | The paper is an in vivo efficacy study focused on bacterial burden reduction and MICs, not a pharmacokinetic study reporting quantitative disposition parameters (CL, V, t1/2) for zidebactam. |
+| popPK | Bakthavatchalam_2026 | irrelevant | 0 | 0 | The paper is an in vitro microbiological study reporting MIC distributions for ertapenem/zidebactam and does not contain any pharmacokinetic parameters (CL, V, t1/2, etc.) for zidebactam. |
 | popPK | Bhagwat_2019 | irrelevant | 0 | 0 | no_text gate: only 164 chars of text extracted (&lt; 400) |
-| popPK | Carcione_2026 | irrelevant | 2 | 0 | The paper is a review focusing on cefepime-based combinations; while it discusses zidebactam, the specific quantitative PK parameters provided in the evidence (Vd ~20 L, t1/2 2-2.3 h) explicitly refer to cefepime, not zidebactam. |
-| popPK | Comini_2026 | irrelevant | 1 | 0 | The paper is a review focusing on the in vitro activity and mechanisms of cefepime combined with zidebactam, but it does not report quantitative population pharmacokinetic parameters (CL, V, etc.) for zidebactam itself. |
-| PGx | Comini_2026 | not_relevant | 0 | 0 | The text is a review discussing mechanisms of action, in vitro activity, and clinical evidence, containing no data on pharmacogenomic effects (gene variants altering PK/PD). |
-| popPK | Gatti_2026 | irrelevant | 0 | 0 | The paper is a clinical review of efficacy and real-world use, not a pharmacokinetic study reporting quantitative PK parameters for zidebactam. |
-| PGx | Gatti_2026 | not_relevant | 0 | 0 | The paper is a review of clinical efficacy and therapeutic algorithms for various beta-lactams, including cefepime-zidebactam, but does not report pharmacogenomic effects on PK or PD parameters. |
-| popPK | Giri_2020 | relevant | 6 | 0 | The study reports preclinical PK parameters (CL, VSS) for zidebactam, but the specific numeric values are not provided in the extracted evidence text. |
-| popPK | Guo_2022 | irrelevant | 0 | 0 | The paper reports in vitro MIC (Minimum Inhibitory Concentration) data for cefepime-zidebactam, not quantitative pharmacokinetic disposition parameters (CL, V, ka, etc.) in vivo. |
+| popPK | Carcione_2026 | irrelevant | 1 | 0 | The paper is a review focused on cefepime and cefepime-based combinations; it does not report specific quantitative pharmacokinetic parameters (CL, V, etc.) for zidebactam, mentioning it only in the context of the combination drug. |
+| popPK | Comini_2026 | irrelevant | 0 | 0 | The paper is a review of cefepime combined with beta-lactamase inhibitors, focusing on mechanisms of action, in vitro activity, and clinical evidence, without reporting quantitative PK parameters for zidebactam. |
+| PGx | Comini_2026 | not_relevant | 0 | 0 | The paper is a review of the mechanisms of action, in vitro activity, and clinical evidence for cefepime combinations, with no mention of pharmacogenomic effects on pharmacokinetic or pharmacodynamic parameters. |
+| popPK | De_2026 | irrelevant | 0 | 0 | This is a narrative review of new cefepime combinations, and while it mentions zidebactam, it does not report quantitative population pharmacokinetic parameters (CL, V, Q, etc.) for zidebactam itself. |
+| popPK | Gatti_2026 | irrelevant | 0 | 0 | The paper is a clinical review of pivotal trials and real-world evidence for efficacy and place in therapy, not a pharmacokinetic study reporting quantitative disposition parameters for zidebactam. |
+| PGx | Gatti_2026 | not_relevant | 0 | 0 | The paper is a review of real-world evidence and therapeutic algorithms for novel beta-lactams, containing no data on pharmacogenomics or gene variants affecting PK/PD parameters. |
+| popPK | Giri_2020 | relevant | 8 | 3 | The study reports pharmacokinetic parameters (CL, VSS, T1/2) for zidebactam in rats and mice, but only ratio data are explicitly detailed in the abstract; specific individual numeric values for zidebactam are likely in tables or figures not fully provided in the evidence text. |
+| popPK | Guo_2022 | irrelevant | 0 | 0 | The paper reports in vitro antimicrobial susceptibility (MICs) for cefepime-zidebactam against bacterial isolates and does not contain pharmacokinetic parameter values (CL, V, etc.). |
 | popPK | Horcajada_2019 | irrelevant | 0 | 0 | no_text gate: only 114 chars of text extracted (&lt; 400) |
-| popPK | Isler_2021 | irrelevant | 0 | 0 | The paper is a review discussing cefepime and its combinations, mentioning zidebactam only as a β-lactamase inhibitor in in vitro and animal studies without providing any quantitative PK parameters for zidebactam itself. |
-| popPK | Karlowsky_2020 | irrelevant | 0 | 0 | The study is an in-vitro susceptibility analysis (MIC determination) of cefepime-zidebactam and does not report any pharmacokinetic disposition parameters. |
-| popPK | Karvouniaris_2023 | irrelevant | 1 | 1 | The paper is a review of novel antimicrobial agents that mentions cefepime-zidebactam as being in Phase 3 trials, but it does not report any quantitative pharmacokinetic parameters or models for zidebactam. |
-| popPK | Lepak_2019 | relevant | 6 | 4 | The paper reports PK parameters for zidebactam in mice (half-life 0.3-0.5 h, penetration), but lacks full compartmental parameters (CL, V) and specific dose-response numerical breakdowns. |
-| popPK | Liu_2022 | irrelevant | 0 | 0 | The study reports in vitro MICs for various antibiotics including zidebactam, but provides no pharmacokinetic disposition parameters. |
-| popPK | Lodise_2026 | relevant | 9 | 0 | The paper is a primary Phase I pharmacokinetic study reporting quantitative disposition parameters for zidebactam, but the specific numeric values are not present in the provided evidence text. |
-| popPK | Monogue_2019 | irrelevant | 1 | 0 | The study reports in vivo efficacy data (bacterial load reduction) for the cefepime-zidebactam combination, not quantitative pharmacokinetic parameters (CL, V, etc.) for zidebactam. |
-| popPK | Moya_2017 | irrelevant | 0 | 0 | The study focuses on in-vitro antimicrobial mechanisms (PBP binding, MICs, time-kill) and does not report any pharmacokinetic parameters for zidebactam. |
-| popPK | Pipitò_2026 | irrelevant | 0 | 0 | The paper is a review of cefepime-based combinations where zidebactam is only a component of a combination, and no quantitative pharmacokinetic parameter values for zidebactam are provided in the evidence. |
-| popPK | Polati_2025 | irrelevant | 1 | 0 | The paper is a clinical case report describing a treatment outcome, not a pharmacokinetic study, and contains no quantitative PK parameters (CL, V, etc.) for zidebactam. |
-| popPK | Preston_2019 | irrelevant | 5 | 0 | The paper is a relevant human PK study for zidebactam (co-administered with cefepime) in renal impairment, but the abstract provides only qualitative trends (increased half-life/AUC, decreased clearance) and lacks any specific numeric PK parameter values. |
-| popPK | Raro_2026 | irrelevant | 0 | 0 | This is an in-vitro microbiology and enzymatic kinetics study characterizing a beta-lactamase (PAC-1); zidebactam is used only as an inhibitor in MIC and IC50 assays, not as a subject for pharmacokinetic profiling. |
-| popPK | Rusu_2026 | irrelevant | 0 | 0 | The paper is a review on the pyrrolidine scaffold in antibiotic discovery and does not report pharmacokinetic parameters for the specific drug zidebactam. |
-| popPK | Sastre-Femenia_2026 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study of antibiotic resistance (MICs and PBP binding affinities) and does not report any pharmacokinetic parameters (CL, V, ka, t1/2) for zidebactam. |
-| popPK | Soman_2021 | irrelevant | 0 | 0 | The paper is a review discussing the clinical utility of new agents like cefepime-zidebactam but contains no original pharmacokinetic parameter values or models for zidebactam. |
-| popPK | Thacker_2026 | irrelevant | 0 | 0 | This is a clinical case report focusing on the therapeutic outcome of an infection, not a pharmacokinetic study reporting quantitative disposition parameters. |
-| popPK | Yahav_2020 | irrelevant | 0 | 0 | The paper is a review of beta-lactam-beta-lactamase inhibitor combinations that mentions zidebactam only in the context of in vitro activity, without reporting quantitative PK parameters. |
+| popPK | Isler_2021 | irrelevant | 0 | 0 | The paper is a review of cefepime and combinations, mentioning zidebactam only as a companion agent in in vitro and animal contexts without reporting specific pharmacokinetic parameters for zidebactam. |
+| popPK | Karlowsky_2020 | irrelevant | 0 | 0 | The study is an in vitro susceptibility investigation measuring MIC values, not a pharmacokinetic study reporting disposition parameters for zidebactam. |
+| popPK | Karvouniaris_2023 | irrelevant | 2 | 0 | This is a review of various novel antimicrobials where zidebactam is only mentioned by name in the introduction, but the provided text contains no quantitative pharmacokinetic parameters (CL, V, Q, etc.) for zidebactam specifically. |
+| popPK | Lepak_2019 | relevant | 5 | 3 | Study reports PK for zidebactam in mice with specific half-life values (0.3-0.5 h) and ELF penetration data, but lacks standard disposition parameters (CL, Vd) required for population PK modeling. |
+| popPK | Liu_2022 | irrelevant | 0 | 0 | The study reports in vitro minimum inhibitory concentrations (MICs) for antimicrobial susceptibility, not pharmacokinetic parameters for zidebactam. |
+| popPK | Lodise_2026 | irrelevant | 0 | 0 | no_text gate: only 229 chars of text extracted (&lt; 400) |
+| popPK | Monogue_2019 | irrelevant | 1 | 0 | The paper describes in vivo efficacy (MICs and CFU reduction) in a murine model, not pharmacokinetic disposition parameters for zidebactam. |
+| popPK | Moya_2017 | irrelevant | 0 | 0 | The study focuses on in vitro antimicrobial activity (MICs, PBP binding, enzyme inhibition) and time-kill kinetics, with no pharmacokinetic parameters reported. |
+| popPK | Pipitò_2026 | irrelevant | 1 | 0 | The paper is a review summarizing cefepime-based combinations including zidebactam but provides no original quantitative pharmacokinetic parameter values (CL, V, etc.) in the evidence. |
+| popPK | Polati_2025 | irrelevant | 0 | 0 | The paper is a clinical case report focusing on efficacy and microbiological cure, with no quantitative pharmacokinetic parameters or PK model data provided for zidebactam. |
+| popPK | Preston_2019 | irrelevant | 0 | 0 | no_text gate: only 128 chars of text extracted (&lt; 400) |
+| popPK | Principe_2022 | irrelevant | 3 | 4 | The paper is a review that summarizes PK parameters for zidebactam (as part of cefepime/zidebactam) in Table 3, but it is not an original study reporting new quantitative disposition data or compartmental models. |
+| popPK | Raro_2026 | irrelevant | 0 | 0 | The study characterizes beta-lactamase hydrolytic kinetics and MICs in vitro, reporting no pharmacokinetic parameters (CL, V, t1/2) for zidebactam. |
+| popPK | Rodvold_2018 | relevant | 4 | 2 | The study provides non-compartmental PK parameters (AUC, Cmax) and penetration ratios for zidebactam, but lacks the specific disposition parameters (CL, V, ka) requested and does not report a population PK model. |
+| popPK | Rusu_2026 | irrelevant | 0 | 0 | The paper is a review of pyrrolidine-based antibacterial drugs and does not contain pharmacokinetic data for zidebactam. |
+| popPK | Sastre-Femenia_2026 | irrelevant | 0 | 0 | The study is an in-vitro microbiological and mechanistic analysis of PBP2 binding and MICs, containing no pharmacokinetic disposition parameters (CL, V, etc.). |
+| popPK | Soman_2021 | irrelevant | 0 | 0 | The paper is a review discussing clinical implications of antibiotic resistance and does not report any quantitative pharmacokinetic parameters for zidebactam. |
+| popPK | Thacker_2026 | irrelevant | 0 | 0 | This is a clinical case report describing the therapeutic outcome of zidebactam in a patient, not a pharmacokinetic study, and contains no quantitative PK parameters. |
+| popPK | Van_2026 | irrelevant | 0 | 0 | The paper is a review of the pharmacodynamics and clinical efficacy of the cefepime-zidebactam combination, containing no quantitative pharmacokinetic parameter values. |
+| popPK | Yahav_2020 | irrelevant | 1 | 0 | The paper is a review that discusses zidebactam only in the context of its in vitro antimicrobial spectrum and development status, without providing quantitative pharmacokinetic parameter values. |
+
+
+</details>
 
 ---
-<sub>Generated by `docs.py` (scholarv2)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
+<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>

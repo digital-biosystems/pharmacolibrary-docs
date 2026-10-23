@@ -13,6 +13,18 @@
   20.0,
   320.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Ou_2021:results_prose",
+    "value_si": 0.000254
+   },
+   {
+    "source": "Ou_2021:results_prose",
+    "value_si": 26.8
+   }
+  ]
+ },
  "parameters": {
   "Cl": 4.722222222222223e-05,
   "F": 1.0,

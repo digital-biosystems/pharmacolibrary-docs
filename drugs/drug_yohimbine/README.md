@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;G04B&quot;,&quot;href&quot;:&quot;atc/G04B.md&quot;},{&quot;label&quot;:&quot;yohimbine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Yohimbine_Dimaio2011v2_reference&quot;,&quot;label&quot;:&quot;Dimaio_2011_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_yohimbine/Yohimbine_Dimaio2011v2_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Yohimbine_Dimaio2011v2_reference&quot;,&quot;label&quot;:&quot;Dimaio_2011_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_yohimbine/Yohimbine_Dimaio2011v2_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # yohimbine
 
@@ -23,23 +23,40 @@ Yohimbine is an alpha-2 blocker used for erectile dysfunction and hypoactive sex
 |---|---|---|---|---|---|---|
 | yohimbine | parent | 354.443 | C21H26N2O3 | DrugBank | [8969](https://pubchem.ncbi.nlm.nih.gov/compound/8969) | Dimaio_2011_2 |
 
-## Extraction summary
+## Start here
 
-| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
-|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 09:19 | 2:05 | 1/0/0 | 0/0/0 | 0/0/0 | 135,415/4,851 | einfracz / qwen3.8-27b | 5 | 1/4 | 5/0 | 0 |
+> **Dimaio_2011_2_reference** — <span class="pk-badge pk-badge--green">Reproduces paper</span> healthy adult horses, n = No. [Run it in the simulator](drugs/drug_yohimbine/Yohimbine_Dimaio2011v2_reference.md?tab=Simulation) · [record](drugs/drug_yohimbine/Yohimbine_Dimaio2011v2_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
+## Parameters across studies
+
+| parameter | as named | value | unit | as reported | population | n | species | status | record |
+|---|---|---|---|---|---|---|---|---|---|
+| CL | CL | 56.7 ‡ | L/h | 13.5 mL/min/kg | healthy adult horses | No | horse | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Dimaio_2011_2_reference](drugs/drug_yohimbine/Yohimbine_Dimaio2011v2_reference.md) |
+| t½ | t1/2z | 4.4 | h | 4.4 h | healthy adult horses | No | horse | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Dimaio_2011_2_reference](drugs/drug_yohimbine/Yohimbine_Dimaio2011v2_reference.md) |
+
+<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. Rejected records are left out.</sub>
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.4). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span> | [Dimaio_2011_2_reference](drugs/drug_yohimbine/Yohimbine_Dimaio2011v2_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Dimaio Knych HK et al., Pharmacokinetics of yohimbine following…, Journal of veterinary pharm… (2011) | [10.1111/j.1365-2885.2010.01194.x](https://doi.org/10.1111/j.1365-2885.2010.01194.x) |
+| <span class="pk-rf" hidden data-species="horse" data-age="adult" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span> | [Dimaio_2011_2_reference](drugs/drug_yohimbine/Yohimbine_Dimaio2011v2_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Dimaio Knych HK et al., Pharmacokinetics of yohimbine following…, Journal of veterinary pharm… (2011) | [10.1111/j.1365-2885.2010.01194.x](https://doi.org/10.1111/j.1365-2885.2010.01194.x) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 09:19 | 2:05 | 1/0/0 | 0/0/0 | 0/0/0 | 135,415/4,851 | einfracz / qwen3.8-27b | 5 | 1/4 | 5/0 | 0 |
 
 ## Coverage
 
@@ -83,5 +100,9 @@ _5 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | popPK | Vázquez_2006 | irrelevant | 0 | 0 | The study is an in vitro receptor characterization study where yohimbine is used only as a ligand for binding assays, not as a subject drug for pharmacokinetic analysis. |
 | popPK | Wong_1992 | irrelevant | 0 | 0 | This is an in-vitro pharmacodynamic study on isolated rat aortae investigating clonidine, with yohimbine used only as a pharmacological tool/antagonist, not a PK study. |
 
+
+</details>
+
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 09:17 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
+<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 09:17 UTC</sub>

@@ -6,13 +6,38 @@
 
 > ## <span class="pk-badge pk-badge--neutral">None</span> <span class="pk-badge pk-badge--stale">stale</span>
 
+> The reviewer's verdict (Rejected, 2026-09-11 08:47 UTC) predates the latest extraction (2026-10-05 15:11 UTC); the status shown comes from the current checks.
+
+<div class="pk-model-meta" hidden drug="phenprocoumon" model-id="Phenprocoumon_Abduljalil2013_patients_on_steady_state_phenpr" status="" stale="true" population="patients" measured-compound="" parameterization="" topology=""></div>
+
+## Citation
+Abduljalil K, Lazar S, Natanzon M, Wu W, Zadoyan G, Steffens B et al. Quantifying the effect of covariates on concentrations and effects of steady-state phenprocoumon using a population pharmacokinetic/pharmacodynamic model. Clinical pharmacokinetics 52(5):359–371 (2013).
+  ·  DOI: [10.1007/s40262-013-0043-z](https://doi.org/10.1007/s40262-013-0043-z)
+
+## Population and dosing
+
+**Population:** patients.
+
+## Model
+
+**Structure:** —; no model was built for this record.  
+**Parameters:** 0 extracted.  
+**Availability:** No model was generated from this record.
+
+## Parameters
+> ⚠️ Status "not captured": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
+_No resolved parameters._
+
+<details class="pk-evidence"><summary>Evidence &amp; review</summary>
+
+**Status and checks:** <span class="pk-badge pk-badge--neutral">None</span> <span class="pk-badge pk-badge--stale">stale</span>
+
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
-
-**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -22,24 +47,6 @@ Nothing in the extracted data describes the drug's disposition, so there is no m
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-11 08:47:04.825124+00:00) predates the upstream re-run (2026-10-05 15:11:59.059404+00:00). Current validate status: `not captured`.
-
-## Citation
-Abduljalil K et al., Quantifying the effect of covariates on…, Clinical pharmacokinetics (2013)
-  ·  DOI: [10.1007/s40262-013-0043-z](https://doi.org/10.1007/s40262-013-0043-z)
-
-<div class="pk-model-meta" hidden drug="phenprocoumon" model-id="Phenprocoumon_Abduljalil2013_patients_on_steady_state_phenpr" status="" stale="true" population="patients" measured-compound="" parameterization="" topology=""></div>
-
-**Model structure:** —; no model was built for this record.  
-**Parameters:** 0 extracted.
-
-**Parameterization:** not captured.
-
-## Parameters
-> ⚠️ This record is not accepted (current status `not captured`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
-_No resolved parameters._
-
 ## Departures & gaps
 
 _None recorded._
@@ -48,10 +55,8 @@ _None recorded._
 
 _No comparable checks._
 
-## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_phenprocoumon/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Abduljalil_2013` / `Abduljalil_2013::patients on steady-state phenprocoumon`)
-
+</details>
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
@@ -76,4 +81,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 15:11 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bphenprocoumon%5D%20Phenprocoumon_Abduljalil2013_patients_on_steady_state_phenpr&body=Drug%3A%20phenprocoumon%0ARecord%3A%20Phenprocoumon_Abduljalil2013_patients_on_steady_state_phenpr%0APaper%3A%20Abduljalil_2013%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_phenprocoumon/Phenprocoumon_Abduljalil2013_patients_on_steady_state_phenpr%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Generated by `docs.py` (scholarv2, release v26.09) · extracted 2026-10-05 15:11 UTC</sub>

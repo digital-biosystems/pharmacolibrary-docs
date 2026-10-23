@@ -5,6 +5,30 @@
  "observables": [
   "central.C"
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Melhem_2022:other_prose",
+    "value_si": 10.0
+   },
+   {
+    "source": "Melhem_2022:other_prose",
+    "value_si": 434.0
+   },
+   {
+    "source": "Melhem_2022:other_prose",
+    "value_si": 0.319
+   },
+   {
+    "source": "Melhem_2022:other_prose",
+    "value_si": 0.717
+   },
+   {
+    "source": "Melhem_2022:other_prose",
+    "value_si": 350.0
+   }
+  ]
+ },
  "parameters": {
   "Cl": 2.0717592592592592e-09,
   "F": 1.0,

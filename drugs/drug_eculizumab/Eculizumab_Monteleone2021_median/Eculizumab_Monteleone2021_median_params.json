@@ -10,6 +10,14 @@
   900.0,
   1200.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Monteleone_2021:other_prose",
+    "value_si": 0.742
+   }
+  ]
+ },
  "parameters": {
   "Cl": 2.1805555555555555e-09,
   "F": 1.0,

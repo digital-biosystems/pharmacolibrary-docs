@@ -4,17 +4,56 @@
 
 # avelumab — `Avelumab_Masters2022_reference`
 
-> ## <span class="pk-badge pk-badge--neutral" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">not modelled</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.545). Primary extraction retained.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--neutral" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Not simulated</span>
+
+<div class="pk-model-meta" hidden drug="avelumab" model-id="Avelumab_Masters2022_reference" status="not_modelled" stale="false" population="patients with advanced renal cell carcinoma receiving avelumab plus axitinib" measured-compound="avelumab" parameterization="mechanistic" topology="2C"></div>
+
+## Citation
+Masters JC, Khandelwal A, di Pietro A, Dai H, Brar S. Model-informed drug development supporting the approval of the avelumab flat-dose regimen in patients with advanced renal cell carcinoma. CPT: pharmacometrics & systems pharmacology 11(4):458–468 (2022).
+  ·  DOI: [10.1002/psp4.12771](https://doi.org/10.1002/psp4.12771)
+
+## Population and dosing
+
+**Population:** patients with advanced renal cell carcinoma receiving avelumab plus axitinib · condition advanced renal cell carcinoma · n = 2315.
+
+**Dosing:** 700 mg, iv, multiple, every 336 h.
+
+**Dosed compound ≠ measured compound:** dosed avelumab (with axitinib), measured avelumab.
+
+## Model
+
+**Structure:** 2-compartment; no model was built for this record.  
+**Parameterization:** mechanistic.  
+**Parameters:** 4 extracted, plus 3 covariate effects.  
+**Availability:** No model was generated from this record.
+
+## Parameters
+> ⚠️ Status "Not simulated": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
+| label | parameter | value | unit | RSE% | IIV |
+|---|---|---|---|---|---|
+| θ CL, L/h | CL | 0.0269 | L/h | 1.026 |  |
+| θ V1, L | V1 | 3.196 | L | 0.7824 |  |
+| θ V2, L | V2 | 0.7278 | L | 6.505 |  |
+| θ Q, L/h | Q | 0.3352 | L/h | 12.24 | 0.09339 (30.56% RSE) |
+| θT50, days | equation variable | 99.24 | days | 6.931 |  |
+| weight_on_v2 | weight_on_v2 | 0.5826 | days | 5.183 |  |
+| theta_q319_weight | theta_q319_weight | 0.4714 |  | 6.402 |  |
+| theta_q319_weight | theta_q319_weight | 0.4694 |  | 6.79 |  |
+
+## Caveats
+
+- Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.
+
+<details class="pk-evidence"><summary>Evidence &amp; review</summary>
+
+**Status and checks:** <span class="pk-badge pk-badge--neutral" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.545). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
-
-**Model:** No model was generated from this record.
-
-> **Caveat** (`covariates_not_exercised`): Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.
 
 ### Reviewer guidance
 
@@ -26,36 +65,22 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which co
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> **Dose compound ≠ measured compound:** dosed `avelumab (with axitinib)`, measured `avelumab`.
+### All parameter columns
 
-## Citation
-Masters JC et al., Model-informed drug development support…, CPT: pharmacometrics & syst… (2022)
-  ·  DOI: [10.1002/psp4.12771](https://doi.org/10.1002/psp4.12771)
-
-<div class="pk-model-meta" hidden drug="avelumab" model-id="Avelumab_Masters2022_reference" status="not_modelled" stale="false" population="patients with advanced renal cell carcinoma receiving avelumab plus axitinib" measured-compound="avelumab" parameterization="mechanistic" topology="2C"></div>
-
-**Model structure:** 2-compartment; no model was built for this record.  
-**Parameters:** 4 extracted, plus 3 covariate effects.
-
-**Parameterization:** mechanistic.
-
-## Parameters
-> ⚠️ This record is not accepted (current status `not_modelled`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | RSE% | link | source | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| θ CL, L/h | `Q22` · CL | 0.0269 | L/h | 7.472222222222222e-09 | [l] / [h] | 1.026 | llm_confirmed (0.6) | psp412771-tbl-0001:row1:col1, psp412771-tbl-0001:row1:col2, psp412771-tbl-0001:row1:col3 | — | not captured |
-| θ V1, L | `Q63` · V1 | 3.196 | L | 0.003196 | [l] | 0.7824 | llm_confirmed (0.6) | psp412771-tbl-0001:row2:col1, psp412771-tbl-0001:row2:col2, psp412771-tbl-0001:row2:col3 | — | not captured |
-| θ V2, L | `Q64` · V2 | 0.7278 | L | 0.0007278 | [l] | 6.505 | llm_confirmed (0.6) | psp412771-tbl-0001:row3:col1, psp412771-tbl-0001:row3:col2, psp412771-tbl-0001:row3:col3 | — | not captured |
-| θ Q, L/h | `Q30` · Q | 0.3352 | L/h | 9.311111111111112e-08 | [l] / [h] | 12.24 | llm (0.6) | psp412771-tbl-0001:row4:col1, psp412771-tbl-0001:row4:col2, psp412771-tbl-0001:row4:col3 | — | 0.09339 (30.56% RSE) |
-| θT50, days | `Q900` · equation variable | 99.24 | days | not captured | [d] | 6.931 | llm (0.6) | psp412771-tbl-0001:row6:col1, psp412771-tbl-0001:row6:col2, psp412771-tbl-0001:row6:col3 | — | not captured |
-| weight_on_v2 | `Q900` · weight_on_v2 | 0.5826 | days | not captured | [d] | 5.183 | not captured (not captured) | psp412771-tbl-0001:row10:col1, psp412771-tbl-0001:row10:col2, psp412771-tbl-0001:row10:col3 | — | not captured |
-| theta_q319_weight | `Q900` · theta_q319_weight | 0.4714 | not captured | not captured | not captured | 6.402 | not captured (not captured) | psp412771-tbl-0001:row8:col1, psp412771-tbl-0001:row8:col2, psp412771-tbl-0001:row8:col3 | — | not captured |
-| theta_q319_weight | `Q900` · theta_q319_weight | 0.4694 | not captured | not captured | not captured | 6.79 | not captured (not captured) | psp412771-tbl-0001:row9:col1, psp412771-tbl-0001:row9:col2, psp412771-tbl-0001:row9:col3 | — | not captured |
+| θ CL, L/h | `Q22` · CL | 0.0269 | L/h | 7.472e-09 | m3/s | l/h | 1.026 | llm_confirmed (0.6) | psp412771-tbl-0001:row1:col1, psp412771-tbl-0001:row1:col2, psp412771-tbl-0001:row1:col3 |  |
+| θ V1, L | `Q63` · V1 | 3.196 | L | 0.003196 | m3 | l | 0.7824 | llm_confirmed (0.6) | psp412771-tbl-0001:row2:col1, psp412771-tbl-0001:row2:col2, psp412771-tbl-0001:row2:col3 |  |
+| θ V2, L | `Q64` · V2 | 0.7278 | L | 0.0007278 | m3 | l | 6.505 | llm_confirmed (0.6) | psp412771-tbl-0001:row3:col1, psp412771-tbl-0001:row3:col2, psp412771-tbl-0001:row3:col3 |  |
+| θ Q, L/h | `Q30` · Q | 0.3352 | L/h | 9.311e-08 | m3/s | l/h | 12.24 | llm (0.6) | psp412771-tbl-0001:row4:col1, psp412771-tbl-0001:row4:col2, psp412771-tbl-0001:row4:col3 | 0.09339 (30.56% RSE) |
+| θT50, days | `Q900` · equation variable | 99.24 | days |  |  | d | 6.931 | llm (0.6) | psp412771-tbl-0001:row6:col1, psp412771-tbl-0001:row6:col2, psp412771-tbl-0001:row6:col3 |  |
+| weight_on_v2 | `Q900` · weight_on_v2 | 0.5826 | days |  |  | d | 5.183 |  | psp412771-tbl-0001:row10:col1, psp412771-tbl-0001:row10:col2, psp412771-tbl-0001:row10:col3 |  |
+| theta_q319_weight | `Q900` · theta_q319_weight | 0.4714 |  |  |  |  | 6.402 |  | psp412771-tbl-0001:row8:col1, psp412771-tbl-0001:row8:col2, psp412771-tbl-0001:row8:col3 |  |
+| theta_q319_weight | `Q900` · theta_q319_weight | 0.4694 |  |  |  |  | 6.79 |  | psp412771-tbl-0001:row9:col1, psp412771-tbl-0001:row9:col2, psp412771-tbl-0001:row9:col3 |  |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ## Departures & gaps
@@ -90,15 +115,15 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `qwen3.8-27b` | `parameters[theta_cl_weight]` | not captured | 0.4714 | only_one_extracted |
-| `qwen3.8-27b` | `parameters[theta_q319_weight]` | 0.4714 | not captured | only_one_extracted |
-| `qwen3.8-27b` | `parameters[theta_v1_weight]` | not captured | 0.4694 | only_one_extracted |
-| `qwen3.8-27b` | `parameters[theta_v2_weight]` | not captured | 0.5826 | only_one_extracted |
-| `qwen3.8-27b` | `parameters[weight_on_v2]` | 0.5826 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[theta_cl_weight]` |  | 0.4714 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[theta_q319_weight]` | 0.4714 |  | only_one_extracted |
+| `qwen3.8-27b` | `parameters[theta_v1_weight]` |  | 0.4694 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[theta_v2_weight]` |  | 0.5826 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[weight_on_v2]` | 0.5826 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[θ v1].covariate_forms` | [] | ['linear_fractional'] | mismatch |
 | `qwen3.8-27b` | `parameters[θ v2].covariate_forms` | [] | ['linear_fractional'] | mismatch |
-| `qwen3.8-27b` | `parameters[θt50]` | 99.24 | not captured | only_one_extracted |
-| `qwen3.8-27b` | `parameters[θγ]` | not captured | 2.086 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[θt50]` | 99.24 |  | only_one_extracted |
+| `qwen3.8-27b` | `parameters[θγ]` |  | 2.086 | only_one_extracted |
 | `qwen3.8-27b` | `screen.dose_compound` | avelumab (with axitinib) | avelumab | mismatch |
 
 </details>
@@ -111,41 +136,39 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained | ratio | tol | source |
-|---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp412771-tbl-0001:row1:col1', 'psp412771-tbl-0001:row1:col2', 'psp412771-tbl-0001:row1:col3'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp412771-tbl-0001:row4:col1', 'psp412771-tbl-0001:row4:col2', 'psp412771-tbl-0001:row4:col3'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp412771-tbl-0001:row2:col1', 'psp412771-tbl-0001:row2:col2', 'psp412771-tbl-0001:row2:col3'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp412771-tbl-0001:row3:col1', 'psp412771-tbl-0001:row3:col2', 'psp412771-tbl-0001:row3:col3'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.0269 | not captured | not captured | ['psp412771-tbl-0001:row1:col1', 'psp412771-tbl-0001:row1:col2', 'psp412771-tbl-0001:row1:col3'] |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.0269 L/h | not captured | not captured | ['psp412771-tbl-0001:row1:col1', 'psp412771-tbl-0001:row1:col2', 'psp412771-tbl-0001:row1:col3'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 3.2 L | not captured | not captured | ['psp412771-tbl-0001:row2:col1', 'psp412771-tbl-0001:row2:col2', 'psp412771-tbl-0001:row2:col3'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 0.728 L | not captured | not captured | ['psp412771-tbl-0001:row3:col1', 'psp412771-tbl-0001:row3:col2', 'psp412771-tbl-0001:row3:col3'] |
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 4 |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
+| C2_reference | pass |  |  |  |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['psp412771-tbl-0001:row1:col1', 'psp412771-tbl-0001:row1:col2', 'psp412771-tbl-0001:row1:col3'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['psp412771-tbl-0001:row4:col1', 'psp412771-tbl-0001:row4:col2', 'psp412771-tbl-0001:row4:col3'] |
+| C5_dimension_Q63 | pass | [length] ** 3 |  | ['psp412771-tbl-0001:row2:col1', 'psp412771-tbl-0001:row2:col2', 'psp412771-tbl-0001:row2:col3'] |
+| C5_dimension_Q64 | pass | [length] ** 3 |  | ['psp412771-tbl-0001:row3:col1', 'psp412771-tbl-0001:row3:col2', 'psp412771-tbl-0001:row3:col3'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.0269 | ['psp412771-tbl-0001:row1:col1', 'psp412771-tbl-0001:row1:col2', 'psp412771-tbl-0001:row1:col3'] |
+| C8_topology | pass |  |  |  |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.0269 L/h | ['psp412771-tbl-0001:row1:col1', 'psp412771-tbl-0001:row1:col2', 'psp412771-tbl-0001:row1:col3'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 3.2 L | ['psp412771-tbl-0001:row2:col1', 'psp412771-tbl-0001:row2:col2', 'psp412771-tbl-0001:row2:col3'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 0.728 L | ['psp412771-tbl-0001:row3:col1', 'psp412771-tbl-0001:row3:col2', 'psp412771-tbl-0001:row3:col3'] |
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_param_coverage | not captured | skipped | not captured | not captured | not captured | no emitted model to inspect (engineer build absent) |
-| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
-| T1_cmax | reference | skipped | 1.000 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| check | scenario | status | expected | note |
+|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_param_coverage |  | skipped |  | no emitted model to inspect (engineer build absent) |
+| T6_deviations |  | pass |  | no engineer deviations to adjudicate |
+| T1_cmax | reference | skipped | 1.000 | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
-## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_avelumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Masters_2022` / `Masters_2022::reference`)
-
+</details>
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
@@ -170,4 +193,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 09:40 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bavelumab%5D%20Avelumab_Masters2022_reference&body=Drug%3A%20avelumab%0ARecord%3A%20Avelumab_Masters2022_reference%0APaper%3A%20Masters_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_avelumab/Avelumab_Masters2022_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Generated by `docs.py` (scholarv2, release v26.09) · extracted 2026-10-07 09:40 UTC</sub>

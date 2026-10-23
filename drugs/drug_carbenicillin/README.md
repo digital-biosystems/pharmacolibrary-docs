@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01C&quot;,&quot;href&quot;:&quot;atc/J01C.md&quot;},{&quot;label&quot;:&quot;carbenicillin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Carbenicillin_Strydom2024_reference&quot;,&quot;label&quot;:&quot;Strydom_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carbenicillin/Carbenicillin_Strydom2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Carbenicillin_Strydom2024_reference&quot;,&quot;label&quot;:&quot;Strydom_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carbenicillin/Carbenicillin_Strydom2024_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # carbenicillin
 
@@ -15,32 +15,50 @@ Carbenicillin is an extended-spectrum penicillin antibiotic used to treat urinar
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q1050019](https://www.wikidata.org/wiki/Q1050019) and the WHO ATC classification; not checked by a person.</small>
 
-## Extraction summary
+## Start here
 
-| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
-|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 11:17 | 14:39 | 1/2/0 | 2/0/0 | 0/0/0 | 746,819/25,018 | einfracz / qwen3.8-27b | 20 | 3/17 | 19/1 | 0 |
+> **Strydom_2024_reference** — <span class="pk-badge pk-badge--green">Reproduces paper</span> review reference. [Run it in the simulator](drugs/drug_carbenicillin/Carbenicillin_Strydom2024_reference.md?tab=Simulation) · [record](drugs/drug_carbenicillin/Carbenicillin_Strydom2024_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
+## Parameters across studies
+
+| parameter | as named | value | unit | as reported | population | species | status | record |
+|---|---|---|---|---|---|---|---|---|
+| CL | CL/F | 32.8 | L/h | 32.8 L/h | review reference | human + animal | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Strydom_2024_reference](drugs/drug_carbenicillin/Carbenicillin_Strydom2024_reference.md) |
+| V | V1 | 49 | L | 49.0 L | review reference | human + animal | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Strydom_2024_reference](drugs/drug_carbenicillin/Carbenicillin_Strydom2024_reference.md) |
+| ka | kabs | 1.1 | 1/h | 1.1 h−1 | review reference | human + animal | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Strydom_2024_reference](drugs/drug_carbenicillin/Carbenicillin_Strydom2024_reference.md) |
+
+<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.692). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.60).">human + animal</span> | [Strydom_2024_reference](drugs/drug_carbenicillin/Carbenicillin_Strydom2024_reference.md) | ▶ model + simulator | 2-compartment, oral | 5 | Strydom N et al., Dose optimization of TBI-223 for enhanc…, Nature communications (2024) | [10.1038/s41467-024-50781-4](https://doi.org/10.1038/s41467-024-50781-4) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Fernández_2025_reference](drugs/drug_carbenicillin/Carbenicillin_Fernndez2025_reference.md) | — | 2-compartment (no model) | 3 | Fernández Rubio B et al., High-Dose Ceftriaxone in Elderly Patien…, Antibiotics (Basel, Switzer… (2025) | [10.3390/antibiotics14050508](https://doi.org/10.3390/antibiotics14050508) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Yamaoka_1979_reference](drugs/drug_carbenicillin/Carbenicillin_Yamaoka1979_reference.md) | — | 1-compartment (no model) | 0 | Yamaoka K et al., High-performance liquid chromatographic…, Journal of chromatography (1979) | [10.1016/s0021-9673(00)80708-6](https://doi.org/10.1016/s0021-9673(00)80708-6) |
+| <span class="pk-rf" hidden data-species="human + animal" data-age="unknown" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.60).">human + animal</span> | [Strydom_2024_reference](drugs/drug_carbenicillin/Carbenicillin_Strydom2024_reference.md) | ▶ model + simulator | 2-compartment, oral | 5 | Strydom N et al., Dose optimization of TBI-223 for enhanc…, Nature communications (2024) | [10.1038/s41467-024-50781-4](https://doi.org/10.1038/s41467-024-50781-4) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Fernández_2025_reference](drugs/drug_carbenicillin/Carbenicillin_Fernndez2025_reference.md) | — | 2-compartment (no model) | 3 | Fernández Rubio B et al., High-Dose Ceftriaxone in Elderly Patien…, Antibiotics (Basel, Switzer… (2025) | [10.3390/antibiotics14050508](https://doi.org/10.3390/antibiotics14050508) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Yamaoka_1979_reference](drugs/drug_carbenicillin/Carbenicillin_Yamaoka1979_reference.md) | — | 1-compartment (no model) | 0 | Yamaoka K et al., High-performance liquid chromatographic…, Journal of chromatography (1979) | [10.1016/s0021-9673(00)80708-6](https://doi.org/10.1016/s0021-9673(00)80708-6) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Kies_1975_Bleeding](drugs/drug_carbenicillin/pd_Kies_1975_Bleeding.md) | Bleeding ← Carbenicillin · model not identified | — | Kies BM et al., Carbenicillin in acute renal failure, South African medical journ… (1975) | — |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Data from bacteria, fungi or plants, not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">other organism</span> | [Søgaard_1982_IC50](drugs/drug_carbenicillin/pd_S_gaard_1982_IC50.md) | IC50 ← carbenicillin · direct linear effect | — | Søgaard P, Resistance types in Enterobacter cloaca…, Acta pathologica, microbiol… (1982) | — |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Kies_1975_Bleeding](drugs/drug_carbenicillin/pd_Kies_1975_Bleeding.md) | Bleeding ← Carbenicillin · model not identified | — | Kies BM et al., Carbenicillin in acute renal failure, South African medical journ… (1975) | — |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Data from bacteria, fungi or plants, not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">other organism</span> | [Søgaard_1982_IC50](drugs/drug_carbenicillin/pd_S_gaard_1982_IC50.md) | IC50 ← carbenicillin · direct linear effect | — | Søgaard P, Resistance types in Enterobacter cloaca…, Acta pathologica, microbiol… (1982) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 11:17 | 14:39 | 1/2/0 | 2/0/0 | 0/0/0 | 746,819/25,018 | einfracz / qwen3.8-27b | 20 | 3/17 | 19/1 | 0 |
 
 ## Coverage
 
@@ -93,5 +111,9 @@ _4 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | popPK | Zimmermann_2019 | irrelevant | 0 | 0 | The study investigates brivudine and clonazepam pharmacokinetics in mice, not carbenicillin. |
 | popPK | Zinner_1986 | irrelevant | 1 | 0 | The study is an in-vitro mechanistic/pharmacodynamic model for amikacin and azlocillin; carbenicillin is only mentioned as a comparator in clinical trials, and no quantitative PK parameters for carbenicillin are reported. |
 
+
+</details>
+
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 11:10 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
+<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 11:10 UTC</sub>

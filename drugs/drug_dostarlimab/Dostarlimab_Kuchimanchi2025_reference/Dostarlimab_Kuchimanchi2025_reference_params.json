@@ -10,6 +10,26 @@
   500.0,
   1000.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Kuchimanchi_2025:other_prose",
+    "value_si": 0.382
+   },
+   {
+    "source": "Kuchimanchi_2025:other_prose",
+    "value_si": 1.72
+   },
+   {
+    "source": "Kuchimanchi_2025:other_prose",
+    "value_si": 0.147
+   },
+   {
+    "source": "Kuchimanchi_2025:other_prose",
+    "value_si": 0.145
+   }
+  ]
+ },
  "parameters": {
   "Cl": 2.0333333333333333e-09,
   "F": 1.0,

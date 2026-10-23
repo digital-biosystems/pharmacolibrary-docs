@@ -300,11 +300,11 @@
         a.appendChild(node('span', 'pkq-sub', answerEngine.name + '’s prose was withheld: it used a number or a claim the rows do not hold.'));
       }
       if (ans.explanation && !ans.general) {
-        a.appendChild(node('span', 'pkq-sub', 'From the database: ' + ans.summary + ' — prose by ' + answerEngine.name +
+        a.appendChild(node('span', 'pkq-sub', 'Numbers from the database; prose by ' + answerEngine.name +
           ', its numbers checked against the rows' +
           (ans.passages && ans.passages.length ? ' and the ' + ans.passages.length + ' passage(s) below' : '') + (ans.dropped.length ? ' (' + ans.dropped.length + ' sentence(s) dropped)' : '') +
           (gl.length ? '; the why draws on the site glossary — ' + titles : '') +
-          (stats ? ' · ' + stats : '') + '.'));
+          (stats ? ' · ' + stats : '') + '. Database summary: ' + ans.summary));
       }
       // a simulation: the curves, the numbers per model, the record's own simulator
       if (ans.sim && ans.sim.runs.length) {

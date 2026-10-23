@@ -14,12 +14,6 @@ Phenelzine is a monoamine oxidase inhibitor antidepressant used to treat depress
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q1747559](https://www.wikidata.org/wiki/Q1747559) and the WHO ATC classification; not checked by a person.</small>
 
-## Extraction summary
-
-| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
-|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 23:41 | 1:20 | 0/0/0 | 0/1/0 | 0/0/0 | 33,296/1,571 | ollama / glm-5.3-flash | 1 | 2/3 | 0/1 | 0 |
-
 ## popPK records
 
 _not available_
@@ -28,14 +22,22 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">rat</span> | [Dyck_1986_AADC](drugs/drug_phenelzine/pd_Dyck_1986_AADC.md) | aromatic L-amino acid decarboxylase activity of rat brain homogenate ← phenelzine · inhibition effect | — | Dyck LE et al., Inhibition of aromatic L-amino acid dec…, Journal of neurochemistry (1986) | [10.1111/j.1471-4159.1986.tb08511.x](https://doi.org/10.1111/j.1471-4159.1986.tb08511.x) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">rat</span> | [Dyck_1986_TAT](drugs/drug_phenelzine/pd_Dyck_1986_TAT.md) | tyrosine aminotransferase activity of rat liver homogenates ← phenelzine · inhibition effect | — | Dyck LE et al., Inhibition of aromatic L-amino acid dec…, Journal of neurochemistry (1986) | [10.1111/j.1471-4159.1986.tb08511.x](https://doi.org/10.1111/j.1471-4159.1986.tb08511.x) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">rat</span> | [Dyck_1986_AADC](drugs/drug_phenelzine/pd_Dyck_1986_AADC.md) | aromatic L-amino acid decarboxylase activity of rat brain homogenate ← phenelzine · inhibition effect | — | Dyck LE et al., Inhibition of aromatic L-amino acid dec…, Journal of neurochemistry (1986) | [10.1111/j.1471-4159.1986.tb08511.x](https://doi.org/10.1111/j.1471-4159.1986.tb08511.x) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">rat</span> | [Dyck_1986_TAT](drugs/drug_phenelzine/pd_Dyck_1986_TAT.md) | tyrosine aminotransferase activity of rat liver homogenates ← phenelzine · inhibition effect | — | Dyck LE et al., Inhibition of aromatic L-amino acid dec…, Journal of neurochemistry (1986) | [10.1111/j.1471-4159.1986.tb08511.x](https://doi.org/10.1111/j.1471-4159.1986.tb08511.x) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-06 23:41 | 1:20 | 0/0/0 | 0/1/0 | 0/0/0 | 33,296/1,571 | ollama / glm-5.3-flash | 1 | 2/3 | 0/1 | 0 |
 
 ## Coverage
 
@@ -115,7 +117,7 @@ _10 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | PD | ODonnell_1990 | not_relevant | 1 | 0 | The paper mentions phenelzine only to state that its behavioral effects were unaltered by beta-2 down-regulation, without providing any dose-response data, concentration-effect curves, or numeric PD parameters for phenelzine. |
 | PGx | Otton_1990 | not_relevant | 0 | 0 | Phenelzine is only used as a tool inhibitor of MAO; no gene/genotype effect on phenelzine PK/PD is reported. |
 | popPK | Oualha_2025 | irrelevant | 0 | 0 | Study concerns tranylcypromine's antileishmanial efficacy with IC50/CC50 values, no phenelzine PK parameters reported. |
-| PD | Oualha_2025 | not_relevant | 0 | 0 | not captured |
+| PD | Oualha_2025 | not_relevant | 0 | 0 |  |
 | popPK | Pandey_2018 | irrelevant | 0 | 0 | The study focuses on the in-vitro inhibition of MAO by endocannabinoids and does not report pharmacokinetic parameters for phenelzine. |
 | PD | Pandey_2018 | not_relevant | 0 | 0 | The paper reports in vitro enzyme inhibition kinetics (IC50, Ki) for virodhamine, not a pharmacodynamic exposure-response or dose-response relationship for phenelzine. |
 | PGx | Polasek_2004 | not_relevant | 0 | 0 | In vitro enzyme inactivation kinetics of phenelzine on CYP2C8; no gene variant/genotype effect on phenelzine PK/PD. |
@@ -140,5 +142,9 @@ _10 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | popPK | Zimmer_1990 | irrelevant | 0 | 0 | The paper is a pharmacodynamic study comparing MAO inhibition and tyramine pressor effects, not a pharmacokinetic study reporting quantitative disposition parameters for phenelzine. |
 | PD | Zimmer_1990 | not_relevant | 3 | 2 | The paper provides qualitative comparisons and relative potency factors (e.g., 1/7th to 1/10th) for phenelzine compared to other drugs, but does not report specific numeric PD parameters (like EC50, Emax, or absolute effect values) or a concentration-effect curve for phenelzine itself. |
 
+
+</details>
+
 ---
-<sub>Generated by `docs.py` (scholarv2)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
+<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>

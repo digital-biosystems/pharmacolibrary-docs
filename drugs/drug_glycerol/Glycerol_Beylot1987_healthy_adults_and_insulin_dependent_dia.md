@@ -6,13 +6,37 @@
 
 > ## <span class="pk-badge pk-badge--neutral">None</span> <span class="pk-badge pk-badge--stale">stale</span>
 
+> The reviewer's verdict (Rejected, 2026-09-11 12:33 UTC) predates the latest extraction (2026-10-07 19:42 UTC); the status shown comes from the current checks.
+
+<div class="pk-model-meta" hidden drug="glycerol" model-id="Glycerol_Beylot1987_healthy_adults_and_insulin_dependent_dia" status="" stale="true" population="normal subjects and insulin-dependent diabetic patients" measured-compound="" parameterization="" topology=""></div>
+
+## Citation
+Beylot M, Martin C, Beaufrere B, Riou JP, Mornex R. Determination of steady state and nonsteady-state glycerol kinetics in humans using deuterium-labeled tracer. Journal of lipid research 28(4):414–422 (1987).
+
+## Population and dosing
+
+**Population:** normal subjects and insulin-dependent diabetic patients.
+
+## Model
+
+**Structure:** —; no model was built for this record.  
+**Parameters:** 0 extracted.  
+**Availability:** No model was generated from this record.
+
+## Parameters
+> ⚠️ Status "not captured": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
+_No resolved parameters._
+
+<details class="pk-evidence"><summary>Evidence &amp; review</summary>
+
+**Status and checks:** <span class="pk-badge pk-badge--neutral">None</span> <span class="pk-badge pk-badge--stale">stale</span>
+
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
-
-**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -22,23 +46,6 @@ Nothing in the extracted data describes the drug's disposition, so there is no m
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-11 12:33:44.371304+00:00) predates the upstream re-run (2026-10-07 19:42:22.329799+00:00). Current validate status: `not captured`.
-
-## Citation
-Beylot M et al., Determination of steady state and nonst…, Journal of lipid research (1987)
-
-<div class="pk-model-meta" hidden drug="glycerol" model-id="Glycerol_Beylot1987_healthy_adults_and_insulin_dependent_dia" status="" stale="true" population="normal subjects and insulin-dependent diabetic patients" measured-compound="" parameterization="" topology=""></div>
-
-**Model structure:** —; no model was built for this record.  
-**Parameters:** 0 extracted.
-
-**Parameterization:** not captured.
-
-## Parameters
-> ⚠️ This record is not accepted (current status `not captured`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
-_No resolved parameters._
-
 ## Departures & gaps
 
 _None recorded._
@@ -47,10 +54,8 @@ _None recorded._
 
 _No comparable checks._
 
-## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_glycerol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Beylot_1987` / `Beylot_1987::healthy adults and insulin-dependent diabetic patients`)
-
+</details>
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
@@ -75,4 +80,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 19:42 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bglycerol%5D%20Glycerol_Beylot1987_healthy_adults_and_insulin_dependent_dia&body=Drug%3A%20glycerol%0ARecord%3A%20Glycerol_Beylot1987_healthy_adults_and_insulin_dependent_dia%0APaper%3A%20Beylot_1987%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_glycerol/Glycerol_Beylot1987_healthy_adults_and_insulin_dependent_dia%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Generated by `docs.py` (scholarv2, release v26.09) · extracted 2026-10-07 19:42 UTC</sub>

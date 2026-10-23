@@ -4,15 +4,63 @@
 
 # momelotinib — `Momelotinib_Rich2026_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.676). Primary extraction retained.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+
+> CLm/F has no unit.
+
+<div class="pk-model-meta" hidden drug="momelotinib" model-id="Momelotinib_Rich2026_reference" status="needs_review" stale="false" population="patients with myelofibrosis and healthy or special-population participants" measured-compound="momelotinib" parameterization="apparent" topology="parent_metabolite"></div>
+
+## Citation
+Rich B, Srinivasan M, Ho YL, Visser SAG, Ferron-Brady G, Vlasakakis G. Population Pharmacokinetics and Exposure-Response Analyses of Momelotinib, Its Active Metabolite (M21), and Total Active Moiety in Myelofibrosis. Clinical pharmacology and therapeutics 119(3):629–640 (2026).
+  ·  DOI: [10.1002/cpt.70076](https://doi.org/10.1002/cpt.70076)
+
+## Population and dosing
+
+**Population:** patients with myelofibrosis and healthy or special-population participants · condition myelofibrosis; healthy participants and special populations including renal or hepatic impairment · age group adult · n = 661.
+
+**Dosing:** 200 mg, oral, multiple, every 24 h.
+
+## Model
+
+**Structure:** parent + metabolite; no model was built for this record.  
+**Parameterization:** CL/F, CLm/F, Q/F, V/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Parameters:** 10 extracted, plus 9 covariate effects.  
+**Availability:** No model was generated from this record.
+
+## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
+| label | parameter | value | unit | RSE% | IIV |
+|---|---|---|---|---|---|
+| CL/F, L/h | CL/F | 64.7 | L/h | 3.48 | 0.650 (None% RSE) |
+| Q/F, L/h | Q/F | 36.1 | L/h | 7.57 |  |
+| Total V/F, L | V/F | 383 | L | 5.87 | 0.476 (None% RSE) |
+| k tr, 1/h | kabs | 8.63 | 1/h | 6.88 |  |
+| OATP1B1/1B3 inhibitor on relative bioavailability | Frel | 1.64 |  | 4.07 |  |
+| CLm/F of M21, L/h | CL/F | 24.9 | L/h | 2.59 |  |
+| Vcm/F of M21, L | V1/F | 2.77 | L | 18.6 |  |
+| Vpm/F of M21, L | V2/F | 45.7 | L | 7.83 |  |
+| Q m/F of M21, L/h | Q/F | 8.84 | L/h | 9.90 |  |
+| CL/F of momelotinib on CLm/F | CLm/F | 0.481 |  | 7.66 | 0.371 (None% RSE) |
+| theta_cl_f_hepatic | theta_cl_f_hepatic | 0.914 |  | 6.93 |  |
+| theta_cl_f_hepatic | theta_cl_f_hepatic | 0.779 |  | 13.3 |  |
+| theta_cl_f_hepatic | theta_cl_f_hepatic | 0.477 |  | 21.8 |  |
+| theta_cl_f_cyp3a4 | theta_cl_f_cyp3a4 | 2.01 |  | 3.90 |  |
+| theta_cl_f_cyp3a4 | theta_cl_f_cyp3a4 | 1.39 |  | 12.6 |  |
+| theta_q900_crcl | theta_q900_crcl | 0.418 |  | 14.1 |  |
+| theta_q45_hepatic | theta_q45_hepatic | -0.359 |  | 38.0 |  |
+| theta_q45_hepatic | theta_q45_hepatic | -0.679 |  | 49.2 |  |
+| theta_q45_hepatic | theta_q45_hepatic | -1.84 |  | 10.2 |  |
+
+<details class="pk-evidence"><summary>Evidence &amp; review</summary>
+
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.676). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
-
-**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -24,51 +72,40 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-## Citation
-Rich B et al., Population Pharmacokinetics and Exposur…, Clinical pharmacology and t… (2026)
-  ·  DOI: [10.1002/cpt.70076](https://doi.org/10.1002/cpt.70076)
+### All parameter columns
 
-<div class="pk-model-meta" hidden drug="momelotinib" model-id="Momelotinib_Rich2026_reference" status="needs_review" stale="false" population="patients with myelofibrosis and healthy or special-population participants" measured-compound="momelotinib" parameterization="apparent" topology="parent_metabolite"></div>
-
-**Model structure:** parent + metabolite; no model was built for this record.  
-**Parameters:** 10 extracted, plus 9 covariate effects.
-
-**Parameterization:** CL/F, CLm/F, Q/F, V/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
-
-## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | RSE% | link | source | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F, L/h | `Q27` · CL/F | 64.7 | L/h | 1.7972222222222225e-05 | [l] / [h] | 3.48 | exact (1.0) | cpt70076-tbl-0001:row4:col1, cpt70076-tbl-0001:row4:col2, cpt70076-tbl-0001:row4:col4 | — | 0.650 (None% RSE) |
-| Q/F, L/h | `Q69` · Q/F | 36.1 | L/h | 1.0027777777777778e-05 | [l] / [h] | 7.57 | exact (1.0) | cpt70076-tbl-0001:row5:col1, cpt70076-tbl-0001:row5:col2, cpt70076-tbl-0001:row5:col4 | — | not captured |
-| Total V/F, L | `Q76` · V/F | 383 | L | 0.383 | [l] | 5.87 | llm_confirmed (0.6) | cpt70076-tbl-0001:row6:col1, cpt70076-tbl-0001:row6:col2, cpt70076-tbl-0001:row6:col4 | — | 0.476 (None% RSE) |
-| k tr, 1/h | `Q49` · kabs | 8.63 | 1/h | 0.0023972222222222225 | [1] / [h] | 6.88 | exact (1.0) | cpt70076-tbl-0001:row8:col1, cpt70076-tbl-0001:row8:col2, cpt70076-tbl-0001:row8:col4 | — | not captured |
-| OATP1B1/1B3 inhibitor on relative bioavailability | `Q87` · Frel | 1.64 | not captured | not captured | not captured | 4.07 | llm_confirmed (0.6) | cpt70076-tbl-0001:row16:col1, cpt70076-tbl-0001:row16:col2, cpt70076-tbl-0001:row16:col4 | — | not captured |
-| CLm/F of M21, L/h | `Q27` · CL/F | 24.9 | L/h | 6.916666666666666e-06 | [l] / [h] | 2.59 | exact (1.0) | cpt70076-tbl-0001:row28:col1, cpt70076-tbl-0001:row28:col2, cpt70076-tbl-0001:row28:col4 | — | not captured |
-| Vcm/F of M21, L | `Q290` · V1/F | 2.77 | L | 0.00277 | [l] | 18.6 | exact (1.0) | cpt70076-tbl-0001:row29:col1, cpt70076-tbl-0001:row29:col2, cpt70076-tbl-0001:row29:col4 | — | not captured |
-| Vpm/F of M21, L | `Q82` · V2/F | 45.7 | L | 0.045700000000000005 | [l] | 7.83 | exact (1.0) | cpt70076-tbl-0001:row30:col1, cpt70076-tbl-0001:row30:col2, cpt70076-tbl-0001:row30:col4 | — | not captured |
-| Q m/F of M21, L/h | `Q69` · Q/F | 8.84 | L/h | 2.455555555555556e-06 | [l] / [h] | 9.90 | exact (1.0) | cpt70076-tbl-0001:row31:col1, cpt70076-tbl-0001:row31:col2, cpt70076-tbl-0001:row31:col4 | — | not captured |
-| CL/F of momelotinib on CLm/F | `Q351` · CLm/F | 0.481 | not captured | not captured | not captured | 7.66 | llm_confirmed (0.6) | cpt70076-tbl-0001:row33:col1, cpt70076-tbl-0001:row33:col2, cpt70076-tbl-0001:row33:col4 | — | 0.371 (None% RSE) |
-| theta_cl_f_hepatic | `Q900` · theta_cl_f_hepatic | 0.914 | not captured | not captured | not captured | 6.93 | not captured (not captured) | cpt70076-tbl-0001:row11:col1, cpt70076-tbl-0001:row11:col2, cpt70076-tbl-0001:row11:col4 | — | not captured |
-| theta_cl_f_hepatic | `Q900` · theta_cl_f_hepatic | 0.779 | not captured | not captured | not captured | 13.3 | not captured (not captured) | cpt70076-tbl-0001:row12:col1, cpt70076-tbl-0001:row12:col2, cpt70076-tbl-0001:row12:col4 | — | not captured |
-| theta_cl_f_hepatic | `Q900` · theta_cl_f_hepatic | 0.477 | not captured | not captured | not captured | 21.8 | not captured (not captured) | cpt70076-tbl-0001:row13:col1, cpt70076-tbl-0001:row13:col2, cpt70076-tbl-0001:row13:col4 | — | not captured |
-| theta_cl_f_cyp3a4 | `Q900` · theta_cl_f_cyp3a4 | 2.01 | not captured | not captured | not captured | 3.90 | not captured (not captured) | cpt70076-tbl-0001:row14:col1, cpt70076-tbl-0001:row14:col2, cpt70076-tbl-0001:row14:col4 | — | not captured |
-| theta_cl_f_cyp3a4 | `Q900` · theta_cl_f_cyp3a4 | 1.39 | not captured | not captured | not captured | 12.6 | not captured (not captured) | cpt70076-tbl-0001:row15:col1, cpt70076-tbl-0001:row15:col2, cpt70076-tbl-0001:row15:col4 | — | not captured |
-| theta_q900_crcl | `Q900` · theta_q900_crcl | 0.418 | not captured | not captured | not captured | 14.1 | not captured (not captured) | cpt70076-tbl-0001:row34:col1, cpt70076-tbl-0001:row34:col2, cpt70076-tbl-0001:row34:col4 | — | not captured |
-| theta_q45_hepatic | `Q900` · theta_q45_hepatic | -0.359 | not captured | not captured | not captured | 38.0 | not captured (not captured) | cpt70076-tbl-0001:row35:col1, cpt70076-tbl-0001:row35:col2, cpt70076-tbl-0001:row35:col4 | — | not captured |
-| theta_q45_hepatic | `Q900` · theta_q45_hepatic | -0.679 | not captured | not captured | not captured | 49.2 | not captured (not captured) | cpt70076-tbl-0001:row36:col1, cpt70076-tbl-0001:row36:col2, cpt70076-tbl-0001:row36:col4 | — | not captured |
-| theta_q45_hepatic | `Q900` · theta_q45_hepatic | -1.84 | not captured | not captured | not captured | 10.2 | not captured (not captured) | cpt70076-tbl-0001:row37:col1, cpt70076-tbl-0001:row37:col2, cpt70076-tbl-0001:row37:col4 | — | not captured |
+| CL/F, L/h | `Q27` · CL/F | 64.7 | L/h | 1.797e-05 | m3/s | l/h | 3.48 | exact (1) | cpt70076-tbl-0001:row4:col1, cpt70076-tbl-0001:row4:col2, cpt70076-tbl-0001:row4:col4 | 0.650 (None% RSE) |
+| Q/F, L/h | `Q69` · Q/F | 36.1 | L/h | 1.003e-05 | m3/s | l/h | 7.57 | exact (1) | cpt70076-tbl-0001:row5:col1, cpt70076-tbl-0001:row5:col2, cpt70076-tbl-0001:row5:col4 |  |
+| Total V/F, L | `Q76` · V/F | 383 | L | 0.383 | m3 | l | 5.87 | llm_confirmed (0.6) | cpt70076-tbl-0001:row6:col1, cpt70076-tbl-0001:row6:col2, cpt70076-tbl-0001:row6:col4 | 0.476 (None% RSE) |
+| k tr, 1/h | `Q49` · kabs | 8.63 | 1/h | 0.002397 | 1/s | 1/h | 6.88 | exact (1) | cpt70076-tbl-0001:row8:col1, cpt70076-tbl-0001:row8:col2, cpt70076-tbl-0001:row8:col4 |  |
+| OATP1B1/1B3 inhibitor on relative bioavailability | `Q87` · Frel | 1.64 |  |  |  |  | 4.07 | llm_confirmed (0.6) | cpt70076-tbl-0001:row16:col1, cpt70076-tbl-0001:row16:col2, cpt70076-tbl-0001:row16:col4 |  |
+| CLm/F of M21, L/h | `Q27` · CL/F | 24.9 | L/h | 6.917e-06 | m3/s | l/h | 2.59 | exact (1) | cpt70076-tbl-0001:row28:col1, cpt70076-tbl-0001:row28:col2, cpt70076-tbl-0001:row28:col4 |  |
+| Vcm/F of M21, L | `Q290` · V1/F | 2.77 | L | 0.00277 | m3 | l | 18.6 | exact (1) | cpt70076-tbl-0001:row29:col1, cpt70076-tbl-0001:row29:col2, cpt70076-tbl-0001:row29:col4 |  |
+| Vpm/F of M21, L | `Q82` · V2/F | 45.7 | L | 0.0457 | m3 | l | 7.83 | exact (1) | cpt70076-tbl-0001:row30:col1, cpt70076-tbl-0001:row30:col2, cpt70076-tbl-0001:row30:col4 |  |
+| Q m/F of M21, L/h | `Q69` · Q/F | 8.84 | L/h | 2.456e-06 | m3/s | l/h | 9.90 | exact (1) | cpt70076-tbl-0001:row31:col1, cpt70076-tbl-0001:row31:col2, cpt70076-tbl-0001:row31:col4 |  |
+| CL/F of momelotinib on CLm/F | `Q351` · CLm/F | 0.481 |  |  |  |  | 7.66 | llm_confirmed (0.6) | cpt70076-tbl-0001:row33:col1, cpt70076-tbl-0001:row33:col2, cpt70076-tbl-0001:row33:col4 | 0.371 (None% RSE) |
+| theta_cl_f_hepatic | `Q900` · theta_cl_f_hepatic | 0.914 |  |  |  |  | 6.93 |  | cpt70076-tbl-0001:row11:col1, cpt70076-tbl-0001:row11:col2, cpt70076-tbl-0001:row11:col4 |  |
+| theta_cl_f_hepatic | `Q900` · theta_cl_f_hepatic | 0.779 |  |  |  |  | 13.3 |  | cpt70076-tbl-0001:row12:col1, cpt70076-tbl-0001:row12:col2, cpt70076-tbl-0001:row12:col4 |  |
+| theta_cl_f_hepatic | `Q900` · theta_cl_f_hepatic | 0.477 |  |  |  |  | 21.8 |  | cpt70076-tbl-0001:row13:col1, cpt70076-tbl-0001:row13:col2, cpt70076-tbl-0001:row13:col4 |  |
+| theta_cl_f_cyp3a4 | `Q900` · theta_cl_f_cyp3a4 | 2.01 |  |  |  |  | 3.90 |  | cpt70076-tbl-0001:row14:col1, cpt70076-tbl-0001:row14:col2, cpt70076-tbl-0001:row14:col4 |  |
+| theta_cl_f_cyp3a4 | `Q900` · theta_cl_f_cyp3a4 | 1.39 |  |  |  |  | 12.6 |  | cpt70076-tbl-0001:row15:col1, cpt70076-tbl-0001:row15:col2, cpt70076-tbl-0001:row15:col4 |  |
+| theta_q900_crcl | `Q900` · theta_q900_crcl | 0.418 |  |  |  |  | 14.1 |  | cpt70076-tbl-0001:row34:col1, cpt70076-tbl-0001:row34:col2, cpt70076-tbl-0001:row34:col4 |  |
+| theta_q45_hepatic | `Q900` · theta_q45_hepatic | -0.359 |  |  |  |  | 38.0 |  | cpt70076-tbl-0001:row35:col1, cpt70076-tbl-0001:row35:col2, cpt70076-tbl-0001:row35:col4 |  |
+| theta_q45_hepatic | `Q900` · theta_q45_hepatic | -0.679 |  |  |  |  | 49.2 |  | cpt70076-tbl-0001:row36:col1, cpt70076-tbl-0001:row36:col2, cpt70076-tbl-0001:row36:col4 |  |
+| theta_q45_hepatic | `Q900` · theta_q45_hepatic | -1.84 |  |  |  |  | 10.2 |  | cpt70076-tbl-0001:row37:col1, cpt70076-tbl-0001:row37:col2, cpt70076-tbl-0001:row37:col4 |  |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ### Unresolved rows _(no Q-code or no value — not parameters)_
-| label (paper) | Q-code | value | link |
-|---|---|---|---|
-| Median a | Q900 | not captured | llm |
+
+| label (paper) | Q-code | link |
+|---|---|---|
+| Median a | Q900 | llm |
 
 ## Departures & gaps
 
@@ -190,18 +227,18 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `qwen3.8-27b` | `parameters[cl/f of momelotinib on clm/f]` | 0.481 | not captured | only_one_extracted |
-| `qwen3.8-27b` | `parameters[median a]` | not captured | not captured | only_one_extracted |
-| `qwen3.8-27b` | `parameters[mild_hepatic_dysfunction_nci_on_cl_f]` | not captured | 0.914 | only_one_extracted |
-| `qwen3.8-27b` | `parameters[moderate_hepatic_dysfunction_nci_on_cl_f]` | not captured | 0.779 | only_one_extracted |
-| `qwen3.8-27b` | `parameters[strong_cyp3a4_inducer_on_cl_f]` | not captured | 2.01 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[cl/f of momelotinib on clm/f]` | 0.481 |  | only_one_extracted |
+| `qwen3.8-27b` | `parameters[median a]` |  |  | only_one_extracted |
+| `qwen3.8-27b` | `parameters[mild_hepatic_dysfunction_nci_on_cl_f]` |  | 0.914 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[moderate_hepatic_dysfunction_nci_on_cl_f]` |  | 0.779 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[strong_cyp3a4_inducer_on_cl_f]` |  | 2.01 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[theta_cl_f_cyp3a4].rse_percent` | 3.90 | 12.6 | mismatch |
 | `qwen3.8-27b` | `parameters[theta_cl_f_cyp3a4].value` | 2.01 | 1.39 | mismatch |
 | `qwen3.8-27b` | `parameters[theta_cl_f_hepatic].rse_percent` | 6.93 | 21.8 | mismatch |
 | `qwen3.8-27b` | `parameters[theta_cl_f_hepatic].value` | 0.914 | 0.477 | mismatch |
-| `qwen3.8-27b` | `parameters[theta_q351_crcl]` | not captured | 0.418 | only_one_extracted |
-| `qwen3.8-27b` | `parameters[theta_q45_hepatic]` | -0.359 | not captured | only_one_extracted |
-| `qwen3.8-27b` | `parameters[theta_q900_crcl]` | 0.418 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[theta_q351_crcl]` |  | 0.418 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[theta_q45_hepatic]` | -0.359 |  | only_one_extracted |
+| `qwen3.8-27b` | `parameters[theta_q900_crcl]` | 0.418 |  | only_one_extracted |
 
 </details>
 
@@ -213,38 +250,36 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained | ratio | tol | source |
-|---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 10 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['cpt70076-tbl-0001:row4:col1', 'cpt70076-tbl-0001:row4:col2', 'cpt70076-tbl-0001:row4:col4'] |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['cpt70076-tbl-0001:row28:col1', 'cpt70076-tbl-0001:row28:col2', 'cpt70076-tbl-0001:row28:col4'] |
-| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['cpt70076-tbl-0001:row29:col1', 'cpt70076-tbl-0001:row29:col2', 'cpt70076-tbl-0001:row29:col4'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['cpt70076-tbl-0001:row8:col1', 'cpt70076-tbl-0001:row8:col2', 'cpt70076-tbl-0001:row8:col4'] |
-| C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['cpt70076-tbl-0001:row5:col1', 'cpt70076-tbl-0001:row5:col2', 'cpt70076-tbl-0001:row5:col4'] |
-| C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['cpt70076-tbl-0001:row31:col1', 'cpt70076-tbl-0001:row31:col2', 'cpt70076-tbl-0001:row31:col4'] |
-| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['cpt70076-tbl-0001:row6:col1', 'cpt70076-tbl-0001:row6:col2', 'cpt70076-tbl-0001:row6:col4'] |
-| C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['cpt70076-tbl-0001:row30:col1', 'cpt70076-tbl-0001:row30:col2', 'cpt70076-tbl-0001:row30:col4'] |
-| C5_unit_missing_Q351 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['cpt70076-tbl-0001:row33:col1', 'cpt70076-tbl-0001:row33:col2', 'cpt70076-tbl-0001:row33:col4'] |
-| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 64.7 L/h | not captured | not captured | ['cpt70076-tbl-0001:row4:col1', 'cpt70076-tbl-0001:row4:col2', 'cpt70076-tbl-0001:row4:col4'] |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 24.9 L/h | not captured | not captured | ['cpt70076-tbl-0001:row28:col1', 'cpt70076-tbl-0001:row28:col2', 'cpt70076-tbl-0001:row28:col4'] |
-| C9_phys_window_Q290 | pass | volume within physiological range | 2.77 L | not captured | not captured | ['cpt70076-tbl-0001:row29:col1', 'cpt70076-tbl-0001:row29:col2', 'cpt70076-tbl-0001:row29:col4'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 383 L | not captured | not captured | ['cpt70076-tbl-0001:row6:col1', 'cpt70076-tbl-0001:row6:col2', 'cpt70076-tbl-0001:row6:col4'] |
-| C9_phys_window_Q82 | pass | volume within physiological range | 45.7 L | not captured | not captured | ['cpt70076-tbl-0001:row30:col1', 'cpt70076-tbl-0001:row30:col2', 'cpt70076-tbl-0001:row30:col4'] |
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 10 |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
+| C2_reference | pass |  |  |  |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['cpt70076-tbl-0001:row4:col1', 'cpt70076-tbl-0001:row4:col2', 'cpt70076-tbl-0001:row4:col4'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['cpt70076-tbl-0001:row28:col1', 'cpt70076-tbl-0001:row28:col2', 'cpt70076-tbl-0001:row28:col4'] |
+| C5_dimension_Q290 | pass | [length] ** 3 |  | ['cpt70076-tbl-0001:row29:col1', 'cpt70076-tbl-0001:row29:col2', 'cpt70076-tbl-0001:row29:col4'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['cpt70076-tbl-0001:row8:col1', 'cpt70076-tbl-0001:row8:col2', 'cpt70076-tbl-0001:row8:col4'] |
+| C5_dimension_Q69 | pass | [length] ** 3 / [time] |  | ['cpt70076-tbl-0001:row5:col1', 'cpt70076-tbl-0001:row5:col2', 'cpt70076-tbl-0001:row5:col4'] |
+| C5_dimension_Q69 | pass | [length] ** 3 / [time] |  | ['cpt70076-tbl-0001:row31:col1', 'cpt70076-tbl-0001:row31:col2', 'cpt70076-tbl-0001:row31:col4'] |
+| C5_dimension_Q76 | pass | [length] ** 3 |  | ['cpt70076-tbl-0001:row6:col1', 'cpt70076-tbl-0001:row6:col2', 'cpt70076-tbl-0001:row6:col4'] |
+| C5_dimension_Q82 | pass | [length] ** 3 |  | ['cpt70076-tbl-0001:row30:col1', 'cpt70076-tbl-0001:row30:col2', 'cpt70076-tbl-0001:row30:col4'] |
+| C5_unit_missing_Q351 | fail | [length] ** 3 / [time] |  | ['cpt70076-tbl-0001:row33:col1', 'cpt70076-tbl-0001:row33:col2', 'cpt70076-tbl-0001:row33:col4'] |
+| C7_apparent_coherence | pass |  |  |  |
+| C8_topology | pass |  |  |  |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 64.7 L/h | ['cpt70076-tbl-0001:row4:col1', 'cpt70076-tbl-0001:row4:col2', 'cpt70076-tbl-0001:row4:col4'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 24.9 L/h | ['cpt70076-tbl-0001:row28:col1', 'cpt70076-tbl-0001:row28:col2', 'cpt70076-tbl-0001:row28:col4'] |
+| C9_phys_window_Q290 | pass | volume within physiological range | 2.77 L | ['cpt70076-tbl-0001:row29:col1', 'cpt70076-tbl-0001:row29:col2', 'cpt70076-tbl-0001:row29:col4'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 383 L | ['cpt70076-tbl-0001:row6:col1', 'cpt70076-tbl-0001:row6:col2', 'cpt70076-tbl-0001:row6:col4'] |
+| C9_phys_window_Q82 | pass | volume within physiological range | 45.7 L | ['cpt70076-tbl-0001:row30:col1', 'cpt70076-tbl-0001:row30:col2', 'cpt70076-tbl-0001:row30:col4'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
-## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_momelotinib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Rich_2026` / `Rich_2026::reference`)
-
+</details>
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
@@ -269,4 +304,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 03:02 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmomelotinib%5D%20Momelotinib_Rich2026_reference&body=Drug%3A%20momelotinib%0ARecord%3A%20Momelotinib_Rich2026_reference%0APaper%3A%20Rich_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_momelotinib/Momelotinib_Rich2026_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Generated by `docs.py` (scholarv2, release v26.09) · extracted 2026-10-07 03:02 UTC</sub>

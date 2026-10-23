@@ -4,15 +4,54 @@
 
 # lanadelumab — `Lanadelumab_Wang2020_final`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+
+> The reviewer's verdict (Needs review, 2026-09-28 14:38 UTC) predates the latest extraction (2026-10-06 01:16 UTC); the status shown comes from the current checks. The lanadelumab record was held back because the absorption rate constant ka was not reported in the source and a default value was invented for it, alongside defaults for Tlag and an F=1 apparent parameterization.
+
+<div class="pk-model-meta" hidden drug="lanadelumab" model-id="Lanadelumab_Wang2020_final" status="needs_review" stale="true" population="healthy subjects and patients with hereditary angioedema" measured-compound="lanadelumab" parameterization="apparent" topology="1C"></div>
+
+## Citation
+Wang Y, Marier JF, Kassir N, Chang C, Martin P. Pharmacokinetics, Pharmacodynamics, and Exposure-Response of Lanadelumab for Hereditary Angioedema. Clinical and translational science 13(6):1208–1216 (2020).
+  ·  DOI: [10.1111/cts.12806](https://doi.org/10.1111/cts.12806)
+
+## Population and dosing
+
+**Population:** healthy subjects and patients with hereditary angioedema · condition hereditary angioedema · age group mixed.
+
+**Dosing:** 150, 300, 400 mg, sc, multiple, every 168 h.
+
+## Model
+
+**Structure:** 1-compartment; no model was built for this record.  
+**Parameterization:** CL/F, V/F, Vnorm/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Parameters:** 10 extracted.  
+**Availability:** No model was generated from this record.
+
+## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
+| label | parameter | value | unit | RSE% |
+|---|---|---|---|---|
+| CL/F (L/hour) | CL/F | 0.0337 | L/hour | 24.3 |
+| V/F (L) | V/F | 16.6 | L | 20.8 |
+| AUCtau,ss (µg × day/mL) | AUCSS | 408 | µg × day/mL | 24.3 |
+| Cave,ss (µg/mL) | Cavg | 29.2 | µg/mL | 24.3 |
+| Cmax,ss (µg/mL) | Cmax | 35.5 | µg/mL | 33.2 |
+| Cmin,ss (µg/mL) | Cmin | 24.6 | µg/mL | 33.3 |
+| Tmax (hour) | tmax | 98.6 | hour | 21.1 |
+| t 1/2 (hour) | t1/2z | 361 | hour | 13.5 |
+| Ka (1/h) | kabs | 0.0179 | 1/h |  |
+| V/F/BW(L) | Vnorm/F | 0.182 | L | 20.2 |
+
+<details class="pk-evidence"><summary>Evidence &amp; review</summary>
+
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
-
-**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -22,38 +61,24 @@ The reported ka (0.0179 1/h) is flagged as invented: the source did not report a
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:38:27.276998+00:00) predates the upstream re-run (2026-10-06 01:16:14.138490+00:00). Current validate status: `needs_review`.
+### All parameter columns
 
-## Citation
-Wang Y et al., Pharmacokinetics, Pharmacodynamics, and…, Clinical and translational… (2020)
-  ·  DOI: [10.1111/cts.12806](https://doi.org/10.1111/cts.12806)
-
-<div class="pk-model-meta" hidden drug="lanadelumab" model-id="Lanadelumab_Wang2020_final" status="needs_review" stale="true" population="healthy subjects and patients with hereditary angioedema" measured-compound="lanadelumab" parameterization="apparent" topology="1C"></div>
-
-**Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 10 extracted.
-
-**Parameterization:** CL/F, V/F, Vnorm/F — apparent, F unknown (apparent — bioavailability not identifiable).
-
-## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| CL/F (L/hour) | `Q27` · CL/F | 0.0337 | L/hour | 9.361111111111111e-09 | [l] / [h] | 24.3 | exact (1.0) | cts12806-tbl-0001:row0:col4, cts12806-tbl-0001:row0:col8, cts12806-tbl-0001:row0:col12 | — | not captured |
-| V/F (L) | `Q76` · V/F | 16.6 | L | 0.0166 | [l] | 20.8 | exact (1.0) | cts12806-tbl-0001:row1:col4, cts12806-tbl-0001:row1:col8, cts12806-tbl-0001:row1:col12, Wang_2020_table_S13:row5:col1, Wang_2020_table_S13:row5:col2, Wang_2020_table_S13:row5:col4, Wang_2020_table_S13:row5:col5, Wang_2020_table_S13:row5:col6 | — | not captured |
-| AUCtau,ss (µg × day/mL) | `Q18` · AUCSS | 408 | µg × day/mL | not captured | [[d] · [µg]] / [ml] | 24.3 | llm (0.6) | cts12806-tbl-0001:row2:col4, cts12806-tbl-0001:row2:col8, cts12806-tbl-0001:row2:col12 | — | not captured |
-| Cave,ss (µg/mL) | `Q71` · Cavg | 29.2 | µg/mL | not captured | [µg] / [ml] | 24.3 | llm_confirmed (0.6) | cts12806-tbl-0001:row3:col4, cts12806-tbl-0001:row3:col8, cts12806-tbl-0001:row3:col12 | — | not captured |
-| Cmax,ss (µg/mL) | `Q32` · Cmax | 35.5 | µg/mL | not captured | [µg] / [ml] | 33.2 | llm_confirmed (0.6) | cts12806-tbl-0001:row4:col4, cts12806-tbl-0001:row4:col8, cts12806-tbl-0001:row4:col12, Wang_2020_table_S14:row8:col2, Wang_2020_table_S14:row8:col3, Wang_2020_table_S14:row8:col4, Wang_2020_table_S14:row8:col5, Wang_2020_table_S14:row8:col6, Wang_2020_table_S14:row8:col7, Wang_2020_table_S14:row8:col8, Wang_2020_table_S14:row8:col9, Wang_2020_table_S14:row8:col10, Wang_2020_table_S14:row8:col11 | — | not captured |
-| Cmin,ss (µg/mL) | `Q36` · Cmin | 24.6 | µg/mL | not captured | [µg] / [ml] | 33.3 | llm_confirmed (0.6) | cts12806-tbl-0001:row5:col4, cts12806-tbl-0001:row5:col8, cts12806-tbl-0001:row5:col12, Wang_2020_table_S14:row9:col2, Wang_2020_table_S14:row9:col3, Wang_2020_table_S14:row9:col4, Wang_2020_table_S14:row9:col5, Wang_2020_table_S14:row9:col6, Wang_2020_table_S14:row9:col7, Wang_2020_table_S14:row9:col8, Wang_2020_table_S14:row9:col9, Wang_2020_table_S14:row9:col10, Wang_2020_table_S14:row9:col11 | — | not captured |
-| Tmax (hour) | `Q56` · tmax | 98.6 | hour | 354960.0 | [h] | 21.1 | exact (1.0) | cts12806-tbl-0001:row6:col4, cts12806-tbl-0001:row6:col8, cts12806-tbl-0001:row6:col12 | — | not captured |
-| t 1/2 (hour) | `Q57` · t1/2z | 361 | hour | 1299600.0 | [h] | 13.5 | space_fold (0.95) | cts12806-tbl-0001:row7:col1, cts12806-tbl-0001:row7:col4, cts12806-tbl-0001:row7:col8, cts12806-tbl-0001:row7:col12 | — | not captured |
-| Ka (1/h) | `Q49` · kabs | 0.0179 | 1/h | 4.9722222222222224e-06 | 1/h | not captured | exact (1.0) | Wang_2020_table_S13:row1:col1, Wang_2020_table_S13:row1:col2, Wang_2020_table_S13:row1:col4, Wang_2020_table_S13:row1:col5, Wang_2020_table_S13:row1:col6 | — | not captured |
-| V/F/BW(L) | `Q353` · Vnorm/F | 0.182 | L | 0.000182 | [l] | 20.2 | llm (0.6) | Wang_2020_table_S14:row3:col2, Wang_2020_table_S14:row3:col3, Wang_2020_table_S14:row3:col4, Wang_2020_table_S14:row3:col5, Wang_2020_table_S14:row3:col6, Wang_2020_table_S14:row3:col7, Wang_2020_table_S14:row3:col8, Wang_2020_table_S14:row3:col9, Wang_2020_table_S14:row3:col10, Wang_2020_table_S14:row3:col11 | — | not captured |
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | RSE% | link | source |
+|---|---|---|---|---|---|---|---|---|---|
+| CL/F (L/hour) | `Q27` · CL/F | 0.0337 | L/hour | 9.361e-09 | m3/s | l/h | 24.3 | exact (1) | cts12806-tbl-0001:row0:col4, cts12806-tbl-0001:row0:col8, cts12806-tbl-0001:row0:col12 |
+| V/F (L) | `Q76` · V/F | 16.6 | L | 0.0166 | m3 | l | 20.8 | exact (1) | cts12806-tbl-0001:row1:col4, cts12806-tbl-0001:row1:col8, cts12806-tbl-0001:row1:col12, Wang_2020_table_S13:row5:col1, Wang_2020_table_S13:row5:col2, Wang_2020_table_S13:row5:col4, Wang_2020_table_S13:row5:col5, Wang_2020_table_S13:row5:col6 |
+| AUCtau,ss (µg × day/mL) | `Q18` · AUCSS | 408 | µg × day/mL |  |  | (d·µg)/ml | 24.3 | llm (0.6) | cts12806-tbl-0001:row2:col4, cts12806-tbl-0001:row2:col8, cts12806-tbl-0001:row2:col12 |
+| Cave,ss (µg/mL) | `Q71` · Cavg | 29.2 | µg/mL |  |  | µg/ml | 24.3 | llm_confirmed (0.6) | cts12806-tbl-0001:row3:col4, cts12806-tbl-0001:row3:col8, cts12806-tbl-0001:row3:col12 |
+| Cmax,ss (µg/mL) | `Q32` · Cmax | 35.5 | µg/mL |  |  | µg/ml | 33.2 | llm_confirmed (0.6) | cts12806-tbl-0001:row4:col4, cts12806-tbl-0001:row4:col8, cts12806-tbl-0001:row4:col12, Wang_2020_table_S14:row8:col2, Wang_2020_table_S14:row8:col3, Wang_2020_table_S14:row8:col4, Wang_2020_table_S14:row8:col5, Wang_2020_table_S14:row8:col6, Wang_2020_table_S14:row8:col7, Wang_2020_table_S14:row8:col8, Wang_2020_table_S14:row8:col9, Wang_2020_table_S14:row8:col10, Wang_2020_table_S14:row8:col11 |
+| Cmin,ss (µg/mL) | `Q36` · Cmin | 24.6 | µg/mL |  |  | µg/ml | 33.3 | llm_confirmed (0.6) | cts12806-tbl-0001:row5:col4, cts12806-tbl-0001:row5:col8, cts12806-tbl-0001:row5:col12, Wang_2020_table_S14:row9:col2, Wang_2020_table_S14:row9:col3, Wang_2020_table_S14:row9:col4, Wang_2020_table_S14:row9:col5, Wang_2020_table_S14:row9:col6, Wang_2020_table_S14:row9:col7, Wang_2020_table_S14:row9:col8, Wang_2020_table_S14:row9:col9, Wang_2020_table_S14:row9:col10, Wang_2020_table_S14:row9:col11 |
+| Tmax (hour) | `Q56` · tmax | 98.6 | hour | 3.55e+05 | s | h | 21.1 | exact (1) | cts12806-tbl-0001:row6:col4, cts12806-tbl-0001:row6:col8, cts12806-tbl-0001:row6:col12 |
+| t 1/2 (hour) | `Q57` · t1/2z | 361 | hour | 1.3e+06 | s | h | 13.5 | space_fold (0.95) | cts12806-tbl-0001:row7:col1, cts12806-tbl-0001:row7:col4, cts12806-tbl-0001:row7:col8, cts12806-tbl-0001:row7:col12 |
+| Ka (1/h) | `Q49` · kabs | 0.0179 | 1/h | 4.972e-06 | 1/s | 1/h |  | exact (1) | Wang_2020_table_S13:row1:col1, Wang_2020_table_S13:row1:col2, Wang_2020_table_S13:row1:col4, Wang_2020_table_S13:row1:col5, Wang_2020_table_S13:row1:col6 |
+| V/F/BW(L) | `Q353` · Vnorm/F | 0.182 | L | 0.000182 | m3 | l | 20.2 | llm (0.6) | Wang_2020_table_S14:row3:col2, Wang_2020_table_S14:row3:col3, Wang_2020_table_S14:row3:col4, Wang_2020_table_S14:row3:col5, Wang_2020_table_S14:row3:col6, Wang_2020_table_S14:row3:col7, Wang_2020_table_S14:row3:col8, Wang_2020_table_S14:row3:col9, Wang_2020_table_S14:row3:col10, Wang_2020_table_S14:row3:col11 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>covariates</code></td><td>Parameter-specific covariate effects.</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ## Departures & gaps
@@ -143,50 +168,45 @@ Wang Y et al., Pharmacokinetics, Pharmacodynamics, and…, Clinical and translat
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained | ratio | tol | source |
-|---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 10 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['cts12806-tbl-0001:row0:col4', 'cts12806-tbl-0001:row0:col8', 'cts12806-tbl-0001:row0:col12'] |
-| C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['cts12806-tbl-0001:row4:col4', 'cts12806-tbl-0001:row4:col8', 'cts12806-tbl-0001:row4:col12', 'Wang_2020_table_S14:row8:col2', 'Wang_2020_table_S14:row8:col3', 'Wang_2020_table_S14:row8:col4', 'Wang_2020_table_S14:row8:col5', 'Wang_2020_table_S14:row8:col6', 'Wang_2020_table_S14:row8:col7', 'Wang_2020_table_S14:row8:col8', 'Wang_2020_table_S14:row8:col9', 'Wang_2020_table_S14:row8:col10', 'Wang_2020_table_S14:row8:col11'] |
-| C5_dimension_Q353 | pass | [length] ** 3 | not captured | not captured | not captured | ['Wang_2020_table_S14:row3:col2', 'Wang_2020_table_S14:row3:col3', 'Wang_2020_table_S14:row3:col4', 'Wang_2020_table_S14:row3:col5', 'Wang_2020_table_S14:row3:col6', 'Wang_2020_table_S14:row3:col7', 'Wang_2020_table_S14:row3:col8', 'Wang_2020_table_S14:row3:col9', 'Wang_2020_table_S14:row3:col10', 'Wang_2020_table_S14:row3:col11'] |
-| C5_dimension_Q36 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['cts12806-tbl-0001:row5:col4', 'cts12806-tbl-0001:row5:col8', 'cts12806-tbl-0001:row5:col12', 'Wang_2020_table_S14:row9:col2', 'Wang_2020_table_S14:row9:col3', 'Wang_2020_table_S14:row9:col4', 'Wang_2020_table_S14:row9:col5', 'Wang_2020_table_S14:row9:col6', 'Wang_2020_table_S14:row9:col7', 'Wang_2020_table_S14:row9:col8', 'Wang_2020_table_S14:row9:col9', 'Wang_2020_table_S14:row9:col10', 'Wang_2020_table_S14:row9:col11'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Wang_2020_table_S13:row1:col1', 'Wang_2020_table_S13:row1:col2', 'Wang_2020_table_S13:row1:col4', 'Wang_2020_table_S13:row1:col5', 'Wang_2020_table_S13:row1:col6'] |
-| C5_dimension_Q56 | pass | [time] | not captured | not captured | not captured | ['cts12806-tbl-0001:row6:col4', 'cts12806-tbl-0001:row6:col8', 'cts12806-tbl-0001:row6:col12'] |
-| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['cts12806-tbl-0001:row7:col1', 'cts12806-tbl-0001:row7:col4', 'cts12806-tbl-0001:row7:col8', 'cts12806-tbl-0001:row7:col12'] |
-| C5_dimension_Q71 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['cts12806-tbl-0001:row3:col4', 'cts12806-tbl-0001:row3:col8', 'cts12806-tbl-0001:row3:col12'] |
-| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['cts12806-tbl-0001:row1:col4', 'cts12806-tbl-0001:row1:col8', 'cts12806-tbl-0001:row1:col12', 'Wang_2020_table_S13:row5:col1', 'Wang_2020_table_S13:row5:col2', 'Wang_2020_table_S13:row5:col4', 'Wang_2020_table_S13:row5:col5', 'Wang_2020_table_S13:row5:col6'] |
-| C5_unit_missing_Q18 | fail | [mass] * [time] / [length] ** 3 | µg × day/mL | not captured | not captured | ['cts12806-tbl-0001:row2:col4', 'cts12806-tbl-0001:row2:col8', 'cts12806-tbl-0001:row2:col12'] |
-| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 0.0337 L/h | not captured | not captured | ['cts12806-tbl-0001:row0:col4', 'cts12806-tbl-0001:row0:col8', 'cts12806-tbl-0001:row0:col12'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 16.6 L | not captured | not captured | ['cts12806-tbl-0001:row1:col4', 'cts12806-tbl-0001:row1:col8', 'cts12806-tbl-0001:row1:col12', 'Wang_2020_table_S13:row5:col1', 'Wang_2020_table_S13:row5:col2', 'Wang_2020_table_S13:row5:col4', 'Wang_2020_table_S13:row5:col5', 'Wang_2020_table_S13:row5:col6'] |
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 10 |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['cts12806-tbl-0001:row0:col4', 'cts12806-tbl-0001:row0:col8', 'cts12806-tbl-0001:row0:col12'] |
+| C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['cts12806-tbl-0001:row4:col4', 'cts12806-tbl-0001:row4:col8', 'cts12806-tbl-0001:row4:col12', 'Wang_2020_table_S14:row8:col2', 'Wang_2020_table_S14:row8:col3', 'Wang_2020_table_S14:row8:col4', 'Wang_2020_table_S14:row8:col5', 'Wang_2020_table_S14:row8:col6', 'Wang_2020_table_S14:row8:col7', 'Wang_2020_table_S14:row8:col8', 'Wang_2020_table_S14:row8:col9', 'Wang_2020_table_S14:row8:col10', 'Wang_2020_table_S14:row8:col11'] |
+| C5_dimension_Q353 | pass | [length] ** 3 |  | ['Wang_2020_table_S14:row3:col2', 'Wang_2020_table_S14:row3:col3', 'Wang_2020_table_S14:row3:col4', 'Wang_2020_table_S14:row3:col5', 'Wang_2020_table_S14:row3:col6', 'Wang_2020_table_S14:row3:col7', 'Wang_2020_table_S14:row3:col8', 'Wang_2020_table_S14:row3:col9', 'Wang_2020_table_S14:row3:col10', 'Wang_2020_table_S14:row3:col11'] |
+| C5_dimension_Q36 | pass | [mass] / [length] ** 3 |  | ['cts12806-tbl-0001:row5:col4', 'cts12806-tbl-0001:row5:col8', 'cts12806-tbl-0001:row5:col12', 'Wang_2020_table_S14:row9:col2', 'Wang_2020_table_S14:row9:col3', 'Wang_2020_table_S14:row9:col4', 'Wang_2020_table_S14:row9:col5', 'Wang_2020_table_S14:row9:col6', 'Wang_2020_table_S14:row9:col7', 'Wang_2020_table_S14:row9:col8', 'Wang_2020_table_S14:row9:col9', 'Wang_2020_table_S14:row9:col10', 'Wang_2020_table_S14:row9:col11'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['Wang_2020_table_S13:row1:col1', 'Wang_2020_table_S13:row1:col2', 'Wang_2020_table_S13:row1:col4', 'Wang_2020_table_S13:row1:col5', 'Wang_2020_table_S13:row1:col6'] |
+| C5_dimension_Q56 | pass | [time] |  | ['cts12806-tbl-0001:row6:col4', 'cts12806-tbl-0001:row6:col8', 'cts12806-tbl-0001:row6:col12'] |
+| C5_dimension_Q57 | pass | [time] |  | ['cts12806-tbl-0001:row7:col1', 'cts12806-tbl-0001:row7:col4', 'cts12806-tbl-0001:row7:col8', 'cts12806-tbl-0001:row7:col12'] |
+| C5_dimension_Q71 | pass | [mass] / [length] ** 3 |  | ['cts12806-tbl-0001:row3:col4', 'cts12806-tbl-0001:row3:col8', 'cts12806-tbl-0001:row3:col12'] |
+| C5_dimension_Q76 | pass | [length] ** 3 |  | ['cts12806-tbl-0001:row1:col4', 'cts12806-tbl-0001:row1:col8', 'cts12806-tbl-0001:row1:col12', 'Wang_2020_table_S13:row5:col1', 'Wang_2020_table_S13:row5:col2', 'Wang_2020_table_S13:row5:col4', 'Wang_2020_table_S13:row5:col5', 'Wang_2020_table_S13:row5:col6'] |
+| C5_unit_missing_Q18 | fail | [mass] * [time] / [length] ** 3 | µg × day/mL | ['cts12806-tbl-0001:row2:col4', 'cts12806-tbl-0001:row2:col8', 'cts12806-tbl-0001:row2:col12'] |
+| C7_apparent_coherence | pass |  |  |  |
+| C8_topology | pass |  |  |  |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 0.0337 L/h | ['cts12806-tbl-0001:row0:col4', 'cts12806-tbl-0001:row0:col8', 'cts12806-tbl-0001:row0:col12'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 16.6 L | ['cts12806-tbl-0001:row1:col4', 'cts12806-tbl-0001:row1:col8', 'cts12806-tbl-0001:row1:col12', 'Wang_2020_table_S13:row5:col1', 'Wang_2020_table_S13:row5:col2', 'Wang_2020_table_S13:row5:col4', 'Wang_2020_table_S13:row5:col5', 'Wang_2020_table_S13:row5:col6'] |
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
-| T3_output_variable | not captured | pass | C_central (measured=lanadelumab) | central.C | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | note |
+|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=lanadelumab) | central.C | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
+| T6_deviations | fail |  | invented_absorption: not acceptable | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Validation definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
-## Raw artifacts
 
-- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_lanadelumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Wang_2020` / `Wang_2020::final`)
-- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_lanadelumab/models/modelica/Lanadelumab_Wang2020_final.mo`
-- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_lanadelumab/models/modelica/Lanadelumab_Wang2020_final.deviation.json`
-- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_lanadelumab/models/modelica/Lanadelumab_Wang2020_final.json`
-
+</details>
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
@@ -204,6 +224,24 @@ Wang Y et al., Pharmacokinetics, Pharmacodynamics, and…, Clinical and translat
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 </div></div>
 
+## How to cite
+
+**Source paper** (the parameters are its): Wang Y, Marier JF, Kassir N, Chang C, Martin P. Pharmacokinetics, Pharmacodynamics, and Exposure-Response of Lanadelumab for Hereditary Angioedema. Clinical and translational science 13(6):1208–1216 (2020). [doi:10.1111/cts.12806](https://doi.org/10.1111/cts.12806)
+
+**This record:** Pharmacolibrary v26.09, model `Lanadelumab_Wang2020_final`. <https://pharmacolibrary.github.io/#/drugs/drug_lanadelumab/Lanadelumab_Wang2020_final>
+
+```bibtex
+@misc{pharmacolibrary_LanadelumabWang2020final,
+  title  = {{Pharmacolibrary model Lanadelumab_Wang2020_final}},
+  author = {{Pharmacolibrary}},
+  version = {v26.09},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_lanadelumab/Lanadelumab_Wang2020_final},
+  note   = {Parameters from doi:10.1111/cts.12806},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
+
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
 _Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
@@ -211,4 +249,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 01:16 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blanadelumab%5D%20Lanadelumab_Wang2020_final&body=Drug%3A%20lanadelumab%0ARecord%3A%20Lanadelumab_Wang2020_final%0APaper%3A%20Wang_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_lanadelumab/Lanadelumab_Wang2020_final%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Generated by `docs.py` (scholarv2, release v26.09) · extracted 2026-10-06 01:16 UTC</sub>
