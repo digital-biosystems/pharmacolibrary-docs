@@ -95,6 +95,620 @@ Bleomycin is a cytotoxic antibiotic used as an anticancer medicine to treat vari
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
+## Adverse drug reactions (ADR)
+
+73 reaction(s) reported in 41 paper(s). Read from the full texts by a language model, which also wrote the one-sentence descriptions; each sentence quoted under a reaction was checked to occur in the paper, the rest is not checked by a person. Frequencies are as the papers print them, for their own populations and definitions.
+
+### Blood
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Neutropenia | In 119 testicular cancer patients treated with BEP chemotherapy, neutropenia occurred in 53.45% of patients at any grade and 39.66% experienced severe (grades III-IV) neutropenia, with an association observed between cumulative bleomycin dose and the reaction. | 53.45% | cumulative bleomycin; GSTM1 (GSTM1 poor/intermediate vs extensive/ultrahigh) | hospital: blood count | [Lavanderos 2019](https://pubmed.ncbi.nlm.nih.gov/30914949), [Altés 2013](https://pubmed.ncbi.nlm.nih.gov/23323945) |
+| Anemia | The paper states that anemia was one of the grade III/IV toxicity episodes recorded in patients treated with ABVD chemotherapy, but it does not provide specific incidence rates or details for anemia alone. | — | — | — | [Altés 2013](https://pubmed.ncbi.nlm.nih.gov/23323945) |
+| Leukopenia | The paper states that a decrease in total WBC counts of &gt; 35% relative to pretreatment values was considered indicative of drug-induced leukopenia, but notes that reductions in the total WBC counts induced by BLM were all less than 35%. | — | — | laboratory: total white blood cell (WBC) counts | [Schurig 1984](https://pubmed.ncbi.nlm.nih.gov/6207948) |
+| Loss of heterozygosity | Zeocin treatment increased the rate of genomic alterations, including loss of heterozygosity (LOH), in the yeast strain QSS4 by about 900-fold compared to the spontaneous rate. | about 900-fold | — | laboratory: custom SNP-specific microarray | [Sheng 2019](https://pubmed.ncbi.nlm.nih.gov/31053912) |
+| Myelosuppression | The paper lists mild myelosuppression as one of the side effects of bleomycin. | — | — | — | [Bokemeyer 2008](https://pubmed.ncbi.nlm.nih.gov/18398143) |
+| Neutropenic fever | Neutropenic fever occurs in approximately 10-15% of patients receiving etoposide and cisplatin and it is more common with the addition of bleomycin. | approximately 10-15% | — | — | [Del 2017](https://pubmed.ncbi.nlm.nih.gov/28620445) |
+
+<details><summary>Evidence: neutropenia (2)</summary>
+
+> “Besides, neutropenia was associated with both, cumulative or cumulative by average dose of cisplatin or etoposide, and cumulative bleomycin.” — [Lavanderos 2019](https://pubmed.ncbi.nlm.nih.gov/30914949) <sub>(cohort)</sub>
+
+> “We recorded all grade III/IV toxicity episodes (anemia, neutropenia, hemorrhagic cystitis, infections, mucositis, nausea and vomiting and cardiac, renal or respiratory toxicities) (National Cancer Institute [NCI] criteria).” — [Altés 2013](https://pubmed.ncbi.nlm.nih.gov/23323945) <sub>(cohort)</sub>
+
+</details>
+
+<details><summary>Evidence: Anemia (1)</summary>
+
+> “We recorded all grade III/IV toxicity episodes (anemia, neutropenia, hemorrhagic cystitis, infections, mucositis, nausea and vomiting and cardiac, renal or respiratory toxicities) (National Cancer Institute [NCI] criteria).” — [Altés 2013](https://pubmed.ncbi.nlm.nih.gov/23323945) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: leukopenia (1)</summary>
+
+> “The total WBC counts were determined 3, 5, and 7 days after dosing, with a decrease in total WBC counts of &gt; 35% relative to pretreatment values being considered indicative of drug-induced leukopenia. Reductions in the total WBC counts induced by BLM were all less than 35%.” — [Schurig 1984](https://pubmed.ncbi.nlm.nih.gov/6207948) <sub>(animal)</sub>
+
+</details>
+
+<details><summary>Evidence: loss of heterozygosity (1)</summary>
+
+> “Thus, Zeocin elevates the frequency of LOH events by about 900-fold at a whole gnome level.” — [Sheng 2019](https://pubmed.ncbi.nlm.nih.gov/31053912) <sub>(in vitro)</sub>
+
+</details>
+
+<details><summary>Evidence: Myelosuppression (1)</summary>
+
+> “Among its side effects are allergic reactions, mucositis, mild myelosuppression, hyperkeratosis and pigmentation changes of the skin, and, in particular, pulmonary fibrosis.” — [Bokemeyer 2008](https://pubmed.ncbi.nlm.nih.gov/18398143) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: neutropenic fever (1)</summary>
+
+> “Neutropenic fever occurs in approximately 10-15% of patients receiving etoposide and cisplatin and it is more common with the addition of bleomycin [5].” — [Del 2017](https://pubmed.ncbi.nlm.nih.gov/28620445) <sub>(case report)</sub>
+
+</details>
+
+### Cardiovascular
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Pulmonary hypertension | The paper reports that bleomycin (BLM) challenge evoked PH (indicated by decreased PAAT-to-ET ratio and increased right ventricle free wall thickness) in G6PD S188F rats, but not in WT littermates. | — | G6PD S188F variant | hospital: Pulmonary hypertension; hospital: PAAT-to-ET ratio | [Signoretti 2026](https://pubmed.ncbi.nlm.nih.gov/41401977), [Marriott 2014](https://pubmed.ncbi.nlm.nih.gov/25122876) |
+| Cardiac toxicity | Cardiac toxicity was one of the grade III/IV toxicity episodes recorded in the 126 patients with Hodgkin lymphoma treated with the ABVD chemotherapy regimen. | — | GSTM1 genotype associated with extensive or ultrahigh activity (GSTM1 extensive/ultrahigh activity genotype); Radiotherapy | — | [Altés 2013](https://pubmed.ncbi.nlm.nih.gov/23323945) |
+| Pulmonary vascular disease | In mice treated with bleomycin, the βOE strain (with stabilized β-catenin in ABCG2+ MPCs) exhibited increased Fulton indices indicative of PVD relative to WT mice. | — | stabilized β-catenin (βOE) in ABCG2+ MPCs (Ctnnb1) | — | [Gaskill 2017](https://pubmed.ncbi.nlm.nih.gov/28463231) |
+| Right ventricular hypertrophy | Right ventricle free wall thickness increased in G6PD S188F variant rats compared to wild-type rats and G6PD S188F control rats after bleomycin nebulization. | P = 0.0001 | G6PD S188F variant | — | [Signoretti 2026](https://pubmed.ncbi.nlm.nih.gov/41401977) |
+
+<details><summary>Evidence: Pulmonary hypertension (2)</summary>
+
+> “PAAT-to-ET ratio decreased (P ¼ 0.013) in G6PD S188F þ BLM rats as compared with WT þ BLM and G6PD S188F control rats (Fig. 2A). Interestingly, PAAT-to-ET ratio negatively correlated with tissue volume (Fig. 2B).” — [Signoretti 2026](https://pubmed.ncbi.nlm.nih.gov/41401977) <sub>(animal)</sub>
+
+> “Intratracheal administration of bleomycin elicits PF, inflammation, and associated PH, contemporaneous with loss of extant resident lung MSC. Associated PH was documented by measurement of right ventricular systolic pressure (RVSP) as previously described (16,94).” — [Marriott 2014](https://pubmed.ncbi.nlm.nih.gov/25122876) <sub>(animal)</sub>
+
+</details>
+
+<details><summary>Evidence: Cardiac toxicity (1)</summary>
+
+> “We recorded all grade III/IV toxicity episodes (anemia, neutropenia, hemorrhagic cystitis, infections, mucositis, nausea and vomiting and cardiac, renal or respiratory toxicities) (National Cancer Institute [NCI] criteria).” — [Altés 2013](https://pubmed.ncbi.nlm.nih.gov/23323945) <sub>(cohort)</sub>
+
+</details>
+
+<details><summary>Evidence: Pulmonary vascular disease (1)</summary>
+
+> “In response to bleomycin, relative to WT mice, the βOE mice had increased mortality, increased fibrosis as measured by Ashcroft scoring and collagen content, as well as increased Fulton indices, indicative of PVD (Figure 4, A-D, F and G).” — [Gaskill 2017](https://pubmed.ncbi.nlm.nih.gov/28463231) <sub>(animal)</sub>
+
+</details>
+
+<details><summary>Evidence: Right ventricular hypertrophy (1)</summary>
+
+> “Furthermore, right ventricle free wall thickness increased (P ¼ 0.0001) in G6PD S188F þ BLM rats as compared with WT þ BLM and G6PD S188F control rats (Fig. 2C).” — [Signoretti 2026](https://pubmed.ncbi.nlm.nih.gov/41401977) <sub>(animal)</sub>
+
+</details>
+
+### Gastrointestinal
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Gastrointestinal irritation | The paper notes that bleomycin's off-target effects can lead to mild gastrointestinal irritation in patients. | — | — | — | [Brady 2019](https://pubmed.ncbi.nlm.nih.gov/31171655) |
+| Nausea | Nausea was one of the grade III/IV toxicity episodes recorded in patients treated with the ABVD regimen. | — | — | — | [Altés 2013](https://pubmed.ncbi.nlm.nih.gov/23323945) |
+| Vomiting | Vomiting was recorded as a grade III/IV toxicity episode in 126 patients with Hodgkin lymphoma treated with the ABVD regimen (doxorubicin, bleomycin, vinblastine and dacarbazine). | — | — | — | [Altés 2013](https://pubmed.ncbi.nlm.nih.gov/23323945) |
+
+<details><summary>Evidence: gastrointestinal irritation (1)</summary>
+
+> “Although the cytotoxicity of bleomycin can reliably induce cell death in tumor cells, off-target effects can lead to a range of harmful consequences, from mild gastrointestinal irritation to severe bleomycin-induced pulmonary fibrosis (Blum et al. 1973).” — [Brady 2019](https://pubmed.ncbi.nlm.nih.gov/31171655) <sub>(case report)</sub>
+
+</details>
+
+<details><summary>Evidence: Nausea (1)</summary>
+
+> “We recorded all grade III/IV toxicity episodes (anemia, neutropenia, hemorrhagic cystitis, infections, mucositis, nausea and vomiting and cardiac, renal or respiratory toxicities) (National Cancer Institute [NCI] criteria).” — [Altés 2013](https://pubmed.ncbi.nlm.nih.gov/23323945) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: Vomiting (1)</summary>
+
+> “We recorded all grade III/IV toxicity episodes (anemia, neutropenia, hemorrhagic cystitis, infections, mucositis, nausea and vomiting and cardiac, renal or respiratory toxicities) (National Cancer Institute [NCI] criteria).” — [Altés 2013](https://pubmed.ncbi.nlm.nih.gov/23323945) <sub>(case series)</sub>
+
+</details>
+
+### General
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Weight loss | Following administration of bleomycin, wildtype mice lost weight, with peak loss occurring 7 to 10 days post-treatment, in an animal study where 4 of 13 treated animals reached the humane endpoint for weight loss. | 4 of 13 | — | hospital: weight; hospital: cardiac | [van 2022](https://pubmed.ncbi.nlm.nih.gov/36309093), [Glick 1980](https://pubmed.ncbi.nlm.nih.gov/6160777), [Jin 2025](https://pubmed.ncbi.nlm.nih.gov/41169753), [Skibba 2025](https://pubmed.ncbi.nlm.nih.gov/40604997) |
+| Cytotoxicity | Bleomycin exposure resulted in a 4-fold greater toxicity in ovarian fibroblast (CHO-K1) cells compared to lung fibroblast (V79) cells. | — | cell line origin (ovary vs lung) | — | [Mokaleng 2009](https://pubmed.ncbi.nlm.nih.gov/19448732), [Sheng 2019](https://pubmed.ncbi.nlm.nih.gov/31053912), [Gowda 2017](https://pubmed.ncbi.nlm.nih.gov/28067485) |
+| Fever | A febrile response, possibly from the release of endogenous pyrogen, occurs in up to 50% of the patients treated. | up to 50% | — | hospital: fever | [Crom 1987](https://pubmed.ncbi.nlm.nih.gov/3555940), [Glick 1980](https://pubmed.ncbi.nlm.nih.gov/6160777) |
+| Aneuploidy | Zeocin treatment increased the rate of aneuploidy by 657-fold over the baseline spontaneous rate in yeast strain QSS4. | 657-fold | — | — | [Sheng 2019](https://pubmed.ncbi.nlm.nih.gov/31053912) |
+| Chromosomal instability | The paper states that treatment with Zeocin (a member of the bleomycin family) increased the rate of genomic alterations, including aneuploidy, loss of heterozygosity (LOH), and chromosomal rearrangement over a hundred-fold in a yeast model. | over a hundred-fold | PDR1 deletion (PDR1 deleted) | — | [Sheng 2019](https://pubmed.ncbi.nlm.nih.gov/31053912) |
+| Decreased body weight | A significant decrease in body weight was observed in male C57BL/6 mice after 2 U/kg intratracheal bleomycin administration, with the treated group remaining significantly lower in weight than controls on day 21. | all mice in the bleomycin group (n = 8) ... remained significantly lower that the saline control group (n = 7) | 2 U/kg, i.t. bleomycin | — | [Phillips 2012](https://pubmed.ncbi.nlm.nih.gov/22024054) |
+| Decreased weight | Animals dosed with bleomycin and vehicle alone had no change in body weight over the course of the study, far below the 25%-35% change in weight for naive animals, indicating bleomycin toxicity in mice. | — | — | primary_care: body weight | [Pawelec 2022](https://pubmed.ncbi.nlm.nih.gov/36426895) |
+| DNA double-strand breaks | Treatment with Zeocin in the yeast strain QSS4 leads to recombination events that are likely initiated by DNA double-stand breaks directly generated by the drug. | over a hundred-fold | glutathione or ascorbic acid; PDR1 deletion | — | [Sheng 2019](https://pubmed.ncbi.nlm.nih.gov/31053912) |
+| Hemorrhagic cystitis | Hemorrhagic cystitis was recorded as one of the grade III/IV toxicity episodes in the study cohort. | — | — | — | [Altés 2013](https://pubmed.ncbi.nlm.nih.gov/23323945) |
+| Increased somatic mutation burden | The paper reports that excess single-base substitutions (SBSs) were not obviously associated with the cytotoxic antibiotic bleomycin in the studied chemotherapy-exposed individuals. | — | — | — | [Mitchell 2025](https://pubmed.ncbi.nlm.nih.gov/40596443) |
+| Mortality | In mice administered an LD50 dose of bleomycin (2.2 U/kg), 50% mortality was observed by day 14. | 50% mortality rate | — | — | [Skibba 2025](https://pubmed.ncbi.nlm.nih.gov/40604997) |
+| Oxidative stress | Bleomycin induces oxidative stress through the generation of reactive oxygen species via its interaction with Fe2+ and O2, resulting in direct damage to bronchiolar epithelial cells and depletion of antioxidant markers (serum TAC, lung GSH) in rats. | — | — | hospital: lung tissue | [Zaher 2026](https://pubmed.ncbi.nlm.nih.gov/41901641) |
+| Pain | The paper reports that 44 out of 119 patients (36.97%) experienced pain, and that the BLMH rs1050565 G/G genotype was associated with severe (grades III–IV) pain in a recessive model. | 36.97% (any grades); 4.20% (severe grades III-IV) | BLMH rs1050565 G/G (BLMH G); CYP3A4 rs2740574 A/G (CYP3A4 A/G) | — | [Lavanderos 2019](https://pubmed.ncbi.nlm.nih.gov/30914949) |
+| Treatment failure | Patients with classical Hodgkin lymphoma and HRS cells positive for ABCC1 had a higher risk of not responding to standard chemotherapy regimens compared to those with negative expression. | 7/16 | ABCC1 expression | — | [Greaves 2012](https://pubmed.ncbi.nlm.nih.gov/22871336) |
+
+<details><summary>Evidence: Weight loss (4)</summary>
+
+> “Following administration of bleomycin, wildtype mice lost weight with peak weight loss occurring 7 to 10 days after the administration of bleomycin, after which mice started to regain weight (Fig. 5).” — [van 2022](https://pubmed.ncbi.nlm.nih.gov/36309093) <sub>(animal)</sub>
+
+> “However, bleomycin induced skin rash, fever, weight loss, and elevations of the serum creatinine level must be monitored carefully by an experienced medical oncologist, and this regimen does require inpatient hospitalization for at least one week.” — [Glick 1980](https://pubmed.ncbi.nlm.nih.gov/6160777) <sub>(review)</sub>
+
+> “Following the administration of BLM, there was a significant decrease in body weight among the rats compared to the blank group.” — [Jin 2025](https://pubmed.ncbi.nlm.nih.gov/41169753) <sub>(animal)</sub>
+
+> “As expected, bleomycin treatment induced a significant weight loss during the initial inflammatory phase (Fig. 6B).” — [Skibba 2025](https://pubmed.ncbi.nlm.nih.gov/40604997) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: cytotoxicity (3)</summary>
+
+> “The cellular response pattern was the same for bleomycin exposure, with the drug exhibiting a 4-fold greater toxicity in the CHO-K1 cells than in the V79 cells (Fig. 1C).” — [Mokaleng 2009](https://pubmed.ncbi.nlm.nih.gov/19448732) <sub>(in vitro)</sub>
+
+> “The addition of glutathione and ascorbic acid increased cell viability by 32% and 27%, respectively (t test, P &lt; 0.01; Fig. 6a). These observations agreed well with the results of several studies showing that antioxidants protected mammalian cells against the cytotoxicity of BLMs (Mira et al. 2013).” — [Sheng 2019](https://pubmed.ncbi.nlm.nih.gov/31053912) <sub>(in vitro)</sub>
+
+> “The synergistic activity shown by the combination of bleomycin and honokiol suggests that they can be used as combination therapy for treatment of cancer, which will decrease the therapeutic dosage and side effects of bleomycin.” — [Gowda 2017](https://pubmed.ncbi.nlm.nih.gov/28067485) <sub>(case report)</sub>
+
+</details>
+
+<details><summary>Evidence: fever (2)</summary>
+
+> “A febrile response, possibly from the release of endogenous pyrogen, occurs in up to 50% of the patients treated (Di-narello et aL 1973).” — [Crom 1987](https://pubmed.ncbi.nlm.nih.gov/3555940) <sub>(case series)</sub>
+
+> “However, bleomycin induced skin rash, fever, weight loss, and elevations of the serum creatinine level must be monitored carefully by an experienced medical oncologist, and this regimen does require inpatient hospitalization for at least one week.” — [Glick 1980](https://pubmed.ncbi.nlm.nih.gov/6160777) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: aneuploidy (1)</summary>
+
+> “Zeocin treatment increased the rate of aneuploidy by 657-fold over this baseline.” — [Sheng 2019](https://pubmed.ncbi.nlm.nih.gov/31053912) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: chromosomal instability (1)</summary>
+
+> “We found that Zeocin (a member of the bleomycin family) treatment increased the rate of genomic alterations, including aneuploidy, loss of heterozygosity (LOH), and chromosomal rearrangement over a hundred-fold.” — [Sheng 2019](https://pubmed.ncbi.nlm.nih.gov/31053912) <sub>(in vitro)</sub>
+
+</details>
+
+<details><summary>Evidence: decreased body weight (1)</summary>
+
+> “A significant decrease in body weight after 2 U/kg, i.t. bleomycin administration was initially observed (Fig. 1). The average body weight of the bleomycin treated group (25.1 AE 0.6 g) remained significantly lower that the saline control group (26.8 AE 0.4 g) on day 21.” — [Phillips 2012](https://pubmed.ncbi.nlm.nih.gov/22024054) <sub>(animal)</sub>
+
+</details>
+
+<details><summary>Evidence: Decreased weight (1)</summary>
+
+> “Animals dosed with bleomycin and vehicle alone had no change in body weight over the course of the study, far below the 25%-35% change in weight for naive animals, so there was clear evidence of bleomycin toxicity, albeit milder than is often seen in other studies.” — [Pawelec 2022](https://pubmed.ncbi.nlm.nih.gov/36426895) <sub>(animal)</sub>
+
+</details>
+
+<details><summary>Evidence: DNA double-strand breaks (1)</summary>
+
+> “Most recombination events are likely to be initiated by DNA double-stand breaks directly generated by Zeocin.” — [Sheng 2019](https://pubmed.ncbi.nlm.nih.gov/31053912) <sub>(in vitro)</sub>
+
+</details>
+
+<details><summary>Evidence: Hemorrhagic cystitis (1)</summary>
+
+> “We recorded all grade III/IV toxicity episodes (anemia, neutropenia, hemorrhagic cystitis, infections, mucositis, nausea and vomiting and cardiac, renal or respiratory toxicities) (National Cancer Institute [NCI] criteria).” — [Altés 2013](https://pubmed.ncbi.nlm.nih.gov/23323945) <sub>(case report)</sub>
+
+</details>
+
+<details><summary>Evidence: Increased somatic mutation burden (1)</summary>
+
+> “Excess SBSs and specific SBS mutational signatures were not obviously associated with topoisomerase inhibitors (which cause DNA strand breaks), vinca alkaloids (which inhibit microtubule formation during cell division) and the cytotoxic antibiotic bleomycin (which is thought to bind and cleave DNA).” — [Mitchell 2025](https://pubmed.ncbi.nlm.nih.gov/40596443) <sub>(case report)</sub>
+
+</details>
+
+<details><summary>Evidence: Mortality (1)</summary>
+
+> “Importantly, the bleomycin-treated mice had a 50% mortality rate by day 14.” — [Skibba 2025](https://pubmed.ncbi.nlm.nih.gov/40604997) <sub>(animal)</sub>
+
+</details>
+
+<details><summary>Evidence: oxidative stress (1)</summary>
+
+> “BLM exerts its toxic effects by inducing oxidative stress through the generation of reactive oxygen species (ROS) via its interaction with Fe2+ and O2, resulting in direct damage to bronchiolar epithelial cells [26].” — [Zaher 2026](https://pubmed.ncbi.nlm.nih.gov/41901641) <sub>(animal)</sub>
+
+</details>
+
+<details><summary>Evidence: pain (1)</summary>
+
+> “The BLMH rs1050565 G/G genotype was found to be associated with pain... Our observation is in line with the report from White and coworkers who showed an association between acute chest pain and bleomycin infusion (White et al., 1987).” — [Lavanderos 2019](https://pubmed.ncbi.nlm.nih.gov/30914949) <sub>(cohort)</sub>
+
+</details>
+
+<details><summary>Evidence: treatment failure (1)</summary>
+
+> “Multivariate analysis after adjusting for hemoglobin and albumin levels and age showed that patients with CHL with HRS cells positive for ABCC1 had a higher risk of not responding to treatment (HR = 2.84, 95%, CI: 1.12-7.19 p = 0.028).” — [Greaves 2012](https://pubmed.ncbi.nlm.nih.gov/22871336) <sub>(cohort)</sub>
+
+</details>
+
+### Immune / hypersensitivity
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Anaphylactic reaction | The paper states that anaphylactic reactions are among the toxic effects of bleomycin but provides no further details on frequency, severity, or specific symptoms in the provided text. | — | — | — | [Glick 1980](https://pubmed.ncbi.nlm.nih.gov/6160777) |
+| Febrile neutropenia | 15 out of 119 patients treated with BEP chemotherapy developed severe (grade III–IV) febrile neutropenia, an association linked in multivariate analysis to specific ERCC1 genotypes and cumulative bleomycin dose. | 15 | ERCC1 rs11615 T/T (ERCC1 T); cumulative dose of bleomycin; ERCC2 rs238406 C/A + A/A (ERCC2 A) | — | [Lavanderos 2019](https://pubmed.ncbi.nlm.nih.gov/30914949) |
+
+<details><summary>Evidence: anaphylactic reaction (1)</summary>
+
+> “Toxic effects may include mucositis, dermatitis, anaphylactic reactions, and rarely pulmonary fibrosis.” — [Glick 1980](https://pubmed.ncbi.nlm.nih.gov/6160777) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: febrile neutropenia (1)</summary>
+
+> “We observed that the cumulative dose of bleomycin; bleomycin dose by average or bleomycin cycles by range were associate with febrile neutropenia as well as cisplatin dose by range. ... Table 5 show only statistically significant association models for severe ADRs. We obtained significant models for febrile neutropenia, leukopenia, vomiting, nausea, and alopecia.” — [Lavanderos 2019](https://pubmed.ncbi.nlm.nih.gov/30914949) <sub>(case-control)</sub>
+
+</details>
+
+### Infection
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Infections | The paper lists infections among the grade III/IV toxicity episodes recorded for the 126 patients treated with the ABVD regimen, but does not provide specific frequencies, causality attribution to bleomycin, or detailed clinical descriptions for this specific reaction. | — | — | — | [Altés 2013](https://pubmed.ncbi.nlm.nih.gov/23323945) |
+| Infusion-related reaction | One of the most frequently reported adverse events was observed in the highest dose IV cohort, occurring in 1 participant (2.8%) of the RO7303509 group and 2 participants (15.4%) of the placebo group. | 1 (2.8) RO7303509 IV; 2 (15.4) Placebo IV | — | — | [Han 2024](https://pubmed.ncbi.nlm.nih.gov/38662148) |
+
+<details><summary>Evidence: Infections (1)</summary>
+
+> “We recorded all grade III/IV toxicity episodes (anemia, neutropenia, hemorrhagic cystitis, infections, mucositis, nausea and vomiting and cardiac, renal or respiratory toxicities) (National Cancer Institute [NCI] criteria).” — [Altés 2013](https://pubmed.ncbi.nlm.nih.gov/23323945) <sub>(cohort)</sub>
+
+</details>
+
+<details><summary>Evidence: Infusion-related reaction (1)</summary>
+
+> “The most frequently reported AEs were injection site reaction (highest dose SC cohort) and infusion-related reaction (highest dose IV cohort). All of these AEs were grade 1, required no supportive care, were considered related to study drug, and were observed in both active and placebo-treated participants.” — [Han 2024](https://pubmed.ncbi.nlm.nih.gov/38662148) <sub>(case report)</sub>
+
+</details>
+
+### Kidney and urinary tract
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Nephrotoxicity | In male BDF1 mice, some incidences of BUN values -&gt; 30 rag% occurred after administration of BLM, which were considered indicative of drug-induced nephrotoxicity. | some incidences | — | laboratory: unknown | [Schurig 1984](https://pubmed.ncbi.nlm.nih.gov/6207948) |
+| Renal dysfunction | The paper states that concurrent use of bleomycin with nephrotoxic drugs, such as methotrexate and cisplatin, can cause renal dysfunction, but does not specify the patient population size or the frequency of this occurrence in the study cohort. | — | concurrent use of nephrotoxic drugs, such as MTX and cisplatin | — | [Zhao 2025](https://pubmed.ncbi.nlm.nih.gov/40385482) |
+| Renal toxicity | Renal toxicity was one of the grade III/IV toxicity episodes recorded in patients with Hodgkin lymphoma treated with ABVD chemotherapy, assessed according to National Cancer Institute criteria. | — | — | — | [Altés 2013](https://pubmed.ncbi.nlm.nih.gov/23323945) |
+
+<details><summary>Evidence: nephrotoxicity (1)</summary>
+
+> “There were some incidences of BUN values --&gt; 30 rag% with both drugs. ... BUN values -&gt; 30 rag% and SGPT values ---40 international units (IU) were considered indicative of drug-induced nephrotoxicity or hepatotoxicity, respectively.” — [Schurig 1984](https://pubmed.ncbi.nlm.nih.gov/6207948) <sub>(animal)</sub>
+
+</details>
+
+<details><summary>Evidence: renal dysfunction (1)</summary>
+
+> “Concurrent use of BLM with nephrotoxic drugs, such as MTX and cisplatin, can cause renal dysfunction (Dalgleish et al., 1984). Approximately 65% of BLM is eliminated via kidneys, renal impairment can reduce its CL, leading to drug accumulation and an increased risk of pulmonary toxicity (Dalgleish et al., 1984; BLENOXANE, 2010; Sleijfer et al., 1996).” — [Zhao 2025](https://pubmed.ncbi.nlm.nih.gov/40385482) <sub>(other)</sub>
+
+</details>
+
+<details><summary>Evidence: Renal toxicity (1)</summary>
+
+> “We recorded all grade III/IV toxicity episodes (anemia, neutropenia, hemorrhagic cystitis, infections, mucositis, nausea and vomiting and cardiac, renal or respiratory toxicities) (National Cancer Institute [NCI] criteria).” — [Altés 2013](https://pubmed.ncbi.nlm.nih.gov/23323945) <sub>(case series)</sub>
+
+</details>
+
+### Liver
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Hepatotoxicity | Bleomycin caused increased SGPT levels in nearly all the mice tested, with almost all BLM-treated mice having SGPT values &gt; 40 IU on day 5. | almost all | — | laboratory: SGPT | [Schurig 1984](https://pubmed.ncbi.nlm.nih.gov/6207948) |
+
+<details><summary>Evidence: hepatotoxicity (1)</summary>
+
+> “In contrast, almost all of the BLM-treated mice had SGPT values -&gt; 40 IU on day 5.” — [Schurig 1984](https://pubmed.ncbi.nlm.nih.gov/6207948) <sub>(animal)</sub>
+
+</details>
+
+### Musculoskeletal
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Mucositis | The paper lists mucositis as one of the grade III/IV toxicity episodes recorded in 126 patients with Hodgkin lymphoma treated with ABVD chemotherapy. | — | — | — | [Altés 2013](https://pubmed.ncbi.nlm.nih.gov/23323945), [Bokemeyer 2008](https://pubmed.ncbi.nlm.nih.gov/18398143) |
+| Pain in extremity | Pain in extremity was reported in 2 of the 36 participants (5.6%) receiving RO7303509, specifically occurring in the subcutaneous administration groups (2 cases among 18 SC-treated participants). | 2 (5.6) | — | — | [Han 2024](https://pubmed.ncbi.nlm.nih.gov/38662148) |
+| Stomatitis | Mucocutaneous toxicities, including stomatitis, are common in patients treated with bleomycin at dosages used clinically, and their incidence and severity are dose related. | common | dose | — | [Crom 1987](https://pubmed.ncbi.nlm.nih.gov/3555940) |
+
+<details><summary>Evidence: Mucositis (2)</summary>
+
+> “We recorded all grade III/IV toxicity episodes (anemia, neutropenia, hemorrhagic cystitis, infections, mucositis, nausea and vomiting and cardiac, renal or respiratory toxicities) (National Cancer Institute [NCI] criteria).” — [Altés 2013](https://pubmed.ncbi.nlm.nih.gov/23323945) <sub>(case report)</sub>
+
+> “Among its side effects are allergic reactions, mucositis, mild myelosuppression, hyperkeratosis and pigmentation changes of the skin, and, in particular, pulmonary fibrosis.” — [Bokemeyer 2008](https://pubmed.ncbi.nlm.nih.gov/18398143) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: Pain in extremity (1)</summary>
+
+> “Pain in extremity | 0 | 0 | 0 | 0 | 0 | 0 | 1 (16.7) | 1 (16.7) | 2 (11.1) | 0 | 2 (5.6) | 0 | 2 (4.1)” — [Han 2024](https://pubmed.ncbi.nlm.nih.gov/38662148) <sub>(case report)</sub>
+
+</details>
+
+<details><summary>Evidence: stomatitis (1)</summary>
+
+> “Mucocutaneous toxicities, including stomatitis, alopecia, hyperpigmentation of skin, and hyperkeratosis are common, and the incidence and severity are dose related.” — [Crom 1987](https://pubmed.ncbi.nlm.nih.gov/3555940) <sub>(review)</sub>
+
+</details>
+
+### Respiratory
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Pulmonary fibrosis | The paper states that bleomycin is associated with an approximate 1% risk for death due to bleomycin-induced pulmonary fibrosis, and that in a study of 835 patients, 6.8% were affected by bleomycin-associated pulmonary disease. | approximate 1% risk for death | bleomycin hydrolase gene polymorphism (bleomycin hydrolase A1450G); glomerular filtration rate; age; cumulative dose | hospital: lung; laboratory: hydroxyproline (HP) content | [Bokemeyer 2008](https://pubmed.ncbi.nlm.nih.gov/18398143), [Glick 1980](https://pubmed.ncbi.nlm.nih.gov/6160777), [Marshall 1997](https://pubmed.ncbi.nlm.nih.gov/9076945), [Schurig 1984](https://pubmed.ncbi.nlm.nih.gov/6207948), [Möbus 2025](https://pubmed.ncbi.nlm.nih.gov/40623988), [Gaskill 2017](https://pubmed.ncbi.nlm.nih.gov/28463231) +10 |
+| Pulmonary toxicity | Patients carrying the XPO5 AA or CC genotype had a higher incidence of bleomycin-associated pulmonary toxicity than those with the AC genotype (10% vs. 1%; P = 0.048). | 5% | XPO5 rs11077 AA or CC (XPO5 AA or CC); XPO5 rs11077 AC (XPO5 AC); ABVD treatment strategy (unknown unknown); advanced age (unknown unknown) | hospital: St. George Respiratory Questionnaire (SGRQ); hospital: spirometry | [Navarro 2013](https://pubmed.ncbi.nlm.nih.gov/23705004), [Jóna 2016](https://pubmed.ncbi.nlm.nih.gov/27327270), [Crom 1987](https://pubmed.ncbi.nlm.nih.gov/3555940), [Kramer 1978](https://pubmed.ncbi.nlm.nih.gov/78932), [Schurig 1984](https://pubmed.ncbi.nlm.nih.gov/6207948), [Thakkar 2018](https://pubmed.ncbi.nlm.nih.gov/29683071) +3 |
+| Lung fibrosis | In a mouse model, intratracheal administration of bleomycin (2 U/kg) resulted in a significant increase in lung fibrosis histopathology scores in all 8 treated animals (mean 4.9 AE 0.4) compared to saline controls (score 0) at day 21. | all mice in the bleomycin group (n ¼ 8) | lung tissue-specific damage | — | [Phillips 2012](https://pubmed.ncbi.nlm.nih.gov/22024054), [He 2016](https://pubmed.ncbi.nlm.nih.gov/27376254), [Pawelec 2022](https://pubmed.ncbi.nlm.nih.gov/36426895) |
+| Pulmonary inflammation | The paper reports that SFTPC-Muc5bTg mice challenged with bleomycin developed chronic inflammation, which was reduced by treatment with the mucolytic agent P-2119. | — | Muc5b overexpression (SFTPC promoter) (Muc5b Tg) | laboratory: inflammation severity | [Hancock 2018](https://pubmed.ncbi.nlm.nih.gov/30560893), [Phillips 2012](https://pubmed.ncbi.nlm.nih.gov/22024054), [Kim 2010](https://pubmed.ncbi.nlm.nih.gov/24278527) |
+| Pneumonitis | Bleomycin-induced pneumonitis developed in 50 of 418 bleomycin-treated patients, resulting in death in 8 patients and premature cessation of bleomycin administration in 24 patients. | 50 (12%) | older; lower pretreatment creatinine clearance | hospital: clinical and/or radiographic signs of BIP | [Nuver 2005](https://pubmed.ncbi.nlm.nih.gov/15900213), [Jóna 2016](https://pubmed.ncbi.nlm.nih.gov/27327270) |
+| Acute bleomycin-induced lung injury | Among the 102 Hodgkin lymphoma patients who received bleomycin-containing therapy, only one acute bleomycin-induced lung injury was documented. | 1/102 | BLMH gene SNP A1450G (BLMH A/G or G/G vs A/A); chest irradiation; use of colony stimulating factors; renal function | laboratory: lung function; primary_care: lung scintigraphy | [Jóna 2016](https://pubmed.ncbi.nlm.nih.gov/27327270) |
+| Bleomycin-induced pulmonary fibrosis | Bleomycin can lead to severe bleomycin-induced pulmonary fibrosis as an off-target effect in patients. | — | — | — | [Brady 2019](https://pubmed.ncbi.nlm.nih.gov/31171655) |
+| Cough | Cough is a symptom significantly associated with the development of CT assessed lung toxicity in patients with IGCCCG good prognosis metastatic germ cell tumours treated with bleomycin. | — | older patients | home: cough | [Shamash 2017](https://pubmed.ncbi.nlm.nih.gov/28327896) |
+| Decreased lung function | Bleomycin challenge decreased lung function (decreased inspiration volume and increased tissue volume) in G6PD S188F rats. | — | G6PD S188F variant | — | [Signoretti 2026](https://pubmed.ncbi.nlm.nih.gov/41401977) |
+| Dyspnea | At 3 months, self-reported dyspnea had increased by approximately 18 points in patients treated with BEP chemotherapy, with long-term levels not differing from baseline and 16% of patients recording worsening at 2 years. | 16% | — | — | [Fosså 2003](https://pubmed.ncbi.nlm.nih.gov/12637478) |
+| Fatal toxicity | The paper states that fatal toxicity is reported even at low doses of bleomycin. | An estimated 335% of patients develop pulmonary fibrosis | low doses | — | [Marshall 1997](https://pubmed.ncbi.nlm.nih.gov/9076945) |
+| Fibrosis | In rats treated with bleomycin (BLM), pulmonary fibrosis was induced, characterized by a significant increase in collagen fibers deposition and severe bleeding, which was mitigated by the administration of curcumin or nintedanib nanoparticles. | — | — | hospital: body weight; hospital: lung coefficient | [Jin 2025](https://pubmed.ncbi.nlm.nih.gov/41169753) |
+| Hemorrhage | Focal hemorrhages were observed in the lung tissue of rats treated with bleomycin (5 mg/kg), characterized by a prominent presence of red blood cells. | — | — | — | [Jin 2025](https://pubmed.ncbi.nlm.nih.gov/41169753) |
+| Idiopathic pulmonary fibrosis | In Sprague-Dawley rats, idiopathic pulmonary fibrosis was induced through a single administration of 50 µL of BLM solution (5 mg mL-1) via intratracheal instillation, characterized by fibrosis, collagen accumulation, and decreased lung function. | — | — | — | [Kang 2022](https://doi.org/10.1080/10717544.2022.2149899) |
+| Inflammation | Bleomycin induces oxidative stress in rat lung tissue, which is associated with elevated levels of inflammatory markers TGF-β1 and IL-6. | — | — | — | [Jin 2025](https://pubmed.ncbi.nlm.nih.gov/41169753) |
+| Interstitial lung disease | Bleomycin sulfate is associated with drug-induced interstitial lung disease, characterized in animal models by patchy inflammation, reactive epithelial hyperplasia, infiltration of inflammatory cells, and remodeling of the extracellular matrix, which can lead to a lifelong decrease in lung function… | — | Intraperitoneal administration at 15 mg/kg twice weekly over 4 weeks induced lung fibrosis; 20 mg/kg caused substantial weight loss and death in mice.; Prednisolone | — | [Pawelec 2022](https://pubmed.ncbi.nlm.nih.gov/36426895) |
+| Interstitial pneumonitis | Patients treated with bleomycin as a chemotherapeutic may develop interstitial pneumonitis as a spontaneous adverse outcome. | — | — | — | [Möbus 2025](https://pubmed.ncbi.nlm.nih.gov/40623988) |
+| Lung inflammation | Mice receiving bleomycin in the lungs experience an initial inflammatory phase lasting 7 to 10 days. | — | — | — | [van 2022](https://pubmed.ncbi.nlm.nih.gov/36309093) |
+| Lung injury | In a study of genetically engineered mice (Scgb1a1-Muc5bTg and SFTPC-Muc5bTg), the paper reports that following bleomycin challenge, these mice demonstrated substantial lung injury, which was noted to be less prominent in Muc5b−/− mice. | — | Muc5b overexpression (Scgb1a1-Muc5bTg, SFTPC-Muc5bTg) (Muc5b Transgene) | — | [Hancock 2018](https://pubmed.ncbi.nlm.nih.gov/30560893) |
+| Lung toxicity | The paper states that the clinical use of bleomycin is limited by lung toxicity and that it can cause fibrosis reminiscent of interstitial lung diseases including IPF. | — | — | — | [van 2022](https://pubmed.ncbi.nlm.nih.gov/36309093) |
+| Pneumotoxicity | It was concluded from the findings of this study that the presence of a major portion of [3H]BLM in the SF of the lung and its covalent linkage with the proteins of this fraction might initiate the complex sequence of events at the metabolic level necessary for the pneumotoxicity. | — | — | — | [Giri 1986](https://pubmed.ncbi.nlm.nih.gov/2429861) |
+| Pulmonary edema | The paper states that the lung coefficient is a crucial indicator of pulmonary edema reflecting the severity of pulmonary fibrosis in rats, and notes that the limited efficacy of the API in alleviating pulmonary edema may be attributed to its inadequate absorption and low bioavailability in vivo. | — | 5 mg/kg bleomycin (unknown unknown) | — | [Jin 2025](https://pubmed.ncbi.nlm.nih.gov/41169753) |
+| Pulmonary injury | Bleomycin-containing regimens are reported to cause lung injury in 20–46% of Hodgkin lymphoma patients, a toxicity linked to the drug's free radical-producing capacity and the absence of bleomycin hydrolase in the lungs. | 20–46% | BLMH SNP A1450G (rs1050565) (BLMH A1450G); cumulative bleomycin dose; chest irradiation; colony stimulating factors | home: lung function/quality of life; hospital: lung clearance | [Jóna 2016](https://pubmed.ncbi.nlm.nih.gov/27327270) |
+| Respiratory failure | Without the intervention of therapeutics, the build-up of ECM in the lungs impairs tissue elasticity and impedes gas exchange, eventually leading to respiratory failure. | — | — | — | [Pawelec 2022](https://pubmed.ncbi.nlm.nih.gov/36426895) |
+| Respiratory toxicity | The paper records respiratory toxicities among the grade III/IV toxicity episodes monitored in 126 patients with Hodgkin lymphoma treated with ABVD chemotherapy, but does not report the specific incidence or details for this reaction. | — | — | hospital: respiratory toxicities | [Altés 2013](https://pubmed.ncbi.nlm.nih.gov/23323945) |
+| Tissue damage | In male ICR mice given intratracheal bleomycin (1, 2, or 4 mg/kg), lactate dehydrogenase (LDH) levels in bronchoalveolar lavage fluid and inflammatory cell counts increased in a dose-dependent manner. | — | higher dose (4 mg/kg vs 1 mg/kg) | laboratory: LDH activity in bronchoalveolar lavage fluid (BALF) | [Kim 2010](https://pubmed.ncbi.nlm.nih.gov/24278527) |
+
+<details><summary>Evidence: Pulmonary fibrosis (16)</summary>
+
+> “It has been shown that bleomycin is associated with an approximate 1% risk for death due to bleomycininduced pulmonary fibrosis.” — [Bokemeyer 2008](https://pubmed.ncbi.nlm.nih.gov/18398143) <sub>(review)</sub>
+
+> “Toxic effects may include mucositis, dermatitis, anaphylactic reactions, and rarely pulmonary fibrosis.” — [Glick 1980](https://pubmed.ncbi.nlm.nih.gov/6160777) <sub>(review)</sub>
+
+> “An estimated 335% of patients develop pulmonary fibrosis (Bauer et al.. 1983;White, 1987).” — [Marshall 1997](https://pubmed.ncbi.nlm.nih.gov/9076945) <sub>(case series)</sub>
+
+> “Compared with the control lungs, the lungs from the rats receiving the high doses of TLM S10 b and BLM had higher lesion scores for alveolar macrophages, alveolar cell hypertrophy/hyperplasia, alveolar proteinosis, and fibrosis... Rats receiving either the low or the high dose of BLM had higher scores for fibrosis than either TLM S10b dose group.” — [Schurig 1984](https://pubmed.ncbi.nlm.nih.gov/6207948) <sub>(animal)</sub>
+
+</details>
+
+<details><summary>Evidence: pulmonary toxicity (9)</summary>
+
+> “Patients carrying the XPO5 AA or CC genotype had a higher incidence of bleomycin-associated pulmonary toxicity than those with the AC genotype (10% vs. 1%; P = 0.048).” — [Navarro 2013](https://pubmed.ncbi.nlm.nih.gov/23705004) <sub>(case series)</sub>
+
+> “Despite being an effective chemotherapeutic agent, its use is limited by its potentially life-threatening pulmonary toxicity. [5] Its toxic effect is related to its free radical-producing capacity, while its lung specificity is related to the fact that BLMH is absent in the lungs. [2]” — [Jóna 2016](https://pubmed.ncbi.nlm.nih.gov/27327270) <sub>(cohort)</sub>
+
+> “Elderly patients (&gt; 70 years), and those who have received a total lifetime dose in excess of 450 units or chest irradiation, have a significantly increased risk of pulmonary toxicity (Blum et al. 1973).” — [Crom 1987](https://pubmed.ncbi.nlm.nih.gov/3555940) <sub>(review)</sub>
+
+> “The incidence of pulmonary toxicity, manifested by pneumonitis progressing to pulmonary fibrosis and death, ranged from zero to 6 per cent of patients in various studies and appeared to be related to the patient's age and total dose of bleomycin.2” — [Kramer 1978](https://pubmed.ncbi.nlm.nih.gov/78932) <sub>(case report)</sub>
+
+</details>
+
+<details><summary>Evidence: lung fibrosis (3)</summary>
+
+> “Bleomycin induces a transient lung fibrosis in mice that has been used to investigate mechanisms related to idiopathic pulmonary fibrosis. On day 21, all mice in the bleomycin group (n ¼ 8) had a significant increase in lung fibrosis histopathology score with a group average of 4.9 AE 0.4 (out of a maximum possible score of 8) when compared to a score of 0 AE 0 for the saline control group (n ¼ 7).” — [Phillips 2012](https://pubmed.ncbi.nlm.nih.gov/22024054) <sub>(animal)</sub>
+
+> “Resistance to BLMs’ cytotoxicity and BLM-induced lung fibrosis are two major clinical concerns for both BLM and A5 [14,48,49]. Since both BLM and A5 induce lung tissue-specific damage that leads to fibrosis in certain cancer patients and in different animal models, our results predict that the GAGs at lung epithelial cells might facilitate BLMs’ uptake.” — [He 2016](https://pubmed.ncbi.nlm.nih.gov/27376254) <sub>(case report)</sub>
+
+> “The chemotherapy drug, bleomycin, is well known for causing lung fibrosis during cancer treatment.” — [Pawelec 2022](https://pubmed.ncbi.nlm.nih.gov/36426895) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: Pulmonary inflammation (3)</summary>
+
+> “Treatment with P-2119 reduces the severity of chronic inflammation (Fig. 4b, Supplementary Fig. 5), as well as mortality associated with bleomycin-induced lung injury (Supplementary Fig. 6).” — [Hancock 2018](https://pubmed.ncbi.nlm.nih.gov/30560893) <sub>(animal)</sub>
+
+> “Bleomycin (2 U/kg, i.t.) 21 days after administration significantly increased by 2.7 fold the inflammatory cell influx into the bronchoalveolar lavage fluid when compared to saline treated controls (Fig. 2). The increase in total BALF cells was due to significant increases in macrophages, lymphocytes, and neutrophils when compared to the cells in BALF from saline treated controls which are comprised solely of…” — [Phillips 2012](https://pubmed.ncbi.nlm.nih.gov/22024054) <sub>(case report)</sub>
+
+> “BT groups exhibited changed cellular profiles in BAL fluid compared to the VC group, which had an increased number of total cells, neutrophils, and lymphocytes and a modest increase in the number of macrophages at 7 days post-bleomycin instillation.” — [Kim 2010](https://pubmed.ncbi.nlm.nih.gov/24278527) <sub>(animal)</sub>
+
+</details>
+
+<details><summary>Evidence: Pneumonitis (2)</summary>
+
+> “In the total cohort of 418 bleomycin-treated patients, BIP developed in 50 (12%) patients. Eight of these patients died of BIP, while bleomycin administration was stopped prematurely in 24 patients.” — [Nuver 2005](https://pubmed.ncbi.nlm.nih.gov/15900213) <sub>(cohort)</sub>
+
+> “Interestingly, no association was found of gene polymorphism either with acute bleomycin-induced pneumonitis or with pulmonary function tests performed during treatment.” — [Jóna 2016](https://pubmed.ncbi.nlm.nih.gov/27327270) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: Acute bleomycin-induced lung injury (1)</summary>
+
+> “Only one acute bleomycin- induced lung injury was documented among the investigated patients.” — [Jóna 2016](https://pubmed.ncbi.nlm.nih.gov/27327270) <sub>(cohort)</sub>
+
+</details>
+
+<details><summary>Evidence: bleomycin-induced pulmonary fibrosis (1)</summary>
+
+> “Although the cytotoxicity of bleomycin can reliably induce cell death in tumor cells, off-target effects can lead to a range of harmful consequences, from mild gastrointestinal irritation to severe bleomycin-induced pulmonary fibrosis (Blum et al. 1973).” — [Brady 2019](https://pubmed.ncbi.nlm.nih.gov/31171655) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: cough (1)</summary>
+
+> “The quality of life data showed that the development of a dry cough (P=0.002) rather than shortness of breath (P≥0.09) or chest tightness (P=0.18) was the only symptom significantly associated with the development of CT assessed lung toxicity.” — [Shamash 2017](https://pubmed.ncbi.nlm.nih.gov/28327896) <sub>(randomised trial)</sub>
+
+</details>
+
+<details><summary>Evidence: Decreased lung function (1)</summary>
+
+> “These data altogether indicate that BLM challenge decreased lung function (decreased inspiration volume and increased tissue volume) and evoked PH secondary to the PF development in G6PD S188F rats but not in WT littermates.” — [Signoretti 2026](https://pubmed.ncbi.nlm.nih.gov/41401977) <sub>(animal)</sub>
+
+</details>
+
+<details><summary>Evidence: Dyspnea (1)</summary>
+
+> “At 3 months, self-reported dyspnea had increased by approximately 18 points, similarly in all groups. The long-term levels did not differ from baseline levels. At the 2-year assessment, 16% of the patients recorded worsening of dyspnea.” — [Fosså 2003](https://pubmed.ncbi.nlm.nih.gov/12637478) <sub>(cohort)</sub>
+
+</details>
+
+<details><summary>Evidence: Fatal toxicity (1)</summary>
+
+> “For example, fatal toxicity is reported even at low doses (White and Stover, 1984;White, 1987).” — [Marshall 1997](https://pubmed.ncbi.nlm.nih.gov/9076945) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: fibrosis (1)</summary>
+
+> “In contrast, rats treated with BLM displayed a significant increase in collagen fibers deposition, accompanied by severe bleeding. The deposition of collagen fibers was observed to be concentrated around the walls of alveoli, bronchioles, and blood vessels.” — [Jin 2025](https://pubmed.ncbi.nlm.nih.gov/41169753) <sub>(animal)</sub>
+
+</details>
+
+<details><summary>Evidence: hemorrhage (1)</summary>
+
+> “BLM-treated rats displayed severe structural abnormalities, including incomplete alveolar structures, inflated alveoli, and thickened alveolar walls. Focal hemorrhages were also observed in the field of view, with a prominent presence of red blood cells, as well as dense inflammatory infiltrates and significant pigmentation.” — [Jin 2025](https://pubmed.ncbi.nlm.nih.gov/41169753) <sub>(animal)</sub>
+
+</details>
+
+<details><summary>Evidence: Idiopathic pulmonary fibrosis (1)</summary>
+
+> “IPF was induced through a single administration of 50 µL of BLM solution (5 mg mL-1) via intratracheal instillation (ITI) (Comeglio et al., 2017;Comeglio et al., 2019;Della Latta et al., 2015;Kandhare et al., 2015;Marudamuthu et al., 2019).” — [Kang 2022](https://doi.org/10.1080/10717544.2022.2149899) <sub>(animal)</sub>
+
+</details>
+
+<details><summary>Evidence: inflammation (1)</summary>
+
+> “BLM contributes to these effects when it induces OS in rat lung tissue. Factors of TGF-β1 and IL-6 could be released on account of facilitation by BLM” — [Jin 2025](https://pubmed.ncbi.nlm.nih.gov/41169753) <sub>(animal)</sub>
+
+</details>
+
+<details><summary>Evidence: Interstitial lung disease (1)</summary>
+
+> “The chemotherapy drug, bleomycin sulfate, results in the highest incidence of drug-induced interstitial lung disease 1 and has been extensively studied as a fibrosis-inducing agent in animal models, 14,22 making it a good starting point for testing MRTF-inhibitors as preventive treatments.” — [Pawelec 2022](https://pubmed.ncbi.nlm.nih.gov/36426895) <sub>(animal)</sub>
+
+</details>
+
+<details><summary>Evidence: Interstitial pneumonitis (1)</summary>
+
+> “Used as a chemotherapeutic for several malignancies, it is associated with drug-induced interstitial pneumonitis and PF as spontaneous adverse outcome” — [Möbus 2025](https://pubmed.ncbi.nlm.nih.gov/40623988) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: Lung inflammation (1)</summary>
+
+> “Bleomycin administration in the lungs of mice results in an initial inflammatory phase lasting 7 to 10 days that then resolves into a fibrotic phase.” — [van 2022](https://pubmed.ncbi.nlm.nih.gov/36309093) <sub>(animal)</sub>
+
+</details>
+
+<details><summary>Evidence: Lung injury (1)</summary>
+
+> “Following bleomycin challenge, both Scgb1a1-Muc5bTg and SFTPC-Muc5bTg mice demonstrate substantial lung injury that was less prominent in Muc5b−/− mice (Fig. 1e).” — [Hancock 2018](https://pubmed.ncbi.nlm.nih.gov/30560893) <sub>(animal)</sub>
+
+</details>
+
+<details><summary>Evidence: Lung toxicity (1)</summary>
+
+> “Its clinical use is however limited by lung toxicity, and it can cause fibrosis reminiscent of that found in interstitial lung diseases including IPF; this observation led to its use in rodents as a lung fibrosis model (12).” — [van 2022](https://pubmed.ncbi.nlm.nih.gov/36309093) <sub>(case report)</sub>
+
+</details>
+
+<details><summary>Evidence: pneumotoxicity (1)</summary>
+
+> “It was concluded from the findings of this study that the presence of a major portion of [3H]BLM in the SF of the lung and its covalent linkage with the proteins of this fraction might initiate the complex sequence of events at the metabolic level necessary for the pneumotoxicity.” — [Giri 1986](https://pubmed.ncbi.nlm.nih.gov/2429861) <sub>(in vitro)</sub>
+
+</details>
+
+<details><summary>Evidence: pulmonary edema (1)</summary>
+
+> “The lung coefficient is a crucial indicator of pulmonary edema, reflecting the severity of pulmonary fibrosis.” — [Jin 2025](https://pubmed.ncbi.nlm.nih.gov/41169753) <sub>(animal)</sub>
+
+</details>
+
+<details><summary>Evidence: Pulmonary injury (1)</summary>
+
+> “Currently used standard of care, first line therapy, bleomycin-containing ABVD (doxorubicin, bleomycin, vinblastin, dacarbasin) and BEACOPP (bleomycin, etoposide, doxorubicin, cyclophosphamide, vincristine, procarbazine, prednisone) have been reported to produce bleomycin- induced lung injury in 20–46% of patients.” — [Jóna 2016](https://pubmed.ncbi.nlm.nih.gov/27327270) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: Respiratory failure (1)</summary>
+
+> “Without the intervention of therapeutics, the build-up of ECM in the lungs impairs tissue elasticity and impedes gas exchange, eventually leading to respiratory failure.” — [Pawelec 2022](https://pubmed.ncbi.nlm.nih.gov/36426895) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: Respiratory toxicity (1)</summary>
+
+> “We recorded all grade III/IV toxicity episodes (anemia, neutropenia, hemorrhagic cystitis, infections, mucositis, nausea and vomiting and cardiac, renal or respiratory toxicities) (National Cancer Institute [NCI] criteria).” — [Altés 2013](https://pubmed.ncbi.nlm.nih.gov/23323945) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: Tissue damage (1)</summary>
+
+> “Moreover, BT groups showed a dose-dependent increase in LDH levels and inflammatory cell counts.” — [Kim 2010](https://pubmed.ncbi.nlm.nih.gov/24278527) <sub>(animal)</sub>
+
+</details>
+
+### Skin
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Alopecia | Alopecia was observed in 52.94% of testicular cancer patients treated with BEP chemotherapy, and severe alopecia was significantly associated with cumulative bleomycin dose and bleomycin dose by average. | 52.94% | BLMH rs1050565 G/G genotype (BLMH G); ERCC2 rs13181 T/G + G/G genotype (ERCC2 T/G, G/G); Bleomycin cumulative dose; dose (unknown unknown) | — | [Lavanderos 2019](https://pubmed.ncbi.nlm.nih.gov/30914949), [Crom 1987](https://pubmed.ncbi.nlm.nih.gov/3555940) |
+| Hyperkeratosis | Mucocutaneous toxicities, including stomatitis, alopecia, hyperpigmentation of skin, and hyperkeratosis are common, and the incidence and severity are dose related. | — | dose related | — | [Crom 1987](https://pubmed.ncbi.nlm.nih.gov/3555940), [Bokemeyer 2008](https://pubmed.ncbi.nlm.nih.gov/18398143) |
+| Allergic reactions | The paper lists allergic reactions among the side effects of bleomycin. | — | — | — | [Bokemeyer 2008](https://pubmed.ncbi.nlm.nih.gov/18398143) |
+| Cutaneous reaction | Drug toxicity occurs as a minor cutaneous reaction in about half of the patients treated. | about half | — | — | [Kramer 1978](https://pubmed.ncbi.nlm.nih.gov/78932) |
+| Dermatitis | The paper lists dermatitis as one of the potential toxic effects of bleomycin sulfate, noting that limited bone marrow toxicity is observed with the usual dosage of 15 mg per sq. m. given twice weekly, but it does not specify the frequency, severity, or specific characteristics of the dermatitis. | — | — | — | [Glick 1980](https://pubmed.ncbi.nlm.nih.gov/6160777) |
+| Hyperpigmentation | Hyperpigmentation of the skin is a common mucocutaneous toxicity of bleomycin whose incidence and severity are dose related. | common | dose related | — | [Crom 1987](https://pubmed.ncbi.nlm.nih.gov/3555940) |
+| Injection site reaction | Injection site reactions were the most frequently reported adverse event related to the study drug, occurring specifically in the highest dose subcutaneous (1200 mg) cohort among healthy adult volunteers. | 4 (11.1) | — | — | [Han 2024](https://pubmed.ncbi.nlm.nih.gov/38662148) |
+| Pigmentation changes | The paper lists pigmentation changes of the skin among the side effects of bleomycin, but provides no description of who experiences it, how it presents, or how often it occurs. | — | — | — | [Bokemeyer 2008](https://pubmed.ncbi.nlm.nih.gov/18398143) |
+| Skin rash | The paper states that bleomycin induced skin rash, which must be monitored carefully by an experienced medical oncologist in patients receiving a regimen of high-dosage platinum and a seven-day bleomycin infusion. | — | — | hospital: skin rash | [Glick 1980](https://pubmed.ncbi.nlm.nih.gov/6160777) |
+
+<details><summary>Evidence: alopecia (2)</summary>
+
+> “Alopecia | 63 | 52.94 | 5 | 4.20” — [Lavanderos 2019](https://pubmed.ncbi.nlm.nih.gov/30914949) <sub>(cohort)</sub>
+
+> “Mucocutaneous toxicities, including stomatitis, alopecia, hyperpigmentation of skin, and hyperkeratosis are common, and the incidence and severity are dose related.” — [Crom 1987](https://pubmed.ncbi.nlm.nih.gov/3555940) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: hyperkeratosis (2)</summary>
+
+> “Mucocutaneous toxicities, including stomatitis, Alopecia, hyperpigmentation of skin, and hyperkeratosis are common, and the incidence and severity are dose related.” — [Crom 1987](https://pubmed.ncbi.nlm.nih.gov/3555940) <sub>(review)</sub>
+
+> “Among its side effects are allergic reactions, mucositis, mild myelosuppression, hyperkeratosis and pigmentation changes of the skin, and, in particular, pulmonary fibrosis.” — [Bokemeyer 2008](https://pubmed.ncbi.nlm.nih.gov/18398143) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: Allergic reactions (1)</summary>
+
+> “Among its side effects are allergic reactions, mucositis, mild myelosuppression, hyperkeratosis and pigmentation changes of the skin, and, in particular, pulmonary fibrosis.” — [Bokemeyer 2008](https://pubmed.ncbi.nlm.nih.gov/18398143) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: cutaneous reaction (1)</summary>
+
+> “Drug toxicity occurs as a minor cutaneous reaction in about half of the patients treated.” — [Kramer 1978](https://pubmed.ncbi.nlm.nih.gov/78932) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: dermatitis (1)</summary>
+
+> “Toxic effects may include mucositis, dermatitis, anaphylactic reactions, and rarely pulmonary fibrosis. Limited bone marrow toxicity has been observed with the usual dosage of 15 rag. per sq. m. given subcutaneously, intramuscularly, or intravenously twice weekly.” — [Glick 1980](https://pubmed.ncbi.nlm.nih.gov/6160777) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: hyperpigmentation (1)</summary>
+
+> “Mucocutaneous toxicities, including stomatitis, alopecia, hyperpigmentation of skin, and hyperkeratosis are common, and the incidence and severity are dose related.” — [Crom 1987](https://pubmed.ncbi.nlm.nih.gov/3555940) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: Injection site reaction (1)</summary>
+
+> “The most frequently reported AEs were injection site reaction (highest dose SC cohort) and infusion-related reaction (highest dose IV cohort).” — [Han 2024](https://pubmed.ncbi.nlm.nih.gov/38662148) <sub>(randomised trial)</sub>
+
+</details>
+
+<details><summary>Evidence: Pigmentation changes (1)</summary>
+
+> “Among its side effects are allergic reactions, mucositis, mild myelosuppression, hyperkeratosis and pigmentation changes of the skin, and, in particular, pulmonary fibrosis.” — [Bokemeyer 2008](https://pubmed.ncbi.nlm.nih.gov/18398143) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: skin rash (1)</summary>
+
+> “However, bleomycin induced skin rash, fever, weight loss, and elevations of the serum creatinine level must be monitored carefully by an experienced medical oncologist, and this regimen does require inpatient hospitalization for at least one week.” — [Glick 1980](https://pubmed.ncbi.nlm.nih.gov/6160777) <sub>(randomised trial)</sub>
+
+</details>
+
 ## ADME sites
 
 Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=bleomycin).

@@ -67,6 +67,161 @@ Cetuximab is a monoclonal antibody used to treat several cancers, mainly head an
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Le_2019_reference](drugs/drug_cetuximab/Cetuximab_Le2019_reference.md) | — | 1-compartment (no model) | 0 | Le Louedec F et al., Cetuximab pharmacokinetic/pharmacodynam…, British journal of clinical… (2019) | [10.1111/bcp.13907](https://doi.org/10.1111/bcp.13907) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Wang_2011_reference](drugs/drug_cetuximab/Cetuximab_Wang2011_reference.md) | — | 1-compartment (no model) | 0 | Wang C et al., Phase 1 study of anti-epidermal growth…, mAbs (2011) | [10.4161/mabs.3.1.14021](https://doi.org/10.4161/mabs.3.1.14021) |
 
+## Adverse drug reactions (ADR)
+
+16 reaction(s) reported in 7 paper(s). Read from the full texts by a language model, which also wrote the one-sentence descriptions; each sentence quoted under a reaction was checked to occur in the paper, the rest is not checked by a person. Frequencies are as the papers print them, for their own populations and definitions.
+
+### Endocrine and metabolic
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Hypothyroidism | Hypothyroidism was reported in 6 of 19 patients (31.6%) with no events of grade 3 or higher severity. | 6 (31.6) | — | — | [Cognetti 2026](https://pubmed.ncbi.nlm.nih.gov/40852760) |
+
+<details><summary>Evidence: hypothyroidism (1)</summary>
+
+> “Hypothyroidism | 6 (31.6) | 0” — [Cognetti 2026](https://pubmed.ncbi.nlm.nih.gov/40852760) <sub>(cohort)</sub>
+
+</details>
+
+### Eye
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Eye disorders | The paper states that in patients treated with cetuximab for EGFR positive refractory colorectal cancer, inhibiting EGFR functions leads to additional side effects, including eye disorders, alongside changes in scalp and hair growth, xerosis, pruritus, and nail disorders. | — | — | — | [Bloch 2025](https://pubmed.ncbi.nlm.nih.gov/41246356) |
+
+<details><summary>Evidence: eye disorders (1)</summary>
+
+> “By inhibiting EGFR functions, additional side effects arise as changes in the scalp and hair growth, xerosis and pruritus, as well as nail and eye disorders (27–29).” — [Bloch 2025](https://pubmed.ncbi.nlm.nih.gov/41246356) <sub>(review)</sub>
+
+</details>
+
+### Gastrointestinal
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Constipation | In the treated population of 19 patients, 7 patients (36.8%) experienced constipation of any grade, and no patients experienced constipation of grade ≥ 3. | 7 (36.8) | — | — | [Cognetti 2026](https://pubmed.ncbi.nlm.nih.gov/40852760) |
+| Mucositis | Mucositis was one of the toxicities analyzed in 21 patients with locally advanced head and neck squamous cell carcinoma (LAHNSCC) treated with cetuximab and radiotherapy, with grades ranging from 0 to 4 observed. | Grade 0: 2; Grade 1: 1; Grade 2: 6; Grade 3: 11; Grade 4: 1 | — | — | [Pointreau 2016](https://pubmed.ncbi.nlm.nih.gov/27631463) |
+
+<details><summary>Evidence: constipation (1)</summary>
+
+> “Constipation | 7 (36.8) | 0 ... ASP‐1929 photoimmunotherapy was delayed for any grade ≥ 3 adverse events attributed to ASP‐1929 photoimmunotherapy, with the following exceptions: ... constipation that could be managed with supportive care;” — [Cognetti 2026](https://pubmed.ncbi.nlm.nih.gov/40852760) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: Mucositis (1)</summary>
+
+> “Toxicities (radiation dermatitis, mucositis, and folliculitis) were graded for severity from grades 1 to 5, according to the CTCAE v4.02 scale. Cetuximab-related toxicities were analyzed each week during radiotherapy in curative intent (and its potential impact) only in the LAHNSCC population (N = 21).” — [Pointreau 2016](https://pubmed.ncbi.nlm.nih.gov/27631463) <sub>(case series)</sub>
+
+</details>
+
+### General
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Drug resistance | Epidermal growth factor receptor inhibitors cetuximab and panitumumab are restricted to specific wild-type patients, with risks of drug resistance and potential hypersensitivity reactions. | — | — | — | [Li 2026](https://pubmed.ncbi.nlm.nih.gov/42505275) |
+| Fatigue | Fatigue was reported in 11 patients (57.9%) of the treated population, all with an unknown severity grade as no grade 3 or higher events were recorded for this term. | 11 (57.9) | pembrolizumab | primary_care: fatigue | [Cognetti 2026](https://pubmed.ncbi.nlm.nih.gov/40852760) |
+
+<details><summary>Evidence: drug resistance (1)</summary>
+
+> “Epidermal growth factor receptor inhibitors cetuximab and panitumumab are restricted to specific wild-type patients, with risks of drug resistance and potential hypersensitivity reactions.” — [Li 2026](https://pubmed.ncbi.nlm.nih.gov/42505275) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: fatigue (1)</summary>
+
+> “The most frequent all‐grade TEAEs were fatigue, oral pain, and constipation (Table 3).” — [Cognetti 2026](https://pubmed.ncbi.nlm.nih.gov/40852760) <sub>(randomised trial)</sub>
+
+</details>
+
+### Immune / hypersensitivity
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Hypersensitivity | The paper states that epidermal growth factor receptor inhibitors cetuximab and panitumumab are associated with risks of potential hypersensitivity reactions in specific wild-type patients. | — | — | — | [Li 2026](https://pubmed.ncbi.nlm.nih.gov/42505275), [Sheng 2026](https://pubmed.ncbi.nlm.nih.gov/41744483) |
+
+<details><summary>Evidence: hypersensitivity (2)</summary>
+
+> “Epidermal growth factor receptor inhibitors cetuximab and panitumumab are restricted to specific wild-type patients, with risks of drug resistance and potential hypersensitivity reactions.” — [Li 2026](https://pubmed.ncbi.nlm.nih.gov/42505275) <sub>(review)</sub>
+
+> “Early Japanese studies of cetuximab reported similar PK and safety to Western cohorts, likewise supporting unified dosing [25].” — [Sheng 2026](https://pubmed.ncbi.nlm.nih.gov/41744483) <sub>(case series)</sub>
+
+</details>
+
+### Infection
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Infusion-related reaction | The paper reports that 254 out of 3216 patients receiving ramucirumab experienced at least one immediate infusion-related reaction (any grade), with an overall incidence of 7.9%. | 254/3216 (7.9%) | residing in Asia; receiving chemotherapy; no premedication | — | [Gao 2021](https://pubmed.ncbi.nlm.nih.gov/33532866), [Cognetti 2026](https://pubmed.ncbi.nlm.nih.gov/40852760) |
+
+<details><summary>Evidence: infusion-related reaction (2)</summary>
+
+> “In the pooled dataset, 254/3216 (7.9%) patients receiving ramucirumab experienced at least one immediate any-grade IRR (Table 1).” — [Gao 2021](https://pubmed.ncbi.nlm.nih.gov/33532866) <sub>(review)</sub>
+
+> “Infusion reactions, all related to ASP‐1929, were reported for five patients and consisted of non‐serious grade 1 or 2 events (rash, itching, back pain, dyspnea, hyperhidrosis, stomach cramps/ache, tightness of throat, fever, myalgia diarrhea, headache, chills, nausea, and vomiting).” — [Cognetti 2026](https://pubmed.ncbi.nlm.nih.gov/40852760) <sub>(case series)</sub>
+
+</details>
+
+### Skin
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Acne-like skin rash | In Phase II trials of cetuximab treatment in patients with epidermal growth factor receptor (EGFR) positive refractory colorectal cancer, more than 86% of patients developed acne-like skin rash, including 18% developing grade 3 symptoms (26). | more than 86% of patients developed acne-like skin rash, including 18% developing grade 3 symptoms | — | — | [Bloch 2025](https://pubmed.ncbi.nlm.nih.gov/41246356) |
+| Folliculitis | In 21 patients with locally advanced head and neck squamous cell carcinoma (LAHNSCC) treated with cetuximab and radiotherapy, 9 patients (43%) experienced low-grade folliculitis (CTCAE grades 0-1) and 12 patients (57%) experienced severe folliculitis (CTCAE grades 2-3). | Low = 9; Severe = 12 | radiotherapy | hospital: severity grade | [Pointreau 2016](https://pubmed.ncbi.nlm.nih.gov/27631463) |
+| Hair growth changes | In patients with EGFR positive refractory colorectal cancer treated with cetuximab, side effects arise as changes in the scalp and hair growth due to the inhibition of EGFR functions in healthy tissue where EGFR is commonly expressed in the basal layer of the epidermis. | — | — | — | [Bloch 2025](https://pubmed.ncbi.nlm.nih.gov/41246356) |
+| Nail and eye disorders | In patients treated with cetuximab, inhibiting EGFR functions leads to side effects including nail and eye disorders. | — | — | — | [Bloch 2025](https://pubmed.ncbi.nlm.nih.gov/41246356) |
+| Pruritus | In patients with epidermal growth factor receptor (EGFR) positive refractory colorectal cancer, pruritus is reported as an additional side effect arising from the inhibition of EGFR functions. | — | — | — | [Bloch 2025](https://pubmed.ncbi.nlm.nih.gov/41246356) |
+| Radiation dermatitis | Patients with locally advanced head and neck squamous cell carcinoma treated with cetuximab and radiotherapy developed radiation dermatitis, with 13 of 21 patients experiencing severe toxicity (grades 3-4) and 8 experiencing low toxicity (grades 0-2). | Severe = 13, Low = 8 (out of N = 21) | radiotherapy | hospital: severity from grades 1 to 5, according to the CTCAE v4.02 scale | [Pointreau 2016](https://pubmed.ncbi.nlm.nih.gov/27631463) |
+| Rash | In a study of 33 patients treated with a combination of tislelizumab, cetuximab, and irinotecan, cetuximab dose was reduced in 9 patients (27%) due to rash. | 9 patients (27%) | — | — | [Xu 2024](https://pubmed.ncbi.nlm.nih.gov/39179622) |
+| Xerosis | In patients with EGFR positive refractory colorectal cancer treated with cetuximab, xerosis occurs as an additional side effect resulting from the inhibition of EGFR functions. | — | — | — | [Bloch 2025](https://pubmed.ncbi.nlm.nih.gov/41246356) |
+
+<details><summary>Evidence: acne-like skin rash (1)</summary>
+
+> “In Phase II trials of cetuximab treatment in patients with epidermal growth factor receptor (EGFR) positive refractory colorectal cancer, more than 86% of patients developed acne-like skin rash, including 18% developing grade 3 symptoms (26).” — [Bloch 2025](https://pubmed.ncbi.nlm.nih.gov/41246356) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: Folliculitis (1)</summary>
+
+> “Toxicities (radiation dermatitis, mucositis, and folliculitis) were graded for severity from grades 1 to 5, according to the CTCAE v4.02 scale. Cetuximab-related toxicities were analyzed each week during radiotherapy in curative intent (and its potential impact) only in the LAHNSCC population (N = 21).” — [Pointreau 2016](https://pubmed.ncbi.nlm.nih.gov/27631463) <sub>(cohort)</sub>
+
+</details>
+
+<details><summary>Evidence: hair growth changes (1)</summary>
+
+> “In healthy tissue, EFGR is commonly expressed in the basal layer of the epidermis and regulates growth, differentiation, and wound healing. By inhibiting EGFR functions, additional side effects arise as changes in the scalp and hair growth, xerosis and pruritus, as well as nail and eye disorders (27–29).” — [Bloch 2025](https://pubmed.ncbi.nlm.nih.gov/41246356) <sub>(case report)</sub>
+
+</details>
+
+<details><summary>Evidence: nail and eye disorders (1)</summary>
+
+> “By inhibiting EGFR functions, additional side effects arise as changes in the scalp and hair growth, xerosis and pruritus, as well as nail and eye disorders (27–29).” — [Bloch 2025](https://pubmed.ncbi.nlm.nih.gov/41246356) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: pruritus (1)</summary>
+
+> “By inhibiting EGFR functions, additional side effects arise as changes in the scalp and hair growth, xerosis and pruritus, as well as nail and eye disorders (27–29).” — [Bloch 2025](https://pubmed.ncbi.nlm.nih.gov/41246356) <sub>(case report)</sub>
+
+</details>
+
+<details><summary>Evidence: Radiation dermatitis (1)</summary>
+
+> “Patients with LAHNSCC who developed severe radiation dermatitis toxicity (grade more than 3) had a longer OS than that of the other patients (P = 0.005, Fig. 3).” — [Pointreau 2016](https://pubmed.ncbi.nlm.nih.gov/27631463) <sub>(cohort)</sub>
+
+</details>
+
+<details><summary>Evidence: rash (1)</summary>
+
+> “The cetuximab dose was reduced in 9 patients (27%) due to rash, and irinotecan dose was reduced in 11 patients (33%) due to diarrhea or hematologic toxicity or vomiting.” — [Xu 2024](https://pubmed.ncbi.nlm.nih.gov/39179622) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: xerosis (1)</summary>
+
+> “In Phase II trials of cetuximab treatment in patients with epidermal growth factor receptor (EGFR) positive refractory colorectal cancer, more than 86% of patients developed acne-like skin rash, including 18% developing grade 3 symptoms (26). In healthy tissue, EFGR is commonly expressed in the basal layer of the epidermis and regulates growth, differentiation, and wound healing. By inhibiting EGFR functions…” — [Bloch 2025](https://pubmed.ncbi.nlm.nih.gov/41246356) <sub>(review)</sub>
+
+</details>
+
 ## ADME sites
 
 Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=cetuximab).
