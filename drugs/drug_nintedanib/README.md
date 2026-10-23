@@ -56,9 +56,31 @@ Nintedanib is a protein kinase inhibitor used to treat idiopathic pulmonary fibr
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Hartmann_2026_FVC](drugs/drug_nintedanib/pd_Hartmann_2026_FVC.md) | FVC %predicted ← nintedanib · direct Emax (saturable) effect | model (no simulator) | Hartmann S et al., Population Pharmacokinetics and Exposur…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70135](https://doi.org/10.1002/psp4.70135) |
 | <span class="pk-badge pk-badge--red">Rejected</span> | [Hartmann_2026_FVC_2](drugs/drug_nintedanib/pd_Hartmann_2026_FVC_2.md) | FVC Z-score ← nintedanib · direct Emax (saturable) effect | model (no simulator) | Hartmann S et al., Population Pharmacokinetics and Exposur…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70135](https://doi.org/10.1002/psp4.70135) |
 
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=nintedanib).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| absorption | small intestine | `ABCB1` inhibitor/substrate, `ABCG2` unknown | DrugBank actor |
+| distribution | blood | `ALB` substrate | DrugBank actor |
+| distribution | blood-brain barrier | `ABCB1` inhibitor/substrate, `ABCG2` unknown | DrugBank actor |
+| distribution | mammary gland | `ABCG2` unknown | DrugBank actor |
+| distribution | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
+| distribution | testis | `ABCB1` inhibitor/substrate, `ABCG2` unknown | DrugBank actor |
+| metabolism | blood | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| metabolism | liver | `CYP3A4` substrate, `SLC22A1` inhibitor/substrate, `UGT1A1` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate, `UGT1A1` substrate | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | `ABCB1` inhibitor/substrate | DrugBank actor |
+| excretion | liver | `ABCB1` inhibitor/substrate, `ABCG2` unknown | DrugBank actor |
+
+<sub>Actors without a tissue in the table: FGFR1 (inhibitor), FGFR2 (inhibitor), FGFR3 (inhibitor), FLT1 (inhibitor), FLT3 (inhibitor), FLT4 (inhibitor), KDR (inhibitor), LCK (inhibitor), LYN (inhibitor), PDGFRA (inhibitor), PDGFRB (inhibitor), SRC (inhibitor), UGT1A10 (substrate), UGT1A7 (substrate), UGT1A8 (substrate).</sub>
+
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
@@ -68,7 +90,7 @@ Nintedanib is a protein kinase inhibitor used to treat idiopathic pulmonary fibr
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 03:23 | 5:01 | 1/1/0 | 1/1/0 | 0/0/0 | 132,562/29,432 | openai / gpt-6-luna | 5 | 0/5 | 5/0 | 0 |
+| 2026-10-07 03:23 | 5:01 | 1/1/0 | 2/0/0 | 0/0/0 | 132,562/29,432 | openai / gpt-6-luna | 5 | 0/5 | 5/0 | 0 |
 
 ## Coverage
 

@@ -49,9 +49,29 @@ Benzylpenicillin is a penicillin antibiotic used to treat bacterial infections s
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [Shah_2023_reference](drugs/drug_benzylpenicillin/Benzylpenicillin_Shah2023_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Shah RV et al., Population Pharmacokinetic Study of Ben…, Antibiotics (Basel, Switzer… (2023) | [10.3390/antibiotics12040643](https://doi.org/10.3390/antibiotics12040643) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22 — no SI value to build from</sub> | [Yoo_2025_reference](drugs/drug_benzylpenicillin/Benzylpenicillin_Yoo2025_reference.md) | — | 2-compartment (no model) | 4 | Yoo O et al., Population pharmacokinetics of penicill…, Antimicrobial agents and ch… (2025) | [10.1128/aac.00269-25](https://doi.org/10.1128/aac.00269-25) |
 
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=benzylpenicillin).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | kidney | `SLC22A4` inhibitor, `SLC22A5` inhibitor | DrugBank actor |
+| absorption | liver | `SLCO2B1` substrate | DrugBank actor |
+| absorption | skeletal muscle | `SLC22A5` inhibitor | DrugBank actor |
+| absorption | small intestine | `SLC15A1` inhibitor/substrate, `SLC22A4` inhibitor, `SLC22A5` inhibitor, `SLCO2B1` substrate | DrugBank actor |
+| distribution | blood | `ALB` binder | DrugBank actor |
+| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| metabolism | liver | `SLCO1B1` substrate | DrugBank actor |
+| metabolism | skeletal muscle | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | `SLC15A2` inhibitor/substrate, `SLC22A6` inhibitor, `SLC22A8` inhibitor/substrate | DrugBank actor |
+| excretion | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: SLC22A11 (inhibitor), SLCO3A1 (substrate), SLCO4A1 (substrate).</sub>
+
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
@@ -61,7 +81,7 @@ Benzylpenicillin is a penicillin antibiotic used to treat bacterial infections s
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 11:02 | 2:02 | 1/0/1 | 0/0/0 | 0/0/0 | 59,034/6,411 | einfracz / qwen3.8-27b | 8 | 0/4 | 8/0 | 0 |
+| 2026-10-07 11:02 | 2:02 | 2/0/0 | 0/0/0 | 0/0/0 | 59,034/6,411 | einfracz / qwen3.8-27b | 8 | 0/4 | 8/0 | 0 |
 
 ## Coverage
 

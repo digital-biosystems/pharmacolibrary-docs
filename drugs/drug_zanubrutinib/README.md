@@ -45,9 +45,27 @@ Zanubrutinib is a Bruton's tyrosine kinase inhibitor used to treat blood cancers
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T1_tmax</sub><br><sub>blocking: T1_t_half_beta</sub> | [Ou_2021_reference](drugs/drug_zanubrutinib/Zanubrutinib_Ou2021_reference.md) | ▶ model + simulator | 2-compartment, oral | 5 | Ou YC et al., Population Pharmacokinetic Analysis of…, Clinical and translational… (2021) | [10.1111/cts.12948](https://doi.org/10.1111/cts.12948) |
 
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=zanubrutinib).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
+| distribution | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
+| distribution | placenta | `ABCB1` substrate | DrugBank actor |
+| distribution | testis | `ABCB1` substrate | DrugBank actor |
+| metabolism | liver | `CYP2B6` inducer, `CYP3A4` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | `ABCB1` substrate | DrugBank actor |
+| excretion | liver | `ABCB1` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: BLK (inhibitor), BMX (inhibitor), BTK (inhibitor), EGFR (inhibitor), ERBB2 (inhibitor), ERBB4 (inhibitor), FGR (inhibitor), FRK (inhibitor), ITK (inhibitor), JAK2 (inhibitor), JAK3 (inhibitor), LCK (inhibitor), PTK6 (inhibitor), TEC (inhibitor), TXK (inhibitor).</sub>
+
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
@@ -57,7 +75,7 @@ Zanubrutinib is a Bruton's tyrosine kinase inhibitor used to treat blood cancers
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 08:58 | 1:50 | 0/0/1 | 0/0/0 | 0/0/0 | 23,792/9,220 | openai / gpt-6-luna | 1 | 1/0 | 1/0 | 0 |
+| 2026-10-07 08:58 | 1:50 | 1/0/0 | 0/0/0 | 0/0/0 | 23,792/9,220 | openai / gpt-6-luna | 1 | 1/0 | 1/0 | 0 |
 
 ## Coverage
 

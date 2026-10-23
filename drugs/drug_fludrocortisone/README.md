@@ -46,9 +46,25 @@ Fludrocortisone is a mineralocorticoid corticosteroid used to treat conditions s
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Christ_1993_IP3](drugs/drug_fludrocortisone/pd_Christ_1993_IP3.md) | IP3 ← fludrocortisone · direct Emax (saturable) effect | — | Christ M et al., The inositol-1,4,5-trisphosphate system…, The Journal of clinical end… (1993) | [10.1210/jcem.77.6.8263127](https://doi.org/10.1210/jcem.77.6.8263127) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Hamitouche_2017_urinary_sodium_potassium_ratio](drugs/drug_fludrocortisone/pd_Hamitouche_2017_urinary_sodium_potassium_ratio.md) | urinary sodium/potassium ratio ← fludrocortisone · indirect response — drug inhibits the production of urinary sodium/potassium ratio | — | Hamitouche N et al., Population Pharmacokinetic-Pharmacodyna…, The AAPS journal (2017) | [10.1208/s12248-016-0041-9](https://doi.org/10.1208/s12248-016-0041-9) |
 
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=fludrocortisone).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| distribution | blood | `ALB` substrate | DrugBank actor |
+| metabolism | liver | `CYP3A4` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| — | prostate gland | `AR` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: HSD11B1 (substrate), HSD11B2 (substrate), NR3C1 (target), NR3C2 (target), SERPINA6 (substrate).</sub>
+
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
@@ -58,7 +74,7 @@ Fludrocortisone is a mineralocorticoid corticosteroid used to treat conditions s
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 09:33 | 1:02 | 0/1/1 | 1/0/1 | 0/0/0 | 46,534/3,259 | einfracz / qwen3.8-27b | 1 | 1/0 | 1/0 | 0 |
+| 2026-10-07 09:33 | 1:02 | 1/1/0 | 2/0/0 | 0/0/0 | 46,534/3,259 | einfracz / qwen3.8-27b | 1 | 1/0 | 1/0 | 0 |
 
 ## Coverage
 

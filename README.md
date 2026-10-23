@@ -1,6 +1,6 @@
 <!-- AUTOGEN:intro START — spliced from docs/README-template.md; edit THAT file, not this region -->
 # Pharmacolibrary
-v26.09 (built 22/10/2026 21:50:05 UTC)
+v26.09 (built 23/10/2026 08:24:38 UTC)
 
 Pharmacokinetic (PK), pharmacodynamic (PD) and pharmacogenomic (PGx) models extracted from the
 published literature, with downloads and a simulator you can run in the browser.
@@ -25,7 +25,7 @@ published literature, with downloads and a simulator you can run in the browser.
 [semaglutide](drugs/drug_semaglutide/) ·
 [tolvaptan](drugs/drug_tolvaptan/)
 
-2,758 drugs · 1,240 popPK, 2,959 PD and 473 PGx records that passed their checks · [how they were made](pipeline.md) · [data & downloads](data.md)
+2,758 drugs · 3,389 popPK, 3,700 PD and 473 PGx records extracted (rejected ones not counted) · [how they were made](pipeline.md) · [data & downloads](data.md)
 
 ## Record status
 

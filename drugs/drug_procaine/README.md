@@ -62,9 +62,25 @@ Procaine is a local anesthetic used to relieve pain, for example in procedures i
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Shimatani_2024_Ca2](drugs/drug_procaine/pd_Shimatani_2024_Ca2.md) | mAChR-mediated Ca2+ responses ← procaine · direct Emax (saturable) effect | — | Shimatani M et al., Local anesthetics inhibit muscarinic ac…, Journal of oral biosciences (2024) | [10.1016/j.job.2024.04.002](https://doi.org/10.1016/j.job.2024.04.002) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Shimatani_2024_arrestin](drugs/drug_procaine/pd_Shimatani_2024_arrestin.md) | carbachol-mediated recruitment of β-arrestin ← procaine · inhibition effect | — | Shimatani M et al., Local anesthetics inhibit muscarinic ac…, Journal of oral biosciences (2024) | [10.1016/j.job.2024.04.002](https://doi.org/10.1016/j.job.2024.04.002) |
 
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=procaine).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | blood | `BCHE` inhibitor/substrate | DrugBank actor |
+| metabolism | brain | `MAOA` inhibitor | DrugBank actor |
+| metabolism | liver | `BCHE` inhibitor/substrate, `MAOA` inhibitor | DrugBank actor |
+| metabolism | small intestine | `MAOA` inhibitor | DrugBank actor |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| — | brain | `SLC6A4` inhibitor | DrugBank actor |
+| — | platelet | `SLC6A4` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ASPG (inhibitor), CHRNA2 (target), DNMT1 (inhibitor), DNMT3A (inhibitor), GRIN3A (target), HTR3A (target), KCNMA1 (blocker), PLA2G4A (inhibitor), SCN10A (inhibitor), SLC6A2 (inhibitor), SLC6A3 (inhibitor).</sub>
+
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
@@ -74,7 +90,7 @@ Procaine is a local anesthetic used to relieve pain, for example in procedures i
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 23:09 | 17:57 | 1/0/2 | 3/0/0 | 0/0/0 | 492,581/36,669 | ollama / qwen3.8:27b-mtp-q8_0 | 14 | 4/8 | 14/0 | 0 |
+| 2026-10-06 23:09 | 17:57 | 3/0/0 | 3/0/0 | 0/0/0 | 492,581/36,669 | ollama / qwen3.8:27b-mtp-q8_0 | 14 | 4/8 | 14/0 | 0 |
 
 ## Coverage
 

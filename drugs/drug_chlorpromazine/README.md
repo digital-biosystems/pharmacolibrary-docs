@@ -50,9 +50,31 @@ Chlorpromazine is a phenothiazine antipsychotic used mainly for schizophrenia, a
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Santone_1989_LDH_release](drugs/drug_chlorpromazine/pd_Santone_1989_LDH_release.md) | lactate dehydrogenase release ← chlorpromazine · inhibition effect | — | Santone KS et al., Studies of chemical toxicity to fresh a…, Toxicology and applied phar… (1989) | [10.1016/0041-008x(89)90341-4](https://doi.org/10.1016/0041-008x(89)90341-4) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Thomas_2003_HERG_block](drugs/drug_chlorpromazine/pd_Thomas_2003_HERG_block.md) | HERG potassium channel block ← chlorpromazine · direct sigmoid Emax (Hill) effect | — | Thomas D et al., The antipsychotic drug chlorpromazine i…, British journal of pharmaco… (2003) | [10.1038/sj.bjp.0705283](https://doi.org/10.1038/sj.bjp.0705283) |
 
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=chlorpromazine).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| absorption | small intestine | `ABCB1` inhibitor/substrate | DrugBank actor |
+| distribution | blood | `ALB` unknown, `ORM1` binder | DrugBank actor |
+| distribution | blood-brain barrier | `ABCB1` inhibitor/substrate | DrugBank actor |
+| distribution | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
+| distribution | testis | `ABCB1` inhibitor/substrate | DrugBank actor |
+| metabolism | blood | `BCHE` inhibitor | DrugBank actor |
+| metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
+| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| metabolism | liver | `BCHE` inhibitor, `CYP1A2` substrate, `CYP2D6` inhibitor/substrate, `CYP2E1` inhibitor, `CYP3A4` inducer | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inducer | DrugBank actor |
+| excretion | kidney | `ABCB1` inhibitor/substrate | DrugBank actor |
+| excretion | liver | `ABCB1` inhibitor/substrate, `ABCB11` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ADRA1A (target), ADRA1B (target), ADRA2A (target), CALM1 (inhibitor), CHRM1 (target), CHRM3 (target), DRD1 (target), DRD2 (target), DRD3 (target), DRD4 (target), DRD5 (inhibitor), HRH1 (target), HRH4 (binder), HTR1A (target), HTR2A (binder), HTR2A (target), HTR2C (target), HTR6 (target), HTR7 (target), KCNH2 (inhibitor), SMPD1 (inhibitor).</sub>
+
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
@@ -62,7 +84,7 @@ Chlorpromazine is a phenothiazine antipsychotic used mainly for schizophrenia, a
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 15:31 | 1:36 | 0/1/1 | 6/0/0 | 0/0/0 | 91,530/4,691 | ollama / glm-5.3-flash | 5 | 3/2 | 5/0 | 0 |
+| 2026-10-06 15:31 | 1:36 | 1/1/0 | 6/0/0 | 0/0/0 | 91,530/4,691 | ollama / glm-5.3-flash | 5 | 3/2 | 5/0 | 0 |
 
 ## Coverage
 

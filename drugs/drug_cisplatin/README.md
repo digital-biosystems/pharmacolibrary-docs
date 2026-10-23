@@ -91,9 +91,37 @@ Cisplatin is a platinum-based anticancer drug used to treat many cancers, includ
 | <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Hanada_1999_BUN](drugs/drug_cisplatin/pd_Hanada_1999_BUN.md) | blood urea nitrogen ← cisplatin (CDDP) · direct sigmoid Emax (Hill) effect | — | Hanada K et al., Effects of disopyramide and verapamil o…, Pharmaceutical research (1999) | [10.1023/a:1018912806355](https://doi.org/10.1023/a:1018912806355) |
 | <span class="pk-badge pk-badge--red">Rejected</span> | [Thompson_2024_KIM_1](drugs/drug_cisplatin/pd_Thompson_2024_KIM_1.md) | urinary KIM-1 concentrations ← total platinum · delayed effect through an effect compartment | — | Thompson LE et al., A Pharmacokinetic/Toxicodynamic Model o…, Journal of pharmacology & c… (2024) | [10.47739/pharmacology1184](https://doi.org/10.47739/pharmacology1184) |
 
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=cisplatin).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | brain | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| absorption | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| absorption | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| absorption | lung | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| absorption | prostate gland | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| absorption | skeletal muscle | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| absorption | small intestine | `ABCC2` inducer, `ABCG2` substrate | DrugBank actor |
+| absorption | testis | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| distribution | blood | `ALB` unknown | DrugBank actor |
+| distribution | blood-brain barrier | `ABCG2` substrate | DrugBank actor |
+| distribution | mammary gland | `ABCG2` substrate | DrugBank actor |
+| distribution | testis | `ABCG2` substrate | DrugBank actor |
+| metabolism | blood | `BCHE` inhibitor, `GSTT1` substrate | DrugBank actor |
+| metabolism | liver | `BCHE` inhibitor, `CYP2B6` inhibitor, `CYP2C9` inhibitor, `GSTM1` substrate, `GSTP1` substrate, `GSTT1` substrate, `NQO1` substrate, `XDH` inducer | DrugBank actor |
+| metabolism | lung | `GSTP1` substrate | DrugBank actor |
+| metabolism | small intestine | `XDH` inducer | DrugBank actor |
+| excretion | kidney | `ABCC2` inducer, `SLC22A2` inhibitor/substrate | DrugBank actor |
+| excretion | liver | `ABCC2` inducer, `ABCC3` inducer, `ABCG2` substrate | DrugBank actor |
+| excretion | small intestine | `ABCC3` inducer | DrugBank actor |
+
+<sub>Actors without a tissue in the table: A2M (binder), ABCC5 (inducer), ABCC6 (substrate), ATOX1 (binder), ATP7A (substrate), ATP7B (substrate), CYP4A11 (inducer), DNA (cross-linking/alkylation), MPG (blocker), MPO (inducer), MT1A (substrate), MT2A (substrate), PTGS2 (inhibitor), SLC31A1 (substrate), SLC31A2 (substrate), SOD1 (substrate), TF (binder).</sub>
+
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
@@ -103,7 +131,7 @@ Cisplatin is a platinum-based anticancer drug used to treat many cancers, includ
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 22:49 | 20:18 | 3/5/1 | 8/4/0 | 0/0/0 | 545,660/116,873 | openai / gpt-6-luna | 15 | 20/4 | 13/2 | 0 |
+| 2026-10-07 22:49 | 20:18 | 4/5/0 | 8/4/0 | 0/0/0 | 545,660/116,873 | openai / gpt-6-luna | 15 | 20/4 | 13/2 | 0 |
 
 ## Coverage
 

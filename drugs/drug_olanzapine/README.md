@@ -81,9 +81,29 @@ Olanzapine is an atypical antipsychotic used to treat schizophrenia, bipolar dis
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Eugene_2017_D2RO](drugs/drug_olanzapine/pd_Eugene_2017_D2RO.md) | dopamine D2-receptor occupancy ← olanzapine · direct Emax (saturable) effect | model (no simulator) | Eugene AR et al., A pharmacodynamic modelling and simulat…, Nordic journal of psychiatry (2017) | [10.1080/08039488.2017.1314011](https://doi.org/10.1080/08039488.2017.1314011) |
 | <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Johnson_2014_CAT](drugs/drug_olanzapine/pd_Johnson_2014_CAT.md) | catalepsy severity (CAT) ← dopamine D2 receptor occupancy (D2RO) driven by olanzapine · indirect response — drug inhibits the production of catalepsy severity (CAT) | — | Johnson M et al., Dopamine D2 receptor occupancy as a pre…, Pharmaceutical research (2014) | [10.1007/s11095-014-1358-7](https://doi.org/10.1007/s11095-014-1358-7) |
 
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=olanzapine).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
+| distribution | blood | `ALB` binder, `ORM1` binder | DrugBank actor |
+| distribution | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
+| distribution | placenta | `ABCB1` substrate | DrugBank actor |
+| distribution | testis | `ABCB1` substrate | DrugBank actor |
+| metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
+| metabolism | liver | `CYP1A2` substrate, `CYP2C19` inhibitor, `CYP2C9` inhibitor, `CYP2D6` inhibitor/substrate, `CYP3A4` inhibitor, `FMO3` substrate, `UGT1A4` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inhibitor | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | `ABCB1` substrate | DrugBank actor |
+| excretion | liver | `ABCB1` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ADRA1A (target), ADRA1B (target), ADRB1 (inhibitor), CHRM1 (target), CHRM2 (target), CHRM3 (target), CHRM4 (target), DRD1 (target), DRD2 (target), DRD3 (target), DRD4 (target), DRD5 (target), GABRA1 (inhibitor), HRH1 (target), HTR1A (inhibitor), HTR2A (target), HTR2C (target), HTR3A (target), HTR6 (target).</sub>
+
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
@@ -93,7 +113,7 @@ Olanzapine is an atypical antipsychotic used to treat schizophrenia, bipolar dis
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 16:09 | 3:41 | 3/1/2 | 7/1/1 | 0/0/0 | 164,843/11,663 | ollama / glm-5.3-flash | 14 | 1/5 | 5/1 | 0 |
+| 2026-10-06 16:09 | 3:41 | 5/1/0 | 8/1/0 | 0/0/0 | 164,843/11,663 | ollama / glm-5.3-flash | 14 | 1/5 | 5/1 | 0 |
 
 ## Coverage
 

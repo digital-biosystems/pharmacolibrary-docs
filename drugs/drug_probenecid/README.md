@@ -51,9 +51,30 @@ Probenecid is a uricosuric drug used to treat gout, and has also been used in go
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span> | [Hedaya_1989_CLR_AZT](drugs/drug_probenecid/pd_Hedaya_1989_CLR_AZT.md) | renal clearance of zidovudine ← probenecid · inhibition effect | — | Hedaya MA et al., Effect of probenecid on the renal and n…, Journal of pharmaceutical s… (1989) | [10.1002/jps.2600780903](https://doi.org/10.1002/jps.2600780903) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Verhagen_1994_tubular_excretion_of_cefuroxime](drugs/drug_probenecid/pd_Verhagen_1994_tubular_excretion_of_cefuroxime.md) | tubular excretion of cefuroxime ← probenecid · direct Emax (saturable) effect | — | Verhagen CA et al., The renal clearance of cefuroxime and c…, British journal of clinical… (1994) | [10.1111/j.1365-2125.1994.tb04260.x](https://doi.org/10.1111/j.1365-2125.1994.tb04260.x) |
 
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=probenecid).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | kidney | `SLC22A5` inhibitor | DrugBank actor |
+| absorption | skeletal muscle | `SLC22A5` inhibitor | DrugBank actor |
+| absorption | small intestine | `ABCC2` inhibitor/substrate, `SLC22A5` inhibitor, `SLCO1A2` inhibitor | DrugBank actor |
+| distribution | blood | `ALB` unknown | DrugBank actor |
+| distribution | blood-brain barrier | `ABCC1` inhibitor, `SLCO1A2` inhibitor | DrugBank actor |
+| distribution | lung | `ABCC1` inhibitor | DrugBank actor |
+| metabolism | kidney | `SLC22A7` inhibitor | DrugBank actor |
+| metabolism | liver | `CYP2C8` inducer, `CYP2C9` inhibitor, `CYP3A4` inducer, `SLC10A1` inhibitor, `SLC22A1` inhibitor, `SLC22A7` inhibitor, `UGT1A1` inhibitor | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inducer, `UGT1A1` inhibitor | DrugBank actor |
+| excretion | kidney | `ABCC2` inhibitor/substrate, `ABCC4` inhibitor, `SLC22A2` inhibitor, `SLC22A6` inhibitor/substrate, `SLC22A8` inhibitor | DrugBank actor |
+| excretion | liver | `ABCC2` inhibitor/substrate, `ABCC3` inhibitor, `ABCC4` inhibitor | DrugBank actor |
+| excretion | small intestine | `ABCC3` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ABCC11 (inhibitor), ABCC5 (inhibitor), ABCC6 (inhibitor), PANX1 (target), SLC16A1 (inhibitor), SLC16A7 (inhibitor), SLC22A10 (inhibitor), SLC22A11 (inhibitor), SLC22A12 (inhibitor), SLC2A9 (inhibitor), SLCO1C1 (inhibitor), TAS2R16 (inhibitory allosteric modulator).</sub>
+
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
@@ -63,7 +84,7 @@ Probenecid is a uricosuric drug used to treat gout, and has also been used in go
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 03:27 | 2:02 | 1/1/1 | 3/0/0 | 0/0/0 | 222,012/12,217 | einfracz / qwen3.8-27b | 20 | 5/4 | 9/0 | 0 |
+| 2026-10-07 03:27 | 2:02 | 2/1/0 | 3/0/0 | 0/0/0 | 222,012/12,217 | einfracz / qwen3.8-27b | 20 | 5/4 | 9/0 | 0 |
 
 ## Coverage
 

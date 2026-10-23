@@ -50,9 +50,30 @@ Mibefradil is a calcium channel blocker that was used to treat high blood pressu
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Todorovic_1998_T_current](drugs/drug_mibefradil/pd_Todorovic_1998_T_current.md) | T-type Ca2+ current ← mibefradil · direct sigmoid Emax (Hill) effect | — | Todorovic SM et al., Pharmacological properties of T-type Ca…, Journal of neurophysiology (1998) | [10.1152/jn.1998.79.1.240](https://doi.org/10.1152/jn.1998.79.1.240) |
 | <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Mullan_2017_Relative_Dilation](drugs/drug_mibefradil/pd_Mullan_2017_Relative_Dilation.md) | Relative Dilation ← mibefradil · direct sigmoid Emax (Hill) effect | — | Mullan B et al., T-type voltage-gated Ca2+ channels do n…, Pharmacology research & per… (2017) | [10.1002/prp2.320](https://doi.org/10.1002/prp2.320) |
 
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=mibefradil).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| absorption | small intestine | `ABCB1` inhibitor/substrate | DrugBank actor |
+| distribution | blood-brain barrier | `ABCB1` inhibitor/substrate | DrugBank actor |
+| distribution | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
+| distribution | testis | `ABCB1` inhibitor/substrate | DrugBank actor |
+| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
+| metabolism | kidney | `CYP3A5` inhibitor | DrugBank actor |
+| metabolism | liver | `CYP1A2` inhibitor, `CYP2D6` inhibitor, `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor, `CYP3A7` inhibitor | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor | DrugBank actor |
+| excretion | kidney | `ABCB1` inhibitor/substrate | DrugBank actor |
+| excretion | liver | `ABCB1` inhibitor/substrate | DrugBank actor |
+| — | adrenal gland | `CYP11B1` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: CACNA1C (inhibitor), CACNA1D (inhibitor), CACNA1F (inhibitor), CACNA1G (inhibitor), CACNA1H (inhibitor), CACNA1I (inhibitor), CACNA1S (inhibitor), CACNB1 (inhibitor), CACNB2 (inhibitor), CACNB3 (inhibitor), CACNB4 (inhibitor), CYP11B2 (inhibitor).</sub>
+
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
@@ -62,7 +83,7 @@ Mibefradil is a calcium channel blocker that was used to treat high blood pressu
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 04:13 | 41:24 | 0/0/2 | 4/1/0 | 0/0/0 | 421,485/115,151 | ollama / qwen3.8:27b-mtp-q8_0 | 10 | 1/5 | 9/1 | 0 |
+| 2026-10-07 04:13 | 41:24 | 2/0/0 | 4/1/0 | 0/0/0 | 421,485/115,151 | ollama / qwen3.8:27b-mtp-q8_0 | 10 | 1/5 | 9/1 | 0 |
 
 ## Coverage
 

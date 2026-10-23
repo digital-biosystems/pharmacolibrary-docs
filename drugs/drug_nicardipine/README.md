@@ -59,9 +59,29 @@ Nicardipine is a dihydropyridine calcium channel blocker used to treat arterial 
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Kim_2019_active_tension](drugs/drug_nicardipine/pd_Kim_2019_active_tension.md) | active tension ← nicardipine · direct sigmoid Emax (Hill) effect | — | Kim DJ et al., The relaxant effect of nicardipine on t…, Anesthesia and pain medicine (2019) | [10.17085/apm.2019.14.4.429](https://doi.org/10.17085/apm.2019.14.4.429) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Kim_2019_frequency_of_contraction](drugs/drug_nicardipine/pd_Kim_2019_frequency_of_contraction.md) | frequency of contraction ← nicardipine · direct sigmoid Emax (Hill) effect | — | Kim DJ et al., The relaxant effect of nicardipine on t…, Anesthesia and pain medicine (2019) | [10.17085/apm.2019.14.4.429](https://doi.org/10.17085/apm.2019.14.4.429) |
 
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=nicardipine).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| absorption | small intestine | `ABCB1` inhibitor/substrate | DrugBank actor |
+| distribution | blood-brain barrier | `ABCB1` inhibitor/substrate | DrugBank actor |
+| distribution | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
+| distribution | testis | `ABCB1` inhibitor/substrate | DrugBank actor |
+| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
+| metabolism | kidney | `CYP3A5` inhibitor | DrugBank actor |
+| metabolism | liver | `CYP2B6` inducer, `CYP2C19` inhibitor, `CYP2C8` inhibitor/substrate, `CYP2C9` inhibitor, `CYP2D6` inhibitor, `CYP2E1` substrate, `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor, `SLCO1B1` inhibitor | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor | DrugBank actor |
+| excretion | kidney | `ABCB1` inhibitor/substrate | DrugBank actor |
+| excretion | liver | `ABCB1` inhibitor/substrate, `ABCB11` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ADRA1A (target), ADRA1B (target), ADRA1D (target), CACNA1C (inhibitor), CACNA1D (inhibitor), CACNA1G (inhibitor), CACNA1H (inhibitor), CACNA1I (inhibitor), CACNA2D1 (inhibitor), CACNB2 (inhibitor), CACNG1 (inhibitor), CALM1 (other/unknown), CHRM1 (target), CHRM2 (target), CHRM3 (target), CHRM4 (target), CHRM5 (target), PDE1A (inhibitor), PDE1B (inhibitor).</sub>
+
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
@@ -71,7 +91,7 @@ Nicardipine is a dihydropyridine calcium channel blocker used to treat arterial 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 04:24 | 11:15 | 1/2/1 | 1/0/0 | 0/0/0 | 158,968/31,074 | ollama / qwen3.8:27b-mtp-q8_0 | 12 | 3/9 | 12/0 | 0 |
+| 2026-10-07 04:24 | 11:15 | 2/2/0 | 1/0/0 | 0/0/0 | 158,968/31,074 | ollama / qwen3.8:27b-mtp-q8_0 | 12 | 3/9 | 12/0 | 0 |
 
 ## Coverage
 

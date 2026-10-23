@@ -73,9 +73,27 @@ Norfloxacin is a fluoroquinolone antibiotic used to treat bacterial infections, 
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Nie_2009_growth_rate](drugs/drug_norfloxacin/pd_Nie_2009_growth_rate.md) | growth rate ← norfloxacin · inhibition effect | — | Nie X et al., Effects of norfloxacin and butylated hy…, Ecotoxicology (London, Engl… (2009) | [10.1007/s10646-009-0334-1](https://doi.org/10.1007/s10646-009-0334-1) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span> | [Pan_2016_root_elongation](drugs/drug_norfloxacin/pd_Pan_2016_root_elongation.md) | root elongation ← norfloxacin · direct Emax (saturable) effect | — | Pan M et al., Phytotoxicity of veterinary antibiotics…, Ecotoxicology and environme… (2016) | [10.1016/j.ecoenv.2015.12.027](https://doi.org/10.1016/j.ecoenv.2015.12.027) |
 
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=norfloxacin).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | kidney | `SLC22A5` inhibitor | DrugBank actor |
+| absorption | skeletal muscle | `SLC22A5` inhibitor | DrugBank actor |
+| absorption | small intestine | `SLC22A5` inhibitor | DrugBank actor |
+| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| metabolism | liver | `CYP1A2` inhibitor, `CYP3A4` inhibitor, `CYP3A7` inhibitor | DrugBank actor |
+| metabolism | lung | `CYP1A1` inhibitor | DrugBank actor |
+| metabolism | small intestine | `CYP1A1` inhibitor, `CYP3A4` inhibitor | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | `SLC22A6` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: TOP2A (inhibitor).</sub>
+
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
@@ -85,7 +103,7 @@ Norfloxacin is a fluoroquinolone antibiotic used to treat bacterial infections, 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 11:37 | 6:48 | 1/2/2 | 7/0/0 | 0/0/0 | 354,958/23,201 | einfracz / qwen3.8-27b | 26 | 7/5 | 12/0 | 0 |
+| 2026-10-07 11:37 | 6:48 | 3/2/0 | 7/0/0 | 0/0/0 | 354,958/23,201 | einfracz / qwen3.8-27b | 26 | 7/5 | 12/0 | 0 |
 
 ## Coverage
 

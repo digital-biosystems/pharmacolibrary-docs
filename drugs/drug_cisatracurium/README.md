@@ -71,9 +71,22 @@ Cisatracurium is a peripherally acting muscle relaxant, related to atracurium, u
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Liu_2017_TOF](drugs/drug_cisatracurium/pd_Liu_2017_TOF.md) | degree of neuromuscular block ← cisatracurium · delayed effect through an effect compartment | — | Liu J et al., Altered pharmacodynamics and pharmacoki…, British journal of clinical… (2017) | [10.1111/bcp.13121](https://doi.org/10.1111/bcp.13121) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Wu_2016_neuromuscular_block](drugs/drug_cisatracurium/pd_Wu_2016_neuromuscular_block.md) | neuromuscular block ← cisatracurium · delayed effect through an effect compartment | — | Wu Z et al., Altered Cisatracurium Pharmacokinetics…, Drug metabolism and disposi… (2016) | [10.1124/dmd.115.067405](https://doi.org/10.1124/dmd.115.067405) |
 
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=cisatracurium).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | blood | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: CHRM2 (target), CHRNA1 (target), CHRNA10 (target), CHRNA2 (target).</sub>
+
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
@@ -83,7 +96,7 @@ Cisatracurium is a peripherally acting muscle relaxant, related to atracurium, u
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 02:24 | 8:47 | 2/7/1 | 9/0/0 | 0/0/0 | 264,504/22,004 | einfracz / qwen3.8-27b | 9 | 0/3 | 9/0 | 0 |
+| 2026-10-07 02:24 | 8:47 | 3/7/0 | 9/0/0 | 0/0/0 | 264,504/22,004 | einfracz / qwen3.8-27b | 9 | 0/3 | 9/0 | 0 |
 
 ## Coverage
 

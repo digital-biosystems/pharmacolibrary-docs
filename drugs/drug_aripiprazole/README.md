@@ -140,9 +140,35 @@ Aripiprazole is an atypical antipsychotic used to treat schizophrenia and bipola
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=aripiprazole).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | skeletal muscle | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| absorption | small intestine | `ABCB1` inhibitor/transport, `ABCG2` unknown | DrugBank actor |
+| distribution | blood | `ALB` binder | DrugBank actor |
+| distribution | blood-brain barrier | `ABCB1` inhibitor/transport, `ABCG2` unknown | DrugBank actor |
+| distribution | mammary gland | `ABCG2` unknown | DrugBank actor |
+| distribution | placenta | `ABCB1` inhibitor/transport | DrugBank actor |
+| distribution | testis | `ABCB1` inhibitor/transport, `ABCG2` unknown | DrugBank actor |
+| metabolism | blood | `DPYD` safety_allele, `TPMT` safety_allele | PGx paper |
+| metabolism | brain | `CYP2D6` metabolism/substrate | DrugBank actor |
+| metabolism | kidney | `CYP3A5` metabolism/substrate | DrugBank actor |
+| metabolism | liver | `CYP1A2` metabolism, `CYP2B6` metabolism, `CYP2C19` metabolism, `CYP2C9` safety_allele, `CYP2D6` metabolism/substrate, `CYP3A4` metabolism/substrate, `CYP3A5` metabolism/substrate, `CYP3A7` substrate, `DPYD` safety_allele, `TPMT` safety_allele, `UGT1A1` safety_allele | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` metabolism/substrate, `CYP3A5` metabolism/substrate, `UGT1A1` safety_allele | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | `ABCB1` inhibitor/transport | DrugBank actor |
+| excretion | liver | `ABCB1` inhibitor/transport, `ABCG2` unknown | DrugBank actor |
+| — | brain | `SLC6A4` modulator | DrugBank actor |
+| — | platelet | `SLC6A4` modulator | DrugBank actor |
+
+<sub>Actors without a tissue in the table: 5-HTRS (target), ADRA1A (target), ADRA1B (target), ADRA2A (target), ADRA2B (target), ADRA2C (other/unknown), ADRA2C (target), ADRB1 (target), ADRB2 (target), CHRM1 (target), CHRM2 (target), CHRM3 (target), CHRM4 (target), CHRM5 (target), CYP3A (metabolism), DHCR7 (metabolism), DOPAMINE/SEROTONIN RECEPTOR GENES (target), DRD1 (partial agonist), DRD1 (target), DRD2 (partial agonist), DRD2 (target), DRD3 (partial agonist), DRD3 (target), DRD4 (partial agonist), DRD4 (target), DRD5 (partial agonist), DRD5 (target), F5 (FACTOR V LEIDEN) (unknown), GRIN1 (target), HLA (safety_allele), HLA-B*57:01 (safety_allele), HLA-B44 (safety_allele), HRH1 (target), HRH2 (target), HRH3 (target), HRH4 (target), HTR1A (partial agonist), HTR1B (target), HTR1D (target), HTR1E (target), HTR2A (target), HTR2B (inverse agonist), HTR2C (partial agonist), HTR2C (target), HTR3A (target), HTR5A (target), HTR6 (target), HTR7 (partial agonist), HTR7 (target), OPRD1 (target), OPRK1 (target), OPRM1 (target), SLC6A3 (modulator), UGT (metabolism), VKORC1 (target).</sub>
+
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
@@ -152,7 +178,7 @@ Aripiprazole is an atypical antipsychotic used to treat schizophrenia and bipola
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 15:11 | 9:16 | 0/4/1 | 1/0/4 | 8/0/64 | 648,879/40,712 | ollama / glm-5.3-flash | 54 | 50/4 | 41/13 | 0 |
+| 2026-10-06 15:11 | 9:16 | 1/4/0 | 5/0/0 | 8/0/64 | 648,879/40,712 | ollama / glm-5.3-flash | 54 | 50/4 | 41/13 | 0 |
 
 ## Coverage
 

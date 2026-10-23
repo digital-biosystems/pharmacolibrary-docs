@@ -72,9 +72,32 @@ Formoterol is a long-acting inhaled beta-2 agonist used to treat asthma and chro
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [van_1999_potassium](drugs/drug_formoterol/pd_van_1999_potassium.md) | plasma potassium concentration (hypokalemic effect) ← formoterol · direct sigmoid Emax (Hill) effect | model (no simulator) | van den Berg BT et al., Pharmacokinetic/pharmacodynamic modelli…, Pulmonary pharmacology & th… (1999) | [10.1006/pupt.1999.0199](https://doi.org/10.1006/pupt.1999.0199) |
 | <span class="pk-badge pk-badge--red">Rejected</span> | [Gong_2022_FEV1](drugs/drug_formoterol/pd_Gong_2022_FEV1.md) | change from baseline in trough FEV1 ← formoterol/aclidinium and formoterol/glycopyrronium fixed-dose combinations · direct Emax (saturable) effect | — | Gong Y et al., Quantitative analysis of efficacy and s…, Therapeutic advances in res… (2022) | [10.1177/17534666211066068](https://doi.org/10.1177/17534666211066068) |
 
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=formoterol).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | kidney | `SLC22A4` substrate, `SLC22A5` substrate | DrugBank actor |
+| absorption | lung | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| absorption | skeletal muscle | `SLC22A5` substrate | DrugBank actor |
+| absorption | small intestine | `SLC22A4` substrate, `SLC22A5` substrate | DrugBank actor |
+| distribution | blood | `ALB` substrate | DrugBank actor |
+| distribution | liver | `SLC22A3` inhibitor | DrugBank actor |
+| distribution | placenta | `SLC22A3` inhibitor | DrugBank actor |
+| distribution | skeletal muscle | `SLC22A3` inhibitor | DrugBank actor |
+| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
+| metabolism | kidney | `UGT1A9` substrate, `UGT2B7` substrate | DrugBank actor |
+| metabolism | liver | `CYP2A6` substrate, `CYP2C19` substrate, `CYP2C9` substrate, `CYP2D6` substrate, `SLC22A1` inhibitor/substrate, `UGT1A1` substrate, `UGT1A9` substrate, `UGT2B15` substrate, `UGT2B7` substrate | DrugBank actor |
+| metabolism | small intestine | `UGT1A1` substrate, `UGT2B7` substrate | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: ADRB1 (target), ADRB2 (target), ADRB3 (target), UGT1A8 (substrate).</sub>
+
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
@@ -84,7 +107,7 @@ Formoterol is a long-acting inhaled beta-2 agonist used to treat asthma and chro
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 13:44 | 6:12 | 0/0/2 | 7/1/0 | 0/0/0 | 283,909/23,539 | ollama / glm-5.3-flash | 7 | 0/7 | 7/0 | 0 |
+| 2026-10-07 13:44 | 6:12 | 2/0/0 | 7/1/0 | 0/0/0 | 283,909/23,539 | ollama / glm-5.3-flash | 7 | 0/7 | 7/0 | 0 |
 
 ## Coverage
 
